@@ -22,7 +22,7 @@
   one half of that pairing and a substantial portion of it in the
   other. Each contributes to the five pillars on which LENS rests:
   Mission Literacy · JHU Ecosystem · Intersectional Expertise ·
-  Capability Focus · Practice Flywheel.
+  Capability Focus · Flywheel Iteration.
 ]
 
 #v(20pt)
@@ -36,62 +36,29 @@
   {
     set par(leading: 0.62em)
 
-    text(font: serif, size: 15pt, fill: navy, "William Gray-Roncal, PhD")
+    text(font: serif, size: 15pt, fill: navy, "William Gray-Roncal, Ph.D.")
     v(2pt)
     text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("Applied research · learning engineering · STEM workforce"))
     v(12pt)
 
     text(font: sans, size: 9.5pt, fill: text-dark)[
-      William Gray-Roncal is a research scientist at the Johns Hopkins
-      University Applied Physics Laboratory and affiliated faculty in
-      the Johns Hopkins School of Education's Learning Design and
-      Technology program. He holds a PhD in biomedical engineering
-      from Johns Hopkins and has built his career at the intersection
-      of large-scale scientific computing, applied AI, and the
-      learning architectures that allow technical teams to do
-      ambitious work reliably.
-    ]
-    v(8pt)
-    text(font: sans, size: 9.5pt, fill: text-dark)[
-      His research and program work has spanned the data systems,
-      methods, and workforce of modern brain-mapping science —
-      including contributions to the IARPA MICrONS consortium, whose
-      cubic-millimeter functional connectome of mouse visual cortex
-      appeared in #emph[Nature] in 2025. He has been a contributor to
-      the BossDB data infrastructure, the NeuVue proofreading
-      framework, and the CAVE ecosystem of tools that the
-      connectomics community uses to do reliable science at scale.
-      Parallel to that scientific record, he has led applied AI and
-      decision-support programs for national-security and biomedical
-      sponsors — work that consistently turned on the same question:
-      what does the human-and-machine system have to look like for
-      the mission to be accomplished?
-    ]
-    v(8pt)
-    text(font: sans, size: 9.5pt, fill: text-dark)[
-      The CIRCUIT program (Cohort-based Integrated Research Community
-      for Undergraduate Innovation and Trailblazing) was his answer to
-      a specific operational problem: the MICrONS reconstruction
-      required a trained workforce that did not yet exist. CIRCUIT
-      built it. Its generalization, MERIT (Mentoring Exceptional
-      Researchers to Innovate and Thrive), is the framework that
-      now anchors LENS's pedagogy of scientific and engineering
-      capability. The COMPASS layer of targeted mentor interventions
-      is the operating practice that addresses the tacit and explicit
-      knowledge gaps students bring into demanding research work. The
-      CIRCUIT → MERIT → COMPASS lineage is documented in the
-      engineering-education literature and forms the methodological
-      backbone of this casebook's "what works" chapter.
-    ]
-    v(8pt)
-    text(font: sans, size: 9.5pt, fill: text-dark)[
-      He brings to the editorship of this volume the conviction that
-      the discipline must earn its keep on missions whose outcomes are
-      visible to people other than its practitioners — that "doing
-      well for the sponsor" and "doing good for the student" are not
-      competing objectives but compounding ones, and that the
-      institutional home for the work belongs in a School of Education
-      that is willing to be measured by what its graduates can do.
+      William Gray-Roncal, Ph.D., is Principal Research Engineer at
+      the Johns Hopkins University Applied Physics Laboratory, where
+      he applies systems engineering methods to challenges spanning
+      defense, space, biomedical, and learning systems. His research
+      — sponsored by DARPA, IARPA, NIH, and DoD — bridges
+      computational neuroscience, artificial intelligence, and
+      large-scale data infrastructure. He developed the College Prep
+      and CIRCUIT workforce-development models, through which he has
+      mentored nearly 500 students, and is currently pursuing
+      research on quantitative measures of human cognitive
+      performance in operational contexts. He leads the LENS
+      (Learning Engineering for Next-Generation Systems)
+      specialization in the Johns Hopkins Master of Education in
+      Learning Design and Technology program. Gray-Roncal holds a
+      Ph.D. in Computer Science from Johns Hopkins, an M.S. in
+      Electrical Engineering from USC, and a B.S. in Electrical
+      Engineering from Vanderbilt.
     ]
   }
 )
@@ -106,62 +73,40 @@
   {
     set par(leading: 0.62em)
 
-    text(font: serif, size: 15pt, fill: navy, "James Diamond, PhD")
+    text(font: serif, size: 15pt, fill: navy, "James Diamond, Ph.D.")
     v(2pt)
     text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("Learning sciences · educational design · evaluation"))
     v(12pt)
 
     text(font: sans, size: 9.5pt, fill: text-dark)[
-      James Diamond is faculty in the Johns Hopkins University
-      School of Education and a leader within the Learning Design
-      and Technology program, where he teaches design-based research,
-      the learning sciences, and the evaluation of learning
-      interventions across formal and informal settings. His
-      doctoral training in education was followed by a career that
-      moved between research, design, and applied practice — the
-      same boundary the casebook argues is where capability
-      engineering happens.
-    ]
-    v(8pt)
-    text(font: sans, size: 9.5pt, fill: text-dark)[
-      Prior to joining the School of Education, he spent years in
-      educational-research-and-development organizations doing the
-      slow, iterative work that mature learning design actually
-      requires: studying how learners encounter a new domain,
-      designing experiences that account for what they bring,
-      observing what happens when those experiences meet real
-      classrooms and real workplaces, and revising both the
-      intervention and its theory of action on the basis of what
-      was actually produced. That practice — design-based research
-      in its operational form — is the methodological tradition the
-      LDT program teaches and the discipline LENS extends into
-      operational settings beyond the school.
-    ]
-    v(8pt)
-    text(font: sans, size: 9.5pt, fill: text-dark)[
-      His scholarly work has spanned technology-mediated learning,
-      games and simulations for learning, professional development
-      of educators, and the evaluation of learning technologies and
-      programs against rigorous evidence standards. He has worked
-      with K–12 districts, higher-education institutions, museums
-      and informal-learning organizations, federal agencies, and
-      foundation-funded research collaboratives — environments in
-      which the question is always the same: what evidence would
-      convince a serious reviewer that the intervention did what
-      its designers claim it did?
-    ]
-    v(8pt)
-    text(font: sans, size: 9.5pt, fill: text-dark)[
-      He brings to the editorship of this volume the discipline of
-      educational research — its method, its measurement standards,
-      its insistence on listening to the learner before specifying
-      the intervention, and its long view that good learning design
-      is iterative work that is never finished. He also brings the
-      conviction that the School of Education is the right home for
-      this discipline because the school's faculty, centers, and
-      doctoral programs already do, every day, the kind of work the
-      casebook describes — the casebook is a record of that work
-      meeting the world.
+      James Diamond, Ph.D., is [#text(fill: text-muted)[Title] —
+      e.g., Associate Teaching Professor] at the Johns Hopkins
+      University School of Education, where he applies learning-
+      sciences theory and design-based research methods to
+      challenges spanning K–12 education, informal learning,
+      professional development, and educational technology design.
+      His research — supported by [#text(fill: text-muted)[foundation
+      and federal sponsors]] — bridges the learning sciences,
+      technology-mediated learning, and the evaluation of educational
+      interventions. He developed and contributed to
+      [#text(fill: text-muted)[named programs and research
+      collaboratives]], through which he has worked with school
+      districts, museums and informal-learning organizations, higher-
+      education partners, and federal agencies on the design and
+      evaluation of learning systems, and through which he has
+      [#text(fill: text-muted)[mentored / advised approximately N]]
+      graduate students. He is a principal faculty member of the
+      LENS (Learning Engineering for Next-Generation Systems)
+      specialization in the Johns Hopkins Master of Education in
+      Learning Design and Technology program. Diamond holds a Ph.D.
+      in [#text(fill: text-muted)[field]] from
+      [#text(fill: text-muted)[institution]], an
+      [#text(fill: text-muted)[M.A. / M.Ed.]] in
+      [#text(fill: text-muted)[field]] from
+      [#text(fill: text-muted)[institution]], and a
+      [#text(fill: text-muted)[B.A. / B.S.]] in
+      [#text(fill: text-muted)[field]] from
+      [#text(fill: text-muted)[institution]].
     ]
   }
 )
@@ -169,9 +114,11 @@
 #v(16pt)
 
 #text(font: sans, size: 9pt, style: "italic", fill: text-muted)[
-  These biographies are summary descriptions of careers documented in
-  publications, program reports, and the curricular materials of the
-  LDT program and the LENS specialization. Corrections, additions,
-  and refinements from the editors themselves are welcomed in
+  Bracketed fields in the second biography are placeholders for the
+  editor to fill in before press; the surrounding structure mirrors
+  the first biography. These descriptions reference careers
+  documented in publications, program reports, and the curricular
+  materials of the LDT program and the LENS specialization.
+  Corrections and refinements from the editors are welcomed in
   subsequent printings.
 ]

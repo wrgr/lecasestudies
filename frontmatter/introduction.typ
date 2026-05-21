@@ -303,13 +303,13 @@
 #text(font: sans, size: 9.5pt, fill: text-dark)[
   Two of those commitments deserve a moment of their own — they are
   the substrate the rest of the curriculum runs on. The first is
-  *communication, translation, and system-of-systems integration*. A
-  striking number of cases in this book are, at their proximate
-  cause, translation or integration failures across boundaries —
-  failures of language, convention, unit, role, agency, or discipline
-  to carry meaning reliably from one part of a system to another, or
-  failures of subsystems built to different assumptions to compose
-  into a working whole. Mars Climate Orbiter was a metric-versus-
+  *communication, translation, and integration within and across
+  disparate systems*. A striking number of cases in this book are,
+  at their proximate cause, translation or integration failures
+  across boundaries — failures of language, convention, unit, role,
+  agency, or discipline to carry meaning reliably from one part of a
+  system to another, or failures of subsystems built to different
+  assumptions to compose into a working whole. Mars Climate Orbiter was a metric-versus-
   imperial translation failure (Case 54). Tenerife was a translation
   failure at the takeoff-clearance boundary between two cockpits and
   a tower under fog and time pressure (Case 12). The Patriot at
@@ -424,7 +424,7 @@
   built must show that its credibility rests on more than its
   ambitions. LENS stands on five pillars: *Mission Literacy*, *JHU
   Ecosystem*, *Intersectional Expertise*, *Capability Focus*, and
-  the *Practice Flywheel*. Each is a real institutional asset, with
+  *Flywheel Iteration*. Each is a real institutional asset, with
   a record. None of them, alone, would carry the argument; the
   pillars are load-bearing together.
 ]
@@ -504,10 +504,11 @@
       do when the work is done.
     ]
     v(8pt)
-    text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("Practice Flywheel"))
+    text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("Flywheel Iteration"))
     v(2pt)
     text(font: sans, size: 9.5pt, fill: text-dark)[
-      The iterative method that animates the other four pillars:
+      The iterative method — the Practice Flywheel — that animates
+      the other four pillars:
       *Identify → Activate → Prototype → Analyze → Transition*, the
       cycle through which mission literacy turns into capability and
       capability turns back into refined mission literacy. The

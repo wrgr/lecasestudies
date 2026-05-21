@@ -1079,8 +1079,8 @@
       rgb("#2CC4B3"),
       rgb("#2CC4B3"),
     )
-    let labels-top = ("Mission", "JHU", "Intersectional", "Capability", "Practice")
-    let labels-bot = ("Literacy", "Ecosystem", "Expertise", "Focus", "Flywheel")
+    let labels-top = ("Mission", "JHU", "Intersectional", "Capability", "Flywheel")
+    let labels-bot = ("Literacy", "Ecosystem", "Expertise", "Focus", "Iteration")
 
     // 1) draw the rings (no icons yet) + the labels under each
     for i in range(xs.len()) {
