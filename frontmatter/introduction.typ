@@ -529,7 +529,107 @@
   JHU ecosystem hosts the inquiry; intersectional expertise designs
   the intervention; capability focus keeps the loop closed on the
   outcome; the practice flywheel turns each iteration into the
-  starting condition of the next. The remainder of this section
+  starting condition of the next.
+]
+
+#v(10pt)
+
+#text(font: sans, size: 8pt, tracking: 1.6pt, fill: teal, upper("what LENS graduates can do  ·  the five competencies"))
+#v(4pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The five pillars describe why LENS exists. The five concentration
+  learning outcomes describe what its graduates can do. They map to
+  the work the cases in this book required.
+]
+
+#v(8pt)
+
+#block(
+  width: 100%,
+  fill: rgb("#F0F7F5"),
+  inset: 12pt,
+  stroke: (left: 2pt + teal),
+  {
+    set par(leading: 0.6em)
+    text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("1 · Systems Thinking and Analysis"))
+    v(2pt)
+    text(font: sans, size: 9.5pt, fill: text-dark)[
+      Decompose system performance requirements into measurable human
+      capability requirements; apply systems-engineering lifecycle
+      models to scope, sequence, and evaluate capability interventions
+      *within and across disparate systems*; analyze and communicate
+      the interdependencies between human performance and system
+      performance to predict operational impact at scale.
+    ]
+    v(8pt)
+    text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("2 · Learning Engineering Design and Implementation"))
+    v(2pt)
+    text(font: sans, size: 9.5pt, fill: text-dark)[
+      Design capability-development interventions that integrate
+      learning-sciences principles with measurable outcomes and
+      system-design constraints, and that function at *speed and
+      scale* in operational environments; construct and communicate
+      implementation plans that address adoption, sustainment, and
+      lifecycle integration across organizational and system
+      boundaries.
+    ]
+    v(8pt)
+    text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("3 · Data, Measurement, and Evaluation"))
+    v(2pt)
+    text(font: sans, size: 9.5pt, fill: text-dark)[
+      Design ethical instrumentation strategies that produce
+      measurable evidence in regulated or high-consequence
+      environments; construct *decision-grade evidence* artifacts —
+      dashboards, reports, governance documentation — that link
+      learning outcomes to operational impact; differentiate
+      capability gaps from system-design and organizational-
+      performance problems using mixed-methods *gap attribution*.
+    ]
+    v(8pt)
+    text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("4 · Context and Domain Fluency"))
+    v(2pt)
+    text(font: sans, size: 9.5pt, fill: text-dark)[
+      Analyze the regulatory, organizational, and cultural
+      constraints that shape capability development in healthcare,
+      defense, or education contexts; apply human-systems-integration
+      frameworks to evaluate the measurable impact of capability
+      approaches on operational environments; synthesize and
+      communicate stakeholder requirements across disciplinary and
+      institutional boundaries into coherent design specifications.
+    ]
+    v(8pt)
+    text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("5 · Human-AI Teaming and Adaptive Systems"))
+    v(2pt)
+    text(font: sans, size: 9.5pt, fill: text-dark)[
+      Design human-AI teaming configurations that optimize capability
+      development while preserving human agency and judgment; evaluate
+      the measurable impact of AI-mediated learning systems on human
+      performance, including automation bias and cognitive offloading;
+      communicate evidence-based recommendations for when AI
+      augmentation improves versus degrades capability outcomes.
+    ]
+  }
+)
+
+#v(10pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  Three phrases recur across those five competencies and across the
+  curriculum that produces them: *within and across disparate
+  systems* (the scope at which capability is actually engineered),
+  *speed and scale* (the operational tempo the discipline must
+  match), and *gap attribution between learning, system design, and
+  organizational performance problems* (the diagnostic that decides
+  what kind of intervention will actually move the outcome). They
+  are the working language of the program. They appear, repeatedly,
+  in the cases that follow.
+]
+
+#v(10pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The remainder of this section
   names the three operational anchors the pillars are currently
   producing — the CIRCUIT–MERIT–COMPASS lineage, the Practice
   Flywheel in action across LE pilots, and the studio and

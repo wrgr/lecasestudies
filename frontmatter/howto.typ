@@ -69,6 +69,12 @@
       Each case maps to one or more courses in the LENS specialization:
     ]
     #v(8pt)
+    #text(font: sans, size: 7pt, fill: text-muted, style: "italic")[
+      Foundations (shared LDT, prerequisites): #h(2pt)
+      *F1* Learning Sciences Studio · #h(2pt)
+      *F2* Critical Perspectives on Educational Technology.
+    ]
+    #v(4pt)
     #let courses-list = (
       ("LEN 1",  "Principles of LE for Complex Systems"),
       ("LEN 2",  "Human-AI Teaming and Adaptive Systems"),
