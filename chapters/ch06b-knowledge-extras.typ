@@ -239,7 +239,7 @@
     pedagogy permanently.
   ],
   quote: [The bridge was not designed against the failure mode that destroyed it because that failure mode was not yet known to the discipline.],
-  quote-source: "Petroski, To Engineer Is Human, 1985",
+  quote-source: "Paraphrasing Petroski, To Engineer Is Human, 1985",
   sources-list: (
     [Ammann, von Kármán & Woodruff, _The Failure of the Tacoma Narrows Bridge_ (1941)],
     [Petroski (1985), _To Engineer Is Human_],
@@ -307,7 +307,7 @@
     engineering condition of legacy infrastructure.
   ],
   quote: [The leak resulted from external corrosion of the well casing — a known and inspectable failure mode that the operator did not adequately inspect.],
-  quote-source: "Blade Energy Partners Investigation Report, 2019",
+  quote-source: "Paraphrasing Blade Energy Partners, Aliso Canyon Root Cause Analysis, 2019",
   sources-list: (
     [Blade Energy Partners, _Aliso Canyon Root Cause Analysis_ (2019)],
     [California Public Utilities Commission orders on Aliso Canyon],

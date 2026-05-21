@@ -323,8 +323,8 @@
     spent twenty minutes troubleshooting a problem they had
     misidentified, by which time it was already too late.
   ],
-  quote: [The crew's interpretation of the cabin altitude warning horn as a takeoff configuration warning was a critical and irrecoverable error.],
-  quote-source: "Air Accident Investigation Board of Hellenic Republic, Final Report, 2006",
+  quote: [The crew's interpretation of the cabin-altitude warning horn as a takeoff-configuration warning was a critical and irrecoverable error.],
+  quote-source: "Paraphrasing the Hellenic AAIB Final Report on Helios 522, 2006",
   sources-list: (
     [Hellenic AAIB Aircraft Accident Investigation Report 11/2006],
     [Boeing 737 Flight Crew Operations Manual, configuration warnings],
@@ -389,7 +389,7 @@
     instrument failure.
   ],
   quote: [The crew received contradictory indications they could neither reconcile nor override.],
-  quote-source: "Peruvian DGAC Accident Investigation, 1996",
+  quote-source: "Paraphrasing the Peruvian DGAC Accident Investigation of AeroPerú 603, 1996",
   sources-list: (
     [Peru Dirección General de Aeronáutica Civil, accident report (1996)],
     [Boeing 757 Flight Crew Training Manual],
@@ -519,7 +519,7 @@
     they applied did not match the configuration they were in.
   ],
   quote: [The flight crew was unable to identify which engine had failed and shut down the operating engine in error.],
-  quote-source: "Taiwan Aviation Safety Council Final Report, 2016",
+  quote-source: "Paraphrasing the Taiwan Aviation Safety Council Final Report on TransAsia 235, 2016",
   sources-list: (
     [Taiwan Aviation Safety Council Final Report (2016)],
     [Reason (1990), Human Error — wrong-engine cases],

@@ -53,7 +53,7 @@
     apparatus looks like.
   ],
   quote: [CRM succeeded because it treated crew coordination as an engineerable property of the system.],
-  quote-source: "Helmreich & Foushee, in Kanki et al., Crew Resource Management (2010)",
+  quote-source: "Paraphrasing Helmreich & Foushee, in Kanki et al., Crew Resource Management (2010)",
   sources-list: (
     [FAA Advisory Circular 120-51E, _Crew Resource Management Training_],
     [Helmreich, Merritt & Wilhelm, "The Evolution of Crew Resource Management Training in Commercial Aviation," _International Journal of Aviation Psychology_ (1999)],
@@ -121,7 +121,7 @@
     been sustained.
   ],
   quote: [The checklist was the technical intervention. The nurses' authority to enforce it was the cultural intervention. Neither worked without the other.],
-  quote-source: "Pronovost & Vohr, Safe Patients, Smart Hospitals (2010)",
+  quote-source: "Paraphrasing Pronovost & Vohr, Safe Patients, Smart Hospitals, 2010",
   sources-list: (
     [Pronovost et al., "An Intervention to Decrease Catheter-Related Bloodstream Infections in the ICU," _New England Journal of Medicine_ 355 (2006)],
     [Lipitz-Snyderman et al., _BMJ_ (2011) — sustained effect at follow-up],
@@ -188,8 +188,8 @@
     Atomic Scientists called "smugness." The post-INPO culture is
     characterized by mandated vigilance.
   ],
-  quote: [Every utility recognized that an accident at any single plant would affect every other operator's license to operate.],
-  quote-source: "Bulletin of the Atomic Scientists, 2009",
+  quote: [Every utility recognized that an accident at any single plant would affect every operator's license to operate.],
+  quote-source: "Paraphrasing the institutional analysis in Rees, Hostages of Each Other, 1994",
   sources-list: (
     [Nuclear Energy Institute, "Lessons from the 1979 Accident at Three Mile Island"],
     [World Nuclear Association — Three Mile Island Accident],

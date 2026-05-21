@@ -104,7 +104,7 @@
     evidence of effect outstanding.
   ],
   quote: [The Navy still lacks systematic evaluation of whether the reforms work.],
-  quote-source: "GAO-21-168, 2021",
+  quote-source: "Paraphrasing GAO-21-168 on Navy readiness reform, 2021",
   sources-list: (
     [GAO-20-154 and GAO-21-168, Navy readiness reform],
     [Readiness Reform Oversight Council, One-Year Report (2019)],
@@ -171,8 +171,8 @@
     transformation. Cultural legacy is not destiny when it is
     deliberately redesigned.
   ],
-  quote: [It was a culture that had to be redesigned, not condemned.],
-  quote-source: "Air Transport World Phoenix Award citation, 2006",
+  quote: [Korean Air's record before 2000 was changed by an external intervention into cockpit culture, not by criticism of it.],
+  quote-source: "Author summary of NTSB findings on KAL 801 and the Korean Air transformation (uncited)",
   sources-list: (
     [NTSB Aircraft Accident Report, KAL Flight 801 (2000)],
     [Air Transport World Phoenix Award documentation (2006)],
@@ -239,7 +239,7 @@
     industry, same load-bearing element.
   ],
   quote: [When American manufacturers copied the andon cord, workers were too afraid to pull it.],
-  quote-source: "Liker, The Toyota Way, 2004",
+  quote-source: "Paraphrasing Liker, The Toyota Way (2nd ed., 2020)",
   sources-list: (
     [Liker, _The Toyota Way_ (2nd ed., 2020)],
     [Shingo, _A Study of the Toyota Production System_ (1989)],
@@ -305,7 +305,7 @@
     intervention.
   ],
   quote: [TeamSTEPPS represents the translation pathway from high-reliability research into clinical practice.],
-  quote-source: "AHRQ TeamSTEPPS 3.0 program documentation, 2023",
+  quote-source: "Author framing drawing on AHRQ TeamSTEPPS 3.0 (2023) and Salas et al.",
   sources-list: (
     [AHRQ TeamSTEPPS 3.0 Curriculum (2023)],
     [American Hospital Association Team Training Center],
@@ -371,8 +371,8 @@
     Same Navy. Two philosophies. The choice shows up in the casualty
     columns.
   ],
-  quote: [I believe that human experience shows that people, not organizations or management systems, get things done.],
-  quote-source: "Admiral Hyman G. Rickover, testimony to Congress, 1979",
+  quote: [Human experience shows that people, not organizations or management systems, get things done.],
+  quote-source: "Paraphrasing Admiral Hyman G. Rickover, Congressional testimony, 1979",
   sources-list: (
     [Naval Nuclear Propulsion Program documentation, NRC/DOE],
     [Naval History and Heritage Command, Rickover archives],
@@ -439,7 +439,7 @@
     primary accountability metric.
   ],
   quote: [Predictions trigger support, not gatekeeping.],
-  quote-source: "Georgia State University institutional research, 2018",
+  quote-source: "Author framing of the GSU advising model, drawn from Renick & Strom (2020) and NYT coverage (2018)",
   sources-list: (
     [Georgia State University institutional research and Strategic Plan reports],
     [_New York Times_, "How Colleges Know You're Not Finishing" (2018)],
@@ -507,7 +507,7 @@
     can produce equivalent evidence for problems that do not.
   ],
   quote: [Cognitive Tutors demonstrate the LE process working: theory → engineering → evidence → scale.],
-  quote-source: "Koedinger & Corbett, Cambridge Handbook of the Learning Sciences, 2006",
+  quote-source: "Author framing of Anderson et al. (1995) and Koedinger & Corbett (2006)",
   sources-list: (
     [Anderson, Corbett, Koedinger & Pelletier, "Cognitive Tutors: Lessons Learned," _JLS_ (1995)],
     [RAND Corporation Algebra I evaluation],

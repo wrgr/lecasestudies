@@ -46,7 +46,7 @@
     commitment.
   ],
   quote: [We were guided by our Credo. The patients came first.],
-  quote-source: "James Burke, J&J CEO, 1982",
+  quote-source: "Paraphrasing James Burke (J&J CEO), public statements during the Tylenol crisis, 1982",
   sources-list: (
     [Kaplan, T., _The Tylenol Crisis_ (2014)],
     [FDA Final Rule on Tamper-Resistant Packaging (1982)],
@@ -114,12 +114,12 @@
     ASRS is the canonical success case for evidence-architecture
     paired with institutional commitment to non-punitive use.
   ],
-  quote: [The ASRS is the model for confidential, voluntary, non-punitive incident reporting in any high-consequence domain.],
-  quote-source: "James Reason, Managing the Risks of Organizational Accidents, 1997",
+  quote: [ASRS is the model for confidential, voluntary, non-punitive incident reporting in any high-consequence domain.],
+  quote-source: "Paraphrasing James Reason, Managing the Risks of Organizational Accidents, 1997",
   sources-list: (
     [NASA ASRS Program documentation and annual reports],
     [Reason (1997), _Managing the Risks of Organizational Accidents_],
-    [Connell & Sumwalt, ASRS retrospective analyses],
+    [NASA ASRS Program Briefing materials and annual reports (Linda Connell, director)],
   ),
   le-insight: [
     ASRS is the canonical positive case for paired-intervention
@@ -184,8 +184,8 @@
     Bristol is the foundational UK case for outcomes-transparency
     as a paired-intervention deliverable.
   ],
-  quote: [The institutional culture must change such that outcomes data is no longer the private property of clinicians but a shared resource.],
-  quote-source: "Kennedy Inquiry Final Report, 2001",
+  quote: [Outcomes data must cease to be the private property of clinicians and become a shared institutional resource.],
+  quote-source: "Paraphrasing the Kennedy Inquiry Final Report (Learning from Bristol), 2001",
   sources-list: (
     [Kennedy QC, I. (2001), _Learning from Bristol: The Report of the Public Inquiry into Children's Heart Surgery at the Bristol Royal Infirmary 1984–1995_],
     [Society for Cardiothoracic Surgery in GB & Ireland, national outcomes reports],

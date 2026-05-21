@@ -46,7 +46,7 @@
     coordination across multiple regulators globally.
   ],
   quote: [The architecture of LIBOR invited the manipulation it experienced.],
-  quote-source: "U.S. Department of Justice statement, 2012",
+  quote-source: "Paraphrasing the Wheatley Review of LIBOR, 2012",
   sources-list: (
     [Department of Justice settlements with Barclays, UBS, Deutsche Bank, RBS et al. (2012–2015)],
     [Wheatley, M., _The Wheatley Review of LIBOR: Final Report_ (2012)],
@@ -113,8 +113,8 @@
     high-stakes testing without an evidence-audit architecture
     independent of the institution being measured.
   ],
-  quote: [The system pressured employees to cheat by setting unrealistic targets backed by significant consequences for failure to meet them.],
-  quote-source: "Georgia Special Investigators Final Report, 2011",
+  quote: [Unrealistic targets backed by significant consequences pressured employees to cheat.],
+  quote-source: "Paraphrasing the Georgia Special Investigators Final Report on Atlanta Public Schools, 2011",
   sources-list: (
     [Special Investigators Final Report on Atlanta Public Schools (2011)],
     [_Atlanta Journal-Constitution_ investigative series (2009–2011)],
@@ -324,7 +324,7 @@
     previously exist.
   ],
   quote: [The cardiovascular risk was visible in Merck's internal data years before the drug was withdrawn.],
-  quote-source: "Graham, D. J. (FDA Office of Drug Safety), Senate testimony, 2004",
+  quote-source: "Paraphrasing David Graham (FDA Office of Drug Safety), Senate Finance Committee testimony, 18 November 2004",
   sources-list: (
     [Graham, D. J. et al. (2005), _Lancet_, Vioxx cardiovascular risk analysis],
     [Senate Committee on Finance, hearings on Vioxx (2004)],

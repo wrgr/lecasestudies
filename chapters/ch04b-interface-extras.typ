@@ -41,7 +41,7 @@
     standards for cockpit alerting systems.
   ],
   quote: [The crew became so engrossed in the landing-gear difficulty that they failed to maintain altitude.],
-  quote-source: "NTSB Aircraft Accident Report AAR-73-14, 1973",
+  quote-source: "Paraphrasing NTSB Aircraft Accident Report NTSB-AAR-73-14 on Eastern 401, 1973",
   sources-list: (
     [NTSB Aircraft Accident Report NTSB-AAR-73-14 (1973)],
     [Wickens, _Engineering Psychology and Human Performance_ (multiple eds.)],
@@ -107,7 +107,7 @@
     three did.
   ],
   quote: [The aircraft was operated for years with a design feature that, under specific conditions, was unrecoverable.],
-  quote-source: "NTSB Aircraft Accident Report AAR-99-01, 1999",
+  quote-source: "Paraphrasing NTSB Aircraft Accident Report NTSB-AAR-99-01 on the 737 rudder PCU, 1999",
   sources-list: (
     [NTSB Aircraft Accident Report NTSB-AAR-99-01 (1999)],
     [NTSB Aircraft Accident Report NTSB-AAR-92-06 (1992) — United 585],
@@ -245,8 +245,8 @@
     mode and modified the algorithm. The case is permanently archived
     in early-warning training as the canonical false-positive scenario.
   ],
-  quote: [I had a funny feeling in my gut. I was 50/50, but it was an order of magnitude better than the system.],
-  quote-source: "Stanislav Petrov, interview, 2010",
+  quote: [I had a funny feeling in my gut.],
+  quote-source: "Stanislav Petrov, quoted in The Washington Post, 1999",
   sources-list: (
     [Hoffman, _The Dead Hand_ (2009)],
     [Aksenov, V., investigation of Oko incident (2004)],
@@ -315,7 +315,7 @@
     the technical signal.
   ],
   quote: [The migration proceeded notwithstanding clear signals that the platform was not ready.],
-  quote-source: "Slaughter and May Independent Review, 2019",
+  quote-source: "Paraphrasing the Slaughter and May Independent Review of the TSB migration, 2019",
   sources-list: (
     [Slaughter and May Independent Review of TSB Migration (2019)],
     [Financial Conduct Authority final notice on TSB (2022)],

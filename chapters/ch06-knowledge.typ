@@ -14,8 +14,8 @@
   number: "6",
   title: "Knowledge Lost",
   subtitle: "Institutional memory degraded.",
-  epigraph: [Schedulers are among the top ten highest-turnover positions in the VA. There's constant turnover.],
-  epigraph-source: "Government Accountability Office, 2019",
+  epigraph: [Schedulers are among the highest-turnover positions in the VA — constant turnover.],
+  epigraph-source: "Paraphrasing GAO testimony on VA scheduling, 2019",
 )
 
 #case(
@@ -49,8 +49,8 @@
     Veterans died inside a system that, by its own metrics, was
     succeeding.
   ],
-  quote: [Schedulers are among the top ten highest-turnover positions in the VA. There's constant turnover.],
-  quote-source: "GAO testimony, 2019",
+  quote: [Schedulers are among the highest-turnover positions in the VA — constant turnover.],
+  quote-source: "Paraphrasing GAO testimony on VA scheduling, 2019",
   sources-list: (
     [VA Office of Inspector General Report 14-02603-267 (2014)],
     [GAO Veterans Health Administration reports (2000–2019)],
@@ -115,8 +115,8 @@
     between learning-science discovery and scaled implementation is
     itself the problem the discipline exists to address.
   ],
-  quote: [Fifty years of research have been unsuccessful in making CBTS ubiquitous in military training.],
-  quote-source: "Goodell, learning engineering literature, 2022",
+  quote: [Five decades of research have not made computer-based tutoring ubiquitous in military training.],
+  quote-source: "Paraphrasing Goodell on learning engineering and scaled adoption, 2022",
   sources-list: (
     [Sottilare et al. (2012), GIFT framework introduction, ARL],
     [_International Journal of AI in Education_ Special Issue (2017)],
@@ -182,7 +182,7 @@
     ecosystem.
   ],
   quote: [The standard exists. The governance does not.],
-  quote-source: "ADL TLA implementation review, ICICLE proceedings",
+  quote-source: "Author summary of ICICLE / ADL TLA discussion (uncited; flag for citation)",
   sources-list: (
     [Advanced Distributed Learning Initiative, Total Learning Architecture],
     [IEEE ICICLE LEBoK],

@@ -15,7 +15,7 @@
   title: "The Interface Problem",
   subtitle: "Correct performance was made impossible.",
   epigraph: [The shootdown of Flight 655 showcases the chaos of combat environments, but it also reveals lessons for technology adoption and its use in stressful situations.],
-  epigraph-source: "U.S. Naval Proceedings, 2018",
+  epigraph-source: "Paraphrasing U.S. Naval Proceedings retrospective on the Vincennes incident, 2018",
 )
 
 #case(
@@ -49,7 +49,7 @@
     stress.
   ],
   quote: [The shootdown of Flight 655 ... reveals lessons for technology adoption and its use in stressful situations.],
-  quote-source: "U.S. Naval Proceedings, 2018",
+  quote-source: "Paraphrasing U.S. Naval Proceedings retrospective on the Vincennes incident, 2018",
   sources-list: (
     [Fogarty Investigation Report on the Vincennes Incident (1988)],
     [U.S. Naval Proceedings retrospective (2018)],
@@ -115,8 +115,8 @@
     not to clinical workflow or human-factors specifications. There is
     still no regulatory framework to monitor EHR system safety.
   ],
-  quote: [While a primary goal of EHR implementation is the reduction of medical errors, reports of new types of errors directly related to EHR implementation that can compromise quality of care and patient safety have emerged.],
-  quote-source: "Sittig & Singh, NCBI/PMC, 2013",
+  quote: [Reports of new types of errors directly related to EHR implementation — errors that can compromise quality of care and patient safety — have emerged.],
+  quote-source: "Paraphrasing Sittig & Singh, EHR-related safety risks, 2013",
   sources-list: (
     [Han et al., "Unexpected Increased Mortality After Implementation of a Commercially Sold CPOE System," _Pediatrics_ (2005)],
     [University of Utah / Leapfrog Group EHR safety study (2023)],
@@ -181,7 +181,7 @@
     capability infrastructure to make that role performable.
   ],
   quote: [Repeatedly, humans tend to tune out when tasked with monitoring automated systems that work well most of the time.],
-  quote-source: "NTSB Member Robert Sumwalt, 2019",
+  quote-source: "NTSB Chairman Robert Sumwalt, Uber Tempe hearing remarks, 2019",
   sources-list: (
     [NTSB Highway Accident Report HAR-19/03 (2019)],
     [Consumer Reports coverage of the Tempe investigation],

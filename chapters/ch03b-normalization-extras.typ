@@ -44,8 +44,8 @@
     The case is the canonical evidence that the wrong measurement is
     worse than no measurement.
   ],
-  quote: [Process safety hazards can give rise to major accidents involving the release of potentially dangerous materials, even when personal safety performance is excellent.],
-  quote-source: "U.S. Chemical Safety Board, Texas City Final Investigation Report, 2007",
+  quote: [Process-safety hazards can produce major accidents even when personal-safety performance is excellent.],
+  quote-source: "Paraphrasing the CSB Texas City Final Investigation Report and the Baker Panel, 2007",
   sources-list: (
     [CSB Investigation Report 2005-04-I-TX, _Refinery Explosion and Fire_ (2007)],
     [Baker Panel Report on BP North American Refineries (2007)],
@@ -311,7 +311,7 @@
     capability failure.
   ],
   quote: [Massey kept two sets of books — one for inspectors, one for itself.],
-  quote-source: "MSHA Internal Review Report, 2012",
+  quote-source: "Paraphrasing federal investigators, MSHA Upper Big Branch reviews (2011 – 2012)",
   sources-list: (
     [MSHA Internal Review of Upper Big Branch (2012)],
     [_United States v. Blankenship_ (S.D.W. Va. 2015)],
@@ -449,7 +449,7 @@
     segment.
   ],
   quote: [Inadequate situational awareness at FirstEnergy contributed to the cascading failure.],
-  quote-source: "U.S.-Canada Power System Outage Task Force Final Report, 2004",
+  quote-source: "Paraphrasing the U.S.-Canada Power System Outage Task Force Final Report, 2004",
   sources-list: (
     [U.S.-Canada Power System Outage Task Force, _Final Report on the August 14, 2003 Blackout_ (2004)],
     [North American Electric Reliability Council reports (2004)],

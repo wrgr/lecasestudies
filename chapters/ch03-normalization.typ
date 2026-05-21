@@ -49,7 +49,7 @@
     defense had drifted, over time, from its specification.
   ],
   quote: [Human error, rather than mechanical failings, was the root cause.],
-  quote-source: "National Commission to the President, 2011",
+  quote-source: "Paraphrasing the National Commission report and contemporaneous coverage (ENR), 2011",
   sources-list: (
     [National Commission on the BP Deepwater Horizon Oil Spill (2011)],
     [BOEMRE/Coast Guard Joint Investigation Report (2011)],
@@ -180,8 +180,8 @@
     that the system designed to remediate it has accepted its own
     incompleteness as the cost of operating the airframe at all.
   ],
-  quote: [Materiel failure and human error factors were the most frequently cited causal factors in serious Osprey accidents.],
-  quote-source: "NAVAIR V-22 Safety Review, 2025",
+  quote: [Materiel failure and human-error factors were the most frequently cited causal factors in serious Osprey accidents.],
+  quote-source: "Paraphrasing the NAVAIR Independent Safety Review of the V-22, 2025",
   sources-list: (
     [NAVAIR Independent Safety Review of the V-22 (2025)],
     [GAO V-22 Sustainment Report (2025)],

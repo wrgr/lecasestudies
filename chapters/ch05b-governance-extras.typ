@@ -252,7 +252,7 @@
     emissions testing as a regulatory requirement in the EU.
   ],
   quote: [The defeat device was the product of a long-standing institutional decision to evade emissions standards.],
-  quote-source: "U.S. Department of Justice plea agreement with Volkswagen, 2017",
+  quote-source: "Paraphrasing the U.S. Department of Justice Plea Agreement with Volkswagen AG, 2017",
   sources-list: (
     [U.S. Department of Justice Plea Agreement with Volkswagen AG (2017)],
     [EPA Notice of Violation (2015)],
@@ -319,7 +319,7 @@
     operates today.
   ],
   quote: [Facebook gave developers access to far more user data than was necessary for the apps they built.],
-  quote-source: "U.S. Federal Trade Commission, In the Matter of Facebook Inc., 2019",
+  quote-source: "Paraphrasing the U.S. FTC Order, In the Matter of Facebook Inc., 2019",
   sources-list: (
     [FTC, In the Matter of Facebook Inc., Consent Order (2019)],
     [UK Information Commissioner's Office Report on Cambridge Analytica (2018)],
@@ -386,7 +386,7 @@
     catastrophically.
   ],
   quote: [Equifax had no centralized, comprehensive inventory of which assets ran Apache Struts.],
-  quote-source: "U.S. Senate Permanent Subcommittee on Investigations, 2019",
+  quote-source: "Paraphrasing the U.S. Senate Permanent Subcommittee on Investigations report, 2019",
   sources-list: (
     [Senate Permanent Subcommittee on Investigations, _How Equifax Neglected Cybersecurity and Suffered a Devastating Data Breach_ (2019)],
     [Federal Trade Commission Consent Order (2019)],
@@ -454,11 +454,11 @@
     detail be re-analyzed by the engineer of record.
   ],
   quote: [The change in the rod configuration doubled the load on the connection that failed.],
-  quote-source: "National Bureau of Standards Investigation Report, 1982",
+  quote-source: "Paraphrasing the National Bureau of Standards Investigation, NBSIR 82-2465, 1982",
   sources-list: (
     [National Bureau of Standards, _Investigation of the Kansas City Hyatt Regency Walkways Collapse_ (NBSIR 82-2465, 1982)],
     [Missouri Board for Architects, Professional Engineers, and Land Surveyors disciplinary records (1986)],
-    [Pfatteicher, _The Hyatt Regency Walkway Collapse_ (2000)],
+    [Pfatteicher (2000), "'The Hyatt Horror': Failure and Responsibility in American Engineering," _J. Performance of Constructed Facilities_ 14(2)],
   ),
   le-insight: [
     The Hyatt Regency case is the canonical engineering-ethics case
@@ -475,7 +475,7 @@
   ],
   literature-items: (
     [NBS Report (1982)],
-    [Pfatteicher (2000)],
+    [Pfatteicher (2000), "'The Hyatt Horror,'" _J. Performance of Constructed Facilities_],
     [Petroski, _To Engineer Is Human_ (1985)],
   ),
   reflection-list: (
@@ -520,8 +520,8 @@
     on the speed of its construction. The schedule was load-bearing
     in the wrong sense.
   ],
-  quote: [Errors in the design of the bridge were the result of design errors that the engineering review process failed to identify.],
-  quote-source: "NTSB Highway Accident Report HAR-19/02, 2019",
+  quote: [The design errors were the result of inadequate engineering review, not unknown phenomena.],
+  quote-source: "Paraphrasing NTSB Highway Accident Report HAR-19/02 on the FIU bridge, 2019",
   sources-list: (
     [NTSB Highway Accident Report HAR-19/02 (2019)],
     [OSHA Final Report on the FIU Bridge Collapse (2019)],
@@ -586,7 +586,7 @@
     wildfire-risk planning.
   ],
   quote: [PG&E knew its equipment was failing in high-fire-risk areas and continued operating without remediation.],
-  quote-source: "Butte County District Attorney's Office, 2020",
+  quote-source: "Paraphrasing the Butte County District Attorney's Camp Fire Report, 2020",
   sources-list: (
     [CalFire, _Camp Fire Investigation Report_ (2019)],
     [Butte County District Attorney, Public Report on the Camp Fire (2020)],
@@ -651,8 +651,8 @@
     interacts with a changing climate to produce population-scale
     harm.
   ],
-  quote: [Texas generators had been warned, four times in three decades, to winterize. They did not.],
-  quote-source: "FERC-NERC Joint Inquiry Report, 2021",
+  quote: [Texas generators had been warned across three decades that winterization was inadequate. The warnings did not produce winterization.],
+  quote-source: "Paraphrasing the FERC-NERC Joint Inquiry Report on the February 2021 Texas event",
   sources-list: (
     [FERC-NERC Joint Inquiry on the February 2021 Cold Weather Outages (2021)],
     [Public Utility Commission of Texas reports],

@@ -125,8 +125,8 @@
     error messages that communicated nothing, and a reporting architecture
     that absorbed incidents.
   ],
-  quote: [The Therac-25 incidents illustrate the dangers of relying on software safety controls in safety-critical systems without rigorous engineering practices.],
-  quote-source: "Leveson & Turner, IEEE Computer, 1993",
+  quote: [Therac-25 illustrates the dangers of relying on software safety controls without rigorous engineering practices.],
+  quote-source: "Paraphrasing Leveson & Turner, IEEE Computer, 1993",
   sources-list: (
     [Leveson & Turner, "An Investigation of the Therac-25 Accidents," _IEEE Computer_ 26(7) (1993)],
     [_The Joint Commission Journal on Quality and Patient Safety_ analysis (2004)],

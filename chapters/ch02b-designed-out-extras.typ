@@ -107,8 +107,8 @@
     was cost. The fact that competitors used it was visible to anyone
     who looked.
   ],
-  quote: [Takata's documents reveal a sustained pattern of misrepresenting safety data to its automotive customers and to regulators.],
-  quote-source: "U.S. Department of Justice statement, 2017",
+  quote: [Takata engaged in a sustained pattern of misrepresenting inflator safety data to its automaker customers and to regulators.],
+  quote-source: "Paraphrasing the U.S. Department of Justice deferred-prosecution agreement, 2017",
   sources-list: (
     [DOJ settlement with Takata Corporation (2017)],
     [NHTSA Takata Airbag Recall coordination documents],
@@ -174,7 +174,7 @@
     pathway by which a safety problem reached the decision to recall.
   ],
   quote: [There was a fundamental failure to use the formal escalation processes that GM had established.],
-  quote-source: "Valukas Report to GM Board of Directors, 2014",
+  quote-source: "Paraphrasing the Valukas Report to the GM Board of Directors, 2014",
   sources-list: (
     [Valukas Report to GM (2014)],
     [NHTSA Investigation of GM Ignition Switch (2014)],
@@ -239,7 +239,7 @@
     than as engineering deliverables.
   ],
   quote: [The root cause was the failed translation of English units to metric units in a segment of ground-based, navigation-related mission software.],
-  quote-source: "NASA Mars Climate Orbiter Mishap Investigation Board, 1999",
+  quote-source: "Paraphrasing the NASA Mars Climate Orbiter Mishap Investigation Board, 1999",
   sources-list: (
     [NASA, Mars Climate Orbiter Mishap Investigation Board Report (1999)],
     [Sauser, B. et al. (2009), retrospective on Mars Climate Orbiter],
@@ -304,7 +304,7 @@
     deployment procedure is not an engineering deliverable.
   ],
   quote: [Knight did not have written procedures requiring a second technician to verify the deployment.],
-  quote-source: "SEC Order, Knight Capital, 2013",
+  quote-source: "Paraphrasing the SEC Order Instituting Administrative Proceedings against Knight Capital, 2013",
   sources-list: (
     [SEC Order Instituting Administrative Proceedings, Knight Capital (2013)],
     [Knight Capital 8-K filing (2012)],

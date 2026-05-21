@@ -163,7 +163,7 @@
   [Gawande, A. (2009). _The Checklist Manifesto: How to Get Things Right._ Metropolitan.],
   [Pronovost, P. & Vohr, E. (2010). _Safe Patients, Smart Hospitals._ Hudson Street Press.],
   [Wachter, R. (2015). _The Digital Doctor: Hope, Hype, and Harm at the Dawn of Medicine's Computer Age._ McGraw-Hill.],
-  [Bates, D. W., Singh, H. & Wachter, R. M. (2023). The safety of inpatient health care. _New England Journal of Medicine_ 388(2): 142–153.],
+  [Bates, D. W., Levine, D. M., Salmasian, H. _et al._ (2023). The safety of inpatient health care. _New England Journal of Medicine_ 388(2): 142–153.],
 ))
 
 #v(12pt)

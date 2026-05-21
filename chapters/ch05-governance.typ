@@ -49,7 +49,7 @@
     not optional features. They are load-bearing elements.
   ],
   quote: [The technology was not the problem. The governance was the problem.],
-  quote-source: "Bulger, McCormick & Pitcan, Data & Society, 2017",
+  quote-source: "Paraphrasing the analysis in Bulger, McCormick & Pitcan, Data & Society, 2017",
   sources-list: (
     [Bulger, McCormick & Pitcan, _The Legacy of inBloom_, Data & Society (2017)],
     [Education Week coverage of inBloom withdrawal, 2013–2014],
@@ -115,7 +115,7 @@
     or acted on that gap before launch.
   ],
   quote: [No single person had a clear understanding of the project's status.],
-  quote-source: "HHS Office of Inspector General, 2016",
+  quote-source: "Paraphrasing the HHS Office of Inspector General review of Healthcare.gov, 2016",
   sources-list: (
     [GAO Healthcare.gov reports (2014–2016)],
     [HHS Office of Inspector General, OEI-06-14-00350],

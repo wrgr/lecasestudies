@@ -14,8 +14,8 @@
   number: "1",
   title: "Training Gap",
   subtitle: "They weren't taught what they needed to know.",
-  epigraph: [The processes in place to identify, communicate and assess readiness were no longer working.],
-  epigraph-source: "U.S. Navy Strategic Readiness Review, 2017",
+  epigraph: [Individuals and groups of individuals could no longer recognize that the processes designed to identify and communicate readiness were no longer working.],
+  epigraph-source: "Paraphrasing the U.S. Navy Strategic Readiness Review, 2017",
 )
 
 #case(
@@ -113,8 +113,8 @@
     The training matched one operational context. It did not match the one
     that killed two hundred and twenty-eight people.
   ],
-  quote: [The crew never understood that they were in a stall situation and consequently never undertook any recovery manoeuvres.],
-  quote-source: "BEA Final Report, 2012",
+  quote: [The crew did not understand that they were in a stall and did not make inputs that would have allowed recovery.],
+  quote-source: "Paraphrasing the BEA Final Report on Air France 447, 2012",
   sources-list: (
     [Bureau d'Enquêtes et d'Analyses, _Final Report on Flight AF447_ (2012)],
     [IEEE Spectrum, "Air France Flight 447 Crash Caused by a Combination of Factors" (2014)],
@@ -177,8 +177,8 @@
     Case 16). It is the canonical example in this book of a failure that
     generated systematic capability reform.
   ],
-  quote: [The human element was a much more important factor and higher risk to the safe operations of a nuclear power plant than had been recognized.],
-  quote-source: "Kemeny Commission Report, 1979",
+  quote: [The fundamental problems are people-related problems, not equipment problems.],
+  quote-source: "Paraphrasing the Kemeny Commission Report on Three Mile Island, 1979",
   sources-list: (
     [Kemeny Commission, _Report of the President's Commission on the Accident at Three Mile Island_ (1979)],
     [NRC Backgrounder on the Three Mile Island Accident],
@@ -245,7 +245,7 @@
     decisions, not declarative ones.
   ],
   quote: [Without meeting these requirements, the Marine Corps cannot ensure that its forces will be ready for combat.],
-  quote-source: "GAO-24-107463, 2024",
+  quote-source: "Paraphrasing GAO-24-107463, Marine Corps Training, 2024",
   sources-list: (
     [GAO-24-107463, _Marine Corps Training_ (2024)],
     [2022 National Defense Strategy of the United States],
@@ -375,8 +375,8 @@
     The crew's mental model was correct for the previous variant. Their
     training had not updated when the system did.
   ],
-  quote: [The failure to differentiate the new variant from those on which the crew was experienced was a major factor in the accident.],
-  quote-source: "AAIB Aircraft Accident Report 4/90, 1990",
+  quote: [The crew's mental model of the older 737 was inappropriately applied to the 737-400 on which they were operating.],
+  quote-source: "Paraphrasing AAIB Aircraft Accident Report 4/90 on British Midland 92, 1990",
   sources-list: (
     [Air Accidents Investigation Branch, AAIB Report 4/90 (1990)],
     [Human Reliability analysis of Kegworth, AeroTime (2024)],
@@ -441,8 +441,8 @@
     fratricide was itself a capability gap. Two decades later, the rate
     had not returned to baseline.
   ],
-  quote: [The lack of a comprehensive and accessible automated data base prevented thorough examination of the problem.],
-  quote-source: "Joint Staff fratricide review, 1993",
+  quote: [The lack of a comprehensive and accessible automated database prevented thorough examination of the problem.],
+  quote-source: "Paraphrasing post–Desert Storm fratricide reviews, c. 1993",
   sources-list: (
     [Shrader, _Amicicide: The Problem of Friendly Fire in Modern War_ (1982)],
     [Air & Space Forces Magazine, friendly-fire historical analysis],

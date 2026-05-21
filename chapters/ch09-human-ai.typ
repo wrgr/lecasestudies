@@ -14,7 +14,7 @@
   title: "Human-AI Teaming",
   subtitle: "The capability work the discipline has not done before.",
   epigraph: [Humans tend to tune out when tasked with monitoring automated systems that work well most of the time.],
-  epigraph-source: "NTSB Member Robert Sumwalt, 2019",
+  epigraph-source: "NTSB Chairman Robert Sumwalt, Uber Tempe hearing remarks, 2019",
 )
 
 #case(
@@ -54,8 +54,8 @@
     designed without the capability infrastructure to make it
     performable.
   ],
-  quote: [The design of the Autopilot was not designed to keep the driver engaged in the driving task.],
-  quote-source: "NTSB Recommendation H-17-42, 2017",
+  quote: [Autopilot was not designed to keep the driver engaged in the driving task.],
+  quote-source: "Paraphrasing the NTSB findings on the 2016 Tesla Autopilot Florida crash (HAB-17/07, 2017)",
   sources-list: (
     [NHTSA Standing General Order 2021-01 reports],
     [NTSB Highway Accident Reports HAB-17/07 (2016), HAR-20/01 (2018), and follow-on cases],
@@ -122,7 +122,7 @@
     was at the company's governance posture, not at the technology.
   ],
   quote: [Cruise's representation of the incident to regulators omitted material facts.],
-  quote-source: "California Public Utilities Commission, 2023",
+  quote-source: "Paraphrasing the California Public Utilities Commission decision suspending Cruise permits, 2023",
   sources-list: (
     [California CPUC Decision suspending Cruise permits (2023)],
     [Quinn Emanuel report on Cruise incident response (2024)],
@@ -191,8 +191,8 @@
     (Case 37) and the A-Level case (Case 35) as foundational examples
     of construct definition as a capability-engineering decision.
   ],
-  quote: [Black defendants were almost twice as likely as white defendants to be labeled higher-risk but not actually re-offend.],
-  quote-source: "ProPublica, Machine Bias, 2016",
+  quote: [Blacks are almost twice as likely as whites to be labeled a higher risk but not actually re-offend.],
+  quote-source: "Angwin, Larson, Mattu & Kirchner, ProPublica, \"Machine Bias,\" 2016",
   sources-list: (
     [Angwin, Larson, Mattu & Kirchner, "Machine Bias," _ProPublica_ (2016)],
     [Northpointe technical response (2016)],
@@ -260,7 +260,7 @@
     clearance and clinically performable deployment in medical AI.
   ],
   quote: [Performance metrics on a clearance dataset are not the same as performance metrics in deployment populations.],
-  quote-source: "FDA Discussion Paper on Modifications to AI/ML-Based SaMD, 2019",
+  quote-source: "Author framing of the FDA AI/ML-Based SaMD discussion paper, 2019 (uncited)",
   sources-list: (
     [FDA, "Proposed Regulatory Framework for Modifications to AI/ML-Based Software as a Medical Device" (2019)],
     [Larrazabal et al. (2020), "Gender imbalance in medical imaging datasets," _PNAS_],
@@ -284,7 +284,7 @@
   literature-items: (
     [Obermeyer et al. (2019), _Science_],
     [Larrazabal et al. (2020), _PNAS_],
-    [Wachter & Cassel (2023) on AI safety in healthcare],
+    [Wachter & Brynjolfsson (2023), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_],
   ),
   reflection-list: (
     [Identify a model in your domain whose deployment population diverges from its training population. What is the institutional architecture to surface the divergence?],
@@ -331,7 +331,7 @@
     while the deployment is happening.
   ],
   quote: [LLMs produce hallucinations indistinguishable in tone from accurate information, and clinicians have not yet developed the practice of routine verification.],
-  quote-source: "Journal of the American Medical Association editorial, 2023",
+  quote-source: "Author summary of JAMA editorials on LLM clinical use, 2023 – 2024 (uncited)",
   sources-list: (
     [JAMA editorials on LLM integration into clinical practice (2023–2024)],
     [Sallam (2023), "ChatGPT Utility in Healthcare Education, Research, and Practice"],
@@ -353,7 +353,7 @@
   literature-items: (
     [JAMA editorials on LLM clinical use],
     [Sallam (2023)],
-    [Wachter & Cassel (2023)],
+    [Wachter & Brynjolfsson (2023), JAMA on generative AI in health care],
   ),
   reflection-list: (
     [Identify a workflow in your domain currently being augmented by LLMs. What is the verification practice — and does it exist at the moment of use, or only after?],
@@ -469,7 +469,7 @@
     domain.
   ],
   quote: [This will be one of the most important achievements in AI in the past decade.],
-  quote-source: "John Moult, organizer of the CASP benchmark, 2020",
+  quote-source: "Paraphrasing John Moult (organizer of the CASP benchmark) on AlphaFold2, 2020",
   sources-list: (
     [Jumper et al. (2021), "Highly accurate protein structure prediction with AlphaFold," _Nature_],
     [Varadi et al. (2022), AlphaFold Protein Structure Database, _Nucleic Acids Research_],
@@ -562,7 +562,7 @@
   literature-items: (
     [Peng et al. (2023)],
     [Pearce et al. (2022)],
-    [Salimov et al. (2024) on AI-augmented professional practice],
+    [Dell'Acqua et al. (2023), "Navigating the Jagged Technological Frontier" (HBS / BCG study on professional use of LLMs)],
   ),
   reflection-list: (
     [In your domain, identify a class of practitioners whose work is currently being augmented by AI tools. What evidence would tell you whether their capability is growing or eroding?],

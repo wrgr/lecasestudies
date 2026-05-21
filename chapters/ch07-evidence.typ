@@ -50,7 +50,7 @@
     is not external to the argument.
   ],
   quote: [People don't just die from heart attacks and bacteria, they die from system-wide failings and poorly coordinated care.],
-  quote-source: "Makary & Daniel, BMJ, 2016",
+  quote-source: "Martin Makary, press statements accompanying Makary & Daniel, BMJ (2016)",
   sources-list: (
     [Makary & Daniel, "Medical error — the third leading cause of death in the US," _BMJ_ (2016)],
     [Institute of Medicine, _To Err Is Human_ (1999)],
@@ -78,7 +78,7 @@
   literature-items: (
     [Makary & Daniel (2016), BMJ],
     [Institute of Medicine, _To Err Is Human_ (1999)],
-    [Bates, Singh & Wachter (2023) on patient-safety progress],
+    [Bates et al. (2023), "The Safety of Inpatient Health Care," _NEJM_ 388(2)],
   ),
   reflection-list: (
     [Identify a measurement instrument in your domain that systematically fails to capture the failure modes it should be designed to surface. What would it cost to fix?],
