@@ -26,7 +26,9 @@
     align(center, {
       text(font: sans, size: 8pt, tracking: 2.4pt, fill: teal, upper("a casebook for"))
       v(6pt)
-      text(font: sans, size: 8.5pt, tracking: 2pt, fill: navy, upper("Learning Engineering for Next-Generation Systems"))
+      text(font: sans, size: 8.5pt, tracking: 2pt, fill: navy, upper("LDT  ·  LENS"))
+      v(4pt)
+      text(font: sans, size: 7pt, tracking: 1.6pt, fill: text-muted, upper("Learning Design & Technology · Learning Engineering for Next-Generation Systems"))
       v(36pt)
       text(font: serif, size: 48pt, fill: navy, "Capability")
       v(-4pt)
@@ -44,7 +46,7 @@
     align(center, {
       text(font: sans, size: 9pt, tracking: 1.6pt, fill: navy.lighten(20%), upper("Johns Hopkins University"))
       v(2pt)
-      text(font: sans, size: 8pt, fill: text-muted, "School of Engineering")
+      text(font: sans, size: 8pt, fill: text-muted, "School of Education")
     })
   }
 )
@@ -61,7 +63,7 @@
       Capability Matters: A Casebook \
       When Human Capability Is the Critical System Parameter \
       \
-      Compiled for the LENS specialization at Johns Hopkins School of Engineering. \
+      Compiled for the LDT program and the LENS specialization at the Johns Hopkins University School of Education. \
       First edition, 2026. \
       \
       All cases reference publicly reported incidents and published investigations. \

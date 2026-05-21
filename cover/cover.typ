@@ -57,7 +57,7 @@
 
 // ---- FRONT COVER (right side) ----
 #at(front-x + 14mm, 24mm + bleed)[
-  #text(font: sans, size: 9pt, tracking: 2.8pt, fill: gold, upper("A casebook for LENS"))
+  #text(font: sans, size: 9pt, tracking: 2.8pt, fill: gold, upper("A casebook for LDT · LENS"))
   #v(2pt)
   #line(length: 22mm, stroke: 0.8pt + gold)
 ]
@@ -79,7 +79,7 @@
   #line(length: 22mm, stroke: 0.6pt + gold)
   #v(6pt)
   #text(font: sans, size: 8.5pt, tracking: 1.8pt, fill: cream,
-    upper("Johns Hopkins University · School of Engineering"))
+    upper("Johns Hopkins University · School of Education"))
 ]
 
 // ---- SPINE (vertical text, only if spine is wide enough) ----
@@ -118,11 +118,12 @@
     ]
     #v(10pt)
     #text(font: sans, size: 9pt, fill: rgb("#B7C9E0"))[
-      A casebook for the Learning Engineering for Next-Generation Systems
-      specialization at the Johns Hopkins University School of Engineering.
-      Forty-two real incidents — from the bridge of a U.S. Navy destroyer
-      to a Michigan ICU to a national A-Level results algorithm — examined
-      through the lens of capability as a system parameter.
+      A casebook for the Learning Design & Technology program and the
+      Learning Engineering for Next-Generation Systems specialization at
+      the Johns Hopkins University School of Education. One hundred real
+      incidents — from the bridge of a U.S. Navy destroyer to a Michigan
+      ICU to a national A-Level results algorithm — examined through the
+      lens of capability as a system parameter.
     ]
     #v(10pt)
     #text(font: sans, size: 9pt, fill: rgb("#B7C9E0"))[

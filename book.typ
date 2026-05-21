@@ -10,7 +10,7 @@
 // ---- Document metadata ----
 #set document(
   title: "Capability Matters: A Casebook",
-  author: "LENS Program · Johns Hopkins University School of Engineering",
+  author: "LDT / LENS · Johns Hopkins University School of Education",
 )
 
 // ---- Global page setup (A5 + 3mm bleed = 154 x 216 mm) ----
@@ -48,15 +48,28 @@
 // FRONT MATTER
 // ============================================================
 #include "frontmatter/title.typ"
+#include "frontmatter/introduction.typ"
 #include "frontmatter/howto.typ"
 #include "frontmatter/matrix.typ"
 
 // ============================================================
 // PART I — THE FAILURE MODES
 // ============================================================
+#include "chapters/ch01-training-gap.typ"
 #include "chapters/ch02-designed-out.typ"
+#include "chapters/ch03-normalization.typ"
+#include "chapters/ch04-interface.typ"
+#include "chapters/ch05-governance.typ"
+#include "chapters/ch06-knowledge.typ"
+#include "chapters/ch07-evidence.typ"
 
 // ============================================================
 // PART II — WHAT WORKS
 // ============================================================
 #include "chapters/ch08-paired-interventions.typ"
+#include "chapters/ch08b-paired-extras.typ"
+
+// ============================================================
+// BACK MATTER
+// ============================================================
+#include "backmatter/references.typ"

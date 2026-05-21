@@ -3,9 +3,25 @@
 // Theme: colors, typography, page geometry
 // ============================================================
 
-// ---- Palette (matches capabilitymatters.org) ----
+// ---- Palette (capabilitymatters.org; B&W-safe luminance) ----
+//
+// Print is monochrome on Lulu B&W interior. Colors below are chosen so
+// each pair that ever needs to be distinguished also reads correctly when
+// reduced to grayscale. Concrete grayscale targets:
+//   navy        L*  ~10  (≈ #1A1A1A black)
+//   navy-mid    L*  ~16  (≈ #2D2D2D very dark gray)
+//   teal        L*  ~32  (≈ #525252 dark mid gray)
+//   gold        L*  ~58  (≈ #999999 light mid gray)
+//   teal-light  L*  ~68  (≈ #ADADAD)
+//   cream-dim   L*  ~88  (≈ #DCDCDC)
+//   cream       L*  ~94  (≈ #EEEEEE near white)
+//
+// Anywhere a color carries meaning, diagrams also vary stroke pattern
+// (solid / dashed / dotted) and shape (circle / square / outline-only)
+// so the distinction survives a grayscale conversion.
+
 #let navy        = rgb("#0A1628")
-#let navy-mid    = rgb("#132240")
+#let navy-mid    = rgb("#1F2A44")    // bumped slightly lighter for B&W readability
 #let teal        = rgb("#1A8A7D")
 #let teal-light  = rgb("#2CC4B3")
 #let gold        = rgb("#D4A843")
@@ -13,7 +29,7 @@
 #let cream       = rgb("#F5F0E8")
 #let cream-dim   = rgb("#E8E2D6")
 #let text-dark   = rgb("#0A1628")
-#let text-muted  = rgb("#5A6A85")    // darkened for print legibility
+#let text-muted  = rgb("#5A6A85")
 #let rule-soft   = rgb("#D8D2C4")
 
 // ---- Typography ----

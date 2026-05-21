@@ -145,6 +145,9 @@
   chips.join(h(3pt))
 }
 
+// ---- Numbered citation marker (superscript, used in the introduction) ----
+#let cite-num(n) = super(text(font: sans, size: 7pt, weight: "bold", fill: teal, str(n)))
+
 // ---- Literature list ----
 #let literature(..items) = block({
   eyebrow("Further Reading", color: gold)
