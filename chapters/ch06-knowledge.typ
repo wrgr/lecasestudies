@@ -123,7 +123,7 @@
     institutional pathway to scaled adoption is still being built.
   ],
   quote: [The technology works. The institutional pathway to ubiquitous fielded use does not yet.],
-  quote-source: "Author summary of the GIFT adoption record (uncited)",
+  quote-source: "Editors' synthesis of the GIFT adoption record",
   sources-list: (
     [GIFT Project, gifttutoring.org — Overview, News, and Releases pages],
     [Sottilare, Graesser, Hu & Holden (eds.), _Design Recommendations for Intelligent Tutoring Systems_, GIFTSym volumes],
@@ -190,7 +190,7 @@
     ecosystem.
   ],
   quote: [The standard exists. The governance does not.],
-  quote-source: "Author summary of ICICLE / ADL TLA discussion (uncited; flag for citation)",
+  quote-source: "Editors' synthesis of ICICLE / ADL TLA discussion",
   sources-list: (
     [Advanced Distributed Learning Initiative, Total Learning Architecture],
     [IEEE ICICLE LEBoK],

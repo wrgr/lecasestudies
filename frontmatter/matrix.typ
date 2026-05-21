@@ -76,6 +76,8 @@
   entry(18, "USS Vincennes",              "1988",      "H·T",     "2"),
   entry(19, "Patriot Missile",            "1991",      "D·H·K",   "5·9"),
   entry(20, "Grenfell Tower",             "2017",      "G·T·K·N", "7"),
+  entry(21, "Summit Learning Rollout",    "2014–19",   "G·T·K",   "7·10"),
+  entry(22, "Tennessee Pre-K Study",      "2009–18",   "G·D",     "4·7·10"),
   entry(23, "Korean Air Transformation",  "2000–",     "T·N",     "8",  success: true),
   entry(24, "Toyota Andon Cord",          "1950s–",    "N·G",     "8",  success: true),
   entry(25, "EHR/CPOE Implementation",    "2005–",     "H·D·G",   "7·9"),
@@ -90,6 +92,7 @@
   entry(31, "Medical Errors (Makary)",    "ongoing",   "T·H·N·K·G", "4"),
   entry(32, "VA Wait-Time Scandal",       "2014",      "G·K·N",   "4"),
   entry(33, "Military Fratricide",        "1991–",     "T·H·K",   "5"),
+  entry(34, "ACGME Duty-Hour Reform",     "2003–17",   "T·K·N",   "5·4·10"),
   entry(35, "UK A-Level Algorithm",       "2020",      "G·H·D",   "4·7"),
   entry(36, "Australia Robodebt",         "2016–20",   "G·D·H",   "7·2"),
   entry(37, "Algorithmic Bias in Ed",     "ongoing",   "G·H·D",   "4·7·9"),
@@ -219,12 +222,6 @@
       LEN 10 Studio · LEN 5 Capability Analysis · LEN 7 Bias, Risk &
       Governance · LEN 2 Human-AI Teaming · LEN 8 Knowledge Transfer ·
       LEN 9 Computational & AI Methods.
-    ]
-    v(4pt)
-    text(font: sans, size: 6.5pt, style: "italic", fill: text-muted)[
-      Case numbers 21, 22, and 34 are intentionally reserved — placeholders
-      for cases under development in the second iteration of the dataset.
-      Numbering is preserved across editions so cross-references remain stable.
     ]
   }
 )

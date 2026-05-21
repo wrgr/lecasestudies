@@ -172,7 +172,7 @@
     deliberately redesigned.
   ],
   quote: [Korean Air's record before 2000 was changed by an external intervention into cockpit culture, not by criticism of it.],
-  quote-source: "Author summary of NTSB findings on KAL 801 and the Korean Air transformation (uncited)",
+  quote-source: "Editors' synthesis of NTSB findings on KAL 801 and the Korean Air transformation",
   sources-list: (
     [NTSB Aircraft Accident Report, KAL Flight 801 (2000)],
     [Air Transport World Phoenix Award documentation (2006)],
@@ -305,7 +305,7 @@
     intervention.
   ],
   quote: [TeamSTEPPS represents the translation pathway from high-reliability research into clinical practice.],
-  quote-source: "Author framing drawing on AHRQ TeamSTEPPS 3.0 (2023) and Salas et al.",
+  quote-source: "Editors' synthesis drawing on AHRQ TeamSTEPPS 3.0 (2023) and Salas et al.",
   sources-list: (
     [AHRQ TeamSTEPPS 3.0 Curriculum (2023)],
     [American Hospital Association Team Training Center],
@@ -439,7 +439,7 @@
     primary accountability metric.
   ],
   quote: [Predictions trigger support, not gatekeeping.],
-  quote-source: "Author framing of the GSU advising model, drawn from Renick & Strom (2020) and NYT coverage (2018)",
+  quote-source: "Editors' synthesis of the GSU advising model, drawn from Renick & Strom (2020) and New York Times coverage (2018)",
   sources-list: (
     [Georgia State University institutional research and Strategic Plan reports],
     [_New York Times_, "How Colleges Know You're Not Finishing" (2018)],
@@ -507,7 +507,7 @@
     can produce equivalent evidence for problems that do not.
   ],
   quote: [Cognitive Tutors demonstrate the LE process working: theory → engineering → evidence → scale.],
-  quote-source: "Author framing of Anderson et al. (1995) and Koedinger & Corbett (2006)",
+  quote-source: "Editors' synthesis of Anderson et al. (1995) and Koedinger & Corbett (2006)",
   sources-list: (
     [Anderson, Corbett, Koedinger & Pelletier, "Cognitive Tutors: Lessons Learned," _JLS_ (1995)],
     [RAND Corporation Algebra I evaluation],

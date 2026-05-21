@@ -386,7 +386,7 @@
     catastrophically.
   ],
   quote: [Equifax lacked a comprehensive IT asset inventory.],
-  quote-source: "U.S. Senate Permanent Subcommittee on Investigations, How Equifax Neglected Cybersecurity, March 2019 (section heading)",
+  quote-source: "U.S. Senate Permanent Subcommittee on Investigations, How Equifax Neglected Cybersecurity, March 2019",
   sources-list: (
     [Senate Permanent Subcommittee on Investigations, _How Equifax Neglected Cybersecurity and Suffered a Devastating Data Breach_ (2019)],
     [Federal Trade Commission Consent Order (2019)],

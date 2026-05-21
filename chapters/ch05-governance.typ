@@ -281,6 +281,168 @@
 )
 
 #case(
+  number: 21,
+  title: "Summit Learning / Personalized Learning Rollout",
+  year: "2014–2019",
+  domains-list: ("education",),
+  modes-code: "GTK",
+  impact: "Personalized-learning platform deployed across ~380 U.S. schools; parent revolts in Brooklyn, Cheshire, McPherson, Kennebunk; multiple districts withdrew within two years",
+  diagram: dgm.dgm-inbloom,
+  body: [
+    Summit Learning — the personalized-learning platform developed by
+    Summit Public Schools with technical and financial support from the
+    Chan Zuckerberg Initiative — was offered free to U.S. school
+    districts beginning in 2015. By 2018 it was in roughly 380 schools
+    serving an estimated 80,000 students. By 2019 the most visible
+    early adopters were withdrawing under parent and student pressure:
+    Brooklyn's MS 442 (Boerum Hill) saw an organized opt-out
+    campaign; districts in Cheshire (Connecticut), Kennebunk (Maine),
+    and McPherson (Kansas) cancelled or scaled back deployments after
+    parent meetings. Student walk-outs, surveys reporting eye strain
+    and disengagement, and concerns about screen time and data
+    privacy converged into a governance failure that was not about
+    the underlying instructional design.
+
+    The platform's pedagogical theory — competency-based progression,
+    self-directed projects, mentor check-ins — was defensible and in
+    many places effective. The failure was the deployment governance:
+    no formal evaluation framework that districts could read before
+    adopting; no published data-handling agreement at parent-facing
+    resolution; no escalation pathway when schools wanted to modify or
+    exit. When parents asked what evidence supported the platform,
+    Summit and CZI pointed to internal data; when they asked what
+    happened to student records, the answer required reading a Terms
+    of Service. The platform's defenders — including the participating
+    teachers and many students — were unable to win an argument that
+    had been lost before it started, because the implementation never
+    surfaced the governance questions that the parents would ask.
+  ],
+  quote: [The tools were free. The accountability architecture had not been built.],
+  quote-source: "Editors' synthesis of Summit Learning rollout coverage (New York Times, Wired, Education Week, 2018–2019)",
+  sources-list: (
+    [#link("https://www.nytimes.com/2019/04/21/technology/silicon-valley-kansas-schools.html")[Bowles (2019), "Silicon Valley Came to Kansas Schools. That Started a Rebellion," _New York Times_]],
+    [Singer (2017), "The Silicon Valley Billionaires Remaking America's Schools," _New York Times_],
+    [Herold (2019), Education Week coverage of Summit / CZI implementation],
+    [Watters (2019), "The Stories We Tell About Personalized Learning," _Hack Education_],
+    [Chan Zuckerberg Initiative & Summit Learning, public program documentation (2015–2019)],
+  ),
+  le-insight: [
+    Summit Learning is a clean test of the book's central claim:
+    technology that worked at the pedagogical level still failed
+    because the *governance* architecture (consent, evidence,
+    measurement, exit) had not been engineered alongside it. The
+    pattern — well-intentioned tool, well-funded rollout, no
+    institutional contract with the families and teachers operating
+    inside it — recurs across the educational-technology dataset
+    (Cases 8, 38, 42) and is the educator's-side analog of the
+    governance failures in Cases 35 and 36.
+  ],
+  lens-approach: [
+    LENS uses Summit Learning in LEN 7 as the foundational
+    consent-and-evidence case for educational technology, and in
+    LEN 10 as a studio prompt for the governance artifacts that any
+    educational-technology adoption decision should produce: a
+    public evidence summary at parent reading level, a data-handling
+    agreement at the same resolution, and a documented exit pathway
+    that does not depend on the vendor's goodwill.
+  ],
+  literature-items: (
+    [Selwyn (2016), _Is Technology Good for Education?_],
+    [Watters (2021), _Teaching Machines_],
+    [Eubanks (2018), _Automating Inequality_ (governance-pattern analog)],
+  ),
+  reflection-list: (
+    [What is the equivalent of the "free tool, free of governance" pattern in your domain — the offer that bypasses the accountability architecture because it does not yet exist?],
+    [Design the parent-reading-level governance artifact that a district should require before adopting an educational-technology platform.],
+  ),
+  courses: ("LEN 7", "LEN 10", "LEN 8",),
+)
+
+#case(
+  number: 22,
+  title: "Tennessee Voluntary Pre-K Study",
+  year: "2009–2018",
+  domains-list: ("education",),
+  modes-code: "GD",
+  impact: "Vanderbilt longitudinal RCT of a state-funded universal pre-K program: early gains faded by third grade; sixth-grade outcomes were worse than the control group on several measures",
+  diagram: dgm.dgm-curve(
+    ((1.0, 2.6), (2.0, 2.7), (3.5, 1.9), (5.5, 1.0), (7.5, 0.8), (8.8, 0.7)),
+    milestone: 2.0,
+    milestone-label: "kindergarten",
+    x-label: "grade level",
+    y-label: "effect size",
+    framing: "early gains fade; by sixth grade the curve runs below the control",
+    caption: "Tennessee Pre-K — measurement architecture worked; the field's response did not",
+  ),
+  body: [
+    The Tennessee Voluntary Pre-Kindergarten Program (TN-VPK) was a
+    state-funded, means-tested universal pre-K program that, by 2009,
+    served roughly eighteen thousand four-year-olds annually.
+    Researchers at Vanderbilt's Peabody Research Institute conducted a
+    randomized controlled trial — among the most rigorous large-N
+    pre-K studies in the United States — following children admitted
+    by lottery against children who applied but did not enroll.
+
+    Through kindergarten, the TN-VPK children showed the expected
+    gains: stronger letter knowledge, vocabulary, and early literacy
+    scores. By third grade the gains had faded. By sixth grade,
+    Lipsey, Farran, and Durkin (2018) reported that TN-VPK children
+    performed *worse* than the control group on several state
+    academic measures and on teacher-reported behavior. The result
+    contradicted the policy consensus that early-childhood investment
+    produces durable gains, and provoked an unusual public response
+    from the field: the study was attacked, its methods were
+    contested, and the policy community largely declined to internalize
+    its findings.
+
+    The study is in the dataset not because pre-K is bad — the
+    Perry Preschool and Abecedarian evidence remains durable — but
+    because the *measurement architecture* (an RCT, with longitudinal
+    follow-up, in an at-scale program) is rare in education, and
+    when it returned a result the field did not want, the discipline's
+    capacity to act on it was tested and largely failed. Tennessee
+    continued the program substantially unchanged. Other states scaled
+    up universal pre-K without modifying their measurement
+    architectures in light of the Tennessee finding.
+  ],
+  quote: [By sixth grade, children who had attended TN-VPK were doing somewhat worse on academic achievement and discipline measures than children in the control group.],
+  quote-source: "Lipsey, Farran & Durkin (2018), Vanderbilt Peabody Research Institute",
+  sources-list: (
+    [#link("https://doi.org/10.1016/j.ecresq.2018.03.005")[Lipsey, Farran & Durkin (2018), "Effects of the Tennessee Pre-Kindergarten Program on Children's Achievement and Behavior Through Third Grade," _Early Childhood Research Quarterly_ 45: 155–176. doi:10.1016/j.ecresq.2018.03.005]],
+    [Durkin, Lipsey, Farran & Wiesen (2022), "Effects of a Statewide Pre-Kindergarten Program on Children's Achievement and Behavior Through Sixth Grade," _Developmental Psychology_ 58(3): 470–484],
+    [Heckman et al., responses and counter-analyses (2018–2022)],
+    [National Institute for Early Education Research, _State of Preschool_ yearbooks (2010–2022)],
+  ),
+  le-insight: [
+    Tennessee Pre-K is the cleanest case in the dataset for what
+    happens when a discipline has not engineered its own capacity to
+    update on contrary evidence. The measurement instrument worked.
+    The institutional architecture for acting on what it found did
+    not. Compare to Case 7 (Makary methodology debate) and Case 32
+    (VA Wait-Time): in each, a measurement that returned an
+    unwelcome answer was contested rather than absorbed.
+  ],
+  lens-approach: [
+    LENS uses Tennessee Pre-K in LEN 4 as a measurement-architecture
+    case (longitudinal RCT in a real policy context), in LEN 7 to
+    discuss the institutional politics of unwelcome findings, and in
+    LEN 10 as a studio prompt for designing the implementation-science
+    pathway that would absorb such findings into program redesign
+    rather than rejection.
+  ],
+  literature-items: (
+    [Lipsey, Farran & Durkin (2018, 2022) — primary study and 6th-grade follow-up],
+    [Heckman (2008), _The Case for Investing in Disadvantaged Young Children_],
+    [Phillips et al. (2017), _Puzzling It Out: The Current State of Scientific Knowledge on Pre-Kindergarten Effects_],
+  ),
+  reflection-list: (
+    [What measurement instrument in your domain has returned an unwelcome answer, and how did the discipline respond?],
+    [Design the implementation-science pathway that would absorb a Tennessee-Pre-K-style finding into program redesign rather than rejection.],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 10",),
+)
+
+#case(
   number: 35,
   title: "UK A-Level Algorithm / Ofqual",
   year: "2020",

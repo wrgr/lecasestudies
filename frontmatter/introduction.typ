@@ -419,9 +419,11 @@
   graduate has, in addition to coursework, a portfolio of capability
   engineering deliverables produced inside real operational systems.
   The Summer 2025 PISTA incubator (Section VII) is the most recent
-  example: fifty-two participants from nine universities delivered a
-  working CBRNE decision-support prototype to DTRA leadership in ten
-  weeks, with three full redesigns inside that window. The cases in
+  example: a JHU/APL cohort of forty-four students collaborated across
+  projects, with nine student fellows specifically shipping a working
+  CBRNE (chemical, biological, radiological, nuclear, and explosives)
+  decision-support prototype to DTRA leadership in ten weeks, with
+  three full redesigns inside that window. The cases in
   this book are not the only operational record the program produces.
   Every graduate carries an addition to it. The credibility of the
   program is, in the end, the credibility of the artifacts its

@@ -38,7 +38,7 @@
     of fatal crashes involving Tesla Autopilot since the 2016 Joshua
     Brown case in Florida. The pattern is consistent: the system
     operates capably for long periods, the driver's monitoring
-    attention attenuates, and a edge-case scenario — a stationary
+    attention attenuates, and an edge-case scenario — a stationary
     object, a faded lane marking, a perpendicular crossing — produces
     a collision the inattentive driver does not catch.
 
@@ -265,7 +265,7 @@
     clearance and clinically performable deployment in medical AI.
   ],
   quote: [Performance metrics on a clearance dataset are not the same as performance metrics in deployment populations.],
-  quote-source: "Author framing of the FDA AI/ML-Based SaMD discussion paper, 2019 (uncited)",
+  quote-source: "Editors' synthesis of the FDA AI/ML-Based SaMD discussion paper (2019)",
   sources-list: (
     [FDA, "Proposed Regulatory Framework for Modifications to AI/ML-Based Software as a Medical Device" (2019)],
     [Larrazabal et al. (2020), "Gender imbalance in medical imaging datasets," _PNAS_],
@@ -336,7 +336,7 @@
     while the deployment is happening.
   ],
   quote: [LLMs produce hallucinations indistinguishable in tone from accurate information, and clinicians have not yet developed the practice of routine verification.],
-  quote-source: "Author summary of JAMA editorials on LLM clinical use, 2023 – 2024 (uncited)",
+  quote-source: "Editors' synthesis of JAMA editorials on LLM clinical use (2023–2024)",
   sources-list: (
     [JAMA editorials on LLM integration into clinical practice (2023–2024)],
     [Sallam (2023), "ChatGPT Utility in Healthcare Education, Research, and Practice"],
@@ -545,7 +545,7 @@
     evidence is in.
   ],
   quote: [AI assistance changes what developers can do; it may also change what they need to know.],
-  quote-source: "ACM Communications, 2024",
+  quote-source: "Communications of the ACM, 2024",
   sources-list: (
     [Peng et al. (2023), "The Impact of AI on Developer Productivity"],
     [Pearce et al. (2022), "Asleep at the Keyboard? Assessing the Security of GitHub Copilot's Code Contributions"],

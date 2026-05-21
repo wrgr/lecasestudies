@@ -476,3 +476,92 @@
   ),
   courses: ("LEN 5", "LEN 2", "LEN 8"),
 )
+
+#case(
+  number: 34,
+  title: "ACGME 80-Hour Resident Duty-Hour Reform",
+  year: "2003–2017",
+  domains-list: ("healthcare",),
+  modes-code: "TKN",
+  impact: "ACGME capped U.S. resident physician work hours at 80/week to reduce fatigue-related errors; subsequent RCTs (FIRST, iCOMPARE) showed mixed effects on patient outcomes and increased hand-off-related errors",
+  diagram: dgm.dgm-timeline(
+    (("2003 — 80-hr cap", "fatigue↓"), ("2011 — 16-hr intern cap", "—"), ("2016 — FIRST trial", "no difference"), ("2017 — duty-hour cap relaxed", "back to 80-hr only")),
+    emphasis: 2,
+    caption: "ACGME duty-hour reform — capping hours did not, on its own, engineer the capability",
+  ),
+  body: [
+    Following the 1984 death of Libby Zion at a New York teaching
+    hospital — a case that became the focal point of a multi-decade
+    argument about resident physician fatigue — the Accreditation
+    Council for Graduate Medical Education (ACGME) imposed an
+    80-hour weekly cap on resident work hours in 2003. In 2011 the
+    rules tightened further: first-year residents were capped at
+    16-hour shifts. The intent was to address a well-documented
+    training-gap pattern: residents making fatigue-related errors
+    they would not have made rested.
+
+    The intervention was a single-variable change to a complex
+    capability system. Two large randomized trials — FIRST (Bilimoria
+    et al., NEJM 2016) in general surgery and iCOMPARE (Silber et al.,
+    NEJM 2019) in internal medicine — compared flexible duty-hour
+    policies with the strict caps. Both found no difference in
+    30-day patient outcomes between the arms. Both surfaced an
+    unintended consequence: the 16-hour cap had increased the number
+    of patient hand-offs per admission, and hand-offs are themselves
+    a documented site of error. Resident continuity-of-care exposure
+    decreased; procedural exposure for surgical residents decreased;
+    in qualitative reports residents described feeling less prepared
+    rather than more rested. In 2017 ACGME relaxed the 16-hour intern
+    cap, reverting to the 80-hour-only ceiling.
+
+    Duty-hour reform is in the dataset not because the original
+    fatigue problem was unreal — it was — but because the discipline
+    addressed it by capping the input rather than by engineering the
+    capability. The hand-off, the continuity of care, the procedural
+    exposure, the supervisory structure, and the documentation
+    architecture were all part of the capability that the long hours
+    had been (poorly) producing. Reforming the input without
+    redesigning the system surfaced the missing components only by
+    their absence.
+  ],
+  quote: [Flexible, less-restrictive duty hour policies for first-year residents were associated with non-inferior patient outcomes and no significant difference in residents' satisfaction with overall well-being and education quality.],
+  quote-source: "Silber, Bellini, Shea et al., iCOMPARE Trial, NEJM 2019",
+  sources-list: (
+    [#link("https://doi.org/10.1056/NEJMoa1515724")[Bilimoria, Chung, Hedges et al. (2016), "National Cluster-Randomized Trial of Duty-Hour Flexibility in Surgical Training," _NEJM_ 374: 713–727. doi:10.1056/NEJMoa1515724]],
+    [#link("https://doi.org/10.1056/NEJMoa1810641")[Silber, Bellini, Shea et al. (2019), "Patient Safety Outcomes under Flexible and Standard Resident Duty-Hour Rules," _NEJM_ 380: 905–914. doi:10.1056/NEJMoa1810641]],
+    [Asch et al. (2014), "Resident Duty Hours and Medical Education Policy," _NEJM_ 370: 1671–1673],
+    [ACGME, _Common Program Requirements_ (2003, 2011, 2017 revisions)],
+    [Lerner (2006), _The Libby Zion Case and the Reform of Medical Education_],
+  ),
+  le-insight: [
+    Duty-hour reform is the clearest healthcare case in the dataset
+    of a single-variable intervention into a multi-variable capability
+    system. Pairs with Case 33 (fratricide) and Case 11 (V-22) as
+    examples of multi-decade capability problems where each
+    component reform shifts the failure to an adjacent component
+    that was carrying load the original system was not designed to
+    surface. The success cases — Keystone ICU (14), CRM (12), Korean
+    Air (23) — succeeded because they engineered the supervisory,
+    hand-off, and measurement architecture *together with* the
+    behavioral change.
+  ],
+  lens-approach: [
+    LENS uses duty-hour reform in LEN 5 as the foundational
+    capability-system case (what was the long-hour regime
+    *producing* that was lost when the input was capped?), in LEN 4
+    to discuss measurement architecture (what FIRST and iCOMPARE
+    measured, and what they did not), and in LEN 10 as a studio
+    prompt for the integrated resident-training redesign that the
+    reforms did not deliver.
+  ],
+  literature-items: (
+    [Bilimoria et al. (2016), FIRST trial; Silber et al. (2019), iCOMPARE trial],
+    [Lerner (2006), _The Libby Zion Case and the Reform of Medical Education_],
+    [Ulmer, Wolman & Johns, eds. (2008), _Resident Duty Hours: Enhancing Sleep, Supervision, and Safety_, Institute of Medicine],
+  ),
+  reflection-list: (
+    [What capability is the long-hours / heavy-workload regime in your domain currently producing — supervisory exposure, continuity, procedural reps, tacit-knowledge transfer — that a simple cap would lose?],
+    [Design the integrated redesign — supervision, hand-off, measurement, exposure — that would substitute for the capability the input cap removes.],
+  ),
+  courses: ("LEN 5", "LEN 4", "LEN 10", "LEN 8"),
+)
