@@ -590,44 +590,64 @@
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  Parallel to that academic record is the JHU/APL operating record.
-  APL has spent the past decade building, evaluating, and iterating
-  on learning systems attached to mission programs — CIRCUIT for
-  IARPA/MICrONS (the workforce arm of the consortium whose
-  connectomics result appeared in #emph[Nature] in 2025), TITAN for
-  DARPA's AIE program, the precision-medicine clinical-decision-
-  trainer pilot reported in 2024, and PISTA for DTRA's CBRNE
-  decision-support work in 2025. Each of those programs produced
-  operational deliverables that the sponsoring agency adopted. Each
-  also produced graduates and an internal record of what had to be
-  true about the learning architecture for the technical deliverable
-  to land. That record is the empirical base for MERIT and COMPASS
-  and is what LENS draws on when it teaches capability engineering
-  from cases rather than from textbook rules.
+  Alongside that academic record runs a complementary thread of
+  applied collaboration. Faculty and graduates of the LDT program
+  have, over the past decade, partnered with operational
+  organizations — including teams at the Johns Hopkins Applied
+  Physics Laboratory — to study capability in real mission settings.
+  Programs such as CIRCUIT (the workforce arm of the IARPA/MICrONS
+  consortium, whose connectomics result appeared in #emph[Nature] in
+  2025), the precision-medicine clinical-decision-trainer pilot
+  reported in 2024, the DARPA AIE-supported TITAN work, and the
+  DTRA-supported PISTA incubator in 2025 are useful proving grounds
+  for the learning-engineering question because the deliverables are
+  evaluated by sponsors who care whether the system worked. These
+  collaborations have informed the program's case-based pedagogy and
+  contribute several of the operational vignettes that follow. They
+  are not the institutional home of the discipline; the School of
+  Education is. They are how the school's disciplines meet operational
+  settings, and how operational settings show up in the curriculum.
 ]
 
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  The SoE-APL relationship is unusual and is the point. The School
-  of Education brings the half-century of credibility in
-  understanding the learner, the discipline of educational
-  measurement, the design-and-implementation tradition that knows
-  how to put an intervention in front of real people and revise it,
-  and the equity-and-governance machinery that decides whether the
-  intervention is one that should reach scale at all. APL brings the
-  engineering, the sponsor partnerships, and a quarter-century of
-  operational systems in which capability was the binding constraint.
-  Neither institution would, alone, have the standing to claim this
-  discipline. The SoE without APL would be a school of education with
-  excellent learning theory and no operational mandate; APL without
-  the SoE would be an engineering organization solving learning
-  problems without the disciplines that know how to study learners.
-  Together they have the empirical record, the academic
-  infrastructure, and the institutional permission to define what
-  capability engineering is, and to teach the next generation to do
-  it. The casebook is one product of that relationship. It is not
-  the only one, and it is not the last.
+  Other parts of the Johns Hopkins ecosystem do adjacent work the
+  program draws on. The Armstrong Institute for Patient Safety and
+  Quality at the School of Medicine — the institutional descendant of
+  the Keystone ICU work foregrounded in Chapter 8 — is the most
+  visible example: a continuing program of capability-engineering in
+  clinical settings, with measurement and implementation methods that
+  the casebook treats as canonical. The Bloomberg School of Public
+  Health contributes the implementation-science tradition the program
+  rests on, with departments and centers that have spent decades
+  studying how interventions reach scale. The Whiting School of
+  Engineering contributes human-systems engineering, AI methods, and
+  cognitive-engineering research relevant to the human-AI teaming
+  cases in Chapter 9. The Krieger School's Department of Cognitive
+  Science and adjacent psychology programs contribute the learning-
+  science methods the LDT program teaches. The Berman Institute of
+  Bioethics contributes the governance-and-ethics framing that the
+  cases in Chapter 5 require. None of these are formal partners in
+  this volume; all of them are part of the institutional environment
+  in which the discipline this casebook describes is recognizably at
+  home.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  That meeting is also embodied in the editors. One of us has spent a
+  career in applied research environments thinking about how to make
+  scientific and engineering teams reliably capable; the other has
+  spent a career in the School of Education thinking about how to
+  design, study, and evaluate the learning of learners. Both of us
+  have, in practice, lived in the other half. The casebook is one
+  product of that doubling. The discipline it describes is not new.
+  The institutional home that lets it be taught at scale — the
+  School of Education at Johns Hopkins, with its faculty, centers,
+  doctoral programs, and the practitioner partnerships those carry —
+  is where the work continues.
 ]
 
 // -------------------------------------------------------------------

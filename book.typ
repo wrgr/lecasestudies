@@ -95,3 +95,4 @@
 // BACK MATTER
 // ============================================================
 #include "backmatter/references.typ"
+#include "backmatter/editors.typ"
