@@ -44,8 +44,8 @@
   [Morris, Z. S., Wooding, S. & Grant, J. (2011). The answer is 17 years, what is the question: understanding time lags in translational research. _Journal of the Royal Society of Medicine_ 104(12): 510–520. #link("https://doi.org/10.1258/jrsm.2011.110180")[doi:10.1258/jrsm.2011.110180].],
   [Balas, E. A. & Boren, S. A. (2000). Managing clinical knowledge for health care improvement. _Yearbook of Medical Informatics_, 65–70.],
   [U.S. Navy (2017). _Comprehensive Review of Recent Surface Force Incidents_; _Strategic Readiness Review_. Department of the Navy.],
-  [U.S. Government Accountability Office (2023). _F-35 Sustainment: DOD Faces Several Uncertainties and Risks as it Defines Future Costs and Plans_. GAO-23-105341.],
-  [Bulger, M., McCormick, P. & Pitcan, M. (2017). _The Legacy of inBloom._ Data & Society Research Institute.],
+  [U.S. Government Accountability Office (2023). _F-35 Sustainment: DOD Faces Several Uncertainties and Risks as it Defines Future Costs and Plans_. GAO-23-105341. #link("https://www.gao.gov/products/gao-23-105341")[gao.gov].],
+  [Bulger, M., McCormick, P. & Pitcan, M. (2017). _The Legacy of inBloom._ Data & Society Research Institute. #link("https://datasociety.net/library/the-legacy-of-inbloom/")[datasociety.net].],
   [Office of Qualifications and Examinations Regulation, UK (2020). _Awarding GCSE, AS, A level, advanced extension awards and extended project qualifications in summer 2020: interim report._ Ofqual; see also Adam, D. (2020), MIT Technology Review.],
   [Helmreich, R. L., Merritt, A. C. & Wilhelm, J. A. (1999). The evolution of Crew Resource Management training in commercial aviation. _International Journal of Aviation Psychology_ 9(1): 19–32. #link("https://doi.org/10.1207/s15327108ijap0901_2")[doi:10.1207/s15327108ijap0901_2].],
   [Commercial Aviation Safety Team / Federal Aviation Administration (2016). _Safety Enhancements and Outcomes_. CAST/FAA.],
@@ -53,12 +53,12 @@
   [Rees, J. V. (1994). _Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island._ University of Chicago Press.],
   [Pronovost, P., Needham, D., Berenholtz, S. _et al._ (2006). An intervention to decrease catheter-related bloodstream infections in the ICU. _New England Journal of Medicine_ 355(26): 2725–2732. #link("https://doi.org/10.1056/NEJMoa061115")[doi:10.1056/NEJMoa061115].],
   [Haynes, A. B., Weiser, T. G., Berry, W. R. _et al._ (2009). A surgical safety checklist to reduce morbidity and mortality in a global population. _New England Journal of Medicine_ 360(5): 491–499. #link("https://doi.org/10.1056/NEJMsa0810119")[doi:10.1056/NEJMsa0810119].],
-  [Agency for Healthcare Research and Quality (2023). _TeamSTEPPS 3.0 Curriculum._ AHRQ Publication No. 23-0034.],
+  [Agency for Healthcare Research and Quality (2023). _TeamSTEPPS 3.0 Curriculum._ AHRQ Publication No. 23-0034. #link("https://www.ahrq.gov/teamstepps-program/index.html")[ahrq.gov].],
   [Sawyer, R. K. (ed.) (2014). _The Cambridge Handbook of the Learning Sciences_ (2nd ed.). Cambridge University Press.],
   [Vicente, K. J. (1999). _Cognitive Work Analysis: Toward Safe, Productive, and Healthy Computer-Based Work._ Lawrence Erlbaum.],
-  [Wickens, C. D., Hollands, J. G., Banbury, S. & Parasuraman, R. (2021). _Engineering Psychology and Human Performance_ (5th ed.). Routledge.],
-  [Fixsen, D. L., Naoom, S. F., Blasé, K. A., Friedman, R. M. & Wallace, F. (2005). _Implementation Research: A Synthesis of the Literature._ National Implementation Research Network. See also Aarons, G. A., Hurlburt, M. & Horwitz, S. M. (2011). Advancing a conceptual model of evidence-based practice implementation in public service sectors. _Administration and Policy in Mental Health_ 38: 4–23.],
-  [Reason, J. (1990). _Human Error._ Cambridge University Press. Rasmussen, J. (1997). Risk management in a dynamic society: a modelling problem. _Safety Science_ 27: 183–213. Leveson, N. (2011). _Engineering a Safer World: Systems Thinking Applied to Safety._ MIT Press.],
+  [Wickens, C. D., Hollands, J. G., Banbury, S. & Parasuraman, R. (2021). _Engineering Psychology and Human Performance_ (5th ed.). Routledge. #link("https://doi.org/10.4324/9781003177616")[doi:10.4324/9781003177616].],
+  [Fixsen, D. L., Naoom, S. F., Blasé, K. A., Friedman, R. M. & Wallace, F. (2005). _Implementation Research: A Synthesis of the Literature._ National Implementation Research Network. See also Aarons, G. A., Hurlburt, M. & Horwitz, S. M. (2011). Advancing a conceptual model of evidence-based practice implementation in public service sectors. _Administration and Policy in Mental Health_ 38: 4–23. #link("https://doi.org/10.1007/s10488-010-0327-7")[doi:10.1007/s10488-010-0327-7].],
+  [Reason, J. (1990). _Human Error._ Cambridge University Press, #link("https://doi.org/10.1017/CBO9781139062367")[doi:10.1017/CBO9781139062367]. Rasmussen, J. (1997). Risk management in a dynamic society: a modelling problem. _Safety Science_ 27: 183–213, #link("https://doi.org/10.1016/S0925-7535(97)00052-0")[doi:10.1016/S0925-7535(97)00052-0]. Leveson, N. (2011). _Engineering a Safer World: Systems Thinking Applied to Safety._ MIT Press, #link("https://doi.org/10.7551/mitpress/8179.001.0001")[doi:10.7551/mitpress/8179.001.0001].],
   [Weick, K. E. & Sutcliffe, K. M. (2015). _Managing the Unexpected: Sustained Performance in a Complex World_ (3rd ed.). Wiley. See also Roberts, K. H. (1990). Some characteristics of one type of high reliability organization. _Organization Science_ 1(2): 160–176.],
   [Saxberg, B. (2017). Learning engineering: the art of applying learning science at scale. In _Industry Connections Industry Consortium on Learning Engineering._ See also Goodell, J. & Kolodner, J. L. (eds.) (2022). _Learning Engineering Toolkit._ Routledge.],
   [IEEE ICICLE (2022). _Learning Engineering Body of Knowledge (LEBoK)._ #link("https://lebok.wiki")[lebok.wiki].],
@@ -79,12 +79,12 @@
 }
 
 #read-list((
-  [Bransford, J. D., Brown, A. L. & Cocking, R. R. (eds.) (2000). _How People Learn: Brain, Mind, Experience, and School._ National Academy Press.],
+  [Bransford, J. D., Brown, A. L. & Cocking, R. R. (eds.) (2000). _How People Learn: Brain, Mind, Experience, and School._ National Academy Press. #link("https://doi.org/10.17226/9853")[doi:10.17226/9853].],
   [Sawyer, R. K. (ed.) (2014). _The Cambridge Handbook of the Learning Sciences_ (2nd ed.).],
   [Koedinger, K. R., Corbett, A. T. & Perfetti, C. (2012). The Knowledge-Learning-Instruction framework. _Cognitive Science_ 36(5): 757–798. #link("https://doi.org/10.1111/j.1551-6709.2012.01245.x")[doi:10.1111/j.1551-6709.2012.01245.x].],
-  [Sweller, J., Ayres, P. & Kalyuga, S. (2011). _Cognitive Load Theory._ Springer.],
-  [Soderstrom, N. C. & Bjork, R. A. (2015). Learning versus performance: an integrative review. _Perspectives on Psychological Science_ 10(2): 176–199.],
-  [Goodell, J. & Kolodner, J. L. (eds.) (2022). _Learning Engineering Toolkit: Evidence-Based Practices from the Learning Sciences, Instructional Design, and Beyond._ Routledge.],
+  [Sweller, J., Ayres, P. & Kalyuga, S. (2011). _Cognitive Load Theory._ Springer. #link("https://doi.org/10.1007/978-1-4419-8126-4")[doi:10.1007/978-1-4419-8126-4].],
+  [Soderstrom, N. C. & Bjork, R. A. (2015). Learning versus performance: an integrative review. _Perspectives on Psychological Science_ 10(2): 176–199. #link("https://doi.org/10.1177/1745691615569000")[doi:10.1177/1745691615569000].],
+  [Goodell, J. & Kolodner, J. L. (eds.) (2022). _Learning Engineering Toolkit: Evidence-Based Practices from the Learning Sciences, Instructional Design, and Beyond._ Routledge. #link("https://doi.org/10.4324/9781003276579")[doi:10.4324/9781003276579].],
 ))
 
 #v(8pt)
@@ -94,12 +94,12 @@
 #read-list((
   [Vicente, K. J. (1999). _Cognitive Work Analysis._ Lawrence Erlbaum.],
   [Norman, D. A. (2013). _The Design of Everyday Things_ (rev. ed.). Basic Books.],
-  [Hollnagel, E. & Woods, D. D. (2005). _Joint Cognitive Systems: Foundations of Cognitive Systems Engineering._ CRC Press.],
-  [Endsley, M. R. (1995). Toward a theory of situation awareness in dynamic systems. _Human Factors_ 37(1): 32–64.],
+  [Hollnagel, E. & Woods, D. D. (2005). _Joint Cognitive Systems: Foundations of Cognitive Systems Engineering._ CRC Press. #link("https://doi.org/10.1201/9781420038194")[doi:10.1201/9781420038194].],
+  [Endsley, M. R. (1995). Toward a theory of situation awareness in dynamic systems. _Human Factors_ 37(1): 32–64. #link("https://doi.org/10.1518/001872095779049543")[doi:10.1518/001872095779049543].],
   [Perrow, C. (1984). _Normal Accidents: Living with High-Risk Technologies._ Basic Books.],
-  [Leveson, N. (2011). _Engineering a Safer World: Systems Thinking Applied to Safety._ MIT Press.],
+  [Leveson, N. (2011). _Engineering a Safer World: Systems Thinking Applied to Safety._ MIT Press. #link("https://doi.org/10.7551/mitpress/8179.001.0001")[doi:10.7551/mitpress/8179.001.0001].],
   [Reason, J. (1997). _Managing the Risks of Organizational Accidents._ Ashgate.],
-  [Rasmussen, J. (1997). Risk management in a dynamic society: a modelling problem. _Safety Science_ 27: 183–213.],
+  [Rasmussen, J. (1997). Risk management in a dynamic society: a modelling problem. _Safety Science_ 27: 183–213. #link("https://doi.org/10.1016/S0925-7535(97)00052-0")[doi:10.1016/S0925-7535(97)00052-0].],
   [Dekker, S. (2014). _The Field Guide to Understanding 'Human Error'_ (3rd ed.). Ashgate.],
 ))
 
@@ -111,7 +111,7 @@
   [Weick, K. E. & Sutcliffe, K. M. (2015). _Managing the Unexpected_ (3rd ed.). Wiley.],
   [Roberts, K. H. (1990). Some characteristics of one type of high reliability organization. _Organization Science_ 1(2): 160–176. #link("https://doi.org/10.1287/orsc.1.2.160")[doi:10.1287/orsc.1.2.160].],
   [Edmondson, A. C. (2018). _The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth._ Wiley.],
-  [Salas, E., Wilson, K. A., Burke, C. S. & Wightman, D. C. (2006). Does Crew Resource Management training work? An update, an extension, and some critical needs. _Human Factors_ 48(2): 392–412.],
+  [Salas, E., Wilson, K. A., Burke, C. S. & Wightman, D. C. (2006). Does Crew Resource Management training work? An update, an extension, and some critical needs. _Human Factors_ 48(2): 392–412. #link("https://doi.org/10.1518/001872006777724444")[doi:10.1518/001872006777724444].],
   [Klein, G. (1998). _Sources of Power: How People Make Decisions._ MIT Press.],
   [Kanki, B. G., Helmreich, R. L. & Anca, J. (eds.) (2010). _Crew Resource Management_ (2nd ed.). Academic Press.],
 ))
@@ -122,8 +122,8 @@
 
 #read-list((
   [Fixsen, D. L., Naoom, S. F., Blasé, K. A., Friedman, R. M. & Wallace, F. (2005). _Implementation Research: A Synthesis of the Literature._ NIRN.],
-  [Aarons, G. A., Hurlburt, M. & Horwitz, S. M. (2011). Advancing a conceptual model of evidence-based practice implementation in public service sectors. _Administration and Policy in Mental Health_ 38: 4–23.],
-  [Damschroder, L. J. _et al._ (2009). Fostering implementation of health services research findings into practice: a consolidated framework. _Implementation Science_ 4: 50.],
+  [Aarons, G. A., Hurlburt, M. & Horwitz, S. M. (2011). Advancing a conceptual model of evidence-based practice implementation in public service sectors. _Administration and Policy in Mental Health_ 38: 4–23. #link("https://doi.org/10.1007/s10488-010-0327-7")[doi:10.1007/s10488-010-0327-7].],
+  [Damschroder, L. J. _et al._ (2009). Fostering implementation of health services research findings into practice: a consolidated framework. _Implementation Science_ 4: 50. #link("https://doi.org/10.1186/1748-5908-4-50")[doi:10.1186/1748-5908-4-50].],
   [Argyris, C. & Schön, D. A. (1996). _Organizational Learning II: Theory, Method, and Practice._ Addison-Wesley.],
   [Senge, P. M. (2006). _The Fifth Discipline: The Art and Practice of the Learning Organization_ (rev. ed.). Doubleday.],
   [Vaughan, D. (1996). _The Challenger Launch Decision: Risky Technology, Culture, and Deviance at NASA._ University of Chicago Press.],
@@ -137,8 +137,8 @@
   [Eubanks, V. (2018). _Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor._ St. Martin's.],
   [Friedman, B. & Nissenbaum, H. (1996). Bias in computer systems. _ACM Transactions on Information Systems_ 14(3): 330–347. #link("https://doi.org/10.1145/230538.230561")[doi:10.1145/230538.230561].],
   [O'Neil, C. (2016). _Weapons of Math Destruction._ Crown.],
-  [Selbst, A. D. _et al._ (2019). Fairness and abstraction in sociotechnical systems. In _FAT\*'19._],
-  [Citron, D. K. (2008). Technological due process. _Washington University Law Review_ 85: 1249–1313.],
+  [Selbst, A. D. _et al._ (2019). Fairness and abstraction in sociotechnical systems. In _FAT\*'19._ #link("https://doi.org/10.1145/3287560.3287598")[doi:10.1145/3287560.3287598].],
+  [Citron, D. K. (2008). Technological due process. _Washington University Law Review_ 85: 1249–1313. #link("https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1012360")[SSRN].],
   [Selwyn, N. (2014). _Distrusting Educational Technology._ Routledge.],
 ))
 
@@ -159,7 +159,7 @@
 #v(2pt)
 
 #read-list((
-  [Kohn, L. T., Corrigan, J. M. & Donaldson, M. S. (eds.) (1999). _To Err Is Human: Building a Safer Health System._ Institute of Medicine.],
+  [Kohn, L. T., Corrigan, J. M. & Donaldson, M. S. (eds.) (1999). _To Err Is Human: Building a Safer Health System._ Institute of Medicine. #link("https://doi.org/10.17226/9728")[doi:10.17226/9728].],
   [Gawande, A. (2009). _The Checklist Manifesto: How to Get Things Right._ Metropolitan.],
   [Pronovost, P. & Vohr, E. (2010). _Safe Patients, Smart Hospitals._ Hudson Street Press.],
   [Wachter, R. (2015). _The Digital Doctor: Hope, Hype, and Harm at the Dawn of Medicine's Computer Age._ McGraw-Hill.],
