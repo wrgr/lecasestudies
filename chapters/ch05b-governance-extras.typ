@@ -589,7 +589,7 @@
   quote-source: "Paraphrasing the Butte County District Attorney's Camp Fire Report, 2020",
   sources-list: (
     [CalFire, _Camp Fire Investigation Report_ (2019)],
-    [Butte County District Attorney, Public Report on the Camp Fire (2020)],
+    [Butte County District Attorney (16 June 2020), _The Camp Fire Public Report: A Summary of the Camp Fire Investigation_],
     [California Public Utilities Commission Order Instituting Investigation (2019)],
   ),
   le-insight: [

@@ -51,7 +51,7 @@
   quote-source: "U.S. Navy Strategic Readiness Review, 2017",
   sources-list: (
     [USN Comprehensive Review of Surface Force Incidents (2017)],
-    [Strategic Readiness Review (2017); NTSB DCA17MM010 (2019)],
+    [Strategic Readiness Review (2017); NTSB Marine Accident Reports MAR-20/01 (USS McCain, case DCA17PM029) and MAR-20/02 (USS Fitzgerald, case DCA17PM018)],
     [GAO-20-154; GAO-21-168],
     [USNI News, Fitzgerald & McCain coverage (2017–2020)],
   ),
@@ -113,7 +113,7 @@
     The training matched one operational context. It did not match the one
     that killed two hundred and twenty-eight people.
   ],
-  quote: [The crew never understood that they were in a stall situation and therefore never undertook any recovery manoeuvres.],
+  quote: [The crew never understood that they were stalling and consequently never applied a recovery manoeuvre.],
   quote-source: "BEA, Final Report on Air France Flight 447, July 2012",
   sources-list: (
     [Bureau d'Enquêtes et d'Analyses, _Final Report on Flight AF447_ (2012)],

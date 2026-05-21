@@ -257,7 +257,7 @@
   quote: [Singapore Airlines has consistently invested in safety capability ahead of regulatory minimums.],
   quote-source: "IATA Operational Safety Audit retrospectives",
   sources-list: (
-    [Taiwan Aviation Safety Council, _SQ006 Accident Investigation Final Report_ (2002)],
+    [Aviation Safety Council (Taiwan), _SQ006 Accident Investigation Final Report_ (2002)],
     [Singapore Airlines Safety Reports (multiple years)],
     [IATA Operational Safety Audit (IOSA) documentation],
   ),

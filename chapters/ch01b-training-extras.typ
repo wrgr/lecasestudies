@@ -389,9 +389,9 @@
     instrument failure.
   ],
   quote: [The crew received contradictory indications they could neither reconcile nor override.],
-  quote-source: "Paraphrasing the Peruvian DGAC Accident Investigation of AeroPerú 603, 1996",
+  quote-source: "Paraphrasing the Peruvian DGTA / Comisión de Investigación de Accidentes report on AeroPerú 603, 1996",
   sources-list: (
-    [Peru Dirección General de Aeronáutica Civil, accident report (1996)],
+    [Peru Dirección General de Transporte Aéreo (DGTA), Comisión de Investigación de Accidentes, accident report on AeroPerú 603 (1996)],
     [Boeing 757 Flight Crew Training Manual],
     [Wiener, _Human Factors of Cockpit Automation_ (NASA, 1989)],
   ),
@@ -409,7 +409,7 @@
     "trust nothing" procedure design.
   ],
   literature-items: (
-    [Peru DGAC report (1996)],
+    [Peru DGTA / CIA report on AeroPerú 603 (1996)],
     [Leveson (2011), STAMP — common-cause failure],
     [Dismukes et al. (2007), _The Limits of Expertise_],
   ),
@@ -507,7 +507,7 @@
     aircraft to a glide for which it was much too low. The aircraft
     clipped a taxi on a bridge and crashed into the Keelung River.
 
-    The Taiwan Aviation Safety Council found the captain had failed
+    The Aviation Safety Council (Taiwan) found the captain had failed
     proficiency checks twice in the year before the accident and had
     not been retrained against the specific failure scenario the
     aircraft actually presented. The crew did not use the published
@@ -519,9 +519,9 @@
     they applied did not match the configuration they were in.
   ],
   quote: [The flight crew was unable to identify which engine had failed and shut down the operating engine in error.],
-  quote-source: "Paraphrasing the Taiwan Aviation Safety Council Final Report on TransAsia 235, 2016",
+  quote-source: "Paraphrasing the Aviation Safety Council (Taiwan) Final Report on TransAsia 235, 2016",
   sources-list: (
-    [Taiwan Aviation Safety Council Final Report (2016)],
+    [Aviation Safety Council (Taiwan) Final Report (2016)],
     [Reason (1990), Human Error — wrong-engine cases],
     [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_],
   ),

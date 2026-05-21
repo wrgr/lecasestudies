@@ -58,7 +58,7 @@
   quote-source: "NTSB Highway Accident Report HAR-17/02 (Williston, Florida crash), 2017",
   sources-list: (
     [NHTSA Standing General Order 2021-01 reports],
-    [NTSB Highway Accident Reports HAB-17/07 (2016), HAR-20/01 (2018), and follow-on cases],
+    [NTSB Highway Accident Reports HAR-17/02 (Williston FL, May 2016) and HAR-20/01 (Mountain View CA, March 2018) on Tesla Autopilot crashes],
     [NHTSA Office of Defects Investigation EA22-002 (2022)],
   ),
   le-insight: [
