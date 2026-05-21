@@ -1066,11 +1066,12 @@
     import cetz.draw: *
     let cy = 3.2
     let node-r = 0.55
+    let icon-stroke = 1.4pt + rgb("#F5F0E8")
     // five evenly spaced node centers along the canvas
     let xs = (1.1, 3.0, 4.9, 6.8, 8.7)
     // connecting line behind the nodes
     line((xs.at(0), cy), (xs.at(-1), cy), stroke: 0.8pt + rgb("#2CC4B3").lighten(40%))
-    // node colors — intersectional expertise (index 2) is the highlighted distinguishing pillar
+    // node colors — intersectional expertise (index 2) is highlighted
     let ring-colors = (
       rgb("#2CC4B3"),
       rgb("#2CC4B3"),
@@ -1078,51 +1079,87 @@
       rgb("#2CC4B3"),
       rgb("#2CC4B3"),
     )
-    // glyphs inside the rings — simple, monoline, navy
-    let glyphs = ("⌖", "▤", "◬", "◉", "↻")
-    // labels under each node (two lines each)
     let labels-top = ("Mission", "JHU", "Intersectional", "Capability", "Practice")
     let labels-bot = ("Literacy", "Ecosystem", "Expertise", "Focus", "Flywheel")
 
-    // draw rings + inner navy fill + glyph
+    // 1) draw the rings (no icons yet) + the labels under each
     for i in range(xs.len()) {
       let x = xs.at(i)
-      // outer ring (thicker, colored)
       circle((x, cy), radius: node-r, fill: navy, stroke: 2.2pt + ring-colors.at(i))
-      // glyph
-      content(
-        (x, cy),
-        text(
-          font: ("DM Sans",),
-          size: 16pt,
-          weight: "regular",
-          fill: rgb("#F5F0E8"),
-          glyphs.at(i),
-        ),
-      )
-      // label below — two lines
       content(
         (x, cy - node-r - 0.45),
-        text(
-          font: ("DM Sans",),
-          size: 7.5pt,
-          weight: "bold",
-          fill: rgb("#F5F0E8"),
-          labels-top.at(i),
-        ),
+        text(font: ("DM Sans",), size: 7.5pt, weight: "bold", fill: rgb("#F5F0E8"), labels-top.at(i)),
         anchor: "north",
       )
       content(
         (x, cy - node-r - 0.85),
-        text(
-          font: ("DM Sans",),
-          size: 7.5pt,
-          weight: "bold",
-          fill: rgb("#F5F0E8"),
-          labels-bot.at(i),
-        ),
+        text(font: ("DM Sans",), size: 7.5pt, weight: "bold", fill: rgb("#F5F0E8"), labels-bot.at(i)),
         anchor: "north",
       )
+    }
+
+    // 2) icon 1 — target reticle (Mission Literacy)
+    let x1 = xs.at(0)
+    circle((x1, cy), radius: 0.18, stroke: icon-stroke)
+    circle((x1, cy), radius: 0.045, stroke: none, fill: rgb("#F5F0E8"))
+    line((x1 - 0.30, cy), (x1 - 0.10, cy), stroke: icon-stroke)
+    line((x1 + 0.10, cy), (x1 + 0.30, cy), stroke: icon-stroke)
+    line((x1, cy - 0.30), (x1, cy - 0.10), stroke: icon-stroke)
+    line((x1, cy + 0.10), (x1, cy + 0.30), stroke: icon-stroke)
+
+    // 3) icon 2 — building / institution (JHU Ecosystem)
+    let x2 = xs.at(1)
+    // pediment (triangular roof)
+    line((x2 - 0.30, cy + 0.10), (x2, cy + 0.28), stroke: icon-stroke)
+    line((x2, cy + 0.28), (x2 + 0.30, cy + 0.10), stroke: icon-stroke)
+    // architrave under roof
+    line((x2 - 0.32, cy + 0.10), (x2 + 0.32, cy + 0.10), stroke: icon-stroke)
+    // four columns
+    line((x2 - 0.21, cy + 0.07), (x2 - 0.21, cy - 0.20), stroke: icon-stroke)
+    line((x2 - 0.07, cy + 0.07), (x2 - 0.07, cy - 0.20), stroke: icon-stroke)
+    line((x2 + 0.07, cy + 0.07), (x2 + 0.07, cy - 0.20), stroke: icon-stroke)
+    line((x2 + 0.21, cy + 0.07), (x2 + 0.21, cy - 0.20), stroke: icon-stroke)
+    // base
+    line((x2 - 0.32, cy - 0.20), (x2 + 0.32, cy - 0.20), stroke: icon-stroke)
+    line((x2 - 0.34, cy - 0.27), (x2 + 0.34, cy - 0.27), stroke: icon-stroke)
+
+    // 4) icon 3 — node graph (Intersectional Expertise)
+    let x3 = xs.at(2)
+    let rx = x3 - 0.22
+    let bx = x3 + 0.22
+    // three branches connecting the root node to three leaf nodes (lines first)
+    line((rx, cy), (bx, cy + 0.22), stroke: icon-stroke)
+    line((rx, cy), (bx, cy), stroke: icon-stroke)
+    line((rx, cy), (bx, cy - 0.22), stroke: icon-stroke)
+    // nodes drawn over lines
+    circle((rx, cy), radius: 0.07, fill: rgb("#F5F0E8"), stroke: none)
+    circle((bx, cy + 0.22), radius: 0.07, fill: rgb("#F5F0E8"), stroke: none)
+    circle((bx, cy), radius: 0.07, fill: rgb("#F5F0E8"), stroke: none)
+    circle((bx, cy - 0.22), radius: 0.07, fill: rgb("#F5F0E8"), stroke: none)
+
+    // 5) icon 4 — bullseye (Capability Focus)
+    let x4 = xs.at(3)
+    circle((x4, cy), radius: 0.28, stroke: icon-stroke)
+    circle((x4, cy), radius: 0.18, stroke: icon-stroke)
+    circle((x4, cy), radius: 0.08, fill: rgb("#F5F0E8"), stroke: none)
+
+    // 6) icon 5 — circular arrow (Practice Flywheel)
+    let x5 = xs.at(4)
+    let arc-r = 0.26
+    let n-segs = 20
+    let start-a = 60deg
+    let sweep = 310deg
+    let step = -sweep / n-segs   // negative => clockwise visually
+    for j in range(n-segs) {
+      let a1 = start-a + j * step
+      let a2 = start-a + (j + 1) * step
+      let p1 = (x5 + arc-r * calc.cos(a1), cy + arc-r * calc.sin(a1))
+      let p2 = (x5 + arc-r * calc.cos(a2), cy + arc-r * calc.sin(a2))
+      if j == n-segs - 1 {
+        line(p1, p2, stroke: icon-stroke, mark: (end: ">", size: 0.11, fill: rgb("#F5F0E8")))
+      } else {
+        line(p1, p2, stroke: icon-stroke)
+      }
     }
 
     // title across the top
