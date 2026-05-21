@@ -11,7 +11,7 @@
 
 #chapter-divider(
   part: "Part I — The Failure Modes",
-  number: "4",
+  number: "2",
   title: "Designed Out",
   subtitle: "Capability was removed to save cost.",
   epigraph: [If we emphasize MCAS is a new function there may be greater certification and training impact.],

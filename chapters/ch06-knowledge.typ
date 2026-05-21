@@ -142,7 +142,7 @@
   lens-approach: [
     LENS treats GIFT in LEN 1 as the problem-framing case for the
     discipline, in LEN 8 as the foundational adoption-pathway case,
-    and in LEN 10 (Studio) as a prompt for designing the institutional
+    and in LEN 10 (capstone) as a prompt for designing the institutional
     deliverables that would close an adoption gap of this shape.
   ],
   literature-items: (

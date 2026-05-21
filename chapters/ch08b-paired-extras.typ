@@ -56,7 +56,7 @@
     intervention in the dataset.
   ],
   lens-approach: [
-    LENS uses the WHO checklist in LEN 10 (Studio) as the canonical
+    LENS uses the WHO checklist in LEN 10 (capstone) as the canonical
     end-to-end design exemplar: a problem identified, a minimal
     artifact prototyped, a multi-site pilot, a measurement regime, and
     global scale-out. LEN 4 examines the measurement architecture that
@@ -122,7 +122,7 @@
     capability it bought.
   ],
   lens-approach: [
-    LENS uses Navy SWO reform in LEN 10 (Studio) as a worked exercise in
+    LENS uses Navy SWO reform in LEN 10 (capstone) as a worked exercise in
     capability intervention at scale, and in LEN 4 as a case where the
     measurement infrastructure has lagged the intervention. Students
     design the evidence regime that should accompany the reform.

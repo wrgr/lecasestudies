@@ -10,7 +10,7 @@
 
 #chapter-divider(
   part: "Part III — The Frontier",
-  number: "8",
+  number: "9",
   title: "Human-AI Teaming",
   subtitle: "The capability work the discipline has not done before.",
   epigraph: [Humans tend to tune out when tasked with monitoring automated systems that work well most of the time.],
@@ -138,7 +138,7 @@
   ],
   lens-approach: [
     LENS uses Cruise in LEN 7 as a foundational autonomous-vehicle
-    governance case and in LEN 10 (Studio) for the institutional-
+    governance case and in LEN 10 (capstone) for the institutional-
     response deliverable that should pre-exist any commercial
     autonomy program.
   ],
@@ -347,7 +347,7 @@
   lens-approach: [
     LENS uses this case in LEN 2 as the live frontier for human-AI
     teaming with LLMs, in LEN 7 for the governance of LLM deployment
-    in clinical workflows, and in LEN 10 (Studio) as a prompt for
+    in clinical workflows, and in LEN 10 (capstone) as a prompt for
     designing verification practices at the moment of use.
   ],
   literature-items: (
@@ -556,7 +556,7 @@
   lens-approach: [
     LENS uses AI-augmented coding in LEN 2 as the largest live human-
     AI teaming case in the dataset, in LEN 8 for the long-term
-    capability-development question, and in LEN 10 (Studio) as a
+    capability-development question, and in LEN 10 (capstone) as a
     prompt for evaluating AI augmentation in professional practice.
   ],
   literature-items: (

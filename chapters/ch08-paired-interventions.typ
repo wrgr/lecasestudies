@@ -11,7 +11,7 @@
 
 #chapter-divider(
   part: "Part II — What Works",
-  number: "2",
+  number: "8",
   title: "The Paired Intervention",
   subtitle: "Technical change with cultural change.",
   epigraph: [The checklist alone did not work. The checklist plus the nurse's authority to enforce it did.],

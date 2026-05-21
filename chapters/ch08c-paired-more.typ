@@ -63,7 +63,7 @@
   ],
   lens-approach: [
     LENS uses Tylenol in LEN 7 as the foundational positive case for
-    institutional governance under crisis and in LEN 10 (Studio) as a
+    institutional governance under crisis and in LEN 10 (capstone) as a
     worked example of pre-committed capability that executed under
     operational pressure.
   ],

@@ -11,7 +11,7 @@
 
 #chapter-divider(
   part: "Part I — The Failure Modes",
-  number: "10",
+  number: "3",
   title: "The Slow Erosion",
   subtitle: "Known risks became routine.",
   epigraph: [NASA culture allowed flying with flaws when problems were defined as normal and routine.],
