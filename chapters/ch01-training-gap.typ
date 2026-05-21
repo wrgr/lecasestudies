@@ -113,8 +113,8 @@
     The training matched one operational context. It did not match the one
     that killed two hundred and twenty-eight people.
   ],
-  quote: [The crew did not understand that they were in a stall and did not make inputs that would have allowed recovery.],
-  quote-source: "Paraphrasing the BEA Final Report on Air France 447, 2012",
+  quote: [The crew never understood that they were in a stall situation and therefore never undertook any recovery manoeuvres.],
+  quote-source: "BEA, Final Report on Air France Flight 447, July 2012",
   sources-list: (
     [Bureau d'Enquêtes et d'Analyses, _Final Report on Flight AF447_ (2012)],
     [IEEE Spectrum, "Air France Flight 447 Crash Caused by a Combination of Factors" (2014)],
@@ -177,8 +177,8 @@
     Case 16). It is the canonical example in this book of a failure that
     generated systematic capability reform.
   ],
-  quote: [The fundamental problems are people-related problems, not equipment problems.],
-  quote-source: "Paraphrasing the Kemeny Commission Report on Three Mile Island, 1979",
+  quote: [The fundamental problems are people-related problems and not equipment problems.],
+  quote-source: "Kemeny Commission Report on Three Mile Island, 1979",
   sources-list: (
     [Kemeny Commission, _Report of the President's Commission on the Accident at Three Mile Island_ (1979)],
     [NRC Backgrounder on the Three Mile Island Accident],
@@ -310,7 +310,7 @@
     arrived; the people to keep them flying did not.
   ],
   quote: [Organizational-level maintenance has been affected by a number of issues, including a lack of technical data and training.],
-  quote-source: "GAO-23-105341, 2023",
+  quote-source: "GAO-23-105341, F-35 Sustainment, 2023",
   sources-list: (
     [GAO-23-105341, _F-35 Sustainment_ (2023)],
     [GAO-25-107632 and predecessors],

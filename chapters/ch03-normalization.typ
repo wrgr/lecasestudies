@@ -48,8 +48,8 @@
     operational implementation and team interfaces." Each layer of
     defense had drifted, over time, from its specification.
   ],
-  quote: [Human error, rather than mechanical failings, was the root cause.],
-  quote-source: "Paraphrasing the National Commission report and contemporaneous coverage (ENR), 2011",
+  quote: [The immediate causes of the Macondo well blowout can be traced to a series of identifiable mistakes ... that reveal such systematic failures in risk management that they place in doubt the safety culture of the entire industry.],
+  quote-source: "National Commission, Deep Water (Report to the President), 2011",
   sources-list: (
     [National Commission on the BP Deepwater Horizon Oil Spill (2011)],
     [BOEMRE/Coast Guard Joint Investigation Report (2011)],

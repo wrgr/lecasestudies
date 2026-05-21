@@ -41,18 +41,18 @@
 
 #ref-list((
   [Makary, M. A. & Daniel, M. (2016). Medical error — the third leading cause of death in the US. _BMJ_ 353: i2139. #link("https://doi.org/10.1136/bmj.i2139")[doi:10.1136/bmj.i2139].],
-  [Morris, Z. S., Wooding, S. & Grant, J. (2011). The answer is 17 years, what is the question: understanding time lags in translational research. _Journal of the Royal Society of Medicine_ 104(12): 510–520.],
+  [Morris, Z. S., Wooding, S. & Grant, J. (2011). The answer is 17 years, what is the question: understanding time lags in translational research. _Journal of the Royal Society of Medicine_ 104(12): 510–520. #link("https://doi.org/10.1258/jrsm.2011.110180")[doi:10.1258/jrsm.2011.110180].],
   [Balas, E. A. & Boren, S. A. (2000). Managing clinical knowledge for health care improvement. _Yearbook of Medical Informatics_, 65–70.],
   [U.S. Navy (2017). _Comprehensive Review of Recent Surface Force Incidents_; _Strategic Readiness Review_. Department of the Navy.],
   [U.S. Government Accountability Office (2023). _F-35 Sustainment: DOD Faces Several Uncertainties and Risks as it Defines Future Costs and Plans_. GAO-23-105341.],
   [Bulger, M., McCormick, P. & Pitcan, M. (2017). _The Legacy of inBloom._ Data & Society Research Institute.],
   [Office of Qualifications and Examinations Regulation, UK (2020). _Awarding GCSE, AS, A level, advanced extension awards and extended project qualifications in summer 2020: interim report._ Ofqual; see also Adam, D. (2020), MIT Technology Review.],
-  [Helmreich, R. L., Merritt, A. C. & Wilhelm, J. A. (1999). The evolution of Crew Resource Management training in commercial aviation. _International Journal of Aviation Psychology_ 9(1): 19–32.],
+  [Helmreich, R. L., Merritt, A. C. & Wilhelm, J. A. (1999). The evolution of Crew Resource Management training in commercial aviation. _International Journal of Aviation Psychology_ 9(1): 19–32. #link("https://doi.org/10.1207/s15327108ijap0901_2")[doi:10.1207/s15327108ijap0901_2].],
   [Commercial Aviation Safety Team / Federal Aviation Administration (2016). _Safety Enhancements and Outcomes_. CAST/FAA.],
   [Federal Aviation Administration (2017). _Out Front on Airline Safety: Two Decades of Continuous Evolution._ FAA Newsroom.],
   [Rees, J. V. (1994). _Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island._ University of Chicago Press.],
-  [Pronovost, P., Needham, D., Berenholtz, S. _et al._ (2006). An intervention to decrease catheter-related bloodstream infections in the ICU. _New England Journal of Medicine_ 355(26): 2725–2732.],
-  [Haynes, A. B., Weiser, T. G., Berry, W. R. _et al._ (2009). A surgical safety checklist to reduce morbidity and mortality in a global population. _New England Journal of Medicine_ 360(5): 491–499.],
+  [Pronovost, P., Needham, D., Berenholtz, S. _et al._ (2006). An intervention to decrease catheter-related bloodstream infections in the ICU. _New England Journal of Medicine_ 355(26): 2725–2732. #link("https://doi.org/10.1056/NEJMoa061115")[doi:10.1056/NEJMoa061115].],
+  [Haynes, A. B., Weiser, T. G., Berry, W. R. _et al._ (2009). A surgical safety checklist to reduce morbidity and mortality in a global population. _New England Journal of Medicine_ 360(5): 491–499. #link("https://doi.org/10.1056/NEJMsa0810119")[doi:10.1056/NEJMsa0810119].],
   [Agency for Healthcare Research and Quality (2023). _TeamSTEPPS 3.0 Curriculum._ AHRQ Publication No. 23-0034.],
   [Sawyer, R. K. (ed.) (2014). _The Cambridge Handbook of the Learning Sciences_ (2nd ed.). Cambridge University Press.],
   [Vicente, K. J. (1999). _Cognitive Work Analysis: Toward Safe, Productive, and Healthy Computer-Based Work._ Lawrence Erlbaum.],
@@ -81,7 +81,7 @@
 #read-list((
   [Bransford, J. D., Brown, A. L. & Cocking, R. R. (eds.) (2000). _How People Learn: Brain, Mind, Experience, and School._ National Academy Press.],
   [Sawyer, R. K. (ed.) (2014). _The Cambridge Handbook of the Learning Sciences_ (2nd ed.).],
-  [Koedinger, K. R., Corbett, A. T. & Perfetti, C. (2012). The Knowledge-Learning-Instruction framework. _Cognitive Science_ 36(5): 757–798.],
+  [Koedinger, K. R., Corbett, A. T. & Perfetti, C. (2012). The Knowledge-Learning-Instruction framework. _Cognitive Science_ 36(5): 757–798. #link("https://doi.org/10.1111/j.1551-6709.2012.01245.x")[doi:10.1111/j.1551-6709.2012.01245.x].],
   [Sweller, J., Ayres, P. & Kalyuga, S. (2011). _Cognitive Load Theory._ Springer.],
   [Soderstrom, N. C. & Bjork, R. A. (2015). Learning versus performance: an integrative review. _Perspectives on Psychological Science_ 10(2): 176–199.],
   [Goodell, J. & Kolodner, J. L. (eds.) (2022). _Learning Engineering Toolkit: Evidence-Based Practices from the Learning Sciences, Instructional Design, and Beyond._ Routledge.],
@@ -109,7 +109,7 @@
 
 #read-list((
   [Weick, K. E. & Sutcliffe, K. M. (2015). _Managing the Unexpected_ (3rd ed.). Wiley.],
-  [Roberts, K. H. (1990). Some characteristics of one type of high reliability organization. _Organization Science_ 1(2): 160–176.],
+  [Roberts, K. H. (1990). Some characteristics of one type of high reliability organization. _Organization Science_ 1(2): 160–176. #link("https://doi.org/10.1287/orsc.1.2.160")[doi:10.1287/orsc.1.2.160].],
   [Edmondson, A. C. (2018). _The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth._ Wiley.],
   [Salas, E., Wilson, K. A., Burke, C. S. & Wightman, D. C. (2006). Does Crew Resource Management training work? An update, an extension, and some critical needs. _Human Factors_ 48(2): 392–412.],
   [Klein, G. (1998). _Sources of Power: How People Make Decisions._ MIT Press.],
@@ -135,7 +135,7 @@
 
 #read-list((
   [Eubanks, V. (2018). _Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor._ St. Martin's.],
-  [Friedman, B. & Nissenbaum, H. (1996). Bias in computer systems. _ACM Transactions on Information Systems_ 14(3): 330–347.],
+  [Friedman, B. & Nissenbaum, H. (1996). Bias in computer systems. _ACM Transactions on Information Systems_ 14(3): 330–347. #link("https://doi.org/10.1145/230538.230561")[doi:10.1145/230538.230561].],
   [O'Neil, C. (2016). _Weapons of Math Destruction._ Crown.],
   [Selbst, A. D. _et al._ (2019). Fairness and abstraction in sociotechnical systems. In _FAT\*'19._],
   [Citron, D. K. (2008). Technological due process. _Washington University Law Review_ 85: 1249–1313.],
@@ -147,11 +147,11 @@
 #v(2pt)
 
 #read-list((
-  [Parasuraman, R. & Manzey, D. H. (2010). Complacency and bias in human use of automation: an attentional integration. _Human Factors_ 52(3): 381–410.],
-  [Bainbridge, L. (1983). Ironies of automation. _Automatica_ 19(6): 775–779.],
-  [Sarter, N. B. & Woods, D. D. (1995). How in the world did we ever get into that mode? Mode error and awareness in supervisory control. _Human Factors_ 37(1): 5–19.],
+  [Parasuraman, R. & Manzey, D. H. (2010). Complacency and bias in human use of automation: an attentional integration. _Human Factors_ 52(3): 381–410. #link("https://doi.org/10.1177/0018720810376055")[doi:10.1177/0018720810376055].],
+  [Bainbridge, L. (1983). Ironies of automation. _Automatica_ 19(6): 775–779. #link("https://doi.org/10.1016/0005-1098(83)90046-8")[doi:10.1016/0005-1098(83)90046-8].],
+  [Sarter, N. B. & Woods, D. D. (1995). How in the world did we ever get into that mode? Mode error and awareness in supervisory control. _Human Factors_ 37(1): 5–19. #link("https://doi.org/10.1518/001872095779049516")[doi:10.1518/001872095779049516].],
   [Cummings, M. L. (2017). Automation bias in intelligent time-critical decision support systems. In _Decision Making in Aviation._],
-  [Casner, S. M. & Hutchins, E. (2019). What do we tell the drivers? Toward minimum driver-training standards for partially-automated cars. _Journal of Cognitive Engineering and Decision Making_ 13(2): 55–66.],
+  [Casner, S. M. & Hutchins, E. (2019). What do we tell the drivers? Toward minimum driver-training standards for partially-automated cars. _Journal of Cognitive Engineering and Decision Making_ 13(2): 55–66. #link("https://doi.org/10.1177/1555343419830901")[doi:10.1177/1555343419830901].],
 ))
 
 #v(8pt)
@@ -163,7 +163,7 @@
   [Gawande, A. (2009). _The Checklist Manifesto: How to Get Things Right._ Metropolitan.],
   [Pronovost, P. & Vohr, E. (2010). _Safe Patients, Smart Hospitals._ Hudson Street Press.],
   [Wachter, R. (2015). _The Digital Doctor: Hope, Hype, and Harm at the Dawn of Medicine's Computer Age._ McGraw-Hill.],
-  [Bates, D. W., Levine, D. M., Salmasian, H. _et al._ (2023). The safety of inpatient health care. _New England Journal of Medicine_ 388(2): 142–153.],
+  [Bates, D. W., Levine, D. M., Salmasian, H. _et al._ (2023). The safety of inpatient health care. _New England Journal of Medicine_ 388(2): 142–153. #link("https://doi.org/10.1056/NEJMsa2206117")[doi:10.1056/NEJMsa2206117].],
 ))
 
 #v(12pt)

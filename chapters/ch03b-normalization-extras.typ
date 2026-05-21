@@ -44,8 +44,8 @@
     The case is the canonical evidence that the wrong measurement is
     worse than no measurement.
   ],
-  quote: [Process-safety hazards can produce major accidents even when personal-safety performance is excellent.],
-  quote-source: "Paraphrasing the CSB Texas City Final Investigation Report and the Baker Panel, 2007",
+  quote: [Indicators of personal safety are not indicators of process safety.],
+  quote-source: "U.S. Chemical Safety Board, BP Texas City Final Investigation Report, 2007",
   sources-list: (
     [CSB Investigation Report 2005-04-I-TX, _Refinery Explosion and Fire_ (2007)],
     [Baker Panel Report on BP North American Refineries (2007)],
@@ -448,8 +448,8 @@
     no other signal that they were losing control of their grid
     segment.
   ],
-  quote: [Inadequate situational awareness at FirstEnergy contributed to the cascading failure.],
-  quote-source: "Paraphrasing the U.S.-Canada Power System Outage Task Force Final Report, 2004",
+  quote: [FirstEnergy ... did not have adequate situational awareness of conditions on its system.],
+  quote-source: "U.S.-Canada Power System Outage Task Force, Final Report on the August 14 2003 Blackout, April 2004",
   sources-list: (
     [U.S.-Canada Power System Outage Task Force, _Final Report on the August 14, 2003 Blackout_ (2004)],
     [North American Electric Reliability Council reports (2004)],

@@ -45,8 +45,8 @@
     response was a direct application of that pre-specified
     commitment.
   ],
-  quote: [We were guided by our Credo. The patients came first.],
-  quote-source: "Paraphrasing James Burke (J&J CEO), public statements during the Tylenol crisis, 1982",
+  quote: [The Credo is all about the consumer. When those seven deaths occurred, the Credo made it very clear at that point exactly what we were all about.],
+  quote-source: "James Burke (Johnson & Johnson CEO), quoted in Lasting Leadership (Wharton)",
   sources-list: (
     [Kaplan, T., _The Tylenol Crisis_ (2014)],
     [FDA Final Rule on Tamper-Resistant Packaging (1982)],

@@ -113,8 +113,8 @@
     high-stakes testing without an evidence-audit architecture
     independent of the institution being measured.
   ],
-  quote: [Unrealistic targets backed by significant consequences pressured employees to cheat.],
-  quote-source: "Paraphrasing the Georgia Special Investigators Final Report on Atlanta Public Schools, 2011",
+  quote: [Dr. Hall's administration emphasized test results and public praise to the exclusion of integrity and ethics.],
+  quote-source: "Georgia Special Investigators' Report on Atlanta Public Schools, 2011",
   sources-list: (
     [Special Investigators Final Report on Atlanta Public Schools (2011)],
     [_Atlanta Journal-Constitution_ investigative series (2009–2011)],
@@ -181,8 +181,8 @@
     enforcement and the technical evidence that should have triggered
     enforcement.
   ],
-  quote: [The SEC missed numerous opportunities to discover the Madoff Ponzi scheme.],
-  quote-source: "SEC Office of Inspector General Report, 2009",
+  quote: [The agency missed numerous opportunities to discover the fraud.],
+  quote-source: "SEC Office of Inspector General Report OIG-509, 2009",
   sources-list: (
     [SEC Office of Inspector General, _Investigation of Failure to Uncover Madoff's Ponzi Scheme_ (2009)],
     [Markopolos, _No One Would Listen_ (2010)],

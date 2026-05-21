@@ -54,8 +54,8 @@
     designed without the capability infrastructure to make it
     performable.
   ],
-  quote: [Autopilot was not designed to keep the driver engaged in the driving task.],
-  quote-source: "Paraphrasing the NTSB findings on the 2016 Tesla Autopilot Florida crash (HAB-17/07, 2017)",
+  quote: [The operational design ... permitted his prolonged disengagement from the driving task.],
+  quote-source: "NTSB Highway Accident Report HAR-17/02 (Williston, Florida crash), 2017",
   sources-list: (
     [NHTSA Standing General Order 2021-01 reports],
     [NTSB Highway Accident Reports HAB-17/07 (2016), HAR-20/01 (2018), and follow-on cases],

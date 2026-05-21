@@ -93,7 +93,7 @@
   entry(35, "UK A-Level Algorithm",       "2020",      "G·H·D",   "2·7"),
   entry(36, "Australia Robodebt",         "2016–20",   "G·D·H",   "7·8"),
   entry(37, "Algorithmic Bias in Ed",     "ongoing",   "G·H·D",   "2·7·10"),
-  entry(38, "GIFT Discontinuation",       "2012–23",   "K·G·N",   "1·9"),
+  entry(38, "GIFT and the Adoption Gap",  "2012–",     "K·G·N",   "1·3·9"),
   entry(39, "Georgia State Univ.",        "2012–",     "T·K",     "2",  success: true),
   entry(40, "xAPI / TLA Gap",             "ongoing",   "K·G",     "2·9"),
   entry(41, "17-Year Implementation Gap", "ongoing",   "K·G·N",   "1·3·9"),

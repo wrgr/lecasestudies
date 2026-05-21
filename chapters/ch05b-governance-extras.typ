@@ -43,8 +43,8 @@
     The case is the strongest available evidence that "the computer
     said so" is a governance hazard.
   ],
-  quote: [The Post Office knew there were bugs in Horizon. They prosecuted anyway.],
-  quote-source: "Sir Wyn Williams, Post Office Horizon IT Inquiry, 2024",
+  quote: [A number of senior, and not so senior, employees of the Post Office knew, or at the very least should have known, that Legacy Horizon was capable of error.],
+  quote-source: "Sir Wyn Williams, Post Office Horizon IT Inquiry, Volume 1, 2024",
   sources-list: (
     [Post Office Horizon IT Inquiry hearings and exhibits (2020–)],
     [_Hamilton & Others v. Post Office Limited_ (2021)],
@@ -385,8 +385,8 @@
     cumulative inadequacy across multiple parameters that combined
     catastrophically.
   ],
-  quote: [Equifax had no centralized, comprehensive inventory of which assets ran Apache Struts.],
-  quote-source: "Paraphrasing the U.S. Senate Permanent Subcommittee on Investigations report, 2019",
+  quote: [Equifax lacked a comprehensive IT asset inventory.],
+  quote-source: "U.S. Senate Permanent Subcommittee on Investigations, How Equifax Neglected Cybersecurity, March 2019 (section heading)",
   sources-list: (
     [Senate Permanent Subcommittee on Investigations, _How Equifax Neglected Cybersecurity and Suffered a Devastating Data Breach_ (2019)],
     [Federal Trade Commission Consent Order (2019)],
@@ -520,8 +520,8 @@
     on the speed of its construction. The schedule was load-bearing
     in the wrong sense.
   ],
-  quote: [The design errors were the result of inadequate engineering review, not unknown phenomena.],
-  quote-source: "Paraphrasing NTSB Highway Accident Report HAR-19/02 on the FIU bridge, 2019",
+  quote: [The probable cause of the collapse was the load and capacity calculation errors made by FIGG Bridge Engineers in its design of the main span truss.],
+  quote-source: "NTSB Highway Accident Report HAR-19/02 on the FIU pedestrian bridge, 2019",
   sources-list: (
     [NTSB Highway Accident Report HAR-19/02 (2019)],
     [OSHA Final Report on the FIU Bridge Collapse (2019)],

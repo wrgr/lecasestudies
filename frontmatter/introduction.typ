@@ -270,7 +270,208 @@
 
 // -------------------------------------------------------------------
 #v(20pt)
-#text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("IV  ·  how to read this book"))
+#text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("IV  ·  lens as an iterative learning-engineering process"))
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  Learning engineering is not a one-time act of design. Its defining
+  feature, as articulated in the IEEE Industry Connections Industry
+  Consortium on Learning Engineering's process model, is iteration:
+  understand the operational context, specify capability requirements,
+  prototype an intervention, instrument it, measure, learn, redesign.
+  The work cycles. The cases in this book that produced sustained
+  outcomes — CRM and CAST, INPO, Keystone ICU, the WHO Surgical
+  Safety Checklist, TeamSTEPPS — all share that loop structure. They
+  were not built once and left alone. They were built, measured,
+  rebuilt, remeasured, and rebuilt again. The institutional capability
+  to sustain the loop *is* what distinguishes them from interventions
+  whose effects decayed.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  LENS is organized as that loop made teachable. Each required course
+  enters the cycle at a different point and trains the corresponding
+  competence. LEN 1 frames the problem and identifies the system whose
+  capability is at stake. LEN 5 elicits requirements from operational
+  analysis. LEN 2 builds the evidence architecture that lets the
+  institution know whether its interventions worked. LEN 8 examines
+  the human and AI roles inside the designed system. LEN 3 — Studio —
+  asks students to do all of it on a single integrated project,
+  carrying the loop through one full iteration on a real operational
+  problem. Electives extend the loop: LEN 7 (Bias, Risk, and
+  Governance), LEN 9 (Knowledge Transfer and Organizational Learning),
+  LEN 10 (Computational and AI Methods). The program graduates a
+  practitioner who has been around the loop enough times to know
+  where it breaks.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The casebook is itself an iteration artifact. Each case is read,
+  diagnosed, paired with a learning-engineering response, and tested
+  in studio against students' own operational domains. The cases that
+  return as success stories in Part II are the cases whose
+  institutions completed the loop. The cases in Part I are the cases
+  whose institutions did not — or did not loop fast enough. The
+  pedagogical commitment of the program is that the practitioner who
+  graduates can identify, instrument, and close the next such loop
+  before the next case is written.
+]
+
+// -------------------------------------------------------------------
+#v(20pt)
+#text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("V  ·  the institutional anchors  ·  what makes lens credible"))
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  A specialization that promises to teach a discipline still being
+  built must show that its institutional anchors are real. LENS draws
+  on three at Johns Hopkins.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The first is the *CircuitMerit COMPASS* framework — a credentialed
+  pathway model that operationalizes how capability evidence travels
+  from individual learner work to institutionally recognized
+  competence. The COMPASS framework gives the program a working
+  exemplar of evidence-based credentialing inside the same institution
+  that teaches it. Students do not study capability evidence
+  abstractly; they are operating inside a credentialing architecture
+  that uses it as a deliverable. The discipline is being taught from
+  inside a working instance of the discipline.
+  #footnote-flag("Confirm CircuitMerit COMPASS framing and citation with program leadership before printed edition.")
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The second is the *pathways flywheel*: the program's deliberate
+  loop between practitioner enrollment, applied studio work in
+  operational settings, institutional artifacts produced in those
+  studios, and the next cohort of practitioners drawn into the program
+  by the evidence the prior cohort generated. The flywheel is what
+  prevents the program from being a series of unconnected cohorts and
+  makes it instead a compounding institutional asset — each cohort
+  shortening the implementation gap for the next. The casebook itself
+  is a flywheel artifact: the work of one cohort produces the
+  reference dataset for the next.
+  #footnote-flag("Confirm Pathways Flywheel framing with program leadership.")
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The third anchor is *integrated student work* — the studio,
+  practicum, and applied-project model that ensures every LENS
+  graduate has, in addition to coursework, a portfolio of capability
+  engineering deliverables produced inside real operational systems.
+  The cases in this book are not the only operational record the
+  program produces. Every graduate carries an addition to it. The
+  credibility of the program is, in the end, the credibility of the
+  artifacts its graduates have produced in the field.
+]
+
+// -------------------------------------------------------------------
+#v(20pt)
+#text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("VI  ·  why the school of education"))
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  A reasonable reader asks: if learning engineering is engineering,
+  why does this program live in a School of Education rather than a
+  School of Engineering? The answer is that the binding constraint on
+  the discipline is not the engineering, which is mature. It is the
+  learning sciences, the educational measurement, the implementation
+  science, and the equity-and-governance machinery — which live in
+  Schools of Education and which the cases in this book establish as
+  the load-bearing elements when capability interventions actually
+  scale.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The learning sciences are the discipline that knows how skill,
+  knowledge, and judgment develop, decay, and transfer across
+  contexts. CRM was not an engineering achievement; the engineering
+  of the cockpit was already mature in 1976. CRM was a *learning*
+  achievement — a redesign of how aircrews learn to operate as a
+  coordinated team, drawn from psychological research on group
+  performance under stress. The same is true of TeamSTEPPS, the WHO
+  Checklist's pause protocol, INPO's accreditation regime, and the
+  Rickover oral examination tradition. The interventions that move
+  the curves are interventions in how capability is learned, retained,
+  and transferred — not in how the hardware is built.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  Educational measurement is the discipline that knows how to construct
+  the instruments that determine, validly and reliably, whether a
+  person can do something. The cases in this book that turn on
+  measurement failures — the VA wait-time scandal, Atlanta Public
+  Schools, LIBOR, Wells Fargo, the F-35 readiness reporting — are
+  measurement-instrument failures at heart. The capability to design
+  measurement instruments that survive contact with the institutions
+  measuring themselves is an educational-measurement competence. It
+  lives in Schools of Education.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  Implementation science — the field that studies the gap between
+  evidence and practice — was developed largely in public-health
+  schools and schools of education. Its frameworks (Fixsen et al.,
+  Aarons et al., Damschroder et al.) are the operational backbone of
+  any serious capability-engineering effort, and Schools of Education
+  have been their institutional home for two decades. A School of
+  Engineering can teach the artifact. A School of Education teaches
+  the artifact, the measurement instrument that decides if the artifact
+  works, and the implementation pathway by which the artifact reaches
+  scale. The casebook's central argument — that capability is a system
+  parameter — requires all three.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  Equity, governance, and ethics in education at scale are also,
+  evidently, education problems. The inBloom, A-Level, COMPAS,
+  Robodebt, and educational-predictive-analytics cases in this book
+  are not failures of engineering competence. They are failures of
+  the disciplines that know how to engineer measurement instruments,
+  credentialing systems, and decision regimes that do not encode
+  structural inequity. Those disciplines live in Schools of Education.
+  The School of Engineering can build the model. The School of
+  Education is where the construct gets validated, the consent
+  framework gets designed, and the equity audit gets conducted.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The case for housing LENS in the Johns Hopkins School of Education
+  is, finally, a case for treating capability engineering as the
+  applied form of the educational sciences — engineering applied
+  through learning, measurement, and equity, not engineering applied
+  to learning as content. That is a real distinction. Schools of
+  Engineering routinely build artifacts; the cases in this book show
+  that the artifacts then need disciplines that those schools are not
+  organized to provide. The placement is not a default. It is the
+  shortest path between the discipline as it is and the discipline as
+  it needs to be.
+]
+
+// -------------------------------------------------------------------
+#v(20pt)
+#text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("VII  ·  how to read this book"))
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[

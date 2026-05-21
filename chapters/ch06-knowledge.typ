@@ -14,8 +14,8 @@
   number: "6",
   title: "Knowledge Lost",
   subtitle: "Institutional memory degraded.",
-  epigraph: [Schedulers are among the highest-turnover positions in the VA — constant turnover.],
-  epigraph-source: "Paraphrasing GAO testimony on VA scheduling, 2019",
+  epigraph: [Schedulers are among the top ten highest-turnover positions in the VA.],
+  epigraph-source: "Debra Draper, GAO Director of Health Care, testimony to the House Committee on Veterans' Affairs, 2019",
 )
 
 #case(
@@ -49,8 +49,8 @@
     Veterans died inside a system that, by its own metrics, was
     succeeding.
   ],
-  quote: [Schedulers are among the highest-turnover positions in the VA — constant turnover.],
-  quote-source: "Paraphrasing GAO testimony on VA scheduling, 2019",
+  quote: [Schedulers are among the top ten highest-turnover positions in the VA.],
+  quote-source: "Debra Draper (GAO Director of Health Care), House VA Committee testimony, GAO-19-687T, July 2019",
   sources-list: (
     [VA Office of Inspector General Report 14-02603-267 (2014)],
     [GAO Veterans Health Administration reports (2000–2019)],
@@ -87,66 +87,74 @@
 
 #case(
   number: 38,
-  title: "GIFT Discontinuation",
-  year: "2012 – ~2023",
+  title: "GIFT and the Adoption Gap",
+  year: "2012 – present",
   domains-list: ("defense", "education"),
   modes-code: "KGN",
-  impact: "Demonstrated learning effectiveness but failed to achieve institutional adoption despite 10+ years of development",
+  impact: "Active open-source ITS framework with demonstrated learning effectiveness; ubiquitous fielded adoption in routine military training has not been achieved",
   diagram: dgm.dgm-gift,
   body: [
-    The Generalized Intelligent Framework for Tutoring (GIFT), developed
-    by the U.S. Army Research Laboratory, was an open-source framework
-    for authoring, delivering, and evaluating intelligent tutoring
-    systems. Computer-based tutoring had been shown to be "as effective
-    as expert human tutors in one-to-one tutoring in well-defined
-    domains and significantly better than traditional classroom training
-    environments" (VanLehn, 2011). GIFT aimed to lower the skill barrier
-    for authoring ITS, deliver adaptive instruction, and provide
-    evaluation tools.
+    The Generalized Intelligent Framework for Tutoring (GIFT) is an
+    open-source framework for authoring, delivering, and evaluating
+    intelligent tutoring systems. It was originated under the U.S. Army
+    Research Laboratory; following the 2019 Army Futures Command
+    reorganization, the program moved with its host (the Learning in
+    Intelligent Tutoring Environments laboratory) into DEVCOM Soldier
+    Center, where it remains under active development. The framework
+    issues regular releases — 2025-1 in September 2025, with a cloud
+    deployment at cloud.gifttutoring.org — and convenes an annual
+    GIFTSym symposium that publishes peer-reviewed proceedings.
 
-    Despite demonstrated learning outcomes and substantial research
-    investment, GIFT was discontinued — not because the technology did
-    not work, but because of institutional and cultural resistance to
-    adoption. As Goodell observes in the learning-engineering
-    literature, fifty years of research have failed to make
-    computer-based tutoring ubiquitous in military training.
+    Computer-based tutoring has been shown to be "as effective as expert
+    human tutors in one-to-one tutoring in well-defined domains and
+    significantly better than traditional classroom training
+    environments" (VanLehn, 2011). GIFT itself sits at the center of
+    the field's effort to lower the authoring barrier for adaptive
+    instruction. The case in this casebook is not that GIFT has been
+    discontinued — it has not. The case is that *ubiquitous fielded
+    adoption of adaptive tutoring across routine military training
+    pipelines remains limited* despite five decades of research on
+    intelligent tutoring and more than a decade of active GIFT
+    development. The gap between framework and fielded routine use
+    is the case.
 
-    The case sits at the center of the LENS program's argument: the gap
-    between learning-science discovery and scaled implementation is
-    itself the problem the discipline exists to address.
+    This is the canonical learning-engineering problem: the science is
+    settled, the platform exists, the studies are positive, and the
+    institutional pathway to scaled adoption is still being built.
   ],
-  quote: [Five decades of research have not made computer-based tutoring ubiquitous in military training.],
-  quote-source: "Paraphrasing Goodell on learning engineering and scaled adoption, 2022",
+  quote: [The technology works. The institutional pathway to ubiquitous fielded use does not yet.],
+  quote-source: "Author summary of the GIFT adoption record (uncited)",
   sources-list: (
-    [Sottilare et al. (2012), GIFT framework introduction, ARL],
-    [_International Journal of AI in Education_ Special Issue (2017)],
-    [LEBoK Knowledge Area 6, Learning Engineering Process],
-    [Goodell on learning engineering, Leading Learning podcast (2021)],
+    [GIFT Project, gifttutoring.org — Overview, News, and Releases pages],
+    [Sottilare, Graesser, Hu & Holden (eds.), _Design Recommendations for Intelligent Tutoring Systems_, GIFTSym volumes],
+    [_International Journal of AI in Education_, Special Issue on GIFT (2017), DOI: 10.1007/s40593-017-0149-9],
+    [VanLehn, K. (2011), "The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems," _Educational Psychologist_ 46(4)],
   ),
   le-insight: [
     GIFT is the most directly relevant case in this book to the
-    learning-engineering discipline itself. The technology worked. The
-    learning science worked. The institutional adoption did not. The
-    failure is the textbook example of why learning engineering exists
-    as a discipline: to bridge the gap between effective intervention
-    and scaled deployment.
+    learning-engineering discipline itself. The technology works. The
+    learning science works. The framework is active and supported. What
+    has not been built is the institutional adoption pathway: the
+    procurement, training pipeline integration, instructor workflow
+    redesign, and authority structure that would make adaptive tutoring
+    a default rather than an experiment.
   ],
   lens-approach: [
     LENS treats GIFT in LEN 1 as the problem-framing case for the
-    discipline itself, in LEN 9 as a knowledge-transfer failure, and
-    across the curriculum as the canonical example of why scaled
-    implementation is harder than effective intervention.
+    discipline, in LEN 9 as the foundational adoption-pathway case,
+    and in LEN 3 (Studio) as a prompt for designing the institutional
+    deliverables that would close an adoption gap of this shape.
   ],
   literature-items: (
-    [Sottilare, Graesser, Hu & Holden (eds.), GIFT volumes],
-    [Fixsen et al. (2005), _Implementation Research_],
-    [Goodell & Kolodner (2022) on learning engineering as a discipline],
+    [GIFT Project documentation and GIFTSym 12 / 13 proceedings],
+    [Fixsen et al. (2005), _Implementation Research: A Synthesis_],
+    [Goodell & Kolodner (2022), _Learning Engineering Toolkit_],
   ),
   reflection-list: (
-    [What is the equivalent "GIFT" in your domain — the effective intervention that has not crossed the adoption boundary? Why has it not?],
-    [Design the implementation-readiness deliverable that should accompany an effective intervention to make adoption tractable.],
+    [GIFT exists, is supported, and works. Adoption at scale does not. What is the equivalent in your domain — an effective intervention whose adoption pathway has not been engineered?],
+    [Design the institutional adoption deliverable that would move adaptive tutoring from "available framework" to "default routine practice" in one operational training pipeline.],
   ),
-  courses: ("LEN 1", "LEN 9"),
+  courses: ("LEN 1", "LEN 3", "LEN 9"),
 )
 
 #case(
