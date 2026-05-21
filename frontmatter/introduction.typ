@@ -379,16 +379,20 @@
   generalization of the CIRCUIT model into a replicable framework:
   holistic recruiting, the CIRCUIT eight pillars, the CCR
   competency framework, and the explicit "hidden curriculum"
-  literature. *COMPASS-Core* is the ten-workshop mentoring
-  curriculum that operationalizes MERIT inside a specific
-  institutional setting — orientation and goal-setting, resilience
-  and mindset, research-navigation, networking and faculty
-  engagement, scientific reading and writing, presentations and
-  figures, metacognition and advanced study, professional conduct
-  and ethics, STEM identity and purpose, and long-term career and
-  funding strategy. The CIRCUIT → MERIT → COMPASS lineage is
-  documented in the peer-reviewed engineering-education literature
-  #cite-num(24). Section VII expands on this evidence.
+  literature. *COMPASS* is the layer of targeted mentor
+  interventions that operates MERIT inside a specific institutional
+  setting — designed to help students uncover the *tacit and
+  explicit knowledge gaps* that block independent research practice.
+  COMPASS is not bound to a fixed workshop count; the COMPASS-Core
+  curriculum is one instance, with an example set of workshops
+  covering orientation and goal-setting, resilience and mindset,
+  research-navigation, networking and faculty engagement, scientific
+  reading and writing, presentations and figures, metacognition and
+  advanced study, professional conduct and ethics, STEM identity,
+  and long-term career and funding strategy. The
+  CIRCUIT → MERIT → COMPASS lineage is documented in the
+  peer-reviewed engineering-education literature #cite-num(24).
+  Section VII expands on this evidence.
 ]
 
 #v(6pt)
@@ -603,15 +607,20 @@
   Research with Mentorship, and Leadership / National Impact —
   and has been instantiated in computational neuroscience, AI,
   cybersecurity, threat assessment, and pandemic modeling.
-  *COMPASS-Core* is the ten-workshop mentoring curriculum that
-  operates MERIT inside a given institutional setting; an example
-  set covers orientation and SMART goal-setting, resilience and
-  growth mindset, research navigation, networking and faculty
-  engagement, scientific reading and writing, figures and oral
-  presentations, metacognition and study skills, professional
-  conduct and research ethics, STEM identity and belonging, and
-  long-term career and funding strategy. The casebook treats the
-  trio (CIRCUIT model, MERIT framework, COMPASS-Core curriculum) as
+  *COMPASS* is the layer of targeted mentor interventions that
+  operates MERIT inside a given institutional setting — designed to
+  help students uncover the *tacit and explicit knowledge gaps*
+  that separate competent execution from independent research
+  practice. COMPASS is not bound to a fixed workshop count. The
+  COMPASS-Core curriculum is one well-documented instance, with an
+  example set spanning orientation and SMART goal-setting,
+  resilience and growth mindset, research navigation, networking
+  and faculty engagement, scientific reading and writing, figures
+  and oral presentations, metacognition and study skills,
+  professional conduct and research ethics, STEM identity and
+  belonging, and long-term career and funding strategy. The
+  casebook treats the trio (CIRCUIT model, MERIT framework, COMPASS
+  mentor interventions) as
   the load-bearing instance of the Practice Flywheel: requirements
   elicited from operational science, instrumented measurement of
   cohort progress, paired technical and cultural scaffolding, and
