@@ -48,8 +48,8 @@
     #text(font: serif, size: 12pt, style: "italic", fill: cream)[
       Complex systems exist to generate capability. The disciplines
       around the problem each touch part of it — LENS engineers the
-      interface where they meet, with the human at the center of the
-      design rather than handed off after it.
+      interface where they meet, with the human at the center of
+      design and implementation.
     ]
     #v(8pt)
     #text(font: sans, size: 8pt, fill: rgb("#B7C9E0"))[

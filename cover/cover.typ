@@ -143,8 +143,8 @@
     #text(font: serif, size: 12pt, style: "italic", fill: cream)[
       Complex systems exist to generate capability. The disciplines
       around the problem each touch part of it — LENS engineers the
-      interface where they meet, with the human at the center of the
-      design rather than handed off after it.
+      interface where they meet, with the human at the center of
+      design and implementation.
     ]
     #v(8pt)
     #text(font: sans, size: 8pt, fill: rgb("#B7C9E0"))[
@@ -166,12 +166,14 @@
   ]
 ]
 
-// Bottom block: tagline + rule + URL footer, all stacked. Positioned
-// above the 92 × 32 mm barcode safe area. Tagline tracking/size
-// tuned so the full line fits on one row of the back cover content
-// area (~111 mm) without wrapping the orphan "DISCIPLINE" onto a
-// second line.
-#at(margin, total-h - margin - 55mm)[
+// Bottom block: tagline + rule + URL footer, all stacked. Anchored
+// 70 mm from the bottom bleed edge so the entire block sits above
+// Lulu's 92 × 32 mm barcode safe area — that area runs from 12.7 mm
+// to 44.7 mm above the bottom bleed (centered horizontally on the
+// back face). Anchoring at ~70 mm leaves the footer block bottom at
+// ~53 mm above the bleed, giving ~8 mm of clearance above the
+// barcode safe area's upper edge.
+#at(margin, total-h - 70mm)[
   #block(width: half-w - 2 * margin)[
     #text(font: sans, size: 7.5pt, tracking: 1.4pt, fill: gold,
       upper("One hundred cases · Six failure modes · One discipline"))
