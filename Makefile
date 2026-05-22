@@ -51,17 +51,18 @@ preview: $(BUILD)
 	$(TYPST) book.typ $(BUILD)/capability-matters.pdf
 
 # Lulu wraps. Spine widths are recomputed from the interior page count
-# using ~0.0629 mm/page on cream paper.
+# using ~0.0621 mm/page on cream paper (calibrated against Lulu's
+# reported 19.2 mm spine at 309 pp Half Letter, May 2026).
 cover-print-half: print-half
 	$(eval P := $(shell pdfinfo $(BUILD)/capability-matters-print-half.pdf 2>/dev/null | awk '/^Pages:/ {print $$2}'))
-	$(eval S := $(shell awk -v p=$(P) 'BEGIN{printf "%.2f", p*0.0629}'))
+	$(eval S := $(shell awk -v p=$(P) 'BEGIN{printf "%.2f", p*0.0621}'))
 	$(eval W := $(shell awk -v s=$(S) 'BEGIN{printf "%.2f", 2*139.7 + s + 2*3.175}'))
 	$(eval H := $(shell awk 'BEGIN{printf "%.2f", 215.9 + 2*3.175}'))
 	$(TYPST) --root . --input cover-w-mm=$(W) --input cover-h-mm=$(H) --input spine-mm=$(S) cover/cover.typ $(BUILD)/cover-print-half.pdf
 
 cover-print-letter: print-letter
 	$(eval P := $(shell pdfinfo $(BUILD)/capability-matters-print-letter.pdf 2>/dev/null | awk '/^Pages:/ {print $$2}'))
-	$(eval S := $(shell awk -v p=$(P) 'BEGIN{printf "%.2f", p*0.0629}'))
+	$(eval S := $(shell awk -v p=$(P) 'BEGIN{printf "%.2f", p*0.0621}'))
 	$(eval W := $(shell awk -v s=$(S) 'BEGIN{printf "%.2f", 2*215.9 + s + 2*3.175}'))
 	$(eval H := $(shell awk 'BEGIN{printf "%.2f", 279.4 + 2*3.175}'))
 	$(TYPST) --root . --input cover-w-mm=$(W) --input cover-h-mm=$(H) --input spine-mm=$(S) cover/cover-letter.typ $(BUILD)/cover-print-letter.pdf
