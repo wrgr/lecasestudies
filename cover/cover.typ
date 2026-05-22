@@ -70,6 +70,15 @@
   #text(font: serif, size: 80pt, style: "italic", fill: teal-light, "Matters")
 ]
 
+// Editors
+#at(front-x + margin, total-h - 70mm)[
+  #text(font: sans, size: 7.5pt, tracking: 1.6pt, fill: gold, upper("Edited by"))
+  #v(3pt)
+  #text(font: serif, size: 14pt, fill: cream, "William Gray-Roncal")
+  #linebreak()
+  #text(font: serif, size: 14pt, fill: cream, "James Diamond")
+]
+
 #at(front-x + margin, total-h - 36mm)[
   #line(length: 22mm, stroke: 0.6pt + gold)
   #v(6pt)
