@@ -66,14 +66,14 @@
 // ---- Pull quote box ----
 #let pullquote(body, source) = block(
   width: 100%,
-  inset: (left: 10pt, right: 6pt, top: if _draft { 4pt } else { 6pt }, bottom: if _draft { 4pt } else { 6pt }),
+  inset: (left: 10pt, right: 6pt, top: 6pt, bottom: 6pt),
   stroke: (left: 2pt + gold),
   fill: rgb("#FBF7EE"),
   {
     set par(leading: 0.5em)
-    text(font: serif, size: if _draft { 9.5pt } else { 10.5pt }, style: "italic", fill: navy, body)
-    v(2pt)
-    text(font: sans, size: 6.5pt, fill: text-muted, tracking: 0.6pt, upper(source))
+    text(font: serif, size: if _draft { 13pt } else { 10.5pt }, style: "italic", fill: navy, body)
+    v(3pt)
+    text(font: sans, size: if _draft { 8pt } else { 6.8pt }, fill: text-muted, tracking: 0.6pt, upper(source))
   }
 )
 
@@ -81,12 +81,12 @@
 #let sources(..items) = block(
   {
     eyebrow("Sources")
-    v(if _draft { 2pt } else { 3pt })
-    set par(leading: if _draft { 0.4em } else { 0.45em }, first-line-indent: 0pt)
+    v(3pt)
+    set par(leading: if _draft { 0.5em } else { 0.45em }, first-line-indent: 0pt)
     for src in items.pos() {
       block(
-        spacing: if _draft { 2pt } else { 2.5pt },
-        text(font: sans, size: if _draft { 6.5pt } else { 7pt }, fill: text-dark)[→ #src]
+        spacing: if _draft { 3pt } else { 2.5pt },
+        text(font: sans, size: if _draft { 9pt } else { 7pt }, fill: text-dark)[→ #src]
       )
     }
   }
@@ -110,12 +110,12 @@
 // ---- LE Insight / LENS Approach block ----
 #let lens-block(title, body) = block(
   width: 100%,
-  spacing: if _draft { 4pt } else { 6pt },
+  spacing: if _draft { 8pt } else { 6pt },
   {
     eyebrow(title, color: gold)
-    v(if _draft { 1pt } else { 2pt })
-    set par(leading: if _draft { 0.45em } else { 0.5em }, justify: true)
-    text(font: sans, size: if _draft { 8pt } else { 8.5pt }, fill: text-dark, body)
+    v(2pt)
+    set par(leading: if _draft { 0.55em } else { 0.5em }, justify: true)
+    text(font: sans, size: if _draft { 10.5pt } else { 8.5pt }, fill: text-dark, body)
   }
 )
 
@@ -124,16 +124,16 @@
   width: 100%,
   {
     eyebrow("Reflection Questions", color: teal)
-    v(if _draft { 2pt } else { 3pt })
-    set par(leading: if _draft { 0.4em } else { 0.45em }, justify: false)
+    v(3pt)
+    set par(leading: if _draft { 0.5em } else { 0.45em }, justify: false)
     for (i, q) in qs.pos().enumerate() {
       grid(
-        columns: (10pt, 1fr),
-        column-gutter: 3pt,
-        text(font: serif, size: if _draft { 9pt } else { 10pt }, fill: teal, str(i + 1) + "."),
-        text(font: sans, size: if _draft { 7.5pt } else { 8pt }, fill: text-dark, q),
+        columns: (12pt, 1fr),
+        column-gutter: 4pt,
+        text(font: serif, size: if _draft { 12pt } else { 10pt }, fill: teal, str(i + 1) + "."),
+        text(font: sans, size: if _draft { 10.5pt } else { 8pt }, fill: text-dark, q),
       )
-      v(if _draft { 1pt } else { 2pt })
+      v(if _draft { 3pt } else { 2pt })
     }
   }
 )
@@ -163,12 +163,12 @@
 // ---- Literature list ----
 #let literature(..items) = block({
   eyebrow("Further Reading", color: gold)
-  v(if _draft { 2pt } else { 3pt })
-  set par(leading: if _draft { 0.4em } else { 0.45em }, first-line-indent: 0pt)
+  v(3pt)
+  set par(leading: if _draft { 0.5em } else { 0.45em }, first-line-indent: 0pt)
   for it in items.pos() {
     block(
-      spacing: if _draft { 2pt } else { 2.5pt },
-      text(font: sans, size: if _draft { 6.5pt } else { 7pt }, fill: text-dark)[• #it]
+      spacing: if _draft { 3pt } else { 2.5pt },
+      text(font: sans, size: if _draft { 9pt } else { 7pt }, fill: text-dark)[• #it]
     )
   }
 })

@@ -30,10 +30,13 @@
 ) = {
   let draft = sys.inputs.at("mode", default: "screen") == "draft"
 
-  // Start each case on a fresh page. In screen/print mode we also
-  // force verso so page 1 + page 2 form a spread.
+  // Start each case on a fresh page in screen/print mode (forcing
+  // verso so page 1 + page 2 form a spread). In draft mode, cases
+  // flow continuously with generous vertical space between them.
   if draft {
-    pagebreak(weak: true)
+    v(16mm)
+    align(center, line(length: 40mm, stroke: 0.6pt + gold))
+    v(16mm)
   } else {
     pagebreak(to: "even", weak: true)
   }
@@ -52,7 +55,7 @@
     v(3pt)
 
     // title
-    text(font: serif, size: if draft { 18pt } else { 22pt }, fill: navy, title)
+    text(font: serif, size: if draft { 24pt } else { 22pt }, fill: navy, title)
     v(1pt)
     mode-line(modes-code)
     v(2pt)
@@ -64,32 +67,31 @@
         columns: (auto, 1fr),
         column-gutter: 8pt,
         eyebrow("Impact", color: gold),
-        text(font: sans, size: 8.5pt, weight: "medium", fill: navy, impact),
+        text(font: sans, size: if draft { 10.5pt } else { 8.5pt }, weight: "medium", fill: navy, impact),
       ),
     )
     v(3pt)
 
-    // diagram (heavily scaled in draft so the LE Lens content fits
-    // alongside the body on a single page)
+    // diagram (lightly scaled in draft to match the wider page)
     if diagram != none {
       if draft {
-        scale(40%, reflow: true, diagram)
+        scale(85%, reflow: true, diagram)
       } else {
         diagram
       }
-      v(2pt)
+      v(if draft { 4pt } else { 2pt })
     }
 
-    // body — slightly smaller in draft to keep each case to 1 page
+    // body — book-standard 11pt in draft for comfortable reading
     set par(
       justify: true,
-      leading: if draft { 0.4em } else { 0.45em },
+      leading: if draft { 0.58em } else { 0.45em },
       first-line-indent: 0pt,
-      spacing: if draft { 0.44em } else { 0.55em },
+      spacing: if draft { 0.68em } else { 0.55em },
     )
     text(
       font: sans,
-      size: if draft { 8pt } else { 8.5pt },
+      size: if draft { 11pt } else { 8.5pt },
       fill: text-dark,
       body,
     )
