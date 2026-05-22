@@ -61,15 +61,22 @@ $TYPST book.typ build/capability-matters.pdf
 half_pages=$(pdfinfo build/capability-matters-print-half.pdf   | awk '/^Pages:/ {print $2}')
 lett_pages=$(pdfinfo build/capability-matters-print-letter.pdf | awk '/^Pages:/ {print $2}')
 
-# Lulu spine width on cream paper: ~0.0629 mm/page. (16.55 mm at 263 pp.)
-# Override with `--input spine-mm=…` if Lulu's project-page value
-# differs.
-half_spine=$(awk -v p="$half_pages" 'BEGIN {printf "%.2f", p * 0.0629}')
-lett_spine=$(awk -v p="$lett_pages" 'BEGIN {printf "%.2f", p * 0.0629}')
+# Cover dimensions.
+#
+# Half Letter: use Lulu's reported spec (May 2026, 309 pp on cream
+# stock). Lulu reported 304.95 × 222.25 mm with a 19.2 mm spine; we
+# pass those exact values so the upload matches their requirement
+# without rounding drift.
+#
+# US Letter: not yet reported by Lulu (no project page exists for the
+# Letter interior). Estimate from a calibrated coefficient
+# (~0.0621 mm/page on cream paper) — override once Lulu reports an
+# exact value.
+half_spine="19.20"
+half_total_w="304.95"
+half_total_h="222.25"
 
-# Lulu total cover dimensions: 2 × trim + spine + 2 × 3.175 mm bleed
-half_total_w=$(awk -v s="$half_spine" 'BEGIN {printf "%.2f", 2*139.7 + s + 2*3.175}')
-half_total_h=$(awk             'BEGIN {printf "%.2f",   215.9 + 2*3.175}')
+lett_spine=$(awk -v p="$lett_pages" 'BEGIN {printf "%.2f", p * 0.0621}')
 lett_total_w=$(awk -v s="$lett_spine" 'BEGIN {printf "%.2f", 2*215.9 + s + 2*3.175}')
 lett_total_h=$(awk             'BEGIN {printf "%.2f",   279.4 + 2*3.175}')
 
