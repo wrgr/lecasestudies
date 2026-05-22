@@ -30,25 +30,35 @@ echo "→ Compiling cover wrap (cover/cover.typ)..."
 typst compile --font-path fonts --root . \
   cover/cover.typ build/cover.pdf
 
+echo "→ Compiling decomposable cover parts (front / back / spine)..."
+typst compile --font-path fonts --root . cover/cover-front.typ build/cover-front.pdf
+typst compile --font-path fonts --root . cover/cover-back.typ  build/cover-back.pdf
+typst compile --font-path fonts --root . cover/cover-spine.typ build/cover-spine.pdf
+
 # Mirror the latest PDFs to the repo root so they are easy to find / preview.
 cp "$ROOT/build/capability-matters.pdf" "$ROOT/capability-matters.pdf"
 cp "$ROOT/build/capability-matters-print.pdf" "$ROOT/capability-matters-print.pdf"
 cp "$ROOT/build/cover.pdf" "$ROOT/cover.pdf"
+cp "$ROOT/build/cover-front.pdf" "$ROOT/cover-front.pdf"
+cp "$ROOT/build/cover-back.pdf" "$ROOT/cover-back.pdf"
+cp "$ROOT/build/cover-spine.pdf" "$ROOT/cover-spine.pdf"
 
 echo
 echo "✓ Output:"
 echo "    build/capability-matters.pdf        screen interior — cream backdrop"
 echo "    build/capability-matters-print.pdf  print interior — transparent/white backdrop for cream paper stock"
-echo "    build/cover.pdf                     cover wrap — 362.84 × 254.51 mm, 22.22 mm spine (Lulu spec for $PAGES pages, cream)"
-echo "    capability-matters{,-print}.pdf     (same, mirrored to repo root for easy access)"
-echo "    cover.pdf                           (same, mirrored to repo root)"
+echo "    build/cover.pdf                     full Lulu wrap — 319.2 × 216.41 mm, 16.68 mm spine (for $PAGES pages, A5)"
+echo "    build/cover-front.pdf               front face only — A5 (148 × 210 mm)"
+echo "    build/cover-back.pdf                back face only — A5 (148 × 210 mm)"
+echo "    build/cover-spine.pdf               spine only — 16.68 × 210 mm"
+echo "    {root}/*.pdf                        (same, mirrored to repo root for easy access)"
 echo
 echo "Lulu workflow:"
 echo "  • Upload capability-matters-print.pdf as the interior and select"
 echo "    cream-paper stock — the physical paper provides the cream tone."
-echo "  • Use capability-matters.pdf for on-screen viewing and for printing"
-echo "    on white paper if the cream tone is desired in the PDF itself."
-echo "  • The cover wrap is pinned to the spec Lulu showed on the project"
-echo "    page: 362.84 × 254.51 mm, 22.22 mm spine. If Lulu reports"
-echo "    different dimensions, override on the cover compile with"
-echo "    --input cover-w-mm=… --input cover-h-mm=… --input spine-mm=…"
+echo "  • Upload cover.pdf as the cover wrap."
+echo
+echo "Binder / standalone workflow:"
+echo "  • cover-front.pdf, cover-back.pdf, cover-spine.pdf are decomposed"
+echo "    A5 / spine-strip pages for printing into a binder, slipcase, or"
+echo "    web preview. Each is single-page and self-contained."
