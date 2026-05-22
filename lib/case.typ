@@ -55,7 +55,7 @@
     v(3pt)
 
     // title
-    text(font: serif, size: if draft { 24pt } else { 22pt }, fill: navy, title)
+    text(font: serif, size: if draft { 24pt } else { 24pt }, fill: navy, title)
     v(1pt)
     mode-line(modes-code)
     v(2pt)
@@ -67,7 +67,7 @@
         columns: (auto, 1fr),
         column-gutter: 8pt,
         eyebrow("Impact", color: gold),
-        text(font: sans, size: if draft { 10.5pt } else { 8.5pt }, weight: "medium", fill: navy, impact),
+        text(font: sans, size: if draft { 10.5pt } else { 10pt }, weight: "medium", fill: navy, impact),
       ),
     )
     v(3pt)
@@ -75,19 +75,20 @@
     // diagram (full size in both modes)
     if diagram != none {
       diagram
-      v(if draft { 4pt } else { 2pt })
+      v(if draft { 4pt } else { 3pt })
     }
 
-    // body — book-standard 11pt in draft for comfortable reading
+    // body — 9.5pt in print on 6×9 trim (comfortable trade-book size);
+    // 11pt in the Letter draft for editorial mark-up
     set par(
       justify: true,
-      leading: if draft { 0.58em } else { 0.45em },
+      leading: if draft { 0.58em } else { 0.5em },
       first-line-indent: 0pt,
-      spacing: if draft { 0.68em } else { 0.55em },
+      spacing: if draft { 0.68em } else { 0.58em },
     )
     text(
       font: sans,
-      size: if draft { 11pt } else { 8.5pt },
+      size: if draft { 11pt } else { 9.5pt },
       fill: text-dark,
       body,
     )

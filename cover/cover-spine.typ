@@ -1,10 +1,11 @@
 // ============================================================
-// CAPABILITY MATTERS — Spine only (Lulu 16.68 × 210 mm)
+// CAPABILITY MATTERS — Spine only (6×9 trim, ~17 mm wide)
 //
 // Decomposed from the Lulu wrap. Rendered upright (height = book
 // height, width = spine width) so it can be slipped into a binder
 // spine label sleeve. Override the spine width via
-// --input spine-mm=… if the project's page count changes.
+// --input spine-mm=… with the exact value Lulu reports for the
+// project's page count + paper choice.
 // Compile with:
 //   typst compile --font-path fonts --root . \
 //     cover/cover-spine.typ build/cover-spine.pdf
@@ -13,8 +14,8 @@
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
-#let spine = float(sys.inputs.at("spine-mm", default: "16.55")) * 1mm
-#let face-h = 215.9mm  // Half Letter trim height (8.5 in)
+#let spine = float(sys.inputs.at("spine-mm", default: "17.25")) * 1mm
+#let face-h = 228.6mm  // US Trade trim height (9 in)
 
 #set document(title: "Capability Matters — Spine")
 #set page(

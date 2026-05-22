@@ -36,25 +36,25 @@
 #let serif = ("Instrument Serif", "EB Garamond", "Georgia")
 #let sans  = ("DM Sans", "Inter", "Helvetica")
 
-// ---- Trim & bleed for Lulu Half Letter ("Statement") paperback ----
-// Trim: 5.5 × 8.5 in = 139.7 × 215.9 mm. Bleed: 3 mm on all four sides.
-// Final PDF page is therefore 145.7 × 221.9 mm.
-// (Changed from A5 148 × 210 in May 2026 — half letter paper is
-// dramatically cheaper to source for short-run printing.)
-#let trim-w   = 139.7mm
-#let trim-h   = 215.9mm
+// ---- Trim & bleed for Lulu US Trade ("6 × 9") paperback ----
+// Trim: 6 × 9 in = 152.4 × 228.6 mm. Bleed: 3 mm on all four sides.
+// Final PDF page is therefore 158.4 × 234.6 mm.
+// (Changed from Half Letter 5.5 × 8.5 in May 2026 to give the body
+// text more room — 10pt body type wants a wider measure than the
+// Half Letter trim could comfortably carry.)
+#let trim-w   = 152.4mm
+#let trim-h   = 228.6mm
 #let bleed    = 3mm
-#let page-w   = trim-w + 2 * bleed   // 145.7 mm
-#let page-h   = trim-h + 2 * bleed   // 221.9 mm
+#let page-w   = trim-w + 2 * bleed   // 158.4 mm
+#let page-h   = trim-h + 2 * bleed   // 234.6 mm
 
 // Margins measured from the TRIM edge, not the bleed edge.
-// Tightened slightly for Half Letter trim (was 18/14/16/18 for A5)
-// so per-page content width holds at ~111 mm despite the narrower
-// page — keeps case bodies inside their 2-page spreads.
-#let m-inner  = 16mm
-#let m-outer  = 13mm
-#let m-top    = 15mm
-#let m-bottom = 17mm
+// Tuned for 6×9 trim: ~118 mm content width carries a 60–65 character
+// line at 10pt, which is the comfortable reading band.
+#let m-inner  = 18mm
+#let m-outer  = 15mm
+#let m-top    = 17mm
+#let m-bottom = 19mm
 
 // ---- Failure-mode taxonomy ----
 #let modes = (

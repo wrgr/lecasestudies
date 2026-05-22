@@ -66,14 +66,14 @@
 // ---- Pull quote box ----
 #let pullquote(body, source) = block(
   width: 100%,
-  inset: (left: 10pt, right: 6pt, top: 6pt, bottom: 6pt),
+  inset: (left: 10pt, right: 6pt, top: 5pt, bottom: 5pt),
   stroke: (left: 2pt + gold),
   fill: rgb("#FBF7EE"),
   {
-    set par(leading: 0.5em)
-    text(font: serif, size: if _draft { 13pt } else { 10.5pt }, style: "italic", fill: navy, body)
-    v(3pt)
-    text(font: sans, size: if _draft { 8pt } else { 6.8pt }, fill: text-muted, tracking: 0.6pt, upper(source))
+    set par(leading: 0.48em)
+    text(font: serif, size: if _draft { 13pt } else { 11pt }, style: "italic", fill: navy, body)
+    v(2pt)
+    text(font: sans, size: if _draft { 8pt } else { 7pt }, fill: text-muted, tracking: 0.6pt, upper(source))
   }
 )
 
@@ -86,7 +86,7 @@
     for src in items.pos() {
       block(
         spacing: if _draft { 3pt } else { 2.5pt },
-        text(font: sans, size: if _draft { 9pt } else { 7pt }, fill: text-dark)[→ #src]
+        text(font: sans, size: if _draft { 9pt } else { 7.5pt }, fill: text-dark)[→ #src]
       )
     }
   }
@@ -110,12 +110,12 @@
 // ---- LE Insight / LENS Approach block ----
 #let lens-block(title, body) = block(
   width: 100%,
-  spacing: if _draft { 8pt } else { 6pt },
+  spacing: if _draft { 8pt } else { 5pt },
   {
     eyebrow(title, color: gold)
     v(2pt)
     set par(leading: if _draft { 0.55em } else { 0.5em }, justify: true)
-    text(font: sans, size: if _draft { 10.5pt } else { 8.5pt }, fill: text-dark, body)
+    text(font: sans, size: if _draft { 10.5pt } else { 9pt }, fill: text-dark, body)
   }
 )
 
@@ -131,7 +131,7 @@
         columns: (12pt, 1fr),
         column-gutter: 4pt,
         text(font: serif, size: if _draft { 12pt } else { 10pt }, fill: teal, str(i + 1) + "."),
-        text(font: sans, size: if _draft { 10.5pt } else { 8pt }, fill: text-dark, q),
+        text(font: sans, size: if _draft { 10.5pt } else { 8.5pt }, fill: text-dark, q),
       )
       v(if _draft { 3pt } else { 2pt })
     }
@@ -168,7 +168,7 @@
   for it in items.pos() {
     block(
       spacing: if _draft { 3pt } else { 2.5pt },
-      text(font: sans, size: if _draft { 9pt } else { 7pt }, fill: text-dark)[• #it]
+      text(font: sans, size: if _draft { 9pt } else { 7.5pt }, fill: text-dark)[• #it]
     )
   }
 })

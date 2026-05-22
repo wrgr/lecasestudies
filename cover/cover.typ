@@ -5,12 +5,12 @@
 //   typst compile --font-path fonts --root . cover/cover.typ build/cover.pdf
 //
 // Defaults match Lulu's project page for this title:
-//   Book trim:       139.7 × 215.9 mm   (Half Letter / 5.5 × 8.5 in)
+//   Book trim:       152.4 × 228.6 mm   (US Trade / 6 × 9 in)
 //   Bleed:           3.175 mm (0.125 in)
 //   Safety margin:   12.7 mm (0.5 in) from trim edge
-//   Spine (263 pp):  ~16.55 mm — Lulu will report the exact value
+//   Spine (~274 pp): ~17.25 mm — Lulu will report the exact value
 //                    on the project page; override below if different.
-//   Total cover:     ~292.3 × 222.25 mm (~11.51 × 8.75 in)
+//   Total cover:     ~317.4 × 234.95 mm (~12.5 × 9.25 in)
 //                    = 2 × trim_w + spine + 2 × bleed
 //                    × trim_h + 2 × bleed
 //   Barcode area on back cover (Lulu adds): 92 × 32 mm, 12.7 mm from
@@ -25,9 +25,9 @@
 #import "../lib/components.typ": *
 
 // ---- Lulu cover spec (inputs override defaults) ----
-#let total-w = float(sys.inputs.at("cover-w-mm", default: "292.30"))  * 1mm
-#let total-h = float(sys.inputs.at("cover-h-mm", default: "222.25"))  * 1mm
-#let spine   = float(sys.inputs.at("spine-mm",   default: "16.55"))   * 1mm
+#let total-w = float(sys.inputs.at("cover-w-mm", default: "317.40"))  * 1mm
+#let total-h = float(sys.inputs.at("cover-h-mm", default: "234.95"))  * 1mm
+#let spine   = float(sys.inputs.at("spine-mm",   default: "17.25"))   * 1mm
 
 // Derived layout points (printer's view, single sheet wrap):
 //   [ back cover (with bleed) | spine | front cover (with bleed) ]
@@ -79,10 +79,10 @@
 ]
 
 // Display title
-#at(front-x + margin, margin + 50mm)[
-  #text(font: serif, size: 62pt, fill: cream, "Capability")
-  #v(-6pt)
-  #text(font: serif, size: 62pt, style: "italic", fill: teal-light, "Matters")
+#at(front-x + margin, margin + 60mm)[
+  #text(font: serif, size: 70pt, fill: cream, "Capability")
+  #v(-7pt)
+  #text(font: serif, size: 70pt, style: "italic", fill: teal-light, "Matters")
 ]
 
 // Editors
