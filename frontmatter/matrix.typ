@@ -1,7 +1,7 @@
 // ============================================================
-// Case matrix — a two-page spread.
-// Each page is a 2-column grid of compact case entries.
-// Verso (left): cases 1–50.  Recto (right): cases 51–100 + legend.
+// Case matrix — a two-page spread of all 100 cases.
+// Single continuous list, 2 columns per page, no 1–50 / 51–100
+// split (the matrix is one TOC, not two halves).
 // ============================================================
 
 #import "../lib/theme.typ": *
@@ -38,7 +38,7 @@
   }
 )
 
-// -------------------- VERSO :: cases 1 – 50 --------------------
+// -------------------- VERSO :: matrix spread, opening page --------------------
 #pagebreak(to: "even", weak: true)
 
 #text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("The case matrix"))
@@ -49,9 +49,9 @@
 #text(font: serif, size: 20pt, fill: navy, "One hundred cases at a glance")
 #v(3pt)
 #text(font: sans, size: 8pt, fill: text-muted)[
-  Cases 1 – 50.   Gold numbers indicate failures and systemic conditions;
-  teal numbers indicate paired-intervention successes and the open
-  closing case.
+  Gold numbers indicate failures and systemic conditions; teal
+  numbers indicate paired-intervention successes and the open closing
+  case.
 ]
 #v(8pt)
 
@@ -118,21 +118,10 @@
   column-block(right-1),
 )
 
-// -------------------- cases 51 – 100 (continues from previous page) --------------------
+// -------------------- RECTO :: matrix spread, continuation --------------------
+// No header on the continuation page — the matrix is a single
+// continuous list across the spread, not two halves.
 #pagebreak(weak: true)
-
-#text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("The case matrix"))
-#v(4pt)
-#line(length: 32mm, stroke: 0.8pt + gold)
-#v(8pt)
-
-#text(font: serif, size: 20pt, fill: navy, "Cases 51 — 100")
-#v(3pt)
-#text(font: sans, size: 8pt, fill: text-muted)[
-  Part II — "What Works" — opens at Chapter 8 with the paired-intervention
-  successes. Part III — "The Frontier" — closes the volume with the
-  human-AI teaming cases and the open question at Case 100.
-]
 #v(8pt)
 
 #let left-2 = (
@@ -222,6 +211,13 @@
       LEN 10 Studio · LEN 5 Capability Analysis · LEN 7 Bias, Risk &
       Governance · LEN 2 Human-AI Teaming · LEN 8 Knowledge Transfer ·
       LEN 9 Computational & AI Methods.
+    ]
+    v(4pt)
+    text(font: sans, size: 7pt, fill: text-muted)[
+      *Parts.* Part II — *What Works* — opens at Chapter 8 with the
+      paired-intervention successes. Part III — *The Frontier* —
+      closes the volume with the human-AI teaming cases and the open
+      question at Case 100.
     ]
   }
 )
