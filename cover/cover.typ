@@ -117,9 +117,10 @@
   #block(width: trim-w - 28mm)[
     #set par(leading: 0.64em)
     #text(font: serif, size: 14pt, style: "italic", fill: cream)[
-      Every complex system depends on what people can do inside it. That
-      dependency is measurable, designable, and too important to leave to
-      chance.
+      Complex systems exist to generate capability. The disciplines
+      around the problem each touch part of it — LENS engineers the
+      interface where they meet, with the human at the center of the
+      design rather than handed off after it.
     ]
     #v(10pt)
     #text(font: sans, size: 9pt, fill: rgb("#B7C9E0"))[
