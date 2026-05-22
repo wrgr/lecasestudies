@@ -34,7 +34,11 @@
   width:  if draft-mode { 215.9mm } else { page-w },
   height: if draft-mode { 279.4mm } else { page-h },
   margin: if draft-mode {
-    (left: 22mm, right: 22mm, top: 20mm, bottom: 20mm)
+    // Wider inside margin for 3-hole punch / binder. Holes sit ~10
+    // mm from the bound edge with ~16 mm clearance to text. Uses
+    // inside/outside so both single- and double-sided printing
+    // place the binder-edge margin correctly.
+    (inside: 28mm, outside: 18mm, top: 20mm, bottom: 20mm)
   } else {
     (
       inside:  m-inner + bleed,

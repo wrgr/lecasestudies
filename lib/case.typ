@@ -69,9 +69,16 @@
     )
     v(3pt)
 
-    // diagram (smaller / hidden in draft — drafts are about the
-    // text, and the diagrams would crowd a single page)
-    if not draft and diagram != none { diagram; v(2pt) }
+    // diagram (scaled down in draft so the LE Lens content fits on
+    // the same page as the case body)
+    if diagram != none {
+      if draft {
+        scale(48%, reflow: true, diagram)
+      } else {
+        diagram
+      }
+      v(2pt)
+    }
 
     // body
     set par(justify: true, leading: 0.45em, first-line-indent: 0pt, spacing: 0.55em)
@@ -80,7 +87,7 @@
 
   // -------- PAGE 2 (or bottom half of draft page): THE LE LENS --------
   if draft {
-    v(8pt)
+    v(4pt)
   } else {
     pagebreak(weak: true)
   }
@@ -88,21 +95,21 @@
     eyebrow("The Learning Engineering Lens", color: teal)
     v(1pt)
     line(length: 100%, stroke: 0.5pt + rule-soft)
-    v(4pt)
+    v(if draft { 2pt } else { 4pt })
 
     if quote != none {
       pullquote(quote, quote-source)
-      v(4pt)
+      v(if draft { 2pt } else { 4pt })
     }
 
     lens-block("LE Insight", le-insight)
     v(1pt)
     lens-block("LENS Approach", lens-approach)
-    v(4pt)
+    v(if draft { 2pt } else { 4pt })
 
     if reflection-list.len() > 0 {
       reflections(..reflection-list)
-      v(3pt)
+      v(if draft { 2pt } else { 3pt })
     }
 
     // Sources + further reading, two columns
