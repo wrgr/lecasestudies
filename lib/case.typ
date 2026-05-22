@@ -69,20 +69,30 @@
     )
     v(3pt)
 
-    // diagram (scaled down in draft so the LE Lens content fits on
-    // the same page as the case body)
+    // diagram (heavily scaled in draft so the LE Lens content fits
+    // alongside the body on a single page)
     if diagram != none {
       if draft {
-        scale(48%, reflow: true, diagram)
+        scale(40%, reflow: true, diagram)
       } else {
         diagram
       }
       v(2pt)
     }
 
-    // body
-    set par(justify: true, leading: 0.45em, first-line-indent: 0pt, spacing: 0.55em)
-    text(font: sans, size: 8.5pt, fill: text-dark, body)
+    // body — slightly smaller in draft to keep each case to 1 page
+    set par(
+      justify: true,
+      leading: if draft { 0.38em } else { 0.45em },
+      first-line-indent: 0pt,
+      spacing: if draft { 0.42em } else { 0.55em },
+    )
+    text(
+      font: sans,
+      size: if draft { 7.75pt } else { 8.5pt },
+      fill: text-dark,
+      body,
+    )
   })
 
   // -------- PAGE 2 (or bottom half of draft page): THE LE LENS --------
@@ -123,7 +133,7 @@
     // footer: courses
     block(
       width: 100%,
-      inset: (top: 4pt),
+      inset: (top: if draft { 2pt } else { 4pt }),
       stroke: (top: 0.5pt + rule-soft),
       {
         grid(
