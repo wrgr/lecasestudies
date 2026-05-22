@@ -106,7 +106,8 @@
       and Technology program at the Johns Hopkins University School
       of Education. \
       Set in Instrument Serif and DM Sans. \
-      Printed via Lulu, A5 perfect-bound.
+      Printed via Lulu in two trims: Half Letter (5.5 × 8.5 in)
+      and US Letter (8.5 × 11 in), perfect-bound.
     ]
 
     v(10pt)

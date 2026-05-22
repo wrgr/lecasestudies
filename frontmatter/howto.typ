@@ -36,7 +36,8 @@
   what happened, what investigators found, and the documentary record. The
   right-hand page is the *Learning Engineering Lens* — what the case teaches
   about capability as a system parameter, how the LENS curriculum addresses
-  the pattern, and three reflection questions designed for studio discussion.
+  the pattern, and a short set of reflection questions designed for
+  studio discussion.
 ]
 
 #v(14pt)
