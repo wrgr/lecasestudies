@@ -547,6 +547,10 @@
 
 #v(8pt)
 
+#dgm.dgm-five-competencies
+
+#v(10pt)
+
 #block(
   width: 100%,
   fill: rgb("#F0F7F5"),

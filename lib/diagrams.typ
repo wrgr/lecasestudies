@@ -1143,22 +1143,28 @@
     circle((x4, cy), radius: 0.18, stroke: icon-stroke)
     circle((x4, cy), radius: 0.08, fill: rgb("#F5F0E8"), stroke: none)
 
-    // 6) icon 5 — circular arrow (Practice Flywheel)
+    // 6) icon 5 — two-arrow refresh / cycle (Flywheel Iteration)
+    // Matches the updated icon on the official LENS slide: two
+    // curved arrows arranged 180° apart, each ending with an
+    // arrowhead, implying a continuous cyclic refresh.
     let x5 = xs.at(4)
-    let arc-r = 0.26
-    let n-segs = 20
-    let start-a = 60deg
-    let sweep = 310deg
+    let arc-r = 0.27
+    let n-segs = 12
+    let sweep = 150deg
     let step = -sweep / n-segs   // negative => clockwise visually
-    for j in range(n-segs) {
-      let a1 = start-a + j * step
-      let a2 = start-a + (j + 1) * step
-      let p1 = (x5 + arc-r * calc.cos(a1), cy + arc-r * calc.sin(a1))
-      let p2 = (x5 + arc-r * calc.cos(a2), cy + arc-r * calc.sin(a2))
-      if j == n-segs - 1 {
-        line(p1, p2, stroke: icon-stroke, mark: (end: ">", size: 0.11, fill: rgb("#F5F0E8")))
-      } else {
-        line(p1, p2, stroke: icon-stroke)
+    // Two arcs, offset by 180°
+    for arc-i in range(2) {
+      let start-a = 150deg - arc-i * 180deg
+      for j in range(n-segs) {
+        let a1 = start-a + j * step
+        let a2 = start-a + (j + 1) * step
+        let p1 = (x5 + arc-r * calc.cos(a1), cy + arc-r * calc.sin(a1))
+        let p2 = (x5 + arc-r * calc.cos(a2), cy + arc-r * calc.sin(a2))
+        if j == n-segs - 1 {
+          line(p1, p2, stroke: icon-stroke, mark: (end: ">", size: 0.11, fill: rgb("#F5F0E8")))
+        } else {
+          line(p1, p2, stroke: icon-stroke)
+        }
       }
     }
 
@@ -1170,6 +1176,117 @@
         size: 18pt,
         fill: rgb("#F5F0E8"),
         "Why LENS?",
+      ),
+    )
+  })
+)
+
+// ---- dgm-five-competencies: the five CLOs as a horizontal chain --
+// Paired with dgm-why-lens: pillars say why LENS exists, CLOs say
+// what its graduates can do.
+#let dgm-five-competencies = diagram-frame(
+  height: 64mm,
+  caption: "What LENS graduates can do — five competencies",
+  cetz.canvas({
+    import cetz.draw: *
+    let cy = 3.2
+    let node-r = 0.55
+    let icon-stroke = 1.4pt + rgb("#F5F0E8")
+    let xs = (1.1, 3.0, 4.9, 6.8, 8.7)
+    line((xs.at(0), cy), (xs.at(-1), cy), stroke: 0.8pt + rgb("#2CC4B3").lighten(40%))
+
+    // Two-line labels under each node
+    let labels-top = ("Systems", "Engineering", "Data and", "Domain", "Human-AI")
+    let labels-bot = ("Thinking", "Design", "Measurement", "Fluency", "Teaming")
+
+    // Rings and labels first
+    for i in range(xs.len()) {
+      let x = xs.at(i)
+      circle((x, cy), radius: node-r, fill: navy, stroke: 2.2pt + rgb("#2CC4B3"))
+      content(
+        (x, cy - node-r - 0.45),
+        text(font: ("DM Sans",), size: 7.5pt, weight: "bold", fill: rgb("#F5F0E8"), labels-top.at(i)),
+        anchor: "north",
+      )
+      content(
+        (x, cy - node-r - 0.85),
+        text(font: ("DM Sans",), size: 7.5pt, weight: "bold", fill: rgb("#F5F0E8"), labels-bot.at(i)),
+        anchor: "north",
+      )
+    }
+
+    // Icon 1 — Systems Thinking: three nested squares
+    let x1 = xs.at(0)
+    let r1 = 0.30
+    let r1b = 0.20
+    let r1c = 0.08
+    rect((x1 - r1, cy - r1), (x1 + r1, cy + r1), stroke: icon-stroke)
+    rect((x1 - r1b, cy - r1b), (x1 + r1b, cy + r1b), stroke: icon-stroke)
+    rect((x1 - r1c, cy - r1c), (x1 + r1c, cy + r1c), fill: rgb("#F5F0E8"), stroke: none)
+
+    // Icon 2 — LE Design and Implementation: stylized gear
+    let x2 = xs.at(1)
+    circle((x2, cy), radius: 0.16, stroke: icon-stroke)
+    circle((x2, cy), radius: 0.05, fill: rgb("#F5F0E8"), stroke: none)
+    // 8 radial teeth
+    for k in range(8) {
+      let theta = k * 45deg
+      let r-in = 0.21
+      let r-out = 0.30
+      line(
+        (x2 + r-in * calc.cos(theta), cy + r-in * calc.sin(theta)),
+        (x2 + r-out * calc.cos(theta), cy + r-out * calc.sin(theta)),
+        stroke: icon-stroke,
+      )
+    }
+
+    // Icon 3 — Data, Measurement, Evaluation: bar chart
+    let x3 = xs.at(2)
+    // baseline
+    line((x3 - 0.30, cy - 0.18), (x3 + 0.30, cy - 0.18), stroke: icon-stroke)
+    // 4 bars of varying heights
+    let bar-w = 0.10
+    let bar-pad = 0.04
+    let bars = (0.18, 0.30, 0.22, 0.36)
+    for k in range(4) {
+      let bx = x3 - 0.27 + k * (bar-w + bar-pad)
+      let bh = bars.at(k)
+      rect((bx, cy - 0.18), (bx + bar-w, cy - 0.18 + bh), fill: rgb("#F5F0E8"), stroke: none)
+    }
+
+    // Icon 4 — Context and Domain Fluency: three stacked horizontal bands
+    // (representing healthcare, defense, education as co-equal domains)
+    let x4 = xs.at(3)
+    let band-w = 0.50
+    let band-h = 0.08
+    let band-gap = 0.05
+    for k in range(3) {
+      let by = cy + 0.18 - k * (band-h + band-gap) - band-h
+      rect(
+        (x4 - band-w / 2, by),
+        (x4 + band-w / 2, by + band-h),
+        fill: rgb("#F5F0E8"),
+        stroke: none,
+      )
+    }
+
+    // Icon 5 — Human-AI Teaming: two overlapping circles
+    let x5 = xs.at(4)
+    let r5 = 0.16
+    let off = 0.13
+    circle((x5 - off, cy), radius: r5, stroke: icon-stroke)
+    circle((x5 + off, cy), radius: r5, stroke: icon-stroke)
+    // Intersection dot to suggest overlap
+    circle((x5, cy), radius: 0.05, fill: rgb("#F5F0E8"), stroke: none)
+
+    // title across the top
+    content(
+      (4.9, 5.7),
+      text(
+        font: ("Instrument Serif",),
+        size: 18pt,
+        fill: rgb("#F5F0E8"),
+        "What LENS graduates can do.",
       ),
     )
   })

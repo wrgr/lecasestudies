@@ -55,6 +55,11 @@
       text(font: sans, size: 9pt, tracking: 1.8pt, fill: navy, upper("Johns Hopkins University"))
       v(3pt)
       text(font: sans, size: 7.5pt, tracking: 1.4pt, fill: text-muted, upper("Learning Design and Technology"))
+      v(10pt)
+      text(font: sans, size: 7pt, tracking: 1.2pt, fill: teal, upper("First edition · revised May 2026"))
+      v(2pt)
+      text(font: sans, size: 7pt, style: "italic", fill: text-muted,
+        "An ongoing artifact of the LENS Practice Flywheel — Identify, Activate, Prototype, Analyze, Transition.")
     })
   }
 )
