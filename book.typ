@@ -8,13 +8,18 @@
 #import "lib/components.typ": *
 
 // ---- Build mode ----
-// `--input mode=print` produces a print-ready interior with white /
-// transparent page backgrounds, intended to be printed by Lulu on cream
-// paper stock so the physical paper provides the cream tone. Default
-// `mode=screen` keeps the cream fill in the PDF for on-screen viewing
-// and for printing on white paper.
-#let print-mode = sys.inputs.at("mode", default: "screen") == "print"
-#let page-fill = if print-mode { white } else { cream }
+//   mode=screen (default) — Half Letter trim, cream backdrop, A5
+//     spread layout (cases as 2-page verso/recto spreads).
+//   mode=print            — Half Letter trim, transparent/white
+//     backdrop for Lulu cream-paper stock; layout otherwise
+//     identical to screen.
+//   mode=draft            — US Letter (8.5 × 11) one-up layout, each
+//     case on a single page. Intended for editorial review and
+//     hand-marking. Uses white backdrop with a small DRAFT marker.
+#let mode = sys.inputs.at("mode", default: "screen")
+#let print-mode = mode == "print"
+#let draft-mode = mode == "draft"
+#let page-fill = if print-mode or draft-mode { white } else { cream }
 
 // ---- Document metadata ----
 #set document(
@@ -22,20 +27,31 @@
   author: "LDT / LENS · Johns Hopkins University School of Education",
 )
 
-// ---- Global page setup (A5 + 3mm bleed = 154 x 216 mm) ----
+// ---- Global page setup ----
+//   Half Letter + 3mm bleed = 145.7 x 221.9 mm for screen/print.
+//   US Letter for draft mode (215.9 × 279.4 mm).
 #set page(
-  width: page-w,
-  height: page-h,
-  margin: (
-    inside:  m-inner + bleed,
-    outside: m-outer + bleed,
-    top:     m-top + bleed,
-    bottom:  m-bottom + bleed,
-  ),
+  width:  if draft-mode { 215.9mm } else { page-w },
+  height: if draft-mode { 279.4mm } else { page-h },
+  margin: if draft-mode {
+    (left: 22mm, right: 22mm, top: 20mm, bottom: 20mm)
+  } else {
+    (
+      inside:  m-inner + bleed,
+      outside: m-outer + bleed,
+      top:     m-top + bleed,
+      bottom:  m-bottom + bleed,
+    )
+  },
   fill: page-fill,
   header: context {
     let p = counter(page).get().first()
-    if p > 6 [
+    if draft-mode and p > 1 [
+      #set text(font: sans, size: 7pt, fill: text-muted, tracking: 1pt)
+      #upper("Capability Matters — DRAFT") #h(1fr) #str(p)
+      #v(-4pt)
+      #line(length: 100%, stroke: 0.3pt + rule-soft)
+    ] else if not draft-mode and p > 6 [
       #set text(font: sans, size: 7pt, fill: text-muted, tracking: 1pt)
       #if calc.even(p) [
         #upper("Capability Matters") #h(1fr) #str(p)

@@ -1,12 +1,14 @@
 // ============================================================
-// Two-page case spread template
+// Case spread template — 2 pages (screen / print) or 1 page (draft)
 // ============================================================
 
 #import "theme.typ": *
 #import "components.typ": *
 
-// Case starts on a verso (left) page so that page 2 (the LENS analysis)
-// faces page 1 across the spread. We use `pagebreak(to: "even")` for that.
+// In screen/print mode, each case is a 2-page verso/recto spread:
+// page 1 the case, page 2 the LE Lens analysis. In draft mode, the
+// two pages collapse onto a single US-Letter page for editorial
+// review.
 #let case(
   number: 0,
   title: "",
@@ -26,10 +28,17 @@
   reflection-list: (),
   courses: (),
 ) = {
-  // Ensure each case begins on a left-hand (verso) page so pp.1–2 are a spread.
-  pagebreak(to: "even", weak: true)
+  let draft = sys.inputs.at("mode", default: "screen") == "draft"
 
-  // -------- PAGE 1: THE CASE --------
+  // Start each case on a fresh page. In screen/print mode we also
+  // force verso so page 1 + page 2 form a spread.
+  if draft {
+    pagebreak(weak: true)
+  } else {
+    pagebreak(to: "even", weak: true)
+  }
+
+  // -------- PAGE 1 (or top half of draft page): THE CASE --------
   block(width: 100%, {
     // top row: case number + domain tags + year (single line)
     grid(
@@ -43,7 +52,7 @@
     v(3pt)
 
     // title
-    text(font: serif, size: 22pt, fill: navy, title)
+    text(font: serif, size: if draft { 18pt } else { 22pt }, fill: navy, title)
     v(1pt)
     mode-line(modes-code)
     v(2pt)
@@ -60,17 +69,21 @@
     )
     v(3pt)
 
-    // diagram
-    if diagram != none { diagram }
-    v(2pt)
+    // diagram (smaller / hidden in draft — drafts are about the
+    // text, and the diagrams would crowd a single page)
+    if not draft and diagram != none { diagram; v(2pt) }
 
     // body
     set par(justify: true, leading: 0.45em, first-line-indent: 0pt, spacing: 0.55em)
     text(font: sans, size: 8.5pt, fill: text-dark, body)
   })
 
-  // -------- PAGE 2: THE LE LENS --------
-  pagebreak(weak: true)
+  // -------- PAGE 2 (or bottom half of draft page): THE LE LENS --------
+  if draft {
+    v(8pt)
+  } else {
+    pagebreak(weak: true)
+  }
   block(width: 100%, {
     eyebrow("The Learning Engineering Lens", color: teal)
     v(1pt)

@@ -14,6 +14,9 @@ typst compile --font-path fonts book.typ build/capability-matters.pdf
 echo "→ Compiling print interior (transparent/white backdrop, for Lulu cream-paper stock)..."
 typst compile --font-path fonts --input mode=print book.typ build/capability-matters-print.pdf
 
+echo "→ Compiling draft (US Letter, one case per page, for editorial review)..."
+typst compile --font-path fonts --input mode=draft book.typ build/capability-matters-draft.pdf
+
 # Page count is reported but the cover dimensions are pinned to Lulu's
 # spec for this project (362.84 × 254.51 mm / 22.22 mm spine — 265-page
 # cream-paper paperback). Override via --input cover-w-mm=…,
@@ -38,6 +41,7 @@ typst compile --font-path fonts --root . cover/cover-spine.typ build/cover-spine
 # Mirror the latest PDFs to the repo root so they are easy to find / preview.
 cp "$ROOT/build/capability-matters.pdf" "$ROOT/capability-matters.pdf"
 cp "$ROOT/build/capability-matters-print.pdf" "$ROOT/capability-matters-print.pdf"
+cp "$ROOT/build/capability-matters-draft.pdf" "$ROOT/capability-matters-draft.pdf"
 cp "$ROOT/build/cover.pdf" "$ROOT/cover.pdf"
 cp "$ROOT/build/cover-front.pdf" "$ROOT/cover-front.pdf"
 cp "$ROOT/build/cover-back.pdf" "$ROOT/cover-back.pdf"
@@ -47,6 +51,7 @@ echo
 echo "✓ Output:"
 echo "    build/capability-matters.pdf        screen interior — cream backdrop"
 echo "    build/capability-matters-print.pdf  print interior — transparent/white backdrop for cream paper stock"
+echo "    build/capability-matters-draft.pdf  DRAFT — US Letter, one case per page (for editorial review)"
 echo "    build/cover.pdf                     full Lulu wrap — 292.30 × 222.25 mm, ~16.55 mm spine (for $PAGES pages, Half Letter)"
 echo "    build/cover-front.pdf               front face only — Half Letter trim (139.7 × 215.9 mm)"
 echo "    build/cover-back.pdf                back face only — Half Letter trim (139.7 × 215.9 mm)"
