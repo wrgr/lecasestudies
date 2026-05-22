@@ -13,8 +13,8 @@
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
-#let spine = float(sys.inputs.at("spine-mm", default: "16.68")) * 1mm
-#let face-h = 210mm
+#let spine = float(sys.inputs.at("spine-mm", default: "16.55")) * 1mm
+#let face-h = 215.9mm  // Half Letter trim height (8.5 in)
 
 #set document(title: "Capability Matters — Spine")
 #set page(

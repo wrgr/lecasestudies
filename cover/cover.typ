@@ -5,25 +5,29 @@
 //   typst compile --font-path fonts --root . cover/cover.typ build/cover.pdf
 //
 // Defaults match Lulu's project page for this title:
-//   Book trim:       148.08 × 210.06 mm  (A5 / 5.83 × 8.27 in)
+//   Book trim:       139.7 × 215.9 mm   (Half Letter / 5.5 × 8.5 in)
 //   Bleed:           3.175 mm (0.125 in)
 //   Safety margin:   12.7 mm (0.5 in) from trim edge
-//   Spine (265 pp):  16.68 mm (0.657 in)
-//   Total cover:     319.2 × 216.41 mm  (12.567 × 8.52 in)
+//   Spine (263 pp):  ~16.55 mm — Lulu will report the exact value
+//                    on the project page; override below if different.
+//   Total cover:     ~292.3 × 222.25 mm (~11.51 × 8.75 in)
+//                    = 2 × trim_w + spine + 2 × bleed
+//                    × trim_h + 2 × bleed
 //   Barcode area on back cover (Lulu adds): 92 × 32 mm, 12.7 mm from
 //     bleed edge — leave the lower-center of the back cover clear.
 //
 // Override with --input cover-w-mm=… cover-h-mm=… spine-mm=… if any
-// of these change.
+// of these change (especially spine, which depends on final page
+// count and paper choice).
 // ============================================================
 
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
 // ---- Lulu cover spec (inputs override defaults) ----
-#let total-w = float(sys.inputs.at("cover-w-mm", default: "319.2"))   * 1mm
-#let total-h = float(sys.inputs.at("cover-h-mm", default: "216.41"))  * 1mm
-#let spine   = float(sys.inputs.at("spine-mm",   default: "16.68"))   * 1mm
+#let total-w = float(sys.inputs.at("cover-w-mm", default: "292.30"))  * 1mm
+#let total-h = float(sys.inputs.at("cover-h-mm", default: "222.25"))  * 1mm
+#let spine   = float(sys.inputs.at("spine-mm",   default: "16.55"))   * 1mm
 
 // Derived layout points (printer's view, single sheet wrap):
 //   [ back cover (with bleed) | spine | front cover (with bleed) ]

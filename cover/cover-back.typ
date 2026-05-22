@@ -11,8 +11,8 @@
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
-#let face-w = 148mm
-#let face-h = 210mm
+#let face-w = 139.7mm  // Half Letter trim width (5.5 in)
+#let face-h = 215.9mm  // Half Letter trim height (8.5 in)
 #let margin = 14mm
 
 #set document(title: "Capability Matters — Back Cover")
