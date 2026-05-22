@@ -7,19 +7,13 @@
 #import "lib/theme.typ": *
 #import "lib/components.typ": *
 
-// ---- Build mode ----
-//   mode=screen (default) — Half Letter trim, cream backdrop, A5
-//     spread layout (cases as 2-page verso/recto spreads).
-//   mode=print            — Half Letter trim, transparent/white
-//     backdrop for Lulu cream-paper stock; layout otherwise
-//     identical to screen.
-//   mode=draft            — US Letter (8.5 × 11) one-up layout, each
-//     case on a single page. Intended for editorial review and
-//     hand-marking. Uses white backdrop with a small DRAFT marker.
-#let mode = sys.inputs.at("mode", default: "screen")
-#let print-mode = mode == "print"
-#let draft-mode = mode == "draft"
-#let page-fill = if print-mode or draft-mode { white } else { cream }
+// Build mode flags (resolved in lib/theme.typ):
+//   mode=screen        — Half Letter, color, cream backdrop. (default)
+//   mode=print         — Half Letter, grayscale, white backdrop. Lulu prod.
+//   mode=print-letter  — US Letter, grayscale, white backdrop. Lulu prod.
+//   mode=draft         — US Letter, 11pt, color, editorial.
+//   mode=draft-half    — Half Letter, 11pt, color, editorial.
+#let page-fill = if cream-backdrop { cream } else { white }
 
 // ---- Document metadata ----
 #set document(
@@ -28,34 +22,24 @@
 )
 
 // ---- Global page setup ----
-//   Half Letter + 3mm bleed = 145.7 x 221.9 mm for screen/print.
-//   US Letter for draft mode (215.9 × 279.4 mm).
 #set page(
-  width:  if draft-mode { 215.9mm } else { page-w },
-  height: if draft-mode { 279.4mm } else { page-h },
-  margin: if draft-mode {
-    // Wider inside margin for 3-hole punch / binder. Holes sit ~10
-    // mm from the bound edge with ~16 mm clearance to text. Uses
-    // inside/outside so both single- and double-sided printing
-    // place the binder-edge margin correctly.
-    (inside: 28mm, outside: 18mm, top: 20mm, bottom: 20mm)
-  } else {
-    (
-      inside:  m-inner + bleed,
-      outside: m-outer + bleed,
-      top:     m-top + bleed,
-      bottom:  m-bottom + bleed,
-    )
-  },
+  width:  page-w,
+  height: page-h,
+  margin: (
+    inside:  m-inner + bleed,
+    outside: m-outer + bleed,
+    top:     m-top + bleed,
+    bottom:  m-bottom + bleed,
+  ),
   fill: page-fill,
   header: context {
     let p = counter(page).get().first()
-    if draft-mode and p > 1 [
+    if is-draft and p > 1 [
       #set text(font: sans, size: 7pt, fill: text-muted, tracking: 1pt)
       #upper("Capability Matters — DRAFT") #h(1fr) #str(p)
       #v(-4pt)
       #line(length: 100%, stroke: 0.3pt + rule-soft)
-    ] else if not draft-mode and p > 6 [
+    ] else if not is-draft and p > 6 [
       #set text(font: sans, size: 7pt, fill: text-muted, tracking: 1pt)
       #if calc.even(p) [
         #upper("Capability Matters") #h(1fr) #str(p)
@@ -70,7 +54,7 @@
 )
 
 // ---- Global defaults ----
-#set text(font: sans, size: 9.5pt, fill: text-dark, lang: "en")
+#set text(font: sans, size: body-size, fill: text-dark, lang: "en")
 #set par(leading: 0.62em, justify: false)
 
 // ============================================================

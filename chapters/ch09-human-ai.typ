@@ -208,7 +208,12 @@
     errors across populations as a separate question from algorithmic
     accuracy. The capability gap is at the governance layer that
     decides which fairness criterion to optimize. The decision is
-    not technical. It is institutional.
+    not technical. It is institutional. The Chouldechova and
+    Kleinberg–Mullainathan–Raghavan results showed the choice is not
+    between fair and unfair models but among incompatible definitions
+    of fairness. The technical literature can characterize the
+    trade-offs; the institutional layer has to choose, in public,
+    which trade-off it is willing to defend.
   ],
   lens-approach: [
     LENS uses COMPAS in LEN 7 as a foundational algorithmic-
@@ -224,6 +229,7 @@
   reflection-list: (
     [Identify a predictive instrument in your domain. Which fairness criterion does it optimize, and what does that imply for the population whose errors are distributed against them?],
     [Design the institutional governance deliverable that would have to be produced before COMPAS-style algorithms can be deployed in criminal justice.],
+    [The ProPublica analysis surfaced the COMPAS disparity in 2016 only because reporters obtained the data. What is the equivalent public-interest investigation that should exist for a comparable model in your domain — and what data would have to be released for it to be possible?],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 9"),
 )
@@ -290,6 +296,9 @@
     governance, and in LEN 9 for the technical bias-detection
     pipeline. The case pairs with Vioxx (Case 87) as a post-market
     surveillance failure pattern at a new technological boundary.
+    The Obermeyer (2019) finding generalizes the diagnosis: bias
+    enters through the labels and through the population, both of
+    which the 510(k) process currently treats as outside its scope.
   ],
   literature-items: (
     [Obermeyer et al. (2019), _Science_],
@@ -299,6 +308,7 @@
   reflection-list: (
     [Identify a model in your domain whose deployment population diverges from its training population. What is the institutional architecture to surface the divergence?],
     [Design the demographic post-market surveillance deliverable that should accompany every FDA clearance of medical AI.],
+    [FDA 510(k) clearance does not currently require demographic stratification of validation metrics, nor does it require post-market monitoring of how a cleared tool actually performs on the population using it. What is the minimum reporting deliverable a regulator should require so the gap is visible while the tool is in use?],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 9"),
 )

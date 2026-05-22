@@ -1,5 +1,5 @@
 // ============================================================
-// CAPABILITY MATTERS — Front cover only (6×9 trim, no bleed)
+// CAPABILITY MATTERS — Front cover only (A5, no bleed)
 //
 // Decomposed from the Lulu wrap so the front can be printed
 // standalone for a binder, slipcase, or web preview.
@@ -11,9 +11,9 @@
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
-#let face-w = 152.4mm  // US Trade trim width (6 in)
-#let face-h = 228.6mm  // US Trade trim height (9 in)
-#let margin = 16mm
+#let face-w = 139.7mm  // Half Letter trim width (5.5 in)
+#let face-h = 215.9mm  // Half Letter trim height (8.5 in)
+#let margin = 14mm
 
 #set document(title: "Capability Matters — Front Cover")
 #set page(
@@ -48,10 +48,10 @@
   ]
 ]
 
-#at(margin, margin + 56mm)[
-  #text(font: serif, size: 68pt, fill: cream, "Capability")
-  #v(-7pt)
-  #text(font: serif, size: 68pt, style: "italic", fill: teal-light, "Matters")
+#at(margin, margin + 46mm)[
+  #text(font: serif, size: 60pt, fill: cream, "Capability")
+  #v(-6pt)
+  #text(font: serif, size: 60pt, style: "italic", fill: teal-light, "Matters")
 ]
 
 #at(margin, face-h - margin - 48mm)[

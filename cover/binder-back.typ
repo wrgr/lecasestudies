@@ -39,6 +39,14 @@
   #line(length: 32mm, stroke: 1pt + gold)
 ]
 
+// draft marker (top right, below the rule so it doesn't overlap the
+// long top tagline) — matches the front face
+#at(face-w - margin - 50mm, margin + 14mm)[
+  #align(right)[
+    #text(font: sans, size: 9pt, tracking: 2.6pt, fill: gold-light, upper("Editorial Draft"))
+  ]
+]
+
 // main body — set in a generous text block
 #at(margin, margin + 28mm)[
   #block(width: face-w - 2 * margin)[

@@ -1,43 +1,76 @@
 # Capability Matters — Casebook
-# Build targets for Typst interior + Lulu cover wrap.
+# Build targets for Typst interiors + covers.
 
 ROOT      := $(shell pwd)
 BUILD     := $(ROOT)/build
-INTERIOR  := $(BUILD)/capability-matters.pdf
-COVER     := $(BUILD)/cover.pdf
 TYPST     := typst compile --font-path fonts
-PAGES     := $(shell pdfinfo $(INTERIOR) 2>/dev/null | awk '/^Pages:/ {print $$2}' || echo 120)
+GS_GRAY   := gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite \
+               -sProcessColorModel=DeviceGray \
+               -sColorConversionStrategy=Gray -dOverrideICC \
+               -dCompatibilityLevel=1.7
 
-.PHONY: all interior cover preview clean fonts binder draft
+.PHONY: all production draft covers preview clean fonts \
+        print-half print-letter draft-letter draft-half \
+        cover-print-half cover-print-letter \
+        cover-draft-letter cover-draft-half
 
-all: interior cover
+# Default: full build via scripts/build.sh (handles spine widths,
+# mirroring to root, etc.)
+all:
+	./scripts/build.sh
+
+production: print-half print-letter
+
+draft: draft-letter draft-half
+
+covers: cover-print-half cover-print-letter cover-draft-letter cover-draft-half
 
 $(BUILD):
 	mkdir -p $(BUILD)
 
-interior: $(BUILD)
-	$(TYPST) book.typ $(INTERIOR)
+# Production PDFs are emitted with a grayscale-tuned palette, then
+# flattened through ghostscript so any remaining color literals in
+# diagrams come out as true grayscale.
+print-half: $(BUILD)
+	$(TYPST) --input mode=print book.typ $(BUILD)/_print-half-color.pdf
+	$(GS_GRAY) -o $(BUILD)/capability-matters-print-half.pdf $(BUILD)/_print-half-color.pdf
+	rm $(BUILD)/_print-half-color.pdf
 
-cover: interior
-	$(TYPST) --root . --input pages=$(PAGES) cover/cover.typ $(COVER)
+print-letter: $(BUILD)
+	$(TYPST) --input mode=print-letter book.typ $(BUILD)/_print-letter-color.pdf
+	$(GS_GRAY) -o $(BUILD)/capability-matters-print-letter.pdf $(BUILD)/_print-letter-color.pdf
+	rm $(BUILD)/_print-letter-color.pdf
 
-# Editorial draft on US Letter — 11pt body, continuous case flow,
-# wide inside margin for a 3-hole-punched binder.
-draft: $(BUILD)
-	$(TYPST) --input mode=draft book.typ $(BUILD)/capability-matters-draft.pdf
-	cp $(BUILD)/capability-matters-draft.pdf $(ROOT)/capability-matters-draft.pdf
+draft-letter: $(BUILD)
+	$(TYPST) --input mode=draft book.typ $(BUILD)/capability-matters-draft-letter.pdf
 
-# Three-piece cover insert for a standard 1" view binder
-# (Avery-style: 8.5x11 front + 1x11 spine + 8.5x11 back).
-binder: $(BUILD)
-	$(TYPST) --root . cover/binder-front.typ $(BUILD)/binder-front.pdf
-	$(TYPST) --root . cover/binder-spine.typ $(BUILD)/binder-spine.pdf
-	$(TYPST) --root . cover/binder-back.typ  $(BUILD)/binder-back.pdf
+draft-half: $(BUILD)
+	$(TYPST) --input mode=draft-half book.typ $(BUILD)/capability-matters-draft-half.pdf
 
-preview: interior
-	rm -rf $(BUILD)/preview
-	mkdir -p $(BUILD)/preview
-	$(TYPST) book.typ "$(BUILD)/preview/page-{n}.png" --ppi 150
+preview: $(BUILD)
+	$(TYPST) book.typ $(BUILD)/capability-matters.pdf
+
+# Lulu wraps. Spine widths are recomputed from the interior page count
+# using ~0.0629 mm/page on cream paper.
+cover-print-half: print-half
+	$(eval P := $(shell pdfinfo $(BUILD)/capability-matters-print-half.pdf 2>/dev/null | awk '/^Pages:/ {print $$2}'))
+	$(eval S := $(shell awk -v p=$(P) 'BEGIN{printf "%.2f", p*0.0629}'))
+	$(eval W := $(shell awk -v s=$(S) 'BEGIN{printf "%.2f", 2*139.7 + s + 2*3.175}'))
+	$(eval H := $(shell awk 'BEGIN{printf "%.2f", 215.9 + 2*3.175}'))
+	$(TYPST) --root . --input cover-w-mm=$(W) --input cover-h-mm=$(H) --input spine-mm=$(S) cover/cover.typ $(BUILD)/cover-print-half.pdf
+
+cover-print-letter: print-letter
+	$(eval P := $(shell pdfinfo $(BUILD)/capability-matters-print-letter.pdf 2>/dev/null | awk '/^Pages:/ {print $$2}'))
+	$(eval S := $(shell awk -v p=$(P) 'BEGIN{printf "%.2f", p*0.0629}'))
+	$(eval W := $(shell awk -v s=$(S) 'BEGIN{printf "%.2f", 2*215.9 + s + 2*3.175}'))
+	$(eval H := $(shell awk 'BEGIN{printf "%.2f", 279.4 + 2*3.175}'))
+	$(TYPST) --root . --input cover-w-mm=$(W) --input cover-h-mm=$(H) --input spine-mm=$(S) cover/cover-letter.typ $(BUILD)/cover-print-letter.pdf
+
+cover-draft-letter: $(BUILD)
+	$(TYPST) --root . cover/binder-front.typ $(BUILD)/cover-draft-letter.pdf
+
+cover-draft-half: $(BUILD)
+	$(TYPST) --root . cover/draft-cover-half.typ $(BUILD)/cover-draft-half.pdf
 
 fonts:
 	./scripts/fetch-fonts.sh

@@ -59,21 +59,21 @@
   eyebrow(unit, color: teal)
 }
 
-// `_draft` predicate — components shrink slightly to keep each case
-// to a single page in draft mode.
-#let _draft = sys.inputs.at("mode", default: "screen") == "draft"
+// `_draft` predicate kept for back-compat; new code should use the
+// typography sizes exported from theme.typ.
+#let _draft = is-draft
 
 // ---- Pull quote box ----
 #let pullquote(body, source) = block(
   width: 100%,
   inset: (left: 10pt, right: 6pt, top: 5pt, bottom: 5pt),
   stroke: (left: 2pt + gold),
-  fill: rgb("#FBF7EE"),
+  fill: if grayscale { rgb("#F0F0F0") } else { rgb("#FBF7EE") },
   {
     set par(leading: 0.48em)
-    text(font: serif, size: if _draft { 13pt } else { 11pt }, style: "italic", fill: navy, body)
+    text(font: serif, size: pullquote-size, style: "italic", fill: navy, body)
     v(2pt)
-    text(font: sans, size: if _draft { 8pt } else { 7pt }, fill: text-muted, tracking: 0.6pt, upper(source))
+    text(font: sans, size: pullquote-src, fill: text-muted, tracking: 0.6pt, upper(source))
   }
 )
 
@@ -82,11 +82,11 @@
   {
     eyebrow("Sources")
     v(3pt)
-    set par(leading: if _draft { 0.5em } else { 0.45em }, first-line-indent: 0pt)
+    set par(leading: if is-draft { 0.5em } else { 0.45em }, first-line-indent: 0pt)
     for src in items.pos() {
       block(
-        spacing: if _draft { 3pt } else { 2.5pt },
-        text(font: sans, size: if _draft { 9pt } else { 7.5pt }, fill: text-dark)[→ #src]
+        spacing: if is-draft { 3pt } else { 2.5pt },
+        text(font: sans, size: sources-size, fill: text-dark)[→ #src]
       )
     }
   }
@@ -110,12 +110,12 @@
 // ---- LE Insight / LENS Approach block ----
 #let lens-block(title, body) = block(
   width: 100%,
-  spacing: if _draft { 8pt } else { 5pt },
+  spacing: if is-draft { 8pt } else { 5pt },
   {
     eyebrow(title, color: gold)
     v(2pt)
-    set par(leading: if _draft { 0.55em } else { 0.5em }, justify: true)
-    text(font: sans, size: if _draft { 10.5pt } else { 9pt }, fill: text-dark, body)
+    set par(leading: if is-draft { 0.55em } else { 0.5em }, justify: true)
+    text(font: sans, size: lens-size, fill: text-dark, body)
   }
 )
 
@@ -125,15 +125,15 @@
   {
     eyebrow("Reflection Questions", color: teal)
     v(3pt)
-    set par(leading: if _draft { 0.5em } else { 0.45em }, justify: false)
+    set par(leading: if is-draft { 0.5em } else { 0.45em }, justify: false)
     for (i, q) in qs.pos().enumerate() {
       grid(
         columns: (12pt, 1fr),
         column-gutter: 4pt,
-        text(font: serif, size: if _draft { 12pt } else { 10pt }, fill: teal, str(i + 1) + "."),
-        text(font: sans, size: if _draft { 10.5pt } else { 8.5pt }, fill: text-dark, q),
+        text(font: serif, size: reflection-num, fill: teal, str(i + 1) + "."),
+        text(font: sans, size: reflection-size, fill: text-dark, q),
       )
-      v(if _draft { 3pt } else { 2pt })
+      v(if is-draft { 3pt } else { 2pt })
     }
   }
 )
@@ -164,11 +164,11 @@
 #let literature(..items) = block({
   eyebrow("Further Reading", color: gold)
   v(3pt)
-  set par(leading: if _draft { 0.5em } else { 0.45em }, first-line-indent: 0pt)
+  set par(leading: if is-draft { 0.5em } else { 0.45em }, first-line-indent: 0pt)
   for it in items.pos() {
     block(
-      spacing: if _draft { 3pt } else { 2.5pt },
-      text(font: sans, size: if _draft { 9pt } else { 7.5pt }, fill: text-dark)[• #it]
+      spacing: if is-draft { 3pt } else { 2.5pt },
+      text(font: sans, size: sources-size, fill: text-dark)[• #it]
     )
   }
 })

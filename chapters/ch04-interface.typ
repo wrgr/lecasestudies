@@ -142,7 +142,10 @@
     Design-Out and Interface failure under governance opacity, in LEN 2
     as a human-AI teaming problem (alert fatigue, default surfacing), and
     in LEN 9 as a computational systems problem (the alerting
-    architecture itself is a learnable model).
+    architecture itself is a learnable model). The Han 2005 pediatric
+    ICU finding is the durable warning; the KLAS 2023 surveys across
+    two hundred hospitals are the contemporary, longitudinal evidence
+    that usability is now itself a patient-safety variable.
   ],
   literature-items: (
     [Sittig & Singh (2013), Safety-related EHR risks],
@@ -152,6 +155,7 @@
   reflection-list: (
     [What is the equivalent system in your domain that was designed for one specification and deployed against another? How would you measure the harm?],
     [Design the regulatory architecture that would surface EHR safety harms at scale. Be specific about signal, threshold, and authority.],
+    [The Han 2005 mortality result was disputed; the 2023 KLAS surveys are consistent across two hundred hospitals. What ongoing measurement architecture would have to exist for the equivalent emerging clinical-AI deployment in your domain to be evaluated honestly while in use?],
   ),
   courses: ("LEN 7", "LEN 2", "LEN 9"),
 )

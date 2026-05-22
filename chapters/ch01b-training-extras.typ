@@ -204,7 +204,12 @@
     to believe operator feedback. The capability that was missing was
     not at the front. It was at the bureau that owned the weapon. The
     cost of the refusal was paid by the submariners forced to use it
-    until the bureau yielded.
+    until the bureau yielded. The eventual fixes — re-setting depth
+    calibration, replacing the magnetic exploder, redesigning the
+    contact pin — were technical and small. The reform was
+    institutional and slow. The capability that had to be built was
+    the channel by which the bureau could be made to hear what the
+    boats already knew.
   ],
   lens-approach: [
     LENS uses the Mark 14 in LEN 7 as a governance failure case and in
@@ -221,6 +226,7 @@
   reflection-list: (
     [Identify a system in your domain whose owners are institutionally insulated from the operators using it. What feedback would they refuse to hear, and what would it cost?],
     [Design the operator-feedback channel that the U.S. Navy Bureau of Ordnance should have had in 1941. Who signs, who receives, what triggers action?],
+    [The USS Tinosa fired fifteen torpedoes for one detonation before the bureau accepted the diagnosis. What is the operator-evidence threshold in your domain that would force the equivalent institutional acknowledgment — and how would you make sure it is reached before the cost is paid?],
   ),
   courses: ("LEN 10", "LEN 7", "LEN 8"),
 )
@@ -284,7 +290,11 @@
     organizational capability requirements and in LEN 8 for the
     institutional reform that followed. The case pairs with INPO
     (Case 16) as the defense analog of failure-driven institution
-    building.
+    building. The seven-year arc from Eagle Claw (1980) to
+    Goldwater-Nichols (1986) and USSOCOM (1987) is itself a
+    measurement: the institutional response time when the failure
+    mode is cross-organizational capability and the reform requires
+    statutory action.
   ],
   literature-items: (
     [Locher (2002), _Victory on the Potomac_],
@@ -294,6 +304,7 @@
   reflection-list: (
     [Where in your domain does a cross-organizational capability exist on paper but not in practice? What would force its institutionalization?],
     [Eagle Claw produced USSOCOM and Goldwater-Nichols six years later. Sketch the institutional design that an equivalent failure in your domain would force into existence.],
+    [The Holloway Commission named the mission's ad-hoc-ery as the diagnosis. What standing capability — institution, command, training pipeline — does your domain currently lack that an Eagle-Claw-class failure would force into existence?],
   ),
   courses: ("LEN 5", "LEN 8"),
 )

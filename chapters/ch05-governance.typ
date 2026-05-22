@@ -338,7 +338,11 @@
     educational-technology adoption decision should produce: a
     public evidence summary at parent reading level, a data-handling
     agreement at the same resolution, and a documented exit pathway
-    that does not depend on the vendor's goodwill.
+    that does not depend on the vendor's goodwill. The studio prompt
+    extends to a re-adoption pathway — the governance work a withdrawn
+    district would have to complete before it could responsibly
+    re-adopt the platform without re-triggering the same parental
+    objections.
   ],
   literature-items: (
     [Selwyn (2016), _Is Technology Good for Education?_],
@@ -348,6 +352,7 @@
   reflection-list: (
     [What is the equivalent of the "free tool, free of governance" pattern in your domain — the offer that bypasses the accountability architecture because it does not yet exist?],
     [Design the parent-reading-level governance artifact that a district should require before adopting an educational-technology platform.],
+    [Summit's withdrawals in Brooklyn, Cheshire, Kennebunk, and McPherson were led by parents, not regulators. What is the equivalent local constituency in your domain that institutional accountability has not yet accommodated, and how would they be heard before deployment rather than after?],
   ),
   courses: ("LEN 7", "LEN 10", "LEN 8",),
 )

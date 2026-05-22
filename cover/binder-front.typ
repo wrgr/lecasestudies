@@ -39,6 +39,13 @@
   #line(length: 32mm, stroke: 1pt + gold)
 ]
 
+// draft marker — distinguishes from the production cover
+#at(face-w - margin - 50mm, margin)[
+  #align(right)[
+    #text(font: sans, size: 9pt, tracking: 2.6pt, fill: gold-light, upper("Editorial Draft"))
+  ]
+]
+
 // programmatic subtitle
 #at(margin, margin + 26mm)[
   #block(width: face-w - 2 * margin)[

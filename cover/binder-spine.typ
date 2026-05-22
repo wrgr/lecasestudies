@@ -31,8 +31,8 @@
           text(font: serif, size: 10pt, fill: cream, "Capability ")
           text(font: serif, size: 10pt, style: "italic", fill: teal-light, "Matters")
           h(8mm)
-          text(font: sans, size: 6pt, tracking: 2pt, fill: gold,
-            upper("A casebook"))
+          text(font: sans, size: 6pt, tracking: 2pt, fill: gold-light,
+            upper("Editorial Draft"))
         }
       )
     )

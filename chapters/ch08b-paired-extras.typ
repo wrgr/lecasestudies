@@ -59,7 +59,10 @@
     effects when paired with the structural change of *requiring a
     pause.* The checklist alone is paper. The pause alone is anxiety.
     Together they constitute the smallest effective capability
-    intervention in the dataset.
+    intervention in the dataset. The Ontario follow-up underscores the
+    secondary requirement: the artifact carries the effect only when the
+    institution actually enforces the pause. Where mandate replaced
+    authorization, the measured effect attenuated.
   ],
   lens-approach: [
     LENS uses the WHO checklist in LEN 10 (capstone) as the canonical
@@ -76,6 +79,7 @@
   reflection-list: (
     [What is the smallest possible capability artifact in your domain that, paired with a required pause, would shift outcomes?],
     [The WHO checklist was studied across eight countries. Design the multi-site evaluation that would establish whether your candidate intervention generalizes.],
+    [The Ontario mandated rollout produced no measurable mortality reduction. What governance signal would have surfaced the fidelity gap between authorized use and compliance check-off before the trial was declared a failure?],
   ),
   courses: ("LEN 4", "LEN 10"),
 )
@@ -392,7 +396,10 @@
     has produced sixty-plus years of zero reactor accidents. The
     contrast with the Surface Navy is the cleanest available test of
     what happens when capability is engineered versus when it is
-    deferred.
+    deferred. The cost of the program — the qualification ladder, the
+    oral examinations graded against zero-defect standards, the
+    continuous re-qualification — is the price the institution pays
+    for the safety record. The choice is visible on the budget line.
   ],
   lens-approach: [
     LENS treats the Rickover model in LEN 8 as the foundational
@@ -409,6 +416,7 @@
   reflection-list: (
     [Identify an institution that operates two divisions under different capability philosophies. What does the comparison reveal that neither division could see alone?],
     [Rickover's standard was zero-defect oral examination. What is the equivalent in your domain — and would you survive it?],
+    [The Nuclear Navy's safety record is paid for by a durable, visible training budget. What is the equivalent line-item investment in your domain that a comparable safety claim would require — and is it being made?],
   ),
   courses: ("LEN 5", "LEN 8", "LEN 3",),
 )
