@@ -118,17 +118,19 @@
       This casebook was assembled using AI tools as part of an
       iterative learning-engineering process — the same Practice
       Flywheel (Identify → Activate → Prototype → Analyze → Transition)
-      that the volume's case studies argue for. AI tools accelerated
-      drafting, cross-referencing, layout, and citation lookup. Every
-      case in the book was then reviewed by the editors and
-      hand-checked by students for accuracy: confirming that the
-      sources cited exist and are findable, that the quoted
-      attributions are fairly represented, and that the case studies
-      are accurate accounts of the incidents and the investigations
-      they draw on. Items where the source could not be confirmed are
-      marked "Paraphrasing…" so the attribution is honest about what
-      is the author's reconstruction and what is verbatim from the
-      record.
+      that the volume's case studies argue for. The methodology
+      treats AI as the dual entity the curriculum names it: a
+      creative partner that accelerated drafting, cross-referencing,
+      layout, and citation lookup, and an epistemic risk that had
+      to be hand-checked against the record. Every case in the book
+      was reviewed by the editors and hand-checked by students for
+      accuracy: confirming that the sources cited exist and are
+      findable, that the quoted attributions are fairly represented,
+      and that the case studies are accurate accounts of the
+      incidents and the investigations they draw on. Items where the
+      source could not be confirmed are marked "Paraphrasing…" so
+      the attribution is honest about what is the author's
+      reconstruction and what is verbatim from the record.
     ]
 
     v(6pt)

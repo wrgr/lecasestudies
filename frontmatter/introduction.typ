@@ -292,10 +292,12 @@
   through-line, equity as a design commitment rather than an audit,
   decision-grade evidence as a deliverable rather than a report,
   communication and system-of-systems integration as engineerable
-  properties of the system, and the disciplined use of learning-
+  properties of the system, the disciplined use of learning-
   technology aids (from XR to adaptive platforms) as instruments
-  whose evaluation is part of the work — are drawn directly from the
-  patterns the cases reveal.
+  whose evaluation is part of the work, and *AI as both a creative
+  partner and an epistemic risk* — leveraging AI's generative reach
+  while guarding against offloading the thinking — are drawn directly
+  from the patterns the cases reveal.
 ]
 
 #v(6pt)
@@ -602,12 +604,14 @@
     text(font: sans, size: 8pt, tracking: 1.4pt, fill: teal, upper("5 · Human-AI Teaming and Adaptive Systems"))
     v(2pt)
     text(font: sans, size: 9.5pt, fill: text-dark)[
-      Design human-AI teaming configurations that optimize capability
-      development while preserving human agency and judgment; evaluate
-      the measurable impact of AI-mediated learning systems on human
-      performance, including automation bias and cognitive offloading;
-      communicate evidence-based recommendations for when AI
-      augmentation improves versus degrades capability outcomes.
+      Design human-AI teaming configurations that *leverage AI as a
+      creative partner* in capability development while preserving
+      human agency and judgment; evaluate the measurable impact of
+      AI-mediated learning systems on human performance — both the
+      gains AI enables and the risks it introduces, including
+      automation bias and cognitive offloading; communicate
+      evidence-based recommendations for when AI augmentation
+      improves versus degrades capability outcomes.
     ]
   }
 )
