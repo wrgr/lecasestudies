@@ -74,9 +74,9 @@
 #at(front-x + margin, total-h - 70mm)[
   #text(font: sans, size: 7.5pt, tracking: 1.6pt, fill: gold, upper("Edited by"))
   #v(3pt)
-  #text(font: serif, size: 14pt, fill: cream, "William Gray-Roncal")
+  #text(font: serif, size: 14pt, fill: cream, "William Gray-Roncal, PhD")
   #linebreak()
-  #text(font: serif, size: 14pt, fill: cream, "James Diamond")
+  #text(font: serif, size: 14pt, fill: cream, "James Diamond, PhD")
 ]
 
 #at(front-x + margin, total-h - 36mm)[
