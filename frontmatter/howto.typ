@@ -77,9 +77,9 @@
       column-gutter: 8pt,
       course-tags("F1"),
       text(font: sans, size: 8pt, fill: text-dark)[
-        *Learning Sciences Studio.* Major theories of learning
-        (behavioral, cognitive, situative) and motivation, applied to
-        technology-supported design.
+        *Learning Sciences Studio.* The theories of how learning,
+        motivation, and skill develop, applied to the design of
+        technology-mediated learning.
       ],
     ))
     #block(spacing: 5pt, grid(
@@ -87,9 +87,9 @@
       column-gutter: 8pt,
       course-tags("F2"),
       text(font: sans, size: 8pt, fill: text-dark)[
-        *Critical Perspectives on Educational Technology.* Critical-
-        theory frameworks applied to power, privilege, and societal
-        structures in learning technology.
+        *Critical Perspectives on Educational Technology.* How power,
+        equity, and societal structures shape and are shaped by
+        learning technology.
       ],
     ))
     #v(6pt)

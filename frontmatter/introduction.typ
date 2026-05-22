@@ -386,20 +386,21 @@
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  LENS is organized as that loop made teachable. Each required course
-  enters the cycle at a different point and trains the corresponding
-  competence. LEN 1 frames the problem and identifies the system whose
-  capability is at stake. LEN 5 elicits requirements from operational
-  analysis. LEN 4 builds the evidence architecture that lets the
-  institution know whether its interventions worked. LEN 2 examines
-  the human and AI roles inside the designed system. LEN 10 — Studio —
-  asks students to do all of it on a single integrated project,
-  carrying the loop through one full iteration on a real operational
-  problem. Electives extend the loop: LEN 7 (Bias, Risk, and
-  Governance), LEN 8 (Knowledge Transfer and Organizational Learning),
-  LEN 9 (Computational and AI Methods). The program graduates a
-  practitioner who has been around the loop enough times to know
-  where it breaks.
+  LENS is organized as that loop made teachable. Required coursework
+  carries students through the cycle: framing the system whose
+  capability is at stake, eliciting requirements from operational
+  analysis, building the evidence architecture that lets an institution
+  know whether its interventions worked, examining the human and AI
+  roles inside the designed system, and running the loop end-to-end
+  on a real operational problem in an integrated capstone studio.
+  Electives extend the loop into governance and risk, knowledge
+  transfer and organizational learning, and computational methods.
+  The program graduates a practitioner who has been around the loop
+  enough times to know where it breaks. Specific course titles and
+  sequencing evolve with the program — current titles and detailed
+  descriptions live in the LDT/LENS catalogue; this casebook tags
+  each case to the courses that most directly use it as a worked
+  example so the mapping remains legible as the curriculum iterates.
 ]
 
 #v(6pt)
@@ -1212,12 +1213,12 @@
 #text(font: sans, size: 9.5pt, fill: text-dark)[
   The one hundred cases in this volume are mapped to the LENS courses
   they most directly inform. The distribution is itself diagnostic.
-  The strongly covered courses are the ones the existing case
+  The strongly covered topics are the ones the existing case
   literature most readily supports: bias and governance (LEN 7, ~49
-  cases) and knowledge transfer and organizational learning (LEN 8,
-  ~45 cases); capability analysis (LEN 5, ~36 cases) and evidence
-  and measurement (LEN 4, ~31 cases); human-AI teaming (LEN 2, ~23
-  cases) and foundations (LEN 1, ~21 cases). These are not arbitrary
+  cases) and knowledge transfer (LEN 8, ~45 cases); capability
+  analysis (LEN 5, ~36 cases) and evidence and measurement (LEN 4,
+  ~31 cases); human-AI teaming (LEN 2, ~23 cases) and principles of
+  learning engineering (LEN 1, ~21 cases). These are not arbitrary
   numbers — they describe a dataset saturated with cases of *what
   goes wrong when ethics, governance, evidence, and institutional
   learning are not engineered.*
@@ -1225,21 +1226,19 @@
 
 #v(6pt)
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  The thin coverage is also informative. LEN 9 (Computational and AI
-  Methods) is at ten cases — the dataset has the failure modes of
-  algorithmic systems well-represented but the computational tools
-  for capability instrumentation under-represented. The capstone
-  course (LEN 10) maps to nineteen cases — fewer than the number of
-  Studio-style projects we expect each LENS cohort to undertake.
-  The newly-renumbered LEN 3 (Learning Engineering Systems, ~18
-  cases) and LEN 6 (Applied Problem Solving, ~13 cases) required
+  The thin coverage is also informative. The computational-methods
+  topic (LEN 9, ~10 cases) has the failure modes of algorithmic
+  systems well-represented but the computational tools for capability
+  instrumentation under-represented. The capstone (LEN 10, ~19 cases)
+  maps to fewer cases than the number of studio projects each LENS
+  cohort undertakes. The systems-integration topic (LEN 3, ~18 cases)
+  and applied problem-solving topic (LEN 6, ~13 cases) required
   focused retagging to reach defensible coverage; the work surfaced
-  that the operational systems-engineering content the program
-  teaches in LEN 3 is *under-represented in the published case
-  literature* relative to its centrality in the curriculum, and that
-  LEN 6's stakeholder-analysis and problem-framing work has not
-  historically been packaged as case material by other disciplines. These are
-  pedagogical gaps the LENS studio sequence (LEN 6 → LEN 10) is
+  that operational systems-engineering content is *under-represented
+  in the published case literature* relative to its curricular
+  centrality, and that stakeholder-analysis and problem-framing have
+  not historically been packaged as case material by other
+  disciplines. These are pedagogical gaps the LENS studio sequence is
   organized to close — not by adding more failure cases, but by
   having students produce the missing artifacts in real operational
   settings and entering them into the dataset for the next cohort.
