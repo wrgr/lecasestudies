@@ -5,8 +5,9 @@
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
-// Respect the global print-mode flag (book.typ sets `page-fill`).
-#let page-fill = if sys.inputs.at("mode", default: "screen") == "print" { white } else { cream }
+// Respect the global mode flag — only the screen build gets the cream
+// backdrop; production and draft pages are white.
+#let page-fill = if cream-backdrop { cream } else { white }
 
 // ---- Half-title (page i) ----
 #page(

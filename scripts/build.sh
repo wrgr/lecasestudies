@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
-# Build the interior PDF and the Lulu cover wrap.
-# Requires: typst (>= 0.13), poppler (pdfinfo) for page count.
+# Build the four interior PDFs (production + editorial draft, each at
+# Half Letter and US Letter trim) and the Lulu cover wrap.
+#
+# Production PDFs (mode=print, mode=print-letter) are emitted with a
+# grayscale-tuned palette, then run through ghostscript to flatten any
+# remaining color literals (notably inside diagrams) so the final
+# Lulu-uploaded file is true grayscale.
+#
+# Requires: typst (>= 0.13), ghostscript, poppler (pdfinfo).
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -8,69 +15,85 @@ cd "$ROOT"
 
 mkdir -p build
 
-echo "→ Compiling screen interior (cream backdrop, for on-screen viewing)..."
-typst compile --font-path fonts book.typ build/capability-matters.pdf
+TYPST="typst compile --font-path fonts"
 
-echo "→ Compiling print interior (transparent/white backdrop, for Lulu cream-paper stock)..."
-typst compile --font-path fonts --input mode=print book.typ build/capability-matters-print.pdf
+# Flatten any remaining color literals to grayscale via ghostscript.
+# The named palette is already tuned for grayscale luminance; this
+# step exists to catch hardcoded rgb() values inside diagrams.
+gray_flatten() {
+  local src="$1"
+  local dst="$2"
+  gs -q -dNOPAUSE -dBATCH \
+     -sDEVICE=pdfwrite \
+     -sProcessColorModel=DeviceGray \
+     -sColorConversionStrategy=Gray \
+     -dOverrideICC \
+     -dCompatibilityLevel=1.7 \
+     -o "$dst" "$src"
+}
 
-echo "→ Compiling draft (US Letter, one case per page, for editorial review)..."
-typst compile --font-path fonts --input mode=draft book.typ build/capability-matters-draft.pdf
+echo "→ Compiling production Half Letter interior (grayscale)..."
+$TYPST --input mode=print book.typ build/capability-matters-print-half-color.pdf
+gray_flatten build/capability-matters-print-half-color.pdf build/capability-matters-print-half.pdf
+rm build/capability-matters-print-half-color.pdf
 
-# Page count is reported but the cover dimensions are pinned to Lulu's
-# spec for this project (362.84 × 254.51 mm / 22.22 mm spine — 265-page
-# cream-paper paperback). Override via --input cover-w-mm=…,
-# cover-h-mm=…, spine-mm=… on the cover compile if Lulu's project-page
-# spec ever changes.
+echo "→ Compiling production US Letter interior (grayscale)..."
+$TYPST --input mode=print-letter book.typ build/capability-matters-print-letter-color.pdf
+gray_flatten build/capability-matters-print-letter-color.pdf build/capability-matters-print-letter.pdf
+rm build/capability-matters-print-letter-color.pdf
+
+echo "→ Compiling editorial draft, US Letter (11pt, 2pp/case)..."
+$TYPST --input mode=draft book.typ build/capability-matters-draft-letter.pdf
+
+echo "→ Compiling editorial draft, Half Letter (11pt, ~4pp/case)..."
+$TYPST --input mode=draft-half book.typ build/capability-matters-draft-half.pdf
+
+echo "→ Compiling screen preview (color, cream backdrop)..."
+$TYPST book.typ build/capability-matters.pdf
+
 if command -v pdfinfo >/dev/null 2>&1; then
-  PAGES=$(pdfinfo build/capability-matters.pdf | awk '/^Pages:/ {print $2}')
+  HALF_PAGES=$(pdfinfo build/capability-matters-print-half.pdf | awk '/^Pages:/ {print $2}')
+  LETTER_PAGES=$(pdfinfo build/capability-matters-print-letter.pdf | awk '/^Pages:/ {print $2}')
 else
-  PAGES="?"
+  HALF_PAGES="?"
+  LETTER_PAGES="?"
 fi
-echo "→ Interior page count: $PAGES"
+echo "→ Page counts: Half Letter $HALF_PAGES · US Letter $LETTER_PAGES"
 
-echo "→ Compiling cover wrap (cover/cover.typ)..."
-typst compile --font-path fonts --root . \
-  cover/cover.typ build/cover.pdf
+echo "→ Compiling Lulu Half Letter cover wrap..."
+$TYPST --root . --input pages=$HALF_PAGES cover/cover.typ build/cover.pdf
 
 echo "→ Compiling decomposable cover parts (front / back / spine)..."
-typst compile --font-path fonts --root . cover/cover-front.typ build/cover-front.pdf
-typst compile --font-path fonts --root . cover/cover-back.typ  build/cover-back.pdf
-typst compile --font-path fonts --root . cover/cover-spine.typ build/cover-spine.pdf
+$TYPST --root . cover/cover-front.typ build/cover-front.pdf
+$TYPST --root . cover/cover-back.typ  build/cover-back.pdf
+$TYPST --root . cover/cover-spine.typ build/cover-spine.pdf
 
 # Mirror the latest PDFs to the repo root so they are easy to find / preview.
-cp "$ROOT/build/capability-matters.pdf" "$ROOT/capability-matters.pdf"
-cp "$ROOT/build/capability-matters-print.pdf" "$ROOT/capability-matters-print.pdf"
-cp "$ROOT/build/capability-matters-draft.pdf" "$ROOT/capability-matters-draft.pdf"
-cp "$ROOT/build/cover.pdf" "$ROOT/cover.pdf"
-cp "$ROOT/build/cover-front.pdf" "$ROOT/cover-front.pdf"
-cp "$ROOT/build/cover-back.pdf" "$ROOT/cover-back.pdf"
-cp "$ROOT/build/cover-spine.pdf" "$ROOT/cover-spine.pdf"
+for f in capability-matters.pdf \
+         capability-matters-print-half.pdf \
+         capability-matters-print-letter.pdf \
+         capability-matters-draft-letter.pdf \
+         capability-matters-draft-half.pdf \
+         cover.pdf cover-front.pdf cover-back.pdf cover-spine.pdf; do
+  cp "$ROOT/build/$f" "$ROOT/$f"
+done
 
 echo
 echo "✓ Output:"
-echo "    build/capability-matters.pdf        screen interior — cream backdrop"
-echo "    build/capability-matters-print.pdf  print interior — transparent/white backdrop for cream paper stock"
-echo "    build/capability-matters-draft.pdf  DRAFT — US Letter, one case per page (for editorial review)"
-echo "    build/cover.pdf                     full Lulu wrap — 292.30 × 222.25 mm, ~16.55 mm spine (for $PAGES pages, Half Letter)"
-echo "    build/cover-front.pdf               front face only — Half Letter trim (139.7 × 215.9 mm)"
-echo "    build/cover-back.pdf                back face only — Half Letter trim (139.7 × 215.9 mm)"
-echo "    build/cover-spine.pdf               spine only — ~16.55 × 215.9 mm"
-echo "    {root}/*.pdf                        (same, mirrored to repo root for easy access)"
+echo "    build/capability-matters.pdf                 screen preview (Half Letter, color, cream backdrop)"
+echo "    build/capability-matters-print-half.pdf      production interior — Half Letter (5.5×8.5), grayscale"
+echo "    build/capability-matters-print-letter.pdf    production interior — US Letter (8.5×11), grayscale"
+echo "    build/capability-matters-draft-letter.pdf    editorial draft — US Letter, 11pt, ~2pp/case"
+echo "    build/capability-matters-draft-half.pdf      editorial draft — Half Letter, 11pt, ~4pp/case"
+echo "    build/cover*.pdf                             Lulu cover wrap (Half Letter trim)"
 echo
-echo "Lulu workflow:"
-echo "  • Upload capability-matters-print.pdf as the interior and select"
-echo "    Half Letter trim with cream-paper stock — the physical paper"
-echo "    provides the cream tone."
-echo "  • Upload cover.pdf as the cover wrap. Cover defaults assume"
-echo "    Half Letter trim (5.5 × 8.5 in) with an estimated 16.55 mm"
-echo "    spine for $PAGES pages on cream paper. Lulu will report the"
-echo "    exact spine width on the project page — override on the cover"
-echo "    compile with --input cover-w-mm=… --input cover-h-mm=…"
-echo "    --input spine-mm=… if it differs."
+echo "Lulu workflow (Half Letter production):"
+echo "  • Upload capability-matters-print-half.pdf as the interior and"
+echo "    select Half Letter (5.5 × 8.5 in) with cream-paper stock."
+echo "  • Upload cover.pdf as the cover wrap (Half Letter)."
 echo
-echo "Binder / standalone workflow:"
-echo "  • cover-front.pdf, cover-back.pdf, cover-spine.pdf are"
-echo "    decomposed Half Letter / spine-strip pages for printing into a"
-echo "    binder, slipcase, or web preview. Each is single-page and"
-echo "    self-contained."
+echo "Lulu workflow (US Letter production):"
+echo "  • Upload capability-matters-print-letter.pdf as the interior and"
+echo "    select US Letter (8.5 × 11 in)."
+echo "  • Cover wrap for Letter trim is not yet generated — only the"
+echo "    Half Letter cover is in scripts. Generate as needed."

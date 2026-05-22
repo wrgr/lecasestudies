@@ -1,14 +1,17 @@
 // ============================================================
-// Case spread template — 2 pages (screen / print) or 1 page (draft)
+// Case spread template
+//
+// Production (mode=print, print-letter): case on verso (left), LE
+//   Lens on recto (right). Long cases overflow to a second pair of
+//   pages; pagebreaks below force the next case back to verso, so
+//   spreads stay aligned at the cost of an occasional blank page.
+// Draft (mode=draft, draft-half): same structural break but no
+//   forced verso start — single-sided editorial print.
 // ============================================================
 
 #import "theme.typ": *
 #import "components.typ": *
 
-// In screen/print mode, each case is a 2-page verso/recto spread:
-// page 1 the case, page 2 the LE Lens analysis. In draft mode, the
-// two pages collapse onto a single US-Letter page for editorial
-// review.
 #let case(
   number: 0,
   title: "",
@@ -28,23 +31,17 @@
   reflection-list: (),
   courses: (),
 ) = {
-  let mode = sys.inputs.at("mode", default: "screen")
-  let draft-letter = mode == "draft"
-  let draft-half = mode == "draft-half"
-  let draft = draft-letter or draft-half
-
-  // Screen/print: each case starts on a verso so page 1 + page 2
-  // form a spread. Both draft modes: each case starts on a fresh
-  // page (no even-page forcing — single-sided editorial print),
-  // with case content on the first page(s) and LE Lens on the
-  // following page(s).
-  if draft {
+  // Production: start each case on a verso (even-numbered) page so
+  // page 1 (case) and page 2 (LE Lens) form a true left-right
+  // spread when the reader opens the book.
+  // Draft: just a fresh page; single-sided print.
+  if is-draft {
     pagebreak(weak: true)
   } else {
     pagebreak(to: "even", weak: true)
   }
 
-  // -------- PAGE 1 (or top half of draft page): THE CASE --------
+  // -------- PAGE 1: THE CASE --------
   block(width: 100%, {
     // top row: case number + domain tags + year (single line)
     grid(
@@ -58,7 +55,7 @@
     v(3pt)
 
     // title
-    text(font: serif, size: if draft { 24pt } else { 24pt }, fill: navy, title)
+    text(font: serif, size: title-size, fill: navy, title)
     v(1pt)
     mode-line(modes-code)
     v(2pt)
@@ -70,64 +67,61 @@
         columns: (auto, 1fr),
         column-gutter: 8pt,
         eyebrow("Impact", color: gold),
-        text(font: sans, size: if draft { 10.5pt } else { 10pt }, weight: "medium", fill: navy, impact),
+        text(font: sans, size: impact-size, weight: "medium", fill: navy, impact),
       ),
     )
     v(3pt)
 
-    // Diagram. Screen/print and draft-half use the diagram at its
-    // designed size; the Letter draft has a lot more page width to
-    // play with, so we scale up ~25% to make the diagram the focal
-    // element on page 1.
+    // Diagram. The Letter draft scales the diagram 125% so it stays
+    // the focal element with the wider Letter measure; everywhere
+    // else the diagram renders at its native size.
     if diagram != none {
-      if draft-letter {
+      if is-draft and is-letter {
         scale(x: 125%, y: 125%, origin: top + left, reflow: true, diagram)
       } else {
         diagram
       }
-      v(if draft { 4pt } else { 3pt })
+      v(if is-draft { 4pt } else { 3pt })
     }
 
-    // body — 9.5pt in print on 6×9 trim (comfortable trade-book size);
-    // 11pt in the Letter draft for editorial mark-up
     set par(
       justify: true,
-      leading: if draft { 0.58em } else { 0.5em },
+      leading: body-leading,
       first-line-indent: 0pt,
-      spacing: if draft { 0.68em } else { 0.58em },
+      spacing: body-spacing,
     )
     text(
       font: sans,
-      size: if draft { 11pt } else { 9.5pt },
+      size: body-size,
       fill: text-dark,
       body,
     )
   })
 
   // -------- PAGE 2: THE LE LENS --------
-  // In both draft modes the LE Lens block lives on a fresh page so
-  // the case narrative and its analysis can be reviewed side-by-side
-  // when the draft is printed two-up.
+  // Always lives on the next page so case narrative and analysis
+  // can be reviewed side-by-side (verso/recto in production; on
+  // consecutive single-sided pages in draft).
   pagebreak(weak: true)
   block(width: 100%, {
     eyebrow("The Learning Engineering Lens", color: teal)
     v(1pt)
     line(length: 100%, stroke: 0.5pt + rule-soft)
-    v(if draft { 2pt } else { 4pt })
+    v(if is-draft { 2pt } else { 4pt })
 
     if quote != none {
       pullquote(quote, quote-source)
-      v(if draft { 2pt } else { 4pt })
+      v(if is-draft { 2pt } else { 4pt })
     }
 
     lens-block("LE Insight", le-insight)
     v(1pt)
     lens-block("LENS Approach", lens-approach)
-    v(if draft { 2pt } else { 4pt })
+    v(if is-draft { 2pt } else { 4pt })
 
     if reflection-list.len() > 0 {
       reflections(..reflection-list)
-      v(if draft { 2pt } else { 3pt })
+      v(if is-draft { 2pt } else { 3pt })
     }
 
     // Sources + further reading, two columns
@@ -141,7 +135,7 @@
     // footer: courses
     block(
       width: 100%,
-      inset: (top: if draft { 2pt } else { 4pt }),
+      inset: (top: if is-draft { 2pt } else { 4pt }),
       stroke: (top: 0.5pt + rule-soft),
       {
         grid(
