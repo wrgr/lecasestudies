@@ -38,7 +38,8 @@
       *01.* Systems don't fail because the technology breaks. They fail because someone couldn't do what the system required. #parbreak()
       *02.* We engineer every parameter of a system except the people. #parbreak()
       *03.* Capability is not a soft problem. It is a systems engineering problem. #parbreak()
-      *04.* Decision-grade evidence. Not opinions about training.
+      *04.* Decision-grade evidence. Not opinions about training. #parbreak()
+      *05.* Capability without agency is automation. The goal is operators who can perform, adapt, and lead — not comply.
     ]
   }
 )
@@ -78,8 +79,16 @@
   system required of them when the system required it. That assumption
   is what this book calls the *capability parameter*. It is a property
   of the entire sociotechnical system, not of any individual operator.
-  When it is wrong, the consequences are paid in lives, in dollars, in
-  trust, and in time the institution will never recover.
+  Capability lives at the *interface* between what a system requires of
+  its operators and the impact the system has to deliver — and when
+  that interface is wrong, the gap may originate in human development,
+  in system design, in organizational performance, or in the
+  interaction among them. Distinguishing which is itself a measurement
+  and engineering problem; the casebook calls it *gap attribution*,
+  and treats it as the diagnostic move that the rest of the discipline
+  depends on. When the interface fails — wherever the source — the
+  consequences are paid in lives, in dollars, in trust, and in time
+  the institution will never recover.
 ]
 
 #v(8pt)
@@ -303,7 +312,7 @@
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  Two of those commitments deserve a moment of their own — they are
+  Three of those commitments deserve a moment of their own — they are
   the substrate the rest of the curriculum runs on. The first is
   *communication, translation, and integration within and across
   disparate systems*. A striking number of cases in this book are,
@@ -361,6 +370,31 @@
   same evidentiary discipline applied to any other intervention,
   and to recognize when the binding constraint is the surrounding
   architecture rather than the tool itself.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The third — and the design constraint on all the others — is
+  *human agency*. The capability discipline can be misread as
+  optimization: produce operators whose behavior matches a
+  specification. That reading collapses the very property the cases
+  reveal as load-bearing. Every successful institution in Part II —
+  INPO operators trained to challenge their reactor team, Keystone
+  ICU nurses authorized to halt a procedure (Case 14), the Nuclear
+  Navy's questioning attitude (Case 28), the first-officer authority
+  CRM built into the cockpit (Case 12) — engineered for capability
+  *and* for the operator's capacity to exercise independent
+  judgment, to adapt to conditions the system was not designed for,
+  and to shape the surrounding architecture rather than only
+  execute inside it. Capability without that capacity is
+  automation. LENS treats the preservation and development of
+  agency — the room the system leaves its operators to think,
+  decide, and lead — as a design constraint on every intervention,
+  including those in which AI is the partner. The paired risk runs
+  the same direction: an AI collaborator can accelerate the flywheel
+  or quietly offload the thinking, and which one it does is a
+  design and governance decision, not a property of the tool.
 ]
 
 // -------------------------------------------------------------------
