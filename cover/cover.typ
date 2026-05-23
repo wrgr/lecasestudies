@@ -183,10 +183,11 @@
     {
       set par(leading: 0.6em, first-line-indent: 0pt)
       text(font: sans, size: 8.5pt, fill: cream)[
-        Learning engineering is a *team sport.* Bring what you know —
-        domain knowledge, coding, theory, systems, design, teaching,
-        analysis. No one knows everything. You get to decide what you
-        bring.
+        Learning engineering is a *team sport* — a dialogue between
+        engineering and the learning sciences, open to every field that
+        brings a real tool. Bring what you know: domain, code, theory,
+        design, teaching, analysis. No one knows everything. You get to
+        decide what you bring.
       ]
     }
   )
