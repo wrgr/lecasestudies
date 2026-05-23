@@ -138,6 +138,38 @@
   }
 )
 
+// ---- Who builds this · team & tools ----
+// Derived from the case's failure-mode codes: the expertise that
+// addresses each distinct mode plus the tools they bring. Kept to a
+// compact two-line block (expertise inline, then tools) so it adds
+// information without pushing every case into page overflow.
+#let team-block(codes) = {
+  let cs = codes.split("").filter(c => c != "")
+  let seen = ()
+  let exps = ()
+  let tools = ()
+  for c in cs {
+    if not seen.contains(c) {
+      seen.push(c)
+      let e = mode-expertise.at(c, default: "")
+      if e != "" and not exps.contains(e) { exps.push(e) }
+      for t in mode-tools.at(c, default: ()) { if not tools.contains(t) { tools.push(t) } }
+    }
+  }
+  block(width: 100%, {
+    set par(leading: if is-draft { 0.52em } else { 0.46em }, justify: false, first-line-indent: 0pt)
+    eyebrow("Who Builds This", color: teal)
+    v(2pt)
+    text(font: sans, size: if is-draft { 9pt } else { 8pt }, fill: text-dark)[
+      #exps.join("  ·  ") — with domain experts and a learning engineer to integrate the work.
+    ]
+    v(2pt)
+    text(font: sans, size: if is-draft { 8.5pt } else { 7.5pt }, fill: text-muted)[
+      #text(weight: "medium", fill: teal)[Tools] #h(3pt) #tools.join(" · ")
+    ]
+  })
+}
+
 // ---- LENS course tags ----
 #let course-tags(..codes) = {
   let chips = codes.pos().map(c => box(

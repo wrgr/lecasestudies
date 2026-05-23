@@ -124,6 +124,12 @@
       v(if is-draft { 2pt } else { 3pt })
     }
 
+    // Who builds this — expertise + tools implied by the failure modes
+    if modes-code != "" {
+      team-block(modes-code)
+      v(if is-draft { 2pt } else { 3pt })
+    }
+
     // Sources + further reading, two columns
     grid(
       columns: (1fr, 1fr),

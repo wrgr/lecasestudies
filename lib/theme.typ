@@ -150,6 +150,36 @@
 #let text-muted = if grayscale { _text-muted-g } else { _text-muted-c }
 #let rule-soft  = if grayscale { _rule-soft-g }  else { _rule-soft-c }
 
+// ---- Who builds the fix: expertise + tools per failure mode ----
+//
+// Capability engineering is a team sport. Each failure mode calls
+// for a particular mix of expertise and a particular set of tools;
+// a case's mode codes therefore imply the team that would build the
+// fix. These maps drive the per-case "Who Builds This" block so the
+// reader sees, case by case, how different expertise contributes —
+// and that no one discipline carries the whole job.
+//
+//   mode-expertise.<code> = the disciplines that address that mode
+//   mode-tools.<code>     = representative tools/methods they use
+#let mode-expertise = (
+  T: "learning science & instructional design",
+  D: "systems & human-factors engineering",
+  N: "safety science & organizational analysis",
+  H: "human factors & interaction design",
+  G: "governance, ethics & measurement",
+  K: "knowledge management & data engineering",
+)
+#let mode-tools = (
+  T: ("scenario simulation", "competency models"),
+  D: ("task analysis", "design prototyping"),
+  N: ("incident analysis", "safety dashboards"),
+  H: ("usability testing", "cognitive walkthroughs"),
+  G: ("governance frameworks", "bias & evidence audits"),
+  K: ("knowledge bases", "data pipelines"),
+)
+// Every team also needs the integrators who hold the picture together.
+#let mode-integrators = "domain experts · a learning engineer to integrate the work"
+
 // ---- Failure-mode taxonomy ----
 #let modes = (
   T: ("Training Gap",                       "Personnel were never taught what they needed to know."),

@@ -40,6 +40,22 @@
   studio discussion.
 ]
 
+#v(8pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The Lens page also carries a *Who Builds This* note: the mix of
+  expertise and the tools a team would bring to engineer the fix,
+  read directly off the case's failure modes. It is there to make the
+  team-sport point concrete — a Training-Gap case pulls in learning
+  scientists and instructional designers; an Interface case pulls in
+  human-factors and interaction designers; a Governance case pulls in
+  policy, ethics, and measurement. Most cases need several at once,
+  held together by domain experts and a learning engineer. No single
+  discipline carries a case alone, and reading the modes as a staffing
+  list is itself a LENS skill. What *you* bring to that team is yours
+  to decide.
+]
+
 #v(14pt)
 
 #grid(
