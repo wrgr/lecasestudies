@@ -7,25 +7,28 @@
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
-// Compact case entry: number · name (year) · modes · LEN — strictly single line.
+// Compact case entry: number · name (year) · modes · LEN.
+// Sizes bumped from the original sub-6pt scale; the modes / courses
+// columns are widened so 5-mode codes (e.g. T·H·N·K·G) no longer
+// overhang into the page margin.
 #let entry(n, name, year, modes, courses, success: false) = block(
   width: 100%,
-  inset: (y: 1.4pt),
+  inset: (y: 2.4pt),
   stroke: (bottom: 0.25pt + rule-soft),
   clip: true,
   {
     grid(
-      columns: (14pt, 1fr, 30pt, 28pt),
-      column-gutter: 3pt,
+      columns: (16pt, 1fr, 42pt, 34pt),
+      column-gutter: 4pt,
       align: (right + horizon, left + horizon, left + horizon, right + horizon),
-      text(font: sans, size: 7pt, weight: "bold", fill: if success { teal } else { gold }, str(n)),
+      text(font: sans, size: 8.5pt, weight: "bold", fill: if success { teal } else { gold }, str(n)),
       box(width: 100%, clip: true, [
-        #text(font: sans, size: 6.4pt, fill: navy, weight: if success { "medium" } else { "regular" }, name)
-        #h(2pt)
-        #text(font: sans, size: 5.5pt, fill: text-muted, year)
+        #text(font: sans, size: 8pt, fill: navy, weight: if success { "medium" } else { "regular" }, name)
+        #h(3pt)
+        #text(font: sans, size: 6.5pt, fill: text-muted, year)
       ]),
-      text(font: sans, size: 5.8pt, fill: teal, weight: "bold", modes),
-      text(font: sans, size: 5.8pt, fill: text-muted, courses),
+      text(font: sans, size: 7pt, fill: teal, weight: "bold", modes),
+      text(font: sans, size: 7pt, fill: text-muted, courses),
     )
   }
 )
@@ -111,17 +114,12 @@
   entry(50, "TransAsia 235",              "2015",      "T·H",     "5·2"),
 )
 
-#grid(
-  columns: (1fr, 1fr),
-  column-gutter: 14pt,
-  column-block(left-1),
-  column-block(right-1),
-)
+#column-block(left-1)
+#column-block(right-1)
 
-// -------------------- RECTO :: matrix spread, continuation --------------------
-// No header on the continuation page — the matrix is a single
-// continuous list across the spread, not two halves.
-#pagebreak(weak: true)
+// -------------------- continuation (no header) --------------------
+// The matrix is a single continuous list; it simply flows onto the
+// following pages.
 #v(8pt)
 
 #let left-2 = (
@@ -180,12 +178,8 @@
   entry(100,"The Discipline We Build Next","ongoing",  "all",     "1·10·8", success: true),
 )
 
-#grid(
-  columns: (1fr, 1fr),
-  column-gutter: 14pt,
-  column-block(left-2),
-  column-block(right-2),
-)
+#column-block(left-2)
+#column-block(right-2)
 
 #v(8pt)
 #block(

@@ -39,7 +39,8 @@
       *02.* We engineer every parameter of a system except the people. #parbreak()
       *03.* Capability is not a soft problem. It is a systems engineering problem. #parbreak()
       *04.* Decision-grade evidence. Not opinions about training. #parbreak()
-      *05.* Capability without agency is automation. The goal is operators who can perform, adapt, and lead — not comply.
+      *05.* Capability without agency is automation. The goal is operators who can perform, adapt, and lead — not comply. #parbreak()
+      *06.* Sometimes the constraints make the goal unreachable. Saying so early is a result, not a failure.
     ]
   }
 )
@@ -415,6 +416,29 @@
   rebuilt, remeasured, and rebuilt again. The institutional capability
   to sustain the loop *is* what distinguishes them from interventions
   whose effects decayed.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  The loop also has a legitimate negative result, and the discipline
+  has to be honest enough to reach it. Capability engineering always
+  operates inside constraints — budget, schedule, regulation,
+  institutional will, politics, ethics, public trust — and many of
+  the binding ones are not technical. Part of the work is *managing
+  those constraints and the risk they carry*: reading the constraint
+  space accurately enough to recognize when external, non-technical
+  factors have narrowed the solution space to the point where a
+  particular capability goal is no longer realistic to pursue.
+  Reaching that conclusion — and documenting *why* — is itself a
+  valid outcome of a project, not a failure of one. It redirects
+  effort toward goals that are actually reachable, surfaces the
+  non-technical barriers for the stakeholders who can change them,
+  and prevents the far more expensive failure of driving an
+  infeasible target all the way to the operational record before it
+  collapses there. A number of cases in this book are, in part,
+  stories of institutions that could not say "not like this, not
+  yet" in time.
 ]
 
 #v(6pt)

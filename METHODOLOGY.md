@@ -104,6 +104,27 @@ The pedagogical commitment of LENS is that the practitioner who
 graduates can identify, instrument, and close the next such loop
 before the next case is written.
 
+## Managing constraints and risk
+
+Capability engineering always operates inside constraints — budget,
+schedule, regulation, institutional will, politics, ethics, public
+trust — and many of the binding ones are not technical. Managing
+those constraints and the risk they carry is part of the discipline,
+not a precondition to it.
+
+A specific consequence: the loop has a legitimate **negative
+result**. Reading the constraint space accurately enough to
+recognize when external, non-technical factors have narrowed the
+solution space to the point where a particular capability goal is no
+longer realistic to pursue is itself a valid project outcome —
+documented, defended, and used to guide the work. It is not a
+failure. It redirects effort toward reachable goals, surfaces the
+non-technical barriers for the stakeholders who can change them, and
+prevents the more expensive failure of driving an infeasible target
+all the way into operation before it collapses there. "Not like
+this, not yet" is a result a capability engineer must be able to
+deliver.
+
 ## Decision-grade evidence
 
 Evidence of sufficient rigor, relevance, and timeliness that a

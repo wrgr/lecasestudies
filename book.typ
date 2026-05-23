@@ -14,9 +14,14 @@
 //   mode=draft         — US Letter, 11pt, color, editorial.
 //   mode=draft-half    — Half Letter, 11pt, color, editorial.
 //
-// Optional input `date=YYYY-MM-DD` — when set, drafts print the date
-// in the running header so reviewers can tell which build they have.
-#let page-fill = if cream-backdrop { cream } else { white }
+// Page fill:
+//   screen — cream, for on-screen preview only.
+//   everything else (print, print-letter, draft, draft-half) — none
+//   (transparent), so the page prints on whatever paper stock is
+//   used. Diagram fills and full-bleed chapter dividers still paint
+//   their own backgrounds; we just don't lay a page-wide rectangle
+//   over the paper.
+#let page-fill = if cream-backdrop { cream } else { none }
 #let draft-date = sys.inputs.at("date", default: "")
 
 // ---- Document metadata ----

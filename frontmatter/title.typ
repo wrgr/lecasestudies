@@ -6,8 +6,9 @@
 #import "../lib/components.typ": *
 
 // Respect the global mode flag — only the screen build gets the cream
-// backdrop; production and draft pages are white.
-#let page-fill = if cream-backdrop { cream } else { white }
+// backdrop; production and draft pages are transparent so they print
+// on whatever paper stock is used.
+#let page-fill = if cream-backdrop { cream } else { none }
 
 // ---- Half-title (page i) ----
 #page(

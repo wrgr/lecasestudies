@@ -27,7 +27,9 @@ draft: draft-letter draft-half
 covers: cover-print-half cover-print-letter cover-draft-letter cover-draft-half
 
 # `make share` assembles a single dated share PDF for reviewers:
-#   front cover + dated draft interior + back cover.
+#   front cover + BLANK + dated draft interior + BLANK + back cover.
+# The blank pages put each cover on its own leaf so that, printed
+# double-sided, no case study lands on the back of a cover.
 # Defaults to the Letter draft (wider margins, easier to annotate).
 # `make share-half` does the same on the Half Letter trim.
 TODAY := $(shell date -I)
@@ -35,15 +37,17 @@ TODAY := $(shell date -I)
 share: share-letter
 
 share-letter: cover-draft-letter cover-draft-half $(BUILD)
+	$(TYPST) --root . --input trim=letter cover/blank-page.typ $(BUILD)/_blank-letter.pdf
 	$(TYPST) --input mode=draft --input date=$(TODAY) book.typ $(BUILD)/_share-letter-interior.pdf
-	pdfunite $(BUILD)/cover-draft-letter.pdf $(BUILD)/_share-letter-interior.pdf $(BUILD)/cover-draft-letter-back.pdf $(BUILD)/capability-matters-toshare-$(TODAY).pdf
-	rm $(BUILD)/_share-letter-interior.pdf
+	pdfunite $(BUILD)/cover-draft-letter.pdf $(BUILD)/_blank-letter.pdf $(BUILD)/_share-letter-interior.pdf $(BUILD)/_blank-letter.pdf $(BUILD)/cover-draft-letter-back.pdf $(BUILD)/capability-matters-toshare-$(TODAY).pdf
+	rm $(BUILD)/_share-letter-interior.pdf $(BUILD)/_blank-letter.pdf
 	cp $(BUILD)/capability-matters-toshare-$(TODAY).pdf $(ROOT)/capability-matters-toshare-$(TODAY).pdf
 
 share-half: cover-draft-half $(BUILD)
+	$(TYPST) --root . --input trim=half cover/blank-page.typ $(BUILD)/_blank-half.pdf
 	$(TYPST) --input mode=draft-half --input date=$(TODAY) book.typ $(BUILD)/_share-half-interior.pdf
-	pdfunite $(BUILD)/cover-draft-half.pdf $(BUILD)/_share-half-interior.pdf $(BUILD)/cover-draft-half-back.pdf $(BUILD)/capability-matters-toshare-half-$(TODAY).pdf
-	rm $(BUILD)/_share-half-interior.pdf
+	pdfunite $(BUILD)/cover-draft-half.pdf $(BUILD)/_blank-half.pdf $(BUILD)/_share-half-interior.pdf $(BUILD)/_blank-half.pdf $(BUILD)/cover-draft-half-back.pdf $(BUILD)/capability-matters-toshare-half-$(TODAY).pdf
+	rm $(BUILD)/_share-half-interior.pdf $(BUILD)/_blank-half.pdf
 	cp $(BUILD)/capability-matters-toshare-half-$(TODAY).pdf $(ROOT)/capability-matters-toshare-half-$(TODAY).pdf
 
 $(BUILD):
