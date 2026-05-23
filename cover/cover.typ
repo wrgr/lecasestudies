@@ -172,6 +172,26 @@
   ]
 ]
 
+// Welcome stripe — the quick version of the book's opening note,
+// set in the empty middle band of the back cover.
+#at(margin, total-h / 2 - 10mm)[
+  #block(
+    width: half-w - 2 * margin,
+    fill: teal,
+    inset: (x: 11pt, y: 9pt),
+    radius: 1pt,
+    {
+      set par(leading: 0.6em, first-line-indent: 0pt)
+      text(font: sans, size: 8.5pt, fill: cream)[
+        Learning engineering is a *team sport.* Bring what you know —
+        domain knowledge, coding, theory, systems, design, teaching,
+        analysis. No one knows everything. You get to decide what you
+        bring.
+      ]
+    }
+  )
+]
+
 // Bottom block: tagline + rule + URL footer, all stacked. Anchored
 // 70 mm from the bottom bleed edge so the entire block sits above
 // Lulu's 92 × 32 mm barcode safe area — that area runs from 12.7 mm

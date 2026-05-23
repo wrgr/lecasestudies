@@ -9,6 +9,47 @@
 
 // citation marker (definition lives in components.typ)
 
+// ---- Welcome (opens the book, before the introduction proper) ----
+#pagebreak(to: "odd", weak: true)
+
+#v(1fr)
+
+#text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("Welcome"))
+#v(4pt)
+#line(length: 32mm, stroke: 0.8pt + gold)
+#v(14pt)
+
+#block(width: 100%, {
+  set par(leading: 0.7em, justify: false, first-line-indent: 0pt)
+  text(font: serif, size: 19pt, fill: navy, style: "italic")[
+    Learning engineering is a toolbox, not a single tool.
+  ]
+  v(12pt)
+  set par(leading: 0.66em, justify: true)
+  text(font: sans, size: 11pt, fill: text-dark)[
+    It draws on domain knowledge, coding, theory, systems thinking,
+    design, teaching, measurement, and analysis — and it asks you to
+    apply what you already know to a problem that matters, and to pick
+    up the rest in good company. No one carries every tool. This is a
+    team sport: capability gets built at the seams between people who
+    each see part of the system clearly and trust the others to see
+    the rest.
+  ]
+  v(8pt)
+  text(font: sans, size: 11pt, fill: text-dark)[
+    So you don't need to know everything before you start. You need to
+    know what you bring, stay honest about what you don't, and find the
+    people who carry the tools you're missing. What you bring is yours
+    to decide. The hundred cases that follow are an invitation to find
+    your part in the work.
+  ]
+})
+
+#v(1fr)
+
+#align(right, text(font: sans, size: 8pt, tracking: 1.4pt, fill: text-muted, upper("— The editors")))
+
+// ---- Introduction proper ----
 #pagebreak(to: "odd", weak: true)
 
 #text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("Introduction"))
