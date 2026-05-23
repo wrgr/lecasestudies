@@ -27,13 +27,25 @@
   v(12pt)
   set par(leading: 0.66em, justify: true)
   text(font: sans, size: 11pt, fill: text-dark)[
-    It draws on domain knowledge, coding, theory, systems thinking,
-    design, teaching, measurement, and analysis — and it asks you to
-    apply what you already know to a problem that matters, and to pick
-    up the rest in good company. No one carries every tool. This is a
-    team sport: capability gets built at the seams between people who
-    each see part of the system clearly and trust the others to see
-    the rest.
+    At its center it is a dialogue between two traditions — the
+    engineering disciplines that design, build, and sustain complex
+    systems, and the learning sciences and education that study how
+    people come to know and do. Around that dialogue gather many other
+    fields: cognitive and human-factors engineering, measurement,
+    implementation science, design, data and computation, and the
+    operational domains themselves. The work is plural by design —
+    many disciplines at once — and it draws on domain knowledge,
+    coding, theory, systems thinking, design, teaching, and analysis.
+  ]
+  v(8pt)
+  text(font: sans, size: 11pt, fill: text-dark)[
+    It welcomes everyone who brings a real tool to it. It is not, for
+    that, a free-for-all: learning engineering stands in an
+    intellectual tradition with its own methods, evidence standards,
+    and lineage, and it holds the work accountable to them. No one
+    carries every tool. This is a team sport — capability gets built at
+    the seams between people who each see part of the system clearly
+    and trust the others to see the rest.
   ]
   v(8pt)
   text(font: sans, size: 11pt, fill: text-dark)[
