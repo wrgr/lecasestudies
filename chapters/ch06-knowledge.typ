@@ -96,28 +96,22 @@
   body: [
     The Generalized Intelligent Framework for Tutoring (GIFT) is an
     open-source framework for authoring, delivering, and evaluating
-    intelligent tutoring systems. It was originated under the U.S. Army
-    Research Laboratory; following the 2019 Army Futures Command
-    reorganization, the program moved with its host (the Learning in
-    Intelligent Tutoring Environments laboratory) into DEVCOM Soldier
-    Center, where it remains under active development. The framework
-    issues regular releases — 2025-1 in September 2025, with a cloud
-    deployment at cloud.gifttutoring.org — and convenes an annual
-    GIFTSym symposium that publishes peer-reviewed proceedings.
+    intelligent tutoring systems. Originated under the U.S. Army Research
+    Laboratory, it moved after the 2019 Army Futures Command
+    reorganization into DEVCOM Soldier Center, where it remains under
+    active development with regular releases and an annual peer-reviewed
+    GIFTSym symposium.
 
-    Computer-based tutoring has been shown to be "as effective as
-    expert human tutors in one-to-one tutoring in well-defined
-    domains and significantly better than traditional classroom
-    training" (VanLehn, 2011); GIFT sits at the center of the field's
-    effort to lower the authoring barrier. The case is not that GIFT
-    has been discontinued — it has not. The case is that *ubiquitous
-    fielded adoption of adaptive tutoring across routine military
-    training pipelines remains limited* despite five decades of
-    intelligent-tutoring research and more than a decade of active
-    GIFT development. The gap between framework and fielded routine
-    use is the canonical learning-engineering problem: the science is
-    settled, the platform exists, the studies are positive, and the
-    institutional pathway to scaled adoption is still being built.
+    Computer-based tutoring has been shown to be "as effective as expert
+    human tutors ... in well-defined domains and significantly better than
+    traditional classroom training" (VanLehn, 2011), and GIFT sits at the
+    center of the effort to lower the authoring barrier. The case is not
+    that GIFT was discontinued — it was not. It is that *ubiquitous fielded
+    adoption across routine military training remains limited* despite five
+    decades of research. That gap is the canonical learning-engineering
+    problem: the science is settled, the platform exists, the studies are
+    positive — and the institutional pathway to scaled adoption is still
+    being built.
   ],
   quote: [The technology works. The institutional pathway to ubiquitous fielded use does not yet.],
   quote-source: "Editors' synthesis of the GIFT adoption record",
@@ -129,12 +123,12 @@
   ),
   le-insight: [
     GIFT is the most directly relevant case in this book to the
-    learning-engineering discipline itself. The technology works. The
-    learning science works. The framework is active and supported. What
-    has not been built is the institutional adoption pathway: the
-    procurement, training pipeline integration, instructor workflow
-    redesign, and authority structure that would make adaptive tutoring
-    a default rather than an experiment.
+    learning-engineering discipline itself. The technology works, the
+    learning science works, the framework is active and supported. What
+    has not been built is the institutional adoption pathway —
+    procurement, training-pipeline integration, instructor workflow
+    redesign, the authority structure — that would make adaptive
+    tutoring a default rather than an experiment.
   ],
   lens-approach: [
     LENS treats GIFT in LEN 1 as the problem-framing case for the
@@ -144,7 +138,6 @@
   ],
   literature-items: (
     [GIFT Project documentation and GIFTSym 12 / 13 proceedings],
-    [Fixsen et al. (2005), _Implementation Research: A Synthesis_],
     [Goodell & Kolodner (2022), _Learning Engineering Toolkit_],
   ),
   reflection-list: (

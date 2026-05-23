@@ -32,26 +32,24 @@
     In March 1977 two 747s collided on a foggy runway at Tenerife and 583
     people died. The cockpit voice recorder showed the KLM flight engineer
     questioning whether the Pan Am 747 was clear of the runway — twice, in
-    indirect language — only for the senior captain (KLM's chief 747
-    instructor) to dismiss the question and continue the takeoff roll. The
-    accident was not a failure of skill. It was a failure of the system by
-    which skill in one seat reached the other.
+    indirect language — only for the senior captain to dismiss the
+    question and continue the takeoff roll. The accident was not a failure
+    of skill but of the system by which skill in one seat reached the
+    other.
 
     Crew Resource Management, formalized by United Airlines in 1981, rebuilt
-    the cockpit as a coordinated team. Communication protocols became
-    explicit. Authority gradients were named and trained against. Briefings
-    and debriefings became structured. CRM did not teach individual
-    airmanship — it engineered the *system of interaction* in which
-    airmanship operates.
+    the cockpit as a coordinated team: explicit communication protocols,
+    authority gradients named and trained against, structured briefings and
+    debriefings. CRM did not teach individual airmanship — it engineered the
+    *system of interaction* in which airmanship operates.
 
     Twenty years later the Commercial Aviation Safety Team added the second
-    half of the system: closed-loop hazard identification using operational
-    data, prioritized safety enhancements, tracked implementation, and
-    measured outcomes. CAST set itself an eighty-percent fatality-reduction
-    target and exceeded it at 83% by 2007. It won the Collier Trophy in
-    2008. The two interventions together — cultural redesign plus
-    continuous evidence — define what a mature capability-engineering
-    apparatus looks like.
+    half of the system: closed-loop hazard identification on operational
+    data, prioritized enhancements, tracked implementation, measured
+    outcomes. CAST set an eighty-percent fatality-reduction target and
+    exceeded it at 83% by 2007 (Collier Trophy, 2008). The two together —
+    cultural redesign plus continuous evidence — define what a mature
+    capability-engineering apparatus looks like.
   ],
   quote: [CRM succeeded because it treated crew coordination as an engineerable property of the system.],
   quote-source: "Paraphrasing Helmreich & Foushee, in Kanki et al., Crew Resource Management (2010)",
@@ -64,21 +62,20 @@
   le-insight: [
     CRM is the canonical evidence that capability is engineerable at the
     system level, not just the individual. Tenerife was not solvable by
-    hiring better pilots — it was solvable by changing the authority
-    structure inside the cockpit. The intervention worked because it was
-    *paired*: a technical change in procedure plus a cultural change in
-    how the procedure was authorized. Either alone fails.
+    hiring better pilots — only by changing the authority structure
+    inside the cockpit. The intervention worked because it was *paired*:
+    a procedural change plus a cultural change in how the procedure was
+    authorized. Either alone fails.
   ],
   lens-approach: [
     LENS treats CRM/CAST as the foundational success case across the
-    curriculum. LEN 1 uses it as the problem-framing exemplar. LEN 4 uses
-    CAST as the model closed-loop evidence system. LEN 2 uses CRM as the
-    template for redesigning human roles in highly-automated environments —
-    the same logic now being applied to AI-augmented systems.
+    curriculum. LEN 1 uses it as the problem-framing exemplar; LEN 4 uses
+    CAST as the model closed-loop evidence system; LEN 2 uses CRM as the
+    template for redesigning human roles in automated environments — the
+    logic now being applied to AI-augmented systems.
   ],
   literature-items: (
     [Kanki, Helmreich & Anca, _Crew Resource Management_ (2010)],
-    [Salas, Wilson, Burke & Wightman (2006) on team training],
     [Edmondson, _The Fearless Organization_ (2018)],
   ),
   reflection-list: (
@@ -172,27 +169,22 @@
   body: [
     Three Mile Island did not produce a reactor accident at the next plant
     over. It produced an institution. Within months of the Kemeny
-    Commission's October 1979 report — itself within nine months of the
-    partial meltdown — the U.S. commercial nuclear industry founded the
-    Institute of Nuclear Power Operations (incorporated December 1979).
-    The premise: an accident at any single plant would affect every
-    operator's license, and no single utility could engineer its
-    capability infrastructure alone. INPO was funded by the utilities
-    it evaluated and operated without statutory authority — a
-    structurally unusual configuration in which the operators and the
-    peer review they answered to were hostages of each other.
+    Commission's October 1979 report, the U.S. commercial nuclear industry
+    founded the Institute of Nuclear Power Operations. The premise: an
+    accident at any single plant would affect every operator's license,
+    and no single utility could engineer its capability infrastructure
+    alone. INPO was funded by the utilities it evaluated and operated
+    without statutory authority — a configuration in which the operators
+    and the peer review they answered to were hostages of each other.
 
     INPO set training and certification standards for every operator and
-    supervisor across every plant. The National Academy for Nuclear
-    Training, founded in 1985, accredited the training programs of each
-    facility. INPO teams conducted regular plant evaluations and peer
-    reviews — operators from one utility examining another's procedures,
-    control rooms, and incident records. Findings were used for
-    industry-wide learning, not competitive advantage.
-
-    The pre-TMI culture had been characterized by what the Bulletin of the
-    Atomic Scientists called "smugness." The post-INPO culture is
-    characterized by mandated vigilance.
+    supervisor; the National Academy for Nuclear Training (1985)
+    accredited each facility's programs; and INPO teams ran regular peer
+    evaluations — operators from one utility examining another's
+    procedures, control rooms, and incident records, for industry-wide
+    learning rather than competitive advantage. The pre-TMI culture had
+    been characterized by what the Bulletin of the Atomic Scientists
+    called "smugness"; the post-INPO culture, by mandated vigilance.
   ],
   quote: [Every utility recognized that an accident at any single plant would affect every operator's license to operate.],
   quote-source: "Paraphrasing the institutional analysis in Rees, Hostages of Each Other, 1994",
@@ -203,25 +195,24 @@
     [Marsh (2019), "INPO and the Transformation of Nuclear Safety Culture"],
   ),
   le-insight: [
-    INPO is the strongest evidence in any domain that capability engineering
-    can be undertaken at the level of an *industry*, not just an
-    organization. The conditions that made it possible — shared catastrophic
-    exposure, regulatory legitimacy, an honest peer-review architecture —
-    are not unique to nuclear. They appear wherever a single failure can
-    damage every operator.
+    INPO is the strongest evidence in any domain that capability
+    engineering can be undertaken at the level of an *industry*, not just
+    an organization. The conditions that made it possible — shared
+    catastrophic exposure, regulatory legitimacy, an honest peer-review
+    architecture — appear wherever a single failure can damage every
+    operator.
   ],
   lens-approach: [
     LENS uses INPO in LEN 8 as the canonical example of industry-level
-    learning. Students identify structural conditions in their own domain
-    that would permit (or block) an INPO-equivalent and design the
-    peer-review architecture that would be required. LEN 1 uses the
-    founding moment — nine months after TMI — to discuss the *speed* a
-    credible response to catastrophe demands.
+    learning: students identify the structural conditions in their own
+    domain that would permit (or block) an INPO-equivalent and design the
+    peer-review architecture required. LEN 1 uses the founding moment —
+    nine months after TMI — to discuss the *speed* a credible response to
+    catastrophe demands.
   ],
   literature-items: (
     [Rees (1994), _Hostages of Each Other_],
     [Weick & Sutcliffe, _Managing the Unexpected_ (2007)],
-    [Kemeny Commission, _Report on TMI_ (1979)],
   ),
   reflection-list: (
     [What is the equivalent of "an accident at any single plant affects every operator" in your domain? If the answer is "nothing," what does that tell you?],

@@ -107,21 +107,21 @@
     eyebrow("The Learning Engineering Lens", color: teal)
     v(1pt)
     line(length: 100%, stroke: 0.5pt + rule-soft)
-    v(if is-draft { 2pt } else { 4pt })
+    v(if is-draft { 2pt } else { 3pt })
 
     if quote != none {
       pullquote(quote, quote-source)
-      v(if is-draft { 2pt } else { 4pt })
+      v(if is-draft { 2pt } else { 3pt })
     }
 
     lens-block("LE Insight", le-insight)
     v(1pt)
     lens-block("LENS Approach", lens-approach)
-    v(if is-draft { 2pt } else { 4pt })
+    v(if is-draft { 2pt } else { 3pt })
 
     if reflection-list.len() > 0 {
       reflections(..reflection-list)
-      v(if is-draft { 2pt } else { 3pt })
+      v(if is-draft { 2pt } else { 2pt })
     }
 
     // Who builds this — expertise + tools implied by the failure modes

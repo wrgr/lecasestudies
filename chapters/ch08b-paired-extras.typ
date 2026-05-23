@@ -512,13 +512,11 @@
     implementation (three thousand-plus schools). It demonstrates the
     LE process working as intended.
 
-    The limitations are themselves instructive for LENS students
-    working in operational contexts where problems are rarely
-    well-defined: Cognitive Tutor works best in well-defined domains
-    (algebra) and less well in ill-structured ones. The case is the
-    canonical evidence that the LE pipeline works *for problems that
-    fit the pipeline*. The next frontier is whether the same discipline
-    can produce equivalent evidence for problems that do not.
+    The limitations are instructive: Cognitive Tutor works best in
+    well-defined domains (algebra) and less well in ill-structured
+    ones. It is the canonical evidence that the LE pipeline works *for
+    problems that fit the pipeline* — and the open question is whether
+    the same discipline can deliver for problems that do not.
   ],
   quote: [Cognitive Tutors demonstrate the LE process working: theory → engineering → evidence → scale.],
   quote-source: "Editors' synthesis of Anderson et al. (1995) and Koedinger & Corbett (2006)",

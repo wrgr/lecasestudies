@@ -171,14 +171,12 @@
 
     The post-incident consensus, captured by the Kemeny Commission, was
     that the human element of nuclear plant operations was a far more
-    important risk factor than the industry had recognized. The criticism
-    applied not only to the operators but to plant management, the
-    utility, and the Nuclear Regulatory Commission itself. Training
-    matched the design-basis events the engineers had imagined; the
-    accident was not one of them.
+    important risk factor than the industry had recognized — a criticism
+    that applied not only to the operators but to plant management, the
+    utility, and the Nuclear Regulatory Commission itself.
 
     TMI did not produce another reactor accident. It produced INPO (see
-    Case 16). It is the canonical example in this book of a failure that
+    Case 16) — the canonical example in this book of a failure that
     generated systematic capability reform.
   ],
   quote: [The fundamental problems are people-related problems and not equipment problems.],
@@ -194,18 +192,16 @@
     capability assumptions did not survive contact with operational
     reality. Training to design-basis events left the operators blind to
     the genuinely ambiguous failures that complex systems actually
-    produce. The lesson — that the human element is not a residual risk
-    but the dominant one — has shaped every high-reliability industry
-    since.
+    produce. The human element is not a residual risk but the dominant
+    one.
   ],
   lens-approach: [
     LENS uses TMI in LEN 1 as the foundational problem-framing case: when
-    your trained scenarios and your operational scenarios diverge, the
-    divergence is your real risk. LEN 5 examines the control-room
-    interface and the gap between what indicators displayed and what
-    operators inferred. The pairing with INPO (Case 16) demonstrates the
-    Failure-to-Reform arc that this book treats as the strongest argument
-    for the discipline.
+    trained scenarios and operational scenarios diverge, the divergence
+    is the real risk. LEN 5 examines the control-room interface and the
+    gap between what indicators displayed and what operators inferred;
+    the pairing with INPO (Case 16) is the Failure-to-Reform arc this
+    book treats as its strongest argument.
   ],
   literature-items: (
     [Walker, _Three Mile Island: A Nuclear Crisis in Historical Perspective_ (2004)],
@@ -304,16 +300,12 @@
     thousand trained F-35A maintainers (GAO-23-105341).
 
     Of sixty-eight essential maintenance tasks, the military cannot
-    independently perform twenty-four — creating dependence on contractor
+    independently perform twenty-four — a dependence on contractor
     logistics that is operationally vulnerable in contested environments.
-    Depot maintenance establishment is six years behind schedule. The
-    training system exists but cannot keep pace with fleet growth and
-    complexity.
-
-    The structural shape of the F-35 problem is *Capability-System
-    Misalignment at Transition*: the platform was fielded faster than the
-    human-capability infrastructure to sustain it could be built. Aircraft
-    arrived; the people to keep them flying did not.
+    Depot establishment is six years behind schedule, and the training
+    system cannot keep pace with fleet growth. The platform was fielded
+    faster than the human-capability infrastructure to sustain it:
+    aircraft arrived; the people to keep them flying did not.
   ],
   quote: [Organizational-level maintenance has been affected by a number of issues, including a lack of technical data and training.],
   quote-source: "GAO-23-105341, F-35 Sustainment, 2023",

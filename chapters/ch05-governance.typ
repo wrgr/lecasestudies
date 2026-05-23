@@ -101,18 +101,14 @@
     launch.
 
     The site went live on October 1, 2013, and immediately collapsed
-    under load it had never been validated for. In the first two months
-    twenty-nine thousand enrollments were processed against an enrollment
-    target of seven million. The fix-it operation that followed pulled
-    together the team that would later become the U.S. Digital Service —
-    one of the most consequential capability institutions ever built
-    inside the federal government, born from a failure that was visible
-    on the news every night.
-
-    The failure was a capability mismatch at scale: the organization
-    lacked the specific human capabilities required for the specific
-    system being deployed, and no one in the governance chain recognized
-    or acted on that gap before launch.
+    under load it had never been validated for: twenty-nine thousand
+    enrollments in two months against a seven-million target. The fix-it
+    operation that followed pulled together the team that became the
+    U.S. Digital Service — born from a failure visible on the news every
+    night. At root it was a capability mismatch at scale: the
+    organization lacked the human capabilities the specific system
+    required, and no one in the governance chain surfaced the gap before
+    launch.
   ],
   quote: [No single person had a clear understanding of the project's status.],
   quote-source: "Paraphrasing the HHS Office of Inspector General review of Healthcare.gov, 2016",
@@ -520,21 +516,15 @@
     percent had irregular employment that the averaging method
     misclassified as fraud.
 
-    Default judgments were issued without human review. Recipients had
-    to prove they did *not* owe the debt — reversing the burden of
-    proof. The system caused widespread distress. The Royal
-    Commission heard evidence of deaths, including by suicide,
-    associated with the scheme. The Commission's 2023 final report
-    found the scheme was sustained by "venality, incompetence and
-    cowardice" and that ministers had failed to ensure the program
-    was lawful. The net cost
-    to the government was A\$565 million — a scheme that was supposed
-    to save money.
-
-    University of Melbourne analysis: "Even simple ADM systems can
-    encode the prejudices of the individuals and systems who conceive
-    them." The algorithm itself was "comparatively simple"; its harms
-    were "entirely predictable from the outset."
+    Default judgments were issued without human review, reversing the
+    burden of proof onto recipients. The Royal Commission heard evidence
+    of deaths, including by suicide, associated with the scheme, and its
+    2023 final report found it sustained by "venality, incompetence and
+    cowardice," with ministers failing to ensure the program was lawful.
+    The net cost to government was A\$565 million — for a scheme meant to
+    save money. The algorithm was "comparatively simple"; its harms,
+    the University of Melbourne found, "entirely predictable from the
+    outset."
   ],
   quote: [A costly failure of public administration, in both human and economic terms.],
   quote-source: "Royal Commission into the Robodebt Scheme, 2023",
@@ -547,13 +537,10 @@
   le-insight: [
     Robodebt is the canonical case of full automation without
     human-in-the-loop and without lawful basis. The algorithm was not
-    sophisticated. The harm was not technical. The system survived for
+    sophisticated and the harm was not technical: the system survived
     four years because the governance architecture treated automation
-    as an efficiency mechanism rather than as a decision regime. The
-    Royal Commission's framing — "venality, incompetence and
-    cowardice" — is the strongest indictment in this dataset of
-    leadership treating automated decisions as not requiring
-    accountability.
+    as an efficiency mechanism rather than as a decision regime that
+    required accountability.
   ],
   lens-approach: [
     LENS treats Robodebt in LEN 7 as the canonical case for automated

@@ -34,19 +34,14 @@
     was no longer sealed. The blowout that followed killed eleven men and
     released roughly five million barrels of oil into the Gulf of Mexico.
 
-    BP and Transocean training programs had not sufficiently addressed
-    well-control situations like the negative-pressure test and the
-    displacement procedures the crew actually executed. The National
+    BP and Transocean training had not adequately covered the
+    well-control situations the crew actually faced. The National
     Academies workshop found "a lack of preparation and experience and an
     unclear chain of command prevented key decisions at every step."
-    Every one of Deepwater Horizon's many defenses failed — some were
-    never engaged, some were engaged too late, and some did not work as
-    designed.
-
-    The investigators described the accident as "a complex and interlinked
-    series of mechanical failures, human judgments, engineering design,
-    operational implementation and team interfaces." Each layer of
-    defense had drifted, over time, from its specification.
+    Every one of the rig's many defenses failed — some never engaged,
+    some engaged too late, some not as designed: "a complex and
+    interlinked series of mechanical failures, human judgments,
+    engineering design, operational implementation and team interfaces."
   ],
   quote: [The immediate causes of the Macondo well blowout can be traced to a series of identifiable mistakes ... that reveal such systematic failures in risk management that they place in doubt the safety culture of the entire industry.],
   quote-source: "National Commission, Deep Water (Report to the President), 2011",
@@ -106,15 +101,11 @@
     deviations from safety protocols become ingrained through production
     pressures, poor communication, and workplace culture — was developed
     from the Challenger investigation and then validated, against the
-    intent of its author, by Columbia. The CAIB report borrowed Vaughan's
-    framing because it remained the most precise available description
-    of the same pathology repeated. Two crews paid the price for an
-    organizational learning failure that was diagnosed in 1986 and not
-    repaired.
-
-    The accidents are paired in this book because they constitute the
-    strongest single-institution evidence that culture is engineerable —
-    and that leaving it unengineered is a choice with consequences.
+    intent of its author, by Columbia. Two crews paid the price for an
+    organizational learning failure diagnosed in 1986 and never repaired
+    — the strongest single-institution evidence that culture is
+    engineerable, and that leaving it unengineered is a choice with
+    consequences.
   ],
   quote: [These repeating patterns mean that flawed practices embedded in NASA's organizational system continued for 20 years and made substantial contributions to both accidents.],
   quote-source: "Columbia Accident Investigation Board, 2003",

@@ -157,15 +157,17 @@
     }
   }
   block(width: 100%, {
-    set par(leading: if is-draft { 0.52em } else { 0.46em }, justify: false, first-line-indent: 0pt)
-    eyebrow("Who Builds This", color: teal)
-    v(2pt)
+    set par(leading: if is-draft { 0.5em } else { 0.44em }, justify: false, first-line-indent: 0pt)
     text(font: sans, size: if is-draft { 9pt } else { 8pt }, fill: text-dark)[
-      #exps.join("  ·  ") — with domain experts and a learning engineer to integrate the work.
+      #text(font: sans, size: if is-draft { 7pt } else { 6.5pt }, weight: "medium", tracking: 1.4pt, fill: teal)[#upper("Who builds this")]
+      #h(5pt)
+      #exps.join(" · ") — plus domain experts and a learning engineer to integrate.
     ]
-    v(2pt)
+    v(1.5pt)
     text(font: sans, size: if is-draft { 8.5pt } else { 7.5pt }, fill: text-muted)[
-      #text(weight: "medium", fill: teal)[Tools] #h(3pt) #tools.join(" · ")
+      #text(font: sans, size: if is-draft { 7pt } else { 6.5pt }, weight: "medium", tracking: 1.4pt, fill: teal)[#upper("Tools")]
+      #h(5pt)
+      #tools.join(" · ")
     ]
   })
 }

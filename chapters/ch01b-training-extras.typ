@@ -252,22 +252,18 @@
     a C-130, killing eight servicemembers. The hostages remained in
     Iranian custody for another nine months.
 
-    The Holloway Commission identified what later became known as the
-    "ad hoc-ery" of the mission: each service contributed its own
-    units, its own equipment, its own command relationships, and its
-    own communications systems. The aircrews had not trained together.
-    The RH-53D Sea Stallions had been selected for their range and
-    for the minesweeping cover story (deniability) rather than for
-    their suitability to a desert-rescue mission. There was no standing
-    joint special-operations command to which the mission could be
-    assigned. The capability had to be improvised, and the improvisation
+    The Holloway Commission identified the mission's "ad hoc-ery": each
+    service contributed its own units, equipment, command relationships,
+    and communications systems; the aircrews had not trained together;
+    the RH-53D Sea Stallions had been chosen for range and a
+    minesweeping cover story rather than fitness for a desert rescue.
+    There was no standing joint special-operations command to own the
+    mission. The capability had to be improvised, and the improvisation
     failed.
 
-    Eagle Claw produced the Holloway Commission, the standing of
-    JSOC (1980), and ultimately the Nunn-Cohen Amendment to the
-    1987 NDAA that established U.S. Special Operations Command
-    (USSOCOM, stood up 1987). The Goldwater-Nichols Act (1986) drew
-    on Eagle Claw alongside Beirut (1983) and Grenada (1983) in
+    Eagle Claw produced the Holloway Commission, JSOC (1980), and
+    ultimately the Nunn-Cohen Amendment establishing USSOCOM (1987);
+    Goldwater-Nichols (1986) drew on it alongside Beirut and Grenada in
     mandating joint command structures across the U.S. military.
   ],
   quote: [The mission was ad hoc — assembled from units, equipment, and command relationships that had never operated together.],
@@ -280,26 +276,22 @@
   le-insight: [
     Eagle Claw is the canonical case in U.S. defense for the absence of
     institutionalized cross-service capability. Each service was
-    competent inside its own boundary; the integration across services
-    did not exist as a deliverable. The reform that followed —
-    Goldwater-Nichols and USSOCOM — built the institution the mission
-    had needed and not had.
+    competent inside its own boundary; the integration across them did
+    not exist as a deliverable — until the reform that followed built
+    the institution the mission had needed and not had.
   ],
   lens-approach: [
     LENS uses Eagle Claw in LEN 5 as a worked case for cross-
     organizational capability requirements and in LEN 8 for the
-    institutional reform that followed. The case pairs with INPO
-    (Case 16) as the defense analog of failure-driven institution
-    building. The seven-year arc from Eagle Claw (1980) to
-    Goldwater-Nichols (1986) and USSOCOM (1987) is itself a
-    measurement: the institutional response time when the failure
-    mode is cross-organizational capability and the reform requires
-    statutory action.
+    institutional reform that followed; it pairs with INPO (Case 16) as
+    the defense analog of failure-driven institution building. The
+    seven-year arc to Goldwater-Nichols (1986) and USSOCOM (1987) is
+    itself a measurement: the institutional response time when the fix
+    requires statutory action.
   ],
   literature-items: (
     [Locher (2002), _Victory on the Potomac_],
     [Holloway Commission report (1980)],
-    [Cohen, _Commandos and Politicians_ (1978)],
   ),
   reflection-list: (
     [Where in your domain does a cross-organizational capability exist on paper but not in practice? What would force its institutionalization?],
