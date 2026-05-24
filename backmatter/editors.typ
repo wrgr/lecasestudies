@@ -115,6 +115,5 @@
 #text(font: sans, size: 9pt, style: "italic", fill: text-muted)[
   These biographies reference careers documented in publications,
   program reports, faculty pages, and the curricular materials of
-  the LDT program and the LENS specialization. Corrections and
-  refinements from the editors are welcomed in subsequent printings.
+  the LDT program and the LENS specialization.
 ]
