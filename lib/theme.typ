@@ -75,7 +75,7 @@
 #let pullquote-src   = 7.5pt
 #let reflection-size = 9.5pt
 #let reflection-num  = 11pt
-#let sources-size    = 8.5pt
+#let sources-size    = 7.5pt
 #let body-leading    = 0.66em
 #let body-spacing    = 0.82em
 

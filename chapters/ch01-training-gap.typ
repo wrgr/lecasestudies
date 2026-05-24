@@ -46,50 +46,61 @@
     [
       The destroyers belonged to the forward-deployed Seventh Fleet in Japan,
       kept at the fleet's highest tempo — where training was the first thing
-      spent. In 2003 the Navy replaced its in-person Surface Warfare Officers
-      School course with self-study CD-ROMs, "SWOS in a Box."#cn() By 2017
-      the GAO found 37 percent of the Japan-based ships' warfare
-      certifications — including basic seamanship — expired, a fivefold rise
-      since 2015, with lapses routinely waived rather than fixed.#cn()
+      spent. Unlike home-ported ships, which rotate through a dedicated
+      work-up cycle before deploying, the forward-deployed force was expected
+      to be continuously available, so there was rarely a quiet stretch in
+      which to recover a lapsed qualification. In 2003 the Navy replaced its
+      in-person Surface Warfare Officers School course with self-study
+      CD-ROMs, "SWOS in a Box."#cn() By 2017 the GAO found 37 percent of the
+      Japan-based ships' warfare certifications — including basic seamanship —
+      expired, a fivefold rise since 2015, with the lapses routinely waived
+      rather than fixed.#cn()
     ],
     // -- What Happened --
     [
-      On 17 June 2017 the Fitzgerald, the give-way vessel, took no early
-      action and was struck by the container ship ACX Crystal off Japan;
-      seven sailors drowned in a flooding berthing compartment.#cn() Nine
-      weeks later the John S. McCain collided with the tanker Alnic MC near
-      Singapore, killing ten: while shifting throttle control between
-      consoles, a watchstander unknowingly handed off steering, and no one
-      understood the touch-screen helm well enough to see it.#cn()
+      On 17 June 2017 the Fitzgerald, the give-way vessel in a busy shipping
+      channel, took no early action and was struck by the container ship ACX
+      Crystal off the coast of Japan; the sea poured into a berthing
+      compartment where the crew slept, and seven sailors drowned before they
+      could escape.#cn() Nine weeks later the John S. McCain collided with the
+      tanker Alnic MC near Singapore, killing ten: while shifting throttle
+      control between consoles, a watchstander unknowingly handed off steering
+      to another station, the ship turned across the strait's traffic, and no
+      one on the bridge understood the touch-screen helm well enough to see
+      what had happened.#cn()
     ],
     // -- The Investigation --
     [
       The Navy's Comprehensive Review (2017) judged both collisions avoidable,
       citing failures in basic seamanship, navigation, and operating the
-      ships' own equipment.#cn() The NTSB found the McCain's probable cause
-      to be a lack of Navy oversight producing insufficient training and
-      inadequate bridge procedures,#cn() and faulted the touch-screen helm,
-      whose design made an unintended transfer of steering easy — a trap
-      waiting for an under-trained crew.#cn()
+      ships' own equipment.#cn() The NTSB found the McCain's probable cause to
+      be a lack of Navy oversight that produced insufficient training and
+      inadequate bridge procedures,#cn() and faulted the design of the
+      touch-screen helm, installed to modernize the bridge, whose blending of
+      steering and throttle made an unintended transfer of control easy to
+      trigger and hard to notice — a trap waiting for an under-trained crew.#cn()
     ],
     // -- The Capability Gap --
     [
       The gap was invisible from inside. The Strategic Readiness Review
       (2017) described risks that "accumulated over time and did so
       insidiously," the system no longer able to see that the processes
-      meant to surface shortfalls had themselves failed.#cn() Stated and
-      actual readiness had diverged for a decade while the reports stayed
-      green; the cost came as seventeen lives, not a failed inspection.
+      meant to surface shortfalls had themselves failed.#cn() Each individual
+      waiver was locally defensible — a deadline met, a deployment kept — but
+      in aggregate they hollowed out the force while every readiness dashboard
+      still reported green. Stated and actual readiness had diverged for a
+      decade; the cost arrived as seventeen lives, not a failed inspection.
     ],
     // -- Aftermath & Reform --
     [
       The reforms were the deepest in a generation: the in-person officer
-      pipeline rebuilt, a Ready-for-Sea Assessment and a forward-readiness
-      command stood up, circadian watchbills adopted, and the touch-screen
-      helm slated for replacement by a conventional wheel.#cn() Each conceded
-      that the training and the interface had been real requirements all
-      along — and that trading them for tempo only moved the cost onto two
-      ships full of people.
+      pipeline was rebuilt and lengthened, a Ready-for-Sea Assessment and a
+      forward-readiness command stood up, circadian watchbills adopted to
+      fight fatigue, and the touch-screen helm slated for replacement by a
+      conventional wheel and throttle.#cn() Each change conceded that the
+      training and the interface had been real requirements all along — and
+      that trading them for tempo had only moved the cost onto two ships full
+      of people.
     ],
   ),
   references: (
