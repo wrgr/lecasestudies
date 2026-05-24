@@ -136,14 +136,17 @@
         case-summary(summary)
         v(4pt)
       }
-      if diagram != none {
-        diagram
-        v(3pt)
-      }
       set par(justify: true, leading: body-leading, first-line-indent: 0pt, spacing: body-spacing)
       for (i, sec) in sections.enumerate() {
         case-section(labels.at(i, default: ""))
         text(font: sans, size: body-size, fill: text-dark, sec)
+      }
+      // Diagram sits after the narrative, so page 1 carries the summary and
+      // text and the figure lands on page 2.
+      if diagram != none {
+        v(5pt)
+        diagram
+        v(4pt)
       }
       // Parity + structure probe: marker count must equal refs length,
       // and this point (where references begin) should sit on page 2.
