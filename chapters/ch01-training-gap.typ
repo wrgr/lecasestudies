@@ -200,34 +200,115 @@
   modes-code: "TH",
   impact: "228 killed; the deadliest accident in Air France's history",
   diagram: dgm.dgm-af447,
-  body: [
-    When the pitot tubes iced over at cruise altitude over the South
-    Atlantic and the autopilot disconnected, the crew had to hand-fly the
-    aircraft in conditions for which they had never trained. The pilot
-    flying pulled the nose up — the opposite of correct stall recovery — and
-    held that input almost continuously until the aircraft hit the ocean
-    three and a half minutes later. The stall warning sounded for
-    fifty-four seconds. The crew never identified the stall.
-
-    Air France trained pilots in stall recovery at low altitude but not at
-    cruise altitude. Simulators of the era could not faithfully reproduce
-    aircraft behavior outside the normal flight envelope, so training
-    focused on prevention rather than recovery. The BEA concluded:
-    "The combination of the warning system ergonomics, the conditions
-    under which pilots are trained and exposed to stalls during their
-    professional and recurrent training, did not result in reasonably
-    reliable expected behaviour patterns."
-
-    The training matched one operational context. It did not match the one
-    that killed two hundred and twenty-eight people.
-  ],
+  kind: "failure",
+  sections: (
+    // -- Background --
+    [
+      Air France Flight 447 left Rio de Janeiro for Paris on the night of
+      31 May 2009 with 228 people aboard an Airbus A330 — a highly
+      automated, fly-by-wire airliner with one of the best safety records
+      in the sky. Its route crossed the Intertropical Convergence Zone, the
+      band of towering equatorial thunderstorms that long-haul crews
+      routinely pick their way around. What the crew could not see was a
+      vulnerability already known to the manufacturer and the airline: the
+      aircraft's pitot probes, which measure airspeed, were prone to brief
+      blockage by high-altitude ice crystals. A series of unreliable-airspeed
+      events on A330s and A340s had already prompted a program to replace
+      the probes, and Air France had begun retrofitting its fleet — but the
+      accident aircraft had not yet been modified.#cn()
+    ],
+    // -- What Happened --
+    [
+      A few hours into the flight, at 35,000 feet, the pitot probes iced
+      over. The airspeed readings became invalid and the systems that depend
+      on them responded as designed: the autopilot and autothrust
+      disconnected and handed the aircraft to the crew, with the
+      flight-control law degraded so that the envelope protections the
+      pilots normally relied on were no longer there. The pilot flying
+      responded with sustained nose-up inputs. The aircraft zoom-climbed,
+      bled off speed, and entered an aerodynamic stall from which it never
+      recovered, descending some 38,000 feet into the ocean in about four
+      and a half minutes. The captain was on a scheduled rest break when the
+      trouble began; the two first officers left at the controls could not
+      reconcile the contradictory indications, and when the captain hurried
+      back into the cockpit moments into the emergency, the attitude, the
+      alarms, and the readouts gave him no quick way to see that his
+      airplane was stalling. For much of the descent neither pilot seems to
+      have registered that the other was holding the sidestick nearly full
+      aft. The stall warning sounded for roughly fifty seconds; then, at the
+      extreme angles of attack the aircraft reached, the airspeed data fell
+      below the threshold the warning logic trusted and the alarm went
+      silent — only to sound again each time the nose was lowered, which was
+      the one input that would have begun a recovery. The system, in effect,
+      warned against the correct action.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The Bureau d'Enquêtes et d'Analyses (BEA), France's accident
+      investigator, published its final report in July 2012. The probable
+      cause was a chain: the temporary loss of valid airspeed from pitot
+      icing, the crew's inappropriate control inputs that destabilized the
+      flight path, and — decisively — the crew's failure to recognize that
+      the aircraft had stalled and to apply the standard recovery.#cn() The
+      pilots were not incompetent; they were operating outside anything
+      their training had prepared them for, and the cues that should have
+      told them they were stalling never registered. The BEA stated the
+      training failure in institutional terms: "the combination of the
+      warning system ergonomics, the conditions under which pilots are
+      trained and exposed to stalls during their professional and recurrent
+      training, did not result in reasonably reliable expected behaviour
+      patterns."#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      The gap was specific and, in hindsight, glaring. Airlines trained
+      stall recognition and recovery at low altitude, in the takeoff and
+      landing regime where stalls were thought to be the real risk. The
+      flight simulators of the era could not faithfully reproduce how an
+      airliner behaves in a fully developed stall at cruise altitude, so
+      that scenario was simply never practiced. Crews were trained to
+      *prevent* stalls and to manage an automated aircraft; they were not
+      trained to *recover* a large jet hand-flown into a stall at 35,000
+      feet, because the industry's training environment could not produce
+      the situation. The trained capability envelope and the operational
+      capability envelope had quietly diverged, and AF447 fell precisely
+      into the gap between them.#cn() There was a deeper version of the same
+      gap. Years of reliable automation had let routine hand-flying skills
+      atrophy across the profession; pilots spent their careers managing
+      systems rather than flying raw, and the rare moment when the
+      automation handed control back — at night, in weather, with
+      instruments in disagreement — was the moment they were least equipped
+      to meet. The capability the airline assumed its pilots held was a
+      capability the operation itself had slowly eroded.
+    ],
+    // -- Aftermath & Reform --
+    [
+      The BEA's final report carried dozens of safety recommendations whose
+      reach went far beyond one airline. The vulnerable pitot probes were
+      replaced across the fleet. The recommendations pressed for training in
+      manual flying at high altitude, in approach-to-stall and full-stall
+      recovery, and in handling unreliable airspeed, and for better
+      angle-of-attack information in the cockpit.#cn() Most consequentially,
+      the accident reshaped the global training standard: regulators moved
+      to require Upset Prevention and Recovery Training — explicit
+      instruction in manual handling and in recovering an aircraft from
+      unusual attitudes and stalls — for airline pilots, closing at the
+      regulatory level the gap that had been invisible at the airline
+      level.#cn() AF447 is in this book because the crew performed exactly
+      as trained. The training was the wrong training.
+    ],
+  ),
+  references: (
+    [Bureau d'Enquêtes et d'Analyses (BEA), _Final Report on the accident on 1 June 2009 to the Airbus A330-203 registered F-GZCP operated by Air France flight AF447_ (July 2012) — #link("https://www.faa.gov/sites/faa.gov/files/AirFrance447_BEA.pdf")[full report]: flight, aircraft, and the known pitot-icing vulnerability with retrofit pending.],
+    [BEA, _Final Report AF447_ (2012) — accident sequence: autopilot/autothrust disconnection, degraded control law, sustained nose-up input, stall, and the stall-warning logic dropping out at high angle of attack.],
+    [BEA, _Final Report AF447_ (2012) — probable cause: airspeed inconsistency from pitot icing, inappropriate control inputs, and failure to recognize and recover from the stall.],
+    [BEA, _Final Report AF447_ (2012) — finding on warning-system ergonomics and stall-training conditions (quoted).],
+    [G. Palmer / E. Strickland, "Air France Flight 447 Crash Caused by a Combination of Factors," _IEEE Spectrum_ (2014) — analysis of the divergence between the trained and operational envelopes.],
+    [BEA, _Final Report AF447_ (2012), safety recommendations — pitot-probe replacement, manual high-altitude flying, approach-to-stall and stall recovery, unreliable-airspeed procedures, and angle-of-attack indication.],
+    [European Union Aviation Safety Agency, Upset Prevention and Recovery Training (UPRT) requirements for airline pilots (phased in by 2019); ICAO, _Manual on Aeroplane Upset Prevention and Recovery Training_ (Doc 10011).],
+  ),
   quote: [The crew never understood that they were stalling and consequently never applied a recovery manoeuvre.],
   quote-source: "BEA, Final Report on Air France Flight 447, July 2012",
-  sources-list: (
-    [Bureau d'Enquêtes et d'Analyses, _Final Report on Flight AF447_ (2012)],
-    [IEEE Spectrum, "Air France Flight 447 Crash Caused by a Combination of Factors" (2014)],
-    [BEA Safety Recommendations FRAN-2012-041, -045, -046],
-  ),
   le-insight: [
     AF447 is the canonical case of training that matched one envelope of
     operation perfectly and another not at all. Stall *prevention* training
@@ -263,38 +344,110 @@
   modes-code: "TH",
   impact: "Partial meltdown of a Babcock & Wilcox PWR; minimal off-site dose; most serious accident in U.S. commercial nuclear history; catalyst for industry-wide reform",
   diagram: dgm.dgm-tmi,
-  body: [
-    A relatively minor cooling-system malfunction at Unit 2 — a
-    Babcock & Wilcox pressurized-water reactor — escalated to a
-    partial meltdown because the operators were under-skilled for the
-    failure they actually faced. They had been trained for worst-case
-    scenarios; this was an ambiguous cascade, in which the most
-    important indicator — a stuck-open pilot-operated relief valve —
-    was misread on the control panel. The control-room light
-    indicated the *command* signal to close the valve, not its actual
-    position; the valve was stuck open while the panel reported
-    "closed." Misreading pressurizer level as indicating that the
-    system was going solid, the operators throttled high-pressure
-    injection precisely when more was needed.
-
-    The post-incident consensus, captured by the Kemeny Commission, was
-    that the human element of nuclear plant operations was a far more
-    important risk factor than the industry had recognized — a criticism
-    that applied not only to the operators but to plant management, the
-    utility, and the Nuclear Regulatory Commission itself.
-
-    TMI did not produce another reactor accident. It produced INPO (see
-    Case 16) — the canonical example in this book of a failure that
-    generated systematic capability reform.
-  ],
+  kind: "failure",
+  sections: (
+    // -- Background --
+    [
+      Unit 2 at Three Mile Island, near Harrisburg, Pennsylvania, was a
+      Babcock & Wilcox pressurized-water reactor run by operators whose
+      training emphasized large, fast, design-basis accidents — the
+      worst-case ruptures the industry believed it most needed to guard
+      against. The slow, ambiguous, small-break sequence that actually
+      unfolded was not the scenario they had drilled.#cn() It should not
+      have been a surprise. Eighteen months earlier, in September 1977, a
+      nearly identical stuck-open relief valve had occurred at the
+      Davis-Besse plant, another B&W reactor; operators there caught it, but
+      neither the utility, the vendor, nor the Nuclear Regulatory Commission
+      grasped the event's significance or pushed its lesson out to the
+      fleet. The warning that might have prepared TMI's crew never reached
+      them.#cn() Many of the operators had come up through the Navy's
+      nuclear program and were capable, disciplined people; what they had
+      been given was a body of training and a set of procedures built around
+      the accidents the industry expected, not the one that the plant would
+      actually hand them at four in the morning.
+    ],
+    // -- What Happened --
+    [
+      Early on 28 March 1979 a minor disturbance in the secondary cooling
+      system tripped the reactor. A pilot-operated relief valve opened to
+      bleed off pressure, as designed — and then stuck open, quietly
+      draining coolant from the core. The control room gave the operators no
+      honest picture of this: the indicator light reported the *command* to
+      close the valve, not its actual position, so the panel said "closed"
+      while the valve stayed open. Reading the rising pressurizer level as a
+      sign the system was about to go "solid" with water, the operators
+      throttled back the high-pressure injection that was the one thing
+      feeding the starving core — cutting the coolant precisely when more was
+      needed. About half the core melted. The crisis then deepened for days
+      before it was understood: a hydrogen bubble in the reactor vessel
+      raised fears of an explosion, conflicting information reached officials
+      and the public, and the governor advised pregnant women and
+      pre-school children within five miles to leave. The reactor was
+      eventually brought to cold shutdown and Unit 2 was destroyed; off-site
+      radiation release, as it turned out, was minimal.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The President's Commission on the Accident at Three Mile Island — the
+      Kemeny Commission — reported in October 1979. Its central finding
+      inverted the industry's assumptions: "the fundamental problems are
+      people-related problems and not equipment problems." The equipment, it
+      judged, was good enough that, but for the human failures, the accident
+      would have been a minor incident. The criticism reached past the
+      operators to plant management, the utility, and the NRC itself — an
+      institution-wide mindset that treated serious accidents as
+      effectively impossible.#cn() The commission was specific about where
+      capability had failed: operator training was too narrow and too
+      oriented to theory rather than to the diagnosis of real,
+      messy transients; the control room was a wall of nearly identical
+      gauges and annunciators that buried the few signals that mattered; and
+      procedures gave little help in an event that did not match the script.
+    ],
+    // -- The Capability Gap --
+    [
+      The gap was not a deficit of intelligence or diligence but of the
+      right capability for the situation that arrived. Operators trained to
+      recognize design-basis ruptures had no rehearsed model for an
+      ambiguous cascade, and a control room whose indicators reported
+      commands rather than states made the correct diagnosis nearly
+      impossible to assemble in real time. Layered beneath that was a
+      second-order failure: the capability to *learn* — to turn the
+      Davis-Besse near-miss into fleet-wide knowledge — had itself broken
+      down. The accident sat at the intersection of training, interface, and
+      institutional memory, which is why it resists any single-cause
+      reading.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      TMI did not produce another reactor accident. It produced a system of
+      capability reform. Within nine months the industry created the
+      Institute of Nuclear Power Operations (December 1979) to set operating
+      standards, evaluate plants against them, and — directly addressing the
+      Davis-Besse failure — force the systematic sharing of operating
+      experience among utilities.#cn() The NRC overhauled operator licensing
+      and required plant-referenced simulators and human-factors review of
+      control rooms; it stationed resident inspectors at every plant,
+      rebuilt off-site emergency planning, and tied operator training to a
+      national accreditation standard so that the diagnosis of ambiguous
+      transients — not just textbook ruptures — became something crews
+      actually practiced. TMI is paired later in this book with INPO
+      (Case 16) as
+      its strongest argument: the same incident that exposed how training,
+      interface, and institutional memory can fail together also generated
+      the most durable example of engineered reform in the book.#cn()
+    ],
+  ),
+  references: (
+    [Kemeny Commission, _Report of the President's Commission on the Accident at Three Mile Island_ (Oct. 1979) — operator training oriented to large design-basis accidents.],
+    [M. Rogovin & G. T. Frampton, _Three Mile Island: A Report to the Commissioners and to the Public_, NUREG/CR-1250 (U.S. NRC, 1980) — the September 1977 Davis-Besse stuck-PORV precursor and the failure to disseminate its lessons.],
+    [U.S. Nuclear Regulatory Commission, #link("https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/3mile-isle.html")[Backgrounder on the Three Mile Island Accident] — accident sequence, misleading PORV indication, throttled high-pressure injection, ~50% core damage, minimal off-site dose.],
+    [Kemeny Commission (1979) — central conclusion that the fundamental problems were people-related, not equipment-related (quoted).],
+    [C. Perrow, _Normal Accidents_ (1984); J. Reason, _Human Error_ (1990) — why ambiguous cascades defeat design-basis training and command-not-state interfaces.],
+    [#link("https://www.inpo.info/history")[Institute of Nuclear Power Operations, "Our History"] — INPO established December 1979 to set standards and force sharing of operating experience; see also NEI, "Lessons from the 1979 Accident at Three Mile Island."],
+    [J. V. Rees, _Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island_ (Univ. of Chicago Press, 1994) — TMI as the origin of systematic capability reform.],
+  ),
   quote: [The fundamental problems are people-related problems and not equipment problems.],
   quote-source: "Kemeny Commission Report on Three Mile Island, 1979",
-  sources-list: (
-    [Kemeny Commission, _Report of the President's Commission on the Accident at Three Mile Island_ (1979)],
-    [NRC Backgrounder on the Three Mile Island Accident],
-    [Bulletin of the Atomic Scientists retrospective (2020)],
-    [World Nuclear Association, TMI accident summary],
-  ),
   le-insight: [
     TMI is the textbook moment when an industry discovered that its
     capability assumptions did not survive contact with operational
