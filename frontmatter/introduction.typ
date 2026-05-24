@@ -220,7 +220,7 @@
   match the system it was operating. In each case, the gap was
   diagnosable in advance. In most cases, it was actually diagnosed in
   advance, by someone — and the diagnosis did not produce the
-  remediation. The cost of the unrepaired diagnosis is what
+  remediation. The cost of the unrepaired diagnosis is why
   *capability* matters.
 ]
 

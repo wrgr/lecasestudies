@@ -753,7 +753,7 @@
       breach; the combination did, the marginal weaknesses compounding into a
       single open door. The capability gap was the management of unglamorous,
       universally-agreed-necessary maintenance — exactly the work easy to
-      defer because deferring it usually costs nothing, until the once it
+      defer because deferring it usually costs nothing, until the one time it
       costs everything, and a function starved as a cost center has no slack
       left on that day.#cn()
     ],
@@ -798,7 +798,7 @@
   reflection-list: (
     [Identify a piece of routine work in your domain that is chronically deferred. What is the cumulative-inadequacy threshold?],
     [Equifax did not know which assets ran Struts. Design the asset-inventory deliverable that an organization the size of Equifax should be able to produce on demand.],
-    [Equifax's security team had flagged the patch, but the warning had no asset map to act on and no funded function to carry it out. What turns a known, agreed-upon fix into deferred work in your organization — and what would force it to be done before the once it costs everything?],
+    [Equifax's security team had flagged the patch, but the warning had no asset map to act on and no funded function to carry it out. What turns a known, agreed-upon fix into deferred work in your organization — and what would force it to be done before the one time it costs everything?],
   ),
   approaches: (
     during: (

@@ -323,7 +323,7 @@
     Patriot battery defending the area never engaged it. Designed for short
     engagements against Soviet aircraft in Europe, the Patriot tracked time
     in a register whose tiny rounding error grew with every hour of uptime.
-    After about a hundred hours of the continuous operation the Gulf War
+    After about a hundred hours of continuous operation the Gulf War
     demanded, the radar's range gate was off by a third of a second — enough
     to look in the wrong place. Israeli operators had flagged the drift two
     weeks earlier, and a patch reached Dhahran the day after the strike. The
