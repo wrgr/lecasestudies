@@ -72,29 +72,27 @@
 
   if big {
     // One case per Half-Letter page. The case's "in brief" summary, then the
-    // five beat headings as an orienting map of the full treatment, then key
-    // references and the LENS note. v(1fr) distributes slack to fill the page.
+    // five beat headings as a compact inline map of the full treatment, then
+    // key references and the LENS note. v(1fr) distributes slack to fill the
+    // page; the inline map keeps even content-heavy cases to a single page.
     header
-    v(6pt)
+    v(5pt)
     titleblock
-    v(10pt)
+    v(9pt)
     block({
-      set par(justify: true, leading: 0.62em)
-      text(font: sans, size: 11pt, fill: text-dark, summary)
+      set par(justify: true, leading: 0.6em)
+      text(font: sans, size: 10.5pt, fill: text-dark, summary)
     })
-    v(12pt)
+    v(9pt)
     eyebrow("The full case, in five beats", color: navy-mid)
-    v(3pt)
+    v(2.5pt)
     block({
       set par(leading: 0.5em)
-      for l in labels {
-        text(font: sans, size: 8.5pt, fill: text-dark, [‣#h(3pt)] + l)
-        linebreak()
-      }
+      text(font: sans, size: 8.5pt, fill: text-muted, labels.join("  ·  "))
     })
     v(1fr)
     refsblock
-    v(10pt)
+    v(9pt)
     lensblock
     pagebreak(weak: true)
   } else {

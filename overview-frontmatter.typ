@@ -9,27 +9,31 @@
 #import "lib/components.typ": *
 
 // ---------------------------------------------------------------- title
-#v(1fr)
-#align(center)[
-  #text(font: sans, size: 8.5pt, tracking: 3pt, fill: teal, upper("Summary Reference"))
-  #v(12pt)
-  #text(font: serif, size: 34pt, fill: navy, "Capability Matters")
-  #v(2pt)
-  #text(font: serif, size: 18pt, style: "italic", fill: navy-mid, "Case Overview")
-  #v(12pt)
-  #line(length: 42mm, stroke: 0.9pt + gold)
-  #v(12pt)
-  #block(width: 82%, text(font: sans, size: 10.5pt, fill: text-muted)[
-    A quick-reference guide to one hundred real cases of capability — how it
-    fails, how it has been engineered, and where the discipline is being
-    tested next — each with a brief callout, its key sources, and the LENS
-    courses it informs.
-  ])
+// Designed navy cover page (full-bleed in print mode), matching the book's
+// cover / chapter-divider styling.
+#page(fill: navy, margin: (x: 18mm, y: 22mm), header: none, footer: none)[
+  #set text(fill: cream)
+  #v(1fr)
+  #align(center)[
+    #text(font: sans, size: 9pt, tracking: 3pt, fill: gold, upper("Summary Reference"))
+    #v(16pt)
+    #text(font: serif, size: 40pt, fill: cream, "Capability Matters")
+    #v(2pt)
+    #text(font: serif, size: 20pt, style: "italic", fill: teal-light, "Case Overview")
+    #v(14pt)
+    #line(length: 46mm, stroke: 1pt + gold)
+    #v(14pt)
+    #block(width: 80%, text(font: sans, size: 10.5pt, fill: rgb("#B7C9E0"))[
+      A quick-reference guide to one hundred real cases of capability — how it
+      fails, how it has been engineered, and where the discipline is being
+      tested next — each with a brief callout, its key sources, and the LENS
+      courses it informs.
+    ])
+  ]
+  #v(1.6fr)
+  #align(center, text(font: sans, size: 8pt, tracking: 1.8pt, fill: rgb("#B7C9E0"),
+    upper("LDT · LENS — Johns Hopkins University School of Education")))
 ]
-#v(1.5fr)
-#align(center, text(font: sans, size: 8pt, tracking: 1.6pt, fill: text-muted,
-  upper("LDT · LENS — Johns Hopkins University School of Education")))
-#pagebreak()
 
 // ----------------------------------------------------------- the program
 #text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("The program"))
