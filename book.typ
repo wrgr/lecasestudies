@@ -100,5 +100,6 @@
 // BACK MATTER
 // ============================================================
 #include "backmatter/domain-index.typ"
+#include "backmatter/course-index.typ"
 #include "backmatter/references.typ"
 #include "backmatter/editors.typ"

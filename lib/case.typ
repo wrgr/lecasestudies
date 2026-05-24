@@ -39,6 +39,11 @@
   sections: (),      // one content block per section-set beat, in order
   references: (),    // numbered references matching the inline #cn() markers
 ) = {
+  // Emit case metadata for the back-matter indexes (e.g. the LEN-course
+  // map). Carries number, title, and course tags for every case on both
+  // the 4-page and legacy paths.
+  [#metadata((n: number, title: title, courses: courses)) <caseinfo>]
+
   // Shared header: case number / domains / year, title, mode line, impact.
   let header-block = {
     grid(
