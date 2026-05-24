@@ -60,7 +60,25 @@ rm build/_ovh-proof-color.pdf
 
 echo "→ Compiling Half-Letter summary print interior (3 mm bleed, grayscale, Lulu)..."
 $TYPST --input view=overview-half --input mode=print overview-half.typ build/_ovh-print-color.pdf
-gray_flatten build/_ovh-print-color.pdf build/capability-matters-overview-half-print.pdf
+# Lulu binds in 4-page signatures: pad up to the next multiple of four with
+# white blank leaves at the trim+bleed page size (145.7 × 221.9 mm). The blanks
+# count toward the printed thickness, so the spine (computed below from the
+# padded page count) stays correct.
+ovh_pp=$(pdfinfo build/_ovh-print-color.pdf | awk '/^Pages:/ {print $2}')
+ovh_blanks=$(( (4 - ovh_pp % 4) % 4 ))
+if [ "$ovh_blanks" -gt 0 ]; then
+  echo "  · $ovh_pp pp + $ovh_blanks blank leaf(s) → $((ovh_pp + ovh_blanks)) pp (multiple of 4)"
+  $TYPST --input n="$ovh_blanks" --input w-mm=145.7 --input h-mm=221.9 \
+    scripts/blank-leaves.typ build/_ovh-blanks.pdf
+  gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite \
+     -sProcessColorModel=DeviceGray -sColorConversionStrategy=Gray -dOverrideICC \
+     -dCompatibilityLevel=1.7 \
+     -o build/capability-matters-overview-half-print.pdf \
+     build/_ovh-print-color.pdf build/_ovh-blanks.pdf
+  rm build/_ovh-blanks.pdf
+else
+  gray_flatten build/_ovh-print-color.pdf build/capability-matters-overview-half-print.pdf
+fi
 rm build/_ovh-print-color.pdf
 
 # ---- Cover ----
@@ -90,6 +108,14 @@ $TYPST --root . \
   --input spine-mm="$ov_spine" \
   cover/cover-summary.typ build/cover-overview-half.pdf
 
+echo "→ Compiling Half-Letter summary cover (split: front · spine · back)..."
+$TYPST --root . \
+  --input cover-w-mm="$ov_total_w" \
+  --input cover-h-mm="$ov_total_h" \
+  --input spine-mm="$ov_spine" \
+  --input layout=split \
+  cover/cover-summary.typ build/cover-overview-half-split.pdf
+
 # ---- Mirror to repo root ----
 for f in capability-matters-print.pdf \
          capability-matters-digital.pdf \
@@ -100,7 +126,8 @@ for f in capability-matters-print.pdf \
          capability-matters-overview-half-proof.pdf \
          capability-matters-overview-half-print.pdf \
          cover-print.pdf \
-         cover-overview-half.pdf; do
+         cover-overview-half.pdf \
+         cover-overview-half-split.pdf; do
   cp "build/$f" "$ROOT/$f"
 done
 
@@ -116,6 +143,7 @@ echo "    capability-matters-overview-half-proof.pdf Half Letter summary — pro
 echo "    capability-matters-overview-half-print.pdf Half Letter summary — print interior (bleed, Lulu)"
 echo "    cover-print.pdf                   8 × 10 Lulu wrap (spine $spine mm)"
 echo "    cover-overview-half.pdf           Half Letter summary Lulu wrap (spine $ov_spine mm)"
+echo "    cover-overview-half-split.pdf     Half Letter summary cover, split (front · spine · back)"
 echo
 echo "Lulu workflow: upload capability-matters-print.pdf as the interior"
 echo "and cover-print.pdf as the wrap (cream stock). Lulu will report the"
