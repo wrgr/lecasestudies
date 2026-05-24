@@ -484,36 +484,113 @@
   modes-code: "TK",
   impact: "Structural readiness gap in DoD's stated top-priority theater",
   diagram: dgm.dgm-indopacom,
-  body: [
-    The 2022 National Defense Strategy designates the Indo-Pacific as DoD's
-    priority theater and China as its "pacing challenge." The U.S. Marine
-    Corps has nevertheless been unable to meet training requirements at
-    Indo-Pacific training ranges for nearly a decade. GAO-24-107463
-    examined military readiness across services and domains; this case
-    focuses on the Marine Corps strand, where the agency documented
-    workarounds — rotations back to CONUS for ranges that exist there,
-    virtual training substitutes, multinational exercises pressed into
-    proxy duty — but the structural gap persists.
-
-    The problem is not unrecognized. Senior DoD leaders have testified to it
-    in Congress; GAO has published remediation recommendations across
-    successive reports; the services have published plans. None has closed
-    the gap. The capability infrastructure to operate the U.S. military in
-    its declared priority theater does not yet exist at scale.
-
-    What makes INDOPACOM diagnostically useful is the inverse correlation
-    between stated priority and actual capability investment. The theater
-    is named the most important; the training infrastructure for it is the
-    least mature. The pattern is general — capability follows resource
-    decisions, not declarative ones.
-  ],
-  quote: [Without meeting these requirements, the Marine Corps cannot ensure that its forces will be ready for combat.],
-  quote-source: "Paraphrasing GAO-24-107463, Marine Corps Training, 2024",
-  sources-list: (
-    [GAO-24-107463, _Marine Corps Training_ (2024)],
-    [2022 National Defense Strategy of the United States],
-    [Assistant Secretary of Defense for Indo-Pacific Security Affairs testimony (2022)],
+  kind: "failure",
+  sections: (
+    // -- Background --
+    [
+      The 2022 National Defense Strategy names the Indo-Pacific the
+      Department of Defense's priority theater and the People's Republic of
+      China its "pacing challenge" — the single competitor against which the
+      U.S. military is meant to measure and build itself.#cn() Set against
+      that declaration is an awkward fact about the theater so designated:
+      it has among the least mature live-training infrastructure in the
+      force. The place the strategy calls most important is, in terms of
+      where forces can actually rehearse the fight, one of the least built
+      out.#cn()
+    ],
+    // -- What Happened --
+    [
+      This case has no single date because the failure is a persistent
+      condition rather than an event. For nearly a decade the U.S. Marine
+      Corps has been unable to meet its training requirements at ranges in
+      the Indo-Pacific Command area of responsibility. The Corps has not
+      simply absorbed the shortfall; it has papered over it with
+      workarounds — rotating units back to the continental United States to
+      use ranges that exist there, substituting virtual and simulated
+      training for live events, and pressing multinational exercises into
+      proxy duty for capabilities that have no home range in theater. The
+      workarounds keep units busy and partially trained; the structural gap
+      they are compensating for does not close.#cn()
+    ],
+    // -- The Investigation --
+    [
+      In May 2024 the Government Accountability Office examined military
+      readiness across the services and documented the Marine Corps strand
+      in detail: the requirements unmet, the decade over which they had gone
+      unmet, and the workarounds standing in for the real thing. GAO
+      recommended that the Marine Corps complete a formal analysis of its
+      unmet training requirements and develop a plan to identify and
+      remediate them at Indo-Pacific ranges; the Department concurred.#cn()
+      The report was not the first warning. GAO has pressed the same family
+      of readiness recommendations across successive reviews and in
+      testimony to Congress, and the limits of overseas training — and their
+      absence from readiness reporting — were flagged in its work two
+      decades earlier.#cn() What the workarounds cannot reproduce is the very
+      thing the ranges exist to provide: the chance to rehearse, at scale and
+      against a realistic threat, the specific operations the theater would
+      demand. Rotating a unit back to the continental United States trains it
+      on American terrain and range geometry, not the distances, basing, and
+      electromagnetic environment of the Western Pacific. Virtual and
+      constructive simulation fills part of the gap but cannot fully stand in
+      for live, instrumented, force-on-force events. Multinational exercises
+      build relationships and interoperability but are scheduled around
+      partners' priorities, not around the Marine Corps' unmet requirements.
+      GAO's recommendation was therefore not simply to train more but to
+      first establish what, precisely, the unmet requirements are — to
+      convert a decade of acknowledged shortfall into a documented,
+      prioritized list against which progress could be measured and funded.
+      Until that analysis exists, the Corps cannot say with rigor how large
+      the gap is, which makes it easy for the gap to persist, unmeasured,
+      behind the reassuring activity of the workarounds.
+    ],
+    // -- The Capability Gap --
+    [
+      What makes INDOPACOM diagnostically useful is the inverse correlation
+      between stated priority and engineered priority. A theater can be
+      named the pacing challenge in every strategy document and briefing
+      while the training infrastructure to operate in it remains
+      structurally short for ten years — and that is not a contradiction the
+      system experiences as urgent, because capability follows where
+      resources and construction actually flow, not where strategy points.
+      Declared priority is cheap; engineered priority — ranges, instrumented
+      airspace, basing, the pipeline of certified units — is expensive and
+      slow, and the gap between the two is the real measure of intent. For
+      a decade that measure has pointed the same way. Building a theater's
+      training capability is not a briefing-slide commitment but a
+      construction program — ranges with the space and instrumentation to
+      rehearse modern fires and maneuver, airspace and sea space cleared for
+      it, host-nation agreements, basing, and a steady pipeline of units that
+      have actually trained there and been certified. None of that
+      materializes from a document's wording; all of it competes for the same
+      dollars and political capital as the deployments that consume the force
+      day to day. The Marine Corps' workarounds are evidence of professionals
+      doing their best inside that constraint — and evidence that best effort
+      inside a structural gap is not the same as closing it.
+    ],
+    // -- Aftermath & Reform --
+    [
+      The reform, such as it is, remains mostly prospective. The GAO
+      recommendations were open as of the 2024 report: an analysis of unmet
+      requirements to be completed and a remediation plan to be built and
+      funded.#cn() Whether the gap closes will be decided not by another
+      strategy document but by whether the Marine Corps and the Department
+      convert the recommendation into programmed ranges, dollars, and
+      schedule. The case sits at the front of this book as the live, ongoing
+      counterpart to its historical failures: a capability shortfall that is
+      fully recognized, repeatedly documented, and still — at the time of
+      writing — not engineered away.
+    ],
   ),
+  references: (
+    [_2022 National Defense Strategy of the United States of America_ (U.S. Department of Defense, 2022) — the Indo-Pacific as priority theater and China as the "pacing challenge."],
+    [U.S. Government Accountability Office, _Military Readiness: Actions Needed for DOD to Address Challenges_, #link("https://www.gao.gov/assets/gao-24-107463.pdf")[GAO-24-107463] (May 2024) — the least-mature training infrastructure in the priority theater.],
+    [GAO-24-107463 (2024) — the Marine Corps unable to meet INDOPACOM training requirements for nearly a decade, and the CONUS-rotation, virtual, and multinational-exercise workarounds.],
+    [GAO-24-107463 (2024) — recommendation that the Marine Corps analyze unmet training requirements and develop a remediation plan for Indo-Pacific ranges; DoD concurrence.],
+    [GAO, _Military Readiness_ testimony before the Senate Armed Services Committee (D. C. Maurer) — the sustained pattern of readiness recommendations; see also GAO-02-525, _Military Training: Limitations Exist Overseas but Are Not Reflected in Readiness Reporting_ (2002).],
+    [GAO-24-107463 (2024) — recommendation status (open as of 2024); the gap not yet remediated.],
+  ),
+  quote: [Without meeting these requirements, the Marine Corps cannot ensure that its forces will be ready for combat.],
+  quote-source: "Paraphrasing GAO-24-107463, Military Readiness, 2024",
   le-insight: [
     INDOPACOM illustrates the difference between declared priority and
     engineered priority. A theater designated as DoD's pacing challenge
@@ -548,34 +625,109 @@
   year: "ongoing",
   domains-list: ("defense",),
   modes-code: "TKD",
-  impact: "Fleet mission-capable rate ~51–55% vs. 90% target; Air Force short ~1,000 F-35A maintainers (GAO-23-105341); ~$1.58T projected lifecycle sustainment cost (CAPE 2023)",
+  impact: "Fleet mission-capable rate about 55% (March 2023), far short of program goals; lifecycle cost exceeds $1.7T, with ~$1.3T in operating and support; maintainer, technical-data, and depot shortfalls are the binding readiness constraint (GAO-23-105341)",
   diagram: dgm.dgm-f35,
-  body: [
-    The F-35 is the most expensive weapons program in history. GAO has
-    documented year after year that maintenance challenges — driven by
-    training deficits, technical-data gaps, and personnel shortages —
-    are the binding constraint on the fleet's readiness. None of the
-    three variants met desired mission-capable rates from FY2018 to
-    FY2023. Average depot repair turnaround is 141 days against a 60- to
-    90-day target. The Air Force alone is short approximately one
-    thousand trained F-35A maintainers (GAO-23-105341).
-
-    Of sixty-eight essential maintenance tasks, the military cannot
-    independently perform twenty-four — a dependence on contractor
-    logistics that is operationally vulnerable in contested environments.
-    Depot establishment is six years behind schedule, and the training
-    system cannot keep pace with fleet growth. The platform was fielded
-    faster than the human-capability infrastructure to sustain it:
-    aircraft arrived; the people to keep them flying did not.
-  ],
-  quote: [Organizational-level maintenance has been affected by a number of issues, including a lack of technical data and training.],
-  quote-source: "GAO-23-105341, F-35 Sustainment, 2023",
-  sources-list: (
-    [GAO-23-105341, _F-35 Sustainment_ (2023)],
-    [GAO-25-107632 and predecessors],
-    [USNI News F-35 readiness coverage (2023)],
-    [NGAUS state-by-state readiness analysis (2024)],
+  kind: "failure",
+  sections: (
+    // -- Background --
+    [
+      The F-35 is the most expensive weapons program in history. The
+      Department of Defense plans to buy nearly 2,500 of the jets, and the
+      program's estimated lifecycle cost now exceeds \$1.7 trillion — of
+      which roughly \$1.3 trillion is not the aircraft at all but the decades
+      of operating and sustaining them.#cn() That ratio is the whole story
+      in miniature: the flyaway jet is the visible, finite part; keeping a
+      global fleet of them mission-ready — the maintainers, the technical
+      data, the repair depots — is the open-ended part, and it is the part
+      that has lagged from the beginning.
+    ],
+    // -- What Happened --
+    [
+      Like the INDOPACOM case, this failure is a standing condition rather
+      than an event. As of March 2023 the F-35 fleet's mission-capable rate
+      stood at about 55 percent — the share of aircraft able to perform at
+      least one tasked mission — far short of the program's goals. Behind
+      that number sat a maintenance system that could not keep up: more than
+      10,000 components were waiting in the repair queue, above desired
+      levels, and the service depots were taking, on average, about
+      72 days to turn a component around. The depots were themselves behind
+      schedule in standing up the capacity to do the repairs at all, which
+      left the fleet leaning on a pipeline that could not meet demand.#cn()
+    ],
+    // -- The Investigation --
+    [
+      GAO's September 2023 review carried an unusually blunt title: the
+      Department and the services *need to reassess the future sustainment
+      strategy*. The report traced the readiness shortfall to a cluster of
+      human-capability and information problems — shortages of trained
+      maintainers, the military's lack of access to the technical data
+      needed to do its own repairs, and the resulting dependence on the
+      prime contractor for work the services cannot perform
+      themselves.#cn() None of this was a surprise. GAO has reported on
+      F-35 sustainment year after year, and successive reviews have repeated
+      the same diagnosis even as procurement continued and the readiness
+      numbers stayed flat.#cn() The information problem had a name. For
+      years the fleet's maintenance ran through the Autonomic Logistics
+      Information System, a centralized software backbone so cumbersome and
+      error-prone that maintainers improvised workarounds simply to keep
+      aircraft moving; the program eventually committed to replacing it, but
+      the replacement has come slowly, and a maintenance enterprise can only
+      be as good as the system that schedules its parts, tracks its
+      components, and authorizes its work. Layered on top were the maintainer
+      shortfalls — too few trained people for a fleet still growing — and
+      depots that could not absorb the repair demand. The reports return to
+      the same structural point year after year: the sustainment model was
+      built around assumptions about cost, contractor support, and data
+      access that have not held, and adjusting it at the margins has not
+      changed the trajectory.
+    ],
+    // -- The Capability Gap --
+    [
+      The F-35 is the cleanest modern example of a platform fielded faster
+      than the capability infrastructure to sustain it. Aircraft were
+      delivered on a production schedule; the maintainers to keep them
+      flying, the technical data to repair them, and the depots to overhaul
+      them were treated as follow-on costs to be sorted out later rather
+      than as deliverables that had to arrive with the jets. The result is a
+      fleet that exists physically but cannot be kept ready, because the
+      human and informational half of the system was never engineered to
+      match the hardware half — and that half does not catch up on its own.
+      The hardest part of the gap is less the headcount of maintainers than
+      the access to information. Much of the technical data needed to
+      diagnose and repair the aircraft has stayed controlled by the prime
+      contractor rather than delivered to the government, so the services
+      cannot freely write their own procedures, stand up and qualify their
+      own depots, or compete the work — a dependency that is merely expensive
+      in peacetime and genuinely dangerous in a conflict that would strain
+      the contractor's own supply chain. Fielding the jets without first
+      securing that data was a choice whose cost arrives every day an
+      aircraft sits grounded for want of a repair the military is not
+      permitted to perform itself.
+    ],
+    // -- Aftermath & Reform --
+    [
+      GAO recommended that the Department reassess its entire sustainment
+      strategy — how it secures government access to technical data, builds
+      depot capacity, and grows the maintainer workforce — rather than keep
+      patching a model that was not delivering.#cn() Those recommendations
+      remain a work in progress: the program's later reviews show costs
+      continuing to climb while mission-capable rates stay below goal.#cn()
+      The F-35 sits in this book as the live argument for treating
+      capability infrastructure — people, data, and the means to sustain
+      them — as a fielding gate rather than an afterthought. The bill for
+      skipping that gate does not disappear; it compounds.
+    ],
   ),
+  references: (
+    [U.S. Government Accountability Office, _F-35 Aircraft: DOD and the Military Services Need to Reassess the Future Sustainment Strategy_, #link("https://www.gao.gov/products/gao-23-105341")[GAO-23-105341] (Sept. 2023) — ~2,500 planned aircraft and a lifecycle cost exceeding \$1.7 trillion, ~\$1.3 trillion of it in operating and support.],
+    [GAO-23-105341 (2023) — ~55% fleet mission-capable rate (March 2023); over 10,000 components awaiting repair; ~72-day average depot turnaround; depot stand-up behind schedule.],
+    [GAO-23-105341 (2023) — sustainment shortfall traced to maintainer shortages, lack of military access to technical data, and contractor dependency.],
+    [GAO, _F-35 Sustainment: DOD Faces Several Uncertainties…_, #link("https://www.gao.gov/assets/gao-22-105995.pdf")[GAO-22-105995] (2022), and the broader GAO F-35 series — the recurring, year-over-year diagnosis.],
+    [GAO-23-105341 (2023) — recommendation that DOD reassess the future sustainment strategy.],
+    [GAO, _F-35 Sustainment: Costs Continue to Rise While Planned Use Has Decreased_, #link("https://www.gao.gov/assets/d24106703.pdf")[GAO-24-106703] (2024) — costs rising while readiness stays below goal.],
+  ),
+  quote: [Organizational-level maintenance has been affected by a number of issues, including a lack of technical data and training.],
+  quote-source: "Paraphrasing GAO-23-105341, F-35 Aircraft, 2023",
   le-insight: [
     F-35 is the live, current example of fielding a platform faster than
     its capability infrastructure can be built. The aircraft is the easy
@@ -599,7 +751,7 @@
     [Augustine, _Augustine's Laws_ (1986)],
   ),
   reflection-list: (
-    [Pick a current technology platform in your domain. Estimate the capability infrastructure that must field with it. What happens if half of that infrastructure is six years late?],
+    [Pick a current technology platform in your domain. Estimate the capability infrastructure that must field with it. What happens if half of that infrastructure is years behind the hardware?],
     [The F-35 program treated maintainer training as follow-on cost. Design a fielding gate that would prevent that decision being available to a future program manager.],
   ),
   courses: ("LEN 5", "LEN 8", "LEN 3",),
@@ -613,34 +765,116 @@
   modes-code: "THK",
   impact: "47 killed and 74 seriously injured when the crew shut down the wrong engine",
   diagram: dgm.dgm-kegworth,
-  body: [
-    After a fan blade fractured in the left engine, the crew shut down the
-    *right* engine — the one that was working. They flew for twenty
-    minutes on the failing engine before it gave out on approach to East
-    Midlands. The aircraft crashed on the embankment of the M1 motorway,
-    short of the runway.
-
-    The AAIB found that the pilots had applied the mental model from
-    earlier 737 variants, in which the right engine supplied cabin air
-    conditioning, to a 737-400 in which Boeing had changed the
-    configuration. The difference training had not communicated the
-    change. The new LED vibration displays were harder to read than the
-    older circular dials. Cabin crew and passengers could see the left
-    engine on fire from the window but did not communicate that to the
-    flight deck — a textbook CRM failure that predated Korean Air's
-    transformation (see Case 23). The AAIB issued thirty-one safety
-    recommendations.
-
-    The crew's mental model was correct for the previous variant. Their
-    training had not updated when the system did.
-  ],
+  kind: "failure",
+  sections: (
+    // -- Background --
+    [
+      On 8 January 1989 British Midland Flight 92, a nearly new Boeing
+      737-400 registered G-OBME, left London Heathrow for Belfast with 126
+      people aboard. The 737-400 was a recent variant — a stretched fuselage,
+      uprated CFM56 engines, and a partly redesigned cockpit with new
+      electronic engine instruments in place of the older round dials. The
+      crew were experienced 737 pilots, but their conversion onto the new
+      variant had been brief and largely self-directed; the differences from
+      the airplane they had been flying were communicated as a matter of
+      reading, not of practiced retraining.#cn() The variant had entered
+      service only months earlier, and British Midland was among its first
+      operators; the type's introduction had outpaced the depth of crew
+      familiarity that comes from years on an airframe. Pilots converting
+      from the older 737-200 received a conversion course measured in days,
+      much of it covering the new electronic instrument displays as
+      information to be absorbed rather than as a perceptual change to be
+      drilled. By every formal measure the crew were qualified on the
+      aircraft they were flying that night. What they did not yet have was
+      the kind of familiarity that turns the right response into a reflex
+      when an engine tears itself apart at altitude and the cabin fills with
+      smoke.
+    ],
+    // -- What Happened --
+    [
+      Climbing through about 28,300 feet, a fan blade fractured in the left
+      engine, producing heavy vibration, a burning smell, and smoke in the
+      cabin. The crew had seconds to decide which engine was failing.
+      Reasoning from the older 737s they knew — on which the air-conditioning
+      bleed drew from the right engine — they concluded the right engine was
+      the source of the smoke and throttled it back. The symptoms eased,
+      which seemed to confirm the diagnosis, and they shut the right engine
+      down. It was the one still working. Believing they had isolated the
+      trouble, they did not restart it; the vibration had eased when they
+      throttled the right engine back — partly because the still-active
+      autothrottle had reduced power on the failing left engine at the same
+      moment — and that easing read to them as confirmation. They began a
+      diversion to East Midlands Airport, and for some minutes the crippled
+      left engine ran well enough to sustain the descent while the crew
+      worked checklists, radios, and a frightened cabin, the window to
+      reconsider slipping past. On final approach, when they called for more
+      thrust, the damaged left engine failed completely — and with the good
+      engine already shut down, the aircraft had no power at all. It struck
+      the embankment of the M1 motorway short of the runway, breaking apart
+      just short of safety. Forty-seven people were killed and seventy-four
+      seriously injured.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The Air Accidents Investigation Branch traced the disaster to the
+      shutdown of the serviceable engine, and to why two competent pilots
+      made that choice. The decisive factor was a mental model carried from
+      earlier 737 variants and applied to a -400 on which Boeing had changed
+      the bleed-air configuration; the difference training had never
+      disturbed the old model.#cn() The new electronic engine displays did
+      not help: the secondary instruments, including the vibration
+      indicator that would have pointed straight at the failing engine, were
+      harder to read at a glance than the dials they replaced.#cn() And
+      although cabin crew and passengers could see flames from the left
+      engine, that observation never reached the flight deck — a
+      crew-resource-management gap of exactly the kind aviation would later
+      train hard against.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      The Kegworth crew were skilled, and their mental model was correct —
+      for the airplane they had flown the week before. The -400 had been
+      treated, for training purposes, as an incremental change to a familiar
+      type; under the time pressure of an in-flight emergency it behaved as a
+      categorical one. The training system had not engineered the difference
+      with enough force to overwrite a deeply practiced prior model, and the
+      cockpit redesign had quietly removed some of the perceptual cues that
+      a startled crew relies on. Capability had degraded under system change
+      without anyone noticing, because nothing had failed until the day it
+      did.#cn() It is worth being precise about what "training" would have
+      had to do. Reading a manual that notes the -400's revised bleed-air
+      arrangement is not the same as building, through practice under
+      realistic pressure, a new reflex that fires before the old one. The
+      crew did not reach for the wrong control out of carelessness; they
+      reached for the model their thousands of prior hours had built, and
+      the conversion course had given them nothing strong enough to override
+      it in the seconds that mattered. The gap was not in the pilots'
+      diligence but in the design of the transition itself.
+    ],
+    // -- Aftermath & Reform --
+    [
+      The AAIB issued thirty-one safety recommendations, reaching across
+      conversion and difference training, engine-instrument and
+      vibration-display design, communication between cabin and flight deck,
+      and occupant crashworthiness.#cn() The accident became a standard
+      teaching case in human factors and a reference point for how a
+      transition program should be built — so that the differences between
+      an old system and a new one are made hard to overlook rather than easy,
+      and so that the people closest to the evidence have a path to the
+      people making the decision.
+    ],
+  ),
+  references: (
+    [Air Accidents Investigation Branch, _Report on the accident to Boeing 737-400 G-OBME near Kegworth, Leicestershire, on 8 January 1989_, AAIB Aircraft Accident Report 4/90 (1990) — aircraft, route, and the limited conversion training; see also U.S. FAA, #link("https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-OBME")[Lessons Learned: G-OBME].],
+    [AAIB Report 4/90 (1990) — accident sequence: left-engine fan-blade failure, shutdown of the serviceable right engine, and total power loss on approach; 47 killed, 74 seriously injured.],
+    [AAIB Report 4/90 (1990) — the older-737 bleed-air mental model misapplied to the 737-400's changed configuration.],
+    [AAIB Report 4/90 (1990) — the new electronic engine instrumentation and the readability of the vibration indicator.],
+    [AAIB Report 4/90 (1990) — the cabin-to-flight-deck communication gap (crew resource management).],
+    [AAIB Report 4/90 (1990) — the 31 safety recommendations on difference training, instrument design, CRM, and crashworthiness.],
+    [J. Reason, _Human Error_ (Cambridge Univ. Press, 1990) — Kegworth as a case in the misapplication of a correct mental model to a changed system.],
+  ),
   quote: [The crew's mental model of the older 737 was inappropriately applied to the 737-400 on which they were operating.],
   quote-source: "Paraphrasing AAIB Aircraft Accident Report 4/90 on British Midland 92, 1990",
-  sources-list: (
-    [Air Accidents Investigation Branch, AAIB Report 4/90 (1990)],
-    [Human Reliability analysis of Kegworth, AeroTime (2024)],
-    [Reason, _Human Error_ (1990) — Kegworth as case study],
-  ),
   le-insight: [
     Kegworth is the textbook example of Capability Degradation Under
     System Change. The pilots were excellent. Their mental model was
@@ -678,39 +912,116 @@
   modes-code: "THK",
   impact: "24% of U.S. KIA in Desert Storm from friendly fire (35 of 148, per the DoD friendly-fire report) — an order of magnitude above the historical baseline",
   diagram: dgm.dgm-fratricide,
-  body: [
-    Friendly fire in Desert Storm produced an unprecedented share of
-    coalition casualties: thirty-five of one hundred forty-eight U.S.
-    combat dead, and nine of the British dead — eight of the British
-    KIA from a single A-10 attack on Warrior infantry-fighting
-    vehicles. The rate was an order of magnitude above the historical
-    two-percent baseline documented by Shrader in 1982. In another
-    incident, A-10 fire on LAV-25 light-armored vehicles near Khafji
-    killed seven Marines after a forward controller cleared the
-    strike without realizing the vehicles were friendly. In
-    Afghanistan, a B-52 JDAM strike on a position near Qala-i-Jangi
-    killed three U.S. Special Forces after a controller's GPS reset
-    its coordinates following a battery change; in 2014 a B-1
-    targeting pod could not detect the infrared strobes worn by U.S.
-    SOF on the ground, and the resulting strike killed five.
-
-    The Army identified leading causes as "chaos and confusion of warfare;
-    inadequate situational awareness; inadequate employment of, and
-    adherence to, fire control measures; and combat-identification
-    failures." A 1993 external study found that the lack of a
-    comprehensive and accessible automated database prevented thorough
-    examination of the problem — meaning the capability to learn from
-    fratricide was itself a capability gap. Two decades later, the rate
-    had not returned to baseline.
-  ],
+  kind: "failure",
+  sections: (
+    // -- Background --
+    [
+      Friendly fire is as old as organized war, but its true rate has always
+      been hard to pin down. The most-cited historical estimate came from
+      Charles Shrader, whose 1982 study _Amicicide_ examined 269 incidents
+      and concluded that fratricide accounted for something under two percent
+      of battle casualties. That figure later proved fragile: subsequent
+      analysts argued the real historical rate was closer to ten or fifteen
+      percent, and Shrader himself stepped back from the two-percent number.
+      The disputed baseline matters because it became the yardstick against
+      which a modern war would be measured.#cn()
+    ],
+    // -- What Happened --
+    [
+      The 1991 Gulf War made the question concrete and grim. Of 146 U.S.
+      service members killed in action, 35 — about 24 percent — died by
+      friendly fire; of 467 wounded, 72 (about 15 percent) were hit by their
+      own side.#cn() The toll was not abstract. An A-10 strike on U.S.
+      LAV-25 light-armored vehicles near Khafji killed seven Marines after a
+      coordinated engagement went wrong, and a single A-10 attack on British
+      Warrior fighting vehicles killed nine soldiers. Whatever the right
+      historical baseline, a quarter of American combat deaths coming from
+      one's own forces was a number no one could explain away as the
+      ordinary friction of battle.#cn() The incidents shared a grim
+      signature: the weapons worked exactly as designed, and the people
+      firing them were competent and trying to do the right thing. What
+      failed was the chain that lets a shooter know, in the seconds
+      available, whether the vehicle or the position in the sights is friend
+      or foe — a forward controller's read of a fluid ground picture, the
+      coordination between aircraft and the units below them, the markings
+      and signals meant to say "us." In the desert, at night, in fast-moving
+      armored battle, that chain broke repeatedly, and it broke not because
+      any one part was obviously deficient but because the parts did not
+      hold together under the speed and confusion of combat.
+    ],
+    // -- The Investigation --
+    [
+      The post-war reviews converged on a familiar set of causes: the chaos
+      and confusion of combat, inadequate situational awareness, weak
+      adherence to fire-control measures, and combat-identification
+      failures — crews and controllers unable to tell friend from foe fast
+      enough under fire.#cn() One finding cut deeper than the rest. Analysts
+      noted that the military lacked a comprehensive, accessible record of
+      fratricide incidents, which meant the institution could not study its
+      own pattern rigorously. The capability to *learn* from friendly fire
+      was itself missing — a second-order gap sitting beneath the
+      first.#cn() That second-order gap mattered as much as any single
+      engagement. Without a rigorous, shared record, the services could not
+      separate the incidents that arose from training from those that arose
+      from doctrine, equipment, or the irreducible chaos of battle; they
+      could not tell whether a given fix was working or whether an apparent
+      improvement was simply a quieter war. Each service investigated its own
+      tragedies, often thoroughly, but the lessons stayed local, and the
+      pattern across them — the part that would have told the institution
+      where to invest — went largely unassembled. A problem that is not
+      measured well is a problem that is easy to declare solved and easy to
+      keep having.
+    ],
+    // -- The Capability Gap --
+    [
+      Fratricide is not one problem but the failure of several systems to
+      integrate: situational awareness, fire-control discipline, combat
+      identification, and joint coordination each became the subject of
+      dedicated programs, yet the rate did not fall to anything like a
+      negligible level in the conflicts that followed. In Afghanistan a
+      satellite-guided bomb strike went fatally wrong after a controller's
+      device reset its coordinates following a battery change, and in 2014 a
+      B-1's targeting pod could not detect the infrared strobes U.S. troops
+      were wearing to mark themselves, and the strike killed five. Each
+      contributor had been worked on; the integration *across* them — the
+      property that actually keeps friendly forces from killing each
+      other — is the hardest thing to engineer by program, and it is where
+      the capability kept failing.#cn() This is why fratricide resists the
+      single fix that intuition reaches for. A better radio, a new
+      transponder, a tracking display — each addresses one contributor, and
+      each has been bought; but the instant that decides whether a strike
+      kills the enemy or a friend is the instant all of them must come
+      together correctly, fast, under stress, across services and sometimes
+      across allies. Integration is not a box that any one program office
+      owns, and it does not appear on a procurement schedule. It has to be
+      trained, exercised, and measured as a capability in its own right —
+      which is far harder than fielding any of its parts.
+    ],
+    // -- Aftermath & Reform --
+    [
+      The response was a generation of combat-identification investment:
+      better identification-friend-or-foe systems, position-reporting and
+      blue-force-tracking networks, and changes to fire-control doctrine and
+      training. The improvements were real, and yet fratricide never dropped
+      to a confidently low, stable rate, and even measuring it remained
+      contested.#cn() That is the lesson the case carries into this book:
+      where capability is an emergent property of many systems working
+      together, no single program — and no single technology — closes the
+      gap, and progress has to be measured against an honest baseline rather
+      than a convenient one.
+    ],
+  ),
+  references: (
+    [C. R. Shrader, _Amicicide: The Problem of Friendly Fire in Modern War_ (U.S. Army Combat Studies Institute, 1982) — the under-2% estimate from 269 incidents, a baseline later challenged as too low (with estimates nearer 10–15%).],
+    [#link("https://www.usni.org/magazines/proceedings/1994/june/friendly-fire-facts-myths-and-misperceptions")["Friendly Fire: Facts, Myths and Misperceptions," _U.S. Naval Institute Proceedings_ (June 1994)] — Desert Storm: 35 of 146 KIA (24%) and 72 of 467 wounded (15%) by friendly fire; critique of the 2% "historical norm."],
+    [Khafji and Warrior fratricide incidents (Feb. 1991) — see USNI _Proceedings_ (1994) and #link("https://time.com/archive/6718429/gulf-war-they-didnt-have-to-die/")[Time, "They Didn't Have to Die"]. _(Per-incident casualty figures vary across sources; see AUDIT.)_],
+    [U.S. GAO, _Operation Desert Storm_ fratricide investigations — Apache incident (OSI-93-4) and Army fratricide investigation (OSI-95-10) — causes and the Army's reviews.],
+    [Post-war combat-identification reviews — leading causes (situational awareness, fire-control measures, combat ID) and the absence of a comprehensive incident database. _(Synthesized from secondary analyses; see AUDIT.)_],
+    [Later-conflict recurrences (2001 coordinate-reset strike; 2014 B-1 infrared-strobe strike) and S. Snook, _Friendly Fire_ (Princeton Univ. Press, 2000) on the 1994 Black Hawk shootdown — the systems-integration archetype.],
+    ["IFF Update: Stalled Again," _U.S. Naval Institute Proceedings_ (June 1994) — the combat-identification and identification-friend-or-foe programs pursued after Desert Storm, and how slowly they matured.],
+  ),
   quote: [The lack of a comprehensive and accessible automated database prevented thorough examination of the problem.],
   quote-source: "Paraphrasing post–Desert Storm fratricide reviews, c. 1993",
-  sources-list: (
-    [Shrader, _Amicicide: The Problem of Friendly Fire in Modern War_ (1982)],
-    [Air & Space Forces Magazine, friendly-fire historical analysis],
-    [Time, "The Fog of War" (2014)],
-    [Army Center for Lessons Learned, IFF and CID reports],
-  ),
   le-insight: [
     Fratricide is a multi-decade capability problem that resists single-
     intervention solutions. Each of the contributing causes — situational
@@ -751,36 +1062,116 @@
     emphasis: 2,
     caption: "ACGME duty-hour reform — capping hours did not, on its own, engineer the capability",
   ),
-  body: [
-    Following the 1984 death of Libby Zion at a New York teaching
-    hospital — focal point of a multi-decade argument about resident
-    physician fatigue — the Accreditation Council for Graduate
-    Medical Education (ACGME) imposed an 80-hour weekly cap on
-    resident work hours in 2003. In 2011 the rules tightened
-    further: first-year residents were capped at 16-hour shifts. The
-    intent was to address a documented training-gap pattern:
-    residents making fatigue-related errors they would not have made
-    rested.
-
-    The intervention was a single-variable change to a complex
-    capability system. Two large RCTs — FIRST (Bilimoria et al.,
-    NEJM 2016) and iCOMPARE (Silber et al., NEJM 2019) — compared
-    flexible duty-hour policies with the strict caps. Both found no
-    difference in 30-day patient outcomes; both surfaced increased
-    hand-offs per admission, themselves a documented site of error.
-    Resident continuity-of-care and procedural exposure decreased;
-    residents reported feeling less prepared rather than more
-    rested. In 2017 ACGME relaxed the 16-hour intern cap.
-  ],
-  quote: [Flexible, less-restrictive duty hour policies for first-year residents were associated with non-inferior patient outcomes and no significant difference in residents' satisfaction with overall well-being and education quality.],
-  quote-source: "Silber, Bellini, Shea et al., iCOMPARE Trial, NEJM 2019",
-  sources-list: (
-    [#link("https://doi.org/10.1056/NEJMoa1515724")[Bilimoria, Chung, Hedges et al. (2016), "National Cluster-Randomized Trial of Duty-Hour Flexibility in Surgical Training," _NEJM_ 374: 713–727. doi:10.1056/NEJMoa1515724]],
-    [#link("https://doi.org/10.1056/NEJMoa1810641")[Silber, Bellini, Shea et al. (2019), "Patient Safety Outcomes under Flexible and Standard Resident Duty-Hour Rules," _NEJM_ 380: 905–914. doi:10.1056/NEJMoa1810641]],
-    [Asch et al. (2014), "Resident Duty Hours and Medical Education Policy," _NEJM_ 370: 1671–1673],
-    [ACGME, _Common Program Requirements_ (2003, 2011, 2017 revisions)],
-    [Lerner (2006), _The Libby Zion Case and the Reform of Medical Education_],
+  kind: "intervention",
+  sections: (
+    // -- Background --
+    [
+      In 1984 Libby Zion, an 18-year-old patient, died at a New York teaching
+      hospital in a case her family blamed on overworked, under-supervised
+      residents. The death became the focal point of a decades-long argument
+      about resident-physician fatigue: trainees routinely worked punishing
+      hours with little sleep and thin supervision, and the worry was that
+      exhausted doctors made errors that rested ones would not. New York
+      convened the Bell Commission, whose recommendations led the state in
+      1989 to limit residents' hours and strengthen on-site supervision —
+      the first such rules in the country. For more than a decade those
+      limits remained a largely local experiment while the national
+      accreditation system weighed whether to follow; accumulating evidence
+      on sleep deprivation and a rising public appetite for patient-safety
+      reform eventually carried the argument, and the pressure for a
+      national standard built from there.#cn()
+    ],
+    // -- The Intervention --
+    [
+      In 2003 the Accreditation Council for Graduate Medical Education
+      capped resident work at 80 hours per week, averaged over four weeks. In
+      2011 it tightened the rules again, limiting first-year residents to
+      shifts of no more than 16 hours. The logic was clean and intuitive:
+      fatigue causes error, so reduce the hours and the errors should follow.
+      It was, in capability terms, a single-variable intervention — change
+      one input and expect the outcome to move.#cn()
+    ],
+    // -- How It Worked --
+    [
+      Hours, though, were one input to a system with many. Cutting them did
+      not remove the work; it redistributed it, and it multiplied the number
+      of patient hand-offs between residents — themselves a well-documented
+      site of error, where information falls through the gaps between
+      shifts. Continuity of care suffered, and so did residents' exposure to
+      the long arc of a case and to procedures they needed repetitions to
+      master. In surveys, many residents reported feeling less prepared
+      rather than better rested. The cap had changed the input without
+      engineering the rest of the system around it.#cn() There was a quieter
+      loss as well. The long shift had been doing work no one had fully
+      accounted for: it was where a resident watched a patient's course
+      unfold from admission through crisis to resolution, where supervision
+      happened in the moment rather than across a hand-off note, and where
+      the sheer volume of repetitions built procedural skill. Capping the
+      hours removed those by-products along with the fatigue, and nothing was
+      put in their place — the reform subtracted an input without redesigning
+      the system that input had quietly been sustaining.
+    ],
+    // -- The Evidence --
+    [
+      Two large randomized trials put the policy to a real test. FIRST
+      (Bilimoria et al., _NEJM_ 2016), in surgical-training programs, found
+      that flexible, less-restrictive duty-hour policies were non-inferior
+      to the strict caps on patient outcomes and no worse for residents'
+      well-being and education.#cn() iCOMPARE (Silber et al., _NEJM_ 2019),
+      in internal-medicine programs, reached a parallel result: flexible
+      first-year policies were associated with non-inferior patient outcomes
+      and no significant difference in residents' satisfaction with their
+      well-being and education.#cn() Neither trial found the patient-safety
+      gain the strict cap had been imposed to deliver. In 2017 the ACGME
+      relaxed the 16-hour intern limit.#cn() It is worth being careful about
+      what the trials did and did not establish. They did not show that
+      fatigue is harmless, nor that hours never matter; they showed that,
+      within the range tested, trading the strict cap for flexibility did not
+      worsen patient outcomes or resident well-being — which means the strict
+      cap's promised benefit failed to appear where it had been most
+      confidently predicted. The result reframed the question. The issue was
+      never whether tired residents err, but whether reducing one input, by
+      itself and without rebuilding supervision, hand-offs, and continuity
+      around it, reliably produces a safer system. On the evidence, it did
+      not.
+    ],
+    // -- What Transferred --
+    [
+      Duty-hour reform is the clearest case in this book of a single-variable
+      intervention into a multi-variable capability system — and of the
+      evidence eventually catching up with a well-intentioned policy. It is
+      worth reading against the successes elsewhere in these pages. The
+      Keystone ICU project, crew resource management, and the surgical safety
+      checklist worked because they engineered supervision, hand-off, and
+      measurement architecture *together with* the behavioral change, rather
+      than adjusting one input and assuming capability would follow.#cn() The
+      lesson is not that resident fatigue does not matter; it is that
+      capability is a property of the whole system, and a reform that moves
+      one variable while leaving the others untouched will be measured, in
+      the end, by what it actually produced. The field eventually learned
+      the constructive version of the lesson. The most durable patient-safety
+      advances of the era were not single prohibitions but engineered
+      bundles — structured hand-off protocols, checklist-driven processes,
+      and supervision redesigned around the points where information was
+      being lost — that changed several variables together and measured the
+      result. Duty-hour reform earns its place in a training-gap chapter
+      precisely because it began as the intuitive move, the one that felt
+      obviously right, and because the evidence then did what evidence is
+      for: it told the field that feeling right was not the same as being
+      effective, and sent it back to design the harder, whole-system answer.
+    ],
   ),
+  references: (
+    [B. H. Lerner, _The Libby Zion Case and the Reform of Medical Education_ (2006); and the 1989 New York State (Bell Commission) duty-hour regulations — the origin of the reform.],
+    [Accreditation Council for Graduate Medical Education, _Common Program Requirements_ (2003 and 2011 revisions) — the 80-hour weekly cap and the 16-hour first-year shift limit.],
+    [D. A. Asch et al., "Resident Duty Hours and Medical Education Policy," _NEJM_ 370: 1671–1673 (2014); Institute of Medicine (Ulmer, Wolman & Johns, eds.), _Resident Duty Hours: Enhancing Sleep, Supervision, and Safety_ (2008) — hand-offs and continuity trade-offs.],
+    [Bilimoria, Chung, Hedges et al., "National Cluster-Randomized Trial of Duty-Hour Flexibility in Surgical Training" (FIRST), _NEJM_ 374: 713–727 (2016). #link("https://doi.org/10.1056/NEJMoa1515724")[doi:10.1056/NEJMoa1515724].],
+    [Silber, Bellini, Shea et al., "Patient Safety Outcomes under Flexible and Standard Resident Duty-Hour Rules" (iCOMPARE), _NEJM_ 380: 905–914 (2019). #link("https://doi.org/10.1056/NEJMoa1810641")[doi:10.1056/NEJMoa1810641].],
+    [ACGME, _Common Program Requirements_ (2017 revision) — relaxation of the 16-hour first-year shift limit.],
+    [P. Pronovost et al., Keystone ICU intervention, _NEJM_ 355: 2725–2732 (2006), #link("https://doi.org/10.1056/NEJMoa061115")[doi:10.1056/NEJMoa061115]; A. B. Haynes et al., surgical safety checklist, _NEJM_ 360: 491–499 (2009), #link("https://doi.org/10.1056/NEJMsa0810119")[doi:10.1056/NEJMsa0810119] — integrated interventions that engineered the surrounding architecture.],
+  ),
+  quote: [Flexible, less-restrictive duty hour policies for first-year residents were associated with non-inferior patient outcomes and no significant difference in residents' satisfaction with overall well-being and education quality.],
+  quote-source: "Paraphrasing iCOMPARE Trial (Silber et al., NEJM 2019)",
   le-insight: [
     The clearest healthcare case in the dataset of a single-variable
     intervention into a multi-variable capability system. Pairs with

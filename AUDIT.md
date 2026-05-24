@@ -18,6 +18,63 @@ below.
 
 ---
 
+## 2026 restructure — three 8×10 editions + 4-page cited cases (in progress)
+
+The book is being restructured (May 2026). Two changes supersede parts
+of the older record above:
+
+1. **Editions.** One trim — **8 × 10 in** — now renders as three
+   editions from a single source: `print` (grayscale, 3 mm bleed, Lulu),
+   `digital` (color, cream backdrop), and `proof` (the print page
+   centered on US Letter with an 8 × 10 trim outline + crop marks, for
+   100% office printing). The earlier Half Letter / US Letter / draft
+   trims and their covers/targets are retired. (The "A5 / 296-page"
+   notes above predate this change.)
+
+2. **4-page cited cases.** Each case is being converted from the 2-page
+   spread to a 4-page structure: a five-beat sourced narrative (pages
+   1–3) with inline `#cn()` citation markers and a numbered per-case
+   reference list at the end of page 3, and the LE Lens on page 4.
+   `make check` enforces, per converted case: exactly 4 pages, verso
+   start, references on page 3, and **marker count == reference count**.
+
+### Chapter 1 — conversion audit notes (8/8 cases converted & passing)
+
+Cases sourced by synthesis across primary investigations + reputable
+secondary reporting. Accuracy corrections and flags made during
+conversion:
+
+- **Case 1 (Fitzgerald/McCain).** Corrected the casualty split to
+  **7 (Fitzgerald) / 10 (McCain)** — the prior text's "8 / 9" was wrong.
+  Corrected the McCain NTSB report to **NTSB/MAR-19/01** (the prior
+  "MAR-20/01" was wrong); Fitzgerald is NTSB/MAR-20/02. Added the
+  touch-screen ship-control console as an interface failure.
+- **Case 26 (F-35).** Replaced several unverified specifics with
+  figures confirmed in GAO-23-105341 (Sept 2023): mission-capable rate
+  **~55% (March 2023)**; depot turnaround **~72 days average**;
+  lifecycle cost **>\$1.7T (~\$1.3T O&S)**; **10,000+** components
+  awaiting repair. ⚠️ The prior text's "141-day depot turnaround,"
+  "~1,000 F-35A maintainer shortfall," "24 of 68 tasks," and "depot 6
+  years behind" were **not re-verified**; reinstate only with a sourced
+  citation.
+- **Case 33 (Fratricide).** Reframed the "2% historical baseline":
+  Shrader's <2% figure (Amicicide, 1982) is **contested** — later
+  analyses put the historical rate nearer 10–15%, and Shrader reportedly
+  retracted it. Desert Storm figures (35/146 KIA, 24%; 72/467 wounded,
+  15%) per USNI Proceedings (1994). ⚠️ Per-incident casualty counts
+  (Khafji "7 Marines"; Warrior "9 British") **vary across sources**; the
+  combat-ID reform paragraph is synthesized from secondary analyses.
+- **Case 3 (AF447).** Removed the prior text's specific BEA
+  recommendation numbers ("FRAN-2012-041/-045/-046") pending
+  re-verification; cite the BEA final report's recommendations
+  generally instead.
+- **Quotes marked "Paraphrasing"** where verbatim wording was not
+  re-confirmed against the source: iCOMPARE conclusion (Case 34), the
+  GAO F-35 maintenance line (Case 26), the AAIB mental-model line
+  (Case 30), and the GAO Marine Corps readiness line (Case 9).
+
+---
+
 ## Status snapshot
 
 | Category                                          | Resolved | Outstanding |
