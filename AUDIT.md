@@ -18,7 +18,7 @@ below.
 
 ---
 
-## 2026 restructure — three 8×10 editions + 4-page cited cases (in progress)
+## 2026 restructure — three 8×10 editions + 3-page cited cases (COMPLETE: 100/100)
 
 The book is being restructured (May 2026). Two changes supersede parts
 of the older record above:
@@ -94,6 +94,67 @@ conversion:
   court records) plus reputable secondary reporting; quotes left
   verbatim are drawn from those reports, and "Paraphrasing" marks any
   attribution not re-confirmed word-for-word.
+
+### Chapter 1 extras (ch01b, cases 43–50) — conversion notes
+
+- All eight converted to the failure five-beat structure. Sourced to
+  primary investigations: Colgan (NTSB/AAR-10/01), Asiana 214
+  (NTSB/AAR-14/01), Mark 14 torpedo (Blair, _Silent Victory_; Rowland &
+  Boyd), Eagle Claw (Holloway Commission; Goldwater-Nichols), Helios 522
+  (Hellenic AAIASB 11/2006), AeroPerú 603 (Peru CIAA 1996), Atlas 3591
+  (NTSB/AAR-20/02), TransAsia 235 (Taiwan ASC 2016).
+- ⚠️ AeroPerú 603 — the Peruvian DGAC/CIAA report is cited from secondary
+  summaries; the official report number/date was not independently
+  re-verified. Atlas 3591 PRD effective-date phasing (2021 rule →
+  2022 effective → 2024 full coverage) drawn from FAA rulemaking summaries.
+
+### Chapter 7 (evidence gap, cases 31, 83–87) — conversion notes
+
+- Sourced to primary documents: Makary & Daniel (_BMJ_ 2016) and
+  Shojania & Dixon-Woods (_BMJ Q&S_ 2017) for medical error; DOJ/FCA
+  settlements + Wheatley Review for LIBOR; the 2011 Special Investigators
+  report for APS; SEC OIG-509 (2009) for Madoff; the 9/11 Commission
+  Report (2004) for intelligence sharing; VIGOR (NEJM 2000) / APPROVe
+  (NEJM 2005) / Graham Senate testimony for Vioxx.
+- Quotes verbatim where drawn from the named report; "Paraphrasing" marks
+  Wheatley, the Atlas/Madoff-adjacent lines, and the Graham testimony.
+
+### Chapter 8 (interventions, 15 cases) — conversion notes
+
+- Intervention five-beat structure. Sourced to primary studies: CRM/CAST
+  (FAA AC 120-51E; CAST reports), Keystone (Pronovost _NEJM_ 2006), INPO
+  (Rees, _Hostages of Each Other_; Kemeny Commission), WHO checklist
+  (Haynes _NEJM_ 2009; Urbach _NEJM_ 2014 null result noted), Navy SWO
+  reform (GAO-21-168 — evidence-of-effect explicitly flagged as
+  outstanding), Korean Air (NTSB KAL 801), Andon (Liker; Spear & Bowen),
+  TeamSTEPPS (AHRQ 3.0), Rickover (Polmar & Allen; GAO), GSU (Renick &
+  Strom), Cognitive Tutor (Anderson et al.; RAND), Tylenol, ASRS, Bristol
+  (Kennedy Inquiry), Singapore Airlines (Taiwan ASC SQ006).
+- ⚠️ Andon "majority resolved within a minute" softened from the prior
+  prose's specific "4.2 minutes average" (not re-verified). Several
+  quote-sources are "Editors' synthesis" where no single verbatim source
+  exists (CRM, TeamSTEPPS, Korean Air, Cognitive Tutor); these are
+  flagged in-text and the references list the underlying primary works.
+
+### Chapter 9 (Human-AI frontier, cases 92–100) — conversion notes
+
+- Frontier five-beat structure (The Shift / What Is Emerging / The
+  Capability Question / Early Evidence / Open Problems). Sourced to
+  primary documents and peer-reviewed work: NTSB HAR-17/02 & HAR-20/01 +
+  NHTSA SGO/ODI for Tesla; CPUC/DMV decisions + Quinn Emanuel report for
+  Cruise; ProPublica (2016) + Chouldechova / Kleinberg-Mullainathan-
+  Raghavan for COMPAS; Larrazabal (_PNAS_ 2020) & Obermeyer (_Science_
+  2019) for radiology/clinical AI; JAMA editorials + Sallam for clinical
+  LLMs; Lum & Isaac + Richardson-Schultz-Crawford for predictive
+  policing; Jumper et al. (_Nature_ 2021) & Varadi et al. for AlphaFold;
+  Peng/Pearce/Sandoval/Dell'Acqua for AI coding.
+- ⚠️ These are **live, ongoing** cases: figures (e.g. "dozens of Tesla
+  Autopilot fatalities") reflect NHTSA SGO data as of conversion and will
+  drift; the frontier cases should be re-checked before each printing.
+  Quote-sources marked "Editors' synthesis" (radiology AI, clinical LLMs)
+  paraphrase a body of work rather than one verbatim line. Case 100 is
+  intentionally open/forward-looking; its "references" point to the
+  discipline's literature and the volume itself rather than to an incident.
 
 ---
 
@@ -330,17 +391,19 @@ the pre-press production pipeline:
 
 ```sh
 bash scripts/build.sh
-# produces:
-#   build/capability-matters.pdf        screen (cream backdrop)
-#   build/capability-matters-print.pdf  print (transparent backdrop)
-#   build/cover.pdf                     cover wrap for current page count
-# mirrored to repo root
+# produces (8 × 10 in, single source, three editions):
+#   build/capability-matters-print.pdf    grayscale, 3 mm bleed (Lulu interior)
+#   build/capability-matters-digital.pdf  color, cream backdrop (screen)
+#   build/capability-matters-proof.pdf    print page on US Letter + trim marks
+#   build/cover-print.pdf                 Lulu cover wrap (spine from page count)
 ```
 
-Upload `capability-matters-print.pdf` to Lulu, select cream-paper
-stock so the physical paper provides the cream tone; the cover
-wrap auto-sizes to the current 296-page spine via
-`cover/cover.typ`.
+With all 100 cases converted to the 3-page cited format the interior is
+**374 pp** and the computed spine is **23.23 mm** (re-checked at build
+time from the live page count). Upload `capability-matters-print.pdf`
+as the Lulu interior and `cover-print.pdf` as the wrap; select
+cream-paper stock so the physical paper provides the cream tone.
+Re-run with the cover override if Lulu reports a different spine.
 
 ---
 
