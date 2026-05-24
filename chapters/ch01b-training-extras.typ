@@ -124,6 +124,19 @@
   reflection-list: (
     [What information about operators in your domain exists somewhere in the system but does not flow to the decisions that depend on it?],
     [Design the data-flow architecture that would make a Colgan-equivalent visible *before* the accident rather than after.],
+    [The reform in 2009 was driven by victims' families, not the industry that had resisted it. What load-bearing constituency in your domain could force a stalled data-flow fix into existence, and what evidence would mobilize them?],
+  ),
+  approaches: (
+    during: (
+      [Make a pilot's documented training history a required, structured input to the hiring and licensing decision, not a record held passively in carrier files.],
+      [Design the data flow so that adverse signals (failed training events) are pushed to the decision point rather than waiting to be requested.],
+      [Define record retention and transfer obligations across carriers up front, so a clean-looking application cannot conceal a known history.],
+    ),
+    after: (
+      [Audit whether the records actually reach hiring decisions, treating a complete file that never arrives as a live failure, not a solved one.],
+      [Monitor the pipeline for operators whose adverse history is not surfacing, and act before the gap is paid for in an accident.],
+      [Sustain the records database against drift and gaps in coverage, since a data-flow remedy decays as fast as its weakest link.],
+    ),
   ),
   courses: ("LEN 4", "LEN 5", "LEN 8"),
 )
@@ -165,7 +178,10 @@
       Francisco. The captain was experienced on other types but new to
       the 777 and flying it under the supervision of a training captain;
       the approach was a visual one, with the airport's instrument
-      glideslope out of service for construction.#cn()
+      glideslope out of service for construction — so a pilot still learning
+      the type's automation was hand-flying an approach stripped of the
+      vertical guidance that would normally have anchored it, exactly the
+      conditions under which an unfamiliar mode is most likely to bite.#cn()
     ],
     // -- What Happened --
     [
@@ -175,7 +191,10 @@
       not advance thrust to hold the selected speed. Airspeed decayed to
       about 103 knots against a target of 137; the 777 struck the seawall
       short of the runway, killing three and injuring nearly two hundred
-      of the 307 aboard.#cn()
+      of the 307 aboard. The thirty-four-knot shortfall built up silently
+      while the crew believed the automation was holding the speed, so the
+      first unambiguous signal of trouble was the airframe itself running out
+      of energy on short final.#cn()
     ],
     // -- The Investigation --
     [
@@ -184,7 +203,11 @@
       by the complexity of the autothrottle and autopilot flight-director
       systems and by the crew's faulty mental model of the automation.
       The captain told investigators he had assumed the autothrottle
-      would maintain speed; in that configuration, it does not.#cn()
+      would maintain speed; in that configuration, it does not — a gap
+      between the system's documented behavior and the mental model the
+      training had left him with, the kind of mismatch that surfaces only
+      when the automation is asked to do what the operator wrongly believes
+      it is already doing.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -193,7 +216,9 @@
       the crew believed it was in diverged silently. The missing
       capability was not raw pilot skill but transparency — a system
       that made its own state, and the fact that the crew now owned the
-      airspeed, salient at the moment it mattered.#cn()
+      airspeed, salient at the moment it mattered, rather than leaving the
+      handoff of responsibility to be inferred from a silent mode change the
+      interface did nothing to announce.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -202,7 +227,10 @@
       training that preserves manual-flying proficiency to counter
       automation dependence. The accident became a standard reference in
       airline automation-policy reviews and in the push toward
-      "automation airmanship" curricula.#cn()
+      "automation airmanship" curricula — shifting the lesson from one crew's
+      error to a recurring design problem about how modes are annunciated and
+      how monitoring is taught when the automation is doing most of the
+      flying.#cn()
     ],
   ),
   references: (
@@ -236,6 +264,19 @@
   reflection-list: (
     [Identify a mode in an automated system you work with where the operator's mental model and the system's actual behavior can silently diverge. How would the operator know?],
     [Design the interface change that would have alerted the Asiana crew to the mode mismatch before the airspeed decayed.],
+    [The autothrottle's HOLD reversion handed airspeed back to a crew that did not know it now owned it. Design the annunciation that would make a transfer of responsibility between automation and operator unmissable at the instant it occurs.],
+  ),
+  approaches: (
+    during: (
+      [Make automation transparency a design requirement: the system must announce its active mode and any silent reversion, not leave it to be inferred.],
+      [Annunciate transfers of responsibility (e.g., when the crew now owns airspeed) explicitly at the moment they occur, so no handoff is implicit.],
+      [Design and validate mode logic against operator mental models during development, so configurations that "do not do what pilots assume" are caught before fielding.],
+    ),
+    after: (
+      [Train and audit energy-state monitoring so a slow, silent airspeed decay is caught by the crew before the airframe signals it.],
+      [Preserve manual-flying proficiency through recurrent practice to counter the automation dependence that hid the decay.],
+      [Monitor operations for mode-confusion events and feed them into automation-policy and annunciation-design reviews.],
+    ),
   ),
   courses: ("LEN 5", "LEN 2"),
 )
@@ -277,7 +318,9 @@
       start of the Pacific War. It had been so expensive to test that
       the Bureau of Ordnance had effectively forbidden live trials in
       the 1930s; the weapon went to war essentially unproven against
-      realistic conditions.#cn()
+      realistic conditions, so the very decision meant to conserve a scarce
+      and costly weapon guaranteed that its defects would first be discovered
+      in combat, by the crews who could least afford them to surface there.#cn()
     ],
     // -- What Happened --
     [
@@ -286,7 +329,10 @@
       that detonated prematurely or not at all, and contact firing pins
       that crushed on a direct hit. The Bureau of Ordnance insisted the
       weapon worked and attributed the misses to crew error; captains
-      who reported failures risked their careers.#cn()
+      who reported failures risked their careers — an arrangement that turned
+      every field report into a self-accusation and so suppressed the very
+      evidence that would have isolated the defects the Bureau refused to
+      acknowledge.#cn()
     ],
     // -- The Investigation --
     [
@@ -298,7 +344,9 @@
       The tests confirmed the
       torpedo ran about ten feet too deep, that the Mark 6 magnetic
       exploder failed routinely, and that the contact pin buckled on
-      perpendicular impact.#cn()
+      perpendicular impact — three independent defects that had been masking
+      one another at sea, which is why a fleet commander's controlled trial,
+      not another combat patrol, was finally able to separate and prove them.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -308,7 +356,9 @@
       could be made to hear what the boats already knew. The fixes —
       recalibrating depth, deactivating the magnetic exploder, redesigning
       the contact pin — were small. The refusal to believe the operators
-      was the expensive part.#cn()
+      was the expensive part, measured not in engineering hours but in the
+      months of patrols and the targets that escaped while a bureau defended
+      a verdict the boats had already disproven.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -317,7 +367,9 @@
       entered U.S. Navy institutional history as the canonical case of a
       procurement bureau insulated from operator feedback, and is cited
       in modern organizational-learning literature on the cost of
-      suppressing field reports.#cn()
+      suppressing field reports — a reminder that the structure that decides
+      whose evidence counts is itself a capability, and that its absence can
+      cost more than any single technical defect it conceals.#cn()
     ],
   ),
   references: (
@@ -358,6 +410,18 @@
     [Design the operator-feedback channel that the U.S. Navy Bureau of Ordnance should have had in 1941. Who signs, who receives, what triggers action?],
     [The USS Tinosa fired a string of torpedoes that struck a stopped ship and failed to detonate before the bureau accepted the diagnosis. What is the operator-evidence threshold in your domain that would force the equivalent institutional acknowledgment — and how would you make sure it is reached before the cost is paid?],
   ),
+  approaches: (
+    during: (
+      [Require realistic live testing before fielding, even for scarce and costly items, so defects surface in trials rather than in combat.],
+      [Build an operator-feedback channel into the weapon's ownership from the start, with a path that does not put the reporter's career at risk.],
+      [Separate the authority that certifies a system from the authority that investigates its field failures, so a bureau cannot judge its own product.],
+    ),
+    after: (
+      [Audit field reports for suppressed or career-risking signals, and treat a pattern of "operator error" verdicts as a warning to test the system, not the crew.],
+      [Empower an operational commander to order controlled trials when field reports conflict with the owner's certification.],
+      [Sustain the feedback channel so multiple masking defects can be separated and proven before the cost compounds.],
+    ),
+  ),
   courses: ("LEN 10", "LEN 7", "LEN 8"),
 )
 
@@ -397,7 +461,10 @@
       failed diplomacy, the Carter administration authorized a military
       rescue. No standing joint special-operations command existed to
       plan or execute it; the force had to be assembled from units drawn
-      separately from the Army, Navy, Marines, and Air Force.#cn()
+      separately from the Army, Navy, Marines, and Air Force — each bringing
+      its own equipment, procedures, and chain of command to a mission that
+      demanded they act as one, with no institution whose job it was to make
+      them cohere before the night of the raid.#cn()
     ],
     // -- What Happened --
     [
@@ -407,7 +474,10 @@
       minimum needed; the commander aborted. During the withdrawal a
       helicopter collided with a C-130 tanker, and the resulting fire
       killed eight servicemembers. The mission failed before reaching
-      Tehran.#cn()
+      Tehran — undone not by enemy action but by attrition and a chaotic
+      withdrawal among aircraft and crews that had never operated together,
+      the predictable cost of integration improvised under pressure rather
+      than built and rehearsed in advance.#cn()
     ],
     // -- The Investigation --
     [
@@ -417,7 +487,9 @@
       the aircrews had not trained together as a unit; the RH-53D had
       been selected partly for a minesweeping cover story rather than for
       fitness for a desert rescue. There was no standing organization to
-      own the mission end to end.#cn()
+      own the mission end to end — no single authority responsible for the
+      force's training, equipment fit, and command architecture as a whole,
+      so each gap was someone's problem in part and no one's in full.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -425,7 +497,10 @@
       that did not exist was the integration across them — a joint
       command, a common communications architecture, and a force that had
       trained together. That integration had to be improvised for a
-      single high-stakes mission, and the improvisation could not hold.#cn()
+      single high-stakes mission, and the improvisation could not hold —
+      because cross-service cohesion is not summoned on demand but accrued
+      through standing structure and repeated joint training, neither of
+      which existed when the order came.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -434,7 +509,10 @@
       Beirut bombing and the Grenada invasion — the impetus for the
       Goldwater-Nichols Act of 1986 and the Nunn-Cohen Amendment
       establishing U.S. Special Operations Command in 1987. The reform
-      built the institution the mission had needed and not had.#cn()
+      built the institution the mission had needed and not had — converting a
+      capability that had been improvised once and failed into a standing
+      command with its own forces, training, and authority, so the next
+      mission would inherit cohesion rather than assemble it from scratch.#cn()
     ],
   ),
   references: (
@@ -470,6 +548,18 @@
     [Where in your domain does a cross-organizational capability exist on paper but not in practice? What would force its institutionalization?],
     [Eagle Claw produced USSOCOM and Goldwater-Nichols six years later. Sketch the institutional design that an equivalent failure in your domain would force into existence.],
     [The Holloway Commission named the mission's ad-hoc-ery as the diagnosis. What standing capability — institution, command, training pipeline — does your domain currently lack that an Eagle-Claw-class failure would force into existence?],
+  ),
+  approaches: (
+    during: (
+      [Stand up a single command that owns the cross-organizational mission end to end — its force, equipment fit, communications, and training — rather than assembling it per mission.],
+      [Require the contributing units to train together as one force on a common communications architecture before they are committed.],
+      [Select equipment for fitness to the actual mission, not for a convenient cover story or parent-service availability.],
+    ),
+    after: (
+      [Audit whether a cross-organizational capability that exists on paper has ever actually operated as one force, and treat the absence of joint reps as an unfilled gap.],
+      [Sustain the standing institution and its training pipeline so the next mission inherits cohesion rather than improvising it.],
+      [Monitor for the recurrence of ad-hoc assembly, since the conditions that produced Desert One reappear whenever no single authority owns the joint mission.],
+    ),
   ),
   courses: ("LEN 5", "LEN 8"),
 )
@@ -511,7 +601,9 @@
       left the cabin-pressurization selector in the "manual" position.
       The pre-flight checks did not catch it, and the aircraft departed
       with its pressurization system not set to maintain cabin altitude
-      automatically.#cn()
+      automatically — a maintenance setting left in an abnormal position the
+      following morning, the kind of latent configuration error that a
+      pre-flight verification exists precisely to catch and here did not.#cn()
     ],
     // -- What Happened --
     [
@@ -522,7 +614,10 @@
       configuration warning and spent minutes troubleshooting the wrong
       problem while hypoxia set in. By the time the aircraft neared Athens
       the flight crew was incapacitated; it circled on autopilot until
-      fuel exhaustion and crashed, killing all 121 aboard.#cn()
+      fuel exhaustion and crashed, killing all 121 aboard. The crew spent
+      their few useful minutes diagnosing a configuration fault that did not
+      exist, the ambiguous horn having steered them away from the one problem
+      — climbing cabin altitude — that was quietly disabling them.#cn()
     ],
     // -- The Investigation --
     [
@@ -532,7 +627,9 @@
       The single horn carried two meanings with no differentiation between
       them, and the airline's training had emphasized only the ground
       meaning; the in-flight case was an edge condition the crew had not
-      been prepared to recognize.#cn()
+      been prepared to recognize — so an ambiguous cue and a one-sided
+      training regime combined to make the wrong interpretation the natural
+      one, with hypoxia closing the window before the error could be caught.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -541,7 +638,10 @@
       ambiguity while the training filled in only one of the two meanings.
       The missing capability was a cue, or a training regime, that
       distinguished the deadly in-flight meaning from the routine ground
-      one before the operators had to guess under hypoxia.#cn()
+      one before the operators had to guess under hypoxia — a way to resolve
+      the ambiguity at the interface or in training, rather than leaving it
+      to be resolved by a crew already losing the cognition the decision
+      required.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -550,7 +650,10 @@
       later 737 variants distinguish the cabin-altitude warning from the
       takeoff-configuration warning. The accident is a standard case
       study in cue ambiguity, pre-flight verification, and the physiology
-      of hypoxia in human-factors curricula.#cn()
+      of hypoxia in human-factors curricula — its remedies attacking the
+      failure on both fronts at once, differentiating the warning at the
+      interface and reinforcing the in-flight meaning in training so neither
+      gap could be papered over by the other.#cn()
     ],
   ),
   references: (

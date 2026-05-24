@@ -39,48 +39,59 @@
     // -- Background --
     [
       The UK Post Office ran thousands of branches through sub-postmasters —
-      local operators personally liable for any shortfall in their accounts.
-      In 1999 it deployed Horizon, an accounting system built by Fujitsu, to
-      track every branch's ledger.#cn()
+      local operators personally liable for any shortfall in their accounts,
+      a liability that put each operator's livelihood behind the numbers the
+      system reported. In 1999 it deployed Horizon, an accounting system built
+      by Fujitsu, to track every branch's ledger, making the software the
+      single authority on whether a branch's books balanced.#cn()
     ],
     // -- What Happened --
     [
       Horizon produced systematic accounting errors — phantom shortfalls that
-      appeared in branch ledgers. The Post Office treated the shortfalls as
-      real and the sub-postmasters as thieves: over two decades it prosecuted
-      around 900 for theft and false accounting, refusing to accept the
-      system itself was at fault. People were imprisoned, lost homes, went
-      bankrupt, and some died by suicide.#cn()
+      appeared in branch ledgers where no money was actually missing. The Post
+      Office treated the shortfalls as real and the sub-postmasters as thieves:
+      over two decades it prosecuted around 900 for theft and false
+      accounting, refusing to accept the system itself was at fault even as
+      the same pattern recurred branch after branch. People were imprisoned,
+      lost homes, went bankrupt, and some died by suicide — the human cost of
+      trusting the ledger over the person.#cn()
     ],
     // -- The Investigation --
     [
       Documents later released through litigation showed Fujitsu and Post
-      Office engineers had known about Horizon bugs throughout the
-      period.#cn() The courts began quashing convictions in 2021, and the
-      public inquiry under Sir Wyn Williams found that senior employees
-      "knew, or at the very least should have known, that Legacy Horizon was
-      capable of error" — establishing it as the most widespread miscarriage
-      of justice in UK history.#cn()
+      Office engineers had known about Horizon bugs throughout the period —
+      the knowledge of fallibility existed inside the institution even as it
+      prosecuted people for the system's errors.#cn() The courts began
+      quashing convictions in 2021, and the public inquiry under Sir Wyn
+      Williams found that senior employees "knew, or at the very least should
+      have known, that Legacy Horizon was capable of error" — establishing it
+      as the most widespread miscarriage of justice in UK history, sustained
+      precisely because that internal knowledge never reached the people on
+      trial.#cn()
     ],
     // -- The Capability Gap --
     [
       The gap was at the regulator, the prosecutor, and the courts: each
       accepted Fujitsu's representation that Horizon was reliable, despite
       documentation to the contrary, because no institutional actor had the
-      standing or expertise to interrogate it. "The computer said so" became,
-      for two decades, a sufficient basis for criminal conviction — the
-      governance hazard of treating automated output as authoritative rather
-      than as evidence to be challenged.#cn()
+      standing or expertise to interrogate it, so the claim of reliability
+      passed unchallenged through every layer that could have tested it. "The
+      computer said so" became, for two decades, a sufficient basis for
+      criminal conviction — the governance hazard of treating automated output
+      as authoritative rather than as evidence to be challenged, with a
+      person's account on the other side of the scale.#cn()
     ],
     // -- Aftermath & Reform --
     [
       Convictions have been overturned — some by an exceptional act of
-      Parliament — compensation schemes established, and Fujitsu and the Post
-      Office called to account before the continuing inquiry.#cn() Horizon's
-      lesson is the chapter's in its bluntest form: an automated system's
-      output is not testimony, and any institution that lets "the computer
-      said so" stand unchallenged against a human's account has built a
-      machine for manufacturing injustice.
+      Parliament, a measure of how far the ordinary appeal routes had failed —
+      compensation schemes established, and Fujitsu and the Post Office called
+      to account before the continuing inquiry.#cn() Horizon's lesson is the
+      chapter's in its bluntest form: an automated system's output is not
+      testimony, and any institution that lets "the computer said so" stand
+      unchallenged against a human's account has built a machine for
+      manufacturing injustice, one that runs for as long as no one is
+      empowered to switch it off.
     ],
   ),
   references: (
@@ -116,6 +127,19 @@
   reflection-list: (
     [Identify a decision in your domain currently made on the strength of "the computer said so." What evidentiary architecture should sit beside the output?],
     [Design the institutional check that would have made Horizon's reliability subject to genuine challenge in 2005.],
+    [Engineers inside the Post Office and Fujitsu knew Horizon was capable of error, yet that knowledge never reached the courtroom. What pathway in your domain carries — or fails to carry — known system fallibility to the people relying on the output?],
+  ),
+  approaches: (
+    during: (
+      [Design automated output to be treated as challengeable evidence, not authoritative testimony, especially where a person's liability rides on it.],
+      [Build a route by which engineers' knowledge of system bugs reaches anyone acting on the output, so internal fallibility cannot stay hidden.],
+      [Give some institutional actor the standing and expertise to interrogate the system's reliability before its output is used against a person.],
+    ),
+    after: (
+      [Audit the recurring-error pattern across branches or cases, treating the same fault appearing repeatedly as evidence of the system, not the operators.],
+      [Maintain an appeal path that can challenge automated output without requiring an act of Parliament to overturn a wrong decision.],
+      [Sustain independent review of the system's accuracy throughout its operating life, so a claim of reliability cannot pass unexamined for decades.],
+    ),
   ),
   courses: ("LEN 7", "LEN 2"),
 )
@@ -156,8 +180,11 @@
     [
       Theranos claimed to have built a blood-testing platform — the "Edison"
       — that could perform hundreds of laboratory tests from a single
-      finger-stick drop of blood, and rode that claim to a \$9-billion
-      valuation and a partnership putting its tests in Walgreens stores.#cn()
+      finger-stick drop of blood, a promise that would have upended a
+      diagnostics industry built on venous draws and large analyzers. It rode
+      that claim to a \$9-billion valuation and a partnership putting its
+      tests in Walgreens stores, carrying the unproven device straight to
+      retail patients.#cn()
     ],
     // -- What Happened --
     [

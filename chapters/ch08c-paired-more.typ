@@ -42,7 +42,10 @@
       that the company's first responsibility was to the patients and
       consumers who used its products, ahead of shareholders. For four
       decades it was a statement of values; in 1982 it became an
-      operational decision rule under extreme pressure.#cn()
+      operational decision rule under extreme pressure. The ordering was
+      explicit — customers ahead of shareholders — which is precisely the
+      ranking that crisis pressure inverts, so committing to it in advance
+      pre-decided the hardest trade-off before it had to be faced.#cn()
     ],
     // -- The Intervention --
     [
@@ -51,7 +54,10 @@
       tampering unknown, Johnson & Johnson recalled every Tylenol product
       nationwide — about 31 million bottles, at a cost near \$100 million —
       suspended all advertising, and engaged publicly with the FBI and FDA
-      rather than minimizing exposure.#cn()
+      rather than minimizing exposure. Recalling nationwide despite the
+      tampering being known only in Chicago was the decisive choice — it
+      treated the unknown scope as a reason to protect every customer rather
+      than as room to limit the company's own exposure.#cn()
     ],
     // -- How It Worked --
     [
@@ -60,7 +66,11 @@
       customer came first, the 1982 leadership did not have to improvise an
       ethical calculus under crisis — it executed a pre-made decision. CEO
       James Burke later credited the Credo with making clear "exactly what
-      we were all about" the moment the deaths occurred.#cn()
+      we were all about" the moment the deaths occurred. Pre-commitment
+      worked because it moved the decision out of the moment of maximum
+      pressure — when fear and legal caution push hardest toward
+      minimization — and into a calmer time when the right ordering could be
+      set down without that distortion.#cn()
     ],
     // -- The Evidence --
     [
@@ -68,7 +78,11 @@
       public trust: Tylenol recovered its market share within a year
       despite the enormous short-term cost. The case became the canonical
       positive example in business education of crisis response driven by
-      capability commitment rather than legal minimization.#cn()
+      capability commitment rather than legal minimization. The market
+      recovery is what makes the case persuasive rather than merely
+      admirable — the \$100 million spent protecting customers was repaid in
+      the trust that brought them back, so the pre-committed choice proved
+      sound on its own terms.#cn()
     ],
     // -- What Transferred --
     [
@@ -77,7 +91,10 @@
       — and the FDA promulgated tamper-resistant-packaging regulations
       within months. The deeper transfer is the principle that values must
       be pre-committed in writing to be operational under stress, not
-      invented in the moment.#cn()
+      invented in the moment. The packaging reform and the decision-rule
+      principle are the two layers of the transfer — one a physical
+      safeguard against the specific threat, the other an institutional
+      safeguard against the improvisation that crisis invites.#cn()
     ],
   ),
   references: (
@@ -112,6 +129,19 @@
   reflection-list: (
     [What is your institution's equivalent of the J&J Credo, and is it operational under crisis or aspirational?],
     [Pre-commitment is hard to enforce later. Design the institutional architecture that makes a Tylenol-style response the only available option in the worst case.],
+    [J&J recalled nationwide while the tampering was known only in Chicago, treating unknown scope as a reason to protect everyone. Identify a decision in your domain where uncertainty currently licenses minimizing exposure, and write the pre-committed rule that would flip it toward protection instead.],
+  ),
+  approaches: (
+    during: (
+      [Pre-commit the hardest trade-off in writing before the crisis — rank customer safety ahead of shareholder exposure — so leadership executes a pre-made decision rather than improvising under pressure.],
+      [Set the rule in a calm period when fear and legal caution cannot distort the ordering, since those forces push hardest exactly when the decision must be made.],
+      [Make the commitment concrete enough to act on — a nationwide recall, open engagement with regulators — so unknown scope becomes a reason to protect everyone rather than room to limit exposure.],
+    ),
+    after: (
+      [Pair the institutional decision rule with a physical safeguard against the specific threat (tamper-evident packaging) so the response addresses both the improvisation problem and the vulnerability.],
+      [Treat the preserved trust and market recovery as the measure that the pre-committed choice was sound, not merely admirable, and document it to defend the principle internally.],
+      [Embed the commitment durably enough that it survives leadership turnover, so the next crisis meets the same pre-decided rule rather than a fresh improvisation.],
+    ),
   ),
   courses: ("LEN 10", "LEN 7", "LEN 6",),
 )
@@ -152,7 +182,10 @@
       that never reach an accident report. But operators will not surrender
       that information to an institution that can punish them for it, so
       the data that could prevent the next accident stays locked in the
-      people who hold it.#cn()
+      people who hold it. The incentives run backward: the person best
+      placed to report a near-miss is the same person a punitive system
+      gives the strongest reason to stay silent, so the data that matters
+      most is the data least likely to surface.#cn()
     ],
     // -- The Intervention --
     [
@@ -161,7 +194,10 @@
       and cabin crew to report incidents, near-misses, and concerns. NASA —
       not the regulator — administers it, and reporting an event confers
       immunity from FAA enforcement for the conduct reported, subject to
-      specified limits.#cn()
+      specified limits. Putting a neutral party between the reporter and the
+      enforcer directly addressed the backward incentive — an operator now
+      had a positive reason to report, because doing so converted potential
+      jeopardy into protection.#cn()
     ],
     // -- How It Worked --
     [
@@ -171,7 +207,10 @@
       rational choice for the operator, and NASA's role as a neutral third
       party makes the protection credible. Either half alone fails;
       together they make the data flow to the institution that can act on
-      it.#cn()
+      it. The credibility of the protection is what does the work — a
+      promise of non-punishment from the regulator itself would be doubted,
+      so routing it through NASA is what makes operators trust it enough to
+      report.#cn()
     ],
     // -- The Evidence --
     [
@@ -180,7 +219,10 @@
       information in the world. Patterns such as automation surprise,
       runway incursions, and fatigue effects were first identified at scale
       through ASRS data before they crossed formal investigation
-      thresholds.#cn()
+      thresholds. Surfacing a pattern before it reaches an accident is the
+      whole point — the value of the system is the hazards it lets the
+      industry act on while they are still near-misses, not the reports it
+      collects after the fact.#cn()
     ],
     // -- What Transferred --
     [
@@ -189,7 +231,10 @@
       similar systems in rail and nuclear power. It is the canonical
       positive case for evidence architecture paired with an institutional
       commitment to non-punitive learning, the defining design pattern of a
-      "just culture."#cn()
+      "just culture." The breadth of emulation underscores that the
+      load-bearing element travels — wherever the most valuable safety data
+      sits with operators who fear punishment, the same protected-reporting
+      design recurs as the way to unlock it.#cn()
     ],
   ),
   references: (

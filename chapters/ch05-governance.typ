@@ -1040,10 +1040,13 @@
       The debts were zeroed and refunded, the settlement paid, and the Royal
       Commission's findings referred for further action; "Robodebt" entered
       Australian political memory as a byword for automated administrative
-      harm.#cn() Its lesson is exact: a government decision that takes money
-      from people is a decision, however it is computed — and automating it
-      does not relieve the state of the duty to make it lawfully, reviewably,
-      and with the burden of proof where the law puts it.
+      harm, a label now reached for whenever a new scheme proposes to
+      automate a consequential decision.#cn() Its lesson is exact: a
+      government decision that takes money from people is a decision, however
+      it is computed — and automating it does not relieve the state of the
+      duty to make it lawfully, reviewably, and with the burden of proof where
+      the law puts it, because the duty attaches to the decision, not to the
+      method.
     ],
   ),
   references: (
@@ -1080,6 +1083,19 @@
   reflection-list: (
     [Robodebt automated a decision that legally required individual review. Identify a current process in your domain at risk of equivalent automation-without-due-process.],
     [Design the accountability artifact that would have to be signed before a Robodebt-equivalent could be deployed.],
+    [Robodebt's income-averaging assumption fit only about 7 percent of recipients, yet ran for four years. What assumption in an automated process you rely on would be wrong for most of the people it touches — and who is responsible for testing it before deployment?],
+  ),
+  approaches: (
+    during: (
+      [Establish lawful basis and confirm it before deployment, treating an automated decision regime as bound by the same legal duties as a human one.],
+      [Validate the model's core assumption against the population it will act on, since an averaging rule that fits 7 percent of recipients is a designed-in error.],
+      [Keep a human in the loop for consequential decisions and leave the burden of proof where the law puts it, not on the citizen.],
+    ),
+    after: (
+      [Audit issued decisions against ground truth and watch for the predictable harms — wrongful debts, contested notices — that signal a flawed assumption at scale.],
+      [Provide an accessible path to contest and review every automated decision, and monitor whether affected people can actually use it.],
+      [Track downstream harm, including welfare and safety signals, so a scheme linked to severe consequences is halted rather than left to run for years.],
+    ),
   ),
   courses: ("LEN 7", "LEN 2"),
 )
@@ -1111,50 +1127,59 @@
     // -- Background --
     [
       Colleges increasingly use predictive analytics to identify students at
-      risk of failing or dropping out, so advisors can intervene early; a
-      large majority of U.S. public colleges now use some form of these
-      models.#cn()
+      risk of failing or dropping out, so advisors can intervene early — a
+      genuinely well-meant aim, to reach struggling students before they
+      vanish. A large majority of U.S. public colleges now use some form of
+      these models, which makes any bias they carry a quiet, system-wide
+      feature of how support is allocated rather than an isolated experiment.#cn()
     ],
     // -- What Happened --
     [
       The intervention is well-intentioned, but research finds the models
       carry racial calibration bias: they miscalibrate by race in ways that
       can misclassify Black and Latinx students relative to their actual
-      outcomes — and so misdirect the support the flag is meant to trigger.
+      outcomes — and so misdirect the support the flag is meant to trigger,
+      turning a tool built to help into one that can steer help away.
       Crucially, the magnitude of the bias depends on how "at-risk" is
       defined, which makes it partly a construct-definition problem rather
-      than a coding bug.#cn()
+      than a coding bug — a flaw in what the model was asked to predict, not
+      in how it computes the prediction.#cn()
     ],
     // -- The Investigation --
     [
       Researchers studying equity in completion-prediction models have
       documented these calibration gaps and traced them to training data
-      that encodes historical patterns of discrimination.#cn() As Baker and
-      Hawn put it, algorithmic bias in education "poses significant threats
-      to educational equity, potentially amplifying existing social and
-      economic disparities" — and the harm compounds when an instructor with
-      deficit assumptions reads an "at-risk" flag as confirmation rather than
-      a cue to help.#cn()
+      that encodes historical patterns of discrimination — so the model
+      learns the past's inequities and projects them forward as predictions.#cn()
+      As Baker and Hawn put it, algorithmic bias in education "poses
+      significant threats to educational equity, potentially amplifying
+      existing social and economic disparities" — and the harm compounds when
+      an instructor with deficit assumptions reads an "at-risk" flag as
+      confirmation rather than a cue to help, letting the prediction become a
+      self-fulfilling label.#cn()
     ],
     // -- The Capability Gap --
     [
       The bias is not in the math; it is in the definition of "at-risk."
       Define it one way and support flows to one population; define it
-      another way and it flows to another. The choice of what the model
-      predicts — the construct — is a capability-engineering decision with
-      measurable equity consequences, and it is the part most often made
-      implicitly, by whoever assembles the training labels, rather than
-      governed deliberately.#cn()
+      another way and it flows to another, so the construct silently sets who
+      the system decides to help. The choice of what the model predicts — the
+      construct — is a capability-engineering decision with measurable equity
+      consequences, and it is the part most often made implicitly, by whoever
+      assembles the training labels, rather than governed deliberately by
+      anyone accountable for where help is sent.#cn()
     ],
     // -- Aftermath & Reform --
     [
       Unlike the discrete failures elsewhere in this chapter, this one is
       ongoing and quiet — embedded in advising dashboards at hundreds of
-      institutions — which is what makes it dangerous.#cn() Its lesson,
-      pushed upstream, is the chapter's: governing an algorithm's fairness
-      begins not at deployment but at construct definition and label choice,
-      with an equity audit of what the model is asked to predict and for whom
-      the prediction allocates help.
+      institutions — which is what makes it dangerous: there is no single
+      collapse to force a reckoning, only a steady misallocation no headline
+      announces.#cn() Its lesson, pushed upstream, is the chapter's:
+      governing an algorithm's fairness begins not at deployment but at
+      construct definition and label choice, with an equity audit of what the
+      model is asked to predict and for whom the prediction allocates help —
+      catching the bias where it is introduced rather than where it surfaces.
     ],
   ),
   references: (
@@ -1190,6 +1215,19 @@
   reflection-list: (
     [Pick a predictive analytic in your institution. Reconstruct the construct definition behind it. What is the equity consequence of that definition?],
     [Design the governance review that a new predictive model should pass before it allocates resources to or away from a population.],
+    [This failure is ongoing and quiet, with no single collapse to force a reckoning. What would it take to make a slow, distributed misallocation visible enough that someone with authority had to act on it?],
+  ),
+  approaches: (
+    during: (
+      [Govern the construct definition deliberately: have an accountable owner decide and document what "at-risk" means and whom the prediction will route help toward.],
+      [Audit training data for encoded historical discrimination before fitting, so the model does not learn past inequities as future predictions.],
+      [Test calibration across racial groups during development and treat disparate misclassification as a design defect, not a tolerable residual.],
+    ),
+    after: (
+      [Monitor deployed dashboards for the quiet, distributed misallocation that has no single failure event to announce it.],
+      [Train advisors and instructors to read an "at-risk" flag as a cue to help rather than confirmation of a deficit assumption.],
+      [Sustain a recurring equity audit of what each model predicts and for whom, since a bias embedded across hundreds of institutions persists until someone is tasked to find it.],
+    ),
   ),
   courses: ("LEN 4", "LEN 7", "LEN 9"),
 )

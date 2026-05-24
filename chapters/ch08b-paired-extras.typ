@@ -821,6 +821,18 @@
     [Rickover's standard was zero-defect oral examination. What is the equivalent in your domain — and would you survive it?],
     [The Nuclear Navy's safety record is paid for by a durable, visible training budget. What is the equivalent line-item investment in your domain that a comparable safety claim would require — and is it being made?],
   ),
+  approaches: (
+    during: (
+      [Engineer the human operating system to the standard the consequences demand from inception — where there is no acceptable failure rate, make the operators themselves the margin of safety.],
+      [Gate qualification on demonstrated understanding through oral examination by senior qualified people, testing comprehension rather than recall.],
+      [Pair technical mastery with a mandatory questioning posture so competence is obliged to challenge assumptions, including superiors', rather than be silenced by rank.],
+    ),
+    after: (
+      [Embed continuous re-qualification rather than one-time certification, so competence must be sustained across a career and cannot be banked once and assumed.],
+      [Protect the training as a durable, visible budget line, since the qualification ladder and oral boards are the price of the safety record and the first thing tempo will erode.],
+      [Sustain the standard across generations of operators, treating a multi-decade record as the evidence the safety comes from the engineered system rather than any one cohort.],
+    ),
+  ),
   courses: ("LEN 5", "LEN 8", "LEN 3",),
 )
 
@@ -855,7 +867,9 @@
       income. Like many institutions it had predictive data but such
       systems, where they existed elsewhere, were typically used for triage
       or gatekeeping — risking the reproduction of existing inequities
-      rather than their repair.#cn()
+      rather than their repair. A model that flags at-risk students can just
+      as easily steer them away as toward help; the same prediction serves
+      opposite ends depending on what the institution decides to do with it.#cn()
     ],
     // -- The Intervention --
     [
@@ -864,7 +878,10 @@
       per student daily and fires an alert to an advisor when warning signs
       — a missed assignment, a poor grade in a gateway course — appear. The
       system was built with equity as a primary design constraint, with the
-      explicit aim of closing graduation gaps.#cn()
+      explicit aim of closing graduation gaps. Daily monitoring meant the
+      alert fired while there was still time to act — a slipping student was
+      caught at the missed assignment rather than at the failed semester,
+      when intervention could still change the outcome.#cn()
     ],
     // -- How It Worked --
     [
@@ -873,7 +890,10 @@
       financial-aid check — rather than automated decisions. Predictions
       are used to deliver more support to at-risk students, not to gatekeep
       them out. Human judgment stays in the loop, and the model functions
-      as decision support rather than decision-maker.#cn()
+      as decision support rather than decision-maker. Routing every alert
+      through an advisor rather than an automated action is what kept the
+      prediction in service of the student: the model identified who needed
+      attention, and a person decided what that attention should be.#cn()
     ],
     // -- The Evidence --
     [
@@ -881,7 +901,11 @@
       institution now produces some 2,000 additional graduates a year. The
       graduation rate for Black students rose to match the overall rate,
       and Pell-eligible students graduate at the same rate as non-Pell
-      students — the equity gap was eliminated rather than merely narrowed.#cn()
+      students — the equity gap was eliminated rather than merely narrowed.
+      Eliminating the gap rather than narrowing it is the decisive result:
+      the overall rate rose while the disparities by race and income closed,
+      so the gain did not come at the expense of the students the system was
+      most at risk of leaving behind.#cn()
     ],
     // -- What Transferred --
     [
@@ -891,7 +915,10 @@
       an equity harm because of how it was framed and governed. The case is
       the strongest evidence that construct definition and human-loop
       architecture, not the model itself, determine whether prediction
-      helps or harms.#cn()
+      helps or harms. Holding the technology constant and varying only the
+      design constraint and governance is what isolates the lesson: the same
+      predictive capability that harmed in Chapter 5 helped here, so the
+      framing and the human loop, not the model, are where intent lives.#cn()
     ],
   ),
   references: (
@@ -928,6 +955,19 @@
   reflection-list: (
     [What is the difference between GSU's predictive analytics and the algorithmic-bias cases of Chapter 5? Be specific about what makes the GSU implementation work.],
     [Design the equity-as-primary-constraint version of a predictive system in your domain. What would you measure first?],
+    [GSU used predictions to deliver more support rather than to gatekeep, with an advisor between the alert and the action. Identify a predictive system in your domain and specify the human-loop architecture that would keep it serving the people it flags rather than screening them out.],
+  ),
+  approaches: (
+    during: (
+      [Set equity as a primary design constraint from the start — the explicit aim of closing gaps — rather than discovering disparities after deployment.],
+      [Build a human-loop architecture so alerts trigger proactive support routed through an advisor, with the model as decision support and a person deciding the action.],
+      [Tune the monitoring to fire early — at the missed assignment, not the failed semester — so the intervention reaches the student while it can still change the outcome.],
+    ),
+    after: (
+      [Track outcomes by demographic group as a primary metric, so the system is judged on whether it closes gaps rather than merely raises the average.],
+      [Confirm the overall gain does not come at the expense of the most at-risk students — eliminating the gap, not just narrowing it, is the test that the design held.],
+      [Keep human judgment in the loop as the system scales, so prediction continues to deliver more support rather than drifting into automated gatekeeping.],
+    ),
   ),
   courses: ("LEN 1", "LEN 4", "LEN 7"),
 )
@@ -963,7 +1003,10 @@
       instruction at scale, but few were grounded in a validated theory of
       how people learn or rigorously tested for effect. The opportunity was
       to build a tutor from a real cognitive model and prove its impact
-      with the methods of experimental science.#cn()
+      with the methods of experimental science. The field's recurring
+      weakness was that promising systems rested on intuition about learning
+      rather than a validated theory, and were rarely subjected to the kind
+      of controlled trial that could separate genuine effect from novelty.#cn()
     ],
     // -- The Intervention --
     [
@@ -972,7 +1015,10 @@
       skills underlying a subject and tracks each student's mastery using
       Bayesian knowledge tracing. It adapts problem selection to the
       individual learner and provides step-level feedback, embodying a full
-      learning-science theory in software.#cn()
+      learning-science theory in software. Grounding the tutor in ACT-R
+      rather than designer intuition is what made the system testable: a
+      theory that decomposes a subject into specific skills can be turned
+      into a measurement of mastery and an instrument that responds to it.#cn()
     ],
     // -- How It Worked --
     [
@@ -981,7 +1027,10 @@
       (knowledge tracing) that estimates mastery from student actions, and
       an instrumentable interface that adapts in response. Instruction is
       targeted where the model detects weakness, so practice concentrates
-      on skills not yet mastered rather than on a fixed sequence.#cn()
+      on skills not yet mastered rather than on a fixed sequence. Each link
+      in that chain has to hold for the next to work — the skill model makes
+      mastery measurable, the measurement makes adaptation possible, and the
+      adaptation is what concentrates practice where it pays off.#cn()
     ],
     // -- The Evidence --
     [
@@ -990,7 +1039,10 @@
       program scaled to more than 3,000 schools. The case demonstrates the
       learning-engineering process working end to end: learning science, to
       engineered software, to randomized-controlled-trial evidence, to
-      scaled implementation.#cn()
+      scaled implementation. A multi-site randomized evaluation is the
+      strong form of the claim — it shows the effect survived contact with
+      many real classrooms rather than a single favorable setting, which is
+      what the field's earlier, untested systems had lacked.#cn()
     ],
     // -- What Transferred --
     [
@@ -1000,7 +1052,10 @@
       learning-engineering pipeline works for problems that fit the
       pipeline. The frontier question — whether the same discipline can
       deliver in operational, ill-structured domains where capability
-      matters most — remains open.#cn()
+      matters most — remains open. The dependence on a decomposable skill
+      model is the boundary condition: where a subject cannot be cleanly
+      broken into trackable skills, the very chain that made algebra
+      tractable has nothing to attach to.#cn()
     ],
   ),
   references: (
@@ -1036,6 +1091,19 @@
   reflection-list: (
     [Cognitive Tutor works best in well-defined domains. Identify a problem in your domain that is currently ill-structured. What would have to be true to make the LE pipeline applicable?],
     [The case is the strongest evidence the LE process works. What is the equivalent piece of evidence required to demonstrate the same pipeline in a non-cognitive domain — for example, surgical skill, or operational watchstanding?],
+    [Cognitive Tutor's chain runs from a decomposable skill model through measurement to adaptation. Take a capability in your domain and attempt the decomposition — where it resists being broken into trackable skills, what does that tell you about whether the pipeline can apply?],
+  ),
+  approaches: (
+    during: (
+      [Ground the intervention in a validated theory that decomposes the subject into specific skills, rather than building on designer intuition about how people learn.],
+      [Build the full chain — a skill model, a measurement method that estimates mastery from learner actions, and an interface that adapts in response — so each link supports the next.],
+      [Target instruction where the model detects weakness, concentrating practice on unmastered skills rather than marching through a fixed sequence.],
+    ),
+    after: (
+      [Prove the effect with a multi-site randomized evaluation, so the gain is shown to survive many real settings rather than one favorable classroom.],
+      [Scale only where the problem fits the pipeline — well-defined, decomposable domains — and treat the decomposability of a skill model as the boundary condition for applicability.],
+      [Keep the frontier question explicit when extending the method, testing whether the same theory-to-instrument chain can be built in less-structured domains before assuming it transfers.],
+    ),
   ),
   courses: ("LEN 1", "LEN 4", "LEN 9"),
 )

@@ -649,13 +649,18 @@
       the institutional architecture gave the technical layer no way to halt
       the migration. The missing capability was not testing knowledge but a
       governance structure in which a "not ready" could stop a scheduled
-      go-live.#cn()
+      go-live. Knowing a system is unready is worthless if the knowledge
+      cannot reach the decision with its force intact and the authority to
+      act on it; here the truth was present but powerless.#cn()
     ],
     // -- Aftermath & Reform --
     [
       TSB rebuilt its testing and migration governance, paid out and was
       penalized, and the case entered the literature as a study in
-      technical-decision authority.#cn() It is the financial-sector analog of
+      technical-decision authority.#cn() Rebuilding governance rather than
+      merely the platform was the right diagnosis: the failure had been one
+      of who could say "stop" and be heeded, so the durable fix had to live
+      in the decision structure rather than the code. It is the financial-sector analog of
       Healthcare.gov (Case 10): a large migration shipped without the testing
       the institution knew it needed, because schedule pressure overrode a
       technical signal that had no authority to win.
@@ -692,6 +697,19 @@
   reflection-list: (
     [Where in your organization does a technical signal arrive at the executive layer attenuated by intermediate layers? What is the cost of the attenuation?],
     [Design the institutional structure that would allow a technical lead to halt a migration like TSB's without resigning.],
+    [TSB's certification confirmed readiness rather than interrogating it. Examine a sign-off process in your domain that rubber-stamps rather than challenges — what would it take to make the certification adversarial enough to catch an unready system?],
+  ),
+  approaches: (
+    during: (
+      [Test the platform under conditions that approximate real production load, since a system proven only in unrepresentative conditions will fail when it meets the real ones.],
+      [Make certification adversarial — a process that tries to disprove readiness — rather than a sign-off that confirms it.],
+      [Avoid single-weekend big-bang cutovers where feasible; stage the migration so partial failure is survivable rather than catastrophic.],
+    ),
+    after: (
+      [Build a governance structure in which a technical "not ready" can halt a scheduled go-live, so the signal reaches the decision with its force and authority intact.],
+      [Ensure the decision authority hears the technical signal directly rather than through intermediate layers that attenuate it.],
+      [After any failure, fix the decision structure that allowed a known objection to be overridden, not just the system that broke.],
+    ),
   ),
   courses: ("LEN 7", "LEN 8"),
 )

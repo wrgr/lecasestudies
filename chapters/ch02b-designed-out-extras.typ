@@ -632,26 +632,28 @@
     // -- The Capability Gap --
     [
       The capability designed out was deployment verification — confirming,
-      every time, that what runs in production is what was intended, on every
-      node, before it touches live money. The dead code was technical debt in
-      its most literal form: a retired function left in the repository is an
-      option on a future failure, and reusing its flag exercised that option
-      at the worst moment. As at the Mars Climate Orbiter's interface, the
-      boundary that mattered — between "deployed" and "verified as deployed
-      everywhere" — had no owner and no automated check, and a large
-      institution walked across it until the floor gave way.#cn()
+      every time, that what runs in production is exactly what was intended,
+      on every node, before it touches live money. The dead code was technical
+      debt in its most literal form: a retired function left in the repository
+      is a standing option on a future failure, and reusing its flag exercised
+      that option at the worst possible moment. As at the Mars Climate
+      Orbiter's interface, the boundary that mattered — between "deployed" and
+      "verified as deployed everywhere" — had no owner and no automated check,
+      and a large institution kept walking across it routinely until the day
+      the floor gave way.#cn()
     ],
     // -- Aftermath & Reform --
     [
       Knight became the canonical case in modern software-operations practice
-      for why deployment is itself an engineering deliverable: automated
-      verification that every host runs the intended build, disciplined
-      removal of dead code, pre-trade risk limits, and kill switches that
-      stop a runaway process in seconds. Regulators sharpened their attention
-      to automated market-access controls. The lesson rhymes with the
-      orbiter's across a forty-year, civilian-to-financial gap: a small,
-      unowned boundary inside a large automated system is precisely where the
-      institution is most exposed.#cn()
+      for why deployment is itself an engineering deliverable, not a clerical
+      step: automated verification that every host runs the intended build,
+      disciplined removal of dead code from the repository, pre-trade risk
+      limits, and kill switches that can stop a runaway process in seconds.
+      Regulators sharpened their attention to automated market-access controls
+      in response. The lesson rhymes with the orbiter's across a forty-year,
+      civilian-to-financial gap: a small, unowned boundary inside a large
+      automated system is precisely where the institution is most exposed,
+      and least watching.#cn()
     ],
   ),
   references: (
@@ -685,6 +687,19 @@
   reflection-list: (
     [Identify a deployment procedure in your domain whose verification step depends on convention rather than on a designed check. What is the eighth server?],
     [Design the deployment deliverable that would prevent a Knight Capital-equivalent loss in your organization.],
+    [A retired "Power Peg" function left in the repository became the trigger years later when its flag was reused. Identify dead code or a dormant feature flag in a system you run that is still an option on a future failure, and specify the policy that should have removed it.],
+  ),
+  approaches: (
+    during: (
+      [Remove retired code and dormant flags from the repository as a matter of discipline, since every dead function left behind is a standing option on a future failure.],
+      [Never reuse a configuration flag whose old meaning still exists somewhere in the fleet; treat flag semantics as a versioned, owned interface.],
+      [Design pre-trade risk limits and a kill switch into any system wired to the live market, so a runaway process can be stopped in seconds rather than minutes.],
+    ),
+    after: (
+      [Require automated verification that every host runs the intended build before a change touches live money, with a second technician confirming the deployment across all nodes.],
+      [Monitor for the runaway condition — an abnormal order rate — and halt automatically, rather than relying on humans to notice and intervene mid-flood.],
+      [Audit deployments for the orphaned node: confirm no host is left on stale code, closing the gap between "deployed" and "verified as deployed everywhere."],
+    ),
   ),
   courses: ("LEN 5", "LEN 9"),
 )
