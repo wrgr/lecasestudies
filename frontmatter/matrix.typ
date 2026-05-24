@@ -13,16 +13,15 @@
 // overhang into the page margin.
 #let entry(n, name, year, modes, courses, success: false) = block(
   width: 100%,
-  inset: (y: 2.4pt),
+  inset: (top: 2.4pt, bottom: 3.4pt),
   stroke: (bottom: 0.25pt + rule-soft),
-  clip: true,
   {
     grid(
       columns: (16pt, 1fr, 42pt, 34pt),
       column-gutter: 4pt,
       align: (right + horizon, left + horizon, left + horizon, right + horizon),
       text(font: sans, size: 8.5pt, weight: "bold", fill: if success { teal } else { gold }, str(n)),
-      box(width: 100%, clip: true, [
+      box(width: 100%, clip: true, inset: (bottom: 1.6pt), [
         #text(font: sans, size: 8pt, fill: navy, weight: if success { "medium" } else { "regular" }, name)
         #h(3pt)
         #text(font: sans, size: 6.5pt, fill: text-muted, year)
