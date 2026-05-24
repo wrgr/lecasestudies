@@ -12,8 +12,8 @@
 // (relative to this file), e.g. "img/gray-roncal.jpg". Leave as `none` to
 // render a sized placeholder; the geometry is identical either way, so the
 // one-page layout holds once the real photos are added.
-#let gray-photo = none      // → "img/gray-roncal.jpg"  (William Gray-Roncal)
-#let diamond-photo = none   // → "img/diamond.jpg"      (James Diamond)
+#let gray-photo = "img/grayroncal.jpg"   // (William Gray-Roncal)
+#let diamond-photo = "img/diamond.jpg"   // (James Diamond)
 
 #let editor-photo(p) = if p == none {
   box(width: 30mm, height: 36mm, fill: rgb("#EFEADC"),
