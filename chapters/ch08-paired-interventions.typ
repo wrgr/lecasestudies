@@ -28,37 +28,79 @@
   modes-code: "THN",
   impact: "83% reduction in U.S. commercial aviation fatality risk (1998–2008); 95% reduction in fatalities per 100M passengers over 20 years",
   diagram: dgm.dgm-crm,
-  body: [
-    In March 1977 two 747s collided on a foggy runway at Tenerife and 583
-    people died. The cockpit voice recorder showed the KLM flight engineer
-    questioning whether the Pan Am 747 was clear of the runway — twice, in
-    indirect language — only for the senior captain to dismiss the
-    question and continue the takeoff roll. The accident was not a failure
-    of skill but of the system by which skill in one seat reached the
-    other.
-
-    Crew Resource Management, formalized by United Airlines in 1981, rebuilt
-    the cockpit as a coordinated team: explicit communication protocols,
-    authority gradients named and trained against, structured briefings and
-    debriefings. CRM did not teach individual airmanship — it engineered the
-    *system of interaction* in which airmanship operates.
-
-    Twenty years later the Commercial Aviation Safety Team added the second
-    half of the system: closed-loop hazard identification on operational
-    data, prioritized enhancements, tracked implementation, measured
-    outcomes. CAST set an eighty-percent fatality-reduction target and
-    exceeded it at 83% by 2007 (Collier Trophy, 2008). The two together —
-    cultural redesign plus continuous evidence — define what a mature
-    capability-engineering apparatus looks like.
+  kind: "intervention",
+  summary: [
+    In March 1977, two 747s collided in fog at Tenerife and 583 people
+    died — in part because a KLM flight engineer's twice-voiced doubt about
+    the runway was overridden by his captain. The failure was not of skill
+    but of the system by which skill in one seat reached another. Crew
+    Resource Management, formalized by United Airlines in 1981,
+    re-engineered the cockpit as a coordinated team: explicit communication
+    protocols, named authority gradients, structured briefings. Twenty
+    years later the Commercial Aviation Safety Team (CAST) added
+    closed-loop analysis of operational data to find and fix hazards before
+    they caused accidents. The pairing — cultural redesign plus continuous
+    evidence — drove an 83% reduction in U.S. commercial-aviation fatality
+    risk between 1998 and 2008, earning the 2008 Collier Trophy.
   ],
+  sections: (
+    // -- Background --
+    [
+      By the 1970s, accident investigations were repeatedly finding that
+      crashes stemmed not from a lack of individual flying skill but from
+      breakdowns in how a crew worked together. The 1977 Tenerife disaster
+      — 583 dead — was the starkest example: a KLM flight engineer
+      questioned, twice and indirectly, whether the runway was clear, and
+      the senior captain dismissed him and continued the takeoff.#cn()
+    ],
+    // -- The Intervention --
+    [
+      Crew Resource Management, formalized by United Airlines in 1981,
+      treated crew coordination as an engineerable property of the system
+      rather than a matter of personality. It introduced explicit
+      communication protocols, named and trained against authority
+      gradients, and instituted structured briefings and debriefings —
+      rebuilding the cockpit as a team in which information from any seat
+      could reach the decision.#cn()
+    ],
+    // -- How It Worked --
+    [
+      CRM did not teach individual airmanship; it engineered the system of
+      interaction in which airmanship operates. By making it legitimate and
+      expected for a junior officer to challenge a captain, and by giving
+      crews a shared protocol for doing so, it closed the path by which
+      Tenerife-style deference had absorbed safety-critical information
+      instead of transmitting it.#cn()
+    ],
+    // -- The Evidence --
+    [
+      Twenty years on, the Commercial Aviation Safety Team added the
+      missing second half: closed-loop hazard identification on operational
+      data, prioritized enhancements, tracked implementation, and measured
+      outcomes. CAST set an 80% fatality-reduction target and exceeded it,
+      reaching 83% by 2007 — work recognized with the 2008 Collier Trophy.
+      Over twenty years, fatalities per 100 million passengers fell roughly
+      95%.#cn()
+    ],
+    // -- What Transferred --
+    [
+      CRM and CAST together define what a mature capability-engineering
+      apparatus looks like: a cultural redesign paired with a
+      continuous-evidence loop, where neither half works alone. The model
+      has been exported to surgery, firefighting, and other
+      high-consequence domains, and is now the template for redesigning
+      human roles in AI-augmented systems.#cn()
+    ],
+  ),
+  references: (
+    [FAA Advisory Circular 120-51E, _Crew Resource Management Training_ — CRM protocols and authority-gradient training.],
+    [Helmreich, Merritt & Wilhelm (1999), "The Evolution of Crew Resource Management Training in Commercial Aviation," _International Journal of Aviation Psychology_.],
+    [Spanish CIAIAC / ALPA reports on the 1977 Tenerife collision — the overridden crew challenge.],
+    [CAST/FAA Safety Enhancement reports (2016, 2018) — the closed-loop data process and the 83% reduction.],
+    [Collier Trophy citation (2008); Kanki, Helmreich & Anca (2010), _Crew Resource Management_.],
+  ),
   quote: [CRM succeeded because it treated crew coordination as an engineerable property of the system.],
   quote-source: "Paraphrasing Helmreich & Foushee, in Kanki et al., Crew Resource Management (2010)",
-  sources-list: (
-    [FAA Advisory Circular 120-51E, _Crew Resource Management Training_],
-    [Helmreich, Merritt & Wilhelm, "The Evolution of Crew Resource Management Training in Commercial Aviation," _International Journal of Aviation Psychology_ (1999)],
-    [CAST/FAA Safety Enhancement reports (2016, 2018)],
-    [Collier Trophy citation, 2008; SKYbrary CRM article; EASA guidance],
-  ),
   le-insight: [
     CRM is the canonical evidence that capability is engineerable at the
     system level, not just the individual. Tenerife was not solvable by
@@ -95,38 +137,75 @@
   modes-code: "TN",
   impact: "Central-line-associated bloodstream infections (CLABSI) reduced to near zero across 103 Michigan ICUs; ~1,500 lives saved in 18 months; ~$75M saved; sustained at ten years",
   diagram: dgm.dgm-keystone,
-  body: [
-    Peter Pronovost's checklist for central-line insertion has five items.
-    Wash hands. Clean the patient's skin with chlorhexidine. Drape the
-    patient. Wear a mask, hat, sterile gown and gloves. Apply a sterile
-    dressing. Nothing in the checklist was unknown to any physician it
-    would govern. The question was not what to do — it was whether anyone
-    would do it every time.
-
-    The intervention paired the checklist with a cultural change: nurses
-    were authorized — not merely permitted, but required — to stop the
-    procedure if any step was skipped. That single authorization was the
-    load-bearing element. In the prior architecture, a nurse who saw a
-    physician skip a step had no procedural path to intervene without
-    crossing the hospital's authority gradient. After Keystone, the path
-    existed and was institutional.
-
-    The result across 103 Michigan ICUs was the elimination of
-    central-line-associated bloodstream infections (CLABSI) as a
-    category. The typical ICU's quarterly
-    infection rate fell to zero. Michigan's ICUs outperformed 90 percent of
-    ICUs nationwide. The program has been adopted in more than forty states
-    and replicated internationally. At ten-year follow-up, the effect has
-    been sustained.
+  kind: "intervention",
+  summary: [
+    Peter Pronovost's central-line checklist has five items — wash hands,
+    clean the skin with chlorhexidine, drape the patient, use full barrier
+    precautions, apply a sterile dressing — and not one of them was unknown
+    to the physicians it governed. The question was never what to do, but
+    whether it would be done every time. The Keystone project, launched
+    across 103 Michigan ICUs in 2004, paired the checklist with a cultural
+    change: nurses were not merely permitted but required to stop the
+    procedure if a step was skipped. That authorization was the
+    load-bearing element. Central-line-associated bloodstream infections
+    fell to near zero, an estimated 1,500 lives and \$75 million were saved
+    in eighteen months, and the effect was sustained at ten years.
   ],
+  sections: (
+    // -- Background --
+    [
+      Central-line-associated bloodstream infections were a common, often
+      fatal complication of intensive care, and the steps to prevent them
+      were well established and uncontroversial. The problem was
+      reliability: in the existing culture, a nurse who saw a physician
+      skip a sterile step had no procedural path to intervene without
+      crossing the hospital's authority gradient.#cn()
+    ],
+    // -- The Intervention --
+    [
+      In 2004, Peter Pronovost's team launched the Keystone ICU project
+      across 103 Michigan units. It combined a simple five-item central-line
+      checklist — hand hygiene, chlorhexidine skin prep, full-barrier
+      draping, sterile gown-mask-gloves, and a sterile dressing — with an
+      explicit authorization: nurses were required, not merely permitted,
+      to stop any procedure in which a step was missed.#cn()
+    ],
+    // -- How It Worked --
+    [
+      The checklist was the technical half; the nurses' enforcement
+      authority was the cultural half, and it was the load-bearing one.
+      Before Keystone, the path to intervene did not exist; after it, the
+      path was institutional and expected. The pairing converted knowledge
+      everyone already had into behavior that happened every time.#cn()
+    ],
+    // -- The Evidence --
+    [
+      Across the Michigan ICUs, the median quarterly CLABSI rate fell to
+      zero, and the state's units outperformed 90 percent of ICUs
+      nationwide. The program was estimated to have saved roughly 1,500
+      lives and \$75 million within eighteen months. Results were published
+      in the _New England Journal of Medicine_ in 2006, and follow-up
+      showed the effect sustained at ten years.#cn()
+    ],
+    // -- What Transferred --
+    [
+      Keystone became the clearest evidence in healthcare that a technical
+      intervention without an authority change produces no durable
+      improvement — and vice versa. The model was packaged as the AHRQ CUSP
+      toolkit, adopted in more than forty states, and replicated
+      internationally, establishing the design principle of intervening in
+      matched technical-and-cultural pairs.#cn()
+    ],
+  ),
+  references: (
+    [Pronovost, P. et al. (2006), "An Intervention to Decrease Catheter-Related Bloodstream Infections in the ICU," _NEJM_ 355 — the trial and the near-zero result.],
+    [Pronovost & Vohr (2010), _Safe Patients, Smart Hospitals_ — the checklist-plus-nurse-authority pairing (paraphrased).],
+    [Lipitz-Snyderman, A. et al. (2011), _BMJ_ — sustained effect at follow-up.],
+    [Agency for Healthcare Research and Quality, CUSP toolkit — dissemination across states.],
+    [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — the authorization, not the list, as the active ingredient.],
+  ),
   quote: [The checklist was the technical intervention. The nurses' authority to enforce it was the cultural intervention. Neither worked without the other.],
   quote-source: "Paraphrasing Pronovost & Vohr, Safe Patients, Smart Hospitals, 2010",
-  sources-list: (
-    [Pronovost et al., "An Intervention to Decrease Catheter-Related Bloodstream Infections in the ICU," _New England Journal of Medicine_ 355 (2006)],
-    [Lipitz-Snyderman et al., _BMJ_ (2011) — sustained effect at follow-up],
-    [Agency for Healthcare Research and Quality, CUSP toolkit],
-    [Pronovost & Vohr, _Safe Patients, Smart Hospitals_ (2010)],
-  ),
   le-insight: [
     Keystone is the clearest evidence in healthcare that a technical
     intervention without authority intervention produces no durable change,
@@ -166,34 +245,78 @@
   modes-code: "TKG",
   impact: "No INES-level event at U.S. commercial reactors post-INPO; sustained improvement in INPO/WANO performance indicators across the industry",
   diagram: dgm.dgm-inpo,
-  body: [
+  kind: "intervention",
+  summary: [
     Three Mile Island did not produce a reactor accident at the next plant
-    over. It produced an institution. Within months of the Kemeny
-    Commission's October 1979 report, the U.S. commercial nuclear industry
-    founded the Institute of Nuclear Power Operations. The premise: an
-    accident at any single plant would affect every operator's license,
-    and no single utility could engineer its capability infrastructure
-    alone. INPO was funded by the utilities it evaluated and operated
-    without statutory authority — a configuration in which the operators
-    and the peer review they answered to were hostages of each other.
-
-    INPO set training and certification standards for every operator and
-    supervisor; the National Academy for Nuclear Training (1985)
-    accredited each facility's programs; and INPO teams ran regular peer
-    evaluations — operators from one utility examining another's
-    procedures, control rooms, and incident records, for industry-wide
-    learning rather than competitive advantage. The pre-TMI culture had
-    been characterized by what the Bulletin of the Atomic Scientists
-    called "smugness"; the post-INPO culture, by mandated vigilance.
+    over — it produced an institution. Within months of the 1979 Kemeny
+    Commission report, the U.S. commercial nuclear industry founded the
+    Institute of Nuclear Power Operations on a stark premise: an accident
+    at any single plant would threaten every operator's license, and no
+    utility could engineer its safety capability alone. Funded by the
+    utilities it evaluated and operating without statutory authority, INPO
+    set training and certification standards, accredited every plant's
+    programs through the National Academy for Nuclear Training, and ran
+    peer evaluations in which operators from one utility scrutinized
+    another's control rooms and records. The pre-TMI culture of "smugness"
+    gave way to mandated vigilance. No U.S. commercial reactor has had a
+    significant INES-level event since.
   ],
+  sections: (
+    // -- Background --
+    [
+      The 1979 partial meltdown at Three Mile Island exposed not just a
+      plant-level failure but an industry with no shared mechanism for
+      learning. The Kemeny Commission found a pervasive culture the
+      _Bulletin of the Atomic Scientists_ later called "smugness," in which
+      each utility operated alone and no institution carried lessons from
+      one plant to the rest.#cn()
+    ],
+    // -- The Intervention --
+    [
+      Within months of the Kemeny report, the utilities founded the
+      Institute of Nuclear Power Operations. Its premise was that an
+      accident anywhere threatened everyone's license to operate. INPO set
+      training and certification standards for operators and supervisors,
+      and in 1985 the National Academy for Nuclear Training began
+      accrediting each facility's programs.#cn()
+    ],
+    // -- How It Worked --
+    [
+      INPO's load-bearing mechanism was honest peer review: teams of
+      operators from one utility examined another's procedures, control
+      rooms, and incident records, reporting candidly because every utility
+      was, in the title of one history, a hostage of the others. Funded by
+      the utilities it evaluated and holding no statutory authority, INPO
+      depended on shared catastrophic exposure to make its findings stick.#cn()
+    ],
+    // -- The Evidence --
+    [
+      The post-TMI culture shifted from smugness to mandated vigilance, and
+      U.S. commercial reactors have recorded no significant INES-level
+      event since INPO's founding. Industry performance indicators tracked
+      by INPO and its international counterpart WANO improved steadily and
+      broadly across the fleet.#cn()
+    ],
+    // -- What Transferred --
+    [
+      INPO is the strongest evidence in any domain that capability
+      engineering can be undertaken at the level of an entire industry
+      rather than a single organization. Its enabling conditions — shared
+      catastrophic exposure, regulatory legitimacy, and an honest
+      peer-review architecture — recur wherever one operator's failure can
+      damage every operator, and it informed the founding of WANO after
+      Chernobyl.#cn()
+    ],
+  ),
+  references: (
+    [Rees, J. (1994), _Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island_ — INPO's design and the "hostages" premise (paraphrased).],
+    [_Report of the President's Commission on the Accident at Three Mile Island_ (Kemeny Commission, 1979) — the pre-TMI culture.],
+    [Nuclear Energy Institute, "Lessons from the 1979 Accident at Three Mile Island"; National Academy for Nuclear Training — accreditation and peer evaluation.],
+    [World Nuclear Association — Three Mile Island Accident; INPO/WANO performance indicators.],
+    [Marsh (2019), "INPO and the Transformation of Nuclear Safety Culture."],
+  ),
   quote: [Every utility recognized that an accident at any single plant would affect every operator's license to operate.],
   quote-source: "Paraphrasing the institutional analysis in Rees, Hostages of Each Other, 1994",
-  sources-list: (
-    [Nuclear Energy Institute, "Lessons from the 1979 Accident at Three Mile Island"],
-    [World Nuclear Association — Three Mile Island Accident],
-    [Rees, _Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island_ (1994)],
-    [Marsh (2019), "INPO and the Transformation of Nuclear Safety Culture"],
-  ),
   le-insight: [
     INPO is the strongest evidence in any domain that capability
     engineering can be undertaken at the level of an *industry*, not just
