@@ -17,12 +17,13 @@
   pagebreak(to: "odd", weak: true)
 
   page(
-    fill: navy,
+    fill: divider-fill,
+    background: divider-bg,
     margin: (
-      inside:  m-inner + bleed,
-      outside: m-outer + bleed,
-      top:     m-top   + bleed + 12mm,
-      bottom:  m-bottom + bleed + 12mm,
+      inside:  m-inner + bleed + carrier-x,
+      outside: m-outer + bleed + carrier-x,
+      top:     m-top   + bleed + carrier-y + 12mm,
+      bottom:  m-bottom + bleed + carrier-y + 12mm,
     ),
     header: none,
     footer: none,

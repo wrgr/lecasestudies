@@ -59,10 +59,6 @@
   eyebrow(unit, color: teal)
 }
 
-// `_draft` predicate kept for back-compat; new code should use the
-// typography sizes exported from theme.typ.
-#let _draft = is-draft
-
 // ---- Pull quote box ----
 #let pullquote(body, source) = block(
   width: 100%,
@@ -82,10 +78,10 @@
   {
     eyebrow("Sources")
     v(3pt)
-    set par(leading: if is-draft { 0.5em } else { 0.45em }, first-line-indent: 0pt)
+    set par(leading: 0.45em, first-line-indent: 0pt)
     for src in items.pos() {
       block(
-        spacing: if is-draft { 3pt } else { 2.5pt },
+        spacing: 2.5pt,
         text(font: sans, size: sources-size, fill: text-dark)[→ #src]
       )
     }
@@ -110,11 +106,11 @@
 // ---- LE Insight / LENS Approach block ----
 #let lens-block(title, body) = block(
   width: 100%,
-  spacing: if is-draft { 8pt } else { 5pt },
+  spacing: 5pt,
   {
     eyebrow(title, color: gold)
     v(2pt)
-    set par(leading: if is-draft { 0.55em } else { 0.5em }, justify: true)
+    set par(leading: 0.5em, justify: true)
     text(font: sans, size: lens-size, fill: text-dark, body)
   }
 )
@@ -125,7 +121,7 @@
   {
     eyebrow("Reflection Questions", color: teal)
     v(3pt)
-    set par(leading: if is-draft { 0.5em } else { 0.45em }, justify: false)
+    set par(leading: 0.45em, justify: false)
     for (i, q) in qs.pos().enumerate() {
       grid(
         columns: (12pt, 1fr),
@@ -133,7 +129,7 @@
         text(font: serif, size: reflection-num, fill: teal, str(i + 1) + "."),
         text(font: sans, size: reflection-size, fill: text-dark, q),
       )
-      v(if is-draft { 3pt } else { 2pt })
+      v(2pt)
     }
   }
 )
@@ -157,15 +153,15 @@
     }
   }
   block(width: 100%, {
-    set par(leading: if is-draft { 0.5em } else { 0.44em }, justify: false, first-line-indent: 0pt)
-    text(font: sans, size: if is-draft { 9pt } else { 8pt }, fill: text-dark)[
-      #text(font: sans, size: if is-draft { 7pt } else { 6.5pt }, weight: "medium", tracking: 1.4pt, fill: teal)[#upper("Who builds this")]
+    set par(leading: 0.44em, justify: false, first-line-indent: 0pt)
+    text(font: sans, size: 8pt, fill: text-dark)[
+      #text(font: sans, size: 6.5pt, weight: "medium", tracking: 1.4pt, fill: teal)[#upper("Who builds this")]
       #h(5pt)
       #exps.join(" · ") — plus domain experts and a learning engineer to integrate.
     ]
     v(1.5pt)
-    text(font: sans, size: if is-draft { 8.5pt } else { 7.5pt }, fill: text-muted)[
-      #text(font: sans, size: if is-draft { 7pt } else { 6.5pt }, weight: "medium", tracking: 1.4pt, fill: teal)[#upper("Tools")]
+    text(font: sans, size: 7.5pt, fill: text-muted)[
+      #text(font: sans, size: 6.5pt, weight: "medium", tracking: 1.4pt, fill: teal)[#upper("Tools")]
       #h(5pt)
       #tools.join(" · ")
     ]
@@ -188,6 +184,57 @@
 // rendered, above Lulu's 5pt preflight floor.
 #let cite-num(n) = super(text(font: sans, size: 9pt, weight: "bold", fill: teal, str(n)))
 
+// ---- Per-case inline citation marker ----
+// Each case keeps its own counter (reset in `case()`); `#cn()` steps
+// it and prints the next superscript number. The matching reference
+// text is supplied, in the same order, to `case-references()`. The
+// marker count must equal the reference-list length — enforced by
+// scripts/check-cases.sh.
+#let case-cite = counter("case-cite")
+#let cn() = context {
+  case-cite.step()
+  cite-num(case-cite.get().first())
+}
+
+// ---- Per-case numbered reference list ----
+// Printed at the end of the case narrative (page 3 of the 4-page
+// layout). Numbering matches the inline #cn() markers above it.
+#let case-references(..items) = block(
+  width: 100%,
+  breakable: true,
+  {
+    eyebrow("References", color: gold)
+    v(3pt)
+    set par(leading: 0.45em, first-line-indent: 0pt, hanging-indent: 12pt)
+    for (i, it) in items.pos().enumerate() {
+      block(
+        spacing: 2.5pt,
+        grid(
+          columns: (12pt, 1fr),
+          column-gutter: 4pt,
+          text(font: sans, size: 7pt, weight: "bold", fill: teal, str(i + 1) + "."),
+          text(font: sans, size: sources-size, fill: text-dark, it),
+        ),
+      )
+    }
+  },
+)
+
+// ---- Case section heading ----
+// A consistent beat marker for the 4-page narrative. Labels come from
+// theme.section-sets, selected by the case's `kind`.
+#let case-section(title) = block(
+  width: 100%,
+  above: 9pt,
+  below: 4pt,
+  breakable: false,
+  {
+    text(font: sans, size: 8pt, weight: "medium", tracking: 1.8pt, fill: teal, upper(title))
+    v(2.5pt)
+    line(length: 16mm, stroke: 0.6pt + gold)
+  },
+)
+
 // ---- Editorial flag — small bracketed note for items that need
 //      manual confirmation from program leadership before any printed
 //      edition. Renders as a small gold "[edit:]" marker.
@@ -201,10 +248,10 @@
 #let literature(..items) = block({
   eyebrow("Further Reading", color: gold)
   v(3pt)
-  set par(leading: if is-draft { 0.5em } else { 0.45em }, first-line-indent: 0pt)
+  set par(leading: 0.45em, first-line-indent: 0pt)
   for it in items.pos() {
     block(
-      spacing: if is-draft { 3pt } else { 2.5pt },
+      spacing: 2.5pt,
       text(font: sans, size: sources-size, fill: text-dark)[• #it]
     )
   }

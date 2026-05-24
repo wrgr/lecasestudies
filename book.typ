@@ -8,21 +8,17 @@
 #import "lib/components.typ": *
 
 // Build mode flags (resolved in lib/theme.typ):
-//   mode=screen        — Half Letter, color, cream backdrop. (default)
-//   mode=print         — Half Letter, grayscale, white backdrop. Lulu prod.
-//   mode=print-letter  — US Letter, grayscale, white backdrop. Lulu prod.
-//   mode=draft         — US Letter, 11pt, color, editorial.
-//   mode=draft-half    — Half Letter, 11pt, color, editorial.
+//   mode=print    — 8 × 10, grayscale, white paper, 3 mm bleed. Lulu prod.
+//   mode=digital  — 8 × 10, color, cream backdrop. Screen / PDF. (default)
+//   mode=proof    — print page centered on US Letter with 8 × 10 trim
+//                   outline + crop marks; print at 100% to review.
 //
 // Page fill:
-//   screen — cream, for on-screen preview only.
-//   everything else (print, print-letter, draft, draft-half) — none
-//   (transparent), so the page prints on whatever paper stock is
-//   used. Diagram fills and full-bleed chapter dividers still paint
-//   their own backgrounds; we just don't lay a page-wide rectangle
-//   over the paper.
+//   digital — cream, full-page backdrop.
+//   print / proof — none (white). Diagram fills and full-bleed chapter
+//   dividers still paint their own backgrounds; we just don't lay a
+//   page-wide rectangle over the paper.
 #let page-fill = if cream-backdrop { cream } else { none }
-#let draft-date = sys.inputs.at("date", default: "")
 
 // ---- Document metadata ----
 #set document(
@@ -35,24 +31,16 @@
   width:  page-w,
   height: page-h,
   margin: (
-    inside:  m-inner + bleed,
-    outside: m-outer + bleed,
-    top:     m-top + bleed,
-    bottom:  m-bottom + bleed,
+    inside:  m-inner + bleed + carrier-x,
+    outside: m-outer + bleed + carrier-x,
+    top:     m-top + bleed + carrier-y,
+    bottom:  m-bottom + bleed + carrier-y,
   ),
   fill: page-fill,
+  background: crop-marks,
   header: context {
     let p = counter(page).get().first()
-    if is-draft and p > 1 [
-      #set text(font: sans, size: 7pt, fill: text-muted, tracking: 1pt)
-      #if draft-date != "" [
-        #upper("Capability Matters — DRAFT · " + draft-date) #h(1fr) #str(p)
-      ] else [
-        #upper("Capability Matters — DRAFT") #h(1fr) #str(p)
-      ]
-      #v(-4pt)
-      #line(length: 100%, stroke: 0.3pt + rule-soft)
-    ] else if not is-draft and p > 6 [
+    if p > 6 [
       #set text(font: sans, size: 7pt, fill: text-muted, tracking: 1pt)
       #if calc.even(p) [
         #upper("Capability Matters") #h(1fr) #str(p)

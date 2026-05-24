@@ -1,12 +1,16 @@
 // ============================================================
-// Case spread template
+// Case template — dual path
 //
-// Production (mode=print, print-letter): case on verso (left), LE
-//   Lens on recto (right). Long cases overflow to a second pair of
-//   pages; pagebreaks below force the next case back to verso, so
-//   spreads stay aligned at the cost of an occasional blank page.
-// Draft (mode=draft, draft-half): same structural break but no
-//   forced verso start — single-sided editorial print.
+// 4-page cited narrative (kind != none): pages 1–3 carry the case as a
+//   five-beat sourced narrative (section-sets in theme.typ) with inline
+//   #cn() citation markers and a numbered reference list at the end of
+//   page 3; the LE Lens lands on the next recto (page 4). The case
+//   starts on a verso so it opens as a clean four-page unit.
+// Legacy 2-page spread (kind == none): case on verso, LE Lens on recto.
+//   Kept so conversion is incremental — unconverted cases still render.
+//
+// Identical geometry in print / digital / proof — the modes differ
+// only in color and carrier, not in measure.
 // ============================================================
 
 #import "theme.typ": *
@@ -24,26 +28,19 @@
   quote: none,
   quote-source: "",
   sources-list: (),
-  // -- Page 2 fields --
+  // -- LE Lens page fields --
   le-insight: [],
   lens-approach: [],
   literature-items: (),
   reflection-list: (),
   courses: (),
+  // -- 4-page cited-narrative fields (active when kind != none) --
+  kind: none,        // "failure" | "intervention" | "frontier"
+  sections: (),      // one content block per section-set beat, in order
+  references: (),    // numbered references matching the inline #cn() markers
 ) = {
-  // Production: start each case on a verso (even-numbered) page so
-  // page 1 (case) and page 2 (LE Lens) form a true left-right
-  // spread when the reader opens the book.
-  // Draft: just a fresh page; single-sided print.
-  if is-draft {
-    pagebreak(weak: true)
-  } else {
-    pagebreak(to: "even", weak: true)
-  }
-
-  // -------- PAGE 1: THE CASE --------
-  block(width: 100%, {
-    // top row: case number + domain tags + year (single line)
+  // Shared header: case number / domains / year, title, mode line, impact.
+  let header-block = {
     grid(
       columns: (auto, 1fr, auto),
       column-gutter: 8pt,
@@ -53,8 +50,6 @@
       eyebrow(year),
     )
     v(3pt)
-
-    // title
     text(font: serif, size: title-size, fill: navy, title)
     v(1pt)
     mode-line(modes-code)
@@ -71,66 +66,35 @@
       ),
     )
     v(3pt)
+  }
 
-    // Diagram. The Letter draft scales the diagram 125% so it stays
-    // the focal element with the wider Letter measure; everywhere
-    // else the diagram renders at its native size.
-    if diagram != none {
-      if is-draft and is-letter {
-        scale(x: 125%, y: 125%, origin: top + left, reflow: true, diagram)
-      } else {
-        diagram
-      }
-      v(if is-draft { 4pt } else { 3pt })
-    }
-
-    set par(
-      justify: true,
-      leading: body-leading,
-      first-line-indent: 0pt,
-      spacing: body-spacing,
-    )
-    text(
-      font: sans,
-      size: body-size,
-      fill: text-dark,
-      body,
-    )
-  })
-
-  // -------- PAGE 2: THE LE LENS --------
-  // Always lives on the next page so case narrative and analysis
-  // can be reviewed side-by-side (verso/recto in production; on
-  // consecutive single-sided pages in draft).
-  pagebreak(weak: true)
-  block(width: 100%, {
+  // Shared LE Lens page.
+  let lens-page = block(width: 100%, {
     eyebrow("The Learning Engineering Lens", color: teal)
     v(1pt)
     line(length: 100%, stroke: 0.5pt + rule-soft)
-    v(if is-draft { 2pt } else { 3pt })
+    v(3pt)
 
     if quote != none {
       pullquote(quote, quote-source)
-      v(if is-draft { 2pt } else { 3pt })
+      v(3pt)
     }
 
     lens-block("LE Insight", le-insight)
     v(1pt)
     lens-block("LENS Approach", lens-approach)
-    v(if is-draft { 2pt } else { 3pt })
+    v(3pt)
 
     if reflection-list.len() > 0 {
       reflections(..reflection-list)
-      v(if is-draft { 2pt } else { 2pt })
+      v(2pt)
     }
 
-    // Who builds this — expertise + tools implied by the failure modes
     if modes-code != "" {
       team-block(modes-code)
-      v(if is-draft { 2pt } else { 3pt })
+      v(3pt)
     }
 
-    // Sources + further reading, two columns
     grid(
       columns: (1fr, 1fr),
       column-gutter: 10pt,
@@ -138,20 +102,63 @@
       if literature-items.len() > 0 { literature(..literature-items) } else [],
     )
 
-    // footer: courses
     block(
       width: 100%,
-      inset: (top: if is-draft { 2pt } else { 4pt }),
+      inset: (top: 4pt),
       stroke: (top: 0.5pt + rule-soft),
-      {
-        grid(
-          columns: (auto, 1fr),
-          column-gutter: 8pt,
-          align: (left + horizon, right + horizon),
-          eyebrow("LENS Courses", color: teal),
-          course-tags(..courses),
-        )
-      }
+      grid(
+        columns: (auto, 1fr),
+        column-gutter: 8pt,
+        align: (left + horizon, right + horizon),
+        eyebrow("LENS Courses", color: teal),
+        course-tags(..courses),
+      ),
     )
   })
+
+  // Each case starts on a verso (even) page so the spread opens correctly.
+  pagebreak(to: "even", weak: true)
+
+  if kind != none {
+    // ----- 4-PAGE CITED NARRATIVE -----
+    case-cite.update(0)
+    let labels = section-sets.at(kind, default: section-sets.failure)
+    block(width: 100%, {
+      context [#metadata((n: number, role: "start", page: here().page())) <cmeta>]
+      header-block
+      if diagram != none {
+        diagram
+        v(3pt)
+      }
+      set par(justify: true, leading: body-leading, first-line-indent: 0pt, spacing: body-spacing)
+      for (i, sec) in sections.enumerate() {
+        case-section(labels.at(i, default: ""))
+        text(font: sans, size: body-size, fill: text-dark, sec)
+      }
+      // Parity + structure probe: marker count must equal refs length,
+      // and this point (where references begin) should sit on page 3.
+      context [#metadata((n: number, role: "narr-end", page: here().page(), markers: case-cite.get().first(), refs: references.len())) <cmeta>]
+      if references.len() > 0 {
+        v(4pt)
+        case-references(..references)
+      }
+    })
+    // LE Lens on the next recto — page 4 when the narrative fills 3 pages.
+    pagebreak(to: "odd", weak: true)
+    context [#metadata((n: number, role: "lens", page: here().page())) <cmeta>]
+    lens-page
+  } else {
+    // ----- LEGACY 2-PAGE SPREAD -----
+    block(width: 100%, {
+      header-block
+      if diagram != none {
+        diagram
+        v(3pt)
+      }
+      set par(justify: true, leading: body-leading, first-line-indent: 0pt, spacing: body-spacing)
+      text(font: sans, size: body-size, fill: text-dark, body)
+    })
+    pagebreak(weak: true)
+    lens-page
+  }
 }
