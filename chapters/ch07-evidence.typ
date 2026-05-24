@@ -74,7 +74,7 @@
       deaths "due to" error is far harder than a single headline number
       implies. Their objection turned on counterfactual attribution — how
       confidently one can say a frail, already-dying patient would have
-      survived but for the error — a judgement that resists the clean
+      survived but for the error — a judgment that resists the clean
       tallying a headline number demands. The dispute is itself a worked
       example of the gap-attribution problem: how much of a counted death is
       the learning system, how much the system design, how much the

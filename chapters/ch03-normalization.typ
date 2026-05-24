@@ -85,8 +85,8 @@
     [
       Deepwater Horizon is the canonical multi-layer failure: procedure,
       training, supervision, contractor coordination, and equipment had each
-      drifted independently until none caught the others. The negative-
-      pressure test was the trigger, but the system had been carrying
+      drifted independently until none caught the others. The
+      negative-pressure test was the trigger, but the system had been carrying
       accumulated procedural debt for years, and the capability to recognize
       an unsafe well-state was simply not present at the moment it was
       needed.#cn() Because each defense had degraded inside its own
@@ -122,8 +122,8 @@
   le-insight: [
     Deepwater Horizon is the canonical multi-layer failure: training,
     procedure, supervision, contractor-coordination, and equipment all
-    drifted independently until none caught the others. The negative-
-    pressure test was the proximate trigger, but the system as a whole
+    drifted independently until none caught the others. The
+    negative-pressure test was the proximate trigger, but the system as a whole
     had been operating with accumulated procedural debt for years. The
     capability to recognize an unsafe well-state simply was not present
     at the moment it was needed.

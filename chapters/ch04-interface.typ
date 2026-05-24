@@ -98,8 +98,8 @@
     ],
     // -- Aftermath & Reform --
     [
-      Decades later the case became a central reference in the human-AI-
-      teaming conversation: a 2018 Naval Institute retrospective placed it at
+      Decades later the case became a central reference in the
+      human-AI-teaming conversation: a 2018 Naval Institute retrospective placed it at
       the heart of how operators should be teamed with automated decision
       aids under stress.#cn() Its lesson is that interface design is a
       capability deliverable, not an aesthetic one — and that the most

@@ -29,7 +29,7 @@
     contracts, yet it was set each day not from observed transactions but
     from a small panel of banks' estimates of what they would pay to
     borrow. For about a decade, banks systematically shaded those
-    estimates to favour their own derivatives positions; the coordination
+    estimates to favor their own derivatives positions; the coordination
     was later laid bare in subpoenaed trader-and-submitter messages. The
     capability gap was in the design of the benchmark itself: it asked for
     declarations, not observations, and the architecture invited gaming.
@@ -65,7 +65,7 @@
     [
       Investigations by the U.S. Department of Justice, UK regulators, and
       others produced settlements with Barclays, UBS, Deutsche Bank, RBS,
-      and others totalling more than \$9 billion. The UK Treasury
+      and others totaling more than \$9 billion. The UK Treasury
       commissioned the Wheatley Review, which concluded that the
       benchmark's reliance on subjective estimates rather than
       transactions was the structural flaw that made manipulation possible.
@@ -305,7 +305,7 @@
     were mathematically impossible. The SEC opened an investigation and
     concluded no action was warranted. Madoff operated until his sons
     turned him in during the 2008 crisis, when redemptions became
-    impossible to honour. The SEC Inspector General later found the staff
+    impossible to honor. The SEC Inspector General later found the staff
     assigned lacked the expertise to evaluate Markopolos's arguments and
     had deferred to Madoff's industry stature. The capability gap was at
     the regulator's technical-evaluation pipeline, not at the evidence —
