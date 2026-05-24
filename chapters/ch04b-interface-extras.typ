@@ -39,7 +39,11 @@
     [
       Eastern Air Lines Flight 401, a wide-body Lockheed L-1011, was on a
       night approach to Miami on 29 December 1972 with a full flight deck —
-      captain, first officer, and flight engineer.#cn()
+      captain, first officer, and flight engineer.#cn() Three crew was the
+      era's safeguard against any one person being overloaded, the assumption
+      being that more eyes meant more coverage; the night would show that
+      without a designed division of those eyes, three people could converge
+      on a single trivial problem as easily as one.
     ],
     // -- What Happened --
     [
@@ -49,12 +53,20 @@
       the autopilot's altitude hold. The TriStar began a slow descent into
       the Everglades; an altitude-warning chime sounded but, in the auditory
       clutter of the cockpit, no one registered it. The aircraft hit the
-      swamp, killing 101 of the 176 aboard.#cn()
+      swamp, killing 101 of the 176 aboard.#cn() The descent was gentle
+      enough to go unfelt, and the single chime carried no more urgency than
+      the routine sounds around it — so the one cue that could have broken the
+      fixation was indistinguishable, by design, from the background it
+      sounded against.
     ],
     // -- The Investigation --
     [
       The NTSB found the crew had become so engrossed in the landing-gear
-      difficulty that they failed to monitor the flight path.#cn() The
+      difficulty that they failed to monitor the flight path.#cn() A
+      twenty-cent bulb had absorbed the attention of an entire qualified crew
+      while a wide-body airliner descended unwatched — the disproportion
+      between the trigger and the outcome is exactly what made the case so
+      durable a teaching example. The
       findings inaugurated decades of research into attention, monitoring,
       and the design of cockpit alerts — the accident is cited in nearly
       every introductory cognitive-engineering course as the example of how a
@@ -69,14 +81,20 @@
       watched the altitude; the chime existed but did not cut through. The
       flight deck had the people and the information — it lacked the design
       that would have kept one channel of attention on the thing that could
-      kill them.#cn()
+      kill them. Attention had been treated as something the crew would
+      naturally allocate well, rather than as a resource the cockpit had to
+      be built to protect, and that unexamined assumption was the gap.#cn()
     ],
     // -- Aftermath & Reform --
     [
       Eastern 401 was one of the formative events behind Crew Resource
       Management (Case 12) — the explicit allocation of monitoring and
       cross-checking roles — and behind modern standards for prioritized
-      cockpit alerting.#cn() Its lesson is that attention is a designable
+      cockpit alerting.#cn() Both reforms encode the same correction: CRM
+      assigns someone to keep flying the aircraft while others troubleshoot,
+      and prioritized alerting ensures the most dangerous condition is the
+      loudest one — turning the night's two failures into permanent
+      structural defenses. Its lesson is that attention is a designable
       parameter, not a personal virtue: a system that lets all eyes converge
       on one task must guarantee the critical channel is still watched.
     ],
@@ -111,6 +129,19 @@
   reflection-list: (
     [Identify a low-priority task in your domain that could plausibly absorb all of an operator's attention. What is the life-critical task that would be displaced?],
     [Redesign the altitude warning chime of an L-1011 so that it cuts through a focused troubleshooting conversation.],
+    [Eastern 401 had three qualified people and still left the flight path unwatched. How would you assign and verify a "someone is always watching the critical channel" role so it cannot collapse when the whole team is drawn to one problem?],
+  ),
+  approaches: (
+    during: (
+      [Build an explicit division of attention into the operating procedure, so at least one role is always assigned to the life-critical channel while others troubleshoot.],
+      [Design alerts with a priority hierarchy, ensuring the most dangerous condition is also the most salient rather than one indistinguishable chime among many.],
+      [Treat attention as a resource the system must protect by design, not a virtue the operators are assumed to supply on their own.],
+    ),
+    after: (
+      [Drill crews on scenarios where a trivial problem competes with a critical one, and verify the monitoring role actually holds under that pressure.],
+      [Audit whether alerts in service are heard and acted on, retiring or redesigning any that get lost in routine clutter.],
+      [Track distraction-related near-misses so attention-displacement failures are visible before they cause a loss.],
+    ),
   ),
   courses: ("LEN 5", "LEN 2"),
 )
@@ -148,7 +179,11 @@
       The Boeing 737, the most-produced jetliner in history, steers in yaw
       with a rudder driven by a hydraulic power control unit (PCU). The PCU's
       servo valve was a dual-concentric design intended to be fault-tolerant
-      — a reassuring assumption that had passed certification.#cn()
+      — a reassuring assumption that had passed certification.#cn() Because
+      the design was believed to be fault-tolerant, a single jam was treated
+      as something the redundant geometry would contain; that confidence is
+      precisely what let the failure mode hide in plain sight across a fleet
+      flying millions of hours without incident.
     ],
     // -- What Happened --
     [
@@ -156,16 +191,23 @@
       Airlines Flight 585 near Colorado Springs in 1991 (25 killed) and USAir
       Flight 427 near Pittsburgh in 1994 (132 killed) — 157 deaths between
       them. In each, the rudder had swung hard over, opposite to what the
-      crew commanded.#cn()
+      crew commanded.#cn() A control that moves opposite to its input is the
+      cruelest failure a pilot can face: every corrective action deepens the
+      upset, and the three years separating the two losses meant the first
+      crash yielded no usable answer in time to protect the second.
     ],
     // -- The Investigation --
     [
       The NTSB investigation took years, because the failure was both rare
-      and unrecoverable, leaving little to reconstruct.#cn() It eventually
+      and unrecoverable, leaving little to reconstruct.#cn() An unrecoverable
+      event tends to destroy its own evidence, and a rare one offers no
+      pattern to work from, so the board had to reason toward a mechanism the
+      wreckage could only hint at. It eventually
       identified a thermal-shock condition in the rudder servo valve —
       cold-soaked hydraulic fluid striking a hot valve under specific
       conditions — that could jam the secondary valve and let the rudder move
-      opposite to commanded input.#cn()
+      opposite to commanded input, a convergence of cold, heat, and timing so
+      narrow it had eluded every test the design had been put through.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -176,13 +218,20 @@
       certification process that had not surfaced the failure mode, and
       maintenance procedures that did not test for it. When no human action
       is recoverable, capability engineering must move to the design and
-      certification, not the cockpit.#cn()
+      certification, not the cockpit — no amount of pilot skill or training
+      can close a gap that lives in a part the crew cannot reach and a state
+      no procedure names, which is why the only real fix was upstream of the
+      flight deck entirely.#cn()
     ],
     // -- Aftermath & Reform --
     [
       Boeing redesigned the rudder PCU and the fleet was retrofitted, and the
       cases reshaped how rare, unrecoverable failure modes are hunted in
-      certification and flight test.#cn() The 737 rudder sits at the
+      certification and flight test.#cn() Retrofitting the entire fleet
+      conceded that the original fault-tolerant assumption had been wrong,
+      and the changed approach to certification testing accepted that a part
+      passing its tests is not the same as a part proven safe across every
+      condition it will meet. The 737 rudder sits at the
       intersection of mechanical design, certification testing, and crew
       capability — all three would have had to fail together for the
       accidents to occur, and all three did.
@@ -219,6 +268,19 @@
   reflection-list: (
     [Where in your domain might an unrecoverable failure mode exist that has not yet manifested? How would you find it?],
     [Design the certification-test specification that should have caught the 737 rudder thermal-shock failure in development.],
+    [The 737 rudder passed certification yet was not safe across every condition it met. What is a component in your domain certified as fault-tolerant on an assumption no one re-tests — and how would you challenge that assumption before it fails?],
+  ),
+  approaches: (
+    during: (
+      [Test components against the full envelope of conditions they will meet in service — including rare combinations like thermal shock — rather than only the nominal cases certification asks for.],
+      [Treat any "fault-tolerant" claim as a hypothesis to be falsified in flight test, not an assumption that lets a single jam go unexamined.],
+      [Provide crews a procedure to recognize and respond to control reversals, while accepting that for unrecoverable modes the real fix must sit in the design.],
+    ),
+    after: (
+      [Reopen and reconcile investigations of rare, unexplained events instead of leaving them undetermined, since a buried first case left the second crew unwarned.],
+      [Build maintenance procedures that actively test for the surfaced failure mode across the fielded fleet, not just the redesigned units.],
+      [Hunt for unrecoverable failure modes proactively in service data, treating their absence in the record as unproven rather than as evidence of safety.],
+    ),
   ),
   courses: ("LEN 5", "LEN 7", "LEN 3",),
 )
@@ -259,7 +321,11 @@
       "content," the rapid-response detection configuration pushed to
       customers continuously. The deployment pipeline treated that content as
       a lighter category than code, with less testing and no staged
-      rollout.#cn()
+      rollout.#cn() The distinction had a logic: content shipped fast and
+      often, precisely so the sensor could keep pace with new threats, and
+      slowing it down with full code-grade testing seemed to defeat its
+      purpose. That speed was the very reason the safety gate was lowered on
+      the artifact that could still crash a kernel.
     ],
     // -- What Happened --
     [
@@ -269,7 +335,11 @@
       crash, looping the blue screen of death and requiring manual recovery
       of each device. Roughly 8.5 million machines failed at once —
       hospitals, airlines, banks, broadcasters, and governments worldwide —
-      the largest IT outage on record.#cn()
+      the largest IT outage on record.#cn() Because the file went to every
+      affected sensor simultaneously with no staged rollout, there was no
+      first wave to catch the fault and no blast radius short of the whole
+      install base; the requirement for hands-on recovery of each device
+      turned a single bad push into weeks of physical labor across the world.
     ],
     // -- The Investigation --
     [
@@ -278,7 +348,9 @@
       its code releases. The fault was not exotic: a category boundary in the
       deployment pipeline — content treated as safer than code — that did not
       match the operational reality, in which a bad content file could crash
-      the kernel exactly as bad code could.#cn()
+      the kernel exactly as bad code could. The boundary was an organizational
+      convenience rather than a technical truth, and the kernel, which executes
+      whatever reaches it, recognized no such distinction at all.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -287,14 +359,22 @@
       same testing and staged-rollout gates. CrowdStrike's customers had
       trusted the vendor's deployment safety, and that trust turned out to be
       load-bearing for the operation of a large slice of the global economy
-      on a single morning.#cn()
+      on a single morning. Each customer had implicitly outsourced a safety
+      gate to the vendor's pipeline, so the one missing gate inside that
+      pipeline was multiplied across every institution that ran the sensor,
+      with no independent check standing between a bad push and their kernels.#cn()
     ],
     // -- Aftermath & Reform --
     [
       CrowdStrike moved content updates onto staged rollouts and stronger
       validation, Microsoft revisited kernel-level access for security
       vendors, and the episode prompted scrutiny of concentration risk in
-      endpoint security.#cn() It is the cybersecurity-vendor analog of Knight
+      endpoint security.#cn() Each response targets a different layer of the
+      same failure: staged rollout limits the blast radius of any one push,
+      reconsidering kernel access limits how much a vendor fault can break,
+      and the concentration-risk scrutiny acknowledges that a single vendor
+      had become a shared point of failure for much of the economy. It is the
+      cybersecurity-vendor analog of Knight
       Capital (Case 55) — an unverified deployment to a system wired into
       critical operations — at a scale six orders of magnitude larger.
     ],
@@ -331,6 +411,19 @@
   reflection-list: (
     [Identify a vendor relationship in your domain whose deployment-safety practice your institution does not audit. What would the audit reveal?],
     [Design the cross-vendor staged-rollout protocol that should be standard for endpoint security software.],
+    [CrowdStrike's pipeline treated content as safer than code, but the kernel did not. What category boundary in one of your systems is an organizational convenience that the operational reality ignores — and what would it cost if it broke?],
+  ),
+  approaches: (
+    during: (
+      [Define deployment-safety gates by operational impact, not artifact category: anything that can crash the kernel clears the same testing and staged rollout as code.],
+      [Make staged rollout mandatory for every update, so a faulty push is caught by a first wave instead of reaching the entire install base at once.],
+      [Design for recovery, not just prevention — assume a bad update will ship and ensure it does not require hands-on intervention at every device.],
+    ),
+    after: (
+      [Audit vendor deployment-safety practices your institution depends on, rather than treating the outsourced safety gate as trustworthy by default.],
+      [Map and reduce concentration risk so a single vendor fault cannot take down a large slice of critical operations simultaneously.],
+      [Run post-incident reviews that interrogate category boundaries in the pipeline and feed the findings back into validation gates.],
+    ),
   ),
   courses: ("LEN 5", "LEN 2"),
 )
@@ -372,6 +465,10 @@
       system meant to detect U.S. missile launches and feed a
       launch-on-warning posture. The duty officer at the Serpukhov-15 bunker
       was responsible for verifying any alert and passing it up the chain.#cn()
+      A launch-on-warning posture compresses the time between detection and
+      decision to almost nothing, so the duty officer's verification was not
+      a formality but the single human checkpoint standing between a satellite
+      reading and the machinery of retaliation.
     ],
     // -- What Happened --
     [
@@ -380,17 +477,24 @@
       all. Lt. Col. Stanislav Petrov, the duty officer, assessed the signal
       as a false alarm — a genuine first strike, he reasoned, would involve
       hundreds of missiles, not five — and reported it as such. He was
-      correct.#cn()
+      correct.#cn() The reasoning that saved the situation came from outside
+      the system entirely: Oko could report what it saw, but it could not weigh
+      five launches against the doctrine of a real first strike, and that
+      mismatch between the alert and the strategic picture was exactly the
+      judgment the machine had no way to make.
     ],
     // -- The Investigation --
     [
       The cause was an unanticipated automation failure: sunlight reflecting
       off high-altitude clouds at a particular geometry had fooled the Oko
       satellite's infrared sensors into reading launches that were not
-      there.#cn() Later investigation identified the satellite-geometry
+      there.#cn() It was a failure of the rarest kind — a benign natural
+      phenomenon the sensors had never been designed to discount — which is
+      precisely why no automated check existed to catch it. Later investigation identified the satellite-geometry
       failure mode and modified the algorithm; the scenario is now
       permanently archived in early-warning training as the canonical false
-      positive.#cn()
+      positive, a permanent reminder that the system's worst error was one
+      it could not have flagged for itself.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -399,12 +503,19 @@
       contextual judgment to weigh the alert against what a real attack would
       look like, and the institutional latitude to override the system rather
       than simply relay it. Petrov's "funny feeling" was a career's worth of
-      judgment doing the work the automation could not.#cn()
+      judgment doing the work the automation could not — and crucially, the
+      chain of command had left him room to act on it rather than forcing him
+      to pass the alert upward unfiltered, so the recoverability lived as much
+      in the authority structure as in the man.#cn()
     ],
     // -- Aftermath & Reform --
     [
       Petrov's decision is widely credited with averting nuclear war, and the
-      case is permanently studied in command-and-control training.#cn() It is
+      case is permanently studied in command-and-control training.#cn()
+      Preserving the episode in training is itself a design choice: it keeps
+      the failure mode and the human override alive as institutional memory,
+      so the lesson does not erode the way the original sensor's blind spot
+      had. It is
       the book's strongest argument that retaining a human in some loops is
       capability engineering, not nostalgia: the human role is the
       recoverability of an automation failure the designers did not
@@ -446,6 +557,19 @@
   reflection-list: (
     [Identify an automated system in your domain where retaining a human-in-the-loop is genuinely capability-engineering rather than ceremonial. How would you tell the difference?],
     [Petrov's "funny feeling" was contextual judgment built across a career. Design the training that produces it deliberately.],
+    [Petrov's recoverability lived as much in his latitude to override as in his judgment. Map an automated decision in your domain where the operator has the knowledge to catch a failure but lacks the authority to act on it — and redesign the authority structure.],
+  ),
+  approaches: (
+    during: (
+      [Where automation feeds an irreversible decision, design the human role to be a genuine override — with the context, judgment cues, and authority to refuse a faulty alert, not merely relay it.],
+      [Give operators a strategic picture against which to weigh an alert, so an anomalous signal can be tested against what a real event would look like.],
+      [Treat unimagined failure modes as a design assumption: keep a human in the loop precisely where no automated check can cover the unanticipated.],
+    ),
+    after: (
+      [When a failure mode surfaces, modify the algorithm and archive the scenario in training so the lesson persists as institutional memory.],
+      [Audit whether human-in-the-loop roles still carry real override authority over time, or have decayed into ceremonial relays.],
+      [Preserve and refresh the contextual judgment override depends on through deliberate training, so the capability does not erode between rare events.],
+    ),
   ),
   courses: ("LEN 2",),
 )
@@ -484,7 +608,11 @@
       TSB Bank, spun out of Lloyds and acquired by Spain's Sabadell, needed
       to move some five million customer accounts off Lloyds' systems onto a
       new Sabadell-built platform. The cutover was scheduled for a single
-      weekend.#cn()
+      weekend.#cn() Compressing a five-million-account migration into one
+      weekend left no room for partial failure: the schedule itself became a
+      forcing function, framing readiness as a date to be hit rather than a
+      condition to be proven, and that framing would later prove decisive
+      when the technical signal said the platform was not ready.
     ],
     // -- What Happened --
     [
@@ -493,17 +621,25 @@
       About 1.9 million customers were locked out; some saw other people's
       accounts, mortgages disappeared, and card payments failed. The recovery
       took months, cost more than £330 million in compensation and
-      remediation, and the chief executive resigned.#cn()
+      remediation, and the chief executive resigned.#cn() That nearly every
+      component failed at once points away from a single defect and toward a
+      platform that had never been exercised under real load — the kind of
+      systemic breakdown that follows when a system is proven only in
+      conditions it will never actually meet.
     ],
     // -- The Investigation --
     [
       The Slaughter and May independent review found the migration had been
       tested under conditions that did not approximate real customer load,
       and that the platform had been certified ready by a process that did
-      not adequately challenge the certification.#cn() Decisively, the
+      not adequately challenge the certification — a certification that
+      confirmed readiness rather than interrogating it, which is how a system
+      that would fail under real conditions could be signed off as fit.#cn()
+      Decisively, the
       executive decision to proceed had been taken against technical
       recommendations that the platform was not ready; the Financial Conduct
-      Authority later fined TSB.#cn()
+      Authority later fined TSB, treating the override of a known technical
+      objection as a failure of governance and not merely of engineering.#cn()
     ],
     // -- The Capability Gap --
     [

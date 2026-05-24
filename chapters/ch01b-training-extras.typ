@@ -42,7 +42,9 @@
       was crewed by a captain with a documented history of training failures
       and a first officer who was ill, fatigued, and paid roughly \$16,000 a
       year. The airline and the hiring pipeline knew the captain's record;
-      the regulator did not.#cn()
+      the regulator did not — the information that should have shaped who sat
+      in that seat lived inside the carrier's files and never crossed into
+      the licensing system that was supposed to vouch for the crew.#cn()
     ],
     // -- What Happened --
     [
@@ -50,7 +52,10 @@
       its stall-warning stick shaker activated. The captain responded by
       pulling back on the control column — the opposite of stall recovery —
       and the Q400 stalled and crashed into a house in Clarence Center,
-      killing all 49 aboard and one person on the ground.#cn()
+      killing all 49 aboard and one person on the ground. The reflex he
+      reached for was exactly wrong for the situation, the kind of error a
+      pattern of failed training events should have predicted long before he
+      was handed the controls.#cn()
     ],
     // -- The Investigation --
     [
@@ -59,7 +64,8 @@
       airline training, and a hiring system blind to the captain's history.
       The data that should have flagged him existed — multiple failed
       training events — but did not flow to the decision that put him in the
-      seat.#cn()
+      seat, so the hiring choice was made on a record that omitted the very
+      facts that mattered most, an absence that looked like a clean slate.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -68,7 +74,9 @@
       the decisions about those operators. The capability that was missing
       was not pilot skill in the abstract but a data flow: a way to make a
       pilot's documented training history actionable at the hiring and
-      licensing decision, rather than buried in files no one consulted.#cn()
+      licensing decision, rather than buried in files no one consulted — a
+      record can exist in full and still fail completely if it never reaches
+      the moment and the person whose choice it was meant to inform.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -78,7 +86,10 @@
       experience for airline first officers to 1,500 hours and created the
       Pilot Records Database to make pilot history flow between carriers.#cn()
       The 1,500-hour rule remains debated; the records database fundamentally
-      restructured how the information that was missing in 2009 now moves.
+      restructured how the information that was missing in 2009 now moves,
+      converting a buried file into a record a hiring carrier is required to
+      retrieve — the difference between a fact that exists and one that
+      arrives where the decision is made.
     ],
   ),
   references: (

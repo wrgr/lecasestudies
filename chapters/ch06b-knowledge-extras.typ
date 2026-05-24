@@ -42,7 +42,11 @@
     [
       The Saturn V that launched Apollo to the Moon was, by any measure, one
       of the best-documented engineering programs in history — exhaustive
-      drawings, specifications, and test records.#cn()
+      drawings, specifications, and test records.#cn() That thoroughness is
+      what makes the case bite: the program left behind close to everything a
+      successor could ask for on paper, so any later difficulty in rebuilding
+      it cannot be blamed on a thin archive but must lie in what the archive
+      could not hold.
     ],
     // -- What Happened --
     [
@@ -52,7 +56,10 @@
       the components were manufactured, tested, and assembled — and why
       particular choices had been made — had walked out with the workforce
       that retired by the 1990s. The vehicle could be redesigned. It could
-      not be reproduced.#cn()
+      not be reproduced.#cn() The distinction is exact: redesign starts from
+      requirements and rebuilds the reasoning afresh, while reproduction needs
+      the original making-knowledge, and it was that knowledge — not the
+      paperwork describing it — that had left with the people who held it.
     ],
     // -- The Investigation --
     [
@@ -61,7 +68,10 @@
       it captured the *what*, not the tacit *how* — the judgment, the
       workarounds, the undocumented reasons — that lived in the people who
       did the work. When they left, that knowledge was in no archive to
-      recover.#cn()
+      recover.#cn() A drawing records the decision but not the deliberation
+      behind it; the workaround that made a part manufacturable and the reason
+      a tolerance was set where it was lived in the doing, and once the doers
+      retired there was no document from which to reconstruct it.
     ],
     // -- The Capability Gap --
     [
@@ -70,7 +80,11 @@
       Capability lives in people and in the practices that sustain them; a
       library of drawings is a necessary record but not a transferable
       ability. An institution that treats documentation as preservation of
-      capability is, quietly, letting the capability expire.#cn()
+      capability is, quietly, letting the capability expire.#cn() The danger
+      is that the archive looks like insurance: its very completeness can
+      reassure managers that the capability is safe, so the people and
+      practices that actually carry it are allowed to disperse precisely
+      because the paperwork seems to stand in for them.
     ],
     // -- Aftermath & Reform --
     [
@@ -79,7 +93,11 @@
       tacit reasoning, and not letting a critical capability rest in a
       handful of soon-to-retire heads.#cn() It pairs with the chapter's other
       memory cases: knowledge, unlike a document, has to be actively kept
-      alive, or it is gone in a generation.
+      alive, or it is gone in a generation. Each of the retention practices
+      addresses the same root cause the Saturn V exposed — that tacit making-
+      knowledge transfers only person to person — so apprenticeship and team
+      continuity are not nice-to-haves but the actual mechanism by which a
+      capability outlives the people who first held it.
     ],
   ),
   references: (
@@ -111,6 +129,19 @@
   reflection-list: (
     [Identify a capability in your domain that is currently held in the tacit knowledge of a small number of senior practitioners. What is your institution's capacity to reproduce it after they retire?],
     [Design the institutional practice that would preserve a capability against the retirement of its holders.],
+    [Saturn V was exhaustively documented yet could not be reproduced, because the archive captured the *what* and not the tacit *how*. Identify a capability in your institution whose documentation might be giving false reassurance — and describe what the paperwork is failing to capture.],
+  ),
+  approaches: (
+    during: (
+      [Capture tacit reasoning as the work happens — the why behind a choice, the workaround that made a part buildable — not just the resulting drawing.],
+      [Build capability into teams and apprenticeship, so the making-knowledge has a living carrier rather than resting in a handful of soon-to-retire heads.],
+      [Treat documentation as a record, never as a substitute for the people and practices that hold the capability.],
+    ),
+    after: (
+      [Audit critical capabilities for single points of human failure — knowledge held by a few near-retirement practitioners — and transfer it before they leave.],
+      [Periodically test reproducibility, not just whether the archive is complete, since a full archive can mask a capability that has already expired.],
+      [Sustain continuity of teams and practice deliberately, so a capability is kept alive across generations rather than rediscovered at need.],
+    ),
   ),
   courses: ("LEN 1", "LEN 8"),
 )
@@ -148,7 +179,11 @@
       Boeing was awarded a NASA Commercial Crew contract to build Starliner
       as the second U.S. vehicle to carry astronauts to the ISS, alongside
       SpaceX's Crew Dragon — drawing on a human-spaceflight heritage that had
-      once been definitive in American aerospace.#cn()
+      once been definitive in American aerospace.#cn() The award rested in
+      part on that heritage: a contractor with a definitive human-spaceflight
+      record was a presumed safe choice, and that presumption is exactly what
+      the program would go on to test, since reputation was standing in for a
+      current measurement of capability.
     ],
     // -- What Happened --
     [
@@ -157,7 +192,11 @@
       propulsion-system problems on the 2024 crewed test flight left the two
       NASA astronauts aboard the ISS rather than returning on the contracted
       spacecraft — NASA brought them home on a SpaceX vehicle months
-      later.#cn()
+      later.#cn() The three failures fell in different subsystems across three
+      separate years, which is itself telling: a single bad part is bad luck,
+      but software, valves, and propulsion failing in succession points to
+      something broader than any one component — a decline running across the
+      engineering organization rather than within one of its parts.
     ],
     // -- The Investigation --
     [
@@ -168,7 +207,10 @@
       generational, as Apollo- and Shuttle-era engineers retired, and partly
       institutional: cost pressure, schedule-driven decisions, and the loss
       of NASA's own in-house engineering depth to challenge the
-      contractor.#cn()
+      contractor.#cn() The two causes compound: as the contractor's senior
+      depth thinned through retirement, the buyer's own engineering depth had
+      also eroded, so the very expertise NASA would have needed to catch the
+      slipping contractor was the expertise it had let go of.
     ],
     // -- The Capability Gap --
     [
@@ -177,7 +219,11 @@
       only in retrospect, because the institutional architecture for catching
       a supplier's slow capability decay — and updating the buyer's
       confidence to match — did not exist. Reputation outran reality, and no
-      instrument was measuring the gap.#cn()
+      instrument was measuring the gap.#cn() Slow decay is the hard case to
+      catch: no single year's results look alarming, the brand keeps the
+      buyer's confidence high, and without an instrument that tracks the
+      supplier's actual current capability the divergence is only legible once
+      a crewed flight forces the reckoning.
     ],
     // -- Aftermath & Reform --
     [
@@ -187,7 +233,10 @@
       suppliers.#cn() It pairs with Saturn V (Case 78): where that case lost
       a capability to retirement, Starliner shows the same erosion in slow
       motion at a living institution still carrying the brand of the
-      capability it had let thin.
+      capability it had let thin. Having a second supplier to fall back on is
+      what let NASA absorb the failure, which is itself the lesson: where a
+      capability can erode unseen, a verified alternative is the difference
+      between an embarrassment and a crew with no way home.
     ],
   ),
   references: (
@@ -219,6 +268,19 @@
   reflection-list: (
     [Identify a legacy supplier in your domain whose capability track record may have eroded faster than your institutional confidence in them has updated. What is the signal?],
     [Design the contractor-capability review that would have caught the Starliner gaps before the 2024 crewed flight.],
+    [Starliner's failures spanned software, valves, and propulsion across three separate years — a pattern, not a single bad part. In your domain, what would distinguish a one-off component failure from organization-wide capability erosion, and how soon could you tell them apart?],
+  ),
+  approaches: (
+    during: (
+      [Verify a supplier's current capability against present evidence rather than awarding on reputation and a once-definitive track record.],
+      [Preserve enough in-house engineering depth to genuinely challenge a contractor, since a buyer who has let its own expertise erode cannot catch a slipping supplier.],
+      [Maintain a verified second supplier where the stakes are crewed, so a capability that erodes unseen does not become a single point of failure.],
+    ),
+    after: (
+      [Instrument supplier capability so slow, multi-year decay is visible before a high-stakes flight forces the reckoning.],
+      [Watch for cross-subsystem patterns — failures in software, valves, and propulsion in succession — as a signal of organization-wide erosion, not isolated bad luck.],
+      [Update institutional confidence to match measured reality, so a contractor's brand cannot keep outrunning its current performance.],
+    ),
   ),
   courses: ("LEN 5", "LEN 8", "LEN 6",),
 )
@@ -258,13 +320,22 @@
       successful predecessor, Ariane 4 — including, in its inertial reference
       system, software that had flown reliably for years. Reuse of
       flight-proven code was regarded as a way to reduce risk and cost.#cn()
+      The reasoning was seductive precisely because the code's flight record
+      was genuine: software that had worked on Ariane 4 looked like the
+      safest possible choice, and that confidence is what allowed it to cross
+      onto a different vehicle without being re-examined against the new
+      vehicle's conditions.
     ],
     // -- What Happened --
     [
       On 4 June 1996, Ariane 5 Flight 501 — its maiden flight — veered off
       course and broke up under aerodynamic stress 37 seconds after launch;
       the range-safety system destroyed it, and roughly half a billion
-      dollars of payloads were lost.#cn()
+      dollars of payloads were lost.#cn() The vehicle was destroyed in well
+      under a minute of flight, before it had done anything but climb — the
+      whole half-billion-dollar loss flowing from a fault that triggered
+      almost immediately at liftoff, when the new trajectory first pushed the
+      inherited code outside the range it had been built to handle.
     ],
     // -- The Investigation --
     [
@@ -272,10 +343,15 @@
       horizontal-velocity value that never exceeded a 16-bit signed integer
       on Ariane 4's trajectory did exceed it on Ariane 5's faster one; the
       resulting overflow shut down both redundant inertial reference systems
-      almost simultaneously, and the vehicle lost guidance.#cn() The
-      offending code path had become irrelevant to Ariane 5's flight after
-      liftoff, yet had neither been removed nor re-verified against the new
-      vehicle's envelope — reuse had been treated as risk-free.#cn()
+      almost simultaneously, and the vehicle lost guidance.#cn() Redundancy
+      gave no protection here because both units ran the identical inherited
+      code and met the identical out-of-range value at the same instant, so
+      the backup failed in lockstep with the primary — duplicating a system
+      defends against a part breaking, not against a shared assumption being
+      wrong. The offending code path had become irrelevant to Ariane 5's
+      flight after liftoff, yet had neither been removed nor re-verified
+      against the new vehicle's envelope — reuse had been treated as
+      risk-free.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -285,6 +361,10 @@
       decision and must be re-verified as one. The institutional capability
       that was missing was the requirement that reused safety-critical code
       be re-verified, not merely trusted because it had worked before.#cn()
+      The flaw was never in the Ariane 4 code, which was correct for the
+      trajectory it was written against; the flaw was the institutional
+      assumption that a record of working in one envelope carried over to
+      another, an assumption no test was required to challenge.
     ],
     // -- Aftermath & Reform --
     [
@@ -294,7 +374,10 @@
       conditions.#cn() The case rhymes with the Patriot (Case 19) and the
       Mars Climate Orbiter (Case 54) — small, unexamined assumptions
       inherited across a boundary, fatal when the boundary's conditions
-      changed.
+      changed. What unites the three is that each inherited a quantity sound
+      in its original setting and lethal in the new one, so the reform is the
+      same in every case: make the boundary crossing the moment the
+      assumption is re-checked, rather than the moment it is silently trusted.
     ],
   ),
   references: (
@@ -327,6 +410,19 @@
   reflection-list: (
     [Identify a piece of reused infrastructure in your domain whose original operating envelope is not documented. What is the silent assumption?],
     [Design the verification deliverable that should accompany every reuse of safety-critical software.],
+    [Both redundant reference systems failed at the same instant because they shared the same inherited assumption. Identify a place in your domain where redundancy gives false comfort because the duplicated units share a common flaw rather than fail independently.],
+  ),
+  approaches: (
+    during: (
+      [Treat every reuse of safety-critical code as a new design decision: re-verify each inherited assumption against the new system's operating envelope before flight.],
+      [Document the original operating envelope a component was verified against, so a later reuse can be checked against it rather than blindly trusted.],
+      [Design redundancy to fail independently — diverse implementations or inputs — so a shared inherited assumption cannot take out primary and backup at once.],
+    ),
+    after: (
+      [Audit reused components for code paths that are irrelevant in the new system but still active, and remove or re-verify them rather than leaving them dormant.],
+      [Make boundary crossings — code moving onto a new vehicle, a new envelope — a mandatory re-verification event in the institution's process, not a savings.],
+      [Review past reuse decisions for the Ariane / Patriot / Mars Climate Orbiter pattern: a quantity sound in its original setting and unchecked in the new one.],
+    ),
   ),
   courses: ("LEN 5", "LEN 8"),
 )
@@ -365,14 +461,23 @@
       The Tacoma Narrows Bridge, opened in July 1940 across Puget Sound, used
       a slender, shallow deck chosen for elegance and economy over an earlier
       proposal for a deeper, stiffer stiffening truss. It was sound by the
-      design knowledge of its day.#cn()
+      design knowledge of its day.#cn() The choice was a deliberate trade of
+      a deeper, stiffer truss for a slimmer, cheaper, more elegant deck — and
+      every analysis the discipline then had to bring to bear judged the
+      result safe, which is what makes the collapse a failure of the available
+      knowledge rather than of the calculation.
     ],
     // -- What Happened --
     [
       On 7 November 1940, in a wind of only about 40 mph — well within what
       the bridge was designed for — the deck began to twist in growing
       oscillations until it tore itself apart and fell into the sound. The
-      piers held and the cables held; the deck destroyed itself.#cn()
+      piers held and the cables held; the deck destroyed itself.#cn() That the
+      piers and cables survived is the diagnostic detail: the structure did
+      not fail where engineers knew to look but in the slender deck, and not
+      under an extreme load but in an ordinary wind the bridge was expressly
+      built to withstand, which is why the cause lay outside what could then
+      be calculated.
     ],
     // -- The Investigation --
     [
@@ -380,7 +485,11 @@
       self-amplifying oscillation — that had not been recognized as a design
       hazard for long-span suspension bridges. The bridge had not been
       designed against the thing that destroyed it because that thing was not
-      yet known to the discipline.#cn()
+      yet known to the discipline.#cn() Because the oscillation fed on itself,
+      a modest steady wind could pump ever more energy into the slender deck
+      until it tore apart — a self-amplifying mechanism nothing in the era's
+      static load analysis was equipped to anticipate, so no competent
+      designer of the day would have thought to check for it.
     ],
     // -- The Capability Gap --
     [
@@ -389,7 +498,11 @@
       capability lived above any individual: a body of knowledge that did not
       yet include flutter. It is the rarer, more hopeful kind of capability
       gap — the one a profession can close by learning, rather than one a
-      single institution failed to manage.#cn()
+      single institution failed to manage.#cn() The distinction matters for
+      how the gap is closed: a failure of management is fixed by holding an
+      institution to what was already known, whereas a failure of the
+      discipline's knowledge can only be fixed by the whole profession
+      learning something it did not previously have.
     ],
     // -- Aftermath & Reform --
     [
@@ -400,7 +513,10 @@
       strongest evidence that discipline-level learning across an entire
       profession is possible — and, set against the recurrence in
       Challenger/Columbia (Case 6), a reminder of how rare it is to absorb a
-      lesson that completely.
+      lesson that completely. The reform worked because it lodged the new
+      knowledge in the field's permanent machinery — a required test, a
+      curriculum topic, a teaching film every student sees — rather than in
+      the memory of the engineers who happened to witness it.
     ],
   ),
   references: (
@@ -435,6 +551,19 @@
   reflection-list: (
     [Identify a failure mode in your discipline that the field has not yet learned to recognize. What would be the equivalent Tacoma Narrows event?],
     [What institutional architecture absorbed the Tacoma Narrows lesson into the structural-engineering curriculum so durably? Describe its equivalent in your discipline.],
+    [Tacoma Narrows was a failure of the discipline's knowledge, not of one engineer's management. For a recent failure in your field, decide which kind it was — and explain how the fix differs depending on the answer.],
+  ),
+  approaches: (
+    during: (
+      [Test designs against dynamic and self-amplifying behavior, not only static loads, so an unfamiliar failure mode has a chance to reveal itself before fielding.],
+      [Treat a novel design choice — a slenderer deck, an untried configuration — as a reason to test beyond the standard envelope rather than to trust prior practice.],
+      [Build physical or model testing into the design process for any structure pushing past the regime where the discipline's analysis is proven.],
+    ),
+    after: (
+      [Lodge each hard-won lesson in the field's permanent machinery — required tests, curriculum, teaching artifacts — so it outlives the engineers who witnessed the failure.],
+      [Distinguish discipline-level gaps from management failures when reviewing an incident, since only the former requires the whole profession to learn something new.],
+      [Watch for novel structures operating where the discipline's knowledge is thin, and treat them as candidates for the next not-yet-recognized failure mode.],
+    ),
   ),
   courses: ("LEN 1", "LEN 8"),
 )
@@ -474,7 +603,11 @@
       depleted oil wells, some dating to the 1950s. Over decades the field's
       wells aged while the regime for inspecting them did not keep pace — and
       a subsurface safety valve on the well that would fail had been removed
-      in the 1970s and never replaced.#cn()
+      in the 1970s and never replaced.#cn() Storing high-pressure gas in wells
+      first drilled for oil decades earlier meant the assets were being asked
+      to do a job their age had not been qualified for, while the one piece of
+      equipment that might have contained a downhole failure had been gone for
+      forty years without replacement.
     ],
     // -- What Happened --
     [
@@ -482,7 +615,11 @@
       four months. About 100,000 tons of methane vented to the atmosphere —
       the largest such leak in U.S. history, roughly the annual greenhouse
       emissions of half a million cars — and some 8,000 households were
-      evacuated from the Porter Ranch neighborhood.#cn()
+      evacuated from the Porter Ranch neighborhood.#cn() That it took nearly
+      four months to cap a single well is its own measure of the gap: the
+      failure was not only unprevented but, once underway, beyond the
+      operator's ready means to stop, so the release ran on and the evacuation
+      of the Porter Ranch households stretched across the whole period.
     ],
     // -- The Investigation --
     [
@@ -491,7 +628,12 @@
       had not adequately inspected.#cn() It also found missing safety
       equipment and an institutional pattern of deferring integrity checks on
       the older wells; SoCalGas knew the field's wells were aging and their
-      integrity uncertain, and so did the regulator.#cn()
+      integrity uncertain, and so did the regulator.#cn() External corrosion
+      was not an exotic or unforeseeable mode but a familiar one with an
+      established inspection technique, so the failure turned on the deferral
+      itself: the pattern of putting off integrity checks on the oldest wells
+      meant the very inspections that existed to catch corrosion were the ones
+      not being done.
     ],
     // -- The Capability Gap --
     [
@@ -501,7 +643,11 @@
       the capability deliverable to update the inspection regime to the
       assets' actual engineering condition did not exist. Knowledge of the
       risk was present everywhere except in the rules that would have acted
-      on it.#cn()
+      on it.#cn() The gap was therefore not one of awareness but of
+      translation: everyone holding the knowledge that the wells were past
+      their safe life lacked the mechanism to convert that knowledge into a
+      mandatory, updated inspection, so the awareness sat inert until the well
+      ruptured.
     ],
     // -- Aftermath & Reform --
     [
@@ -511,7 +657,11 @@
       the chapter's other memory failures: an institution can hold the
       knowledge that an asset is past its safe life and still not act, until
       the rules that translate knowledge into inspection are themselves
-      rebuilt.
+      rebuilt. Each of the new requirements addresses a specific part of the
+      failure — inspections for the uninspected corrosion, pressure limits for
+      the overtaxed old wells, risk plans for the deferral pattern — which is
+      what it looks like to rebuild the rules so that knowledge of an aging
+      asset is finally forced into action.
     ],
   ),
   references: (
@@ -543,6 +693,19 @@
   reflection-list: (
     [Identify legacy infrastructure in your domain whose age exceeds the inspection regime designed for it. What is the capability deliverable to update the regime?],
     [Design the regulator's deliverable that would force re-inspection of legacy infrastructure as the inspection regime is updated.],
+    [At Aliso Canyon the operator and the regulator both knew the wells were aging, yet the knowledge sat inert because nothing translated it into a mandatory inspection. Identify a known risk in your domain that everyone is aware of but no rule yet forces action on — and design the translation.],
+  ),
+  approaches: (
+    during: (
+      [Match the inspection regime to the asset's actual engineering condition and age, not to the rules written when the asset was new.],
+      [Require, not just permit, the safety equipment a hazard calls for — a removed subsurface valve left unreplaced is a designed-in failure path.],
+      [Build a mechanism that converts known risk into mandatory action, so awareness that an asset is aging cannot sit inert in the absence of a rule.],
+    ),
+    after: (
+      [Audit for deferred integrity checks on the oldest assets, since a familiar, inspectable failure mode going uninspected is the warning the system is slipping.],
+      [Re-qualify legacy infrastructure for the duty it now performs, especially where old assets have been repurposed beyond their original design intent.],
+      [Maintain ready means to arrest a failure once begun, so a rupture is not compounded by months of inability to cap it.],
+    ),
   ),
   courses: ("LEN 7", "LEN 8"),
 )

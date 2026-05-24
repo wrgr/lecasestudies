@@ -156,9 +156,9 @@
       // Diagram sits after the narrative, so page 1 carries the summary and
       // text and the figure lands on page 2.
       if diagram != none {
-        v(9pt)
+        v(6pt)
         diagram
-        v(7pt)
+        v(5pt)
       }
       // Parity + structure probe: marker count must equal refs length,
       // and this point (where references begin) should sit on page 2.

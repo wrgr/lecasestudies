@@ -51,7 +51,11 @@
       breakdowns in how a crew worked together. The 1977 Tenerife disaster
       — 583 dead — was the starkest example: a KLM flight engineer
       questioned, twice and indirectly, whether the runway was clear, and
-      the senior captain dismissed him and continued the takeoff.#cn()
+      the senior captain dismissed him and continued the takeoff. The
+      pattern that emerged was consistent across investigations — skilled
+      crews failing not because anyone lacked competence, but because the
+      crew's most senior voice could close off information held by a more
+      junior one before it reached the decision.#cn()
     ],
     // -- The Intervention --
     [
@@ -61,7 +65,10 @@
       communication protocols, named and trained against authority
       gradients, and instituted structured briefings and debriefings —
       rebuilding the cockpit as a team in which information from any seat
-      could reach the decision.#cn()
+      could reach the decision. Rather than exhorting captains to listen
+      better, it built coordination into the standard procedure itself, so
+      the behavior that Tenerife had lacked became the trained default
+      rather than a matter of individual temperament.#cn()
     ],
     // -- How It Worked --
     [
@@ -70,7 +77,10 @@
       expected for a junior officer to challenge a captain, and by giving
       crews a shared protocol for doing so, it closed the path by which
       Tenerife-style deference had absorbed safety-critical information
-      instead of transmitting it.#cn()
+      instead of transmitting it. The change was structural rather than
+      attitudinal: a challenge that had once depended on a junior officer's
+      nerve now had a named procedure behind it, so the same doubt that went
+      unheard at Tenerife had an authorized route to the decision.#cn()
     ],
     // -- The Evidence --
     [
@@ -80,7 +90,10 @@
       outcomes. CAST set an 80% fatality-reduction target and exceeded it,
       reaching 83% by 2007 — work recognized with the 2008 Collier Trophy.
       Over twenty years, fatalities per 100 million passengers fell roughly
-      95%.#cn()
+      95%. The loop closed on itself: data surfaced the next hazard,
+      enhancements were prioritized against it, and the measured outcome fed
+      back into the priorities, so improvement continued rather than
+      plateauing once the cultural change had taken hold.#cn()
     ],
     // -- What Transferred --
     [
@@ -89,7 +102,10 @@
       continuous-evidence loop, where neither half works alone. The model
       has been exported to surgery, firefighting, and other
       high-consequence domains, and is now the template for redesigning
-      human roles in AI-augmented systems.#cn()
+      human roles in AI-augmented systems. What transferred was not the
+      specific protocols but the design logic itself — that coordination is
+      an engineerable system property and that the cultural change needs a
+      measurement loop to keep it honest over time.#cn()
     ],
   ),
   references: (
@@ -123,6 +139,19 @@
   reflection-list: (
     [Identify a high-consequence domain whose authority gradient absorbs information rather than transmitting it. What would the CRM equivalent intervention look like there?],
     [CRM is paired with CAST. What is the closed-loop evidence system in your domain — and if there is not one, what would it cost to build?],
+    [CRM made a junior officer's challenge a named procedure rather than an act of nerve. Identify a moment in your domain where the right information depends on someone's courage, and design the protocol that would make raising it the expected default instead.],
+  ),
+  approaches: (
+    during: (
+      [Build the coordination behavior into standard procedure — explicit communication protocols, named authority gradients, and structured briefings — so it is the trained default, not a matter of temperament.],
+      [Authorize the junior-to-senior challenge explicitly and drill it, so safety-critical information has a procedural route to the decision rather than depending on individual nerve.],
+      [Stand up the evidence half from the start: instrument operational data so hazards can be found and prioritized before they cause an accident.],
+    ),
+    after: (
+      [Run the closed loop continuously — surface hazards from data, prioritize enhancements, track implementation, and measure outcomes — so improvement does not plateau once the culture shifts.],
+      [Set and exceed an explicit reduction target (the CAST model) so the intervention is judged against a measured outcome, not against its own activity.],
+      [Export the design logic, not just the protocols, when transferring to new domains, adapting the paired cultural-plus-evidence structure to each setting.],
+    ),
   ),
   courses: ("LEN 1", "LEN 4", "LEN 2", "LEN 3",),
 )
@@ -159,7 +188,10 @@
       were well established and uncontroversial. The problem was
       reliability: in the existing culture, a nurse who saw a physician
       skip a sterile step had no procedural path to intervene without
-      crossing the hospital's authority gradient.#cn()
+      crossing the hospital's authority gradient. The knowledge was
+      universal and the steps cheap; what was missing was any mechanism that
+      made the right action happen every time rather than most of the time,
+      which is precisely where a fatal infection finds its opening.#cn()
     ],
     // -- The Intervention --
     [
@@ -168,7 +200,11 @@
       checklist — hand hygiene, chlorhexidine skin prep, full-barrier
       draping, sterile gown-mask-gloves, and a sterile dressing — with an
       explicit authorization: nurses were required, not merely permitted,
-      to stop any procedure in which a step was missed.#cn()
+      to stop any procedure in which a step was missed. The distinction
+      between permitted and required was deliberate — a permission a nurse
+      might decline to exercise against a senior physician became an
+      obligation the institution stood behind, removing the personal risk of
+      intervening.#cn()
     ],
     // -- How It Worked --
     [
@@ -176,7 +212,10 @@
       authority was the cultural half, and it was the load-bearing one.
       Before Keystone, the path to intervene did not exist; after it, the
       path was institutional and expected. The pairing converted knowledge
-      everyone already had into behavior that happened every time.#cn()
+      everyone already had into behavior that happened every time. The
+      checklist gave the nurse an objective, impersonal basis for the stop —
+      a missed item, not a judgment about the physician — which is what made
+      the authority usable in practice rather than merely on paper.#cn()
     ],
     // -- The Evidence --
     [
@@ -185,7 +224,10 @@
       nationwide. The program was estimated to have saved roughly 1,500
       lives and \$100 million within eighteen months. Results were published
       in the _New England Journal of Medicine_ in 2006, and follow-up
-      showed the effect sustained at ten years.#cn()
+      showed the effect sustained at ten years. The durability mattered as
+      much as the size of the drop: an improvement that survives a decade is
+      evidence the change was built into the system's structure rather than
+      riding on the initial enthusiasm of a single project.#cn()
     ],
     // -- What Transferred --
     [
@@ -194,7 +236,10 @@
       improvement — and vice versa. The model was packaged as the AHRQ CUSP
       toolkit, adopted in more than forty states, and replicated
       internationally, establishing the design principle of intervening in
-      matched technical-and-cultural pairs.#cn()
+      matched technical-and-cultural pairs. Packaging the approach as a
+      reusable toolkit was itself part of what transferred — it turned a
+      single project's success into something other institutions could adopt
+      without rediscovering the load-bearing role of the authority change.#cn()
     ],
   ),
   references: (
@@ -231,6 +276,19 @@
   reflection-list: (
     [Identify an evidence-based protocol in your domain that is *known* to work but is not consistently performed. What is the authority change required to pair with it?],
     [Design the measurement signal that would confirm the cultural half of a Keystone-style intervention is actually being authorized — not merely declared.],
+    [Keystone made the nurse's stop an obligation the institution stood behind, not a personal risk. Identify a corrective action in your domain that currently costs the person who takes it, and design the institutional backing that would remove that cost.],
+  ),
+  approaches: (
+    during: (
+      [Pair the technical artifact with the authority change from the outset — a checklist plus the explicit, institution-backed right of a junior member to stop the procedure when a step is missed.],
+      [Make the intervention an obligation rather than a permission, so the corrective action does not depend on an individual's willingness to challenge a senior colleague.],
+      [Anchor the stop to an objective, impersonal trigger (a missed checklist item) so the authority is usable without it reading as a judgment of the more senior operator.],
+    ),
+    after: (
+      [Measure the outcome directly (the CLABSI rate) and publish it, so the cultural half can be confirmed as authorized in practice rather than merely declared.],
+      [Track the effect over years, not months, to confirm the change is built into the system's structure rather than riding on a project's initial enthusiasm.],
+      [Package the paired design as a reusable toolkit so other institutions can adopt it without rediscovering the load-bearing role of the authority change.],
+    ),
   ),
   courses: ("LEN 4", "LEN 10", "LEN 5"),
 )
@@ -268,7 +326,11 @@
       plant-level failure but an industry with no shared mechanism for
       learning. The Kemeny Commission traced the accident in part to a
       pervasive "mindset" of complacency, in which each utility operated
-      alone and no institution carried lessons from one plant to the rest.#cn()
+      alone and no institution carried lessons from one plant to the rest.
+      The structural problem sat above any single control room: a lesson
+      learned at one plant had no path to the others, so the same latent
+      failure could surface repeatedly across an industry that never
+      compared notes.#cn()
     ],
     // -- The Intervention --
     [
@@ -277,7 +339,10 @@
       accident anywhere threatened everyone's license to operate. INPO set
       training and certification standards for operators and supervisors,
       and in 1985 the National Academy for Nuclear Training began
-      accrediting each facility's programs.#cn()
+      accrediting each facility's programs. The shared-exposure premise was
+      what gave a body with no statutory power its teeth — every utility had
+      a direct stake in every other utility's competence, because one
+      failure could end the whole industry's license to operate.#cn()
     ],
     // -- How It Worked --
     [
@@ -286,7 +351,10 @@
       rooms, and incident records, reporting candidly because every utility
       was, in the title of one history, a hostage of the others. Funded by
       the utilities it evaluated and holding no statutory authority, INPO
-      depended on shared catastrophic exposure to make its findings stick.#cn()
+      depended on shared catastrophic exposure to make its findings stick.
+      Peer review by working operators rather than distant regulators also
+      meant the examiners knew what to look for and the findings carried the
+      weight of professional judgment, not just rule compliance.#cn()
     ],
     // -- The Evidence --
     [
@@ -294,7 +362,10 @@
       U.S. commercial reactors have recorded no significant INES-level
       event since INPO's founding. Industry performance indicators tracked
       by INPO and its international counterpart WANO improved steadily and
-      broadly across the fleet.#cn()
+      broadly across the fleet. The broad, steady improvement across the
+      whole fleet — not just the strongest plants — is the signature of a
+      learning mechanism working as designed: the laggards were pulled up by
+      the same peer-review architecture that held the leaders to standard.#cn()
     ],
     // -- What Transferred --
     [
@@ -304,7 +375,9 @@
       catastrophic exposure, regulatory legitimacy, and an honest
       peer-review architecture — recur wherever one operator's failure can
       damage every operator, and it informed the founding of WANO after
-      Chernobyl.#cn()
+      Chernobyl. That the model crossed national borders to WANO is itself
+      evidence that the design is portable: the enabling conditions, not the
+      particular American institution, are what make the mechanism work.#cn()
     ],
   ),
   references: (
@@ -339,6 +412,19 @@
   reflection-list: (
     [What is the equivalent of "an accident at any single plant affects every operator" in your domain? If the answer is "nothing," what does that tell you?],
     [INPO was stood up in nine months. Pick a current cross-organizational capability problem and write the nine-month deliverable that would constitute a credible response.],
+    [INPO held no statutory authority yet made its findings stick through shared catastrophic exposure and peer review. Design the non-statutory mechanism that could enforce a standard in your domain, and name the shared stake that would give it teeth.],
+  ),
+  approaches: (
+    during: (
+      [Found the body on shared catastrophic exposure — make explicit that one operator's failure threatens every operator's license — so members have a direct stake in each other's competence.],
+      [Set common training, certification, and accreditation standards across the industry rather than leaving each organization to learn alone.],
+      [Staff peer review with working operators, not distant regulators, so examiners know what to look for and findings carry professional weight beyond rule compliance.],
+    ),
+    after: (
+      [Track fleet-wide performance indicators and confirm the laggards are being pulled up, not just the leaders held to standard — the signature of a learning mechanism working.],
+      [Sustain candid peer review by keeping the body funded by and accountable to its members, so the honest examination that makes it effective does not erode into formality.],
+      [Export the enabling conditions rather than the institution when scaling (as INPO informed WANO), adapting the shared-exposure-plus-peer-review design to each new context.],
+    ),
   ),
   courses: ("LEN 1", "LEN 8", "LEN 3",),
 )

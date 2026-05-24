@@ -40,7 +40,10 @@
       systems rich and poor, and much of it stemmed not from a lack of
       skill but from teams that never paused to confirm shared
       understanding before acting. The knowledge to prevent these events
-      existed; the reliable practice did not.#cn()
+      existed; the reliable practice did not. A surgical team in motion
+      rarely stopped to verify that everyone held the same picture of the
+      patient and procedure, so a mismatch any member could have caught
+      passed silently into the operation.#cn()
     ],
     // -- The Intervention --
     [
@@ -49,7 +52,10 @@
       critical junctures: before anesthesia, before skin incision, and
       before the patient leaves the operating room. The team piloted it
       across eight hospitals in eight countries spanning very different
-      economic and operational conditions.#cn()
+      economic and operational conditions. Testing the same artifact from
+      Toronto to Tanzania was deliberate — it had to work in settings with
+      vastly different resources to demonstrate that the gain came from the
+      forced pause itself, not from any one system's wealth.#cn()
     ],
     // -- How It Worked --
     [
@@ -58,7 +64,10 @@
       moving had to stop, look at one another, and confirm names, the
       procedure, allergies, and equipment aloud. The pauses were the
       load-bearing element — the requirement to halt and speak mattered
-      more than the specific list of items.#cn()
+      more than the specific list of items. Saying the confirmations aloud
+      to one another, rather than each member assuming them privately, is
+      what surfaced the mismatches a moving team would otherwise have
+      carried into the incision.#cn()
     ],
     // -- The Evidence --
     [
@@ -67,7 +76,10 @@
       across all eight sites — confirming Gawande's framing that "gaps in
       teamwork and safety practices in surgery are substantial in countries
       both rich and poor." The checklist was subsequently adopted by the
-      majority of surgical providers worldwide.#cn()
+      majority of surgical providers worldwide. That the death rate roughly
+      halved across all eight sites, despite their differences in wealth and
+      practice, is what made the result so persuasive — the effect tracked
+      the intervention rather than the setting.#cn()
     ],
     // -- What Transferred --
     [
@@ -77,7 +89,10 @@
       dependence on implementation fidelity. Where a mandate replaced
       genuine authorization of the pause, the measured effect attenuated,
       making the checklist a paired lesson in both minimal-artifact design
-      and the limits of mere compliance.#cn()
+      and the limits of mere compliance. The contrast between the pilot and
+      the mandated rollout is the lesson: when the pause was genuinely used
+      it worked, and when it became a box to check before proceeding the
+      same paper produced nothing.#cn()
     ],
   ),
   references: (
@@ -117,6 +132,18 @@
     [The WHO checklist was studied across eight countries. Design the multi-site evaluation that would establish whether your candidate intervention generalizes.],
     [The Ontario mandated rollout produced no measurable mortality reduction. What governance signal would have surfaced the fidelity gap between authorized use and compliance check-off before the trial was declared a failure?],
   ),
+  approaches: (
+    during: (
+      [Design the minimal artifact — a single-page checklist — around a small number of forced pauses at the highest-risk junctures, keeping the list short enough to be used every time.],
+      [Make the confirmations spoken aloud and shared across the team, so the pause surfaces mismatches rather than letting each member assume them privately.],
+      [Pilot across deliberately varied sites so the measured gain can be shown to track the intervention rather than any one setting's resources.],
+    ),
+    after: (
+      [Measure outcomes (death and complication rates) directly so the effect can be confirmed and the artifact is not assumed to work merely because it is in use.],
+      [Guard implementation fidelity as the scale grows — a mandate that turns the pause into a box to check reproduces the artifact without the effect.],
+      [Build a governance signal that distinguishes genuine, authorized use from compliance check-off, so the fidelity gap is visible before a rollout is judged a failure.],
+    ),
+  ),
   courses: ("LEN 4", "LEN 10"),
 )
 
@@ -151,7 +178,11 @@
       suffered fatal collisions (Case 1) that investigations traced in part
       to seamanship and navigation training degraded to CD-ROM self-study.
       The Navy faced a clear capability gap: officers were going to sea
-      without the hands-on ship-driving competence the job required.#cn()
+      without the hands-on ship-driving competence the job required. The
+      diagnosis was unusually unambiguous — two avoidable collisions in one
+      year pointing at the same eroded fundamentals — which is what
+      converted a long-tolerated shortfall into a mandate for structural
+      change.#cn()
     ],
     // -- The Intervention --
     [
@@ -160,7 +191,10 @@
       established Maritime Skills Training Centers on both coasts, roughly
       tripled ship-driving training hours, and created ten pass-or-fail
       assessments across an officer's career path — three of them no-go
-      gates that can halt advancement.#cn()
+      gates that can halt advancement. The no-go gates were the structural
+      teeth: by tying advancement to demonstrated competence rather than
+      time served, they made the qualification something the system would
+      stop on, not merely something it recorded.#cn()
     ],
     // -- How It Worked --
     [
@@ -169,7 +203,10 @@
       aviation: structured debriefing and explicit gate ownership. New
       Ready-for-Sea Assessments evaluated forward-deployed ships against a
       deliverable standard rather than a paper one; three of the first
-      eighteen ships assessed were immediately sidelined as not ready.#cn()
+      eighteen ships assessed were immediately sidelined as not ready. That
+      a sixth of the first cohort failed against the new standard showed the
+      assessment had teeth — it measured actual readiness rather than
+      ratifying the green dashboards that had masked the pre-collision gap.#cn()
     ],
     // -- The Evidence --
     [
@@ -178,7 +215,10 @@
       the reforms actually improve readiness. The structural intervention
       happened and the investment was large, but decision-grade evidence on
       outcomes is incomplete — the measurement to confirm the effect has
-      lagged the change itself.#cn()
+      lagged the change itself. Without an outcome time-series, the Navy
+      cannot yet distinguish a real capability gain from activity that looks
+      like one, which is the same blindness, in milder form, that let the
+      pre-collision gap go unseen.#cn()
     ],
     // -- What Transferred --
     [
@@ -187,7 +227,10 @@
       mature capability engineering must build the measurement
       infrastructure from the start — the time-series that lets an
       institution know whether the capability it bought is materializing —
-      rather than treating evaluation as an afterthought.#cn()
+      rather than treating evaluation as an afterthought. The two halves the
+      reform did deliver, technical investment and a cultural change, are
+      necessary but not sufficient; the missing third half is the evidence
+      regime that would let the Navy prove, not assume, the gap has closed.#cn()
     ],
   ),
   references: (
@@ -223,6 +266,19 @@
   reflection-list: (
     [Navy SWO reform happened without an evidence regime to confirm it worked. Identify a current reform in your domain and the evidence regime that should accompany it.],
     [Design the dashboard the Chief of Naval Operations should have to know whether SWO capability is improving in time-series.],
+    [The Ready-for-Sea Assessment sidelined three of the first eighteen ships because it measured readiness against a deliverable standard. Identify a certification in your domain that ratifies rather than tests, and design the gate that would be willing to fail a sixth of its first cohort.],
+  ),
+  approaches: (
+    during: (
+      [Pair the technical investment — restored curricula, simulators, training hours — with a cultural change such as structured debriefing and explicit gate ownership, rather than buying tools alone.],
+      [Install no-go gates that tie advancement to demonstrated competence, so qualification is something the system will stop on, not merely something it records.],
+      [Assess units against a deliverable standard from the first cohort, accepting that a real test will sideline some — that failure rate is the evidence the gate has teeth.],
+    ),
+    after: (
+      [Build the measurement infrastructure from the start — the outcome time-series that lets the institution distinguish a real capability gain from activity that merely looks like one.],
+      [Give the senior commander a readiness dashboard that reports demonstrated capability over time, so the same blindness that masked the pre-collision gap cannot recur.],
+      [Treat evidence of effect as the third half of the intervention, not an afterthought, so the reform can be proven rather than assumed to have closed the gap.],
+    ),
   ),
   courses: ("LEN 4", "LEN 10", "LEN 5"),
 )
@@ -258,7 +314,10 @@
       lives lost. The NTSB's investigation of the 1997 Guam crash of Flight
       801, which killed 228, identified steep cockpit authority gradients
       as a root cause: junior officers were culturally unable to challenge
-      a captain's erroneous decisions in time.#cn()
+      a captain's erroneous decisions in time. The pattern echoed Tenerife's
+      lesson but ran deeper, rooted in a national hierarchy the crew carried
+      into the cockpit, so the silence in the right seat was not a lapse of
+      training but an artifact of how rank was expressed in speech.#cn()
     ],
     // -- The Intervention --
     [
@@ -267,7 +326,11 @@
       from Delta to overhaul flight operations. The interventions were
       deliberate and cultural: mandated English fluency for all pilots, CRM
       training adapted for a high-power-distance setting, external
-      consulting from Boeing and Delta, and fleet modernization.#cn()
+      consulting from Boeing and Delta, and fleet modernization. The
+      external commercial pressure — suspended code-shares and a downgraded
+      rating — supplied the leverage to act, turning a cultural problem the
+      airline had long lived with into one it could no longer afford to
+      ignore.#cn()
     ],
     // -- How It Worked --
     [
@@ -276,14 +339,21 @@
       silenced first officers, because English has no honorifics to enforce
       rank. The CRM adaptation then gave crews an explicit, culturally
       workable protocol for raising concerns — converting deference into
-      communication.#cn()
+      communication. The choice was elegant precisely because it changed the
+      medium rather than asking pilots to override their own culture: with
+      no honorifics to encode, the language itself flattened the gradient
+      that had absorbed the first officer's warnings.#cn()
     ],
     // -- The Evidence --
     [
       Korean Air has recorded no fatal passenger accident since the reforms
       took hold. Air Transport World recognized the turnaround with its
       2006 Phoenix Award, and the carrier moved from international pariah to
-      a safety record indistinguishable from the best global operators.#cn()
+      a safety record indistinguishable from the best global operators. The
+      categorical nature of the shift — from a loss rate many times the
+      industry's to none — is what makes the case persuasive: the same crews
+      and the same national culture produced opposite outcomes once the
+      cockpit's communication structure was redesigned.#cn()
     ],
     // -- What Transferred --
     [
@@ -292,7 +362,10 @@
       cockpit — was the binding constraint, and once it was redesigned, the
       safety record changed categorically. The case also shows that the
       interface for cultural redesign can itself be engineered, in this
-      instance through language.#cn()
+      instance through language. The transferable lesson is to locate the
+      single cultural feature that actually binds the capability rather than
+      attempting to remake a culture wholesale, then change the medium
+      through which that feature operates.#cn()
     ],
   ),
   references: (
@@ -329,6 +402,19 @@
   reflection-list: (
     [Identify a cultural feature in an institution you work with that constrains capability. Is it engineerable? What would the redesign look like?],
     [Korean Air's intervention operated on language. What surface of culture is engineerable in your domain that you have not yet considered?],
+    [Korean Air acted only once suspended code-shares and a downgraded rating made the status quo unaffordable. What external pressure exists in your domain that could supply the leverage to redesign a long-tolerated cultural constraint — and how would you use it?],
+  ),
+  approaches: (
+    during: (
+      [Locate the single cultural feature that actually binds the capability — here, high power distance expressed through honorifics — rather than attempting to remake the whole culture.],
+      [Change the medium through which that feature operates (making English the cockpit language) so the constraint is removed structurally rather than by asking people to override their own culture.],
+      [Pair the structural change with an adapted protocol — CRM tuned for a high-power-distance setting — that gives crews a culturally workable way to raise concerns.],
+    ),
+    after: (
+      [Use external pressure (suspended code-shares, a downgraded rating) as durable leverage to hold the reform in place against any drift back to the prior norm.],
+      [Sustain the change with continued outside benchmarking and consulting so the new communication structure is reinforced rather than quietly eroding.],
+      [Track the safety record over years to confirm the categorical shift holds, treating a maintained accident-free record as the evidence the redesign took.],
+    ),
   ),
   courses: ("LEN 2", "LEN 8"),
 )
@@ -365,7 +451,10 @@
       correction. Catching problems at the source requires the person who
       sees them — usually the lowest-ranking worker on the line — to be
       able to act, in an environment where stopping a line running at
-      millions of dollars per hour is otherwise unthinkable.#cn()
+      millions of dollars per hour is otherwise unthinkable. The economics
+      and the authority structure point in opposite directions: the cheapest
+      moment to fix a defect is the one at which the person who sees it has
+      the least standing to halt production.#cn()
     ],
     // -- The Intervention --
     [
@@ -374,7 +463,10 @@
       if unresolved, stop the entire line. The inversion of authority is
       the entire point — the cord itself costs almost nothing, while the
       protected authority it confers on a front-line worker is the actual
-      design.#cn()
+      design. Handing the lowest-ranking person the power to halt operations
+      worth millions per hour deliberately resolves the contradiction the
+      background poses: it puts the authority to stop exactly where the
+      defect is first visible.#cn()
     ],
     // -- How It Worked --
     [
@@ -383,7 +475,11 @@
       when the cord is pulled, no-blame root-cause analysis, and the
       codified "Five Whys" method. A stop is treated as a learning
       opportunity rather than a failure, so workers actually use it — the
-      technical artifact and the protected authority are inseparable.#cn()
+      technical artifact and the protected authority are inseparable. The
+      rapid supervisor response is what makes the protection credible in
+      practice: a worker who pulls the cord sees help arrive rather than
+      blame, so the no-blame norm is demonstrated each time, not just
+      asserted.#cn()
     ],
     // -- The Evidence --
     [
@@ -392,7 +488,10 @@
       workers were too afraid to pull it; the artifact without the
       authority produced nothing. At Toyota, where the authority is
       protected, the great majority of activations are resolved within a
-      minute and the system has been sustained and exported for decades.#cn()
+      minute and the system has been sustained and exported for decades. The
+      natural experiment is unusually clean — the same physical cord
+      produced opposite results across two settings, isolating the protected
+      authority, not the hardware, as the variable that mattered.#cn()
     ],
     // -- What Transferred --
     [
@@ -402,7 +501,10 @@
       versa. It is the manufacturing counterpart of the Keystone nurse-stop
       authority (Case 14): same logic, different industry, same
       load-bearing element, and the same failure mode when only the
-      artifact is copied.#cn()
+      artifact is copied. That the identical pattern recurs across
+      manufacturing and medicine is what elevates it from a Toyota practice
+      to a design principle: wherever the person who sees the problem lacks
+      the standing to stop, copying the tool alone reproduces the failure.#cn()
     ],
   ),
   references: (
@@ -437,6 +539,19 @@
   reflection-list: (
     [Identify a technical artifact in your domain whose effectiveness depends entirely on a protected authority. Is the authority protected, or only declared?],
     [American manufacturers copied the cord without the authority. What is the equivalent surface-level imitation you have observed in your domain, and what was missing?],
+    [Toyota's no-blame norm is demonstrated each time help arrives within a minute of a pull rather than blame. Design the visible, repeated response that would prove a protected authority is real in your domain rather than merely written into policy.],
+  ),
+  approaches: (
+    during: (
+      [Place the authority to stop exactly where the problem is first visible — with the front-line worker — resolving the contradiction that the cheapest moment to fix a defect is when the seer has the least standing.],
+      [Pair the cheap artifact with the protected authority deliberately, recognizing the cord costs almost nothing while the authority it confers is the actual design.],
+      [Stand up a rapid supervisor-response protocol so that pulling the cord brings help, not blame, making the no-blame norm credible from the first activation.],
+    ),
+    after: (
+      [Sustain the pairing with no-blame root-cause analysis and a codified method (the Five Whys) so each stop becomes embedded learning rather than a one-off interruption.],
+      [Demonstrate the protected authority repeatedly — help arriving within a minute — so the norm is shown each time rather than merely asserted in policy.],
+      [When transferring the model, export the protected authority and response culture, not just the artifact, since copying the tool alone reproduces the failure mode.],
+    ),
   ),
   courses: ("LEN 10", "LEN 2", "LEN 8"),
 )
@@ -473,7 +588,10 @@
       in high-consequence work, and the IOM's _To Err Is Human_ had
       identified poor communication as a leading cause of medical harm.
       What clinical settings lacked was a structured, evidence-based way to
-      build those team skills.#cn()
+      build those team skills. The evidence existed and the diagnosis was
+      clear; what was missing was the translation — a route from the
+      high-reliability research base into a curriculum a hospital could
+      actually run at the bedside.#cn()
     ],
     // -- The Intervention --
     [
@@ -482,7 +600,11 @@
       and Tools to Enhance Performance and Patient Safety — the healthcare
       analog of Crew Resource Management. It trains four core competencies:
       communication, leadership, situation monitoring, and mutual support,
-      with a structured curriculum and ready-made implementation materials.#cn()
+      with a structured curriculum and ready-made implementation materials.
+      The joint AHRQ-DoD authorship mattered: it paired a healthcare
+      research agency's clinical reach with the military's deep team-training
+      experience, so the framework arrived already grounded in both the
+      evidence base and the practicalities of running it.#cn()
     ],
     // -- How It Worked --
     [
@@ -492,7 +614,11 @@
       its implementation infrastructure (master-trainer programs, toolkits,
       an institutional support center) was funded as part of the
       intervention, so adopting organizations had a route from training to
-      sustained practice rather than a binder on a shelf.#cn()
+      sustained practice rather than a binder on a shelf. Funding the
+      implementation alongside the curriculum is precisely what compressed
+      the usual decades-long gap between a proven method and its scaled use,
+      because the path from adoption to sustained practice was paid for in
+      advance.#cn()
     ],
     // -- The Evidence --
     [
@@ -500,7 +626,11 @@
       communication, and patient-safety culture, with concrete operational
       gains such as a 21% improvement in on-time first surgical starts.
       Thousands of healthcare organizations have adopted the framework, and
-      AHRQ has continued to develop it, releasing TeamSTEPPS 3.0 in 2023.#cn()
+      AHRQ has continued to develop it, releasing TeamSTEPPS 3.0 in 2023.
+      The continued development into a third version is itself evidence the
+      transfer took hold — a framework that is still being maintained and
+      revised nearly two decades on is one institutions kept using, not one
+      that was issued and abandoned.#cn()
     ],
     // -- What Transferred --
     [
@@ -509,7 +639,10 @@
       be dramatically shortened when the transfer is funded as part of the
       intervention rather than as an afterthought. Its four competencies
       map directly onto the argument that capability engineering is itself
-      a teachable discipline.#cn()
+      a teachable discipline. The deeper lesson is that the bottleneck in
+      cross-domain transfer is rarely the knowledge, which already existed,
+      but the funded path that carries it from research into routine
+      practice — the part programs most often leave unbudgeted.#cn()
     ],
   ),
   references: (
@@ -545,6 +678,19 @@
   reflection-list: (
     [What is the cross-domain transfer your domain has not yet executed? What evidence base in another industry should it draw on?],
     [TeamSTEPPS funded its implementation infrastructure. Design the implementation-infrastructure budget for an equivalent transfer in your domain.],
+    [TeamSTEPPS shortened the usual decades-long gap because the path from adoption to sustained practice was paid for in advance. Identify a proven method in your domain that has not scaled, and name the specific unbudgeted step that is blocking it.],
+  ),
+  approaches: (
+    during: (
+      [Distill the cross-domain evidence base into a structured curriculum of a few teachable competencies rather than leaving adopters to translate the research themselves.],
+      [Pair authorship across the source and target domains (as AHRQ and DoD did) so the framework arrives grounded in both the evidence and the practicalities of running it.],
+      [Fund the implementation infrastructure — master-trainer programs, toolkits, a support center — as part of the intervention, not as an afterthought.],
+    ),
+    after: (
+      [Maintain and revise the framework over time (as with successive TeamSTEPPS versions) so it stays in use rather than being issued and abandoned.],
+      [Track concrete operational gains (such as on-time first surgical starts) alongside culture measures, so the transfer's effect is shown, not assumed.],
+      [Identify and budget the specific path from adoption to sustained practice when scaling, since that unbudgeted step is the usual bottleneck in cross-domain transfer.],
+    ),
   ),
   courses: ("LEN 1", "LEN 10", "LEN 8", "LEN 3",),
 )
@@ -581,7 +727,10 @@
       catastrophic and irreversible, operated by young sailors far from any
       help. The capability problem was absolute: there was no acceptable
       accident rate, so the human operating system had to be engineered to
-      an extraordinary standard from inception.#cn()
+      an extraordinary standard from inception. Because a reactor at sea
+      could not be evacuated or handed to outside experts, the operators
+      themselves had to be the entire margin of safety — a constraint that
+      forced training to a level no ordinary program would justify.#cn()
     ],
     // -- The Intervention --
     [
@@ -590,7 +739,11 @@
       demanding programs held to zero-defect standards. Operators must
       demonstrate competence through oral examination by senior
       nuclear-qualified officers, and the program embeds continuous
-      re-qualification rather than one-time certification.#cn()
+      re-qualification rather than one-time certification. The oral board
+      tested understanding rather than recall, and the continuous
+      re-qualification meant competence had to be sustained rather than
+      banked once — so the standard governed the operator's whole career,
+      not just entry to it.#cn()
     ],
     // -- How It Worked --
     [
@@ -600,7 +753,10 @@
       those of superiors. Rickover's premise — that people, not
       organizations or management systems, get things done — made the
       qualification ladder, not paperwork, the load-bearing element of
-      safety.#cn()
+      safety. The questioning posture is the cultural half of the pair: deep
+      technical mastery alone could still defer to a mistaken superior, so
+      the obligation to challenge assumptions is what keeps competence from
+      being silenced by rank.#cn()
     ],
     // -- The Evidence --
     [
@@ -608,7 +764,10 @@
       record in any high-consequence domain: zero reactor accidents across
       more than six decades and thousands of reactor-years. The cost — the
       qualification ladder, the zero-defect oral boards, the continuous
-      re-qualification — is the visible budget-line price of that record.#cn()
+      re-qualification — is the visible budget-line price of that record.
+      The duration is the key evidence: a record sustained across six
+      decades and many generations of sailors shows the safety came from the
+      engineered system rather than from any one cohort's talent or luck.#cn()
     ],
     // -- What Transferred --
     [
@@ -618,7 +777,10 @@
       and McCain (Cases 1 and 15). Same institution, same era, opposite
       philosophies, radically different outcomes — the strongest available
       demonstration of capability treated as a system parameter versus
-      deferred as a cost.#cn()
+      deferred as a cost. The internal comparison controls for nearly
+      everything that usually confounds such claims — one service, one
+      manpower system, one budget process — leaving the training philosophy
+      itself as the variable that diverged.#cn()
     ],
   ),
   references: (

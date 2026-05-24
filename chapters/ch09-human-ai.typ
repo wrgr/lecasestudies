@@ -54,7 +54,10 @@
       steer, accelerate, and brake within their operational design domain,
       but they require the human driver to monitor continuously and take
       over instantly — a fundamentally new and demanding role assigned to
-      ordinary, untrained consumers.#cn()
+      ordinary, untrained consumers. Where a research program could screen,
+      brief, and instrument its safety drivers, a consumer product reaches
+      everyone who buys the car, with no curriculum and no qualification
+      gate standing between purchase and the monitoring task itself.#cn()
     ],
     // -- What Is Emerging --
     [
@@ -63,7 +66,10 @@
       crashes involving the system. The pattern is consistent: long periods
       of capable operation, attenuating driver attention, and then an edge
       case — a stationary fire truck, a faded lane marking, a perpendicular
-      crossing — that the disengaged driver fails to catch in time.#cn()
+      crossing — that the disengaged driver fails to catch in time. The very
+      reliability that makes the system attractive is what erodes the
+      vigilance it depends on, so each uneventful mile quietly raises the
+      odds that the next intervention will come too late.#cn()
     ],
     // -- The Capability Question --
     [
@@ -72,7 +78,9 @@
       monitoring of an automation that works well most of the time is a
       role a human can perform at all. Naming the feature "Autopilot" and
       designing weak engagement checks shaped the very inattention the
-      system then blamed on the operator.#cn()
+      system then blamed on the operator — so the architecture both invited
+      the disengagement and reserved the liability for the person least
+      positioned to resist it.#cn()
     ],
     // -- Early Evidence --
     [
@@ -81,7 +89,10 @@
       operation requires, and the recurring fatality pattern across NTSB
       reports suggests passive monitoring is not a sustainable role as
       currently engineered. Decades of automation-complacency research
-      point the same way.#cn()
+      point the same way — the finding is not that any one driver failed but
+      that the role asks a human to stay alert to a system precisely
+      because it almost never needs them, a demand the evidence keeps
+      showing is not reliably met.#cn()
     ],
     // -- Open Problems --
     [
@@ -90,8 +101,22 @@
       infrastructure — training, engagement design, attention measurement —
       to make it performable. The open problem is what driver-engagement
       architecture, if any, could make Level-2 monitoring sustainable for
-      an average driver over years of use.#cn()
+      an average driver over years of use, and whether the answer is a
+      better attention check or a concession that the role itself has to be
+      redesigned out of the human's hands.#cn()
     ],
+  ),
+  approaches: (
+    during: (
+      [Engineer driver-engagement monitoring to the demonstrated limits of human vigilance — verify attention against operational evidence before fielding, not against an assumption that warnings suffice.],
+      [Name and present the feature so its capability boundary is unmistakable to an untrained consumer, rather than implying autonomy the system does not deliver.],
+      [Constrain operation to the design domain the system can actually handle, so the human is not silently relied on as the backstop for edge cases.],
+    ),
+    after: (
+      [Monitor the standing-order crash data for the disengagement pattern and treat a recurring signature as evidence the role, not the driver, needs redesign.],
+      [Track attention and takeover performance across years of ownership, since vigilance erodes with the very reliability that accumulates over time.],
+      [Hold the engagement design accountable to an independent regulator with authority to require changes when in-use evidence shows it is inadequate.],
+    ),
   ),
   references: (
     [NTSB, Highway Accident Report HAR-17/02 (Williston, FL, 2016) — the quoted disengagement finding.],
@@ -125,6 +150,7 @@
   reflection-list: (
     [Identify a passive-monitoring role in your domain. What evidence would tell you whether attention is sustainable over years of operation?],
     [Design the driver-engagement architecture that would make Level-2 monitoring sustainable for an average consumer.],
+    [Autopilot assigns full legal responsibility to the operator while engineering the conditions that erode their attention. Where in your domain does liability rest with the person an automated system has made least able to intervene — and how would you realign the two?],
   ),
   courses: ("LEN 7", "LEN 2", "LEN 6",),
 )
@@ -164,7 +190,10 @@
       new, and so is the regulatory relationship around them: companies
       like Cruise operate under permits from bodies — the California DMV
       and CPUC, NHTSA — that depend heavily on the operator's own
-      disclosure of what its vehicles do in incidents.#cn()
+      disclosure of what its vehicles do in incidents. The regulator does
+      not sit in the vehicle; it sees what the operator chooses to show it,
+      so the entire oversight model rests on a disclosure the company
+      controls at the moment its interests run most against it.#cn()
     ],
     // -- What Is Emerging --
     [
@@ -172,7 +201,10 @@
       the path of a Cruise robotaxi. The robotaxi struck her and, having
       detected a collision, executed a pull-over maneuver that dragged her
       roughly twenty feet. The collision itself might have been survivable
-      as a regulatory matter; what followed was not.#cn()
+      as a regulatory matter; what followed was not — the post-collision
+      maneuver was the system behaving as designed in a situation no one had
+      designed it for, and it was the company's account of that maneuver,
+      not the maneuver itself, that decided the program's fate.#cn()
     ],
     // -- The Capability Question --
     [
@@ -181,7 +213,8 @@
       question the case poses is institutional, not technical: whether a
       commercial autonomy program has the governance commitment to disclose
       fully and promptly to its regulators, especially when the facts are
-      damaging.#cn()
+      damaging — a commitment that is easy to profess in calm conditions and
+      is tested only at the exact moment full candor is most costly.#cn()
     ],
     // -- Early Evidence --
     [
@@ -190,7 +223,9 @@
       investigation, and GM subsequently shut down Cruise's commercial
       robotaxi operations and laid off much of the workforce. A
       commissioned external review (Quinn Emanuel) detailed the disclosure
-      failures.#cn()
+      failures — a sequence in which each escalation followed not from the
+      injury but from the partial account of it, the loss of regulator
+      trust compounding faster than any engineering defect could have.#cn()
     ],
     // -- Open Problems --
     [
@@ -199,8 +234,22 @@
       institutional response converted it into a company-ending event. The
       open problem is what incident-disclosure commitment — auditable,
       pre-committed, enforceable — a commercial autonomy program should
-      have to demonstrate before it is allowed to operate at all.#cn()
+      have to demonstrate before it is allowed to operate at all, so that
+      candor under pressure is a structural guarantee rather than a matter
+      left to the operator's discretion in the moment.#cn()
     ],
+  ),
+  approaches: (
+    during: (
+      [Pre-commit the incident-disclosure protocol — what data is shared, in what completeness, within what window — and make it a condition of the operating permit rather than a post-hoc choice.],
+      [Engineer incident telemetry so the full event record, including post-collision maneuvers, is captured and preserved automatically beyond the operator's editorial control.],
+      [Design post-collision behaviors for the situations the system was not built for, since the pull-over maneuver, not the impact, produced the harm.],
+    ),
+    after: (
+      [Audit disclosed incident accounts against the complete telemetry independently, so a partial account is detectable before it erodes regulator trust.],
+      [Monitor the regulator-operator relationship itself as a safety-critical asset, treating a single misrepresentation as a program-level failure.],
+      [Track the gap between what is disclosed and what occurred across incidents, since governance, not technology, is where this class of failure concentrates.],
+    ),
   ),
   references: (
     [California Public Utilities Commission decision suspending Cruise permits (2023) — the omitted-facts finding (paraphrased).],
@@ -233,6 +282,7 @@
   reflection-list: (
     [What is the institutional incident-disclosure commitment in your domain? Is it operational under stress or aspirational?],
     [Design the incident-disclosure deliverable that a commercial autonomous-vehicle company should be required to demonstrate before operating.],
+    [Cruise's oversight depended on the operator's own account of what its vehicles did. Identify a regulatory relationship in your domain that relies on self-disclosure, and design the mechanism that would make a partial account detectable before trust collapses.],
   ),
   courses: ("LEN 10", "LEN 7"),
 )
@@ -276,7 +326,10 @@
       sentencing, and parole. COMPAS, a proprietary instrument, scores a
       defendant's likelihood of reoffending and hands that score to judges
       — relocating a consequential human judgment to an algorithm whose
-      workings are largely opaque.#cn()
+      workings are largely opaque. Because the instrument is proprietary,
+      the people most affected by its scores, and often the courts using
+      them, cannot inspect how the number was reached — opacity that becomes
+      part of the decision rather than incidental to it.#cn()
     ],
     // -- What Is Emerging --
     [
@@ -284,7 +337,10 @@
       reoffense outcomes and found a racial asymmetry in the errors: Black
       defendants were roughly twice as likely as white defendants to be
       incorrectly flagged as high-risk (about 44.9% versus 23.5%), while
-      white defendants were more often incorrectly flagged as low-risk.#cn()
+      white defendants were more often incorrectly flagged as low-risk. The
+      disparity was not in whether the tool was right on average but in who
+      bore the cost when it was wrong, so two defendants with identical
+      outcomes could be served very different errors depending on group.#cn()
     ],
     // -- The Capability Question --
     [
@@ -293,7 +349,9 @@
       Both claims were true, which is the point: the case poses whether
       "fair" even has a single technical meaning, or whether the
       institution must choose, in public, among incompatible fairness
-      definitions.#cn()
+      definitions. The dispute was not one side misreading the data; it was
+      two defensible metrics pointing in opposite directions, with no purely
+      technical tie-breaker available to settle which one governs.#cn()
     ],
     // -- Early Evidence --
     [
@@ -303,7 +361,8 @@
       false-positive and false-negative rates cannot all be satisfied at
       once when base rates differ across groups. The choice is not between
       fair and unfair models but among mutually exclusive definitions of
-      fairness.#cn()
+      fairness — a mathematical result, not a deficiency of COMPAS, meaning
+      no future model, however well built, can escape the same trade-off.#cn()
     ],
     // -- Open Problems --
     [
@@ -313,8 +372,22 @@
       which one it is willing to defend — and on what definition of
       "recidivism." It pairs with the A-Level (Case 35) and educational-bias
       (Case 37) cases as examples of construct definition as a
-      capability-engineering decision.#cn()
+      capability-engineering decision, because how the outcome is defined in
+      the first place shapes the error distribution long before any metric
+      is chosen to judge it.#cn()
     ],
+  ),
+  approaches: (
+    during: (
+      [Require the deploying institution to choose and publicly justify a fairness criterion before the tool is fielded, since the impossibility result means a choice cannot be avoided.],
+      [Define the target construct — what "recidivism" actually counts — explicitly, because the error distribution is set by that definition before any model is trained.],
+      [Mandate inspectability of a score's basis for courts and defendants, so a proprietary instrument cannot make opacity part of the decision.],
+    ),
+    after: (
+      [Audit error rates disaggregated by group against actual outcomes on an ongoing basis, as ProPublica did, rather than accepting an aggregate accuracy figure.],
+      [Monitor whether the deployed criterion still matches the one the institution publicly committed to defend, and surface drift to oversight.],
+      [Track the downstream decisions the score influenced, so the human cost of the chosen trade-off remains visible and contestable.],
+    ),
   ),
   references: (
     [Angwin, Larson, Mattu & Kirchner, "Machine Bias," _ProPublica_ (2016) — the false-positive-rate disparity (quoted).],
@@ -394,7 +467,9 @@
       diagnostic medicine, cleared for market and integrated into clinical
       workflows that affect real patients. Unlike a drug, a model can pass
       its validation study and still behave very differently once it meets
-      a population that differs from its training data.#cn()
+      a population that differs from its training data — the same model file
+      that scored well on the clearance set can quietly carry a different
+      error profile into every hospital whose patients do not resemble it.#cn()
     ],
     // -- What Is Emerging --
     [
@@ -404,7 +479,9 @@
       validation, with the degradation often concentrated in
       under-represented patient groups. Larrazabal et al. (PNAS 2020)
       demonstrated structural sensitivity drops for groups under-represented
-      in chest-X-ray training data.#cn()
+      in chest-X-ray training data — evidence that the shortfall is not a
+      stray bug but a predictable consequence of which patients the training
+      set did and did not contain.#cn()
     ],
     // -- The Capability Question --
     [
@@ -414,7 +491,8 @@
       was trained on healthcare cost as a proxy label for need. The
       question is how a regulator can certify a model as safe without
       checking how it behaves across the populations and labels it will
-      actually meet.#cn()
+      actually meet — since a model can look well-calibrated on its chosen
+      proxy while the proxy itself encodes the inequity it then propagates.#cn()
     ],
     // -- Early Evidence --
     [
@@ -423,7 +501,9 @@
       510(k) clearance pathway does not routinely require demographic
       stratification of validation metrics, nor post-market monitoring of
       in-use performance — so the divergence between clearance and
-      deployment is largely invisible while the tool is in use.#cn()
+      deployment is largely invisible while the tool is in use, and a
+      shortfall concentrated in one patient group can persist unmeasured
+      across the entire period the tool is influencing care.#cn()
     ],
     // -- Open Problems --
     [
@@ -433,8 +513,22 @@
       institutional machinery to require demographic post-market
       surveillance has not been built. It is the medical-AI analog of the
       Vioxx post-market-surveillance failure (Case 87) at a new
-      technological boundary.#cn()
+      technological boundary — a case where the harm comes not from a hidden
+      defect but from the absence of any standing system to watch the tool
+      once it is in the population's hands.#cn()
     ],
+  ),
+  approaches: (
+    during: (
+      [Require validation metrics stratified by demographic group at clearance, so a tool's performance is established on the populations it will actually meet, not an aggregate.],
+      [Specify the intended deployment population and label definition explicitly, and treat divergence from the training distribution as a known risk to be measured, not assumed away.],
+      [Build the data pipeline for in-use performance capture before deployment, so post-market signals are collectable from the first patient rather than reconstructed after harm.],
+    ),
+    after: (
+      [Mandate demographic post-market surveillance of in-use performance, the institutional machinery the clearance pathway currently lacks.],
+      [Monitor for the clearance-to-deployment performance gap continuously, since a shortfall concentrated in one group can otherwise persist invisibly.],
+      [Tie continued authorization to demonstrated in-population performance, so a tool that degrades in deployment can be withdrawn before the divergence compounds.],
+    ),
   ),
   references: (
     [FDA, "Proposed Regulatory Framework for Modifications to AI/ML-Based Software as a Medical Device" (2019) — clearance vs deployment (synthesized).],
@@ -516,7 +610,9 @@
       immediately — to draft patient-education materials, summarize
       records, and look up guidance. For the first time, a tool that
       produces fluent, authoritative-sounding medical text is in routine,
-      informal use at the point of care.#cn()
+      informal use at the point of care — adopted ahead of any guideline,
+      credential, or institutional sign-off, so the practice spread faster
+      than any structure to govern it could be put in place.#cn()
     ],
     // -- What Is Emerging --
     [
@@ -525,7 +621,9 @@
       citations, hallucinated drug dosages, or fictitious clinical
       guidelines. The failures range from cosmetic — invented references in
       academic submissions — to potentially clinical, such as unsafe
-      medication doses or invented contraindications.#cn()
+      medication doses or invented contraindications — a span that matters
+      because the same tool, used the same way, can produce a harmless
+      error and a dangerous one with no change in how confident it sounds.#cn()
     ],
     // -- The Capability Question --
     [
@@ -533,7 +631,9 @@
       presents hallucinated content with exactly the same fluent confidence
       as accurate content; the interface does not distinguish the two. The
       question is whether clinicians can — and will — develop the routine
-      verification practice that the tool's fluency actively discourages.#cn()
+      verification practice that the tool's fluency actively discourages,
+      since the very smoothness that makes the output easy to accept is what
+      removes the friction a reader would normally use as a warning.#cn()
     ],
     // -- Early Evidence --
     [
@@ -542,7 +642,9 @@
       precisely because it reads so authoritatively. JAMA editorials and
       reviews through 2023–2024 have repeatedly flagged the absence of an
       established verification practice as the central risk of clinical LLM
-      use.#cn()
+      use — the concern is not that the model errs but that the practice for
+      catching its errors at the moment of use has not yet been defined or
+      taught.#cn()
     ],
     // -- Open Problems --
     [
@@ -552,8 +654,21 @@
       an analog to the bibliographic discipline of academic writing —
       specified at the moment of use rather than after harm. The discipline
       is being asked to define what good looks like while deployment is
-      already underway.#cn()
+      already underway, so the verification standard has to be built around
+      a tool already in millions of hands rather than gated in front of it.#cn()
     ],
+  ),
+  approaches: (
+    during: (
+      [Specify a routine verification practice at the moment of use — what a clinician must independently confirm before acting on LLM output — before the tool enters clinical workflow.],
+      [Design the interface to mark provenance and uncertainty, so fluency alone cannot stand in for warranty of accuracy.],
+      [Restrict the sanctioned uses to those where verification is feasible and cheap, keeping unverifiable high-stakes outputs out of patient-facing work.],
+    ),
+    after: (
+      [Monitor the documented failure pattern — fabricated citations, dosages, guidelines — across in-use cases to keep the risk profile current as models change.],
+      [Track whether the verification practice is actually being performed, since the tool's fluency discourages exactly the checking it requires.],
+      [Govern adoption against emerging guidance so the standard for verification keeps pace with a tool already in widespread informal use.],
+    ),
   ),
   references: (
     [JAMA editorials on LLM integration into clinical practice (2023–2024) — the hallucination/verification problem (synthesized).],
@@ -585,6 +700,7 @@
   reflection-list: (
     [Identify a workflow in your domain currently being augmented by LLMs. What is the verification practice — and does it exist at the moment of use, or only after?],
     [Design the verification deliverable that should accompany every clinician's adoption of an LLM tool for patient-facing work.],
+    [The same fluency that makes LLM output easy to accept is what removes the cues a reader normally uses to doubt it. What interface signal would restore that friction at the moment of use without making the tool unusable?],
   ),
   courses: ("LEN 10", "LEN 7", "LEN 2"),
 )
@@ -628,7 +744,8 @@
       its peers promised to make policing more objective by replacing
       officer intuition with statistical prediction — relocating a
       discretionary judgment into an algorithm trained on historical
-      records.#cn()
+      records, and lending the output a veneer of neutrality that the human
+      judgments embedded in those records did not actually possess.#cn()
     ],
     // -- What Is Emerging --
     [
@@ -637,7 +754,9 @@
       where crime has actually occurred, the model learns enforcement
       patterns, not crime patterns. Lum & Isaac (2016) showed the result is
       a feedback loop: patrols are sent where police already went,
-      generating more recorded incidents that confirm the prediction.#cn()
+      generating more recorded incidents that confirm the prediction — a
+      loop that grows more confident the longer it runs, because its own
+      output becomes the next cycle's evidence.#cn()
     ],
     // -- The Capability Question --
     [
@@ -646,7 +765,9 @@
       predictive-policing tools have treated them as interchangeable. The
       question is whether a model trained on a record of institutional
       behavior can ever predict the underlying phenomenon, or only amplify
-      the behavior that produced its data.#cn()
+      the behavior that produced its data — a question no amount of
+      modeling accuracy can answer, because the gap is in what the data
+      measures, not in how well the model fits it.#cn()
     ],
     // -- Early Evidence --
     [
@@ -654,7 +775,10 @@
       records produced during periods of biased or unlawful policing —
       feeding directly into predictive systems. After equity reviews,
       cities including Santa Cruz, New Orleans, and Los Angeles suspended
-      or abandoned their predictive-policing deployments.#cn()
+      or abandoned their predictive-policing deployments — abandonment that
+      came only after the tools were already in service, the construct
+      problem surfaced by external review rather than caught before the
+      systems shaped where officers were sent.#cn()
     ],
     // -- Open Problems --
     [
@@ -664,8 +788,21 @@
       audit — a way to establish, before deployment, whether a predictive
       system's training data is a record of ground truth or merely of
       institutional behavior — implemented in some jurisdictions and absent
-      in most.#cn()
+      in most, so the same construct error remains available to the next
+      department that mistakes a record of enforcement for a map of crime.#cn()
     ],
+  ),
+  approaches: (
+    during: (
+      [Establish a construct-validity audit before deployment that tests whether the training data records the phenomenon to be predicted or merely the institution's own behavior.],
+      [Define the prediction target explicitly as "where crime occurs," not "where arrests are recorded," and reject data that cannot speak to the former.],
+      [Engineer against the feedback loop — for example, decoupling patrol allocation from the data the model then re-ingests — before the system can amplify its own output.],
+    ),
+    after: (
+      [Monitor for the enforcement feedback loop in deployment, watching whether predicted areas simply accumulate more recorded incidents that confirm the prediction.],
+      [Require periodic equity review of in-use outcomes, since the construct flaw in these systems has surfaced through external analysis rather than internal metrics.],
+      [Track the provenance of incoming training data and quarantine records produced during periods of biased or unlawful enforcement.],
+    ),
   ),
   references: (
     [Lum, K. & Isaac, W. (2016), "To Predict and Serve?," _Significance_ — the enforcement-vs-crime feedback loop (paraphrased).],
@@ -697,6 +834,7 @@
   reflection-list: (
     [Identify a predictive system in your domain whose training data is itself a record of institutional behavior rather than ground truth. What is the construct gap?],
     [Design the construct-validity audit that should precede deployment of a predictive system in any institutional setting.],
+    [Predictive policing's feedback loop grows more confident the longer it runs, because its own output becomes the next cycle's training data. Where in your domain does a deployed model shape the data it later learns from — and how would you break the loop?],
   ),
   courses: ("LEN 7", "LEN 9"),
 )
@@ -737,7 +875,10 @@
       amino-acid sequence was one of biology's grand challenges for half a
       century — slow, expensive experimental work that bottlenecked drug
       discovery and basic research. Deep learning offered, for the first
-      time, the prospect of solving it computationally at scale.#cn()
+      time, the prospect of solving it computationally at scale, turning a
+      problem that had been a years-long experimental undertaking per
+      protein into one that could be approached for the whole proteome at
+      once.#cn()
     ],
     // -- What Is Emerging --
     [
@@ -746,7 +887,9 @@
       experiment. The publicly released AlphaFold Protein Structure
       Database now holds predicted structures for more than 200 million
       proteins — close to the entire known protein universe — and has been
-      folded into research workflows worldwide.#cn()
+      folded into research workflows worldwide, so the benefit arrived not
+      as a single laboratory's advantage but as a shared resource the wider
+      community could build on immediately.#cn()
     ],
     // -- The Capability Question --
     [
@@ -754,7 +897,10 @@
       case poses the question of which conditions allow an AI capability to
       be safely and widely useful — and the answer turns out to lie around
       the model, not in it: an agreed benchmark, trustworthy training data,
-      a verifiable output, and a deliberate decision about release.#cn()
+      a verifiable output, and a deliberate decision about release. Each of
+      these is an institutional or evidentiary precondition, not an
+      artifact of the architecture, which is why the case reads as a lesson
+      about capability infrastructure rather than about a model.#cn()
     ],
     // -- Early Evidence --
     [
@@ -764,7 +910,9 @@
       biologists could check against known structures, and an open release
       that let the global community adopt the tool quickly. Where those
       conditions hold, AI amplifies capability; the technical model alone
-      does not.#cn()
+      does not — and the same architecture dropped into a domain missing any
+      one of those four would not have produced a comparable, trusted,
+      widely adopted result.#cn()
     ],
     // -- Open Problems --
     [
@@ -773,8 +921,23 @@
       The open problem is generalization: most consequential problems lack
       an agreed benchmark, clean training data, or verifiable output. The
       frontier question is how much of the AlphaFold pattern can be
-      reconstructed where those preconditions are not given for free.#cn()
+      reconstructed where those preconditions are not given for free — that
+      is, whether a field can deliberately build the benchmark, the data,
+      and the verification path that protein structure happened to have
+      accumulated over decades.#cn()
     ],
+  ),
+  approaches: (
+    during: (
+      [Establish an agreed benchmark and high-quality training data for the target problem before building the model, treating these as preconditions rather than afterthoughts.],
+      [Engineer the output to be verifiable against an independent ground truth, so users can check predictions rather than having to trust them.],
+      [Decide the release and access terms deliberately as a governance choice, since open release is what distributed AlphaFold's benefit globally.],
+    ),
+    after: (
+      [Monitor downstream use to confirm the verifiable-output property holds in practice, and that users are in fact checking predictions where stakes are high.],
+      [Track whether the four preconditions still hold as the tool is applied to new protein families or adjacent problems beyond its validated domain.],
+      [Sustain the open resource and benchmark over time, so the community-wide benefit does not erode as the field and the data move on.],
+    ),
   ),
   references: (
     [Jumper et al. (2021), "Highly accurate protein structure prediction with AlphaFold," _Nature_ — the method and accuracy.],
@@ -807,6 +970,7 @@
   reflection-list: (
     [Identify a domain in your work where the conditions that supported AlphaFold's success (benchmark, training data, verifiable output) are present. What is the analogous opportunity?],
     [The open release of AlphaFold's predictions was a governance decision. Design the equivalent decision for an AI capability your institution might develop.],
+    [AlphaFold inherited a benchmark, clean data, and a verification path that protein structure had accumulated over decades. Pick a problem in your domain that lacks one of those preconditions, and lay out how a field would deliberately build it.],
   ),
   courses: ("LEN 1", "LEN 7", "LEN 9"),
 )
@@ -850,7 +1014,10 @@
       years. GitHub Copilot, Cursor, Codeium, and similar tools now
       suggest, complete, and generate code for tens of millions of
       developers daily — the largest real-time experiment in human-AI
-      collaboration in professional knowledge work to date.#cn()
+      collaboration in professional knowledge work to date, conducted not
+      in a study design but in the live practice of an entire profession,
+      with no control group and no agreed measure of what it is doing to
+      the underlying craft.#cn()
     ],
     // -- What Is Emerging --
     [
@@ -860,7 +1027,10 @@
       substantial fraction of Copilot completions in security-relevant
       scenarios contained vulnerabilities, while a controlled study by
       Sandoval et al. (2023) found AI assistance did not significantly
-      increase the rate of critical security bugs.#cn()
+      increase the rate of critical security bugs. The two results do not
+      cancel so much as mark how unsettled the picture is — output clearly
+      rises, but the quality and safety of that output resist a single
+      verdict.#cn()
     ],
     // -- The Capability Question --
     [
@@ -869,7 +1039,9 @@
       Short-term output rises, but whether the underlying skill grows or
       erodes — especially for those who learn the craft with the tools
       always present — is precisely what the productivity metrics cannot
-      tell us.#cn()
+      tell us, because a measure of how much code ships says nothing about
+      whether the person shipping it could still produce or judge it
+      without the assistant.#cn()
     ],
     // -- Early Evidence --
     [
@@ -878,7 +1050,10 @@
       performance improves on tasks inside the tool's competence and
       degrades on tasks just outside it, where users over-trust the output.
       The short-term gains are real; the long-term capability consequences
-      remain uncharacterized.#cn()
+      remain uncharacterized — and the jagged frontier is hard to navigate
+      precisely because its edge is invisible from inside the task, so the
+      user cannot tell when they have crossed from where the tool helps to
+      where it misleads.#cn()
     ],
     // -- Open Problems --
     [
@@ -887,8 +1062,22 @@
       being asked to specify what good looks like before the long-term
       evidence is in. The open problem is the longitudinal study that could
       distinguish capability growth from capability erosion — and a
-      training practice that keeps the human's skill on the growing side.#cn()
+      training practice that keeps the human's skill on the growing side,
+      built and adopted while a generation is already learning the craft
+      with the tools always within reach.#cn()
     ],
+  ),
+  approaches: (
+    during: (
+      [Define what competence the human must retain independently of the tool, and design the workflow so that skill is exercised rather than quietly handed off.],
+      [Engineer the assistant to surface the jagged-frontier edge — flagging where a task sits outside its reliable competence — so users do not over-trust output just beyond it.],
+      [Keep verification of generated code, especially in security-relevant settings, a required step rather than an optional one, given the unsettled quality picture.],
+    ),
+    after: (
+      [Run the longitudinal study that productivity metrics cannot substitute for, measuring whether underlying skill is growing or eroding over years of use.],
+      [Monitor for over-reliance at the competence boundary, where the evidence shows performance degrading as users trust the tool past its reliable range.],
+      [Track outcomes for practitioners who learned the craft with the tools always present, the cohort whose long-term capability is most uncertain.],
+    ),
   ),
   references: (
     [Peng et al. (2023), "The Impact of AI on Developer Productivity" — short-term productivity gains.],
@@ -920,6 +1109,7 @@
   reflection-list: (
     [In your domain, identify a class of practitioners whose work is currently being augmented by AI tools. What evidence would tell you whether their capability is growing or eroding?],
     [Design the longitudinal study that would distinguish capability growth from capability erosion in an AI-augmented professional practice.],
+    [The "jagged frontier" is hard to navigate because its edge is invisible from inside the task. Design a signal or practice that would tell a practitioner in your domain when they have crossed from where the tool helps to where it misleads.],
   ),
   courses: ("LEN 10", "LEN 2", "LEN 8"),
 )
@@ -961,7 +1151,9 @@
       one is open. It belongs to the practitioners now in training — the
       students of the LDT program and the LENS specialization, and the
       institutions they will build across healthcare, defense, education,
-      and the human-AI frontier.#cn()
+      and the human-AI frontier. What distinguishes this case is not a
+      verdict already reached but a verdict still to be earned, written by
+      the choices its readers make once they leave the page.#cn()
     ],
     // -- What Is Emerging --
     [
@@ -969,7 +1161,9 @@
       capability is engineerable — that training, interfaces, evidence
       systems, and institutions can be designed rather than left to chance
       — and that the work of designing them is a teachable practice with
-      its own methods and growing body of knowledge.#cn()
+      its own methods and growing body of knowledge. If that argument
+      holds, then the gaps the preceding cases document are not the price
+      of progress but the absence of work that could have been done.#cn()
     ],
     // -- The Capability Question --
     [
@@ -978,7 +1172,9 @@
       gaps the preceding ninety-nine cases document? The strongest evidence
       for the discipline is the cumulative record of what its absence has
       cost; the strongest argument for its possibility is the record of
-      what its presence has produced.#cn()
+      what its presence has produced — and the case stays open precisely
+      because that question is answered not by argument but by what the
+      next generation of practitioners actually builds.#cn()
     ],
     // -- Early Evidence --
     [
@@ -987,7 +1183,9 @@
       1981 — a discipline whose evidence is accumulating, whose
       practitioners are being trained, and whose institutional architecture
       is not yet complete. Those precedents became mature institutions
-      within a generation.#cn()
+      within a generation, which is the most that can yet be claimed here:
+      a comparable trajectory is plausible, but it is not given, and the
+      comparison is an invitation rather than a guarantee.#cn()
     ],
     // -- Open Problems --
     [
@@ -996,8 +1194,21 @@
       insufficient to the volume of capability work the world now requires.
       What the practitioners reading this volume do next — a failure
       prevented, a success engineered, an institution built — is what fills
-      in this case.#cn()
+      in this case, and the page is left deliberately unfinished so that the
+      record of the discipline's possibility can still be added to.#cn()
     ],
+  ),
+  approaches: (
+    during: (
+      [Treat capability as a system parameter to be specified and engineered from the outset of any deployment, not left to chance and diagnosed only after failure.],
+      [Build the evidence system as a deliverable alongside the capability, so the discipline can show what its presence produces rather than only argue for it.],
+      [Design the institution that will carry the practice forward, taking INPO and CRM as precedents for how a discipline matures within a generation.],
+    ),
+    after: (
+      [Monitor whether the discipline is in fact closing the gaps the preceding cases document, treating the open case as a standing measure of progress.],
+      [Sustain the institutional architecture once built, since the precedents show maturity is reached only by carrying the work across a generation.],
+      [Keep the cumulative record of cost and of possibility current, so each failure prevented or success engineered is added to the evidence the discipline rests on.],
+    ),
   ),
   references: (
     [LDT / LENS program statement, Johns Hopkins School of Education — the program and its commitments.],
@@ -1033,6 +1244,7 @@
   reflection-list: (
     [What is the case you are positioned to add to this dataset in the next ten years — a failure prevented, a success engineered, an institution built?],
     [If this book is read by the practitioners who will write its hundred-and-first case, what should that case look like?],
+    [Capability engineering in 2026 is compared here to where INPO stood in 1979 — a plausible trajectory, not a guaranteed one. What would have to be true a generation from now for that comparison to hold, and what is the first institution you would build to make it so?],
   ),
   courses: ("LEN 1", "LEN 10", "LEN 8", "LEN 3",),
 )

@@ -47,9 +47,12 @@
     [
       inBloom was an ambitious shared data infrastructure for U.S. K-12
       student records, backed by \$100 million from the Gates Foundation,
-      hosted on commercial cloud, and built by enterprise engineers.
-      Technically it was sound — no bug, no breach, no performance failure
-      ever undid it.#cn()
+      hosted on commercial cloud, and built by enterprise engineers. The
+      premise was that a common store would spare districts from rebuilding
+      the same plumbing and let applications interoperate across systems that
+      had never spoken to one another. Technically it was sound — no bug, no
+      breach, no performance failure ever undid it, and that very soundness is
+      what makes the case instructive.#cn()
     ],
     // -- What Happened --
     [
@@ -57,19 +60,23 @@
       without adequate consent frameworks, without meaningful community
       engagement on data governance, without transparency about what was
       collected and why, and without any way for parents to participate in
-      decisions about their children's data. Parent groups organized
-      opposition state by state, and nine states — among them New York,
-      Louisiana, and Illinois — withdrew. Within about fourteen months the
-      \$100-million initiative collapsed.#cn()
+      decisions about their children's data. Each omission read, to a worried
+      parent, as a decision made about their child without them in the room.
+      Parent groups organized opposition state by state, and nine states —
+      among them New York, Louisiana, and Illinois — withdrew as the political
+      cost of staying overtook any promised efficiency. Within about fourteen
+      months the \$100-million initiative collapsed.#cn()
     ],
     // -- The Investigation --
     [
       Analysts at Data & Society read inBloom as the failure of technocratic
       education reform: the assumption that technically sound infrastructure
-      generates its own legitimacy proved catastrophically wrong. The
-      technology was never the problem; the governance was — the consent,
-      transparency, and trust that had been treated as add-ons rather than as
-      the foundation.#cn()
+      generates its own legitimacy proved catastrophically wrong. Legitimacy,
+      on this reading, is earned from the stakeholders a system acts upon, not
+      conferred by the quality of its engineering. The technology was never
+      the problem; the governance was — the consent, transparency, and trust
+      that had been treated as add-ons rather than as the foundation the whole
+      effort needed before a single record moved.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -78,17 +85,21 @@
       capability was the design of stakeholder trust — consent,
       accountability, and a voice for the families whose data was at stake —
       treated as a precondition for deployment rather than a feature to add
-      later. In education at scale, those are load-bearing elements, not
-      optional ones.#cn()
+      later. Once opposition formed, no patch could retrofit the trust that
+      should have been built in from the start, because trust withheld at
+      launch cannot be engineered back in under fire. In education at scale,
+      those are load-bearing elements, not optional ones.#cn()
     ],
     // -- Aftermath & Reform --
     [
       inBloom's collapse set back shared education-data infrastructure for
       years and became a standard cautionary tale; it also helped drive a
-      wave of state student-data-privacy laws.#cn() The lesson the book takes
-      from it is that ethics-as-design-constraint is not ideology but
-      engineering — and inBloom is the \$100-million empirical test of what
-      happens when you skip it.
+      wave of state student-data-privacy laws that codified, after the fact,
+      the consent and transparency the project had skipped.#cn() The lesson
+      the book takes from it is that ethics-as-design-constraint is not
+      ideology but engineering — and inBloom is the \$100-million empirical
+      test of what happens when you skip it, paid not in downtime but in a
+      dead initiative and a chilled field.
     ],
   ),
   references: (
@@ -123,6 +134,19 @@
   reflection-list: (
     [What is the equivalent unbuilt governance infrastructure in your domain? What would the \$100M empirical test of its absence look like?],
     [Design the stakeholder-trust deliverable that a future inBloom-equivalent should have to produce before deployment.],
+    [inBloom's engineers were excellent and its technology never failed, yet the project collapsed. Where in your own domain is technical soundness being mistaken for legitimacy — and who would have to consent before a system you build could claim it?],
+  ),
+  approaches: (
+    during: (
+      [Treat consent, transparency, and a parent-facing voice as load-bearing requirements gathered before the data store is built, not features bolted on after launch.],
+      [Engage the families and districts whose data is at stake as design stakeholders from the outset, so the governance questions surface in requirements rather than in opposition.],
+      [Make legitimacy an explicit deliverable: document who must agree, on what terms, before any student record moves into shared infrastructure.],
+    ),
+    after: (
+      [Audit live deployments for the gap between technical soundness and stakeholder trust, since a clean system can still be losing the political ground it stands on.],
+      [Monitor state-by-state consent and withdrawal signals as a leading indicator, treating organized parent opposition as data about a governance defect, not noise.],
+      [Sustain a standing transparency channel so families can see what is collected and why throughout operation, not only at adoption.],
+    ),
   ),
   courses: ("LEN 1", "LEN 10", "LEN 7", "LEN 6",),
 )
@@ -156,46 +180,57 @@
     [
       Healthcare.gov was the federal insurance marketplace at the center of
       the Affordable Care Act — a high-visibility online system that millions
-      would hit on day one. The people assembled to build it understood
-      insurance markets and large government programs, but not the launch of
-      a consumer technology product, and key technical positions went
-      unfilled.#cn()
+      would hit on day one, with a political deadline that could not slip. The
+      people assembled to build it understood insurance markets and large
+      government programs, but not the launch of a consumer technology product
+      at that scale, and key technical positions went unfilled — so the very
+      expertise the launch most needed was the expertise the team most
+      lacked.#cn()
     ],
     // -- What Happened --
     [
       There was no clear division of responsibility among the many government
       offices involved; CMS believed the contractor CGI was the lead system
-      integrator, and CGI did not share that understanding. No end-to-end
-      test was run before launch. The site went live on 1 October 2013 and
-      immediately collapsed under load it had never been validated for: about
-      about 27,000 enrollments through the federal marketplace in its first
-      month against a seven-million first-year target.#cn()
+      integrator, and CGI did not share that understanding — so the single
+      most important role on the program was one no party believed it held.
+      No end-to-end test was run before launch, meaning the assembled pieces
+      were never exercised together as a user would exercise them. The site
+      went live on 1 October 2013 and immediately collapsed under load it had
+      never been validated for: about about 27,000 enrollments through the
+      federal marketplace in its first month against a seven-million
+      first-year target.#cn()
     ],
     // -- The Investigation --
     [
       Reviews by the GAO and the HHS Inspector General found that no single
       person had a clear understanding of the project's status, and that the
       governance chain had no signal that would surface the readiness gap
-      before launch.#cn()
+      before launch. With ownership diffused across offices and no integration
+      test to fail, the chain could report progress at every level while the
+      whole remained untested — a structure in which bad news had nowhere to
+      enter and no one positioned to act on it.#cn()
     ],
     // -- The Capability Gap --
     [
       Healthcare.gov is a capability failure wearing a technology costume.
-      The site was salvageable in weeks once the right people arrived; the
-      original failure was that the wrong people had been assembled, and that
-      the governance chain meant to catch the mismatch had no mechanism to
-      see it. The missing capability was the matching of human capability to
-      system requirement — and the institutional signal that would have
-      flagged its absence.#cn()
+      The site was salvageable in weeks once the right people arrived, which
+      is the clearest proof that the code was never the binding constraint;
+      the original failure was that the wrong people had been assembled, and
+      that the governance chain meant to catch the mismatch had no mechanism
+      to see it. The missing capability was the matching of human capability
+      to system requirement — and the institutional signal that would have
+      flagged its absence before a deadline locked the launch in place.#cn()
     ],
     // -- Aftermath & Reform --
     [
       The rescue effort pulled together the team that became the U.S. Digital
       Service — a permanent institution born from a failure visible on the
-      news every night.#cn() It is the rare case in this book of a governance
-      failure that produced durable organizational reform, and a reminder
-      that the technical narrative ("the website crashed") often hides the
-      real one: the wrong capability was assembled, unnoticed.
+      news every night, its mandate built directly from what the launch had
+      lacked.#cn() It is the rare case in this book of a governance failure
+      that produced durable organizational reform, and a reminder that the
+      technical narrative ("the website crashed") often hides the real one:
+      the wrong capability was assembled, unnoticed, by a chain that had no
+      way to notice.
     ],
   ),
   references: (
@@ -231,6 +266,19 @@
   reflection-list: (
     [Healthcare.gov shipped without end-to-end testing. What is the equivalent missing deliverable in a current high-stakes deployment in your domain?],
     [USDS was born from the Healthcare.gov failure. What is the institutional capability your domain still lacks, and what failure would have to occur to produce it?],
+    [No single office believed it owned integration, so the gap stayed invisible until launch day. In a project you know, who actually owns the seam between components — and what signal would let them, rather than the news, learn the system is not ready?],
+  ),
+  approaches: (
+    during: (
+      [Match assembled human capability to the system's real requirements at staffing time — fill the technical roles a consumer-scale launch demands before committing to the deadline.],
+      [Name a single accountable integration owner and confirm every party shares that understanding, so no critical role is one each office assumes someone else holds.],
+      [Gate launch on a full end-to-end test that exercises the assembled system the way users will, not on per-component sign-offs.],
+    ),
+    after: (
+      [Build a governance signal that can surface a readiness gap upward, with someone holding the authority to delay a politically fixed launch date.],
+      [Independently audit project status against demonstrated capability, since a diffuse chain can report green at every level while the whole remains untested.],
+      [Institutionalize the rescue capability — as USDS did — so the talent that fixes a launch outlives the crisis that summoned it.],
+    ),
   ),
   courses: ("LEN 1", "LEN 5", "LEN 7", "LEN 6",),
 )
@@ -262,49 +310,59 @@
     // -- Background --
     [
       Union Carbide's pesticide plant in Bhopal, India, stored methyl
-      isocyanate (MIC) — an extraordinarily toxic intermediate — in bulk. By
-      1984 the plant was running under heavy cost pressure: understaffed,
-      with several key safety systems out of service for months, and workers
-      inadequately trained to handle an MIC emergency or read its warning
-      signs.#cn()
+      isocyanate (MIC) — an extraordinarily toxic intermediate — in bulk,
+      holding a lethal hazard in tanks beside a populated city. By 1984 the
+      plant was running under heavy cost pressure: understaffed, with several
+      key safety systems out of service for months, and workers inadequately
+      trained to handle an MIC emergency or read its warning signs. Each
+      economy was individually defensible on a ledger; together they thinned
+      every layer of defense the process depended on.#cn()
     ],
     // -- What Happened --
     [
       On the night of 2–3 December 1984, water entered an MIC storage tank
       and triggered a runaway reaction; the safety systems that should have
-      contained it were non-operational, and about forty tons of gas vented
-      over the sleeping city. Thousands died within hours; estimates of total
-      deaths run to 15,000–20,000, and roughly half a million people were
-      exposed or injured — the worst industrial disaster in history.#cn()
+      contained it were non-operational, so the one event the plant existed to
+      prevent met no working barrier on its way out. About forty tons of gas
+      vented over the sleeping city. Thousands died within hours; estimates of
+      total deaths run to 15,000–20,000, and roughly half a million people
+      were exposed or injured — the worst industrial disaster in history, its
+      toll set by who happened to be downwind.#cn()
     ],
     // -- The Investigation --
     [
       Investigations found the catastrophe "resulted from operating errors,
       design flaws, maintenance failures, training deficiencies and economy
-      measures that endangered safety."#cn() Human-factors analysis placed
-      Bhopal alongside Three Mile Island in its neglect of the human element,
-      and the U.S. Chemical Safety Board would later find ineffective
+      measures that endangered safety" — a list with no single villain, which
+      is precisely what made it hard to govern.#cn() Human-factors analysis
+      placed Bhopal alongside Three Mile Island in its neglect of the human
+      element, and the U.S. Chemical Safety Board would later find ineffective
       employee training an underlying cause in nine of its first twenty-three
-      chemical-incident investigations — a pattern that traces to Bhopal.#cn()
+      chemical-incident investigations — a pattern that traces to Bhopal and
+      shows the same gap recurring long after the lesson was available.#cn()
     ],
     // -- The Capability Gap --
     [
       Bhopal is the largest-magnitude capability-and-governance failure on
       record, and a multi-layer one: training, maintenance, design, staffing,
       and oversight had all degraded together, and no layer above the plant
-      was accountable for the whole. The capability to operate an
+      was accountable for the whole. Because the erosion was spread across
+      layers, no single inspection or metric saw it, and each degraded layer
+      made the next one matter more. The capability to operate an
       extraordinarily hazardous process safely had been hollowed out by
       cost-cutting, and the governance that should have caught the hollowing
-      did not exist.#cn()
+      did not exist to ask whether the whole was still safe.#cn()
     ],
     // -- Aftermath & Reform --
     [
       The disaster reshaped industrial safety worldwide and, in the United
       States, catalyzed the creation of the Chemical Safety Board — an
       INPO-equivalent for industrial chemistry — and the process-safety
-      regime that followed.#cn() The book's recurring arc runs through Bhopal
-      in its starkest form: a catastrophe forces into being the institution
-      the industry should have built before it.
+      regime that followed, an oversight layer built to own exactly the whole
+      that no one had owned at Bhopal.#cn() The book's recurring arc runs
+      through Bhopal in its starkest form: a catastrophe forces into being the
+      institution the industry should have built before it, at a price no
+      institution-building exercise should ever have to cost.
     ],
   ),
   references: (
@@ -339,6 +397,19 @@
   reflection-list: (
     [Bhopal produced the CSB. What is the institution your domain has not yet built that a comparable disaster would force into existence?],
     [Identify a plant or facility in your domain that has had safety systems off-line for an extended period. What is the measurement gap that allowed it?],
+    [At Bhopal training, maintenance, design, staffing, and oversight all degraded together while each looked acceptable alone. Whose job in your organization is to judge whether the whole is still safe — and what would they have to see to declare that it is not?],
+  ),
+  approaches: (
+    during: (
+      [Treat each safety system, staffing level, and training requirement as a non-negotiable layer of defense, not a cost line available for trimming under pressure.],
+      [Assign a single accountable owner for the integrated hazard, so degradation spread across layers cannot fall between everyone's responsibilities.],
+      [Require that operators be trained to recognize and respond to the specific emergency the process can produce before the process is run with that hazard in bulk.],
+    ),
+    after: (
+      [Audit the whole defense-in-depth posture together rather than layer by layer, since each degraded barrier silently raises the stakes on the next.],
+      [Track how long any safety system stays off-line and gate continued operation on its restoration, treating extended downtime as an unacceptable condition.],
+      [Sustain an oversight layer — an INPO- or CSB-equivalent — with authority and reach above the individual plant to own the integrated risk.],
+    ),
   ),
   courses: ("LEN 5", "LEN 7", "LEN 3",),
 )
@@ -370,29 +441,37 @@
     // -- Background --
     [
       Grenfell Tower was a 1970s public-housing block in West London,
-      refurbished in 2015–16 with new exterior cladding. The cladding chosen
-      used a combustible aluminium-composite material — installed despite
-      safety experts' cautions that it was unsuitable for a high-rise.#cn()
+      refurbished in 2015–16 with new exterior cladding intended to improve
+      the building's appearance and efficiency. The cladding chosen used a
+      combustible aluminium-composite material — installed despite safety
+      experts' cautions that it was unsuitable for a high-rise, a warning that
+      sat between the people who issued it and the people who specified the
+      panels without ever stopping the decision.#cn()
     ],
     // -- What Happened --
     [
       On 14 June 2017 a kitchen fire broke out and, instead of staying
-      contained, climbed the building's exterior on the combustible cladding,
-      wrapping the tower in flame within minutes. Residents, following
-      long-standing "stay put" advice, remained in their flats; 72 people
-      died.#cn()
+      contained as a tower's compartment design assumes, climbed the
+      building's exterior on the combustible cladding, wrapping the tower in
+      flame within minutes and defeating the very principle the building was
+      meant to rely on. Residents, following long-standing "stay put" advice
+      premised on that containment, remained in their flats as the route to
+      safety closed around them; 72 people died.#cn()
     ],
     // -- The Investigation --
     [
       The Grenfell Tower Inquiry found the fire the culmination of decades of
       failure by central government and every body responsible. Cladding
       companies had engaged in "systematic dishonesty," marketing combustible
-      products as safe; inspectors visited the site sixteen times and none
-      noticed that effectively banned materials were in use.#cn() The London
-      Fire Brigade was unprepared: the risks of rapidly developing cladding
-      fires were known from prior incidents — Knowsley Heights, Garnock
-      Court, Shepherd's Court — but "this knowledge had not informed
-      firefighting policies, practices or training."#cn()
+      products as safe and corrupting the very test data buyers relied on;
+      inspectors visited the site sixteen times and none noticed that
+      effectively banned materials were in use, so sixteen chances to catch
+      the hazard each passed it by.#cn() The London Fire Brigade was
+      unprepared: the risks of rapidly developing cladding fires were known
+      from prior incidents — Knowsley Heights, Garnock Court, Shepherd's Court
+      — but "this knowledge had not informed firefighting policies, practices
+      or training," so each near-miss taught no one whose job was to act on
+      it.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -400,18 +479,23 @@
       be distributed across many actors, each contributing a small piece and
       none accountable for the whole. Manufacturer fraud, regulatory capture,
       inspection incompetence, training gaps, and lost institutional memory
-      all converged on one building. The inquiry called it a "grey elephant"
-      — a danger known but ignored — and the missing capability was anyone
-      owning the integrated risk that everyone could see in part.#cn()
+      all converged on one building, and because each actor saw only its
+      fragment, each could regard its own part as tolerable. The inquiry
+      called it a "grey elephant" — a danger known but ignored — and the
+      missing capability was anyone owning the integrated risk that everyone
+      could see in part but no one held in full.#cn()
     ],
     // -- Aftermath & Reform --
     [
       The inquiry's Phase 2 report (2024) and the government response (2025)
       drove an overhaul of building-safety regulation, cladding remediation,
-      and fire-service doctrine.#cn() Grenfell's lesson is the governance one
-      this chapter turns on: when responsibility for a known risk is split
-      across dozens of actors, the risk has, in effect, no owner — and a
-      system with no owner for its gravest hazard will eventually pay for it.
+      and fire-service doctrine — reforms that, between them, tried to assign
+      the ownership the original system had left vacant.#cn() Grenfell's
+      lesson is the governance one this chapter turns on: when responsibility
+      for a known risk is split across dozens of actors, the risk has, in
+      effect, no owner — and a system with no owner for its gravest hazard
+      will eventually pay for it, in the currency of the people living
+      inside it.
     ],
   ),
   references: (
@@ -447,6 +531,19 @@
   reflection-list: (
     [What is the "grey elephant" — the well-known risk that nobody owns — in your domain?],
     [Design the deliverable that forces a single actor to own the integration risk that Grenfell distributed across dozens.],
+    [Sixteen inspections, prior fires, and expert cautions each touched a fragment of the Grenfell hazard, yet none assembled it. What mechanism in your domain could gather scattered partial warnings into one picture in front of someone empowered to stop the work?],
+  ),
+  approaches: (
+    during: (
+      [Assign one accountable actor to own the building's integrated fire risk end to end, so no hazard can fall into the gaps between manufacturers, inspectors, and responders.],
+      [Verify combustible-material claims against independent evidence rather than trusting vendor marketing, treating "systematic dishonesty" as a threat the process must defeat.],
+      [Preserve the containment principle the building relies on: gate any cladding choice on whether it keeps a compartment fire from climbing the exterior.],
+    ),
+    after: (
+      [Route every site inspection and near-miss into a shared record so sixteen visits cannot each miss the same banned material in isolation.],
+      [Feed prior-incident knowledge into firefighting policy, training, and "stay put" doctrine, so lessons from earlier cladding fires actually change practice.],
+      [Sustain a single line of accountability for the integrated hazard through the building's life, not only at refurbishment.],
+    ),
   ),
   courses: ("LEN 10", "LEN 7", "LEN 8", "LEN 3",),
 )
@@ -480,17 +577,22 @@
     [
       Summit Learning was a personalized-learning platform developed by
       Summit Public Schools with technical and financial support from the
-      Chan Zuckerberg Initiative, offered free to U.S. districts from 2015.
-      Its pedagogy — competency-based progression, self-directed projects,
-      mentor check-ins — was defensible and in many places effective.#cn()
+      Chan Zuckerberg Initiative, offered free to U.S. districts from 2015 —
+      a price that lowered the bar to adoption while raising no governance
+      questions at the door. Its pedagogy — competency-based progression,
+      self-directed projects, mentor check-ins — was defensible and in many
+      places effective, which is why the eventual revolt could not be blamed
+      on the instructional design.#cn()
     ],
     // -- What Happened --
     [
       By 2018 the platform reached roughly 380 schools and an estimated
-      80,000 students. By 2019 its most visible adopters were withdrawing
+      80,000 students, scaling fast on the strength of a free offer and a
+      well-funded sponsor. By 2019 its most visible adopters were withdrawing
       under parent and student pressure: Brooklyn's MS 442 ran an organized
       opt-out; districts in Cheshire, Kennebunk, and McPherson cancelled or
-      scaled back after parent meetings. Walkouts and complaints about screen
+      scaled back after parent meetings where the unanswered governance
+      questions surfaced all at once. Walkouts and complaints about screen
       time, eye strain, disengagement, and data privacy converged into a
       revolt that was not about the instructional design at all.#cn()
     ],
@@ -499,29 +601,37 @@
       Press coverage and later analyses located the failure in deployment
       governance, not pedagogy: there was no evaluation framework a district
       could read before adopting, no parent-facing data-handling agreement,
-      and no exit pathway that did not depend on the vendor's goodwill. The
-      implementation never surfaced the governance questions parents would
-      ask, so the argument was lost before it started.#cn()
+      and no exit pathway that did not depend on the vendor's goodwill — three
+      absences that each became a grievance the moment families looked for
+      them. The implementation never surfaced the governance questions parents
+      would ask, so when those questions arrived they arrived as opposition
+      rather than as design input, and the argument was lost before it
+      started.#cn()
     ],
     // -- The Capability Gap --
     [
       Summit is a clean test of the book's central claim: a technology that
       worked at the pedagogical level still failed because the governance
       architecture — consent, evidence, measurement, exit — had not been
-      engineered alongside it. The pattern recurs across the ed-tech dataset
-      (inBloom, Case 8): a well-intentioned tool, a well-funded rollout, and
-      no institutional contract with the families and teachers operating
-      inside it.#cn()
+      engineered alongside it. A working tool with no accountability contract
+      is a liability waiting for the first organized objection. The pattern
+      recurs across the ed-tech dataset (inBloom, Case 8): a well-intentioned
+      tool, a well-funded rollout, and no institutional contract with the
+      families and teachers operating inside it — the same omission producing
+      the same collapse in a second case.#cn()
     ],
     // -- Aftermath & Reform --
     [
       Several districts withdrew or rebranded their use, CZI and Summit
       revised their outreach, and the episode became a standard caution in
-      ed-tech adoption.#cn() Its lesson for the field is concrete: an
-      adoption decision should have to produce a public evidence summary at
-      parent reading level, a data-handling agreement at the same resolution,
-      and a documented exit path — governance artifacts that make a tool's
-      deployment legitimate, not just its design sound.
+      ed-tech adoption — a reputational cost paid for governance work that
+      would have been cheaper to do first.#cn() Its lesson for the field is
+      concrete: an adoption decision should have to produce a public evidence
+      summary at parent reading level, a data-handling agreement at the same
+      resolution, and a documented exit path — governance artifacts that make
+      a tool's deployment legitimate, not just its design sound, and that turn
+      the questions parents will ask into inputs gathered before launch rather
+      than weapons raised after it.
     ],
   ),
   references: (
@@ -566,6 +676,19 @@
     [What is the equivalent of the "free tool, free of governance" pattern in your domain — the offer that bypasses the accountability architecture because it does not yet exist?],
     [Design the parent-reading-level governance artifact that a district should require before adopting an educational-technology platform.],
     [Summit's withdrawals in Brooklyn, Cheshire, Kennebunk, and McPherson were led by parents, not regulators. What is the equivalent local constituency in your domain that institutional accountability has not yet accommodated, and how would they be heard before deployment rather than after?],
+    [Summit was offered free, and the absence of a price made the absence of a governance contract easy to overlook. Where in your domain does a "free" or low-friction offer bypass the accountability work that a paid procurement would have forced?],
+  ),
+  approaches: (
+    during: (
+      [Engineer the governance architecture — consent, evidence, measurement, exit — in lockstep with the pedagogy, so a sound tool ships with a sound accountability contract.],
+      [Produce, before adoption, a public evidence summary and data-handling agreement at parent reading level that answer the questions families will raise.],
+      [Build a documented exit pathway that does not depend on the vendor's goodwill, so a district can leave without being captured.],
+    ),
+    after: (
+      [Treat organized parent and student objections as governance signal about a missing contract, not as resistance to the instructional design.],
+      [Monitor adopting districts for the early grievances — screen time, privacy, disengagement — that precede a withdrawal, and route them to a decision-maker.],
+      [Maintain a re-adoption pathway so a withdrawn district can return only after completing the governance work that the first rollout skipped.],
+    ),
   ),
   courses: ("LEN 7", "LEN 10", "LEN 8",),
 )
@@ -605,46 +728,57 @@
     // -- Background --
     [
       The Tennessee Voluntary Pre-Kindergarten Program served roughly 18,000
-      four-year-olds a year. Demand exceeded supply, which let Vanderbilt's
-      Peabody Research Institute run something rare in education: a
-      randomized controlled trial, following children admitted by lottery
-      against children who applied but did not enroll.#cn()
+      four-year-olds a year. Demand exceeded supply, and that scarcity created
+      an ethical lottery — a fair way to ration scarce seats that doubled as a
+      clean randomizer. It let Vanderbilt's Peabody Research Institute run
+      something rare in education: a randomized controlled trial, following
+      children admitted by lottery against children who applied but did not
+      enroll, the kind of design rarely available in a live policy setting.#cn()
     ],
     // -- What Happened --
     [
       Through kindergarten the pre-K children showed the expected gains —
-      stronger letter knowledge, vocabulary, early literacy. By third grade
-      the gains had faded. By sixth grade, the researchers reported, the
-      pre-K children were doing somewhat *worse* than the control group on
-      several state academic measures and on teacher-reported behavior.#cn()
+      stronger letter knowledge, vocabulary, early literacy — exactly the
+      early result the program had been funded to produce. By third grade the
+      gains had faded. By sixth grade, the researchers reported, the pre-K
+      children were doing somewhat *worse* than the control group on several
+      state academic measures and on teacher-reported behavior — a reversal
+      that turned an expected success story into an uncomfortable one the
+      longitudinal design had been built to detect.#cn()
     ],
     // -- The Investigation --
     [
       The result contradicted policy consensus and provoked an unusual
       response: the study was attacked, its methods contested, and the field
-      largely declined to internalize the findings. Other rigorous programs —
-      Perry Preschool, Abecedarian — remain durable, so the lesson is not
-      that pre-K fails; it is that a discipline met an unwelcome,
-      well-measured answer and mostly looked away.#cn()
+      largely declined to internalize the findings, defending the policy
+      rather than interrogating it. Other rigorous programs — Perry Preschool,
+      Abecedarian — remain durable, so the lesson is not that pre-K fails; it
+      is that a discipline met an unwelcome, well-measured answer and mostly
+      looked away, treating the inconvenient evidence as an attack to repel
+      rather than a finding to absorb.#cn()
     ],
     // -- The Capability Gap --
     [
       Tennessee Pre-K is the cleanest case in the dataset for what happens
       when a field has not engineered its own capacity to update on contrary
       evidence. The measurement instrument worked — a real RCT in a real
-      policy setting. The institutional architecture for acting on what it
-      found did not. A measurement that returns an inconvenient result is
-      only as valuable as the discipline's willingness to absorb it.#cn()
+      policy setting, the rare study whose design could not easily be waved
+      off. The institutional architecture for acting on what it found did not,
+      so a strong instrument fed a discipline with no pathway to receive its
+      answer. A measurement that returns an inconvenient result is only as
+      valuable as the discipline's willingness to absorb it, and here the
+      willingness was the part that was missing.#cn()
     ],
     // -- Aftermath & Reform --
     [
       The debate continued for years through follow-up studies and
       counter-analyses, and the episode became a touchstone in the
-      methodology of early-childhood research.#cn() Its place in this book is
-      as a governance-of-evidence case: the capability that needed
-      engineering was not a better study but an implementation-science
-      pathway that could route an unwelcome finding into program redesign
-      rather than rejection.
+      methodology of early-childhood research — argued over more than acted
+      upon.#cn() Its place in this book is as a governance-of-evidence case:
+      the capability that needed engineering was not a better study but an
+      implementation-science pathway that could route an unwelcome finding
+      into program redesign rather than rejection, so the cost of the study
+      bought a course correction instead of a controversy.
     ],
   ),
   references: (
@@ -681,6 +815,19 @@
   reflection-list: (
     [What measurement instrument in your domain has returned an unwelcome answer, and how did the discipline respond?],
     [Design the implementation-science pathway that would absorb a Tennessee-Pre-K-style finding into program redesign rather than rejection.],
+    [The Tennessee RCT was strong enough that its methods were attacked rather than its conclusion accepted. What decides, in your field, whether a rigorous but inconvenient result is absorbed or contested — and who holds the authority to act on it?],
+  ),
+  approaches: (
+    during: (
+      [Commit in advance to a decision rule for how an unwelcome but well-measured result will change the program, so the response is designed before the finding arrives.],
+      [Build the longitudinal measurement to detect fade-out and reversal, not just the early gains a program is funded to show.],
+      [Establish an implementation-science pathway that can route a contrary finding into redesign, giving the evidence somewhere to go.],
+    ),
+    after: (
+      [Audit how the discipline actually receives inconvenient evidence, treating reflexive method-attacks as a symptom of a missing absorption pathway.],
+      [Sustain follow-up measurement through later grades so a faded or reversed effect cannot be obscured by an early success.],
+      [Protect the independence of the measurement function so a strong instrument is not dismantled for returning an answer the field did not want.],
+    ),
   ),
   courses: ("LEN 4", "LEN 7", "LEN 10",),
 )
@@ -713,49 +860,59 @@
     // -- Background --
     [
       When COVID-19 cancelled the UK's 2020 exams, the qualifications
-      regulator Ofqual needed grades without exams. Rather than accept
-      teacher-predicted grades — which tend to run optimistic — it built an
-      algorithm to "standardize" them against each school's historical
-      performance.#cn()
+      regulator Ofqual needed grades without exams and a defensible way to
+      produce them at national scale. Rather than accept teacher-predicted
+      grades — which tend to run optimistic — it built an algorithm to
+      "standardize" them against each school's historical performance, on the
+      logic that a school's past results were the best available anchor for
+      its present cohort.#cn()
     ],
     // -- What Happened --
     [
       Roughly 39 percent of A-level grades were adjusted downward from
       teacher assessment — about 280,000 entries — with some dropped two or
-      more grades. High-achieving students at historically low-performing
-      state schools were systematically capped by their school's past
-      results; small-cohort private-school students, by contrast, kept their
-      predicted grades. The pattern fell hardest on those whose individual
-      achievement was hidden inside a school average.#cn()
+      more grades, each one a university place or career path put at risk.
+      High-achieving students at historically low-performing state schools
+      were systematically capped by their school's past results; small-cohort
+      private-school students, by contrast, kept their predicted grades
+      because small classes escaped the standardization. The pattern fell
+      hardest on those whose individual achievement was hidden inside a school
+      average, punishing exactly the students the system claimed to serve.#cn()
     ],
     // -- The Investigation --
     [
       Analysts identified the trap quickly: the algorithm assumed schools
       that had historically underperformed — often for reasons of funding,
       not student capability — would continue to, and used that assumption to
-      suppress individual grades, encoding structural inequality and
-      amplifying it at national scale.#cn() The mathematician Hannah Fry
-      observed it was "the first time that an entire nation has felt the
-      injustice of an algorithm simultaneously."#cn()
+      suppress individual grades, so a student's result was decided partly by
+      who had attended their school in prior years. It encoded structural
+      inequality and amplified it at national scale in a single release.#cn()
+      The mathematician Hannah Fry observed it was "the first time that an
+      entire nation has felt the injustice of an algorithm simultaneously," a
+      harm whose very visibility forced the reckoning.#cn()
     ],
     // -- The Capability Gap --
     [
       The missing capability was governance: an equity and impact assessment
       that would have surfaced, before deployment, that the model traded
       individual fairness for aggregate calibration and would hit
-      disadvantaged cohorts hardest. The mathematics was no mystery; what was
-      absent was any process with the authority to ask whether the result was
-      just before it was applied to hundreds of thousands of students.#cn()
+      disadvantaged cohorts hardest — a tradeoff that was a property of the
+      design, not a surprise it sprang. The mathematics was no mystery; what
+      was absent was any process with the authority to ask whether the result
+      was just before it was applied to hundreds of thousands of students, and
+      any appeal route for the students it would harm.#cn()
     ],
     // -- Aftermath & Reform --
     [
       Within days the government withdrew the algorithm and accepted teacher
-      predictions, and the episode became a landmark in algorithmic-
+      predictions, the speed of the reversal matching the speed and visibility
+      of the harm, and the episode became a landmark in algorithmic-
       accountability debate and policy.#cn() Its lesson is the chapter's: an
       algorithm that distributes life-shaping outcomes is a governance
       instrument, and deploying one without an equity check and an appeal
       path is a governance failure no amount of statistical sophistication
-      redeems.
+      redeems — the model can be flawless at the task it was set and still
+      unjust in the task that mattered.
     ],
   ),
   references: (
@@ -792,6 +949,19 @@
   reflection-list: (
     [Identify a measurement instrument in your domain that encodes structural inequality. What would it take to surface that bias before deployment?],
     [The A-Level algorithm worked as specified. Redesign the *specification* — not the algorithm — to remove the bias.],
+    [Ofqual's model traded individual fairness for aggregate calibration, a choice baked into its design. Find a decision system in your domain that makes the same tradeoff implicitly, and name who should hold the authority to ask whether its output is just before it is applied.],
+  ),
+  approaches: (
+    during: (
+      [Run an equity and impact assessment before deployment that tests how the model distributes harm across cohorts, not just whether it calibrates in aggregate.],
+      [Treat the tradeoff between individual fairness and aggregate calibration as an explicit design decision requiring sign-off, not a buried property of the method.],
+      [Build an appeal path for affected individuals into the system from the start, so a person can contest an outcome the model imposed.],
+    ),
+    after: (
+      [Audit live algorithmic decisions for disparate impact on disadvantaged groups, since a model can be statistically sound and socially unjust at once.],
+      [Monitor outcomes against the populations the instrument claims to serve, watching for the pattern where high achievers are capped by a group average.],
+      [Keep a fast withdrawal-and-revert capability ready, so a system distributing life-shaping outcomes can be pulled when its injustice surfaces.],
+    ),
   ),
   courses: ("LEN 4", "LEN 7", "LEN 9"),
 )
@@ -823,29 +993,34 @@
     // -- Background --
     [
       From 2016 the Australian government sought to automate welfare-debt
-      recovery. Its Robodebt scheme compared recipients' welfare records
-      against annual tax data, averaging income evenly across the year to
-      estimate overpayments — and issuing debts on that basis at scale.#cn()
+      recovery, drawn by the promise of recovering money at a fraction of the
+      administrative cost. Its Robodebt scheme compared recipients' welfare
+      records against annual tax data, averaging income evenly across the year
+      to estimate overpayments — and issuing debts on that basis at scale,
+      replacing the individual case review the work had previously required.#cn()
     ],
     // -- What Happened --
     [
       The averaging assumed stable, year-round employment, which fit only
       about 7 percent of recipients; the other 93 percent, with irregular
-      work, were misclassified as overpaid. Roughly a million debt notices
-      were issued, default judgments raised without human review, and the
-      burden of proof reversed onto recipients to disprove debts the
-      government had invented. The scheme was linked to deaths, including by
-      suicide.#cn()
+      work, were misclassified as overpaid — so the assumption at the core of
+      the method was wrong for almost everyone it touched. Roughly a million
+      debt notices were issued, default judgments raised without human review,
+      and the burden of proof reversed onto recipients to disprove debts the
+      government had invented, demanding records many of the poorest could not
+      produce. The scheme was linked to deaths, including by suicide.#cn()
     ],
     // -- The Investigation --
     [
       A 2023 Royal Commission found the scheme unlawful and sustained by
       "venality, incompetence and cowardice," with ministers failing to
-      ensure it was lawful.#cn() Analysts noted the algorithm was
-      "comparatively simple" and its harms "entirely predictable from the
-      outset"; about 470,000 debts were found wholly or partly unlawful, and
-      a class action settled for A\$1.8 billion, with debts zeroed or
-      refunded plus interest.#cn()
+      ensure it was lawful before unleashing it on a million people.#cn()
+      Analysts noted the algorithm was "comparatively simple" and its harms
+      "entirely predictable from the outset" — meaning no technical advance
+      was needed to foresee them, only the will to look; about 470,000 debts
+      were found wholly or partly unlawful, and a class action settled for
+      A\$1.8 billion, with debts zeroed or refunded plus interest, the public
+      paying back what the automation had wrongly taken.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -854,8 +1029,11 @@
       and the harm was not technical: the scheme survived four years because
       the governance architecture treated automation as an efficiency
       mechanism rather than a decision regime requiring accountability,
-      legality, and a path to contest. Reversing the burden of proof onto the
-      citizen was a governance choice, not a coding one.#cn()
+      legality, and a path to contest. Calling it "automation" disguised that
+      every notice was still a government decision to take money from a
+      citizen. Reversing the burden of proof onto the citizen was a governance
+      choice, not a coding one, made by people who could have chosen
+      otherwise.#cn()
     ],
     // -- Aftermath & Reform --
     [

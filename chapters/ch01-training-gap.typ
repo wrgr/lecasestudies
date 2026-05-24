@@ -189,7 +189,10 @@
       route crossed the equatorial storm band, and it carried a known
       vulnerability: pitot probes prone to brief icing at altitude. A
       replacement program was underway, but the accident aircraft had not
-      yet been modified.#cn()
+      yet been modified, so the vulnerability the program existed to close
+      was still live on the very jet that crossed the storm band — the
+      retrofit recognized as necessary but not yet fitted where it
+      mattered.#cn()
     ],
     // -- What Happened --
     [
@@ -200,7 +203,9 @@
       the ocean in about four and a half minutes. The stall warning sounded,
       then cut out at extreme angle of attack and resumed when the nose
       dropped — warning against the one input that would have begun a
-      recovery.#cn()
+      recovery, so that the cue meant to guide the crew instead punished the
+      correct action and rewarded the fatal one, an inversion no amount of
+      hand-flying instinct could resolve in the time available.#cn()
     ],
     // -- The Investigation --
     [
@@ -210,16 +215,21 @@
       were outside anything their training had prepared them for, and the
       BEA said so: "the conditions under which pilots are trained and
       exposed to stalls… did not result in reasonably reliable expected
-      behaviour patterns."#cn()
+      behaviour patterns." The finding reframed the loss from a question of
+      individual airmanship to one of training design: the crew had been
+      drilled in a regime that never produced the responses the emergency
+      demanded.#cn()
     ],
     // -- The Capability Gap --
     [
       The gap was precise. Airlines trained stall recovery at low altitude;
       the simulators of the era could not reproduce a high-altitude stall,
       so crews never practiced the situation that arrived. Years of reliable
-      automation had also let hand-flying skills atrophy. The trained
-      envelope and the operational envelope had quietly diverged, and AF447
-      fell into the gap between them.#cn()
+      automation had also let hand-flying skills atrophy, so when the
+      autopilot handed back control the crew met an unfamiliar regime with
+      rusty manual skills at the worst possible moment. The trained envelope
+      and the operational envelope had quietly diverged, and AF447 fell into
+      the gap between them — a gap no one had been positioned to see widen.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -228,8 +238,11 @@
       high-altitude flight, stall recovery, and unreliable-airspeed
       handling.#cn() Regulators then made Upset Prevention and Recovery
       Training mandatory for airline pilots, closing at the regulatory level
-      the gap that had been invisible at the airline level. The crew
-      performed exactly as trained; the training was the wrong training.#cn()
+      the gap that had been invisible at the airline level — moving the fix
+      from a single carrier's discretion to a binding standard every airline
+      had to meet. The crew performed exactly as trained; the training was
+      the wrong training, and only a system-wide mandate could keep that
+      mismatch from recurring elsewhere.#cn()
     ],
   ),
   references: (
@@ -266,6 +279,19 @@
   reflection-list: (
     [The simulators of 2009 could not produce high-altitude stall behavior. What is the equivalent gap in your domain — the operational regime your training environment cannot reproduce?],
     [Design the recurrent-training curriculum that would have caught the AF447 gap. Be specific about cost, evidence, and what makes the curriculum falsifiable against the operational record.],
+    [The autopilot handed control to a crew at the one moment it was least prepared to take it. Identify an automation-to-human handoff in your domain that occurs precisely when the human is least ready, and design the trigger or warning that would change that.],
+  ),
+  approaches: (
+    during: (
+      [Define the operational capability envelope explicitly — including degraded-automation and high-altitude regimes — and train to its edges, not only to the routine center.],
+      [Engineer warning logic so that cues never punish the correct recovery input; validate stall-warning behavior across the full angle-of-attack range before fielding.],
+      [Treat manual-flying proficiency in degraded modes as a measured deliverable, not an assumed residual of automated operation.],
+    ),
+    after: (
+      [Audit recurrent training against the actual operational record so the trained envelope cannot silently diverge from the regimes crews encounter.],
+      [Monitor for skill atrophy where reliable automation reduces hands-on exposure, and refresh manual competence before it erodes.],
+      [Sustain the reform at the regulatory level (mandatory upset recovery) so a fix proven in one carrier propagates to all rather than lapsing.],
+    ),
   ),
   courses: ("LEN 1", "LEN 5", "LEN 2"),
 )
@@ -302,7 +328,10 @@
       came.#cn() It should not have surprised anyone: eighteen months
       earlier a nearly identical stuck-open relief valve had occurred at
       Davis-Besse, but neither the utility, the vendor, nor the NRC grasped
-      its significance or pushed the lesson out to the fleet.#cn()
+      its significance or pushed the lesson out to the fleet — so the precise
+      sequence that would later threaten the core had already been
+      demonstrated and then quietly filed away rather than turned into a
+      drill or a warning.#cn()
     ],
     // -- What Happened --
     [
@@ -311,8 +340,11 @@
       control-room light reported the *command* to close it, not its actual
       position, so the panel read "closed" while the valve stayed open.
       Misreading the rising pressurizer level, the operators throttled back
-      the high-pressure injection the starving core depended on. About half
-      the core melted; off-site radiation, as it turned out, was minimal.#cn()
+      the high-pressure injection the starving core depended on — taking the
+      one action that turned a recoverable upset into a meltdown, precisely
+      because the instrument they trusted was telling them a state that was
+      not true. About half the core melted; off-site radiation, as it turned
+      out, was minimal.#cn()
     ],
     // -- The Investigation --
     [
@@ -322,16 +354,20 @@
       the human failures, the accident would have been minor. The criticism
       reached past the operators to management, the utility, and the NRC —
       an institution-wide belief that serious accidents were effectively
-      impossible.#cn()
+      impossible, a complacency that had shaped training priorities,
+      staffing, and oversight long before the relief valve ever stuck, so
+      that the operators inherited a posture they had not chosen.#cn()
     ],
     // -- The Capability Gap --
     [
       The gap was not intelligence but the right capability for the event
       that arrived. Operators drilled on design-basis ruptures had no model
       for an ambiguous cascade, and a control room reporting commands rather
-      than states made correct diagnosis nearly impossible. Beneath that lay
-      a second failure: the capacity to *learn* — to turn Davis-Besse into
-      fleet knowledge — had itself broken down, which is why the case
+      than states made correct diagnosis nearly impossible — the interface
+      and the training were mismatched to the failure that actually arrived.
+      Beneath that lay a second failure: the capacity to *learn* — to turn
+      Davis-Besse into fleet knowledge — had itself broken down, so the
+      industry kept making the same diagnosis blind, which is why the case
       resists any single-cause reading.#cn()
     ],
     // -- Aftermath & Reform --
@@ -342,9 +378,12 @@
       lacked.#cn() The NRC overhauled licensing, required plant-referenced
       simulators and resident inspectors, and tied training to a national
       standard so that diagnosing ambiguous transients — not just textbook
-      ruptures — became something crews practiced. TMI is paired later with
-      INPO (Case 16) as the book's strongest argument that failure can
-      engineer durable reform.#cn()
+      ruptures — became something crews practiced on equipment that behaved
+      like their own plant. Each measure attacked one of the failures the
+      accident had exposed: the training gap, the broken learning channel,
+      and the gulf between what indicators displayed and what crews inferred.
+      TMI is paired later with INPO (Case 16) as the book's strongest
+      argument that failure can engineer durable reform.#cn()
     ],
   ),
   references: (
@@ -382,6 +421,19 @@
   reflection-list: (
     [TMI operators were trained for worst-case scenarios but failed in an ambiguous one. What is the equivalent training gap in your domain between the trained case and the messy case?],
     [The Kemeny Commission called the human element the dominant risk. What evidence would you need to demonstrate the same conclusion in your own domain?],
+    [The Davis-Besse precursor occurred eighteen months earlier but never reached the operators who needed it. Design the channel in your domain that would turn a near-miss at one site into a drill at every other before the second event arrives.],
+  ),
+  approaches: (
+    during: (
+      [Design control-room indicators to report actual system state, not the command issued, so operators diagnose from truth rather than intent.],
+      [Build training around ambiguous, slow-onset cascades — not only dramatic design-basis ruptures — using simulators that mirror the operators' own plant.],
+      [Engineer a learning channel that propagates precursor events across the fleet as drills, so a near-miss at one site becomes practiced knowledge everywhere.],
+    ),
+    after: (
+      [Audit whether near-misses are actually reaching operators as changed procedure and training, and force-share operating experience through an independent standards body (the INPO model).],
+      [Sustain plant-referenced simulators and resident oversight so diagnostic skill on ambiguous transients does not decay back to textbook drills.],
+      [Monitor the institutional assumption that serious accidents are impossible, and treat its persistence as a measurable readiness risk.],
+    ),
   ),
   courses: ("LEN 1", "LEN 5"),
 )
@@ -418,7 +470,9 @@
       awkward fact: the theater so designated has among the least mature
       live-training infrastructure in the force — the place called most
       important is, where forces can actually rehearse, one of the least
-      built out.#cn()
+      built out, so the strategy's top priority and the physical means to
+      prepare for it point in opposite directions, a contradiction the
+      briefings do not resolve.#cn()
     ],
     // -- What Happened --
     [
@@ -427,7 +481,10 @@
       Indo-Pacific ranges, papering over the shortfall with rotations back
       to U.S. ranges, virtual substitutes, and multinational exercises
       pressed into proxy duty. The workarounds keep units partially trained;
-      the structural gap does not close.#cn()
+      the structural gap does not close, because each substitute buys a
+      single cycle of readiness without building the ranges, basing, or
+      instrumented airspace that would let the theater train its own force —
+      treating a permanent shortfall as a series of temporary ones.#cn()
     ],
     // -- The Investigation --
     [
@@ -438,7 +495,10 @@
       for Indo-Pacific ranges; the Department concurred.#cn() It was not the
       first warning — GAO has pressed the same readiness recommendations for
       years, and flagged the gap between overseas training and readiness
-      reporting two decades ago.#cn()
+      reporting two decades ago, so the 2024 finding documents not a fresh
+      discovery but the durability of a shortfall that survived repeated
+      diagnosis, concurrence, and the passage of time without being
+      engineered away.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -449,7 +509,10 @@
       dollars flow, not where strategy points. Declared priority is cheap;
       engineered priority — ranges, instrumented airspace, basing, certified
       units — is slow and expensive, and the gap between them is the real
-      measure of intent.
+      measure of intent. A strategy document can be rewritten in a season; a
+      range complex takes years of construction and budget, so the decade-long
+      persistence of the shortfall says more about resourcing than any
+      reassertion of priority could.
     ],
     // -- Aftermath & Reform --
     [
@@ -457,9 +520,11 @@
       open as of 2024, an analysis and a funded remediation plan still to
       come.#cn() Whether the gap closes will be decided not by another
       strategy document but by whether the recommendation becomes programmed
-      ranges, dollars, and schedule. It sits at the front of this book as the
-      live counterpart to its historical failures — a gap fully recognized,
-      repeatedly documented, and still not engineered away.
+      ranges, dollars, and schedule — converting a concurrence on paper into
+      construction and certified units that a future review could actually
+      measure. It sits at the front of this book as the live counterpart to
+      its historical failures — a gap fully recognized, repeatedly
+      documented, and still not engineered away.
     ],
   ),
   references: (
@@ -496,6 +561,19 @@
   reflection-list: (
     [In your domain, what is the gap between *declared* priority and *engineered* priority? How would you measure it?],
     [Construct the capability requirements artifact for a theater you do not currently operate in. What would it cost, and who would sign for it?],
+    [GAO documented this shortfall for years, the Department concurred, and the gap stayed open. Design the accountability mechanism that would convert a concurrence into programmed dollars and schedule, with a signal that fires when the plan slips.],
+  ),
+  approaches: (
+    during: (
+      [Tie any declared-priority designation to a funded engineering plan — ranges, basing, instrumented airspace, certified units — so strategy and resourcing cannot diverge unnoticed.],
+      [Treat live-training infrastructure for a priority theater as a programmed deliverable with schedule and budget, not a workaround filled by rotations and exercises.],
+      [Define the capability requirement for the theater explicitly, so the gap between what is needed and what is built is visible at the point of decision.],
+    ),
+    after: (
+      [Audit declared versus engineered priority annually — measure where construction and dollars actually flowed against where strategy named as critical.],
+      [Track recommendation status to closure with an authority that can escalate when a concurrence does not become programmed work.],
+      [Monitor whether substitute training (rotations, virtual, multinational) is masking a structural shortfall rather than retiring it.],
+    ),
   ),
   courses: ("LEN 5", "LEN 8"),
 )
@@ -530,7 +608,10 @@
       — roughly \$1.3 trillion of it not the aircraft but the decades of
       operating and sustaining them.#cn() The flyaway jet is the finite part;
       keeping a global fleet ready — maintainers, technical data, depots — is
-      the open-ended part, and the part that lagged.
+      the open-ended part, and the part that lagged, because the cost that
+      dominates the program is not buying the aircraft but the decades of
+      sustaining them, the very work that received the least attention as the
+      jets rolled off the line.
     ],
     // -- What Happened --
     [
@@ -538,7 +619,10 @@
       mission-capable rate was about 55 percent, far short of goal; more
       than 10,000 components waited in the repair queue, and the depots
       averaged about 72 days per repair while still behind schedule in
-      standing up the capacity to do the work at all.#cn()
+      standing up the capacity to do the work at all — a backlog and a
+      turnaround time that compound, since parts stuck in the queue keep jets
+      grounded and the under-built depots cannot clear the queue fast enough
+      to recover the mission-capable rate.#cn()
     ],
     // -- The Investigation --
     [
@@ -549,7 +633,9 @@
       dependence on the prime contractor.#cn() None of it was new — GAO has
       repeated the same diagnosis year after year, through a troubled
       logistics-software backbone and slow progress, even as procurement
-      continued and readiness stayed flat.#cn()
+      continued and readiness stayed flat, so the program kept buying more
+      jets it could not fully sustain while the same three shortfalls were
+      named in review after review without being closed.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -559,8 +645,11 @@
       follow-on costs rather than deliverables that had to field with the
       jets. The hardest part is the data: much of what is needed to repair
       the aircraft stayed controlled by the contractor, so the services
-      cannot freely write procedures, qualify depots, or compete the work —
-      merely expensive in peacetime, dangerous in war.#cn()
+      cannot freely write procedures, qualify depots, or compete the work,
+      which locks the fleet into a single source for the knowledge needed to
+      keep it flying — merely expensive in peacetime, dangerous in war, when
+      a contractor-dependent sustainment chain is exactly the kind of
+      bottleneck an adversary would seek to exploit.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -571,7 +660,9 @@
       still below goal. The F-35 sits in this book as the live argument for
       treating capability infrastructure — people, data, the means to sustain
       them — as a fielding gate, not an afterthought. The bill for skipping
-      that gate does not disappear; it compounds.
+      that gate does not disappear; it compounds, arriving as grounded jets,
+      a swelling repair queue, and a sustainment chain the services cannot
+      control rather than as a line item caught early enough to fix cheaply.
     ],
   ),
   references: (
@@ -609,6 +700,19 @@
   reflection-list: (
     [Pick a current technology platform in your domain. Estimate the capability infrastructure that must field with it. What happens if half of that infrastructure is years behind the hardware?],
     [The F-35 program treated maintainer training as follow-on cost. Design a fielding gate that would prevent that decision being available to a future program manager.],
+    [Much of the data needed to repair the F-35 stayed controlled by the contractor, foreclosing the government's ability to compete or qualify the work. For a platform in your domain, what data rights would you make a contractual deliverable up front, and how would you verify they were actually delivered?],
+  ),
+  approaches: (
+    during: (
+      [Make sustainment infrastructure — maintainers, technical data, depot capacity — a contractual deliverable that fields with each lot of aircraft, not a follow-on cost.],
+      [Secure government rights to the technical data needed to write procedures, qualify depots, and compete the work, so the fleet is not locked to a single source.],
+      [Gate fielding on demonstrated sustainment capacity, not just aircraft delivery, so readiness is engineered alongside the platform.],
+    ),
+    after: (
+      [Audit the mission-capable rate against repair-queue depth and depot turnaround, and act when the backlog signals a structural, not transient, shortfall.],
+      [Track recurring GAO-style diagnoses to closure, refusing to let procurement outpace the sustainment fixes named year after year.],
+      [Monitor contractor dependency as a wartime risk, and sustain a government maintainer pipeline and depot capacity that can hold under pressure.],
+    ),
   ),
   courses: ("LEN 5", "LEN 8", "LEN 3",),
 )
@@ -644,7 +748,9 @@
       with new electronic engine instruments. The crew were experienced 737
       pilots, but their conversion onto the variant had been brief and
       largely self-directed, the differences communicated as reading rather
-      than drilled retraining.#cn()
+      than drilled retraining — so the very experience that made them
+      confident on the type also seeded the prior model that would mislead
+      them, with nothing in the conversion forceful enough to overwrite it.#cn()
     ],
     // -- What Happened --
     [
@@ -656,7 +762,10 @@
       on the failing left engine), seeming to confirm it, and they shut the
       right engine down. On final approach the damaged left engine failed
       completely; with the good engine off, the aircraft struck the M1
-      embankment short of the runway — 47 killed, 74 seriously injured.#cn()
+      embankment short of the runway — 47 killed, 74 seriously injured. The
+      brief calm after the shutdown was the trap: it appeared to confirm a
+      diagnosis that was wrong, removing the doubt that might have prompted a
+      reassessment before the last minutes of the approach.#cn()
     ],
     // -- The Investigation --
     [
@@ -664,12 +773,17 @@
       shutdown of the serviceable engine, and to a mental model carried from
       earlier 737s and applied to a -400 whose bleed-air configuration
       Boeing had changed — a difference the conversion training never
-      disturbed.#cn() The new electronic displays did not help: the vibration
-      indicator that would have pointed at the failing engine was harder to
-      read at a glance than the dials it replaced.#cn() And though cabin crew
-      and passengers could see flames from the left engine, that never
-      reached the flight deck — a crew-resource-management gap aviation would
-      later train hard against.#cn()
+      disturbed, so the crew reasoned correctly from a configuration that no
+      longer applied to the airframe they were flying.#cn() The new
+      electronic displays did not help: the vibration indicator that would
+      have pointed at the failing engine was harder to read at a glance than
+      the dials it replaced, so the one instrument that could have corrected
+      the diagnosis was the one least likely to be consulted under
+      pressure.#cn() And though cabin crew and passengers could see flames
+      from the left engine, that never reached the flight deck — a
+      crew-resource-management gap aviation would later train hard against,
+      because the people with the decisive evidence had no path to the people
+      making the decision.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -679,9 +793,11 @@
       pressure it behaved as a categorical one. Reading a manual note about
       revised bleed air is not the same as drilling a new reflex that fires
       before the old one, and the cockpit redesign had quietly removed
-      perceptual cues a startled crew relies on. Capability had degraded
-      under system change with no one noticing, because nothing failed until
-      the day it did.#cn()
+      perceptual cues a startled crew relies on. The change was filed as
+      incremental precisely because nothing tested it until an emergency
+      did, so the degradation accrued invisibly inside a fleet that believed
+      its pilots were current. Capability had degraded under system change
+      with no one noticing, because nothing failed until the day it did.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -692,7 +808,9 @@
       for how a transition program should be built — so the differences
       between an old system and a new one are made hard to overlook, and the
       people closest to the evidence have a path to those making the
-      decision.
+      decision. Each recommendation traced back to one of the failures the
+      accident exposed: the unforced mental model, the unreadable instrument,
+      and the silent cabin, treated together rather than as isolated faults.
     ],
   ),
   references: (
@@ -731,6 +849,19 @@
   reflection-list: (
     [The Kegworth crew's mental model was right for the previous variant. What change in your domain currently risks an analogous misapplication?],
     [Difference training is a generic deliverable in transition programs. Design the artifact that would make differences hard to overlook rather than easy.],
+    [The cabin crew and passengers saw flames the flight deck never learned of. Identify a path in your domain by which the people closest to the evidence cannot reach the people making the decision, and design the channel that would carry it under emergency conditions.],
+  ),
+  approaches: (
+    during: (
+      [Classify any change that alters operator mental models — even a "minor" variant — as categorical, and gate it on drilled retraining rather than reading.],
+      [Test new interface designs against startled-crew performance before fielding, so a redesign cannot quietly remove the perceptual cues operators rely on.],
+      [Engineer a communication path from those closest to the evidence (cabin crew, passengers, sensors) to those making the decision, so decisive observations reach the flight deck.],
+    ),
+    after: (
+      [Audit transition programs for capability that degraded silently — where nothing failed until an emergency tested the change — using simulator scenarios that force the new reflex.],
+      [Monitor whether difference training actually overwrites the prior model, treating un-disturbed mental models as a measurable latent risk.],
+      [Track that interface and communication recommendations are implemented together, not as isolated fixes, so the integrated failure mode does not recur.],
+    ),
   ),
   courses: ("LEN 5", "LEN 8"),
 )
@@ -766,7 +897,10 @@
       put it under two percent of battle casualties — a figure later analysts
       challenged as far too low (nearer 10–15 percent), and one Shrader
       himself stepped back from. The disputed baseline mattered because it
-      became the yardstick against which a modern war would be measured.#cn()
+      became the yardstick against which a modern war would be measured — and
+      a yardstick set too low makes any later rate look like a catastrophe,
+      so the argument over the number was never merely academic but shaped
+      how the next war's losses would be judged.#cn()
     ],
     // -- What Happened --
     [
@@ -774,10 +908,12 @@
       service members killed in action, 35 — about 24 percent — died by
       friendly fire, and 72 of 467 wounded (15 percent) were hit by their own
       side.#cn() An A-10 strike on U.S. LAV-25s near Khafji killed seven
-      Marines; a single A-10 attack on British Warrior vehicles killed nine.
+      Marines; a single A-10 attack on British Warrior vehicles killed nine —
+      each an aircraft firing on friendly ground vehicles it had failed to
+      identify, the recurring shape of the problem rather than a freak event.
       Whatever the true baseline, a quarter of American combat deaths from
       one's own forces could not be waved off as the ordinary friction of
-      battle.#cn()
+      battle, especially in a war whose ground phase lasted only days.#cn()
     ],
     // -- The Investigation --
     [
@@ -787,7 +923,9 @@
       deeper — the military lacked a comprehensive, shared record of
       fratricide incidents, so it could not study its own pattern, separate
       training failures from doctrine or equipment, or tell whether a fix was
-      working. The capability to *learn* from friendly fire was itself
+      working. Without a common database, every incident was investigated in
+      isolation and the aggregate signal that might have driven reform never
+      formed. The capability to *learn* from friendly fire was itself
       missing, a second-order gap beneath the first.#cn()
     ],
     // -- The Capability Gap --
@@ -801,8 +939,9 @@
       not detect the infrared strobes marking U.S. troops, killing five. Each
       contributor was worked on; the integration *across* them — which is
       what actually keeps friendly forces from killing each other — is the
-      hardest thing to engineer by program, and it is where the capability
-      kept failing.#cn()
+      hardest thing to engineer by program, because no single office owns it
+      and no single procurement can deliver it, and it is where the
+      capability kept failing across conflicts and decades.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -812,8 +951,10 @@
       fratricide never dropped to a confidently low, stable rate, and even
       measuring it remained contested.#cn() That is the lesson: where
       capability is an emergent property of many systems working together, no
-      single program closes the gap — and progress has to be measured against
-      an honest baseline rather than a convenient one.
+      single program closes the gap — improving each contributor in isolation
+      still leaves the integration between them unaddressed — and progress
+      has to be measured against an honest baseline rather than a convenient
+      one, or the reform will be credited with gains it never produced.
     ],
   ),
   references: (
@@ -851,6 +992,19 @@
   reflection-list: (
     [Identify a capability problem in your domain that has been the subject of repeated programs without sustained improvement. What is the integration gap that the programs do not address?],
     [Design a measurement system that would distinguish a temporary improvement in fratricide rate from a structural one.],
+    [The military lacked a shared incident database, so it could not study its own pattern. Identify a recurring harm in your domain that is investigated case-by-case but never aggregated, and design the shared record that would let the pattern become visible.],
+  ),
+  approaches: (
+    during: (
+      [Treat combat identification as a systems-of-systems requirement with a single owner for the integration, not as separate IFF, situational-awareness, and fire-control programs.],
+      [Build a comprehensive, shared incident database from the outset so the pattern across events can be studied and fixes tested against it.],
+      [Design fire-control discipline and identification into joint coordination, so the integration that prevents fratricide is engineered rather than left emergent.],
+    ),
+    after: (
+      [Audit the friendly-fire rate against an honest baseline, distinguishing a temporary dip from a structural reduction before crediting any program.],
+      [Monitor each contributor and the integration across them, since improving components in isolation can leave the joint failure mode untouched.],
+      [Sustain the learning channel so later-conflict recurrences feed back into doctrine and training rather than being investigated in isolation.],
+    ),
   ),
   courses: ("LEN 5", "LEN 2", "LEN 8"),
 )
@@ -888,7 +1042,10 @@
       After the 1984 death of Libby Zion — blamed on overworked,
       under-supervised residents — resident fatigue became a decades-long
       argument. New York's Bell Commission produced the first hours limits in
-      1989, and pressure for a national standard built from there.#cn()
+      1989, and pressure for a national standard built from there — the
+      reform's intuition, that exhausted physicians make errors, was strong
+      enough that the simplest lever, capping the hours, became the obvious
+      answer long before anyone tested what the long shift was producing.#cn()
     ],
     // -- The Intervention --
     [
@@ -897,7 +1054,9 @@
       residents to 16-hour shifts. The logic was clean and intuitive —
       fatigue causes error, so reduce the hours. It was, in capability terms,
       a single-variable intervention: change one input and expect the outcome
-      to move.#cn()
+      to move — a model that holds only if the rest of the system stays
+      fixed, which in a teaching hospital it never does, since the hours
+      removed had to be absorbed somewhere else.#cn()
     ],
     // -- How It Worked --
     [
@@ -906,19 +1065,23 @@
       documented site of error — while reducing residents' continuity and the
       procedural repetitions that build skill; many reported feeling less
       prepared, not better rested. The long shift had quietly been doing work
-      no one accounted for, and nothing was put in its place.#cn()
+      no one accounted for — sustaining a patient's care through one set of
+      hands and accumulating the repetitions that turn a trainee into a
+      clinician — and nothing was put in its place when it was cut.#cn()
     ],
     // -- The Evidence --
     [
       Two large randomized trials tested the policy. FIRST (Bilimoria et al.,
       _NEJM_ 2016), in surgery, found flexible duty hours non-inferior to the
       strict caps on patient outcomes and no worse for resident
-      well-being.#cn() iCOMPARE (Silber et al., _NEJM_ 2019), in internal
-      medicine, reached a parallel result.#cn() Neither found the safety gain
-      the cap had promised, and in 2017 the ACGME relaxed the 16-hour intern
-      limit. The trials did not show fatigue is harmless — only that cutting
-      one input, without rebuilding supervision and hand-offs, did not produce
-      a safer system.#cn()
+      well-being — putting a randomized result against an intuition that had
+      driven policy for years.#cn() iCOMPARE (Silber et al., _NEJM_ 2019), in
+      internal medicine, reached a parallel result in a second specialty,
+      making the finding harder to dismiss as an artifact of surgery.#cn()
+      Neither found the safety gain the cap had promised, and in 2017 the
+      ACGME relaxed the 16-hour intern limit. The trials did not show fatigue
+      is harmless — only that cutting one input, without rebuilding
+      supervision and hand-offs, did not produce a safer system.#cn()
     ],
     // -- What Transferred --
     [
@@ -927,10 +1090,12 @@
       successes here — the Keystone ICU project, crew resource management, the
       surgical safety checklist — which worked because they engineered
       supervision, hand-offs, and measurement *together with* the behavioral
-      change.#cn() The lesson is not that fatigue does not matter; it is that
-      capability is a property of the whole system, and a reform that moves
-      one variable while leaving the others untouched will be judged, in the
-      end, by what it actually produced.
+      change, redesigning the surrounding architecture rather than pulling a
+      single lever and hoping the rest would hold.#cn() The lesson is not
+      that fatigue does not matter; it is that capability is a property of the
+      whole system, and a reform that moves one variable while leaving the
+      others untouched will be judged, in the end, by what it actually
+      produced rather than by the plausibility of its intuition.
     ],
   ),
   references: (
@@ -969,6 +1134,19 @@
   reflection-list: (
     [What capability is the long-hours / heavy-workload regime in your domain currently producing — supervisory exposure, continuity, procedural reps, tacit-knowledge transfer — that a simple cap would lose?],
     [Design the integrated redesign — supervision, hand-off, measurement, exposure — that would substitute for the capability the input cap removes.],
+    [The reform was intuitive enough to set national policy years before FIRST and iCOMPARE tested it. Design the randomized or quasi-experimental check you would build into a future single-variable reform so its promised gain is measured before it is mandated, not after.],
+  ),
+  approaches: (
+    during: (
+      [Map the full set of variables the targeted input is coupled to — continuity, supervision, hand-offs, procedural reps — before changing one of them.],
+      [Design the substitute for whatever the changed input was producing (e.g., structured hand-offs and supervision) into the same reform, not as a follow-on.],
+      [Build the measurement that will test the reform's promised gain into the rollout, so the policy is falsifiable against the operational record.],
+    ),
+    after: (
+      [Audit the intervention against patient and trainee outcomes with a controlled comparison, as FIRST and iCOMPARE did, rather than trusting the intuition.],
+      [Monitor the variables that absorbed the change (hand-off frequency, procedural exposure) for the harms a single-lever fix can displace.],
+      [Sustain a willingness to revise the policy when evidence catches up, as the 2017 relaxation did, rather than defending the original lever.],
+    ),
   ),
   courses: ("LEN 5", "LEN 4", "LEN 10", "LEN 8"),
 )

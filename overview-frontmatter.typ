@@ -197,7 +197,7 @@
 #text(font: sans, size: 9pt, fill: text-muted)[Listed in reading order; the number is the case's catalog number in the main casebook.]
 #v(8pt)
 #context {
-  let items = query(<caseinfo>)
+  let items = query(<caseinfo>).sorted(key: it => it.value.n)
   for it in items {
     let m = it.value
     let p = it.location().page()

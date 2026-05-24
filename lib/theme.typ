@@ -76,8 +76,8 @@
 #let reflection-size = 9.5pt
 #let reflection-num  = 11pt
 #let sources-size    = 7.5pt
-#let body-leading    = 0.66em
-#let body-spacing    = 0.82em
+#let body-leading    = 0.55em
+#let body-spacing    = 0.64em
 
 // ---- Typography (font stacks) ----
 #let serif = ("Instrument Serif", "EB Garamond", "Georgia")
