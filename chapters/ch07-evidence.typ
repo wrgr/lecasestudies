@@ -26,56 +26,109 @@
   modes-code: "THNKG",
   impact: "Makary & Daniel (2016) estimate of ~250,000 U.S. deaths/year from medical error — third leading cause; estimate is widely cited and substantively contested",
   diagram: dgm.dgm-makary,
-  body: [
-    Not a single incident but a systemic condition. Makary & Daniel
-    (2016), publishing in the *BMJ* from Johns Hopkins, estimated
-    medical errors cause more than two hundred fifty thousand deaths
-    annually in the United States — third leading cause of death behind
-    heart disease and cancer. The key argument: "People don't just die
-    from heart attacks and bacteria, they die from system-wide failings
-    and poorly coordinated care." Death certificates do not capture
-    medical error as a cause, so the problem is structurally invisible
-    to the measurement systems that should track it.
-
-    The 250,000 figure has been substantively contested (Shojania
-    and Dixon-Woods, *BMJ Quality & Safety* 2017) on methodological
-    grounds — itself a worked example of the *gap-attribution*
-    problem the discipline must diagnose: how much of a counted death
-    is the learning system, how much the system design, how much the
-    underlying disease?
-
-    The Institute of Medicine's *To Err Is Human* (1999) had earlier
-    estimated 44,000–98,000 deaths annually and catalyzed the
-    patient-safety movement: TeamSTEPPS (Case 27), surgical
-    checklists (Case 13), Keystone ICU (Case 14). Seventeen years
-    later, the problem persists at scale.
+  kind: "failure",
+  summary: [
+    Medical error in the United States is not a single incident but a
+    systemic condition that the system's own measurement instruments
+    cannot see. In 2016, Makary and Daniel of Johns Hopkins estimated, in
+    the _BMJ_, that medical errors cause more than 250,000 deaths a year —
+    which would make them the third leading cause of death behind heart
+    disease and cancer. Death certificates do not record medical error as
+    a cause, so the problem is structurally invisible to the systems meant
+    to track it. The 250,000 figure has been substantively contested on
+    methodological grounds — a dispute that is itself a worked example of
+    the gap-attribution problem. The Institute of Medicine raised the
+    alarm in 1999; seventeen years later the problem persisted at scale.
   ],
+  sections: (
+    // -- Background --
+    [
+      Modern medicine generates vast amounts of data, yet its core
+      mortality-measurement instrument — the death certificate — records
+      a proximate physiological cause and has no field for medical error.
+      Because the certificate is keyed to a billing-and-classification
+      taxonomy built for disease, a death set in motion by a care-process
+      breakdown is recorded under whatever organ ultimately failed, and the
+      causal role of the system disappears into the physiology. As a result,
+      harm caused by the care system itself is largely absent from the
+      statistics that are supposed to govern it.#cn()
+    ],
+    // -- What Happened --
+    [
+      In 2016, surgeon Martin Makary and Michael Daniel published an
+      analysis in the _BMJ_ estimating that medical errors cause more than
+      250,000 deaths a year in the United States — which would rank third
+      behind heart disease and cancer. Their core claim was that "people
+      don't just die from heart attacks and bacteria, they die from
+      system-wide failings and poorly coordinated care." By relocating the
+      cause from the individual clinician to the coordination of care, the
+      framing recast a ledger of isolated mistakes as a single
+      population-scale failure mode the existing statistics were never built
+      to count.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The 250,000 estimate was substantively contested. Shojania and
+      Dixon-Woods, writing in _BMJ Quality & Safety_ in 2017, challenged
+      the extrapolation and the attribution method, arguing that counting
+      deaths "due to" error is far harder than a single headline number
+      implies. Their objection turned on counterfactual attribution — how
+      confidently one can say a frail, already-dying patient would have
+      survived but for the error — a judgment that resists the clean
+      tallying a headline number demands. The dispute is itself a worked
+      example of the gap-attribution problem: how much of a counted death is
+      the learning system, how much the system design, how much the
+      underlying disease.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      The deeper failure is one of measurement: a system that cannot see
+      its own failure modes cannot manage them. With no field on the
+      certificate and no reliable count, every safety program competes for
+      resources against a harm that the official record renders invisible,
+      so even effective interventions struggle to prove their worth. The
+      missing capability is an instrument that captures medical error as a
+      tracked cause of harm — and an attribution method robust enough that
+      the resulting number can guide intervention rather than fuel a
+      methodological stalemate.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      The Institute of Medicine's _To Err Is Human_ (1999) had earlier
+      estimated 44,000–98,000 annual deaths and catalyzed the
+      patient-safety movement — TeamSTEPPS (Case 27), the WHO surgical
+      checklist (Case 13), the Keystone ICU project (Case 14). Each of those
+      reforms targeted a specific process — teamwork, the operating room, the
+      central line — leaving the system-wide count untouched, so the headline
+      mortality kept escaping measurement even as bounded harms fell. Yet
+      later work, including a 2023 _NEJM_ study of inpatient harm, confirms
+      the problem persists at scale: the interventions exist; the measurement
+      and the implementation still lag.#cn()
+    ],
+  ),
+  references: (
+    [Makary, M. & Daniel, M. (2016), "Medical error — the third leading cause of death in the US," _BMJ_ — the 250,000 estimate and the quoted framing.],
+    [Makary & Daniel (2016), _BMJ_ — death certificates do not capture medical error as a cause.],
+    [Shojania, K. & Dixon-Woods, M. (2017), "Estimating deaths due to medical error," _BMJ Quality & Safety_ — methodological contestation.],
+    [Institute of Medicine, _To Err Is Human_ (1999) — the 44,000–98,000 estimate.],
+    [Bates, D. et al. (2023), "The Safety of Inpatient Health Care," _NEJM_ 388(2) — persistence of harm at scale.],
+  ),
   quote: [People don't just die from heart attacks and bacteria, they die from system-wide failings and poorly coordinated care.],
   quote-source: "Martin Makary, press statements accompanying Makary & Daniel, BMJ (2016)",
-  sources-list: (
-    [Makary & Daniel, "Medical error — the third leading cause of death in the US," _BMJ_ (2016)],
-    [Shojania & Dixon-Woods, "Estimating deaths due to medical error: the ongoing controversy and why it matters," _BMJ Quality & Safety_ (2017)],
-    [Institute of Medicine, _To Err Is Human_ (1999)],
-    [World Health Organization, World Patient Safety Day reports],
-    [AHRQ Patient Safety Network statistics],
-  ),
   le-insight: [
     The Makary data is the anchor evidence for the LENS argument
     because of its scale, its provenance (Johns Hopkins), and its
     framing — system failure rather than individual error. The seventeen
     years between *To Err Is Human* and Makary's reassessment is also
-    the implementation gap of Case 41 in another guise. Capability
-    engineering exists to close that gap, and the cost of leaving it
-    open is measured in lives at population scale.
+    the implementation gap of Case 41 in another guise — and the cost of
+    leaving it open is measured in lives at population scale.
   ],
   lens-approach: [
-    LENS treats this case as the central evidence anchor of the entire
-    curriculum. LEN 1 introduces it as the foundational problem
-    statement. LEN 4 uses it as the canonical case for measurement
-    systems that cannot see their own failures (death certificates do
-    not capture the failure mode). LEN 10 uses it as the studio prompt
-    for designing interventions at the scale required to shift the
-    distribution.
+    LENS treats this case as the central evidence anchor of the
+    curriculum: LEN 1 as the foundational problem statement, LEN 4 as the
+    canonical case for measurement systems blind to their own failures
+    (death certificates do not capture the failure mode), and LEN 10 as the
+    studio prompt for interventions at population scale.
   ],
   literature-items: (
     [Makary & Daniel (2016), BMJ],
@@ -85,6 +138,19 @@
   reflection-list: (
     [Identify a measurement instrument in your domain that systematically fails to capture the failure modes it should be designed to surface. What would it cost to fix?],
     [Two hundred fifty thousand deaths a year is the third leading cause of death in the U.S. Design the measurement and intervention regime that would shift the curve over a five-year horizon. Estimate the deliverable and the evidence.],
+    [Makary and Shojania disagreed not on whether error kills but on how to attribute a death to it. Specify an attribution method robust enough to survive that dispute — and name who would hold the authority to act on the number it produces.],
+  ),
+  approaches: (
+    during: (
+      [Give the mortality-recording instrument an explicit field for care-process failure, so a system-caused death is captured, not absorbed into the proximate cause.],
+      [Specify the attribution method up front — the counterfactual test for "due to" error — so the count guides action rather than collapsing into dispute.],
+      [Pair each safety intervention with the population measure it should move, gating reforms on demonstrated effect.],
+    ),
+    after: (
+      [Audit reported mortality against an independent count of care-related harm.],
+      [Use active surveillance of inpatient harm rather than waiting for the death certificate.],
+      [Hold the count and the intervention to the same measurement discipline, closing the implementation gap.],
+    ),
   ),
   courses: ("LEN 1", "LEN 4", "LEN 10", "LEN 6",),
 )

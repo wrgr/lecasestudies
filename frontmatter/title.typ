@@ -5,15 +5,15 @@
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
-// Respect the global mode flag — only the screen build gets the cream
-// backdrop; production and draft pages are transparent so they print
-// on whatever paper stock is used.
+// Respect the global mode flag — only the digital build gets the cream
+// backdrop; print and proof pages are transparent so they print on
+// whatever paper stock is used.
 #let page-fill = if cream-backdrop { cream } else { none }
 
 // ---- Half-title (page i) ----
 #page(
   fill: page-fill,
-  margin: (inside: m-inner + bleed, outside: m-outer + bleed, top: m-top + bleed, bottom: m-bottom + bleed),
+  margin: (inside: m-inner + bleed + carrier-x, outside: m-outer + bleed + carrier-x, top: m-top + bleed + carrier-y, bottom: m-bottom + bleed + carrier-y),
   header: none, footer: none,
   align(center + horizon, text(font: serif, size: 26pt, fill: navy, "Capability Matters"))
 )
@@ -24,7 +24,7 @@
 // ---- Title page (iii) ----
 #page(
   fill: page-fill,
-  margin: (inside: m-inner + bleed, outside: m-outer + bleed, top: m-top + bleed, bottom: m-bottom + bleed),
+  margin: (inside: m-inner + bleed + carrier-x, outside: m-outer + bleed + carrier-x, top: m-top + bleed + carrier-y, bottom: m-bottom + bleed + carrier-y),
   header: none, footer: none,
   {
     v(1fr)
@@ -69,7 +69,7 @@
 // ---- Dedication (iv) ----
 #page(
   fill: page-fill,
-  margin: (inside: m-inner + bleed, outside: m-outer + bleed, top: m-top + bleed, bottom: m-bottom + bleed),
+  margin: (inside: m-inner + bleed + carrier-x, outside: m-outer + bleed + carrier-x, top: m-top + bleed + carrier-y, bottom: m-bottom + bleed + carrier-y),
   header: none, footer: none,
   align(center + horizon, block(
     width: 75%,
@@ -87,7 +87,7 @@
 // ---- Colophon + methodology / AI-tools note (v) ----
 #page(
   fill: page-fill,
-  margin: (inside: m-inner + bleed, outside: m-outer + bleed, top: m-top + bleed, bottom: m-bottom + bleed),
+  margin: (inside: m-inner + bleed + carrier-x, outside: m-outer + bleed + carrier-x, top: m-top + bleed + carrier-y, bottom: m-bottom + bleed + carrier-y),
   header: none, footer: none,
   {
     set par(leading: 0.6em, justify: false, first-line-indent: 0pt)
@@ -107,8 +107,7 @@
       and Technology program at the Johns Hopkins University School
       of Education. \
       Set in Instrument Serif and DM Sans. \
-      Printed via Lulu in two trims: Half Letter (5.5 × 8.5 in)
-      and US Letter (8.5 × 11 in), perfect-bound.
+      Printed via Lulu at 8 × 10 in, perfect-bound.
     ]
 
     v(10pt)
@@ -159,7 +158,7 @@
 // ---- Sources, attribution, and legal notices (own page) ----
 #page(
   fill: page-fill,
-  margin: (inside: m-inner + bleed, outside: m-outer + bleed, top: m-top + bleed, bottom: m-bottom + bleed),
+  margin: (inside: m-inner + bleed + carrier-x, outside: m-outer + bleed + carrier-x, top: m-top + bleed + carrier-y, bottom: m-bottom + bleed + carrier-y),
   header: none, footer: none,
   {
     set par(leading: 0.6em, justify: false, first-line-indent: 0pt)

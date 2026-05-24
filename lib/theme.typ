@@ -8,93 +8,76 @@
 
 // ---- Build mode resolution ----
 //
-//   screen        — Half Letter, color, cream backdrop. Default; used
-//                   for screen reading and design preview.
-//   print         — Half Letter, GRAYSCALE, white backdrop. Production
-//                   interior for Lulu Half Letter (5.5 × 8.5) cream stock.
-//   print-letter  — US Letter, GRAYSCALE, white backdrop. Production
-//                   interior for Lulu Letter (8.5 × 11) trim.
-//   draft         — US Letter, color, 11pt body. Editorial mark-up
-//                   layout, ~2 pages per case.
-//   draft-half    — Half Letter, color, 11pt body. Editorial layout at
-//                   the trade-book trim, ~4 pages per case.
-#let mode = sys.inputs.at("mode", default: "screen")
+//   print    — 8 × 10 in, GRAYSCALE, white paper, 3 mm bleed. Production
+//              interior for Lulu (8 × 10) cream stock.
+//   digital  — 8 × 10 in, color, full-page cream backdrop. Screen / PDF
+//              edition. (default)
+//   proof    — the grayscale print page centered on an 8.5 × 11 US Letter
+//              sheet with an 8 × 10 trim outline + corner crop marks, so
+//              it can be printed at 100% on any office printer to review
+//              exactly what the print edition will trim to.
+#let mode = sys.inputs.at("mode", default: "digital")
 
-#let is-print      = mode == "print" or mode == "print-letter"
-#let is-draft      = mode == "draft" or mode == "draft-half"
-#let is-letter     = mode == "print-letter" or mode == "draft"
-#let is-half       = not is-letter
-#let grayscale     = is-print
-#let cream-backdrop = mode == "screen"
+#let is-print   = mode == "print"
+#let is-digital = mode == "digital"
+#let is-proof   = mode == "proof"
 
-// ---- Trim & bleed ----
+#let grayscale      = is-print or is-proof
+#let cream-backdrop = is-digital
+
+// ---- Trim, bleed & proof carrier ----
 //
-// Half Letter (5.5 × 8.5 in)  = 139.7 × 215.9 mm — production small trim
-// US Letter   (8.5 × 11 in)  = 215.9 × 279.4 mm — production large trim
-// Bleed: 3 mm on all four sides for production; 0 for draft (single-sided
-// editorial print, no bleed needed).
-#let bleed = if is-draft { 0mm } else { 3mm }
-#let trim-w = if is-letter { 215.9mm } else { 139.7mm }
-#let trim-h = if is-letter { 279.4mm } else { 215.9mm }
-#let page-w = trim-w + 2 * bleed
-#let page-h = trim-h + 2 * bleed
+// One trim everywhere: 8 × 10 in (203.2 × 254 mm).
+//   print   — page = trim + 3 mm bleed on four sides (Lulu).
+//   digital — page = trim, no bleed.
+//   proof   — page = US Letter (215.9 × 279.4 mm); the 8 × 10 page is
+//             centered on it at 100% via the carrier inset below, so the
+//             live text area is identical to print and proof line- and
+//             page-breaks match the print edition exactly.
+#let trim-w = 203.2mm
+#let trim-h = 254mm
+#let bleed  = if is-print { 3mm } else { 0mm }
 
-// Margins measured from the TRIM edge.
-//   Half Letter: 16/13/15/17 — content width ~111 mm at 8.5 pt
-//   US Letter (production): 22/18/20/22 — content width ~176 mm at 10.5 pt
-//   US Letter (draft):      28/18/20/20 — wider inside for 3-hole binder
-//   Half Letter (draft):    17/14/16/16 — tighter; 11 pt fits ~58 chars
-#let m-inner = {
-  if is-draft and is-letter { 28mm }
-  else if is-draft and is-half { 17mm }
-  else if is-letter { 22mm }
-  else { 16mm }
-}
-#let m-outer = {
-  if is-draft and is-letter { 18mm }
-  else if is-draft and is-half { 14mm }
-  else if is-letter { 18mm }
-  else { 13mm }
-}
-#let m-top = {
-  if is-draft and is-letter { 20mm }
-  else if is-draft and is-half { 16mm }
-  else if is-letter { 20mm }
-  else { 15mm }
-}
-#let m-bottom = {
-  if is-draft and is-letter { 20mm }
-  else if is-draft and is-half { 16mm }
-  else if is-letter { 22mm }
-  else { 17mm }
-}
+#let _letter-w = 215.9mm
+#let _letter-h = 279.4mm
+#let carrier-x = if is-proof { (_letter-w - trim-w) / 2 } else { 0mm }  // 6.35 mm
+#let carrier-y = if is-proof { (_letter-h - trim-h) / 2 } else { 0mm }  // 12.7 mm
 
-// ---- Typography sizes (mode-aware) ----
+#let page-w = if is-proof { _letter-w } else { trim-w + 2 * bleed }
+#let page-h = if is-proof { _letter-h } else { trim-h + 2 * bleed }
+
+// Margins measured from the 8 × 10 trim edge. Single column; the inner
+// (binding) margin runs a little wider than the outer.
+//   inner 26 / outer 22 / top 20 / bottom 24 mm
+//   → content width ~155 mm at 10.5 pt (~80-character measure)
+#let m-inner  = 26mm
+#let m-outer  = 22mm
+#let m-top    = 20mm
+#let m-bottom = 24mm
+
+// ---- Typography sizes ----
 //
+// One 8 × 10 set across all three editions (the print/digital/proof
+// modes differ only in color and carrier, not in measure or type
+// size, so proof pagination matches print exactly).
 //   body-size: main case-body sans size
 //   title-size: case title (serif)
 //   impact-size: 'Impact' line under the title
 //   lens-size: LE Insight / LENS Approach body
 //   pullquote-size: pull quote serif
 //   reflection-size: reflection-question body
-//   sources-size: sources + literature list
-// Half Letter production body is 9.25pt — the middle ground between
-// the original 8.5pt (264 pp, tight) and 9.5pt (358 pp, lots of
-// overflow blanks). At 9.25pt the book lands at 310 pp with ~24
-// blank-page anchors that the verso/recto spread architecture
-// requires when a case overflows. Some blanks are an editorial
-// opportunity: those cases have room to be expanded.
-#let body-size       = if is-draft { 11pt }   else if is-letter { 10.5pt } else { 9.25pt }
-#let title-size      = if is-draft { 24pt }   else if is-letter { 26pt }   else { 23pt }
-#let impact-size     = if is-draft { 10.5pt } else if is-letter { 11pt }   else { 9.25pt }
-#let lens-size       = if is-draft { 10.5pt } else if is-letter { 10pt }   else { 9.25pt }
-#let pullquote-size  = if is-draft { 13pt }   else if is-letter { 12pt }   else { 11pt }
-#let pullquote-src   = if is-draft { 8pt }    else if is-letter { 7.5pt }  else { 7pt }
-#let reflection-size = if is-draft { 10.5pt } else if is-letter { 9.5pt }  else { 8.5pt }
-#let reflection-num  = if is-draft { 12pt }   else if is-letter { 11pt }   else { 10pt }
-#let sources-size    = if is-draft { 9pt }    else if is-letter { 8.5pt }  else { 7.5pt }
-#let body-leading    = if is-draft { 0.58em } else if is-letter { 0.55em } else { 0.48em }
-#let body-spacing    = if is-draft { 0.68em } else if is-letter { 0.6em }  else { 0.56em }
+//   sources-size: sources + literature + per-case references list
+#let body-size       = 10.5pt
+#let title-size      = 28pt
+#let impact-size     = 11pt
+#let lens-size       = 9pt
+#let pullquote-size  = 13pt
+#let pullquote-src   = 7.5pt
+#let reflection-size = 9.5pt
+#let reflection-num  = 11pt
+#let sources-size    = 7.5pt
+#let body-leading    = 0.55em
+#let body-spacing    = 0.64em
 
 // ---- Typography (font stacks) ----
 #let serif = ("Instrument Serif", "EB Garamond", "Georgia")
@@ -150,6 +133,44 @@
 #let text-muted = if grayscale { _text-muted-g } else { _text-muted-c }
 #let rule-soft  = if grayscale { _rule-soft-g }  else { _rule-soft-c }
 
+// ---- Proof furniture: 8 × 10 trim outline + corner crop marks ----
+//
+// Painted in the page background when mode=proof so reviewers can see
+// exactly where the production book trims on the Letter carrier sheet.
+// In every other mode these resolve to `none` and add nothing.
+#let _crop-len    = 4mm
+#let _crop-gap    = 2mm
+#let _crop-stroke = 0.4pt + text-muted
+#let _trim-L = carrier-x
+#let _trim-R = carrier-x + trim-w
+#let _trim-T = carrier-y
+#let _trim-B = carrier-y + trim-h
+
+#let crop-marks = if is-proof {
+  // trim outline
+  place(top + left, dx: _trim-L, dy: _trim-T,
+    rect(width: trim-w, height: trim-h, stroke: 0.3pt + rule-soft))
+  // horizontal ticks, outboard of the four corners
+  place(top + left, dx: _trim-L - _crop-gap - _crop-len, dy: _trim-T, line(length: _crop-len, stroke: _crop-stroke))
+  place(top + left, dx: _trim-R + _crop-gap,             dy: _trim-T, line(length: _crop-len, stroke: _crop-stroke))
+  place(top + left, dx: _trim-L - _crop-gap - _crop-len, dy: _trim-B, line(length: _crop-len, stroke: _crop-stroke))
+  place(top + left, dx: _trim-R + _crop-gap,             dy: _trim-B, line(length: _crop-len, stroke: _crop-stroke))
+  // vertical ticks, outboard of the four corners
+  place(top + left, dx: _trim-L, dy: _trim-T - _crop-gap - _crop-len, line(length: _crop-len, angle: 90deg, stroke: _crop-stroke))
+  place(top + left, dx: _trim-R, dy: _trim-T - _crop-gap - _crop-len, line(length: _crop-len, angle: 90deg, stroke: _crop-stroke))
+  place(top + left, dx: _trim-L, dy: _trim-B + _crop-gap,             line(length: _crop-len, angle: 90deg, stroke: _crop-stroke))
+  place(top + left, dx: _trim-R, dy: _trim-B + _crop-gap,             line(length: _crop-len, angle: 90deg, stroke: _crop-stroke))
+} else { none }
+
+// Chapter-divider fill/background. A full-bleed navy divider can't
+// bleed to the Letter edge in proof, so instead paint the 8 × 10 trim
+// block on the carrier and keep the crop marks.
+#let divider-fill = if is-proof { none } else { navy }
+#let divider-bg = if is-proof {
+  place(top + left, dx: carrier-x, dy: carrier-y, rect(width: trim-w, height: trim-h, fill: navy))
+  crop-marks
+} else { none }
+
 // ---- Who builds the fix: expertise + tools per failure mode ----
 //
 // Capability engineering is a team sport. Each failure mode calls
@@ -188,6 +209,19 @@
   H: ("Human-System Interface",             "Correct performance was made unreasonably difficult."),
   G: ("Governance & Trust",                "Ethics, accountability, and stakeholder trust were afterthoughts."),
   K: ("Knowledge & Institutional Memory",  "Organizational knowledge degraded or was never captured."),
+)
+
+// ---- Case section sets ----
+//
+// Every case carries the same five-beat structure so the reader can
+// move across cases with a stable mental model. The labels adapt to
+// the kind of case (a failure, a successful intervention, or a
+// frontier/emerging case); the case body supplies one content block
+// per beat, in order, and `case()` pairs them with these labels.
+#let section-sets = (
+  failure:      ("Background", "What Happened", "The Investigation", "The Capability Gap", "Aftermath & Reform"),
+  intervention: ("Background", "The Intervention", "How It Worked", "The Evidence", "What Transferred"),
+  frontier:     ("The Shift", "What Is Emerging", "The Capability Question", "Early Evidence", "Open Problems"),
 )
 
 // ---- Domains ----

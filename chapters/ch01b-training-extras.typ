@@ -20,37 +20,87 @@
     micro: "the data was in the system; the data flow was not",
     caption: "Colgan 3407 — and the reform that followed",
   ),
-  body: [
-    On approach to Buffalo-Niagara International, the captain of Colgan
-    Air 3407 responded to the activation of the aircraft's stick shaker
-    by pulling back on the control column rather than lowering the nose.
-    The Bombardier Q400 stalled and crashed into a house in Clarence
-    Center, killing all forty-nine people on board and one person on the
-    ground. The NTSB found the captain had a documented history of
-    training failures earlier in his career, and that the first officer
-    had been ill, fatigued, and was paid roughly sixteen thousand dollars
-    a year. The airline knew about the training history. The hiring
-    pipeline knew. The regulator did not.
-
-    Family members of the victims organized one of the most effective
-    aviation-safety lobbying efforts in a generation. The result was the
-    Airline Safety and Federal Aviation Administration Extension Act of
-    2010, which raised the minimum experience requirement for Part 121
-    first officers from 250 to 1,500 hours and established the Pilot
-    Records Database. The 1,500-hour rule remains controversial; the
-    PRD has fundamentally restructured how pilot-history information
-    flows between carriers.
-
-    The capability gap was visible to everyone *except* the system that
-    licensed the pilots.
+  kind: "failure",
+  summary: [
+    On approach to Buffalo in February 2009, the captain of Colgan Air 3407
+    responded to a stall warning by pulling back on the controls instead of
+    lowering the nose; the Bombardier Q400 stalled and crashed into a house
+    in Clarence Center, killing all 49 aboard and one person on the ground.
+    The NTSB found the captain had a documented history of training failures,
+    and the first officer was ill, fatigued, and paid about \$16,000 a year.
+    The airline and the hiring pipeline knew the training history; the
+    regulator did not. Victims' families mounted one of the most effective
+    aviation-safety campaigns in a generation, producing the 2010 law that
+    raised first-officer experience requirements to 1,500 hours and created
+    the Pilot Records Database. The capability gap was visible to everyone
+    except the system that licensed the pilots.
   ],
+  sections: (
+    // -- Background --
+    [
+      Colgan Air 3407, a Bombardier Q400 flying a regional route to Buffalo,
+      was crewed by a captain with a documented history of training failures
+      and a first officer who was ill, fatigued, and paid roughly \$16,000 a
+      year. The airline and the hiring pipeline knew the captain's record;
+      the regulator did not — the information that should have shaped who sat
+      in that seat lived inside the carrier's files and never crossed into
+      the licensing system that was supposed to vouch for the crew.#cn()
+    ],
+    // -- What Happened --
+    [
+      On 12 February 2009, on approach to Buffalo, the aircraft slowed and
+      its stall-warning stick shaker activated. The captain responded by
+      pulling back on the control column — the opposite of stall recovery —
+      and the Q400 stalled and crashed into a house in Clarence Center,
+      killing all 49 aboard and one person on the ground. The reflex he
+      reached for was exactly wrong for the situation, the kind of error a
+      pattern of failed training events should have predicted long before he
+      was handed the controls.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The NTSB found the probable cause to be the captain's inappropriate
+      response to the stick shaker, against a backdrop of fatigue, weak
+      airline training, and a hiring system blind to the captain's history.
+      The data that should have flagged him existed — multiple failed
+      training events — but did not flow to the decision that put him in the
+      seat, so the hiring choice was made on a record that omitted the very
+      facts that mattered most, an absence that looked like a clean slate.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      Colgan is the canonical case for the gap between the information an
+      institution holds about its operators and the information that reaches
+      the decisions about those operators. The capability that was missing
+      was not pilot skill in the abstract but a data flow: a way to make a
+      pilot's documented training history actionable at the hiring and
+      licensing decision, rather than buried in files no one consulted — a
+      record can exist in full and still fail completely if it never reaches
+      the moment and the person whose choice it was meant to inform.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      The victims' families organized one of the most effective
+      aviation-safety lobbying efforts in a generation, producing the Airline
+      Safety and FAA Extension Act of 2010 — which raised the minimum
+      experience for airline first officers to 1,500 hours and created the
+      Pilot Records Database to make pilot history flow between carriers.#cn()
+      The 1,500-hour rule remains debated; the records database fundamentally
+      restructured how the information that was missing in 2009 now moves,
+      converting a buried file into a record a hiring carrier is required to
+      retrieve — the difference between a fact that exists and one that
+      arrives where the decision is made.
+    ],
+  ),
+  references: (
+    [NTSB, _Aircraft Accident Report: Colgan Air Flight 3407_, NTSB/AAR-10/01 (2010) — probable cause (quoted).],
+    [NTSB/AAR-10/01 (2010) — the captain's training history, and the first officer's fatigue and pay.],
+    [NTSB/AAR-10/01 (2010) — the information-flow gap between known pilot history and the hiring decision.],
+    [Airline Safety and Federal Aviation Administration Extension Act of 2010, Pub. L. 111-216 — the 1,500-hour rule and the Pilot Records Database.],
+    [GAO-12-203, _Pilot Records Database Implementation_ (2012); the Families of Continental Flight 3407 campaign.],
+  ),
   quote: [The captain's inappropriate response to the activation of the stick shaker led to an aerodynamic stall from which the airplane did not recover.],
   quote-source: "NTSB Aircraft Accident Report AAR-10/01, Probable Cause, 2010",
-  sources-list: (
-    [NTSB Aircraft Accident Report NTSB/AAR-10/01 (2010)],
-    [Airline Safety and Federal Aviation Administration Extension Act of 2010, Public Law 111-216],
-    [GAO-12-203, _Pilot Records Database Implementation_ (2012)],
-  ),
   le-insight: [
     Colgan is the canonical case for the gap between the information an
     institution holds about its operators and the information that
@@ -74,6 +124,19 @@
   reflection-list: (
     [What information about operators in your domain exists somewhere in the system but does not flow to the decisions that depend on it?],
     [Design the data-flow architecture that would make a Colgan-equivalent visible *before* the accident rather than after.],
+    [The reform in 2009 was driven by victims' families, not the industry that had resisted it. What load-bearing constituency in your domain could force a stalled data-flow fix into existence, and what evidence would mobilize them?],
+  ),
+  approaches: (
+    during: (
+      [Make a pilot's documented training history a required, structured input to the hiring and licensing decision, not a record held passively in carrier files.],
+      [Design the data flow so that adverse signals (failed training events) are pushed to the decision point rather than waiting to be requested.],
+      [Define record retention and transfer obligations across carriers up front, so a clean-looking application cannot conceal a known history.],
+    ),
+    after: (
+      [Audit whether the records actually reach hiring decisions, treating a complete file that never arrives as a live failure, not a solved one.],
+      [Monitor the pipeline for operators whose adverse history is not surfacing, and act before the gap is paid for in an accident.],
+      [Sustain the records database against drift and gaps in coverage, since a data-flow remedy decays as fast as its weakest link.],
+    ),
   ),
   courses: ("LEN 4", "LEN 5", "LEN 8"),
 )
@@ -93,38 +156,92 @@
     framing: "the autothrottle was not maintaining the speed the crew believed it was",
     caption: "Asiana 214 — approach airspeed at the seawall",
   ),
-  body: [
-    On a clear afternoon at San Francisco, the crew of Asiana 214
-    allowed the aircraft to slow well below approach speed without
-    recognizing that the autothrottle was not in the mode they
-    expected. The Boeing 777 struck the seawall short of runway 28L,
-    killing three and seriously injuring forty-nine of the 304 on
-    board. The NTSB found inadequate monitoring of airspeed and
-    confusion about autothrottle behavior when the autopilot pitch
-    channel was in FLCH SPD: after the pilots took the autopilot
-    offline and pulled thrust to idle, the autothrottle reverted to
-    HOLD and did not wake to maintain selected speed. The captain
-    later said he believed the autothrottle would maintain speed; in
-    that configuration, it does not.
-
-    NTSB identified Boeing's design of the autothrottle and autopilot
-    flight-director systems as a contributing factor — the documentation,
-    training, and interface together did not make the system's actual
-    state salient to the crew. The proximate cause was the crew's
-    failure to monitor airspeed; the system-level cause was that the
-    automation could silently leave the crew responsible for a parameter
-    they believed it was holding.
-
-    Asiana 214 is the most prominent recent case of automation surprise
-    on a Western wide-body airliner.
+  kind: "failure",
+  summary: [
+    On a clear afternoon at San Francisco in July 2013, the crew of
+    Asiana 214 allowed their Boeing 777 to slow far below approach
+    speed without recognizing that the autothrottle was not maintaining
+    it. The aircraft struck the seawall short of runway 28L, killing
+    three of the 307 aboard and injuring nearly two hundred. The NTSB
+    found the crew had mismanaged the approach and inadequately
+    monitored airspeed — but also that the complexity of Boeing's
+    autoflight systems contributed: after the pilots disconnected the
+    autopilot and pulled thrust to idle, the autothrottle reverted to
+    a HOLD mode in which it would not wake to hold the selected speed.
+    The captain believed it would. Asiana 214 is the most prominent
+    recent case of automation surprise on a Western wide-body airliner.
   ],
+  sections: (
+    // -- Background --
+    [
+      Asiana 214 was a scheduled Boeing 777 flight from Seoul to San
+      Francisco. The captain was experienced on other types but new to
+      the 777 and flying it under the supervision of a training captain;
+      the approach was a visual one, with the airport's instrument
+      glideslope out of service for construction — so a pilot still learning
+      the type's automation was hand-flying an approach stripped of the
+      vertical guidance that would normally have anchored it, exactly the
+      conditions under which an unfamiliar mode is most likely to bite.#cn()
+    ],
+    // -- What Happened --
+    [
+      On 6 July 2013, on final approach to runway 28L, the aircraft
+      descended below the proper path and slowed. The crew had set an
+      autopilot mode that left the autothrottle in HOLD, where it would
+      not advance thrust to hold the selected speed. Airspeed decayed to
+      about 103 knots against a target of 137; the 777 struck the seawall
+      short of the runway, killing three and injuring nearly two hundred
+      of the 307 aboard. The thirty-four-knot shortfall built up silently
+      while the crew believed the automation was holding the speed, so the
+      first unambiguous signal of trouble was the airframe itself running out
+      of energy on short final.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The NTSB found the probable cause to be the crew's mismanagement
+      of the approach and inadequate monitoring of airspeed, complicated
+      by the complexity of the autothrottle and autopilot flight-director
+      systems and by the crew's faulty mental model of the automation.
+      The captain told investigators he had assumed the autothrottle
+      would maintain speed; in that configuration, it does not — a gap
+      between the system's documented behavior and the mental model the
+      training had left him with, the kind of mismatch that surfaces only
+      when the automation is asked to do what the operator wrongly believes
+      it is already doing.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      Asiana 214 is the textbook automation surprise on a Western
+      wide-body: the mode the autothrottle was actually in and the mode
+      the crew believed it was in diverged silently. The missing
+      capability was not raw pilot skill but transparency — a system
+      that made its own state, and the fact that the crew now owned the
+      airspeed, salient at the moment it mattered, rather than leaving the
+      handoff of responsibility to be inferred from a silent mode change the
+      interface did nothing to announce.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      The NTSB issued recommendations on autoflight training, energy-state
+      monitoring, and the design of mode annunciation, and emphasized
+      training that preserves manual-flying proficiency to counter
+      automation dependence. The accident became a standard reference in
+      airline automation-policy reviews and in the push toward
+      "automation airmanship" curricula — shifting the lesson from one crew's
+      error to a recurring design problem about how modes are annunciated and
+      how monitoring is taught when the automation is doing most of the
+      flying.#cn()
+    ],
+  ),
+  references: (
+    [NTSB, _Aircraft Accident Report: Asiana Airlines Flight 214_, NTSB/AAR-14/01 (2014) — probable cause and contributing factors (quoted).],
+    [NTSB/AAR-14/01 (2014) — the autothrottle HOLD reversion and airspeed decay to ~103 kt.],
+    [NTSB/AAR-14/01 (2014) — the captain's mental model of the autothrottle.],
+    [Sarter, N. & Woods, D. (1995), "How in the world did we ever get into that mode?," _Human Factors_ — automation surprise.],
+    [NTSB/AAR-14/01 (2014), safety recommendations on autoflight training and mode annunciation.],
+  ),
   quote: [Complexities of the autothrottle and autopilot flight director systems contributed to the accident.],
   quote-source: "NTSB Aircraft Accident Report AAR-14/01, contributing factors, 2014",
-  sources-list: (
-    [NTSB Aircraft Accident Report NTSB/AAR-14/01 (2014)],
-    [Boeing 777 Flight Crew Operating Manual, autothrottle and autoflight sections],
-    [Casner, Geven & Williams (2013), "The Effectiveness of Airline Pilot Training for Abnormal Events," _Human Factors_],
-  ),
   le-insight: [
     Asiana 214 is the aviation case for the LENS Human-AI Teaming
     proposition that automation transparency is a capability
@@ -147,6 +264,19 @@
   reflection-list: (
     [Identify a mode in an automated system you work with where the operator's mental model and the system's actual behavior can silently diverge. How would the operator know?],
     [Design the interface change that would have alerted the Asiana crew to the mode mismatch before the airspeed decayed.],
+    [The autothrottle's HOLD reversion handed airspeed back to a crew that did not know it now owned it. Design the annunciation that would make a transfer of responsibility between automation and operator unmissable at the instant it occurs.],
+  ),
+  approaches: (
+    during: (
+      [Make automation transparency a design requirement: the system must announce its active mode and any silent reversion, not leave it to be inferred.],
+      [Annunciate transfers of responsibility (e.g., when the crew now owns airspeed) explicitly at the moment they occur, so no handoff is implicit.],
+      [Design and validate mode logic against operator mental models during development, so configurations that "do not do what pilots assume" are caught before fielding.],
+    ),
+    after: (
+      [Train and audit energy-state monitoring so a slow, silent airspeed decay is caught by the crew before the airframe signals it.],
+      [Preserve manual-flying proficiency through recurrent practice to counter the automation dependence that hid the decay.],
+      [Monitor operations for mode-confusion events and feed them into automation-policy and annunciation-design reviews.],
+    ),
   ),
   courses: ("LEN 5", "LEN 2"),
 )
@@ -166,39 +296,91 @@
     outcome: "submariners forced to use a weapon their bureau refused to repair",
     caption: "Mark 14 — multiple defects, single institutional refusal",
   ),
-  body: [
-    The U.S. Navy entered World War II with the Mark 14 torpedo, which
-    had been so expensive to test in peacetime that the Bureau of
-    Ordnance had effectively forbidden live trials. Submarine crews in
-    1942 reported torpedo after torpedo running deep, running shallow,
-    failing to detonate, or detonating prematurely. The Bureau of
-    Ordnance insisted the weapon worked and that the operators were at
-    fault. Submarine captains who reported failures faced career
-    consequences.
-
-    It took eighteen months and the personal intervention of Admiral
-    Charles Lockwood (COMSUBPAC) — who ordered fleet-level testing,
-    including a famous live-fire trial against the Kahoolawe cliff
-    face and, separately, the USS Tinosa's July 1943 attack on the
-    Tonan Maru in which fifteen hits produced a single detonation —
-    to confirm that the weapon was running ten feet too deep, that
-    its Mark 6 magnetic exploder failed routinely, and that even its
-    contact firing pin crushed on perpendicular impact. The fixes
-    were straightforward once the existence of the problem was
-    acknowledged. The institutional resistance was the binding
-    constraint.
-
-    The Mark 14 is a foundational case in U.S. military capability
-    history for what happens when the institution responsible for a
-    weapon refuses to believe the operators using it.
+  kind: "failure",
+  summary: [
+    The U.S. Navy entered World War II with the Mark 14 torpedo, so
+    expensive that the Bureau of Ordnance had effectively forbidden
+    live testing in peacetime. Through 1942 submarine crews reported
+    torpedoes running deep, failing to detonate, or exploding
+    prematurely; the Bureau insisted the weapon was sound and blamed
+    the operators. It took eighteen months and the personal intervention
+    of Admiral Charles Lockwood — who ordered fleet-level live-fire
+    tests — to confirm three separate defects: the torpedo ran about
+    ten feet too deep, its magnetic exploder fired erratically, and its
+    contact pin crushed on a square hit. The fixes were simple once the
+    defects were acknowledged. The binding constraint was institutional:
+    a bureau insulated from the operators who knew the weapon did not work.
   ],
+  sections: (
+    // -- Background --
+    [
+      The Mark 14 was the U.S. Navy's standard submarine torpedo at the
+      start of the Pacific War. It had been so expensive to test that
+      the Bureau of Ordnance had effectively forbidden live trials in
+      the 1930s; the weapon went to war essentially unproven against
+      realistic conditions, so the very decision meant to conserve a scarce
+      and costly weapon guaranteed that its defects would first be discovered
+      in combat, by the crews who could least afford them to surface there.#cn()
+    ],
+    // -- What Happened --
+    [
+      From early 1942, submarine crews reported a litany of failures:
+      torpedoes that ran far below their set depth, magnetic exploders
+      that detonated prematurely or not at all, and contact firing pins
+      that crushed on a direct hit. The Bureau of Ordnance insisted the
+      weapon worked and attributed the misses to crew error; captains
+      who reported failures risked their careers — an arrangement that turned
+      every field report into a self-accusation and so suppressed the very
+      evidence that would have isolated the defects the Bureau refused to
+      acknowledge.#cn()
+    ],
+    // -- The Investigation --
+    [
+      It took eighteen months and the intervention of Admiral Charles
+      Lockwood, commander of the Pacific submarine force, who ordered
+      fleet-level testing. A live-fire trial — and the USS Tinosa's
+      July 1943 attack on the Tonan Maru, in which eleven torpedoes struck
+      the stopped ship squarely and failed to detonate — forced the issue.
+      The tests confirmed the
+      torpedo ran about ten feet too deep, that the Mark 6 magnetic
+      exploder failed routinely, and that the contact pin buckled on
+      perpendicular impact — three independent defects that had been masking
+      one another at sea, which is why a fleet commander's controlled trial,
+      not another combat patrol, was finally able to separate and prove them.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      The defects were real and separate, but the binding constraint was
+      institutional. The capability that was missing was not at the
+      front; it was a channel by which the bureau that owned the weapon
+      could be made to hear what the boats already knew. The fixes —
+      recalibrating depth, deactivating the magnetic exploder, redesigning
+      the contact pin — were small. The refusal to believe the operators
+      was the expensive part, measured not in engineering hours but in the
+      months of patrols and the targets that escaped while a bureau defended
+      a verdict the boats had already disproven.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      By late 1943 the three defects were corrected and the Mark 14
+      became an effective weapon for the rest of the war. The episode
+      entered U.S. Navy institutional history as the canonical case of a
+      procurement bureau insulated from operator feedback, and is cited
+      in modern organizational-learning literature on the cost of
+      suppressing field reports — a reminder that the structure that decides
+      whose evidence counts is itself a capability, and that its absence can
+      cost more than any single technical defect it conceals.#cn()
+    ],
+  ),
+  references: (
+    [Blair, C. (1975), _Silent Victory: The U.S. Submarine War Against Japan_ — operator reports and the Bureau's resistance (paraphrased).],
+    [Rowland, B. & Boyd, W. (1953), _U.S. Navy Bureau of Ordnance in World War II_ — testing policy and the three defects.],
+    [Blair (1975) — the USS Tinosa's July 1943 attack (eleven consecutive duds on a stopped target) and Lockwood's fleet-level testing.],
+    [Naval History and Heritage Command, Mark 14 torpedo files — depth error, Mark 6 magnetic exploder, contact-pin failure.],
+    [Edmondson, A. (2018), _The Fearless Organization_ — suppression of field reports as an organizational-learning failure.],
+  ),
   quote: [The Bureau certified the weapon; field reports of failure were treated as evidence of operator error.],
   quote-source: "Paraphrasing Blair, Silent Victory, 1975",
-  sources-list: (
-    [Blair, C. (1975), _Silent Victory: The U.S. Submarine War Against Japan_],
-    [Rowland, B. & Boyd, W. (1953), _U.S. Navy Bureau of Ordnance in World War II_],
-    [Naval History and Heritage Command, Mark 14 torpedo files],
-  ),
   le-insight: [
     The Mark 14 is the canonical Navy case for the institutional refusal
     to believe operator feedback. The capability that was missing was
@@ -226,7 +408,19 @@
   reflection-list: (
     [Identify a system in your domain whose owners are institutionally insulated from the operators using it. What feedback would they refuse to hear, and what would it cost?],
     [Design the operator-feedback channel that the U.S. Navy Bureau of Ordnance should have had in 1941. Who signs, who receives, what triggers action?],
-    [The USS Tinosa fired fifteen torpedoes for one detonation before the bureau accepted the diagnosis. What is the operator-evidence threshold in your domain that would force the equivalent institutional acknowledgment — and how would you make sure it is reached before the cost is paid?],
+    [The USS Tinosa fired a string of torpedoes that struck a stopped ship and failed to detonate before the bureau accepted the diagnosis. What is the operator-evidence threshold in your domain that would force the equivalent institutional acknowledgment — and how would you make sure it is reached before the cost is paid?],
+  ),
+  approaches: (
+    during: (
+      [Require realistic live testing before fielding, even for scarce and costly items, so defects surface in trials rather than in combat.],
+      [Build an operator-feedback channel into the weapon's ownership from the start, with a path that does not put the reporter's career at risk.],
+      [Separate the authority that certifies a system from the authority that investigates its field failures, so a bureau cannot judge its own product.],
+    ),
+    after: (
+      [Audit field reports for suppressed or career-risking signals, and treat a pattern of "operator error" verdicts as a warning to test the system, not the crew.],
+      [Empower an operational commander to order controlled trials when field reports conflict with the owner's certification.],
+      [Sustain the feedback channel so multiple masking defects can be separated and proven before the cost compounds.],
+    ),
   ),
   courses: ("LEN 10", "LEN 7", "LEN 8"),
 )
@@ -244,35 +438,92 @@
     framing: "five organizations · no joint command · no shared training",
     caption: "the absence of an institution that could own the mission",
   ),
-  body: [
-    The mission to rescue fifty-two American hostages from the U.S.
-    embassy in Tehran was aborted at a desert refueling point in eastern
-    Iran when three of eight helicopters were lost to mechanical or
-    weather failures. During the withdrawal a helicopter collided with
-    a C-130, killing eight servicemembers. The hostages remained in
-    Iranian custody for another nine months.
-
-    The Holloway Commission identified the mission's "ad hoc-ery": each
-    service contributed its own units, equipment, command relationships,
-    and communications systems; the aircrews had not trained together;
-    the RH-53D Sea Stallions had been chosen for range and a
-    minesweeping cover story rather than fitness for a desert rescue.
-    There was no standing joint special-operations command to own the
-    mission. The capability had to be improvised, and the improvisation
-    failed.
-
-    Eagle Claw produced the Holloway Commission, JSOC (1980), and
-    ultimately the Nunn-Cohen Amendment establishing USSOCOM (1987);
-    Goldwater-Nichols (1986) drew on it alongside Beirut and Grenada in
-    mandating joint command structures across the U.S. military.
+  kind: "failure",
+  summary: [
+    The April 1980 mission to rescue fifty-two American hostages held at
+    the U.S. embassy in Tehran was aborted at a desert staging point when
+    three of eight helicopters were lost to mechanical and weather
+    problems. During the withdrawal a helicopter collided with a refueling
+    C-130, killing eight servicemembers; the hostages remained captive for
+    another nine months. The Holloway Commission found the operation had
+    been assembled ad hoc: each service contributed its own units,
+    equipment, and command relationships, the aircrews had not trained
+    together, and there was no standing joint special-operations command
+    to own the mission. The capability had to be improvised, and the
+    improvisation failed. Eagle Claw catalyzed the creation of JSOC, the
+    Goldwater-Nichols reforms, and ultimately U.S. Special Operations Command.
   ],
+  sections: (
+    // -- Background --
+    [
+      In November 1979, Iranian revolutionaries seized the U.S. embassy
+      in Tehran and took fifty-two Americans hostage. After months of
+      failed diplomacy, the Carter administration authorized a military
+      rescue. No standing joint special-operations command existed to
+      plan or execute it; the force had to be assembled from units drawn
+      separately from the Army, Navy, Marines, and Air Force — each bringing
+      its own equipment, procedures, and chain of command to a mission that
+      demanded they act as one, with no institution whose job it was to make
+      them cohere before the night of the raid.#cn()
+    ],
+    // -- What Happened --
+    [
+      On 24 April 1980, the mission staged at a remote site code-named
+      Desert One. Three of the eight RH-53 helicopters were disabled by
+      a dust storm and mechanical failure, dropping the force below the
+      minimum needed; the commander aborted. During the withdrawal a
+      helicopter collided with a C-130 tanker, and the resulting fire
+      killed eight servicemembers. The mission failed before reaching
+      Tehran — undone not by enemy action but by attrition and a chaotic
+      withdrawal among aircraft and crews that had never operated together,
+      the predictable cost of integration improvised under pressure rather
+      than built and rehearsed in advance.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The Holloway Special Operations Review Group identified the
+      operation's "ad hoc-ery" as central: each service contributed its
+      own units, equipment, command relationships, and communications;
+      the aircrews had not trained together as a unit; the RH-53D had
+      been selected partly for a minesweeping cover story rather than for
+      fitness for a desert rescue. There was no standing organization to
+      own the mission end to end — no single authority responsible for the
+      force's training, equipment fit, and command architecture as a whole,
+      so each gap was someone's problem in part and no one's in full.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      Each service was competent inside its own boundary. The capability
+      that did not exist was the integration across them — a joint
+      command, a common communications architecture, and a force that had
+      trained together. That integration had to be improvised for a
+      single high-stakes mission, and the improvisation could not hold —
+      because cross-service cohesion is not summoned on demand but accrued
+      through standing structure and repeated joint training, neither of
+      which existed when the order came.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      Eagle Claw produced the Holloway Commission, the creation of the
+      Joint Special Operations Command in 1980, and — alongside the 1983
+      Beirut bombing and the Grenada invasion — the impetus for the
+      Goldwater-Nichols Act of 1986 and the Nunn-Cohen Amendment
+      establishing U.S. Special Operations Command in 1987. The reform
+      built the institution the mission had needed and not had — converting a
+      capability that had been improvised once and failed into a standing
+      command with its own forces, training, and authority, so the next
+      mission would inherit cohesion rather than assemble it from scratch.#cn()
+    ],
+  ),
+  references: (
+    [Holloway Special Operations Review Group, _Rescue Mission Report_ (1980) — the ad-hoc assembly and equipment choices (paraphrased).],
+    [Holloway Commission (1980) — the Desert One sequence and the helicopter–C-130 collision.],
+    [Goldwater-Nichols Department of Defense Reorganization Act of 1986, Pub. L. 99-433.],
+    [Nunn-Cohen Amendment (1986), establishing U.S. Special Operations Command (1987).],
+    [Locher, J. (2002), _Victory on the Potomac_ — the reform arc from Desert One to Goldwater-Nichols.],
+  ),
   quote: [The mission was ad hoc — assembled from units, equipment, and command relationships that had never operated together.],
   quote-source: "Paraphrasing the Holloway Special Operations Review Group, 1980",
-  sources-list: (
-    [Holloway Special Operations Review Group, _Rescue Mission Report_ (1980)],
-    [Goldwater-Nichols Department of Defense Reorganization Act of 1986],
-    [Locher, _Victory on the Potomac_ (2002)],
-  ),
   le-insight: [
     Eagle Claw is the canonical case in U.S. defense for the absence of
     institutionalized cross-service capability. Each service was
@@ -298,6 +549,18 @@
     [Eagle Claw produced USSOCOM and Goldwater-Nichols six years later. Sketch the institutional design that an equivalent failure in your domain would force into existence.],
     [The Holloway Commission named the mission's ad-hoc-ery as the diagnosis. What standing capability — institution, command, training pipeline — does your domain currently lack that an Eagle-Claw-class failure would force into existence?],
   ),
+  approaches: (
+    during: (
+      [Stand up a single command that owns the cross-organizational mission end to end — its force, equipment fit, communications, and training — rather than assembling it per mission.],
+      [Require the contributing units to train together as one force on a common communications architecture before they are committed.],
+      [Select equipment for fitness to the actual mission, not for a convenient cover story or parent-service availability.],
+    ),
+    after: (
+      [Audit whether a cross-organizational capability that exists on paper has ever actually operated as one force, and treat the absence of joint reps as an unfilled gap.],
+      [Sustain the standing institution and its training pipeline so the next mission inherits cohesion rather than improvising it.],
+      [Monitor for the recurrence of ad-hoc assembly, since the conditions that produced Desert One reappear whenever no single authority owns the joint mission.],
+    ),
+  ),
   courses: ("LEN 5", "LEN 8"),
 )
 
@@ -316,33 +579,92 @@
     framing: "one horn, two meanings · the training had drilled only one",
     caption: "Helios 522 — a cue carrying two meanings without differentiation",
   ),
-  body: [
-    The crew of Helios 522 ignored a warning horn shortly after
-    takeoff from Larnaca because the same intermittent horn used on
-    the Boeing 737 to indicate incorrect takeoff configuration on the
-    ground sounds, in flight, when cabin altitude exceeds
-    approximately 10,000 feet. The pressurization selector had been
-    left in "manual" after a pressurization leak check the previous
-    night, and the cabin failed to pressurize. By the time the aircraft reached altitude the crew
-    was hypoxic; by the time it neared Athens, only one cabin attendant
-    remained conscious. The aircraft circled Athens on autopilot until
-    fuel exhaustion and crashed into a hillside.
-
-    The accident investigation found the single warning horn carried
-    different meanings on the ground and in flight, with no
-    differentiation in the cue. The training had drilled the
-    ground-configuration meaning. The in-flight meaning was an edge
-    case that the airline's training had not made salient. The crew
-    spent twenty minutes troubleshooting a problem they had
-    misidentified, by which time it was already too late.
+  kind: "failure",
+  summary: [
+    Shortly after takeoff from Larnaca in August 2005, the crew of
+    Helios 522 misread a warning horn. The same intermittent horn that
+    signals an incorrect takeoff configuration on the ground sounds, in
+    flight, when cabin altitude climbs past about 10,000 feet — and the
+    pressurization selector had been left in "manual" after a leak check
+    the night before. The cabin never pressurized. The crew,
+    troubleshooting the wrong fault, lost consciousness to hypoxia; the
+    Boeing 737 flew on autopilot until it ran out of fuel and crashed
+    into a hillside near Athens, killing all 121 aboard. The investigation
+    found a single cue carried two meanings with no differentiation, and
+    the airline's training had drilled only the ground meaning.
   ],
+  sections: (
+    // -- Background --
+    [
+      Helios 522 was a Boeing 737 departing Larnaca, Cyprus, for Athens.
+      The night before, engineers had run a pressurization leak check and
+      left the cabin-pressurization selector in the "manual" position.
+      The pre-flight checks did not catch it, and the aircraft departed
+      with its pressurization system not set to maintain cabin altitude
+      automatically — a maintenance setting left in an abnormal position the
+      following morning, the kind of latent configuration error that a
+      pre-flight verification exists precisely to catch and here did not.#cn()
+    ],
+    // -- What Happened --
+    [
+      As the aircraft climbed on 14 August 2005, the cabin failed to
+      pressurize and a warning horn sounded. On the 737 the same horn
+      indicates an incorrect takeoff configuration on the ground and
+      excessive cabin altitude in flight. The crew interpreted it as a
+      configuration warning and spent minutes troubleshooting the wrong
+      problem while hypoxia set in. By the time the aircraft neared Athens
+      the flight crew was incapacitated; it circled on autopilot until
+      fuel exhaustion and crashed, killing all 121 aboard. The crew spent
+      their few useful minutes diagnosing a configuration fault that did not
+      exist, the ambiguous horn having steered them away from the one problem
+      — climbing cabin altitude — that was quietly disabling them.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The Hellenic Air Accident Investigation Board found the crew's
+      misidentification of the cabin-altitude warning as a
+      takeoff-configuration warning to be a critical, irrecoverable error.
+      The single horn carried two meanings with no differentiation between
+      them, and the airline's training had emphasized only the ground
+      meaning; the in-flight case was an edge condition the crew had not
+      been prepared to recognize — so an ambiguous cue and a one-sided
+      training regime combined to make the wrong interpretation the natural
+      one, with hypoxia closing the window before the error could be caught.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      Helios 522 is the textbook example of a single cue carrying two
+      meanings without differentiation — an interface that lied by
+      ambiguity while the training filled in only one of the two meanings.
+      The missing capability was a cue, or a training regime, that
+      distinguished the deadly in-flight meaning from the routine ground
+      one before the operators had to guess under hypoxia — a way to resolve
+      the ambiguity at the interface or in training, rather than leaving it
+      to be resolved by a crew already losing the cognition the decision
+      required.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      The investigation drove changes to Boeing's warning logic and to
+      pressurization-related training and checklists across operators;
+      later 737 variants distinguish the cabin-altitude warning from the
+      takeoff-configuration warning. The accident is a standard case
+      study in cue ambiguity, pre-flight verification, and the physiology
+      of hypoxia in human-factors curricula — its remedies attacking the
+      failure on both fronts at once, differentiating the warning at the
+      interface and reinforcing the in-flight meaning in training so neither
+      gap could be papered over by the other.#cn()
+    ],
+  ),
+  references: (
+    [Hellenic Air Accident Investigation & Aviation Safety Board, _Aircraft Accident Report_ 11/2006 — probable cause and the warning misinterpretation (paraphrased).],
+    [AAIASB Report 11/2006 — the manual pressurization selector and failure to pressurize.],
+    [AAIASB Report 11/2006 — the dual-meaning warning horn and the training emphasis.],
+    [Boeing 737 Flight Crew Operations Manual — configuration and cabin-altitude warnings.],
+    [Reason, J. (1990), _Human Error_ — Helios 522 as a worked case of cue ambiguity.],
+  ),
   quote: [The crew's interpretation of the cabin-altitude warning horn as a takeoff-configuration warning was a critical and irrecoverable error.],
   quote-source: "Paraphrasing the Hellenic AAIB Final Report on Helios 522, 2006",
-  sources-list: (
-    [Hellenic AAIB Aircraft Accident Investigation Report 11/2006],
-    [Boeing 737 Flight Crew Operations Manual, configuration warnings],
-    [Reason (1990), _Human Error_ — Helios 522 as worked case],
-  ),
   le-insight: [
     Helios 522 is the textbook example of a single cue carrying two
     meanings without differentiation. The interface lied by ambiguity.
@@ -364,6 +686,19 @@
   reflection-list: (
     [Identify a cue in your domain that carries two meanings in different operational contexts. How would the operator know which?],
     [Redesign the Helios configuration warning to distinguish ground- and in-flight meaning without adding cognitive load.],
+    [A maintenance setting left in "manual" survived the pre-flight checks and reached the air. Design the pre-flight verification step in your domain that would make an abnormal maintenance configuration impossible to depart with unnoticed.],
+  ),
+  approaches: (
+    during: (
+      [Differentiate cues that carry distinct meanings in distinct contexts, so a single signal cannot be read as the wrong one under stress.],
+      [Train both meanings of any dual-purpose cue, not just the routine one, so the rare-but-deadly interpretation is recognized first.],
+      [Design pre-flight verification to catch abnormal maintenance configurations, so a setting left in "manual" cannot survive into operation.],
+    ),
+    after: (
+      [Audit checklists and warning logic for cues whose meaning depends on phase or context, and resolve the ambiguity before an operator must guess.],
+      [Monitor maintenance-to-operations handoffs for latent configuration errors that pre-flight checks have historically missed.],
+      [Sustain training on the physiology that degrades the operator (e.g., hypoxia), so the window for self-correction is understood and guarded.],
+    ),
   ),
   courses: ("LEN 5", "LEN 2"),
 )
@@ -380,34 +715,92 @@
     outcome: "every instrument fed by the same blocked sensor",
     caption: "AeroPerú 603 — redundancy that was not redundancy",
   ),
-  body: [
-    Maintenance staff in Lima taped over the Boeing 757's static ports
-    while polishing the fuselage and failed to remove the tape before
-    flight. With the static ports blocked, the aircraft's altimeters,
-    airspeed indicators, and altitude alert system all read
-    inconsistently. The crew received contradictory warnings —
-    overspeed, stick shaker, ground proximity — and could not determine
-    the aircraft's actual state. They believed they were higher than
-    they were. They flew into the ocean.
-
-    The Peruvian accident report identified the maintenance error as
-    the primary cause but emphasized that the cockpit had no
-    independent reference to detect the inconsistency. Every instrument
-    that should have flagged the failure depended on the same blocked
-    sensor. The crew's training did not include a procedure for
-    "everything you see is wrong."
-
-    AeroPerú 603 sits at the intersection of maintenance procedure,
-    cockpit interface design, and the limits of crew training under
-    instrument failure.
+  kind: "failure",
+  summary: [
+    While polishing the fuselage of a Boeing 757 in Lima in October 1996,
+    maintenance staff taped over the static ports and failed to remove the
+    tape before flight. With the static system blocked, the aircraft's
+    altimeters, airspeed indicators, and altitude-alert and overspeed
+    warnings all read inconsistently. The crew received a cascade of
+    contradictory warnings — overspeed, stick shaker, ground proximity —
+    and could not determine their true altitude or speed. Believing they
+    were higher than they were, they flew into the Pacific, killing all 70
+    aboard. The investigation named the maintenance error as the primary
+    cause but stressed that every cockpit instrument depended on the same
+    blocked sensor: the apparent redundancy was an illusion, and the
+    crew's training had no procedure for "everything you see is wrong."
   ],
+  sections: (
+    // -- Background --
+    [
+      AeroPerú 603 was a Boeing 757 night departure from Lima to Santiago.
+      Before the flight, ground crew had covered the aircraft's static
+      ports with adhesive tape during cleaning and polishing of the
+      fuselage, and the tape was not removed. The static ports feed the
+      instruments that tell the crew their altitude and airspeed — a single
+      physical source upstream of nearly every primary cockpit display, so
+      blocking it corrupted not one instrument but the whole air-data picture
+      the crew would rely on in the dark.#cn()
+    ],
+    // -- What Happened --
+    [
+      On 2 October 1996, the aircraft took off into darkness over the
+      ocean with its static system blocked. Altimeters, airspeed
+      indicators, and the altitude-alert and overspeed systems all
+      produced false and contradictory readings. The crew received
+      simultaneous overspeed and stall warnings and ground-proximity
+      alerts they could not reconcile. Believing they were higher than
+      they were, they descended and struck the Pacific, killing all 70
+      aboard — the contradictory warnings offering no way to tell which, if
+      any, instrument to trust, because every one of them drew on the same
+      blocked source and so failed in concert rather than disagreeing usefully.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The Peruvian accident investigation identified the failure to remove
+      the static-port tape as the primary cause, but emphasized that the
+      cockpit had no independent reference by which to detect the
+      inconsistency. Every instrument that should have flagged the failure
+      drew on the same blocked source. The crew's training had no
+      procedure for the case in which all primary instruments are
+      simultaneously wrong — that failure had been assumed away rather than
+      planned for, leaving the crew to improvise against a problem the system
+      design had quietly made possible and the curriculum never named.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      AeroPerú 603 is the case for redundancy that is not redundancy. The
+      cockpit's apparent instrument redundancy was an illusion at the
+      source — a common-cause failure that defeated every downstream
+      display at once. The missing capability was both a maintenance
+      control that made the blocked port impossible to miss and a
+      procedure for flying when the instruments themselves cannot be
+      trusted — the first preventing the common-cause failure at its source,
+      the second giving the crew somewhere to stand when the apparent
+      redundancy in front of them collapsed all at once.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      The accident reinforced industry maintenance practices for
+      conspicuous covering and mandatory removal-verification of static
+      ports and pitot tubes, and entered the human-factors literature as
+      a worked example of common-cause failure and the limits of crew
+      training under total instrument corruption. It is paired with other
+      pitot-static events in discussions of air-data integrity — its lesson
+      being that redundancy counted at the display tells you nothing if the
+      redundant paths share a single upstream point that can fail them all
+      together.#cn()
+    ],
+  ),
+  references: (
+    [Peru Dirección General de Aeronáutica Civil, accident investigation board, final report on AeroPerú 603 (December 1996; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
+    [Peru CIAA report (1996) — the static-port tape and the contradictory warnings.],
+    [Peru CIAA report (1996) — the absence of an independent cockpit reference.],
+    [Leveson, N. (2011), _Engineering a Safer World_ (STAMP) — common-cause failure.],
+    [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_ — crew performance under instrument failure.],
+  ),
   quote: [The crew received contradictory indications they could neither reconcile nor override.],
   quote-source: "Paraphrasing the Peruvian DGAC / Comisión Investigadora de Accidentes de Aviación report on AeroPerú 603, 1996",
-  sources-list: (
-    [Peru Dirección General de Aeronáutica Civil (DGAC), Comisión Investigadora de Accidentes de Aviación, accident report on AeroPerú 603 (1996)],
-    [Boeing 757 Flight Crew Training Manual],
-    [Wiener, _Human Factors of Cockpit Automation_ (NASA, 1989)],
-  ),
   le-insight: [
     AeroPerú 603 is the case for redundancy that is not redundancy.
     Every cockpit indicator depended on the same physical sensor. The
@@ -429,6 +822,19 @@
   reflection-list: (
     [Identify a redundant interface in your domain whose redundancy depends on a common upstream component. What is the operator procedure when the upstream component fails?],
     [Design the "trust nothing" procedure for the AeroPerú crew. What information remains reliable when all instruments are corrupted?],
+    [A taped-over static port survived to takeoff because nothing made it conspicuous or forced its removal to be verified. Design the maintenance control in your domain that would make a blocked or covered critical component impossible to overlook before operation.],
+  ),
+  approaches: (
+    during: (
+      [Map redundant displays back to their upstream sources, and eliminate or instrument any common point whose failure would corrupt them all at once.],
+      [Make critical sensor covers conspicuous and require verified removal, so a blocked static port cannot reach takeoff unnoticed.],
+      [Provide an independent reference (e.g., a source not fed by the common component) so the crew can detect inconsistency at the source.],
+    ),
+    after: (
+      [Audit maintenance controls for tasks that cover or block critical sensors, confirming each has a conspicuous marker and a removal-verification step.],
+      [Train and rehearse a "trust nothing" procedure for total instrument corruption, the case the curriculum had assumed away.],
+      [Monitor for common-cause failure modes whose probability was assumed negligible, and revisit that assumption when the consequence is catastrophic.],
+    ),
   ),
   courses: ("LEN 5", "LEN 2"),
 )
@@ -445,38 +851,92 @@
     emphasis: 3,
     caption: "the cost of partial implementation between Colgan and the PRD's final coverage",
   ),
-  body: [
-    The first officer of Atlas Air 3591 — Conrad Aska, an Amazon Prime
-    Air cargo flight — inadvertently activated the TOGA (go-around)
-    mode during a turbulent descent, then, in a somatogravic illusion
-    that the aircraft was pitching up, pushed the nose down sharply
-    in response to a perceived stall, and crashed the Boeing 767
-    freighter into Trinity Bay, Texas. The NTSB found that the first
-    officer had a documented history of training failures spanning
-    multiple prior carriers and had not disclosed those failures on
-    his Atlas Air application. Atlas could not detect the omissions
-    because the Pilot Records Database — directed by Congress after
-    Colgan Air 3407 (Case 43) — was not yet operational at the time
-    of hiring; Atlas relied on the older PRIA records system, which
-    only required five years of training history.
-
-    The case is the live, current version of the Colgan story. The
-    information existed. The data-flow system had not yet been built.
-    The first officer had been advanced past failures that should have
-    ended his career. The reform that Colgan's families had won was
-    not yet complete enough to stop the next iteration.
-
-    The PRD final rule was published in 2021 and became effective for
-    Part 121 carriers in June 2022, with full historical coverage
-    phasing in through 2024.
+  kind: "failure",
+  summary: [
+    On approach to Houston in February 2019, the first officer of Atlas
+    Air 3591 — an Amazon Prime Air cargo flight — inadvertently triggered
+    the go-around mode during a turbulent descent. Experiencing a
+    somatogravic illusion that the aircraft was pitching up, he pushed the
+    nose down sharply and dove the Boeing 767 freighter into Trinity Bay,
+    killing all three aboard. The NTSB found the first officer had a long,
+    undisclosed history of training failures across multiple carriers —
+    and that Atlas could not see it, because the Pilot Records Database
+    mandated by Congress after Colgan Air 3407 (Case 43) was not yet
+    operational. Atlas relied on the older PRIA system, which surfaced
+    only five years of history. The case is the live recurrence of Colgan:
+    the information existed; the data-flow system was not yet complete.
   ],
+  sections: (
+    // -- Background --
+    [
+      Atlas Air 3591 was a Boeing 767 freighter operating for Amazon
+      Prime Air from Miami to Houston. The first officer had failed
+      training events at several previous employers and had not disclosed
+      them on his Atlas application. At the time of hiring, the Pilot
+      Records Database directed by Congress after Colgan Air 3407 was not
+      yet operational; Atlas used the older PRIA system, which required
+      only five years of records — a window too short to surface a pattern
+      of training failures spread across several prior employers, so the
+      record Atlas could legally obtain was structurally incapable of showing
+      what it most needed to see.#cn()
+    ],
+    // -- What Happened --
+    [
+      On 23 February 2019, during a turbulent descent toward Houston, the
+      first officer inadvertently activated the aircraft's go-around mode,
+      which commanded a pitch-up. Experiencing a somatogravic illusion
+      that the nose was rising into a stall, he pushed forward hard. The
+      767 entered a steep dive from which the crew did not recover and
+      crashed into Trinity Bay, killing all three aboard. The startle and
+      spatial disorientation that drove the fatal push were the same kind of
+      breakdown his prior training failures had repeatedly recorded, had that
+      history been visible to the carrier that hired him.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The NTSB found the probable cause to be the first officer's
+      inappropriate response to the inadvertent go-around activation,
+      driven by a startle and spatial-disorientation response, and
+      identified his pattern of training deficiencies and Atlas's
+      inability to access his full record as contributing factors. The
+      records that would have informed the hiring decision existed but
+      did not reach it — the same information-flow failure named after
+      Colgan a decade earlier, recurring here because the remedy built to
+      fix it was authorized but not yet carrying the full history.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      Atlas Air 3591 is the iteration test of the Colgan reform. The
+      reform partially worked — the Pilot Records Database had been
+      authorized — but it was not yet operational and its coverage was
+      incomplete, so the same information-flow gap that killed fifty
+      people in 2009 was still partly open in 2019. Partial implementation
+      of a remedy leaves a measurable harm inside the aperture — the years
+      between authorization and full coverage are not a neutral transition
+      but a window in which the original failure can recur on the cases the
+      incomplete remedy does not yet reach.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      The PRD final rule was published in 2021 and became effective for
+      Part 121 carriers in 2022, with full historical coverage phasing in
+      through 2024 — closing the gap the case exposed. Atlas 3591 is cited
+      in implementation-fidelity discussions as evidence that a remedy is
+      only as good as its completed coverage — that the date a rule is
+      authorized and the date it actually reaches every carrier are
+      different dates, and the distance between them is where the avoidable
+      harm accumulates.#cn()
+    ],
+  ),
+  references: (
+    [NTSB, _Aircraft Accident Report: Atlas Air Flight 3591_, NTSB/AAR-20/02 (2020) — probable cause and contributing factors (paraphrased).],
+    [NTSB/AAR-20/02 (2020) — the inadvertent go-around activation and the dive into Trinity Bay.],
+    [NTSB/AAR-20/02 (2020) — the first officer's training history and Atlas's record-access limits.],
+    [FAA Pilot Records Database final rule (_Federal Register_, 10 June 2021; subpart B/C compliance from June 2022, full historical coverage by September 2024); Pilot Records Improvement Act of 1996.],
+    [GAO reports on Pilot Records Database implementation (2014–2024).],
+  ),
   quote: [Atlas Air did not have access to portions of the first officer's training record that would have informed its hiring decision.],
   quote-source: "Paraphrasing NTSB Aircraft Accident Report AAR-20/02, 2020",
-  sources-list: (
-    [NTSB Aircraft Accident Report AAR-20/02 (2020)],
-    [FAA Pilot Records Improvement Act of 1996; updates 2010, 2024],
-    [_New York Times_ coverage of Atlas Air 3591],
-  ),
   le-insight: [
     Atlas Air 3591 is the iteration test of the Colgan reform. The
     reform partially worked: the PRD exists. The reform was incomplete:
@@ -499,6 +959,19 @@
   reflection-list: (
     [Identify a regulatory remedy in your domain whose coverage is partial. What harm is occurring inside the aperture?],
     [Design the deliverable that would close the PRD coverage gap in advance of a future Atlas Air 3591.],
+    [The PRD was authorized in 2010 but not fully effective until 2024, and Atlas 3591 fell inside that gap. For a remedy in your domain, design the interim control that would protect the cases the remedy does not yet reach while its coverage phases in.],
+  ),
+  approaches: (
+    during: (
+      [Design the records system to require a full operator history, not a fixed-length window that can hide a multi-employer pattern.],
+      [Plan the coverage phase-in explicitly, with interim controls protecting the cases the remedy does not yet reach.],
+      [Specify the data the hiring decision needs and make its delivery mandatory before the decision, not optional or self-reported.],
+    ),
+    after: (
+      [Audit coverage completeness, not just authorization, and treat the gap between the two as an active source of harm until closed.],
+      [Monitor for adverse events occurring inside the aperture of a partially implemented remedy, and use them to accelerate full coverage.],
+      [Sustain attention through the full phase-in, since a remedy authorized but not yet universal leaves the original gap measurably open.],
+    ),
   ),
   courses: ("LEN 4", "LEN 8"),
 )
@@ -518,32 +991,94 @@
     framing: "the working engine; misidentified in ~15 seconds under stress",
     caption: "TransAsia 235 — the same wrong-engine pattern as Kegworth (Case 30)",
   ),
-  body: [
-    Forty-three seconds after takeoff from Taipei Songshan, the ATR
-    72's right engine auto-feathered following a sensor malfunction.
-    The crew, working from memory under stress, shut down the *left*
-    engine — the one still producing thrust — and committed the
-    aircraft to a glide for which it was much too low. The aircraft
-    clipped a taxicab on the Huandong Viaduct and crashed into the Keelung River.
-
-    The Aviation Safety Council (Taiwan) found the captain had failed
-    proficiency checks twice in the year before the accident and had
-    not been retrained against the specific failure scenario the
-    aircraft actually presented. The crew did not use the published
-    engine-shutdown checklist; they responded from memory. The
-    misidentification took place in roughly fifteen seconds.
-
-    TransAsia 235 sits in the same conceptual family as Kegworth (Case
-    30): a crew shut down the wrong engine because the mental model
-    they applied did not match the configuration they were in.
+  kind: "failure",
+  summary: [
+    Forty-three seconds after takeoff from Taipei Songshan in February
+    2015, the right engine of a TransAsia ATR 72 auto-feathered following
+    a sensor fault. Working from memory under acute time pressure, the
+    crew shut down the left engine — the one still producing thrust —
+    leaving the aircraft with no power and too little altitude to recover.
+    It clipped a viaduct, struck a taxi, and crashed into the Keelung
+    River, killing 43 of the 58 aboard. The Aviation Safety Council found
+    the captain had failed proficiency checks in the year before the
+    accident and that the crew had not used the published engine-shutdown
+    checklist, responding instead from a flawed memory of the procedure.
+    The wrong-engine error mirrors Kegworth (Case 30) twenty-six years
+    earlier.
   ],
+  sections: (
+    // -- Background --
+    [
+      TransAsia 235 was an ATR 72-600 twin-turboprop departing Taipei
+      Songshan. The captain had failed simulator proficiency checks in
+      the year before the accident and had been noted for weak handling
+      of abnormal procedures. The published response to an engine failure
+      was a checklist-driven procedure; under stress, crews tend to revert
+      to memory — so a captain already flagged for weak abnormal-procedure
+      handling was exactly the operator most likely to skip the checklist
+      precisely when it mattered, a known weakness meeting a known failure
+      mode.#cn()
+    ],
+    // -- What Happened --
+    [
+      On 4 February 2015, forty-three seconds after takeoff, the right
+      engine's autofeather system activated following a faulty sensor
+      signal — the engine itself was capable of producing power. The crew,
+      identifying an engine problem, shut down the left engine, which was
+      operating normally. With neither engine now producing useful thrust
+      and the aircraft low and slow, it stalled, clipped a viaduct and a
+      taxi, and crashed into the Keelung River, killing 43 of the 58
+      aboard. A recoverable single-engine event became unrecoverable the
+      moment the working engine was shut down, leaving an aircraft with no
+      thrust and no altitude in the seconds just after takeoff when both are
+      least forgiving.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The Taiwan Aviation Safety Council found the crew failed to identify
+      which engine had actually failed and shut down the wrong one. They
+      did not follow the published engine-flameout and shutdown checklist,
+      acting from memory under time pressure; the misidentification took
+      roughly fifteen seconds. The captain's documented proficiency
+      deficiencies and the airline's training and crew-resource-management
+      shortfalls were contributing factors — the individual lapse sitting
+      atop an organizational one, the carrier having left the very weaknesses
+      its own proficiency checks had recorded uncorrected before the flight.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      TransAsia 235 is the modern recurrence of the wrong-engine pattern
+      that destroyed British Midland 92 at Kegworth in 1989 (Case 30).
+      Crews under acute time pressure default to memory; if the memory is
+      incomplete, the action follows the flawed memory rather than the
+      checklist. The missing capability is a procedure design and training
+      regime that keeps the verification step in the loop precisely when
+      stress pushes operators to skip it — engineering the confirm-which-engine
+      step so it fires under startle, rather than trusting it to a memory
+      that time pressure is actively eroding.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      The ASC issued recommendations on TransAsia's pilot training,
+      proficiency-check standards, and crew-resource management; the
+      airline ceased operations in 2016, after a second fatal accident the
+      year before. The case is used to argue that the persistence of the
+      wrong-engine pattern across a quarter-century reflects an
+      un-engineered intervention, not merely individual error — the same
+      failure recurring across crews, airframes, and decades points to a
+      design and training gap that no amount of blaming the individual pilot
+      has ever closed.#cn()
+    ],
+  ),
+  references: (
+    [Aviation Safety Council (Taiwan), _Aviation Occurrence Report: TransAsia Airways Flight GE235_, final report (2016) — findings and the wrong-engine shutdown (paraphrased).],
+    [ASC final report (2016) — the autofeather event and the crash sequence.],
+    [ASC final report (2016) — non-use of the checklist and the captain's proficiency record.],
+    [AAIB (UK), _British Midland Flight 92 (Kegworth)_ report (1990) — the antecedent wrong-engine case.],
+    [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_ — memory-driven response under time pressure.],
+  ),
   quote: [The flight crew was unable to identify which engine had failed and shut down the operating engine in error.],
   quote-source: "Paraphrasing the Aviation Safety Council (Taiwan) Final Report on TransAsia 235, 2016",
-  sources-list: (
-    [Aviation Safety Council (Taiwan) Final Report (2016)],
-    [Reason (1990), Human Error — wrong-engine cases],
-    [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_],
-  ),
   le-insight: [
     TransAsia 235 is the modern recurrence of the Kegworth pattern under
     stress. Crews under acute time pressure default to memory; if the
@@ -565,6 +1100,19 @@
   reflection-list: (
     [Identify a procedure in your domain that is supposed to be checklist-driven but is actually memory-driven under stress. What is the gap?],
     [Why has the wrong-engine shutdown pattern persisted across 25 years of aviation reform? What intervention has not yet been engineered?],
+    [The captain had failed proficiency checks in the year before the accident, yet kept flying. Design the proficiency-check regime in your domain whose red signal would actually remove an operator from duty before, not after, the failure it predicts.],
+  ),
+  approaches: (
+    during: (
+      [Design the abnormal-procedure response so the confirm-which-unit verification step is forced under startle, not left to memory.],
+      [Build proficiency checks whose red signals have the authority to ground an operator before the predicted failure, not merely to document a weakness.],
+      [Train the checklist-driven response under realistic time pressure, so the trained reflex survives the stress that pushes crews to memory.],
+    ),
+    after: (
+      [Audit whether documented proficiency deficiencies are actually acted on, treating an uncorrected red check as an organizational, not individual, failure.],
+      [Monitor for recurrence of well-known patterns (wrong-engine shutdown) across crews and airframes as evidence the intervention is un-engineered, not merely human error.],
+      [Sustain crew-resource-management and checklist discipline so the verification step does not erode back to memory under operational pressure.],
+    ),
   ),
   courses: ("LEN 5", "LEN 2"),
 )

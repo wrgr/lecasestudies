@@ -1,0 +1,14 @@
+Author photos for the "About the editors" page.
+
+Drop the two headshots here as:
+    gray-roncal.jpg   (William Gray-Roncal)
+    diamond.jpg       (James Diamond)
+
+Square or 4:5 portrait JP/PNG, ~600 px on the short side is plenty
+(they render ~30 mm wide). Then open backmatter/editors.typ and set:
+    #let gray-photo   = "img/gray-roncal.jpg"
+    #let diamond-photo = "img/diamond.jpg"
+
+Until those variables point at real files they stay `none` and the page
+renders a sized placeholder box, so the one-page layout is unchanged when
+the photos are added.

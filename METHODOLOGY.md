@@ -173,47 +173,26 @@ in [AUDIT.md](AUDIT.md) alongside the source repository.
 
 ## Editorial conventions
 
-### Spread architecture
+### Case architecture
 
-Each case is a two-page **verso/recto spread** in the printed book:
+Each case occupies **three pages** in a consistent "2 + 1" structure:
 
-- **Verso (left, even page):** the case itself — domain tags, title,
-  failure-mode codes, impact line, a code-generated diagram, and the
-  narrative.
-- **Recto (right, odd page):** the *Learning Engineering Lens* — pull
-  quote, LE Insight, LENS Approach, reflection questions, sources,
-  further reading, and LEN course tags.
+- **Pages 1–2 — the case study.** A shaded ~130-word "In brief" summary,
+  then a five-beat sourced narrative under fixed section headings (the
+  beats vary by case `kind` — failure, intervention, or frontier; see
+  `section-sets` in `lib/theme.typ`). Inline `#cn()` markers carry numbered
+  citations; the code-generated diagram sits on page 2, and the numbered
+  reference list closes page 2 in two compact columns.
+- **Page 3 — the Learning Engineering Lens.** Pull quote, LE Insight,
+  LENS Approach, reflection questions, sources, further reading, and LEN
+  course tags.
 
-`pagebreak(to: "even", weak: true)` in `lib/case.typ` forces each
-case to start on a verso. When a case overflows, a blank-page anchor
-is inserted before the next case so the spread architecture is
-preserved.
-
-### Blank-page anchors as editorial signal
-
-Half Letter production carries ~24 trailing blank pages; US Letter
-carries ~3. These are not waste — they mark the cases whose narrative
-or LE Lens has room to be expanded without breaking the layout. The
-editorial workflow uses these blanks as a worklist:
-
-1. Identify cases with a trailing blank in Half Letter.
-2. Check whether the corresponding US Letter rendering has room at
-   the bottom of the LE Lens page.
-3. Where both conditions hold, expand:
-   - one additional reflection question, anchored to existing body
-     content
-   - one or two sentences of analytical depth in the LE Insight or
-     LENS Approach, drawing strictly on facts implied by the
-     existing sources
-   - one additional Further Reading entry where canonical works are
-     widely associated with the case
-4. Rebuild and verify the net page-count effect on both trims.
-
-An expansion pass on the eight thinnest cases (13 WHO Surgical
-Checklist, 21 Summit Learning, 25 EHR/CPOE, 28 Rickover Training,
-45 Mark 14 Torpedo, 46 Operation Eagle Claw, 94 COMPAS,
-95 Radiology AI) absorbed 5 Half Letter blanks while introducing
-only 3 in US Letter — a net reduction of 2 across the two builds.
+Cases flow with a weak page break (`pagebreak(weak: true)` in
+`lib/case.typ`) and are **not** forced to start on a verso, so the 3-page
+units pack without inserting blank pages. `scripts/check-cases.sh` (run via
+`make check`) reads invisible `<cmeta>` probes to verify, for every case:
+citation parity (marker count == reference count), that the unit is exactly
+three pages, and that the reference list begins on page 2.
 
 ### Conservative voice for additions
 

@@ -9,28 +9,35 @@ through the LENS framing of capability as the interface between
 operator requirements and system impact, and agency as a design
 constraint on every intervention.
 
-Built with **Typst**. Production targets: **Half Letter (5.5 × 8.5 in)
-and US Letter (8.5 × 11 in)**, both perfect-bound on Lulu, true
-grayscale interior.
+Built with **Typst**. One trim — **8 × 10 in (203.2 × 254 mm)** — rendered
+as three editions from a single source: a grayscale print interior for
+Lulu, a color digital edition, and a proof that centers the print page
+on US Letter with trim marks for office printing.
 
 ---
 
 ## Status
 
-Complete and ready to print. All four interior builds and all eight
-cover assets reproduce from source via `bash scripts/build.sh`.
+Three editions reproduce from source via `bash scripts/build.sh`.
 
-| Build | Trim | Body | Pages | Color |
-|---|---|---|---:|---|
-| Production Half Letter | 5.5 × 8.5 in | 9.25 pt | 309 | grayscale |
-| Production US Letter | 8.5 × 11 in | 10.5 pt | 250 | grayscale |
-| Editorial draft, Letter | 8.5 × 11 in | 11 pt | 250 | color |
-| Editorial draft, Half Letter | 5.5 × 8.5 in | 11 pt | 415 | color |
+| Edition | Page size | Color | Purpose |
+|---|---|---|---|
+| `print` | 8 × 10 in + 3 mm bleed | grayscale | Lulu production interior |
+| `digital` | 8 × 10 in | color, cream backdrop | screen / PDF distribution |
+| `proof` | US Letter (8 × 10 centered, trim marks) | grayscale | print at 100% to review |
 
-Every case opens to a true verso/recto spread: the case narrative on
-the left page, the *Learning Engineering Lens* analysis on the right.
-The architecture is verified end-to-end — 0 of 99 case starts land on
-an odd page in either production build.
+All three share one measure and type size, so **proof pagination is
+identical to print** — what you proof is what Lulu prints.
+
+Cases are being converted from the legacy 2-page spread to a **3-page
+cited case (2 + 1)**: a shaded ~130-word "In brief" summary plus a
+five-beat sourced narrative with inline `#cn()` citation markers fill
+two pages (the case diagram on page 2, references in two compact
+columns at the end of page 2); the *Learning Engineering Lens* analysis
+lands on page 3. Conversion is incremental — `case()` renders the
+legacy 2-page layout for any case not yet converted. Run `make check`
+to verify every converted case is exactly three pages, with references
+on page 2 and marker count == reference-list length.
 
 For the intellectual framing behind the casebook — the capability
 interface, agency as a design constraint, gap attribution, the
@@ -57,16 +64,11 @@ Practice Flywheel — see [METHODOLOGY.md](METHODOLOGY.md).
 ├── chapters/                      # ch01 … ch09 (and ch0Nb / ch0Nc extras)
 ├── backmatter/                    # references, editor bios
 ├── cover/
-│   ├── cover.typ                  # Half Letter Lulu wrap
-│   ├── cover-letter.typ           # US Letter Lulu wrap
-│   ├── cover-{front,back,spine}.typ        # Half Letter decomposed parts
-│   ├── binder-{front,back,spine}.typ       # Letter draft 3-piece set
-│   ├── draft-cover-half.typ                # Half Letter draft front
-│   ├── draft-back-half.typ                 # Half Letter draft back
-│   └── draft-spine-half.typ                # Half Letter draft spine
+│   └── cover.typ                  # 8 × 10 Lulu wrap (front + spine + back)
 ├── fonts/                         # bundled Instrument Serif + DM Sans
 ├── scripts/
-│   ├── build.sh                   # build all interiors + covers
+│   ├── build.sh                   # build all three editions + cover
+│   ├── check-cases.sh             # 3-page + citation-parity check
 │   └── fetch-fonts.sh             # re-download fonts if missing
 └── Makefile
 ```
@@ -88,17 +90,14 @@ Fonts ship under `./fonts/`. If they go missing, run
 ### Commands
 
 ```bash
-make all                # build everything — 4 interiors + 8 cover assets
-make production         # both production interiors (grayscale)
-make draft              # both editorial drafts (color)
-make covers             # all cover assets
-make print-half         # one target at a time:
-make print-letter       #   production interiors
-make draft-half         #   editorial drafts
-make draft-letter
-make cover-print-half   # … and matching covers
-make cover-print-letter
-make preview            # color screen-preview build (cream backdrop)
+make all                # build all three editions + cover (via build.sh)
+make editions           # print + digital + proof
+make print              # grayscale 8 × 10 interior (Lulu)
+make digital            # color 8 × 10 edition
+make proof              # 8 × 10 on US Letter with trim marks
+make cover              # 8 × 10 Lulu wrap (spine from live page count)
+make preview            # alias for digital
+make check              # 3-page + citation-parity check on converted cases
 make clean
 ```
 
@@ -114,13 +113,11 @@ bash scripts/build.sh
 typst compile --font-path fonts --input mode=<MODE> book.typ <out>.pdf
 ```
 
-| `mode` | Trim | Body | Color | Purpose |
-|---|---|---|---|---|
-| `print` | Half Letter | 9.25 pt | grayscale | Lulu Half Letter production |
-| `print-letter` | US Letter | 10.5 pt | grayscale | Lulu US Letter production |
-| `draft` | US Letter | 11 pt | color | Editorial mark-up (Letter, ~2 pp/case) |
-| `draft-half` | Half Letter | 11 pt | color | Editorial mark-up (Half Letter, ~4 pp/case) |
-| `screen` | Half Letter | 9.25 pt | color, cream backdrop | Development preview |
+| `mode` | Page size | Color | Purpose |
+|---|---|---|---|
+| `print` | 8 × 10 in + 3 mm bleed | grayscale | Lulu production interior |
+| `digital` | 8 × 10 in | color, cream backdrop | screen / PDF (default) |
+| `proof` | US Letter, 8 × 10 centered + trim marks | grayscale | print at 100% to review |
 
 All mode/trim/palette/typography decisions are centralized in
 `lib/theme.typ`.
@@ -143,82 +140,66 @@ Production builds use two layers:
 
 ## Page geometry
 
-Both production trims share the verso/recto spread structure. Every
-case begins on a verso (even-numbered) page so the case narrative and
-its Learning Engineering Lens analysis face each other across the
-gutter. Long cases occasionally insert a single blank-page anchor to
-preserve the alignment — these blanks are an editorial signal: they
-mark the cases that have room to be expanded.
+One trim, one measure. Converted 3-page cases flow without a forced
+verso start, so the 3-page units pack without blank pages. The three
+editions differ only in color and carrier — never in measure or type
+size — so proof and print paginate identically.
 
-| Setting | Half Letter | US Letter |
-|---|---|---|
-| Trim | 139.7 × 215.9 mm | 215.9 × 279.4 mm |
-| Bleed (production) | 3 mm | 3 mm |
-| Margins (inner / outer / top / bottom) | 16 / 13 / 15 / 17 mm | 22 / 18 / 20 / 22 mm |
-| Body | 9.25 pt | 10.5 pt |
-
-Editorial drafts use no bleed and wider inside margins for binder use
-(Letter) or perfect-bound prototypes (Half Letter).
+| Setting | Value |
+|---|---|
+| Trim | 203.2 × 254 mm (8 × 10 in) |
+| Bleed (`print` only) | 3 mm |
+| Margins (inner / outer / top / bottom) | 26 / 22 / 20 / 24 mm |
+| Body | 10.5 pt |
+| Proof carrier | US Letter (215.9 × 279.4 mm); 8 × 10 centered (6.35 mm L/R, 12.7 mm T/B inset) with trim outline + corner crop marks |
 
 ---
 
-## Cover assets
+## Cover
 
-Each interior has a matching cover. Production builds are full Lulu
-wraps (front + spine + back as a single sheet). Editorial drafts ship
-as 3-piece sets (front, spine, back as separate sheets) for binder
-inserts or perfect-bound prototypes.
+A single 8 × 10 Lulu wrap — front, spine, and back on one sheet —
+built from `cover/cover.typ`. The spine width is computed from the
+live `print` page count (~0.0621 mm/page on cream stock) and passed in
+by the build script.
 
-| File | Trim | Notes |
-|---|---|---|
-| `cover-print-half.pdf` | Half Letter Lulu wrap | spine width computed from live page count (~19.4 mm at 309 pp on cream) |
-| `cover-print-letter.pdf` | US Letter Lulu wrap | spine width computed live (~15.7 mm at 250 pp on cream) |
-| `cover-draft-letter{,-spine,-back}.pdf` | Letter draft 3-piece | designed for a 1″ Avery view binder; 0.5″ spine insert |
-| `cover-draft-half{,-spine,-back}.pdf` | Half Letter draft 3-piece | perfect-bound prototype; spine computed from draft page count |
-
-All draft cover pieces carry an **"Editorial Draft"** mark so any
-single piece pulled out of the build still identifies itself.
-
-Lulu's spine-width estimator depends on paper choice (cream stock is
-slightly thicker than white). The build uses ~0.0629 mm/page for cream.
-To override once Lulu reports the exact value:
+To override once Lulu reports the exact spine width:
 
 ```bash
 typst compile --font-path fonts --root . \
   --input cover-w-mm=<...> --input cover-h-mm=<...> --input spine-mm=<...> \
-  cover/cover.typ build/cover-print-half.pdf
+  cover/cover.typ build/cover-print.pdf
 ```
 
 ---
 
 ## Adding or editing a case
 
-Cases are defined by `#case(...)` (see `lib/case.typ`). Copy any
-existing case in `chapters/*.typ` and fill in the slots:
+Cases are defined by `#case(...)` (see `lib/case.typ`). The template
+has two paths, selected by whether `kind` is set.
 
-| Field              | Purpose                                                       |
-|--------------------|---------------------------------------------------------------|
-| `number`           | case number from the matrix                                   |
-| `title`            | one short line — long titles overflow page 1                  |
-| `year`             | e.g. `"2018 – 2019"`                                          |
-| `domains-list`     | keys from `theme.domains` (e.g. `("aviation",)`)              |
-| `modes-code`       | concatenated taxonomy codes (e.g. `"DTH"`)                    |
-| `impact`           | one-line impact summary                                       |
-| `diagram`          | a `dgm.*` reference, or `none`                                |
-| `body`             | the narrative — keep within the verso to avoid overflow       |
-| `quote`            | pull quote (renders on the recto)                             |
-| `quote-source`     | attribution                                                   |
-| `sources-list`     | citations                                                     |
-| `le-insight`       | the synthesis                                                 |
-| `lens-approach`    | how LENS treats the case                                      |
-| `literature-items` | further-reading entries                                       |
-| `reflection-list`  | reflection questions (two is typical; some cases carry three) |
-| `courses`          | LEN course tags (e.g. `("LEN 1", "LEN 5", "LEN 8")`)          |
+**3-page cited case** (set `kind`) — the target structure:
 
-When a case overflows past one verso, the layout absorbs the overflow
-gracefully — the next case starts on the next verso, with a blank-page
-anchor if needed. This is by design; see METHODOLOGY.md on editorial
-expansion.
+| Field            | Purpose                                                                 |
+|------------------|-------------------------------------------------------------------------|
+| `kind`           | `"failure"`, `"intervention"`, or `"frontier"` — picks the section labels in `theme.section-sets` |
+| `summary`        | shaded ~100–150 word "In brief" abstract at the top of page 1 |
+| `sections`       | array of **five** content blocks, one per beat, in order; embed inline `#cn()` markers in the prose |
+| `references`     | array of reference strings — **must equal the `#cn()` count** (run `make check`) |
+| `le-insight`, `lens-approach`, `reflection-list`, `courses`, `quote`, `sources-list`, `literature-items` | the page-3 LE Lens, as before |
+
+Inline citations use `#cn()`, which auto-numbers within the case
+(reset per case) and renders a superscript marker; the matching text
+goes in `references`, in the same order. Size the summary plus the five
+sections to fill two pages so the reference list lands at the end of
+page 2 and the LE Lens on page 3 — `make check` enforces this. Keep
+references concise (one line each); they render in two columns.
+
+**Legacy 2-page spread** (omit `kind`) — `number`, `title`, `year`,
+`domains-list`, `modes-code`, `impact`, `diagram`, `body`, plus the LE
+Lens fields above. Still renders so unconverted cases keep building.
+
+Shared header fields (`number`, `title`, `year`, `domains-list`,
+`modes-code`, `impact`, `diagram`) apply to both paths.
 
 To add a diagram, write a `#let dgm-foo = diagram-frame(...)` in
 `lib/diagrams.typ` and reference it as `dgm.dgm-foo` from the case.
@@ -248,7 +229,7 @@ Diagrams may use `cetz` for vector drawing.
 | Teal               | #1A8A7D  |  32 | eyebrows, failure-mode chips, accents     |
 | Gold               | #D4A843  |  58 | pull-quote rule, eyebrows, accents        |
 | Teal light         | #2CC4B3  |  68 | title italics, light accent               |
-| Cream              | #F5F0E8  |  94 | screen-preview backdrop only              |
+| Cream              | #F5F0E8  |  94 | digital-edition page backdrop             |
 
 Each color carries a meaningful L\* and the grayscale palette is tuned
 to those L\* targets, so the production black-and-white interior keeps
@@ -261,31 +242,26 @@ the visual distinctions intact.
 
 ---
 
-## Editing workflow
+## Reviewing
 
-Two editorial-draft formats — Letter (~2 pp/case) and Half Letter
-(~4 pp/case) — are intended for mark-up by editors and reviewers. Both
-carry an "Editorial Draft" header on every page and an "Editorial
-Draft" marker on the matching cover assets. Drafts are color-on-white
-so reviewer pen marks read clearly. The Letter draft has wider inner
-margins to accommodate 3-hole binder use.
-
-For the trade-paperback feel at editorial-friendly type size, print
-the Half Letter draft two-up on Letter at the copy shop.
+The `proof` edition is the review artifact: the grayscale print page
+centered on US Letter with an 8 × 10 trim outline and corner crop
+marks. Print it at 100% (no scaling) on any office printer — it
+centers on the sheet and shows exactly where the production book
+trims. Because proof shares print's measure and type size, its
+pagination matches the Lulu interior page-for-page.
 
 ---
 
 ## Open items for production
 
+- Case conversion to the 3-page (2+1) cited case is in progress; run
+  `make check` to see which cases are converted and passing.
 - The colophon currently reads `Copyright © 2026. All rights reserved.`
   pending a decision on the institutional rights-holder.
-- Lulu's project page reports an exact spine width for each interior
-  once the page count is locked. Build the cover wrap with
-  `--input spine-mm=…` to match if it differs from the computed
-  estimate (~19.4 mm Half Letter, ~15.7 mm US Letter).
-- A small number of cases (~24 in Half Letter, ~3 in US Letter) carry
-  a blank-page anchor to preserve the verso/recto spread. These are
-  the editorial-expansion candidates — see METHODOLOGY.md.
+- Lulu reports an exact spine width once the page count is locked.
+  Build the cover with `--input spine-mm=…` to match if it differs
+  from the computed estimate.
 
 ---
 

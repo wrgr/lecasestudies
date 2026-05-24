@@ -4,30 +4,29 @@
 // Compile with:
 //   typst compile --font-path fonts --root . cover/cover.typ build/cover.pdf
 //
-// Defaults match Lulu's project page for this title (May 2026 spec
-// at 309 pp Half Letter, cream stock):
-//   Book trim:       139.7 × 215.9 mm   (Half Letter / 5.5 × 8.5 in)
+// Book trim is 8 × 10 in (203.2 × 254 mm). The build script computes
+// the exact spine from the print interior's page count and passes the
+// total wrap dimensions in; the defaults below are a sane standalone
+// estimate (≈ 28 mm spine) only.
+//   Book trim:       203.2 × 254 mm   (8 × 10 in)
 //   Bleed:           3.175 mm (0.125 in)
 //   Safety margin:   12.7 mm (0.5 in) from trim edge
-//   Spine (309 pp):  19.20 mm  — Lulu-reported exact value.
-//   Total cover:     304.95 × 222.25 mm (12.006 × 8.75 in)
-//                    = 2 × trim_w + spine + 2 × bleed
+//   Total cover:     2 × trim_w + spine + 2 × bleed
 //                    × trim_h + 2 × bleed
 //   Barcode area on back cover (Lulu adds): 92 × 32 mm, 12.7 mm from
 //     bleed edge — leave the lower-center of the back cover clear.
 //
-// Override with --input cover-w-mm=… cover-h-mm=… spine-mm=… if the
-// final page count, paper stock, or Lulu's reported spine width
-// changes from these defaults.
+// Override with --input cover-w-mm=… cover-h-mm=… spine-mm=… (the build
+// script always does this from the live page count).
 // ============================================================
 
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
 // ---- Lulu cover spec (inputs override defaults) ----
-#let total-w = float(sys.inputs.at("cover-w-mm", default: "304.95"))  * 1mm
-#let total-h = float(sys.inputs.at("cover-h-mm", default: "222.25"))  * 1mm
-#let spine   = float(sys.inputs.at("spine-mm",   default: "19.20"))   * 1mm
+#let total-w = float(sys.inputs.at("cover-w-mm", default: "440.75"))  * 1mm
+#let total-h = float(sys.inputs.at("cover-h-mm", default: "260.35"))  * 1mm
+#let spine   = float(sys.inputs.at("spine-mm",   default: "28.00"))   * 1mm
 
 // Derived layout points (printer's view, single sheet wrap):
 //   [ back cover (with bleed) | spine | front cover (with bleed) ]
