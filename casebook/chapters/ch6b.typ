@@ -1070,7 +1070,6 @@
 )
 
 // ---- Case 179 — jhu-covid-dashboard-coronavirus ----
-// VERIFY: number 179 is a placeholder pending editor numbering baseline (A1).
 // VERIFY: Dong et al. (2022) volume/page numbers (Lancet Infect Dis 22: e370–e376) — DOI confirmed 10.1016/S1473-3099(22)00434-0; exact pagination re-check at proof.
 // VERIFY: quote wording against the Lancet 2020 correspondence full text (paywalled at draft time; wording corroborated by secondary sources).
 // VERIFY: "among the most-forked repositories on GitHub" — press-reported, not in the peer-reviewed record; retained with hedge.

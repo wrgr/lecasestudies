@@ -3330,7 +3330,6 @@
 )
 
 // ---- Case 63 — lausd-ipad-common-core-technology ----
-// NOTE: number 63 is a placeholder pending editor numbering decision (A1 baseline).
 #case(
   number: 63,
   slug: "lausd-ipad-common-core-technology",

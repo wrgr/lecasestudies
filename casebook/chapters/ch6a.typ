@@ -1554,7 +1554,6 @@
 )
 
 // ---- Case 167 — hurricane-katrina-fema-response ----
-// NOTE: number 167 is a placeholder pending editor decision A1 baseline confirmation.
 // VERIFY: revised death count 1,392 (Rappaport/NHC-linked revisions, AMS papers 2014/2016) vs. earlier official ~1,833; the "~1,400" framing below follows the revised counts and is hedged in text.
 // VERIFY: exact wording of the "Failure of Initiative" preface quote confirmed via secondary source (IPS, 2006); confirm against H. Rept. 109-377 preface before print.
 #case(

@@ -462,3 +462,76 @@ If every cross-reference resolves and the pairing makes sense, `✓`. If a refer
 | 203 | `nyc-ll144-aedt-2023` | NYC Local Law 144 — Bias Audits as Governance Artifact | `D5/PT5 / CLO-4, CLO-5 / 5.4` | ✓ | ✓ | ✓ | — | ~ | ✓ | ✓ | auto-prefill | 2026-06-12 | no overclaim: 1 counterfactual(s); confirm hedging |
 | 204 | `cruise-robotaxi-pedestrian-drag` | Cruise Robotaxi — Pedestrian Drag | `D5/PT4 / CLO-5 / 5.4` | ✓ | ✓ | ✓ | — | ✓ | ✓ | ✓ | auto-prefill | 2026-06-12 | auto-prefill: all mechanical checks pass; human content review still needed |
 | 205 | `discipline-we-build-next` | The Discipline We Build Next | `— / — / —` | — | — | — | — | — | — | — | auto-prefill | 2026-06-12 | closing framing essay — exempt from per-case rubric |
+
+---
+
+## Open verification queue (July 2026 — consolidated)
+
+Every `// VERIFY:` flag in the Typst source, gathered per case, plus the standing re-confirmation items carried over from the June 2026 editor memo. Resolve each, then clear the flag in source and fill the `refs real` / `refs support` columns above. Items already confirmed via web search during drafting are marked in source; the queue below is the re-check-at-proof list.
+
+**Case 60** (`houston-evaas-value-added-teacher`):
+- pin-cite page for the quoted opinion language — the opinion is at 251 F. Supp. 3d 1168 (S.D. Tex. 2017) and the quote is widely reported from it, but the exact page of the quoted sentence has not been independently pin-verified.
+- "high-mobility students" bias claim — the published quantitative bias record (Amrein-Beardsley & Geiger 2020) documents school-composition correlations for ELL, free-or-reduced-lunch, and special-education populations; a specific high-mobility finding is hedged in prose rather than stated as fact.
+
+**Case 61** (`sold-a-story-science-of-reading`):
+- "Hard Words" precise publication date — September 2018 confirmed in general reporting; exact day (Sept 10, 2018) not independently re-confirmed this session.
+- "roughly half of NYC elementary schools" using Units of Study pre-pandemic — Chalkbeat (2023) reports "roughly half of city elementary schools that responded to a curriculum survey"; the survey-respondent qualifier is preserved in section 2 ("that reported a curriculum") but the underlying survey coverage rate was not checked.
+- state count — Education Week tracker reported 40 states + DC by November 2024 (38 states + DC by mid/late 2023; 42 + DC by March 2026); "roughly 40 states plus DC by late 2024" used throughout. Confirm against the tracker's revision current at publication.
+- NRP phonics finding characterized as "significantly more effective than unsystematic or no-phonics alternatives" — standard summary of the NRP alphabetics subgroup meta-analysis (d ≈ 0.41); exact effect size deliberately omitted from prose, re-check wording against the report summary if quoted further.
+
+**Case 62** (`gates-intensive-partnerships-met`):
+- reported figures — Gates paid ~\$80M of \$100M pledge; district spend >\$180M; reserve drawdown ~\$200M
+- interim-report year (2016) and author list
+- byline attribution
+
+**Case 63** (`lausd-ipad-common-core-technology`):
+- exact report title and issue date of the AIR interim (2014) and final (2015) CCTP evaluation reports before publication.
+- select and confirm exact article titles and dates for the specific pieces cited.
+
+**Case 64** (`newark-prize-zuckerberg-gift`):
+- NYT announcement story author/date — believed Pérez-Peña, September 22, 2010 (news broke ahead of the September 24 Oprah taping)
+- NJ Spotlight byline for the local-control handback story
+
+**Case 95** (`pbis-implementation-fidelity`):
+- exact author list and pagination for Horner et al. (2004) SET validation
+- full author list for the PBIS Maryland partnership paper (Bradshaw, Pas,
+- "more than 25,000 schools" is the Center on PBIS's own current figure
+- statewide quasi-experimental scale-up study cited in section 4 — believed
+
+**Case 167** (`hurricane-katrina-fema-response`):
+- revised death count 1,392 (Rappaport/NHC-linked revisions, AMS papers 2014/2016) vs. earlier official ~1,833; the "~1,400" framing below follows the revised counts and is hedged in text.
+- exact wording of the "Failure of Initiative" preface quote confirmed via secondary source (IPS, 2006); confirm against H. Rept. 109-377 preface before print.
+- Incident of National Significance designation by Secretary Chertoff on August 30, 2005 (first operational use); confirm exact date/time against the Senate report timeline before print.
+
+**Case 170** (`west-africa-ebola-delayed-response`):
+- PHEIC declared 8 August 2014 (Emergency Committee met 6–7 August) — confirmed via WHO/Europe and NEJM.
+- MSF declared the outbreak "out of control" 20–23 June 2014 (TIME, 23 June 2014); WHO leadership publicly disputed the framing as alarmist.
+- Reported toll ~28,616 cases / ~11,310 deaths to 10 June 2016 (WHO situation reports); undercount acknowledged — hedge preserved.
+- Stocking Report = Report of the Ebola Interim Assessment Panel, 7 July 2015 (chair Dame Barbara Stocking).
+- Moon et al., Harvard-LSHTM Independent Panel, The Lancet 386, 28 November 2015, doi:10.1016/S0140-6736(15)00946-0.
+- UN High-Level Panel on the Global Response to Health Crises, "Protecting Humanity from Future Health Crises," A/70/723, 9 February 2016 (chair Jakaya Kikwete).
+- WHO Health Emergencies Programme established May 2016.
+- Moon et al. quote "The most egregious failure was by WHO in the delay in sounding the alarm." — confirm exact wording against The Lancet full text before print.
+
+**Case 171** (`hurricane-maria-puerto-rico-logistics`):
+- GWU Milken Institute report exact title ("Ascertainment of the Estimated Excess Mortality from Hurricane María in Puerto Rico") — commissioned-report title carried from memory; 2,975 figure and Aug 2018 release verified via web search.
+- FEMA AAR "more than 80 percent of the inventory of some commodities" phrasing — verified via web search summary of the AAR; confirm exact wording against the PDF (fema.gov, July 12, 2018) at draft-time re-check.
+
+**Case 178** (`un-cluster-approach-humanitarian`):
+- HRR 2005 author list (Adinolfi, Bassiouni, Lauritzsen, Williams) against the OCHA/ReliefWeb PDF cover page.
+- Pakistan 2005 initial cluster count (nine core clusters at rollout) against ODI HPN/ALNAP accounts.
+- Grünewald & Binder Haiti real-time evaluation exact title and month (Groupe URD/GPPi, 2010).
+
+**Case 179** (`jhu-covid-dashboard-coronavirus`):
+- Dong et al. (2022) volume/page numbers (Lancet Infect Dis 22: e370–e376) — DOI confirmed 10.1016/S1473-3099(22)00434-0; exact pagination re-check at proof.
+- quote wording against the Lancet 2020 correspondence full text (paywalled at draft time; wording corroborated by secondary sources).
+- "among the most-forked repositories on GitHub" — press-reported, not in the peer-reviewed record; retained with hedge.
+- racial-data-transparency layer specifics (coronavirus.jhu.edu/data/racial-data-transparency) — CRC layer existed; exact launch month re-check.
+
+**Standing items (June 2026 editor memo, renumbered):**
+- Case 120 (EGPWS): Bateman 1999 paper title/venue.
+- Case 21 (Sterile-cockpit ward rounds): PMC12515027 citation.
+- Case 86 (Gándara): JPAM exact title/DOI.
+- Case 87 (Yu/Lee/Kizilcec): exact venue.
+- Case 26 (Pulse oximetry): FDA 2025 draft guidance status.
+- Case 29 (BCMA): harm-reduction follow-up figure.
