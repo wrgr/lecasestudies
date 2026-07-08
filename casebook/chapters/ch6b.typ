@@ -1153,9 +1153,9 @@
       conflict disclosed under the title, their direct knowledge
       that the Laboratory's engineering role in this transition
       was substantially larger than the public record conveys —
-      closer to co-building the production pipeline than to
-      "support." That assessment is editorial testimony, not a
-      published finding; the citations carry only what is
+      closer to being responsible for the production pipeline
+      than "support." That assessment is editorial testimony,
+      not a published finding; the citations carry only what is
       published. The system held under extraordinary load: a
       peak of more than 4.6 billion requests in a single day
       (29 March 2020), and over 226 billion feature-layer
