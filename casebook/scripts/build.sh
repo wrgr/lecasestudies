@@ -29,16 +29,25 @@ gray_flatten() {
 }
 
 # ---- Interiors ----
-echo "→ Compiling print interior (8 × 10, grayscale, bleed)..."
-$TYPST --input mode=print book.typ build/_print-color.pdf
+# The printed book is the MAIN VOLUME (selected case set in
+# lib/selection.typ). The full 205-case reference build and the
+# digital-only supplement are compiled below.
+echo "→ Compiling main-volume print interior (8 × 10, grayscale, bleed)..."
+$TYPST --input mode=print --input edition=main book.typ build/_print-color.pdf
 gray_flatten build/_print-color.pdf build/capability-matters-print.pdf
 rm build/_print-color.pdf
 
-echo "→ Compiling digital edition (8 × 10, color, cream backdrop)..."
-$TYPST --input mode=digital book.typ build/capability-matters-digital.pdf
+echo "→ Compiling main-volume digital edition (8 × 10, color, cream backdrop)..."
+$TYPST --input mode=digital --input edition=main book.typ build/capability-matters-digital.pdf
 
-echo "→ Compiling proof (8 × 10 centered on US Letter, trim marks)..."
-$TYPST --input mode=proof book.typ build/_proof-color.pdf
+echo "→ Compiling digital supplement (8 × 10, color, cream backdrop)..."
+$TYPST --input mode=digital --input edition=supplement supplement.typ build/capability-matters-supplement.pdf
+
+echo "→ Compiling complete reference edition (8 × 10, color; internal, not mirrored)..."
+$TYPST --input mode=digital book.typ build/capability-matters-complete.pdf
+
+echo "→ Compiling main-volume proof (8 × 10 centered on US Letter, trim marks)..."
+$TYPST --input mode=proof --input edition=main book.typ build/_proof-color.pdf
 gray_flatten build/_proof-color.pdf build/capability-matters-proof.pdf
 rm build/_proof-color.pdf
 
@@ -134,6 +143,7 @@ $TYPST --root . \
 REPO_ROOT="$(cd "$ROOT/.." && pwd)"
 mkdir -p "$REPO_ROOT/products/digital" "$REPO_ROOT/products/print"
 for f in capability-matters-digital.pdf \
+         capability-matters-supplement.pdf \
          capability-matters-lens-companion.pdf \
          capability-matters-validation-audit.pdf; do
   cp "build/$f" "$REPO_ROOT/products/digital/$f"
@@ -147,8 +157,10 @@ done
 
 echo
 echo "✓ Output:"
-echo "    capability-matters-print.pdf      8 × 10 production interior (grayscale, $pages pp)"
-echo "    capability-matters-digital.pdf    8 × 10 digital edition (color, cream)"
+echo "    capability-matters-print.pdf      8 × 10 MAIN VOLUME print interior (grayscale, $pages pp)"
+echo "    capability-matters-digital.pdf    8 × 10 MAIN VOLUME digital edition (color, cream)"
+echo "    capability-matters-supplement.pdf 8 × 10 digital supplement (all non-main cases; digital only)"
+echo "    capability-matters-complete.pdf   8 × 10 complete 205-case reference edition (internal)"
 echo "    capability-matters-proof.pdf      8 × 10 on US Letter with trim marks (proof)"
 echo "    capability-matters-lens-companion.pdf  8 × 10 LENS companion — concentration docs + crosswalks (white, digital)"
 echo "    capability-matters-validation-audit.pdf 8 × 10 Validation & Audit — domain/course indexes + per-case references (white, digital)"

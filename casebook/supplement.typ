@@ -1,7 +1,7 @@
 // ============================================================
 // CAPABILITY MATTERS — Casebook
-// Main entry file. Compile with:
-//   typst compile --font-path fonts book.typ build/capability-matters.pdf
+// Digital supplement entry file. Compile with:
+//   typst compile --font-path fonts --input edition=supplement supplement.typ build/capability-matters-supplement.pdf
 // ============================================================
 
 #import "lib/theme.typ": *
@@ -22,7 +22,7 @@
 
 // ---- Document metadata ----
 #set document(
-  title: "Learning Engineering for Next-Generation Systems: Capability Matters — A Casebook",
+  title: "Learning Engineering for Next-Generation Systems: Capability Matters — A Casebook · Digital Supplement",
   author: "LDT / LENS · Johns Hopkins University School of Education",
 )
 
@@ -59,20 +59,15 @@
 #set par(leading: 0.62em, justify: false)
 
 // ============================================================
-// FRONT MATTER
+// FRONT MATTER — minimal: title, two-page digest, full-corpus matrix
 // ============================================================
 #include "frontmatter/title.typ"
-#include "frontmatter/introduction.typ"
-#include "frontmatter/howto.typ"
+#include "frontmatter/supplement-digest.typ"
 #include "frontmatter/matrix.typ"
 
 // ============================================================
-// All cases — organised topically in seven parts (Healthcare;
-// Education & Workforce; Aviation & Aerospace; Defense — the middle
-// part; Industry & Enterprise; Disaster Prevention & Recovery;
-// Algorithms & Governance), each split into {what fails, what works
-// and frontier}. Fourteen chapters; closing case last. Numbering
-// 1-194 runs in this chapter order; slugs are the stable IDs.
+// All supplement cases — same seven-part order and global numbering
+// as the main volume; main-volume cases emit metadata only here.
 // ============================================================
 #include "chapters/ch1a.typ"
 #include "chapters/ch1b.typ"
@@ -88,25 +83,10 @@
 #include "chapters/ch6b.typ"
 #include "chapters/ch7a.typ"
 #include "chapters/ch7b.typ"
-
-// ============================================================
-// CLOSING CASE — about LENS itself; appears at the end of the book
-// ============================================================
 #include "chapters/closing-case.typ"
 
 // ============================================================
-// BACK MATTER
+// BACK MATTER — full-corpus indexes only
 // ============================================================
 #include "backmatter/domain-index.typ"
 #include "backmatter/course-index.typ"
-#include "backmatter/references.typ"
-
-// ---- Appendix + program page ----
-#include "backmatter/appendix-clo-courses.typ"
-// The full per-case references appendix ships only in the complete
-// reference build; the printed main volume relies on each case's own
-// reference list plus the Validation & Audit tracker (which carries
-// the consolidated appendix with retrieval lines).
-#if edition == "full" { include "backmatter/appendix-references-by-case.typ" }
-#include "backmatter/about-lens.typ"
-#include "backmatter/editors.typ"

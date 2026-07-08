@@ -2345,7 +2345,7 @@
   title: "Hurricane Maria — Puerto Rico Response and Logistics Failure",
   year: "2017 – 2018",
   domains-list: ("emergency management", "disaster logistics", "public health"),
-  modes-code: "GD",
+  modes-code: "GN",
   impact: "Hurricane Maria struck Puerto Rico September 20, 2017, as the third major hurricane of the season after Harvey and Irma; FEMA's own 2017 Hurricane Season After-Action Report (July 12, 2018) found the agency entered Maria with force strength below target, its Caribbean Distribution Center inventory largely depleted by the Irma response, and commodity-tracking visibility it could not sustain to the ports; GAO-18-472 found 54% of deployed staff serving outside their qualified positions at the October 2017 peak; the grid collapse became the longest blackout in U.S. history (~11 months to full restoration); the commissioned GWU Milken Institute study estimated ~2,975 excess deaths (Sept 2017 – Feb 2018), adopted as the official toll in place of the initial 64",
   kind: "failure",
   scale: "big",

@@ -1,6 +1,6 @@
 # Capability Matters — A Casebook for LENS
 
-A printed casebook for the **Learning Engineering for Next-Generation Systems (LENS)** specialization in the Learning Design & Technology program at the Johns Hopkins University School of Education. **205 real cases** in which human capability was the critical system parameter — failures, paired-intervention successes, and frontier cases — organized topically in seven parts (Defense deliberately in the middle; a dedicated Disaster Prevention & Recovery part reads its cases pre → post), each split into What Fails / What Works — and the Frontier, and examined through the LENS v2.1 framing of capability as the interface between operator requirements and system impact, and agency as a design constraint on every intervention.
+A printed casebook for the **Learning Engineering for Next-Generation Systems (LENS)** specialization in the Learning Design & Technology program at the Johns Hopkins University School of Education. **205 real cases** — printed **main volume** (48 selected; `lib/selection.typ`) + **digital supplement** (the rest; shared global numbering) — in which human capability was the critical system parameter — failures, paired-intervention successes, and frontier cases — organized topically in seven parts (Defense deliberately in the middle; a dedicated Disaster Prevention & Recovery part reads its cases pre → post), each split into What Fails / What Works — and the Frontier, and examined through the LENS v2.1 framing of capability as the interface between operator requirements and system impact, and agency as a design constraint on every intervention.
 
 Built with **Typst**. One source renders **eleven outputs**: the 8 × 10 casebook in three editions (print / digital / proof), the new **8 × 10 LENS Companion** (concentration documentation + crosswalks + per-case references on white digital paper), two summary editions (US Letter + Half-Letter), and the Lulu cover wraps.
 
@@ -47,6 +47,7 @@ For the intellectual framing behind the casebook — the capability interface, a
 │   ├── introduction.typ           # framing-first: thesis · cost of gap · engineerable discipline · method · the analytic lens (v2.1) · how to read
 │   ├── howto.typ                  # how to use this book
 │   └── matrix.typ                 # dynamic 205-case matrix (queries <caseinfo>)
+├── supplement.typ                 # digital-supplement entry (minimal front matter; --input edition=supplement)
 ├── chapters/                      # 14 chapters, topical: 7 parts × {fails, works+frontier} — ch1a … ch7b + closing-case.typ
 ├── backmatter/
 │   ├── domain-index.typ                 # dynamic — cases by primary domain
