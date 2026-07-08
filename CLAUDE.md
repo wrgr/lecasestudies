@@ -12,7 +12,7 @@ The casebook, the canonical LENS program documentation, and the active v2 resear
 .
 ├── README.md, CLAUDE.md
 ├── products/digital/, products/print/      the seven shipping artefacts (see README "Start here")
-├── casebook/         Typst sources, build pipeline, competencies.md (induced framework), verification-log.md, METHODOLOGY.md, AUDIT.md
+├── casebook/         Typst sources (200 cases, 7 topical parts × fails/works, ch1a–ch7b + closing-case), build pipeline, competencies.md (induced framework), verification-log.md, METHODOLOGY.md, AUDIT.md
 ├── lens_program/     canonical LENS program docs (.docx of record + .md shadows for grep)
 └── v2_research/      v2 case discovery + framework revision proposals; 00_case-sweep-v2-{plan,research-brief}.md
 ```
@@ -57,6 +57,12 @@ They are close but not identical. v2 cases record all three. In the printed case
 
 ## Current state
 
+- **First Edition, topical organization (July 2026):** **200 cases**, numbered contiguously 1–200 in book order; slugs are the stable IDs. Seven topical parts, each split into *What Fails* / *What Works — and the Frontier* (chapters `ch1a`–`ch7b` + `closing-case.typ`): I Healthcare & Patient Safety · II Education, Training & the Learning Workforce · III Aviation & Aerospace · **IV Defense & National Security (deliberately the middle part)** · V Industry, Energy & Enterprise Systems · **VI Disaster Prevention & Recovery (new area; ordered pre → post: prevention, then response/recovery, with BEFORE/AFTER phase marks)** · VII Algorithms, Governance & Public Systems. `scripts/check-cases.sh` reports 200/0. All cross-references, `verification-log.md` (slug-keyed), and `competencies.md` (name-keyed) re-keyed to this numbering; AUDIT.md July 2026 stage entry is the change record.
+- **K-12 expansion (July 2026):** six new cases — 60 Houston EVAAS (adjudicated gap-attribution failure), 61 Science of Reading / "Sold a Story" (journalism-tier), 62 Gates Intensive Partnerships / MET, 63 LAUSD iPad CCTP (journalism-tier), 64 Newark / The Prize (journalism-tier), 95 PBIS implementation fidelity (intervention; **shared-institution COI disclosure rendered**; framing is learning-from the implementation literature, never correcting it). `// VERIFY:` comments in source flag remaining bibliographic re-confirmations. inBloom corrected (Gates **and Carnegie** funding; NY March-2014 budget bar; 21 April 2014 wind-down).
+- **Program docs (July 2026):** `lens_program/2_*` at **v2.2** — LDT PLOs of record (03-06-2025) verbatim at subobjective grain (PLO-1.1–6.4), PLO-5/6 titles corrected, new §4.1 PLO ↔ CLO support map. `.docx` for docs 1–2 regenerated from `.md` via pandoc; program-owner round-trip of v2.1/v2.2 still open. CLO content unchanged from v2.1.
+
+### Historical state (pre-July-2026, superseded by the above)
+
 - **v1 casebook:** 100 cases, all `big`. Case 74 (Hyatt Regency Walkway Collapse) present in Typst source (`casebook/chapters/ch05b-governance-extras.typ`) but reportedly missing from the latest PDF build — resolve at the build layer before v2 numbering. (Editor memo A1: open.)
 - **v2 sweep:** **executed.** ~77 verified candidates in `v2_research/02_*`. The supplemental weaker-evidence pass added 21 candidates in `v2_research/11_*`, **all 21 accepted by editor** (June 2026) for v2 drafting with their `evidence-flag` rendered in print. Total v2 corpus: ~98 candidates against the original ~108 target.
 - **Framework revisions:** drafted and grounded in named cases (`v2_research/01_*`). **Adopted for v2** — Will (editor) and Jim Diamond (program owner) aligned. The four new CLOs (gap attribution; delegation with revocation; judgment under inadequate evidence; fairness beyond omission), the amended collaboration-measurement CLO, the four amended sub-competencies, and the reframed "decision-grade evidence" all ship with v2. (Editor memo A5: resolved.)
@@ -73,6 +79,8 @@ They are close but not identical. v2 cases record all three. In the printed case
 - **B1 — First-person Practice Flywheel accounts.** TODO. To be authored by Will + Jim (not researched). 2–3 accounts targeted for v2; CIRCUIT and ERKS-class efforts are natural sources. Paired with the front-matter "unpacking is the method" reframing.
 
 ## Next-phase tasks
+
+0. **TODO — K-12 case source re-confirmation.** Resolve the `// VERIFY:` comments in the six new K-12 case blocks (exact AIR CCTP report titles, LA Times article titles, SET author list, PBIS school count, NYT Newark byline, Hard Words date, opinion pin-cites) and fill their `refs real` / `refs support` columns in `verification-log.md`.
 
 1. **Schema and v1 back-fill — DONE.** `casebook/lib/case.typ` accepts `scale`, `evidence-source`, `lens-anchor`, `induced-anchor`, `clo-anchor`, `coi`, `evidence-flag`. All 100 v1 cases tagged `scale: "big"`; 43 tagged `evidence-source: "investigation"` via the references heuristic; 57 left unflagged for editor judgment.
 2. **All 77 v2 cases drafted — DONE** at v1 cadence. Files in `casebook/chapters/v2-pilot*.typ` (15 files). Cases 101–177 contiguous. Numbering is placeholder pending editor decision A1 baseline confirmation.

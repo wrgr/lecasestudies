@@ -8,10 +8,10 @@ The shipping artefacts sit under `products/`, split by carrier: `products/digita
 
 | File | What it is | Read it if you want… |
 |---|---|---|
-| **[`products/digital/capability-matters-digital.pdf`](products/digital/capability-matters-digital.pdf)** | The casebook, digital — 194 cases, 783 pp, 8 × 10, colour on a cream backdrop | the stories, the analysis, the evidence base for the *capability is a system parameter* argument |
-| **[`products/digital/capability-matters-lens-companion.pdf`](products/digital/capability-matters-lens-companion.pdf)** | LENS Companion — 41 pp, 8 × 10, white digital | the framework, end-to-end: the five v2.1 LENS competencies, the CLOs and course mapping, the induced ↔ canonical crosswalk, and the literal text of the `lens_program/` canonical docs (Docs 1–6). Travels with advisory boards, recruiting, prospective students. |
-| **[`products/digital/capability-matters-validation-audit.pdf`](products/digital/capability-matters-validation-audit.pdf)** | Validation & Audit tracker — 97 pp, 8 × 10, white digital | the audit surface: every case by primary domain, every case by LENS course, and the full per-case references appendix with a *Retrieved from:* line per source. The verification-track companion to `casebook/verification-log.md`. |
-| **[`products/print/capability-matters-print.pdf`](products/print/capability-matters-print.pdf)** + **[`products/print/cover-print.pdf`](products/print/cover-print.pdf)** | The casebook, print interior + Lulu cover wrap — 783 pp, 8 × 10, grayscale, 3 mm bleed; cover spine 48.62 mm | to send to Lulu for the bound first edition |
+| **[`products/digital/capability-matters-digital.pdf`](products/digital/capability-matters-digital.pdf)** | The casebook, digital — 200 cases, 821 pp, 8 × 10, colour on a cream backdrop | the stories, the analysis, the evidence base for the *capability is a system parameter* argument |
+| **[`products/digital/capability-matters-lens-companion.pdf`](products/digital/capability-matters-lens-companion.pdf)** | LENS Companion — 43 pp, 8 × 10, white digital | the framework, end-to-end: the five v2.1 LENS competencies, the CLOs and course mapping, the induced ↔ canonical crosswalk, and the literal text of the `lens_program/` canonical docs (Docs 1–6). Travels with advisory boards, recruiting, prospective students. |
+| **[`products/digital/capability-matters-validation-audit.pdf`](products/digital/capability-matters-validation-audit.pdf)** | Validation & Audit tracker — 78 pp, 8 × 10, white digital | the audit surface: every case by primary domain, every case by LENS course, and the full per-case references appendix with a *Retrieved from:* line per source. The verification-track companion to `casebook/verification-log.md`. |
+| **[`products/print/capability-matters-print.pdf`](products/print/capability-matters-print.pdf)** + **[`products/print/cover-print.pdf`](products/print/cover-print.pdf)** | The casebook, print interior + Lulu cover wrap — 821 pp, 8 × 10, grayscale, 3 mm bleed; cover spine 50.98 mm | to send to Lulu for the bound first edition |
 | **[`products/print/capability-matters-overview-half-print.pdf`](products/print/capability-matters-overview-half-print.pdf)** + **[`products/print/cover-overview-half.pdf`](products/print/cover-overview-half.pdf)** | The half-page summary, print interior + Lulu cover wrap — Half Letter, grayscale | to bind the summary edition (one case per page) for conferences, recruiting tables, leave-behinds |
 
 The casebook makes the case; the LENS Companion is the orientation set someone reads to understand what LENS is; the Validation & Audit doc is the verification surface a reviewer or auditor works through. All shipping artefacts reproduce from one Typst source via `bash casebook/scripts/build.sh`. Intermediate formats (US Letter summary, screen Half-Letter summary, proof editions, the split-format cover) stay inside `casebook/build/` rather than mirroring to `products/`.
@@ -39,11 +39,11 @@ The casebook makes the case; the LENS Companion is the orientation set someone r
 │   ├── lens-companion.typ                 the 8 × 10 LENS Companion — concept-facing (concentration docs + crosswalks + the canonical lens_program docs inlined; view=companion)
 │   ├── validation-audit.typ               the 8 × 10 Validation & Audit tracker — domain/course indexes + per-case references (view=companion)
 │   ├── overview*.typ                      the summary editions (US Letter + Half Letter)
-│   ├── chapters/                          194 cases organised by v2.1 competency × {fails, works + frontier} — ch1a … ch5b + closing-case.typ
+│   ├── chapters/                          200 cases organised topically in 7 parts × {fails, works + frontier} — ch1a … ch7b + closing-case.typ
 │   ├── frontmatter/, backmatter/, lib/, cover/, fonts/
 │   ├── scripts/, Makefile, build/         build pipeline (the shipping seven mirror into products/; intermediates stay in build/)
 │   ├── competencies.md                    induced framework — 8 competencies / 32 sub-competencies, inducted bottom-up from v1 cases
-│   ├── verification-log.md                per-case verification log (194 rows, six of seven check columns auto pre-filled)
+│   ├── verification-log.md                per-case verification log (200 rows, slug-keyed)
 │   ├── METHODOLOGY.md, AUDIT.md, README.md
 │
 ├── lens_program/                          canonical LENS program documents (source of record, JHU SOE LDT/LENS — MHEC PP24181)
@@ -79,7 +79,7 @@ The induced 8 fold cleanly into the canonical 5 (D2 has no induced counterpart �
 
 The first edition is structurally complete and reproduces from source.
 
-**Casebook** — 194 cases in 10 chapters by v2.1 competency × {fails / works + frontier}, with the closing framing case last. All anchored to v2.1; all cross-references in range. `bash casebook/scripts/check-cases.sh` reports 194/0.
+**Casebook** — 200 cases organised topically in seven parts (Healthcare & Patient Safety; Education, Training & the Learning Workforce; Aviation & Aerospace; Defense & National Security — the middle part; Industry, Energy & Enterprise Systems; Disaster Prevention & Recovery, read pre → post; Algorithms, Governance & Public Systems), each split into What Fails / What Works + frontier — 14 chapters, closing framing case last. All anchored to v2.1; all cross-references in range. `bash casebook/scripts/check-cases.sh` reports 200/0.
 
 **LENS Companion** — `capability-matters-lens-companion.pdf`, 41 pp, 8 × 10 white digital. The concept-facing companion: the v2.1 five competencies, the CLOs and the course mapping, the induced-→-canonical crosswalk, and the three-anchor convention, plus the literal text of the `lens_program/` source-of-record docs (Docs 1–6) inlined verbatim. Sized to be read end-to-end; designed to travel with advisory boards, recruiting conversations, and prospective students. Built from the casebook source via `--input view=companion`.
 
@@ -104,11 +104,11 @@ The first edition is structurally complete and reproduces from source.
 **v2.1 framework adoption (June 2026)** — Per program-owner sign-off:
 - D3 reorder + rename: what was D5 *Machine Teaming and Adaptation* is broadened to **Human-System Collaboration** and moved to position 3. T&E moves to D4; Sociotechnical Constraints to D5. The order reads as the flywheel: see → build → integrate humans → measure → deploy.
 - 7 new named subobjectives (1.5, 2.5, 3.3, 3.4, 4.4, 4.6, 5.6) plus 4.2 renamed *gap attribution* and decision-grade evidence reframed as judgment under irreducible uncertainty.
-- Casebook lens/CLO fields and `lens-approach` prose remapped to v2.1 across all 194 cases.
+- Casebook lens/CLO fields and `lens-approach` prose remapped to v2.1 across all cases.
 
 **Editorial passes folded in** — Stage-3 anchoring of 62 previously-unanchored v1 cases (54 STRONG / 8 SOLID, decisions logged in `AUDIT.md`); 10-chapter restructure with single atomic renumber; three wrong-placement fixes (TMI, Vincennes, Texas City BP) caught during Q&A; automated references validation across ~951 references (10 ISSUE-class items all resolved in source).
 
-**Verification log handoff** — `casebook/verification-log.md` is a 194-row table with six of seven check columns auto pre-filled. The seventh (*conclusions reasonable*) is intentionally empty pending a human case-by-case content read. The rubric defines a 5–15 min two-pass review workflow (quality, then content) with a worked example on Case 1. `bash casebook/scripts/verification-status.sh` parses the log and prints overall + per-chapter progress + open issues.
+**Verification log handoff** — `casebook/verification-log.md` is a 200-row table with six of seven check columns auto pre-filled. The seventh (*conclusions reasonable*) is intentionally empty pending a human case-by-case content read. The rubric defines a 5–15 min two-pass review workflow (quality, then content) with a worked example on Case 1. `bash casebook/scripts/verification-status.sh` parses the log and prints overall + per-chapter progress + open issues.
 
 ## How to find the next thing to do
 

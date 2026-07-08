@@ -67,9 +67,12 @@
 #include "frontmatter/matrix.typ"
 
 // ============================================================
-// All cases — organised by v2.1 competency × {what fails, what works
-// and frontier}. Ten chapters; closing case last. Numbering 1-194
-// runs in this chapter order; slugs are the stable IDs.
+// All cases — organised topically in seven parts (Healthcare;
+// Education & Workforce; Aviation & Aerospace; Defense — the middle
+// part; Industry & Enterprise; Disaster Prevention & Recovery;
+// Algorithms & Governance), each split into {what fails, what works
+// and frontier}. Fourteen chapters; closing case last. Numbering
+// 1-194 runs in this chapter order; slugs are the stable IDs.
 // ============================================================
 #include "chapters/ch1a.typ"
 #include "chapters/ch1b.typ"
@@ -81,6 +84,10 @@
 #include "chapters/ch4b.typ"
 #include "chapters/ch5a.typ"
 #include "chapters/ch5b.typ"
+#include "chapters/ch6a.typ"
+#include "chapters/ch6b.typ"
+#include "chapters/ch7a.typ"
+#include "chapters/ch7b.typ"
 
 // ============================================================
 // CLOSING CASE — about LENS itself; appears at the end of the book

@@ -1,6 +1,6 @@
-<!-- LENS-VERSION: 2.1 | STATUS: CURRENT | ADOPTED: 2026-06 | SUPERSEDES: 2.0, 1 -->
+<!-- LENS-VERSION: 2.2 | STATUS: CURRENT | ADOPTED: 2026-07 | SUPERSEDES: 2.1, 2.0, 1 -->
 
-> **STATUS: CURRENT (v2.1, June 2026).** Adopted by program owner (J. Diamond) and editor (W. Gray-Roncal). Source of record for syllabi, capstone rubrics, and course-CLO mapping. Companion competency document is `1_LENS_Five_Competencies.md` (v2.1). Supersedes v2.0 (proposal in `v2_research/01_*`) and v1 (initial). Prior prose preserved in git history; see the *Change Log* at the end of this document. The companion `.docx` needs a program-owner round-trip from this `.md`.
+> **STATUS: CURRENT (v2.2, July 2026).** v2.2 incorporates the LDT Program Learning Objectives of record (dated 03-06-2025) at full subobjective grain and adds the PLO ↔ CLO support map (Section 4.1). CLO content is unchanged from v2.1 (adopted by program owner J. Diamond and editor W. Gray-Roncal, June 2026). Source of record for syllabi, capstone rubrics, and course-CLO mapping. Companion competency document is `1_LENS_Five_Competencies.md` (v2.1). Prior prose preserved in git history; see the *Change Log* at the end of this document. The companion `.docx` is regenerated from this `.md`; program-owner round-trip of the v2.1/v2.2 changes remains pending.
 
 ---
 
@@ -10,7 +10,7 @@ LENS: Learning Engineering for Next-Generation Systems
 
 Learning Objectives and Course Mapping
 
-Draft for discussion — Revised June 2026. Maps LDT program and LENS concentration learning objectives to the approved 10-course, 30-credit structure. PLO language is from the approved program documentation and should be verified against the MHEC filing (PP24181). Revision notes at end.
+Draft for discussion — Revised July 2026. Maps LDT program and LENS concentration learning objectives to the approved 10-course, 30-credit structure. PLO language follows the LDT Program Learning Objectives of record dated 03-06-2025 (six objective areas with numbered subobjectives), reproduced in full in Section 3. Revision notes at end.
 
 # 1. Program Context
 
@@ -86,49 +86,50 @@ Sequencing: LEN 1 → LEN 2 → LEN 3 must be taken in order. LEN 6 requires the
 
 # 3. LDT Program Learning Objectives
 
-The following program-level objectives apply across all LDT concentrations (LXD, LENS, AILE). Every required LENS course addresses at least one PLO.
+The following program-level objectives apply across all LDT concentrations (LXD, LENS, AILE). The text below reproduces the LDT Program Learning Objectives of record (03-06-2025) in full, at subobjective grain; subobjective numbers (e.g., PLO-1.3) are stable tags for syllabus and assessment mapping. Upon successful completion of the LDT program, graduates will demonstrate competence in six areas. Every required LENS course addresses at least one PLO.
 
-ID
+**PLO-1. Theory and Evidence in the Design of Experiences and Solutions.** Focusing on the integration of theoretical and empirical evidence from the learning sciences, media, and technology to design effective digital learning experiences and solutions. Learners will be able to:
 
-Domain
+- 1.1. Describe and differentiate theories and ideas from the learning sciences, motivation, and media/technology.
+- 1.2. Use a variety of digital technologies to develop learning experiences or solutions for different learning environments and learners.
+- 1.3. Analyze and evaluate design options to identify appropriate and applicable theories and practices to accomplish intended instructional outcomes in a given context and for a learner population.
+- 1.4. Justify design and deployment decisions based on theory, ideas, models, or evidence.
+- 1.5. Design, develop, and deploy digital education solutions grounded in ideas and theories from the learning sciences, motivation, and media/technology.
 
-Objective
+**PLO-2. Ethical and Human-Centered Learning Solutions.** Emphasizing the creation of learning solutions that are ethical, inclusive, and focused on the diverse needs of learners, adhering to best practices and industry standards. Learners will be able to:
 
-PLO-1
+- 2.1. Identify and distinguish among diverse learner needs and incorporate these considerations into technology-supported learning experiences and solutions.
+- 2.2. Apply systematic models and systems thinking to create ethical, learner-focused digital tools and curricula.
+- 2.3. Evaluate learning solutions to ensure they advance equity and inclusivity across varied contexts.
+- 2.4. Design and develop accessible, inclusive, and flexible technology-supported learning experiences or solutions.
 
-Theory and Evidence
+**PLO-3. Collaboration and Leadership in Educational Technology.** Focusing on effective collaboration with stakeholders and leadership in the design, implementation, and evaluation of educational technology solutions. Learners will be able to:
 
-Integration of theoretical and empirical evidence from the learning sciences, media, and technology to design effective digital learning experiences and solutions. Includes: differentiating theories from the learning sciences; using digital technologies to develop learning experiences; analyzing and evaluating design options; justifying decisions based on theory, models, or evidence; designing and deploying solutions grounded in learning sciences.
+- 3.1. Collaborate with various involved and interested parties in a constructive, professional, and respectful way.
+- 3.2. Communicate shared visions for technology-supported solutions.
+- 3.3. Lead efforts to ensure the quality of technology-supported learning experiences.
+- 3.4. Lead ongoing evaluation efforts to continuously improve the selection and implementation of technologies and technology-based solutions.
+- 3.5. Collaborate and lead to develop evidence-based solutions to address instructional and/or programmatic needs using a variety of appropriate educational technologies and techniques.
 
-PLO-2
+**PLO-4. Communication Competence.** Communicating design and pedagogical decisions effectively using various media and tailored to diverse audiences. Learners will be able to:
 
-Ethical and Human-Centered Solutions
+- 4.1. Craft effective messages using appropriate media in written, verbal, and visual modalities.
+- 4.2. Articulate and justify pedagogical, design, and development decisions to diverse audiences.
+- 4.3. Communicate effectively with all invested parties to facilitate the design and development of learning products and solutions.
 
-Creation of learning solutions that are ethical, inclusive, and focused on the diverse needs of learners, adhering to best practices and industry standards. Includes: identifying diverse learner needs; applying systematic models and systems thinking; evaluating solutions for equity and inclusivity; designing accessible, inclusive, and flexible technology-supported experiences.
+**PLO-5. Sociocultural Aspects of Educational Technology.** Addressing the analysis of sociocultural factors, including power dynamics and privilege, and developing solutions to mitigate inequities in the design and deployment of educational technology and technology-supported solutions. Learners will be able to:
 
-PLO-3
+- 5.1. Analyze how socioeconomic systems influence technology adoption and evaluation.
+- 5.2. Evaluate power dynamics and privilege affecting educational technology designs and implementations.
+- 5.3. Develop solutions to address and prevent injustices through educational technology designs and implementations.
+- 5.4. Design and develop equitable, inclusive, and accessible technology-supported systems, processes, and products.
 
-Collaboration and Leadership
+**PLO-6. Data-Informed Learning Design, Implementation, and Evaluation.** Using data to inform the design, development, and evaluation of learning experiences and technology-supported solutions, ensuring continuous improvement through evidence-based decision-making. Learners will be able to:
 
-Effective collaboration with stakeholders and leadership in the design, implementation, and evaluation of educational technology solutions. Includes: collaborating constructively with involved parties; communicating shared visions; leading quality assurance efforts; leading ongoing evaluation; developing evidence-based solutions using appropriate technologies.
-
-PLO-4
-
-Communication Competence
-
-Communicating design and pedagogical decisions effectively using various media and tailored to diverse audiences. Includes: crafting effective messages in written, verbal, and visual modalities; articulating and justifying pedagogical, design, and development decisions; communicating with invested parties to facilitate design and development.
-
-PLO-5
-
-Sociocultural Aspects
-
-Analysis of sociocultural factors, including power dynamics and privilege, and developing solutions to mitigate inequities in educational technology. Includes: analyzing how socioeconomic systems influence technology adoption; evaluating power dynamics and privilege; developing solutions to address injustices; designing equitable, inclusive, and accessible systems.
-
-PLO-6
-
-Data-Informed Design
-
-Using data to inform the design, development, and evaluation of learning experiences and technology-supported solutions. Includes: collecting data using evaluation and research methods; using data to revise designs for continuous improvement; analyzing educational data using qualitative, quantitative, and mixed methods; designing comprehensive data collection and analysis efforts.
+- 6.1. Collect data using a variety of evaluation and research methods to gain insights into learner and educator needs and tool effectiveness.
+- 6.2. Use data to revise designs, practices, and goals based on evaluation data for continuous improvement.
+- 6.3. Analyze educational data using qualitative, quantitative, and mixed methods.
+- 6.4. Design and implement comprehensive data collection and analysis efforts to inform decisions concerning design, development, delivery, and evaluation of programs, processes, and/or products.
 
 # 4. LENS Concentration Learning Objectives
 
@@ -174,6 +175,30 @@ Context and Domain Fluency
 
 Integrate capability interventions into the sociotechnical systems they must live in: the regulatory, organizational, cultural, and technical realities that determine whether good designs survive. Analyze the constraints that shape what can be built, deployed, and sustained in healthcare, defense, or education contexts. Apply human systems integration frameworks to fit capability development approaches to operational environments. Leverage prior domain expertise, and respect for others', to elicit and validate specialist knowledge that surfaces constraints early. Synthesize and communicate stakeholder requirements across disciplinary and institutional boundaries into coherent design specifications, and design interventions that survive adoption and sustainment barriers. *[v2]* **Cross-regime / platform-dependency governance.** Where capability is deployed on a platform governed by a different regime than the one operating it, design the governance seam as an explicit deliverable.
 
+
+
+## 4.1 PLO ↔ CLO Support Map
+
+How the LENS concentration objectives support the six LDT program objectives (03-06-2025). ● = primary support (the CLO's core work directly develops the PLO area); ○ = supporting (the CLO develops the PLO area in the LENS inflection — high-consequence domains, capability engineering, decision-grade evidence).
+
+| | PLO-1 Theory & Evidence | PLO-2 Ethical & Human-Centered | PLO-3 Collaboration & Leadership | PLO-4 Communication | PLO-5 Sociocultural Aspects | PLO-6 Data-Informed |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| CLO-1 Systems Analysis | ● | ○ | ○ | ○ | | ● |
+| CLO-2 Iterative Development | ● | ● | ○ | ○ | | ● |
+| CLO-3 Human-System Collaboration | ○ | ● | ● | ○ | ○ | ○ |
+| CLO-4 Test and Evaluation | ○ | ● | ○ | ● | ● | ● |
+| CLO-5 Sociotechnical Constraints | ○ | ● | ● | ● | ● | ○ |
+
+Reading the map at subobjective grain:
+
+- **PLO-1 (Theory and Evidence)** is carried primarily by CLO-1 (decomposing system requirements into measurable human capability requirements grounds design in evidence; PLO-1.3, 1.4) and CLO-2 (iterative engineering cycles integrating learning sciences principles; PLO-1.1, 1.2, 1.5), with CLO-4 supplying the evidence side of "justify design and deployment decisions" (PLO-1.4).
+- **PLO-2 (Ethical and Human-Centered)** is supported across all five CLOs; primary weight sits in CLO-2 (systematic models and systems thinking, PLO-2.2), CLO-3 (preserving human agency as a design constraint; diverse operator needs, PLO-2.1, 2.4), and CLO-4 (ethical instrumentation; evaluating solutions for equity, PLO-2.3, reinforced by subobjective 4.6 fairness beyond omission).
+- **PLO-3 (Collaboration and Leadership)** is carried primarily by CLO-3 (collaboration engineered as a measurable property of human-system teams; PLO-3.1, 3.5) and CLO-5 (synthesizing stakeholder requirements across disciplinary and institutional boundaries; leading adoption and sustainment, PLO-3.2, 3.3, 3.4).
+- **PLO-4 (Communication Competence)** is threaded through every CLO's communication verbs; primary weight sits in CLO-4 (decision-grade evidence artifacts for technical and non-technical audiences; PLO-4.1, 4.2) and CLO-5 (communicating design specifications across boundaries; PLO-4.3).
+- **PLO-5 (Sociocultural Aspects)** is carried primarily by CLO-5 (regulatory, organizational, and cultural constraints; power dynamics of deployment contexts; PLO-5.1, 5.2) and CLO-4 (demographic-stratified outcome evidence and fairness analysis; PLO-5.3, 5.4 via subobjective 4.6), with CLO-3's agency-preservation commitment supporting PLO-5.3.
+- **PLO-6 (Data-Informed Design, Implementation, and Evaluation)** is carried primarily by CLO-4 (instrumentation, measurement, and evaluation at operational speed and scale; PLO-6.1-6.4), CLO-2 (the evaluate-refine half of the iteration cycle; PLO-6.2), and CLO-1 (measurable capability requirements as the object of data collection; PLO-6.1).
+
+Every PLO area receives primary support from at least one CLO, and every PLO subobjective family is addressed by at least one required LENS course (Section 6.1). The LENS inflection is consistent throughout: the same six program areas, developed in high-consequence operational contexts where evidence must be decision-grade and capability is the interface between operator requirements and system impact.
 
 # 5. Course Descriptions and Objectives Mapping
 
@@ -535,7 +560,12 @@ Field alignment noted. Section 4 states the CLOs' relationship to the emerging f
 
 # Change Log
 
-**v2.1 — June 2026** *(current)*
+**v2.2 — July 2026** *(current)*
+- **PLO source refresh.** Section 3 now reproduces the LDT Program Learning Objectives of record (dated 03-06-2025) in full, at subobjective grain (PLO-1.1 through PLO-6.4), replacing the summarized "Includes:" digests. PLO-5 and PLO-6 titles corrected to the full forms ("Sociocultural Aspects of Educational Technology"; "Data-Informed Learning Design, Implementation, and Evaluation"). The prior "verify against the MHEC filing" caveat is retired — the 03-06-2025 list is the source.
+- **PLO ↔ CLO support map added** (Section 4.1): primary/supporting support of each program objective by each concentration objective, read at subobjective grain, with the coverage claim (every PLO area has primary support from at least one CLO; every subobjective family is addressed by at least one required course).
+- **No CLO content changes.** The five CLOs, their subobjectives, and all course mappings are unchanged from v2.1.
+
+**v2.1 — June 2026** *(superseded by v2.2; CLO content still current)*
 - **D3/D4/D5 reorder + CLO-3 rename + renumber.** What was D5/CLO-5 (Machine Teaming and Adaptation / Human-AI Teaming and Adaptive Systems) is broadened to **D3/CLO-3 Human-System Collaboration and Adaptive Systems** and moved to position 3. T&E becomes D4/CLO-4 (was D3/CLO-3); Sociotechnical Constraints becomes D5/CLO-5 (was D4/CLO-4). The new order reads as the flywheel: see the system → build → integrate humans → measure → deploy.
 - **CLO mapping updated for every course** (Sections 5 and 6.2). Map: old CLO-3 → new CLO-4, old CLO-4 → new CLO-5, old CLO-5 → new CLO-3.
   - LEN 2 maps to **CLO-3** (was CLO-5). The course title and prose still emphasize human-AI teaming; the v2.1 framing places it within the broader Human-System Collaboration competency. A title broadening to "Human-System Collaboration and Adaptive Learning Systems" would match the v2.1 scope but is deferred to the program owner's call.
@@ -544,7 +574,7 @@ Field alignment noted. Section 4 states the CLOs' relationship to the emerging f
 - **Reframed term:** "decision-grade evidence" taught as a sufficiency judgment under irreducible uncertainty.
 - **What the casebook anchor codes mean.** Under v2.1, a `lens-anchor: "D3/PT5"` resolves to **Human-System Collaboration**, problem-type 5; a `clo-anchor: "CLO-4"` resolves to **Test and Evaluation**. The casebook field remap from v1 codes ships in the corresponding casebook update.
 
-**v2.0 — May 2026** *(superseded by v2.1; never adopted standalone)*
+**v2.0 — May 2026** *(superseded; never adopted standalone)*
 - Drafted in `v2_research/01_LENS_revised_competencies_and_CLOs.md`. The 7 subobjectives above were originally framed as "new CLOs" — refactored to subobjective level in v2.1 (they are sub-CLO-grain). Reframed decision-grade evidence; renamed domains.
 
 **v1 — March 2026** *(initial; preserved in git history)*

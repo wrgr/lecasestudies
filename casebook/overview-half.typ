@@ -69,7 +69,7 @@
 #include "overview-frontmatter.typ"
 
 // ----------------------------------------------------- the cases (overview)
-// v2.1 — 10 chapters by competency × {fails, works/frontier}; closing case last.
+// Topical org — 14 chapters: 7 parts × {fails, works/frontier}; closing case last.
 #include "chapters/ch1a.typ"
 #include "chapters/ch1b.typ"
 #include "chapters/ch2a.typ"
@@ -80,6 +80,10 @@
 #include "chapters/ch4b.typ"
 #include "chapters/ch5a.typ"
 #include "chapters/ch5b.typ"
+#include "chapters/ch6a.typ"
+#include "chapters/ch6b.typ"
+#include "chapters/ch7a.typ"
+#include "chapters/ch7b.typ"
 
 // ============================================================
 // CLOSING CASE — about LENS itself; appears at the end of the book

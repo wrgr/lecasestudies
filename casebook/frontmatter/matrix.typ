@@ -97,10 +97,13 @@
     ]
     v(4pt)
     text(font: sans, size: 7pt, fill: text-muted)[
-      *Parts.* Part II — *What Works* — opens at Chapter 8 with the
-      paired-intervention successes. Part III — *The Frontier* —
-      and the contemporary expansion carry the human-AI teaming cases;
-      the open question closes the volume at Case 194.
+      *Parts.* The book is organized topically in seven parts —
+      Healthcare & Patient Safety; Education, Training & the Learning
+      Workforce; Aviation & Aerospace; Defense & National Security;
+      Industry, Energy & Enterprise Systems; Disaster Prevention &
+      Recovery; Algorithms, Governance & Public Systems. Each part
+      splits into *What Fails* and *What Works — and the Frontier*;
+      the open question closes the volume at Case 200.
     ]
   }
 )

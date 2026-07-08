@@ -176,7 +176,8 @@
   the lower bound, a top-ten cause of death. The report catalyzed a
   generation of patient-safety work: surgical checklists, central-line
   bundles, team training, computerized order entry. Some of those
-  interventions are documented in Part II of this book as successes.
+  interventions are documented in this book's What Works chapters as
+  successes.
   And yet in 2016 Makary and Daniel returned to the question from the
   same institution that produces this casebook and concluded that
   medical error remains the third leading cause of death in the United
@@ -355,7 +356,7 @@
   analytics, human-AI teaming, knowledge transfer, bias and governance,
   computational and AI methods — are organized to produce graduates who
   can do the work the cases in this book required, and who can build
-  the institutions that the success cases in Part II had to invent.
+  the institutions that the book's success cases had to invent.
   The curriculum threading commitments — implementation science as a
   through-line, equity as a design commitment rather than an audit,
   decision-grade evidence as a deliverable rather than a report,
@@ -380,22 +381,22 @@
   agency, or discipline to carry meaning reliably from one part of a
   system to another, or failures of subsystems built to different
   assumptions to compose into a working whole. Mars Climate Orbiter was a metric-versus-
-  imperial translation failure (Case 9). Tenerife was a translation
+  imperial translation failure (Case 98). Tenerife was a translation
   failure at the takeoff-clearance boundary between two cockpits and
-  a tower under fog and time pressure (Case 70). The Patriot at
+  a tower under fog and time pressure (Case 117). The Patriot at
   Dhahran failed because the manufacturer's assumption about run
   time and the operator's actual run time were on opposite sides of
   a documentation boundary that had not been engineered to be
-  crossed (Case 8). Eagle Claw failed because the rotary-wing,
+  crossed (Case 129). Eagle Claw failed because the rotary-wing,
   fixed-wing, ground, and command components were assembled across
-  service boundaries that had no shared operating practice (Case 5).
+  service boundaries that had no shared operating practice (Case 128).
   9/11 was a cross-agency translation failure measured in thousands
-  of dead (Case 167). Boeing 737 MAX was, at one level, an integration
+  of dead (Case 135). Boeing 737 MAX was, at one level, an integration
   failure: a single-string sensor, a flight-control law that assumed
   pilot mental models from prior models, and a certification chain
-  that did not knit the pieces together (Case 7). The successful
-  cases — AlphaFold (Case 132), MICrONS, CRM (Case 70 paired with
-  Case 72), Keystone (Case 71), the paired-intervention examples in
+  that did not knit the pieces together (Case 97). The successful
+  cases — AlphaFold (Case 36), MICrONS, CRM (Case 117 paired with
+  Case 118), Keystone (Case 19), the paired-intervention examples in
   Chapter 8 — are, equivalently, cases of disciplined translation
   and integration: biology into computation, science into
   operational practice, technical reform into cultural reform,
@@ -415,16 +416,16 @@
   and high-fidelity rehearsal under conditions that would be
   unsafe or impossible in the field — together with learning-
   management systems, adaptive learning platforms (the lineage from
-  Cognitive Tutor and ASSISTments to current ITS work; Cases 38,
-  33), intelligent tutoring frameworks such as GIFT, learning-
+  Cognitive Tutor and ASSISTments to current ITS work; Cases 67,
+  139), intelligent tutoring frameworks such as GIFT, learning-
   analytics infrastructures such as xAPI and the Total Learning
-  Architecture (Case 171), game-based learning environments, LLM-
+  Architecture (Case 142), game-based learning environments, LLM-
   augmented tutors and authoring tools, and high-fidelity simulators
   in aviation, surgery, defense, and process industries. These tools
   are not the discipline. They are the discipline's instruments —
   and the cases in this book show, repeatedly, that powerful
-  instruments do not by themselves engineer capability (Cases 146,
-  149, 61, 33, 79, 80). The LENS curriculum teaches the practitioner
+  instruments do not by themselves engineer capability (Cases 53,
+  54, 2, 139, 22, 157). The LENS curriculum teaches the practitioner
   to choose, configure, evaluate, and govern these tools with the
   same evidentiary discipline applied to any other intervention,
   and to recognize when the binding constraint is the surrounding
@@ -438,11 +439,11 @@
   *human agency*. The capability discipline can be misread as
   optimization: produce operators whose behavior matches a
   specification. That reading collapses the very property the cases
-  reveal as load-bearing. Every successful institution in Part II —
+  reveal as load-bearing. Every successful institution in the What Works chapters —
   INPO operators trained to challenge their reactor team, Keystone
-  ICU nurses authorized to halt a procedure (Case 71), the Nuclear
-  Navy's questioning attitude (Case 18), the first-officer authority
-  CRM built into the cockpit (Case 70) — engineered for capability
+  ICU nurses authorized to halt a procedure (Case 19), the Nuclear
+  Navy's questioning attitude (Case 137), the first-officer authority
+  CRM built into the cockpit (Case 117) — engineered for capability
   *and* for the operator's capacity to exercise independent
   judgment, to adapt to conditions the system was not designed for,
   and to shape the surrounding architecture rather than only
@@ -511,9 +512,10 @@
   worked, examining the human and AI roles inside the designed system,
   and running the loop end-to-end on a real problem — is the same
   discipline the casebook applies to every case it reads. The cases
-  that return as success stories in Part II are the cases whose
-  institutions completed the loop. The cases in Part I are the cases
-  whose institutions did not — or did not loop fast enough.
+  that return as success stories in the What Works chapters are the
+  cases whose institutions completed the loop. The What Fails chapters
+  hold the cases whose institutions did not — or did not loop fast
+  enough.
   Unpacking the case *is* the method: identify, instrument, and close
   the next such loop before the next case is written.
 ]
@@ -649,41 +651,48 @@
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  Part I, "The Failure Modes," organizes the failure cases under six
-  recurring patterns: training gap, capability designed out,
-  normalization of deviance, interface failure, governance failure, and
-  knowledge loss. A seventh chapter — the Evidence Gap — anchors the
-  measurement question. The taxonomy is not a theory. It is a finding:
-  six categories that account for almost every well-documented case in
-  the literature of preventable failure in complex sociotechnical
-  systems, and that recur across healthcare, defense, education,
-  energy, transportation, and government.
+  The book is organized topically, in seven parts: Healthcare & Patient
+  Safety; Education, Training & the Learning Workforce; Aviation &
+  Aerospace; Defense & National Security; Industry, Energy & Enterprise
+  Systems; Disaster Prevention & Recovery; and Algorithms, Governance &
+  Public Systems. Each part splits into two chapters. *What Fails*
+  collects the part's failure cases; *What Works — and the Frontier*
+  collects the interventions that moved the curve and the frontier
+  cases where the discipline is still being asked to specify what good
+  looks like before the catastrophe arrives.
 ]
 
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  Part II, "What Works," collects the cases in which the capability
-  parameter was engineered rather than left to drift. Every success
-  case in the dataset shares a structural feature: a *paired
-  intervention.* A technical artifact paired with a cultural authority.
-  A measurement instrument paired with a governance body that listens
-  to it. A curriculum paired with the institutional architecture to
-  sustain it. Neither half alone moves the curve. The pair is
-  irreducible. This is the strongest empirical pattern in the book and
-  it directly informs the LENS pedagogical commitment to co-optimization
-  across technical and human design.
+  Two analytic threads run across the topical parts. The first is the
+  failure-mode taxonomy carried on every case header: training gap,
+  capability designed out, normalization of deviance, interface
+  failure, governance failure, and knowledge loss. The taxonomy is not
+  a theory. It is a finding: six categories that account for almost
+  every well-documented case in the literature of preventable failure
+  in complex sociotechnical systems, and that recur across every part
+  of this book. The second is the *paired intervention*. Every success
+  case in the dataset shares it: a technical artifact paired with a
+  cultural authority; a measurement instrument paired with a governance
+  body that listens to it; a curriculum paired with the institutional
+  architecture to sustain it. Neither half alone moves the curve. The
+  pair is irreducible. This is the strongest empirical pattern in the
+  book and it directly informs the LENS pedagogical commitment to
+  co-optimization across technical and human design.
 ]
 
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  Part III, "The Frontier," concerns the cases where the discipline is
-  being asked to do work it has not done before — particularly the
-  human-AI teaming cases that anticipate the next decade of capability
-  engineering. The cases are deliberately less settled. The discipline
-  is being asked to specify what good looks like before the catastrophe
-  arrives. That is the work the program exists to teach.
+  One part departs from the domain logic. Part VI, *Disaster Prevention
+  & Recovery*, reads its cases along the lifecycle of a disaster
+  instead: before the event — the prevention regimes whose quiet
+  thinning is the real story — and after it, the response, the
+  recovery, and the institutions built (or not built) so the same
+  failure cannot recur. Cases whose load-bearing lesson belongs to a
+  domain stay in their domain parts; what qualifies a case for Part VI
+  is that its lesson is the pre/post lifecycle itself.
 ]
 
 #v(6pt)

@@ -1,2599 +1,1718 @@
 // ============================================================
-// Systems Analysis — What Fails (Ch D1a)
+// Part I — Healthcare & Patient Safety · What Fails (Chapter 1)
 // ============================================================
 #import "../lib/theme.typ": *
 #import "../lib/chapter.typ": chapter-divider
 #import "../lib/case.typ": case
 #import "../lib/components.typ": *
 #import "../lib/diagrams.typ" as dgm
-
 #chapter-divider(
-  part: "Part I — The Failure Modes",
+  part: "Part I — Healthcare & Patient Safety",
   number: "1",
-  title: "Systems Analysis — What Fails",
-  subtitle: "When the work the system requires goes unspecified.",
-  epigraph: [Capability is the interface between what a system requires of its operators and the impact of that system.],
-  epigraph-source: "The Capability Matters volume thesis.",
+  title: "Healthcare & Patient Safety — What Fails",
+  subtitle: "When care systems assume capability that was never specified, trained, or measured.",
+  epigraph: [The harm arrived through the workflow, not around it.],
+  epigraph-source: "An observation recurring across the chapter's cases.",
 )
 
-
+// ---- Case 1 — therac-25 ----
 #case(
   number: 1,
-  slug: "uss-fitzgerald-and-uss-john-s-mccain",
-  title: "USS Fitzgerald & USS John S. McCain",
-  year: "2017",
-  domains-list: ("defense",),
-  modes-code: "TKN",
-  impact: "17 sailors killed in two avoidable destroyer collisions in the Western Pacific within nine weeks",
-  diagram: dgm.dgm-fitzgerald,
+  slug: "therac-25",
+  title: "Therac-25",
+  year: "1985 – 1987",
+  domains-list: ("healthcare", "tech"),
+  modes-code: "HDG",
+  impact: "Six known massive radiation overdoses; at least three deaths; canonical case in software safety engineering",
+  diagram: dgm.dgm-therac,
   kind: "failure",
   summary: [
-    In the summer of 2017 two U.S. Navy destroyers of the forward-deployed
-    Seventh Fleet collided with merchant ships nine weeks apart, killing
-    seventeen sailors — seven on the _Fitzgerald_, ten on the _John S.
-    McCain_. Their crews' seamanship, navigation, and console skills had
-    eroded under a decade of relentless operational tempo and the self-study
-    "training" that replaced the in-person school the Navy cut in 2003.
-    Investigations by the Navy and the NTSB judged both collisions avoidable
-    and traced them to insufficient training and weak oversight; on the
-    McCain, a confusing touch-screen helm let a watch team believe it had
-    lost steering it never actually lost. The case is this book's canonical
-    training gap: stated readiness and real readiness diverged for years, and
-    the system could no longer see the difference.
+    The Therac-25, a radiation-therapy machine, massively overdosed at
+    least six patients between 1985 and 1987, killing at least three. Its
+    predecessors used hardware interlocks to stop the high-energy beam from
+    firing without its target in place; to save cost, the Therac-25 removed
+    them and trusted software — adapted from the older machines and never
+    engineered for safety — to keep the beam modes separated. A race
+    condition let a fast operator trigger the full beam with no target,
+    while the console showed only a meaningless "Malfunction 54." Leveson
+    and Turner's 1993 investigation, the founding case of software-safety
+    engineering, found a systemic failure: a safeguard removed with nothing
+    put in its place. The lesson — a safeguard you delete does not remove
+    the hazard; it relocates it to whatever you failed to build.
   ],
   sections: (
     // -- Background --
     [
-      The destroyers belonged to the forward-deployed Seventh Fleet in Japan,
-      kept at the fleet's highest tempo — where training was the first thing
-      spent. Unlike home-ported ships, which rotate through a dedicated
-      work-up cycle before deploying, the forward-deployed force was expected
-      to be continuously available, so there was rarely a quiet stretch in
-      which to recover a lapsed qualification. In 2003 the Navy replaced its
-      in-person Surface Warfare Officers School course with self-study
-      CD-ROMs — "SWOS in a Box" — sending newly commissioned officers
-      directly to their ships to learn the trade as time and the ship's
-      qualified watchstanders allowed.#cn() The change was framed as a
-      cost-saving modernization; in practice it transferred junior-officer
-      education from the schoolhouse to the bridge at the moment the
-      operational tempo on those bridges left the least slack to absorb it.
-      By 2017 the GAO found 37% of the Japan-based ships' warfare
-      certifications — including basic seamanship — expired, a fivefold rise
-      since 2015, with the lapses routinely waived rather than fixed.#cn()
+      The Therac-25 was a radiation-therapy linear accelerator. Its
+      predecessors used hardware interlocks that physically blocked the
+      high-energy beam unless the spreading target was confirmed in place — a
+      mechanical backstop that could not be talked out of stopping the beam.
+      To save cost and simplify the machine, the Therac-25 removed them and
+      trusted software — adapted from the older machines and never engineered
+      from the ground up for safety-critical use — to keep its two beam modes,
+      a hundredfold apart in energy, safely separated. The safety case
+      migrated silently from steel to code.#cn()
     ],
     // -- What Happened --
     [
-      On 17 June 2017 the Fitzgerald, the give-way vessel in a busy shipping
-      channel, took no early action and was struck by the container ship ACX
-      Crystal off the coast of Japan; the sea poured into a berthing
-      compartment where the crew slept, and seven sailors drowned before they
-      could escape.#cn() The NTSB later described a bridge team that had
-      lost track of converging traffic on a clear night, and an officer of
-      the deck whose qualifications and recency on the very procedures the
-      situation demanded had lapsed under the waiver regime. Nine weeks
-      later the John S. McCain collided with the tanker Alnic MC near
-      Singapore, killing ten: while shifting throttle control between
-      consoles, a watchstander unknowingly handed off steering to another
-      station, the ship turned across the strait's traffic, and no one on
-      the bridge understood the touch-screen helm well enough to recognize
-      what had happened.#cn() For more than a minute the bridge team
-      believed the ship had lost steering it had never lost — a
-      misdiagnosis the interface invited and the training had not equipped
-      anyone to overturn.
+      Between 1985 and 1987 the machine massively overdosed at least six
+      patients. A race condition the engineers never knew about meant that
+      if an operator entered a prescription, caught a mistake, and corrected
+      it within about eight seconds — the speed an experienced operator
+      naturally reaches — the full-power beam could fire with no target in
+      place, delivering up to a hundred times the intended dose. The console
+      showed only "MALFUNCTION 54," a code with no documented meaning, and
+      offered to proceed; operators, assured the machine was safe and long
+      accustomed to its cryptic faults, did. At least three patients died of
+      the radiation burns.#cn()
     ],
     // -- The Investigation --
     [
-      The Navy's Comprehensive Review (2017) judged both collisions
-      avoidable, citing failures in basic seamanship, navigation, and
-      operating the ships' own equipment.#cn() The NTSB found the McCain's
-      probable cause to be a lack of Navy oversight that produced
-      insufficient training and inadequate bridge procedures,#cn() and
-      faulted the design of the touch-screen helm, installed to modernize
-      the bridge, whose blending of steering and throttle made an
-      unintended transfer of control easy to trigger and hard to notice —
-      a trap waiting for an under-trained crew. The companion Strategic
-      Readiness Review, commissioned by the Secretary of the Navy and led
-      by retired Admiral Phil Balisle, reached further into the
-      institution: a decade of "can-do" responses to mounting demand had
-      eroded the manning, certification, and maintenance margins the
-      surface force was built on, and the readiness reports senior leaders
-      relied on had stopped reflecting the conditions on the ships.#cn()
-      Watchbills and crew-day logs gathered after the collisions showed
-      watchstanders routinely averaging fewer than five hours of sleep on
-      patrol — a finding the NTSB folded into its causal chain.
+      When patients reported searing pain, the manufacturer first insisted
+      an overdose was impossible and treated each report as an isolated
+      complaint rather than a signal. Nancy Leveson and Clark Turner's 1993
+      investigation — the founding case study of software-safety engineering
+      — found the fault was systemic rather than a single bug: overconfidence
+      in software, removal of the hardware safeguards without replacement,
+      meaningless error messages, reused code never audited for safety, no
+      independent review of the safety-critical logic, and an
+      incident-reporting posture that dismissed the early warnings instead of
+      compounding them into evidence.#cn()
     ],
     // -- The Capability Gap --
     [
-      The gap was invisible from inside. The Strategic Readiness Review
-      described risks that "accumulated over time and did so insidiously,"
-      the system no longer able to see that the processes meant to surface
-      shortfalls had themselves failed.#cn() Each individual waiver was
-      locally defensible — a deadline met, a deployment kept — but in
-      aggregate they hollowed out the force while every readiness dashboard
-      still reported green. Stated and actual readiness had diverged for a
-      decade; the cost arrived as seventeen lives, not a failed inspection.
-      Two collisions, nine weeks apart, ruled out the comforting reading
-      that one was an outlier: Fitzgerald taught that an under-trained
-      bridge team could fail at the most basic give-way rules, and McCain
-      taught that an unfamiliar interface could be the precipitating
-      mechanism through which the same gap reached the hull. The pair, not
-      either case alone, made the diagnosis structural rather than
-      individual.
+      The hardware interlock had not been redundant; it *was* the safety
+      case, the one thing standing between a typing error and a lethal dose.
+      Removing it put nothing in its place — no verified software check, no
+      informed operator action, no independent monitor watching the beam. The
+      operator stayed nominally in the loop but lost any means to detect what
+      the machine was doing wrong, since the only feedback was a code that
+      told them nothing, which made the human presence a formality rather than
+      a safeguard. The question capability engineering would have forced —
+      *what function now carries the interlock's load?* — was never asked of
+      the redesign.#cn()
     ],
     // -- Aftermath & Reform --
     [
-      The reforms were the deepest in a generation: the in-person officer
-      pipeline was rebuilt as a multi-phase Basic Division Officer Course,
-      reinstating classroom and simulator instruction the 2003 CD-ROM model
-      had displaced; a Ready-for-Sea Assessment and a Naval Surface Group
-      Western Pacific stood up to give forward-deployed units the
-      independent certification cycle home-ported ships already had;
-      circadian watchbills were adopted fleet-wide to fight fatigue; and
-      the touch-screen helm was slated for replacement by a conventional
-      wheel and throttle across the destroyer fleet.#cn() Each change
-      conceded that the training and the interface had been real
-      requirements all along — and that trading them for tempo had only
-      moved the cost onto two ships full of people.#cn()
+      Therac-25 reshaped safety-critical software practice, making the case
+      by counterexample for independent hazard analysis, safeguards that do
+      not all rest on the same software, error messages that say what is wrong
+      so the operator can act, and treating field reports as evidence to be
+      aggregated rather than complaints to be closed. It remains the canonical
+      teaching case across software, medical-device, and systems-safety
+      curricula.#cn() Its lesson is exact and portable: a safeguard you remove
+      does not remove the hazard it guarded — it relocates the hazard to
+      whatever you failed to put in its place, and waits there.
     ],
   ),
   beats: (
-    "Forward-deployed Seventh Fleet at peak tempo; in-person SWOS school replaced by self-study CD-ROMs in 2003",
-    "Fitzgerald struck by ACX Crystal off Japan; McCain collided with Alnic MC near Singapore",
-    "Navy and NTSB judged both avoidable, citing training shortfalls and a confusing touch-screen helm design",
-    "Waivers stacked while readiness dashboards stayed green; stated and actual readiness diverged for a decade",
-    "In-person pipeline rebuilt, Ready-for-Sea Assessment stood up, touch-screen helm slated for conventional replacement",
+    "Hardware interlocks removed to save cost; safety case migrated silently into software",
+    "Race condition let fast operators fire full beam with no target",
+    "Manufacturer denied harm; Leveson and Turner found systemic, not single-bug, failure",
+    "Interlock was the safety case; nothing took its load when removed",
+    "Founded software-safety engineering; deleted safeguards relocate hazard to whatever replaces them",
   ),
   references: (
-    [T. C. Miller, M. Faturechi & R. Rotella, #link("https://features.propublica.org/navy-accidents/us-navy-crashes-japan-cause-mccain/")["Years of Warnings, Then Death and Disaster,"] _ProPublica_ (2019) — the 2003 SWOS-in-a-Box shift.],
-    [GAO, _Navy Readiness_, #link("https://www.gao.gov/products/gao-17-809t")[GAO-17-809T] (Sept. 2017) — 37% of Japan-based warfare certifications expired by June 2017.],
-    [NTSB, _Collision between USS Fitzgerald and MV ACX Crystal_, #link("https://www.ntsb.gov/investigations/AccidentReports/Reports/MAR2002.pdf")[NTSB/MAR-20/02] (2020), DCA17PM018.],
-    [NTSB, _Collision between USS John S. McCain and Tanker Alnic MC_, #link("https://www.ntsb.gov/investigations/AccidentReports/Reports/MAR1901.pdf")[NTSB/MAR-19/01] (2019), DCA17PM029.],
-    [U.S. Navy, _Comprehensive Review of Recent Surface Force Incidents_ (Nov. 2017) — both collisions judged avoidable.],
-    [NTSB/MAR-19/01 (2019) — probable cause: insufficient training and inadequate bridge procedures from a lack of Navy oversight.],
-    [R. Rotella et al., #link("https://features.propublica.org/navy-uss-mccain-crash/navy-installed-touch-screen-steering-ten-sailors-paid-with-their-lives/")["The Navy Installed Touch-Screen Steering Systems to Save Money,"] _ProPublica_ (2019).],
-    [U.S. Navy, _Strategic Readiness Review_ (Dec. 2017) — risks that "accumulated over time and did so insidiously."],
-    [U.S. Navy corrective actions (2017); NTSB/MAR-19/01 recommendations; #link("https://news.usni.org/2020/09/03/ntsb-unexplained-course-change-was-a-critical-error-in-fatal-uss-fitzgerald-collision")[USNI News] (2017–2020).],
-    [Surface Warfare Officers School Command, Basic Division Officer Course curriculum and the post-2017 return to in-person instruction; Naval Surface Group Western Pacific stand-up (2019) as the forward-readiness certification authority.],
-    [NTSB/MAR-19/01 (2019) — watchstander fatigue findings, including average sleep hours and the touch-screen helm misdiagnosis sequence.],
+    [N. G. Leveson & C. S. Turner, "An Investigation of the Therac-25 Accidents," _IEEE Computer_ 26(7): 18–41 (1993). #link("https://doi.org/10.1109/MC.1993.274940")[doi:10.1109/MC.1993.274940] — the removed hardware interlocks and the adapted software.],
+    [Leveson & Turner (1993) — the race condition, the uninformative "Malfunction 54", overdoses up to ~100×, six accidents, and at least three deaths.],
+    [Leveson & Turner (1993); N. G. Leveson, _Safeware: System Safety and Computers_ (Addison-Wesley, 1995) — the manufacturer's denial and the systemic findings.],
+    [N. G. Leveson, _Engineering a Safer World: Systems Thinking Applied to Safety_ (MIT Press, 2011) — why removing a safeguard requires explicitly reassigning its safety function.],
+    [The case's role in medical-device software regulation and software-safety practice (FDA software guidance; IEC 62304 lineage); see also #link("https://ethicsunwrapped.utexas.edu/case-study/therac-25")[Ethics Unwrapped, UT Austin].],
   ),
-  quote: [The risks that were taken in the Western Pacific accumulated over time and did so insidiously.],
-  quote-source: "U.S. Navy Strategic Readiness Review, 2017",
+  quote: [Therac-25 illustrates the dangers of relying on software safety controls without rigorous engineering practices.],
+  quote-source: "Paraphrasing Leveson & Turner, IEEE Computer, 1993",
   le-insight: [
-    Fitzgerald/McCain is the canonical Training Gap case because the gap
-    was invisible from inside the system. Operational tempo and self-study
-    "training" combined to produce a fleet whose stated readiness and
-    actual readiness diverged for more than a decade. The two collisions
-    nine weeks apart converted what could have been read as an outlier into
-    a structural diagnosis: an under-trained bridge team failing the most
-    basic give-way rules, and an unfamiliar interface that made the same
-    gap reach the hull. Seven sailors died on Fitzgerald; ten on McCain.
-    The cost of the divergence was paid in lives long after it could have
-    been measured in dollars or inspections.
+    Therac-25 is the moment when removing the human safety margin became
+    visible as a design choice. The hardware interlock was not redundant —
+    it was the safety case. When it was removed, no equivalent capability
+    was put in its place. The operator was retained in the system but
+    stripped of the ability to detect what it was doing wrong. Capability
+    engineering would have asked, before removing the interlock, *what
+    function takes its load?*
   ],
   lens-approach: [
-    Fitzgerald/McCain is the worked example of induced sub-competency 1.1
-    (engineered vs. stated requirements) and the LENS D1/PT3 pairing —
-    Systems Analysis applied to the capability-engineering problem of
-    underway watchstanding. Students reconstruct the capability
-    requirements from operational analysis, then design the evidence
-    architecture (LENS D3) that would have surfaced the gap before the
-    collisions and the sociotechnical reforms (LENS D4) that would keep
-    waivers from quietly hollowing the requirement out. The case pairs
-    with INDOPACOM Marine Corps training (Case 2) as the live counterpart
-    where the same divergence between declared and engineered priority is
-    visible on a theater scale, and with Three Mile Island (Case 69) as the
-    failure that engineered durable industry reform through INPO. CLO
-    mapping: CLO-1 (Systems Analysis) primary, CLO-5 (Sociotechnical
-    Constraints) for the waiver-and-reporting institutional dynamics.
+    LENS frames Therac-25 as a *Design-Out* failure made visible through
+    Interface and Governance pathologies. Studio projects in LEN 5 ask
+    students to produce capability-load diagrams tracing every safety
+    function to a hardware backstop, a software check, or a trained
+    operator action with the information needed to perform it. LEN 7
+    examines incident reporting as governance.
   ],
   literature-items: (
-    [GAO-17-809T, _Navy Readiness_ (2017)],
+    [Leveson, _Engineering a Safer World_ (2011) — STAMP for medical devices],
     [Rasmussen (1997), "Risk management in a dynamic society"],
-    [Snook, _Friendly Fire_ (2000)],
+    [Perrow, _Normal Accidents_ (1984)],
   ),
   reflection-list: (
-    [The Navy replaced classroom and simulator instruction with CD-ROM self-study in 2003. What measurement would have detected the capability shortfall before 2017?],
-    [The Strategic Readiness Review found the readiness-reporting system had itself stopped working. Design a capability-evidence pipeline that would not normalize its own gaps.],
-    [Identify a capability in your organization that is certified by completion (a checked box) rather than demonstrated performance. What measure would convert it to evidence — and who would hold the authority to act on a red signal?],
+    [Identify a system in your domain that migrated a safety function from hardware to software. Where did the human-capability load go, and who is accountable for sustaining it?],
+    [Therac-25 operators saw "MALFUNCTION 54" and continued treatment. Redesign that interface using LEN 2 principles so that the operator's correct action is the easiest action.],
+    [The Therac-25's safety-critical software was inherited from earlier machines and never re-audited. Identify reused code in a system you build that now carries a load it was never written for, and specify the review it should have received.],
   ),
   approaches: (
     during: (
-      [Specify watchstanding proficiency as a measured deliverable — define the competency, instrument it, and gate qualification on demonstrated skill rather than sea time.],
-      [Keep human-factors review in the procurement loop: validate that any interface change (e.g., the bridge console) is tested against operator performance before it is fielded.],
-      [Design the readiness signal to report demonstrated capability, not self-attested course completion.],
+      [Before deleting any hardware interlock, write down the safety function it performs and explicitly reassign that function to a verified software check, an independent monitor, or an informed operator action.],
+      [Do not let safety rest entirely on one software path; require an independent channel that does not share the same code, so a single defect cannot defeat the whole safety case.],
+      [Specify error messages as a safety deliverable — each fault code must say what is wrong and what the operator should do, never offer to proceed past an undiagnosed condition.],
     ),
     after: (
-      [Audit the gap between reported and actual readiness with independent assessment (the Ready-for-Sea model) — with authority to pull a unit offline.],
-      [Protect training time against operational tempo so the capability cannot erode silently when schedules tighten.],
-      [Track leading indicators — qualification currency, near-miss reports — so divergence is visible before it is paid for in lives.],
+      [Treat every field report of unexpected harm as evidence to be aggregated, not a complaint to be closed, with a standing path to halt the device when a pattern emerges.],
+      [Audit any safety-critical code reused from a prior system against the new hazard set, since assumptions safe in the old context may be lethal in the new one.],
+      [Instrument the machine so an independent monitor can detect a beam fired without its target and stop it, restoring the interlock's function even where the operator cannot see the fault.],
     ),
   ),
-  courses: ("LEN 1", "LEN 5", "LEN 8", "LEN 3",),
-  scale: "big",
-  evidence-source: "investigation",
-  induced-anchor: "1.1",
-  lens-anchor: "D1/PT3",  // alternate framing adopted: training-design lens (the operator-licensing reforms) over institution-building (INPO); INPO retained as paired-case context in lens-approach,  // alternate framing adopted: institutional-learning lens over systems-analysis; preserves D1/PT3 as a defensible secondary,
-  clo-anchor: "CLO-1, CLO-5",
-)
-
-#case(
-  number: 2,
-  slug: "marine-corps-training-in-the-indopacom",
-  title: "Marine Corps Training in the INDOPACOM AOR",
-  year: "ongoing",
-  domains-list: ("defense",),
-  modes-code: "TK",
-  impact: "Structural readiness gap in DoD's stated top-priority theater",
-  diagram: dgm.dgm-indopacom,
-  kind: "failure",
-  summary: [
-    The 2022 National Defense Strategy names the Indo-Pacific the Pentagon's
-    priority theater and China its "pacing challenge" — yet the theater so
-    designated has among the least mature live-training infrastructure in
-    the force. For nearly a decade the U.S. Marine Corps has been unable to
-    meet its training requirements at Indo-Pacific ranges, papering over the
-    gap with rotations back to U.S. ranges, virtual substitutes, and
-    multinational exercises pressed into proxy duty. In May 2024 the GAO
-    documented the decade-long shortfall and urged the Corps to analyze its
-    unmet requirements and build a remediation plan. The case is this book's
-    live, ongoing counterpart to its historical failures: a fully
-    recognized, repeatedly documented capability gap that declared priority
-    has not closed, because engineered priority — ranges, basing, certified
-    units — is slow and expensive.
-  ],
-  sections: (
-    // -- Background --
-    [
-      The 2022 National Defense Strategy names the Indo-Pacific the priority
-      theater and China the "pacing challenge."#cn() Set against that is an
-      awkward fact: the theater so designated has among the least mature
-      live-training infrastructure in the force — the place called most
-      important is, where forces can actually rehearse, one of the least
-      built out, so the strategy's top priority and the physical means to
-      prepare for it point in opposite directions, a contradiction the
-      briefings do not resolve.#cn()
-    ],
-    // -- What Happened --
-    [
-      The failure is a condition, not an event. For nearly a decade the
-      Marine Corps has been unable to meet its training requirements at
-      Indo-Pacific ranges, papering over the shortfall with rotations back
-      to U.S. ranges, virtual substitutes, and multinational exercises
-      pressed into proxy duty. The workarounds keep units partially trained;
-      the structural gap does not close, because each substitute buys a
-      single cycle of readiness without building the ranges, basing, or
-      instrumented airspace that would let the theater train its own force —
-      treating a permanent shortfall as a series of temporary ones.#cn()
-    ],
-    // -- The Investigation --
-    [
-      In May 2024 the Government Accountability Office documented the unmet
-      requirements, the decade over which they had gone unmet, and the
-      workarounds standing in for the real thing, and recommended the Corps
-      formally analyze its unmet requirements and build a remediation plan
-      for Indo-Pacific ranges; the Department concurred.#cn() It was not the
-      first warning — GAO has pressed the same readiness recommendations for
-      years, and flagged the gap between overseas training and readiness
-      reporting two decades ago, so the 2024 finding documents not a fresh
-      discovery but the durability of a shortfall that survived repeated
-      diagnosis, concurrence, and the passage of time without being
-      engineered away.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      What makes INDOPACOM diagnostic is the inverse correlation between
-      stated and engineered priority. A theater can be named the pacing
-      challenge in every briefing while its training infrastructure stays
-      short for ten years, because capability follows where construction and
-      dollars flow, not where strategy points. Declared priority is cheap;
-      engineered priority — ranges, instrumented airspace, basing, certified
-      units — is slow and expensive, and the gap between them is the real
-      measure of intent. A strategy document can be rewritten in a season; a
-      range complex takes years of construction and budget, so the decade-long
-      persistence of the shortfall says more about resourcing than any
-      reassertion of priority could.
-    ],
-    // -- Aftermath & Reform --
-    [
-      The reform remains mostly prospective: the GAO recommendations were
-      open as of 2024, an analysis and a funded remediation plan still to
-      come.#cn() Whether the gap closes will be decided not by another
-      strategy document but by whether the recommendation becomes programmed
-      ranges, dollars, and schedule — converting a concurrence on paper into
-      construction and certified units that a future review could actually
-      measure. It sits at the front of this book as the live counterpart to
-      its historical failures — a gap fully recognized, repeatedly
-      documented, and still not engineered away.
-    ],
-  ),
-  beats: (
-    "Strategy names the Indo-Pacific top priority while its live-training infrastructure remains among the least mature",
-    "Marine Corps papered over unmet range requirements with rotations, virtual substitutes, and multinational exercises",
-    "GAO documented decade-long unmet requirements in 2024; the Department concurred, echoing diagnoses pressed for years",
-    "Declared priority is cheap; engineered priority follows where construction and dollars actually flow",
-    "GAO recommendations remain open; closure depends on programmed ranges, dollars, and schedule, not another document",
-  ),
-  references: (
-    [_2022 National Defense Strategy of the United States of America_ (U.S. Department of Defense, 2022) — the Indo-Pacific as priority theater and China as the "pacing challenge."],
-    [U.S. Government Accountability Office, _Military Readiness: Actions Needed for DOD to Address Challenges_, #link("https://www.gao.gov/assets/gao-24-107463.pdf")[GAO-24-107463] (May 2024) — the least-mature training infrastructure in the priority theater.],
-    [GAO-24-107463 (2024) — the Marine Corps unable to meet INDOPACOM training requirements for nearly a decade, and the CONUS-rotation, virtual, and multinational-exercise workarounds.],
-    [GAO-24-107463 (2024) — recommendation that the Marine Corps analyze unmet training requirements and develop a remediation plan for Indo-Pacific ranges; DoD concurrence.],
-    [GAO, _Military Readiness_ testimony before the Senate Armed Services Committee (D. C. Maurer) — the sustained pattern of readiness recommendations; see also GAO-02-525, _Military Training: Limitations Exist Overseas but Are Not Reflected in Readiness Reporting_ (2002).],
-    [GAO-24-107463 (2024) — recommendation status (open as of 2024); the gap not yet remediated.],
-  ),
-  quote: [Without meeting these requirements, the Marine Corps cannot ensure that its forces will be ready for combat.],
-  quote-source: "Paraphrasing GAO-24-107463, Military Readiness, 2024",
-  le-insight: [
-    INDOPACOM illustrates the difference between declared priority and
-    engineered priority. A theater designated as DoD's pacing challenge
-    while the training infrastructure to operate in it remains
-    structurally short is not a resourcing oversight — it is a capability
-    architecture failure. Capability follows where resources actually
-    flow, not where briefings name as critical.
-  ],
-  lens-approach: [
-    LENS uses INDOPACOM in LEN 5 to teach the gap between stated
-    requirements and engineered requirements, and in LEN 8 to examine the
-    organizational dynamics that allow declared priorities to coexist with
-    unfunded capability gaps for a decade. The case is also a live test
-    for any student's claim about how to engineer cross-service capability
-    at scale.
-  ],
-  literature-items: (
-    [GAO-24-107463 and predecessor reports],
-    [Fixsen et al. (2005), _Implementation Research_],
-    [Rasmussen (1997), "Risk management in a dynamic society"],
-  ),
-  reflection-list: (
-    [In your domain, what is the gap between *declared* priority and *engineered* priority? How would you measure it?],
-    [Construct the capability requirements artifact for a theater you do not currently operate in. What would it cost, and who would sign for it?],
-    [GAO documented this shortfall for years, the Department concurred, and the gap stayed open. Design the accountability mechanism that would convert a concurrence into programmed dollars and schedule, with a signal that fires when the plan slips.],
-  ),
-  approaches: (
-    during: (
-      [Tie any declared-priority designation to a funded engineering plan — ranges, basing, instrumented airspace, certified units — so strategy and resourcing cannot diverge unnoticed.],
-      [Treat live-training infrastructure for a priority theater as a programmed deliverable with schedule and budget, not a workaround filled by rotations and exercises.],
-      [Define the capability requirement for the theater explicitly, so the gap between what is needed and what is built is visible at the point of decision.],
-    ),
-    after: (
-      [Audit declared versus engineered priority annually — measure where construction and dollars actually flowed against where strategy named as critical.],
-      [Track recommendation status to closure with an authority that can escalate when a concurrence does not become programmed work.],
-      [Monitor whether substitute training (rotations, virtual, multinational) is masking a structural shortfall rather than retiring it.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 8"),
-  scale: "big",
-  induced-anchor: "1.1",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-  evidence-source: "investigation",
-)
-
-#case(
-  number: 3,
-  slug: "f-35-sustainment-and-maintainer-shortage",
-  title: "F-35 Sustainment & Maintainer Shortage",
-  year: "ongoing",
-  domains-list: ("defense",),
-  modes-code: "TKD",
-  impact: "Fleet mission-capable rate about 55% (March 2023), far short of program goals; lifecycle cost exceeds $1.7T, with ~$1.3T in operating and support; maintainer, technical-data, and depot shortfalls are the binding readiness constraint (GAO-23-105341)",
-  diagram: dgm.dgm-f35,
-  kind: "failure",
-  summary: [
-    The F-35 is the most expensive weapons program in history — roughly
-    2,500 jets planned and a lifecycle cost above \$1.7 trillion, about
-    \$1.3 trillion of it in operating and support. The hard part was never
-    the airplane but keeping a global fleet ready, and that half has lagged
-    from the start. As of March 2023 the fleet's mission-capable rate was
-    about 55%, far short of goal, with more than 10,000 components in
-    the repair queue and depots behind schedule. GAO traced the shortfall to
-    maintainer shortages, the military's lack of access to technical data,
-    and contractor dependency, and urged a full reassessment of the
-    sustainment strategy. It is the book's cleanest case of a platform
-    fielded faster than the capability infrastructure to sustain it.
-  ],
-  sections: (
-    // -- Background --
-    [
-      The F-35 is the most expensive weapons program in history: the Pentagon
-      plans to buy nearly 2,500, at a lifecycle cost exceeding \$1.7 trillion
-      — roughly \$1.3 trillion of it not the aircraft but the decades of
-      operating and sustaining them.#cn() The flyaway jet is the finite part;
-      keeping a global fleet ready — maintainers, technical data, depots — is
-      the open-ended part, and the part that lagged, because the cost that
-      dominates the program is not buying the aircraft but the decades of
-      sustaining them, the very work that received the least attention as the
-      jets rolled off the line.
-    ],
-    // -- What Happened --
-    [
-      The failure is a standing condition. As of March 2023 the fleet's
-      mission-capable rate was about 55%, far short of goal; more
-      than 10,000 components waited in the repair queue, and the depots
-      averaged about 72 days per repair while still behind schedule in
-      standing up the capacity to do the work at all — a backlog and a
-      turnaround time that compound, since parts stuck in the queue keep jets
-      grounded and the under-built depots cannot clear the queue fast enough
-      to recover the mission-capable rate.#cn()
-    ],
-    // -- The Investigation --
-    [
-      GAO's September 2023 review was bluntly titled: the Department and
-      services *need to reassess the future sustainment strategy*. It traced
-      the shortfall to maintainer shortages, the military's lack of access to
-      the technical data needed to do its own repairs, and the resulting
-      dependence on the prime contractor.#cn() None of it was new — GAO has
-      repeated the same diagnosis year after year, through a troubled
-      logistics-software backbone and slow progress, even as procurement
-      continued and readiness stayed flat, so the program kept buying more
-      jets it could not fully sustain while the same three shortfalls were
-      named in review after review without being closed.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      The F-35 is the cleanest modern case of a platform fielded faster than
-      the capability infrastructure to sustain it. Aircraft arrived on
-      schedule; the maintainers, technical data, and depots were treated as
-      follow-on costs rather than deliverables that had to field with the
-      jets. The hardest part is the data: much of what is needed to repair
-      the aircraft stayed controlled by the contractor, so the services
-      cannot freely write procedures, qualify depots, or compete the work,
-      which locks the fleet into a single source for the knowledge needed to
-      keep it flying — merely expensive in peacetime, dangerous in war, when
-      a contractor-dependent sustainment chain is exactly the kind of
-      bottleneck an adversary would seek to exploit.#cn()
-    ],
-    // -- Aftermath & Reform --
-    [
-      GAO urged a full reassessment of the sustainment strategy — government
-      access to technical data, depot capacity, and a maintainer pipeline —
-      rather than more patching.#cn() Those recommendations remain a work in
-      progress, with later reviews showing costs still rising and readiness
-      still below goal. The F-35 sits in this book as the live argument for
-      treating capability infrastructure — people, data, the means to sustain
-      them — as a fielding gate, not an afterthought. The bill for skipping
-      that gate does not disappear; it compounds, arriving as grounded jets,
-      a swelling repair queue, and a sustainment chain the services cannot
-      control rather than as a line item caught early enough to fix cheaply.
-    ],
-  ),
-  beats: (
-    "Most expensive program in history; most of its lifecycle cost is decades of sustainment work",
-    "Fleet ran at half goal with over 10,000 components queued and depots still behind schedule",
-    "GAO traced shortfall to maintainer shortages, lack of access to technical data, and contractor dependency",
-    "Aircraft fielded faster than maintainers and data; contractor controls knowledge needed to keep jets flying",
-    "GAO urged full sustainment reassessment; costs still rising and fleet readiness still below program goals",
-  ),
-  references: (
-    [U.S. Government Accountability Office, _F-35 Aircraft: DOD and the Military Services Need to Reassess the Future Sustainment Strategy_, #link("https://www.gao.gov/products/gao-23-105341")[GAO-23-105341] (Sept. 2023) — ~2,500 planned aircraft and a lifecycle cost exceeding \$1.7 trillion, ~\$1.3 trillion of it in operating and support.],
-    [GAO-23-105341 (2023) — ~55% fleet mission-capable rate (March 2023); over 10,000 components awaiting repair; ~72-day average depot turnaround; depot stand-up behind schedule.],
-    [GAO-23-105341 (2023) — sustainment shortfall traced to maintainer shortages, lack of military access to technical data, and contractor dependency.],
-    [GAO, _F-35 Sustainment: DOD Faces Several Uncertainties…_, #link("https://www.gao.gov/assets/gao-22-105995.pdf")[GAO-22-105995] (2022), and the broader GAO F-35 series — the recurring, year-over-year diagnosis.],
-    [GAO-23-105341 (2023) — recommendation that DOD reassess the future sustainment strategy.],
-    [GAO, _F-35 Sustainment: Costs Continue to Rise While Planned Use Has Decreased_, #link("https://www.gao.gov/assets/d24106703.pdf")[GAO-24-106703] (2024) — costs rising while readiness stays below goal.],
-  ),
-  quote: [Organizational-level maintenance has been affected by a number of issues, including a lack of technical data and training.],
-  quote-source: "Paraphrasing GAO-23-105341, F-35 Aircraft, 2023",
-  le-insight: [
-    F-35 is the live, current example of fielding a platform faster than
-    its capability infrastructure can be built. The aircraft is the easy
-    part; the maintainers are the hard part. A decade of program
-    schedules treated maintainer training as a follow-on cost, not a
-    fielding gate. The fleet is now operating at half of its design
-    readiness, and the program of record is more than a trillion dollars
-    over its 2018 estimate.
-  ],
-  lens-approach: [
-    LENS treats the F-35 in LEN 5 as the canonical case of *Capability-
-    System Misalignment at Transition*, the program's first canonical
-    problem type. Students design the capability infrastructure that
-    should have accompanied each lot of aircraft delivered, including the
-    training pipeline, technical-data deliverables, and depot
-    establishment.
-  ],
-  literature-items: (
-    [GAO F-35 series, 2014–present],
-    [Fixsen et al. (2005), _Implementation Research_],
-    [Augustine, _Augustine's Laws_ (1986)],
-  ),
-  reflection-list: (
-    [Pick a current technology platform in your domain. Estimate the capability infrastructure that must field with it. What happens if half of that infrastructure is years behind the hardware?],
-    [The F-35 program treated maintainer training as follow-on cost. Design a fielding gate that would prevent that decision being available to a future program manager.],
-    [Much of the data needed to repair the F-35 stayed controlled by the contractor, foreclosing the government's ability to compete or qualify the work. For a platform in your domain, what data rights would you make a contractual deliverable up front, and how would you verify they were actually delivered?],
-  ),
-  approaches: (
-    during: (
-      [Make sustainment infrastructure — maintainers, technical data, depot capacity — a contractual deliverable that fields with each lot of aircraft, not a follow-on cost.],
-      [Secure government rights to the technical data needed to write procedures, qualify depots, and compete the work, so the fleet is not locked to a single source.],
-      [Gate fielding on demonstrated sustainment capacity, not just aircraft delivery, so readiness is engineered alongside the platform.],
-    ),
-    after: (
-      [Audit the mission-capable rate against repair-queue depth and depot turnaround, and act when the backlog signals a structural, not transient, shortfall.],
-      [Track recurring GAO-style diagnoses to closure, refusing to let procurement outpace the sustainment fixes named year after year.],
-      [Monitor contractor dependency as a wartime risk, and sustain a government maintainer pipeline and depot capacity that can hold under pressure.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 8", "LEN 3",),
-  scale: "big",
-  induced-anchor: "1.4",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-  evidence-source: "investigation",
-)
-
-#case(
-  number: 4,
-  slug: "military-fratricide-desert-storm-to",
-  title: "Military Fratricide — Desert Storm to Afghanistan",
-  year: "1991 – 2014",
-  domains-list: ("defense",),
-  modes-code: "THK",
-  impact: "24% of U.S. KIA in Desert Storm from friendly fire (35 of 146) — an order of magnitude above the historical baseline",
-  diagram: dgm.dgm-fratricide,
-  kind: "failure",
-  summary: [
-    Friendly fire killed an unusual share of coalition forces in the 1991
-    Gulf War: 35 of 146 U.S. combat deaths (24%) and 72 of 467
-    wounded (15%). (The often-cited "2% historical baseline"
-    from Shrader's 1982 study is contested — later estimates run nearer
-    10–15%, and Shrader stepped back from it.) Post-war reviews
-    blamed the chaos of combat, weak situational awareness and fire-control
-    discipline, and combat-identification failures — and noted the military
-    lacked a shared record to even study its own pattern. Fratricide is the
-    failure of several systems to integrate; despite a generation of
-    combat-ID investment, recurrences in Afghanistan and after show the rate
-    never fell to a confidently low level, because integration is the
-    hardest property to engineer by program.
-  ],
-  sections: (
-    // -- Background --
-    [
-      Friendly fire is as old as war, but its true rate is hard to pin down.
-      The most-cited estimate, from Charles Shrader's 1982 study _Amicicide_,
-      put it under 2% of battle casualties — a figure later analysts
-      challenged as far too low (nearer 10–15%), and one Shrader
-      himself stepped back from. The disputed baseline mattered because it
-      became the yardstick against which a modern war would be measured — and
-      a yardstick set too low makes any later rate look like a catastrophe.#cn()
-    ],
-    // -- What Happened --
-    [
-      The 1991 Gulf War made the question grim and concrete: of 146 U.S.
-      service members killed in action, 35 — about 24% — died by
-      friendly fire, and 72 of 467 wounded (15%) were hit by their own
-      side.#cn() An A-10 strike on U.S. LAV-25s near Khafji killed seven
-      Marines; a single A-10 attack on British Warrior vehicles killed nine —
-      each an aircraft firing on friendly vehicles it had failed to identify,
-      the recurring shape of the problem. Whatever the true baseline, a
-      quarter of American combat deaths from one's own forces could not be
-      waved off as the ordinary friction of battle.#cn()
-    ],
-    // -- The Investigation --
-    [
-      Post-war reviews converged on familiar causes: the chaos of combat,
-      inadequate situational awareness, weak adherence to fire-control
-      measures, and combat-identification failures.#cn() One finding cut
-      deeper — the military lacked a comprehensive, shared record of
-      fratricide incidents, so it could not study its own pattern, separate
-      training failures from doctrine or equipment, or tell whether a fix was
-      working. Without a common database, every incident was investigated in
-      isolation and the aggregate signal that might have driven reform never
-      formed. The capability to *learn* was itself missing, a second-order
-      gap beneath the first.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      Fratricide is not one problem but the failure of several systems to
-      integrate — situational awareness, fire-control discipline, combat
-      identification, joint coordination — each the subject of dedicated
-      programs, yet the rate never fell to anything negligible. In
-      Afghanistan a satellite-guided strike went wrong after a controller's
-      device reset its coordinates, and in 2014 a B-1's targeting pod could
-      not detect the infrared strobes marking U.S. troops, killing five. Each
-      contributor was worked on; the integration *across* them — which is
-      what actually keeps friendly forces from killing each other — is the
-      hardest thing to engineer by program, because no single office owns it
-      and no single procurement can deliver it — and it is where the
-      capability kept failing.#cn()
-    ],
-    // -- Aftermath & Reform --
-    [
-      The response was a generation of combat-identification investment:
-      better IFF systems, blue-force-tracking networks, and changes to
-      fire-control doctrine and training. The improvements were real, yet
-      fratricide never dropped to a confidently low, stable rate, and even
-      measuring it remained contested.#cn() That is the lesson: where
-      capability is an emergent property of many systems working together, no
-      single program closes the gap — improving each contributor in isolation
-      still leaves the integration between them unaddressed — and progress
-      has to be measured against an honest baseline rather than a convenient
-      one.
-    ],
-  ),
-  beats: (
-    "Shrader's contested under-2% baseline became the yardstick that made any later rate look catastrophic",
-    "A quarter of U.S. KIA died to friendly fire; A-10s struck Marines and British Warriors",
-    "Reviews cited combat chaos, weak awareness, fire-control lapses, and the absence of a shared incident database",
-    "Fratricide is integration across many systems; no single office owns what keeps the rate down",
-    "Better IFF and blue-force tracking followed, yet rates never settled at a confidently low level",
-  ),
-  references: (
-    [C. R. Shrader, _Amicicide: The Problem of Friendly Fire in Modern War_ (U.S. Army Combat Studies Institute, 1982) — the under-2% estimate from 269 incidents, a baseline later challenged as too low (with estimates nearer 10–15%).],
-    [#link("https://www.usni.org/magazines/proceedings/1994/june/friendly-fire-facts-myths-and-misperceptions")["Friendly Fire: Facts, Myths and Misperceptions," _U.S. Naval Institute Proceedings_ (June 1994)] — Desert Storm: 35 of 146 KIA (24%) and 72 of 467 wounded (15%) by friendly fire; critique of the 2% "historical norm."],
-    [Khafji and Warrior fratricide incidents (Feb. 1991) — see USNI _Proceedings_ (1994) and #link("https://time.com/archive/6718429/gulf-war-they-didnt-have-to-die/")[Time, "They Didn't Have to Die"]. _(Per-incident casualty figures vary across sources; see AUDIT.)_],
-    [U.S. GAO, _Operation Desert Storm_ fratricide investigations — Apache incident (OSI-93-4) and Army fratricide investigation (OSI-95-10) — causes and the Army's reviews.],
-    [Post-war combat-identification reviews — leading causes (situational awareness, fire-control measures, combat ID) and the absence of a comprehensive incident database. _(Synthesized from secondary analyses; see AUDIT.)_],
-    [Later-conflict recurrences (2001 coordinate-reset strike; 2014 B-1 infrared-strobe strike) and S. Snook, _Friendly Fire_ (Princeton Univ. Press, 2000) on the 1994 Black Hawk shootdown — the systems-integration archetype.],
-    ["IFF Update: Stalled Again," _U.S. Naval Institute Proceedings_ (June 1994) — the combat-identification and identification-friend-or-foe programs pursued after Desert Storm, and how slowly they matured.],
-  ),
-  quote: [The lack of a comprehensive and accessible automated database prevented thorough examination of the problem.],
-  quote-source: "Paraphrasing post–Desert Storm fratricide reviews, c. 1993",
-  le-insight: [
-    Fratricide is a multi-decade capability problem that resists single-
-    intervention solutions. Each of the contributing causes — situational
-    awareness, fire-control discipline, combat identification, joint
-    coordination — has been the subject of dedicated programs. The rate
-    persists because the integration across the contributors is itself
-    the capability, and integration is the hardest property to engineer
-    by program.
-  ],
-  lens-approach: [
-    LENS uses fratricide in LEN 5 to teach systems-of-systems capability
-    analysis and in LEN 2 to introduce combat identification as a
-    Human-AI Teaming problem (operators rely on automated IFF systems
-    whose limitations are not in their training). LEN 8 examines why
-    decades of awareness have not produced a sustained reduction.
-  ],
-  literature-items: (
-    [Shrader, _Amicicide_ (1982)],
-    [Snook, _Friendly Fire_ (2000) on Black Hawk shootdown over Iraq],
-    [Joint and Coalition Operations Analysis literature],
-  ),
-  reflection-list: (
-    [Identify a capability problem in your domain that has been the subject of repeated programs without sustained improvement. What is the integration gap that the programs do not address?],
-    [Design a measurement system that would distinguish a temporary improvement in fratricide rate from a structural one.],
-    [The military lacked a shared incident database, so it could not study its own pattern. Identify a recurring harm in your domain that is investigated case-by-case but never aggregated, and design the shared record that would let the pattern become visible.],
-  ),
-  approaches: (
-    during: (
-      [Treat combat identification as a systems-of-systems requirement with a single owner for the integration, not as separate IFF, situational-awareness, and fire-control programs.],
-      [Build a comprehensive, shared incident database from the outset so the pattern across events can be studied and fixes tested against it.],
-      [Design fire-control discipline and identification into joint coordination, so the integration that prevents fratricide is engineered rather than left emergent.],
-    ),
-    after: (
-      [Audit the friendly-fire rate against an honest baseline, distinguishing a temporary dip from a structural reduction before crediting any program.],
-      [Monitor each contributor and the integration across them, since improving components in isolation can leave the joint failure mode untouched.],
-      [Sustain the learning channel so later-conflict recurrences feed back into doctrine and training rather than being investigated in isolation.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 2", "LEN 8"),
-  scale: "big",
-  induced-anchor: "1.3",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-  evidence-source: "investigation",
-)
-
-#case(
-  number: 5,
-  slug: "operation-eagle-claw",
-  title: "Operation Eagle Claw",
-  year: "1980",
-  domains-list: ("defense",),
-  modes-code: "TK",
-  impact: "8 servicemembers killed in Iran; mission to rescue 52 American hostages aborted; catalyst for the founding of U.S. Special Operations Command",
-  diagram: dgm.dgm-ring(
-    "Eagle\nClaw",
-    ("Army", "Navy", "Marines", "Air Force", "CIA"),
-    framing: "five organizations · no joint command · no shared training",
-    caption: "the absence of an institution that could own the mission",
-  ),
-  kind: "failure",
-  summary: [
-    The April 1980 mission to rescue fifty-two American hostages held at
-    the U.S. embassy in Tehran was aborted at a desert staging point when
-    three of eight helicopters were lost to mechanical and weather
-    problems. During the withdrawal a helicopter collided with a refueling
-    C-130, killing eight servicemembers; the hostages remained captive for
-    another nine months. The Holloway Commission found the operation had
-    been assembled ad hoc: each service contributed its own units,
-    equipment, and command relationships, the aircrews had not trained
-    together, and there was no standing joint special-operations command
-    to own the mission. The capability had to be improvised, and the
-    improvisation failed. Eagle Claw catalyzed the creation of JSOC, the
-    Goldwater-Nichols reforms, and ultimately U.S. Special Operations Command.
-  ],
-  sections: (
-    // -- Background --
-    [
-      In November 1979, Iranian revolutionaries seized the U.S. embassy
-      in Tehran and took fifty-two Americans hostage. After months of
-      failed diplomacy, the Carter administration authorized a military
-      rescue. No standing joint special-operations command existed to
-      plan or execute it; the force had to be assembled from units drawn
-      separately from the Army, Navy, Marines, and Air Force — each bringing
-      its own equipment, procedures, and chain of command to a mission that
-      demanded they act as one, with no institution whose job it was to make
-      them cohere before the night of the raid.#cn()
-    ],
-    // -- What Happened --
-    [
-      On 24 April 1980, the mission staged at a remote site code-named
-      Desert One. Three of the eight RH-53 helicopters were disabled by
-      a dust storm and mechanical failure, dropping the force below the
-      minimum needed; the commander aborted. During the withdrawal a
-      helicopter collided with a C-130 tanker, and the resulting fire
-      killed eight servicemembers. The mission failed before reaching
-      Tehran — undone not by enemy action but by attrition and a chaotic
-      withdrawal among aircraft and crews that had never operated together,
-      the predictable cost of integration improvised under pressure rather
-      than built and rehearsed in advance.#cn()
-    ],
-    // -- The Investigation --
-    [
-      The Holloway Special Operations Review Group identified the
-      operation's "ad hoc-ery" as central: each service contributed its
-      own units, equipment, command relationships, and communications;
-      the aircrews had not trained together as a unit; the RH-53D had
-      been selected partly for a minesweeping cover story rather than for
-      fitness for a desert rescue. There was no standing organization to
-      own the mission end to end — no single authority responsible for the
-      force's training, equipment fit, and command architecture as a whole,
-      so each gap was someone's problem in part and no one's in full.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      Each service was competent inside its own boundary. The capability
-      that did not exist was the integration across them — a joint
-      command, a common communications architecture, and a force that had
-      trained together. That integration had to be improvised for a
-      single high-stakes mission, and the improvisation could not hold —
-      because cross-service cohesion is not summoned on demand but accrued
-      through standing structure and repeated joint training, neither of
-      which existed when the order came.#cn()
-    ],
-    // -- Aftermath & Reform --
-    [
-      Eagle Claw produced the Holloway Commission, the creation of the
-      Joint Special Operations Command in 1980, and — alongside the 1983
-      Beirut bombing and the Grenada invasion — the impetus for the
-      Goldwater-Nichols Act of 1986 and the Nunn-Cohen Amendment
-      establishing U.S. Special Operations Command in 1987. The reform
-      built the institution the mission had needed and not had — converting a
-      capability that had been improvised once and failed into a standing
-      command with its own forces, training, and authority, so the next
-      mission would inherit cohesion rather than assemble it from scratch.#cn()
-    ],
-  ),
-  beats: (
-    "No standing joint command existed; the rescue force was drawn ad hoc from four services",
-    "Three RH-53s failed at Desert One; on withdrawal a helicopter struck a C-130 killing eight",
-    "Holloway named ad hoc assembly, untrained aircrews, and a cover story driven aircraft choice",
-    "Each service was competent in its lane; cross-service integration as a deliverable did not exist",
-    "Reform built JSOC, Goldwater Nichols in 1986, and USSOCOM in 1987 as standing joint capability",
-  ),
-  references: (
-    [Holloway Special Operations Review Group, _Rescue Mission Report_ (1980) — the ad-hoc assembly and equipment choices (paraphrased).],
-    [Holloway Commission (1980) — the Desert One sequence and the helicopter–C-130 collision.],
-    [Goldwater-Nichols Department of Defense Reorganization Act of 1986, Pub. L. 99-433.],
-    [Nunn-Cohen Amendment (1986), establishing U.S. Special Operations Command (1987).],
-    [Locher, J. (2002), _Victory on the Potomac_ — the reform arc from Desert One to Goldwater-Nichols.],
-  ),
-  quote: [The mission was ad hoc — assembled from units, equipment, and command relationships that had never operated together.],
-  quote-source: "Paraphrasing the Holloway Special Operations Review Group, 1980",
-  le-insight: [
-    Eagle Claw is the canonical case in U.S. defense for the absence of
-    institutionalized cross-service capability. Each service was
-    competent inside its own boundary; the integration across them did
-    not exist as a deliverable — until the reform that followed built
-    the institution the mission had needed and not had.
-  ],
-  lens-approach: [
-    LENS uses Eagle Claw in LEN 5 as a worked case for cross-
-    organizational capability requirements and in LEN 8 for the
-    institutional reform that followed; it pairs with INPO (Case 172) as
-    the defense analog of failure-driven institution building. The
-    seven-year arc to Goldwater-Nichols (1986) and USSOCOM (1987) is
-    itself a measurement: the institutional response time when the fix
-    requires statutory action.
-  ],
-  literature-items: (
-    [Locher (2002), _Victory on the Potomac_],
-    [Holloway Commission report (1980)],
-  ),
-  reflection-list: (
-    [Where in your domain does a cross-organizational capability exist on paper but not in practice? What would force its institutionalization?],
-    [Eagle Claw produced USSOCOM and Goldwater-Nichols six years later. Sketch the institutional design that an equivalent failure in your domain would force into existence.],
-    [The Holloway Commission named the mission's ad-hoc-ery as the diagnosis. What standing capability — institution, command, training pipeline — does your domain currently lack that an Eagle-Claw-class failure would force into existence?],
-  ),
-  approaches: (
-    during: (
-      [Stand up a single command that owns the cross-organizational mission end to end — its force, equipment fit, communications, and training — rather than assembling it per mission.],
-      [Require the contributing units to train together as one force on a common communications architecture before they are committed.],
-      [Select equipment for fitness to the actual mission, not for a convenient cover story or parent-service availability.],
-    ),
-    after: (
-      [Audit whether a cross-organizational capability that exists on paper has ever actually operated as one force, and treat the absence of joint reps as an unfilled gap.],
-      [Sustain the standing institution and its training pipeline so the next mission inherits cohesion rather than improvising it.],
-      [Monitor for the recurrence of ad-hoc assembly, since the conditions that produced Desert One reappear whenever no single authority owns the joint mission.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 8"),
-  scale: "big",
-  induced-anchor: "1.3",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-)
-
-#case(
-  number: 6,
-  slug: "aeroperu-flight-603",
-  title: "AeroPerú Flight 603",
-  year: "1996",
-  domains-list: ("aviation",),
-  modes-code: "HT",
-  impact: "70 killed; Boeing 757 crashed into the Pacific after maintenance tape was left over static ports",
-  diagram: dgm.dgm-cascade(
-    ("altimeter", "airspeed indicator", "GPWS / altitude alert", "Mach warning"),
-    outcome: "every instrument fed by the same blocked sensor",
-    caption: "AeroPerú 603 — redundancy that was not redundancy",
-  ),
-  kind: "failure",
-  summary: [
-    While polishing the fuselage of a Boeing 757 in Lima in October 1996,
-    maintenance staff taped over the static ports and failed to remove the
-    tape before flight. With the static system blocked, the aircraft's
-    altimeters, airspeed indicators, and altitude-alert and overspeed
-    warnings all read inconsistently. The crew received a cascade of
-    contradictory warnings — overspeed, stick shaker, ground proximity —
-    and could not determine their true altitude or speed. Believing they
-    were higher than they were, they flew into the Pacific, killing all 70
-    aboard. The investigation named the maintenance error as the primary
-    cause but stressed that every cockpit instrument depended on the same
-    blocked sensor: the apparent redundancy was an illusion, and the
-    crew's training had no procedure for "everything you see is wrong."
-  ],
-  sections: (
-    // -- Background --
-    [
-      AeroPerú 603 was a Boeing 757 night departure from Lima to Santiago.
-      Before the flight, ground crew had covered the aircraft's static
-      ports with adhesive tape during cleaning and polishing of the
-      fuselage, and the tape was not removed. The static ports feed the
-      instruments that tell the crew their altitude and airspeed — a single
-      physical source upstream of nearly every primary cockpit display, so
-      blocking it corrupted not one instrument but the whole air-data picture
-      the crew would rely on in the dark.#cn()
-    ],
-    // -- What Happened --
-    [
-      On 2 October 1996, the aircraft took off into darkness over the
-      ocean with its static system blocked. Altimeters, airspeed
-      indicators, and the altitude-alert and overspeed systems all
-      produced false and contradictory readings. The crew received
-      simultaneous overspeed and stall warnings and ground-proximity
-      alerts they could not reconcile. Believing they were higher than
-      they were, they descended and struck the Pacific, killing all 70
-      aboard — the contradictory warnings offering no way to tell which, if
-      any, instrument to trust, because every one of them drew on the same
-      blocked source and so failed in concert rather than disagreeing usefully.#cn()
-    ],
-    // -- The Investigation --
-    [
-      The Peruvian accident investigation identified the failure to remove
-      the static-port tape as the primary cause, but emphasized that the
-      cockpit had no independent reference by which to detect the
-      inconsistency. Every instrument that should have flagged the failure
-      drew on the same blocked source. The crew's training had no
-      procedure for the case in which all primary instruments are
-      simultaneously wrong — that failure had been assumed away rather than
-      planned for, leaving the crew to improvise against a problem the system
-      design had quietly made possible and the curriculum never named.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      AeroPerú 603 is the case for redundancy that is not redundancy. The
-      cockpit's apparent instrument redundancy was an illusion at the
-      source — a common-cause failure that defeated every downstream
-      display at once. The missing capability was both a maintenance
-      control that made the blocked port impossible to miss and a
-      procedure for flying when the instruments themselves cannot be
-      trusted — the first preventing the common-cause failure at its source,
-      the second giving the crew somewhere to stand when the apparent
-      redundancy in front of them collapsed all at once.#cn()
-    ],
-    // -- Aftermath & Reform --
-    [
-      The accident reinforced industry maintenance practices for
-      conspicuous covering and mandatory removal-verification of static
-      ports and pitot tubes, and entered the human-factors literature as
-      a worked example of common-cause failure and the limits of crew
-      training under total instrument corruption. It is paired with other
-      pitot-static events in discussions of air-data integrity — its lesson
-      being that redundancy counted at the display tells you nothing if the
-      redundant paths share a single upstream point that can fail them all
-      together.#cn()
-    ],
-  ),
-  beats: (
-    "Ground crew taped over the static ports during cleaning and the tape was never removed",
-    "All air data instruments fed false contradictory readings; believing they were higher the crew struck the Pacific",
-    "Peruvian investigators found no independent reference since every instrument fed off the blocked source",
-    "Apparent cockpit redundancy was illusory at the source and the training had assumed the case away",
-    "Industry tightened conspicuous covering and removal verification for static ports and pitot tubes",
-  ),
-  references: (
-    [Peru Dirección General de Aeronáutica Civil, accident investigation board, final report on AeroPerú 603 (December 1996; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
-    [Peru CIAA report (1996) — the static-port tape and the contradictory warnings.],
-    [Peru CIAA report (1996) — the absence of an independent cockpit reference.],
-    [Leveson, N. (2011), _Engineering a Safer World_ (STAMP) — common-cause failure.],
-    [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_ — crew performance under instrument failure.],
-  ),
-  quote: [The crew received contradictory indications they could neither reconcile nor override.],
-  quote-source: "Paraphrasing the Peruvian DGAC / Comisión Investigadora de Accidentes de Aviación report on AeroPerú 603, 1996",
-  le-insight: [
-    AeroPerú 603 is the case for redundancy that is not redundancy.
-    Every cockpit indicator depended on the same physical sensor. The
-    apparent redundancy in the cockpit was an illusion at the source.
-    The training did not include the failure case because the failure
-    case had been assumed not to occur.
-  ],
-  lens-approach: [
-    LENS uses AeroPerú in LEN 5 to teach the difference between
-    apparent and actual redundancy and in LEN 2 for the human role
-    when all interface data is unreliable. Studio projects examine the
-    "trust nothing" procedure design.
-  ],
-  literature-items: (
-    [Peru DGAC / CIA report on AeroPerú 603 (1996)],
-    [Leveson (2011), STAMP — common-cause failure],
-    [Dismukes et al. (2007), _The Limits of Expertise_],
-  ),
-  reflection-list: (
-    [Identify a redundant interface in your domain whose redundancy depends on a common upstream component. What is the operator procedure when the upstream component fails?],
-    [Design the "trust nothing" procedure for the AeroPerú crew. What information remains reliable when all instruments are corrupted?],
-    [A taped-over static port survived to takeoff because nothing made it conspicuous or forced its removal to be verified. Design the maintenance control in your domain that would make a blocked or covered critical component impossible to overlook before operation.],
-  ),
-  approaches: (
-    during: (
-      [Map redundant displays back to their upstream sources, and eliminate or instrument any common point whose failure would corrupt them all at once.],
-      [Make critical sensor covers conspicuous and require verified removal, so a blocked static port cannot reach takeoff unnoticed.],
-      [Provide an independent reference (e.g., a source not fed by the common component) so the crew can detect inconsistency at the source.],
-    ),
-    after: (
-      [Audit maintenance controls for tasks that cover or block critical sensors, confirming each has a conspicuous marker and a removal-verification step.],
-      [Train and rehearse a "trust nothing" procedure for total instrument corruption, the case the curriculum had assumed away.],
-      [Monitor for common-cause failure modes whose probability was assumed negligible, and revisit that assumption when the consequence is catastrophic.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 2"),
+  courses: ("LEN 5", "LEN 7", "LEN 2"),
   scale: "big",
   induced-anchor: "3.1",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-  evidence-source: "investigation",
+  lens-anchor: "D3/PT3",
+  clo-anchor: "CLO-3",
 )
 
+// ---- Case 2 — ehr-cpoe-implementation ----
 #case(
-  number: 7,
-  slug: "boeing-737-max-mcas",
-  title: "Boeing 737 MAX / MCAS",
-  year: "2018 – 2019",
-  domains-list: ("aviation",),
-  modes-code: "DTH",
-  impact: "346 killed across two crashes — Lion Air 610 and Ethiopian Airlines 302; 20-month worldwide grounding; ~\\$20B direct cost; FAA delegated-authority reform under the Aircraft Certification, Safety, and Accountability Act (2020)",
-  diagram: dgm.dgm-737max,
+  number: 2,
+  slug: "ehr-cpoe-implementation",
+  title: "EHR / CPOE Implementation",
+  year: "2005 – present",
+  domains-list: ("healthcare",),
+  modes-code: "HDG",
+  impact: "~$30B federal investment under HITECH; documented increase in pediatric ICU mortality post-CPOE at one institution; ongoing usability harm at scale",
+  diagram: dgm.dgm-ehr,
   kind: "failure",
-  scale: "big",
-  evidence-source: "investigation",
-  induced-anchor: "1.1",
-  lens-anchor: "D1+D5/PT4",
-  clo-anchor: "CLO-1, CLO-5",
   summary: [
-    The Boeing 737 MAX was a re-engined 737 meant to fly without new pilot
-    training — the commercial promise that sold it against the Airbus
-    A320neo. Its bigger, forward-mounted engines changed the jet's pitch
-    behavior, so Boeing added software (MCAS) to mask the difference, then
-    kept it out of the manuals and training and let it fire repeatedly on a
-    single angle-of-attack sensor. When that sensor failed on Lion Air 610
-    (October 2018) and Ethiopian 302 (March 2019), MCAS forced the nose
-    down and crews who had never heard of it could not recover; 346 people
-    died and the fleet was grounded for twenty months. Five major
-    investigations — the NTSB-supported KNKT (Lion Air) and EAIB (Ethiopian)
-    reports, the US House Transportation Committee final report, the DOT
-    Inspector General review, and the multinational Joint Authorities
-    Technical Review (JATR) — converged on the same diagnosis: the training
-    omission was a deliberate cost-avoidance choice, executed through an
-    FAA delegated-authority regime in which Boeing reviewed much of its own
-    safety judgment. The MAX is the book's inverse case: human capability
-    engineered out of a system to save the price of sustaining it, with
-    the elision underwritten by a certification process that did not have
-    the independence to catch it.
+    The 2009 HITECH Act poured roughly \$30 billion into accelerating
+    electronic health records, and adoption surged — but the systems had
+    been built to billing and administrative specifications, not clinical
+    workflow. New categories of harm followed. A disputed but canonical 2005
+    study found that deploying a commercial order-entry (CPOE) system at one
+    pediatric ICU was associated with a near-doubling of mortality; later
+    deployments showed mixed or improved results, yet the warning stuck. A
+    2023 survey across 200-plus hospitals found EHR usability is clinicians'
+    top complaint, and that usability scores track patient-safety outcomes.
+    Specific harms recur — a missed abnormal result hidden behind a default,
+    a fatal overdose an unactivated alert would have caught. There is still
+    no regulatory framework monitoring EHR safety. It is the book's live
+    interface-mismatch case.
   ],
   sections: (
     // -- Background --
     [
-      The 737 MAX was Boeing's answer to the Airbus A320neo: a re-engined
-      version of its best-seller that airlines could fly without retraining
-      pilots on a new type. But the MAX's larger, forward-mounted engines
-      changed how it pitched at high angles of attack, so Boeing added
-      software — the Maneuvering Characteristics Augmentation System,
-      MCAS — to make it handle like the older 737 NG, papering over an
-      aerodynamic change with a control law so the airframe would feel
-      identical from the cockpit. The whole commercial logic depended on
-      that software staying invisible: the less of a "new function" MCAS
-      seemed, the less the MAX would trigger costly new training, and the
-      lower the airline's switching cost away from the A320neo. Boeing
-      reportedly promised Southwest a rebate of about a million dollars per
-      jet if simulator training proved necessary — a clause that turned the
-      training requirement into a direct line on the program's ledger, and
-      one the House investigation later cited as a structural reason the
-      "no new training" promise behaved as a binding constraint on the
-      engineering rather than as an aspiration.#cn()
+      The 2009 HITECH Act authorized roughly \$30 billion in incentives to
+      accelerate electronic health record adoption, and adoption surged. But
+      the systems clinicians now had to use had been built to administrative
+      and billing specifications, not to clinical workflow or human-factors
+      specifications — a mismatch baked in before the first order was
+      entered.#cn() Because the incentives rewarded adoption rather than
+      usability, hospitals raced to install whatever cleared the bar, and the
+      specification gap propagated to the bedside at national scale before
+      anyone had to demonstrate that the tools supported the work of care
+      rather than merely the work of billing.
     ],
     // -- What Happened --
     [
-      To keep MCAS in the background, it was left out of the manual and the
-      type-rating training, and allowed to fire on a single angle-of-attack
-      sensor with no second source to cross-check it. The system's
-      authority was also expanded late in development — the trim it could
-      command grew from 0.6° to 2.5° per cycle, and its firing was made
-      repeatable rather than one-shot — without the corresponding
-      reassessment of the failure modes that change implied. When the
-      sensor failed on Lion Air Flight 610 in October 2018, MCAS
-      repeatedly forced the nose down; the crew, never told the system
-      existed, fought it cycle after cycle until the jet dove into the
-      Java Sea, killing all 189. Five months later Ethiopian Airlines
-      Flight 302 repeated almost exactly the same sequence — sensor
-      failure, repeated trim commands, unrecoverable nose-down attitude —
-      killing 157, for 346 dead across the two crashes, and the entire MAX
-      fleet grounded worldwide for what would become twenty months.#cn()
+      New categories of harm appeared alongside the new tools. A 2005 study
+      reported that deploying a commercial computerized order-entry (CPOE)
+      system at one pediatric ICU was associated with a near-doubling of
+      mortality — a single-institution result that provoked debate and that
+      later deployments elsewhere did not reproduce, but that became
+      canonical as a warning that powerful tools without workflow integration
+      can disrupt care at the moment of greatest acuity, when the seconds the
+      interface adds to an order are the seconds a critical patient does not
+      have.#cn() Specific harms
+      recur: a cancer treatment delayed for years because a default surfaced
+      an old normal result instead of a recent abnormal one; a baby killed by
+      an overdose an alert would have caught had it been switched on — each a
+      case where the interface's defaults and toggles, not the clinician's
+      competence, determined whether the right information reached the
+      decision.#cn()
     ],
     // -- The Investigation --
     [
-      The investigations made the decisions legible. The Indonesian KNKT
-      and Ethiopian EAIB accident reports, with NTSB participation,
-      established the accident sequences and the single-sensor design as
-      the proximate cause. The multinational Joint Authorities Technical
-      Review (JATR), convened by the FAA in 2019 with international
-      regulators, concluded that MCAS had not been evaluated as the novel
-      flight-control function it actually was. Internal 2013 Boeing
-      meeting minutes showed employees noting that calling MCAS a new
-      function would bring "greater certification and training impact" —
-      the cost the program was built to avoid, written down years before
-      either crash; a 2016 internal survey found 39% of certification
-      staff felt undue management pressure. The House Transportation
-      Committee's 2020 final report concluded Boeing's assumption that
-      simulator training was unnecessary "diminished safety, minimized the
-      value of pilot training, and inhibited technical design
-      improvements," naming the omission as a choice rather than an
-      oversight.#cn() The DOT Inspector General traced how the
-      single-sensor design and the training omission passed through a
-      certification process in which the FAA had delegated much of the
-      safety judgment back to Boeing itself under the Organization
-      Designation Authorization (ODA) program — so the company effectively
-      reviewed its own most consequential trade-offs, and the regulator
-      lacked both the technical depth and the institutional independence
-      to challenge the assessment.#cn()
+      A 2023 KLAS Arch Collaborative survey across more than two hundred
+      hospitals found EHR usability is consistently the top complaint of
+      physicians, nurses, and pharmacists, and that end-user experience
+      scores correlate with patient-safety outcomes — turning a stream of
+      anecdotes into longitudinal evidence that usability is now itself a
+      patient-safety variable. Spanning some two hundred hospitals, the survey
+      converts what could be dismissed as one site's grievance into a
+      reproducible signal, the kind of measurement that makes an interface
+      problem legible as a safety problem rather than a satisfaction one.#cn()
     ],
     // -- The Capability Gap --
     [
-      The MAX inverts this book's usual case. Human capability was not
-      overlooked by accident; it was deliberately engineered out to avoid
-      the cost of the training that would have created it. The pilots
-      were not undertrained by oversight but by design — the absence of
-      training was, in effect, a contract deliverable promised to
-      customers and protected by a rebate. The single-sensor architecture
-      was a second engineered-out capability: a redundant cross-check on
-      the angle-of-attack signal would have triggered the kind of design
-      and certification work the program was built to avoid, and was left
-      out for the same reason. Seen together, the crashes are not a
-      training failure that befell a good airplane but exactly what the
-      commercial and engineering decisions specified: a flight-control
-      system that depended on pilots reacting correctly, in seconds, to a
-      failure they had been guaranteed never to learn about, with no
-      sensor cross-check that could keep the failure from arriving in the
-      first place.#cn()
+      EHR/CPOE is the canonical ongoing case of an interface designed for one
+      set of requirements and deployed against another. The systems work for
+      billing and administration because that was the design constraint; they
+      fail for clinical workflow because clinical workflow was not. Decades
+      and tens of billions of dollars later, usability remains among the
+      largest contributors to in-system harm in U.S. healthcare — a cost that
+      persists precisely because it was never a design requirement and so was
+      never engineered out, only worked around by clinicians absorbing the
+      friction shift after shift.#cn()
     ],
     // -- Aftermath & Reform --
     [
-      The MAX was grounded for some twenty months — the longest grounding
-      of a US-certified airliner in the jet era. MCAS was redesigned to
-      use both AOA sensors, to fire once rather than repeatedly, and with
-      limited authority bounded by airspeed — restoring the margins the
-      original had stripped away. The FAA's 2020 return-to-service
-      directive required the simulator training the airplane had been
-      built to avoid. The Aircraft Certification, Safety, and
-      Accountability Act of 2020 then tightened FAA oversight of the ODA
-      delegation regime, required disclosure to pilots of flight-control
-      systems that act on a single sensor input, and funded FAA engineering
-      capacity that the delegation system had let atrophy. Boeing entered
-      a Deferred Prosecution Agreement with the DOJ on a fraud charge
-      tied to its disclosures to the FAA's Aircraft Evaluation Group.#cn()
-      The reform conceded the point the program had spent years
-      resisting: the training was a real requirement all along, the
-      sensor cross-check was a real requirement all along, and removing
-      them from the paperwork only deferred the cost — and then moved it
-      onto two airplanes full of people.
+      Usability and safety have risen on the agenda — AMA/Pew/MedStar
+      usability work, KLAS benchmarking, safety-focused design guidance — but
+      there is still no regulatory framework that monitors deployed EHR
+      safety the way drugs or devices are monitored. The lesson is that
+      buying the tool is not the same as engineering the capability: an
+      interface deployed against the wrong specification keeps extracting a
+      cost no one is formally counting, and without a monitoring regime the
+      harm stays diffuse — spread across millions of encounters, attributable
+      to no single failure, and therefore easy for the system to keep paying
+      indefinitely.#cn()
     ],
   ),
   beats: (
-    "Re-engined 737 sold on no new pilot training; MCAS hid the handling change",
-    "Single-sensor MCAS forced two jets down, killing 346 across both crashes",
-    "Internal records show training omission was deliberate; certification was largely self-delegated",
-    "Training absence was a contract deliverable, not an oversight; pilots engineered out",
-    "Twenty-month grounding; MCAS redesigned, simulator training required, FAA oversight tightened",
+    "HITECH poured thirty billion into EHRs built to billing specifications, not clinical workflow",
+    "Disputed 2005 CPOE study tied pediatric ICU mortality to deployment; default and alert harms recurred",
+    "A 2023 KLAS survey across hundreds of hospitals tied usability scores to patient safety outcomes",
+    "Systems work for billing because that was the specification; clinical workflow was never engineered",
+    "Usability guidance has matured but no regulatory regime monitors deployed EHR safety at scale",
   ),
   references: (
-    [U.S. House Committee on Transportation and Infrastructure, _The Boeing 737 MAX Aircraft: Costs, Consequences, and Lessons from Its Design, Development, and Certification_ (Final Committee Report, Sept. 2020) — the MCAS omission, the 2013 minutes, the 2016 survey, and the "diminished safety" conclusion.],
-    [U.S. House report (2020) and #link("https://en.wikipedia.org/wiki/Maneuvering_Characteristics_Augmentation_System")[MCAS design summary] — MCAS firing on a single angle-of-attack sensor; the Lion Air 610 (189 killed) and Ethiopian 302 (157 killed) accident sequences.],
-    [U.S. House Transportation Committee report (2020) — Boeing internal communications and the certification-and-training-impact reasoning (quoted).],
-    [U.S. Department of Transportation, Office of Inspector General, correspondence and review of FAA oversight of MCAS and the angle-of-attack systems (2019–2020) — the delegated-certification process.],
-    [J. Herkert, J. Borenstein & K. Miller, "The Boeing 737 MAX: Lessons for Engineering Ethics," _Science and Engineering Ethics_ 26 (2020) — certification-by-omission as an engineering-ethics failure.],
-    [Federal Aviation Administration, _Summary of the FAA's Review of the Boeing 737 MAX_ (Return-to-Service, 2020) — the MCAS redesign and the simulator-training requirement; and the Aircraft Certification, Safety, and Accountability Act (2020).],
+    [Health Information Technology for Economic and Clinical Health (HITECH) Act (2009) — the ~\$30B EHR incentive program.],
+    [Y. Han et al., "Unexpected Increased Mortality After Implementation of a Commercially Sold CPOE System," _Pediatrics_ 116(6): 1506–1512 (2005) — the disputed pediatric-ICU mortality result.],
+    [KLAS Arch Collaborative, EHR usability and safety surveys (2023) — usability as the top clinician complaint, correlated with safety outcomes.],
+    [D. Sittig & H. Singh, "Defining health information technology-related errors," and related EHR-safety work (2011–2013).],
+    [AHRQ Patient Safety Network, EHR-related harm cases — the default-result delay and the unactivated-alert overdose.],
+    [AMA / Pew / MedStar, _EHR Usability and Patient Safety_ (2018); R. Wachter, _The Digital Doctor_ (2015).],
   ),
-  quote: [Boeing's assumption that simulator training was unnecessary diminished safety, minimized the value of pilot training, and inhibited technical design improvements.],
-  quote-source: "House Transportation Committee Report, 2020",
+  quote: [Reports of new types of errors directly related to EHR implementation — errors that can compromise quality of care and patient safety — have emerged.],
+  quote-source: "Paraphrasing Sittig & Singh, EHR-related safety risks, 2013",
   le-insight: [
-    The 737 MAX is the documentary record of a design choice to remove human
-    capability to avoid the regulatory and commercial cost of sustaining it.
-    The pilots were not undertrained by accident — they were undertrained as
-    a *requirement*. The omission of training was a contract deliverable.
-    Once that is understood, the accident becomes legible as an engineering
-    decision rather than a training failure.
+    EHR/CPOE is the canonical ongoing case of an interface designed for
+    one set of requirements and deployed against another. The systems
+    work for billing and administration. They fail for clinical workflow
+    because clinical workflow was not the design constraint. Forty
+    billion dollars later, usability remains the single largest
+    contributor to in-system harm in U.S. healthcare.
   ],
   lens-approach: [
-    The 737 MAX is the canonical engineered-out-capability failure
-    (induced 1.1; LENS D1+D3/PT4). LENS uses it in Domain 1 (Systems
-    Analysis) for the CLO-1 work of decomposing system performance
-    requirements into measurable human-capability requirements:
-    the elided pilot-training requirement is the traceable artifact
-    a capability-requirements analysis would have surfaced before the
-    omission could become a contract deliverable. LENS uses it in
-    Domain 5 (Navigating Sociotechnical Constraints; CLO-5) for the
-    delegated-authority regulatory regime in which Boeing reviewed
-    its own most consequential safety judgments — the case is the
-    governance counterpart to Therac-25 (Case 59) at the
-    safeguard-removed-with-nothing-in-its-place layer, and pairs with
-    Patriot/Dhahran (Case 8) at the layer of design assumptions
-    that do not travel with a change of context.
+    LENS treats EHR/CPOE in LEN 7 as the live, ongoing example of
+    Design-Out and Interface failure under governance opacity, in LEN 2
+    as a human-AI teaming problem (alert fatigue, default surfacing), and
+    in LEN 9 as a computational systems problem (the alerting
+    architecture itself is a learnable model). The Han 2005 pediatric
+    ICU finding is the durable warning; the KLAS 2023 surveys across
+    two hundred hospitals are the contemporary, longitudinal evidence
+    that usability is now itself a patient-safety variable.
   ],
   literature-items: (
-    [Herkert, Borenstein & Miller (2020) on certification-by-omission ethics],
-    [Leveson, _Engineering a Safer World_ (2011) — STAMP],
-    [Casner & Hutchins (2019), "What Do We Tell the Drivers?"],
+    [Sittig & Singh (2013), Safety-related EHR risks],
+    [AMA / Pew / MedStar (2018), _EHR Usability and Patient Safety_],
+    [Wachter, _The Digital Doctor_ (2015)],
   ),
   reflection-list: (
-    [If a customer contract required removing a training requirement you judged necessary, what artifact would you produce, who would you route it to, and what would you do if the routing failed?],
-    [Reconstruct the MAX accident as a *capability-requirements* failure: what was the elided requirement, at what life-cycle stage was it elided, and who had the authority to insert it?],
-    [MCAS was permitted to act on a single sensor with no cross-check. Identify a system you work on that takes a safety-critical action from one unverified input, and specify the redundancy or human confirmation it lacks.],
+    [What is the equivalent system in your domain that was designed for one specification and deployed against another? How would you measure the harm?],
+    [Design the regulatory architecture that would surface EHR safety harms at scale. Be specific about signal, threshold, and authority.],
+    [The Han 2005 mortality result was disputed; the 2023 KLAS surveys are consistent across two hundred hospitals. What ongoing measurement architecture would have to exist for the equivalent emerging clinical-AI deployment in your domain to be evaluated honestly while in use?],
   ),
   approaches: (
     during: (
-      [Treat any control law that masks a handling change as a new function in its own right — document it, surface it to pilots, and size its training as part of the design, not after it.],
-      [Forbid safety-critical authority from resting on a single sensor; require an independent source or a cross-check before software can command the flight surfaces.],
-      [Quarantine commercial commitments — rebates, "no new training" promises — from the engineering judgment about what capability the airplane actually requires.],
+      [Write clinical workflow and human-factors performance into the procurement specification, so a system that serves billing but not bedside care cannot clear the buy.],
+      [Validate defaults, alerts, and result-surfacing against real clinical scenarios before deployment, since it was the default and the unactivated alert — not clinician skill — that determined the harm.],
+      [Tie any adoption incentive to demonstrated usability, so the money rewards a tool that supports care rather than merely one that is installed.],
     ),
     after: (
-      [Audit delegated certification so the party making a trade-off is never the same party that signs off on its safety, restoring independent review of the riskiest decisions.],
-      [Monitor in-service AOA-disagree and uncommanded-trim events as leading indicators, with a route that reaches engineering before a second airframe is lost.],
-      [Re-validate the "no new training needed" claim against real fleet incidents, and reopen the training requirement the moment operational data contradicts the assumption.],
+      [Stand up a post-deployment safety-monitoring regime for fielded EHRs comparable to how drugs and devices are surveilled, with thresholds and authority to force changes.],
+      [Track end-user experience scores as a patient-safety variable, using the cross-institution evidence that usability correlates with outcomes.],
+      [Audit recurring interface-driven harms — surfaced defaults, disabled alerts — and feed them back into vendor design requirements rather than absorbing them as clinician burden.],
     ),
   ),
-  courses: ("LEN 1", "LEN 5", "LEN 2"),
-)
-
-#case(
-  number: 8,
-  slug: "patriot-missile-dhahran",
-  title: "Patriot Missile / Dhahran",
-  year: "1991",
-  domains-list: ("defense",),
-  modes-code: "DHK",
-  impact: "28 U.S. soldiers killed in their barracks; roughly 100 wounded",
-  diagram: dgm.dgm-patriot,
-  kind: "failure",
-  summary: [
-    On 25 February 1991 a Scud missile struck a U.S. barracks in Dhahran,
-    Saudi Arabia, killing 28 soldiers and wounding about a hundred; the
-    Patriot battery defending the area never engaged it. Designed for short
-    engagements against Soviet aircraft in Europe, the Patriot tracked time
-    in a register whose tiny rounding error grew with every hour of uptime.
-    After about a hundred hours of continuous operation the Gulf War
-    demanded, the radar's range gate was off by a third of a second — enough
-    to look in the wrong place. Israeli operators had flagged the drift two
-    weeks earlier, and a patch reached Dhahran the day after the strike. The
-    capability to hold accuracy under sustained use was assumed away at
-    design time, and no one carried that assumption forward when the mission
-    changed.
-  ],
-  sections: (
-    // -- Background --
-    [
-      The Patriot was built to defend Western Europe against Soviet aircraft
-      in engagements of minutes — switched on, fired, switched off, then moved
-      before it could be targeted. In the 1991 Gulf War it was doing something
-      else: defending fixed sites in Saudi Arabia against ballistic missiles,
-      in batteries left running continuously for more than a hundred hours
-      because the threat came without warning and could not be scheduled. The
-      mismatch between the original concept of operations and the new use was
-      real, and invisible to the operators, because no one had told them the
-      machine had been built around an assumption they were now violating.#cn()
-    ],
-    // -- What Happened --
-    [
-      The system tracked time in a 24-bit fixed-point register, and a tiny
-      rounding error — invisible in any short engagement — accumulated with
-      every hour of uptime. After about a hundred hours the timing was off by
-      roughly a third of a second, which seems negligible until it is
-      multiplied by a ballistic missile's speed: enough for the radar's range
-      gate to look in the wrong place and reject the real track as noise. On
-      25 February 1991 an incoming Scud arrived where the Patriot was no
-      longer searching, passed unengaged, and struck a barracks in Dhahran,
-      killing twenty-eight soldiers of the 14th Quartermaster Detachment and
-      wounding about a hundred.#cn()
-    ],
-    // -- The Investigation --
-    [
-      The drift was not unknown: Israeli operators had flagged it two weeks
-      earlier from their own sustained use, and engineers had a patch already
-      in hand — which reached Dhahran the day after the strike, too late to
-      matter.#cn() The only field mitigation was an advisory to reboot after
-      "very long" run times, never defining "very long," so a crew could obey
-      the instruction to the letter and still drift into the danger band. The
-      General Accounting Office found the Army had simply presumed no one would
-      run a battery continuously for so long, and so never treated the
-      accumulating error as a hazard worth specifying or warning against.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      The capability to hold accuracy under sustained operation was never
-      built in, because the original concept of operations did not require
-      it — a defensible omission for the system as first imagined, fighting in
-      short bursts and moving on. The failure came when the concept changed
-      and the assumption did not travel with it. Nothing carried the design's
-      hidden premise forward to the soldiers in Dhahran; no artifact, briefing,
-      or warning told them "this system was built assuming you would turn it
-      off." The system did not malfunction — it did exactly what it was built
-      to do; the transition between operating contexts did, with nothing in
-      place to catch the broken premise.#cn()
-    ],
-    // -- Aftermath & Reform --
-    [
-      The patch was distributed and concrete reboot intervals defined in place
-      of the vague advisory, and the defect — a fixed-point truncation error
-      growing without bound as uptime increased — became a staple of
-      numerical-analysis and software-engineering teaching.#cn() The harder
-      lesson is the one this chapter turns on: a capability quietly assumed
-      away at design time does not announce itself when the context shifts. It
-      waits, intact and invisible, until the day the assumption is wrong — and
-      by then the people relying on the system have no way to know the ground
-      has moved beneath them, because the premise was never written where they
-      could read it.
-    ],
-  ),
-  beats: (
-    "Built for short European engagements; Gulf War demanded continuous fixed-site operation",
-    "Fixed-point time error grew with uptime; Scud passed unengaged, 28 killed",
-    "Israeli warning preceded strike by weeks; patch arrived one day late",
-    "Original concept did not require sustained accuracy; assumption never traveled with redeployment",
-    "Patch distributed, reboot intervals defined; canonical lesson about assumptions outliving their context",
-  ),
-  references: (
-    [U.S. General Accounting Office, _Patriot Missile Defense: Software Problem Led to System Failure at Dhahran, Saudi Arabia_, GAO/IMTEC-92-26 (1992) — the design-context mismatch and continuous-operation use.],
-    [R. Skeel, "Roundoff Error and the Patriot Missile," _SIAM News_ 25(4): 11 (1992) — the 24-bit fixed-point time truncation and the ~0.34-second range-gate drift after ~100 hours.],
-    [GAO/IMTEC-92-26 (1992) — the prior Israeli warning, the software patch arriving in Dhahran on 26 February (the day after the strike), and the 28 killed.],
-    [GAO/IMTEC-92-26 (1992) — the vague "very long run time" advisory and the Army's presumption that batteries would not be run continuously for such periods (quoted).],
-    [M. Barr / Barr Group, "An Update on the Patriot Missile Software Problem" — an engineering post-mortem of the accumulated-truncation defect.],
-    [GAO/IMTEC-92-26 (1992) and Skeel (1992) — the design assumption that failed to travel across the change in operational context, and the case's teaching legacy.],
-  ),
-  quote: [Army officials presumed that the users would not continuously run the batteries for such extended periods.],
-  quote-source: "GAO/IMTEC-92-26, 1992",
-  le-insight: [
-    Patriot is the canonical Designed-Out case from defense. The capability
-    to maintain accuracy under sustained operation was omitted because the
-    original concept of operations did not anticipate it. When the concept
-    changed, the assumption did not travel. The system did not fail; the
-    transition from one operational context to another did, and there was
-    no capability infrastructure to catch it.
-  ],
-  lens-approach: [
-    LENS treats Patriot as the textbook example of *Capability Degradation
-    Under System Change*. LEN 5 methods require operators of any
-    transitioning system to have current capability-relevant documentation
-    specifying what assumptions of the original design have changed. LEN 8
-    examines how organizational knowledge about design constraints travels
-    from engineering to operations — and why, here, it arrived a day late.
-  ],
-  literature-items: (
-    [Skeel, "Roundoff Error and the Patriot Missile," _SIAM News_ (1992)],
-    [Reason, _Human Error_ (1990) — swiss-cheese model],
-    [Fixsen et al. (2005), _Implementation Research_],
-  ),
-  reflection-list: (
-    [The Patriot's design assumed short engagements. What assumption in a current system you work with would become lethal if the operational context shifted, and how would operators learn of the shift?],
-    [Construct the capability-transition artifact that should have accompanied the redeployment of Patriot batteries from Europe to Saudi Arabia. What would it have said, and who would have signed it?],
-    [The field advisory said to reboot after "very long" run times without defining the term. Rewrite a vague operational instruction in your domain into a specific, testable limit, and name the design data the limit must be derived from.],
-  ),
-  approaches: (
-    during: (
-      [Make every load-bearing design assumption — here, that the system would be cycled off — an explicit, recorded requirement so a later change of use cannot silently violate it.],
-      [Bound numerical error over the full intended operating envelope, including run times far beyond the original concept, rather than only the durations first imagined.],
-      [Design the system to detect and bound its own accumulating drift, degrading or warning before the error reaches a magnitude that defeats the mission.],
-    ),
-    after: (
-      [Issue concrete, testable operating limits — exact reboot intervals, not "very long" — derived from the design data and propagated to every crew.],
-      [Establish a path for field reports of anomalous behavior, like the Israeli warning, to reach engineering and trigger fleet-wide action faster than a patch can lose a race with the threat.],
-      [Require a capability-transition review whenever a system is redeployed to a new concept of operations, surfacing which original assumptions the new mission breaks.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 8", "LEN 9", "LEN 6",),
+  courses: ("LEN 7", "LEN 2", "LEN 9"),
   scale: "big",
-  induced-anchor: "1.2",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-  evidence-source: "investigation",
+  induced-anchor: "3.1",
+  lens-anchor: "D3/PT3",
+  clo-anchor: "CLO-3",
 )
 
+// ---- Case 3 — watson-for-oncology-delegation-marketed ----
 #case(
-  number: 9,
-  slug: "mars-climate-orbiter-unit-mismatch",
-  title: "Mars Climate Orbiter — Unit Mismatch",
-  year: "1999",
-  domains-list: ("space",),
-  modes-code: "DK",
-  impact: "~$125M spacecraft lost on approach to Mars; ground software produced thrust output in pound-force while navigation expected newtons",
-  diagram: dgm.dgm-flow(
-    ("Lockheed\nlbf·s", "interface", "NASA\nN·s", "trajectory error", "burnup"),
-    framing: "no owner of the interface specification",
-    caption: "Mars Climate Orbiter — the unowned interface",
-  ),
-  kind: "failure",
-  summary: [
-    The Mars Climate Orbiter, a NASA spacecraft built by Lockheed Martin and
-    navigated by JPL, was lost on arrival at Mars in September 1999.
-    Lockheed's ground software reported thruster impulse in pound-force
-    seconds; JPL's navigation expected newton-seconds. The conversion — a
-    factor of about 4.45 — was never applied at the boundary between the two
-    teams, so every trajectory correction was mis-modeled and the error
-    accumulated over the cruise. The orbiter arrived too low, into the
-    atmosphere, and burned up; the orbiter and its ~\$125 million were lost to
-    a unit mismatch. The investigation found no individual blunder — both
-    contractors did their own work correctly. What failed was the interface
-    between them, which had no owner, specification, or verification step. It
-    is the canonical case of interface-as-requirement.
-  ],
-  sections: (
-    // -- Background --
-    [
-      The Mars Climate Orbiter, launched in December 1998 to study the
-      Martian atmosphere, was one of NASA's "faster, better, cheaper"
-      missions, built on a compressed budget that trimmed margins across the
-      program. Lockheed Martin built the spacecraft and its ground software;
-      JPL navigated it from Earth. Across the months of interplanetary cruise
-      the two teams exchanged data so JPL could command the small trajectory
-      corrections that keep a spacecraft on course — an exchange that crossed
-      a software interface between the two organizations.#cn()
-    ],
-    // -- What Happened --
-    [
-      Lockheed's ground software reported thruster impulse in pound-force
-      seconds; JPL's navigation expected newton-seconds. The conversion — a
-      factor of about 4.45 — was never applied at the boundary where the two
-      systems met. Each firing was mis-modeled by that factor, and the error
-      accumulated steadily over the long cruise until the predicted and actual
-      trajectories had quietly diverged. When the orbiter reached Mars on 23
-      September 1999 it arrived far too low, deep into the atmosphere it was
-      built to study from orbit, and was destroyed. The orbiter, and its
-      roughly \$125 million, were lost to a unit conversion no one made.#cn()
-    ],
-    // -- The Investigation --
-    [
-      The Mishap Investigation Board put the proximate cause exactly there —
-      the failed English-to-metric translation in ground software — but was
-      careful to name the deeper one rather than stop at the bug. No
-      individual blundered; both contractors did their own work correctly
-      within their own assumptions. What failed was the boundary between them:
-      there was no specified, verified interface fixing the units and checking
-      that both sides agreed, and no end-to-end validation of the data flowing
-      across the seam. Navigators had even noticed odd trajectory behavior in
-      cruise, but the concern was never run fully to ground before arrival,
-      and the chance to catch it passed.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      The missing capability was ownership of the interface itself. Where a
-      system is split across two organizations, the place they meet is not a
-      documentation footnote but an engineering deliverable in its own right —
-      with an owner, a specification, and a verification step. Here it had
-      none of the three. Each team treated its own side as complete and the
-      boundary as someone else's concern, so the one assumption that had to be
-      shared and checked — what units are we speaking in? — was precisely the
-      one no one verified. The spacecraft did not fail; it performed as built;
-      the seam between the two halves of the organization did.#cn()
-    ],
-    // -- Aftermath & Reform --
-    [
-      NASA tightened interface management and end-to-end verification and
-      treated the loss as a cautionary tale about how far "faster, better,
-      cheaper" could be pushed before the corners being cut turned out to be
-      load-bearing. The orbiter became the canonical systems-engineering
-      example of interface-as-requirement — the civilian, software parallel to
-      the Patriot's untraveled assumption (Case 8): two competent halves of a
-      system, a boundary nobody owned or verified, and a small unspecified
-      thing at that boundary that quietly destroyed the whole.#cn()
-    ],
-  ),
-  beats: (
-    "Faster, better, cheaper mission split between Lockheed building and JPL navigating the orbiter.",
-    "Ground software reported pound-force seconds while navigation expected newton-seconds; orbiter burned up at Mars.",
-    "Board found no individual blunder; the unverified boundary between two correct halves failed.",
-    "Missing capability was an owned, specified, verified interface between the two organizations.",
-    "Loss tightened interface management and became the canonical software case of interface-as-requirement.",
-  ),
-  references: (
-    [NASA, _Mars Climate Orbiter Mishap Investigation Board: Phase I Report_ (Nov. 1999) — mission, the Lockheed/JPL split, and the program context.],
-    [NASA MCO MIB Report (1999) — the pound-force-second vs newton-second mismatch (factor ~4.45), the accumulated navigation error, and atmospheric destruction on 23 Sept. 1999 (root-cause statement quoted).],
-    [NASA MCO MIB Report (1999) — the missing verified interface specification, the absent end-to-end validation, and the unresolved cruise-trajectory anomalies.],
-    [N. G. Leveson, _Engineering a Safer World_ (MIT Press, 2011) — interfaces as engineering deliverables requiring an owner and a verification step.],
-    [B. Sauser et al. (2009), retrospective analysis of the Mars Climate Orbiter and the "faster, better, cheaper" trade space.],
-  ),
-  quote: [The root cause was the failed translation of English units to metric units in a segment of ground-based, navigation-related mission software.],
-  quote-source: "Paraphrasing the NASA Mars Climate Orbiter Mishap Investigation Board, 1999",
-  le-insight: [
-    Mars Climate Orbiter is the textbook case for interface boundaries
-    as engineering deliverables. The contractors did their work. The
-    boundary between them did not have an owner. The capability that
-    was missing was the interface-specification verification step.
-  ],
-  lens-approach: [
-    LENS uses Mars Climate Orbiter in LEN 5 to teach interface-as-
-    requirement and in LEN 8 to discuss cross-contractor capability
-    boundaries. The case is the foundational software-engineering
-    parallel to Patriot (Case 8).
-  ],
-  literature-items: (
-    [NASA MCO MIB Report (1999)],
-    [Leveson (2011), _Engineering a Safer World_],
-    [Brooks, _The Mythical Man-Month_ (1995)],
-  ),
-  reflection-list: (
-    [Identify a contractor-to-contractor interface in your domain whose specification ownership is unclear. What would the equivalent unit-mismatch look like there?],
-    [Design the interface-verification deliverable that would have caught the pound-force / newton boundary before launch.],
-    [Navigators noticed odd trajectory behavior in cruise but the concern was never run to ground before arrival. Specify the threshold and process by which an in-flight anomaly in your domain must be resolved before a point of no return, rather than carried past it.],
-  ),
-  approaches: (
-    during: (
-      [Make the interface between two organizations an owned deliverable with a written specification of units and formats, not a footnote each side assumes the other handles.],
-      [Fix and verify the unit convention at the boundary explicitly, requiring both sides to confirm agreement before data crosses the seam.],
-      [Run end-to-end validation across the combined system, since each half can be correct within its own assumptions while their composition is wrong.],
-    ),
-    after: (
-      [Treat in-cruise anomalies, like the noticed trajectory behavior, as signals to run to ground before a point of no return rather than concerns to revisit after arrival.],
-      [Monitor predicted-versus-actual trajectory continuously so an accumulating boundary error surfaces while there is still time to correct it.],
-      [Audit cross-contractor seams for unowned assumptions whenever a program trims margins under "faster, better, cheaper," confirming the corners cut are not load-bearing.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 8"),
-  scale: "big",
-  induced-anchor: "1.3",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-  evidence-source: "investigation",
-)
-
-#case(
-  number: 10,
-  slug: "knight-capital-trading-loss",
-  title: "Knight Capital Trading Loss",
-  year: "2012",
-  domains-list: ("tech",),
-  modes-code: "DK",
-  impact: "$440M loss in 45 minutes; firm forced to seek emergency capital and was effectively acquired within months",
-  diagram: dgm.dgm-stat(
-    "$440M",
-    "loss in 45 minutes · 7 of 8 servers updated",
-    micro: "dead code on the eighth server, repurposed flag, no deployment verification",
-    caption: "Knight Capital — the cost of an unverified deployment",
-  ),
-  kind: "failure",
-  summary: [
-    On 1 August 2012 Knight Capital, a major U.S. market maker, deployed new
-    order-routing software to seven of its eight servers and missed the
-    eighth. The new code reused a flag that, on the eighth server's old
-    software, reactivated long-dead "Power Peg" test code never removed from
-    the repository. At the opening bell it fired millions of unintended
-    orders; in about 45 minutes Knight lost roughly \$440 million — more than
-    the firm was worth — and was effectively acquired within months. The SEC
-    found Knight had no procedure to verify the deployment across all servers
-    and no controls to halt the runaway orders. The capability designed out
-    was deployment verification; the dead code was technical debt that
-    exercised its option at the worst possible moment.
-  ],
-  sections: (
-    // -- Background --
-    [
-      Knight Capital was one of the largest market makers in U.S. equities,
-      routing an enormous share of retail order flow through automated systems
-      wired directly into the market. On 1 August 2012 the New York Stock
-      Exchange was launching a new Retail Liquidity Program, and Knight had
-      updated its order-routing software to participate in it from the opening
-      bell. The update went out to production the way countless updates had
-      gone before — a routine deployment, on an ordinary morning, handled as
-      unremarkable.#cn()
-    ],
-    // -- What Happened --
-    [
-      A technician deployed the new code to seven of the eight routing
-      servers and missed the eighth, leaving one node running stale software.
-      The new code reused a configuration flag that, on the old software still
-      on that eighth server, had once activated long-dormant "Power Peg" test
-      code — retired years earlier but never removed from the repository. At
-      the open the dead code woke and began firing millions of unintended
-      orders into the market. In about forty-five minutes Knight amassed a
-      vast unwanted position; losses passed \$170 million almost at once and
-      reached about \$440 million — more than the firm itself was worth. It
-      survived only on emergency capital and was effectively acquired within
-      months.#cn()
-    ],
-    // -- The Investigation --
-    [
-      The Securities and Exchange Commission's September 2013 enforcement
-      order — In re Knight Capital Americas LLC — found Knight had no
-      written procedure requiring a second technician to verify the
-      deployment across all hosts, and no automated check that all eight
-      servers were running the same code — nor controls able to recognize
-      and halt the flood of erroneous orders once it began. The order
-      catalogued specific violations of the SEC's Market Access Rule
-      (Rule 15c3-5), and Knight settled for a \$12 million
-      penalty.#cn() The dead Power Peg code was the proximate trigger
-      and the reused flag the match that lit it; but the underlying
-      cause was the absence of the verification and risk controls that
-      should surround any change to a system wired directly into the
-      live market. The order is unusually explicit that the institutional
-      gap was financial-engineering practice catching up to
-      software-engineering practice — release management, configuration
-      control, and pre-trade risk limits were not yet treated as
-      first-class deliverables on the trading desk.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      The capability designed out was deployment verification — confirming,
-      every time, that what runs in production is exactly what was intended,
-      on every node, before it touches live money. The dead code was technical
-      debt in its most literal form: a retired function left in the repository
-      is a standing option on a future failure, and reusing its flag exercised
-      that option at the worst possible moment. As at the Mars Climate
-      Orbiter's interface, the boundary that mattered — between "deployed" and
-      "verified as deployed everywhere" — had no owner and no automated check,
-      and a large institution kept walking across it routinely until the day
-      the floor gave way.#cn()
-    ],
-    // -- Aftermath & Reform --
-    [
-      Knight became the canonical case in modern software-operations practice
-      for why deployment is itself an engineering deliverable, not a clerical
-      step: automated verification that every host runs the intended build,
-      disciplined removal of dead code from the repository, pre-trade risk
-      limits, and kill switches that can stop a runaway process in seconds.
-      Regulators sharpened their attention to automated market-access
-      controls in response. The SEC's 2014 Regulation Systems Compliance and
-      Integrity (Regulation SCI) extended formal system-development,
-      testing, change-management, and incident-reporting obligations to
-      registered exchanges, clearing agencies, and large alternative trading
-      systems — the institutional response that pulled the deployment
-      discipline Knight had lacked into the regulatory perimeter. The lesson
-      rhymes with the orbiter's across a forty-year, civilian-to-financial
-      gap: a small, unowned boundary inside a large automated system is
-      precisely where the institution is most exposed, and least watching —
-      and as algorithmic trading continued to grow after 2012, the same
-      class of fragility kept producing new incidents that the Knight
-      template explained.#cn()
-    ],
-  ),
-  beats: (
-    "Major market maker prepared routine update for the NYSE Retail Liquidity Program launch.",
-    "Eighth server missed the update; a reused flag woke dormant Power Peg code.",
-    "SEC found no deployment verification, no consistency check, and no controls to halt orders.",
-    "Designed-out capability was deployment verification; dead code was a standing option on failure.",
-    "Case became canonical for deployment as engineering deliverable and sharpened market-access controls.",
-  ),
-  references: (
-    [U.S. Securities and Exchange Commission, _Order Instituting Administrative and Cease-and-Desist Proceedings_, In re Knight Capital Americas LLC (2013) — the firm, the Retail Liquidity Program launch, and the deployment.],
-    [SEC Order (2013) and Knight Capital 8-K filing (2012) — the missed eighth server, the reactivation of the dormant "Power Peg" code, the ~\$440 million loss in ~45 minutes, and the near-collapse.],
-    [SEC Order (2013) — the absence of a second-technician deployment verification, the lack of an automated code-consistency check, inadequate order controls, and the \$12 million penalty (quoted).],
-    [B. Beyer, C. Jones, J. Petoff & N. R. Murphy (eds.), _Site Reliability Engineering_ (O'Reilly, 2016) — deployment verification, dead-code removal, and automated safeguards as engineering deliverables.],
-    [SEC Market Access Rule (Rule 15c3-5) and subsequent automated-controls guidance — the regulatory response on pre-trade risk and market-access controls.],
-    [D. Seven, "Knightmare: A DevOps Cautionary Tale" — a widely cited engineering post-mortem on the deployment process, the orphaned eighth server, and the reused feature flag.],
-  ),
-  quote: [Knight did not have written procedures requiring a second technician to verify the deployment.],
-  quote-source: "Paraphrasing the SEC Order against Knight Capital, 2013",
-  le-insight: [
-    Knight Capital is the financial-industry version of Mars Climate
-    Orbiter (Case 9): a small, unspecified boundary inside a large
-    system that took the institution down. The capability that was
-    missing was deployment verification. The dead code was the
-    proximate trigger; the absent procedure was the cause.
-  ],
-  lens-approach: [
-    Knight Capital is the canonical change-control-and-disclosure
-    governance case (induced 5.4; LENS D1/PT3). LENS uses it in
-    LEN 5 to teach deployment-as-capability — students design the
-    deployment deliverable that would have caught the eighth
-    server — and in LEN 9 for the technical-debt argument: every
-    line of dead code carries an option on a future failure.
-    Adjacent to Mars Climate Orbiter (Case 9) at the small-
-    boundary-no-owner layer and to Regulation SCI as the
-    institutional response that codified the missing controls.
-  ],
-  literature-items: (
-    [SEC Knight Capital order (2013)],
-    [Allspaw & Hammond, _Web Operations_ (2010)],
-    [Beyer et al. (eds.), _Site Reliability Engineering_ (2016)],
-  ),
-  reflection-list: (
-    [Identify a deployment procedure in your domain whose verification step depends on convention rather than on a designed check. What is the eighth server?],
-    [Design the deployment deliverable that would prevent a Knight Capital-equivalent loss in your organization.],
-    [A retired "Power Peg" function left in the repository became the trigger years later when its flag was reused. Identify dead code or a dormant feature flag in a system you run that is still an option on a future failure, and specify the policy that should have removed it.],
-  ),
-  approaches: (
-    during: (
-      [Remove retired code and dormant flags from the repository as a matter of discipline, since every dead function left behind is a standing option on a future failure.],
-      [Never reuse a configuration flag whose old meaning still exists somewhere in the fleet; treat flag semantics as a versioned, owned interface.],
-      [Design pre-trade risk limits and a kill switch into any system wired to the live market, so a runaway process can be stopped in seconds rather than minutes.],
-    ),
-    after: (
-      [Require automated verification that every host runs the intended build before a change touches live money, with a second technician confirming the deployment across all nodes.],
-      [Monitor for the runaway condition — an abnormal order rate — and halt automatically, rather than relying on humans to notice and intervene mid-flood.],
-      [Audit deployments for the orphaned node: confirm no host is left on stale code, closing the gap between "deployed" and "verified as deployed everywhere."],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 9"),
-  scale: "big",
-  evidence-source: "investigation",
-  induced-anchor: "7.1",  // alternate framing adopted: deprecated test code activated under partial deployment is the dead-code-as-inherited-design pattern; preserves 5.4 as the post-incident Reg SCI lens,
-  lens-anchor: "D1/PT3",
-  clo-anchor: "CLO-1, CLO-4",
-)
-
-#case(
-  number: 11,
-  slug: "sago-mine-disaster",
-  title: "Sago Mine Disaster",
-  year: "2006",
-  domains-list: ("energy", "industrial"),
-  modes-code: "NTK",
-  impact: "12 killed in a West Virginia coal-mine explosion; emergency-response failures compounded the initial event; MINER Act of 2006",
-  diagram: dgm.dgm-cascade(
-    ("seal design", "emergency plan", "self-rescue training", "communications"),
-    outcome: "marginal in each dimension; combined inadequacy in the one minute that mattered",
-    caption: "Sago — cumulative inadequacy across multiple defenses",
-  ),
-  kind: "failure",
-  summary: [
-    On 2 January 2006 lightning ignited methane in a sealed area of the Sago
-    Mine in West Virginia; the seals failed, the explosion propagated, and
-    thirteen miners were trapped behind it. Twelve died of carbon-monoxide
-    poisoning over the hours that followed; only one, Randal McCloy Jr.,
-    survived. A communications failure briefly told the nation — and the
-    families — that twelve had been found alive, when the opposite was true.
-    The MSHA investigation found seals built to an inadequate design, an
-    inadequate emergency plan, and lapsed self-rescue training — each
-    marginal for years, all inadequate together in the one window that
-    mattered. Sago drove the MINER Act of 2006, strengthening mine-rescue
-    requirements and mandating underground refuge chambers.
-  ],
-  sections: (
-    // -- Background --
-    [
-      The Sago Mine in West Virginia had sealed off a mined-out area behind
-      barriers built to a design that had not kept pace with current
-      standards. Its emergency plan and the miners' self-rescue training
-      were, like the seals, marginally adequate — good enough on an ordinary
-      day, untested against the worst one.#cn() On any ordinary day each of
-      these margins was invisible precisely because it was never tested at its
-      edge, so the mine could run for years with every defense quietly thin
-      and nothing to signal that the thinness was accumulating.
-    ],
-    // -- What Happened --
-    [
-      On 2 January 2006 lightning ignited methane in the sealed area. The
-      seals failed and the explosion propagated, trapping thirteen miners
-      behind it. Over the hours that followed twelve died of carbon-monoxide
-      poisoning; only one, Randal McCloy Jr., survived. Compounding the
-      tragedy, garbled communications briefly told the nation and the
-      families that twelve had been found alive — the opposite of the
-      truth.#cn() The hours of carbon-monoxide exposure were exactly the
-      window the emergency plan and self-rescue provisions existed to bridge,
-      so the marginal defenses failed in the one stretch of time their
-      adequacy was supposed to guarantee.
-    ],
-    // -- The Investigation --
-    [
-      The Mine Safety and Health Administration found the seals had been
-      built to a design that did not meet then-current standards, the mine's
-      emergency plan was inadequate, and self-rescue training had not been
-      kept current.#cn() The miners "faced multiple equipment, training, and
-      emergency-response shortcomings that compounded their initial
-      trapping" — no single failure decisive, the combination lethal.#cn()
-      That each shortcoming was real but none was solely decisive is the
-      finding's whole weight: an investigation looking for one nameable cause
-      would have found several survivable ones and missed the lethal way they
-      combined.
-    ],
-    // -- The Capability Gap --
-    [
-      Sago is the cumulative-inadequacy pattern. Each defense — seal design,
-      emergency plan, self-rescue training, communications — was marginally
-      adequate for years and recoverable on its own; none was the dramatic,
-      nameable cause. They failed together in the only minute that mattered,
-      which is exactly how normalization works: a system drifts within
-      tolerance on several fronts until the tolerances align.#cn() The hazard
-      lived not in any one margin but in their simultaneity, which no
-      inspection of a single defense could surface, because each looked
-      acceptable on its own and the danger was a property only of the set.
-    ],
-    // -- Aftermath & Reform --
-    [
-      Sago drove the federal MINER Act of 2006, which strengthened
-      mine-rescue requirements, tightened seal standards, improved
-      communications and tracking, and mandated breathable-air refuge
-      chambers underground.#cn() The reform addressed the combination rather
-      than a single cause — the right response to a failure whose lesson is
-      that marginal-everywhere is itself a system-level hazard, even when no
-      single margin looks alarming. The refuge-chamber mandate in particular
-      conceded that survivable air over those carbon-monoxide hours had to be
-      engineered in advance, not left to the chain of marginal defenses that
-      failed together at Sago.
-    ],
-  ),
-  beats: (
-    "Seals, emergency plan, and self-rescue training were each marginally adequate, never tested at edge",
-    "Lightning ignited methane; seals failed; twelve miners died of carbon-monoxide poisoning over hours",
-    "MSHA found inadequate seal design, plan, and lapsed training; combined shortcomings proved lethal together",
-    "No single failure was decisive; marginal-everywhere is itself a system-level hazard",
-    "MINER Act strengthened rescue requirements; mandated refuge chambers; reform addressed the combination, not one cause",
-  ),
-  references: (
-    [U.S. Mine Safety and Health Administration, _Report of Investigation: Sago Mine_ (2007) — the seal design, emergency plan, and self-rescue training.],
-    [MSHA (2007) — the explosion sequence: lightning ignition in the sealed area, seal failure, twelve dead and one survivor.],
-    [MSHA (2007) — the inadequate seal design, emergency plan, and lapsed self-rescue training.],
-    [MSHA (2007) — "multiple equipment, training, and emergency-response shortcomings that compounded their initial trapping" (quoted).],
-    [West Virginia state Sago investigation (2006) — the false "twelve alive" miscommunication and the families' ordeal.],
-    [Mine Improvement and New Emergency Response (MINER) Act of 2006, Pub. L. 109-236 — refuge chambers and rescue requirements.],
-  ),
-  quote: [The miners faced multiple equipment, training, and emergency-response shortcomings that compounded their initial trapping.],
-  quote-source: "Mine Safety and Health Administration, Sago Investigation Report, 2007",
-  le-insight: [
-    Sago is the case for the cumulative inadequacy pattern in
-    industrial accidents. No single failure caused the disaster. Each
-    failure on its own would have been recoverable. The combination
-    was not, and the combination had been the operating condition of
-    the mine for years.
-  ],
-  lens-approach: [
-    LENS uses Sago in LEN 5 for cumulative-inadequacy analysis and in
-    LEN 8 for the legislative-reform arc that followed. Studio projects
-    compare Sago and Upper Big Branch (Case 87) as paired cases.
-  ],
-  literature-items: (
-    [MSHA Sago report (2007)],
-    [Hopkins, _Failure to Learn_ (2008)],
-    [West Virginia governor's independent investigation],
-  ),
-  reflection-list: (
-    [Identify a process in your domain that is marginally adequate across multiple parameters. What is the cumulative failure mode?],
-    [Sago produced the MINER Act. What legislative change would your domain require if a Sago-equivalent occurred?],
-    [The danger was a property of the set of defenses, not any single one. What assessment in your domain would evaluate defenses jointly rather than one at a time?],
-  ),
-  approaches: (
-    during: (
-      [Assess defenses jointly against the worst-case window, since each margin looks acceptable alone and the hazard lives in their simultaneity.],
-      [Engineer a guaranteed survivable resource — like breathable air over the rescue window — rather than relying on a chain of marginal provisions.],
-      [Keep seal design, emergency plans, and self-rescue training current to standards as a coupled set, not as independently deferred items.],
-    ),
-    after: (
-      [Track how many defenses sit at the margin simultaneously, treating marginal-everywhere as a measurable system-level hazard.],
-      [Stress-test the emergency response against the exact window it exists to bridge, so untested margins are exposed before an event.],
-      [Investigate near-misses for combined inadequacy, not a single nameable cause, so survivable contributors are not dismissed individually.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 8"),
-  scale: "big",
-  induced-anchor: "7.4",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-  evidence-source: "investigation",
-)
-
-#case(
-  number: 12,
-  slug: "boeing-737-rudder-hardovers",
-  title: "Boeing 737 Rudder Hardovers",
-  year: "1991, 1994",
-  domains-list: ("aviation",),
-  modes-code: "HD",
-  impact: "157 killed across United 585 (Colorado Springs, 1991) and USAir 427 (Pittsburgh, 1994); rudder Power Control Unit malfunctions traced to a thermal-shock condition",
-  diagram: dgm.dgm-flow(
-    ("cold soak", "valve jam", "rudder reverse", "no recovery"),
-    framing: "an unrecoverable operational state hidden inside a working aircraft",
-    caption: "737 rudder — the failure mode certification did not anticipate",
-  ),
-  kind: "failure",
-  summary: [
-    Two Boeing 737s fell out of controlled flight when their rudders
-    reversed — moving opposite to the pilots' input: United 585 near
-    Colorado Springs in 1991 (25 killed) and USAir 427 near Pittsburgh in
-    1994 (132 killed), 157 in all. The NTSB investigation took years because
-    the failure was rare and unrecoverable. It traced the cause to a
-    thermal-shock condition in the rudder's power-control-unit servo valve —
-    cold-soaked hydraulic fluid hitting a hot valve — that could jam the
-    valve and reverse the rudder. The pilots had no procedure to recognize
-    or recover the failure; the manuals and training never anticipated it,
-    and in that state no available control input could save the aircraft.
-    The 737 rudder cases are the book's case for an unrecoverable failure
-    mode hidden inside a working aircraft.
-  ],
-  sections: (
-    // -- Background --
-    [
-      The Boeing 737, the most-produced jetliner in history, steers in yaw
-      with a rudder driven by a hydraulic power control unit (PCU). The PCU's
-      servo valve was a dual-concentric design intended to be fault-tolerant
-      — a reassuring assumption that had passed certification.#cn() Because
-      the design was believed to be fault-tolerant, a single jam was treated
-      as something the redundant geometry would contain; that confidence is
-      precisely what let the failure mode hide in plain sight across a fleet
-      flying millions of hours without incident.
-    ],
-    // -- What Happened --
-    [
-      Twice, 737s rolled and dove out of level flight unrecoverably: United
-      Airlines Flight 585 near Colorado Springs in 1991 (25 killed) and USAir
-      Flight 427 near Pittsburgh in 1994 (132 killed) — 157 deaths between
-      them. In each, the rudder had swung hard over, opposite to what the
-      crew commanded.#cn() A control that moves opposite to its input is the
-      cruelest failure a pilot can face: every corrective action deepens the
-      upset, and the three years separating the two losses meant the first
-      crash yielded no usable answer in time to protect the second.
-    ],
-    // -- The Investigation --
-    [
-      The NTSB investigation took years, because the failure was both rare
-      and unrecoverable, leaving little to reconstruct.#cn() An unrecoverable
-      event tends to destroy its own evidence, and a rare one offers no
-      pattern to work from, so the board had to reason toward a mechanism the
-      wreckage could only hint at. It eventually
-      identified a thermal-shock condition in the rudder servo valve —
-      cold-soaked hydraulic fluid striking a hot valve under specific
-      conditions — that could jam the secondary valve and let the rudder move
-      opposite to commanded input, a convergence of cold, heat, and timing so
-      narrow it had eluded every test the design had been put through.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      The gap was not in the pilots: in the failure mode no control input
-      available to them could recover the aircraft, and they had no procedure
-      even to recognize a rudder reversal, because the manuals and training
-      never anticipated it. The missing capability sat upstream — in a
-      certification process that had not surfaced the failure mode, and
-      maintenance procedures that did not test for it. When no human action
-      is recoverable, capability engineering must move to the design and
-      certification, not the cockpit — no amount of pilot skill or training
-      can close a gap that lives in a part the crew cannot reach and a state
-      no procedure names, which is why the only real fix was upstream of the
-      flight deck entirely.#cn()
-    ],
-    // -- Aftermath & Reform --
-    [
-      Boeing redesigned the rudder PCU and the fleet was retrofitted, and the
-      cases reshaped how rare, unrecoverable failure modes are hunted in
-      certification and flight test.#cn() Retrofitting the entire fleet
-      conceded that the original fault-tolerant assumption had been wrong,
-      and the changed approach to certification testing accepted that a part
-      passing its tests is not the same as a part proven safe across every
-      condition it will meet. The 737 rudder sits at the
-      intersection of mechanical design, certification testing, and crew
-      capability — all three would have had to fail together for the
-      accidents to occur, and all three did.
-    ],
-  ),
-  beats: (
-    "737 rudder PCU servo valve presumed fault-tolerant by certification, hiding a latent failure mode",
-    "United 585 and USAir 427 rolled and dove unrecoverably; rudders moved opposite to commanded input",
-    "NTSB took years to identify thermal-shock servo-valve jam from cold fluid striking hot valve",
-    "No recoverable cockpit action existed; gap sat in certification and maintenance, not pilots",
-    "Boeing redesigned PCU, retrofitted fleet, and reshaped how rare unrecoverable modes are hunted",
-  ),
-  references: (
-    [NTSB, _Uncommanded Flight Control Movements_ (USAir 427 / 737 rudder PCU), NTSB-AAR-99-01 (1999) — the thermal-shock servo-valve finding.],
-    [NTSB, _Aircraft Accident Report: United Airlines Flight 585_, NTSB-AAR-92-06 (1992) — the initial (undetermined) Colorado Springs investigation, later reopened.],
-    [NTSB-AAR-99-01 (1999) — the servo-valve reversal mechanism and the absence of any recoverable crew action.],
-    [Boeing 737 rudder PCU service bulletins and redesign program (1996–2002).],
-    [W. Langewiesche, _Inside the Sky_ (1998) — the multi-year investigation narrative.],
-    [NTSB-AAR-99-01 (1999) — the certification and maintenance gaps that left the failure mode unsurfaced.],
-  ),
-  quote: [The aircraft was operated for years with a design feature that, under specific conditions, was unrecoverable.],
-  quote-source: "Paraphrasing NTSB Aircraft Accident Report NTSB-AAR-99-01 on the 737 rudder PCU, 1999",
-  le-insight: [
-    The 737 rudder cases are the case for an unrecoverable
-    operational state hidden inside an apparently working system. The
-    capability gap was not in the pilots — there was no capability
-    that would have recovered the aircraft. The gap was in the
-    certification process that had not surfaced the failure mode and
-    in the maintenance procedures that did not test for it.
-  ],
-  lens-approach: [
-    LENS uses the 737 rudder cases in LEN 5 as a capability-limits
-    case (when no human action is recoverable, capability engineering
-    must move upstream) and in LEN 7 for certification governance.
-  ],
-  literature-items: (
-    [NTSB 737 rudder reports (1992, 1999)],
-    [Langewiesche, _Inside the Sky_ (1998)],
-    [Sweginnis et al., aircraft accident investigation literature],
-  ),
-  reflection-list: (
-    [Where in your domain might an unrecoverable failure mode exist that has not yet manifested? How would you find it?],
-    [Design the certification-test specification that should have caught the 737 rudder thermal-shock failure in development.],
-    [The 737 rudder passed certification yet was not safe across every condition it met. What is a component in your domain certified as fault-tolerant on an assumption no one re-tests — and how would you challenge that assumption before it fails?],
-  ),
-  approaches: (
-    during: (
-      [Test components against the full envelope of conditions they will meet in service — including rare combinations like thermal shock — rather than only the nominal cases certification asks for.],
-      [Treat any "fault-tolerant" claim as a hypothesis to be falsified in flight test, not an assumption that lets a single jam go unexamined.],
-      [Provide crews a procedure to recognize and respond to control reversals, while accepting that for unrecoverable modes the real fix must sit in the design.],
-    ),
-    after: (
-      [Reopen and reconcile investigations of rare, unexplained events instead of leaving them undetermined, since a buried first case left the second crew unwarned.],
-      [Build maintenance procedures that actively test for the surfaced failure mode across the fielded fleet, not just the redesigned units.],
-      [Hunt for unrecoverable failure modes proactively in service data, treating their absence in the record as unproven rather than as evidence of safety.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 7", "LEN 3",),
-  scale: "big",
-  induced-anchor: "1.2",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-  evidence-source: "investigation",
-)
-
-#case(
-  number: 13,
-  slug: "glass-cockpit-transition-in-light",
-  title: "Glass-Cockpit Transition in Light Aircraft — Technology Outran Training",
-  year: "2010",
-  domains-list: ("general aviation", "avionics", "pilot training"),
-  modes-code: "HNK",
-  impact: "An NTSB safety study of ~8,000 piston aircraft over 2002–2006 found that glass-cockpit aircraft had no better overall safety record — and a higher fatal accident rate — than comparable conventional-instrument aircraft over the period studied; the Board attributed this to inadequate equipment-specific training and issued recommendations A-10-36 through A-10-40",
-  kind: "failure",
-  scale: "big",
-  evidence-source: "investigation",
-  induced-anchor: "7.1",
-  lens-anchor: "D1+D3/PT1",
-  clo-anchor: "CLO-1, CLO-2",
-  summary: [
-    Glass cockpits — integrated digital primary flight displays and
-    multifunction displays replacing the inherited six-pack of
-    analog instruments — were introduced into light piston aircraft
-    over the 2000s as a fleet-wide modernization. The NTSB safety
-    study NTSB/SS-10/01 examined approximately 8,000 small piston
-    aircraft over 2002–2006 and reached a finding the technology's
-    own advocates did not expect: glass-cockpit aircraft had no
-    better overall safety record than comparable
-    conventional-instrument aircraft over the period studied, and
-    in fact had a higher fatal accident rate. The NTSB attributed
-    this not to the technology but to inadequate
-    equipment-specific training. The Board issued recommendations
-    A-10-36 through A-10-40 on knowledge-testing standards,
-    simulator availability, and training requirements. The study
-    is explicit that advanced avionics "can increase the safety
-    potential" of light aircraft but that the potential "was not
-    yet realized in the period studied" — an open, not closed,
-    verdict. The case is the canonical 7.1 failure of an inherited
-    capability regime (pilot proficiency) not being re-verified
-    against the new envelope the technology transition introduced.
-    Pair with the aging-system transitions in Cases 22–76
-    (drafted in parallel).
-  ],
-  sections: (
-    [
-      Glass-cockpit avionics — integrated digital primary flight
-      displays and multifunction displays replacing the inherited
-      six-pack of analog round-dial instruments — were introduced
-      into light piston aircraft over the 2000s. The fleet
-      conversion was largely industry-driven; new-build aircraft
-      came with glass as standard, retrofits became increasingly
-      common, and the FAA's certification framework treated the
-      transition as a positive safety move on the strength of the
-      capability the displays delivered to pilots: integrated
-      situational awareness, moving-map navigation, terrain and
-      traffic display, system-status integration. The
-      operationally critical assumption was that pilots
-      transitioning from analog to glass would carry their
-      proficiency across the change.#cn()
-    ],
-    [
-      The NTSB safety study NTSB/SS-10/01 examined that assumption
-      directly. The Board studied approximately 8,000 small piston
-      airplanes registered in the United States over the period
-      2002–2006, comparing accident rates between
-      conventional-instrument and glass-cockpit fleets matched on
-      model and operational class. The headline finding ran
-      against expectation. Glass-cockpit aircraft had no better
-      overall safety record than comparable conventional-instrument
-      aircraft over the period, and the fatal accident rate was
-      higher for the glass fleet. The expected fleet-wide safety
-      gain from the displays had not yet materialized in the
-      accident record.#cn()
-    ],
-    [
-      The NTSB's attribution is precise. The technology was not
-      the cause; inadequate equipment-specific training was. The
-      transitioning pilot population was certificated and current
-      under the inherited training regime that assumed analog
-      instruments, and the glass displays — for all their
-      situational-awareness advantages — introduced new failure
-      modes (mode confusion, automation surprises, attention
-      capture by integrated displays, degraded scan in degraded
-      modes) that the inherited training did not address. The
-      Board issued recommendations A-10-36 through A-10-40 to the
-      FAA: equipment-specific knowledge-testing standards,
-      simulator and training-device availability for transitioning
-      pilots, and structured training requirements before
-      operating glass-cockpit aircraft.#cn()
-    ],
-    [
-      The study's language is open rather than closed. Advanced
-      avionics "can increase the safety potential" of light
-      aircraft, but that potential "was not yet realized in the
-      period studied." The verdict is not that glass is unsafe; it
-      is that the inherited certification of pilot proficiency,
-      built around analog instruments, did not transfer to the
-      new envelope without re-engineered training. The case is
-      the canonical 7.1 failure: a capability regime (pilot
-      proficiency) was not re-verified when the cockpit's
-      interface envelope changed, and the inherited training
-      assumptions silently became inadequate to the new
-      operational reality.#cn()
-    ],
-    [
-      Drafted alongside the aging-system transitions in Cases
-      22–76, the glass-cockpit GA study carries the
-      capability-under-system-change pattern at the
-      consumer-aviation scale where the analog cases run at the
-      defense and commercial-aviation scale. The structural
-      lesson is the same: when a system's interface envelope
-      changes — and even when the change is a capability-enhancing
-      one — the inherited certification of operator proficiency
-      has to be re-verified against the new envelope, or the
-      transition outruns the training and the accident record
-      moves in the wrong direction. The NTSB recommendations are
-      the engineering response to that pattern, and their
-      implementation is what closes (or fails to close) the open
-      verdict the study left.
-    ],
-  ),
-  beats: (
-    "Glass-cockpit avionics introduced into light piston aircraft over the 2000s as fleet-wide modernization; assumed positive safety move",
-    "NTSB safety study NTSB/SS-10/01 examined ~8,000 small piston aircraft 2002–2006; matched comparison glass vs. conventional fleets",
-    "Headline against expectation: no better overall safety record, higher fatal accident rate for glass-cockpit fleet over the period studied",
-    "NTSB attribution: inadequate equipment-specific training, not the technology; recommendations A-10-36 through A-10-40 to the FAA",
-    "Open verdict preserved: advanced avionics 'can increase the safety potential' but 'was not yet realized in the period studied'",
-  ),
-  approaches: (
-    during: (
-      [Specify the inherited certification of operator proficiency in advance of a technology transition, and design the re-verification against the new envelope as part of the transition's deliverable, not as a downstream training catch-up.],
-      [Treat capability-enhancing transitions with the same re-verification discipline as capability-degrading ones; the glass-cockpit transition was a positive technology move that nevertheless required training re-verification the field skipped.],
-      [Name the new failure modes the transition introduces (mode confusion, automation surprises, attention capture) at the design stage of the equipment-specific training, rather than waiting for the accident record to surface them.],
-    ),
-    after: (
-      [Preserve the NTSB's open-verdict language ("can increase the safety potential ... not yet realized in the period studied") in any report on the transition's outcome; the study did not say glass is unsafe, and the precise language is what makes the recommendation set actionable.],
-      [Track implementation of the NTSB recommendation set (A-10-36 through A-10-40) as the engineering response to the open verdict; the verdict closes when the recommendations are implemented and the next round of evidence is collected.],
-      [Carry the structural lesson into adjacent transitions — aging-system transitions in Cases 22–76 — as evidence that the inherited certification of operator proficiency has to be re-verified against the new envelope across consumer, commercial, and defense scales.],
-    ),
-  ),
-  references: (
-    [National Transportation Safety Board (2010). _Introduction of Glass Cockpit Avionics into Light Aircraft_, Safety Study NTSB/SS-10/01. https://www.ntsb.gov/safety/safety-studies/Documents/SS1001.pdf — the case's primary investigation document.],
-    [NTSB Safety Recommendations A-10-36 through A-10-40 (2010), issued to the FAA — the engineering response the open verdict points to.],
-    [Wiener, E. L., \& Curry, R. E. (1980). Flight-deck automation: Promises and problems. _Ergonomics_, 23(10):995–1011 — the foundational literature on automation-induced failure modes that the glass-cockpit transition re-introduced at the GA scale.],
-    [Sarter, N. B., Woods, D. D., \& Billings, C. E. (1997). Automation surprises. In _Handbook of Human Factors and Ergonomics_ (2nd ed.) — the mode-confusion / automation-surprise literature the NTSB findings cross-reference.],
-  ),
-  quote: [Advanced avionics can increase the safety potential of light aircraft, but the potential was not yet realized in the period studied.],
-  quote-source: "NTSB Safety Study NTSB/SS-10/01 (2010).",
-  le-insight: [
-    The NTSB's glass-cockpit GA study is the canonical
-    capability-under-system-change failure at the
-    consumer-aviation scale: a positive technology transition
-    that nevertheless outran the inherited certification of
-    operator proficiency. The Board's attribution is to
-    inadequate equipment-specific training, and the verdict
-    is open — the safety potential is there, and the
-    transition has not yet realized it.
-  ],
-  lens-approach: [
-    Glass-cockpit GA is the small-fleet capability-under-
-    transition failure (induced 7.1; LENS D3/PT1). LENS uses
-    it in Domain 1 (Systems Analysis) for the inherited
-    certification of operator proficiency that has to be
-    re-verified against the new envelope, and in Domain 3 (Human-System Collaboration) for the new
-    automation-induced failure modes (mode confusion,
-    automation surprises, attention capture) the transition
-    introduced. Pair with the aging-system transitions in
-    Cases 22–76 at the cross-scale capability-under-
-    change layer.
-  ],
-  literature-items: (
-    [NTSB Safety Study NTSB/SS-10/01 (2010)],
-    [Wiener \& Curry (1980), _Ergonomics_],
-    [Sarter, Woods, \& Billings (1997), automation surprises],
-  ),
-  reflection-list: (
-    [Identify a technology transition in your domain that is positive on its capability claim and that nevertheless puts the inherited certification of operator proficiency under question. What re-verification of operator proficiency would the transition require — and is it currently part of the deliverable, or assumed away?],
-    [The NTSB attribution is to inadequate equipment-specific training, not to the technology. What is the analog distinction in your context — between the engineered artifact and the operator-proficiency regime that has to track it?],
-  ),
-  courses: ("LEN 5", "LEN 7", "LEN 9"),
-)
-
-#case(
-  number: 14,
-  slug: "healthcare-gov-launch",
-  title: "Healthcare.gov Launch",
-  year: "2013",
-  domains-list: ("gov",),
-  modes-code: "KTG",
-  impact: "~27,000 federal-marketplace enrollments in the first month vs. a 7M first-year target; hundreds of millions in remediation",
-  diagram: dgm.dgm-healthcaregov,
-  kind: "failure",
-  summary: [
-    When Healthcare.gov launched on 1 October 2013 it collapsed under load
-    it had never been tested for — about 27,000 enrollments through the
-    federal marketplace in its first month against a seven-million first-year
-    target. The people assembled to build it knew insurance
-    markets and government programs but not technology product launches; key
-    technical roles went unfilled, no office clearly owned the integration
-    (CMS thought the contractor CGI was the lead integrator; CGI did not),
-    and no end-to-end test was run before launch. The fix-it team that
-    rescued the site became the U.S. Digital Service. At root it was a
-    capability mismatch at scale: the organization lacked the human
-    capabilities the system required, and the governance chain surfaced no
-    signal of the gap before launch. It is the rare governance failure that
-    produced lasting institutional reform.
-  ],
-  sections: (
-    // -- Background --
-    [
-      Healthcare.gov was the federal insurance marketplace at the center of
-      the Affordable Care Act — a high-visibility online system that millions
-      would hit on day one, with a political deadline that could not slip. The
-      people assembled to build it understood insurance markets and large
-      government programs, but not the launch of a consumer technology product
-      at that scale, and key technical positions went unfilled — so the very
-      expertise the launch most needed was the expertise the team most
-      lacked.#cn()
-    ],
-    // -- What Happened --
-    [
-      There was no clear division of responsibility among the many government
-      offices involved; CMS believed the contractor CGI was the lead system
-      integrator, and CGI did not share that understanding — so the single
-      most important role on the program was one no party believed it held.
-      No end-to-end test was run before launch, meaning the assembled pieces
-      were never exercised together as a user would exercise them. The site
-      went live on 1 October 2013 and immediately collapsed under load it had
-      never been validated for: about 27,000 enrollments through the
-      federal marketplace in its first month against a seven-million
-      first-year target.#cn()
-    ],
-    // -- The Investigation --
-    [
-      Reviews by the GAO and the HHS Inspector General found that no single
-      person had a clear understanding of the project's status, and that the
-      governance chain had no signal that would surface the readiness gap
-      before launch. With ownership diffused across offices and no integration
-      test to fail, the chain could report progress at every level while the
-      whole remained untested — a structure in which bad news had nowhere to
-      enter and no one positioned to act on it.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      Healthcare.gov is a capability failure wearing a technology costume.
-      The site was salvageable in weeks once the right people arrived, which
-      is the clearest proof that the code was never the binding constraint;
-      the original failure was that the wrong people had been assembled, and
-      that the governance chain meant to catch the mismatch had no mechanism
-      to see it. The missing capability was the matching of human capability
-      to system requirement — and the institutional signal that would have
-      flagged its absence before a deadline locked the launch in place.#cn()
-    ],
-    // -- Aftermath & Reform --
-    [
-      The rescue effort pulled together the team that became the U.S. Digital
-      Service — a permanent institution born from a failure visible on the
-      news every night, its mandate built directly from what the launch had
-      lacked.#cn() It is the rare case in this book of a governance failure
-      that produced durable organizational reform, and a reminder that the
-      technical narrative ("the website crashed") often hides the real one:
-      the wrong capability was assembled, unnoticed, by a chain that had no
-      way to notice.
-    ],
-  ),
-  beats: (
-    "Federal ACA marketplace built under fixed political deadline by teams lacking consumer-launch expertise",
-    "No clear integrator; no end-to-end test; site collapsed serving 27,000 against seven-million target",
-    "GAO and HHS-IG found no one understood project status; governance chain surfaced no readiness signal",
-    "Capability failure wearing a technology costume; missing match of human capability to system requirement",
-    "Rescue team became U.S. Digital Service; rare case producing durable institutional reform",
-  ),
-  references: (
-    [U.S. GAO, Healthcare.gov reports (2014–2016) — the launch, the capability gaps, and the absent end-to-end testing.],
-    [HHS Office of Inspector General, _Case Study of CMS Management of the Federal Marketplace_, OEI-06-14-00350 (2016) — unclear ownership and the CMS/CGI integration confusion.],
-    [HHS OIG (2016) — "no single person had a clear understanding of the project's status" (quoted).],
-    [J. Pahlka, _Recoding America_ (2023) — the founding of the U.S. Digital Service out of the rescue.],
-    [Eaves & Goldenfein, "The Healthcare.gov Failure" (Harvard, 2014); Mergel et al. (2018), digital-government literature.],
-  ),
-  quote: [No single person had a clear understanding of the project's status.],
-  quote-source: "Paraphrasing the HHS Office of Inspector General review of Healthcare.gov, 2016",
-  le-insight: [
-    Healthcare.gov is a capability case wearing a technology costume. The
-    technology was salvageable in weeks once the right people arrived.
-    The original failure was that the wrong people had been assembled in
-    the first place, and the governance chain that should have noticed
-    the mismatch had no signal to surface it. The aftermath — USDS — is
-    the rare case in this book of a governance failure that produced
-    permanent institutional reform.
-  ],
-  lens-approach: [
-    LENS uses Healthcare.gov in LEN 1 as a problem-framing case (the
-    technical narrative obscures the capability narrative), in LEN 5 to
-    teach capability-requirements analysis for a large government
-    program, and in LEN 8 to discuss the founding of USDS as
-    organizational learning that survived.
-  ],
-  literature-items: (
-    [Eaves & Goldenfein, "The Healthcare.gov Failure" (Harvard, 2014)],
-    [Pahlka, _Recoding America_ (2023)],
-    [Mergel et al. (2018), digital government literature],
-  ),
-  reflection-list: (
-    [Healthcare.gov shipped without end-to-end testing. What is the equivalent missing deliverable in a current high-stakes deployment in your domain?],
-    [USDS was born from the Healthcare.gov failure. What is the institutional capability your domain still lacks, and what failure would have to occur to produce it?],
-    [No single office believed it owned integration, so the gap stayed invisible until launch day. In a project you know, who actually owns the seam between components — and what signal would let them, rather than the news, learn the system is not ready?],
-  ),
-  approaches: (
-    during: (
-      [Match assembled human capability to the system's real requirements at staffing time — fill the technical roles a consumer-scale launch demands before committing to the deadline.],
-      [Name a single accountable integration owner and confirm every party shares that understanding, so no critical role is one each office assumes someone else holds.],
-      [Gate launch on a full end-to-end test that exercises the assembled system the way users will, not on per-component sign-offs.],
-    ),
-    after: (
-      [Build a governance signal that can surface a readiness gap upward, with someone holding the authority to delay a politically fixed launch date.],
-      [Independently audit project status against demonstrated capability, since a diffuse chain can report green at every level while the whole remains untested.],
-      [Institutionalize the rescue capability — as USDS did — so the talent that fixes a launch outlives the crisis that summoned it.],
-    ),
-  ),
-  courses: ("LEN 1", "LEN 5", "LEN 7", "LEN 6",),
-  scale: "big",
-  induced-anchor: "1.1",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-  evidence-source: "investigation",
-)
-
-#case(
-  number: 15,
-  slug: "ariane-5-flight-501",
-  title: "Ariane 5 Flight 501",
-  year: "1996",
-  domains-list: ("space",),
-  modes-code: "DKH",
-  impact: "Maiden flight destroyed itself 37 seconds after launch; ~$500M payloads lost; reused Ariane 4 code never re-verified for Ariane 5",
-  diagram: dgm.dgm-stat(
-    "37s",
-    "after launch · 16-bit integer overflow",
-    micro: "code path disabled by the previous vehicle's profile; re-enabled by the new one",
-    caption: "Ariane 5 — the fallacy of risk-free code reuse",
-  ),
-  kind: "failure",
-  summary: [
-    On its 1996 maiden flight, the Ariane 5 rocket destroyed itself 37
-    seconds after launch, losing around half a billion dollars in payloads.
-    The cause was reused software: the inertial reference system inherited
-    code from Ariane 4, where a horizontal-velocity value never exceeded a
-    16-bit integer's range. Ariane 5's steeper, faster trajectory pushed it
-    past that range; the integer overflow crashed both redundant reference
-    systems almost simultaneously, the vehicle lost guidance and broke up.
-    The inquiry found the offending code path had been irrelevant on Ariane 4
-    and was never removed or re-verified for Ariane 5 — software reuse had
-    been treated as risk-free. Ariane 5 is the foundational safety-critical-
-    software case for the hazard of reusing code without re-verifying it
-    against the new system's operating envelope.
-  ],
-  sections: (
-    // -- Background --
-    [
-      The Ariane 5 heavy-lift rocket reused proven components from its
-      successful predecessor, Ariane 4 — including, in its inertial reference
-      system, software that had flown reliably for years. Reuse of
-      flight-proven code was regarded as a way to reduce risk and cost.#cn()
-      The reasoning was seductive precisely because the code's flight record
-      was genuine: software that had worked on Ariane 4 looked like the
-      safest possible choice, and that confidence is what allowed it to cross
-      onto a different vehicle without being re-examined against the new
-      vehicle's conditions.
-    ],
-    // -- What Happened --
-    [
-      On 4 June 1996, Ariane 5 Flight 501 — its maiden flight — veered off
-      course and broke up under aerodynamic stress 37 seconds after launch;
-      the range-safety system destroyed it, and roughly half a billion
-      dollars of payloads were lost.#cn() The vehicle was destroyed in well
-      under a minute of flight, before it had done anything but climb — the
-      whole half-billion-dollar loss flowing from a fault that triggered
-      almost immediately at liftoff, when the new trajectory first pushed the
-      inherited code outside the range it had been built to handle.
-    ],
-    // -- The Investigation --
-    [
-      The inquiry board traced the cause to the reused code. A
-      horizontal-velocity value that never exceeded a 16-bit signed integer
-      on Ariane 4's trajectory did exceed it on Ariane 5's faster one; the
-      resulting overflow shut down both redundant inertial reference systems
-      almost simultaneously, and the vehicle lost guidance.#cn() Redundancy
-      gave no protection here because both units ran the identical inherited
-      code and met the identical out-of-range value at the same instant, so
-      the backup failed in lockstep with the primary — duplicating a system
-      defends against a part breaking, not against a shared assumption being
-      wrong. The offending code path had become irrelevant to Ariane 5's
-      flight after liftoff, yet had neither been removed nor re-verified
-      against the new vehicle's envelope — reuse had been treated as
-      risk-free.#cn()
-    ],
-    // -- The Capability Gap --
-    [
-      Ariane 5 is the canonical software-engineering case for the fallacy of
-      risk-free reuse. Code is fit for the envelope it was written and
-      verified against; reusing it in a different envelope is a new design
-      decision and must be re-verified as one. The institutional capability
-      that was missing was the requirement that reused safety-critical code
-      be re-verified, not merely trusted because it had worked before.#cn()
-      The flaw was never in the Ariane 4 code, which was correct for the
-      trajectory it was written against; the flaw was the institutional
-      assumption that a record of working in one envelope carried over to
-      another, an assumption no test was required to challenge.
-    ],
-    // -- Aftermath & Reform --
-    [
-      The fix and the lesson reshaped safety-critical software practice:
-      reuse became a verification event, with explicit checking of every
-      inherited assumption against the new system's operating
-      conditions.#cn() The case rhymes with the Patriot (Case 8) and the
-      Mars Climate Orbiter (Case 9) — small, unexamined assumptions
-      inherited across a boundary, fatal when the boundary's conditions
-      changed. What unites the three is that each inherited a quantity sound
-      in its original setting and lethal in the new one, so the reform is the
-      same in every case: make the boundary crossing the moment the
-      assumption is re-checked, rather than the moment it is silently trusted.
-    ],
-  ),
-  beats: (
-    "Ariane 5 reused inertial reference software flown reliably on Ariane 4 to reduce risk",
-    "The 1996 maiden flight veered off course and broke up 37 seconds after launch",
-    "A horizontal-velocity overflow shut down both redundant reference systems simultaneously through identical inherited code",
-    "Code is fit only for the envelope it was verified against; reuse demands re-verification",
-    "Safety-critical reuse became a verification event with every inherited assumption explicitly re-checked",
-  ),
-  references: (
-    [J. L. Lions (chair), _Ariane 5 Flight 501 Failure Inquiry Board Report_ (1996) — the data-conversion overflow (quoted).],
-    [Lions Report (1996) — the 37-second breakup and the lost payloads.],
-    [Lions Report (1996) — the 64-bit-to-16-bit conversion overflow and the simultaneous shutdown of both inertial reference systems.],
-    [Lions Report (1996) — the reused code path neither removed nor re-verified for Ariane 5's envelope.],
-    [N. Leveson, _Safeware_ (1995) — software-reuse hazards; G. Le Lann, "An Analysis of the Ariane 5 Flight 501 Failure" (1997).],
-    [Cf. Patriot (Case 8) and Mars Climate Orbiter (Case 9).],
-  ),
-  quote: [The internal SRI software exception was caused during execution of a data conversion from 64-bit floating point to 16-bit signed integer value.],
-  quote-source: "Ariane 5 Flight 501 Failure Inquiry Board, 1996",
-  le-insight: [
-    Ariane 5 is the canonical software-engineering case for the
-    fallacy of risk-free code reuse. Code is fit for its envelope of
-    operation. Reusing it in a different envelope is a new design
-    decision and must be re-verified as one. The institutional
-    capability that was missing was the requirement to re-verify.
-  ],
-  lens-approach: [
-    LENS uses Ariane 5 in LEN 5 for software-engineering capability
-    deliverables and in LEN 8 for the institutional discipline that
-    treats reuse as a verification event rather than as a savings.
-  ],
-  literature-items: (
-    [Lions Report (1996)],
-    [Leveson (1995), _Safeware_],
-    [Wing, "A Specifier's Introduction to Formal Methods" (1990)],
-  ),
-  reflection-list: (
-    [Identify a piece of reused infrastructure in your domain whose original operating envelope is not documented. What is the silent assumption?],
-    [Design the verification deliverable that should accompany every reuse of safety-critical software.],
-    [Both redundant reference systems failed at the same instant because they shared the same inherited assumption. Identify a place in your domain where redundancy gives false comfort because the duplicated units share a common flaw rather than fail independently.],
-  ),
-  approaches: (
-    during: (
-      [Treat every reuse of safety-critical code as a new design decision: re-verify each inherited assumption against the new system's operating envelope before flight.],
-      [Document the original operating envelope a component was verified against, so a later reuse can be checked against it rather than blindly trusted.],
-      [Design redundancy to fail independently — diverse implementations or inputs — so a shared inherited assumption cannot take out primary and backup at once.],
-    ),
-    after: (
-      [Audit reused components for code paths that are irrelevant in the new system but still active, and remove or re-verify them rather than leaving them dormant.],
-      [Make boundary crossings — code moving onto a new vehicle, a new envelope — a mandatory re-verification event in the institution's process, not a savings.],
-      [Review past reuse decisions for the Ariane / Patriot / Mars Climate Orbiter pattern: a quantity sound in its original setting and unchecked in the new one.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 8"),
-  scale: "big",
-  induced-anchor: "7.2",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
-)
-
-#case(
-  number: 16,
-  slug: "eu-human-brain-project-top-down-vision",
-  title: "EU Human Brain Project — Top-Down Vision That Unraveled",
-  year: "2013 – 2023",
-  domains-list: ("neuroscience", "science policy (EU)"),
-  modes-code: "GN",
-  impact: "A €1B EU-flagship initiative to simulate a living brain governed top-down under a single PI; the project unraveled as the field disputed both feasibility and approach, restructured under protest, and concluded in 2023 with the founding framing abandoned",
+  number: 3,
+  slug: "watson-for-oncology-delegation-marketed",
+  title: "Watson for Oncology — Delegation Marketed Ahead of Capability",
+  year: "2013 – 2018",
+  domains-list: ("healthcare/oncology", "commercial AI", "procurement"),
+  modes-code: "DKN",
+  impact: "IBM marketed Watson for Oncology with tumor-board concordance rates as high as 96%; STAT News investigation (Ross & Swetlitz, 2017–2018) and internal IBM documents documented unsafe and incorrect cancer-treatment recommendations and that the system was trained on a small number of synthetic cases rather than real patient outcomes; hospitals worldwide had purchased the tool on the marketed concordance claim",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
   evidence-flag: "journalism-tier",
-  induced-anchor: "5.1",
-  lens-anchor: "D1+D5/PT4",
-  clo-anchor: "CLO-1, CLO-5",
+  induced-anchor: "2.4",
+  lens-anchor: "D3/PT6",
+  clo-anchor: "CLO-1, CLO-4",
   summary: [
-    The EU Human Brain Project, launched in 2013 as one of the EU's
-    Future and Emerging Technologies Flagship programs, set out to
-    build a computer simulation of a living brain under a single
-    principal investigator (Henry Markram). The governance model was
-    top-down: a central vision, a small leadership group, a
-    decade-long funding commitment of about €1 billion, and a
-    research community asked to align around the simulation goal. The
-    case is drafted as the paired contrast to the BRAIN Initiative
-    (Case 176), not as a standalone study: the same era, the same
-    field-scale ambition, opposite governance models, opposite
-    trajectories. The evidence base is largely journalism — MIT
-    Technology Review retrospective, _In Silico_ documentary, science
-    press, the project's own restructuring records — so the
-    evidence-tier flag is rendered under the case title; future
-    validation will continue. The teaching point survives the flag:
-    the governance choice (top-down single-PI versus distributed
-    working-group) was the variable that materially changed the
-    trajectory of the two programs at field scale.
+    Watson for Oncology was IBM's heavily marketed clinical-decision-
+    support system, sold to hospitals worldwide as a cancer-
+    treatment recommendation engine whose concordance with expert
+    tumor boards was advertised at rates as high as 96%. The
+    capability the system was sold under was AI-grade treatment
+    recommendation across cancer types, delivered with the
+    institutional credibility of IBM and MD Anderson partnerships.
+    The capability the system actually carried — documented in the
+    investigative reporting by Casey Ross and Ike Swetlitz at STAT
+    News through 2017 and 2018, drawing on leaked IBM internal
+    documents — was substantially smaller. Watson was trained on a
+    small number of synthetic cases curated by Memorial Sloan
+    Kettering oncologists rather than on real patient outcomes,
+    generated unsafe and incorrect recommendations in some
+    documented cases, and the internal IBM record showed engineers
+    raising concerns about the gap between marketed concordance
+    claims and what the system actually delivered. Hospitals
+    around the world had purchased Watson on the marketed
+    capability; major deployments at MD Anderson and elsewhere
+    were later wound down. The case is the canonical instance in
+    the AI-delegation typology of capability marketed ahead of
+    capability validated. The evidence-tier flag rendered under
+    the title is binding: STAT News journalism is the primary
+    public source, and the academic record cites it secondarily.
+    "Future validation ongoing" is the standing language;
+    independent peer-reviewed evaluation of Watson for Oncology's
+    operating accuracy at the level the marketing claimed was
+    never produced.
   ],
   sections: (
     [
-      In 2013 the European Commission selected the Human Brain Project
-      as one of two Future and Emerging Technologies Flagship
-      programs, with a ten-year horizon and approximately €1 billion
-      in committed funding. The founding vision, articulated and
-      championed by Henry Markram, was a computer simulation of a
-      living human brain. The governance was top-down: a small
-      leadership group, a unified research framing, and a community
-      of European neuroscience labs asked to organize around the
-      simulation goal.#cn()
+      Watson for Oncology was the most publicly visible commercial
+      clinical-AI deployment of the mid-2010s. IBM had positioned
+      Watson — originally the Jeopardy-winning question-answering
+      system — as a healthcare engine after the 2011 Jeopardy
+      performance, and oncology was the flagship domain. The
+      product was sold as a cancer-treatment recommendation
+      system: a clinician would enter the patient's case, Watson
+      would query its knowledge base against the training data
+      provided by Memorial Sloan Kettering oncologists, and the
+      system would return ranked treatment recommendations
+      annotated with evidence citations. The marketed capability
+      was treatment recommendation that concorded with expert
+      tumor boards at rates as high as 96%. Hospitals worldwide
+      purchased the system on that claim.#cn()
     ],
     [
-      The contestation surfaced quickly. Open letters from a sizable
-      fraction of the European neuroscience community questioned both
-      the feasibility of the simulation goal and the project's
-      governance — the breadth of expertise on the leadership group,
-      the relationship between the cognitive neuroscience the field
-      practiced and the molecular-scale simulation the project
-      proposed, and the absence of a process for scope revision. The
-      EU commissioned a mediation and restructuring exercise that
-      broadened the leadership and re-scoped the research agenda
-      around infrastructure platforms rather than a single
-      simulation. The project ran to its scheduled 2023 conclusion;
-      the founding framing was not what it delivered.#cn()
+      Casey Ross and Ike Swetlitz at STAT News produced the
+      investigation of record across 2017 and 2018. Drawing on
+      leaked IBM internal documents and interviews with engineers,
+      oncologists, and former IBM staff, the reporting documented
+      a substantially different operating picture. Watson had been
+      trained not on real patient outcomes — the standard a
+      treatment-recommendation engine would have to clear — but on
+      a small number of synthetic cases curated by MSK oncologists
+      to reflect what those oncologists would have done. The
+      training corpus was a model of expert opinion at one
+      institution, not an outcome-anchored learning record. In
+      documented cases the system generated unsafe and incorrect
+      treatment recommendations. Internal IBM documents showed
+      engineers raising concerns about the gap between marketed
+      capability and operating reality.#cn()
     ],
     [
-      The case pairs directly with the BRAIN Initiative (Case 176).
-      The two programs launched within months of each other, at
-      comparable field-scale ambition, in the same decade of
-      neuroscience. The governance models were not comparable: BRAIN
-      organized a working group that visibly contested its own
-      composition and re-baselined its scope on the public record;
-      HBP organized around a single PI and a unified framing, and the
-      community had to mediate the project away from that framing.
-      The trajectory difference is not a verdict on either field; it
-      is evidence about the governance variable at the launch
-      moment.#cn()
+      The structural failure pattern the case carries is delegation
+      of consequential authority — cancer-treatment recommendation
+      — to a tool whose validated capability was substantially
+      smaller than its marketed capability. The procurement
+      mechanism was the carrier: hospitals purchased Watson
+      through capital and IT procurement processes that evaluated
+      the marketed concordance claims and the IBM/MSK
+      institutional credentials, but did not independently
+      validate operating accuracy on the receiving institution's
+      patient population. The capability the procurement was
+      buying — accurate, real-world treatment recommendation at
+      the marketed concordance rate — was not the capability the
+      system carried. Major deployments at MD Anderson and
+      elsewhere were wound down as the gap surfaced.#cn()
     ],
     [
-      The evidence-tier flag rendered under the case title is
-      load-bearing here. The detailed account of the early
-      contestation, the open letters, the mediation, and the
-      restructuring lives largely in MIT Technology Review's
-      retrospective, in the _In Silico_ documentary, and in
-      science-press coverage from _Science_, _Nature_, and the
-      European press; the project's own restructuring records add
-      the formal layer. The case is teachable from this material —
-      the structural pattern is consistent across sources — but the
-      specific magnitudes and the exact language of the early
-      contestation should be re-confirmed against primary sources
-      before publication. Future validation will continue.#cn()
+      The evidence-tier flag rendered under the title is binding
+      and survives into the case verbatim. The STAT News
+      investigation by Ross and Swetlitz is the primary public
+      source, and the academic record cites it secondarily. No
+      independent peer-reviewed evaluation of Watson for
+      Oncology's operating accuracy at the level the marketing
+      claimed was ever produced — partly because the system was
+      proprietary and partly because the deployments were wound
+      down before the kind of prospective study that would have
+      established the operating record could be conducted. The
+      case is teachable on the structural failure pattern at
+      journalism-grade evidence; the standing "source confidence
+      flagged; future validation ongoing" language is the honest
+      tier the case rests on.#cn()
     ],
     [
-      What the pair (Cases 176 + 108) teaches is that the governance
-      model — distributed working-group with public-record
-      contestation versus top-down single-PI with unified framing —
-      is itself the variable that explains why one field-scale
-      program survives and adapts while the other unravels and is
-      mediated away from its founding goal. The capability
-      deliverable at program launch is not the vision and not the
-      tools; it is a governance architecture that can absorb
-      contestation, document scope drift, and re-baseline without
-      losing the program. BRAIN had one; HBP had to be retrofitted
-      one.#cn()
+      In the AI-delegation typology (Cases 20 TREWS, 102 Epic
+      Sepsis Model, 111 SyRI, and this case), Watson is the
+      marketing-ahead-of-capability failure mode: the procurement
+      decision rode on marketed concordance rates that were not
+      validated at the operating institutions, and the
+      institutional credentials did not substitute for the
+      validation. TREWS shows delegation with strong outcome
+      evidence works; Epic Sepsis shows delegation without
+      validation fails by accuracy disconfirmation; SyRI shows
+      delegation halted on rights grounds; Watson shows delegation
+      driven by procurement and marketing rather than by validated
+      capability. The four together teach the typology of when AI
+      delegation is and is not legitimate. Watson is the case
+      where the marketing finance — the institutional credibility
+      and the headline concordance number — substituted for the
+      evidence the procurement should have required, and the
+      capability the hospitals thought they were buying was not
+      the capability they got.
     ],
   ),
   beats: (
-    "EU FET Flagship 2013 with ~€1B over a decade and a single-PI top-down vision: simulate a living brain",
-    "Community contestation surfaces quickly: feasibility, leadership breadth, no scope-revision process",
-    "EU commissions mediation and restructuring; scope re-shaped around infrastructure platforms, not simulation",
-    "Project runs to 2023 conclusion; founding framing is not what was delivered",
-    "Pair with BRAIN (Case 176): same era and ambition, opposite governance models, opposite trajectories — governance is the variable",
+    "Watson for Oncology marketed as cancer-treatment recommendation engine with tumor-board concordance rates as high as 96%",
+    "STAT News investigation (Ross & Swetlitz, 2017–2018) drawing on leaked IBM documents: trained on small synthetic-case set curated by MSK, not real patient outcomes",
+    "Documented unsafe and incorrect recommendations; internal IBM engineers raised concerns about gap between marketed and operating capability",
+    "Hospitals worldwide purchased on marketed claim; major deployments (MD Anderson and others) later wound down",
+    "Evidence tier: journalism-grade (STAT primary, academic secondary); no independent peer-reviewed evaluation of operating accuracy; future validation ongoing",
   ),
   approaches: (
     during: (
-      [Design the scope-revision process before the program launches; a program that cannot re-scope without external mediation is a program designed to fail open.],
-      [Stress-test the leadership group's breadth before launch: does it span the disciplines the program will have to coordinate, or is it narrow enough to be captured by the founding framing?],
-      [Treat early community contestation as governance information, not as friction; absorbing it programmatically is the capability the program needs to demonstrate.],
+      [Separate marketed capability from validated capability in any procurement decision involving consequential delegation; the marketed concordance number is the carrier of the procurement story, not the evidence the procurement should rest on.],
+      [Require independent operating-accuracy validation on the receiving institution's patient population before delegation; the AI-delegation literature now treats this as the procurement floor, and Watson is one of the reasons.],
+      [Anchor the procurement evidence to outcome-anchored training, not to expert-curated synthetic cases; expert opinion at one institution is not outcome data the procurement can rely on.],
     ),
     after: (
-      [When journalism-tier sourcing is what the record provides, flag it under the title and carry the standing "future validation ongoing" language into the printed case — the teaching value survives the flag, but the magnitudes do not.],
-      [Commission a structured retrospective on the governance variable specifically: who held authority, how scope drift was named, how the program re-baselined. This is the documentation a future field-scale launch needs more than another success narrative.],
-      [Cross-reference governance evidence across paired programs: a single program's trajectory is not evidence about governance; a paired comparison at the same era and ambition is.],
+      [Render the evidence tier honestly when the primary public source is journalism; the STAT investigation is the load-bearing source, and the academic record's secondary citation is the accurate description, not "peer-reviewed evidence."],
+      [Carry the AI-delegation typology — TREWS, Epic Sepsis, SyRI, Watson — as a unit in any curricular discussion of when delegation is legitimate; the four-case set teaches the typology more clearly than any single case.],
+      [Treat the wind-down at MD Anderson and elsewhere as the case's own correction signal; the institutional decisions to discontinue are themselves evidence about what the procurement should have required up front.],
     ),
   ),
   references: (
-    [MIT Technology Review (2021), retrospective on big-science brain projects — the principal critical assessment of HBP alongside BRAIN.],
-    [_In Silico_ (2020), documentary by Noah Hutton — long-form follow of Markram and the HBP through the contestation period.],
-    [_Science_ and _Nature_ contemporaneous coverage of the open letters and the mediation/restructuring (2014–2016).],
-    [Human Brain Project final reports (2023) — the project's own restructuring and concluding documentation.],
-    [Alivisatos et al. (2012), _Neuron_ — the BRAIN position paper that is the paired contrast (Case 176).],
+    [Ross & Swetlitz (2017–2018), "IBM Watson recommended unsafe and incorrect cancer treatments" and adjacent investigations, _STAT News_ — the load-bearing primary source; investigative journalism drawing on leaked IBM internal documents.],
+    [Strickland (2019), "How IBM Watson Overpromised and Underdelivered on AI Health Care," _IEEE Spectrum_ — independent retrospective synthesis of the public record.],
+    [Topol (2019), _Deep Medicine_, Basic Books — secondary academic situating of Watson within the broader clinical-AI delegation discourse.],
+    [v2 paired cases: TREWS (Case 20), Epic Sepsis Model (Case 5), SyRI (Case 184) — the AI-delegation typology.],
   ),
-  quote: [A program that cannot re-scope without external mediation is a program designed to fail open.],
-  quote-source: "Editors' synthesis of the Human Brain Project record.",
+  quote: [The capability the procurement was buying — accurate, real-world treatment recommendation at the marketed concordance rate — was not the capability the system carried.],
+  quote-source: "Editors' synthesis of Ross & Swetlitz (STAT News 2017–2018).",
   le-insight: [
-    The EU Human Brain Project is the paired contrast to the BRAIN
-    Initiative (Case 176): same era, same field-scale ambition,
-    opposite governance models, opposite trajectories. Top-down
-    single-PI governance with a unified framing did not survive
-    community contestation; the program was mediated away from its
-    founding goal and ran to its scheduled conclusion in 2023.
-    Evidence base is journalism-tier and the flag is rendered
-    under the title; future validation will continue.
+    Watson for Oncology is the canonical instance of clinical-AI
+    delegation marketed ahead of validated capability. The
+    operating capability was substantially smaller than the
+    marketed concordance claims; the procurement mechanism
+    evaluated the marketing rather than the validation; the
+    deployments were wound down as the gap surfaced. The
+    evidence-tier flag is binding: journalism-grade reporting is
+    the load-bearing source, and future validation ongoing
+    remains the honest qualifier.
   ],
   lens-approach: [
-    HBP is the field-scale failure case in the v2 corpus
-    (induced 5.1; LENS D1+D3/PT4) drafted as the contrast to BRAIN
-    (Case 176). LENS uses the pair in Domain 1 (Systems Analysis)
-    for the governance-variable comparison and in Domain 5
-    (Navigating Sociotechnical Constraints) for the
-    contestation-absorption capability. The
-    evidence-tier flag is binding until primary-source
-    confirmation completes; the structural pattern survives the
-    flag, the specific magnitudes do not.
+    Watson for Oncology is the marketing-ahead-of-capability
+    AI-delegation failure (induced 1.1; LENS D3/PT6) — Domain 3
+    for *Delegation with revocation* (MD Anderson wind-downs
+    are the revocation half); Domain 4 for requirements-vs-
+    marketing. Pair with Cases 20, 5, 184. Evidence-tier
+    flag binds.
   ],
   literature-items: (
-    [MIT Technology Review (2021), retrospective on big-science brain projects],
-    [_In Silico_ (2020), documentary, dir. Noah Hutton],
-    [Human Brain Project final reports (2023)],
+    [Ross & Swetlitz (2017–2018), _STAT News_ — primary investigative record],
+    [Strickland (2019), _IEEE Spectrum_ — independent retrospective],
+    [Topol (2019), _Deep Medicine_ — secondary academic situating],
   ),
   reflection-list: (
-    [Identify a large program in your domain that ran a top-down single-PI governance model. What was the scope-revision process designed in at launch, and what was the process the program actually used when contestation arrived?],
-    [Specify the paired-program comparison you would commission to learn from a field-scale program's trajectory, rather than from the program alone. What is the matched comparison case and what is the governance variable you are isolating?],
-    [The evidence base for this case is largely journalism. What primary-source confirmation would you require — interviews, restructuring documents, mediation reports — before relying on this case for a deployment decision?],
+    [Identify a procurement decision in your domain that delegated consequential authority to an automated system. Did the procurement evaluate marketed capability claims or validated capability on the receiving institution's data? Where is the gap most likely to have been smoothed by institutional credentials standing in for evidence?],
+    [Specify what operating-accuracy validation you would require before delegating: which prospective study, on which population, with which comparison and which outcome metric. The AI-delegation typology has established this as the procurement floor; the question is whether your domain's procurement processes meet it.],
+    [The evidence-tier flag under this case's title is binding because the primary public source is journalism. Identify a case in your domain where the strongest available evidence is journalism-grade. What is the responsible drafting discipline that surfaces the tier rather than implying peer-reviewed validation?],
   ),
-  courses: ("LEN 1", "LEN 7", "LEN 8"),
+  courses: ("LEN 5", "LEN 7", "LEN 9"),
+)
+
+// ---- Case 4 — mid-staffordshire-nhs-foundation-trust ----
+#case(
+  number: 4,
+  slug: "mid-staffordshire-nhs-foundation-trust",
+  title: "Mid Staffordshire NHS Foundation Trust",
+  year: "2005 – 2009",
+  domains-list: ("healthcare",),
+  modes-code: "GNK",
+  impact: "Excess deaths at Stafford Hospital documented across years; the Francis Inquiry produced 290 recommendations and restructured UK patient-safety governance",
+  diagram: dgm.dgm-cascade(
+    ("ward staff", "hospital management", "trust board", "regional oversight", "Department of Health"),
+    outcome: "each layer was acting on the metric, not the patient",
+    caption: "Mid Staffs — measurement and reality diverged across years",
+  ),
+  kind: "failure",
+  summary: [
+    Between roughly 2005 and 2009, Stafford Hospital, run by the Mid
+    Staffordshire NHS Foundation Trust, subjected patients to appalling
+    neglect — left without food, water, or basic care — while mortality ran
+    above expected. The trust had been chasing financial targets that
+    depended on staffing cuts. Robert Francis QC's public inquiry produced a
+    2,000-page report and 290 recommendations, identifying the structural
+    problem as the gap between the trust's reported performance and patients'
+    actual experience: every governance layer above the ward received reports
+    that targets were being met, and none checked those reports against what
+    was happening to patients. Mid Staffs is the dataset's strongest case for
+    the harm done when measurement and reality diverge over years.
+  ],
+  sections: (
+    // -- Background --
+    [
+      The Mid Staffordshire NHS Foundation Trust ran Stafford Hospital in
+      England. Pursuing Foundation Trust status and the financial targets
+      that came with it, the board cut staffing — and the cuts fell on the
+      wards. The institution's reported performance, the numbers that
+      travelled upward, stayed on target.#cn() The targets the board chased
+      were financial and procedural, so cutting ward staff improved the very
+      figures the trust was measured on even as it removed the people on whom
+      patient care directly depended.
+    ],
+    // -- What Happened --
+    [
+      On the wards the reality was appalling. Patients were left in their own
+      excrement, denied food and water, given the wrong medication or none,
+      for years; mortality ran substantially above expected. The harm was not
+      a single incident but a sustained condition — visible to anyone on the
+      ward and invisible in the reports that left it.#cn() Because the
+      suffering was a continuous state rather than a nameable event, it never
+      generated the kind of discrete incident a reporting system is built to
+      catch, and so it accumulated for years beneath numbers that stayed
+      reassuringly on target.
+    ],
+    // -- The Investigation --
+    [
+      The Healthcare Commission investigated; the layers above did not.
+      Robert Francis QC's public inquiry ran to some 2,000 pages and 290
+      recommendations.#cn() Its structural finding was the divergence between
+      reported performance and patient experience: every governance layer
+      above the ward had received reports that the hospital was meeting its
+      targets, and none had checked them against what was happening to
+      patients. "The system as a whole failed in its most essential duty — to
+      protect patients from unacceptable risks of harm."#cn() The phrase
+      "the system as a whole" located the failure deliberately above any
+      single ward or manager: no one layer was solely at fault, because each
+      had trusted the layer below to be reporting reality rather than targets.
+    ],
+    // -- The Capability Gap --
+    [
+      Mid Staffs is the British analog of the VA wait-time scandal (Case 7):
+      measurement and reality diverged over years while every layer of
+      governance acted on the measurement. The capability that was missing
+      was not clinical skill on the ward but the institutional habit of
+      testing whether the numbers corresponded to the patients — a check no
+      layer above the ward performed.#cn() Each layer reasonably assumed the
+      check belonged to someone else, so the verification that the report
+      matched the patient fell into the gap between layers — exactly the place
+      a reporting chain built only to pass numbers upward is structurally
+      unequipped to look.
+    ],
+    // -- Aftermath & Reform --
+    [
+      The Francis Inquiry restructured how the NHS treats patient safety, and
+      the Berwick review that followed pressed for a culture of learning over
+      targets. The lesson is the measurement one in its starkest form: a
+      reporting chain can run clean from ward to Department of Health while,
+      underneath it, the thing being reported on quietly fails.#cn() Berwick's
+      framing — learning over targets — named the deeper correction: as long
+      as the target is the thing the institution rewards, the report will
+      describe the target, and only a culture that prizes finding the gap will
+      keep checking the report against the patient.
+    ],
+  ),
+  beats: (
+    "Pursuing Foundation Trust status, the board cut ward staffing while reported targets stayed met",
+    "Patients neglected for years in appalling conditions; mortality ran substantially above expected",
+    "Francis Inquiry produced 2,000 pages and 290 recommendations; system as a whole failed",
+    "Like the VA case, every governance layer acted on metrics; no one checked against patients",
+    "Berwick review pressed for learning over targets; reporting can run clean while reality fails",
+  ),
+  references: (
+    [R. Francis QC, _Report of the Mid Staffordshire NHS Foundation Trust Public Inquiry_ (2013) — the staffing cuts and Foundation Trust targets.],
+    [Healthcare Commission, _Investigation into Mid Staffordshire NHS Foundation Trust_ (2009) — ward conditions and excess mortality.],
+    [Francis QC (2013) — the ~2,000-page report and 290 recommendations.],
+    [Francis QC (2013) — "the system as a whole failed in its most essential duty — to protect patients from unacceptable risks of harm" (quoted).],
+    [D. Berwick, _A Promise to Learn — A Commitment to Act_ (National Advisory Group on the Safety of Patients in England, 2013).],
+    [K. Walshe & J. Higgins (2002) on NHS safety governance; cf. the VA wait-time scandal (Case 7).],
+  ),
+  quote: [The system as a whole failed in its most essential duty — to protect patients from unacceptable risks of harm.],
+  quote-source: "Robert Francis QC, Report of the Mid Staffordshire NHS Foundation Trust Public Inquiry, 2013",
+  le-insight: [
+    Mid Staffordshire is the British analog of the VA wait-time scandal
+    (Case 7). Measurement and reality diverged over years; every layer
+    of governance above the operating environment was acting on the
+    measurement; patients paid the cost of the divergence. The Francis
+    Inquiry recommendations changed how the NHS thinks about patient
+    safety as an institutional capability.
+  ],
+  lens-approach: [
+    LENS uses Mid Staffs in LEN 4 for the divergence-of-measurement
+    problem and in LEN 7 for the governance failure across multiple
+    layers. Studio projects examine the Francis recommendations as a
+    template for institutional reform deliverables.
+  ],
+  literature-items: (
+    [Francis QC (2013)],
+    [Berwick (2013), _A Promise to Learn_],
+    [Walshe & Higgins (2002) on NHS safety governance],
+  ),
+  reflection-list: (
+    [Identify a multi-layer reporting chain in your domain. What would it take for the top layer to know whether the reports correspond to reality?],
+    [The Francis Inquiry produced 290 recommendations. Pick five that you think were most load-bearing and explain why.],
+    [The verification fell into the gap between layers because each assumed it belonged to someone else. In your domain, who explicitly owns the check that a report matches reality — and how would you know if no one does?],
+  ),
+  approaches: (
+    during: (
+      [Design targets so that gaming them (e.g., cutting ward staff) cannot improve the metric while degrading the outcome it stands for.],
+      [Build a direct patient-experience signal — independent of the financial and procedural targets — into the reporting chain from the start.],
+      [Assign explicit ownership of the report-versus-reality check at each layer, so verification cannot fall into the gap between them.],
+    ),
+    after: (
+      [Audit sustained conditions, not just discrete incidents, since continuous harm never trips an event-based reporting system.],
+      [Cross-check upward reports against ground truth at the ward periodically, treating a clean report as a hypothesis to be tested.],
+      [Reward a culture of learning over target attainment, so the institution keeps looking for the gap rather than describing the target.],
+    ),
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 3",),
+  scale: "big",
+  induced-anchor: "2.1",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4",
+  evidence-source: "investigation",
+)
+
+// ---- Case 5 — epic-sepsis-model ----
+#case(
+  number: 5,
+  slug: "epic-sepsis-model",
+  title: "Epic Sepsis Model",
+  year: "2017 – 2021",
+  domains-list: ("healthcare", "clinical AI", "governance"),
+  modes-code: "DGN",
+  impact: "External validation across 38,455 hospitalizations found AUROC 0.63 versus reported 0.76–0.83, missing ~67% of sepsis at the operational threshold; deployed in hundreds of hospitals without independent validation or FDA clearance",
+  kind: "failure",
+  scale: "big",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "2.4",
+  lens-anchor: "D4+D3/PT6",
+  clo-anchor: "CLO-4, CLO-5, CLO-3",
+  summary: [
+    The Epic Sepsis Model was a proprietary machine-learning sepsis
+    prediction tool embedded in the Epic EHR and deployed in hundreds of
+    US hospitals — the most widely operational clinical AI in American
+    medicine. Until Wong et al. (_JAMA Internal Medicine_ 2021) ran an
+    external validation across 38,455 hospitalizations, no independent
+    evaluation had been published. The reported AUROC was 0.63, well
+    below the 0.76–0.83 Epic had reported; at the operational threshold,
+    the model missed roughly two-thirds of sepsis cases, with a 12%
+    positive predictive value and substantial alert burden. The case is
+    not principally about the model's performance. It is about the
+    governance seam that let the deployment happen at scale without
+    independent validation: as an EHR-embedded proprietary feature, the
+    model sat outside the FDA's medical-device oversight regime, so the
+    machinery that would have surfaced its limitations at clearance was
+    never engaged. The post-deployment surveillance pattern (Vioxx,
+    Case 9) is the analog: the harm was the absence of a standing system
+    to check the tool once it was in the population's hands.
+  ],
+  sections: (
+    [
+      By the late 2010s the Epic Sepsis Model was, by deployment count,
+      the most widely operational clinical AI in American medicine —
+      embedded in hundreds of hospitals as a default feature of the
+      dominant inpatient EHR. The tool was presented as a help to
+      clinicians trying to catch sepsis earlier in a workflow already
+      saturated with alerts. The model's design and validation, however,
+      were proprietary and not externally evaluated.#cn()
+    ],
+    [
+      In 2021 Wong et al. published the first large external validation
+      in _JAMA Internal Medicine_: 38,455 hospitalizations at the
+      University of Michigan, with sepsis diagnosed using two consensus
+      definitions. The model achieved an AUROC of 0.63, materially below
+      Epic's reported 0.76–0.83. At the operational threshold for
+      bedside alerting, the model missed roughly two-thirds of sepsis
+      cases. The 12% positive predictive value meant most alerts were
+      false; the alert burden landed on clinicians who could not
+      distinguish the few real alerts from the many spurious ones.#cn()
+    ],
+    [
+      The governance seam is the structural lesson. Because the Epic
+      Sepsis Model was distributed as a feature of an EHR rather than as
+      a stand-alone clinical-decision-support device, it did not require
+      FDA clearance. The machinery that would normally require
+      independent validation, post-market surveillance, and demographic
+      stratification of performance was never engaged. The model's
+      deployment was a regulatory non-event because the regulatory regime
+      treated the EHR layer as out of scope. The clinical AI question and
+      the device-oversight question diverged.#cn()
+    ],
+    [
+      What surfaced the failure was post-deployment external validation —
+      the exact discipline that the clearance pathway omits. The Wong et
+      al. paper was disconfirmation in the form the system did not
+      otherwise provide. Epic subsequently revised the model and added
+      stratification to its documentation; many hospitals turned the
+      alert off, recalibrated, or replaced it. The corrective action
+      worked through publication, not through governance. That is the
+      gap: a tool can be deployed at hundreds of sites, alert at the
+      bedside for years, and still be disconfirmable only by an academic
+      paper rather than by the surveillance architecture the deployment
+      was supposed to have.#cn()
+    ],
+    [
+      The Epic case is the negative pair to TREWS (Case 20) and the
+      governance-seam analog to Radiology AI Miscalibration (Case 35).
+      Together they teach a typology: delegation done well as a paired
+      intervention with engineered interface and outcome-grounded
+      evidence (TREWS); delegation done badly as a proprietary
+      EHR-embedded model deployed outside the device-oversight regime
+      without independent validation (Epic); delegation halted on
+      rights grounds because the system was both ineffective and
+      rights-violating (SyRI); delegation marketed ahead of capability
+      (Watson for Oncology). The four together are the canonical AI
+      delegation typology.
+    ],
+  ),
+  beats: (
+    "Most-deployed clinical AI in US medicine — embedded as a default Epic EHR feature; no independent validation",
+    "Wong et al. external validation: AUROC 0.63, missed ~67% of sepsis at threshold, 12% PPV, alert burden",
+    "Governance seam: EHR-embedded proprietary models fell outside FDA device oversight by classification, not by design",
+    "Disconfirmation came as a published external validation, not from a standing post-deployment surveillance regime",
+    "Negative pair to TREWS; part of the AI-delegation typology (Epic / SyRI / Watson / TREWS)",
+  ),
+  approaches: (
+    during: (
+      [Require independent external validation before deployment of any consequential clinical AI, regardless of whether it ships as a stand-alone device or as a feature of a host platform.],
+      [Specify in advance the disconfirming evidence — population, threshold, PPV, alert burden — that would revoke the delegation, and the channel through which that evidence would surface.],
+      [Identify the regulatory regime the tool falls under, and where the seam between regimes is — proprietary EHR features should not be exempt from clinical-AI oversight by virtue of their packaging.],
+    ),
+    after: (
+      [Build post-deployment surveillance as a standing institutional capability — outcome metrics, demographic stratification, alert-burden audit — so disconfirmation does not require a single academic paper to surface.],
+      [Close the cross-regime seam: clinical AI embedded in EHRs should be subject to the same independent validation and surveillance as stand-alone clinical-decision-support devices.],
+      [When disconfirming evidence arrives, treat it as a designed input: revise, recalibrate, or remove on a defined timeline, with the corrective action visible to the clinicians who used the tool.],
+    ),
+  ),
+  references: (
+    [Wong et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070, doi:10.1001/jamainternmed.2021.2626.],
+    [Habib et al. (2021), commentary on Wong et al., _JAMA Internal Medicine_ — on the implications for proprietary clinical AI.],
+    [FDA, _Clinical Decision Support Software: Final Guidance_ (2022) — the post-Wong reframing of the EHR-embedded oversight question.],
+    [Adams et al. (2022), _Nature Medicine_ — the paired positive case (101).],
+  ),
+  quote: [A deployment is not a validation. Deployment without independent validation is delegation without evidence.],
+  quote-source: "Editors' synthesis of Wong et al. (2021).",
+  le-insight: [
+    The Epic Sepsis Model is the canonical case of consequential
+    clinical-AI delegation at scale without independent validation.
+    The structural lesson is not the model's poor performance; it
+    is the governance seam that let the deployment proceed without
+    the validation and surveillance machinery that the
+    medical-device pathway would have required, surfaced only by
+    post-deployment external work.
+  ],
+  lens-approach: [
+    Epic is the Domain 4 + Domain 3 / Problem Type 6 failure that
+    motivates the post-deployment-surveillance discipline LENS
+    teaches. Used in Domain 4 (Test and Evaluation) for measurement
+    architecture under proprietary opacity and the gap-attribution
+    CLO; in Domain 3 (Human-System Collaboration) for the
+    delegation-with-revocation CLO — Epic was delegated without a
+    pre-specified revocation criterion; and in Domain 5 (Navigating
+    Sociotechnical Constraints) for the cross-regime / platform
+    governance seam. Pairs directly against TREWS (Case 20) and
+    sits in the AI-delegation typology with SyRI and Watson.
+  ],
+  literature-items: (
+    [Wong et al. (2021), _JAMA Internal Medicine_],
+    [FDA, _Clinical Decision Support Software: Final Guidance_ (2022)],
+    [Habib et al. (2021), _JAMA Internal Medicine_ commentary],
+  ),
+  reflection-list: (
+    [Identify a clinical AI tool deployed in your domain. Where in the regulatory architecture would independent validation have been required, and where could it slip the seam? What pre-specified disconfirming evidence would revoke the delegation?],
+    [Design the post-deployment surveillance deliverable that should accompany every deployment of consequential clinical AI — including embedded-in-EHR features that currently fall outside the device-oversight regime.],
+    [The disconfirmation in this case came from a single academic paper, not from a standing institutional architecture. What is the minimum surveillance machinery that would have surfaced the model's performance gap at the operational threshold without requiring the Wong et al. paper to exist?],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 2"),
+)
+
+// ---- Case 6 — racial-bias-in-pain-assessment-the ----
+#case(
+  number: 6,
+  slug: "racial-bias-in-pain-assessment-the",
+  title: "Racial Bias in Pain Assessment — The False-Belief Mechanism",
+  year: "2016",
+  domains-list: ("clinical medicine", "medical education", "health equity"),
+  modes-code: "TKN",
+  impact: "About half of surveyed medical students and residents endorsed at least one false belief about biological differences between Black and White people; those who held more false beliefs rated Black patients' pain as less severe and recommended less accurate treatment",
+  kind: "failure",
+  scale: "big",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "8.1",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4",
+  summary: [
+    Hoffman, Trawalter, Axt, and Oliver (_PNAS_ 2016) surveyed medical
+    students and residents on a battery of false beliefs about
+    biological differences between Black and White people (e.g., "Black
+    people's skin is thicker," "Black people's nerve endings are less
+    sensitive"). About half endorsed at least one such belief. The
+    paper's experimental layer showed that respondents who endorsed
+    more false beliefs rated the pain of mock Black patients as less
+    severe than the same pain in mock White patients, and made less
+    accurate treatment recommendations. The mechanism the case
+    identifies is specific and unusually precise for a bias study: the
+    pain-assessment gap is traceable to a small set of nameable false
+    biological beliefs, not to diffuse implicit bias or
+    structural-only explanation. That precision is what makes
+    Hoffman the human-development case in the race-construct trio. The
+    capability deliverable is not awareness training; it is
+    curriculum that specifically disconfirms the named false beliefs
+    and instrumentation that surfaces when bedside ratings of pain
+    diverge by patient race.
+  ],
+  sections: (
+    [
+      Pain assessment is a clinician's judgment, made repeatedly across
+      a day, on patients whose subjective report of pain has to be
+      translated into a numeric rating and a treatment decision. A
+      documented finding in the medical literature is that Black
+      patients in the United States are systematically under-treated
+      for pain across emergency-department, post-surgical, and
+      end-of-life settings. The bias has been measured at the
+      population level for decades; the mechanism was less precisely
+      named.#cn()
+    ],
+    [
+      Hoffman et al. (2016) administered a battery of statements about
+      biological differences between Black and White people to
+      222 medical students and residents — some true, some false (e.g.,
+      "Black people's skin is thicker," "Black people's blood
+      coagulates more quickly," "Black people's nerve endings are less
+      sensitive"). About half of respondents endorsed at least one
+      false belief; a smaller subset endorsed several. The experimental
+      layer of the study presented respondents with two mock patient
+      cases identical except for race, asked them to rate the
+      patients' pain, and asked them to recommend treatment.#cn()
+    ],
+    [
+      The pattern was that respondents who endorsed more false beliefs
+      rated the pain of the Black mock patient as less severe than the
+      pain of the White mock patient, and recommended less accurate
+      treatment for the Black mock patient. Respondents who endorsed
+      no false beliefs did not show the rating gap. The case is unusual
+      in identifying a specific cognitive mechanism — a small set of
+      named false biological beliefs — that mediates a documented
+      population-level disparity. Most bias studies leave the
+      mechanism diffuse; Hoffman names it precisely enough that a
+      curriculum or assessment can target it.#cn()
+    ],
+    [
+      What the case teaches at the construct layer is that the
+      capability deliverable in medical education is not generic
+      "implicit bias" awareness — it is curriculum that specifically
+      disconfirms the named false beliefs, with assessment instruments
+      that test whether the beliefs were actually disconfirmed.
+      Operationally, the deliverable is a bedside instrument or
+      surveillance pattern that surfaces when pain ratings diverge by
+      patient race in ways that survive case-mix adjustment. The
+      Hoffman finding makes both deliverables specifiable in a way
+      that more diffuse bias findings did not.#cn()
+    ],
+    [
+      Hoffman pairs with pulse oximetry (Case 26) and eGFR
+      (Case 25) in the race-construct trio. The three cases are the
+      same surface harm — minority patients systematically under-served
+      across a clinical decision — attributable to three distinct
+      layers of the system: the construct definition (eGFR), the
+      validation architecture (pulse oximetry), and the
+      human-development mechanism (Hoffman). The trio is the
+      case-grounded basis for the CLO *Gap attribution*: distinguishing
+      capability gaps attributable to human development, system
+      design, and organizational performance, and selecting
+      measurement that isolates the intended cause.
+    ],
+  ),
+  beats: (
+    "Documented pain-undertreatment disparity for Black patients in US clinical settings; mechanism less precisely named",
+    "Hoffman et al. survey medical trainees on a battery of false biological-difference beliefs; ~half endorse at least one",
+    "Experimental layer: respondents who endorse more false beliefs rate Black mock patients' pain as less severe and treat less accurately",
+    "Mechanism is specific and nameable: a small set of false beliefs, not diffuse implicit bias — curriculum and instrumentation can target it",
+    "Trio with eGFR (construct) and pulse oximetry (validation): same surface harm at three distinct layers — gap attribution is the deliverable",
+  ),
+  approaches: (
+    during: (
+      [Build curriculum that specifically disconfirms the named false biological beliefs identified in the Hoffman survey, with assessment items that test whether the disconfirmation took hold.],
+      [Instrument bedside pain ratings to surface case-mix-adjusted divergence by patient race; the gap is otherwise invisible to the system that produces it.],
+      [Identify the layer of the gap before designing the remediation: construct, validation, or human-development. A construct fix cannot remediate a clinician-belief fix and vice versa.],
+    ),
+    after: (
+      [Re-administer the Hoffman survey periodically as a curriculum-evaluation instrument; a curriculum that does not move the false-belief endorsement rate is not closing the mechanism the paper identifies.],
+      [Track whether the bedside pain-rating disparity narrows in cohorts that received the disconfirming curriculum, with reporting at intervals long enough for selection effects to settle.],
+      [Cross-reference the human-development result against the construct (eGFR) and validation-architecture (pulse oximetry) layers, so the overall equity capability of the clinical system is not assessed only at the layer the institution finds easiest to instrument.],
+    ),
+  ),
+  references: (
+    [Hoffman, Trawalter, Axt, & Oliver (2016), "Racial bias in pain assessment and treatment recommendations, and false beliefs about biological differences between blacks and whites," _PNAS_ 113(16):4296–4301, doi:10.1073/pnas.1516047113.],
+    [Anderson, Green, & Payne (2009), "Racial and ethnic disparities in pain: causes and consequences of unequal care," _Journal of Pain_ 10(12):1187–1204 — the population-level disparity.],
+    [Sabin & Greenwald (2012), "The influence of implicit bias on treatment recommendations for 4 common pediatric conditions," _American Journal of Public Health_ — the diffuse-mechanism backdrop the Hoffman precision improves on.],
+    [Vyas, Eisenstein, & Jones (2020), _NEJM_ — connecting race-in-clinical-algorithms to race-in-clinical-judgment.],
+  ),
+  quote: [The mechanism the paper names is precise enough to teach against. Awareness training is not a curriculum; a curriculum has to disconfirm something specific.],
+  quote-source: "Editors' synthesis of Hoffman et al. (2016).",
+  le-insight: [
+    Hoffman et al. is the human-development case in the
+    race-construct trio. The pain-assessment disparity in
+    medical settings is mediated, in measurable part, by a
+    nameable set of false biological-difference beliefs held by
+    clinicians in training. The capability deliverable is
+    curriculum that specifically disconfirms the beliefs and
+    instrumentation that surfaces the bedside rating gap when
+    it persists.
+  ],
+  lens-approach: [
+    Hoffman is the human-development case in the race-construct
+    trio (Cases 25, 26 and 6). LENS uses it in Domain 4 (Test and
+    Evaluation) for the CLO *Gap attribution* — the gap is in
+    the clinician's training, not the construct or the device —
+    and in Domain 2 (Learning Engineering Design) for the
+    curriculum-design implication. The trio together is the
+    case-grounded basis for *Gap attribution*: same surface
+    harm, three distinct layers, three distinct remediations.
+    Adjacent to the lending pair (Cases 181–113) at the
+    construct layer.
+  ],
+  literature-items: (
+    [Hoffman, Trawalter, Axt, & Oliver (2016), _PNAS_],
+    [Anderson, Green, & Payne (2009), _Journal of Pain_ — population-level disparity],
+    [Vyas, Eisenstein, & Jones (2020), _NEJM_],
+  ),
+  reflection-list: (
+    [Identify a documented disparity in your domain whose mechanism is treated as diffuse. What would a Hoffman-style survey look like — a battery of named false beliefs or assumptions whose endorsement could be measured and whose presence predicts the operational decision?],
+    [Design the curriculum-evaluation instrument you would use to test whether a curriculum has actually disconfirmed the false beliefs. What endorsement-rate change would you require before claiming the mechanism has been addressed?],
+    [Hoffman is the human-development case in the race-construct trio. Pulse oximetry (Case 26) is the validation-architecture case; eGFR (Case 25) is the construct-definition case. Which of the three layers does your domain currently address, and which does it leave invisible?],
+  ),
+  courses: ("LEN 1", "LEN 4", "LEN 7"),
+)
+
+// ---- Case 7 — va-wait-time-scandal ----
+#case(
+  number: 7,
+  slug: "va-wait-time-scandal",
+  title: "VA Wait-Time Scandal",
+  year: "2014",
+  domains-list: ("gov",),
+  modes-code: "GKN",
+  impact: "Veterans died waiting for care; 300,000+ on waiting lists or waiting 6+ months; staff falsified records",
+  diagram: dgm.dgm-va,
+  kind: "failure",
+  summary: [
+    In 2014 the VA Inspector General found that staff at the Phoenix VA —
+    and then nationwide — had created secret waiting lists and falsified
+    appointment data to hide that veterans were waiting weeks or months for
+    care; some died waiting while the system reported success. A 14-day
+    access target, unrealistic given staffing, was met by hiding reality
+    rather than surfacing it. The warning signs ran back fifteen years: GAO
+    had flagged data-reliability problems since 2000, the IG since 2005, with
+    no systemic fix — and schedulers, the staff operating the measurement,
+    are among the VA's highest-turnover roles, so the institution kept losing
+    the knowledge even to see it was lying to itself. The VA case is the
+    book's canonical example of normalization of deviance applied to
+    measurement itself.
+  ],
+  sections: (
+    // -- Background --
+    [
+      The Veterans Health Administration measured access to care against a
+      14-day appointment target — a target that, given staffing, was often
+      unrealistic to meet honestly. Schedulers, the staff who operate that
+      measurement, are among the VA's highest-turnover positions.#cn() The
+      target functioned as the headline number leadership watched, so the
+      pressure to show 14-day compliance bore down hardest on the very
+      front-line role least equipped, through constant churn, to record the
+      access data accurately or to question what the number was leaving out.
+    ],
+    // -- What Happened --
+    [
+      In 2014 the VA Office of Inspector General found that staff at the
+      Phoenix VA — and then across the system — had created secret waiting
+      lists and falsified appointment data to hide that veterans were waiting
+      weeks or months for care. Some veterans died waiting, inside a system
+      that, by its own metrics, was succeeding.#cn() The secret lists were the
+      mechanism by which an impossible target was reconciled with reality:
+      official records showed appointments inside 14 days while the true wait
+      accumulated off the books, so the more the metric was gamed, the more
+      confidently the reporting line above it declared the access problem
+      solved.
+    ],
+    // -- The Investigation --
+    [
+      The warning signs went back fifteen years: GAO had flagged
+      data-reliability concerns since 2000, and the VA IG had identified
+      problems in 2005, 2007, and 2008, with the incoming administration
+      warned in 2008 — none of which produced systemic change.#cn() GAO named
+      scheduler training as a root cause: with schedulers among the top-ten
+      highest-turnover roles, the institution perpetually lost the knowledge
+      required even to run the measurement honestly, and five years on still
+      reported data-reliability concerns.#cn() Each warning had named a real
+      defect in how access was recorded, yet because the schedulers who held
+      the practical knowledge of the system kept turning over, every wave of
+      findings landed on a workforce that had to relearn the instrument from
+      scratch, so the same defect resurfaced report after report.
+    ],
+    // -- The Capability Gap --
+    [
+      This is normalization of deviance applied to measurement itself. When
+      the measurement system cannot capture reality — and the people
+      operating it churn before the gaming can be unlearned — the gap between
+      reported and actual performance becomes invisible. Veterans died inside
+      a system whose numbers said it was fine, which is the lethal form of
+      the evidence problem this book treats as a design failure, not a
+      reporting one.#cn() An institution that cannot retain the staff who run
+      its measurement loses not only accuracy but the memory that the number
+      was ever wrong, so the gaming stops registering as deviance at all and
+      hardens into the ordinary way the work is done.
+    ],
+    // -- Aftermath & Reform --
+    [
+      The scandal forced resignations, the Veterans Access, Choice, and
+      Accountability Act (2014), and a long, uneven effort to rebuild
+      scheduling and data integrity.#cn() Its lesson is that decision-grade
+      evidence is a design requirement: an institution must be able to
+      surface its own failures without relying on the very people
+      incentivized — and too transient — to hide them. The Choice Act bought
+      access by routing care outside the VA, but the underlying capability —
+      a measurement the institution could trust even as its schedulers churned
+      — was the harder thing to rebuild, and the data-reliability concerns
+      that persisted for years afterward show why.
+    ],
+  ),
+  beats: (
+    "A 14-day access target pressed hardest on schedulers, the highest-turnover front-line role",
+    "Phoenix and nationwide staff hid waits on secret lists while official metrics reported success",
+    "Fifteen years of GAO and IG warnings landed on a continually relearning scheduler workforce",
+    "Measurement gaming hardened into routine practice once turnover erased memory of deviance",
+    "Resignations and the 2014 Choice Act followed; trustworthy measurement proved harder to rebuild",
+  ),
+  references: (
+    [VA Office of Inspector General, Report 14-02603-267 (2014) — secret waiting lists and falsified appointment data.],
+    [GAO Veterans Health Administration reports (2000–2019) — fifteen years of data-reliability warnings.],
+    [VA OIG reports (2005, 2007, 2008) — prior, unactioned findings.],
+    [D. Draper (GAO), House VA Committee testimony, GAO-19-687T (2019) — "schedulers are among the top ten highest-turnover positions in the VA" (quoted).],
+    [Veterans Access, Choice, and Accountability Act (2014) — the legislative response.],
+    [C. Argyris & D. Schön, _Organizational Learning_ (1978); measurement-gaming literature.],
+  ),
+  quote: [Schedulers are among the top ten highest-turnover positions in the VA.],
+  quote-source: "Debra Draper (GAO Director of Health Care), House VA Committee testimony, GAO-19-687T, July 2019",
+  le-insight: [
+    The VA case is the canonical example of measurement failure as a
+    capability failure. The system that should have surfaced the gap
+    instead generated reports that hid it. The turnover among
+    schedulers — the human capability operating the measurement
+    instrument — meant the institution lost the knowledge to even
+    notice it was lying to itself. The case stands as the strongest
+    argument in this book for treating decision-grade evidence as a
+    design requirement, not a reporting requirement.
+  ],
+  lens-approach: [
+    LENS treats the VA case in LEN 4 as the canonical evidence-gap case
+    (the measurement system itself was the source of harm), in LEN 7 as
+    a governance failure (multiple warnings unactioned over fifteen
+    years), and in LEN 8 as a knowledge-loss case via turnover.
+  ],
+  literature-items: (
+    [VA OIG, full reports (2014–present)],
+    [Argyris & Schön (1978), _Organizational Learning_],
+    [Tuckey & Pollack (2024), measurement-gaming literature],
+  ),
+  reflection-list: (
+    [Identify a measurement system in your domain that is also operated by a high-turnover role. What is the institutional risk that the system stops measuring reality?],
+    [Design the evidence pipeline that would have surfaced the Phoenix VA gap without relying on the people who were gaming the metrics.],
+    [The 14-day target was unrealistic given staffing, so it was met by hiding reality. Identify a target in your organization that the people measured against it cannot honestly meet — and design the correction that surfaces the gap rather than burying it.],
+  ),
+  approaches: (
+    during: (
+      [Set access targets against actual staffing capacity, so the metric cannot be met only by falsifying it.],
+      [Design the scheduling instrument so correct data entry is the path of least resistance, not a discipline that churning staff must be retrained into.],
+      [Build an independent read on real wait times — separate from the staff incentivized to report them — into the measurement architecture from the start.],
+    ),
+    after: (
+      [Audit reported access against an out-of-band signal (direct veteran survey, third-party booking records) with authority to act when the two diverge.],
+      [Treat scheduler turnover as a measurement risk: monitor it, and protect the knowledge of how to run the instrument honestly against constant churn.],
+      [Track whether old data-reliability findings keep recurring — a repeat finding is the signal that the institution is relearning the same gap rather than closing it.],
+    ),
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 8"),
+  scale: "big",
+  induced-anchor: "2.2",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4",
+  evidence-source: "investigation",
+)
+
+// ---- Case 8 — medical-errors-as-systemic-failure ----
+#case(
+  number: 8,
+  slug: "medical-errors-as-systemic-failure",
+  title: "Medical Errors as Systemic Failure",
+  year: "1999 – present",
+  domains-list: ("healthcare",),
+  modes-code: "THNKG",
+  impact: "IOM 1999 estimate of 44,000–98,000 US deaths/year from medical error; Makary & Daniel (2016) estimate of ~250,000 deaths/year — substantively contested on methodological grounds; 2023 NEJM inpatient-harm study confirms persistence; 25-year reform arc with bounded successes and an unmoved population count",
+  diagram: dgm.dgm-makary,
+  kind: "failure",
+  scale: "big",
+  evidence-source: "investigation",
+  induced-anchor: "2.1",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4",
+  summary: [
+    Medical error in the United States is not a single incident but a
+    systemic condition that the system's own measurement instruments
+    cannot see. The Institute of Medicine's _To Err Is Human_ (1999)
+    raised the alarm with a 44,000–98,000 annual-deaths estimate and
+    reframed harm as a systems problem rather than an individual one;
+    _Crossing the Quality Chasm_ (2001) and the 2015 _Improving
+    Diagnosis in Health Care_ sequel extended the program. In 2016,
+    Makary and Daniel of Johns Hopkins published a _BMJ_ analysis
+    estimating ~250,000 deaths a year — which would make medical error
+    the third leading cause of death behind heart disease and cancer.
+    Death certificates do not record medical error as a cause, so the
+    problem is structurally invisible to the systems meant to track it.
+    The 250,000 figure has been substantively contested on
+    methodological grounds (Shojania & Dixon-Woods, _BMJ Quality &
+    Safety_, 2017; Carr in _Health Affairs_), a dispute that is itself a
+    worked example of the gap-attribution problem. The field's
+    25-year arc shows bounded interventions that work — computerized
+    order entry, handoff protocols, the WHO surgical checklist (Case 23),
+    the Keystone ICU project (Case 19), TeamSTEPPS (Case 39) — alongside
+    a population-scale mortality count that has resisted both
+    intervention and precise estimation.
+  ],
+  sections: (
+    // -- Background --
+    [
+      The Institute of Medicine's _To Err Is Human_ (1999) was the
+      field-defining moment: it estimated 44,000–98,000 deaths annually
+      from medical error in US hospitals — at the lower bound, more
+      Americans than die in motor-vehicle accidents — and made the
+      explicit case that the problem was a systems problem, not an
+      individual-clinician problem. The 2001 sequel _Crossing the
+      Quality Chasm_ set six aims for the redesign of care, and the
+      2015 sequel _Improving Diagnosis in Health Care_ extended the
+      framing to diagnostic error. The framing of harm as systemic
+      mattered: it created the cultural permission for non-punitive
+      incident reporting, root-cause analysis, and the broader
+      patient-safety movement that followed.#cn() Yet modern medicine's
+      core mortality-measurement instrument — the death certificate —
+      records a proximate physiological cause and has no field for
+      medical error. Because the certificate is keyed to an ICD billing
+      taxonomy built for disease, a death set in motion by a
+      care-process breakdown is recorded under whatever organ ultimately
+      failed, and the causal role of the system disappears into the
+      physiology.
+    ],
+    // -- What Happened --
+    [
+      In 2016, surgeon Martin Makary and Michael Daniel published an
+      analysis in the _BMJ_ estimating that medical errors cause more
+      than 250,000 deaths a year in the United States — which would
+      rank third behind heart disease and cancer. Their core claim was
+      that "people don't just die from heart attacks and bacteria, they
+      die from system-wide failings and poorly coordinated care." By
+      relocating the cause from the individual clinician to the
+      coordination of care, the framing recast a ledger of isolated
+      mistakes as a single population-scale failure mode the existing
+      statistics were never built to count. The number itself was
+      computed by extrapolating from four prior studies — the IOM 1999
+      estimate, the 2010 OIG Medicare adverse-events study, the
+      Landrigan 2010 _NEJM_ study, and the Classen 2011 Global Trigger
+      Tool study — to the contemporary inpatient population, an
+      extrapolation the authors acknowledged as approximate.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The 250,000 estimate was substantively contested almost
+      immediately. Shojania and Dixon-Woods, writing in _BMJ Quality &
+      Safety_ in 2017, challenged both the extrapolation and the
+      attribution method, arguing that counting deaths "due to" error
+      is far harder than a single headline number implies. A
+      _Health Affairs_ commentary by Carr and a series of letters in
+      the _BMJ_ pressed the same point: the source studies use
+      different definitions of "preventable death," the extrapolation
+      rests on prior estimates already known to be unstable, and the
+      ranking against CDC cause-of-death categories is methodologically
+      incompatible (CDC counts use ICD codes; the Makary estimate does
+      not).#cn() The objection turned on counterfactual attribution —
+      how confidently one can say a frail, already-dying patient would
+      have survived but for the error — a judgment that resists the
+      clean tallying a headline number demands. The dispute is itself a
+      worked example of the gap-attribution problem: how much of a
+      counted death is the learning system, how much the system
+      design, how much the underlying disease.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      The deeper failure is one of measurement: a system that cannot
+      see its own failure modes cannot manage them. With no field on
+      the certificate, no reliable count, and no agreed attribution
+      method, every safety program competes for resources against a
+      harm that the official record renders invisible, so even
+      effective interventions struggle to prove their worth at
+      population scale. The bounded interventions that have worked —
+      computerized physician order entry, structured handoff protocols
+      (I-PASS), the WHO Surgical Checklist (Case 23), the Keystone ICU
+      central-line bundle (Case 19), TeamSTEPPS (Case 39) — each move a
+      specific harm in a specific setting, and each can prove it. What
+      none can prove is movement on the population count, because the
+      population count does not exist in a form precise enough to be
+      moved. The missing capability is an instrument that captures
+      medical error as a tracked cause of harm — and an attribution
+      method robust enough that the resulting number can guide
+      intervention rather than fuel a methodological stalemate.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      The 25-year arc since _To Err Is Human_ is the case's most
+      important teaching artifact. The IOM framing catalyzed a
+      patient-safety movement, an Agency for Healthcare Research and
+      Quality patient-safety program, and the bounded interventions
+      noted above. Yet later work, including the 2023 _NEJM_ study by
+      Bates et al. of inpatient harm across eleven Massachusetts
+      hospitals, confirms that the problem persists at scale: about a
+      quarter of admissions involved an adverse event, and roughly a
+      quarter of those events were preventable. The system has not
+      built the instrument the original report implied it would need —
+      no national active-surveillance system for inpatient harm, no
+      death-certificate field for care-process failure, no agreed
+      attribution method for "deaths due to error." The interventions
+      exist; the measurement and the implementation still lag, and the
+      headline mortality kept escaping measurement even as bounded
+      harms fell. The case is the canonical worked example of the
+      gap-attribution problem at population scale, and a standing
+      reminder that an instrument the system cannot see through is one
+      it cannot govern.#cn()
+    ],
+  ),
+  beats: (
+    "Death certificates record proximate physiology with no field for medical error",
+    "Makary and Daniel estimated 250,000 annual U.S. error deaths from systemic care failings",
+    "Critics challenged the extrapolation, arguing counterfactual attribution of error-caused death resists clean tallying",
+    "Without a tracked instrument and robust attribution, safety programs cannot prove worth against invisible harm",
+    "Targeted reforms cut bounded harms while system-wide mortality kept escaping measurement and persisted at scale",
+  ),
+  references: (
+    [Institute of Medicine, _To Err Is Human: Building a Safer Health System_ (1999); _Crossing the Quality Chasm_ (2001); _Improving Diagnosis in Health Care_ (2015) — the field-defining trilogy and the 44,000–98,000 estimate; the systems framing.],
+    [Makary, M. & Daniel, M. (2016), "Medical error — the third leading cause of death in the US," _BMJ_ 353:i2139 — the ~250,000 estimate, the quoted framing, the extrapolation from four prior studies (IOM 1999; OIG 2010; Landrigan 2010; Classen 2011).],
+    [Shojania, K. & Dixon-Woods, M. (2017), "Estimating deaths due to medical error: the ongoing controversy and why it matters," _BMJ Quality & Safety_ 26(5):423–428; with companion commentaries including Carr in _Health Affairs_ — methodological contestation of the Makary extrapolation and CDC-ranking comparison.],
+    [Makary & Daniel (2016), _BMJ_ — death certificates do not capture medical error as a cause; ICD billing taxonomy as the structural reason.],
+    [Bates, D. W., Levine, D. M., Salmasian, H., et al. (2023), "The Safety of Inpatient Health Care," _NEJM_ 388(2):142–153 — eleven-hospital Massachusetts cohort; adverse events in ~25% of admissions, ~25% of those preventable; persistence of harm at scale.],
+    [Agency for Healthcare Research and Quality, _National Healthcare Quality and Disparities Reports_ (annual); CDC WONDER ICD-coded mortality data — institutional context for the missing national active-surveillance instrument.],
+  ),
+  quote: [People don't just die from heart attacks and bacteria, they die from system-wide failings and poorly coordinated care.],
+  quote-source: "Martin Makary, press statements accompanying Makary & Daniel, BMJ (2016)",
+  le-insight: [
+    The Makary data is the anchor evidence for the LENS argument
+    because of its scale, its provenance (Johns Hopkins), and its
+    framing — system failure rather than individual error. The seventeen
+    years between *To Err Is Human* and Makary's reassessment is also
+    the implementation gap of Case 13 in another guise — and the cost of
+    leaving it open is measured in lives at population scale.
+  ],
+  lens-approach: [
+    Medical error is the central evidence anchor of the curriculum
+    (induced 2.1; LENS D4/PT5). LENS uses it in Domain 4 (Test and
+    Evaluation; CLO-4) for the foundational measurement problem: the
+    death certificate cannot record the failure mode it is supposed
+    to govern, and the contested mortality estimates show what
+    happens when an instrument's gap is filled by extrapolation.
+    LENS uses it in Domain 1 (Systems Analysis) as the foundational
+    problem statement of the program and in Domain 5 (Navigating
+    Sociotechnical Constraints) for industry-level institution
+    building. The 25-year arc pairs the case with the WHO Surgical
+    Checklist (Case 23), Keystone ICU (Case 19), and TeamSTEPPS
+    (Case 39) as the bounded interventions that worked; pair with
+    Vioxx (Case 9) at the population-scale-surveillance layer.
+  ],
+  literature-items: (
+    [Makary & Daniel (2016), BMJ],
+    [Institute of Medicine, _To Err Is Human_ (1999)],
+    [Bates et al. (2023), "The Safety of Inpatient Health Care," _NEJM_ 388(2)],
+  ),
+  reflection-list: (
+    [Identify a measurement instrument in your domain that systematically fails to capture the failure modes it should be designed to surface. What would it cost to fix?],
+    [Two hundred fifty thousand deaths a year is the third leading cause of death in the U.S. Design the measurement and intervention regime that would shift the curve over a five-year horizon. Estimate the deliverable and the evidence.],
+    [Makary and Shojania disagreed not on whether error kills but on how to attribute a death to it. Specify an attribution method robust enough to survive that dispute — and name who would hold the authority to act on the number it produces.],
+  ),
+  approaches: (
+    during: (
+      [Give the mortality-recording instrument an explicit field for care-process failure, so a system-caused death is captured, not absorbed into the proximate cause.],
+      [Specify the attribution method up front — the counterfactual test for "due to" error — so the count guides action rather than collapsing into dispute.],
+      [Pair each safety intervention with the population measure it should move, gating reforms on demonstrated effect.],
+    ),
+    after: (
+      [Audit reported mortality against an independent count of care-related harm.],
+      [Use active surveillance of inpatient harm rather than waiting for the death certificate.],
+      [Hold the count and the intervention to the same measurement discipline, closing the implementation gap.],
+    ),
+  ),
+  courses: ("LEN 1", "LEN 4", "LEN 10", "LEN 6",),
+)
+
+// ---- Case 9 — vioxx-withdrawal ----
+#case(
+  number: 9,
+  slug: "vioxx-withdrawal",
+  title: "Vioxx Withdrawal",
+  year: "1999 – 2004",
+  domains-list: ("healthcare",),
+  modes-code: "GD",
+  impact: "Tens of thousands of excess cardiovascular events estimated (FDA's Graham, 2004; Lancet 2005); Merck withdrew Vioxx in September 2004; ~\\$4.85B settlement; FDA Amendments Act of 2007 and the Sentinel Initiative (2008) institutionalized active post-market surveillance",
+  scale: "big",
+  evidence-source: "investigation",
+  induced-anchor: "2.4",
+  lens-anchor: "D4+D3/PT5",
+  clo-anchor: "CLO-4, CLO-3",
+  diagram: dgm.dgm-curve(
+    ((1.0, 1.0), (2.0, 1.4), (3.5, 1.8), (5.0, 2.4), (6.5, 3.0), (7.5, 0.8)),
+    milestone: 7.5,
+    milestone-label: "withdrawn",
+    x-label: "1999 → 2004",
+    y-label: "exposure",
+    framing: "signal in internal data; aggregation absent for years",
+    caption: "Vioxx — post-market surveillance as a missing deliverable",
+  ),
+  kind: "failure",
+  summary: [
+    Merck's painkiller Vioxx (rofecoxib) was approved by the FDA in
+    May 1999 and prescribed to an estimated 80 million people
+    worldwide. The 2000 VIGOR trial (Bombardier et al., _NEJM_) found
+    a roughly five-fold higher rate of myocardial infarction in the
+    Vioxx arm than in the naproxen comparator — a signal Merck and
+    many readers attributed to a hypothesized cardio-protective
+    effect of naproxen rather than a cardiovascular risk of Vioxx,
+    a reading that required the absent placebo arm to be true. Not
+    until the placebo-controlled APPROVe trial (Bresalier et al.,
+    _NEJM_) was halted in September 2004 was the risk established and
+    the drug withdrawn. For nearly four years the disclosure
+    architecture between Merck's internal data, FDA reviewers, and
+    prescribers failed to surface the magnitude of the danger to a
+    decision point. FDA Office of Drug Safety scientist David Graham
+    testified to the Senate Finance Committee in November 2004 that
+    the risk had been visible well before withdrawal, and estimated
+    88,000–139,000 excess cardiovascular events attributable to
+    Vioxx; the 2005 Graham et al. _Lancet_ analysis put the figure
+    in similar range. Merck litigation discovery produced internal
+    Merck communications used in the Senate hearings to argue that
+    publication-bias and authorship-by-Merck-employees patterns had
+    suppressed the cardiovascular signal in the published record.
+    The reforms that followed — Risk Evaluation and Mitigation
+    Strategies (REMS), the FDA Amendments Act of 2007, and the
+    Sentinel Initiative (2008) — built the active post-market
+    surveillance architecture that had not previously existed.
+  ],
+  sections: (
+    // -- Background --
+    [
+      Vioxx, a selective COX-2 inhibitor for arthritis pain, was
+      approved by the FDA in May 1999 and became one of the most widely
+      prescribed drugs of its era — an estimated 80 million people
+      worldwide were exposed before withdrawal. Detecting rare or
+      delayed harms in a drug at that scale depends on post-market
+      surveillance — aggregating adverse-event data after approval — a
+      function that, at the time, was thin relative to the size of the
+      exposed population. The FDA's MedWatch system relied on voluntary
+      submission from clinicians; no active query of the underlying
+      claims and electronic-health-record data was operational. A risk
+      too small to surface in a pre-approval trial becomes a large
+      absolute toll once a drug reaches millions, which is precisely
+      the regime that demands strong after-market monitoring — and
+      precisely the regime in which voluntary reporting fails to
+      detect it.#cn()
+    ],
+    // -- What Happened --
+    [
+      The VIGOR trial (Bombardier et al., _NEJM_ 2000) reported about
+      a five-fold higher rate of myocardial infarction in 8,076 patients
+      taking Vioxx than in those taking naproxen. Merck and many readers
+      interpreted the gap as naproxen being cardio-protective rather
+      than Vioxx being harmful. That reading was not absurd — it was the
+      more comfortable of two explanations for the same numbers — but it
+      required the absent placebo arm to be true, and the data could
+      not adjudicate between the readings. The placebo-controlled
+      APPROVe trial (Bresalier et al., _NEJM_ 2005), originally
+      designed to test Vioxx for colorectal-polyp prevention, was
+      terminated early in September 2004 when its data safety monitoring
+      board observed a doubling of cardiovascular events in the Vioxx
+      arm relative to placebo. Merck withdrew the drug worldwide within
+      days.#cn()
+    ],
+    // -- The Investigation --
+    [
+      Senate Finance Committee hearings in November 2004 and the
+      subsequent FDA Office of Inspector General review found that
+      signals of cardiovascular harm had been present in the trial
+      record for years before withdrawal. FDA Office of Drug Safety
+      scientist David Graham testified under oath that the
+      cardiovascular risk had been visible to him by 2000, that he had
+      been pressured by FDA management not to publish his estimate,
+      and that he believed Vioxx had caused 88,000–139,000 excess
+      heart attacks and strokes in the United States, of which 30–40%
+      were probably fatal. The Graham et al. _Lancet_ 2005 analysis,
+      using Kaiser Permanente data, produced a population-level
+      estimate in similar range. Merck litigation discovery, made
+      public through New Jersey and federal court filings and reported
+      in the _NEJM_ editorial trail, included internal Merck
+      communications and ghost-authorship patterns in published Vioxx
+      papers; a 2008 _JAMA_ analysis by Ross et al. documented the
+      publication-bias and authorship patterns directly.#cn() The harm
+      was not hidden in some unmeasured corner — it sat in the trial
+      record the whole time, waiting for an architecture that would
+      carry it to a decision rather than leave it to interpretation.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      The capability gap was in post-market surveillance: the
+      disclosure architecture between manufacturer-held data, FDA
+      reviewers, and prescribers did not aggregate the signal to a
+      decision boundary for nearly four years. The FDA's MedWatch
+      adverse-event reporting system relied on voluntary submissions
+      structured to minimize signal, and was not adequate to the
+      volume of the drug's distribution. A system that waits for a
+      clinician to choose to file a report will always lag a harm
+      spread thinly across millions of prescriptions, because no single
+      prescriber sees enough of the pattern to recognize it. The
+      Merck-side gap was structural in a different way: VIGOR was
+      designed to test gastrointestinal safety (the COX-2 selling
+      point), and the cardiovascular signal was a secondary finding
+      that the trial was not powered to adjudicate against the
+      naproxen-protective hypothesis. That trial-design choice
+      compounded with a publication-bias pattern, an FDA
+      adverse-event-reporting architecture insufficient for the
+      population at risk, and a regulator–manufacturer disclosure
+      protocol that had no decision boundary for ambiguous signals.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      Merck eventually settled US litigation for about \$4.85 billion
+      across approximately 27,000 plaintiffs. The case drove a
+      coordinated regulatory response. The FDA Amendments Act of 2007
+      gave the FDA explicit authority to require Risk Evaluation and
+      Mitigation Strategies (REMS) and post-market study commitments
+      as conditions of approval. In 2008 the FDA launched the
+      Sentinel Initiative — an active post-market surveillance system
+      that queries distributed health-data partners covering hundreds
+      of millions of patient-years, rather than waiting for voluntary
+      reports — a direct response to the Vioxx-era detection failure.
+      The _NEJM_ tightened conflict-of-interest disclosure for trial
+      reports; the _JAMA_ Ross et al. (2008) analysis became the
+      reference point for publication-bias diagnosis in drug safety.
+      By going out to the data instead of waiting for it to arrive,
+      the reform inverted the logic that had let the signal sit
+      unaggregated for years. The reform built the surveillance
+      infrastructure that had not previously existed; the Vioxx
+      record is what made the case for it.#cn()
+    ],
+  ),
+  beats: (
+    "Widely prescribed COX-2 inhibitor approved 1999; post-market surveillance thin relative to exposure",
+    "VIGOR trial showed five-fold heart attack rate; Merck read comparator as protective instead",
+    "Hearings and Graham testimony showed cardiovascular signals present in trial record years earlier",
+    "Disclosure architecture between manufacturer data, FDA reviewers, and prescribers failed to aggregate signal",
+    "Merck settled near five billion; REMS and Sentinel built active post-market surveillance",
+  ),
+  references: (
+    [Bombardier, C. et al. (2000), "Comparison of upper gastrointestinal toxicity of rofecoxib and naproxen in patients with rheumatoid arthritis," VIGOR trial, _NEJM_ 343(21):1520–1528 — the five-fold myocardial-infarction signal and the naproxen-protective hypothesis.],
+    [Bresalier, R. et al. (2005), "Cardiovascular events associated with rofecoxib in a colorectal adenoma chemoprevention trial," APPROVe, _NEJM_ 352(11):1092–1102 — placebo-controlled confirmation of cardiovascular risk; early trial termination.],
+    [Graham, D. J. et al. (2005), "Risk of acute myocardial infarction and sudden cardiac death in patients treated with COX-2 selective and non-selective NSAIDs: nested case-control study," _Lancet_ 365(9458):475–481 — Kaiser Permanente population-level cardiovascular risk analysis.],
+    [US Senate Committee on Finance, hearings on Vioxx and FDA's drug-safety system (November 18, 2004) — Graham testimony; "88,000 to 139,000 Americans" estimate of excess cardiovascular events; described FDA management pressure.],
+    [Ross, J. S., Hill, K. P., Egilman, D. S., Krumholz, H. M. (2008), "Guest authorship and ghostwriting in publications related to rofecoxib," _JAMA_ 299(15):1800–1812 — publication-bias and ghost-authorship documentation from Merck litigation discovery.],
+    [FDA Amendments Act of 2007 (P.L. 110-85) and FDA Sentinel Initiative documentation (2008–present) — REMS authority, post-market study requirements, and active distributed-data post-market surveillance.],
+  ),
+  quote: [The cardiovascular risk was visible in Merck's internal data years before the drug was withdrawn.],
+  quote-source: "Paraphrasing David Graham (FDA Office of Drug Safety), Senate Finance Committee testimony, November 2004",
+  le-insight: [
+    Vioxx is the canonical pharmaceutical case for post-market
+    surveillance as a capability deliverable. The signal existed; the
+    institutional architecture to aggregate it did not. The reform
+    pattern — Sentinel — built the architecture. The case is the
+    drug-industry analog of the EHR case (Case 2): a measurement
+    architecture too thin for the system that depended on it.
+  ],
+  lens-approach: [
+    Vioxx is the canonical pharmaceutical post-deployment-surveillance
+    case (induced 2.4; LENS D4+D4/PT5). LENS uses it in Domain 4
+    (Test and Evaluation; CLO-4) for post-market surveillance as a
+    measurement deliverable — the signal existed; the institutional
+    architecture to aggregate it did not. LENS uses it in Domain 3 (Human-System Collaboration; CLO-4) for the change-control
+    and disclosure architecture between manufacturer, regulator, and
+    prescriber that determines whether ambiguous safety signals reach
+    a decision boundary. Pair with Radiology AI (Case 35) as the
+    post-market-surveillance failure pattern at a new technological
+    boundary; pair with EHR/CPOE (Case 2) at the
+    measurement-architecture-too-thin layer; pair with Medical Errors
+    and IOM (Case 8) at the population-scale-instrument layer.
+  ],
+  literature-items: (
+    [Graham et al. (2005), _Lancet_],
+    [Avorn, _Powerful Medicines_ (2004)],
+    [FDA Sentinel Initiative documentation],
+  ),
+  reflection-list: (
+    [Identify a post-deployment surveillance architecture in your domain that is too thin for the scale of the system it monitors. What is the missing deliverable?],
+    [Design the Sentinel-equivalent post-market surveillance system for a new domain.],
+    [The VIGOR signal admitted two readings — harmful drug or protective comparator — and the data could not decide. Identify a measurement in your domain whose interpretation is underdetermined, and design the study or instrument that would force the question to a decision.],
+  ),
+  approaches: (
+    during: (
+      [Field an active post-market surveillance architecture sized to the exposed population before scale-up, so a harm spread thinly across millions can still aggregate to a decision boundary.],
+      [Design trials and data collection to adjudicate between competing readings of a signal, rather than leaving an ambiguous result to the more comfortable interpretation.],
+      [Treat signal-aggregation as a defined deliverable carrying evidence from manufacturer data through reviewers to prescribers, not a byproduct of voluntary reporting.],
+    ),
+    after: (
+      [Audit the trial record and adverse-event data for signals already present but never carried to a decision, closing the lag between visibility and action.],
+      [Monitor by querying health-data partners actively rather than waiting for voluntary reports that no single prescriber sees enough of the pattern to file.],
+      [Sustain post-market surveillance funding against the commercial pressure to defer aggregation, since the cost of waiting compounds across the exposed population.],
+    ),
+  ),
+  courses: ("LEN 4", "LEN 7"),
+)
+
+// ---- Case 10 — theranos ----
+#case(
+  number: 10,
+  slug: "theranos",
+  title: "Theranos",
+  year: "2003 – 2018",
+  domains-list: ("healthcare", "tech"),
+  modes-code: "GD",
+  impact: "$9B valuation collapsed; thousands of patients given unreliable results; founder convicted on multiple counts of wire fraud",
+  diagram: dgm.dgm-compare(
+    "claim",
+    "Edison",
+    "reality",
+    "Siemens",
+    framing: "the device did not work; the regulatory seam between FDA and CLIA hid that fact",
+    caption: "Theranos — fraud exploiting a regulatory seam between FDA and CLIA",
+  ),
+  kind: "failure",
+  summary: [
+    Theranos claimed a blood-testing device that could run hundreds of tests
+    from a finger-stick drop. It did not work. Internal data showed accuracy
+    far below what the company told investors, partners, and patients; to
+    keep up appearances, Theranos ran most patient samples on conventional
+    commercial analyzers and reported them as its own device's results. It
+    reached a \$9-billion valuation and put unreliable tests in front of real
+    patients through a Walgreens partnership. The fraud exploited a
+    regulatory seam — the FDA had not validated the device, while the CLIA
+    regime governing the lab did not match the company's product claims — and
+    neither the board nor investors had the depth to challenge it; a
+    journalist did. Elizabeth Holmes was convicted of wire fraud in 2022.
+    Theranos is the book's case for fraud exploiting a governance gap between
+    regulatory regimes.
+  ],
+  sections: (
+    // -- Background --
+    [
+      Theranos claimed to have built a blood-testing platform — the "Edison"
+      — that could perform hundreds of laboratory tests from a single
+      finger-stick drop of blood, a promise that would have upended a
+      diagnostics industry built on venous draws and large analyzers. It rode
+      that claim to a \$9-billion valuation and a partnership putting its
+      tests in Walgreens stores, carrying the unproven device straight to
+      retail patients.#cn()
+    ],
+    // -- What Happened --
+    [
+      The device did not work. Internal data showed accuracy far below what
+      the company represented to investors, partners, and patients — the gap
+      between the claim and the instrument was known inside the company. To
+      preserve the appearance of a working product, Theranos ran most patient
+      samples on conventional commercial analyzers and reported the results
+      as though they had come from its proprietary device, a substitution that
+      kept the fiction alive while putting unreliable results in front of real
+      patients making real medical decisions.#cn()
+    ],
+    // -- The Investigation --
+    [
+      The fraud exploited a regulatory seam: the FDA had not validated the
+      device, while the CLIA regime that governs laboratory operation did not
+      match the architecture of the company's product claims, and neither
+      layer validated those claims independently — so the device fell into a
+      gap each regulator assumed the other covered. The board, the investors,
+      and Walgreens lacked the technical depth to challenge them, and a
+      celebrity board offered prestige in place of scrutiny; the journalist
+      John Carreyrou, and CMS inspectors who revoked Theranos's CLIA
+      certificate in 2016, were what finally surfaced the truth from outside
+      the failed oversight chain.#cn()
+    ],
+    // -- The Capability Gap --
+    [
+      The capability gap sat in the regulatory architecture — at the boundary
+      between two regimes, where a deliberate fraud could live because
+      neither the FDA nor CLIA owned end-to-end validation of a novel
+      diagnostic making clinical claims, and an unowned boundary is exactly
+      the shelter a fraud needs. The governance lesson is that the seam
+      between regulators is itself a place that must be engineered, because it
+      is exactly where a bad actor will operate — choosing the gap precisely
+      because no one is watching it.#cn()
+    ],
+    // -- Aftermath & Reform --
+    [
+      Theranos collapsed, its CLIA certificate was revoked, and Elizabeth
+      Holmes was convicted of multiple counts of wire fraud in 2022, the
+      conviction closing a chapter the regulators had been slow to open.#cn()
+      The case is canonical in business education for fraud-as-product-strategy
+      and in health regulation for the gap that let unvalidated clinical
+      tests reach patients — a reminder that "disruptive" claims in a
+      regulated domain demand more validation, not less, precisely because the
+      novelty is what tempts the oversight regimes to defer to one another.
+    ],
+  ),
+  beats: (
+    "Theranos claimed an Edison device running hundreds of tests from one finger-stick, reaching a nine-billion-dollar valuation",
+    "The device did not work; Theranos secretly ran samples on commercial analyzers and reported them as its own",
+    "Carreyrou's reporting and CMS inspectors surfaced the fraud after the FDA-CLIA seam left validation unowned",
+    "Neither regulator validated novel clinical claims end-to-end; a celebrity board offered prestige instead of scrutiny",
+    "CLIA certificate revoked, the company collapsed, and Holmes was convicted of multiple wire-fraud counts",
+  ),
+  references: (
+    [_United States v. Elizabeth Holmes_ (N.D. Cal., 2018–2022) — the indictment and conviction.],
+    [J. Carreyrou, _Bad Blood_ (2018) — the device's failure and the commercial-analyzer substitution.],
+    [CMS inspection reports and the revocation of Theranos's CLIA certificate (2015–2016).],
+    [Holmes indictment (2018) — Theranos "misrepresented to investors, regulators, and ultimately patients the accuracy of its blood-testing technology" (quoted).],
+    [Medical-device regulation literature on the FDA–CLIA boundary.],
+  ),
+  quote: [The company misrepresented to investors, regulators, and ultimately patients the accuracy of its blood-testing technology.],
+  quote-source: "U.S. v. Holmes, indictment, 2018",
+  le-insight: [
+    Theranos is the canonical case for fraud exploiting the seam
+    between two regulatory regimes. The FDA had not approved the
+    device; CLIA accepted the laboratory operation. Neither layer had
+    the capability to validate the claims independently. The
+    capability gap was at the regulatory architecture.
+  ],
+  lens-approach: [
+    LENS uses Theranos in LEN 7 for the regulatory-seam failure and
+    in LEN 4 for the measurement-validation gap. The case demonstrates
+    that capability engineering at the boundary between regulatory
+    regimes is itself a governance deliverable.
+  ],
+  literature-items: (
+    [Carreyrou (2018), _Bad Blood_],
+    [Theranos Inc. CMS inspection reports (2015–2016)],
+    [Faulkner, _Medical Device Regulation_ (2019)],
+  ),
+  reflection-list: (
+    [Identify a regulatory seam in your domain where two regimes meet without an explicit handoff. What could exploit it?],
+    [Design the validation regime that would have caught Theranos in 2013.],
+    [Theranos's board and investors had prestige but not the technical depth to challenge the device's claims. Where in your domain does reputational authority stand in for the expertise needed to validate what is being approved?],
+  ),
+  approaches: (
+    during: (
+      [Assign explicit end-to-end validation ownership across the FDA–CLIA-style seam, so a novel diagnostic cannot fall into a gap each regulator assumes the other covers.],
+      [Require independent verification of accuracy claims against the actual device before clinical use, not against a substituted commercial analyzer.],
+      [Staff the oversight chain — board, partners, regulators — with the technical depth to interrogate the claims, treating prestige as no substitute for expertise.],
+    ),
+    after: (
+      [Audit whether reported results actually came from the validated instrument, watching for the substitution pattern that hides a non-working device.],
+      [Monitor the regulatory seam as a standing risk, since a determined fraud will choose precisely the boundary no single regime owns.],
+      [Protect external scrutiny — journalists, inspectors, whistleblowers — as the backstop that surfaces what a captured oversight chain misses.],
+    ),
+  ),
+  courses: ("LEN 4", "LEN 7"),
+  scale: "big",
+  induced-anchor: "5.3",
+  lens-anchor: "D5/PT4",
+  clo-anchor: "CLO-5",
 )

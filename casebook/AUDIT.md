@@ -5,16 +5,15 @@ review, editorial passes, and the punch list of remaining items
 between editorial completion and press-ready proof for **Capability
 Matters: A Casebook (First Edition, 2026)**.
 
-**Current state:** 296-page interior; A5 + 3 mm bleed; both screen
-(cream backdrop) and print (transparent, for Lulu cream-paper stock)
-PDFs build cleanly. Five-pillar Why-LENS diagram, three new cases
-(21 Summit Learning, 22 Tennessee Pre-K, 34 ACGME duty-hours),
-editor bios, F1/F2 foundations, CLO competency block, and SoS /
-disparate-systems language all in. Domain-reviewer findings from
-defense, energy/nuclear, aviation, education/AI, healthcare,
-pedagogical, legal/fair-use, copy-edit, and reference-librarian
-review applied for the highest-priority items; long tail tracked
-below.
+**Current state (July 2026):** 200 cases in seven topical parts ×
+{What Fails / What Works — and the Frontier}, 14 chapters + closing
+case; 8 × 10 print/digital/proof editions, LENS Companion, Validation
+& Audit, and both overview formats all build cleanly;
+`scripts/check-cases.sh` reports 200/0. See the July 2026 stage entry
+at the end of this file for the topical reorganization, the K-12
+expansion (six new cases), and the PLO v2.2 program-doc sync.
+Earlier entries below use pre-reorganization numbering — the running
+record is historical and is not rewritten.
 
 ---
 
@@ -783,3 +782,29 @@ The auto pre-fill (June 2026) populated 6 of 7 check columns across all 193 non-
 4. The remaining UNCERTAINs — tighten citation form where the editor agrees.
 
 The 66 `~` flags on *anchor fit* are deliberate — they're the known cross-domain linkages (lens ↔ induced point at different competencies by design). They do not need student adjudication unless the reader strongly disagrees.
+
+---
+
+## Stage: Topical reorganization, K-12 expansion, PLO sync (July 2026)
+
+**Scope.** Full editorial restructure requested by the editor: the book is now organized **topically in seven parts**, each split into *What Fails* / *What Works — and the Frontier*:
+
+I. Healthcare & Patient Safety · II. Education, Training & the Learning Workforce · III. Aviation & Aerospace · **IV. Defense & National Security (deliberately the middle part)** · V. Industry, Energy & Enterprise Systems · VI. Disaster Prevention & Recovery (new area; cases read along the pre/post disaster lifecycle — prevention before the event, response and recovery after) · VII. Algorithms, Governance & Public Systems. Closing case last.
+
+**Numbering.** Cases renumbered contiguously 1–200 in the new chapter order; **slugs remain the stable IDs**. All ~1,150 in-prose "Case N" cross-references were remapped mechanically (two passes: reorg map, then the +5/+6 K-12 insertion shift); the three "Cases 22–76" aging-transition range references were rewritten as explicit lists. `verification-log.md` re-keyed by slug to the new numbering (200 rows). `competencies.md` re-keyed by name (its numbering had drifted from the book's; parenthetical names used as ground truth; two ambiguous numeric refs in the cluster-2 preamble resolved to named cases; a genuine internal collision — dossier "84" used for both VA Wait Times and COMPAS — resolved the same way). **Entries above this one use pre-reorg numbering.** The old→new map is recoverable from git (slug → number diff of this commit).
+
+**New cases (K-12 expansion, six).**
+- 60 Houston EVAAS value-added teacher evaluation (failure, G; evidence: federal court record; the adjudicated gap-attribution case)
+- 61 Science of Reading vs. balanced literacy / "Sold a Story" (failure, K+T; journalism-tier flag rendered)
+- 62 Gates Intensive Partnerships / MET / Hillsborough (failure, G+K; RAND 2018 program evaluation)
+- 63 LAUSD iPad / Common Core Technology Project (failure, D+H+G; journalism-tier flag rendered)
+- 64 Newark / the $100M Zuckerberg gift, "The Prize" (failure, G; journalism-tier flag rendered)
+- 95 PBIS implementation fidelity incl. Maryland scale-up (intervention, T+G; peer-reviewed; **shared-institution COI disclosure rendered under the title**, framing written as learning-from the implementation literature)
+
+Each carries the three anchors, `// VERIFY:` comments in source for the remaining bibliographic re-confirmations, and hedged prose where figures are journalism-reported. inBloom corrected in place (funders now Gates **and Carnegie**; New York barred data sharing via the March 2014 budget provision; wind-down announced 21 April 2014). Atlanta and Summit were already in corpus; Illuminate breach passed over (adds no new mechanism).
+
+**Relocations of framing apparatus.** The "iteration gap" editor's note moved from the old Iterative Development chapter to Part V *What Fails* (Kodak/BlackBerry now anchor it); a new "before and after" editor's note opens Part VI; Part VI chapters carry BEFORE/AFTER phase marks. Introduction §VI, matrix note, and overview frontmatter rewritten for the topical organization; the failure-mode taxonomy and paired-intervention threads retained as cross-part analytic threads.
+
+**Program docs.** `lens_program/2_LENS_Objectives_Course_Mapping.md` bumped to v2.2: the LDT PLOs of record (03-06-2025) reproduced verbatim at subobjective grain (PLO-1.1–6.4); PLO-5/6 titles corrected; new §4.1 PLO ↔ CLO support map (every PLO area has primary support from ≥1 CLO). `.docx` companions for docs 1–2 regenerated from the `.md` (program-owner round-trip still open). CLO content unchanged from v2.1.
+
+**Verification.** `scripts/check-cases.sh`: **200 cases, 0 failures** after the restructure and again after the K-12 insertion. All three book editions and both overviews rebuilt; see README for page counts.

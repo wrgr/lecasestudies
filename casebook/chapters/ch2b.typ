@@ -1,464 +1,23 @@
 // ============================================================
-// Iterative Development — What Works (Ch D2b)
+// Part II — Education, Training & the Learning Workforce · What Works — and the Frontier (Chapter 4)
 // ============================================================
 #import "../lib/theme.typ": *
 #import "../lib/chapter.typ": chapter-divider
 #import "../lib/case.typ": case
 #import "../lib/components.typ": *
 #import "../lib/diagrams.typ" as dgm
-
 #chapter-divider(
-  part: "Part II — What Works",
+  part: "Part II — Education, Training & the Learning Workforce",
   number: "4",
-  title: "Iterative Development — What Works",
-  subtitle: "When design, instrument, evaluate, refine runs through to the next problem framing.",
-  epigraph: [Design capability interventions through iterative engineering cycles that survive contact with real operational environments.],
-  epigraph-source: "CLO-2, Learning Engineering Design and Implementation.",
+  title: "Education, Training & the Learning Workforce — What Works — and the Frontier",
+  subtitle: "When instruction, analytics, and workforce design run the full evidence loop.",
+  epigraph: [The effect survived because somebody kept measuring after the launch.],
+  epigraph-source: "An observation recurring across the chapter's cases.",
 )
 
-
+// ---- Case 65 — training-transfer-the-gap-between ----
 #case(
-  number: 32,
-  slug: "acgme-80-hour-resident-duty-hour-reform",
-  title: "ACGME 80-Hour Resident Duty-Hour Reform",
-  year: "2003–2017",
-  domains-list: ("healthcare",),
-  modes-code: "TKN",
-  impact: "ACGME capped U.S. resident physician work hours at 80/week to reduce fatigue-related errors; subsequent RCTs (FIRST, iCOMPARE) showed mixed effects on patient outcomes and increased hand-off-related errors",
-  diagram: dgm.dgm-timeline(
-    (("2003 — 80-hr cap", "fatigue↓"), ("2011 — 16-hr intern cap", "—"), ("2016 — FIRST trial", "no difference"), ("2017 — duty-hour cap relaxed", "back to 80-hr only")),
-    emphasis: 2,
-    caption: "ACGME duty-hour reform — capping hours did not, on its own, engineer the capability",
-  ),
-  kind: "intervention",
-  summary: [
-    After the 1984 death of Libby Zion focused decades of concern on
-    resident-physician fatigue, the ACGME capped resident work at 80 hours a
-    week in 2003 and limited first-year shifts to 16 hours in 2011. The logic
-    was intuitive: tired doctors err, so cut the hours. But hours were one
-    input to a many-variable system; cutting them multiplied error-prone
-    hand-offs and cost residents continuity and procedural repetitions. Two
-    large randomized trials — FIRST (2016) and iCOMPARE (2019) — found
-    flexible schedules non-inferior to the strict caps on patient outcomes,
-    so the promised safety gain never appeared, and in 2017 the ACGME relaxed
-    the intern cap. The case is the book's clearest example of a
-    single-variable intervention into a capability system — and of evidence
-    catching up with a well-meant policy.
-  ],
-  sections: (
-    // -- Background --
-    [
-      After the 1984 death of Libby Zion — blamed on overworked,
-      under-supervised residents — resident fatigue became a decades-long
-      argument. New York's Bell Commission produced the first hours limits in
-      1989, and pressure for a national standard built from there — the
-      reform's intuition, that exhausted physicians make errors, was strong
-      enough that the simplest lever, capping the hours, became the obvious
-      answer long before anyone tested what the long shift was producing.#cn()
-    ],
-    // -- The Intervention --
-    [
-      In 2003 the Accreditation Council for Graduate Medical Education capped
-      resident work at 80 hours a week; in 2011 it limited first-year
-      residents to 16-hour shifts. The logic was clean and intuitive —
-      fatigue causes error, so reduce the hours. It was, in capability terms,
-      a single-variable intervention: change one input and expect the outcome
-      to move — a model that holds only if the rest of the system stays
-      fixed, which in a teaching hospital it never does, since the hours
-      removed had to be absorbed somewhere else.#cn()
-    ],
-    // -- How It Worked --
-    [
-      But hours were one input to a system with many. Cutting them
-      redistributed the work and multiplied patient hand-offs — themselves a
-      documented site of error — while reducing residents' continuity and the
-      procedural repetitions that build skill; many reported feeling less
-      prepared, not better rested. The long shift had quietly been doing work
-      no one accounted for — sustaining a patient's care through one set of
-      hands and accumulating the repetitions that turn a trainee into a
-      clinician — and nothing was put in its place when it was cut.#cn()
-    ],
-    // -- The Evidence --
-    [
-      Two large randomized trials tested the policy. FIRST (Bilimoria et al.,
-      _NEJM_ 2016), in surgery, found flexible duty hours non-inferior to the
-      strict caps on patient outcomes and no worse for resident
-      well-being — putting a randomized result against an intuition that had
-      driven policy for years.#cn() iCOMPARE (Silber et al., _NEJM_ 2019), in
-      internal medicine, reached a parallel result in a second specialty,
-      making the finding harder to dismiss as an artifact of surgery.#cn()
-      Neither found the safety gain the cap had promised, and in 2017 the
-      ACGME relaxed the 16-hour intern limit. The trials did not show fatigue
-      is harmless — only that cutting one input, without rebuilding
-      supervision and hand-offs, did not produce a safer system.#cn()
-    ],
-    // -- What Transferred --
-    [
-      Duty-hour reform is the book's clearest case of a single-variable
-      intervention into a multi-variable system. Read it against the
-      successes here — the Keystone ICU project, crew resource management, the
-      surgical safety checklist — which worked because they engineered
-      supervision, hand-offs, and measurement *together with* the behavioral
-      change, redesigning the surrounding architecture rather than pulling a
-      single lever and hoping the rest would hold.#cn() The lesson is not
-      that fatigue does not matter; it is that capability is a property of the
-      whole system, and a reform that moves one variable while leaving the
-      others untouched will be judged, in the end, by what it actually
-      produced rather than by the plausibility of its intuition.
-    ],
-  ),
-  beats: (
-    "Libby Zion's 1984 death made resident fatigue a decades-long argument; Bell Commission set early limits",
-    "ACGME capped resident work at 80 hours weekly and limited first-year shifts to 16 hours",
-    "Cutting hours multiplied hand-offs and cost continuity; trainees often felt less prepared, not rested",
-    "FIRST and iCOMPARE found flexible schedules non-inferior; ACGME relaxed the intern cap in 2017",
-    "Keystone, CRM, and the surgical checklist engineered supervision and hand-offs alongside the behavioral change",
-  ),
-  references: (
-    [B. H. Lerner, _The Libby Zion Case and the Reform of Medical Education_ (2006); and the 1989 New York State (Bell Commission) duty-hour regulations — the origin of the reform.],
-    [Accreditation Council for Graduate Medical Education, _Common Program Requirements_ (2003 and 2011 revisions) — the 80-hour weekly cap and the 16-hour first-year shift limit.],
-    [D. A. Asch et al., "Resident Duty Hours and Medical Education Policy," _NEJM_ 370: 1671–1673 (2014); Institute of Medicine (Ulmer, Wolman & Johns, eds.), _Resident Duty Hours: Enhancing Sleep, Supervision, and Safety_ (2008) — hand-offs and continuity trade-offs.],
-    [Bilimoria, Chung, Hedges et al., "National Cluster-Randomized Trial of Duty-Hour Flexibility in Surgical Training" (FIRST), _NEJM_ 374: 713–727 (2016). #link("https://doi.org/10.1056/NEJMoa1515724")[doi:10.1056/NEJMoa1515724].],
-    [Silber, Bellini, Shea et al., "Patient Safety Outcomes under Flexible and Standard Resident Duty-Hour Rules" (iCOMPARE), _NEJM_ 380: 905–914 (2019). #link("https://doi.org/10.1056/NEJMoa1810641")[doi:10.1056/NEJMoa1810641].],
-    [ACGME, _Common Program Requirements_ (2017 revision) — relaxation of the 16-hour first-year shift limit.],
-    [P. Pronovost et al., Keystone ICU intervention, _NEJM_ 355: 2725–2732 (2006), #link("https://doi.org/10.1056/NEJMoa061115")[doi:10.1056/NEJMoa061115]; A. B. Haynes et al., surgical safety checklist, _NEJM_ 360: 491–499 (2009), #link("https://doi.org/10.1056/NEJMsa0810119")[doi:10.1056/NEJMsa0810119] — integrated interventions that engineered the surrounding architecture.],
-  ),
-  quote: [Flexible, less-restrictive duty hour policies for first-year residents were associated with non-inferior patient outcomes and no significant difference in residents' satisfaction with overall well-being and education quality.],
-  quote-source: "Paraphrasing iCOMPARE Trial (Silber et al., NEJM 2019)",
-  le-insight: [
-    The clearest healthcare case in the dataset of a single-variable
-    intervention into a multi-variable capability system. Pairs with
-    Case 4 (fratricide) and Case 141 (V-22). The success cases —
-    Keystone (14), CRM (12), Korean Air (23) — engineered
-    supervisory, hand-off, and measurement architecture *together
-    with* the behavioral change.
-  ],
-  lens-approach: [
-    LENS uses duty-hour reform in LEN 5 as the foundational
-    capability-system case (what was the long-hour regime
-    *producing* that was lost when the input was capped?), in LEN 4
-    to discuss measurement architecture (what FIRST and iCOMPARE
-    measured, and what they did not), and in LEN 10 as a studio
-    prompt for the integrated resident-training redesign that the
-    reforms did not deliver.
-  ],
-  literature-items: (
-    [Bilimoria et al. (2016), FIRST trial; Silber et al. (2019), iCOMPARE trial],
-    [Lerner (2006), _The Libby Zion Case and the Reform of Medical Education_],
-    [Ulmer, Wolman & Johns, eds. (2008), _Resident Duty Hours: Enhancing Sleep, Supervision, and Safety_, Institute of Medicine],
-  ),
-  reflection-list: (
-    [What capability is the long-hours / heavy-workload regime in your domain currently producing — supervisory exposure, continuity, procedural reps, tacit-knowledge transfer — that a simple cap would lose?],
-    [Design the integrated redesign — supervision, hand-off, measurement, exposure — that would substitute for the capability the input cap removes.],
-    [The reform was intuitive enough to set national policy years before FIRST and iCOMPARE tested it. Design the randomized or quasi-experimental check you would build into a future single-variable reform so its promised gain is measured before it is mandated, not after.],
-  ),
-  approaches: (
-    during: (
-      [Map the full set of variables the targeted input is coupled to — continuity, supervision, hand-offs, procedural reps — before changing one of them.],
-      [Design the substitute for whatever the changed input was producing (e.g., structured hand-offs and supervision) into the same reform, not as a follow-on.],
-      [Build the measurement that will test the reform's promised gain into the rollout, so the policy is falsifiable against the operational record.],
-    ),
-    after: (
-      [Audit the intervention against patient and trainee outcomes with a controlled comparison, as FIRST and iCOMPARE did, rather than trusting the intuition.],
-      [Monitor the variables that absorbed the change (hand-off frequency, procedural exposure) for the harms a single-lever fix can displace.],
-      [Sustain a willingness to revise the policy when evidence catches up, as the 2017 relaxation did, rather than defending the original lever.],
-    ),
-  ),
-  courses: ("LEN 5", "LEN 4", "LEN 10", "LEN 8"),
-  scale: "big",
-  induced-anchor: "2.3",
-  lens-anchor: "D2/PT3",
-  clo-anchor: "CLO-2",
-)
-
-#case(
-  number: 33,
-  slug: "gift-and-the-adoption-gap",
-  title: "GIFT and the Adoption Gap",
-  year: "2012 – present",
-  domains-list: ("defense", "education"),
-  modes-code: "KGN",
-  impact: "Active open-source ITS framework with demonstrated learning effectiveness; ubiquitous fielded adoption in routine military training has not been achieved",
-  diagram: dgm.dgm-gift,
-  kind: "frontier",
-  summary: [
-    The Generalized Intelligent Framework for Tutoring (GIFT) is an
-    open-source framework, originated at the U.S. Army Research Laboratory,
-    for authoring and delivering intelligent tutoring systems. Computer-based
-    tutoring has been shown to be about as effective as expert human tutors
-    in well-defined domains, and GIFT exists to lower the barrier to building
-    it; the framework is actively developed, with regular releases and a
-    peer-reviewed annual symposium. The puzzle is not that GIFT failed — it
-    did not — but that ubiquitous fielded adoption across routine military
-    training remains limited despite decades of supporting research. That gap
-    is the canonical learning-engineering problem: the science is settled,
-    the platform exists, the studies are positive — and the institutional
-    pathway to scaled adoption is still being built.
-  ],
-  sections: (
-    // -- The Shift --
-    [
-      Five decades of research established that computer-based tutoring can be
-      about as effective as an expert human tutor in well-defined domains,
-      and significantly better than traditional classroom instruction. The
-      open question shifted from "does adaptive tutoring work?" to "why isn't
-      it everywhere?"#cn() That shift matters because it moves the problem out
-      of the laboratory: once the efficacy question is answered, every
-      remaining obstacle to scaled use is institutional rather than scientific,
-      and the field's research strength stops being the binding constraint.
-    ],
-    // -- What Is Emerging --
-    [
-      The Generalized Intelligent Framework for Tutoring (GIFT), originated
-      under the U.S. Army Research Laboratory and now developed at DEVCOM, is
-      an open-source framework for authoring, delivering, and evaluating
-      intelligent tutoring systems — an effort to lower the authoring barrier
-      that has historically made ITS expensive to build. It is actively
-      maintained, with regular releases and a peer-reviewed annual
-      symposium.#cn() Open-sourcing the framework and sustaining a research
-      community around it directly attacks the cost-to-build problem, since the
-      expense of authoring a tutor from scratch had long been the practical
-      reason adaptive tutoring stayed confined to well-funded demonstrations.
-    ],
-    // -- The Capability Question --
-    [
-      So the puzzle is not failure — GIFT was not discontinued. It is that
-      ubiquitous fielded adoption across routine military training remains
-      limited despite a working framework and decades of positive research.
-      The science is settled and the platform exists; what is missing is the
-      institutional pathway to scaled use.#cn() This is the diagnostic feature
-      of the case: the gap is not between idea and prototype but between a
-      maintained, evidence-backed framework and the routine training pipelines
-      that would have to adopt it, and that latter distance is the one no
-      amount of further research closes.
-    ],
-    // -- Early Evidence --
-    [
-      The effectiveness evidence is strong — the tutoring-effectiveness
-      literature is among the more robust in education — and GIFT-based
-      studies continue to demonstrate learning gains. The bottleneck is not
-      efficacy.#cn() Because the supporting literature is among the more
-      robust in the field, a decision-maker hesitating to field adaptive
-      tutoring cannot honestly point to weak evidence as the reason; the
-      hesitation traces instead to the missing pathway that would let the
-      proven approach be bought, integrated, and made routine.
-    ],
-    // -- Open Problems --
-    [
-      What has not been built is the adoption pathway: procurement that can
-      buy adaptive tutoring, integration into existing training pipelines,
-      instructor-workflow redesign, and the authority structure to make
-      adaptive tutoring a default rather than an experiment.#cn() GIFT is the
-      case in this book closest to the LENS discipline itself — proof that a
-      working technology and settled science do not adopt themselves, and
-      that the adoption pathway is an engineering deliverable in its own
-      right. Each of those pieces — a contracting vehicle, a pipeline
-      integration, a redesigned instructor workflow, an owner with authority —
-      is a concrete artifact someone must build, and their absence, not any
-      technical shortfall, is what keeps the framework experimental.
-    ],
-  ),
-  beats: (
-    "Decades of research settled efficacy; the open question became why adaptive tutoring isn't everywhere",
-    "ARL and DEVCOM sustain GIFT as open-source authoring infrastructure with releases and symposium",
-    "Ubiquitous fielded adoption across routine military training remains limited despite the working framework",
-    "Tutoring-effectiveness literature is robust and GIFT-based studies continue to show learning gains",
-    "Procurement, pipeline integration, instructor workflows, and authority structure remain unbuilt adoption artifacts",
-  ),
-  references: (
-    [K. VanLehn, "The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems," _Educational Psychologist_ 46(4) (2011) — tutoring effectiveness.],
-    [GIFT Project, gifttutoring.org — the framework, releases, and development under ARL / DEVCOM.],
-    [Editors' synthesis of the GIFT adoption record — active development but limited ubiquitous fielding (quoted).],
-    [R. Sottilare, A. Graesser, X. Hu & H. Holden (eds.), _Design Recommendations for Intelligent Tutoring Systems_ (GIFTSym volumes); IJAIED Special Issue on GIFT (2017).],
-    [J. Goodell & J. Kolodner, _Learning Engineering Toolkit_ (2022) — adoption as an engineering problem.],
-  ),
-  quote: [The technology works. The institutional pathway to ubiquitous fielded use does not yet.],
-  quote-source: "Editors' synthesis of the GIFT adoption record",
-  le-insight: [
-    GIFT is the most directly relevant case in this book to the
-    learning-engineering discipline itself. The technology works, the
-    learning science works, the framework is active and supported. What
-    has not been built is the institutional adoption pathway —
-    procurement, training-pipeline integration, instructor workflow
-    redesign, the authority structure — that would make adaptive
-    tutoring a default rather than an experiment.
-  ],
-  lens-approach: [
-    LENS treats GIFT in LEN 1 as the problem-framing case for the
-    discipline, in LEN 8 as the foundational adoption-pathway case,
-    and in LEN 10 (capstone) as a prompt for designing the institutional
-    deliverables that would close an adoption gap of this shape.
-  ],
-  literature-items: (
-    [GIFT Project documentation and GIFTSym 12 / 13 proceedings],
-    [Goodell & Kolodner (2022), _Learning Engineering Toolkit_],
-  ),
-  reflection-list: (
-    [GIFT exists, is supported, and works. Adoption at scale does not. What is the equivalent in your domain — an effective intervention whose adoption pathway has not been engineered?],
-    [Design the institutional adoption deliverable that would move adaptive tutoring from "available framework" to "default routine practice" in one operational training pipeline.],
-    [GIFT's bottleneck is procurement, pipeline integration, instructor-workflow redesign, and authority — not efficacy. For an effective tool in your domain, which of those four is the binding constraint, and who would have to own it for adoption to become the default?],
-  ),
-  approaches: (
-    during: (
-      [Treat the adoption pathway — procurement, pipeline integration, instructor-workflow redesign, authority — as a named deliverable of the program, not a follow-on hope.],
-      [Build the tutoring capability against an existing training pipeline so integration is designed in, rather than fielding a framework and expecting pipelines to bend to it.],
-      [Specify who holds the authority to make adaptive tutoring a default, so the decision to scale is owned rather than left to volunteers.],
-    ),
-    after: (
-      [Measure fielded routine use, not just study-level learning gains, so the institution can see whether adoption is actually happening.],
-      [Sustain the open-source framework and its community so the authoring-cost barrier it lowered does not quietly rise again as releases age.],
-      [Audit each stalled pipeline to find which adoption artifact is missing — contracting vehicle, integration, workflow, owner — and treat that as the engineering gap to close.],
-    ),
-  ),
-  courses: ("LEN 1", "LEN 10", "LEN 8", "LEN 6",),
-  scale: "big",
-  induced-anchor: "1.4",
-  lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2",
-)
-
-#case(
-  number: 34,
-  slug: "implementation-science-in-healthcare",
-  title: "Implementation Science in Healthcare — The 17-Year Gap",
-  year: "ongoing",
-  domains-list: ("healthcare",),
-  modes-code: "KGN",
-  impact: "Average time from research finding to clinical practice: 17 years; only ~14% of research findings ever reach practice",
-  diagram: dgm.dgm-17year,
-  kind: "frontier",
-  summary: [
-    Implementation science has a canonical finding: it takes an average of
-    about seventeen years for research evidence to reach clinical practice,
-    and only roughly 14% of research findings ever make it at all.
-    This is not a single incident but a systemic condition — effective
-    interventions exist; the system to adopt, sustain, adapt, and measure
-    them at scale does not. Frameworks like the Active Implementation
-    Frameworks (Fixsen et al., 2005) and EPIS (Aarons et al., 2011) were
-    built specifically to attack this gap, and LENS threads implementation
-    science throughout its curriculum in direct response. The seventeen-year
-    gap is the meta-case for the whole book: every success case is a closure
-    of this gap in one domain, every failure case the gap left open. The
-    discipline exists to make seventeen years shorter.
-  ],
-  sections: (
-    // -- The Shift --
-    [
-      Medicine generates more validated knowledge than it can absorb.
-      Implementation science arose to study a stubborn fact: knowing what
-      works and having it practiced are different problems, separated by
-      years.#cn() Treating the two as one problem is the error the field
-      formed to correct: a validated finding is not yet a changed practice,
-      and the distance between them is itself a phenomenon to be studied,
-      measured, and engineered rather than waited out.
-    ],
-    // -- What Is Emerging --
-    [
-      The canonical figures are stark: it takes an average of about seventeen
-      years for research evidence to be integrated into clinical practice,
-      and only roughly 14% of research findings ever make it at
-      all.#cn() Read together, the two figures describe a pipeline that is
-      both slow and leaky: most of what is learned never reaches the bedside
-      at all, and the fraction that does arrives long after the patients who
-      first needed it, so the delay is compounded by sheer attrition.
-    ],
-    // -- The Capability Question --
-    [
-      This is not a single case but a systemic condition — the same
-      structural problem the medical-error data (Case 102) describes from the
-      outcome side. Effective interventions exist; the institutional system
-      to adopt, sustain, adapt, and measure them at scale does not.#cn()
-      Where the medical-error data counts the harm at the far end of the
-      pipeline, the translation figures name the mechanism that produces it:
-      the same missing adoption-and-measurement system shows up as a delay
-      from one vantage and as a body count from the other.
-    ],
-    // -- Early Evidence --
-    [
-      Frameworks built to attack the gap — the Active Implementation
-      Frameworks (Fixsen et al., 2005) and the EPIS framework (Aarons et al.,
-      2011) — show that implementation can be engineered rather than left to
-      chance, and they inform LENS's choice to thread implementation science
-      through every course rather than isolate it in a module.#cn() Threading
-      the discipline through every course rather than confining it to a single
-      module is itself a claim these frameworks support: if implementation is
-      an engineerable property of any intervention, it cannot be quarantined
-      as a specialty and must inform how every design is taught.
-    ],
-    // -- Open Problems --
-    [
-      The seventeen-year gap is the meta-case for this book. Every success
-      case in the chapters ahead is a closure of the gap in one domain; every
-      failure case is the gap left open.#cn() The open problem is general and
-      unglamorous: building, funding, and owning the adoption-and-measurement
-      pathway that turns a proven intervention into routine practice — which
-      is, in one sentence, what the LENS discipline exists to do. Because the
-      problem is general rather than domain-specific, no single clinical
-      result closes it; what closes it is the repeatable, owned, and funded
-      pathway that any proven finding can be run through, again and again.
-    ],
-  ),
-  beats: (
-    "Implementation science arose because knowing what works and practicing it are different problems",
-    "Translation averages seventeen years, and only about fourteen percent of findings ever reach practice",
-    "Effective interventions exist; the system to adopt, sustain, adapt, and measure them does not",
-    "Active Implementation Frameworks and EPIS show implementation can be engineered rather than left to chance",
-    "Building, funding, and owning the adoption-and-measurement pathway is the general unsolved problem",
-  ),
-  references: (
-    [E. A. Balas & S. A. Boren (2000), _Yearbook of Medical Informatics_ — the ~17-year / ~14% translation figures.],
-    [Z. Morris, S. Wooding & J. Grant, "The answer is 17 years, what is the question," _J. Royal Society of Medicine_ (2011) (quoted).],
-    [D. Fixsen et al., _Implementation Research: A Synthesis of the Literature_ (2005) — the Active Implementation Frameworks.],
-    [G. Aarons et al. (2011), the EPIS framework; L. Damschroder et al. (2009), CFIR.],
-    [Cf. medical error as systemic failure (Case 102); Goodell & Kolodner, _Learning Engineering Toolkit_ (2022).],
-  ),
-  quote: [The answer is 17 years. What is the question?],
-  quote-source: "Morris, Wooding & Grant, J Royal Soc Med, 2011",
-  le-insight: [
-    The 17-year gap is the structural problem that LENS exists to
-    address. It is the difference between knowing what works and having
-    it deployed. Every case in this book is a sample from a
-    distribution governed by that gap. The success cases shorten it;
-    the failure cases let it run.
-  ],
-  lens-approach: [
-    LENS uses this case in LEN 1 as the foundational problem statement
-    of the discipline, in LEN 10 as a studio constraint (designs must
-    consider implementation, not just efficacy), and in LEN 8 as the
-    central knowledge-transfer challenge. The case is referenced at
-    least once in every required course.
-  ],
-  literature-items: (
-    [Fixsen et al. (2005)],
-    [Aarons et al. (2011), EPIS],
-    [Damschroder et al. (2009), CFIR],
-  ),
-  reflection-list: (
-    [Pick an evidence-based intervention in your domain. Estimate the gap between when the evidence became conclusive and when the intervention reached majority of practice. What did the gap cost?],
-    [Design the deliverable that would shorten that gap by half in your domain. Be specific about who funds it, who owns it, and what evidence demonstrates the reduction.],
-    [The translation pipeline is both slow and leaky — most findings never reach practice, and those that do arrive late. For your domain, is the binding problem the delay or the attrition, and what would you measure to tell which one to attack first?],
-  ),
-  approaches: (
-    during: (
-      [Design every intervention with its adoption-and-measurement pathway attached, so implementation is engineered in rather than left to chance after the evidence is published.],
-      [Use an implementation framework (Active Implementation, EPIS) from the outset to plan adoption, sustainment, and adaptation as deliverables of the project.],
-      [Name an owner and a funding line for the pathway, since a proven finding with no one accountable for fielding it is exactly what the gap is made of.],
-    ),
-    after: (
-      [Measure both reach and speed — what fraction of practice has adopted the intervention and how long it took — to see the slow-and-leaky pipeline rather than assume publication equals uptake.],
-      [Sustain and adapt fielded interventions, treating drift back to old practice as a measurable failure mode, not a one-time rollout that holds itself.],
-      [Track the gap as a standing metric across the institution, so closing it in one domain becomes a repeatable pathway rather than a one-off success.],
-    ),
-  ),
-  courses: ("LEN 1", "LEN 10", "LEN 8", "LEN 6",),
-  scale: "big",
-  induced-anchor: "1.4",
-  lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2",
-)
-
-#case(
-  number: 35,
+  number: 65,
   slug: "training-transfer-the-gap-between",
   title: "Training Transfer — The Gap Between Learning and Doing",
   year: "2010",
@@ -488,7 +47,7 @@
     note that organizations frequently see limited return because
     learning fails to transfer to the workplace. The case is the
     paired peer-reviewed half of the corporate-L&D pair with
-    Kirkpatrick (Case 108): together they close the gap the v1
+    Kirkpatrick (Case 79): together they close the gap the v1
     corpus had open at the workforce-L&D layer, and they motivate
     the LENS framing that the human is the biggest variable at the
     interface — here, the return-to-work interface.
@@ -498,7 +57,7 @@
       Training transfer is the structural question corporate L&D
       sits inside: does what learners did in training produce
       observable change on the job, and what predicts whether it
-      does? The Kirkpatrick chain of evidence (Case 108) frames the
+      does? The Kirkpatrick chain of evidence (Case 79) frames the
       question; the Blume et al. meta-analysis is the strongest
       single peer-reviewed answer the field has consolidated.#cn()
     ],
@@ -535,7 +94,7 @@
       behavior. The human is the biggest variable at the
       interface, and the interface is the return-to-work
       boundary. Training that ignores this boundary is training
-      that delivers Level 2 evidence (Kirkpatrick, Case 108) and
+      that delivers Level 2 evidence (Kirkpatrick, Case 79) and
       does not deliver Level 3 capability.#cn()
     ],
     [
@@ -557,7 +116,7 @@
     "Transfer positively related to cognitive ability, conscientiousness, motivation, and work environment",
     "Work environment (supervisor + peer support) among strongest predictors and the decisive system-layer variable",
     "Load-bearing hedge: 'inconsistent measurement of transfer and significant variability in findings' — preserved in case",
-    "Pair with Kirkpatrick (Case 108) — together they close the corporate-L&D gap and motivate the return-to-work interface",
+    "Pair with Kirkpatrick (Case 79) — together they close the corporate-L&D gap and motivate the return-to-work interface",
   ),
   approaches: (
     during: (
@@ -575,7 +134,7 @@
     [Blume, Ford, Baldwin, & Huang (2010), "Transfer of Training: A Meta-Analytic Review," _Journal of Management_ 36(4):1065–1105, doi:10.1177/0149206309352880.],
     [Baldwin & Ford (1988), "Transfer of Training: A Review and Directions for Future Research," _Personnel Psychology_ 41(1):63–105 — the foundational synthesis the 2010 meta-analysis updates.],
     [Burke & Hutchins (2007), "Training Transfer: An Integrative Literature Review," _Human Resource Development Review_ 6(3):263–296 — the integrative-review companion synthesis.],
-    [Kirkpatrick & Kirkpatrick (2006), _Evaluating Training Programs_ — the framework the meta-analysis informs (paired Case 108).],
+    [Kirkpatrick & Kirkpatrick (2006), _Evaluating Training Programs_ — the framework the meta-analysis informs (paired Case 79).],
   ),
   quote: [The training event is not the capability deliverable. The transfer is. And the decisive variable at transfer is the work environment.],
   quote-source: "Editors' synthesis of Blume et al. (2010).",
@@ -598,7 +157,7 @@
     CLO *Judgment under inadequate evidence* — the
     meta-analysis is the strongest synthesis the field has,
     and it explicitly names what it cannot settle. Direct
-    pair with Case 108 (Kirkpatrick); together they close
+    pair with Case 79 (Kirkpatrick); together they close
     the corporate-L&D gap the v1 corpus had open.
   ],
   literature-items: (
@@ -614,8 +173,9 @@
   courses: ("LEN 2", "LEN 4", "LEN 7"),
 )
 
+// ---- Case 66 — growth-mindset-national-experiment ----
 #case(
-  number: 36,
+  number: 66,
   slug: "growth-mindset-national-experiment",
   title: "Growth-Mindset National Experiment — Heterogeneous Effects",
   year: "2019",
@@ -649,7 +209,7 @@
     finding rather than as a nuisance. The intervention is not
     universally effective; naming where it does and does not work
     is the contribution. The "conditional on peer norms" language
-    survives verbatim into the case. Pair with Case 133 (Gándara)
+    survives verbatim into the case. Pair with Case 86 (Gándara)
     at the scalable-equity-intervention layer.
   ],
   sections: (
@@ -715,7 +275,7 @@
       defensible.#cn()
     ],
     [
-      Drafted alongside Case 133 (Gándara) at the
+      Drafted alongside Case 86 (Gándara) at the
       scalable-equity-intervention layer, the case carries the
       design-predictions-to-trigger-support pattern (induced 8.3,
       LENS D2/PT5). The intervention targets the students who
@@ -737,7 +297,7 @@
     "Yeager et al. _Nature_ 2019 — nationally representative RCT of US 9th-graders; less-than-1-hour online module; pre-registered moderator analysis",
     "Headline outcome: improved grades among lower-achieving students; increased advanced-math enrollment relative to active control",
     "Conditional preserved verbatim: 'effect was conditional on peer norms' — intervention changed grades only where peer norms aligned with the intervention's message",
-    "Methodological importance: treatment-effect heterogeneity as the finding, not as a nuisance; pair with Case 133 (Gándara) at the scalable-equity-intervention layer",
+    "Methodological importance: treatment-effect heterogeneity as the finding, not as a nuisance; pair with Case 86 (Gándara) at the scalable-equity-intervention layer",
   ),
   approaches: (
     during: (
@@ -774,7 +334,7 @@
     support case (induced 8.3; LENS D2/PT5) — Domain 2 for
     pre-registered moderator analysis; Domain 5 for the
     equity-relevant commitment to target support to those who
-    benefit. Pair with Case 133 (Gándara).
+    benefit. Pair with Case 86 (Gándara).
   ],
   literature-items: (
     [Yeager et al. (2019), _Nature_],
@@ -788,157 +348,9 @@
   courses: ("LEN 2", "LEN 5", "LEN 8"),
 )
 
+// ---- Case 67 — cognitive-tutor-carnegie-learning ----
 #case(
-  number: 37,
-  slug: "navy-surface-warfare-readiness-reform",
-  title: "Navy Surface Warfare Readiness Reform",
-  year: "2018 – present",
-  domains-list: ("defense",),
-  modes-code: "TKN",
-  impact: "Tripled ship-driving training hours; 10 pass-or-fail career assessments; Ready-for-Sea Assessments — 3 of 18 forward-deployed ships immediately sidelined",
-  diagram: dgm.dgm-navy-reform,
-  kind: "intervention",
-  summary: [
-    After the fatal 2017 Fitzgerald and McCain collisions (Case 1) exposed
-    gutted seamanship training, the U.S. Navy overhauled how it builds
-    surface-warfare competence. It restored the Surface Warfare Officers
-    School from CD-ROM self-study to classroom and simulator instruction,
-    stood up Maritime Skills Training Centers on both coasts, created ten
-    pass-or-fail career assessments — three of them no-go gates — and
-    adopted aviation-style debriefing. New Ready-for-Sea Assessments
-    evaluated forward-deployed ships against a deliverable standard; three
-    of the first eighteen were immediately sidelined. The structural change
-    is real and the investment substantial. What is missing is the third
-    half: the GAO has noted the Navy still lacks systematic evaluation of
-    whether the reforms work — a live success in structure, with evidence
-    of effect still outstanding.
-  ],
-  sections: (
-    // -- Background --
-    [
-      In 2017, the destroyers USS Fitzgerald and USS John S. McCain
-      suffered fatal collisions (Case 1) that investigations traced in part
-      to seamanship and navigation training degraded to CD-ROM self-study.
-      The Navy faced a clear capability gap: officers were going to sea
-      without the hands-on ship-driving competence the job required. The
-      diagnosis was unusually unambiguous — two avoidable collisions in one
-      year pointing at the same eroded fundamentals — which is what
-      converted a long-tolerated shortfall into a mandate for structural
-      change.#cn()
-    ],
-    // -- The Intervention --
-    [
-      Beginning in 2018, the Navy restored the Surface Warfare Officers
-      School from self-study to classroom-plus-simulator instruction,
-      established Maritime Skills Training Centers on both coasts, roughly
-      tripled ship-driving training hours, and created ten pass-or-fail
-      assessments across an officer's career path — three of them no-go
-      gates that can halt advancement. The no-go gates were the structural
-      teeth: by tying advancement to demonstrated competence rather than
-      time served, they made the qualification something the system would
-      stop on, not merely something it recorded.#cn()
-    ],
-    // -- How It Worked --
-    [
-      The reform paired technical investment — simulators, restored
-      curricula, qualification gates — with a cultural change borrowed from
-      aviation: structured debriefing and explicit gate ownership. New
-      Ready-for-Sea Assessments evaluated forward-deployed ships against a
-      deliverable standard rather than a paper one; three of the first
-      eighteen ships assessed were immediately sidelined as not ready. That
-      a sixth of the first cohort failed against the new standard showed the
-      assessment had teeth — it measured demonstrated readiness rather than
-      accepting the paper certifications that had masked the pre-collision gap.#cn()
-    ],
-    // -- The Evidence --
-    [
-      Here the case turns instructive. The Government Accountability Office
-      has noted that the Navy still lacks systematic evaluation of whether
-      the reforms actually improve readiness. The structural intervention
-      happened and the investment was large, but decision-grade evidence on
-      outcomes is incomplete — the measurement to confirm the effect has
-      lagged the change itself. Without an outcome time-series, the Navy
-      cannot yet distinguish a real capability gain from activity that looks
-      like one, which is the same blindness, in milder form, that let the
-      pre-collision gap go unseen.#cn()
-    ],
-    // -- What Transferred --
-    [
-      The reform is a live, in-progress success: structural change real,
-      evidence of effect outstanding. As a teaching case it argues that
-      mature capability engineering must build the measurement
-      infrastructure from the start — the time-series that lets an
-      institution know whether the capability it bought is materializing —
-      rather than treating evaluation as an afterthought. The two halves the
-      reform did deliver, technical investment and a cultural change, are
-      necessary but not sufficient; the missing third half is the evidence
-      regime that would let the Navy prove, not assume, the gap has closed.#cn()
-    ],
-  ),
-  beats: (
-    "Two fatal 2017 collisions exposed seamanship training degraded to CD-ROM self-study",
-    "Navy restored SWOS classroom instruction, tripled training hours, and created ten career assessments",
-    "Reform paired simulators and restored curricula with aviation-style debriefing and explicit gate ownership",
-    "GAO noted the Navy still lacks systematic evaluation of whether reforms improve readiness",
-    "Live in-progress reform shows mature capability engineering must build measurement infrastructure from the start",
-  ),
-  references: (
-    [GAO-21-168 (and GAO-20-154), Navy readiness reform — the lack of systematic outcome evaluation (paraphrased).],
-    [Readiness Reform Oversight Council, _One-Year Report_ (2019) — restored training, assessments, and gates.],
-    [Navy and NTSB reports on the Fitzgerald and McCain collisions (2017–2019) — the training-degradation antecedent.],
-    [SWOS Norfolk and San Diego Maritime Skills Training Center documentation — simulators and curriculum.],
-    [USNI News reform coverage (2020, 2022) — Ready-for-Sea Assessments and sidelined ships.],
-  ),
-  quote: [The Navy still lacks systematic evaluation of whether the reforms work.],
-  quote-source: "Paraphrasing GAO-21-168 on Navy readiness reform, 2021",
-  le-insight: [
-    The Navy reform is a paired intervention in progress: technical
-    (training restored, simulators procured, assessments created) plus
-    cultural (debriefing, gate ownership). What it lacks is the third
-    half: evidence that the intervention has worked. LENS treats this
-    as a teachable case for what mature capability engineering should
-    include from the start — the measurement infrastructure that lets
-    the institution know whether its investment is producing the
-    capability it bought.
-  ],
-  lens-approach: [
-    LENS uses Navy SWO reform in LEN 10 (capstone) as a worked exercise in
-    capability intervention at scale, and in LEN 4 as a case where the
-    measurement infrastructure has lagged the intervention. Students
-    design the evidence regime that should accompany the reform.
-  ],
-  literature-items: (
-    [GAO Navy readiness series],
-    [Naval Postgraduate School theses on SWO training reform],
-    [Edmondson, _Teaming_ (2012)],
-  ),
-  reflection-list: (
-    [Navy SWO reform happened without an evidence regime to confirm it worked. Identify a current reform in your domain and the evidence regime that should accompany it.],
-    [Design the dashboard the Chief of Naval Operations should have to know whether SWO capability is improving in time-series.],
-    [The Ready-for-Sea Assessment sidelined three of the first eighteen ships because it measured readiness against a deliverable standard. Identify a certification in your domain that ratifies rather than tests, and design the gate that would be willing to fail a sixth of its first cohort.],
-  ),
-  approaches: (
-    during: (
-      [Pair the technical investment — restored curricula, simulators, training hours — with a cultural change such as structured debriefing and explicit gate ownership, rather than buying tools alone.],
-      [Install no-go gates that tie advancement to demonstrated competence, so qualification is something the system will stop on, not merely something it records.],
-      [Assess units against a deliverable standard from the first cohort, accepting that a real test will sideline some — that failure rate is the evidence the gate has teeth.],
-    ),
-    after: (
-      [Build the measurement infrastructure from the start — the outcome time-series that lets the institution distinguish a real capability gain from activity that merely looks like one.],
-      [Give the senior commander a readiness dashboard that reports demonstrated capability over time, so the same blindness that masked the pre-collision gap cannot recur.],
-      [Treat evidence of effect as the third half of the intervention, not an afterthought, so the reform can be proven rather than assumed to have closed the gap.],
-    ),
-  ),
-  courses: ("LEN 4", "LEN 10", "LEN 5"),
-  scale: "big",
-  induced-anchor: "2.3",
-  lens-anchor: "D2+D4/PT4",
-  clo-anchor: "CLO-4",
-  evidence-source: "investigation",
-)
-
-#case(
-  number: 38,
+  number: 67,
   slug: "cognitive-tutor-carnegie-learning",
   title: "Cognitive Tutor / Carnegie Learning",
   year: "1990s – present",
@@ -1085,8 +497,9 @@
   clo-anchor: "CLO-2",
 )
 
+// ---- Case 68 — circuit-a-scalable-equity-centered ----
 #case(
-  number: 39,
+  number: 68,
   slug: "circuit-a-scalable-equity-centered",
   title: "CIRCUIT — A Scalable, Equity-Centered Research Workforce Model",
   year: "2017 – 2023 (six cycles)",
@@ -1120,7 +533,7 @@
     the causal claim, and the case says so rather than overstate.
     The COI render under the title (editor is the senior author)
     is binding. The case is the paired peer-reviewed companion to
-    CIRCUIT proofreading (Case 81) — that case is about deploying
+    CIRCUIT proofreading (Case 78) — that case is about deploying
     capability against automation failure; this case is about
     building the capability in the first place at the edge of the
     trainees' prior preparation.
@@ -1179,10 +592,10 @@
       The case names the open question rather than answering it.#cn()
     ],
     [
-      In pair with Case 81 (CIRCUIT proofreading + MICrONS), the
+      In pair with Case 78 (CIRCUIT proofreading + MICrONS), the
       case completes the CIRCUIT picture: building the capability
       (this case, peer-reviewed) and deploying it against
-      automation failure (Case 81, frontier with evidence-tier
+      automation failure (Case 78, frontier with evidence-tier
       flag). The pair also exercises the corpus's COI discipline
       — both cases carry editor-related COI, both are rendered
       with the standing gold-bordered "Disclosure" block under
@@ -1198,7 +611,7 @@
     "2022 program supported >100 undergraduate, graduate, and ROTC students from 'trailblazing' backgrounds",
     "Model is operationalized: holistic recruiting, targeted training, high-resolution assessment, diverse mentorship, partnerships",
     "Honest framing preserved: self-authored multi-cycle program evaluation at a single program; external comparative would strengthen causal claim",
-    "Pair with Case 81 — building capability (this case) vs. deploying it against automation failure (proofreading); both carry COI render",
+    "Pair with Case 78 — building capability (this case) vs. deploying it against automation failure (proofreading); both carry COI render",
   ),
   approaches: (
     during: (
@@ -1238,7 +651,7 @@
     Evaluation) for the high-resolution assessment; and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
     holistic-recruiting design choice that converts equity from
-    rhetoric to enrolled cohort. Pair with Case 81 (CIRCUIT
+    rhetoric to enrolled cohort. Pair with Case 78 (CIRCUIT
     proofreading) — building capability vs. deploying it against
     automation failure. COI render is binding.
   ],
@@ -1255,8 +668,9 @@
   courses: ("LEN 1", "LEN 2", "LEN 5"),
 )
 
+// ---- Case 69 — duolingo-half-life-regression-spaced ----
 #case(
-  number: 40,
+  number: 69,
   slug: "duolingo-half-life-regression-spaced",
   title: "Duolingo Half-Life Regression — Spaced Repetition at Consumer Scale",
   year: "2016",
@@ -1388,7 +802,7 @@
     after: (
       [Carry the single-vendor hedge into communication about the case. HLR is the strongest available evidence for trainable scheduling at consumer scale; it is not multi-vendor evidence and it is not a language-proficiency study.],
       [Distinguish the structural argument (per-item half-life estimation should outperform heuristic scheduling) from the domain transfer claim (HLR specifically generalizes to other learning content), which the published evidence does not yet support.],
-      [Pair the case with spaced-education clinical RCTs (Case 45) when those are drafted, so the corpus has both a consumer-scale single-vendor deployment and a clinical-domain replication base for the same underlying mechanism.],
+      [Pair the case with spaced-education clinical RCTs (Case 17) when those are drafted, so the corpus has both a consumer-scale single-vendor deployment and a clinical-domain replication base for the same underlying mechanism.],
     ),
   ),
   references: (
@@ -1415,7 +829,7 @@
     (Iterative Development) for the production-deployment
     evaluation form, and in Domain 4 (Test and Evaluation) for
     the engagement-proxy-vs-proficiency-assessment distinction.
-    Pair with the spaced-education clinical RCTs (Case 45) for
+    Pair with the spaced-education clinical RCTs (Case 17) for
     the cross-domain replication base, and with the
     machine-teaming AI-delegation typology where the
     delegation is to a scheduler optimizing on a proxy
@@ -1434,863 +848,9 @@
   courses: ("LEN 2", "LEN 5", "LEN 8"),
 )
 
+// ---- Case 70 — high-impact-learning-system-engineering ----
 #case(
-  number: 41,
-  slug: "barsuk-sbml-simulation-based-mastery",
-  title: "Barsuk SBML — Simulation-Based Mastery Learning Dissemination from Northwestern to the VA",
-  year: "2009 – 2020s",
-  domains-list: ("medical education", "patient safety", "workforce dissemination"),
-  modes-code: "TK",
-  impact: "Barsuk et al. (Northwestern/Feinberg) demonstrated that simulation-based mastery learning for central venous catheter (CVC) insertion reduced catheter-related bloodstream infection rates and procedural complications, with cost-effectiveness shown in a single-hospital evaluation; the program was subsequently disseminated nationally to Department of Veterans Affairs medical centers",
-  kind: "intervention",
-  scale: "small",
-  evidence-source: "peer-reviewed",
-  induced-anchor: "6.4",
-  lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
-  summary: [
-    Central venous catheter (CVC) insertion is a high-volume,
-    high-consequence procedure whose complications — pneumothorax,
-    arterial puncture, catheter-related bloodstream infection (CRBSI)
-    — are well-characterized and partly attributable to procedural
-    skill at the bedside. Barsuk and colleagues at Northwestern/
-    Feinberg published a series of studies through the late 2000s
-    and 2010s establishing simulation-based mastery learning (SBML)
-    — practice on a simulator to a defined performance standard,
-    not to a clock — as an effective approach for trainee CVC
-    insertion. The single-center evidence reported reduced CRBSI
-    rates, reduced procedural complications, and favorable cost-
-    effectiveness. The program was subsequently disseminated to
-    Department of Veterans Affairs medical centers as a national
-    rollout — the deliberate cross-institutional transfer that
-    distinguishes the case from a successful single-site
-    intervention. The case is the canonical small-tier instance of
-    cross-domain adaptation of a proven intervention (C6.4), and
-    pairs with the multidisciplinary-translation trio (Cases 178
-    team science, 122 IPE, 123 implementation-science training) as
-    cross-domain workforce evidence. The honest hedge: the
-    dissemination outcome literature is thinner than the original
-    single-center evidence; the case is teachable on the SBML
-    method and the documented dissemination effort, with
-    measurement at the multi-site level a live evidence frontier.
-  ],
-  sections: (
-    [
-      Central venous catheter insertion is a procedure trainees in
-      medicine, surgery, and critical care perform routinely; the
-      complication profile — pneumothorax, arterial puncture,
-      catheter-related bloodstream infection — is well-characterized
-      and attributable in part to procedural skill at the bedside.
-      The historical training model relied on graduated exposure on
-      live patients, with supervision but without a defined
-      performance standard before unsupervised practice. The Barsuk
-      group at Northwestern's Feinberg School of Medicine, working
-      across critical care and medical education, set out to
-      replace exposure-based training with simulation-based mastery
-      learning.#cn()
-    ],
-    [
-      Simulation-based mastery learning is the specific structural
-      form: trainees practice the procedure on a simulator to a
-      defined performance standard, not to a clock. Practice
-      continues until the trainee demonstrates competence; the
-      standard, not the calendar, governs progression. Barsuk et
-      al. (_Archives of Internal Medicine_, 2009; _Critical Care
-      Medicine_, _Journal of Hospital Medicine_, and a series of
-      subsequent papers) reported that the SBML cohort, compared
-      with historical and concurrent non-SBML cohorts at the same
-      hospital, performed CVC insertions with fewer needle passes,
-      fewer arterial punctures, and lower CRBSI rates on the
-      patients they subsequently catheterized.#cn()
-    ],
-    [
-      The single-center economic evidence was the second pillar.
-      Cohen et al. (_Critical Care Medicine_, 2010) reported that
-      the SBML program was cost-saving at the single hospital,
-      driven principally by the reduction in CRBSI cases — each
-      bloodstream infection averted is expensive enough that even
-      a modest reduction recovers the simulation-training
-      investment. The combination of the procedural-outcome
-      evidence and the cost-effectiveness evidence made the
-      program transferable beyond the original site.#cn()
-    ],
-    [
-      The dissemination step is what distinguishes the case from a
-      successful single-site intervention. The SBML CVC program
-      was subsequently disseminated to Department of Veterans
-      Affairs medical centers as a national rollout, supported by
-      the VA's investment in simulation infrastructure and clinical
-      training architecture. The deliberate cross-institutional
-      transfer — from an academic medical center to a federated
-      health system — is the structural feature the C6.4
-      cross-domain-adaptation competency exists to name. The
-      dissemination outcome literature is thinner than the
-      single-center evidence; multi-site CRBSI tracking is harder
-      to attribute, and the published evidence at the national-VA
-      scale is at the program-report and small-evaluation tier
-      rather than the controlled-comparison tier the single-center
-      papers established.#cn()
-    ],
-    [
-      In pair with the multidisciplinary-translation trio (Cases
-      178 team science, 122 IPE, 123 implementation-science
-      training), the Barsuk SBML case completes the workforce-
-      evidence picture: an intervention with strong single-center
-      controlled-comparison evidence (this case) sits alongside a
-      structured team-science training program with validated
-      measurement (121), the field-scale enthusiasm-evidence gap in
-      interprofessional education (122), and the operational-
-      practice gap inside implementation-science training programs
-      (123). The four cases together stage the cross-domain
-      workforce-evidence pattern: the mechanism that works at
-      single-program scale is the demonstrator; the field-scale
-      measurement and the multi-site dissemination evidence are
-      what the discipline is still building.#cn()
-    ],
-  ),
-  beats: (
-    "CVC insertion is high-volume, high-consequence; complication profile (pneumothorax, arterial puncture, CRBSI) partly attributable to procedural skill",
-    "Barsuk et al. (Northwestern/Feinberg, 2009 onward) — simulation-based mastery learning: practice to a defined standard, not a clock",
-    "Single-center evidence: fewer needle passes, fewer arterial punctures, lower CRBSI rates; cost-saving at the hospital level (Cohen et al. 2010)",
-    "Disseminated nationally to VA medical centers — cross-institutional transfer is the C6.4 structural feature",
-    "Hedge preserved: multi-site dissemination outcome literature thinner than single-center evidence; pair with cases 121, 122, 123 as cross-domain workforce evidence",
-  ),
-  approaches: (
-    during: (
-      [Replace exposure-based training with a defined performance standard on a simulator; the SBML deliverable is competence demonstrated, not hours accumulated.],
-      [Design the simulator and the standard around the specific complication modes the procedure produces — pneumothorax, arterial puncture, CRBSI for CVC — so the training closes the gaps the outcome data identifies.],
-      [Pair the procedural-outcome evidence with cost-effectiveness evidence at single-site scale; the combination is what makes the program disseminable beyond the original institution.],
-    ),
-    after: (
-      [Plan the dissemination as a deliverable of the original program, not as a separate downstream activity; the VA rollout is what makes Barsuk SBML a cross-institutional intervention rather than a successful single-site study.],
-      [Build multi-site outcome measurement into the dissemination from the start; the published evidence at national-VA scale is thinner than the single-center evidence, and the gap is a live frontier the case names.],
-      [Carry the cross-domain pairing with team-science training (Case 178), IPE (Case 117), and implementation-science training (Case 179) into the curricular framing — the four cases together stage what cross-domain workforce dissemination looks like with measurement and what it looks like without.],
-    ),
-  ),
-  references: (
-    [Barsuk, Cohen, Feinglass, McGaghie, & Wayne (2009), "Use of simulation-based education to reduce catheter-related bloodstream infections," _Archives of Internal Medicine_ 169(15):1420–1423, doi:10.1001/archinternmed.2009.215.],
-    [Cohen, Feinglass, Barsuk, Barnard, O'Donnell, McGaghie, & Wayne (2010), "Cost savings from reduced catheter-related bloodstream infection after simulation-based education for residents in a medical intensive care unit," _Critical Care Medicine_ 38(9):1853–1859.],
-    [Barsuk, McGaghie, Cohen, Balachandran, & Wayne (2009), "Use of simulation-based mastery learning to improve the quality of central venous catheter placement in a medical intensive care unit," _Journal of Hospital Medicine_ 4(7):397–403.],
-    [McGaghie, Issenberg, Cohen, Barsuk, & Wayne (2011), "Does simulation-based medical education with deliberate practice yield better results than traditional clinical education? A meta-analytic comparative review," _Academic Medicine_ 86(6):706–711.],
-    [Department of Veterans Affairs SimLEARN documentation — the operating-program record of the national dissemination effort.],
-  ),
-  quote: [The standard, not the calendar, governs progression. The trainee practices until they demonstrate competence; the simulator absorbs the cost of the practice.],
-  quote-source: "Editors' synthesis of Barsuk et al. (2009).",
-  le-insight: [
-    Barsuk SBML for CVC insertion is the canonical small-tier
-    intervention case for cross-institutional dissemination of a
-    proven mechanism. The single-center evidence is controlled-
-    comparison and cost-effective; the VA national dissemination
-    is the cross-institutional transfer step. The multi-site
-    outcome evidence is thinner than the single-center evidence —
-    the live frontier of the dissemination case.
-  ],
-  lens-approach: [
-    Barsuk SBML is the cross-institutional dissemination case
-    (induced 6.4; LENS D2/PT4) — Domain 2 for mastery-learning
-    replacing exposure-based progression; Domain 4 for the
-    procedural-outcome + cost-effectiveness pairing. Pair with
-    the translation trio (Cases 178, 117, 179).
-  ],
-  literature-items: (
-    [Barsuk et al. (2009), _Archives of Internal Medicine_],
-    [Cohen et al. (2010), _Critical Care Medicine_],
-    [McGaghie et al. (2011), _Academic Medicine_ — meta-analytic review],
-  ),
-  reflection-list: (
-    [Identify a high-volume, high-consequence procedural skill in your domain where training is currently exposure-based rather than performance-standard-based. What is the analog of SBML, and what is the simulator that would absorb the cost of the practice?],
-    [Specify the procedural-outcome and cost-effectiveness pairing you would design at single-site scale; both halves are what made the Barsuk program disseminable, and the pairing is what distinguishes a teachable single-site case from a national-rollout candidate.],
-    [The VA dissemination evidence is thinner than the single-center evidence. Design the multi-site outcome-tracking architecture you would build into the next dissemination — what instrument, what comparison, what cadence — so the multi-site evidence catches up to the demonstration evidence.],
-  ),
-  courses: ("LEN 2", "LEN 5", "LEN 7"),
-)
-
-#case(
-  number: 42,
-  slug: "darpa-digital-tutor-compressing-years",
-  title: "DARPA Digital Tutor — Compressing Years of IT Expertise into 16 Weeks",
-  year: "2009 – 2014",
-  domains-list: ("defense", "workforce L&D", "intelligent tutoring"),
-  modes-code: "HKD",
-  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, US Navy IT graduates with no prior IT experience outscored fleet Information Technology Specialists with an average 7.2 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
-  kind: "intervention",
-  scale: "small",
-  evidence-source: "peer-reviewed",
-  induced-anchor: "1.2",
-  lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
-  summary: [
-    DARPA's Digital Tutor program asked whether a one-on-one
-    intelligent tutoring system, modelled on expert human tutoring,
-    could compress years of operational IT expertise into a 16-week
-    pipeline. The independent evaluation by the Institute for Defense
-    Analyses (Fletcher and Morrison, IDA Document D-4686) compared
-    Digital Tutor graduates — US Navy enlistees with no prior IT
-    experience — against fleet Information Technology Specialists
-    with an average 7.2 years of experience. The Digital Tutor
-    cohort outscored fleet ITs on a knowledge test with an effect
-    size of 4.30 and outperformed them on most troubleshooting and
-    design tasks; only the Security exercise produced a fleet
-    advantage. The IDA report concludes the program "appears to have
-    achieved its goals." Two hedges are load-bearing and survive
-    into the case: knowledge "accounts for about 40 percent of
-    practical-exercise performance variance" and is "an enabler of
-    performance rather than a direct measure of performance itself,"
-    and the system-architecture detail in the available
-    documentation is too scant to fully reproduce. The case is the
-    canonical small-tier instance of compressing the capability
-    envelope at the edge of training, paired with CIRCUIT
-    (Cases 81 and 39) on the workforce-capability-at-the-edge axis.
-  ],
-  sections: (
-    [
-      The US Navy's Information Technology Specialist rating has a
-      conventional pipeline: an A-school of several months, followed
-      by years of fleet experience that turn the rated sailor into
-      an operational troubleshooter. The capability that matters at
-      the operational end — diagnose a networking failure under time
-      pressure, recover a degraded system, design a workable
-      configuration for an unfamiliar requirement — is conventionally
-      treated as a thing seat time produces. DARPA's Digital Tutor
-      program asked whether an intelligent tutoring system,
-      modelled on the discipline of expert one-on-one human
-      tutoring, could compress that pipeline into 16 weeks of
-      structured instruction.#cn()
-    ],
-    [
-      The program's design choice was to model the system on what
-      expert human tutors actually do: a continuous dialogue around
-      authentic problems, with the tutor pulling the trainee toward
-      the conceptual move that resolves the situation. The
-      instructional sequence was built around troubleshooting and
-      design problems drawn from the operational domain, not around
-      a syllabus reconstructed from the existing course. The
-      working hypothesis was that the tutorial discipline — not the
-      content coverage — was what produced operational expertise,
-      and that a sufficiently capable system could deliver enough
-      of that discipline at scale to be useful as a training
-      pipeline.#cn()
-    ],
-    [
-      The Institute for Defense Analyses (Fletcher and Morrison, IDA
-      Document D-4686 / DTIC AD1002362) ran the independent
-      evaluation that the case rests on. Digital Tutor graduates —
-      Navy enlistees with no prior IT background, 16 weeks in — were
-      compared against a sample of fleet Information Technology
-      Specialists with an average 7.2 years of operational
-      experience. On a knowledge test, the Digital Tutor cohort
-      outscored fleet ITs with an effect size of 4.30 — a
-      magnitude that is unusual in workforce L&D research and that
-      the report treats as the headline finding. On troubleshooting
-      and design tasks the Digital Tutor cohort outperformed the
-      fleet sample on most exercises; the Security exercise was the
-      exception where fleet experience showed.#cn()
-    ],
-    [
-      The IDA report concludes the effort "appears to have achieved
-      its goals," and the language is deliberate. Two hedges are
-      load-bearing and survive into the case verbatim. First,
-      knowledge "accounts for about 40 percent of practical-exercise
-      performance variance" and is "an enabler of performance rather
-      than a direct measure of performance itself" — so the
-      knowledge-test effect size, as large as it is, is not the same
-      as the operational capability the Navy actually buys. Second,
-      the available program documentation is too scant in
-      system-architecture detail to fully reproduce. The result is
-      teachable; the engineering recipe is not yet open.#cn()
-    ],
-    [
-      What the case carries for the corpus is the capability-envelope
-      argument at the edge of training (induced 1.2, LENS D2/PT4).
-      The conventional pipeline assumes operational expertise is a
-      function of seat time and exposure. The Digital Tutor
-      evaluation is evidence that the envelope is reachable
-      substantially faster than the inherited course assumed —
-      under one rating, one program, one evaluation — and the
-      hedges name what the evidence does and does not close. Paired
-      with CIRCUIT (Cases 81, 39), the case anchors the
-      workforce-capability-at-the-edge-of-training axis that
-      connectomics proofreading and submarine-system troubleshooting
-      share at the structural level.
-    ],
-  ),
-  beats: (
-    "DARPA Digital Tutor — intelligent tutoring system modelled on expert one-on-one human tutoring; 16-week pipeline for US Navy IT rating",
-    "IDA independent evaluation (Fletcher & Morrison, IDA D-4686): Digital Tutor graduates vs. fleet ITs with 7.2 years' average experience",
-    "Knowledge test effect size 4.30 in favor of Digital Tutor; Digital Tutor cohort outperforms fleet on most troubleshooting/design tasks (Security the exception)",
-    "Report concludes the effort 'appears to have achieved its goals'",
-    "Hedges preserved: knowledge accounts for ~40% of practical-exercise variance, 'an enabler of performance rather than a direct measure'; architecture detail too scant to reproduce",
-  ),
-  approaches: (
-    during: (
-      [Specify the operational capability the pipeline must produce in the language of the work — troubleshoot under time pressure, design a workable configuration — not in the language of the existing course's content coverage.],
-      [Treat the tutorial discipline (continuous dialogue around authentic problems, pulling toward the resolving conceptual move) as the load-bearing instructional artifact, rather than the content sequence the legacy course inherited.],
-      [Design the evaluation against the operational comparison the program is built to compete with — for Digital Tutor, fleet ITs with 7.2 years of experience — so the result speaks to the capability envelope, not to a within-program improvement.],
-    ),
-    after: (
-      [Report the knowledge-test effect (4.30) and the practical-exercise variance hedge (knowledge accounts for ~40%) together; the headline number is real, and the qualification that knowledge is an enabler rather than a direct measure is part of what makes the result interpretable.],
-      [Treat the absence of reproducible architecture detail as program documentation, not as polish: future builders need the engineering recipe, and the next iteration of evidence is conditional on that recipe being available.],
-      [Carry the result into adjacent capability-envelope debates — CIRCUIT proofreading, submarine-system troubleshooting — as evidence that the envelope is reachable faster than the inherited training assumption, under one program and one evaluation.],
-    ),
-  ),
-  references: (
-    [Fletcher, J. D., \& Morrison, J. E. (2014). _DARPA Digital Tutor: Assessment Data_. IDA Document D-4686. https://apps.dtic.mil/sti/tr/pdf/AD1002362.pdf — independent evaluation that the case rests on.],
-    [Defense Advanced Research Projects Agency, Digital Tutor program documentation — program description and design rationale.],
-    [Fletcher, J. D. (2009). _From behaviorism to constructivism: a philosophical journey from drill and practice to situated learning_. — methodological grounding for the Digital Tutor's tutorial discipline.],
-    [Anderson, J. R., Corbett, A. T., Koedinger, K. R., \& Pelletier, R. (1995). Cognitive tutors: Lessons learned. _Journal of the Learning Sciences_, 4(2):167–207. doi:10.1207/s15327809jls0402\_2 — the broader intelligent-tutoring evidence base the Digital Tutor program sits within.],
-  ),
-  quote: [The Digital Tutor cohort outscored fleet ITs with 7.2 years' experience on the knowledge test at an effect size of 4.30; the hedge is that knowledge accounts for about 40 percent of practical-exercise variance.],
-  quote-source: "Editors' synthesis of Fletcher & Morrison (2014), IDA Document D-4686.",
-  le-insight: [
-    DARPA's Digital Tutor is the cleanest available evidence
-    that the capability envelope of a training pipeline can be
-    re-specified — from years of seat time to 16 weeks of
-    tutorial-discipline instruction — against an operational
-    comparison the program is built to compete with. The
-    hedges (knowledge as enabler, architecture detail scant)
-    are part of what makes the result interpretable.
-  ],
-  lens-approach: [
-    Digital Tutor is the canonical workforce-capability-at-the-
-    edge-of-training case (induced 1.2; LENS D2/PT4). LENS uses
-    it in Domain 2 (Iterative Development) for the
-    tutorial-discipline-as-instructional-artifact design move,
-    and in Domain 4 (Test and Evaluation) for the
-    operational-comparison evaluation against fleet ITs with
-    7.2 years of experience. Pair with CIRCUIT (Cases 81, 39)
-    at the workforce-capability-at-the-edge axis — connectomics
-    proofreading and Navy IT troubleshooting share the
-    structural pattern of compressing operational expertise
-    through tutorial discipline.
-  ],
-  literature-items: (
-    [Fletcher \& Morrison (2014), IDA Document D-4686],
-    [Anderson et al. (1995), _Journal of the Learning Sciences_],
-    [DARPA Digital Tutor program documentation],
-  ),
-  reflection-list: (
-    [Identify a capability in your domain where the inherited training assumption is that operational expertise is a function of seat time. What would a Digital-Tutor-class re-specification — tutorial discipline around authentic problems — look like, and what is the operational comparison your evaluation would have to beat?],
-    [The Digital Tutor knowledge-test effect size is 4.30 and the report still hedges that knowledge accounts for only ~40\% of practical-exercise variance. What is the analog hedge in your context: which part of the capability does your evaluation measure directly, and which part is enabler rather than direct measure?],
-    [The architecture detail is too scant for outside builders to reproduce the system. What is the minimum engineering recipe you would publish alongside a similar result, so that the next iteration of evidence rests on a reproducible base rather than a one-off program?],
-  ),
-  courses: ("LEN 1", "LEN 2", "LEN 5"),
-)
-
-#case(
-  number: 43,
-  slug: "i-pass-handoff-bundle-structuring-the",
-  title: "I-PASS Handoff Bundle — Structuring the Human-to-Human Transfer",
-  year: "2014",
-  domains-list: ("clinical care", "patient safety", "team communication"),
-  modes-code: "HKN",
-  impact: "Across nine pediatric residency programs, implementation of the I-PASS handoff bundle (mnemonic + training + faculty development + sustainability campaign) was associated with a 23% relative reduction in preventable adverse events and a drop in medical errors, without negatively affecting resident workflow — the study design 'precludes definitively establishing a causal link'",
-  kind: "intervention",
-  scale: "small",
-  evidence-source: "peer-reviewed",
-  induced-anchor: "3.3",
-  lens-anchor: "D2/PT5",
-  clo-anchor: "CLO-2, CLO-5",
-  summary: [
-    The shift-change handoff is the moment in inpatient care where
-    patient state has to be transferred accurately across a human
-    boundary under time pressure. Loss of safety-critical
-    information at handoff is a documented failure mode, and the
-    cognitive demand on the outgoing resident — synthesize, prioritize,
-    and convey — exceeds what unaided improvisation can reliably
-    deliver. I-PASS is a structured handoff bundle: a mnemonic
-    (Illness severity, Patient summary, Action list, Situation
-    awareness and contingency planning, Synthesis by receiver),
-    paired with formal trainee education, faculty development, and
-    a sustainability campaign. Starmer et al. (_NEJM_, 2014) studied
-    its implementation at nine pediatric residency programs and
-    reported a 23% relative reduction in preventable adverse events
-    and a drop in medical errors, with no negative effect on
-    resident workflow. The hedge survives verbatim: the authors
-    state plainly that "our study design precludes definitively
-    establishing a causal link." Published correspondence cautions
-    against implementing the mnemonic alone without the full
-    bundle. The case is the structured-transfer companion to Case
-    177 (CIRAS) at the cultural-half-of-capability layer, and the
-    small-tier intervention spine for state-transparency under
-    stress.
-  ],
-  sections: (
-    [
-      The shift-change handoff is a structural risk point in
-      inpatient care. The outgoing resident — who has the most
-      detailed mental model of each patient's state and trajectory —
-      has to synthesize, prioritize, and convey enough of that
-      model to the incoming team that the patient's care is not
-      disrupted by the boundary. Loss of safety-critical information
-      at handoff is a documented failure mode in the patient-safety
-      literature; preventable adverse events that trace to
-      communication breakdown are a substantial fraction of
-      inpatient harm. The cognitive demand exceeds what unaided
-      improvisation can reliably deliver, and the institutional
-      tolerance for that improvisation has been falling.#cn()
-    ],
-    [
-      I-PASS is an explicitly bundled intervention. The mnemonic —
-      Illness severity, Patient summary, Action list, Situation
-      awareness and contingency planning, Synthesis by receiver —
-      structures the handoff conversation around the information
-      classes the receiver needs in order to take over safely. The
-      mnemonic alone is the visible piece; the bundle around it is
-      what makes the mnemonic land. The published implementation
-      pairs the mnemonic with formal trainee education on its use,
-      faculty development so that supervisors model and reinforce
-      it, and a sustainability campaign so that the discipline does
-      not erode after the rollout. The published correspondence
-      cautions explicitly against implementing the mnemonic alone
-      without the full bundle.#cn()
-    ],
-    [
-      Starmer et al. (_New England Journal of Medicine_, 2014)
-      studied the I-PASS bundle's implementation at nine pediatric
-      residency programs in the United States and Canada. The
-      design was a pre/post evaluation across the participating
-      sites, with the bundle deployed sequentially and outcomes
-      tracked through chart review and observation. The headline
-      finding was a 23% relative reduction in preventable adverse
-      events from the pre-implementation period to the
-      post-implementation period, alongside a drop in medical
-      errors more broadly, with no observed negative effect on
-      resident workflow — the bundle did not impose net friction
-      that displaced other clinical work.#cn()
-    ],
-    [
-      The hedge is load-bearing and survives into the case
-      verbatim. The authors state in the published paper that
-      "our study design precludes definitively establishing a
-      causal link" — pre/post evaluation across multiple sites is
-      the strongest practical design in this setting, and it
-      cannot rule out secular trends in patient-safety culture,
-      simultaneous quality-improvement work, or the
-      sites' own selection into the trial. The 23% reduction is
-      the strongest available evidence; it is not closed proof
-      that the bundle alone produced the effect. Treating it as
-      either is a misreading of what the study design supports.#cn()
-    ],
-    [
-      What the case carries for the corpus is the
-      state-transparency-under-stress pattern at the human–human
-      boundary (induced 3.3, LENS D2/PT5). The handoff is the
-      moment of cognitive transfer at the team boundary; the
-      bundle is the workflow artifact that makes the patient
-      state legible across that boundary. Paired with Case 177
-      (CIRAS) at the cultural-half-of-capability layer, the case
-      shows that the mnemonic alone is not the intervention — the
-      institutional commitment to the bundle (trainee education,
-      faculty development, sustainability) is what makes the
-      mnemonic real in operation. The pattern is partly borrowed
-      from aviation discipline, so the case also seeds the
-      cross-domain-adaptation conversation that v1 Cases 70 (CRM)
-      and 89 (ASRS) anchor in aviation evidence.
-    ],
-  ),
-  beats: (
-    "Shift-change handoff: structural risk point; loss of safety-critical information is documented failure mode",
-    "I-PASS bundle — mnemonic (Illness severity, Patient summary, Action list, Situation awareness, Synthesis by receiver) + trainee education + faculty development + sustainability campaign",
-    "Starmer et al. NEJM 2014: 23% relative reduction in preventable adverse events across nine pediatric residency programs; drop in medical errors; no negative effect on resident workflow",
-    "Hedge preserved verbatim: 'our study design precludes definitively establishing a causal link'",
-    "Published correspondence cautions against implementing the mnemonic alone without the full bundle",
-  ),
-  approaches: (
-    during: (
-      [Specify the information classes the receiver needs in order to take over safely (illness severity, patient summary, action list, situation awareness, synthesis by receiver) and structure the handoff conversation around them, rather than around the outgoing operator's narrative preference.],
-      [Treat the mnemonic, the trainee education, the faculty development, and the sustainability campaign as one bundle; the published correspondence is explicit that the mnemonic alone does not carry the result.],
-      [Design the evaluation to track preventable adverse events and resident workflow together, so that the intervention's effect on patient harm and on the work it adds are visible in the same evidence record.],
-    ),
-    after: (
-      [Report the 23\% relative reduction together with the verbatim hedge that "our study design precludes definitively establishing a causal link"; the strongest available evidence is not closed proof.],
-      [Carry the bundle-not-mnemonic warning into any adaptation: implementations that drop the faculty-development and sustainability components are not implementations of the intervention the published evidence is about.],
-      [Build the cross-domain adaptation conversation deliberately — aviation CRM and ASRS evidence (v1 Cases 70, 111) is part of the I-PASS lineage and CIRAS (Case 177) is the non-aviation companion at the cultural-commitment layer.],
-    ),
-  ),
-  references: (
-    [Starmer, A. J., Spector, N. D., Srivastava, R., West, D. C., Rosenbluth, G., Allen, A. D., Noble, E. L., Tse, L. L., Dalal, A. K., Keohane, C. A., Lipsitz, S. R., Rothschild, J. M., Wien, M. F., Yoon, C. S., Zigmont, K. R., Wilson, K. M., O'Toole, J. K., Solan, L. G., Aylor, M., Bismilla, Z., Coffey, M., Mahant, S., Blankenburg, R. L., Destino, L. A., Everhart, J. L., Patel, S. J., Bale, J. F., Spackman, J. B., Stevenson, A. T., Calaman, S., Cole, F. S., Balmer, D. F., Hepps, J. H., Lopreiato, J. O., Yu, C. E., Sectish, T. C., \& Landrigan, C. P. (2014). Changes in medical errors after implementation of a handoff program. _New England Journal of Medicine_, 371(19):1803–1812. doi:10.1056/NEJMsa1405556 — the case's primary evaluation.],
-    [Starmer, A. J., et al. (2014). Implementation correspondence and follow-up. _New England Journal of Medicine_ — the published correspondence cautioning against implementing the mnemonic alone.],
-    [Sectish, T. C., et al. (2010). Establishing a multisite education and research project: The I-PASS Study Group. _Academic Medicine_ — the I-PASS Study Group methodology and design rationale.],
-    [Cohen, M. D., \& Hilligoss, P. B. (2010). The published literature on handoffs in hospitals: deficiencies identified in an extensive review. _Quality and Safety in Health Care_ — the broader handoff-failure-mode literature.],
-  ),
-  quote: [Our study design precludes definitively establishing a causal link.],
-  quote-source: "Starmer et al., NEJM 2014.",
-  le-insight: [
-    I-PASS is the structured-handoff intervention the
-    patient-safety literature anchors on — a 23% relative
-    reduction in preventable adverse events across nine
-    residency programs, with no negative effect on resident
-    workflow. The hedge that survives verbatim is the
-    authors' own: the study design "precludes definitively
-    establishing a causal link," and the bundle, not the
-    mnemonic alone, is what the evidence is about.
-  ],
-  lens-approach: [
-    I-PASS is the state-transparency-under-stress case at the
-    human–human boundary (induced 3.3; LENS D2/PT5) — Domain 2
-    for bundle-as-intervention; Domain 5 for the institutional
-    faculty-development commitment. Pair with Case 177 (CIRAS)
-    and v1 Cases 70 (CRM) and 89 (ASRS).
-  ],
-  literature-items: (
-    [Starmer et al. (2014), _NEJM_],
-    [Starmer et al. (2014), I-PASS implementation correspondence],
-    [Sectish et al. (2010), _Academic Medicine_],
-  ),
-  reflection-list: (
-    [Identify a moment in your domain's workflow where state has to be transferred accurately across a human boundary under time pressure. What are the information classes (the analog of I-PASS's five) the receiver needs in order to take over safely, and what bundle around the structuring artifact would make it land?],
-    [The 23\% relative reduction is the strongest available evidence and the authors are explicit it is not closed proof. What additional evidence — a cluster-randomized rollout, a residual-error analysis at the handoff point — would you require before treating the figure as closure rather than strong signal?],
-  ),
-  courses: ("LEN 2", "LEN 4", "LEN 7"),
-)
-
-#case(
-  number: 44,
-  slug: "ncsbn-national-simulation-study",
-  title: "NCSBN National Simulation Study — Licensing the 50% Substitution Rule",
-  year: "2014",
-  domains-list: ("nursing education", "clinical simulation", "regulation"),
-  modes-code: "GKD",
-  impact: "A longitudinal RCT randomized students across multiple US nursing programs to control, 25%, or 50% simulation substitution for traditional clinical hours; 660+ took the NCLEX with no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates — the number of nursing regulatory boards permitting up to 50% simulation substitution increased more than 20-fold from 2014 to 2022",
-  kind: "intervention",
-  scale: "small",
-  evidence-source: "peer-reviewed",
-  induced-anchor: "6.1",
-  lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
-  summary: [
-    Pre-licensure nursing education had long rested on a regulatory
-    requirement for traditional clinical hours — time spent caring
-    for patients in a real clinical setting under the supervision
-    of a clinical faculty member. As clinical-placement capacity
-    came under pressure, the question facing nursing regulators was
-    whether high-quality simulation could substitute for some
-    fraction of those hours without degrading the clinical
-    capability of new nurses. The National Council of State Boards
-    of Nursing (NCSBN) ran the study that the field then built on:
-    a longitudinal RCT randomized students across multiple US
-    nursing programs to control, 25%, or 50% simulation
-    substitution. Hayden et al. (_Journal of Nursing Regulation_,
-    2014) reported no statistically significant differences in
-    clinical competency, nursing knowledge, or NCLEX pass rates
-    across the three groups; 660+ participants took the NCLEX. The
-    follow-up (2023) documents the institutional transfer: the
-    number of nursing regulatory boards permitting up to 50%
-    substitution increased more than 20-fold from 2014 to 2022 —
-    an unusually clean case of a single evidence base propagating
-    across an entire regulatory field. The hedge survives: the
-    result holds only "under conditions comparable to those
-    described in the study" (high-quality simulation, trained
-    faculty). Pair with Case 178 (Colorado CTSA team-science
-    training) at the cross-domain workforce-intervention layer.
-  ],
-  sections: (
-    [
-      Pre-licensure nursing education in the United States has
-      rested on a regulatory requirement, set by state nursing
-      boards, that students complete a defined number of
-      traditional clinical hours — time spent caring for patients
-      in a real clinical setting under the supervision of a
-      clinical faculty member. As nursing programs grew and
-      clinical-placement capacity in hospitals came under pressure,
-      the field was asking whether high-quality simulation —
-      manikin-based or standardized-patient scenarios run in a
-      controlled environment — could substitute for some fraction
-      of traditional clinical hours without degrading the clinical
-      capability of new nurses.#cn()
-    ],
-    [
-      The National Council of State Boards of Nursing — the
-      umbrella body for the state nursing-regulatory boards that
-      together control nursing licensure — commissioned the
-      definitive study. Hayden et al. (_Journal of Nursing
-      Regulation_, 2014) reported the NCSBN National Simulation
-      Study: a longitudinal randomized controlled trial that
-      assigned pre-licensure nursing students at multiple US
-      nursing programs to a control group, a 25%-substitution
-      group, or a 50%-substitution group. The substitution
-      condition replaced an equivalent fraction of traditional
-      clinical hours with simulation hours run to specified
-      quality standards (validated scenarios, trained simulation
-      faculty, structured debriefing).#cn()
-    ],
-    [
-      The headline finding was a null result on the outcome the
-      regulators most cared about: no statistically significant
-      differences in clinical competency, nursing knowledge, or
-      NCLEX pass rates across the three groups. Six hundred and
-      sixty-plus participants took the NCLEX licensure
-      examination, providing the comparison the regulatory
-      decision rested on. The longitudinal design followed cohorts
-      through their first nursing positions, with comparable
-      outcome measures at multiple time points. The study's
-      qualifying language is precise: the result holds only "under
-      conditions comparable to those described in the study," and
-      those conditions are named — high-quality simulation,
-      trained simulation faculty, structured debriefing.#cn()
-    ],
-    [
-      What followed is the unusual part. Nursing regulation in
-      the US is genuinely decentralized: each state board sets its
-      own pre-licensure requirements, and there is no federal
-      forcing mechanism. The 2023 follow-up study documents that
-      the number of nursing regulatory boards permitting up to 50%
-      simulation substitution increased more than 20-fold from
-      2014 to 2022. A single evidence base — one study, run by
-      the regulators' own collaborative — propagated across an
-      entire regulatory field, on the strength of the published
-      design and the null result on the licensure examination the
-      boards control.#cn()
-    ],
-    [
-      The case carries the cross-organization knowledge-transfer
-      pattern at the regulatory-institution layer (induced 6.1,
-      LENS D2/PT4). The mechanism that made the propagation work
-      was the credibility of the study's design (longitudinal RCT,
-      multi-site, blinded outcomes), the alignment of its outcome
-      measure with the boards' own licensure mechanism (NCLEX),
-      and the institutional ownership of the evidence (the
-      regulators commissioned it and own it). Pair with Case 178
-      (Colorado CTSA team-science training) at the cross-domain
-      workforce-intervention layer — both are small-tier
-      interventions with measurable workforce-capability claims,
-      and both depend on the legitimacy of the assessment
-      instrument the institution then has to defend.
-    ],
-  ),
-  beats: (
-    "NCSBN longitudinal RCT — students at multiple US nursing programs randomized to control, 25%, or 50% simulation substitution for traditional clinical hours",
-    "Hayden et al. 2014 (_J Nursing Regulation_): no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates across groups; 660+ took the NCLEX",
-    "Result holds only 'under conditions comparable to those described in the study' (high-quality simulation, trained faculty, structured debriefing)",
-    "Institutional transfer: number of nursing regulatory boards permitting up to 50% substitution increased 20-fold from 2014 to 2022 — single evidence base propagating across the regulatory field",
-    "Pair with Case 178 (Colorado CTSA team-science) at the cross-domain workforce-intervention layer",
-  ),
-  approaches: (
-    during: (
-      [Commission the study from inside the regulatory body that will then have to act on it; the institutional ownership of the evidence is what makes the propagation across decentralized regulators possible.],
-      [Specify the quality conditions the result is conditional on (high-quality simulation, trained faculty, structured debriefing) at design time, so the qualifying language travels with the result and is not stripped at the citation stage.],
-      [Align the study's outcome measure with the licensure mechanism the boards control (NCLEX pass rate); the credibility of the propagation depends on the outcome being the one the regulators already use.],
-    ),
-    after: (
-      [Carry the qualifying language ("under conditions comparable to those described in the study") into every downstream adoption; the study's null result is conditional on quality standards, not unconditional.],
-      [Document the propagation as a transferable institutional pattern: a decentralized regulatory field can move on the strength of a single, well-designed, body-owned study when the outcome measure is the one the regulators already use.],
-      [Treat the 20-fold expansion of board adoption from 2014 to 2022 as evidence of the mechanism of regulatory transfer, not as evidence that 50\% substitution is safe outside the study's quality conditions.],
-    ),
-  ),
-  references: (
-    [Hayden, J. K., Smiley, R. A., Alexander, M., Kardong-Edgren, S., \& Jeffries, P. R. (2014). The NCSBN National Simulation Study: A longitudinal, randomized, controlled study replacing clinical hours with simulation in prelicensure nursing education. _Journal of Nursing Regulation_, 5(2 Suppl):S1–S64. https://www.journalofnursingregulation.com/article/s2155-8256(15)30062-4/fulltext — the case's primary study.],
-    [Smiley, R. A. (2023). Survey of simulation use in prelicensure nursing programs and the regulatory landscape 2014–2022. _Journal of Nursing Regulation_. doi:10.1016/S2155-8256(23)00086-8 — the 2023 follow-up documenting the regulatory propagation.],
-    [Jeffries, P. R. (2012). _Simulation in Nursing Education: From Conceptualization to Evaluation_ (2nd ed.). National League for Nursing — the simulation-quality framework the NCSBN study's quality conditions rest on.],
-    [INACSL Standards Committee (2016). _INACSL Standards of Best Practice: Simulation_. _Clinical Simulation in Nursing_, 12(S) — the simulation-practice standards downstream programs adopt as the analog of the NCSBN quality conditions.],
-  ),
-  quote: [The result holds under conditions comparable to those described in the study — high-quality simulation, trained faculty, structured debriefing.],
-  quote-source: "Editors' synthesis of Hayden et al. (2014).",
-  le-insight: [
-    The NCSBN National Simulation Study is the unusual case
-    of a single, well-designed, regulator-commissioned study
-    propagating a substantial workforce-capability change
-    across an entire decentralized regulatory field. The null
-    result on NCLEX is conditional on the quality conditions
-    the study names — high-quality simulation, trained
-    faculty, structured debriefing — and the qualifying
-    language has to travel with the result.
-  ],
-  lens-approach: [
-    NCSBN is the regulator-owned cross-organization
-    knowledge-transfer case (induced 6.1; LENS D2/PT4) —
-    Domain 2 for the RCT-design discipline; Domain 5 for the
-    institutional-ownership move that propagated evidence
-    across decentralized regulators. Pair with Case 178
-    (Colorado CTSA).
-  ],
-  literature-items: (
-    [Hayden et al. (2014), _J Nursing Regulation_],
-    [Smiley (2023), _J Nursing Regulation_ — 2014–2022 follow-up],
-    [Jeffries (2012), _Simulation in Nursing Education_],
-  ),
-  reflection-list: (
-    [Identify a decentralized regulatory field in your domain where a substitution or adoption decision rests on whether the new modality preserves capability. What would a NCSBN-class RCT, commissioned from inside the regulatory body, look like — and what would the licensure-aligned outcome measure be?],
-    [The result is conditional on quality conditions (high-quality simulation, trained faculty, structured debriefing). What is the analog conditional in your context, and what mechanism would carry the qualifying language into the regulatory adoptions that follow?],
-    [The 20-fold expansion of board adoption is evidence of regulatory transfer, not of safety outside the study's quality conditions. What would you do operationally to ensure the adoptions in your field actually meet the conditions the propagation rests on?],
-  ),
-  courses: ("LEN 2", "LEN 5", "LEN 7"),
-)
-
-#case(
-  number: 45,
-  slug: "spaced-education-rcts-in-medical",
-  title: "Spaced Education RCTs in Medical Training",
-  year: "2007 – 2009",
-  domains-list: ("medical education", "retention", "workforce L&D"),
-  modes-code: "HKD",
-  impact: "A multi-institution RCT of urology residents across the US and Canada randomized participants to bolus versus spaced-pattern email delivery of validated study questions; spaced education improved acquisition and retention of medical knowledge, and a follow-up showed the learning benefit persisting for two years",
-  kind: "intervention",
-  scale: "small",
-  evidence-source: "peer-reviewed",
-  induced-anchor: "2.3",
-  lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
-  summary: [
-    Spacing — distributing study sessions over time rather than
-    massing them — is one of the most robust findings in basic
-    learning-science research, with effects across age,
-    population, and content domain. Whether the basic finding
-    transfers into the workplace-L&D context of practicing
-    medical trainees is a separate empirical question. Kerfoot et
-    al. (_Journal of Urology_, 2007) ran the test that closed the
-    loop. A multi-institution RCT randomized urology residents
-    across US and Canadian programs to receive validated study
-    questions in either a bolus pattern (concentrated delivery) or
-    a spaced pattern (distributed delivery), both via email. The
-    spaced-education condition improved acquisition and retention
-    of medical knowledge against the bolus comparison. The 2009
-    follow-up (Kerfoot, _Journal of Urology_, 181:2671) documented
-    that the learning benefit persisted for two years. The case is
-    a methodologically clean small-tier intervention with
-    replication, with standard RCT scope: the result speaks to the
-    delivery-pattern manipulation in the email-delivered
-    validated-question context, not to spacing in general or to
-    other modalities. The strongest randomized strength in the
-    small-tier batch. Pair with Case 40 (Duolingo half-life
-    regression) at the spacing-mechanism-in-deployment layer.
-  ],
-  sections: (
-    [
-      Spacing — distributing study sessions over time rather than
-      massing them in a single concentrated block — is among the
-      most robust findings in basic learning-science research. The
-      spacing effect appears across age groups, populations,
-      content domains, and outcome measures, and the broader
-      retrieval-practice literature complements it. What is less
-      obvious in the basic literature is whether the spacing
-      effect transfers to the workplace-L&D context, where the
-      learner is a practicing trainee, the content is the trainee's
-      own clinical specialty, and the delivery mechanism is one
-      the trainee will tolerate as part of their work week.#cn()
-    ],
-    [
-      Kerfoot et al. (_Journal of Urology_, 2007) ran the test
-      that closed the loop. The study was a multi-institution
-      randomized controlled trial of urology residents at
-      multiple US and Canadian residency programs. Participants
-      were randomized to receive validated study questions
-      drawn from the urology in-service examination question pool,
-      delivered by email, in either a bolus pattern (concentrated
-      delivery over a short window) or a spaced pattern
-      (distributed delivery across a longer window). Outcomes
-      were knowledge acquisition (immediate post-test) and
-      retention (delayed post-test), measured against the same
-      validated question pool the delivery drew from.#cn()
-    ],
-    [
-      The result was direct. The spaced-education condition
-      improved acquisition and retention of medical knowledge
-      against the bolus comparison. The intervention and the
-      measurement formed a tight closed loop: the validated
-      questions delivered are the same content the post-test
-      drew from, the email delivery is the manipulation, and the
-      knowledge-outcome measure is the institution's own
-      in-service question pool. The 2009 follow-up (Kerfoot,
-      _Journal of Urology_, 181:2671) reported a separate
-      analysis with the same residents and documented that the
-      learning benefit persisted for two years — a duration that
-      is rare in the workplace-L&D RCT literature.#cn()
-    ],
-    [
-      The case's scope is what makes it teachable rather than
-      over-extended. The result speaks to the delivery-pattern
-      manipulation (bolus vs. spaced) in the email-delivered
-      validated-question context, with urology residents at
-      multiple programs. It does not speak to spacing in general,
-      to other modalities (mobile, in-clinic, simulation), or to
-      content classes substantially different from
-      in-service-examination knowledge. The strength of the
-      design — multi-institution RCT, two-year persistence — is
-      the strongest randomized strength in the small-tier batch,
-      and the scope discipline is the qualifying language that
-      makes the strength interpretable. The case is the
-      methodologically clean small-tier closed-loop intervention
-      the LENS Iterative Development domain anchors on.#cn()
-    ],
-    [
-      Pair with Case 40 (Duolingo half-life regression) at the
-      spacing-mechanism-in-deployment layer. Duolingo is the
-      large-scale operational deployment of a spacing-and-
-      retrieval-practice system in a consumer language-learning
-      product; Kerfoot is the small-scale randomized evidence in
-      the workplace-L&D medical-training context. Together the
-      two cases anchor the spacing-mechanism conversation across
-      laboratory, deployed-product, and randomized-workplace
-      evidence. The Iterative Development discipline LENS teaches
-      depends on having both the controlled-randomized closed
-      loop (Kerfoot) and the operational-mechanism evidence
-      (Duolingo) available in the corpus.
-    ],
-  ),
-  beats: (
-    "Spacing — one of the most robust findings in basic learning-science research; transfer to workplace-L&D in medical trainees is the empirical question",
-    "Kerfoot et al. _J Urology_ 2007 — multi-institution RCT, urology residents across US/Canada; validated study questions delivered by email in bolus vs. spaced pattern",
-    "Spaced-education condition improved acquisition and retention of medical knowledge against bolus comparison",
-    "Kerfoot 2009 follow-up (_J Urology_ 181:2671) — learning benefit persisted for 2 years",
-    "Scope discipline: speaks to email-delivered validated-question delivery pattern, not spacing in general; strongest randomized strength in the small-tier batch",
-  ),
-  approaches: (
-    during: (
-      [Specify the closed loop in advance: the intervention manipulation, the outcome measure, and the validated-question pool together, so the intervention and the measurement form a single design rather than two separately published artifacts.],
-      [Choose the delivery modality (email, in this case) that the trainees will tolerate as part of their work week; the workplace-L&D context is unforgiving of modalities that compete with clinical work.],
-      [Pre-register the persistence follow-up at the design stage; the two-year retention figure in Kerfoot 2009 is what gives the intervention its workplace-L&D strength, and follow-up has to be designed into the original RCT.],
-    ),
-    after: (
-      [Report the result in the scope it speaks to: email-delivered validated-question delivery pattern with urology residents; the spacing-in-general claim sits in the basic literature, and the case's contribution is the workplace-L&D closed-loop evidence.],
-      [Treat the two-year persistence figure as the workplace-L&D headline; persistence over years is rare in the workplace-L&D RCT literature, and the figure is what makes the result actionable as a training design.],
-      [Pair the result with Duolingo (Case 40) at the spacing-mechanism layer in any communication of the broader conversation, so the controlled-randomized evidence and the deployed-product evidence are read together.],
-    ),
-  ),
-  references: (
-    [Kerfoot, B. P., DeWolf, W. C., Masser, B. A., Church, P. A., \& Federman, D. D. (2007). Spaced education improves the retention of clinical knowledge by medical students: A randomised controlled trial. _Journal of Urology_, 177(4):1481–1487. doi:10.1016/j.juro.2006.11.074 — the case's primary RCT.],
-    [Kerfoot, B. P. (2009). Learning benefits of on-line spaced education persist for 2 years. _Journal of Urology_, 181(6):2671 — the two-year persistence follow-up.],
-    [Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., \& Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. _Psychological Bulletin_, 132(3):354–380 — the basic-literature spacing-effect review the workplace-L&D RCT sits against.],
-    [Settles, B., \& Meeder, B. (2016). A trainable spaced repetition model for language learning. _Proceedings of ACL 2016_, 1848–1858 — Duolingo half-life regression (Case 40), the operational deployment companion.],
-  ),
-  quote: [The learning benefit persisted for two years.],
-  quote-source: "Kerfoot, Journal of Urology 2009 follow-up.",
-  le-insight: [
-    Kerfoot et al. is the methodologically clean small-tier
-    closed-loop spaced-education RCT in workplace medical
-    training, with two-year persistence in the follow-up. It
-    is the strongest randomized strength in the small-tier
-    batch. The scope discipline is what makes it
-    interpretable: the result speaks to the email-delivered
-    validated-question delivery pattern, not to spacing in
-    general.
-  ],
-  lens-approach: [
-    Kerfoot is the canonical small-tier closed-loop
-    spacing-in-workplace-L&D case (induced 2.3; LENS D2/PT4).
-    LENS uses it in Domain 2 (Iterative Development) for the
-    intervention-and-measurement-as-single-design discipline,
-    and in Domain 4 (Test and Evaluation) for the persistence-
-    follow-up that makes the result a workplace-L&D headline.
-    Pair with Case 40 (Duolingo half-life regression) at the
-    spacing-mechanism-in-deployment layer — controlled-
-    randomized evidence with deployed-product evidence
-    together.
-  ],
-  literature-items: (
-    [Kerfoot et al. (2007), _Journal of Urology_],
-    [Kerfoot (2009), _Journal of Urology_ — 2-year persistence],
-    [Cepeda et al. (2006), _Psychological Bulletin_],
-  ),
-  reflection-list: (
-    [Identify a workplace-L&D context in your domain where the basic-literature evidence (spacing, retrieval practice, deliberate practice) is robust and the workplace-transfer evidence is thinner. What would a Kerfoot-class closed-loop RCT look like — the intervention manipulation, the outcome measure, the validated-content pool together?],
-    [The two-year persistence figure is the workplace-L&D headline. What follow-up cadence would you design into your study at the start, so that persistence over years is part of the original RCT rather than a separately commissioned downstream check?],
-    [The result's scope is the email-delivered validated-question delivery pattern. What is the analog scope discipline in your context — the qualifying language that has to travel with the headline so the result is read as evidence about a specific mechanism rather than as evidence about a general principle?],
-  ),
-  courses: ("LEN 2", "LEN 3", "LEN 5"),
-)
-
-#case(
-  number: 46,
+  number: 70,
   slug: "high-impact-learning-system-engineering",
   title: "High-Impact Learning System — Engineering the Environment, Not Just the Event",
   year: "2001 – present",
@@ -2310,7 +870,7 @@
     spanning pre-training, the event itself, and post-training.
     The design principle is that the training event alone
     explains a small fraction of transfer variance — Blume's
-    2010 meta-analysis (Case 35) identifies the work
+    2010 meta-analysis (Case 65) identifies the work
     environment as the decisive variable — and so the program
     has to engineer the environment alongside the event. HILS
     deployments include pre-training line-manager alignment
@@ -2321,7 +881,7 @@
     to substantially higher figures, but the per-firm numbers
     live in vendor whitepapers and conference talks rather than
     peer-reviewed audits. The case is the deployed-program
-    counterpart to Case 124 (SCM as evaluation instrument): SCM
+    counterpart to Case 83 (SCM as evaluation instrument): SCM
     measures whether the program worked at the tails; HILS
     designs the program so that the conditions for transfer
     are engineered. Evidence-tier flag is practice-synthesis:
@@ -2332,7 +892,7 @@
   ],
   sections: (
     [
-      Blume et al.'s 2010 meta-analysis (Case 35) names the
+      Blume et al.'s 2010 meta-analysis (Case 65) names the
       work environment — supervisor support, peer support,
       practice opportunity — as the decisive transfer variable
       at the system layer rather than the learner layer. The
@@ -2367,13 +927,13 @@
       self-reported and have not been independently audited.#cn()
     ],
     [
-      HILS is the deployed-program counterpart to Case 124
+      HILS is the deployed-program counterpart to Case 83
       (SCM as evaluation instrument). Where SCM measures
       whether the program worked at the tails of the outcome
       distribution, HILS designs the program so that the
       surrounding conditions for transfer are engineered. The
       pair is the operational answer to the Kirkpatrick
-      chain-of-evidence problem (Case 108): design the
+      chain-of-evidence problem (Case 79): design the
       environment so transfer can happen, and measure the
       tails to confirm it did. Neither component on its own
       crosses the Level-2 / Level-3 seam — together they
@@ -2384,7 +944,7 @@
       that capability lives at the operator-system interface,
       not in the individual. HILS is a documented practice
       pattern that names the environment-as-intervention
-      move; it makes Blume's meta-analytic finding (Case 35)
+      move; it makes Blume's meta-analytic finding (Case 65)
       operational. The evidence-tier flag is
       practice-synthesis — the model and the deployment
       pattern are durable in practitioner literature, the
@@ -2397,20 +957,20 @@
     ],
   ),
   beats: (
-    "Blume meta-analysis (Case 35) names work environment as decisive transfer variable; HILS is the deployed-program answer",
+    "Blume meta-analysis (Case 65) names work environment as decisive transfer variable; HILS is the deployed-program answer",
     "Three phases: pre-training (line-manager alignment, work-context prep); the event; post-training (supervisor support, peer support, practice opportunity)",
     "Corporate deployments report transfer rising from 10–20% baseline to substantially higher figures; per-firm numbers self-reported in practitioner channels",
-    "Deployed-program counterpart to Case 124 (SCM as evaluation); together they structure the Level-2/Level-3 seam crossing (Case 108)",
+    "Deployed-program counterpart to Case 83 (SCM as evaluation); together they structure the Level-2/Level-3 seam crossing (Case 79)",
     "Practice-synthesis tier: model documented in Brinkerhoff & Apking, Watershed, L-TEN; effect sizes self-reported; future validation ongoing",
   ),
   approaches: (
     during: (
       [Plan the pre-training phase as a first-class design deliverable: line-manager briefings, work-context preparation, learner readiness assessment, instrumented before the event runs.],
       [Design the post-training phase before delivery: supervisor support artifacts, peer-support structures, scheduled on-job practice opportunities on the specific tasks the training targets.],
-      [Treat the training event as one component of a three-phase architecture, not as the whole program — Blume's finding (Case 35) is the load-bearing reason the architecture has to span the boundary.],
+      [Treat the training event as one component of a three-phase architecture, not as the whole program — Blume's finding (Case 65) is the load-bearing reason the architecture has to span the boundary.],
     ),
     after: (
-      [Pair with Case 124 (SCM) to measure whether the deployed program worked at the tails — HILS designs the environment, SCM samples the outcomes; together they structure the chain-of-evidence cross (Case 108).],
+      [Pair with Case 83 (SCM) to measure whether the deployed program worked at the tails — HILS designs the environment, SCM samples the outcomes; together they structure the chain-of-evidence cross (Case 79).],
       [Carry the practice-synthesis flag honestly: the model is documented and durable, the per-firm effect sizes are self-reported, and any specific magnitude cited from vendor whitepapers should be flagged as such in program documentation.],
       [Use the CLO *Judgment under inadequate evidence*: the synthesis is the strongest the field has, and the practitioner has to decide whether to deploy HILS at organizational scale on practitioner-tier evidence while naming the validation that remains open.],
     ),
@@ -2419,15 +979,15 @@
     [Brinkerhoff, R. O., & Apking, A. M. (2001), _High Impact Learning: Strategies for Leveraging Performance and Business Results from Training Investments_, Basic Books.],
     [Watershed LRS practitioner summaries of HILS deployment patterns.],
     [L-TEN (Life Sciences Trainers and Educators Network) practitioner summaries of HILS in life-sciences L&D.],
-    [Blume et al. (2010), _Journal of Management_ 36(4):1065–1105 — the meta-analytic finding HILS operationalizes (paired Case 35).],
-    [Brinkerhoff (2005), _Advances in Developing Human Resources_ 7(1):86–101 — SCM as the paired evaluation instrument (Case 124).],
+    [Blume et al. (2010), _Journal of Management_ 36(4):1065–1105 — the meta-analytic finding HILS operationalizes (paired Case 65).],
+    [Brinkerhoff (2005), _Advances in Developing Human Resources_ 7(1):86–101 — SCM as the paired evaluation instrument (Case 83).],
   ),
   quote: [If the work environment is the decisive transfer variable, the work environment has to be a design variable. HILS makes it one.],
   quote-source: "Editors' synthesis of Brinkerhoff & Apking (2001) and the Blume meta-analytic finding.",
   le-insight: [
     HILS is the deployed-program operationalization of
-    Blume's environment-as-decisive finding (Case 35) and
-    the design-side counterpart of SCM (Case 124). Evidence
+    Blume's environment-as-decisive finding (Case 65) and
+    the design-side counterpart of SCM (Case 83). Evidence
     is practice-synthesis: the model is durable in
     practitioner literature, per-firm effect sizes are
     self-reported, future validation continues. The CLO *Judgment under inadequate evidence* is the capability
@@ -2441,13 +1001,13 @@
     iteration explicitly across pre / event / post phases,
     and exercises the CLO *Judgment under inadequate
     evidence* because the practitioner must decide on
-    practice-synthesis-tier evidence. Pairs with Case 124
-    (SCM) and Cases 108 / 112 as the corporate-L&D cluster.
+    practice-synthesis-tier evidence. Pairs with Case 83
+    (SCM) and Cases 79 / 112 as the corporate-L&D cluster.
   ],
   literature-items: (
     [Brinkerhoff & Apking (2001), _High Impact Learning_],
     [Watershed LRS and L-TEN practitioner summaries],
-    [Blume (Case 35) and Brinkerhoff SCM (Case 124) as paired references],
+    [Blume (Case 65) and Brinkerhoff SCM (Case 83) as paired references],
   ),
   reflection-list: (
     [Identify a training deployment in your context that currently invests heavily in the event and lightly in the surrounding environment. What pre-training and post-training artifacts would you build to convert the deployment from a single-component program into a three-phase HILS-style architecture?],
@@ -2457,172 +1017,9 @@
   courses: ("LEN 2", "LEN 4", "LEN 7"),
 )
 
+// ---- Case 71 — reflective-practice-on-a-work-based ----
 #case(
-  number: 47,
-  slug: "pepfar-hiv-training-across-16-sub",
-  title: "PEPFAR HIV Training Across 16 Sub-Saharan African Countries — Modality Comparison Under Disruption",
-  year: "2023",
-  domains-list: ("global health", "HIV care", "training-modality comparison", "Sub-Saharan Africa"),
-  modes-code: "KND",
-  impact: "Across 16 PEPFAR-supported Sub-Saharan African countries, pre/post knowledge and self-confidence assessments showed mean increases across all training modalities — in-person (pre-COVID), virtual, and blended — when pandemic disruption forced a delivery-mode switch; the L1–L2 limitation is explicit and the L3/L4 question remains open",
-  kind: "intervention",
-  scale: "small",
-  evidence-source: "peer-reviewed",
-  evidence-flag: "preprint-tier",
-  induced-anchor: "2.3",
-  lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4, CLO-5",
-  summary: [
-    Across 16 PEPFAR-supported Sub-Saharan African countries, a
-    2023 real-world program evaluation compared in-person
-    (pre-COVID), virtual, and blended HIV-care training delivery.
-    Across all assessed knowledge domains and self-perceived
-    confidence dimensions, pre/post assessments showed mean
-    increases regardless of modality. The honest framing the
-    case carries into print is that the outcome metric is
-    knowledge and self-rated confidence — Kirkpatrick L1–L2
-    territory (Case 108) — not L3 on-job behavior change or L4
-    patient outcomes. Even so, the study is one of the few
-    real-world cross-country modality comparisons at meaningful
-    scale, and it is the L&D evaluation pattern playing out in
-    global health at multi-country scope. The case is
-    cross-listed with the corporate / workforce L&D cluster
-    (Cases 108, 35, 124, 46) and with the non-US/UK/EU
-    geographic-coverage gap (Cases 185, and the cases in the
-    later supplemental batches). Evidence-tier flag is
-    preprint-tier: the medRxiv version is preprint and the PMC
-    version is journal-published — the editor's citation choice
-    should be carried explicitly. Future validation on whether
-    L1–L2 knowledge gains translate to L3 behavior change or
-    L4 patient outcomes remains ongoing.
-  ],
-  sections: (
-    [
-      PEPFAR (the US President's Emergency Plan for AIDS
-      Relief) has been one of the largest sustained global
-      health programs of the past two decades. Workforce
-      capability — clinicians and frontline workers trained on
-      current HIV diagnosis, treatment, and prevention
-      protocols — is one of its load-bearing deliverables.
-      COVID disruption forced a delivery-mode switch in 2020
-      across countries, from in-person training to virtual and
-      blended modalities, before any of the evidence base on
-      modality equivalence had been built for this
-      workforce.#cn()
-    ],
-    [
-      The 2023 study compares pre/post-assessment outcomes
-      across 16 PEPFAR-supported Sub-Saharan African countries
-      and across the three modalities. The headline finding is
-      that across all knowledge domains and self-perceived
-      confidence dimensions assessed, mean increases were
-      observed regardless of modality. The pragmatic
-      interpretation in the global-health literature has been
-      that the virtual / blended modalities are not measurably
-      worse on the L1–L2 outcomes the study measured, a
-      finding that has policy implications for program design
-      under future disruption.#cn()
-    ],
-    [
-      The honest framing the case must carry into print is the
-      Kirkpatrick limitation. The study's outcomes are
-      knowledge and self-rated confidence — Level 1
-      (reaction and confidence) and Level 2 (learning) in the Kirkpatrick
-      framework (Case 108). It is not Level 3 (behavior change
-      on the job — whether the clinicians actually changed
-      practice) and it is not Level 4 (results — whether
-      patient outcomes improved). The structural limitation
-      Case 108 names is exactly the limitation this study sits
-      inside.#cn()
-    ],
-    [
-      Even so, the study is one of the few real-world
-      cross-country modality comparisons at meaningful scale,
-      and the multi-country scope means the comparison is not
-      trivially confounded by single-country labor-market or
-      health-system factors. It is the L&D evaluation pattern
-      playing out in global health, and the modality-comparison
-      finding is policy-relevant for PEPFAR program design
-      across the deployment region.#cn()
-    ],
-    [
-      The evidence-tier flag is preprint-tier: the medRxiv
-      version is the preprint; the PMC version is the
-      journal-published article. The editor's citation choice
-      between the two should be carried explicitly in the
-      printed case. The LENS teaching point is the
-      cross-listed pair with the corporate / workforce L&D
-      cluster (Cases 108, 35, 124, 46) and the non-US/UK/EU
-      cluster (Cases 185). The CLO *Judgment under
-      inadequate evidence* is exercised: the study is the
-      strongest evidence the field has for modality
-      equivalence in this context, and it does not establish
-      L3 / L4 outcomes. Future validation is ongoing.
-    ],
-  ),
-  beats: (
-    "PEPFAR workforce-capability program; COVID forced modality switch across 16 SSA countries with no prior evidence base on modality equivalence",
-    "2023 study: pre/post assessments across knowledge and self-confidence domains showed mean increases regardless of modality (in-person, virtual, blended)",
-    "Kirkpatrick L1–L2 limitation explicit: outcomes are knowledge and self-rated confidence, not L3 behavior change or L4 patient outcomes (Case 108)",
-    "Rare real-world cross-country modality comparison at meaningful scale; multi-country scope limits single-country confounding",
-    "Preprint-tier flag: medRxiv preprint and PMC published; editor citation choice carried explicitly; future validation on L3/L4 ongoing",
-  ),
-  approaches: (
-    during: (
-      [Design the modality comparison around what the assessment instrument can actually establish — knowledge and confidence at L1–L2 are tractable; L3 and L4 require longitudinal data and patient-outcome linkage the study did not have.],
-      [Build the multi-country sampling so the comparison is not trivially confounded by single-country factors — the 16-country scope is part of the study's evidential weight.],
-      [Carry the Kirkpatrick limitation into the program documentation honestly — Case 108's stop-at-L2 pattern is exactly the limitation this study sits inside, and naming it preserves the case's teaching value.],
-    ),
-    after: (
-      [Pair with Case 185 (SkillsFuture) as the workforce-capability counterparts at national- and multi-country scale; together they teach what L&D measurement looks like in non-US/UK/EU settings with the evidence-tier honesty intact.],
-      [Use the CLO *Judgment under inadequate evidence*: the study is the strongest evidence the field has for modality equivalence in this context, and the practitioner has to decide modality policy on L1–L2 evidence while L3/L4 evidence develops.],
-      [Carry the preprint-tier flag honestly: the medRxiv preprint and the PMC published article are both citable; future validation requires confirmatory replication and L3/L4 outcome measurement.],
-    ),
-  ),
-  references: (
-    ["Comparing in-person, blended and virtual training interventions; a real-world evaluation of HIV capacity building programs in 16 countries in sub-Saharan Africa," medRxiv 2023.02.08.23285641 (preprint) → PMC10365303 (published).],
-    [PEPFAR program documentation — workforce-capability training as a load-bearing deliverable across Sub-Saharan African deployment countries.],
-    [Kirkpatrick & Kirkpatrick (2006), _Evaluating Training Programs_ — the chain-of-evidence framework the L1–L2 limitation references (paired Case 108).],
-    [Blume et al. (2010), _Journal of Management_ 36(4):1065–1105 — the meta-analytic transfer finding the L3 question references (paired Case 35).],
-  ),
-  quote: [The outcomes are knowledge and self-rated confidence. The L3 and L4 questions — did practice change, did patient outcomes improve — remain open.],
-  quote-source: "Editors' synthesis of the PEPFAR 16-country modality comparison.",
-  le-insight: [
-    PEPFAR's 16-country modality comparison is the L&D
-    evaluation pattern in global health: mean L1–L2 gains
-    across all modalities, with the Kirkpatrick limitation
-    (Case 108) explicit. Evidence-tier flag is preprint-tier
-    — both the medRxiv preprint and the PMC published
-    version are citable — and the L3 / L4 questions remain
-    open. Future validation is ongoing.
-  ],
-  lens-approach: [
-    PEPFAR is the global-health workforce-capability case
-    (induced 2.3; LENS D2/PT4). LENS uses it in Domain 2
-    (Iterative Development) for the modality-design
-    iteration COVID forced and in Domain 5 (Navigating
-    Sociotechnical Constraints) for the multi-country
-    program scope. The CLO *Judgment under inadequate
-    evidence* is exercised because the study is the
-    strongest available at L1–L2 and does not settle L3 /
-    L4. Pairs with Case 185 (SkillsFuture) as the workforce
-    L&D cross-listing.
-  ],
-  literature-items: (
-    [medRxiv 2023.02.08.23285641 (preprint) → PMC10365303 (published)],
-    [PEPFAR program documentation],
-    [Kirkpatrick (Case 108) and Blume (Case 35) as paired references],
-  ),
-  reflection-list: (
-    [Identify a training program in your context that was forced to switch modality under disruption (COVID, budget constraint, geographic dispersion). What evidence would you have needed at the time to make the modality decision well, and at which Kirkpatrick level was the available evidence?],
-    [Specify the L3 / L4 measurement architecture you would build to extend the PEPFAR study into behavior-change and patient-outcome evidence — what data sources, what cadence, what linkage between training cohort and clinical outcomes.],
-    [The case is preprint-tier: both the medRxiv preprint and the PMC published version are citable. What additional confirmatory evidence — replication in different country sets, L3 / L4 follow-up studies, peer-reviewed meta-analysis — would you require before treating modality equivalence as a settled question for program-design decisions?],
-  ),
-  courses: ("LEN 2", "LEN 4", "LEN 7"),
-)
-
-#case(
-  number: 48,
+  number: 71,
   slug: "reflective-practice-on-a-work-based",
   title: "Reflective Practice on a Work-Based Software Engineering Program — Longitudinal Capability Development",
   year: "2025 (preprint)",
@@ -2776,8 +1173,9 @@
   courses: ("LEN 2", "LEN 7", "LEN 8"),
 )
 
+// ---- Case 72 — assistments-national-replication-and ----
 #case(
-  number: 49,
+  number: 72,
   slug: "assistments-national-replication-and",
   title: "ASSISTments — National Replication and Long-Term Follow-Through",
   year: "2014 – present",
@@ -2806,7 +1204,7 @@
     EdTech tools in the corpus with replicated multi-state RCT
     evidence at meaningful effect sizes and with deliberate
     attention to the heterogeneity that matters most for
-    equity outcomes. Pair with Case 45 (spaced education
+    equity outcomes. Pair with Case 17 (spaced education
     RCTs) for the replication-discipline thread. Open questions
     the authors carry: whether the virtual-training adaptation
     matches the in-person-training arm; whether the effect
@@ -2848,7 +1246,7 @@
       equity-relevant. Effect-size estimates were largest for
       lower-performing students, and minority students benefited
       more from the intervention than the average effect would
-      suggest. The pattern is the one Case 157 (Engler /
+      suggest. The pattern is the one Case 55 (Engler /
       enrollment algorithms) names as the inversion target:
       prediction and adaptive feedback used to trigger support
       rather than to gatekeep aid. The heterogeneity finding is
@@ -2880,11 +1278,11 @@
       arm's effect size is still under analysis. Whether the
       effect persists past grade 8 is the longer-horizon
       question that the corpus's evaluation-horizon discipline
-      (Case 127) directly applies to. Pair the case with Case
+      (Case 84) directly applies to. Pair the case with Case
       127 (Cognitive Tutor at-scale evaluation) for the
-      evaluation-horizon thread, with Case 45 (spaced education
+      evaluation-horizon thread, with Case 17 (spaced education
       RCTs) for the replication-discipline thread, and with
-      Case 157 (Engler enrollment algorithms) for the
+      Case 55 (Engler enrollment algorithms) for the
       prediction-triggers-support inversion — the equity-
       relevant heterogeneity finding here is the structural
       complement to Engler's gatekeeping critique.
@@ -2895,7 +1293,7 @@
     "Heterogeneity: largest gains for lower-performing students; minority students benefited more — pre-specified equity-relevant outcome",
     "Murphy et al. 2020: 7th-grade effect persisted into 8th-grade outcomes (longitudinal follow-through)",
     "Arnold Ventures extension: lower-cost virtual-training adaptation in rural areas, longitudinal through end of 8th grade",
-    "Pair with Case 127 (Cognitive Tutor horizon), Case 45 (spaced ed RCTs), Case 157 (Engler — equity-relevant inversion of gatekeeping)",
+    "Pair with Case 84 (Cognitive Tutor horizon), Case 17 (spaced ed RCTs), Case 55 (Engler — equity-relevant inversion of gatekeeping)",
   ),
   approaches: (
     during: (
@@ -2906,7 +1304,7 @@
     after: (
       [Publish the heterogeneity result with the aggregate result; the case's equity-relevant pedagogical value depends on the heterogeneity finding being on the same page as the average effect.],
       [Track the adaptation arm — the lower-cost virtual-training condition — as a separate replication; the closed-loop evidence architecture the case demonstrates includes adaptation-under-different-conditions as a distinct evidence layer.],
-      [Carry the case in syllabi alongside Case 127 so the evaluation-horizon discipline and the heterogeneity-pre-specification discipline are taught together; the two methodological lessons are independent and both load-bearing for EdTech-evaluation design.],
+      [Carry the case in syllabi alongside Case 84 so the evaluation-horizon discipline and the heterogeneity-pre-specification discipline are taught together; the two methodological lessons are independent and both load-bearing for EdTech-evaluation design.],
     ),
   ),
   references: (
@@ -2923,7 +1321,7 @@
     longitudinal follow-through into the next grade, adaptation
     arm under different deployment conditions, and a pre-specified
     equity-relevant heterogeneity finding. The case grounds the
-    closed-loop evaluation anchor in EdTech the same way Case 178
+    closed-loop evaluation anchor in EdTech the same way Case 40
     grounds it in team-science training.
   ],
   lens-approach: [
@@ -2932,9 +1330,9 @@
     (Iterative Development) for the teacher-side minimum-change
     design discipline and in Domain 4 (Test and Evaluation) for
     the heterogeneity-pre-specification and longitudinal-
-    follow-through structure. Pair with Case 127 (Cognitive
-    Tutor at-scale evaluation horizon), Case 45 (spaced
-    education RCTs), and Case 157 (Engler enrollment algorithms
+    follow-through structure. Pair with Case 84 (Cognitive
+    Tutor at-scale evaluation horizon), Case 17 (spaced
+    education RCTs), and Case 55 (Engler enrollment algorithms
     inversion — prediction-triggers-support).
   ],
   literature-items: (
@@ -2949,8 +1347,9 @@
   courses: ("LEN 2", "LEN 3", "LEN 7"),
 )
 
+// ---- Case 73 — doer-effect-at-scale-replication-ai ----
 #case(
-  number: 50,
+  number: 73,
   slug: "doer-effect-at-scale-replication-ai",
   title: "The Doer Effect at Scale — Replication, AI-Generated Questions, Non-WEIRD Extension",
   year: "2016 – 2025",
@@ -2978,8 +1377,8 @@
     via basic mobile phones, and reported that the doer-effect
     relationship was weaker for learners with higher prior
     educational attainment — the load-bearing heterogeneity
-    finding the corpus most needs. The case sits with Case 40
-    (Duolingo half-life) and Case 45 (spaced education RCTs)
+    finding the corpus most needs. The case sits with Case 69
+    (Duolingo half-life) and Case 17 (spaced education RCTs)
     as the replication-arc thread. The closed loop is closed
     not by a single trial but by replication; the effect
     generalizes but not uniformly, and the heterogeneity is
@@ -3051,8 +1450,8 @@
       collapsing them.#cn()
     ],
     [
-      The case anchors with Case 40 (Duolingo half-life) and
-      Case 45 (spaced education RCTs) as the replication-arc
+      The case anchors with Case 69 (Duolingo half-life) and
+      Case 17 (spaced education RCTs) as the replication-arc
       thread. All three demonstrate the closed-loop discipline
       at field scale: a design principle established as a single
       result, replicated across contexts, and surfaced as
@@ -3071,7 +1470,7 @@
     "Van Campenhout et al. LAK 2023: seven-course replication with 15.2M data points — effect holds in direction and magnitude",
     "L@S 2025 replication: AI-generated practice questions — effect still holds; meaningful given LLM-generated content rising",
     "Butler et al. LAK 2025 non-WEIRD: radio-lecture + mobile-phone practice — effect weaker for higher-prior-attainment learners (heterogeneity is the result)",
-    "Closed loop via replication, not single trial; pair with Case 40 (Duolingo half-life) and Case 45 (spaced ed RCTs)",
+    "Closed loop via replication, not single trial; pair with Case 69 (Duolingo half-life) and Case 17 (spaced ed RCTs)",
   ),
   approaches: (
     during: (
@@ -3082,7 +1481,7 @@
     after: (
       [Publish the heterogeneity as the result, not the adjusted-away noise; the non-WEIRD prior-attainment finding is what extends the principle's actionable scope and is the load-bearing pedagogical content of the case.],
       [Build the long-term-retention and cross-content-transfer studies the replication arc names as the next open questions; the closed loop the case completes is honest about what it does and does not close.],
-      [Carry the case in syllabi alongside Cases 40 and 45 so the replication-arc thread is taught as a thread, not as three independent examples; the closed-loop discipline at field scale is more visible across the three cases than within any one.],
+      [Carry the case in syllabi alongside Cases 69 and 17 so the replication-arc thread is taught as a thread, not as three independent examples; the closed-loop discipline at field scale is more visible across the three cases than within any one.],
     ),
   ),
   references: (
@@ -3100,7 +1499,7 @@
     WEIRD-modality extension — four converging pieces of evidence
     with the prior-attainment heterogeneity finding as the load-
     bearing result. The case completes the replication-arc thread
-    alongside Cases 40 and 45.
+    alongside Cases 69 and 17.
   ],
   lens-approach: [
     Doer-effect replication arc is the closed-loop-by-
@@ -3108,8 +1507,8 @@
     in Domain 2 (Iterative Development) for the replication-
     arc discipline and in Domain 4 (Test and Evaluation) for
     the cross-population generalization-with-heterogeneity
-    structure. Pair with Case 40 (Duolingo half-life) and
-    Case 45 (spaced education RCTs) — the replication-arc
+    structure. Pair with Case 69 (Duolingo half-life) and
+    Case 17 (spaced education RCTs) — the replication-arc
     thread teaches the closed-loop discipline at field scale.
   ],
   literature-items: (
@@ -3124,8 +1523,9 @@
   courses: ("LEN 2", "LEN 3", "LEN 7"),
 )
 
+// ---- Case 74 — zhang-scardamalia-knowledge-building ----
 #case(
-  number: 51,
+  number: 74,
   slug: "zhang-scardamalia-knowledge-building",
   title: "Zhang/Scardamalia — Knowledge Building Across Three Cohorts",
   year: "2009",
@@ -3156,7 +1556,7 @@
     and to teachers without knowledge-building expertise is open.
     The case is the classroom-scale longitudinal counterpart in
     the small-tier evidence base; the LE Lens uses it as the JLS-
-    anchored small-tier complement to v1 Case 38.
+    anchored small-tier complement to v1 Case 67.
   ],
   sections: (
     [
@@ -3227,14 +1627,14 @@
     [
       The case sits as the classroom-scale longitudinal
       counterpart in the small-tier evidence base. Pair with
-      Case 178 (Colorado CTSA team science) for the
+      Case 40 (Colorado CTSA team science) for the
       collaboration-measurement thread at a different scale and
       domain; with Case 77 (Hybrid Human-AI Tutoring) for the
-      small-tier deployment-success counterpart; with Case 115
-      and Case 128 (OU Analyse) for the distance-higher-education
+      small-tier deployment-success counterpart; with Case 81
+      and Case 85 (OU Analyse) for the distance-higher-education
       governance frame at a different population. The LE Lens
       uses the case as the JLS-anchored small-tier complement to
-      v1 Case 38 (Cognitive Tutor's single-site arc); the two
+      v1 Case 67 (Cognitive Tutor's single-site arc); the two
       cases together teach that the longitudinal classroom
       record is the substrate that learning-engineering
       iterations operate on, and that the iteration unit is the
@@ -3256,8 +1656,8 @@
     ),
     after: (
       [Carry the binding hedges into print without softening; the case's value to the corpus rests on its specificity, and the transferability questions are open and disclosable as open.],
-      [Pair with Case 178 (collaboration measurement at team-science scale) so the collaboration-as-design-target thread is taught at both the classroom and team scales.],
-      [Use the case as the JLS-anchored small-tier complement to v1 Case 38 (Cognitive Tutor's single-site arc); the cohort-as-iteration-unit lesson is the bridge between the classroom-design literature and the at-scale evaluation literature.],
+      [Pair with Case 40 (collaboration measurement at team-science scale) so the collaboration-as-design-target thread is taught at both the classroom and team scales.],
+      [Use the case as the JLS-anchored small-tier complement to v1 Case 67 (Cognitive Tutor's single-site arc); the cohort-as-iteration-unit lesson is the bridge between the classroom-design literature and the at-scale evaluation literature.],
     ),
   ),
   references: (
@@ -3284,12 +1684,12 @@
     LENS uses it in Domain 2 (Iterative Development) for the
     multi-cohort design-based-research discipline and in Domain 4
     (Test and Evaluation) for the depth-and-distribution paired
-    outcome measure. Pair with Case 178 (Colorado CTSA team
+    outcome measure. Pair with Case 40 (Colorado CTSA team
     science collaboration measurement), Case 77 (Hybrid Human-AI
-    Tutoring small-tier deployment), and Cases 115 and 128 (OU
+    Tutoring small-tier deployment), and Cases 81 and 85 (OU
     Analyse — distance higher-education governance at a different
     scale). The LE Lens uses it as the small-tier complement to
-    v1 Case 38 (Cognitive Tutor single-site arc).
+    v1 Case 67 (Cognitive Tutor single-site arc).
   ],
   literature-items: (
     [Zhang et al. (2009), _JLS_ — Knowledge Building three-cohort design study],
@@ -3304,8 +1704,9 @@
   courses: ("LEN 2", "LEN 3", "LEN 7"),
 )
 
+// ---- Case 75 — chen-rural-china-ai-devices ----
 #case(
-  number: 52,
+  number: 75,
   slug: "chen-rural-china-ai-devices",
   title: "Chen et al. — Rural China AI Devices and the Equity-Direction Finding",
   year: "2025",
@@ -3396,11 +1797,11 @@
     [
       The case's structural placement in the corpus is the
       equity-direction-finding case at the non-WEIRD deployment
-      seam. Pair with Case 133 (Gándara / community-college
+      seam. Pair with Case 86 (Gándara / community-college
       predictive equity in _AERA Open_) for the equity-direction
-      thread at the higher-education scale; with Case 135
+      thread at the higher-education scale; with Case 88
       (LiveHint AI bias across foundation models) for the bias-
-      surfacing thread in AI-supported instruction; with Case 50
+      surfacing thread in AI-supported instruction; with Case 73
       (Doer Effect non-WEIRD radio-and-phone extension) for the
       non-WEIRD methodological discipline at the heterogeneity-
       finding axis. The first-author-from-deployment-country
@@ -3439,7 +1840,7 @@
     "Rural experimental classes +17.93% math, +13.46% history; urban experimental classes +10.96% math, +9.55% history",
     "Equity-direction finding: rural gain exceeds urban gain across both subjects — the load-bearing teaching point",
     "Load-bearing hedges in prose: 3-month horizon, 12 schools, non-randomized assignment, self-report and observation bias acknowledged",
-    "First-author-from-deployment-country structure; pair with Cases 133 (Gándara), 187 (LiveHint bias), 186 (Doer Effect non-WEIRD)",
+    "First-author-from-deployment-country structure; pair with Cases 86 (Gándara), 187 (LiveHint bias), 186 (Doer Effect non-WEIRD)",
   ),
   approaches: (
     during: (
@@ -3449,15 +1850,15 @@
     ),
     after: (
       [Commission the longer-horizon and larger-sample replication the three-month 12-school study cannot perform; the equity-direction finding's persistence past three months and across more schools is the validation question the case names.],
-      [Pair the case in syllabi with Case 133 (Gándara community-college equity) and Case 50 (Doer Effect non-WEIRD extension) so the equity-direction reading is taught across deployment scales and population settings.],
+      [Pair the case in syllabi with Case 86 (Gándara community-college equity) and Case 73 (Doer Effect non-WEIRD extension) so the equity-direction reading is taught across deployment scales and population settings.],
       [Use the case to anchor the CLO on fairness beyond omission with a rare published equity-direction finding; the corpus needs equity-narrowing results as visible as equity-widening ones, and the methodological discipline that lets the result be reported credibly is the curricular target.],
     ),
   ),
   references: (
     [Chen, R., Wu, Y., Chen, Z., & Zhou, P. (2025), "Advancing educational equity in rural China: the impact of AI devices on teaching quality and learning outcomes for sustainable development," _Frontiers in Psychology_ 16:1588047, doi:10.3389/fpsyg.2025.1588047.],
-    [Paired Case 133 (Gándara et al., _AERA Open_) — community-college predictive equity at the higher-education scale.],
-    [Paired Case 135 (LiveHint AI bias across foundation models, AIED 2025) — bias-surfacing in AI-supported instruction.],
-    [Paired Case 50 (Doer Effect non-WEIRD LAK 2025 radio-and-phone extension) — non-WEIRD methodological discipline at the heterogeneity-finding axis.],
+    [Paired Case 86 (Gándara et al., _AERA Open_) — community-college predictive equity at the higher-education scale.],
+    [Paired Case 88 (LiveHint AI bias across foundation models, AIED 2025) — bias-surfacing in AI-supported instruction.],
+    [Paired Case 73 (Doer Effect non-WEIRD LAK 2025 radio-and-phone extension) — non-WEIRD methodological discipline at the heterogeneity-finding axis.],
   ),
   quote: [Rural experimental classes gained 17.93 percent on mathematics and 13.46 percent on history; urban experimental classes gained 10.96 percent on mathematics and 9.55 percent on history. The rural gain exceeded the urban gain across both subjects — and the load-bearing hedges are three-month horizon, twelve schools, non-randomized assignment, self-report and observation bias acknowledged by the authors.],
   quote-source: "Editors' synthesis of Chen, Wu, Chen, & Zhou (2025).",
@@ -3479,17 +1880,17 @@
     (Iterative Development) for the deployment-on-a-defined-
     horizon discipline and in Domain 5 (Navigating Sociotechnical
     Constraints) for the equity-direction reading that anchors
-    the fairness-beyond-omission CLO. Pair with Case 133
-    (Gándara community-college predictive equity), Case 135
-    (LiveHint AI bias across foundation models), and Case 50
+    the fairness-beyond-omission CLO. Pair with Case 86
+    (Gándara community-college predictive equity), Case 88
+    (LiveHint AI bias across foundation models), and Case 73
     (Doer Effect non-WEIRD radio-and-phone extension). The
     case's pedagogical value depends on the four binding
     hedges traveling with the result into print.
   ],
   literature-items: (
     [Chen et al. (2025), _Frontiers in Psychology_ — rural China AI devices],
-    [Paired Cases 133 (Gándara) and 186 (Doer Effect non-WEIRD)],
-    [Paired Case 135 (LiveHint AI bias)],
+    [Paired Cases 86 (Gándara) and 186 (Doer Effect non-WEIRD)],
+    [Paired Case 88 (LiveHint AI bias)],
   ),
   reflection-list: (
     [Identify a deployment in your domain whose equity-direction finding — narrowing or widening a between-setting gap — has not been pre-specified as a primary outcome. What would the pre-specification require, and what data infrastructure would support it?],
@@ -3499,8 +1900,9 @@
   courses: ("LEN 3", "LEN 7", "LEN 8"),
 )
 
+// ---- Case 76 — multimodal-learning-analytics-in-the ----
 #case(
-  number: 53,
+  number: 76,
   slug: "multimodal-learning-analytics-in-the",
   title: "Multimodal Learning Analytics In-the-Wild — A First-Person Lessons-Learned Account",
   year: "2023",
@@ -3663,7 +2065,7 @@
     reflective-narration-of-design-iteration discipline and in
     Domain 4 (Test and Evaluation) for the evidence-tier
     discipline binding the preprint-tier framing to the genre's
-    pedagogical role. Pair with Cases 81 and 39 (CIRCUIT
+    pedagogical role. Pair with Cases 78 and 68 (CIRCUIT
     workforce-and-capability layer) and Case 77 (hybrid human-
     AI tutoring design-iteration layer). Preprint-tier flag
     binding under the title.
@@ -3679,4 +2081,3330 @@
     [The case is offered as a published-first-person Practice Flywheel exemplar. Identify a practitioner in your domain whose operational knowledge you would commission a first-person account from. What would the commissioning structure look like, and what would the account contain that the published-results papers do not?],
   ),
   courses: ("LEN 2", "LEN 5", "LEN 7"),
+)
+
+// ---- Case 77 — hybrid-human-ai-tutoring-augmentation ----
+#case(
+  number: 77,
+  slug: "hybrid-human-ai-tutoring-augmentation",
+  title: "Hybrid Human-AI Tutoring — Augmentation, Not Delegation",
+  year: "2024",
+  domains-list: ("tutoring", "hybrid human-AI systems", "K-12 education"),
+  modes-code: "TKD",
+  impact: "Three quasi-experimental studies of hybrid human-AI tutoring deployments reported improvements in student learning relative to comparison conditions; the AI is positioned as augmentation, not delegation; the human tutor retains authorization to override and re-direct",
+  kind: "intervention",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "6.4",
+  lens-anchor: "D3/PT6",
+  clo-anchor: "CLO-2, CLO-3",
+  summary: [
+    Thomas et al.'s LAK 2024 best paper, "Improving Student
+    Learning with Hybrid Human-AI Tutoring: A Three-Study
+    Quasi-Experimental Investigation," reports three quasi-
+    experimental studies of hybrid deployments where AI
+    augmentation is added to human tutoring rather than used to
+    replace it. The headline finding is that learning outcomes
+    improved relative to comparison conditions in each of the
+    three studies. The contribution the case carries for the
+    LENS framework is the design positioning: the AI is
+    augmentation, the human tutor retains the authorization to
+    override and re-direct, and the measured outcome is student
+    learning rather than AI-system fidelity. The case is the
+    small-tier intervention-side counterpart to Case 20 (TREWS,
+    the clinician-AI teaming case that worked) translated into
+    education. Pair also with Cases 78 and 68 (CIRCUIT human-
+    AI workforce) and Case 5 (Epic Sepsis, the delegation
+    case that did not work). Open questions: longitudinal
+    persistence; transfer to lower-resource tutoring contexts
+    where human-tutor availability is the binding constraint.
+  ],
+  sections: (
+    [
+      The deployment record for AI in tutoring has been pulled
+      in two directions. The fully-automated tutoring track —
+      from Cognitive Tutor through LLM-based tutoring (Case 88)
+      — has tested whether AI alone can replace or substantially
+      reduce the human-tutor role. The augmentation track has
+      tested whether AI can extend the reach and effectiveness
+      of human tutors, with the AI positioned as a tool the
+      tutor uses rather than as a substitute for the tutor.
+      Thomas et al.'s LAK 2024 paper is the strongest published
+      evaluation of the augmentation track to date, and it
+      reports three quasi-experimental studies that converge on
+      a positive finding.#cn()
+    ],
+    [
+      The three studies test variants of the augmentation
+      pattern in K-12 tutoring deployments. The AI supports the
+      human tutor with information surfacing, problem
+      recommendation, and student-progress visibility; the human
+      tutor retains the conversational and pedagogical lead.
+      Outcome measures are student learning relative to
+      comparison conditions — control conditions that vary by
+      study but consistently anchor against either tutor-only
+      or AI-only baselines. Across the three studies, the
+      hybrid condition produced measurable improvements in
+      student learning. The replication structure across the
+      three studies — same authorship team, varying institutional
+      context, converging direction of effect — is the
+      methodological backbone of the case.#cn()
+    ],
+    [
+      The design positioning the case carries for the LENS
+      framework is the augmentation-not-delegation frame. The
+      AI is positioned as augmentation, the human tutor retains
+      the authorization to override and re-direct, and the
+      measured outcome is student learning, not AI-system
+      fidelity. This is the design pattern that worked in
+      clinical-decision-support at Case 20 (TREWS) and that
+      did not work at Case 5 (Epic Sepsis) — where TREWS
+      preserved clinician authorization and built the explanation
+      structure that supported it, the Epic Sepsis deployment
+      pattern collapsed clinician judgment into alert
+      compliance. Hybrid human-AI tutoring is the educational
+      analog of the TREWS pattern, and the LAK 2024 paper is
+      the evidence base that grounds the analog.#cn()
+    ],
+    [
+      The case anchors with the CIRCUIT pair (Cases 78 and
+      68) at the workforce-augmentation layer. CIRCUIT
+      proofreading positions human capability as the recovery
+      mechanism for automation failure at petabyte scale; the
+      CIRCUIT workforce model builds the capability in the
+      first place; hybrid human-AI tutoring positions AI as
+      augmentation of an already-capable human tutor. The three
+      cases together teach the augmentation-and-correction
+      pattern across three deployment substrates — connectomics
+      proofreading, neuroscience-workforce development, and
+      tutoring — and they ground the curriculum's machine-
+      teaming and delegation-with-revocation anchors at each
+      substrate.#cn()
+    ],
+    [
+      The open questions the case carries are the ones the
+      authors name. Longitudinal effect persistence is not yet
+      in the evidence base — the three quasi-experimental
+      studies report end-of-intervention outcomes, not
+      multi-year follow-through. Whether the design transfers
+      to lower-resource tutoring contexts, where human-tutor
+      availability is the binding constraint and the
+      augmentation-of-a-tutor frame may not apply, is the
+      open generalization question. The quasi-experimental
+      design is honest about its causal-inference limits —
+      randomization is not at the level a cluster RCT would
+      provide — and the case carries the qualification. Future
+      validation ongoing on persistence, transfer, and the
+      tutor-scarce-context generalization.
+    ],
+  ),
+  beats: (
+    "Thomas et al. LAK 2024 best paper: three quasi-experimental studies of hybrid human-AI tutoring",
+    "Headline: learning outcomes improved relative to comparison conditions in each of the three studies",
+    "Design positioning: AI as augmentation, human tutor retains override authorization, measured outcome is student learning",
+    "Educational analog of Case 20 (TREWS clinician-AI teaming); contrast with Case 5 (Epic Sepsis delegation collapse)",
+    "Open: longitudinal persistence; transfer to lower-resource tutoring where human-tutor availability is the binding constraint",
+  ),
+  approaches: (
+    during: (
+      [Position the AI as augmentation explicitly in the design documentation, not implicitly in the deployment pattern; the augmentation-vs-delegation distinction is the load-bearing design choice and should be the named design choice.],
+      [Preserve human-tutor authorization to override and re-direct as a system-design requirement, not as a discretionary affordance; the comparison with Case 5 (Epic Sepsis) is that override authorization collapses when the system pattern does not actively preserve it.],
+      [Measure the student-learning outcome, not the AI-system-fidelity outcome; the case's pedagogical framing depends on the outcome instrument being the educationally relevant one, not the AI-development-internal one.],
+    ),
+    after: (
+      [Commission longitudinal follow-through that extends the evidence base past the end-of-intervention horizon; the open persistence question is testable against the same deployment with additional data infrastructure.],
+      [Test the augmentation design in tutor-scarce contexts; the open generalization question is whether the pattern transfers to settings where the binding constraint is human-tutor availability rather than human-tutor effectiveness.],
+      [Pair the case with Case 20 (TREWS) in the curriculum so the augmentation-and-override pattern is taught across clinical and educational substrates; the two cases together ground the delegation-with-revocation CLO with two converging instances.],
+    ),
+  ),
+  references: (
+    [Thomas, D. R. et al. (2024), "Improving Student Learning with Hybrid Human-AI Tutoring: A Three-Study Quasi-Experimental Investigation," _LAK '24_, doi:10.1145/3636555.3636896.],
+    [Case 20 (TREWS) reference set — Henry et al. (2022), _Nature Medicine_ — clinician-AI teaming analog.],
+    [Case 5 (Epic Sepsis) reference set — Wong et al. (2021), _JAMA Internal Medicine_ — delegation-collapse analog.],
+    [Koedinger, K. R. et al. — Cognitive Tutor literature as the fully-automated track the augmentation track contrasts with.],
+  ),
+  quote: [The AI is positioned as augmentation, not delegation. The human tutor retains the authorization to override and re-direct. The measured outcome is student learning, not AI-system fidelity.],
+  quote-source: "Editors' synthesis of Thomas et al. (2024).",
+  le-insight: [
+    Hybrid human-AI tutoring is the educational analog of the
+    TREWS clinician-AI teaming pattern. AI is positioned as
+    augmentation; human tutor retains override authorization;
+    student-learning outcome is the measure. Three quasi-
+    experimental studies converge on positive learning effects.
+    The case pairs with Cases 20 / 101 / 118 / 119 in the
+    human-AI teaming thread and grounds the delegation-with-
+    revocation CLO at the educational deployment.
+  ],
+  lens-approach: [
+    Hybrid human-AI tutoring is the augmentation-not-delegation
+    case in education (induced 6.4; LENS D3/PT6). LENS uses it
+    in Domain 3 (Human-System Collaboration) for the
+    augmentation pattern and the override-authorization frame,
+    and in Domain 2 (Iterative Development) for the three-study
+    converging-design replication. Pair with Cases 20 (TREWS)
+    and 102 (Epic Sepsis) at the clinical analog, and with
+    Cases 78 and 68 (CIRCUIT) at the workforce-augmentation
+    analog.
+  ],
+  literature-items: (
+    [Thomas et al. (2024), _LAK_ — hybrid human-AI tutoring three-study],
+    [Henry et al. (2022), _Nature Medicine_ — TREWS analog],
+    [Wong et al. (2021), _JAMA Internal Medicine_ — Epic Sepsis contrast],
+  ),
+  reflection-list: (
+    [Identify an AI deployment in your domain where the design choice between augmentation and delegation has been implicit rather than explicit. What would change in the system design if the choice were named explicitly, and what comparison condition would you build to test the difference?],
+    [Specify the override-authorization preservation mechanism in your domain's analog deployment. Is the human operator's authority to override and re-direct a system-design requirement, a discretionary affordance, or an implicit assumption? Which of the three is honest about what the system currently supports?],
+  ),
+  courses: ("LEN 2", "LEN 5", "LEN 7"),
+)
+
+// ---- Case 78 — circuit-microns-the-human-correction ----
+#case(
+  number: 78,
+  slug: "circuit-microns-the-human-correction",
+  title: "CIRCUIT / MICrONS — The Human Correction Layer at Petabyte Scale",
+  year: "2017 – present",
+  domains-list: ("neuroscience/connectomics", "human-AI teaming", "workforce training"),
+  modes-code: "HKN",
+  impact: "Under IARPA's MICrONS program, automated electron-microscopy segmentation produces brain maps too large and too error-prone to deploy without human correction; CIRCUIT trains undergraduate cohorts as the proofreading workforce that is the recovery mechanism for automation failure at petabyte scale",
+  kind: "frontier",
+  scale: "small",
+  evidence-source: "program-report",
+  evidence-flag: "internal-pm",
+  induced-anchor: "3.4",
+  lens-anchor: "D3/PT6",
+  clo-anchor: "CLO-4, CLO-3",
+  coi: "An editor of this volume has research adjacency to connectomics programs discussed in this case and the case originates at the editors' home institution (Johns Hopkins / APL). The connectomics method and infrastructure are anchored to peer-reviewed work; the program training-outcome evidence is institutional documentation rather than independent peer-reviewed evaluation, and that gap is rendered as the evidence-tier flag above.",
+  summary: [
+    Under IARPA's Machine Intelligence from Cortical Networks (MICrONS)
+    program, automated electron-microscopy segmentation produces
+    petabyte-scale brain maps that are too large and too error-prone
+    to be deployed without human verification. APL's CIRCUIT program
+    trains cohorts of undergraduates to proofread and correct these
+    maps; APL's BossDB stores and serves the petabyte-scale data. The
+    learning-engineering content the case carries is the
+    human-in-the-loop correction layer: where automation fails at the
+    petabyte boundary, a trained human capability is the recovery
+    mechanism that makes the data scientifically usable. The honest
+    evidentiary state — preserved as the evidence-tier flag rendered
+    under the title — is that the connectomics method and
+    infrastructure are documented in the peer-reviewed literature,
+    but CIRCUIT's program training outcomes (did the cohorts reliably
+    produce proofreading capability, at what error rates, with what
+    retention, with what transfer to other tasks) sit in institutional
+    documentation rather than peer-reviewed program evaluation. The
+    case is included as a frontier — the structural pattern is the
+    increasingly central question of how to design a human correction
+    layer for generative and automated systems at scale, and future
+    validation will continue as the program-evaluation literature
+    builds out. The COI render under the title is binding: home
+    institution, research adjacency, evidence-tier flag, all visible
+    at the point of reading.
+  ],
+  sections: (
+    [
+      Connectomics — the reconstruction of detailed wiring diagrams
+      of brain tissue from electron-microscopy imaging — is the
+      modern incarnation of a problem with the same structural shape
+      as the early radiology-AI cases (Case 35): automation produces
+      a primary output at scale that no human team could produce
+      manually, and the output is too important and too error-prone
+      to be deployed without verification. The MICrONS program,
+      funded by IARPA, set out to produce reconstructions of cortical
+      microcircuits at the volume scale required to make
+      computational neuroscience comparisons possible.#cn()
+    ],
+    [
+      The automation produces petabytes of data. Automated
+      segmentation labels each voxel with the neuron it belongs to,
+      but at petabyte scale the per-voxel error rate, however low,
+      compounds into a reconstruction that contains many incorrect
+      neuron boundaries — exactly the boundaries the downstream
+      science depends on. The structural form is familiar: the model
+      is good enough to make the project tractable, and not good
+      enough to deploy without a verification layer. The verification
+      layer in this case is human: trained proofreaders work through
+      the segmentation and correct it, neuron by neuron, with tools
+      designed for the task.#cn()
+    ],
+    [
+      The CIRCUIT program at APL trained cohorts of undergraduates
+      to be that proofreading workforce. The program is documented
+      across institutional news, program description, and the
+      MICrONS program literature; CIRCUIT trainees and APL
+      infrastructure (BossDB) together produced the human and
+      computational substrate of the verification layer. The
+      learning-engineering content is the human capability as the
+      recovery mechanism for automation failure at the petabyte
+      boundary: where the model fails, the trained human is the
+      design decision that makes the system's output usable.#cn()
+    ],
+    [
+      The honest evidentiary state is what the evidence-tier flag
+      under the title encodes. The connectomics method, the
+      automated-segmentation literature, and the BossDB
+      infrastructure are documented in peer-reviewed connectomics
+      publications. CIRCUIT's program *training outcomes* — did
+      the cohorts reliably produce proofreading capability at the
+      error rates and retention required, did the trainees
+      transfer to other tasks, what is the program's measured
+      effect on the downstream science — are documented in
+      institutional news and program description rather than in
+      peer-reviewed program evaluation. The case is teachable on
+      the structural pattern; the operating outcomes are at the
+      institutional-program-management tier and should be read at
+      that tier. The COI under the title — research adjacency,
+      home institution — makes the institutional-tier evidence
+      claim auditable.#cn()
+    ],
+    [
+      The frontier note the case carries is the most forward-looking
+      idea from the pass-4 sweep. The human correction layer for
+      generative and automated systems at scale is going to be a
+      defining capability across an expanding number of domains —
+      automated transcription, AI-generated code, model-extracted
+      structured data, document segmentation, scientific imaging
+      reconstruction. CIRCUIT is one instance of the pattern in
+      neuroscience; the structural question — how to design,
+      staff, train, and govern a human correction layer for the
+      gap between what models produce and what is operationally
+      usable — recurs and is not well-named in the existing
+      curriculum. The frontier flag on this case is the case-grounded
+      basis for proposing a sub-competency in this area, pairing
+      with the broader v2 AI-delegation typology and the Domain 5
+      *Delegation with revocation* CLO.#cn()
+    ],
+  ),
+  beats: (
+    "Automated EM segmentation at petabyte scale produces brain maps too large and too error-prone to deploy without verification",
+    "CIRCUIT trains undergraduate cohorts as the proofreading workforce; APL's BossDB infrastructure stores and serves the data",
+    "Human capability as the recovery mechanism for automation failure at the petabyte boundary — the design decision that makes the output usable",
+    "Evidence-tier flag: connectomics method is peer-reviewed; CIRCUIT training-outcome evidence is institutional/program documentation",
+    "Frontier sub-competency candidate: design of the human correction layer for generative/automated systems at scale",
+  ),
+  approaches: (
+    during: (
+      [Treat the human correction layer as a designed capability deliverable, not an emergent workforce: define the error rate to achieve, the verification protocol, the trainee qualification, and the tooling.],
+      [Identify in advance which errors the automation will make at scale and design the correction tooling around those error classes — automation failure is structured, and the correction layer should be too.],
+      [Carry the evidence-tier honesty: peer-reviewed sourcing for the method and infrastructure, institutional-program documentation for the program training outcomes, with the gap visible in the case rather than smoothed.],
+    ),
+    after: (
+      [Commission peer-reviewed program-evaluation work on the training-outcome side so the institutional record can converge toward independent evidence over time, while the program is operating.],
+      [Track the human correction layer across automation upgrades: as the model improves, what changes about the kind of correction the trainees do, the error classes, the qualification requirements?],
+      [Carry the frontier note into the curriculum conversation: the design of the human correction layer for generative and automated systems at scale is a sub-competency the existing framework does not yet name, and CIRCUIT is one of several emerging instances.],
+    ),
+  ),
+  references: (
+    [MICrONS program literature (IARPA) — connectomics method and automated segmentation evidence base.],
+    [APL BossDB documentation — petabyte-scale connectomics data infrastructure.],
+    [CIRCUIT program documentation (JHU Hub, 2017 – present) — institutional/program description; the training-outcome evidence is at this tier and the evidence-tier flag is binding.],
+    [Cervantes et al. (2023), ASEE Annual Conference — the paired peer-reviewed CIRCUIT case (Case 68).],
+    [Wachter & Brynjolfsson (2023), _JAMA_ — generative AI verification framing, applicable across domains.],
+  ),
+  quote: [The recovery mechanism for automation failure is a designed human capability, not an emergent workforce.],
+  quote-source: "Editors' synthesis of the CIRCUIT / MICrONS program record.",
+  le-insight: [
+    CIRCUIT / MICrONS is the frontier instance of designing the
+    human correction layer for automated systems at scale. The
+    connectomics method is peer-reviewed; the program training
+    outcomes are institutional documentation, and the gap is
+    rendered as the evidence-tier flag under the title. The
+    forward-looking question the case names — how to design the
+    human correction layer for generative and automated systems
+    at scale — recurs across domains and is not well-named in
+    the existing curriculum.
+  ],
+  lens-approach: [
+    CIRCUIT proofreading is the human-correction-layer
+    frontier case (induced 3.4; LENS D3/PT6) — Domain 3 for
+    *Delegation with revocation*; Domain 4 for the evidence-
+    tier split. Pair with Case 68 and Cases 20, 5, 184,
+    3. COI binds.
+  ],
+  literature-items: (
+    [MICrONS program literature — connectomics method base],
+    [BossDB infrastructure documentation],
+    [CIRCUIT program documentation — institutional tier],
+  ),
+  reflection-list: (
+    [Identify a domain in your work where automation produces a primary output at a scale that exceeds manual review. What is the human correction layer's design — error classes targeted, verification protocol, trainee qualification, tooling — and which of these decisions are designed vs. emergent?],
+    [Specify the peer-reviewed vs. institutional-evidence split for a human-correction-layer program you would propose. The connectomics method can be cited from the literature; the program training outcomes will not be. What evidence tier is honest for each layer?],
+    [The case's frontier note — designing the human correction layer for generative/automated systems at scale — is a sub-competency the existing curriculum does not yet name. What instance from your domain (automated transcription, AI code, structured-data extraction, document segmentation) would be a paired case to anchor this sub-competency against?],
+  ),
+  courses: ("LEN 2", "LEN 5", "LEN 7"),
+)
+
+// ---- Case 79 — kirkpatrick-chain-of-evidence-where ----
+#case(
+  number: 79,
+  slug: "kirkpatrick-chain-of-evidence-where",
+  title: "The Kirkpatrick Chain of Evidence — Where Corporate L&D Stops",
+  year: "1959 – present",
+  domains-list: ("corporate L&D", "training evaluation", "workforce development"),
+  modes-code: "KN",
+  impact: "Across a US corporate-training market sized in the >\$125B/year range, the dominant evaluation framework structurally collapses: most teams stop at Levels 1–2 (reaction + learning) and never measure Level 3 (behavior change) or Level 4 (business results) — measuring the variable that flatters the program",
+  kind: "frontier",
+  scale: "big",
+  evidence-source: "practitioner",
+  evidence-flag: "practice-synthesis-tier",
+  induced-anchor: "2.1",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4",
+  summary: [
+    Donald Kirkpatrick's four-level model — Reaction, Learning,
+    Behavior, Results — has been the dominant corporate-training
+    evaluation framework for sixty years, increasingly described as a
+    "chain of evidence" from satisfaction through workplace behavior
+    change to business outcomes. The documented systemic pattern is
+    that most organizations stop at Levels 1 and 2. Level 3 (behavior
+    change on the job) and Level 4 (business results) require data
+    that the training organization typically cannot access:
+    longitudinal performance traces, business-unit outcome metrics,
+    line-manager observation. Satisfaction scores do not predict
+    on-job performance, and knowledge retention does not guarantee
+    workplace application. The case is the corporate-scale instance
+    of the enthusiasm-evidence gap and a direct illustration of the
+    revised "decision-grade evidence" framing in
+    the v2 research backbone: the evidence most L&D decisions ride on is
+    structurally sub-decision-grade. The evidence base is
+    practice-synthesis: Devlin Peck, D2L, Valamis, and related
+    evaluation-practice guides documenting the stop-at-L2 pattern,
+    plus the Blume meta-analysis (Case 65) for the transfer half of
+    the chain. The evidence-tier flag is rendered under the title;
+    future validation will continue as the corporate-L&D evaluation
+    literature consolidates.
+  ],
+  sections: (
+    [
+      In 1959 Donald Kirkpatrick proposed four levels at which a
+      training program could be evaluated: Reaction (did learners
+      like it), Learning (did they acquire the content), Behavior
+      (did they apply it on the job), and Results (did business
+      outcomes improve). The four levels became the dominant
+      corporate-training evaluation framework and were later
+      described as a "chain of evidence" — each level meant to
+      provide the evidence for the next.#cn()
+    ],
+    [
+      The documented systemic pattern in corporate L&D evaluation
+      practice is that most organizations stop at Levels 1 and 2.
+      Practice-literature synthesis across major evaluation-guidance
+      sources (Devlin Peck, D2L, Valamis, and corporate L&D
+      benchmarking studies) reports that Levels 3 and 4 are
+      attempted by a minority of programs and reported reliably by
+      fewer. The structural reason is that Level 3 (behavior change)
+      requires longitudinal observation that the training
+      organization cannot conduct, and Level 4 (results) requires
+      business outcome data that often sits outside L&D's reach.#cn()
+    ],
+    [
+      The consequence is a field that spends heavily on training —
+      US organizations reported >\$125B/year on workplace training,
+      per the ASTD figure cited in Blume et al. (Case 65) — while
+      measuring mostly the variable that flatters the program.
+      Satisfaction scores do not predict on-job performance;
+      knowledge retention measured immediately after training does
+      not guarantee workplace application. The chain of evidence is
+      cited as the framework; in practice the chain is broken at
+      the link between Level 2 and Level 3, and the decisions made
+      on the available data are not decisions about whether
+      training is producing capability change.#cn()
+    ],
+    [
+      The evidence-tier flag rendered under the case title is
+      load-bearing. The case is documented through
+      evaluation-practice guides synthesizing the stop-at-L2
+      pattern across many organizations rather than through a
+      single peer-reviewed study of the phenomenon. The pattern is
+      consistent across the sources and is the practitioner
+      consensus, but the magnitudes vary by sector and the
+      sectoral breakdown is in flux as the field consolidates its
+      evaluation evidence. Future validation will continue as the
+      empirical synthesis improves; the case is included with the
+      flag because the pattern itself is teachable and the
+      practitioner consensus is durable.#cn()
+    ],
+    [
+      What the case teaches in pair with Blume (Case 65) is the
+      structural form of the enthusiasm-evidence gap at corporate
+      scale, and it is the case-grounded basis for the revised
+      "decision-grade evidence" framing proposed in
+      the v2 research backbone. The capability deliverable is an
+      evaluation architecture that crosses the Level 2 / Level 3
+      seam — by partnering with line management for behavior
+      observation, by instrumenting the workplace tasks the
+      training targets, and by reporting honestly what evidence is
+      and is not available — rather than declaring the chain
+      satisfied at the Level the training organization can
+      control. Until that crossing happens, most corporate L&D
+      decisions are made on structurally sub-decision-grade
+      evidence, and the CLO *Judgment under inadequate
+      evidence* is exactly the capability the practitioner needs.#cn()
+    ],
+  ),
+  beats: (
+    "Kirkpatrick four levels (Reaction / Learning / Behavior / Results) — dominant framework for sixty years; framed as 'chain of evidence'",
+    "Practice-literature synthesis: most organizations stop at Levels 1–2; Levels 3 and 4 require data the training org typically can't access",
+    "US corporate-training market sized >\$125B/year per ASTD; measurement concentrated on variable that flatters the program",
+    "Evidence-tier flag: practice-synthesis, not single peer-reviewed study; pattern is consistent, magnitudes still consolidating",
+    "Capability deliverable is an evaluation architecture that crosses the Level-2/Level-3 seam; pair with Blume (Case 65) for transfer",
+  ),
+  approaches: (
+    during: (
+      [Design the evaluation across the Level-2/Level-3 seam before the training is delivered: partner with line management for behavior observation, identify the workplace tasks the training targets, and instrument them.],
+      [Specify in advance the on-job behavior and business outcome that would count as evidence the training worked, with a reporting cadence long enough for transfer effects to surface.],
+      [Treat the practice-synthesis evidence base honestly: name the pattern, flag the tier, and do not present a stop-at-L2 outcome as if it were a Level-3 or Level-4 finding.],
+    ),
+    after: (
+      [When Level 3 and Level 4 data are not available, say so plainly in the evaluation report rather than substituting Level 2 metrics; the CLO *Judgment under inadequate evidence* is what the practitioner needs to do well here.],
+      [Track the work environment as a separate variable — Blume's meta-analysis (Case 65) names it as decisive — and report the training outcome conditional on environment, not as a property of the training alone.],
+      [Use the structural pattern to argue for the evaluation architecture investment, not to abandon evaluation. The gap is a capability gap, not an argument against measurement.],
+    ),
+  ),
+  references: (
+    [Kirkpatrick (1959–1960), original four-level evaluation series in _Journal of the ASTD_; updated as Kirkpatrick & Kirkpatrick, _Evaluating Training Programs_ (3rd ed., 2006).],
+    [Devlin Peck, "Kirkpatrick Model: A Guide to the Four Levels of Training Evaluation" — synthesis of the stop-at-L2 pattern in corporate practice.],
+    [D2L, "Kirkpatrick's 4 Levels of Training Evaluation," practitioner guide documenting the same pattern.],
+    [Valamis, "Kirkpatrick Model" practitioner guide on evaluation-practice gaps.],
+    [Blume, Ford, Baldwin, & Huang (2010), "Transfer of Training: A Meta-Analytic Review," _Journal of Management_ 36(4):1065–1105 — the paired peer-reviewed case (113).],
+  ),
+  quote: [The chain of evidence is cited as a framework. In practice it breaks at the link between Level 2 and Level 3, and the decisions made on the available data are not decisions about capability.],
+  quote-source: "Editors' synthesis of the Kirkpatrick model and corporate L&D evaluation practice.",
+  le-insight: [
+    The Kirkpatrick stop-at-L2 pattern is the corporate-scale
+    instance of the enthusiasm-evidence gap and the direct
+    illustration of the revised "decision-grade evidence"
+    point: the evidence most L&D decisions ride on is
+    structurally sub-decision-grade. Evidence base is
+    practice-synthesis tier; the pattern is consistent across
+    sources, the magnitudes still consolidating; future
+    validation will continue.
+  ],
+  lens-approach: [
+    Kirkpatrick is the corporate-L&D evaluation case
+    (induced 2.1; LENS D4/PT5). LENS uses it in Domain 4
+    (Test and Evaluation) for the CLO *Judgment under
+    inadequate evidence* — the practitioner must decide well
+    on structurally sub-decision-grade evidence — and in
+    Domain 5 (Navigating Sociotechnical Constraints) for the
+    Level-2/Level-3 seam that the training organization
+    cannot cross alone. Direct pair with Case 65 (Blume
+    transfer meta-analysis) for the workplace-environment
+    half of the chain.
+  ],
+  literature-items: (
+    [Kirkpatrick & Kirkpatrick (2006), _Evaluating Training Programs_],
+    [Devlin Peck, D2L, Valamis practitioner guides — stop-at-L2 synthesis],
+    [Blume et al. (2010), _Journal of Management_ — the paired peer-reviewed case],
+  ),
+  reflection-list: (
+    [Identify a recent corporate training program in your organization. At which Kirkpatrick level did evaluation stop? What would the Level 3 and Level 4 measurement have required, and who would have had to provide the data?],
+    [Specify the evaluation architecture you would build to cross the Level-2/Level-3 seam: which on-job behavior, which business outcome, on what cadence, in partnership with which line-management role.],
+    [The case is practice-synthesis tier. What is the minimum peer-reviewed or program-evaluation evidence you would require before relying on the stop-at-L2 pattern to justify an evaluation-architecture investment in your context?],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 80 — georgia-state-university-predictive ----
+#case(
+  number: 80,
+  slug: "georgia-state-university-predictive",
+  title: "Georgia State University Predictive Analytics",
+  year: "2012 – present",
+  domains-list: ("education",),
+  modes-code: "TK",
+  impact: "Six-year graduation rate 32% → 54%; equity gaps in graduation eliminated; 2,000+ more graduates per year",
+  diagram: dgm.dgm-gsu,
+  kind: "intervention",
+  summary: [
+    Georgia State University built a predictive-analytics advising system
+    that tracks some 800 risk factors per student and triggers proactive
+    outreach when early warning signs appear. Crucially, it was designed
+    with equity as a primary constraint — the explicit goal was to
+    eliminate, not reproduce, graduation gaps — and the alerts prompt human
+    advisors rather than making automated decisions. The six-year
+    graduation rate rose from 32% to 54%; Black and Pell-eligible students
+    now graduate at the same rate as their peers, and GSU produces roughly
+    2,000 more graduates a year. The difference from the algorithmic-bias
+    cases (35–37) is design: GSU built equity in from the start, used
+    predictions to trigger more human support rather than gatekeeping, and
+    tracked outcomes by demographic group as a primary metric.
+  ],
+  sections: (
+    // -- Background --
+    [
+      Georgia State was a regional commuter university where only about a
+      third of students finished in six years, with large gaps by race and
+      income. Like many institutions it had predictive data but such
+      systems, where they existed elsewhere, were typically used for triage
+      or gatekeeping — risking the reproduction of existing inequities
+      rather than their repair. A model that flags at-risk students can just
+      as easily steer them away as toward help; the same prediction serves
+      opposite ends depending on what the institution decides to do with it.#cn()
+    ],
+    // -- The Intervention --
+    [
+      Beginning in 2012, GSU deployed a predictive-analytics advising
+      system that monitors roughly 800 behavioral and academic risk factors
+      per student daily and fires an alert to an advisor when warning signs
+      — a missed assignment, a poor grade in a gateway course — appear. The
+      system was built with equity as a primary design constraint, with the
+      explicit aim of closing graduation gaps. Daily monitoring meant the
+      alert fired while there was still time to act — a slipping student was
+      caught at the missed assignment rather than at the failed semester,
+      when intervention could still change the outcome.#cn()
+    ],
+    // -- How It Worked --
+    [
+      The load-bearing design choice was the human-loop architecture:
+      alerts trigger proactive advising — a phone call, a meeting, a
+      financial-aid check — rather than automated decisions. Predictions
+      are used to deliver more support to at-risk students, not to gatekeep
+      them out. Human judgment stays in the loop, and the model functions
+      as decision support rather than decision-maker. Routing every alert
+      through an advisor rather than an automated action is what kept the
+      prediction in service of the student: the model identified who needed
+      attention, and a person decided what that attention should be.#cn()
+    ],
+    // -- The Evidence --
+    [
+      GSU's six-year graduation rate rose from 32% to 54%, and the
+      institution now produces some 2,000 additional graduates a year. The
+      graduation rate for Black students rose to match the overall rate,
+      and Pell-eligible students graduate at the same rate as non-Pell
+      students — the equity gap was eliminated rather than merely narrowed.
+      Eliminating the gap rather than narrowing it is the decisive result:
+      the overall rate rose while the disparities by race and income closed,
+      so the gain did not come at the expense of the students the system was
+      most at risk of leaving behind.#cn()
+    ],
+    // -- What Transferred --
+    [
+      GSU is the positive counterpart to the algorithmic-harm failures
+      earlier in this part and in Part VII (the A-Level algorithm, Case 49;
+      Robodebt, Case 186; educational predictive bias, Case 46). The same technical
+      capability — a predictive model — produced an equity gain rather than
+      an equity harm because of how it was framed and governed. The case is
+      the strongest evidence that construct definition and human-loop
+      architecture, not the model itself, determine whether prediction
+      helps or harms. Holding the technology constant and varying only the
+      design constraint and governance is what isolates the lesson: the same
+      predictive capability that harmed in those cases helped here, so the
+      framing and the human loop, not the model, are where intent lives.#cn()
+    ],
+  ),
+  beats: (
+    "GSU graduated only a third of students in six years, with large race and income gaps",
+    "GSU deployed daily monitoring of 800 risk factors with equity as a primary design constraint",
+    "Alerts route through advisors as decision support, delivering proactive outreach rather than gatekeeping",
+    "Graduation rose 32 to 54 percent and the equity gap was eliminated rather than narrowed",
+    "Construct definition and human-loop architecture, not the model itself, determine whether prediction helps",
+  ),
+  references: (
+    [Renick, T. & Strom, A. (2020) on GSU's advising transformation — the system design and outcomes.],
+    [Georgia State University institutional research and Strategic Plan reports — graduation-rate and equity data.],
+    [_New York Times_, "How Colleges Know You're Not Finishing" (2018) — the 800-factor advising model.],
+    [EDUCAUSE Review on GSU predictive advising — the human-loop architecture.],
+    [Complete College America, Game Changers documentation — dissemination of the model.],
+  ),
+  quote: [Predictions trigger support, not gatekeeping.],
+  quote-source: "Editors' synthesis of the GSU advising model, drawn from Renick & Strom (2020) and New York Times coverage (2018)",
+  le-insight: [
+    GSU is the positive counterpart to A-Level (35), Robodebt (36), and
+    educational algorithmic bias (37). The same technical capability —
+    a predictive model — was deployed under a different design
+    constraint and produced an equity outcome rather than an equity
+    harm. The case is the strongest available evidence that the
+    *construct definition* and the *human-loop architecture* determine
+    whether a predictive model produces good or harm, not the model
+    itself.
+  ],
+  lens-approach: [
+    LENS treats GSU as the canonical positive case for predictive
+    analytics in education. LEN 4 examines the measurement architecture
+    that made equity a primary outcome. LEN 7 examines the governance
+    structure that kept the system as decision support rather than
+    automated decision. LEN 1 uses it as a problem-framing exemplar.
+  ],
+  literature-items: (
+    [Renick & Strom (2020) on GSU's advising transformation],
+    [Mayer-Schönberger & Cukier, _Learning with Big Data_ (2014)],
+    [Bowen, Chingos & McPherson, _Crossing the Finish Line_ (2009)],
+  ),
+  reflection-list: (
+    [What is the difference between GSU's predictive analytics and the algorithmic-bias failure cases in Parts II and VII (e.g., Cases 46, 49, 182, 186)? Be specific about what makes the GSU implementation work.],
+    [Design the equity-as-primary-constraint version of a predictive system in your domain. What would you measure first?],
+    [GSU used predictions to deliver more support rather than to gatekeep, with an advisor between the alert and the action. Identify a predictive system in your domain and specify the human-loop architecture that would keep it serving the people it flags rather than screening them out.],
+  ),
+  approaches: (
+    during: (
+      [Set equity as a primary design constraint from the start — the explicit aim of closing gaps — rather than discovering disparities after deployment.],
+      [Build a human-loop architecture so alerts trigger proactive support routed through an advisor, with the model as decision support and a person deciding the action.],
+      [Tune the monitoring to fire early — at the missed assignment, not the failed semester — so the intervention reaches the student while it can still change the outcome.],
+    ),
+    after: (
+      [Track outcomes by demographic group as a primary metric, so the system is judged on whether it closes gaps rather than merely raises the average.],
+      [Confirm the overall gain does not come at the expense of the most at-risk students — eliminating the gap, not just narrowing it, is the test that the design held.],
+      [Keep human judgment in the loop as the system scales, so prediction continues to deliver more support rather than drifting into automated gatekeeping.],
+    ),
+  ),
+  courses: ("LEN 1", "LEN 4", "LEN 7"),
+  scale: "big",
+  induced-anchor: "8.3",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4",
+)
+
+// ---- Case 81 — open-university-ethical-use-of-student ----
+#case(
+  number: 81,
+  slug: "open-university-ethical-use-of-student",
+  title: "Open University 'Ethical Use of Student Data' and OU Analyse",
+  year: "2014 – 2025",
+  domains-list: ("higher education (UK)", "learning analytics", "data governance"),
+  modes-code: "GKN",
+  impact: "The first institutional 'Ethical Use of Student Data' policy in higher education (2014); an eight-principle consent architecture co-designed with students that unblocked predictive analytics on hundreds of thousands of learners and supported documented intervention work",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "5.1",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4, CLO-5",
+  summary: [
+    Predictive learning analytics at the Open University faced a real
+    governance objection: large-scale processing of student data for
+    intervention, with pre-GDPR scrutiny and credible surveillance
+    concerns. The OU's response in 2014 was to author the first
+    institutional "Ethical Use of Student Data for Learning Analytics"
+    policy in higher education — eight principles built through wide
+    stakeholder consultation including students, framing students as
+    participants rather than data subjects. The consent-and-
+    transparency architecture was the enabling engineering, not a
+    compliance afterthought; the deployment followed because trust was
+    established first. OU Analyse — a weekly machine-learning at-risk
+    prediction system — operated on top of that architecture, and the
+    Analytics4Action framework (Rienties et al., _JIME_ 2016) paired
+    predictions with tutor judgment and documented interventions on
+    modules of 3,000+ students. A 2019 evaluation (Herodotou et al.,
+    _BJET_) across 559 teachers and 14,000+ students examined how
+    degree of system usage related to outcomes. The honest open question, raised by the OU's own
+    researchers, is whether predictive analytics genuinely serves
+    students versus surveils them — a tension that remains contested,
+    and the policy has since been superseded by a broader Data Ethics
+    Policy. Governance as a living artifact, not a solved problem.
+  ],
+  sections: (
+    [
+      The Open University runs higher education at distance scale —
+      cohorts of tens of thousands across a single module, with no
+      classroom signal that a student is falling behind. Predictive
+      learning analytics on the engagement and assessment trace can,
+      in principle, surface that signal in time for a tutor to act.
+      The governance objection in the early 2010s was not abstract:
+      the data volumes were large, the scrutiny pre-GDPR but
+      tightening, and the surveillance concern — that institutional
+      analytics treat students as objects rather than partners — was
+      credible enough that several universities had paused similar
+      programs.#cn()
+    ],
+    [
+      The OU's intervention in 2014 was to author the "Ethical Use of
+      Student Data for Learning Analytics" policy, the first such
+      policy in higher education. The development process was the
+      teaching point as much as the document was: wide stakeholder
+      consultation including the Students Union, eight principles
+      that framed students as participants in the analytics rather
+      than its subjects, and a published artifact the institution
+      could be held to. The policy was the *enabling engineering*
+      for analytics deployment, not a compliance overlay applied to
+      a deployment that was happening anyway.#cn()
+    ],
+    [
+      OU Analyse — a weekly machine-learning at-risk prediction system —
+      operated on top of that architecture. The Analytics4Action
+      framework (Herodotou et al., _JIME_ 2016) paired the prediction
+      with tutor judgment rather than treating the model output as a
+      decision: tutors reviewed flagged students, made the
+      intervention call, and documented what action they took. The
+      framework was evaluated on modules of more than 3,000 students.
+      A 2019 evaluation (Herodotou et al., _BJET_) across 559 teachers
+      and 14,000+ students examined how degree of teacher engagement
+      with the system
+      related to outcomes; the pattern was that engagement, not the
+      raw prediction, was what tracked with intervention success.#cn()
+    ],
+    [
+      The honest open question, raised by the OU's own researchers,
+      is whether predictive learning analytics genuinely serves
+      students versus surveils them. The OU's policy did not foreclose
+      that question; it made the deployment legible enough to argue
+      about, and it superseded the 2014 policy with a broader Data
+      Ethics Policy as practice and the scrutiny regime evolved.
+      Governance as a living artifact is the case. The capability
+      deliverable is not a final answer to the surveillance
+      question — there isn't one — but a consent-and-transparency
+      architecture that lets the institution decide and the students
+      participate in the deciding.#cn()
+    ],
+    [
+      What OU teaches in the pair (Cases 81 + 80) is the
+      governance-objection diagnostic: when the objection is about
+      trust and accountability — as it was at the OU — good
+      design can dissolve it, and the deployment can proceed under
+      a credibly co-authored consent architecture. The pair's
+      contrast case is the Dutch SyRI (Case 184), where the
+      governance objection was correct: the system was both
+      rights-violating and operationally ineffective, and the
+      District Court of The Hague stopped it on Article 8 ECHR
+      grounds. The diagnostic capability is to tell those two
+      situations apart before deployment, not after.
+    ],
+  ),
+  beats: (
+    "Predictive learning analytics at distance-scale; the governance objection is credible, not abstract",
+    "OU authors first higher-education 'Ethical Use of Student Data' policy in 2014 — eight principles, co-designed with students",
+    "OU Analyse operates on top of the consent architecture; Analytics4Action pairs predictions with tutor judgment",
+    "2019 evaluation (Herodotou et al., BJET): 559 teachers, 14,000+ students; teacher engagement, not raw prediction, is what tracks with success",
+    "Governance objection was about trust — dissolvable by design; pair with SyRI where the objection was correct",
+  ),
+  approaches: (
+    during: (
+      [Build the consent-and-transparency architecture as enabling engineering, not as compliance afterthought; the document is the artifact the deployment can be held to.],
+      [Co-author the policy with the people the analytics will be applied to — students or operators — including their voice in the principles before the system is built.],
+      [Pair predictions with human judgment by design: the prediction surfaces a candidate; the tutor or operator makes the decision and documents what they did.],
+    ),
+    after: (
+      [Evaluate the system on engagement and intervention quality, not adoption alone; engagement is what tracks with student outcome at the OU.],
+      [Treat the governance policy as a living artifact: when the scrutiny regime or practice evolves, supersede the policy openly rather than letting it fall into disuse.],
+      [Keep the open question — does this genuinely serve students or surveil them? — visible in the institutional record; the legitimacy of the program depends on the question staying askable.],
+    ),
+  ),
+  references: (
+    [Slade & Prinsloo (2013), "Learning Analytics: Ethical Issues and Dilemmas," _American Behavioral Scientist_ 57(10):1510–1529, doi:10.1177/0002764213479366.],
+    [Open University (2014), "Ethical Use of Student Data for Learning Analytics" — first institutional policy of its kind in higher education.],
+    [Rienties, Boroowa, Cross, Kubiak, Mayles, & Murphy (2016), "Analytics4Action Evaluation Framework: A Review of Evidence-Based Learning Analytics Interventions at the Open University UK," _Journal of Interactive Media in Education_ 2016(1):2, doi:10.5334/jime.394.],
+    [Herodotou, Hlosta, Boroowa, Rienties, Zdrahal, & Mangafa (2019), "Empowering online teachers through predictive learning analytics," _British Journal of Educational Technology_ 50(6):3064–3079, doi:10.1111/bjet.12853 — OU Analyse evaluation across 559 teachers (189 with OUA access) and 14,000+ students in 15 undergraduate courses; average-use teachers benefited students most.],
+  ),
+  quote: [The consent architecture is the enabling engineering. The deployment is what follows once trust is established.],
+  quote-source: "Editors' synthesis of the OU 2014 policy and Slade & Prinsloo (2013).",
+  le-insight: [
+    The Open University case is the cleanest instance in the
+    sweep of a governance objection dissolved by design. The
+    2014 ethical-use policy was the enabling engineering; OU
+    Analyse and Analytics4Action operated on top of it; the
+    2019 evaluation showed teacher engagement tracked with
+    intervention success. The open question — serve vs.
+    surveil — remains contested, and the policy is a living
+    artifact, not a solved problem.
+  ],
+  lens-approach: [
+    OU is the positive Domain 4 / Problem Type 5 stakeholder
+    governance case (induced 5.1; LENS D4/PT5). LENS uses it
+    in Domain 5 (Navigating Sociotechnical Constraints) for
+    the governance-objection diagnostic — the
+    dissolvable-objection side — and in Domain 4 (Test and
+    Evaluation) for the engagement-tracked-outcome evidence.
+    Direct pair with Case 184 (Dutch SyRI), where the
+    governance objection was correct and design could not
+    have dissolved it. Adjacent to Case 5 (Epic Sepsis
+    Model) as the inverse pattern: OU built consent before
+    deployment; Epic deployed without validation, and the
+    objection that should have been raised wasn't.
+  ],
+  literature-items: (
+    [Slade & Prinsloo (2013), _American Behavioral Scientist_],
+    [Herodotou et al. (2017), _JIME_ — Analytics4Action],
+    [Open University 2014 ethical-use policy],
+  ),
+  reflection-list: (
+    [Identify a deployment in your domain that faced a governance objection about trust and accountability. Was the objection dissolved by design — a consent or transparency architecture co-authored with the affected parties — or was it managed as compliance overlay? What did the difference cost?],
+    [Specify the engagement metric you would track, separately from adoption, to know whether your deployment is producing intervention quality. At the OU it was teacher engagement; what is the analog in your context?],
+    [The OU's open question — does predictive analytics genuinely serve students or surveil them — remains contested, and the policy has been superseded. What is the institutional discipline that keeps the question visible and the policy a living artifact rather than a one-time document?],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 82 — mmala-a-maturity-model-for-responsible ----
+#case(
+  number: 82,
+  slug: "mmala-a-maturity-model-for-responsible",
+  title: "MMALA — A Maturity Model for Responsible Learning-Analytics Adoption (Brazil)",
+  year: "2024",
+  domains-list: ("higher education (Brazil)", "learning analytics", "institutional governance"),
+  modes-code: "KN",
+  impact: "MMALA is a maturity model spanning infrastructure, human resources, ethics, and pedagogy; expert evaluation rated it comprehensive and suitable; three-institution validation exercise in Brazilian universities found it could outline essential practices and support self-assessment for scaling — instrument for responsible adoption, downstream learning outcome open",
+  kind: "intervention",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "5.4",
+  lens-anchor: "D4/PT4",
+  clo-anchor: "CLO-4, CLO-5",
+  summary: [
+    Freitas, Mello, Gasevic, Costa, and Andrade (_Journal of
+    Learning Analytics_, 2024) developed and validated MMALA — a
+    Maturity Model for Adopting Learning Analytics — designed to
+    let an institution self-assess its readiness across the four
+    dimensions responsible adoption actually depends on:
+    infrastructure (technical capability), human resources
+    (analytical and pedagogical staffing), ethics (governance and
+    consent architecture), and pedagogy (integration with learning
+    design). Experts evaluated the model as comprehensive and
+    suitable; a three-institution validation exercise at Brazilian
+    universities found that MMALA could outline essential practices
+    and support self-assessment for scaling learning analytics
+    responsibly. The case is one of the corpus's clearest worked
+    examples of governance-as-instrument: a structured artifact an
+    institution can use to convert the abstract goal "we should
+    adopt learning analytics responsibly" into specific
+    assessments of where its current capability sits and what it
+    has to build next. The honest limit preserved verbatim: the
+    instrument is validated by expert opinion and a
+    three-institution exercise, not by longitudinal outcomes of
+    institutions that used it to adopt LA — it is an instrument
+    for responsible adoption, with the downstream effect on
+    student learning still to be measured. The case pairs with the
+    OU policy (Case 81) and the LALA CANVAS (Case 91) as the
+    institutional-instrument layer of the non-US LA governance
+    set.
+  ],
+  sections: (
+    [
+      Institutional adoption of learning analytics typically
+      collapses into one of two patterns: a top-down deployment
+      that meets resistance because the institution is not yet
+      ready (governance is thin, staff are not analytically
+      trained, the pedagogical integration was not designed), or a
+      stalled aspiration where leadership wants responsible
+      adoption but does not have a structured way to know what
+      "ready" means. MMALA was built to address the second
+      pattern: to give an institution a structured self-assessment
+      instrument across the dimensions readiness actually has, so
+      the adoption decision becomes specific rather than
+      aspirational.#cn()
+    ],
+    [
+      The instrument is dimensional. Infrastructure asks whether
+      the technical capability — data pipelines, secure storage,
+      analytical platforms — is in place at the level the planned
+      adoption requires. Human resources asks whether the
+      institution has the analytical and pedagogical staffing the
+      tools will need. Ethics asks whether the governance and
+      consent architecture has been built. Pedagogy asks whether
+      the analytics integrate with the institution's learning
+      design, or whether they would be bolted on as a separate
+      track. Each dimension is resolved into maturity levels so
+      the self-assessment yields a structured picture of which
+      dimensions are ready and which are not, rather than a
+      single overall readiness score.#cn()
+    ],
+    [
+      The Freitas et al. validation has two halves. The first is
+      expert evaluation: subject-matter experts in learning
+      analytics, institutional research, and educational
+      technology evaluated the instrument as comprehensive
+      (covering the dimensions adoption actually depends on) and
+      suitable (resolved at the right level for institutional
+      self-assessment). The second is a three-institution
+      validation exercise at Brazilian universities, which found
+      that MMALA could outline essential practices and support
+      self-assessment for scaling. The instrument was usable in
+      practice and produced actionable structure for the
+      institutions that piloted it.#cn()
+    ],
+    [
+      The honest limit survives verbatim. MMALA is validated by
+      expert opinion and a three-institution exercise, not by
+      longitudinal outcomes of institutions that used it to adopt
+      LA. The instrument's claim is to be a suitable structure
+      for responsible adoption — what the published evidence
+      supports — and the downstream effect on student learning is
+      the next study, not this one. The case is teachable on the
+      instrument and the validation method; it is honest that the
+      causal chain from "institution adopted via MMALA" to
+      "students learned more" is not yet closed by evidence.#cn()
+    ],
+    [
+      In the non-US LA governance set — OU (Case 81, policy and
+      operating system), LALA (Case 91, participatory adoption
+      framework), African data privacy (Case 89, cross-regime
+      seam), Norway (Case 92, national commission), and MMALA
+      (this case, institutional maturity model) — the cases
+      together teach the level structure of governance for the
+      same underlying capability. MMALA's specific contribution
+      is the institutional-instrument layer: when a single
+      institution is the unit of adoption and the governance
+      artifact has to be usable by the institution itself, the
+      maturity model is the form. The pentad demonstrates that
+      governance is producible at multiple levels for the same
+      capability, and the choice of level is itself a
+      governance decision.
+    ],
+  ),
+  beats: (
+    "MMALA (Freitas et al. 2024, JLA): maturity model for adopting LA across infrastructure, human resources, ethics, pedagogy",
+    "Each dimension resolved into maturity levels — structured self-assessment, not a single overall readiness score",
+    "Validation: expert evaluation (comprehensive, suitable) + three-institution exercise at Brazilian universities (usable, actionable)",
+    "Honest limit: expert opinion + three-institution validation; not yet longitudinal outcomes of institutions that used MMALA to adopt LA",
+    "Institutional-instrument layer of the non-US LA governance set — pair with OU, LALA, Norway, African data privacy",
+  ),
+  approaches: (
+    during: (
+      [Resolve readiness into the dimensions adoption actually depends on — infrastructure, human resources, ethics, pedagogy — rather than a single overall score; the per-dimension structure is what makes the instrument actionable.],
+      [Build maturity levels within each dimension so the self-assessment yields a structured next-step picture rather than a binary ready / not-ready.],
+      [Validate the instrument in two layers: expert evaluation for comprehensiveness and suitability, and institutional pilot for usability — both are necessary, and the case carries both.],
+    ),
+    after: (
+      [Report the evidence at its tier: expert opinion and three-institution validation establish the instrument; longitudinal outcome evidence on institutions that used it is the next study, and the case names the gap rather than glossing it.],
+      [Commission follow-up studies on the institutions that pilot MMALA to convert the instrument-validation evidence into adoption-outcome evidence over time.],
+      [Carry the level-of-governance lesson into the broader v2 governance set: institutional-instrument, multi-country participatory, national commission, and judicial review are different governance modes for the same capability; MMALA is the institutional-instrument instance.],
+    ),
+  ),
+  references: (
+    [Freitas, Mello, Gasevic, Costa, & Andrade (2024), "MMALA: Developing and Evaluating a Maturity Model for Adopting Learning Analytics," _Journal of Learning Analytics_ 11(1):67–86.],
+    [Open University Ethical Use of Student Data policy (2014) — institutional-policy companion (Case 81).],
+    [Hilliger et al. (2020), _Internet and Higher Education_ — LALA participatory adoption companion (Case 91).],
+    [Norwegian Expert Commission on Learning Analytics, final NOU (2023) — national-scale companion (Case 92).],
+  ),
+  quote: [The instrument converts "we should adopt responsibly" into a structured per-dimension self-assessment. The instrument is validated; the downstream learning outcome is the next study.],
+  quote-source: "Editors' synthesis of Freitas et al. (2024).",
+  le-insight: [
+    MMALA is the institutional-instrument instance of governance
+    for learning-analytics adoption: a structured maturity model
+    across infrastructure, human resources, ethics, and
+    pedagogy. The validation evidence — expert evaluation and
+    three-institution pilot — is what the case claims; the
+    downstream effect on student learning is the next study, and
+    the case is honest about that gap.
+  ],
+  lens-approach: [
+    MMALA is the institutional-maturity-model case
+    (induced 5.4; LENS D4/PT4). LENS uses it in Domain 4 (Test
+    and Evaluation) for the structured self-assessment
+    instrument and the two-layer validation discipline; in
+    Domain 5 (Navigating Sociotechnical Constraints) for the
+    governance-as-instrument framing; and on the CLO *Judgment under inadequate evidence* for the
+    instrument-validation-vs-outcome-validation tier
+    distinction. Pair with Cases 81, 91, 89, 92 as the
+    non-US LA governance pentad; MMALA is the
+    institutional-instrument layer.
+  ],
+  literature-items: (
+    [Freitas et al. (2024), _Journal of Learning Analytics_],
+    [Open University Ethical Use of Student Data policy (2014)],
+    [Hilliger et al. (2020), _Internet and Higher Education_],
+  ),
+  reflection-list: (
+    [Identify a capability your institution is considering adopting where readiness is currently discussed as a single overall question. What are the dimensions readiness actually has, and what maturity levels within each dimension would yield a structured next-step picture rather than a binary judgment?],
+    [Specify the two-layer validation you would build for the instrument: expert evaluation for comprehensiveness and suitability, and institutional pilot for usability. Where would each layer be at risk of being skipped, and what would that skip cost the instrument's credibility?],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 83 — brinkerhoff-success-case-method-tails ----
+#case(
+  number: 83,
+  slug: "brinkerhoff-success-case-method-tails",
+  title: "Brinkerhoff Success Case Method — Tails as the Evaluation Instrument",
+  year: "2005 – present",
+  domains-list: ("corporate L&D", "training evaluation", "workforce development"),
+  modes-code: "KN",
+  impact: "When ROI-style evaluation of corporate training is intractable, Brinkerhoff's Success Case Method samples the tails of the outcome distribution — the highest- and lowest-impact participants — and reconstructs the system conditions that made the program work for some and fail for others; deployed at Cargill, Ford, Merck, World Bank, ICRC",
+  kind: "intervention",
+  scale: "small",
+  evidence-source: "practitioner",
+  evidence-flag: "practice-synthesis-tier",
+  induced-anchor: "2.1",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4, CLO-2",
+  summary: [
+    The Success Case Method (SCM), introduced by Robert Brinkerhoff
+    in 2005, deliberately samples the tails of a training program's
+    outcome distribution. Instead of attempting to derive an
+    average effect that flatters most programs and gives L&D
+    nothing actionable, SCM identifies the highest- and
+    lowest-impact participants, studies them in detail, and
+    reconstructs the system conditions that made the program work
+    for some and fail for others. The method's argument — and
+    the one that places it inside the LENS framework — is that
+    extreme cases reveal whether the program ever produces
+    meaningful work-performance change and what the surrounding
+    system has to provide for transfer to happen. The method is
+    peer-reviewed in *Advances in Developing Human Resources*;
+    the corporate deployments at Cargill, Ford, Merck, World
+    Bank, and the International Committee of the Red Cross are
+    documented in practitioner channels — case-study writeups,
+    conference talks, vendor whitepapers — rather than in
+    peer-reviewed evaluation literature. SCM is the operational
+    answer to the chain-of-evidence problem named in Case 79
+    (Kirkpatrick): the practitioner instrument that crosses the
+    Level-2 / Level-3 seam by sampling where the evidence is
+    most informative. Evidence-tier flag is practice-synthesis;
+    future validation will continue as more firms publish their
+    SCM outcome data.
+  ],
+  sections: (
+    [
+      Corporate L&D evaluation faces a structural problem the
+      Kirkpatrick chain-of-evidence pattern names (Case 79):
+      Level 3 (behavior change on the job) and Level 4 (business
+      results) require longitudinal data the training organization
+      typically cannot access. Average-effect statistics across
+      whole programs flatter most programs, because the
+      distribution of training outcomes is heavily skewed — a
+      minority of participants produce most of the
+      work-performance change, and the average buries that
+      signal under the participants for whom the program
+      produced nothing.#cn()
+    ],
+    [
+      Robert Brinkerhoff's 2005 *Advances in Developing Human
+      Resources* paper proposes a different sampling logic: do
+      not estimate the average; identify the participants in the
+      tails of the outcome distribution and study them in detail.
+      The Success Case Method identifies the highest-impact
+      participants (where did the program work, and what
+      conditions made the work-performance change possible), the
+      lowest-impact participants (where did the program fail,
+      and what conditions were missing), and reconstructs the
+      system around each.#cn()
+    ],
+    [
+      The method's argument is that the tails carry the
+      decision-grade information. A program that produces
+      meaningful work-performance change for any participants
+      proves it *can* work; the conditions that distinguish the
+      success cases from the failure cases name what the
+      surrounding system has to provide for transfer. The
+      argument is the practical complement of the Blume
+      meta-analytic finding (Case 65) that work environment is
+      the decisive transfer variable: SCM operationalizes the
+      finding by sampling where the variable's effects are most
+      visible.#cn()
+    ],
+    [
+      The Brinkerhoff Evaluation Institute lists deployments at
+      Cargill, Ford, Merck, the World Bank, and the
+      International Committee of the Red Cross. These
+      deployments are documented in case-study writeups,
+      conference talks, and vendor whitepapers, not in
+      peer-reviewed program evaluations. The evidence-tier flag
+      is therefore practice-synthesis: the method itself is
+      peer-reviewed, but the per-firm impact data on which the
+      corporate adoption story rests live in practitioner
+      channels. The honest framing in print is that the
+      methodological pattern is teachable and durable, but the
+      per-firm effect sizes are not independently audited.#cn()
+    ],
+    [
+      The LENS teaching point pairs SCM with the chain-of-evidence
+      problem from Case 79 and the meta-analytic transfer finding
+      from Case 65. SCM is the operational instrument that
+      crosses the Level-2 / Level-3 seam by sampling where the
+      evidence is most informative — and it exercises the CLO *Judgment under inadequate evidence* directly, because the
+      method asks practitioners to act on detailed case
+      reconstructions rather than wait for population-scale
+      causal estimates that corporate L&D often cannot produce.
+      Future validation will continue as more firms publish
+      their SCM outcome data.
+    ],
+  ),
+  beats: (
+    "Corporate L&D evaluation problem: Levels 3 and 4 require data the training org cannot access; average effects flatter most programs (Case 79)",
+    "SCM: sample the highest- and lowest-impact participants; study in detail; reconstruct the system conditions around each",
+    "Tails carry decision-grade information — success cases prove the program *can* work; failure cases name what the surrounding system has to provide for transfer",
+    "Deployed at Cargill, Ford, Merck, World Bank, ICRC; method peer-reviewed; per-firm impact data live in practitioner channels",
+    "Operational complement to Blume's environment-as-decisive-variable finding (Case 65); exercises NEW CLO Judgment under inadequate evidence",
+  ),
+  approaches: (
+    during: (
+      [Before the program is delivered, plan the SCM sampling: define the outcome metric (specific work-performance change), identify how the success and failure cases will be surfaced (manager nominations, performance data, structured interviews), and pre-commit to the sampling logic.],
+      [Structure the success-case and failure-case interviews around the system conditions Blume's meta-analysis (Case 65) names as decisive — supervisor support, peer support, practice opportunity, environment — so the reconstruction is theory-grounded, not anecdote-grounded.],
+      [Report the tails honestly: the success cases are existence proofs the program *can* work; the failure cases are evidence of what the surrounding system did not provide. Neither is a population effect size.],
+    ),
+    after: (
+      [Translate the tail evidence into a redesign of the surrounding system — supervisor briefings, peer-support structures, on-job practice opportunity — rather than into a redesign of the training event alone. Pair with Case 70 (HILS).],
+      [Use the CLO *Judgment under inadequate evidence*: act on the case-reconstruction evidence the method produces while being explicit that it is not a population causal estimate; document the uncertainty.],
+      [Carry the practice-synthesis flag honestly in any program documentation citing SCM corporate deployments — the method is peer-reviewed, but the per-firm effect sizes are not.],
+    ),
+  ),
+  references: (
+    [Brinkerhoff, R. O. (2005), "The Success Case Method: A Strategic Evaluation Approach to Increasing the Value and Effect of Training," _Advances in Developing Human Resources_ 7(1):86–101, doi:10.1177/1523422304272172.],
+    [Brinkerhoff Evaluation Institute deployment list — Cargill, Ford, Merck, World Bank, International Committee of the Red Cross — practitioner channel.],
+    [Kirkpatrick & Kirkpatrick (2006), _Evaluating Training Programs_ — the chain-of-evidence framework SCM operationalizes (paired Case 79).],
+    [Blume, Ford, Baldwin, & Huang (2010), _Journal of Management_ 36(4):1065–1105 — the meta-analytic environment-as-decisive finding SCM samples around (paired Case 65).],
+  ),
+  quote: [The tails carry the decision-grade information. The average flatters the program.],
+  quote-source: "Editors' synthesis of Brinkerhoff (2005) and the corporate SCM deployments.",
+  le-insight: [
+    SCM is the practitioner instrument that operationalizes
+    Blume's environment-as-decisive finding (Case 65) by
+    sampling the tails of the outcome distribution. The
+    method is peer-reviewed; the per-firm impact data at
+    Cargill, Ford, Merck, World Bank, ICRC live in
+    practitioner channels. Evidence-tier flag is
+    practice-synthesis; future validation will continue as
+    more firms publish.
+  ],
+  lens-approach: [
+    SCM is the corporate-L&D tail-sampling case (induced 2.1;
+    LENS D4/PT5). LENS uses it in Domain 4 (Test and
+    Evaluation) for the CLO *Judgment under inadequate
+    evidence* — the method asks practitioners to act on
+    case-reconstruction evidence rather than population
+    estimates — and in Domain 2 (Iterative Development) by
+    way of the evaluation-feedback loop SCM enables. Pairs
+    with Case 70 (HILS) for the redesign of the surrounding
+    work environment.
+  ],
+  literature-items: (
+    [Brinkerhoff (2005), _Advances in Developing Human Resources_],
+    [Brinkerhoff Evaluation Institute deployment writeups],
+    [Kirkpatrick (Case 79) and Blume (Case 65) as paired references],
+  ),
+  reflection-list: (
+    [Identify a recent training program in your organization. Define how you would identify the highest- and lowest-impact participants and what structured interview you would conduct with each to reconstruct the system conditions around them.],
+    [Map the SCM tails to the Blume meta-analytic variables (Case 65): supervisor support, peer support, practice opportunity, environment. What pattern would the tails have to show for you to redesign the surrounding system rather than the training event itself?],
+    [The corporate SCM deployments at Cargill, Ford, Merck, World Bank, ICRC are documented in practitioner channels. What additional evidence — independent program audit, peer-reviewed evaluation, cross-firm comparison — would you require before treating any specific per-firm effect size as decision-grade?],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 84 — cognitive-tutor-algebra-i-at-scale-year ----
+#case(
+  number: 84,
+  slug: "cognitive-tutor-algebra-i-at-scale-year",
+  title: "Cognitive Tutor Algebra I at Scale — Year-One Null, Year-Two Positive",
+  year: "2007 – 2014",
+  domains-list: ("K-12 mathematics", "intelligent tutoring", "education policy"),
+  modes-code: "TKD",
+  impact: "Cluster-randomized 147 high schools across seven states; year-one posttest scores showed no significant difference between Cognitive Tutor and control conditions; year-two posttest scores showed CTAI schools significantly outperforming controls; a one-year evaluation would have published the wrong answer",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "2.3",
+  lens-anchor: "D4/PT4",
+  clo-anchor: "CLO-2, CLO-4",
+  summary: [
+    Pane, Griffin, McCaffrey, and Karam's 2014 paper in
+    _Educational Evaluation and Policy Analysis_ reports the
+    central at-scale evaluation of Cognitive Tutor Algebra I
+    (CTAI), the canonical learning-sciences-to-classroom
+    translation. The RAND team cluster-randomized 147 high
+    schools across seven states to continue their current
+    Algebra I curriculum or to adopt CTAI for two years. Year-one
+    posttest scores: no significant difference between
+    conditions. Year-two posttest scores: CTAI schools
+    significantly outperformed control schools. The honest
+    reading the authors press is that a one-year evaluation
+    would have published a null result and the two-year
+    evaluation surfaced a real effect — and both findings were
+    in the same trial. The case is the deeper-evidence-of
+    update on v1 Case 67 (Cognitive Tutor), translating that
+    case from a system-description case into a methodological-
+    discipline case about evaluation horizons. The timeline of
+    the evaluation is itself a falsifiable design choice; the
+    case grounds the CLO on judgment under inadequate evidence
+    where the inadequacy is the evaluation horizon, not the
+    sample size.
+  ],
+  sections: (
+    [
+      Cognitive Tutor is the case the learning-sciences-to-
+      classroom translation thread cannot avoid teaching at v1
+      Case 67. The system instantiates a model of student
+      cognition, drives a problem-by-problem adaptive
+      curriculum, and is the canonical published instance of an
+      intelligent tutoring system in K-12 mathematics. The
+      question the v1 case left open — and the question the
+      Pane et al. 2014 paper answers — is what happens when the
+      system is deployed at scale, in the classroom and
+      curricular conditions that classroom adoption actually
+      generates, rather than in the developer-supported
+      conditions of an early efficacy trial.#cn()
+    ],
+    [
+      The RAND team built the evaluation to support that
+      question. 147 high schools across seven states were
+      cluster-randomized to either continue their current
+      Algebra I curriculum or to adopt CTAI for two years. The
+      sample was deliberately wide — multiple states, multiple
+      district contexts, classroom adoption with the support
+      structures the publisher could realistically supply. The
+      outcome instrument was an Algebra I posttest applied at
+      end of school year. The design supports an effect-size
+      estimate at end of year one and a separate estimate at
+      end of year two, with the same students in the same
+      treatment condition for both years.#cn()
+    ],
+    [
+      The year-one result was a null. Posttest scores in CTAI
+      schools did not differ significantly from posttest scores
+      in control schools, across the cluster-randomized sample.
+      The year-two result was different. Posttest scores in
+      CTAI schools were significantly higher than in control
+      schools, with an effect size that an Algebra I curriculum
+      evaluation would treat as meaningful. The two findings
+      were generated by the same trial, run in the same
+      schools, with the same instrument. The methodological
+      discipline the case teaches turns on what the field would
+      have learned if the evaluation had been designed to a
+      one-year horizon: it would have published a null result
+      against an intervention that the same trial, on its
+      planned horizon, established as positive.#cn()
+    ],
+    [
+      The authors press the honest reading without softening it.
+      The timeline of the evaluation is itself a falsifiable
+      design choice, not a methodological default. The reasons
+      year one returned a null are recoverable from the trial
+      record — teacher fluency with the system grew across the
+      year, district-level scheduling and pacing adjusted across
+      the year, student familiarity with the adaptive workflow
+      stabilized across the year. None of these are noise; all
+      are part of the deployment substrate the intervention
+      depends on, and all required the second year to
+      stabilize. The two-year horizon was the right horizon
+      because the intervention's effect is conditioned on a
+      deployment-substrate stabilization that takes more than
+      one year.#cn()
+    ],
+    [
+      The case is the deeper-evidence-of update on v1 Case 67.
+      v1 Case 67 carries Cognitive Tutor as the system
+      description; this case carries the at-scale evaluation
+      and the timeline-of-evidence lesson. The CLO on judgment
+      under inadequate evidence is directly motivated: the
+      one-year evaluation would have been inadequate evidence,
+      and a field that publishes the one-year null without
+      noting the planned second-year horizon publishes a wrong
+      answer on the available data. Pair with Case 72
+      (ASSISTments) for the multi-year follow-through paired
+      case, and with Case 5 (Epic Sepsis) for the
+      evaluation-horizon discipline in clinical AI. The closed
+      loop the case completes is the two-year-horizon-was-the-
+      right-horizon record that lets a field design the next
+      at-scale evaluation honestly.
+    ],
+  ),
+  beats: (
+    "147 high schools, seven states, cluster-randomized to CTAI or current curriculum for two years",
+    "Year-one posttest: no significant difference; year-two posttest: CTAI significantly outperforms control",
+    "A one-year evaluation would have published a null on the same intervention; both findings in the same trial",
+    "Timeline of evaluation is itself a falsifiable design choice; year-two horizon required for deployment-substrate stabilization",
+    "Deeper-evidence-of v1 Case 67; pair with Case 72 (ASSISTments) and Case 5 (Epic Sepsis horizon discipline)",
+  ),
+  approaches: (
+    during: (
+      [Plan the evaluation horizon as a design decision, not a budget default; the case demonstrates that the horizon choice is causally consequential and that a shorter horizon can produce a wrong-direction finding.],
+      [Document the deployment-substrate stabilization that the intervention depends on: teacher fluency, scheduling adjustment, student familiarity with the workflow are all year-over-year stabilization mechanisms the trial should track.],
+      [Design the trial so the year-one and year-two estimates are both interpretable; the case's pedagogical value depends on having both estimates from the same trial, not on having only the longer-horizon estimate.],
+    ),
+    after: (
+      [Publish the year-by-year result pattern, not the aggregate effect; the case's teaching power depends on the year-one null being on the same page as the year-two positive.],
+      [Carry the timeline-of-evidence lesson into the curriculum's evaluation-design teaching; the case grounds the CLO on judgment under inadequate evidence with a rare worked example where the inadequacy is the horizon, not the sample size.],
+      [Pair the case with Case 72 (ASSISTments multi-year follow-through) so the field-level discipline is taught with two converging examples; the methodological lesson is more useful as a pattern than as a single instance.],
+    ),
+  ),
+  references: (
+    [Pane, J. F., Griffin, B. A., McCaffrey, D. F., & Karam, R. (2014), "Effectiveness of Cognitive Tutor Algebra I at Scale," _Educational Evaluation and Policy Analysis_ 36(2):127–144, doi:10.3102/0162373713507480.],
+    [RAND Working Paper WR-1050 — addendum to the Pane et al. evaluation.],
+    [Koedinger, K. R., Anderson, J. R., Hadley, W. H., & Mark, M. A. (1997), "Intelligent tutoring goes to school in the big city," _IJAIED_ — the v1 Case 67 system description Cognitive Tutor builds from.],
+    [What Works Clearinghouse — Cognitive Tutor evidence-base summary applying federal-grade evidence standards to the Pane et al. trial.],
+  ),
+  quote: [A one-year evaluation would have published a null. The two-year evaluation surfaced a real effect. Both findings were in the same trial.],
+  quote-source: "Editors' synthesis of Pane et al. (2014).",
+  le-insight: [
+    Pane et al. is the at-scale evaluation case for Cognitive
+    Tutor and the worked example of evaluation horizon as a
+    falsifiable design choice. Year one: null. Year two:
+    significantly positive. The case is the deeper-evidence-of
+    update on v1 Case 67 and the curriculum's primary anchor for
+    the CLO on judgment under inadequate evidence where the
+    inadequacy is the horizon, not the sample size.
+  ],
+  lens-approach: [
+    Pane / CTAI at scale is the closed-loop evaluation-horizon
+    case (induced 2.3; LENS D4/PT4). LENS uses it in Domain 4
+    (Test and Evaluation) for the horizon-as-design-choice
+    discipline and in Domain 2 (Iterative Development) for the
+    deployment-substrate-stabilization frame — teacher fluency,
+    scheduling, workflow familiarity are designable parts of
+    the intervention substrate, not noise. Pair with Case 72
+    (ASSISTments follow-through), v1 Case 67 (Cognitive Tutor
+    system), and Case 5 (Epic Sepsis horizon discipline).
+  ],
+  literature-items: (
+    [Pane et al. (2014), _EEPA_ — Cognitive Tutor at scale],
+    [Koedinger et al. (1997), _IJAIED_ — v1 Case 67 system base],
+    [What Works Clearinghouse evidence summary],
+  ),
+  reflection-list: (
+    [Identify an intervention in your domain whose effect depends on a deployment-substrate stabilization that takes more than a year (teacher fluency, workflow familiarity, scheduling alignment). What evaluation horizon is honest for that intervention, and what would the year-one estimate, taken alone, falsely conclude?],
+    [Specify the year-by-year result pattern your next evaluation will report. The case's pedagogical value depends on having both the year-one and year-two estimates from the same trial; what reporting structure would you commit to that supports the pattern view, not only the aggregate?],
+  ),
+  courses: ("LEN 2", "LEN 3", "LEN 7"),
+)
+
+// ---- Case 85 — ou-analyse-predictive-learning ----
+#case(
+  number: 85,
+  slug: "ou-analyse-predictive-learning",
+  title: "OU Analyse — Predictive Learning Analytics and Teacher Use at Scale",
+  year: "2019 – 2023",
+  domains-list: ("higher education", "learning analytics", "distance learning"),
+  modes-code: "TKD",
+  impact: "Across 9 courses and 559 teachers (189 with OU Analyse access), teachers' engagement with predictive learning analytics was associated with measurable improvements in student performance for >14,000 students; three-year post-implementation follow-up extends the evidence into sustained adoption and perceptions",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "5.2",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4, CLO-3",
+  summary: [
+    Herodotou et al.'s 2019 _British Journal of Educational
+    Technology_ paper reports the evaluation of OU Analyse, the
+    Open University UK's predictive-learning-analytics dashboard
+    for online tutors, across 9 courses and 559 teachers (189 of
+    whom had access to OU Analyse) with more than 14,000 students.
+    Teachers' engagement with the predictive learning analytics
+    was associated with measurable improvements in student
+    performance. The LAK 2023 three-year-post-implementation
+    follow-up extends the picture into questions of sustained
+    adoption — how teachers' use of the predictions stabilized,
+    what fraction continued to act on them, how perceptions
+    evolved. The case is distinct from the OU consent-and-ethical-
+    use frame Case 81 covers; this case carries the post-
+    deployment teacher-use evaluation at multi-cohort scale.
+    The authors' hedges are binding: causal attribution to OU
+    Analyse use specifically — versus teacher selection effects
+    — is bounded; the 2019 study uses propensity-style matching
+    rather than RCT randomization. Future validation ongoing on
+    multi-institution transfer as the system is licensed beyond
+    the Open University.
+  ],
+  sections: (
+    [
+      Predictive learning analytics dashboards have been
+      deployed across higher-education institutions for more
+      than a decade. The deployment record is largely a
+      collection of pilots and single-cohort studies, with
+      Course Signals (the discontinued Purdue deployment) as
+      the structural cautionary case. OU Analyse is structurally
+      different: deployed across an entire distance-learning
+      institution, used by hundreds of tutors across multiple
+      cohorts and multiple courses, and evaluated at the scale
+      the institutional deployment supports. The 2019 Herodotou
+      et al. paper is the central peer-reviewed evaluation of
+      the teacher-use side of the deployment.#cn()
+    ],
+    [
+      The evaluation design covers 9 courses, 559 teachers, and
+      more than 14,000 students. 189 of the 559 teachers had
+      access to OU Analyse; the comparison structure is between
+      these teachers and the OU Analyse-naive teachers in the
+      same courses. The outcome is student performance on
+      course assessments. Teachers' engagement with the
+      predictive learning analytics — operationalized as
+      dashboard-usage and acted-upon-prediction proxies — was
+      associated with measurable improvements in student
+      performance for the cohorts those teachers taught. The
+      effect size is meaningful at the scale the institutional
+      deployment supports.#cn()
+    ],
+    [
+      The 2023 LAK three-year-post-implementation follow-up
+      extends the picture into a question the single-cohort
+      pilots cannot address: what happens to teacher use of the
+      predictions across multiple cohorts and across years? The
+      follow-up paper documents how teachers' use stabilized,
+      what fraction continued to act on the predictions, and
+      how perceptions evolved as the institutional norm around
+      the dashboard solidified. Across the three years, the
+      pattern surfaces as one of sustained adoption with
+      stratification: a fraction of teachers used the
+      predictions actively, a fraction used them as background
+      reference, and a fraction did not engage. The
+      delegation-with-revocation structure is operative: each
+      teacher chose, in each cohort, whether to act on the
+      prediction, and the choice itself is the load-bearing
+      capability the dashboard supports.#cn()
+    ],
+    [
+      The case is distinct from the OU consent-and-ethical-use
+      frame Case 81 covers. Case 81 carries the governance
+      story — the Policy on Ethical Use of Student Data, the
+      institutional review of analytic deployments, the
+      consent architecture. This case carries the post-
+      deployment teacher-use evaluation at multi-cohort scale.
+      The editor's decision (memo A6) anchors LENS primary,
+      induced secondary, CLO carried; the two cases together
+      teach the deployment across both governance and
+      post-deployment-use frames without collapsing one into
+      the other. The frame the present case adds to the corpus
+      is the rare successful learning-engineering intervention
+      with both deployment scale and longitudinal teacher-use
+      evidence at the journal-graded evidence tier the corpus
+      needs.#cn()
+    ],
+    [
+      The authors' hedges are binding. The causal attribution to
+      OU Analyse use specifically — as distinct from teacher
+      selection effects — is bounded. The 2019 study uses
+      propensity-style matching but does not randomize at the
+      teacher level; the 2023 follow-up extends the evidence
+      base on adoption and perception but does not close the
+      teacher-selection question. Future validation ongoing on
+      multi-institution transfer — OU Analyse has been licensed
+      beyond the Open University, and the transfer outcomes are
+      not yet in the peer-reviewed literature. Pair with Case
+      115 (OU consent governance), Case 84 (Cognitive Tutor
+      at-scale evaluation), and the Purdue Course Signals
+      cautionary case from v1 — the OU Analyse evaluation is
+      the methodologically more careful descendant of the
+      Course Signals lineage.
+    ],
+  ),
+  beats: (
+    "OU Analyse: predictive-learning-analytics dashboard deployed across the Open University UK's distance-learning operation",
+    "Herodotou et al. 2019 BJET: 9 courses, 559 teachers (189 with OUA access), >14,000 students; teacher engagement → measurable improvement",
+    "Herodotou et al. 2023 LAK: three-year-post-implementation follow-up — stabilization, sustained adoption stratification, perception evolution",
+    "Distinct from Case 81 (OU consent governance); this case is post-deployment teacher-use at multi-cohort scale",
+    "Hedges binding: causal attribution bounded (propensity matching, not RCT randomization); multi-institution transfer evidence pending",
+  ),
+  approaches: (
+    during: (
+      [Treat teacher use of the prediction as the load-bearing capability the dashboard supports; the delegation-with-revocation structure — each teacher chooses, in each cohort, whether to act — is the design point, not an emergent behavior.],
+      [Build the deployment at multi-cohort and multi-course scale from the start; the case's evidence-tier strength depends on the deployment having been institutional, not pilot, and the institutional deployment supports the longitudinal-follow-through evidence the case provides.],
+      [Design the dashboard's prediction surface around the action the teacher would take — a flagged-student list with an intervention prompt, not a probability score the teacher has to interpret unaided.],
+    ),
+    after: (
+      [Commission the next-tier evaluation that addresses the teacher-selection-effect question; an RCT at the teacher level, or an instrumental-variable design exploiting institutional dashboard-rollout variation, would close the residual causal-attribution gap.],
+      [Publish the multi-institution-transfer evaluations as the system is licensed beyond the OU; the case's value as a generalizable instance depends on the transfer evidence the OU-internal evaluation cannot provide.],
+      [Pair the case in the curriculum with Case 81 (OU consent governance) so the deployment is taught across both governance and post-deployment-use frames; the two cases together teach the institutional anchor without collapsing one frame into the other.],
+    ),
+  ),
+  references: (
+    [Herodotou, C., Hlosta, M., Boroowa, A., Rienties, B., Zdrahal, Z., & Mangafa, C. (2019), "Empowering online teachers through predictive learning analytics," _British Journal of Educational Technology_ 50(6):3064–3079, doi:10.1111/bjet.12853.],
+    [Herodotou, C. et al. (2023), "Predictive Learning Analytics and University Teachers: Usage and perceptions three years post implementation," _LAK '23_, doi:10.1145/3576050.3576061.],
+    [Herodotou et al. (2019), "A large-scale implementation of predictive learning analytics in higher education: the teachers' role and perspective," _Educational Technology Research and Development_, ERIC EJ1227972 — complementary teacher-perspective paper.],
+    [Arnold, K. E., & Pistilli, M. D. (2012), "Course Signals at Purdue," _LAK '12_ — the structural precursor v1 carries as a cautionary case.],
+  ),
+  quote: [The delegation-with-revocation structure is operative: each teacher chose, in each cohort, whether to act on the prediction. The choice itself is the load-bearing capability the dashboard supports.],
+  quote-source: "Editors' synthesis of Herodotou et al. (2019, 2023).",
+  le-insight: [
+    OU Analyse is the rare successful learning-engineering
+    intervention with both deployment scale and longitudinal
+    teacher-use evidence at journal tier. The 2019 BJET paper
+    establishes the effect on student performance at the
+    institutional deployment; the 2023 LAK follow-up extends
+    the picture into three-year sustained adoption. The
+    delegation-with-revocation structure is operative and
+    teachable. Hedges binding on causal attribution and on
+    multi-institution transfer.
+  ],
+  lens-approach: [
+    OU Analyse teacher-use is the human-in-the-loop predictive-
+    analytics case at institutional scale (induced 5.2; LENS
+    D4/PT5). LENS uses it in Domain 4 (Test and Evaluation)
+    for the multi-cohort longitudinal-follow-through design
+    and in Domain 3 (Human-System Collaboration) for the
+    delegation-with-revocation structure — the teacher chooses,
+    each time, whether to act on the prediction. Pair with
+    Case 81 (OU consent governance), Case 84 (Cognitive
+    Tutor at-scale), and Case 72 (ASSISTments multi-year).
+  ],
+  literature-items: (
+    [Herodotou et al. (2019), _BJET_ — OU Analyse teacher-use evaluation],
+    [Herodotou et al. (2023), _LAK_ — three-year follow-up],
+    [Arnold & Pistilli (2012), _LAK_ — Course Signals precursor],
+  ),
+  reflection-list: (
+    [Identify a predictive-analytics dashboard in your domain whose operator-use stratification — active, background reference, non-engagement — has not been longitudinally tracked. What would the multi-cohort follow-up look like, and what data infrastructure would it require?],
+    [Specify the design choice for the prediction surface in your domain: a flagged-list-with-intervention-prompt vs. a probability-score-the-operator-interprets-unaided. Which design is in place currently, and what would change if the design switched?],
+    [The case's hedge on teacher selection effects is the open methodological question. What randomized or quasi-experimental design would close the residual attribution gap in your domain's analog deployment — and what institutional support would the design require?],
+  ),
+  courses: ("LEN 2", "LEN 3", "LEN 7"),
+)
+
+// ---- Case 86 — gandara-algorithmic-targeting-and ----
+#case(
+  number: 86,
+  slug: "gandara-algorithmic-targeting-and",
+  title: "Gándara — Detecting and Mitigating Algorithmic Bias in College Student-Success Prediction",
+  year: "2024",
+  domains-list: ("higher education", "algorithmic fairness", "policy analysis"),
+  modes-code: "DKN",
+  impact: "Gándara, Anahideh, Ison, and Picchiarini (AERA Open, 2024) audited predictive models of college student success and showed that models which look acceptable on overall accuracy are systematically less accurate for Black and Hispanic students and overestimate success for white and Asian students — small-tier frontier evidence that the choice of construct and the stratification used in evaluation, not only model-bias mitigation, determine whether an equity-oriented prediction is fair to the groups the equity commitment is meant to protect",
+  kind: "frontier",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "8.2",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4, CLO-5",
+  summary: [
+    Predictive models of college student success — models that
+    score students on predicted graduation, retention, or course
+    completion to drive advising, outreach, and support decisions —
+    have become a routine tool across community colleges and
+    four-year institutions. Gándara, Anahideh, Ison, and
+    Picchiarini, publishing in _AERA Open_ (2024), audited such
+    models across racialized groups and found that a model which
+    looks acceptable on overall accuracy is systematically less
+    accurate for Black and Hispanic students — making more
+    prediction errors for them — while overestimating success for
+    white and Asian students. The apparent fairness of the system
+    depends materially on upstream choices: the construct the model
+    is built to predict (predicted graduation vs. predicted benefit
+    vs. predicted need), the stratification used in evaluation
+    (overall accuracy vs. accuracy by income, race/ethnicity,
+    first-generation status), and the decision context the
+    prediction is consumed in (whether end users are trained to
+    contextualize a flagged prediction or treat it as a verdict).
+    The paper's contribution is the frontier-shaped finding that
+    fairness in equity-oriented prediction is a construct-definition
+    and stratified-evaluation problem before it is a model-bias
+    problem. The case pairs explicitly with the v2 race-construct
+    trio (Cases 25 eGFR, 106 pulse oximetry, 107 Hoffman) and with
+    the broader equity-construct competency C8.2: demographic
+    stratification of validation and outcomes as a design
+    commitment.
+  ],
+  sections: (
+    [
+      Predictive modeling of student success in higher education is
+      now routine. Community-college and four-year institutions
+      operate models that score students on predicted graduation
+      likelihood, predicted retention, predicted
+      benefit-from-intervention, or predicted financial need. The
+      scores feed downstream decisions: which students get
+      outreach emails, which get advising appointments, which get
+      need-based aid or enrollment incentives. The structural
+      capability question — whose interest does the model
+      maximize, by what construct, and against what
+      stratification — is the layer where the case operates.#cn()
+    ],
+    [
+      Gándara, Anahideh, Ison, and Picchiarini, publishing in
+      _AERA Open_, audited predictive models of college student
+      success across racialized groups. The central finding is
+      that models which look acceptable on overall accuracy are
+      systematically less accurate for Black and Hispanic
+      students — making more prediction errors for them — while
+      overestimating success for white and Asian students. The
+      methodological move is to show that the choice of construct
+      the model is built to predict, and the way the model is
+      evaluated, have substantial consequences for which students
+      the model treats accurately. A model optimized and validated
+      on aggregate accuracy is not interchangeable with one whose
+      validation is stratified by racialized group; the
+      institution's choice of construct and evaluation regime is a
+      normative decision the model architecture cannot make on its
+      own.#cn()
+    ],
+    [
+      The second methodological move concerns evaluation
+      stratification. Overall accuracy, the standard summary
+      metric, can mask substantial disparity by income, race/
+      ethnicity, and first-generation status — populations whose
+      base rates and observed outcomes differ from the modal
+      student the training data over-represents. The paper's
+      stratified evaluation shows the canonical equity-construct
+      finding: a model that looks fair under overall accuracy can
+      be substantially less accurate, or substantially biased in
+      its prediction direction, for the subgroups the equity
+      commitment is supposed to protect. The induced framework's
+      C8.2 sub-competency — demographic stratification of
+      validation and outcomes as a design commitment — is the
+      analytic anchor.#cn()
+    ],
+    [
+      The third move concerns the decision context the prediction
+      is consumed in and the mitigations available. A model is not
+      deployed in isolation; its predictions are read by advisors
+      and administrators who decide what to do with a flagged
+      student. Gándara and colleagues stress training end users on
+      the potential for algorithmic bias — so a prediction is
+      contextualized for the individual student rather than treated
+      as a verdict — and evaluate bias-mitigation techniques that
+      reduce, but do not eliminate, the cross-group accuracy gap.
+      The system's apparent fairness therefore depends not only on
+      the model but on the evaluation regime and the decision
+      practice the institution actually deploys.#cn()
+    ],
+    [
+      What the case teaches at the LENS framing layer is the
+      frontier-shaped finding: fairness in equity-oriented
+      prediction is a construct-definition problem before it is a
+      model-bias problem. The induced framework's C8.2 sub-
+      competency and the equity-construct CLOs proposed
+      find their case-grounded basis here.
+      The case explicitly cross-references the v2 race-construct
+      trio — eGFR (Case 25), pulse oximetry (Case 26), and
+      Hoffman pain bias (Case 6) — at the construct-definition
+      layer: in those cases the construct (race correction in
+      eGFR, single-sensor calibration in pulse oximetry, the
+      pain-perception assumption in Hoffman) was the design
+      decision that produced the disparate outcome; in this case
+      the construct (predicted enrollment vs. predicted need vs.
+      predicted benefit) is the design decision the algorithmic-
+      targeting system has to make explicitly.
+    ],
+  ),
+  beats: (
+    "Predictive student-success modeling is routine: models score students on predicted graduation / retention / benefit / need; scores feed downstream support and outreach decisions",
+    "Gándara et al. (AERA Open, 2024): models less accurate for Black and Hispanic students; overestimate success for white and Asian students — overall accuracy masks the disparity",
+    "Stratified evaluation by income, race/ethnicity, first-generation status reveals disparity that overall-accuracy summary metrics hide",
+    "Decision context and mitigation matter: train end users to contextualize a flagged prediction; bias-mitigation reduces but does not eliminate the cross-group gap",
+    "Cross-references v2 race-construct trio (Cases 25 eGFR, 106 pulse oximetry, 107 Hoffman) — construct definition is the upstream design decision in each",
+  ),
+  approaches: (
+    during: (
+      [Make the construct choice explicit at design time: predicted enrollment, predicted benefit, predicted need are different constructs with different policy implications, and the institution's normative position on which to optimize for has to be on the record.],
+      [Build stratified evaluation by income, race/ethnicity, first-generation status, and other equity-relevant axes into the model's validation; the C8.2 sub-competency operationalized.],
+      [Pair the targeting model with the specific intervention it will feed; the fairness properties of the system depend on the pairing, and evaluating the model in isolation underestimates the variation a deployed system actually exhibits.],
+    ),
+    after: (
+      [Report which construct the model maximizes, on which stratifications it was evaluated, and which intervention it is paired with — three pieces of information any deployed targeting system should publish together.],
+      [Treat the fairness conversation as a construct-definition conversation first, and as a model-bias conversation second; the latter is operationally important, the former determines what the model is fair *about*.],
+      [Carry the race-construct trio (Cases 25, 26, 6) as the cross-domain pair in the curriculum: in each, the construct definition is the upstream design decision; the framework's C8.2 sub-competency and the equity-construct CLOs are anchored here.],
+    ),
+  ),
+  references: (
+    [Gándara, Anahideh, Ison, & Picchiarini (2024), "Inside the Black Box: Detecting and Mitigating Algorithmic Bias across Racialized Groups in College Student-Success Prediction," _AERA Open_ 10, doi:10.1177/23328584241258741 — primary case source on cross-group accuracy disparity, stratified evaluation, and bias mitigation in student-success prediction.],
+    [Barocas, Hardt, & Narayanan, _Fairness and Machine Learning_ (fairmlbook.org) — methodological backdrop on construct definition and stratified evaluation.],
+    [Friedler, Scheidegger, & Venkatasubramanian (2021), "The (im)possibility of fairness: different value systems require different mechanisms for fair decision making," _Communications of the ACM_ — the construct-definition argument at field level.],
+    [v2 cross-referenced cases: 105 (eGFR race correction), 106 (pulse oximetry across skin tones), 107 (Hoffman pain bias) — the race-construct trio at the construct-definition layer.],
+  ),
+  quote: [Fairness in equity-oriented prediction is a construct-definition problem before it is a model-bias problem. Which student outcome the model is maximizing is the upstream decision.],
+  quote-source: "Editors' synthesis of Gándara, Anahideh, Ison, & Picchiarini, _AERA Open_ (2024).",
+  le-insight: [
+    Gándara's student-success-prediction audit is the small-tier
+    frontier instance of fairness-as-construct-definition. Which
+    construct the model maximizes (predicted graduation vs.
+    benefit vs. need), which stratification is used in
+    validation, and the decision context the prediction is
+    consumed in each determine the fairness properties of the
+    deployed system; the audit found models systematically less
+    accurate for Black and Hispanic students. Cross-references
+    the v2 race-construct trio at the construct-definition layer.
+  ],
+  lens-approach: [
+    Gándara student-success-prediction fairness is the
+    equity-construct-definition case (induced 8.2; LENS
+    D4/PT5) — Domain 4 for stratified evaluation; Domain 5 for
+    the decision-context and mitigation question. Cross-reference
+    Cases 25, 26, 6 — case-grounded basis for the equity-
+    construct CLOs.
+  ],
+  literature-items: (
+    [Gándara, Anahideh, Ison, & Picchiarini (2024), _AERA Open_],
+    [Barocas, Hardt, & Narayanan, _Fairness and Machine Learning_],
+    [Friedler, Scheidegger, & Venkatasubramanian (2021), _Communications of the ACM_],
+  ),
+  reflection-list: (
+    [Identify a predictive-targeting model in your domain. Which construct does it maximize — observed outcome, predicted benefit, predicted need — and is the choice on the record as a normative institutional decision, or absorbed into the model's training objective without disclosure?],
+    [Specify the stratifications you would build into the model's validation: which equity-relevant axes (income, race/ethnicity, first-generation, geography, disability) and what comparison structure (per-axis accuracy, per-axis calibration, per-axis intervention effectiveness)?],
+    [The case cross-references the v2 race-construct trio (Cases 25, 26, 6). In each, the construct definition is the upstream design decision that produced the disparate outcome. Identify a construct decision in your domain that is currently absorbed into the design rather than on the record — and what would it take to make the choice explicit?],
+  ),
+  courses: ("LEN 3", "LEN 6", "LEN 9"),
+)
+
+// ---- Case 87 — yu-lee-kizilcec-protected-attributes-in ----
+#case(
+  number: 87,
+  slug: "yu-lee-kizilcec-protected-attributes-in",
+  title: "Yu / Lee / Kizilcec — Protected Attributes in Learning-Analytics Models",
+  year: "2021 – 2024",
+  domains-list: ("learning analytics", "algorithmic fairness", "ed-tech research"),
+  modes-code: "DKN",
+  impact: "Yu, Lee, and Kizilcec, publishing in the LAK/EDM literature, examined whether and how protected attributes (race/ethnicity, gender, socioeconomic status) should be included in learning-analytics predictive models, and showed that whether including or excluding the attribute produces fairer outcomes depends on the construct, the model class, the downstream intervention, and the population — small-tier frontier evidence that the include-or-exclude question is the wrong framing",
+  kind: "frontier",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "8.4",
+  lens-anchor: "D4/PT5",
+  clo-anchor: "CLO-4, CLO-5",
+  summary: [
+    A long-running practical question in learning analytics is
+    whether protected attributes — race/ethnicity, gender,
+    socioeconomic status, first-generation status — should be
+    included as features in predictive models. The intuitive
+    "fairness through unawareness" answer is to exclude them. The
+    technical-fairness literature has shown the unawareness answer
+    is incomplete: omitted protected attributes are typically
+    reconstructable from correlated features (zip code, course
+    history, prior achievement), so excluding the attribute does
+    not exclude its predictive footprint and can make discrimination
+    harder to detect and audit. Yu, Lee, and Kizilcec, publishing
+    in the LAK/EDM literature, examined the include-or-exclude
+    question empirically across multiple learning-analytics
+    prediction tasks. The headline finding is the frontier-shaped
+    one: whether inclusion or exclusion produces fairer outcomes
+    depends on the construct being predicted, the model class, the
+    intervention the prediction feeds, and the population. The
+    case is the small-tier frontier instance of "surfacing bias
+    through governance, not just technique" (C8.4 in the induced
+    framework). It cross-references the v2 race-construct trio
+    (Cases 25 eGFR, 106 pulse oximetry, 107 Hoffman) at the
+    model-fairness layer: in those cases the construct was the
+    design decision; in this case the question is whether the
+    attribute is allowed into the model that operationalizes the
+    construct.
+  ],
+  sections: (
+    [
+      A practical question that recurs across learning-analytics
+      deployments is whether protected attributes — race/ethnicity,
+      gender, socioeconomic status, first-generation status, and
+      similar — should be included as features in predictive
+      models. The intuitive policy answer ("fairness through
+      unawareness") is to exclude them: a model that does not see
+      race cannot discriminate on race. The intuition is
+      operationally appealing and statutorily aligned in some
+      domains where regulators have read the omission requirement
+      strictly.#cn()
+    ],
+    [
+      The technical-fairness literature has shown the unawareness
+      answer is incomplete. Protected attributes that are omitted
+      from a model are typically reconstructable from correlated
+      features the model does see — zip code, school assignment,
+      prior achievement, course history, language at home, family
+      income proxies. Omitting the attribute removes the label,
+      not the predictive footprint, and can in some cases make
+      discrimination harder to detect and audit precisely because
+      the auditable record no longer carries the attribute that
+      would let an evaluator stratify the model's output.#cn()
+    ],
+    [
+      Yu, Lee, and Kizilcec, publishing in the LAK/EDM (Learning
+      Analytics and Knowledge / Educational Data Mining)
+      literature, examined the include-or-exclude question
+      empirically across multiple learning-analytics prediction
+      tasks — course completion, performance prediction, dropout
+      risk — with multiple model classes (regression, tree-based,
+      neural) and multiple downstream intervention contexts. The
+      headline finding is the frontier-shaped one: whether
+      including or excluding a protected attribute produces
+      fairer outcomes depends on the construct being predicted,
+      the model class, the intervention the prediction feeds, and
+      the population. There is no general answer; the include-or-
+      exclude question is the wrong framing.#cn()
+    ],
+    [
+      The right framing the paper develops is governance and
+      audit. The decision to include or exclude a protected
+      attribute is one of several decisions a learning-analytics
+      deployment makes that determine its fairness properties;
+      the decision has to be made deliberately, recorded with
+      reasoning, and paired with stratified evaluation and audit
+      cadence that catches the consequences of the decision in
+      operation. The case is the induced framework's C8.4
+      instance at small scale: "surfacing bias through governance,
+      not just technique." The technical-fairness machinery alone
+      does not answer the question; the governance architecture
+      around the model is the carrier of the answer in any
+      specific deployment.#cn()
+    ],
+    [
+      In pair with Case 86 (Gándara on community-college
+      targeting) and with the v2 race-construct trio (Cases 25
+      eGFR, 106 pulse oximetry, 107 Hoffman), the case completes
+      the v2 equity-construct frontier picture. Case 86 names
+      the construct-definition layer; this case names the
+      protected-attribute-in-the-model layer; the race-construct
+      trio names the construct-encoded-in-the-instrument layer
+      (race correction in eGFR, sensor calibration in pulse
+      oximetry, pain perception in Hoffman). Together, the five
+      cases stage the equity-construct competency across the
+      construct-definition / attribute-handling / instrument-
+      construct axes — the case-grounded basis for the equity-construct sub-competencies proposed in
+      the v2 research backbone.#cn()
+    ],
+  ),
+  beats: (
+    "Long-running learning-analytics question: include or exclude protected attributes (race/ethnicity, gender, SES) as features?",
+    "Fairness-through-unawareness intuitive but incomplete: omitted attributes reconstructable from correlated features (zip code, prior achievement)",
+    "Yu, Lee, Kizilcec (LAK/EDM): include-or-exclude effect depends on construct, model class, downstream intervention, population — no general answer",
+    "Right framing is governance and audit: explicit decision recorded with reasoning, stratified evaluation, audit cadence that catches the consequences",
+    "Cross-references Case 86 (Gándara), the v2 race-construct trio (105 eGFR, 106 pulse oximetry, 107 Hoffman) — five-case equity-construct frontier set",
+  ),
+  approaches: (
+    during: (
+      [Treat the include-or-exclude decision for each protected attribute as a deliberate design choice, recorded with reasoning, rather than absorbed into the data-engineering pipeline.],
+      [Build stratified evaluation by the protected attribute regardless of whether the model itself uses it as a feature; auditing the model's output by attribute is independent of whether the attribute is an input.],
+      [Pair the decision with the downstream intervention context; the include-or-exclude answer that produces fairer outcomes in one intervention context may produce less fair outcomes in another.],
+    ),
+    after: (
+      [Publish the protected-attribute handling decisions for any deployed learning-analytics model — included, excluded, and with what reasoning — as part of the model's governance documentation.],
+      [Operate stratified audit on a regular cadence; the include-or-exclude consequences in operation are what the audit catches, and audit absence makes the decision functionally invisible to the institution.],
+      [Carry the five-case equity-construct set into the curriculum: Cases 25 (eGFR), 106 (pulse oximetry), 107 (Hoffman) on the instrument-construct layer; Case 86 (Gándara) on the construct-definition layer; this case on the protected-attribute-in-the-model layer. The set is the case-grounded basis for the equity-construct sub-competencies.],
+    ),
+  ),
+  references: (
+    [Yu, R., Lee, H., & Kizilcec, R. F. (2021), "Should College Dropout Prediction Models Include Protected Attributes?" in _Proceedings of the Eighth ACM Conference on Learning \@ Scale_ (L\@S '21), doi:10.1145/3430895.3460139 — primary paper on the include-or-exclude empirical analysis.],
+    [Kizilcec & Lee, "Algorithmic Fairness in Education," in Holmes & Porayska-Pomsta (eds.), _Ethics in Artificial Intelligence in Education_ — broader synthesis of the fairness-in-learning-analytics frontier.],
+    [Dwork, Hardt, Pitassi, Reingold, & Zemel (2012), "Fairness through awareness," _Proceedings of ITCS_ — foundational paper on the inadequacy of fairness-through-unawareness.],
+    [Barocas, Hardt, & Narayanan, _Fairness and Machine Learning_ (fairmlbook.org) — technical-fairness backdrop.],
+    [v2 cross-referenced cases: 138 (Gándara), 105 (eGFR), 106 (pulse oximetry), 107 (Hoffman) — equity-construct five-case set.],
+  ),
+  quote: [The include-or-exclude question is the wrong framing. The right framing is governance: a deliberate decision, recorded with reasoning, paired with stratified evaluation and audit cadence.],
+  quote-source: "Editors' synthesis of Yu, Lee, & Kizilcec (LAK/EDM).",
+  le-insight: [
+    Yu, Lee, and Kizilcec's protected-attributes work is the
+    frontier instance of surfacing bias through governance, not
+    just technique. Whether including or excluding a protected
+    attribute produces fairer outcomes depends on the construct,
+    the model class, the intervention, and the population. The
+    governance architecture around the model is the carrier of
+    the answer in any specific deployment.
+  ],
+  lens-approach: [
+    Yu/Lee/Kizilcec protected attributes is the model-fairness-
+    governance case (induced 8.4; LENS D4/PT5) — Domain 4 for
+    stratified-evaluation-by-attribute; Domain 5 for the
+    decision-plus-reasoning-plus-audit architecture. Cross-
+    reference Case 86 and the race-construct trio (105, 106,
+    107).
+  ],
+  literature-items: (
+    [Yu, Lee, & Kizilcec, LAK/EDM protected-attributes paper],
+    [Kizilcec & Lee, "Algorithmic Fairness in Education"],
+    [Dwork et al. (2012), "Fairness through awareness," _ITCS_],
+  ),
+  reflection-list: (
+    [Identify a learning-analytics or analogous predictive model in your domain. Which protected attributes are inputs to the model, which are not, and is the include-or-exclude decision on the record with reasoning, or absorbed into the data-engineering pipeline?],
+    [Specify the stratified-audit cadence you would operate for the model regardless of whether protected attributes are inputs; the audit catches the consequences of the include-or-exclude decision in operation, and its absence makes the decision functionally invisible.],
+  ),
+  courses: ("LEN 3", "LEN 6", "LEN 9"),
+)
+
+// ---- Case 88 — livehint-ai-evaluating-an-ai-tutor-for ----
+#case(
+  number: 88,
+  slug: "livehint-ai-evaluating-an-ai-tutor-for",
+  title: "LiveHint AI — Evaluating an AI Tutor for Bias Across Foundation Models",
+  year: "2025",
+  domains-list: ("AI in education", "intelligent tutoring", "algorithmic fairness"),
+  modes-code: "TKN",
+  impact: "Repeated probing of LiveHint AI (an LLM-based tutor under development at Carnegie Learning) with identity-marked student queries surfaced response differences in tone, detail, and pedagogical appropriateness across identities; choice of foundation model materially affected the level of differentiation",
+  kind: "frontier",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "8.2",
+  lens-anchor: "D4/PT6",
+  clo-anchor: "CLO-4, CLO-3",
+  summary: [
+    The AIED 2025 paper "Evaluating an AI Tutor for Bias Across
+    Different Foundation Models" tests LiveHint AI, an LLM-based
+    tutor under development at Carnegie Learning, against a
+    structured probing protocol. Realistic student queries are
+    modified to include explicit or implicit statements of
+    identity — nationality, dialect markers, demographic cues —
+    and the tutor's responses are assessed for tone, detail, and
+    pedagogical appropriateness. The choice of foundation model
+    materially affects the level of differentiation in responses.
+    The authors are explicit that this is not a deployment-bias
+    audit (LiveHint is in development); it is a methods-
+    development paper proposing how foundation-model-level
+    fairness evaluation should be done before deployment. The
+    case extends the race-construct trio (Cases 25, 26, 6,
+    48) into the LLM-tutoring layer where the structurally new
+    variable is the foundation model. Open questions: whether
+    lab-style probing matches deployed-conversation patterns;
+    whether vendor selection across foundation models becomes
+    a routine fairness deliverable.
+  ],
+  sections: (
+    [
+      The deployment surface for LLM-based tutoring expanded
+      faster than the fairness-evaluation literature for it.
+      Most pre-deployment fairness work on educational AI was
+      built for classifiers — proctoring systems, recommendation
+      engines, automated essay scoring — where the output is a
+      score or a flag and the fairness question can be
+      formulated as a disparate-impact comparison across groups.
+      LLM tutoring shifts the output to a conversational
+      response, and the fairness question shifts with it: it is
+      no longer whether two equivalently-prepared students
+      receive equivalent flags, but whether they receive
+      equivalent pedagogical engagement.#cn()
+    ],
+    [
+      The AIED 2025 paper builds the evaluation method against
+      that shifted target. LiveHint AI, an LLM-based tutor
+      under development at Carnegie Learning, is the subject
+      system. The probing protocol generates realistic student
+      queries — calibrated to the kinds of mathematics questions
+      a tutor would receive — and produces matched variants of
+      each query that differ only in identity-marker content:
+      explicit statements of nationality, dialect markers,
+      demographic cues. The tutor's responses to the matched
+      pairs are then assessed across three dimensions: tone (is
+      the response respectful and appropriately framed for a
+      tutoring context), detail (does the response give the
+      same quality of pedagogical content), and pedagogical
+      appropriateness (does the response engage the underlying
+      mathematics question with the same instructional intent).#cn()
+    ],
+    [
+      The headline finding is that the choice of foundation
+      model materially affects the level of differentiation in
+      responses. Different foundation models — the underlying
+      LLMs the tutoring layer wraps — produce different patterns
+      of identity-conditioned response variation. The variation
+      is not uniform across foundation models, not uniform
+      across the three response dimensions, and not uniform
+      across identity-marker types. The vendor-selection
+      decision — which foundation model the tutoring product
+      is built on — is itself a fairness-relevant design
+      choice, and the case names it as such. The structurally
+      new variable in the case, by comparison with the race-
+      construct trio in the corpus, is the foundation-model
+      layer, which did not exist as a deployment-side decision
+      when the proctoring-bias and pulse-oximetry cases were
+      studied.#cn()
+    ],
+    [
+      The authors' framing is explicit and binding on the case.
+      LiveHint AI is in development, not deployment; this is a
+      methods-development paper proposing how foundation-model-
+      level fairness evaluation should be done before
+      deployment. The case is not the deployment-bias-audit
+      case the corpus carries at Cases 25 (Hoffman pain
+      assessment), 106 (pulse oximetry), 107 (eGFR), and 156
+      (Johnson school surveillance). It is the structurally
+      new methods-development case at the layer above those
+      deployments — the foundation-model layer — and it grounds
+      the curriculum's demographic-stratification anchor at
+      that layer.#cn()
+    ],
+    [
+      The open questions the authors preserve are the case's
+      load-bearing hedges. Whether the differentiation patterns
+      documented in lab-style probing match what students
+      encounter in deployed conversations — where session
+      length, follow-up turns, and student adaptation affect
+      the response trajectory — is a question the present study
+      cannot answer. Whether vendor selection across foundation
+      models becomes a routine fairness deliverable for the
+      educational-AI procurement pipeline is a market-evolution
+      question the present study can name but cannot resolve.
+      The case pairs with the race-construct trio for the
+      stratified-validation discipline and with Case 77
+      (hybrid human-AI tutoring) for the deployment-side
+      complement — the augmentation pattern Case 77 documents
+      depends on the foundation-model-level evaluation Case 88
+      is methodologically grounding.
+    ],
+  ),
+  beats: (
+    "LiveHint AI (Carnegie Learning) probed with identity-marked student queries across tone, detail, pedagogical appropriateness",
+    "Choice of foundation model materially affects differentiation level; vendor-selection decision is itself fairness-relevant",
+    "Methods-development paper (LiveHint in development), not deployment-bias audit; grounds demographic-stratification at foundation-model layer",
+    "Structurally new variable beyond race-construct trio (Cases 25/105/106/155): the foundation-model layer above the deployed system",
+    "Open: lab probing vs. deployed-conversation match; vendor selection as routine fairness deliverable; pair with Case 77",
+  ),
+  approaches: (
+    during: (
+      [Build the probing protocol to vary identity markers within matched query pairs; the methods-development contribution depends on the matched-pair design that isolates the identity-conditioned response variation.],
+      [Treat the choice of foundation model as a fairness-relevant design decision, not as an upstream procurement decision; the case demonstrates that the foundation-model layer materially affects the tutoring-layer's identity-conditioned response patterns.],
+      [Conduct the fairness evaluation before deployment, not after; the methods-development framing is that the evaluation should be a pre-deployment deliverable, parallel to the race-construct-trio cases at the deployment-audit layer.],
+    ),
+    after: (
+      [Commission the deployed-conversation evaluation that the lab-style probing cannot perform; the open question on whether probing patterns match deployment patterns is testable against deployment logs as the system moves toward release.],
+      [Publish the foundation-model-level fairness findings as part of the procurement record; the case argues that vendor selection across foundation models is a fairness deliverable, and the publication discipline is what would make that deliverable operational.],
+      [Pair the case in the curriculum with the race-construct trio (Cases 25, 26, 6, 48) so the demographic-stratification anchor is taught across both the deployed-system layer and the foundation-model layer above it.],
+    ),
+  ),
+  references: (
+    [AIED 2025, "Evaluating an AI Tutor for Bias Across Different Foundation Models," Springer/ACM proceedings, doi:10.1007/978-3-031-98465-5_43; preprint at renzheyu.com/papers/AIED2025_Tutor.pdf.],
+    [Bommasani, R. et al. (2021), "On the Opportunities and Risks of Foundation Models," Stanford CRFM — the foundation-model framing the case builds on.],
+    [Race-construct trio reference set: Hoffman et al. (2016), Sjoding et al. (2020) pulse oximetry, Inker et al. (2021) eGFR-without-race — paired with Cases 25, 26, 6.],
+    [Carnegie Learning LiveHint product documentation — the subject system; case framing is binding on LiveHint being in development, not deployment.],
+  ),
+  quote: [The choice of foundation model is itself a fairness-relevant design decision. The evaluation should be a pre-deployment deliverable, not a post-deployment audit.],
+  quote-source: "Editors' synthesis of the AIED 2025 LiveHint AI bias evaluation.",
+  le-insight: [
+    LiveHint AI is the methods-development case at the foundation-
+    model layer of LLM-tutoring fairness evaluation. The matched-
+    pair identity-probing protocol surfaces tone, detail, and
+    pedagogical-appropriateness differences across identities; the
+    foundation-model choice materially affects the differentiation
+    level. The case extends the race-construct trio into the LLM-
+    tutoring layer with a structurally new variable — the
+    foundation model — that did not exist at the deployment-audit
+    layer.
+  ],
+  lens-approach: [
+    LiveHint AI is the demographic-stratified validation case at
+    the foundation-model layer (induced 8.2; LENS D4/PT6). LENS
+    uses it in Domain 4 (Test and Evaluation) for the matched-
+    pair probing methodology and in Domain 3 (Human-System Collaboration) for the foundation-model-selection-as-
+    fairness-decision frame. Pair with the race-construct trio
+    (Cases 25, 26, 6, 48) at the deployment-audit layer
+    and with Case 77 (hybrid human-AI tutoring) as the
+    augmentation-pattern complement.
+  ],
+  literature-items: (
+    [AIED 2025 LiveHint AI bias evaluation],
+    [Bommasani et al. (2021), Stanford CRFM — foundation-model framing],
+    [Race-construct trio reference set — Hoffman / pulse-ox / eGFR],
+  ),
+  reflection-list: (
+    [Identify an LLM-based system in your domain whose foundation-model choice was treated as an upstream procurement decision rather than as a fairness-relevant design decision. What would the matched-pair probing protocol look like for that system, and what response dimensions would you assess?],
+    [Specify the pre-deployment fairness deliverable you would build into the procurement record for an LLM-based product in your domain. What would the published artifact contain — probe set, response-dimension assessment, foundation-model comparison — and what would the procurement decision turn on?],
+  ),
+  courses: ("LEN 3", "LEN 5", "LEN 7"),
+)
+
+// ---- Case 89 — data-privacy-and-learning-analytics-on ----
+#case(
+  number: 89,
+  slug: "data-privacy-and-learning-analytics-on",
+  title: "Data Privacy and Learning Analytics on the African Continent",
+  year: "2022",
+  domains-list: ("higher education (Africa)", "data privacy law", "learning analytics"),
+  modes-code: "KGN",
+  impact: "Mapped the legal and regulatory privacy landscape across African jurisdictions and surfaced the structural governance seam — African higher education frequently uses learning platforms and analytics hosted by external providers, creating cross-regime gaps where student data crosses jurisdictions with inconsistent protection — and recommended common cross-border data-sharing frameworks",
+  kind: "frontier",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "5.3",
+  lens-anchor: "D5/PT6",
+  clo-anchor: "CLO-5, CLO-3",
+  summary: [
+    Prinsloo, Slade, and Khalil (_British Journal of Educational
+    Technology_, 2022) mapped the legal and regulatory privacy
+    landscape across African jurisdictions and found a growing trend
+    toward comprehensive data-protection legislation, though few
+    frameworks are yet enacted and cross-border data-transfer
+    policies differ sharply between countries. The core governance
+    seam the paper surfaces — and what makes the case a frontier
+    rather than a settled instance — is what the v2 sweep names
+    *extraterritorial platform governance*: African higher education
+    frequently uses learning platforms, learning-management systems,
+    and analytics services hosted by external (typically Global-North
+    or Asian) providers, creating a structural gap where student data
+    is generated under one regulatory regime, processed under
+    another, and the institution's governance authority does not
+    reach the operating regime. The paper recommends common
+    cross-border data-sharing frameworks as the architectural
+    response. The case is included as a frontier — it documents the
+    governance architecture needed for responsible adoption rather
+    than a completed success — and it is valuable because it
+    surfaces a seam (extraterritorial hosting) the US-centric canon
+    rarely confronts, and that is increasingly universal as
+    institutions everywhere build on cloud and AI services they do
+    not control.
+  ],
+  sections: (
+    [
+      The standard framing of learning-analytics governance assumes
+      that the operating institution, the regulatory regime, and the
+      hosting infrastructure are co-located — a US university under
+      US law on US-hosted infrastructure, a UK university under UK
+      law on UK or EU infrastructure. African higher education sits
+      structurally outside this assumption. Most universities across
+      the continent rely on learning-management systems, predictive
+      analytics tools, and adjacent platforms hosted by providers
+      based in the Global North or in Asia, and the regulatory
+      regimes governing those providers are not the same as the
+      regimes governing the institutions or the students.#cn()
+    ],
+    [
+      Prinsloo, Slade, and Khalil's 2022 paper in the _British
+      Journal of Educational Technology_ maps the legal and
+      regulatory privacy landscape across African jurisdictions.
+      The picture is one of a continent in motion: a growing trend
+      toward comprehensive data-protection legislation following
+      the model the EU established with GDPR, but with few
+      frameworks yet enacted and substantial variation across
+      countries in scope, enforcement capacity, and cross-border
+      data-transfer policy. Some countries have comprehensive
+      frameworks; some have sectoral protections; some have
+      constitutional privacy provisions without operational
+      data-protection legislation; and the patchwork makes the
+      cross-border picture itself uneven.#cn()
+    ],
+    [
+      The structural seam the paper surfaces is what makes the case
+      teachable. When student data is generated under one
+      jurisdiction's regulatory regime, processed under another's
+      because the platform is hosted abroad, and the institution's
+      governance authority does not reach the operating regime, the
+      governance question becomes architectural rather than
+      institutional. The authors recommend common cross-border
+      data-sharing frameworks as the architectural response — the
+      kind of inter-regime instrument that GDPR's adequacy decisions
+      and successor cross-border-transfer mechanisms began to
+      construct between the EU and other regimes, but that no
+      comparable continent-wide African framework yet provides.
+      The case names the gap and the architectural response; what
+      it does not yet document is the build-out.#cn()
+    ],
+    [
+      The honest evidentiary state is what the frontier tag carries.
+      The paper is peer-reviewed and the mapping is grounded in
+      legal documentation across jurisdictions; what the case does
+      not establish — because the architecture is not yet built —
+      is that any specific cross-border framework has been adopted
+      and that the seam has been closed in practice. The case is
+      teachable on the structural pattern: the governance question
+      is the architectural one across regimes, not the policy one
+      inside any single regime. The outcome is open in the sense
+      that no continent-scale resolution yet exists. Future
+      validation will continue as African data-protection law
+      consolidates.#cn()
+    ],
+    [
+      The frontier note the case carries names what the v2 sweep
+      calls extraterritorial platform governance — capability
+      deployed on platforms governed by a different regime than the
+      one operating them. The pattern is not African-specific. It is
+      increasingly universal as institutions everywhere build on
+      cloud, AI, and platform services they do not control: a US
+      university on a US cloud is the historical case; a US
+      university running analytics through a model-hosted-elsewhere
+      service, a Latin American university on a US cloud, an
+      African university on a European platform — all share the
+      structural seam, and the African case surfaces it most
+      starkly because the regime asymmetry is largest there. The
+      case is the case-grounded basis for proposing
+      extraterritorial-platform-governance as a sub-competency the
+      existing curriculum does not yet name.
+    ],
+  ),
+  beats: (
+    "African higher education frequently uses LA platforms hosted by external providers — cross-regime seam between operating, regulating, and hosting jurisdictions",
+    "Prinsloo, Slade, & Khalil 2022 (BJET) map the African privacy landscape: growing trend, few frameworks enacted, cross-border policy uneven",
+    "Recommendation: common cross-border data-sharing frameworks — the architectural response to the inter-regime seam",
+    "Frontier — outcome open; the architecture is not yet built and no continent-scale resolution exists",
+    "Names the extraterritorial-platform-governance pattern: increasingly universal as everyone builds on services they do not control",
+  ),
+  approaches: (
+    during: (
+      [Map the regime structure explicitly: which jurisdiction generates the data, which processes it on the platform, which the institution operates under, which the student lives under. The seam is at the joints, and the joints have to be drawn before the architecture can be designed.],
+      [Choose the platform stack with the regime structure in view; a procurement decision is also a governance decision when the platform is in a different jurisdiction from the operating institution.],
+      [Treat the architectural response as common cross-border frameworks rather than institution-by-institution contract negotiation; the inter-regime instrument is what scales.],
+    ),
+    after: (
+      [Surface the extraterritorial-platform-governance pattern in any v2 case that involves cloud/AI infrastructure; the African case is the starkest instance, not the only one.],
+      [Carry the outcome-open honesty: the architecture is not yet built, and the case names the gap rather than a completed success.],
+      [Build the case-grounded basis for proposing extraterritorial-platform-governance as a sub-competency the existing curriculum does not yet name; pair with the OU and LALA cases at the governance-by-design layer.],
+    ),
+  ),
+  references: (
+    [Prinsloo, P., & Kaliisa, R. (2022), "Data privacy on the African continent: Opportunities, challenges and implications for learning analytics," _British Journal of Educational Technology_ 53(4):894–913, doi:10.1111/bjet.13226.],
+    [African Union Convention on Cyber Security and Personal Data Protection (Malabo Convention, 2014) — continental policy backdrop, partial ratification.],
+    [Slade & Prinsloo (2013), _American Behavioral Scientist_ — earlier framing on which the 2022 paper builds.],
+    [Open University Ethical Use of Student Data policy (2014) — single-regime governance-by-design companion.],
+  ),
+  quote: [The governance question is architectural across regimes, not policy inside any single regime. The seam is at the joints, and the joints have to be drawn before the architecture can be designed.],
+  quote-source: "Editors' synthesis of Prinsloo, Slade, & Khalil (2022).",
+  le-insight: [
+    The African data-privacy case names a governance seam the
+    existing curriculum underweights: extraterritorial-platform
+    governance, where the operating, regulating, and hosting
+    regimes diverge. The case is a frontier — peer-reviewed
+    mapping, architectural recommendation, no continent-scale
+    resolution yet built. The pattern is increasingly universal,
+    and the case-grounded basis is the case for naming a
+    sub-competency the framework does not yet have.
+  ],
+  lens-approach: [
+    African data privacy is the extraterritorial-platform
+    governance case (induced 5.3; LENS D5/PT6) — Domain 5 for
+    the cross-regime seam; Domain 3 for *Judgment under
+    inadequate evidence* on a frontier where the architectural
+    response is recommended but not built. Pair with Case 81
+    and Case 91.
+  ],
+  literature-items: (
+    [Prinsloo, Slade, & Khalil (2022), _BJET_, doi:10.1111/bjet.13226],
+    [Malabo Convention (2014) — AU continental policy],
+    [Slade & Prinsloo (2013), _American Behavioral Scientist_],
+  ),
+  reflection-list: (
+    [Identify a platform or service your institution depends on whose operating regime is different from your own. Which jurisdiction generates the data, which processes it, which regulates the institution, which regulates the user — and where is the seam between regimes?],
+    [Specify the architectural response your context needs: an institution-by-institution contractual approach, a sectoral framework, a cross-border data-sharing instrument. Which level resolves the seam, and which level cannot?],
+    [The case names extraterritorial platform governance as an under-named sub-competency. What instance from your domain would anchor it — a cloud-hosted clinical analytics tool, a model-as-a-service inference layer, a learning-platform vendor in a different jurisdiction — and how is the curriculum response different from a single-regime governance case?],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 9"),
+)
+
+// ---- Case 90 — algorithmic-college-admissions-vendors ----
+#case(
+  number: 90,
+  slug: "algorithmic-college-admissions-vendors",
+  title: "Algorithmic College Admissions — Vendors' Claims vs. Applicants' Perceptions",
+  year: "2025",
+  domains-list: ("higher education", "algorithmic decision-making", "human-computer interaction"),
+  modes-code: "TKN",
+  impact: "Eighteen semi-structured interviews with recent U.S. university applicants, using speculative-design probes, surfaced systematic distances between vendor marketing claims (efficiency, fairness, enhanced fit) and applicants' own perceptions (opacity, distrust, anticipated discrimination)",
+  kind: "frontier",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "8.4",
+  lens-anchor: "D5/PT6",
+  clo-anchor: "CLO-5, CLO-3",
+  coi: "John Katzman is a collaborator with the editors' home institution (Johns Hopkins) without being intimately involved in the underlying work; the affiliation is disclosed. Pyle and Andalibi's study is independent of Katzman; the case is placed in this cluster because it sits at the applicant-side of the enrollment-management deployment.",
+  summary: [
+    Pyle and Andalibi (CSCW 2025) report an interview study with
+    18 recent U.S. university applicants, using speculative-design
+    probes to surface how applicants perceive algorithmic systems
+    operating in college admissions and enrollment. The study's
+    central contribution is naming the systematic distance between
+    vendor marketing claims — efficiency, fairness, enhanced fit —
+    and applicants' own perceptions of how the systems would
+    treat them: opacity about the algorithm's existence, distrust
+    of its objectives, and anticipated discrimination across
+    protected characteristics. The case is the peer-reviewed
+    consent-side companion to Case 55 (Engler / enrollment
+    algorithms) and Case 57 (GAO OPM oversight gap). The
+    authors' own hedge is explicit: 18 interviews is the right
+    sample for the speculative-design method but not for
+    prevalence claims, and "future validation ongoing" applies
+    to whether the perception patterns generalize across
+    applicant demographics and institution types.
+  ],
+  sections: (
+    [
+      The deployment surface for algorithmic systems in college
+      admissions and enrollment has been studied largely from the
+      institutional side — what vendors promise, what colleges
+      buy, what optimization outcomes the institution reports.
+      The applicants whose lives the deployment most directly
+      affects have been the structurally absent voice in the
+      deployment record. Pyle and Andalibi's CSCW 2025 paper is
+      the systematic peer-reviewed correction at the consent-side
+      seam: an interview study with 18 recent U.S. university
+      applicants, using speculative-design probes calibrated to
+      surface applicants' perceptions of algorithmic systems
+      operating on their applications.#cn()
+    ],
+    [
+      The speculative-design method is the right instrument for
+      the question. Applicants in most cases do not know which
+      specific algorithmic systems acted on their applications;
+      the institutional side does not disclose the vendor stack
+      or the optimization objective at the point of application.
+      Speculative-design probes — scenario sketches that
+      concretize plausible algorithmic interventions and ask
+      applicants to react — let the study elicit perceptions
+      that are not contingent on the applicant having direct
+      knowledge of the deployed system. The 18-interview sample
+      is calibrated to the method's depth rather than to
+      prevalence-claim breadth, and the authors are explicit
+      about that calibration as a methodological choice.#cn()
+    ],
+    [
+      The findings name systematic distance between vendor
+      marketing and applicant perception across three axes.
+      Vendor marketing pitches efficiency — the system processes
+      more applications faster — while applicants name opacity:
+      they do not know which decisions are being made
+      algorithmically and they cannot interrogate the system's
+      logic. Vendor marketing pitches fairness — the system
+      treats applicants consistently — while applicants name
+      distrust of the objective the system is consistent with.
+      Vendor marketing pitches enhanced fit — the system matches
+      applicants to programs likely to serve them well — while
+      applicants name anticipated discrimination across protected
+      characteristics, drawing on the broader public record of
+      algorithmic disparate-impact findings.#cn()
+    ],
+    [
+      The case sits as the consent-side counterpart to Case 55
+      (Engler / Brookings, the deployment-side mapping) and Case
+      159 (GAO-22-104463, the regulator-side audit). Engler
+      documents the deployed algorithmic optimization; the GAO
+      audit documents the regulatory oversight gap; Pyle and
+      Andalibi document what the affected applicants understand
+      about the deployment. The three cases together name the
+      structural seam: a deployed system about which the
+      institutional side, the regulator, and the affected
+      population each hold partial and non-overlapping
+      information. The case also pairs with Cases 181 (Bartlett
+      lending fairness) and 138 (Gándara community-college equity)
+      as the applicant-perception strand of the equity-in-
+      deployed-prediction thread.#cn()
+    ],
+    [
+      The authors' hedges are binding on the case's framing.
+      Eighteen semi-structured interviews is the right N for the
+      speculative-design method, surfacing the dimensions of
+      perception that matter, but it is not the right N for
+      claims about prevalence — what fraction of applicants hold
+      each perception, how the perceptions distribute across
+      demographic groups, how they correlate with admissions
+      outcomes. The case is the strongest peer-reviewed evidence
+      currently available on the consent-side question; future
+      validation ongoing on whether the perception patterns
+      generalize across applicant demographics, institution
+      types, and the rapidly evolving algorithmic-deployment
+      landscape.
+    ],
+  ),
+  beats: (
+    "Pyle & Andalibi CSCW 2025: 18 semi-structured interviews with U.S. university applicants, speculative-design probes",
+    "Systematic distance: vendor marketing (efficiency, fairness, fit) vs. applicant perceptions (opacity, distrust, anticipated discrimination)",
+    "Consent-side companion to Case 55 (Engler deployment) and Case 57 (GAO regulator-side); applicants as structurally absent voice",
+    "Authors' hedge: 18 interviews is right for speculative-design depth, not for prevalence claims; future validation ongoing",
+    "Anchors the applicant-perception strand alongside Cases 181 (Bartlett) and 138 (Gándara) in the equity-in-prediction thread",
+  ),
+  approaches: (
+    during: (
+      [Include the affected-population voice in the deployment-decision record from the start; the systematic distance the study documents is partly the result of decision processes that did not include the affected voice.],
+      [Use speculative-design probes when the affected population cannot be expected to know what is deployed; the method is the right instrument for the consent-side question and the institutional side can commission it.],
+      [Treat the three perceived gaps — opacity, distrust, anticipated discrimination — as designable targets, not as misperceptions to correct; the perceptions are responses to the actual disclosure architecture.],
+    ),
+    after: (
+      [Commission the prevalence study the speculative-design study cannot perform; the perception patterns the 18-interview study surfaces are testable at survey scale, and the deployment-side institutions are best positioned to commission the survey.],
+      [Pair the consent-side study with the regulator-side audit (Case 57) and the deployment-side mapping (Case 55) in the curriculum; the three cases together name the partial-information structure of the deployment.],
+      [Track the perception findings over time as the algorithmic-deployment landscape evolves; the case's value as a longitudinal baseline depends on the comparison studies that come next.],
+    ),
+  ),
+  references: (
+    [Pyle, C., & Andalibi, N. (2025), "Algorithmic College Admissions in the U.S.: Distances Between Vendors' Claims and Applicants' Perceptions," _Proceedings of the ACM on Human-Computer Interaction_ 9(7), CSCW369, doi:10.1145/3757550.],
+    [Engler (2021), Brookings — paired deployment-side mapping (Case 55).],
+    [GAO-22-104463 (2022) — paired regulator-side audit (Case 57).],
+    [Dunne, A., & Raby, F. (2013), _Speculative Everything_ — methodological backdrop for speculative-design probes.],
+  ),
+  quote: [Vendors pitch efficiency, fairness, and fit. Applicants name opacity, distrust, and anticipated discrimination. The distance between the two is the case.],
+  quote-source: "Editors' synthesis of Pyle & Andalibi (2025).",
+  le-insight: [
+    Pyle and Andalibi is the peer-reviewed consent-side case at
+    the applicant end of the enrollment-management deployment.
+    Eighteen interviews surface systematic distance between
+    vendor marketing and applicant perception across three axes;
+    the authors' methodological hedge is binding on prevalence
+    claims. The case completes the partial-information triangle
+    with Cases 55 (deployment-side) and 180 (regulator-side).
+  ],
+  lens-approach: [
+    Pyle & Andalibi is the governance-rather-than-technique case
+    at the consent boundary (induced 8.4; LENS D5/PT6). LENS uses
+    it in Domain 5 (Navigating Sociotechnical Constraints) for
+    the affected-voice inclusion lesson and in Domain 3 (Machine
+    Teaming and Adaptation) for the disclosure-architecture
+    design at the applicant interface. Pair with Cases 55
+    (Engler deployment), 180 (GAO oversight), 103 (Bartlett),
+    and 138 (Gándara). coi-light render under the title is
+    binding for cluster placement.
+  ],
+  literature-items: (
+    [Pyle & Andalibi (2025), CSCW — algorithmic admissions perceptions],
+    [Dunne & Raby (2013), _Speculative Everything_],
+    [Engler (2021) and GAO-22-104463 — paired deployment- and regulator-side cases],
+  ),
+  reflection-list: (
+    [Identify a deployed prediction system in your domain whose affected population was not consulted in the deployment-decision record. What would a speculative-design study look like for surfacing the affected voice — and who is positioned to commission it?],
+    [Specify the three perceived gaps — opacity, distrust, anticipated discrimination — for the system you identified. Which of the three is a disclosure-architecture target, which is an objective-choice target, and which is an audit-evidence target?],
+  ),
+  courses: ("LEN 3", "LEN 5", "LEN 8"),
+)
+
+// ---- Case 91 — lala-building-learning-analytics ----
+#case(
+  number: 91,
+  slug: "lala-building-learning-analytics",
+  title: "LALA — Building Learning-Analytics Governance Capacity Across Latin America",
+  year: "2017 – 2020",
+  domains-list: ("higher education (Latin America)", "learning analytics", "cross-national governance"),
+  modes-code: "KN",
+  impact: "An EU-funded multi-country project (Chile, Ecuador, Mexico) that explicitly rejected lifting Global-North learning-analytics tools wholesale; structured interviews with administrators and focus groups with students and teachers produced the LALA CANVAS participatory adoption framework, with stakeholders demanding ethical responsibility as a precondition for data-driven feedback",
+  kind: "intervention",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "5.1",
+  lens-anchor: "D5/PT4",
+  clo-anchor: "CLO-5, CLO-3",
+  summary: [
+    The LALA (Learning Analytics for Latin America) project, funded
+    under EU grant 586120-EPP-1-2017-1-ES, ran from 2017 to 2020
+    across Chilean, Ecuadorian, and Mexican universities. The project
+    began from a deliberate refusal: not to lift US and European
+    learning-analytics tools wholesale into Latin American
+    institutional contexts, on the grounds that adoption fails when
+    the tools do not integrate with local learning design and
+    institutional decision-making. Through structured interviews with
+    administrators and focus groups with students and teachers, the
+    Hilliger et al. team (_Internet and Higher Education_, 2020)
+    surfaced what stakeholders actually needed for adoption to be
+    locally legitimate, and built the LALA CANVAS — a participatory
+    adoption framework that puts ethical responsibility on the
+    front-end of the adoption decision, not as a compliance
+    afterthought. The honest limit preserved verbatim: this is
+    adoption-readiness and capacity-building evidence, not yet
+    long-run outcome evidence that the deployed systems improved
+    student retention or learning. The contribution is the
+    participatory governance method that made adoption locally
+    legitimate — and the case is the non-US companion to OU Analyse
+    (Case 81), where governance-by-design unblocked deployment in
+    a different cross-cultural context.
+  ],
+  sections: (
+    [
+      Learning analytics as a field is heavily Global-North-shaped.
+      The reference tools (predictive at-risk classifiers, dashboard
+      analytics for instructors, early-warning systems) were
+      developed at US and European universities with US and European
+      governance assumptions about data, consent, and institutional
+      decision-making. The LALA project began from the documented
+      observation that lifting those tools wholesale into Latin
+      American institutional contexts had failed before — adoption
+      stalled, instructors did not use the dashboards, students did
+      not trust the predictions — and that the failure was
+      structural, not technical: the tools had not been integrated
+      with the local learning design or the institutional
+      decision-making process they were meant to inform.#cn()
+    ],
+    [
+      The project ran across Chilean, Ecuadorian, and Mexican
+      universities under an EU Erasmus+ grant from 2017 to 2020.
+      The method's first commitment was participatory: structured
+      interviews with administrators surfacing what their decisions
+      actually needed evidence about; focus groups with teachers
+      and students surfacing what they would accept, what they
+      would resist, and what they wanted the analytics to do.
+      Hilliger et al. (_Internet and Higher Education_, 2020) is
+      the peer-reviewed mixed-methods report that documents the
+      method and the findings. The headline result is that
+      stakeholders consistently named ethical responsibility as a
+      precondition for data-driven feedback rather than as a
+      compliance burden — they wanted the analytics, conditional on
+      the governance being right first.#cn()
+    ],
+    [
+      The deliverable is the LALA CANVAS — a participatory adoption
+      framework that walks an institution through the decisions
+      that have to be made before a learning-analytics system is
+      deployed: which questions the system is for, which
+      stakeholders' consent is required, what disclosure is owed,
+      what the operating governance will look like once the system
+      runs. The framework's contribution is procedural: it converts
+      the governance question from a yes/no gate at deployment time
+      into a structured set of decisions taken openly during the
+      adoption process. The participatory method made the framework
+      locally legitimate across three regimes whose own data
+      governance is differently mature.#cn()
+    ],
+    [
+      The honest limit survives into the case. The published
+      evidence is adoption-readiness and capacity-building
+      evidence: the CANVAS was developed and validated through the
+      participatory process, and the project produced trained local
+      teams with the capacity to lead adoption in their own
+      institutions. What the evidence does *not* yet establish is
+      that the deployed systems improved long-run student
+      retention or learning outcomes. The case is teachable on the
+      governance method — the participatory route to local
+      legitimacy — and the outcome evidence is the next study, not
+      this one. Drafting that softens this hedge over-states the
+      claim.#cn()
+    ],
+    [
+      In pair with the Open University case (Case 81, the UK
+      consent-by-design intervention), LALA shows that the
+      governance-by-design pattern is transferable across regimes:
+      OU built consent for a single-institution intervention under
+      pre-GDPR UK scrutiny; LALA built participatory adoption for
+      multi-country capacity-building under three different Latin
+      American regulatory regimes. The pair plus SyRI (Case 184)
+      teaches the non-US LA governance triple — design that
+      unblocked deployment (OU), participatory governance that
+      built adoption capacity (LALA), and rights-grounded halt
+      (SyRI) — three honest results for the same structural
+      question of when delegation to analytic infrastructure is
+      legitimate.
+    ],
+  ),
+  beats: (
+    "LALA (EU Erasmus+, 2017–2020): explicit refusal to lift Global-North LA tools wholesale into Latin American institutions",
+    "Structured interviews with administrators and focus groups with students and teachers across Chile, Ecuador, Mexico",
+    "Hilliger et al. 2020 (Internet and Higher Education): stakeholders demand ethical responsibility as precondition, not afterthought",
+    "Deliverable is the LALA CANVAS — participatory adoption framework converting governance from a deployment gate to a structured set of decisions",
+    "Honest limit: adoption-readiness / capacity-building evidence, not yet long-run outcome evidence that deployed systems improved retention",
+  ),
+  approaches: (
+    during: (
+      [Begin from the documented failure mode — Global-North tools that did not transfer — so the adoption project is designed against the actual local barrier, not against an imagined universal one.],
+      [Run the participatory method with administrators, teachers, and students separately; the decisions, the daily use, and the consent each sit with a different stakeholder.],
+      [Convert the governance question from a yes/no deployment gate into a structured set of decisions surfaced during adoption; the CANVAS is the worked artifact of that conversion.],
+    ),
+    after: (
+      [Report the evidence at its tier: adoption-readiness and capacity-building is what the published study establishes; long-run student-outcome evidence is the next study, and the case names that gap rather than glossing it.],
+      [Commission longitudinal follow-up at the institutions that adopted via the CANVAS to convert capacity-building evidence into deployed-outcome evidence over time.],
+      [Carry the cross-regime lesson into the broader v2 governance set: governance-by-design is transferable, but the local participatory process is the half that does not transfer; each regime has to do it for itself.],
+    ),
+  ),
+  references: (
+    [Hilliger, Ortiz-Rojas, Pesántez-Cabrera, Scheihing, Tsai, Muñoz-Merino, Broos, Whitelock-Wainwright, & Pérez-Sanagustín (2020), "Identifying needs for learning analytics adoption in Latin American universities: A mixed-methods approach," _The Internet and Higher Education_ 45:100726, doi:10.1016/j.iheduc.2020.100726.],
+    [LALA project — EU Erasmus+ grant 586120-EPP-1-2017-1-ES (2017–2020) — program documentation and the LALA CANVAS artifact.],
+    [Open University Ethical Use of Student Data policy (2014) and OU Analyse — UK companion governance-by-design case (Case 81).],
+    [Slade & Prinsloo (2013), "Learning Analytics: Ethical Issues and Dilemmas," _American Behavioral Scientist_ 57(10):1510–1529 — the broader field-scale ethics framing.],
+  ),
+  quote: [Stakeholders did not want the analytics if the governance was wrong. They wanted both, in that order, with ethical responsibility as the precondition rather than the afterthought.],
+  quote-source: "Editors' synthesis of Hilliger et al. (2020).",
+  le-insight: [
+    LALA converted learning-analytics adoption from a Global-North
+    template-lift into a participatory process that built local
+    legitimacy across three Latin American regimes. The CANVAS is
+    the artifact; the participatory method is the deliverable.
+    The honest limit — adoption-readiness evidence, not yet
+    long-run outcome evidence — is what the case carries, and the
+    outcome study is the next one.
+  ],
+  lens-approach: [
+    LALA is the non-US participatory-governance case
+    (induced 5.1; LENS D5/PT4) — Domain 5 for the cross-regime
+    participatory method; Domain 3 on *Judgment under
+    inadequate evidence* (adoption-readiness, not closed
+    outcome proof). Pair with Case 81 (OU) and Case 184
+    (SyRI).
+  ],
+  literature-items: (
+    [Hilliger et al. (2020), _Internet and Higher Education_, doi:10.1016/j.iheduc.2020.100726],
+    [LALA CANVAS — project artifact],
+    [Slade & Prinsloo (2013), _American Behavioral Scientist_],
+  ),
+  reflection-list: (
+    [Identify a tool or framework in your domain that has been lifted from one regime to another without local adaptation. What participatory method would surface what the destination stakeholders actually need, and what would convert the governance question into a structured set of decisions during adoption rather than a gate at deployment?],
+    [Specify the evidence tier honestly for an adoption-readiness case in your context: capacity-building and process evidence is what you can publish now; long-run outcome evidence is the next study. Where in your communication is the tier most at risk of being smoothed away?],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 92 — norways-national-expert-commission-on ----
+#case(
+  number: 92,
+  slug: "norways-national-expert-commission-on",
+  title: "Norway's National Expert Commission on Learning Analytics",
+  year: "2022 – 2023",
+  domains-list: ("education (Norway)", "national policy", "learning analytics"),
+  modes-code: "GKN",
+  impact: "Rather than let learning analytics diffuse unregulated or block it, Norway's Ministry of Education convened a national Expert Commission to investigate the pedagogical, ethical, legal, and privacy issues and establish a regulatory foundation before sector-wide deployment; interim report June 2022, final report 2023 (NOU), with central dilemmas explicitly framed",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "program-report",
+  induced-anchor: "5.4",
+  lens-anchor: "D5/PT4",
+  clo-anchor: "CLO-5, CLO-3",
+  summary: [
+    Norway's Ministry of Education convened a national Expert
+    Commission on Learning Analytics in 2022 — a national-government
+    response to a capability deployment question at sector scale.
+    Rather than let learning analytics diffuse unregulated across
+    Norwegian education, or block it on precautionary grounds, the
+    ministry chose to construct the governance architecture first.
+    The commission delivered an interim report to the Minister in
+    June 2022 and a final report in 2023 (the NOU,
+    _Norges offentlige utredninger_, the canonical form of Norwegian
+    public commission reports) identifying central dilemmas across
+    the pedagogical, ethical, legal, and privacy dimensions. The
+    case is governance-as-deliberate-artifact at national scale — a
+    country treating change-control and disclosure as the
+    precondition for adoption rather than the consequence of it. The
+    honest limit preserved verbatim: the commission's
+    recommendations were guidance to a ministry, and downstream
+    sector outcomes — whether deployed Norwegian LA systems actually
+    improved learning outcomes or preserved trust under operation —
+    are not yet documented. This is process-level evidence (a
+    national governance artifact exists, the dilemmas are named),
+    not yet deployment-outcome evidence. The case pairs with the
+    OU (Case 81) and SyRI (Case 184) cases as the national
+    Nordic complement to the institutional-UK and judicial-Dutch
+    governance modes.
+  ],
+  sections: (
+    [
+      Learning analytics at sector scale presents a national
+      government with a structural choice. Let the technology diffuse
+      across schools and universities under existing patchwork
+      governance (Sweden's path through the 2010s), or block it on
+      precautionary grounds until questions are settled (a path some
+      jurisdictions have pursued for specific applications), or
+      construct the governance architecture first and let deployment
+      follow under it. Norway in 2022 chose the third path. The
+      Ministry of Education convened a national Expert Commission
+      on Learning Analytics to investigate the pedagogical, ethical,
+      legal, and privacy issues across the whole education sector
+      and to establish a regulatory foundation for what
+      sector-scale deployment should look like.#cn()
+    ],
+    [
+      The commission's mandate covered the full chain. Pedagogically,
+      what kinds of learning-analytics-driven interventions are
+      defensible at primary, secondary, and tertiary levels; what
+      claims about outcome the evidence supports; what
+      teacher-student relationship the analytics should and should
+      not be allowed to alter. Ethically, what is owed to students
+      whose data drives the analytics, what consent architecture is
+      defensible across age groups, and what disclosure structure
+      the analytics-driven decisions should carry. Legally, how the
+      Norwegian data-protection regime under GDPR interacts with
+      the educational context, and what additional sectoral
+      instruments are needed. Privacy, where the line is between
+      pedagogically useful data and surveillance overreach.#cn()
+    ],
+    [
+      The commission delivered an interim report to the Minister of
+      Education and Research in June 2022 and a final report in
+      2023 in the canonical NOU form. The reports name central
+      dilemmas the field has to live with rather than resolve once:
+      the tension between predictive support and predictive
+      gatekeeping; the tension between transparency to the student
+      and the technical complexity of the models; the tension
+      between cross-institutional benchmarking and student-data
+      protection; the tension between national pedagogical
+      consistency and institutional autonomy in how analytics are
+      used. The reports' framing is that governance for
+      learning analytics is the kind of artifact that has to be
+      revisited as the technology and the evidence base change, not
+      a one-time document.#cn()
+    ],
+    [
+      The honest evidentiary state is process-level. The case
+      establishes that a national government can produce a
+      structured governance artifact, identify the dilemmas
+      sector-scale deployment will face, and deliver the
+      architecture as guidance to a ministry. The case does *not*
+      yet establish that downstream Norwegian sector outcomes —
+      improved learning, preserved trust, defensible interventions
+      — have been delivered, because deployment under the new
+      architecture is too recent for outcome evidence. This is a
+      governance-process success, not yet a measured
+      deployment-outcome success, and the case carries the
+      qualification rather than collapsing it.#cn()
+    ],
+    [
+      In pair with the Open University (Case 81, institutional
+      governance-by-design, UK) and SyRI (Case 184, judicial
+      rights-grounded halt, Netherlands), Norway's commission is
+      the national-scale governance-architecture mode. The three
+      cases together teach that learning-analytics governance can
+      be produced at the institutional level (OU), constrained by
+      the courts after the fact (SyRI), or constructed by national
+      deliberation before sector deployment (Norway). The
+      structural lesson is that governance is producible as a
+      deliverable at whichever level matches the deployment scope,
+      and the choice of level is itself a governance decision the
+      case literature names.
+    ],
+  ),
+  beats: (
+    "Norway's Ministry of Education convenes national Expert Commission on Learning Analytics in 2022 — sector-scale governance-first response",
+    "Mandate covers pedagogical, ethical, legal, and privacy dimensions across the whole education sector",
+    "Interim report June 2022, final report 2023 (NOU) names central dilemmas: predictive support vs gatekeeping, transparency vs model complexity, benchmarking vs data protection",
+    "Honest limit: process-level evidence (artifact exists, dilemmas named); downstream sector outcomes not yet documented — governance-process success, not yet deployment-outcome success",
+    "Pair with OU (Case 81, institutional) and SyRI (Case 184, judicial); national-scale governance-architecture mode in the non-US LA triple",
+  ),
+  approaches: (
+    during: (
+      [Match the governance artifact to the deployment scope: institutional governance for a single university, national commission for sector-scale deployment, judicial review when neither operates. The choice of level is itself a governance decision.],
+      [Convene the commission with the dimensional breadth the deployment actually has: pedagogical, ethical, legal, privacy — not only the dimension the most-visible objection sits on.],
+      [Frame the artifact as living: governance for a moving technology has to be revisited as the technology and the evidence base change, and the artifact should say so.],
+    ),
+    after: (
+      [Report the evidence at its tier: governance-process success is what the commission and NOU establish; deployment-outcome success is the next decade's work, and the case is honest about the gap.],
+      [Carry the central dilemmas into the implementation conversation rather than treating them as resolved by publication of the NOU; the dilemmas are what implementation will live with.],
+      [Use the case as the national-scale instance in the OU / LALA / SyRI / Norway non-US LA governance set; the joint teaching point is that governance is producible at whichever level matches the deployment scope.],
+    ),
+  ),
+  references: (
+    [Norwegian Expert Commission on Learning Analytics, interim report to the Minister of Education and Research (June 2022).],
+    [Norwegian Expert Commission on Learning Analytics, final NOU report (2023), _Norges offentlige utredninger_.],
+    [Misiejuk & Wasson (2023), "Learning analytics in Norway: A national perspective," _Journal of Learning Analytics_ — secondary academic synthesis of the commission and its dilemmas.],
+    [Hilliger et al. (2020), _Internet and Higher Education_ — the LALA companion at multi-country participatory scale (Case 91).],
+  ),
+  quote: [The commission did not resolve learning-analytics governance for Norway. It named the dilemmas the sector will live with and produced the artifact deployment can be governed under.],
+  quote-source: "Editors' synthesis of the Norwegian Expert Commission interim and final reports.",
+  le-insight: [
+    Norway's national Expert Commission is the
+    governance-architecture-at-national-scale instance: a country
+    constructing the regulatory and pedagogical foundation before
+    sector-scale learning-analytics deployment, rather than after
+    diffusion or via judicial halt. The artifact exists and the
+    dilemmas are named; downstream sector outcomes are not yet
+    documented. Process-level success; deployment-outcome
+    evidence is the next decade's work.
+  ],
+  lens-approach: [
+    Norway is the national-scale governance-architecture case
+    (induced 5.4; LENS D5/PT4). LENS uses it in Domain 5
+    (Navigating Sociotechnical Constraints) for the change-
+    control-and-disclosure-as-artifact discipline and in
+    Domain 4 (Test and Evaluation) for the CLO *Judgment
+    under inadequate evidence* on the process-vs-outcome tier.
+    Pair with Case 81 (OU, institutional), Case 184 (SyRI,
+    judicial), Case 91 (LALA, multi-country participatory),
+    and Case 89 (African data privacy, frontier) — the non-US
+    LA governance pentad teaching the level-of-governance
+    decision.
+  ],
+  literature-items: (
+    [Norwegian Expert Commission interim report (2022) and final NOU (2023)],
+    [Misiejuk & Wasson (2023), _JLA_ — secondary synthesis],
+    [Hilliger et al. (2020), _Internet and Higher Education_],
+  ),
+  reflection-list: (
+    [Identify a sector-scale capability deployment question in your domain. Is the right governance level institutional, sectoral, national, or judicial — and what determines the match between deployment scope and governance level?],
+    [Specify the dimensional breadth your commission or governance artifact would have to cover. Norway's mandate was pedagogical, ethical, legal, and privacy. What is the analog in your context, and which dimension is most at risk of being narrowed away under stakeholder pressure?],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 93 — singapore-skillsfuture-national ----
+#case(
+  number: 93,
+  slug: "singapore-skillsfuture-national",
+  title: "Singapore SkillsFuture — National Workforce Capability at Scale",
+  year: "2015 – present",
+  domains-list: ("workforce development", "national L&D policy", "Asia-Pacific"),
+  modes-code: "GKD",
+  impact: "Singapore's SkillsFuture pairs individual training credits with employer subsidies, a cross-sector skills framework, and a two-wave outcome survey (TRAQOM, at end-of-course and at six months) — a 2018 MTI study found a 5.8% real wage premium for WSQ-trained workers, with 87% of Work-Study Programme graduates employed full-time within six months",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "program-report",
+  evidence-flag: "practice-synthesis-tier",
+  induced-anchor: "2.4",
+  lens-anchor: "D5/PT4",
+  clo-anchor: "CLO-2, CLO-5, CLO-3",
+  summary: [
+    Singapore's SkillsFuture Movement, launched in 2015, pairs
+    individual training credits with employer subsidies, a
+    cross-sector skills framework, and one of the most ambitious
+    national L&D measurement instruments deployed at scale: the
+    two-wave TRAQOM survey, administered at end-of-course and at
+    six months post-training, paired with labor-market data.
+    Self-reported figures from the 2024 Year-in-Review are
+    strong: 98% of trainees report being able to perform better
+    at work; 93% report the course played a pivotal role; 87% of
+    Work-Study Programme graduates are employed full-time within
+    six months; a 2018 MTI study found a 5.8% real wage premium
+    for WSQ-trained workers. The honest reading the case carries
+    into print: self-report dominates the headline numbers, and
+    the program has not been subjected to a rigorous
+    quasi-experimental external evaluation that would isolate
+    the program's causal effect from underlying labor-market
+    trends. SkillsFuture is the non-US national-scale L&D case
+    the corpus needs for both the corporate / workforce L&D gap
+    and the non-US/UK/EU gap. The evidence-tier flag is
+    practice-synthesis: the program design and the TRAQOM
+    instrument are documented in SSG annual reports and in ILO
+    and Springer analyses, the headline outcomes are
+    self-report, and future validation — particularly
+    quasi-experimental causal evaluation — is ongoing.
+  ],
+  sections: (
+    [
+      SkillsFuture was launched in 2015 as a Singapore-wide
+      workforce-capability program at the seam between
+      individual upskilling, employer demand, and state
+      coordination. The program design pairs individual
+      training credits (SkillsFuture Credit), employer
+      subsidies for workforce training, a cross-sector skills
+      framework that defines competencies and progression paths
+      across industries, and a Work-Study Programme that
+      embeds learners in employer contexts during training.#cn()
+    ],
+    [
+      The measurement instrument is unusually ambitious for a
+      national L&D program. The Training Quality and Outcomes
+      Measurement framework (TRAQOM) is a two-wave outcome
+      survey administered at end-of-course and at six months
+      post-training. It is paired with labor-market data so
+      that self-reported outcomes can be cross-checked against
+      employment and wage outcomes at population scale. The
+      design crosses the Kirkpatrick Level-2 / Level-3 seam
+      (Case 79) at policy level, not only program level.#cn()
+    ],
+    [
+      The 2024 Year-in-Review reports headline figures: 98% of
+      trainees report being able to perform better at work;
+      93% report the course played a pivotal role; 87% of
+      Work-Study Programme graduates are employed full-time
+      within six months. A 2018 study by the Ministry of Trade
+      and Industry found a 5.8% real wage premium for workers
+      with a Workforce Skills Qualifications (WSQ)
+      certification. The labor-market figures are the
+      strongest available external corroboration of the
+      self-report data.#cn()
+    ],
+    [
+      The honest reading is the load-bearing teaching point.
+      Self-report dominates the headline outcomes. The program
+      has not been subjected to a rigorous quasi-experimental
+      external evaluation that would isolate the program's
+      causal effect from underlying labor-market trends — and
+      Singapore's labor market has been strong across the
+      program's deployment period. The TRAQOM design is one of
+      the strongest national L&D instruments deployed, and
+      what it cannot yet do is what no national L&D instrument
+      yet does well: produce decision-grade causal evidence at
+      population scale. Future validation is ongoing.#cn()
+    ],
+    [
+      The LENS teaching point is that the program is a
+      non-US national-scale case for the corporate / workforce
+      L&D cluster (Cases 79, 65, 83, 70) and a non-US/UK/EU
+      case for the geographic-coverage gap. The amended CLO on
+      collaboration measurement is directly exercised: TRAQOM
+      measures across employer-employee-state, not only
+      across the training organization. Pair with Case 18
+      (PEPFAR) for the global-health workforce-capability
+      counterpart, and with Case 70 (HILS) for the
+      design-side practitioner pattern that the SSG program
+      operationalizes at policy scale. Evidence-tier flag is
+      practice-synthesis; the design is documented, the
+      causal magnitudes are open.#cn()
+    ],
+  ),
+  beats: (
+    "SkillsFuture launched 2015: individual training credits + employer subsidies + cross-sector skills framework + Work-Study Programme",
+    "TRAQOM: two-wave outcome survey (end-of-course + six months) paired with labor-market data; ambitious national L&D instrument",
+    "2024 Year-in-Review: 98% perform-better self-report; 93% pivotal role; 87% WSP graduates employed FT within 6 months; 2018 MTI 5.8% wage premium for WSQ-trained",
+    "Honest reading: self-report dominates; no rigorous quasi-experimental causal evaluation; future validation ongoing",
+    "Practice-synthesis tier; cross-listed Gap 2 (workforce L&D) + Gap 5 (non-US/UK/EU); pairs with Cases 70 (HILS) and 163 (PEPFAR)",
+  ),
+  approaches: (
+    during: (
+      [Design the measurement instrument across the training-and-employment seam, not within the training organization alone — TRAQOM's two-wave + labor-market cross-check is the architecture the LENS Domain 4 module should teach.],
+      [Make the cross-sector skills framework a first-class artifact — without it the credits, the subsidies, and the Work-Study Programme do not cohere as a single workforce-capability deliverable.],
+      [Treat the self-report dominance honestly: name what TRAQOM can and cannot establish at the design stage, so the program documentation does not have to retrofit the hedge.],
+    ),
+    after: (
+      [Pair with Case 18 (PEPFAR) for the global-health workforce-capability counterpart at multi-country scale; together they teach what national- and program-scale L&D measurement at evidence-flagged tier looks like.],
+      [Use the amended CLO on collaboration measurement: TRAQOM is a worked example of measurement across employer-employee-state, and the program documentation can teach the architecture in LENS Domain 5 (Sociotechnical Constraints).],
+      [Carry the practice-synthesis flag honestly: the program design and the TRAQOM instrument are documented, the headline magnitudes are self-report, and future validation requires independent quasi-experimental causal evaluation.],
+    ),
+  ),
+  references: (
+    [SkillsFuture Singapore (SSG), Year-in-Review 2024 — program metrics and outcome reporting.],
+    [Ministry of Education (MOE), Singapore, parliamentary replies on TRAQOM, 2020.],
+    [International Labour Organization (ILO), "Investigating an Upskilling Programme in Singapore" — international comparative analysis.],
+    ["Future-Skilling the Workforce: SkillsFuture Movement in Singapore," Springer, 2024 — peer-reviewed program analysis.],
+    [Ministry of Trade and Industry (MTI), Singapore, 2018 — WSQ wage-premium study.],
+  ),
+  quote: [The instrument crosses the Level-2 / Level-3 seam at policy level. What it cannot yet do is what no national L&D instrument yet does well.],
+  quote-source: "Editors' synthesis of the SkillsFuture Movement and the TRAQOM measurement framework.",
+  le-insight: [
+    SkillsFuture is the non-US national-scale L&D case the
+    corpus needs. The TRAQOM instrument is among the most
+    ambitious national L&D measurement architectures
+    deployed; the headline outcomes are self-report dominant;
+    no rigorous quasi-experimental external evaluation yet
+    exists. Evidence-tier flag is practice-synthesis; future
+    validation is ongoing.
+  ],
+  lens-approach: [
+    SkillsFuture is the national workforce-capability case
+    (induced 2.4; LENS D5/PT4). LENS uses it in Domain 5
+    (Navigating Sociotechnical Constraints) for the amended
+    CLO on collaboration measurement — TRAQOM measures
+    across employer-employee-state — and in Domain 2 as the
+    policy-scale operationalization of the HILS-style
+    environment-and-event integration (Case 70). Pairs with
+    Case 18 (PEPFAR) for the global-health
+    workforce-capability counterpart.
+  ],
+  literature-items: (
+    [SSG Year-in-Review 2024 and TRAQOM program documentation],
+    [ILO and Springer (2024) program analyses],
+    [MTI 2018 WSQ wage-premium study],
+  ),
+  reflection-list: (
+    [Identify a workforce-capability program in your context that currently measures at the training-organization boundary. What would the analogue of TRAQOM — a two-wave outcome survey paired with employment-and-wage data at population scale — require of your measurement infrastructure?],
+    [Specify the cross-sector skills framework that would coordinate individual credits, employer subsidies, and a Work-Study-style placement program in your context. Without the framework, do the components cohere as a single capability deliverable?],
+    [SkillsFuture's headline magnitudes are self-report dominant. What independent quasi-experimental evidence — comparison-cohort design, regression discontinuity, instrumented variation — would you require before treating any specific outcome magnitude as decision-grade for a program-scale investment in your context?],
+  ),
+  courses: ("LEN 2", "LEN 4", "LEN 8"),
+)
+
+// ---- Case 94 — learning-analytics-on-the-african ----
+#case(
+  number: 94,
+  slug: "learning-analytics-on-the-african",
+  title: "Learning Analytics on the African Continent — A Scoping Review as the Present-State Map",
+  year: "2022",
+  domains-list: ("learning analytics", "higher education", "Africa"),
+  modes-code: "KN",
+  impact: "A 2022 scoping review found only 15 learning-analytics studies on the entire African continent, concentrated in Morocco, South Africa, Nigeria, and Ethiopia; the structural finding — limited LMS access, limited institutional resourcing, limited African-scholar visibility at SoLAR — is itself the evidence the field requires before construct-travel claims can be made",
+  kind: "frontier",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  evidence-flag: "practice-synthesis-tier",
+  induced-anchor: "8.4",
+  lens-anchor: "D5/PT4",
+  clo-anchor: "CLO-4, CLO-5",
+  summary: [
+    Prinsloo and colleagues (2022) published a scoping review of
+    learning-analytics research on the African continent for the
+    _Journal of Learning Analytics_. The review found only 15
+    studies meeting inclusion criteria, with publication output
+    concentrated in Morocco, South Africa, Nigeria, and Ethiopia.
+    The structural findings — limited LMS access in many African
+    higher-education institutions, limited institutional
+    resourcing for learning-analytics infrastructure, and limited
+    African-scholar visibility at the Society for Learning
+    Analytics Research (SoLAR) conferences — are the present-state
+    map the field needs before importing US/UK/EU
+    learning-analytics constructs into African contexts. The case
+    is included as a frontier scoping case at the practice-
+    synthesis tier: a review of an early-stage research base
+    where the absence of dense primary studies is itself the
+    finding. It pairs with the African data-privacy governance
+    case earlier in the corpus to articulate the construct-travel
+    problem in both research-base and governance terms. Future
+    validation ongoing as the African learning-analytics
+    literature matures.
+  ],
+  sections: (
+    [
+      Learning analytics as a field consolidated around 2011 with
+      the formation of SoLAR and a research agenda anchored
+      heavily in US, Australian, UK, and EU higher-education data
+      infrastructures. The capability question for the African
+      higher-education community is whether the analytic
+      constructs travel — and who is positioned to validate them
+      when they arrive. Prinsloo et al. set out to map what
+      learning-analytics research had actually been published
+      from African institutions at the time of writing.#cn()
+    ],
+    [
+      The headline finding is sparse. The scoping review located
+      only 15 learning-analytics studies on the African continent,
+      with publication output concentrated in Morocco, South
+      Africa, Nigeria, and Ethiopia. Adjacent South African
+      higher-education studies — Lemmens and Henn (2015) and a
+      2020 paper on the development of a contextualised
+      learning-analytics framework — extend but do not change the
+      magnitude of the gap. The corpus exists; it is small,
+      geographically concentrated, and dwarfed by the parent
+      field's publication output from US/UK/EU institutions.#cn()
+    ],
+    [
+      The structural findings underneath the count are the
+      load-bearing teaching. African higher-education
+      institutions face limited LMS access at scale (many
+      institutions still rely on heterogenous and intermittent
+      digital infrastructure); limited institutional resourcing
+      for the data-engineering, ethics-review, and analyst
+      capacity that learning analytics presupposes; and limited
+      African-scholar visibility at SoLAR and related venues. The
+      construct-travel problem is not abstract — it is the
+      mismatch between what the analytic frameworks assume about
+      data availability and what the institutions can actually
+      generate.#cn()
+    ],
+    [
+      The case is positioned as frontier rather than failure or
+      intervention because it does not document a deployed
+      capability outcome. It documents the state of the evidence
+      base, which is itself the relevant capability question for
+      anyone considering whether to deploy a learning-analytics
+      program in an African higher-education institution. The
+      review surfaces the construct-validation work that has not
+      yet been done; the absence of dense primary studies is the
+      finding, and the implication is that any deployer must
+      either undertake the validation work themselves or import
+      constructs with the validation gap acknowledged.#cn()
+    ],
+    [
+      The practice-synthesis-tier flag is load-bearing. A scoping
+      review is the field's snapshot at a moment in time; the
+      individual primary studies it draws on vary in rigor, and
+      the review is the strongest single map of the present state
+      but not the final account. Future validation ongoing as the
+      literature matures, as institutional infrastructure
+      improves, and as African scholars author more of the
+      learning-analytics research that travels out of the
+      continent rather than into it. The case carries the standing
+      tier language into print.
+    ],
+  ),
+  beats: (
+    "Prinsloo et al. (2022) scoping review of learning analytics on African continent — 15 studies total",
+    "Publication concentrated in Morocco, South Africa, Nigeria, Ethiopia; adjacent SA studies extend but do not change magnitude",
+    "Structural barriers: limited LMS access, limited institutional resourcing, limited African-scholar visibility at SoLAR",
+    "Construct-travel problem stated as research-base evidence; pairs with African data-privacy case for the governance side",
+    "Frontier case; practice-synthesis-tier flag preserved; future validation ongoing as the literature matures",
+  ),
+  approaches: (
+    during: (
+      [When importing learning-analytics constructs into an African higher-education context, treat the scoping-review map as the precondition: do not assume the construct's validation literature applies and identify which validation work has to be repeated locally.],
+      [Specify the institutional preconditions the analytic framework presupposes — LMS coverage, data-engineering capacity, ethics-review infrastructure — and audit them honestly against the deploying institution's actual conditions.],
+      [Carry the practice-synthesis-tier flag through any decision document the scoping review supports; the review is the strongest current map but not the final account.],
+    ),
+    after: (
+      [Treat each deployed learning-analytics program in an African institution as a contribution to the construct-validation literature, not only as a service intervention; publish the validation work where SoLAR and related venues can absorb it.],
+      [Track institutional infrastructure conditions as a separate variable from analytic-construct performance; a construct that travels under one set of conditions may not travel under another.],
+      [When the literature matures, retire the scoping review as the present-state map and replace it with denser primary-study evidence; the case is included because the present-state matters now, not because the present-state should persist.],
+    ),
+  ),
+  references: (
+    [Prinsloo, P., & Kaliisa, R. (2022), "Learning Analytics on the African Continent: An Emerging Research Focus and Practice," _Journal of Learning Analytics_; ResearchGate publication 361096718.],
+    [Lemmens, J.-C., & Henn, M. (2015), South African Association for Institutional Research (SAAIR) proceedings — adjacent SA higher-education learning-analytics work.],
+    [SciELO (2020), "Development of a contextualised learning-analytics framework for South African higher education."],
+    [Cross-reference: the African data-privacy governance case earlier in the corpus, for the construct-travel problem stated in governance terms.],
+  ),
+  quote: [The absence of dense primary studies is itself the finding.],
+  quote-source: "Editors' synthesis of Prinsloo et al. (2022).",
+  le-insight: [
+    The scoping review is the present-state map of
+    learning-analytics research on the African continent: 15
+    studies, geographically concentrated, with the structural
+    barriers (LMS access, institutional resourcing,
+    African-scholar SoLAR visibility) underneath the count.
+    Practice-synthesis-tier — a snapshot of an early-stage
+    literature; future validation ongoing as the field
+    matures.
+  ],
+  lens-approach: [
+    African learning-analytics scoping is the non-US
+    frontier-evidence case (induced 8.4; LENS D5/PT4). LENS
+    uses it in Domain 5 (Navigating Sociotechnical
+    Constraints) for the construct-travel problem and in
+    Domain 4 (Test and Evaluation) for the CLO *Judgment under inadequate evidence* — the deployer must
+    decide on what to import and what to validate locally
+    when the validation literature is thin. Pairs with the
+    African data-privacy governance case for the
+    construct-travel problem stated in governance terms.
+  ],
+  literature-items: (
+    [Prinsloo et al. (2022), _Journal of Learning Analytics_],
+    [Lemmens & Henn (2015), SAAIR proceedings],
+    [SciELO (2020), contextualised learning-analytics framework, SA],
+  ),
+  reflection-list: (
+    [Identify a learning-analytics construct your program imports from US/UK/EU literature. What does the validation literature for that construct assume about LMS coverage, data-engineering capacity, and ethics review? Audit those assumptions against your institution's actual conditions.],
+    [The case rests on a scoping review of an early-stage literature. What would the minimum additional evidence — replication primary studies, multi-institution validation, longitudinal outcome data — look like before you would treat any specific African learning-analytics finding as settled?],
+    [Specify the institutional preconditions you would identify and the validation work you would commit to before deploying an analytic framework in a low-resource higher-education setting; treat your deployment as a contribution to the literature, not only as a service intervention.],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 95 — pbis-implementation-fidelity ----
+// VERIFY: exact author list and pagination for Horner et al. (2004) SET validation
+//   (Horner, Todd, Lewis-Palmer, Irvin, Sugai, & Boland, JPBI 6(1), 3–12 — author
+//   order confirmed against secondary sources only).
+// VERIFY: full author list for the PBIS Maryland partnership paper (Bradshaw, Pas,
+//   et al., 2012, Administration and Policy in Mental Health 39) — lead authors and
+//   venue confirmed via PubMed 22246614; middle authors not independently re-checked.
+// VERIFY: "more than 25,000 schools" is the Center on PBIS's own current figure
+//   (pbis.org/about); some sources cite 27,000+. Statement attributed to the Center.
+// VERIFY: statewide quasi-experimental scale-up study cited in section 4 — believed
+//   to be Pas, Ryoo, Musci, & Bradshaw (2019), Journal of School Psychology 73,
+//   41–55; confirmed via ScienceDirect landing page title only, not full text.
+#case(
+  number: 95,
+  slug: "pbis-implementation-fidelity",
+  title: "PBIS Implementation Fidelity — Why the Framework Travels Only with Its Measurement Loop",
+  year: "1997–2024",
+  domains-list: ("K-12 education", "school climate", "implementation fidelity"),
+  modes-code: "TG",
+  impact: "A multi-tiered behavior-support framework implemented in more than 25,000 US schools; group-randomized effectiveness trials in 37 Maryland elementary schools found significant reductions in suspensions and office discipline referrals and improvements in child behavior problems when the model was implemented with fidelity; the PBIS Maryland state-university-district partnership (since 1999) trained staff at over 1,000 schools around a standing fidelity-measurement and coaching loop",
+  kind: "intervention",
+  scale: "small",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "2.3",
+  lens-anchor: "D2/PT3",
+  clo-anchor: "CLO-2",
+  coi: "An editor of this volume shares an institution (Johns Hopkins School of Education) with leading PBIS implementation researchers; the case is included on the strength of the published peer-reviewed evidence, and its framing is written as learning from that literature.",
+  summary: [
+    Positive Behavioral Interventions and Supports (PBIS) is one
+    of the most widely scaled evidence-based frameworks in US
+    education — implemented, by the Center on PBIS's own count,
+    in more than 25,000 schools. The evidence base is unusually
+    strong for education at scale: Bradshaw, Mitchell, and Leaf's
+    five-year group-randomized effectiveness trial in 37 Maryland
+    elementary schools (2010) found that schools trained in
+    school-wide PBIS reached high implementation fidelity and
+    experienced significant reductions in suspensions and office
+    discipline referrals, with companion trials reporting
+    improvements in child behavior problems (Bradshaw, Waasdorp, &
+    Leaf, _Pediatrics_ 2012) and reductions in bullying and peer
+    rejection (Waasdorp et al. 2012). The central finding the
+    implementation-science literature itself reports — and the
+    reason the case is in this book — is that the effect does not
+    live in the framework document. It lives at the interface
+    between the intervention design and the school's
+    implementation capability: fidelity measurement (the
+    School-wide Evaluation Tool, the Tiered Fidelity Inventory),
+    coaching infrastructure, district capacity, and sustained
+    administrative support carry the effect, and schools that
+    adopt the framework without that layer show attenuated or
+    null results. The Maryland scale-up — PBIS Maryland, a
+    state-university-district partnership running since 1999 —
+    is the worked example of scaling *with* the fidelity loop
+    attached. The hedges are the literature's own: fidelity
+    varies widely, sustainability is fragile, and abandonment of
+    effectively implemented practice is commonplace.
+  ],
+  sections: (
+    [
+      The recurring story in school-improvement research is that
+      an intervention validated in trials arrives at a new school
+      as a document — a framework, a binder, a training day — and
+      produces nothing. PBIS is the instructive counter-example
+      because its research community confronted that problem
+      directly and instrumented it. The framework itself, built
+      from applied behavior analysis and organized as a
+      multi-tiered system of support (universal expectations and
+      reinforcement at Tier 1, targeted group supports at Tier 2,
+      individualized supports at Tier 3), was codified in the
+      late 1990s under an OSEP technical-assistance center and
+      has since scaled to more than 25,000 US schools. The
+      question the field then spent two decades answering is the
+      one this casebook cares about: why does the same framework
+      work in some schools and not others?#cn()
+    ],
+    [
+      The causal evidence comes principally from the Maryland
+      group-randomized effectiveness trials. Bradshaw, Mitchell,
+      and Leaf (2010) followed 37 Maryland elementary schools
+      over five years; schools randomized to school-wide PBIS
+      training implemented the model with high fidelity and
+      showed significant reductions in student suspensions and
+      office discipline referrals relative to comparison schools.
+      Companion analyses from the same trial infrastructure
+      reported significant improvements in teacher-rated child
+      behavior problems across 12,344 children (Bradshaw,
+      Waasdorp, & Leaf 2012) and reductions in bullying and peer
+      rejection (Waasdorp, Bradshaw, & Leaf 2012). The
+      load-bearing qualifier is in the trial design itself: the
+      randomized schools did not merely receive the framework —
+      they received structured training, on-site coaching, and
+      annual fidelity assessment, and the published effects are
+      effects of that package implemented with fidelity.#cn()
+    ],
+    [
+      The fidelity instruments are the part of the story this
+      book reads as capability measurement. The School-wide
+      Evaluation Tool (SET; Horner et al. 2004) and its
+      successor, the Tiered Fidelity Inventory (TFI; Algozzine
+      et al. 2014, with technical-adequacy validation in
+      McIntosh et al. 2017), turn "is the school actually doing
+      PBIS?" into a scored, repeatable observation — expectations
+      defined and taught, reinforcement systems operating,
+      data-based decision cycles running, administrative
+      leadership engaged. The instruments are not compliance
+      paperwork; they are the closed loop that links the
+      intervention to its evidence. Fidelity scores feed the
+      coaching conversation, coaching moves the scores, and the
+      outcome literature consistently reports that schools
+      implementing below fidelity thresholds — typically those
+      adopting the framework without the coaching and
+      measurement layer — show attenuated or null effects
+      relative to high-fidelity implementers.#cn()
+    ],
+    [
+      The Maryland scale-up is the worked example of carrying
+      that loop to state scale. PBIS Maryland, formed in 1999 as
+      a partnership among the Maryland State Department of
+      Education, Sheppard Pratt Health System, and Johns Hopkins
+      University, with all 24 local school systems as partners,
+      has trained staff at over 1,000 Maryland schools. The
+      design decision that distinguishes it from
+      framework-by-memo scale-ups is structural: each district
+      provides local coaching capacity, the state provides
+      training and annual fidelity measurement, and the
+      university partners run the prevention research on the
+      resulting data — including the randomized trials above and
+      a subsequent statewide quasi-experimental study of the
+      scale-up itself. The scale-up did not distribute a
+      document; it replicated the implementation infrastructure
+      that the trials had shown to carry the effect.#cn()
+    ],
+    [
+      The honest framing is the one the literature itself
+      supplies, and the case preserves it as learning rather
+      than critique. Sustainability is the field's own named
+      open problem: McIntosh and colleagues, analyzing fidelity
+      data from roughly 3,000 schools, found that speed of
+      initial fidelity attainment predicts sustained
+      implementation, that middle and high schools are at
+      elevated risk of low implementation, and that abandonment
+      of effectively implemented practice is commonplace
+      (McIntosh et al. 2013, 2016). Sugai and Horner's 2020
+      synthesis frames sustaining and scaling as a distinct
+      engineering problem from demonstrating efficacy. That the
+      PBIS research community measured its own implementation
+      variance, published its own null-attenuation conditions,
+      and built the instruments that make the variance visible
+      is precisely why the case sits in the intervention corpus:
+      the field solved — in the open, with peer review — the
+      coupling problem that most deployments in this book never
+      instrumented at all.#cn()
+    ],
+  ),
+  beats: (
+    "Framework codified late 1990s under OSEP technical-assistance center; scaled to more than 25,000 US schools per the Center on PBIS",
+    "Maryland group-randomized trials (37 elementary schools, 5 years): significant reductions in suspensions, office referrals, behavior problems, and bullying — when implemented with fidelity",
+    "SET and TFI fidelity instruments turn implementation into a scored, repeatable observation; fidelity data drives the coaching loop that carries the effect",
+    "PBIS Maryland (1999 – present): MSDE–Sheppard Pratt–Johns Hopkins partnership trained staff at over 1,000 schools by replicating the infrastructure, not distributing the document",
+    "The field's own sustainability findings preserved: fidelity variance is wide, abandonment is commonplace, middle/high schools at elevated risk — the literature names its own limits",
+  ),
+  approaches: (
+    during: (
+      [Treat the fidelity instrument as part of the intervention, not as evaluation overhead; a framework shipped without its measurement loop is a different — and weaker — intervention than the one the trials validated.],
+      [Build the coaching layer at the district, not just the school; the Maryland design routes coaching capacity through every partner district so a principal transition does not orphan the implementation.],
+      [Score fidelity on a public, repeatable rubric (SET/TFI-style) and feed the scores into the coaching cadence, so the implementation conversation runs on observations rather than impressions.],
+    ),
+    after: (
+      [When an evidence-based practice underperforms at a new site, attribute the gap with fidelity data before revising the practice; the PBIS literature shows most of the variance lives in implementation, not design.],
+      [Plan for sustainability as its own engineering problem: instrument speed-to-fidelity, watch the elevated-risk tiers (middle and high schools, in this literature), and treat abandonment as a measurable failure mode rather than an anomaly.],
+      [Publish the implementation variance, including the null and attenuated conditions; the PBIS field's credibility rests on having documented where its own framework does not work.],
+    ),
+  ),
+  references: (
+    [Bradshaw, Mitchell, & Leaf (2010), "Examining the Effects of Schoolwide Positive Behavioral Interventions and Supports on Student Outcomes: Results From a Randomized Controlled Effectiveness Trial in Elementary Schools," _Journal of Positive Behavior Interventions_, 12(3), 133 – 148.],
+    [Bradshaw, Waasdorp, & Leaf (2012), "Effects of School-Wide Positive Behavioral Interventions and Supports on Child Behavior Problems," _Pediatrics_, 130(5), e1136 – e1145.],
+    [Horner, Todd, Lewis-Palmer, Irvin, Sugai, & Boland (2004), "The School-Wide Evaluation Tool (SET): A Research Instrument for Assessing School-Wide Positive Behavior Support," _Journal of Positive Behavior Interventions_, 6(1), 3 – 12.],
+    [McIntosh, Massar, Algozzine, George, Horner, Lewis, & Swain-Bradway (2017), "Technical Adequacy of the SWPBIS Tiered Fidelity Inventory," _Journal of Positive Behavior Interventions_, 19(1), 3 – 13.],
+    [McIntosh, Mercer, Nese, Strickland-Cohen, & Hoselton (2016), "Predictors of Sustained Implementation of School-Wide Positive Behavioral Interventions and Supports," _Journal of Positive Behavior Interventions_, 18(4), 209 – 218.],
+    [Bradshaw, Pas, et al. (2012), "A State-Wide Partnership to Promote Safe and Supportive Schools: The PBIS Maryland Initiative," _Administration and Policy in Mental Health_, 39(4), 225 – 237.],
+  ),
+  quote: [The framework document does not carry the effect. The fidelity loop — measurement, coaching, district capacity, sustained administrative support — is the intervention.],
+  quote-source: "Editors' synthesis of the SWPBIS implementation literature.",
+  le-insight: [
+    PBIS is the rare education framework whose research community
+    instrumented its own implementation variance: randomized
+    trials showed real effects on suspensions, referrals, and
+    behavior — conditional on fidelity — and the field built the
+    measurement instruments (SET, TFI), the coaching
+    infrastructure, and the sustainability literature that
+    explain why the same framework works in one school and not
+    another. The effect lives at the coupling between design and
+    implementation capability, and the fidelity instruments are
+    the capability measurement layer.
+  ],
+  lens-approach: [
+    PBIS implementation fidelity is the coupling-and-fidelity
+    intervention case (induced 2.3; LENS D2/PT3). LENS uses it
+    in Domain 2 (Iterative Development) for the
+    fidelity-measurement-to-coaching loop as the mechanism that
+    carries an evidence-based design into practice; in Domain 4
+    (Test and Evaluation) for the SET/TFI instruments as
+    validated measures of implementation rather than outcome;
+    and in Domain 5 (Navigating Sociotechnical Constraints) for
+    the Maryland state-university-district partnership as the
+    governance architecture that made a 1,000-school scale-up
+    sustain its measurement discipline. The framing is learning
+    from the implementation-science literature — the field
+    documented its own attenuation conditions — and the COI
+    render under the title is binding.
+  ],
+  literature-items: (
+    [Bradshaw, Mitchell, & Leaf (2010), _Journal of Positive Behavior Interventions_, 12(3), 133 – 148],
+    [McIntosh et al. (2017), TFI technical adequacy, _Journal of Positive Behavior Interventions_, 19(1), 3 – 13],
+    [Sugai & Horner (2020), "Sustaining and Scaling Positive Behavioral Interventions and Supports," _Exceptional Children_, 86(2)],
+  ),
+  reflection-list: (
+    [Pick an evidence-based practice in your domain that underperformed at a new site. What would its SET or TFI look like — the scored, repeatable observation that distinguishes "the practice failed" from "the practice was never implemented"? Who would administer it, and on what cadence?],
+    [The Maryland scale-up replicated infrastructure — district coaching capacity, annual fidelity measurement, a university research partner — rather than distributing a framework document. Map your own scale-up plan against those three layers. Which one is missing, and what does the PBIS sustainability literature predict happens without it?],
+    [McIntosh and colleagues found abandonment of effectively implemented practice is commonplace, and that speed of initial fidelity attainment predicts sustainability. What early-implementation signal plays that role in your setting, and is anyone measuring it?],
+  ),
+  courses: ("LEN 2", "LEN 4", "LEN 5"),
 )
