@@ -164,7 +164,7 @@ content scan, 5–15 min/case target) in
 columns being: clarity · references exist · references support the
 claim · conclusions reasonable · no overclaim · anchor fit · cross-
 references resolve. Six of the seven are auto pre-filled by mechanical
-detection across all 200 cases; the seventh (*conclusions reasonable*)
+detection across all 205 cases; the seventh (*conclusions reasonable*)
 requires a human read.
 
 Before press, an automated references-validation pass checked all

@@ -2418,7 +2418,7 @@
     CIRCUIT proofreading is the human-correction-layer
     frontier case (induced 3.4; LENS D3/PT6) — Domain 3 for
     *Delegation with revocation*; Domain 4 for the evidence-
-    tier split. Pair with Case 68 and Cases 20, 5, 184,
+    tier split. Pair with Case 68 and Cases 20, 5, 189,
     3. COI binds.
   ],
   literature-items: (
@@ -2682,7 +2682,7 @@
     [
       GSU is the positive counterpart to the algorithmic-harm failures
       earlier in this part and in Part VII (the A-Level algorithm, Case 49;
-      Robodebt, Case 186; educational predictive bias, Case 46). The same technical
+      Robodebt, Case 191; educational predictive bias, Case 46). The same technical
       capability — a predictive model — produced an equity gain rather than
       an equity harm because of how it was framed and governed. The case is
       the strongest evidence that construct definition and human-loop
@@ -2732,7 +2732,7 @@
     [Bowen, Chingos & McPherson, _Crossing the Finish Line_ (2009)],
   ),
   reflection-list: (
-    [What is the difference between GSU's predictive analytics and the algorithmic-bias failure cases in Parts II and VII (e.g., Cases 46, 49, 182, 186)? Be specific about what makes the GSU implementation work.],
+    [What is the difference between GSU's predictive analytics and the algorithmic-bias failure cases in Parts II and VII (e.g., Cases 46, 49, 187, 191)? Be specific about what makes the GSU implementation work.],
     [Design the equity-as-primary-constraint version of a predictive system in your domain. What would you measure first?],
     [GSU used predictions to deliver more support rather than to gatekeep, with an advisor between the alert and the action. Identify a predictive system in your domain and specify the human-loop architecture that would keep it serving the people it flags rather than screening them out.],
   ),
@@ -2852,7 +2852,7 @@
       trust and accountability — as it was at the OU — good
       design can dissolve it, and the deployment can proceed under
       a credibly co-authored consent architecture. The pair's
-      contrast case is the Dutch SyRI (Case 184), where the
+      contrast case is the Dutch SyRI (Case 189), where the
       governance objection was correct: the system was both
       rights-violating and operationally ineffective, and the
       District Court of The Hague stopped it on Article 8 ECHR
@@ -2904,7 +2904,7 @@
     the governance-objection diagnostic — the
     dissolvable-objection side — and in Domain 4 (Test and
     Evaluation) for the engagement-tracked-outcome evidence.
-    Direct pair with Case 184 (Dutch SyRI), where the
+    Direct pair with Case 189 (Dutch SyRI), where the
     governance objection was correct and design could not
     have dissolved it. Adjacent to Case 5 (Epic Sepsis
     Model) as the inverse pattern: OU built consent before
@@ -4425,7 +4425,7 @@
       structural seam: a deployed system about which the
       institutional side, the regulator, and the affected
       population each hold partial and non-overlapping
-      information. The case also pairs with Cases 181 (Bartlett
+      information. The case also pairs with Cases 186 (Bartlett
       lending fairness) and 138 (Gándara community-college equity)
       as the applicant-perception strand of the equity-in-
       deployed-prediction thread.#cn()
@@ -4451,7 +4451,7 @@
     "Systematic distance: vendor marketing (efficiency, fairness, fit) vs. applicant perceptions (opacity, distrust, anticipated discrimination)",
     "Consent-side companion to Case 55 (Engler deployment) and Case 57 (GAO regulator-side); applicants as structurally absent voice",
     "Authors' hedge: 18 interviews is right for speculative-design depth, not for prevalence claims; future validation ongoing",
-    "Anchors the applicant-perception strand alongside Cases 181 (Bartlett) and 138 (Gándara) in the equity-in-prediction thread",
+    "Anchors the applicant-perception strand alongside Cases 186 (Bartlett) and 138 (Gándara) in the equity-in-prediction thread",
   ),
   approaches: (
     during: (
@@ -4611,7 +4611,7 @@
       OU built consent for a single-institution intervention under
       pre-GDPR UK scrutiny; LALA built participatory adoption for
       multi-country capacity-building under three different Latin
-      American regulatory regimes. The pair plus SyRI (Case 184)
+      American regulatory regimes. The pair plus SyRI (Case 189)
       teaches the non-US LA governance triple — design that
       unblocked deployment (OU), participatory governance that
       built adoption capacity (LALA), and rights-grounded halt
@@ -4661,7 +4661,7 @@
     (induced 5.1; LENS D5/PT4) — Domain 5 for the cross-regime
     participatory method; Domain 3 on *Judgment under
     inadequate evidence* (adoption-readiness, not closed
-    outcome proof). Pair with Case 81 (OU) and Case 184
+    outcome proof). Pair with Case 81 (OU) and Case 189
     (SyRI).
   ],
   literature-items: (
@@ -4713,7 +4713,7 @@
     are not yet documented. This is process-level evidence (a
     national governance artifact exists, the dilemmas are named),
     not yet deployment-outcome evidence. The case pairs with the
-    OU (Case 81) and SyRI (Case 184) cases as the national
+    OU (Case 81) and SyRI (Case 189) cases as the national
     Nordic complement to the institutional-UK and judicial-Dutch
     governance modes.
   ],
@@ -4780,7 +4780,7 @@
     ],
     [
       In pair with the Open University (Case 81, institutional
-      governance-by-design, UK) and SyRI (Case 184, judicial
+      governance-by-design, UK) and SyRI (Case 189, judicial
       rights-grounded halt, Netherlands), Norway's commission is
       the national-scale governance-architecture mode. The three
       cases together teach that learning-analytics governance can
@@ -4798,7 +4798,7 @@
     "Mandate covers pedagogical, ethical, legal, and privacy dimensions across the whole education sector",
     "Interim report June 2022, final report 2023 (NOU) names central dilemmas: predictive support vs gatekeeping, transparency vs model complexity, benchmarking vs data protection",
     "Honest limit: process-level evidence (artifact exists, dilemmas named); downstream sector outcomes not yet documented — governance-process success, not yet deployment-outcome success",
-    "Pair with OU (Case 81, institutional) and SyRI (Case 184, judicial); national-scale governance-architecture mode in the non-US LA triple",
+    "Pair with OU (Case 81, institutional) and SyRI (Case 189, judicial); national-scale governance-architecture mode in the non-US LA triple",
   ),
   approaches: (
     during: (
@@ -4837,7 +4837,7 @@
     control-and-disclosure-as-artifact discipline and in
     Domain 4 (Test and Evaluation) for the CLO *Judgment
     under inadequate evidence* on the process-vs-outcome tier.
-    Pair with Case 81 (OU, institutional), Case 184 (SyRI,
+    Pair with Case 81 (OU, institutional), Case 189 (SyRI,
     judicial), Case 91 (LALA, multi-country participatory),
     and Case 89 (African data privacy, frontier) — the non-US
     LA governance pentad teaching the level-of-governance

@@ -109,7 +109,7 @@
       years from enactment to implementation, sustained industry
       opposition, contested evidence, and a study design constrained
       by the absence of a pre-implementation California baseline. In
-      pair with SUBSAFE (Case 170), the case shows that engineered
+      pair with SUBSAFE (Case 173), the case shows that engineered
       capability requirements at scale require both the
       requirements-discipline mechanism and an evidence architecture
       that survives the political process around the requirement.
@@ -120,7 +120,7 @@
     "Aiken et al. 2010 surveyed 22,336 nurses across CA / PA / NJ; California nurses cared for 1–2 fewer patients each",
     "Modeled implication: PA and NJ would have 10.6% and 13.9% fewer surgical deaths at California's medical-surgical ratios",
     "Hedge preserved: observational cross-sectional; no California baseline; contested stakeholder debate on causation",
-    "Pair with SUBSAFE (Case 170) — converting stated requirement to engineered requirement, with political-process cost",
+    "Pair with SUBSAFE (Case 173) — converting stated requirement to engineered requirement, with political-process cost",
   ),
   approaches: (
     during: (
@@ -158,7 +158,7 @@
     Domain 4 (Test and Evaluation) for the CLO *Judgment
     under inadequate evidence* — the evaluation evidence is
     observational cross-sectional, the strongest available
-    and not closed proof. Pair with Case 170 SUBSAFE at the
+    and not closed proof. Pair with Case 173 SUBSAFE at the
     requirements-as-deliverable layer.
   ],
   literature-items: (
@@ -744,7 +744,7 @@
       boundary (induced 3.3, LENS D2/PT5). The handoff is the
       moment of cognitive transfer at the team boundary; the
       bundle is the workflow artifact that makes the patient
-      state legible across that boundary. Paired with Case 174
+      state legible across that boundary. Paired with Case 177
       (CIRAS) at the cultural-half-of-capability layer, the case
       shows that the mnemonic alone is not the intervention — the
       institutional commitment to the bundle (trainee education,
@@ -771,7 +771,7 @@
     after: (
       [Report the 23\% relative reduction together with the verbatim hedge that "our study design precludes definitively establishing a causal link"; the strongest available evidence is not closed proof.],
       [Carry the bundle-not-mnemonic warning into any adaptation: implementations that drop the faculty-development and sustainability components are not implementations of the intervention the published evidence is about.],
-      [Build the cross-domain adaptation conversation deliberately — aviation CRM and ASRS evidence (v1 Cases 117, 119) is part of the I-PASS lineage and CIRAS (Case 174) is the non-aviation companion at the cultural-commitment layer.],
+      [Build the cross-domain adaptation conversation deliberately — aviation CRM and ASRS evidence (v1 Cases 117, 119) is part of the I-PASS lineage and CIRAS (Case 177) is the non-aviation companion at the cultural-commitment layer.],
     ),
   ),
   references: (
@@ -796,7 +796,7 @@
     I-PASS is the state-transparency-under-stress case at the
     human–human boundary (induced 3.3; LENS D2/PT5) — Domain 2
     for bundle-as-intervention; Domain 5 for the institutional
-    faculty-development commitment. Pair with Case 174 (CIRAS)
+    faculty-development commitment. Pair with Case 177 (CIRAS)
     and v1 Cases 117 (CRM) and 89 (ASRS).
   ],
   literature-items: (
@@ -2128,7 +2128,7 @@
     artifact prototyped, a multi-site pilot, a measurement regime, and
     global scale-out — and in LEN 4 for the measurement architecture
     that made the pilot effect provable and the Ontario null
-    interpretable. Adjacent to SUBSAFE (Case 170) at the
+    interpretable. Adjacent to SUBSAFE (Case 173) at the
     mandatory-mechanism layer, where the artifact's authority is the
     intervention.
   ],
@@ -2462,7 +2462,7 @@
     standard. Direct trio with Case 26 (pulse oximetry — the
     validation-architecture mechanism) and Case 6 (pain
     assessment — the human-development mechanism). Adjacent to the
-    lending pair (Cases 181–113) at a different layer.
+    lending pair (Cases 186–113) at a different layer.
   ],
   literature-items: (
     [Delgado et al. (2021), _American Journal of Kidney Diseases_],
@@ -4612,7 +4612,7 @@
     pregnancy testing, two contraception methods (or documented
     abstinence), and pharmacy lockout authorization before each
     dispense. The case is the productive counterpoint to SUBSAFE
-    (Case 170) and the WHO Surgical Checklist (Case 23): the
+    (Case 173) and the WHO Surgical Checklist (Case 23): the
     structural move is the same — mandatory pre-authorization
     gating a consequential action — and the measured outcome is
     very different. The Brinker et al. Kaiser Permanente cohort
@@ -4648,7 +4648,7 @@
       pregnancy tests, and receive a per-cycle authorization code
       before the pharmacy can fill the prescription. Each prescriber,
       pharmacy, and wholesaler must also enroll in the program. The
-      structural form is the same one SUBSAFE (Case 170) and the
+      structural form is the same one SUBSAFE (Case 173) and the
       WHO Surgical Checklist (Case 23) both use successfully:
       mandatory pre-authorization gating a consequential action,
       with the authorization withheld until pre-conditions are
@@ -4687,7 +4687,7 @@
       training that keep the certification real in operation.#cn()
     ],
     [
-      Drafted alongside SUBSAFE (Case 170) and the WHO Surgical
+      Drafted alongside SUBSAFE (Case 173) and the WHO Surgical
       Checklist (Case 23), iPLEDGE is the most analytically
       useful "mixed" case in the v2 sweep. It is not a failure of
       the form (the form has demonstrated successes); it is evidence
@@ -4724,7 +4724,7 @@
     [Shin, J., Cheetham, T. C., Wong, L., Niu, F., Kass, E., Yoshinaga, M. A., Sorel, M., McCombs, J. S., & Sidney, S. (2011), "The impact of the iPLEDGE program on isotretinoin fetal exposure in an integrated health care system," _Journal of the American Academy of Dermatology_, PMID:21565419.],
     [FDA, iPLEDGE program documentation (2006 – present) — REMS architecture and enrollment requirements.],
     [Pinheiro et al. (2013), "Isotretinoin and pregnancy in the era of iPLEDGE," _Journal of the American Academy of Dermatology_ — broader outcome literature documenting the ~150 annual exposures figure.],
-    [Sullivan et al. (2003), House Science Committee statement on SUBSAFE — the structural counterpoint (Case 170).],
+    [Sullivan et al. (2003), House Science Committee statement on SUBSAFE — the structural counterpoint (Case 173).],
   ),
   quote: [The authorization mechanism is operating as designed. The capability sits downstream of the authorization, and the program does not reach that far.],
   quote-source: "Editors' synthesis of Brinker et al. (2011).",
@@ -4744,7 +4744,7 @@
     mechanism delegates and what it does not — and in Domain 4
     (Test and Evaluation) for the CLO *Judgment under
     inadequate evidence* on whether the form will deliver in a
-    specific context. Direct pair with SUBSAFE (Case 170) at
+    specific context. Direct pair with SUBSAFE (Case 173) at
     the form-vs-context layer; pair with WHO Surgical Checklist
     (Case 23) at the mandatory-mechanism layer.
   ],
@@ -5539,7 +5539,7 @@
     [Hategeka, C., Ruton, H., Law, M. R., et al. (2019), "Effect of a community health worker mHealth monitoring system on uptake of maternal and newborn health services in Rwanda," _Global Health Research and Policy_, PMC6429813.],
     [Rwanda Ministry of Health, community health program documentation and CHW scope-of-practice guidance, 2013–2018.],
     [MIT News (2022), reporting on subsequent AI-augmented maternal-care work in Rwanda — journalism-tier companion to the peer-reviewed evaluation.],
-    [Cross-reference: Case 196 (PEPFAR HIV training-modality comparison) for the paired Sub-Saharan workforce-capability evidence.],
+    [Cross-reference: Case 201 (PEPFAR HIV training-modality comparison) for the paired Sub-Saharan workforce-capability evidence.],
   ),
   quote: [The mHealth tool did not centralize the work. It instrumented the periphery — and kept judgment where it already was.],
   quote-source: "Editors' synthesis of Musabyimana et al. (2019) and the Rwanda CHW program documentation.",
@@ -5561,7 +5561,7 @@
     diagnostic-and-referral role without relocating judgment to
     the center — and in Domain 2 (Iterative Development) for
     the scope-the-tool-to-the-role design discipline. Direct
-    pair with Case 196 (PEPFAR Sub-Saharan training-modality
+    pair with Case 201 (PEPFAR Sub-Saharan training-modality
     comparison) as the African workforce-capability evidence
     the v2 corpus needs.
   ],

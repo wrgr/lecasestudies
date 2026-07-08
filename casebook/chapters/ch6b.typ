@@ -26,9 +26,9 @@
 
 #phase-mark("Before the event — prevention")
 
-// ---- Case 170 — navy-subsafe-requirements-as-a-non ----
+// ---- Case 173 — navy-subsafe-requirements-as-a-non ----
 #case(
-  number: 170,
+  number: 173,
   slug: "navy-subsafe-requirements-as-a-non",
   title: "Navy SUBSAFE — Requirements as a Non-Negotiable Sustainment Deliverable",
   year: "1963 – present",
@@ -201,9 +201,9 @@
   courses: ("LEN 1", "LEN 5", "LEN 7"),
 )
 
-// ---- Case 171 — y2k-remediation-the-aging-system ----
+// ---- Case 174 — y2k-remediation-the-aging-system ----
 #case(
-  number: 171,
+  number: 174,
   slug: "y2k-remediation-the-aging-system",
   title: "Y2K Remediation — The Aging-System Transition That Worked Because It Was Believed",
   year: "1996 – 2000",
@@ -375,9 +375,9 @@
 
 #phase-mark("After the event — response and recovery")
 
-// ---- Case 172 — inpo-and-the-nuclear-academy ----
+// ---- Case 175 — inpo-and-the-nuclear-academy ----
 #case(
-  number: 172,
+  number: 175,
   slug: "inpo-and-the-nuclear-academy",
   title: "INPO and the Nuclear Academy",
   year: "1979 – present",
@@ -522,9 +522,9 @@
   clo-anchor: "CLO-5",
 )
 
-// ---- Case 173 — tylenol-recall ----
+// ---- Case 176 — tylenol-recall ----
 #case(
-  number: 173,
+  number: 176,
   slug: "tylenol-recall",
   title: "Tylenol Recall",
   year: "1982",
@@ -674,9 +674,9 @@
   clo-anchor: "CLO-5",
 )
 
-// ---- Case 174 — ciras-confidential-incident-reporting ----
+// ---- Case 177 — ciras-confidential-incident-reporting ----
 #case(
-  number: 174,
+  number: 177,
   slug: "ciras-confidential-incident-reporting",
   title: "CIRAS — Confidential Incident Reporting for UK Rail",
   year: "1996 – present",
@@ -841,4 +841,422 @@
     [The 45%-led-to-improvement figure is program self-report. Design the independent-audit cadence that would convert the operating record into audited evidence over time, without compromising the confidentiality the channel depends on.],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 178 — un-cluster-approach-humanitarian ----
+// VERIFY: HRR 2005 author list (Adinolfi, Bassiouni, Lauritzsen, Williams) against the OCHA/ReliefWeb PDF cover page.
+// VERIFY: Pakistan 2005 initial cluster count (nine core clusters at rollout) against ODI HPN/ALNAP accounts.
+// VERIFY: Grünewald & Binder Haiti real-time evaluation exact title and month (Groupe URD/GPPi, 2010).
+#case(
+  number: 178,
+  slug: "un-cluster-approach-humanitarian",
+  title: "The UN Cluster Approach — Engineering Humanitarian Coordination After the Tsunami",
+  year: "2005 – 2020",
+  domains-list: ("humanitarian relief", "international coordination", "disaster response"),
+  modes-code: "G",
+  impact: "IASC cluster approach adopted after the 2005 Humanitarian Response Review diagnosed unowned sectors in the Indian Ocean tsunami and Darfur responses; first applied in the October 2005 Pakistan earthquake response; eleven global clusters, each with a designated lead agency accountable for coverage and carrying provider-of-last-resort responsibility; two formal system-wide evaluations (Stoddard et al. 2007; Steets et al. 2010) found improved gap identification and coverage at real transaction cost, with national and local actors often marginalized; revised under the 2011 IASC Transformative Agenda after the Haiti earthquake exposed scale limits",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "program-report",
+  induced-anchor: "6.1",
+  lens-anchor: "D5/PT6",
+  clo-anchor: "CLO-5",
+  summary: [
+    The response to the December 2004 Indian Ocean tsunami —
+    hundreds of NGOs converging on the same coastlines,
+    duplicated relief in accessible areas, unassigned gaps in
+    hard ones — and the parallel critiques of the Darfur
+    response exposed a structural fact about the international
+    humanitarian system: no one was accountable for whole
+    sectors of a response. The 2005 Humanitarian Response
+    Review, commissioned by UN Emergency Relief Coordinator Jan
+    Egeland, named the diagnosis, and the Inter-Agency Standing
+    Committee's answer, rolled out from late 2005, was the
+    cluster approach: each sector — logistics, shelter, health,
+    water and sanitation, protection, camp management, and the
+    rest — assigned a designated lead agency accountable for
+    coverage and carrying provider-of-last-resort
+    responsibility. Coordination was redesigned as a role
+    architecture with named ownership rather than as goodwill.
+    First applied in the October 2005 Pakistan earthquake
+    response, the approach was evaluated twice at system scale:
+    Phase 1 (Stoddard et al., 2007) found early gains in gap
+    identification at real transaction cost; Phase 2 (Steets et
+    al., GPPi/Groupe URD, 2010) found mostly positive coverage
+    and gap effects with persistent weaknesses in local-actor
+    inclusion and inter-cluster coordination. The 2010 Haiti
+    earthquake exposed the mechanism's scale limits, and the
+    IASC's 2011 Transformative Agenda revised it. The
+    evaluations' own hedges are load-bearing: benefits were
+    uneven across clusters and countries, the costs were real,
+    and national and local actors were often marginalized.
+  ],
+  sections: (
+    [
+      The 2004 Indian Ocean tsunami produced the largest
+      humanitarian mobilization to that date and, with it, the
+      clearest exhibit of the system's chronic coordination
+      failure. Hundreds of NGOs, UN agencies, and bilateral
+      responders arrived with independent mandates, independent
+      funding, and no mechanism that made any of them
+      answerable for a sector as a whole. Relief duplicated
+      where access was easy and cameras were present; gaps went
+      unassigned where it was not; and when a sector was
+      underserved, there was no one whose job it was to notice.
+      The Darfur response drew the same critique in the same
+      period, in a conflict setting: sectoral coverage depended
+      on which agencies happened to show up, and the persistent
+      gaps — protection above all — belonged to no one. The
+      failure was not of effort or resources but of
+      architecture: the system had participants, not owners.#cn()
+    ],
+    [
+      The 2005 Humanitarian Response Review, commissioned by
+      Emergency Relief Coordinator Jan Egeland from an
+      independent consultant team, made the structural
+      diagnosis explicit: capacity was unevenly distributed
+      across sectors, and accountability for sectoral outcomes
+      was absent by design, because no design existed. The
+      Inter-Agency Standing Committee's response was the
+      cluster approach, agreed in September 2005 as one pillar
+      of a broader humanitarian reform. Each sector of response
+      — logistics, emergency shelter, health, water/sanitation/
+      hygiene, protection, camp coordination and camp
+      management, nutrition, education, and others, eventually
+      eleven global clusters — was assigned a designated lead
+      agency, globally and in each activated country response.
+      The lead is accountable to the Humanitarian Coordinator
+      for the adequacy of coverage in its sector and carries
+      the provider-of-last-resort commitment: where critical
+      gaps persist and no other actor steps in, the lead must
+      do its utmost to fill them. The redesign is the case's
+      analytic core — coordination converted from a voluntary
+      good into a role architecture with named ownership.#cn()
+    ],
+    [
+      The mechanism was paired with an authorization, and the
+      pairing is what distinguishes the cluster approach from
+      the coordination exhortations that preceded it. The lead
+      agency's sectoral accountability was mandated by the
+      IASC and the Emergency Relief Coordinator — the closest
+      thing the voluntary humanitarian system has to an
+      institutional spine — rather than left to inter-agency
+      goodwill, and it was tested almost immediately: the
+      October 2005 Pakistan earthquake, two months after the
+      approach was agreed, became its first field application,
+      with the initial set of clusters stood up mid-response.
+      The Pakistan experience showed both faces at once —
+      sectoral gap analysis that had never existed before, and
+      meeting burdens heavy enough that NGO observers
+      questioned whether the coordination was worth its
+      transaction cost.#cn()
+    ],
+    [
+      The formal evaluations are the reason the case can be
+      told with discipline. The Phase 1 evaluation (Stoddard,
+      Harmer, Haver, Salomons, and Wheeler, 2007) found early
+      gains — better identification of gaps, fewer duplications,
+      clearer sectoral leadership — purchased at real
+      transaction cost in meetings, reporting, and staff time,
+      with benefits uneven across clusters and countries. The
+      Phase 2 evaluation (Steets, Grünewald, Binder, and
+      colleagues, GPPi/Groupe URD, 2010), commissioned by the
+      IASC across six country studies, found mostly positive
+      effects on coverage and gap identification and endorsed
+      the approach as the right one, while documenting
+      persistent weaknesses that the evaluators declined to
+      smooth: national and local actors were often marginalized
+      or excluded by an architecture built around international
+      agencies, inter-cluster coordination remained weak, and
+      cluster performance varied widely by sector and country.
+      Those hedges are carried here as findings, not caveats —
+      the outcome evidence is genuinely mixed at the margins
+      even where the architectural gain is real.#cn()
+    ],
+    [
+      The 2010 Haiti earthquake stress-tested the mechanism at
+      a scale it had not been engineered for — hundreds of
+      organizations in a single cluster's meetings, a
+      coordination apparatus that became process-driven enough
+      to be accused of impeding the delivery it existed to
+      enable — and the IASC Principals' December 2011
+      Transformative Agenda revised the approach in response,
+      restating the clusters' original purpose around strategic
+      gap analysis and adding system-wide activation protocols
+      for the largest emergencies. That arc is why the case
+      sits on the works side of this book: an institution
+      diagnosed its own coordination failure after catastrophe,
+      redesigned accountability as a property of the
+      multi-organization system rather than of any single
+      agency, evaluated the redesign formally and in public,
+      and revised it when the next catastrophe found its
+      limits. The cluster approach did not solve humanitarian
+      coordination; it made sectoral coverage someone's named
+      job, made the residual gaps visible, and left an
+      evaluation record honest enough to build on.
+    ],
+  ),
+  beats: (
+    "2004 tsunami and Darfur responses expose chronic coordination failure: duplicated relief, unassigned gaps, no one accountable for whole sectors",
+    "2005 Humanitarian Response Review (commissioned by ERC Jan Egeland) names the structural diagnosis; IASC agrees the cluster approach as the remedy",
+    "Each sector assigned a designated lead agency accountable for coverage with provider-of-last-resort responsibility; first applied in the October 2005 Pakistan earthquake",
+    "Formal evaluations: Phase 1 (Stoddard et al. 2007) — early gains in gap identification at transaction cost; Phase 2 (Steets et al. 2010) — mostly positive coverage effects, persistent local-actor marginalization and weak inter-cluster coordination",
+    "2010 Haiti earthquake exposes scale limits; 2011 IASC Transformative Agenda revises the approach — institution-building iterated, not declared finished",
+  ),
+  approaches: (
+    during: (
+      [Assign every sector of a multi-organization response a named owner with explicit coverage accountability; a gap with no owner is a design decision, not an accident.],
+      [Pair the ownership mechanism with an authorization that can bind — the lead-agency role works because the ERC/IASC mandate stands behind it, not because agencies agree to coordinate in principle.],
+      [Make provider-of-last-resort responsibility explicit at designation time, so the question "who acts when no one volunteers?" has an answer before the gap appears.],
+    ),
+    after: (
+      [Commission formal, published, system-wide evaluations of the coordination architecture itself — not only of individual operations — and let the findings, including the unflattering ones, drive revision.],
+      [Treat local and national actors' marginalization as an architectural defect to be engineered out, not a cultural footnote; an inclusion weakness documented in 2010 that persists is a standing design debt.],
+      [Budget the transaction cost of coordination honestly and re-verify the mechanism at each new scale; Haiti showed that a role architecture sized for one magnitude of response can fail at the next.],
+    ),
+  ),
+  references: (
+    [Adinolfi, Bassiouni, Lauritzsen, & Williams (2005), _Humanitarian Response Review_, commissioned by the UN Emergency Relief Coordinator, New York/Geneva: OCHA.],
+    [Stoddard, Harmer, Haver, Salomons, & Wheeler (2007), _Cluster Approach Evaluation, Final Report_, OCHA Evaluation and Studies Section, with NYU Center on International Cooperation, ODI Humanitarian Policy Group, and the Praxis Group.],
+    [Steets, Grünewald, Binder, de Geoffroy, Kauffmann, Krüger, Meier, & Sokpoh (2010), _Cluster Approach Evaluation 2: Synthesis Report_, GPPi / Groupe URD, commissioned by the IASC, Geneva: OCHA.],
+    [Inter-Agency Standing Committee (2011 – 2012), _IASC Transformative Agenda_ — Principals' decisions of December 2011 and associated protocols.],
+    [Grünewald & Binder (2010), _Inter-agency Real-Time Evaluation in Haiti: 3 Months After the Earthquake_, Groupe URD / GPPi.],
+  ),
+  quote: [Coordination redesigned as a role architecture with named ownership rather than as goodwill — and evaluated, in public, at system scale.],
+  quote-source: "Editors' synthesis of the Humanitarian Response Review (2005) and the two cluster evaluations (2007, 2010).",
+  le-insight: [
+    The cluster approach is the paired-intervention pattern at
+    global scale: a mechanism — sector lead agencies with
+    coverage accountability and provider-of-last-resort
+    responsibility — paired with an authorization, the
+    ERC/IASC mandate. Accountability became a designed property
+    of a multi-organization system rather than an aspiration.
+    The evaluation record keeps the case honest: gains in gap
+    identification and coverage were real, and so were the
+    transaction costs, the uneven benefits across clusters and
+    countries, and the marginalization of national and local
+    actors. The 2011 revision after Haiti is part of the
+    intervention, not evidence against it.
+  ],
+  lens-approach: [
+    The cluster approach is the institution-building-after-
+    catastrophe case at the largest organizational scale in the
+    corpus (induced 6.1; LENS D5/PT6; with 4.4 alternate for
+    the mechanism-plus-authorization pairing). LENS uses it in
+    Domain 5 (Navigating Sociotechnical Constraints) as the
+    anchor example of governance architecture for a
+    multi-organization system — named sectoral ownership,
+    provider of last resort, and a mandate that binds a
+    voluntary system; in Domain 1 (Systems Analysis) for the
+    Humanitarian Response Review's structural diagnosis of
+    unowned sectors; and in Domain 4 (Test and Evaluation) for
+    the two formal system-wide evaluations whose hedged
+    findings — uneven benefits, real costs, marginalized local
+    actors — drove the 2011 Transformative Agenda revision.
+    Pair with the industry-level institution-building cases in
+    Part VI: the discipline is the same, the scale is the test.
+  ],
+  literature-items: (
+    [Adinolfi et al. (2005), _Humanitarian Response Review_, OCHA],
+    [Stoddard et al. (2007), _Cluster Approach Evaluation_, OCHA],
+    [Steets et al. (2010), _Cluster Approach Evaluation 2_, GPPi/Groupe URD],
+  ),
+  reflection-list: (
+    [Map a multi-organization response system in your domain — a hospital network's surge plan, a district's crisis-response stack, a consortium research program. For each sector of the work, who is the named owner accountable for coverage, and who is the provider of last resort? If the answer is "everyone" or "no one," you have found the tsunami-response architecture.],
+    [The cluster evaluations found real gains purchased at real transaction cost, with benefits uneven across sectors and countries. Design the evaluation you would commission for a coordination mechanism in your domain: what would count as a gap-identification gain, how would you price the meeting and reporting burden against it, and who is independent enough to say the mechanism is not working?],
+    [The Phase 2 evaluation documented national and local actors marginalized by an architecture built around international agencies — a weakness named in 2010 and still central to humanitarian-reform debates a decade later. Identify the actors your coordination design treats as participants rather than owners. What would it take, structurally rather than rhetorically, to move them into the ownership architecture?],
+  ),
+  courses: ("LEN 1", "LEN 4", "LEN 5"),
+)
+
+// ---- Case 179 — jhu-covid-dashboard-coronavirus ----
+// VERIFY: number 179 is a placeholder pending editor numbering baseline (A1).
+// VERIFY: Dong et al. (2022) volume/page numbers (Lancet Infect Dis 22: e370–e376) — DOI confirmed 10.1016/S1473-3099(22)00434-0; exact pagination re-check at proof.
+// VERIFY: quote wording against the Lancet 2020 correspondence full text (paywalled at draft time; wording corroborated by secondary sources).
+// VERIFY: "among the most-forked repositories on GitHub" — press-reported, not in the peer-reviewed record; retained with hedge.
+// VERIFY: racial-data-transparency layer specifics (coronavirus.jhu.edu/data/racial-data-transparency) — CRC layer existed; exact launch month re-check.
+#case(
+  number: 179,
+  slug: "jhu-covid-dashboard-coronavirus",
+  title: "The Johns Hopkins COVID-19 Dashboard — Evidence Infrastructure at Decision Speed",
+  year: "2020 – 2023",
+  domains-list: ("public health", "pandemic response", "data infrastructure"),
+  modes-code: "GK",
+  impact: "Launched 22 January 2020 by two researchers and became the world's de facto epidemiological reference for the COVID-19 pandemic: peak single-day usage above 4.6 billion data requests (29 March 2020), over 226 billion feature-layer requests and 3.6 billion page views by June 2022 per the peer-reviewed record; governments, newsrooms, and researchers built directly on its openly published data; 2022 Lasker-Bloomberg Public Service Award; ceased data collection 10 March 2023",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "peer-reviewed",
+  induced-anchor: "2.1",
+  lens-anchor: "D4/PT2",
+  clo-anchor: "CLO-4",
+  coi: "An editor of this volume leads a group at the Johns Hopkins University Applied Physics Laboratory that contributed engineering support to this system (the editor was not personally involved in the build); the case is included on the strength of the published peer-reviewed record and independent recognition.",
+  summary: [
+    On 22 January 2020 — one day after the United States reported
+    its first COVID-19 case — Lauren Gardner's Center for Systems
+    Science and Engineering (CSSE) at the Johns Hopkins Whiting
+    School, with graduate student Ensheng Dong, launched a public
+    dashboard tracking reported COVID-19 cases in near-real time
+    (Dong, Du & Gardner, _The Lancet Infectious Diseases_, published
+    online February 2020). What began as a manually curated map
+    became within weeks the world's de facto epidemiological
+    reference: billions of data requests per day at peak, an
+    underlying GitHub repository that by press accounts became one
+    of the most-forked data repositories on the platform, and
+    governments, newsrooms, and researchers building directly on
+    its openly published data. The engineering story is the case:
+    manual curation was replaced by a semi-automated pipeline with
+    anomaly detection; the Johns Hopkins Applied Physics Laboratory
+    (APL) partnered with CSSE on pipeline scaling, validation, and
+    anomaly-detection engineering; and the university stood up the
+    Coronavirus Resource Center (CRC, March 2020), joining medicine,
+    public health, and engineering to add testing, hospitalization,
+    vaccine, and equity data layers. The load-bearing hedge is
+    preserved throughout: the dashboard is simultaneously a success
+    case and evidence of the system gap it filled — for much of
+    2020 no government source operated at its speed or completeness,
+    and its sustainment was never structural. Independent
+    recognition: the 2022 Lasker-Bloomberg Public Service Award to
+    Gardner. The CRC ceased data collection on 10 March 2023.
+    The COI render under the title (an editor leads an APL group
+    that contributed engineering support) is binding.
+  ],
+  sections: (
+    [
+      When a novel pathogen emerges, the first institutional
+      casualty is measurement: case counts scattered across
+      national health ministries, provincial bulletins, and press
+      briefings, in inconsistent formats, on inconsistent cadences,
+      with no single place a decision-maker could look to see the
+      outbreak as it unfolded. On 22 January 2020, a day after the
+      first reported US case, Gardner and Dong at JHU CSSE launched
+      what the team's own peer-reviewed retrospective calls the
+      first global real-time coronavirus surveillance system: an
+      interactive web dashboard, initially fed by hand from a
+      shared spreadsheet, publishing every number it displayed as
+      freely available open data.#cn()
+    ],
+    [
+      The engineering trajectory is the case's first contribution.
+      Manual curation could not survive the pandemic's growth
+      curve, and the team replaced it deliberately: trusted-source
+      identification and validation, autonomous web-scraping
+      collection, a curation layer built around an in-house
+      anomaly-detection service that flagged variations exceeding
+      configured thresholds for human review before publication,
+      and open data sharing through GitHub and hosted feature
+      layers. The Johns Hopkins Applied Physics Laboratory
+      partnered with CSSE on this build-out — contributing
+      engineering support to pipeline scaling, near-real-time
+      processing, and anomaly detection, with APL data scientists
+      among the reviewers of flagged discrepancies. The system
+      held under extraordinary load: a peak of more than 4.6
+      billion requests in a single day (29 March 2020), and over
+      226 billion feature-layer requests by June 2022.#cn()
+    ],
+    [
+      The institutional trajectory is the second contribution. In
+      March 2020 the university stood up the Coronavirus Resource
+      Center, joining the engineering school's dashboard with the
+      schools of medicine and public health to add the data layers
+      the raw case map could not carry: testing rates,
+      hospitalization, vaccination, and — through its racial-data-
+      transparency work — a public accounting of which US states
+      did and did not report race- and ethnicity-stratified data,
+      turning the absence of equity data into a visible,
+      trackable fact rather than a silent gap.#cn()
+    ],
+    [
+      The capability gap the dashboard exposed is as load-bearing
+      as the artifact itself. For much of 2020, a professor, her
+      graduate students, and a volunteer-plus-institutional
+      support network were faster and more complete than any
+      government source; the world's newsrooms and health agencies
+      cited a university web map because no national public-health
+      data infrastructure operated at decision speed. The 2022
+      Lasker-Bloomberg Public Service Award to Gardner is the
+      independent recognition of the intervention — and, read
+      carefully, an indictment of the vacuum that made a two-person
+      launch the global system of record.#cn()
+    ],
+    [
+      The ending preserves the hedge. The CRC ceased data
+      collection on 10 March 2023, as states slowed their
+      reporting cadences and federal tracking improved enough to
+      warrant the exit; the full data record from 22 January 2020
+      to 10 March 2023 remains freely available. The team's own
+      retrospectives name the fragility: heroic effort — students,
+      volunteers, and institutional partners substituting for
+      public infrastructure — was never a structural solution, and
+      the dashboard's success does not demonstrate that the next
+      pandemic will find its equivalent standing ready. The case
+      is a success case and evidence of the system gap it filled;
+      both readings are binding.
+    ],
+  ),
+  beats: (
+    "Launched 22 January 2020 by Gardner and Dong at JHU CSSE, one day after the first reported US case; every displayed number published as open data",
+    "Manual curation replaced by a semi-automated pipeline — scraping, validation, in-house anomaly detection with human review — with APL contributing engineering support to scaling and anomaly detection",
+    "Coronavirus Resource Center (March 2020) joined medicine, public health, and engineering; added testing, hospitalization, vaccine, and race/ethnicity-transparency data layers",
+    "Peak single-day load above 4.6 billion requests; 226+ billion feature-layer requests by June 2022; 2022 Lasker-Bloomberg Public Service Award to Gardner",
+    "Ceased data collection 10 March 2023; hedge preserved — a success case that is simultaneously evidence of the public-infrastructure gap it filled; sustainment was never structural",
+  ),
+  approaches: (
+    during: (
+      [Publish the evidence base itself, not just the visualization — open data with transparent sourcing let governments, newsrooms, and researchers build on the pipeline instead of duplicating it.],
+      [Engineer the transition off heroics early: replace manual curation with automated collection plus anomaly detection and human review before the growth curve makes the manual process fail publicly.],
+      [Instrument the gaps as deliberately as the counts — tracking which states reported race/ethnicity-stratified data made missing equity data a visible fact that could be pushed on, not a silent omission.],
+    ),
+    after: (
+      [Name the vacuum in the retrospective: the peer-reviewed lessons-learned record states plainly what the system substituted for, so the success cannot be read as evidence the gap is closed.],
+      [Archive the full data record openly at shutdown so the three-year evidence base remains auditable and reusable after collection ends.],
+      [Convert the demonstrated capability into a structural requirement — the case's unresolved question is whether public-health data infrastructure at decision speed gets built and funded as infrastructure, or waits for the next volunteer build.],
+    ),
+  ),
+  references: (
+    [Dong, Du, & Gardner (2020), "An interactive web-based dashboard to track COVID-19 in real time," _The Lancet Infectious Diseases_ 20(5), 533 – 534, doi:10.1016/S1473-3099(20)30120-1.],
+    [Dong et al. (2022), "The Johns Hopkins University Center for Systems Science and Engineering COVID-19 Dashboard: data collection process, challenges faced, and lessons learned," _The Lancet Infectious Diseases_ 22(12), e370 – e376, doi:10.1016/S1473-3099(22)00434-0.],
+    [Johns Hopkins University Hub (10 March 2023), "Johns Hopkins COVID-19 data hub ends after three years" — Coronavirus Resource Center closure announcement.],
+    [Lasker Foundation (2022), Lasker-Bloomberg Public Service Award citation — "The COVID-19 Dashboard" (Lauren Gardner); companion award essay in _JAMA_.],
+    [NPR (10 February 2023), "As the pandemic ebbs, an influential COVID tracker shuts down."],
+  ),
+  quote: [All data collected and displayed are made freely available, initially through Google Sheets and now through a GitHub repository, along with the feature layers of the dashboard.],
+  quote-source: "Dong, Du & Gardner (2020), The Lancet Infectious Diseases.",
+  le-insight: [
+    The JHU COVID-19 dashboard is the evidence-infrastructure
+    intervention case: a two-person launch that became the world's
+    epidemiological reference because it measured the thing
+    everyone needed measured, published the data openly, and
+    engineered its way off manual curation before scale broke it.
+    The binding hedge: it is simultaneously a success case and
+    proof of the public-infrastructure gap it filled — sustainment
+    was never structural, and the capability wound down in March
+    2023 with the gap's permanent closure still an open question.
+    COI under the title (editor leads an APL group that
+    contributed engineering support) is binding.
+  ],
+  lens-approach: [
+    The JHU COVID-19 dashboard is the evidence-infrastructure-at-
+    decision-speed case (induced 2.1; LENS D4/PT2). LENS uses it
+    in Domain 4 (Test and Evaluation) for building the measurement
+    the institution actually needs — trusted sourcing, anomaly
+    detection, human review, open publication — under real-time
+    load; in Domain 1 (Systems Analysis) for reading the
+    intervention as a diagnosis of the missing national data
+    infrastructure; and in Domain 5 (Navigating Sociotechnical
+    Constraints) for the racial-data-transparency layer that made
+    absent equity data a public, trackable fact. Pair with
+    failure-mode cases where institutions measured what was
+    convenient rather than what mattered. COI render is binding.
+  ],
+  literature-items: (
+    [Dong, Du & Gardner (2020), _The Lancet Infectious Diseases_, doi:10.1016/S1473-3099(20)30120-1],
+    [Dong et al. (2022), _The Lancet Infectious Diseases_, doi:10.1016/S1473-3099(22)00434-0],
+    [Lasker Foundation (2022), Lasker-Bloomberg Public Service Award citation],
+  ),
+  reflection-list: (
+    [Identify the measurement your institution would need on day one of a fast-moving crisis. Does it exist at decision speed today, or would a volunteer build have to substitute? What would the JHU-equivalent stopgap look like in your domain — and who would staff it?],
+    [The dashboard's pipeline paired automation with an anomaly-detection-plus-human-review gate before publication. Specify that gate for a data product you own: what thresholds flag an anomaly, who reviews, and what is the cost of publishing a wrong number at global scale?],
+    [The CRC tracked which states failed to report race/ethnicity-stratified data, making the gap itself a published metric. Choose a dataset in your domain with a known equity gap: what would it take to measure and publish the gap's extent, rather than footnoting its existence?],
+  ),
+  courses: ("LEN 4", "LEN 9", "LEN 10"),
 )

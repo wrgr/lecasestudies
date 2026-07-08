@@ -483,7 +483,7 @@
     [Ross & Swetlitz (2017–2018), "IBM Watson recommended unsafe and incorrect cancer treatments" and adjacent investigations, _STAT News_ — the load-bearing primary source; investigative journalism drawing on leaked IBM internal documents.],
     [Strickland (2019), "How IBM Watson Overpromised and Underdelivered on AI Health Care," _IEEE Spectrum_ — independent retrospective synthesis of the public record.],
     [Topol (2019), _Deep Medicine_, Basic Books — secondary academic situating of Watson within the broader clinical-AI delegation discourse.],
-    [v2 paired cases: TREWS (Case 20), Epic Sepsis Model (Case 5), SyRI (Case 184) — the AI-delegation typology.],
+    [v2 paired cases: TREWS (Case 20), Epic Sepsis Model (Case 5), SyRI (Case 189) — the AI-delegation typology.],
   ),
   quote: [The capability the procurement was buying — accurate, real-world treatment recommendation at the marketed concordance rate — was not the capability the system carried.],
   quote-source: "Editors' synthesis of Ross & Swetlitz (STAT News 2017–2018).",
@@ -503,7 +503,7 @@
     AI-delegation failure (induced 1.1; LENS D3/PT6) — Domain 3
     for *Delegation with revocation* (MD Anderson wind-downs
     are the revocation half); Domain 4 for requirements-vs-
-    marketing. Pair with Cases 20, 5, 184. Evidence-tier
+    marketing. Pair with Cases 20, 5, 189. Evidence-tier
     flag binds.
   ],
   literature-items: (
@@ -969,7 +969,7 @@
     curriculum-design implication. The trio together is the
     case-grounded basis for *Gap attribution*: same surface
     harm, three distinct layers, three distinct remediations.
-    Adjacent to the lending pair (Cases 181–113) at the
+    Adjacent to the lending pair (Cases 186–113) at the
     construct layer.
   ],
   literature-items: (

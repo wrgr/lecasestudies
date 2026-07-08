@@ -15,9 +15,9 @@
   epigraph-source: "An observation recurring across the chapter's cases.",
 )
 
-// ---- Case 189 — estonia-x-road-continuous-migration-as ----
+// ---- Case 194 — estonia-x-road-continuous-migration-as ----
 #case(
-  number: 189,
+  number: 194,
   slug: "estonia-x-road-continuous-migration-as",
   title: "Estonia X-Road — Continuous Migration as a Governance Pattern (and the No-Legacy Paradox)",
   year: "2001 – present",
@@ -183,9 +183,9 @@
   courses: ("LEN 1", "LEN 5", "LEN 6"),
 )
 
-// ---- Case 190 — tesla-autopilot-recurring-fatalities ----
+// ---- Case 195 — tesla-autopilot-recurring-fatalities ----
 #case(
-  number: 190,
+  number: 195,
   slug: "tesla-autopilot-recurring-fatalities",
   title: "Tesla Autopilot — Recurring Fatalities",
   year: "2016 – present",
@@ -265,7 +265,7 @@
     // -- Open Problems --
     [
       Tesla Autopilot is the consumer-scale version of the Uber ATG problem
-      (Case 178): a passive-monitoring role deployed without the capability
+      (Case 183): a passive-monitoring role deployed without the capability
       infrastructure — training, engagement design, attention measurement —
       to make it performable. The open problem is what driver-engagement
       architecture, if any, could make Level-2 monitoring sustainable for
@@ -335,9 +335,9 @@
   evidence-source: "investigation",
 )
 
-// ---- Case 191 — fintech-lending-fairness-audit-when ----
+// ---- Case 196 — fintech-lending-fairness-audit-when ----
 #case(
-  number: 191,
+  number: 196,
   slug: "fintech-lending-fairness-audit-when",
   title: "Fintech Lending Fairness Audit — When Including Race Reduces Disparity",
   year: "2025",
@@ -374,7 +374,7 @@
   ],
   sections: (
     [
-      The lending pair (Cases 181 and 191) takes the practitioner past
+      The lending pair (Cases 186 and 196) takes the practitioner past
       the first equity intuition — *just don't use the protected
       attribute* — and into the harder territory the equity literature
       now operates in. Bartlett showed that omission preserves the
@@ -395,7 +395,7 @@
       audit reports lower measured disparity on standard
       group-fairness metrics under controlled mitigation than under
       unawareness — small scale, but the pattern matches the
-      mortgage-finance finding (Case 181) and the broader fair-ML
+      mortgage-finance finding (Case 186) and the broader fair-ML
       literature.#cn()
     ],
     [
@@ -423,7 +423,7 @@
       updated when peer review lands.#cn()
     ],
     [
-      What the pair (Cases 181 + 150) teaches together is the form of
+      What the pair (Cases 186 + 150) teaches together is the form of
       the equity capability deliverable: the practitioner must specify,
       in advance, the fairness definition the deployment will be
       evaluated against, audit on outputs rather than reasoning about
@@ -467,7 +467,7 @@
     The Coots audit is the small-tier frontier instance of the
     finding that controlled inclusion of a protected attribute can
     produce lower measured disparity than omission. With Bartlett
-    (Case 181) it forms the canonical lending pair: omission does
+    (Case 186) it forms the canonical lending pair: omission does
     not fix the harm; competing fairness definitions disagree about
     what fix is. Evidence is preprint-tier; future validation will
     continue.
@@ -487,14 +487,14 @@
   reflection-list: (
     [Identify a fairness audit in your domain conducted at preprint or unpublished stage. What part of its claim survives if peer review modifies the metric choices? What part is contingent on the specific magnitudes?],
     [Specify which fairness definition your deployment is being held to before the audit is run. What trade-off — across calibration, equalized odds, demographic parity — does that choice accept?],
-    [Coots' finding is consistent with Bartlett (Case 181) and with the broader fair-ML literature, but the specific magnitudes are preprint-tier. What is the minimum follow-up evidence you would require before allowing this case to drive an operational decision in your context?],
+    [Coots' finding is consistent with Bartlett (Case 186) and with the broader fair-ML literature, but the specific magnitudes are preprint-tier. What is the minimum follow-up evidence you would require before allowing this case to drive an operational decision in your context?],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 9"),
 )
 
-// ---- Case 192 — predictive-policing-predpol ----
+// ---- Case 197 — predictive-policing-predpol ----
 #case(
-  number: 192,
+  number: 197,
   slug: "predictive-policing-predpol",
   title: "Predictive Policing — PredPol",
   year: "2011 – present",
@@ -572,7 +572,7 @@
     // -- Open Problems --
     [
       Predictive policing is the canonical algorithmic-governance case in
-      U.S. policing and pairs with COMPAS (Case 182) and educational
+      U.S. policing and pairs with COMPAS (Case 187) and educational
       algorithmic bias (Case 46). The open problem is a construct-validity
       audit — a way to establish, before deployment, whether a predictive
       system's training data is a record of ground truth or merely of
@@ -639,9 +639,9 @@
   clo-anchor: "CLO-4",
 )
 
-// ---- Case 193 — launching-the-brain-initiative ----
+// ---- Case 198 — launching-the-brain-initiative ----
 #case(
-  number: 193,
+  number: 198,
   slug: "launching-the-brain-initiative",
   title: "Launching the BRAIN Initiative — Governance of a Grand Challenge",
   year: "2011 – 2015 – present",
@@ -673,7 +673,7 @@
     Review retrospective assessed that the big-science brain projects,
     BRAIN included, did not deliver the unified understanding their
     framing promised. The case pairs with the EU Human Brain Project
-    (Case 176) as a contrast in governance models — distributed
+    (Case 181) as a contrast in governance models — distributed
     working-group versus top-down single-PI — at the same era, the
     same ambition, and opposite trajectories.
   ],
@@ -738,7 +738,7 @@
       sequence, the working-group composition decision, and the
       public airing of scope drift are the artifacts a future
       capability-development program can study. Paired with the EU
-      Human Brain Project (Case 176), the case shows that the
+      Human Brain Project (Case 181), the case shows that the
       governance model — distributed working-group versus top-down
       single-PI — was the variable that explained why one program
       survived and adapted while the other unraveled. The framing,
@@ -790,7 +790,7 @@
     Constraints) for the public-record governance contestation;
     and in Domain 4 (Test and Evaluation) for the
     enthusiasm-evidence gap as the framing exceeded delivered
-    science. Direct pair with Case 176 (EU Human Brain Project),
+    science. Direct pair with Case 181 (EU Human Brain Project),
     same era and ambition, opposite governance model. The COI
     disclosure under the title is binding: the editor's research
     adjacency is what motivated the critical retrospective being
@@ -804,14 +804,14 @@
   reflection-list: (
     [Identify a large research or capability-development program in your domain whose launch artifacts (position papers, working-group reports, milestone plans) are publicly auditable. What governance choices were made openly and which were made in private?],
     [Specify the founding-framing-vs-delivered-capability comparison you would publish at year five and year ten of a program you are designing. What is the evidence form, who commissions it, and where does it live in the record?],
-    [BRAIN survived and adapted while the EU Human Brain Project (Case 176) unraveled. What is the minimum governance documentation that would let a future program-designer learn the difference, rather than reconstruct it from contested press accounts?],
+    [BRAIN survived and adapted while the EU Human Brain Project (Case 181) unraveled. What is the minimum governance documentation that would let a future program-designer learn the difference, rather than reconstruct it from contested press accounts?],
   ),
   courses: ("LEN 1", "LEN 7", "LEN 8"),
 )
 
-// ---- Case 194 — waymos-safety-case-framework-governance ----
+// ---- Case 199 — waymos-safety-case-framework-governance ----
 #case(
-  number: 194,
+  number: 199,
   slug: "waymos-safety-case-framework-governance",
   title: "Waymo's Safety Case Framework — Governance Objection Dissolved by Designed Artifact",
   year: "2023 / 2025",
@@ -910,10 +910,10 @@
       is the artifact that makes revocation possible —
       regulators or auditors can identify which sub-claim has
       failed, on what evidence, and require the deploying
-      organization to act on the gap. Pair with Case 185
+      organization to act on the gap. Pair with Case 190
       (Cruise) as the foil: the same regulatory regime, the
       opposite governance choice, the opposite outcome. Pair
-      with Case 195 (CPUC permit framework) as the
+      with Case 200 (CPUC permit framework) as the
       regulator-side counterpart of the deployer-side
       artifact.#cn()
     ],
@@ -923,7 +923,7 @@
     "2023 response: structured safety case framework — claims/sub-claims/evidence types public; trade-secret items remain proprietary",
     "November 2025 independent third-party audits of safety case and remote-assistance program — the audits disclosed, not the underlying data",
     "Practice-synthesis tier: Waymo whitepaper + Montreal AI Ethics Institute + 2025 audit summaries; future validation ongoing",
-    "Pairs with Case 185 (Cruise foil) and Case 195 (CPUC permit framework); exercises NEW CLO Delegation with revocation",
+    "Pairs with Case 190 (Cruise foil) and Case 200 (CPUC permit framework); exercises NEW CLO Delegation with revocation",
   ),
   approaches: (
     during: (
@@ -941,8 +941,8 @@
     [Waymo (2023), "A Blueprint for AV Safety: Waymo's Toolkit For Building a Credible Safety Case," whitepaper.],
     [Waymo (November 2025), "Independent Audits of Waymo's Safety Case and Remote Assistance Programs," summary release.],
     [Montreal AI Ethics Institute (2023), summary and analysis of the Waymo safety case framework.],
-    [California Public Utilities Commission, AV passenger-service permit framework documents — paired Case 195 for the regulator-side artifact.],
-    [Cruise / California DMV Order of Suspension (October 2023) — paired Case 185 as the foil.],
+    [California Public Utilities Commission, AV passenger-service permit framework documents — paired Case 200 for the regulator-side artifact.],
+    [Cruise / California DMV Order of Suspension (October 2023) — paired Case 190 as the foil.],
   ),
   quote: [Where opacity could not be defended, a structured falsifiable argument plus audited assurance took its place.],
   quote-source: "Editors' synthesis of the Waymo safety case framework and the November 2025 third-party audits.",
@@ -964,7 +964,7 @@
     revocation possible — and in Domain 3 (Emerging Systems
     and Human-System Collaboration) for the deployer-side artifact that
     permits oversight of a system whose internals are trade
-    secret. Pair with Case 185 (Cruise) as the foil and Case
+    secret. Pair with Case 190 (Cruise) as the foil and Case
     184 (CPUC) as the regulator-side complement.
   ],
   literature-items: (
@@ -979,9 +979,9 @@
   courses: ("LEN 4", "LEN 8", "LEN 9"),
 )
 
-// ---- Case 195 — cpuc-av-passenger-service-permits ----
+// ---- Case 200 — cpuc-av-passenger-service-permits ----
 #case(
-  number: 195,
+  number: 200,
   slug: "cpuc-av-passenger-service-permits",
   title: "CPUC AV Passenger-Service Permits — Conditions as a Designed Objection-Dissolver",
   year: "2020 – 2024",
@@ -1008,8 +1008,8 @@
     other disabilities. A 2024 update strengthened the DMV's
     authority to impose targeted operational restrictions for
     safety, and the case shows the regime in operation: the
-    Cruise suspension (Case 185) shows the regime can revoke; the
-    Waymo continuation (Case 194) shows it can permit
+    Cruise suspension (Case 190) shows the regime can revoke; the
+    Waymo continuation (Case 199) shows it can permit
     conditionally. The structural complement to the Waymo
     deployer-side safety case framework is exactly this
     regulator-side artifact — the permit conditions make the
@@ -1060,8 +1060,8 @@
       satisfy and that the regulator can re-tune.#cn()
     ],
     [
-      The case is the structural complement to Case 194 (Waymo)
-      and the inverse-outcome companion of Case 185 (Cruise). The
+      The case is the structural complement to Case 199 (Waymo)
+      and the inverse-outcome companion of Case 190 (Cruise). The
       Waymo safety case framework is the deployer-side artifact;
       the CPUC permit conditions are the regulator-side artifact
       that makes the safety case operative as a regulatory
@@ -1092,17 +1092,17 @@
     "CPUC and California DMV regulate AV passenger service in a split-jurisdiction regime; binary deploy/don't-deploy risked either blocking deployment or losing governance handle",
     "Permit conditions: time-of-day limits, weather restrictions, fleet caps, geographic carve-outs, mandatory Passenger Safety Plan for riders with disabilities",
     "August 2024 update: DMV authority strengthened to impose targeted operational restrictions for safety during deployment lifecycle",
-    "Structural complement to Case 194 (Waymo deployer-side safety case) and inverse-outcome companion of Case 185 (Cruise revocation)",
+    "Structural complement to Case 199 (Waymo deployer-side safety case) and inverse-outcome companion of Case 190 (Cruise revocation)",
     "Practice-synthesis tier: program guidance and permit decisions documented; no peer-reviewed evaluation of equity-of-service outcomes yet — future validation ongoing",
   ),
   approaches: (
     during: (
       [Treat governance objections as design parameters rather than as binary blockers — write them into the permit conditions where compliance is verifiable and violation triggers enforcement.],
       [Require a documented Passenger Safety Plan (or equivalent equity-of-service artifact) at initial permit issuance so the equity objection has an operational answer the regulator can audit.],
-      [Build the regulatory authority to re-tune the conditions during the deployment lifecycle into the regime itself; the Cruise suspension (Case 185) is what re-tuning under a failure event looks like.],
+      [Build the regulatory authority to re-tune the conditions during the deployment lifecycle into the regime itself; the Cruise suspension (Case 190) is what re-tuning under a failure event looks like.],
     ),
     after: (
-      [Pair the case with Case 194 (Waymo) as the regulator-deployer artifact dyad — the safety case framework and the permit conditions are co-constitutive, not independent moves.],
+      [Pair the case with Case 199 (Waymo) as the regulator-deployer artifact dyad — the safety case framework and the permit conditions are co-constitutive, not independent moves.],
       [Use the case in LENS Domain 4 modules on cross-regime governance seams (CPUC and DMV) — the regime structure is itself part of the capability question.],
       [Carry the practice-synthesis flag honestly: the condition-design pattern is teachable, but the equity-of-service outcome data are not yet peer-reviewed; future validation requires independent evaluation of the Passenger Safety Plan deliverables.],
     ),
@@ -1111,13 +1111,13 @@
     [California Public Utilities Commission, "Autonomous Vehicle Passenger Service Programs," CPUC program page and August 2024 application guidance.],
     [CPUC permit decisions for Cruise and Waymo, 2020–2024.],
     [California Department of Motor Vehicles, AV regulatory program — strengthened safety-restriction authority, 2024.],
-    [Paired Cases 194 (Waymo deployer-side artifact) and 158 (Cruise revocation under regime).],
+    [Paired Cases 199 (Waymo deployer-side artifact) and 158 (Cruise revocation under regime).],
   ),
   quote: [The governance objection was not refused. It was made a permit condition.],
   quote-source: "Editors' synthesis of the CPUC AV passenger-service permit framework.",
   le-insight: [
     The CPUC permit framework is the regulator-side
-    counterpart to the Waymo safety case (Case 194): conditions
+    counterpart to the Waymo safety case (Case 199): conditions
     operationalize objections rather than blocking deployment.
     Evidence-tier flag is practice-synthesis; the regulatory
     architecture is documented in CPUC decisions, but no
@@ -1131,8 +1131,8 @@
     governance seams (DMV regulates the vehicle; CPUC
     regulates the service; both can act) and for the
     condition-as-design-parameter pattern that makes the
-    deployer-side safety case (Case 194) operative as a
-    regulatory instrument. Pairs with Case 185 as the
+    deployer-side safety case (Case 199) operative as a
+    regulatory instrument. Pairs with Case 190 as the
     revocation event under the regime.
   ],
   literature-items: (
@@ -1148,9 +1148,9 @@
   courses: ("LEN 4", "LEN 8", "LEN 9"),
 )
 
-// ---- Case 196 — aadhaar-exclusion-litigation-judicial ----
+// ---- Case 201 — aadhaar-exclusion-litigation-judicial ----
 #case(
-  number: 196,
+  number: 201,
   slug: "aadhaar-exclusion-litigation-judicial",
   title: "Aadhaar Exclusion Litigation — Judicial Correction of Biometric Welfare Delegation in India",
   year: "2018 – 2025",
@@ -1323,7 +1323,7 @@
     the system — alternatives to biometric authentication must
     be provided — rather than revoking it, holding that
     exclusion through no fault of the individual is the
-    system's failure to answer for. Pair with SyRI (Case 184)
+    system's failure to answer for. Pair with SyRI (Case 189)
     and the UK Post Office Horizon thread.
   ],
   literature-items: (
@@ -1339,9 +1339,9 @@
   courses: ("LEN 5", "LEN 8", "LEN 9"),
 )
 
-// ---- Case 197 — care-principles-indigenous-data ----
+// ---- Case 202 — care-principles-indigenous-data ----
 #case(
-  number: 197,
+  number: 202,
   slug: "care-principles-indigenous-data",
   title: "CARE Principles — Indigenous Data Governance as a Replaced Regime",
   year: "2019 – 2020 (principles); ongoing",
@@ -1496,9 +1496,9 @@
   courses: ("LEN 4", "LEN 5", "LEN 8"),
 )
 
-// ---- Case 198 — nyc-ll144-aedt-2023 ----
+// ---- Case 203 — nyc-ll144-aedt-2023 ----
 #case(
-  number: 198,
+  number: 203,
   slug: "nyc-ll144-aedt-2023",
   title: "NYC Local Law 144 — Bias Audits as Governance Artifact",
   year: "2023 – present",
@@ -1595,7 +1595,7 @@
       through disclosure rather than through a design change.
       Pair with Case 86 (Gándara community-college predictive
       equity) for the predictive-equity thread at higher-
-      education scale. Pair with Case 177 (Amazon hiring AI) for
+      education scale. Pair with Case 182 (Amazon hiring AI) for
       the same domain — the audit regime is the governance
       instrument that, had it been in place, would have applied
       to an internal recruiting tool of Amazon's described
@@ -1632,7 +1632,7 @@
     "Three requirements: annual independent bias audit, publication of audit summary, candidate notice and alternative-selection request process",
     "Audit metrics: selection rate and impact ratio by sex, race/ethnicity, intersectional categories; computed by independent auditor not associated with the AEDT",
     "Yam & Skirpan 2024 \"bias audits without bias data\": employers often lack protected-attribute data; Wright & Brown 2024 audit-quality study finds wide variability",
-    "Pair with Case 81 (OU Analyse), Case 86 (Gándara), Case 177 (Amazon hiring AI); whether audits reduce actual disparate impact remains under-evidenced",
+    "Pair with Case 81 (OU Analyse), Case 86 (Gándara), Case 182 (Amazon hiring AI); whether audits reduce actual disparate impact remains under-evidenced",
   ),
   approaches: (
     during: (
@@ -1672,7 +1672,7 @@
     audit-as-governance-instrument discipline. Pair with Case
     115 (OU Analyse governance-objection-dissolved-by-design),
     Case 86 (Gándara community-college predictive equity), and
-    Case 177 (Amazon hiring AI). The intervention is real and
+    Case 182 (Amazon hiring AI). The intervention is real and
     its limits are real; the disclosure-and-audit structure is
     not a substantive-standards structure, and the reduction-
     of-actual-disparate-impact evaluation question is at the
@@ -1691,9 +1691,9 @@
   courses: ("LEN 3", "LEN 5", "LEN 8"),
 )
 
-// ---- Case 199 — cruise-robotaxi-pedestrian-drag ----
+// ---- Case 204 — cruise-robotaxi-pedestrian-drag ----
 #case(
-  number: 199,
+  number: 204,
   slug: "cruise-robotaxi-pedestrian-drag",
   title: "Cruise Robotaxi — Pedestrian Drag",
   year: "2023",

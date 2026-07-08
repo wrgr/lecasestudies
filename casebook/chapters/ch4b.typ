@@ -121,7 +121,7 @@
       What LENS takes from the case is the requirement-for-
       requirements form. MIL-STD-1472H (Case 138) is the
       requirements-discipline mechanism for the design phase;
-      SUBSAFE (Case 170) is the certification-discipline
+      SUBSAFE (Case 173) is the certification-discipline
       mechanism for the sustainment phase of a specific
       capability boundary. The GAO finding identifies the
       gap that those mechanisms do not fill: the portfolio-
@@ -177,7 +177,7 @@
     architecture frontier case (induced 1.4; LENS D1/PT4) — used
     in Domain 4 for the CLO *Judgment under inadequate
     evidence* at portfolio scale. Pair with Case 138 and
-    Case 170.
+    Case 173.
   ],
   literature-items: (
     [GAO-22-104533 (2022), Weapon System Sustainment],
@@ -433,7 +433,7 @@
     [
       The case's value to LENS is the requirement-discipline
       form. MIL-STD-1472H is the human-engineering analog of
-      what SUBSAFE (Case 170) does for submarine
+      what SUBSAFE (Case 173) does for submarine
       watertight-integrity: a binding, recurring, auditable
       requirement set that the program-management chain
       cannot trade away without a documented deviation. The
@@ -470,7 +470,7 @@
     "MIL-STD-1472 series 1968 – present; eight revisions through H (Sept 15, 2020)",
     "Design Criteria Standard: controls, displays, anthropometry, workspace, environment, hazards — binding, not advisory",
     "Converts human-factors findings into engineered requirements an acquisition contract can specify",
-    "Structural analog of SUBSAFE (Case 170) at the human-engineering scale — requirements-as-deliverable form",
+    "Structural analog of SUBSAFE (Case 173) at the human-engineering scale — requirements-as-deliverable form",
     "Necessary but not sufficient: standard is the mechanism, program tailoring and verification determine the outcome",
   ),
   approaches: (
@@ -509,7 +509,7 @@
     into engineered requirements, and in Domain 5 (Navigating
     Sociotechnical Constraints) for the tailoring and
     verification disciplines around the standard. Direct pair
-    with Case 170 (SUBSAFE) at the requirements-as-deliverable
+    with Case 173 (SUBSAFE) at the requirements-as-deliverable
     layer and with Case 132 (F-22 OBOGS) at the
     standard-versus-tailoring layer.
   ],

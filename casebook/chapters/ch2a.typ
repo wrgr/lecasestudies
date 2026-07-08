@@ -1677,7 +1677,7 @@
     institutional contract with the families and teachers operating
     inside it — recurs across the educational-technology dataset
     (Cases 53, 139, 67) and is the educator's-side analog of the
-    governance failures in Cases 49 and 186.
+    governance failures in Cases 49 and 191.
   ],
   lens-approach: [
     LENS uses Summit Learning in LEN 7 as the foundational
@@ -1806,7 +1806,7 @@
     ],
     [
       The case sits as the structural inverse of Case 80 (Georgia
-      State's predictive advising) and pairs with Case 181 (mortgage-
+      State's predictive advising) and pairs with Case 186 (mortgage-
       lending fairness) and Case 86 (community-college predictive
       equity). Georgia State used prediction to trigger support;
       enrollment-management algorithms use prediction to reduce
@@ -1841,7 +1841,7 @@
     "Two-stage architecture: predict enrollment probability per accepted applicant, then optimize aid offer for net tuition or yield",
     "Seven major vendors named: Ruffalo Noel Levitz, EAB, Rapid Insight, Capture Higher Ed, Othot, Whiteboard, Civitas Learning",
     "Vendor-reported case studies: 23% yield gain (Washington), 33% net tuition gain with 6-point discount cut (EAB), 173 added freshmen (Othot)",
-    "Inversion of Case 80 (Georgia State support-trigger) and pair with Cases 181 (Bartlett lending) and 138 (Gándara community college)",
+    "Inversion of Case 80 (Georgia State support-trigger) and pair with Cases 186 (Bartlett lending) and 138 (Gándara community college)",
     "Engler hedges binding: vendor obscurity, algorithmic vs. manual leveraging, no audit of specific protected-class impact; future validation ongoing",
   ),
   approaches: (
@@ -1882,7 +1882,7 @@
     the deployment lacks, and in Domain 4 (Test and Evaluation)
     for the evidence-tier discipline — practice-synthesis is the
     strongest available tier, and the case says so. Pair with
-    Case 80 (Georgia State support-trigger inversion), Case 181
+    Case 80 (Georgia State support-trigger inversion), Case 186
     (Bartlett lending fairness), and Case 86 (Gándara community-
     college equity). coi-light render under the title is binding.
   ],
@@ -2059,7 +2059,7 @@
     evidence-tier discipline binding policy-tier analysis to
     audit-tier verification. Pair with Case 55 (Engler /
     enrollment algorithms) as governance frame to technical
-    frame, and with Cases 181 (Bartlett) and 138 (Gándara) for
+    frame, and with Cases 186 (Bartlett) and 138 (Gándara) for
     the construct-choice anchor across deployed prediction
     systems. coi-light render under the title is binding.
   ],

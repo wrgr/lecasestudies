@@ -712,7 +712,7 @@
     verdict. The case is the canonical 7.1 failure of an inherited
     capability regime (pilot proficiency) not being re-verified
     against the new envelope the technology transition introduced.
-    Pair with the aging-system transition cases (Cases 114–116, 154, 156, 171, and 189, drafted in parallel).
+    Pair with the aging-system transition cases (Cases 114–116, 154, 156, 174, and 194, drafted in parallel).
   ],
   sections: (
     [
@@ -808,7 +808,7 @@
     after: (
       [Preserve the NTSB's open-verdict language ("can increase the safety potential ... not yet realized in the period studied") in any report on the transition's outcome; the study did not say glass is unsafe, and the precise language is what makes the recommendation set actionable.],
       [Track implementation of the NTSB recommendation set (A-10-36 through A-10-40) as the engineering response to the open verdict; the verdict closes when the recommendations are implemented and the next round of evidence is collected.],
-      [Carry the structural lesson into adjacent transitions — the aging-system transition cases (Cases 114–116, 154, 156, 171, 189) — as evidence that the inherited certification of operator proficiency has to be re-verified against the new envelope across consumer, commercial, and defense scales.],
+      [Carry the structural lesson into adjacent transitions — the aging-system transition cases (Cases 114–116, 154, 156, 174, 194) — as evidence that the inherited certification of operator proficiency has to be re-verified against the new envelope across consumer, commercial, and defense scales.],
     ),
   ),
   references: (
@@ -838,7 +838,7 @@
     automation-induced failure modes (mode confusion,
     automation surprises, attention capture) the transition
     introduced. Pair with the aging-system
-    transition cases (Cases 114–116, 154, 156, 171, 189)
+    transition cases (Cases 114–116, 154, 156, 174, 194)
     at the cross-scale capability-under-change layer.
   ],
   literature-items: (
@@ -2614,7 +2614,7 @@
     the upward-channel design the CAIB called a piece of safety
     hardware. Pair with Deepwater Horizon (Case 163) on the
     multi-layer-drift form, and with Bhopal (Case 159) and Fukushima
-    (Case 168) on cumulative inadequacy in catastrophic-system
+    (Case 169) on cumulative inadequacy in catastrophic-system
     operations.
   ],
   literature-items: (

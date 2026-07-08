@@ -1468,7 +1468,7 @@
       broken learning channel, the gulf between what indicators
       displayed and what crews inferred, and the institutional absence
       of a body responsible for cross-fleet learning. TMI is paired
-      later with INPO (Case 172) as the book's strongest argument that
+      later with INPO (Case 175) as the book's strongest argument that
       failure can engineer durable industry-level reform.
     ],
   ),
@@ -1514,7 +1514,7 @@
     D1), examine the control-room interface and post-accident
     instrumentation as evidence-architecture problems (LENS D3), and
     design the cross-fleet learning channel whose absence at
-    Davis-Besse let TMI happen. The case pairs with INPO (Case 172) as
+    Davis-Besse let TMI happen. The case pairs with INPO (Case 175) as
     the institution-building counterpart to the failure that produced
     it, and with Fitzgerald/McCain (Case 124) as the contrasting failure
     where the missing learning channel was internal to one service
@@ -1553,9 +1553,263 @@
   clo-anchor: "CLO-3, CLO-1",
 )
 
-// ---- Case 167 — sago-mine-disaster ----
+// ---- Case 167 — hurricane-katrina-fema-response ----
+// NOTE: number 167 is a placeholder pending editor decision A1 baseline confirmation.
+// VERIFY: revised death count 1,392 (Rappaport/NHC-linked revisions, AMS papers 2014/2016) vs. earlier official ~1,833; the "~1,400" framing below follows the revised counts and is hedged in text.
+// VERIFY: exact wording of the "Failure of Initiative" preface quote confirmed via secondary source (IPS, 2006); confirm against H. Rept. 109-377 preface before print.
 #case(
   number: 167,
+  slug: "hurricane-katrina-fema-response",
+  title: "Hurricane Katrina — The FEMA/DHS Response Failure",
+  year: "2005",
+  domains-list: ("emergency management", "disaster response", "government"),
+  modes-code: "GK",
+  impact: "Approximately 1,400 deaths under revised counts (earlier official estimates near 1,800; attribution varies by study) and roughly $125 billion in damage after Katrina's August 29, 2005 landfall; the most-investigated disaster response failure in U.S. history — House Select Bipartisan Committee \"A Failure of Initiative\" (February 2006), Senate HSGAC \"Hurricane Katrina: A Nation Still Unprepared\" (May 2006), and the White House Townsend report (February 2006) converged on a response that failed against a scenario the July 2004 Hurricane Pam exercise had simulated in detail thirteen months earlier; reform arrived as the Post-Katrina Emergency Management Reform Act of 2006",
+  kind: "failure",
+  scale: "big",
+  evidence-source: "investigation",
+  induced-anchor: "1.1",
+  lens-anchor: "D1/PT1",
+  clo-anchor: "CLO-1",
+  summary: [
+    Hurricane Katrina made landfall on the Gulf Coast on
+    29 August 2005; the levee system protecting New Orleans
+    failed, and the federal response failed with it. The
+    casebook's spine for the case is that the missing
+    capability was known before the event: in July 2004, the
+    FEMA-funded Hurricane Pam exercise gathered roughly 300
+    local, state, and federal officials around a simulated
+    slow-moving Category 3 hurricane whose storm surge
+    overtopped the New Orleans levees, flooded the city, and
+    stranded a population the plans could not move — almost
+    exactly the scenario that arrived thirteen months later.
+    Pam's action items were unfunded and unfinished when
+    Katrina hit. In the event, FEMA's logistics system could
+    not track or deliver commodities; the National Response
+    Plan's Incident of National Significance machinery was
+    invoked only after landfall; unified command across
+    local, state, and federal levels never formed;
+    communications interoperability collapsed; and the
+    Superdome and Convention Center were known to television
+    audiences before they were known to the federal
+    operations picture. Death-toll estimates range from
+    roughly 1,400 under revised counts to earlier official
+    figures near 1,800, with attribution varying by study.
+    Three major investigations followed, and the Post-Katrina
+    Emergency Management Reform Act of 2006 rebuilt FEMA's
+    authorities around a National Preparedness System.
+  ],
+  sections: (
+    [
+      New Orleans's vulnerability was not a discovery. The
+      city sits largely below sea level behind a federal levee
+      system, and the catastrophic-flood scenario had been
+      anticipated for years in emergency-management planning.
+      In July 2004 — thirteen months before Katrina — FEMA
+      funded the Hurricane Pam exercise in Baton Rouge,
+      bringing together roughly 300 local, state, and federal
+      emergency-response officials around a simulated
+      slow-moving Category 3 hurricane with 120-mile-per-hour
+      sustained winds, up to twenty inches of rain, and a
+      storm surge that overtopped the levees in the New
+      Orleans area. The scenario projected ten to twenty feet
+      of flooding across most of the city and surrounding
+      parishes, the destruction of hundreds of thousands of
+      buildings, more than a hundred thousand residents unable
+      to self-evacuate, and fatalities in the tens of
+      thousands. Pam produced draft functional plans —
+      search-and-rescue, sheltering, temporary medical care,
+      debris — and a schedule of follow-on workshops to turn
+      the drafts into executable, resourced capability. When
+      Katrina made landfall, the follow-on work was partially
+      unfunded and unfinished: the exercise had specified the
+      capability requirement, and no institution had converted
+      the specification into built capability.#cn()
+    ],
+    [
+      Katrina made landfall on 29 August 2005; the levee
+      system was breached rather than merely overtopped, and
+      roughly eighty percent of New Orleans flooded. The
+      response then discovered, in production, each capability
+      the exercise had specified on paper. FEMA's logistics
+      system could not track commodities in transit or
+      confirm delivery — trucks of ice, water, and food moved
+      without visibility into where they were or whether they
+      arrived. The National Response Plan's machinery for a
+      catastrophic event — the Incident of National
+      Significance designation and the catastrophic-incident
+      annex intended to push resources without waiting for
+      state requests — was invoked only after landfall, in
+      its first operational use, rather than driving
+      pre-landfall mobilization. Unified command across city,
+      state, and federal authorities never formed, and senior
+      officials worked around the designed coordination
+      structures. Communications interoperability collapsed
+      as towers, switches, and emergency-operations centers
+      flooded. Tens of thousands of residents concentrated at
+      the Superdome and the Convention Center in deteriorating
+      conditions; the Convention Center's situation was
+      visible to television audiences before it entered the
+      federal operations picture, and senior officials
+      publicly disputed conditions that broadcast footage had
+      already established. Estimates of the death toll range
+      from roughly 1,400 under revised counts to earlier
+      official figures near 1,800 — attribution of individual
+      deaths to the storm varies by study — with damage of
+      roughly \$125 billion.#cn()
+    ],
+    // VERIFY: Incident of National Significance designation by Secretary Chertoff on August 30, 2005 (first operational use); confirm exact date/time against the Senate report timeline before print.
+    [
+      Three major investigations followed within a year, and
+      their convergence is the case's evidentiary backbone.
+      The House Select Bipartisan Committee's _A Failure of
+      Initiative_ (15 February 2006) found failures at every
+      level of government, documented the Hurricane Pam
+      exercise and its unconverted action items in detail, and
+      framed the response in deliberate contrast to the 9/11
+      Commission's "failure of imagination": the imagination
+      had been exercised, funded, and written down, and what
+      failed was the initiative to act on it. The Senate
+      Homeland Security and Governmental Affairs Committee's
+      _Hurricane Katrina: A Nation Still Unprepared_ (May
+      2006), built on more than 325 interviews and over
+      800,000 pages of documents, charged FEMA with failures
+      across personnel deployment, communications,
+      catastrophic planning, commodity pre-staging, medical
+      and search-and-rescue deployment, and evacuation — and
+      recommended dissolving FEMA and rebuilding its function
+      inside DHS. The White House's _The Federal Response to
+      Hurricane Katrina: Lessons Learned_ (the Townsend
+      report, 23 February 2006) issued 125 recommendations
+      and 17 lessons, including the failure to maintain a
+      common operating picture — the finding that formalized
+      the television-before-operations problem.#cn()
+    ],
+    [
+      Reform arrived through statute. The Post-Katrina
+      Emergency Management Reform Act of 2006 (PKEMRA,
+      Public Law 109-295, signed 4 October 2006) rebuilt
+      FEMA's authorities inside DHS rather than dissolving
+      it: it restored preparedness functions to the agency,
+      set qualification requirements for the FEMA
+      Administrator and gave the office a direct line to the
+      President during catastrophes, authorized accelerated
+      federal assistance in advance of a state request for
+      precisely the catastrophic case Katrina represented,
+      and mandated the national preparedness architecture — a
+      national preparedness goal and system under which
+      exercise findings are tracked as corrective actions
+      rather than left as drafts. PKEMRA is the institutional
+      codification of the case's lesson: it converted the
+      discipline that Hurricane Pam lacked — a mechanism
+      obligating someone to fund and finish what an exercise
+      proves is missing — into statutory machinery. Whether
+      the machinery holds is a separate question the casebook
+      leaves open; what the statute establishes is that
+      Congress located the failure where the investigations
+      did, in the seam between demonstrated requirement and
+      built capability.#cn()
+    ],
+    [
+      The hedges the case carries are load-bearing. The death
+      toll is contested: revised counts place it near 1,400,
+      earlier official figures near 1,800, and the
+      attribution of individual deaths — direct drowning
+      versus indirect cardiovascular and displacement deaths —
+      varies by study and jurisdiction; the casebook reports
+      the range, not a number. The analytical spine is the
+      Hurricane Pam seam: an exercised, documented capability
+      requirement — levee overtopping, a flooded city, more
+      than a hundred thousand residents who could not
+      self-evacuate — that no institution converted into
+      funded, staffed, rehearsed capability in the thirteen
+      months before the event. This is the
+      disaster-preparedness form of stated versus engineered
+      requirements: the stated requirement existed in
+      exercise documentation at a level of specificity the
+      investigations found almost eerie, and the engineered
+      capability did not exist at all. Response is the phase
+      in which the gap is discovered in production, at the
+      cost structure production imposes. The case asks the
+      reader to account not for why no one foresaw the
+      scenario — they did, in writing — but for why foresight
+      without a funded owner is indistinguishable, on the
+      day, from no foresight at all.
+    ],
+  ),
+  beats: (
+    "July 16 – 23, 2004: FEMA-funded Hurricane Pam exercise, ~300 local/state/federal officials — simulated Category 3 storm overtops New Orleans levees, floods the city, strands 100,000+; action items unfunded and unfinished at landfall thirteen months later",
+    "August 29, 2005: Katrina landfall; levee breaches flood ~80% of New Orleans; FEMA logistics cannot track or deliver commodities; Incident of National Significance machinery invoked only after landfall in its first operational use",
+    "Unified local/state/federal command never forms; communications interoperability collapses; Superdome and Convention Center conditions known to television audiences before the federal operations picture",
+    "Three investigations converge: House \"A Failure of Initiative\" (Feb 2006), Senate \"A Nation Still Unprepared\" (May 2006, recommends dissolving FEMA), White House Townsend report (Feb 2006, 125 recommendations)",
+    "Deaths ~1,400 under revised counts (earlier official figures near 1,800; attribution varies by study); ~$125B damage; PKEMRA (Pub. L. 109-295, Oct 2006) rebuilds FEMA's authorities and mandates the national preparedness architecture",
+  ),
+  approaches: (
+    during: (
+      [Treat an exercise finding as an open capability requirement with a named owner, a funding line, and a completion date; Hurricane Pam's draft plans and follow-on workshop schedule specified the requirement, and the case's load-bearing observation is that specification without a funded owner produced no capability in thirteen months.],
+      [Verify the catastrophic-response machinery by operating it before the catastrophe; the Incident of National Significance designation and the push-resources-without-request annex had never been exercised end-to-end in anger, and their first operational use came after landfall of the event they were designed for.],
+      [Build the common operating picture as an engineered deliverable, not an aspiration; the test is concrete — the operations center should know what broadcast television knows, and a response organization that fails that test has a situational-awareness capability gap, not a communications inconvenience.],
+    ),
+    after: (
+      [Convert investigation findings into statutory obligation where institutional memory alone will not hold; PKEMRA's corrective-action and national-preparedness mandates are the codified form of the discipline Pam lacked, and the case teaches the statute as the institutional response, not as the proof the gap is closed.],
+      [Preserve the contested death-toll attribution in any teaching use; the range and its methodological instability are themselves evidence about how poorly instrumented the response was, and smoothing to a single number discards that signal.],
+      [Pair the case in syllabi with the prevention-side cases in this part so the pre/post lifecycle reads as one arc: a prevention regime that thinned, a rehearsed requirement that went unbuilt, and a response phase that discovered the unbuilt capability in production.],
+    ),
+  ),
+  references: (
+    [Select Bipartisan Committee to Investigate the Preparation for and Response to Hurricane Katrina (2006), _A Failure of Initiative_, H. Rept. 109-377, U.S. House of Representatives, February 15, 2006 — including the dedicated Hurricane Pam findings chapter.],
+    [U.S. Senate Committee on Homeland Security and Governmental Affairs (2006), _Hurricane Katrina: A Nation Still Unprepared_, S. Rept. 109-322, May 2006 — 325+ interviews, 838,000+ pages of documents reviewed.],
+    [The White House (2006), _The Federal Response to Hurricane Katrina: Lessons Learned_ (the Townsend report), February 23, 2006 — 17 lessons, 125 recommendations, including the common-operating-picture finding.],
+    [U.S. Senate Committee on Homeland Security and Governmental Affairs (2006), _Preparing for a Catastrophe: The Hurricane Pam Exercise_, hearing, S. Hrg. 109-403, January 24, 2006 — testimony on the July 2004 exercise scope and unfinished follow-on work.],
+    [Post-Katrina Emergency Management Reform Act of 2006, Title VI of Public Law 109-295, signed October 4, 2006 — rebuilt FEMA authorities, accelerated pre-request federal assistance, national preparedness goal and system.],
+  ),
+  quote: [It remains difficult to understand how government could respond so ineffectively to a disaster that was anticipated for years, and for which specific dire warnings had been issued for days.],
+  quote-source: "A Failure of Initiative, Select Bipartisan Committee, February 15, 2006.",
+  le-insight: [
+    Katrina is the load-bearing case for a capability gap that
+    was specified, exercised, and documented before the event
+    and converted into built capability by no one. The
+    Hurricane Pam exercise stated the requirement thirteen
+    months in advance at near-exact fidelity; the response
+    phase then discovered the unbuilt capability in
+    production, at the cost structure production imposes.
+    Foresight without a funded owner is indistinguishable, on
+    the day, from no foresight at all.
+  ],
+  lens-approach: [
+    Katrina is the stated-versus-engineered-requirements case
+    at national scale (induced 1.1; LENS D1/PT1; CLO-1). The
+    induced anchor is 1.1 — engineered versus stated
+    requirements — because the case's spine is precisely that
+    seam: Hurricane Pam produced a stated requirement of
+    unusual fidelity, and nothing engineered it into funded,
+    staffed, rehearsed capability before the event; the
+    response failures are downstream expressions of the
+    unconverted requirement, not independent causes. LENS
+    uses it in Domain 1 (Systems Analysis) for the discipline
+    of tracing a documented requirement to the built
+    capability that does or does not exist behind it, with
+    the pre/post disaster lifecycle of this part as the
+    organizing frame. Pair with the prevention-thinning cases
+    earlier in the chapter and with the PKEMRA reform arc for
+    the institution-building sequel.
+  ],
+  literature-items: (
+    [Select Bipartisan Committee (2006), _A Failure of Initiative_ — House investigation, Hurricane Pam chapter],
+    [Senate HSGAC (2006), _Hurricane Katrina: A Nation Still Unprepared_ — eight categories of FEMA failure],
+    [The White House (2006), _Lessons Learned_ (Townsend report) — common-operating-picture finding],
+  ),
+  reflection-list: (
+    [Identify an exercise, red-team, or audit finding in your organization that specified a missing capability and was closed as "documented" rather than "built." What would a funded owner, a completion date, and a re-verification event have looked like, and what converts a finding into an obligation in your setting?],
+    [The Incident of National Significance machinery saw its first operational use during the event it was designed for. Pick a rarely-invoked escalation mechanism in your domain and specify the rehearsal that would verify it end-to-end — including the authority handoffs — before it is needed in production.],
+    [The Convention Center was visible to television audiences before it entered the federal operations picture. What is the equivalent external signal in your domain that would outrun your operations picture, and what engineered channel would make your institution aware of what the public already knows?],
+  ),
+  courses: ("LEN 1", "LEN 5", "LEN 7"),
+)
+
+// ---- Case 168 — sago-mine-disaster ----
+#case(
+  number: 168,
   slug: "sago-mine-disaster",
   title: "Sago Mine Disaster",
   year: "2006",
@@ -1704,9 +1958,9 @@
   evidence-source: "investigation",
 )
 
-// ---- Case 168 — fukushima-daiichi ----
+// ---- Case 169 — fukushima-daiichi ----
 #case(
-  number: 168,
+  number: 169,
   slug: "fukushima-daiichi",
   title: "Fukushima Daiichi",
   year: "2011",
@@ -1778,7 +2032,7 @@
     ],
     // -- The Capability Gap --
     [
-      Fukushima is the post-TMI case showing that the INPO pattern (Case 172)
+      Fukushima is the post-TMI case showing that the INPO pattern (Case 175)
       is not self-executing. The U.S. industry built INPO to force operating
       discipline and shared learning; the Japanese industry did not build an
       equivalent with the independence to override a utility's optimistic
@@ -1817,13 +2071,13 @@
     [NAIIC (2012) — the "made in Japan" cultural and regulatory-capture conclusion (quoted).],
     [Investigation Committee on the Accident (Hatamura government commission, 2012); IAEA Director General, _The Fukushima Daiichi Accident_ (2015) — external-hazard under-estimation.],
     [C. Lochbaum, E. Lyman & S. Stranahan, _Fukushima: The Story of a Nuclear Disaster_ (2014).],
-    [Y. Funabashi & K. Kitazawa, _Fukushima in Review_ (2012); cf. INPO (Case 172) and Davis-Besse (Case 160).],
+    [Y. Funabashi & K. Kitazawa, _Fukushima in Review_ (2012); cf. INPO (Case 175) and Davis-Besse (Case 160).],
   ),
   quote: [What must be admitted — very painfully — is that this was a disaster \"Made in Japan.\"],
   quote-source: "National Diet of Japan Fukushima Nuclear Accident Independent Investigation Commission, 2012",
   le-insight: [
     Fukushima is the post-TMI case that establishes that the INPO
-    pattern (Case 172) is not self-executing. The U.S. industry built
+    pattern (Case 175) is not self-executing. The U.S. industry built
     INPO; the Japanese industry did not. The cost of the difference,
     paid in 2011, is the strongest available evidence that capability
     institutions must be deliberately built, not assumed.
@@ -1864,9 +2118,469 @@
   evidence-source: "investigation",
 )
 
-// ---- Case 169 — crowdstrike-falcon-outage ----
+// ---- Case 170 — west-africa-ebola-delayed-response ----
+// VERIFY: PHEIC declared 8 August 2014 (Emergency Committee met 6–7 August) — confirmed via WHO/Europe and NEJM.
+// VERIFY: MSF declared the outbreak "out of control" 20–23 June 2014 (TIME, 23 June 2014); WHO leadership publicly disputed the framing as alarmist.
+// VERIFY: Reported toll ~28,616 cases / ~11,310 deaths to 10 June 2016 (WHO situation reports); undercount acknowledged — hedge preserved.
+// VERIFY: Stocking Report = Report of the Ebola Interim Assessment Panel, 7 July 2015 (chair Dame Barbara Stocking).
+// VERIFY: Moon et al., Harvard-LSHTM Independent Panel, The Lancet 386, 28 November 2015, doi:10.1016/S0140-6736(15)00946-0.
+// VERIFY: UN High-Level Panel on the Global Response to Health Crises, "Protecting Humanity from Future Health Crises," A/70/723, 9 February 2016 (chair Jakaya Kikwete).
+// VERIFY: WHO Health Emergencies Programme established May 2016.
+// VERIFY: Moon et al. quote "The most egregious failure was by WHO in the delay in sounding the alarm." — confirm exact wording against The Lancet full text before print.
 #case(
-  number: 169,
+  number: 170,
+  slug: "west-africa-ebola-delayed-response",
+  title: "West Africa Ebola — The Delayed International Response",
+  year: "2014 – 2016",
+  domains-list: ("global health", "outbreak response", "international governance"),
+  modes-code: "GN",
+  impact: "The 2014–2016 West Africa Ebola epidemic reached approximately 28,600 reported cases and 11,300 reported deaths (WHO situation-report figures, undercount acknowledged) across Guinea, Liberia, and Sierra Leone; first cases December 2013, outbreak confirmed March 2014, MSF called it \"out of control\" in June 2014 while WHO leadership disputed that framing, and WHO declared the Public Health Emergency of International Concern only on 8 August 2014 — months into exponential growth",
+  kind: "failure",
+  scale: "big",
+  evidence-source: "investigation",
+  induced-anchor: "1.1",
+  lens-anchor: "D5/PT6",
+  clo-anchor: "CLO-5",
+  summary: [
+    The 2014–2016 West Africa Ebola epidemic is the load-
+    bearing case for the gap between declared international
+    readiness and deployable international capability. The first
+    cases appeared in Guinea in December 2013; the outbreak was
+    confirmed as Ebola in March 2014. Médecins Sans Frontières
+    declared the epidemic "out of control" in June 2014, while
+    WHO leadership publicly disputed that framing as alarmist.
+    WHO declared the Public Health Emergency of International
+    Concern only on 8 August 2014 — months into exponential
+    growth, and by the third PHEIC ever issued. The response
+    then scaled: UNMEER, the first UN emergency health mission,
+    and US and UK military logistics; and community-led change —
+    safe burials and community care-centre networks — bent the
+    curve. The reported toll reached approximately 28,600 cases
+    and 11,300 deaths; the undercount is acknowledged and the
+    figures are reported figures, not a census. Three converging
+    post-mortems — the WHO Ebola Interim Assessment Panel
+    (Stocking Report, July 2015), the Harvard-LSHTM Independent
+    Panel (Moon et al., _The Lancet_, November 2015), and the UN
+    High-Level Panel (2016) — found the same structural failures:
+    WHO's outbreak-response capacity had been cut after the 2011
+    budget reductions; the IHR (2005) core capacities existed on
+    paper in member states but not in practice; and early-warning
+    signals were discounted for political and economic reasons.
+    The reform — the WHO Health Emergencies Programme (2016) —
+    carries the panels' own caveat that post-crisis reform
+    pledges have historically decayed. COVID-19 later tested it.
+  ],
+  sections: (
+    [
+      The epidemiological timeline is the spine of the case. The
+      first cases trace to Guinea in December 2013; the outbreak
+      was laboratory-confirmed as Ebola virus disease in March
+      2014. In April, Guinea's health ministry and WHO reporting
+      characterized the outbreak as slowing toward containment.
+      By June, the case count in Guinea, Liberia, and Sierra
+      Leone was climbing, and Médecins Sans Frontières stated
+      publicly that the epidemic was "out of control" and beyond
+      the capacity of the responding organizations — a framing
+      that WHO leadership disputed at the time as alarmist. WHO
+      convened its Emergency Committee on 6–7 August 2014 and
+      declared a Public Health Emergency of International Concern
+      on 8 August 2014, by which point roughly 1,700 cases and
+      930 deaths had been reported. The declaration came months
+      into exponential growth, not ahead of it. It was only the
+      third PHEIC WHO had ever issued.#cn()
+    ],
+    [
+      The analytical spine is declared capability versus
+      engineered capability. Under the International Health
+      Regulations (2005), member states were required to build
+      and certify a set of core capacities for detecting,
+      assessing, and responding to public-health events. On the
+      certification record, those capacities existed. In the
+      three most-affected states, the deployable capability did
+      not: surveillance, laboratory, and response infrastructure
+      that had been declared present could not in fact absorb the
+      epidemic. The IHR core-capacity regime had produced paper
+      compliance without real capability — the readiness the
+      system declared was not the readiness the system could
+      produce. The Stocking Report named the IHR implementation
+      gap directly as one of its three review areas, alongside
+      WHO's own emergency-response capacity and its role within
+      the wider humanitarian system. The gap itself — declared
+      readiness minus deployable readiness — is the artifact the
+      case asks the reader to own.#cn()
+    ],
+    [
+      The escalation machinery failed as governance, not merely
+      as forecasting. The early signals were present and were
+      discounted: warnings of uncontrolled spread were treated as
+      alarmist, and calls for a larger response were slowed by
+      political and economic considerations, including the fear
+      that a PHEIC declaration would damage trade and travel in
+      the affected economies. This is normalization of deviance
+      in the escalation loop — each week that the exponential
+      signal was reframed as manageable lowered the threshold for
+      reframing it again the next week. The Harvard-LSHTM
+      Independent Panel (Moon et al., _The Lancet_, November 2015)
+      located the most serious failure in the delay in raising
+      the alarm, and its ten reform proposals targeted the
+      governance of outbreak escalation — the machinery by which
+      a discounted signal is supposed to become a declared
+      emergency — rather than the science of detection. WHO's
+      outbreak-response capacity had itself been reduced after the
+      2011 budget cuts, so the institution charged with
+      escalating had been hollowed at the point of need.#cn()
+    ],
+    [
+      The response, once it scaled, showed what deployable
+      capability looks like. The UN established UNMEER, its first
+      dedicated emergency health mission; the United States and
+      United Kingdom supplied military logistics, engineering, and
+      treatment-unit construction. But the curve did not bend on
+      logistics alone. Community-led change carried decisive
+      weight: safe and dignified burial practices that
+      interrupted a major transmission route, and community care-
+      centre networks that moved isolation and care closer to
+      where transmission was occurring. The reported toll settled
+      at approximately 28,600 cases and 11,300 deaths across the
+      three countries to mid-2016. The figures are reported
+      figures and the undercount is acknowledged in the source
+      record — the true toll is higher by an amount that the
+      surveillance system, the same system whose inadequacy is
+      the case's subject, could not measure. That hedge is load-
+      bearing and travels with every use of the numbers.#cn()
+    ],
+    [
+      The reform response and its own caveat close the case. WHO
+      established the Health Emergencies Programme in 2016,
+      restructuring its outbreak-and-emergency function; the UN
+      High-Level Panel on the Global Response to Health Crises
+      (2016) issued twenty-seven recommendations for national,
+      regional, and international action, including political-
+      leadership structures above the technical agencies; and all
+      three panels pressed for genuine — not certified — IHR core-
+      capacity building. Each panel attached the same caveat: that
+      reform pledges made in the wake of a health crisis have
+      historically decayed as the crisis recedes and attention and
+      funding move on. This is the case's binding hedge on its own
+      resolution — the reform is real but its durability was, at
+      the time of writing, unestablished. COVID-19 later tested
+      the reformed system, and the question the panels raised —
+      whether the escalation machinery had been engineered rather
+      than re-certified — is the question the reader is asked to
+      carry forward, not the question the case closes.
+    ],
+  ),
+  beats: (
+    "First cases Guinea December 2013; confirmed as Ebola March 2014; WHO/Guinea reporting characterized outbreak as slowing by April 2014",
+    "MSF declared the epidemic \"out of control\" June 2014; WHO leadership publicly disputed the framing as alarmist",
+    "WHO declared the PHEIC on 8 August 2014 (Emergency Committee 6–7 August) — months into exponential growth; third PHEIC ever",
+    "Response scaled: UNMEER (first UN emergency health mission), US/UK military logistics; community-led safe burials and care-centre networks bent the curve",
+    "Reported toll ~28,600 cases / ~11,300 deaths (undercount acknowledged); Stocking Report (July 2015), Moon et al. Lancet (Nov 2015), UN High-Level Panel (2016) converge on IHR paper-compliance, post-2011 WHO capacity cuts, discounted early signals",
+    "Reform: WHO Health Emergencies Programme (2016); panels' own caveat that post-crisis reform pledges historically decay — COVID-19 later tested it",
+  ),
+  approaches: (
+    during: (
+      [Treat the gap between certified and deployable capability as the primary operational artifact: IHR core capacities existed on the certification record but not in the field, and the analyst's job during escalation is to measure the readiness the system can produce, not the readiness it has declared.],
+      [Build the escalation loop to resist discounting an exponential signal for political or economic reasons; the recurring failure was that each week's reframing of the signal as manageable lowered the threshold for reframing it again, and the declaration lagged the growth it existed to trigger.],
+      [Do not hollow the institution charged with escalation ahead of the emergency; WHO's outbreak-response capacity had been reduced after the 2011 budget cuts, so the body responsible for sounding the alarm had been degraded at the point of need — a sustainment failure in the readiness deliverable itself.],
+    ),
+    after: (
+      [Preserve the acknowledged-undercount hedge with the reported figures; the ~28,600 cases and ~11,300 deaths are reported figures produced by the same surveillance system whose inadequacy is the case's subject, and the true toll is higher by an unmeasured amount.],
+      [Carry the panels' own reform-decay caveat into any teaching of the resolution; the WHO Health Emergencies Programme (2016) is real, but the panels flagged that post-crisis reform pledges historically decay, and the case's honesty depends on holding the reform and its caveat together.],
+      [Use COVID-19 as the deferred test rather than the closing chapter; the case asks whether the escalation machinery was engineered or merely re-certified, and the later pandemic is the evidence event the reader is directed toward, not a resolution the case supplies.],
+    ),
+  ),
+  references: (
+    [Ebola Interim Assessment Panel (2015), _Report of the Ebola Interim Assessment Panel_ (the "Stocking Report," chair Dame Barbara Stocking), World Health Organization, 7 July 2015.],
+    [Moon, S., Sridhar, D., Pate, M. A., Jha, A. K., Clinton, C., et al. (2015), "Will Ebola change the game? Ten essential reforms before the next pandemic. The report of the Harvard-LSHTM Independent Panel on the Global Response to Ebola," _The Lancet_ 386(10009):2204–2221, 28 November 2015, doi:10.1016/S0140-6736(15)00946-0.],
+    [High-level Panel on the Global Response to Health Crises (2016), _Protecting Humanity from Future Health Crises_ (chair Jakaya M. Kikwete), UN doc. A/70/723, 9 February 2016.],
+    [World Health Organization (2016), _Ebola Situation Reports_ — West Africa: approximately 28,600 cases and 11,300 deaths reported to 10 June 2016 (reported figures; undercount acknowledged).],
+    [Médecins Sans Frontières (2015), _Ebola: Pushed to the Limit and Beyond_ — MSF account of the international outbreak response, March 2015.],
+  ),
+  quote: [The most egregious failure was by WHO in the delay in sounding the alarm.],
+  quote-source: "Harvard-LSHTM Independent Panel on the Global Response to Ebola (Moon et al., The Lancet, 28 November 2015).",
+  le-insight: [
+    West Africa Ebola is the load-bearing case for declared
+    international readiness that was certified but not deployable.
+    The IHR (2005) core capacities existed on paper in member
+    states but not in practice; WHO's own outbreak-response
+    capacity had been cut after 2011; and the escalation loop
+    discounted an exponential signal for months before the PHEIC
+    of 8 August 2014. The reported toll carries an acknowledged
+    undercount, and the reform carries the panels' own caveat
+    that post-crisis pledges decay.
+  ],
+  lens-approach: [
+    West Africa Ebola is the declared-versus-engineered-
+    capability case at the scale of the international system
+    (induced 1.1; LENS D5/PT6; CLO-5). LENS uses it in Domain 5
+    (Navigating Sociotechnical Constraints) for the IHR paper-
+    compliance-versus-real-capability seam and for the governance
+    failure in the escalation machinery — the discounting of the
+    escalating signal as normalization of deviance in the
+    declaration loop. The three converging panels (Stocking,
+    Moon et al., UN High-Level) are carried as the investigation
+    evidence base; the acknowledged undercount and the reform-
+    decay caveat are load-bearing hedges that travel with the
+    case.
+  ],
+  literature-items: (
+    [Ebola Interim Assessment Panel (2015), the Stocking Report — WHO capacity and IHR implementation],
+    [Moon et al. (2015), _The Lancet_ — Harvard-LSHTM Independent Panel, ten reforms],
+    [UN High-Level Panel (2016), A/70/723 — governance above the technical agencies],
+  ),
+  reflection-list: (
+    [Identify a capability in your domain that is certified present but may not be deployable — a readiness that exists on the compliance record but has never been exercised at full load. What would it take to measure the gap between the declared readiness and the readiness the system could actually produce, and who owns that gap today?],
+    [The escalation loop discounted an exponential signal for months because raising the alarm carried political and economic cost. Specify the decision rule you would build so that the threshold for reframing a growing signal as "manageable" does not fall each time it is reframed. What makes an escalation trigger resistant to the incentive not to pull it?],
+    [The reform response carries the panels' own caveat that post-crisis pledges historically decay. Pick a reform your institution adopted after a crisis, and ask: was the underlying capability re-engineered, or was it re-certified? What evidence — short of the next crisis — would tell you which?],
+  ),
+  courses: ("LEN 5", "LEN 9", "LEN 10"),
+)
+
+// ---- Case 171 — hurricane-maria-puerto-rico-logistics ----
+// VERIFY: GWU Milken Institute report exact title ("Ascertainment of the Estimated Excess Mortality from Hurricane María in Puerto Rico") — commissioned-report title carried from memory; 2,975 figure and Aug 2018 release verified via web search.
+// VERIFY: FEMA AAR "more than 80 percent of the inventory of some commodities" phrasing — verified via web search summary of the AAR; confirm exact wording against the PDF (fema.gov, July 12, 2018) at draft-time re-check.
+#case(
+  number: 171,
+  slug: "hurricane-maria-puerto-rico-logistics",
+  title: "Hurricane Maria — Puerto Rico Response and Logistics Failure",
+  year: "2017 – 2018",
+  domains-list: ("emergency management", "disaster logistics", "public health"),
+  modes-code: "GD",
+  impact: "Hurricane Maria struck Puerto Rico September 20, 2017, as the third major hurricane of the season after Harvey and Irma; FEMA's own 2017 Hurricane Season After-Action Report (July 12, 2018) found the agency entered Maria with force strength below target, its Caribbean Distribution Center inventory largely depleted by the Irma response, and commodity-tracking visibility it could not sustain to the ports; GAO-18-472 found 54% of deployed staff serving outside their qualified positions at the October 2017 peak; the grid collapse became the longest blackout in U.S. history (~11 months to full restoration); the commissioned GWU Milken Institute study estimated ~2,975 excess deaths (Sept 2017 – Feb 2018), adopted as the official toll in place of the initial 64",
+  kind: "failure",
+  scale: "big",
+  evidence-source: "program-report",
+  induced-anchor: "1.1",
+  lens-anchor: "D1/PT1",
+  clo-anchor: "CLO-1",
+  summary: [
+    Hurricane Maria made landfall on Puerto Rico on September
+    20, 2017, as a high-end Category 4 storm, the third major
+    hurricane to strike U.S. territory in under a month. The
+    load-bearing evidence on the federal response is the
+    responding institution's own self-assessment: FEMA's 2017
+    Hurricane Season After-Action Report, released July 12,
+    2018, found that the agency entered Maria with its
+    commodity stockpiles largely drained by Harvey and Irma —
+    the Caribbean Distribution Center in Puerto Rico had
+    distributed more than 80 percent of its inventory of some
+    commodities for Irma and had not been replenished — with
+    force strength below its staffing target, and with
+    logistics visibility so poor it could not comprehensively
+    track commodities moving to Puerto Rico and the U.S.
+    Virgin Islands. GAO-18-472 documented that at the October
+    2017 deployment peak, 54 percent of deployed staff were
+    serving in a capacity in which they did not hold the
+    "Qualified" title. The island's grid collapse became the
+    longest blackout in U.S. history, with full restoration
+    taking approximately eleven months. Excess-mortality
+    estimates diverge by method and are carried here as
+    estimates: the commissioned George Washington University
+    Milken Institute study estimated approximately 2,975
+    excess deaths (September 2017 – February 2018), adopted as
+    the official toll in place of the initial count of 64;
+    the Kishore et al. household survey in the _New England
+    Journal of Medicine_ estimated 4,645 with a 95 percent
+    confidence interval of 793 to 8,498 (September 20 –
+    December 31, 2017). The capability gap the case anchors is
+    a logistics and workforce capability designed to a
+    mainland-hurricane envelope and never re-verified for an
+    island scenario with a destroyed grid and ports.
+  ],
+  sections: (
+    [
+      Hurricane Maria struck Puerto Rico on September 20,
+      2017, two weeks after Hurricane Irma had passed north of
+      the island and less than a month after Hurricane Harvey
+      had drawn down federal response capacity on the Gulf
+      Coast. Maria destroyed the island's electrical grid
+      outright: the resulting outage became the longest
+      blackout in U.S. history, with power not restored to all
+      customers until August 2018 — approximately eleven
+      months — and an estimated 3.4 billion lost
+      customer-hours of electricity service, roughly three
+      times the next-largest blackout in the U.S. record. The
+      operational context was categorically different from the
+      mainland-hurricane scenario the federal response
+      apparatus was sized against: an island 1,000 miles from
+      the mainland, reachable only by sea and air, with ports
+      damaged, the grid destroyed, and no adjacent states from
+      which mutual-aid convoys could drive in.#cn()
+    ],
+    [
+      FEMA's own 2017 Hurricane Season After-Action Report,
+      released July 12, 2018, is the load-bearing
+      self-assessment and the reason the case carries the
+      program-report evidence tag. The report found that the
+      agency entered the season with force strength below its
+      staffing target, and that the sequential demands of
+      Harvey and Irma had largely drained the national
+      commodity posture before Maria arrived: when Irma struck,
+      FEMA opened the Caribbean Distribution Center — its
+      warehouse of disaster supplies in Puerto Rico — and
+      within days had distributed more than 80 percent of its
+      inventory of some commodities; Maria struck before the
+      supplies were replenished. The report further found that
+      FEMA could not comprehensively track commodities moving
+      across multiple modes of transportation to Puerto Rico
+      and the U.S. Virgin Islands, due to staffing shortages
+      and business-process shortfalls — the agency lost
+      visibility of its own relief supplies at the ports. A
+      2011 exercise after-action report for Puerto Rico had
+      anticipated that the territory would require extensive
+      federal support in moving commodities from the mainland
+      and to distribution points across the island; the
+      anticipated requirement had not been converted into
+      verified capability by 2017.#cn()
+    ],
+    [
+      GAO-18-472 (September 2018) documented the workforce
+      side of the capability gap. At the height of the 2017
+      deployments in October — close to 14,000 federal
+      employees deployed across Harvey, Irma, Maria, and the
+      California wildfires — 54 percent of FEMA staff were
+      serving in a capacity in which they did not hold the
+      title of "Qualified" under FEMA's own qualification
+      system standards. The workforce was overwhelmed by the
+      concurrent demand, and the shortage of trained personnel
+      with program expertise complicated the response,
+      particularly after Maria, where the staffing shortfall
+      landed on the disaster with the greatest logistics
+      difficulty and the least pre-existing territorial
+      response capacity. The GAO finding and the FEMA
+      after-action "Force Strength" finding describe the same
+      structural condition from outside and inside the agency:
+      a workforce sized and qualified for the routine
+      disaster-response envelope, deployed into a season three
+      standard deviations outside it.#cn()
+    ],
+    [
+      The mortality evidence is carried as estimates, with
+      their methods, and the divergence is not smoothed. The
+      government of Puerto Rico's initial official toll was 64.
+      The Kishore et al. study, published in the _New England
+      Journal of Medicine_ in May 2018, surveyed households
+      across the island and estimated 4,645 excess deaths from
+      September 20 through December 31, 2017, with a 95
+      percent confidence interval of 793 to 8,498 — a 62
+      percent increase in the mortality rate over the same
+      period in 2016, and an interval whose width is itself a
+      finding about what a survey design can resolve. The
+      commissioned George Washington University Milken
+      Institute study, released in August 2018, used
+      death-registry data and demographic modeling that
+      accounted for post-storm population displacement, and
+      estimated approximately 2,975 excess deaths from
+      September 2017 through February 2018. The government of
+      Puerto Rico adopted 2,975 as the official toll,
+      revising the count from 64. The two studies used
+      different methods, different windows, and different
+      uncertainty structures; they agree that the initial
+      official count understated the mortality by more than an
+      order of magnitude, and they do not agree on a single
+      number.#cn()
+    ],
+    [
+      The hedges the case carries are load-bearing. The
+      excess-mortality figures are model-dependent estimates,
+      not counts; the GWU and NEJM designs are not directly
+      comparable and neither supports an attribution chain
+      from any individual logistics failure to any individual
+      death. What the record does support is the
+      capability-envelope finding, and it is the responding
+      institution's own: the logistics and workforce
+      capability had been specified and verified against a
+      mainland-hurricane scenario — adjacent states, intact
+      ports, a grid that fails partially — and was never
+      re-verified for the island scenario that the 2011
+      exercise report had already described. The after-action
+      report itself is the intervention-shaped element inside
+      the failure: an institution measuring its own capability
+      gap honestly, in public, with its own name on the
+      findings. The systems-analysis discipline the case
+      anchors is the one FEMA's report performs after the
+      fact and the one the deployment record shows was not
+      performed before it — deriving the requirement from the
+      operational reality of the deployed context rather than
+      from the envelope the capability was built and staffed
+      to.
+    ],
+  ),
+  beats: (
+    "Maria landfall September 20, 2017, third major hurricane in under a month; grid destroyed; longest blackout in U.S. history, ~11 months to full restoration (~3.4 billion lost customer-hours)",
+    "FEMA 2017 Hurricane Season After-Action Report (July 12, 2018): force strength below target; Caribbean Distribution Center >80% of some commodity inventory distributed for Irma and not replenished before Maria; could not comprehensively track commodities to the ports",
+    "GAO-18-472: at the October 2017 deployment peak, 54% of deployed FEMA staff serving in a capacity without the \"Qualified\" title; ~14,000 federal employees deployed",
+    "Mortality carried as estimates with methods: GWU Milken Institute ~2,975 excess deaths (Sept 2017 – Feb 2018), adopted as official in place of 64; Kishore et al. NEJM 4,645 (95% CI 793 – 8,498, Sept 20 – Dec 31, 2017); divergence not smoothed",
+    "Capability envelope specified to a mainland-hurricane scenario and never re-verified for an island with destroyed grid and ports; the after-action report as the institution measuring its own gap honestly",
+  ),
+  approaches: (
+    during: (
+      [Specify the operational envelope from the deployed context, not the prior platform: an island response with destroyed ports and grid is a different requirement than a mainland response with adjacent-state mutual aid, and the 2011 exercise report that anticipated the difference was the requirements artifact that needed an owner.],
+      [Treat stockpile posture and force strength as live capability measurements under sequential-event depletion; the Caribbean Distribution Center's inventory state after Irma was a known quantity before Maria's landfall, and the replenishment gap was a decision surface, not a surprise.],
+      [Instrument logistics visibility as a first-class capability, not a reporting afterthought; an agency that cannot track its own commodities at the ports cannot re-plan distribution under the conditions where re-planning matters most.],
+    ),
+    after: (
+      [Write the after-action report the way FEMA wrote this one — the institution's own name on the capability-gap findings, in public; the report's honesty is what makes the case teachable and is the standard the casebook holds after-action self-assessment to.],
+      [Carry the excess-mortality estimates with their methods and their divergence; the GWU registry-based ~2,975 and the NEJM survey-based 4,645 (95% CI 793 – 8,498) answer differently designed questions, and revising the official toll from 64 to 2,975 is the load-bearing correction, not the reconciliation of the two studies.],
+      [Convert the envelope finding into verification events: re-verify inherited response designs against the island scenario explicitly — pre-positioned stock floors that survive a sequential season, workforce qualification targets audited against deployment reality, and port-condition logistics exercised rather than assumed.],
+    ),
+  ),
+  references: (
+    [Federal Emergency Management Agency (2018), _2017 Hurricane Season FEMA After-Action Report_, July 12, 2018 — the agency's own self-assessment: force strength below target, Caribbean Distribution Center depletion, commodity-tracking shortfalls.],
+    [U.S. Government Accountability Office (2018), _2017 Hurricanes and Wildfires: Initial Observations on the Federal Response and Key Recovery Challenges_, GAO-18-472, September 2018 — 54% of deployed staff serving outside qualified positions at the October 2017 peak.],
+    [Milken Institute School of Public Health, George Washington University (2018), _Ascertainment of the Estimated Excess Mortality from Hurricane María in Puerto Rico_, August 2018 — commissioned by the Government of Puerto Rico; ~2,975 excess deaths, September 2017 – February 2018; basis for the official toll revision from 64.],
+    [Kishore, N., Marqués, D., Mahmud, A., et al. (2018), "Mortality in Puerto Rico after Hurricane Maria," _New England Journal of Medicine_ 379(2):162 – 170, doi:10.1056/NEJMsa1803972 — household-survey estimate of 4,645 excess deaths (95% CI 793 – 8,498), September 20 – December 31, 2017.],
+    [Houser, T., & Marsters, P. (2018), "The World's Second Largest Blackout," _Rhodium Group_, April 12, 2018 — approximately 3.4 billion lost customer-hours; the largest blackout in U.S. history by that metric.],
+  ),
+  quote: [FEMA entered Maria with force strength below target and its Caribbean Distribution Center largely emptied by the Irma response; it could not comprehensively track commodities to the ports; the grid collapse became the longest blackout in U.S. history; the official toll was revised from 64 to 2,975 on the strength of the commissioned GWU excess-mortality study.],
+  quote-source: "Editors' synthesis of the FEMA 2017 Hurricane Season After-Action Report (2018), GAO-18-472 (2018), the GWU Milken Institute study (2018), and Kishore et al. (2018, NEJM).",
+  le-insight: [
+    Hurricane Maria is the load-bearing case for a capability
+    specified and verified against one operational envelope —
+    the mainland hurricane, with adjacent states, intact
+    ports, and a partially failing grid — and deployed into
+    another. The stockpile depletion, the workforce
+    qualification gap, and the lost logistics visibility were
+    not separate failures; they were one requirements failure
+    surfacing in three subsystems. The after-action report is
+    the case's second lesson: the institution measured its own
+    capability gap honestly, and that honesty is what makes
+    the gap analyzable.
+  ],
+  lens-approach: [
+    Hurricane Maria is the engineered-versus-stated-readiness
+    case at national-response scale (induced 1.1; LENS D1/PT1;
+    CLO-1). LENS uses it in Domain 1 (Systems Analysis) for
+    the discipline of deriving requirements from the deployed
+    operational context — island logistics, destroyed grid and
+    ports, sequential-storm depletion — rather than from the
+    envelope the capability was built to, and for the
+    after-action report as the requirements artifact produced
+    after the fact. Pair with Case 124 (USS Fitzgerald and
+    McCain) for the stated-versus-real-readiness thread and
+    Case 126 (F-35 sustainment) for capability requirements as
+    a sustainment deliverable. The excess-mortality estimates
+    are carried as estimates with their methods; the
+    divergence between the GWU and NEJM figures is
+    load-bearing and is not smoothed.
+  ],
+  literature-items: (
+    [FEMA (2018), _2017 Hurricane Season FEMA After-Action Report_ — the agency's own capability-gap findings],
+    [GAO-18-472 (2018) — workforce deployment and qualification shortfalls],
+    [Kishore et al. (2018), NEJM; GWU Milken Institute (2018) — the two divergent excess-mortality estimates],
+  ),
+  reflection-list: (
+    [Identify a capability in your domain that was specified and verified against one operational envelope and is routinely deployed near or beyond it. What is the equivalent of the island scenario — the context that breaks the envelope's quiet assumptions — and what verification event would surface the gap before deployment does?],
+    [FEMA's after-action report named its own force-strength, stockpile, and visibility gaps in public. Specify what an equivalently honest self-assessment would look like for your institution: who signs it, what it is permitted to find, and what pre-committed response follows a finding that the capability was below requirement.],
+    [The two excess-mortality studies estimate different quantities with different methods and do not agree on a number, and both were necessary to displace the official count of 64. When evidence streams in your domain diverge, what is the discipline for carrying both — with methods attached — rather than picking one or averaging them?],
+  ),
+  courses: ("LEN 1", "LEN 5", "LEN 7"),
+)
+
+// ---- Case 172 — crowdstrike-falcon-outage ----
+#case(
+  number: 172,
   slug: "crowdstrike-falcon-outage",
   title: "CrowdStrike Falcon Outage",
   year: "2024",

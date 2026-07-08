@@ -808,3 +808,15 @@ Each carries the three anchors, `// VERIFY:` comments in source for the remainin
 **Program docs.** `lens_program/2_LENS_Objectives_Course_Mapping.md` bumped to v2.2: the LDT PLOs of record (03-06-2025) reproduced verbatim at subobjective grain (PLO-1.1–6.4); PLO-5/6 titles corrected; new §4.1 PLO ↔ CLO support map (every PLO area has primary support from ≥1 CLO). `.docx` companions for docs 1–2 regenerated from the `.md` (program-owner round-trip still open). CLO content unchanged from v2.1.
 
 **Verification.** `scripts/check-cases.sh`: **200 cases, 0 failures** after the restructure and again after the K-12 insertion. All three book editions and both overviews rebuilt; see README for page counts.
+
+### Addendum (July 2026): disaster prevention/relief expansion
+
+Five cases added to Part VI on the editor's direction, completing the relief half of the pre/post arc; corpus now **205 cases**, renumbered contiguously (slugs stable):
+
+- 167 Hurricane Katrina / FEMA (failure, response; investigation-tier — House "A Failure of Initiative," Senate "A Nation Still Unprepared," Townsend Report; the Hurricane Pam exercise as the stated-but-unengineered requirement)
+- 170 West Africa Ebola delayed response (failure, response; Stocking Report, Harvard-LSHTM Lancet panel; IHR paper-compliance vs. real capability)
+- 171 Hurricane Maria / Puerto Rico logistics (failure, response; FEMA's own 2017 AAR + GAO-18-472; both mortality estimates carried with methods, divergence preserved)
+- 178 UN humanitarian cluster approach (intervention, recovery; HRR 2005 → IASC clusters → Transformative Agenda; evaluations' hedges preserved)
+- 179 JHU COVID-19 Dashboard / Coronavirus Resource Center (intervention, recovery; peer-reviewed record + Lasker recognition; **COI disclosure rendered: an editor leads the APL group that contributed engineering support, editor not personally involved**; the sustainment-was-never-structural hedge is load-bearing)
+
+Insertions are chronological within Part VI's post-phase arcs. Downstream renumbering: old 167→168, 168→169, 169→172, 170–174→+3, 175–200→+5 (closing case now 205). verification-log re-keyed (205 rows); competencies.md lists updated (167/170/171 → 1.1; 178 → 6.1; 179 → 2.1). `scripts/check-cases.sh`: **205 cases, 0 failures.**

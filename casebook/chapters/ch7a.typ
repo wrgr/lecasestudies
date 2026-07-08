@@ -15,9 +15,9 @@
   epigraph-source: "An observation recurring across the chapter's cases.",
 )
 
-// ---- Case 175 — healthcare-gov-launch ----
+// ---- Case 180 — healthcare-gov-launch ----
 #case(
-  number: 175,
+  number: 180,
   slug: "healthcare-gov-launch",
   title: "Healthcare.gov Launch",
   year: "2013",
@@ -161,9 +161,9 @@
   evidence-source: "investigation",
 )
 
-// ---- Case 176 — eu-human-brain-project-top-down-vision ----
+// ---- Case 181 — eu-human-brain-project-top-down-vision ----
 #case(
-  number: 176,
+  number: 181,
   slug: "eu-human-brain-project-top-down-vision",
   title: "EU Human Brain Project — Top-Down Vision That Unraveled",
   year: "2013 – 2023",
@@ -186,7 +186,7 @@
     decade-long funding commitment of about €1 billion, and a
     research community asked to align around the simulation goal. The
     case is drafted as the paired contrast to the BRAIN Initiative
-    (Case 193), not as a standalone study: the same era, the same
+    (Case 198), not as a standalone study: the same era, the same
     field-scale ambition, opposite governance models, opposite
     trajectories. The evidence base is largely journalism — MIT
     Technology Review retrospective, _In Silico_ documentary, science
@@ -224,7 +224,7 @@
       the founding framing was not what it delivered.#cn()
     ],
     [
-      The case pairs directly with the BRAIN Initiative (Case 193).
+      The case pairs directly with the BRAIN Initiative (Case 198).
       The two programs launched within months of each other, at
       comparable field-scale ambition, in the same decade of
       neuroscience. The governance models were not comparable: BRAIN
@@ -251,7 +251,7 @@
       before publication. Future validation will continue.#cn()
     ],
     [
-      What the pair (Cases 193 + 79) teaches is that the governance
+      What the pair (Cases 198 + 79) teaches is that the governance
       model — distributed working-group with public-record
       contestation versus top-down single-PI with unified framing —
       is itself the variable that explains why one field-scale
@@ -269,7 +269,7 @@
     "Community contestation surfaces quickly: feasibility, leadership breadth, no scope-revision process",
     "EU commissions mediation and restructuring; scope re-shaped around infrastructure platforms, not simulation",
     "Project runs to 2023 conclusion; founding framing is not what was delivered",
-    "Pair with BRAIN (Case 193): same era and ambition, opposite governance models, opposite trajectories — governance is the variable",
+    "Pair with BRAIN (Case 198): same era and ambition, opposite governance models, opposite trajectories — governance is the variable",
   ),
   approaches: (
     during: (
@@ -288,13 +288,13 @@
     [_In Silico_ (2020), documentary by Noah Hutton — long-form follow of Markram and the HBP through the contestation period.],
     [_Science_ and _Nature_ contemporaneous coverage of the open letters and the mediation/restructuring (2014–2016).],
     [Human Brain Project final reports (2023) — the project's own restructuring and concluding documentation.],
-    [Alivisatos et al. (2012), _Neuron_ — the BRAIN position paper that is the paired contrast (Case 193).],
+    [Alivisatos et al. (2012), _Neuron_ — the BRAIN position paper that is the paired contrast (Case 198).],
   ),
   quote: [A program that cannot re-scope without external mediation is a program designed to fail open.],
   quote-source: "Editors' synthesis of the Human Brain Project record.",
   le-insight: [
     The EU Human Brain Project is the paired contrast to the BRAIN
-    Initiative (Case 193): same era, same field-scale ambition,
+    Initiative (Case 198): same era, same field-scale ambition,
     opposite governance models, opposite trajectories. Top-down
     single-PI governance with a unified framing did not survive
     community contestation; the program was mediated away from its
@@ -305,7 +305,7 @@
   lens-approach: [
     HBP is the field-scale failure case in the v2 corpus
     (induced 5.1; LENS D1+D3/PT4) drafted as the contrast to BRAIN
-    (Case 193). LENS uses the pair in Domain 1 (Systems Analysis)
+    (Case 198). LENS uses the pair in Domain 1 (Systems Analysis)
     for the governance-variable comparison and in Domain 5
     (Navigating Sociotechnical Constraints) for the
     contestation-absorption capability. The
@@ -326,9 +326,9 @@
   courses: ("LEN 1", "LEN 7", "LEN 8"),
 )
 
-// ---- Case 177 — amazon-hiring-ai-deprecated ----
+// ---- Case 182 — amazon-hiring-ai-deprecated ----
 #case(
-  number: 177,
+  number: 182,
   slug: "amazon-hiring-ai-deprecated",
   title: "Amazon Hiring AI — Trained Bias, Deprecated 2018",
   year: "2014 – 2018",
@@ -420,7 +420,7 @@
       investigation.#cn()
     ],
     [
-      The case pairs with Case 181 (Bartlett mortgage) for the
+      The case pairs with Case 186 (Bartlett mortgage) for the
       fairness-through-unawareness-fails thread: removing the
       gender feature from the training data does not eliminate
       the gender signal when the remaining features carry
@@ -473,7 +473,7 @@
     ),
     after: (
       [Carry the journalism-tier evidence-flag under the title without softening; the case rests on single-source reporting and the future-validation-ongoing language is binding for the specific technical detail.],
-      [Pair in syllabi with Case 181 (Bartlett) so the fairness-through-unawareness-fails thread is taught at adjacent scales and in adjacent decision domains.],
+      [Pair in syllabi with Case 186 (Bartlett) so the fairness-through-unawareness-fails thread is taught at adjacent scales and in adjacent decision domains.],
       [Use the case to anchor the construct-choice CLO; the curricular target is the discipline of refusing to deploy when the historical record from which the model would be learned does not defensibly support the prediction the deployment requires.],
     ),
   ),
@@ -503,7 +503,7 @@
     for the irreducibility-verification-as-deployment-gate
     discipline and in Domain 4 (Test and Evaluation) for the
     construct-validity-at-the-training-data-layer anchor. Pair
-    with Case 181 (Bartlett mortgage), Case 48 (Johnson school
+    with Case 186 (Bartlett mortgage), Case 48 (Johnson school
     surveillance), and Case 88 (LiveHint AI bias across
     foundation models). The journalism-tier evidence-flag is
     binding; the structural teaching point is the case's
@@ -522,9 +522,9 @@
   courses: ("LEN 3", "LEN 5", "LEN 8"),
 )
 
-// ---- Case 178 — uber-atg-tempe-fatality ----
+// ---- Case 183 — uber-atg-tempe-fatality ----
 #case(
-  number: 178,
+  number: 183,
   slug: "uber-atg-tempe-fatality",
   title: "Uber ATG / Tempe Fatality",
   year: "2018",
@@ -679,9 +679,9 @@
   evidence-source: "investigation",
 )
 
-// ---- Case 179 — uk-post-office-horizon-scandal ----
+// ---- Case 184 — uk-post-office-horizon-scandal ----
 #case(
-  number: 179,
+  number: 184,
   slug: "uk-post-office-horizon-scandal",
   title: "UK Post Office Horizon Scandal",
   year: "1999 – 2015",
@@ -829,9 +829,9 @@
   clo-anchor: "CLO-3",
 )
 
-// ---- Case 180 — air-canada-chatbot-liability ----
+// ---- Case 185 — air-canada-chatbot-liability ----
 #case(
-  number: 180,
+  number: 185,
   slug: "air-canada-chatbot-liability",
   title: "Air Canada Chatbot Liability — Delegation Without Revocation",
   year: "2022 – 2024",
@@ -1026,9 +1026,9 @@
   courses: ("LEN 5", "LEN 8", "LEN 9"),
 )
 
-// ---- Case 181 — algorithmic-mortgage-lending-omitting ----
+// ---- Case 186 — algorithmic-mortgage-lending-omitting ----
 #case(
-  number: 181,
+  number: 186,
   slug: "algorithmic-mortgage-lending-omitting",
   title: "Algorithmic Mortgage Lending — Omitting the Variable Did Not Fix the Disparity",
   year: "2018 – 2022",
@@ -1056,7 +1056,7 @@
     with race in the present US population. The case is the canonical
     instance of why "fairness through unawareness" is not, by itself,
     fairness. It pairs directly with the Coots et al. fintech fairness
-    audit (Case 191, preprint-tier): the next teaching step is that
+    audit (Case 196, preprint-tier): the next teaching step is that
     competing fairness definitions can disagree about what counts as fair
     even when the inputs are held constant.
   ],
@@ -1112,7 +1112,7 @@
       now surfaces in clinical algorithms (eGFR, Cases 25, 26 and 6), in
       hiring and proctoring tools (Case 47 small-tier proctoring bias),
       and in welfare administration (SyRI). It pairs with the Coots et
-      al. fintech fairness audit (Case 191) which shows the next layer:
+      al. fintech fairness audit (Case 196) which shows the next layer:
       once the practitioner accepts that omission is not the answer,
       competing fairness definitions disagree about which adjustment is
       the right one — and the choice has to be made on judgment under
@@ -1161,7 +1161,7 @@
     in Domain 4 (Test and Evaluation) for the CLO *Fairness
     beyond omission*, in Domain 3 (Human-System Collaboration) for delegation to underwriting models, and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
-    fair-lending regulatory regime. Direct pair with Case 191
+    fair-lending regulatory regime. Direct pair with Case 196
     (Coots fintech fairness audit). Adjacent to the race-construct
     trio in clinical medicine (Cases 25, 26 and 6) — same structural
     lesson at the construct-definition layer rather than the
@@ -1180,9 +1180,9 @@
   courses: ("LEN 4", "LEN 7", "LEN 9"),
 )
 
-// ---- Case 182 — compas-recidivism-prediction ----
+// ---- Case 187 — compas-recidivism-prediction ----
 #case(
-  number: 182,
+  number: 187,
   slug: "compas-recidivism-prediction",
   title: "COMPAS Recidivism Prediction — Calibration vs. Equal Error Rate",
   year: "2014 – 2018",
@@ -1212,9 +1212,9 @@
     rates of the outcome differ across groups, calibration
     (predictive parity) and equal false-positive and false-
     negative rates cannot be simultaneously satisfied except in
-    degenerate cases. The case pairs with Case 181 (Bartlett
-    mortgage — fairness through unawareness fails), Case 191
-    (Coots — competing fairness definitions), and Case 184
+    degenerate cases. The case pairs with Case 186 (Bartlett
+    mortgage — fairness through unawareness fails), Case 196
+    (Coots — competing fairness definitions), and Case 189
     (SyRI). The impossibility result is the load-bearing
     teaching point.
   ],
@@ -1272,13 +1272,13 @@
       technical one.#cn()
     ],
     [
-      The case pairs with Case 181 (Bartlett mortgage discrimination)
+      The case pairs with Case 186 (Bartlett mortgage discrimination)
       for the fairness-through-unawareness-fails thread: removing
       protected attributes from training data does not eliminate
       disparate-impact concerns when the remaining features carry
-      protected-attribute signal. Pair with Case 191 (Coots) for
+      protected-attribute signal. Pair with Case 196 (Coots) for
       the competing-fairness-definitions thread at a different
-      domain and scale. Pair with Case 184 (SyRI) for the
+      domain and scale. Pair with Case 189 (SyRI) for the
       governance-objection-correct-in-advance complement; in
       COMPAS the objection surfaces in the auditing record, in
       SyRI the objection succeeded in court before population-
@@ -1311,7 +1311,7 @@
     "ProPublica finding: ~2× false-positive rate for Black defendants among non-reoffenders; Northpointe response: predictive parity within risk scores",
     "Both findings correct by their respective definitions; Chouldechova 2017 and Kleinberg/Mullainathan/Raghavan 2017 formalize the impossibility result",
     "Calibration and equal FPR/FNR cannot be simultaneously satisfied when base rates differ across groups except in degenerate cases — binding mathematics",
-    "Pair with Case 181 (Bartlett), Case 191 (Coots), Case 184 (SyRI); central reference for the algorithmic-fairness literature",
+    "Pair with Case 186 (Bartlett), Case 196 (Coots), Case 189 (SyRI); central reference for the algorithmic-fairness literature",
   ),
   approaches: (
     during: (
@@ -1321,7 +1321,7 @@
     ),
     after: (
       [Carry the impossibility result into print as the load-bearing teaching point; the case does not teach that COMPAS is fair or that COMPAS is unfair, and the editorial framing must preserve the formal constraint that both audit findings instantiate.],
-      [Pair in syllabi with Case 181 (Bartlett) so the fairness-through-unawareness-fails thread and the impossibility-of-multiple-criteria thread are taught together as complementary structural arguments about disparate impact.],
+      [Pair in syllabi with Case 186 (Bartlett) so the fairness-through-unawareness-fails thread and the impossibility-of-multiple-criteria thread are taught together as complementary structural arguments about disparate impact.],
       [Use the case to anchor the fairness-beyond-omission CLO; the curricular target is the discipline of choosing and disclosing the fairness criterion when the impossibility result rules out satisfying all of them simultaneously.],
     ),
   ),
@@ -1352,9 +1352,9 @@
     the multi-criterion-audit discipline and in Domain 5
     (Navigating Sociotechnical Constraints) for the
     surfacing-bias-through-governance-not-just-technique anchor.
-    Pair with Case 181 (Bartlett mortgage — fairness through
-    unawareness fails), Case 191 (Coots — competing fairness
-    definitions), and Case 184 (SyRI governance-objection-
+    Pair with Case 186 (Bartlett mortgage — fairness through
+    unawareness fails), Case 196 (Coots — competing fairness
+    definitions), and Case 189 (SyRI governance-objection-
     correct precedent). The impossibility result is the load-
     bearing teaching point; both Northpointe and ProPublica are
     correct by their respective definitions.
@@ -1372,9 +1372,9 @@
   courses: ("LEN 3", "LEN 5", "LEN 8"),
 )
 
-// ---- Case 183 — cambridge-analytica-facebook ----
+// ---- Case 188 — cambridge-analytica-facebook ----
 #case(
-  number: 183,
+  number: 188,
   slug: "cambridge-analytica-facebook",
   title: "Cambridge Analytica / Facebook",
   year: "2014 – 2018",
@@ -1523,9 +1523,9 @@
   clo-anchor: "CLO-5",
 )
 
-// ---- Case 184 — dutch-syri-welfare-fraud-risk-scoring ----
+// ---- Case 189 — dutch-syri-welfare-fraud-risk-scoring ----
 #case(
-  number: 184,
+  number: 189,
   slug: "dutch-syri-welfare-fraud-risk-scoring",
   title: "Dutch SyRI — Welfare-Fraud Risk Scoring Halted on Rights Grounds",
   year: "2014 – 2020",
@@ -1681,14 +1681,14 @@
   reflection-list: (
     [Identify a public-sector analytics system in your jurisdiction. Are the data subjects informed they are being scored? Is the model and its inputs disclosed? What is the proportionality argument the deploying agency would make if challenged?],
     [Specify the pre-registered operational evidence — what the system has to demonstrate, on what cadence — that would let a deployment be evaluated against its capability claim. SyRI ran for six years without published evidence of the headline claim.],
-    [The pair OU (Case 81) and SyRI (Case 184) teaches the governance-objection diagnostic. Construct a candidate diagnostic for your own domain: what features of an objection indicate that good design could dissolve it, and what features indicate that the objection is to the design itself?],
+    [The pair OU (Case 81) and SyRI (Case 189) teaches the governance-objection diagnostic. Construct a candidate diagnostic for your own domain: what features of an objection indicate that good design could dissolve it, and what features indicate that the objection is to the design itself?],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 9"),
 )
 
-// ---- Case 185 — cruises-partial-disclosure-how ----
+// ---- Case 190 — cruises-partial-disclosure-how ----
 #case(
-  number: 185,
+  number: 190,
   slug: "cruises-partial-disclosure-how",
   title: "Cruise's Partial Disclosure — How Disclosure Posture Decides Deployment",
   year: "2023",
@@ -1714,7 +1714,7 @@
     later. On 24 October the DMV suspended Cruise's driverless
     deployment and testing permits, citing misrepresentation of
     safety-relevant information. The case is the explicit contrast to
-    Case 194 (Waymo): the same regulatory regime, the same
+    Case 199 (Waymo): the same regulatory regime, the same
     delegation problem, the opposite governance choice. Partial
     disclosure was the load-bearing failure mode, not the
     underlying collision sequence. The evidence-tier flag is
@@ -1763,7 +1763,7 @@
       timeline rests on contemporaneous journalism.#cn()
     ],
     [
-      The case is the explicit foil to Case 194 (Waymo). Same
+      The case is the explicit foil to Case 199 (Waymo). Same
       regulatory regime, same delegation problem, opposite
       governance choice. Where Waymo answered an opacity
       objection by engineering a published safety-case
@@ -1807,7 +1807,7 @@
     ),
     after: (
       [Use the CLO *Delegation with revocation*: revocation pathways must be designed and exercisable, and the deploying organization should expect the regulator to exercise them when the disclosure architecture fails.],
-      [Pair the case with Case 194 (Waymo) in any LENS Domain 4 module — the contrast between an engineered legitimacy artifact and partial crisis disclosure is the teaching point, not either case alone.],
+      [Pair the case with Case 199 (Waymo) in any LENS Domain 4 module — the contrast between an engineered legitimacy artifact and partial crisis disclosure is the teaching point, not either case alone.],
       [Carry the journalism-tier flag honestly: the DMV Order is the investigation-grade primary; the internal-timeline reconstructions are journalistic; future validation will improve as Cruise's own post-mortem and any subsequent litigation discovery enter the public record.],
     ),
   ),
@@ -1840,7 +1840,7 @@
     Domain 3 (Emerging Systems and Human-System Collaboration) for the
     oversight obligations that follow when a system acts
     autonomously after a triggering event. Direct foil to
-    Case 194 (Waymo); pairs with Case 195 (CPUC) on the
+    Case 199 (Waymo); pairs with Case 200 (CPUC) on the
     regulator-side.
   ],
   literature-items: (
@@ -1850,15 +1850,15 @@
   ),
   reflection-list: (
     [Imagine you operate an autonomous system that has just been involved in a safety-relevant event. Design the disclosure decision: what is reported, to whom, on what cadence, with what verification — *before* you have the lawyer's advice on what the disclosure obligation strictly requires. Where does your architecture leave you exposed?],
-    [Compare Cases 194 (Waymo) and 158 (Cruise) as a paired teaching unit. What is the smallest pre-incident artifact a deploying organization could publish that would make the post-incident disclosure architecture credible to a regulator?],
+    [Compare Cases 199 (Waymo) and 158 (Cruise) as a paired teaching unit. What is the smallest pre-incident artifact a deploying organization could publish that would make the post-incident disclosure architecture credible to a regulator?],
     [The case rests partly on journalism-tier reconstruction of internal decisions. What evidence would you want to see — court discovery, the company's full post-mortem, a multi-source corroboration — before treating any specific internal-timeline claim as decision-grade?],
   ),
   courses: ("LEN 4", "LEN 8", "LEN 9"),
 )
 
-// ---- Case 186 — australia-robodebt ----
+// ---- Case 191 — australia-robodebt ----
 #case(
-  number: 186,
+  number: 191,
   slug: "australia-robodebt",
   title: "Australia Robodebt — Algorithmic Debt-Recovery and the Royal Commission Verdict",
   year: "2016 – 2023",
@@ -1888,7 +1888,7 @@
     not a direct legal finding of individual causation — but the
     finding that multiple deaths were associated with the scheme's
     operation is part of the adjudicated record. The case pairs
-    with Case 184 (SyRI, the governance-objection-correct
+    with Case 189 (SyRI, the governance-objection-correct
     precedent), Case 48 (Johnson school surveillance, the
     algorithmic-public-administration parallel), and Case 5
     (Epic Sepsis, the delegation-without-validation form).
@@ -1949,7 +1949,7 @@
       bodies.#cn()
     ],
     [
-      The case pairs with Case 184 (SyRI, the Dutch System Risk
+      The case pairs with Case 189 (SyRI, the Dutch System Risk
       Indication ruling by the Hague District Court) as the
       governance-objection-correct precedent — SyRI was struck
       down before it produced a debt-scale harm record;
@@ -1989,7 +1989,7 @@
     "~470,000 wrongful debts raised 2016–2019; burden of proof reversed onto recipients; agency legal advice flagged the seam and was set aside",
     "Prygodicz 2019 Federal Court judgment found the method unlawful; Royal Commission final report July 7 2023 adjudicated the governance question",
     "Commission attribution on deaths is circumstantial — not individual legal findings of causation; the careful language is part of the record",
-    "Pair with Case 184 (SyRI precedent), Case 48 (Johnson algorithmic public administration), Case 5 (Epic Sepsis delegation without validation)",
+    "Pair with Case 189 (SyRI precedent), Case 48 (Johnson algorithmic public administration), Case 5 (Epic Sepsis delegation without validation)",
   ),
   approaches: (
     during: (
@@ -1999,7 +1999,7 @@
     ),
     after: (
       [Carry the Commission's careful attribution language on deaths into print without softening; the case's load-bearing quality depends on the circumstantial nature of the attribution being preserved alongside the structural finding.],
-      [Pair in syllabi with Case 184 (SyRI) so the governance-objection-correct precedent and the governance-objection-overridden harm record are taught together; the two cases together teach what advance objection can prevent and what its absence can produce.],
+      [Pair in syllabi with Case 189 (SyRI) so the governance-objection-correct precedent and the governance-objection-overridden harm record are taught together; the two cases together teach what advance objection can prevent and what its absence can produce.],
       [Use the case to anchor the human-in-the-loop CLO at population scale; the form Robodebt makes legible is what consequential-decision delegation looks like when the loop is removed and the asserting party operates on arithmetic that cannot establish its assertion.],
     ),
   ),
@@ -2047,9 +2047,9 @@
   courses: ("LEN 5", "LEN 8", "LEN 9"),
 )
 
-// ---- Case 187 — apple-card-algorithmic-gender-disparity ----
+// ---- Case 192 — apple-card-algorithmic-gender-disparity ----
 #case(
-  number: 187,
+  number: 192,
   slug: "apple-card-algorithmic-gender-disparity",
   title: "Apple Card / Goldman Sachs — When the Lender Cannot Explain Its Own Model",
   year: "2019 – 2021",
@@ -2079,8 +2079,8 @@
     structural problem: Goldman Sachs could not adequately explain
     individual credit decisions to applicants who challenged them.
     DFS required Goldman Sachs to overhaul its customer-service
-    process. The case pairs with Case 181 (Bartlett mortgage),
-    Case 191 (Coots), and Case 86 (Gándara). The DFS finding of
+    process. The case pairs with Case 186 (Bartlett mortgage),
+    Case 196 (Coots), and Case 86 (Gándara). The DFS finding of
     "no violation but lack of transparency" is the load-bearing
     nuance.
   ],
@@ -2137,9 +2137,9 @@
       at the individual-applicant level.#cn()
     ],
     [
-      The case pairs with Case 181 (Bartlett mortgage) for the
+      The case pairs with Case 186 (Bartlett mortgage) for the
       consumer-credit-fairness thread at adjacent scale and
-      regulatory regime. Pair with Case 191 (Coots) for the
+      regulatory regime. Pair with Case 196 (Coots) for the
       competing-fairness-definitions thread; the DFS standard is
       one of several available standards, and the case teaches
       that "no violation under a specific statutory standard" is
@@ -2185,7 +2185,7 @@
     ),
     after: (
       [Carry the precise DFS finding into print without softening; "no violation under the applicable statutory standard, but lack of transparency as the structural problem" is the load-bearing nuance and the case's pedagogical value depends on the nuance being preserved.],
-      [Pair in syllabi with Case 181 (Bartlett) so the consumer-credit-fairness regulatory architecture is taught at both the mortgage and credit-card scales.],
+      [Pair in syllabi with Case 186 (Bartlett) so the consumer-credit-fairness regulatory architecture is taught at both the mortgage and credit-card scales.],
       [Use the case as the anchor for the explainability-as-governance frame at consumer-credit scale; the curricular target is the appeal-and-explanation infrastructure that converts an algorithmic decision into a contestable one.],
     ),
   ),
@@ -2216,8 +2216,8 @@
     Constraints) for the appeal-and-explanation-infrastructure
     discipline and in Domain 3 (Human-System Collaboration)
     for the human-in-the-loop-for-consequential-decisions anchor
-    at the appeal seam. Pair with Case 181 (Bartlett mortgage),
-    Case 191 (Coots competing fairness definitions), and Case
+    at the appeal seam. Pair with Case 186 (Bartlett mortgage),
+    Case 196 (Coots competing fairness definitions), and Case
     133 (Gándara explainability of individual predictions). The
     precise DFS finding — "no violation but lack of transparency"
     — is the load-bearing hedge.
@@ -2225,7 +2225,7 @@
   literature-items: (
     [NY DFS, _Report on Apple Card Investigation_ (March 2021)],
     [Heinemeier Hansson Twitter thread (Nov 7 2019); contemporaneous press coverage],
-    [Paired Case 181 (Bartlett mortgage) consumer-credit-fairness architecture],
+    [Paired Case 186 (Bartlett mortgage) consumer-credit-fairness architecture],
   ),
   reflection-list: (
     [Identify a consequential-decision system in your domain whose individual-applicant explanation infrastructure has not been built. What is the customer-service escalation path when an affected person challenges a decision, and what would the path look like with an appeal-and-explanation seam built into the deployment?],
@@ -2235,9 +2235,9 @@
   courses: ("LEN 3", "LEN 5", "LEN 8"),
 )
 
-// ---- Case 188 — bernard-madoff-sec-failures ----
+// ---- Case 193 — bernard-madoff-sec-failures ----
 #case(
-  number: 188,
+  number: 193,
   slug: "bernard-madoff-sec-failures",
   title: "Bernard Madoff / SEC Failures",
   year: "1992 – 2008",

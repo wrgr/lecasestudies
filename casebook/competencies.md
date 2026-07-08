@@ -1,6 +1,6 @@
 # Learning-engineering competencies (grounded in the casebook)
 
-> **Numbering note (July 2026).** Case numbers in this document were re-keyed to the First Edition topical numbering (Cases 1–200, seven parts) during the July 2026 editorial pass; the parenthetical names are the stable identifiers. The pass also added six K-12 cases (60 Houston EVAAS, 61 Science of Reading / Sold a Story, 62 Gates Intensive Partnerships / MET, 63 LAUSD iPad / CCTP, 64 Newark / The Prize, 95 PBIS Implementation Fidelity) to the sub-competency lists they anchor; the induction itself (thresholds, clusters) is unchanged from the v1 read. Two ambiguous numeric cross-references in the cluster-2 preamble were resolved to named cases.
+> **Numbering note (July 2026).** Case numbers in this document were re-keyed to the First Edition topical numbering (Cases 1–205, seven parts) during the July 2026 editorial pass; the parenthetical names are the stable identifiers. The pass also added six K-12 cases (60 Houston EVAAS, 61 Science of Reading / Sold a Story, 62 Gates Intensive Partnerships / MET, 63 LAUSD iPad / CCTP, 64 Newark / The Prize, 95 PBIS Implementation Fidelity) to the sub-competency lists they anchor; the induction itself (thresholds, clusters) is unchanged from the v1 read. The disaster prevention/relief expansion (July 2026) added five more: 167 Hurricane Katrina / FEMA, 170 West Africa Ebola response, 171 Hurricane Maria logistics (all 1.1 — engineered vs. stated requirements), 178 UN Cluster Approach (6.1), and 179 JHU COVID Dashboard (2.1). Two ambiguous numeric cross-references in the cluster-2 preamble were resolved to named cases.
 
 *Induced from 100 documented cases in the Capability Matters casebook. Each competency is supported by multiple cases; each sub-competency cites the cases that establish it. Failures (n=72) show what's missing; interventions (n=16) show what works; frontier cases (n=12) show what the discipline is being asked to specify next.*
 
@@ -26,12 +26,12 @@ I read the LENS-approach and summary fields for all 100 cases, set aside the LEN
 
 | # | Competency | Sub-competencies | Cases (n) |
 |---|---|---|---|
-| 1 | Capability requirements specification under operational reality | Engineered vs. stated requirements; Capability envelope at the edge of training; Cross-organization and joint-service requirements; Requirements as a sustainment deliverable | 23 |
-| 2 | Evidence architecture the institution cannot deceive itself with | Measuring the failure mode you care about; Protecting the measurement from gaming; Closed-loop evidence linked to intervention; Post-deployment surveillance and disconfirmation | 26 |
+| 1 | Capability requirements specification under operational reality | Engineered vs. stated requirements; Capability envelope at the edge of training; Cross-organization and joint-service requirements; Requirements as a sustainment deliverable | 26 |
+| 2 | Evidence architecture the institution cannot deceive itself with | Measuring the failure mode you care about; Protecting the measurement from gaming; Closed-loop evidence linked to intervention; Post-deployment surveillance and disconfirmation | 27 |
 | 3 | Interface and role design at the human–automation boundary | Cue and alert design as a capability deliverable; Monitoring as an unsupportable role; Mode and state transparency under stress; Recoverability from automation failure | 20 |
 | 4 | Pairing mechanism with authorization (the cultural half) | Frontline authority to halt or escalate; Non-punitive reporting with credible commitment; Authority gradient and team-coordination redesign; Pre-committed institutional response | 13 |
 | 5 | Governance architecture for deployment: consent, oversight, accountability | Stakeholder trust and consent as preconditions; Human-in-the-loop for consequential decisions; Cross-regime and platform governance seams; Change-control and disclosure as governance artifacts | 24 |
-| 6 | Cross-organization and cross-time knowledge transfer | Industry-level institution building after catastrophe; Operator-to-institution feedback channels; Sustaining tacit capability across generations; Cross-domain adaptation of proven interventions | 19 |
+| 6 | Cross-organization and cross-time knowledge transfer | Industry-level institution building after catastrophe; Operator-to-institution feedback channels; Sustaining tacit capability across generations; Cross-domain adaptation of proven interventions | 20 |
 | 7 | Capability under system change, transition, and aging assumptions | Re-verifying inherited designs in new envelopes; Deployment and reuse as verification events; Legacy assets aging past their oversight regime; Multi-layer drift and cumulative inadequacy | 16 |
 | 8 | Equity and construct definition as design commitments | Choosing the construct (what gets predicted, what counts); Demographic stratification of validation and outcomes; Designing predictions to trigger support, not gatekeeping; Surfacing bias through governance, not just technique | 13 |
 
@@ -42,7 +42,7 @@ The recurring demand is to derive what the work actually requires from operation
 ### 1.1 Engineered vs. stated requirements
 
 Distinguish the readiness an organization declares from the readiness the engineered system can actually produce — and treat the gap itself as the analyst's primary artifact. Cases here either failed because nobody owned that gap or succeeded by making the gap visible and fundable.
-Cases: 124 (USS Fitzgerald & McCain), 125 (INDOPACOM Marine training), 140 (Navy Surface Warfare Reform), 126 (F-35 Sustainment), 137 (U.S. Nuclear Navy / Rickover), 139 (GIFT adoption gap).
+Cases: 124 (USS Fitzgerald & McCain), 125 (INDOPACOM Marine training), 140 (Navy Surface Warfare Reform), 126 (F-35 Sustainment), 137 (U.S. Nuclear Navy / Rickover), 139 (GIFT adoption gap), 167 (Hurricane Katrina / FEMA), 170 (West Africa Ebola response), 171 (Hurricane Maria logistics).
 
 ### 1.2 Capability envelope at the edge of training
 
@@ -66,7 +66,7 @@ Across the dataset the most consistent failure is not the absence of measurement
 ### 2.1 Measuring the failure mode you care about
 
 The construct measured must be the construct that produces harm, not the construct that is easy to count. Personal-safety vs. process-safety (Texas City), death certificates vs. medical error (Case 8), and aggregate revenue vs. account legitimacy (Wells Fargo) are the canonical inversions.
-Cases: 8 (Medical Errors), 161 (Texas City BP), 4 (Mid Staffordshire), 148 (Wells Fargo), 150 (LIBOR), 24 (Bristol Heart Babies), 60 (Houston EVAAS).
+Cases: 8 (Medical Errors), 161 (Texas City BP), 4 (Mid Staffordshire), 148 (Wells Fargo), 150 (LIBOR), 24 (Bristol Heart Babies), 60 (Houston EVAAS), 179 (JHU COVID Dashboard).
 
 ### 2.2 Protecting the measurement from gaming
 
@@ -95,21 +95,21 @@ Cases: 1 (Therac-25), 2 (EHR/CPOE), 105 (Helios 522), 96 (AeroPerú 603), 107 (E
 ### 3.2 Monitoring as an unsupportable role
 
 Passive monitoring of capable automation degrades attention in ways the literature has long documented; deploying systems that depend on it without engineering the role is foreseeably hazardous. The competency is to either redesign the role so it is performable or to make the case for not retaining it.
-Cases: 178 (Uber ATG / Tempe), 186 (Robodebt), 146 (Northeast Blackout), 179 (UK Post Office Horizon), 190 (Tesla Autopilot).
+Cases: 183 (Uber ATG / Tempe), 191 (Robodebt), 146 (Northeast Blackout), 184 (UK Post Office Horizon), 195 (Tesla Autopilot).
 
 ### 3.3 Mode and state transparency under stress
 
 When the human is most loaded — combat, system reconfiguration, an evolving fault — the interface must make the system's mode and state legible without further cognitive cost. The recurring failure is that the operator's mental model and the system's actual state diverged silently.
-Cases: 124 (USS McCain helm), 130 (USS Vincennes), 129 (Patriot/Dhahran), 127 (Military Fratricide), 104 (Asiana 214), 169 (CrowdStrike).
+Cases: 124 (USS McCain helm), 130 (USS Vincennes), 129 (Patriot/Dhahran), 127 (Military Fratricide), 104 (Asiana 214), 172 (CrowdStrike).
 
 ### 3.4 Recoverability from automation failure
 
-The human is the recoverability of automation failures the designers did not anticipate; specifying that role — its training, its authority, its information — is itself the deliverable. Failures here designed the human out (Air France 447, Case 102; Uber ATG, Case 178); the positive case (Case 131) shows what it looks like when the role is kept and supported.
-Cases: 97 (737 MAX), 102 (Air France 447), 186 (Robodebt), 146 (Northeast Blackout), 131 (Stanislav Petrov), 22 (ChatGPT in Healthcare).
+The human is the recoverability of automation failures the designers did not anticipate; specifying that role — its training, its authority, its information — is itself the deliverable. Failures here designed the human out (Air France 447, Case 102; Uber ATG, Case 183); the positive case (Case 131) shows what it looks like when the role is kept and supported.
+Cases: 97 (737 MAX), 102 (Air France 447), 191 (Robodebt), 146 (Northeast Blackout), 131 (Stanislav Petrov), 22 (ChatGPT in Healthcare).
 
 ## 4. Pairing mechanism with authorization (the cultural half)
 
-The dataset's strongest interventions all pair a mechanical artifact with the institutional authorization to use it: a checklist with a nurse who can stop the procedure (Case 129), a cord with a worker who can stop the line (Case 155), a reporting form with immunity from enforcement (Case 119), a recall decision with a pre-committed credo (Case 173). Cases that imported the artifact without the authorization (American adoption of the Andon cord; checklists in Ontario) under-delivered. The competency is to make the authorization itself a falsifiable design artifact rather than an aspiration.
+The dataset's strongest interventions all pair a mechanical artifact with the institutional authorization to use it: a checklist with a nurse who can stop the procedure (Case 129), a cord with a worker who can stop the line (Case 155), a reporting form with immunity from enforcement (Case 119), a recall decision with a pre-committed credo (Case 181). Cases that imported the artifact without the authorization (American adoption of the Andon cord; checklists in Ontario) under-delivered. The competency is to make the authorization itself a falsifiable design artifact rather than an aspiration.
 
 ### 4.1 Frontline authority to halt or escalate
 
@@ -129,7 +129,7 @@ Cases: 117 (CRM & CAST), 118 (Korean Air), 39 (TeamSTEPPS), 122 (Singapore Airli
 ### 4.4 Pre-committed institutional response
 
 The strongest crisis interventions were pre-committed before the crisis arrived: J&J's credo was written in 1943 and executed in 1982; INPO's structure was designed for catastrophe before the next one occurred. The competency is to specify, fund, and rehearse the institutional response as a deliverable.
-Cases: 172 (INPO), 173 (Tylenol Recall), 199 (Cruise Robotaxi).
+Cases: 175 (INPO), 176 (Tylenol Recall), 204 (Cruise Robotaxi).
 
 ## 5. Governance architecture for deployment: consent, oversight, accountability
 
@@ -138,22 +138,22 @@ A working technology can fail entirely on its governance: inBloom's data infrast
 ### 5.1 Stakeholder trust and consent as preconditions
 
 In domains with non-consenting populations — students, patients, citizens — the consent framework and the public-facing evidence summary are load-bearing structure, not optional features. The recurring failure is technocratic deployment that assumed technical soundness would generate its own legitimacy.
-Cases: 53 (inBloom), 54 (Summit Learning), 45 (Tennessee Pre-K), 183 (Cambridge Analytica), 63 (LAUSD iPad / CCTP), 64 (Newark / The Prize).
+Cases: 53 (inBloom), 54 (Summit Learning), 45 (Tennessee Pre-K), 188 (Cambridge Analytica), 63 (LAUSD iPad / CCTP), 64 (Newark / The Prize).
 
 ### 5.2 Human-in-the-loop for consequential decisions
 
 Automated decision systems that allocate benefits, liberty, or care require deliverable-grade accountability artifacts — appeal paths, human review, the lawful basis — before deployment. Failures here designed the human out of the loop entirely; the positive case (GSU) used the prediction to trigger more human support, not to gatekeep.
-Cases: 186 (Robodebt), 80 (Georgia State University), 179 (UK Post Office Horizon), 182 (COMPAS), 192 (Predictive Policing).
+Cases: 191 (Robodebt), 80 (Georgia State University), 184 (UK Post Office Horizon), 187 (COMPAS), 197 (Predictive Policing).
 
 ### 5.3 Cross-regime and platform governance seams
 
 Where regulatory regimes meet (FDA vs. CLIA, securities vs. consumer protection), platforms span jurisdictions, or APIs assume benevolent use, the seam itself is a governance artifact that someone must own. The recurring failure is fraud or harm exploiting the gap between regimes.
-Cases: 2 (EHR/CPOE), 10 (Theranos), 183 (Cambridge Analytica), 188 (Madoff/SEC), 35 (Radiology AI Miscalibration).
+Cases: 2 (EHR/CPOE), 10 (Theranos), 188 (Cambridge Analytica), 193 (Madoff/SEC), 35 (Radiology AI Miscalibration).
 
 ### 5.4 Change-control and disclosure as governance artifacts
 
 A change to a load-bearing element — a connection detail, a part number, a content update — must trigger a documented review by someone with the authority and information to catch the consequence. Disclosure of harm, when it occurs, is itself part of the deployment artifact.
-Cases: 151 (GM Ignition Switch), 169 (CrowdStrike), 152 (TSB Bank Migration), 158 (Hyatt Regency Walkway), 199 (Cruise Robotaxi).
+Cases: 151 (GM Ignition Switch), 172 (CrowdStrike), 152 (TSB Bank Migration), 158 (Hyatt Regency Walkway), 204 (Cruise Robotaxi).
 
 ## 6. Cross-organization and cross-time knowledge transfer
 
@@ -162,7 +162,7 @@ Many cases turn on the question of whether what one part of the system already k
 ### 6.1 Industry-level institution building after catastrophe
 
 A single operator cannot engineer the safety of a whole industry alone; the discipline must build the cross-organization institutions that distribute the cost of capability — peer review, mutual accreditation, joint commands. INPO, USDS, USSOCOM, CSB, and ODNI all originate as institutional answers to catastrophes the prior architecture could not absorb.
-Cases: 166 (Three Mile Island), 175 (Healthcare.gov / USDS), 172 (INPO), 159 (Bhopal / CSB), 39 (TeamSTEPPS), 109 (Colgan Air 3407), 128 (Operation Eagle Claw), 135 (9/11 Intelligence Sharing).
+Cases: 166 (Three Mile Island), 180 (Healthcare.gov / USDS), 175 (INPO), 159 (Bhopal / CSB), 39 (TeamSTEPPS), 109 (Colgan Air 3407), 128 (Operation Eagle Claw), 135 (9/11 Intelligence Sharing), 178 (UN Cluster Approach).
 
 ### 6.2 Operator-to-institution feedback channels
 
@@ -191,7 +191,7 @@ Cases: 97 (737 MAX), 129 (Patriot/Dhahran), 103 (Kegworth), 101 (Ariane 5).
 ### 7.2 Deployment and reuse as verification events
 
 A code push, a content update, or a migration weekend is not an administrative event but a verification event; the pipeline that does not treat it as such will fail catastrophically when something edge-case fires. Knight Capital, CrowdStrike, and TSB are the canonical worked examples.
-Cases: 143 (Knight Capital), 169 (CrowdStrike), 152 (TSB Bank Migration).
+Cases: 143 (Knight Capital), 172 (CrowdStrike), 152 (TSB Bank Migration).
 
 ### 7.3 Legacy assets aging past their oversight regime
 
@@ -201,31 +201,31 @@ Cases: 165 (Camp Fire / PG&E).
 ### 7.4 Multi-layer drift and cumulative inadequacy
 
 A cascade of marginal-but-tolerable conditions across multiple defense layers eventually aligns into catastrophe — each layer reported as acceptable in isolation, none monitored as a system. The competency is to instrument and analyze the multi-layer state rather than the per-layer signal.
-Cases: 163 (Deepwater Horizon), 111 (Challenger & Columbia), 134 (V-22 Osprey), 159 (Bhopal), 164 (Grenfell Tower), 167 (Sago Mine), 168 (Fukushima Daiichi), 153 (Equifax).
+Cases: 163 (Deepwater Horizon), 111 (Challenger & Columbia), 134 (V-22 Osprey), 159 (Bhopal), 164 (Grenfell Tower), 168 (Sago Mine), 169 (Fukushima Daiichi), 153 (Equifax).
 
 ## 8. Equity and construct definition as design commitments
 
-The dataset's algorithmic-deployment cases turn on a single recurring observation: the choice of what to predict, who counts as "at-risk," what counts as recidivism, or what "crime" the historical data records is itself the load-bearing design decision — not a downstream operational concern. inBloom failed not on bias but on consent (Case 53); Ofqual failed because the construct it standardized encoded existing inequality (Case 49); PredPol failed because it predicted enforcement, not crime (Case 192); Georgia State succeeded because it built equity in from the start as a primary outcome (Case 80). The competency is to treat equity and construct definition as design commitments measurable at deployment, not modules added at audit.
+The dataset's algorithmic-deployment cases turn on a single recurring observation: the choice of what to predict, who counts as "at-risk," what counts as recidivism, or what "crime" the historical data records is itself the load-bearing design decision — not a downstream operational concern. inBloom failed not on bias but on consent (Case 53); Ofqual failed because the construct it standardized encoded existing inequality (Case 49); PredPol failed because it predicted enforcement, not crime (Case 202); Georgia State succeeded because it built equity in from the start as a primary outcome (Case 80). The competency is to treat equity and construct definition as design commitments measurable at deployment, not modules added at audit.
 
 ### 8.1 Choosing the construct (what gets predicted, what counts)
 
 The unit of measurement is a capability decision with equity consequences: where police have enforced is not where crime has occurred; appointment-list compliance is not access; recidivism is a definition before it is a prediction. The competency is to interrogate the construct before the model.
-Cases: 7 (VA Wait Times), 49 (UK A-Level Algorithm), 46 (Educational Predictive Analytics), 182 (COMPAS), 192 (Predictive Policing).
+Cases: 7 (VA Wait Times), 49 (UK A-Level Algorithm), 46 (Educational Predictive Analytics), 187 (COMPAS), 197 (Predictive Policing).
 
 ### 8.2 Demographic stratification of validation and outcomes
 
 Aggregate validation accuracy can hide concentrated harm to under-represented groups; the competency is to require stratified validation and post-deployment outcome monitoring as routine deliverables. The failure pattern is FDA clearance, regulator approval, or vendor self-report based on aggregate metrics that did not stratify.
-Cases: 49 (UK A-Level Algorithm), 46 (Educational Predictive Analytics), 182 (COMPAS), 35 (Radiology AI Miscalibration).
+Cases: 49 (UK A-Level Algorithm), 46 (Educational Predictive Analytics), 187 (COMPAS), 35 (Radiology AI Miscalibration).
 
 ### 8.3 Designing predictions to trigger support, not gatekeeping
 
 When a predictive system is built to allocate help rather than to allocate scarcity, equity gaps are easier to close; when the same prediction is used to gatekeep, the bias is amplified into the allocation. Georgia State is the positive existence proof.
-Cases: 186 (Robodebt), 46 (Educational Predictive Analytics), 80 (Georgia State University), 179 (UK Post Office Horizon).
+Cases: 191 (Robodebt), 46 (Educational Predictive Analytics), 80 (Georgia State University), 184 (UK Post Office Horizon).
 
 ### 8.4 Surfacing bias through governance, not just technique
 
 Bias-detection technique is necessary but insufficient; the question of which fairness criterion is satisfied (and which is sacrificed) is a governance decision that must be made by an accountable party, not by a model vendor's default. COMPAS is the case where the technical impossibility result was already known, and the governance question was who decided.
-Cases: 53 (inBloom), 51 (Atlanta Public Schools), 182 (COMPAS), 192 (Predictive Policing), 36 (AlphaFold).
+Cases: 53 (inBloom), 51 (Atlanta Public Schools), 187 (COMPAS), 197 (Predictive Policing), 36 (AlphaFold).
 
 ## Crosswalk note (optional)
 

@@ -252,7 +252,7 @@
     standout-line("Note", 194, text-muted)[
       No paired-intervention success in the autonomous-systems dataset.
       The capability engineering this category needs is still being
-      built — see Case 200 (*The Discipline We Build Next*) for the
+      built — see Case 205 (*The Discipline We Build Next*) for the
       open question this volume closes on.
     ]
   },

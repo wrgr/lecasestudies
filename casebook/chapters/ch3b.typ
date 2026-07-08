@@ -174,7 +174,7 @@
     case (induced 7.3; LENS D1/PT3) — Domain 1 for LOV-as-
     operational-service-goal; Domain 5 for the AAWG
     institutional discipline. Closes the C7 zero-state. Pair
-    with Cases 115, 171, 156 as the v2 aging-system quartet.
+    with Cases 115, 174, 156 as the v2 aging-system quartet.
   ],
   literature-items: (
     [NTSB (1989), AAR-89/03 _Aloha Airlines 243_],
@@ -296,7 +296,7 @@
       anomalies in the case but part of what infrastructure
       transitions at this scale look like in practice. Together
       with the FAA Aging Aircraft program (Case 114), Y2K
-      (Case 171), and LWRS (Case 156), NextGen is part of the v2
+      (Case 174), and LWRS (Case 156), NextGen is part of the v2
       quartet that closes the C7 zero-state in the induced
       framework — and is the instance where the hedges are
       largest.#cn()
@@ -307,7 +307,7 @@
     "NextGen launched 2003 (Vision 100 Act); ADS-B Out is the load-bearing equipage-mandate piece of the broader program",
     "ADS-B Out final rule published 2010; January 1, 2020 compliance deadline; substantial compliance reported at the deadline",
     "Load-bearing hedge: GAO / DOT IG documented significant schedule slippage and benefit-realization gaps across the broader NextGen program",
-    "Closes C7 (aging-infrastructure transition) zero-state alongside Cases 114, 171, 156 — the instance where the hedges are largest",
+    "Closes C7 (aging-infrastructure transition) zero-state alongside Cases 114, 174, 156 — the instance where the hedges are largest",
   ),
   approaches: (
     during: (
@@ -435,7 +435,7 @@
       dissolved by the small-tier verification artifact." That is
       the C7 teaching point at the small tier the corpus has not
       had: the same governance-objection-dissolver move that
-      Case 194 / Case 195 show in the AV regulatory regime, transposed
+      Case 199 / Case 200 show in the AV regulatory regime, transposed
       into a legacy-software transition.#cn()
     ],
     [

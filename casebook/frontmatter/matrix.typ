@@ -103,7 +103,7 @@
       Industry, Energy & Enterprise Systems; Disaster Prevention &
       Recovery; Algorithms, Governance & Public Systems. Each part
       splits into *What Fails* and *What Works — and the Frontier*;
-      the open question closes the volume at Case 200.
+      the open question closes the volume at Case 205.
     ]
   }
 )

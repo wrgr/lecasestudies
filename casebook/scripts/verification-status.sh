@@ -20,8 +20,8 @@ if [ ! -f "$LOG" ]; then
 fi
 
 # Chapter ranges (case-number ranges). Update if the chapter structure changes.
-declare -A CHAPTER_LO=( [1A]=1   [1B]=11  [2A]=45  [2B]=65  [3A]=96  [3B]=114 [4A]=124 [4B]=136 [5A]=143 [5B]=154 [6A]=158 [6B]=170 [7A]=175 [7B]=189 [CLO]=200 )
-declare -A CHAPTER_HI=( [1A]=10  [1B]=44  [2A]=64  [2B]=95  [3A]=113 [3B]=123 [4A]=135 [4B]=142 [5A]=153 [5B]=157 [6A]=169 [6B]=174 [7A]=188 [7B]=199 [CLO]=200 )
+declare -A CHAPTER_LO=( [1A]=1   [1B]=11  [2A]=45  [2B]=65  [3A]=96  [3B]=114 [4A]=124 [4B]=136 [5A]=143 [5B]=154 [6A]=158 [6B]=173 [7A]=180 [7B]=194 [CLO]=205 )
+declare -A CHAPTER_HI=( [1A]=10  [1B]=44  [2A]=64  [2B]=95  [3A]=113 [3B]=123 [4A]=135 [4B]=142 [5A]=153 [5B]=157 [6A]=172 [6B]=179 [7A]=193 [7B]=204 [CLO]=205 )
 declare -A CHAPTER_NAME=(
   [1A]="Healthcare & Patient Safety — what fails"
   [1B]="Healthcare & Patient Safety — what works + frontier"

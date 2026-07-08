@@ -1663,7 +1663,7 @@
       merely the platform was the right diagnosis: the failure had been one
       of who could say "stop" and be heeded, so the durable fix had to live
       in the decision structure rather than the code. It is the financial-sector analog of
-      Healthcare.gov (Case 175): a large migration shipped without the testing
+      Healthcare.gov (Case 180): a large migration shipped without the testing
       the institution knew it needed, because schedule pressure overrode a
       technical signal that had no authority to win.
     ],
@@ -1681,7 +1681,7 @@
     [Slaughter and May (2019) — inadequate load testing and an unchallenged readiness certification.],
     [Financial Conduct Authority, Final Notice on TSB Bank (2022) — the regulatory penalty and proceeding against technical advice.],
     [House of Commons Treasury Committee, report on the TSB IT migration (2018).],
-    [Cf. Healthcare.gov (Case 175) and the migration-safety literature.],
+    [Cf. Healthcare.gov (Case 180) and the migration-safety literature.],
   ),
   quote: [The migration proceeded notwithstanding clear signals that the platform was not ready.],
   quote-source: "Paraphrasing the Slaughter and May Independent Review of the TSB migration, 2019",
@@ -1754,7 +1754,7 @@
     for years as a cost center. The CEO resigned and Equifax settled for
     about \$700 million. No single failure caused the breach; cumulative
     inadequacy across routine cybersecurity work did. Equifax is the
-    data-breach analog of the Sago mine disaster (Case 167).
+    data-breach analog of the Sago mine disaster (Case 168).
   ],
   sections: (
     // -- Background --
@@ -1807,7 +1807,7 @@
       the breach pushed patching discipline, asset inventory, and
       breach-disclosure timelines up the corporate agenda — elevating, after
       the loss, the unglamorous work that had been deferred before it.#cn() It
-      is the data-breach analog of the Sago mine disaster (Case 167): no
+      is the data-breach analog of the Sago mine disaster (Case 168): no
       dramatic single cause, just several routine defenses each left
       marginally inadequate, failing together on the day a determined attacker
       arrived to test all of them at once.
@@ -1826,7 +1826,7 @@
     [Senate PSI (2019) — "Equifax lacked a comprehensive IT asset inventory" (quoted).],
     [U.S. FTC / CFPB / state settlement (~\$700 million, 2019) and the CEO's resignation.],
     [U.S. GAO, _Actions Taken by Equifax and Federal Agencies in Response to the 2017 Breach_, GAO-18-559 (2018).],
-    [Apache Struts CVE-2017-5638 advisory; cf. the Sago mine disaster (Case 167).],
+    [Apache Struts CVE-2017-5638 advisory; cf. the Sago mine disaster (Case 168).],
   ),
   quote: [Equifax lacked a comprehensive IT asset inventory.],
   quote-source: "U.S. Senate Permanent Subcommittee on Investigations, How Equifax Neglected Cybersecurity, March 2019",

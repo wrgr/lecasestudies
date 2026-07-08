@@ -794,7 +794,7 @@
   lens-approach: [
     LENS uses Eagle Claw in LEN 5 as a worked case for cross-
     organizational capability requirements and in LEN 8 for the
-    institutional reform that followed; it pairs with INPO (Case 172) as
+    institutional reform that followed; it pairs with INPO (Case 175) as
     the defense analog of failure-driven institution building. The
     seven-year arc to Goldwater-Nichols (1986) and USSOCOM (1987) is
     itself a measurement: the institutional response time when the fix

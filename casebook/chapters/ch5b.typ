@@ -372,7 +372,7 @@
     sustainment-research form — a federally-funded research
     program operating across decades to support an industry's
     aging-fleet decisions — and closes a C7 zero-state in the
-    induced framework, paired with Cases 114, 115, 171 as the v2
+    induced framework, paired with Cases 114, 115, 174 as the v2
     aging-system quartet.
   ],
   sections: (
@@ -442,7 +442,7 @@
       Program (Case 114): a long-horizon institutional discipline
       that produces the technical record that aging-fleet
       decisions can rest on. With NextGen/ADS-B (Case 115) and
-      Y2K (Case 171), LWRS completes the v2 aging-system quartet
+      Y2K (Case 174), LWRS completes the v2 aging-system quartet
       that closes the C7 zero-state in the induced framework. The
       LWRS instance is where the evidence is most explicitly
       pilot-scale, and the case carries that as the program's
@@ -454,7 +454,7 @@
     "NRC regulatory environment (RG 1.180, BTP 7-19, SRP Ch. 7) makes the qualification path for safety-related digital I&C deliberately stringent",
     "DOE LWRS program executed at INL in partnership with utilities — federally-funded research-and-pilot work across multi-decade horizon",
     "Research line covers hybrid digital/analog operator interfaces, human-factors validation in full-scope simulators, qualification-pathway research",
-    "Hedge preserved: LWRS observations are pilot-scale; operational-fleet evidence at scale is forward-looking; closes C7 zero-state with Cases 114, 115, 171",
+    "Hedge preserved: LWRS observations are pilot-scale; operational-fleet evidence at scale is forward-looking; closes C7 zero-state with Cases 114, 115, 174",
   ),
   approaches: (
     during: (
@@ -464,7 +464,7 @@
     ),
     after: (
       [Track fleet-scale outcomes as utility implementations proceed: fleet-wide reliability, human-error rate, maintenance burden under modernized control rooms. The forward-looking evidence will accumulate over the next two decades; the program is the institutional carrier of that accumulation.],
-      [Carry the LWRS case in pair with FAA Aging Aircraft (Case 114) as the sustainment-engineering analog at multi-decade horizon, and with Y2K (Case 171) and NextGen (Case 115) as the broader aging-system quartet.],
+      [Carry the LWRS case in pair with FAA Aging Aircraft (Case 114) as the sustainment-engineering analog at multi-decade horizon, and with Y2K (Case 174) and NextGen (Case 115) as the broader aging-system quartet.],
       [Treat the structured-sustainment-research institutional form as the transferable artifact: federal research program plus industry partnership plus regulator engagement, operating across decades to produce the technical record aging-fleet decisions can rest on.],
     ),
   ),
@@ -492,7 +492,7 @@
     Domain 1 for the long-horizon partnership; Domain 5 for the
     federal-research + industry + regulator triple structure;
     Domain 3 for the hybrid digital/analog research line.
-    Closes C7 with Cases 114, 115, 171.
+    Closes C7 with Cases 114, 115, 174.
   ],
   literature-items: (
     [LWRS annual reports (INL, 2010 – present)],

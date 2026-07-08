@@ -16,7 +16,7 @@
 #import "../lib/diagrams.typ" as dgm
 
 #case(
-  number: 200,
+  number: 205,
   slug: "discipline-we-build-next",
   title: "The Discipline We Build Next",
   year: "ongoing",
@@ -123,7 +123,7 @@
     [LDT / LENS program statement, Johns Hopkins School of Education — the program and its commitments.],
     [Goodell & Kolodner (2022), _Learning Engineering Toolkit_ — the discipline's methods.],
     [The preceding cases of this volume — the cumulative record of cost and of possibility.],
-    [INPO (Case 172) and CRM/CAST (Case 117) — institution-building precedents (1979, 1981).],
+    [INPO (Case 175) and CRM/CAST (Case 117) — institution-building precedents (1979, 1981).],
     [IEEE ICICLE Learning Engineering Body of Knowledge (LEBoK); the introduction to this volume.],
   ),
   quote: [Capability is engineerable. The institution to engineer it has not yet been built. That is the work.],
