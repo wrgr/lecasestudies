@@ -91,7 +91,7 @@ They are close but not identical. v2 cases record all three. In the printed case
    - Pass-1 citations v2-101..116 (cases 124–139): editor memo flagged the entire pass-1 set for draft-time re-check. Specific items the subagents flagged: Bateman 1999 paper title/venue (Case 129 EGPWS); PMC12515027 (Case 131 sterile-cockpit); Gándara JPAM exact title/DOI (Case 138); Yu/Lee/Kizilcec exact venue (Case 139).
    - FDA pulse-oximetry 2025 draft guidance (Case 106).
    - BCMA harm-reduction follow-up figure (Case 142).
-6. **DEFERRED — First-person Practice Flywheel accounts** (2–3 for v2): authored by Will + Jim, not researched. CIRCUIT and ERKS-class efforts are natural sources. Paired with the front-matter "unpacking is the method" reframing.
+6. **DEFERRED — First-person Practice Flywheel accounts** (2–3 for v2): authored by Will + Jim, not researched. CIRCUIT, ERKS-class efforts, and the APL-CSSE COVID-dashboard pipeline build (Case 179) are natural sources. Paired with the front-matter "unpacking is the method" reframing.
 7. **DEFERRED — Front-matter "unpacking is the method" reframing.** Will to author. Paired with task 6.
 8. **A1 — Case 74 build issue — RESOLVED.** Case 74 (Hyatt Regency Walkway Collapse) is in `casebook/chapters/ch05b-governance-extras.typ` and verified to build correctly: `scripts/check-cases.sh` reports 6 refs, 3 pages, pass. The editor memo's "missing from PDF build" was a historical observation; the current build state is intact.
 

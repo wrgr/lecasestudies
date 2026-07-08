@@ -1145,13 +1145,21 @@
       configured thresholds for human review before publication,
       and open data sharing through GitHub and hosted feature
       layers. The Johns Hopkins Applied Physics Laboratory
-      partnered with CSSE on this build-out — contributing
-      engineering support to pipeline scaling, near-real-time
-      processing, and anomaly detection, with APL data scientists
-      among the reviewers of flagged discrepancies. The system
-      held under extraordinary load: a peak of more than 4.6
-      billion requests in a single day (29 March 2020), and over
-      226 billion feature-layer requests by June 2022.#cn()
+      partnered with CSSE on this build-out — the published
+      record credits APL with engineering support to pipeline
+      scaling, near-real-time processing, and anomaly detection,
+      with APL data scientists among the reviewers of flagged
+      discrepancies. The editors record here, with the adjacent
+      conflict disclosed under the title, their direct knowledge
+      that the Laboratory's engineering role in this transition
+      was substantially larger than the public record conveys —
+      closer to co-building the production pipeline than to
+      "support." That assessment is editorial testimony, not a
+      published finding; the citations carry only what is
+      published. The system held under extraordinary load: a
+      peak of more than 4.6 billion requests in a single day
+      (29 March 2020), and over 226 billion feature-layer
+      requests by June 2022.#cn()
     ],
     [
       The institutional trajectory is the second contribution. In
@@ -1195,7 +1203,7 @@
   ),
   beats: (
     "Launched 22 January 2020 by Gardner and Dong at JHU CSSE, one day after the first reported US case; every displayed number published as open data",
-    "Manual curation replaced by a semi-automated pipeline — scraping, validation, in-house anomaly detection with human review — with APL contributing engineering support to scaling and anomaly detection",
+    "Manual curation replaced by a semi-automated pipeline — scraping, validation, in-house anomaly detection with human review — built with APL engineering (a role the editors, conflict disclosed, record as larger than the public record conveys)",
     "Coronavirus Resource Center (March 2020) joined medicine, public health, and engineering; added testing, hospitalization, vaccine, and race/ethnicity-transparency data layers",
     "Peak single-day load above 4.6 billion requests; 226+ billion feature-layer requests by June 2022; 2022 Lasker-Bloomberg Public Service Award to Gardner",
     "Ceased data collection 10 March 2023; hedge preserved — a success case that is simultaneously evidence of the public-infrastructure gap it filled; sustainment was never structural",
@@ -1210,6 +1218,7 @@
       [Name the vacuum in the retrospective: the peer-reviewed lessons-learned record states plainly what the system substituted for, so the success cannot be read as evidence the gap is closed.],
       [Archive the full data record openly at shutdown so the three-year evidence base remains auditable and reusable after collection ends.],
       [Convert the demonstrated capability into a structural requirement — the case's unresolved question is whether public-health data infrastructure at decision speed gets built and funded as infrastructure, or waits for the next volunteer build.],
+      [Commission the first-person account: the APL-CSSE production-pipeline build is a natural Practice Flywheel narrative for a future edition — the inside view of an iteration the public record undersells, told by the people who ran it and published under the same disclosure that governs this case.],
     ),
   ),
   references: (
