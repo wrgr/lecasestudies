@@ -15,6 +15,7 @@
 
 #import "theme.typ": *
 #import "components.typ": *
+#import "selection.typ": main-slugs
 
 #let case(
   number: 0,
@@ -56,7 +57,7 @@
   // Carries number, title, year, domains, mode codes, kind, and course tags
   // for every case on both the 4-page and legacy paths — so the matrix and
   // domain index can render dynamically across the full corpus.
-  [#metadata((n: number, slug: slug, title: title, year: year, domains: domains-list, modes: modes-code, kind: kind, courses: courses, scale: scale, evidence-source: evidence-source, lens-anchor: lens-anchor, induced-anchor: induced-anchor, clo-anchor: clo-anchor, coi: coi, evidence-flag: evidence-flag, references: references)) <caseinfo>]
+  [#metadata((n: number, slug: slug, title: title, year: year, domains: domains-list, modes: modes-code, kind: kind, courses: courses, scale: scale, evidence-source: evidence-source, lens-anchor: lens-anchor, induced-anchor: induced-anchor, clo-anchor: clo-anchor, coi: coi, evidence-flag: evidence-flag, references: references, edition: if main-slugs.contains(slug) { "main" } else { "supplement" })) <caseinfo>]
 
   // Companion build (view "companion"): emit metadata only, no case body.
   // The metadata above is enough for the dynamic appendices (domain index,
@@ -64,6 +65,9 @@
   // the case narrative itself is the casebook's territory.
   if view == "companion" {
     // intentionally empty — case body is not rendered in the companion
+  } else if (edition == "main" and not main-slugs.contains(slug)) or (edition == "supplement" and main-slugs.contains(slug)) {
+    // edition split: this case belongs to the other edition — metadata only,
+    // so the matrix and indexes still cover the whole corpus in both books.
   } else if view != "book" {
   // Overview booklets (view "overview" / "overview-half"): render a compact
   // entry instead of the full multi-page case, reusing verified content.

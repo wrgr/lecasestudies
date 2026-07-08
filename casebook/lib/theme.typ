@@ -18,6 +18,13 @@
 //              exactly what the print edition will trim to.
 #let mode = sys.inputs.at("mode", default: "digital")
 
+// Edition split (July 2026): "full" — every case (reference build);
+// "main" — the printed main volume (cases in lib/selection.typ);
+// "supplement" — the digital-only supplement (everything else).
+// Skipped cases still emit <caseinfo> metadata so the matrix and
+// indexes always cover the whole corpus.
+#let edition = sys.inputs.at("edition", default: "full")
+
 #let is-print   = mode == "print"
 #let is-digital = mode == "digital"
 #let is-proof   = mode == "proof"

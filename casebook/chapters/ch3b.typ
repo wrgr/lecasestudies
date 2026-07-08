@@ -1,24 +1,534 @@
 // ============================================================
-// Human-System Collaboration — What Works (Ch D3b)
+// Part III — Aviation & Aerospace · What Works — and the Frontier (Chapter 6)
 // ============================================================
 #import "../lib/theme.typ": *
 #import "../lib/chapter.typ": chapter-divider
 #import "../lib/case.typ": case
 #import "../lib/components.typ": *
 #import "../lib/diagrams.typ" as dgm
-
 #chapter-divider(
-  part: "Part II — What Works",
+  part: "Part III — Aviation & Aerospace",
   number: "6",
-  title: "Human-System Collaboration — What Works",
-  subtitle: "When role, interface, and authority are engineered together.",
-  epigraph: [Any operator can stop the line.],
-  epigraph-source: "Toyota Production System; widely paraphrased.",
+  title: "Aviation & Aerospace — What Works — and the Frontier",
+  subtitle: "When an industry engineers its own error rate down and keeps the books open.",
+  epigraph: [Flying got safer when reporting became cheaper than concealment.],
+  epigraph-source: "An observation recurring across the chapter's cases.",
 )
 
-
+// ---- Case 114 — faa-aging-aircraft-program-widespread ----
 #case(
-  number: 70,
+  number: 114,
+  slug: "faa-aging-aircraft-program-widespread",
+  title: "FAA Aging-Aircraft Program — Widespread Fatigue Damage and the Part 26 Rule",
+  year: "1988 – 2010s",
+  domains-list: ("aviation safety", "structural engineering", "regulatory rulemaking"),
+  modes-code: "GDK",
+  impact: "After Aloha Airlines 243 (1988) exposed widespread fatigue cracking in an aging Boeing 737-200, the FAA's Aging Aircraft Program and the Airworthiness Assurance Working Group produced two decades of structural inspection programs culminating in 14 CFR Part 26 (2010), which requires manufacturers to establish a Limit of Validity for each model and embed widespread fatigue damage protection into the maintenance program",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "investigation",
+  induced-anchor: "7.3",
+  lens-anchor: "D1/PT3",
+  clo-anchor: "CLO-1, CLO-5",
+  summary: [
+    On April 28, 1988, Aloha Airlines Flight 243 lost an 18-foot
+    section of upper fuselage in flight; the aircraft, a Boeing
+    737-200, had accumulated 89,680 flight cycles and was operating
+    well past the design assumptions of the original certification.
+    The accident — one flight attendant killed, 65 injured — exposed
+    the structural-engineering category of widespread fatigue damage
+    (WFD): multiple small cracks across many similar structural
+    details, simultaneous enough that established single-crack
+    inspection assumptions did not apply. The FAA stood up the
+    Aging Aircraft Program almost immediately, and the Airworthiness
+    Assurance Working Group (AAWG) operated through the 1990s and
+    2000s producing structural inspection programs across the
+    transport-airplane fleet. The work culminated in 14 CFR Part 26
+    (Continued Airworthiness and Safety Improvements; effective
+    2010), which requires manufacturers to establish a Limit of
+    Validity (LOV) for each type — the operational service goal
+    below which the maintenance program protects against WFD — and
+    to embed WFD prevention into the structural maintenance program
+    itself. Part 26 is one of the most concrete recent examples of
+    legacy assets aging past their original oversight regime being
+    pulled back under structured airworthiness governance, and
+    closes a long-standing zero-state in the induced framework's C7
+    competency.
+  ],
+  sections: (
+    [
+      Aloha Airlines Flight 243 on April 28, 1988, was the
+      sentinel event. The Boeing 737-200 had accumulated 89,680
+      flight cycles — well above the design service goal — and was
+      operating in a high-cycle short-haul environment that
+      stressed the fuselage skin and lap joints at a rate the
+      original certification analysis had not anticipated. In
+      cruise at 24,000 feet, an 18-foot section of upper fuselage
+      separated. The crew recovered the aircraft and landed it; one
+      flight attendant was lost overboard and 65 occupants were
+      injured. The NTSB investigation identified multiple small
+      fatigue cracks across many lap-joint rivet holes, linking up
+      catastrophically — the textbook presentation of widespread
+      fatigue damage rather than a single-crack failure.#cn()
+    ],
+    [
+      The structural-engineering category WFD names is specifically
+      the regime where established inspection assumptions break
+      down. A single-crack model assumes one crack initiates,
+      propagates, and is caught by scheduled inspection before
+      reaching critical length. WFD assumes many small cracks
+      initiate at similar structural details across the fleet at
+      similar times, and that link-up between adjacent cracks
+      becomes the dominant failure mode. The inspection cadence,
+      detection threshold, and replacement program a designer would
+      build under the single-crack assumption do not adequately
+      cover the WFD regime, and the airworthiness oversight regime
+      Aloha exposed had not made the distinction.#cn()
+    ],
+    [
+      The FAA's response was to stand up the Aging Aircraft Program
+      and convene the Airworthiness Assurance Working Group, which
+      operated through the 1990s and 2000s. The AAWG produced
+      mandatory structural inspection documents and supplemental
+      structural inspection programs for transport-category
+      aircraft model-by-model, working through the older fleet
+      systematically. The work was technically substantial — fleet-
+      survey data, fatigue-test campaigns, inspection-program
+      revisions for in-service aircraft — and institutionally
+      sustained across more than two decades. The intermediate
+      deliverables were per-model inspection programs; the
+      capstone was rulemaking.#cn()
+    ],
+    [
+      14 CFR Part 26 — Continued Airworthiness and Safety
+      Improvements — was finalized in 2007 with the WFD provisions
+      effective in 2010. Two structural elements are load-bearing.
+      First, every transport-category type must have a Limit of
+      Validity established by the manufacturer: the operational
+      service goal, in flight cycles or flight hours, below which
+      the maintenance program is shown to protect against WFD.
+      Operation beyond the LOV requires either the manufacturer
+      establishing an extended LOV with supporting analysis, or
+      operator-specific evidence approved by the regulator. Second,
+      WFD prevention is embedded in the structural maintenance
+      program itself, not handled as a separate one-time inspection
+      event. The maintenance program becomes the carrier of WFD
+      protection across the type's service life.#cn()
+    ],
+    [
+      What the case teaches at the LENS framing layer is the
+      structural form of pulling legacy assets back under
+      structured airworthiness governance. The original 737-200
+      certification did not anticipate the cycle count and the WFD
+      regime that high-cycle short-haul operation produced; the
+      regulatory response was not to retire the type but to engineer
+      the oversight regime forward — fleet survey, AAWG, model-by-
+      model inspection programs, and finally Part 26 codifying the
+      LOV concept across the transport-category fleet. The case is
+      one of the v2 sweep's clearest closes of the C7 (Capability
+      under system change, transition, and aging assumptions)
+      zero-state in the induced framework: a sustained two-decade
+      regulatory program that turned an aging-fleet structural
+      surprise into a governed sustainment discipline.#cn()
+    ],
+  ),
+  beats: (
+    "Aloha 243 (April 28, 1988): 737-200 at 89,680 cycles loses 18 feet of upper fuselage; WFD identified as the failure mode",
+    "FAA stands up Aging Aircraft Program; AAWG operates through 1990s–2000s producing per-model structural inspection programs",
+    "14 CFR Part 26 finalized 2007, WFD provisions effective 2010 — Limit of Validity per type; WFD prevention embedded in maintenance program",
+    "Two structural elements: LOV as operational service goal protected by maintenance, plus WFD prevention as ongoing program (not one-time inspection)",
+    "Closes the induced C7 (system change / aging assumptions) zero-state — sustained two-decade rulemaking pulled an aging fleet back under structured airworthiness governance",
+  ),
+  approaches: (
+    during: (
+      [Name the structural regime the original certification analysis did not cover — WFD vs. single-crack here — explicitly, so the inspection program can be designed around the actual failure mode rather than retrofitted to the original assumption.],
+      [Operate the working group across a long horizon (AAWG: two decades): the per-model deliverables build the technical record that supports the eventual rulemaking, and short-cycle deliverables alone do not.],
+      [Make the operational service goal (LOV) the artifact the regulation rests on; the goal is auditable per type, and operation beyond it requires additional analysis rather than implicit extension.],
+    ),
+    after: (
+      [Embed the new protection in the maintenance program rather than as a one-time inspection: the maintenance program is the carrier across the service life, and one-time events are not.],
+      [Treat the model-by-model technical work as the legitimacy basis for the rule; without the AAWG's fleet-survey and inspection-program record, Part 26 would have looked like top-down regulation rather than codification of established practice.],
+      [Carry the case as the C7 instance the induced framework needed: legacy assets aging past their original oversight regime, pulled back under structured airworthiness governance by sustained two-decade rulemaking.],
+    ),
+  ),
+  references: (
+    [NTSB (1989), Aircraft Accident Report AAR-89/03, _Aloha Airlines Flight 243, Boeing 737-200, N73711_.],
+    [FAA, 14 CFR Part 26, "Continued Airworthiness and Safety Improvements for Transport Category Airplanes," Final Rule (2007), WFD provisions effective 2010.],
+    [Airworthiness Assurance Working Group reports (1990s–2000s) — per-model structural inspection program record.],
+    [FAA Aging Aircraft Program documentation (1988 – present) — institutional record of the sustained regulatory work.],
+    [Swift, "Widespread Fatigue Damage Monitoring — Issues and Concerns," _International Conference on Aging Aircraft_ — technical synthesis of the WFD inspection regime.],
+  ),
+  quote: [The deliverable was not a single rule. It was the two-decade per-model technical record that made the rule a codification of established practice rather than top-down regulation.],
+  quote-source: "Editors' synthesis of the FAA Aging Aircraft Program and the Part 26 rulemaking record.",
+  le-insight: [
+    The FAA Aging Aircraft Program and Part 26 are one of the
+    v2 sweep's clearest closes of the C7 zero-state. Aloha 243
+    exposed a regime the original certification did not cover;
+    the AAWG operated for two decades; Part 26 codified Limit of
+    Validity and embedded WFD prevention into the maintenance
+    program itself. The sustained two-decade rulemaking is the
+    deliverable, not the rule alone.
+  ],
+  lens-approach: [
+    FAA aging aircraft is the canonical aging-asset-governance
+    case (induced 7.3; LENS D1/PT3) — Domain 1 for LOV-as-
+    operational-service-goal; Domain 5 for the AAWG
+    institutional discipline. Closes the C7 zero-state. Pair
+    with Cases 115, 174, 156 as the v2 aging-system quartet.
+  ],
+  literature-items: (
+    [NTSB (1989), AAR-89/03 _Aloha Airlines 243_],
+    [FAA Part 26 Final Rule (2007)],
+    [AAWG per-model structural inspection program reports],
+  ),
+  reflection-list: (
+    [Identify a legacy asset class in your domain whose original certification or design analysis no longer covers the regime the assets are now operating in. What is the analog of the WFD distinction — the failure mode the original analysis did not anticipate?],
+    [Specify the analog of the LOV: an operational service goal, auditable per asset, beyond which additional analysis is required. What instrument would you use, what cadence, and what would "operation beyond LOV" trigger in your domain?],
+    [The AAWG operated for two decades before Part 26 codified the practice. What is the institutional discipline you would build for a similar two-decade horizon — the working-group cadence, the per-asset technical record, the eventual rulemaking — and is there a body in your domain that could plausibly carry that horizon?],
+  ),
+  courses: ("LEN 1", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 115 — faa-nextgen-and-the-ads-b-out-transition ----
+#case(
+  number: 115,
+  slug: "faa-nextgen-and-the-ads-b-out-transition",
+  title: "FAA NextGen and the ADS-B Out Transition",
+  year: "2003 – 2020",
+  domains-list: ("aviation infrastructure", "air traffic management", "regulatory transition"),
+  modes-code: "GDK",
+  impact: "The FAA's Next Generation Air Transportation System (NextGen) shifted US air-traffic management from radar-based surveillance to a satellite-based architecture; the ADS-B Out mandate effective January 1, 2020 required equipage across the controlled-airspace fleet, achieving substantial compliance — with documented schedule slippage and benefit-realization gaps preserved as load-bearing hedges",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "program-report",
+  induced-anchor: "7.1",
+  lens-anchor: "D1/PT4",
+  clo-anchor: "CLO-1, CLO-5",
+  summary: [
+    The FAA's Next Generation Air Transportation System (NextGen)
+    is the multi-decade transition of US air-traffic management
+    from a radar-based surveillance architecture to a satellite-
+    based architecture built on Automatic Dependent Surveillance –
+    Broadcast (ADS-B). The ADS-B Out final rule, published in
+    2010, set the equipage mandate for January 1, 2020 — aircraft
+    operating in most controlled airspace must broadcast their
+    GPS-derived position and identity, replacing the radar-only
+    secondary-surveillance model that defined the era prior. The
+    mandate was substantially met at the deadline; equipage
+    compliance across the affected fleet was high, and ADS-B-based
+    surveillance is now the operational backbone in much of US
+    airspace. The case is one of the largest planned aging-
+    infrastructure transitions in the recent regulatory record —
+    closing a long-standing C7 zero-state in the induced framework
+    — and it carries the load-bearing hedges that GAO and DOT
+    Inspector General reviews have repeatedly documented:
+    significant schedule slippage across the program, benefit-
+    realization gaps relative to original projections, and
+    contested cost-benefit accounting. The transition happened; the
+    transition was harder, slower, and more partial than the
+    original NextGen plan implied.
+  ],
+  sections: (
+    [
+      The pre-NextGen US air-traffic management architecture rested
+      on ground-based primary and secondary radar surveillance, with
+      voice communication, paper or quasi-paper flight progress
+      strips at many facilities, and traffic-flow management built
+      around scheduled equipage upgrades that lagged the broader
+      civil-aviation hardware base. By the early 2000s the
+      structural problem was named clearly in the policy literature:
+      a 20th-century surveillance architecture was being asked to
+      handle 21st-century traffic, and incremental modernization
+      inside the radar-paradigm was approaching its limits.#cn()
+    ],
+    [
+      NextGen, formally launched in 2003 under the Vision 100 –
+      Century of Aviation Reauthorization Act, was the FAA's
+      multi-decade response. The technical core was the transition
+      from radar-based surveillance to ADS-B: aircraft broadcast
+      their GPS-derived position once per second, ground stations
+      and other aircraft receive the broadcast, and the resulting
+      surveillance picture is more precise, lower-latency, and less
+      expensive to operate at scale than secondary radar. The
+      broader NextGen program included additional elements
+      (Data Communications, NAS Voice System, System-Wide
+      Information Management) but ADS-B Out was the load-bearing
+      equipage-mandate piece.#cn()
+    ],
+    [
+      The ADS-B Out final rule was published in 2010 with the
+      January 1, 2020 compliance deadline — a decade of lead time
+      for operators to equip. At the deadline, substantial
+      compliance was reported across the affected fleet; the
+      FAA's surveillance picture in controlled airspace moved
+      substantially onto the ADS-B architecture, and the
+      operational transition was completed in the sense the rule
+      intended. The transition is one of the largest
+      infrastructure-replacement programs in the recent FAA
+      record, and it executed.#cn()
+    ],
+    [
+      The hedges have to survive. GAO and DOT Inspector General
+      reports across the 2010s repeatedly documented significant
+      schedule slippage across NextGen — multiple elements
+      missing original delivery dates, the broader program's
+      realized benefits running below original projections, and
+      contested cost-benefit accounting between FAA program
+      reporting and external review. The benefit categories
+      NextGen's business case rested on — fuel-burn reduction,
+      delay reduction, increased airspace capacity — have
+      materialized in some respects and not in others, and the
+      attribution to NextGen specifically (vs. broader operational
+      and weather variation) is contested in the published audit
+      literature. Equipage happened; benefit realization is
+      mixed and ongoing.#cn()
+    ],
+    [
+      What the case teaches at the LENS framing layer is the
+      sustainment-engineering form of a planned aging-
+      infrastructure transition at continental scale. The
+      transition happened: the regulatory architecture, the
+      decade of lead time, the equipage mandate at the deadline,
+      and the operational migration to ADS-B-based surveillance
+      are real and large. The transition was harder, slower, and
+      more partial than the original NextGen plan implied; the
+      schedule slippage and benefit-realization gaps are not
+      anomalies in the case but part of what infrastructure
+      transitions at this scale look like in practice. Together
+      with the FAA Aging Aircraft program (Case 114), Y2K
+      (Case 174), and LWRS (Case 156), NextGen is part of the v2
+      quartet that closes the C7 zero-state in the induced
+      framework — and is the instance where the hedges are
+      largest.#cn()
+    ],
+  ),
+  beats: (
+    "Pre-NextGen US air-traffic management rested on radar and voice; incremental modernization inside the radar-paradigm approached its limits by early 2000s",
+    "NextGen launched 2003 (Vision 100 Act); ADS-B Out is the load-bearing equipage-mandate piece of the broader program",
+    "ADS-B Out final rule published 2010; January 1, 2020 compliance deadline; substantial compliance reported at the deadline",
+    "Load-bearing hedge: GAO / DOT IG documented significant schedule slippage and benefit-realization gaps across the broader NextGen program",
+    "Closes C7 (aging-infrastructure transition) zero-state alongside Cases 114, 174, 156 — the instance where the hedges are largest",
+  ),
+  approaches: (
+    during: (
+      [Specify the equipage mandate with the lead time the transition actually needs — a decade for ADS-B Out — so the deadline arrives with realistic compliance pathways rather than as a forcing function operators cannot meet.],
+      [Separate the equipage-mandate piece (auditable, has a deadline) from the broader benefit-realization business case (multifactorial, harder to attribute); the equipage piece will deliver, the benefit piece will deliver partially, and conflating them sets the program up to look like a failure where it succeeded.],
+      [Plan for sustained external audit (GAO, DOT IG) as part of the program's operating environment — the schedule slippage and benefit-realization gap reporting is institutional discipline, not a sign the program is unworkable.],
+    ),
+    after: (
+      [Report the equipage transition as the deliverable that executed and the benefit realization as the deliverable that is ongoing and mixed; both are real, and the load-bearing hedge is that the original NextGen plan understated the difficulty of the latter.],
+      [Sustain the audit-and-rebaseline cadence after the headline equipage mandate; the benefit-realization picture continues to develop, and the institutional record of slippage and partial realization is part of how transitions at this scale are documented honestly.],
+      [Treat the NextGen case as the instance where the C7 transition delivered with the largest acknowledged hedge — useful precisely because the transition is real and the hedges are also real, and conflating either with the other misreads the lesson.],
+    ),
+  ),
+  references: (
+    [FAA, "Automatic Dependent Surveillance – Broadcast (ADS-B) Out Performance Requirements to Support Air Traffic Control (ATC) Service," Final Rule, 14 CFR Part 91 (2010).],
+    [Vision 100 — Century of Aviation Reauthorization Act, Public Law 108-176 (2003) — NextGen program statutory basis.],
+    [Government Accountability Office, "NextGen Air Transportation System" report series (2010s) — sustained external audit record on schedule slippage and benefit-realization gaps.],
+    [Department of Transportation Office of Inspector General, NextGen audit report series — independent program review documenting cost growth and partial benefit realization.],
+    [FAA, NextGen Annual Reports (2010 – present) — program-self-report tier; read against the GAO and DOT IG reviews.],
+  ),
+  quote: [The transition happened. The transition was harder, slower, and more partial than the original plan implied. Both are part of the case.],
+  quote-source: "Editors' synthesis of the GAO NextGen audit series and FAA program reporting.",
+  le-insight: [
+    NextGen / ADS-B is one of the largest planned aging-
+    infrastructure transitions in the recent regulatory record.
+    The equipage mandate executed at the January 2020 deadline.
+    The broader NextGen program has documented significant
+    schedule slippage and benefit-realization gaps in sustained
+    external audit. The case closes a C7 zero-state with the
+    largest acknowledged hedges in the v2 aging-system quartet.
+  ],
+  lens-approach: [
+    NextGen / ADS-B is the planned infrastructure-transition
+    case (induced 7.1; LENS D1/PT4). LENS uses it in Domain 1
+    (Systems Analysis) for the separation of the auditable
+    equipage mandate from the multifactorial benefit-
+    realization business case, and in Domain 5 (Navigating
+    Sociotechnical Constraints) for the decade of lead time
+    and the sustained external-audit discipline. Closes the C7
+    zero-state alongside Cases 114 (FAA aging aircraft), 136
+    (Y2K), and 137 (LWRS) as the v2 aging-system quartet.
+  ],
+  literature-items: (
+    [FAA ADS-B Out Final Rule (2010)],
+    [GAO NextGen report series (2010s)],
+    [DOT Office of Inspector General NextGen audits],
+  ),
+  reflection-list: (
+    [Identify an aging-infrastructure transition in your domain whose original business case rested on benefit categories that are multifactorial and contested in attribution. What is the equivalent of the auditable equipage mandate — the piece of the transition that delivers cleanly — and how would you separate its reporting from the broader benefit case?],
+    [Specify the lead time the transition actually needs from mandate to deadline; ADS-B Out used a decade. What is the analog in your context, and what does the operator-equipage trajectory look like across that horizon?],
+  ),
+  courses: ("LEN 1", "LEN 7", "LEN 8"),
+)
+
+// ---- Case 116 — eurocat-atm-pilot-modernization-small ----
+#case(
+  number: 116,
+  slug: "eurocat-atm-pilot-modernization-small",
+  title: "Eurocat ATM Pilot Modernization — Small-Tier Verification as the Gateway to Big-Tier Change",
+  year: "2005",
+  domains-list: ("air traffic management", "legacy modernization", "software transformation"),
+  modes-code: "GKH",
+  impact: "A 17,000-line pilot modernization of the Eurocat air-traffic-management system was scoped explicitly to generate safety evidence that an automated transformation was non-distortive of original functionality; that pilot-tier evidence was used to convince customers to accept a system-wide architecture-driven modernization with 100% automated code transformation",
+  kind: "intervention",
+  scale: "small",
+  evidence-source: "program-report",
+  evidence-flag: "practice-synthesis-tier",
+  induced-anchor: "7.1",
+  lens-anchor: "D1/PT1",
+  clo-anchor: "CLO-1, CLO-2",
+  summary: [
+    The Eurocat Air Traffic Management System was the kind of
+    safety-critical legacy software whose customers cannot accept a
+    big-bang rewrite: the operational system in production cannot
+    tolerate the discontinuity. The 2005 Thales-led pilot
+    modernization was scoped narrowly — 17,000 lines of code — with
+    the deliberate goal of generating safety-equivalence evidence
+    that an automated transformation did not distort the original
+    functionality. The pilot succeeded in producing that evidence,
+    and the evidence was used to convince customers to accept a
+    full architecture-driven modernization with 100% automated code
+    transformation. The teaching pattern is the small-as-gateway-to-big
+    move: the small-tier verification artifact dissolved the customer
+    objection to the large-tier change. The case is documented in a
+    vendor-authored Elsevier technical chapter rather than an
+    independent academic evaluation; the evidence-tier flag is
+    rendered under the title. The case is the small-tier C7
+    transition-verification companion to the big-tier failures
+    (Patriot/Dhahran, Ariane 5, Knight Capital, CrowdStrike, TSB)
+    already in the corpus. Future validation will continue on the
+    long-run operational behavior of the modernized system.
+  ],
+  sections: (
+    [
+      Air traffic management software is a paradigmatic
+      capability-system-misalignment-at-transition problem: the
+      legacy system carries decades of accreted operational logic,
+      the safety case the regulator and the airspace user expect
+      rests on the legacy's documented behavior, and a big-bang
+      rewrite is unacceptable because the operational
+      discontinuity is itself the safety hazard. The Eurocat
+      problem in 2005 was the standard one — modernize without
+      breaking the safety case the legacy already carries.#cn()
+    ],
+    [
+      The design move was to scope a pilot narrowly enough that
+      the verification could be exhaustive. Seventeen thousand
+      lines of code is small as a fraction of the full system; it
+      is large enough that a working automated transformation
+      pipeline can be exercised end-to-end and the
+      safety-equivalence evidence can be generated against a
+      realistic subset. The pilot was not a feasibility check.
+      It was a deliberately designed evidence artifact: prove,
+      at small scale and on the actual legacy, that the
+      transformation does not distort the function the customer
+      cares about.#cn()
+    ],
+    [
+      The pilot succeeded in producing the evidence. Customers
+      were then willing to accept a system-wide architecture-driven
+      modernization with 100% automated code transformation. The
+      causal claim the case rests on is not "the modernization
+      worked" — that is a long-run operational question — but
+      "the customer objection to the large-tier change was
+      dissolved by the small-tier verification artifact." That is
+      the C7 teaching point at the small tier the corpus has not
+      had: the same governance-objection-dissolver move that
+      Case 199 / Case 200 show in the AV regulatory regime, transposed
+      into a legacy-software transition.#cn()
+    ],
+    [
+      The evidence-tier flag matters. The case is documented in a
+      practitioner-authored chapter in an Elsevier book on
+      information-systems transformation. The authors are from
+      the vendor side; there is no independent academic
+      evaluation of the pilot's safety-equivalence claims or of
+      the post-modernization operational behavior. The pattern
+      the case teaches — verification at the small tier as the
+      gateway to the large-tier change — is robust across the
+      practitioner literature on legacy modernization, but the
+      Eurocat-specific magnitudes and the long-run system
+      outcomes have not been audited in a peer-reviewed source.
+      Future validation will continue.#cn()
+    ],
+    [
+      What the case adds at the LENS layer is the small-tier C7
+      intervention that the big-tier failures already in the
+      corpus do not teach: when the inherited design has to move
+      to a new envelope, the verification work itself can be the
+      capability deliverable that earns the change its
+      legitimacy. The Domain-1 frame applies: systems analysis of
+      the legacy's safety case as an artifact, and design of the
+      transformation pipeline as another artifact, are the
+      capability-engineering moves the program made. The case is
+      the missing positive example for induced 7.1 and 7.2 at
+      the small tier.
+    ],
+  ),
+  beats: (
+    "Safety-critical ATM legacy cannot tolerate big-bang rewrite — operational discontinuity is the safety hazard",
+    "Pilot scoped narrowly (17,000 lines) so the verification can be exhaustive against the actual legacy",
+    "Pilot succeeds in producing safety-equivalence evidence; customer objection to system-wide change dissolves",
+    "Causal claim is dissolution of the objection by the evidence artifact, not yet long-run operational success",
+    "Evidence tier: vendor-authored Elsevier chapter; no independent academic evaluation of the safety-equivalence claim",
+  ),
+  approaches: (
+    during: (
+      [Scope the pilot to be small enough that the verification can be exhaustive against the actual legacy, not just a feasibility check on a synthetic subset.],
+      [Design the safety-equivalence evidence as a deliberate deliverable from the pilot, not a byproduct: specify in advance what the customer needs to see to accept the large-tier change.],
+      [Document the transformation pipeline itself as a verifiable artifact, so the customer can audit the transformation, not just inspect the transformed code.],
+    ),
+    after: (
+      [Carry the practitioner-tier flag into any downstream citation; the case is a vendor account and the long-run operational behavior of the modernized system is the open question.],
+      [Treat the small-as-gateway-to-big pattern as the teaching point; the magnitudes and the system-wide rollout are open and depend on the long-run operational record.],
+      [Pair with the big-tier C7 failures (Patriot/Dhahran, Ariane 5, Knight Capital, TSB) when teaching; the pair shows the verification-as-deliverable principle is what separates the failure and intervention threads.],
+    ),
+  ),
+  references: (
+    [Reus, Geers, & van Deursen (2010), "Modernization of the Eurocat Air Traffic Management System (EATMS)," in _Information Systems Transformation: Architecture-Driven Modernization Case Studies_ (Elsevier / Morgan Kaufmann), Chapter 5.],
+    [Ulrich & Newcomb (eds., 2010), _Information Systems Transformation_ — the host volume on architecture-driven modernization patterns.],
+    [Brodie & Stonebraker (1995), _Migrating Legacy Systems_ — the framing reference on small-step legacy modernization.],
+    [Bisbal et al. (1999), "Legacy Information Systems: Issues and Directions," _IEEE Software_ 16(5):103–111 — peer-reviewed framing companion.],
+  ),
+  quote: [The verification at the small tier is the artifact that earns the large-tier change its legitimacy. The pilot is not a feasibility check. It is the evidence.],
+  quote-source: "Editors' synthesis of the Eurocat modernization chapter.",
+  le-insight: [
+    Eurocat is the small-tier C7 transition-verification
+    intervention the corpus needed: a narrowly scoped pilot
+    designed to produce the safety-equivalence evidence that
+    dissolves customer objection to a system-wide modernization.
+    Evidence is vendor-authored practitioner literature; the
+    long-run operational record of the modernized system is the
+    open question. Future validation ongoing.
+  ],
+  lens-approach: [
+    Eurocat is the C7 small-tier transition case (induced 7.1
+    and 7.2; LENS D1/PT1). LENS uses it in Domain 1 (Systems
+    Analysis) for CLO-1 — the safety case and the
+    transformation pipeline are both engineered artifacts —
+    and in Domain 2 (Iterative Development) for CLO-2, since
+    the pilot is the iteration that earns the rollout. Pair
+    with the big-tier C7 failures (Patriot/Dhahran, Ariane 5,
+    Knight Capital, CrowdStrike, TSB) for the failure-and-
+    intervention contrast.
+  ],
+  literature-items: (
+    [Reus, Geers, & van Deursen (2010), Elsevier chapter — Eurocat modernization],
+    [Brodie & Stonebraker (1995), _Migrating Legacy Systems_ — framing reference],
+    [Bisbal et al. (1999), _IEEE Software_ — peer-reviewed legacy-modernization framing],
+  ),
+  reflection-list: (
+    [Identify a legacy system in your context whose customer or operator will not accept a big-bang rewrite. What is the small-tier pilot whose evidence would dissolve the objection to the large-tier change, and what specifically would the customer need to see?],
+    [Specify the safety-equivalence evidence the pilot would have to generate as a deliberate deliverable. The Eurocat pattern teaches because the pilot was scoped to produce the artifact the customer needed, not just to demonstrate feasibility.],
+    [The case is vendor-authored practitioner literature. What independent evidence (academic evaluation, multi-customer replication, long-run operational behavior) would you require before treating the small-as-gateway-to-big pattern as a settled engineering practice in your domain?],
+  ),
+  courses: ("LEN 1", "LEN 2", "LEN 6"),
+)
+
+// ---- Case 117 — crew-resource-management-and-cast ----
+#case(
+  number: 117,
   slug: "crew-resource-management-and-cast",
   title: "Crew Resource Management & CAST",
   year: "1981 – present",
@@ -166,155 +676,9 @@
   evidence-source: "investigation",
 )
 
+// ---- Case 118 — korean-air-safety-transformation ----
 #case(
-  number: 71,
-  slug: "keystone-icu-pronovost-checklist",
-  title: "Keystone ICU / Pronovost Checklist",
-  year: "2004 – present",
-  domains-list: ("healthcare",),
-  modes-code: "TN",
-  impact: "Central-line-associated bloodstream infections (CLABSI) reduced to near zero across 103 Michigan ICUs; ~1,500 lives saved in 18 months; ~$100M saved; sustained at ten years",
-  diagram: dgm.dgm-keystone,
-  kind: "intervention",
-  summary: [
-    Peter Pronovost's central-line checklist has five items — wash hands,
-    clean the skin with chlorhexidine, drape the patient, use full barrier
-    precautions, apply a sterile dressing — and not one of them was unknown
-    to the physicians it governed. The question was never what to do, but
-    whether it would be done every time. The Keystone project, launched
-    across 103 Michigan ICUs in 2004, paired the checklist with a cultural
-    change: nurses were not merely permitted but required to stop the
-    procedure if a step was skipped. That authorization was the
-    load-bearing element. Central-line-associated bloodstream infections
-    fell to near zero, an estimated 1,500 lives and \$100 million were saved
-    in eighteen months, and the effect was sustained at ten years.
-  ],
-  sections: (
-    // -- Background --
-    [
-      Central-line-associated bloodstream infections were a common, often
-      fatal complication of intensive care, and the steps to prevent them
-      were well established and uncontroversial. The problem was
-      reliability: in the existing culture, a nurse who saw a physician
-      skip a sterile step had no procedural path to intervene without
-      crossing the hospital's authority gradient. The knowledge was
-      universal and the steps cheap; what was missing was any mechanism that
-      made the right action happen every time rather than most of the time,
-      which is precisely where a fatal infection finds its opening.#cn()
-    ],
-    // -- The Intervention --
-    [
-      In 2004, Peter Pronovost's team launched the Keystone ICU project
-      across 103 Michigan units. It combined a simple five-item central-line
-      checklist — hand hygiene, chlorhexidine skin prep, full-barrier
-      draping, sterile gown-mask-gloves, and a sterile dressing — with an
-      explicit authorization: nurses were required, not merely permitted,
-      to stop any procedure in which a step was missed. The distinction
-      between permitted and required was deliberate — a permission a nurse
-      might decline to exercise against a senior physician became an
-      obligation the institution stood behind, removing the personal risk of
-      intervening.#cn()
-    ],
-    // -- How It Worked --
-    [
-      The checklist was the technical half; the nurses' enforcement
-      authority was the cultural half, and it was the load-bearing one.
-      Before Keystone, the path to intervene did not exist; after it, the
-      path was institutional and expected. The pairing converted knowledge
-      everyone already had into behavior that happened every time. The
-      checklist gave the nurse an objective, impersonal basis for the stop —
-      a missed item, not a judgment about the physician — which is what made
-      the authority usable in practice rather than merely on paper.#cn()
-    ],
-    // -- The Evidence --
-    [
-      Across the Michigan ICUs, the median quarterly CLABSI rate fell to
-      zero, and the state's units outperformed 90% of ICUs
-      nationwide. The program was estimated to have saved roughly 1,500
-      lives and \$100 million within eighteen months. Results were published
-      in the _New England Journal of Medicine_ in 2006, and follow-up
-      showed the effect sustained at ten years. The durability mattered as
-      much as the size of the drop: an improvement that survives a decade is
-      evidence the change was built into the system's structure rather than
-      riding on the initial enthusiasm of a single project.#cn()
-    ],
-    // -- What Transferred --
-    [
-      Keystone became the clearest evidence in healthcare that a technical
-      intervention without an authority change produces no durable
-      improvement — and vice versa. The model was packaged as the AHRQ CUSP
-      toolkit, adopted in more than forty states, and replicated
-      internationally, establishing the design principle of intervening in
-      matched technical-and-cultural pairs. Packaging the approach as a
-      reusable toolkit was itself part of what transferred — it turned a
-      single project's success into something other institutions could adopt
-      without rediscovering the load-bearing role of the authority change.#cn()
-    ],
-  ),
-  beats: (
-    "Central-line infections persisted because nurses lacked procedural path to intervene across the authority gradient",
-    "Pronovost paired a five-item sterile checklist with a required nurse stop authority",
-    "Requirement, not permission, plus an impersonal trigger made the stop usable against senior physicians",
-    "CLABSI rates fell near zero across 103 ICUs; effect sustained at ten years",
-    "Packaged as the AHRQ CUSP toolkit, replicated in forty states and internationally as paired design",
-  ),
-  references: (
-    [Pronovost, P. et al. (2006), "An Intervention to Decrease Catheter-Related Bloodstream Infections in the ICU," _NEJM_ 355 — the trial and the near-zero result.],
-    [Pronovost & Vohr (2010), _Safe Patients, Smart Hospitals_ — the checklist-plus-nurse-authority pairing (paraphrased).],
-    [Lipitz-Snyderman, A. et al. (2011), _BMJ_ — sustained effect at follow-up.],
-    [Agency for Healthcare Research and Quality, CUSP toolkit — dissemination across states.],
-    [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — the authorization, not the list, as the active ingredient.],
-  ),
-  quote: [The checklist was the technical intervention. The nurses' authority to enforce it was the cultural intervention. Neither worked without the other.],
-  quote-source: "Paraphrasing Pronovost & Vohr, Safe Patients, Smart Hospitals, 2010",
-  le-insight: [
-    Keystone is the clearest evidence in healthcare that a technical
-    intervention without authority intervention produces no durable change,
-    and authority intervention without a technical artifact produces no
-    measurable change. Both are necessary. The empirical record of
-    Keystone is the strongest available argument for designing interventions
-    as *pairs* — and treating the cultural half as engineering, not
-    aspiration.
-  ],
-  lens-approach: [
-    LENS uses Keystone in LEN 4 and LEN 10 as the canonical worked example
-    of measurement linked to intervention. Studio projects require students
-    to specify both halves of the pair, name the authority that authorizes
-    the cultural half, and identify the measurement signal that will
-    confirm or refute the effect. The course treats "is the cultural change
-    actually authorized?" as falsifiable, not stated.
-  ],
-  literature-items: (
-    [Gawande, _The Checklist Manifesto_ (2009)],
-    [Bosk et al. (2009), "Reality check for checklists," _The Lancet_],
-    [Edmondson, _The Fearless Organization_ (2018)],
-  ),
-  reflection-list: (
-    [Identify an evidence-based protocol in your domain that is *known* to work but is not consistently performed. What is the authority change required to pair with it?],
-    [Design the measurement signal that would confirm the cultural half of a Keystone-style intervention is actually being authorized — not merely declared.],
-    [Keystone made the nurse's stop an obligation the institution stood behind, not a personal risk. Identify a corrective action in your domain that currently costs the person who takes it, and design the institutional backing that would remove that cost.],
-  ),
-  approaches: (
-    during: (
-      [Pair the technical artifact with the authority change from the outset — a checklist plus the explicit, institution-backed right of a junior member to stop the procedure when a step is missed.],
-      [Make the intervention an obligation rather than a permission, so the corrective action does not depend on an individual's willingness to challenge a senior colleague.],
-      [Anchor the stop to an objective, impersonal trigger (a missed checklist item) so the authority is usable without it reading as a judgment of the more senior operator.],
-    ),
-    after: (
-      [Measure the outcome directly (the CLABSI rate) and publish it, so the cultural half can be confirmed as authorized in practice rather than merely declared.],
-      [Track the effect over years, not months, to confirm the change is built into the system's structure rather than riding on a project's initial enthusiasm.],
-      [Package the paired design as a reusable toolkit so other institutions can adopt it without rediscovering the load-bearing role of the authority change.],
-    ),
-  ),
-  courses: ("LEN 4", "LEN 10", "LEN 5"),
-  scale: "big",
-  induced-anchor: "4.1",
-  lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
-)
-
-#case(
-  number: 72,
+  number: 118,
   slug: "korean-air-safety-transformation",
   title: "Korean Air Safety Transformation",
   year: "2000 – present",
@@ -429,7 +793,7 @@
     LENS uses Korean Air in LEN 8 as the canonical organizational-
     learning case under cultural constraint and in LEN 2 as a CRM-
     extension case for high-power-distance contexts. The case is
-    paired in this book with the Toyota Andon Cord (Case 73) as
+    paired in this book with the Toyota Andon Cord (Case 155) as
     cultural intervention success stories.
   ],
   literature-items: (
@@ -462,1485 +826,834 @@
   evidence-source: "investigation",
 )
 
+// ---- Case 119 — aviation-safety-reporting-system-asrs ----
 #case(
-  number: 73,
-  slug: "toyota-production-system-andon-cord",
-  title: "Toyota Production System / Andon Cord",
-  year: "1950s – present",
-  domains-list: ("industrial",),
-  modes-code: "NG",
-  impact: "Front-line authority to stop the line resolves most defects quickly at the source; defect-propagation cost minimized; the system adopted globally",
-  diagram: dgm.dgm-andon,
+  number: 119,
+  slug: "aviation-safety-reporting-system-asrs",
+  title: "Aviation Safety Reporting System (ASRS)",
+  year: "1976 – present",
+  domains-list: ("aviation",),
+  modes-code: "TKN",
+  impact: "NASA-administered confidential reporting system; more than 2M reports received; foundational architecture for evidence-driven aviation safety",
+  diagram: dgm.dgm-flow(
+    ("operator", "confidential\nreport", "ASRS DB", "analyst", "FAA action"),
+    framing: "non-punitive use is the load-bearing institutional commitment",
+    caption: "ASRS — paired technical artifact and protected reporter",
+  ),
   kind: "intervention",
   summary: [
-    The andon cord lets any assembly-line worker stop Toyota's entire
-    production line on detecting a defect — handing the lowest-ranking
-    person on the floor the power to halt operations worth millions per
-    hour. The cord is trivially cheap; the authority it confers is the
-    design. The case is decisive for capability engineering because when
-    American automakers copied the cord in the 1980s and 1990s, workers
-    were too afraid to pull it: the tool was present, the empowerment was
-    not. Toyota's system works because it pairs the mechanism with a
-    culture of psychological safety, fast supervisor response, no-blame
-    problem-solving, and the codified "Five Whys" method. When the line
-    stops at Toyota, the team treats it as a learning opportunity. The
-    Andon Cord is the manufacturing twin of the Keystone nurse-authority
-    intervention (Case 71).
+    The Aviation Safety Reporting System, run by NASA on behalf of the FAA
+    since 1976, accepts confidential reports from pilots, controllers,
+    mechanics, and cabin crew about incidents, near-misses, and safety
+    concerns. Its load-bearing feature is institutional, not technical:
+    reporting an event to ASRS confers immunity from FAA enforcement for
+    the conduct reported, within specified limits, making honest reporting
+    the rational choice. Over nearly fifty years and more than two million
+    reports, ASRS has become the world's largest repository of
+    aviation-safety information, surfacing patterns — automation surprise,
+    runway incursions, fatigue effects — before they reached formal
+    investigation thresholds. The architecture has been emulated across
+    domains, and is the canonical success case for an evidence system
+    paired with a credible commitment to non-punitive use.
   ],
   sections: (
     // -- Background --
     [
-      In high-volume manufacturing, a defect that passes undetected
-      propagates downstream, multiplying the cost of every later
-      correction. Catching problems at the source requires the person who
-      sees them — usually the lowest-ranking worker on the line — to be
-      able to act, in an environment where stopping a line running at
-      millions of dollars per hour is otherwise unthinkable. The economics
-      and the authority structure point in opposite directions: the cheapest
-      moment to fix a defect is the one at which the person who sees it has
-      the least standing to halt production.#cn()
+      The most valuable safety information in any high-consequence domain
+      lives with front-line operators — the near-misses and quiet errors
+      that never reach an accident report. But operators will not surrender
+      that information to an institution that can punish them for it, so
+      the data that could prevent the next accident stays locked in the
+      people who hold it. The incentives run backward: the person best
+      placed to report a near-miss is the same person a punitive system
+      gives the strongest reason to stay silent, so the data that matters
+      most is the data least likely to surface.#cn()
     ],
     // -- The Intervention --
     [
-      As part of the Toyota Production System, Toyota installed the andon
-      cord: a physical pull-cord that lets any worker signal a problem and,
-      if unresolved, stop the entire line. The inversion of authority is
-      the entire point — the cord itself costs almost nothing, while the
-      protected authority it confers on a front-line worker is the actual
-      design. Handing the lowest-ranking person the power to halt operations
-      worth millions per hour deliberately resolves the contradiction the
-      background poses: it puts the authority to stop exactly where the
-      defect is first visible.#cn()
+      In 1976 the FAA and NASA created the Aviation Safety Reporting
+      System, a confidential channel for pilots, controllers, mechanics,
+      and cabin crew to report incidents, near-misses, and concerns. NASA —
+      not the regulator — administers it, and reporting an event confers
+      immunity from FAA enforcement for the conduct reported, subject to
+      specified limits. Putting a neutral party between the reporter and the
+      enforcer directly addressed the backward incentive — an operator now
+      had a positive reason to report, because doing so converted potential
+      jeopardy into protection.#cn()
     ],
     // -- How It Worked --
     [
-      The cord works because Toyota pairs the mechanism with a cultural
-      system: psychological safety, a rapid supervisor-response protocol
-      when the cord is pulled, no-blame root-cause analysis, and the
-      codified "Five Whys" method. A stop is treated as a learning
-      opportunity rather than a failure, so workers actually use it — the
-      technical artifact and the protected authority are inseparable. The
-      rapid supervisor response is what makes the protection credible in
-      practice: a worker who pulls the cord sees help arrive rather than
-      blame, so the no-blame norm is demonstrated each time, not just
-      asserted.#cn()
+      The system pairs a technical artifact (the reporting form and a
+      searchable database) with a cultural commitment (protected,
+      non-punitive use). The immunity provision makes reporting the
+      rational choice for the operator, and NASA's role as a neutral third
+      party makes the protection credible. Either half alone fails;
+      together they make the data flow to the institution that can act on
+      it. The credibility of the protection is what does the work — a
+      promise of non-punishment from the regulator itself would be doubted,
+      so routing it through NASA is what makes operators trust it enough to
+      report.#cn()
     ],
     // -- The Evidence --
     [
-      The proof of the pairing is negative as well as positive. When
-      American manufacturers copied the andon cord in the 1980s and 1990s,
-      workers were too afraid to pull it; the artifact without the
-      authority produced nothing. At Toyota, where the authority is
-      protected, the great majority of activations are resolved within a
-      minute and the system has been sustained and exported for decades. The
-      natural experiment is unusually clean — the same physical cord
-      produced opposite results across two settings, isolating the protected
-      authority, not the hardware, as the variable that mattered.#cn()
+      Over nearly fifty years ASRS has accumulated more than two million
+      reports — the largest single repository of aviation-safety
+      information in the world. Patterns such as automation surprise,
+      runway incursions, and fatigue effects were first identified at scale
+      through ASRS data before they crossed formal investigation
+      thresholds. Surfacing a pattern before it reaches an accident is the
+      whole point — the value of the system is the hazards it lets the
+      industry act on while they are still near-misses, not the reports it
+      collects after the fact.#cn()
     ],
     // -- What Transferred --
     [
-      The Andon Cord is the foundational evidence that authority
-      interventions and technical artifacts are inseparable — the cord
-      means nothing without the protected authority to pull it, and vice
-      versa. It is the manufacturing counterpart of the Keystone nurse-stop
-      authority (Case 71): same logic, different industry, same
-      load-bearing element, and the same failure mode when only the
-      artifact is copied. That the identical pattern recurs across
-      manufacturing and medicine is what elevates it from a Toyota practice
-      to a design principle: wherever the person who sees the problem lacks
-      the standing to stop, copying the tool alone reproduces the failure.#cn()
+      ASRS has been studied and emulated across domains — patient-safety
+      reporting systems, the maritime and aviation CHIRP scheme, and
+      similar systems in rail and nuclear power. It is the canonical
+      positive case for evidence architecture paired with an institutional
+      commitment to non-punitive learning, the defining design pattern of a
+      "just culture." The breadth of emulation underscores that the
+      load-bearing element travels — wherever the most valuable safety data
+      sits with operators who fear punishment, the same protected-reporting
+      design recurs as the way to unlock it.#cn()
     ],
   ),
   beats: (
-    "The cheapest moment to fix a defect is when the seer has least standing to halt",
-    "Toyota installed a pull-cord letting any worker signal a problem and stop the line",
-    "Mechanism paired with psychological safety, rapid supervisor response, no-blame analysis, and Five Whys",
-    "American copies failed because workers feared pulling it; Toyota's protected authority is the variable",
-    "Authority interventions and technical artifacts are inseparable; the manufacturing twin of Keystone nurse-stop",
+    "Valuable safety data lives with operators; punitive systems give them strongest reason to stay silent",
+    "FAA and NASA created a confidential channel in 1976 conferring immunity for reported conduct",
+    "A neutral third party paired with immunity made non-punitive protection credible enough to trust",
+    "Over two million reports surfaced automation surprise, runway incursions, and fatigue before accidents",
+    "Patient safety, maritime CHIRP, rail, and nuclear systems emulated the protected-reporting design pattern",
   ),
   references: (
-    [Liker, J. (2020), _The Toyota Way_ (2nd ed.) — the andon cord, the cultural pairing, and the American imitation (paraphrased).],
-    [Spear, S. & Bowen, H. (1999), "Decoding the DNA of the Toyota Production System," _HBR_ — the response protocol and embedded learning.],
-    [Shingo, S. (1989), _A Study of the Toyota Production System_ — the technical mechanism.],
-    [Rother, M. (2009), _Toyota Kata_ — the routines that sustain the practice.],
-    [Womack & Jones (1996), _Lean Thinking_ — diffusion and the limits of surface imitation.],
+    [NASA ASRS Program documentation and annual reports — system design, immunity provision, and report volume.],
+    [Reason, J. (1997), _Managing the Risks of Organizational Accidents_ — non-punitive reporting as a model (paraphrased).],
+    [NASA ASRS technical reports (Connell et al.) — patterns first surfaced via ASRS data.],
+    [Dekker, S. (2012), _Just Culture_ — the cultural commitment to non-punitive use.],
+    [CHIRP and patient-safety reporting-system documentation — cross-domain emulation.],
   ),
-  quote: [When American manufacturers copied the andon cord, workers were too afraid to pull it.],
-  quote-source: "Paraphrasing Liker, The Toyota Way (2nd ed., 2020)",
+  quote: [ASRS is the model for confidential, voluntary, non-punitive incident reporting in any high-consequence domain.],
+  quote-source: "Paraphrasing James Reason, Managing the Risks of Organizational Accidents, 1997",
   le-insight: [
-    The Andon Cord is the foundational evidence that authority
-    interventions and technical artifacts are inseparable. The cord
-    means nothing without the protected authority to pull it. The
-    protected authority means nothing without the cord to act through.
-    The pair is irreducible — and that irreducibility is the LENS
-    co-optimization commitment in physical form.
+    ASRS is the canonical positive case for paired-intervention
+    evidence architecture. The technical artifact (the reporting form
+    and the database) is paired with the cultural commitment to
+    non-punitive use. Either alone fails. Together they have produced
+    the most comprehensive operational-safety dataset in any domain.
   ],
   lens-approach: [
-    LENS uses the Andon Cord in LEN 2 as the foundational example of
-    paired technical-cultural intervention, in LEN 8 to discuss
-    cross-domain transfer (and why imitation without the cultural half
-    fails), and in LEN 10 as a studio exemplar of minimal-artifact
-    design.
+    LENS uses ASRS in LEN 4 as the foundational positive case for
+    evidence architecture and in LEN 8 for institutional commitment
+    to non-punitive learning. Studio projects design ASRS-equivalents
+    for new domains.
   ],
   literature-items: (
-    [Liker (2020), _The Toyota Way_],
-    [Spear & Bowen (1999), HBR],
-    [Rother, _Toyota Kata_ (2009)],
+    [Reason (1997)],
+    [Connell, et al., ASRS technical reports],
+    [Dekker, _Just Culture_ (2012)],
   ),
   reflection-list: (
-    [Identify a technical artifact in your domain whose effectiveness depends entirely on a protected authority. Is the authority protected, or only declared?],
-    [American manufacturers copied the cord without the authority. What is the equivalent surface-level imitation you have observed in your domain, and what was missing?],
-    [Toyota's no-blame norm is demonstrated each time help arrives within a minute of a pull rather than blame. Design the visible, repeated response that would prove a protected authority is real in your domain rather than merely written into policy.],
+    [Identify a domain in your institution that would benefit from an ASRS-equivalent. What cultural commitment would be required for it to function?],
+    [Design the institutional commitment that makes an ASRS-equivalent operational rather than merely declared.],
+    [ASRS made the protection credible by routing it through NASA rather than the regulator. Identify a reporting channel in your domain that operators distrust, and specify the neutral party or structural separation that would make its non-punitive promise believable.],
   ),
   approaches: (
     during: (
-      [Place the authority to stop exactly where the problem is first visible — with the front-line worker — resolving the contradiction that the cheapest moment to fix a defect is when the seer has the least standing.],
-      [Pair the cheap artifact with the protected authority deliberately, recognizing the cord costs almost nothing while the authority it confers is the actual design.],
-      [Stand up a rapid supervisor-response protocol so that pulling the cord brings help, not blame, making the no-blame norm credible from the first activation.],
+      [Pair a simple reporting artifact (a form and searchable database) with a credible commitment to non-punitive use, since the channel without the protection collects nothing of value.],
+      [Confer immunity for reported conduct so that reporting becomes the rational choice, directly reversing the incentive that otherwise keeps the most valuable data hidden.],
+      [Route the protection through a neutral third party rather than the enforcer, so operators trust the non-punitive promise enough to report against their own interest.],
     ),
     after: (
-      [Sustain the pairing with no-blame root-cause analysis and a codified method (the Five Whys) so each stop becomes embedded learning rather than a one-off interruption.],
-      [Demonstrate the protected authority repeatedly — help arriving within a minute — so the norm is shown each time rather than merely asserted in policy.],
-      [When transferring the model, export the protected authority and response culture, not just the artifact, since copying the tool alone reproduces the failure mode.],
+      [Analyze the accumulated reports to surface patterns — automation surprise, runway incursions, fatigue — and act on them while they are still near-misses rather than accidents.],
+      [Protect the immunity provision over time, since a single high-profile punishment of a reporter would collapse the trust the whole system depends on.],
+      [Export the protected-reporting design, not just the database, to new domains, adapting the neutral-party structure wherever valuable safety data sits with operators who fear punishment.],
     ),
   ),
-  courses: ("LEN 10", "LEN 2", "LEN 8"),
+  courses: ("LEN 4", "LEN 8"),
   scale: "big",
-  induced-anchor: "4.1",
-  lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  induced-anchor: "4.2",
+  lens-anchor: "D4/PT2",
+  clo-anchor: "CLO-4",
 )
 
+// ---- Case 120 — egpws-taws-closing-the-cfit-category-in ----
 #case(
-  number: 74,
-  slug: "trews-sepsis-watch",
-  title: "TREWS / Sepsis Watch",
-  year: "2018 – 2022",
-  domains-list: ("healthcare", "clinical AI"),
+  number: 120,
+  slug: "egpws-taws-closing-the-cfit-category-in",
+  title: "EGPWS / TAWS — Closing the CFIT Category in Commercial Aviation",
+  year: "1996 – 2002",
+  domains-list: ("aviation", "safety engineering", "human factors"),
   modes-code: "HKG",
-  impact: "Prospective multi-site evidence of reduced mortality, organ failure, and length of stay when clinicians engaged with ML sepsis alerts in deployed care",
+  impact: "Honeywell's Enhanced Ground Proximity Warning System (EGPWS, 1996), mandated by the FAA as Terrain Awareness and Warning System (TAWS) for US-registered turbine aircraft beginning in 2001 and broadly worldwide by 2002, converted controlled flight into terrain (CFIT) — historically one of the largest categories of commercial-aviation fatalities — into a category whose rate in equipped fleets has fallen sharply; CFIT events on properly equipped and operating airliners are now rare",
   kind: "intervention",
   scale: "big",
-  evidence-source: "peer-reviewed",
-  induced-anchor: "3.1",
-  lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-4, CLO-3",
-  // coi: none — TREWS carries no COI; sentinel left default. For a COI case
-  // the field would render a gold-bordered "Disclosure" block under the title:
-  //   coi: "An editor of this volume is the senior author of the underlying study.",
-  // The render path also surfaces an "Evidence tier" block when
-  //   evidence-flag: "journalism-tier"  (or "preprint-tier", "practice-synthesis-tier")
-  // is set, with the standing "future validation ongoing" language.
-  summary: [
-    The Targeted Real-time Early Warning System (TREWS) is a machine-learning
-    sepsis-detection tool deployed at five Johns Hopkins hospitals; Duke's
-    Sepsis Watch follows the same pattern. The Adams et al. prospective
-    multi-site study (_Nature Medicine_ 2022) reported reduced in-hospital
-    mortality, reduced organ failure, shorter length of stay, and improved
-    antibiotic timeliness associated with deployment — conditional on
-    clinicians acting on alerts within a defined window. The benefit was
-    not the model in isolation. It was the model plus a deliberately
-    engineered alert, workflow, and clinician-confirmation layer that made
-    the alert actionable at the bedside. The honest hedge in the literature
-    is that the evidence is prospective and observational, not RCT; the
-    field notes RCTs are still pending. The case is the positive counter to
-    the Epic Sepsis Model (Case 93): same delegation task, opposite outcome,
-    and the difference is in the engineering of the human–machine boundary
-    and the discipline of the surrounding evidence work.
-  ],
-  sections: (
-    [
-      Sepsis is among the most consequential time-dependent diagnoses in
-      hospital medicine: every hour of delayed antibiotics is associated
-      with increased mortality, and the disease is heterogeneous enough
-      that bedside clinicians frequently miss the earliest signal in a
-      patient already being treated for something else. The promise of
-      machine learning has been to surface that earliest signal from the
-      continuously updated EHR trace — vitals, labs, medications — and
-      route it to a clinician who can act in time.#cn()
-    ],
-    [
-      TREWS, deployed across five Johns Hopkins hospitals, and Sepsis Watch
-      at Duke are the two best-documented instances of this approach. The
-      Adams et al. prospective study of ~590,000 patient encounters
-      reported that when clinicians confirmed an alert within three hours,
-      in-hospital mortality, organ failure, and length of stay were lower
-      than for matched controls, and antibiotics were given sooner. The
-      evidence is observational rather than randomized, but it is
-      multi-site, pre-registered, and outcome-grounded.#cn()
-    ],
-    [
-      The capability the deployment supplied was not "the model." It was
-      the alert designed to fit into a specific clinical workflow, the
-      confirmation step that put a clinician between the model and the
-      action, and the institutional commitment to measure outcomes — not
-      adoption — as the metric of success. The reported benefit collapsed
-      when clinicians did not engage with the alert: the model on its own
-      did nothing. The deliverable was the interface, the role design, and
-      the surrounding evidence loop, not the prediction.#cn()
-    ],
-    [
-      The honest hedge survives into the literature. The Adams et al.
-      paper, and the broader sepsis-AI field, explicitly note that the
-      outcome inference is conditional on the population, the workflow,
-      and the engagement pattern measured at these sites — and that
-      randomized trials remain pending. The benefit is real on the
-      evidence presented, but it is not a closed proof; it is the strongest
-      available evidence that delegation of early detection to ML can be
-      done as a paired intervention with measurable outcome improvement.#cn()
-    ],
-    [
-      What TREWS teaches is that the failure pattern of clinical AI
-      (Case 130) is not inevitable. When the model is treated as one
-      component of a deliberately designed human–machine system — with an
-      alert that fits the workflow, a clinician role that retains
-      authority, a deployment that is observed prospectively, and a
-      willingness to report null effects in non-engaged subgroups — the
-      delegation can produce capability rather than alert fatigue. The
-      case is the engineering counter to Watson for Oncology (the model
-      marketed ahead of its capability) and the Epic Sepsis Model (the
-      model deployed ahead of its validation).
-    ],
-  ),
-  beats: (
-    "Sepsis is time-critical and heterogeneous; ML can surface the earliest signal from the EHR trace",
-    "Prospective multi-site evidence reports lower mortality, organ failure, and LOS when clinicians engage alerts",
-    "The deliverable is not the model — it is the alert design, the clinician role, and the evidence loop",
-    "Evidence is observational and prospective, not RCT; benefit collapses without clinician engagement",
-    "Delegation of detection can be done as a paired intervention with measured outcomes — the engineering counter",
-  ),
-  approaches: (
-    during: (
-      [Design the alert to fit a specific workflow, not the average workflow — including the bedside action it should provoke and the timeline within which it must be confirmed.],
-      [Keep a clinician between the model and the action: model flags, human confirms, the model's authority is to surface, not to decide.],
-      [Instrument the deployment for outcomes (mortality, organ failure, antibiotic timeliness) before the first alert fires — adoption is not the metric of success.],
-    ),
-    after: (
-      [Report engagement-stratified outcomes honestly — including the subgroups where the alert was not acted on and the benefit was not observed.],
-      [Treat the prospective/observational design as a constraint to be replaced by RCT evidence when feasible, not as a result that ends the evidence work.],
-      [Carry the model's hedges into the deployment documentation so the next site adopts the model and the discipline that produced it.],
-    ),
-  ),
-  references: (
-    [Adams et al. (2022), "Prospective, multi-site study of patient outcomes after implementation of the TREWS machine learning-based early warning system for sepsis," _Nature Medicine_ 28(7):1455–1460, doi:10.1038/s41591-022-01894-0.],
-    [Henry et al. (2022), "Factors driving provider adoption of the TREWS machine learning-based early warning system and its effects on sepsis treatment timing," _Nature Medicine_ 28(7):1447–1454, doi:10.1038/s41591-022-01895-z.],
-    [Sendak et al. (2020), "Real-world integration of a sepsis deep learning technology into routine clinical care: implementation study," _JMIR Medical Informatics_ 8(7):e15182 (Sepsis Watch implementation).],
-    [Wong et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model," _JAMA Internal Medicine_ 181(8):1065–1070 — the foil case (102).],
-  ),
-  quote: [The benefit is not the model. It is the model used as part of a system clinicians can act on.],
-  quote-source: "Editors' synthesis of Adams et al. (2022) and Henry et al. (2022).",
-  le-insight: [
-    TREWS is the strongest current evidence that delegating early
-    sepsis detection to a machine-learning system can improve patient
-    outcomes — when the delegation is engineered as a paired
-    intervention. The capability deliverable is the alert design,
-    the clinician role, and the outcome-grounded evidence loop, not
-    the model.
-  ],
-  lens-approach: [
-    TREWS is the positive Domain 3 / Problem Type 6 case the corpus
-    needed: a documented delegation to AI that worked, with the
-    explanation locatable in the human–machine interface and the
-    governance discipline rather than the model. LENS uses it in
-    Domain 3 (Human-System Collaboration) for the
-    delegation-with-revocation pattern, in Domain 4 (Test and
-    Evaluation) for outcome-grounded prospective evidence under the
-    judgment-under-inadequate-evidence CLO, and in Domain 5
-    (Navigating Sociotechnical Constraints) for the workflow-fit
-    discipline. It is the foil drafted directly against the Epic
-    Sepsis Model (Case 93).
-  ],
-  literature-items: (
-    [Adams et al. (2022), _Nature Medicine_],
-    [Henry et al. (2022), _Nature Medicine_],
-    [Sendak et al. (2020), _JMIR Medical Informatics_ — Sepsis Watch implementation],
-  ),
-  reflection-list: (
-    [Identify a delegation of detection or screening in your domain that succeeded. What were the components of the human–machine interface that made the model actionable, and what would happen to the outcome metric if those components were removed?],
-    [Specify the engagement-stratified outcome you would report from a deployment at your site — including the subgroup where the alert was not acted on. What would you need to instrument before the first alert fires?],
-    [The TREWS evidence is prospective and observational, not RCT. What is the minimum additional evidence you would require before recommending the same model deployment at a new site that differs from the validation sites in population, workflow, or EHR configuration?],
-  ),
-  courses: ("LEN 2", "LEN 4", "LEN 7"),
-)
-
-#case(
-  number: 75,
-  slug: "sterile-cockpit-ward-rounds-adapting-an",
-  title: "Sterile-Cockpit Ward Rounds — Adapting an Aviation Principle to Clinical Handoff",
-  year: "2024 – 2025",
-  domains-list: ("healthcare", "patient safety", "human factors"),
-  modes-code: "HKN",
-  impact: "A clinical adaptation of the aviation 'sterile cockpit' rule — no non-essential communication or interruptions during high-workload phases — applied to ward rounds and handoffs; the published evaluation reports reductions in interruption frequency and improvements in information-transfer measures during the protected window, on a single-unit single-study evidence base whose generalization the authors are explicit about",
-  kind: "intervention",
-  scale: "small",
-  evidence-source: "peer-reviewed",
-  induced-anchor: "3.2",
-  lens-anchor: "D3/PT5",
-  clo-anchor: "CLO-4, CLO-5",
-  summary: [
-    The "sterile cockpit" rule in commercial aviation (FAR
-    121.542, codified 1981) prohibits non-essential communication
-    among flight crew during taxi, takeoff, landing, and any
-    flight phase below 10,000 feet — the high-workload, high-
-    consequence windows when distraction is most likely to
-    produce error. The principle has been adapted across other
-    high-consequence domains; recent work in clinical care has
-    extended the principle to ward rounds and clinical handoff,
-    where interruption-driven information loss is a documented
-    contributor to patient-safety events. Treloar et al. (2025),
-    in _World Journal of Surgery_, describe a structured
-    intervention on a single surgical ward: a defined window
-    during the handoff
-    or round during which non-essential pages, conversations,
-    and interruptions are prohibited and information transfer
-    is the protected workflow. The evaluation reports
-    reductions in interruption frequency and improvements in
-    information-transfer measures during the protected window.
-    The hedges that survive into the case verbatim: this is a
-    single-unit single-study evidence base, the
-    interruption-reduction effect is direct while the patient-
-    outcome inference rests on the established link between
-    handoff quality and downstream events rather than on
-    direct outcome measurement in this study, and the
-    sustainability of the protected-window discipline beyond
-    the study period is not yet established. The case is the
-    cross-domain adaptation case: an aviation safety-culture
-    rule, adapted with explicit attribution and adapted again
-    for a clinical context, with the evidence at the tier the
-    adaptation has reached.
-  ],
-  sections: (
-    [
-      The aviation sterile-cockpit rule (FAR 121.542) was
-      codified in 1981 in response to a documented pattern of
-      accidents in which flight-crew distraction during high-
-      workload phases — non-operational conversation, cabin
-      coordination, administrative communication — contributed
-      to the error chain. The rule is operationally simple:
-      below 10,000 feet, in taxi, takeoff, approach, and
-      landing, only operationally necessary communication is
-      permitted in the cockpit. The principle has been
-      extended in safety-culture practice to other high-
-      workload phases and operations.#cn()
-    ],
-    [
-      Clinical care has long carried an analogous problem at
-      the handoff and ward-round boundary. Interruption-driven
-      information loss during handoff is a documented
-      contributor to patient-safety events; I-PASS and SIGNOUT?
-      and similar structured-handoff interventions address the
-      information content, but the workflow context — the
-      interruptions that fragment the handoff — has historically
-      been treated as ambient noise rather than as a design
-      variable. The structural argument the clinical
-      adaptation makes is that the workflow context is a
-      design variable, and that the sterile-cockpit principle
-      provides a worked template for engineering it.#cn()
-    ],
-    [
-      Treloar et al. (2025) describe a
-      structured intervention on a surgical ward. A defined
-      window during the handoff or round is designated as
-      protected; non-essential pages are deferred, side
-      conversations are prohibited, and the staff conducting
-      the handoff are made unavailable for non-emergent
-      interruption during the window. The intervention
-      includes the workflow design (who is responsible for
-      triaging pages, how emergent interruptions are
-      preserved, how the window is signaled and ended) as
-      well as the cultural commitment to honor it. The
-      evaluation measured interruption frequency during the
-      protected window and information-transfer quality
-      against baseline.#cn()
-    ],
-    [
-      The published outcomes report reductions in
-      interruption frequency during the protected window and
-      improvements in information-transfer measures during
-      that window. The structural learning the case carries
-      is the adaptation discipline: an aviation safety-
-      culture rule, with its specific operational scoping
-      (below 10,000 feet, defined permitted communication),
-      was carried into a clinical context with the
-      operational scoping translated (a defined window,
-      defined permitted interruption classes, defined triage
-      responsibility) rather than the principle imported
-      without translation. Pair the case with I-PASS (a
-      structured-handoff intervention; Case 43 when drafted)
-      at the handoff-as-capability layer, and with CRM
-      (Case 70) at the aviation-safety-culture-to-
-      clinical-care translation layer.#cn()
-    ],
-    [
-      The hedges have to survive verbatim. This is a single-
-      unit single-study evidence base; replication across
-      units and settings is the natural next step the
-      authors identify, and the case should not be
-      generalized beyond a strong structural argument until
-      that replication is in the literature. The
-      interruption-reduction effect is direct; the inference
-      that fewer interruptions and better information
-      transfer reduce downstream patient-safety events
-      depends on the established link in the handoff-
-      quality literature rather than on direct patient-
-      outcome measurement in this study. The sustainability
-      of the protected-window discipline beyond the study
-      period is not yet established — the operational cost
-      of maintaining the workflow design over the long term
-      is the open question. The case is teachable at the
-      adaptation-discipline level today; the multi-site
-      multi-cycle evidence base is the next deliverable.
-    ],
-  ),
-  beats: (
-    "Aviation sterile cockpit (FAR 121.542, 1981) — no non-essential communication below 10,000 ft; structural template for clinical adaptation",
-    "Clinical handoff and ward rounds carry analogous interruption-driven information loss; workflow context as design variable",
-    "PMC12515027 intervention: defined protected window with operational scoping (triage responsibility, permitted interruption classes, signaling)",
-    "Reported outcomes: reduced interruption frequency and improved information-transfer measures during the protected window",
-    "Hedges: single-unit single-study evidence; patient-outcome inference via established handoff-quality link, not direct measurement; sustainability not yet established",
-  ),
-  approaches: (
-    during: (
-      [Adapt the principle with its operational scoping translated, not imported. Sterile cockpit is "below 10,000 feet, defined permitted communication"; the clinical analog is a defined window, defined permitted interruption classes, defined triage responsibility — the scoping is the adaptation.],
-      [Design the triage workflow that handles emergent interruptions during the protected window; the rule cannot be "no interruptions" without a path for true emergencies, and the design of that path is part of the deliverable.],
-      [Build the cultural-commitment half alongside the workflow half; the rule depends on the unit's willingness to honor it under workload pressure, and the cultural commitment is what makes the rule operative.],
-    ),
-    after: (
-      [Carry the single-unit single-study hedge into communication; the case is teachable at the adaptation-discipline level today, with the multi-site replication as the explicit next deliverable.],
-      [Distinguish the direct measure (interruption-frequency and information-transfer-quality reductions during the protected window) from the inferred outcome (downstream patient-safety events), and report them at their respective evidence tiers.],
-      [Plan the long-run sustainability measurement: does the protected-window discipline survive six months, twelve months, leadership turnover? The operational-cost half of the intervention is what the multi-cycle evidence base will eventually answer.],
-    ),
-  ),
-  references: (
-    [Treloar, E., Herath, M., Altree, M., Potter, S., Penhall, M., Walsh, D., Kennedy, L., Bruening, M., Edwards, S., Ey, J. D., Bradshaw, E. L., & Maddern, G. J. (2025), "A Simple Solution for a Complex Problem: The 'Sterile Cockpit' to Improve Ward Rounds," _World Journal of Surgery_ 49(10):2769–2776, doi:10.1002/wjs.70074, PMID:40930848, PMCID:PMC12515027 — the cited adaptation study.],
-    [Federal Aviation Administration, 14 CFR § 121.542 (codified 1981) — origin of the aviation sterile-cockpit rule.],
-    [Starmer, A. J. et al. (2014), "Changes in medical errors after implementation of a handoff program," _New England Journal of Medicine_ 371(19):1803–1812 — I-PASS handoff intervention; structural cousin in the structured-information half of handoff capability.],
-    [Broom, M. A., Capek, A. L., Carachi, P., Akeroyd, M. A., & Hilditch, G. (2011), "Critical phase distractions in anaesthesia and the sterile cockpit concept," _Anaesthesia_ 66(3):175–179 — prior anesthesia-domain sterile-cockpit adaptation establishing the cross-domain transfer pattern.],
-  ),
-  quote: [The scoping is the adaptation. Sterile cockpit is "below 10,000 feet"; the clinical analog is a defined window with defined permitted interruption classes.],
-  quote-source: "Editors' synthesis of PMC12515027 and the sterile-cockpit adaptation literature.",
-  le-insight: [
-    The sterile-cockpit ward-rounds case is the worked example
-    of cross-domain adaptation discipline at small scale: an
-    aviation safety-culture rule, carried into clinical care
-    with its operational scoping translated and its cultural
-    half preserved. The single-unit evidence is direct on
-    interruption frequency and information transfer; the
-    patient-outcome inference rests on the established
-    handoff-quality link, and the multi-site replication is the
-    explicit next deliverable.
-  ],
-  lens-approach: [
-    Sterile-cockpit ward rounds is the cross-domain adaptation
-    case (induced 3.2; LENS D3/PT5) — Domain 3 for workflow-
-    context-as-design-variable; Domain 5 for the cultural-
-    commitment half. Pair with I-PASS (Case 43), CRM (Case 70),
-    and Case 116.
-  ],
-  literature-items: (
-    [PMC12515027 — sterile-cockpit ward rounds],
-    [Starmer et al. (2014), I-PASS NEJM],
-    [Broom et al. (2011), Anaesthesia — anesthesia sterile-cockpit precedent],
-  ),
-  reflection-list: (
-    [Identify a high-workload, high-consequence window in your domain that is currently treated as ambient workflow rather than as a protected period. What would the operational scoping of a sterile-window adaptation look like — permitted communication classes, triage responsibility, signaling?],
-    [Specify the cultural-commitment half of the rule. The workflow design is necessary but not sufficient; honor under workload pressure is what makes the rule operative, and that depends on leadership and unit culture more than on policy.],
-    [The case's evidence is single-unit single-study. Design the multi-site replication you would want to see before treating the adaptation as established, and the long-run sustainability measurement you would use to know whether the protected-window discipline survives leadership turnover.],
-  ),
-  courses: ("LEN 4", "LEN 5", "LEN 7"),
-)
-
-#case(
-  number: 76,
-  slug: "inl-lwrs-control-room-modernization",
-  title: "INL / LWRS Control-Room Modernization — Sustainment Research for an Aging Fleet",
-  year: "2010 – present",
-  domains-list: ("nuclear engineering", "control-room human factors", "research and development"),
-  modes-code: "DHK",
-  impact: "The US Department of Energy's Light Water Reactor Sustainability (LWRS) program, executed at Idaho National Laboratory in partnership with utilities, has produced a structured research-and-pilot record for modernizing analog control-room instrumentation in the existing US nuclear fleet — pilot-scale evidence covering hybrid digital/analog operator interfaces, human-factors validation, and qualification pathways for digital instrumentation",
-  kind: "intervention",
-  scale: "big",
-  evidence-source: "program-report",
-  induced-anchor: "7.1",
-  lens-anchor: "D3/PT4",
-  clo-anchor: "CLO-1, CLO-3",
-  summary: [
-    The US commercial nuclear fleet is dominated by reactors
-    originally licensed in the 1970s and 1980s with analog
-    instrumentation and control-room layouts of that vintage.
-    Aging analog components, vendor obsolescence, and the
-    operational case for digital instrumentation make
-    modernization a foreseeable sustainment requirement; the
-    regulatory environment (Nuclear Regulatory Commission
-    Regulatory Guide 1.180, Branch Technical Position 7-19, and
-    related guidance) makes the qualification path for digital
-    instrumentation deliberately stringent. The US Department of
-    Energy's Light Water Reactor Sustainability (LWRS) program,
-    executed at Idaho National Laboratory in partnership with US
-    utilities, runs the federally-funded research-and-pilot work
-    that supports the fleet's modernization decisions. The program
-    has produced a structured record covering hybrid digital/
-    analog operator interfaces, human-factors validation studies
-    in full-scope simulators, and qualification-pathway research
-    for safety-related digital instrumentation. The honest hedge
-    survives clearly: LWRS observations are pilot-scale, the
-    sample of plants that have implemented major modernizations
-    is small, and the operational-fleet evidence at scale is
-    forward-looking. The case is teachable on the structured
-    sustainment-research form — a federally-funded research
-    program operating across decades to support an industry's
-    aging-fleet decisions — and closes a C7 zero-state in the
-    induced framework, paired with Cases 22, 23, 24 as the v2
-    aging-system quartet.
-  ],
-  sections: (
-    [
-      The US commercial nuclear fleet operates roughly 90 reactors
-      originally licensed in the 1970s and 1980s. The control
-      rooms of that era were built around analog instrumentation
-      — strip-chart recorders, hardwired indicators, control-panel
-      meters — designed for the operational envelope and the
-      human-factors assumptions of the period. Aging analog
-      components, vendor obsolescence, and the operational case
-      for digital instrumentation (better diagnostics, lower
-      maintenance burden, integration with plant computer systems)
-      make modernization a foreseeable sustainment requirement
-      across the fleet.#cn()
-    ],
-    [
-      The regulatory environment is deliberately stringent.
-      Nuclear Regulatory Commission guidance — Regulatory Guide
-      1.180 on electromagnetic and radio-frequency compatibility,
-      Branch Technical Position 7-19 on common-cause failure
-      analysis for digital instrumentation and control, and the
-      broader Standard Review Plan Chapter 7 — sets the
-      qualification path for safety-related digital
-      instrumentation. The stringency is intentional: digital
-      systems can introduce failure modes (common-cause software
-      faults, cyber exposure) that analog systems do not, and the
-      regulatory regime is designed to keep those failure modes
-      bounded as plants modernize.#cn()
-    ],
-    [
-      The US Department of Energy's Light Water Reactor
-      Sustainability (LWRS) program is the federally-funded
-      research-and-pilot work that supports the fleet's
-      modernization decisions. Executed at Idaho National
-      Laboratory in partnership with US utilities and EPRI, LWRS
-      operates across a multi-decade horizon with annual research-
-      report deliverables. The control-room modernization research
-      line — including the Human Systems Simulation Laboratory at
-      INL with full-scope plant simulators — covers hybrid
-      digital/analog operator-interface designs, human-factors
-      validation studies, and qualification-pathway research that
-      supports utility-level licensing submissions.#cn()
-    ],
-    [
-      The honest hedge has to be visible. LWRS observations are
-      pilot-scale: full-scope simulator studies, single-plant
-      pilot implementations, and structured human-factors
-      experiments with operator participants from utility partners.
-      The sample of US plants that have implemented major
-      control-room modernizations is small relative to the fleet,
-      and the operational-fleet evidence at scale — fleet-wide
-      reliability, fleet-wide human-error rate, fleet-wide
-      maintenance burden under hybrid digital/analog control rooms
-      — is forward-looking rather than retrospective. The program's
-      own reports characterize the research at this evidence tier,
-      and the case carries the same honesty.#cn()
-    ],
-    [
-      What the case teaches at the LENS framing layer is the
-      structured sustainment-research form — a federally-funded
-      research program operating across decades in partnership
-      with industry and a regulator, producing the
-      research-and-pilot record that supports licensing decisions
-      on aging-fleet modernization. The form is the
-      sustainment-engineering analog of the FAA Aging Aircraft
-      Program (Case 22): a long-horizon institutional discipline
-      that produces the technical record that aging-fleet
-      decisions can rest on. With NextGen/ADS-B (Case 23) and
-      Y2K (Case 24), LWRS completes the v2 aging-system quartet
-      that closes the C7 zero-state in the induced framework. The
-      LWRS instance is where the evidence is most explicitly
-      pilot-scale, and the case carries that as the program's
-      tier acknowledgement rather than as a weakness to smooth.#cn()
-    ],
-  ),
-  beats: (
-    "US commercial nuclear fleet dominated by reactors originally licensed 1970s–80s with analog control-room instrumentation",
-    "NRC regulatory environment (RG 1.180, BTP 7-19, SRP Ch. 7) makes the qualification path for safety-related digital I&C deliberately stringent",
-    "DOE LWRS program executed at INL in partnership with utilities — federally-funded research-and-pilot work across multi-decade horizon",
-    "Research line covers hybrid digital/analog operator interfaces, human-factors validation in full-scope simulators, qualification-pathway research",
-    "Hedge preserved: LWRS observations are pilot-scale; operational-fleet evidence at scale is forward-looking; closes C7 zero-state with Cases 22, 23, 24",
-  ),
-  approaches: (
-    during: (
-      [Pair the research program with full-scope simulator infrastructure (the INL Human Systems Simulation Laboratory) so the human-factors validation work runs in the operational envelope rather than in abstracted laboratory conditions.],
-      [Structure the partnership across federal research (DOE/INL), industry (utilities, EPRI), and regulator (NRC) so the research record is recognized by all three parties — the licensing submissions ultimately rest on that recognition.],
-      [Carry the pilot-scale evidence tier honestly in the program's reports; LWRS characterizes its research at that tier, and downstream practitioners reading the work should read it the same way.],
-    ),
-    after: (
-      [Track fleet-scale outcomes as utility implementations proceed: fleet-wide reliability, human-error rate, maintenance burden under modernized control rooms. The forward-looking evidence will accumulate over the next two decades; the program is the institutional carrier of that accumulation.],
-      [Carry the LWRS case in pair with FAA Aging Aircraft (Case 22) as the sustainment-engineering analog at multi-decade horizon, and with Y2K (Case 24) and NextGen (Case 23) as the broader aging-system quartet.],
-      [Treat the structured-sustainment-research institutional form as the transferable artifact: federal research program plus industry partnership plus regulator engagement, operating across decades to produce the technical record aging-fleet decisions can rest on.],
-    ),
-  ),
-  references: (
-    [Idaho National Laboratory, Light Water Reactor Sustainability (LWRS) program annual reports (2010 – present) — primary research-and-pilot record.],
-    [Nuclear Regulatory Commission, Regulatory Guide 1.180, "Guidelines for Evaluating Electromagnetic and Radio-Frequency Interference in Safety-Related Instrumentation and Control Systems."],
-    [Nuclear Regulatory Commission, Branch Technical Position 7-19, "Guidance for Evaluation of Diversity and Defense-in-Depth in Digital Computer-Based Instrumentation and Control Systems."],
-    [O'Hara, Higgins, Brown, Fink, Persensky, Lewis, Kramer, & Szabo (2008), "Human Factors Considerations with Respect to Emerging Technology in Nuclear Power Plants," NUREG/CR-6947 — foundational human-factors backdrop.],
-    [Electric Power Research Institute, control-room modernization technical reports — industry-side sustainment record.],
-  ),
-  quote: [The institutional form is what transfers: federal research program plus industry partnership plus regulator engagement, operating across decades to produce a technical record aging-fleet decisions can rest on.],
-  quote-source: "Editors' synthesis of the LWRS annual report series.",
-  le-insight: [
-    LWRS is the structured sustainment-research case — federally-
-    funded research at INL in partnership with utilities and the
-    regulator, producing the research-and-pilot record that
-    supports aging-fleet modernization decisions across a multi-
-    decade horizon. The observations are pilot-scale; the
-    operational-fleet evidence at scale is forward-looking. The
-    hedge is part of the case.
-  ],
-  lens-approach: [
-    LWRS control-room modernization is the structured
-    sustainment-research case (induced 7.1; LENS D3/PT4) —
-    Domain 1 for the long-horizon partnership; Domain 5 for the
-    federal-research + industry + regulator triple structure;
-    Domain 3 for the hybrid digital/analog research line.
-    Closes C7 with Cases 22, 23, 24.
-  ],
-  literature-items: (
-    [LWRS annual reports (INL, 2010 – present)],
-    [O'Hara et al. (2008), NUREG/CR-6947],
-    [NRC BTP 7-19 and RG 1.180],
-  ),
-  reflection-list: (
-    [Identify an aging fleet of long-lived assets in your domain whose modernization decisions rest on research that does not yet exist at fleet scale. What is the analog of a federally-funded research program — institutional partner, industry partner, regulator partner — that could operate across the horizon the decisions actually need?],
-    [Specify the full-scope simulator (or equivalent in-envelope test infrastructure) the program would need so its human-factors validation work runs in operational conditions rather than abstracted laboratory ones. What is the cost of building it, and what does its absence mean for the evidence the research produces?],
-    [LWRS evidence is pilot-scale and the program reports it as such. Identify a program in your domain whose evidence tier should be acknowledged in its reporting but is not. What institutional discipline keeps the evidence-tier honesty visible — to the program, to industry partners, and to the regulator?],
-  ),
-  courses: ("LEN 1", "LEN 7", "LEN 8"),
-)
-
-#case(
-  number: 77,
-  slug: "hybrid-human-ai-tutoring-augmentation",
-  title: "Hybrid Human-AI Tutoring — Augmentation, Not Delegation",
-  year: "2024",
-  domains-list: ("tutoring", "hybrid human-AI systems", "K-12 education"),
-  modes-code: "TKD",
-  impact: "Three quasi-experimental studies of hybrid human-AI tutoring deployments reported improvements in student learning relative to comparison conditions; the AI is positioned as augmentation, not delegation; the human tutor retains authorization to override and re-direct",
-  kind: "intervention",
-  scale: "small",
-  evidence-source: "peer-reviewed",
-  induced-anchor: "6.4",
-  lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-2, CLO-3",
-  summary: [
-    Thomas et al.'s LAK 2024 best paper, "Improving Student
-    Learning with Hybrid Human-AI Tutoring: A Three-Study
-    Quasi-Experimental Investigation," reports three quasi-
-    experimental studies of hybrid deployments where AI
-    augmentation is added to human tutoring rather than used to
-    replace it. The headline finding is that learning outcomes
-    improved relative to comparison conditions in each of the
-    three studies. The contribution the case carries for the
-    LENS framework is the design positioning: the AI is
-    augmentation, the human tutor retains the authorization to
-    override and re-direct, and the measured outcome is student
-    learning rather than AI-system fidelity. The case is the
-    small-tier intervention-side counterpart to Case 74 (TREWS,
-    the clinician-AI teaming case that worked) translated into
-    education. Pair also with Cases 81 and 39 (CIRCUIT human-
-    AI workforce) and Case 93 (Epic Sepsis, the delegation
-    case that did not work). Open questions: longitudinal
-    persistence; transfer to lower-resource tutoring contexts
-    where human-tutor availability is the binding constraint.
-  ],
-  sections: (
-    [
-      The deployment record for AI in tutoring has been pulled
-      in two directions. The fully-automated tutoring track —
-      from Cognitive Tutor through LLM-based tutoring (Case 135)
-      — has tested whether AI alone can replace or substantially
-      reduce the human-tutor role. The augmentation track has
-      tested whether AI can extend the reach and effectiveness
-      of human tutors, with the AI positioned as a tool the
-      tutor uses rather than as a substitute for the tutor.
-      Thomas et al.'s LAK 2024 paper is the strongest published
-      evaluation of the augmentation track to date, and it
-      reports three quasi-experimental studies that converge on
-      a positive finding.#cn()
-    ],
-    [
-      The three studies test variants of the augmentation
-      pattern in K-12 tutoring deployments. The AI supports the
-      human tutor with information surfacing, problem
-      recommendation, and student-progress visibility; the human
-      tutor retains the conversational and pedagogical lead.
-      Outcome measures are student learning relative to
-      comparison conditions — control conditions that vary by
-      study but consistently anchor against either tutor-only
-      or AI-only baselines. Across the three studies, the
-      hybrid condition produced measurable improvements in
-      student learning. The replication structure across the
-      three studies — same authorship team, varying institutional
-      context, converging direction of effect — is the
-      methodological backbone of the case.#cn()
-    ],
-    [
-      The design positioning the case carries for the LENS
-      framework is the augmentation-not-delegation frame. The
-      AI is positioned as augmentation, the human tutor retains
-      the authorization to override and re-direct, and the
-      measured outcome is student learning, not AI-system
-      fidelity. This is the design pattern that worked in
-      clinical-decision-support at Case 74 (TREWS) and that
-      did not work at Case 93 (Epic Sepsis) — where TREWS
-      preserved clinician authorization and built the explanation
-      structure that supported it, the Epic Sepsis deployment
-      pattern collapsed clinician judgment into alert
-      compliance. Hybrid human-AI tutoring is the educational
-      analog of the TREWS pattern, and the LAK 2024 paper is
-      the evidence base that grounds the analog.#cn()
-    ],
-    [
-      The case anchors with the CIRCUIT pair (Cases 81 and
-      39) at the workforce-augmentation layer. CIRCUIT
-      proofreading positions human capability as the recovery
-      mechanism for automation failure at petabyte scale; the
-      CIRCUIT workforce model builds the capability in the
-      first place; hybrid human-AI tutoring positions AI as
-      augmentation of an already-capable human tutor. The three
-      cases together teach the augmentation-and-correction
-      pattern across three deployment substrates — connectomics
-      proofreading, neuroscience-workforce development, and
-      tutoring — and they ground the curriculum's machine-
-      teaming and delegation-with-revocation anchors at each
-      substrate.#cn()
-    ],
-    [
-      The open questions the case carries are the ones the
-      authors name. Longitudinal effect persistence is not yet
-      in the evidence base — the three quasi-experimental
-      studies report end-of-intervention outcomes, not
-      multi-year follow-through. Whether the design transfers
-      to lower-resource tutoring contexts, where human-tutor
-      availability is the binding constraint and the
-      augmentation-of-a-tutor frame may not apply, is the
-      open generalization question. The quasi-experimental
-      design is honest about its causal-inference limits —
-      randomization is not at the level a cluster RCT would
-      provide — and the case carries the qualification. Future
-      validation ongoing on persistence, transfer, and the
-      tutor-scarce-context generalization.
-    ],
-  ),
-  beats: (
-    "Thomas et al. LAK 2024 best paper: three quasi-experimental studies of hybrid human-AI tutoring",
-    "Headline: learning outcomes improved relative to comparison conditions in each of the three studies",
-    "Design positioning: AI as augmentation, human tutor retains override authorization, measured outcome is student learning",
-    "Educational analog of Case 74 (TREWS clinician-AI teaming); contrast with Case 93 (Epic Sepsis delegation collapse)",
-    "Open: longitudinal persistence; transfer to lower-resource tutoring where human-tutor availability is the binding constraint",
-  ),
-  approaches: (
-    during: (
-      [Position the AI as augmentation explicitly in the design documentation, not implicitly in the deployment pattern; the augmentation-vs-delegation distinction is the load-bearing design choice and should be the named design choice.],
-      [Preserve human-tutor authorization to override and re-direct as a system-design requirement, not as a discretionary affordance; the comparison with Case 93 (Epic Sepsis) is that override authorization collapses when the system pattern does not actively preserve it.],
-      [Measure the student-learning outcome, not the AI-system-fidelity outcome; the case's pedagogical framing depends on the outcome instrument being the educationally relevant one, not the AI-development-internal one.],
-    ),
-    after: (
-      [Commission longitudinal follow-through that extends the evidence base past the end-of-intervention horizon; the open persistence question is testable against the same deployment with additional data infrastructure.],
-      [Test the augmentation design in tutor-scarce contexts; the open generalization question is whether the pattern transfers to settings where the binding constraint is human-tutor availability rather than human-tutor effectiveness.],
-      [Pair the case with Case 74 (TREWS) in the curriculum so the augmentation-and-override pattern is taught across clinical and educational substrates; the two cases together ground the delegation-with-revocation CLO with two converging instances.],
-    ),
-  ),
-  references: (
-    [Thomas, D. R. et al. (2024), "Improving Student Learning with Hybrid Human-AI Tutoring: A Three-Study Quasi-Experimental Investigation," _LAK '24_, doi:10.1145/3636555.3636896.],
-    [Case 74 (TREWS) reference set — Henry et al. (2022), _Nature Medicine_ — clinician-AI teaming analog.],
-    [Case 93 (Epic Sepsis) reference set — Wong et al. (2021), _JAMA Internal Medicine_ — delegation-collapse analog.],
-    [Koedinger, K. R. et al. — Cognitive Tutor literature as the fully-automated track the augmentation track contrasts with.],
-  ),
-  quote: [The AI is positioned as augmentation, not delegation. The human tutor retains the authorization to override and re-direct. The measured outcome is student learning, not AI-system fidelity.],
-  quote-source: "Editors' synthesis of Thomas et al. (2024).",
-  le-insight: [
-    Hybrid human-AI tutoring is the educational analog of the
-    TREWS clinician-AI teaming pattern. AI is positioned as
-    augmentation; human tutor retains override authorization;
-    student-learning outcome is the measure. Three quasi-
-    experimental studies converge on positive learning effects.
-    The case pairs with Cases 74 / 101 / 118 / 119 in the
-    human-AI teaming thread and grounds the delegation-with-
-    revocation CLO at the educational deployment.
-  ],
-  lens-approach: [
-    Hybrid human-AI tutoring is the augmentation-not-delegation
-    case in education (induced 6.4; LENS D3/PT6). LENS uses it
-    in Domain 3 (Human-System Collaboration) for the
-    augmentation pattern and the override-authorization frame,
-    and in Domain 2 (Iterative Development) for the three-study
-    converging-design replication. Pair with Cases 74 (TREWS)
-    and 102 (Epic Sepsis) at the clinical analog, and with
-    Cases 81 and 39 (CIRCUIT) at the workforce-augmentation
-    analog.
-  ],
-  literature-items: (
-    [Thomas et al. (2024), _LAK_ — hybrid human-AI tutoring three-study],
-    [Henry et al. (2022), _Nature Medicine_ — TREWS analog],
-    [Wong et al. (2021), _JAMA Internal Medicine_ — Epic Sepsis contrast],
-  ),
-  reflection-list: (
-    [Identify an AI deployment in your domain where the design choice between augmentation and delegation has been implicit rather than explicit. What would change in the system design if the choice were named explicitly, and what comparison condition would you build to test the difference?],
-    [Specify the override-authorization preservation mechanism in your domain's analog deployment. Is the human operator's authority to override and re-direct a system-design requirement, a discretionary affordance, or an implicit assumption? Which of the three is honest about what the system currently supports?],
-  ),
-  courses: ("LEN 2", "LEN 5", "LEN 7"),
-)
-
-#case(
-  number: 78,
-  slug: "tesla-autopilot-recurring-fatalities",
-  title: "Tesla Autopilot — Recurring Fatalities",
-  year: "2016 – present",
-  domains-list: ("autonomous",),
-  modes-code: "TNGH",
-  impact: "Dozens of fatalities documented in NHTSA's Standing General Order data; first U.S. cases of Level-2 automation contributing to fatal injury",
-  diagram: dgm.dgm-stat(
-    "L2",
-    "driver retained · attention not engineered",
-    micro: "the system works well most of the time — and then it does not",
-    caption: "Tesla Autopilot — Level-2 monitoring as a sustainable role",
-  ),
-  kind: "frontier",
-  summary: [
-    Tesla's Autopilot and Full Self-Driving Beta are Level-2
-    driver-assistance systems: the human driver remains legally and
-    operationally responsible at all times. NHTSA's Standing General Order
-    data has documented dozens of fatal crashes involving Autopilot since
-    the 2016 death of Joshua Brown in Florida, and the pattern is
-    consistent — the system performs capably for long stretches, the
-    driver's monitoring attention attenuates, and an edge case (a
-    stationary object, a faded lane line, a crossing vehicle) produces a
-    collision the inattentive driver fails to catch. NHTSA's investigation
-    has found Tesla's driver-engagement design inadequate to sustain the
-    attention safe operation requires. At consumer scale, Autopilot is the
-    live test of whether passive monitoring of good-enough automation is a
-    role a human can actually perform.
-  ],
-  sections: (
-    // -- The Shift --
-    [
-      Partial driving automation has moved from research vehicles into
-      millions of consumer cars. Level-2 systems like Tesla's Autopilot can
-      steer, accelerate, and brake within their operational design domain,
-      but they require the human driver to monitor continuously and take
-      over instantly — a fundamentally new and demanding role assigned to
-      ordinary, untrained consumers. Where a research program could screen,
-      brief, and instrument its safety drivers, a consumer product reaches
-      everyone who buys the car, with no curriculum and no qualification
-      gate standing between purchase and the monitoring task itself.#cn()
-    ],
-    // -- What Is Emerging --
-    [
-      Since the first fatal Autopilot crash — Joshua Brown, Florida, 2016 —
-      NHTSA's Standing General Order data has documented dozens of fatal
-      crashes involving the system. The pattern is consistent: long periods
-      of capable operation, attenuating driver attention, and then an edge
-      case — a stationary fire truck, a faded lane marking, a perpendicular
-      crossing — that the disengaged driver fails to catch in time. The very
-      reliability that makes the system attractive is what erodes the
-      vigilance it depends on, so each uneventful mile quietly raises the
-      odds that the next intervention will come too late.#cn()
-    ],
-    // -- The Capability Question --
-    [
-      The proximate cause in each case is the driver, who was legally
-      responsible. But the deeper question is whether sustained vigilant
-      monitoring of an automation that works well most of the time is a
-      role a human can perform at all. Naming the feature "Autopilot" and
-      designing weak engagement checks shaped the very inattention the
-      system then blamed on the operator — so the architecture both invited
-      the disengagement and reserved the liability for the person least
-      positioned to resist it.#cn()
-    ],
-    // -- Early Evidence --
-    [
-      NHTSA's open investigation (ODI EA22-002) has identified Tesla's
-      driver-engagement design as inadequate to maintain the attention safe
-      operation requires, and the recurring fatality pattern across NTSB
-      reports suggests passive monitoring is not a sustainable role as
-      currently engineered. Decades of automation-complacency research
-      point the same way — the finding is not that any one driver failed but
-      that the role asks a human to stay alert to a system precisely
-      because it almost never needs them, a demand the evidence keeps
-      showing is not reliably met.#cn()
-    ],
-    // -- Open Problems --
-    [
-      Tesla Autopilot is the consumer-scale version of the Uber ATG problem
-      (Case 62): a passive-monitoring role deployed without the capability
-      infrastructure — training, engagement design, attention measurement —
-      to make it performable. The open problem is what driver-engagement
-      architecture, if any, could make Level-2 monitoring sustainable for
-      an average driver over years of use, and whether the answer is a
-      better attention check or a concession that the role itself has to be
-      redesigned out of the human's hands.#cn()
-    ],
-  ),
-  beats: (
-    "Level-2 driving automation reaches untrained consumers with no qualification gate for monitoring",
-    "Fatal crashes accumulate as reliable operation erodes the vigilance the system silently requires",
-    "Liability rests with drivers whose inattention the engagement design itself helped to produce",
-    "NHTSA finds driver-engagement inadequate; automation-complacency evidence points the same direction",
-    "Whether any engagement architecture can make consumer Level-2 monitoring sustainable stays open",
-  ),
-  approaches: (
-    during: (
-      [Engineer driver-engagement monitoring to the demonstrated limits of human vigilance — verify attention against operational evidence before fielding, not against an assumption that warnings suffice.],
-      [Name and present the feature so its capability boundary is unmistakable to an untrained consumer, rather than implying autonomy the system does not deliver.],
-      [Constrain operation to the design domain the system can actually handle, so the human is not silently relied on as the backstop for edge cases.],
-    ),
-    after: (
-      [Monitor the standing-order crash data for the disengagement pattern and treat a recurring signature as evidence the role, not the driver, needs redesign.],
-      [Track attention and takeover performance across years of ownership, since vigilance erodes with the very reliability that accumulates over time.],
-      [Hold the engagement design accountable to an independent regulator with authority to require changes when in-use evidence shows it is inadequate.],
-    ),
-  ),
-  references: (
-    [NTSB, Highway Accident Report HAR-17/02 (Williston, FL, 2016) — the quoted disengagement finding.],
-    [NTSB, Highway Accident Report HAR-20/01 (Mountain View, CA, 2018) — Autopilot crash analysis.],
-    [NHTSA Standing General Order 2021-01 reports — documented Autopilot fatal crashes.],
-    [NHTSA Office of Defects Investigation EA22-002 (2022) — driver-engagement adequacy.],
-    [Parasuraman, R. & Manzey, D. (2010) — automation complacency and monitoring.],
-  ),
-  quote: [The operational design ... permitted his prolonged disengagement from the driving task.],
-  quote-source: "NTSB Highway Accident Report HAR-17/02 (Williston, Florida crash), 2017",
-  le-insight: [
-    Tesla Autopilot at consumer scale is the largest live test of
-    Level-2 monitoring as a sustainable role. The early evidence is
-    that it is not. The case is the strongest currently available
-    test of whether consumer-side training and engagement design
-    can produce sustained attention to automation. The recurring
-    fatality pattern suggests the answer.
-  ],
-  lens-approach: [
-    LENS uses Tesla Autopilot in LEN 2 as the live consumer-scale
-    test of monitoring as a sustainable role and in LEN 7 for the
-    governance dynamics of a Level-2 system marketed at the boundary
-    of higher autonomy. Studio projects examine the driver-engagement
-    design that would make the role performable.
-  ],
-  literature-items: (
-    [NHTSA SGO documentation],
-    [Parasuraman & Manzey (2010), automation complacency],
-    [Casner & Hutchins (2019), automation transparency],
-  ),
-  reflection-list: (
-    [Identify a passive-monitoring role in your domain. What evidence would tell you whether attention is sustainable over years of operation?],
-    [Design the driver-engagement architecture that would make Level-2 monitoring sustainable for an average consumer.],
-    [Autopilot assigns full legal responsibility to the operator while engineering the conditions that erode their attention. Where in your domain does liability rest with the person an automated system has made least able to intervene — and how would you realign the two?],
-  ),
-  courses: ("LEN 7", "LEN 2", "LEN 6",),
-  scale: "big",
-  induced-anchor: "3.2",
-  lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
   evidence-source: "investigation",
-)
-
-#case(
-  number: 79,
-  slug: "chatgpt-in-healthcare-hallucination",
-  title: "ChatGPT in Healthcare — Hallucination Cases",
-  year: "2023 – present",
-  domains-list: ("healthcare", "tech"),
-  modes-code: "HD",
-  impact: "Documented cases of clinicians using LLMs that produce hallucinated citations, fabricated dosages, and fictitious clinical guidelines",
-  diagram: dgm.dgm-compare(
-    "tone",
-    "identical",
-    "content",
-    "accurate / not",
-    framing: "the interface does not distinguish; the clinician must",
-    caption: "LLMs in clinical use — fluency without warranty",
-  ),
-  kind: "frontier",
-  induced-anchor: "5.2",
-  lens-anchor: "D3/PT6",
+  induced-anchor: "3.1",
+  lens-anchor: "D4/PT5",
   clo-anchor: "CLO-4, CLO-3",
   summary: [
-    Since ChatGPT's public release in late 2022, the clinical and
-    peer-reviewed literatures have documented a recurring pattern:
-    clinicians use large language models to draft patient education,
-    summaries, or treatment guidance, and the output contains fabricated
-    citations, hallucinated drug dosages, or fictitious clinical
-    guidelines. The failures range from cosmetic — invented references in
-    academic submissions — to potentially clinical, such as unsafe dosing
-    or fabricated contraindications. The capability gap is at the
-    human-verification interface: the model presents hallucinated content
-    with the same fluent confidence as accurate content, and early reports
-    suggest clinicians accept LLM output less critically than a colleague's.
-    The case is the live, foundational case for LLM integration into
-    clinical workflow — the discipline must specify what verification looks
-    like at the moment of use, while deployment is already happening.
+    Controlled flight into terrain (CFIT) — a serviceable aircraft
+    under the pilot's control flown unintentionally into the
+    ground, water, or an obstacle — was for decades one of the
+    largest categories of commercial-aviation fatalities. The
+    1979 Air New Zealand Mt Erebus crash (257 dead) and the 1995
+    American Airlines 965 Cali crash (159 dead) are canonical
+    examples. The first-generation Ground Proximity Warning
+    System (GPWS) developed by C. Donald Bateman at
+    Sundstrand / Honeywell in the 1970s used radio altimeter and
+    rate-of-descent inputs to warn of imminent terrain
+    contact; it reduced CFIT but produced late warnings and was
+    blind to terrain ahead of the aircraft. Enhanced GPWS
+    (EGPWS), introduced commercially in 1996, added a digital
+    terrain database and aircraft position to the input set,
+    permitting forward-looking terrain-avoidance alerting. The
+    FAA mandated EGPWS-class equipment (formally TAWS) on
+    US-registered turbine aircraft beginning March 2001, with
+    full compliance required by 2005; ICAO and most national
+    regulators followed. The published outcome record is that
+    CFIT in EGPWS-equipped commercial fleets has become rare —
+    NTSB, FAA, and Flight Safety Foundation analyses consistently
+    report a sharp decline. The hedge that survives: residual
+    CFIT events still occur, typically involving disabled or
+    inhibited equipment, deviation from procedure, or terrain
+    outside the database, and the case has to honor the system-
+    in-operation discipline rather than the system-as-installed
+    claim.
   ],
   sections: (
-    // -- The Shift --
     [
-      Large language models became broadly available with ChatGPT's
-      release in late 2022, and clinicians began using them almost
-      immediately — to draft patient-education materials, summarize
-      records, and look up guidance. For the first time, a tool that
-      produces fluent, authoritative-sounding medical text is in routine,
-      informal use at the point of care — adopted ahead of any guideline,
-      credential, or institutional sign-off, so the practice spread faster
-      than any structure to govern it could be put in place.#cn()
+      Through the 1960s and 70s, controlled flight into terrain
+      was one of the highest-fatality categories in commercial
+      aviation. The pattern was structurally consistent:
+      serviceable aircraft, qualified crew, often in IMC
+      (instrument meteorological conditions) or at night, flown
+      into rising terrain the crew had not visualized correctly.
+      The Air New Zealand Mt Erebus crash (1979, 257 dead) and
+      the American Airlines 965 Cali crash (1995, 159 dead) are
+      the canonical examples — competent crews who lost
+      situational awareness about their position relative to
+      terrain in conditions that prevented visual recovery.#cn()
     ],
-    // -- What Is Emerging --
     [
-      A recurring failure pattern has been documented across the clinical
-      and peer-reviewed literatures: LLM output containing fabricated
-      citations, hallucinated drug dosages, or fictitious clinical
-      guidelines. The failures range from cosmetic — invented references in
-      academic submissions — to potentially clinical, such as unsafe
-      medication doses or invented contraindications — a span that matters
-      because the same tool, used the same way, can produce a harmless
-      error and a dangerous one with no change in how confident it sounds.#cn()
+      The first engineered intervention was the Ground Proximity
+      Warning System (GPWS), developed in the early 1970s by
+      C. Donald Bateman at Sundstrand (later Honeywell). GPWS
+      used radio altimeter readings and rate-of-descent to
+      generate "pull up" and similar warnings when the aircraft
+      was descending toward terrain directly below it. GPWS
+      reduced CFIT meaningfully through the 1970s and 80s, but
+      had two structural limits: it produced late warnings
+      (the aircraft was already close to terrain when the alert
+      fired), and it was blind to terrain ahead of the aircraft
+      — the Cali accident occurred in a GPWS-equipped aircraft
+      because the rising terrain was ahead of the flight path,
+      not below.#cn()
     ],
-    // -- The Capability Question --
     [
-      The capability gap is at the human-verification interface. The model
-      presents hallucinated content with exactly the same fluent confidence
-      as accurate content; the interface does not distinguish the two. The
-      question is whether clinicians can — and will — develop the routine
-      verification practice that the tool's fluency actively discourages,
-      since the very smoothness that makes the output easy to accept is what
-      removes the friction a reader would normally use as a warning.#cn()
+      Enhanced GPWS (EGPWS), introduced by Honeywell in 1996,
+      addressed both limits by adding a digital terrain
+      database and aircraft position (GPS / IRS) to the input
+      set. The system can now compute a forward-looking terrain
+      surface relative to the aircraft's projected flight path
+      and provide alerts well before terrain contact is
+      imminent. The FAA codified the capability in the
+      Terrain Awareness and Warning System (TAWS) regulation,
+      requiring TAWS-class equipment on US-registered turbine
+      aircraft with six or more passenger seats beginning
+      March 29, 2001, with full equipage by 2005. ICAO and
+      most national regulators followed with parallel
+      mandates.#cn()
     ],
-    // -- Early Evidence --
     [
-      Early case reports suggest that clinicians who would carefully check
-      a colleague's recommendation accept LLM output less critically,
-      precisely because it reads so authoritatively. JAMA editorials and
-      reviews through 2023–2024 have repeatedly flagged the absence of an
-      established verification practice as the central risk of clinical LLM
-      use — the concern is not that the model errs but that the practice for
-      catching its errors at the moment of use has not yet been defined or
-      taught.#cn()
+      The published outcome record across NTSB accident
+      statistics, FAA reporting, and Flight Safety Foundation
+      analyses is that CFIT in EGPWS-equipped commercial
+      fleets has fallen sharply. The category that once
+      dominated airliner-fatality statistics is now an
+      uncommon-event category in equipped fleets. The
+      structural claim the case makes is the cue/alert-design
+      one: a failure mode in which the operator's perception
+      of terrain was the limiting variable was converted into
+      a monitored, recoverable mode by surfacing the forward
+      terrain picture as an actionable alert. Pair with
+      anesthesia monitoring (Case 27) at the cue/alert-as-
+      capability layer, and with TCAS (Case 121) at the
+      automated-advisory-system layer.#cn()
     ],
-    // -- Open Problems --
     [
-      This is the live frontier case for human-AI teaming when the AI is
-      fluent across both accurate and hallucinated content. The capability
-      that does not yet exist is a routine clinical verification practice —
-      an analog to the bibliographic discipline of academic writing —
-      specified at the moment of use rather than after harm. The discipline
-      is being asked to define what good looks like while deployment is
-      already underway, so the verification standard has to be built around
-      a tool already in millions of hands rather than gated in front of it.#cn()
+      The hedge has to survive into the case. CFIT events
+      still occur, typically involving one or more of: EGPWS
+      disabled or inhibited (crew action, MEL release,
+      maintenance), deviation from procedure (e.g., descent
+      below minimum sector altitude under pressure), or
+      terrain or obstacles not represented in the database
+      (rapidly changing wind-turbine and structure
+      environments are a known frontier). The system-in-
+      operation has to be flying and the crew has to act on
+      the alert; a rule-of-thumb in the safety community is
+      that EGPWS is most useful when its warnings are taken
+      seriously enough that they are rare in operation. The
+      case teaches the cue/alert intervention at its most
+      durable, with the qualification that the capability
+      depends on the standard being honored in operation, not
+      on the equipment being installed.#cn()
     ],
   ),
   beats: (
-    "Clinicians adopted ChatGPT immediately at point of care without guidelines or institutional gate",
-    "Fabricated citations, hallucinated dosages, and fictitious guidelines recur across the documented literature",
-    "Whether clinicians can develop verification routines the model's fluent confidence actively discourages",
-    "Early reports show LLM output accepted less critically than colleague recommendations would be",
-    "Routine clinical verification practice analogous to bibliographic discipline remains to be defined",
+    "CFIT historically among the largest commercial-aviation fatality categories; Erebus 1979 (257), Cali 1995 (159) canonical",
+    "GPWS (Bateman, 1970s) reduced CFIT but produced late warnings and was blind to terrain ahead of the aircraft",
+    "EGPWS (Honeywell, 1996) added digital terrain database + position; forward-looking alerts hours before terrain contact",
+    "FAA TAWS mandate March 2001 (full by 2005); ICAO and most national regulators follow",
+    "CFIT in EGPWS-equipped fleets falls sharply; residual events involve disabled equipment, procedure deviation, or terrain outside database",
   ),
   approaches: (
     during: (
-      [Specify a routine verification practice at the moment of use — what a clinician must independently confirm before acting on LLM output — before the tool enters clinical workflow.],
-      [Design the interface to mark provenance and uncertainty, so fluency alone cannot stand in for warranty of accuracy.],
-      [Restrict the sanctioned uses to those where verification is feasible and cheap, keeping unverifiable high-stakes outputs out of patient-facing work.],
+      [Identify the operator-perception variable that is the limiting variable in a failure mode (here: the crew's awareness of terrain ahead of the aircraft) and engineer the system that surfaces that variable as an actionable alert with enough lead time to recover.],
+      [Pair the alert design with a regulatory mandate that makes the equipment non-waiverable across the fleet, so adoption is fleet-level capability rather than per-operator choice. The 1996-to-2001 gap between commercial availability and mandate is the political-process cost.],
+      [Build the cue's lead time around the time the operator needs to act, not the time the equipment can produce the alert; a too-late alert is the GPWS limitation EGPWS was specifically built to address.],
     ),
     after: (
-      [Monitor the documented failure pattern — fabricated citations, dosages, guidelines — across in-use cases to keep the risk profile current as models change.],
-      [Track whether the verification practice is actually being performed, since the tool's fluency discourages exactly the checking it requires.],
-      [Govern adoption against emerging guidance so the standard for verification keeps pace with a tool already in widespread informal use.],
+      [Carry the system-in-operation hedge into communication: the capability depends on EGPWS being operational, not inhibited, and on the crew acting on the alert. Inhibition discipline is part of the deliverable.],
+      [Maintain the terrain database as a continuously updated artifact; the equipment as installed is only as good as the database it queries, and rapidly changing obstacle environments (wind turbines, structures) are a known frontier.],
+      [Treat residual CFIT events as evidence about the operational discipline, not as evidence against the intervention; the system that has reduced a fatality category to rare uncommon events is doing the work the case claims.],
     ),
   ),
   references: (
-    [JAMA editorials on LLM integration into clinical practice (2023–2024) — the hallucination/verification problem (synthesized).],
-    [Sallam (2023), "ChatGPT Utility in Healthcare Education, Research, and Practice" — documented benefits and risks.],
-    [Case reports of LLM hallucinated citations and dosages in clinical and academic use (2023–2024).],
-    [WHO ethical guidance on AI for health (2024) — verification and oversight requirements.],
-    [Wachter & Brynjolfsson (2023), _JAMA_ — generative AI in health care.],
+    [Bateman, C. D. (1999), "The Introduction of Enhanced Ground Proximity Warning Systems (EGPWS) into Civil Aviation Operations Around the World," in _Proceedings of the 11th Annual European Aviation Safety Seminar_, Flight Safety Foundation, pp. 259–274 — developer history.],
+    [Federal Aviation Administration (2000), 14 CFR §§ 91.223, 121.354, 135.154 — Terrain Awareness and Warning System (TAWS) equipage requirement.],
+    [Flight Safety Foundation (1998 – 2000), CFIT / ALAR Task Force reports — operational and outcome analyses motivating mandate.],
+    [NTSB (1996), Aircraft Accident Report AAR-96-05, American Airlines 965, Cali, Colombia, December 20 1995.],
+    [Royal Commission to Inquire into the Crash on Mount Erebus, Antarctica of a DC10 Aircraft Operated by Air New Zealand Limited (1981), final report (Mahon report).],
   ),
-  quote: [LLMs produce hallucinations indistinguishable in tone from accurate information, and clinicians have not yet developed the practice of routine verification.],
-  quote-source: "Editors' synthesis of JAMA editorials on LLM clinical use (2023–2024)",
+  quote: [The capability depends on the standard being honored in operation, not on the equipment being installed.],
+  quote-source: "Editors' synthesis of FAA TAWS rule history and FSF ALAR analyses.",
   le-insight: [
-    LLM use in clinical practice is the live frontier case for
-    human-AI teaming when the AI's output is fluent across both
-    accurate and hallucinated content. The capability that does not
-    yet exist is the routine verification practice — a clinical
-    analog to the bibliographic discipline of academic writing.
+    EGPWS / TAWS is the canonical cue/alert intervention at
+    fleet scale. The forward-looking terrain alert converted a
+    failure mode in which the crew's terrain perception was the
+    limiting variable into a monitored, recoverable mode. CFIT
+    in equipped fleets has become rare; residual events
+    typically involve inhibited equipment or procedure
+    deviation, and the hedge is the case.
   ],
   lens-approach: [
-    The learning engineer's deliverable here is a specific artifact, not
-    a posture: a verification-at-point-of-use guardrail that counters
-    cognitive offloading. Concretely, a confirm-before-act gate wrapped
-    around the LLM output — every dosage, contraindication, or guideline
-    citation the clinician would rely on must clear a forced
-    source-attribution step that surfaces the underlying reference (or
-    its absence) and requires an explicit confirmation against it before
-    the output can be acted on. The gate is designed so the model's
-    fluency cannot satisfy it: a smooth, confident answer with no
-    attributable source fails the check and is held back from
-    patient-facing use. LENS builds and critiques exactly this guardrail
-    in LEN 2 (the human-AI verification interface), stresses it in LEN 7
-    (governing the gate as deployment policy), and in LEN 10 (capstone)
-    asks the student to design the confirm-before-act artifact for a
-    clinical workflow already in use.
+    EGPWS / TAWS is the aviation cue/alert intervention case
+    (induced 3.1; LENS D4/PT5) — Domain 4 for cue-design-as-
+    deliverable; Domain 3 for the operator-cue boundary. Pair
+    with TCAS (Case 121) and Case 27 (anesthesia monitoring).
   ],
   literature-items: (
-    [JAMA editorials on LLM clinical use],
-    [Sallam (2023)],
-    [Wachter & Brynjolfsson (2023), JAMA on generative AI in health care],
+    [Bateman (1999), FSF 11th European Aviation Safety Seminar],
+    [14 CFR §§ 91.223, 121.354, 135.154 — TAWS rule],
+    [NTSB AAR-96-05 — American Airlines 965 (Cali)],
   ),
   reflection-list: (
-    [Identify a workflow in your domain currently being augmented by LLMs. What is the verification practice — and does it exist at the moment of use, or only after?],
-    [Design the verification deliverable that should accompany every clinician's adoption of an LLM tool for patient-facing work.],
-    [The same fluency that makes LLM output easy to accept is what removes the cues a reader normally uses to doubt it. What interface signal would restore that friction at the moment of use without making the tool unusable?],
+    [Identify a failure mode in your domain where operator perception of an external variable is the limiting factor. What is the analog of the digital terrain database — the engineered representation of the variable — and what lead time would the cue need to be actionable?],
+    [Specify the regulatory or institutional mandate path you would expect: EGPWS reached the market in 1996, was mandated in 2001, and was fully equipaged by 2005. Five years from commercial availability to full equipage is a useful planning datum for a fleet-scale capability mandate.],
+    [The system-in-operation hedge is binding. What inhibition discipline would your program require so that the engineered recovery layer is operating when the failure mode appears, and how would you instrument that the discipline is being honored?],
   ),
-  courses: ("LEN 10", "LEN 7", "LEN 2"),
-  scale: "big",
+  courses: ("LEN 3", "LEN 5", "LEN 7"),
 )
 
+// ---- Case 121 — tcas-coordinated-collision-avoidance ----
 #case(
-  number: 80,
-  slug: "ai-augmented-coding-tools",
-  title: "AI-Augmented Coding Tools",
-  year: "2021 – present",
-  domains-list: ("tech",),
-  modes-code: "TH",
-  impact: "Tens of millions of developers using GitHub Copilot, Cursor, and peers; productivity gains documented; security and correctness implications still being characterized",
-  diagram: dgm.dgm-compare(
-    "short term",
-    "more output",
-    "long term",
-    "?",
-    framing: "more capable, or more dependent?",
-    caption: "AI-augmented coding — the capability question is open",
-  ),
-  kind: "frontier",
-  induced-anchor: "5.2",
-  lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
-  summary: [
-    AI-augmented coding tools — GitHub Copilot, Cursor, Codeium, and peers
-    — represent the largest real-time experiment in human-AI collaboration
-    in this book, with tens of millions of developers using them daily.
-    Published studies (Peng et al. 2023) document real short-term
-    productivity gains; other work (Pearce et al. 2022) finds a substantial
-    share of AI-generated completions in security-sensitive settings contain
-    vulnerabilities, though a controlled study (Sandoval et al. 2023) found
-    AI assistance did not significantly raise the rate of critical security
-    bugs. The capability
-    question is open: are developers becoming more capable, or more
-    dependent? The short-term gains are real; the long-term consequences —
-    especially for those who learn the craft with these tools always
-    available — are not yet known. The discipline is being asked to define
-    good before the longitudinal evidence is in.
-  ],
-  sections: (
-    // -- The Shift --
-    [
-      AI coding assistants moved from novelty to infrastructure in a few
-      years. GitHub Copilot, Cursor, Codeium, and similar tools now
-      suggest, complete, and generate code for tens of millions of
-      developers daily — the largest real-time experiment in human-AI
-      collaboration in professional knowledge work to date, conducted not
-      in a study design but in the live practice of an entire profession,
-      with no control group and no agreed measure of what it is doing to
-      the underlying craft.#cn()
-    ],
-    // -- What Is Emerging --
-    [
-      Two findings are accumulating in parallel. Controlled studies (Peng
-      et al. 2023) document real short-term productivity gains. At the same
-      time, the security picture is unsettled: Pearce et al. (2022) found a
-      substantial fraction of Copilot completions in security-relevant
-      scenarios contained vulnerabilities, while a controlled study by
-      Sandoval et al. (2023) found AI assistance did not significantly
-      increase the rate of critical security bugs. The two results do not
-      cancel so much as mark how unsettled the picture is — output clearly
-      rises, but the quality and safety of that output resist a single
-      verdict.#cn()
-    ],
-    // -- The Capability Question --
-    [
-      The capability question is open and consequential: are developers
-      using these tools becoming more capable, or more dependent?
-      Short-term output rises, but whether the underlying skill grows or
-      erodes — especially for those who learn the craft with the tools
-      always present — is precisely what the productivity metrics cannot
-      tell us, because a measure of how much code ships says nothing about
-      whether the person shipping it could still produce or judge it
-      without the assistant.#cn()
-    ],
-    // -- Early Evidence --
-    [
-      The longitudinal evidence is not yet sufficient to answer. Dell'Acqua
-      et al. (2023) found a "jagged frontier" in professional LLM use:
-      performance improves on tasks inside the tool's competence and
-      degrades on tasks just outside it, where users over-trust the output.
-      The short-term gains are real; the long-term capability consequences
-      remain uncharacterized — and the jagged frontier is hard to navigate
-      precisely because its edge is invisible from inside the task, so the
-      user cannot tell when they have crossed from where the tool helps to
-      where it misleads.#cn()
-    ],
-    // -- Open Problems --
-    [
-      AI-augmented coding is the live frontier for human-AI teaming in
-      professional knowledge work, and the discipline LENS represents is
-      being asked to specify what good looks like before the long-term
-      evidence is in. The open problem is the longitudinal study that could
-      distinguish capability growth from capability erosion — and a
-      training practice that keeps the human's skill on the growing side,
-      built and adopted while a generation is already learning the craft
-      with the tools always within reach.#cn()
-    ],
-  ),
-  beats: (
-    "AI coding assistants became infrastructure for tens of millions of developers without controls",
-    "Productivity gains documented alongside unsettled security findings on AI-generated code quality",
-    "Whether developers using these tools are becoming more capable or more dependent",
-    "Jagged frontier shows performance degrading just outside competence, where users over-trust output",
-    "Longitudinal study and training practice that keeps human skill growing remain unbuilt",
-  ),
-  approaches: (
-    during: (
-      [Define what competence the human must retain independently of the tool, and design the workflow so that skill is exercised rather than quietly handed off.],
-      [Engineer the assistant to surface the jagged-frontier edge — flagging where a task sits outside its reliable competence — so users do not over-trust output just beyond it.],
-      [Keep verification of generated code, especially in security-relevant settings, a required step rather than an optional one, given the unsettled quality picture.],
-    ),
-    after: (
-      [Run the longitudinal study that productivity metrics cannot substitute for, measuring whether underlying skill is growing or eroding over years of use.],
-      [Monitor for over-reliance at the competence boundary, where the evidence shows performance degrading as users trust the tool past its reliable range.],
-      [Track outcomes for practitioners who learned the craft with the tools always present, the cohort whose long-term capability is most uncertain.],
-    ),
-  ),
-  references: (
-    [Peng et al. (2023), "The Impact of AI on Developer Productivity" — short-term productivity gains.],
-    [Pearce et al. (2022), "Asleep at the Keyboard? Assessing the Security of GitHub Copilot's Code Contributions."],
-    [Sandoval et al. (2023), "Lost at C," USENIX Security — AI assistance did not significantly increase critical security-bug rates.],
-    [Dell'Acqua et al. (2023), "Navigating the Jagged Technological Frontier" (HBS / BCG) — professional LLM use.],
-    [L. Bainbridge, "Ironies of Automation," _Automatica_ 19(6) (1983) — the classic deskilling and over-reliance problem, applied to AI-augmented work.],
-  ),
-  quote: [AI assistance changes what developers can do; it may also change what they need to know.],
-  quote-source: "Editors' synthesis",
-  le-insight: [
-    AI-augmented coding is the live foundational case for human-AI
-    teaming in professional knowledge work. The short-term gains are
-    real. The long-term capability question — does the tool make the
-    operator more capable, or more dependent — is the question the
-    discipline must learn to ask and answer.
-  ],
-  lens-approach: [
-    The teaching point is a measurement-design problem, and it is the
-    load-bearing one: productivity metrics count output and so cannot
-    distinguish a developer whose skill is growing from one whose skill
-    is quietly eroding under augmentation. The learning engineer's task
-    is to build the instrument that separates those two. The design is a
-    longitudinal, tool-removed probe — periodically measure each
-    developer on representative tasks with the assistant withheld,
-    scoring unaided correctness, debugging, and the ability to judge
-    generated code, and track that aided-minus-unaided gap over time. A
-    widening gap (rising aided output, flat-or-falling unaided
-    competence) reads as skill-atrophy; a narrowing one reads as
-    skill-growth. LENS uses this case in LEN 2 (human-AI teaming), in LEN
-    8 to build the capability-development instrument itself, and in LEN
-    10 (capstone) to have the student design the atrophy-versus-growth
-    measurement for an augmented practice in their own domain.
-  ],
-  literature-items: (
-    [Peng et al. (2023)],
-    [Pearce et al. (2022)],
-    [Dell'Acqua et al. (2023), "Navigating the Jagged Technological Frontier" (HBS / BCG study on professional use of LLMs)],
-  ),
-  reflection-list: (
-    [In your domain, identify a class of practitioners whose work is currently being augmented by AI tools. What evidence would tell you whether their capability is growing or eroding?],
-    [Design the longitudinal study that would distinguish capability growth from capability erosion in an AI-augmented professional practice.],
-    [The "jagged frontier" is hard to navigate because its edge is invisible from inside the task. Design a signal or practice that would tell a practitioner in your domain when they have crossed from where the tool helps to where it misleads.],
-  ),
-  courses: ("LEN 10", "LEN 2", "LEN 8"),
+  number: 121,
+  slug: "tcas-coordinated-collision-avoidance",
+  title: "TCAS — Coordinated Collision Avoidance and the Überlingen Lesson",
+  year: "1981 – 2008 (TCAS II Version 7.1)",
+  domains-list: ("aviation", "automation", "human factors"),
+  modes-code: "HKG",
+  impact: "TCAS II — the Traffic Alert and Collision Avoidance System — provides cockpit traffic display and coordinated Resolution Advisories (RAs) between aircraft on conflicting trajectories; mandated on US air-carrier and on most international turbine aircraft, TCAS converted mid-air collision in commercial aviation from a recurring fatality category to a rare event; the 2002 Überlingen mid-air (71 dead) exposed a specific coordination failure mode and drove the 2008 release of TCAS II Version 7.1 with the 'level off, level off' reversal logic",
+  kind: "intervention",
   scale: "big",
-)
-
-#case(
-  number: 81,
-  slug: "circuit-microns-the-human-correction",
-  title: "CIRCUIT / MICrONS — The Human Correction Layer at Petabyte Scale",
-  year: "2017 – present",
-  domains-list: ("neuroscience/connectomics", "human-AI teaming", "workforce training"),
-  modes-code: "HKN",
-  impact: "Under IARPA's MICrONS program, automated electron-microscopy segmentation produces brain maps too large and too error-prone to deploy without human correction; CIRCUIT trains undergraduate cohorts as the proofreading workforce that is the recovery mechanism for automation failure at petabyte scale",
-  kind: "frontier",
-  scale: "small",
-  evidence-source: "program-report",
-  evidence-flag: "internal-pm",
-  induced-anchor: "3.4",
-  lens-anchor: "D3/PT6",
+  evidence-source: "investigation",
+  induced-anchor: "3.1",
+  lens-anchor: "D4/PT5",
   clo-anchor: "CLO-4, CLO-3",
-  coi: "An editor of this volume has research adjacency to connectomics programs discussed in this case and the case originates at the editors' home institution (Johns Hopkins / APL). The connectomics method and infrastructure are anchored to peer-reviewed work; the program training-outcome evidence is institutional documentation rather than independent peer-reviewed evaluation, and that gap is rendered as the evidence-tier flag above.",
   summary: [
-    Under IARPA's Machine Intelligence from Cortical Networks (MICrONS)
-    program, automated electron-microscopy segmentation produces
-    petabyte-scale brain maps that are too large and too error-prone
-    to be deployed without human verification. APL's CIRCUIT program
-    trains cohorts of undergraduates to proofread and correct these
-    maps; APL's BossDB stores and serves the petabyte-scale data. The
-    learning-engineering content the case carries is the
-    human-in-the-loop correction layer: where automation fails at the
-    petabyte boundary, a trained human capability is the recovery
-    mechanism that makes the data scientifically usable. The honest
-    evidentiary state — preserved as the evidence-tier flag rendered
-    under the title — is that the connectomics method and
-    infrastructure are documented in the peer-reviewed literature,
-    but CIRCUIT's program training outcomes (did the cohorts reliably
-    produce proofreading capability, at what error rates, with what
-    retention, with what transfer to other tasks) sit in institutional
-    documentation rather than peer-reviewed program evaluation. The
-    case is included as a frontier — the structural pattern is the
-    increasingly central question of how to design a human correction
-    layer for generative and automated systems at scale, and future
-    validation will continue as the program-evaluation literature
-    builds out. The COI render under the title is binding: home
-    institution, research adjacency, evidence-tier flag, all visible
-    at the point of reading.
+    TCAS — the Traffic Alert and Collision Avoidance System,
+    standardized in RTCA DO-185 and successors — is the
+    cockpit automation that monitors transponder returns from
+    nearby aircraft, computes potential conflicts, and issues
+    Traffic Advisories and Resolution Advisories (RAs) to the
+    crew. Operational TCAS II was mandated on US air-carrier
+    aircraft by FAA rule in the early 1990s and on most
+    international turbine aircraft by ICAO. RAs are coordinated:
+    when two TCAS-equipped aircraft are in conflict, one is
+    instructed to climb and the other to descend by negotiated
+    inversion of the data-link. The intervention converted
+    mid-air collision in commercial aviation from a recurring
+    fatality category to a rare event. The case's load-bearing
+    edge case is the 2002 Überlingen mid-air collision (71 dead),
+    in which one crew followed the TCAS RA and the other
+    followed an ATC instruction in the opposite direction. The
+    BFU investigation identified the human–TCAS–ATC
+    coordination failure mode and drove the 2008 release of
+    TCAS II Version 7.1, which added the "level off, level off"
+    reversal logic and clarified the precedence of TCAS RAs over
+    ATC instructions. The hedge survives into the case: TCAS is
+    among the strongest aviation automation interventions in the
+    outcome record, and the Überlingen failure mode and its V7.1
+    correction are part of the case rather than smoothed away.
   ],
   sections: (
     [
-      Connectomics — the reconstruction of detailed wiring diagrams
-      of brain tissue from electron-microscopy imaging — is the
-      modern incarnation of a problem with the same structural shape
-      as the early radiology-AI cases (Case 130): automation produces
-      a primary output at scale that no human team could produce
-      manually, and the output is too important and too error-prone
-      to be deployed without verification. The MICrONS program,
-      funded by IARPA, set out to produce reconstructions of cortical
-      microcircuits at the volume scale required to make
-      computational neuroscience comparisons possible.#cn()
+      Mid-air collision in commercial aviation has been a
+      recurring fatality category since the 1950s. The 1956
+      Grand Canyon mid-air (128 dead) prompted the modern
+      US air-traffic-control system, but ATC alone cannot
+      always prevent collision when traffic densities or
+      coordination errors exceed the controller's reach. The
+      FAA and RTCA developed the Traffic Alert and Collision
+      Avoidance System (TCAS) through the 1980s as a cockpit
+      collision-avoidance automation independent of ATC. TCAS
+      II — the operational version with Resolution Advisories
+      — was mandated on US air-carrier aircraft beginning in
+      the early 1990s, and on most international turbine
+      aircraft by ICAO over the following decade.#cn()
     ],
     [
-      The automation produces petabytes of data. Automated
-      segmentation labels each voxel with the neuron it belongs to,
-      but at petabyte scale the per-voxel error rate, however low,
-      compounds into a reconstruction that contains many incorrect
-      neuron boundaries — exactly the boundaries the downstream
-      science depends on. The structural form is familiar: the model
-      is good enough to make the project tractable, and not good
-      enough to deploy without a verification layer. The verification
-      layer in this case is human: trained proofreaders work through
-      the segmentation and correct it, neuron by neuron, with tools
-      designed for the task.#cn()
+      The TCAS II architecture is what the case rests on. Each
+      equipped aircraft interrogates the transponders of nearby
+      aircraft and computes a closest-point-of-approach
+      projection from range, altitude, and rate data. If the
+      projection enters the conflict envelope, TCAS issues a
+      Traffic Advisory (TA) — a cue to the crew to acquire
+      the other aircraft visually if possible. If the conflict
+      persists, TCAS issues a Resolution Advisory (RA): a
+      specific vertical-rate command ("Climb, climb" or
+      "Descend, descend"). When two TCAS-equipped aircraft
+      are in conflict, the two RAs are coordinated via the
+      Mode S data link so the aircraft are instructed to
+      diverge — one climbing, one descending — rather than
+      both maneuvering in the same direction.#cn()
     ],
     [
-      The CIRCUIT program at APL trained cohorts of undergraduates
-      to be that proofreading workforce. The program is documented
-      across institutional news, program description, and the
-      MICrONS program literature; CIRCUIT trainees and APL
-      infrastructure (BossDB) together produced the human and
-      computational substrate of the verification layer. The
-      learning-engineering content is the human capability as the
-      recovery mechanism for automation failure at the petabyte
-      boundary: where the model fails, the trained human is the
-      design decision that makes the system's output usable.#cn()
+      The deployed outcome record across the 1990s and 2000s
+      was strong. Mid-air collision in TCAS-equipped fleets
+      became rare. The case nevertheless turns on Überlingen.
+      On July 1, 2002, a Russian Tu-154 and a DHL Boeing 757
+      approached on conflicting trajectories at FL360 over
+      southern Germany. Both aircraft received coordinated
+      TCAS RAs — the 757 to descend, the Tu-154 to climb. The
+      Tu-154 crew received the climb RA and, almost
+      simultaneously, an ATC instruction to descend from a
+      Skyguide controller working alone on degraded console
+      configuration. The Tu-154 crew followed the ATC
+      instruction; the 757 followed the TCAS RA; both
+      aircraft descended into each other. 71 people died,
+      including 52 children on a school trip.#cn()
     ],
     [
-      The honest evidentiary state is what the evidence-tier flag
-      under the title encodes. The connectomics method, the
-      automated-segmentation literature, and the BossDB
-      infrastructure are documented in peer-reviewed connectomics
-      publications. CIRCUIT's program *training outcomes* — did
-      the cohorts reliably produce proofreading capability at the
-      error rates and retention required, did the trainees
-      transfer to other tasks, what is the program's measured
-      effect on the downstream science — are documented in
-      institutional news and program description rather than in
-      peer-reviewed program evaluation. The case is teachable on
-      the structural pattern; the operating outcomes are at the
-      institutional-program-management tier and should be read at
-      that tier. The COI under the title — research adjacency,
-      home institution — makes the institutional-tier evidence
-      claim auditable.#cn()
+      The BFU investigation identified a specific failure mode
+      at the human–automation–controller boundary: TCAS RA
+      precedence over ATC instructions was insufficiently
+      clear in the crew procedures, the data-link coordination
+      between the two TCAS units had performed as designed but
+      could not enforce the result on the crew, and the ATC
+      single-controller / degraded-console context was a
+      systemic failure. The aviation response was operational
+      and technical: ICAO and national regulators clarified
+      that TCAS RAs take precedence over conflicting ATC
+      instructions; ATC procedures were tightened around
+      coordination of conflict-resolution between controllers
+      and TCAS; and RTCA / Eurocontrol developed TCAS II
+      Version 7.1 (released 2008), which added the
+      "level off, level off" reversal logic for the specific
+      scenario where one aircraft does not follow its RA, and
+      clarified RA wording and behavior at the boundary.#cn()
     ],
     [
-      The frontier note the case carries is the most forward-looking
-      idea from the pass-4 sweep. The human correction layer for
-      generative and automated systems at scale is going to be a
-      defining capability across an expanding number of domains —
-      automated transcription, AI-generated code, model-extracted
-      structured data, document segmentation, scientific imaging
-      reconstruction. CIRCUIT is one instance of the pattern in
-      neuroscience; the structural question — how to design,
-      staff, train, and govern a human correction layer for the
-      gap between what models produce and what is operationally
-      usable — recurs and is not well-named in the existing
-      curriculum. The frontier flag on this case is the case-grounded
-      basis for proposing a sub-competency in this area, pairing
-      with the broader v2 AI-delegation typology and the Domain 5
-      *Delegation with revocation* CLO.#cn()
+      The hedge survives into the case. TCAS is among the
+      strongest aviation automation interventions in the
+      outcome record; the Überlingen failure mode is not a
+      refutation of the system but a documented coordination
+      limit that drove the V7.1 correction. The case teaches
+      the coordinated-automation form at its most durable,
+      with the discipline that the human–automation–human-
+      operator triangle (crew, TCAS, ATC) has to be designed
+      coherently. A single-controller / degraded-console
+      situation and an unclear precedence rule converted a
+      working automation into a fatal outcome; both were
+      addressed in the post-Überlingen response, and both
+      remain part of the case rather than smoothed away.#cn()
     ],
   ),
   beats: (
-    "Automated EM segmentation at petabyte scale produces brain maps too large and too error-prone to deploy without verification",
-    "CIRCUIT trains undergraduate cohorts as the proofreading workforce; APL's BossDB infrastructure stores and serves the data",
-    "Human capability as the recovery mechanism for automation failure at the petabyte boundary — the design decision that makes the output usable",
-    "Evidence-tier flag: connectomics method is peer-reviewed; CIRCUIT training-outcome evidence is institutional/program documentation",
-    "Frontier sub-competency candidate: design of the human correction layer for generative/automated systems at scale",
+    "TCAS II mandated on US air-carrier (early 1990s) and on most international turbine aircraft (ICAO); RAs coordinated via Mode S data link",
+    "Outcome: mid-air collision in TCAS-equipped fleets becomes rare through the 1990s and 2000s",
+    "Überlingen mid-air July 1 2002 (71 dead, including 52 children) — Tu-154 followed ATC, B757 followed TCAS RA; both descended",
+    "BFU finding: RA precedence over ATC insufficiently clear; ATC single-controller / degraded-console context a systemic failure",
+    "TCAS II Version 7.1 (2008): 'level off, level off' reversal logic; clarified RA precedence over conflicting ATC instructions",
   ),
   approaches: (
     during: (
-      [Treat the human correction layer as a designed capability deliverable, not an emergent workforce: define the error rate to achieve, the verification protocol, the trainee qualification, and the tooling.],
-      [Identify in advance which errors the automation will make at scale and design the correction tooling around those error classes — automation failure is structured, and the correction layer should be too.],
-      [Carry the evidence-tier honesty: peer-reviewed sourcing for the method and infrastructure, institutional-program documentation for the program training outcomes, with the gap visible in the case rather than smoothed.],
+      [Design the coordinated-automation logic for the case where one of the coordinated agents does not comply — the Überlingen failure mode — not just for the case where both comply. The V7.1 reversal logic is the worked example of that design discipline.],
+      [Specify precedence at the human–automation boundary unambiguously and in advance: TCAS RAs take precedence over conflicting ATC instructions. Leaving precedence to crew judgment under time pressure is the design choice that produced Überlingen.],
+      [Treat the ATC context (single-controller, degraded console) as part of the system the automation operates in, not as a precondition the automation can assume away. Systemic failures at the boundary determine the boundary behavior.],
     ),
     after: (
-      [Commission peer-reviewed program-evaluation work on the training-outcome side so the institutional record can converge toward independent evidence over time, while the program is operating.],
-      [Track the human correction layer across automation upgrades: as the model improves, what changes about the kind of correction the trainees do, the error classes, the qualification requirements?],
-      [Carry the frontier note into the curriculum conversation: the design of the human correction layer for generative and automated systems at scale is a sub-competency the existing framework does not yet name, and CIRCUIT is one of several emerging instances.],
+      [Carry the Überlingen failure mode into the case rather than smoothing it away. The intervention is not less effective for having a documented coordination edge case; it is more credible because the edge case is named and addressed.],
+      [Track the post-V7.1 outcome record as evidence about the correction, not just about the original intervention; the lesson is the iterative-design discipline that the human–automation triangle requires after a failure mode is exposed.],
+      [Use the case as the canonical pair to EGPWS (Case 120): two cockpit automations, two outcome categories closed, one with a coordination edge case that drove a version revision and one without.],
     ),
   ),
   references: (
-    [MICrONS program literature (IARPA) — connectomics method and automated segmentation evidence base.],
-    [APL BossDB documentation — petabyte-scale connectomics data infrastructure.],
-    [CIRCUIT program documentation (JHU Hub, 2017 – present) — institutional/program description; the training-outcome evidence is at this tier and the evidence-tier flag is binding.],
-    [Cervantes et al. (2023), ASEE Annual Conference — the paired peer-reviewed CIRCUIT case (Case 39).],
-    [Wachter & Brynjolfsson (2023), _JAMA_ — generative AI verification framing, applicable across domains.],
+    [RTCA (2008), DO-185B "Minimum Operational Performance Standards for Traffic Alert and Collision Avoidance System II (TCAS II)" — Version 7.1 with reversal logic.],
+    [Bundesstelle für Flugunfalluntersuchung (BFU) (2004), AX001-1-2/02 — Investigation Report on the mid-air collision on 1 July 2002 near Überlingen.],
+    [Eurocontrol (2008 – 2011), ACAS II Bulletin and Programme for the Harmonised Implementation of Satellite Navigation — V7.1 mandate timing in Europe.],
+    [Federal Aviation Administration, 14 CFR § 121.356 — TCAS II equipage requirement.],
+    [NTSB / FAA TCAS historical safety studies (1990 – 2010) — outcome record context.],
   ),
-  quote: [The recovery mechanism for automation failure is a designed human capability, not an emergent workforce.],
-  quote-source: "Editors' synthesis of the CIRCUIT / MICrONS program record.",
+  quote: [The intervention is not less effective for having a documented coordination edge case; it is more credible because the edge case is named and addressed.],
+  quote-source: "Editors' synthesis of the BFU Überlingen report and the V7.1 development record.",
   le-insight: [
-    CIRCUIT / MICrONS is the frontier instance of designing the
-    human correction layer for automated systems at scale. The
-    connectomics method is peer-reviewed; the program training
-    outcomes are institutional documentation, and the gap is
-    rendered as the evidence-tier flag under the title. The
-    forward-looking question the case names — how to design the
-    human correction layer for generative and automated systems
-    at scale — recurs across domains and is not well-named in
-    the existing curriculum.
+    TCAS is among the strongest aviation automation
+    interventions in the outcome record; the Überlingen
+    coordination failure mode is part of the case rather than
+    smoothed away. The human–automation–ATC triangle has to be
+    designed coherently; V7.1's reversal logic and the
+    clarified precedence rule are the iterative-design response
+    to the documented edge case.
   ],
   lens-approach: [
-    CIRCUIT proofreading is the human-correction-layer
-    frontier case (induced 3.4; LENS D3/PT6) — Domain 3 for
-    *Delegation with revocation*; Domain 4 for the evidence-
-    tier split. Pair with Case 39 and Cases 74, 93, 155,
-    67. COI binds.
+    TCAS is the coordinated-cockpit-automation case
+    (induced 3.1; LENS D4/PT5) — Domain 4 for the
+    Überlingen-driven V7.1 iteration; Domain 3 for the
+    crew–TCAS–ATC precedence rule. Pair with EGPWS (Case 120)
+    and Case 27.
   ],
   literature-items: (
-    [MICrONS program literature — connectomics method base],
-    [BossDB infrastructure documentation],
-    [CIRCUIT program documentation — institutional tier],
+    [RTCA DO-185B (2008), TCAS II Version 7.1],
+    [BFU AX001-1-2/02 (2004), Überlingen report],
+    [Eurocontrol ACAS II Bulletin],
   ),
   reflection-list: (
-    [Identify a domain in your work where automation produces a primary output at a scale that exceeds manual review. What is the human correction layer's design — error classes targeted, verification protocol, trainee qualification, tooling — and which of these decisions are designed vs. emergent?],
-    [Specify the peer-reviewed vs. institutional-evidence split for a human-correction-layer program you would propose. The connectomics method can be cited from the literature; the program training outcomes will not be. What evidence tier is honest for each layer?],
-    [The case's frontier note — designing the human correction layer for generative/automated systems at scale — is a sub-competency the existing curriculum does not yet name. What instance from your domain (automated transcription, AI code, structured-data extraction, document segmentation) would be a paired case to anchor this sub-competency against?],
+    [Identify a coordinated-automation system in your domain where two agents must comply for the resolution to work. What is the analog of the V7.1 reversal logic — the design for the case where one agent does not comply?],
+    [Specify the precedence rule at the human–automation boundary in your system. Überlingen turned on an ambiguous precedence rule; the post-2002 clarification is the worked example of why precedence has to be unambiguous in advance.],
+    [The systemic context (Skyguide single-controller / degraded console) was part of the failure. What contextual preconditions does your automation assume that, if they fail, would convert a working automation into a failure mode?],
   ),
-  courses: ("LEN 2", "LEN 5", "LEN 7"),
+  courses: ("LEN 3", "LEN 5", "LEN 7"),
+)
+
+// ---- Case 122 — singapore-airlines-safety-transformation ----
+#case(
+  number: 122,
+  slug: "singapore-airlines-safety-transformation",
+  title: "Singapore Airlines Safety Transformation",
+  year: "1980s – present",
+  domains-list: ("aviation",),
+  modes-code: "TN",
+  impact: "Sustained safety record over decades despite challenging operating conditions; among the most safety-invested carriers in commercial aviation",
+  diagram: dgm.dgm-flow(
+    ("training", "simulator", "fleet age", "reporting", "transparency"),
+    framing: "sustained capability investment ahead of regulatory minimums",
+    caption: "Singapore Airlines — capability investment as competitive differentiator",
+  ),
+  kind: "intervention",
+  summary: [
+    Singapore Airlines has invested in safety capability across decades in
+    a way that sets it apart from carriers operating under comparable
+    conditions — early adoption of CRM, heavy simulator investment, a
+    young-fleet policy, and a strong reporting culture, sustained even
+    through rapid growth. The 2000 crash of Flight SQ006, which attempted
+    takeoff from a closed, partly-constructed runway at Taipei during a
+    typhoon and killed 83, prompted a sustained institutional
+    self-examination — operational changes, training updates, and public
+    transparency about what had happened — that became a model in the
+    literature on post-accident learning. The airline is the operational
+    successor to Korean Air (Case 118): an Asian carrier that engineered its
+    safety capability deliberately and sustained the investment as a
+    competitive differentiator, not only in response to crisis.
+  ],
+  sections: (
+    // -- Background --
+    [
+      Commercial aviation runs on thin margins, and safety investment —
+      simulators, training hours, fleet renewal — is a cost that
+      competitive pressure constantly pushes downward. The question for any
+      carrier is whether to treat capability as a floor set by regulation
+      or as a deliberate, sustained investment ahead of the minimum. The
+      pressure is structural rather than occasional — every budget cycle
+      invites trimming the margin between regulatory minimum and actual
+      capability, so sustaining the investment requires deciding the
+      question deliberately rather than by default.#cn()
+    ],
+    // -- The Intervention --
+    [
+      Singapore Airlines chose sustained investment. From the 1980s it was
+      an early adopter of Crew Resource Management and CRM-style culture
+      work tuned to its operating context, and it committed to heavy
+      simulator investment, a deliberately young fleet, and a strong
+      internal reporting culture — maintaining these even during periods of
+      rapid expansion. Holding the investment through rapid growth is the
+      hard test — expansion is precisely when the temptation to let
+      capability lag the fleet is strongest, and maintaining it then is what
+      separates a sustained commitment from a fair-weather one.#cn()
+    ],
+    // -- How It Worked --
+    [
+      The carrier treated safety capability as a competitive differentiator
+      rather than a regulatory burden, pairing technical investment —
+      training systems, modern aircraft — with a culture of transparency
+      and reporting. Investing ahead of regulatory minimums made the
+      capability a managed system parameter, not a residual of cost-cutting
+      decisions made elsewhere. Framing safety as a differentiator rather
+      than a burden is what made the investment defensible against cost
+      pressure — it tied capability to the brand and the premium the airline
+      charged, giving the spend a commercial rationale, not just a safety
+      one.#cn()
+    ],
+    // -- The Evidence --
+    [
+      The 2000 crash of Flight SQ006 — an attempted takeoff from a closed,
+      partly-constructed runway at Taipei during Typhoon Xangsane, killing
+      83 — tested the institution. Its response, documented in the Taiwan
+      investigation, became a reference case in post-accident institutional
+      learning: operational changes, training updates, and public
+      transparency about what had happened and why, rather than
+      defensiveness. The test of a safety culture is how it behaves after
+      its own accident, and choosing transparency over defensiveness is what
+      turned SQ006 from a refutation of the airline's reputation into
+      evidence the reporting culture extended to its own failures.#cn()
+    ],
+    // -- What Transferred --
+    [
+      Singapore Airlines is the case for sustained capability investment
+      under competitive pressure, and the operational successor to Korean
+      Air (Case 118): where Korean Air is a transformation forced by crisis,
+      Singapore Airlines is deliberate investment sustained without one.
+      Together they show two routes — crisis-driven and voluntary — to the
+      same engineered safety capability. The voluntary route is the harder
+      one to hold, because it has no catastrophe to point to as
+      justification, which is why framing the investment as a competitive
+      differentiator matters: it supplies the rationale that a crisis would
+      otherwise provide.#cn()
+    ],
+  ),
+  beats: (
+    "Thin aviation margins push capability investment downward; each budget cycle invites trimming the safety margin",
+    "From the 1980s Singapore Airlines invested in CRM, simulators, young fleet, and reporting culture",
+    "Framing safety as a competitive differentiator tied to brand gave the spend a commercial rationale",
+    "SQ006's response chose transparency over defensiveness, becoming a reference case in post-accident learning",
+    "Two routes to engineered safety emerge; voluntary investment is harder without crisis as justification",
+  ),
+  references: (
+    [Aviation Safety Council (Taiwan), _SQ006 Accident Investigation Final Report_ (2002) — the accident and the airline's response.],
+    [Singapore Airlines safety reports (multiple years) — training, fleet, and reporting-culture investment.],
+    [IATA Operational Safety Audit (IOSA) documentation — investment ahead of regulatory minimums (paraphrased).],
+    [Helmreich, Wilhelm, Klinect & Merritt (2001) — national culture and CRM adaptation.],
+    [Weick & Sutcliffe (2007), _Managing the Unexpected_ — sustained high-reliability investment.],
+  ),
+  quote: [Singapore Airlines has consistently invested in safety capability ahead of regulatory minimums.],
+  quote-source: "Editors' synthesis on Singapore Airlines' sustained safety investment",
+  le-insight: [
+    Singapore Airlines is the case for sustained capability investment
+    in a competitive industry. The carrier has chosen safety
+    capability investment as a primary differentiator. The result
+    over decades is a safety record that distinguishes it from peers
+    operating under comparable conditions.
+  ],
+  lens-approach: [
+    LENS uses Singapore Airlines in LEN 8 for sustained institutional
+    capability investment under competitive pressure. The case pairs
+    with Korean Air (Case 118) as Asian-carrier capability stories of
+    different shapes — one transformation under crisis, the other
+    sustained investment without crisis.
+  ],
+  literature-items: (
+    [Taiwan ASC, SQ006 Report (2002)],
+    [Helmreich, Wilhelm, Klinect & Merritt (2001), national culture and CRM],
+    [Singapore Airlines corporate-safety reports],
+  ),
+  reflection-list: (
+    [Identify an institution in your domain that has chosen capability investment as a primary differentiator. What pattern has it sustained?],
+    [Design the institutional architecture that makes sustained capability investment defensible against competitive cost pressure.],
+    [Singapore Airlines sustained its investment voluntarily, without a crisis to point to, by framing capability as a competitive differentiator. Identify a safety or capability investment in your domain that lacks a catastrophe to justify it, and construct the commercial rationale that would defend it against the next budget cut.],
+  ),
+  approaches: (
+    during: (
+      [Decide deliberately to invest ahead of regulatory minimums — simulators, a young fleet, training hours — rather than letting capability settle at the floor by default under cost pressure.],
+      [Pair the technical investment with a transparency and reporting culture, so capability is a managed system parameter rather than a residual of cost-cutting decisions elsewhere.],
+      [Frame safety capability as a competitive differentiator tied to the brand, giving the spend a commercial rationale that can survive scrutiny, not just a safety one.],
+    ),
+    after: (
+      [Hold the investment through periods of rapid growth — the moment the temptation to let capability lag the fleet is strongest — since maintaining it then is what makes the commitment sustained rather than fair-weather.],
+      [Respond to the institution's own accidents with transparency over defensiveness, demonstrating that the reporting culture extends to its own failures and converting a setback into evidence the culture is real.],
+      [Anchor the investment to the brand and premium so it survives leadership and budget cycles, supplying the durable justification a voluntary commitment lacks without a crisis to point to.],
+    ),
+  ),
+  courses: ("LEN 8",),
+  scale: "big",
+  induced-anchor: "1.4",
+  lens-anchor: "D5/PT4",
+  clo-anchor: "CLO-5",
+)
+
+// ---- Case 123 — fsf-cfit-and-alar-task-forces-industry ----
+#case(
+  number: 123,
+  slug: "fsf-cfit-and-alar-task-forces-industry",
+  title: "FSF CFIT and ALAR Task Forces — Industry-Level Institution Building After a Spike",
+  year: "1992 – 2000s",
+  domains-list: ("aviation safety", "industry coordination", "training"),
+  modes-code: "GKN",
+  impact: "After Controlled Flight Into Terrain emerged as the leading cause of commercial-jet fatalities through the late 1980s, the Flight Safety Foundation convened industry-wide task forces that produced the CFIT Checklist, the ALAR Tool Kit, and the institutional momentum behind Terrain Awareness and Warning System (TAWS) mandates; CFIT and ALAR accident rates fell sharply over the subsequent decade",
+  kind: "intervention",
+  scale: "big",
+  evidence-source: "investigation",
+  induced-anchor: "6.1",
+  lens-anchor: "D5/PT4",
+  clo-anchor: "CLO-5",
+  summary: [
+    Through the late 1980s and into the early 1990s, Controlled
+    Flight Into Terrain — a serviceable aircraft flown under control
+    into the ground, water, or an obstacle — was the leading cause
+    of commercial-jet fatalities worldwide. The Flight Safety
+    Foundation (FSF), an independent industry body, convened the
+    CFIT Task Force in 1992 and, in parallel with the broader ICAO
+    response, produced the CFIT Checklist — a structured tool for
+    operators to assess their own exposure. The Approach-and-Landing
+    Accident Reduction (ALAR) Task Force followed in 1996, producing
+    the ALAR Tool Kit (released 1998) covering the approach phase
+    where roughly half of fatal accidents then occurred. The
+    institutional momentum from those task forces sat behind the
+    eventual Terrain Awareness and Warning System (TAWS) mandates
+    in the US (2002) and ICAO (2007). CFIT and approach-and-landing
+    accident rates fell sharply through the subsequent decade. The
+    case teaches industry-level institution building after a
+    catastrophe-class spike: the deliverable is the cross-operator
+    tool, the diagnostic structure, and the coordinated path to
+    mandate. The hedge survives — the rate decline is multifactorial
+    (TAWS hardware, training, procedural change, fleet turnover) —
+    and the institutional form is what the case is teachable on.
+  ],
+  sections: (
+    [
+      Through the late 1980s and into the early 1990s, Controlled
+      Flight Into Terrain dominated commercial-jet fatality
+      statistics. A serviceable aircraft, flown under control, was
+      finding terrain or water — the crew's mental model of position
+      and trajectory diverged from reality at the worst possible
+      moment, and the existing Ground Proximity Warning Systems
+      (GPWS) generation reached the crew too late to recover in many
+      terrain encounters. The pattern was recognized across operators
+      and regulators, and the response that emerged was industry
+      coordination led by an independent body — the Flight Safety
+      Foundation — rather than regulator-first action alone.#cn()
+    ],
+    [
+      The CFIT Task Force convened in 1992 and operated as a working
+      group across operators, manufacturers, regulators, and pilot
+      organizations. Its central deliverable was the CFIT Checklist
+      — a structured self-assessment instrument that let an operator
+      score its own CFIT-risk exposure across route, equipment,
+      training, and procedure dimensions, and identify where the
+      gaps sat. The Checklist was distributed without restriction.
+      The institutional theory was straightforward: a cross-operator
+      diagnostic, owned by no single competitor, would let the
+      industry move together on a problem that no single operator's
+      own data could fully characterize.#cn()
+    ],
+    [
+      The Approach-and-Landing Accident Reduction Task Force followed
+      in 1996, scoped to the approach phase, which accounted for
+      roughly half of fatal accidents in the analysis window. The
+      ALAR Tool Kit, released in 1998, was the most substantial
+      deliverable of the entire industry-coordination effort: a
+      multi-element package of briefing notes, training aids, video
+      content, and risk-assessment instruments covering stabilized
+      approach criteria, runway excursion, monitored approach
+      practice, and crew procedural design. The Tool Kit was
+      adopted across operators of all sizes precisely because the
+      FSF had no competitive stake in any one airline's adoption.#cn()
+    ],
+    [
+      The eventual regulatory action — the FAA's TAWS mandate
+      (2002, retrofitting earlier GPWS-equipped aircraft with the
+      newer terrain-database-driven warning system) and the ICAO
+      TAWS requirement (effective 2007) — sat downstream of the
+      task-force momentum, not upstream of it. CFIT accident rates
+      fell sharply through the subsequent decade across both
+      commercial transport and corporate aviation; approach-and-
+      landing accidents declined alongside. The before/after pattern
+      is robust across multiple independent operator and regulator
+      datasets, and the case is treated in the FSF's own retrospective
+      literature as one of the discipline's strongest examples of
+      coordinated industry-led intervention.#cn()
+    ],
+    [
+      The load-bearing hedge survives into the case. The
+      accident-rate decline is multifactorial: TAWS hardware in the
+      cockpit, training changes the task forces catalyzed,
+      stabilized-approach criteria adopted at the operator level,
+      and steady fleet turnover into airframes with more capable
+      equipment all moved together. Attributing the entire decline
+      to the FSF task forces alone overstates the evidence; what
+      the evidence supports is that the industry-coordination form
+      — independent convening body, cross-operator diagnostic
+      tools released without competitive restriction, momentum
+      sustained to a regulatory mandate — was the institutional
+      mechanism that organized the response, and the response
+      worked. The case is the canonical C6.1 instance of
+      industry-level institution building after a catastrophe-class
+      spike, paired with v1 ASRS (Case 119) and CAST (Case 117) at
+      the industry-coordination layer.#cn()
+    ],
+  ),
+  beats: (
+    "CFIT was the leading cause of commercial-jet fatalities through the late 1980s — serviceable aircraft, controlled flight, terrain encountered too late to recover",
+    "FSF CFIT Task Force (1992) produces the CFIT Checklist — cross-operator self-assessment, distributed without restriction",
+    "FSF ALAR Task Force (1996); ALAR Tool Kit released 1998 covers stabilized approach, runway excursion, monitored approach, crew procedure",
+    "FAA TAWS mandate 2002; ICAO TAWS effective 2007 — regulatory action sits downstream of task-force momentum, not upstream",
+    "CFIT and ALAR accident rates fall sharply over the subsequent decade; hedge preserved — decline is multifactorial (TAWS, training, procedure, fleet turnover)",
+  ),
+  approaches: (
+    during: (
+      [Convene the cross-operator working body before the regulator does — an independent industry foundation, no competitive stake in any one operator's adoption — so the diagnostic tool can be released without restriction and adopted across the field.],
+      [Design the diagnostic as a structured self-assessment, not a benchmark league table; operators will use what they can apply privately, and the field-level signal aggregates from voluntary adoption.],
+      [Build the tool kit around the phase of flight that accident analysis says dominates the harm — approach-and-landing in this case — rather than around evenly distributed coverage that no single operator can adopt fully.],
+    ),
+    after: (
+      [Sustain the institutional momentum into the regulatory mandate; the task forces did the technical and political work that made the TAWS rule adoptable, and the rule consolidates what the field already does.],
+      [Report the accident-rate decline with the multifactorial hedge intact; TAWS hardware, training, procedure, and fleet turnover all moved together, and isolating the task-force contribution overstates the available evidence.],
+      [Treat the institutional form as the transferable artifact: an independent convening body, cross-operator diagnostic tools without competitive restriction, coordinated path to regulatory mandate. The form pairs with CAST (Case 117) and ASRS (Case 119) at the industry-coordination layer.],
+    ),
+  ),
+  references: (
+    [Flight Safety Foundation, "Killers in Aviation: FSF Task Force Presents Facts About Approach-and-landing and Controlled-flight-into-terrain Accidents," _Flight Safety Digest_ (1998–1999).],
+    [Flight Safety Foundation, ALAR Tool Kit (1998) — distributed multi-element package of briefing notes, training aids, and risk-assessment instruments.],
+    [Khatwa & Helmreich, "Analysis of critical factors during approach and landing in accidents and normal flight," _Flight Safety Digest_ (1998) — the analytical basis of the ALAR Task Force scope.],
+    [FAA, Terrain Awareness and Warning System (TAWS) Final Rule, 14 CFR Part 121 (2000, effective 2002).],
+    [ICAO Annex 6, TAWS requirement (effective 2007) — the international consolidation.],
+  ),
+  quote: [The deliverable is the cross-operator diagnostic, owned by no single competitor, released without restriction. The mandate consolidates what the field already does.],
+  quote-source: "Editors' synthesis of the FSF CFIT and ALAR task-force literature.",
+  le-insight: [
+    The FSF CFIT and ALAR task forces are the canonical case of
+    industry-level institution building after a catastrophe-class
+    spike. An independent foundation convened the cross-operator
+    working bodies, released structured diagnostic tools without
+    competitive restriction, and sustained momentum to a regulatory
+    mandate. The accident-rate decline is multifactorial; the
+    institutional form is what the case is teachable on.
+  ],
+  lens-approach: [
+    FSF CFIT/ALAR is the canonical industry-coordination case
+    (induced 6.1; LENS D5/PT4) — Domain 5 for the independent-
+    convening-body form; Domain 2 for the structured diagnostic
+    instruments as iterating deliverables. Pair with Cases 117,
+    119, and 13.
+  ],
+  literature-items: (
+    [FSF _Flight Safety Digest_ (1998–1999) — CFIT and ALAR task-force record],
+    [FSF ALAR Tool Kit (1998)],
+    [FAA TAWS Final Rule (2000)],
+  ),
+  reflection-list: (
+    [Identify a catastrophe-class failure pattern in your domain whose response has been operator-by-operator rather than industry-coordinated. What would the analog of an independent convening body look like, and which body could plausibly play that role without competitive stake?],
+    [Specify the cross-operator diagnostic — checklist, tool kit, structured self-assessment — that you would design as the first deliverable of an FSF-style task force. The deliverable has to be applicable privately by each operator, and aggregate into field-level signal.],
+  ),
+  courses: ("LEN 4", "LEN 7", "LEN 8"),
 )

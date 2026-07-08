@@ -1,6 +1,6 @@
 # Capability Matters — A Casebook for LENS
 
-A printed casebook for the **Learning Engineering for Next-Generation Systems (LENS)** specialization in the Learning Design & Technology program at the Johns Hopkins University School of Education. **194 real cases** in which human capability was the critical system parameter — failures, paired-intervention successes, and frontier cases — examined through the LENS v2.1 framing of capability as the interface between operator requirements and system impact, and agency as a design constraint on every intervention.
+A printed casebook for the **Learning Engineering for Next-Generation Systems (LENS)** specialization in the Learning Design & Technology program at the Johns Hopkins University School of Education. **205 real cases** — printed **main volume** (48 selected; `lib/selection.typ`) + **digital supplement** (the rest; shared global numbering) — in which human capability was the critical system parameter — failures, paired-intervention successes, and frontier cases — organized topically in seven parts (Defense deliberately in the middle; a dedicated Disaster Prevention & Recovery part reads its cases pre → post), each split into What Fails / What Works — and the Frontier, and examined through the LENS v2.1 framing of capability as the interface between operator requirements and system impact, and agency as a design constraint on every intervention.
 
 Built with **Typst**. One source renders **eleven outputs**: the 8 × 10 casebook in three editions (print / digital / proof), the new **8 × 10 LENS Companion** (concentration documentation + crosswalks + per-case references on white digital paper), two summary editions (US Letter + Half-Letter), and the Lulu cover wraps.
 
@@ -23,9 +23,9 @@ The first edition is structurally complete and reproduces from source via `bash 
 
 All editions share one measure and type size, so **proof pagination is identical to print** — what you proof is what Lulu prints. The companion uses the same trim and a separate white-paper visual layer; on the shelf the two stack as a matched pair.
 
-Integrity at print: `bash scripts/check-cases.sh` reports **194 cases, 0 failures**; all cross-references in range 1–194; all slugs unique; all non-closing cases carry induced + lens + CLO anchors; no stale v1 terminology in any rendered output.
+Integrity at print: `bash scripts/check-cases.sh` reports **205 cases, 0 failures**; all cross-references in range 1–205; all slugs unique; all non-closing cases carry induced + lens + CLO anchors; no stale v1 terminology in any rendered output.
 
-For the intellectual framing behind the casebook — the capability interface, agency as a design constraint, gap attribution, the Practice Flywheel — see [METHODOLOGY.md](METHODOLOGY.md). For the running editorial history — v2.1 adoption, the 10-chapter restructure, the references validation pass, all corrections — see [AUDIT.md](AUDIT.md). For the per-case manual-review track scaffolded for the human reviewer — including the rubric, the workflow, and a 194-row table with six of seven check columns auto pre-filled — see [verification-log.md](verification-log.md).
+For the intellectual framing behind the casebook — the capability interface, agency as a design constraint, gap attribution, the Practice Flywheel — see [METHODOLOGY.md](METHODOLOGY.md). For the running editorial history — v2.1 adoption, the chapter restructures (10-chapter competency org, then the July 2026 topical reorganization), the references validation pass, all corrections — see [AUDIT.md](AUDIT.md). For the per-case manual-review track scaffolded for the human reviewer — including the rubric, the workflow, and a 205-row table with six of seven check columns auto pre-filled — see [verification-log.md](verification-log.md).
 
 ---
 
@@ -46,8 +46,9 @@ For the intellectual framing behind the casebook — the capability interface, a
 │   ├── title.typ                  # half-title / title / colophon
 │   ├── introduction.typ           # framing-first: thesis · cost of gap · engineerable discipline · method · the analytic lens (v2.1) · how to read
 │   ├── howto.typ                  # how to use this book
-│   └── matrix.typ                 # dynamic 194-case matrix (queries <caseinfo>)
-├── chapters/                      # 10 chapters by v2.1 competency × {fails, works+frontier} — ch1a … ch5b + closing-case.typ
+│   └── matrix.typ                 # dynamic 205-case matrix (queries <caseinfo>)
+├── supplement.typ                 # digital-supplement entry (minimal front matter; --input edition=supplement)
+├── chapters/                      # 14 chapters, topical: 7 parts × {fails, works+frontier} — ch1a … ch7b + closing-case.typ
 ├── backmatter/
 │   ├── domain-index.typ                 # dynamic — cases by primary domain
 │   ├── course-index.typ                 # dynamic — cases by LENS course
@@ -62,7 +63,7 @@ For the intellectual framing behind the casebook — the capability interface, a
 │   ├── check-cases.sh             # integrity: ≤5 pages, references on page 2, marker == ref count
 │   ├── verification-status.sh     # parses verification-log.md; prints reviewer progress
 │   └── fetch-fonts.sh
-├── verification-log.md            # per-case manual-review table (rubric + workflow + 194 rows)
+├── verification-log.md            # per-case manual-review table (rubric + workflow + 205 rows)
 ├── AUDIT.md                       # editorial history (v2.1 adoption, chapter restructure, validation)
 ├── METHODOLOGY.md                 # methodology of record
 └── Makefile
@@ -196,7 +197,7 @@ Each color carries a meaningful L\* and the grayscale palette is tuned to those 
 `verification-log.md` is the per-case manual-review artefact. It carries:
 
 - A **two-pass rubric** (quality scan + content scan, 5–15 min/case target) with a worked example on Case 1.
-- A 194-row table with seven check columns: `clarity`, `refs real`, `refs support`, `conclusions reasonable`, `no overclaim`, `anchor fit`, `x-refs`. Six are auto pre-filled with mechanical detections (reviewer = `auto-prefill`); `conclusions reasonable` is intentionally empty pending a human case-by-case content read.
+- A 205-row table with seven check columns: `clarity`, `refs real`, `refs support`, `conclusions reasonable`, `no overclaim`, `anchor fit`, `x-refs`. Six are auto pre-filled with mechanical detections (reviewer = `auto-prefill`); `conclusions reasonable` is intentionally empty pending a human case-by-case content read.
 - The status legend: `—` not reviewed; `✓` passed; `~` passed with a note; `✗` issue found; `?` outside expertise — flag for an editor.
 - The case-to-chapter map and the tool list (Google Scholar, DOI.org, agency websites, arxiv, Wayback Machine).
 

@@ -20,22 +20,26 @@ if [ ! -f "$LOG" ]; then
 fi
 
 # Chapter ranges (case-number ranges). Update if the chapter structure changes.
-declare -A CHAPTER_LO=( [1A]=1   [1B]=17  [2A]=28  [2B]=32  [3A]=54  [3B]=70  [4A]=82  [4B]=107 [5A]=137 [5B]=168 [CLO]=194 )
-declare -A CHAPTER_HI=( [1A]=16  [1B]=27  [2A]=31  [2B]=53  [3A]=69  [3B]=81  [4A]=106 [4B]=136 [5A]=167 [5B]=193 [CLO]=194 )
+declare -A CHAPTER_LO=( [1A]=1   [1B]=11  [2A]=45  [2B]=65  [3A]=96  [3B]=114 [4A]=124 [4B]=136 [5A]=143 [5B]=154 [6A]=158 [6B]=173 [7A]=180 [7B]=194 [CLO]=205 )
+declare -A CHAPTER_HI=( [1A]=10  [1B]=44  [2A]=64  [2B]=95  [3A]=113 [3B]=123 [4A]=135 [4B]=142 [5A]=153 [5B]=157 [6A]=172 [6B]=179 [7A]=193 [7B]=204 [CLO]=205 )
 declare -A CHAPTER_NAME=(
-  [1A]="Systems Analysis — what fails"
-  [1B]="Systems Analysis — what works + frontier"
-  [2A]="Iterative Development — the iteration gap"
-  [2B]="Iterative Development — what works + frontier"
-  [3A]="Human-System Collaboration — what fails"
-  [3B]="Human-System Collaboration — what works + frontier"
-  [4A]="Test and Evaluation — what fails"
-  [4B]="Test and Evaluation — what works + frontier"
-  [5A]="Sociotechnical Constraints — what fails"
-  [5B]="Sociotechnical Constraints — what works + frontier"
+  [1A]="Healthcare & Patient Safety — what fails"
+  [1B]="Healthcare & Patient Safety — what works + frontier"
+  [2A]="Education, Training & Workforce — what fails"
+  [2B]="Education, Training & Workforce — what works + frontier"
+  [3A]="Aviation & Aerospace — what fails"
+  [3B]="Aviation & Aerospace — what works + frontier"
+  [4A]="Defense & National Security — what fails"
+  [4B]="Defense & National Security — what works + frontier"
+  [5A]="Industry, Energy & Enterprise — what fails"
+  [5B]="Industry, Energy & Enterprise — what works + frontier"
+  [6A]="Disaster Prevention & Recovery — what fails"
+  [6B]="Disaster Prevention & Recovery — what works + frontier"
+  [7A]="Algorithms, Governance & Public Systems — what fails"
+  [7B]="Algorithms, Governance & Public Systems — what works + frontier"
   [CLO]="Closing — The Discipline We Build Next"
 )
-CHAPTERS=(1A 1B 2A 2B 3A 3B 4A 4B 5A 5B CLO)
+CHAPTERS=(1A 1B 2A 2B 3A 3B 4A 4B 5A 5B 6A 6B 7A 7B CLO)
 
 # Parse the per-case table — every line that begins with "| <digit>" is a data row.
 # Columns (1-indexed, after splitting on "|"):
@@ -57,8 +61,10 @@ CHAPTERS=(1A 1B 2A 2B 3A 3B 4A 4B 5A 5B CLO)
 
 awk -v chaplo_keys="${!CHAPTER_LO[*]}" '
 BEGIN { FS = "|" }
-# Match data rows: starts with "| ", then a digit
-/^\|[[:space:]]+[0-9]+[[:space:]]+\|/ {
+# Match data rows: starts with "| ", then a digit, then a backticked slug
+# (the backtick requirement excludes rubric/example tables that also begin
+# with a numeric first column).
+/^\|[[:space:]]+[0-9]+[[:space:]]+\|[[:space:]]*`/ {
   n = $2 + 0
   for (i = 6; i <= 12; i++) {
     gsub(/^[[:space:]]+|[[:space:]]+$/, "", $i)

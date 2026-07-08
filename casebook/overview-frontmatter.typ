@@ -67,34 +67,38 @@
 // -------------------------------------------------------- the case studies
 #text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("The case studies"))
 #v(5pt)
-#text(font: serif, size: 22pt, fill: navy, "A growing record, three movements")
+#text(font: serif, size: 22pt, fill: navy, "A growing record, in seven parts")
 #v(10pt)
 #text(font: sans, size: 10.5pt, fill: text-dark)[
-  The casebook assembles a growing record of documented cases — from
-  healthcare, defense, education, energy, finance, transportation, and
-  government — organized in three movements, with a contemporary expansion
-  that extends the corpus into algorithmic decision-making, learning
-  analytics, and workforce development.
+  The casebook assembles a growing record of documented cases organized
+  topically in seven parts: Healthcare & Patient Safety; Education,
+  Training & the Learning Workforce; Aviation & Aerospace; Defense &
+  National Security; Industry, Energy & Enterprise Systems; Disaster
+  Prevention & Recovery; and Algorithms, Governance & Public Systems.
 ]
 #v(8pt)
 #text(font: sans, size: 10pt, fill: text-dark)[
-  *Part I — The Failure Modes* groups cases under six recurring patterns (see
-  overleaf), with an evidence-gap chapter on measurement. The taxonomy is a
-  finding, not a theory: six categories account for almost every
-  well-documented preventable failure in the literature.
+  *Each part splits into What Fails and What Works — and the Frontier.*
+  The failure chapters carry the six-mode taxonomy (see overleaf) on every
+  case header. The taxonomy is a finding, not a theory: six categories
+  account for almost every well-documented preventable failure in the
+  literature.
 ]
 #v(7pt)
 #text(font: sans, size: 10pt, fill: text-dark)[
-  *Part II — What Works* collects the successes, which share one structural
-  feature: a *paired intervention* — a technical artifact joined to a
-  cultural authority; a measurement instrument joined to a body that acts on
-  it. Neither half alone moves the curve.
+  *The What Works chapters* collect the successes, which share one
+  structural feature: a *paired intervention* — a technical artifact joined
+  to a cultural authority; a measurement instrument joined to a body that
+  acts on it. Neither half alone moves the curve. The frontier cases — where
+  the discipline is being asked to specify what good looks like before the
+  catastrophe arrives, particularly human-AI teaming — close each part,
+  deliberately less settled.
 ]
 #v(7pt)
 #text(font: sans, size: 10pt, fill: text-dark)[
-  *Part III — The Frontier* concerns the cases where the discipline is being
-  asked to specify what good looks like before the catastrophe arrives —
-  particularly human-AI teaming. These cases are deliberately less settled.
+  *Part VI — Disaster Prevention & Recovery* reads its cases along the
+  lifecycle of a disaster rather than a domain: prevention regimes before
+  the event, response and recovery after it.
 ]
 #pagebreak()
 
@@ -138,7 +142,7 @@
 #pagebreak()
 
 // ------------------------------------------------------ the six modes
-#text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("Part I · the taxonomy"))
+#text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("The failure-mode taxonomy"))
 #v(5pt)
 #text(font: serif, size: 22pt, fill: navy, "The six failure modes")
 #v(10pt)

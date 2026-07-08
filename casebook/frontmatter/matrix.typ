@@ -19,7 +19,7 @@
 // course index in the appendix.) Sizes match the original; the
 // modes column is widened so 5-mode codes (e.g. T·H·N·K·G) no longer
 // overhang into the page margin.
-#let entry(n, name, year, modes, success: false) = block(
+#let entry(n, name, year, modes, success: false, supp: false) = block(
   width: 100%,
   inset: (top: 2.4pt, bottom: 3.4pt),
   stroke: (bottom: 0.25pt + rule-soft),
@@ -28,7 +28,7 @@
       columns: (16pt, 1fr, 48pt),
       column-gutter: 4pt,
       align: (right + horizon, left + horizon, left + horizon),
-      text(font: sans, size: 8.5pt, weight: "bold", fill: if success { teal } else { gold }, str(n)),
+      text(font: sans, size: 8.5pt, weight: "bold", fill: if success { teal } else { gold }, str(n) + if supp { sym.degree } else { "" }),
       box(width: 100%, clip: true, inset: (bottom: 1.6pt), [
         #text(font: sans, size: 8pt, fill: navy, weight: if success { "medium" } else { "regular" }, name)
         #h(3pt)
@@ -52,7 +52,9 @@
 #text(font: sans, size: 8pt, fill: text-muted)[
   Gold numbers indicate failures and systemic conditions; teal
   numbers indicate paired-intervention successes and the open closing
-  case.
+  case. Numbers marked #sym.degree are carried in the digital
+  supplement; unmarked cases appear in the printed main volume.
+  Numbering is global across both.
 ]
 #v(8pt)
 
@@ -66,6 +68,7 @@
     str(e.year),
     modes-dotted(e.modes),
     success: e.kind == "intervention",
+    supp: e.at("edition", default: "main") == "supplement",
   ))
   columns(2, gutter: 12pt, {
     for it in entries { it }
@@ -97,10 +100,13 @@
     ]
     v(4pt)
     text(font: sans, size: 7pt, fill: text-muted)[
-      *Parts.* Part II — *What Works* — opens at Chapter 8 with the
-      paired-intervention successes. Part III — *The Frontier* —
-      and the contemporary expansion carry the human-AI teaming cases;
-      the open question closes the volume at Case 194.
+      *Parts.* The book is organized topically in seven parts —
+      Healthcare & Patient Safety; Education, Training & the Learning
+      Workforce; Aviation & Aerospace; Defense & National Security;
+      Industry, Energy & Enterprise Systems; Disaster Prevention &
+      Recovery; Algorithms, Governance & Public Systems. Each part
+      splits into *What Fails* and *What Works — and the Frontier*;
+      the open question closes the volume at Case 205.
     ]
   }
 )

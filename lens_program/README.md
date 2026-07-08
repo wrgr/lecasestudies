@@ -1,6 +1,6 @@
 # LENS Core Guiding Documents
 
-> **STATUS: v2.1 CURRENT (adopted June 2026).** Source of record: JHU SOE LDT/LENS program documentation (MHEC PP24181). Versions are tracked inline via a `Change Log` at the bottom of docs 1 and 2; prior prose retrievable from git history (no `legacy/` folder — the canonical file is always the one in this directory). The `.docx` companions for docs 1 and 2 need a program-owner round-trip from the `.md` after each version bump; they are currently behind v2.1.
+> **STATUS: doc 1 v2.1 (adopted June 2026); doc 2 v2.2 (July 2026 — PLO source refresh).** Source of record: JHU SOE LDT/LENS program documentation; PLO text follows the LDT Program Learning Objectives of record dated 03-06-2025. Versions are tracked inline via a `Change Log` at the bottom of docs 1 and 2; prior prose retrievable from git history (no `legacy/` folder — the canonical file is always the one in this directory). The `.docx` companions for docs 1 and 2 are regenerated from the `.md` as of the v2.2 sync; program-owner round-trip review of the v2.1/v2.2 changes remains open.
 
 The complete, synced set. The five competencies, their names, taglines, and the CLO crosswalk
 are consistent across every document here as of this revision.
@@ -10,8 +10,9 @@ are consistent across every document here as of this revision.
    numbers are stable tags for case studies, course modules, and capstone rubrics.
 
 2. **LENS_Objectives_Course_Mapping** — full program/course documentation: context, structure, the
-   six LDT PLOs (verbatim), the five CLOs, course-by-course descriptions with PLO/CLO mappings,
-   coverage matrices, revision notes. CLO-4 synced to "Navigating Sociotechnical Constraints."
+   six LDT PLOs (verbatim, 03-06-2025 list at subobjective grain), the five CLOs, the PLO ↔ CLO
+   support map, course-by-course descriptions with PLO/CLO mappings, coverage matrices, revision
+   notes. Under v2.1 numbering, CLO-5 is "Navigating Sociotechnical Constraints."
 
 3. **LENS_Editor_Bios** — standalone editor biographies (Gray-Roncal, Diamond), each closing with a
    removable "On LENS" tie that maps the editor to the casebook's five pillars. Delete the two ties

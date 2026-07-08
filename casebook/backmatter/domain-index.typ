@@ -191,7 +191,7 @@
     v(6pt)
     standout-line("Note", 18, text-muted)[
       No paired-intervention success in the aerospace dataset. See
-      Defense (Rickover, Case 18) for the safety-engineering
+      Defense (Rickover, Case 137) for the safety-engineering
       counterpart that aerospace did not build.
     ]
   },
@@ -237,7 +237,7 @@
     v(6pt)
     standout-line("Note", 132, text-muted)[
       The technology dataset's success story is filed under Healthcare:
-      AlphaFold (Case 132), the contemporary worked example of
+      AlphaFold (Case 36), the contemporary worked example of
       computational capability-engineering done as a discipline.
     ]
   },
@@ -252,7 +252,7 @@
     standout-line("Note", 194, text-muted)[
       No paired-intervention success in the autonomous-systems dataset.
       The capability engineering this category needs is still being
-      built — see Case 194 (*The Discipline We Build Next*) for the
+      built — see Case 205 (*The Discipline We Build Next*) for the
       open question this volume closes on.
     ]
   },
