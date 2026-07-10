@@ -9,7 +9,7 @@ The shipping artefacts sit under `products/`, split by carrier: `products/digita
 | File | What it is | Read it if you want… |
 |---|---|---|
 | **[`products/digital/capability-matters-digital.pdf`](products/digital/capability-matters-digital.pdf)** | The casebook **main volume**, digital — 48 selected cases, 264 pp, 8 × 10, colour on cream | the readable book: the seven-part argument with a curated cut spanning domains, modes, and evidence tiers |
-| **[`products/digital/capability-matters-supplement.pdf`](products/digital/capability-matters-supplement.pdf)** | The **digital supplement** — all 157 other cases, 629 pp, minimal front matter, global numbering shared with the main volume | the rest of the corpus at full depth; every gap in the printed sequence lives here |
+| **[`products/digital/capability-matters-supplement.pdf`](products/digital/capability-matters-supplement.pdf)** | The **digital supplement** — all 157 other cases, 636 pp, minimal front matter, global numbering shared with the main volume | the rest of the corpus at full depth; every gap in the printed sequence lives here |
 | **[`products/digital/capability-matters-lens-companion.pdf`](products/digital/capability-matters-lens-companion.pdf)** | LENS Companion — 43 pp, 8 × 10, white digital | the framework, end-to-end: the five v2.1 LENS competencies, the CLOs and course mapping, the induced ↔ canonical crosswalk, and the literal text of the `lens_program/` canonical docs (Docs 1–6). Travels with advisory boards, recruiting, prospective students. |
 | **[`products/digital/capability-matters-validation-audit.pdf`](products/digital/capability-matters-validation-audit.pdf)** | Validation & Audit tracker — 78 pp, 8 × 10, white digital | the audit surface: every case by primary domain, every case by LENS course, and the full per-case references appendix with a *Retrieved from:* line per source. The verification-track companion to `casebook/verification-log.md`. |
 | **[`products/print/capability-matters-print.pdf`](products/print/capability-matters-print.pdf)** + **[`products/print/cover-print.pdf`](products/print/cover-print.pdf)** | The **main volume**, print interior + Lulu cover wrap — 264 pp, 8 × 10, grayscale, 3 mm bleed; cover spine 16.39 mm | to send to Lulu for the bound first edition |
@@ -99,8 +99,8 @@ The first edition is structurally complete and reproduces from source.
 | ✦ `capability-matters-print-with-cover.pdf` | 8 × 10, covers in color | 266 | main volume with front/back cover attached (reading copy) |
 | ✦ `capability-matters-digital-with-cover-letter.pdf` | US Letter, color | 266 | color edition + covers, centered at 100% for 8.5 × 11 printing |
 | ✦ `capability-matters-digital.pdf` | 8 × 10, color, cream | 264 | main volume — screen / PDF |
-| ✦ `capability-matters-supplement.pdf` | 8 × 10, color, cream | 629 | digital supplement (all non-main cases) |
-| `capability-matters-complete.pdf` | 8 × 10, color, cream | 894 | complete 205-case reference edition (internal) |
+| ✦ `capability-matters-supplement.pdf` | 8 × 10, color, cream | 636 | digital supplement (all non-main cases) |
+| `capability-matters-complete.pdf` | 8 × 10, color, cream | 901 | complete 205-case reference edition (internal) |
 | `capability-matters-proof.pdf` | 8 × 10 on US Letter, trim marks | 264 | office-printer proof |
 | ✦ `capability-matters-lens-companion.pdf` | 8 × 10, white | 43 | concept companion — concentration docs + crosswalks + canonical lens_program/ docs |
 | ✦ `capability-matters-validation-audit.pdf` | 8 × 10, white | 78 | audit tracker — indexes + per-case references |
