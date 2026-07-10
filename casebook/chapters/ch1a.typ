@@ -7,6 +7,7 @@
 #import "../lib/components.typ": *
 #import "../lib/diagrams.typ" as dgm
 #chapter-divider(
+  folio-reset: true,
   part: "Part I — Healthcare & Patient Safety",
   number: "1",
   title: "Healthcare & Patient Safety — What Fails",

@@ -38,19 +38,9 @@
   ),
   fill: page-fill,
   background: crop-marks,
-  header: context {
-    let p = counter(page).get().first()
-    if p > 6 [
-      #set text(font: sans, size: 7pt, fill: text-muted, tracking: 1pt)
-      #if calc.even(p) [
-        #upper("Capability Matters") #h(1fr) #str(p)
-      ] else [
-        #str(p) #h(1fr) #upper("A Casebook for LENS")
-      ]
-      #v(-4pt)
-      #line(length: 100%, stroke: 0.3pt + rule-soft)
-    ]
-  },
+  // Running header: roman folios through the front matter, arabic folios
+  // from the Part I divider on (see the main-matter transition below).
+  header: book-header,
   footer: none,
 )
 
@@ -66,6 +56,10 @@
 #include "frontmatter/howto.typ"
 #include "frontmatter/matrix.typ"
 
+// ============================================================
+// MAIN MATTER — folios restart at arabic 1 on the Part I divider (its
+// chapter-divider call carries `folio-reset: true`; the reset happens
+// inside that divider page). The front matter above keeps roman folios.
 // ============================================================
 // All cases — organised topically in seven parts (Healthcare;
 // Education & Workforce; Aviation & Aerospace; Defense — the middle

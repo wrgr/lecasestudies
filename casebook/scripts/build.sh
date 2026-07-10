@@ -112,6 +112,27 @@ $TYPST --root . \
   --input spine-mm="$spine" \
   cover/cover.typ build/cover-print.pdf
 
+echo "→ Compiling 8 × 10 cover (split: front · spine · back)..."
+$TYPST --root . \
+  --input cover-w-mm="$total_w" \
+  --input cover-h-mm="$total_h" \
+  --input spine-mm="$spine" \
+  --input layout=split \
+  cover/cover.typ build/cover-print-split.pdf
+
+# The printed product with its covers attached: front cover, grayscale
+# interior, back cover in one PDF — the on-screen stand-in for the bound
+# book (Lulu itself still takes the interior + one-piece wrap above).
+# Cover pages stay in color, as they print on the color cover stock.
+echo "→ Assembling print interior with front/back cover..."
+pdfseparate -f 1 -l 1 build/cover-print-split.pdf build/_cover-front.pdf
+pdfseparate -f 3 -l 3 build/cover-print-split.pdf build/_cover-back.pdf
+pdfunite build/_cover-front.pdf \
+         build/capability-matters-print.pdf \
+         build/_cover-back.pdf \
+         build/capability-matters-print-with-cover.pdf
+rm build/_cover-front.pdf build/_cover-back.pdf
+
 # ---- Half-Letter summary Lulu cover wrap ----
 ov_pages=$(pdfinfo build/capability-matters-overview-half-print.pdf | awk '/^Pages:/ {print $2}')
 ov_spine=$(awk -v p="$ov_pages" 'BEGIN {printf "%.2f", p * 0.0621}')
@@ -133,11 +154,11 @@ $TYPST --root . \
   --input layout=split \
   cover/cover-summary.typ build/cover-overview-half-split.pdf
 
-# ---- Mirror the seven shipping artefacts to the repo's products/ tree ----
-# Only the seven artefacts the README's "Start here" table points at
-# land at the repo root, split into products/digital/ (the three on-screen
-# PDFs) and products/print/ (the print interiors + Lulu cover wraps).
-# Proofs, screen-summary editions, and the split-format cover stay inside
+# ---- Mirror the eight shipping artefacts to the repo's products/ tree ----
+# Only the eight artefacts the README's "Start here" table points at
+# land at the repo root, split into products/digital/ (the on-screen
+# PDFs) and products/print/ (the print interiors + covers). Proofs,
+# screen-summary editions, and the split-format covers stay inside
 # build/ for the build pipeline; they are intermediate or internal-tooling
 # artefacts, not the published set.
 REPO_ROOT="$(cd "$ROOT/.." && pwd)"
@@ -149,6 +170,7 @@ for f in capability-matters-digital.pdf \
   cp "build/$f" "$REPO_ROOT/products/digital/$f"
 done
 for f in capability-matters-print.pdf \
+         capability-matters-print-with-cover.pdf \
          cover-print.pdf \
          capability-matters-overview-half-print.pdf \
          cover-overview-half.pdf; do
@@ -158,6 +180,7 @@ done
 echo
 echo "✓ Output:"
 echo "    capability-matters-print.pdf      8 × 10 MAIN VOLUME print interior (grayscale, $pages pp)"
+echo "    capability-matters-print-with-cover.pdf  print interior with front/back cover attached (reading copy)"
 echo "    capability-matters-digital.pdf    8 × 10 MAIN VOLUME digital edition (color, cream)"
 echo "    capability-matters-supplement.pdf 8 × 10 digital supplement (all non-main cases; digital only)"
 echo "    capability-matters-complete.pdf   8 × 10 complete 205-case reference edition (internal)"
@@ -170,6 +193,7 @@ echo "    capability-matters-overview-half.pdf      Half Letter summary — digi
 echo "    capability-matters-overview-half-proof.pdf Half Letter summary — proof (on Letter, crop marks)"
 echo "    capability-matters-overview-half-print.pdf Half Letter summary — print interior (bleed, Lulu)"
 echo "    cover-print.pdf                   8 × 10 Lulu wrap (spine $spine mm)"
+echo "    cover-print-split.pdf             8 × 10 cover, split (front · spine · back)"
 echo "    cover-overview-half.pdf           Half Letter summary Lulu wrap (spine $ov_spine mm)"
 echo "    cover-overview-half-split.pdf     Half Letter summary cover, split (front · spine · back)"
 echo

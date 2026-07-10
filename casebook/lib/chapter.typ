@@ -12,6 +12,10 @@
   subtitle: "",
   epigraph: none,
   epigraph-source: "",
+  // Set on the volume's FIRST divider only: marks the start of the main
+  // matter, so the running header restarts the displayed folio at
+  // arabic 1 here (roman folios before; see components.typ book-header).
+  folio-reset: false,
 ) = if view == "book" {
   // (The overview booklets omit full-page chapter dividers.)
   // chapter dividers start on a right-hand (recto) page
@@ -29,6 +33,14 @@
     header: none,
     footer: none,
     {
+      // Restart the folio at arabic 1 and flip the main-matter flag ON
+      // this page. Both updates live inside the page body so they cannot
+      // occupy a page of their own out in the flow (which would flip the
+      // recto/verso parity of everything after them).
+      if folio-reset {
+        counter(page).update(1)
+        mainmatter.update(true)
+      }
       // top mark
       text(font: sans, size: 7.5pt, tracking: 2pt, fill: gold, upper(part))
       v(4pt)

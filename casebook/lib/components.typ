@@ -36,6 +36,56 @@
 // ---- View flag: "book" (default) or "overview" (companion booklet) ----
 #let view = sys.inputs.at("view", default: "book")
 
+// ---- Front / main matter pagination -------------------------------------
+// The book editions paginate like a printed book: the front matter (welcome,
+// introduction, how-to, matrix) carries lowercase-roman folios in the running
+// header, and the main matter restarts at arabic 1 on the opening Part
+// divider. The restart happens INSIDE the first divider's page body
+// (chapter-divider's `folio-reset` flag): a page-counter or state update
+// placed between pages in the flow silently occupies the next fresh page,
+// which pushes the divider onto a verso and flips the recto/verso parity
+// of the whole main matter. `mainmatter` flips there too and drives the
+// header's roman/arabic branch.
+#let mainmatter = state("mainmatter", false)
+
+// Break to the next recto/verso. Unlike a bare `pagebreak(to: ..)`, any
+// filler page emitted on the way is a true blank — no running header,
+// footer, or folio (book convention for blank leaves).
+//
+// FRONT MATTER ONLY. The parity probe is an invisible context element on
+// the candidate page; in the main matter the cases' trailing <cmeta>
+// probes sit at the same page boundary and shift how that page is
+// attributed and absorbed, which mis-parities the following divider.
+// The front-matter sections end in visible content, where this is stable.
+#let clear-to-recto = {
+  pagebreak(weak: true)
+  context if calc.even(here().page()) { page(header: none, footer: none)[] }
+}
+#let clear-to-verso = {
+  pagebreak(weak: true)
+  context if calc.odd(here().page()) { page(header: none, footer: none)[] }
+}
+
+// Running header shared by the book editions (book.typ, supplement.typ).
+// Front matter: roman folios, starting after the six title-section pages
+// (which suppress the header themselves). Main matter: arabic folios from
+// the restarted page counter.
+#let book-header = context {
+  let folio = counter(page).get().first()
+  let mm = mainmatter.get()
+  if mm or folio > 6 {
+    let s = if mm { str(folio) } else { numbering("i", folio) }
+    set text(font: sans, size: 7pt, fill: text-muted, tracking: 1pt)
+    if calc.even(folio) [
+      #upper("Capability Matters") #h(1fr) #s
+    ] else [
+      #s #h(1fr) #upper("A Casebook for LENS")
+    ]
+    v(-4pt)
+    line(length: 100%, stroke: 0.3pt + rule-soft)
+  }
+}
+
 // ---- Case entry for the overview booklets -------------------------------
 // Layout discipline (per editor direction):
 //   Header (case # · domains · year)

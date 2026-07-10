@@ -15,7 +15,7 @@
 // citation marker (definition lives in components.typ)
 
 // ---- Welcome (opens the book, before the introduction proper) ----
-#pagebreak(to: "odd", weak: true)
+#clear-to-recto
 
 #v(1fr)
 
@@ -67,7 +67,7 @@
 #align(right, text(font: sans, size: 8pt, tracking: 1.4pt, fill: text-muted, upper("— The editors")))
 
 // ---- Introduction proper ----
-#pagebreak(to: "odd", weak: true)
+#clear-to-recto
 
 #text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("Introduction"))
 #v(4pt)
