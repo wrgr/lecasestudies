@@ -180,20 +180,15 @@
   place(top + left, dx: _trim-R, dy: _trim-B + _crop-gap,             line(length: _crop-len, angle: 90deg, stroke: _crop-stroke))
 } else { none }
 
-#let crop-marks = if is-proof {
-  // proof-digital: paint the digital edition's cream backdrop on the
-  // 8 × 10 trim block, so the book page reads on the white Letter sheet
-  if is-proof-digital {
-    place(top + left, dx: _trim-L, dy: _trim-T,
-      rect(width: trim-w, height: trim-h, fill: cream))
-  }
-  _trim-marks
-} else { none }
+// Both proof modes keep white inside pages — the trim outline shows the
+// page boundary without printing a cream backdrop (editor decision,
+// July 2026: no cream background on inside pages of the with-cover
+// printable editions).
+#let crop-marks = _trim-marks
 
 // Chapter-divider fill/background. A full-bleed navy divider can't
 // bleed to the Letter edge in proof, so instead paint the 8 × 10 trim
-// block on the carrier and keep the trim marks (no cream backdrop —
-// it would cover the navy block).
+// block on the carrier and keep the trim marks.
 #let divider-fill = if is-proof { none } else { navy }
 #let divider-bg = if is-proof {
   place(top + left, dx: carrier-x, dy: carrier-y, rect(width: trim-w, height: trim-h, fill: navy))
@@ -229,6 +224,18 @@
 )
 // Every team also needs the integrators who hold the picture together.
 #let mode-integrators = "domain experts · a learning engineer to integrate the work"
+
+// ---- Canonical LENS five competencies (v2.1 numbering) ----
+// Used by the per-case "Where this case sits" figure to resolve a
+// lens-anchor code ("D3/PT5") to its competency name. Problem types
+// are canonically numbered only (PT1–PT6), so they render as numbers.
+#let lens-domains = (
+  "1": "Systems Analysis",
+  "2": "Iterative Development",
+  "3": "Human-System Collaboration",
+  "4": "Test and Evaluation",
+  "5": "Navigating Sociotechnical Constraints",
+)
 
 // ---- Failure-mode taxonomy ----
 #let modes = (

@@ -355,6 +355,118 @@
   }
 )
 
+// ---- Where this case sits · domain → modes → LENS connection ----
+// A compact generated figure on every LE Lens page, built entirely from
+// case metadata: the case's domain(s), its failure-mode codes, and the
+// five-competency LENS bar with the case's primary competency filled
+// (parsed from lens-anchor, e.g. "D3/PT5"), plus the induced and CLO
+// anchors. This is where the three-anchor convention (editor decision
+// A6) becomes visible in the printed case, not just in the metadata.
+// Degrades gracefully: columns whose metadata is absent are omitted.
+#let connection-figure(domains-list, modes-code, lens-anchor, induced-anchor, clo-anchor, kind) = {
+  // Parse "D3/PT5" or dual-anchor "D4+D3/PT6" (first listed = primary)
+  // → competency numbers + problem-type number.
+  let dnums = ()
+  let pt = none
+  if lens-anchor != none and str(lens-anchor) != "" {
+    let parts = str(lens-anchor).split("/")
+    for d in parts.at(0, default: "").split("+") {
+      let d = d.trim()
+      if d.len() >= 2 and d.starts-with("D") { dnums.push(d.slice(1)) }
+    }
+    if parts.len() > 1 {
+      let p = parts.at(1).trim()
+      if p.len() > 2 and p.starts-with("PT") { pt = p.slice(2) }
+    }
+  }
+  let dnum = dnums.at(0, default: none)
+  let has-domains = domains-list.len() > 0
+  let has-modes = modes-code != none and modes-code != ""
+  if not (has-domains or has-modes or dnum != none) { return }
+
+  let modes-label = if kind == "intervention" { "Modes addressed" }
+    else if kind == "frontier" { "Modes at stake" }
+    else { "Failure modes" }
+  let col-label(s) = text(font: sans, size: 5.8pt, weight: "medium",
+    tracking: 1.2pt, fill: text-muted, upper(s))
+  let arrow = text(font: sans, size: 9pt, fill: gold, sym.arrow.r)
+  // Five-segment LENS bar; the case's primary competency is filled,
+  // a dual-anchor secondary is outlined in teal.
+  let seg(n) = {
+    let primary = dnum == str(n)
+    let secondary = not primary and dnums.contains(str(n))
+    box(
+      fill: if primary { teal } else { none },
+      stroke: 0.5pt + (if primary or secondary { teal } else { rule-soft }),
+      inset: (x: 4pt, y: 2.4pt),
+      radius: 1pt,
+      text(font: sans, size: 6.6pt, weight: "bold",
+        fill: if primary { cream } else if secondary { teal } else { text-muted },
+        "D" + str(n)),
+    )
+  }
+  let cells = ()
+  if has-domains {
+    cells.push({ col-label("Domain"); v(2pt); domain-row(..domains-list) })
+  }
+  if has-modes {
+    if cells.len() > 0 { cells.push(align(horizon, arrow)) }
+    let chips = modes-code.split("").filter(c => c != "").map(c => mode-chip(c))
+    cells.push({ col-label(modes-label); v(2pt); chips.join(h(2.5pt)) })
+  }
+  if dnum != none {
+    if cells.len() > 0 { cells.push(align(horizon, arrow)) }
+    cells.push({
+      col-label("LENS competency")
+      v(2pt)
+      range(1, 6).map(n => seg(n)).join(h(2pt))
+      v(2pt)
+      text(font: sans, size: 7pt, weight: "medium", fill: navy,
+        lens-domains.at(dnum, default: ""))
+      if dnums.len() > 1 {
+        text(font: sans, size: 7pt, fill: text-muted,
+          " + " + dnums.slice(1).map(n => "D" + n).join(" + "))
+      }
+      if pt != none {
+        text(font: sans, size: 7pt, fill: text-muted, " · Problem type " + pt)
+      }
+    })
+  }
+  // Right-aligned anchor column: induced + CLO, the other two anchors.
+  let anchor-rows = ()
+  if induced-anchor != none and str(induced-anchor) != "" {
+    anchor-rows.push((upper("Induced"), str(induced-anchor)))
+  }
+  if clo-anchor != none and str(clo-anchor) != "" {
+    anchor-rows.push((upper("CLO"), str(clo-anchor)))
+  }
+
+  block(
+    width: 100%,
+    breakable: false,
+    stroke: (top: 0.4pt + rule-soft, bottom: 0.4pt + rule-soft),
+    inset: (y: 3pt),
+    grid(
+      columns: (auto,) * cells.len() + (1fr,),
+      column-gutter: 8pt,
+      align: (..((left + top,) * cells.len()), right + top),
+      ..cells,
+      if anchor-rows.len() > 0 {
+        grid(
+          columns: (auto, auto),
+          column-gutter: 5pt,
+          row-gutter: 2.5pt,
+          align: (right + horizon, left + horizon),
+          ..for (lab, val) in anchor-rows {
+            (text(font: sans, size: 5.8pt, weight: "medium", tracking: 1.2pt, fill: text-muted, lab),
+             text(font: sans, size: 7pt, weight: "medium", fill: navy, val))
+          }
+        )
+      } else { [] },
+    ),
+  )
+}
+
 // ---- LE Insight / LENS Approach block ----
 #let lens-block(title, body) = block(
   width: 100%,
@@ -457,20 +569,29 @@
   {
     eyebrow("References", color: gold)
     v(3pt)
-    columns(2, gutter: 12pt, {
-      set par(leading: 0.42em, first-line-indent: 0pt)
-      for (i, it) in items.pos().enumerate() {
-        block(
-          spacing: 3pt,
-          grid(
-            columns: (10pt, 1fr),
-            column-gutter: 3pt,
-            text(font: sans, size: 6.5pt, weight: "bold", fill: teal, str(i + 1) + "."),
-            text(font: sans, size: 7pt, fill: text-dark, it),
-          ),
-        )
-      }
-    })
+    // Split the list evenly across the two columns (first half left,
+    // second half right). `columns(2, ..)` fills the whole first column
+    // before starting the second, so a typical 4–6 item list stacked
+    // entirely on the left at double the depth with an empty right column.
+    let its = items.pos()
+    let half = calc.ceil(its.len() / 2)
+    let entry(i, it) = block(
+      spacing: 3pt,
+      grid(
+        columns: (10pt, 1fr),
+        column-gutter: 3pt,
+        text(font: sans, size: 6.5pt, weight: "bold", fill: teal, str(i + 1) + "."),
+        text(font: sans, size: 7pt, fill: text-dark, it),
+      ),
+    )
+    set par(leading: 0.42em, first-line-indent: 0pt)
+    grid(
+      columns: (1fr, 1fr),
+      column-gutter: 12pt,
+      align: (left + top, left + top),
+      { for (i, it) in its.enumerate() { if i < half { entry(i, it) } } },
+      { for (i, it) in its.enumerate() { if i >= half { entry(i, it) } } },
+    )
   },
 )
 
