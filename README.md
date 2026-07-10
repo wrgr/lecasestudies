@@ -14,6 +14,7 @@ The shipping artefacts sit under `products/`, split by carrier: `products/digita
 | **[`products/digital/capability-matters-validation-audit.pdf`](products/digital/capability-matters-validation-audit.pdf)** | Validation & Audit tracker — 78 pp, 8 × 10, white digital | the audit surface: every case by primary domain, every case by LENS course, and the full per-case references appendix with a *Retrieved from:* line per source. The verification-track companion to `casebook/verification-log.md`. |
 | **[`products/print/capability-matters-print.pdf`](products/print/capability-matters-print.pdf)** + **[`products/print/cover-print.pdf`](products/print/cover-print.pdf)** | The **main volume**, print interior + Lulu cover wrap — 257 pp, 8 × 10, grayscale, 3 mm bleed; cover spine 15.96 mm | to send to Lulu for the bound first edition |
 | **[`products/print/capability-matters-print-with-cover.pdf`](products/print/capability-matters-print-with-cover.pdf)** | The **main volume with its covers attached** — colour front cover, grayscale print interior, colour back cover, 259 pp | the on-screen stand-in for the bound book: what the printed product looks like cover to cover |
+| **[`products/print/capability-matters-digital-with-cover-letter.pdf`](products/print/capability-matters-digital-with-cover-letter.pdf)** | The **colour edition with covers, on US Letter** — every 8 × 10 page centered at 100% on an 8.5 × 11 sheet, 259 pp | to print at home or the office: reasonable margins, with text size and layout exactly those of the 8 × 10 book |
 | **[`products/print/capability-matters-overview-half-print.pdf`](products/print/capability-matters-overview-half-print.pdf)** + **[`products/print/cover-overview-half.pdf`](products/print/cover-overview-half.pdf)** | The half-page summary, print interior + Lulu cover wrap — Half Letter, grayscale | to bind the summary edition (one case per page) for conferences, recruiting tables, leave-behinds |
 
 The casebook makes the case; the LENS Companion is the orientation set someone reads to understand what LENS is; the Validation & Audit doc is the verification surface a reviewer or auditor works through. All shipping artefacts reproduce from one Typst source via `bash casebook/scripts/build.sh`. Intermediate formats (US Letter summary, screen Half-Letter summary, proof editions, the split-format covers) stay inside `casebook/build/` rather than mirroring to `products/`.
@@ -34,6 +35,7 @@ The casebook makes the case; the LENS Companion is the orientation set someone r
 │   └── print/                             Lulu-bound interiors + cover wraps
 │       ├── capability-matters-print.pdf              casebook print interior (grayscale, bleed)
 │       ├── capability-matters-print-with-cover.pdf   print interior with front/back cover attached (reading copy)
+│       ├── capability-matters-digital-with-cover-letter.pdf  colour edition + covers, centered on US Letter (8.5 × 11 printing)
 │       ├── cover-print.pdf                           casebook Lulu cover wrap
 │       ├── capability-matters-overview-half-print.pdf  half-page summary print interior
 │       └── cover-overview-half.pdf                   half-page summary Lulu cover wrap
@@ -95,6 +97,7 @@ The first edition is structurally complete and reproduces from source.
 |---|---|---|---|
 | ✦ `capability-matters-print.pdf` | 8 × 10, grayscale, 3 mm bleed | 257 | main volume — Lulu production interior |
 | ✦ `capability-matters-print-with-cover.pdf` | 8 × 10, covers in color | 259 | main volume with front/back cover attached (reading copy) |
+| ✦ `capability-matters-digital-with-cover-letter.pdf` | US Letter, color | 259 | color edition + covers, centered at 100% for 8.5 × 11 printing |
 | ✦ `capability-matters-digital.pdf` | 8 × 10, color, cream | 257 | main volume — screen / PDF |
 | ✦ `capability-matters-supplement.pdf` | 8 × 10, color, cream | 594 | digital supplement (all non-main cases) |
 | `capability-matters-complete.pdf` | 8 × 10, color, cream | 844 | complete 205-case reference edition (internal) |
