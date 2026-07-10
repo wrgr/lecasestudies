@@ -5,7 +5,10 @@
 #import "../lib/theme.typ": *
 #import "../lib/components.typ": *
 
-#pagebreak(to: "odd", weak: true)
+// Opens on a verso so its two pages sit as a facing spread, and the
+// case matrix that follows can open on the next verso without leaving
+// a blank recto in between.
+#clear-to-verso
 
 #text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("How to use this book"))
 #v(4pt)

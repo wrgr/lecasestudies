@@ -40,7 +40,7 @@
 )
 
 // -------------------- VERSO :: matrix spread, opening page --------------------
-#pagebreak(to: "even", weak: true)
+#clear-to-verso
 
 #text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("The case matrix"))
 #v(4pt)
