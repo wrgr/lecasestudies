@@ -405,20 +405,32 @@
         "D" + str(n)),
     )
   }
+  // Every facet renders the same way: a small tracked label with the
+  // value beneath it. Text values sit in a box with the same vertical
+  // inset as the chips, so all six value rows share one visual baseline.
+  let facet(label, value) = { col-label(label); v(2pt); value }
+  let text-val(s) = box(inset: (y: 2.4pt),
+    text(font: sans, size: 7.5pt, weight: "medium", fill: navy, s))
+  // "CLO-4, CLO-5" → "4 · 5" (the label already says CLO).
+  let clo-val = if clo-anchor != none and str(clo-anchor) != "" {
+    str(clo-anchor).split(",")
+      .map(s => s.trim().trim("CLO", at: start).trim("-", at: start))
+      .join(" · ")
+  } else { none }
+
+  // The mapping flow: domain → modes → LENS competency, arrow-joined.
   let cells = ()
   if has-domains {
-    cells.push({ col-label("Domain"); v(2pt); domain-row(..domains-list) })
+    cells.push(facet("Domain", domain-row(..domains-list)))
   }
   if has-modes {
     if cells.len() > 0 { cells.push(align(horizon, arrow)) }
     let chips = modes-code.split("").filter(c => c != "").map(c => mode-chip(c))
-    cells.push({ col-label(modes-label); v(2pt); chips.join(h(2.5pt)) })
+    cells.push(facet(modes-label, chips.join(h(2.5pt))))
   }
   if dnum != none {
     if cells.len() > 0 { cells.push(align(horizon, arrow)) }
-    cells.push({
-      col-label("LENS competency")
-      v(2pt)
+    cells.push(facet("LENS competency", {
       range(1, 6).map(n => seg(n)).join(h(2pt))
       v(2pt)
       text(font: sans, size: 7pt, weight: "medium", fill: navy,
@@ -427,18 +439,19 @@
         text(font: sans, size: 7pt, fill: text-muted,
           " + " + dnums.slice(1).map(n => "D" + n).join(" + "))
       }
-      if pt != none {
-        text(font: sans, size: 7pt, fill: text-muted, " · Problem type " + pt)
-      }
-    })
+    }))
   }
-  // Right-aligned anchor column: induced + CLO, the other two anchors.
-  let anchor-rows = ()
+  // The anchor trio, set off to the right: problem type (the second half
+  // of the lens-anchor), the induced-framework anchor, and the CLO.
+  let anchors = ()
+  if pt != none {
+    anchors.push(facet("Problem type", text-val(pt)))
+  }
   if induced-anchor != none and str(induced-anchor) != "" {
-    anchor-rows.push((upper("Induced"), str(induced-anchor)))
+    anchors.push(facet("Induced", text-val(str(induced-anchor))))
   }
-  if clo-anchor != none and str(clo-anchor) != "" {
-    anchor-rows.push((upper("CLO"), str(clo-anchor)))
+  if clo-val != none {
+    anchors.push(facet("CLO", text-val(clo-val)))
   }
 
   block(
@@ -447,22 +460,12 @@
     stroke: (top: 0.4pt + rule-soft, bottom: 0.4pt + rule-soft),
     inset: (y: 3pt),
     grid(
-      columns: (auto,) * cells.len() + (1fr,),
+      columns: (auto,) * cells.len() + (1fr,) + (auto,) * anchors.len(),
       column-gutter: 8pt,
-      align: (..((left + top,) * cells.len()), right + top),
+      align: left + top,
       ..cells,
-      if anchor-rows.len() > 0 {
-        grid(
-          columns: (auto, auto),
-          column-gutter: 5pt,
-          row-gutter: 2.5pt,
-          align: (right + horizon, left + horizon),
-          ..for (lab, val) in anchor-rows {
-            (text(font: sans, size: 5.8pt, weight: "medium", tracking: 1.2pt, fill: text-muted, lab),
-             text(font: sans, size: 7pt, weight: "medium", fill: navy, val))
-          }
-        )
-      } else { [] },
+      [],
+      ..anchors,
     ),
   )
 }
