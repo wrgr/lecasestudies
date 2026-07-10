@@ -131,7 +131,39 @@ pdfunite build/_cover-front.pdf \
          build/capability-matters-print.pdf \
          build/_cover-back.pdf \
          build/capability-matters-print-with-cover.pdf
-rm build/_cover-front.pdf build/_cover-back.pdf
+
+# ---- Digital with covers, centered on US Letter (8.5 × 11 printing) ----
+# The COLOR edition with covers, every page centered at 100% on a US
+# Letter sheet: reasonable margins on a home/office printer while text
+# size and layout stay exactly those of the 8 × 10 book. Interior comes
+# from the proof-digital mode (Letter carrier, color, cream trim block);
+# the split cover's front/back panels are re-centered onto Letter media
+# below via a ghostscript page offset (no scaling).
+echo "→ Compiling digital-on-Letter interior (mode=proof-digital)..."
+$TYPST --input mode=proof-digital --input edition=main book.typ build/_dwcl-interior.pdf
+
+center_on_letter() {  # $1 = input pdf (single page), $2 = output pdf
+  local w h ox oy
+  read -r w h < <(pdfinfo "$1" | awk '/^Page size:/ {print $3, $5}')
+  ox=$(awk -v w="$w" 'BEGIN {printf "%.2f", (612 - w) / 2}')
+  oy=$(awk -v h="$h" 'BEGIN {printf "%.2f", (792 - h) / 2}')
+  gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite \
+     -dDEVICEWIDTHPOINTS=612 -dDEVICEHEIGHTPOINTS=792 -dFIXEDMEDIA \
+     -dCompatibilityLevel=1.7 -o "$2" \
+     -c "<</PageOffset [$ox $oy]>> setpagedevice" \
+     -f "$1"
+}
+
+echo "→ Assembling digital edition with covers on US Letter..."
+center_on_letter build/_cover-front.pdf build/_cover-front-letter.pdf
+center_on_letter build/_cover-back.pdf  build/_cover-back-letter.pdf
+pdfunite build/_cover-front-letter.pdf \
+         build/_dwcl-interior.pdf \
+         build/_cover-back-letter.pdf \
+         build/capability-matters-digital-with-cover-letter.pdf
+rm build/_cover-front.pdf build/_cover-back.pdf \
+   build/_cover-front-letter.pdf build/_cover-back-letter.pdf \
+   build/_dwcl-interior.pdf
 
 # ---- Half-Letter summary Lulu cover wrap ----
 ov_pages=$(pdfinfo build/capability-matters-overview-half-print.pdf | awk '/^Pages:/ {print $2}')
@@ -171,6 +203,7 @@ for f in capability-matters-digital.pdf \
 done
 for f in capability-matters-print.pdf \
          capability-matters-print-with-cover.pdf \
+         capability-matters-digital-with-cover-letter.pdf \
          cover-print.pdf \
          capability-matters-overview-half-print.pdf \
          cover-overview-half.pdf; do
@@ -181,6 +214,7 @@ echo
 echo "✓ Output:"
 echo "    capability-matters-print.pdf      8 × 10 MAIN VOLUME print interior (grayscale, $pages pp)"
 echo "    capability-matters-print-with-cover.pdf  print interior with front/back cover attached (reading copy)"
+echo "    capability-matters-digital-with-cover-letter.pdf  color edition + covers, centered on US Letter (8.5 × 11 printing)"
 echo "    capability-matters-digital.pdf    8 × 10 MAIN VOLUME digital edition (color, cream)"
 echo "    capability-matters-supplement.pdf 8 × 10 digital supplement (all non-main cases; digital only)"
 echo "    capability-matters-complete.pdf   8 × 10 complete 205-case reference edition (internal)"

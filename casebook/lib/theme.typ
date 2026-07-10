@@ -16,6 +16,11 @@
 //              sheet with an 8 × 10 trim outline + corner crop marks, so
 //              it can be printed at 100% on any office printer to review
 //              exactly what the print edition will trim to.
+//   proof-digital — the proof carrier in COLOR: the digital edition's
+//              8 × 10 page (cream backdrop painted on the trim block)
+//              centered on US Letter at 100%, so the color edition can
+//              be printed on 8.5 × 11 with reasonable margins while text
+//              size and layout stay exactly those of the 8 × 10 book.
 #let mode = sys.inputs.at("mode", default: "digital")
 
 // Edition split (July 2026): "full" — every case (reference build);
@@ -27,9 +32,12 @@
 
 #let is-print   = mode == "print"
 #let is-digital = mode == "digital"
-#let is-proof   = mode == "proof"
+// Both proof modes share the Letter-carrier geometry; only "proof" is
+// grayscale (it proxies the print edition), "proof-digital" keeps color.
+#let is-proof-digital = mode == "proof-digital"
+#let is-proof   = mode == "proof" or is-proof-digital
 
-#let grayscale      = is-print or is-proof
+#let grayscale      = is-print or mode == "proof"
 #let cream-backdrop = is-digital
 
 // ---- Trim, bleed & proof carrier ----
@@ -153,7 +161,10 @@
 #let _trim-T = carrier-y
 #let _trim-B = carrier-y + trim-h
 
-#let crop-marks = if is-proof {
+// Trim outline + corner ticks only — no page-backdrop fill. Shared by
+// crop-marks (regular pages) and divider-bg (which paints its own navy
+// trim block first, and must not have it covered by a backdrop).
+#let _trim-marks = if is-proof {
   // trim outline
   place(top + left, dx: _trim-L, dy: _trim-T,
     rect(width: trim-w, height: trim-h, stroke: 0.3pt + rule-soft))
@@ -169,13 +180,24 @@
   place(top + left, dx: _trim-R, dy: _trim-B + _crop-gap,             line(length: _crop-len, angle: 90deg, stroke: _crop-stroke))
 } else { none }
 
+#let crop-marks = if is-proof {
+  // proof-digital: paint the digital edition's cream backdrop on the
+  // 8 × 10 trim block, so the book page reads on the white Letter sheet
+  if is-proof-digital {
+    place(top + left, dx: _trim-L, dy: _trim-T,
+      rect(width: trim-w, height: trim-h, fill: cream))
+  }
+  _trim-marks
+} else { none }
+
 // Chapter-divider fill/background. A full-bleed navy divider can't
 // bleed to the Letter edge in proof, so instead paint the 8 × 10 trim
-// block on the carrier and keep the crop marks.
+// block on the carrier and keep the trim marks (no cream backdrop —
+// it would cover the navy block).
 #let divider-fill = if is-proof { none } else { navy }
 #let divider-bg = if is-proof {
   place(top + left, dx: carrier-x, dy: carrier-y, rect(width: trim-w, height: trim-h, fill: navy))
-  crop-marks
+  _trim-marks
 } else { none }
 
 // ---- Who builds the fix: expertise + tools per failure mode ----
