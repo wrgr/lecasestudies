@@ -143,6 +143,12 @@
     v(3pt)
   }
 
+  // The pull quote renders on the narrative page (after the diagram, or
+  // in the figure slot when there is none) — every case carries a visual
+  // on the narrative side, and the Lens page keeps room for the
+  // connection figure.
+  let quote-in-narrative = quote != none
+
   // Shared LE Lens page.
   let lens-page = block(width: 100%, {
     eyebrow("The Learning Engineering Lens", color: teal)
@@ -150,7 +156,7 @@
     line(length: 100%, stroke: 0.5pt + rule-soft)
     v(3pt)
 
-    if quote != none {
+    if quote != none and not quote-in-narrative {
       pullquote(quote, quote-source)
       v(2pt)
     }
@@ -158,6 +164,11 @@
     lens-block("LE Insight", le-insight)
     v(2pt)
     lens-block("LENS Approach", lens-approach)
+    v(2pt)
+
+    // Where this case sits: domain → modes → LENS competency, plus the
+    // induced and CLO anchors — the three-anchor convention rendered.
+    connection-figure(domains-list, modes-code, lens-anchor, induced-anchor, clo-anchor, kind)
     v(2pt)
 
     if approaches != none {
@@ -213,11 +224,18 @@
         text(font: sans, size: body-size, fill: text-dark, sec)
       }
       // Diagram sits after the narrative, so page 1 carries the summary and
-      // text and the figure lands on page 2.
+      // text and the figure lands on page 2. Cases without a diagram get
+      // their pull quote here instead, so every case carries a figure-slot
+      // visual on the narrative side.
       if diagram != none {
         v(6pt)
         diagram
         v(5pt)
+      }
+      if quote-in-narrative {
+        v(5pt)
+        pullquote(quote, quote-source)
+        v(4pt)
       }
       // Parity + structure probe: marker count must equal refs length,
       // and this point (where references begin) should sit on page 2.
