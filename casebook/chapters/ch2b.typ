@@ -307,7 +307,7 @@
     ),
     after: (
       [Carry the conditional language ("effect was conditional on peer norms") verbatim into every downstream communication; a headline-only reading and an opposite-headline reading both miss the substance.],
-      [Treat the treatment-effect heterogeneity as program documentation, not as a nuisance to laundered through an average effect; the equity-relevant design commitment is to surface the heterogeneity, not to conceal it.],
+      [Treat the treatment-effect heterogeneity as program documentation, not as a nuisance to be laundered through an average effect; the equity-relevant design commitment is to surface the heterogeneity, not to conceal it.],
       [Build the next adaptation against the moderator: where would the intervention work, what peer-norm context would it land in, and what is the institutional path to creating that context where it does not yet exist?],
     ),
   ),
@@ -366,7 +366,7 @@
     knowledge tracing to model each student's mastery and adapts
     instruction accordingly, and a RAND Corporation randomized trial found
     a statistically significant positive effect on Algebra I achievement — about
-    0.20 SD for high school students in the second year of use, with no
+    0.21 SD for high school students in the second year of use, with no
     significant effect in year one and a middle-school estimate that did not
     reach significance.
     The system is a learning-engineering success in the discipline's own
@@ -632,7 +632,7 @@
     [Cervantes, Floryanzia, Sharp, Gray-Roncal, & Johnson (2023), "Empowering Trailblazers toward Scalable, Systematized, Research-Based Workforce Development," _ASEE Annual Conference_, doi:10.18260/1-2--43271.],
     [CIRCUIT program documentation (JHU Hub, 2017 – present) — institutional program description.],
     [National Academies / NSF research on undergraduate research experience effects on STEM persistence (broader literature against which the case sits).],
-    [v2 paired case (119) — CIRCUIT proofreading + MICrONS — the deployed-capability companion.],
+    [Paired case (78) — CIRCUIT proofreading + MICrONS — the deployed-capability companion.],
   ),
   quote: [The deliverable is the replicable model, not the program brand. The pillars are operationalized for independent evaluation.],
   quote-source: "Editors' synthesis of Cervantes et al. (2023).",
@@ -679,7 +679,7 @@
   year: "2016",
   domains-list: ("education at scale", "machine learning", "memory and skill"),
   modes-code: "TD",
-  impact: "Settles & Meeder (ACL 2016) introduced Half-Life Regression (HLR), a trainable spaced-repetition model that learns per-item forgetting rates from large-scale learner data; HLR was deployed in Duolingo's production review-scheduling system and the published evaluation reports improvements over heuristic schedulers (Leitner, Pimsleur) on Duolingo's own predictive metric and on a 14-day return-engagement metric",
+  impact: "Settles & Meeder (ACL 2016) introduced Half-Life Regression (HLR), a trainable spaced-repetition model that learns per-item forgetting rates from large-scale learner data; HLR was deployed in Duolingo's production review-scheduling system and the published evaluation reports improvements over heuristic schedulers (Leitner, Pimsleur) on Duolingo's own predictive metric and on a daily (next-day) retention metric",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -698,7 +698,7 @@
     scheduling system; the published evaluation compares HLR
     against heuristic schedulers (Leitner spacing, Pimsleur
     intervals) on Duolingo's predictive recall metric and on a
-    14-day learner return-engagement metric, and reports
+    daily (next-day) learner-retention metric, and reports
     improvements on both. The case is one of the few published
     instances of a spaced-repetition algorithm being deployed and
     evaluated against meaningful behavioral outcomes at consumer
@@ -706,7 +706,7 @@
     time of the study). The hedges that survive into the case
     verbatim: the evaluation is a single-vendor study, the
     "learning" outcome is measured by Duolingo's predictive metric
-    and 14-day return rather than independent language-proficiency
+    and next-day retention rather than independent language-proficiency
     assessment, and the generalization to other content domains
     rests on the structural argument rather than a multi-vendor
     evidence base.
@@ -734,7 +734,7 @@
       whose half-life is a regression on item features (language,
       part of speech, difficulty proxies) and per-learner
       practice history. The model is fit on aggregated Duolingo
-      practice data — hundreds of millions of trials — and
+      practice data — roughly 13 million learning traces — and
       produces per-item half-life estimates that drive the
       scheduling: review when the estimated recall probability
       falls to a target threshold.#cn()
@@ -744,8 +744,8 @@
       baselines on two outcomes. The first is Duolingo's
       predictive metric — how well the scheduler's model of
       recall matches observed recall on held-out practice data.
-      The second is a downstream behavioral outcome: 14-day
-      learner return rate, which Duolingo treats as a proxy for
+      The second is a downstream behavioral outcome: daily
+      (next-day) learner retention, which Duolingo treats as a proxy for
       engagement-driven learning continuation. HLR improves on
       both axes over Leitner, Pimsleur, and a simpler logistic
       baseline. The paper deploys HLR into the live
@@ -773,7 +773,7 @@
       vendor study published by Duolingo researchers about a
       Duolingo product; independent replication at comparable
       scale is not in the literature. The behavioral outcome
-      is Duolingo's 14-day return rate, which is a sensible
+      is Duolingo's daily next-day retention, which is a sensible
       proxy for engagement but is not a language-proficiency
       assessment — the case does not say HLR makes learners
       more proficient than Leitner does; it says HLR does
@@ -792,15 +792,15 @@
   beats: (
     "Spaced-repetition theory from Ebbinghaus (1885); operational heuristics from Leitner (1972), Pimsleur (1967), SuperMemo (1985)",
     "Settles & Meeder (ACL 2016) — Half-Life Regression learns per-item half-life from practice data using item features and history",
-    "Deployed in Duolingo's production review scheduler; trained on hundreds of millions of trials",
-    "Reported improvements on Duolingo's predictive metric and on 14-day learner return rate vs. Leitner / Pimsleur / logistic baselines",
-    "Hedges preserved: single-vendor study; 14-day return is engagement proxy not proficiency assessment; cross-domain generalization is structural argument not replication",
+    "Deployed in Duolingo's production review scheduler; trained on roughly 13 million learning traces",
+    "Reported improvements on Duolingo's predictive metric and on daily (next-day) retention vs. Leitner / Pimsleur / logistic baselines",
+    "Hedges preserved: single-vendor study; next-day retention is engagement proxy not proficiency assessment; cross-domain generalization is structural argument not replication",
   ),
   approaches: (
     during: (
       [Treat the scheduling parameter (item half-life) as a quantity to learn from data rather than to fix by heuristic. The cost of learning it is the data infrastructure the production system already has; the heuristic was a substitute for missing data, not a principled choice.],
       [Instrument the production system to record the practice events that the model needs (item, learner, delay, outcome) so the model can be fit and re-fit on observed behavior at consumer scale.],
-      [Choose the deployment outcome metric carefully. Duolingo's choice — predictive recall + 14-day return — is defensible for an engagement-driven product; whether it is the right metric for a proficiency-driven application is a different decision.],
+      [Choose the deployment outcome metric carefully. Duolingo's choice — predictive recall + next-day retention — is defensible for an engagement-driven product; whether it is the right metric for a proficiency-driven application is a different decision.],
     ),
     after: (
       [Carry the single-vendor hedge into communication about the case. HLR is the strongest available evidence for trainable scheduling at consumer scale; it is not multi-vendor evidence and it is not a language-proficiency study.],
@@ -814,7 +814,7 @@
     [Pimsleur, P. (1967), "A memory schedule," _Modern Language Journal_ 51(2):73–75 — graduated-interval recall heuristic.],
     [Leitner, S. (1972), _So lernt man lernen_ — Leitner-box spacing heuristic.],
   ),
-  quote: [HLR does better on the predictive metric and on 14-day learner return. The case does not say it makes learners more proficient than Leitner does.],
+  quote: [HLR does better on the predictive metric and on next-day (daily) retention. The case does not say it makes learners more proficient than Leitner does.],
   quote-source: "Editors' synthesis of Settles & Meeder (2016).",
   le-insight: [
     Half-Life Regression is one of the few peer-reviewed
@@ -1184,7 +1184,7 @@
   year: "2014 – present",
   domains-list: ("K-12 mathematics", "homework support", "formative assessment"),
   modes-code: "TKD",
-  impact: "Cluster RCT across 46 schools and 3,035 students: 7th-graders assigned to ASSISTments outperformed controls on end-of-year math; largest gains for lower-performing students; minority students benefited more from the intervention; effect persisted into 8th-grade outcomes in 2020 follow-up",
+  impact: "Cluster RCT across 43 schools and 2,850 students (Maine): 7th-graders assigned to ASSISTments outperformed controls on end-of-year math; largest gains for lower-performing students; minority students benefited more from the intervention; effect persisted into 8th-grade outcomes in 2020 follow-up",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1193,7 +1193,7 @@
   clo-anchor: "CLO-2, CLO-4",
   summary: [
     The Roschelle, Feng, Murphy, and Mason cluster RCT (AERA
-    Open 2016), conducted across 46 schools and 3,035 students,
+    Open 2016), conducted across 43 schools and 2,850 students in Maine,
     found that 7th-graders assigned to ASSISTments outperformed
     controls on end-of-year mathematics, with the largest gains
     for lower-performing students and a heterogeneous-effect
@@ -1229,8 +1229,8 @@
       not support.#cn()
     ],
     [
-      The trial cluster-randomized 46 schools across multiple
-      states and assigned 3,035 7th-grade students to either an
+      The trial cluster-randomized 43 schools in Maine
+      and assigned 2,850 7th-grade students to either an
       ASSISTments condition or a business-as-usual homework
       condition. The outcome instrument was end-of-year
       mathematics achievement. The headline finding is positive:
@@ -1292,7 +1292,7 @@
     ],
   ),
   beats: (
-    "Roschelle et al. 2016 cluster RCT: 46 schools, 3,035 students; ASSISTments-assigned 7th-graders outperformed controls",
+    "Roschelle et al. 2016 cluster RCT: 43 schools, 2,850 students (Maine); ASSISTments-assigned 7th-graders outperformed controls",
     "Heterogeneity: largest gains for lower-performing students; minority students benefited more — pre-specified equity-relevant outcome",
     "Murphy et al. 2020: 7th-grade effect persisted into 8th-grade outcomes (longitudinal follow-through)",
     "Arnold Ventures extension: lower-cost virtual-training adaptation in rural areas, longitudinal through end of 8th grade",
