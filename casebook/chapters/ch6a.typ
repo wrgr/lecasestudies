@@ -794,7 +794,7 @@
   ),
   references: (
     [U.S. MSHA, _Internal Review of MSHA's Actions at Upper Big Branch_ and the accident investigation (2011–2012) — the dual records and the 29 deaths.],
-    [Governor's Independent Investigation Panel (J. McAtee, 2011) — mine conditions: methane, ventilation, and coal-dust inerting.],
+    [Governor's Independent Investigation Panel (J. Davitt McAteer, 2011) — mine conditions: methane, ventilation, and coal-dust inerting.],
     [MSHA and U.S. DOJ findings — suppressed methane readings, disabled monitors, and falsified pre-shift examinations.],
     [_United States v. Blankenship_ (S.D.W. Va., 2015–2016) — the misdemeanor conviction and felony acquittals.],
     [H. Berkes / NPR investigative reporting on Massey Energy.],
@@ -925,7 +925,8 @@
       the CSB had already documented at Texas City. Government and academic
       reviews found training that had not covered the well-control situation
       the crew faced, an unclear chain of command, and a cascade of failed
-      defenses — "a complex and interlinked series of mechanical failures,
+      defenses that BP's own accident investigation report summed up as "a
+      complex and interlinked series of mechanical failures,
       human judgments, engineering design, operational implementation and
       team interfaces."#cn() That the Commission reached past the rig to the
       whole industry's safety culture marked the failure as structural rather
@@ -2071,7 +2072,7 @@
     [NAIIC (2012) — the accident sequence: seawall overtopping, generator inundation, and three core meltdowns.],
     [NAIIC (2012) — the "made in Japan" cultural and regulatory-capture conclusion (quoted).],
     [Investigation Committee on the Accident (Hatamura government commission, 2012); IAEA Director General, _The Fukushima Daiichi Accident_ (2015) — external-hazard under-estimation.],
-    [C. Lochbaum, E. Lyman & S. Stranahan, _Fukushima: The Story of a Nuclear Disaster_ (2014).],
+    [D. Lochbaum, E. Lyman & S. Stranahan, _Fukushima: The Story of a Nuclear Disaster_ (2014).],
     [Y. Funabashi & K. Kitazawa, _Fukushima in Review_ (2012); cf. INPO (Case 175) and Davis-Besse (Case 160).],
   ),
   quote: [What must be admitted — very painfully — is that this was a disaster \"Made in Japan.\"],
@@ -2684,7 +2685,7 @@
   ),
   references: (
     [CrowdStrike, _Falcon Content Update: Preliminary Post-Incident Review_ (July 2024) — the content-vs-code testing and staged-rollout gap (paraphrased).],
-    [CrowdStrike PIR (2024) — the configuration-file logic error, the kernel crash, and ~8.5 million affected Windows machines.],
+    [CrowdStrike PIR (2024) — the configuration-file fault and the kernel crash; the ~8.5 million affected Windows machines figure is Microsoft's (D. Weston, 20 July 2024).],
     [Microsoft resilient-engineering analyses and Windows kernel-access review (2024).],
     [U.S. GAO post-incident analysis and Senate Homeland Security hearings (2024) — concentration risk in endpoint security.],
     [B. Beyer et al. (eds.), _Site Reliability Engineering_ (2016) — staged rollout and canarying; cf. Knight Capital (Case 143).],
