@@ -92,7 +92,7 @@
       unintended transfer of control easy to trigger and hard to notice —
       a trap waiting for an under-trained crew. The companion Strategic
       Readiness Review, commissioned by the Secretary of the Navy and led
-      by retired Admiral Phil Balisle, reached further into the
+      by retired Admiral Gary Roughead and Michael Bayer, reached further into the
       institution: a decade of "can-do" responses to mounting demand had
       eroded the manning, certification, and maintenance margins the
       surface force was built on, and the readiness reports senior leaders
@@ -530,7 +530,7 @@
   year: "1991 – 2014",
   domains-list: ("defense",),
   modes-code: "THK",
-  impact: "24% of U.S. KIA in Desert Storm from friendly fire (35 of 146) — an order of magnitude above the historical baseline",
+  impact: "24% of U.S. KIA in Desert Storm from friendly fire (35 of 146) — well above the historical baseline",
   diagram: dgm.dgm-fratricide,
   kind: "failure",
   summary: [
@@ -564,7 +564,7 @@
       service members killed in action, 35 — about 24% — died by
       friendly fire, and 72 of 467 wounded (15%) were hit by their own
       side.#cn() An A-10 strike on U.S. LAV-25s near Khafji killed seven
-      Marines; a single A-10 attack on British Warrior vehicles killed nine —
+      Marines; an A-10 attack on British Warrior vehicles killed nine —
       each an aircraft firing on friendly vehicles it had failed to identify,
       the recurring shape of the problem. Whatever the true baseline, a
       quarter of American combat deaths from one's own forces could not be
