@@ -654,7 +654,7 @@
   induced-anchor: "5.1",
   lens-anchor: "D5+D1/PT4",
   clo-anchor: "CLO-1, CLO-5",
-  coi: "Contribution: an editor has research adjacency to connectomics programs discussed here. Anchored to widely cited primary position papers and independent journalism, not the editor's own work; the critical retrospective is the deliberate safeguard.",
+  coi: "Institutional overlap: an editor works in the connectomics field adjacent to this case and shares institutional ties to the BRAIN research community; no editor authored or contributed to this work. Anchored to widely cited primary position papers and independent journalism, not the editor's own work; the critical retrospective is the deliberate safeguard.",
   summary: [
     The BRAIN Initiative is one of the few large-program launches in the
     corpus whose governance trail is publicly documented end-to-end: a
