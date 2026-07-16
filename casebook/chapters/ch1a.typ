@@ -1157,6 +1157,7 @@
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
   clo-anchor: "CLO-4",
+  coi: "Institutional overlap: an editor shares an institution (Johns Hopkins) with an author of this work; no editor was personally involved. The disputed mortality estimate is contested in the case itself.",
   summary: [
     Medical error in the United States is not a single incident but a
     systemic condition that the system's own measurement instruments

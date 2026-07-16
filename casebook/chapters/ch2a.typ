@@ -503,7 +503,7 @@
   induced-anchor: "8.1",
   lens-anchor: "D4/PT5",
   clo-anchor: "CLO-4",
-  coi: "An editor of this volume shares an institution (Johns Hopkins School of Engineering) with the underlying study's authors. The case is included on the strength of the published peer-reviewed evidence in the Journal of Criminal Justice (2022); editorial framing maintains critical distance.",
+  coi: "Institutional overlap: an editor shares an institution (Johns Hopkins School of Engineering) with an author of this work; no editor was personally involved. Included on the published peer-reviewed evidence (Journal of Criminal Justice, 2022); editorial framing keeps critical distance.",
   summary: [
     Johnson and colleagues, writing in the _Journal of Criminal
     Justice_ in 2022, analyzed the relationship between
@@ -1733,7 +1733,7 @@
   induced-anchor: "8.3",
   lens-anchor: "D5/PT5",
   clo-anchor: "CLO-4, CLO-5",
-  coi: "John Katzman is a collaborator with the editors' home institution (Johns Hopkins) without being intimately involved in the underlying work; the affiliation is disclosed. Katzman is not associated with the specific vendors named in this case.",
+  coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. He is not associated with the specific vendors named here.",
   summary: [
     Engler's 2021 Brookings paper documents the two-stage
     architecture of contemporary enrollment-management algorithms:
@@ -1915,7 +1915,7 @@
   induced-anchor: "8.1",
   lens-anchor: "D5/PT5",
   clo-anchor: "CLO-4, CLO-5",
-  coi: "John Katzman is a collaborator with the editors' home institution (Johns Hopkins) without being intimately involved in the underlying work; the affiliation is disclosed. Burd's volume is independent of Katzman.",
+  coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Burd's volume is independent of Katzman.",
   summary: [
     Burd's 2020 New America report analyzes federal IPEDS data on
     public four-year universities' institutional-aid distribution
@@ -2091,7 +2091,7 @@
   induced-anchor: "5.3",
   lens-anchor: "D5/PT6",
   clo-anchor: "CLO-5, CLO-3",
-  coi: "John Katzman is a collaborator with the editors' home institution (Johns Hopkins) without being intimately involved in the underlying work; the affiliation is disclosed. Katzman founded 2U, which is central to the OPM debate but not named in this GAO report; the affiliation is disclosed for transparency.",
+  coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Katzman founded 2U — central to the OPM debate, though not named in this GAO report.",
   summary: [
     The Government Accountability Office's April 2022 audit
     (GAO-22-104463) names a structural oversight gap in the
@@ -2271,7 +2271,7 @@
   induced-anchor: "5.4",
   lens-anchor: "D5/PT6",
   clo-anchor: "CLO-5, CLO-3",
-  coi: "John Katzman is a collaborator with the editors' home institution (Johns Hopkins) without being intimately involved in the underlying work; the affiliation is disclosed. Katzman founded 2U but had departed by the time of the USC MSW expansion documented in this case.",
+  coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Katzman founded 2U but had departed before the USC MSW expansion documented here.",
   summary: [
     USC's online Master of Social Work program grew from about
     300 students per cohort before 2010 to more than 3,000 students
@@ -2451,7 +2451,7 @@
   induced-anchor: "5.4",
   lens-anchor: "D5/PT5",
   clo-anchor: "CLO-4, CLO-5",
-  coi: "John Katzman co-founded 2U and is a collaborator with the editors' home institution (Johns Hopkins) without being intimately involved in the underlying litigation; the affiliation is disclosed.",
+  coi: "Institutional overlap: John Katzman co-founded 2U and collaborates with an editor's institution (Johns Hopkins) but was not involved in the underlying litigation.",
   summary: [
     The consolidated federal securities class action against 2U,
     Inc. — filed December 2019 in the District of Maryland before

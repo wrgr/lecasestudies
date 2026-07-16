@@ -1088,7 +1088,7 @@
   induced-anchor: "2.1",
   lens-anchor: "D4/PT2",
   clo-anchor: "CLO-4",
-  coi: "An editor of this volume leads a group at the Johns Hopkins University Applied Physics Laboratory that contributed engineering support to this system (the editor was not personally involved in the build); the case is included on the strength of the published peer-reviewed record and independent recognition.",
+  coi: "Contribution: an editor leads the Johns Hopkins APL group that contributed engineering support to this system; the editor was not personally involved in the build. Included on the published peer-reviewed record and independent recognition.",
   summary: [
     On 22 January 2020 — one day after the United States reported
     its first COVID-19 case — Lauren Gardner's Center for Systems
