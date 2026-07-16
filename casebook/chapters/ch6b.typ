@@ -258,8 +258,8 @@
     ],
     [
       The federal-program-management response began in earnest in
-      1996 and accelerated through 1997 with the creation of the
-      President's Council on Year 2000 Conversion and the OMB
+      1996 and accelerated through 1997–1998 with the creation of the
+      President's Council on Year 2000 Conversion (established February 1998) and the OMB
       quarterly reporting cycle. Federal mission-critical systems
       were inventoried at line-item granularity — the GAO report
       series tracked the proportion of federal mission-critical
@@ -707,7 +707,7 @@
     that survives into the case: the 45%-led-to-improvement figure is
     self-reported by the operating program, not independently
     audited. The case is the non-aviation companion to ASRS / CRM in
-    v1 (Cases 117 + 45), keeping the
+    v1 (Cases 117 + 119), keeping the
     non-punitive-reporting-with-credible-commitment competency from
     resting entirely on aviation evidence.
   ],
