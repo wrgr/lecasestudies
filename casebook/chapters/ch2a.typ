@@ -126,7 +126,7 @@
     happens when a discipline has not engineered its own capacity to
     update on contrary evidence. The measurement instrument worked.
     The institutional architecture for acting on what it found did
-    not. Compare to Case 1 (Makary methodology debate) and Case 7
+    not. Compare to Case 8 (Makary methodology debate) and Case 7
     (VA Wait-Time): in each, a measurement that returned an
     unwelcome answer was contested rather than absorbed.
   ],
@@ -346,8 +346,8 @@
     remediation, so it is a failure / diagnosis case. The harm
     comes directly from validation that did not stratify across
     skin tone, surfacing a group-specific failure in a deployed
-    system. Trio with Cases 25 (eGFR), 106 (pulse oximetry), and
-    107 (Hoffman pain bias) at the race-construct-and-validation
+    system. Trio with Cases 25 (eGFR), 26 (pulse oximetry), and
+    6 (Hoffman pain bias) at the race-construct-and-validation
     layer.
   ],
   sections: (
@@ -412,7 +412,7 @@
     ],
     [
       Drafted alongside the race-construct trio (Cases 25
-      eGFR, 106 pulse oximetry, 107 Hoffman pain bias), the
+      eGFR, 26 pulse oximetry, 6 Hoffman pain bias), the
       proctoring case extends the validation-must-be-
       demographically-stratified lesson into the ed-tech and
       assessment context. The structural form is the same as
@@ -432,7 +432,7 @@
     "Yoder-Himes et al. _Frontiers in Education_ 2022 — first published quantitative study of facial-detection bias in this class of software",
     "Students with darker skin tones and Black students significantly more likely to be flagged for instructor review for potential cheating",
     "Intersectional finding: women with the darkest skin tones far more likely to be flagged than other groups",
-    "Failure / diagnosis case: documents the disparity, not a remediation; trio with Cases 25 (eGFR), 106 (pulse oximetry), 107 (Hoffman pain bias)",
+    "Failure / diagnosis case: documents the disparity, not a remediation; trio with Cases 25 (eGFR), 26 (pulse oximetry), 6 (Hoffman pain bias)",
   ),
   approaches: (
     during: (
@@ -471,8 +471,8 @@
     discipline, and in Domain 5 (Navigating Sociotechnical
     Constraints) for the institutional resolution mechanism
     that has to handle the case where the flag was generated
-    by software bias. Trio with Cases 25 (eGFR), 106 (pulse
-    oximetry), and 107 (Hoffman pain bias) at the
+    by software bias. Trio with Cases 25 (eGFR), 26 (pulse
+    oximetry), and 6 (Hoffman pain bias) at the
     race-construct-and-validation layer.
   ],
   literature-items: (
@@ -848,7 +848,7 @@
   lens-approach: [
     Ofqual A-level 2020 is the change-control-and-disclosure-as-
     governance-artifacts case at national scale (induced 5.4;
-    LENS D4+D3/PT5; CLO-4 and CLO-5). LENS uses it in Domain 4
+    LENS D4+D5/PT5; CLO-4 and CLO-5). LENS uses it in Domain 4
     (Test and Evaluation) for the consultation-with-affected-
     stakeholders process as the test surface and in Domain 5
     (Navigating Sociotechnical Constraints) for the cohort-size
@@ -1187,7 +1187,7 @@
   references: (
     [Special Investigators, _Final Report on Atlanta Public Schools_ (2011) — the organized cheating and the quoted finding.],
     [_Atlanta Journal-Constitution_ investigative series (2009–2011) — the erasure-rate analysis.],
-    [_State of Georgia v. Hall et al._ (2014–2015) — indictments and RICO convictions.],
+    [_State of Georgia v. Hall et al._ (2013–2015) — indictments and RICO convictions.],
     [Koretz, D. (2017), _The Testing Charade_ — high-stakes-testing distortion.],
     [Campbell, D. (1976), "Assessing the Impact of Planned Social Change" — Campbell's Law.],
   ),
@@ -1778,7 +1778,7 @@
       The vendor landscape Engler names is large and concentrated.
       Ruffalo Noel Levitz works with roughly 300 institutions; EAB
       with 150; Rapid Insight with 150; Capture Higher Ed with
-      100; Othot with more than 30; Whiteboard Higher Education
+      100; Othot with around 30; Whiteboard Higher Education
       and Civitas Learning round out the named tier. Vendor
       marketing reports characteristic effect sizes: the University
       of Washington's 23 percent yield gain; EAB's 33 percent
@@ -1841,7 +1841,7 @@
     "Two-stage architecture: predict enrollment probability per accepted applicant, then optimize aid offer for net tuition or yield",
     "Seven major vendors named: Ruffalo Noel Levitz, EAB, Rapid Insight, Capture Higher Ed, Othot, Whiteboard, Civitas Learning",
     "Vendor-reported case studies: 23% yield gain (Washington), 33% net tuition gain with 6-point discount cut (EAB), 173 added freshmen (Othot)",
-    "Inversion of Case 80 (Georgia State support-trigger) and pair with Cases 186 (Bartlett lending) and 138 (Gándara community college)",
+    "Inversion of Case 80 (Georgia State support-trigger) and pair with Cases 186 (Bartlett lending) and 86 (Gándara community college)",
     "Engler hedges binding: vendor obscurity, algorithmic vs. manual leveraging, no audit of specific protected-class impact; future validation ongoing",
   ),
   approaches: (
