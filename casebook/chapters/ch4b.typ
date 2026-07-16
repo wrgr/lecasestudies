@@ -831,7 +831,7 @@
   year: "2009 – 2014",
   domains-list: ("defense", "workforce L&D", "intelligent tutoring"),
   modes-code: "HKD",
-  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, US Navy IT graduates with no prior IT experience outscored fleet Information Technology Specialists with an average 7.2 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
+  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, US Navy IT graduates with no prior IT experience outscored fleet Information Technology Specialists with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -846,7 +846,7 @@
     Analyses (Fletcher and Morrison, IDA Document D-4686) compared
     Digital Tutor graduates — US Navy enlistees with no prior IT
     experience — against fleet Information Technology Specialists
-    with an average 7.2 years of experience. The Digital Tutor
+    with an average 9.1 years of experience. The Digital Tutor
     cohort outscored fleet ITs on a knowledge test with an effect
     size of 4.30 and outperformed them on most troubleshooting and
     design tasks; only the Security exercise produced a fleet
@@ -896,7 +896,7 @@
       evaluation that the case rests on. Digital Tutor graduates —
       Navy enlistees with no prior IT background, 16 weeks in — were
       compared against a sample of fleet Information Technology
-      Specialists with an average 7.2 years of operational
+      Specialists with an average 9.1 years of operational
       experience. On a knowledge test, the Digital Tutor cohort
       outscored fleet ITs with an effect size of 4.30 — a
       magnitude that is unusual in workforce L&D research and that
@@ -935,7 +935,7 @@
   ),
   beats: (
     "DARPA Digital Tutor — intelligent tutoring system modelled on expert one-on-one human tutoring; 16-week pipeline for US Navy IT rating",
-    "IDA independent evaluation (Fletcher & Morrison, IDA D-4686): Digital Tutor graduates vs. fleet ITs with 7.2 years' average experience",
+    "IDA independent evaluation (Fletcher & Morrison, IDA D-4686): Digital Tutor graduates vs. fleet ITs with 9.1 years' average experience",
     "Knowledge test effect size 4.30 in favor of Digital Tutor; Digital Tutor cohort outperforms fleet on most troubleshooting/design tasks (Security the exception)",
     "Report concludes the effort 'appears to have achieved its goals'",
     "Hedges preserved: knowledge accounts for ~40% of practical-exercise variance, 'an enabler of performance rather than a direct measure'; architecture detail too scant to reproduce",
@@ -944,7 +944,7 @@
     during: (
       [Specify the operational capability the pipeline must produce in the language of the work — troubleshoot under time pressure, design a workable configuration — not in the language of the existing course's content coverage.],
       [Treat the tutorial discipline (continuous dialogue around authentic problems, pulling toward the resolving conceptual move) as the load-bearing instructional artifact, rather than the content sequence the legacy course inherited.],
-      [Design the evaluation against the operational comparison the program is built to compete with — for Digital Tutor, fleet ITs with 7.2 years of experience — so the result speaks to the capability envelope, not to a within-program improvement.],
+      [Design the evaluation against the operational comparison the program is built to compete with — for Digital Tutor, fleet ITs with 9.1 years of experience — so the result speaks to the capability envelope, not to a within-program improvement.],
     ),
     after: (
       [Report the knowledge-test effect (4.30) and the practical-exercise variance hedge (knowledge accounts for ~40%) together; the headline number is real, and the qualification that knowledge is an enabler rather than a direct measure is part of what makes the result interpretable.],
@@ -958,7 +958,7 @@
     [Fletcher, J. D. (2009). _From behaviorism to constructivism: a philosophical journey from drill and practice to situated learning_. — methodological grounding for the Digital Tutor's tutorial discipline.],
     [Anderson, J. R., Corbett, A. T., Koedinger, K. R., \& Pelletier, R. (1995). Cognitive tutors: Lessons learned. _Journal of the Learning Sciences_, 4(2):167–207. doi:10.1207/s15327809jls0402\_2 — the broader intelligent-tutoring evidence base the Digital Tutor program sits within.],
   ),
-  quote: [The Digital Tutor cohort outscored fleet ITs with 7.2 years' experience on the knowledge test at an effect size of 4.30; the hedge is that knowledge accounts for about 40 percent of practical-exercise variance.],
+  quote: [The Digital Tutor cohort outscored fleet ITs with 9.1 years' experience on the knowledge test at an effect size of 4.30; the hedge is that knowledge accounts for about 40 percent of practical-exercise variance.],
   quote-source: "Editors' synthesis of Fletcher & Morrison (2014), IDA Document D-4686.",
   le-insight: [
     DARPA's Digital Tutor is the cleanest available evidence
@@ -976,7 +976,7 @@
     tutorial-discipline-as-instructional-artifact design move,
     and in Domain 4 (Test and Evaluation) for the
     operational-comparison evaluation against fleet ITs with
-    7.2 years of experience. Pair with CIRCUIT (Cases 78, 68)
+    9.1 years of experience. Pair with CIRCUIT (Cases 78, 68)
     at the workforce-capability-at-the-edge axis — connectomics
     proofreading and Navy IT troubleshooting share the
     structural pattern of compressing operational expertise

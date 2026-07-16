@@ -989,7 +989,7 @@
   year: "1988",
   domains-list: ("defense",),
   modes-code: "HT",
-  impact: "290 civilians killed — the deadliest shootdown of a commercial airliner by a military force; precipitating case for Aegis CIC display and decision-aid doctrine reform, and a central reference in the human-AI teaming literature",
+  impact: "290 civilians killed — one of the deadliest shootdowns of a commercial airliner by a military force; precipitating case for Aegis CIC display and decision-aid doctrine reform, and a central reference in the human-AI teaming literature",
   diagram: dgm.dgm-vincennes,
   kind: "failure",
   scale: "big",
@@ -1001,7 +1001,7 @@
     On 3 July 1988, during a surface skirmish with Iranian gunboats in the
     Persian Gulf, the USS Vincennes shot down Iran Air Flight 655 — a
     civilian Airbus A300 climbing on a scheduled route — killing all 290
-    aboard, the deadliest airliner shootdown by a military force. The
+    aboard, one of the deadliest airliner shootdowns by a military force. The
     Aegis combat system worked: its radar correctly showed the aircraft
     ascending on the published civilian-traffic corridor. Yet operators
     in the Combat Information Center, primed by a simultaneous surface
@@ -1044,7 +1044,7 @@
       climbing through 12,000 feet on its scheduled route to Dubai. The
       Vincennes' crew identified it as a descending, hostile F-14 and
       fired two SM-2 surface-to-air missiles; all 290 people aboard,
-      including 66 children, were killed — the deadliest shootdown of a
+      including 66 children, were killed — one of the deadliest shootdowns of a
       commercial airliner by a military force.#cn() An ascending airliner
       and a diving attack jet are opposite behaviors, yet the crew
       converged on the second while the Aegis radar reported the first.
