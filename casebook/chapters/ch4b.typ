@@ -689,7 +689,7 @@
     gutted seamanship training, the U.S. Navy overhauled how it builds
     surface-warfare competence. It restored the Surface Warfare Officers
     School from CD-ROM self-study to classroom and simulator instruction,
-    stood up Maritime Skills Training Centers on both coasts, created ten
+    stood up Mariner Skills Training Centers on both coasts, created ten
     pass-or-fail career assessments — three of them no-go gates — and
     adopted aviation-style debriefing. New Ready-for-Sea Assessments
     evaluated forward-deployed ships against a deliverable standard; three
@@ -716,7 +716,7 @@
     [
       Beginning in 2018, the Navy restored the Surface Warfare Officers
       School from self-study to classroom-plus-simulator instruction,
-      established Maritime Skills Training Centers on both coasts, roughly
+      established Mariner Skills Training Centers on both coasts, roughly
       tripled ship-driving training hours, and created ten pass-or-fail
       assessments across an officer's career path — three of them no-go
       gates that can halt advancement. The no-go gates were the structural
@@ -772,7 +772,7 @@
     [GAO-21-168 (and GAO-20-154), Navy readiness reform — the lack of systematic outcome evaluation (paraphrased).],
     [Readiness Reform Oversight Council, _One-Year Report_ (2019) — restored training, assessments, and gates.],
     [Navy and NTSB reports on the Fitzgerald and McCain collisions (2017–2019) — the training-degradation antecedent.],
-    [SWOS Norfolk and San Diego Maritime Skills Training Center documentation — simulators and curriculum.],
+    [SWOS Norfolk and San Diego Mariner Skills Training Center documentation — simulators and curriculum.],
     [USNI News reform coverage (2020, 2022) — Ready-for-Sea Assessments and sidelined ships.],
   ),
   quote: [The Navy still lacks systematic evaluation of whether the reforms work.],
@@ -895,8 +895,8 @@
       Document D-4686 / DTIC AD1002362) ran the independent
       evaluation that the case rests on. Digital Tutor graduates —
       Navy enlistees with no prior IT background, 16 weeks in — were
-      compared against a sample of fleet Information Technology
-      Specialists with an average 9.1 years of operational
+      compared against a sample of fleet Information Systems
+      Technicians with an average 9.1 years of operational
       experience. On a knowledge test, the Digital Tutor cohort
       outscored fleet ITs with an effect size of 4.30 — a
       magnitude that is unusual in workforce L&D research and that
