@@ -533,8 +533,9 @@
   kind: "failure",
   summary: [
     On 23 March 2005 a startup at BP's Texas City refinery overfilled a
-    distillation tower — operators were working from instruments that had
-    malfunctioned for years — and venting hydrocarbon vapor found an
+    distillation tower — operators were working from a miscalibrated level
+    transmitter and a redundant high-level alarm that never sounded — and
+    venting hydrocarbon vapor found an
     ignition source and exploded, killing 15 workers in trailers parked
     beside the unit and injuring 180. The Chemical Safety Board found
     accumulated safety-culture decay, deferred maintenance, and a celebrated
@@ -560,13 +561,15 @@
     // -- What Happened --
     [
       On 23 March 2005, during a unit startup, operators overfilled a
-      distillation tower far past its safe level, working from a level
-      indicator that had malfunctioned for years and alarms that did not
-      sound. Hydrocarbon vapor vented, drifted across the site, found an
+      distillation tower far past its safe level, working from a miscalibrated level
+      transmitter that falsely showed the level declining while the tower
+      overfilled, a redundant high-level alarm that never sounded, and an
+      unreadable sight glass. Hydrocarbon vapor vented, drifted across the site, found an
       ignition source — an idling truck — and exploded. Fifteen workers in
       temporary trailers parked beside the unit were killed and about 180
-      injured.#cn() Every contributor had been tolerated as routine for years
-      — the broken indicator, the silent alarms, the trailers parked beside a
+      injured.#cn() Every contributor had been tolerated as routine
+      — the faulty tower instruments, a high-level alarm reported broken
+      repeatedly in the prior two years, the trailers parked beside a
       hazardous unit — so the startup was run blind to a danger the site had
       long since stopped seeing.
     ],
@@ -576,8 +579,10 @@
       influential in the agency's history.#cn() It found accumulated
       safety-culture decay, deferred maintenance, broken instruments
       tolerated as routine, trailers sited dangerously close to a hazardous
-      unit, and a cost-cutting program — branded internally as "1000
-      Day" and "Forward" — celebrated as a success while it consumed the
+      unit, and cost cutting — corporate 25% budget-reduction targets after the
+      1999 Amoco merger and again for 2005, and a 2003 site "1,000 Day
+      Goals" program the CSB faulted for measuring personal safety and cost
+      over process safety — celebrated as a success while it consumed the
       process-safety margin. The CSB drew the distinction that would
       reshape the field: "indicators of personal safety are not
       indicators of process safety."#cn() The Board's force came from
@@ -683,7 +688,7 @@
   courses: ("LEN 4", "LEN 7", "LEN 3",),
   scale: "big",
   evidence-source: "investigation",
-  induced-anchor: "5.4",  // alternate framing adopted: change-control lens captures the "1000 Day"/"Forward" cost-cutting programs as program drivers; the personal-safety-vs-process-safety measurement insight (2.1) preserved as the canonical alternate,
+  induced-anchor: "5.4",  // alternate framing adopted: change-control lens captures the 25% budget-cut targets (1999, 2005) and the 2003 "1,000 Day Goals" site program as program drivers; the personal-safety-vs-process-safety measurement insight (2.1) preserved as the canonical alternate,
   lens-anchor: "D5/PT4",
   clo-anchor: "CLO-5",
 )
@@ -1115,8 +1120,8 @@
       none accountable for the whole. Manufacturer fraud, regulatory capture,
       inspection incompetence, training gaps, and lost institutional memory
       all converged on one building, and because each actor saw only its
-      fragment, each could regard its own part as tolerable. The inquiry
-      called it a "grey elephant" — a danger known but ignored — and the
+      fragment, each could regard its own part as tolerable. It was what one might call
+      a "grey elephant" — a danger known but ignored, hiding in plain sight — and the
       missing capability was anyone owning the integrated risk that everyone
       could see in part but no one held in full.#cn()
     ],
@@ -1154,7 +1159,7 @@
     Grenfell is the strongest evidence in the dataset that capability
     failure can be distributed across many actors, each of whom contributes
     a small piece, none of whom is accountable for the whole. The
-    inquiry's "grey elephant" framing — known but ignored — describes a
+    "grey elephant" framing — a known danger no one owns — describes a
     pattern that LENS treats as a primary governance problem in any
     high-consequence domain.
   ],
@@ -1912,12 +1917,12 @@
     [U.S. Mine Safety and Health Administration, _Report of Investigation: Sago Mine_ (2007) — the seal design, emergency plan, and self-rescue training.],
     [MSHA (2007) — the explosion sequence: lightning ignition in the sealed area, seal failure, twelve dead and one survivor.],
     [MSHA (2007) — the inadequate seal design, emergency plan, and lapsed self-rescue training.],
-    [MSHA (2007) — "multiple equipment, training, and emergency-response shortcomings that compounded their initial trapping" (quoted).],
+    [MSHA (2007) — the finding that the miners faced multiple equipment, training, and emergency-response shortcomings that compounded their initial trapping (paraphrase).],
     [West Virginia state Sago investigation (2006) — the false "twelve alive" miscommunication and the families' ordeal.],
     [Mine Improvement and New Emergency Response (MINER) Act of 2006, Pub. L. 109-236 — refuge chambers and rescue requirements.],
   ),
   quote: [The miners faced multiple equipment, training, and emergency-response shortcomings that compounded their initial trapping.],
-  quote-source: "Mine Safety and Health Administration, Sago Investigation Report, 2007",
+  quote-source: "Paraphrasing the Mine Safety and Health Administration Sago Investigation Report (2007)",
   le-insight: [
     Sago is the case for the cumulative inadequacy pattern in
     industrial accidents. No single failure caused the disaster. Each

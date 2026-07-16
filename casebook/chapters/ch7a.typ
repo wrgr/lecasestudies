@@ -33,7 +33,7 @@
     target. The people assembled to build it knew insurance
     markets and government programs but not technology product launches; key
     technical roles went unfilled, no office clearly owned the integration
-    (CMS thought the contractor CGI was the lead integrator; CGI did not),
+    (CMS acted as its own systems integrator but lacked the capacity for the role, while CGI reported that no party was performing true integration),
     and no end-to-end test was run before launch. The fix-it team that
     rescued the site became the U.S. Digital Service. At root it was a
     capability mismatch at scale: the organization lacked the human
@@ -56,9 +56,10 @@
     // -- What Happened --
     [
       There was no clear division of responsibility among the many government
-      offices involved; CMS believed the contractor CGI was the lead system
-      integrator, and CGI did not share that understanding — so the single
-      most important role on the program was one no party believed it held.
+      offices involved; CMS believed it was itself serving as the systems
+      integrator — a role it lacked the capacity to perform — while CGI
+      reported that no party was performing true systems integration, so the
+      single most important role on the program was one no party actually held.
       No end-to-end test was run before launch, meaning the assembled pieces
       were never exercised together as a user would exercise them. The site
       went live on 1 October 2013 and immediately collapsed under load it had
@@ -109,7 +110,7 @@
   references: (
     [U.S. GAO, Healthcare.gov reports (2014–2016) — the launch, the capability gaps, and the absent end-to-end testing.],
     [HHS Office of Inspector General, _Case Study of CMS Management of the Federal Marketplace_, OEI-06-14-00350 (2016) — unclear ownership and the CMS/CGI integration confusion.],
-    [HHS OIG (2016) — "no single person had a clear understanding of the project's status" (quoted).],
+    [HHS OIG (2016) — "no single person had a clear understanding of the project's status" (paraphrased).],
     [J. Pahlka, _Recoding America_ (2023) — the founding of the U.S. Digital Service out of the rescue.],
     [Eaves & Goldenfein, "The Healthcare.gov Failure" (Harvard, 2014); Mergel et al. (2018), digital-government literature.],
   ),
@@ -330,11 +331,11 @@
 #case(
   number: 182,
   slug: "amazon-hiring-ai-deprecated",
-  title: "Amazon Hiring AI — Trained Bias, Deprecated 2018",
+  title: "Amazon Hiring AI — Trained Bias, Deprecated 2017",
   year: "2014 – 2018",
   domains-list: ("technology", "hiring algorithms", "machine learning"),
   modes-code: "DKN",
-  impact: "Amazon internal recruiting-algorithm project initiated 2014, deprecated 2017 – 2018 after engineers determined the model could not be debiased; trained on ten years of historical resume data in which men predominated in technical roles; the model downgraded resumes containing the word \"women's\" and resumes from all-women's colleges; Reuters single-source investigation Oct 10 2018",
+  impact: "Amazon internal recruiting-algorithm project initiated 2014, team disbanded by early 2017 (Reuters reported Oct 2018) after engineers determined the model could not be debiased; trained on ten years of historical resume data in which men predominated in technical roles; the model downgraded resumes containing the word \"women's\" and resumes from all-women's colleges; Reuters single-source investigation Oct 10 2018",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -402,9 +403,13 @@
       the model architecture.#cn()
     ],
     [
-      Amazon deprecated the project in 2017 – 2018 and did not
-      deploy the model at production scale for hiring decisions.
-      The deprecation is the load-bearing decision in the case:
+      Amazon disbanded the project team by early 2017 and has
+      said the model was never used by recruiters to evaluate
+      candidates. Reuters reported, however, that recruiters
+      "looked at the recommendations" the tool generated without
+      relying solely on them — so "never deployed at production
+      scale" is the company's account rather than an independently
+      verified fact. The withdrawal is the load-bearing decision in the case:
       the engineering team determined that the model could not
       be made fair, and the organization withdrew the project
       rather than deploying it. The case's evidentiary structure
@@ -462,7 +467,7 @@
     "Amazon internal recruiting-algorithm project 2014 – 2018; goal: automate resume screening for technical roles; trained on 10 years of historical resume data",
     "Training-data composition encoded gender imbalance; model downgraded resumes containing \"women's\" and resumes from all-women's colleges",
     "Feature-engineering attempts to debias failed: remaining features carried correlated signal reproducing the same downgrade pattern",
-    "Amazon deprecated the project 2017 – 2018; did not deploy at production scale; deprecation is the load-bearing decision",
+    "Amazon disbanded the project team by early 2017; company says the tool was never used by recruiters, though Reuters reported recruiters looked at its recommendations; the withdrawal is the load-bearing decision",
     "Evidence is Reuters single-source reporting (Oct 10 2018); Amazon never published technical detail; journalism-tier flag binding",
   ),
   approaches: (
@@ -1398,8 +1403,8 @@
     designed and tested for delivering social experiences, not red-teamed
     against systematic harvesting; its API contract assumed benevolent
     developer intent. The architecture worked exactly as designed — the
-    design assumption was wrong. The scandal accelerated the EU's GDPR,
-    helped spur the California Consumer Privacy Act, and produced a
+    design assumption was wrong. The scandal raised the salience of the EU's
+    GDPR (already adopted in 2016 and in force weeks later), helped spur the California Consumer Privacy Act, and produced a
     \$5-billion FTC penalty and consent decree. Cambridge Analytica is the
     book's case for platform-governance failure: a load-bearing assumption
     about how an interface would be used, never stress-tested against abuse.
@@ -1450,7 +1455,8 @@
     ],
     // -- Aftermath & Reform --
     [
-      The scandal accelerated the EU's GDPR, helped spur the California
+      The scandal raised the salience of the EU's GDPR (adopted 2016, in
+      force weeks later), helped spur the California
       Consumer Privacy Act, and produced a \$5-billion FTC penalty and a
       consent decree under which Facebook still operates — the abuse of one
       design assumption reshaping data law across two jurisdictions.#cn() Its
@@ -1842,7 +1848,9 @@
     oversight obligations that follow when a system acts
     autonomously after a triggering event. Direct foil to
     Case 199 (Waymo); pairs with Case 200 (CPUC) on the
-    regulator-side.
+    regulator-side. Case 204 (Frontier) is the paired
+    governance-response treatment of the same October 2023
+    incident — read together, not as duplicates.
   ],
   literature-items: (
     [California DMV Order of Suspension, 24 October 2023],
@@ -2342,7 +2350,7 @@
     [SEC post-Madoff reforms (2009–2010), including the Office of Market Intelligence for tip and referral triage.],
   ),
   quote: [The agency missed numerous opportunities to discover the fraud.],
-  quote-source: "SEC Office of Inspector General Report OIG-509, 2009",
+  quote-source: "Paraphrasing SEC Office of Inspector General Report OIG-509 (2009)",
   le-insight: [
     The Madoff case is the canonical example of a regulator without
     the technical capability to evaluate the evidence it received.

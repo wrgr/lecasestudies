@@ -53,7 +53,7 @@
     recurring audits across the entire fleet lifecycle. The documented
     result is a step-change in non-combat submarine loss rates: 16
     losses across the 48 years before SUBSAFE; one loss (USS Scorpion,
-    not SUBSAFE-certified) across the 62 years since. The Columbia
+    not SUBSAFE-certified) across the 63 years since. The Columbia
     Accident Investigation Board cited SUBSAFE in 2003 as one of three programs
     that could be models for NASA. The honest hedge survives: the zero-loss
     record is correlational across decades with many co-varying
@@ -143,7 +143,7 @@
     "USS Thresher lost April 1963 with 129 aboard; investigation traces the gap to certification of the watertight-integrity boundary",
     "SUBSAFE created within 54 days; formal requirements issued by December 20 1963",
     "'Objective Quality Evidence' — verifiable fact, not probabilistic assessment — at every certification step; annual training and recurring audits",
-    "Non-combat losses: 16 in the 48 years before; one (Scorpion, uncertified) in the 62 years since; Columbia Accident Investigation Board endorsement",
+    "Non-combat losses: 16 in the 48 years before; one (Scorpion, uncertified) in the 63 years since; Columbia Accident Investigation Board endorsement",
     "Zero-loss record is correlational across many co-varying factors over decades; hedge preserved",
   ),
   approaches: (
@@ -629,7 +629,7 @@
     [Edmondson, A. (2018), _The Fearless Organization_ — pre-committed values under stress.],
   ),
   quote: [The Credo is all about the consumer. When those seven deaths occurred, the Credo made it very clear at that point exactly what we were all about.],
-  quote-source: "James Burke (Johnson & Johnson CEO), quoted in Lasting Leadership (Wharton)",
+  quote-source: "James Burke (Johnson & Johnson CEO) — closing sentence quoted in Lasting Leadership (Wharton); opening lead is the editors' paraphrase",
   le-insight: [
     Tylenol is the canonical positive case for institutional response
     to crisis. The capability that was load-bearing was the
