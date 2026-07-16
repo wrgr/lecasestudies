@@ -220,9 +220,9 @@
       documented these calibration gaps and traced them to training data
       that encodes historical patterns of discrimination — so the model
       learns the past's inequities and projects them forward as predictions.#cn()
-      As Baker and Hawn put it, algorithmic bias in education "poses
+      Baker and Hawn's review documents how algorithmic bias in education poses
       significant threats to educational equity, potentially amplifying
-      existing social and economic disparities" — and the harm compounds when
+      existing social and economic disparities — and the harm compounds when
       an instructor with deficit assumptions reads an "at-risk" flag as
       confirmation rather than a cue to help, letting the prediction become a
       self-fulfilling label.#cn()
@@ -262,12 +262,12 @@
     [Surveys of predictive-analytics adoption in U.S. higher education — a large majority of public colleges now use some form.],
     [K. Bird et al., "Are Algorithms Biased in Education? Exploring Racial Bias in Predicting Community College Student Success," _Journal of Policy Analysis and Management_ 44 (2025), 379–402 — racial calibration bias, ~5× higher at the bottom decile depending on the "at-risk" construct.],
     [D. Gándara, H. Anahideh, M. Ison & L. Picchiarini, "Inside the Black Box: Detecting and Mitigating Algorithmic Bias across Racialized Groups in College Student-Success Prediction," _AERA Open_ (2024) — bias traced to training data encoding historical discrimination.],
-    [R. Baker & A. Hawn, "Algorithmic Bias in Education," _International Journal of Artificial Intelligence in Education_ (2021) — "poses significant threats to educational equity…" (quoted).],
+    [R. Baker & A. Hawn, "Algorithmic Bias in Education," _International Journal of Artificial Intelligence in Education_ (2021) — foundational review of algorithmic bias in education.],
     [Analyses of deficit framing and the interpretation of "at-risk" flags by faculty.],
     [Cf. UK A-Level / Ofqual (Case 49); V. Eubanks, _Automating Inequality_ (2018).],
   ),
   quote: [Algorithmic bias in educational systems poses significant threats to educational equity, potentially amplifying existing social and economic disparities.],
-  quote-source: "Baker & Hawn, 2021",
+  quote-source: "Editors' paraphrase of Baker & Hawn (2021)",
   le-insight: [
     Educational predictive analytics is the ongoing live case for
     algorithmic bias at the construct level. The bias is not in the
@@ -1570,8 +1570,7 @@
   year: "2014–2019",
   domains-list: ("education",),
   modes-code: "GTK",
-  impact: "Personalized-learning platform deployed across ~380 U.S. schools; parent revolts in Brooklyn, Cheshire, McPherson, Kennebunk; multiple districts withdrew within two years",
-  diagram: dgm.dgm-inbloom,
+  impact: "Personalized-learning platform deployed across ~380 U.S. schools; parent revolts in Brooklyn, Cheshire, McPherson; multiple districts withdrew within two years",
   kind: "failure",
   summary: [
     Summit Learning, a personalized-learning platform from Summit Public
@@ -1579,7 +1578,7 @@
     U.S. districts from 2015 and reached roughly 380 schools and ~72,000
     students by 2018. By 2019 prominent adopters were withdrawing under
     parent and student pressure — opt-out campaigns in Brooklyn,
-    cancellations in Cheshire, Kennebunk, and McPherson — amid walkouts and
+    cancellations in Cheshire and McPherson — amid walkouts and
     complaints about screen time, disengagement, and data privacy. The
     pedagogy itself (competency-based progression, projects, mentoring) was
     defensible and often effective; what failed was deployment governance.
@@ -1605,7 +1604,7 @@
       By 2018 the platform reached roughly 380 schools and an estimated
       72,000 students, scaling fast on the strength of a free offer and a
       well-funded sponsor. By 2019 its most visible adopters were withdrawing
-      under parent and student pressure: students at Brooklyn's Secondary School for Journalism walked out; districts in Cheshire, Kennebunk, and McPherson cancelled or
+      under parent and student pressure: students at Brooklyn's Secondary School for Journalism walked out; districts in Cheshire and McPherson cancelled or
       scaled back after parent meetings where the unanswered governance
       questions surfaced all at once. Walkouts and complaints about screen
       time, eye strain, disengagement, and data privacy converged into a
@@ -1693,7 +1692,7 @@
   reflection-list: (
     [What is the equivalent of the "free tool, free of governance" pattern in your domain — the offer that bypasses the accountability architecture because it does not yet exist?],
     [Design the parent-reading-level governance artifact that a district should require before adopting an educational-technology platform.],
-    [Summit's withdrawals in Brooklyn, Cheshire, Kennebunk, and McPherson were led by parents, not regulators. What is the equivalent local constituency in your domain that institutional accountability has not yet accommodated, and how would they be heard before deployment rather than after?],
+    [Summit's withdrawals in Brooklyn, Cheshire, and McPherson were led by parents, not regulators. What is the equivalent local constituency in your domain that institutional accountability has not yet accommodated, and how would they be heard before deployment rather than after?],
   ),
   approaches: (
     during: (

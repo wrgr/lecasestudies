@@ -880,3 +880,13 @@ Cases 65–95 reviewed one at a time against primary sources (three sub-waves). 
 - **84 Cognitive Tutor — residual smoothing:** sections[2], beats[1], le-insight, and the title ("Year-Two Positive") still present year-2 significance as whole-sample; decide whether to attribute significance to high schools throughout.
 - **88 LiveHint — omitted result:** the paper reports "no evidence of harmful biases" alongside the differentiation finding; consider a one-clause hedge.
 - **Soft flags (no edit):** 71 "instrument built to measure" overstates a longitudinal application of existing frameworks; 70 "HILS/System" acronym is the editors' framing; 82/92 name/formalization glosses; 76 section-publication venues (TOCHI vs LAK/TLT) unverified; 95 25k-school count + two prose-only citations; 94 Lemmens & Henn 2015→2016 re-confirm.
+
+### Part II checkpoint — editor rulings applied (July 2026, "all rec")
+
+- 82 MMALA: rewritten to the correct five categories (data management, data analysis, pedagogy, ethics, privacy; 16 process areas, levels 0–4) across all affected fields.
+- 80 Georgia State: bundled-intervention hedge added to the Evidence section (advising is one component of a decade-long reform bundle; 32%→54% not cleanly attributable to it).
+- 72 ASSISTments: minority-benefit finding reattributed to Murphy et al. (2020) with the "fragile in a ~93%-white sample / not powered to estimate" caveat; "pre-specified" framing dropped.
+- 84 Cognitive Tutor: year-2 significance attributed to high schools (middle schools n.s.) in the residual fields.
+- 88 LiveHint: "no evidence of harmful biases" hedge added.
+- 46 (ch2a): misattributed quote de-quoted; kept as the casebook's paraphrase of Baker & Hawn (references "(quoted)" tag removed; quote-source relabeled).
+- 54 (ch2a): unverifiable Kennebunk withdrawal cut (4×); placeholder inBloom diagram removed.

@@ -1184,7 +1184,7 @@
   year: "2014 – present",
   domains-list: ("K-12 mathematics", "homework support", "formative assessment"),
   modes-code: "TKD",
-  impact: "Cluster RCT across 43 schools and 2,850 students (Maine): 7th-graders assigned to ASSISTments outperformed controls on end-of-year math; largest gains for lower-performing students; minority students benefited more from the intervention; effect persisted into 8th-grade outcomes in 2020 follow-up",
+  impact: "Cluster RCT across 43 schools and 2,850 students (Maine): 7th-graders assigned to ASSISTments outperformed controls on end-of-year math; largest gains for lower-performing students; a later moderator analysis (Murphy et al. 2020) reported larger minority-student gains, though fragile in the ~93%-white sample; effect persisted into 8th-grade outcomes in the 2020 follow-up",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1196,10 +1196,11 @@
     Open 2016), conducted across 43 schools and 2,850 students in Maine,
     found that 7th-graders assigned to ASSISTments outperformed
     controls on end-of-year mathematics, with the largest gains
-    for lower-performing students and a heterogeneous-effect
-    finding that minority students benefited more from the
-    intervention. Murphy et al. (2020) reported that the
-    7th-grade effect persisted into 8th-grade outcomes. A
+    for lower-performing students. A later moderator analysis
+    (Murphy et al. 2020) reported larger gains for minority
+    students — fragile in the nearly all-white (~93%) trial
+    sample — and found the 7th-grade effect persisted into
+    8th-grade outcomes. A
     subsequent Arnold Ventures-funded extension tested a
     lower-cost virtual-training adaptation in predominantly
     rural areas, with longitudinal follow-through extended
@@ -1247,16 +1248,15 @@
     [
       The heterogeneity finding is what makes the case
       equity-relevant. Effect-size estimates were largest for
-      lower-performing students, and minority students benefited
-      more from the intervention than the average effect would
-      suggest. The pattern is the one Case 55 (Engler /
-      enrollment algorithms) names as the inversion target:
-      prediction and adaptive feedback used to trigger support
-      rather than to gatekeep aid. The heterogeneity finding is
-      not an artifact of subgroup analysis chosen post hoc; it
-      is the pre-specified equity-relevant outcome the trial
-      was designed to estimate, and it is the load-bearing
-      result for the case's pedagogical placement.#cn()
+      lower-performing students. A later moderator analysis
+      (Murphy et al. 2020) reported that minority students
+      benefited more than the average effect would suggest — a
+      finding that is fragile in the nearly all-white (~93%)
+      trial sample and was not an outcome the 2016 trial was
+      powered to estimate. The pattern is the one Case 55
+      (Engler / enrollment algorithms) names as the inversion
+      target: prediction and adaptive feedback used to trigger
+      support rather than to gatekeep aid.#cn()
     ],
     [
       Murphy et al. (2020) extended the evaluation into a
@@ -1293,14 +1293,14 @@
   ),
   beats: (
     "Roschelle et al. 2016 cluster RCT: 43 schools, 2,850 students (Maine); ASSISTments-assigned 7th-graders outperformed controls",
-    "Heterogeneity: largest gains for lower-performing students; minority students benefited more — pre-specified equity-relevant outcome",
+    "Heterogeneity: largest gains for lower-performing students; a later moderator analysis (Murphy et al. 2020) reported larger minority gains — fragile in the ~93%-white sample, not pre-specified",
     "Murphy et al. 2020: 7th-grade effect persisted into 8th-grade outcomes (longitudinal follow-through)",
     "Arnold Ventures extension: lower-cost virtual-training adaptation in rural areas, longitudinal through end of 8th grade",
     "Pair with Case 84 (Cognitive Tutor horizon), Case 17 (spaced ed RCTs), Case 55 (Engler — equity-relevant inversion of gatekeeping)",
   ),
   approaches: (
     during: (
-      [Pre-specify the equity-relevant heterogeneity outcomes the trial will estimate; the case's load-bearing finding is pre-specified, not post-hoc, and the pre-specification is the methodological discipline that makes the finding credible.],
+      [Pre-specify equity-relevant heterogeneity outcomes before running the trial rather than mining them afterward; the ASSISTments minority-benefit finding surfaced only in a later moderator analysis and is fragile in a nearly all-white sample — a caution about trusting subgroup effects a trial was not powered to estimate.],
       [Design the teacher-side change to the minimum required for the intervention to operate; the case's external-validity strength depends on its having estimated an effect achievable under realistic adoption conditions.],
       [Build the longitudinal follow-through into the trial's data infrastructure from the start; the 7th-to-8th-grade persistence finding required data structures that single-year trials do not necessarily provide.],
     ),
@@ -1316,7 +1316,7 @@
     [Heffernan, N. T., & Heffernan, C. L. (2014), "The ASSISTments ecosystem," _International Journal of AI in Education_ 24:470–497 — platform design and research-loop description.],
     [Arnold Ventures RCT documentation of the virtual-training-adaptation arm — longitudinal follow-through through end of 8th grade.],
   ),
-  quote: [The heterogeneity finding is pre-specified, not post hoc. The largest gains are for lower-performing students; minority students benefit more. The case's equity-relevant result is the load-bearing one.],
+  quote: [The largest gains are for lower-performing students. A later moderator analysis reports larger minority gains — but fragile in a nearly all-white sample, and not what the 2016 trial was powered to estimate.],
   quote-source: "Editors' synthesis of Roschelle et al. (2016) and Murphy et al. (2020).",
   le-insight: [
     ASSISTments is the case in the corpus with the cleanest
@@ -2680,7 +2680,13 @@
       Eliminating the gap rather than narrowing it is the decisive result:
       the overall rate rose while the disparities by race and income closed,
       so the gain did not come at the expense of the students the system was
-      most at risk of leaving behind.#cn()
+      most at risk of leaving behind. The attribution carries a load-bearing
+      hedge: most of the 32%-to-54% rise accumulated across a decade in which
+      GPS Advising (launched 2012) was one component of a broader bundle of
+      reforms — meta-majors, Panther Retention Grants, freshman learning
+      communities, block scheduling — so the isolated causal contribution of
+      predictive advising cannot be cleanly separated from the co-occurring
+      changes.#cn()
     ],
     // -- What Transferred --
     [
@@ -2936,7 +2942,7 @@
   year: "2024",
   domains-list: ("higher education (Brazil)", "learning analytics", "institutional governance"),
   modes-code: "KN",
-  impact: "MMALA is a maturity model spanning infrastructure, human resources, ethics, and pedagogy; expert evaluation rated it comprehensive and suitable; three-institution validation exercise in Brazilian universities found it could outline essential practices and support self-assessment for scaling — instrument for responsible adoption, downstream learning outcome open",
+  impact: "MMALA is a maturity model spanning five categories — data management, data analysis, pedagogy, ethics, and privacy (16 process areas, maturity levels 0–4); expert evaluation rated it comprehensive and suitable; three-institution validation exercise in Brazilian universities found it could outline essential practices and support self-assessment for scaling — instrument for responsible adoption, downstream learning outcome open",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -2947,12 +2953,11 @@
     Freitas, Fonseca, Garcia, Pontual Falcão, Marques, Gasevic,
     and Mello (_Journal of Learning Analytics_, 2024) developed and validated MMALA — a
     Maturity Model for Adopting Learning Analytics — designed to
-    let an institution self-assess its readiness across the four
-    dimensions responsible adoption actually depends on:
-    infrastructure (technical capability), human resources
-    (analytical and pedagogical staffing), ethics (governance and
-    consent architecture), and pedagogy (integration with learning
-    design). Experts evaluated the model as comprehensive and
+    let an institution self-assess its readiness across the five
+    categories responsible adoption actually depends on: data
+    management, data analysis, pedagogy, ethics (governance and
+    consent architecture), and privacy — resolved into 16 process
+    areas with maturity levels 0 to 4. Experts evaluated the model as comprehensive and
     suitable; a three-institution validation exercise at Brazilian
     universities found that MMALA could outline essential practices
     and support self-assessment for scaling learning analytics
@@ -3045,7 +3050,7 @@
     ],
   ),
   beats: (
-    "MMALA (Freitas et al. 2024, JLA): maturity model for adopting LA across infrastructure, human resources, ethics, pedagogy",
+    "MMALA (Freitas et al. 2024, JLA): maturity model for adopting LA across five categories — data management, data analysis, pedagogy, ethics, privacy (16 process areas, levels 0–4)",
     "Each dimension resolved into maturity levels — structured self-assessment, not a single overall readiness score",
     "Validation: expert evaluation (comprehensive, suitable) + three-institution exercise at Brazilian universities (usable, actionable)",
     "Honest limit: expert opinion + three-institution validation; not yet longitudinal outcomes of institutions that used MMALA to adopt LA",
@@ -3053,7 +3058,7 @@
   ),
   approaches: (
     during: (
-      [Resolve readiness into the dimensions adoption actually depends on — infrastructure, human resources, ethics, pedagogy — rather than a single overall score; the per-dimension structure is what makes the instrument actionable.],
+      [Resolve readiness into the categories adoption actually depends on — data management, data analysis, pedagogy, ethics, privacy — rather than a single overall score; the per-category structure is what makes the instrument actionable.],
       [Build maturity levels within each dimension so the self-assessment yields a structured next-step picture rather than a binary ready / not-ready.],
       [Validate the instrument in two layers: expert evaluation for comprehensiveness and suitability, and institutional pilot for usability — both are necessary, and the case carries both.],
     ),
@@ -3074,8 +3079,8 @@
   le-insight: [
     MMALA is the institutional-instrument instance of governance
     for learning-analytics adoption: a structured maturity model
-    across infrastructure, human resources, ethics, and
-    pedagogy. The validation evidence — expert evaluation and
+    across five categories — data management, data analysis,
+    pedagogy, ethics, and privacy. The validation evidence — expert evaluation and
     three-institution pilot — is what the case claims; the
     downstream effect on student learning is the next study, and
     the case is honest about that gap.
@@ -3346,8 +3351,9 @@
       schools did not differ significantly from posttest scores
       in control schools, across the cluster-randomized sample.
       The year-two result was different. Posttest scores in
-      CTAI schools were significantly higher than in control
-      schools, with an effect size that an Algebra I curriculum
+      CTAI high schools were significantly higher than in control
+      schools (the middle-school effect was not significant), with
+      an effect size that an Algebra I curriculum
       evaluation would treat as meaningful. The two findings
       were generated by the same trial, run in the same
       schools, with the same instrument. The methodological
@@ -3393,7 +3399,7 @@
   ),
   beats: (
     "147 middle and high schools, seven states, cluster-randomized to CTAI or current curriculum for two years",
-    "Year-one posttest: no significant difference; year-two posttest: CTAI significantly outperforms control",
+    "Year-one posttest: no significant difference; year-two posttest: CTAI high schools significantly outperform control (middle schools n.s.)",
     "A one-year evaluation would have published a null on the same intervention; both findings in the same trial",
     "Timeline of evaluation is itself a falsifiable design choice; year-two horizon required for deployment-substrate stabilization",
     "Deeper-evidence-of v1 Case 67; pair with Case 72 (ASSISTments) and Case 5 (Epic Sepsis horizon discipline)",
@@ -4087,8 +4093,12 @@
     ],
     [
       The open questions the authors preserve are the case's
-      load-bearing hedges. Whether the differentiation patterns
-      documented in lab-style probing match what students
+      load-bearing hedges. The authors also report that they found
+      no evidence of harmful biases — the differentiation they
+      measured may reflect sound pedagogy or undesirable behavior,
+      an interpretive question they leave open. Whether the
+      differentiation patterns documented in lab-style probing
+      match what students
       encounter in deployed conversations — where session
       length, follow-up turns, and student adaptation affect
       the response trajectory — is a question the present study
