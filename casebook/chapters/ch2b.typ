@@ -1843,7 +1843,7 @@
     "Rural experimental classes +17.93% math, +13.46% history; urban experimental classes +10.96% math, +9.55% history",
     "Equity-direction finding: rural gain exceeds urban gain across both subjects — the load-bearing teaching point",
     "Load-bearing hedges in prose: 3-month horizon, 12 schools, non-randomized assignment, self-report and observation bias acknowledged",
-    "First-author-from-deployment-country structure; pair with Cases 86 (Gándara), 187 (LiveHint bias), 186 (Doer Effect non-WEIRD)",
+    "First-author-from-deployment-country structure; pair with Cases 86 (Gándara), 88 (LiveHint bias), 73 (Doer Effect non-WEIRD)",
   ),
   approaches: (
     during: (
@@ -1892,7 +1892,7 @@
   ],
   literature-items: (
     [Chen et al. (2025), _Frontiers in Psychology_ — rural China AI devices],
-    [Paired Cases 86 (Gándara) and 186 (Doer Effect non-WEIRD)],
+    [Paired Cases 86 (Gándara) and 73 (Doer Effect non-WEIRD)],
     [Paired Case 88 (LiveHint AI bias)],
   ),
   reflection-list: (
@@ -2003,7 +2003,7 @@
       grounds the curriculum's response to the question of how
       operational knowledge accumulates and propagates across
       practitioner cohorts. The pair with the CIRCUIT cases
-      (119, 120) is the workforce-and-capability layer; the
+      (78, 68) is the workforce-and-capability layer; the
       pair with Case 77 (hybrid human-AI tutoring) is the
       design-iteration layer.#cn()
     ],
@@ -2144,9 +2144,9 @@
       recommendation, and student-progress visibility; the human
       tutor retains the conversational and pedagogical lead.
       Outcome measures are student learning relative to
-      comparison conditions — control conditions that vary by
-      study but consistently anchor against either tutor-only
-      or AI-only baselines. Across the three studies, the
+      comparison conditions — students in human-AI tutoring
+      compared against a math-software-only baseline (Study 3
+      lacked a control group). Across the three studies, the
       hybrid condition produced measurable improvements in
       student learning. The replication structure across the
       three studies — same authorship team, varying institutional
@@ -2234,8 +2234,9 @@
     augmentation; human tutor retains override authorization;
     student-learning outcome is the measure. Three quasi-
     experimental studies converge on positive learning effects.
-    The case pairs with Cases 20 / 101 / 118 / 119 in the
-    human-AI teaming thread and grounds the delegation-with-
+    The case pairs with Cases 20 (TREWS), 5 (Epic Sepsis),
+    and 68 / 78 (CIRCUIT) in the human-AI teaming thread and
+    grounds the delegation-with-
     revocation CLO at the educational deployment.
   ],
   lens-approach: [
@@ -2245,7 +2246,7 @@
     augmentation pattern and the override-authorization frame,
     and in Domain 2 (Iterative Development) for the three-study
     converging-design replication. Pair with Cases 20 (TREWS)
-    and 102 (Epic Sepsis) at the clinical analog, and with
+    and 5 (Epic Sepsis) at the clinical analog, and with
     Cases 78 and 68 (CIRCUIT) at the workforce-augmentation
     analog.
   ],
@@ -2374,7 +2375,7 @@
       usable — recurs and is not well-named in the existing
       curriculum. The frontier flag on this case is the case-grounded
       basis for proposing a sub-competency in this area, pairing
-      with the broader v2 AI-delegation typology and the Domain 5
+      with the broader v2 AI-delegation typology and the Domain 3
       *Delegation with revocation* CLO.#cn()
     ],
   ),
@@ -2569,7 +2570,7 @@
     [Devlin Peck, "Kirkpatrick Model: A Guide to the Four Levels of Training Evaluation" — synthesis of the stop-at-L2 pattern in corporate practice.],
     [D2L, "Kirkpatrick's 4 Levels of Training Evaluation," practitioner guide documenting the same pattern.],
     [Valamis, "Kirkpatrick Model" practitioner guide on evaluation-practice gaps.],
-    [Blume, Ford, Baldwin, & Huang (2010), "Transfer of Training: A Meta-Analytic Review," _Journal of Management_ 36(4):1065–1105 — the paired peer-reviewed case (113).],
+    [Blume, Ford, Baldwin, & Huang (2010), "Transfer of Training: A Meta-Analytic Review," _Journal of Management_ 36(4):1065–1105 — the paired peer-reviewed case (65).],
   ),
   quote: [The chain of evidence is cited as a framework. In practice it breaks at the link between Level 2 and Level 3, and the decisions made on the available data are not decisions about capability.],
   quote-source: "Editors' synthesis of the Kirkpatrick model and corporate L&D evaluation practice.",
@@ -2629,7 +2630,7 @@
     graduation rate rose from 32% to 54%; Black and Pell-eligible students
     now graduate at the same rate as their peers, and GSU produces roughly
     2,000 more graduates a year. The difference from the algorithmic-bias
-    cases (35–37) is design: GSU built equity in from the start, used
+    cases (46, 49, 191) is design: GSU built equity in from the start, used
     predictions to trigger more human support rather than gatekeeping, and
     tracked outcomes by demographic group as a primary metric.
   ],
@@ -2713,8 +2714,8 @@
   quote: [Predictions trigger support, not gatekeeping.],
   quote-source: "Editors' synthesis of the GSU advising model, drawn from Renick & Strom (2020) and New York Times coverage (2018)",
   le-insight: [
-    GSU is the positive counterpart to A-Level (35), Robodebt (36), and
-    educational algorithmic bias (37). The same technical capability —
+    GSU is the positive counterpart to A-Level (49), Robodebt (191), and
+    educational algorithmic bias (46). The same technical capability —
     a predictive model — was deployed under a different design
     constraint and produced an equity outcome rather than an equity
     harm. The case is the strongest available evidence that the
