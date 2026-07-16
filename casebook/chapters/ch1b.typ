@@ -1469,6 +1469,7 @@
   induced-anchor: "4.1",
   lens-anchor: "D3/PT3",
   clo-anchor: "CLO-3",
+  coi: "Institutional overlap: an editor shares an institution (Johns Hopkins) with the study's lead author; no editor was personally involved in the Keystone ICU work. Included on the published peer-reviewed evidence (NEJM 2006) and its sustained, independently replicated results.",
 )
 
 // ---- Case 20 — trews-sepsis-watch ----
@@ -1486,12 +1487,7 @@
   induced-anchor: "3.1",
   lens-anchor: "D3/PT6",
   clo-anchor: "CLO-4, CLO-3",
-  // coi: none — TREWS carries no COI; sentinel left default. For a COI case
-  // the field would render a gold-bordered "Disclosure" block under the title:
-  //   coi: "An editor of this volume is the senior author of the underlying study.",
-  // The render path also surfaces an "Evidence tier" block when
-  //   evidence-flag: "journalism-tier"  (or "preprint-tier", "practice-synthesis-tier")
-  // is set, with the standing "future validation ongoing" language.
+  coi: "Institutional overlap: an editor shares an institution (Johns Hopkins) with authors of this work and its deployment sites (five JHU hospitals); no editor was personally involved. Included on the published peer-reviewed evidence (Nature Medicine 2022).",
   summary: [
     The Targeted Real-time Early Warning System (TREWS) is a machine-learning
     sepsis-detection tool deployed at five Johns Hopkins hospitals; Duke's
@@ -3332,7 +3328,7 @@
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
   clo-anchor: "CLO-2, CLO-4",
-  coi: "This case originates at the editors' home institution (Johns Hopkins). The case is anchored to the peer-reviewed PLOS One paper and the publicly released JIGSAWS dataset rather than institutional press; the affiliation is disclosed openly.",
+  coi: "Institutional overlap: this case originates at an editor's institution (Johns Hopkins); no editor was personally involved. Anchored to the peer-reviewed PLOS One paper and the public JIGSAWS dataset, not institutional press.",
   summary: [
     The Language of Surgery project at Johns Hopkins, led by Gregory
     Hager and a cross-departmental team of roughly twenty

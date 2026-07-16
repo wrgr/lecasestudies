@@ -512,7 +512,7 @@
   induced-anchor: "1.2",
   lens-anchor: "D2/PT4",
   clo-anchor: "CLO-2, CLO-4",
-  coi: "An editor of this volume is the senior author of the underlying study. The case is included on the strength of the published peer-reviewed evidence (ASEE 2023, peer-reviewed full paper with DOI); the editorial framing has been written to maintain a critical distance from the program's own self-presentation, and the open question about external/comparative evaluation is preserved in the case text.",
+  coi: "Authorship: an editor of this volume is the senior author of the underlying study. Included on the published peer-reviewed evidence (ASEE 2023); editorial framing keeps critical distance from the program's self-presentation, and the open question about external/comparative evaluation is preserved in the text.",
   summary: [
     CIRCUIT is a research workforce-development program at Johns
     Hopkins APL built on eight explicit pillars — holistic
@@ -2274,7 +2274,7 @@
   induced-anchor: "3.4",
   lens-anchor: "D3/PT6",
   clo-anchor: "CLO-4, CLO-3",
-  coi: "An editor of this volume has research adjacency to connectomics programs discussed in this case and the case originates at the editors' home institution (Johns Hopkins / APL). The connectomics method and infrastructure are anchored to peer-reviewed work; the program training-outcome evidence is institutional documentation rather than independent peer-reviewed evaluation, and that gap is rendered as the evidence-tier flag above.",
+  coi: "Contribution: an editor has research adjacency to connectomics programs here, and the case originates at an editor's institution (Johns Hopkins / APL). The method is anchored to peer-reviewed work; program training-outcome evidence is institutional documentation, not independent evaluation — the gap rendered as the evidence-tier flag above.",
   summary: [
     Under IARPA's Machine Intelligence from Cortical Networks (MICrONS)
     program, automated electron-microscopy segmentation produces
@@ -4348,7 +4348,7 @@
   induced-anchor: "8.4",
   lens-anchor: "D5/PT6",
   clo-anchor: "CLO-5, CLO-3",
-  coi: "John Katzman is a collaborator with the editors' home institution (Johns Hopkins) without being intimately involved in the underlying work; the affiliation is disclosed. Pyle and Andalibi's study is independent of Katzman; the case is placed in this cluster because it sits at the applicant-side of the enrollment-management deployment.",
+  coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Pyle and Andalibi's study is independent of Katzman; the case sits on the applicant side of enrollment management.",
   summary: [
     Pyle and Andalibi (CSCW 2025) report an interview study with
     18 recent U.S. university applicants, using speculative-design
@@ -5211,7 +5211,7 @@
   induced-anchor: "2.3",
   lens-anchor: "D2/PT3",
   clo-anchor: "CLO-2",
-  coi: "An editor of this volume shares an institution (Johns Hopkins School of Education) with leading PBIS implementation researchers; the case is included on the strength of the published peer-reviewed evidence, and its framing is written as learning from that literature.",
+  coi: "Institutional overlap: an editor shares an institution (Johns Hopkins School of Education) with leading PBIS researchers; no editor was personally involved. Framed as learning from that peer-reviewed literature.",
   summary: [
     Positive Behavioral Interventions and Supports (PBIS) is one
     of the most widely scaled evidence-based frameworks in US
