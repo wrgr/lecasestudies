@@ -44,8 +44,8 @@
     Assurance Working Group (AAWG) operated through the 1990s and
     2000s producing structural inspection programs across the
     transport-airplane fleet. The work culminated in 14 CFR Part 26
-    (Continued Airworthiness and Safety Improvements; effective
-    2010), which requires manufacturers to establish a Limit of
+    (Continued Airworthiness and Safety Improvements; WFD
+    provisions effective 2011), which requires manufacturers to establish a Limit of
     Validity (LOV) for each type — the operational service goal
     below which the maintenance program protects against WFD — and
     to embed WFD prevention into the structural maintenance program
@@ -102,7 +102,7 @@
     [
       14 CFR Part 26 — Continued Airworthiness and Safety
       Improvements — was finalized in 2007 with the WFD provisions
-      effective in 2010. Two structural elements are load-bearing.
+      published November 15, 2010 and effective January 14, 2011. Two structural elements are load-bearing.
       First, every transport-category type must have a Limit of
       Validity established by the manufacturer: the operational
       service goal, in flight cycles or flight hours, below which
@@ -135,7 +135,7 @@
   beats: (
     "Aloha 243 (April 28, 1988): 737-200 at 89,680 cycles loses 18 feet of upper fuselage; WFD identified as the failure mode",
     "FAA stands up Aging Aircraft Program; AAWG operates through 1990s–2000s producing per-model structural inspection programs",
-    "14 CFR Part 26 finalized 2007, WFD provisions effective 2010 — Limit of Validity per type; WFD prevention embedded in maintenance program",
+    "14 CFR Part 26 finalized 2007, WFD provisions effective Jan 14, 2011 (rule published Nov 15, 2010) — Limit of Validity per type; WFD prevention embedded in maintenance program",
     "Two structural elements: LOV as operational service goal protected by maintenance, plus WFD prevention as ongoing program (not one-time inspection)",
     "Closes the induced C7 (system change / aging assumptions) zero-state — sustained two-decade rulemaking pulled an aging fleet back under structured airworthiness governance",
   ),
@@ -153,7 +153,7 @@
   ),
   references: (
     [NTSB (1989), Aircraft Accident Report AAR-89/03, _Aloha Airlines Flight 243, Boeing 737-200, N73711_.],
-    [FAA, 14 CFR Part 26, "Continued Airworthiness and Safety Improvements for Transport Category Airplanes," Final Rule (2007), WFD provisions effective 2010.],
+    [FAA, 14 CFR Part 26, "Continued Airworthiness and Safety Improvements for Transport Category Airplanes," Final Rule (2007); WFD/LOV Final Rule published Nov 15, 2010, effective Jan 14, 2011.],
     [Airworthiness Assurance Working Group reports (1990s–2000s) — per-model structural inspection program record.],
     [FAA Aging Aircraft Program documentation (1988 – present) — institutional record of the sustained regulatory work.],
     [Swift, "Widespread Fatigue Damage Monitoring — Issues and Concerns," _International Conference on Aging Aircraft_ — technical synthesis of the WFD inspection regime.],
@@ -347,8 +347,8 @@
     realization business case, and in Domain 5 (Navigating
     Sociotechnical Constraints) for the decade of lead time
     and the sustained external-audit discipline. Closes the C7
-    zero-state alongside Cases 114 (FAA aging aircraft), 136
-    (Y2K), and 137 (LWRS) as the v2 aging-system quartet.
+    zero-state alongside Cases 114 (FAA aging aircraft), 174
+    (Y2K), and 156 (LWRS) as the v2 aging-system quartet.
   ],
   literature-items: (
     [FAA ADS-B Out Final Rule (2010)],
@@ -486,7 +486,7 @@
     ),
   ),
   references: (
-    [Reus, Geers, & van Deursen (2010), "Modernization of the Eurocat Air Traffic Management System (EATMS)," in _Information Systems Transformation: Architecture-Driven Modernization Case Studies_ (Elsevier / Morgan Kaufmann), Chapter 5.],
+    [DelaPeyronnie, Newcomb, Morillo, Trimech, Nguyen, & Purtill (2010), "Modernization of the Eurocat Air Traffic Management System (EATMS)," in _Information Systems Transformation: Architecture-Driven Modernization Case Studies_ (Elsevier / Morgan Kaufmann), Chapter 5.],
     [Ulrich & Newcomb (eds., 2010), _Information Systems Transformation_ — the host volume on architecture-driven modernization patterns.],
     [Brodie & Stonebraker (1995), _Migrating Legacy Systems_ — the framing reference on small-step legacy modernization.],
     [Bisbal et al. (1999), "Legacy Information Systems: Issues and Directions," _IEEE Software_ 16(5):103–111 — peer-reviewed framing companion.],
@@ -514,7 +514,7 @@
     intervention contrast.
   ],
   literature-items: (
-    [Reus, Geers, & van Deursen (2010), Elsevier chapter — Eurocat modernization],
+    [DelaPeyronnie, Newcomb, et al. (2010), Elsevier chapter — Eurocat modernization],
     [Brodie & Stonebraker (1995), _Migrating Legacy Systems_ — framing reference],
     [Bisbal et al. (1999), _IEEE Software_ — peer-reviewed legacy-modernization framing],
   ),
@@ -717,9 +717,10 @@
     ],
     // -- The Intervention --
     [
-      After foreign carriers suspended code-shares and the FAA downgraded
-      South Korea's safety rating, Korean Air in 2000 hired David Greenberg
-      from Delta to overhaul flight operations. The interventions were
+      After foreign carriers suspended code-shares over its safety record,
+      Korean Air in 2000 hired David Greenberg
+      from Delta to overhaul flight operations; the FAA's August 2001
+      downgrade of South Korea to Category 2 came a year later. The interventions were
       deliberate and cultural: mandated English fluency for all pilots, CRM
       training adapted for a high-power-distance setting, external
       consulting from Boeing and Delta, and fleet modernization. The
@@ -986,7 +987,7 @@
   year: "1996 – 2002",
   domains-list: ("aviation", "safety engineering", "human factors"),
   modes-code: "HKG",
-  impact: "Honeywell's Enhanced Ground Proximity Warning System (EGPWS, 1996), mandated by the FAA as Terrain Awareness and Warning System (TAWS) for US-registered turbine aircraft beginning in 2001 and broadly worldwide by 2002, converted controlled flight into terrain (CFIT) — historically one of the largest categories of commercial-aviation fatalities — into a category whose rate in equipped fleets has fallen sharply; CFIT events on properly equipped and operating airliners are now rare",
+  impact: "Honeywell's Enhanced Ground Proximity Warning System (EGPWS, 1996), mandated by the FAA as Terrain Awareness and Warning System (TAWS) for US-registered turbine aircraft beginning in 2000 and broadly worldwide by 2002, converted controlled flight into terrain (CFIT) — historically one of the largest categories of commercial-aviation fatalities — into a category whose rate in equipped fleets has fallen sharply; CFIT events on properly equipped and operating airliners are now rare",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -1010,7 +1011,7 @@
     terrain database and aircraft position to the input set,
     permitting forward-looking terrain-avoidance alerting. The
     FAA mandated EGPWS-class equipment (formally TAWS) on
-    US-registered turbine aircraft beginning March 2001, with
+    US-registered turbine aircraft beginning March 2000, with
     full compliance required by 2005; ICAO and most national
     regulators followed. The published outcome record is that
     CFIT in EGPWS-equipped commercial fleets has become rare —
@@ -1062,7 +1063,7 @@
       Terrain Awareness and Warning System (TAWS) regulation,
       requiring TAWS-class equipment on US-registered turbine
       aircraft with six or more passenger seats beginning
-      March 29, 2001, with full equipage by 2005. ICAO and
+      March 29, 2000, with full equipage by 2005. ICAO and
       most national regulators followed with parallel
       mandates.#cn()
     ],
@@ -1104,8 +1105,8 @@
   beats: (
     "CFIT historically among the largest commercial-aviation fatality categories; Erebus 1979 (257), Cali 1995 (159) canonical",
     "GPWS (Bateman, 1970s) reduced CFIT but produced late warnings and was blind to terrain ahead of the aircraft",
-    "EGPWS (Honeywell, 1996) added digital terrain database + position; forward-looking alerts hours before terrain contact",
-    "FAA TAWS mandate March 2001 (full by 2005); ICAO and most national regulators follow",
+    "EGPWS (Honeywell, 1996) added digital terrain database + position; forward-looking alerts up to a minute before terrain contact",
+    "FAA TAWS mandate March 2000 (full by 2005); ICAO and most national regulators follow",
     "CFIT in EGPWS-equipped fleets falls sharply; residual events involve disabled equipment, procedure deviation, or terrain outside database",
   ),
   approaches: (
