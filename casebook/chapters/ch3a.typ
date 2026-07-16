@@ -194,10 +194,13 @@
     investigations — the NTSB-supported KNKT (Lion Air) and EAIB (Ethiopian)
     reports, the US House Transportation Committee final report, the DOT
     Inspector General review, and the multinational Joint Authorities
-    Technical Review (JATR) — converged on the same diagnosis: the training
-    omission was a deliberate cost-avoidance choice, executed through an
+    Technical Review (JATR) — converged on the same mechanism: an MCAS
+    that could fire the nose down on a single failing sensor, waved through an
     FAA delegated-authority regime in which Boeing reviewed much of its own
-    safety judgment. The MAX is the book's inverse case: human capability
+    safety judgment. The House Transportation Committee's report went further,
+    documenting the training omission as a cost-driven commercial choice —
+    Boeing had promised Southwest a \$1-million-per-plane rebate if simulator
+    training proved necessary. The MAX is the book's inverse case: human capability
     engineered out of a system to save the price of sustaining it, with
     the elision underwritten by a certification process that did not have
     the independence to catch it.
@@ -312,7 +315,7 @@
   beats: (
     "Re-engined 737 sold on no new pilot training; MCAS hid the handling change",
     "Single-sensor MCAS forced two jets down, killing 346 across both crashes",
-    "Internal records show training omission was deliberate; certification was largely self-delegated",
+    "Internal records show training omission was deliberate; certification was largely delegated to Boeing itself",
     "Training absence was a contract deliverable, not an oversight; pilots engineered out",
     "Twenty-month grounding; MCAS redesigned, simulator training required, FAA oversight tightened",
   ),

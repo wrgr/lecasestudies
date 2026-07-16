@@ -356,7 +356,7 @@
   year: "1990s – present",
   domains-list: ("education",),
   modes-code: "T",
-  impact: "Randomized controlled trials showed significant learning gains; RAND study found positive effects on Algebra I achievement; adopted across 3,000+ schools",
+  impact: "Randomized controlled trials showed learning gains; RAND RCT found a significant Algebra I gain in year two (~0.2 SD, high school; no year-one effect); adopted across 3,000+ schools",
   diagram: dgm.dgm-cogtutor,
   kind: "intervention",
   summary: [
@@ -364,8 +364,11 @@
     cognitive architecture at Carnegie Mellon, is the most rigorously
     evaluated intelligent tutoring system in education. It uses Bayesian
     knowledge tracing to model each student's mastery and adapts
-    instruction accordingly, and a RAND Corporation evaluation found
-    statistically significant positive effects on Algebra I achievement.
+    instruction accordingly, and a RAND Corporation randomized trial found
+    a statistically significant positive effect on Algebra I achievement — about
+    0.20 SD for high school students in the second year of use, with no
+    significant effect in year one and a middle-school estimate that did not
+    reach significance.
     The system is a learning-engineering success in the discipline's own
     terms — learning science to engineered software to randomized-trial
     evidence to deployment across 3,000-plus schools. Its limitations are
@@ -440,7 +443,7 @@
     "Earlier tutoring systems rested on intuition about learning rather than validated theory or controlled trials",
     "Carnegie Learning built Cognitive Tutor from Anderson's ACT-R architecture with Bayesian knowledge tracing",
     "A decomposable skill model, mastery measurement, and an adaptive interface concentrate practice where weakness sits",
-    "RAND's multi-site evaluation found significant Algebra I gains; the program scaled to 3,000-plus schools",
+    "RAND's multi-site RCT found a significant Algebra I gain in year two for high schoolers (~0.2 SD), with no first-year effect; scaled to 3,000-plus schools",
     "Pipeline works for tractable, decomposable problems; ill-structured operational domains remain the open frontier",
   ),
   references: (

@@ -687,7 +687,7 @@
   year: "1999 – 2015",
   domains-list: ("tech", "gov"),
   modes-code: "GHK",
-  impact: "~900 sub-postmasters wrongfully prosecuted; many imprisoned; documented suicides; described as the most widespread miscarriage of justice in UK history",
+  impact: "more than 900 sub-postmasters wrongfully convicted; 236 imprisoned; at least 13 linked suicides; described as the most widespread miscarriage of justice in UK history",
   diagram: dgm.dgm-stat(
     "900",
     "wrongful prosecutions across 20+ years",
@@ -699,8 +699,9 @@
     The UK Post Office's Horizon accounting system, built by Fujitsu and
     rolled out in 1999, generated phantom shortfalls in sub-postmasters'
     branch ledgers. Rather than accept the software was at fault, the Post
-    Office prosecuted them — around 900 over two decades — for theft and
-    false accounting; people were imprisoned, bankrupted, and driven to
+    Office prosecuted them for theft and false accounting — about 700 cases
+    itself, its Horizon evidence driving roughly 280 more prosecutions by other
+    bodies, more than 900 wrongful convictions in all; people were imprisoned, bankrupted, and driven to
     suicide, in what is now called the most widespread miscarriage of
     justice in UK history. Internal documents showed engineers had known
     about Horizon bugs throughout. Convictions began to be quashed in December 2020,
@@ -770,7 +771,7 @@
   ),
   beats: (
     "Sub-postmasters bore personal liability for shortfalls reported by Fujitsu's Horizon accounting system from 1999",
-    "Phantom shortfalls drove around 900 prosecutions for theft; imprisonment, bankruptcy, and suicides followed",
+    "Phantom shortfalls drove more than 900 wrongful convictions for theft, fraud and false accounting; imprisonment, bankruptcy, and suicides followed",
     "Released documents showed engineers knew Horizon could err; convictions began being quashed in December 2020",
     "No regulator, prosecutor, or court had standing to interrogate Fujitsu's claim of reliability",
     "Parliament exonerated convictions and opened compensation schemes; the public inquiry continues its work",

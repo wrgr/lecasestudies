@@ -1005,11 +1005,13 @@
     Aegis combat system worked: its radar correctly showed the aircraft
     ascending on the published civilian-traffic corridor. Yet operators
     in the Combat Information Center, primed by a simultaneous surface
-    fight to expect a hostile inbound, read the contact as a descending
-    F-14 and fired. The Fogarty Report (DoD, 1988) attributed the
+    fight to expect a hostile inbound, tagged the contact as a military
+    F-14 — from an IFF Mode II squawk mis-correlated from an aircraft at Bandar
+    Abbas, not the airliner, which squawked only civilian Mode III — and,
+    misreading its closing range as a descent, fired. The Fogarty Report (DoD, 1988) attributed the
     tragedy to human error under extreme stress — confirmation bias,
     "scenario fulfillment," and the unconscious distortion of data — not
-    equipment failure. The contemporaneous Newsweek "Sea of Lies"
+    equipment failure. The 1992 Newsweek "Sea of Lies"
     investigation and a 2018 US Naval Institute _Proceedings_
     retrospective reopened both the operational record and the
     interface-design lessons. Vincennes is the book's foundational
@@ -1067,8 +1069,8 @@
       stress — confirmation bias and the "stress and unconscious
       distortion of data" — naming "scenario fulfillment" as the
       psychological mechanism by which operators read every indication
-      through the lens of a presumed hostile attack. Several crew members
-      in the CIC independently believed the aircraft was descending,#cn()
+      through the lens of a presumed hostile attack. An inexperienced operator misread the range as a descent and others
+      in the CIC accepted it rather than checking,#cn()
       a shared error that is more damning than a single misread because
       it shows the interface offered no cross-check strong enough to
       break a wrong reading once the team had settled into it. The
@@ -1116,8 +1118,8 @@
   ),
   beats: (
     "Aegis cruiser fought Iranian gunboats near a dual-use airfield in the crowded Persian Gulf",
-    "Crew misread an ascending Airbus as a diving F-14 and fired; all 290 died",
-    "Aegis radar was correct; multiple operators independently saw descent under presumed-hostile framing",
+    "Crew tagged an ascending Airbus as a diving F-14 — a mis-correlated IFF squawk plus a range-read-as-altitude error — and fired; all 290 died",
+    "Aegis radar was correct; an operator misread the closing range as a descent and others in the CIC accepted it under presumed-hostile framing",
     "Interface left burden of overriding expectation to operators stripped of time by combat",
     "Naval retrospective reframed loss as predictable teaming failure of unguarded decision aids",
   ),

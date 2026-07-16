@@ -31,8 +31,9 @@
     The Therac-25, a radiation-therapy machine, massively overdosed at
     least six patients between 1985 and 1987, killing at least three. Its
     predecessors used hardware interlocks to stop the high-energy beam from
-    firing without its target in place; to save cost, the Therac-25 removed
-    them and trusted software — adapted from the older machines and never
+    firing without its target in place; judging the interlocks not worth
+    duplicating and trusting software over hardware, the Therac-25 removed
+    them and relied on software — adapted from the older machines and never
     engineered for safety — to keep the beam modes separated. At least two
     distinct software defects drove the overdoses — a data-entry race
     condition behind the cryptic "Malfunction 54" deaths at Tyler, and a
@@ -114,11 +115,11 @@
     ],
   ),
   beats: (
-    "Hardware interlocks removed to save cost; safety case migrated silently into software",
+    "Hardware interlocks dropped — judged not worth duplicating, software trusted instead; safety case migrated silently into software",
     "Two software defects — a race condition and a counter overflow — fired the full beam with no target",
     "Manufacturer denied harm; Leveson and Turner found systemic, not single-bug, failure",
     "Interlock was the safety case; nothing took its load when removed",
-    "Founded software-safety engineering; deleted safeguards relocate hazard to whatever replaces them",
+    "The canonical case of software-safety engineering; deleted safeguards relocate hazard to whatever replaces them",
   ),
   references: (
     [N. G. Leveson & C. S. Turner, "An Investigation of the Therac-25 Accidents," _IEEE Computer_ 26(7): 18–41 (1993). #link("https://doi.org/10.1109/MC.1993.274940")[doi:10.1109/MC.1993.274940] — the removed hardware interlocks and the adapted software.],

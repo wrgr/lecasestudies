@@ -868,9 +868,10 @@
     million barrels of oil — the largest marine spill in U.S. history, and
     more than \$65 billion in eventual costs to BP. The crew had misread the
     negative-pressure test, the primary check of well integrity, and kept
-    working a well that was no longer sealed. The National Commission found
-    human error, not equipment, the root cause, and judged the failures so
-    systematic they cast doubt on the safety culture of the whole industry.
+    working a well that was no longer sealed. The National Commission traced the blowout
+    to a series of identifiable mistakes by BP, Halliburton, and Transocean —
+    systematic failures in risk management that cast doubt on the safety
+    culture of the whole industry.
     Every defense — procedure, training, supervision, contractor
     coordination, equipment — had drifted independently until none caught the
     others. It is the book's canonical multi-layer normalization failure.
@@ -909,8 +910,9 @@
     // -- The Investigation --
     [
       Four major investigations reached the wreck and pulled on different
-      threads. The National Commission concluded that human error, not
-      mechanical failure, was the root cause, and that the mistakes revealed
+      threads. The National Commission concluded that a cascade of mistakes across BP,
+      Halliburton, and Transocean, not mechanical failure alone, was the root
+      cause, and that the mistakes revealed
       "such systematic failures in risk management that they place in doubt
       the safety culture of the entire industry."#cn() The joint Coast
       Guard / BOEMRE inquiry traced the blowout-preventer failure to a
@@ -975,12 +977,12 @@
   beats: (
     "Macondo blowout killed eleven and unleashed the largest U.S. marine oil spill",
     "Crew misread the negative-pressure test, accepted a wrong explanation, and displaced the mud",
-    "Commission found human error so systematic it indicted the whole industry's safety culture",
+    "Commission traced systematic risk-management failures across BP, Halliburton, and Transocean, indicting the whole industry's safety culture",
     "Procedure, training, supervision, contractors, and equipment had drifted independently until none caught the others",
     "Regulator was split, well-integrity rules tightened, and the multi-layer drift named as the deeper lesson",
   ),
   references: (
-    [National Commission on the BP Deepwater Horizon Oil Spill, _Deep Water: The Gulf Oil Disaster and the Future of Offshore Drilling_ (Report to the President, 2011) — human error as root cause; the misread negative-pressure test.],
+    [National Commission on the BP Deepwater Horizon Oil Spill, _Deep Water: The Gulf Oil Disaster and the Future of Offshore Drilling_ (Report to the President, 2011) — systematic management failures as root cause; the misread negative-pressure test.],
     [National Commission (2011) — the well-control sequence and mud-displacement decision.],
     [National Commission (2011) — "systematic failures in risk management… place in doubt the safety culture of the entire industry" (quoted); U.S. Chemical Safety Board, _Drilling Rig Explosion and Fire at the Macondo Well_ (final volumes, 2014–2016) — process-safety vs. personal-safety distinction and BP's industry-leading lost-time-injury rate as a misleading indicator.],
     [BOEMRE / U.S. Coast Guard Joint Investigation (2011) — blowout-preventer maintenance backlog and chain-of-command findings; National Academies, _Macondo Well Deepwater Horizon Blowout: Lessons for Improving Offshore Drilling Safety_ (2012) — training gaps and the interlinked cascade of failed defenses.],

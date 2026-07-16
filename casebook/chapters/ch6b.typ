@@ -34,7 +34,7 @@
   year: "1963 – present",
   domains-list: ("naval engineering", "defense", "safety certification"),
   modes-code: "GKH",
-  impact: "From 1915 to 1963 the US Navy lost 16 submarines to non-combat causes; since 1963 it has lost one — USS Scorpion, the only post-1963 loss that was not SUBSAFE-certified. The Columbia Accident Investigation Board cited SUBSAFE as a model NASA should emulate",
+  impact: "From 1915 to 1963 the US Navy lost 16 submarines to non-combat causes; since 1963 it has lost one — USS Scorpion — which was not SUBSAFE-certified. The Columbia Accident Investigation Board cited SUBSAFE as a model NASA could emulate",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -54,8 +54,8 @@
     result is a step-change in non-combat submarine loss rates: 16
     losses across the 48 years before SUBSAFE; one loss (USS Scorpion,
     not SUBSAFE-certified) across the 62 years since. The Columbia
-    Accident Investigation Board cited SUBSAFE in 2003 as the model
-    NASA should emulate. The honest hedge survives: the zero-loss
+    Accident Investigation Board cited SUBSAFE in 2003 as one of three programs
+    that could be models for NASA. The honest hedge survives: the zero-loss
     record is correlational across decades with many co-varying
     factors — submarine design, reactor maturity, operating procedures,
     intelligence environment — and SUBSAFE's own program literature

@@ -193,10 +193,10 @@
   diagram: dgm.dgm-andon,
   kind: "intervention",
   summary: [
-    The andon cord lets any assembly-line worker stop Toyota's entire
-    production line on detecting a defect — handing the lowest-ranking
-    person on the floor the power to halt operations worth millions per
-    hour. The cord is trivially cheap; the authority it confers is the
+    The andon cord lets any assembly-line worker signal a defect and — if it
+    can't be resolved within the work cycle — stop Toyota's entire production
+    line, handing the lowest-ranking person on the floor the power to halt
+    operations worth millions per hour. The cord is trivially cheap; the authority it confers is the
     design. The case is decisive for capability engineering because when
     American automakers copied the cord in the 1980s and 1990s, workers
     were too afraid to pull it: the tool was present, the empowerment was

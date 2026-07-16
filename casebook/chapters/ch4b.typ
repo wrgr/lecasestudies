@@ -831,7 +831,7 @@
   year: "2009 – 2014",
   domains-list: ("defense", "workforce L&D", "intelligent tutoring"),
   modes-code: "HKD",
-  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, US Navy IT graduates with no prior IT experience outscored fleet Information Technology Specialists with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
+  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, US Navy IT graduates with no prior IT experience outscored fleet Information Systems Technicians with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -845,7 +845,7 @@
     pipeline. The independent evaluation by the Institute for Defense
     Analyses (Fletcher and Morrison, IDA Document D-4686) compared
     Digital Tutor graduates — US Navy enlistees with no prior IT
-    experience — against fleet Information Technology Specialists
+    experience — against fleet Information Systems Technicians
     with an average 9.1 years of experience. The Digital Tutor
     cohort outscored fleet ITs on a knowledge test with an effect
     size of 4.30 and outperformed them on most troubleshooting and
@@ -863,7 +863,7 @@
   ],
   sections: (
     [
-      The US Navy's Information Technology Specialist rating has a
+      The US Navy's Information Systems Technician rating has a
       conventional pipeline: an A-school of several months, followed
       by years of fleet experience that turn the rated sailor into
       an operational troubleshooter. The capability that matters at
