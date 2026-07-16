@@ -139,7 +139,7 @@
     ),
   ),
   references: (
-    [INL / LWRS program (2014), "Human Factors Design, Verification, and Validation for Two Types of Control Room Upgrades at a Nuclear Power Plant," technical report and conference paper (ResearchGate publication 271728006).],
+    [Ronald L. Boring (2014), "Human Factors Design, Verification, and Validation for Two Types of Control Room Upgrades at a Nuclear Power Plant," Proceedings of the Human Factors and Ergonomics Society Annual Meeting (HFES 2014), pp. 2295–2299 (ResearchGate publication 271728006).],
     [Idaho National Laboratory, Light Water Reactor Sustainability Program reports on control-room modernization — series available via OSTI.],
     [Nuclear Regulatory Commission (NUREG-0711), "Human Factors Engineering Program Review Model" — the regulatory framework the V&V deliverables are produced against.],
     [O'Hara et al. (2008), "Human Factors Considerations with Respect to Emerging Technology in Nuclear Power Plants," NUREG/CR-6947 — peer-adjacent framing.],
