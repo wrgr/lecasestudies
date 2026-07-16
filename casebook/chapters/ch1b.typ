@@ -3506,8 +3506,7 @@
   impact: "A multidisciplinary EHR redesign of ambulatory annual-screening prompts (advance directives, depression, falls risk, alcohol/drug misuse), paired with embedded CDS, reported improvements in task time, error rates, System Usability Scale scores, and the downstream screening-rate outcomes the project was scoped to move",
   kind: "intervention",
   scale: "small",
-  evidence-source: "program-report",
-  evidence-flag: "practice-synthesis-tier",
+  evidence-source: "peer-reviewed",
   induced-anchor: "3.1",
   lens-anchor: "D4/PT5",
   clo-anchor: "CLO-4, CLO-1",
@@ -3528,8 +3527,7 @@
     CPOE/EHR adoption, the Helios pattern). The evidence base is a
     single-institution QI study published peer-reviewed in Applied
     Clinical Informatics (2020), with a HIMSS chapter case-study
-    write-up; the tier flag renders under the title and is
-    load-bearing. Future validation will continue as the downstream
+    write-up. Future validation will continue as the downstream
     clinical-outcome literature on screening-rate gains matures.
   ],
   sections: (
@@ -3570,7 +3568,6 @@
       reported observation window.#cn()
     ],
     [
-      The evidence-tier flag rendered under the title is load-bearing.
       The case is a single-institution quality-improvement study,
       published peer-reviewed in Applied Clinical Informatics (2020),
       with a HIMSS chapter case-study write-up. The
@@ -3600,7 +3597,7 @@
     "Ambulatory annual-screening rates for guideline-recommended care; the cue-action gap is the C3 failure mode",
     "Multidisciplinary EHR redesign of screening prompts + embedded CDS at the point of decision",
     "Reported gains: task time, error rate, SUS score, and the downstream screening-rate metric",
-    "Evidence tier: HIMSS case-study format; single-institution QI; magnitudes await independent replication",
+    "Peer-reviewed single-institution QI (Appl Clin Inform 2020); magnitudes await independent replication",
     "The missing small-tier C3 positive example to set against Therac-25, CPOE, Helios at the big tier",
   ),
   approaches: (
@@ -3610,7 +3607,7 @@
       [Specify the downstream process metric (screening-rate completion) before the redesign ships, so the usability-layer and process-layer outcomes are measured against the same scope.],
     ),
     after: (
-      [Treat the QI report honestly: a single-institution case study is a small-tier intervention, not a settled magnitude. Carry the practice-synthesis-tier flag into any downstream citation.],
+      [Treat the QI report honestly: a single-institution peer-reviewed study is a small-tier intervention, not a settled magnitude. Carry the single-institution caveat into any downstream citation.],
       [Track durability — across EHR upgrades, personnel rotation, and downstream clinical outcomes — as a separate post-deployment commitment, not a footnote to the implementation report.],
       [Pair with the big-tier C3 failures already in the corpus when teaching; the failure-and-intervention pair is the teaching artifact, not either alone.],
     ),
@@ -3652,7 +3649,7 @@
   reflection-list: (
     [Identify a screening or recommended-care prompt in your EHR. What proportion of prompts result in the completed action? Where does the cue-action gap sit, and what is the redesign that would close it?],
     [Specify the downstream process metric you would commit to before any usability redesign ships. The UMHC case is teachable because it reported the screening-rate outcome, not only the SUS gain. What would be the equivalent in your context?],
-    [The case is practice-synthesis tier (HIMSS case-study format). What is the minimum independent replication evidence you would require before treating the reported magnitudes as a basis for an institutional investment in your own setting?],
+    [The case is a single-institution peer-reviewed QI study. What is the minimum independent replication evidence you would require before treating the reported magnitudes as a basis for an institutional investment in your own setting?],
   ),
   courses: ("LEN 3", "LEN 4", "LEN 8"),
 )
@@ -5097,7 +5094,7 @@
   year: "2020s",
   domains-list: ("implementation science", "translational workforce", "education"),
   modes-code: "KN",
-  impact: "Survey of CTSA-funded TL1 training programs (N=50): most name collaboration, team science, and multi/inter/cross-disciplinary training as goals, but far fewer (14–24%) embed competency-based training and assessment, program evaluation, or experiential learning",
+  impact: "Survey of CTSA-funded TL1 training programs (N=50): most name collaboration, team science, and multi/inter/cross-disciplinary training as goals, but far fewer name the specific competency practices as distinguishing features — experiential learning in 24% of programs, a competency-based curriculum in just 6%",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -5114,10 +5111,10 @@
     structural pattern as the IPE case (122) at smaller scale:
     most programs name the right goals — collaboration, team
     science, multi/inter/cross-disciplinary training — but far
-    fewer (14–24% across the operational practices the survey
-    examined) actually embed the competency-based training and
-    assessment, program evaluation, or experiential learning
-    that the stated goals imply. The picture is of a field that
+    fewer name the specific competency practices — a competency-
+    based curriculum in just 6% of programs, experiential learning
+    in 24%, program evaluation in 38% — that those stated goals
+    imply. The picture is of a field that
     has converged on what interdisciplinary translation training
     should aim for, but where the operational practices lag the
     stated goals — the same enthusiasm-ahead-of-evidence pattern
@@ -5150,10 +5147,10 @@
       programs converge: most name collaboration, team science,
       and multi/inter/cross-disciplinary training as central
       objectives. The operational-practices side is where the
-      pattern surfaces: far fewer programs (14–24% across the
-      operational dimensions the survey examined) actually embed
-      competency-based training and assessment, program
-      evaluation, or experiential learning at the level the
+      pattern surfaces: far fewer programs name the specific
+      competency practices as distinguishing features — a
+      competency-based curriculum in just 6%, experiential learning
+      in 24%, program evaluation in 38% — at the level the
       stated goals would imply.#cn()
     ],
     [
@@ -5171,9 +5168,9 @@
     ],
     [
       What the case teaches is the operational-practice gap as a
-      designable target, not as a curricular failure. The 14–24%
-      figure is not an indictment of the programs that fall on the
-      wrong side of it; it is a finding about the operational-
+      designable target, not as a curricular failure. The low uptake of the specific
+      competency practices is not an indictment of the programs
+      that fall on the wrong side of it; it is a finding about the operational-
       infrastructure investment that competency-based training and
       assessment require, and that field-scale stated-goal
       convergence does not by itself produce. The pair with
@@ -5203,14 +5200,14 @@
   beats: (
     "Implementation science = moving validated evidence into operational practice; CTSA TL1/T32 is the US training mechanism",
     "Survey N=50 CTSA-funded TL1 programs: most name collaboration / team science / multi-disc training as goals",
-    "Far fewer (14–24%) embed competency-based training and assessment, program evaluation, or experiential learning",
+    "Far fewer name the specific competency practices — competency-based curriculum 6%, experiential learning 24%, program evaluation 38%",
     "Same enthusiasm-ahead-of-evidence pattern as IPE (Case 28) at smaller scale — operational practices lag stated goals",
     "Workforce-training counterpart to Case 13 ('17-year gap'); pair with Cases 40, 28 in the multidisciplinary-translation trio",
   ),
   approaches: (
     during: (
       [Specify the competency-based assessment instrument before launching the training program; the gap the survey documents is partly the result of stated competencies that were never operationalized into measurement.],
-      [Build experiential learning into the operational structure of the program, not as an add-on; the survey's 14–24% figure includes experiential learning as one of the operational dimensions that lags.],
+      [Build experiential learning into the operational structure of the program, not as an add-on; the survey found experiential learning named by only 24% of programs — one of the operational dimensions that lags.],
       [Plan program evaluation as a deliverable of the training program itself, with the cadence, instrument, and reporting venue named at launch.],
     ),
     after: (
@@ -5231,9 +5228,9 @@
     The CTSA TL1 program survey is the workforce-training
     instance of the enthusiasm-evidence gap pattern: most
     programs name competency-based training, assessment, and
-    program evaluation as goals; the operational practices that
-    would deliver on those goals are present in 14–24% of
-    programs. The implementation-science workforce is the
+    program evaluation as goals; the specific competency practices that would deliver on those
+    goals are named by far fewer — a competency-based curriculum
+    in just 6% of programs, experiential learning in 24%. The implementation-science workforce is the
     recovery mechanism for the 17-year research-to-practice gap;
     the case names the gap inside the recovery mechanism
     itself.
@@ -5258,7 +5255,7 @@
   ),
   reflection-list: (
     [Identify a training program in your domain whose stated goals include competency-based assessment, program evaluation, or experiential learning. What proportion of those stated goals are operationalized into specific instruments, cadences, and reporting structures — and which are at the goal-statement layer only?],
-    [Specify the competency-based assessment instrument you would build into the next iteration of an implementation-science training program. The survey's 14–24% figure says the instrument is what is missing more than the intent; what is the instrument?],
+    [Specify the competency-based assessment instrument you would build into the next iteration of an implementation-science training program. The survey found a competency-based curriculum named by just 6% of programs — the instrument is what is missing more than the intent; what is the instrument?],
     [The implementation-science workforce is the recovery mechanism for the 17-year research-to-practice gap (Case 13). What is the analog in your domain — the workforce whose operational capacity is the recovery for a documented systemic gap — and what is the case for investing in that workforce's training architecture?],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 8"),
