@@ -1331,20 +1331,22 @@
   year: "2004 – present",
   domains-list: ("healthcare",),
   modes-code: "TN",
-  impact: "Central-line-associated bloodstream infections (CLABSI) reduced to near zero across 103 Michigan ICUs; ~1,500 lives saved in 18 months; ~$100M saved; sustained at ten years",
+  impact: "Central-line-associated bloodstream infections (CLABSI) reduced to near zero across 103 Michigan ICUs; ~1,500 lives saved in 18 months; ~$175M saved; sustained at ten years",
   diagram: dgm.dgm-keystone,
   kind: "intervention",
   summary: [
     Peter Pronovost's central-line checklist has five items — wash hands,
-    clean the skin with chlorhexidine, drape the patient, use full barrier
-    precautions, apply a sterile dressing — and not one of them was unknown
+    use full barrier precautions, clean the skin with chlorhexidine, avoid the
+    femoral insertion site, and remove unnecessary catheters — and not one of them was unknown
     to the physicians it governed. The question was never what to do, but
     whether it would be done every time. The Keystone project, launched
     across 103 Michigan ICUs in 2004, paired the checklist with a cultural
     change: nurses were not merely permitted but required to stop the
-    procedure if a step was skipped. That authorization was the
-    load-bearing element. Central-line-associated bloodstream infections
-    fell to near zero, an estimated 1,500 lives and \$100 million were saved
+    procedure if a step was skipped. That authorization is the element the case treats as load-bearing — though it
+    rode inside a multi-component bundle (clinician education, a dedicated line
+    cart, daily catheter-review goals, and monthly infection-rate feedback) that
+    the trial tested as a whole and could not decompose. Central-line-associated bloodstream infections
+    fell to near zero, an estimated 1,500 lives and \$175 million were saved
     in eighteen months, and the effect was sustained at ten years.
   ],
   sections: (
@@ -1389,7 +1391,7 @@
       Across the Michigan ICUs, the median quarterly CLABSI rate fell to
       zero, and the state's units outperformed 90% of ICUs
       nationwide. The program was estimated to have saved roughly 1,500
-      lives and \$100 million within eighteen months. Results were published
+      lives and \$175 million within eighteen months. Results were published
       in the _New England Journal of Medicine_ in 2006, and follow-up
       showed the effect sustained at ten years. The durability mattered as
       much as the size of the drop: an improvement that survives a decade is

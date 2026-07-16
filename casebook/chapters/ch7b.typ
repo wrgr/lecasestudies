@@ -23,7 +23,7 @@
   year: "2001 – present",
   domains-list: ("e-government", "distributed data exchange", "national IT infrastructure"),
   modes-code: "GKN",
-  impact: "By December 2024 Estonia reported effectively 100% digitalization of government services across the X-Road data-exchange layer, with sub-five-minute tax filing for >95% of the population; the load-bearing self-critique is that the country has now created its own legacy system — the very thing the program set out to avoid",
+  impact: "By December 2024 Estonia reported effectively 100% digitalization of government services across the X-Road data-exchange layer, with sub-five-minute tax filing and >95% of tax declarations filed electronically; the load-bearing self-critique is that the country has now created its own legacy system — the very thing the program set out to avoid",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -74,7 +74,7 @@
       defining national IT case study in the EU region. By
       December 2024 the country reported effectively 100%
       digitalization of government services, with sub-five-minute
-      tax filing for more than 95% of the population. The Mission
+      tax filing and more than 95% of tax declarations filed electronically. The Mission
       Mystique and the Hiding Hand chapter (Oxford 2024) and the
       ICEGOV 2021 historical analysis are the peer-reviewed
       treatments; the X-Road Global program documentation extends
@@ -123,7 +123,7 @@
   ),
   beats: (
     "X-Road launched 2001 as distributed data-exchange answer to fragmented government databases",
-    "By Dec 2024: effectively 100% digitalization; sub-five-minute tax filing for >95% of population",
+    "By Dec 2024: effectively 100% digitalization; sub-five-minute tax filing; >95% of declarations filed electronically",
     "Load-bearing self-critique — the no-legacy paradox — surfaces in the peer-reviewed analysis",
     "Success-as-aging is the failure mode; generational replacement of the platform itself is the new modernization problem",
     "Evidence tier: peer-reviewed analysis + program-report + practitioner reflection; future replacement is open",

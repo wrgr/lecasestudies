@@ -989,7 +989,7 @@
   year: "1988",
   domains-list: ("defense",),
   modes-code: "HT",
-  impact: "290 civilians killed — the deadliest shootdown of a commercial airliner by a military force; precipitating case for Aegis CIC display and decision-aid doctrine reform, and a central reference in the human-AI teaming literature",
+  impact: "290 civilians killed — one of the deadliest shootdowns of a commercial airliner by a military force; precipitating case for Aegis CIC display and decision-aid doctrine reform, and a central reference in the human-AI teaming literature",
   diagram: dgm.dgm-vincennes,
   kind: "failure",
   scale: "big",
@@ -1001,15 +1001,17 @@
     On 3 July 1988, during a surface skirmish with Iranian gunboats in the
     Persian Gulf, the USS Vincennes shot down Iran Air Flight 655 — a
     civilian Airbus A300 climbing on a scheduled route — killing all 290
-    aboard, the deadliest airliner shootdown by a military force. The
+    aboard, one of the deadliest airliner shootdowns by a military force. The
     Aegis combat system worked: its radar correctly showed the aircraft
     ascending on the published civilian-traffic corridor. Yet operators
     in the Combat Information Center, primed by a simultaneous surface
-    fight to expect a hostile inbound, read the contact as a descending
-    F-14 and fired. The Fogarty Report (DoD, 1988) attributed the
+    fight to expect a hostile inbound, tagged the contact as a military
+    F-14 — from an IFF Mode II squawk mis-correlated from an aircraft at Bandar
+    Abbas, not the airliner, which squawked only civilian Mode III — and,
+    misreading its closing range as a descent, fired. The Fogarty Report (DoD, 1988) attributed the
     tragedy to human error under extreme stress — confirmation bias,
     "scenario fulfillment," and the unconscious distortion of data — not
-    equipment failure. The contemporaneous Newsweek "Sea of Lies"
+    equipment failure. The 1992 Newsweek "Sea of Lies"
     investigation and a 2018 US Naval Institute _Proceedings_
     retrospective reopened both the operational record and the
     interface-design lessons. Vincennes is the book's foundational
@@ -1044,7 +1046,7 @@
       climbing through 12,000 feet on its scheduled route to Dubai. The
       Vincennes' crew identified it as a descending, hostile F-14 and
       fired two SM-2 surface-to-air missiles; all 290 people aboard,
-      including 66 children, were killed — the deadliest shootdown of a
+      including 66 children, were killed — one of the deadliest shootdowns of a
       commercial airliner by a military force.#cn() An ascending airliner
       and a diving attack jet are opposite behaviors, yet the crew
       converged on the second while the Aegis radar reported the first.
@@ -1067,8 +1069,8 @@
       stress — confirmation bias and the "stress and unconscious
       distortion of data" — naming "scenario fulfillment" as the
       psychological mechanism by which operators read every indication
-      through the lens of a presumed hostile attack. Several crew members
-      in the CIC independently believed the aircraft was descending,#cn()
+      through the lens of a presumed hostile attack. An inexperienced operator misread the range as a descent and others
+      in the CIC accepted it rather than checking,#cn()
       a shared error that is more damning than a single misread because
       it shows the interface offered no cross-check strong enough to
       break a wrong reading once the team had settled into it. The
@@ -1116,8 +1118,8 @@
   ),
   beats: (
     "Aegis cruiser fought Iranian gunboats near a dual-use airfield in the crowded Persian Gulf",
-    "Crew misread an ascending Airbus as a diving F-14 and fired; all 290 died",
-    "Aegis radar was correct; multiple operators independently saw descent under presumed-hostile framing",
+    "Crew tagged an ascending Airbus as a diving F-14 — a mis-correlated IFF squawk plus a range-read-as-altitude error — and fired; all 290 died",
+    "Aegis radar was correct; an operator misread the closing range as a descent and others in the CIC accepted it under presumed-hostile framing",
     "Interface left burden of overriding expectation to operators stripped of time by combat",
     "Naval retrospective reframed loss as predictable teaming failure of unguarded decision aids",
   ),

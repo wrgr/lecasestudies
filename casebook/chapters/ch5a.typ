@@ -81,7 +81,7 @@
     On 1 August 2012 Knight Capital, a major U.S. market maker, deployed new
     order-routing software to seven of its eight servers and missed the
     eighth. The new code reused a flag that, on the eighth server's old
-    software, reactivated long-dead "Power Peg" test code never removed from
+    software, reactivated long-dead "Power Peg" code never removed from
     the repository. At the opening bell it fired millions of unintended
     orders; in about 45 minutes Knight lost roughly \$440 million — more than
     the firm was worth — and was effectively acquired within months. The SEC

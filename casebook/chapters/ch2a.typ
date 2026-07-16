@@ -1422,7 +1422,7 @@
   year: "2014",
   domains-list: ("education",),
   modes-code: "G",
-  impact: "$100M initiative collapsed in ~14 months; 9 states withdrew; data infrastructure for education set back years",
+  impact: "$100M initiative collapsed in ~14 months; all 9 announced partner states pulled out or disavowed participation; data infrastructure for education set back years",
   diagram: dgm.dgm-inbloom,
   kind: "failure",
   summary: [
@@ -1506,7 +1506,7 @@
   ),
   beats: (
     "Gates-funded \$100M shared student-data store; technically sound, built by enterprise engineers on commercial cloud",
-    "Launched without consent, engagement, or parent voice; nine states withdrew within fourteen months",
+    "Launched without consent, engagement, or parent voice; all nine announced partner states pulled out or disavowed participation within fourteen months",
     "Data and Society read it as technocratic reform assuming engineering quality confers legitimacy",
     "Stakeholder trust treated as add-on rather than precondition; no patch retrofits trust under fire",
     "Set shared education infrastructure back years; drove a wave of state student-privacy laws",

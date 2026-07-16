@@ -548,8 +548,9 @@
     years later the Commercial Aviation Safety Team (CAST) added
     closed-loop analysis of operational data to find and fix hazards before
     they caused accidents. The pairing — cultural redesign plus continuous
-    evidence — drove an 83% reduction in U.S. commercial-aviation fatality
-    risk between 1998 and 2008, earning the 2008 Collier Trophy.
+    evidence — helped drive the 83% reduction in U.S. commercial-aviation fatality
+    risk between 1998 and 2008 that CAST achieved alongside new aircraft and
+    regulation, work that earned CAST the 2008 Collier Trophy.
   ],
   sections: (
     // -- Background --
@@ -620,7 +621,7 @@
     "Tenerife showed crashes came from crew coordination breakdowns, not individual lack of flying skill",
     "United formalized CRM in 1981 with protocols, authority gradients, and structured briefings as procedure",
     "Engineered the interaction system so junior challenges had a named, authorized route to the decision",
-    "CAST closed-loop hazard work cut fatality risk 83 percent; Collier Trophy in 2008",
+    "CAST closed-loop hazard work helped cut fatality risk 83 percent; Collier Trophy in 2008",
     "Design logic of paired cultural change plus measurement loop exported to surgery and AI systems",
   ),
   references: (
