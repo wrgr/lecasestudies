@@ -271,7 +271,7 @@
       requirements, the decade over which they had gone unmet, and the
       workarounds standing in for the real thing, and recommended the Corps
       formally analyze its unmet requirements and build a remediation plan
-      for Indo-Pacific ranges; the Department concurred.#cn() It was not the
+      for Indo-Pacific ranges; the Department partially agreed.#cn() It was not the
       first warning — GAO has pressed the same readiness recommendations for
       years, and flagged the gap between overseas training and readiness
       reporting two decades ago, so the 2024 finding documents not a fresh
@@ -309,15 +309,15 @@
   beats: (
     "Strategy names the Indo-Pacific top priority while its live-training infrastructure remains among the least mature",
     "Marine Corps papered over unmet range requirements with rotations, virtual substitutes, and multinational exercises",
-    "GAO documented decade-long unmet requirements in 2024; the Department concurred, echoing diagnoses pressed for years",
+    "GAO documented decade-long unmet requirements in 2024; the Department partially agreed, echoing diagnoses pressed for years",
     "Declared priority is cheap; engineered priority follows where construction and dollars actually flow",
     "GAO recommendations remain open; closure depends on programmed ranges, dollars, and schedule, not another document",
   ),
   references: (
     [_2022 National Defense Strategy of the United States of America_ (U.S. Department of Defense, 2022) — the Indo-Pacific as priority theater and China as the "pacing challenge."],
-    [U.S. Government Accountability Office, _Military Readiness: Actions Needed for DOD to Address Challenges_, #link("https://www.gao.gov/assets/gao-24-107463.pdf")[GAO-24-107463] (May 2024) — the least-mature training infrastructure in the priority theater.],
+    [U.S. Government Accountability Office, _Military Readiness: Actions Needed for DOD to Address Challenges across the Air, Sea, Ground, and Space Domains_, #link("https://www.gao.gov/assets/gao-24-107463.pdf")[GAO-24-107463] (May 2024) — the least-mature training infrastructure in the priority theater.],
     [GAO-24-107463 (2024) — the Marine Corps unable to meet INDOPACOM training requirements for nearly a decade, and the CONUS-rotation, virtual, and multinational-exercise workarounds.],
-    [GAO-24-107463 (2024) — recommendation that the Marine Corps analyze unmet training requirements and develop a remediation plan for Indo-Pacific ranges; DoD concurrence.],
+    [GAO-24-107463 (2024) — recommendation that the Marine Corps analyze unmet training requirements and develop a remediation plan for Indo-Pacific ranges; DoD partial agreement.],
     [GAO, _Military Readiness_ testimony before the Senate Armed Services Committee (D. C. Maurer) — the sustained pattern of readiness recommendations; see also GAO-02-525, _Military Training: Limitations Exist Overseas but Are Not Reflected in Readiness Reporting_ (2002).],
     [GAO-24-107463 (2024) — recommendation status (open as of 2024); the gap not yet remediated.],
   ),
@@ -347,7 +347,7 @@
   reflection-list: (
     [In your domain, what is the gap between *declared* priority and *engineered* priority? How would you measure it?],
     [Construct the capability requirements artifact for a theater you do not currently operate in. What would it cost, and who would sign for it?],
-    [GAO documented this shortfall for years, the Department concurred, and the gap stayed open. Design the accountability mechanism that would convert a concurrence into programmed dollars and schedule, with a signal that fires when the plan slips.],
+    [GAO documented this shortfall for years, the Department partially agreed, and the gap stayed open. Design the accountability mechanism that would convert a concurrence into programmed dollars and schedule, with a signal that fires when the plan slips.],
   ),
   approaches: (
     during: (
@@ -471,7 +471,7 @@
     [GAO-23-105341 (2023) — sustainment shortfall traced to maintainer shortages, lack of military access to technical data, and contractor dependency.],
     [GAO, _F-35 Sustainment: DOD Faces Several Uncertainties…_, #link("https://www.gao.gov/assets/gao-22-105995.pdf")[GAO-22-105995] (2022), and the broader GAO F-35 series — the recurring, year-over-year diagnosis.],
     [GAO-23-105341 (2023) — recommendation that DOD reassess the future sustainment strategy.],
-    [GAO, _F-35 Sustainment: Costs Continue to Rise While Planned Use Has Decreased_, #link("https://www.gao.gov/assets/d24106703.pdf")[GAO-24-106703] (2024) — costs rising while readiness stays below goal.],
+    [GAO, _F-35 Sustainment: Costs Continue to Rise While Planned Use and Availability Have Decreased_, #link("https://www.gao.gov/assets/d24106703.pdf")[GAO-24-106703] (2024) — costs rising while readiness stays below goal.],
   ),
   quote: [Organizational-level maintenance has been affected by a number of issues, including a lack of technical data and training.],
   quote-source: "Paraphrasing GAO-23-105341, F-35 Aircraft, 2023",
@@ -684,7 +684,7 @@
   year: "1980",
   domains-list: ("defense",),
   modes-code: "TK",
-  impact: "8 servicemembers killed in Iran; mission to rescue 52 American hostages aborted; catalyst for the founding of U.S. Special Operations Command",
+  impact: "8 servicemembers killed in Iran; mission to rescue 53 American hostages aborted; catalyst for the founding of U.S. Special Operations Command",
   diagram: dgm.dgm-ring(
     "Eagle\nClaw",
     ("Army", "Navy", "Marines", "Air Force", "CIA"),
@@ -693,7 +693,7 @@
   ),
   kind: "failure",
   summary: [
-    The April 1980 mission to rescue fifty-two American hostages held at
+    The April 1980 mission to rescue fifty-three American hostages held at
     the U.S. embassy in Tehran was aborted at a desert staging point when
     three of eight helicopters were lost to mechanical and weather
     problems. During the withdrawal a helicopter collided with a refueling
@@ -710,7 +710,7 @@
     // -- Background --
     [
       In November 1979, Iranian revolutionaries seized the U.S. embassy
-      in Tehran and took fifty-two Americans hostage. After months of
+      in Tehran and took more than sixty Americans hostage; fifty-three remained by April 1980. After months of
       failed diplomacy, the Carter administration authorized a military
       rescue. No standing joint special-operations command existed to
       plan or execute it; the force had to be assembled from units drawn
@@ -1542,7 +1542,7 @@
     live testing in peacetime. Through 1942 submarine crews reported
     torpedoes running deep, failing to detonate, or exploding
     prematurely; the Bureau insisted the weapon was sound and blamed
-    the operators. It took eighteen months and the personal intervention
+    the operators. It took about twenty months and the personal intervention
     of Admiral Charles Lockwood — who ordered fleet-level live-fire
     tests — to confirm three separate defects: the torpedo ran about
     ten feet too deep, its magnetic exploder fired erratically, and its
@@ -1575,7 +1575,7 @@
     ],
     // -- The Investigation --
     [
-      It took eighteen months and the intervention of Admiral Charles
+      It took about twenty months and the intervention of Admiral Charles
       Lockwood, commander of the Pacific submarine force, who ordered
       fleet-level testing. A live-fire trial — and the USS Tinosa's
       July 1943 attack on the Tonan Maru, in which eleven torpedoes struck
