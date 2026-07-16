@@ -182,7 +182,7 @@
   year: "2003–2017",
   domains-list: ("healthcare",),
   modes-code: "TKN",
-  impact: "ACGME capped U.S. resident physician work hours at 80/week to reduce fatigue-related errors; subsequent RCTs (FIRST, iCOMPARE) showed mixed effects on patient outcomes and increased hand-off-related errors",
+  impact: "ACGME capped U.S. resident physician work hours at 80/week to reduce fatigue-related errors; subsequent RCTs (FIRST, iCOMPARE) found flexible schedules non-inferior on patient outcomes, and the promised safety gain did not appear",
   diagram: dgm.dgm-timeline(
     (("2003 — 80-hr cap", "fatigue↓"), ("2011 — 16-hr intern cap", "—"), ("2016 — FIRST trial", "no difference"), ("2017 — duty-hour cap relaxed", "back to 80-hr only")),
     emphasis: 2,
@@ -542,7 +542,7 @@
     ],
     [
       The single-center economic evidence was the second pillar.
-      Cohen et al. (_Critical Care Medicine_, 2010) reported that
+      Cohen et al. (_Simulation in Healthcare_, 2010) reported that
       the SBML program was cost-saving at the single hospital,
       driven principally by the reduction in CRBSI cases — each
       bloodstream infection averted is expensive enough that even
@@ -606,7 +606,7 @@
   ),
   references: (
     [Barsuk, Cohen, Feinglass, McGaghie, & Wayne (2009), "Use of simulation-based education to reduce catheter-related bloodstream infections," _Archives of Internal Medicine_ 169(15):1420–1423, doi:10.1001/archinternmed.2009.215.],
-    [Cohen, Feinglass, Barsuk, Barnard, O'Donnell, McGaghie, & Wayne (2010), "Cost savings from reduced catheter-related bloodstream infection after simulation-based education for residents in a medical intensive care unit," _Critical Care Medicine_ 38(9):1853–1859.],
+    [Cohen, Feinglass, Barsuk, Barnard, O'Donnell, McGaghie, & Wayne (2010), "Cost savings from reduced catheter-related bloodstream infection after simulation-based education for residents in a medical intensive care unit," _Simulation in Healthcare_ 5(2):98–102, doi:10.1097/SIH.0b013e3181bc8304.],
     [Barsuk, McGaghie, Cohen, Balachandran, & Wayne (2009), "Use of simulation-based mastery learning to improve the quality of central venous catheter placement in a medical intensive care unit," _Journal of Hospital Medicine_ 4(7):397–403.],
     [McGaghie, Issenberg, Cohen, Barsuk, & Wayne (2011), "Does simulation-based medical education with deliberate practice yield better results than traditional clinical education? A meta-analytic comparative review," _Academic Medicine_ 86(6):706–711.],
     [Department of Veterans Affairs SimLEARN documentation — the operating-program record of the national dissemination effort.],
@@ -631,7 +631,7 @@
   ],
   literature-items: (
     [Barsuk et al. (2009), _Archives of Internal Medicine_],
-    [Cohen et al. (2010), _Critical Care Medicine_],
+    [Cohen et al. (2010), _Simulation in Healthcare_],
     [McGaghie et al. (2011), _Academic Medicine_ — meta-analytic review],
   ),
   reflection-list: (
@@ -650,7 +650,7 @@
   year: "2014",
   domains-list: ("clinical care", "patient safety", "team communication"),
   modes-code: "HKN",
-  impact: "Across nine pediatric residency programs, implementation of the I-PASS handoff bundle (mnemonic + training + faculty development + sustainability campaign) was associated with a 23% relative reduction in preventable adverse events and a drop in medical errors, without negatively affecting resident workflow — the study design 'precludes definitively establishing a causal link'",
+  impact: "Across nine pediatric residency programs, implementation of the I-PASS handoff bundle (mnemonic + training + faculty development + sustainability campaign) was associated with a 23% relative reduction in medical errors and a 30% reduction in preventable adverse events, without negatively affecting resident workflow — the study design 'precludes definitively establishing a causal link'",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -670,9 +670,7 @@
     paired with formal trainee education, faculty development, and
     a sustainability campaign. Starmer et al. (_NEJM_, 2014) studied
     its implementation at nine pediatric residency programs and
-    reported a 23% relative reduction in preventable adverse events
-    and a drop in medical errors, with no negative effect on
-    resident workflow. The hedge survives verbatim: the authors
+    reported a 23% relative reduction in medical errors and a 30% reduction in preventable adverse events, with no negative effect on resident workflow. The hedge survives verbatim: the authors
     state plainly that "our study design precludes definitively
     establishing a causal link." Published correspondence cautions
     against implementing the mnemonic alone without the full
@@ -718,10 +716,9 @@
       design was a pre/post evaluation across the participating
       sites, with the bundle deployed sequentially and outcomes
       tracked through chart review and observation. The headline
-      finding was a 23% relative reduction in preventable adverse
-      events from the pre-implementation period to the
-      post-implementation period, alongside a drop in medical
-      errors more broadly, with no observed negative effect on
+      finding was a 23% relative reduction in medical errors and a
+      30% reduction in preventable adverse events from the
+      pre-implementation period to the post-implementation period, with no observed negative effect on
       resident workflow — the bundle did not impose net friction
       that displaced other clinical work.#cn()
     ],
@@ -758,7 +755,7 @@
   beats: (
     "Shift-change handoff: structural risk point; loss of safety-critical information is documented failure mode",
     "I-PASS bundle — mnemonic (Illness severity, Patient summary, Action list, Situation awareness, Synthesis by receiver) + trainee education + faculty development + sustainability campaign",
-    "Starmer et al. NEJM 2014: 23% relative reduction in preventable adverse events across nine pediatric residency programs; drop in medical errors; no negative effect on resident workflow",
+    "Starmer et al. NEJM 2014: 23% relative reduction in medical errors and 30% reduction in preventable adverse events across nine pediatric residency programs; no negative effect on resident workflow",
     "Hedge preserved verbatim: 'our study design precludes definitively establishing a causal link'",
     "Published correspondence cautions against implementing the mnemonic alone without the full bundle",
   ),
@@ -947,7 +944,7 @@
   ),
   references: (
     [Hayden, J. K., Smiley, R. A., Alexander, M., Kardong-Edgren, S., \& Jeffries, P. R. (2014). The NCSBN National Simulation Study: A longitudinal, randomized, controlled study replacing clinical hours with simulation in prelicensure nursing education. _Journal of Nursing Regulation_, 5(2 Suppl):S1–S64. https://www.journalofnursingregulation.com/article/s2155-8256(15)30062-4/fulltext — the case's primary study.],
-    [Smiley, R. A. (2023). Survey of simulation use in prelicensure nursing programs and the regulatory landscape 2014–2022. _Journal of Nursing Regulation_. doi:10.1016/S2155-8256(23)00086-8 — the 2023 follow-up documenting the regulatory propagation.],
+    [Smiley, R. A., \& Martin, B. (2023). Simulation in Nursing Education: Advancements in Regulation, 2014–2022. _Journal of Nursing Regulation_. doi:10.1016/S2155-8256(23)00086-8 — the 2023 follow-up documenting the regulatory propagation.],
     [Jeffries, P. R. (2012). _Simulation in Nursing Education: From Conceptualization to Evaluation_ (2nd ed.). National League for Nursing — the simulation-quality framework the NCSBN study's quality conditions rest on.],
     [INACSL Standards Committee (2016). _INACSL Standards of Best Practice: Simulation_. _Clinical Simulation in Nursing_, 12(S) — the simulation-practice standards downstream programs adopt as the analog of the NCSBN quality conditions.],
   ),
@@ -1116,7 +1113,7 @@
     ),
   ),
   references: (
-    [Kerfoot, B. P., DeWolf, W. C., Masser, B. A., Church, P. A., \& Federman, D. D. (2007). Spaced education improves the retention of clinical knowledge by medical students: A randomised controlled trial. _Journal of Urology_, 177(4):1481–1487. doi:10.1016/j.juro.2006.11.074 — the case's primary RCT.],
+    [Kerfoot, B. P., Baker, H. E., Koch, M. O., Connelly, D., Joseph, D. B., \& Ritchey, M. L. (2007). Randomized, controlled trial of spaced education to urology residents in the United States and Canada. _Journal of Urology_, 177(4):1481–1487. doi:10.1016/j.juro.2006.11.074 — the case's primary RCT.],
     [Kerfoot, B. P. (2009). Learning benefits of on-line spaced education persist for 2 years. _Journal of Urology_, 181(6):2671 — the two-year persistence follow-up.],
     [Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., \& Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. _Psychological Bulletin_, 132(3):354–380 — the basic-literature spacing-effect review the workplace-L&D RCT sits against.],
     [Settles, B., \& Meeder, B. (2016). A trainable spaced repetition model for language learning. _Proceedings of ACL 2016_, 1848–1858 — Duolingo half-life regression (Case 69), the operational deployment companion.],
@@ -1218,12 +1215,16 @@
       and across the three modalities. The headline finding is
       that across all knowledge domains and self-perceived
       confidence dimensions assessed, mean increases were
-      observed regardless of modality. The pragmatic
-      interpretation in the global-health literature has been
-      that the virtual / blended modalities are not measurably
-      worse on the L1–L2 outcomes the study measured, a
-      finding that has policy implications for program design
-      under future disruption.#cn()
+      observed regardless of modality. But the modalities were not equivalent: the in-person
+      format produced significantly greater knowledge gains
+      (13.6% increase vs. 6.0% for the virtual workshop and
+      7.6% for the online course) and greater confidence gains,
+      regardless of training level or professional cadre. The
+      countervailing finding is equity of access — the virtual
+      and online formats reached a significantly higher
+      proportion of women — so the policy question under future
+      disruption is a trade-off between L1–L2 learning gains and
+      reach, not a claim of modality equivalence.#cn()
     ],
     [
       The honest framing the case must carry into print is the
@@ -2640,7 +2641,7 @@
   year: "1986 – present",
   domains-list: ("anesthesiology", "patient safety", "medical devices"),
   modes-code: "HKG",
-  impact: "Mandatory pulse oximetry and capnography monitoring (Harvard 1986; ASA 1986–87) converted silent hypoxemia and esophageal intubation from undetectable failures into monitored, recoverable ones; anesthesia-related mortality fell dramatically over subsequent decades — multifactorial decline",
+  impact: "Continuous pulse oximetry and capnography — encouraged in the 1986 Harvard/ASA minimum-monitoring standards and mandated in subsequent revisions (pulse oximetry ~1989–90; capnography ~1991) — converted silent hypoxemia and esophageal intubation from undetectable failures into monitored, recoverable ones; anesthesia-related mortality fell dramatically over subsequent decades — multifactorial decline",
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -2656,11 +2657,13 @@
     on anesthesia catastrophes converged with a malpractice-insurance
     crisis to force institutional attention. In 1986 Eichhorn et al.
     (_JAMA_, 1986) published the Harvard Medical School minimum
-    monitoring standards — continuous pulse oximetry and capnography
-    were the load-bearing additions, designed specifically to make
-    hypoxemia and misplaced endotracheal tubes detectable early
-    enough to recover. The ASA adopted essentially the same standards
-    in 1986–87. The Anesthesia Patient Safety Foundation, founded in
+    monitoring standards — which mandated an oxygen analyzer and
+    disconnection alarm and *encouraged* the newer continuous pulse
+    oximetry and capnography, the load-bearing additions designed to
+    make hypoxemia and misplaced endotracheal tubes detectable early
+    enough to recover; both were mandated in subsequent revisions
+    (pulse oximetry ~1989–90, capnography ~1991). The ASA adopted
+    essentially the same standards in 1986. The Anesthesia Patient Safety Foundation, founded in
     1985, institutionalized the broader change-management effort.
     Anesthesia-related mortality fell dramatically over subsequent
     decades — one widely cited Brazilian series reports a fall toward
@@ -2696,8 +2699,11 @@
       medicine. In 1986 Eichhorn et al. published in _JAMA_ the
       Harvard Medical School minimum monitoring standards: a defined
       minimum set of continuous monitors for every anesthetized
-      patient, with continuous pulse oximetry and capnography as the
-      load-bearing additions.#cn()
+      patient. Pulse oximetry and capnography — then just entering
+      wide use — were *encouraged* rather than required in the 1986
+      text, and became the load-bearing additions when subsequent
+      revisions mandated them (pulse oximetry ~1989–90, capnography
+      ~1991).#cn()
     ],
     [
       Pulse oximetry made oxygenation continuously visible to the
@@ -2746,7 +2752,7 @@
   beats: (
     "Early 1980s anesthesia crisis: silent hypoxemia and esophageal intubation structurally undetectable until catastrophic",
     "1982 ABC special + malpractice-insurance crisis + APSF founding (1985) force institutional change",
-    "Harvard standards (Eichhorn JAMA 1986): minimum monitoring with continuous pulse oximetry and capnography; ASA adopts 1986–87",
+    "Harvard standards (Eichhorn JAMA 1986): minimum monitoring; pulse oximetry and capnography encouraged in 1986, mandated in later revisions (~1989–91); ASA adopts 1986",
     "Anesthesia mortality falls dramatically over subsequent decades; malpractice premiums decline alongside",
     "Hedge preserved: decline is multifactorial; device standards still fail in documented edge cases (cf. Case 26 pulse oximetry across skin tones)",
   ),
