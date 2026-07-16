@@ -623,7 +623,7 @@
   modes-code: "HK",
   impact: "50 million people without power across eight U.S. states and Ontario; $6B+ economic loss; FERC Order 693 followed",
   diagram: dgm.dgm-timeline(
-    (("tree contact", "12:15"), ("line trips", "—"), ("alarm fails", "silent"), ("operator unaware", "1 hour"), ("cascade", "4:11")),
+    (("tree contact", "3:05"), ("line trips", "—"), ("alarm fails", "silent"), ("operator unaware", "1 hour"), ("cascade", "4:11")),
     emphasis: 2,
     caption: "Northeast Blackout — silent alarm failure absorbed the operator's awareness",
   ),
@@ -951,7 +951,7 @@
     bank's response was to fire individual "bad apples" while leaving the
     incentive structure intact — and that structure was the actual cause:
     sales targets most employees could not meet by ethical means. The 2016
-    CFPB and OCC actions brought ~\$3 billion in penalties, the CEO resigned,
+    CFPB, OCC, and Los Angeles actions brought \$185 million in penalties — a 2020 DOJ/SEC settlement later reached roughly \$3 billion — the CEO resigned,
     and the Federal Reserve took the unprecedented step of capping the bank's
     assets. Wells Fargo is the canonical case of an incentive architecture
     that manufactured the misconduct the institution then prosecuted at the
@@ -993,7 +993,7 @@
     ],
     // -- The Investigation --
     [
-      The 2016 CFPB and OCC actions brought roughly \$3 billion in penalties,
+      The 2016 CFPB, OCC, and Los Angeles actions brought \$185 million in penalties (a 2020 DOJ/SEC settlement later reached roughly \$3 billion),
       and the bank's own independent-directors investigation (2017)
       documented how the sales-target architecture drove the misconduct —
       locating the cause in the design, not the people executing it.#cn()
@@ -1188,8 +1188,7 @@
       The reform closed the gap at the instrument: the EU introduced
       real-world driving-emissions testing, moving the measurement off the
       predictable bench and onto the road the standard actually cared about,
-      making it far harder to game.#cn() The pattern parallels Takata (Case
-      84) — a manufacturer's fraud meeting a regulator whose evidence pipeline
+      making it far harder to game.#cn() The pattern parallels Takata (Case 147) — a manufacturer's fraud meeting a regulator whose evidence pipeline
       trusted the manufacturer's test conditions, and a fix that had to
       upgrade the measurement itself, not just punish the cheat, because
       punishing the cheat leaves the exploitable instrument in place for the
