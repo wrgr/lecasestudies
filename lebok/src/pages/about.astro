@@ -1,0 +1,55 @@
+---
+// About — what this site is, what it deliberately is not, and how it relates to
+// the canonical field resources. Kept short and honest about provenance.
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="About · Body of Knowledge" active="about">
+  <article class="container prose">
+    <div class="eyebrow">About</div>
+    <h1>A guided reader, not a replacement.</h1>
+
+    <p>
+      This site is a curated reader over the field's Learning Engineering Body of
+      Knowledge. Its one job is to help people find a path into a broad and
+      growing field: <a href={base + "journeys/"}>learning journeys</a> that route
+      through the material for a particular starting point, and a
+      <a href={base + "knowledge-map/"}>knowledge map</a> to browse by area.
+    </p>
+
+    <h2>What it is not</h2>
+    <p>
+      It is not the canonical corpus, and it does not duplicate it. The shared
+      reading list, tools catalog, practice library, events, and community live at
+      the <a href="https://lecommons.org" target="_blank" rel="noopener">Learning
+      Engineering Commons</a>; the reference body of knowledge lives at the
+      <a href="https://lebok.wiki" target="_blank" rel="noopener">LEBoK wiki</a>
+      maintained through IEEE ICICLE. Every journey stop links back to that
+      material rather than restating it. It is also not tied to any single degree
+      program — it is a field-level resource.
+    </p>
+
+    <h2>On the taxonomy</h2>
+    <p>
+      The knowledge areas used to organize journeys currently follow the Learning
+      Engineering Competency Framework synthesis prepared for the IEEE standards
+      pathway — the closest documented field-level map available at build time.
+      Before a public launch these should be reconciled against the canonical
+      LEBoK knowledge areas, and adjusted where they differ.
+    </p>
+
+    <h2>Contributing a journey</h2>
+    <p>
+      Journeys are MDX files under <code>src/content/journeys/</code>. Each names
+      an audience, an ordered list of stops, and — for every stop — the knowledge
+      area it advances and onward links to canonical sources. Adding a path is a
+      pull request, not a code change.
+    </p>
+  </article>
+
+  <style>
+    .prose h2 { margin-top: 2rem; }
+    .prose p { max-width: var(--measure); }
+  </style>
+</Base>

@@ -1,0 +1,62 @@
+---
+// Renders the eight field knowledge areas as a compact row of segments, with the
+// areas a journey covers filled and the rest left as faint outlines — a
+// at-a-glance "where in the body of knowledge does this path take me" cue.
+// Mirrors the coverage idea of a LENS-style competency bar, but keyed to the
+// field's knowledge areas rather than any one program's competencies.
+import { KNOWLEDGE_AREAS } from "../data/knowledge-areas";
+
+interface Props {
+  // Knowledge-area ids this journey covers.
+  covered: string[];
+  // Compact mode drops the labels (used on dense index cards).
+  compact?: boolean;
+}
+
+const { covered, compact = false } = Astro.props;
+const coveredSet = new Set(covered);
+---
+
+<div class:list={["coverage", { compact }]} role="img"
+     aria-label={`Covers ${covered.length} of ${KNOWLEDGE_AREAS.length} knowledge areas`}>
+  {KNOWLEDGE_AREAS.map((a) => (
+    <div class:list={["seg", { on: coveredSet.has(a.id) }]} title={a.title}>
+      {!compact && <span class="seg-label">{a.title}</span>}
+    </div>
+  ))}
+</div>
+
+<style>
+  .coverage {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 3px;
+    margin: .5rem 0;
+  }
+  .seg {
+    height: .5rem;
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid var(--border);
+  }
+  .seg.on {
+    background: var(--gold);
+    border-color: var(--accent-2);
+  }
+  /* Non-compact: taller segments carry a small label underneath. */
+  .coverage:not(.compact) { gap: 4px; }
+  .coverage:not(.compact) .seg {
+    height: auto;
+    min-height: 2.4rem;
+    display: flex;
+    align-items: flex-end;
+    padding: .3rem;
+  }
+  .seg-label {
+    font-family: var(--sans);
+    font-size: .6rem;
+    line-height: 1.15;
+    color: var(--ink-soft);
+  }
+  .coverage:not(.compact) .seg:not(.on) .seg-label { color: var(--muted); }
+</style>

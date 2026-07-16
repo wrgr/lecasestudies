@@ -1,0 +1,100 @@
+---
+// Knowledge Map — the field's knowledge areas as the site's organizing spine,
+// each linked to the journeys that develop it. This is the "browse by area"
+// counterpart to the journeys ("browse by path") index.
+import Base from "../../layouts/Base.astro";
+import { KNOWLEDGE_AREAS } from "../../data/knowledge-areas";
+import { getCollection } from "astro:content";
+
+const journeys = (await getCollection("journeys", (j) => !j.data.draft)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const base = import.meta.env.BASE_URL;
+
+// For each area, the journeys that list it in `areas`.
+const journeysByArea = new Map<string, typeof journeys>();
+for (const area of KNOWLEDGE_AREAS) {
+  journeysByArea.set(
+    area.id,
+    journeys.filter((j) => j.data.areas.includes(area.id)),
+  );
+}
+---
+
+<Base title="Knowledge Map · Body of Knowledge" active="knowledge-map">
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">Knowledge Map</div>
+      <h1>The shape of the field.</h1>
+      <p class="subhead">
+        These are the knowledge areas a learning engineer draws on. They are a
+        map to orient by, not a syllabus to march through — the
+        <a href={base + "journeys/"}>learning journeys</a> are how you route
+        across them.
+      </p>
+      <p class="provenance">
+        <strong>On this taxonomy.</strong> These areas follow the Learning
+        Engineering Competency Framework synthesis prepared for the IEEE
+        standards pathway, used here as the closest documented field-level map.
+        They should be reconciled against the canonical
+        <a href="https://lebok.wiki" target="_blank" rel="noopener">LEBoK</a>
+        knowledge areas before launch.
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <ol class="areas">
+      {KNOWLEDGE_AREAS.map((area, i) => {
+        const linked = journeysByArea.get(area.id) ?? [];
+        return (
+          <li class="area">
+            <div class="area-num" aria-hidden="true">{i + 1}</div>
+            <div class="area-body">
+              <h2>{area.title}</h2>
+              <p>{area.blurb}</p>
+              {linked.length > 0 ? (
+                <p class="in-journeys">
+                  <span class="lbl">In journeys:</span>
+                  {linked.map((j, k) => (
+                    <>
+                      <a href={base + "journeys/" + j.id + "/"}>{j.data.title}</a>{k < linked.length - 1 ? " · " : ""}
+                    </>
+                  ))}
+                </p>
+              ) : (
+                <p class="in-journeys muted">Not yet covered by a journey.</p>
+              )}
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  </div>
+
+  <style>
+    .hero { background: var(--tint); border-bottom: 1px solid var(--border); }
+    .subhead { font-size: 1.15rem; color: var(--ink-soft); max-width: var(--measure); }
+    .provenance {
+      font-family: var(--sans); font-size: .85rem; color: var(--muted);
+      max-width: var(--measure); border-left: 3px solid var(--border); padding-left: .8rem;
+    }
+
+    .areas { list-style: none; margin: 0; padding: 0; }
+    .area {
+      display: grid; grid-template-columns: 2.5rem 1fr; gap: 1rem;
+      padding: 1.25rem 0; border-bottom: 1px solid var(--border);
+    }
+    .area:last-child { border-bottom: none; }
+    .area-num {
+      font-family: var(--sans); font-weight: 700;
+      display: grid; place-items: center;
+      width: 2.2rem; height: 2.2rem; border-radius: 4px;
+      background: var(--tint-warm); color: var(--accent-2);
+    }
+    .area h2 { font-size: 1.25rem; margin: 0 0 .3rem; }
+    .area p { margin: 0 0 .4rem; color: var(--ink-soft); }
+    .in-journeys { font-family: var(--sans); font-size: .85rem; }
+    .in-journeys .lbl { color: var(--muted); margin-right: .4rem; }
+  </style>
+</Base>

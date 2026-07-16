@@ -1,0 +1,108 @@
+---
+// Journey detail — the pathway view. Renders the MDX lead, then the ordered
+// stops as a numbered spine; each stop names its knowledge area, a rationale,
+// and onward links to the canonical corpus. Unknown area ids surface a visible
+// warning rather than failing silently, so authoring mistakes are caught.
+import Base from "../../layouts/Base.astro";
+import AreaCoverage from "../../components/AreaCoverage.astro";
+import { areaById } from "../../data/knowledge-areas";
+import { getCollection, render } from "astro:content";
+
+// Pre-render one page per non-draft journey.
+export async function getStaticPaths() {
+  const journeys = await getCollection("journeys", (j) => !j.data.draft);
+  return journeys.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title={`${entry.data.title} · Learning Journey`} active="journeys"
+      description={entry.data.summary}>
+  <article class="container">
+    <div class="eyebrow">Learning Journey · {entry.data.audience}</div>
+    <h1>{entry.data.title}</h1>
+
+    <div class="lead">
+      <Content />
+    </div>
+
+    <section class="coverage-block" aria-label="Knowledge-area coverage">
+      <h2 class="mini">Where this path takes you</h2>
+      <AreaCoverage covered={entry.data.areas} />
+    </section>
+
+    <hr class="rule" />
+
+    <ol class="spine">
+      {entry.data.stops.map((stop, i) => {
+        const area = areaById(stop.area);
+        return (
+          <li class="stop">
+            <div class="num" aria-hidden="true">{i + 1}</div>
+            <div class="stop-body">
+              <div class="stop-area">
+                {area ? area.title : (
+                  <span class="unknown">⚠ unknown area: {stop.area}</span>
+                )}
+              </div>
+              <h3>{stop.title}</h3>
+              <p>{stop.detail}</p>
+              {stop.links.length > 0 && (
+                <ul class="links">
+                  {stop.links.map((l) => (
+                    <li>
+                      <a href={l.href} target="_blank" rel="noopener">{l.label} ↗</a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+
+    <hr class="rule" />
+    <p class="back"><a href={base + "journeys/"}>← All learning journeys</a></p>
+  </article>
+
+  <style>
+    .lead { font-size: 1.1rem; color: var(--ink-soft); max-width: var(--measure); }
+    .coverage-block { margin: 1.5rem 0 0; }
+    .mini {
+      font-family: var(--sans); font-size: .75rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: .3rem;
+    }
+
+    .spine { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+    .stop {
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 1rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .stop:last-child { border-bottom: none; }
+    .num {
+      font-family: var(--sans); font-weight: 700; font-size: 1rem;
+      display: grid; place-items: center;
+      width: 2.2rem; height: 2.2rem;
+      border-radius: 50%;
+      background: var(--accent); color: var(--gold);
+    }
+    .stop-area {
+      font-family: var(--sans); font-size: .72rem; letter-spacing: .05em;
+      text-transform: uppercase; color: var(--accent-2); font-weight: 600;
+      margin-bottom: .2rem;
+    }
+    .unknown { color: #b00020; }
+    .stop h3 { margin: 0 0 .3rem; }
+    .stop p { margin: 0 0 .5rem; color: var(--ink-soft); }
+    .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem 1rem; }
+    .links a { font-family: var(--sans); font-size: .85rem; }
+    .back a { font-family: var(--sans); font-size: .9rem; }
+  </style>
+</Base>

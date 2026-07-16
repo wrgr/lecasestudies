@@ -1,0 +1,78 @@
+---
+// Learning Journeys index. Curated paths through the body of knowledge, sorted
+// by their declared order. Each card shows the audience, a coverage strip over
+// the field's knowledge areas, and the number of stops.
+import Base from "../../layouts/Base.astro";
+import AreaCoverage from "../../components/AreaCoverage.astro";
+import { getCollection } from "astro:content";
+
+const journeys = (await getCollection("journeys", (j) => !j.data.draft)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Learning Journeys · Body of Knowledge" active="journeys">
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">Learning Journeys</div>
+      <h1>Paths through the body of knowledge.</h1>
+      <p class="subhead">
+        The body of knowledge is a map, not a sequence. A learning journey is a
+        curated route through it — an ordered set of stops chosen for a
+        particular starting point, each one pointing onward to the canonical
+        material. Pick the path that matches where you are.
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <ul class="journeys">
+      {journeys.map((j) => (
+        <li class="card">
+          <div class="card-head">
+            <span class="audience">{j.data.audience}</span>
+            <span class="count">{j.data.stops.length} stops</span>
+          </div>
+          <h2>
+            <a class="stretched" href={base + "journeys/" + j.id + "/"}>{j.data.title}</a>
+          </h2>
+          <p>{j.data.summary}</p>
+          <AreaCoverage covered={j.data.areas} compact={true} />
+          <span class="more">Follow this journey →</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <style>
+    .hero { background: var(--tint); border-bottom: 1px solid var(--border); }
+    .subhead { font-size: 1.15rem; color: var(--ink-soft); max-width: var(--measure); }
+
+    .journeys { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; }
+    @media (min-width: 720px) { .journeys { grid-template-columns: 1fr 1fr; } }
+
+    .card {
+      position: relative;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.25rem 1.3rem;
+      background: var(--bg);
+      transition: box-shadow .15s ease, border-color .15s ease;
+    }
+    .card:hover { box-shadow: 0 6px 20px rgba(20, 50, 74, 0.08); border-color: var(--accent-2); }
+    .card-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      font-family: var(--sans); font-size: .72rem; letter-spacing: .04em;
+      text-transform: uppercase; margin-bottom: .5rem;
+    }
+    .audience { color: var(--accent-2); font-weight: 600; }
+    .count { color: var(--muted); }
+    .card h2 { font-size: 1.3rem; margin: 0 0 .4rem; }
+    .card p { font-size: .95rem; color: var(--ink-soft); margin-bottom: .75rem; }
+    /* Stretched link makes the whole card clickable while keeping the heading semantic. */
+    .stretched { border: none; }
+    .stretched::after { content: ""; position: absolute; inset: 0; }
+    .more { font-family: var(--sans); font-size: .82rem; color: var(--accent-2); font-weight: 600; }
+  </style>
+</Base>

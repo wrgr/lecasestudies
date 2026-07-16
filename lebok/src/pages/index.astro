@@ -1,0 +1,107 @@
+---
+// Homepage. States what the site is (a guided reader over the field's body of
+// knowledge), points to the two entry modes (journeys / knowledge map), and is
+// explicit that the canonical corpus lives at lecommons.org and lebok.wiki.
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const journeys = (await getCollection("journeys", (j) => !j.data.draft)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Learning Engineering Body of Knowledge — a guided reader" active="home">
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">Learning Engineering Body of Knowledge</div>
+      <h1>A guided reader for the field.</h1>
+      <p class="subhead">
+        The field's body of knowledge is broad and growing. This is a way in:
+        curated <a href={base + "journeys/"}>learning journeys</a> that route
+        through it for a particular starting point, and a
+        <a href={base + "knowledge-map/"}>knowledge map</a> to browse by area.
+        It links to the canonical corpus — it does not replace it.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href={base + "journeys/"}>Start a journey</a>
+        <a class="btn" href={base + "knowledge-map/"}>Browse the map</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Start with a journey</h2>
+      <p class="lead">Pick the path that matches where you are.</p>
+      <ul class="mini-journeys">
+        {journeys.map((j) => (
+          <li>
+            <a href={base + "journeys/" + j.id + "/"}>
+              <span class="mj-aud">{j.data.audience}</span>
+              <span class="mj-title">{j.data.title}</span>
+              <span class="mj-sum">{j.data.summary}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="links-out">
+      <h2>The canonical corpus lives elsewhere</h2>
+      <p>
+        This reader is deliberately narrow: it curates paths and links onward. The
+        field's shared reading list, tools catalog, practice library, events, and
+        community roster live at the Learning Engineering Commons, and the
+        reference body of knowledge lives at the LEBoK wiki.
+      </p>
+      <div class="out-cards">
+        <a class="out" href="https://lecommons.org" target="_blank" rel="noopener">
+          <strong>Learning Engineering Commons ↗</strong>
+          <span>Reading list, tools, practice library, events, community.</span>
+        </a>
+        <a class="out" href="https://lebok.wiki" target="_blank" rel="noopener">
+          <strong>LEBoK Wiki ↗</strong>
+          <span>The IEEE ICICLE Learning Engineering Body of Knowledge.</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .hero { background: var(--tint); border-bottom: 1px solid var(--border); }
+    .subhead { font-size: 1.2rem; color: var(--ink-soft); max-width: var(--measure); }
+    .cta { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+    .btn {
+      font-family: var(--sans); font-size: .9rem; font-weight: 600;
+      padding: .6rem 1.1rem; border-radius: 4px; border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+    .btn:hover { border-color: var(--accent); background: var(--tint-warm); }
+    .btn.primary { background: var(--accent); color: var(--gold); }
+    .btn.primary:hover { background: var(--ink); }
+
+    .lead { color: var(--ink-soft); }
+    .mini-journeys { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .6rem; }
+    .mini-journeys a {
+      display: grid; gap: .1rem; padding: .9rem 1rem;
+      border: 1px solid var(--border); border-radius: 5px; color: var(--ink); border-bottom: 1px solid var(--border);
+    }
+    .mini-journeys a:hover { border-color: var(--accent-2); background: var(--bg); }
+    .mj-aud { font-family: var(--sans); font-size: .7rem; letter-spacing: .05em; text-transform: uppercase; color: var(--accent-2); font-weight: 600; }
+    .mj-title { font-weight: 600; font-size: 1.1rem; }
+    .mj-sum { font-size: .9rem; color: var(--muted); }
+
+    .out-cards { display: grid; gap: 1rem; margin-top: 1rem; }
+    @media (min-width: 640px) { .out-cards { grid-template-columns: 1fr 1fr; } }
+    .out {
+      display: grid; gap: .3rem; padding: 1.1rem 1.2rem;
+      border: 1px solid var(--border); border-radius: 6px; color: var(--ink); background: var(--tint);
+    }
+    .out:hover { border-color: var(--accent-2); }
+    .out strong { font-family: var(--serif); }
+    .out span { font-family: var(--sans); font-size: .88rem; color: var(--muted); }
+  </style>
+</Base>
