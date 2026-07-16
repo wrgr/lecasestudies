@@ -75,7 +75,7 @@
       December 2024 the country reported effectively 100%
       digitalization of government services, with sub-five-minute
       tax filing and more than 95% of tax declarations filed electronically. The Mission
-      Mystique and the Hiding Hand chapter (Oxford 2024) and the
+      Mystique and the Hiding Hand chapter (Oxford 2019) and the
       ICEGOV 2021 historical analysis are the peer-reviewed
       treatments; the X-Road Global program documentation extends
       the case to the institutions that have since adopted the
@@ -113,7 +113,7 @@
       part of its current design discipline. The Domain-1 frame
       applies: systems analysis of the data-exchange layer as
       an artifact whose own aging trajectory is part of the
-      system's behavior. The Domain-4 frame applies because the
+      system's behavior. The Domain-5 frame applies because the
       sociotechnical commitment of a state to a single
       data-exchange protocol is itself the governance choice
       that determines what the future modernization will have
@@ -142,7 +142,7 @@
   ),
   references: (
     [Kattel, R., & Mergel, I. (2019), "Estonia's Digital Transformation: Mission Mystique and the Hiding Hand," in Compton, M., & 't Hart, P. (eds.), _Great Policy Successes_ (Oxford University Press, 2019) — peer-reviewed analytical chapter.],
-    [Kotka, Castro, & Kasakov (2021), "A Historical Analysis on Interoperability in Estonian Data Exchange Architecture," _ICEGOV 2021_ proceedings, doi:10.1145/3494193.3494209.],
+    [Jackson, Dreyling, & Pappel (2021), "A Historical Analysis on Interoperability in Estonian Data Exchange Architecture," _ICEGOV 2021_ proceedings, doi:10.1145/3494193.3494209.],
     [X-Road Global / Nordic Institute for Interoperability Solutions (NIIS) — program documentation and deployment-partner case studies.],
     [Republic of Estonia, e-Estonia briefing materials and Year-in-Review documentation (2024) — program-report sourcing.],
   ),
@@ -171,8 +171,8 @@
     failures the corpus already documents.
   ],
   literature-items: (
-    [Kalvet et al. (2024), _Mission Mystique_ chapter — Estonia digital transformation],
-    [Kotka et al. (2021), ICEGOV 2021 — historical interoperability analysis],
+    [Kattel & Mergel (2019), _Mission Mystique_ chapter — Estonia digital transformation],
+    [Jackson et al. (2021), ICEGOV 2021 — historical interoperability analysis],
     [X-Road Global / NIIS program documentation],
   ),
   reflection-list: (
@@ -423,7 +423,7 @@
       updated when peer review lands.#cn()
     ],
     [
-      What the pair (Cases 186 + 150) teaches together is the form of
+      What the pair (Cases 186 + 196) teaches together is the form of
       the equity capability deliverable: the practitioner must specify,
       in advance, the fairness definition the deployment will be
       evaluated against, audit on outputs rather than reasoning about
@@ -456,7 +456,7 @@
   ),
   references: (
     [Coots, Bartlett, Nyarko, & Goel (2025), "Algorithmic Bias in Lending: Evidence from a Fintech Audit," arXiv:2512.20753 — audit of ~80,000 personal loans showing model miscalibration disparities and that controlled inclusion of protected attributes could correct them; the evidence-tier flag is binding until peer review completes.],
-    [Bartlett, Morse, Stanton, & Wallace (2022), "Consumer-lending discrimination in the FinTech era," _Journal of Financial Economics_ 143(1):30–56 — the paired big-tier case (103).],
+    [Bartlett, Morse, Stanton, & Wallace (2022), "Consumer-lending discrimination in the FinTech era," _Journal of Financial Economics_ 143(1):30–56 — the paired big-tier case (186).],
     [Chouldechova (2017), "Fair Prediction with Disparate Impact," _Big Data_ 5(2):153–163 — the impossibility result for calibration and error-rate parity.],
     [Kleinberg, Mullainathan, & Raghavan (2017), "Inherent Trade-Offs in the Fair Determination of Risk Scores," _ITCS_ — competing fairness definitions are not jointly achievable.],
     [Mitchell, Potash, Barocas, D'Amour, & Lum (2021), "Algorithmic Fairness: Choices, Assumptions, and Definitions," _Annual Review of Statistics and Its Application_ 8:141–163 — practitioner-facing survey.],
@@ -965,7 +965,7 @@
     and Human-System Collaboration) for the deployer-side artifact that
     permits oversight of a system whose internals are trade
     secret. Pair with Case 190 (Cruise) as the foil and Case
-    184 (CPUC) as the regulator-side complement.
+    200 (CPUC) as the regulator-side complement.
   ],
   literature-items: (
     [Waymo (2023), safety case framework whitepaper],
@@ -1103,7 +1103,7 @@
     ),
     after: (
       [Pair the case with Case 199 (Waymo) as the regulator-deployer artifact dyad — the safety case framework and the permit conditions are co-constitutive, not independent moves.],
-      [Use the case in LENS Domain 4 modules on cross-regime governance seams (CPUC and DMV) — the regime structure is itself part of the capability question.],
+      [Use the case in LENS Domain 5 modules on cross-regime governance seams (CPUC and DMV) — the regime structure is itself part of the capability question.],
       [Carry the practice-synthesis flag honestly: the condition-design pattern is teachable, but the equity-of-service outcome data are not yet peer-reviewed; future validation requires independent evaluation of the Passenger Safety Plan deliverables.],
     ),
   ),
@@ -1111,7 +1111,7 @@
     [California Public Utilities Commission, "Autonomous Vehicle Passenger Service Programs," CPUC program page and August 2024 application guidance.],
     [CPUC permit decisions for Cruise and Waymo, 2020–2024.],
     [California Department of Motor Vehicles, AV regulatory program — strengthened safety-restriction authority, 2024.],
-    [Paired Cases 199 (Waymo deployer-side artifact) and 158 (Cruise revocation under regime).],
+    [Paired Cases 199 (Waymo deployer-side artifact) and 190 (Cruise revocation under regime).],
   ),
   quote: [The governance objection was not refused. It was made a permit condition.],
   quote-source: "Editors' synthesis of the CPUC AV passenger-service permit framework.",
@@ -1250,7 +1250,7 @@
     [
       What the case adds at the LENS layer is the non-US
       automated-welfare-delegation thread the corpus needs.
-      The Domain-4 frame applies — a sociotechnical constraint
+      The Domain-5 frame applies — a sociotechnical constraint
       (population-scale biometric delegation) judicially
       corrected on dignity grounds — and the CLO around
       fairness beyond omission applies directly: the harm was
@@ -1529,10 +1529,10 @@
     load-bearing limitations: bias audits without bias data —
     employers often lack the protected-attribute data the audit
     metrics require — and wide variability in audit quality
-    across published audits. The case pairs with Case 81 (OU
+    across published audits. The case pairs with Case 85 (OU
     Analyse — governance-objection dissolved by design), Case
-    133 (Gándara community-college predictive equity), and Case
-    29 (Amazon hiring AI). The intervention is the audit-as-
+    86 (Gándara community-college predictive equity), and Case
+    182 (Amazon hiring AI). The intervention is the audit-as-
     governance-artifact discipline; whether the audits reduce
     actual disparate impact at the hiring level remains under-
     evidenced.
@@ -1587,7 +1587,7 @@
       audits are governance artifacts; their information content
       is uneven across the first cohort.    ],
     [
-      The case pairs with Case 81 (OU Analyse) for the
+      The case pairs with Case 85 (OU Analyse) for the
       governance-objection-dissolved-by-design thread: OU
       Analyse's deployment surfaced an equity question that the
       design process resolved structurally; Local Law 144's
@@ -1632,7 +1632,7 @@
     "Three requirements: annual independent bias audit, publication of audit summary, candidate notice and alternative-selection request process",
     "Audit metrics: selection rate and impact ratio by sex, race/ethnicity, intersectional categories; computed by independent auditor not associated with the AEDT",
     "Yam & Skirpan 2024 \"bias audits without bias data\": employers often lack protected-attribute data; Wright & Brown 2024 audit-quality study finds wide variability",
-    "Pair with Case 81 (OU Analyse), Case 86 (Gándara), Case 182 (Amazon hiring AI); whether audits reduce actual disparate impact remains under-evidenced",
+    "Pair with Case 85 (OU Analyse), Case 86 (Gándara), Case 182 (Amazon hiring AI); whether audits reduce actual disparate impact remains under-evidenced",
   ),
   approaches: (
     during: (
@@ -1642,13 +1642,13 @@
     ),
     after: (
       [Carry the load-bearing hedges — disclosure-and-audit regime not substantive-standards regime; reduction of actual disparate impact under-evidenced; audit-quality variability across first cohort — into print without softening; the case's pedagogical value depends on the intervention's limits being preserved.],
-      [Pair in syllabi with Case 81 (OU Analyse) so the governance-objection-dissolved-by-design and governance-objection-surfaced-by-disclosure threads are taught together as complementary intervention forms.],
+      [Pair in syllabi with Case 85 (OU Analyse) so the governance-objection-dissolved-by-design and governance-objection-surfaced-by-disclosure threads are taught together as complementary intervention forms.],
       [Use the case as the change-control-and-disclosure-as-governance-artifacts anchor at the municipal-regulatory scale; the curricular target is the discipline of building the data infrastructure and the audit-quality criteria the disclosure regime presupposes.],
     ),
   ),
   references: (
     [New York City Department of Consumer and Worker Protection, _Rules Implementing Local Law 144 of 2021 (Automated Employment Decision Tools)_, effective July 5, 2023.],
-    [Wright, L., Muenster, R. M., Vecchione, B., Qu, T., Cai, S., Smith, A., Metcalf, J., & Matias, J. N. (2024), "Auditing Work: Exploring the New York City algorithmic bias audit regime," in _Proceedings of FAccT 2024_, doi:10.1145/3630106.3658959.],    [Engler, A. (2023), "The EU and U.S. diverge on AI regulation: A transatlantic comparison and steps to alignment," _Brookings Institution_ commentary — regulatory-comparative frame for the municipal intervention.],
+    [Wright, L., Muenster, R. M., Vecchione, B., Qu, T., Cai, S., Smith, A., Metcalf, J., & Matias, J. N. (2024), "Null Compliance: NYC Local Law 144 and the Challenges of Algorithm Accountability," in _Proceedings of FAccT 2024_, doi:10.1145/3630106.3658998.],    [Engler, A. (2023), "The EU and U.S. diverge on AI regulation: A transatlantic comparison and steps to alignment," _Brookings Institution_ commentary — regulatory-comparative frame for the municipal intervention.],
   ),
   quote: [The audit-and-notice regime is a disclosure-and-audit instrument, not a substantive-standards instrument; whether it reduces actual disparate impact at the hiring level is an empirical question the published evidence does not yet resolve.],
   quote-source: "Editors' synthesis of the Local Law 144 rule text and the Yam/Skirpan and Wright/Brown academic critiques.",
@@ -1701,7 +1701,7 @@
   modes-code: "GDH",
   impact: "GM Cruise robotaxi struck a pedestrian and then dragged her ~20 feet; California suspended Cruise's permit; the program was substantially shut down",
   diagram: dgm.dgm-timeline(
-    (("collision", "—"), ("drag", "20 ft"), ("partial video", "to regulator"), ("permit suspended", "CPUC"), ("shutdown", "GM")),
+    (("collision", "—"), ("drag", "20 ft"), ("partial video", "to regulator"), ("permit suspended", "DMV"), ("shutdown", "GM")),
     emphasis: 2,
     caption: "Cruise — partial disclosure converted incident into company-ending event",
   ),
@@ -1756,8 +1756,8 @@
     ],
     // -- Early Evidence --
     [
-      The consequences cascaded. The CPUC suspended Cruise's driverless
-      permit for misrepresenting the incident, NHTSA opened a defects
+      The consequences cascaded. The California DMV suspended Cruise's driverless
+      permits for misrepresenting the incident, NHTSA opened a defects
       investigation, and GM subsequently shut down Cruise's commercial
       robotaxi operations and laid off much of the workforce. A
       commissioned external review (Quinn Emanuel) detailed the disclosure
