@@ -1,6 +1,6 @@
-<!-- LENS-VERSION: 2.1 | STATUS: CURRENT | ADOPTED: 2026-06 | SUPERSEDES: 2.0, 1 -->
+<!-- LENS-VERSION: 2.2 | STATUS: CURRENT | ADOPTED: 2026-07 | SUPERSEDES: 2.1, 2.0, 1 -->
 
-> **STATUS: CURRENT (v2.1, June 2026).** Adopted by program owner (J. Diamond) and editor (W. Gray-Roncal). Source of record for case anchors, syllabi, capstone rubrics, and recruiting. Supersedes v2.0 (proposal in `v2_research/01_*`) and v1 (initial). Prior prose preserved in git history; see the *Change Log* at the end of this document. The companion `.docx` needs a program-owner round-trip from this `.md`.
+> **STATUS: CURRENT (v2.2, July 2026).** v2.2 restores subobjective 3.6, which the v2.1 sweep dropped without a change-log entry; no other content changes. v2.1 adopted by program owner (J. Diamond) and editor (W. Gray-Roncal). Source of record for case anchors, syllabi, capstone rubrics, and recruiting. Supersedes v2.1, v2.0 (proposal in `v2_research/01_*`), and v1 (initial). Prior prose preserved in git history; see the *Change Log* at the end of this document. The companion `.docx` needs a program-owner round-trip from this `.md`.
 
 ---
 
@@ -62,6 +62,8 @@ Organizing layer over the formal LEOs — **LENS Educational Objectives**, the c
 
 3.5  Specify learning and capability requirements for systems not yet fielded, working from design artifacts rather than operational experience.
 
+3.6  *[v2.2 — restored]* Communicate evidence-based recommendations for when system augmentation improves versus degrades capability outcomes and operator agency.
+
 ## 4. Test and Evaluation  •  *show what works*
 
 *[v2.1 — was D3 in v1; renumbered to D4. Subobjective 4.2 ("gap attribution") was the existing "diagnose the gap"; the v2 sweep names it explicitly.]*
@@ -114,7 +116,7 @@ Organizing layer over the formal LEOs — **LENS Educational Objectives**, the c
 | 4 | Test and Evaluation | show what works | LEO-4 | Data, Measurement, and Evaluation |
 | 5 | Navigating Sociotechnical Constraints | make it work in the real world | LEO-5 | Context and Domain Fluency |
 
-Each subobjective unbundles an element of the corresponding LEO. The 7 named v2 additions (1.5, 2.5, 3.3, 3.4, 4.4, 4.6, 5.6) and the explicit renaming of 4.2 (gap attribution) are required elements within the parent LEO. The reframing of "decision-grade evidence" as judgment under irreducible uncertainty is carried at 4.3 and 4.4. If any v2 addition creates friction with documentation of record, drop the number and fold the language back; the scheme renumbers cleanly.
+Each subobjective unbundles an element of the corresponding LEO. Twenty-eight subobjectives: the 21 of v1, the 7 named v2 additions (1.5, 2.5, 3.3, 3.4, 4.4, 4.6, 5.6), and the v2.2 restoration of 3.6. The additions and the explicit renaming of 4.2 (gap attribution) are required elements within the parent LEO. The reframing of "decision-grade evidence" as judgment under irreducible uncertainty is carried at 4.3 and 4.4. If any v2 addition creates friction with documentation of record, drop the number and fold the language back; the scheme renumbers cleanly.
 
 # Using the Tags
 
@@ -136,7 +138,13 @@ Each subobjective number is a stable tag. Three immediate uses:
 
 **Terminology note — July 2026.** The concentration-level objectives are abbreviated **LEO** (LENS Educational Objective), not "CLO." "CLO" is reserved for *course* learning objectives and "MLO" for *module* learning objectives; see doc 2 §4 for the full PLO → LEO → CLO → MLO hierarchy. This is an abbreviation/framing change only — no competency content changed.
 
-**v2.1 — June 2026** *(current)*
+**v2.2 — July 2026** *(current)*
+- **3.6 restored.** *Communicate evidence-based recommendations for when system augmentation improves versus degrades capability outcomes and operator agency.* The v2.1 sweep dropped the v1 5.3 subobjective with no change-log entry; the concept survived in doc 2's LEO-3 prose and lost its number. Found by arithmetic: v1 had 21 subobjectives, v2.1 named 7 additions, and v2.1 has 27 rather than 28. **Change-log discipline is what stops this recurring: a deletion is a change and needs an entry.**
+- Wording generalized from v1 ("AI augmentation") to "system augmentation," matching v2.1's broadening of LEO-3 from machine teaming to human-system collaboration.
+- Carried by LEN 2, which assesses it at 20% (recommendation memo).
+- No other content changes. Domain names, ordering, and subobjectives 1.1–5.6 are unchanged from v2.1.
+
+**v2.1 — June 2026** *(superseded by v2.2; content otherwise current)*
 - **D3 reorder + rename.** What was D5 (Machine Teaming and Adaptation) is broadened to **Human-System Collaboration** and moved to position 3. T&E becomes D4 (was D3); Sociotechnical Constraints becomes D5 (was D4). The order now reads as the flywheel: see the system → build → integrate humans → measure → deploy.
 - **7 new subobjectives** (v2 sweep additions): 1.5 governance-objection diagnostic; 2.5 narrate/defend design iteration; 3.3 delegation with revocation; 3.4 collaboration measurement; 4.4 judgment under inadequate evidence; 4.6 fairness beyond omission; 5.6 cross-regime / platform-dependency governance.
 - **1 renamed subobjective:** 4.2 explicitly named "gap attribution" (was the existing "diagnose the gap").
