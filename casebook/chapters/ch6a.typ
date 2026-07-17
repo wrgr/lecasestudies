@@ -2126,14 +2126,6 @@
 )
 
 // ---- Case 170 — west-africa-ebola-delayed-response ----
-// VERIFY: PHEIC declared 8 August 2014 (Emergency Committee met 6–7 August) — confirmed via WHO/Europe and NEJM.
-// VERIFY: MSF declared the outbreak "out of control" 20–23 June 2014 (TIME, 23 June 2014); WHO leadership publicly disputed the framing as alarmist.
-// VERIFY: Reported toll ~28,616 cases / ~11,310 deaths to 10 June 2016 (WHO situation reports); undercount acknowledged — hedge preserved.
-// VERIFY: Stocking Report = Report of the Ebola Interim Assessment Panel, 7 July 2015 (chair Dame Barbara Stocking).
-// VERIFY: Moon et al., Harvard-LSHTM Independent Panel, The Lancet 386, 28 November 2015, doi:10.1016/S0140-6736(15)00946-0.
-// VERIFY: UN High-Level Panel on the Global Response to Health Crises, "Protecting Humanity from Future Health Crises," A/70/723, 9 February 2016 (chair Jakaya Kikwete).
-// VERIFY: WHO Health Emergencies Programme established May 2016.
-// VERIFY: Moon et al. quote "The most egregious failure was by WHO in the delay in sounding the alarm." — confirm exact wording against The Lancet full text before print.
 #case(
   number: 170,
   slug: "west-africa-ebola-delayed-response",
@@ -2345,8 +2337,6 @@
 )
 
 // ---- Case 171 — hurricane-maria-puerto-rico-logistics ----
-// VERIFY: GWU Milken Institute report exact title ("Ascertainment of the Estimated Excess Mortality from Hurricane María in Puerto Rico") — commissioned-report title carried from memory; 2,975 figure and Aug 2018 release verified via web search.
-// VERIFY: FEMA AAR "more than 80 percent of the inventory of some commodities" phrasing — verified via web search summary of the AAR; confirm exact wording against the PDF (fema.gov, July 12, 2018) at draft-time re-check.
 #case(
   number: 171,
   slug: "hurricane-maria-puerto-rico-logistics",

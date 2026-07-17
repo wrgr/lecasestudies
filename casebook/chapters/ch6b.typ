@@ -686,6 +686,7 @@
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
+  evidence-flag: "practice-synthesis-tier",
   induced-anchor: "4.2",
   lens-anchor: "D5/PT2",
   clo-anchor: "CLO-5",
@@ -844,9 +845,6 @@
 )
 
 // ---- Case 178 — un-cluster-approach-humanitarian ----
-// VERIFY: HRR 2005 author list (Adinolfi, Bassiouni, Lauritzsen, Williams) against the OCHA/ReliefWeb PDF cover page.
-// VERIFY: Pakistan 2005 initial cluster count (nine core clusters at rollout) against ODI HPN/ALNAP accounts.
-// VERIFY: Grünewald & Binder Haiti real-time evaluation exact title and month (Groupe URD/GPPi, 2010).
 #case(
   number: 178,
   slug: "un-cluster-approach-humanitarian",
