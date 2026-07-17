@@ -36,12 +36,12 @@
 
 #v(5pt)
 
-#let clo-row(comp, clo) = grid(
+#let leo-row(comp, leo) = grid(
   columns: (1fr, 1fr),
   column-gutter: 10pt,
   inset: (y: 3pt),
   text(font: sans, size: _body, fill: navy, weight: "medium", comp),
-  text(font: sans, size: _body, fill: text-dark, clo),
+  text(font: sans, size: _body, fill: text-dark, leo),
 )
 
 #block(
@@ -50,15 +50,15 @@
   inset: 10pt,
   stroke: (left: 2pt + teal),
   {
-    clo-row("Systems Analysis", "LEO-1 · Systems Thinking and Analysis")
+    leo-row("Systems Analysis", "LEO-1 · Systems Thinking and Analysis")
     line(length: 100%, stroke: 0.25pt + rule-soft)
-    clo-row("Iterative Development", "LEO-2 · Learning Engineering Design and Implementation")
+    leo-row("Iterative Development", "LEO-2 · Learning Engineering Design and Implementation")
     line(length: 100%, stroke: 0.25pt + rule-soft)
-    clo-row("Test and Evaluation", "LEO-3 · Data, Measurement, and Evaluation")
+    leo-row("Human-System Collaboration", "LEO-3 · Human-System Collaboration and Adaptive Systems")
     line(length: 100%, stroke: 0.25pt + rule-soft)
-    clo-row("Navigating Sociotechnical Constraints", "LEO-4 · Context and Domain Fluency")
+    leo-row("Test and Evaluation", "LEO-4 · Data, Measurement, and Evaluation")
     line(length: 100%, stroke: 0.25pt + rule-soft)
-    clo-row("Human-System Collaboration", "LEO-3 · Human-System Collaboration and Adaptive Systems")
+    leo-row("Navigating Sociotechnical Constraints", "LEO-5 · Context and Domain Fluency")
   },
 )
 
