@@ -178,9 +178,7 @@
     architecture (LENS D3) that would have surfaced the gap before the
     collisions and the sociotechnical reforms (LENS D4) that would keep
     waivers from quietly hollowing the requirement out. The case pairs
-    with INDOPACOM Marine Corps training (Case 125) as the live counterpart
-    where the same divergence between declared and engineered priority is
-    visible on a theater scale, and with Three Mile Island (Case 166) as the
+    with Three Mile Island (Case 166) as the
     failure that engineered durable industry reform through INPO. CLO
     mapping: CLO-1 (Systems Analysis) primary, CLO-5 (Sociotechnical
     Constraints) for the waiver-and-reporting institutional dynamics.

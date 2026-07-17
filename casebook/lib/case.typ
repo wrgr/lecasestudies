@@ -16,6 +16,7 @@
 #import "theme.typ": *
 #import "components.typ": *
 #import "selection.typ": main-slugs
+#import "quarantine.typ": quarantine-slugs
 
 #let case(
   number: 0,
@@ -53,6 +54,12 @@
   coi: none,             // COI disclosure string — renders prominently under the case heading when set
   evidence-flag: none,   // short flag string for weaker-evidence cases (e.g. "journalism-tier", "preprint-tier"); future-validation language is implied
 ) = {
+  // Quarantine gate: a quarantined case emits nothing at all — no metadata,
+  // no body — in any build, so it is absent from every edition and from the
+  // matrix/indexes. The source block is retained and recoverable; see
+  // lib/quarantine.typ and casebook/QUARANTINE.md.
+  if quarantine-slugs.contains(slug) { return }
+
   // Emit case metadata for the back-matter indexes and the front matrix.
   // Carries number, title, year, domains, mode codes, kind, and course tags
   // for every case on both the 4-page and legacy paths — so the matrix and

@@ -1848,9 +1848,7 @@
     oversight obligations that follow when a system acts
     autonomously after a triggering event. Direct foil to
     Case 199 (Waymo); pairs with Case 200 (CPUC) on the
-    regulator-side. Case 204 (Frontier) is the paired
-    governance-response treatment of the same October 2023
-    incident — read together, not as duplicates.
+    regulator-side.
   ],
   literature-items: (
     [California DMV Order of Suspension, 24 October 2023],
@@ -2330,8 +2328,7 @@
       Intelligence. Each reform addressed a different part of the same
       pipeline — getting the tip in, getting it to someone who could read it,
       and having someone who could — so that a future Markopolos memo would
-      meet an evaluator able to test it. Madoff is paired with Theranos
-      (Case 10) as a case in which a regulator lacked the technical
+      meet an evaluator able to test it. Madoff is a case in which a regulator lacked the technical
       capability to challenge the evidence in front of it.#cn()
     ],
   ),
@@ -2368,9 +2365,8 @@
     evaluate the tip is not a channel. It pairs with the Mark 14
     torpedo (Case 133), where the Bureau of Ordnance dismissed
     submariners' field reports for the same structural reason — the
-    channel carried the truth and the institution could not receive it
-    — and with Theranos (Case 10) on the regulator's missing technical
-    depth. The Ponzi narrative is not the lesson; the channel is.
+    channel carried the truth and the institution could not receive it.
+    The Ponzi narrative is not the lesson; the channel is.
   ],
   induced-anchor: "6.2",
   lens-anchor: "D5/PT3",

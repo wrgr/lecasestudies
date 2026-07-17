@@ -1752,8 +1752,7 @@
     which systems needed the fix), and an incident-response function treated
     for years as a cost center. The CEO resigned and Equifax settled for
     about \$700 million. No single failure caused the breach; cumulative
-    inadequacy across routine cybersecurity work did. Equifax is the
-    data-breach analog of the Sago mine disaster (Case 168).
+    inadequacy across routine cybersecurity work did.
   ],
   sections: (
     // -- Background --
@@ -1806,7 +1805,7 @@
       the breach pushed patching discipline, asset inventory, and
       breach-disclosure timelines up the corporate agenda — elevating, after
       the loss, the unglamorous work that had been deferred before it.#cn() It
-      is the data-breach analog of the Sago mine disaster (Case 168): no
+      was a cumulative-inadequacy failure: no
       dramatic single cause, just several routine defenses each left
       marginally inadequate, failing together on the day a determined attacker
       arrived to test all of them at once.
@@ -1825,7 +1824,7 @@
     [Senate PSI (2019) — "Equifax lacked a comprehensive IT asset inventory" (quoted).],
     [U.S. FTC / CFPB / state settlement (~\$700 million, 2019) and the CEO's resignation.],
     [U.S. GAO, _Actions Taken by Equifax and Federal Agencies in Response to the 2017 Breach_, GAO-18-559 (2018).],
-    [Apache Struts CVE-2017-5638 advisory; cf. the Sago mine disaster (Case 168).],
+    [Apache Struts CVE-2017-5638 advisory.],
   ),
   quote: [Equifax lacked a comprehensive IT asset inventory.],
   quote-source: "U.S. Senate Permanent Subcommittee on Investigations, How Equifax Neglected Cybersecurity, March 2019",
