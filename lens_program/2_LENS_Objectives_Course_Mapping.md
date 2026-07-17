@@ -1,6 +1,6 @@
-<!-- LENS-VERSION: 2.3 | STATUS: CURRENT | ADOPTED: 2026-07 | SUPERSEDES: 2.2, 2.1, 2.0, 1 -->
+<!-- LENS-VERSION: 2.4 | STATUS: CURRENT | ADOPTED: 2026-07 | SUPERSEDES: 2.3, 2.2, 2.1, 2.0, 1 -->
 
-> **STATUS: CURRENT (v2.3, July 2026).** v2.3 corrects the concentration-objective abbreviation from **CLO to LEO** ("LENS Educational Objective") and states the four-tier objective hierarchy — PLO (program) → LEO (concentration) → CLO (course) → MLO (module) — reserving "CLO" and "MLO" for the course and module tiers. No objective *content* changes from v2.2/v2.1. v2.2 incorporated the LDT Program Learning Objectives of record (dated 03-06-2025) at full subobjective grain and added the PLO ↔ LEO support map (Section 4.1). LEO content is unchanged from v2.1 (adopted by program owner J. Diamond and editor W. Gray-Roncal, June 2026). Source of record for syllabi, capstone rubrics, and course-LEO mapping. Companion competency document is `1_LENS_Five_Competencies.md` (v2.1). Prior prose preserved in git history; see the *Change Log* at the end of this document. The companion `.docx` is regenerated from this `.md`; program-owner round-trip of the v2.1/v2.2/v2.3 changes remains pending.
+> **STATUS: CURRENT (v2.4, July 2026).** v2.4 replaces the healthcare/defense/education triad with **high-consequence domains** and a representative list of seven (§1); adds PLO-4 to LEN 1; retitles LEN 2; and records the course-level homes for the v2 subobjectives. See the *Change Log*. v2.3 corrected the concentration-objective abbreviation from **CLO to LEO** ("LENS Educational Objective") and states the four-tier objective hierarchy — PLO (program) → LEO (concentration) → CLO (course) → MLO (module) — reserving "CLO" and "MLO" for the course and module tiers. No objective *content* changes from v2.2/v2.1. v2.2 incorporated the LDT Program Learning Objectives of record (dated 03-06-2025) at full subobjective grain and added the PLO ↔ LEO support map (Section 4.1). LEO content is unchanged from v2.1 (adopted by program owner J. Diamond and editor W. Gray-Roncal, June 2026). Source of record for syllabi, capstone rubrics, and course-LEO mapping. Companion competency document is `1_LENS_Five_Competencies.md` (v2.2). Prior prose preserved in git history; see the *Change Log* at the end of this document. The companion `.docx` is regenerated from this `.md`; program-owner round-trip of the v2.1 through v2.4 changes remains pending.
 
 ---
 
@@ -19,6 +19,10 @@ The LDT M.Ed. is a 10-course, 30-credit, online/asynchronous master's degree in 
 Program structure is fixed by MHEC approval. The total number of courses (10) and the number of concentration-specific courses (3) are not subject to change within the next two to three years. Course content within the concentration, methods, capstone, and elective slots is shapeable.
 
 Central concept: capability. LENS defines capability as the interface between what a system requires of its human operators and the impact of that system. When this interface underperforms, the source may be system design, human development, organizational structure, or their interaction. Engineering this interface, while preserving and developing human agency, is the central problem LENS addresses.
+
+Where LENS works: high-consequence domains. A domain is high-consequence when the cost of a capability gap is paid by people who did not choose the risk, and the payment is not fully recoverable. The criterion defines the category; it is not a claim about scale or drama. A representative list of seven, following the structure the *Capability Matters* casebook's cases took: healthcare and patient safety; education, training, and the learning workforce; aviation and aerospace; defense and national security; industry, energy, and enterprise systems; disaster prevention and recovery; algorithms, governance, and public systems. The list is representative, not exhaustive. Domains where the cost of failure lands on the organization that accepted the risk, and is recoverable, sit outside the category; this is a scope statement rather than a judgment of value.
+
+Education is both a domain on that list and the discipline LENS works from. The seven are where capability work happens. Education is where LENS stands while doing it: every student is in an M.Ed., the learning sciences are the concentration's foundation, and learning engineering is the field LENS extends.
 
 Students as domain experts. LENS students arrive grounded in a professional domain: teaching, training, healthcare, engineering, operations. The program treats this prior expertise as an asset to be leveraged, not a gap to be remediated. Across the curriculum, students use their domain fluency to engage subject-matter experts credibly, and they practice extending that fluency into unfamiliar domains. No individual is expected to hold every competency of the field; LENS develops integrators who can lead and work within learning engineering teams.
 
@@ -101,7 +105,7 @@ Each LEO maps *upward* to the PLOs (§4.1) and *downward* to the course (CLO) an
 
 LENS graduates demonstrate competency across five domains. Each LEO is written at the Analyze, Evaluate, or Create level of Bloom's taxonomy and is structured for direct assessment. Four threads are woven across all LEOs: evidence and measurability; capability (the interface between system requirements and system impact); iterative engineering cycles at speed and scale; and communication across disciplinary and institutional boundaries. A fifth commitment, the preservation and development of human agency, serves as a design constraint across every LEO. The adoption, sustainment, and lifecycle-integration language in LEO-2 and LEO-5 is the concentration's implementation-science commitment made assessable: interventions are engineered to survive contact with the organizations that must carry them, and the implementation evidence feeds the next iteration (Section 6.4 traces the thread course by course).
 
-The five domains align with the learning engineering competency framework under development with the IEEE ICICLE community. Elements not yet field consensus (gap attribution in LEO-4; sociotechnical integration in LEO-5; human-system collaboration including human-AI teaming in LEO-3; the v2 additions on delegation with revocation, judgment under inadequate evidence, fairness beyond omission, and cross-regime governance) are LENS's proposed extensions to that framework, and LENS capstone evidence is offered toward their validation.
+The five domains align with the learning engineering competency framework under development with the IEEE ICICLE community. Elements not yet field consensus (gap attribution in LEO-4; sociotechnical integration in LEO-5; human-system collaboration including human-AI teaming in LEO-3; the v2 additions on delegation with revocation, judgment under inadequate evidence, fairness beyond omission, and cross-regime governance) are LENS's proposed extensions to that framework, and every one is taught and assessed in a required course so that capstone attainment evidence exists for each. LENS capstone evidence is offered toward their validation.
 
 Each LEO carries an accessible competency name and tagline used in recruiting and the casebook: LEO-1 Systems Analysis (*see the whole system*); LEO-2 Iterative Development (*build, test, refine*); LEO-3 Human-System Collaboration (*work together*); LEO-4 Test and Evaluation (*show what works*); LEO-5 Navigating Sociotechnical Constraints (*make it work in the real world*). Each LEO decomposes into numbered subobjectives (e.g., 4.2 gap attribution, 3.3 delegation with revocation) that serve as stable tags for case studies, course modules, and capstone rubrics; the subobjective set is maintained in the companion competencies document.
 
@@ -125,7 +129,7 @@ Design ethical instrumentation strategies that produce measurable evidence of ca
 
 #### LEO-5 · Context and Domain Fluency
 
-Integrate capability interventions into the sociotechnical systems they must live in: the regulatory, organizational, cultural, and technical realities that determine whether good designs survive. Analyze the constraints that shape what can be built, deployed, and sustained in healthcare, defense, or education contexts. Apply human systems integration frameworks to fit capability development approaches to operational environments. Leverage prior domain expertise, and respect for others', to elicit and validate specialist knowledge that surfaces constraints early. Synthesize and communicate stakeholder requirements across disciplinary and institutional boundaries into coherent design specifications, and design interventions that survive adoption and sustainment barriers. *[v2]* **Cross-regime / platform-dependency governance.** Where capability is deployed on a platform governed by a different regime than the one operating it, design the governance seam as an explicit deliverable.
+Integrate capability interventions into the sociotechnical systems they must live in: the regulatory, organizational, cultural, and technical realities that determine whether good designs survive. Analyze the constraints that shape what can be built, deployed, and sustained in a given high-consequence domain. Apply human systems integration frameworks to fit capability development approaches to operational environments. Leverage prior domain expertise, and respect for others', to elicit and validate specialist knowledge that surfaces constraints early. Synthesize and communicate stakeholder requirements across disciplinary and institutional boundaries into coherent design specifications, and design interventions that survive adoption and sustainment barriers. *[v2]* **Cross-regime / platform-dependency governance.** Where capability is deployed on a platform governed by a different regime than the one operating it, design the governance seam as an explicit deliverable.
 
 
 
@@ -186,13 +190,13 @@ First course in the LENS concentration sequence. Establishes the intellectual an
 
 | Program Objectives (PLO) | Concentration Objectives (LEO) |
 |---|---|
-| PLO-1, PLO-2, PLO-3 | LEO-1, LEO-2 |
+| PLO-1, PLO-2, PLO-3, PLO-4 | LEO-1, LEO-2 |
 
-### LEN 2: Human-AI Teaming and Adaptive Learning Systems
+### LEN 2: Human-Machine Teaming and Adaptive Learning Systems
 
 *Concentration 2 (Required, Sequential) • 3 credits*
 
-Second course in the LENS concentration sequence. Examines human-AI teaming as a design challenge for capability development. Students explore AI as a creative partner (generating, adapting, and evaluating learning interventions) while assessing the measurable impacts of AI on human performance. Design work proceeds through rapid iteration: students prototype, instrument, and refine AI-mediated learning configurations against measured human performance. Develops evidence-based frameworks for reasoning about AI-mediated learning under uncertainty, with explicit attention to automation bias, cognitive offloading, and the conditions under which AI augmentation helps versus harms. Students communicate AI risk and opportunity assessments to non-technical stakeholders. Builds on the systems principles established in LEN 1.
+Second course in the LENS concentration sequence. Examines human-machine teaming as a design challenge for capability development; human-AI teaming is one sub-pattern within it, not the whole of it. Students design the objects that constitute a collaboration at the human-machine boundary: role architectures, authority gradients, interface and alert systems, mode and state transparency, and recoverability mechanisms. They specify delegation with revocation, naming in advance the disconfirming evidence that would take a delegation back. They explore AI as a creative partner (generating, adapting, and evaluating learning interventions) while assessing the measurable impacts of machine-mediated work on human performance, including automation bias, cognitive offloading, and skill atrophy. Design work proceeds through rapid iteration: students prototype, instrument, and refine configurations against measured human performance, and measure the collaboration itself as a unit of analysis distinct from any individual operator or component. Students communicate risk and opportunity assessments to non-technical stakeholders, including evidence-based recommendations for when augmentation improves versus degrades capability outcomes and operator agency. Specifies capability requirements for systems not yet fielded. Builds on the systems principles established in LEN 1.
 
 | Program Objectives (PLO) | Concentration Objectives (LEO) |
 |---|---|
@@ -202,7 +206,7 @@ Second course in the LENS concentration sequence. Examines human-AI teaming as a
 
 *Concentration 3 (Required, Sequential) • 3 credits*
 
-Third course in the LENS concentration sequence. Applies human systems integration frameworks, systems engineering principles, and sociotechnical analysis to capability development in high-consequence operational environments. Healthcare, defense, and education are treated as co-equal domains. Students model capability development challenges as interacting systems, mapping components, interfaces, and feedback loops before intervening, and address system integration challenges where capability development must function within and across disparate systems at the speed and scale that operational contexts demand. Students analyze the measurable impact of capability interventions on operational outcomes, navigate regulatory, organizational, and cultural contexts, and communicate system-level design decisions and evidence across disciplinary and institutional boundaries. Integrates systems thinking from LEN 1 with the AI teaming frameworks from LEN 2.
+Third course in the LENS concentration sequence. Applies human systems integration frameworks, systems engineering principles, and sociotechnical analysis to capability development in high-consequence operational environments. Domain studios draw from the representative seven (§1) and rotate against the composition of the enrolled cohort. Students model capability development challenges as interacting systems, mapping components, interfaces, and feedback loops before intervening, and address system integration challenges where capability development must function within and across disparate systems at the speed and scale that operational contexts demand. Students analyze the measurable impact of capability interventions on operational outcomes, navigate regulatory, organizational, and cultural contexts, and communicate system-level design decisions and evidence across disciplinary and institutional boundaries. Where capability is deployed on a platform governed by a different regime than the one operating it, students design the governance seam as an explicit deliverable. Integrates systems thinking from LEN 1 with the human-machine teaming frameworks from LEN 2.
 
 | Program Objectives (PLO) | Concentration Objectives (LEO) |
 |---|---|
@@ -214,7 +218,7 @@ Third course in the LENS concentration sequence. Applies human systems integrati
 
 *Methods 1 (Required) • 3 credits*
 
-LENS-specific methods course. Students work authentic cross-domain problems in learning engineering through structured analytical methods. Develops problem framing, stakeholder analysis, needs assessment, and initial evidence-gathering approaches to capability challenges across healthcare, defense, and education contexts. Students apply systems framing to decompose each problem and carry it through at least one full iteration cycle, revising the problem framing as evidence accumulates. Throughout, students leverage their existing professional domain expertise to engage subject-matter experts: eliciting specialist knowledge, validating problem framings with experts, and translating expert knowledge into design requirements. Students communicate problem analyses and preliminary impact assessments to diverse audiences. Introduces the methodological vocabulary and structured reasoning that deeper analytical methods in LEN 5 (recommended elective) build upon. Prerequisite: concentration courses (LEN 1–3) or concurrent enrollment.
+LENS-specific methods course. Students work authentic cross-domain problems in learning engineering through structured analytical methods. Develops problem framing, stakeholder analysis, needs assessment, and initial evidence-gathering approaches to capability challenges across three high-consequence domains drawn from the representative seven (§1). Students apply systems framing to decompose each problem and carry it through at least one full iteration cycle, revising the problem framing as evidence accumulates. Throughout, students leverage their existing professional domain expertise to engage subject-matter experts: eliciting specialist knowledge, validating problem framings with experts, and translating expert knowledge into design requirements. Students communicate problem analyses and preliminary impact assessments to diverse audiences. Introduces the methodological vocabulary and structured reasoning that deeper analytical methods in LEN 5 (recommended elective) build upon. Prerequisite: concentration courses (LEN 1–3) or concurrent enrollment.
 
 | Program Objectives (PLO) | Concentration Objectives (LEO) |
 |---|---|
@@ -224,7 +228,7 @@ LENS-specific methods course. Students work authentic cross-domain problems in l
 
 *Methods 2 (Required) • 3 credits*
 
-LENS-specific methods course developing competence in ethical measurement, learning analytics, and evidence synthesis for high-consequence operational environments. Students operationalize capability constructs, design data collection strategies that function at speed and scale across disparate systems, and combine qualitative and quantitative methods to produce decision-grade evidence linking capability (the operator-system interface) to operational impact. Core topics: ethical instrumentation and data governance; gap attribution (distinguishing capability gaps rooted in human development from those rooted in system design or organizational performance); learning analytics pipelines that sustain rapid evidence cycles and close the loop between measurement and design revision; communicating evidence to technical and non-technical decision-makers.
+LENS-specific methods course developing competence in ethical measurement, learning analytics, and evidence synthesis for high-consequence operational environments. Students operationalize capability constructs, design data collection strategies that function at speed and scale across disparate systems, and combine qualitative and quantitative methods to produce decision-grade evidence linking capability (the operator-system interface) to operational impact. Core topics: ethical instrumentation and data governance; measurement validity and reliability under operational constraint; fairness beyond omission (why dropping a protected attribute does not establish fairness, and how competing fairness definitions are analyzed with demographic-stratified outcome evidence); gap attribution (distinguishing capability gaps rooted in human development from those rooted in system design or organizational performance); learning analytics pipelines that sustain rapid evidence cycles and close the loop between measurement and design revision; judgment under inadequate evidence (justifying a consequential decision on incomplete and contested evidence, documenting the basis, and naming what would change it); communicating evidence and uncertainty to technical and non-technical decision-makers.
 
 | Program Objectives (PLO) | Concentration Objectives (LEO) |
 |---|---|
@@ -236,7 +240,7 @@ LENS-specific methods course developing competence in ethical measurement, learn
 
 *Capstone (Required) • 3 credits*
 
-End-to-end learning engineering project in a real organizational context. Students identify a capability development challenge at a partner organization (APL as founding partner pathway), gather measurable evidence, design and evaluate an intervention, and assess operational impact. Projects must document at least one complete iteration cycle (design, instrument, evaluate, refine) in the reproducible report. Students are encouraged to site their project in a domain where they hold prior expertise, using that fluency to engage organizational experts credibly while practicing the boundary-crossing communication the field requires. Projects address system integration, speed, and scalability considerations appropriate to the partner context. Integrates all five competency domains. Signature deliverables communicate findings to multiple audiences: evidence dashboard, reproducible report, and governance/ethics plan. Portfolio-quality standards required.
+End-to-end learning engineering project in a real organizational context. Students identify a capability development challenge at a partner organization (APL as founding partner pathway), gather measurable evidence, design and evaluate an intervention, and assess operational impact. Projects must document at least one complete iteration cycle (design, instrument, evaluate, refine) in the reproducible report. Students are encouraged to site their project in a domain where they hold prior expertise, using that fluency to engage organizational experts credibly while practicing the boundary-crossing communication the field requires. Projects address system integration, speed, and scalability considerations appropriate to the partner context. The system model specifies the human-system boundary in the project context: who holds which role, how authority is allocated across the boundary, and what recovers the system when the collaboration fails. The instrumentation plan states and defends its unit of analysis, carrying at least one collaboration-level measure or an argument that the individual operator is the correct unit for the context. Integrates all five competency domains, each assessed rather than asserted. Signature deliverables communicate findings to multiple audiences: evidence dashboard, reproducible report, and governance/ethics plan. Portfolio-quality standards required.
 
 | Program Objectives (PLO) | Concentration Objectives (LEO) |
 |---|---|
@@ -258,11 +262,11 @@ Recommended elective providing the deep analytical methods central to LENS pract
 
 *Elective • 3 credits*
 
-Deepens the equity and accountability thread that runs across the curriculum. Examines algorithmic bias, surveillance, institutional accountability, and governance structures for capability development systems in regulated and high-consequence environments. Students design governance plans, conduct measurable risk assessments for learning technology deployments, and evaluate the equity impact of capability development interventions on affected populations.
+Deepens the equity and accountability thread that runs across the curriculum. Examines algorithmic bias, surveillance, institutional accountability, and governance structures for capability development systems in regulated and high-consequence environments. Students design governance plans, conduct measurable risk assessments for learning technology deployments, and evaluate the equity impact of capability development interventions on affected populations. Deepens the fairness-beyond-omission work established in LEN 4 and carries cross-regime and platform-dependency governance alongside LEN 3. Recommended: LEN 4 first.
 
 | Program Objectives (PLO) | Concentration Objectives (LEO) |
 |---|---|
-| PLO-2, PLO-5 | LEO-5 |
+| PLO-2, PLO-5 | LEO-4, LEO-5 |
 
 ### LEN 8: Knowledge Transfer and Organizational Learning
 
@@ -294,7 +298,7 @@ Verifies that every PLO and LEO is addressed by required courses (foundations + 
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | LDT F1 | ✘ | ✘ |  |  |  |  |
 | LDT F2 |  | ✘ |  |  | ✘ |  |
-| LEN 1 | ✘ | ✘ | ✘ |  |  |  |
+| LEN 1 | ✘ | ✘ | ✘ | ✘ |  |  |
 | LEN 2 | ✘ | ✘ |  | ✘ | ✘ |  |
 | LEN 3 |  | ✘ | ✘ | ✘ | ✘ |  |
 | LEN 6 | ✘ |  | ✘ | ✘ |  | ✘ |
@@ -320,15 +324,15 @@ Coverage of each LEO by course. ✘ = required course; ○ = elective. Column or
 | LEN 4 |  |  |  | ✘ |  |
 | LEN 10 | ✘ | ✘ | ✘ | ✘ | ✘ |
 | LEN 5 (elec.) | ○ |  |  |  | ○ |
-| LEN 7 (elec.) |  |  |  |  | ○ |
+| LEN 7 (elec.) |  |  |  | ○ | ○ |
 | LEN 8 (elec.) |  | ○ |  |  | ○ |
 | LEN 9 (elec.) |  |  | ○ | ○ |  |
 
 ## 6.3 Coverage Analysis
 
-PLO coverage: All six program objectives are addressed by multiple required courses. PLO-1 (Theory and Evidence): F1, LEN 1, LEN 2, LEN 6. PLO-2 (Ethical and Human-Centered): F1, F2, LEN 1, LEN 2, LEN 3, LEN 4, LEN 10. PLO-3 (Collaboration and Leadership): LEN 1, LEN 3, LEN 6, LEN 10. PLO-4 (Communication Competence): LEN 2, LEN 3, LEN 4, LEN 6, LEN 10; threaded across the concentration, methods, and capstone. PLO-5 (Sociocultural Aspects): F2, LEN 2, LEN 3. PLO-6 (Data-Informed): LEN 4, LEN 6, LEN 10.
+PLO coverage: All six program objectives are addressed by multiple required courses. PLO-1 (Theory and Evidence): F1, LEN 1, LEN 2, LEN 6. PLO-2 (Ethical and Human-Centered): F1, F2, LEN 1, LEN 2, LEN 3, LEN 4, LEN 10. PLO-3 (Collaboration and Leadership): LEN 1, LEN 3, LEN 6, LEN 10. PLO-4 (Communication Competence): LEN 1, LEN 2, LEN 3, LEN 4, LEN 6, LEN 10; threaded across the concentration, methods, and capstone. PLO-5 (Sociocultural Aspects): F2, LEN 2, LEN 3. PLO-6 (Data-Informed): LEN 4, LEN 6, LEN 10.
 
-LEO coverage: All five competency domains are addressed by required courses. LEO-1 (Systems Thinking and Analysis) is now carried by four required courses (LEN 1, LEN 3, LEN 6, LEN 10), reflecting its weight in the concentration. LEO-4 (Data, Measurement, and Evaluation) is strongly covered through LEN 4 (required methods) and LEN 10 (capstone). LEO-3 (Human-System Collaboration) is owned by LEN 2, with additional depth through LEN 9 (recommended elective). The capstone (LEN 10) integrates all five domains. Iterative engineering cycles appear as required content in LEN 1 (introduced as core method), LEN 2 (prototype-instrument-refine), LEN 6 (full iteration on an authentic problem), LEN 4 (evidence pipelines closing the measurement-to-revision loop), and LEN 10 (documented complete cycle).
+LEO coverage: All five competency domains are addressed by required courses. LEO-1 (Systems Thinking and Analysis) is now carried by four required courses (LEN 1, LEN 3, LEN 6, LEN 10), reflecting its weight in the concentration. LEO-4 (Data, Measurement, and Evaluation) is strongly covered through LEN 4 (required methods) and LEN 10 (capstone), with additional depth through LEN 7 (elective). LEO-3 (Human-System Collaboration) is owned by LEN 2, which carries all six of its subobjectives, with additional depth through LEN 9 (recommended elective). The capstone (LEN 10) integrates all five domains. Iterative engineering cycles appear as required content in LEN 1 (introduced as core method), LEN 2 (prototype-instrument-refine), LEN 6 (full iteration on an authentic problem), LEN 4 (evidence pipelines closing the measurement-to-revision loop), and LEN 10 (documented complete cycle).
 
 ## 6.4 Cross-Cutting Threads
 
@@ -356,7 +360,29 @@ Students with strong methods backgrounds: LEN 8 (Knowledge Transfer and Organiza
 
 These are recommendations, not requirements. Students may select any university electives that serve their professional goals; LENS advisors work with each student to identify the best fit.
 
-# 7. Revision Notes (June 2026)
+# 7. Change Log
+
+**v2.4 — July 2026** *(current)*
+
+- **Framing: high-consequence domains replace the healthcare/defense/education triad (§1).** A domain is high-consequence when the cost of a capability gap is paid by people who did not choose the risk, and the payment is not fully recoverable. The criterion defines the category; a representative list of seven illustrates it, following the structure the casebook's cases took. The triad was a claim; the seven is a finding. Consequences: defense is one of seven rather than one of three, so the "never the primary one" convention is now structural rather than editorial and is retired from the README; education is stated as both a domain on the list and the discipline LENS works from, which is the claim the arithmetic would otherwise erode. §4 LEO-5, §5.2 (LEN 3), and §5.3 (LEN 6) inherit the change.
+- **LEN 1 gains PLO-4** (§5.2, §6.1, §6.3). Its final assessment is a recorded briefing to a mixed technical and non-technical audience, which is PLO-4.2. The mapping described a course that does not exist. Nothing was at risk either way: PLO-4 is carried by five other courses. A correctness fix.
+- **LEN 2 retitled** *Human-Machine Teaming and Adaptive Learning Systems* (was *Human-AI Teaming...*), and its description reframed to human-machine collaboration with human-AI teaming as one sub-pattern. v2.1 broadened LEO-3 and the title did not follow. LEN 2 now carries all six LEO-3 subobjectives including 3.1 at full breadth (role architectures, authority gradients, transparency, recoverability), 3.3 (delegation with revocation), 3.4 (collaboration measurement), and 3.6.
+- **Course homes recorded for the v2 subobjectives.** All seven v2 additions plus the restored 3.6 are now taught and assessed in required courses: 1.5 and 2.5 in LEN 1; 3.3, 3.4, 3.6 in LEN 2; 5.6 in LEN 3 (§5.2) and deepened in LEN 7; 4.4 and 4.6 in LEN 4 (§5.3) and deepened in LEN 7. Previously four of the seven were taught nowhere required, which would have left the capstone attainment profile without evidence in domains LENS proposes as extensions to the field framework.
+- **LEN 7 concentration objectives become LEO-4, LEO-5** (§5.5, §6.2). It deepens 4.6 rather than introducing it; LEN 4 recommended first.
+- **LEN 10 assesses LEO-3 rather than asserting it** (§5.4). The prior syllabus carried one conditional clause, "including human-AI teaming implications where present," with no milestone, deliverable, or rubric line behind it. Under v2.1's broadened LEO-3 the condition is never false: every capability intervention has a human-system boundary.
+- Companion competency document is now `1_LENS_Five_Competencies.md` **v2.2** (subobjective 3.6 restored).
+
+**v2.3 — July 2026** *(superseded by v2.4)*
+
+Corrected the concentration-objective abbreviation from CLO to LEO and stated the four-tier hierarchy: PLO (program) → LEO (concentration) → CLO (course) → MLO (module). No objective content changed.
+
+**v2.2 — July 2026** *(superseded)*
+
+Incorporated the LDT Program Learning Objectives of record (03-06-2025) at full subobjective grain; added the PLO ↔ LEO support map (§4.1).
+
+---
+
+# 8. Revision Notes (June 2026)
 
 This revision responds to reviewer feedback on three points, plus alignment with the field competency framework in development with the IEEE ICICLE community.
 
