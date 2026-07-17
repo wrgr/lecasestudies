@@ -53,7 +53,7 @@
     recurring audits across the entire fleet lifecycle. The documented
     result is a step-change in non-combat submarine loss rates: 16
     losses across the 48 years before SUBSAFE; one loss (USS Scorpion,
-    not SUBSAFE-certified) across the 62 years since. The Columbia
+    not SUBSAFE-certified) across the 63 years since. The Columbia
     Accident Investigation Board cited SUBSAFE in 2003 as one of three programs
     that could be models for NASA. The honest hedge survives: the zero-loss
     record is correlational across decades with many co-varying
@@ -143,7 +143,7 @@
     "USS Thresher lost April 1963 with 129 aboard; investigation traces the gap to certification of the watertight-integrity boundary",
     "SUBSAFE created within 54 days; formal requirements issued by December 20 1963",
     "'Objective Quality Evidence' — verifiable fact, not probabilistic assessment — at every certification step; annual training and recurring audits",
-    "Non-combat losses: 16 in the 48 years before; one (Scorpion, uncertified) in the 62 years since; Columbia Accident Investigation Board endorsement",
+    "Non-combat losses: 16 in the 48 years before; one (Scorpion, uncertified) in the 63 years since; Columbia Accident Investigation Board endorsement",
     "Zero-loss record is correlational across many co-varying factors over decades; hedge preserved",
   ),
   approaches: (
@@ -258,8 +258,8 @@
     ],
     [
       The federal-program-management response began in earnest in
-      1996 and accelerated through 1997 with the creation of the
-      President's Council on Year 2000 Conversion and the OMB
+      1996 and accelerated through 1997–1998 with the creation of the
+      President's Council on Year 2000 Conversion (established February 1998) and the OMB
       quarterly reporting cycle. Federal mission-critical systems
       were inventoried at line-item granularity — the GAO report
       series tracked the proportion of federal mission-critical
@@ -629,7 +629,7 @@
     [Edmondson, A. (2018), _The Fearless Organization_ — pre-committed values under stress.],
   ),
   quote: [The Credo is all about the consumer. When those seven deaths occurred, the Credo made it very clear at that point exactly what we were all about.],
-  quote-source: "James Burke (Johnson & Johnson CEO), quoted in Lasting Leadership (Wharton)",
+  quote-source: "James Burke (Johnson & Johnson CEO) — closing sentence quoted in Lasting Leadership (Wharton); opening lead is the editors' paraphrase",
   le-insight: [
     Tylenol is the canonical positive case for institutional response
     to crisis. The capability that was load-bearing was the
@@ -686,6 +686,7 @@
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
+  evidence-flag: "practice-synthesis-tier",
   induced-anchor: "4.2",
   lens-anchor: "D5/PT2",
   clo-anchor: "CLO-5",
@@ -707,7 +708,7 @@
     that survives into the case: the 45%-led-to-improvement figure is
     self-reported by the operating program, not independently
     audited. The case is the non-aviation companion to ASRS / CRM in
-    v1 (Cases 117 + 45), keeping the
+    v1 (Cases 117 + 119), keeping the
     non-punitive-reporting-with-credible-commitment competency from
     resting entirely on aviation evidence.
   ],
@@ -844,9 +845,6 @@
 )
 
 // ---- Case 178 — un-cluster-approach-humanitarian ----
-// VERIFY: HRR 2005 author list (Adinolfi, Bassiouni, Lauritzsen, Williams) against the OCHA/ReliefWeb PDF cover page.
-// VERIFY: Pakistan 2005 initial cluster count (nine core clusters at rollout) against ODI HPN/ALNAP accounts.
-// VERIFY: Grünewald & Binder Haiti real-time evaluation exact title and month (Groupe URD/GPPi, 2010).
 #case(
   number: 178,
   slug: "un-cluster-approach-humanitarian",

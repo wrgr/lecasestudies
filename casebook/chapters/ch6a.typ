@@ -533,8 +533,9 @@
   kind: "failure",
   summary: [
     On 23 March 2005 a startup at BP's Texas City refinery overfilled a
-    distillation tower — operators were working from instruments that had
-    malfunctioned for years — and venting hydrocarbon vapor found an
+    distillation tower — operators were working from a miscalibrated level
+    transmitter and a redundant high-level alarm that never sounded — and
+    venting hydrocarbon vapor found an
     ignition source and exploded, killing 15 workers in trailers parked
     beside the unit and injuring 180. The Chemical Safety Board found
     accumulated safety-culture decay, deferred maintenance, and a celebrated
@@ -560,13 +561,15 @@
     // -- What Happened --
     [
       On 23 March 2005, during a unit startup, operators overfilled a
-      distillation tower far past its safe level, working from a level
-      indicator that had malfunctioned for years and alarms that did not
-      sound. Hydrocarbon vapor vented, drifted across the site, found an
+      distillation tower far past its safe level, working from a miscalibrated level
+      transmitter that falsely showed the level declining while the tower
+      overfilled, a redundant high-level alarm that never sounded, and an
+      unreadable sight glass. Hydrocarbon vapor vented, drifted across the site, found an
       ignition source — an idling truck — and exploded. Fifteen workers in
       temporary trailers parked beside the unit were killed and about 180
-      injured.#cn() Every contributor had been tolerated as routine for years
-      — the broken indicator, the silent alarms, the trailers parked beside a
+      injured.#cn() Every contributor had been tolerated as routine
+      — the faulty tower instruments, a high-level alarm reported broken
+      repeatedly in the prior two years, the trailers parked beside a
       hazardous unit — so the startup was run blind to a danger the site had
       long since stopped seeing.
     ],
@@ -576,8 +579,10 @@
       influential in the agency's history.#cn() It found accumulated
       safety-culture decay, deferred maintenance, broken instruments
       tolerated as routine, trailers sited dangerously close to a hazardous
-      unit, and a cost-cutting program — branded internally as "1000
-      Day" and "Forward" — celebrated as a success while it consumed the
+      unit, and cost cutting — corporate 25% budget-reduction targets after the
+      1999 Amoco merger and again for 2005, and a 2003 site "1,000 Day
+      Goals" program the CSB faulted for measuring personal safety and cost
+      over process safety — celebrated as a success while it consumed the
       process-safety margin. The CSB drew the distinction that would
       reshape the field: "indicators of personal safety are not
       indicators of process safety."#cn() The Board's force came from
@@ -683,7 +688,7 @@
   courses: ("LEN 4", "LEN 7", "LEN 3",),
   scale: "big",
   evidence-source: "investigation",
-  induced-anchor: "5.4",  // alternate framing adopted: change-control lens captures the "1000 Day"/"Forward" cost-cutting programs as program drivers; the personal-safety-vs-process-safety measurement insight (2.1) preserved as the canonical alternate,
+  induced-anchor: "5.4",  // alternate framing adopted: change-control lens captures the 25% budget-cut targets (1999, 2005) and the 2003 "1,000 Day Goals" site program as program drivers; the personal-safety-vs-process-safety measurement insight (2.1) preserved as the canonical alternate,
   lens-anchor: "D5/PT4",
   clo-anchor: "CLO-5",
 )
@@ -794,7 +799,7 @@
   ),
   references: (
     [U.S. MSHA, _Internal Review of MSHA's Actions at Upper Big Branch_ and the accident investigation (2011–2012) — the dual records and the 29 deaths.],
-    [Governor's Independent Investigation Panel (J. McAtee, 2011) — mine conditions: methane, ventilation, and coal-dust inerting.],
+    [Governor's Independent Investigation Panel (J. Davitt McAteer, 2011) — mine conditions: methane, ventilation, and coal-dust inerting.],
     [MSHA and U.S. DOJ findings — suppressed methane readings, disabled monitors, and falsified pre-shift examinations.],
     [_United States v. Blankenship_ (S.D.W. Va., 2015–2016) — the misdemeanor conviction and felony acquittals.],
     [H. Berkes / NPR investigative reporting on Massey Energy.],
@@ -925,7 +930,8 @@
       the CSB had already documented at Texas City. Government and academic
       reviews found training that had not covered the well-control situation
       the crew faced, an unclear chain of command, and a cascade of failed
-      defenses — "a complex and interlinked series of mechanical failures,
+      defenses that BP's own accident investigation report summed up as "a
+      complex and interlinked series of mechanical failures,
       human judgments, engineering design, operational implementation and
       team interfaces."#cn() That the Commission reached past the rig to the
       whole industry's safety culture marked the failure as structural rather
@@ -1114,8 +1120,8 @@
       none accountable for the whole. Manufacturer fraud, regulatory capture,
       inspection incompetence, training gaps, and lost institutional memory
       all converged on one building, and because each actor saw only its
-      fragment, each could regard its own part as tolerable. The inquiry
-      called it a "grey elephant" — a danger known but ignored — and the
+      fragment, each could regard its own part as tolerable. It was what one might call
+      a "grey elephant" — a danger known but ignored, hiding in plain sight — and the
       missing capability was anyone owning the integrated risk that everyone
       could see in part but no one held in full.#cn()
     ],
@@ -1153,7 +1159,7 @@
     Grenfell is the strongest evidence in the dataset that capability
     failure can be distributed across many actors, each of whom contributes
     a small piece, none of whom is accountable for the whole. The
-    inquiry's "grey elephant" framing — known but ignored — describes a
+    "grey elephant" framing — a known danger no one owns — describes a
     pattern that LENS treats as a primary governance problem in any
     high-consequence domain.
   ],
@@ -1911,12 +1917,12 @@
     [U.S. Mine Safety and Health Administration, _Report of Investigation: Sago Mine_ (2007) — the seal design, emergency plan, and self-rescue training.],
     [MSHA (2007) — the explosion sequence: lightning ignition in the sealed area, seal failure, twelve dead and one survivor.],
     [MSHA (2007) — the inadequate seal design, emergency plan, and lapsed self-rescue training.],
-    [MSHA (2007) — "multiple equipment, training, and emergency-response shortcomings that compounded their initial trapping" (quoted).],
+    [MSHA (2007) — the finding that the miners faced multiple equipment, training, and emergency-response shortcomings that compounded their initial trapping (paraphrase).],
     [West Virginia state Sago investigation (2006) — the false "twelve alive" miscommunication and the families' ordeal.],
     [Mine Improvement and New Emergency Response (MINER) Act of 2006, Pub. L. 109-236 — refuge chambers and rescue requirements.],
   ),
   quote: [The miners faced multiple equipment, training, and emergency-response shortcomings that compounded their initial trapping.],
-  quote-source: "Mine Safety and Health Administration, Sago Investigation Report, 2007",
+  quote-source: "Paraphrasing the Mine Safety and Health Administration Sago Investigation Report (2007)",
   le-insight: [
     Sago is the case for the cumulative inadequacy pattern in
     industrial accidents. No single failure caused the disaster. Each
@@ -1954,8 +1960,8 @@
   courses: ("LEN 5", "LEN 8"),
   scale: "big",
   induced-anchor: "7.4",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  lens-anchor: "D5/PT4",
+  clo-anchor: "CLO-5, CLO-1",
   evidence-source: "investigation",
 )
 
@@ -2071,7 +2077,7 @@
     [NAIIC (2012) — the accident sequence: seawall overtopping, generator inundation, and three core meltdowns.],
     [NAIIC (2012) — the "made in Japan" cultural and regulatory-capture conclusion (quoted).],
     [Investigation Committee on the Accident (Hatamura government commission, 2012); IAEA Director General, _The Fukushima Daiichi Accident_ (2015) — external-hazard under-estimation.],
-    [C. Lochbaum, E. Lyman & S. Stranahan, _Fukushima: The Story of a Nuclear Disaster_ (2014).],
+    [D. Lochbaum, E. Lyman & S. Stranahan, _Fukushima: The Story of a Nuclear Disaster_ (2014).],
     [Y. Funabashi & K. Kitazawa, _Fukushima in Review_ (2012); cf. INPO (Case 175) and Davis-Besse (Case 160).],
   ),
   quote: [What must be admitted — very painfully — is that this was a disaster \"Made in Japan.\"],
@@ -2120,14 +2126,6 @@
 )
 
 // ---- Case 170 — west-africa-ebola-delayed-response ----
-// VERIFY: PHEIC declared 8 August 2014 (Emergency Committee met 6–7 August) — confirmed via WHO/Europe and NEJM.
-// VERIFY: MSF declared the outbreak "out of control" 20–23 June 2014 (TIME, 23 June 2014); WHO leadership publicly disputed the framing as alarmist.
-// VERIFY: Reported toll ~28,616 cases / ~11,310 deaths to 10 June 2016 (WHO situation reports); undercount acknowledged — hedge preserved.
-// VERIFY: Stocking Report = Report of the Ebola Interim Assessment Panel, 7 July 2015 (chair Dame Barbara Stocking).
-// VERIFY: Moon et al., Harvard-LSHTM Independent Panel, The Lancet 386, 28 November 2015, doi:10.1016/S0140-6736(15)00946-0.
-// VERIFY: UN High-Level Panel on the Global Response to Health Crises, "Protecting Humanity from Future Health Crises," A/70/723, 9 February 2016 (chair Jakaya Kikwete).
-// VERIFY: WHO Health Emergencies Programme established May 2016.
-// VERIFY: Moon et al. quote "The most egregious failure was by WHO in the delay in sounding the alarm." — confirm exact wording against The Lancet full text before print.
 #case(
   number: 170,
   slug: "west-africa-ebola-delayed-response",
@@ -2339,8 +2337,6 @@
 )
 
 // ---- Case 171 — hurricane-maria-puerto-rico-logistics ----
-// VERIFY: GWU Milken Institute report exact title ("Ascertainment of the Estimated Excess Mortality from Hurricane María in Puerto Rico") — commissioned-report title carried from memory; 2,975 figure and Aug 2018 release verified via web search.
-// VERIFY: FEMA AAR "more than 80 percent of the inventory of some commodities" phrasing — verified via web search summary of the AAR; confirm exact wording against the PDF (fema.gov, July 12, 2018) at draft-time re-check.
 #case(
   number: 171,
   slug: "hurricane-maria-puerto-rico-logistics",
@@ -2684,7 +2680,7 @@
   ),
   references: (
     [CrowdStrike, _Falcon Content Update: Preliminary Post-Incident Review_ (July 2024) — the content-vs-code testing and staged-rollout gap (paraphrased).],
-    [CrowdStrike PIR (2024) — the configuration-file logic error, the kernel crash, and ~8.5 million affected Windows machines.],
+    [CrowdStrike PIR (2024) — the configuration-file fault and the kernel crash; the ~8.5 million affected Windows machines figure is Microsoft's (D. Weston, 20 July 2024).],
     [Microsoft resilient-engineering analyses and Windows kernel-access review (2024).],
     [U.S. GAO post-incident analysis and Senate Homeland Security hearings (2024) — concentration risk in endpoint security.],
     [B. Beyer et al. (eds.), _Site Reliability Engineering_ (2016) — staged rollout and canarying; cf. Knight Capital (Case 143).],

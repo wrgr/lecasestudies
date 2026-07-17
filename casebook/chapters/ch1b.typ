@@ -182,7 +182,7 @@
   year: "2003–2017",
   domains-list: ("healthcare",),
   modes-code: "TKN",
-  impact: "ACGME capped U.S. resident physician work hours at 80/week to reduce fatigue-related errors; subsequent RCTs (FIRST, iCOMPARE) showed mixed effects on patient outcomes and increased hand-off-related errors",
+  impact: "ACGME capped U.S. resident physician work hours at 80/week to reduce fatigue-related errors; subsequent RCTs (FIRST, iCOMPARE) found flexible schedules non-inferior on patient outcomes, and the promised safety gain did not appear",
   diagram: dgm.dgm-timeline(
     (("2003 — 80-hr cap", "fatigue↓"), ("2011 — 16-hr intern cap", "—"), ("2016 — FIRST trial", "no difference"), ("2017 — duty-hour cap relaxed", "back to 80-hr only")),
     emphasis: 2,
@@ -542,7 +542,7 @@
     ],
     [
       The single-center economic evidence was the second pillar.
-      Cohen et al. (_Critical Care Medicine_, 2010) reported that
+      Cohen et al. (_Simulation in Healthcare_, 2010) reported that
       the SBML program was cost-saving at the single hospital,
       driven principally by the reduction in CRBSI cases — each
       bloodstream infection averted is expensive enough that even
@@ -606,7 +606,7 @@
   ),
   references: (
     [Barsuk, Cohen, Feinglass, McGaghie, & Wayne (2009), "Use of simulation-based education to reduce catheter-related bloodstream infections," _Archives of Internal Medicine_ 169(15):1420–1423, doi:10.1001/archinternmed.2009.215.],
-    [Cohen, Feinglass, Barsuk, Barnard, O'Donnell, McGaghie, & Wayne (2010), "Cost savings from reduced catheter-related bloodstream infection after simulation-based education for residents in a medical intensive care unit," _Critical Care Medicine_ 38(9):1853–1859.],
+    [Cohen, Feinglass, Barsuk, Barnard, O'Donnell, McGaghie, & Wayne (2010), "Cost savings from reduced catheter-related bloodstream infection after simulation-based education for residents in a medical intensive care unit," _Simulation in Healthcare_ 5(2):98–102, doi:10.1097/SIH.0b013e3181bc8304.],
     [Barsuk, McGaghie, Cohen, Balachandran, & Wayne (2009), "Use of simulation-based mastery learning to improve the quality of central venous catheter placement in a medical intensive care unit," _Journal of Hospital Medicine_ 4(7):397–403.],
     [McGaghie, Issenberg, Cohen, Barsuk, & Wayne (2011), "Does simulation-based medical education with deliberate practice yield better results than traditional clinical education? A meta-analytic comparative review," _Academic Medicine_ 86(6):706–711.],
     [Department of Veterans Affairs SimLEARN documentation — the operating-program record of the national dissemination effort.],
@@ -631,7 +631,7 @@
   ],
   literature-items: (
     [Barsuk et al. (2009), _Archives of Internal Medicine_],
-    [Cohen et al. (2010), _Critical Care Medicine_],
+    [Cohen et al. (2010), _Simulation in Healthcare_],
     [McGaghie et al. (2011), _Academic Medicine_ — meta-analytic review],
   ),
   reflection-list: (
@@ -650,7 +650,7 @@
   year: "2014",
   domains-list: ("clinical care", "patient safety", "team communication"),
   modes-code: "HKN",
-  impact: "Across nine pediatric residency programs, implementation of the I-PASS handoff bundle (mnemonic + training + faculty development + sustainability campaign) was associated with a 23% relative reduction in preventable adverse events and a drop in medical errors, without negatively affecting resident workflow — the study design 'precludes definitively establishing a causal link'",
+  impact: "Across nine pediatric residency programs, implementation of the I-PASS handoff bundle (mnemonic + training + faculty development + sustainability campaign) was associated with a 23% relative reduction in medical errors and a 30% reduction in preventable adverse events, without negatively affecting resident workflow — the study design 'precludes definitively establishing a causal link'",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -670,9 +670,7 @@
     paired with formal trainee education, faculty development, and
     a sustainability campaign. Starmer et al. (_NEJM_, 2014) studied
     its implementation at nine pediatric residency programs and
-    reported a 23% relative reduction in preventable adverse events
-    and a drop in medical errors, with no negative effect on
-    resident workflow. The hedge survives verbatim: the authors
+    reported a 23% relative reduction in medical errors and a 30% reduction in preventable adverse events, with no negative effect on resident workflow. The hedge survives verbatim: the authors
     state plainly that "our study design precludes definitively
     establishing a causal link." Published correspondence cautions
     against implementing the mnemonic alone without the full
@@ -718,10 +716,9 @@
       design was a pre/post evaluation across the participating
       sites, with the bundle deployed sequentially and outcomes
       tracked through chart review and observation. The headline
-      finding was a 23% relative reduction in preventable adverse
-      events from the pre-implementation period to the
-      post-implementation period, alongside a drop in medical
-      errors more broadly, with no observed negative effect on
+      finding was a 23% relative reduction in medical errors and a
+      30% reduction in preventable adverse events from the
+      pre-implementation period to the post-implementation period, with no observed negative effect on
       resident workflow — the bundle did not impose net friction
       that displaced other clinical work.#cn()
     ],
@@ -758,7 +755,7 @@
   beats: (
     "Shift-change handoff: structural risk point; loss of safety-critical information is documented failure mode",
     "I-PASS bundle — mnemonic (Illness severity, Patient summary, Action list, Situation awareness, Synthesis by receiver) + trainee education + faculty development + sustainability campaign",
-    "Starmer et al. NEJM 2014: 23% relative reduction in preventable adverse events across nine pediatric residency programs; drop in medical errors; no negative effect on resident workflow",
+    "Starmer et al. NEJM 2014: 23% relative reduction in medical errors and 30% reduction in preventable adverse events across nine pediatric residency programs; no negative effect on resident workflow",
     "Hedge preserved verbatim: 'our study design precludes definitively establishing a causal link'",
     "Published correspondence cautions against implementing the mnemonic alone without the full bundle",
   ),
@@ -947,7 +944,7 @@
   ),
   references: (
     [Hayden, J. K., Smiley, R. A., Alexander, M., Kardong-Edgren, S., \& Jeffries, P. R. (2014). The NCSBN National Simulation Study: A longitudinal, randomized, controlled study replacing clinical hours with simulation in prelicensure nursing education. _Journal of Nursing Regulation_, 5(2 Suppl):S1–S64. https://www.journalofnursingregulation.com/article/s2155-8256(15)30062-4/fulltext — the case's primary study.],
-    [Smiley, R. A. (2023). Survey of simulation use in prelicensure nursing programs and the regulatory landscape 2014–2022. _Journal of Nursing Regulation_. doi:10.1016/S2155-8256(23)00086-8 — the 2023 follow-up documenting the regulatory propagation.],
+    [Smiley, R. A., \& Martin, B. (2023). Simulation in Nursing Education: Advancements in Regulation, 2014–2022. _Journal of Nursing Regulation_. doi:10.1016/S2155-8256(23)00086-8 — the 2023 follow-up documenting the regulatory propagation.],
     [Jeffries, P. R. (2012). _Simulation in Nursing Education: From Conceptualization to Evaluation_ (2nd ed.). National League for Nursing — the simulation-quality framework the NCSBN study's quality conditions rest on.],
     [INACSL Standards Committee (2016). _INACSL Standards of Best Practice: Simulation_. _Clinical Simulation in Nursing_, 12(S) — the simulation-practice standards downstream programs adopt as the analog of the NCSBN quality conditions.],
   ),
@@ -1116,7 +1113,7 @@
     ),
   ),
   references: (
-    [Kerfoot, B. P., DeWolf, W. C., Masser, B. A., Church, P. A., \& Federman, D. D. (2007). Spaced education improves the retention of clinical knowledge by medical students: A randomised controlled trial. _Journal of Urology_, 177(4):1481–1487. doi:10.1016/j.juro.2006.11.074 — the case's primary RCT.],
+    [Kerfoot, B. P., Baker, H. E., Koch, M. O., Connelly, D., Joseph, D. B., \& Ritchey, M. L. (2007). Randomized, controlled trial of spaced education to urology residents in the United States and Canada. _Journal of Urology_, 177(4):1481–1487. doi:10.1016/j.juro.2006.11.074 — the case's primary RCT.],
     [Kerfoot, B. P. (2009). Learning benefits of on-line spaced education persist for 2 years. _Journal of Urology_, 181(6):2671 — the two-year persistence follow-up.],
     [Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., \& Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. _Psychological Bulletin_, 132(3):354–380 — the basic-literature spacing-effect review the workplace-L&D RCT sits against.],
     [Settles, B., \& Meeder, B. (2016). A trainable spaced repetition model for language learning. _Proceedings of ACL 2016_, 1848–1858 — Duolingo half-life regression (Case 69), the operational deployment companion.],
@@ -1218,12 +1215,16 @@
       and across the three modalities. The headline finding is
       that across all knowledge domains and self-perceived
       confidence dimensions assessed, mean increases were
-      observed regardless of modality. The pragmatic
-      interpretation in the global-health literature has been
-      that the virtual / blended modalities are not measurably
-      worse on the L1–L2 outcomes the study measured, a
-      finding that has policy implications for program design
-      under future disruption.#cn()
+      observed regardless of modality. But the modalities were not equivalent: the in-person
+      format produced significantly greater knowledge gains
+      (13.6% increase vs. 6.0% for the virtual workshop and
+      7.6% for the online course) and greater confidence gains,
+      regardless of training level or professional cadre. The
+      countervailing finding is equity of access — the virtual
+      and online formats reached a significantly higher
+      proportion of women — so the policy question under future
+      disruption is a trade-off between L1–L2 learning gains and
+      reach, not a claim of modality equivalence.#cn()
     ],
     [
       The honest framing the case must carry into print is the
@@ -2640,7 +2641,7 @@
   year: "1986 – present",
   domains-list: ("anesthesiology", "patient safety", "medical devices"),
   modes-code: "HKG",
-  impact: "Mandatory pulse oximetry and capnography monitoring (Harvard 1986; ASA 1986–87) converted silent hypoxemia and esophageal intubation from undetectable failures into monitored, recoverable ones; anesthesia-related mortality fell dramatically over subsequent decades — multifactorial decline",
+  impact: "Continuous pulse oximetry and capnography — encouraged in the 1986 Harvard/ASA minimum-monitoring standards and mandated in subsequent revisions (pulse oximetry ~1989–90; capnography ~1991) — converted silent hypoxemia and esophageal intubation from undetectable failures into monitored, recoverable ones; anesthesia-related mortality fell dramatically over subsequent decades — multifactorial decline",
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -2656,11 +2657,13 @@
     on anesthesia catastrophes converged with a malpractice-insurance
     crisis to force institutional attention. In 1986 Eichhorn et al.
     (_JAMA_, 1986) published the Harvard Medical School minimum
-    monitoring standards — continuous pulse oximetry and capnography
-    were the load-bearing additions, designed specifically to make
-    hypoxemia and misplaced endotracheal tubes detectable early
-    enough to recover. The ASA adopted essentially the same standards
-    in 1986–87. The Anesthesia Patient Safety Foundation, founded in
+    monitoring standards — which mandated an oxygen analyzer and
+    disconnection alarm and *encouraged* the newer continuous pulse
+    oximetry and capnography, the load-bearing additions designed to
+    make hypoxemia and misplaced endotracheal tubes detectable early
+    enough to recover; both were mandated in subsequent revisions
+    (pulse oximetry ~1989–90, capnography ~1991). The ASA adopted
+    essentially the same standards in 1986. The Anesthesia Patient Safety Foundation, founded in
     1985, institutionalized the broader change-management effort.
     Anesthesia-related mortality fell dramatically over subsequent
     decades — one widely cited Brazilian series reports a fall toward
@@ -2696,8 +2699,11 @@
       medicine. In 1986 Eichhorn et al. published in _JAMA_ the
       Harvard Medical School minimum monitoring standards: a defined
       minimum set of continuous monitors for every anesthetized
-      patient, with continuous pulse oximetry and capnography as the
-      load-bearing additions.#cn()
+      patient. Pulse oximetry and capnography — then just entering
+      wide use — were *encouraged* rather than required in the 1986
+      text, and became the load-bearing additions when subsequent
+      revisions mandated them (pulse oximetry ~1989–90, capnography
+      ~1991).#cn()
     ],
     [
       Pulse oximetry made oxygenation continuously visible to the
@@ -2746,7 +2752,7 @@
   beats: (
     "Early 1980s anesthesia crisis: silent hypoxemia and esophageal intubation structurally undetectable until catastrophic",
     "1982 ABC special + malpractice-insurance crisis + APSF founding (1985) force institutional change",
-    "Harvard standards (Eichhorn JAMA 1986): minimum monitoring with continuous pulse oximetry and capnography; ASA adopts 1986–87",
+    "Harvard standards (Eichhorn JAMA 1986): minimum monitoring; pulse oximetry and capnography encouraged in 1986, mandated in later revisions (~1989–91); ASA adopts 1986",
     "Anesthesia mortality falls dramatically over subsequent decades; malpractice premiums decline alongside",
     "Hedge preserved: decline is multifactorial; device standards still fail in documented edge cases (cf. Case 26 pulse oximetry across skin tones)",
   ),
@@ -2985,7 +2991,7 @@
   year: "2010",
   domains-list: ("clinical care", "patient safety", "health IT"),
   modes-code: "HKD",
-  impact: "A before-and-after study at an academic medical center associated bar-code electronic medication administration (bar-code eMAR) with a 41.4% reduction in nontiming administration errors and a 50.8% reduction in potential adverse drug events; transcription errors on order documentation fell 80.3%; a later single-site rollout reported a 55.4% reduction in actual patient-harm events",
+  impact: "A before-and-after study at an academic medical center associated bar-code electronic medication administration (bar-code eMAR) with a 41.4% reduction in nontiming administration errors and a 50.8% reduction in potential adverse drug events; transcription errors on order transcription were eliminated (6.1% to zero); a later single-site rollout reported a 55.4% reduction in actual patient-harm events",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3006,8 +3012,8 @@
     bar-code eMAR at an academic medical center using a
     before-and-after observational design and reported a 41.4%
     reduction in nontiming administration errors, a 50.8% reduction
-    in potential adverse drug events, and an 80.3% reduction in
-    transcription errors on order documentation. A later single-site
+    in potential adverse drug events, and the elimination of
+    transcription errors on order transcription (6.1% to zero). A later single-site
     rollout (PMC6257885) reported a 55.4% reduction in actual
     patient-harm events. The study is explicit that the design is
     quasi-experimental — before-and-after / observational — not a
@@ -3054,8 +3060,8 @@
       findings were a 41.4% reduction in nontiming administration
       errors (the failure mode the cue is designed to catch), a
       50.8% reduction in potential adverse drug events (the harm the
-      errors would have produced), and an 80.3% reduction in
-      transcription errors on order documentation upstream of
+      errors would have produced), and the elimination of
+      transcription errors on order transcription (6.1% to zero) upstream of
       administration. A subsequent single-site rollout reported in
       PMC6257885 documented a 55.4% reduction in actual
       patient-harm events, supporting the transfer of the result
@@ -3093,7 +3099,7 @@
   beats: (
     "Wrong-drug / wrong-patient administration: the cue the bedside nurse needs to catch the mismatch is structurally absent in the unaided workflow",
     "Bar-code eMAR supplies the cue in hardware: medication scan + wristband scan gated by the electronic record at the moment of administration",
-    "Poon et al. NEJM 2010 — 41.4% reduction in nontiming administration errors, 50.8% in potential adverse drug events, 80.3% in transcription errors",
+    "Poon et al. NEJM 2010 — 41.4% reduction in nontiming administration errors, 50.8% in potential adverse drug events, transcription errors eliminated (6.1% to zero)",
     "Later single-site rollout (PMC6257885) — 55.4% reduction in actual patient-harm events",
     "Hedge preserved: before-and-after / observational design, not a randomized trial; significant workflow changes were required",
   ),
@@ -3104,7 +3110,7 @@
       [Pair the device standard with the institutional commitment that makes the scan non-routable around — the equivalent of the APSF / ASA monitoring standard in anesthesia, or the WHO checklist's mandatory-mechanism status.],
     ),
     after: (
-      [Report the headline reductions (41.4%, 50.8%, 80.3%, 55.4%) together with the design hedge — before-and-after / observational, significant workflow changes required — so the evidence the field cites is the evidence the field can actually use.],
+      [Report the headline reductions (41.4%, 50.8%, transcription errors eliminated, 55.4%) together with the design hedge — before-and-after / observational, significant workflow changes required — so the evidence the field cites is the evidence the field can actually use.],
       [Track the transfer figure (the 55.4% from the later single-site rollout) as evidence the mechanism survives a new institutional context, while preserving the same observational-design qualification on the new figure.],
       [Build the next round of evaluation against the residual error rate (the failures that survive the cue) so the institution learns where the workflow leaks remain, rather than treating the reduction as the closure of the failure mode.],
     ),
@@ -3122,8 +3128,8 @@
     small-tier cue/alert intervention at the point of care.
     The cue lands at the bedside before the harm, the
     workflow change is part of the deliverable, and the
-    headline reductions (41.4%, 50.8%, 80.3%, and a 55.4%
-    transfer figure) rest on a before-and-after / observational
+    headline results (41.4%, 50.8%, transcription errors
+    eliminated, and a 55.4% transfer figure) rest on a before-and-after / observational
     design that the case preserves verbatim.
   ],
   lens-approach: [
@@ -3140,7 +3146,7 @@
   ),
   reflection-list: (
     [Identify a point in your domain's workflow where the cue the operator needs in order to catch a mismatch is structurally absent. What would the hardware-supplied analog of bar-code eMAR look like — and at what point in the workflow does it have to land for the operator to still recover?],
-    [The headline reductions (41.4\%, 50.8\%, 80.3\%, 55.4\%) rest on a before-and-after observational design. What additional evidence — randomized comparison, segmented analysis by unit type, residual-error analysis — would you require before treating the figures as a closure rather than a strong signal?],
+    [The headline results (41.4\%, 50.8\%, transcription errors eliminated, 55.4\%) rest on a before-and-after observational design. What additional evidence — randomized comparison, segmented analysis by unit type, residual-error analysis — would you require before treating the figures as a closure rather than a strong signal?],
   ),
   courses: ("LEN 2", "LEN 5", "LEN 7"),
 )
@@ -3275,7 +3281,7 @@
     [Birkmeyer, J. D., Finks, J. F., O'Reilly, A., Oerline, M., Carlin, A. M., Nunn, A. R., Dimick, J., Banerjee, M., \& Birkmeyer, N. J. O., for the Michigan Bariatric Surgery Collaborative. (2013). Surgical skill and complication rates after bariatric surgery. _New England Journal of Medicine_, 369(15):1434–1442. doi:10.1056/NEJMsa1300625 — the case's primary evaluation.],
     [Birkmeyer, J. D., Stukel, T. A., Siewers, A. E., Goodney, P. P., Wennberg, D. E., \& Lucas, F. L. (2003). Surgeon volume and operative mortality in the United States. _New England Journal of Medicine_, 349(22):2117–2127 — the volume-outcome literature the confound rests against.],
     [Vassiliou, M. C., et al. (2005). The MISTELS program — global objective assessment of laparoscopic skills. _Surgical Endoscopy_ — the surgical-skill assessment literature the rating scale derives from.],
-    [Birkmeyer, N. J. O., \& Finks, J. F. (2013). Editorial comment on the Michigan skill–outcomes study. _NEJM_ — the published companion that names the volume confound.],
+    [Jacobs, D. O. (2013). Cut well, sew well, do well? _New England Journal of Medicine_, 369(15):1466–1467. doi:10.1056/NEJMe1309785 — the accompanying editorial.],
   ),
   quote: [Greater skill was associated with fewer reoperations, readmissions, and emergency department visits; the low-skill surgeons also did fewer cases and operated more slowly.],
   quote-source: "Editors' synthesis of Birkmeyer et al. (2013) and the accompanying editorial comment.",
@@ -3389,7 +3395,7 @@
       own private dataset.#cn()
     ],
     [
-      Vedula, Ishii, and Hager (_PLOS One_, 2016) used the dataset to
+      Vedula et al. (_PLOS One_, 2016) used the dataset to
       analyze the structure of surgical activity for a suturing and
       knot-tying task and reported that experts used fewer gestures
       (26.29 on a knot-tying task) than novices (31.30), and that
@@ -3452,7 +3458,7 @@
     ),
   ),
   references: (
-    [Vedula, Ishii, & Hager (2016), "Analysis of the Structure of Surgical Activity for a Suturing and Knot-Tying Task," _PLOS One_ 11(3):e0149174, doi:10.1371/journal.pone.0149174.],
+    [Vedula, Malpani, Tao, Chen, Gao, Poddar, Ahmidi, Paxton, Vidal, Khudanpur, Hager, & Chen (2016), "Analysis of the Structure of Surgical Activity for a Suturing and Knot-Tying Task," _PLOS One_ 11(3):e0149174, doi:10.1371/journal.pone.0149174.],
     [Gao, Vedula, Reiley, Ahmidi, Varadarajan, Lin, Tao, Zappella, Bejar, Yuh, Chen, Vidal, Khudanpur, & Hager (2014), "JHU-ISI Gesture and Skill Assessment Working Set (JIGSAWS): A Surgical Activity Dataset for Human Motion Modeling," _MICCAI Workshop_ — JIGSAWS dataset release paper.],
     [Reiley, Lin, Yuh, & Hager (2011), "Review of methods for objective surgical skill evaluation," _Surgical Endoscopy_ 25(2):356–366 — situates the decomposition within the broader skill-assessment literature.],
     [Birkmeyer, Finks, O'Reilly, et al. (2013), _NEJM_ — the paired skill-matters study (Case 30).],
@@ -3500,8 +3506,7 @@
   impact: "A multidisciplinary EHR redesign of ambulatory annual-screening prompts (advance directives, depression, falls risk, alcohol/drug misuse), paired with embedded CDS, reported improvements in task time, error rates, System Usability Scale scores, and the downstream screening-rate outcomes the project was scoped to move",
   kind: "intervention",
   scale: "small",
-  evidence-source: "program-report",
-  evidence-flag: "practice-synthesis-tier",
+  evidence-source: "peer-reviewed",
   induced-anchor: "3.1",
   lens-anchor: "D4/PT5",
   clo-anchor: "CLO-4, CLO-1",
@@ -3520,9 +3525,9 @@
     long needed a small-tier C3 positive example to set against the
     interface failures already documented at the big tier (Therac-25,
     CPOE/EHR adoption, the Helios pattern). The evidence base is a
-    HIMSS case-study format rather than a top-tier peer-reviewed
-    journal article; the tier flag renders under the title and is
-    load-bearing. Future validation will continue as the downstream
+    single-institution QI study published peer-reviewed in Applied
+    Clinical Informatics (2020), with a HIMSS chapter case-study
+    write-up. Future validation will continue as the downstream
     clinical-outcome literature on screening-rate gains matures.
   ],
   sections: (
@@ -3563,9 +3568,9 @@
       reported observation window.#cn()
     ],
     [
-      The evidence-tier flag rendered under the title is load-bearing.
-      The case is documented in a HIMSS chapter case-study format
-      rather than a top-tier peer-reviewed journal article. The
+      The case is a single-institution quality-improvement study,
+      published peer-reviewed in Applied Clinical Informatics (2020),
+      with a HIMSS chapter case-study write-up. The
       magnitudes reported sit inside a single-institution
       quality-improvement project with its own outcome metric;
       replication at other institutions and durability across EHR
@@ -3592,7 +3597,7 @@
     "Ambulatory annual-screening rates for guideline-recommended care; the cue-action gap is the C3 failure mode",
     "Multidisciplinary EHR redesign of screening prompts + embedded CDS at the point of decision",
     "Reported gains: task time, error rate, SUS score, and the downstream screening-rate metric",
-    "Evidence tier: HIMSS case-study format; single-institution QI; magnitudes await independent replication",
+    "Peer-reviewed single-institution QI (Appl Clin Inform 2020); magnitudes await independent replication",
     "The missing small-tier C3 positive example to set against Therac-25, CPOE, Helios at the big tier",
   ),
   approaches: (
@@ -3602,13 +3607,13 @@
       [Specify the downstream process metric (screening-rate completion) before the redesign ships, so the usability-layer and process-layer outcomes are measured against the same scope.],
     ),
     after: (
-      [Treat the QI report honestly: a single-institution case study is a small-tier intervention, not a settled magnitude. Carry the practice-synthesis-tier flag into any downstream citation.],
+      [Treat the QI report honestly: a single-institution peer-reviewed study is a small-tier intervention, not a settled magnitude. Carry the single-institution caveat into any downstream citation.],
       [Track durability — across EHR upgrades, personnel rotation, and downstream clinical outcomes — as a separate post-deployment commitment, not a footnote to the implementation report.],
       [Pair with the big-tier C3 failures already in the corpus when teaching; the failure-and-intervention pair is the teaching artifact, not either alone.],
     ),
   ),
   references: (
-    [HIMSS (Greater Kansas City chapter), "Usability Redesign Improves Annual Screening Rates in an Ambulatory Setting," case study, University of Missouri Health Care.],
+    [Pierce RP, Eskridge BR, Rehard L, Ross B, Day MA, Belden JL (2020), "The Effect of Electronic Health Record Usability Redesign on Annual Screening Rates in an Ambulatory Setting," _Applied Clinical Informatics_ 11(4):580–588, doi:10.1055/s-0040-1715828. HIMSS (Greater Kansas City chapter) case study is the secondary write-up.],
     [Co et al. (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141, doi:10.1093/jamia/ocz095 — adjacent systematic-review evidence on interaction-design redesign.],
     [Office of the National Coordinator for Health IT, SAFER Guides on CDS design — practitioner-tier guidance the redesign instantiates.],
     [Middleton et al. (2013), "Enhancing patient safety and quality of care by improving the usability of electronic health record systems," _JAMIA_ 20(e1):e2–e8 — the framing peer-reviewed paper on EHR-usability-as-safety.],
@@ -3619,9 +3624,9 @@
     The UMHC redesign is the small-tier C3 positive example the
     corpus needed: cue-and-alert design as a capability
     deliverable, with both usability and downstream
-    screening-rate gains in the same project. The evidence is
-    practice-synthesis tier (HIMSS case-study format), not a
-    top-tier peer-reviewed article; magnitudes await independent
+    screening-rate gains in the same project. The evidence is a single-institution QI study, peer-reviewed
+    in Applied Clinical Informatics (2020), with a HIMSS case-study
+    write-up; magnitudes await independent
     replication and durability tracking. Future validation
     ongoing.
   ],
@@ -3644,7 +3649,7 @@
   reflection-list: (
     [Identify a screening or recommended-care prompt in your EHR. What proportion of prompts result in the completed action? Where does the cue-action gap sit, and what is the redesign that would close it?],
     [Specify the downstream process metric you would commit to before any usability redesign ships. The UMHC case is teachable because it reported the screening-rate outcome, not only the SUS gain. What would be the equivalent in your context?],
-    [The case is practice-synthesis tier (HIMSS case-study format). What is the minimum independent replication evidence you would require before treating the reported magnitudes as a basis for an institutional investment in your own setting?],
+    [The case is a single-institution peer-reviewed QI study. What is the minimum independent replication evidence you would require before treating the reported magnitudes as a basis for an institutional investment in your own setting?],
   ),
   courses: ("LEN 3", "LEN 4", "LEN 8"),
 )
@@ -3669,7 +3674,7 @@
     Alert fatigue is the structural failure mode the C3 thread names
     at the small tier: an EHR that fires so many alerts the
     actionable ones are lost in the noise. The 2019 _JAMIA_
-    systematic review by Co and colleagues aggregates the evidence
+    systematic review by Hussain and colleagues aggregates the evidence
     that structured redesign — interaction design changes and
     clinical-role tailoring — can reduce alert burden; most
     optimization studies in the review reported alert-rate reduction
@@ -3702,7 +3707,7 @@
       the burden without cutting the safety signal.#cn()
     ],
     [
-      The 2019 _JAMIA_ systematic review by Co and colleagues
+      The 2019 _JAMIA_ systematic review by Hussain and colleagues
       aggregates the published evidence on EHR alert optimization.
       The headline finding: interaction-design changes and
       clinical-role tailoring reduce alert burden, and most
@@ -3757,7 +3762,7 @@
   ),
   beats: (
     "Alert fatigue as the C3.2 failure mode at the EHR — high-firing low-action alerts train clinicians to dismiss",
-    "2019 JAMIA systematic review (Co et al.) — interaction design + role tailoring reduce alert burden across optimization studies",
+    "2019 JAMIA systematic review (Hussain et al.) — interaction design + role tailoring reduce alert burden across optimization studies",
     "2024 QI redesign of four high-firing nursing alerts: quantitative firing analysis + empathy mapping + iterative user feedback",
     "2024 interruptive-to-passive conversion of COVID-precautions alert with dual outcomes: burden + precautions-order timing",
     "Evidence tier: systematic review peer-reviewed, per-site QI publications practice-tier; durability across upgrades open",
@@ -3775,14 +3780,14 @@
     ),
   ),
   references: (
-    [Co et al. (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141, doi:10.1093/jamia/ocz095.],
-    [Russ et al. and colleagues (2024), "Navigating Alert Fatigue: A Case Study in Electronic Health Record Alert Design Optimization," PubMed 39049299 — nursing-workflow QI redesign of four high-firing alerts.],
+    [Hussain et al. (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095.],
+    [Patterson E. (2024), "Navigating Alert Fatigue: A Case Study in Electronic Health Record Alert Design Optimization," _Studies in Health Technology and Informatics_, PubMed 39049299 — nursing-workflow QI redesign of four high-firing alerts.],
     [Authors (2024), "Addressing Alert Fatigue by Replacing a Burdensome Interruptive Alert with Passive Clinical Decision Support," _Applied Clinical Informatics_ — interruptive-to-passive conversion with dual outcomes.],
     [Office of the National Coordinator for Health IT, SAFER Guides on CDS — practitioner-tier guidance the redesigns instantiate.],
     [Ancker et al. (2017), "Effects of workload, work complexity, and repeated alerts on alert fatigue in a clinical decision support system," _BMC Medical Informatics and Decision Making_ 17:36 — adjacent measurement evidence.],
   ),
   quote: [Alert fatigue is the failure mode the alert architecture trains. The redesign discipline is part of the delegation.],
-  quote-source: "Editors' synthesis of Co et al. (2019) and the 2024 QI literature.",
+  quote-source: "Editors' synthesis of Hussain et al. (2019) and the 2024 QI literature.",
   le-insight: [
     The 2019 _JAMIA_ review plus the 2024 QI projects are the
     small-tier C3.2 intervention companion the corpus needed —
@@ -3804,7 +3809,7 @@
     small-tier C3 thread.
   ],
   literature-items: (
-    [Co et al. (2019), _JAMIA_ — systematic review of CDS alert-optimization],
+    [Hussain et al. (2019), _JAMIA_ — systematic review of CDS alert-optimization],
     [Ancker et al. (2017), _BMC Medical Informatics_ — alert fatigue measurement],
     [2024 _Applied Clinical Informatics_ — interruptive-to-passive conversion case],
   ),
@@ -3824,7 +3829,7 @@
   year: "2022 – 2024",
   domains-list: ("healthcare", "clinical decision support", "machine learning"),
   modes-code: "TKD",
-  impact: "Boussina et al. NPJ Digital Medicine 2024 prospective multi-site implementation of the COMPOSER (COnformal Multidimensional Prediction Of SEpsis Risk) deep-learning model at UC San Diego Health; reported 1.9 percentage-point absolute decrease in in-hospital sepsis mortality and 5.0 percentage-point absolute decrease in 28-day sepsis-related readmission during the deployment period, evaluated against the pre-deployment baseline period within the same health system",
+  impact: "Boussina et al. NPJ Digital Medicine 2024 prospective multi-site implementation of the COMPOSER (COnformal Multidimensional Prediction Of SEpsis Risk) deep-learning model at UC San Diego Health; reported a 1.9 percentage-point absolute decrease (17% relative) in in-hospital sepsis mortality and a 5.0 percentage-point absolute increase in sepsis bundle compliance during the deployment period, evaluated against the pre-deployment baseline period within the same two-emergency-department health system",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3842,8 +3847,9 @@
     when the input is sufficiently out-of-distribution. The
     deployment evaluation reported a 1.9 percentage-point absolute
     decrease in in-hospital sepsis mortality and a 5.0 percentage-
-    point absolute decrease in 28-day sepsis-related readmission
-    during the deployment period at two UC San Diego hospitals,
+    point absolute increase in sepsis bundle compliance
+    during the deployment period at two UC San Diego emergency
+    departments,
     evaluated against the pre-deployment baseline period within
     the same health system. The case completes the AI-delegation
     typology in sepsis at three deployments — Case 20 (TREWS at
@@ -3854,7 +3860,7 @@
     (the COMPOSER deployment ran alongside other process
     improvements at UCSD), and the author team is explicit
     about the structural attribution question. Pair with Case
-    74, Case 5, and Case 35 (Radiology AI Miscalibration).
+    20, Case 5, and Case 35 (Radiology AI Miscalibration).
   ],
   sections: (
     [
@@ -3864,7 +3870,7 @@
       Time Early Warning System at Johns Hopkins — with its
       prospective evaluation showing mortality reduction
       associated with prompt clinician response to alerts. Case
-      93 documents the Epic Sepsis Score deployed across
+      5 documents the Epic Sepsis Score deployed across
       multiple U.S. health systems, with external validation by
       Wong and colleagues finding substantially lower sensitivity
       and higher false-positive rates than the vendor's
@@ -3899,8 +3905,8 @@
       the load-bearing intervention-evidence. Across the
       deployment period at the two UC San Diego hospital sites,
       in-hospital sepsis mortality decreased by 1.9 percentage
-      points in absolute terms, and 28-day sepsis-related
-      readmission decreased by 5.0 percentage points, both
+      points in absolute terms, and sepsis bundle compliance
+      increased by 5.0 percentage points, both
       evaluated against the pre-deployment baseline period
       within the same health system. The evaluation is
       prospective implementation, not RCT — the comparison is
@@ -3936,7 +3942,7 @@
     [
       The hedges the case carries are load-bearing and preserved
       in the prose. The deployment is prospective implementation,
-      not an RCT; the mortality and readmission reductions are
+      not an RCT; the mortality reduction and bundle-compliance gain are
       evaluated against the same health system's historical
       baseline, and the comparison cannot rule out concurrent
       improvements in sepsis care that would have produced
@@ -3958,7 +3964,7 @@
   beats: (
     "Boussina et al. NPJ Digital Medicine 2024; COMPOSER deep-learning sepsis-risk model at UC San Diego Health, two-site prospective implementation",
     "Conformal-prediction framework: calibrated uncertainty intervals enable model abstention when input is out-of-distribution",
-    "Deployment outcomes: 1.9 pp absolute decrease in in-hospital sepsis mortality; 5.0 pp absolute decrease in 28-day sepsis-related readmission vs pre-deployment baseline",
+    "Deployment outcomes: 1.9 pp absolute decrease in in-hospital sepsis mortality; 5.0 pp absolute increase in sepsis bundle compliance vs pre-deployment baseline",
     "Hedges binding: prospective not RCT; mortality reduction multifactorial — concurrent process improvements at UCSD cannot be cleanly separated from COMPOSER's contribution",
     "Completes AI-delegation typology in sepsis: Case 20 (TREWS), Case 5 (Epic Sepsis Score), COMPOSER (Case 34)",
   ),
@@ -3986,8 +3992,8 @@
     COMPOSER is the third clinical-AI sepsis case in the
     delegation typology — prospective-positive with conformal-
     prediction abstention. The deployment reduced in-hospital
-    sepsis mortality by 1.9 percentage points and 28-day
-    readmission by 5.0 percentage points; the load-bearing
+    sepsis mortality by 1.9 percentage points and raised sepsis
+    bundle compliance by 5.0 percentage points; the load-bearing
     hedges are that the evaluation is prospective not RCT and
     that the mortality reduction is multifactorial. The
     abstention structure is the methodological contribution the
@@ -3996,13 +4002,13 @@
   lens-approach: [
     COMPOSER is the cue-and-alert-design-as-capability-deliverable
     case at clinical-deployment scale (induced 3.1; LENS
-    D4+D4/PT6; CLO-4 and CLO-3). LENS uses it in Domain 4
+    D4+D3/PT6; CLO-4 and CLO-3). LENS uses it in Domain 4
     (Test and Evaluation) for the prospective-implementation-
     evaluation discipline and in Domain 3 (Human-System Collaboration) for the abstention-as-clinical-workflow-
     capability anchor. Pair with Case 20 (TREWS), Case 5
     (Epic Sepsis), and Case 35 (Radiology AI Miscalibration).
     The three sepsis cases together — Case 20, Case 5, Case
-    129 — define the AI-delegation typology in sepsis at the
+    34 — define the AI-delegation typology in sepsis at the
     deployment-evidence level.
   ],
   literature-items: (
@@ -4113,7 +4119,8 @@
     [
       The problem is not confined to imaging. Obermeyer et al.
       (_Science_ 2019) showed that a widely deployed care-management
-      algorithm covering an estimated 200 million Americans
+      algorithm — one of a class of commercial risk-prediction tools
+      applied to an estimated 200 million Americans a year —
       systematically under-allocated resources to Black patients
       because it was trained on healthcare cost as a proxy label for
       need: equally sick Black patients had lower historical costs
@@ -4198,7 +4205,7 @@
   references: (
     [Larrazabal, A. J., Nieto, N., Peterson, V., Milone, D. H., & Ferrante, E. (2020), "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis," _PNAS_ 117(23):12592–12594 — sensitivity drops for under-represented groups on NIH ChestX-ray14 and CheXpert.],
     [Seyyed-Kalantari, L., Zhang, H., McDermott, M. B. A., Chen, I. Y., & Ghassemi, M. (2021), "Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations," _Nature Medicine_ 27:2176–2182 — disparities across Black, Hispanic, female, and lower-socioeconomic subgroups; persistence across model architectures.],
-    [Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019), "Dissecting racial bias in an algorithm used to manage the health of populations," _Science_ 366(6464):447–453 — proxy-label bias in care-management algorithm covering ~200 million Americans.],
+    [Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019), "Dissecting racial bias in an algorithm used to manage the health of populations," _Science_ 366(6464):447–453 — proxy-label bias in a care-management algorithm; ~200 million Americans/year are subject to tools of this class.],
     [Wachter, R. M. & Brynjolfsson, E. (2023), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_ 331(1):65–69 — generative-AI extension of the proxy-and-population problem.],
     [FDA, "Proposed Regulatory Framework for Modifications to AI/ML-Based Software as a Medical Device" (2019); FDA draft guidance on AI/ML-Based SaMD (2025), with Predetermined Change Control Plan and Good Machine Learning Practice principles — the regulatory trajectory; absence of mandatory demographic stratification at clearance and post-market monitoring of in-use performance.],
   ),
@@ -4214,11 +4221,11 @@
   ],
   lens-approach: [
     Radiology AI is the canonical contemporary clinical-AI
-    deployment-and-surveillance case (induced 7.2; LENS D4+D4/PT5).
+    deployment-and-surveillance case (induced 7.2; LENS D4+D3/PT5).
     LENS uses it in Domain 4 (Test and Evaluation; CLO-4) for the
     clearance-vs-deployment measurement architecture and for
     demographic stratification of validation as a deliverable. LENS
-    uses it in Domain 3 (Human-System Collaboration; CLO-4) for
+    uses it in Domain 3 (Human-System Collaboration; CLO-3) for
     the human-AI deployment-without-surveillance pattern, and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
     FDA AI/ML regulatory trajectory itself. The Obermeyer (2019)
@@ -4354,7 +4361,7 @@
   ),
   references: (
     [Jumper et al. (2021), "Highly accurate protein structure prediction with AlphaFold," _Nature_ — the method and accuracy.],
-    [Varadi et al. (2022), AlphaFold Protein Structure Database, _Nucleic Acids Research_ — the 200M+ structures and open release.],
+    [Varadi et al. (2024), "AlphaFold Protein Structure Database in 2024," _Nucleic Acids Research_ — the 200M+ structures and open release.],
     [Moult, J. (CASP organizer) commentary on AlphaFold2 (2020) — the benchmark and the achievement (paraphrased).],
     [CASP benchmark documentation — the decades-long agreed evaluation.],
     [Hassabis (DeepMind) public commentary — the open-release governance decision.],
@@ -4562,7 +4569,7 @@
   lens-approach: [
     DeepMind Mammography is the deployment-and-reuse-as-
     verification-events case at the high-profile-publication
-    seam (induced 7.2; LENS D4+D4/PT6; CLO-4 and CLO-3). LENS
+    seam (induced 7.2; LENS D4+D3/PT6; CLO-4 and CLO-3). LENS
     uses it in Domain 4 (Test and Evaluation) for the
     reproducibility-infrastructure-as-verification-condition
     discipline and in Domain 3 (Human-System Collaboration)
@@ -4613,7 +4620,7 @@
     (Case 173) and the WHO Surgical Checklist (Case 23): the
     structural move is the same — mandatory pre-authorization
     gating a consequential action — and the measured outcome is
-    very different. The Brinker et al. Kaiser Permanente cohort
+    very different. The Shin et al. Kaiser Permanente cohort
     (_J Am Acad Dermatol_, 2011; n=8,344 patients across 9,912
     treatment courses) found 29 fetal exposures and concluded
     "no evidence that iPLEDGE significantly decreased the risk of
@@ -4653,7 +4660,7 @@
       verifiably met.#cn()
     ],
     [
-      The measured outcome diverges sharply. Brinker et al.
+      The measured outcome diverges sharply. Shin et al.
       (_Journal of the American Academy of Dermatology_, 2011)
       studied 8,344 Kaiser Permanente patients across 9,912
       isotretinoin treatment courses in the iPLEDGE era and
@@ -4701,7 +4708,7 @@
   ),
   beats: (
     "iPLEDGE 2006 — first REMS-class authorization for isotretinoin; mandatory pregnancy test, two-method contraception, pharmacy lockout per cycle",
-    "Brinker et al. 2011 Kaiser cohort (n=8,344; 9,912 courses) — 29 fetal exposures; 'no evidence iPLEDGE significantly decreased risk' vs. prior SMART",
+    "Shin et al. 2011 Kaiser cohort (n=8,344; 9,912 courses) — 29 fetal exposures; 'no evidence iPLEDGE significantly decreased risk' vs. prior SMART",
     "Approximately 150 isotretinoin-exposed pregnancies continue annually in the US despite the program; non-adherence is the documented driver",
     "Structural form same as SUBSAFE and WHO checklist; the mechanism alone does not deliver capability without adherence support",
     "Most analytically useful 'mixed' case in v2 — the form has demonstrated successes; form-without-adherence-support is the gap",
@@ -4721,11 +4728,11 @@
   references: (
     [Shin, J., Cheetham, T. C., Wong, L., Niu, F., Kass, E., Yoshinaga, M. A., Sorel, M., McCombs, J. S., & Sidney, S. (2011), "The impact of the iPLEDGE program on isotretinoin fetal exposure in an integrated health care system," _Journal of the American Academy of Dermatology_, PMID:21565419.],
     [FDA, iPLEDGE program documentation (2006 – present) — REMS architecture and enrollment requirements.],
-    [Pinheiro et al. (2013), "Isotretinoin and pregnancy in the era of iPLEDGE," _Journal of the American Academy of Dermatology_ — broader outcome literature documenting the ~150 annual exposures figure.],
+    [Collins, M. K., Moreau, J. F., Opel, D., Swan, J., Prevost, N., Hastings, M., Schwarz, E. B., & Ferris, L. K. (2014), "Compliance with pregnancy prevention measures during isotretinoin therapy," _Journal of the American Academy of Dermatology_, 70(1):55–59, PMID:24157382 — source of the ~150 annual exposures figure.],
     [Sullivan et al. (2003), House Science Committee statement on SUBSAFE — the structural counterpoint (Case 173).],
   ),
   quote: [The authorization mechanism is operating as designed. The capability sits downstream of the authorization, and the program does not reach that far.],
-  quote-source: "Editors' synthesis of Brinker et al. (2011).",
+  quote-source: "Editors' synthesis of Shin et al. (2011).",
   le-insight: [
     iPLEDGE is the productive counterpoint to SUBSAFE and the
     WHO Surgical Checklist. The structural form — mandatory
@@ -4747,8 +4754,8 @@
     (Case 23) at the mandatory-mechanism layer.
   ],
   literature-items: (
-    [Brinker et al. (2011), _Journal of the American Academy of Dermatology_],
-    [Pinheiro et al. (2013), _Journal of the American Academy of Dermatology_],
+    [Shin et al. (2011), _Journal of the American Academy of Dermatology_],
+    [Collins et al. (2014), _Journal of the American Academy of Dermatology_],
     [FDA iPLEDGE program documentation],
   ),
   reflection-list: (
@@ -4773,7 +4780,7 @@
     TeamSTEPPS — developed jointly by the Agency for Healthcare Research
     and Quality and the Department of Defense and released in 2006 — is the
     healthcare analog of Crew Resource Management (Case 117): an
-    evidence-based team-training framework distilled from fifty years of
+    evidence-based team-training framework distilled from decades of
     aviation, military, and nuclear research and adapted for clinical
     settings. It trains four core competencies: communication, leadership,
     situation monitoring, and mutual support. It is explicitly the
@@ -4813,8 +4820,8 @@
     // -- How It Worked --
     [
       TeamSTEPPS is explicitly the translation pathway from
-      high-reliability-organization research into clinical practice — fifty
-      years of cross-domain evidence adapted for the bedside. Crucially,
+      high-reliability-organization research into clinical practice — decades
+      of cross-domain evidence adapted for the bedside. Crucially,
       its implementation infrastructure (master-trainer programs, toolkits,
       an institutional support center) was funded as part of the
       intervention, so adopting organizations had a route from training to
@@ -4918,7 +4925,7 @@
   year: "2020 – 2022",
   domains-list: ("clinical/translational research", "team science", "healthcare workforce"),
   modes-code: "KN",
-  impact: "Colorado CTSA team-science training (N=221, pre/post) reported statistically significant improvement (p<0.05) across all three TEAMS instrument competencies — Team Planning, Managing a Team, and Interpersonal Relations — with the largest gains in structured/tool-based domains and the smallest in Interpersonal Relations",
+  impact: "Colorado CTSA team-science training (221 registrants; pre/post survey N=117/46) reported statistically significant improvement (p<0.05) across all three TEAMS instrument competencies — Team Planning, Managing a Team, and Interpersonal Relations — with the largest gains in structured/tool-based domains and the smallest in Interpersonal Relations",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -4929,8 +4936,9 @@
     The Colorado Clinical and Translational Sciences Institute
     built a structured team-science training program — explicit
     competency targets, structured exercises, mentor pairings —
-    and evaluated it in a 2020–2022 cohort with N=221
-    participants using a pre/post design. The evaluation
+    and evaluated it across three 2020–2022 cohorts (221
+    registered participants; 117 pre-program and 46 post-program
+    survey respondents) using a pre/post design. The evaluation
     introduces and validates a measurement instrument (TEAMS) that
     resolves team-science capability into three components: Team
     Planning, Managing a Team, and Interpersonal Relations.
@@ -4967,8 +4975,9 @@
       The Colorado Clinical and Translational Sciences Institute
       built a structured team-science training program with
       explicit competency targets, structured exercises, and
-      mentor pairings. The evaluation cohort ran 2020–2022 with
-      N=221 participants in a pre/post design. The evaluation
+      mentor pairings. The program ran across three 2020–2022 cohorts with 221
+      registered participants; the pre/post design drew 117
+      pre-program and 46 post-program survey respondents. The evaluation
       paper's central methodological contribution is the
       validation of a measurement instrument — TEAMS — that
       resolves team-science capability into three competency
@@ -5016,7 +5025,7 @@
     ],
   ),
   beats: (
-    "Colorado CTSA structured team-science program; N=221 pre/post evaluation 2020–2022",
+    "Colorado CTSA structured team-science program; 221 registrants, pre/post survey N=117/46, 2020–2022",
     "TEAMS instrument validated; three components — Team Planning, Managing a Team, Interpersonal Relations",
     "Statistically significant improvement (p<0.05) across all three; largest gains in structured/tool-based, smallest in interpersonal",
     "Honest limit: self-reported perceived competency, no longitudinal tracking, no comparison to non-trained control",
@@ -5085,7 +5094,7 @@
   year: "2020s",
   domains-list: ("implementation science", "translational workforce", "education"),
   modes-code: "KN",
-  impact: "Survey of CTSA-funded TL1 training programs (N=50): most name collaboration, team science, and multi/inter/cross-disciplinary training as goals, but far fewer (14–24%) embed competency-based training and assessment, program evaluation, or experiential learning",
+  impact: "Survey of CTSA-funded TL1 training programs (N=50): most name collaboration, team science, and multi/inter/cross-disciplinary training as goals, but far fewer name the specific competency practices as distinguishing features — experiential learning in 24% of programs, a competency-based curriculum in just 6%",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -5102,10 +5111,10 @@
     structural pattern as the IPE case (122) at smaller scale:
     most programs name the right goals — collaboration, team
     science, multi/inter/cross-disciplinary training — but far
-    fewer (14–24% across the operational practices the survey
-    examined) actually embed the competency-based training and
-    assessment, program evaluation, or experiential learning
-    that the stated goals imply. The picture is of a field that
+    fewer name the specific competency practices — a competency-
+    based curriculum in just 6% of programs, experiential learning
+    in 24%, program evaluation in 38% — that those stated goals
+    imply. The picture is of a field that
     has converged on what interdisciplinary translation training
     should aim for, but where the operational practices lag the
     stated goals — the same enthusiasm-ahead-of-evidence pattern
@@ -5138,10 +5147,10 @@
       programs converge: most name collaboration, team science,
       and multi/inter/cross-disciplinary training as central
       objectives. The operational-practices side is where the
-      pattern surfaces: far fewer programs (14–24% across the
-      operational dimensions the survey examined) actually embed
-      competency-based training and assessment, program
-      evaluation, or experiential learning at the level the
+      pattern surfaces: far fewer programs name the specific
+      competency practices as distinguishing features — a
+      competency-based curriculum in just 6%, experiential learning
+      in 24%, program evaluation in 38% — at the level the
       stated goals would imply.#cn()
     ],
     [
@@ -5159,9 +5168,9 @@
     ],
     [
       What the case teaches is the operational-practice gap as a
-      designable target, not as a curricular failure. The 14–24%
-      figure is not an indictment of the programs that fall on the
-      wrong side of it; it is a finding about the operational-
+      designable target, not as a curricular failure. The low uptake of the specific
+      competency practices is not an indictment of the programs
+      that fall on the wrong side of it; it is a finding about the operational-
       infrastructure investment that competency-based training and
       assessment require, and that field-scale stated-goal
       convergence does not by itself produce. The pair with
@@ -5191,14 +5200,14 @@
   beats: (
     "Implementation science = moving validated evidence into operational practice; CTSA TL1/T32 is the US training mechanism",
     "Survey N=50 CTSA-funded TL1 programs: most name collaboration / team science / multi-disc training as goals",
-    "Far fewer (14–24%) embed competency-based training and assessment, program evaluation, or experiential learning",
+    "Far fewer name the specific competency practices — competency-based curriculum 6%, experiential learning 24%, program evaluation 38%",
     "Same enthusiasm-ahead-of-evidence pattern as IPE (Case 28) at smaller scale — operational practices lag stated goals",
     "Workforce-training counterpart to Case 13 ('17-year gap'); pair with Cases 40, 28 in the multidisciplinary-translation trio",
   ),
   approaches: (
     during: (
       [Specify the competency-based assessment instrument before launching the training program; the gap the survey documents is partly the result of stated competencies that were never operationalized into measurement.],
-      [Build experiential learning into the operational structure of the program, not as an add-on; the survey's 14–24% figure includes experiential learning as one of the operational dimensions that lags.],
+      [Build experiential learning into the operational structure of the program, not as an add-on; the survey found experiential learning named by only 24% of programs — one of the operational dimensions that lags.],
       [Plan program evaluation as a deliverable of the training program itself, with the cadence, instrument, and reporting venue named at launch.],
     ),
     after: (
@@ -5219,9 +5228,9 @@
     The CTSA TL1 program survey is the workforce-training
     instance of the enthusiasm-evidence gap pattern: most
     programs name competency-based training, assessment, and
-    program evaluation as goals; the operational practices that
-    would deliver on those goals are present in 14–24% of
-    programs. The implementation-science workforce is the
+    program evaluation as goals; the specific competency practices that would deliver on those
+    goals are named by far fewer — a competency-based curriculum
+    in just 6% of programs, experiential learning in 24%. The implementation-science workforce is the
     recovery mechanism for the 17-year research-to-practice gap;
     the case names the gap inside the recovery mechanism
     itself.
@@ -5246,7 +5255,7 @@
   ),
   reflection-list: (
     [Identify a training program in your domain whose stated goals include competency-based assessment, program evaluation, or experiential learning. What proportion of those stated goals are operationalized into specific instruments, cadences, and reporting structures — and which are at the goal-statement layer only?],
-    [Specify the competency-based assessment instrument you would build into the next iteration of an implementation-science training program. The survey's 14–24% figure says the instrument is what is missing more than the intent; what is the instrument?],
+    [Specify the competency-based assessment instrument you would build into the next iteration of an implementation-science training program. The survey found a competency-based curriculum named by just 6% of programs — the instrument is what is missing more than the intent; what is the instrument?],
     [The implementation-science workforce is the recovery mechanism for the 17-year research-to-practice gap (Case 13). What is the analog in your domain — the workforce whose operational capacity is the recovery for a documented systemic gap — and what is the case for investing in that workforce's training architecture?],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 8"),
@@ -5347,7 +5356,7 @@
       pharmacist-as-checker pattern was not a property of any
       individual; it was a property of the role architecture, and
       the redesign treated the architecture as the design
-      variable. The Domain-4 frame applies: the work was to redraw
+      variable. The Domain-5 frame applies: the work was to redraw
       the authority gradient and team-coordination boundary so
       that the system's capability — fast, safe dispensing plus
       pharmacist clinical judgment — emerged from the team rather
@@ -5424,7 +5433,7 @@
   year: "2013 – 2018",
   domains-list: ("global health", "mHealth", "maternal and newborn care"),
   modes-code: "HN",
-  impact: "A Rwanda mHealth monitoring system equipped community health workers with mobile decision support for maternal and newborn care; the published evaluation reported increased uptake of maternal and newborn health services tied to the intervention, with the technology extending the CHW's diagnostic-and-referral role rather than replacing it",
+  impact: "A Rwanda mHealth monitoring system equipped community health workers with mobile decision support for maternal and newborn care; the published evaluations were mixed — uptake of maternal and newborn services rose only where the system was paired with added training, supervision, and equipment, while a controlled national-survey time-series found no significant change from the system alone — with the technology designed to extend the CHW's diagnostic-and-referral role rather than replacing it",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -5438,9 +5447,11 @@
     placed mobile-phone-mediated decision support into the hands of
     community health workers (CHWs) responsible for maternal and
     newborn care, including surgical-site infection screening after
-    Cesarean. A 2019 peer-reviewed evaluation reported increased
-    uptake of maternal and newborn health services tied to the
-    intervention. The case sits at the small (program/study) tier
+    Cesarean. Peer-reviewed evaluations were mixed: uptake rose only where
+    the system was paired with added support (Ruton et al., 2018),
+    while a controlled national-survey time-series found no
+    significant change attributable to the system alone (Hategeka
+    et al., 2019). The case sits at the small (program/study) tier
     and teaches a precise pattern: capability delivered at the
     periphery of the formal health system, with the technology
     designed to extend the CHW's diagnostic-and-referral role
@@ -5477,9 +5488,13 @@
       was the cue and the record.#cn()
     ],
     [
-      Musabyimana et al. (2019) report increased uptake of maternal
-      and newborn health services tied to the mHealth intervention
-      across the study period. The published evaluation is the
+      Ruton et al. (2018) report increased uptake of maternal
+      and newborn health services only where the mHealth system was
+      paired with additional training, supervision, and equipment;
+      RapidSMS alone was ineffective. A controlled time-series on
+      national survey data (Hategeka et al., 2019) found no
+      significant change attributable to the system, largely for
+      ceiling-effect reasons. The published evaluation is the
       anchor finding; downstream reporting (MIT News 2022 and
       subsequent AI-augmented maternal-care work) describes the
       program's continuation and adjacent developments but is
@@ -5517,7 +5532,7 @@
   beats: (
     "Rwanda Ministry of Health mHealth program (2013–2018) puts mobile decision support in CHW hands for maternal/newborn care",
     "Tool scoped to extend the CHW's diagnostic-and-referral role, not relocate judgment to the center",
-    "Musabyimana et al. (2019) report increased uptake of maternal and newborn health services tied to intervention",
+    "Ruton et al. (2018) find uptake rose only where RapidSMS was paired with added support; Hategeka et al. (2019) find no significant change on national survey data",
     "Preprint-tier evidence flag: one peer-reviewed evaluation; durability and generalization remain open",
     "Pairs with PEPFAR (Sub-Saharan training-modality comparison) as the African workforce-capability evidence base",
   ),
@@ -5540,12 +5555,14 @@
     [Cross-reference: Case 201 (PEPFAR HIV training-modality comparison) for the paired Sub-Saharan workforce-capability evidence.],
   ),
   quote: [The mHealth tool did not centralize the work. It instrumented the periphery — and kept judgment where it already was.],
-  quote-source: "Editors' synthesis of Musabyimana et al. (2019) and the Rwanda CHW program documentation.",
+  quote-source: "Editors' synthesis of Hategeka et al. (2019), Ruton et al. (2018), and the Rwanda CHW program documentation.",
   le-insight: [
     Rwanda mHealth is a small-tier capability-extension case at
     the frontline: technology designed around an existing CHW
-    role, with one peer-reviewed evaluation reporting increased
-    uptake of maternal and newborn services. The preprint-tier
+    role, with peer-reviewed evaluation showing uptake gains only when
+    the system was paired with added support, and a controlled
+    national-survey series showing no significant change from the
+    system alone. The preprint-tier
     flag is load-bearing — one study does not close the
     durability or generalization question, and the broader
     impact claims rest partly on practitioner reporting. Future
@@ -5564,7 +5581,7 @@
     the v2 corpus needs.
   ],
   literature-items: (
-    [Musabyimana et al. (2019), _Global Health Research and Policy_],
+    [Hategeka et al. (2019), _Global Health Research and Policy_; Ruton et al. (2018), _Health Policy and Planning_],
     [Rwanda MoH community-health program documentation],
     [MIT News (2022) on subsequent AI-augmented maternal-care work],
   ),
@@ -5584,7 +5601,7 @@
   year: "2014 – present",
   domains-list: ("medical-device regulation", "AI/SaMD", "Japan"),
   modes-code: "GN",
-  impact: "Japan's 2019 PMD Act amendment introduced the Post-Approval Change Management Protocol (PACMP): a pre-agreed modification scope at initial approval, streamlined review for in-scope changes. The 2025 scoping review of PMDA-approved AI radiology software documents transparency variability — hedge preserved",
+  impact: "Japan's 2019 PMD Act amendment (enforced September 2020) introduced IDATEN (Improvement Design within Approval for Timely Evaluation and Notice): a pre-agreed device-improvement plan approved at initial approval, streamlined review for in-scope changes. The 2025 scoping review of PMDA-approved AI radiology software documents transparency variability — hedge preserved",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -5597,10 +5614,11 @@
     operates one of the regulatory regimes most explicitly
     designed for the AI/Software-as-a-Medical-Device (SaMD)
     update problem. A 2019 amendment to the Pharmaceutical and
-    Medical Device Act introduced conditional early approval and
-    the Post-Approval Change Management Protocol (PACMP): a
-    company can submit proposed product-modification plans at
-    initial submission; once the protocol is approved,
+    Medical Device Act (enforced September 2020) introduced
+    conditional early approval and IDATEN (Improvement Design
+    within Approval for Timely Evaluation and Notice): a
+    company can submit a proposed device-improvement plan at
+    initial submission; once the plan is approved,
     subsequent changes within its scope receive streamlined
     review rather than full re-approval. The DASH for SaMD
     initiative supports faster reviews and earlier application.
@@ -5630,21 +5648,22 @@
     [
       The 2014 Pharmaceutical and Medical Device Act laid the
       groundwork; the 2019 amendment introduced conditional early
-      approval and the Post-Approval Change Management Protocol
-      (PACMP). Under PACMP a manufacturer submits, alongside the
+      approval and the IDATEN system (Improvement Design within
+      Approval for Timely Evaluation and Notice). Under IDATEN a
+      manufacturer submits, alongside the
       initial approval package, a structured description of the
       modifications the manufacturer expects to make over the
       device's life — with the test and validation plan that
-      will accompany each modification. Once the PACMP is
-      approved, subsequent changes within its scope receive
+      will accompany each modification. Once the improvement plan
+      is approved, subsequent changes within its scope receive
       streamlined regulatory review rather than full
       re-approval.#cn()
     ],
     [
-      The DASH for SaMD initiative complements PACMP by supporting
+      The DASH for SaMD initiative complements IDATEN by supporting
       faster reviews and earlier application of SaMD products,
       anchoring the change-control architecture in a workflow that
-      can keep pace with iteration. Together PACMP and DASH are
+      can keep pace with iteration. Together IDATEN and DASH are
       the regulator-side design for delegation-with-revocation:
       the deployer is delegated the modification authority within
       a pre-agreed scope, and the regulator retains the authority
@@ -5657,7 +5676,7 @@
       radiology software documents transparency variability
       across approvals — what is published about each device's
       training data, intended use, and post-approval modification
-      history is not uniform. The hedge is load-bearing: PACMP is
+      history is not uniform. The hedge is load-bearing: IDATEN is
       a structural improvement in regulatory architecture, but
       the per-approval transparency the framework enables varies
       and has been documented as a research finding rather than
@@ -5680,8 +5699,8 @@
     ],
   ),
   beats: (
-    "2014 PMD Act lays the groundwork; 2019 amendment introduces conditional early approval and PACMP",
-    "PACMP: manufacturer submits pre-agreed modification scope at initial approval; in-scope changes get streamlined review",
+    "2014 PMD Act lays the groundwork; 2019 amendment introduces conditional early approval and IDATEN",
+    "IDATEN: manufacturer submits pre-agreed modification scope at initial approval; in-scope changes get streamlined review",
     "DASH for SaMD initiative supports faster reviews and earlier application — pace-matched architecture for iteration",
     "2025 scoping review documents transparency variability across PMDA-approved AI radiology software — hedge preserved",
     "Pairs with Epic-Sepsis governance gap and FDA's evolving SaMD policy as the non-US regulator-designed change-control case",
@@ -5694,8 +5713,8 @@
     ),
     after: (
       [Audit transparency across approvals — what is published per device about training data, intended use, modification history — as a separate program-evaluation question; the 2025 scoping review documents this variability as a research finding.],
-      [Use PACMP as the structural contrast with Epic-Sepsis-class deployments: the regulator-designed change-control deliverable is the inverse of the static-approval-plus-watch pattern.],
-      [When importing the PACMP pattern into another jurisdiction, name what the Japanese regulatory institution supplies (centralized agency capacity, established conditional-approval precedent) before asserting transfer.],
+      [Use IDATEN as the structural contrast with Epic-Sepsis-class deployments: the regulator-designed change-control deliverable is the inverse of the static-approval-plus-watch pattern.],
+      [When importing the IDATEN pattern into another jurisdiction, name what the Japanese regulatory institution supplies (centralized agency capacity, established conditional-approval precedent) before asserting transfer.],
     ),
   ),
   references: (
@@ -5707,7 +5726,7 @@
   quote: [The PMDA designed change-control as a deliverable rather than defaulting to approve once, then watch.],
   quote-source: "Editors' synthesis of the PMD Act amendment and the PMDA SaMD scoping reviews.",
   le-insight: [
-    PMDA's PACMP and DASH for SaMD are the non-US regulatory
+    PMDA's IDATEN and DASH for SaMD are the non-US regulatory
     architecture for AI/SaMD change control: the modification
     scope is pre-agreed at initial approval, in-scope changes
     get streamlined review, and the delegation-with-revocation
@@ -5727,13 +5746,13 @@
     case.
   ],
   literature-items: (
-    [Aoki et al. (2025), medRxiv — PMDA AI radiology software scoping review],
+    [Kikuchi et al. (2025), medRxiv — PMDA AI radiology software scoping review],
     [Aoki et al. (2021/PMC9931274) — PMDA AI/ML medical devices systematic review],
     [PMDA, PMD Act amendment (2019) and DASH for SaMD documentation],
   ),
   reflection-list: (
-    [Identify an AI/SaMD-adjacent product in your context whose post-deployment modification is anticipated. What would a PACMP-style submission look like — the pre-agreed modification scope, the per-modification test plan, the revocation conditions — and which party currently holds each element?],
-    [The case rests on program-report sources for the framework and preprint analyses for the per-approval transparency findings. What is the minimum additional evidence you would require — outcome durability across approved devices, independent transparency audits — before treating PACMP as a settled best-practice template?],
+    [Identify an AI/SaMD-adjacent product in your context whose post-deployment modification is anticipated. What would a IDATEN-style submission look like — the pre-agreed modification scope, the per-modification test plan, the revocation conditions — and which party currently holds each element?],
+    [The case rests on program-report sources for the framework and preprint analyses for the per-approval transparency findings. What is the minimum additional evidence you would require — outcome durability across approved devices, independent transparency audits — before treating IDATEN as a settled best-practice template?],
     [Specify the delegation-with-revocation boundary you would write for a deploying organization adopting a SaMD product: which modifications can ship under the pre-agreed scope, which trigger re-review, and what evidence the deployer must publish at each modification event.],
   ),
   courses: ("LEN 5", "LEN 7", "LEN 8"),

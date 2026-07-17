@@ -126,7 +126,7 @@
     happens when a discipline has not engineered its own capacity to
     update on contrary evidence. The measurement instrument worked.
     The institutional architecture for acting on what it found did
-    not. Compare to Case 1 (Makary methodology debate) and Case 7
+    not. Compare to Case 8 (Makary methodology debate) and Case 7
     (VA Wait-Time): in each, a measurement that returned an
     unwelcome answer was contested rather than absorbed.
   ],
@@ -220,9 +220,9 @@
       documented these calibration gaps and traced them to training data
       that encodes historical patterns of discrimination — so the model
       learns the past's inequities and projects them forward as predictions.#cn()
-      As Baker and Hawn put it, algorithmic bias in education "poses
+      Baker and Hawn's review documents how algorithmic bias in education poses
       significant threats to educational equity, potentially amplifying
-      existing social and economic disparities" — and the harm compounds when
+      existing social and economic disparities — and the harm compounds when
       an instructor with deficit assumptions reads an "at-risk" flag as
       confirmation rather than a cue to help, letting the prediction become a
       self-fulfilling label.#cn()
@@ -262,12 +262,12 @@
     [Surveys of predictive-analytics adoption in U.S. higher education — a large majority of public colleges now use some form.],
     [K. Bird et al., "Are Algorithms Biased in Education? Exploring Racial Bias in Predicting Community College Student Success," _Journal of Policy Analysis and Management_ 44 (2025), 379–402 — racial calibration bias, ~5× higher at the bottom decile depending on the "at-risk" construct.],
     [D. Gándara, H. Anahideh, M. Ison & L. Picchiarini, "Inside the Black Box: Detecting and Mitigating Algorithmic Bias across Racialized Groups in College Student-Success Prediction," _AERA Open_ (2024) — bias traced to training data encoding historical discrimination.],
-    [R. Baker & A. Hawn, "Algorithmic Bias in Education," _International Journal of Artificial Intelligence in Education_ (2021) — "poses significant threats to educational equity…" (quoted).],
+    [R. Baker & A. Hawn, "Algorithmic Bias in Education," _International Journal of Artificial Intelligence in Education_ (2021) — foundational review of algorithmic bias in education.],
     [Analyses of deficit framing and the interpretation of "at-risk" flags by faculty.],
     [Cf. UK A-Level / Ofqual (Case 49); V. Eubanks, _Automating Inequality_ (2018).],
   ),
   quote: [Algorithmic bias in educational systems poses significant threats to educational equity, potentially amplifying existing social and economic disparities.],
-  quote-source: "Baker & Hawn, 2021",
+  quote-source: "Editors' paraphrase of Baker & Hawn (2021)",
   le-insight: [
     Educational predictive analytics is the ongoing live case for
     algorithmic bias at the construct level. The bias is not in the
@@ -346,8 +346,8 @@
     remediation, so it is a failure / diagnosis case. The harm
     comes directly from validation that did not stratify across
     skin tone, surfacing a group-specific failure in a deployed
-    system. Trio with Cases 25 (eGFR), 106 (pulse oximetry), and
-    107 (Hoffman pain bias) at the race-construct-and-validation
+    system. Trio with Cases 25 (eGFR), 26 (pulse oximetry), and
+    6 (Hoffman pain bias) at the race-construct-and-validation
     layer.
   ],
   sections: (
@@ -412,7 +412,7 @@
     ],
     [
       Drafted alongside the race-construct trio (Cases 25
-      eGFR, 106 pulse oximetry, 107 Hoffman pain bias), the
+      eGFR, 26 pulse oximetry, 6 Hoffman pain bias), the
       proctoring case extends the validation-must-be-
       demographically-stratified lesson into the ed-tech and
       assessment context. The structural form is the same as
@@ -432,7 +432,7 @@
     "Yoder-Himes et al. _Frontiers in Education_ 2022 — first published quantitative study of facial-detection bias in this class of software",
     "Students with darker skin tones and Black students significantly more likely to be flagged for instructor review for potential cheating",
     "Intersectional finding: women with the darkest skin tones far more likely to be flagged than other groups",
-    "Failure / diagnosis case: documents the disparity, not a remediation; trio with Cases 25 (eGFR), 106 (pulse oximetry), 107 (Hoffman pain bias)",
+    "Failure / diagnosis case: documents the disparity, not a remediation; trio with Cases 25 (eGFR), 26 (pulse oximetry), 6 (Hoffman pain bias)",
   ),
   approaches: (
     during: (
@@ -471,8 +471,8 @@
     discipline, and in Domain 5 (Navigating Sociotechnical
     Constraints) for the institutional resolution mechanism
     that has to handle the case where the flag was generated
-    by software bias. Trio with Cases 25 (eGFR), 106 (pulse
-    oximetry), and 107 (Hoffman pain bias) at the
+    by software bias. Trio with Cases 25 (eGFR), 26 (pulse
+    oximetry), and 6 (Hoffman pain bias) at the
     race-construct-and-validation layer.
   ],
   literature-items: (
@@ -529,8 +529,8 @@
     an institution with the study's authors, and the case is
     anchored to the peer-reviewed _Journal of Criminal Justice_
     evidence rather than to institutional press. The case
-    extends the race-construct trio (Cases 25 eGFR, 106 pulse
-    oximetry, 107 Hoffman) into the K-12 education domain at the
+    extends the race-construct trio (Cases 25 eGFR, 26 pulse
+    oximetry, 6 Hoffman) into the K-12 education domain at the
     infrastructure layer.
   ],
   sections: (
@@ -580,7 +580,7 @@
       attributing the outcome gap to the students rather than to
       the infrastructure mis-locates the mechanism in a way the
       data does not support. The case extends the race-construct
-      trio (Cases 25 eGFR, 106 pulse oximetry, 107 Hoffman)
+      trio (Cases 25 eGFR, 26 pulse oximetry, 6 Hoffman)
       into K-12 education at the infrastructure layer: in eGFR
       and pulse oximetry the mechanism was in the device or the
       formula; in Hoffman the mechanism was in the practitioner's
@@ -602,8 +602,7 @@
     ],
     [
       The case is one of the motivating cases in the v2 sweep for
-      the CLO *Gap attribution* proposed in
-      — the discipline of asking, when a
+      the CLO *Gap attribution* — the discipline of asking, when a
       disparity in outcomes is observed, what share of the
       disparity is attributable to the institutional or
       technical infrastructure rather than to the population the
@@ -623,7 +622,7 @@
     "US school-surveillance infrastructure (cameras, metal detectors, SROs, ID checks) distributed unevenly — schools with predominantly Black students carry more",
     "Johnson et al. 2022 (Journal of Criminal Justice): separates student-level from school-level variables; measured share of outcome gap attributable to the infrastructure, not the students",
     "Mechanism is the infrastructure, not the students — attributing the gap to the population mis-locates the mechanism in a measurable sense",
-    "Extends race-construct trio (Cases 25 eGFR, 106 pulse oximetry, 107 Hoffman) into K-12 education at the institutional-infrastructure layer",
+    "Extends race-construct trio (Cases 25 eGFR, 26 pulse oximetry, 6 Hoffman) into K-12 education at the institutional-infrastructure layer",
     "One of the motivating cases for the CLO Gap attribution — discipline of asking which share is the infrastructure vs. the population",
   ),
   approaches: (
@@ -848,7 +847,7 @@
   lens-approach: [
     Ofqual A-level 2020 is the change-control-and-disclosure-as-
     governance-artifacts case at national scale (induced 5.4;
-    LENS D4+D3/PT5; CLO-4 and CLO-5). LENS uses it in Domain 4
+    LENS D4+D5/PT5; CLO-4 and CLO-5). LENS uses it in Domain 4
     (Test and Evaluation) for the consultation-with-affected-
     stakeholders process as the test surface and in Domain 5
     (Navigating Sociotechnical Constraints) for the cohort-size
@@ -880,7 +879,7 @@
   year: "2012 – 2024",
   domains-list: ("education at scale", "predictive analytics", "algorithmic equity"),
   modes-code: "DKN",
-  impact: "Wisconsin Department of Public Instruction's Dropout Early Warning System (DEWS) deployed since 2012, producing risk scores for approximately 200,000 sixth- through ninth-grade students per year; Perdomo, Britton, Hardt, & Abebe FAccT 2025 regression-discontinuity analysis across ~10 years of data found the analysis cannot rule out zero treatment effect on graduation; DPI's own 2021 internal equity audit and The Markup's 2023 investigation found the system was less accurate for Black, Hispanic, and English-learner students",
+  impact: "Wisconsin Department of Public Instruction's Dropout Early Warning System (DEWS) deployed since 2012, producing risk scores for approximately 200,000 sixth- through ninth-grade students per year; Perdomo, Britton, Hardt, & Abebe FAccT 2025 regression-discontinuity analysis across ~10 years of data found the analysis cannot rule out zero treatment effect on graduation; DPI's own 2021 internal equity audit and The Markup's 2023 investigation found the system was less accurate for Black and Hispanic students",
   kind: "failure",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -902,7 +901,7 @@
     interventions that affected the predicted outcome. The
     Wisconsin DPI's own 2021 internal equity audit, titled "Is
     DEWS Fair?", found that the system was less accurate for
-    Black, Hispanic, and English-learner students, and the
+    Black and Hispanic students, and the
     agency continued to operate it unchanged. The Markup's
     2023 investigation by Todd Feathers documented the
     disparate-impact finding and the agency's response. Both
@@ -961,9 +960,8 @@
       The Wisconsin DPI's own 2021 internal equity audit,
       titled "Is DEWS Fair?", is the load-bearing disparate-
       impact evidence on the deployment. The audit found that
-      DEWS was less accurate for Black, Hispanic, and English-
-      learner students than for white and non-English-learner
-      students — that the false-positive and false-negative
+      DEWS was less accurate for Black and Hispanic students
+      than for white students — that the false-positive and false-negative
       rates diverged across student-population subgroups in
       ways the audit characterized as inconsistent with fairness.
       The agency's own response to its own audit was to
@@ -1005,8 +1003,8 @@
       across approximately ten years of data — the prediction-
       triggers-intervention-that-changes-outcome theory is not
       supported in the deployment record. The DPI's own equity
-      audit found that DEWS is less accurate for Black,
-      Hispanic, and English-learner students, and the agency
+      audit found that DEWS is less accurate for Black
+      and Hispanic students, and the agency
       continued operating the system unchanged after the audit's
       release. Both findings are binding and travel together.
       The CLO on designing predictions to trigger support
@@ -1024,7 +1022,7 @@
   beats: (
     "Wisconsin DPI Dropout Early Warning System deployed since 2012; ~200,000 students per year in grades 6 – 9 receive risk scores",
     "Perdomo, Britton, Hardt, Abebe FAccT 2025 RDD on ~10 years of data: cannot rule out zero treatment effect of being above DEWS threshold on graduation",
-    "Wisconsin DPI 2021 internal equity audit \"Is DEWS Fair?\": less accurate for Black, Hispanic, English-learner students; agency continued unchanged",
+    "Wisconsin DPI 2021 internal equity audit \"Is DEWS Fair?\": less accurate for Black and Hispanic students; agency continued unchanged",
     "The Markup 2023 investigation (Feathers) documented disparate-impact finding and agency response",
     "Both streams load-bearing; pair with Case 48 (Johnson), Case 86 (Gándara), Case 52 (Purdue Course Signals reverse causality)",
   ),
@@ -1046,7 +1044,7 @@
     [Feathers, T. (2023), "False Alarm: How Wisconsin Uses Race and Income to Label Students 'High Risk,'" _The Markup_, April 27, 2023 — investigation documenting the disparate-impact finding and the agency response.],
     [Knowles, J. E. (2015), "Of Needles and Haystacks: Building an Accurate Statewide Dropout Early Warning System in Wisconsin," _Journal of Educational Data Mining_ 7(3):18–67 — the original DEWS technical-methodology paper.],
   ),
-  quote: [The RDD analysis cannot rule out zero treatment effect on graduation across approximately ten years of data; the agency's own equity audit found DEWS is less accurate for Black, Hispanic, and English-learner students; the agency continued operating the system unchanged.],
+  quote: [The RDD analysis cannot rule out zero treatment effect on graduation across approximately ten years of data; the agency's own equity audit found DEWS is less accurate for Black and Hispanic students; the agency continued operating the system unchanged.],
   quote-source: "Editors' synthesis of Perdomo et al. (2025, FAccT), the Wisconsin DPI internal equity audit (2021), and The Markup investigation (Feathers, 2023).",
   le-insight: [
     Wisconsin DEWS is the load-bearing case for a prediction
@@ -1062,7 +1060,7 @@
   lens-approach: [
     Wisconsin DEWS is the designing-predictions-to-trigger-
     support-not-gatekeeping case at population scale (induced
-    8.3; LENS D4+D3/PT6; CLO-4 and CLO-5). LENS uses it in
+    8.3; LENS D4+D5/PT6; CLO-4 and CLO-5). LENS uses it in
     Domain 4 (Test and Evaluation) for the causal-inference-
     on-multi-year-deployment discipline and in Domain 5
     (Navigating Sociotechnical Constraints) for the equity-
@@ -1187,7 +1185,7 @@
   references: (
     [Special Investigators, _Final Report on Atlanta Public Schools_ (2011) — the organized cheating and the quoted finding.],
     [_Atlanta Journal-Constitution_ investigative series (2009–2011) — the erasure-rate analysis.],
-    [_State of Georgia v. Hall et al._ (2014–2015) — indictments and RICO convictions.],
+    [_State of Georgia v. Hall et al._ (2013–2015) — indictments and RICO convictions.],
     [Koretz, D. (2017), _The Testing Charade_ — high-stakes-testing distortion.],
     [Campbell, D. (1976), "Assessing the Impact of Planned Social Change" — Campbell's Law.],
   ),
@@ -1277,7 +1275,7 @@
     its era — which is itself the cautionary point about the field's
     evidence architecture. The case is the small-tier methodological
     companion to v1 Cases 46 (educational predictive-analytics bias)
-    and 39 (Georgia State predictive analytics).
+    and 80 (Georgia State predictive analytics).
   ],
   sections: (
     [
@@ -1358,7 +1356,7 @@
     "Caulfield 2013 (_e-Literate_, _Inside Higher Ed_) — identifies dose–response curve as reverse-causality artifact: persistence enables more Signals classes, not the reverse",
     "Essa simulation — substituting 'received a piece of chocolate' for 'took a Signals class' reproduces the apparent retention gain",
     "Original study never peer-reviewed outside conference proceedings yet became one of the most-referenced learning-analytics studies",
-    "Deeper-evidence-of v1 Cases 46 (predictive-analytics bias) and 39 (Georgia State); a named methodological failure distinct from the bias finding",
+    "Deeper-evidence-of v1 Cases 46 (predictive-analytics bias) and 80 (Georgia State); a named methodological failure distinct from the bias finding",
   ),
   approaches: (
     during: (
@@ -1398,7 +1396,7 @@
     (Navigating Sociotechnical Constraints) for the
     citation-practice failure mode in which a headline outcome
     outpaces the evidence it rests on. Deeper-evidence-of v1
-    Cases 46 (predictive-analytics bias) and 39 (Georgia State
+    Cases 46 (predictive-analytics bias) and 80 (Georgia State
     predictive analytics) — distinct because this is a named
     methodological-validity failure, not a bias finding.
   ],
@@ -1572,16 +1570,15 @@
   year: "2014–2019",
   domains-list: ("education",),
   modes-code: "GTK",
-  impact: "Personalized-learning platform deployed across ~380 U.S. schools; parent revolts in Brooklyn, Cheshire, McPherson, Kennebunk; multiple districts withdrew within two years",
-  diagram: dgm.dgm-inbloom,
+  impact: "Personalized-learning platform deployed across ~380 U.S. schools; parent revolts in Brooklyn, Cheshire, McPherson; multiple districts withdrew within two years",
   kind: "failure",
   summary: [
     Summit Learning, a personalized-learning platform from Summit Public
     Schools backed by the Chan Zuckerberg Initiative, was offered free to
-    U.S. districts from 2015 and reached roughly 380 schools and ~80,000
+    U.S. districts from 2015 and reached roughly 380 schools and ~72,000
     students by 2018. By 2019 prominent adopters were withdrawing under
     parent and student pressure — opt-out campaigns in Brooklyn,
-    cancellations in Cheshire, Kennebunk, and McPherson — amid walkouts and
+    cancellations in Cheshire and McPherson — amid walkouts and
     complaints about screen time, disengagement, and data privacy. The
     pedagogy itself (competency-based progression, projects, mentoring) was
     defensible and often effective; what failed was deployment governance.
@@ -1605,10 +1602,9 @@
     // -- What Happened --
     [
       By 2018 the platform reached roughly 380 schools and an estimated
-      80,000 students, scaling fast on the strength of a free offer and a
+      72,000 students, scaling fast on the strength of a free offer and a
       well-funded sponsor. By 2019 its most visible adopters were withdrawing
-      under parent and student pressure: Brooklyn's MS 442 ran an organized
-      opt-out; districts in Cheshire, Kennebunk, and McPherson cancelled or
+      under parent and student pressure: students at Brooklyn's Secondary School for Journalism walked out; districts in Cheshire and McPherson cancelled or
       scaled back after parent meetings where the unanswered governance
       questions surfaced all at once. Walkouts and complaints about screen
       time, eye strain, disengagement, and data privacy converged into a
@@ -1654,7 +1650,7 @@
   ),
   beats: (
     "CZI-backed personalized-learning platform offered free from 2015 on defensible competency-based pedagogy",
-    "Reached 380 schools, 80,000 students; by 2019 parent revolts and withdrawals over screen time and privacy",
+    "Reached 380 schools, 72,000 students; by 2019 parent revolts and withdrawals over screen time and privacy",
     "Analysts located failure in deployment governance; no evaluation framework, data agreement, or exit path",
     "Working pedagogy with no accountability contract collapsed; same pattern as inBloom recurring at scale",
     "Districts withdrew, CZI revised outreach; episode became standard caution in ed-tech adoption",
@@ -1696,7 +1692,7 @@
   reflection-list: (
     [What is the equivalent of the "free tool, free of governance" pattern in your domain — the offer that bypasses the accountability architecture because it does not yet exist?],
     [Design the parent-reading-level governance artifact that a district should require before adopting an educational-technology platform.],
-    [Summit's withdrawals in Brooklyn, Cheshire, Kennebunk, and McPherson were led by parents, not regulators. What is the equivalent local constituency in your domain that institutional accountability has not yet accommodated, and how would they be heard before deployment rather than after?],
+    [Summit's withdrawals in Brooklyn, Cheshire, and McPherson were led by parents, not regulators. What is the equivalent local constituency in your domain that institutional accountability has not yet accommodated, and how would they be heard before deployment rather than after?],
   ),
   approaches: (
     during: (
@@ -1778,7 +1774,7 @@
       The vendor landscape Engler names is large and concentrated.
       Ruffalo Noel Levitz works with roughly 300 institutions; EAB
       with 150; Rapid Insight with 150; Capture Higher Ed with
-      100; Othot with more than 30; Whiteboard Higher Education
+      100; Othot with around 30; Whiteboard Higher Education
       and Civitas Learning round out the named tier. Vendor
       marketing reports characteristic effect sizes: the University
       of Washington's 23 percent yield gain; EAB's 33 percent
@@ -1841,7 +1837,7 @@
     "Two-stage architecture: predict enrollment probability per accepted applicant, then optimize aid offer for net tuition or yield",
     "Seven major vendors named: Ruffalo Noel Levitz, EAB, Rapid Insight, Capture Higher Ed, Othot, Whiteboard, Civitas Learning",
     "Vendor-reported case studies: 23% yield gain (Washington), 33% net tuition gain with 6-point discount cut (EAB), 173 added freshmen (Othot)",
-    "Inversion of Case 80 (Georgia State support-trigger) and pair with Cases 186 (Bartlett lending) and 138 (Gándara community college)",
+    "Inversion of Case 80 (Georgia State support-trigger) and pair with Cases 186 (Bartlett lending) and 86 (Gándara community college)",
     "Engler hedges binding: vendor obscurity, algorithmic vs. manual leveraging, no audit of specific protected-class impact; future validation ongoing",
   ),
   approaches: (
@@ -1904,10 +1900,10 @@
   number: 56,
   slug: "crisis-point-merit-aid-leveraging-at",
   title: "Crisis Point — Merit-Aid Leveraging at Public Flagships",
-  year: "2001 – 2017 (Burd IPEDS analysis); 2024 (Lifting the Veil)",
+  year: "2001 – 2017 (Burd Peterson's/CDS analysis); 2024 (Lifting the Veil)",
   domains-list: ("higher education", "financial aid policy", "social mobility"),
   modes-code: "TKN",
-  impact: "Burd's IPEDS analysis: nearly $32 billion of public four-year institutional aid 2001–2017 went to students the federal government deemed able to pay without aid — about $2 of every $5 of institutional aid; financially needy students at high-merit-aid publics face larger unmet-need gaps",
+  impact: "Burd's Peterson's/CDS analysis: nearly $32 billion of public four-year institutional aid 2001–2017 went to students the federal government deemed able to pay without aid — about $2 of every $5 of institutional aid; financially needy students at high-merit-aid publics face larger unmet-need gaps",
   kind: "failure",
   scale: "big",
   evidence-source: "program-report",
@@ -1917,7 +1913,8 @@
   clo-anchor: "CLO-4, CLO-5",
   coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Burd's volume is independent of Katzman.",
   summary: [
-    Burd's 2020 New America report analyzes federal IPEDS data on
+    Burd's 2020 New America report analyzes licensed Peterson's and
+    Common Data Set aid data on
     public four-year universities' institutional-aid distribution
     from 2001 to 2017. The headline finding: nearly \$32 billion of
     institutional aid went to students the federal government
@@ -1934,7 +1931,8 @@
     shifted from "students served" to "net tuition revenue per
     matriculant," and the disclosure required to surface that
     shift never happened. The evidence-tier flag is binding —
-    Burd 2020 is policy-tier analysis of public IPEDS data; the
+    Burd 2020 is policy-tier analysis of licensed Peterson's/Common
+    Data Set aid data; the
     2024 volume is multi-author synthesis; future validation
     ongoing on the causal share attributable to enrollment-
     management vendors vs. broader market dynamics.
@@ -1942,7 +1940,7 @@
   sections: (
     [
       Public flagship universities once distributed institutional
-      aid largely on need. Burd's analysis of the federal IPEDS
+      aid largely on need. Burd's analysis of the Peterson's/Common Data Set
       record from 2001 to 2017 documents how comprehensively that
       practice eroded. Across the seventeen-year window, public
       four-year universities directed nearly \$32 billion of
@@ -1999,12 +1997,12 @@
     [
       The honest hedges the case carries are the ones the
       evidence-tier flag's standing language implies. Burd 2020
-      is policy-tier analysis of public IPEDS data, which is
+      is policy-tier analysis of licensed Peterson's/Common Data Set data, which is
       strong evidence on the aggregate-flow side but bounded on
       the causal-attribution side: how much of the merit-aid
       shift is attributable to enrollment-management vendors
       versus broader competitive and demographic dynamics is a
-      decomposition the IPEDS record cannot perform on its own.
+      decomposition the aggregate aid data cannot perform on its own.
       The 2024 volume is a multi-author synthesis, peer-reviewed
       at the press editorial tier rather than the journal tier.
       Future validation ongoing on whether the post-2020
@@ -2014,7 +2012,7 @@
     ],
   ),
   beats: (
-    "Burd IPEDS analysis 2001–2017: nearly $32B of public institutional aid to students federally deemed able to pay — $2 of every $5",
+    "Burd Peterson's/CDS analysis 2001–2017: nearly $32B of public institutional aid to students federally deemed able to pay — $2 of every $5",
     "Mechanism: state disinvestment + ranking-driven adoption of private-sector enrollment-management practices at public flagships",
     "Consequence: low-income students at high-merit-aid publics face larger unmet-need gaps; need-based dollars redirected to yield",
     "2024 Lifting the Veil (Harvard Ed Press, Burd ed.): multi-author synthesis — researchers, journalists, industry insiders",
@@ -2035,13 +2033,13 @@
   references: (
     [Burd, S. J. (2020), "Crisis Point: How Enrollment Management and the Merit-Aid Arms Race Are Derailing Public Higher Education," New America, ERIC ED604970.],
     [Burd, S. J. (ed., 2024), _Lifting the Veil on Enrollment Management: How a Powerful Industry Is Limiting Social Mobility in American Higher Education_, Harvard Education Press, ISBN 9781682538920.],
-    [U.S. Department of Education IPEDS — public four-year institutional aid distribution 2001–2017, the data backbone of Burd's analysis.],
+    [Peterson's "Undergraduate Financial Aid and Undergraduate Databases" (New America license, 2018) supplemented by institutions' Common Data Sets — public four-year institutional aid distribution 2001–2017, the data backbone of Burd's analysis.],
     [Hossler, D., & Bontrager, B. (2014), _Handbook of Strategic Enrollment Management_ — practitioner-side reference Burd's volume engages.],
   ),
   quote: [The construct quietly shifted from students served to net tuition revenue per matriculant. The shift was never debated as a policy change, and the disclosure architecture that would have surfaced it never existed.],
   quote-source: "Editors' synthesis of Burd (2020, 2024).",
   le-insight: [
-    Burd's IPEDS analysis is the construct-substitution case at
+    Burd's Peterson's/CDS analysis is the construct-substitution case at
     public-flagship scale. Nearly \$32 billion of institutional aid
     over seventeen years was redirected from need-based to merit-
     based distribution without a deliberative public-policy
@@ -2059,14 +2057,14 @@
     evidence-tier discipline binding policy-tier analysis to
     audit-tier verification. Pair with Case 55 (Engler /
     enrollment algorithms) as governance frame to technical
-    frame, and with Cases 186 (Bartlett) and 138 (Gándara) for
+    frame, and with Cases 186 (Bartlett) and 86 (Gándara) for
     the construct-choice anchor across deployed prediction
     systems. coi-light render under the title is binding.
   ],
   literature-items: (
     [Burd (2020), New America — Crisis Point],
     [Burd (ed., 2024), Harvard Education Press — Lifting the Veil],
-    [IPEDS — public institutional aid distribution data],
+    [Peterson's / Common Data Set — public institutional aid distribution data],
   ),
   reflection-list: (
     [Identify an institutional metric in your domain that has quietly substituted for the stated mission metric. What was the deliberative process that produced the substitution — and if there was none, what would the disclosure architecture have to look like to surface the change?],
@@ -2108,9 +2106,12 @@
     found that colleges and their auditors lacked clear
     instructions to detect violations, and the Department was
     not collecting the information it needed to oversee the
-    arrangements. The 2024 partial rescission of bundled-services
-    guidance and 2U's July 2024 Chapter 11 filing closed one
-    boundary of the policy debate; the underlying delegation-
+    arrangements. 2U's July 2024 Chapter 11 filing closed one
+    boundary of the policy debate at the commercial level; at the
+    federal level the Department opened a review of the guidance
+    but did not rescind it — the January 2025 Dear Colleague
+    Letter reaffirmed the 2011 bundled-services guidance. The
+    underlying delegation-
     and-oversight problem persists for successor OPMs and
     revenue-share structures.
   ],
@@ -2162,10 +2163,12 @@
       would have surfaced violations.#cn()
     ],
     [
-      The 2024 partial rescission of the bundled-services guidance
-      closed one boundary of the policy debate at the federal
-      level, and 2U's July 2024 Chapter 11 filing closed one
-      boundary at the commercial level. Neither closed the
+      2U's July 2024 Chapter 11 filing closed one boundary of the
+      policy debate at the commercial level; at the federal level
+      the Department opened a review of the bundled-services
+      guidance in 2023–2024 but did not rescind it, and its January
+      2025 Dear Colleague Letter reaffirmed the 2011 guidance.
+      Neither closed the
       underlying delegation-and-oversight problem. Successor OPMs
       and revenue-share structures continue to operate; the
       universities that delegated student recruitment under the
@@ -2198,7 +2201,7 @@
     "1992 HEA banned incentive compensation for recruiters; 2011 ED guidance exempted OPMs under bundled-services construct",
     "GAO 2022: at least 550 colleges, 2,900 programs, OPM revenue-share typically 40–60% of tuition (some 80%) per recruit",
     "Oversight gap: colleges/auditors lacked instructions to detect violations; ED not collecting information needed to oversee arrangements",
-    "2024 partial rescission + 2U Chapter 11 closed one boundary; successor OPMs and underlying delegation problem persist",
+    "2U July 2024 Chapter 11 closed the commercial boundary; ED opened a review but reaffirmed the 2011 guidance (Jan. 2025 DCL), federal boundary unclosed; successor OPMs and underlying delegation problem persist",
     "Investigation-grade delegation-with-revocation case at population scale; pair with Case 58 (USC × 2U Luna) and Case 55 (Engler)",
   ),
   approaches: (
@@ -2210,14 +2213,14 @@
     after: (
       [Carry the investigation-grade audit into the curriculum without softening: the GAO's central finding is that the oversight architecture was not built, and that is the load-bearing teaching point.],
       [Pair the case with Case 58 (USC × 2U) so the regulator-side audit and the consumer-side litigation are taught together; one half names what the regulator missed, the other names what the delegated marketing actually did.],
-      [Track post-rescission and post-2U-bankruptcy successor structures as a continuation of the case; the underlying delegation problem persists, and the case's frame is the regime-level oversight gap, not the specific 2U arrangement.],
+      [Track post-review and post-2U-bankruptcy successor structures as a continuation of the case; the underlying delegation problem persists, and the case's frame is the regime-level oversight gap, not the specific 2U arrangement.],
     ),
   ),
   references: (
     [U.S. Government Accountability Office (2022), "Higher Education: Education Needs to Strengthen Its Approach to Monitoring Colleges' Arrangements with Online Program Managers," GAO-22-104463.],
     [U.S. Department of Education (2011), "Dear Colleague" guidance on incentive-compensation bundled-services exemption — the regulatory artifact the GAO audits.],
     [Higher Education Act of 1992, incentive-compensation prohibition — the statutory basis the 2011 guidance interpreted.],
-    [2U Inc. (2024), Chapter 11 bankruptcy filing; U.S. Department of Education (2024), partial rescission of bundled-services guidance — the closure of the policy debate at the commercial and federal boundaries.],
+    [2U Inc. (2024), Chapter 11 bankruptcy filing (July 25, 2024); U.S. Department of Education, "Dear Colleague" Letter (Jan. 14, 2025) reaffirming the 2011 bundled-services guidance (GEN-11-05) — the commercial-boundary closure alongside the federal guidance's continued validity.],
   ),
   quote: [Colleges and their auditors lacked clear instructions to detect violations, and the Department was not collecting the information it needed to oversee the arrangements.],
   quote-source: "U.S. Government Accountability Office, GAO-22-104463 (2022).",
@@ -2226,8 +2229,10 @@
     revocation case at population scale. A regulatory exemption
     permitted a contracting structure across 550+ colleges and
     2,900+ programs; the monitoring architecture required to
-    police the exemption's boundaries was never built. The 2024
-    partial rescission and 2U Chapter 11 closed one boundary;
+    police the exemption's boundaries was never built. 2U's July
+    2024 Chapter 11 closed the commercial boundary; ED opened a
+    review but did not rescind the guidance (reaffirmed in the
+    January 2025 DCL);
     the underlying delegation problem persists for successor
     OPMs.
   ],
@@ -2263,7 +2268,7 @@
   year: "2010s – 2024",
   domains-list: ("higher education", "online program management", "professional licensure"),
   modes-code: "DKN",
-  impact: "USC's online MSW grew from ~300 students per cohort pre-2010 to >3,000 per cohort through the 2U partnership; 2023 class action alleges USC marketed the online program as the 'same' as the residential program while outsourcing recruiting, advising, and clinical placement to 2U employees; partnership terminated 2024",
+  impact: "USC's online MSW grew from ~300 students per cohort pre-2010 to >3,000 per cohort through the 2U partnership; 2023 class action alleges USC marketed the online program as the 'same' as the residential program while outsourcing recruiting, advising, and clinical placement to 2U employees; partnership wind-down announced November 2023",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -2285,7 +2290,7 @@
     that the online program's tuition (over \$100,000) reflected
     on-campus pricing while the delivered student experience did
     not. USC and 2U announced the partnership's termination on the
-    MSW and other programs in 2024. The case is in litigation, and
+    MSW and other programs in November 2023. The case is in litigation, and
     the predatory-targeting reconstruction rests on the complaint
     and on contemporaneous reporting rather than on a fact-finder's
     ruling — the evidence-tier flag is binding, and the case
@@ -2342,7 +2347,7 @@
     ],
     [
       USC and 2U announced the partnership's termination on the
-      MSW and other programs in 2024. The termination closed the
+      MSW and other programs in November 2023. The termination closed the
       operational arrangement at the boundary the litigation and
       the broader 2U commercial collapse forced; it did not
       adjudicate the legal claim, did not refund tuition paid
@@ -2377,7 +2382,7 @@
     "Luna 2023 complaint: USC marketed online program as 'same' as residential while outsourcing recruiting, advising, clinical placement to 2U",
     "Complaint alleges aggressive targeting of students of color and veterans; usc.edu email cover on OPM-employee operations",
     "Licensure half: clinical-placement quality independently unstudied; downstream what-can-graduates-do question carried as gap",
-    "Partnership terminated 2024; pair with Case 57 (GAO regulator-side) and Case 55 (Engler pricing); journalism-tier flag binding",
+    "Partnership wind-down announced Nov 2023; pair with Case 57 (GAO regulator-side) and Case 55 (Engler pricing); journalism-tier flag binding",
   ),
   approaches: (
     during: (
@@ -2394,8 +2399,8 @@
   references: (
     [_Stephanie Luna v. University of Southern California_, class action complaint, Los Angeles County Superior Court, May 2023.],
     [Higher Ed Dive reporting on the Luna complaint, May 2023; classaction.org and topclassactions.com summaries.],
-    [Project on Predatory Student Lending statement on USC-2U partnership termination, 2024.],
-    [2U Inc. and USC public statements on partnership termination, 2024; broader 2U commercial-collapse reporting referenced through Case 57.],
+    [Project on Predatory Student Lending statement on USC-2U partnership termination, November 2023.],
+    [2U Inc. and USC public statements on partnership termination, November 2023; broader 2U commercial-collapse reporting referenced through Case 57.],
   ),
   quote: [The tuition tracked residential pricing. The delivered student experience tracked the OPM-operated structure. The gap between what was promised and what was delivered is the case.],
   quote-source: "Editors' synthesis of the Luna v. USC complaint and contemporaneous reporting.",
@@ -2416,7 +2421,7 @@
     in Domain 5 (Navigating Sociotechnical Constraints) for the
     promised-vs-delivered disclosure gap and in Domain 3 (Machine
     Teaming and Adaptation) for the delegation-with-revocation
-    pattern — the partnership terminated in 2024, but the
+    pattern — the partnership wind-down was announced in November 2023, but the
     consequences for students who enrolled under the prior
     arrangement persist. Pair with Case 57 (GAO regulator-side
     audit), Case 55 (Engler pricing optimization), and Case 5
@@ -2458,10 +2463,10 @@
     Hon. Theodore D. Chuang and settled for \$37 million in July
     2022 with final approval December 9, 2022 — names a distinct
     structural seam in the enrollment-management-vendor frame.
-    Lead plaintiff Fiyyaz Pirani and co-lead Oklahoma City
-    Employees Retirement System alleged that 2U executives
-    "intentionally misled investors about declining enrollment
-    projections" across the February 26, 2018 to July 30, 2019
+    Lead plaintiff Fiyyaz Pirani and additional named plaintiff
+    the Oklahoma City Employee Retirement System alleged that 2U executives
+    intentionally misled investors about declining enrollment
+    projections across the February 26, 2018 to July 30, 2019
     class period, sounding in §10(b) and §20(a) of the Securities
     Exchange Act. The settlement is not an admission of liability,
     and the case is pedagogically useful for what the disclosure
@@ -2564,7 +2569,7 @@
   beats: (
     "Consolidated federal securities class action TDC-19-3455 + TDC-20-1006, D. Md., Hon. Theodore D. Chuang; filed Dec 2019",
     "Class period Feb 26 2018 – Jul 30 2019; §10(b) and §20(a) allegations on enrollment-projection disclosure to investors",
-    "Lead plaintiff Fiyyaz Pirani; co-lead Oklahoma City Employees Retirement System",
+    "Lead plaintiff Fiyyaz Pirani; additional named plaintiff Oklahoma City Employee Retirement System",
     "$37M settlement July 2022; final approval Dec 9 2022; not an admission of liability — case teaches disclosure pattern, not fault",
     "Investor-side complement to Case 57 (regulator audit) and Case 58 (consumer litigation); pair with Cases 55 and 56",
   ),
@@ -2581,9 +2586,9 @@
     ),
   ),
   references: (
-    [In re 2U, Inc. Securities Class Action, Civil Action No. TDC-19-3455 (consolidated with TDC-20-1006), D. Md., before Hon. Theodore D. Chuang; consolidated complaint filed December 2019.],
+    [In re 2U, Inc. Securities Class Action, Consolidated Case No. 8:19-cv-03455-TDC (TDC-19-3455, consolidated with TDC-20-1006), D. Md., before Hon. Theodore D. Chuang; underlying actions filed August 2019 (S.D.N.Y., transferred and consolidated in D. Md.); consolidated complaint filed July 30, 2020.],
     [Stipulation of settlement and motion for final approval, In re 2U, Inc. Securities Class Action, July 2022; final approval order, December 9, 2022.],
-    [Securities Exchange Act of 1934, §10(b) and §20(a); SEC Rule 10b-5 — the statutory and regulatory basis the complaint sounded in.],
+    [Securities Exchange Act of 1934, §10(b) and §20(a), and SEC Rule 10b-5; and Securities Act of 1933, §§11, 12(a)(2) and 15 (tied to the May 2018 secondary-offering Registration Statement) — the statutory basis the consolidated complaint sounded in.],
     [Paired investigation-grade record: U.S. Government Accountability Office, GAO-22-104463 (2022); _Luna v. USC_ class action complaint (2023) — the regulator-side and consumer-side surfaces of the same delegation structure (Cases 57, 58).],
   ),
   quote: [The settlement is not an admission of liability. The case teaches the disclosure-architecture pattern, not adjudicated wrongdoing — and the convergence of three oversight surfaces on the same delegation structure within the same calendar window is the structural diagnostic.],
@@ -3032,7 +3037,7 @@
   ),
   references: (
     [Hanford, E. (2022 – 2024), "Sold a Story: How Teaching Kids to Read Went So Wrong," _APM Reports_, podcast series launched October 20, 2022.],
-    [Hanford, E. (2018), "Hard Words: Why Aren't Kids Being Taught to Read?" _APM Reports_, September 2018.],
+    [Hanford, E. (2018), "Hard Words: Why Aren't Our Kids Being Taught to Read?" _APM Reports_, September 10, 2018.],
     [National Reading Panel (2000), _Teaching Children to Read: An Evidence-Based Assessment of the Scientific Research Literature on Reading and Its Implications for Reading Instruction_, National Institute of Child Health and Human Development, NIH Pub. No. 00-4769.],
     [Castles, A., Rastle, K., & Nation, K. (2018), "Ending the Reading Wars: Reading Acquisition From Novice to Expert," _Psychological Science in the Public Interest_ 19(1):5 – 51.],
     [Schwartz, S. (updated through 2024), "Which States Have Passed 'Science of Reading' Laws? What's in Them?" _Education Week_ — legislation tracker; ~40 states plus DC by late 2024.],
@@ -3562,7 +3567,6 @@
 )
 
 // ---- Case 64 — newark-prize-zuckerberg-gift ----
-// ---- Case (placeholder 64) — newark-prize-zuckerberg-gift ----
 #case(
   number: 64,
   slug: "newark-prize-zuckerberg-gift",
@@ -3731,8 +3735,7 @@
     [Russakoff, D. (2015), _The Prize: Who's in Charge of America's Schools?_, Houghton Mifflin Harcourt — the book-length primary record of the gift and the reform.],
     [Russakoff, D. (2014), "Schooled: Cory Booker, Chris Christie, and Mark Zuckerberg had a plan to reform Newark's schools. They got an education," _The New Yorker_, May 19, 2014 — the excerpt carrying the consultant-spend reporting.],
     [Chin, M., Kane, T. J., Kozakowski, W., Schueler, B. E., & Staiger, D. O. (2019), "School District Reform in Newark: Within- and Between-School Changes in Achievement Growth," _ILR Review_ 72(2), doi:10.1177/0019793918774318 (also NBER Working Paper 23922, 2017).],
-    // VERIFY: NYT announcement story author/date — believed Pérez-Peña, September 22, 2010 (news broke ahead of the September 24 Oprah taping)
-    [Pérez-Peña, R. (2010), "Facebook Founder to Donate \$100 Million to Help Remake Newark's Schools," _The New York Times_, September 2010 — contemporaneous announcement coverage.],
+      [Pérez-Peña, R. (2010), "Facebook Founder to Donate \$100 Million to Help Remake Newark's Public Schools," _The New York Times_, September 22, 2010 — contemporaneous announcement coverage.],
     // VERIFY: NJ Spotlight byline for the local-control handback story
     [NJ Spotlight (2018), "After 22 Years, Newark Enters New Era of Local Governance," February 1, 2018 — the return-to-local-control record.],
   ),

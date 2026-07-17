@@ -114,9 +114,9 @@
     "Industry tightened conspicuous covering and removal verification for static ports and pitot tubes",
   ),
   references: (
-    [Peru Dirección General de Aeronáutica Civil, accident investigation board, final report on AeroPerú 603 (December 1996; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
-    [Peru CIAA report (1996) — the static-port tape and the contradictory warnings.],
-    [Peru CIAA report (1996) — the absence of an independent cockpit reference.],
+    [Peru Dirección General de Aeronáutica Civil, accident investigation board, final report on AeroPerú 603 (October 1997; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
+    [Peru CIAA report (1997) — the static-port tape and the contradictory warnings.],
+    [Peru CIAA report (1997) — the absence of an independent cockpit reference.],
     [Leveson, N. (2011), _Engineering a Safer World_ (STAMP) — common-cause failure.],
     [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_ — crew performance under instrument failure.],
   ),
@@ -548,7 +548,7 @@
     1994 (132 killed), 157 in all. The NTSB investigation took years because
     the failure was rare and unrecoverable. It traced the cause to a
     thermal-shock condition in the rudder's power-control-unit servo valve —
-    cold-soaked hydraulic fluid hitting a hot valve — that could jam the
+    hot hydraulic fluid hitting a cold-soaked valve — that could jam the
     valve and reverse the rudder. The pilots had no procedure to recognize
     or recover the failure; the manuals and training never anticipated it,
     and in that state no available control input could save the aircraft.
@@ -586,7 +586,7 @@
       pattern to work from, so the board had to reason toward a mechanism the
       wreckage could only hint at. It eventually
       identified a thermal-shock condition in the rudder servo valve —
-      cold-soaked hydraulic fluid striking a hot valve under specific
+      hot hydraulic fluid striking a cold-soaked valve under specific
       conditions — that could jam the secondary valve and let the rudder move
       opposite to commanded input, a convergence of cold, heat, and timing so
       narrow it had eluded every test the design had been put through.#cn()
@@ -627,7 +627,7 @@
     "Boeing redesigned PCU, retrofitted fleet, and reshaped how rare unrecoverable modes are hunted",
   ),
   references: (
-    [NTSB, _Uncommanded Flight Control Movements_ (USAir 427 / 737 rudder PCU), NTSB-AAR-99-01 (1999) — the thermal-shock servo-valve finding.],
+    [NTSB, _Uncontrolled Descent and Collision With Terrain, USAir Flight 427_, NTSB-AAR-99-01 (1999) — the thermal-shock servo-valve finding.],
     [NTSB, _Aircraft Accident Report: United Airlines Flight 585_, NTSB-AAR-92-06 (1992) — the initial (undetermined) Colorado Springs investigation, later reopened.],
     [NTSB-AAR-99-01 (1999) — the servo-valve reversal mechanism and the absence of any recoverable crew action.],
     [Boeing 737 rudder PCU service bulletins and redesign program (1996–2002).],
@@ -687,7 +687,7 @@
   year: "2010",
   domains-list: ("general aviation", "avionics", "pilot training"),
   modes-code: "HNK",
-  impact: "An NTSB safety study of ~8,000 piston aircraft over 2002–2006 found that glass-cockpit aircraft had no better overall safety record — and a higher fatal accident rate — than comparable conventional-instrument aircraft over the period studied; the Board attributed this to inadequate equipment-specific training and issued recommendations A-10-36 through A-10-40",
+  impact: "An NTSB safety study of ~8,000 piston aircraft manufactured 2002–2006, with accidents analyzed for 2002–2008, found that glass-cockpit aircraft had no better overall safety record — and a higher fatal accident rate — than comparable conventional-instrument aircraft over the period studied; the Board attributed this to inadequate equipment-specific training and issued recommendations A-10-36 through A-10-41",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -700,14 +700,14 @@
     analog instruments — were introduced into light piston aircraft
     over the 2000s as a fleet-wide modernization. The NTSB safety
     study NTSB/SS-10/01 examined approximately 8,000 small piston
-    aircraft over 2002–2006 and reached a finding the technology's
+    aircraft manufactured 2002–2006 and reached a finding the technology's
     own advocates did not expect: glass-cockpit aircraft had no
     better overall safety record than comparable
     conventional-instrument aircraft over the period studied, and
     in fact had a higher fatal accident rate. The NTSB attributed
     this not to the technology but to inadequate
     equipment-specific training. The Board issued recommendations
-    A-10-36 through A-10-40 on knowledge-testing standards,
+    A-10-36 through A-10-41 on knowledge-testing standards,
     simulator availability, and training requirements. The study
     is explicit that advanced avionics "can increase the safety
     potential" of light aircraft but that the potential "was not
@@ -758,7 +758,7 @@
       modes (mode confusion, automation surprises, attention
       capture by integrated displays, degraded scan in degraded
       modes) that the inherited training did not address. The
-      Board issued recommendations A-10-36 through A-10-40 to the
+      Board issued recommendations A-10-36 through A-10-41 to the
       FAA: equipment-specific knowledge-testing standards,
       simulator and training-device availability for transitioning
       pilots, and structured training requirements before
@@ -797,9 +797,9 @@
   ),
   beats: (
     "Glass-cockpit avionics introduced into light piston aircraft over the 2000s as fleet-wide modernization; assumed positive safety move",
-    "NTSB safety study NTSB/SS-10/01 examined ~8,000 small piston aircraft 2002–2006; matched comparison glass vs. conventional fleets",
+    "NTSB safety study NTSB/SS-10/01 examined ~8,000 small piston aircraft manufactured 2002–2006; matched comparison glass vs. conventional fleets",
     "Headline against expectation: no better overall safety record, higher fatal accident rate for glass-cockpit fleet over the period studied",
-    "NTSB attribution: inadequate equipment-specific training, not the technology; recommendations A-10-36 through A-10-40 to the FAA",
+    "NTSB attribution: inadequate equipment-specific training, not the technology; recommendations A-10-36 through A-10-41 to the FAA",
     "Open verdict preserved: advanced avionics 'can increase the safety potential' but 'was not yet realized in the period studied'",
   ),
   approaches: (
@@ -810,17 +810,17 @@
     ),
     after: (
       [Preserve the NTSB's open-verdict language ("can increase the safety potential ... not yet realized in the period studied") in any report on the transition's outcome; the study did not say glass is unsafe, and the precise language is what makes the recommendation set actionable.],
-      [Track implementation of the NTSB recommendation set (A-10-36 through A-10-40) as the engineering response to the open verdict; the verdict closes when the recommendations are implemented and the next round of evidence is collected.],
+      [Track implementation of the NTSB recommendation set (A-10-36 through A-10-41) as the engineering response to the open verdict; the verdict closes when the recommendations are implemented and the next round of evidence is collected.],
       [Carry the structural lesson into adjacent transitions — the aging-system transition cases (Cases 114–116, 154, 156, 174, 194) — as evidence that the inherited certification of operator proficiency has to be re-verified against the new envelope across consumer, commercial, and defense scales.],
     ),
   ),
   references: (
     [National Transportation Safety Board (2010). _Introduction of Glass Cockpit Avionics into Light Aircraft_, Safety Study NTSB/SS-10/01. https://www.ntsb.gov/safety/safety-studies/Documents/SS1001.pdf — the case's primary investigation document.],
-    [NTSB Safety Recommendations A-10-36 through A-10-40 (2010), issued to the FAA — the engineering response the open verdict points to.],
+    [NTSB Safety Recommendations A-10-36 through A-10-41 (2010), issued to the FAA — the engineering response the open verdict points to.],
     [Wiener, E. L., \& Curry, R. E. (1980). Flight-deck automation: Promises and problems. _Ergonomics_, 23(10):995–1011 — the foundational literature on automation-induced failure modes that the glass-cockpit transition re-introduced at the GA scale.],
     [Sarter, N. B., Woods, D. D., \& Billings, C. E. (1997). Automation surprises. In _Handbook of Human Factors and Ergonomics_ (2nd ed.) — the mode-confusion / automation-surprise literature the NTSB findings cross-reference.],
   ),
-  quote: [Advanced avionics can increase the safety potential of light aircraft, but the potential was not yet realized in the period studied.],
+  quote: [Advanced avionics and electronic displays can increase the safety potential of general aviation aircraft operations, but more effort is needed to ensure that pilots are prepared to realize that potential.],
   quote-source: "NTSB Safety Study NTSB/SS-10/01 (2010).",
   le-insight: [
     The NTSB's glass-cockpit GA study is the canonical
@@ -1630,7 +1630,7 @@
     [AAIASB Report 11/2006 — the manual pressurization selector and failure to pressurize.],
     [AAIASB Report 11/2006 — the dual-meaning warning horn and the training emphasis.],
     [Boeing 737 Flight Crew Operations Manual — configuration and cabin-altitude warnings.],
-    [Reason, J. (1990), _Human Error_ — Helios 522 as a worked case of cue ambiguity.],
+    [Reason, J. (1990), _Human Error_ — the cue-ambiguity / human-error framing the case draws on.],
   ),
   quote: [The crew's interpretation of the cabin-altitude warning horn as a takeoff-configuration warning was a critical and irrecoverable error.],
   quote-source: "Paraphrasing the Hellenic AAIB Final Report on Helios 522, 2006",
@@ -1696,7 +1696,7 @@
   ),
   kind: "failure",
   summary: [
-    Forty-three seconds after takeoff from Taipei Songshan in February
+    About thirty-seven seconds after takeoff from Taipei Songshan in February
     2015, the right engine of a TransAsia ATR 72 auto-feathered following
     a sensor fault. Working from memory under acute time pressure, the
     crew shut down the left engine — the one still producing thrust —
@@ -1724,7 +1724,7 @@
     ],
     // -- What Happened --
     [
-      On 4 February 2015, forty-three seconds after takeoff, the right
+      On 4 February 2015, about thirty-seven seconds after takeoff, the right
       engine's autofeather system activated following a faulty sensor
       signal — the engine itself was capable of producing power. The crew,
       identifying an engine problem, shut down the left engine, which was
@@ -1775,7 +1775,7 @@
   ),
   beats: (
     "Captain had failed recent proficiency checks and was flagged for weak abnormal procedure handling",
-    "Forty three seconds after takeoff the right engine auto feathered and the crew shut down the working left engine",
+    "About thirty-seven seconds after takeoff the right engine auto feathered and the crew shut down the working left engine",
     "Taiwan ASC found the crew shut down the wrong engine in about fifteen seconds from memory not the checklist",
     "Under acute time pressure crews default to memory; incomplete memory drives action away from the checklist",
     "TransAsia ceased operations in 2016; the case argues the wrong engine pattern is an un engineered intervention",
@@ -2257,7 +2257,7 @@
     [Airline Safety and Federal Aviation Administration Extension Act of 2010, Pub. L. 111-216 — the 1,500-hour rule and the Pilot Records Database.],
     [GAO-12-203, _Pilot Records Database Implementation_ (2012); the Families of Continental Flight 3407 campaign.],
   ),
-  quote: [The captain's inappropriate response to the activation of the stick shaker led to an aerodynamic stall from which the airplane did not recover.],
+  quote: [The captain's inappropriate response to the activation of the stick shaker, which led to an aerodynamic stall from which the airplane did not recover.],
   quote-source: "NTSB Aircraft Accident Report AAR-10/01, Probable Cause, 2010",
   le-insight: [
     Colgan is the canonical case for the gap between the information an
@@ -2693,7 +2693,7 @@
     ],
     // -- What Happened --
     [
-      Yet by the early 2000s, as NASA worked the Constellation program, it
+      Yet by the mid-2000s, as NASA worked the Constellation program, it
       had become apparent that the institutional capability to build a Saturn
       V had been lost. The drawings existed; the practical knowledge of how
       the components were manufactured, tested, and assembled — and why

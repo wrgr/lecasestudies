@@ -75,7 +75,7 @@
       December 2024 the country reported effectively 100%
       digitalization of government services, with sub-five-minute
       tax filing and more than 95% of tax declarations filed electronically. The Mission
-      Mystique and the Hiding Hand chapter (Oxford 2024) and the
+      Mystique and the Hiding Hand chapter (Oxford 2019) and the
       ICEGOV 2021 historical analysis are the peer-reviewed
       treatments; the X-Road Global program documentation extends
       the case to the institutions that have since adopted the
@@ -113,7 +113,7 @@
       part of its current design discipline. The Domain-1 frame
       applies: systems analysis of the data-exchange layer as
       an artifact whose own aging trajectory is part of the
-      system's behavior. The Domain-4 frame applies because the
+      system's behavior. The Domain-5 frame applies because the
       sociotechnical commitment of a state to a single
       data-exchange protocol is itself the governance choice
       that determines what the future modernization will have
@@ -142,7 +142,7 @@
   ),
   references: (
     [Kattel, R., & Mergel, I. (2019), "Estonia's Digital Transformation: Mission Mystique and the Hiding Hand," in Compton, M., & 't Hart, P. (eds.), _Great Policy Successes_ (Oxford University Press, 2019) — peer-reviewed analytical chapter.],
-    [Kotka, Castro, & Kasakov (2021), "A Historical Analysis on Interoperability in Estonian Data Exchange Architecture," _ICEGOV 2021_ proceedings, doi:10.1145/3494193.3494209.],
+    [Jackson, Dreyling, & Pappel (2021), "A Historical Analysis on Interoperability in Estonian Data Exchange Architecture," _ICEGOV 2021_ proceedings, doi:10.1145/3494193.3494209.],
     [X-Road Global / Nordic Institute for Interoperability Solutions (NIIS) — program documentation and deployment-partner case studies.],
     [Republic of Estonia, e-Estonia briefing materials and Year-in-Review documentation (2024) — program-report sourcing.],
   ),
@@ -171,8 +171,8 @@
     failures the corpus already documents.
   ],
   literature-items: (
-    [Kalvet et al. (2024), _Mission Mystique_ chapter — Estonia digital transformation],
-    [Kotka et al. (2021), ICEGOV 2021 — historical interoperability analysis],
+    [Kattel & Mergel (2019), _Mission Mystique_ chapter — Estonia digital transformation],
+    [Jackson et al. (2021), ICEGOV 2021 — historical interoperability analysis],
     [X-Road Global / NIIS program documentation],
   ),
   reflection-list: (
@@ -252,9 +252,11 @@
     ],
     // -- Early Evidence --
     [
-      NHTSA's open investigation (ODI EA22-002) has identified Tesla's
-      driver-engagement design as inadequate to maintain the attention safe
-      operation requires, and the recurring fatality pattern across NTSB
+      NHTSA's engineering analysis (ODI EA22-002, closed April 2024 and
+      superseded by the December 2023 recall of roughly two million
+      vehicles) identified Tesla's driver-engagement design as inadequate
+      to maintain the attention safe operation requires, and the recurring
+      fatality pattern across NTSB
       reports suggests passive monitoring is not a sustainable role as
       currently engineered. Decades of automation-complacency research
       point the same way — the finding is not that any one driver failed but
@@ -297,7 +299,7 @@
     [NTSB, Highway Accident Report HAR-17/02 (Williston, FL, 2016) — the quoted disengagement finding.],
     [NTSB, Highway Accident Report HAR-20/01 (Mountain View, CA, 2018) — Autopilot crash analysis.],
     [NHTSA Standing General Order 2021-01 reports — documented Autopilot fatal crashes.],
-    [NHTSA Office of Defects Investigation EA22-002 (2022) — driver-engagement adequacy.],
+    [NHTSA Office of Defects Investigation EA22-002 (opened 2022; closed April 2024, superseded by recall 23V-838) — driver-engagement adequacy.],
     [Parasuraman, R. & Manzey, D. (2010) — automation complacency and monitoring.],
   ),
   quote: [The operational design ... permitted his prolonged disengagement from the driving task.],
@@ -343,7 +345,7 @@
   year: "2025",
   domains-list: ("finance", "algorithmic fairness", "fintech"),
   modes-code: "DGN",
-  impact: "A fintech-lending fairness audit reports that incorporating protected attributes under controlled mitigation reduces measured disparity below the unawareness baseline — surfacing the next teaching point: competing fairness definitions disagree, and the choice is a judgment",
+  impact: "A fintech-lending fairness audit finds a consumer-credit model miscalibrated by group when the protected attribute is withheld, and shows that using the attribute to correct the calibration reduces the disparity — surfacing the next teaching point: competing fairness definitions disagree, and the choice is a judgment",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -353,14 +355,13 @@
   clo-anchor: "CLO-4, CLO-3",
   summary: [
     The Coots et al. (2025) fintech lending fairness audit, posted as a
-    preprint, examines a deployed consumer-lending model under both the
-    unawareness baseline (the protected attribute excluded from inputs)
-    and a mitigation regime that uses the protected attribute in a
-    controlled fashion at training or post-processing time. The audit
-    reports that the mitigation regime produced lower measured disparity
-    on standard group-fairness metrics than the unawareness baseline did
-    — a small-scale instance of the same pattern Bartlett documented at
-    the mortgage market scale. The case is a frontier candidate: it
+    preprint, examines a deployed consumer-lending model and finds it
+    miscalibrated by group when the protected attribute is withheld from
+    inputs — underestimating default risk for some borrowers and
+    overestimating it for others. It then shows that using the protected
+    attribute in a controlled fashion to correct the calibration reduces
+    the resulting disparity — a small-scale echo of the pattern Bartlett
+    documented at the mortgage-market scale. The case is a frontier candidate: it
     sharpens the teaching point that "fairness through unawareness" is
     not the conservative or safe choice it is often assumed to be, and
     it surfaces the next layer — competing fairness definitions disagree
@@ -379,24 +380,21 @@
       attribute* — and into the harder territory the equity literature
       now operates in. Bartlett showed that omission preserves the
       disparity through correlated features. The Coots audit shows the
-      next thing: when the protected attribute is included under a
-      principled mitigation, the disparity on standard fairness metrics
-      drops below the unawareness baseline. Both findings are about the
+      next thing: the model is miscalibrated by group when the attribute
+      is withheld, and using it to correct the calibration lowers the
+      resulting disparity. Both findings are about the
       same family of models; they disagree about what makes a model
       fair.#cn()
     ],
     [
-      The audit examines a deployed fintech-lending model under two
-      regimes. In the unawareness regime, the protected attribute is
-      withheld from the model's inputs at training and inference. In the
-      controlled-mitigation regime, the protected attribute enters at
-      training or post-processing time as the basis for an explicit
-      adjustment intended to equalize a chosen fairness criterion. The
-      audit reports lower measured disparity on standard
-      group-fairness metrics under controlled mitigation than under
-      unawareness — small scale, but the pattern matches the
-      mortgage-finance finding (Case 186) and the broader fair-ML
-      literature.#cn()
+      The audit is a profit-and-calibration analysis of a deployed
+      fintech-lending model. Under unawareness — the protected attribute
+      withheld from inputs — the model is miscalibrated by group,
+      underestimating default risk for some borrowers and overestimating
+      it for others. Using the protected attribute to correct that
+      calibration reduces the resulting disparity — small scale, but the
+      pattern matches the mortgage-finance finding (Case 186) and the
+      broader fair-ML literature that omission does not equal fairness.#cn()
     ],
     [
       The case is a frontier candidate because it surfaces the layer
@@ -414,8 +412,8 @@
       the case title. The Coots audit is a preprint; the metric choices,
       the mitigation specifics, the dataset window, and the reported
       magnitude may move in peer review. The structural pattern — that
-      controlled inclusion of the protected attribute can produce a
-      lower measured disparity than omission — is consistent with the
+      using the protected attribute to correct group miscalibration can
+      reduce disparity relative to omission — is consistent with the
       broader fair-ML literature and with Bartlett's mortgage-finance
       finding, but the specific magnitudes in the audit should be
       treated as the strongest current preprint claim, not as a settled
@@ -423,7 +421,7 @@
       updated when peer review lands.#cn()
     ],
     [
-      What the pair (Cases 186 + 150) teaches together is the form of
+      What the pair (Cases 186 + 196) teaches together is the form of
       the equity capability deliverable: the practitioner must specify,
       in advance, the fairness definition the deployment will be
       evaluated against, audit on outputs rather than reasoning about
@@ -436,8 +434,8 @@
     ],
   ),
   beats: (
-    "Past omission: when controlled inclusion of a protected attribute reduces measured disparity below the unawareness baseline",
-    "Coots audit examines a deployed fintech-lending model under unawareness vs. controlled mitigation",
+    "Past omission: a model miscalibrated by group under unawareness, where using the protected attribute to correct the calibration reduces the disparity",
+    "Coots audit: a profit/calibration analysis of a deployed fintech-lending model finding group miscalibration under unawareness",
     "Frontier point: competing fairness definitions disagree about the same model; impossibility results force a choice",
     "Preprint-tier evidence; metric specifics and magnitudes may move in peer review; future validation will continue",
     "The capability deliverable is to pre-specify the fairness definition, audit on outputs, and decide under irreducible disagreement",
@@ -456,7 +454,7 @@
   ),
   references: (
     [Coots, Bartlett, Nyarko, & Goel (2025), "Algorithmic Bias in Lending: Evidence from a Fintech Audit," arXiv:2512.20753 — audit of ~80,000 personal loans showing model miscalibration disparities and that controlled inclusion of protected attributes could correct them; the evidence-tier flag is binding until peer review completes.],
-    [Bartlett, Morse, Stanton, & Wallace (2022), "Consumer-lending discrimination in the FinTech era," _Journal of Financial Economics_ 143(1):30–56 — the paired big-tier case (103).],
+    [Bartlett, Morse, Stanton, & Wallace (2022), "Consumer-lending discrimination in the FinTech era," _Journal of Financial Economics_ 143(1):30–56 — the paired big-tier case (186).],
     [Chouldechova (2017), "Fair Prediction with Disparate Impact," _Big Data_ 5(2):153–163 — the impossibility result for calibration and error-rate parity.],
     [Kleinberg, Mullainathan, & Raghavan (2017), "Inherent Trade-Offs in the Fair Determination of Risk Scores," _ITCS_ — competing fairness definitions are not jointly achievable.],
     [Mitchell, Potash, Barocas, D'Amour, & Lum (2021), "Algorithmic Fairness: Choices, Assumptions, and Definitions," _Annual Review of Statistics and Its Application_ 8:141–163 — practitioner-facing survey.],
@@ -465,8 +463,8 @@
   quote-source: "Editors' synthesis of Coots et al. (2025) and Mitchell et al. (2021).",
   le-insight: [
     The Coots audit is the small-tier frontier instance of the
-    finding that controlled inclusion of a protected attribute can
-    produce lower measured disparity than omission. With Bartlett
+    finding that using a protected attribute to correct group
+    miscalibration can reduce disparity relative to omission. With Bartlett
     (Case 186) it forms the canonical lending pair: omission does
     not fix the harm; competing fairness definitions disagree about
     what fix is. Evidence is preprint-tier; future validation will
@@ -500,7 +498,7 @@
   year: "2011 – present",
   domains-list: ("gov", "tech"),
   modes-code: "GHD",
-  impact: "Predictive-policing tools deployed by hundreds of U.S. police departments; several cities have abandoned them after equity analyses",
+  impact: "Predictive-policing tools deployed across scores of U.S. police jurisdictions; several cities have abandoned them after equity analyses",
   diagram: dgm.dgm-compare(
     "training data",
     "past arrests",
@@ -661,8 +659,9 @@
     2011 Kavli symposium produced a six-author _Neuron_ position paper
     (Alivisatos et al., 2012); the proposal was shepherded to the White
     House OSTP, became a Presidential initiative in 2013, and was
-    operationalized by an NIH working group whose BRAIN 2025 report
-    (Jorgenson et al., 2015) set milestones and cost estimates. What
+    operationalized by an NIH working group whose _BRAIN 2025: A
+    Scientific Vision_ report (2014; the group's plan later published
+    as Jorgenson et al., 2015) set milestones and cost estimates. What
     makes it teachable rather than triumphalist is the governance
     contestation visible in the same record. Yuste worried the advisory
     panel was "packing the committee with users, rather than tool
@@ -696,9 +695,10 @@
       The operational governance was an NIH working group, co-chaired
       by Cori Bargmann and Bill Newsome, charged with translating the
       vision into a milestone-and-cost-bearing plan. The group
-      published the BRAIN 2025 report (Jorgenson et al., _Phil. Trans.
-      R. Soc. B_, 2015), which named seven priority areas, set
-      timelines, and laid out funding ranges. Among the few large
+      released the _BRAIN 2025: A Scientific Vision_ report in June
+      2014, later published in peer-reviewed form (Jorgenson et al.,
+      _Phil. Trans. R. Soc. B_, 2015); it named seven priority areas,
+      set timelines, and laid out funding ranges. Among the few large
       research-program launches in the corpus, this is one whose
       position-paper-to-policy-to-implementation sequence is openly
       auditable — every step has a published artifact attached.#cn()
@@ -965,7 +965,7 @@
     and Human-System Collaboration) for the deployer-side artifact that
     permits oversight of a system whose internals are trade
     secret. Pair with Case 190 (Cruise) as the foil and Case
-    184 (CPUC) as the regulator-side complement.
+    200 (CPUC) as the regulator-side complement.
   ],
   literature-items: (
     [Waymo (2023), safety case framework whitepaper],
@@ -1049,10 +1049,11 @@
       enforcement.#cn()
     ],
     [
-      In August 2024 the framework was updated to strengthen the
-      DMV's authority to impose targeted operational
-      restrictions for safety reasons during the deployment
-      lifecycle, not only at initial permit issuance. The
+      In August 2024 the DMV released draft regulations for public
+      comment that would strengthen its authority to impose
+      targeted operational restrictions for safety reasons during
+      the deployment lifecycle, not only at initial permit
+      issuance. The
       regulatory regime can therefore tighten the conditions in
       response to operational evidence. The pattern: rather than
       treat the governance objection as binary, the CPUC made the
@@ -1091,7 +1092,7 @@
   beats: (
     "CPUC and California DMV regulate AV passenger service in a split-jurisdiction regime; binary deploy/don't-deploy risked either blocking deployment or losing governance handle",
     "Permit conditions: time-of-day limits, weather restrictions, fleet caps, geographic carve-outs, mandatory Passenger Safety Plan for riders with disabilities",
-    "August 2024 update: DMV authority strengthened to impose targeted operational restrictions for safety during deployment lifecycle",
+    "August 2024 draft regulations (public comment): proposed DMV authority to impose targeted operational restrictions for safety during the deployment lifecycle",
     "Structural complement to Case 199 (Waymo deployer-side safety case) and inverse-outcome companion of Case 190 (Cruise revocation)",
     "Practice-synthesis tier: program guidance and permit decisions documented; no peer-reviewed evaluation of equity-of-service outcomes yet — future validation ongoing",
   ),
@@ -1103,7 +1104,7 @@
     ),
     after: (
       [Pair the case with Case 199 (Waymo) as the regulator-deployer artifact dyad — the safety case framework and the permit conditions are co-constitutive, not independent moves.],
-      [Use the case in LENS Domain 4 modules on cross-regime governance seams (CPUC and DMV) — the regime structure is itself part of the capability question.],
+      [Use the case in LENS Domain 5 modules on cross-regime governance seams (CPUC and DMV) — the regime structure is itself part of the capability question.],
       [Carry the practice-synthesis flag honestly: the condition-design pattern is teachable, but the equity-of-service outcome data are not yet peer-reviewed; future validation requires independent evaluation of the Passenger Safety Plan deliverables.],
     ),
   ),
@@ -1111,7 +1112,7 @@
     [California Public Utilities Commission, "Autonomous Vehicle Passenger Service Programs," CPUC program page and August 2024 application guidance.],
     [CPUC permit decisions for Cruise and Waymo, 2020–2024.],
     [California Department of Motor Vehicles, AV regulatory program — strengthened safety-restriction authority, 2024.],
-    [Paired Cases 199 (Waymo deployer-side artifact) and 158 (Cruise revocation under regime).],
+    [Paired Cases 199 (Waymo deployer-side artifact) and 190 (Cruise revocation under regime).],
   ),
   quote: [The governance objection was not refused. It was made a permit condition.],
   quote-source: "Editors' synthesis of the CPUC AV passenger-service permit framework.",
@@ -1152,11 +1153,11 @@
 #case(
   number: 201,
   slug: "aadhaar-exclusion-litigation-judicial",
-  title: "Aadhaar Exclusion Litigation — Judicial Correction of Biometric Welfare Delegation in India",
+  title: "Aadhaar Exclusion — Biometric Welfare Delegation and Its Judicial Reckoning in India",
   year: "2018 – 2025",
   domains-list: ("digital identity", "welfare", "biometric authentication", "India"),
   modes-code: "GNH",
-  impact: "The Indian Supreme Court's Pragya Prasun ruling (April 2025) declared a fundamental right to inclusive and meaningful digital access and held that exclusion from welfare based on biometric-authentication failure — through no fault of the individual — violates constitutional dignity; the system can continue but alternatives to biometric authentication must be provided",
+  impact: "India's Aadhaar biometric-identity system, gating welfare for roughly one billion people, produced operational exclusion when authentication failed at the ration shop or pension window; the 2018 Puttaswamy II majority upheld the Section 7 welfare-linkage while Justice Chandrachud's dissent held that exclusion from technological error — through no fault of the individual — violates constitutional dignity, the reasoning behind executive fallback mandates issued after documented starvation deaths",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -1172,23 +1173,32 @@
     operational exclusion: when biometric authentication failed
     for an individual (worn fingerprints, missing iris match,
     connectivity loss at the point of service), the welfare to
-    which the person was entitled became inaccessible. The 2018
-    Puttaswamy II Aadhaar judgment surfaced the structural risk
-    in Justice Chandrachud's dissent; the April 2025 _Pragya
-    Prasun_ ruling made the remedial framing explicit by
-    declaring a fundamental right to inclusive and meaningful
-    digital access. The court held that exclusion from welfare
-    based on biometric-authentication failure — through no fault
-    of the individual — violates constitutional dignity. The
-    system can continue, but alternatives to biometric
-    authentication must be provided. The case is the non-US
-    automated-welfare-delegation case the corpus needs alongside
-    SyRI and the UK Post Office Horizon thread. The evidence
-    tier is mixed: the court judgments are investigation-grade;
-    the lived-exclusion sourcing rests on journalism and
-    advocacy reporting. Future validation will continue on
-    whether the alternatives-must-be-provided remedy is
-    implemented in practice. Gap-5 non-US/UK/EU case (India).
+    which the person was entitled became inaccessible. The
+    constitutional reckoning came in the 2018 Puttaswamy II
+    Aadhaar judgment: the 4–1 majority upheld Section 7 of the
+    Aadhaar Act, which conditions subsidies and benefits on
+    authentication, while Justice D. Y. Chandrachud's lone dissent
+    named the load-bearing principle — that "exclusion based on
+    technological errors, with no fault of the individual, is a
+    violation of dignity." The empirical predicate is the
+    documented exclusion record: the 2017 Jharkhand starvation
+    deaths (Santoshi Kumari among at least nineteen hunger deaths
+    the Right to Food Campaign tied to ration-card cancellation or
+    Aadhaar-authentication failure) and the Drèze–Khera–Somanchi
+    field study finding roughly a fifth of cardholders unable to
+    transact in an average month. The correction that followed was
+    executive and doctrinal rather than a majority holding —
+    circulars barring denial of rations for want of Aadhaar, and,
+    in the distinct 2025 _Pragya Prasun_ ruling, a right to
+    accessible digital access read into Article 21 in the e-KYC
+    context. The case is the non-US automated-welfare-delegation
+    case the corpus needs alongside SyRI and the UK Post Office
+    Horizon thread. The evidence tier is mixed: the judgments are
+    investigation-grade; the lived-exclusion sourcing rests on
+    journalism and advocacy reporting, with the field data
+    peer-reviewed. Future validation continues on whether the
+    fallback requirement is honored at the operator interface.
+    Gap-5 non-US/UK/EU case (India).
   ],
   sections: (
     [
@@ -1219,58 +1229,68 @@
       likely to fail.#cn()
     ],
     [
-      The 2018 Puttaswamy II judgment upheld Aadhaar in broad
-      terms; Justice Chandrachud's dissent named the
-      structural risk that the majority did not directly
-      address. Across the following seven years
-      lived-exclusion documentation accumulated in journalism,
-      advocacy reporting, and academic analysis. In April 2025
-      the Supreme Court's _Pragya Prasun_ ruling made the
-      remedial framing explicit. The court declared a
-      fundamental right to inclusive and meaningful digital
-      access and held that exclusion from welfare based on
-      biometric-authentication failure — through no fault of
-      the individual — violates constitutional dignity. The
-      system can continue. But alternatives must be provided.#cn()
+      The constitutional reckoning came in stages. In the 2018
+      Puttaswamy II judgment the Supreme Court's 4–1 majority
+      upheld Aadhaar and Section 7 of the Aadhaar Act — the
+      provision conditioning subsidies and benefits on
+      authentication — reasoning that targeted delivery and
+      leakage-reduction were legitimate, proportionate state
+      aims. Justice D. Y. Chandrachud, dissenting alone, named
+      the structural risk the majority did not: that Section 7
+      was over-broad and that "exclusion based on technological
+      errors, with no fault of the individual, is a violation of
+      dignity." Across the following years the documented
+      exclusion record accumulated, and the correction arrived
+      not as a reversal of the majority but as executive
+      circulars barring denial of rations for want of Aadhaar
+      and, in the distinct 2025 _Pragya Prasun_ ruling, a right
+      to accessible digital access read into Article 21 in the
+      e-KYC context for persons with disabilities.#cn()
     ],
     [
       The evidence-tier flag is split and load-bearing. The
-      court judgments themselves are investigation-grade
-      sources — the published opinion is the record. The
-      lived-exclusion sourcing that gives the case its
-      empirical body rests on journalism (Access Now, IAPP,
-      Indian press), advocacy reporting, and a peer-reviewed
-      comparative analysis ("A Failure to Do No Harm,"
-      PMC5741784). The journalism-tier flag travels with the
-      lived-exclusion material; the court framing is on the
-      record. The remedial question — whether the alternatives
-      are actually provided at the operator interface — is the
+      court judgments themselves are investigation-grade — the
+      published opinions are the record. The empirical body
+      rests on two tiers: the lived-exclusion account is
+      journalism and advocacy reporting (the Right to Food
+      Campaign's compilation of the Jharkhand starvation deaths;
+      the Indian press), while the exclusion-rate evidence is
+      peer-reviewed field work — Drèze, Khalid, Khera and
+      Somanchi's Jharkhand survey ("Pain without Gain?", EPW
+      2017) found roughly twenty percent of cardholders unable to
+      transact in an average month, with over forty percent of
+      non-transacting households citing Aadhaar-authentication
+      problems. The journalism-tier flag travels with the
+      lived-exclusion material; the field data and the judgments
+      carry their own, higher, tiers. Whether the fallback
+      requirement is honored at the operator interface is the
       open empirical matter the future will validate.#cn()
     ],
     [
       What the case adds at the LENS layer is the non-US
       automated-welfare-delegation thread the corpus needs.
-      The Domain-4 frame applies — a sociotechnical constraint
-      (population-scale biometric delegation) judicially
-      corrected on dignity grounds — and the CLO around
-      fairness beyond omission applies directly: the harm was
-      not the absence of the system but the operational
-      exclusion produced by it. The CLO on delegation with
-      revocation applies too: the court has not revoked the
-      delegation but has bounded it with the
-      alternatives-must-be-provided requirement. The case
-      pairs with SyRI (Dutch welfare-fraud system halted on
-      rights grounds) and the UK Post Office Horizon thread as
-      the global lineage of judicial correction of automated
-      welfare delegation.#cn()
+      The Domain-5 frame applies — a sociotechnical constraint
+      (population-scale biometric delegation) tested against
+      constitutional dignity — and the CLO around fairness
+      beyond omission applies directly: the harm was not the
+      absence of the system but the operational exclusion
+      produced by it. The CLO on delegation with revocation
+      applies too: the correction did not revoke the delegation
+      but sought to bound it with a fallback requirement — and
+      the gap between the Chandrachud dissent's principle and
+      the majority's holding is precisely why the revocation
+      remains contested rather than settled. The case pairs with
+      SyRI (Dutch welfare-fraud system halted on rights grounds)
+      and the UK Post Office Horizon thread as the global lineage
+      of judicial reckoning with automated welfare delegation.#cn()
     ],
   ),
   beats: (
-    "Aadhaar at ~1 billion enrolled — biometric authentication delegated for welfare access at point of service",
+    "Aadhaar at ~1 billion enrolled — biometric authentication delegated for welfare access at the point of service",
     "Operational exclusion as load-bearing failure mode — worn fingerprints, missing iris, connectivity loss at the operator interface",
-    "Puttaswamy II (2018) — Chandrachud dissent names the structural risk; majority does not directly address it",
-    "Pragya Prasun (April 2025) — fundamental right to inclusive digital access; alternatives to biometric auth must be provided",
-    "Evidence tier: court judgments investigation-grade; lived-exclusion accounts journalism + advocacy + peer-reviewed comparative analysis",
+    "Puttaswamy II (2018) — 4–1 majority upholds Section 7; Chandrachud's dissent: exclusion from technological error, no fault of the individual, violates dignity",
+    "Empirical predicate — 2017 Jharkhand starvation deaths (Santoshi Kumari; ~19 of ~57 hunger deaths tied to card cancellation/Aadhaar) and Drèze–Khera field data (~20% monthly exclusion)",
+    "Correction is executive and doctrinal, not a majority holding — circulars barring ration denial; the distinct 2025 Pragya Prasun ruling reads a right to accessible digital access into Article 21",
   ),
   approaches: (
     during: (
@@ -1285,24 +1305,26 @@
     ),
   ),
   references: (
-    [Supreme Court of India (2018), _Justice K. S. Puttaswamy (Retd.) v. Union of India_ (Aadhaar judgment); Justice Chandrachud's dissent on structural exclusion risk.],
-    [Supreme Court of India (April 2025), _Pragya Prasun & Ors. v. Union of India_ — fundamental right to inclusive digital access; alternatives-must-be-provided remedy.],
-    [IAPP and Access Now analyses (2024–2025), reporting and commentary on the _Pragya Prasun_ ruling and the structural Aadhaar exclusion pattern.],
-    ["A Failure to Do No Harm" comparative analysis, PMC5741784 — peer-reviewed companion on biometric-ID exclusion in welfare delivery.],
-    [Indian journalism on Aadhaar exclusion (The Hindu, The Wire, Scroll.in, 2017–2025) — lived-exclusion sourcing with journalism-tier flag.],
+    [Supreme Court of India (2018), _Justice K. S. Puttaswamy (Retd.) v. Union of India_, (2019) 1 SCC 1 — the Aadhaar judgment; 4–1 majority upholding Section 7, with Justice D. Y. Chandrachud's dissent on technological exclusion and dignity.],
+    [Drèze, J., Khalid, N., Khera, R., & Somanchi, A. (2017), "Aadhaar and Food Security in Jharkhand: Pain without Gain?," _Economic & Political Weekly_ 52(50) — field study of biometric-authentication exclusion in the PDS.],
+    [Right to Food Campaign compilation and Indian journalism (The Hindu, The Wire, Scroll.in, 2017–2019) on the Jharkhand starvation deaths (Santoshi Kumari, September 2017) — lived-exclusion sourcing with journalism-tier flag.],
+    [Supreme Court of India (2025), _Pragya Prasun & Ors. v. Union of India_, 2025 INSC 599 — the distinct, later ruling reading a right to accessible digital access into Article 21 in the e-KYC context for persons with disabilities.],
+    ["A Failure to Do No Harm," PMC5741784 — peer-reviewed comparative analysis of biometric-ID exclusion in welfare delivery.],
   ),
-  quote: [Exclusion from welfare based on biometric-authentication failure — through no fault of the individual — violates constitutional dignity. The system can continue. Alternatives must be provided.],
-  quote-source: "Editors' synthesis of the Pragya Prasun ruling.",
+  quote: [Exclusion based on technological errors, with no fault of the individual, is a violation of dignity.],
+  quote-source: "Justice D. Y. Chandrachud, dissenting, Puttaswamy II (2018)",
   le-insight: [
     Aadhaar exclusion is the non-US automated-welfare-delegation
-    case the corpus needed: an operational exclusion failure
-    mode judicially corrected on dignity grounds by the Pragya
-    Prasun ruling, with the system continuing under an
-    alternatives-must-be-provided remedy. Evidence tier is
-    split — court judgments investigation-grade, lived-exclusion
-    sourcing journalism plus advocacy plus peer-reviewed
-    comparative analysis. Future validation ongoing on
-    implementation of the remedy.
+    case the corpus needed: an operational-exclusion failure mode
+    whose constitutional statement is Justice Chandrachud's 2018
+    dissent — exclusion from technological error, no fault of the
+    individual, as a dignity violation — set against a majority
+    that upheld the Section 7 linkage. The correction that
+    followed was executive and doctrinal rather than a majority
+    holding. Evidence tier is split: judgments investigation-grade,
+    field data peer-reviewed, lived-exclusion sourcing journalism
+    plus advocacy. Future validation ongoing on whether the
+    fallback requirement is honored.
   ],
   lens-approach: [
     The designed teaching point is operational failure-mode
@@ -1318,18 +1340,19 @@
     excluded person. The capability discipline is to attribute
     an authentication failure to the system that produced it
     rather than to the user it shut out, and to name who the
-    design predictably excludes before deployment. The Pragya
-    Prasun court enacted exactly this attribution: it bounded
-    the system — alternatives to biometric authentication must
-    be provided — rather than revoking it, holding that
-    exclusion through no fault of the individual is the
-    system's failure to answer for. Pair with SyRI (Case 189)
-    and the UK Post Office Horizon thread.
+    design predictably excludes before deployment. Justice
+    Chandrachud's dissent performed exactly this attribution —
+    naming technological exclusion, through no fault of the
+    individual, as the system's dignity violation — even as the
+    majority upheld the linkage; the correction has since been
+    pursued through executive fallback mandates rather than a
+    settled revocation. Pair with SyRI (Case 189) and the UK
+    Post Office Horizon thread.
   ],
   literature-items: (
-    [Puttaswamy II (2018) and Pragya Prasun (2025) — Supreme Court of India judgments],
-    [Access Now and IAPP reporting on Aadhaar exclusion],
-    ["A Failure to Do No Harm" comparative analysis — peer-reviewed companion],
+    [Puttaswamy II (2018) — Supreme Court of India Aadhaar judgment; Chandrachud dissent],
+    [Drèze, Khalid, Khera & Somanchi (2017), EPW — "Pain without Gain?" Jharkhand field study],
+    [Right to Food Campaign reporting on Aadhaar-linked exclusion; Pragya Prasun (2025) as the later digital-access ruling],
   ),
   reflection-list: (
     [Identify a delegated authentication or eligibility-check system in your context whose failure mode is operational exclusion of the people most dependent on the service it gates. What is the alternative at the point of service, and is it actually available?],
@@ -1354,7 +1377,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  clo-anchor: "CLO-5, CLO-4",
   summary: [
     The CARE Principles for Indigenous Data Governance — Collective
     Benefit, Authority to Control, Responsibility, Ethics — were
@@ -1529,18 +1552,19 @@
     load-bearing limitations: bias audits without bias data —
     employers often lack the protected-attribute data the audit
     metrics require — and wide variability in audit quality
-    across published audits. The case pairs with Case 81 (OU
+    across published audits. The case pairs with Case 85 (OU
     Analyse — governance-objection dissolved by design), Case
-    133 (Gándara community-college predictive equity), and Case
-    29 (Amazon hiring AI). The intervention is the audit-as-
+    86 (Gándara community-college predictive equity), and Case
+    182 (Amazon hiring AI). The intervention is the audit-as-
     governance-artifact discipline; whether the audits reduce
     actual disparate impact at the hiring level remains under-
     evidenced.
   ],
   sections: (
     [
-      Local Law 144 was enacted by the New York City Council in
-      December 2021 and signed into law shortly thereafter, with
+      Local Law 144 was passed by the New York City Council on
+      10 November 2021 and became law without the Mayor's signature
+      on 13 December 2021 (returned unsigned), with
       the operational rules to be specified by the Department of
       Consumer and Worker Protection. The rulemaking process
       extended through 2022 and into 2023, with two rounds of
@@ -1573,21 +1597,23 @@
     ],
     [
       The independent academic critiques have surfaced two
-      load-bearing limitations. Yam and Skirpan's 2024 work on
-      "bias audits without bias data" names that many employers
+      load-bearing limitations. Andrus, Spitzer, Brown, and Xiang's 2021 work on the
+      challenge of procuring demographic data for fairness audits
+      names that many employers
       do not collect the protected-attribute information the
       audit metrics require, and the audits that proceed are
       either limited to attributes the employer happens to have
       or rely on imputation methods whose accuracy is itself
-      under-evidenced. Wright and Brown's 2024 audit-quality
+      under-evidenced. Wright et al.'s 2024 audit-quality
       study reviewed published audits across the first cohort
       of compliant employers and found wide variability — audits
       ranging from detailed methodological documents to single-
       paragraph summaries with limited interpretability. The
       audits are governance artifacts; their information content
-      is uneven across the first cohort.    ],
+      is uneven across the first cohort.
+    ],
     [
-      The case pairs with Case 81 (OU Analyse) for the
+      The case pairs with Case 85 (OU Analyse) for the
       governance-objection-dissolved-by-design thread: OU
       Analyse's deployment surfaced an equity question that the
       design process resolved structurally; Local Law 144's
@@ -1631,33 +1657,33 @@
     "NYC Local Law 144 of 2021; Department of Consumer and Worker Protection implementing rules effective July 5 2023; first US municipal AEDT regulation at this scope",
     "Three requirements: annual independent bias audit, publication of audit summary, candidate notice and alternative-selection request process",
     "Audit metrics: selection rate and impact ratio by sex, race/ethnicity, intersectional categories; computed by independent auditor not associated with the AEDT",
-    "Yam & Skirpan 2024 \"bias audits without bias data\": employers often lack protected-attribute data; Wright & Brown 2024 audit-quality study finds wide variability",
-    "Pair with Case 81 (OU Analyse), Case 86 (Gándara), Case 182 (Amazon hiring AI); whether audits reduce actual disparate impact remains under-evidenced",
+    "Andrus et al. 2021 on auditing without demographic data: employers often lack protected-attribute data; Wright et al. 2024 audit-quality study finds wide variability",
+    "Pair with Case 85 (OU Analyse), Case 86 (Gándara), Case 182 (Amazon hiring AI); whether audits reduce actual disparate impact remains under-evidenced",
   ),
   approaches: (
     during: (
-      [Specify the protected-attribute data the audit metrics will require before the audit is commissioned; the Yam and Skirpan critique names data availability as the precondition the regulatory theory does not provide for, and the data infrastructure has to be built in advance of the audit.],
-      [Choose an independent auditor whose methodology will produce a documentation-detailed audit rather than a single-paragraph summary; the audit-quality variability the Wright and Brown study found is itself a deployment choice, and the choice of auditor is where it surfaces.],
+      [Specify the protected-attribute data the audit metrics will require before the audit is commissioned; the Andrus et al. critique names data availability as the precondition the regulatory theory does not provide for, and the data infrastructure has to be built in advance of the audit.],
+      [Choose an independent auditor whose methodology will produce a documentation-detailed audit rather than a single-paragraph summary; the audit-quality variability the Wright et al. study found is itself a deployment choice, and the choice of auditor is where it surfaces.],
       [Build the candidate-notice and alternative-selection process as part of the deployment, not as a compliance afterthought; the candidate-side governance interaction is the seam at which the disclosure-and-audit structure becomes contestable for the affected person.],
     ),
     after: (
       [Carry the load-bearing hedges — disclosure-and-audit regime not substantive-standards regime; reduction of actual disparate impact under-evidenced; audit-quality variability across first cohort — into print without softening; the case's pedagogical value depends on the intervention's limits being preserved.],
-      [Pair in syllabi with Case 81 (OU Analyse) so the governance-objection-dissolved-by-design and governance-objection-surfaced-by-disclosure threads are taught together as complementary intervention forms.],
+      [Pair in syllabi with Case 85 (OU Analyse) so the governance-objection-dissolved-by-design and governance-objection-surfaced-by-disclosure threads are taught together as complementary intervention forms.],
       [Use the case as the change-control-and-disclosure-as-governance-artifacts anchor at the municipal-regulatory scale; the curricular target is the discipline of building the data infrastructure and the audit-quality criteria the disclosure regime presupposes.],
     ),
   ),
   references: (
     [New York City Department of Consumer and Worker Protection, _Rules Implementing Local Law 144 of 2021 (Automated Employment Decision Tools)_, effective July 5, 2023.],
-    [Wright, L., Muenster, R. M., Vecchione, B., Qu, T., Cai, S., Smith, A., Metcalf, J., & Matias, J. N. (2024), "Auditing Work: Exploring the New York City algorithmic bias audit regime," in _Proceedings of FAccT 2024_, doi:10.1145/3630106.3658959.],    [Engler, A. (2023), "The EU and U.S. diverge on AI regulation: A transatlantic comparison and steps to alignment," _Brookings Institution_ commentary — regulatory-comparative frame for the municipal intervention.],
+    [Wright, L., Muenster, R. M., Vecchione, B., Qu, T., Cai, S., Smith, A., Metcalf, J., & Matias, J. N. (2024), "Null Compliance: NYC Local Law 144 and the Challenges of Algorithm Accountability," in _Proceedings of FAccT 2024_, doi:10.1145/3630106.3658998.],    [Engler, A. (2023), "The EU and U.S. diverge on AI regulation: A transatlantic comparison and steps to alignment," _Brookings Institution_ commentary — regulatory-comparative frame for the municipal intervention.],
   ),
   quote: [The audit-and-notice regime is a disclosure-and-audit instrument, not a substantive-standards instrument; whether it reduces actual disparate impact at the hiring level is an empirical question the published evidence does not yet resolve.],
-  quote-source: "Editors' synthesis of the Local Law 144 rule text and the Yam/Skirpan and Wright/Brown academic critiques.",
+  quote-source: "Editors' synthesis of the Local Law 144 rule text and the Andrus et al. and Wright et al. academic critiques.",
   le-insight: [
     NYC Local Law 144 is the bias-audit-as-governance-artifact
     intervention at municipal-regulatory scale. The audit-and-
     notice regime is the first national municipal regulation of
-    algorithmic hiring tools at this scope; the Yam/Skirpan and
-    Wright/Brown critiques name the data-availability and
+    algorithmic hiring tools at this scope; the Andrus et al. and
+    Wright et al. critiques name the data-availability and
     audit-quality limitations the regulatory theory does not
     provide for. The intervention is real; whether it reduces
     actual disparate impact at the hiring level is under-
@@ -1670,7 +1696,7 @@
     (induced 5.4; LENS D5/PT5; CLO-4 and CLO-5). LENS uses it
     in Domain 5 (Navigating Sociotechnical Constraints) for the
     audit-as-governance-instrument discipline. Pair with Case
-    115 (OU Analyse governance-objection-dissolved-by-design),
+    85 (OU Analyse governance-objection-dissolved-by-design),
     Case 86 (Gándara community-college predictive equity), and
     Case 182 (Amazon hiring AI). The intervention is real and
     its limits are real; the disclosure-and-audit structure is
@@ -1680,8 +1706,8 @@
   ],
   literature-items: (
     [NYC DCWP rules implementing Local Law 144 (effective July 5 2023)],
-    [Yam & Skirpan (2024), FAccT — bias audits without bias data],
-    [Wright & Brown (2024), _AI and Ethics_ — first-cohort audit-quality study],
+    [Andrus, Spitzer, Brown & Xiang (2021), FAccT — "What We Can't Measure, We Can't Understand": demographic-data procurement for fairness audits, doi:10.1145/3442188.3445888],
+    [Wright et al. (2024), FAccT — "Null Compliance," first-cohort audit-quality study, doi:10.1145/3630106.3658998],
   ),
   reflection-list: (
     [Identify a regulated decision domain in your setting in which a disclosure-and-audit regime has been proposed or adopted. What is the protected-attribute data infrastructure the audit metrics will require, and is the infrastructure in place before the regime's effective date?],
@@ -1701,7 +1727,7 @@
   modes-code: "GDH",
   impact: "GM Cruise robotaxi struck a pedestrian and then dragged her ~20 feet; California suspended Cruise's permit; the program was substantially shut down",
   diagram: dgm.dgm-timeline(
-    (("collision", "—"), ("drag", "20 ft"), ("partial video", "to regulator"), ("permit suspended", "CPUC"), ("shutdown", "GM")),
+    (("collision", "—"), ("drag", "20 ft"), ("partial video", "to regulator"), ("permit suspended", "DMV"), ("shutdown", "GM")),
     emphasis: 2,
     caption: "Cruise — partial disclosure converted incident into company-ending event",
   ),
@@ -1756,8 +1782,8 @@
     ],
     // -- Early Evidence --
     [
-      The consequences cascaded. The CPUC suspended Cruise's driverless
-      permit for misrepresenting the incident, NHTSA opened a defects
+      The consequences cascaded. The California DMV suspended Cruise's driverless
+      permits for misrepresenting the incident, NHTSA opened a defects
       investigation, and GM subsequently shut down Cruise's commercial
       robotaxi operations and laid off much of the workforce. A
       commissioned external review (Quinn Emanuel) detailed the disclosure
@@ -1817,7 +1843,10 @@
     LENS uses Cruise in LEN 7 as a foundational autonomous-vehicle
     governance case and in LEN 10 (capstone) for the institutional-
     response deliverable that should pre-exist any commercial
-    autonomy program.
+    autonomy program. This frontier case carries the
+    institutional-governance treatment of the October 2023
+    incident; Case 190 (Part VII, What Fails) is its paired
+    disclosure-posture treatment of the same event.
   ],
   literature-items: (
     [Quinn Emanuel Report on Cruise (2024)],

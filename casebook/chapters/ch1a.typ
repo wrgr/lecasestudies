@@ -193,7 +193,7 @@
     been built to billing and administrative specifications, not clinical
     workflow. New categories of harm followed. A disputed but canonical 2005
     study found that deploying a commercial order-entry (CPOE) system at one
-    pediatric ICU was associated with a near-doubling of mortality; later
+    pediatric ICU was associated with a more-than-doubling of mortality; later
     deployments showed mixed or improved results, yet the warning stuck. A
     2023 survey across 200-plus hospitals found EHR usability is clinicians'
     top complaint, and that usability scores track patient-safety outcomes.
@@ -220,7 +220,7 @@
     [
       New categories of harm appeared alongside the new tools. A 2005 study
       reported that deploying a commercial computerized order-entry (CPOE)
-      system at one pediatric ICU was associated with a near-doubling of
+      system at one pediatric ICU was associated with a more-than-doubling of
       mortality — a single-institution result that provoked debate and that
       later deployments elsewhere did not reproduce, but that became
       canonical as a warning that powerful tools without workflow integration
@@ -293,9 +293,9 @@
     EHR/CPOE is the canonical ongoing case of an interface designed for
     one set of requirements and deployed against another. The systems
     work for billing and administration. They fail for clinical workflow
-    because clinical workflow was not the design constraint. Forty
-    billion dollars later, usability remains the single largest
-    contributor to in-system harm in U.S. healthcare.
+    because clinical workflow was not the design constraint. Thirty
+    billion dollars later, usability remains among the largest
+    contributors to in-system harm in U.S. healthcare.
   ],
   lens-approach: [
     LENS treats EHR/CPOE in LEN 7 as the live, ongoing example of
@@ -371,8 +371,9 @@
     raising concerns about the gap between marketed concordance
     claims and what the system actually delivered. Hospitals
     around the world had purchased Watson on the marketed
-    capability; major deployments at MD Anderson and elsewhere
-    were later wound down. The case is the canonical instance in
+    capability; adoption stalled, deployments were discontinued
+    (Manipal Hospitals in India ended its contract in 2018), and
+    IBM ultimately wound down and sold off Watson Health. The case is the canonical instance in
     the AI-delegation typology of capability marketed ahead of
     capability validated. The evidence-tier flag rendered under
     the title is binding: STAT News journalism is the primary
@@ -429,8 +430,9 @@
       patient population. The capability the procurement was
       buying — accurate, real-world treatment recommendation at
       the marketed concordance rate — was not the capability the
-      system carried. Major deployments at MD Anderson and
-      elsewhere were wound down as the gap surfaced.#cn()
+      system carried. Deployments were discontinued as the gap surfaced —
+      Manipal Hospitals in India ended its contract, and IBM
+      ultimately wound down and divested Watson Health.#cn()
     ],
     [
       The evidence-tier flag rendered under the title is binding
@@ -473,7 +475,7 @@
     "Watson for Oncology marketed as cancer-treatment recommendation engine with tumor-board concordance rates as high as 96%",
     "STAT News investigation (Ross & Swetlitz, 2017–2018) drawing on leaked IBM documents: trained on small synthetic-case set curated by MSK, not real patient outcomes",
     "Documented unsafe and incorrect recommendations; internal IBM engineers raised concerns about gap between marketed and operating capability",
-    "Hospitals worldwide purchased on marketed claim; major deployments (MD Anderson and others) later wound down",
+    "Hospitals worldwide purchased on marketed claim; deployments (Manipal and others) discontinued; IBM later wound down and sold Watson Health",
     "Evidence tier: journalism-grade (STAT primary, academic secondary); no independent peer-reviewed evaluation of operating accuracy; future validation ongoing",
   ),
   approaches: (
@@ -485,7 +487,7 @@
     after: (
       [Render the evidence tier honestly when the primary public source is journalism; the STAT investigation is the load-bearing source, and the academic record's secondary citation is the accurate description, not "peer-reviewed evidence."],
       [Carry the AI-delegation typology — TREWS, Epic Sepsis, SyRI, Watson — as a unit in any curricular discussion of when delegation is legitimate; the four-case set teaches the typology more clearly than any single case.],
-      [Treat the wind-down at MD Anderson and elsewhere as the case's own correction signal; the institutional decisions to discontinue are themselves evidence about what the procurement should have required up front.],
+      [Treat the discontinuation of Watson for Oncology deployments as the case's own correction signal; the institutional decisions to discontinue are themselves evidence about what the procurement should have required up front.],
     ),
   ),
   references: (
@@ -510,8 +512,8 @@
   lens-approach: [
     Watson for Oncology is the marketing-ahead-of-capability
     AI-delegation failure (induced 1.1; LENS D3/PT6) — Domain 3
-    for *Delegation with revocation* (MD Anderson wind-downs
-    are the revocation half); Domain 4 for requirements-vs-
+    for *Delegation with revocation* (the discontinued
+    deployments are the revocation half); Domain 4 for requirements-vs-
     marketing. Pair with Cases 20, 5, 189. Evidence-tier
     flag binds.
   ],
@@ -797,7 +799,7 @@
     [Wong et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070, doi:10.1001/jamainternmed.2021.2626.],
     [Habib et al. (2021), commentary on Wong et al., _JAMA Internal Medicine_ — on the implications for proprietary clinical AI.],
     [FDA, _Clinical Decision Support Software: Final Guidance_ (2022) — the post-Wong reframing of the EHR-embedded oversight question.],
-    [Adams et al. (2022), _Nature Medicine_ — the paired positive case (101).],
+    [Adams et al. (2022), _Nature Medicine_ — the paired positive case (20).],
   ),
   quote: [A deployment is not a validation. Deployment without independent validation is delegation without evidence.],
   quote-source: "Editors' synthesis of Wong et al. (2021).",
@@ -843,7 +845,7 @@
   year: "2016",
   domains-list: ("clinical medicine", "medical education", "health equity"),
   modes-code: "TKN",
-  impact: "About half of surveyed medical students and residents endorsed at least one false belief about biological differences between Black and White people; those who held more false beliefs rated Black patients' pain as less severe and recommended less accurate treatment",
+  impact: "About half of surveyed white medical students and residents endorsed at least one false belief about biological differences between Black and White people; those who held more false beliefs rated Black patients' pain as less severe and recommended less accurate treatment",
   kind: "failure",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -885,7 +887,7 @@
     [
       Hoffman et al. (2016) administered a battery of statements about
       biological differences between Black and White people to
-      222 medical students and residents — some true, some false (e.g.,
+      222 white medical students and residents — some true, some false (e.g.,
       "Black people's skin is thicker," "Black people's blood
       coagulates more quickly," "Black people's nerve endings are less
       sensitive"). About half of respondents endorsed at least one
@@ -899,7 +901,8 @@
       rated the pain of the Black mock patient as less severe than the
       pain of the White mock patient, and recommended less accurate
       treatment for the Black mock patient. Respondents who endorsed
-      no false beliefs did not show the rating gap. The case is unusual
+      fewer false beliefs showed the opposite pattern, rating the Black mock
+      patient's pain as slightly higher. The case is unusual
       in identifying a specific cognitive mechanism — a small set of
       named false biological beliefs — that mediates a documented
       population-level disparity. Most bias studies leave the
@@ -1002,7 +1005,7 @@
   year: "2014",
   domains-list: ("gov",),
   modes-code: "GKN",
-  impact: "Veterans died waiting for care; 300,000+ on waiting lists or waiting 6+ months; staff falsified records",
+  impact: "Veterans died waiting for care; ~120,000 waiting 90+ days or never got onto lists; staff falsified records",
   diagram: dgm.dgm-va,
   kind: "failure",
   summary: [
@@ -1036,7 +1039,8 @@
       In 2014 the VA Office of Inspector General found that staff at the
       Phoenix VA — and then across the system — had created secret waiting
       lists and falsified appointment data to hide that veterans were waiting
-      weeks or months for care. Some veterans died waiting, inside a system
+      weeks or months for care. Some veterans died while waiting — though the Inspector General could not
+      conclusively tie the deaths to the scheduling delays — inside a system
       that, by its own metrics, was succeeding.#cn() The secret lists were the
       mechanism by which an impossible target was reconciled with reality:
       official records showed appointments inside 14 days while the true wait
@@ -1541,10 +1545,10 @@
   ],
   lens-approach: [
     Vioxx is the canonical pharmaceutical post-deployment-surveillance
-    case (induced 2.4; LENS D4+D4/PT5). LENS uses it in Domain 4
+    case (induced 2.4; LENS D4+D3/PT5). LENS uses it in Domain 4
     (Test and Evaluation; CLO-4) for post-market surveillance as a
     measurement deliverable — the signal existed; the institutional
-    architecture to aggregate it did not. LENS uses it in Domain 3 (Human-System Collaboration; CLO-4) for the change-control
+    architecture to aggregate it did not. LENS uses it in Domain 3 (Human-System Collaboration; CLO-3) for the change-control
     and disclosure architecture between manufacturer, regulator, and
     prescriber that determines whether ambiguous safety signals reach
     a decision boundary. Pair with Radiology AI (Case 35) as the

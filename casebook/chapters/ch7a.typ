@@ -33,7 +33,7 @@
     target. The people assembled to build it knew insurance
     markets and government programs but not technology product launches; key
     technical roles went unfilled, no office clearly owned the integration
-    (CMS thought the contractor CGI was the lead integrator; CGI did not),
+    (CMS acted as its own systems integrator but lacked the capacity for the role, while CGI reported that no party was performing true integration),
     and no end-to-end test was run before launch. The fix-it team that
     rescued the site became the U.S. Digital Service. At root it was a
     capability mismatch at scale: the organization lacked the human
@@ -56,9 +56,10 @@
     // -- What Happened --
     [
       There was no clear division of responsibility among the many government
-      offices involved; CMS believed the contractor CGI was the lead system
-      integrator, and CGI did not share that understanding — so the single
-      most important role on the program was one no party believed it held.
+      offices involved; CMS believed it was itself serving as the systems
+      integrator — a role it lacked the capacity to perform — while CGI
+      reported that no party was performing true systems integration, so the
+      single most important role on the program was one no party actually held.
       No end-to-end test was run before launch, meaning the assembled pieces
       were never exercised together as a user would exercise them. The site
       went live on 1 October 2013 and immediately collapsed under load it had
@@ -109,7 +110,7 @@
   references: (
     [U.S. GAO, Healthcare.gov reports (2014–2016) — the launch, the capability gaps, and the absent end-to-end testing.],
     [HHS Office of Inspector General, _Case Study of CMS Management of the Federal Marketplace_, OEI-06-14-00350 (2016) — unclear ownership and the CMS/CGI integration confusion.],
-    [HHS OIG (2016) — "no single person had a clear understanding of the project's status" (quoted).],
+    [HHS OIG (2016) — "no single person had a clear understanding of the project's status" (paraphrased).],
     [J. Pahlka, _Recoding America_ (2023) — the founding of the U.S. Digital Service out of the rescue.],
     [Eaves & Goldenfein, "The Healthcare.gov Failure" (Harvard, 2014); Mergel et al. (2018), digital-government literature.],
   ),
@@ -251,7 +252,7 @@
       before publication. Future validation will continue.#cn()
     ],
     [
-      What the pair (Cases 198 + 79) teaches is that the governance
+      What the pair (Cases 198 + 181) teaches is that the governance
       model — distributed working-group with public-record
       contestation versus top-down single-PI with unified framing —
       is itself the variable that explains why one field-scale
@@ -304,7 +305,7 @@
   ],
   lens-approach: [
     HBP is the field-scale failure case in the v2 corpus
-    (induced 5.1; LENS D1+D3/PT4) drafted as the contrast to BRAIN
+    (induced 5.1; LENS D1+D5/PT4) drafted as the contrast to BRAIN
     (Case 198). LENS uses the pair in Domain 1 (Systems Analysis)
     for the governance-variable comparison and in Domain 5
     (Navigating Sociotechnical Constraints) for the
@@ -330,11 +331,11 @@
 #case(
   number: 182,
   slug: "amazon-hiring-ai-deprecated",
-  title: "Amazon Hiring AI — Trained Bias, Deprecated 2018",
+  title: "Amazon Hiring AI — Trained Bias, Deprecated 2017",
   year: "2014 – 2018",
   domains-list: ("technology", "hiring algorithms", "machine learning"),
   modes-code: "DKN",
-  impact: "Amazon internal recruiting-algorithm project initiated 2014, deprecated 2017 – 2018 after engineers determined the model could not be debiased; trained on ten years of historical resume data in which men predominated in technical roles; the model downgraded resumes containing the word \"women's\" and resumes from all-women's colleges; Reuters single-source investigation Oct 10 2018",
+  impact: "Amazon internal recruiting-algorithm project initiated 2014, team disbanded by early 2017 (Reuters reported Oct 2018) after engineers determined the model could not be debiased; trained on ten years of historical resume data in which men predominated in technical roles; the model downgraded resumes containing the word \"women's\" and resumes from all-women's colleges; Reuters single-source investigation Oct 10 2018",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -402,9 +403,13 @@
       the model architecture.#cn()
     ],
     [
-      Amazon deprecated the project in 2017 – 2018 and did not
-      deploy the model at production scale for hiring decisions.
-      The deprecation is the load-bearing decision in the case:
+      Amazon disbanded the project team by early 2017 and has
+      said the model was never used by recruiters to evaluate
+      candidates. Reuters reported, however, that recruiters
+      "looked at the recommendations" the tool generated without
+      relying solely on them — so "never deployed at production
+      scale" is the company's account rather than an independently
+      verified fact. The withdrawal is the load-bearing decision in the case:
       the engineering team determined that the model could not
       be made fair, and the organization withdrew the project
       rather than deploying it. The case's evidentiary structure
@@ -462,7 +467,7 @@
     "Amazon internal recruiting-algorithm project 2014 – 2018; goal: automate resume screening for technical roles; trained on 10 years of historical resume data",
     "Training-data composition encoded gender imbalance; model downgraded resumes containing \"women's\" and resumes from all-women's colleges",
     "Feature-engineering attempts to debias failed: remaining features carried correlated signal reproducing the same downgrade pattern",
-    "Amazon deprecated the project 2017 – 2018; did not deploy at production scale; deprecation is the load-bearing decision",
+    "Amazon disbanded the project team by early 2017; company says the tool was never used by recruiters, though Reuters reported recruiters looked at its recommendations; the withdrawal is the load-bearing decision",
     "Evidence is Reuters single-source reporting (Oct 10 2018); Amazon never published technical detail; journalism-tier flag binding",
   ),
   approaches: (
@@ -498,7 +503,7 @@
   ],
   lens-approach: [
     Amazon Hiring AI is the choose-the-construct case at hiring-
-    algorithm scale (induced 8.1; LENS D2+D5/PT6; CLO-4 and
+    algorithm scale (induced 8.1; LENS D2+D4/PT6; CLO-4 and
     CLO-5). LENS uses it in Domain 2 (Iterative Development)
     for the irreducibility-verification-as-deployment-gate
     discipline and in Domain 4 (Test and Evaluation) for the
@@ -596,8 +601,8 @@
       posture required one present. The role of "monitor" was assigned
       without the interface, training, or authority to make it performable —
       a placeholder for safety rather than an instrument of it.
-      As the NTSB chairman put it, "humans tend to tune out when tasked with
-      monitoring automated systems that work well most of the time." The
+      As NTSB board members observed, humans tend to tune out when tasked with
+      monitoring automated systems that work well most of the time. The
       design was safe only on the assumption that the failure case would not
       arrive — until it did, and the assumption that had quietly held the
       whole arrangement together was paid for with a life.#cn()
@@ -628,11 +633,11 @@
     [NTSB HAR-19/03 (2019) — the safety operator's distraction (watching a video) before impact.],
     [NTSB HAR-19/03 (2019) — Uber "did not adequately recognize the risk of automation complacency"; training and policy failures (quoted in part).],
     [NTSB HAR-19/03 (2019) — the suppressed emergency braking and the inability to classify a pedestrian away from a crosswalk.],
-    [NTSB Chairman R. Sumwalt, Tempe hearing remarks (2019) — "humans tend to tune out…" (quoted).],
+    [NTSB board members, Tempe hearing (2019) — "humans tend to tune out…" (paraphrase reported by Consumer Reports).],
     [R. Parasuraman & D. Manzey (2010), complacency in automation; L. Bainbridge (1983), "Ironies of Automation."],
   ),
   quote: [Repeatedly, humans tend to tune out when tasked with monitoring automated systems that work well most of the time.],
-  quote-source: "NTSB Chairman Robert Sumwalt, Uber Tempe hearing remarks, 2019",
+  quote-source: "NTSB board members, Uber Tempe hearing, 2019",
   le-insight: [
     Uber ATG is the defining case for the LENS Human-AI Teaming
     competency. A human was retained in the system not because the
@@ -866,7 +871,7 @@
     limited precedential weight outside BC but has been cited
     widely as articulating the delegation-without-revocation
     principle. The case pairs with Case 5 (Epic Sepsis), Case
-    67 (Watson for Oncology), and Case 77 (Hybrid Human-AI
+    3 (Watson for Oncology), and Case 77 (Hybrid Human-AI
     Tutoring).
   ],
   sections: (
@@ -1087,7 +1092,7 @@
       The pricing margin tells the harder story. Even when race was not
       among the model inputs, minority borrowers were charged
       systematically higher rates than equivalent White borrowers — by
-      about 8 basis points on purchase loans and 3 on refinances in the
+      about 8 basis points on purchase loans and 4 on refinances in the
       paper's central estimate. The disparity did not vanish because the
       variable was omitted; the variable returned through features
       correlated with race in the present US population — geography,
@@ -1158,7 +1163,7 @@
   ],
   lens-approach: [
     Bartlett is the headline equity-and-construct case in
-    consumer credit (induced 8.2; LENS D4+D4/PT6). LENS uses it
+    consumer credit (induced 8.2; LENS D4+D3/PT6). LENS uses it
     in Domain 4 (Test and Evaluation) for the CLO *Fairness
     beyond omission*, in Domain 3 (Human-System Collaboration) for delegation to underwriting models, and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
@@ -1348,7 +1353,7 @@
   ],
   lens-approach: [
     COMPAS is the impossibility-result case at consequential-
-    decision scale (induced 8.4; LENS D4+D3/PT6; CLO-4 and
+    decision scale (induced 8.4; LENS D4+D5/PT6; CLO-4 and
     CLO-5). LENS uses it in Domain 4 (Test and Evaluation) for
     the multi-criterion-audit discipline and in Domain 5
     (Navigating Sociotechnical Constraints) for the
@@ -1398,8 +1403,8 @@
     designed and tested for delivering social experiences, not red-teamed
     against systematic harvesting; its API contract assumed benevolent
     developer intent. The architecture worked exactly as designed — the
-    design assumption was wrong. The scandal accelerated the EU's GDPR,
-    helped spur the California Consumer Privacy Act, and produced a
+    design assumption was wrong. The scandal raised the salience of the EU's
+    GDPR (already adopted in 2016 and in force weeks later), helped spur the California Consumer Privacy Act, and produced a
     \$5-billion FTC penalty and consent decree. Cambridge Analytica is the
     book's case for platform-governance failure: a load-bearing assumption
     about how an interface would be used, never stress-tested against abuse.
@@ -1450,7 +1455,8 @@
     ],
     // -- Aftermath & Reform --
     [
-      The scandal accelerated the EU's GDPR, helped spur the California
+      The scandal raised the salience of the EU's GDPR (adopted 2016, in
+      force weeks later), helped spur the California
       Consumer Privacy Act, and produced a \$5-billion FTC penalty and a
       consent decree under which Facebook still operates — the abuse of one
       design assumption reshaping data law across two jurisdictions.#cn() Its
@@ -1611,7 +1617,7 @@
       the rights violation.#cn()
     ],
     [
-      The pair (Cases 81 + 80) is the case-grounded basis for
+      The pair (Cases 81 + 189) is the case-grounded basis for
       the governance-objection diagnostic proposed in
       the v2 research backbone: distinguishing a governance objection
       that good design can dissolve from one that correctly
@@ -1663,7 +1669,7 @@
   ],
   lens-approach: [
     SyRI is the negative Domain 5 / Problem Type 6 governance
-    case (induced 5.1; LENS D5+D4/PT6) drafted as the
+    case (induced 5.1; LENS D5+D3/PT6) drafted as the
     contrast to the Open University (Case 81). LENS uses
     the pair in Domain 5 (Navigating Sociotechnical
     Constraints) for the governance-objection
@@ -1851,7 +1857,7 @@
   ),
   reflection-list: (
     [Imagine you operate an autonomous system that has just been involved in a safety-relevant event. Design the disclosure decision: what is reported, to whom, on what cadence, with what verification — *before* you have the lawyer's advice on what the disclosure obligation strictly requires. Where does your architecture leave you exposed?],
-    [Compare Cases 199 (Waymo) and 158 (Cruise) as a paired teaching unit. What is the smallest pre-incident artifact a deploying organization could publish that would make the post-incident disclosure architecture credible to a regulator?],
+    [Compare Cases 199 (Waymo) and 190 (Cruise) as a paired teaching unit. What is the smallest pre-incident artifact a deploying organization could publish that would make the post-incident disclosure architecture credible to a regulator?],
     [The case rests partly on journalism-tier reconstruction of internal decisions. What evidence would you want to see — court discovery, the company's full post-mortem, a multi-source corroboration — before treating any specific internal-timeline claim as decision-grade?],
   ),
   courses: ("LEN 4", "LEN 8", "LEN 9"),
@@ -1940,7 +1946,7 @@
       and the recipient had to produce documentary evidence —
       often payslips from years earlier, often from employers no
       longer reachable — to disprove the assertion. The Federal
-      Court's 2019 Prygodicz judgment had already found the
+      Court's 2019 Amato judgment had already found the
       method unlawful; the Royal Commission's 2023 report
       adjudicated the governance question of how the scheme had
       been built, approved, and operated for three years across
@@ -1988,7 +1994,7 @@
   beats: (
     "Income-averaging algorithm: ATO annual income ÷ 26 compared to Centrelink fortnightly reports; arithmetic cannot establish overpayment",
     "~470,000 wrongful debts raised 2016–2019; burden of proof reversed onto recipients; agency legal advice flagged the seam and was set aside",
-    "Prygodicz 2019 Federal Court judgment found the method unlawful; Royal Commission final report July 7 2023 adjudicated the governance question",
+    "Amato 2019 Federal Court judgment found the method unlawful; Royal Commission final report July 7 2023 adjudicated the governance question",
     "Commission attribution on deaths is circumstantial — not individual legal findings of causation; the careful language is part of the record",
     "Pair with Case 189 (SyRI precedent), Case 48 (Johnson algorithmic public administration), Case 5 (Epic Sepsis delegation without validation)",
   ),
@@ -2024,12 +2030,12 @@
   ],
   lens-approach: [
     Robodebt is the burden-of-proof-reversal case at population
-    scale (induced 5.2; LENS D5+D4/PT6; CLO-5 and CLO-3). LENS
+    scale (induced 5.2; LENS D5+D3/PT6; CLO-5 and CLO-3). LENS
     uses it in Domain 5 (Navigating Sociotechnical Constraints)
     for the agency-legal-advice-as-binding-gate discipline and in
     Domain 3 (Human-System Collaboration) for the human-in-
     the-loop-for-consequential-decisions anchor. Pair with Case
-    155 (SyRI governance-objection-correct precedent), Case 48
+    189 (SyRI governance-objection-correct precedent), Case 48
     (Johnson school surveillance algorithmic-public-administration
     parallel), and Case 5 (Epic Sepsis delegation-without-
     validation form). The Commission's circumstantial attribution
@@ -2219,7 +2225,7 @@
     for the human-in-the-loop-for-consequential-decisions anchor
     at the appeal seam. Pair with Case 186 (Bartlett mortgage),
     Case 196 (Coots competing fairness definitions), and Case
-    133 (Gándara explainability of individual predictions). The
+    86 (Gándara explainability of individual predictions). The
     precise DFS finding — "no violation but lack of transparency"
     — is the load-bearing hedge.
   ],
@@ -2322,8 +2328,7 @@
       Intelligence. Each reform addressed a different part of the same
       pipeline — getting the tip in, getting it to someone who could read it,
       and having someone who could — so that a future Markopolos memo would
-      meet an evaluator able to test it. Madoff is paired with Theranos
-      (Case 10) as a case in which a regulator lacked the technical
+      meet an evaluator able to test it. Madoff is a case in which a regulator lacked the technical
       capability to challenge the evidence in front of it.#cn()
     ],
   ),
@@ -2342,7 +2347,7 @@
     [SEC post-Madoff reforms (2009–2010), including the Office of Market Intelligence for tip and referral triage.],
   ),
   quote: [The agency missed numerous opportunities to discover the fraud.],
-  quote-source: "SEC Office of Inspector General Report OIG-509, 2009",
+  quote-source: "Paraphrasing SEC Office of Inspector General Report OIG-509 (2009)",
   le-insight: [
     The Madoff case is the canonical example of a regulator without
     the technical capability to evaluate the evidence it received.
@@ -2360,9 +2365,8 @@
     evaluate the tip is not a channel. It pairs with the Mark 14
     torpedo (Case 133), where the Bureau of Ordnance dismissed
     submariners' field reports for the same structural reason — the
-    channel carried the truth and the institution could not receive it
-    — and with Theranos (Case 10) on the regulator's missing technical
-    depth. The Ponzi narrative is not the lesson; the channel is.
+    channel carried the truth and the institution could not receive it.
+    The Ponzi narrative is not the lesson; the channel is.
   ],
   induced-anchor: "6.2",
   lens-anchor: "D5/PT3",

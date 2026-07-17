@@ -20,10 +20,10 @@
   number: 136,
   slug: "gao-weapon-system-sustainment-reviews",
   title: "GAO Weapon-System Sustainment Reviews — Operating Costs without Decision-Grade Data",
-  year: "2022 (GAO-22-104533)",
+  year: "2024 (GAO-24-107378)",
   domains-list: ("defense", "sustainment", "audit"),
   modes-code: "GK",
-  impact: "GAO-22-104533 reviewed sustainment of selected DoD weapon systems and found that operating-and-support (O&S) costs — the dominant share of a system's lifecycle expense — are not reported at a level of completeness, consistency, or comparability that supports portfolio-level sustainment decisions; the finding recurs across GAO's weapon-system portfolio reporting and is a frontier evidence-architecture problem, not a failure attributable to any single program",
+  impact: "GAO-24-107378 (2024) reviewed DoD's statutory sustainment reviews and found that operating-and-support (O&S) costs — the dominant share (~70%) of a system's lifecycle expense — are not reported to Congress at a level of completeness, consistency, or comparability that supports portfolio-level sustainment decisions; the finding recurs across GAO's weapon-system portfolio reporting and is a frontier evidence-architecture problem, not a failure attributable to any single program",
   kind: "frontier",
   scale: "big",
   evidence-source: "investigation",
@@ -33,7 +33,7 @@
   summary: [
     The Government Accountability Office's recurring portfolio
     reviews of DoD weapon-system sustainment — including
-    GAO-22-104533 — document a structural evidence-architecture
+    GAO-24-107378 — document a structural evidence-architecture
     problem at the heart of defense sustainment. Operating-and-
     support (O&S) costs typically dominate a weapon system's
     total lifecycle expense, often well above the share of cost
@@ -74,7 +74,7 @@
       The Government Accountability Office has reviewed DoD
       weapon-system sustainment for decades through its
       portfolio-level reporting and through individual program
-      reviews. GAO-22-104533, "Weapon System Sustainment,"
+      reviews. GAO-24-107378, "Weapon System Sustainment,"
       examined a set of selected systems and reported the
       recurring finding: the O&S cost data DoD reports to
       Congress and uses internally are not complete,
@@ -139,7 +139,7 @@
   ),
   beats: (
     "O&S cost typically dominates weapon-system lifecycle expense; sustainment decisions ride on O&S evidence",
-    "GAO-22-104533 and predecessor reports: O&S data not reported with completeness, consistency, comparability portfolio decisions require",
+    "GAO-24-107378 and predecessor reports: O&S data not reported with completeness, consistency, comparability portfolio decisions require",
     "Structural problem across services and categories — not attributable to any single program manager",
     "GAO recommends standardized categories, time-series completeness, comparability; DoD implementation ongoing, gap narrowing in places",
     "Frontier evidence-architecture case: how to make portfolio-scale decisions when the available evidence is acknowledged as insufficient",
@@ -157,15 +157,15 @@
     ),
   ),
   references: (
-    [Government Accountability Office (2022), "Weapon System Sustainment: Selected Aircraft and Combat Vehicles Sustainment Costs," GAO-22-104533.],
+    [Government Accountability Office (2024), "Weapon System Sustainment: DOD Identified Operating and Support Cost Growth but Needs to Improve the Consistency and Completeness of Information to Congress," GAO-24-107378 (Feb. 29, 2024).],
     [Government Accountability Office (recurring), annual "Weapon Systems Annual Assessment" portfolio reports — context for the structural finding.],
-    [Department of Defense (2022), DoD response to GAO-22-104533 — acceptance and implementation status of recommendations.],
+    [Department of Defense (2024), DoD response to GAO-24-107378 — acceptance and implementation status of recommendations.],
     [Defense Acquisition University (ongoing), Operating and Support Cost-Estimating Guide — DoD reference on the cost categories whose comparability GAO addresses.],
   ),
   quote: [The portfolio decision-maker does not get to wait for the evidence architecture to be fixed. The case is about how to act with the evidence acknowledged as insufficient.],
-  quote-source: "Editors' synthesis of GAO-22-104533 and the recurring sustainment portfolio findings.",
+  quote-source: "Editors' synthesis of GAO-24-107378 and the recurring sustainment portfolio findings.",
   le-insight: [
-    GAO-22-104533 is the frontier evidence-architecture case at
+    GAO-24-107378 is the frontier evidence-architecture case at
     portfolio scale: the O&S data that dominate weapon-system
     lifecycle decisions are not reported in a form the
     decisions require, and the gap is structural across the
@@ -180,7 +180,7 @@
     Case 173.
   ],
   literature-items: (
-    [GAO-22-104533 (2022), Weapon System Sustainment],
+    [GAO-24-107378 (2024), Weapon System Sustainment],
     [GAO Weapon Systems Annual Assessment (recurring)],
     [DAU Operating and Support Cost-Estimating Guide],
   ),
@@ -689,7 +689,7 @@
     gutted seamanship training, the U.S. Navy overhauled how it builds
     surface-warfare competence. It restored the Surface Warfare Officers
     School from CD-ROM self-study to classroom and simulator instruction,
-    stood up Maritime Skills Training Centers on both coasts, created ten
+    stood up Mariner Skills Training Centers on both coasts, created ten
     pass-or-fail career assessments — three of them no-go gates — and
     adopted aviation-style debriefing. New Ready-for-Sea Assessments
     evaluated forward-deployed ships against a deliverable standard; three
@@ -716,7 +716,7 @@
     [
       Beginning in 2018, the Navy restored the Surface Warfare Officers
       School from self-study to classroom-plus-simulator instruction,
-      established Maritime Skills Training Centers on both coasts, roughly
+      established Mariner Skills Training Centers on both coasts, roughly
       tripled ship-driving training hours, and created ten pass-or-fail
       assessments across an officer's career path — three of them no-go
       gates that can halt advancement. The no-go gates were the structural
@@ -772,7 +772,7 @@
     [GAO-21-168 (and GAO-20-154), Navy readiness reform — the lack of systematic outcome evaluation (paraphrased).],
     [Readiness Reform Oversight Council, _One-Year Report_ (2019) — restored training, assessments, and gates.],
     [Navy and NTSB reports on the Fitzgerald and McCain collisions (2017–2019) — the training-degradation antecedent.],
-    [SWOS Norfolk and San Diego Maritime Skills Training Center documentation — simulators and curriculum.],
+    [SWOS Norfolk and San Diego Mariner Skills Training Center documentation — simulators and curriculum.],
     [USNI News reform coverage (2020, 2022) — Ready-for-Sea Assessments and sidelined ships.],
   ),
   quote: [The Navy still lacks systematic evaluation of whether the reforms work.],
@@ -895,8 +895,8 @@
       Document D-4686 / DTIC AD1002362) ran the independent
       evaluation that the case rests on. Digital Tutor graduates —
       Navy enlistees with no prior IT background, 16 weeks in — were
-      compared against a sample of fleet Information Technology
-      Specialists with an average 9.1 years of operational
+      compared against a sample of fleet Information Systems
+      Technicians with an average 9.1 years of operational
       experience. On a knowledge test, the Digital Tutor cohort
       outscored fleet ITs with an effect size of 4.30 — a
       magnitude that is unusual in workforce L&D research and that
