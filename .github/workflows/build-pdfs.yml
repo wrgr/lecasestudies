@@ -1,0 +1,76 @@
+name: Build casebook PDFs
+
+# Regenerates the eight shipping artefacts in products/ (grayscale print
+# interiors, cover wraps, and digital editions) from the Typst sources via
+# casebook/scripts/build.sh, which needs typst + ghostscript + poppler.
+# Runs on demand (workflow_dispatch) and when the casebook sources change on
+# main; products/ is excluded from the trigger so the auto-commit below does
+# not retrigger the workflow.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "casebook/chapters/**"
+      - "casebook/lib/**"
+      - "casebook/*.typ"
+      - "casebook/cover/**"
+      - "casebook/scripts/build.sh"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-pdfs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TYPST_VERSION: "0.15.0"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ghostscript and poppler
+        run: sudo apt-get update && sudo apt-get install -y ghostscript poppler-utils
+
+      - name: Install Typst ${{ env.TYPST_VERSION }}
+        run: |
+          set -euo pipefail
+          url="https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz"
+          curl -fsSL "$url" -o typst.tar.xz
+          tar -xJf typst.tar.xz
+          sudo install -m 0755 typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          rm -rf typst.tar.xz typst-x86_64-unknown-linux-musl
+          typst --version
+
+      - name: Build all editions
+        working-directory: casebook
+        run: bash scripts/build.sh
+
+      - name: Verify case integrity
+        working-directory: casebook
+        run: bash scripts/check-cases.sh
+
+      - name: Upload full build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: casebook-pdfs
+          path: casebook/build/*.pdf
+          if-no-files-found: error
+
+      - name: Commit regenerated products
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add products/
+          if git diff --cached --quiet; then
+            echo "No product changes to commit."
+          else
+            git commit -m "CI: regenerate shipping PDFs (products/) from build.sh [skip ci]"
+            git push
+          fi
