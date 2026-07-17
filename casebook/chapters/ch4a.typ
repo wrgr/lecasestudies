@@ -179,8 +179,8 @@
     collisions and the sociotechnical reforms (LENS D4) that would keep
     waivers from quietly hollowing the requirement out. The case pairs
     with Three Mile Island (Case 166) as the
-    failure that engineered durable industry reform through INPO. CLO
-    mapping: CLO-1 (Systems Analysis) primary, CLO-5 (Sociotechnical
+    failure that engineered durable industry reform through INPO. LEO
+    mapping: LEO-1 (Systems Analysis) primary, LEO-5 (Sociotechnical
     Constraints) for the waiver-and-reporting institutional dynamics.
   ],
   literature-items: (
@@ -210,7 +210,7 @@
   evidence-source: "investigation",
   induced-anchor: "1.1",
   lens-anchor: "D1/PT3",  // alternate framing adopted: training-design lens (the operator-licensing reforms) over institution-building (INPO); INPO retained as paired-case context in lens-approach,  // alternate framing adopted: institutional-learning lens over systems-analysis; preserves D1/PT3 as a defensible secondary,
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
 )
 
 // ---- Case 125 — marine-corps-training-in-the-indopacom ----
@@ -363,7 +363,7 @@
   scale: "big",
   induced-anchor: "1.1",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   evidence-source: "investigation",
 )
 
@@ -516,7 +516,7 @@
   scale: "big",
   induced-anchor: "1.4",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   evidence-source: "investigation",
 )
 
@@ -670,7 +670,7 @@
   scale: "big",
   induced-anchor: "1.3",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   evidence-source: "investigation",
 )
 
@@ -823,7 +823,7 @@
   scale: "big",
   induced-anchor: "1.3",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
 )
 
 // ---- Case 129 — patriot-missile-dhahran ----
@@ -975,7 +975,7 @@
   scale: "big",
   induced-anchor: "1.2",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   evidence-source: "investigation",
 )
 
@@ -994,7 +994,7 @@
   evidence-source: "investigation",
   induced-anchor: "3.3",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   summary: [
     On 3 July 1988, during a surface skirmish with Iranian gunboats in the
     Persian Gulf, the USS Vincennes shot down Iran Air Flight 655 — a
@@ -1143,12 +1143,12 @@
   lens-approach: [
     Vincennes is the foundational mode-and-state-transparency case
     under combat stress (induced 3.3; LENS D2/PT6 human-AI teaming).
-    LENS uses it in Domain 2 (Iterative Development; CLO-2) for
+    LENS uses it in Domain 2 (Iterative Development; LEO-2) for
     interface-as-deliverable: a CIC display tested against the worst
     case it would actually meet — confirmation bias during a
     simultaneous surface engagement — not against the calm of
     acceptance testing. LENS uses it in Domain 3 (Human-System Collaboration
-    Adaptation; CLO-3) for the human-AI teaming problem itself: a
+    Adaptation; LEO-3) for the human-AI teaming problem itself: a
     decision aid that displays truth without defending it predictably
     fails wherever automation is fast and the human is the last check.
     The case sits at the heart of the program's argument that
@@ -1337,7 +1337,7 @@
   scale: "big",
   induced-anchor: "3.4",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
 )
 
 // ---- Case 132 — f-22-obogs-hypoxia-the-sustainment-era ----
@@ -1354,7 +1354,7 @@
   evidence-source: "investigation",
   induced-anchor: "2.4",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Between 2008 and 2012 the USAF accumulated a cluster of F-22
     Raptor "physiological events" — pilot reports consistent with
@@ -1670,7 +1670,7 @@
   scale: "big",
   induced-anchor: "6.2",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 134 — v-22-osprey ----
@@ -1825,7 +1825,7 @@
   scale: "big",
   induced-anchor: "7.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   evidence-source: "investigation",
 )
 
@@ -1978,5 +1978,5 @@
   scale: "big",
   induced-anchor: "5.3",
   lens-anchor: "D5/PT1",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )

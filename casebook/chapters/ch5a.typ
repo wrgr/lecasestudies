@@ -233,7 +233,7 @@
   evidence-source: "investigation",
   induced-anchor: "7.1",  // alternate framing adopted: deprecated test code activated under partial deployment is the dead-code-as-inherited-design pattern; preserves 5.4 as the post-incident Reg SCI lens,
   lens-anchor: "D1/PT3",
-  clo-anchor: "CLO-1, CLO-4",
+  leo-anchor: "LEO-1, LEO-4",
 )
 
 // ---- Case 144 — kodak-digital-camera-stagnation ----
@@ -256,7 +256,7 @@
   evidence-source: "journalism",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
   summary: [
     In 1975 a young Kodak engineer, Steven Sasson, built the first
     self-contained digital camera in a Rochester lab: an 8-pound,
@@ -397,7 +397,7 @@
   lens-approach: [
     Kodak is the v2.1 D2 stagnation exemplar (induced 2.3 transfer to
     high-consequence settings; LENS D2/PT4 adoption and sustainment;
-    CLO-2 Iterative Development). LENS uses it to make the
+    LEO-2 Iterative Development). LENS uses it to make the
     organizational-iteration claim concrete: 2.2 (run the cycle), 2.3
     (transfer the cycle to the high-stakes business decision), and 2.4
     (sustain adoption against the gravitational pull of the legacy
@@ -439,7 +439,7 @@
   evidence-source: "journalism",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
   summary: [
     On 9 January 2007 Steve Jobs unveiled the iPhone. Research In
     Motion — then dominant in the keyboard-smartphone market with
@@ -589,7 +589,7 @@
   lens-approach: [
     BlackBerry is the contemporary consumer-electronics pair to
     Kodak (induced 2.3; LENS D2/PT4 adoption and sustainment;
-    CLO-2 Iterative Development). LENS uses the case to teach
+    LEO-2 Iterative Development). LENS uses the case to teach
     the v2.1 D2 subobjectives at the organizational level:
     2.2 — run the iteration cycle on product, OS, ecosystem,
     and go-to-market together; 2.3 — transfer the cycle to
@@ -763,7 +763,7 @@
   scale: "big",
   induced-anchor: "3.3",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
 )
 
 // ---- Case 147 — takata-airbag-inflators ----
@@ -925,7 +925,7 @@
   scale: "big",
   induced-anchor: "2.4",
   lens-anchor: "D4/PT3",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 148 — wells-fargo-fake-accounts ----
@@ -1098,7 +1098,7 @@
   evidence-source: "investigation",
   induced-anchor: "2.1",  // alternate framing adopted: the "Gr-eight" cross-sell metric was measuring the wrong failure mode (sales activity vs. account legitimacy); 2.2 (gaming protection) preserved as alternate framing,
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
 )
 
 // ---- Case 149 — volkswagen-dieselgate ----
@@ -1256,7 +1256,7 @@
   scale: "big",
   induced-anchor: "2.2",
   lens-anchor: "D4/PT3",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 150 — libor-manipulation ----
@@ -1413,7 +1413,7 @@
   scale: "big",
   induced-anchor: "2.2",
   lens-anchor: "D4/PT3",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 151 — gm-ignition-switch ----
@@ -1570,7 +1570,7 @@
   scale: "big",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 152 — tsb-bank-it-migration ----
@@ -1723,7 +1723,7 @@
   scale: "big",
   induced-anchor: "4.1",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 153 — equifax-data-breach ----
@@ -1848,7 +1848,7 @@
   ],
   induced-anchor: "6.2",
   lens-anchor: "D5/PT3",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
   literature-items: (
     [Senate Subcommittee report (2019)],
     [GAO-18-559],

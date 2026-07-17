@@ -2,7 +2,7 @@
 
 > **STATUS: doc 1 v2.1 (adopted June 2026); doc 2 v2.2 (July 2026 — PLO source refresh).** Source of record: JHU SOE LDT/LENS program documentation; PLO text follows the LDT Program Learning Objectives of record dated 03-06-2025. Versions are tracked inline via a `Change Log` at the bottom of docs 1 and 2; prior prose retrievable from git history (no `legacy/` folder — the canonical file is always the one in this directory). The `.docx` companions for docs 1 and 2 are regenerated from the `.md` as of the v2.2 sync; program-owner round-trip review of the v2.1/v2.2 changes remains open.
 
-The complete, synced set. The five competencies, their names, taglines, and the CLO crosswalk
+The complete, synced set. The five competencies, their names, taglines, and the LEO (LENS Educational Objective — the concentration-level objective tier; see doc 2 §4) crosswalk
 are consistent across every document here as of this revision.
 
 1. **LENS_Five_Competencies** — the competency framework of record: five competencies, each with
@@ -10,9 +10,9 @@ are consistent across every document here as of this revision.
    numbers are stable tags for case studies, course modules, and capstone rubrics.
 
 2. **LENS_Objectives_Course_Mapping** — full program/course documentation: context, structure, the
-   six LDT PLOs (verbatim, 03-06-2025 list at subobjective grain), the five CLOs, the PLO ↔ CLO
-   support map, course-by-course descriptions with PLO/CLO mappings, coverage matrices, revision
-   notes. Under v2.1 numbering, CLO-5 is "Navigating Sociotechnical Constraints."
+   six LDT PLOs (verbatim, 03-06-2025 list at subobjective grain), the five LEOs, the PLO ↔ LEO
+   support map, course-by-course descriptions with PLO/LEO mappings, coverage matrices, revision
+   notes. Under v2.1 numbering, LEO-5 is "Navigating Sociotechnical Constraints."
 
 3. **LENS_Editor_Bios** — standalone editor biographies (Gray-Roncal, Diamond), each closing with a
    removable "On LENS" tie that maps the editor to the casebook's five pillars. Delete the two ties
@@ -39,9 +39,9 @@ Systems Analysis · Iterative Development · **Human-System Collaboration** · T
   language in Will's bio.
 - Recruitment email: August 2026 start, online/part-time, "founding cohort" language, email address,
   and that capabilitymatters.org is live.
-- Published casebook (capability-matters-digital.pdf, pp. 16–17) still carries v1 competency names + ordering; the v2.1 sync ships with the casebook lens-anchor/CLO-anchor field remap (D3↔D4 swap, D5→D3) and the dgm-five-competencies diagram update.
+- Published casebook (capability-matters-digital.pdf, pp. 16–17) still carries v1 competency names + ordering; the v2.1 sync ships with the casebook lens-anchor/LEO-anchor field remap (D3↔D4 swap, D5→D3) and the dgm-five-competencies diagram update.
 
 ## Open items (drop cleanly if they conflict with the documentation of record)
 - Subobjectives 3.4 (communicating uncertainty) and 5.4 (not-yet-fielded systems) are additions
-  beyond strict CLO unbundling.
+  beyond strict LEO unbundling.
 - Defense is named as one domain among three (healthcare, defense, education), never the primary one.

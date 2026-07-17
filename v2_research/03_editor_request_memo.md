@@ -15,7 +15,7 @@ This memo is the handoff. The research is done (~77 verified candidates, eight p
 
 4. **Approve the COI disclosure language.** Three cases carry author/institution proximity: CIRCUIT (editor is senior author), BRAIN (research adjacency), Johnson school-surveillance (shared institution). Recommended posture is open disclosure in-text — for CIRCUIT, a visible "an editor is the senior author of the underlying study" note. Approve the exact wording; the book's credibility on these cases depends on it being plain, not buried.
 
-5. **Decide whether the framework edits ship with v2 or precede it.** The competency/CLO revisions (separate document) touch required curriculum. Recommendation: the strongest edits (collaboration-as-unit measurement; human-oversight-of-automated-output; the decision-grade-evidence reframing; the four new CLOs) should be reviewed with the program owner (J. Diamond) *before* case selection hardens, because they change what the cases need to teach. The casebook and the curriculum should not diverge.
+5. **Decide whether the framework edits ship with v2 or precede it.** The competency/LEO revisions (separate document) touch required curriculum. Recommendation: the strongest edits (collaboration-as-unit measurement; human-oversight-of-automated-output; the decision-grade-evidence reframing; the four new LEOs) should be reviewed with the program owner (J. Diamond) *before* case selection hardens, because they change what the cases need to teach. The casebook and the curriculum should not diverge.
 
 6. **Confirm the two-anchor convention.** Each case carries both an induced-competency anchor (1–8) and a LENS mapping (Domain/Problem Type). Decide which is primary in the printed case header. Recommendation: LENS mapping primary (it is the curriculum), induced competency secondary (it is the analytic scaffold). They are close but not identical; the build list records both.
 
@@ -36,7 +36,7 @@ This memo is the handoff. The research is done (~77 verified candidates, eight p
 ## C. Recommended build sequence
 
 1. Resolve Case 74 and set the numbering baseline (A1).
-2. Review framework edits with the program owner (A5); lock the competency/CLO set.
+2. Review framework edits with the program owner (A5); lock the competency/LEO set.
 3. Confirm the two-anchor header convention (A6) and the target count (A2).
 4. Triage candidates into draft / hold / cut, applying the tier and COI rulings (A3, A4).
 5. Draft the paired cases first (TREWS/Epic, lending pair, the race-construct trio, BRAIN/HBP, OU/SyRI, the corporate-L&D pair) — pairs teach the framework distinctions most efficiently and surface anchor problems early.
@@ -57,7 +57,7 @@ This memo is the handoff. The research is done (~77 verified candidates, eight p
 
 ## E. What is ready now
 - Complete deduplicated build list (~77 candidates, both anchor systems, status/COI/tier/hedge flags): `02_complete_case_list_build_reference.md`.
-- Revised competencies and CLOs, grounded in cases: `01_LENS_revised_competencies_and_CLOs.md`.
+- Revised competencies and LEOs, grounded in cases: `01_LENS_revised_competencies_and_CLOs.md`.
 - Per-pass detailed candidate files (passes 2–8) with full two-paragraph write-ups and citations.
 - This memo.
 

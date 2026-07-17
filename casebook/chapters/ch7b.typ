@@ -30,7 +30,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "7.1",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     Estonia launched X-Road in 2001 as the answer to fragmented
     government databases: a distributed data-exchange layer that
@@ -161,10 +161,10 @@
   lens-approach: [
     X-Road is the C7 big-tier transition case with a small-tier
     self-critique (induced 7.1 and 5.3 alternate; LENS D1/PT1).
-    LENS uses it in Domain 1 (Systems Analysis) for CLO-1 —
+    LENS uses it in Domain 1 (Systems Analysis) for LEO-1 —
     the data-exchange layer is an artifact whose own aging is
     part of system behavior — and in Domain 5 (Navigating
-    Sociotechnical Constraints) for CLO-5, since the state's
+    Sociotechnical Constraints) for LEO-5, since the state's
     commitment to the protocol is itself the governance choice
     determining future modernization cost. Pair with Cases
     25–26 for the C7 thread and with the big-tier C7
@@ -333,7 +333,7 @@
   scale: "big",
   induced-anchor: "3.2",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   evidence-source: "investigation",
 )
 
@@ -352,7 +352,7 @@
   evidence-flag: "preprint-tier",
   induced-anchor: "8.1",
   lens-anchor: "D4/PT6",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     The Coots et al. (2025) fintech lending fairness audit, posted as a
     preprint, examines a deployed consumer-lending model and finds it
@@ -427,8 +427,8 @@
       evaluated against, audit on outputs rather than reasoning about
       inputs, and decide on judgment that the trade-offs across
       competing definitions are acceptable for the deployment context.
-      This is the case-grounded basis for the CLO *Fairness beyond
-      omission* and the CLO *Judgment under inadequate evidence*
+      This is the case-grounded basis for the LEO *Fairness beyond
+      omission* and the LEO *Judgment under inadequate evidence*
       — the audit is itself a worked
       example of deciding under irreducible disagreement.#cn()
     ],
@@ -472,7 +472,7 @@
   ],
   lens-approach: [
     Coots is the small-tier frontier counter-case to Bartlett. LENS
-    uses the pair in Domain 4 (Test and Evaluation) for the CLO *Fairness beyond omission*; in Domain 4 again for the CLO *Judgment under inadequate evidence* (the pair is itself a
+    uses the pair in Domain 4 (Test and Evaluation) for the LEO *Fairness beyond omission*; in Domain 4 again for the LEO *Judgment under inadequate evidence* (the pair is itself a
     decision under irreducible disagreement); and in Domain 3 (Human-System Collaboration) for delegation of
     consequential consumer-finance decisions to a model. The
     preprint-tier flag is binding until peer review completes.
@@ -634,7 +634,7 @@
   scale: "big",
   induced-anchor: "8.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 198 — launching-the-brain-initiative ----
@@ -651,7 +651,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "5.1",
   lens-anchor: "D5+D1/PT4",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   coi: "Institutional overlap: an editor works in the connectomics field adjacent to this case and shares institutional ties to the BRAIN research community; no editor authored or contributed to this work. Anchored to widely cited primary position papers and independent journalism, not the editor's own work; the critical retrospective is the deliberate safeguard.",
   summary: [
     The BRAIN Initiative is one of the few large-program launches in the
@@ -824,7 +824,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     In 2022 a California court permitted Waymo to withhold
     trade-secret-laden safety details from a public DMV disclosure,
@@ -905,7 +905,7 @@
       The teaching point for LENS is that delegation of
       consequential decisions to an automated system creates a
       governance debt that the deploying organization owes the
-      public. The CLO *Delegation with revocation* is the
+      public. The LEO *Delegation with revocation* is the
       capability the case exercises: the safety case framework
       is the artifact that makes revocation possible —
       regulators or auditors can identify which sub-claim has
@@ -923,7 +923,7 @@
     "2023 response: structured safety case framework — claims/sub-claims/evidence types public; trade-secret items remain proprietary",
     "November 2025 independent third-party audits of safety case and remote-assistance program — the audits disclosed, not the underlying data",
     "Practice-synthesis tier: Waymo whitepaper + Montreal AI Ethics Institute + 2025 audit summaries; future validation ongoing",
-    "Pairs with Case 190 (Cruise foil) and Case 200 (CPUC permit framework); exercises NEW CLO Delegation with revocation",
+    "Pairs with Case 190 (Cruise foil) and Case 200 (CPUC permit framework); exercises NEW LEO Delegation with revocation",
   ),
   approaches: (
     during: (
@@ -933,7 +933,7 @@
     ),
     after: (
       [Treat the safety case framework as a living document — update the claims and evidence as post-deployment failure data accumulates, and publish the updates so the legitimacy artifact does not calcify.],
-      [Use the CLO *Delegation with revocation*: design the framework so a regulator or auditor can identify which sub-claim has failed and trigger a revocation pathway, not only a "trust us, we will fix it" assurance.],
+      [Use the LEO *Delegation with revocation*: design the framework so a regulator or auditor can identify which sub-claim has failed and trigger a revocation pathway, not only a "trust us, we will fix it" assurance.],
       [Carry the practice-synthesis evidence-tier flag honestly in any program documentation citing the framework — the artifact pattern is teachable, but the magnitude of its public-trust effect is still being measured.],
     ),
   ),
@@ -959,7 +959,7 @@
   lens-approach: [
     Waymo is the AV-safety governance case (induced 5.1; LENS
     D5/PT6). LENS uses it in Domain 5 (Navigating
-    Sociotechnical Constraints) for the CLO *Delegation
+    Sociotechnical Constraints) for the LEO *Delegation
     with revocation* — the safety case is what makes
     revocation possible — and in Domain 3 (Emerging Systems
     and Human-System Collaboration) for the deployer-side artifact that
@@ -974,7 +974,7 @@
   ),
   reflection-list: (
     [Identify an automated system in your context that faces a public-trust objection it cannot answer by full disclosure. What falsifiable argument structure could you publish that would make the system's reasoning auditable without requiring disclosure of the contested data?],
-    [Specify how a regulator or independent auditor would *revoke* the delegation in your system if a sub-claim of the safety case failed. The CLO *Delegation with revocation* requires this pathway to exist before deployment, not only after a public-facing failure.],
+    [Specify how a regulator or independent auditor would *revoke* the delegation in your system if a sub-claim of the safety case failed. The LEO *Delegation with revocation* requires this pathway to exist before deployment, not only after a public-facing failure.],
   ),
   courses: ("LEN 4", "LEN 8", "LEN 9"),
 )
@@ -994,7 +994,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     The California Public Utilities Commission established an AV
     passenger-service permit framework whose conditions are
@@ -1164,7 +1164,7 @@
   evidence-flag: "journalism-tier",
   induced-anchor: "5.2",
   lens-anchor: "D5/PT5",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     Aadhaar — India's biometric digital-identity system, with
     roughly one billion enrolled — was designed to streamline
@@ -1271,10 +1271,10 @@
       automated-welfare-delegation thread the corpus needs.
       The Domain-5 frame applies — a sociotechnical constraint
       (population-scale biometric delegation) tested against
-      constitutional dignity — and the CLO around fairness
+      constitutional dignity — and the LEO around fairness
       beyond omission applies directly: the harm was not the
       absence of the system but the operational exclusion
-      produced by it. The CLO on delegation with revocation
+      produced by it. The LEO on delegation with revocation
       applies too: the correction did not revoke the delegation
       but sought to bound it with a fallback requirement — and
       the gap between the Chandrachud dissent's principle and
@@ -1377,7 +1377,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5, CLO-4",
+  leo-anchor: "LEO-5, LEO-4",
   summary: [
     The CARE Principles for Indigenous Data Governance — Collective
     Benefit, Authority to Control, Responsibility, Ethics — were
@@ -1393,7 +1393,7 @@
     structure: not "this system should not deploy" but "this
     governance regime must be replaced for any deployment to be
     legitimate." The case sits alongside CARE-adjacent equity
-    threads in the v2 corpus and supports the CLO *Fairness beyond omission* — CARE specifies positive
+    threads in the v2 corpus and supports the LEO *Fairness beyond omission* — CARE specifies positive
     sovereignty, not merely the avoidance of harm. Practice-
     synthesis-tier flag preserved: principles are peer-reviewed;
     implementation literature is still emerging. Future
@@ -1448,7 +1448,7 @@
     ],
     [
       For the v2 framework revision, CARE is the case-grounded
-      basis for the CLO *Fairness beyond omission*. Removing
+      basis for the LEO *Fairness beyond omission*. Removing
       a biased feature, omitting a demographic variable, or
       de-identifying a dataset is fairness-by-subtraction; CARE
       specifies fairness-by-replacement of the governance regime.
@@ -1464,7 +1464,7 @@
     "Developed by Indigenous Data Sovereignty networks in Aotearoa NZ, Australia, US — explicit non-US-centered leadership",
     "Governance-replacement structure, not governance-supplementation — existing privacy regimes named as inadequate",
     "Lowitja Journal 2025 documents Ngangk Yira Institute implementation — first detailed case study at institutional scale",
-    "Supports CLO *Fairness beyond omission* — fairness as positive sovereignty, not subtraction of biased features",
+    "Supports LEO *Fairness beyond omission* — fairness as positive sovereignty, not subtraction of biased features",
   ),
   approaches: (
     during: (
@@ -1474,7 +1474,7 @@
     ),
     after: (
       [Track implementation outcomes against the four CARE conditions separately; the Lowitja Journal paper is the genre exemplar for what such a tracking report can look like.],
-      [Use CARE as the case-grounded basis for the CLO *Fairness beyond omission* — fairness as governance-regime replacement, not as feature-level subtraction.],
+      [Use CARE as the case-grounded basis for the LEO *Fairness beyond omission* — fairness as governance-regime replacement, not as feature-level subtraction.],
       [When asked whether CARE travels, name what the AU/NZ/US Indigenous Data Sovereignty networks supply (sustained institutional leadership, recognized peoplehood frameworks) before asserting transfer to other collective-rights contexts.],
     ),
   ),
@@ -1501,7 +1501,7 @@
     Sociotechnical Constraints) for the governance-regime
     replacement structure — existing privacy regimes named as
     inadequate to collective rights — and as the case-grounded
-    basis for the CLO *Fairness beyond omission*: fairness
+    basis for the LEO *Fairness beyond omission*: fairness
     as positive sovereignty, not the subtraction of biased
     features. Companion to the equity-thread cases in the v2
     corpus.
@@ -1533,7 +1533,7 @@
   evidence-source: "program-report",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     New York City Local Law 144 of 2021 became operationally
     effective on July 5, 2023, after the New York City Department
@@ -1647,7 +1647,7 @@
       producers are weaker governance instruments than the
       regulatory theory assumes. The intervention is real and
       its limits are real; the change-control-and-disclosure-as-
-      governance-artifacts CLO is anchored by the case at the
+      governance-artifacts LEO is anchored by the case at the
       municipal-regulatory scale, and the evaluation arc the
       audit regime opens is at the start of its evidence
       development.
@@ -1693,7 +1693,7 @@
   lens-approach: [
     NYC Local Law 144 is the change-control-and-disclosure-as-
     governance-artifacts case at municipal-regulatory scale
-    (induced 5.4; LENS D5/PT5; CLO-4 and CLO-5). LENS uses it
+    (induced 5.4; LENS D5/PT5; LEO-4 and LEO-5). LENS uses it
     in Domain 5 (Navigating Sociotechnical Constraints) for the
     audit-as-governance-instrument discipline. Pair with Case
     85 (OU Analyse governance-objection-dissolved-by-design),
@@ -1862,5 +1862,5 @@
   scale: "big",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )

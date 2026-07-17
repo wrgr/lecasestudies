@@ -30,7 +30,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "7.1",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1, CLO-4",
+  leo-anchor: "LEO-1, LEO-4",
   summary: [
     Nuclear-plant control-room modernization is one of the canonical
     C7 problems — legacy analog systems that have to be replaced
@@ -159,10 +159,10 @@
   lens-approach: [
     INL turbine-control upgrade is the C7 small-tier
     transition case (induced 7.1 and 3.1; LENS D1/PT1).
-    LENS uses it in Domain 1 (Systems Analysis) for CLO-1 —
+    LENS uses it in Domain 1 (Systems Analysis) for LEO-1 —
     the operator-task analysis under the digital cutover is
     the systems-analysis artifact the regulator consumes —
-    and in Domain 4 (Test and Evaluation) for CLO-4, since
+    and in Domain 4 (Test and Evaluation) for LEO-4, since
     the V\&V evidence is itself the measurement instrument
     the program rests on. Pair with Case 116 (Eurocat) for
     the small-tier C7 thread and with the LWRS big-tier
@@ -328,7 +328,7 @@
   scale: "big",
   induced-anchor: "4.1",
   lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
 )
 
 // ---- Case 156 — inl-lwrs-control-room-modernization ----
@@ -345,7 +345,7 @@
   evidence-source: "program-report",
   induced-anchor: "7.1",
   lens-anchor: "D3/PT4",
-  clo-anchor: "CLO-1, CLO-3",
+  leo-anchor: "LEO-1, LEO-3",
   summary: [
     The US commercial nuclear fleet is dominated by reactors
     originally licensed in the 1970s and 1980s with analog
@@ -527,7 +527,7 @@
   kind: "frontier",
   induced-anchor: "5.2",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   summary: [
     AI-augmented coding tools — GitHub Copilot, Cursor, Codeium, and peers
     — represent the largest real-time experiment in human-AI collaboration

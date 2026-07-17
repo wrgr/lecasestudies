@@ -1,14 +1,21 @@
-# LENS — Revised Competencies and Course Learning Objectives
+# LENS — Revised Competencies and Concentration Objectives (LEOs)
+
+<!-- Terminology note (July 2026): this proposal originally called the concentration-level
+objectives "Course Learning Objectives (CLOs)." They are now named **LENS Educational
+Objectives (LEOs)** — held at the program level, not the course level — with "CLO" reserved
+for course learning objectives and "MLO" for module learning objectives (see
+lens_program/2_LENS_Objectives_Course_Mapping.md §4). This preserved proposal text uses the
+LEO label throughout; the original filename is retained as a stable historical citation. -->
 
 > **STATUS: ADOPTED (June 2026), refined to v2.1 in `lens_program/1_LENS_Five_Competencies.md`.** This proposal is preserved as the design rationale; the current canonical set lives in the program-doc directory. Two refinements went in at adoption time:
 > 1. **D3 reorder + rename:** what this doc called "Domain 5 — Emerging Systems & Futures" is broadened to **Human-System Collaboration** and moved to position 3 (so the order reads as the flywheel: see the system → build → integrate humans → measure → deploy). T&E becomes D4; Sociotechnical Constraints becomes D5.
-> 2. **"New CLOs" → subobjectives.** The four items below framed as "[NEW] CLO" (Gap attribution, Delegation with revocation, Judgment under inadequate evidence, Fairness beyond omission) are sub-CLO-grain teaching points and ship as **named subobjectives** within the parent CLO, not as parallel top-level CLOs. Numbering: 1.5, 2.5, 3.3, 3.4, 4.4, 4.6, 5.6 (see canonical doc for full list).
+> 2. **"New LEOs" → subobjectives.** The four items below framed as "[NEW] LEO" (Gap attribution, Delegation with revocation, Judgment under inadequate evidence, Fairness beyond omission) are sub-LEO-grain teaching points and ship as **named subobjectives** within the parent LEO, not as parallel top-level LEOs. Numbering: 1.5, 2.5, 3.3, 3.4, 4.4, 4.6, 5.6 (see canonical doc for full list).
 
 *Original proposal text follows — preserved for design rationale and case-by-case grounding.*
 
 ---
 
-This document revises the five LENS competency domains and proposes new and amended required CLOs and sub-competencies. Every change is grounded in specific verified cases from the casebook sweep, named inline. Changes are marked **[NEW]**, **[AMENDED]**, or **[DEFERRED]**. Deferred items are named, not silently dropped.
+This document revises the five LENS competency domains and proposes new and amended required LEOs and sub-competencies. Every change is grounded in specific verified cases from the casebook sweep, named inline. Changes are marked **[NEW]**, **[AMENDED]**, or **[DEFERRED]**. Deferred items are named, not silently dropped.
 
 The revision rests on one organizing recognition the casebook surfaced: **unpacking case studies is itself the method LENS teaches.** The discipline of taking a real outcome, recovering the capability question behind it, and attributing the gap to human development, system design, or organizational performance is not a study aid layered on top of the curriculum. It is the curriculum's central practice, and the casebook is its primary instrument. This reframes the Practice Flywheel from an asserted process model into an observable one: every case in the book is a Flywheel turn rendered legible.
 
@@ -50,25 +57,25 @@ All six remain. The sweep confirmed each is now elucidable from verified cases. 
 
 ---
 
-## New and amended required CLOs
+## New and amended required LEOs
 
-### [NEW] CLO — Gap attribution
+### [NEW] LEO — Gap attribution
 *Distinguish capability gaps attributable to human development, system design, and organizational performance, and select measurement that isolates the intended cause.*
 - Home: Domain 3. Motivating cases: racial bias in pain assessment (the gap traced to a specific false-belief construct, not diffuse bias); Purdue Course Signals (a retention gap that was a selection artifact); school surveillance and student outcomes (the infrastructure, not the students, drove a measured share of the gap).
 
-### [NEW] CLO — Delegation with revocation
+### [NEW] LEO — Delegation with revocation
 *Evaluate when to delegate authority to an automated system, design the human oversight layer, and specify in advance the disconfirming evidence that would revoke the delegation.*
 - Home: Domain 5. Motivating cases: the delegation typology — TREWS (worked, with oversight), Epic Sepsis Model (delegated without validation), Dutch SyRI (delegation halted on rights grounds), Watson for Oncology (delegation driven by marketing ahead of capability).
 
-### [NEW] CLO — Judgment under inadequate evidence
+### [NEW] LEO — Judgment under inadequate evidence
 *Justify a consequential decision on incomplete and contested evidence: state what is known, what is assumed, and what would change the decision.*
-- Home: Domain 3, threaded to all. This CLO carries the revised understanding of decision-grade evidence (below). Motivating cases: nearly every intervention in the corpus was decided on sub-complete evidence — Course Signals, Epic Sepsis, IPE, the BRAIN Initiative launch.
+- Home: Domain 3, threaded to all. This LEO carries the revised understanding of decision-grade evidence (below). Motivating cases: nearly every intervention in the corpus was decided on sub-complete evidence — Course Signals, Epic Sepsis, IPE, the BRAIN Initiative launch.
 
-### [NEW] CLO — Fairness beyond omission
+### [NEW] LEO — Fairness beyond omission
 *Demonstrate that omitting a protected attribute does not establish fairness, and analyze competing fairness definitions using demographic-stratified outcome evidence.*
 - Home: Domain 3 (equity, threaded). Motivating cases: algorithmic mortgage lending (omitting race preserved pricing disparity); the fintech fairness audit (including race could reduce disparity — fairness definitions conflict); eGFR race-coefficient removal.
 
-### [AMENDED] CLO — Collaboration measurement
+### [AMENDED] LEO — Collaboration measurement
 *Measure the capability of a team or collaboration as a unit, distinct from the capability of any individual member.*
 - Home: Domain 3. Motivating cases: team-science training, interprofessional education.
 
@@ -80,7 +87,7 @@ All six remain. The sweep confirmed each is now elucidable from verified cases. 
 
 **Revised definition (adopted):** *Decision-grade evidence is the evidence we need to justify a decision. But we seldom — arguably never — have complete information or full agreement. Judgment is therefore a critical capability.*
 
-**Curricular consequence:** "decision-grade" is taught not as a fixed threshold but as a **sufficiency judgment under irreducible uncertainty.** The practitioner's task is to assess how far below complete information they stand, decide anyway, document the basis, and name what would change the decision. This converts a potential overclaim into the new "judgment under inadequate evidence" CLO above. The casebook supports this directly: across the corpus, the consequential decisions were made on incomplete and contested evidence, and the skilled actors were the ones who knew it and decided well regardless.
+**Curricular consequence:** "decision-grade" is taught not as a fixed threshold but as a **sufficiency judgment under irreducible uncertainty.** The practitioner's task is to assess how far below complete information they stand, decide anyway, document the basis, and name what would change the decision. This converts a potential overclaim into the new "judgment under inadequate evidence" LEO above. The casebook supports this directly: across the corpus, the consequential decisions were made on incomplete and contested evidence, and the skilled actors were the ones who knew it and decided well regardless.
 
 ---
 
@@ -93,4 +100,4 @@ All six remain. The sweep confirmed each is now elucidable from verified cases. 
 ---
 
 ## One-line summary of the revision
-LENS gains four new CLOs (gap attribution; delegation with revocation; judgment under inadequate evidence; fairness beyond omission), one amended CLO (collaboration measurement), four amended sub-competencies (governance-objection diagnostic; human oversight of automated output; cross-regime platform governance; collaboration-as-unit), and a reframed core term (decision-grade evidence as judgment under irreducible uncertainty) — each grounded in verified cases, with three items deliberately deferred.
+LENS gains four new LEOs (gap attribution; delegation with revocation; judgment under inadequate evidence; fairness beyond omission), one amended LEO (collaboration measurement), four amended sub-competencies (governance-objection diagnostic; human oversight of automated output; cross-regime platform governance; collaboration-as-unit), and a reframed core term (decision-grade evidence as judgment under irreducible uncertainty) — each grounded in verified cases, with three items deliberately deferred.

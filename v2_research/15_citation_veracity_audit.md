@@ -38,7 +38,7 @@ applied where compatible) · **COULD-NOT-VERIFY**.
   section (reframed "intervention pairing" → the decision-context / end-user-training / mitigation
   point the AERA paper actually makes), `beats`, `references` (now the AERA Open entry with DOI),
   `quote-source`, `le-insight`, `lens-approach`, `literature-items`, and the file header comment.
-  Removed the `// CITE-RECHECK:` line. Induced anchor 8.2, LENS D3/PT5, CLOs unchanged — still
+  Removed the `// CITE-RECHECK:` line. Induced anchor 8.2, LENS D3/PT5, LEOs unchanged — still
   correct.
 - **Editor note:** If the editor specifically wants the *intervention-pairing / targeting* teaching
   point (which the original prose leaned on), the right move is to ADD a second reference to

@@ -6,7 +6,7 @@
 // cases by primary domain, cases by LENS course, and the full
 // per-case reference list with retrieval lines — separately from the
 // concept-facing LENS Companion so the companion can stay focused on
-// what LENS *is* (the five competencies, the CLOs, the course mapping)
+// what LENS *is* (the five competencies, the LEOs, the course mapping)
 // and travel cleanly with advisory boards and prospective students.
 //
 // Build:
@@ -105,7 +105,7 @@
   per-case reference appendix that lets any source be traced. It is the
   same data the casebook itself ships, lifted into a standalone document
   so the LENS Companion can stay focused on what LENS *is* (the five
-  competencies, the CLOs, the course mapping) without the audit pages
+  competencies, the LEOs, the course mapping) without the audit pages
   travelling with it.
 ]
 

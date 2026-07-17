@@ -355,7 +355,7 @@ back to 23.16 mm.
 | Five-pillar framework + Why-LENS diagram          | done     | 0           |
 | Three new cases (21 / 22 / 34)                    | done     | 0           |
 | Editor bios (both verified, single-paragraph)     | done     | 0           |
-| F1 / F2 foundations + five CLO block              | done     | 0           |
+| F1 / F2 foundations + five LEO block              | done     | 0           |
 | Legal protective blocks in colophon               | done     | 0           |
 | Copyright 2026                                    | done     | 0           |
 | Lulu cream-paper workflow (dual PDF build)        | done     | 0           |
@@ -376,10 +376,10 @@ back to 23.16 mm.
   wherever the cycle Identify → Activate → Prototype → Analyze →
   Transition is described.
 
-### Five CLO competency block + LENS differentiator phrases
+### Five LEO competency block + LENS differentiator phrases
 - §V follows the pillar callout with a paired block: **"what LENS
-  graduates can do · the five competencies"**, listing CLO-1 through
-  CLO-5 verbatim from the LENS Objectives doc.
+  graduates can do · the five competencies"**, listing LEO-1 through
+  LEO-5 verbatim from the LENS Objectives doc.
 - Three differentiator phrases surfaced in bold once each: *within
   and across disparate systems*, *speed and scale*, *decision-grade
   evidence*, *gap attribution between learning, system design, and
@@ -604,79 +604,79 @@ subsequent printings.
 
 ## Stage 3 — v2.1 anchor assignments (June 2026)
 
-Editorial pass anchoring the 62 v1 cases that lacked `induced-anchor`, `lens-anchor`, and `clo-anchor` fields. Adopted as part of the v2.1 program sync. Closing essay (Case 194 *The Discipline We Build Next*) is intentionally left unanchored.
+Editorial pass anchoring the 62 v1 cases that lacked `induced-anchor`, `lens-anchor`, and `leo-anchor` fields. Adopted as part of the v2.1 program sync. Closing essay (Case 194 *The Discipline We Build Next*) is intentionally left unanchored.
 
-**Decision process.** Three parallel agents read each case's `summary`, `le-insight`, `lens-approach`, and `beats` fields and proposed (lens, CLO, induced) plus a one-line reason and a certainty rating. The brief required STRONG fit over liberal stretch and the explicit option to return UNCERTAIN. The editor (W. Gray-Roncal) reviewed all 62 assignments and made two overrides on top of the agent output: **Case 8 (ACGME duty-hours)** induced anchor set to 2.3 (transfer to high-consequence settings — FIRST/iCOMPARE tested the intervention's hypothesized gain), the agent having left it 'n/a'; **Case 32 (Fukushima)** induced anchor moved from 6.1 (institution-building) to 7.4 (multi-layer drift), since the load-bearing v1 lesson is the cumulative drift across coupled defenses rather than the missing INPO-equivalent (the institution-building lesson is secondary and lives in Case 107 INPO).
+**Decision process.** Three parallel agents read each case's `summary`, `le-insight`, `lens-approach`, and `beats` fields and proposed (lens, LEO, induced) plus a one-line reason and a certainty rating. The brief required STRONG fit over liberal stretch and the explicit option to return UNCERTAIN. The editor (W. Gray-Roncal) reviewed all 62 assignments and made two overrides on top of the agent output: **Case 8 (ACGME duty-hours)** induced anchor set to 2.3 (transfer to high-consequence settings — FIRST/iCOMPARE tested the intervention's hypothesized gain), the agent having left it 'n/a'; **Case 32 (Fukushima)** induced anchor moved from 6.1 (institution-building) to 7.4 (multi-layer drift), since the load-bearing v1 lesson is the cumulative drift across coupled defenses rather than the missing INPO-equivalent (the institution-building lesson is secondary and lives in Case 107 INPO).
 
 **Outcome.** 54 STRONG / 8 SOLID / 0 UNCERTAIN. SOLID flags are: 7 Military Fratricide, 14 AeroPerú 603, 30 Sago Mine, 41 TSB Bank IT Migration, 85 GIFT adoption gap, 106 Navy SWO Reform (genuine D2+D4 pair), 117 Singapore Airlines, 183 AlphaFold (genuine D4+D5 pair). The two D-pairs are the only multi-domain assignments; everywhere else a single primary D was load-bearing.
 
 **Verification columns** (`reviewed?` and `open questions`) are placeholders for the later human-review pass. The intent is that a reader of any case can see (a) which anchor was assigned and why, (b) whether the anchor + the case as drafted has been editorially verified, and (c) what's still open. Editor guideline checks (clarity, references real, references support the claim, conclusions reasonable, no overclaim) are a separate review track that will attach here when defined.
 
 
-| # | Title | lens | CLO | induced | certainty | reason (anchor rationale) | reviewed? | open questions |
+| # | Title | lens | LEO | induced | certainty | reason (anchor rationale) | reviewed? | open questions |
 |---|---|---|---|---|---|---|---|---|
-| 4 | Marine Corps Training in the INDOPACOM AOR | `D1/PT1` | `CLO-1` | `1.1` | STRONG | Declared vs engineered priority — capability requirements named but not engineered | — | — |
-| 5 | F-35 Sustainment & Maintainer Shortage | `D1/PT1` | `CLO-1` | `1.4` | STRONG | Sustainment-as-requirement: platform fielded ahead of capability infrastructure | — | — |
-| 6 | Kegworth / British Midland 92 | `D3/PT6` | `CLO-3` | `3.3` | STRONG | Mental model from prior variant; unreadable mode/vibration display; mode/state transparency | — | — |
-| 7 | Military Fratricide — Desert Storm to Afghanistan | `D1/PT1` | `CLO-1` | `1.3` | SOLID | Cross-org integration; spans D1+D4 (missing incident DB); D1 primary | — | — |
-| 8 | ACGME 80-Hour Resident Duty-Hour Reform | `D2/PT3` | `CLO-2` | `2.3` | STRONG | FIRST/iCOMPARE tested the duty-hour intervention's hypothesized gain — iteration of an intervention; editor set induced 2.3 | — | — |
-| 9 | Colgan Air Flight 3407 | `D4/PT2` | `CLO-4` | `2.1` | STRONG | Evidence/data-flow design: training-failure data existed but did not reach the hiring decision | — | — |
-| 10 | Asiana Airlines Flight 214 | `D3/PT6` | `CLO-3` | `3.3` | STRONG | Automation surprise; autothrottle HOLD reversion not annunciated — mode/state transparency | — | — |
-| 11 | Mark 14 Torpedo Failures | `D5/PT4` | `CLO-5` | `6.2` | STRONG | Operator-to-institution feedback channel; bureau insulated from operator evidence | — | — |
-| 12 | Operation Eagle Claw | `D1/PT1` | `CLO-1` | `1.3` | STRONG | Cross-organizational capability requirement; no standing joint command; built USSOCOM | — | — |
-| 13 | Helios Airways Flight 522 | `D3/PT3` | `CLO-3` | `3.1` | STRONG | Ambiguous cue carrying two meanings without differentiation — cue/alert design | — | — |
-| 14 | AeroPerú Flight 603 | `D1/PT1` | `CLO-1` | `3.1` | SOLID | Apparent vs actual redundancy at the source; D1 primary for the redundancy-architecture lesson | — | — |
-| 15 | Atlas Air Flight 3591 | `D4/PT2` | `CLO-4` | `2.4` | STRONG | Post-deployment surveillance: PRD's partial coverage as measurement-system completeness | — | — |
-| 16 | TransAsia Airways Flight 235 | `D3/PT3` | `CLO-3` | `3.1` | STRONG | Wrong-engine pattern recurrence; checklist-driven verification under startle | — | — |
-| 18 | Therac-25 | `D3/PT3` | `CLO-3` | `3.1` | STRONG | Safeguard removed without reassigning its load; uninformative MALFUNCTION 54 | — | — |
-| 19 | Patriot Missile / Dhahran | `D1/PT1` | `CLO-1` | `1.2` | STRONG | Capability degradation under system change; load-bearing design assumption did not travel | — | — |
-| 22 | Mars Climate Orbiter — Unit Mismatch | `D1/PT1` | `CLO-1` | `1.3` | STRONG | Interface-as-requirement across two organizations; boundary had no owner | — | — |
-| 26 | V-22 Osprey | `D5/PT4` | `CLO-5` | `7.4` | STRONG | Multi-layer drift; three services parallel without convergence; shortfall normalized | — | — |
-| 28 | Davis-Besse Reactor Head Corrosion | `D5/PT5` | `CLO-5` | `5.4` | STRONG | Regulatory capture; oversight layer adopted operator's schedule — change-control | — | — |
-| 29 | Mid Staffordshire NHS Foundation Trust | `D4/PT5` | `CLO-4` | `2.1` | STRONG | Measurement-and-reality divergence; no layer verified reports against patients | — | — |
-| 30 | Sago Mine Disaster | `D1/PT1` | `CLO-1` | `7.4` | SOLID | Cumulative inadequacy / multi-layer drift; D1 jointly assesses coupled defenses | — | — |
-| 31 | Upper Big Branch Mine Explosion | `D4/PT2` | `CLO-4` | `2.2` | STRONG | Measurement engineered as deception (dual books); protect decision-grade evidence | — | — |
-| 32 | Fukushima Daiichi | `D5/PT4` | `CLO-5` | `7.4` | STRONG | Multi-layer drift across defenses; editor set induced 7.4 (was 6.1) | — | — |
-| 33 | Northeast Blackout | `D3/PT6` | `CLO-3` | `3.3` | STRONG | Silent automation failure; missing meta-monitor / mode-state transparency for grid operators | — | — |
-| 35 | EHR / CPOE Implementation | `D3/PT3` | `CLO-3` | `3.1` | STRONG | Interface designed to billing, not clinical workflow; alert/default architecture | — | — |
-| 36 | Uber ATG / Tempe Fatality | `D3/PT6` | `CLO-3` | `3.2` | STRONG | Defining LENS human-AI teaming case; monitoring assigned as unsupportable role | — | — |
-| 37 | Eastern Air Lines Flight 401 | `D3/PT3` | `CLO-3` | `3.1` | STRONG | Attention as designable parameter; alert prioritization; CRM origin | — | — |
-| 38 | Boeing 737 Rudder Hardovers | `D1/PT1` | `CLO-1` | `1.2` | STRONG | Certification process failed to surface unrecoverable failure mode | — | — |
-| 39 | CrowdStrike Falcon Outage | `D5/PT4` | `CLO-5` | `5.4` | STRONG | Deployment-pipeline change-control: content treated differently than code | — | — |
-| 40 | Stanislav Petrov / 1983 False Alert | `D3/PT6` | `CLO-3` | `3.4` | STRONG | Positive human-in-the-loop case; recoverability via contextual judgment | — | — |
-| 41 | TSB Bank IT Migration | `D5/PT4` | `CLO-5` | `4.1` | SOLID | Schedule pressure overrode technical signal; no frontline halt authority | — | — |
-| 45 | inBloom | `D5/PT4` | `CLO-5` | `5.1` | STRONG | Purest governance failure; launched without consent/stakeholder engagement | — | — |
-| 46 | Healthcare.gov Launch | `D1/PT1` | `CLO-1` | `1.1` | STRONG | Capability mismatch at scale; wrong human capabilities assembled | — | — |
-| 49 | Summit Learning / Personalized Learning Rollout | `D5/PT4` | `CLO-5` | `5.4` | STRONG | Pedagogy worked; deployment governance (consent, evidence, exit) not engineered | — | — |
-| 50 | Tennessee Voluntary Pre-K Study | `D4/PT5` | `CLO-4` | `2.4` | STRONG | Rigorous measurement returned unwelcome finding; discipline lacked architecture to absorb | — | — |
-| 51 | Algorithmic Bias in Educational Predictive Analytics | `D4/PT5` | `CLO-4` | `8.1` | STRONG | Construct-definition (what 'at-risk' means) as load-bearing equity decision | — | — |
-| 52 | UK Post Office Horizon Scandal | `D3/PT6` | `CLO-3` | `3.2` | STRONG | Institutional automation bias across two decades; the computer said so | — | — |
-| 53 | Theranos | `D5/PT4` | `CLO-5` | `5.3` | STRONG | Fraud exploited the seam between FDA and CLIA regimes; cross-regime governance gap | — | — |
-| 58 | Hyatt Regency Walkway Collapse | `D5/PT4` | `CLO-5` | `5.4` | STRONG | Change-control / engineering-licensure review failure | — | — |
-| 84 | VA Wait-Time Scandal | `D4/PT5` | `CLO-4` | `2.2` | STRONG | Canonical measurement-as-capability-failure; system gamed and protected institution | — | — |
-| 85 | GIFT and the Adoption Gap | `D2/PT4` | `CLO-2` | `1.4` | SOLID | Technology and science work; missing institutional adoption pathway | — | — |
-| 86 | xAPI / Total Learning Architecture — Interoperability Gap | `D5/PT4` | `CLO-5` | `5.3` | STRONG | Technical standard exists; cross-org data governance has not materialized | — | — |
-| 87 | Implementation Science in Healthcare — The 17-Year Gap | `D2/PT4` | `CLO-2` | `1.4` | STRONG | Meta-case for the discipline: research-to-practice adoption/sustainment | — | — |
-| 90 | Ariane 5 Flight 501 | `D1/PT1` | `CLO-1` | `7.2` | STRONG | Re-verifying reused safety-critical code against the new operating envelope | — | — |
-| 97 | 9/11 Intelligence Sharing Failures | `D5/PT1` | `CLO-5` | `5.3` | STRONG | Cross-agency integration as engineerable architecture; platform-governance seams | — | — |
-| 103 | Crew Resource Management & CAST | `D3/PT3` | `CLO-3` | `4.3` | STRONG | Engineered cockpit's authority gradient + communication protocol | — | — |
-| 105 | Keystone ICU / Pronovost Checklist | `D3/PT3` | `CLO-3` | `4.1` | STRONG | Checklist plus institution-backed nurse stop authority | — | — |
-| 106 | Navy Surface Warfare Readiness Reform | `D2+D4/PT4` | `CLO-4` | `2.3` | SOLID | Paired training/cultural reform whose teaching point is the missing measurement infrastructure | — | — |
-| 107 | INPO and the Nuclear Academy | `D5/PT4` | `CLO-5` | `6.1` | STRONG | Industry-level institution built after catastrophe — cross-org capability is engineerable | — | — |
-| 108 | Korean Air Safety Transformation | `D3/PT3` | `CLO-3` | `4.3` | STRONG | Redesigned cockpit authority gradient by changing linguistic medium | — | — |
-| 109 | Toyota Production System / Andon Cord | `D3/PT3` | `CLO-3` | `4.1` | STRONG | Cheap artifact plus protected frontline halt authority — inseparable pair | — | — |
-| 110 | TeamSTEPPS | `D5/PT4` | `CLO-5` | `6.4` | STRONG | Cross-domain capability transfer with funded implementation infrastructure | — | — |
-| 111 | U.S. Nuclear Navy / Rickover Training Model | `D1/PT1` | `CLO-1` | `1.4` | STRONG | Qualification regime as a system parameter sustained across decades | — | — |
-| 112 | Georgia State University Predictive Analytics | `D4/PT5` | `CLO-4` | `8.3` | STRONG | Construct definition + human-loop architecture turn prediction into support not gatekeeping | — | — |
-| 113 | Cognitive Tutor / Carnegie Learning | `D2/PT5` | `CLO-2` | `2.3` | STRONG | Theory → instrument → RCT → scaled deployment; canonical LE iteration pipeline | — | — |
-| 114 | Tylenol Recall | `D5/PT3` | `CLO-5` | `4.4` | STRONG | Pre-committed institutional values operational under crisis | — | — |
-| 115 | Aviation Safety Reporting System (ASRS) | `D4/PT2` | `CLO-4` | `4.2` | STRONG | Confidential reporting architecture paired with credible non-punitive use | — | — |
-| 116 | Bristol Heart Babies Reform | `D4/PT5` | `CLO-4` | `2.1` | STRONG | Risk-adjusted outcomes registry with publication — measuring the failure mode | — | — |
-| 117 | Singapore Airlines Safety Transformation | `D5/PT4` | `CLO-5` | `1.4` | SOLID | Sustained capability investment ahead of regulatory minimums | — | — |
-| 178 | Tesla Autopilot — Recurring Fatalities | `D3/PT6` | `CLO-3` | `3.2` | STRONG | Passive monitoring of good-enough automation as an unsustainable human role | — | — |
-| 179 | Cruise Robotaxi — Pedestrian Drag | `D5/PT4` | `CLO-5` | `5.4` | STRONG | Pre-committed incident-disclosure governance — gap is institutional, not technical | — | — |
-| 182 | Predictive Policing — PredPol | `D4/PT5` | `CLO-4` | `8.1` | STRONG | Construct gap between 'where crime occurs' and 'where arrests are recorded' | — | — |
-| 183 | AlphaFold — Protein Structure Prediction | `D4+D5/PT2` | `CLO-4` | `2.1` | SOLID | Preconditions around the model — evidence + governance | — | — |
+| 4 | Marine Corps Training in the INDOPACOM AOR | `D1/PT1` | `LEO-1` | `1.1` | STRONG | Declared vs engineered priority — capability requirements named but not engineered | — | — |
+| 5 | F-35 Sustainment & Maintainer Shortage | `D1/PT1` | `LEO-1` | `1.4` | STRONG | Sustainment-as-requirement: platform fielded ahead of capability infrastructure | — | — |
+| 6 | Kegworth / British Midland 92 | `D3/PT6` | `LEO-3` | `3.3` | STRONG | Mental model from prior variant; unreadable mode/vibration display; mode/state transparency | — | — |
+| 7 | Military Fratricide — Desert Storm to Afghanistan | `D1/PT1` | `LEO-1` | `1.3` | SOLID | Cross-org integration; spans D1+D4 (missing incident DB); D1 primary | — | — |
+| 8 | ACGME 80-Hour Resident Duty-Hour Reform | `D2/PT3` | `LEO-2` | `2.3` | STRONG | FIRST/iCOMPARE tested the duty-hour intervention's hypothesized gain — iteration of an intervention; editor set induced 2.3 | — | — |
+| 9 | Colgan Air Flight 3407 | `D4/PT2` | `LEO-4` | `2.1` | STRONG | Evidence/data-flow design: training-failure data existed but did not reach the hiring decision | — | — |
+| 10 | Asiana Airlines Flight 214 | `D3/PT6` | `LEO-3` | `3.3` | STRONG | Automation surprise; autothrottle HOLD reversion not annunciated — mode/state transparency | — | — |
+| 11 | Mark 14 Torpedo Failures | `D5/PT4` | `LEO-5` | `6.2` | STRONG | Operator-to-institution feedback channel; bureau insulated from operator evidence | — | — |
+| 12 | Operation Eagle Claw | `D1/PT1` | `LEO-1` | `1.3` | STRONG | Cross-organizational capability requirement; no standing joint command; built USSOCOM | — | — |
+| 13 | Helios Airways Flight 522 | `D3/PT3` | `LEO-3` | `3.1` | STRONG | Ambiguous cue carrying two meanings without differentiation — cue/alert design | — | — |
+| 14 | AeroPerú Flight 603 | `D1/PT1` | `LEO-1` | `3.1` | SOLID | Apparent vs actual redundancy at the source; D1 primary for the redundancy-architecture lesson | — | — |
+| 15 | Atlas Air Flight 3591 | `D4/PT2` | `LEO-4` | `2.4` | STRONG | Post-deployment surveillance: PRD's partial coverage as measurement-system completeness | — | — |
+| 16 | TransAsia Airways Flight 235 | `D3/PT3` | `LEO-3` | `3.1` | STRONG | Wrong-engine pattern recurrence; checklist-driven verification under startle | — | — |
+| 18 | Therac-25 | `D3/PT3` | `LEO-3` | `3.1` | STRONG | Safeguard removed without reassigning its load; uninformative MALFUNCTION 54 | — | — |
+| 19 | Patriot Missile / Dhahran | `D1/PT1` | `LEO-1` | `1.2` | STRONG | Capability degradation under system change; load-bearing design assumption did not travel | — | — |
+| 22 | Mars Climate Orbiter — Unit Mismatch | `D1/PT1` | `LEO-1` | `1.3` | STRONG | Interface-as-requirement across two organizations; boundary had no owner | — | — |
+| 26 | V-22 Osprey | `D5/PT4` | `LEO-5` | `7.4` | STRONG | Multi-layer drift; three services parallel without convergence; shortfall normalized | — | — |
+| 28 | Davis-Besse Reactor Head Corrosion | `D5/PT5` | `LEO-5` | `5.4` | STRONG | Regulatory capture; oversight layer adopted operator's schedule — change-control | — | — |
+| 29 | Mid Staffordshire NHS Foundation Trust | `D4/PT5` | `LEO-4` | `2.1` | STRONG | Measurement-and-reality divergence; no layer verified reports against patients | — | — |
+| 30 | Sago Mine Disaster | `D1/PT1` | `LEO-1` | `7.4` | SOLID | Cumulative inadequacy / multi-layer drift; D1 jointly assesses coupled defenses | — | — |
+| 31 | Upper Big Branch Mine Explosion | `D4/PT2` | `LEO-4` | `2.2` | STRONG | Measurement engineered as deception (dual books); protect decision-grade evidence | — | — |
+| 32 | Fukushima Daiichi | `D5/PT4` | `LEO-5` | `7.4` | STRONG | Multi-layer drift across defenses; editor set induced 7.4 (was 6.1) | — | — |
+| 33 | Northeast Blackout | `D3/PT6` | `LEO-3` | `3.3` | STRONG | Silent automation failure; missing meta-monitor / mode-state transparency for grid operators | — | — |
+| 35 | EHR / CPOE Implementation | `D3/PT3` | `LEO-3` | `3.1` | STRONG | Interface designed to billing, not clinical workflow; alert/default architecture | — | — |
+| 36 | Uber ATG / Tempe Fatality | `D3/PT6` | `LEO-3` | `3.2` | STRONG | Defining LENS human-AI teaming case; monitoring assigned as unsupportable role | — | — |
+| 37 | Eastern Air Lines Flight 401 | `D3/PT3` | `LEO-3` | `3.1` | STRONG | Attention as designable parameter; alert prioritization; CRM origin | — | — |
+| 38 | Boeing 737 Rudder Hardovers | `D1/PT1` | `LEO-1` | `1.2` | STRONG | Certification process failed to surface unrecoverable failure mode | — | — |
+| 39 | CrowdStrike Falcon Outage | `D5/PT4` | `LEO-5` | `5.4` | STRONG | Deployment-pipeline change-control: content treated differently than code | — | — |
+| 40 | Stanislav Petrov / 1983 False Alert | `D3/PT6` | `LEO-3` | `3.4` | STRONG | Positive human-in-the-loop case; recoverability via contextual judgment | — | — |
+| 41 | TSB Bank IT Migration | `D5/PT4` | `LEO-5` | `4.1` | SOLID | Schedule pressure overrode technical signal; no frontline halt authority | — | — |
+| 45 | inBloom | `D5/PT4` | `LEO-5` | `5.1` | STRONG | Purest governance failure; launched without consent/stakeholder engagement | — | — |
+| 46 | Healthcare.gov Launch | `D1/PT1` | `LEO-1` | `1.1` | STRONG | Capability mismatch at scale; wrong human capabilities assembled | — | — |
+| 49 | Summit Learning / Personalized Learning Rollout | `D5/PT4` | `LEO-5` | `5.4` | STRONG | Pedagogy worked; deployment governance (consent, evidence, exit) not engineered | — | — |
+| 50 | Tennessee Voluntary Pre-K Study | `D4/PT5` | `LEO-4` | `2.4` | STRONG | Rigorous measurement returned unwelcome finding; discipline lacked architecture to absorb | — | — |
+| 51 | Algorithmic Bias in Educational Predictive Analytics | `D4/PT5` | `LEO-4` | `8.1` | STRONG | Construct-definition (what 'at-risk' means) as load-bearing equity decision | — | — |
+| 52 | UK Post Office Horizon Scandal | `D3/PT6` | `LEO-3` | `3.2` | STRONG | Institutional automation bias across two decades; the computer said so | — | — |
+| 53 | Theranos | `D5/PT4` | `LEO-5` | `5.3` | STRONG | Fraud exploited the seam between FDA and CLIA regimes; cross-regime governance gap | — | — |
+| 58 | Hyatt Regency Walkway Collapse | `D5/PT4` | `LEO-5` | `5.4` | STRONG | Change-control / engineering-licensure review failure | — | — |
+| 84 | VA Wait-Time Scandal | `D4/PT5` | `LEO-4` | `2.2` | STRONG | Canonical measurement-as-capability-failure; system gamed and protected institution | — | — |
+| 85 | GIFT and the Adoption Gap | `D2/PT4` | `LEO-2` | `1.4` | SOLID | Technology and science work; missing institutional adoption pathway | — | — |
+| 86 | xAPI / Total Learning Architecture — Interoperability Gap | `D5/PT4` | `LEO-5` | `5.3` | STRONG | Technical standard exists; cross-org data governance has not materialized | — | — |
+| 87 | Implementation Science in Healthcare — The 17-Year Gap | `D2/PT4` | `LEO-2` | `1.4` | STRONG | Meta-case for the discipline: research-to-practice adoption/sustainment | — | — |
+| 90 | Ariane 5 Flight 501 | `D1/PT1` | `LEO-1` | `7.2` | STRONG | Re-verifying reused safety-critical code against the new operating envelope | — | — |
+| 97 | 9/11 Intelligence Sharing Failures | `D5/PT1` | `LEO-5` | `5.3` | STRONG | Cross-agency integration as engineerable architecture; platform-governance seams | — | — |
+| 103 | Crew Resource Management & CAST | `D3/PT3` | `LEO-3` | `4.3` | STRONG | Engineered cockpit's authority gradient + communication protocol | — | — |
+| 105 | Keystone ICU / Pronovost Checklist | `D3/PT3` | `LEO-3` | `4.1` | STRONG | Checklist plus institution-backed nurse stop authority | — | — |
+| 106 | Navy Surface Warfare Readiness Reform | `D2+D4/PT4` | `LEO-4` | `2.3` | SOLID | Paired training/cultural reform whose teaching point is the missing measurement infrastructure | — | — |
+| 107 | INPO and the Nuclear Academy | `D5/PT4` | `LEO-5` | `6.1` | STRONG | Industry-level institution built after catastrophe — cross-org capability is engineerable | — | — |
+| 108 | Korean Air Safety Transformation | `D3/PT3` | `LEO-3` | `4.3` | STRONG | Redesigned cockpit authority gradient by changing linguistic medium | — | — |
+| 109 | Toyota Production System / Andon Cord | `D3/PT3` | `LEO-3` | `4.1` | STRONG | Cheap artifact plus protected frontline halt authority — inseparable pair | — | — |
+| 110 | TeamSTEPPS | `D5/PT4` | `LEO-5` | `6.4` | STRONG | Cross-domain capability transfer with funded implementation infrastructure | — | — |
+| 111 | U.S. Nuclear Navy / Rickover Training Model | `D1/PT1` | `LEO-1` | `1.4` | STRONG | Qualification regime as a system parameter sustained across decades | — | — |
+| 112 | Georgia State University Predictive Analytics | `D4/PT5` | `LEO-4` | `8.3` | STRONG | Construct definition + human-loop architecture turn prediction into support not gatekeeping | — | — |
+| 113 | Cognitive Tutor / Carnegie Learning | `D2/PT5` | `LEO-2` | `2.3` | STRONG | Theory → instrument → RCT → scaled deployment; canonical LE iteration pipeline | — | — |
+| 114 | Tylenol Recall | `D5/PT3` | `LEO-5` | `4.4` | STRONG | Pre-committed institutional values operational under crisis | — | — |
+| 115 | Aviation Safety Reporting System (ASRS) | `D4/PT2` | `LEO-4` | `4.2` | STRONG | Confidential reporting architecture paired with credible non-punitive use | — | — |
+| 116 | Bristol Heart Babies Reform | `D4/PT5` | `LEO-4` | `2.1` | STRONG | Risk-adjusted outcomes registry with publication — measuring the failure mode | — | — |
+| 117 | Singapore Airlines Safety Transformation | `D5/PT4` | `LEO-5` | `1.4` | SOLID | Sustained capability investment ahead of regulatory minimums | — | — |
+| 178 | Tesla Autopilot — Recurring Fatalities | `D3/PT6` | `LEO-3` | `3.2` | STRONG | Passive monitoring of good-enough automation as an unsustainable human role | — | — |
+| 179 | Cruise Robotaxi — Pedestrian Drag | `D5/PT4` | `LEO-5` | `5.4` | STRONG | Pre-committed incident-disclosure governance — gap is institutional, not technical | — | — |
+| 182 | Predictive Policing — PredPol | `D4/PT5` | `LEO-4` | `8.1` | STRONG | Construct gap between 'where crime occurs' and 'where arrests are recorded' | — | — |
+| 183 | AlphaFold — Protein Structure Prediction | `D4+D5/PT2` | `LEO-4` | `2.1` | SOLID | Preconditions around the model — evidence + governance | — | — |
 
 *Case 194 — The Discipline We Build Next* — closing framing essay; intentionally unanchored.
 
@@ -706,9 +706,9 @@ The book is now organized by v2.1 competency × {what fails / what works + front
 
 **Three clear-error placements fixed during the Q&A pass** (anchors corrected, cases moved chapters in the same atomic renumber):
 
-- **Three Mile Island** — `lens-anchor` was `D4/PT4` (T&E); content is a control-room interface case with the audit's recommended `induced: 3.1` (cue/alert). Fixed to `D3/PT4`, `CLO-3, CLO-1`. Moved from 4A to 3A.
-- **USS Vincennes** — `lens-anchor` was `D2/PT6` (drafted incorrectly; never corrected by the v1→v2.1 remap because D2 doesn't shift). Mode/state-transparency case. Fixed to `D3/PT6`, `CLO-3`. Moved from 2A to 3A.
-- **Texas City BP** — `lens-anchor` was `D4/PT5` but induced `5.4` (change-control / disclosure) is governance, not measurement. Fixed to `D5/PT4`, `CLO-5`. Moved from 4A to 5A.
+- **Three Mile Island** — `lens-anchor` was `D4/PT4` (T&E); content is a control-room interface case with the audit's recommended `induced: 3.1` (cue/alert). Fixed to `D3/PT4`, `LEO-3, LEO-1`. Moved from 4A to 3A.
+- **USS Vincennes** — `lens-anchor` was `D2/PT6` (drafted incorrectly; never corrected by the v1→v2.1 remap because D2 doesn't shift). Mode/state-transparency case. Fixed to `D3/PT6`, `LEO-3`. Moved from 2A to 3A.
+- **Texas City BP** — `lens-anchor` was `D4/PT5` but induced `5.4` (change-control / disclosure) is governance, not measurement. Fixed to `D5/PT4`, `LEO-5`. Moved from 4A to 5A.
 
 **On `induced` / `lens` cross-domain linkages** (per editor sign-off, June 2026):
 
@@ -805,7 +805,7 @@ Each carries the three anchors, `// VERIFY:` comments in source for the remainin
 
 **Relocations of framing apparatus.** The "iteration gap" editor's note moved from the old Iterative Development chapter to Part V *What Fails* (Kodak/BlackBerry now anchor it); a new "before and after" editor's note opens Part VI; Part VI chapters carry BEFORE/AFTER phase marks. Introduction §VI, matrix note, and overview frontmatter rewritten for the topical organization; the failure-mode taxonomy and paired-intervention threads retained as cross-part analytic threads.
 
-**Program docs.** `lens_program/2_LENS_Objectives_Course_Mapping.md` bumped to v2.2: the LDT PLOs of record (03-06-2025) reproduced verbatim at subobjective grain (PLO-1.1–6.4); PLO-5/6 titles corrected; new §4.1 PLO ↔ CLO support map (every PLO area has primary support from ≥1 CLO). `.docx` companions for docs 1–2 regenerated from the `.md` (program-owner round-trip still open). CLO content unchanged from v2.1.
+**Program docs.** `lens_program/2_LENS_Objectives_Course_Mapping.md` bumped to v2.2: the LDT PLOs of record (03-06-2025) reproduced verbatim at subobjective grain (PLO-1.1–6.4); PLO-5/6 titles corrected; new §4.1 PLO ↔ LEO support map (every PLO area has primary support from ≥1 LEO). `.docx` companions for docs 1–2 regenerated from the `.md` (program-owner round-trip still open). LEO content unchanged from v2.1.
 
 **Verification.** `scripts/check-cases.sh`: **200 cases, 0 failures** after the restructure and again after the K-12 insertion. All three book editions and both overviews rebuilt; see README for page counts.
 
@@ -828,14 +828,14 @@ Editor decision: one printed **main volume** (selected case set) plus a **digita
 - **Selection registry:** `lib/selection.typ` (48 slugs incl. the closing case) — the printed cut is a build-layer list; editing it re-cuts the volumes. Global numbering (1–205) is shared; gaps in the printed sequence intentionally point at the supplement; the matrix marks supplement cases with ° in both editions.
 - **Main volume roster:** ~5–7 per part, Part II expanded to 11 for the Education weighting (LENS's home school): I — 1, 5, 6, 19, 20, 26 · II — 45, 49, 53, 60, 61 | 68, 72, 77, 80, 93, 95 · III — 97, 102, 112, 117, 119, 120 · IV — 124, 129, 131, 133, 137, 141 · V — 144, 148, 152, 155, 157 · VI — 161, 164, 167, 173, 176, 179 · VII — 184, 185, 187, 191, 196, 199, 203 · closing 205. Coverage verified: every LEN course has multiple worked examples; delegation-with-revocation carried by 185; learning-science-at-scale by 72/77.
 - **Mode-letter review:** the eleven July cases' T/D/N/H/G/K codes re-checked against the legend and the editor memo; Hurricane Maria corrected GD → **GN** (the FEMA after-action report documents known, persisting shortfalls — normalization, not design-out).
-- **Apparatus disposition:** main volume keeps full introduction, how-to, full-corpus matrix (° markers), full-corpus domain/course indexes, CLO appendix, About LENS; the per-case references appendix ships only in the complete reference build and the Validation & Audit tracker. Supplement front matter is minimal: title, two-page "argument, briefly" digest, matrix.
+- **Apparatus disposition:** main volume keeps full introduction, how-to, full-corpus matrix (° markers), full-corpus domain/course indexes, LEO appendix, About LENS; the per-case references appendix ships only in the complete reference build and the Validation & Audit tracker. Supplement front matter is minimal: title, two-page "argument, briefly" digest, matrix.
 - **Products:** print + digital main volume (259 pp; spine ≈ 16.1 mm), digital supplement (594 pp), complete reference edition kept as an internal build (846 pp). `check-cases.sh` runs on the complete build: **205 cases, 0 failures.**
 
 ### Addendum (July 2026): corpus critical-accuracy pass — Part I (Healthcare)
 
 Running the website's critical-review prompt back across the printed corpus, one case at a time, verified against primary sources. **Part I complete** (cases 1–44: ch1a *What Fails* 1–10, ch1b *What Works* 11–44). The pass doubles as source re-confirmation — the "What Works" half alone surfaced fabricated figures, wrong author attributions, a mis-named regulatory mechanism, and one conflated-evidence "success." All fixes preserve load-bearing hedges and COI disclosures; `check-cases.sh` held at **205/0** after each wave.
 
-Representative corrections applied: 2 EHR ($40B→$30B; "largest"→"among the largest"); 3 Watson (MD Anderson conflation → Manipal/IBM divestiture); 6 pain bias (222 *white* students; opposite-direction detail restored); 7 VA wait-time (figures + IG could-not-tie-deaths hedge); 29 BCMA (fabricated "80.3%" → transcription errors *eliminated*, 6.1%→0); 30 (Jacobs editorial re-attributed); 31 JIGSAWS ("Ishii" dropped); 33 (Co→Hussain; Russ→Patterson); 34 COMPOSER ("5.0pp readmission" was the bundle-compliance result); 35 (Obermeyer 200M = class annual reach, not one algorithm); 36 (AlphaFold 200M → 2024 DB paper); 38 iPLEDGE (Brinker→Shin; "Pinheiro 2013" fabricated → Collins 2014); 40 (N=221 registrants → 117/46 analytic); 44 Japan PMDA (mechanism is **IDATEN**, not PACMP). Anchor-typo fixes (D4+D4→D4+D3; Domain-3 CLO-4→CLO-3) folded in where they contradicted the case's own metadata.
+Representative corrections applied: 2 EHR ($40B→$30B; "largest"→"among the largest"); 3 Watson (MD Anderson conflation → Manipal/IBM divestiture); 6 pain bias (222 *white* students; opposite-direction detail restored); 7 VA wait-time (figures + IG could-not-tie-deaths hedge); 29 BCMA (fabricated "80.3%" → transcription errors *eliminated*, 6.1%→0); 30 (Jacobs editorial re-attributed); 31 JIGSAWS ("Ishii" dropped); 33 (Co→Hussain; Russ→Patterson); 34 COMPOSER ("5.0pp readmission" was the bundle-compliance result); 35 (Obermeyer 200M = class annual reach, not one algorithm); 36 (AlphaFold 200M → 2024 DB paper); 38 iPLEDGE (Brinker→Shin; "Pinheiro 2013" fabricated → Collins 2014); 40 (N=221 registrants → 117/46 analytic); 44 Japan PMDA (mechanism is **IDATEN**, not PACMP). Anchor-typo fixes (D4+D4→D4+D3; Domain-3 LEO-4→LEO-3) folded in where they contradicted the case's own metadata.
 
 **Cases flagged weaker / to revisit in a later pass** (editor-directed; non-blocking):
 
@@ -908,7 +908,7 @@ The one-case-per-subagent critical pass, verified against primary sources, now c
 - **182 Amazon hiring — "never deployed" smooths a two-sided source.** Reuters also reported recruiters "looked at the recommendations." Title "Deprecated 2018" vs source's "disbanded by early 2017."
 - **164 Grenfell — "grey elephant" attributed to "the inquiry"** appears to be an authorial coinage; drop the attribution or use the inquiry's language.
 - **196 Coots — framing overstatement.** Body frames the study as an unawareness-vs-mitigation group-fairness-metric experiment; the paper is a profit/calibration audit.
-- **Lower-priority (staleness / wording / precision):** 195 "open investigation EA22-002" closed Apr 2024; 197 "hundreds of departments" high-end for PredPol; 198 "BRAIN 2025 report (Jorgenson 2015)" conflates the 2014 ACD report with the 2015 paper; 200 "August 2024 framework was updated" was draft-for-comment; 202 CLO-anchor CLO-5 vs "fairness beyond omission" (subobj 4.6/CLO-4); 173 "62 years since 1963" → 63 to 2026; 188 "accelerated GDPR" chronology; 168/176/193 paraphrase-as-quotation confidence; 190/204 duplicate-incident (same Cruise event) — dedup or cross-link.
+- **Lower-priority (staleness / wording / precision):** 195 "open investigation EA22-002" closed Apr 2024; 197 "hundreds of departments" high-end for PredPol; 198 "BRAIN 2025 report (Jorgenson 2015)" conflates the 2014 ACD report with the 2015 paper; 200 "August 2024 framework was updated" was draft-for-comment; 202 LEO-anchor LEO-5 vs "fairness beyond omission" (subobj 4.6/LEO-4); 173 "62 years since 1963" → 63 to 2026; 188 "accelerated GDPR" chronology; 168/176/193 paraphrase-as-quotation confidence; 190/204 duplicate-incident (same Cruise event) — dedup or cross-link.
 - **Housekeeping:** CLAUDE.md carries stale case-number pointers in the COI/evidence-flag lists (e.g., Coots, BRAIN, Watson, Johnson, JIGSAWS, Gándara) reflecting pre-July draft numbers; several `// VERIFY:` comments (170 Ebola, 171 Maria, 178 UN cluster) were confirmed by this pass and can be cleared. 177 CIRAS lacks the supplemental-tier `evidence-flag:` field the prose hedge implies.
 
 ### Part VI–VII checkpoint — editor rulings applied (July 2026)
@@ -924,7 +924,7 @@ Editor ruled on the deferred items from the Parts III–VII pass; all actioned a
 - **190/204 Cruise — DEDUP + CROSS-LINK.** Reciprocal cross-references added and each case's distinct scope made explicit (190 = disclosure-posture failure, Part VII What Fails; 204 = institutional/governance frontier). Not merged/renumbered (that would force a corpus-wide renumber).
 - **164 Grenfell — FIXED.** "Grey elephant" no longer attributed to the inquiry (which never used the phrase); recast as an authorial framing.
 - **182 Amazon — FIXED.** Two-sided Reuters sourcing surfaced (company says never used by recruiters; Reuters reported recruiters "looked at the recommendations"); year framing corrected (team disbanded by early 2017; Oct 2018 is the reporting date; title 2018→2017).
-- **Low-priority applied:** 195 EA22-002 marked closed Apr 2024 (superseded by the Dec-2023 ~2M-vehicle recall); 197 "hundreds"→"scores of" jurisdictions; 198 BRAIN-2025-report (2014 NIH ACD) distinguished from the Jorgenson 2015 paper; 200 Aug-2024 CPUC action marked as draft-for-comment; 202 clo-anchor "CLO-5"→"CLO-5, CLO-4" (fairness-beyond-omission = 4.6/CLO-4); 173 "62 years"→"63 years" (1963→2026); 188 "accelerated GDPR"→"raised the salience of" (GDPR's 2018 application date predates the scandal); 168 Sago and 176 Tylenol and 193 Madoff quote-sources relabeled to mark paraphrase/composite where not verbatim.
+- **Low-priority applied:** 195 EA22-002 marked closed Apr 2024 (superseded by the Dec-2023 ~2M-vehicle recall); 197 "hundreds"→"scores of" jurisdictions; 198 BRAIN-2025-report (2014 NIH ACD) distinguished from the Jorgenson 2015 paper; 200 Aug-2024 CPUC action marked as draft-for-comment; 202 leo-anchor "LEO-5"→"LEO-5, LEO-4" (fairness-beyond-omission = 4.6/LEO-4); 173 "62 years"→"63 years" (1963→2026); 188 "accelerated GDPR"→"raised the salience of" (GDPR's 2018 application date predates the scandal); 168 Sago and 176 Tylenol and 193 Madoff quote-sources relabeled to mark paraphrase/composite where not verbatim.
 
 ### Housekeeping (July 2026)
 

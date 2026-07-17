@@ -161,7 +161,7 @@
   scale: "big",
   induced-anchor: "3.1",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   evidence-source: "investigation",
 )
 
@@ -180,7 +180,7 @@
   evidence-source: "investigation",
   induced-anchor: "1.1",
   lens-anchor: "D1+D5/PT4",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     The Boeing 737 MAX was a re-engined 737 meant to fly without new pilot
     training — the commercial promise that sold it against the Airbus
@@ -340,12 +340,12 @@
   lens-approach: [
     The 737 MAX is the canonical engineered-out-capability failure
     (induced 1.1; LENS D1+D3/PT4). LENS uses it in Domain 1 (Systems
-    Analysis) for the CLO-1 work of decomposing system performance
+    Analysis) for the LEO-1 work of decomposing system performance
     requirements into measurable human-capability requirements:
     the elided pilot-training requirement is the traceable artifact
     a capability-requirements analysis would have surfaced before the
     omission could become a contract deliverable. LENS uses it in
-    Domain 5 (Navigating Sociotechnical Constraints; CLO-5) for the
+    Domain 5 (Navigating Sociotechnical Constraints; LEO-5) for the
     delegated-authority regulatory regime in which Boeing reviewed
     its own most consequential safety judgments — the case is the
     governance counterpart to Therac-25 (Case 1) at the
@@ -522,7 +522,7 @@
   scale: "big",
   induced-anchor: "1.3",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   evidence-source: "investigation",
 )
 
@@ -675,7 +675,7 @@
   scale: "big",
   induced-anchor: "1.2",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   evidence-source: "investigation",
 )
 
@@ -693,7 +693,7 @@
   evidence-source: "investigation",
   induced-anchor: "7.1",
   lens-anchor: "D1+D3/PT1",
-  clo-anchor: "CLO-1, CLO-2",
+  leo-anchor: "LEO-1, LEO-2",
   summary: [
     Glass cockpits — integrated digital primary flight displays and
     multifunction displays replacing the inherited six-pack of
@@ -1008,7 +1008,7 @@
   scale: "big",
   induced-anchor: "7.2",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
 )
 
 // ---- Case 102 — air-france-flight-447 ----
@@ -1175,9 +1175,9 @@
     avoid rather than to handle. The case pairs with Kegworth (Case 103)
     as the canonical pair on transition-training failure across a
     changed system, and with the Boeing 737 MAX MCAS sequence as the
-    near-current echo. CLO mapping: CLO-2 (Iterative Development)
-    primary; CLO-4 (Test and Evaluation) for the BEA investigation
-    framing; CLO-3 (Human-System Collaboration) for the
+    near-current echo. LEO mapping: LEO-2 (Iterative Development)
+    primary; LEO-4 (Test and Evaluation) for the BEA investigation
+    framing; LEO-3 (Human-System Collaboration) for the
     automation-handoff dimension.
   ],
   literature-items: (
@@ -1207,7 +1207,7 @@
   evidence-source: "investigation",
   induced-anchor: "1.2",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",  // alternate framing adopted: CLO-5 dropped; reserve CLO-5 (Human-System Collaboration) for AI-mediated cases; AF447 is automation-handoff under classical FBW, not AI-mediated,
+  leo-anchor: "LEO-2, LEO-4",  // alternate framing adopted: LEO-5 dropped; reserve LEO-5 (Human-System Collaboration) for AI-mediated cases; AF447 is automation-handoff under classical FBW, not AI-mediated,
 )
 
 // ---- Case 103 — kegworth-british-midland-92 ----
@@ -1366,7 +1366,7 @@
   scale: "big",
   induced-anchor: "3.3",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   evidence-source: "investigation",
 )
 
@@ -1520,7 +1520,7 @@
   scale: "big",
   induced-anchor: "3.3",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   evidence-source: "investigation",
 )
 
@@ -1673,7 +1673,7 @@
   scale: "big",
   induced-anchor: "3.1",
   lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   evidence-source: "investigation",
 )
 
@@ -1828,7 +1828,7 @@
   scale: "big",
   induced-anchor: "3.1",
   lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   evidence-source: "investigation",
 )
 
@@ -1982,7 +1982,7 @@
   scale: "big",
   induced-anchor: "3.1",
   lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   evidence-source: "investigation",
 )
 
@@ -2000,7 +2000,7 @@
   evidence-source: "investigation",
   induced-anchor: "3.4",
   lens-anchor: "D3/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     On July 16, 2013, during EVA-23 outside the International Space
     Station, water began collecting inside the helmet of European
@@ -2300,7 +2300,7 @@
   scale: "big",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT2",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   evidence-source: "investigation",
 )
 
@@ -2451,7 +2451,7 @@
   scale: "big",
   induced-anchor: "2.4",
   lens-anchor: "D4/PT2",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   evidence-source: "investigation",
 )
 
@@ -2470,7 +2470,7 @@
   evidence-source: "investigation",
   induced-anchor: "7.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     NASA lost two Space Shuttle crews to the same organizational pathology
     seventeen years apart: Challenger in 1986, when O-ring seals failed in
@@ -2804,7 +2804,7 @@
   scale: "big",
   induced-anchor: "6.3",
   lens-anchor: "D5/PT2",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
 )
 
 // ---- Case 113 — boeing-starliner ----
@@ -2964,5 +2964,5 @@
   evidence-source: "investigation",
   induced-anchor: "6.3",
   lens-anchor: "D5/PT2",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
 )

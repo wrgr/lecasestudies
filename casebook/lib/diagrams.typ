@@ -1181,8 +1181,8 @@
   })
 )
 
-// ---- dgm-five-competencies: the five CLOs as a horizontal chain --
-// Paired with dgm-why-lens: pillars say why LENS exists, CLOs say
+// ---- dgm-five-competencies: the five LEOs as a horizontal chain --
+// Paired with dgm-why-lens: pillars say why LENS exists, LEOs say
 // what its graduates can do.
 #let dgm-five-competencies = diagram-frame(
   height: 64mm,

@@ -173,7 +173,7 @@
   scale: "big",
   induced-anchor: "3.1",
   lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
 )
 
 // ---- Case 2 — ehr-cpoe-implementation ----
@@ -333,7 +333,7 @@
   scale: "big",
   induced-anchor: "3.1",
   lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
 )
 
 // ---- Case 3 — watson-for-oncology-delegation-marketed ----
@@ -351,7 +351,7 @@
   evidence-flag: "journalism-tier",
   induced-anchor: "2.4",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-1, CLO-4",
+  leo-anchor: "LEO-1, LEO-4",
   summary: [
     Watson for Oncology was IBM's heavily marketed clinical-decision-
     support system, sold to hospitals worldwide as a cancer-
@@ -679,7 +679,7 @@
   scale: "big",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   evidence-source: "investigation",
 )
 
@@ -697,7 +697,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.4",
   lens-anchor: "D4+D3/PT6",
-  clo-anchor: "CLO-4, CLO-5, CLO-3",
+  leo-anchor: "LEO-4, LEO-5, LEO-3",
   summary: [
     The Epic Sepsis Model was a proprietary machine-learning sepsis
     prediction tool embedded in the Epic EHR and deployed in hundreds of
@@ -817,8 +817,8 @@
     motivates the post-deployment-surveillance discipline LENS
     teaches. Used in Domain 4 (Test and Evaluation) for measurement
     architecture under proprietary opacity and the gap-attribution
-    CLO; in Domain 3 (Human-System Collaboration) for the
-    delegation-with-revocation CLO — Epic was delegated without a
+    LEO; in Domain 3 (Human-System Collaboration) for the
+    delegation-with-revocation LEO — Epic was delegated without a
     pre-specified revocation criterion; and in Domain 5 (Navigating
     Sociotechnical Constraints) for the cross-regime / platform
     governance seam. Pairs directly against TREWS (Case 20) and
@@ -851,7 +851,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   summary: [
     Hoffman, Trawalter, Axt, and Oliver (_PNAS_ 2016) surveyed medical
     students and residents on a battery of false beliefs about
@@ -929,7 +929,7 @@
       layers of the system: the construct definition (eGFR), the
       validation architecture (pulse oximetry), and the
       human-development mechanism (Hoffman). The trio is the
-      case-grounded basis for the CLO *Gap attribution*: distinguishing
+      case-grounded basis for the LEO *Gap attribution*: distinguishing
       capability gaps attributable to human development, system
       design, and organizational performance, and selecting
       measurement that isolates the intended cause.
@@ -975,7 +975,7 @@
   lens-approach: [
     Hoffman is the human-development case in the race-construct
     trio (Cases 25, 26 and 6). LENS uses it in Domain 4 (Test and
-    Evaluation) for the CLO *Gap attribution* — the gap is in
+    Evaluation) for the LEO *Gap attribution* — the gap is in
     the clinician's training, not the construct or the device —
     and in Domain 2 (Learning Engineering Design) for the
     curriculum-design implication. The trio together is the
@@ -1149,7 +1149,7 @@
   scale: "big",
   induced-anchor: "2.2",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   evidence-source: "investigation",
 )
 
@@ -1168,7 +1168,7 @@
   evidence-source: "investigation",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   coi: "Institutional overlap: an editor shares an institution (Johns Hopkins) with an author of this work; no editor was personally involved. The disputed mortality estimate is contested in the case itself.",
   summary: [
     Medical error in the United States is not a single incident but a
@@ -1326,7 +1326,7 @@
   lens-approach: [
     Medical error is the central evidence anchor of the curriculum
     (induced 2.1; LENS D4/PT5). LENS uses it in Domain 4 (Test and
-    Evaluation; CLO-4) for the foundational measurement problem: the
+    Evaluation; LEO-4) for the foundational measurement problem: the
     death certificate cannot record the failure mode it is supposed
     to govern, and the contested mortality estimates show what
     happens when an instrument's gap is filled by extrapolation.
@@ -1376,7 +1376,7 @@
   evidence-source: "investigation",
   induced-anchor: "2.4",
   lens-anchor: "D4+D3/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   diagram: dgm.dgm-curve(
     ((1.0, 1.0), (2.0, 1.4), (3.5, 1.8), (5.0, 2.4), (6.5, 3.0), (7.5, 0.8)),
     milestone: 7.5,
@@ -1546,9 +1546,9 @@
   lens-approach: [
     Vioxx is the canonical pharmaceutical post-deployment-surveillance
     case (induced 2.4; LENS D4+D3/PT5). LENS uses it in Domain 4
-    (Test and Evaluation; CLO-4) for post-market surveillance as a
+    (Test and Evaluation; LEO-4) for post-market surveillance as a
     measurement deliverable — the signal existed; the institutional
-    architecture to aggregate it did not. LENS uses it in Domain 3 (Human-System Collaboration; CLO-3) for the change-control
+    architecture to aggregate it did not. LENS uses it in Domain 3 (Human-System Collaboration; LEO-3) for the change-control
     and disclosure architecture between manufacturer, regulator, and
     prescriber that determines whether ambiguous safety signals reach
     a decision boundary. Pair with Radiology AI (Case 35) as the
@@ -1728,5 +1728,5 @@
   scale: "big",
   induced-anchor: "5.3",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )

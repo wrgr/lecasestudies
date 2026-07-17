@@ -3,7 +3,7 @@
 //
 // 8 × 10, white background. The concept-facing companion to
 // *Capability Matters: A Casebook*: program-of-record documentation
-// (the v2.1 five competencies, the CLOs, the course mapping) plus
+// (the v2.1 five competencies, the LEOs, the course mapping) plus
 // the casebook's induced → canonical crosswalk and the three-anchor
 // convention every case carries. Intended to travel with advisory
 // boards, prospective students, recruiting conversations, and program
@@ -163,11 +163,11 @@
   text(font: sans, size: 9.5pt, fill: text-dark)[
     *I.* The Five LENS Competencies — formal names, taglines, main
     objectives, and the v2.1 subobjective set (1.1 – 5.6). The
-    organising layer over the formal CLOs.
+    organising layer over the formal LEOs.
 
-    *II.* The CLOs and the Course Mapping — the five concentration
+    *II.* The LEOs and the Course Mapping — the five concentration
     learning objectives, the LDT / LENS course descriptions, the
-    course-to-CLO coverage matrix, and the LEN course list with
+    course-to-LEO coverage matrix, and the LEN course list with
     per-course case counts.
 
     *III.* Crosswalks — the casebook's induced framework mapped to the
@@ -334,10 +334,10 @@
 #h1("The Five LENS Competencies — v2.1")
 
 #text(font: sans, size: 10pt, fill: text-dark)[
-  Organising layer over the formal CLOs. Formal names carry program
+  Organising layer over the formal LEOs. Formal names carry program
   documentation; taglines carry recruiting and the site. Subobjective
   numbers (1.1, 3.2, …) are stable tags for case studies, course
-  modules, and capstone rubrics. The CLO language in the program
+  modules, and capstone rubrics. The LEO language in the program
   documentation remains the language of record.
 ]
 
@@ -345,7 +345,7 @@
 
 #competency(
   "1", "Systems Analysis", "see the whole system",
-  "Systems Thinking and Analysis (CLO-1)",
+  "Systems Thinking and Analysis (LEO-1)",
   [Trace how human capability and system performance depend on each
    other, so interventions target the real problem.],
   (
@@ -369,7 +369,7 @@
 
 #competency(
   "2", "Iterative Development", "build, test, refine",
-  "Learning Engineering Design and Implementation (CLO-2)",
+  "Learning Engineering Design and Implementation (LEO-2)",
   [Design capability interventions through iterative engineering
    cycles that survive contact with real operational environments.],
   (
@@ -392,7 +392,7 @@
 
 #competency(
   "3", "Human-System Collaboration", "work together",
-  "Human-System Collaboration and Adaptive Systems (CLO-3)",
+  "Human-System Collaboration and Adaptive Systems (LEO-3)",
   [Design human-system partnerships — including but not limited to
    human-AI — that make people more capable while preserving human
    agency and the recoverability of the system.],
@@ -421,7 +421,7 @@
 
 #competency(
   "4", "Test and Evaluation", "show what works",
-  "Data, Measurement, and Evaluation (CLO-4)",
+  "Data, Measurement, and Evaluation (LEO-4)",
   [Produce decision-grade evidence linking learning to operational
    impact — where decision-grade is a sufficiency judgment under
    irreducible uncertainty — and tell a learning gap from a system gap.],
@@ -448,7 +448,7 @@
 
 #competency(
   "5", "Navigating Sociotechnical Constraints", "make it work in the real world",
-  "Context and Domain Fluency (CLO-5)",
+  "Context and Domain Fluency (LEO-5)",
   [Integrate capability interventions into the sociotechnical systems
    they must live in: the regulatory, organizational, cultural, and
    technical realities that determine whether good designs survive.],
@@ -482,9 +482,9 @@
 #pagebreak()
 
 // ============================================================
-// PART II — CLOs + COURSE MAPPING
+// PART II — LEOs + COURSE MAPPING
 // ============================================================
-#h1("CLOs and Course Mapping — v2.1")
+#h1("LEOs and Course Mapping — v2.1")
 
 #text(font: sans, size: 10pt, fill: text-dark)[
   The LDT M.Ed. is a 10-course, 30-credit, online/asynchronous master's
@@ -492,39 +492,39 @@
   Learning Experience Design (LXD, currently operating), AI Leadership
   in Education (AILE, launching August 2026), and Learning Engineering
   (LENS, launching August 2026). LENS graduates demonstrate competency
-  across five domains; the CLOs below are the assessable form.
+  across five domains; the LEOs below are the assessable form.
 ]
 
 #v(8pt)
 
-#h2("The Five CLOs")
+#h2("The Five LEOs")
 
 #block(width: 100%, fill: rgb("#FAFAFA"), inset: 8pt, stroke: 0.3pt + rule-soft, {
   set par(leading: 0.55em)
   text(font: sans, size: 9pt, fill: text-dark)[
-    *CLO-1 · Systems Thinking and Analysis.* Decompose system
+    *LEO-1 · Systems Thinking and Analysis.* Decompose system
     performance requirements into measurable human capability
     requirements. Apply systems engineering lifecycle models. Analyze
     interdependencies between human and system performance to identify
     gaps and predict operational impact at scale.
 
-    *CLO-2 · Learning Engineering Design and Implementation.* Design
+    *LEO-2 · Learning Engineering Design and Implementation.* Design
     capability development interventions through iterative engineering
     cycles. Evaluate evidence-based design strategies for transfer to
     high-consequence settings. Construct and communicate implementation
     plans.
 
-    *CLO-3 · Human-System Collaboration and Adaptive Systems.* Design
+    *LEO-3 · Human-System Collaboration and Adaptive Systems.* Design
     human-system partnerships that make people more capable while
     preserving human agency. Specify delegation with revocation.
     Measure collaboration as a unit of analysis.
 
-    *CLO-4 · Data, Measurement, and Evaluation.* Design ethical
+    *LEO-4 · Data, Measurement, and Evaluation.* Design ethical
     instrumentation. Construct decision-grade evidence under
     irreducible uncertainty. Apply gap attribution. Demonstrate
     fairness beyond omission.
 
-    *CLO-5 · Context and Domain Fluency.* Integrate capability
+    *LEO-5 · Context and Domain Fluency.* Integrate capability
     interventions into regulatory, organizational, cultural, and
     technical realities. Synthesize across boundaries. Anticipate
     adoption and sustainment barriers, including cross-regime /
@@ -534,14 +534,14 @@
 
 #v(8pt)
 
-#h2("Course-to-CLO coverage")
+#h2("Course-to-LEO coverage")
 
 #table(
   columns: 6,
   align: (left, center, center, center, center, center),
   stroke: 0.3pt + rule-soft,
   inset: 5pt,
-  [*Course*], [*CLO-1*], [*CLO-2*], [*CLO-3*], [*CLO-4*], [*CLO-5*],
+  [*Course*], [*LEO-1*], [*LEO-2*], [*LEO-3*], [*LEO-4*], [*LEO-5*],
   [LDT F1 (Learning Sciences Studio)], [], [✘], [], [], [],
   [LDT F2 (Critical Perspectives)], [], [], [], [], [✘],
   [LEN 1 (Principles of LE for Complex Systems)], [✘], [✘], [], [], [],
@@ -618,19 +618,19 @@
     *`lens-anchor`* — e.g. `"D3/PT5"` — the canonical LENS five
     domain + problem type (1 – 6) the case is *primary* for.
 
-    *`clo-anchor`* — e.g. `"CLO-3"` — the assessable CLO the case
+    *`leo-anchor`* — e.g. `"LEO-3"` — the assessable LEO the case
     serves as a worked example for (course mapping anchor).
   ]
 })
 
 // ============================================================
-// COURSE COVERAGE APPENDIX — competency → CLO crosswalk, LEN course
+// COURSE COVERAGE APPENDIX — competency → LEO crosswalk, LEN course
 // list with per-course case counts, and a short coverage narrative.
 // The same appendix the casebook ships; it sits in the companion
 // because the counts read as concept (what the program covers) more
 // than audit (which cases land in which course).
 // ============================================================
-#include "backmatter/appendix-clo-courses.typ"
+#include "backmatter/appendix-leo-courses.typ"
 
 // ============================================================
 // PART IV — THE CANONICAL PROGRAM DOCUMENTS

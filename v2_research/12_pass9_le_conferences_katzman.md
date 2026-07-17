@@ -2,7 +2,7 @@
 
 *Focused candidate-discovery pass. The editor flagged two under-covered seams in the v2 corpus: (1) the John Katzman / Princeton Review / 2U / Noodle / enrollment-management / yield-optimization line, and (2) recent learning-engineering conference proceedings (LAK, AIED, EDM, L@S, ICLS/ISLS) and journals (JLA, Computers & Education, JLS, BJET, Cognition Technology & Work) that the prior v2 sweep did not reach. This pass returns 12 candidates: 7 LE-conference candidates and 5 Katzman / enrollment-management candidates. Numbering continues from v2-921; this pass uses v2-922 through v2-933.*
 
-**Anchor systems.** Three per case: induced 1–8 / 32 from `competencies.md`; canonical LENS Domain 1–5 / Problem Type 1–6 from `lens_program/1_LENS_Five_Competencies.md`; CLO mapping including the four NEW CLOs in `v2_research/01_*` (gap attribution; delegation with revocation; judgment under inadequate evidence; fairness beyond omission) and the amended collaboration-measurement CLO.
+**Anchor systems.** Three per case: induced 1–8 / 32 from `competencies.md`; canonical LENS Domain 1–5 / Problem Type 1–6 from `lens_program/1_LENS_Five_Competencies.md`; LEO mapping including the four NEW LEOs in `v2_research/01_*` (gap attribution; delegation with revocation; judgment under inadequate evidence; fairness beyond omission) and the amended collaboration-measurement LEO.
 
 **COI note.** John Katzman is a collaborator with the editor's home institution (JHU) but not intimately involved. Each Katzman / enrollment-management entry carries a `coi-light` flag — affiliation disclosure similar to JIGSAWS (Case 150), rendered as an affiliation note rather than the standing gold-bordered COI block.
 
@@ -23,7 +23,7 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 8.3 — Designing predictions to trigger support, not gatekeeping
 - alternate-anchors: 8.1 (Choosing the construct — "willingness to pay" as the optimization target); 8.4 (Surfacing bias through governance, not just technique)
 - LENS mapping: Domain 3 (Measurement) + Domain 4 (Context / sociotechnical constraints); Problem Type 5 (Evidence under operational constraint); secondary PT6
-- CLO anchor: [NEW] CLO — Fairness beyond omission; [NEW] CLO — Gap attribution; CLO-3
+- LEO anchor: [NEW] LEO — Fairness beyond omission; [NEW] LEO — Gap attribution; LEO-3
 - evidence-source: program-report (Brookings) + journalism + practitioner (vendor case studies)
 - evidence-flag: **practice-synthesis-tier** — author hedges named below; vendor data are not auditable
 - citation: Engler, A., "Enrollment algorithms are contributing to the crises of higher education," Brookings Institution, 14 Sept 2021, https://www.brookings.edu/articles/enrollment-algorithms-are-contributing-to-the-crises-of-higher-education/
@@ -42,7 +42,7 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 8.1 — Choosing the construct (what gets predicted, what counts)
 - alternate-anchors: 5.4 (Change-control and disclosure as governance artifacts — enrollment management as undisclosed policy shift); 8.4
 - LENS mapping: Domain 4 (Context / sociotechnical); secondary Domain 3; Problem Type 5
-- CLO anchor: [NEW] CLO — Fairness beyond omission; CLO-4
+- LEO anchor: [NEW] LEO — Fairness beyond omission; LEO-4
 - evidence-source: program-report (New America) + practitioner (book chapters from journalists and researchers)
 - evidence-flag: **practice-synthesis-tier** (Burd 2020 is a New America policy report; the 2024 Harvard Education Press volume is a multi-author practitioner / investigative synthesis)
 - citation: Burd, S. J., "Crisis Point: How Enrollment Management and the Merit-Aid Arms Race Are Derailing Public Higher Education," New America, Feb 2020, ERIC ED604970, https://files.eric.ed.gov/fulltext/ED604970.pdf; Burd, S. J. (ed.), *Lifting the Veil on Enrollment Management: How a Powerful Industry Is Limiting Social Mobility in American Higher Education*, Harvard Education Press, 2024, ISBN 9781682538920
@@ -61,7 +61,7 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 5.3 — Cross-regime and platform governance seams
 - alternate-anchors: 5.2 (Human-in-the-loop for consequential decisions — incentive-compensation rule enforcement); 5.4
 - LENS mapping: Domain 4 (Context); Problem Type 6 (Human-AI teaming — where the "AI" is the OPM operating recruiting/marketing under university brand)
-- CLO anchor: CLO-4; [NEW] CLO — Delegation with revocation
+- LEO anchor: LEO-4; [NEW] LEO — Delegation with revocation
 - evidence-source: investigation (GAO audit)
 - evidence-flag: *(none — investigation-grade)*
 - citation: U.S. Government Accountability Office, "Higher Education: Education Needs to Strengthen Its Approach to Monitoring Colleges' Arrangements with Online Program Managers," GAO-22-104463, published 5 Apr 2022 / released 5 May 2022, https://www.gao.gov/products/gao-22-104463
@@ -79,7 +79,7 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 5.4 — Change-control and disclosure as governance artifacts
 - alternate-anchors: 8.3 (predictions/marketing used to recruit rather than support); 4.4 (Pre-committed institutional response — absent here)
 - LENS mapping: Domain 4; Problem Type 6
-- CLO anchor: CLO-4; [NEW] CLO — Delegation with revocation
+- LEO anchor: LEO-4; [NEW] LEO — Delegation with revocation
 - evidence-source: investigation (court filings) + journalism
 - evidence-flag: **journalism-tier** (court complaint is investigation-grade; the predatory-targeting reconstruction rests on the complaint and contemporaneous reporting)
 - citation: Stephanie Luna v. University of Southern California, class action complaint filed Los Angeles County Superior Court, May 2023; Higher Ed Dive reporting, May 2023; classaction.org and topclassactions.com summaries; Project on Predatory Student Lending statement on USC-2U partnership termination, 2024
@@ -97,7 +97,7 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 8.4 — Surfacing bias through governance, not just technique
 - alternate-anchors: 5.1 (Stakeholder trust and consent as preconditions); 8.1
 - LENS mapping: Domain 4 (Context / sociotechnical); Domain 5; Problem Type 6
-- CLO anchor: CLO-4; [NEW] CLO — Fairness beyond omission; CLO-5
+- LEO anchor: LEO-4; [NEW] LEO — Fairness beyond omission; LEO-5
 - evidence-source: peer-reviewed (PACMHCI / CSCW)
 - evidence-flag: *(none — peer-reviewed)*
 - citation: Pyle, C. & Andalibi, N., "Algorithmic College Admissions in the U.S.: Distances Between Vendors' Claims and Applicants' Perceptions," *Proceedings of the ACM on Human-Computer Interaction*, Vol. 9, No. 7, Article CSCW369, Nov 2025, DOI 10.1145/3757550
@@ -119,14 +119,14 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 2.3 — Closed-loop evidence linked to intervention
 - alternate-anchors: 2.4 (Post-deployment surveillance and disconfirmation); 6.4 (Cross-domain adaptation — Cognitive Tutor is the canonical learning-sciences-to-classroom translation)
 - LENS mapping: Domain 2 (Learning Engineering Design); Domain 3 (Measurement); Problem Type 4 (Evidence-based design at scale); secondary Problem Type 5
-- CLO anchor: CLO-2; CLO-3; [NEW] CLO — Judgment under inadequate evidence (the policy decision rides on the year-2 finding while the year-1 null is in the same study)
+- LEO anchor: LEO-2; LEO-3; [NEW] LEO — Judgment under inadequate evidence (the policy decision rides on the year-2 finding while the year-1 null is in the same study)
 - evidence-source: peer-reviewed
 - evidence-flag: *(none)*
 - citation: Pane, J. F., Griffin, B. A., McCaffrey, D. F., & Karam, R., "Effectiveness of Cognitive Tutor Algebra I at Scale," *Educational Evaluation and Policy Analysis* 36(2):127–144, 2014, DOI 10.3102/0162373713507480; RAND Addendum WR-1050
 - domains: K-12 mathematics, intelligent tutoring, education policy
 - capability question: When the most rigorously developed intelligent tutoring system in the field is deployed at scale, does the measured effect arrive on the timeline the marketing implies?
 - what happened / what worked / what's open: The RAND team cluster-randomized 147 schools across seven states to continue their current Algebra I curriculum or to adopt Cognitive Tutor Algebra I (CTAI) for two years. Year-one posttest scores: no significant difference between conditions. Year-two posttest scores: CTAI high schools significantly outperformed control schools. The honest reading the authors press: a one-year evaluation would have published a null result; a two-year evaluation surfaced a real effect; both findings were in the same trial. This is the post-deployment-surveillance anchor at small-tier translated into a *design lesson* for evaluation horizons: the timeline of the evaluation is itself a falsifiable design choice. Pairs structurally with v2-202 (Purdue Course Signals reverse-causality) as the methodological-discipline pair, and with v1 Case 42 (Cognitive Tutor) as the direct deeper-evidence-of update.
-- why this fits the proposed anchor: 2.3 is closed-loop evidence. The closed loop here ran for two years; closing it at one year would have produced the wrong decision. The "judgment under inadequate evidence" CLO is directly motivated.
+- why this fits the proposed anchor: 2.3 is closed-loop evidence. The closed loop here ran for two years; closing it at one year would have produced the wrong decision. The "judgment under inadequate evidence" LEO is directly motivated.
 - deeper-evidence-of-v1: Case 42 (Cognitive Tutor) — distinct because v1 covers the system; this entry covers the at-scale evaluation and the timeline-of-evidence lesson.
 
 ### v2-928 — ASSISTments National Replication: From Math Effect to Long-Term Follow-Through (Roschelle et al., AERJ 2016; Murphy et al., 2020; Heffernan ongoing)
@@ -136,7 +136,7 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 2.3 — Closed-loop evidence linked to intervention
 - alternate-anchors: 6.4 (Cross-domain adaptation — the virtual-training adaptation arm); 8.3 (predictions-to-trigger-support, given the larger effects for lower-performing and minority students)
 - LENS mapping: Domain 2; Domain 3; Problem Type 4
-- CLO anchor: CLO-2; CLO-3; [NEW] CLO — Gap attribution (the heterogeneous-effect finding attributes a larger share of the gain to lower-performing students)
+- LEO anchor: LEO-2; LEO-3; [NEW] LEO — Gap attribution (the heterogeneous-effect finding attributes a larger share of the gain to lower-performing students)
 - evidence-source: peer-reviewed
 - evidence-flag: *(none)*
 - citation: Roschelle, J., Feng, M., Murphy, R. F., & Mason, C. A., "Online Mathematics Homework Increases Student Achievement," *AERA Open* 2(4):1–12, 2016, DOI 10.1177/2332858416673968; Murphy, R. et al., 2020 follow-up; Arnold Ventures RCT of virtual-training adaptation (ongoing through 8th-grade follow-up)
@@ -153,7 +153,7 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 3.4 — Communicate evidence honestly to technical and non-technical stakeholders (LENS subobjective; sits closest to induced 5.2 — Human-in-the-loop for consequential decisions)
 - alternate-anchors: 2.4 (Post-deployment surveillance and disconfirmation); 6.2 (Operator-to-institution feedback channels)
 - LENS mapping: Domain 3 (Measurement); Domain 5; Problem Type 5; secondary Problem Type 6
-- CLO anchor: CLO-3; CLO-5; [NEW] CLO — Delegation with revocation (teacher chooses to act on or override the prediction)
+- LEO anchor: LEO-3; LEO-5; [NEW] LEO — Delegation with revocation (teacher chooses to act on or override the prediction)
 - evidence-source: peer-reviewed
 - evidence-flag: *(none — the underlying papers are peer-reviewed in BJET and ACM LAK proceedings)*
 - citation: Herodotou, C., Hlosta, M., Boroowa, A., Rienties, B., Zdrahal, Z., & Mangafa, C., "Empowering online teachers through predictive learning analytics," *British Journal of Educational Technology* 50(6):3064–3079, 2019, DOI 10.1111/bjet.12853; Herodotou, C. et al., "Predictive Learning Analytics and University Teachers: Usage and perceptions three years post implementation," LAK '23, DOI 10.1145/3576050.3576061; Herodotou et al., "A large-scale implementation of predictive learning analytics in higher education: the teachers' role and perspective," *Educational Technology Research and Development*, 2019, ERIC EJ1227972
@@ -170,7 +170,7 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 2.3 — Closed-loop evidence linked to intervention
 - alternate-anchors: 6.4 (Cross-domain adaptation — the non-WEIRD extension); 1.2 (Capability envelope at the edge of training — the radio/phone arm probes the edge)
 - LENS mapping: Domain 2; Domain 3; Problem Type 4
-- CLO anchor: CLO-2; CLO-3
+- LEO anchor: LEO-2; LEO-3
 - evidence-source: peer-reviewed
 - evidence-flag: *(none)*
 - citation: Van Campenhout, R., Jerome, B., Dittel, J. S., & Johnson, B. G., "The Doer Effect at Scale: Investigating Correlation and Causation Across Seven Courses," LAK23, DOI 10.1145/3576050.3576103; Van Campenhout et al., "Scaling the Doer Effect: A Replication Analysis Using AI-Generated Questions," L@S '25, DOI 10.1145/3698205.3729545; Butler, D. et al., "Does the Doer Effect Generalize To Non-WEIRD Populations? Toward Analytics in Radio and Phone-Based Learning," LAK '25, DOI 10.1145/3706468.3706505 (also arXiv 2412.20923)
@@ -187,7 +187,7 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced): 8.2 — Demographic stratification of validation and outcomes
 - alternate-anchors: 8.1 (Choosing the construct — what counts as "fair tutor response"); 8.4
 - LENS mapping: Domain 3; Domain 5; Problem Type 6
-- CLO anchor: CLO-3; CLO-5; [NEW] CLO — Fairness beyond omission
+- LEO anchor: LEO-3; LEO-5; [NEW] LEO — Fairness beyond omission
 - evidence-source: peer-reviewed (AIED proceedings)
 - evidence-flag: *(none)*
 - citation: "Evaluating an AI Tutor for Bias Across Different Foundation Models," AIED 2025, Springer/ACM proceedings, DOI 10.1007/978-3-031-98465-5_43; preprint at https://renzheyu.com/papers/AIED2025_Tutor.pdf
@@ -205,14 +205,14 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-anchor (induced, primary): 6.4 — Cross-domain adaptation of proven interventions
 - alternate-anchors: 2.3 (closed-loop evidence); 3.1 (cue/alert design as the AI-augmentation deliverable)
 - LENS mapping: Domain 5 (Emerging Systems); Domain 2; Problem Type 6 (Human-AI teaming)
-- CLO anchor: CLO-5; CLO-2; [NEW] CLO — Delegation with revocation
+- LEO anchor: LEO-5; LEO-2; [NEW] LEO — Delegation with revocation
 - evidence-source: peer-reviewed
 - evidence-flag: *(none)*
 - citation: Thomas, D. R. et al., "Improving Student Learning with Hybrid Human-AI Tutoring: A Three-Study Quasi-Experimental Investigation," LAK '24, DOI 10.1145/3636555.3636896
 - domains: tutoring, hybrid human-AI systems, K-12
 - capability question: When AI augmentation is added to human tutoring (not used to replace it), do learning outcomes improve relative to either alone — and what does the human tutor have to be authorized to do for the augmentation to work?
 - what happened / what worked / what's open: Three quasi-experimental studies of hybrid human-AI tutoring deployments reported improvements in student learning relative to comparison conditions. The contribution the case carries for the LENS framework: the AI is positioned as augmentation, not delegation; the human tutor retains the authorization to override and re-direct; the measured outcome is student learning, not AI-system fidelity. This is the small-tier intervention-side counterpart to v2-601 (TREWS — the clinician-AI teaming case that worked) translated into education. Open questions: longitudinal effect persistence; whether the design transfers to lower-resource tutoring contexts where human-tutor availability is the binding constraint. Future validation ongoing.
-- why this fits the proposed anchor: 6.4 is cross-domain adaptation — taking the human-AI teaming pattern from clinical (TREWS) into tutoring. The Problem-Type-6 anchor for the LENS curriculum is the central teaching, and the [NEW] CLO on delegation-with-revocation is where the case sits cleanly.
+- why this fits the proposed anchor: 6.4 is cross-domain adaptation — taking the human-AI teaming pattern from clinical (TREWS) into tutoring. The Problem-Type-6 anchor for the LENS curriculum is the central teaching, and the [NEW] LEO on delegation-with-revocation is where the case sits cleanly.
 - which gap: LE-conferences gap — adaptive-system role redesigns beyond v2-203 BCMA / v2-204 I-PASS (Cases 142, 143).
 
 ### v2-933 — Multimodal Learning Analytics Deployment In-the-Wild: A First-Person Lessons-Learned Account (Martinez-Maldonado et al., arXiv / LAK adjacency)
@@ -221,15 +221,15 @@ The structural seam: targeted financial-aid distribution and program-management 
 - proposed-kind: intervention (frontier; methodological-reflective)
 - proposed-anchor (induced): 6.3 — Sustaining tacit capability across generations
 - alternate-anchors: 2.2 (LENS amended — narrate and defend the design iteration); 2.4
-- LENS mapping: Domain 2 (Learning Engineering Design — explicitly the amended CLO-2 on narrating design iteration); Problem Type 4
-- CLO anchor: CLO-2 (amended); CLO-3
+- LENS mapping: Domain 2 (Learning Engineering Design — explicitly the amended LEO-2 on narrating design iteration); Problem Type 4
+- LEO anchor: LEO-2 (amended); LEO-3
 - evidence-source: practitioner / preprint
 - evidence-flag: **preprint-tier** — the arXiv version is preprint; some sections published in adjacent peer-reviewed work
 - citation: Martinez-Maldonado, R. et al., "Lessons Learnt from a Multimodal Learning Analytics Deployment In-the-Wild," arXiv 2303.09099, 2023, https://arxiv.org/pdf/2303.09099 (also published in adjacent LAK and IEEE TLT outlets)
 - domains: multimodal learning analytics, classroom deployment, design-based research
 - capability question: When a multimodal learning-analytics system (eye-tracking, audio, spatial positioning) is taken from lab to in-the-wild classroom deployment, what does the practitioner team learn that the published findings papers do not contain?
 - what happened / what worked / what's open: The paper is structured as a first-person practitioner reflection on lessons from multiple in-the-wild MMLA deployments — what worked, what failed, what the team would have done differently. It is offered here not as a case the casebook would teach as a deployment-result case (the deployment results live in adjacent papers); it is offered as a *genre exemplar* of the published first-person Practice Flywheel account the editor memo (B1) calls for. Pairs structurally with v2-919 (Lutz reflective journal), v2-920 (CBE-LSE reflective-practice primer), and v2-921 (SE work-based reflective-practice longitudinal) as the LE-specific exemplar of the genre the framework now requires. Future validation ongoing — both peer-review pipeline for this specific version and the broader question of whether the genre takes hold in the LE community.
-- why this fits the proposed anchor: 6.3 is sustaining tacit capability — the practitioner-knowledge that walks out the door if it isn't narrated. The amended CLO-2 ("narrate and defend the design iteration") is directly motivated by exactly this kind of account.
+- why this fits the proposed anchor: 6.3 is sustaining tacit capability — the practitioner-knowledge that walks out the door if it isn't narrated. The amended LEO-2 ("narrate and defend the design iteration") is directly motivated by exactly this kind of account.
 - which gap: LE-conferences Gap 6 — first-person practitioner reflections / DBR journals as published-first-person Practice Flywheel candidates.
 
 ---
@@ -261,7 +261,7 @@ These gaps are reported because the brief is explicit that *naming what could no
   - practice-synthesis-tier: 2 (v2-922 Engler/Brookings, v2-923 Burd/New America + Harvard Ed Press)
   - preprint-tier: 1 (v2-933 MMLA arXiv lessons-learned)
 - **COI flag (coi-light):** 4 — v2-922, v2-923, v2-924, v2-925 (Katzman / 2U lineage; Katzman is a JHU collaborator). v2-926 is in the cluster but Katzman-independent.
-- **Cross-listed across gaps:** v2-922, v2-923, v2-924, v2-925 anchor in induced C8 (equity) and LENS Domain 4 (sociotechnical context); v2-926 anchors in C8 with Domain 4 + Domain 5; v2-927 / v2-928 are C2 (evidence architecture) closed-loop pairs; v2-929 is C5 / Problem Type 5 with the [NEW] delegation-with-revocation CLO; v2-930 is C2.3 with a 6.4 cross-domain alternate; v2-931 is C8.2 demographic-stratification; v2-932 is C6.4 with PT6; v2-933 is the C6.3 / amended-CLO-2 genre exemplar.
+- **Cross-listed across gaps:** v2-922, v2-923, v2-924, v2-925 anchor in induced C8 (equity) and LENS Domain 4 (sociotechnical context); v2-926 anchors in C8 with Domain 4 + Domain 5; v2-927 / v2-928 are C2 (evidence architecture) closed-loop pairs; v2-929 is C5 / Problem Type 5 with the [NEW] delegation-with-revocation LEO; v2-930 is C2.3 with a 6.4 cross-domain alternate; v2-931 is C8.2 demographic-stratification; v2-932 is C6.4 with PT6; v2-933 is the C6.3 / amended-LEO-2 genre exemplar.
 - **Priority targets that came back empty or thin:** noted in "Gaps remaining" above — JLS/BJET deployed-intervention case beyond the named four; Cognition Technology & Work case beyond existing aviation coverage; EDM deployment-failure case with auditable sourcing; Katzman-internal Noodle/2U postmortem at investigation tier; non-US-UK-EU LE case at deployment tier.
 
 **Editor handoff:** This pass should not be merged into `02_*`. Treat as a separate candidate tier when triaging to draft / hold / cut, with the in-text tier flag carried into print. The Katzman-cluster `coi-light` flag is binding on v2-922 through v2-925; render as an affiliation note (JIGSAWS-style), not the gold-bordered standing COI block. The Cluster B candidates are journal- and conference-tier evidence the v2 corpus needs to round out LE-conference coverage without recycling what is already drafted.

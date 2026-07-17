@@ -10,7 +10,7 @@ The shipping artefacts sit under `products/`, split by carrier: `products/digita
 |---|---|---|
 | **[`products/digital/capability-matters-digital.pdf`](products/digital/capability-matters-digital.pdf)** | The casebook **main volume**, digital — 48 selected cases, 264 pp, 8 × 10, colour on cream | the readable book: the seven-part argument with a curated cut spanning domains, modes, and evidence tiers |
 | **[`products/digital/capability-matters-supplement.pdf`](products/digital/capability-matters-supplement.pdf)** | The **digital supplement** — all 157 other cases, 636 pp, minimal front matter, global numbering shared with the main volume | the rest of the corpus at full depth; every gap in the printed sequence lives here |
-| **[`products/digital/capability-matters-lens-companion.pdf`](products/digital/capability-matters-lens-companion.pdf)** | LENS Companion — 43 pp, 8 × 10, white digital | the framework, end-to-end: the five v2.1 LENS competencies, the CLOs and course mapping, the induced ↔ canonical crosswalk, and the literal text of the `lens_program/` canonical docs (Docs 1–6). Travels with advisory boards, recruiting, prospective students. |
+| **[`products/digital/capability-matters-lens-companion.pdf`](products/digital/capability-matters-lens-companion.pdf)** | LENS Companion — 43 pp, 8 × 10, white digital | the framework, end-to-end: the five v2.1 LENS competencies, the LEOs and course mapping, the induced ↔ canonical crosswalk, and the literal text of the `lens_program/` canonical docs (Docs 1–6). Travels with advisory boards, recruiting, prospective students. |
 | **[`products/digital/capability-matters-validation-audit.pdf`](products/digital/capability-matters-validation-audit.pdf)** | Validation & Audit tracker — 78 pp, 8 × 10, white digital | the audit surface: every case by primary domain, every case by LENS course, and the full per-case references appendix with a *Retrieved from:* line per source. The verification-track companion to `casebook/verification-log.md`. |
 | **[`products/print/capability-matters-print.pdf`](products/print/capability-matters-print.pdf)** + **[`products/print/cover-print.pdf`](products/print/cover-print.pdf)** | The **main volume**, print interior + Lulu cover wrap — 264 pp, 8 × 10, grayscale, 3 mm bleed; cover spine 16.39 mm | to send to Lulu for the bound first edition |
 | **[`products/print/capability-matters-print-with-cover.pdf`](products/print/capability-matters-print-with-cover.pdf)** | The **main volume with its covers attached** — colour front cover, grayscale print interior, colour back cover, 266 pp | the on-screen stand-in for the bound book: what the printed product looks like cover to cover |
@@ -55,7 +55,7 @@ The casebook makes the case; the LENS Companion is the orientation set someone r
 ├── lens_program/                          canonical LENS program documents (source of record, JHU SOE LDT/LENS — MHEC PP24181)
 │   ├── README.md                          orientation; what to verify before external use; status of the .docx round-trip
 │   ├── 1_LENS_Five_Competencies.docx + .md (v2.1: Systems Analysis · Iterative Development · Human-System Collaboration · Test and Evaluation · Navigating Sociotechnical Constraints — change log inline)
-│   ├── 2_LENS_Objectives_Course_Mapping.docx + .md (PLOs, CLOs renumbered to v2.1, course-by-course mapping, coverage matrix)
+│   ├── 2_LENS_Objectives_Course_Mapping.docx + .md (PLOs, LEOs renumbered to v2.1, course-by-course mapping, coverage matrix)
 │   ├── 3_LENS_Editor_Bios.docx + .md
 │   ├── 4_LENS_LECF_Crosswalk.docx + .md  (LENS ↔ IEEE ICICLE LECF nine-domain proposal)
 │   ├── 5_LENS_Summary_and_PrePost_Objectives.docx + .md
@@ -77,7 +77,7 @@ Each case is tracked under three parallel taxonomies (per CLAUDE.md):
 
 - **Induced competency framework** (8 competencies, 32 sub-competencies in `casebook/competencies.md`) — bottom-up induction from the v1 cases. Numbered `1.1` through `8.4`. The analytic scaffold.
 - **Canonical LENS framework** (5 competencies in `lens_program/1_LENS_Five_Competencies.md`, v2.1) — Systems Analysis (D1) · Iterative Development (D2) · **Human-System Collaboration (D3)** · Test and Evaluation (D4) · Navigating Sociotechnical Constraints (D5). Plus six canonical Problem Types (PT1–6). The curriculum of record.
-- **CLOs** (`lens_program/2_*.md`, v2.1) — five CLOs, one per domain, with the v2-named subobjectives (gap attribution at 4.2; delegation with revocation at 3.3; judgment under inadequate evidence at 4.4; fairness beyond omission at 4.6; collaboration measurement at 3.4; governance-objection diagnostic at 1.5; narrate/defend iteration at 2.5; cross-regime governance at 5.6). The course-mapping anchor.
+- **LEOs** (`lens_program/2_*.md`, v2.1) — five LEOs, one per domain, with the v2-named subobjectives (gap attribution at 4.2; delegation with revocation at 3.3; judgment under inadequate evidence at 4.4; fairness beyond omission at 4.6; collaboration measurement at 3.4; governance-objection diagnostic at 1.5; narrate/defend iteration at 2.5; cross-regime governance at 5.6). The course-mapping anchor.
 
 The induced 8 fold cleanly into the canonical 5 (D2 has no induced counterpart — the iteration *method* is threaded through cases rather than producing its own cluster). The casebook records all three anchors on every v2 case; the LENS Companion (below) makes the crosswalks explicit.
 
@@ -87,7 +87,7 @@ The first edition is structurally complete and reproduces from source.
 
 **Casebook** — 205 cases organised topically, split into a printed **main volume** (48 selected cases; registry in `casebook/lib/selection.typ`) and a **digital supplement** (all others; global numbering shared, matrix marks supplement cases with °), both cut from the same source. Full corpus in seven parts (Healthcare & Patient Safety; Education, Training & the Learning Workforce; Aviation & Aerospace; Defense & National Security — the middle part; Industry, Energy & Enterprise Systems; Disaster Prevention & Recovery, read pre → post; Algorithms, Governance & Public Systems), each split into What Fails / What Works + frontier — 14 chapters, closing framing case last. All anchored to v2.1; all cross-references in range. `bash casebook/scripts/check-cases.sh` reports 205/0.
 
-**LENS Companion** — `capability-matters-lens-companion.pdf`, 41 pp, 8 × 10 white digital. The concept-facing companion: the v2.1 five competencies, the CLOs and the course mapping, the induced-→-canonical crosswalk, and the three-anchor convention, plus the literal text of the `lens_program/` source-of-record docs (Docs 1–6) inlined verbatim. Sized to be read end-to-end; designed to travel with advisory boards, recruiting conversations, and prospective students. Built from the casebook source via `--input view=companion`.
+**LENS Companion** — `capability-matters-lens-companion.pdf`, 41 pp, 8 × 10 white digital. The concept-facing companion: the v2.1 five competencies, the LEOs and the course mapping, the induced-→-canonical crosswalk, and the three-anchor convention, plus the literal text of the `lens_program/` source-of-record docs (Docs 1–6) inlined verbatim. Sized to be read end-to-end; designed to travel with advisory boards, recruiting conversations, and prospective students. Built from the casebook source via `--input view=companion`.
 
 **Validation & Audit** — `capability-matters-validation-audit.pdf`, 97 pp, 8 × 10 white digital. The audit-facing companion: cases by primary domain, cases by LENS course, and the full per-case references appendix with a *Retrieved from:* line per source. Pairs with `casebook/verification-log.md` to drive the per-case content-read pass that closes the verification track. Built from the same casebook source.
 
@@ -115,7 +115,7 @@ The first edition is structurally complete and reproduces from source.
 **v2.1 framework adoption (June 2026)** — Per program-owner sign-off:
 - D3 reorder + rename: what was D5 *Machine Teaming and Adaptation* is broadened to **Human-System Collaboration** and moved to position 3. T&E moves to D4; Sociotechnical Constraints to D5. The order reads as the flywheel: see → build → integrate humans → measure → deploy.
 - 7 new named subobjectives (1.5, 2.5, 3.3, 3.4, 4.4, 4.6, 5.6) plus 4.2 renamed *gap attribution* and decision-grade evidence reframed as judgment under irreducible uncertainty.
-- Casebook lens/CLO fields and `lens-approach` prose remapped to v2.1 across all cases.
+- Casebook lens/LEO fields and `lens-approach` prose remapped to v2.1 across all cases.
 
 **Editorial passes folded in** — Stage-3 anchoring of 62 previously-unanchored v1 cases (54 STRONG / 8 SOLID, decisions logged in `AUDIT.md`); 10-chapter restructure with single atomic renumber; three wrong-placement fixes (TMI, Vincennes, Texas City BP) caught during Q&A; automated references validation across ~951 references (10 ISSUE-class items all resolved in source).
 
@@ -125,7 +125,7 @@ The first edition is structurally complete and reproduces from source.
 
 - **For the case-by-case verification pass** (the only remaining quality gate before press): `casebook/verification-log.md` for the rubric and the table; `casebook/scripts/verification-status.sh` for progress.
 - **For the pre-press handoff to Lulu**: upload `capability-matters-print.pdf` (264 pp) and `cover-print.pdf` (spine 16.39 mm); Lulu may quote-back ±1 mm — the spine-override flag in `casebook/scripts/build.sh` handles a re-cut.
-- **For program-doc updates** (CLOs, course mapping, recruiting copy): `lens_program/` is the source of record; change logs are inline at the bottom of docs 1 and 2.
+- **For program-doc updates** (LEOs, course mapping, recruiting copy): `lens_program/` is the source of record; change logs are inline at the bottom of docs 1 and 2.
 - **For framework rationale or research backbone**: `v2_research/` is preserved for traceability; the proposal (`01_*`) carries an ADOPTED status header naming the two adoption-time refinements.
 
 ## Working conventions
@@ -133,7 +133,7 @@ The first edition is structurally complete and reproduces from source.
 See `CLAUDE.md` for the binding rules. Key conventions:
 
 - Develop on a topic branch under `claude/` (e.g. `claude/<short-topic-slug>`); push and open a PR. The editor decides when to merge to `main`. Don't push directly to `main`.
-- Every case carries `scale:` (`big` | `small`), `evidence-source:` (`investigation` | `peer-reviewed` | `program-report` | `practitioner` | `dissertation` | `journalism`), and three anchors (induced, lens, CLO).
+- Every case carries `scale:` (`big` | `small`), `evidence-source:` (`investigation` | `peer-reviewed` | `program-report` | `practitioner` | `dissertation` | `journalism`), and three anchors (induced, lens, LEO).
 - COI / evidence-tier / hedge flags from the v2 build list survive into print: gold-bordered "Disclosure" block for COI cases (CIRCUIT, BRAIN, Johnson, JIGSAWS); blue-bordered "Evidence tier" block for journalism-tier / preprint-tier / practice-synthesis-tier / thesis-pending / internal-pm.
 - Don't pad citations. Three real sources beat eight stretched ones. (The references validation pass came in at 1.05% ISSUE rate; the bar is the bar.)
 - Don't edit `lens_program/.docx` files directly — they need a program-owner round-trip from the `.md`. The `.md` is the working canonical between round-trips.

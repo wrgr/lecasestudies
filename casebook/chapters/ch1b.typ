@@ -29,7 +29,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "1.1",
   lens-anchor: "D1/PT3",
-  clo-anchor: "CLO-1, CLO-4",
+  leo-anchor: "LEO-1, LEO-4",
   summary: [
     California in 2004 became the first US state to mandate minimum
     nurse-to-patient ratios in acute-care hospitals — unit-level
@@ -155,7 +155,7 @@
     (induced 1.1; LENS D1/PT3). LENS uses it in Domain 1
     (Systems Analysis) for the conversion of stated
     requirement to engineered specification by law, and in
-    Domain 4 (Test and Evaluation) for the CLO *Judgment
+    Domain 4 (Test and Evaluation) for the LEO *Judgment
     under inadequate evidence* — the evaluation evidence is
     observational cross-sectional, the strongest available
     and not closed proof. Pair with Case 173 SUBSAFE at the
@@ -326,7 +326,7 @@
   scale: "big",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT3",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
 )
 
 // ---- Case 13 — implementation-science-in-healthcare ----
@@ -467,7 +467,7 @@
   scale: "big",
   induced-anchor: "1.4",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
 )
 
 // ---- Case 14 — barsuk-sbml-simulation-based-mastery ----
@@ -484,7 +484,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "6.4",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     Central venous catheter (CVC) insertion is a high-volume,
     high-consequence procedure whose complications — pneumothorax,
@@ -656,7 +656,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "3.3",
   lens-anchor: "D2/PT5",
-  clo-anchor: "CLO-2, CLO-5",
+  leo-anchor: "LEO-2, LEO-5",
   summary: [
     The shift-change handoff is the moment in inpatient care where
     patient state has to be transferred accurately across a human
@@ -822,7 +822,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "6.1",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     Pre-licensure nursing education had long rested on a regulatory
     requirement for traditional clinical hours — time spent caring
@@ -995,7 +995,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     Spacing — distributing study sessions over time rather than
     massing them — is one of the most robust findings in basic
@@ -1170,7 +1170,7 @@
   evidence-flag: "preprint-tier",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4, CLO-5",
+  leo-anchor: "LEO-2, LEO-4, LEO-5",
   summary: [
     Across 16 PEPFAR-supported Sub-Saharan African countries, a
     2023 real-world program evaluation compared in-person
@@ -1256,7 +1256,7 @@
       printed case. The LENS teaching point is the
       cross-listed pair with the corporate / workforce L&D
       cluster (Cases 79, 65, 83, 70) and the non-US/UK/EU
-      cluster (Cases 93). The CLO *Judgment under
+      cluster (Cases 93). The LEO *Judgment under
       inadequate evidence* is exercised: the study is the
       strongest evidence the field has for modality
       equivalence in this context, and it does not establish
@@ -1278,7 +1278,7 @@
     ),
     after: (
       [Pair with Case 93 (SkillsFuture) as the workforce-capability counterparts at national- and multi-country scale; together they teach what L&D measurement looks like in non-US/UK/EU settings with the evidence-tier honesty intact.],
-      [Use the CLO *Judgment under inadequate evidence*: the study is the strongest evidence the field has for modality equivalence in this context, and the practitioner has to decide modality policy on L1–L2 evidence while L3/L4 evidence develops.],
+      [Use the LEO *Judgment under inadequate evidence*: the study is the strongest evidence the field has for modality equivalence in this context, and the practitioner has to decide modality policy on L1–L2 evidence while L3/L4 evidence develops.],
       [Carry the preprint-tier flag honestly: the medRxiv preprint and the PMC published article are both citable; future validation requires confirmatory replication and L3/L4 outcome measurement.],
     ),
   ),
@@ -1305,7 +1305,7 @@
     (Iterative Development) for the modality-design
     iteration COVID forced and in Domain 5 (Navigating
     Sociotechnical Constraints) for the multi-country
-    program scope. The CLO *Judgment under inadequate
+    program scope. The LEO *Judgment under inadequate
     evidence* is exercised because the study is the
     strongest available at L1–L2 and does not settle L3 /
     L4. Pairs with Case 93 (SkillsFuture) as the workforce
@@ -1471,7 +1471,7 @@
   scale: "big",
   induced-anchor: "4.1",
   lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   coi: "Institutional overlap: an editor shares an institution (Johns Hopkins) with the study's lead author; no editor was personally involved in the Keystone ICU work. Included on the published peer-reviewed evidence (NEJM 2006) and its sustained, independently replicated results.",
 )
 
@@ -1489,7 +1489,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "3.1",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   coi: "Institutional overlap: an editor shares an institution (Johns Hopkins) with authors of this work and its deployment sites (five JHU hospitals); no editor was personally involved. Included on the published peer-reviewed evidence (Nature Medicine 2022).",
   summary: [
     The Targeted Real-time Early Warning System (TREWS) is a machine-learning
@@ -1605,7 +1605,7 @@
     Domain 3 (Human-System Collaboration) for the
     delegation-with-revocation pattern, in Domain 4 (Test and
     Evaluation) for outcome-grounded prospective evidence under the
-    judgment-under-inadequate-evidence CLO, and in Domain 5
+    judgment-under-inadequate-evidence LEO, and in Domain 5
     (Navigating Sociotechnical Constraints) for the workflow-fit
     discipline. It is the foil drafted directly against the Epic
     Sepsis Model (Case 5).
@@ -1637,7 +1637,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "3.2",
   lens-anchor: "D3/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     The "sterile cockpit" rule in commercial aviation (FAR
     121.542, codified 1981) prohibits non-essential communication
@@ -1831,7 +1831,7 @@
   kind: "frontier",
   induced-anchor: "5.2",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Since ChatGPT's public release in late 2022, the clinical and
     peer-reviewed literatures have documented a recurring pattern:
@@ -1985,7 +1985,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.3",  // alternate framing adopted: closed-loop evidence lens captures the Haynes→Urbach replication arc more directly than pre-committed institutional response,
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     In 2008, Atul Gawande's team and the WHO introduced a single-page,
     nineteen-item surgical checklist applied at three junctures — before
@@ -2311,7 +2311,7 @@
   scale: "big",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   evidence-source: "investigation",
 )
 
@@ -2329,7 +2329,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     For two decades the standard equation used to estimate glomerular
     filtration rate from serum creatinine — the kidney-function number on
@@ -2409,9 +2409,9 @@
       architecture rather than the equation; and with pain assessment
       (Case 6), where the failure was in clinician-held false beliefs
       rather than the instrument. The trio together is the case-grounded
-      basis for the CLO *Gap attribution* — distinguishing capability
+      basis for the LEO *Gap attribution* — distinguishing capability
       gaps attributable to human development, system design, and
-      organizational performance — and for the CLO *Fairness beyond
+      organizational performance — and for the LEO *Fairness beyond
       omission*, of which eGFR is the construct-removal instance.
     ],
   ),
@@ -2454,7 +2454,7 @@
   lens-approach: [
     eGFR is the construct-definition equity intervention in the
     race-construct trio (Cases 25, 26 and 6). LENS uses it in Domain 4
-    (Test and Evaluation) for the CLO *Gap attribution* —
+    (Test and Evaluation) for the LEO *Gap attribution* —
     attributing the gap to construct definition, not to clinicians
     or patients — and in Domain 5 (Navigating Sociotechnical
     Constraints) for the governance process that revised the
@@ -2490,7 +2490,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.2",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     Pulse oximetry — the noninvasive bedside measurement of blood oxygen
     saturation — is one of the most widely used patient-monitoring tools
@@ -2611,7 +2611,7 @@
   lens-approach: [
     Pulse oximetry is the validation-architecture intervention in
     the race-construct trio (Cases 25, 26 and 6). LENS uses it in
-    Domain 4 (Test and Evaluation) for the CLO *Gap
+    Domain 4 (Test and Evaluation) for the LEO *Gap
     attribution* — the gap is in the validation architecture, not
     the device or the clinician — and in Domain 5 (Navigating
     Sociotechnical Constraints) for the FDA clearance / device
@@ -2647,7 +2647,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "3.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Through the early 1980s, anesthesia in the United States carried a
     documented patient-safety crisis: silent intraoperative hypoxemia
@@ -2826,7 +2826,7 @@
   evidence-source: "investigation",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   summary: [
     Interprofessional Education (IPE) is a decades-long,
     well-funded movement premised on the idea that doctors,
@@ -2903,7 +2903,7 @@
       instrumented outcomes. The case is the case-grounded basis
       for the Domain 3 sub-competency proposed in
       — naming the enthusiasm-evidence gap as a
-      canonical anti-pattern — and for the CLO *Judgment
+      canonical anti-pattern — and for the LEO *Judgment
       under inadequate evidence*: practitioners and program
       designers in IPE have had to decide for decades on what to
       build, on evidence that does not establish the causal claim
@@ -2965,7 +2965,7 @@
     (induced 2.1; LENS D4/PT5). LENS uses it in Domain 4
     (Test and Evaluation) as the case-grounded basis for the
     enthusiasm-evidence-gap sub-competency and for the
-    CLO *Judgment under inadequate evidence* — IPE is the
+    LEO *Judgment under inadequate evidence* — IPE is the
     pattern's largest instance. Pair with Case 40 (team-
     science training, where measurement is possible at program
     scale) and Case 41 (implementation-science training,
@@ -2997,7 +2997,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "3.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Wrong-drug and wrong-patient administration errors are a
     persistent failure mode in hospital pharmacy: the cue the human
@@ -3165,7 +3165,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Surgical complications are conventionally attributed to patient
     factors, hospital factors, and case-mix. Birkmeyer et al.
@@ -3335,7 +3335,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   coi: "Institutional overlap: this case originates at an editor's institution (Johns Hopkins); no editor was personally involved. Anchored to the peer-reviewed PLOS One paper and the public JIGSAWS dataset, not institutional press.",
   summary: [
     The Language of Surgery project at Johns Hopkins, led by Gregory
@@ -3509,7 +3509,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "3.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-1",
+  leo-anchor: "LEO-4, LEO-1",
   summary: [
     A multidisciplinary team at University of Missouri Health Care
     redesigned the EHR interface clinicians use to prompt and perform
@@ -3633,9 +3633,9 @@
   lens-approach: [
     UMHC is the C3 small-tier intervention case
     (induced 3.1; LENS D4/PT5). LENS uses it in Domain 4
-    (Test and Evaluation) for the CLO-4 deliverable that cue
+    (Test and Evaluation) for the LEO-4 deliverable that cue
     redesign must show its downstream process effect, and in
-    Domain 1 (Systems Analysis) for CLO-1 — the multidisciplinary
+    Domain 1 (Systems Analysis) for LEO-1 — the multidisciplinary
     team did the analysis of the screening workflow as the
     precondition for the redesign. The case is the paired
     positive example for the big-tier C3 failures (Therac-25,
@@ -3669,7 +3669,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "3.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Alert fatigue is the structural failure mode the C3 thread names
     at the small tier: an EHR that fires so many alerts the
@@ -3755,7 +3755,7 @@
       severity tiers, interruptive-vs-passive decisions,
       role-tailoring rules, and an ongoing measurement loop on
       firing-to-action ratios — not a one-time clean-up. The new
-      CLO around delegation with revocation applies here: when
+      LEO around delegation with revocation applies here: when
       automated decision support oversight is delegated to the
       bedside, the redesign discipline is part of the delegation.#cn()
     ],
@@ -3800,11 +3800,11 @@
   lens-approach: [
     Alert-fatigue redesign is the C3.2 small-tier intervention
     case (induced 3.1 and 3.2; LENS D4/PT5). LENS uses it in
-    Domain 4 (Test and Evaluation) for CLO-4 — the redesign
+    Domain 4 (Test and Evaluation) for LEO-4 — the redesign
     must report the safety signal alongside the alert-rate
     cut — and in Domain 3 (Human-System Collaboration)
-    for CLO-3 oversight of automated decision support
-    delegated to the bedside, with the CLO on delegation
+    for LEO-3 oversight of automated decision support
+    delegated to the bedside, with the LEO on delegation
     with revocation explicit. Pair with Case 32 for the
     small-tier C3 thread.
   ],
@@ -3835,7 +3835,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "3.1",
   lens-anchor: "D4+D3/PT6",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Aaron Boussina, Shamim Nemati, and colleagues at UC San Diego
     Health published the COMPOSER (COnformal Multidimensional
@@ -3954,7 +3954,7 @@
       contribution of the surrounding process. The conformal-
       prediction abstention structure is the methodological
       contribution the case anchors, and the cue-and-alert
-      design CLO is anchored at the deployment seam where
+      design LEO is anchored at the deployment seam where
       abstention is a clinical-workflow capability: the model
       that can refuse to alert when its calibrated confidence
       does not support an alert is the deployment artifact the
@@ -3977,7 +3977,7 @@
     after: (
       [Carry the multifactorial-mortality hedge into print without softening; the case's pedagogical value depends on the attribution question being explicit alongside the deployment-outcome reporting.],
       [Pair in syllabi with Case 20 (TREWS) and Case 5 (Epic Sepsis) so the AI-delegation typology in sepsis is taught as a three-case set at the deployment-evidence level.],
-      [Use the case to anchor the cue-and-alert design CLO; the curricular target is the discipline of building abstention into the alerting architecture as a capability deliverable, and of evaluating the abstention against the calibration-gap failure mode the prior cases named.],
+      [Use the case to anchor the cue-and-alert design LEO; the curricular target is the discipline of building abstention into the alerting architecture as a capability deliverable, and of evaluating the abstention against the calibration-gap failure mode the prior cases named.],
     ),
   ),
   references: (
@@ -4002,7 +4002,7 @@
   lens-approach: [
     COMPOSER is the cue-and-alert-design-as-capability-deliverable
     case at clinical-deployment scale (induced 3.1; LENS
-    D4+D3/PT6; CLO-4 and CLO-3). LENS uses it in Domain 4
+    D4+D3/PT6; LEO-4 and LEO-3). LENS uses it in Domain 4
     (Test and Evaluation) for the prospective-implementation-
     evaluation discipline and in Domain 3 (Human-System Collaboration) for the abstention-as-clinical-workflow-
     capability anchor. Pair with Case 20 (TREWS), Case 5
@@ -4046,7 +4046,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "7.2",
   lens-anchor: "D4+D3/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     FDA-cleared radiology AI tools — for chest X-ray classification,
     mammography, CT triage — have been repeatedly documented performing
@@ -4222,10 +4222,10 @@
   lens-approach: [
     Radiology AI is the canonical contemporary clinical-AI
     deployment-and-surveillance case (induced 7.2; LENS D4+D3/PT5).
-    LENS uses it in Domain 4 (Test and Evaluation; CLO-4) for the
+    LENS uses it in Domain 4 (Test and Evaluation; LEO-4) for the
     clearance-vs-deployment measurement architecture and for
     demographic stratification of validation as a deliverable. LENS
-    uses it in Domain 3 (Human-System Collaboration; CLO-3) for
+    uses it in Domain 3 (Human-System Collaboration; LEO-3) for
     the human-AI deployment-without-surveillance pattern, and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
     FDA AI/ML regulatory trajectory itself. The Obermeyer (2019)
@@ -4396,7 +4396,7 @@
   scale: "big",
   induced-anchor: "2.1",
   lens-anchor: "D4+D5/PT2",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 37 — deepmind-mammography-2020 ----
@@ -4413,7 +4413,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "7.2",
   lens-anchor: "D4+D3/PT6",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Scott Mayer McKinney and colleagues at Google Health and
     DeepMind published "International evaluation of an AI system
@@ -4569,7 +4569,7 @@
   lens-approach: [
     DeepMind Mammography is the deployment-and-reuse-as-
     verification-events case at the high-profile-publication
-    seam (induced 7.2; LENS D4+D3/PT6; CLO-4 and CLO-3). LENS
+    seam (induced 7.2; LENS D4+D3/PT6; LEO-4 and LEO-3). LENS
     uses it in Domain 4 (Test and Evaluation) for the
     reproducibility-infrastructure-as-verification-condition
     discipline and in Domain 3 (Human-System Collaboration)
@@ -4607,7 +4607,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "4.4",
   lens-anchor: "D5/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Isotretinoin is a highly effective acne medication and a known
     teratogen: fetal exposure causes severe birth defects. The FDA
@@ -4699,7 +4699,7 @@
       that the form alone does not deliver capability when the
       capability depends on a behavior the program does not
       instrument. The case is the case-grounded basis for the new
-      CLO *Judgment under inadequate evidence* — the practitioner
+      LEO *Judgment under inadequate evidence* — the practitioner
       designing a REMS-class program has to decide on the available
       evidence what additional adherence-support architecture the
       mechanism needs in order to deliver, and the iPLEDGE evidence
@@ -4745,9 +4745,9 @@
   ],
   lens-approach: [
     iPLEDGE is the analytically useful "mixed" pre-authorization
-    case (induced 4.4; LENS D3/PT5). LENS uses it in Domain 3 (Human-System Collaboration) for the CLO *Delegation with revocation* — what the authorization
+    case (induced 4.4; LENS D3/PT5). LENS uses it in Domain 3 (Human-System Collaboration) for the LEO *Delegation with revocation* — what the authorization
     mechanism delegates and what it does not — and in Domain 4
-    (Test and Evaluation) for the CLO *Judgment under
+    (Test and Evaluation) for the LEO *Judgment under
     inadequate evidence* on whether the form will deliver in a
     specific context. Direct pair with SUBSAFE (Case 173) at
     the form-vs-context layer; pair with WHO Surgical Checklist
@@ -4914,7 +4914,7 @@
   scale: "big",
   induced-anchor: "6.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 40 — team-science-training-for-clinical-and ----
@@ -4931,7 +4931,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "4.3",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     The Colorado Clinical and Translational Sciences Institute
     built a structured team-science training program — explicit
@@ -5016,7 +5016,7 @@
       intervention companion to two frontier cases. Team-science
       training is one of the few cases in the corpus that
       operationalizes "collaboration as the unit of measurement"
-      — the CLO — with a
+      — the LEO — with a
       validated instrument and structured evaluation. The case is
       a worked example of how a discipline can convert
       collaboration capability from an aspiration to a measurable
@@ -5063,7 +5063,7 @@
   ],
   lens-approach: [
     Team-science training is the case-grounded basis for the
-    collaboration-as-measurement CLO (induced 4.3;
+    collaboration-as-measurement LEO (induced 4.3;
     LENS D5/PT4). LENS uses it in Domain 5 (Navigating
     Sociotechnical Constraints) for the team-coordination
     redesign and in Domain 4 (Test and Evaluation) for the
@@ -5100,7 +5100,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "6.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     Implementation science — the discipline of moving validated
     evidence into operational practice — is one of the most
@@ -5189,7 +5189,7 @@
       sub-competency from three angles — the program-scale
       success, the field-scale gap, and the operational-practice
       gap inside training programs themselves — and it teaches
-      the CLO *Judgment under inadequate evidence* by
+      the LEO *Judgment under inadequate evidence* by
       example: practitioners designing implementation-science
       training programs have to decide what to build on incomplete
       evidence of what works, while the field is still building
@@ -5242,7 +5242,7 @@
     for the cross-disciplinary translation discipline; in
     Domain 4 (Test and Evaluation) for the enthusiasm-
     evidence-gap sub-competency; and in Domain 2 (Iterative
-    Development) for the CLO *Judgment under inadequate
+    Development) for the LEO *Judgment under inadequate
     evidence* as practitioners design training programs while
     the field-scale evidence is still being built. Pair with
     Cases 40, 28 as the multidisciplinary-translation trio;
@@ -5276,7 +5276,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "3.2",
   lens-anchor: "D5/PT3",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     Australian hospital pharmacies faced the structural problem most
     healthcare workforces meet at some point: the pharmacist's
@@ -5406,9 +5406,9 @@
     Australian pharmacy-technician redesign is the C3 small-tier
     role-redesign case (induced 3.2 and 4.3; LENS D5/PT3).
     LENS uses it in Domain 5 (Navigating Sociotechnical
-    Constraints) for CLO-5 — the work was to redraw the
+    Constraints) for LEO-5 — the work was to redraw the
     authority gradient — and in Domain 1 (Systems Analysis)
-    for CLO-1, since the role-architecture diagnosis was the
+    for LEO-1, since the role-architecture diagnosis was the
     precondition for the redesign. Pair with Cases 32–132 for
     the small-tier C3 thread; Gap-5 echo as a non-US case.
   ],
@@ -5440,7 +5440,7 @@
   evidence-flag: "preprint-tier",
   induced-anchor: "6.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-2, CLO-5",
+  leo-anchor: "LEO-2, LEO-5",
   summary: [
     Between 2013 and 2018 Rwanda's Ministry of Health, working with
     research partners, deployed an mHealth monitoring system that
@@ -5608,7 +5608,7 @@
   evidence-flag: "preprint-tier",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     Japan's Pharmaceuticals and Medical Devices Agency (PMDA)
     operates one of the regulatory regimes most explicitly
@@ -5739,7 +5739,7 @@
     PMDA is the non-US regulator-designed change-control case
     (induced 5.4; LENS D5/PT6). LENS uses it in Domain 5
     (Navigating Sociotechnical Constraints) for the
-    delegation-with-revocation structure and in Domain 3 (Human-System Collaboration) for the CLO *Delegation with revocation* — the regulator delegates
+    delegation-with-revocation structure and in Domain 3 (Human-System Collaboration) for the LEO *Delegation with revocation* — the regulator delegates
     in-scope modification authority and retains revocation,
     rather than defaulting to static approval. Pairs with the
     Epic-Sepsis governance gap as the structural contrast
