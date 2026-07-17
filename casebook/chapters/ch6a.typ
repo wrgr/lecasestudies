@@ -1960,8 +1960,8 @@
   courses: ("LEN 5", "LEN 8"),
   scale: "big",
   induced-anchor: "7.4",
-  lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  lens-anchor: "D5/PT4",
+  clo-anchor: "CLO-5, CLO-1",
   evidence-source: "investigation",
 )
 

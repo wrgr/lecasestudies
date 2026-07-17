@@ -1610,7 +1610,8 @@
       ranging from detailed methodological documents to single-
       paragraph summaries with limited interpretability. The
       audits are governance artifacts; their information content
-      is uneven across the first cohort.    ],
+      is uneven across the first cohort.
+    ],
     [
       The case pairs with Case 85 (OU Analyse) for the
       governance-objection-dissolved-by-design thread: OU
@@ -1695,7 +1696,7 @@
     (induced 5.4; LENS D5/PT5; CLO-4 and CLO-5). LENS uses it
     in Domain 5 (Navigating Sociotechnical Constraints) for the
     audit-as-governance-instrument discipline. Pair with Case
-    115 (OU Analyse governance-objection-dissolved-by-design),
+    85 (OU Analyse governance-objection-dissolved-by-design),
     Case 86 (Gándara community-college predictive equity), and
     Case 182 (Amazon hiring AI). The intervention is real and
     its limits are real; the disclosure-and-audit structure is
