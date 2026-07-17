@@ -1,8 +1,8 @@
 # Capability Matters — A Casebook for LENS
 
-A printed casebook for the **Learning Engineering for Next-Generation Systems (LENS)** specialization in the Learning Design & Technology program at the Johns Hopkins University School of Education. **205 real cases** — printed **main volume** (48 selected; `lib/selection.typ`) + **digital supplement** (the rest; shared global numbering) — in which human capability was the critical system parameter — failures, paired-intervention successes, and frontier cases — organized topically in seven parts (Defense deliberately in the middle; a dedicated Disaster Prevention & Recovery part reads its cases pre → post), each split into What Fails / What Works — and the Frontier, and examined through the LENS v2.1 framing of capability as the interface between operator requirements and system impact, and agency as a design constraint on every intervention.
+A printed casebook for the **Learning Engineering for Next-Generation Systems (LENS)** specialization in the Learning Design & Technology program at the Johns Hopkins University School of Education. **205 real cases** — a printed **main volume** (48 selected; `lib/selection.typ`) cut from a **complete standalone edition** (all 205; shared global numbering) — in which human capability was the critical system parameter — failures, paired-intervention successes, and frontier cases — organized topically in seven parts (Defense deliberately in the middle; a dedicated Disaster Prevention & Recovery part reads its cases pre → post), each split into What Fails / What Works — and the Frontier, and examined through the LENS v2.1 framing of capability as the interface between operator requirements and system impact, and agency as a design constraint on every intervention.
 
-Built with **Typst**. One source renders **eleven outputs**: the 8 × 10 casebook in three editions (print / digital / proof), the new **8 × 10 LENS Companion** (concentration documentation + crosswalks + per-case references on white digital paper), two summary editions (US Letter + Half-Letter), and the Lulu cover wraps.
+Built with **Typst**. One source renders the **six shipping deliverables** (see [../README.md](../README.md) "Build & versions" for the rationale): the main volume in three carriers (Lulu print interior + cover, digital on cream, and a black-on-white local-print copy with colour covers), the complete standalone edition, the **LENS Companion** (concentration documentation + crosswalks), and the **Validation & Audit** tracker (indexes + per-case references) — the last two on white digital paper.
 
 ---
 
@@ -10,18 +10,19 @@ Built with **Typst**. One source renders **eleven outputs**: the 8 × 10 caseboo
 
 The first edition is structurally complete and reproduces from source via `bash scripts/build.sh`.
 
-| Output | Size | Pages | Notes |
-|---|---|---|---|
-| `capability-matters-print.pdf` | 8 × 10, grayscale, 3 mm bleed | **915** | Lulu production interior |
-| `capability-matters-digital.pdf` | 8 × 10, color, cream | 915 | screen / PDF distribution |
-| `capability-matters-proof.pdf` | 8 × 10 on US Letter, trim marks | 915 | office-printer proof, paginates identically to print |
-| **`capability-matters-lens-companion.pdf`** | **8 × 10, white** | **139** | concentration docs + crosswalks + per-case references |
-| `capability-matters-overview.pdf` (+ proof) | US Letter, 2/page | 115 | summary edition |
-| `capability-matters-overview-half.pdf` (+ proof + print interior) | Half Letter, 1/page | 215 | summary edition |
-| `cover-print.pdf` | 8 × 10 wrap | — | Lulu cover, spine **56.82 mm** |
-| `cover-overview-half.pdf` (+ split) | Half Letter wrap | — | summary covers, spine 13.41 mm |
+Six deliverables, all mirrored into `../products/` (`products/print/` for the print carriers, `products/digital/` for the screen PDFs):
 
-All editions share one measure and type size, so **proof pagination is identical to print** — what you proof is what Lulu prints. The companion uses the same trim and a separate white-paper visual layer; on the shelf the two stack as a matched pair.
+| Output | Carrier | Size | Pages | Notes |
+|---|---|---|---|---|
+| `capability-matters-print.pdf` | print | 8 × 10, grayscale, 3 mm bleed | 265 | Lulu production interior |
+| `cover-print.pdf` | print | 8 × 10 wrap | — | Lulu cover, spine **16.46 mm** |
+| `capability-matters-local-print.pdf` | print | US Letter, grayscale interior + colour covers | 267 | print at home / office (black on white; covers in colour) |
+| `capability-matters-digital.pdf` | digital | 8 × 10, colour, cream | 265 | main volume — screen / PDF distribution |
+| `capability-matters-complete.pdf` | digital | 8 × 10, colour, cream | 849 | complete standalone — every case |
+| `capability-matters-lens-companion.pdf` | digital | 8 × 10, white | 43 | concentration docs + crosswalks + canonical `lens_program/` docs |
+| `capability-matters-validation-audit.pdf` | digital | 8 × 10, white | 75 | audit tracker — indexes + per-case references |
+
+The main volume shares one measure and type size across its three carriers, so the local-print grayscale interior paginates page-for-page with the Lulu interior — what you print at home is what Lulu prints. The companion and audit tracker use the same trim on a separate white-paper visual layer.
 
 Integrity at print: `bash scripts/check-cases.sh` reports **205 cases, 0 failures**; all cross-references in range 1–205; all slugs unique; all non-closing cases carry induced + lens + LEO anchors; no stale v1 terminology in any rendered output.
 
@@ -33,21 +34,22 @@ For the intellectual framing behind the casebook — the capability interface, a
 
 ```
 .
-├── book.typ                       # main entry — the casebook (print / digital / proof)
+├── book.typ                       # main entry — the casebook (edition=main | full; mode=print | digital | proof)
 ├── lens-companion.typ             # the LENS Companion (--input view=companion)
-├── overview.typ / overview-half.typ  # the summary editions
+├── validation-audit.typ           # the Validation & Audit tracker (--input view=companion)
 ├── lib/
-│   ├── theme.typ                  # mode flags, page geometry, palette, type sizes
-│   ├── components.typ             # eyebrows, domain tags, mode chips, sources, overview-entry …
-│   ├── case.typ                   # case template — emits metadata + body; view=companion mode emits metadata only
+│   ├── theme.typ                  # mode/edition flags, page geometry, palette, type sizes
+│   ├── components.typ             # eyebrows, domain tags, mode chips, sources, connection figure …
+│   ├── case.typ                   # case template — emits metadata + body; view=companion emits metadata only
 │   ├── chapter.typ                # full-bleed chapter divider
+│   ├── selection.typ              # main-volume case set (the printed cut)
+│   ├── quarantine.typ             # cases withheld from every build
 │   └── diagrams.typ               # code-generated case diagrams (cetz); v2.1 five-competencies labels
 ├── frontmatter/
 │   ├── title.typ                  # half-title / title / colophon
 │   ├── introduction.typ           # framing-first: thesis · cost of gap · engineerable discipline · method · the analytic lens (v2.1) · how to read
 │   ├── howto.typ                  # how to use this book
-│   └── matrix.typ                 # dynamic 205-case matrix (queries <caseinfo>)
-├── supplement.typ                 # digital-supplement entry (minimal front matter; --input edition=supplement)
+│   └── matrix.typ                 # dynamic 205-case matrix (queries <caseinfo>; ° marks cases outside the printed cut)
 ├── chapters/                      # 14 chapters, topical: 7 parts × {fails, works+frontier} — ch1a … ch7b + closing-case.typ
 ├── backmatter/
 │   ├── domain-index.typ                 # dynamic — cases by primary domain
@@ -56,10 +58,10 @@ For the intellectual framing behind the casebook — the capability interface, a
 │   ├── appendix-references-by-case.typ  # per-case references with Retrieved-from lines (queries <caseinfo>)
 │   ├── about-lens.typ, editors.typ      # one-page program block + editor bios
 │   └── references.typ                   # Introduction works-cited + broader reading list
-├── cover/                         # 8 × 10 Lulu wrap + Half-Letter summary wrap
+├── cover/                         # 8 × 10 Lulu wrap (cover.typ)
 ├── fonts/                         # bundled Instrument Serif + DM Sans
 ├── scripts/
-│   ├── build.sh                   # build all 11 outputs + covers
+│   ├── build.sh                   # build the six shipping deliverables + cover; mirror to ../products/
 │   ├── check-cases.sh             # integrity: ≤5 pages, references on page 2, marker == ref count
 │   ├── verification-status.sh     # parses verification-log.md; prints reviewer progress
 │   └── fetch-fonts.sh
@@ -75,45 +77,51 @@ For the intellectual framing behind the casebook — the capability interface, a
 
 ### Prerequisites
 
-- [Typst](https://github.com/typst/typst) ≥ 0.13
-- `ghostscript` — flattens any residual color literals so production interiors are true grayscale
-- `poppler-utils` (`pdfinfo`) — used to compute live spine widths
+- [Typst](https://github.com/typst/typst) ≥ 0.15 (CI pins 0.15.0)
+- `ghostscript` — flattens any residual colour literals so production interiors are true grayscale
+- `poppler-utils` (`pdfinfo`, `pdfunite`, `pdfseparate`) — spine widths + local-print cover assembly
 
 Fonts ship under `./fonts/`. If they go missing, run `./scripts/fetch-fonts.sh`.
 
 ### Commands
 
 ```bash
-bash scripts/build.sh         # all 11 outputs + covers (the canonical full build)
-make print                    # 8 × 10 grayscale interior (Lulu)
-make digital                  # 8 × 10 color edition
-make proof                    # 8 × 10 on US Letter with trim marks
-make cover                    # 8 × 10 Lulu wrap (spine computed from live page count)
+bash scripts/build.sh         # the six shipping deliverables + cover, mirrored to ../products/ (canonical full build)
+make digital                  # main volume, 8 × 10 colour on cream
+make complete                 # full standalone, every case
+make print                    # main volume, 8 × 10 grayscale interior (Lulu)
+make local                    # main volume, grayscale, on US Letter (interior only; build.sh attaches covers)
+make companion                # LENS Companion + Validation & Audit (white)
 make check                    # case-integrity check (page count, citation parity)
 make clean
 ```
 
-### Build modes (Typst input flag)
+The `make` targets compile individual editions into `build/` for quick iteration; they do not build the covers or mirror to `../products/`. Use `bash scripts/build.sh` for a release.
+
+### Build modes (Typst input flags)
 
 ```bash
-typst compile --font-path fonts --input mode=<MODE> book.typ <out>.pdf
+typst compile --font-path fonts --input mode=<MODE> --input edition=<EDITION> book.typ <out>.pdf
 typst compile --font-path fonts --input view=<VIEW> <entry>.typ <out>.pdf
 ```
 
-| `mode` | Page size | Color | Purpose |
+| `mode` | Page size | Colour | Purpose |
 |---|---|---|---|
 | `print` | 8 × 10 + 3 mm bleed | grayscale | Lulu production interior |
-| `digital` | 8 × 10 | color, cream backdrop | screen / PDF (default) |
-| `proof` | US Letter, 8 × 10 centered + trim marks | grayscale | print at 100% to review |
+| `digital` | 8 × 10 | colour, cream backdrop | screen / PDF (default) |
+| `proof` | US Letter, 8 × 10 centered + trim marks | grayscale | local-print interior (print at 100%) |
+
+| `edition` | Cases rendered | Used for |
+|---|---|---|
+| `full` (default) | all 205 | the complete standalone edition |
+| `main` | the 48 in `lib/selection.typ` | the printed main volume (print / digital / local) |
 
 | `view` | Entry file | Purpose |
 |---|---|---|
-| `book` (default) | `book.typ` | full casebook |
-| `companion` | `lens-companion.typ` | LENS Companion — case bodies suppressed; metadata-driven indexes + crosswalks render |
-| `overview` | `overview.typ` | US Letter, two cases per page |
-| `overview-half` | `overview-half.typ` | Half Letter, one case per page |
+| `book` (default) | `book.typ` | the casebook (full case narratives) |
+| `companion` | `lens-companion.typ`, `validation-audit.typ` | case bodies suppressed; metadata-driven indexes + crosswalks render |
 
-All mode/trim/palette/typography decisions are centralised in `lib/theme.typ`. The `view=companion` branch is in `lib/case.typ` — each case emits its metadata block and skips the body so the companion's indexes and per-case references appendix render against the same source as the book.
+All mode/edition/trim/palette/typography decisions are centralised in `lib/theme.typ`. The `view=companion` branch is in `lib/case.typ` — each case emits its metadata block and skips the body so the companion's and audit tracker's indexes and per-case references appendix render against the same source as the book. (`mode=proof-digital` — the colour proof carrier — still exists in `theme.typ` but is not part of the shipping set.)
 
 ### Grayscale guarantee
 
@@ -128,7 +136,7 @@ Production builds use two layers:
 
 ## Cover
 
-A single 8 × 10 Lulu wrap — front, spine, and back on one sheet — built from `cover/cover.typ`. The spine width is computed from the live `print` page count (~0.0621 mm/page on cream stock) and passed in by `scripts/build.sh`. The 915-page interior produces a **56.82 mm** spine; Lulu may quote-back ±1 mm.
+A single 8 × 10 Lulu wrap — front, spine, and back on one sheet — built from `cover/cover.typ`. The spine width is computed from the live `print` page count (~0.0621 mm/page on cream stock) and passed in by `scripts/build.sh`. The 265-page main-volume interior produces a **16.46 mm** spine; Lulu may quote-back ±1 mm. `build.sh` also emits a split cover (front · spine · back) as an internal intermediate — its colour front/back panels are attached to the local-print copy.
 
 To override once Lulu reports the exact spine width:
 
@@ -209,14 +217,14 @@ The automated references validation pass before handover yielded **~777 VERIFIED
 
 ## Reviewing
 
-The `proof` edition is the review artifact: the grayscale print page centered on US Letter with an 8 × 10 trim outline and corner crop marks. Print it at 100% (no scaling) on any office printer — it centers on the sheet and shows exactly where the production book trims. Because proof shares print's measure and type size, its pagination matches the Lulu interior page-for-page.
+The local-print copy (`mode=proof`, grayscale interior) is the review artifact: the grayscale print page centered on US Letter with an 8 × 10 trim outline and corner crop marks, then wrapped with the colour covers. Print it at 100% (no scaling) on any office printer — it centers on the sheet and shows exactly where the production book trims. Because it shares print's measure and type size, its interior pagination matches the Lulu interior page-for-page.
 
 ---
 
 ## Open items for production
 
 - The colophon currently reads `Copyright © 2026. All rights reserved.` pending a decision on the institutional rights-holder.
-- Lulu reports an exact spine width once the page count is locked. Build the cover with `--input spine-mm=…` to match if it differs from the computed 56.82 mm.
+- Lulu reports an exact spine width once the page count is locked. Build the cover with `--input spine-mm=…` to match if it differs from the computed 16.46 mm.
 - ISBN assignment + copyright registration sit outside the source.
 - The human-reviewer verification pass against the rubric in [verification-log.md](verification-log.md) is a quality gate, not a print blocker — it can run in parallel with the Lulu pre-press proof.
 

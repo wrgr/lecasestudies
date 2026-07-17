@@ -74,15 +74,9 @@
     // intentionally empty — case body is not rendered in the companion
   } else if (edition == "main" and not main-slugs.contains(slug)) or (edition == "supplement" and main-slugs.contains(slug)) {
     // edition split: this case belongs to the other edition — metadata only,
-    // so the matrix and indexes still cover the whole corpus in both books.
-  } else if view != "book" {
-  // Overview booklets (view "overview" / "overview-half"): render a compact
-  // entry instead of the full multi-page case, reusing verified content.
-    overview-entry(number, title, year, domains-list, modes-code, summary, references, lens-approach,
-                   sections: sections, beats: beats, kind: kind,
-                   courses: courses, leo-anchor: leo-anchor,
-                   induced-anchor: induced-anchor, lens-anchor: lens-anchor,
-                   le-insight: le-insight, impact: impact)
+    // so the matrix and indexes still cover the whole corpus. (Internally the
+    // non-main partition is still tagged "supplement"; it ships as part of the
+    // complete standalone edition, not as a separate supplement PDF.)
   } else {
 
   // Shared header: case number / domains / year, title, mode line, impact.

@@ -17,7 +17,7 @@
   // arabic 1 here (roman folios before; see components.typ book-header).
   folio-reset: false,
 ) = if view == "book" {
-  // (The overview booklets omit full-page chapter dividers.)
+  // (The metadata-only companion pass omits full-page chapter dividers.)
   // chapter dividers start on a right-hand (recto) page
   pagebreak(to: "odd", weak: true)
 

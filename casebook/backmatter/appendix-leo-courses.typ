@@ -11,7 +11,7 @@
 
 #pagebreak(weak: true)
 
-#let condensed = view == "overview-half"
+#let condensed = false  // (the condensed half-page overview layout was retired July 2026)
 #let _body = if condensed { 8pt } else { 9.5pt }
 
 #text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("Appendix · LEOs and course coverage"))

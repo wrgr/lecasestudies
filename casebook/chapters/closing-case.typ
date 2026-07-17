@@ -3,7 +3,7 @@
 // ============================================================================
 // The case about LENS itself. Per editor direction, this is the closing case
 // of the book — included after all v1 and v2 case content, immediately before
-// the back matter, in book.typ, overview.typ, and overview-half.typ. It always
+// the back matter, in book.typ. It always
 // carries the last appearance number (the slug "discipline-we-build-next" is
 // the stable identifier across renumbering). The fit audit flags it as framing
 // rather than an analyzable case; its prose is kept count-agnostic so it reads

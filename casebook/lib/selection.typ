@@ -1,9 +1,9 @@
 // ============================================================
 // Main-volume selection — the printed edition's case set.
 // Slugs are the stable IDs; global numbering (1-205) is shared
-// across the printed main volume and the digital supplement, so
-// gaps in the printed sequence are intentional — they point at
-// the supplement. Edit this list to change the printed cut.
+// across the whole corpus, so gaps in the printed sequence are
+// intentional — those cases live in the complete standalone edition.
+// Edit this list to change the printed cut.
 // ============================================================
 
 #let main-slugs = (

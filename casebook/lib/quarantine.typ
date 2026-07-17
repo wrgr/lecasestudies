@@ -3,9 +3,9 @@
 //
 // A quarantined case renders nothing: no narrative, no LE Lens, and no
 // <caseinfo>/<cmeta> metadata — so it is absent from the printed main
-// volume, the digital supplement, the complete reference build, the
-// overview booklets, the companion, and from the matrix / domain index /
-// references appendix. The case block stays in its chapter source and is
+// volume, the complete standalone edition, the companion, and from the
+// matrix / domain index / references appendix. The case block stays in
+// its chapter source and is
 // fully recoverable: delete a slug from this list to restore the case.
 //
 // Editorial basis: the 2026 LENS-alignment audit (see casebook/QUARANTINE.md
