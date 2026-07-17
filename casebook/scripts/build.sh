@@ -30,7 +30,8 @@ gray_flatten() {
 
 # ---- Interiors ----
 # The printed book is the MAIN VOLUME (selected case set in
-# lib/selection.typ). The full 205-case reference build and the
+# lib/selection.typ). The full reference build (all non-quarantined cases;
+# 191 after the 2026 LENS-alignment quarantine — see lib/quarantine.typ) and the
 # digital-only supplement are compiled below.
 echo "→ Compiling main-volume print interior (8 × 10, grayscale, bleed)..."
 $TYPST --input mode=print --input edition=main book.typ build/_print-color.pdf
@@ -217,7 +218,7 @@ echo "    capability-matters-print-with-cover.pdf  print interior with front/bac
 echo "    capability-matters-digital-with-cover-letter.pdf  color edition + covers, centered on US Letter (8.5 × 11 printing)"
 echo "    capability-matters-digital.pdf    8 × 10 MAIN VOLUME digital edition (color, cream)"
 echo "    capability-matters-supplement.pdf 8 × 10 digital supplement (all non-main cases; digital only)"
-echo "    capability-matters-complete.pdf   8 × 10 complete 205-case reference edition (internal)"
+echo "    capability-matters-complete.pdf   8 × 10 complete reference edition, all non-quarantined cases (internal)"
 echo "    capability-matters-proof.pdf      8 × 10 on US Letter with trim marks (proof)"
 echo "    capability-matters-lens-companion.pdf  8 × 10 LENS companion — concentration docs + crosswalks (white, digital)"
 echo "    capability-matters-validation-audit.pdf 8 × 10 Validation & Audit — domain/course indexes + per-case references (white, digital)"
