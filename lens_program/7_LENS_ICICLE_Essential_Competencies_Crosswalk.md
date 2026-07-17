@@ -14,23 +14,28 @@ The question it answers is the editor's: *of the 42, which does a LENS graduate 
 
 # Headline
 
+*Updated for LENS doc 1 v2.3 / doc 2 v2.5 (July 2026), which added subobjectives 2.6 and 3.7 (enable the people who deliver) and made project/program management a LEN 10 capstone competency. Original as-found counts were 27 / 10 / 5.*
+
 | | Count | Of which Individual (17) | Of which Team (25) |
 |---|:---:|:---:|:---:|
-| **● Covered** — a LEO subobjective or required course names it | 27 | 15 | 12 |
+| **● Covered** — a LEO subobjective or required course names it | 29 | 16 | 13 |
 | **◐ Partial** — present but as a thread, a PLO, or an elective, not a named LEO | 10 | 1 | 9 |
-| **○ Gap** — no real home in the required curriculum | 5 | 1 | 4 |
+| **○ Gap** — recorded as deliberate scope, not covered | 3 | 0 | 3 |
 
-**The floor holds.** Of the 17 Individual competencies — the framework's non-distributable floor, what it means to *be* a learning engineer — LENS covers 15 outright. The one partial is 3.c (appraise primary research); the one gap is 5.c (enable the people who deliver).
+**The floor now holds completely.** All 17 Individual competencies — the framework's non-distributable floor, what it means to *be* a learning engineer — are covered (16) or one subobjective from it (1: 3.c, appraise primary research). The former floor gap, 5.c (enable the people who deliver), was closed in v2.3 as subobjectives 2.6 (LEO-2, implementation facet) and 3.7 (LEO-3, collaboration facet).
 
-**The gaps are almost all Team-tier, and that is partly by design.** Four of the five outright gaps and nine of the ten partials are Team competencies — the ones the framework itself says "must be present somewhere in the effort but need not be in any one person." LENS states the same posture: it "develops integrators who can lead and work within learning engineering teams… no individual is expected to hold every competency of the field." So Team-tier thinness is defensible as scope. But a SIG reviewer will still ask where a LENS graduate acquires project management, mentoring, platform engineering, and content production — and the honest answer for four of them is *nowhere required*.
+**Every remaining gap is Team-tier and recorded as deliberate scope.** The three — 1.j, 4.c, 4.d — are competencies the framework itself says "must be present somewhere in the effort but need not be in any one person." LENS states the same posture: it "develops integrators who can lead and work within learning engineering teams… no individual is expected to hold every competency of the field." Per the editor decision (v2.5), these are recorded as awareness/out-of-scope in the attainment profile (`4_LENS_LECF_Crosswalk.md` R2) rather than backfilled into a 30-credit concentration. Project/program management (former gap 1.i) is now exercised and evidenced in the LEN 10 capstone.
 
-# The five outright gaps
+# The three remaining gaps — all deliberate Team-tier scope
 
-1. **1.i Manage the work** *(Team)* — project/program management: planning, budgeting, timelines, resource management, versioning/approvals, progress reporting (LEBOK KA10). LEN 10 *is* a managed project, but PM is nowhere taught as a competency.
-2. **1.j Develop other practitioners** *(Team)* — coach/mentor colleagues, make reasoning visible, develop others. LENS develops the graduate; the graduate developing *others* is not an objective.
-3. **4.c Select and integrate the tools and technology** *(Team)* — software engineering, LMS/platform configuration and administration, systems integration, ecosystem architecture. LEN 9 is *computational/AI methods* (NLP, ML learner-modeling, LLM-as-judge), not platform/software engineering. Genuinely thin.
-4. **4.d Develop the content and media** *(Team)* — produce (or direct) learning content and media, curate and version, select modality. LENS positions itself as engineers/integrators, not producers; nothing owns it.
-5. **5.c Enable the people who deliver** *(Individual)* — **the one floor gap.** Design so deliverers can deliver; train-the-trainer; performance support at the point of need; the deliverer as a designed-for user. LEO-3 designs for operators, LEO-5 for adoption, but the instructor/facilitator as a user you engineer for is not explicit.
+1. **1.j Develop other practitioners** *(Team)* — coach/mentor colleagues, make reasoning visible, develop others. LENS develops the graduate; the graduate developing *others* is not an objective. → Awareness tier.
+2. **4.c Select and integrate the tools and technology** *(Team)* — software engineering, LMS/platform configuration and administration, systems integration, ecosystem architecture. LEN 9 is *computational/AI methods* (NLP, ML learner-modeling, LLM-as-judge), not platform/software engineering. → Out of scope; a graduate briefs this specialist (1.b) rather than being one.
+3. **4.d Develop the content and media** *(Team)* — produce (or direct) learning content and media, curate and version, select modality. LENS positions itself as engineers/integrators, not producers. → Out of scope; the sibling LXD concentration owns production.
+
+## Closed since the as-found analysis
+
+- **5.c Enable the people who deliver** *(Individual)* — the former floor gap. Closed in doc 1 v2.3 as **2.6** (design the support layer so delivery does not depend on the designer — job aids, point-of-need support, train-the-trainer) and **3.7** (the deliverer as a designed-for role in the human-system collaboration). Taught in LEN 6 (2.6) and LEN 2 (3.7), deepened in LEN 8, assessed in LEN 10.
+- **1.i Manage the work** *(Team)* — answered in doc 2 v2.5 by making project/program management (plan, budget, timeline, resources, versioning, progress reporting) an explicit **LEN 10 capstone** competency, exercised and evidenced rather than taught as a standalone domain.
 
 # Full crosswalk
 
@@ -48,8 +53,8 @@ Status: ● covered · ◐ partial · ○ gap. Tier: I = Individual, T = Team. C
 | 1.f Communicate and collaborate across disciplines | I | 5.4, 4.5; PLO-4 | ● | Boundary-crossing communication is a stated LENS thread |
 | 1.g Practice ethically | I | 4.1, 4.6; **F2**, LEN 7; agency constraint | ● | Ethics distributed as a design constraint across every LEO |
 | 1.h Hold the dispositions | I | §6.4 dispositions, **LEN 1** | ● | Same five dispositions named from the field's foundational work |
-| 1.i Manage the work | T | — | ○ | No PM competency; LEBOK KA10 has no LENS analog |
-| 1.j Develop other practitioners | T | — | ○ | Mentoring/coaching colleagues is not an objective |
+| 1.i Manage the work | T | **LEN 10** capstone | ● | *(v2.5)* Project/program management exercised and evidenced in the capstone — plan, budget, timeline, resources, versioning, progress reporting — not taught as a standalone domain |
+| 1.j Develop other practitioners | T | — | ○ | Mentoring/coaching colleagues is not an objective; recorded as awareness tier |
 | 1.k Build organizational capability | T | LEN 8 (elec) | ◐ | Org learning touches change; assess-LE-maturity / minimum-viable-team / maturity model absent |
 | 1.l Iterate through the gate | I | 2.2, **LEN 1/2/6/10** | ● | The iteration cycle is the field's core method in LENS |
 | 1.m Communicate across stakeholders | T | PLO-4; LEN 8 (elec) | ◐ | Leadership communication present; cost-center→value / arguing for iteration resources thin |
@@ -95,7 +100,7 @@ Status: ● covered · ◐ partial · ○ gap. Tier: I = Individual, T = Team. C
 |---|:---:|---|:---:|---|
 | 5.a Roll out and monitor | T | 2.4, 5.5; LEN 8 | ● | |
 | 5.b Lead the change | I | 5.5; LEN 8; implementation-science thread | ● | Adoption/sustainment; why sound solutions fail to adopt |
-| 5.c Enable the people who deliver | I | — | ○ | Train-the-trainer / performance support / deliverer-as-user not explicit — **the floor gap** |
+| 5.c Enable the people who deliver | I | 2.6 (**LEN 6**), 3.7 (**LEN 2**), **LEN 10**; LEN 8 (elec) | ● | *(v2.3)* Closed as two subobjectives — 2.6 support/delivery layer (implementation facet), 3.7 deliverer-as-role (collaboration facet) |
 | 5.d Govern and sustain | T | LEO-5; **LEN 4** (governance), LEN 7 | ● | Data governance, lifecycle, re-check constraints over time |
 | 5.e Scale the solution | T | 2.3, "speed and scale" through-line | ● | Scale is a LENS through-line; total-cost-of-ownership thin |
 
@@ -108,19 +113,19 @@ Status: ● covered · ◐ partial · ○ gap. Tier: I = Individual, T = Team. C
 | 6.c Analyze how it fails | T | The T/D/N/H/G/K casebook; failure analysis | ● | A LENS strength — the entire casebook is failure-mode analysis |
 | 6.d Contribute to the field's evidence base | T | **LEN 10** reproducible report; "offered toward LECF validation" | ◐ | Capstone produces evidence; contributing a case/method *back to the field* / design-based research not a graduate objective |
 
-# What to do with the five gaps
+# What to do with the gaps — disposition
 
-Three moves, in order of leverage. R2 is the load-bearing one.
+Three moves, in order of leverage. R1 and part of R2 are done; the partials (R3) remain open.
 
-## R1. Close 5.c — it is the only floor gap and the cheapest to close
+## R1. Close 5.c — DONE (v2.3)
 
-5.c (enable the people who deliver) is an *Individual* competency: the framework says every learning engineer holds it. LENS already teaches the adjacent material — human support systems (LEBOK KA1.2.5) sits in the LDT map, and LEN 8 covers knowledge transfer. The fix is a subobjective, not a course: add to **LEO-2 or LEO-5** a line naming the deliverer as a designed-for user — *"design the human support layer so that delivery does not depend on the designer's presence; provide performance support at the point of need."* Assessable directly from the LEN 10 governance/sustainment plan.
+5.c (enable the people who deliver) was the only *Individual* (floor) gap. Closed in doc 1 v2.3 as two subobjectives — **2.6** (support/delivery layer so delivery does not depend on the designer; LEO-2) and **3.7** (the deliverer as a designed-for role in the human-system collaboration; LEO-3) — taught in LEN 6 and LEN 2, deepened in LEN 8, assessed in the LEN 10 sustainment plan.
 
-## R2. Name the individual-attainment posture for the four Team gaps — do not backfill them
+## R2. Name the individual-attainment posture for the Team gaps — ACCEPTED
 
-1.i (manage the work), 1.j (develop others), 4.c (tools/platform engineering), and 4.d (content/media) are all Team competencies the framework explicitly permits to be distributed. Backfilling them into a 30-credit concentration would dilute the thing LENS is. The right move is the one `4_LENS_LECF_Crosswalk.md` R2 already recommends: **publish a one-page attainment profile** stating, per competency, whether a LENS graduate reaches it at practitioner level, at awareness level, or out of scope. Put these four in *awareness / out-of-scope* explicitly, with the framework's own Individual/Team designation cited as the warrant. An acknowledged scope boundary is a strength in front of this SIG; an unacknowledged one reads as a hole.
+1.j (develop others), 4.c (tools/platform engineering), and 4.d (content/media) are Team competencies the framework explicitly permits to be distributed. Backfilling them into a 30-credit concentration would dilute the thing LENS is. Editor decision (v2.5): record them as *awareness / out-of-scope* in the one-page attainment profile that `4_LENS_LECF_Crosswalk.md` R2 already calls for, citing the framework's own Individual/Team designation as the warrant. **1.i (manage the work) was handled differently** — rather than out-of-scope, it is exercised and evidenced in the LEN 10 capstone (v2.5), because a capstone project already requires it. Remaining action: draft and publish the attainment profile itself.
 
-## R3. Decide the six partials that are one sentence from covered
+## R3. Decide the six partials that are one sentence from covered — OPEN
 
 Several partials are thin only because LENS never wrote the subobjective, not because the curriculum omits the work:
 
@@ -130,4 +135,4 @@ Several partials are thin only because LENS never wrote the subobjective, not be
 
 # In plain language
 
-The field draft says what every learning engineer should be able to do, and marks which of those any one person must hold versus which the team can hold. LENS covers the every-person floor almost completely — 15 of 17 — and the two soft spots there (appraising research; enabling deliverers) are each a subobjective away from closed. What LENS does not cover is mostly the team-holds-it tier: managing the work, growing other practitioners, building the software, making the media. That is the concentration's scope talking, not a defect — but the honest way to say so is a published attainment profile that puts those in awareness or out of scope on the framework's own terms, rather than leaving a reviewer to find the holes by counting.
+The field draft says what every learning engineer should be able to do, and marks which of those any one person must hold versus which the team can hold. After v2.3/v2.5, LENS covers the every-person floor completely (16 of 17, the last one — appraising primary research — a subobjective away), and now exercises project/program management in the capstone. What LENS deliberately does not cover is the team-holds-it tier: growing other practitioners, building the software, making the media. That is the concentration's scope talking, not a defect — and the honest way to say so is the published attainment profile that puts those in awareness or out of scope on the framework's own terms, rather than leaving a reviewer to find the holes by counting.
