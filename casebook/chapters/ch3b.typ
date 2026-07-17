@@ -29,7 +29,7 @@
   evidence-source: "investigation",
   induced-anchor: "7.3",
   lens-anchor: "D1/PT3",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     On April 28, 1988, Aloha Airlines Flight 243 lost an 18-foot
     section of upper fuselage in flight; the aircraft, a Boeing
@@ -203,7 +203,7 @@
   evidence-source: "program-report",
   induced-anchor: "7.1",
   lens-anchor: "D1/PT4",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     The FAA's Next Generation Air Transportation System (NextGen)
     is the multi-decade transition of US air-traffic management
@@ -377,7 +377,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "7.1",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1, CLO-2",
+  leo-anchor: "LEO-1, LEO-2",
   summary: [
     The Eurocat Air Traffic Management System was the kind of
     safety-critical legacy software whose customers cannot accept a
@@ -505,9 +505,9 @@
   lens-approach: [
     Eurocat is the C7 small-tier transition case (induced 7.1
     and 7.2; LENS D1/PT1). LENS uses it in Domain 1 (Systems
-    Analysis) for CLO-1 — the safety case and the
+    Analysis) for LEO-1 — the safety case and the
     transformation pipeline are both engineered artifacts —
-    and in Domain 2 (Iterative Development) for CLO-2, since
+    and in Domain 2 (Iterative Development) for LEO-2, since
     the pilot is the iteration that earns the rollout. Pair
     with the big-tier C7 failures (Patriot/Dhahran, Ariane 5,
     Knight Capital, CrowdStrike, TSB) for the failure-and-
@@ -673,7 +673,7 @@
   scale: "big",
   induced-anchor: "4.3",
   lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   evidence-source: "investigation",
 )
 
@@ -824,7 +824,7 @@
   scale: "big",
   induced-anchor: "4.3",
   lens-anchor: "D3/PT3",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   evidence-source: "investigation",
 )
 
@@ -976,7 +976,7 @@
   scale: "big",
   induced-anchor: "4.2",
   lens-anchor: "D4/PT2",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 120 — egpws-taws-closing-the-cfit-category-in ----
@@ -993,7 +993,7 @@
   evidence-source: "investigation",
   induced-anchor: "3.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Controlled flight into terrain (CFIT) — a serviceable aircraft
     under the pilot's control flown unintentionally into the
@@ -1172,7 +1172,7 @@
   evidence-source: "investigation",
   induced-anchor: "3.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     TCAS — the Traffic Alert and Collision Avoidance System,
     standardized in RTCA DO-185 and successors — is the
@@ -1490,7 +1490,7 @@
   scale: "big",
   induced-anchor: "1.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 123 — fsf-cfit-and-alar-task-forces-industry ----
@@ -1507,7 +1507,7 @@
   evidence-source: "investigation",
   induced-anchor: "6.1",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   summary: [
     Through the late 1980s and into the early 1990s, Controlled
     Flight Into Terrain — a serviceable aircraft flown under control

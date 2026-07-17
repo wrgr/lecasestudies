@@ -1,12 +1,12 @@
 # Capability Matters v2 — Export Bundle
 *Core revised documents and full research backbone for the v2 casebook expansion. Generated from an eight-pass verified-source sweep.*
 
-> **STATUS (June 2026): ADOPTED.** This bundle is preserved as the design rationale and research backbone for the v2 corpus and the v2.1 framework, both now in print. The current curriculum-of-record lives in `../lens_program/` (v2.1, change-logs inline at the bottom of docs 1 and 2). Two adoption-time refinements are noted in `01_*.md`'s STATUS header: (i) D3 reorder + rename to **Human-System Collaboration** and broadening from "Machine Teaming and Adaptation"; (ii) the four "[NEW] CLO" items refactored to **named subobjectives** within the parent CLO (1.5, 2.5, 3.3, 3.4, 4.2, 4.4, 4.6, 5.6) rather than as parallel top-level CLOs.
+> **STATUS (June 2026): ADOPTED.** This bundle is preserved as the design rationale and research backbone for the v2 corpus and the v2.1 framework, both now in print. The current curriculum-of-record lives in `../lens_program/` (v2.1, change-logs inline at the bottom of docs 1 and 2). Two adoption-time refinements are noted in `01_*.md`'s STATUS header: (i) D3 reorder + rename to **Human-System Collaboration** and broadening from "Machine Teaming and Adaptation"; (ii) the four "[NEW] LEO" items refactored to **named subobjectives** within the parent LEO (1.5, 2.5, 3.3, 3.4, 4.2, 4.4, 4.6, 5.6) rather than as parallel top-level LEOs.
 
 ## Read in this order
 
 **Core revised documents (the deliverables — adopted; here for design rationale):**
-- `01_LENS_revised_competencies_and_CLOs.md` — the revised five competency domains, four new CLOs (now subobjectives), one amended CLO, four amended sub-competencies, and the reframed "decision-grade evidence." Each change grounded in named cases. **The current canonical set lives in `../lens_program/1_LENS_Five_Competencies.md` (v2.1).**
+- `01_LENS_revised_competencies_and_CLOs.md` — the revised five competency domains, four new LEOs (now subobjectives), one amended LEO, four amended sub-competencies, and the reframed "decision-grade evidence." Each change grounded in named cases. **The current canonical set lives in `../lens_program/1_LENS_Five_Competencies.md` (v2.1).**
 - `02_complete_case_list_build_reference.md` — every v2 candidate (~77), deduplicated across all passes, with both anchor systems, status/COI/tier/hedge flags, and pairing recommendations. **All candidates were drafted; the corpus is now 194 cases total (v1 + v2 + 2 v2.1 additions for the iteration-gap chapter).**
 - `03_editor_request_memo.md` — decisions the editor needed to make, inputs only the editor could supply, recommended build sequence, open risks. **Resolved during drafting and adoption; preserved for traceability.**
 

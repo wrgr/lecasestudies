@@ -62,7 +62,7 @@
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
   Every case carries three anchors (canonical LENS competency,
-  induced sub-competency, and CLO), a scale tier, and an
+  induced sub-competency, and LEO), a scale tier, and an
   evidence-source tag. Weaker-evidence cases render an evidence-tier
   flag under the title with standing "future validation ongoing"
   language; cases touching the editors' own institutions or work

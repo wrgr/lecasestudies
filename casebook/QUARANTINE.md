@@ -18,7 +18,7 @@ Cases withheld from every build (print main volume, digital supplement, complete
 | 158 | hyatt-regency-walkway-collapse | not-LENS | Structural-engineering ethics, point-in-time; poor fit to the pre/post disaster chapter. | CrowdStrike (172) change-as-code; Texas City (161) |
 | 168 | sago-mine-disaster | redundant | Cumulative-inadequacy pattern, thinnest of the multi-layer-drift cases. | Deepwater Horizon (163), Grenfell (164), Bhopal (159); UBB (162) for the coal-mine domain |
 | 188 | cambridge-analytica-facebook | not-LENS | Its own lens-approach states it "is not a capability-development case"; a consent/privacy scandal. | Governance-seam idea generic across Part VII |
-| 202 | care-principles-indigenous-data | not-LENS | A normative principles framework, not a deployed system with a capability gap. | Fairness-beyond-omission CLO in Bartlett (186), Coots (196), Aadhaar (201) |
+| 202 | care-principles-indigenous-data | not-LENS | A normative principles framework, not a deployed system with a capability gap. | Fairness-beyond-omission LEO in Bartlett (186), Coots (196), Aadhaar (201) |
 | 204 | cruise-robotaxi-pedestrian-drag | redundant | Same Oct-2023 Cruise incident as 190; the weaker treatment (no evidence-flag, miscategorised as frontier). | Cruise partial-disclosure (190) — keeps the flag, hedges, and the Waymo/CPUC triad |
 
 ## Cross-reference cleanup (applied when these were cut)

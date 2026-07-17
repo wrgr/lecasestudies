@@ -158,7 +158,7 @@
   scale: "big",
   induced-anchor: "1.1",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   evidence-source: "investigation",
 )
 
@@ -177,7 +177,7 @@
   evidence-flag: "journalism-tier",
   induced-anchor: "5.1",
   lens-anchor: "D1+D5/PT4",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     The EU Human Brain Project, launched in 2013 as one of the EU's
     Future and Emerging Technologies Flagship programs, set out to
@@ -342,7 +342,7 @@
   evidence-flag: "journalism-tier",
   induced-anchor: "8.1",
   lens-anchor: "D2+D4/PT6",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     Jeffrey Dastin's Reuters investigation, published October 10,
     2018, reported that Amazon had initiated an internal
@@ -479,7 +479,7 @@
     after: (
       [Carry the journalism-tier evidence-flag under the title without softening; the case rests on single-source reporting and the future-validation-ongoing language is binding for the specific technical detail.],
       [Pair in syllabi with Case 186 (Bartlett) so the fairness-through-unawareness-fails thread is taught at adjacent scales and in adjacent decision domains.],
-      [Use the case to anchor the construct-choice CLO; the curricular target is the discipline of refusing to deploy when the historical record from which the model would be learned does not defensibly support the prediction the deployment requires.],
+      [Use the case to anchor the construct-choice LEO; the curricular target is the discipline of refusing to deploy when the historical record from which the model would be learned does not defensibly support the prediction the deployment requires.],
     ),
   ),
   references: (
@@ -503,8 +503,8 @@
   ],
   lens-approach: [
     Amazon Hiring AI is the choose-the-construct case at hiring-
-    algorithm scale (induced 8.1; LENS D2+D4/PT6; CLO-4 and
-    CLO-5). LENS uses it in Domain 2 (Iterative Development)
+    algorithm scale (induced 8.1; LENS D2+D4/PT6; LEO-4 and
+    LEO-5). LENS uses it in Domain 2 (Iterative Development)
     for the irreducibility-verification-as-deployment-gate
     discipline and in Domain 4 (Test and Evaluation) for the
     construct-validity-at-the-training-data-layer anchor. Pair
@@ -680,7 +680,7 @@
   scale: "big",
   induced-anchor: "3.2",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
   evidence-source: "investigation",
 )
 
@@ -832,7 +832,7 @@
   scale: "big",
   induced-anchor: "3.2",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3",
+  leo-anchor: "LEO-3",
 )
 
 // ---- Case 185 — air-canada-chatbot-liability ----
@@ -849,7 +849,7 @@
   evidence-source: "investigation",
   induced-anchor: "5.2",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-3, CLO-5",
+  leo-anchor: "LEO-3, LEO-5",
   summary: [
     On February 14, 2024, the British Columbia Civil Resolution
     Tribunal issued its decision in _Moffatt v. Air Canada_, 2024
@@ -962,7 +962,7 @@
       and the legal question that the delegation surfaces, and
       it does so in a forum whose decision is operationally
       consequential for the parties and pedagogically clear for
-      the field. The human-in-the-loop CLO at the customer-
+      the field. The human-in-the-loop LEO at the customer-
       interaction-AI-agent seam is anchored by the case in the
       form the deployment architecture must support — the
       organization's accountability for the agent's outputs is
@@ -985,7 +985,7 @@
     after: (
       [Carry the precedential-weight hedge into print without softening; the ruling is a small-claims-tribunal decision and the precedential limits are part of what the case teaches alongside the structural form it names.],
       [Pair in syllabi with Case 5 (Epic Sepsis) so the delegation-without-validation form is taught at both the healthcare and the customer-interaction-agent scales.],
-      [Use the case to anchor the human-in-the-loop CLO at the customer-interaction-AI-agent seam; the curricular target is the discipline of treating the agent's outputs as the organization's representations, and of building the deployment architecture to that constraint.],
+      [Use the case to anchor the human-in-the-loop LEO at the customer-interaction-AI-agent seam; the curricular target is the discipline of treating the agent's outputs as the organization's representations, and of building the deployment architecture to that constraint.],
     ),
   ),
   references: (
@@ -1010,7 +1010,7 @@
   lens-approach: [
     Air Canada chatbot is the human-in-the-loop-at-the-customer-
     interaction-agent-seam case (induced 5.2; LENS D3/PT6;
-    CLO-3 and CLO-5). LENS uses it in Domain 3 (Machine
+    LEO-3 and LEO-5). LENS uses it in Domain 3 (Machine
     Teaming and Adaptation) for the
     organization-is-liable-for-agent-representations principle.
     Pair with Case 5 (Epic Sepsis delegation-without-
@@ -1046,7 +1046,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.2",
   lens-anchor: "D4+D3/PT6",
-  clo-anchor: "CLO-4, CLO-5, CLO-3",
+  leo-anchor: "LEO-4, LEO-5, LEO-3",
   summary: [
     Bartlett, Morse, Stanton, and Wallace (_Journal of Financial Economics_,
     2022) analyzed several million US mortgage applications across the
@@ -1164,7 +1164,7 @@
   lens-approach: [
     Bartlett is the headline equity-and-construct case in
     consumer credit (induced 8.2; LENS D4+D3/PT6). LENS uses it
-    in Domain 4 (Test and Evaluation) for the CLO *Fairness
+    in Domain 4 (Test and Evaluation) for the LEO *Fairness
     beyond omission*, in Domain 3 (Human-System Collaboration) for delegation to underwriting models, and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
     fair-lending regulatory regime. Direct pair with Case 196
@@ -1200,7 +1200,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.4",
   lens-anchor: "D4+D5/PT6",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     Northpointe's COMPAS risk-assessment instrument, deployed in
     pretrial, parole, and sentencing decisions across multiple
@@ -1304,7 +1304,7 @@
       that the choice between fairness criteria is governance and
       normative work that the deployment did not surface to the
       affected jurisdictions or to the defendants whose liberty
-      depended on the score. The CLO on fairness beyond omission
+      depended on the score. The LEO on fairness beyond omission
       is anchored by the case in its mature form — the
       impossibility result requires the deploying institution to
       choose, document, and disclose which fairness criterion the
@@ -1328,7 +1328,7 @@
     after: (
       [Carry the impossibility result into print as the load-bearing teaching point; the case does not teach that COMPAS is fair or that COMPAS is unfair, and the editorial framing must preserve the formal constraint that both audit findings instantiate.],
       [Pair in syllabi with Case 186 (Bartlett) so the fairness-through-unawareness-fails thread and the impossibility-of-multiple-criteria thread are taught together as complementary structural arguments about disparate impact.],
-      [Use the case to anchor the fairness-beyond-omission CLO; the curricular target is the discipline of choosing and disclosing the fairness criterion when the impossibility result rules out satisfying all of them simultaneously.],
+      [Use the case to anchor the fairness-beyond-omission LEO; the curricular target is the discipline of choosing and disclosing the fairness criterion when the impossibility result rules out satisfying all of them simultaneously.],
     ),
   ),
   references: (
@@ -1353,8 +1353,8 @@
   ],
   lens-approach: [
     COMPAS is the impossibility-result case at consequential-
-    decision scale (induced 8.4; LENS D4+D5/PT6; CLO-4 and
-    CLO-5). LENS uses it in Domain 4 (Test and Evaluation) for
+    decision scale (induced 8.4; LENS D4+D5/PT6; LEO-4 and
+    LEO-5). LENS uses it in Domain 4 (Test and Evaluation) for
     the multi-criterion-audit discipline and in Domain 5
     (Navigating Sociotechnical Constraints) for the
     surfacing-bias-through-governance-not-just-technique anchor.
@@ -1527,7 +1527,7 @@
   scale: "big",
   induced-anchor: "5.3",
   lens-anchor: "D5/PT5",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 189 — dutch-syri-welfare-fraud-risk-scoring ----
@@ -1544,7 +1544,7 @@
   evidence-source: "investigation",
   induced-anchor: "5.1",
   lens-anchor: "D5+D3/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     The Dutch System Risk Indication (SyRI) combined up to 17 categories
     of previously siloed government data — tax, benefits, housing,
@@ -1674,7 +1674,7 @@
     the pair in Domain 5 (Navigating Sociotechnical
     Constraints) for the governance-objection
     diagnostic — distinguishing dissolvable from correct
-    objections — and in Domain 3 (Human-System Collaboration) for the delegation-with-revocation CLO: the
+    objections — and in Domain 3 (Human-System Collaboration) for the delegation-with-revocation LEO: the
     court was the revocation channel because the system did
     not have one of its own. Adjacent to the AI-delegation
     typology (TREWS / Epic / SyRI / Watson) the v2 corpus
@@ -1708,7 +1708,7 @@
   evidence-flag: "journalism-tier",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     On 2 October 2023 a pedestrian was struck by a human-driven
     vehicle in San Francisco and propelled into the path of a Cruise
@@ -1787,7 +1787,7 @@
     ],
     [
       The LENS teaching point pairs directly with Waymo. The new
-      CLO *Delegation with revocation* requires that the
+      LEO *Delegation with revocation* requires that the
       deploying organization design the disclosure architecture
       *before* the failure event — what will be reported, on
       what cadence, to which oversight body, with what
@@ -1813,7 +1813,7 @@
       [Build the verification path the regulator will use into the architecture. The DMV learning the fuller sequence from another agency is the failure mode the architecture has to preclude.],
     ),
     after: (
-      [Use the CLO *Delegation with revocation*: revocation pathways must be designed and exercisable, and the deploying organization should expect the regulator to exercise them when the disclosure architecture fails.],
+      [Use the LEO *Delegation with revocation*: revocation pathways must be designed and exercisable, and the deploying organization should expect the regulator to exercise them when the disclosure architecture fails.],
       [Pair the case with Case 199 (Waymo) in any LENS Domain 4 module — the contrast between an engineered legitimacy artifact and partial crisis disclosure is the teaching point, not either case alone.],
       [Carry the journalism-tier flag honestly: the DMV Order is the investigation-grade primary; the internal-timeline reconstructions are journalistic; future validation will improve as Cruise's own post-mortem and any subsequent litigation discovery enter the public record.],
     ),
@@ -1841,7 +1841,7 @@
   lens-approach: [
     Cruise is the AV partial-disclosure failure (induced 5.4;
     LENS D5/PT6). LENS uses it in Domain 5 (Navigating
-    Sociotechnical Constraints) for the CLO *Delegation
+    Sociotechnical Constraints) for the LEO *Delegation
     with revocation* — the case shows what revocation looks
     like when the disclosure architecture fails — and in
     Domain 3 (Emerging Systems and Human-System Collaboration) for the
@@ -1877,7 +1877,7 @@
   evidence-source: "investigation",
   induced-anchor: "5.2",
   lens-anchor: "D5+D3/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     The Royal Commission into the Robodebt Scheme delivered its
     final report on July 7, 2023, under the leadership of
@@ -2007,7 +2007,7 @@
     after: (
       [Carry the Commission's careful attribution language on deaths into print without softening; the case's load-bearing quality depends on the circumstantial nature of the attribution being preserved alongside the structural finding.],
       [Pair in syllabi with Case 189 (SyRI) so the governance-objection-correct precedent and the governance-objection-overridden harm record are taught together; the two cases together teach what advance objection can prevent and what its absence can produce.],
-      [Use the case to anchor the human-in-the-loop CLO at population scale; the form Robodebt makes legible is what consequential-decision delegation looks like when the loop is removed and the asserting party operates on arithmetic that cannot establish its assertion.],
+      [Use the case to anchor the human-in-the-loop LEO at population scale; the form Robodebt makes legible is what consequential-decision delegation looks like when the loop is removed and the asserting party operates on arithmetic that cannot establish its assertion.],
     ),
   ),
   references: (
@@ -2030,7 +2030,7 @@
   ],
   lens-approach: [
     Robodebt is the burden-of-proof-reversal case at population
-    scale (induced 5.2; LENS D5+D3/PT6; CLO-5 and CLO-3). LENS
+    scale (induced 5.2; LENS D5+D3/PT6; LEO-5 and LEO-3). LENS
     uses it in Domain 5 (Navigating Sociotechnical Constraints)
     for the agency-legal-advice-as-binding-gate discipline and in
     Domain 3 (Human-System Collaboration) for the human-in-
@@ -2068,7 +2068,7 @@
   evidence-source: "investigation",
   induced-anchor: "5.2",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     On November 7, 2019, software developer David Heinemeier
     Hansson posted on Twitter that his Apple Card credit limit
@@ -2167,7 +2167,7 @@
       no violation was found, and that the structural failure
       the agency named was "lack of transparency" — Goldman
       Sachs's inability to explain individual credit decisions to
-      applicants who challenged them. The human-in-the-loop CLO
+      applicants who challenged them. The human-in-the-loop LEO
       is anchored by the case at the appeal-and-explanation
       seam: a consequential-decision system that cannot explain
       its individual decisions to affected applicants does not
@@ -2187,7 +2187,7 @@
   approaches: (
     during: (
       [Build the individual-applicant explanation infrastructure as part of the deployment, not as a customer-service afterthought; the Apple Card case demonstrates that a defensible population-level model paired with no individual-explanation infrastructure produces a regulatory finding of lack of transparency.],
-      [Specify the appeal mechanism before the first decision is made; the human-in-the-loop CLO at consumer-credit scale is the appeal-and-explanation seam, and its absence is the governance failure the case names.],
+      [Specify the appeal mechanism before the first decision is made; the human-in-the-loop LEO at consumer-credit scale is the appeal-and-explanation seam, and its absence is the governance failure the case names.],
       [Treat the customer-service escalation path as a deployment surface, not a support function; the case's escalation went from customer service to social media to regulation in days, and the deployment surface that mattered was the first one.],
     ),
     after: (
@@ -2218,8 +2218,8 @@
   ],
   lens-approach: [
     Apple Card is the explainability-as-governance case at
-    consumer-credit scale (induced 5.2; LENS D5/PT6; CLO-5 and
-    CLO-3). LENS uses it in Domain 5 (Navigating Sociotechnical
+    consumer-credit scale (induced 5.2; LENS D5/PT6; LEO-5 and
+    LEO-3). LENS uses it in Domain 5 (Navigating Sociotechnical
     Constraints) for the appeal-and-explanation-infrastructure
     discipline and in Domain 3 (Human-System Collaboration)
     for the human-in-the-loop-for-consequential-decisions anchor
@@ -2370,7 +2370,7 @@
   ],
   induced-anchor: "6.2",
   lens-anchor: "D5/PT3",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
   literature-items: (
     [SEC OIG Report (2009)],
     [Markopolos (2010), _No One Would Listen_],

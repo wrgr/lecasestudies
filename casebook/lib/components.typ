@@ -98,7 +98,7 @@
 //   Connectivity panel — clearly labeled with row labels:
 //      Induced   X.Y
 //      LENS      D#/PT#
-//      CLO       CLO-N, …
+//      LEO       LEO-N, …
 //      Courses   LEN N, …
 //   Bottom banner — LENS lesson, ~2 lines, from le-insight, navy tint
 //
@@ -107,7 +107,7 @@
 //   "overview-half" Half Letter, one entry per page, content filled to page
 #let overview-entry(number, title, year, domains, modes, summary, refs, lens,
                     sections: (), beats: (), kind: none,
-                    courses: (), clo-anchor: none, induced-anchor: none, lens-anchor: none,
+                    courses: (), leo-anchor: none, induced-anchor: none, lens-anchor: none,
                     le-insight: none, impact: "") = {
   let big = view == "overview-half"
   let labels = section-sets.at(kind, default: section-sets.failure)
@@ -196,10 +196,10 @@
         text(font: sans, size: 7.5pt, weight: "medium", fill: navy, lens-anchor),
       ))
     }
-    if clo-anchor != none and clo-anchor != "" {
+    if leo-anchor != none and leo-anchor != "" {
       rows.push((
-        text(font: sans, size: 7pt, weight: "medium", tracking: 1pt, fill: navy-mid, upper("CLO")),
-        text(font: sans, size: 7.5pt, weight: "medium", fill: navy, clo-anchor),
+        text(font: sans, size: 7pt, weight: "medium", tracking: 1pt, fill: navy-mid, upper("LEO")),
+        text(font: sans, size: 7.5pt, weight: "medium", fill: navy, leo-anchor),
       ))
     }
     if courses.len() > 0 {
@@ -359,11 +359,11 @@
 // A compact generated figure on every LE Lens page, built entirely from
 // case metadata: the case's domain(s), its failure-mode codes, and the
 // five-competency LENS bar with the case's primary competency filled
-// (parsed from lens-anchor, e.g. "D3/PT5"), plus the induced and CLO
+// (parsed from lens-anchor, e.g. "D3/PT5"), plus the induced and LEO
 // anchors. This is where the three-anchor convention (editor decision
 // A6) becomes visible in the printed case, not just in the metadata.
 // Degrades gracefully: columns whose metadata is absent are omitted.
-#let connection-figure(domains-list, modes-code, lens-anchor, induced-anchor, clo-anchor, kind) = {
+#let connection-figure(domains-list, modes-code, lens-anchor, induced-anchor, leo-anchor, kind) = {
   // Parse "D3/PT5" or dual-anchor "D4+D3/PT6" (first listed = primary)
   // → competency numbers + problem-type number.
   let dnums = ()
@@ -411,10 +411,10 @@
   let facet(label, value) = { col-label(label); v(2pt); value }
   let text-val(s) = box(inset: (y: 2.4pt),
     text(font: sans, size: 7.5pt, weight: "medium", fill: navy, s))
-  // "CLO-4, CLO-5" → "4 · 5" (the label already says CLO).
-  let clo-val = if clo-anchor != none and str(clo-anchor) != "" {
-    str(clo-anchor).split(",")
-      .map(s => s.trim().trim("CLO", at: start).trim("-", at: start))
+  // "LEO-4, LEO-5" → "4 · 5" (the label already says LEO).
+  let leo-val = if leo-anchor != none and str(leo-anchor) != "" {
+    str(leo-anchor).split(",")
+      .map(s => s.trim().trim("LEO", at: start).trim("-", at: start))
       .join(" · ")
   } else { none }
 
@@ -442,7 +442,7 @@
     }))
   }
   // The anchor trio, set off to the right: problem type (the second half
-  // of the lens-anchor), the induced-framework anchor, and the CLO.
+  // of the lens-anchor), the induced-framework anchor, and the LEO.
   let anchors = ()
   if pt != none {
     anchors.push(facet("Problem type", text-val(pt)))
@@ -450,8 +450,8 @@
   if induced-anchor != none and str(induced-anchor) != "" {
     anchors.push(facet("Induced", text-val(str(induced-anchor))))
   }
-  if clo-val != none {
-    anchors.push(facet("CLO", text-val(clo-val)))
+  if leo-val != none {
+    anchors.push(facet("LEO", text-val(leo-val)))
   }
 
   block(

@@ -96,7 +96,7 @@
 #include "backmatter/references.typ"
 
 // ---- Appendix + program page ----
-#include "backmatter/appendix-clo-courses.typ"
+#include "backmatter/appendix-leo-courses.typ"
 // The full per-case references appendix ships only in the complete
 // reference build; the printed main volume relies on each case's own
 // reference list plus the Validation & Audit tracker (which carries

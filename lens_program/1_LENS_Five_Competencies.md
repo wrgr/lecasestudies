@@ -10,11 +10,11 @@ LENS • Learning Engineering for Next-Generation Systems
 
 Formal names, taglines, main objectives, and subobjectives for case studies, recruiting, and curriculum.
 
-Organizing layer over the formal CLOs. Formal names carry program documentation; taglines carry recruiting and the site. Subobjective numbers (1.1, 3.2, …) are stable tags for case studies, course modules, and capstone rubrics. The CLO language in the program documentation remains the language of record.
+Organizing layer over the formal LEOs — **LENS Educational Objectives**, the concentration-level objectives held at the program level (formerly abbreviated "CLO"; see doc 2 §4 for the PLO → LEO → CLO → MLO hierarchy). Formal names carry program documentation; taglines carry recruiting and the site. Subobjective numbers (1.1, 3.2, …) are stable tags for case studies, course modules, and capstone rubrics. The LEO language in the program documentation remains the language of record.
 
 ## 1. Systems Analysis  •  *see the whole system*
 
-**Formal domain:** Systems Thinking and Analysis (CLO-1)
+**Formal domain:** Systems Thinking and Analysis (LEO-1)
 
 **Main objective.** Trace how human capability and system performance depend on each other, so interventions target the real problem.
 
@@ -30,7 +30,7 @@ Organizing layer over the formal CLOs. Formal names carry program documentation;
 
 ## 2. Iterative Development  •  *build, test, refine*
 
-**Formal domain:** Learning Engineering Design and Implementation (CLO-2)
+**Formal domain:** Learning Engineering Design and Implementation (LEO-2)
 
 **Main objective.** Design capability interventions through iterative engineering cycles that survive contact with real operational environments.
 
@@ -48,7 +48,7 @@ Organizing layer over the formal CLOs. Formal names carry program documentation;
 
 *[v2.1 — moved from D5 and broadened from "Machine Teaming and Adaptation." The competency now covers human-system collaboration generally; human-AI teaming is one sub-pattern within it, not a separate domain.]*
 
-**Formal domain:** Human-System Collaboration and Adaptive Systems (CLO-3)
+**Formal domain:** Human-System Collaboration and Adaptive Systems (LEO-3)
 
 **Main objective.** Design human-system partnerships — including but not limited to human-AI — that make people more capable while preserving human agency and the recoverability of the system.
 
@@ -66,7 +66,7 @@ Organizing layer over the formal CLOs. Formal names carry program documentation;
 
 *[v2.1 — was D3 in v1; renumbered to D4. Subobjective 4.2 ("gap attribution") was the existing "diagnose the gap"; the v2 sweep names it explicitly.]*
 
-**Formal domain:** Data, Measurement, and Evaluation (CLO-4)
+**Formal domain:** Data, Measurement, and Evaluation (LEO-4)
 
 **Main objective.** Produce decision-grade evidence linking learning to operational impact — where decision-grade is a sufficiency judgment under irreducible uncertainty — and tell a learning gap from a system gap.
 
@@ -86,7 +86,7 @@ Organizing layer over the formal CLOs. Formal names carry program documentation;
 
 *[v2.1 — was D4 in v1; renumbered to D5.]*
 
-**Formal domain:** Context and Domain Fluency (CLO-5)
+**Formal domain:** Context and Domain Fluency (LEO-5)
 
 **Main objective.** Integrate capability interventions into the sociotechnical systems they must live in: the regulatory, organizational, cultural, and technical realities that determine whether good designs survive.
 
@@ -104,17 +104,17 @@ Organizing layer over the formal CLOs. Formal names carry program documentation;
 
 ---
 
-# Crosswalk to Formal CLOs
+# Crosswalk to Formal LEOs
 
-| # | Competency | Tagline | CLO | Formal domain (program docs) |
+| # | Competency | Tagline | LEO | Formal domain (program docs) |
 |---|---|---|---|---|
-| 1 | Systems Analysis | see the whole system | CLO-1 | Systems Thinking and Analysis |
-| 2 | Iterative Development | build, test, refine | CLO-2 | Learning Engineering Design and Implementation |
-| 3 | Human-System Collaboration | work together | CLO-3 | Human-System Collaboration and Adaptive Systems |
-| 4 | Test and Evaluation | show what works | CLO-4 | Data, Measurement, and Evaluation |
-| 5 | Navigating Sociotechnical Constraints | make it work in the real world | CLO-5 | Context and Domain Fluency |
+| 1 | Systems Analysis | see the whole system | LEO-1 | Systems Thinking and Analysis |
+| 2 | Iterative Development | build, test, refine | LEO-2 | Learning Engineering Design and Implementation |
+| 3 | Human-System Collaboration | work together | LEO-3 | Human-System Collaboration and Adaptive Systems |
+| 4 | Test and Evaluation | show what works | LEO-4 | Data, Measurement, and Evaluation |
+| 5 | Navigating Sociotechnical Constraints | make it work in the real world | LEO-5 | Context and Domain Fluency |
 
-Each subobjective unbundles an element of the corresponding CLO. The 7 named v2 additions (1.5, 2.5, 3.3, 3.4, 4.4, 4.6, 5.6) and the explicit renaming of 4.2 (gap attribution) are required elements within the parent CLO. The reframing of "decision-grade evidence" as judgment under irreducible uncertainty is carried at 4.3 and 4.4. If any v2 addition creates friction with documentation of record, drop the number and fold the language back; the scheme renumbers cleanly.
+Each subobjective unbundles an element of the corresponding LEO. The 7 named v2 additions (1.5, 2.5, 3.3, 3.4, 4.4, 4.6, 5.6) and the explicit renaming of 4.2 (gap attribution) are required elements within the parent LEO. The reframing of "decision-grade evidence" as judgment under irreducible uncertainty is carried at 4.3 and 4.4. If any v2 addition creates friction with documentation of record, drop the number and fold the language back; the scheme renumbers cleanly.
 
 # Using the Tags
 
@@ -124,7 +124,7 @@ Each subobjective number is a stable tag. Three immediate uses:
 
 **Capstone rubrics.** Rubric lines reference tags directly (the gap-attribution rubric line assesses 4.2), giving the attainment profile its evidence trail.
 
-**Recruiting and the site.** Taglines and main objectives are the public-facing layer for capabilitymatters.org and program one-pagers; formal names carry course documentation; the CLO table stays in the documentation of record.
+**Recruiting and the site.** Taglines and main objectives are the public-facing layer for capabilitymatters.org and program one-pagers; formal names carry course documentation; the LEO table stays in the documentation of record.
 
 # The five, in one breath
 
@@ -133,6 +133,8 @@ Each subobjective number is a stable tag. Three immediate uses:
 ---
 
 # Change Log
+
+**Terminology note — July 2026.** The concentration-level objectives are abbreviated **LEO** (LENS Educational Objective), not "CLO." "CLO" is reserved for *course* learning objectives and "MLO" for *module* learning objectives; see doc 2 §4 for the full PLO → LEO → CLO → MLO hierarchy. This is an abbreviation/framing change only — no competency content changed.
 
 **v2.1 — June 2026** *(current)*
 - **D3 reorder + rename.** What was D5 (Machine Teaming and Adaptation) is broadened to **Human-System Collaboration** and moved to position 3. T&E becomes D4 (was D3); Sociotechnical Constraints becomes D5 (was D4). The order now reads as the flywheel: see the system → build → integrate humans → measure → deploy.
@@ -143,7 +145,7 @@ Each subobjective number is a stable tag. Three immediate uses:
 - **What the casebook anchor codes mean.** Under v2.1, a `lens-anchor: "D3/PT5"` resolves to **Human-System Collaboration**, problem-type 5. The casebook field remap from v1 codes (D3↔D4 swap, D5→D3) ships in the corresponding casebook update.
 
 **v2.0 — May 2026** *(superseded by v2.1; never adopted standalone)*
-- Drafted in `v2_research/01_LENS_revised_competencies_and_CLOs.md`. Renamed D2 → Learning Engineering Design, D4 → Context & Domain Fluency, D5 → Emerging Systems & Futures. Added the 7 subobjectives above (originally framed as "new CLOs" — refactored to subobjective level in v2.1 since they're sub-CLO-grain). Reframed decision-grade evidence.
+- Drafted in `v2_research/01_LENS_revised_competencies_and_CLOs.md`. Renamed D2 → Learning Engineering Design, D4 → Context & Domain Fluency, D5 → Emerging Systems & Futures. Added the 7 subobjectives above (originally framed as "new LEOs" — refactored to subobjective level in v2.1 since they're sub-LEO-grain). Reframed decision-grade evidence.
 
 **v1 — March 2026** *(initial)*
 - Five competencies: Systems Analysis · Iterative Development · Test and Evaluation · Navigating Sociotechnical Constraints · Machine Teaming and Adaptation. Subobjectives 1.1–5.4. Prior prose retrievable via `git log --follow lens_program/1_LENS_Five_Competencies.md`.

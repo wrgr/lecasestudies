@@ -14,7 +14,7 @@ Method: rendered front matter (pp. 1–32), the five-competency spread (pp. 16�
 - **Consistency gaps: 6**
 - **Look-and-feel polish: 4**
 
-The five competency names, taglines, the per-pillar secondary CLO line, and the "five in one breath" capstone all render correctly and read cleanly. The dominant problem is **stale "one hundred cases" claims** now that the book carries 202 cases, plus **two back-matter indexes (matrix, domain) that only cover cases 1–100.**
+The five competency names, taglines, the per-pillar secondary LEO line, and the "five in one breath" capstone all render correctly and read cleanly. The dominant problem is **stale "one hundred cases" claims** now that the book carries 202 cases, plus **two back-matter indexes (matrix, domain) that only cover cases 1–100.**
 
 ---
 
@@ -24,7 +24,7 @@ The five competency names, taglines, the per-pillar secondary CLO line, and the 
 2. **"One hundred cases" / "the hundred cases" stated as the book's total in ≥8 places** (howto, introduction ×4, matrix title, domain-index ×2, overview-frontmatter ×3). All now wrong. Update to 202, or qualify.
 3. **Per-course case counts are stale everywhere they appear as fixed numbers** (introduction §IX "~21 … ~49"; overview-frontmatter "The ten LENS courses" len-rows). The *dynamic* course index already shows LEN 1 = 36 cases, contradicting the intro's "~21." Either regenerate the counts against 202 cases or change to dynamic/round language.
 4. **matrix.typ footnote uses informal course short-names** ("LEN 1 Foundations · LEN 10 Studio · LEN 5 Capability Analysis") that diverge from the canonical names used correctly in howto.typ and the course index. Align to canonical.
-5. **CLO-4 secondary-domain label mismatch** in the introduction's five-competency block ("Context and Domain Fluency · CLO-4") vs. the canonical rename to "Navigating Sociotechnical Constraints." (The canonical docs are themselves internally split on this — see finding C5 — so confirm with program owner, but the printed competency name and its formal-domain subtitle currently disagree on what CLO-4's domain is called.)
+5. **LEO-4 secondary-domain label mismatch** in the introduction's five-competency block ("Context and Domain Fluency · LEO-4") vs. the canonical rename to "Navigating Sociotechnical Constraints." (The canonical docs are themselves internally split on this — see finding C5 — so confirm with program owner, but the printed competency name and its formal-domain subtitle currently disagree on what LEO-4's domain is called.)
 
 ---
 
@@ -84,10 +84,10 @@ The five competency names, taglines, the per-pillar secondary CLO line, and the 
 - **Severity:** consistency-gap
 - **Recommendation:** The footnote reads "LEN 1 Foundations · LEN 4 Evidence & Measurement · LEN 10 Studio · LEN 5 Capability Analysis · LEN 7 Bias, Risk & Governance · LEN 2 Human-AI Teaming · LEN 8 Knowledge Transfer · LEN 9 Computational & AI Methods." Canonical (`lens_program/2_*`) and the howto list use: LEN 1 *Principles of LE for Complex Systems*, LEN 10 *Learning Engineering Project (capstone)*, LEN 5 *Human Capability Analysis and Requirements*. "Foundations" and "Studio" are informal and unique to this footnote. Align to the canonical/howto short forms (or at minimum drop "Foundations"/"Studio," which collide with the F1/F2 "shared LDT foundations" and the LEN 10 "studio" framing elsewhere). Also: the footnote omits LEN 3 and LEN 6 entirely — fine if no case maps to them in the matrix, but inconsistent with presenting a course legend.
 
-### C3. CLO-4 secondary-domain subtitle in the competency block
-- **Location:** `frontmatter/introduction.typ:716` ("Context and Domain Fluency · CLO-4")
+### C3. LEO-4 secondary-domain subtitle in the competency block
+- **Location:** `frontmatter/introduction.typ:716` ("Context and Domain Fluency · LEO-4")
 - **Severity:** consistency-gap
-- **Recommendation:** The pillar's printed name is "Navigating Sociotechnical Constraints" (correct, matches canonical). Its grey subtitle reads "Context and Domain Fluency," the *old* formal-domain name. `lens_program/2_*` (line 159–161 and revision note line 589) renames CLO-4's competency domain to "Navigating Sociotechnical Constraints"; only the crosswalk table in `lens_program/1_*` (line 115–121) still says "Context and Domain Fluency." Since the canonical source of record is internally split, confirm with the program owner — but as printed, the pillar name and its own subtitle name the domain two different things, which reads as an error. Recommend subtitle → "Navigating Sociotechnical Constraints · CLO-4" (and flag the `lens_program/1_*` crosswalk to the owner; do not edit `lens_program/`).
+- **Recommendation:** The pillar's printed name is "Navigating Sociotechnical Constraints" (correct, matches canonical). Its grey subtitle reads "Context and Domain Fluency," the *old* formal-domain name. `lens_program/2_*` (line 159–161 and revision note line 589) renames LEO-4's competency domain to "Navigating Sociotechnical Constraints"; only the crosswalk table in `lens_program/1_*` (line 115–121) still says "Context and Domain Fluency." Since the canonical source of record is internally split, confirm with the program owner — but as printed, the pillar name and its own subtitle name the domain two different things, which reads as an error. Recommend subtitle → "Navigating Sociotechnical Constraints · LEO-4" (and flag the `lens_program/1_*` crosswalk to the owner; do not edit `lens_program/`).
 
 ### C4. "two-page spread" vs "three-page treatment" vs v2 four-page cases
 - **Location:** `frontmatter/howto.typ:35` ("Each case occupies a two-page spread"), `frontmatter/introduction.typ:1325` (same), `overview-frontmatter.typ:109–111` ("The full three-page treatment")
@@ -97,12 +97,12 @@ The five competency names, taglines, the per-pillar secondary CLO line, and the 
 ### C5. Anchor systems not surfaced in front matter
 - **Location:** front matter generally (howto.typ, introduction.typ §VIII)
 - **Severity:** consistency-gap
-- **Recommendation:** Cases are now tagged with three anchors (induced 1–8, LENS D-/PT-, CLO) per CLAUDE.md binding rule 4, and the introduction's five-competency block teaches the LENS five and the CLO crosswalk well. But the "how to read this book" / howto pages still describe only the **six failure-mode letters and LEN course codes** as the per-case tagging scheme — they do not tell the reader that v2 cases carry LENS-primary / induced-secondary / CLO anchors in the header. If v2 headers render those anchors (they should), add one short paragraph to howto.typ explaining the three-anchor convention so the printed header is legible to a first-time reader. (If v2 headers do *not* yet render the anchors, that is a case-layer gap outside this review's scope but worth flagging to the editor.)
+- **Recommendation:** Cases are now tagged with three anchors (induced 1–8, LENS D-/PT-, LEO) per CLAUDE.md binding rule 4, and the introduction's five-competency block teaches the LENS five and the LEO crosswalk well. But the "how to read this book" / howto pages still describe only the **six failure-mode letters and LEN course codes** as the per-case tagging scheme — they do not tell the reader that v2 cases carry LENS-primary / induced-secondary / LEO anchors in the header. If v2 headers render those anchors (they should), add one short paragraph to howto.typ explaining the three-anchor convention so the printed header is legible to a first-time reader. (If v2 headers do *not* yet render the anchors, that is a case-layer gap outside this review's scope but worth flagging to the editor.)
 
 ### C6. overview-frontmatter "six failure modes / three movements" describes the v1 structure only
 - **Location:** `overview-frontmatter.typ:78–96` (Part I/II/III), `:139–158` (six modes)
 - **Severity:** consistency-gap
-- **Recommendation:** The overview front matter presents the book as exactly the v1 three-part / six-mode structure. With 202 cases and the v2 framework revisions (4 new CLOs, amended sub-competencies) now adopted, confirm the overview still describes the shipped book. At minimum the "six categories account for almost *every*… preventable failure" claim (`:82–83`) should be checked against the broader v2 corpus, which deliberately includes small-scale and intervention cases the six-mode taxonomy was not induced from.
+- **Recommendation:** The overview front matter presents the book as exactly the v1 three-part / six-mode structure. With 202 cases and the v2 framework revisions (4 new LEOs, amended sub-competencies) now adopted, confirm the overview still describes the shipped book. At minimum the "six categories account for almost *every*… preventable failure" claim (`:82–83`) should be checked against the broader v2 corpus, which deliberately includes small-scale and intervention cases the six-mode taxonomy was not induced from.
 
 ---
 
@@ -111,7 +111,7 @@ The five competency names, taglines, the per-pillar secondary CLO line, and the 
 ### L1. Five-competency block — renders cleanly, no action needed (verification)
 - **Location:** `frontmatter/introduction.typ:666–749`, book pp. 16–17
 - **Severity:** look-feel-polish (PASS)
-- **Finding:** The updated five-pillar names, the new per-pillar grey CLO subtitle line (6.5pt), and the teal-bordered block all fit and read well. The `dgm-five-competencies` diagram on p. 16 renders with the five icons and short labels (Systems Analysis / Iterative Development / Test and Evaluation / Sociotech. Constraints / Machine Teaming) — consistent with canonical. The italic "See the whole system. Build, test, refine…" capstone line (`:747`) matches the canonical "five in one breath" verbatim. No overflow, no orphaned heading. Nothing to change.
+- **Finding:** The updated five-pillar names, the new per-pillar grey LEO subtitle line (6.5pt), and the teal-bordered block all fit and read well. The `dgm-five-competencies` diagram on p. 16 renders with the five icons and short labels (Systems Analysis / Iterative Development / Test and Evaluation / Sociotech. Constraints / Machine Teaming) — consistent with canonical. The italic "See the whole system. Build, test, refine…" capstone line (`:747`) matches the canonical "five in one breath" verbatim. No overflow, no orphaned heading. Nothing to change.
 
 ### L2. Editor bios — fit one page in both editions (verification)
 - **Location:** `backmatter/editors.typ`, book p. 855 and overview-half p. 219
@@ -132,7 +132,7 @@ The five competency names, taglines, the per-pillar secondary CLO line, and the 
 
 ## What is correct and should NOT be changed
 
-- Five competency **names, taglines, formal-domain subtitles** (except CLO-4, C3) — verified against `lens_program/1_*`. Correct.
+- Five competency **names, taglines, formal-domain subtitles** (except LEO-4, C3) — verified against `lens_program/1_*`. Correct.
 - The "five in one breath" capstone line — verbatim canonical. Correct.
 - LEN course **names** in `howto.typ` and the dynamic `course-index.typ` — match canonical (abbreviated forms are fine). Correct. (Only the `matrix.typ` footnote diverges — C2.)
 - The six failure-mode letters (T/D/N/H/G/K) and their glosses in howto and overview — internally consistent with each other and with CLAUDE.md binding rule 1's modes-code letters.

@@ -91,6 +91,6 @@
 #include "chapters/closing-case.typ"
 
 // ----------------------------------------------------------- the editors
-#include "backmatter/appendix-clo-courses.typ"
+#include "backmatter/appendix-leo-courses.typ"
 #include "backmatter/about-lens.typ"
 #include "backmatter/editors.typ"

@@ -23,7 +23,7 @@ The first edition is structurally complete and reproduces from source via `bash 
 
 All editions share one measure and type size, so **proof pagination is identical to print** — what you proof is what Lulu prints. The companion uses the same trim and a separate white-paper visual layer; on the shelf the two stack as a matched pair.
 
-Integrity at print: `bash scripts/check-cases.sh` reports **205 cases, 0 failures**; all cross-references in range 1–205; all slugs unique; all non-closing cases carry induced + lens + CLO anchors; no stale v1 terminology in any rendered output.
+Integrity at print: `bash scripts/check-cases.sh` reports **205 cases, 0 failures**; all cross-references in range 1–205; all slugs unique; all non-closing cases carry induced + lens + LEO anchors; no stale v1 terminology in any rendered output.
 
 For the intellectual framing behind the casebook — the capability interface, agency as a design constraint, gap attribution, the Practice Flywheel — see [METHODOLOGY.md](METHODOLOGY.md). For the running editorial history — v2.1 adoption, the chapter restructures (10-chapter competency org, then the July 2026 topical reorganization), the references validation pass, all corrections — see [AUDIT.md](AUDIT.md). For the per-case manual-review track scaffolded for the human reviewer — including the rubric, the workflow, and a 205-row table with six of seven check columns auto pre-filled — see [verification-log.md](verification-log.md).
 
@@ -52,7 +52,7 @@ For the intellectual framing behind the casebook — the capability interface, a
 ├── backmatter/
 │   ├── domain-index.typ                 # dynamic — cases by primary domain
 │   ├── course-index.typ                 # dynamic — cases by LENS course
-│   ├── appendix-clo-courses.typ         # CLO + course coverage (v2.1)
+│   ├── appendix-leo-courses.typ         # LEO + course coverage (v2.1)
 │   ├── appendix-references-by-case.typ  # per-case references with Retrieved-from lines (queries <caseinfo>)
 │   ├── about-lens.typ, editors.typ      # one-page program block + editor bios
 │   └── references.typ                   # Introduction works-cited + broader reading list
@@ -147,7 +147,7 @@ Cases are defined by `#case(...)` in `lib/case.typ`. A v2 case carries:
 - **Identity**: `number`, `slug` (stable kebab-case ID — survives renumbering), `title`, `year`, `domains-list`, `modes-code`, `impact`, `kind` (`failure` | `intervention` | `frontier`), `diagram`.
 - **Body**: `summary` (~130-word "In brief"), `sections` (five content blocks in the order set by `kind` — e.g. for `failure`: Background · What Happened · The Investigation · The Capability Gap · Aftermath & Reform), `beats` (5 one-line beats for the summary editions), `references` (numbered list of sources matching the body's `#cn()` markers).
 - **LE Lens** (page 4): `le-insight`, `lens-approach`, `approaches.during` + `approaches.after`, `reflection-list`, `team-block`, `sources-list`, `literature-items`.
-- **v2 metadata**: `scale` (`big` | `small`), `evidence-source` (`investigation` | `peer-reviewed` | `program-report` | `practitioner` | `dissertation` | `journalism`), the three anchors (`lens-anchor` like `"D3/PT5"`; `induced-anchor` like `"3.1"`; `clo-anchor` like `"CLO-3"`), `courses` (LEN-course tags surface in the back-matter course index), `coi` (optional — renders a gold "Disclosure" block under the title), `evidence-flag` (optional — renders a blue "Evidence tier" block with the standing "future validation ongoing" language).
+- **v2 metadata**: `scale` (`big` | `small`), `evidence-source` (`investigation` | `peer-reviewed` | `program-report` | `practitioner` | `dissertation` | `journalism`), the three anchors (`lens-anchor` like `"D3/PT5"`; `induced-anchor` like `"3.1"`; `leo-anchor` like `"LEO-3"`), `courses` (LEN-course tags surface in the back-matter course index), `coi` (optional — renders a gold "Disclosure" block under the title), `evidence-flag` (optional — renders a blue "Evidence tier" block with the standing "future validation ongoing" language).
 
 Inline citations use `#cn()`, which auto-numbers within the case (reset per case) and renders a superscript marker; the matching text goes in `references`, in the same order. `scripts/check-cases.sh` enforces marker == reference count and the 3–5 page envelope.
 

@@ -40,7 +40,7 @@
   evidence-source: "investigation",
   induced-anchor: "1.4",
   lens-anchor: "D1/PT3",
-  clo-anchor: "CLO-1, CLO-4",
+  leo-anchor: "LEO-1, LEO-4",
   summary: [
     USS Thresher was lost with 129 aboard on April 10, 1963. Within
     fifty-four days the US Navy created SUBSAFE — a program that
@@ -215,7 +215,7 @@
   evidence-source: "investigation",
   induced-anchor: "7.1",
   lens-anchor: "D1/PT4",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     The "Year 2000 problem" — Y2K — was the structural consequence
     of decades of legacy software representing year fields as two
@@ -519,7 +519,7 @@
   scale: "big",
   induced-anchor: "6.1",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 176 — tylenol-recall ----
@@ -671,7 +671,7 @@
   scale: "big",
   induced-anchor: "4.4",
   lens-anchor: "D5/PT3",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 177 — ciras-confidential-incident-reporting ----
@@ -689,7 +689,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "4.2",
   lens-anchor: "D5/PT2",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   summary: [
     CIRAS began as a 1995–1997 ScotRail pilot — a structured channel
     for rail workers to report hazards and near-misses confidentially,
@@ -825,7 +825,7 @@
     (Navigating Sociotechnical Constraints) for the
     credible-commitment design — independence written into
     operating structure — and in Domain 4 (Test and
-    Evaluation) for the CLO *Judgment under inadequate
+    Evaluation) for the LEO *Judgment under inadequate
     evidence* on the operating self-report tier. Pair with
     ASRS (Case 119) and CRM/CAST (Case 117) as the
     cross-industry C4 set, and with the WHO Surgical
@@ -858,7 +858,7 @@
   evidence-source: "program-report",
   induced-anchor: "6.1",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   summary: [
     The response to the December 2004 Indian Ocean tsunami —
     hundreds of NGOs converging on the same coastlines,
@@ -1085,7 +1085,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT2",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   coi: "Contribution: an editor leads the Johns Hopkins APL group that contributed engineering support to this system; the editor was not personally involved in the build. Included on the published peer-reviewed record and independent recognition.",
   summary: [
     On 22 January 2020 — one day after the United States reported

@@ -203,7 +203,7 @@
   scale: "big",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 159 — bhopal ----
@@ -354,7 +354,7 @@
   evidence-source: "investigation",
   induced-anchor: "7.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
 )
 
 // ---- Case 160 — davis-besse-reactor-head-corrosion ----
@@ -509,7 +509,7 @@
   scale: "big",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT5",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   evidence-source: "investigation",
 )
 
@@ -690,7 +690,7 @@
   evidence-source: "investigation",
   induced-anchor: "5.4",  // alternate framing adopted: change-control lens captures the 25% budget-cut targets (1999, 2005) and the 2003 "1,000 Day Goals" site program as program drivers; the personal-safety-vs-process-safety measurement insight (2.1) preserved as the canonical alternate,
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 162 — upper-big-branch-mine-explosion ----
@@ -847,7 +847,7 @@
   scale: "big",
   induced-anchor: "2.2",
   lens-anchor: "D4/PT2",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   evidence-source: "investigation",
 )
 
@@ -866,7 +866,7 @@
   evidence-source: "investigation",
   induced-anchor: "3.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     On 20 April 2010 the Macondo well blew out beneath the Deepwater Horizon
     rig in the Gulf of Mexico, killing 11 workers and releasing roughly 4.9
@@ -1200,7 +1200,7 @@
   scale: "big",
   induced-anchor: "7.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-2, CLO-5",
+  leo-anchor: "LEO-2, LEO-5",
 )
 
 // ---- Case 165 — camp-fire-pg-and-e ----
@@ -1329,7 +1329,7 @@
   ],
   induced-anchor: "7.3",
   lens-anchor: "D5/PT1",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   literature-items: (
     [CalFire Camp Fire Investigation Report (2019)],
     [Wuebbles et al. (2017), Climate Science Special Report],
@@ -1526,9 +1526,9 @@
     the institution-building counterpart to the failure that produced
     it, and with Fitzgerald/McCain (Case 124) as the contrasting failure
     where the missing learning channel was internal to one service
-    rather than across a civilian industry. CLO mapping: CLO-5
+    rather than across a civilian industry. LEO mapping: LEO-5
     (Sociotechnical Constraints) primary for the INPO/NRC institutional
-    architecture; CLO-1 (Systems Analysis) for the
+    architecture; LEO-1 (Systems Analysis) for the
     interface-and-training requirements analysis the accident exposed.
   ],
   literature-items: (
@@ -1558,7 +1558,7 @@
   evidence-source: "investigation",
   induced-anchor: "3.1",
   lens-anchor: "D3/PT4",
-  clo-anchor: "CLO-3, CLO-1",
+  leo-anchor: "LEO-3, LEO-1",
 )
 
 // ---- Case 167 — hurricane-katrina-fema-response ----
@@ -1577,7 +1577,7 @@
   evidence-source: "investigation",
   induced-anchor: "1.1",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   summary: [
     Hurricane Katrina made landfall on the Gulf Coast on
     29 August 2005; the levee system protecting New Orleans
@@ -1785,7 +1785,7 @@
   ],
   lens-approach: [
     Katrina is the stated-versus-engineered-requirements case
-    at national scale (induced 1.1; LENS D1/PT1; CLO-1). The
+    at national scale (induced 1.1; LENS D1/PT1; LEO-1). The
     induced anchor is 1.1 — engineered versus stated
     requirements — because the case's spine is precisely that
     seam: Hurricane Pam produced a stated requirement of
@@ -1961,7 +1961,7 @@
   scale: "big",
   induced-anchor: "7.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5, CLO-1",
+  leo-anchor: "LEO-5, LEO-1",
   evidence-source: "investigation",
 )
 
@@ -2121,7 +2121,7 @@
   scale: "big",
   induced-anchor: "7.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   evidence-source: "investigation",
 )
 
@@ -2139,7 +2139,7 @@
   evidence-source: "investigation",
   induced-anchor: "1.1",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   summary: [
     The 2014–2016 West Africa Ebola epidemic is the load-
     bearing case for the gap between declared international
@@ -2312,7 +2312,7 @@
   lens-approach: [
     West Africa Ebola is the declared-versus-engineered-
     capability case at the scale of the international system
-    (induced 1.1; LENS D5/PT6; CLO-5). LENS uses it in Domain 5
+    (induced 1.1; LENS D5/PT6; LEO-5). LENS uses it in Domain 5
     (Navigating Sociotechnical Constraints) for the IHR paper-
     compliance-versus-real-capability seam and for the governance
     failure in the escalation machinery — the discounting of the
@@ -2350,7 +2350,7 @@
   evidence-source: "program-report",
   induced-anchor: "1.1",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   summary: [
     Hurricane Maria made landfall on Puerto Rico on September
     20, 2017, as a high-end Category 4 storm, the third major
@@ -2548,7 +2548,7 @@
   lens-approach: [
     Hurricane Maria is the engineered-versus-stated-readiness
     case at national-response scale (induced 1.1; LENS D1/PT1;
-    CLO-1). LENS uses it in Domain 1 (Systems Analysis) for
+    LEO-1). LENS uses it in Domain 1 (Systems Analysis) for
     the discipline of deriving requirements from the deployed
     operational context — island logistics, destroyed grid and
     ports, sequential-storm depletion — rather than from the
@@ -2728,6 +2728,6 @@
   scale: "big",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   evidence-source: "investigation",
 )

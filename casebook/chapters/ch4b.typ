@@ -29,7 +29,7 @@
   evidence-source: "investigation",
   induced-anchor: "1.4",
   lens-anchor: "D1/PT4",
-  clo-anchor: "CLO-1, CLO-4",
+  leo-anchor: "LEO-1, LEO-4",
   summary: [
     The Government Accountability Office's recurring portfolio
     reviews of DoD weapon-system sustainment — including
@@ -130,7 +130,7 @@
       of why "decision-grade evidence" has to be reframed at
       the portfolio scale — the decision-maker is not the
       program manager but the budget authority — and is one
-      of the corpus's strongest grounds for the CLO *Judgment under inadequate evidence*. The portfolio
+      of the corpus's strongest grounds for the LEO *Judgment under inadequate evidence*. The portfolio
       decision-maker does not get to wait for the evidence
       architecture to be fixed before deciding; the case is
       about how to make the decision with the evidence
@@ -169,13 +169,13 @@
     portfolio scale: the O&S data that dominate weapon-system
     lifecycle decisions are not reported in a form the
     decisions require, and the gap is structural across the
-    enterprise. The case is the worked example of the CLO *Judgment under inadequate evidence* at the budget-
+    enterprise. The case is the worked example of the LEO *Judgment under inadequate evidence* at the budget-
     authority scale.
   ],
   lens-approach: [
     GAO weapon-system sustainment is the portfolio-evidence-
     architecture frontier case (induced 1.4; LENS D1/PT4) — used
-    in Domain 4 for the CLO *Judgment under inadequate
+    in Domain 4 for the LEO *Judgment under inadequate
     evidence* at portfolio scale. Pair with Case 138 and
     Case 173.
   ],
@@ -341,7 +341,7 @@
   scale: "big",
   induced-anchor: "1.4",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   evidence-source: "investigation",
 )
 
@@ -359,7 +359,7 @@
   evidence-source: "investigation",
   induced-anchor: "1.1",
   lens-anchor: "D1/PT3",
-  clo-anchor: "CLO-1, CLO-5",
+  leo-anchor: "LEO-1, LEO-5",
   summary: [
     MIL-STD-1472 is the US Department of Defense's design-criteria
     standard for human engineering — the discipline of making
@@ -670,7 +670,7 @@
   scale: "big",
   induced-anchor: "1.4",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
 )
 
 // ---- Case 140 — navy-surface-warfare-readiness-reform ----
@@ -819,7 +819,7 @@
   scale: "big",
   induced-anchor: "2.3",
   lens-anchor: "D2+D4/PT4",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   evidence-source: "investigation",
 )
 
@@ -837,7 +837,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "1.2",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     DARPA's Digital Tutor program asked whether a one-on-one
     intelligent tutoring system, modelled on expert human tutoring,
@@ -1140,5 +1140,5 @@
   scale: "big",
   induced-anchor: "5.3",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )

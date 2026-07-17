@@ -29,7 +29,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     Blume, Ford, Baldwin, and Huang (_Journal of Management_ 2010)
     synthesized 89 empirical studies on training transfer — the
@@ -106,7 +106,7 @@
       measurement inconsistency. The practitioner must decide on
       what to build — training design, supervisor support,
       practice opportunity — knowing the evidence is the strongest
-      available but not closed. The CLO *Judgment under
+      available but not closed. The LEO *Judgment under
       inadequate evidence* is exactly the capability this
       meta-analysis pattern asks practitioners to bring.
     ],
@@ -154,7 +154,7 @@
     Development) for the design-iteration
     sub-competency (the work environment is the design
     variable) and in Domain 4 (Test and Evaluation) for the
-    CLO *Judgment under inadequate evidence* — the
+    LEO *Judgment under inadequate evidence* — the
     meta-analysis is the strongest synthesis the field has,
     and it explicitly names what it cannot settle. Direct
     pair with Case 79 (Kirkpatrick); together they close
@@ -187,7 +187,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.3",
   lens-anchor: "D2/PT5",
-  clo-anchor: "CLO-2, CLO-5",
+  leo-anchor: "LEO-2, LEO-5",
   summary: [
     Growth-mindset interventions — short, scalable psychological
     interventions that teach students that intellectual ability is
@@ -497,7 +497,7 @@
   scale: "big",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT5",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
 )
 
 // ---- Case 68 — circuit-a-scalable-equity-centered ----
@@ -514,7 +514,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "1.2",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   coi: "Authorship: an editor of this volume is the senior author of the underlying study. Included on the published peer-reviewed evidence (ASEE 2023); editorial framing keeps critical distance from the program's self-presentation, and the open question about external/comparative evaluation is preserved in the text.",
   summary: [
     CIRCUIT is a research workforce-development program at Johns
@@ -685,7 +685,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     Settles and Meeder (Association for Computational Linguistics,
     2016) introduced Half-Life Regression (HLR), a trainable
@@ -866,7 +866,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "2.4",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     The High-Impact Learning System (HILS), introduced by
     Brinkerhoff and Apking in 2001, reframes L&D as a system
@@ -952,7 +952,7 @@
       practice-synthesis — the model and the deployment
       pattern are durable in practitioner literature, the
       per-firm effect magnitudes are self-reported, future
-      validation will continue. The CLO *Judgment under
+      validation will continue. The LEO *Judgment under
       inadequate evidence* is exactly the capability HILS
       asks the practitioner to bring: act on the strongest
       synthesis the field has produced while naming what is
@@ -975,7 +975,7 @@
     after: (
       [Pair with Case 83 (SCM) to measure whether the deployed program worked at the tails — HILS designs the environment, SCM samples the outcomes; together they structure the chain-of-evidence cross (Case 79).],
       [Carry the practice-synthesis flag honestly: the model is documented and durable, the per-firm effect sizes are self-reported, and any specific magnitude cited from vendor whitepapers should be flagged as such in program documentation.],
-      [Use the CLO *Judgment under inadequate evidence*: the synthesis is the strongest the field has, and the practitioner has to decide whether to deploy HILS at organizational scale on practitioner-tier evidence while naming the validation that remains open.],
+      [Use the LEO *Judgment under inadequate evidence*: the synthesis is the strongest the field has, and the practitioner has to decide whether to deploy HILS at organizational scale on practitioner-tier evidence while naming the validation that remains open.],
     ),
   ),
   references: (
@@ -993,7 +993,7 @@
     the design-side counterpart of SCM (Case 83). Evidence
     is practice-synthesis: the model is durable in
     practitioner literature, per-firm effect sizes are
-    self-reported, future validation continues. The CLO *Judgment under inadequate evidence* is the capability
+    self-reported, future validation continues. The LEO *Judgment under inadequate evidence* is the capability
     the case asks for.
   ],
   lens-approach: [
@@ -1002,7 +1002,7 @@
     (Iterative Development / Learning Engineering Design)
     for the amended sub-competency that narrates the design
     iteration explicitly across pre / event / post phases,
-    and exercises the CLO *Judgment under inadequate
+    and exercises the LEO *Judgment under inadequate
     evidence* because the practitioner must decide on
     practice-synthesis-tier evidence. Pairs with Case 83
     (SCM) and Cases 79 / 112 as the corporate-L&D cluster.
@@ -1035,7 +1035,7 @@
   evidence-flag: "preprint-tier",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     A 2025 arXiv preprint ("The Development of Reflective Practice
     on a Work-Based Software Engineering Program: A Longitudinal
@@ -1046,7 +1046,7 @@
     the few published instruments aimed at measuring the
     development of reflective capability over time, not merely
     its presence at a single point. That is the LENS-revised
-    CLO-2's evaluation problem in miniature — if the program
+    LEO-2's evaluation problem in miniature — if the program
     asks the learner to narrate and defend the design iteration
     in first person, the program also has to be able to
     evidence that the capability to do so is developing. The
@@ -1061,7 +1061,7 @@
   ],
   sections: (
     [
-      The amended CLO-2 in v2 asks the learner to narrate and
+      The amended LEO-2 in v2 asks the learner to narrate and
       defend the design iteration in first person. The
       evaluation problem this creates is real: most existing
       reflective-practice instruments measure whether a learner
@@ -1140,7 +1140,7 @@
     ["The Development of Reflective Practice on a Work-Based Software Engineering Program: A Longitudinal Study," arXiv:2504.20956 (2025) — preprint.],
     [D. Schön, _The Reflective Practitioner_ (1983) — the foundational account of reflection-in-action the genre rests on.],
     [Boud, Keogh & Walker (eds.), _Reflection: Turning Experience into Learning_ (1985) — reflection as a learning process, and the measurement problem it raises.],
-    [the proposed revisions — the amended CLO-2 (first-person narration of design iteration) the case evaluates.],
+    [the proposed revisions — the amended LEO-2 (first-person narration of design iteration) the case evaluates.],
   ),
   quote: [The construct is the development of reflective capability, not its presence. The instrument has to be sensitive to depth change.],
   quote-source: "Editors' paraphrase of the arXiv preprint's construct distinction.",
@@ -1158,15 +1158,15 @@
     The longitudinal SE-program reflective-practice study is
     the evaluation-pathway case for first-person practice
     accounts (induced 2.3; LENS D2/PT4). LENS uses it in
-    Domain 2 (Iterative Development) for the amended CLO-2
-    and in Domain 4 (Test and Evaluation) for the CLO *Judgment under inadequate evidence* — the preprint
+    Domain 2 (Iterative Development) for the amended LEO-2
+    and in Domain 4 (Test and Evaluation) for the LEO *Judgment under inadequate evidence* — the preprint
     supplies the construct distinction (development vs.
     presence) without supplying peer-reviewed magnitudes.
   ],
   literature-items: (
     [arXiv:2504.20956 (2025) — longitudinal SE-program study],
     [Schön (1983); Boud, Keogh & Walker (1985) — reflective-practice canon],
-    [— amended CLO-2 framing],
+    [— amended LEO-2 framing],
   ),
   reflection-list: (
     [Identify a multi-year program in your context where reflective-practice capability is supposed to develop. What instrument would you build to measure development (intra-learner depth change over time) rather than presence (snapshot)? At what temporal cadence?],
@@ -1190,7 +1190,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     The Roschelle, Feng, Murphy, and Mason cluster RCT (AERA
     Open 2016), conducted across 43 schools and 2,850 students in Maine,
@@ -1364,7 +1364,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     The original "doer effect" causal claim — Koedinger and
     colleagues at LAK 2016 — held that students who interact
@@ -1458,7 +1458,7 @@
       thread. All three demonstrate the closed-loop discipline
       at field scale: a design principle established as a single
       result, replicated across contexts, and surfaced as
-      conditional on population and modality. The CLO on
+      conditional on population and modality. The LEO on
       judgment under inadequate evidence is operative in a
       productive sense: the original claim was adequate evidence
       for the WEIRD-platform-online-course context, and the
@@ -1540,7 +1540,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.2",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     Zhang, Scardamalia, Reeve, and Messina's 2009 _Journal of the
     Learning Sciences_ paper reports a three-year design study in
@@ -1683,7 +1683,7 @@
   ],
   lens-approach: [
     Zhang/Scardamalia is the cohort-as-iteration-unit case at
-    classroom scale (induced 2.2; LENS D2/PT4; CLO-2 and CLO-4).
+    classroom scale (induced 2.2; LENS D2/PT4; LEO-2 and LEO-4).
     LENS uses it in Domain 2 (Iterative Development) for the
     multi-cohort design-based-research discipline and in Domain 4
     (Test and Evaluation) for the depth-and-distribution paired
@@ -1721,7 +1721,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.3",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   summary: [
     Chen, Wu, Chen, and Zhou's 2025 paper in _Frontiers in
     Psychology_ reports a three-month quasi-experimental study of
@@ -1829,7 +1829,7 @@
       bounds the non-randomized assignment supports. What it
       reports is the equity-direction finding in the deployment
       window the study describes, and the case uses that finding
-      to anchor the CLO on fairness beyond omission — the
+      to anchor the LEO on fairness beyond omission — the
       finding is the rare published example where an AI
       deployment in education narrowed rather than widened a
       between-setting gap on its evaluation horizon, and the
@@ -1854,7 +1854,7 @@
     after: (
       [Commission the longer-horizon and larger-sample replication the three-month 12-school study cannot perform; the equity-direction finding's persistence past three months and across more schools is the validation question the case names.],
       [Pair the case in syllabi with Case 86 (Gándara community-college equity) and Case 73 (Doer Effect non-WEIRD extension) so the equity-direction reading is taught across deployment scales and population settings.],
-      [Use the case to anchor the CLO on fairness beyond omission with a rare published equity-direction finding; the corpus needs equity-narrowing results as visible as equity-widening ones, and the methodological discipline that lets the result be reported credibly is the curricular target.],
+      [Use the case to anchor the LEO on fairness beyond omission with a rare published equity-direction finding; the corpus needs equity-narrowing results as visible as equity-widening ones, and the methodological discipline that lets the result be reported credibly is the curricular target.],
     ),
   ),
   references: (
@@ -1873,17 +1873,17 @@
     history. The load-bearing hedges are explicit and carried in
     the prose: three-month horizon, twelve schools, non-randomized
     assignment, self-report and observation bias acknowledged by
-    the authors. The case anchors the CLO on fairness beyond
+    the authors. The case anchors the LEO on fairness beyond
     omission with a rare published equity-narrowing result.
   ],
   lens-approach: [
     Chen et al. is the equity-direction-finding case at the
-    non-WEIRD deployment seam (induced 8.3; LENS D2/PT4; CLO-4
+    non-WEIRD deployment seam (induced 8.3; LENS D2/PT4; LEO-4
     and fairness beyond omission). LENS uses it in Domain 2
     (Iterative Development) for the deployment-on-a-defined-
     horizon discipline and in Domain 5 (Navigating Sociotechnical
     Constraints) for the equity-direction reading that anchors
-    the fairness-beyond-omission CLO. Pair with Case 86
+    the fairness-beyond-omission LEO. Pair with Case 86
     (Gándara community-college predictive equity), Case 88
     (LiveHint AI bias across foundation models), and Case 73
     (Doer Effect non-WEIRD radio-and-phone extension). The
@@ -1918,7 +1918,7 @@
   evidence-flag: "preprint-tier",
   induced-anchor: "2.2",
   lens-anchor: "D2/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     Martinez-Maldonado et al.'s 2023 arXiv paper, "Lessons
     Learnt from a Multimodal Learning Analytics Deployment
@@ -2100,7 +2100,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "6.4",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-2, CLO-3",
+  leo-anchor: "LEO-2, LEO-3",
   summary: [
     Thomas et al.'s LAK 2024 best paper, "Improving Student
     Learning with Hybrid Human-AI Tutoring: A Three-Study
@@ -2217,7 +2217,7 @@
     after: (
       [Commission longitudinal follow-through that extends the evidence base past the end-of-intervention horizon; the open persistence question is testable against the same deployment with additional data infrastructure.],
       [Test the augmentation design in tutor-scarce contexts; the open generalization question is whether the pattern transfers to settings where the binding constraint is human-tutor availability rather than human-tutor effectiveness.],
-      [Pair the case with Case 20 (TREWS) in the curriculum so the augmentation-and-override pattern is taught across clinical and educational substrates; the two cases together ground the delegation-with-revocation CLO with two converging instances.],
+      [Pair the case with Case 20 (TREWS) in the curriculum so the augmentation-and-override pattern is taught across clinical and educational substrates; the two cases together ground the delegation-with-revocation LEO with two converging instances.],
     ),
   ),
   references: (
@@ -2237,7 +2237,7 @@
     The case pairs with Cases 20 (TREWS), 5 (Epic Sepsis),
     and 68 / 78 (CIRCUIT) in the human-AI teaming thread and
     grounds the delegation-with-
-    revocation CLO at the educational deployment.
+    revocation LEO at the educational deployment.
   ],
   lens-approach: [
     Hybrid human-AI tutoring is the augmentation-not-delegation
@@ -2277,7 +2277,7 @@
   evidence-flag: "internal-pm",
   induced-anchor: "3.4",
   lens-anchor: "D3/PT6",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   coi: "Contribution: an editor has research adjacency to connectomics programs here, and the case originates at an editor's institution (Johns Hopkins / APL). The method is anchored to peer-reviewed work; program training-outcome evidence is institutional documentation, not independent evaluation — the gap rendered as the evidence-tier flag above.",
   summary: [
     Under IARPA's Machine Intelligence from Cortical Networks (MICrONS)
@@ -2376,7 +2376,7 @@
       curriculum. The frontier flag on this case is the case-grounded
       basis for proposing a sub-competency in this area, pairing
       with the broader v2 AI-delegation typology and the Domain 3
-      *Delegation with revocation* CLO.#cn()
+      *Delegation with revocation* LEO.#cn()
     ],
   ),
   beats: (
@@ -2453,7 +2453,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   summary: [
     Donald Kirkpatrick's four-level model — Reaction, Learning,
     Behavior, Results — has been the dominant corporate-training
@@ -2542,7 +2542,7 @@
       satisfied at the Level the training organization can
       control. Until that crossing happens, most corporate L&D
       decisions are made on structurally sub-decision-grade
-      evidence, and the CLO *Judgment under inadequate
+      evidence, and the LEO *Judgment under inadequate
       evidence* is exactly the capability the practitioner needs.#cn()
     ],
   ),
@@ -2560,7 +2560,7 @@
       [Treat the practice-synthesis evidence base honestly: name the pattern, flag the tier, and do not present a stop-at-L2 outcome as if it were a Level-3 or Level-4 finding.],
     ),
     after: (
-      [When Level 3 and Level 4 data are not available, say so plainly in the evaluation report rather than substituting Level 2 metrics; the CLO *Judgment under inadequate evidence* is what the practitioner needs to do well here.],
+      [When Level 3 and Level 4 data are not available, say so plainly in the evaluation report rather than substituting Level 2 metrics; the LEO *Judgment under inadequate evidence* is what the practitioner needs to do well here.],
       [Track the work environment as a separate variable — Blume's meta-analysis (Case 65) names it as decisive — and report the training outcome conditional on environment, not as a property of the training alone.],
       [Use the structural pattern to argue for the evaluation architecture investment, not to abandon evaluation. The gap is a capability gap, not an argument against measurement.],
     ),
@@ -2587,7 +2587,7 @@
   lens-approach: [
     Kirkpatrick is the corporate-L&D evaluation case
     (induced 2.1; LENS D4/PT5). LENS uses it in Domain 4
-    (Test and Evaluation) for the CLO *Judgment under
+    (Test and Evaluation) for the LEO *Judgment under
     inadequate evidence* — the practitioner must decide well
     on structurally sub-decision-grade evidence — and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
@@ -2762,7 +2762,7 @@
   scale: "big",
   induced-anchor: "8.3",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 81 — open-university-ethical-use-of-student ----
@@ -2779,7 +2779,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "5.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     Predictive learning analytics at the Open University faced a real
     governance objection: large-scale processing of student data for
@@ -2948,7 +2948,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "5.4",
   lens-anchor: "D4/PT4",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     Freitas, Fonseca, Garcia, Pontual Falcão, Marques, Gasevic,
     and Mello (_Journal of Learning Analytics_, 2024) developed and validated MMALA — a
@@ -3091,7 +3091,7 @@
     and Evaluation) for the structured self-assessment
     instrument and the two-layer validation discipline; in
     Domain 5 (Navigating Sociotechnical Constraints) for the
-    governance-as-instrument framing; and on the CLO *Judgment under inadequate evidence* for the
+    governance-as-instrument framing; and on the LEO *Judgment under inadequate evidence* for the
     instrument-validation-vs-outcome-validation tier
     distinction. Pair with Cases 81, 91, 89, 92 as the
     non-US LA governance pentad; MMALA is the
@@ -3124,7 +3124,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-2",
+  leo-anchor: "LEO-4, LEO-2",
   summary: [
     The Success Case Method (SCM), introduced by Robert Brinkerhoff
     in his 2003 book and formalized in a 2005 peer-reviewed paper, deliberately samples the tails of a training program's
@@ -3209,7 +3209,7 @@
       problem from Case 79 and the meta-analytic transfer finding
       from Case 65. SCM is the operational instrument that
       crosses the Level-2 / Level-3 seam by sampling where the
-      evidence is most informative — and it exercises the CLO *Judgment under inadequate evidence* directly, because the
+      evidence is most informative — and it exercises the LEO *Judgment under inadequate evidence* directly, because the
       method asks practitioners to act on detailed case
       reconstructions rather than wait for population-scale
       causal estimates that corporate L&D often cannot produce.
@@ -3222,7 +3222,7 @@
     "SCM: sample the highest- and lowest-impact participants; study in detail; reconstruct the system conditions around each",
     "Tails carry decision-grade information — success cases prove the program *can* work; failure cases name what the surrounding system has to provide for transfer",
     "Deployed at Cargill, Ford, Merck, World Bank, ICRC; method peer-reviewed; per-firm impact data live in practitioner channels",
-    "Operational complement to Blume's environment-as-decisive-variable finding (Case 65); exercises NEW CLO Judgment under inadequate evidence",
+    "Operational complement to Blume's environment-as-decisive-variable finding (Case 65); exercises NEW LEO Judgment under inadequate evidence",
   ),
   approaches: (
     during: (
@@ -3232,7 +3232,7 @@
     ),
     after: (
       [Translate the tail evidence into a redesign of the surrounding system — supervisor briefings, peer-support structures, on-job practice opportunity — rather than into a redesign of the training event alone. Pair with Case 70 (HILS).],
-      [Use the CLO *Judgment under inadequate evidence*: act on the case-reconstruction evidence the method produces while being explicit that it is not a population causal estimate; document the uncertainty.],
+      [Use the LEO *Judgment under inadequate evidence*: act on the case-reconstruction evidence the method produces while being explicit that it is not a population causal estimate; document the uncertainty.],
       [Carry the practice-synthesis flag honestly in any program documentation citing SCM corporate deployments — the method is peer-reviewed, but the per-firm effect sizes are not.],
     ),
   ),
@@ -3257,7 +3257,7 @@
   lens-approach: [
     SCM is the corporate-L&D tail-sampling case (induced 2.1;
     LENS D4/PT5). LENS uses it in Domain 4 (Test and
-    Evaluation) for the CLO *Judgment under inadequate
+    Evaluation) for the LEO *Judgment under inadequate
     evidence* — the method asks practitioners to act on
     case-reconstruction evidence rather than population
     estimates — and in Domain 2 (Iterative Development) by
@@ -3292,7 +3292,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.3",
   lens-anchor: "D4/PT4",
-  clo-anchor: "CLO-2, CLO-4",
+  leo-anchor: "LEO-2, LEO-4",
   summary: [
     Pane, Griffin, McCaffrey, and Karam's 2014 paper in
     _Educational Evaluation and Policy Analysis_ reports the
@@ -3313,7 +3313,7 @@
     case from a system-description case into a methodological-
     discipline case about evaluation horizons. The timeline of
     the evaluation is itself a falsifiable design choice; the
-    case grounds the CLO on judgment under inadequate evidence
+    case grounds the LEO on judgment under inadequate evidence
     where the inadequacy is the evaluation horizon, not the
     sample size.
   ],
@@ -3383,7 +3383,7 @@
       The case is the deeper-evidence-of update on v1 Case 67.
       v1 Case 67 carries Cognitive Tutor as the system
       description; this case carries the at-scale evaluation
-      and the timeline-of-evidence lesson. The CLO on judgment
+      and the timeline-of-evidence lesson. The LEO on judgment
       under inadequate evidence is directly motivated: the
       one-year evaluation would have been inadequate evidence,
       and a field that publishes the one-year null without
@@ -3412,7 +3412,7 @@
     ),
     after: (
       [Publish the year-by-year result pattern, not the aggregate effect; the case's teaching power depends on the year-one null being on the same page as the year-two positive.],
-      [Carry the timeline-of-evidence lesson into the curriculum's evaluation-design teaching; the case grounds the CLO on judgment under inadequate evidence with a rare worked example where the inadequacy is the horizon, not the sample size.],
+      [Carry the timeline-of-evidence lesson into the curriculum's evaluation-design teaching; the case grounds the LEO on judgment under inadequate evidence with a rare worked example where the inadequacy is the horizon, not the sample size.],
       [Pair the case with Case 72 (ASSISTments multi-year follow-through) so the field-level discipline is taught with two converging examples; the methodological lesson is more useful as a pattern than as a single instance.],
     ),
   ),
@@ -3430,7 +3430,7 @@
     falsifiable design choice. Year one: null. Year two:
     significantly positive. The case is the deeper-evidence-of
     update on v1 Case 67 and the curriculum's primary anchor for
-    the CLO on judgment under inadequate evidence where the
+    the LEO on judgment under inadequate evidence where the
     inadequacy is the horizon, not the sample size.
   ],
   lens-approach: [
@@ -3470,7 +3470,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "5.2",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     Herodotou et al.'s 2019 _British Journal of Educational
     Technology_ paper reports the evaluation of OU Analyse, the
@@ -3548,7 +3548,7 @@
       consent architecture. This case carries the post-
       deployment teacher-use evaluation at multi-cohort scale.
       The editor's decision (memo A6) anchors LENS primary,
-      induced secondary, CLO carried; the two cases together
+      induced secondary, LEO carried; the two cases together
       teach the deployment across both governance and
       post-deployment-use frames without collapsing one into
       the other. The frame the present case adds to the corpus
@@ -3651,7 +3651,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.2",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     Predictive models of college student success — models that
     score students on predicted graduation, retention, or course
@@ -3747,7 +3747,7 @@
       frontier-shaped finding: fairness in equity-oriented
       prediction is a construct-definition problem before it is a
       model-bias problem. The induced framework's C8.2 sub-
-      competency and the equity-construct CLOs proposed
+      competency and the equity-construct LEOs proposed
       find their case-grounded basis here.
       The case explicitly cross-references the v2 race-construct
       trio — eGFR (Case 25), pulse oximetry (Case 26), and
@@ -3777,7 +3777,7 @@
     after: (
       [Report which construct the model maximizes, on which stratifications it was evaluated, and which intervention it is paired with — three pieces of information any deployed targeting system should publish together.],
       [Treat the fairness conversation as a construct-definition conversation first, and as a model-bias conversation second; the latter is operationally important, the former determines what the model is fair *about*.],
-      [Carry the race-construct trio (Cases 25, 26, 6) as the cross-domain pair in the curriculum: in each, the construct definition is the upstream design decision; the framework's C8.2 sub-competency and the equity-construct CLOs are anchored here.],
+      [Carry the race-construct trio (Cases 25, 26, 6) as the cross-domain pair in the curriculum: in each, the construct definition is the upstream design decision; the framework's C8.2 sub-competency and the equity-construct LEOs are anchored here.],
     ),
   ),
   references: (
@@ -3805,7 +3805,7 @@
     D4/PT5) — Domain 4 for stratified evaluation; Domain 5 for
     the decision-context and mitigation question. Cross-reference
     Cases 25, 26, 6 — case-grounded basis for the equity-
-    construct CLOs.
+    construct LEOs.
   ],
   literature-items: (
     [Gándara, Anahideh, Ison, & Picchiarini (2024), _AERA Open_],
@@ -3834,7 +3834,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.4",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     A long-running practical question in learning analytics is
     whether protected attributes — race/ethnicity, gender,
@@ -4004,7 +4004,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.2",
   lens-anchor: "D4/PT6",
-  clo-anchor: "CLO-4, CLO-3",
+  leo-anchor: "LEO-4, LEO-3",
   summary: [
     The AIED 2025 paper "Evaluating an AI Tutor for Bias Across
     Different Foundation Models" tests LiveHint AI, an LLM-based
@@ -4187,7 +4187,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "5.3",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     Prinsloo and Kaliisa (_British Journal of Educational
     Technology_, 2022) mapped the legal and regulatory privacy
@@ -4362,7 +4362,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.4",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Pyle and Andalibi's study is independent of Katzman; the case sits on the applicant side of enrollment management.",
   summary: [
     Pyle and Andalibi (CSCW 2025) report an interview study with
@@ -4534,7 +4534,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     The LALA (Building Capacity to Use Learning Analytics to Improve Higher Education in Latin America) project, funded
     under EU grant 586120-EPP-1-2017-1-ES, ran from 2017 to 2020
@@ -4705,7 +4705,7 @@
   evidence-source: "program-report",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   summary: [
     Norway's Ministry of Education convened a national Expert
     Commission on Learning Analytics in 2021 — a national-government
@@ -4850,7 +4850,7 @@
     (induced 5.4; LENS D5/PT4). LENS uses it in Domain 5
     (Navigating Sociotechnical Constraints) for the change-
     control-and-disclosure-as-artifact discipline and in
-    Domain 4 (Test and Evaluation) for the CLO *Judgment
+    Domain 4 (Test and Evaluation) for the LEO *Judgment
     under inadequate evidence* on the process-vs-outcome tier.
     Pair with Case 81 (OU, institutional), Case 189 (SyRI,
     judicial), Case 91 (LALA, multi-country participatory),
@@ -4885,7 +4885,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "2.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-2, CLO-5, CLO-3",
+  leo-anchor: "LEO-2, LEO-5, LEO-3",
   summary: [
     Singapore's SkillsFuture Movement, launched in 2015, pairs
     individual training credits with employer subsidies, a
@@ -4968,7 +4968,7 @@
       The LENS teaching point is that the program is a
       non-US national-scale case for the corporate / workforce
       L&D cluster (Cases 79, 65, 83, 70) and a non-US/UK/EU
-      case for the geographic-coverage gap. The amended CLO on
+      case for the geographic-coverage gap. The amended LEO on
       collaboration measurement is directly exercised: TRAQOM
       measures across employer-employee-state, not only
       across the training organization. Pair with Case 18
@@ -4995,7 +4995,7 @@
     ),
     after: (
       [Pair with Case 18 (PEPFAR) for the global-health workforce-capability counterpart at multi-country scale; together they teach what national- and program-scale L&D measurement at evidence-flagged tier looks like.],
-      [Use the amended CLO on collaboration measurement: TRAQOM is a worked example of measurement across employer-employee-state, and the program documentation can teach the architecture in LENS Domain 5 (Sociotechnical Constraints).],
+      [Use the amended LEO on collaboration measurement: TRAQOM is a worked example of measurement across employer-employee-state, and the program documentation can teach the architecture in LENS Domain 5 (Sociotechnical Constraints).],
       [Carry the practice-synthesis flag honestly: the program design and the TRAQOM instrument are documented, the headline magnitudes are self-report, and future validation requires independent quasi-experimental causal evaluation.],
     ),
   ),
@@ -5021,7 +5021,7 @@
     SkillsFuture is the national workforce-capability case
     (induced 2.4; LENS D5/PT4). LENS uses it in Domain 5
     (Navigating Sociotechnical Constraints) for the amended
-    CLO on collaboration measurement — TRAQOM measures
+    LEO on collaboration measurement — TRAQOM measures
     across employer-employee-state — and in Domain 2 as the
     policy-scale operationalization of the HILS-style
     environment-and-event integration (Case 70). Pairs with
@@ -5056,7 +5056,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "8.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     Prinsloo and colleagues (2022) published a scoping review of
     learning-analytics research on the African continent for the
@@ -5187,7 +5187,7 @@
     frontier-evidence case (induced 8.4; LENS D5/PT4). LENS
     uses it in Domain 5 (Navigating Sociotechnical
     Constraints) for the construct-travel problem and in
-    Domain 4 (Test and Evaluation) for the CLO *Judgment under inadequate evidence* — the deployer must
+    Domain 4 (Test and Evaluation) for the LEO *Judgment under inadequate evidence* — the deployer must
     decide on what to import and what to validate locally
     when the validation literature is thin. Pairs with the
     African data-privacy governance case for the
@@ -5231,7 +5231,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT3",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
   coi: "Institutional overlap: an editor shares an institution (Johns Hopkins School of Education) with leading PBIS researchers; no editor was personally involved. Framed as learning from that peer-reviewed literature.",
   summary: [
     Positive Behavioral Interventions and Supports (PBIS) is one

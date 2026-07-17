@@ -7,7 +7,7 @@
 
 **Evidence discipline.** Every candidate below carries an explicit `evidence-flag` declaring its tier. Every write-up includes the verbatim phrase "future validation ongoing." That phrase must travel into the printed case if the candidate is drafted — it is the colophon-grade honesty signal that tells the reader where the sourcing stops being investigation-grade. This is non-negotiable.
 
-**Anchors.** Three anchor systems per candidate: induced competency (1–8 / 32) from `competencies.md`; canonical LENS (Domain 1–5 / Problem Type 1–6) from `lens_program/1_LENS_Five_Competencies.md`; and CLO mapping (CLO-1–5, plus the four NEW CLOs proposed in `v2_research/01_*`).
+**Anchors.** Three anchor systems per candidate: induced competency (1–8 / 32) from `competencies.md`; canonical LENS (Domain 1–5 / Problem Type 1–6) from `lens_program/1_LENS_Five_Competencies.md`; and LEO mapping (LEO-1–5, plus the four NEW LEOs proposed in `v2_research/01_*`).
 
 **Numbering.** Continues from v2-901 to keep the supplemental scope visible at a glance.
 
@@ -23,7 +23,7 @@
 - proposed-kind: intervention (governance-overcame-objection)
 - proposed-anchor (induced): 5.1 — Stakeholder trust and consent as preconditions; alternate 5.4 — Change-control and disclosure as governance artifacts
 - LENS mapping: Domain 4 (Context / sociotechnical constraints), Domain 5 (Emerging Systems); Problem Type 6 (Human-AI teaming)
-- CLO anchor: CLO-4 (sociotechnical integration); CLO-5 (machine teaming); [NEW] CLO — Delegation with revocation
+- LEO anchor: LEO-4 (sociotechnical integration); LEO-5 (machine teaming); [NEW] LEO — Delegation with revocation
 - alternate anchors: induced 5.4; LENS D1 (systems analysis of the safety case as artifact)
 - evidence-source: practitioner / program-report
 - evidence-flag: **practice-synthesis-tier** (Waymo white paper + Montreal AI Ethics Institute analysis; the third-party audits published Nov 2025 push some elements toward investigation-tier but the synthesis itself is practitioner-authored)
@@ -41,7 +41,7 @@
 - proposed-kind: failure
 - proposed-anchor (induced): 5.4 — Change-control and disclosure as governance artifacts; alternate 5.1
 - LENS mapping: Domain 4; Problem Type 6
-- CLO anchor: CLO-4; [NEW] CLO — Delegation with revocation
+- LEO anchor: LEO-4; [NEW] LEO — Delegation with revocation
 - evidence-source: journalism + program-report (DMV order is investigation-grade; mechanism reconstructed from journalism)
 - evidence-flag: **journalism-tier** (DMV order published; supporting reconstruction relies on TechCrunch, NBC News, SF Standard, Mission Local; the underlying Cruise internal post-mortem is referenced in public statements but not fully public)
 - citation: California DMV Order of Suspension, 24 Oct 2023; NBC News and TechCrunch reporting, Oct 2023; SF Standard reporting, Oct 2023
@@ -58,7 +58,7 @@
 - proposed-kind: intervention
 - proposed-anchor (induced): 5.1 — Stakeholder trust and consent; 5.3 — Cross-regime governance seams (DMV / CPUC)
 - LENS mapping: Domain 4; Problem Type 6
-- CLO anchor: CLO-4; CLO-5
+- LEO anchor: LEO-4; LEO-5
 - evidence-source: program-report
 - evidence-flag: **practice-synthesis-tier** (CPUC program documents and decisions; no single peer-reviewed analysis yet)
 - citation: CPUC, "Autonomous Vehicle Passenger Service Programs," program page and Aug 2024 application guidance; CPUC permit decisions for Cruise and Waymo
@@ -79,7 +79,7 @@
 - proposed-kind: intervention (methodological)
 - proposed-anchor (induced): 2.1 — Measuring the failure mode you care about; 2.3 — Closed-loop evidence linked to intervention
 - LENS mapping: Domain 3 (Measurement); Problem Type 5
-- CLO anchor: CLO-3; CLO-2 (iterative development by way of evaluation feedback)
+- LEO anchor: LEO-3; LEO-2 (iterative development by way of evaluation feedback)
 - evidence-source: peer-reviewed (the method) + practitioner (its corporate application)
 - evidence-flag: **practice-synthesis-tier** (the method is peer-reviewed; the corporate deployments at named firms — Cargill, Ford, Merck, World Bank, ICRC — are documented in practitioner channels, not in peer-reviewed evaluations)
 - citation: Brinkerhoff, R. O., "The Success Case Method: A Strategic Evaluation Approach to Increasing the Value and Effect of Training," *Advances in Developing Human Resources* 7(1):86–101, 2005, DOI 10.1177/1523422304272172; Brinkerhoff Evaluation Institute deployment list (Cargill, Ford, Merck, World Bank, International Red Cross)
@@ -94,9 +94,9 @@
 - year: 2003 (method) / ongoing (firm-level deployments)
 - scale: small (program-tier)
 - proposed-kind: intervention
-- proposed-anchor (induced): 2.4 — Implementation plans that address adoption and sustainment; LENS-side amended CLO-2 (narrating the design iteration)
+- proposed-anchor (induced): 2.4 — Implementation plans that address adoption and sustainment; LENS-side amended LEO-2 (narrating the design iteration)
 - LENS mapping: Domain 2 (Learning Engineering Design); Problem Type 4
-- CLO anchor: CLO-2; [NEW] CLO — Judgment under inadequate evidence (corporate L&D rarely has full evidence on transfer, must decide anyway)
+- LEO anchor: LEO-2; [NEW] LEO — Judgment under inadequate evidence (corporate L&D rarely has full evidence on transfer, must decide anyway)
 - evidence-source: practitioner
 - evidence-flag: **practice-synthesis-tier** (Brinkerhoff and colleagues authoring; corporate deployments referenced in practitioner literature)
 - citation: Brinkerhoff & Apking, *High Impact Learning*, 2001; Watershed LRS and L-TEN summaries of HILS deployment patterns
@@ -113,7 +113,7 @@
 - proposed-kind: intervention (with outcome-open elements)
 - proposed-anchor (induced): 2.4 — Adoption and sustainment; 6.4 — Cross-domain adaptation
 - LENS mapping: Domain 4 (Context/sociotechnical); Domain 2; Problem Type 4
-- CLO anchor: CLO-2; CLO-4; [AMENDED] CLO — Collaboration measurement (the program measures across employer-employee-state)
+- LEO anchor: LEO-2; LEO-4; [AMENDED] LEO — Collaboration measurement (the program measures across employer-employee-state)
 - evidence-source: program-report + peer-reviewed program analyses
 - evidence-flag: **practice-synthesis-tier** (SkillsFuture annual reports + ILO and Springer book chapters; per-cohort outcome data are self-reported via the TRAQOM survey)
 - citation: SkillsFuture Singapore (SSG), Year-in-Review 2024; MOE parliamentary replies on TRAQOM (2020); ILO report "Investigating an Upskilling Programme in Singapore"; "Future-Skilling the Workforce: SkillsFuture Movement in Singapore," Springer, 2024
@@ -130,7 +130,7 @@
 - proposed-kind: intervention (mixed outcome)
 - proposed-anchor (induced): 2.3 — Closed-loop evidence; 6.4 — Cross-domain adaptation
 - LENS mapping: Domain 2; Domain 4; Problem Type 4
-- CLO anchor: CLO-2; CLO-3; CLO-4
+- LEO anchor: LEO-2; LEO-3; LEO-4
 - evidence-source: peer-reviewed (but study is recent and confirmatory replication is pending)
 - evidence-flag: **preprint-tier → published** (the medRxiv version is preprint; the PMC version is journal-published; verify which the editor wants to cite)
 - citation: "Comparing in-person, blended and virtual training interventions; a real-world evaluation of HIV capacity building programs in 16 countries in sub-Saharan Africa," medRxiv 2023.02.08.23285641 (preprint) → PMC10365303 (published)
@@ -151,7 +151,7 @@
 - proposed-kind: intervention
 - proposed-anchor (induced): 3.1 — Cue and alert design as a capability deliverable
 - LENS mapping: Domain 3 (Measurement); Problem Type 5; secondary Problem Type 6
-- CLO anchor: CLO-3; CLO-1 (systems analysis of the EHR workflow)
+- LEO anchor: LEO-3; LEO-1 (systems analysis of the EHR workflow)
 - evidence-source: program-report (HIMSS case study) + journal article references
 - evidence-flag: **practice-synthesis-tier** (HIMSS case-study format; the underlying quality-improvement project is documented but not in a top-tier journal)
 - citation: HIMSS, "Usability Redesign Improves Annual Screening Rates in an Ambulatory Setting," case study (Greater Kansas City HIMSS chapter); University of Missouri Health Care quality-improvement project
@@ -168,7 +168,7 @@
 - proposed-kind: intervention
 - proposed-anchor (induced): 3.1 — Cue/alert design; 3.2 — Monitoring as an unsupportable role (alert burden is the monitoring failure made structural)
 - LENS mapping: Domain 3; Domain 5 (the CDS is automated decision support); Problem Type 5
-- CLO anchor: CLO-3; CLO-5 (oversight of automated output)
+- LEO anchor: LEO-3; LEO-5 (oversight of automated output)
 - evidence-source: peer-reviewed (the systematic review) + practitioner QI projects
 - evidence-flag: **practice-synthesis-tier** (the underlying QI project is published as a brief; the framing rests on the JAMIA systematic review)
 - citation: Co et al., "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," *JAMIA* 26(10):1141, 2019, DOI 10.1093/jamia/ocz095; "Navigating Alert Fatigue: A Case Study in Electronic Health Record Alert Design Optimization," PubMed 39049299, July 2024; "Addressing Alert Fatigue by Replacing a Burdensome Interruptive Alert with Passive Clinical Decision Support," *Applied Clinical Informatics*, Jan 2024
@@ -185,7 +185,7 @@
 - proposed-kind: intervention
 - proposed-anchor (induced): 3.2 — Role design where monitoring is unsupportable; 4.3 — Authority gradient and team-coordination redesign
 - LENS mapping: Domain 4 (Context/sociotechnical); Problem Type 3 (capability requirements definition for the new role)
-- CLO anchor: CLO-1; CLO-4
+- LEO anchor: LEO-1; LEO-4
 - evidence-source: program-report
 - evidence-flag: **practice-synthesis-tier** (Australian hospital pharmacy project report; subsequent peer-reviewed survey research builds on it)
 - citation: "Pharmacy Technician and Assistant Role Redesign within Australian Hospitals Project," outcomes report, Nov 2016; Anderson et al., "Perceptions of hospital pharmacists and pharmacy technicians towards expanding roles for hospital pharmacy technicians: a cross-sectional survey," *J. Pharmacy Practice and Research* 2021, DOI 10.1002/jppr.1697
@@ -206,7 +206,7 @@
 - proposed-kind: intervention
 - proposed-anchor (induced): 7.1 — Re-verifying inherited designs in new envelopes; 7.2 — Deployment and reuse as verification events
 - LENS mapping: Domain 1 (Systems Analysis); Problem Type 1 (Capability-System Misalignment at Transition); Problem Type 2
-- CLO anchor: CLO-1; CLO-2
+- LEO anchor: LEO-1; LEO-2
 - evidence-source: program-report (chapter in *Information Systems Transformation*, Elsevier 2010)
 - evidence-flag: **practice-synthesis-tier** (Elsevier technical chapter from vendor authors; not an independent academic evaluation)
 - citation: Reus, Geers, & van Deursen, "Modernization of the Eurocat Air Traffic Management System (EATMS)," in *Information Systems Transformation* (Elsevier, 2010), Chapter 5, DOI link via ScienceDirect
@@ -223,7 +223,7 @@
 - proposed-kind: intervention
 - proposed-anchor (induced): 7.1 — Re-verifying inherited designs; 3.1 — Cue/alert design
 - LENS mapping: Domain 1; Domain 3; Problem Type 1; Problem Type 5
-- CLO anchor: CLO-1; CLO-3
+- LEO anchor: LEO-1; LEO-3
 - evidence-source: program-report (INL technical reports + DOE OSTI conference papers)
 - evidence-flag: **practice-synthesis-tier** (INL/OSTI technical chapters; not independent peer-reviewed evaluation)
 - citation: INL technical report and conference proceedings on "Human Factors Design, Verification, and Validation for Two Types of Control Room Upgrades at a Nuclear Power Plant" (ResearchGate publication 271728006); related LWRS-program reports and OSTI conference papers
@@ -240,7 +240,7 @@
 - proposed-kind: intervention (with self-critical reflection)
 - proposed-anchor (induced): 7.1 — Re-verifying inherited designs; 6.1 — Industry/national institution building
 - LENS mapping: Domain 1; Domain 4; Problem Type 1; Problem Type 2
-- CLO anchor: CLO-1; CLO-4
+- LEO anchor: LEO-1; LEO-4
 - alternate anchors: induced 5.3 (cross-regime governance seams)
 - evidence-source: program-report + peer-reviewed analysis
 - evidence-flag: **practice-synthesis-tier** (the program is well-documented; the "no-legacy paradox" framing is a self-critical practitioner observation)
@@ -262,7 +262,7 @@
 - proposed-kind: failure → intervention (the system's exclusion failures; the court's remedial framing)
 - proposed-anchor (induced): 8.1 — Choosing the construct (what gets predicted, what counts); 5.2 — Human-in-the-loop for consequential decisions
 - LENS mapping: Domain 4; Domain 5; Problem Type 6
-- CLO anchor: [NEW] CLO — Fairness beyond omission; [NEW] CLO — Delegation with revocation; CLO-4
+- LEO anchor: [NEW] LEO — Fairness beyond omission; [NEW] LEO — Delegation with revocation; LEO-4
 - evidence-source: investigation (court judgments) + journalism + peer-reviewed analysis
 - evidence-flag: **journalism-tier** for the lived-exclusion accounts; the court judgments themselves are investigation-grade
 - citation: Supreme Court of India, *Justice K.S. Puttaswamy v. Union of India* (Aadhaar judgment, 2018); *Pragya Prasun & Ors. v. Union of India* (April 2025); IAPP analysis; Access Now reporting; "A Failure to Do No Harm" comparative analysis, PMC5741784
@@ -279,7 +279,7 @@
 - proposed-kind: intervention
 - proposed-anchor (induced): 6.4 — Cross-domain adaptation; 4.3 — Authority gradient and team-coordination redesign
 - LENS mapping: Domain 4 (Context/sociotechnical); Problem Type 4
-- CLO anchor: CLO-2; CLO-4
+- LEO anchor: LEO-2; LEO-4
 - evidence-source: peer-reviewed
 - evidence-flag: **preprint-tier → published** (the MIT News piece is journalism; the underlying study is peer-reviewed)
 - citation: Musabyimana et al., "Effect of a community health worker mHealth monitoring system on uptake of maternal and newborn health services in Rwanda," PMC6429813; MIT News reporting, 2022, on subsequent AI-augmented maternal-care work
@@ -296,7 +296,7 @@
 - proposed-kind: frontier
 - proposed-anchor (induced): 8.4 — Surfacing bias through governance; 6.4 — Cross-domain adaptation
 - LENS mapping: Domain 4; Problem Type 4
-- CLO anchor: CLO-3; CLO-4
+- LEO anchor: LEO-3; LEO-4
 - evidence-source: peer-reviewed (review)
 - evidence-flag: **practice-synthesis-tier** (a scoping review of a still-thin literature; the individual primary studies vary in rigor)
 - citation: Prinsloo et al., "Learning Analytics on the African Continent: An Emerging Research Focus and Practice," *Journal of Learning Analytics* and ResearchGate publication 361096718, 2022; complementary South African higher-education studies (Lemmens & Henn 2015 SAAIR; scielo development-of-contextualised-framework, 2020)
@@ -313,7 +313,7 @@
 - proposed-kind: intervention (frontier on individual approvals)
 - proposed-anchor (induced): 5.3 — Cross-regime governance seams; 5.4 — Change-control as governance artifact
 - LENS mapping: Domain 4; Domain 5; Problem Type 6
-- CLO anchor: CLO-4; CLO-5; [NEW] CLO — Delegation with revocation
+- LEO anchor: LEO-4; LEO-5; [NEW] LEO — Delegation with revocation
 - evidence-source: program-report + peer-reviewed (PMDA SaMD analyses)
 - evidence-flag: **preprint-tier** for the most recent systematic analyses (Aoki et al. medRxiv 2025; Aoki et al. 2021 medRxiv → published)
 - citation: "Scoping Review of Regulatory Transparency in AI-based Radiology Software: Analysis of PMDA-approved SaMD Products," medRxiv 2025.10.02.25336333; "Regulatory-approved Deep Learning/Machine Learning-Based Medical Devices in Japan as of 2020: A Systematic Review," PMC9931274; "A decade of review in global regulation and research of artificial intelligence medical devices (2015–2025)," PMC12310608
@@ -330,7 +330,7 @@
 - proposed-kind: intervention (frontier on operationalization)
 - proposed-anchor (induced): 5.1 — Stakeholder trust and consent; 8.4 — Surfacing bias through governance
 - LENS mapping: Domain 4; Problem Type 4
-- CLO anchor: CLO-4; [NEW] CLO — Fairness beyond omission (CARE goes beyond omission to *positive* sovereignty)
+- LEO anchor: LEO-4; [NEW] LEO — Fairness beyond omission (CARE goes beyond omission to *positive* sovereignty)
 - evidence-source: peer-reviewed (principles) + program-report (implementations)
 - evidence-flag: **practice-synthesis-tier** (the principles are published in a peer-reviewed data-science journal; the deployment cases are still emerging)
 - citation: Carroll et al., "The CARE Principles for Indigenous Data Governance," *Data Science Journal* 19(1):43, 2020, DOI 10.5334/dsj-2020-043; "Recognising Indigenous data sovereignty and implementing Indigenous data governance at the Ngangk Yira Institute for Change," *The Lowitja Journal*, 2025, DOI 10.1016/j.lowitj.2025.100030 (S2949-8406(25)00030-0)
@@ -352,8 +352,8 @@
 - scale: small (single-practitioner reflection)
 - proposed-kind: intervention (methodological)
 - proposed-anchor (induced): 6.3 — Sustaining tacit capability across generations
-- LENS mapping: Domain 2 (Learning Engineering Design — the design iteration narrated in first person); the amended CLO-2 (narrate and defend the design iteration)
-- CLO anchor: CLO-2 (amended)
+- LENS mapping: Domain 2 (Learning Engineering Design — the design iteration narrated in first person); the amended LEO-2 (narrate and defend the design iteration)
+- LEO anchor: LEO-2 (amended)
 - evidence-source: practitioner
 - evidence-flag: **practice-synthesis-tier**
 - citation: "Using a learning journal to improve professional practice: a journey of personal and professional self-discovery," *Reflective Practice* 7(3), 2006, DOI 10.1080/14623940600837517
@@ -369,8 +369,8 @@
 - scale: small (synthesis aimed at practitioner adoption)
 - proposed-kind: intervention (methodological synthesis)
 - proposed-anchor (induced): 6.4 — Cross-domain adaptation
-- LENS mapping: Domain 2; the amended CLO-2
-- CLO anchor: CLO-2 (amended)
+- LENS mapping: Domain 2; the amended LEO-2
+- LEO anchor: LEO-2 (amended)
 - evidence-source: peer-reviewed (CBE-LSE is peer-reviewed)
 - evidence-flag: **practice-synthesis-tier** (review/primer format)
 - citation: "Reflective Practices in Education: A Primer for Practitioners," *CBE—Life Sciences Education*, 2023, DOI 10.1187/cbe.22-07-0148; PMC10228263
@@ -387,14 +387,14 @@
 - proposed-kind: frontier
 - proposed-anchor (induced): 2.3 — Closed-loop evidence; 6.3 — Sustaining tacit capability
 - LENS mapping: Domain 2; Domain 3 (the measurement of reflective development)
-- CLO anchor: CLO-2 (amended); CLO-3
+- LEO anchor: LEO-2 (amended); LEO-3
 - evidence-source: preprint (arXiv)
 - evidence-flag: **preprint-tier**
 - citation: "The Development of Reflective Practice on a Work-Based Software Engineering Program: A Longitudinal Study," arXiv 2504.20956, 2025
 - domains: software engineering education, work-based learning, reflective practice
 - capability question: Across a multi-year work-based SE program, does reflective-practice capability itself develop measurably, and what supports its development?
 - what happened / what worked / what's open: A longitudinal study of reflective-practice development in a work-based SE program. The relevant signal for LENS: it is one of the few published instruments aimed at measuring the *development of reflective capability* (not just its presence), which is the LENS-revised Domain 2's evaluation problem in miniature. As a preprint, citation requires the explicit tier note. Future validation ongoing — both peer-review pipeline and replication.
-- why this fits the proposed anchor: Directly addresses how the proposed amended CLO-2 ("narrate and defend the design iteration") could be assessed across a multi-year program.
+- why this fits the proposed anchor: Directly addresses how the proposed amended LEO-2 ("narrate and defend the design iteration") could be assessed across a multi-year program.
 - evidence-tier note: arXiv preprint not yet peer-reviewed at the time of this writing. Future validation ongoing.
 - which named gap: **Gap 6** — published reflective-practice account from a technical-discipline program.
 

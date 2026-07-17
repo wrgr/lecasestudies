@@ -4,8 +4,8 @@
 // Structure: welcome → thesis → argument (I–III) → method (IV) →
 //            analytic lens (V) → how to read (VI).
 // The program orientation (pillars, JHU record, pilots) and the
-// CLO/course-coverage appendix live in the back matter:
-// backmatter/about-lens.typ and backmatter/appendix-clo-courses.typ.
+// LEO/course-coverage appendix live in the back matter:
+// backmatter/about-lens.typ and backmatter/appendix-leo-courses.typ.
 // ============================================================
 
 #import "../lib/theme.typ": *

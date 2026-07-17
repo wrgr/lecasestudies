@@ -164,7 +164,7 @@
   scale: "big",
   induced-anchor: "2.4",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 46 — algorithmic-bias-in-educational ----
@@ -309,7 +309,7 @@
   scale: "big",
   induced-anchor: "8.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 47 — algorithmic-bias-in-automated-exam ----
@@ -326,7 +326,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.2",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     The COVID-era expansion of remote learning produced a rapid
     deployment of automated exam-proctoring software across higher
@@ -496,13 +496,13 @@
   year: "2010s – 2022",
   domains-list: ("K-12 education", "school safety infrastructure", "racial disparities"),
   modes-code: "GKN",
-  impact: "Peer-reviewed study (Journal of Criminal Justice, 2022) examining school-surveillance infrastructure and Black student outcomes; the mechanism is the surveillance infrastructure (cameras, metal detectors, school resource officers), not the students, and the infrastructure drove a measured share of the outcome gap — one of the motivating cases for the CLO Gap attribution",
+  impact: "Peer-reviewed study (Journal of Criminal Justice, 2022) examining school-surveillance infrastructure and Black student outcomes; the mechanism is the surveillance infrastructure (cameras, metal detectors, school resource officers), not the students, and the infrastructure drove a measured share of the outcome gap — one of the motivating cases for the LEO Gap attribution",
   kind: "failure",
   scale: "big",
   evidence-source: "peer-reviewed",
   induced-anchor: "8.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   coi: "Institutional overlap: an editor shares an institution (Johns Hopkins School of Engineering) with an author of this work; no editor was personally involved. Included on the published peer-reviewed evidence (Journal of Criminal Justice, 2022); editorial framing keeps critical distance.",
   summary: [
     Johnson and colleagues, writing in the _Journal of Criminal
@@ -519,7 +519,7 @@
     posture that schools serving predominantly Black student
     populations more often adopted. The mechanism, in other words,
     is the infrastructure, not the students. The case is one of
-    the motivating cases in the v2 sweep for the CLO *Gap
+    the motivating cases in the v2 sweep for the LEO *Gap
     attribution* — the discipline
     of asking, when a disparity in outcomes is observed, what
     share of the disparity is attributable to the institutional
@@ -602,7 +602,7 @@
     ],
     [
       The case is one of the motivating cases in the v2 sweep for
-      the CLO *Gap attribution* — the discipline of asking, when a
+      the LEO *Gap attribution* — the discipline of asking, when a
       disparity in outcomes is observed, what share of the
       disparity is attributable to the institutional or
       technical infrastructure rather than to the population the
@@ -615,7 +615,7 @@
       and program designers have to be trained to look for the
       mechanism in the infrastructure they built, not only in
       the population they are serving, and the evidence the case
-      carries is what makes the proposed CLO defensible.
+      carries is what makes the proposed LEO defensible.
     ],
   ),
   beats: (
@@ -623,7 +623,7 @@
     "Johnson et al. 2022 (Journal of Criminal Justice): separates student-level from school-level variables; measured share of outcome gap attributable to the infrastructure, not the students",
     "Mechanism is the infrastructure, not the students — attributing the gap to the population mis-locates the mechanism in a measurable sense",
     "Extends race-construct trio (Cases 25 eGFR, 26 pulse oximetry, 6 Hoffman) into K-12 education at the institutional-infrastructure layer",
-    "One of the motivating cases for the CLO Gap attribution — discipline of asking which share is the infrastructure vs. the population",
+    "One of the motivating cases for the LEO Gap attribution — discipline of asking which share is the infrastructure vs. the population",
   ),
   approaches: (
     during: (
@@ -651,7 +651,7 @@
     not in the population the infrastructure operates on. The
     case extends the race-construct trio (eGFR, pulse oximetry,
     Hoffman) into K-12 education at the infrastructure layer and
-    is one of the motivating cases for the CLO Gap
+    is one of the motivating cases for the LEO Gap
     attribution. COI under the title — shared institution — is
     binding and rendered openly.
   ],
@@ -671,7 +671,7 @@
   reflection-list: (
     [Identify a disparity in outcomes in your domain that is currently attributed primarily to the population the outcomes are measured on. What infrastructure-level variables would you have to add to the analysis to test whether the institutional architecture is itself a mechanism of the disparity?],
     [Specify the design pattern the Johnson study uses: separating student-level from school-level variables so the share of the disparity attributable to each can be estimated. What is the analog in your context, and where is the default analysis most at risk of mis-locating the mechanism?],
-    [The case is one of the motivating cases for the CLO Gap attribution. What instance from your work — a device, a formula, a cognitive baseline, an institutional architecture — would you carry as the case-grounded basis for training practitioners in your context to look for the mechanism in the infrastructure they built?],
+    [The case is one of the motivating cases for the LEO Gap attribution. What instance from your work — a device, a formula, a cognitive baseline, an institutional architecture — would you carry as the case-grounded basis for training practitioners in your context to look for the mechanism in the infrastructure they built?],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 8"),
 )
@@ -690,7 +690,7 @@
   evidence-source: "investigation",
   induced-anchor: "5.4",
   lens-anchor: "D4+D5/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     With summer 2020 examinations cancelled in response to the
     COVID-19 pandemic, the UK Office of Qualifications and
@@ -847,7 +847,7 @@
   lens-approach: [
     Ofqual A-level 2020 is the change-control-and-disclosure-as-
     governance-artifacts case at national scale (induced 5.4;
-    LENS D4+D5/PT5; CLO-4 and CLO-5). LENS uses it in Domain 4
+    LENS D4+D5/PT5; LEO-4 and LEO-5). LENS uses it in Domain 4
     (Test and Evaluation) for the consultation-with-affected-
     stakeholders process as the test surface and in Domain 5
     (Navigating Sociotechnical Constraints) for the cohort-size
@@ -885,7 +885,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "8.3",
   lens-anchor: "D4+D5/PT6",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     The Wisconsin Department of Public Instruction has operated
     the Dropout Early Warning System (DEWS) since 2012,
@@ -1007,7 +1007,7 @@
       and Hispanic students, and the agency
       continued operating the system unchanged after the audit's
       release. Both findings are binding and travel together.
-      The CLO on designing predictions to trigger support
+      The LEO on designing predictions to trigger support
       rather than gatekeeping is anchored by the case at the
       deployment-with-null-causal-effect-and-disparate-accuracy
       seam: a prediction system operating at population scale
@@ -1030,12 +1030,12 @@
     during: (
       [Pre-specify the causal-inference design that will evaluate whether the prediction triggers outcome-changing intervention; the Perdomo et al. RDD is the deployment-evidence form that the prediction-triggers-support theory requires for verification at multi-year horizons.],
       [Treat the agency's own equity audit as a binding governance input, not as an internal document; the DPI's "Is DEWS Fair?" audit was internally honest about the disparate-accuracy finding, and the case's load-bearing observation is the agency's continued operation of the system unchanged.],
-      [Design predictions to trigger support, not gatekeeping; the case's central CLO anchor is the discipline of building the intervention surface that the prediction is meant to trigger, and of verifying — not assuming — that the prediction's operational role produces the outcome change the deployment theory requires.],
+      [Design predictions to trigger support, not gatekeeping; the case's central LEO anchor is the discipline of building the intervention surface that the prediction is meant to trigger, and of verifying — not assuming — that the prediction's operational role produces the outcome change the deployment theory requires.],
     ),
     after: (
       [Carry both evidence streams into print as load-bearing and complementary; the case's pedagogical value depends on the peer-reviewed null and the agency-audit disparate-impact finding traveling together rather than being separated into parallel entries.],
       [Pair in syllabi with Case 48 (Johnson) and Case 52 (Purdue) so the algorithmic-public-administration-in-education and reverse-causality threads are taught alongside the multi-year-deployment-with-null-causal-effect finding.],
-      [Use the case as the anchor for the designing-predictions-to-trigger-support CLO; the curricular target is the multi-year deployment record that demonstrates the gap between the prediction's operational theory and the evidence the deployment produces.],
+      [Use the case as the anchor for the designing-predictions-to-trigger-support LEO; the curricular target is the multi-year deployment record that demonstrates the gap between the prediction's operational theory and the evidence the deployment produces.],
     ),
   ),
   references: (
@@ -1060,7 +1060,7 @@
   lens-approach: [
     Wisconsin DEWS is the designing-predictions-to-trigger-
     support-not-gatekeeping case at population scale (induced
-    8.3; LENS D4+D5/PT6; CLO-4 and CLO-5). LENS uses it in
+    8.3; LENS D4+D5/PT6; LEO-4 and LEO-5). LENS uses it in
     Domain 4 (Test and Evaluation) for the causal-inference-
     on-multi-year-deployment discipline and in Domain 5
     (Navigating Sociotechnical Constraints) for the equity-
@@ -1237,7 +1237,7 @@
   scale: "big",
   induced-anchor: "2.2",
   lens-anchor: "D4/PT3",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
 )
 
 // ---- Case 52 — purdue-course-signals-the-reverse ----
@@ -1254,7 +1254,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   summary: [
     Purdue's Course Signals was one of the most-cited early-warning
     learning-analytics interventions of the early 2010s. The
@@ -1559,7 +1559,7 @@
   scale: "big",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 54 — summit-learning-personalized-learning ----
@@ -1710,7 +1710,7 @@
   scale: "big",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT4",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
 )
 
 // ---- Case 55 — enrollment-algorithm-yield-optimization ----
@@ -1728,7 +1728,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "8.3",
   lens-anchor: "D5/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. He is not associated with the specific vendors named here.",
   summary: [
     Engler's 2021 Brookings paper documents the two-stage
@@ -1910,7 +1910,7 @@
   evidence-flag: "practice-synthesis-tier",
   induced-anchor: "8.1",
   lens-anchor: "D5/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Burd's volume is independent of Katzman.",
   summary: [
     Burd's 2020 New America report analyzes licensed Peterson's and
@@ -2088,7 +2088,7 @@
   evidence-source: "investigation",
   induced-anchor: "5.3",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Katzman founded 2U — central to the OPM debate, though not named in this GAO report.",
   summary: [
     The Government Accountability Office's April 2022 audit
@@ -2275,7 +2275,7 @@
   evidence-flag: "journalism-tier",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5, CLO-3",
+  leo-anchor: "LEO-5, LEO-3",
   coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Katzman founded 2U but had departed before the USC MSW expansion documented here.",
   summary: [
     USC's online Master of Social Work program grew from about
@@ -2455,7 +2455,7 @@
   evidence-source: "investigation",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT5",
-  clo-anchor: "CLO-4, CLO-5",
+  leo-anchor: "LEO-4, LEO-5",
   coi: "Institutional overlap: John Katzman co-founded 2U and collaborates with an editor's institution (Johns Hopkins) but was not involved in the underlying litigation.",
   summary: [
     The consolidated federal securities class action against 2U,
@@ -2605,7 +2605,7 @@
   ],
   lens-approach: [
     In re 2U is the disclosure-as-governance case at the public-
-    company boundary (induced 5.4; LENS D5/PT5; CLO-4 and CLO-5).
+    company boundary (induced 5.4; LENS D5/PT5; LEO-4 and LEO-5).
     LENS uses it in Domain 5 (Navigating Sociotechnical Constraints)
     for the change-control and disclosure-architecture anchor and
     in Domain 4 (Test and Evaluation) for the convergence-of-
@@ -2644,7 +2644,7 @@
   evidence-source: "investigation",
   induced-anchor: "2.1",
   lens-anchor: "D4/PT4",
-  clo-anchor: "CLO-4",
+  leo-anchor: "LEO-4",
   summary: [
     From 2011 the Houston Independent School District used the
     SAS Education Value-Added Assessment System (EVAAS), a
@@ -2829,7 +2829,7 @@
   ],
   lens-approach: [
     Houston EVAAS is the unvalidated-attribution-under-secrecy
-    case (induced 2.1; LENS D4/PT4; CLO-4). LENS uses it in
+    case (induced 2.1; LENS D4/PT4; LEO-4). LENS uses it in
     Domain 4 (Test and Evaluation) as the anchor for the
     decision-grade-evidence standard: the score driving the
     consequential decision was unverifiable by design, unstable
@@ -2871,7 +2871,7 @@
   evidence-flag: "journalism-tier",
   induced-anchor: "6.4",
   lens-anchor: "D2/PT2",
-  clo-anchor: "CLO-2",
+  leo-anchor: "LEO-2",
   summary: [
     The peer-reviewed evidence base on early reading — decades
     of cognitive science consolidated by the congressionally
@@ -3059,7 +3059,7 @@
   ],
   lens-approach: [
     Sold a Story is the research-practice-coupling case at
-    national scale (induced 6.4; LENS D2/PT2; CLO-2). LENS uses
+    national scale (induced 6.4; LENS D2/PT2; LEO-2). LENS uses
     it in Domain 2 (Iterative Development) for the discipline
     of treating evidence-to-deployment coupling as the
     deliverable — implementation science's core question
@@ -3104,7 +3104,7 @@
   evidence-source: "program-report",
   induced-anchor: "1.4",
   lens-anchor: "D1/PT1",
-  clo-anchor: "CLO-1",
+  leo-anchor: "LEO-1",
   summary: [
     The Bill & Melinda Gates Foundation's Intensive Partnerships
     for Effective Teaching initiative (2009 – 2016) spent
@@ -3310,7 +3310,7 @@
     The Intensive Partnerships case is the
     requirements-as-a-sustainment-deliverable anchor at
     philanthropic-reform scale (induced 1.4; LENS D1/PT1;
-    CLO-1). LENS uses it in Domain 1 (Systems Analysis) for the
+    LEO-1). LENS uses it in Domain 1 (Systems Analysis) for the
     discipline of engineering the full theory-of-change chain —
     measurement, coupling, capacity, sustainment — as explicit
     requirements rather than letting a strong measurement layer
@@ -3349,7 +3349,7 @@
   evidence-flag: "journalism-tier",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   summary: [
     In June 2013 the Los Angeles Unified School District board
     approved the first phase of the Common Core Technology
@@ -3541,7 +3541,7 @@
   ],
   lens-approach: [
     LAUSD CCTP is the ed-tech procurement-governance failure
-    case at district scale (induced 5.1; LENS D5/PT6; CLO-5).
+    case at district scale (induced 5.1; LENS D5/PT6; LEO-5).
     LENS uses it in Domain 5 (Navigating Sociotechnical
     Constraints) for the stakeholder-trust-as-precondition
     anchor — a procurement that cannot survive disclosure
@@ -3581,7 +3581,7 @@
   evidence-flag: "journalism-tier",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT6",
-  clo-anchor: "CLO-5",
+  leo-anchor: "LEO-5",
   summary: [
     In September 2010, Facebook founder Mark Zuckerberg announced
     a \$100 million matching gift to transform the Newark, New
@@ -3756,7 +3756,7 @@
   ],
   lens-approach: [
     Newark is the stakeholder-consent-as-precondition case at
-    philanthropy scale (induced 5.1; LENS D5/PT6; CLO-5). LENS
+    philanthropy scale (induced 5.1; LENS D5/PT6; LEO-5). LENS
     uses it in Domain 5 (Navigating Sociotechnical Constraints)
     for the governance-architecture anchor: a reform whose
     funding, design authority, and clock all sat outside the

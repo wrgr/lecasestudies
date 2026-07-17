@@ -28,6 +28,6 @@
   "hyatt-regency-walkway-collapse",            // 158 — structural-ethics; change-control lesson in 172/161
   "sago-mine-disaster",                        // 168 — cumulative-inadequacy; held by 163/164/159
   "cambridge-analytica-facebook",              // 188 — privacy scandal; self-declared not a capability case
-  "care-principles-indigenous-data",           // 202 — normative framework; CLO held by 186/196/201
+  "care-principles-indigenous-data",           // 202 — normative framework; LEO held by 186/196/201
   "cruise-robotaxi-pedestrian-drag",           // 204 — redundant with Cruise partial-disclosure (190)
 )

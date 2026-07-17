@@ -16,75 +16,14 @@ LENS is a domain specialization and proficiency claim within the LECF, not a com
 
 Evidence tags follow the LECF convention: [V] validated; [P] practice-grounded, no formal validation; [A] aspirational/proposed, requires new validation work.
 
-LENS Domain
-
-LECF Mapping
-
-Relationship
-
-Evidence
-
-Notes
-
-LENS 1: Systems Thinking & Analysis
-
-LECF 3 (Engineering & Systems Thinking), esp. 3.4 requirements & V&V
-
-Extends
-
-[P] / [A]
-
-Adds capability requirements translation across the human-machine interface; no LECF counterpart
-
-LENS 2: Learning Engineering Design
-
-LECF 1 (Learning Sciences), 2 (Human-Centered Design), 6 (Process & Iteration)
-
-Aligns
-
-[P]
-
-Shared field consensus territory; cleanest mapping
-
-LENS 3: Data, Measurement & Evaluation
-
-LECF 4 (Instrumentation), 5 (Analytics), 7 (Performance & Outcome Engineering)
-
-Aligns + carries proposed extension
-
-[V] / [P] / [A]
-
-Strongest validation in both frameworks; gap attribution and outcome coupling are LECF Domain 7, flagged [A]
-
-LENS 4: Context & Domain Fluency
-
-No LECF analog
-
-Diverges (new)
-
-[A]
-
-LECF is deliberately domain-agnostic; LENS makes domain fluency a competency; needs behavioral definition (see R1)
-
-LENS 5: Emerging Systems & Futures
-
-LECF 5.2 (responsible AI/ML), partial
-
-Extends
-
-[A]
-
-Human-AI teaming and not-yet-fielded systems are absent from LECF and ICICLE/LEBOK
-
-LENS ethics thread (distributed)
-
-LECF 8 (Professional, Ethical & Collaboration Practice)
-
-Aligns; different architecture
-
-[P]
-
-LECF houses ethics as a domain; LENS distributes it as a design constraint across all courses
+| LENS Domain | LECF Mapping | Relationship | Evidence | Notes |
+|---|---|---|---|---|
+| LENS 1: Systems Thinking & Analysis | LECF 3 (Engineering & Systems Thinking), esp. 3.4 requirements & V&V | Extends | [P] / [A] | Adds capability requirements translation across the human-machine interface; no LECF counterpart |
+| LENS 2: Learning Engineering Design | LECF 1 (Learning Sciences), 2 (Human-Centered Design), 6 (Process & Iteration) | Aligns | [P] | Shared field consensus territory; cleanest mapping |
+| LENS 3: Data, Measurement & Evaluation | LECF 4 (Instrumentation), 5 (Analytics), 7 (Performance & Outcome Engineering) | Aligns + carries proposed extension | [V] / [P] / [A] | Strongest validation in both frameworks; gap attribution and outcome coupling are LECF Domain 7, flagged [A] |
+| LENS 4: Context & Domain Fluency | No LECF analog | Diverges (new) | [A] | LECF is deliberately domain-agnostic; LENS makes domain fluency a competency; needs behavioral definition (see R1) |
+| LENS 5: Emerging Systems & Futures | LECF 5.2 (responsible AI/ML), partial | Extends | [A] | Human-AI teaming and not-yet-fielded systems are absent from LECF and ICICLE/LEBOK |
+| LENS ethics thread (distributed) | LECF 8 (Professional, Ethical & Collaboration Practice) | Aligns; different architecture | [P] | LECF houses ethics as a domain; LENS distributes it as a design constraint across all courses |
 
 # What the Crosswalk Shows
 
@@ -130,41 +69,13 @@ The architectural difference (LECF houses ethics as Domain 8; LENS threads it th
 
 # Domain Language: Current vs. Recommended
 
-Domain
-
-Current language
-
-Recommended revision
-
-LENS 1
-
-SE principles, human-system task analysis, capability requirements translation
-
-Keep. Add explicit mapping language: “extends LECF Domain 3 with requirements translation across the human-machine interface.” Propose 3.5 as a candidate LECF subcompetency.
-
-LENS 2
-
-Learning sciences application, evidence-based design at scale, transfer to high-stakes environments
-
-Keep; split the transfer clause. “Transfer to high-stakes environments” belongs with LECF 7.3 (transfer specification), not with design. Moving it consolidates all [A] material in one place.
-
-LENS 3
-
-Ethical instrumentation, learning analytics, operational performance criteria, gap attribution
-
-Keep; label gap attribution and operational performance criteria as “proposed extensions to the field framework (LECF Domain 7)” in any external document.
-
-LENS 4
-
-High-consequence operational contexts, HSI frameworks, interdisciplinary team engagement
-
-Rewrite with behavioral definitions (R1). Current language is a knowledge area dressed as a competency.
-
-LENS 5
-
-Human-AI teaming, capability development for not-yet-fielded systems, adaptive learning at scale
-
-Keep; anchor to LECF 5.2 and propose two named candidate subcompetencies for SIG debate rather than leaving them free-floating (R4).
+| Domain | Current language | Recommended revision |
+|---|---|---|
+| LENS 1 | SE principles, human-system task analysis, capability requirements translation | Keep. Add explicit mapping language: “extends LECF Domain 3 with requirements translation across the human-machine interface.” Propose 3.5 as a candidate LECF subcompetency. |
+| LENS 2 | Learning sciences application, evidence-based design at scale, transfer to high-stakes environments | Keep; split the transfer clause. “Transfer to high-stakes environments” belongs with LECF 7.3 (transfer specification), not with design. Moving it consolidates all [A] material in one place. |
+| LENS 3 | Ethical instrumentation, learning analytics, operational performance criteria, gap attribution | Keep; label gap attribution and operational performance criteria as “proposed extensions to the field framework (LECF Domain 7)” in any external document. |
+| LENS 4 | High-consequence operational contexts, HSI frameworks, interdisciplinary team engagement | Rewrite with behavioral definitions (R1). Current language is a knowledge area dressed as a competency. |
+| LENS 5 | Human-AI teaming, capability development for not-yet-fielded systems, adaptive learning at scale | Keep; anchor to LECF 5.2 and propose two named candidate subcompetencies for SIG debate rather than leaving them free-floating (R4). |
 
 # Framing for the SIG Conversation
 

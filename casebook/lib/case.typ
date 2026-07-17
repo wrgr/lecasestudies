@@ -50,7 +50,7 @@
   evidence-source: none, // "investigation" | "peer-reviewed" | "program-report" | "practitioner" | "dissertation" | "journalism"
   lens-anchor: none,     // canonical LENS anchor as a string, e.g. "D3/PT5"
   induced-anchor: none,  // induced-framework anchor as a string, e.g. "2.4"
-  clo-anchor: none,      // CLO anchor for course mapping, e.g. "CLO-3, CLO-5"
+  leo-anchor: none,      // LEO anchor for course mapping, e.g. "LEO-3, LEO-5"
   coi: none,             // COI disclosure string — renders prominently under the case heading when set
   evidence-flag: none,   // short flag string for weaker-evidence cases (e.g. "journalism-tier", "preprint-tier"); future-validation language is implied
 ) = {
@@ -64,7 +64,7 @@
   // Carries number, title, year, domains, mode codes, kind, and course tags
   // for every case on both the 4-page and legacy paths — so the matrix and
   // domain index can render dynamically across the full corpus.
-  [#metadata((n: number, slug: slug, title: title, year: year, domains: domains-list, modes: modes-code, kind: kind, courses: courses, scale: scale, evidence-source: evidence-source, lens-anchor: lens-anchor, induced-anchor: induced-anchor, clo-anchor: clo-anchor, coi: coi, evidence-flag: evidence-flag, references: references, edition: if main-slugs.contains(slug) { "main" } else { "supplement" })) <caseinfo>]
+  [#metadata((n: number, slug: slug, title: title, year: year, domains: domains-list, modes: modes-code, kind: kind, courses: courses, scale: scale, evidence-source: evidence-source, lens-anchor: lens-anchor, induced-anchor: induced-anchor, leo-anchor: leo-anchor, coi: coi, evidence-flag: evidence-flag, references: references, edition: if main-slugs.contains(slug) { "main" } else { "supplement" })) <caseinfo>]
 
   // Companion build (view "companion"): emit metadata only, no case body.
   // The metadata above is enough for the dynamic appendices (domain index,
@@ -80,7 +80,7 @@
   // entry instead of the full multi-page case, reusing verified content.
     overview-entry(number, title, year, domains-list, modes-code, summary, references, lens-approach,
                    sections: sections, beats: beats, kind: kind,
-                   courses: courses, clo-anchor: clo-anchor,
+                   courses: courses, leo-anchor: leo-anchor,
                    induced-anchor: induced-anchor, lens-anchor: lens-anchor,
                    le-insight: le-insight, impact: impact)
   } else {
@@ -174,8 +174,8 @@
     v(2pt)
 
     // Where this case sits: domain → modes → LENS competency, plus the
-    // induced and CLO anchors — the three-anchor convention rendered.
-    connection-figure(domains-list, modes-code, lens-anchor, induced-anchor, clo-anchor, kind)
+    // induced and LEO anchors — the three-anchor convention rendered.
+    connection-figure(domains-list, modes-code, lens-anchor, induced-anchor, leo-anchor, kind)
     v(2pt)
 
     if approaches != none {

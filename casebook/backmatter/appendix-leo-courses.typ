@@ -1,5 +1,5 @@
 // ============================================================
-// Appendix — CLOs & Course Coverage.
+// Appendix — LEOs & Course Coverage.
 // The competency -> concentration-learning-outcome crosswalk, the
 // LEN course list with live per-course case counts across the full
 // 202-case corpus, and the course-coverage narrative (condensed from
@@ -14,23 +14,24 @@
 #let condensed = view == "overview-half"
 #let _body = if condensed { 8pt } else { 9.5pt }
 
-#text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("Appendix · CLOs and course coverage"))
+#text(font: sans, size: 7.5pt, tracking: 2pt, fill: teal, upper("Appendix · LEOs and course coverage"))
 #v(3pt)
 #line(length: 32mm, stroke: 0.8pt + gold)
 #v(if condensed { 5pt } else { 8pt })
 
-#text(font: serif, size: if condensed { 18pt } else { 22pt }, fill: navy, "The competencies, the CLOs, and the courses.")
+#text(font: serif, size: if condensed { 18pt } else { 22pt }, fill: navy, "The competencies, the LEOs, and the courses.")
 #v(if condensed { 4pt } else { 6pt })
 
 #set par(justify: true, leading: 0.58em, first-line-indent: 0pt)
 
-// ---- The competency -> CLO crosswalk -------------------------------
+// ---- The competency -> LEO crosswalk -------------------------------
 #text(font: sans, size: 8pt, tracking: 1.4pt, fill: gold, upper("competency → concentration learning outcome"))
 #v(5pt)
 
 #text(font: sans, size: _body, fill: text-dark)[
   The five capabilities the cases turn on are named, in the curriculum,
-  as five concentration learning outcomes (CLOs):
+  as five LENS Educational Objectives (LEOs) — the concentration-level
+  objectives, held at the program level:
 ]
 
 #v(5pt)
@@ -49,15 +50,15 @@
   inset: 10pt,
   stroke: (left: 2pt + teal),
   {
-    clo-row("Systems Analysis", "CLO-1 · Systems Thinking and Analysis")
+    clo-row("Systems Analysis", "LEO-1 · Systems Thinking and Analysis")
     line(length: 100%, stroke: 0.25pt + rule-soft)
-    clo-row("Iterative Development", "CLO-2 · Learning Engineering Design and Implementation")
+    clo-row("Iterative Development", "LEO-2 · Learning Engineering Design and Implementation")
     line(length: 100%, stroke: 0.25pt + rule-soft)
-    clo-row("Test and Evaluation", "CLO-3 · Data, Measurement, and Evaluation")
+    clo-row("Test and Evaluation", "LEO-3 · Data, Measurement, and Evaluation")
     line(length: 100%, stroke: 0.25pt + rule-soft)
-    clo-row("Navigating Sociotechnical Constraints", "CLO-4 · Context and Domain Fluency")
+    clo-row("Navigating Sociotechnical Constraints", "LEO-4 · Context and Domain Fluency")
     line(length: 100%, stroke: 0.25pt + rule-soft)
-    clo-row("Human-System Collaboration", "CLO-3 · Human-System Collaboration and Adaptive Systems")
+    clo-row("Human-System Collaboration", "LEO-3 · Human-System Collaboration and Adaptive Systems")
   },
 )
 
