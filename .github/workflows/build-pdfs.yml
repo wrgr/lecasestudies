@@ -1,11 +1,13 @@
 name: Build casebook PDFs
 
-# Regenerates the eight shipping artefacts in products/ (grayscale print
-# interiors, cover wraps, and digital editions) from the Typst sources via
-# casebook/scripts/build.sh, which needs typst + ghostscript + poppler.
-# Runs on demand (workflow_dispatch) and when the casebook sources change on
-# main; products/ is excluded from the trigger so the auto-commit below does
-# not retrigger the workflow.
+# Regenerates the shipping set in products/ (grayscale print interior + Lulu
+# cover wrap + local-print copy under products/print/; the digital main
+# volume, complete standalone, LENS Companion, and Validation & Audit under
+# products/digital/) from the Typst sources via casebook/scripts/build.sh,
+# which needs typst + ghostscript + poppler. Runs on demand
+# (workflow_dispatch) and when the casebook sources change on main; products/
+# is excluded from the trigger so the auto-commit below does not retrigger
+# the workflow.
 
 on:
   workflow_dispatch:

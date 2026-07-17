@@ -23,11 +23,15 @@
 //              size and layout stay exactly those of the 8 × 10 book.
 #let mode = sys.inputs.at("mode", default: "digital")
 
-// Edition split (July 2026): "full" — every case (reference build);
-// "main" — the printed main volume (cases in lib/selection.typ);
-// "supplement" — the digital-only supplement (everything else).
-// Skipped cases still emit <caseinfo> metadata so the matrix and
-// indexes always cover the whole corpus.
+// Edition split: "full" — every case (the complete standalone edition,
+// the default); "main" — the printed main volume (cases in
+// lib/selection.typ); "supplement" — the complement of the main volume
+// (everything the printed volume omits). The "supplement" partition no
+// longer ships as its own PDF — those cases reach readers through the
+// complete standalone edition — but the value is retained because the
+// matrix uses it to mark (°) which cases fall outside the printed cut.
+// Skipped cases still emit <caseinfo> metadata so the matrix and indexes
+// always cover the whole corpus.
 #let edition = sys.inputs.at("edition", default: "full")
 
 #let is-print   = mode == "print"

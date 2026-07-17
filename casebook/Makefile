@@ -1,11 +1,15 @@
 # Capability Matters — Casebook
-# Build targets for the three 8 × 10 editions + the Lulu cover wrap.
+# `make all` builds the full shipping set (six deliverables) via
+# scripts/build.sh and mirrors them into ../products/. The targets below
+# compile individual editions into build/ for quick iteration; they do NOT
+# mirror to products/ or build the covers — use `make all` for a release.
 #
-#   print    — 8 × 10, grayscale, 3 mm bleed. Lulu production interior.
-#   digital  — 8 × 10, color, cream backdrop. Screen / PDF edition.
-#   proof    — print page centered on US Letter with 8 × 10 trim marks;
-#              print at 100% on any office printer to review.
-#   cover    — single 8 × 10 Lulu wrap; spine computed from page count.
+#   digital   — main volume, 8 × 10, colour on cream (screen).
+#   complete  — full standalone, every case, 8 × 10, colour on cream.
+#   print     — main volume, 8 × 10, grayscale, 3 mm bleed (Lulu interior).
+#   local     — main volume, grayscale, centered on US Letter (home print,
+#               interior only — `make all` adds the colour covers).
+#   companion — LENS Companion + Validation & Audit (8 × 10, white).
 
 ROOT      := $(shell pwd)
 BUILD     := $(ROOT)/build
@@ -15,50 +19,43 @@ GS_GRAY   := gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite \
                -sColorConversionStrategy=Gray -dOverrideICC \
                -dCompatibilityLevel=1.7
 
-.PHONY: all editions print digital proof cover preview check clean fonts
+.PHONY: all editions digital complete print local companion check clean fonts
 
-# Default: full build via scripts/build.sh (handles the cover spine
-# width from the live page count and mirrors PDFs to the repo root).
+# Default: full release build (cover spine from live page count; mirrors
+# the shipping set into ../products/).
 all:
 	./scripts/build.sh
 
-editions: print digital proof
+editions: digital complete print local companion
 
 $(BUILD):
 	mkdir -p $(BUILD)
 
+digital: $(BUILD)
+	$(TYPST) --input mode=digital --input edition=main book.typ $(BUILD)/capability-matters-digital.pdf
+
+complete: $(BUILD)
+	$(TYPST) --input mode=digital book.typ $(BUILD)/capability-matters-complete.pdf
+
 # Production interior: grayscale-tuned palette, then flattened through
-# ghostscript so any remaining color literals in diagrams come out as
-# true grayscale.
+# ghostscript so any remaining colour literals in diagrams come out true gray.
 print: $(BUILD)
-	$(TYPST) --input mode=print book.typ $(BUILD)/_print-color.pdf
+	$(TYPST) --input mode=print --input edition=main book.typ $(BUILD)/_print-color.pdf
 	$(GS_GRAY) -o $(BUILD)/capability-matters-print.pdf $(BUILD)/_print-color.pdf
 	rm $(BUILD)/_print-color.pdf
 
-digital: $(BUILD)
-	$(TYPST) --input mode=digital book.typ $(BUILD)/capability-matters-digital.pdf
+# Grayscale interior centered on US Letter (the covers are attached by
+# `make all`; this target is the bare interior for review).
+local: $(BUILD)
+	$(TYPST) --input mode=proof --input edition=main book.typ $(BUILD)/_local-color.pdf
+	$(GS_GRAY) -o $(BUILD)/capability-matters-local-print.pdf $(BUILD)/_local-color.pdf
+	rm $(BUILD)/_local-color.pdf
 
-# Proof carries the grayscale print content centered on US Letter, so
-# it is flattened to true grayscale as well.
-proof: $(BUILD)
-	$(TYPST) --input mode=proof book.typ $(BUILD)/_proof-color.pdf
-	$(GS_GRAY) -o $(BUILD)/capability-matters-proof.pdf $(BUILD)/_proof-color.pdf
-	rm $(BUILD)/_proof-color.pdf
+companion: $(BUILD)
+	$(TYPST) --root .. --input view=companion lens-companion.typ $(BUILD)/capability-matters-lens-companion.pdf
+	$(TYPST) --input view=companion validation-audit.typ $(BUILD)/capability-matters-validation-audit.pdf
 
-preview: digital
-
-# Lulu wrap. Spine width is recomputed from the print interior page
-# count using ~0.0621 mm/page on cream paper.
-cover: print
-	$(eval P := $(shell pdfinfo $(BUILD)/capability-matters-print.pdf 2>/dev/null | awk '/^Pages:/ {print $$2}'))
-	$(eval S := $(shell awk -v p=$(P) 'BEGIN{printf "%.2f", p*0.0621}'))
-	$(eval W := $(shell awk -v s=$(S) 'BEGIN{printf "%.2f", 2*203.2 + s + 2*3.175}'))
-	$(eval H := $(shell awk 'BEGIN{printf "%.2f", 254 + 2*3.175}'))
-	$(TYPST) --root . --input cover-w-mm=$(W) --input cover-h-mm=$(H) --input spine-mm=$(S) cover/cover.typ $(BUILD)/cover-print.pdf
-
-# Per-case structural check: every converted (4-page) case is exactly
-# four pages, starts on a verso, carries its reference list, and has
-# marker count == reference-list length.
+# Per-case structural + citation-integrity check across the full corpus.
 check:
 	./scripts/check-cases.sh
 

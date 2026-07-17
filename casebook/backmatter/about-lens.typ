@@ -11,7 +11,7 @@
 
 #pagebreak(weak: true)
 
-#let condensed = view == "overview-half"
+#let condensed = false  // (the condensed half-page overview layout was retired July 2026)
 #let _body = if condensed { 7.5pt } else { 8.6pt }
 #let _lead = if condensed { 8pt } else { 8.8pt }
 

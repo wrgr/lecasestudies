@@ -17,7 +17,7 @@
 
 // The narrow Half-Letter summary trim is set later (`condensed`); the editor
 // card shrinks its photo, type, and spacing there so both editors fit one page.
-#let condensed = view == "overview-half"
+#let condensed = false  // (the condensed half-page overview layout was retired July 2026)
 #let _pw   = if condensed { 24mm } else { 30mm }
 #let _ph   = if condensed { 29mm } else { 36mm }
 #let _bio-size = if condensed { 7pt } else { 8pt }

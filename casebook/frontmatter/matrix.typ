@@ -52,9 +52,9 @@
 #text(font: sans, size: 8pt, fill: text-muted)[
   Gold numbers indicate failures and systemic conditions; teal
   numbers indicate paired-intervention successes and the open closing
-  case. Numbers marked #sym.degree are carried in the digital
-  supplement; unmarked cases appear in the printed main volume.
-  Numbering is global across both.
+  case. Numbers marked #sym.degree appear in the complete digital
+  edition but not the printed main volume; unmarked cases appear in
+  both. Numbering is global across the whole corpus.
 ]
 #v(8pt)
 
