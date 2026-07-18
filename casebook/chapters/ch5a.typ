@@ -851,7 +851,12 @@
       The recall is still being worked off, vehicle by vehicle, long after
       the company that built the inflators ceased to exist — concrete proof
       that a designed-out capability can outlive the firm that removed it and
-      become someone else's burden. The episode pushed regulators toward more
+      become someone else's burden. A decade on, the burden persists: the
+      oldest, most dangerous "Alpha" inflators have been escalated to urgent
+      "Do Not Drive" warnings (Stellantis alone covering some 225,000
+      vehicles in 2024–2025), and roughly 4.8 million Takata recalls remained
+      unrepaired as of mid-2026 even as completion of the Alpha inflators
+      passed 99 percent. The episode pushed regulators toward more
       aggressive, coordinated recall management that does not leave pace to
       each manufacturer. Its central lesson is the pairing: Takata is the
       modern Pinto in its product failure, and more in its system failure —

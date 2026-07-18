@@ -373,7 +373,10 @@
     around the world had purchased Watson on the marketed
     capability; adoption stalled, deployments were discontinued
     (Manipal Hospitals in India ended its contract in 2018), and
-    IBM ultimately wound down and sold off Watson Health. The case is the canonical instance in
+    IBM wound the product down and, in 2022, sold the Watson Health
+    data and analytics assets to Francisco Partners for roughly
+    \$1 billion, relaunched as Merative — the clinical-recommendation
+    business effectively shuttered before the divestiture. The case is the canonical instance in
     the AI-delegation typology of capability marketed ahead of
     capability validated. The evidence-tier flag rendered under
     the title is binding: STAT News journalism is the primary
@@ -927,7 +930,15 @@
       surveillance pattern that surfaces when pain ratings diverge by
       patient race in ways that survive case-mix adjustment. The
       Hoffman finding makes both deliverables specifiable in a way
-      that more diffuse bias findings did not.#cn()
+      that more diffuse bias findings did not.#cn() The mechanism has
+      since proven portable in a way that extends the deliverable:
+      Omiye et al. (2023, _npj Digital Medicine_) found that commercial
+      large language models reproduce the very false beliefs Hoffman
+      catalogued — about skin thickness, nerve density, and pain
+      tolerance — when queried with medical prompts, so the
+      disconfirmation task now reaches past the medical-school
+      curriculum to the AI systems entering the same clinical
+      workflows.#cn()
     ],
     [
       Hoffman pairs with pulse oximetry (Case 26) and eGFR
@@ -967,6 +978,7 @@
     [Anderson, Green, & Payne (2009), "Racial and ethnic disparities in pain: causes and consequences of unequal care," _Journal of Pain_ 10(12):1187–1204 — the population-level disparity.],
     [Sabin & Greenwald (2012), "The influence of implicit bias on treatment recommendations for 4 common pediatric conditions," _American Journal of Public Health_ — the diffuse-mechanism backdrop the Hoffman precision improves on.],
     [Vyas, Eisenstein, & Jones (2020), _NEJM_ — connecting race-in-clinical-algorithms to race-in-clinical-judgment.],
+    [Omiye, Lester, Spichak, Rotemberg, & Daneshjou (2023), "Large language models propagate race-based medicine," _npj Digital Medicine_ 6:195 — commercial LLMs reproduce the Hoffman false beliefs.],
   ),
   quote: [The mechanism the paper names is precise enough to teach against. Awareness training is not a curriculum; a curriculum has to disconfirm something specific.],
   quote-source: "Editors' synthesis of Hoffman et al. (2016).",
@@ -1517,7 +1529,13 @@
       of millions of patient-years, rather than waiting for voluntary
       reports — a direct response to the Vioxx-era detection failure.
       The _NEJM_ tightened conflict-of-interest disclosure for trial
-      reports; the _JAMA_ Ross et al. (2008) analysis became the
+      reports and, in December 2005, took the unusual step of issuing an
+      Expression of Concern after discovering that three additional
+      myocardial infarctions had been deleted from the VIGOR manuscript's
+      data table two days before submission — evidence that hardens the
+      story from "the signal aggregated too slowly" toward "the signal was
+      partly, and knowingly, kept out of the record." The _JAMA_ Ross et al.
+      (2008) analysis became the
       reference point for publication-bias diagnosis in drug safety.
       By going out to the data instead of waiting for it to arrive,
       the reform inverted the logic that had let the signal sit
@@ -1674,6 +1692,10 @@
       Theranos collapsed, its CLIA certificate was revoked, and Elizabeth
       Holmes was convicted of multiple counts of wire fraud in 2022, the
       conviction closing a chapter the regulators had been slow to open.#cn()
+      Holmes was sentenced that November to more than eleven years and her
+      deputy Ramesh "Sunny" Balwani, convicted separately, to nearly
+      thirteen; Holmes began her sentence in May 2023, and in February 2025
+      the Ninth Circuit affirmed both convictions.
       The case is canonical in business education for fraud-as-product-strategy
       and in health regulation for the gap that let unvalidated clinical
       tests reach patients — a reminder that "disruptive" claims in a

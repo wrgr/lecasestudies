@@ -447,8 +447,15 @@
       GAO urged a full reassessment of the sustainment strategy — government
       access to technical data, depot capacity, and a maintainer pipeline —
       rather than more patching.#cn() Those recommendations remain a work in
-      progress, with later reviews showing costs still rising and readiness
-      still below goal. The F-35 sits in this book as the live argument for
+      progress, and readiness has since deteriorated rather than recovered:
+      GAO's June 2026 review found the fleet mission-capable rate had fallen
+      to 44 percent and the full-mission-capable rate to just 25 percent —
+      only about one in four F-35s able to fly all its missions — driven in
+      part by the program accepting new TR-3/Block-4 jets that could not yet
+      fly combat because of software delays, while the Joint Program Office's
+      remediation ("Global Support Solution Reset") was projected to cost an
+      estimated \$13.7 billion more through FY2031, with readiness expected to
+      worsen before it improves. The F-35 sits in this book as the live argument for
       treating capability infrastructure — people, data, the means to sustain
       them — as a fielding gate, not an afterthought. The bill for skipping
       that gate does not disappear; it compounds, arriving as grounded jets,

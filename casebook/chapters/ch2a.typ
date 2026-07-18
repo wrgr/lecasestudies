@@ -2790,7 +2790,14 @@
       proprietary, unverifiable score cannot be the basis for
       termination, and the due-process holding has since
       anchored the legal literature on algorithmic
-      accountability in public employment. Pair with Case 51
+      accountability in public employment. Houston reads, in
+      retrospect, as the leading edge of a broader retreat: after
+      the federal Every Student Succeeds Act (2015) removed the
+      test-based-evaluation mandate that had driven adoption,
+      high-stakes value-added teacher evaluation was rolled back
+      across most of the roughly forty states that had embraced it
+      — the national policy following the direction the ASA's 2014
+      warning had pointed. Pair with Case 51
       (Atlanta Public Schools) for the adjacent
       measurement-architecture failure and Case 50 (Wisconsin
       DEWS) for the education-prediction equity thread.#cn()

@@ -100,11 +100,14 @@
       self-critical framing; the program-report and practitioner
       reflections supply the day-to-day operational picture and
       the no-legacy paradox in its sharpest form. The country's
-      generational-replacement plans for X-Road exist; whether
-      they materialize at the pace the analysis implies is
-      necessary is the open empirical question. Future
-      validation will continue as the next-generation
-      data-exchange architecture is designed and deployed.#cn()
+      generational-replacement plans for X-Road exist and have begun
+      to materialize: X-Road version 7 ("Unicorn") is in production
+      and version 8 ("Spaceship") is planned for 2026, re-scoping the
+      platform toward a federated "dataspace" model and aligning its
+      trust framework with the EU's Gaia-X — the modernization regime
+      acting on its own paradox rather than leaving it as theory.
+      Future validation will continue as the next-generation
+      data-exchange architecture is deployed.#cn()
     ],
     [
       What the case adds at the LENS layer is the C7 teaching
@@ -273,7 +276,15 @@
       architecture, if any, could make Level-2 monitoring sustainable for
       an average driver over years of use, and whether the answer is a
       better attention check or a concession that the role itself has to be
-      redesigned out of the human's hands.#cn()
+      redesigned out of the human's hands.#cn() The question did not stay
+      settled at the recall: in April 2024 NHTSA opened a new investigation
+      into whether the December 2023 remedy was even adequate, and in
+      October 2024 opened a separate probe of Full Self-Driving after
+      low-visibility fatal crashes. Then in June 2025 Tesla launched a
+      limited driverless robotaxi service in Austin — moving the company
+      past Level-2 monitoring into a Level-4 product that drew immediate
+      regulator scrutiny, and extending this case's question from the human
+      monitor to the removal of the human altogether.#cn()
     ],
   ),
   beats: (
@@ -300,6 +311,7 @@
     [NTSB, Highway Accident Report HAR-20/01 (Mountain View, CA, 2018) — Autopilot crash analysis.],
     [NHTSA Standing General Order 2021-01 reports — documented Autopilot fatal crashes.],
     [NHTSA Office of Defects Investigation EA22-002 (opened 2022; closed April 2024, superseded by recall 23V-838) — driver-engagement adequacy.],
+    [NHTSA recall-query RQ24009 (April 2024) into the adequacy of the December 2023 Autopilot remedy, and investigation PE24031 (October 2024) into Full Self-Driving; Tesla's June 2025 Austin robotaxi launch and the ensuing regulator scrutiny.],
     [Parasuraman, R. & Manzey, D. (2010) — automation complacency and monitoring.],
   ),
   quote: [The operational design ... permitted his prolonged disengagement from the driving task.],
@@ -822,7 +834,7 @@
   number: 199,
   slug: "waymos-safety-case-framework-governance",
   title: "Waymo's Safety Case Framework — Governance Objection Dissolved by Designed Artifact",
-  year: "2023 / 2025",
+  year: "2023 – 2026",
   domains-list: ("autonomous vehicles", "transportation safety", "public-sector governance"),
   modes-code: "GKN",
   impact: "After a California court let Waymo withhold trade-secret-laden safety data from a DMV public-disclosure request, the company answered the governance objection with a published, structured safety case framework — and in November 2025 commissioned the first independent third-party audits of both the safety case and the remote-assistance program",
@@ -894,7 +906,15 @@
       legitimacy artifact rather than by disclosure of the
       contested data. Where opacity could not be defended, a
       structured falsifiable argument plus audited assurance
-      took its place.#cn()
+      took its place.#cn() The post-deployment failure record the
+      framework anticipated has since begun to accumulate under real
+      regulator action: a December 2025 recall over vehicles not
+      stopping for school buses, a January 2026 NHTSA/NTSB
+      investigation after a Waymo struck a child near a Santa Monica
+      school, and a June 2026 recall of roughly 3,900 vehicles for
+      entering freeway construction zones — the safety-case regime now
+      being stress-tested by the revocation-and-recall machinery it
+      was built to invite rather than resist.#cn()
     ],
     [
       The evidence-tier flag rendered under the case title is
@@ -948,6 +968,7 @@
   references: (
     [Waymo (2023), "A Blueprint for AV Safety: Waymo's Toolkit For Building a Credible Safety Case," whitepaper.],
     [Waymo (November 2025), "Independent Audits of Waymo's Safety Case and Remote Assistance Programs," summary release.],
+    [NHTSA recall and investigation record (December 2025 school-bus recall; January 2026 NHTSA/NTSB investigation of a Santa Monica child-strike; June 2026 recall of ~3,900 vehicles over freeway construction zones) — the post-deployment failure record under regulator action.],
     [Montreal AI Ethics Institute (2023), summary and analysis of the Waymo safety case framework.],
     [California Public Utilities Commission, AV passenger-service permit framework documents — paired Case 200 for the regulator-side artifact.],
     [Cruise / California DMV Order of Suspension (October 2023) — paired Case 190 as the foil.],
@@ -992,7 +1013,7 @@
   number: 200,
   slug: "cpuc-av-passenger-service-permits",
   title: "CPUC AV Passenger-Service Permits — Conditions as a Designed Objection-Dissolver",
-  year: "2020 – 2024",
+  year: "2020 – 2026",
   domains-list: ("autonomous vehicles", "public-utility governance", "accessibility"),
   modes-code: "GKD",
   impact: "California's Public Utilities Commission built an AV passenger-service permit framework whose conditions — time-of-day limits, weather restrictions, fleet caps, geographic carve-outs, mandatory Passenger Safety Plan for riders with disabilities — are explicitly designed to operationalize the governance objections that would otherwise block deployment outright",
@@ -1061,7 +1082,15 @@
       comment that would strengthen its authority to impose
       targeted operational restrictions for safety reasons during
       the deployment lifecycle, not only at initial permit
-      issuance. The
+      issuance. That authority was finalized: the DMV adopted new AV
+      regulations on 28 April 2026 that codify targeted operational
+      restrictions (fleet size, location, speed, weather), authorize
+      heavy-duty AV trucks and medium-duty transit AVs, add
+      law-enforcement notices of noncompliance, and require AVs to
+      clear emergency zones within two minutes; the CPUC separately
+      opened a successor passenger-service rulemaking in August 2025
+      covering airport and shared-ride operations, personally-owned
+      AVs, and unaccompanied minors. The
       regulatory regime can therefore tighten the conditions in
       response to operational evidence. The pattern: rather than
       treat the governance objection as binary, the CPUC made the
@@ -1740,7 +1769,7 @@
   number: 204,
   slug: "cruise-robotaxi-pedestrian-drag",
   title: "Cruise Robotaxi — Pedestrian Drag",
-  year: "2023",
+  year: "2023 – 2024",
   domains-list: ("autonomous",),
   modes-code: "GDH",
   impact: "GM Cruise robotaxi struck a pedestrian and then dragged her ~20 feet; California suspended Cruise's permit; the program was substantially shut down",
@@ -1802,8 +1831,12 @@
     [
       The consequences cascaded. The California DMV suspended Cruise's driverless
       permits for misrepresenting the incident, NHTSA opened a defects
-      investigation, and GM subsequently shut down Cruise's commercial
-      robotaxi operations and laid off much of the workforce. A
+      investigation, and in September 2024 Cruise settled with NHTSA (a
+      \$1.5 million consent order) and the DOJ (admitting it had submitted a
+      false report, a \$500,000 penalty). In December 2024 General Motors
+      ended the story outright — halting funding for Cruise's robotaxi
+      development and folding the unit into GM after more than \$10 billion
+      in spend, with roughly half the remaining staff cut in early 2025. A
       commissioned external review (Quinn Emanuel) detailed the disclosure
       failures — a sequence in which each escalation followed not from the
       injury but from the partial account of it, the loss of regulator

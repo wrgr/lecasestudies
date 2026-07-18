@@ -1886,11 +1886,14 @@
       Early case reports suggest that clinicians who would carefully check
       a colleague's recommendation accept LLM output less critically,
       precisely because it reads so authoritatively. JAMA editorials and
-      reviews through 2023–2024 have repeatedly flagged the absence of an
+      reviews through 2023–2025 have repeatedly flagged the absence of an
       established verification practice as the central risk of clinical LLM
       use — the concern is not that the model errs but that the practice for
       catching its errors at the moment of use has not yet been defined or
-      taught.#cn()
+      taught. Through 2025 the pattern held: evaluations across successive
+      frontier models continued to find hallucination the most frequent
+      error type, even as clinical adoption ran well ahead of any settled
+      regulatory framework.#cn()
     ],
     // -- Open Problems --
     [
@@ -4166,14 +4169,15 @@
     ],
     // -- Open Problems --
     [
-      The FDA's 2025 draft guidance on AI/ML-Based Software as a
-      Medical Device begins to address this gap. The proposed
-      Predetermined Change Control Plan would let manufacturers
-      pre-specify the model updates and validation procedures that
-      can be applied without a new clearance; the companion Good
-      Machine Learning Practice principles emphasize representative
+      The FDA's evolving AI/ML-device guidance begins to address this
+      gap. The Predetermined Change Control Plan — finalized as its own
+      guidance in December 2024 — lets manufacturers pre-specify the
+      model updates and validation procedures that can be applied
+      without a new clearance; the broader device-lifecycle draft
+      guidance that followed in January 2025, together with the Good
+      Machine Learning Practice principles, emphasizes representative
       training data, transparent performance metrics, and lifecycle
-      monitoring. The De Novo pathway, used for a small number of
+      monitoring, and remained in draft through mid-2026. The De Novo pathway, used for a small number of
       novel tools, imposes more — but is rarely the chosen route.
       What the guidance does not yet require, as of its draft form,
       is mandatory demographic stratification of validation metrics
@@ -4537,8 +4541,16 @@
       published did not establish reproducibility. The
       subsequent five years of deployment evidence on AI-assisted
       breast cancer screening have refined the screening-
-      comparison framing — prospective evaluations have shown
-      benefits in some settings and not in others, and the
+      comparison framing — most decisively the randomized MASAI
+      trial in Sweden (over 100,000 women; interim results in
+      _Lancet Oncology_ 2023, final results 2025), which found
+      AI-supported reading non-inferior to standard double reading
+      while cutting radiologist workload by roughly 44 percent and
+      detecting more cancers. That is the deployment-grade evidence
+      the Haibe-Kains critique demanded — vindicating the demand
+      itself rather than the original retrospective paper — even as
+      prospective evaluations have shown benefits in some settings
+      and not in others, and the
       operational variables the retrospective comparison did not
       measure have proved load-bearing in deployment. The case
       teaches the verification-as-deployment-event pattern: a

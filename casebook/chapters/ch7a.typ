@@ -222,7 +222,10 @@
       broadened the leadership and re-scoped the research agenda
       around infrastructure platforms rather than a single
       simulation. The project ran to its scheduled 2023 conclusion;
-      the founding framing was not what it delivered.#cn()
+      the founding framing was not what it delivered. What survived is
+      the infrastructure it was re-scoped around — EBRAINS, the
+      digital neuroscience research platform now on the EU's ESFRI
+      Roadmap and continuing beyond the flagship's end.#cn()
     ],
     [
       The case pairs directly with the BRAIN Initiative (Case 198).
@@ -609,10 +612,15 @@
     ],
     // -- Aftermath & Reform --
     [
-      Uber suspended testing, later exited self-driving, and the case
+      Uber suspended testing and exited self-driving outright, selling its
+      Advanced Technologies Group to Aurora in December 2020; the case
       reshaped how the industry and regulators treat safety drivers — toward
       two-operator teams, driver-monitoring systems, and honest accounting of
-      what a monitor can and cannot do.#cn() Each of those reforms is a
+      what a monitor can and cannot do.#cn() The individual-accountability
+      bookend came in 2023, when the safety operator, Rafaela Vasquez,
+      pleaded guilty to endangerment and received three years of supervised
+      probation — even as the NTSB's finding had located the deeper cause in
+      Uber's design of the role. Each of those reforms is a
       concession that the single passive observer had been an unsupported
       role all along: a second operator shares the vigilance burden, and
       driver-monitoring closes the attention vacuum the original design left
@@ -766,7 +774,15 @@
       Convictions have been overturned — some by an exceptional act of
       Parliament, a measure of how far the ordinary appeal routes had failed —
       compensation schemes established, and Fujitsu and the Post Office called
-      to account before the continuing inquiry.#cn() Horizon's lesson is the
+      to account before the continuing inquiry.#cn() What finally forced the
+      political reckoning was not the courts but a television drama: the ITV
+      series _Mr Bates vs The Post Office_ (January 2024) galvanized public
+      pressure that produced the mass-exoneration statute, and former chief
+      executive Paula Vennells returned her CBE the following month. When Sir
+      Wyn Williams published the inquiry's first volume in July 2025, he found
+      that the compensation schemes had still not delivered full, fair, and
+      prompt redress, and that the true human toll — including suicides — was
+      larger than early figures had recorded. Horizon's lesson is the
       chapter's in its bluntest form: an automated system's output is not
       testimony, and any institution that lets "the computer said so" stand
       unchallenged against a human's account has built a machine for
@@ -1293,7 +1309,19 @@
       because the impossibility result was formalized against its
       audit record; the literature's subsequent decade of work on
       fairness criteria operates inside the constraint the case
-      made legible.#cn()
+      made legible.#cn() The decade since has, if anything, fractured
+      the case on its own premises. Dressel and Farid (2018) showed
+      COMPAS's 137-feature model is no more accurate than untrained
+      online workers or a two-variable model, undercutting the
+      accuracy claim on which its deployment rested; Rudin, Wang, and
+      Coker (2020) argued that ProPublica's racial-disparity finding
+      is partly an artifact of COMPAS's nonlinearity in age rather
+      than race; and Bao et al. (2021) argued the COMPAS dataset,
+      resting on re-arrest as a proxy for re-offense, should not be
+      used as a fairness benchmark at all. The impossibility theorem
+      remains the durable teaching point — but the benchmark it was
+      proved against is now itself among the most distrusted in the
+      field, which is part of what the case should teach.#cn()
     ],
     [
       The hedges the case carries are load-bearing. Both
@@ -1336,6 +1364,9 @@
     [Dieterich, W., Mendoza, C., & Brennan, T. (2016), _COMPAS Risk Scales: Demonstrating Accuracy Equity and Predictive Parity_, Northpointe Inc. response document.],
     [Chouldechova, A. (2017), "Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments," _Big Data_ 5(2):153–163, doi:10.1089/big.2016.0047.],
     [Kleinberg, J., Mullainathan, S., & Raghavan, M. (2017), "Inherent Trade-Offs in the Fair Determination of Risk Scores," _Proceedings of ITCS 2017_, doi:10.4230/LIPIcs.ITCS.2017.43.],
+    [Dressel, J., & Farid, H. (2018), "The accuracy, fairness, and limits of predicting recidivism," _Science Advances_ 4(1):eaao5580 — COMPAS no more accurate than untrained humans or a two-variable model.],
+    [Rudin, C., Wang, C., & Coker, B. (2020), "The age of secrecy and unfairness in recidivism prediction," _Harvard Data Science Review_ 2(1) — the age-nonlinearity reanalysis of ProPublica's disparity claim.],
+    [Bao, M., et al. (2021), "It's COMPASlicated: The Messy Relationship between RAI Datasets and Algorithmic Fairness Benchmarks," _NeurIPS Datasets & Benchmarks_ — the case against COMPAS as a fairness benchmark.],
   ),
   quote: [Both Northpointe and ProPublica were correct by their respective definitions of fairness; the impossibility result is that calibration and equal false-positive rates cannot be simultaneously satisfied when base rates differ across groups, except in degenerate cases.],
   quote-source: "Editors' synthesis of the COMPAS audit record and the 2017 impossibility-result papers.",
@@ -1383,7 +1414,7 @@
   number: 188,
   slug: "cambridge-analytica-facebook",
   title: "Cambridge Analytica / Facebook",
-  year: "2014 – 2018",
+  year: "2014 – 2024",
   domains-list: ("tech",),
   modes-code: "G",
   impact: "~87 million Facebook profiles harvested without informed consent; FTC $5B penalty; foundational data-governance reform",
@@ -1399,7 +1430,9 @@
     270,000 people, exploited Facebook's then-permissive Graph API to collect
     not only the quiz-takers' data but their friends' too — roughly 87
     million profiles. The dataset was passed to Cambridge Analytica for
-    political micro-targeting. Facebook's permission architecture had been
+    political profiling — though how much its psychographic targeting
+    actually swayed voters is contested, and regulators later judged it
+    oversold. Facebook's permission architecture had been
     designed and tested for delivering social experiences, not red-teamed
     against systematic harvesting; its API contract assumed benevolent
     developer intent. The architecture worked exactly as designed — the
@@ -1426,9 +1459,13 @@
       about 270,000 people; through the friends-permission it harvested
       roughly 87 million profiles — a return of more than three hundred
       profiles for every person who actually used the app. The dataset was
-      passed to Cambridge Analytica, which used it for political-campaign
-      micro-targeting across multiple elections — none of the 87 million
-      having meaningfully consented, most never even aware the app existed.#cn()
+      transferred to Cambridge Analytica, which folded it into commercial
+      voter data for political profiling — none of the 87 million having
+      meaningfully consented, most never even aware the app existed. How
+      much the firm's much-advertised "psychographic" targeting actually
+      influenced any election is genuinely contested, and by regulators'
+      own later account was oversold; what is not in dispute is the
+      harvesting and the missing consent.#cn()
     ],
     // -- The Investigation --
     [
@@ -1451,7 +1488,19 @@
       being named as one. On a platform at societal scale, an unexamined
       assumption about how an interface will be used is itself a capability
       deliverable — and an unexamined one is a latent failure waiting for the
-      first actor willing to exploit it.#cn()
+      first actor willing to exploit it.#cn() Crucially, the governance
+      failure does not depend on whether the targeting worked. After a
+      three-year investigation the UK Information Commissioner concluded in
+      2020 that Cambridge Analytica's methods were "well recognised
+      processes using commonly available technology," that its psychographic
+      claims were oversold to the point of "hyperbole," and that the
+      Facebook-derived data — being about U.S. voters — could not have been
+      used in the Brexit referendum; the best subsequent persuasion research
+      finds microtargeting's effect small or unproven. The harvesting still
+      happened and the consent still did not, and the API contract that
+      permitted it assumed a benevolence it never tested — the design
+      assumption fails on its own terms regardless of what any campaign could
+      do with the data.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -1459,7 +1508,16 @@
       force weeks later), helped spur the California
       Consumer Privacy Act, and produced a \$5-billion FTC penalty and a
       consent decree under which Facebook still operates — the abuse of one
-      design assumption reshaping data law across two jurisdictions.#cn() Its
+      design assumption reshaping data law across two jurisdictions.#cn() The
+      reckoning kept compounding: a \$100-million SEC settlement for
+      misleading investors (2019), the largest U.S. data-privacy class action
+      on record at \$725 million (final approval 2023), and Australia's
+      largest-ever privacy settlement — a A\$50-million Meta payment program
+      accepted in December 2024. Cambridge Analytica and its parent SCL had
+      themselves filed for insolvency back in May 2018, and the FTC
+      separately settled with the app's developer, Aleksandr Kogan, and
+      former CEO Alexander Nix, ordering the harvested data destroyed — the
+      operation dissolved, but the platform-design lesson outlived it.#cn() Its
       lesson for platform governance is that permission architectures must be
       designed against the worst plausible developer, not the typical one —
       because at scale, the worst plausible developer will arrive, and the
@@ -1469,7 +1527,7 @@
   ),
   beats: (
     "Facebook's Graph API let apps collect quiz-takers' data and their friends' data without friends consenting",
-    "A personality-quiz app taken by 270,000 people harvested about 87 million profiles for political micro-targeting",
+    "A personality-quiz app taken by 270,000 people harvested about 87 million profiles for political profiling (its psychographic efficacy later judged oversold)",
     "UK ICO and U.S. FTC investigations, prompted by Guardian reporting, found Facebook responsible for what its design permitted",
     "The architecture worked as designed; a load-bearing assumption of developer benevolence was never red-teamed",
     "GDPR and CCPA accelerated; the FTC imposed a five-billion-dollar penalty and a continuing consent decree",
@@ -1477,8 +1535,10 @@
   references: (
     [U.S. FTC, _In the Matter of Facebook, Inc._, Consent Order (2019) — the \$5B penalty; Facebook gave developers "far more user data than was necessary" (quoted).],
     [UK Information Commissioner's Office, report on Cambridge Analytica / data analytics in political campaigns (2018) — the scope of the harvesting.],
+    [UK ICO, Commissioner Elizabeth Denham's letter to the DCMS Sub-Committee (October 2020) — the final findings: methods "well recognised processes using commonly available technology," psychographic claims oversold to "hyperbole," and the data "could not have been used in the Brexit Referendum."],
     [C. Cadwalladr & E. Graham-Harrison, _The Guardian_ investigation (2018) — the disclosure.],
-    [The ~87 million profiles collected via the friends-permission Graph API from ~270,000 quiz-takers.],
+    [_In re Facebook, Inc. Consumer Privacy User Profile Litigation_ (N.D. Cal.), \$725M settlement, final approval 2023; U.S. SEC settlement with Facebook, \$100M (2019); Australian OAIC–Meta enforceable undertaking, A\$50M payment program (December 2024).],
+    [J. L. Kalla & D. E. Broockman (2018), "The Minimal Persuasive Effects of Campaign Contact," _APSR_; and Broockman & Kalla (2023), "Quantifying the potential persuasive returns to political microtargeting," _PNAS_ — the evidence that microtargeting's persuasive effect is small or unproven.],
     [EU General Data Protection Regulation (2018) and the California Consumer Privacy Act.],
     [C. Wylie, _Mindf*ck_ (2019), and H. Nissenbaum, _Privacy in Context_ (2010); S. Zuboff, _The Age of Surveillance Capitalism_ (2019).],
   ),
@@ -1627,7 +1687,16 @@
       operational claim has not been demonstrated after years of
       deployment, and whose data subjects have not been informed
       they are being scored, is not a case where design can fix
-      the governance problem.
+      the governance problem. The halt did not end Dutch
+      welfare-fraud analytics: a broader successor statute — the WGS
+      (Data Processing by Collaborative Networks Act), dubbed
+      "Super-SyRI" by critics — advanced to authorize even wider
+      public-private data-sharing, and SyRI's era overlapped the
+      _toeslagenaffaire_ childcare-benefits scandal, in which roughly
+      26,000 families were wrongly profiled — a failure grave enough
+      to collapse the Rutte government in January 2021 and draw a
+      parliamentary inquiry in 2024, with compensation still
+      unresolved years later.
     ],
   ),
   beats: (
@@ -1959,7 +2028,16 @@
       multiple ministerial portfolios. The Commission named
       individuals; some are subject to subsequent referrals to
       the National Anti-Corruption Commission and to professional
-      bodies.#cn()
+      bodies.#cn() Those referrals resolved slowly and unevenly:
+      the NACC first declined to investigate in mid-2024 — a
+      decision its own Inspector found affected by a conflict of
+      interest — before an independent reconsideration reopened the
+      matter as Operation Myrtleford in 2025. In its March 2026
+      report the NACC found two of the referred officials had
+      engaged in serious corrupt conduct and cleared the others,
+      including former prime minister Scott Morrison, while the
+      Australian Public Service Commission separately found a dozen
+      officials had breached the code of conduct.
     ],
     [
       The case pairs with Case 189 (SyRI, the Dutch System Risk
@@ -2335,7 +2413,16 @@
       pipeline — getting the tip in, getting it to someone who could read it,
       and having someone who could — so that a future Markopolos memo would
       meet an evaluator able to test it. Madoff is a case in which a regulator lacked the technical
-      capability to challenge the evidence in front of it.#cn()
+      capability to challenge the evidence in front of it.#cn() The
+      aftermath complicates the "total loss" image the \$65-billion
+      figure conjures: the fabricated account value was never real
+      money, and trustee Irving Picard clawed back roughly \$14.6
+      billion of actual invested principal — largely through the \$7.2
+      billion Picower settlement — so that, with the Department of
+      Justice's Madoff Victim Fund, some 94 percent of net-principal
+      losses had been returned by 2024, a recovery without precedent
+      for a Ponzi of this scale. Madoff himself died in federal prison
+      in April 2021.
     ],
   ),
   beats: (
