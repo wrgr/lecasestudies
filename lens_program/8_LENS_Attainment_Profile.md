@@ -75,14 +75,14 @@ Practitioner unless marked otherwise. "Basis" names the LEO subobjective and/or 
 | 3.g Hold the domain knowledge | T | Practitioner | 5.3; "students as domain experts" — a LENS strength |
 | 3.h Apply human-centered design | T | **Awareness** | Human-centered as PLO-2; prototyping in LEN 2. Design-patterns / information-architecture / prototyping-fidelity craft → an LXD or HCI elective |
 | 3.i Translate learning science into design | T | Practitioner | 2.1; F1, LEN 1 |
-| 3.j Design for accessibility and inclusion | T | Practitioner | PLO-2.4; 4.6; capstone. *Rests on the program PLO, not a named LEO* |
-| 3.k Design the assessment before the content | T | Practitioner | LEN 4 operationalization; capstone assessment design |
+| 3.j Design for accessibility and inclusion | T | Practitioner | **2.7 (v2.5)**; LEN 6, grounded in F2, deepened in LEN 7 |
+| 3.k Design the assessment before the content | T | Practitioner | **4.8 (v2.5)**; LEN 4 |
 
 ## Category 4 — Development
 
 | Competency | Tier | Level | Basis / disposition |
 |---|:---:|---|---|
-| 4.a Instrument the solution | T | Practitioner | 4.1; LEN 4. *Data-standards / interoperability (xAPI, Caliper) lighter; deepened in LEN 9* |
+| 4.a Instrument the solution | T | Practitioner | 4.1; LEN 4 incl. data standards & interoperability (xAPI, Caliper, v2.7); deepened in LEN 9 |
 | 4.b Test the design | T | Practitioner | 2.2; LEN 2 |
 | 4.c Select and integrate tools and technology | T | **Out of scope** | Software/platform engineering, LMS config, systems integration. Held by a software-engineering teammate; the graduate briefs this specialist (1.b). LEN 9 (elective) gives computational, not platform-engineering, depth |
 | 4.d Develop the content and media | T | **Out of scope** | Content/media production is the sibling **LXD** concentration's domain; LENS graduates are engineers/integrators who direct rather than produce |
@@ -95,14 +95,14 @@ Practitioner unless marked otherwise. "Basis" names the LEO subobjective and/or 
 | 5.b Lead the change | I | Practitioner | 5.5; LEN 8; implementation-science thread |
 | 5.c Enable the people who deliver | I | Practitioner | **2.6, 3.7 (v2.3)**; LEN 6, LEN 2; capstone sustainment plan |
 | 5.d Govern and sustain | T | Practitioner | LEO-5; LEN 4 governance, LEN 7 |
-| 5.e Scale the solution | T | Practitioner | 2.3; "speed and scale" through-line. *TCO lighter* |
+| 5.e Scale the solution | T | Practitioner | 2.3; "speed and scale" through-line; total cost of ownership in LEN 10 (v2.7), deepened in LEN 8 |
 
 ## Category 6 — Evaluation
 
 | Competency | Tier | Level | Basis / disposition |
 |---|:---:|---|---|
 | 6.a Produce decision-grade evidence | I | Practitioner | 4.3; LEN 4, LEN 10 — the LENS signature |
-| 6.b Evaluate impact | T | Practitioner | LEO-4, 3.4; LEN 4/10. *Skill-decay/retention lighter* |
+| 6.b Evaluate impact | T | Practitioner | LEO-4, 3.4; LEN 4/10 incl. capability over time, skill decay & retention (v2.7) |
 | 6.c Analyze how it fails | T | Practitioner | The T/D/N/H/G/K casebook; failure analysis — a LENS strength |
 | 6.d Contribute to the field's evidence base | T | **Awareness** | Capstone produces a reproducible report offered toward LECF validation; *design-based research and publishing back to the field* as a graduate practice → a doctoral pathway, not the M.Ed. |
 

@@ -14,12 +14,12 @@ The question it answers is the editor's: *of the 42, which does a LENS graduate 
 
 # Headline
 
-*Updated for LENS doc 1 v2.4 / doc 2 v2.6 (July 2026): added subobjectives 2.6 and 3.7 (enable the people who deliver, 5.c), 4.7 (appraise primary research, 3.c); made project/program management a LEN 10 capstone competency (1.i); routed 3.f to a university elective. Original as-found counts were 27 / 10 / 5. Graduate levels are in the companion `8_LENS_Attainment_Profile.md`.*
+*Updated for LENS doc 1 v2.5 / doc 2 v2.7 (July 2026): added subobjectives 2.6/3.7 (enable the people who deliver, 5.c), 4.7 (appraise primary research, 3.c), 2.7 (accessibility and inclusion, 3.j), 4.8 (assessment before content, 3.k); made project/program management a LEN 10 capstone competency (1.i); routed 3.f to a university elective; added light-touch course clauses (data standards → 4.a, TCO → 5.e, capability-over-time → 6.b). Original as-found counts were 27 / 10 / 5. Graduate levels are in the companion `8_LENS_Attainment_Profile.md`.*
 
 | | Count | Of which Individual (17) | Of which Team (25) |
 |---|:---:|:---:|:---:|
-| **● Covered** — a LEO subobjective or required course names it | 30 | 17 | 13 |
-| **◐ Partial** — present but as a thread, a PLO, or an elective, not a named LEO | 9 | 0 | 9 |
+| **● Covered** — a LEO subobjective or required course names it | 33 | 17 | 16 |
+| **◐ Partial** — present but as a thread, a PLO, or an elective, not a named LEO | 6 | 0 | 6 |
 | **○ Gap** — recorded as deliberate scope, not covered | 3 | 0 | 3 |
 
 **The floor holds completely.** All 17 Individual competencies — the framework's non-distributable floor, what it means to *be* a learning engineer — are covered. The two former floor gaps were closed: 5.c (enable the people who deliver) in v2.3 as subobjectives 2.6/3.7, and 3.c (read and judge research) in v2.4 as subobjective 4.7. No partial and no gap now falls on the Individual tier.
@@ -84,14 +84,14 @@ Status: ● covered · ◐ partial · ○ gap. Tier: I = Individual, T = Team. C
 | 3.g Hold the domain knowledge | T | 5.3, LEN 5; "students as domain experts" | ● | A LENS strength — prior domain fluency is treated as an asset |
 | 3.h Apply human-centered design | T | PLO-2; **LEN 2** (prototyping) | ◐ | HCD is a PLO not a LEO; design patterns, information architecture, prototyping fidelity not explicit |
 | 3.i Translate learning science into design | T | 2.1, **F1**, **LEN 1** | ● | |
-| 3.j Design for accessibility and inclusion | T | PLO-2.4; 4.6 | ◐ | Accessibility threaded via PLO; accessibility *testing* not a named LENS objective |
-| 3.k Design the assessment before the content | T | **LEN 4** (operationalize constructs) | ◐ | Operationalization covered; backward design / three learning domains / write-LOs craft not centered |
+| 3.j Design for accessibility and inclusion | T | 2.7 (**LEN 6**); F2, LEN 7 | ● | *(v2.5)* Named as subobjective 2.7 — design and test for accessibility, not usability alone |
+| 3.k Design the assessment before the content | T | 4.8 (**LEN 4**) | ● | *(v2.5)* Named as subobjective 4.8 — operationalize the construct and specify evidence before building |
 
 ## Category 4 — Development
 
 | ICICLE competency | Tier | LENS home | Status | Note |
 |---|:---:|---|:---:|---|
-| 4.a Instrument the solution | T | 4.1, **LEN 4** | ◐ | Instrumentation covered; data-standards/interoperability layer (xAPI/Caliper) thin |
+| 4.a Instrument the solution | T | 4.1, **LEN 4** (+ data standards) | ● | *(v2.7)* Data standards & interoperability (xAPI/Caliper) now explicit in LEN 4; deepened in LEN 9 |
 | 4.b Test the design | T | 2.2, **LEN 2** | ● | Prototype-instrument-refine against measured performance |
 | 4.c Select and integrate the tools and technology | T | LEN 9 (elec, computational only) | ○ | Software/platform engineering, LMS config, integration not taught |
 | 4.d Develop the content and media | T | — | ○ | Content/media production not a LENS objective |
@@ -104,14 +104,14 @@ Status: ● covered · ◐ partial · ○ gap. Tier: I = Individual, T = Team. C
 | 5.b Lead the change | I | 5.5; LEN 8; implementation-science thread | ● | Adoption/sustainment; why sound solutions fail to adopt |
 | 5.c Enable the people who deliver | I | 2.6 (**LEN 6**), 3.7 (**LEN 2**), **LEN 10**; LEN 8 (elec) | ● | *(v2.3)* Closed as two subobjectives — 2.6 support/delivery layer (implementation facet), 3.7 deliverer-as-role (collaboration facet) |
 | 5.d Govern and sustain | T | LEO-5; **LEN 4** (governance), LEN 7 | ● | Data governance, lifecycle, re-check constraints over time |
-| 5.e Scale the solution | T | 2.3, "speed and scale" through-line | ● | Scale is a LENS through-line; total-cost-of-ownership thin |
+| 5.e Scale the solution | T | 2.3, "speed and scale" through-line | ● | *(v2.7)* Total cost of ownership now explicit in LEN 10; deepened in LEN 8 |
 
 ## Category 6 — Evaluation
 
 | ICICLE competency | Tier | LENS home | Status | Note |
 |---|:---:|---|:---:|---|
 | 6.a Produce decision-grade evidence | I | 4.3, **LEN 4**, **LEN 10** | ● | The LENS signature competency |
-| 6.b Evaluate impact | T | LEO-4, 3.4; **LEN 4/10** | ● | Capability over time; skill-decay/retention present but light |
+| 6.b Evaluate impact | T | LEO-4, 3.4; **LEN 4/10** | ● | *(v2.7)* Capability over time, including skill decay and retention, now explicit in LEN 4 |
 | 6.c Analyze how it fails | T | The T/D/N/H/G/K casebook; failure analysis | ● | A LENS strength — the entire casebook is failure-mode analysis |
 | 6.d Contribute to the field's evidence base | T | **LEN 10** reproducible report; "offered toward LECF validation" | ◐ | Capstone produces evidence; contributing a case/method *back to the field* / design-based research not a graduate objective |
 
@@ -132,11 +132,13 @@ Three moves, in order of leverage. R1 and part of R2 are done; the partials (R3)
 Editor decision (docs 1 v2.4 / 2 v2.6), recorded at graduate level in `8_LENS_Attainment_Profile.md`:
 - **3.c (appraise research) → practitioner**, closed as subobjective 4.7 in LEN 4.
 - **3.f (formal study + IRB) → awareness**, routed to a university elective (JHU SOE `ED.880.624`; Bloomberg School human-subjects research-ethics), not backfilled into the sequence that already replaced two research courses.
-- **3.j (accessibility) and 3.k (assessment design) → practitioner**, resting on PLO-2.4 / LEN 4 respectively (noted in the profile as PLO/course-based rather than named LEOs).
+- **3.j (accessibility) and 3.k (assessment design) → practitioner, now named** as subobjectives 2.7 and 4.8 (v2.5) rather than resting on the program PLO.
 - **3.h (HCD craft) and 6.d (contribute to the field) → awareness.**
-- 1.k (org capability), 1.m (stakeholder comms), 2.d (contextual research), 4.a (instrumentation standards) tiered in the profile (awareness, practitioner, practitioner, practitioner).
+- **4.a (instrumentation standards) → practitioner, closed** by the v2.7 LEN 4 data-standards clause (xAPI/Caliper).
+- 1.k (org capability), 1.m (stakeholder comms), 2.d (contextual research) tiered in the profile (awareness, practitioner, practitioner).
+- **Light-touch notes closed** (v2.7): TCO explicit in LEN 10; skill-decay/retention explicit in LEN 4.
 
-Remaining open items are optional, not gaps: whether 3.j/3.k should become *named* LENS subobjectives rather than resting on the program PLO, and whether the lighter notes (TCO, xAPI/Caliper standards, skill-decay/retention) warrant explicit course language. None blocks the SIG conversation.
+No open items remain that block the SIG conversation. The three gaps are settled as deliberate Team-tier scope; every partial is either closed or a named awareness-tier routing.
 
 ## Original R3 note (as-found)
 
