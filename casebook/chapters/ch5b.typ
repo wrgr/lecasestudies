@@ -601,7 +601,13 @@
       distinguish capability growth from capability erosion — and a
       training practice that keeps the human's skill on the growing side,
       built and adopted while a generation is already learning the craft
-      with the tools always within reach.#cn()
+      with the tools always within reach. A July 2025 randomized
+      controlled trial by METR sharpened the warning: experienced
+      open-source developers allowed to use early-2025 AI tools took
+      about 19% longer on real tasks, yet believed the tools had sped
+      them up by roughly 20% — direct evidence that self-reported
+      productivity can invert the true effect, exactly the measurement
+      gap this case argues the discipline must instrument.#cn()
     ],
   ),
   beats: (
@@ -629,6 +635,7 @@
     [Sandoval et al. (2023), "Lost at C," USENIX Security — AI assistance did not significantly increase critical security-bug rates.],
     [Dell'Acqua et al. (2023), "Navigating the Jagged Technological Frontier" (HBS / BCG) — professional LLM use.],
     [L. Bainbridge, "Ironies of Automation," _Automatica_ 19(6) (1983) — the classic deskilling and over-reliance problem, applied to AI-augmented work.],
+    [METR (2025), "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity," arXiv:2507.09089 — the randomized trial finding a 19% slowdown against a self-reported speedup.],
   ),
   quote: [AI assistance changes what developers can do; it may also change what they need to know.],
   quote-source: "Editors' synthesis",

@@ -753,9 +753,16 @@
       What surfaced the failure was post-deployment external validation —
       the exact discipline that the clearance pathway omits. The Wong et
       al. paper was disconfirmation in the form the system did not
-      otherwise provide. Epic subsequently revised the model and added
-      stratification to its documentation; many hospitals turned the
-      alert off, recalibrated, or replaced it. The corrective action
+      otherwise provide. In October 2022 Epic overhauled the model —
+      changing the sepsis-onset definition, reducing its reliance on
+      antibiotic-order signals, and moving to a gradient-boosted model
+      (ESM v2) that hospitals must train on their own local data before
+      use; many had already turned the alert off, recalibrated, or
+      replaced it. Later multicenter validations of the updated model
+      reported stronger discrimination (AUROC roughly 0.82–0.92) but
+      persistent institution-to-institution variability, low positive
+      predictive value, and heavy alert burden — reinforcing that local
+      validation remains necessary. The corrective action
       worked through publication, not through governance. That is the
       gap: a tool can be deployed at hundreds of sites, alert at the
       bedside for years, and still be disconfirmable only by an academic
@@ -799,6 +806,7 @@
     [Wong et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070, doi:10.1001/jamainternmed.2021.2626.],
     [Habib et al. (2021), commentary on Wong et al., _JAMA Internal Medicine_ — on the implications for proprietary clinical AI.],
     [FDA, _Clinical Decision Support Software: Final Guidance_ (2022) — the post-Wong reframing of the EHR-embedded oversight question.],
+    [Ross, C. (2022), "Epic overhauls its sepsis algorithm," _STAT News_ (Oct 2022) — the ESM v2 redesign and the shift to locally-trained models.],
     [Adams et al. (2022), _Nature Medicine_ — the paired positive case (20).],
   ),
   quote: [A deployment is not a validation. Deployment without independent validation is delegation without evidence.],

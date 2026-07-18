@@ -305,6 +305,13 @@
       capacity that the delegation system had let atrophy. Boeing entered
       a Deferred Prosecution Agreement with the DOJ on a fraud charge
       tied to its disclosures to the FAA's Aircraft Evaluation Group.#cn()
+      That agreement's oversight was tested when a door plug blew off a
+      separate 737 MAX 9 (Alaska Airlines 1282) in January 2024, days
+      before the DPA's probation period lapsed; the DOJ found Boeing had
+      breached the agreement, a 2024 guilty plea was rejected by the
+      court, and in May 2025 the parties settled on a non-prosecution
+      agreement worth more than \$1.1 billion — no criminal conviction,
+      over the objection of the crash victims' families.
       The reform conceded the point the program had spent years
       resisting: the training was a real requirement all along, the
       sensor cross-check was a real requirement all along, and removing

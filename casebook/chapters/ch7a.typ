@@ -1698,7 +1698,7 @@
   number: 190,
   slug: "cruises-partial-disclosure-how",
   title: "Cruise's Partial Disclosure — How Disclosure Posture Decides Deployment",
-  year: "2023",
+  year: "2023 – 2024",
   domains-list: ("autonomous vehicles", "regulatory governance", "incident disclosure"),
   modes-code: "GKN",
   impact: "On 24 October 2023 the California DMV suspended Cruise's driverless deployment and testing permits, citing the company's misrepresentation of safety-relevant information after a robotaxi dragged a pedestrian roughly 20 feet at ~7 mph following an initial stop — disclosure posture, not the underlying collision sequence, was the load-bearing failure",
@@ -1793,10 +1793,16 @@
       what cadence, to which oversight body, with what
       verification. Partial disclosure under crisis is not a
       strategy; it is what happens when no architecture was
-      designed. Future validation will continue on the long-run
-      regulatory consequences as Cruise pursues reinstatement
-      and as the broader AV regulatory regime updates its
-      disclosure requirements in light of the 2023 events.#cn()
+      designed. The permit revocation proved terminal rather than a
+      pause: in September 2024 Cruise settled with NHTSA (a \$1.5
+      million consent order) and the DOJ (admitting it had submitted a
+      false report, a \$500,000 penalty), and in December 2024 General
+      Motors announced it would stop funding Cruise's robotaxi
+      development and fold the unit into GM, cutting roughly half the
+      remaining staff in early 2025. Future validation will continue
+      on the long-run regulatory consequences as the broader AV
+      regulatory regime updates its disclosure requirements in light
+      of the 2023 events.#cn()
     ],
   ),
   beats: (

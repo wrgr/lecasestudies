@@ -2359,7 +2359,13 @@
       the litigation that names what happened to specific
       applicants and enrollees under the regime. Pair also with
       Case 55 (Engler / enrollment algorithms) for the pricing-
-      optimization half.#cn()
+      optimization half.#cn() That commercial collapse became
+      terminal: 2U filed a prepackaged Chapter 11 in July 2024 and
+      emerged in September 2024 as a privately held company, delisted
+      from Nasdaq — the delegated vendor at the center of the
+      arrangement ceasing to exist in the public-company form the
+      disclosure record had assumed, and USC reabsorbing the programs
+      it had outsourced.
     ],
     [
       The journalism-tier evidence flag is binding on the case's
@@ -2543,7 +2549,7 @@
       the projection signal the operating record was generating.
       The three surfaces together define the disclosure-as-
       governance frame the case anchors. Pair also with Cases
-      157 and 158 (Engler and Burd) for the enrollment-
+      55 and 56 (Engler and Burd) for the enrollment-
       management context this litigation operates inside of.#cn()
     ],
     [
@@ -2563,7 +2569,12 @@
       binding for the affiliation, and the case's editorial
       framing has been written to maintain critical distance
       from any reading that would convert the settlement into
-      an adjudicated finding.
+      an adjudicated finding. The public-company disclosure regime
+      the case anchors on later closed: after continued enrollment
+      and revenue decline, 2U filed a prepackaged Chapter 11 in
+      July 2024 and emerged in September 2024 as a privately held,
+      Nasdaq-delisted company — ending the §10(b) public-reporting
+      oversight surface under which this litigation had arisen.
     ],
   ),
   beats: (
@@ -2618,7 +2629,7 @@
   literature-items: (
     [In re 2U, Inc. Securities Class Action (D. Md., 2019 – 2022)],
     [Securities Exchange Act §10(b), §20(a); Rule 10b-5],
-    [Paired Cases 57 (GAO-22-104463) and 181 (Luna v. USC)],
+    [Paired Cases 57 (GAO-22-104463) and 58 (Luna v. USC)],
   ),
   reflection-list: (
     [Identify a business arrangement in your domain whose revenue trajectory depends on a delegated operational counterpart. What disclosure surfaces — to investors, regulators, customers, affected populations — currently apply, and which of them are absent in the architecture as built?],

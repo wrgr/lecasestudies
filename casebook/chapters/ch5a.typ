@@ -1022,12 +1022,13 @@
       Federal Reserve's asset cap proved more durable than the bank had
       assumed. The cap — imposed in February 2018 at roughly \$1.95
       trillion — restricted Wells Fargo's growth pending evidence of
-      governance and risk-management remediation, and as of 2024 it
-      remained in effect, constraining the bank's growth for a sixth
-      consecutive year and making it the longest-running enforcement
-      action of its kind against a major U.S. bank. The case became the
-      standard teaching example of measurement-gaming and incentive
-      design.#cn() Its lesson is that any quota becomes a target to be
+      governance and risk-management remediation, and it held for
+      roughly seven years — the longest-running enforcement action of
+      its kind against a major U.S. bank — until the Federal Reserve
+      lifted it on 3 June 2025, concluding that the bank had completed
+      the required governance and risk-management remediation. The case
+      became the standard teaching example of measurement-gaming and
+      incentive design.#cn() Its lesson is that any quota becomes a target to be
       gamed, and that an institution is accountable for the behavior its
       measurement system makes rational, not just the behavior endorsed
       in its values statement — because employees respond to the
@@ -1046,7 +1047,7 @@
     [Office of the Comptroller of the Currency, Consent Order AA-EC-2016-66 (2016) — unsafe or unsound sales practices tied to the incentive-compensation structure (paraphrased).],
     [Independent Directors of Wells Fargo, _Sales Practices Investigation Report_ (2017) — how the sales-target architecture drove the conduct.],
     [Enforcement record: ~3.5 million accounts, ~\$3 billion in penalties, and the CEO's resignation.],
-    [Federal Reserve asset cap on Wells Fargo (2018) — the structural growth constraint.],
+    [Federal Reserve asset cap on Wells Fargo (imposed February 2018; lifted 3 June 2025) — the structural growth constraint and its termination after remediation.],
     [A. C. Edmondson, _The Fearless Organization_ (2018); incentive-design and corporate-governance literature.],
   ),
   quote: [Wells Fargo's sales practices were a foreseeable consequence of its incentive compensation structure.],
@@ -1192,7 +1193,11 @@
       trusted the manufacturer's test conditions, and a fix that had to
       upgrade the measurement itself, not just punish the cheat, because
       punishing the cheat leaves the exploitable instrument in place for the
-      next one.
+      next one. Criminal accountability in Germany ran on for years: in
+      May 2025 a Braunschweig court convicted four former VW managers of
+      fraud (sentences up to four and a half years), while the separate
+      trial of former CEO Martin Winterkorn, opened in September 2024, was
+      suspended indefinitely in July 2025 on health grounds.
     ],
   ),
   beats: (
@@ -1200,7 +1205,7 @@
     "Defeat-device software detected the test bench and enabled controls only there across about eleven million vehicles",
     "A West Virginia team comparing road to lab emissions exposed the cheat; documents showed institutional authorization",
     "The regulator's test ran in a regime the vehicle could detect, inviting the gaming it was meant to catch",
-    "VW paid more than thirty-three billion in penalties; the EU introduced real-world driving emissions testing",
+    "VW paid more than thirty billion in penalties; the EU introduced real-world driving emissions testing",
   ),
   references: (
     [U.S. EPA, Notice of Violation to Volkswagen (2015) — the defeat device and emissions exceedances.],

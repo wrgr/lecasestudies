@@ -565,7 +565,14 @@
       or abandoned their predictive-policing deployments — abandonment that
       came only after the tools were already in service, the construct
       problem surfaced by external review rather than caught before the
-      systems shaped where officers were sent.#cn()
+      systems shaped where officers were sent.#cn() The product itself
+      did not outlast the critique: PredPol rebranded as Geolitica in
+      2021, and after a 2023 investigation by _The Markup_ found its
+      predictions for one New Jersey department accurate less than 0.5%
+      of the time, the company's assets were absorbed by SoundThinking
+      (formerly ShotSpotter) and Geolitica ceased operations at the end
+      of 2023 — the construct-validity failure ending in commercial
+      wind-down rather than correction.#cn()
     ],
     // -- Open Problems --
     [
@@ -604,6 +611,7 @@
     [Brantingham et al. (2018) — predictive-policing field experiments.],
     [Brayne, S. (2017), "Big Data Surveillance: The Case of Policing."],
     [Municipal records on suspension and abandonment of predictive policing (Santa Cruz, New Orleans, Los Angeles).],
+    [Sankin, A. & Mehrotra, D. (2023), "Predictive Policing Software Terrible at Predicting Crimes," _The Markup_ — the Plainfield, NJ accuracy analysis; and reporting on PredPol/Geolitica's 2021 rebrand and 2023 wind-down into SoundThinking.],
   ),
   quote: [Predictive policing systems learn from a record of past policing, not from a record of past crime.],
   quote-source: "Paraphrasing Lum & Isaac, Significance, 2016",
@@ -1630,7 +1638,16 @@
       intervention at the regulatory scale; whether the audit
       regime reduces actual disparate impact at the hiring level
       remains under-evidenced, and the open evaluation question
-      is part of the case.#cn()
+      is part of the case. A December 2025 New York State
+      Comptroller audit sharpened that question from the
+      enforcement side: it found the Department of Consumer and
+      Worker Protection's enforcement of the law "ineffective" —
+      flagging only one likely non-compliant disclosure among the
+      32 it reviewed, where the Comptroller identified at least
+      17, and finding that roughly 75% of test complaint calls to
+      311 never reached the agency — moving the open issue from
+      whether disclosure reduces disparate impact to whether the
+      regime is being enforced at all.#cn()
     ],
     [
       The load-bearing hedges are explicit. The bias-audit-as-
@@ -1675,6 +1692,7 @@
   references: (
     [New York City Department of Consumer and Worker Protection, _Rules Implementing Local Law 144 of 2021 (Automated Employment Decision Tools)_, effective July 5, 2023.],
     [Wright, L., Muenster, R. M., Vecchione, B., Qu, T., Cai, S., Smith, A., Metcalf, J., & Matias, J. N. (2024), "Null Compliance: NYC Local Law 144 and the Challenges of Algorithm Accountability," in _Proceedings of FAccT 2024_, doi:10.1145/3630106.3658998.],    [Engler, A. (2023), "The EU and U.S. diverge on AI regulation: A transatlantic comparison and steps to alignment," _Brookings Institution_ commentary — regulatory-comparative frame for the municipal intervention.],
+    [Office of the New York State Comptroller (2025), audit of the Department of Consumer and Worker Protection's enforcement of Local Law 144 — finding enforcement "ineffective" (December 2025).],
   ),
   quote: [The audit-and-notice regime is a disclosure-and-audit instrument, not a substantive-standards instrument; whether it reduces actual disparate impact at the hiring level is an empirical question the published evidence does not yet resolve.],
   quote-source: "Editors' synthesis of the Local Law 144 rule text and the Andrus et al. and Wright et al. academic critiques.",

@@ -2386,7 +2386,14 @@
       eliminates the race coefficient. The replacement equation was
       published in parallel (Inker et al., _NEJM_ 2021). Major
       laboratories and health systems moved to adopt the new equation
-      within months.#cn()
+      within months.#cn() In December 2022 the governance response
+      reached past the equation itself: the OPTN mandated that
+      kidney-transplant programs review their waiting lists and
+      backdate the accrued waiting time of Black candidates who had been
+      disadvantaged by the former race-inclusive eGFR (effective January
+      2023, with the review required by January 2024) — a concrete,
+      population-scale remediation of exactly the transplant-wait-listing
+      disparity this case documents.
     ],
     [
       The hedge in both the Task Force report and the follow-up
@@ -2437,6 +2444,7 @@
   references: (
     [Delgado et al. (2021), "A Unifying Approach for GFR Estimation: Recommendations of the NKF-ASN Task Force on Reassessing the Inclusion of Race in Diagnosing Kidney Disease," _American Journal of Kidney Diseases_ 79(2):268–288 (published online 2021; in print vol. 79, 2022), doi:10.1053/j.ajkd.2021.08.003. Cited by online-first year, the year of the Task Force recommendation.],
     [Inker et al. (2021), "New Creatinine- and Cystatin C-Based Equations to Estimate GFR without Race," _New England Journal of Medicine_ 385(19):1737–1749, doi:10.1056/NEJMoa2102953.],
+    [OPTN/UNOS (2022–2023), "Kidney waiting-time modifications for candidates affected by race-inclusive eGFR calculations" — the mandated backdating of Black candidates' accrued waiting time (effective January 2023).],
     [Eneanya, Yang, & Reese (2019), "Reconsidering the Consequences of Using Race to Estimate Kidney Function," _JAMA_ 322(2):113–114 — the equity argument that motivated the revision.],
     [Vyas, Eisenstein, & Jones (2020), "Hidden in Plain Sight — Reconsidering the Use of Race Correction in Clinical Algorithms," _NEJM_ 383(9):874–882 — broader race-in-algorithms survey.],
   ),
@@ -4325,7 +4333,16 @@
       conditions hold, AI amplifies capability; the technical model alone
       does not — and the same architecture dropped into a domain missing any
       one of those four would not have produced a comparable, trusted,
-      widely adopted result.#cn()
+      widely adopted result.#cn() The work was extended by AlphaFold 3
+      (May 2024), which predicts proteins in complex with DNA, RNA, and
+      small molecules, and in October 2024 Demis Hassabis and John Jumper
+      shared the Nobel Prize in Chemistry for AlphaFold. AlphaFold 3 also
+      complicated the open-release story this case credits: it was
+      initially released without code or model weights, drawing a
+      scientific backlash, before DeepMind released the code for
+      non-commercial use in November 2024 — a reminder that open release
+      is a repeated governance decision that can be reversed under
+      commercial pressure, not a settled property of the work.#cn()
     ],
     // -- Open Problems --
     [
@@ -4365,6 +4382,7 @@
     [Moult, J. (CASP organizer) commentary on AlphaFold2 (2020) — the benchmark and the achievement (paraphrased).],
     [CASP benchmark documentation — the decades-long agreed evaluation.],
     [Hassabis (DeepMind) public commentary — the open-release governance decision.],
+    [Abramson et al. (2024), "Accurate structure prediction of biomolecular interactions with AlphaFold 3," _Nature_; and the 2024 Nobel Prize in Chemistry (Hassabis & Jumper) — the extension to complexes and the later code release.],
   ),
   quote: [This will be one of the most important achievements in AI in the past decade.],
   quote-source: "Paraphrasing John Moult (organizer of the CASP benchmark) on AlphaFold2, 2020",
