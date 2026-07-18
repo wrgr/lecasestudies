@@ -14,15 +14,15 @@ The question it answers is the editor's: *of the 42, which does a LENS graduate 
 
 # Headline
 
-*Updated for LENS doc 1 v2.3 / doc 2 v2.5 (July 2026), which added subobjectives 2.6 and 3.7 (enable the people who deliver) and made project/program management a LEN 10 capstone competency. Original as-found counts were 27 / 10 / 5.*
+*Updated for LENS doc 1 v2.4 / doc 2 v2.6 (July 2026): added subobjectives 2.6 and 3.7 (enable the people who deliver, 5.c), 4.7 (appraise primary research, 3.c); made project/program management a LEN 10 capstone competency (1.i); routed 3.f to a university elective. Original as-found counts were 27 / 10 / 5. Graduate levels are in the companion `8_LENS_Attainment_Profile.md`.*
 
 | | Count | Of which Individual (17) | Of which Team (25) |
 |---|:---:|:---:|:---:|
-| **● Covered** — a LEO subobjective or required course names it | 29 | 16 | 13 |
-| **◐ Partial** — present but as a thread, a PLO, or an elective, not a named LEO | 10 | 1 | 9 |
+| **● Covered** — a LEO subobjective or required course names it | 30 | 17 | 13 |
+| **◐ Partial** — present but as a thread, a PLO, or an elective, not a named LEO | 9 | 0 | 9 |
 | **○ Gap** — recorded as deliberate scope, not covered | 3 | 0 | 3 |
 
-**The floor now holds completely.** All 17 Individual competencies — the framework's non-distributable floor, what it means to *be* a learning engineer — are covered (16) or one subobjective from it (1: 3.c, appraise primary research). The former floor gap, 5.c (enable the people who deliver), was closed in v2.3 as subobjectives 2.6 (LEO-2, implementation facet) and 3.7 (LEO-3, collaboration facet).
+**The floor holds completely.** All 17 Individual competencies — the framework's non-distributable floor, what it means to *be* a learning engineer — are covered. The two former floor gaps were closed: 5.c (enable the people who deliver) in v2.3 as subobjectives 2.6/3.7, and 3.c (read and judge research) in v2.4 as subobjective 4.7. No partial and no gap now falls on the Individual tier.
 
 **Every remaining gap is Team-tier and recorded as deliberate scope.** The three — 1.j, 4.c, 4.d — are competencies the framework itself says "must be present somewhere in the effort but need not be in any one person." LENS states the same posture: it "develops integrators who can lead and work within learning engineering teams… no individual is expected to hold every competency of the field." Per the editor decision (v2.5), these are recorded as awareness/out-of-scope in the attainment profile (`4_LENS_LECF_Crosswalk.md` R2) rather than backfilled into a 30-credit concentration. Project/program management (former gap 1.i) is now exercised and evidenced in the LEN 10 capstone.
 
@@ -34,8 +34,10 @@ The question it answers is the editor's: *of the 42, which does a LENS graduate 
 
 ## Closed since the as-found analysis
 
-- **5.c Enable the people who deliver** *(Individual)* — the former floor gap. Closed in doc 1 v2.3 as **2.6** (design the support layer so delivery does not depend on the designer — job aids, point-of-need support, train-the-trainer) and **3.7** (the deliverer as a designed-for role in the human-system collaboration). Taught in LEN 6 (2.6) and LEN 2 (3.7), deepened in LEN 8, assessed in LEN 10.
+- **5.c Enable the people who deliver** *(Individual)* — a former floor gap. Closed in doc 1 v2.3 as **2.6** (design the support layer so delivery does not depend on the designer — job aids, point-of-need support, train-the-trainer) and **3.7** (the deliverer as a designed-for role in the human-system collaboration). Taught in LEN 6 (2.6) and LEN 2 (3.7), deepened in LEN 8, assessed in LEN 10.
+- **3.c Read and judge research** *(Individual)* — the last near-covered floor competency. Closed in doc 1 v2.4 as **4.7** (appraise a primary study's method and the validity of its claims; communicate what it does and does not support). Taught and assessed in LEN 4. The Individual tier is now fully at practitioner level.
 - **1.i Manage the work** *(Team)* — answered in doc 2 v2.5 by making project/program management (plan, budget, timeline, resources, versioning, progress reporting) an explicit **LEN 10 capstone** competency, exercised and evidenced rather than taught as a standalone domain.
+- **3.f Run a study + human-subjects/IRB** *(Team)* — held at **awareness** (doc 2 v2.6, editor Option C) rather than closed: LENS builds evidence *use* to practitioner depth but routes formal study *design* + IRB to a university elective (JHU SOE `ED.880.624`; a Bloomberg School human-subjects research-ethics course). See the attainment profile.
 
 # Full crosswalk
 
@@ -75,10 +77,10 @@ Status: ● covered · ◐ partial · ○ gap. Tier: I = Individual, T = Team. C
 |---|:---:|---|:---:|---|
 | 3.a Apply the learning sciences | T | 2.1, **F1**, **LEN 1** | ● | |
 | 3.b Elicit and model expert knowledge | T | 5.3, LEN 5 (CTA, CDM) | ● | Cognitive task analysis, critical decision method |
-| 3.c Read and judge research | I | **LEN 4** (evidence synthesis) | ◐ | Critical appraisal of primary literature implied in methods, not a named subobjective |
+| 3.c Read and judge research | I | 4.7 (**LEN 4**) | ● | *(v2.4)* Closed as subobjective 4.7 — appraise a primary study's method and the validity of its claims |
 | 3.d Analyze existing data | T | 4.1, **LEN 4**, LEN 9 | ● | |
 | 3.e Design for evidence | I | 4.1, **LEN 4** | ● | Refuse a design that cannot be evidenced ≈ LEO-4 posture |
-| 3.f Run a study when the question needs one | T | **LEN 4**, **LEN 10** | ◐ | LENS replaced the social-science-research + program-evaluation courses; formal study design and IRB/human-subjects protection now thinner |
+| 3.f Run a study when the question needs one | T | **LEN 4**, **LEN 10**; elective (SOE `ED.880.624`) | ◐ | *(v2.6)* Evidence *use* at practitioner; formal study *design* + IRB held at awareness, routed to a university elective (§6.5) |
 | 3.g Hold the domain knowledge | T | 5.3, LEN 5; "students as domain experts" | ● | A LENS strength — prior domain fluency is treated as an asset |
 | 3.h Apply human-centered design | T | PLO-2; **LEN 2** (prototyping) | ◐ | HCD is a PLO not a LEO; design patterns, information architecture, prototyping fidelity not explicit |
 | 3.i Translate learning science into design | T | 2.1, **F1**, **LEN 1** | ● | |
@@ -125,7 +127,18 @@ Three moves, in order of leverage. R1 and part of R2 are done; the partials (R3)
 
 1.j (develop others), 4.c (tools/platform engineering), and 4.d (content/media) are Team competencies the framework explicitly permits to be distributed. Backfilling them into a 30-credit concentration would dilute the thing LENS is. Editor decision (v2.5): record them as *awareness / out-of-scope* in the one-page attainment profile that `4_LENS_LECF_Crosswalk.md` R2 already calls for, citing the framework's own Individual/Team designation as the warrant. **1.i (manage the work) was handled differently** — rather than out-of-scope, it is exercised and evidenced in the LEN 10 capstone (v2.5), because a capstone project already requires it. Remaining action: draft and publish the attainment profile itself.
 
-## R3. Decide the six partials that are one sentence from covered — OPEN
+## R3. Decide the partials — RESOLVED
+
+Editor decision (docs 1 v2.4 / 2 v2.6), recorded at graduate level in `8_LENS_Attainment_Profile.md`:
+- **3.c (appraise research) → practitioner**, closed as subobjective 4.7 in LEN 4.
+- **3.f (formal study + IRB) → awareness**, routed to a university elective (JHU SOE `ED.880.624`; Bloomberg School human-subjects research-ethics), not backfilled into the sequence that already replaced two research courses.
+- **3.j (accessibility) and 3.k (assessment design) → practitioner**, resting on PLO-2.4 / LEN 4 respectively (noted in the profile as PLO/course-based rather than named LEOs).
+- **3.h (HCD craft) and 6.d (contribute to the field) → awareness.**
+- 1.k (org capability), 1.m (stakeholder comms), 2.d (contextual research), 4.a (instrumentation standards) tiered in the profile (awareness, practitioner, practitioner, practitioner).
+
+Remaining open items are optional, not gaps: whether 3.j/3.k should become *named* LENS subobjectives rather than resting on the program PLO, and whether the lighter notes (TCO, xAPI/Caliper standards, skill-decay/retention) warrant explicit course language. None blocks the SIG conversation.
+
+## Original R3 note (as-found)
 
 Several partials are thin only because LENS never wrote the subobjective, not because the curriculum omits the work:
 
@@ -135,4 +148,4 @@ Several partials are thin only because LENS never wrote the subobjective, not be
 
 # In plain language
 
-The field draft says what every learning engineer should be able to do, and marks which of those any one person must hold versus which the team can hold. After v2.3/v2.5, LENS covers the every-person floor completely (16 of 17, the last one — appraising primary research — a subobjective away), and now exercises project/program management in the capstone. What LENS deliberately does not cover is the team-holds-it tier: growing other practitioners, building the software, making the media. That is the concentration's scope talking, not a defect — and the honest way to say so is the published attainment profile that puts those in awareness or out of scope on the framework's own terms, rather than leaving a reviewer to find the holes by counting.
+The field draft says what every learning engineer should be able to do, and marks which of those any one person must hold versus which the team can hold. After v2.3/v2.4 (competencies) and v2.5/v2.6 (course mapping), LENS reaches practitioner level on *every* Individual (floor) competency and on 18 of 25 Team competencies, and exercises project/program management in the capstone. What it deliberately holds below practitioner is the team-holds-it tier — growing other practitioners, formal study design, building the software, making the media — each stated at awareness or out-of-scope in the published attainment profile (`8_LENS_Attainment_Profile.md`) on the framework's own Individual/Team terms, rather than left for a reviewer to find by counting.
