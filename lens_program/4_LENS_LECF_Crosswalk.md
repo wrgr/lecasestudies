@@ -47,7 +47,7 @@ Each of these is assessable from capstone artifacts. The current language is not
 
 ## R2. Declare the individual-attainment posture explicitly
 
-The LECF follows the INCOSE convention: competencies a learning engineering capability must cover, often distributed across a team. LENS makes individual claims: competencies a graduate demonstrates. These are compatible but the crossing must be explicit. Recommended move: publish a one-page attainment profile stating which LECF subcompetencies a LENS graduate reaches at practitioner level, which at awareness level, and which are out of scope. The IBSTPI precedent (individual competencies validated against practitioners) supports this posture; adopt it by name in the SIG conversation.
+The LECF follows the INCOSE convention: competencies a learning engineering capability must cover, often distributed across a team. LENS makes individual claims: competencies a graduate demonstrates. These are compatible but the crossing must be explicit. Recommended move: publish a one-page attainment profile stating which LECF subcompetencies a LENS graduate reaches at practitioner level, which at awareness level, and which are out of scope. The IBSTPI precedent (individual competencies validated against practitioners) supports this posture; adopt it by name in the SIG conversation. **Drafted:** `8_LENS_Attainment_Profile.md` fills this in against the 42-competency ICICLE *Essential Competencies* framework (practitioner / awareness / out-of-scope per competency, with the Individual/Team designation as warrant); it can be re-expressed against the nine LECF domains for the standards-pathway audience.
 
 ## R3. Build the Domain 7 validation pathway into LENS, with external sites
 
