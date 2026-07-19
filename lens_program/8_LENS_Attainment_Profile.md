@@ -71,7 +71,7 @@ Practitioner unless marked otherwise. "Basis" names the LEO subobjective and/or 
 | 3.c Read and judge research | I | Practitioner | **4.7 (v2.4)**; LEN 4 |
 | 3.d Analyze existing data | T | Practitioner | 4.1; LEN 4, LEN 9 |
 | 3.e Design for evidence | I | Practitioner | 4.1; LEN 4 |
-| 3.f Run a study + human-subjects/IRB | T | **Awareness** | LENS builds evidence *use* (LEN 4; capstone governance/ethics plan). Formal study *design* + IRB → **JHU SOE `ED.880.624 Evaluation and Research in Education`**; Bloomberg School human-subjects research-ethics course where participants are involved (§6.5) |
+| 3.f Run a study + human-subjects/IRB | T | **Awareness** | LENS builds evidence *use* (LEN 4; capstone governance/ethics plan). Formal study *design* + IRB → **JHU SOE `ED.880.624 Evaluation and Research in Education`** (number to be verified); Bloomberg School human-subjects research-ethics course where participants are involved (§6.5) |
 | 3.g Hold the domain knowledge | T | Practitioner | 5.3; "students as domain experts" — a LENS strength |
 | 3.h Apply human-centered design | T | **Awareness** | Human-centered as PLO-2; prototyping in LEN 2. Design-patterns / information-architecture / prototyping-fidelity craft → an LXD or HCI elective |
 | 3.i Translate learning science into design | T | Practitioner | 2.1; F1, LEN 1 |

@@ -37,7 +37,7 @@ The question it answers is the editor's: *of the 42, which does a LENS graduate 
 - **5.c Enable the people who deliver** *(Individual)* — a former floor gap. Closed in doc 1 v2.3 as **2.6** (design the support layer so delivery does not depend on the designer — job aids, point-of-need support, train-the-trainer) and **3.7** (the deliverer as a designed-for role in the human-system collaboration). Taught in LEN 6 (2.6) and LEN 2 (3.7), deepened in LEN 8, assessed in LEN 10.
 - **3.c Read and judge research** *(Individual)* — the last near-covered floor competency. Closed in doc 1 v2.4 as **4.7** (appraise a primary study's method and the validity of its claims; communicate what it does and does not support). Taught and assessed in LEN 4. The Individual tier is now fully at practitioner level.
 - **1.i Manage the work** *(Team)* — answered in doc 2 v2.5 by making project/program management (plan, budget, timeline, resources, versioning, progress reporting) an explicit **LEN 10 capstone** competency, exercised and evidenced rather than taught as a standalone domain.
-- **3.f Run a study + human-subjects/IRB** *(Team)* — held at **awareness** (doc 2 v2.6, editor Option C) rather than closed: LENS builds evidence *use* to practitioner depth but routes formal study *design* + IRB to a university elective (JHU SOE `ED.880.624`; a Bloomberg School human-subjects research-ethics course). See the attainment profile.
+- **3.f Run a study + human-subjects/IRB** *(Team)* — held at **awareness** (doc 2 v2.6, editor Option C) rather than closed: LENS builds evidence *use* to practitioner depth but routes formal study *design* + IRB to a university elective (JHU SOE `ED.880.624` — number to be verified; a Bloomberg School human-subjects research-ethics course). See the attainment profile.
 
 # Full crosswalk
 
@@ -80,7 +80,7 @@ Status: ● covered · ◐ partial · ○ gap. Tier: I = Individual, T = Team. C
 | 3.c Read and judge research | I | 4.7 (**LEN 4**) | ● | *(v2.4)* Closed as subobjective 4.7 — appraise a primary study's method and the validity of its claims |
 | 3.d Analyze existing data | T | 4.1, **LEN 4**, LEN 9 | ● | |
 | 3.e Design for evidence | I | 4.1, **LEN 4** | ● | Refuse a design that cannot be evidenced ≈ LEO-4 posture |
-| 3.f Run a study when the question needs one | T | **LEN 4**, **LEN 10**; elective (SOE `ED.880.624`) | ◐ | *(v2.6)* Evidence *use* at practitioner; formal study *design* + IRB held at awareness, routed to a university elective (§6.5) |
+| 3.f Run a study when the question needs one | T | **LEN 4**, **LEN 10**; elective (SOE `ED.880.624`, unverified) | ◐ | *(v2.6)* Evidence *use* at practitioner; formal study *design* + IRB held at awareness, routed to a university elective (§6.5) |
 | 3.g Hold the domain knowledge | T | 5.3, LEN 5; "students as domain experts" | ● | A LENS strength — prior domain fluency is treated as an asset |
 | 3.h Apply human-centered design | T | PLO-2; **LEN 2** (prototyping) | ◐ | HCD is a PLO not a LEO; design patterns, information architecture, prototyping fidelity not explicit |
 | 3.i Translate learning science into design | T | 2.1, **F1**, **LEN 1** | ● | |
@@ -131,7 +131,7 @@ Three moves, in order of leverage. R1 and part of R2 are done; the partials (R3)
 
 Editor decision (docs 1 v2.4 / 2 v2.6), recorded at graduate level in `8_LENS_Attainment_Profile.md`:
 - **3.c (appraise research) → practitioner**, closed as subobjective 4.7 in LEN 4.
-- **3.f (formal study + IRB) → awareness**, routed to a university elective (JHU SOE `ED.880.624`; Bloomberg School human-subjects research-ethics), not backfilled into the sequence that already replaced two research courses.
+- **3.f (formal study + IRB) → awareness**, routed to a university elective (JHU SOE `ED.880.624` — number to be verified; Bloomberg School human-subjects research-ethics), not backfilled into the sequence that already replaced two research courses.
 - **3.j (accessibility) and 3.k (assessment design) → practitioner, now named** as subobjectives 2.7 and 4.8 (v2.5) rather than resting on the program PLO.
 - **3.h (HCD craft) and 6.d (contribute to the field) → awareness.**
 - **4.a (instrumentation standards) → practitioner, closed** by the v2.7 LEN 4 data-standards clause (xAPI/Caliper).
