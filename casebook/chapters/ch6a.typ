@@ -2661,7 +2661,13 @@
       CrowdStrike moved content updates onto staged rollouts and stronger
       validation, Microsoft revisited kernel-level access for security
       vendors, and the episode prompted scrutiny of concentration risk in
-      endpoint security.#cn() Each response targets a different layer of the
+      endpoint security.#cn() The fallout also moved into court: Delta Air
+      Lines, which put its losses near \$500 million, and CrowdStrike filed
+      competing suits, and in May 2025 a Georgia judge allowed Delta's
+      negligence claims against CrowdStrike to proceed while dismissing its
+      fraud claims; a separate passenger class action against Delta over the
+      cancellations was also allowed to advance. Each engineering response
+      targets a different layer of the
       same failure: staged rollout limits the blast radius of any one push,
       reconsidering kernel access limits how much a vendor fault can break,
       and the concentration-risk scrutiny acknowledges that a single vendor

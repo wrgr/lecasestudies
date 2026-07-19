@@ -275,6 +275,21 @@
       defensible.#cn()
     ],
     [
+      That reading is now contested, and the dispute is itself part of
+      the case. Macnamara and Burgoyne's 2023 _Psychological Bulletin_
+      meta-analysis found growth-mindset effects near zero among the
+      best-designed, least-biased studies, and large independent trials
+      — the UK Education Endowment Foundation's 101-school RCT (2019)
+      among them — returned nulls. The critics' sharpest charge lands
+      exactly on this case's method: that "the effect is conditional on
+      X" can be a genuine finding or an unfalsifiable escape hatch, and
+      that moderator-hunting after a null average is how a
+      non-effect is kept alive. The case is best taught with that
+      fault line visible — the heterogeneity-as-finding stance is a
+      real methodological advance and the live target of a serious
+      replication critique, at once.#cn()
+    ],
+    [
       Drafted alongside Case 86 (Gándara) at the
       scalable-equity-intervention layer, the case carries the
       design-predictions-to-trigger-support pattern (induced 8.3,
@@ -316,6 +331,8 @@
     [National Study of Learning Mindsets, ICPSR 37353 — the trial dataset.],
     [Dweck, C. S. (2006). _Mindset: The New Psychology of Success_. Random House — the broader theoretical framework the intervention rests on.],
     [Sisk, V. F., Burgoyne, A. P., Sun, J., Butler, J. L., \& Macnamara, B. N. (2018). To what extent and under which circumstances are growth mindsets important to academic achievement? Two meta-analyses. _Psychological Science_, 29(4):549–571 — the prior moderator-analysis literature the Yeager trial extends.],
+    [Macnamara, B. N., \& Burgoyne, A. P. (2023). Do growth mindset interventions impact students' academic achievement? A systematic review and meta-analysis. _Psychological Bulletin_ 149(3–4):133–173 — near-null effects among the best-designed studies.],
+    [Education Endowment Foundation (Foliano et al., 2019), "Changing Mindsets" evaluation — a 101-school RCT finding no significant effect on attainment.],
   ),
   quote: [The effect was conditional on peer norms.],
   quote-source: "Yeager et al., Nature 2019.",
@@ -436,7 +453,18 @@
       matters most — remains open. The dependence on a decomposable skill
       model is the boundary condition: where a subject cannot be cleanly
       broken into trackable skills, the very chain that made algebra
-      tractable has nothing to attach to.#cn()
+      tractable has nothing to attach to.#cn() The program's later history
+      sharpens the evidentiary caution. Carnegie Learning re-platformed the
+      Cognitive Tutor software into MATHia (rewritten for the web as
+      "MATHia X" in 2016), which is now its flagship, and the company still
+      cites this same RAND result as MATHia's headline evidence — carrying a
+      2014 trial of the predecessor blended product forward onto a
+      re-engineered one. In 2023 it went further, launching LiveHint AI, a
+      generative-AI tutor (Case 88), on the authority of "25 years of data"
+      and self-nominated awards but with no independent efficacy evidence of
+      its own — a reminder that the RCT-grade warrant this case celebrates
+      attaches to the specific product and era that earned it, and does not
+      transfer by brand to its successors.#cn()
     ],
   ),
   beats: (
@@ -452,6 +480,7 @@
     [RAND Corporation Algebra I evaluation — the statistically significant achievement effects.],
     [Carnegie Learning program documentation — scale to 3,000-plus schools.],
     [Aleven, V. et al. (2016), example-tracing tutors — the limits in ill-structured domains.],
+    [Ritter, S. & Fancsali, S. (2016), "MATHia X: The Next Generation Cognitive Tutor," _EDM 2016_ — the web re-platforming of the Cognitive Tutor software into MATHia; and Carnegie Learning's 2023 announcement of LiveHint AI (cf. Case 88).],
   ),
   quote: [Cognitive Tutors demonstrate the LE process working: theory → engineering → evidence → scale.],
   quote-source: "Editors' synthesis of Anderson et al. (1995) and Koedinger & Corbett (2006)",
@@ -2701,6 +2730,12 @@
       design constraint and governance is what isolates the lesson: the same
       predictive capability that harmed in those cases helped here, so the
       framing and the human loop, not the model, are where intent lives.#cn()
+      GSU has since moved to export the model: in 2021 it founded the
+      National Institute for Student Success, which by 2024 had advised more
+      than 130 campuses serving some 1.5 million students, while GSU's own
+      six-year graduation rate held steady near 53 percent — the test now
+      shifting from whether the bundle worked at one institution to whether
+      the advising-and-governance recipe transfers to others.#cn()
     ],
   ),
   beats: (
@@ -2716,6 +2751,7 @@
     [_New York Times_, "How Colleges Know You're Not Finishing" (2018) — the 800-factor advising model.],
     [EDUCAUSE Review on GSU predictive advising — the human-loop architecture.],
     [Complete College America, Game Changers documentation — dissemination of the model.],
+    [Georgia State University National Institute for Student Success (founded 2021) — reported engagement with 130-plus campuses and ~1.5 million students by 2024.],
   ),
   quote: [Predictions trigger support, not gatekeeping.],
   quote-source: "Editors' synthesis of the GSU advising model, drawn from Renick & Strom (2020) and New York Times coverage (2018)",
@@ -3396,6 +3432,28 @@
       right-horizon record that lets a field design the next
       at-scale evaluation honestly.
     ],
+    [
+      A decade on, the record carries a second, sharper lesson the
+      original evaluation-horizon reading did not anticipate: that
+      single year-two effect has never been independently reproduced
+      by a comparably rigorous trial, yet it now bears almost the
+      entire evidentiary weight the product carries. Every
+      "Strong"/"Positive" badge — the What Works Clearinghouse rating,
+      the ESSA Tier 1 classification — traces back to this trial and a
+      few pre-2015 studies; Evidence for ESSA's own pooled estimate
+      across the qualifying studies is a mere +0.04 SD, far below the
+      ~0.20 SD headline, which is itself a genuine outlier against the
+      roughly 0.10 SD median of large education RCTs. And the NBER
+      review's re-reading (Escueta et al., 2017) found the year-two
+      gain was associated not with higher fidelity but with teachers
+      _reducing_ their use of the vendor-specified activities — the
+      effect appearing where implementers departed from the model. The
+      case's warning thus deepens: the danger is not only the one-year
+      evaluation that would have published the wrong null, but the
+      single positive replication-year result scaled into a durable
+      "evidence-based" claim without the fresh independent
+      confirmation that never came.
+    ],
   ),
   beats: (
     "147 middle and high schools, seven states, cluster-randomized to CTAI or current curriculum for two years",
@@ -3421,6 +3479,8 @@
     [RAND Working Paper WR-1050 — addendum to the Pane et al. evaluation.],
     [Koedinger, K. R., Anderson, J. R., Hadley, W. H., & Mark, M. A. (1997), "Intelligent tutoring goes to school in the big city," _IJAIED_ — the v1 Case 67 system description Cognitive Tutor builds from.],
     [What Works Clearinghouse — Cognitive Tutor evidence-base summary applying federal-grade evidence standards to the Pane et al. trial.],
+    [Escueta, Quan, Nickow, & Oreopoulos (2017/2020), "Education Technology: An Evidence-Based Review," NBER WP 23744 / _Journal of Economic Literature_ — the re-reading that the Pane year-two gain tracked reduced fidelity, and the general heterogeneity of ed-tech effects.],
+    [Kraft, M. A. (2020), "Interpreting Effect Sizes of Education Interventions," _Educational Researcher_ 49(4):241–253 — the ~0.10 SD median across 747 RCTs against which 0.20 SD is an outlier; and Evidence for ESSA program record (pooled ~+0.04 SD).],
   ),
   quote: [A one-year evaluation would have published a null. The two-year evaluation surfaced a real effect. Both findings were in the same trial.],
   quote-source: "Editors' synthesis of Pane et al. (2014).",
@@ -4949,7 +5009,15 @@
       with a Workforce Skills Qualifications (WSQ)
       certification. The labor-market figures are the
       strongest available external corroboration of the
-      self-report data.#cn()
+      self-report data.#cn() Since 2024 the program has broadened
+      well beyond credits and surveys: the SkillsFuture Level-Up
+      Programme gave Singaporeans aged 40 and over a S\$4,000 credit
+      top-up (May 2024) and, from 2025, a training allowance of up to
+      S\$3,000 a month for full-time reskilling, while the SkillsFuture
+      Jobseeker Support scheme (launched April 2025) added up to
+      S\$6,000 over six months for the involuntarily unemployed —
+      extending the model from upskilling into income-supported
+      labour-market transition.
     ],
     [
       The honest reading is the load-bearing teaching point.

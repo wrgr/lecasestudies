@@ -1886,11 +1886,14 @@
       Early case reports suggest that clinicians who would carefully check
       a colleague's recommendation accept LLM output less critically,
       precisely because it reads so authoritatively. JAMA editorials and
-      reviews through 2023–2024 have repeatedly flagged the absence of an
+      reviews through 2023–2025 have repeatedly flagged the absence of an
       established verification practice as the central risk of clinical LLM
       use — the concern is not that the model errs but that the practice for
       catching its errors at the moment of use has not yet been defined or
-      taught.#cn()
+      taught. Through 2025 the pattern held: evaluations across successive
+      frontier models continued to find hallucination the most frequent
+      error type, even as clinical adoption ran well ahead of any settled
+      regulatory framework.#cn()
     ],
     // -- Open Problems --
     [
@@ -2386,7 +2389,14 @@
       eliminates the race coefficient. The replacement equation was
       published in parallel (Inker et al., _NEJM_ 2021). Major
       laboratories and health systems moved to adopt the new equation
-      within months.#cn()
+      within months.#cn() In December 2022 the governance response
+      reached past the equation itself: the OPTN mandated that
+      kidney-transplant programs review their waiting lists and
+      backdate the accrued waiting time of Black candidates who had been
+      disadvantaged by the former race-inclusive eGFR (effective January
+      2023, with the review required by January 2024) — a concrete,
+      population-scale remediation of exactly the transplant-wait-listing
+      disparity this case documents.
     ],
     [
       The hedge in both the Task Force report and the follow-up
@@ -2437,6 +2447,7 @@
   references: (
     [Delgado et al. (2021), "A Unifying Approach for GFR Estimation: Recommendations of the NKF-ASN Task Force on Reassessing the Inclusion of Race in Diagnosing Kidney Disease," _American Journal of Kidney Diseases_ 79(2):268–288 (published online 2021; in print vol. 79, 2022), doi:10.1053/j.ajkd.2021.08.003. Cited by online-first year, the year of the Task Force recommendation.],
     [Inker et al. (2021), "New Creatinine- and Cystatin C-Based Equations to Estimate GFR without Race," _New England Journal of Medicine_ 385(19):1737–1749, doi:10.1056/NEJMoa2102953.],
+    [OPTN/UNOS (2022–2023), "Kidney waiting-time modifications for candidates affected by race-inclusive eGFR calculations" — the mandated backdating of Black candidates' accrued waiting time (effective January 2023).],
     [Eneanya, Yang, & Reese (2019), "Reconsidering the Consequences of Using Race to Estimate Kidney Function," _JAMA_ 322(2):113–114 — the equity argument that motivated the revision.],
     [Vyas, Eisenstein, & Jones (2020), "Hidden in Plain Sight — Reconsidering the Use of Race Correction in Clinical Algorithms," _NEJM_ 383(9):874–882 — broader race-in-algorithms survey.],
   ),
@@ -4158,14 +4169,15 @@
     ],
     // -- Open Problems --
     [
-      The FDA's 2025 draft guidance on AI/ML-Based Software as a
-      Medical Device begins to address this gap. The proposed
-      Predetermined Change Control Plan would let manufacturers
-      pre-specify the model updates and validation procedures that
-      can be applied without a new clearance; the companion Good
-      Machine Learning Practice principles emphasize representative
+      The FDA's evolving AI/ML-device guidance begins to address this
+      gap. The Predetermined Change Control Plan — finalized as its own
+      guidance in December 2024 — lets manufacturers pre-specify the
+      model updates and validation procedures that can be applied
+      without a new clearance; the broader device-lifecycle draft
+      guidance that followed in January 2025, together with the Good
+      Machine Learning Practice principles, emphasizes representative
       training data, transparent performance metrics, and lifecycle
-      monitoring. The De Novo pathway, used for a small number of
+      monitoring, and remained in draft through mid-2026. The De Novo pathway, used for a small number of
       novel tools, imposes more — but is rarely the chosen route.
       What the guidance does not yet require, as of its draft form,
       is mandatory demographic stratification of validation metrics
@@ -4325,7 +4337,16 @@
       conditions hold, AI amplifies capability; the technical model alone
       does not — and the same architecture dropped into a domain missing any
       one of those four would not have produced a comparable, trusted,
-      widely adopted result.#cn()
+      widely adopted result.#cn() The work was extended by AlphaFold 3
+      (May 2024), which predicts proteins in complex with DNA, RNA, and
+      small molecules, and in October 2024 Demis Hassabis and John Jumper
+      shared the Nobel Prize in Chemistry for AlphaFold. AlphaFold 3 also
+      complicated the open-release story this case credits: it was
+      initially released without code or model weights, drawing a
+      scientific backlash, before DeepMind released the code for
+      non-commercial use in November 2024 — a reminder that open release
+      is a repeated governance decision that can be reversed under
+      commercial pressure, not a settled property of the work.#cn()
     ],
     // -- Open Problems --
     [
@@ -4365,6 +4386,7 @@
     [Moult, J. (CASP organizer) commentary on AlphaFold2 (2020) — the benchmark and the achievement (paraphrased).],
     [CASP benchmark documentation — the decades-long agreed evaluation.],
     [Hassabis (DeepMind) public commentary — the open-release governance decision.],
+    [Abramson et al. (2024), "Accurate structure prediction of biomolecular interactions with AlphaFold 3," _Nature_; and the 2024 Nobel Prize in Chemistry (Hassabis & Jumper) — the extension to complexes and the later code release.],
   ),
   quote: [This will be one of the most important achievements in AI in the past decade.],
   quote-source: "Paraphrasing John Moult (organizer of the CASP benchmark) on AlphaFold2, 2020",
@@ -4519,8 +4541,16 @@
       published did not establish reproducibility. The
       subsequent five years of deployment evidence on AI-assisted
       breast cancer screening have refined the screening-
-      comparison framing — prospective evaluations have shown
-      benefits in some settings and not in others, and the
+      comparison framing — most decisively the randomized MASAI
+      trial in Sweden (over 100,000 women; interim results in
+      _Lancet Oncology_ 2023, final results 2025), which found
+      AI-supported reading non-inferior to standard double reading
+      while cutting radiologist workload by roughly 44 percent and
+      detecting more cancers. That is the deployment-grade evidence
+      the Haibe-Kains critique demanded — vindicating the demand
+      itself rather than the original retrospective paper — even as
+      prospective evaluations have shown benefits in some settings
+      and not in others, and the
       operational variables the retrospective comparison did not
       measure have proved load-bearing in deployment. The case
       teaches the verification-as-deployment-event pattern: a
