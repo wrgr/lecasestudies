@@ -481,6 +481,96 @@
 
 #pagebreak()
 
+#h2("Decomposing \"decision-grade evidence\"")
+
+#text(font: sans, size: 10pt, fill: text-dark)[
+  The phrase most likely to be misread in this framework sits at the
+  centre of competency 4: *decision-grade evidence*. Read quickly, it
+  sounds like a bar the evidence must clear before a decision is
+  permitted — and that reading gets the framework backwards. The phrase
+  is worth taking apart one term at a time: *evidence*, then what makes
+  it *decision-grade*, then the judgment — *reasoning under
+  uncertainty* — the phrase exists to name.
+]
+
+#v(8pt)
+
+#text(font: sans, size: 10pt, fill: text-dark)[
+  *Evidence is knowledge gained from an environment or a problem.* What
+  counts as evidence, and how much certainty it carries, depends on
+  where it comes from. A K-12 classroom, a formal study run under
+  controlled conditions, and the lived experience of an operator each
+  yield different artifacts — assessment data, a randomized effect
+  estimate, a practitioner's first-hand account — and each contributes
+  a different kind and degree of certainty, supporting a different
+  range of decisions. LENS is deliberately specific about *what* the
+  evidence is about: it is evidence of *functional outputs* — the
+  capability a system actually delivers with its humans and its
+  technology working together — not evidence about the person in
+  isolation or the tool on the bench. Measuring the functional output
+  of the joint human-system, rather than either half alone, is one of
+  the load-bearing commitments of the whole framework (competency 4,
+  and 3.4, collaboration as the unit of analysis).
+]
+
+#v(8pt)
+
+#text(font: sans, size: 10pt, fill: text-dark)[
+  *A decision is an action* — including the deliberate choice not to
+  act. Evidence is *decision-grade* when it is sufficient to justify
+  that action. This is the term most often misread: decision-grade does
+  *not* mean the uncertainty is gone. Many of the consequential
+  decisions in this book were made — and had to be made — under
+  substantial, irreducible uncertainty. What decision-grade evidence
+  buys is not certainty but *guidance*: enough to frame the available
+  choices, commit to one, and know in advance when the decision will
+  have to be revisited, iterated, and checked back against what
+  actually happens. "Grade" names a gradient, not a gate. Evidence
+  grounded in a widely validated theory carries far more weight than a
+  single, one-time observation self-reported by a consultant about an
+  anonymous customer — and the practitioner's first task is to locate
+  their own evidence honestly on that gradient.
+]
+
+#v(8pt)
+
+#block(
+  width: 100%,
+  fill: rgb("#FBF7EE"),
+  inset: 10pt,
+  stroke: (left: 2pt + gold),
+  {
+    set par(leading: 0.55em)
+    text(font: sans, size: 9pt, fill: text-dark)[
+      *The adopted definition.* Decision-grade evidence is the evidence
+      we need to justify a decision. But we seldom — arguably never —
+      have complete information or full agreement. Judgment is therefore
+      a critical capability. "Decision-grade" is taught not as a fixed
+      threshold but as a *sufficiency judgment under irreducible
+      uncertainty.*
+    ]
+  }
+)
+
+#v(8pt)
+
+#text(font: sans, size: 10pt, fill: text-dark)[
+  *Reasoning under uncertainty is what the practitioner does with
+  decision-grade evidence.* Having located the evidence on the
+  certainty gradient, the practitioner assesses the veracity of the
+  information — the knowledge, the so-called facts — together with the
+  sociotechnical context of the problem, and then takes an action, or
+  declines to, leveraging all of it to take the next step in the
+  problem space. This is why the framework treats "decision-grade" as a
+  sufficiency judgment rather than a threshold, and why judgment itself
+  — assess how far below complete information you stand, decide anyway,
+  document the basis, and name what would change the decision — is a
+  named capability: 4.3 (construct decision-grade evidence artifacts)
+  and 4.4 (judgment under inadequate evidence).
+]
+
+#pagebreak()
+
 // ============================================================
 // PART II — LEOs + COURSE MAPPING
 // ============================================================
