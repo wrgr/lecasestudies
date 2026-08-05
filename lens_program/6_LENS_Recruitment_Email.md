@@ -46,7 +46,7 @@ This fall, the Johns Hopkins School of Education launches LENS, Learning Enginee
 
 The premise is simple to state. Every complex system depends on what people can do inside it, that dependency is measurable and designable, and it is too important to leave to chance. LENS prepares practitioners to engineer it: to define capability requirements, build evidence-based interventions, measure their operational impact, and sustain them across the system lifecycle, in high-consequence domains: those where the cost of a capability gap is paid by people who did not choose the risk, and does not undo.
 
-Graduates demonstrate five competencies: systems analysis, iterative development, test and evaluation, navigating sociotechnical constraints, and machine teaming and adaptation. The program is ten courses and thirty credits, with a capstone run on a real operational problem. Full details, including the competency framework and course map, are attached.
+Graduates demonstrate five competencies: systems analysis, iterative development, test and evaluation, navigating sociotechnical constraints, and machine teaming and adaptation. The program is a 10-course, 30-credit degree, with a capstone run on a real operational problem. Full details, including the competency framework and course map, are attached.
 
 The concentration welcomes two audiences equally: education and training professionals moving toward systems practice, and engineers and technical professionals moving toward learning design. Founding-cohort enrollment is open now for August 2026.
 
