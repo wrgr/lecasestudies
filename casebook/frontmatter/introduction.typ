@@ -645,6 +645,26 @@
   are read in.
 ]
 
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  One phrase inside those capabilities is worth unpacking, because it is
+  the one most often misread: *decision-grade evidence*. *Evidence*, in
+  LENS, is knowledge about a system's *functional outputs* — the
+  capability its humans and its technology deliver together, not either
+  half alone — and it arrives at very different grades of certainty
+  depending on where it comes from, from a widely validated theory to a
+  single observation self-reported once. *Decision-grade* does not mean
+  the uncertainty is gone; it means the evidence is sufficient to
+  justify an action — enough to frame the choice, commit to it, and know
+  in advance when the decision must be revisited. What the practitioner
+  does with it is *reasoning under uncertainty*: weigh the veracity of
+  the information and the sociotechnical context of the problem, then
+  act — or deliberately decline to. It is a sufficiency judgment under
+  irreducible uncertainty, not a threshold to be cleared. The LENS
+  Companion decomposes the term in full.
+]
+
 // -------------------------------------------------------------------
 #v(20pt)
 #text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("VI  ·  how to read this book"))
