@@ -103,7 +103,7 @@
       A Casebook. \
       First edition, 2026. \
       Edited by William Gray-Roncal, PhD and James Diamond, PhD. \
-      Compiled for the LENS specialization within the Learning Design
+      Compiled for the LENS concentration within the Learning Design
       and Technology program at the Johns Hopkins University School
       of Education. \
       Set in Instrument Serif and DM Sans. \

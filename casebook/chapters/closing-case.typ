@@ -34,7 +34,7 @@
     The cases that precede this one are closed: the
     investigations are complete, the failures diagnosed, the interventions
     evaluated. This one is open. It belongs to the practitioners now in
-    training — the students of the LDT program and the LENS specialization,
+    training — the students of the LDT program and the LENS concentration,
     the graduates who will take positions in healthcare, defense, education
     at scale, and the human-AI frontier, and the institutions they will
     build. The strongest evidence for the discipline is the cumulative
@@ -51,7 +51,7 @@
       Every preceding case in this book is closed: the investigation is
       complete, the failure diagnosed or the intervention evaluated. This
       one is open. It belongs to the practitioners now in training — the
-      students of the LDT program and the LENS specialization, and the
+      students of the LDT program and the LENS concentration, and the
       institutions they will build across healthcare, defense, education,
       and the human-AI frontier. What distinguishes this case is not a
       verdict already reached but a verdict still to be earned, written by

@@ -85,7 +85,7 @@
     #eyebrow("LENS course codes", color: gold)
     #v(4pt)
     #text(font: sans, size: 8.5pt, fill: text-dark)[
-      Each case maps to one or more courses in the LENS specialization:
+      Each case maps to one or more courses in the LENS concentration:
     ]
     #v(8pt)
     #text(font: sans, size: 7pt, tracking: 1.4pt, fill: teal, upper("Shared LDT foundations · additional context"))

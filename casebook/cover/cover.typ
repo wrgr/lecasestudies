@@ -153,7 +153,7 @@
       #text(font: sans, size: 8pt, fill: rgb("#B7C9E0"))[
         A casebook for the Learning Design and Technology program and
         the Learning Engineering for Next-Generation Systems
-        specialization at the Johns Hopkins University School of
+        concentration at the Johns Hopkins University School of
         Education. A growing record of real incidents — from the bridge of a
         U.S. Navy destroyer to a Michigan ICU to a national A-Level
         results algorithm — examined through the lens of capability as
