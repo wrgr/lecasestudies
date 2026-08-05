@@ -155,7 +155,7 @@
 #text(font: sans, size: 9.5pt, fill: text-dark)[
   The premise of the Johns Hopkins School of Education's Learning Design
   & Technology program — and of the Learning Engineering for
-  Next-Generation Systems specialization that has grown out of it — is
+  Next-Generation Systems concentration that has grown out of it — is
   that the capability parameter is engineerable. Not by accident. Not by
   declaration. By the same kind of evidence-grounded, methods-grounded,
   cross-domain discipline that built modern reliability engineering,
@@ -349,7 +349,7 @@
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
   LENS — Learning Engineering for Next-Generation Systems — is a
-  specialization within the Johns Hopkins School of Education's
+  concentration within the Johns Hopkins School of Education's
   Learning Design & Technology program that operationalizes this
   premise for high-consequence operational domains. Its core
   competencies — capability analysis and requirements, evidence and

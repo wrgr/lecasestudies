@@ -23,7 +23,7 @@
 #text(font: sans, size: 10pt, fill: text-dark)[
   Each case names the LEN courses it serves as a worked example for.
   This index inverts that mapping: for every course in the
-  specialization, the cases that inform it, in case-number order.
+  concentration, the cases that inform it, in case-number order.
   A case appears under every course it supports, so many appear more
   than once.
 ]

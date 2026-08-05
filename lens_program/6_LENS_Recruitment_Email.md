@@ -14,11 +14,11 @@ Dear [Name],
 
 Systems don't fail because the technology breaks. They fail because someone couldn't do what the system required, and almost no one engineers for that.
 
-We are launching LENS, Learning Engineering for Next-Generation Systems, a new specialization within the Johns Hopkins School of Education's Master of Education in Learning Design and Technology. It starts in August 2026, online and part-time, built for working professionals.
+We are launching LENS, Learning Engineering for Next-Generation Systems, a new concentration within the Johns Hopkins School of Education's Master of Education in Learning Design and Technology. It starts in August 2026, online and part-time, built for working professionals.
 
 LENS treats human capability as a systems engineering problem. Across healthcare, aviation, defense, energy, and public systems, the question is the same: what must people be able to do for the system to deliver its impact, and how do you design, measure, and sustain that at speed and scale? Our graduates learn to answer it with decision-grade evidence, not opinions about training.
 
-The specialization is built around five competencies: seeing the whole system, building and refining interventions iteratively, showing what works through measurement, making solutions survive real-world constraints, and teaming effectively with AI. You can find the full competency framework and curriculum in the materials attached.
+The concentration is built around five competencies: seeing the whole system, building and refining interventions iteratively, showing what works through measurement, making solutions survive real-world constraints, and teaming effectively with AI. You can find the full competency framework and curriculum in the materials attached.
 
 Who it is for: you do not need to arrive knowing all of this. If you come from teaching, training, engineering, healthcare, or operations and you want to learn to build capability as an engineered, evidence-grounded discipline, LENS is designed for you. No one carries every tool; this is team work, and what you already bring is the place you start.
 
@@ -36,19 +36,19 @@ Johns Hopkins University School of Education
 
 Variant B · Credential-led (network, referrers, list outreach)
 
-Subject: New at Johns Hopkins: a Learning Engineering specialization (Fall 2026)
+Subject: New at Johns Hopkins: a Learning Engineering concentration (Fall 2026)
 
 Dear [Name],
 
-I am writing to share a new graduate specialization that may interest you or people in your network.
+I am writing to share a new graduate concentration that may interest you or people in your network.
 
-This fall, the Johns Hopkins School of Education launches LENS, Learning Engineering for Next-Generation Systems, a specialization within the online Master of Education in Learning Design and Technology. It is part-time and built for working professionals, and it is the first program to bring learning engineering, human systems integration, and high-consequence operational domains together as one discipline.
+This fall, the Johns Hopkins School of Education launches LENS, Learning Engineering for Next-Generation Systems, a concentration within the online Master of Education in Learning Design and Technology. It is part-time and built for working professionals, and it is the first program to bring learning engineering, human systems integration, and high-consequence operational domains together as one discipline.
 
 The premise is simple to state. Every complex system depends on what people can do inside it, that dependency is measurable and designable, and it is too important to leave to chance. LENS prepares practitioners to engineer it: to define capability requirements, build evidence-based interventions, measure their operational impact, and sustain them across the system lifecycle, in high-consequence domains: those where the cost of a capability gap is paid by people who did not choose the risk, and does not undo.
 
 Graduates demonstrate five competencies: systems analysis, iterative development, test and evaluation, navigating sociotechnical constraints, and machine teaming and adaptation. The program is ten courses and thirty credits, with a capstone run on a real operational problem. Full details, including the competency framework and course map, are attached.
 
-The specialization welcomes two audiences equally: education and training professionals moving toward systems practice, and engineers and technical professionals moving toward learning design. Founding-cohort enrollment is open now for August 2026.
+The concentration welcomes two audiences equally: education and training professionals moving toward systems practice, and engineers and technical professionals moving toward learning design. Founding-cohort enrollment is open now for August 2026.
 
 I would be glad to talk through fit, curriculum, or the application process. Please feel free to forward this to anyone it might serve.
 

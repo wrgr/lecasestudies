@@ -143,7 +143,7 @@
 
 #text(font: sans, size: 10pt, fill: text-dark)[
   The LENS Companion is the concept-facing reference for the LENS
-  specialisation: what LENS is, what it teaches, and how the casebook's
+  concentration: what LENS is, what it teaches, and how the casebook's
   cases line up with the curriculum. It travels with advisory boards,
   prospective students, recruiting conversations, and program reviews —
   anyone for whom the question is *what is this concentration?* rather
@@ -294,7 +294,7 @@
 #text(font: sans, size: 10pt, fill: text-dark)[
   The premise of the Johns Hopkins School of Education's Learning Design
   & Technology program — and of the Learning Engineering for
-  Next-Generation Systems specialisation that has grown out of it — is
+  Next-Generation Systems concentration that has grown out of it — is
   that the capability parameter is engineerable. Not by accident. Not by
   declaration. By the same kind of evidence-grounded, methods-grounded,
   cross-domain discipline that built modern reliability engineering,

@@ -82,7 +82,7 @@
     research sponsored by DARPA, IARPA, NIH, and DoD. He developed the College
     Prep and CIRCUIT workforce-development models, through which he has
     mentored nearly 500 students, and leads the development of the LENS
-    (Learning Engineering for Next-Generation Systems) specialization within
+    (Learning Engineering for Next-Generation Systems) concentration within
     the Johns Hopkins Master of Education in Learning Design and Technology,
     the program directed by James Diamond at the School of Education. He holds
     a Ph.D. in Computer Science from Johns Hopkins, an M.S. in Electrical
@@ -98,7 +98,7 @@
     nearly 500 students, and his current work develops quantitative
     measures of human cognitive performance in operational contexts. He
     leads the development of the LENS (Learning Engineering for
-    Next-Generation Systems) specialization within the Johns Hopkins Master
+    Next-Generation Systems) concentration within the Johns Hopkins Master
     of Education in Learning Design and Technology, the program directed by
     James Diamond at the School of Education. Gray-Roncal holds a Ph.D. in
     Computer Science from Johns Hopkins, an M.S. in Electrical Engineering
@@ -124,7 +124,7 @@
     Research Associate at the Education Development Center's Center for
     Children and Technology, where he led projects including #emph[Zoom In] and
     the #emph[Who Built America?] Teacher Mastery Badge System. As Program
-    Director, he oversees the LDT program within which the LENS specialization
+    Director, he oversees the LDT program within which the LENS concentration
     is offered, and holds a Ph.D. from New York University, an Ed.M. from
     Boston University, and a B.A. in History from Boston University.
   ] else [
@@ -147,7 +147,7 @@
     contributed to #emph[Mission US] and #emph[Possible Worlds], and taught
     at New York University as an adjunct. As Program Director, he oversees the
     LDT program within which the LENS (Learning Engineering for
-    Next-Generation Systems) specialization is offered. Diamond holds a Ph.D.
+    Next-Generation Systems) concentration is offered. Diamond holds a Ph.D.
     in Educational Communication and Technology from New York University, an
     Ed.M. in Educational Technology from Boston University, and a B.A. in
     History from Boston University.
@@ -159,5 +159,5 @@
 #text(font: sans, size: if condensed { 6.5pt } else { 7.5pt }, style: "italic", fill: text-muted)[
   These biographies reference careers documented in publications, program
   reports, faculty pages, and the curricular materials of the LDT program
-  and the LENS specialization.
+  and the LENS concentration.
 ]

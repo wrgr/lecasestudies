@@ -10,7 +10,7 @@ This document maps the five LENS competency domains against the proposed Learnin
 
 # The Structural Claim
 
-LENS is a domain specialization and proficiency claim within the LECF, not a competing framework. Using the INCOSE analogy: the LECF defines what the field's competencies are; LENS trains practitioners to practitioner or lead-practitioner level in a subset of them, within high-consequence operational contexts, and adds domain-specific competencies the way INCOSE accommodates domain extensions. This single sentence carries both audiences. ICICLE sees LENS as an implementation site for a shared framework; SOE sees a program grounded in an emerging IEEE standard.
+LENS is a domain concentration and proficiency claim within the LECF, not a competing framework. Using the INCOSE analogy: the LECF defines what the field's competencies are; LENS trains practitioners to practitioner or lead-practitioner level in a subset of them, within high-consequence operational contexts, and adds domain-specific competencies the way INCOSE accommodates domain extensions. This single sentence carries both audiences. ICICLE sees LENS as an implementation site for a shared framework; SOE sees a program grounded in an emerging IEEE standard.
 
 # Crosswalk
 

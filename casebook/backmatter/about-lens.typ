@@ -27,7 +27,7 @@
 
 #text(font: sans, size: _lead, fill: text-dark)[
   LENS — *Learning Engineering for Next-Generation Systems* — is a
-  specialization within the Johns Hopkins University School of
+  concentration within the Johns Hopkins University School of
   Education's *Learning Design & Technology* program. It operationalizes
   the casebook's central claim — that capability is a designable,
   measurable, engineerable property of a complex system — for
@@ -83,7 +83,7 @@
   Technology program inherits that environment: for two decades its
   M.Ed. and EdD tracks have graduated designers and evaluators of
   learning systems whose pedagogical core is design-based research. LENS
-  formalizes that orientation as a specialization rather than departing
+  formalizes that orientation as a concentration rather than departing
   from it.
 ]
 
