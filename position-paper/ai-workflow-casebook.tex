@@ -1,0 +1,194 @@
+% The Method Is the Message — a LENS position paper (companion to Capability, Not Content)
+% Subject: how the casebook was built through human-AI teaming; pros, cons, and the
+% governance layer that made the speed safe. Reflexive: the volume was built the way
+% it argues capability should be built.
+% Build: latexmk -pdf ai-workflow-casebook.tex
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hmargin=1.15in,vmargin=1.15in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{mdframed}
+\usepackage{ragged2e}
+\usepackage[hidelinks]{hyperref}
+
+% --- palette (shared with the companion paper) -------------------------------
+\definecolor{lensink}{HTML}{16233A}
+\definecolor{lensaccent}{HTML}{9A6A1E}
+\definecolor{lensrule}{HTML}{C9CED6}
+\definecolor{lenssoft}{HTML}{F3F1EA}
+\definecolor{lensquote}{HTML}{5B6472}
+\definecolor{lensgood}{HTML}{2F5D3A}   % measured green for "what worked"
+\definecolor{lenswarn}{HTML}{7A3B23}   % measured rust for "the risk"
+
+\hypersetup{
+  pdftitle={The Method Is the Message: Human-AI Teaming in the Making of a Casebook},
+  pdfsubject={A LENS Position Paper},
+  linkcolor=lensaccent, urlcolor=lensaccent, citecolor=lensaccent}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\linespread{1.05}
+
+\titleformat{\section}{\color{lensink}\Large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\color{lensink}\large\bfseries}{}{0em}{}
+\titlespacing*{\section}{0pt}{1.5em}{0.4em}
+\renewcommand{\thesection}{\textcolor{lensaccent}{\S\arabic{section}}}
+
+\newmdenv[
+  linecolor=lensaccent, linewidth=2.2pt, topline=false, rightline=false,
+  bottomline=false, leftmargin=0pt, innerleftmargin=14pt, innertopmargin=6pt,
+  innerbottommargin=6pt, skipabove=10pt, skipbelow=10pt
+]{thesisbox}
+
+\newmdenv[
+  backgroundcolor=lenssoft, linecolor=lensrule, linewidth=0.7pt,
+  roundcorner=3pt, innermargin=14pt, innertopmargin=12pt,
+  innerbottommargin=12pt, skipabove=12pt, skipbelow=12pt
+]{softbox}
+
+\newcommand{\pullquote}[1]{%
+  \begin{center}\begin{minipage}{0.86\linewidth}
+  \color{lensquote}\itshape\large\RaggedRight #1
+  \end{minipage}\end{center}}
+
+\newcommand{\lead}[1]{{\color{lensaccent}\bfseries #1}}
+
+% a labelled pipeline stage
+\newcommand{\stage}[1]{\fcolorbox{lensrule}{white}{\rule[-0.55em]{0pt}{1.6em}\,\textcolor{lensink}{\small\bfseries #1}\,}}
+\newcommand{\arw}{\,\textcolor{lensaccent}{\small$\rightarrow$}\,}
+
+\begin{document}
+
+% =============================================================================
+\begin{flushleft}
+{\footnotesize\color{lensaccent}\bfseries LENS \textbullet\ LEARNING ENGINEERING FOR NEXT-GENERATION SYSTEMS}\\[0.9em]
+{\color{lensink}\fontsize{27}{31}\selectfont\bfseries The Method Is the Message}\\[0.35em]
+{\color{lensink}\large How this casebook was built through human-AI teaming---and what the pros and cons taught us about doing it well}\\[1.1em]
+{\footnotesize\color{lensquote}A position paper of the Capability Matters program \textbullet\ 2026 \textbullet\ Companion to \emph{Capability, Not Content}}
+\end{flushleft}
+
+\vspace{0.3em}
+{\color{lensrule}\hrule height 1pt}
+\vspace{1.2em}
+
+\begin{thesisbox}
+\lead{The position.} \emph{Capability Matters} argues that capability is engineered by pairing people with systems---including AI---under a governance layer that preserves human judgment. This volume was built that way. Its 205 cases were assembled through a human-AI workflow in which AI was, in the curriculum's own words, ``both creative partner and epistemic risk.'' The partnership was fast and wide; the risk was real and specific; and the difference between the two came down to governance, not to the tool. Reporting that candidly---pros, cons, and all---is not a disclaimer. It is the program's own evidence-discipline applied to its own making. The workflow is itself a LENS case.
+\end{thesisbox}
+
+% =============================================================================
+\section{Why report the method at all}
+% =============================================================================
+
+Most books do not explain how they were made, and most that used AI to make them would rather not say so. We take the opposite view, for a reason internal to the argument. A casebook whose central claim is that \emph{human-AI teaming has to be governed to be trusted} cannot ask the reader to take its own trustworthiness on faith. The honest move---the one the program teaches at competency four, \emph{show what works}---is to state what the machine did, where it failed, what caught the failures, and what we still would not claim.
+
+So this paper does three things. It describes the workflow. It sets the genuine advantages of AI teaming beside its genuine hazards, without smoothing either. And it shows the governance layer that let us take the speed while managing the risk---the same layer the casebook argues every high-consequence deployment needs.
+
+% =============================================================================
+\section{The workflow, in brief}
+% =============================================================================
+
+The volume grew through an iterative loop---the ``Practice Flywheel'' the casebook itself documents---run as a human-AI partnership:
+
+\begin{center}
+\stage{Discover}\arw\stage{Draft}\arw\stage{Anchor}\arw\stage{Instrument}\arw\stage{Verify}\arw\stage{Iterate}
+\end{center}
+
+\begin{description}[leftmargin=0em,itemsep=3pt,topsep=3pt,font=\color{lensink}\bfseries]
+  \item[Discover.] An eight-pass, verified-source case-discovery sweep surfaced roughly 98 candidate cases against a target of \textasciitilde108, each carried forward only with real sources attached. Parallel search agents worked different angles---domain, evidence tier, intervention-vs-failure balance---so that no single search shaped the corpus.
+  \item[Draft.] Seventy-seven new cases were drafted at the established cadence (a five-beat sourced narrative, a learning-engineering lens page, references) through a parallel-subagent strategy---work that would have taken a lone author months, compressed to a scale a small editorial team could actually review.
+  \item[Anchor.] Every case was tagged against three parallel frameworks---the induced casebook competencies, the canonical five LENS competencies, and the program's educational objectives---so the corpus is queryable as a curriculum asset, not just a set of stories.
+  \item[Instrument.] Mechanical checks enforced format discipline the way a test suite enforces code: citation parity (every inline marker must have a matching reference), a page-length envelope, and reference-placement rules, run across all 205 cases.
+  \item[Verify.] A two-pass human rubric---a quality scan, then a content scan---sits on top. Six of its seven checks are pre-filled by mechanical detection; the seventh, \emph{are the conclusions reasonable}, is reserved for a human read and cannot be automated away. Before press, a references-validation pass checked \textasciitilde951 citations against publisher, agency, and DOI sources.
+  \item[Iterate.] Findings fed back into the corpus: cases moved, sources re-confirmed, framework counts rechecked against binding floors. The volume is explicitly a first iteration, not a finished object.
+\end{description}
+
+\pullquote{AI was the dual entity the curriculum names: a creative partner that accelerated drafting, cross-referencing, and layout---and an epistemic risk that had to be hand-checked against the record.}
+
+% =============================================================================
+\section{What the partnership did well}
+% =============================================================================
+
+The advantages were not marginal, and they are worth stating plainly, because a paper this candid about risk could otherwise undersell the gains.
+
+\begin{description}[leftmargin=1.1em,itemsep=4pt,topsep=3pt,font=\color{lensgood}\bfseries]
+  \item[Speed and scale, together.] The casebook argues that ``slow or small-scale capability development is functionally equivalent to no capability development.'' AI made the reference dataset big enough and fast enough to be useful: an eight-pass sweep and 77 drafted cases at cadence are simply not a solo human's timeline.
+  \item[Breadth that fights a known bias.] The v1 corpus over-sampled catastrophic, news-visible failures. Parallel discovery agents aimed deliberately at the under-sampled tiers---program-scale studies, interventions that worked, small wins that never made the news---directly attacking the availability bias a single searcher would have reproduced.
+  \item[Tireless mechanical rigor.] Citation parity, anchor completeness, and cross-reference resolution across 205 cases are exactly the checks a human skips when tired. Mechanized, they ran on every case, every build---pre-filling six of the seven verification columns and freeing the human read for the judgment that needs one.
+  \item[Structural consistency.] Three anchor systems on every case, a fixed narrative architecture, a grayscale-safe palette---holding a convention across 205 units is where machine assistance shines and human attention frays.
+\end{description}
+
+% =============================================================================
+\section{Where it fell short---and what caught it}
+% =============================================================================
+
+Every advantage above has a shadow, and pretending otherwise would falsify the record. The hazards were concrete, and none of them was solved by the tool. Each was solved by a governance move---a rule, a check, or a human decision---placed deliberately in the loop.
+
+\begin{softbox}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}p{0.46\linewidth}@{\hspace{1.1em}}p{0.46\linewidth}@{}}
+\textbf{\color{lenswarn}The risk AI introduced} & \textbf{\color{lensgood}The governance that caught it}\\[0.3em]
+\hline
+\rule{0pt}{1.4em}%
+\textbf{Fabricated or shaky citations.} A language model will produce a plausible reference that does not exist, or misattribute a real one. &
+The pre-press validation pass checked \textasciitilde951 references: \textasciitilde777 verified, \textasciitilde121 uncertain, 10 flagged as issues---a 1.05\% issue rate, with all ten resolved in source before print. Unconfirmable claims are marked ``Paraphrasing\ldots'' so attribution stays honest.\\[0.5em]
+\textbf{Confident wrong placement.} Cases were drafted into the wrong chapter or anchored to the wrong competency---plausibly, and therefore dangerously. &
+The human content read caught three misplacements (Three Mile Island, USS \emph{Vincennes}, Texas City) during editorial Q\&A; the seventh verification column exists precisely for judgments a mechanical check rates as ``fine.''\\[0.5em]
+\textbf{Smoothing the inconvenient.} The default tendency is to round a hedge up to a clean claim and to let an awkward conflict of interest disappear. &
+Binding rules forbid it: load-bearing hedges (``outcome remains unknown,'' ``RCTs pending'') must survive verbatim, and conflicts of interest render as visible disclosure blocks---even where every editor was personally detached.\\[0.5em]
+\textbf{Amplifying the corpus's bias.} Trained on what is public, the model gravitates to the same catastrophic cases the field already over-samples. &
+Binding per-tier floors force balance: each competency must clear a minimum count \emph{and} a minimum share of intervention cases in \emph{both} scale tiers, so the framework cannot be induced from disasters alone.\\[0.5em]
+\textbf{Cognitive offloading onto the editor.} The most insidious risk is the human trusting fluent output and quietly stopping thinking---the automation bias the casebook catalogs in cockpits and control rooms. &
+Authority is retained, not delegated: ``editor's call'' governs every unresolved question, the framework is a map and not a gate, and a documented \emph{negative result}---``not like this, not yet''---is a legitimate, defended outcome.\\
+\end{tabular}
+\end{softbox}
+
+The pattern is the point. In every row, the tool created the exposure and a \emph{designed human-system arrangement} closed it. That is not an accident of good luck; it is competency three---\emph{human-system collaboration}---and specifically \emph{delegation with revocation}: decide in advance what disconfirming evidence would pull work back from the machine, and build the check that surfaces it.
+
+% =============================================================================
+\section{The workflow is a LENS case}
+% =============================================================================
+
+Read against the five competencies, the making of this book exercises all of them---which is why we treat it as a worked example rather than a production note.
+
+\begin{softbox}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}p{0.30\linewidth}@{\hspace{1.0em}}p{0.62\linewidth}@{}}
+\textbf{\color{lensink}LENS competency} & \textbf{\color{lensink}How the workflow exercised it}\\[0.3em]
+\hline
+\rule{0pt}{1.35em}\textbf{1 \textbullet\ Systems Analysis} & Treat the pipeline---discover, draft, check, verify---as one system with feedback loops, and target the real weak point (verification), not the visible one (drafting).\\[0.35em]
+\textbf{2 \textbullet\ Iterative Development} & Build, instrument, evaluate, refine; ship a first iteration and say so, rather than claiming a finished object.\\[0.35em]
+\textbf{3 \textbullet\ Human-System Collaboration} & Pair with AI to raise capability while preserving agency and recoverability; delegate drafting, revoke on disconfirming evidence, keep the consequential read human.\\[0.35em]
+\textbf{4 \textbullet\ Test and Evaluation} & Produce decision-grade evidence about the corpus itself---parity checks, a validation pass with real counts, honesty marks on what could not be confirmed.\\[0.35em]
+\textbf{5 \textbullet\ Sociotechnical Constraints} & Fit the method to the real constraints---a small editorial team, print deadlines, grayscale production, conflict-of-interest exposure---so the result survives contact with them.\\
+\end{tabular}
+\end{softbox}
+
+% =============================================================================
+\section{What we do not claim}
+% =============================================================================
+
+Evidence-discipline cuts both ways, so the limits belong in the paper as much as the wins. This is a single project, not a controlled comparison of AI-assisted against human-only casebook-building; we cannot report an effect size, only a practice record. The corpus still carries residual bias despite the floors we set against it. The seventh verification column---the human judgment of whether each case's conclusions are reasonable---is a read that continues past this printing, and we report it as in progress rather than done. And the ``uncertain'' pile in the reference validation (\textasciitilde121 items) is exactly that: uncertain, neither cleared nor condemned. Naming these is not hedging. It is what ``decision-grade evidence under irreducible uncertainty'' obligates: state what is known, what is assumed, and what would change the picture.
+
+% =============================================================================
+\section{The takeaway}
+% =============================================================================
+
+\lead{To prospective students.} This is what disciplined human-AI teaming actually looks like from the inside---not a prompt and a finished book, but a loop in which the machine's speed is real and its errors are real, and the whole craft is in designing the checks and the human decisions that convert the first into value without letting the second through. That design skill is the concentration. You will practice it on work that matters, and you will learn to say ``not like this, not yet'' when the evidence tells you to.
+
+\lead{To supporters and funders.} The advantages here---breadth, speed, tireless rigor---are available to any organization that adopts these tools. So are the hazards, and most organizations meet the hazards first. What LENS offers is the governance layer that separates the two: the rules, the instrumentation, and the retained human authority that let a small team take AI's leverage without inheriting its failure modes. Funding that capacity is funding the difference between AI that helps and AI that quietly misleads---in the settings where the difference is measured in more than a book.
+
+\pullquote{The tool supplies the speed. The governance supplies the trust. Building the casebook taught us, first-hand, that you cannot buy the second with the first---you have to design it.}
+
+\vfill
+{\color{lensrule}\hrule height 0.7pt}
+\vspace{0.5em}
+{\footnotesize\color{lensquote}
+The workflow, verification rubric, and reference-validation record summarized here are documented in \emph{Capability Matters: A Casebook} (First Edition, 2026)---see its \textsc{Methodology} (``How this volume was made''), the per-case \textsc{verification log}, and the \textsc{audit} record of citations checked. This paper is a companion to \emph{Capability, Not Content}; together they state the argument and the practice behind it.}
+
+\end{document}
