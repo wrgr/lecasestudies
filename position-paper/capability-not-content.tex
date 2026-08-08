@@ -1,0 +1,199 @@
+% Capability, Not Content — a LENS position paper
+% Audience: prospective students and funders. Thesis: the unit of learning
+% engineering in high-consequence systems is human-system capability, not content.
+% Build: latexmk -pdf capability-not-content.tex   (or pdflatex twice for the TOC/refs)
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hmargin=1.15in,vmargin=1.15in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{mdframed}
+\usepackage{ragged2e}
+\usepackage[hidelinks]{hyperref}
+
+% --- palette -----------------------------------------------------------------
+\definecolor{lensink}{HTML}{16233A}   % deep slate
+\definecolor{lensaccent}{HTML}{9A6A1E} % muted gold (the casebook's disclosure gold)
+\definecolor{lensrule}{HTML}{C9CED6}
+\definecolor{lenssoft}{HTML}{F3F1EA}   % cream, matching the digital edition
+\definecolor{lensquote}{HTML}{5B6472}
+
+\hypersetup{
+  pdftitle={Capability, Not Content: A LENS Position Paper},
+  pdfsubject={Learning Engineering for Next-Generation Systems},
+  linkcolor=lensaccent, urlcolor=lensaccent, citecolor=lensaccent}
+
+% --- typography --------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\linespread{1.05}
+
+\titleformat{\section}{\color{lensink}\Large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\color{lensink}\large\bfseries}{}{0em}{}
+\titlespacing*{\section}{0pt}{1.5em}{0.4em}
+
+% section number as a gold tick rather than a plain digit
+\renewcommand{\thesection}{\textcolor{lensaccent}{\S\arabic{section}}}
+
+% --- reusable boxes ----------------------------------------------------------
+\newmdenv[
+  linecolor=lensaccent, linewidth=2.2pt, topline=false, rightline=false,
+  bottomline=false, leftmargin=0pt, innerleftmargin=14pt, innertopmargin=6pt,
+  innerbottommargin=6pt, skipabove=10pt, skipbelow=10pt
+]{thesisbox}
+
+\newmdenv[
+  backgroundcolor=lenssoft, linecolor=lensrule, linewidth=0.7pt,
+  roundcorner=3pt, innermargin=14pt, innertopmargin=12pt,
+  innerbottommargin=12pt, skipabove=12pt, skipbelow=12pt
+]{softbox}
+
+% a pull quote
+\newcommand{\pullquote}[1]{%
+  \begin{center}\begin{minipage}{0.86\linewidth}
+  \color{lensquote}\itshape\large\RaggedRight #1
+  \end{minipage}\end{center}}
+
+\newcommand{\lead}[1]{{\color{lensaccent}\bfseries #1}}
+
+\begin{document}
+
+% =============================================================================
+% TITLE
+% =============================================================================
+\begin{flushleft}
+{\footnotesize\color{lensaccent}\bfseries LENS \textbullet\ LEARNING ENGINEERING FOR NEXT-GENERATION SYSTEMS}\\[0.9em]
+{\color{lensink}\fontsize{27}{31}\selectfont\bfseries Capability, Not Content}\\[0.35em]
+{\color{lensink}\large Why the hard problem in high-consequence systems is building human capability---and why that is a discipline you can be trained in}\\[1.1em]
+{\footnotesize\color{lensquote}A position paper of the Capability Matters program \textbullet\ 2026 \textbullet\ For prospective students and supporters}
+\end{flushleft}
+
+\vspace{0.3em}
+{\color{lensrule}\hrule height 1pt}
+\vspace{1.2em}
+
+\begin{thesisbox}
+\lead{The position.} When a complex system fails, the reflex is to blame the people and prescribe more content---another course, another module, a refreshed briefing. Two hundred and five documented cases say the reflex is usually wrong. The unit of work in high-consequence settings is not \emph{content}; it is \emph{capability}: what a human and the system around them can reliably do together, under real conditions, at the edge. Content is one input to capability, and rarely the decisive one. Learning engineering is the discipline that treats capability as something to be specified, built, measured, and sustained on purpose. LENS trains people to do it.
+\end{thesisbox}
+
+% =============================================================================
+\section{The wrong default}
+% =============================================================================
+
+On 29 October 2018 and again on 10 March 2019, two Boeing 737 MAX jetliners went down minutes after takeoff, killing all 346 people aboard. A flight-control feature called MCAS, driven by a single angle-of-attack sensor, pushed the nose down against the pilots' efforts. Most pilots had never been told the system existed. The public conversation quickly turned to training: did the crews need more of it?
+
+That question mistakes the problem. The crews were not short a lesson. They had been placed in a cockpit engineered so that the capability they needed---to understand what the aircraft was doing and recover from it---had been designed out of reach. No amount of content delivered to the pilots would have restored it. The gap was in the system, not in the people, and it could only be closed by changing the system.
+
+This is the recurring shape of failure. In 2009, Air France 447 fell from cruise altitude into the Atlantic after its airspeed sensors iced over and the autopilot handed control back to a crew trained for the routine but not for the edge; 228 people died. In 2017, the destroyers USS \emph{Fitzgerald} and USS \emph{John S.\ McCain} suffered two avoidable collisions nine weeks apart, killing 17 sailors---aboard ships whose paperwork certified a readiness the crews did not actually have. In each case, an organization declared a capability it had not built, and mistook a document, a metric, or a routine for the real thing.
+
+\pullquote{``More training'' is the answer we reach for when we have not asked what capability is actually missing, or where in the system it lives.}
+
+The default costs lives and money, but its deeper cost is that it aims the fix at the wrong target. You cannot lecture a pilot out of a single-sensor design, audit a hospital into safety with a metric staff have learned to game, or brief a crew past a manning shortfall. When the diagnosis is wrong, the intervention is theater.
+
+% =============================================================================
+\section{The reframe: capability as the unit of work}
+% =============================================================================
+
+\lead{Capability is a property of the whole.} It is not stored in a person's head, and it is not stored in a machine. It lives in the coupling between them---the human, the interface, the procedure, the authority to act, the organization that sustains all of it. Ask not ``does the operator know the material?'' but ``can this human-system pair reliably produce the outcome the mission requires, including when things go wrong?'' That is a different question, and it has a different set of answers.
+
+Content is one lever on capability. So are the shape of an alarm, the authority of a nurse to halt a procedure, the transparency of an automated mode, the honesty of a measurement, and whether a maintenance pipeline exists at all. A learning engineer's job is to figure out \emph{which lever the situation actually needs}---and to be as willing to redesign the interface or the reporting rule as to design the course.
+
+\begin{softbox}
+\textbf{Gap attribution: the discipline's first move.} Before prescribing an intervention, diagnose the gap. Is the shortfall rooted in \emph{human} development, in \emph{system} design, or in \emph{organizational} conditions? The untrained instinct---and the institutional one---is to attribute performance problems to training by default. Naming that reflex and replacing it with a diagnosis is the single most consequential habit LENS teaches. It is the difference between fixing the problem and performing a fix.
+\end{softbox}
+
+Reframing the unit from content to capability is not a slogan. It changes what you build, what you measure, and who is in the room. It turns ``design a course'' into ``engineer a capability,'' and it makes learning engineering an \emph{engineering} discipline: requirements, iteration, instrumentation, evidence, and constraints, all aimed at an outcome you can observe.
+
+% =============================================================================
+\section{The evidence: what 205 cases actually show}
+% =============================================================================
+
+The claim above is not an intuition. It is induced from a casebook---\emph{Capability Matters}---of 205 documented cases across healthcare, aviation, defense, education, energy, disaster response, and public algorithms. Read together, the failures cluster not around missing content but around a small number of capability failures that recur across every domain:
+
+\begin{itemize}[leftmargin=1.2em,itemsep=3pt,topsep=3pt]
+  \item \textbf{Specification.} The organization never derived what the work actually demands, and inherited the requirements implied by a contract, a schedule, or a prior platform instead (\emph{Fitzgerald}/\emph{McCain}; the 737 MAX).
+  \item \textbf{The edge.} Training covered the routine envelope and not the boundary---the transition out of automation, the failure mode, the bad day (Air France 447).
+  \item \textbf{Evidence the institution deceives itself with.} The measurement was easy to count rather than true, or the body being measured also controlled the instrument, so it got gamed (the VA wait-time scandal; Wells Fargo; Texas City).
+  \item \textbf{Governance and construct.} A consequential judgment was automated or delegated without oversight, consent, or a defensible definition of what was even being measured (Houston's black-box value-added teacher scores, struck down on due-process grounds).
+\end{itemize}
+
+None of these is a content problem. Every one of them is a capability problem that a content-shaped response would have missed. That is the empirical core of the position: across 205 cases and seven domains, the thing that failed was almost never the lesson.
+
+% =============================================================================
+\section{What works, and why it is not more content}
+% =============================================================================
+
+The casebook is not a catalogue of despair. It documents interventions that worked---and they worked by engineering capability into the system, not by delivering more material.
+
+The clearest is the Keystone ICU project. Beginning in 2004 across 103 Michigan intensive-care units, a deceptively simple central-line checklist drove catastrophic bloodstream infections to near zero, saving roughly 1{,}500 lives and \$175 million in eighteen months---and sustaining the result at ten years. The checklist was not the intervention. The intervention was a redesigned capability: a measurement that surfaced the harm, a specific authorized action tied to it, and---decisively---the authority for a nurse to stop a physician who skipped a step. Change the authority gradient and the measurement, and the five-item card finally bites.
+
+The counter-example proves the same point. The WHO Surgical Safety Checklist cut deaths from 1.5\% to 0.8\% in its pilot---then, when a Canadian province \emph{mandated} the artifact without the cultural and authority change around it, a population study found no significant mortality benefit. The content travelled; the capability did not. That honest contrast is exactly what ``capability, not content'' means: the checklist is not the capability, and shipping the document is not the same as building the thing.
+
+\pullquote{The intervention that works is never the artifact alone. It is the artifact plus the authority to use it, the measurement that proves it, and the system that sustains it.}
+
+% =============================================================================
+\section{What LENS is}
+% =============================================================================
+
+LENS---Learning Engineering for Next-Generation Systems---is a graduate concentration that trains people to do this deliberately. It is built on five competencies, each stated as something a graduate can do:
+
+\begin{description}[leftmargin=0em,itemsep=5pt,topsep=4pt,font=\color{lensink}\bfseries]
+  \item[1.\; Systems Analysis \textmd{\color{lensquote}--- \emph{see the whole system.}}] Trace how human capability and system performance depend on each other, so an intervention targets the real problem instead of the visible symptom.
+  \item[2.\; Iterative Development \textmd{\color{lensquote}--- \emph{build, test, refine.}}] Design capability interventions through engineering cycles that survive contact with a real operational environment.
+  \item[3.\; Human-System Collaboration \textmd{\color{lensquote}--- \emph{work together.}}] Design human-system partnerships---including, but not limited to, human-AI teams---that make people more capable while preserving human agency and the recoverability of the system.
+  \item[4.\; Test and Evaluation \textmd{\color{lensquote}--- \emph{show what works.}}] Produce decision-grade evidence linking learning to operational impact---and tell a learning gap from a system gap.
+  \item[5.\; Navigating Sociotechnical Constraints \textmd{\color{lensquote}--- \emph{make it work in the real world.}}] Integrate interventions into the regulatory, organizational, cultural, and technical realities that decide whether good designs survive.
+\end{description}
+
+\emph{See the whole system. Build, test, refine. Work together. Show what works. Make it work in the real world.} The five, in one breath.
+
+\subsection*{What a graduate can do that others cannot}
+
+The concentration's claim is a delta---the difference between who enrolls and who graduates. It is written to be measurable, and it is honest about where students start.
+
+\begin{softbox}
+\begin{tabular}{@{}p{0.44\linewidth}@{\hspace{1.2em}}p{0.44\linewidth}@{}}
+\textbf{\color{lensink}Students arrive able to\ldots} & \textbf{\color{lensaccent}Graduates can\ldots}\\[0.4em]
+Attribute a performance problem to training by default. & Diagnose whether a capability gap is rooted in learning, system design, or organizational conditions---\emph{before} proposing a fix.\\[0.5em]
+Read simple data others hand them (completions, scores). & Instrument a setting ethically and produce decision-grade evidence linking learning measures to operational performance.\\[0.5em]
+Use AI tools as a consumer. & Design capability development for human-AI teams, and specify requirements for systems not yet fielded.\\[0.5em]
+Work inside one professional silo, handing off at its edge. & Lead and integrate a learning-engineering team across disciplines, in a shared vocabulary.\\
+\end{tabular}
+\end{softbox}
+
+In plain language: students arrive knowing one part of the picture. They leave able to see the whole system, prove what works, tell a learning problem from a system problem, and lead the team that fixes it.
+
+% =============================================================================
+\section{Why now, and why this is rigorous rather than fashionable}
+% =============================================================================
+
+Two forces make the timing more than incidental. First, generative AI has made ``the content'' cheap and abundant while making \emph{capability}---can a human and a model do the work together, safely, and recover when the model is wrong---harder and more valuable than ever. When the content writes itself, the discipline that matters is the one that engineers the human-system pair around it. That is competency three, and it is why LENS broadened its third domain from narrow machine-teaming to human-system collaboration generally: human-AI teaming is one important pattern inside it, not a separate fashion.
+
+Second, the field is professionalizing. LENS does not stand apart from that effort; it completes a stated next step. The foundational 2019 competencies paper for learning-engineering teams held that \emph{the team} is the unit of competence---no single person holds it all---and called for the field to operationalize its principles into specific, assessable competencies. LENS answers both. It certifies an individual's cross-domain fluency \emph{sufficient to lead and integrate a team}: the team remains the unit of delivered capability, and the credential names what one integrator contributes to it.
+
+\begin{softbox}
+\textbf{An evidence discipline, held to its own standard.} LENS is candid about what it has proven and what it has not. Some of its competency claims are established practice; others are labeled explicitly as proposed extensions awaiting validation. The casebook flags conflicts of interest in gold and weaker evidence tiers in blue, and preserves the honest hedges---the checklist that didn't transfer, the outcome that remains unknown---rather than smoothing them away. This is the same ``decision-grade evidence under irreducible uncertainty'' the program teaches: state what is known, what is assumed, and what would change the decision. A program that teaches evidentiary honesty has to practice it. This one does.
+\end{softbox}
+
+% =============================================================================
+\section{The offer}
+% =============================================================================
+
+\lead{To prospective students.} If you have ever watched an organization respond to a systemic failure by ordering everyone to retake a course, you already understand the problem this concentration exists to solve. LENS will make you the person in the room who asks the harder question---\emph{what capability is actually missing, and where in the system does it live?}---and who has the systems analysis, the engineering method, the measurement discipline, and the human-system design skill to answer it and act. You will graduate able to see the whole system, prove what works, tell a learning problem from a system problem, and lead the team that fixes it. Those are durable skills in any domain where the cost of getting it wrong is high---which is a growing share of the economy.
+
+\lead{To supporters and funders.} The reflex this paper opens with is expensive: it spends real money aiming real interventions at the wrong target, in exactly the settings---hospitals, cockpits, ships, classrooms, grids, disaster zones---where the errors are counted in lives. A discipline that reliably attributes the gap before spending on the fix is a leverage point, not a line item. LENS offers a framework that is a map, not a gate---adopted through usefulness, with credentialing deferred until the evidence bar is met---and a casebook of 205 verified cases as a shared, teachable asset for the field. Supporting it funds the diagnostic capacity that the next 737 MAX, the next \emph{Fitzgerald}, the next gamed metric will require.
+
+\pullquote{Capability matters. It can be specified, built, measured, and sustained on purpose---and people can be trained to do it. That is the whole position, and the whole point.}
+
+\vfill
+{\color{lensrule}\hrule height 0.7pt}
+\vspace{0.5em}
+{\footnotesize\color{lensquote}
+Sources for every case named here---the 737 MAX, Air France 447, USS \emph{Fitzgerald} \& \emph{McCain}, the VA wait-time scandal, Wells Fargo, Texas City, Houston EVAAS, Keystone ICU, and the WHO Surgical Safety Checklist---are documented in \emph{Capability Matters: A Casebook} (First Edition, 2026), together with the full five-competency framework and its course mapping. The casebook, the LENS Companion, and the Validation \& Audit tracker are the evidentiary backbone behind this paper.}
+
+\end{document}
