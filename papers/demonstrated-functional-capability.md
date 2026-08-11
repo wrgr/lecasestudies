@@ -1,4 +1,4 @@
-<!-- STATUS: DRAFT grounding paper — August 2026. Author: W. Gray-Roncal. This is the philosophical argument that grounds the LENS concentration; it is deliberately about the *approach* (assessing learning as demonstrated functional behavior), not about the LENS program, whose courses, objectives, and rubrics live in that program's own documentation. For an education conference on learning as demonstrated functional behavior. Reflects the field's emerging competency consensus and LEBOK (lebok.ai); no adopted LECF/ICICLE competency standard yet exists. Not a document of record. -->
+<!-- STATUS: DRAFT grounding paper — August 2026. Author: W. Gray-Roncal. This is the philosophical argument that grounds the LENS concentration; it is deliberately about the *approach* (assessing learning as demonstrated functional behavior), not about the LENS program, whose courses, objectives, and rubrics live in that program's own documentation. For an education conference on learning as demonstrated functional behavior. Reflects the field's emerging competency consensus — the IEEE ICICLE community, LEBOK (lebok.ai), and the standards effort; no adopted competency standard yet exists. Not a document of record. -->
 
 # Capability, Demonstrated
 
@@ -12,7 +12,7 @@
 
 ## Abstract
 
-A chemistry student scores 40% on the final; the curve turns 40 into a B; the transcript now certifies mastery. Nothing the student can *do* changed between the raw score and the letter. That gap — between the sign a credential records and the functional behavior it is taken to guarantee — is the subject of this paper. We argue for **demonstrated functional capability**: competence evidenced by a work sample scored against a real task, rather than inferred from a test, a grade, or a seat. The argument is not new to education — performance objectives, mastery learning, the clinical OSCE, the apprentice's masterpiece, and the pilot's checkride are all the field insisting learning be shown as behavior — but the proxy keeps winning because it is cheaper. We motivate the stakes from real high-consequence systems that passed every bar their builders set and still failed the people they were built for; we give the argument precise vocabulary through the **KSAT** decomposition of a job into Knowledge, Skills, Abilities, and Tasks; and we take up the two questions a demonstrated-capability position cannot dodge — *which outcome* should the demonstration sample toward (the criterion problem), and *what evidence* of it is enough (decision-grade evidence, which is contextual: the rigor a decision demands scales with its stakes, and the type of evidence sets a ceiling on the rigor a claim can reach). The one turn this position takes past even competency-based education is to locate capability at the **human-system interface**, so a gap can be attributed to the system rather than blamed on the learner. Throughout, the field's competency layer is treated as *emerging*, not settled: the Learning Engineering Body of Knowledge (LEBOK, lebok.ai) maps the knowledge; the competency layer above it is still being built.
+A chemistry student scores 40% on the final; the curve turns 40 into a B; the transcript now certifies mastery. Nothing the student can *do* changed between the raw score and the letter. That gap — between the sign a credential records and the functional behavior it is taken to guarantee — is the subject of this paper. We argue for **demonstrated functional capability**: competence evidenced by a work sample scored against a real task, rather than inferred from a test, a grade, or a seat. The argument is not new to education — performance objectives, mastery learning, the clinical OSCE, the apprentice's masterpiece, and the pilot's checkride are all the field insisting learning be shown as behavior — but the proxy keeps winning because it is cheaper. We motivate the stakes from real high-consequence systems that passed every bar their builders set and still failed the people they were built for; we give the argument precise vocabulary through the **KSAT** decomposition of a job into Knowledge, Skills, Abilities, and Tasks; and we take up the two questions a demonstrated-capability position cannot dodge — *which outcome* should the demonstration sample toward (the criterion problem), and *what evidence* of it is enough (decision-grade evidence, which is contextual: the rigor a decision demands scales with its stakes, and the type of evidence sets a ceiling on the rigor a claim can reach). The one turn this position takes past even competency-based education is to locate capability at the **human-system interface**, so a gap can be attributed to the system rather than blamed on the learner. Throughout, the field's competency layer is treated as *emerging*, not settled: within the IEEE ICICLE community, the Learning Engineering Body of Knowledge (LEBOK, lebok.ai) maps the knowledge, and the competency and standards layer above it is still being built.
 
 ---
 
@@ -124,7 +124,7 @@ These commitments are where a concrete program turns the philosophy into curricu
 
 **Demonstration is expensive and harder to standardize.** Work-sample assessment trades reliability-per-dollar for validity; a performance scored by a rubric is more susceptible to assessor variance than a machine-scored exam. This is exactly why the cheaper proxy keeps winning in practice. Inspectable rubrics and reproducible records are the mitigation — but demonstrated capability buys validity with effort, and the effort is the cost of the claim.
 
-**The distinctive competencies are the least settled.** Gap attribution, outcome coupling, and capability at the human-system interface sit at the least-settled edge of the field's emerging consensus, where the demonstrated evidence base is thinnest. That is an honest weakness, not a hidden one: these are proposals to the field, offered toward the emerging competency work around LEBOK (lebok.ai) rather than asserted as settled.
+**The distinctive competencies are the least settled.** Gap attribution, outcome coupling, and capability at the human-system interface sit at the least-settled edge of the field's emerging consensus, where the demonstrated evidence base is thinnest. That is an honest weakness, not a hidden one: these are proposals to the field, offered toward the IEEE ICICLE community's emerging competency and body-of-knowledge work — LEBOK (lebok.ai) and the standards pathway it feeds — rather than asserted as settled.
 
 **Self-generated evidence is the standing risk.** By §7's own standard, a program's evidence that its graduates can do these things is weak warrant if it is scored only by that program. The mitigation is non-negotiable and external: independent pilot sites, external assessors, and outcome coupling, so the evidence is not self-validating. A position that demands rigor of others fails on its own terms if it exempts itself.
 
@@ -136,13 +136,21 @@ A curve can turn a 40 into a B. A transcript can certify a degree. A benchmark c
 
 ---
 
+### Acknowledgment
+
+The framing here is indebted to, and offered toward, the collective effort to define learning engineering as a profession: the **IEEE ICICLE** community — the Industry Connections Industry Consortium on Learning Engineering — and its Competencies, Credentials and Curriculum work; the **Learning Engineering Body of Knowledge** (LEBOK, lebok.ai) that maps the field's knowledge; and the **competency-framework and IEEE standards efforts** now underway. This paper argues a position, not a standard, and is written to contribute to those efforts rather than pre-empt them. The demonstrated evidence it calls for is offered toward that community's validation work, on the understanding that no adopted competency standard yet exists and that the right posture is to build one together.
+
+---
+
 ### Sources and further reading
 
 Companion evidence base (independent published artifact):
 - *Capability Matters: A Casebook* (First Edition, 2026) — a separately published casebook of high-consequence successes and failures, complementary to but independent of any specialization. Source of the worked cases used throughout, the *What Fails / What Works — and the Frontier* organization, the six-mode failure taxonomy (§5), and the evidence-source typing discipline drawn on in §7.
 
-Field reference:
-- **LEBOK** — Learning Engineering Body of Knowledge (lebok.ai), IEEE ICICLE community. The field's knowledge map; the competency and proficiency layer above it is emerging, not yet an adopted standard.
+Field context — IEEE ICICLE and the standards effort:
+- **IEEE ICICLE** — the Industry Connections Industry Consortium on Learning Engineering, and its Competencies, Credentials and Curriculum work: the community defining learning engineering as a profession.
+- **LEBOK** — Learning Engineering Body of Knowledge (lebok.ai): the field's knowledge map, stewarded within IEEE ICICLE.
+- The emerging learning-engineering **competency framework** and the **IEEE standards pathway** it feeds — the competency and proficiency layer above LEBOK, still being built; no adopted standard yet. This paper is offered toward that work.
 
 Demonstrated-behavior lineage in education:
 - Mager, R. F. (1962). *Preparing Instructional Objectives* — the performance objective (condition, behavior, criterion).
