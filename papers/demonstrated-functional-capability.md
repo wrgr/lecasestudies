@@ -116,7 +116,7 @@ The argument would be idle if it did not constrain practice, so it is worth stat
 - **Make the scoring inspectable, and grade your own evidence.** A rubric traceable to the task, a reproducible record, and an honest evidence tier on the demonstration itself are what keep a work sample from decaying back into a dressed-up sign (§7).
 - **Instrument the program's own effect.** A discipline that tells others to produce decision-grade evidence of impact owes the same of itself: define entering and exiting capability as observable, measurable states, and evidence the delta the way it teaches everyone else to.
 
-These commitments are where a concrete program — LENS among them — turns the philosophy into curriculum, rubrics, and a capstone. Those instruments live in that program's own documentation; the point here is only that the philosophy *has* teeth, and that they are these.
+These commitments are where a concrete program — LENS among them — turns the philosophy into curriculum, rubrics, and a capstone. Those instruments live in our program's own documentation; the point here is only that the philosophy *has* teeth, and that they are these.
 
 ## 9. Limits, and what this does not claim
 
