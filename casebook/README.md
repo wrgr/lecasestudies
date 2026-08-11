@@ -26,6 +26,8 @@ The main volume shares one measure and type size across its three carriers, so t
 
 Integrity at print: `bash scripts/check-cases.sh` reports **205 cases, 0 failures**; all cross-references in range 1–205; all slugs unique; all non-closing cases carry induced + lens + LEO anchors; no stale v1 terminology in any rendered output.
 
+For a reflexive **case study** on how this volume was actually built through human-AI teaming — the workflow, the pros and cons, and the governance layer that made the speed safe — see [ai-workflow-case-study.tex](ai-workflow-case-study.tex) (*The Method Is the Message*; companion to the position paper `../position-paper/capability-not-content.tex`; build with `latexmk -pdf`).
+
 For the intellectual framing behind the casebook — the capability interface, agency as a design constraint, gap attribution, the Practice Flywheel — see [METHODOLOGY.md](METHODOLOGY.md). For the running editorial history — v2.1 adoption, the chapter restructures (10-chapter competency org, then the July 2026 topical reorganization), the references validation pass, all corrections — see [AUDIT.md](AUDIT.md). For the per-case manual-review track scaffolded for the human reviewer — including the rubric, the workflow, and a 205-row table with six of seven check columns auto pre-filled — see [verification-log.md](verification-log.md).
 
 ---
