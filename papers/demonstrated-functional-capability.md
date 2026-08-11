@@ -76,7 +76,21 @@ The casebook draws the same line at high stakes, and its two halves are organize
 
 The taxonomy the casebook scores each case against is itself an argument against the proxy's monopoly. Of its six failure modes — **T**raining Gap, **D**esigned Out, **N**ormalization of Deviance, **H**uman-System Interface, **G**overnance & Trust, **K**nowledge & Institutional Memory — exactly one, *Training Gap*, is what a better-taught (or better-tested) individual would have prevented. The other five are properties of designs, organizations, interfaces, and institutional memory: the environment side of Gilbert's model. An assessment that could only see the *Training Gap* mode would be blind to five-sixths of the failure surface its own casebook documents.
 
-## 6. How LENS demonstrates capability
+## 6. Which outcome? The criterion problem, and where the field has already worked it
+
+"Demonstrate the capability" only pushes the question back a step: *which* capability, judged against *what* outcome? An assessment is no better than the criterion it samples toward, and choosing that criterion is a real and old problem, not a detail — a paper that argues for demonstration is incomplete until it says what the demonstration should be *of*. Reassuringly, this is one of the most worked-over questions in the measurement, training-evaluation, and safety literatures. Four bodies of work bound the answer.
+
+**Taxonomies of the outcome — Bloom and after.** Bloom's taxonomy (1956; revised by Anderson and Krathwohl, 2001) and its affective and psychomotor companions classify outcomes by *kind and cognitive level* — remember, understand, apply, analyze, evaluate, create — so that a well-formed objective names the level it targets. This is necessary discipline: "understands sepsis" and "manages a deteriorating patient" are different outcomes, and the taxonomy makes the difference sayable. But it is not sufficient, and the limit matters here: Bloom fixes the *altitude* of an outcome, not whether it is the *right* outcome for the work. A perfectly specified create-level objective can still be the wrong thing to develop. (Bloom's other famous result, the two-sigma effect of mastery tutoring, is about the *magnitude* of outcome achievable — and is the lineage the Navy Digital Tutor case sits in.)
+
+**Levels of evaluation — Kirkpatrick, and its critics.** Kirkpatrick's four levels — reaction, learning, behavior, results — are precisely a ladder of *how distal an outcome to hold an intervention to*: a knowledge test is level 2 (learning); demonstrated on-the-job behavior is level 3; organizational results are level 4 (Phillips later adds return on investment as a fifth). LENS's demonstrated functional capability lives at 3 and 4, not 2 — which is the whole quarrel with the grade and the certification. The model's own critics (Holton, 1996; Alliger and Janak, 1989) sharpen rather than weaken the point: the levels are *not* automatically causally linked — a strong level-2 score need not yield level-3 behavior or level-4 results — which is exactly the reason to measure the distal outcome directly instead of inferring it from the proximal one. The casebook takes the model itself as a case (Kirkpatrick, flagged practice-synthesis-tier), so the concentration teaches the ladder and its limits at once.
+
+**Validity, and the criterion problem proper.** Measurement has precise names for choosing the outcome badly: *criterion deficiency* (the measure misses part of the real outcome), *criterion contamination* (it captures what the outcome should exclude), and *criterion relevance* (the overlap that counts), from Thorndike (1949) through the standing "criterion problem" literature (Wallace's "Criteria for what?", 1965; Austin and Villanova, 1992). Messick's unified validity (1989) and Kane's argument-based validity (2013) give the modern frame: validity is not a property of an instrument but of the *interpretive argument* from a performance to a claim, and its two classic threats — construct underrepresentation and construct-irrelevant variance — are the formal names for the proximal/distal shortfall §5 found in the OSCE. This is the machinery for judging whether a chosen outcome is the appropriate one, and its verdict is that the choice is an argument to be defended, not a number to be read off.
+
+**How applied fields pin the outcome — profession and safety.** Two applied traditions answer "which outcome" concretely. In professional education the outcome is defined by the *work itself*: entrustable professional activities (ten Cate) name the units of practice a graduate should be trusted to perform unsupervised, and frameworks such as CanMEDS and the ACGME Milestones fix the developmental outcome by consensus grounded in job analysis — the same job-task-analysis logic KSAT and ISO/IEC 17024 use (§3). And in safety science, where the ultimate outcome — the catastrophe — is rare and cannot ethically be waited for, the outcome is redefined from the *absence of harm* to the *capacity to perform under varying conditions*: Hollnagel's Safety-II and resilience engineering, the high-reliability-organization literature (Weick and Sutcliffe), and the leading-versus-lagging-indicator distinction all say to measure the demonstrated ability to succeed, not only the tally of failures avoided. For a concentration built on high-consequence domains this is the load-bearing move — the appropriate outcome is a *capacity*, sampled before the accident, not a body count after it.
+
+**What this yields.** There is no oracle that returns the one correct outcome; there is a defensible procedure the related work converges on, and LENS already encodes it. Define the outcome from the real work (job-task analysis; entrustable activities). Operationalize it as a construct and state what the operationalization leaves out — LENS subobjective 4.8, *design the assessment before the content*. Push it as far distal as the evidence chain can defensibly carry, toward Kirkpatrick's results and Safety-II capacity rather than a proximal proxy. And hold the whole thing to a validity *argument* (Messick, Kane) that names what is known, what is assumed, and what would change the decision — subobjective 4.3, decision-grade evidence. The capability-as-interface definition then does one thing for free: by making the outcome the *system's delivered impact*, it pins the criterion to results rather than to learning from the first course, which answers the criterion problem structurally instead of course by course.
+
+## 7. How LENS demonstrates capability
 
 The position would be empty if the program could not act on it. It does, at four grains.
 
@@ -88,7 +102,7 @@ The position would be empty if the program could not act on it. It does, at four
 
 **A proficiency-level attainment profile.** Finally, LENS states the *level* a graduate reaches on each competency — performs it independently and produces evidence of it, or recognizes it and can brief the specialist who holds it — rather than reporting a pass. It follows two established precedents outside education's usual habits: the INCOSE systems-engineering convention of proficiency levels per competency, and the IBSTPI convention of individual competencies validated against practitioners. The field's own competency layer is still emerging — the Learning Engineering Body of Knowledge (LEBOK, lebok.ai) maps the knowledge, and the competency and proficiency framing above it is being worked out in the community rather than settled in a standard — so LENS states its profile as a proposal against that emerging consensus and offers its graduates' demonstrated work as evidence toward it.
 
-## 7. Limits, and what this does not claim
+## 8. Limits, and what this does not claim
 
 **It is not anti-test.** The Knowledge layer is real and worth assessing at its own grain; a task performance that entails the KSAs does not make the KSAs unimportant, and a program still owes its students formative knowledge checks along the way. The claim is narrower and load-bearing: a test of the K layer cannot, by itself, *license the Task-layer claim* the concentration exists to make. Signs inform; samples certify.
 
@@ -98,7 +112,7 @@ The position would be empty if the program could not act on it. It does, at four
 
 **Credentialing is deferred on purpose.** A demonstrated-capability *assessment* is not yet a *credential*. A personnel credential requires a validated job-task analysis under ISO/IEC 17024 logic, and no adopted competency standard for learning engineering yet exists to anchor one. LENS declines to attach certification language until that bar is met. Getting the order right — evidence before credential — is itself an instance of the discipline the concentration teaches.
 
-## 8. In plain language
+## 9. In plain language
 
 A curve can turn a 40 into a B. A transcript can certify a degree. A benchmark can certify a model. None of them can tell you whether the learner, or the clinician, or the operator can actually do the thing when the stakes are real — only a demonstration can: a real problem, an instrumented intervention, an artifact a stranger can check. Education has always known this and keeps trading it away for a cheaper sign. LENS is a graduate concentration built not to make that trade — because the failures it exists to prevent were, without exception, certified on the sign and never on the sample.
 
@@ -123,6 +137,14 @@ Demonstrated-behavior lineage in education:
 - Harden, R. M., et al. (1975). The Objective Structured Clinical Examination (OSCE). *BMJ*.
 - Carnegie Foundation for the Advancement of Teaching — the Carnegie unit (credit hour) as time, not learning.
 - Campbell, D. T. (1976), Campbell's Law; Goodhart's Law — why a measure decays when it becomes a target.
+
+Defining the outcome — the criterion problem (§6):
+- Bloom, B. S. (1956). *Taxonomy of Educational Objectives*; Anderson, L. W., & Krathwohl, D. R. (2001), the revised taxonomy; Bloom, B. S. (1984), the two-sigma problem.
+- Kirkpatrick, D. L. (1959/1994). The four levels of training evaluation; Phillips, J. J. (ROI as a fifth level); Alliger, G. M., & Janak, E. A. (1989); Holton, E. F. (1996), *The flawed four-level evaluation model*.
+- Thorndike, R. L. (1949) — criterion deficiency / contamination / relevance; Wallace, S. R. (1965), *Criteria for what?*; Austin, J. T., & Villanova, P. (1992), *The criterion problem: 1917–1992*.
+- Messick, S. (1989) — unified validity; construct underrepresentation and construct-irrelevant variance. Kane, M. T. (2013) — argument-based validity.
+- ten Cate, O. (2005) — entrustable professional activities; CanMEDS; ACGME Milestones — outcome defined as the units of professional work.
+- Hollnagel, E. (2014). *Safety-I and Safety-II*; resilience engineering; Weick, K. E., & Sutcliffe, K. M., high-reliability organizations; leading vs lagging safety indicators.
 
 Assessment and competence:
 - Wernimont, P. F., & Campbell, J. P. (1968). Signs, samples, and criteria. *Journal of Applied Psychology*, 52(5).
