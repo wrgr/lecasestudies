@@ -1,12 +1,12 @@
-<!-- STATUS: DRAFT grounding paper — August 2026. Author: W. Gray-Roncal. This is the philosophical argument that grounds the LENS concentration; it is deliberately about the *approach* (assessing learning as demonstrated functional behavior), not about the LENS program, whose courses, objectives, and rubrics live in that program's own documentation. For an education conference on learning as demonstrated functional behavior. Reflects the field's emerging competency consensus — the IEEE ICICLE community, LEBOK (lebok.ai), and the standards effort; no adopted competency standard yet exists. Not a document of record. -->
+<!-- STATUS: DRAFT grounding paper — August 2026. Authors: William Gray-Roncal, James Diamond. This is the philosophical argument that grounds the LENS concentration; it is deliberately about the *approach* (assessing learning as demonstrated functional behavior), not about the LENS program, whose courses, objectives, and rubrics live in that program's own documentation. For an education conference on learning as demonstrated functional behavior. Reflects the field's emerging competency consensus — the IEEE ICICLE community, LEBOK (lebok.ai), and the standards effort; no adopted competency standard yet exists. Not a document of record. -->
 
 # Capability, Demonstrated
 
 ### Learning is what a person can *do*. A grade, a credit hour, and a passing score can each certify that learning happened while telling you nothing about whether it did. This is the argument for assessing professional competence as demonstrated functional behavior — the philosophy, not any one program.
 
-*Grounding paper — the argument beneath the LENS concentration. Draft, August 2026.*
+*Grounding paper — the argument beneath the LENS concentration. William Gray-Roncal and James Diamond. Draft, August 2026.*
 
-> **On scope.** This paper argues a *position* about how professional competence should be evidenced. It is the ground a specialization like LENS stands on, not a description of that specialization: no course sequence, objective codes, or rubrics appear here, and none are needed to make the argument. Its worked cases, its *What Fails / What Works* structure, and its evidence-typing discipline are drawn from *Capability Matters: A Casebook* (2026) — a separately published casebook, complementary to but independent of any specialization — cited here as an evidence base, the way any published source is.
+> **On scope.** This paper argues a *position* about how professional competence should be evidenced. It is the ground a specialization like LENS stands on, not a description of that specialization: no course sequence, objective codes, or rubrics appear here, and none are needed to make the argument. Its worked cases, its *What Fails / What Works* structure, and its evidence-typing discipline are drawn from *Capability Matters: A Casebook* (Gray-Roncal & Diamond, 2026) — a separately published casebook, complementary to but independent of any specialization — cited here as an evidence base, the way any published source is.
 
 ---
 
@@ -145,7 +145,7 @@ The framing here is indebted to, and offered toward, the collective effort to de
 ### Sources and further reading
 
 Companion evidence base (independent published artifact):
-- *Capability Matters: A Casebook* (First Edition, 2026) — a separately published casebook of high-consequence successes and failures, complementary to but independent of any specialization. Source of the worked cases used throughout, the *What Fails / What Works — and the Frontier* organization, the six-mode failure taxonomy (§5), and the evidence-source typing discipline drawn on in §7.
+- Gray-Roncal, W., & Diamond, J. (2026). *Capability Matters: A Casebook* (First Edition) — a separately published casebook of high-consequence successes and failures, complementary to but independent of any specialization. Source of the worked cases used throughout, the *What Fails / What Works — and the Frontier* organization, the six-mode failure taxonomy (§5), and the evidence-source typing discipline drawn on in §7.
 
 Field context — IEEE ICICLE and the standards effort:
 - **IEEE ICICLE** — the International Consortium for Innovation and Collaboration in Learning Engineering, and its **Competencies, Credentials and Curriculum Special Interest Group**: the community defining learning engineering as a profession.
