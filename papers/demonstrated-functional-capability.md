@@ -138,7 +138,7 @@ A curve can turn a 40 into a B. A transcript can certify a degree. A benchmark c
 
 ### Acknowledgment
 
-The framing here is indebted to, and offered toward, the collective effort to define learning engineering as a profession: the **IEEE ICICLE** community — the Industry Connections Industry Consortium on Learning Engineering — and its Competencies, Credentials and Curriculum work; the **Learning Engineering Body of Knowledge** (LEBOK, lebok.ai) that maps the field's knowledge; and the **competency-framework and IEEE standards efforts** now underway. This paper argues a position, not a standard, and is written to contribute to those efforts rather than pre-empt them. The demonstrated evidence it calls for is offered toward that community's validation work, on the understanding that no adopted competency standard yet exists and that the right posture is to build one together.
+The framing here is indebted to, and offered toward, the collective effort to define learning engineering as a profession: the **IEEE ICICLE** community — the International Consortium for Innovation and Collaboration in Learning Engineering — and its **Competencies, Credentials and Curriculum Special Interest Group**; the **Learning Engineering Body of Knowledge** (LEBOK) — published and openly available at [lebok.ai](https://lebok.ai) — which maps the field's knowledge and is the reference this paper builds atop; and the **competency-framework and IEEE standards efforts** now underway. This paper argues a position, not a standard, and is written to contribute to those efforts rather than pre-empt them. The demonstrated evidence it calls for is offered toward that community's validation work, on the understanding that no adopted competency standard yet exists and that the right posture is to build one together.
 
 ---
 
@@ -148,8 +148,8 @@ Companion evidence base (independent published artifact):
 - *Capability Matters: A Casebook* (First Edition, 2026) — a separately published casebook of high-consequence successes and failures, complementary to but independent of any specialization. Source of the worked cases used throughout, the *What Fails / What Works — and the Frontier* organization, the six-mode failure taxonomy (§5), and the evidence-source typing discipline drawn on in §7.
 
 Field context — IEEE ICICLE and the standards effort:
-- **IEEE ICICLE** — the Industry Connections Industry Consortium on Learning Engineering, and its Competencies, Credentials and Curriculum work: the community defining learning engineering as a profession.
-- **LEBOK** — Learning Engineering Body of Knowledge (lebok.ai): the field's knowledge map, stewarded within IEEE ICICLE.
+- **IEEE ICICLE** — the International Consortium for Innovation and Collaboration in Learning Engineering, and its **Competencies, Credentials and Curriculum Special Interest Group**: the community defining learning engineering as a profession.
+- **LEBOK** — *Learning Engineering Body of Knowledge*, published and openly available at [lebok.ai](https://lebok.ai) (IEEE ICICLE). The field's knowledge map, and the reference this paper builds atop.
 - The emerging learning-engineering **competency framework** and the **IEEE standards pathway** it feeds — the competency and proficiency layer above LEBOK, still being built; no adopted standard yet. This paper is offered toward that work.
 
 Demonstrated-behavior lineage in education:
