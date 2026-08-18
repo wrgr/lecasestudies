@@ -268,7 +268,7 @@
     consumables it sold remained the protected core, and digital was
     treated as a threat to be managed rather than a product to be
     developed against itself. By 2003 digital camera sales overtook film
-    in the United States; by 2007 Kodak had begun mass layoffs; in
+    in the United States; in January 2004 Kodak announced the elimination of 12,000 to 15,000 positions; in
     January 2012 the company filed for Chapter 11. The capability gap
     was not invention. It was the organization's failure to iterate the
     business around the technology it already owned.
@@ -291,7 +291,7 @@
     ],
     // -- The Signal --
     [
-      Sasson's later published recollection (IEEE Spectrum, 2007) is
+      Sasson's later published recollection on Kodak's own corporate blog (2007) is
       that internal reception was polite but unmoved: the demonstration
       raised the question of when the company would have to compete
       against its own film business, and the answer settled into a long
@@ -327,10 +327,7 @@
       United States; by the mid-2000s smartphone cameras began
       collapsing the standalone-camera category Kodak had partially
       entered. Kodak's revenues fell from roughly USD 16 billion in
-      1996 to under USD 6 billion by 2011. The company sold its
-      Health Imaging division in 2007, began mass layoffs the same
-      year, and on 19 January 2012 filed for Chapter 11 bankruptcy
-      protection in the Southern District of New York. In the
+      1996 to under USD 6 billion by 2011. The company announced the elimination of 12,000 to 15,000 positions in January 2004, sold its Health Imaging division in 2007, and on 19 January 2012 filed for Chapter 11 bankruptcy protection in the Southern District of New York. In the
       bankruptcy proceedings Kodak monetized roughly 1,100 of its
       digital-imaging patents — many traceable to the engineering
       lineage Sasson's 1975 prototype had started — for approximately
@@ -376,7 +373,7 @@
     ),
   ),
   references: (
-    [S. Sasson, "We Had No Idea," _IEEE Spectrum_ (16 October 2007) — first-hand account of the 1975 prototype, the demonstration, and the internal reception.],
+    [S. Sasson, "We Had No Idea," Kodak corporate blog, _Kodak: Plugged In_ (2007) — first-hand account of the 1975 prototype, the demonstration, and the internal reception.],
     [H. C. Lucas Jr. & J. M. Goh, "Disruptive technology: How Kodak missed the digital photography revolution," _Journal of Strategic Information Systems_ 18(1):46–55 (March 2009).],
     [Eastman Kodak Company, Voluntary Petition for Chapter 11 Reorganization, U.S. Bankruptcy Court, Southern District of New York, Case No. 12-10202 (19 January 2012).],
     [A. R. Sorkin & M. J. de la Merced, "Eastman Kodak Files for Bankruptcy," _The New York Times_ DealBook (19 January 2012).],
@@ -940,7 +937,7 @@
   year: "2011 – 2016",
   domains-list: ("tech", "gov"),
   modes-code: "GN",
-  impact: "~3.5 million unauthorized accounts opened; ~$3B in penalties; CEO resigned; the Federal Reserve capped the bank's assets",
+  impact: "~3.5 million potentially unauthorized accounts identified; ~$3B in penalties; CEO resigned; the Federal Reserve capped the bank's assets",
   diagram: dgm.dgm-stat(
     "3.5M",
     "unauthorized accounts",
@@ -949,8 +946,7 @@
   ),
   kind: "failure",
   summary: [
-    To meet aggressive sales quotas, Wells Fargo employees opened roughly
-    3.5 million unauthorized customer accounts over years. The behavior was
+    To meet aggressive sales quotas, Wells Fargo employees opened accounts customers had not asked for; a third-party review put the total at roughly 3.5 million potentially unauthorized accounts from January 2009 to September 2016. The behavior was
     widespread and visible to internal risk and compliance functions, but the
     bank's response was to fire individual "bad apples" while leaving the
     incentive structure intact — and that structure was the actual cause:
@@ -980,8 +976,7 @@
     ],
     // -- What Happened --
     [
-      Unable to meet the quotas honestly, employees opened roughly 3.5
-      million unauthorized accounts in customers' names — the rational
+      Unable to meet the quotas honestly, employees opened roughly 3.5 million potentially unauthorized accounts in customers' names — the rational
       response to a target most could not reach by legitimate means.
       Practices documented by investigators included opening checking,
       savings, and credit-card accounts without customer consent,
@@ -991,8 +986,7 @@
       visible to internal risk and compliance functions for years
       before the 2013 _Los Angeles Times_ reporting made it public;
       the institutional response was to discipline individual employees
-      as bad apples — Wells Fargo terminated more than 5,300 employees
-      between 2011 and 2016 — while leaving the incentive structure
+      as bad apples — Wells Fargo terminated roughly 5,300 employees between 2011 and 2016 — while leaving the incentive structure
       intact, fixing the symptom and preserving the cause.#cn()
     ],
     // -- The Investigation --
@@ -1602,15 +1596,12 @@
     accounts off its former parent Lloyds' systems onto a new platform from
     its current owner, Sabadell, over a single weekend. When services came
     back online, nearly every component failed: 1.9 million customers were
-    locked out, some saw strangers' accounts, mortgages vanished, payments
+    locked out, 440 saw a linked relative's accounts, mortgages vanished, payments
     bounced. Recovery took months and cost over £330 million; the CEO
     resigned and the regulator fined the bank. The independent review found
     the platform had been tested under conditions that did not approximate
     real load, certified ready by a process that did not challenge the
-    certification, and pushed live against technical recommendations that it
-    was not ready. TSB is the financial-sector analog of Healthcare.gov: a
-    migration shipped without adequate testing because schedule pressure
-    overrode the technical signal.
+    certification, and pushed live on readiness assurances that were statements of expectation rather than of proven fact. TSB is the financial-sector analog of Healthcare.gov: a migration shipped without adequate testing because the assurance process confirmed readiness instead of testing it.
   ],
   sections: (
     // -- Background --
@@ -1628,8 +1619,7 @@
     [
       When customer-facing services came back online that Sunday evening in
       April 2018, nearly every component of the new platform had problems.
-      About 1.9 million customers were locked out; some saw other people's
-      accounts, mortgages disappeared, and card payments failed. The recovery
+      About 1.9 million customers were locked out; 440 saw the accounts of a closely linked relative, mortgages disappeared, and card payments failed. The recovery
       took months, cost more than £330 million in compensation and
       remediation, and the chief executive resigned.#cn() That nearly every
       component failed at once points away from a single defect and toward a
@@ -1645,19 +1635,11 @@
       not adequately challenge the certification — a certification that
       confirmed readiness rather than interrogating it, which is how a system
       that would fail under real conditions could be signed off as fit.#cn()
-      Decisively, the
-      executive decision to proceed had been taken against technical
-      recommendations that the platform was not ready; the Financial Conduct
-      Authority later fined TSB, treating the override of a known technical
-      objection as a failure of governance and not merely of engineering.#cn()
+      Decisively, the assurances the board acted on were forward-looking statements of intention rather than statements of completed fact, and no independent adviser was asked to test them; the Financial Conduct Authority and the Prudential Regulation Authority later fined TSB £48.65 million, treating the unchallenged assurance as a failure of governance and not merely of engineering.#cn()
     ],
     // -- The Capability Gap --
     [
-      The technical signal existed — the platform was not ready, and people
-      knew it. But the decision authority sat at the executive layer, where
-      the signal arrived weakened by passage through intermediate layers, and
-      the institutional architecture gave the technical layer no way to halt
-      the migration. The missing capability was not testing knowledge but a
+      The signals existed — testing had slipped, three of the programme's own guiding principles had been abandoned, and attestations were still incomplete on the morning of the decision. But they reached the board as assurances rather than as objections, and the institutional architecture gave no one the standing to convert a slipped test into a halt. The missing capability was not testing knowledge but a
       governance structure in which a "not ready" could stop a scheduled
       go-live. Knowing a system is unready is worthless if the knowledge
       cannot reach the decision with its force intact and the authority to
@@ -1679,26 +1661,23 @@
   beats: (
     "TSB needed to migrate five million accounts off Lloyds onto Sabadell platform in one weekend",
     "Nearly every component failed at relaunch; 1.9 million customers locked out, £330M cost, CEO resigned",
-    "Slaughter and May found unrealistic load testing, unchallenged readiness certification, override of technical advice",
-    "Technical signal existed but had no authority; governance let executive schedule overrule a known not-ready",
-    "TSB rebuilt testing and migration governance; FCA penalized the override of technical objection",
+    "Slaughter and May found reduced-scope load testing, unchallenged readiness certification, and no independent advice to the board",
+    "Slipped testing reached the board as attestations of readiness; governance had no mechanism to convert an incomplete test into a halt",
+    "TSB rebuilt testing and migration governance; FCA and PRA fined TSB £48.65m for governance and outsourcing failings",
   ),
   references: (
     [Slaughter and May, _Independent Review of the TSB Migration_ (2019) — the single-weekend cutover and the testing failures.],
     [Slaughter and May (2019) and FCA materials — ~1.9 million customers locked out, £330M+ in costs, and the CEO's resignation.],
     [Slaughter and May (2019) — inadequate load testing and an unchallenged readiness certification.],
-    [Financial Conduct Authority, Final Notice on TSB Bank (2022) — the regulatory penalty and proceeding against technical advice.],
+    [Financial Conduct Authority, Final Notice on TSB Bank plc (20 December 2022) â the £29.75m penalty (with the PRA's £18.9m) for planning, testing, risk-management and outsourcing failings.],
     [House of Commons Treasury Committee, report on the TSB IT migration (2018).],
     [Cf. Healthcare.gov (Case 180) and the migration-safety literature.],
   ),
-  quote: [The migration proceeded notwithstanding clear signals that the platform was not ready.],
-  quote-source: "Paraphrasing the Slaughter and May Independent Review of the TSB migration, 2019",
+  quote: [Inadequacies in the safeguards meant TSB went live with the platform before it was ready to do so.],
+  quote-source: "Paraphrasing the FCA Final Notice to TSB Bank plc, 20 December 2022, paragraph 4.154",
   le-insight: [
     TSB is the canonical case for schedule pressure overriding
-    technical signal in a regulated industry. The technical signal
-    existed. The decision authority was at the executive layer where
-    the signal arrived weakened by passage through multiple intermediate
-    layers. The institutional architecture did not allow the technical
+    technical signal in a regulated industry. The technical shortfalls existed. They reached the decision layer converted into attestations of readiness, and nothing in the governance made the conversion visible. The institutional architecture did not allow the technical
     layer to halt the migration.
   ],
   lens-approach: [

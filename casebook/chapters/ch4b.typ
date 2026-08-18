@@ -291,7 +291,7 @@
   references: (
     [Polmar, N. & Allen, T. (2007), _Rickover: Father of the Nuclear Navy_ — the program and Rickover's philosophy (paraphrased).],
     [Naval Nuclear Propulsion Program documentation (NRC/DOE) — qualification standards and the accident record.],
-    [Admiral Hyman G. Rickover, "Doing a Job" (Columbia University commencement address, 1982) — "people, not organizations… get things done" (quoted).],
+    [Admiral Hyman G. Rickover, "Doing a Job" (Columbia University, Egleston Medal address, 5 November 1982) — "people, not organizations… get things done" (quoted).],
     [GAO-21-168 (2021), _Navy Readiness: Actions Needed to Evaluate and Improve Surface Warfare Officer Career Path_ — the surface community's career path set against the submarine, aviation and EOD communities.],
     [Duncan, F. (1990), _Rickover and the Nuclear Navy_ — the qualification culture.],
   ),

@@ -200,8 +200,7 @@
     kept it out of the manuals and training and let it fire repeatedly on a
     single angle-of-attack sensor. When that sensor failed on Lion Air 610
     (October 2018), MCAS forced the nose down against a crew never told it
-    existed; five months later, on Ethiopian 302, a crew warned of the
-    symptom but not the system ran Boeing's cutout procedure and still could
+    existed; four months later, on Ethiopian 302, a crew warned of the symptom but not the system ran Boeing's cutout procedure and still could
     not recover; 346 people died and the fleet was grounded for twenty
     months. Five major
     investigations — the NTSB-supported KNKT (Lion Air) and EAIB (Ethiopian)
@@ -251,8 +250,7 @@
       sensor failed on Lion Air Flight 610 in October 2018, MCAS
       repeatedly forced the nose down; the crew, never told the system
       existed, fought it cycle after cycle until the jet dove into the
-      Java Sea, killing all 189. Five months later Ethiopian Airlines
-      Flight 302 met the same sequence — sensor failure, repeated trim
+      Java Sea, killing all 189. Four months later Ethiopian Airlines Flight 302 met the same sequence — sensor failure, repeated trim
       commands, unrecoverable nose-down attitude — with the difference that
       this crew had Boeing's post-Lion-Air bulletin and the FAA emergency
       directive, ran the runaway-stabiliser cutout they prescribed, and still
@@ -316,8 +314,7 @@
       directive required the simulator training the airplane had been
       built to avoid. The Aircraft Certification, Safety, and
       Accountability Act of 2020 then tightened FAA oversight of the ODA
-      delegation regime, required disclosure to pilots of flight-control
-      systems that act on a single sensor input, and funded FAA engineering
+      delegation regime, required disclosure to pilots of systems that move the flight controls without pilot input, and funded FAA engineering
       capacity that the delegation system had let atrophy. Boeing entered
       a Deferred Prosecution Agreement with the DOJ on a fraud charge
       tied to its disclosures to the FAA's Aircraft Evaluation Group.#cn()
@@ -1051,8 +1048,7 @@
     airspeed readings failed, and the autopilot handed the jet to a crew
     that had never trained to fly it by hand in that regime. The pilot
     flying held the nose up into a full aerodynamic stall and never
-    recognized it; the aircraft descended for nearly four and a half
-    minutes. The BEA traced the loss to the airspeed failure, the crew's
+    recognized it; the upset ran four minutes and twenty-three seconds from autopilot disconnection to impact. The BEA traced the loss to the airspeed failure, the crew's
     inappropriate inputs, and a training system that taught stall
     prevention at low altitude but never stall recovery at altitude — a gap
     between the trained envelope and the operational one that reshaped
@@ -1083,8 +1079,7 @@
       and the autopilot and autothrust disconnected into Alternate Law —
       a degraded control regime in which stall protection no longer
       held. The pilot flying responded with sustained nose-up input; the
-      jet climbed, stalled, and never recovered, falling some 38,000
-      feet into the ocean in about four and a half minutes. The stall
+      jet climbed, stalled, and never recovered, falling some 38,000 feet into the ocean in under three minutes. The stall
       warning sounded, then cut out at extreme angle of attack and
       resumed when the nose dropped — warning against the one input that
       would have begun a recovery, so that the cue meant to guide the
@@ -1102,9 +1097,7 @@
       inappropriate crew inputs, and the crew's failure to recognize and
       recover from the stall.#cn() The pilots were not incompetent —
       they were outside anything their training had prepared them for,
-      and the BEA said so: "the conditions under which pilots are
-      trained and exposed to stalls… did not result in reasonably
-      reliable expected behaviour patterns."#cn() The finding reframed
+      and the BEA said so: "the conditions in which airline pilots are trained and exposed to stalls… does not generate the expected behaviour in any acceptable reliable way."#cn() The finding reframed
       the loss from a question of individual airmanship to one of
       training design: the crew had been drilled in a regime that never
       produced the responses the emergency demanded. The BEA report
@@ -1168,7 +1161,7 @@
     [G. Palmer / E. Strickland, "Air France Flight 447 Crash Caused by a Combination of Factors," _IEEE Spectrum_ (2014) — analysis of the divergence between the trained and operational envelopes.],
     [BEA, _Final Report AF447_ (2012), safety recommendations — pitot-probe replacement, manual high-altitude flying, approach-to-stall and stall recovery, unreliable-airspeed procedures, and angle-of-attack indication.],
     [European Union Aviation Safety Agency, Upset Prevention and Recovery Training (UPRT) requirements for airline pilots (phased in by 2019); ICAO, _Manual on Aeroplane Upset Prevention and Recovery Training_ (Doc 10011).],
-    [Federal Aviation Administration, FAA-S-ACS-1, _Airline Transport Pilot Practical Test Standards_ and the 2014 Part 121 stall-recovery training rule reflecting BEA recommendations; FAA Advisory Circular 120-109A, _Stall Prevention and Recovery Training_.],
+    [Federal Aviation Administration, _Qualification, Service, and Use of Crewmembers and Aircraft Dispatchers_, final rule, 78 FR 67800 (2013, effective 2014) — Part 121 stall and upset recovery training, directed by the Airline Safety and FAA Extension Act of 2010; FAA Advisory Circular 120-109A, _Stall Prevention and Recovery Training_.],
   ),
   quote: [The crew never understood that they were stalling and consequently never applied a recovery manoeuvre.],
   quote-source: "BEA, Final Report on Air France Flight 447, July 2012",

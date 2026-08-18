@@ -53,9 +53,7 @@
       high-energy beam unless the spreading target was confirmed in place — a
       mechanical backstop that could not be talked out of stopping the beam.
       To save cost and simplify the machine, the Therac-25 removed them and
-      trusted software — adapted from the older machines and never engineered
-      from the ground up for safety-critical use — to keep its two beam modes,
-      a hundredfold apart in energy, safely separated. The safety case
+      trusted software — adapted from the older machines and never engineered from the ground up for safety-critical use — to keep its two beam modes, the photon setting drawing a hundred times the electron beam current, safely separated. The safety case
       migrated silently from steel to code.#cn()
     ],
     // -- What Happened --
@@ -70,8 +68,7 @@
       offered to proceed; operators, assured the machine was safe and long
       accustomed to its cryptic faults, did. That fast-edit race condition was
       only one of two independent defects: the fatal 1987 Yakima overdose came
-      from an unrelated bug — a status counter that overflowed to zero once
-      every 256 setups and silently skipped a collimator check — evidence the
+      from an unrelated bug — a status counter that overflowed to zero on every 256th pass through the setup test, hundreds of which run in a single setup, and silently skipped the upper-collimator check — evidence the
       failure was systemic, not a single stray line of code. At least three
       patients died of the radiation burns.#cn()
     ],
@@ -742,10 +739,7 @@
       distinguish the few real alerts from the many spurious ones.#cn()
     ],
     [
-      The governance seam is the structural lesson. Because the Epic
-      Sepsis Model was distributed as a feature of an EHR rather than as
-      a stand-alone clinical-decision-support device, it did not require
-      FDA clearance. The machinery that would normally require
+      The governance seam is the structural lesson. Because the Epic Sepsis Model reached the bedside under the clinical-decision-support carve-out in section 520(o) of the FD&C Act, it was never brought to the FDA for clearance. The machinery that would normally require
       independent validation, post-market surveillance, and demographic
       stratification of performance was never engaged. The model's
       deployment was a regulatory non-event because the regulatory regime
@@ -932,10 +926,7 @@
       Hoffman finding makes both deliverables specifiable in a way
       that more diffuse bias findings did not.#cn() The mechanism has
       since proven portable in a way that extends the deliverable:
-      Omiye et al. (2023, _npj Digital Medicine_) found that commercial
-      large language models reproduce the very false beliefs Hoffman
-      catalogued — about skin thickness, nerve density, and pain
-      tolerance — when queried with medical prompts, so the
+      Omiye et al. (2023, _npj Digital Medicine_) found that four commercial large language models reproduce false beliefs Hoffman catalogued — about skin thickness and pain threshold — alongside race-corrected kidney and lung outputs, when queried with medical prompts, so the
       disconfirmation task now reaches past the medical-school
       curriculum to the AI systems entering the same clinical
       workflows.#cn()

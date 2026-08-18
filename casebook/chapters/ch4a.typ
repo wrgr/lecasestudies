@@ -67,24 +67,19 @@
       Crystal off the coast of Japan; the sea poured into a berthing
       compartment where the crew slept, and seven sailors drowned before they
       could escape.#cn() The NTSB later described a bridge team that had
-      lost track of converging traffic on a clear night, and an officer of
-      the deck whose qualifications and recency on the very procedures the
-      situation demanded had lapsed under the waiver regime. Nine weeks
+      lost track of converging traffic on a clear night, and an officer of the deck who made poor navigational decisions and never called the combat information center for the support the situation demanded. Nine weeks
       later the John S. McCain collided with the tanker Alnic MC near
       Singapore, killing ten: while shifting throttle control between
       consoles, a watchstander unknowingly handed off steering to another
       station, the ship turned across the strait's traffic, and no one on
       the bridge understood the touch-screen helm well enough to recognize
-      what had happened.#cn() For more than a minute the bridge team
-      believed the ship had lost steering it had never lost — a
+      what had happened.#cn() For about three minutes the bridge team believed the ship had lost steering it had never lost — a
       misdiagnosis the interface invited and the training had not equipped
       anyone to overturn.
     ],
     // -- The Investigation --
     [
-      The Navy's Comprehensive Review (2017) judged both collisions
-      avoidable, citing failures in basic seamanship, navigation, and
-      operating the ships' own equipment.#cn() The NTSB found the McCain's
+      The Navy's command investigation reports (November 2017) judged both collisions avoidable — Fitzgerald from an accumulation of smaller errors and lapsed navigational practice, McCain from complacency, over-confidence, and lack of procedural compliance.#cn() The NTSB found the McCain's
       probable cause to be a lack of Navy oversight that produced
       insufficient training and inadequate bridge procedures,#cn() and
       faulted the design of the touch-screen helm, installed to modernize
@@ -97,14 +92,11 @@
       eroded the manning, certification, and maintenance margins the
       surface force was built on, and the readiness reports senior leaders
       relied on had stopped reflecting the conditions on the ships.#cn()
-      Watchbills and crew-day logs gathered after the collisions showed
-      watchstanders routinely averaging fewer than five hours of sleep on
-      patrol — a finding the NTSB folded into its causal chain.
+      Navy rest records showed the McCain's fourteen bridge watchstanders averaging just over 4.9 hours in the 24 hours before the collision — a finding the NTSB folded into its causal chain.
     ],
     // -- The Capability Gap --
     [
-      The gap was invisible from inside. The Strategic Readiness Review
-      described risks that "accumulated over time and did so insidiously,"
+      The gap was invisible from inside. The Comprehensive Review described risks that "accumulated over time and did so insidiously,"
       the system no longer able to see that the processes meant to surface
       shortfalls had themselves failed.#cn() Each individual waiver was
       locally defensible — a deadline met, a deployment kept — but in
@@ -121,10 +113,7 @@
     ],
     // -- Aftermath & Reform --
     [
-      The reforms were the deepest in a generation: the in-person officer
-      pipeline was rebuilt as a multi-phase Basic Division Officer Course,
-      reinstating classroom and simulator instruction the 2003 CD-ROM model
-      had displaced; a Ready-for-Sea Assessment and a Naval Surface Group
+      The reforms were the deepest in a generation: the in-person officer pipeline was rebuilt around a 2018 training continuum that extended the Basic Division Officer Course and added officer-of-the-deck phases, restoring classroom and simulator instruction the 2003 CD-ROM model had displaced; a Ready-for-Sea Assessment and a Naval Surface Group
       Western Pacific stood up to give forward-deployed units the
       independent certification cycle home-ported ships already had;
       circadian watchbills were adopted fleet-wide to fight fatigue; and
@@ -152,7 +141,7 @@
     [R. Rotella et al., #link("https://features.propublica.org/navy-uss-mccain-crash/navy-installed-touch-screen-steering-ten-sailors-paid-with-their-lives/")["The Navy Installed Touch-Screen Steering Systems to Save Money,"] _ProPublica_ (2019).],
     [U.S. Navy, _Strategic Readiness Review_ (Dec. 2017) — risks that "accumulated over time and did so insidiously."],
     [U.S. Navy corrective actions (2017); NTSB/MAR-19/01 recommendations; #link("https://news.usni.org/2020/09/03/ntsb-unexplained-course-change-was-a-critical-error-in-fatal-uss-fitzgerald-collision")[USNI News] (2017–2020).],
-    [Surface Warfare Officers School Command, Basic Division Officer Course curriculum and the post-2017 return to in-person instruction; Naval Surface Group Western Pacific stand-up (2019) as the forward-readiness certification authority.],
+    [Surface Warfare Officers School Command, Basic Division Officer Course curriculum and the post-2017 return to in-person instruction; Naval Surface Group Western Pacific stand-up (2018) as the forward-readiness certification authority.],
     [NTSB/MAR-19/01 (2019) — watchstander fatigue findings, including average sleep hours and the touch-screen helm misdiagnosis sequence.],
   ),
   quote: [The risks that were taken in the Western Pacific accumulated over time and did so insidiously.],
@@ -880,17 +869,14 @@
       gate to look in the wrong place and reject the real track as noise. On
       25 February 1991 an incoming Scud arrived where the Patriot was no
       longer searching, passed unengaged, and struck a barracks in Dhahran,
-      killing twenty-eight soldiers of the 14th Quartermaster Detachment and
-      wounding about a hundred.#cn()
+      killing twenty-eight soldiers — thirteen of them from the 14th Quartermaster Detachment — and wounding ninety-nine.#cn()
     ],
     // -- The Investigation --
     [
       The drift was not unknown: Israeli operators had flagged it two weeks
       earlier from their own sustained use, and engineers had a patch already
       in hand — which reached Dhahran the day after the strike, too late to
-      matter.#cn() The only field mitigation was an advisory to reboot after
-      "very long" run times, never defining "very long," so a crew could obey
-      the instruction to the letter and still drift into the danger band. The
+      matter.#cn() The only field warning said "very long" run times could shift the range gate, never defining "very long" and never naming a reboot interval, so a crew could heed it to the letter and still drift into the danger band. The
       General Accounting Office found the Army had simply presumed no one would
       run a battery continuously for so long, and so never treated the
       accumulating error as a hazard worth specifying or warning against.#cn()
@@ -1541,9 +1527,7 @@
   ),
   kind: "failure",
   summary: [
-    The U.S. Navy entered World War II with the Mark 14 torpedo, so
-    expensive that the Bureau of Ordnance had effectively forbidden
-    live testing in peacetime. Through 1942 submarine crews reported
+    The U.S. Navy entered World War II with the Mark 14 torpedo, so guarded and so costly to expend that the Bureau of Ordnance had not destructively tested it since 1926. Through 1942 submarine crews reported
     torpedoes running deep, failing to detonate, or exploding
     prematurely; the Bureau insisted the weapon was sound and blamed
     the operators. It took about twenty months and the personal intervention
@@ -1558,10 +1542,7 @@
     // -- Background --
     [
       The Mark 14 was the U.S. Navy's standard submarine torpedo at the
-      start of the Pacific War. It had been so expensive to test that
-      the Bureau of Ordnance had effectively forbidden live trials in
-      the 1930s; the weapon went to war essentially unproven against
-      realistic conditions, so the very decision meant to conserve a scarce
+      start of the Pacific War. No destructive test had been fired with its magnetic exploder since 1926 — economy and secrecy together closing off realistic trials; the weapon went to war essentially unproven against realistic conditions, so the very decision meant to conserve a scarce
       and costly weapon guaranteed that its defects would first be discovered
       in combat, by the crews who could least afford them to surface there.#cn()
     ],
@@ -1581,9 +1562,7 @@
     [
       It took about twenty months and the intervention of Admiral Charles
       Lockwood, commander of the Pacific submarine force, who ordered
-      fleet-level testing. A live-fire trial — and the USS Tinosa's
-      July 1943 attack on the Tonan Maru, in which eleven torpedoes struck
-      the stopped ship squarely and failed to detonate — forced the issue.
+      fleet-level testing. A live-fire trial — and the USS Tinosa's July 1943 attack on the Tonan Maru, in which nine torpedoes struck the stopped ship squarely and failed to detonate — forced the issue.
       The tests confirmed the
       torpedo ran about ten feet too deep, that the Mark 6 magnetic
       exploder failed routinely, and that the contact pin buckled on

@@ -37,11 +37,8 @@
   summary: [
     Tennessee's Voluntary Pre-K program enrolled some 18,000 four-year-olds
     a year, and Vanderbilt researchers studied it with a rare large-scale
-    randomized controlled trial — children admitted by lottery against those
-    who applied but didn't enroll. Through kindergarten the pre-K children
-    showed the expected gains in literacy and vocabulary. By third grade the
-    gains had faded, and by sixth grade the pre-K group did somewhat worse
-    than controls on several academic and behavior measures. The unwelcome
+    randomized controlled trial — children randomly assigned to an offer of admission against children randomly assigned to the wait list. Through kindergarten the pre-K children
+    showed the expected gains in literacy and vocabulary. By third grade the control children had caught up and surpassed them, and by sixth grade the pre-K group scored lower on state reading, math and science tests and had more disciplinary infractions and special-education placements. The unwelcome
     result was contested, its methods attacked, and the field largely
     declined to absorb it. The case is in the book not because pre-K is bad —
     other programs show durable effects — but because the measurement was
@@ -55,18 +52,13 @@
       four-year-olds a year. Demand exceeded supply, and that scarcity created
       an ethical lottery — a fair way to ration scarce seats that doubled as a
       clean randomizer. It let Vanderbilt's Peabody Research Institute run
-      something rare in education: a randomized controlled trial, following
-      children admitted by lottery against children who applied but did not
-      enroll, the kind of design rarely available in a live policy setting.#cn()
+      something rare in education: a randomized controlled trial, following children randomly assigned to an offer of admission against children randomly assigned to the wait list, the kind of design rarely available in a live policy setting.#cn()
     ],
     // -- What Happened --
     [
       Through kindergarten the pre-K children showed the expected gains —
       stronger letter knowledge, vocabulary, early literacy — exactly the
-      early result the program had been funded to produce. By third grade the
-      gains had faded. By sixth grade, the researchers reported, the pre-K
-      children were doing somewhat *worse* than the control group on several
-      state academic measures and on teacher-reported behavior — a reversal
+      early result the program had been funded to produce. By third grade the control children had caught up and surpassed them. By sixth grade, the researchers reported, the pre-K children scored *lower* on state reading, math and science tests and had more disciplinary infractions and special-education placements — a reversal
       that turned an expected success story into an uncomfortable one the
       longitudinal design had been built to detect.#cn()
     ],
@@ -107,14 +99,14 @@
   ),
   beats: (
     "Tennessee Voluntary Pre-K served 18,000 four-year-olds; oversubscription enabled a rare lottery-based RCT",
-    "Kindergarten gains faded by third grade; sixth-grade pre-K children did somewhat worse than controls",
+    "Controls caught up and surpassed by third grade; sixth-grade pre-K children scored lower and had more infractions",
     "Field contested the methods and largely declined to internalize findings, defending policy rather than interrogating",
     "Measurement instrument worked; institutional architecture for absorbing inconvenient evidence did not exist",
     "Episode became methodological touchstone in early-childhood research, argued over more than acted upon",
   ),
   references: (
     [#link("https://doi.org/10.1016/j.ecresq.2018.03.005")[M. Lipsey, D. Farran & K. Durkin, "Effects of the Tennessee Pre-Kindergarten Program… Through Third Grade," _Early Childhood Research Quarterly_ 45: 155–176 (2018)] — the RCT and fade-out.],
-    [K. Durkin, M. Lipsey, D. Farran & E. Wiesen, "Effects of a Statewide Pre-Kindergarten Program… Through Sixth Grade," _Developmental Psychology_ 58(3): 470–484 (2022) — the sixth-grade reversal (quoted).],
+    [K. Durkin, M. Lipsey, D. Farran & S. Wiesen, "Effects of a Statewide Pre-Kindergarten Program… Through Sixth Grade," _Developmental Psychology_ 58(3): 470–484 (2022) — the sixth-grade reversal (quoted).],
     [Responses and counter-analyses to the TN-VPK findings (2018–2022) — the contested reception.],
     [National Institute for Early Education Research, _State of Preschool_ yearbooks (2010–2022) — program scale and context.],
     [D. Phillips et al., _Puzzling It Out: The Current State of Scientific Knowledge on Pre-Kindergarten Effects_ (2017); J. Heckman on durable early-childhood programs.],
@@ -684,7 +676,7 @@
   year: "2020",
   domains-list: ("government", "education at scale", "high-stakes assessment"),
   modes-code: "DKN",
-  impact: "Ofqual standardisation algorithm applied to summer 2020 A-level grades following examination cancellation downgraded approximately 39.1% of teacher-estimated grades; results released August 13 2020; algorithm withdrawn August 17 2020 after four days of public protest; Centre Assessment Grades (teacher estimates) substituted; UK House of Commons Education Committee report (2021) documented disproportionate downgrade rates for state-school students",
+  impact: "Ofqual standardisation algorithm applied to summer 2020 A-level grades following examination cancellation downgraded approximately 39.1% of teacher-estimated grades; results released August 13 2020; algorithm withdrawn August 17 2020 after four days of public protest; Centre Assessment Grades (teacher estimates) substituted; the Office for Statistics Regulation's 2021 review found the model failed to command public confidence and that acceptability testing had examined the calculation process rather than the impact on individuals",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -705,11 +697,7 @@
     on Centre-level historical performance more heavily where
     Centre-level cohorts were larger. After four days of public
     protest, on August 17, 2020, the algorithm was withdrawn and
-    Centre Assessment Grades were substituted. The Ofqual
-    technical report acknowledges that the standardisation goal
-    was incompatible with population-level fairness given
-    individual-student variance and the dependence of the model
-    on cohort size. The case pairs with Case 86 (Gándara / AERA
+    Centre Assessment Grades were substituted. The Ofqual technical report states that its statistical measures are meaningful only for groups of students and would over-interpret the evidence if used to predict an individual result, and that greater reliance on teacher grades at small centres carries an absolute disadvantage for students at larger ones. The case pairs with Case 86 (Gándara / AERA
     Open community-college fairness), Case 88 (LiveHint AI bias
     across foundation models), and Case 48 (Johnson school
     surveillance).
@@ -763,13 +751,7 @@
       Assessment Grade level. The withdrawal was structural — it
       affected the entire 2020 cohort — and it was rapid in a way
       that few national-scale algorithmic deployments have been.
-      The House of Commons Education Committee's 2021 report
-      adjudicated the governance record and named the
-      consultation-with-stakeholders failure as the load-bearing
-      one; the technical report had been internally honest about
-      the cohort-size dependence, and the failure was that the
-      dependence had not been surfaced to affected schools and
-      students in advance of deployment.#cn()
+      The Office for Statistics Regulation's March 2021 review adjudicated the governance record and named the engagement failure as the load-bearing one: acceptability testing had examined the process of calculating grades rather than the impact on individuals. The technical report had been internally honest about the cohort-size dependence, and the failure was that the dependence had not been surfaced to affected schools and students in advance of deployment.#cn()
     ],
     [
       The case pairs with Case 86 (Gándara / community-college
@@ -1455,13 +1437,10 @@
     [
       What undid it was everything around the technology. inBloom launched
       without adequate consent frameworks, without meaningful community
-      engagement on data governance, without transparency about what was
-      collected and why, and without any way for parents to participate in
+      engagement on data governance, without ever explaining what the platform was for, in terms a teacher or parent could use, and without any way for parents to participate in
       decisions about their children's data. Each omission read, to a worried
       parent, as a decision made about their child without them in the room.
-      Parent groups organized opposition state by state, and nine states —
-      among them Louisiana and Illinois — withdrew as the political cost of
-      staying overtook any promised efficiency. New York, the last and
+      Parent groups organized opposition state by state, and the coalition of nine shrank to three in seven months — Louisiana out first, then Kentucky, Georgia and Delaware, then Colorado's pilot district — as the political cost of staying overtook any promised efficiency. New York, the last and
       largest partner, was barred from sharing student data with inBloom by
       a provision in the state budget enacted at the end of March 2014, and
       on 21 April 2014 inBloom announced it would wind down. Within about
@@ -1469,9 +1448,7 @@
     ],
     // -- The Investigation --
     [
-      Analysts at Data & Society read inBloom as the failure of technocratic
-      education reform: the assumption that technically sound infrastructure
-      generates its own legitimacy proved catastrophically wrong. Legitimacy,
+      Analysts at Data & Society read the collapse as two forces meeting: a public with low tolerance for risk and uncertainty, and an initiative that never communicated its benefits or won buy-in from the stakeholders it needed. Legitimacy, on that reading, is earned from the people a system acts upon, not conferred by the quality of its engineering. Legitimacy,
       on this reading, is earned from the stakeholders a system acts upon, not
       conferred by the quality of its engineering. The technology was never
       the problem; the governance was — the consent, transparency, and trust
@@ -1512,12 +1489,12 @@
   references: (
     [M. Bulger, P. McCormick & M. Pitcan, _The Legacy of inBloom_, Data & Society Research Institute (2017) — inBloom as a failure of technocratic reform.],
     [Education Week and Hechinger Report coverage of the state withdrawals (2013–2014) — nine states exiting.],
-    [Bulger et al. (2017) — governance, not technology, as the cause; "the technology was not the problem."],
+    [Bulger et al. (2017) — the diagnosis: low public tolerance for risk and uncertainty meeting a failure to communicate benefits and win stakeholder buy-in.],
     [N. Selwyn, _Distrusting Educational Technology_ (2014); d. boyd & K. Crawford, "Critical Questions for Big Data" (2012).],
     [Parent Coalition for Student Privacy archives and the wave of state student-data-privacy legislation that followed inBloom.],
   ),
-  quote: [The technology was not the problem. The governance was the problem.],
-  quote-source: "Paraphrasing the analysis in Bulger, McCormick & Pitcan, Data & Society, 2017",
+  quote: [inBloom was a great solution, but it also highlighted a policy and governance gap that was in K-12, and unfortunately that gap eroded the value proposition of inBloom.],
+  quote-source: "Jat Pannu, COO of the IlliniCloud and K-12 Federation, interviewed in Bulger, McCormick & Pitcan, Data & Society, 2017",
   le-insight: [
     inBloom is the purest governance failure in this dataset. Nothing
     technical was wrong. Everything sociotechnical was. The case is the
@@ -2647,7 +2624,7 @@
   year: "2011–2017",
   domains-list: ("K-12 education", "teacher evaluation", "algorithmic accountability"),
   modes-code: "G",
-  impact: "Houston ISD used the proprietary SAS EVAAS value-added model to attribute student test-score growth to individual teachers and made termination decisions on the scores during the 2011–15 school years; SAS held the model as a trade secret, so teachers could not inspect, replicate, or contest their scores; in May 2017 the federal district court in Hous. Fed'n of Teachers v. Hous. Indep. Sch. Dist., 251 F. Supp. 3d 1168 (S.D. Tex.), denied summary judgment, holding teachers had a protectable property interest and that unverifiable scores could violate Fourteenth Amendment procedural due process; HISD settled in October 2017, agreeing not to use unverifiable value-added scores as a basis for termination and paying $237,000 in fees",
+  impact: "Houston ISD used the proprietary SAS EVAAS value-added model to attribute student test-score growth to individual teachers and made termination decisions on the scores during the 2011–15 school years; SAS held the model as a trade secret, so teachers could not inspect, replicate, or contest their scores; in May 2017 the federal district court in Hous. Fed'n of Teachers v. Hous. Indep. Sch. Dist., 251 F. Supp. 3d 1168 (S.D. Tex.), denied summary judgment on the procedural due process claim alone — granting it on all others — holding teachers had a protectable property interest that unverifiable scores could deprive them of without due process; HISD settled in October 2017, agreeing not to use unverifiable value-added scores as a basis for termination and paying $237,000 in fees",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -2710,14 +2687,7 @@
       them to the district or its employees; the score arrived
       as a number without a derivation. The independent
       research record gave teachers concrete reasons to want
-      one. Amrein-Beardsley and Collins's 2012 study of EVAAS
-      in Houston documented teachers reporting that their
-      instruction changed little from year to year while their
-      EVAAS scores swung widely — roughly half of surveyed
-      teachers reported consistent classifications across
-      years, about what a coin flip would produce — and
-      principals reported pressure to align their observational
-      ratings with the EVAAS number. A score that is unstable
+      one. Amrein-Beardsley and Collins's 2012 study reconstructed the records of four teachers whose contracts were not renewed in 2011 and found that for three of the four, whether the score showed added or detracted value from one year to the next was roughly the flip of a coin — and teachers across the district reported that their principals were skewing observational ratings to match the EVAAS number. A score that is unstable
       year-to-year, generated by a model no one outside the
       vendor can examine, was the sole or decisive input to
       termination decisions.#cn()

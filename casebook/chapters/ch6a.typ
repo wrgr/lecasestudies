@@ -583,9 +583,7 @@
       1999 Amoco merger and again for 2005, and a 2003 site "1,000 Day
       Goals" program the CSB faulted for measuring personal safety and cost
       over process safety — celebrated as a success while it consumed the
-      process-safety margin. The CSB drew the distinction that would
-      reshape the field: "indicators of personal safety are not
-      indicators of process safety."#cn() The Board's force came from
+      process-safety margin. The CSB drew the distinction that would reshape the field: personal safety metrics "are not a good indicator of process safety performance."#cn() The Board's force came from
       naming the deeper error as one of measurement: the company had not
       failed to measure but had measured the wrong dimension and then
       trusted the reassuring number it produced. BP's recordable
@@ -644,8 +642,7 @@
     [A. Hopkins, _Failure to Learn: The BP Texas City Refinery Disaster_ (CCH, 2008).],
     [OSHA Process Safety Management standard (29 CFR 1910.119, 1992) and the CCPS process-safety literature — the personal-vs-process-safety distinction.],
   ),
-  quote: [Indicators of personal safety are not indicators of process safety.],
-  quote-source: "U.S. Chemical Safety Board, BP Texas City Final Investigation Report, 2007",
+  quote: [Personal safety metrics are not a good indicator of process safety performance.], quote-source: "U.S. Chemical Safety Board, BP Texas City Final Investigation Report, 2007",
   le-insight: [
     Texas City is the foundational evidence that organizations can be
     measuring the wrong thing and reporting excellent performance while
@@ -1069,8 +1066,7 @@
     been wrapped in combustible aluminium-composite cladding during a
     refurbishment. The public inquiry found the disaster the culmination of
     decades of failure: cladding firms engaged in "systematic dishonesty,"
-    marketing combustible materials as safe; regulators and inspectors missed
-    effectively banned products across sixteen site visits; and the London
+    marketing combustible materials as safe; the council's building control surveyor was overworked, untrained in cladding, and visited less than he meant to; and the London
     Fire Brigade, whose "stay put" advice proved fatal, was unprepared for a
     cladding fire whose risks earlier incidents had already shown. The
     failure spanned manufacturers, regulators, inspectors, and responders —
@@ -1081,12 +1077,9 @@
     // -- Background --
     [
       Grenfell Tower was a 1970s public-housing block in West London,
-      refurbished in 2015–16 with new exterior cladding intended to improve
+      refurbished between 2012 and 2016 with new exterior cladding intended to improve
       the building's appearance and efficiency. The cladding chosen used a
-      combustible aluminium-composite material — installed despite safety
-      experts' cautions that it was unsuitable for a high-rise, a warning that
-      sat between the people who issued it and the people who specified the
-      panels without ever stopping the decision.#cn()
+      combustible aluminium-composite material — installed while the project's fire engineer never finished the fire safety strategy and never warned the design team, and while published guidance against combustible high-rise cladding sat unread by the people specifying the panels.#cn()
     ],
     // -- What Happened --
     [
@@ -1104,14 +1097,10 @@
       failure by central government and every body responsible. Cladding
       companies had engaged in "systematic dishonesty," marketing combustible
       products as safe and corrupting the very test data buyers relied on;
-      inspectors visited the site sixteen times and none noticed that
-      effectively banned materials were in use, so sixteen chances to catch
-      the hazard each passed it by.#cn() The London Fire Brigade was
+      the council's building control surveyor visited far less often than the monthly schedule he intended, and never recognised that the panels and insulation in use were combustible.#cn() The London Fire Brigade was
       unprepared: the risks of rapidly developing cladding fires were known
       from prior incidents — Knowsley Heights, Garnock Court, Shepherd's Court
-      — but "this knowledge had not informed firefighting policies, practices
-      or training," so each near-miss taught no one whose job was to act on
-      it.#cn()
+      — but the commanders who attended "had received no training in the particular dangers associated with combustible cladding," so each near-miss taught no one.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -1139,22 +1128,21 @@
     ],
   ),
   beats: (
-    "1970s tower refurbished with combustible aluminium-composite cladding despite expert cautions against high-rise use",
+    "1970s tower refurbished with combustible aluminium-composite cladding while the fire engineer never warned the team",
     "Kitchen fire climbed the exterior cladding; stay-put advice held residents inside; seventy-two died",
-    "Inquiry found systematic dishonesty by cladding firms; sixteen inspections missed effectively banned products",
+    "Inquiry found systematic dishonesty by cladding firms; one overworked surveyor never recognised the combustible panels",
     "Distributed capability failure; fraud, capture, incompetence, lost memory converged with no integrated owner",
     "Phase 2 report and government response drove building-safety, cladding, and fire-service reforms",
   ),
   references: (
     [Grenfell Tower Inquiry, _Phase 1 Report_ (2019) — the fire's spread up the cladding and the failure of "stay put."],
     [Grenfell Tower Inquiry, _Phase 2 Report_ (2024) — decades of failure and the combustible-cladding decision.],
-    [Phase 2 Report (2024) — cladding firms' "systematic dishonesty" and the inspection failures across sixteen visits.],
-    [Phase 1 Report (2019) — London Fire Brigade unpreparedness; "this knowledge had not informed firefighting policies, practices or training" (quoted).],
+    [Phase 2 Report (2024) — cladding firms' "systematic dishonesty" and the RBKC building control failures (ch. 62).],
+    [Phase 1 Report (2019) — London Fire Brigade unpreparedness; preparation and planning "was gravely inadequate" (quoted).],
     [UK Government response to the Grenfell Phase 2 report (2025) — building-safety and fire-service reform.],
     [B. Hutter & M. Power (eds.), _Organizational Encounters with Risk_ (2005) — distributed risk ownership.],
   ),
-  quote: [This knowledge had not informed firefighting policies, practices or training.],
-  quote-source: "Grenfell Tower Inquiry, Phase 1, 2019",
+  quote: [The LFB's preparation and planning for a fire such as that at Grenfell Tower was gravely inadequate.], quote-source: "Grenfell Tower Inquiry, Phase 1, 2019",
   le-insight: [
     Grenfell is the strongest evidence in the dataset that capability
     failure can be distributed across many actors, each of whom contributes
@@ -1182,7 +1170,7 @@
   reflection-list: (
     [What is the "grey elephant" — the well-known risk that nobody owns — in your domain?],
     [Design the deliverable that forces a single actor to own the integration risk that Grenfell distributed across dozens.],
-    [Sixteen inspections, prior fires, and expert cautions each touched a fragment of the Grenfell hazard, yet none assembled it. What mechanism in your domain could gather scattered partial warnings into one picture in front of someone empowered to stop the work?],
+    [Site inspections, prior cladding fires, and published guidance each touched a fragment of the Grenfell hazard, yet none assembled it. What mechanism in your domain could gather scattered partial warnings into one picture in front of someone empowered to stop the work?],
   ),
   approaches: (
     during: (
@@ -1622,9 +1610,7 @@
       Orleans area. The scenario projected ten to twenty feet
       of flooding across most of the city and surrounding
       parishes, the destruction of hundreds of thousands of
-      buildings, more than a hundred thousand residents unable
-      to self-evacuate, and fatalities in the tens of
-      thousands. Pam produced draft functional plans —
+      buildings, 300,000 residents who would not evacuate in advance, and fatalities in the tens of thousands. Pam produced draft functional plans —
       search-and-rescue, sheltering, temporary medical care,
       debris — and a schedule of follow-on workshops to turn
       the drafts into executable, resourced capability. When
@@ -1687,10 +1673,7 @@
       recommended dissolving FEMA and rebuilding its function
       inside DHS. The White House's _The Federal Response to
       Hurricane Katrina: Lessons Learned_ (the Townsend
-      report, 23 February 2006) issued 125 recommendations
-      and 17 lessons, including the failure to maintain a
-      common operating picture — the finding that formalized
-      the television-before-operations problem.#cn()
+      report, 23 February 2006) issued 125 recommendations and 17 lessons, and found that officials from national leaders to responders on the ground lacked the situational awareness a prompt response required — the finding that formalized the television-before-operations problem.#cn()
     ],
     [
       Reform arrived through statute. The Post-Katrina
@@ -1726,9 +1709,7 @@
       varies by study and jurisdiction; the casebook reports
       the range, not a number. The analytical spine is the
       Hurricane Pam seam: an exercised, documented capability
-      requirement — levee overtopping, a flooded city, more
-      than a hundred thousand residents who could not
-      self-evacuate — that no institution converted into
+      requirement — levee overtopping, a flooded city, 300,000 residents who would not evacuate in advance — that no institution converted into
       funded, staffed, rehearsed capability in the thirteen
       months before the event. This is the
       disaster-preparedness form of stated versus engineered
@@ -1745,7 +1726,7 @@
     ],
   ),
   beats: (
-    "July 16 – 23, 2004: FEMA-funded Hurricane Pam exercise, ~300 local/state/federal officials — simulated Category 3 storm overtops New Orleans levees, floods the city, strands 100,000+; action items unfunded and unfinished at landfall thirteen months later",
+    "July 16 – 23, 2004: FEMA-funded Hurricane Pam exercise, ~300 local/state/federal officials — simulated Category 3 storm overtops New Orleans levees, floods the city, strands the 300,000 who do not evacuate; action items unfunded and unfinished at landfall thirteen months later",
     "August 29, 2005: Katrina landfall; levee breaches flood ~80% of New Orleans; FEMA logistics cannot track or deliver commodities; Incident of National Significance machinery invoked only after landfall in its first operational use",
     "Unified local/state/federal command never forms; communications interoperability collapses; Superdome and Convention Center conditions known to television audiences before the federal operations picture",
     "Three investigations converge: House \"A Failure of Initiative\" (Feb 2006), Senate \"A Nation Still Unprepared\" (May 2006, recommends dissolving FEMA), White House Townsend report (Feb 2006, 125 recommendations)",
@@ -1766,7 +1747,7 @@
   references: (
     [Select Bipartisan Committee to Investigate the Preparation for and Response to Hurricane Katrina (2006), _A Failure of Initiative_, H. Rept. 109-377, U.S. House of Representatives, February 15, 2006 — including the dedicated Hurricane Pam findings chapter.],
     [U.S. Senate Committee on Homeland Security and Governmental Affairs (2006), _Hurricane Katrina: A Nation Still Unprepared_, S. Rept. 109-322, May 2006 — 325+ interviews, 838,000+ pages of documents reviewed.],
-    [The White House (2006), _The Federal Response to Hurricane Katrina: Lessons Learned_ (the Townsend report), February 23, 2006 — 17 lessons, 125 recommendations, including the common-operating-picture finding.],
+    [The White House (2006), _The Federal Response to Hurricane Katrina: Lessons Learned_ (the Townsend report), February 23, 2006 — 17 lessons, 125 recommendations, including the situational-awareness finding.],
     [U.S. Senate Committee on Homeland Security and Governmental Affairs (2006), _Preparing for a Catastrophe: The Hurricane Pam Exercise_, hearing, S. Hrg. 109-403, January 24, 2006 — testimony on the July 2004 exercise scope and unfinished follow-on work.],
     [Post-Katrina Emergency Management Reform Act of 2006, Title VI of Public Law 109-295, signed October 4, 2006 — rebuilt FEMA authorities, accelerated pre-request federal assistance, national preparedness goal and system.],
   ),
@@ -1804,7 +1785,7 @@
   literature-items: (
     [Select Bipartisan Committee (2006), _A Failure of Initiative_ — House investigation, Hurricane Pam chapter],
     [Senate HSGAC (2006), _Hurricane Katrina: A Nation Still Unprepared_ — eight categories of FEMA failure],
-    [The White House (2006), _Lessons Learned_ (Townsend report) — common-operating-picture finding],
+    [The White House (2006), _Lessons Learned_ (Townsend report) — situational-awareness finding],
   ),
   reflection-list: (
     [Identify an exercise, red-team, or audit finding in your organization that specified a missing capability and was closed as "documented" rather than "built." What would a funded owner, a completion date, and a re-verification event have looked like, and what converts a finding into an obligation in your setting?],

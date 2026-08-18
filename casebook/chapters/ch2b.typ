@@ -547,10 +547,7 @@
   coi: "Authorship: an editor of this volume is the senior author of the underlying study. Included on the published peer-reviewed evidence (ASEE 2023); editorial framing keeps critical distance from the program's self-presentation, and the open question about external/comparative evaluation is preserved in the text.",
   summary: [
     CIRCUIT is a research workforce-development program at Johns
-    Hopkins APL built on eight explicit pillars — holistic
-    recruiting, mission-driven research, targeted technical training,
-    leadership development, high-resolution assessment, diverse
-    mentorship, university partnerships, and career empowerment.
+    Hopkins APL built on eight explicit pillars — holistic recruiting, mission engagement, targeted training, leadership development, integrated assessment, diverse mentorship, academic partnerships, and career empowerment.
     Cervantes, Floryanzia, Sharp, Gray-Roncal, and Johnson
     ("Empowering Trailblazers toward Scalable, Systematized,
     Research-Based Workforce Development," ASEE Annual Conference
@@ -593,8 +590,7 @@
       that lets trainees see why the technical skill they are
       acquiring matters; targeted technical training built around
       the project's immediate needs; leadership development;
-      high-resolution assessment (the assessment is the high-
-      resolution version, not a summative pass/fail);
+      integrated assessment, which runs learning and confidence through feedback loops per module rather than a summative pass/fail;
       diverse mentorship; university partnerships that route the
       cohort across institutions; and career empowerment that
       sustains the capability beyond the program. The model is
@@ -603,10 +599,7 @@
     ],
     [
       The longitudinal outcome evidence is the case's second
-      contribution. The ASEE paper reports outcomes gathered over
-      the six program cycles from 2017 through 2023 — cohort sizes
-      growing year over year, with over 100 students supported in
-      2022. The program presents itself as a replicable model,
+      contribution. The ASEE paper reports outcomes gathered over the six program cycles from 2017 through 2023 — roughly 220 undergraduates, 15 graduate students and 23 high schoolers served through the 2022 cycle, with over 100 students supported in 2022 alone. The program presents itself as a replicable model,
       with the documentation, assessment instruments, and pillar-
       level operationalization that a replicating institution
       would need.#cn()
@@ -5391,14 +5384,7 @@
     [
       The honest framing is the one the literature itself
       supplies, and the case preserves it as learning rather
-      than critique. Sustainability is the field's own named
-      open problem: McIntosh and colleagues, analyzing fidelity
-      data from roughly 3,000 schools, found that speed of
-      initial fidelity attainment predicts sustained
-      implementation, that middle and high schools are at
-      elevated risk of low implementation, and that abandonment
-      of effectively implemented practice is commonplace
-      (McIntosh et al. 2013, 2016). Sugai and Horner's 2020
+      than critique. Sustainability is the field's own named open problem: McIntosh and colleagues, tracking fidelity across 5,331 schools over five years, sorted them into four patterns — Sustainers (29%), Slow Starters (13%), Late Abandoners (24%), and Rapid Abandoners (34%) — and found middle and high schools markedly likelier than elementary schools to abandon the practice, whether late or fast (McIntosh, Mercer, Nese, & Ghemraoui 2016). Sugai and Horner's 2020
       synthesis frames sustaining and scaling as a distinct
       engineering problem from demonstrating efficacy. That the
       PBIS research community measured its own implementation
@@ -5475,7 +5461,7 @@
   reflection-list: (
     [Pick an evidence-based practice in your domain that underperformed at a new site. What would its SET or TFI look like — the scored, repeatable observation that distinguishes "the practice failed" from "the practice was never implemented"? Who would administer it, and on what cadence?],
     [The Maryland scale-up replicated infrastructure — district coaching capacity, annual fidelity measurement, a university research partner — rather than distributing a framework document. Map your own scale-up plan against those three layers. Which one is missing, and what does the PBIS sustainability literature predict happens without it?],
-    [McIntosh and colleagues found abandonment of effectively implemented practice is commonplace, and that speed of initial fidelity attainment predicts sustainability. What early-implementation signal plays that role in your setting, and is anyone measuring it?],
+    [McIntosh and colleagues found that most schools fell into an abandoning pattern within five years, and that middle and high schools abandoned fastest. What early signal would flag an abandonment risk in your setting, and is anyone measuring it?],
   ),
   courses: ("LEN 2", "LEN 4", "LEN 5"),
 )

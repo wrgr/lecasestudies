@@ -1340,9 +1340,7 @@
     femoral insertion site, and remove unnecessary catheters — and not one of them was unknown
     to the physicians it governed. The question was never what to do, but
     whether it would be done every time. The Keystone project, launched
-    across 103 Michigan ICUs in 2004, paired the checklist with a cultural
-    change: nurses were not merely permitted but required to stop the
-    procedure if a step was skipped. That authorization is the element the case treats as load-bearing — though it
+    across 103 Michigan ICUs in 2004, paired the checklist with a cultural change: nurses were empowered to stop the procedure, in non-emergency situations, whenever a step was skipped. That authorization is the element the case treats as load-bearing — though it
     rode inside a multi-component bundle (clinician education, a dedicated line
     cart, daily catheter-review goals, and monthly infection-rate feedback) that
     the trial tested as a whole and could not decompose. Central-line-associated bloodstream infections
@@ -1365,20 +1363,11 @@
     // -- The Intervention --
     [
       In 2004, Peter Pronovost's team launched the Keystone ICU project
-      across 103 Michigan units. It combined a simple five-item central-line
-      checklist — hand hygiene, chlorhexidine skin prep, full-barrier
-      draping, sterile gown-mask-gloves, and a sterile dressing — with an
-      explicit authorization: nurses were required, not merely permitted,
-      to stop any procedure in which a step was missed. The distinction
-      between permitted and required was deliberate — a permission a nurse
-      might decline to exercise against a senior physician became an
-      obligation the institution stood behind, removing the personal risk of
-      intervening.#cn()
+      across 103 Michigan units. It combined a simple five-item central-line checklist — hand washing, full-barrier precautions at insertion, chlorhexidine skin prep, avoiding the femoral site where possible, and removing unnecessary catheters — with an explicit authorization: nurses were empowered to stop any non-emergency procedure in which a step was missed. The authorization was deliberate — a nurse who would otherwise have had to challenge a senior physician on her own account now acted on a standing institutional warrant, which is what lowered the personal risk of intervening.#cn()
     ],
     // -- How It Worked --
     [
-      The checklist was the technical half; the nurses' enforcement
-      authority was the cultural half, and it was the load-bearing one.
+      The checklist was the technical half; the nurses' enforcement authority was the cultural half. The trial could not weigh the two, and the program's own ex post theory credits the networked collaborative and the monthly infection data alongside the stop.
       Before Keystone, the path to intervene did not exist; after it, the
       path was institutional and expected. The pairing converted knowledge
       everyone already had into behavior that happened every time. The
@@ -1421,7 +1410,7 @@
   references: (
     [Pronovost, P. et al. (2006), "An Intervention to Decrease Catheter-Related Bloodstream Infections in the ICU," _NEJM_ 355 — the trial and the near-zero result.],
     [Pronovost & Vohr (2010), _Safe Patients, Smart Hospitals_ — the checklist-plus-nurse-authority pairing (paraphrased).],
-    [Lipitz-Snyderman, A. et al. (2011), _BMJ_ — sustained effect at follow-up.],
+    [Pronovost, P. et al. (2016), \"Sustaining Reductions in CLABSI in Michigan ICUs: A 10-Year Analysis,\" _Am J Med Qual_ 31(3):197–202 — the effect sustained through 2013.],
     [Agency for Healthcare Research and Quality, CUSP toolkit — dissemination across states.],
     [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — the authorization, not the list, as the active ingredient.],
   ),
@@ -1493,10 +1482,7 @@
   summary: [
     The Targeted Real-time Early Warning System (TREWS) is a machine-learning
     sepsis-detection tool deployed at five Johns Hopkins hospitals; Duke's
-    Sepsis Watch follows the same pattern. The Adams et al. prospective
-    multi-site study (_Nature Medicine_ 2022) reported reduced in-hospital
-    mortality, reduced organ failure, shorter length of stay, and improved
-    antibiotic timeliness associated with deployment — conditional on
+    Sepsis Watch follows the same pattern. The Adams et al. prospective multi-site study (_Nature Medicine_ 2022) reported reduced in-hospital mortality, reduced organ failure, and shorter length of stay associated with deployment; the companion Henry et al. paper reported the antibiotic-timing effect — conditional on
     clinicians acting on alerts within a defined window. The benefit was
     not the model in isolation. It was the model plus a deliberately
     engineered alert, workflow, and clinician-confirmation layer that made
@@ -1523,8 +1509,7 @@
       at Duke are the two best-documented instances of this approach. The
       Adams et al. prospective study of ~590,000 patient encounters
       reported that when clinicians confirmed an alert within three hours,
-      in-hospital mortality, organ failure, and length of stay were lower
-      than for matched controls, and antibiotics were given sooner. The
+      in-hospital mortality, organ failure, and length of stay were lower than for patients whose alert was not confirmed within that window, after adjustment for presentation and severity. The
       evidence is observational rather than randomized, but it is
       multi-site, pre-registered, and outcome-grounded.#cn()
     ],
@@ -2494,7 +2479,7 @@
   year: "1990 – 2020 – 2025",
   domains-list: ("medical devices", "clinical care", "health equity"),
   modes-code: "DGN",
-  impact: "A bedside device validated on a non-representative population systematically under-detected hypoxemia in Black patients for thirty years; the bias persisted because device validation was never demographically stratified",
+  impact: "A bedside device validated on a non-representative population systematically under-detected hypoxemia in Black patients for thirty years; the bias persisted because validation asked only for a token darkly-pigmented minimum and reported accuracy as a single pooled number, never broken out by skin tone",
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -2509,10 +2494,7 @@
     frequency of *occult hypoxemia* (arterial saturation \<88% despite a
     pulse-ox reading of 92–96%) as White patients. The finding replicated
     Jubran & Tobin (_Chest_ 1990), published thirty years earlier and
-    overlooked operationally. The bias persisted because device
-    validation was never demographically stratified — the aggregate
-    accuracy number on FDA clearance documentation concealed a
-    group-specific failure mode. The discovery drove FDA review and, in
+    overlooked operationally. The bias persisted because validation asked only for two darkly pigmented subjects or fifteen percent of the pool and pooled every measurement into one accuracy number — the aggregate on FDA clearance documentation concealed a group-specific failure mode. The discovery drove FDA review and, in
     January 2025, a draft guidance recommending that manufacturers
     evaluate device performance across diverse skin pigmentations during
     validation. The case is a *failure-to-intervention arc*: the failure
@@ -2546,8 +2528,7 @@
       household-scale triage tool, made it harder to ignore.#cn()
     ],
     [
-      The bias persisted because device validation was never
-      demographically stratified at clearance. The aggregate accuracy
+      Validation at clearance asked for two darkly pigmented subjects or fifteen percent of the pool, and pooled every paired measurement into one accuracy figure. The aggregate accuracy
       number — clinically acceptable on average — concealed a
       group-specific failure mode. The capability gap was not in the
       clinician using the device or in the manufacturer's engineering;
@@ -2587,7 +2568,7 @@
     "Pulse oximetry depends on tissue absorbance, including melanin; clearance documentation reports aggregate accuracy",
     "Jubran & Tobin 1990 documented the bias; the finding did not change validation practice for thirty years",
     "Sjoding et al. 2020 replicated in two large modern cohorts; ~3× higher occult hypoxemia in Black patients",
-    "The bias persisted because validation was never demographically stratified — aggregate accuracy concealed a group-specific failure",
+    "Validation carried a token darkly-pigmented minimum and one pooled accuracy number — aggregate accuracy concealed a group-specific failure",
     "FDA 2025 draft guidance corrects the validation architecture; the measured disparities-outcome effect is the continuing work",
   ),
   approaches: (
@@ -2605,7 +2586,7 @@
   references: (
     [Sjoding, Dickson, Iwashyna, Gay, & Valley (2020), "Racial Bias in Pulse Oximetry Measurement," _New England Journal of Medicine_ 383(25):2477–2478, doi:10.1056/NEJMc2029240.],
     [Jubran & Tobin (1990), "Reliability of Pulse Oximetry in Titrating Supplemental Oxygen Therapy in Ventilator-Dependent Patients," _Chest_ 97(6):1420–1425 — original finding, published thirty years earlier.],
-    [FDA (2025), "Pulse Oximeters for Medical Purposes — Non-Clinical and Clinical Performance Testing, Labeling, and Premarket Submission Recommendations: Draft Guidance for Industry and Food and Drug Administration Staff," issued January 7 2025, Docket No. FDA-2023-N-4976; Federal Register notice 2024-31540 — the regulatory corrective-action artifact, language may evolve in final.],
+    [FDA (2025), "Pulse Oximeters for Medical Purposes — Non-Clinical and Clinical Performance Testing, Labeling, and Premarket Submission Recommendations: Draft Guidance for Industry and Food and Drug Administration Staff," issued January 6 2025, Docket No. FDA-2023-N-4976; Federal Register notice 2024-31540, published January 7 2025 — the regulatory corrective-action artifact, language may evolve in final.],
     [Fawzy et al. (2022), "Racial and Ethnic Discrepancy in Pulse Oximetry and Delayed Identification of Treatment Eligibility Among Patients With COVID-19," _JAMA Internal Medicine_ — downstream effect during the pandemic.],
   ),
   quote: [Aggregate accuracy is not group accuracy. A device can be acceptable on average and unsafe for one population.],

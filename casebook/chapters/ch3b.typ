@@ -534,7 +534,7 @@
   year: "1981 – present",
   domains-list: ("aviation",),
   modes-code: "THN",
-  impact: "CAST set an 80% fatality-risk reduction target and reported 83% for 1998–2008 — a portfolio result across 72 safety enhancements, credited by CAST and the FAA to CAST's work \"along with new aircraft, regulations and other activities\"; CRM's separate contribution is not isolated in any published estimate, and CRM predates the measurement window by seventeen years",
+  impact: "CAST adopted the White House Commission's 80% fatality-risk reduction target and reported 83% for 1998–2008 and reported 83% for 1998–2008 — a portfolio result across 70 selected safety enhancements, credited by CAST and the FAA to CAST's work \"along with new aircraft, regulations and other activities\"; CRM's separate contribution is not isolated in any published estimate, and CRM predates the measurement window by seventeen years",
   diagram: dgm.dgm-crm,
   kind: "intervention",
   summary: [
@@ -544,8 +544,7 @@
     but of the system by which skill in one seat reached another. Crew
     Resource Management, formalized by United Airlines in 1981,
     re-engineered the cockpit as a coordinated team: explicit communication
-    protocols, named authority gradients, structured briefings. Twenty
-    years later the Commercial Aviation Safety Team (CAST) added
+    protocols, named authority gradients, structured briefings. Sixteen years later the Commercial Aviation Safety Team (CAST) added
     closed-loop analysis of operational data to find and fix hazards before
     they caused accidents. The pairing — cultural redesign plus continuous
     evidence — helped drive the 83% reduction in U.S. commercial-aviation fatality
@@ -593,11 +592,11 @@
     ],
     // -- The Evidence --
     [
-      Twenty years on, the Commercial Aviation Safety Team added the
+      Sixteen years on, the Commercial Aviation Safety Team added the
       missing second half: closed-loop hazard identification on operational
       data, prioritized enhancements, tracked implementation, and measured
       outcomes. CAST set an 80% fatality-reduction target and exceeded it,
-      reaching 83% by 2007 — work recognized with the 2008 Collier Trophy.
+      reaching 83% across 1998–2008 — work recognized with the 2008 Collier Trophy.
       Over twenty years, fatalities per 100 million passengers fell roughly
       95%. The loop closed on itself: data surfaced the next hazard,
       enhancements were prioritized against it, and the measured outcome fed
@@ -851,8 +850,7 @@
     reporting an event to ASRS confers immunity from FAA enforcement for
     the conduct reported, within specified limits, making honest reporting
     the rational choice. Over nearly fifty years and more than two million
-    reports, ASRS has become the world's largest repository of
-    aviation-safety information, surfacing patterns — automation surprise,
+    reports, ASRS has become one of the world's largest sources of aviation-safety and human-factors information, surfacing patterns — automation surprise,
     runway incursions, fatigue effects — before they reached formal
     investigation thresholds. The architecture has been emulated across
     domains, and is the canonical success case for an evidence system
@@ -987,7 +985,7 @@
   year: "1996 – 2002",
   domains-list: ("aviation", "safety engineering", "human factors"),
   modes-code: "HKG",
-  impact: "Honeywell's Enhanced Ground Proximity Warning System (EGPWS, 1996), mandated by the FAA as Terrain Awareness and Warning System (TAWS) for US-registered turbine aircraft beginning in 2000 and broadly worldwide by 2002, converted controlled flight into terrain (CFIT) — historically one of the largest categories of commercial-aviation fatalities — into a category whose rate in equipped fleets has fallen sharply; CFIT events on properly equipped and operating airliners are now rare",
+  impact: "AlliedSignal's Enhanced Ground Proximity Warning System (EGPWS, 1996; now Honeywell's), mandated by the FAA as Terrain Awareness and Warning System (TAWS) for US-registered turbine aircraft beginning in 2000 and broadly worldwide by 2002, converted controlled flight into terrain (CFIT) — historically one of the largest categories of commercial-aviation fatalities — into a category whose rate in equipped fleets has fallen sharply; CFIT events on properly equipped and operating airliners are now rare",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -1047,10 +1045,7 @@
       reduced CFIT meaningfully through the 1970s and 80s, but
       had two structural limits: it produced late warnings
       (the aircraft was already close to terrain when the alert
-      fired), and it was blind to terrain ahead of the aircraft
-      — the Cali accident occurred in a GPWS-equipped aircraft
-      because the rising terrain was ahead of the flight path,
-      not below.#cn()
+      fired), and and it was blind to terrain ahead of the aircraft — at Cali the GPWS fired only about twelve seconds before impact, because the rising terrain was ahead of the flight path, not below.#cn()
     ],
     [
       Enhanced GPWS (EGPWS), introduced by Honeywell in 1996,
@@ -1061,9 +1056,7 @@
       and provide alerts well before terrain contact is
       imminent. The FAA codified the capability in the
       Terrain Awareness and Warning System (TAWS) regulation,
-      requiring TAWS-class equipment on US-registered turbine
-      aircraft with six or more passenger seats beginning
-      March 29, 2000, with full equipage by 2005. ICAO and
+      requiring TAWS-class equipment on US-registered turbine aircraft with six or more passenger seats under a rule published 29 March 2000 and effective 29 March 2001, binding new-build aircraft from March 2002 and the whole fleet by March 2005. ICAO and
       most national regulators followed with parallel
       mandates.#cn()
     ],
@@ -1125,7 +1118,7 @@
     [Bateman, C. D. (1999), "The Introduction of Enhanced Ground Proximity Warning Systems (EGPWS) into Civil Aviation Operations Around the World," in _Proceedings of the 11th Annual European Aviation Safety Seminar_, Flight Safety Foundation, pp. 259–274 — developer history.],
     [Federal Aviation Administration (2000), 14 CFR §§ 91.223, 121.354, 135.154 — Terrain Awareness and Warning System (TAWS) equipage requirement.],
     [Flight Safety Foundation (1998 – 2000), CFIT / ALAR Task Force reports — operational and outcome analyses motivating mandate.],
-    [NTSB (1996), Aircraft Accident Report AAR-96-05, American Airlines 965, Cali, Colombia, December 20 1995.],
+    [Aeronáutica Civil of the Republic of Colombia (1996), _Aircraft Accident Report: Controlled Flight Into Terrain, American Airlines Flight 965, Boeing 757-223, N651AA, near Cali, Colombia, December 20, 1995_ (NTSB participating, DCA96RA020).],
     [Royal Commission to Inquire into the Crash on Mount Erebus, Antarctica of a DC10 Aircraft Operated by Air New Zealand Limited (1981), final report (Mahon report).],
   ),
   quote: [The capability depends on the standard being honored in operation, not on the equipment being installed.],

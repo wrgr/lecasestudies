@@ -256,8 +256,7 @@
       against a handful per week at comparable US plants — figures that trace
       to a 2007 BBC report and a since-removed plant-tour page, not to
       audited data. NUMMI is the usual proof: GM's Fremont plant closed in
-      1982; the joint venture reopened it in 1984 with more than 85 percent
-      of the same laid-off UAW workforce and reached Japanese quality parity.
+      1982; the joint venture reopened it in 1984 with approximately 85 percent of the same laid-off UAW workforce and came within reach of Takaoka's quality.
       But NUMMI changed everything at once — Toyota management, team
       structure, worker-authored standardized work, a no-layoff commitment,
       and training trips to Takaoka. No study isolates the cord's marginal
@@ -532,7 +531,7 @@
   year: "2021 – present",
   domains-list: ("tech",),
   modes-code: "TH",
-  impact: "Tens of millions of developers using GitHub Copilot, Cursor, and peers; productivity gains documented; security and correctness implications still being characterized",
+  impact: "Twenty million GitHub Copilot users by mid-2025, plus Cursor and peers; productivity gains documented; security and correctness implications still being characterized",
   diagram: dgm.dgm-compare(
     "short term",
     "more output",
@@ -548,7 +547,7 @@
   summary: [
     AI-augmented coding tools — GitHub Copilot, Cursor, Codeium, and peers
     — represent the largest real-time experiment in human-AI collaboration
-    in this book, with tens of millions of developers using them daily.
+    in this book, with twenty million Copilot users alone by mid-2025.
     Published studies (Peng et al. 2023) document real short-term
     productivity gains; other work (Pearce et al. 2022) finds a substantial
     share of AI-generated completions in security-sensitive settings contain
@@ -566,8 +565,7 @@
     [
       AI coding assistants moved from novelty to infrastructure in a few
       years. GitHub Copilot, Cursor, Codeium, and similar tools now
-      suggest, complete, and generate code for tens of millions of
-      developers daily — the largest real-time experiment in human-AI
+      suggest, complete, and generate code for twenty million Copilot users alone — the largest real-time experiment in human-AI
       collaboration in professional knowledge work to date, conducted not
       in a study design but in the live practice of an entire profession,
       with no control group and no agreed measure of what it is doing to

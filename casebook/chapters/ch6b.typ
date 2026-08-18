@@ -114,11 +114,7 @@
       has lost one — USS Scorpion in 1968, the only post-1963 loss
       that was not SUBSAFE-certified. In 2003 the Columbia Accident
       Investigation Board, examining the loss of the Space Shuttle
-      Columbia, cited SUBSAFE in its final report as the
-      capability-certification model NASA should adopt for human
-      spaceflight. The endorsement is from an investigation body
-      with no Navy institutional stake, examining a different
-      catastrophic-system domain.#cn()
+      Columbia, cited SUBSAFE in its final report as one of three independent safety programs whose practices yielded lessons NASA should weigh in redesigning its own organization. The endorsement comes from a board examining a different catastrophic-system domain — and one chaired by a Navy admiral, with the commander of the Naval Safety Center among its members.#cn()
     ],
     [
       The hedge has to survive into the case. The zero-loss record
@@ -546,16 +542,13 @@
   summary: [
     In 1982, seven people in the Chicago area died after taking Tylenol
     capsules laced with potassium cyanide. Not knowing who was responsible
-    or how widespread the tampering was, Johnson & Johnson recalled every
-    Tylenol product nationwide — 31 million bottles, at a cost of roughly
-    \$100 million — suspended advertising, and engaged openly with the FBI
+    or how widespread the tampering was, Johnson & Johnson recalled every bottle of Tylenol capsules nationwide — 31 million bottles, at a cost of roughly \$100 million — suspended advertising, and engaged openly with the FBI
     and FDA. The response was unprecedented in U.S. corporate practice, and
     it was a direct application of the J&J Credo, written in 1943, which
     had pre-specified that the company's first responsibility was to its
     customers. The reform that followed reshaped consumer packaging
     worldwide — tamper-evident seals and blister packs — and the FDA issued
-    tamper-resistant-packaging rules within months. Tylenol recovered its
-    market share within a year.
+    tamper-resistant-packaging rules within months. Tylenol climbed back to a 30 percent share by mid-1983 and to its pre-crisis 35 percent by year's end.
   ],
   sections: (
     // -- Background --
@@ -573,8 +566,7 @@
     [
       After seven people in the Chicago area died from Tylenol capsules
       laced with potassium cyanide, and with the source and scope of the
-      tampering unknown, Johnson & Johnson recalled every Tylenol product
-      nationwide — about 31 million bottles, at a cost near \$100 million —
+      tampering unknown, Johnson & Johnson recalled every bottle of Tylenol capsules nationwide — about 31 million bottles, at a cost near \$100 million —
       suspended all advertising, and engaged publicly with the FBI and FDA
       rather than minimizing exposure. Recalling nationwide despite the
       tampering being known only in Chicago was the decisive choice — it
@@ -596,9 +588,7 @@
     ],
     // -- The Evidence --
     [
-      The response, unprecedented in U.S. corporate practice, preserved
-      public trust: Tylenol recovered its market share within a year
-      despite the enormous short-term cost. The case became the canonical
+      The response, unprecedented in U.S. corporate practice, preserved public trust: Tylenol climbed from a 7 percent share back to 30 percent by mid-1983 and to its pre-crisis 35 percent by year's end, despite the enormous short-term cost. The case became the canonical
       positive example in business education of crisis response driven by
       capability commitment rather than legal minimization. The market
       recovery is what makes the case persuasive rather than merely
@@ -623,7 +613,7 @@
     "The 1943 Credo pre-specified customers ahead of shareholders, ranking the trade-off crisis pressure inverts",
     "J&J recalled 31 million bottles nationwide and engaged openly with regulators despite localized tampering",
     "Pre-committed values moved the hardest decision out of the moment of maximum pressure",
-    "Market share recovered within a year; trust repaid the hundred million spent protecting customers",
+    "Market share back to 30 percent by mid-1983 and to 35 percent by year's end; trust repaid the hundred million spent protecting customers",
     "Tamper-evident packaging became standard and pre-committed values emerged as the deeper institutional principle",
   ),
   references: (
@@ -633,7 +623,7 @@
     [FDA Final Rule on Tamper-Resistant Packaging (1982) — the packaging reform.],
     [Edmondson, A. (2018), _The Fearless Organization_ — pre-committed values under stress.],
   ),
-  quote: [The Credo is all about the consumer. When those seven deaths occurred, the Credo made it very clear at that point exactly what we were all about.],
+  quote: [The credo made it very clear at that point exactly what we were all about. It gave me the ammunition I needed to persuade shareholders and others to spend the \$100 million on the recall.],
   quote-source: "James Burke (Johnson & Johnson CEO) — closing sentence quoted in Lasting Leadership (Wharton); opening lead is the editors' paraphrase",
   le-insight: [
     Tylenol is the canonical positive case for institutional response
