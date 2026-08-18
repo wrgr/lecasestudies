@@ -4862,8 +4862,7 @@
   leo-anchor: "LEO-4, LEO-5",
   summary: [
     The Colorado Clinical and Translational Sciences Institute
-    built a structured team-science training program — explicit
-    competency targets, structured exercises, mentor pairings —
+    built a structured team-science training program — a prerequisite online module, six interactive workshops, active-learning exercises —
     and evaluated it across three 2020–2022 cohorts (221
     registered participants; 117 pre-program and 46 post-program
     survey respondents) using a pre/post design. The evaluation
@@ -4874,8 +4873,7 @@
     (p\<0.05) across all three components — with the largest gains
     in the structured / tool-based domains (Team Planning,
     Managing a Team) and the smallest gain in Interpersonal
-    Relations, the component the authors explicitly note is the
-    hardest. The case treats interdisciplinary collaboration as an
+    Relations, the only component scored on frequency of use rather than familiarity. The case treats interdisciplinary collaboration as an
     engineerable, measurable capability — the amended Domain 3
     sub-competency (collaboration
     as a unit of measurement, distinct from any individual
@@ -4901,9 +4899,7 @@
     ],
     [
       The Colorado Clinical and Translational Sciences Institute
-      built a structured team-science training program with
-      explicit competency targets, structured exercises, and
-      mentor pairings. The program ran across three 2020–2022 cohorts with 221
+      built a structured team-science training program: a prerequisite Teaming 101 web module and six interactive workshops. It ran across three 2020–2022 cohorts with 221
       registered participants; the pre/post design drew 117
       pre-program and 46 post-program survey respondents. The evaluation
       paper's central methodological contribution is the
@@ -4911,8 +4907,7 @@
       resolves team-science capability into three competency
       components: Team Planning (the structured front-end of
       collaboration), Managing a Team (the structured operational
-      half), and Interpersonal Relations (the unstructured half
-      that the literature describes as the hardest to train).#cn()
+      half), and Interpersonal Relations (the unstructured half, scored on frequency of use because participants already knew it).#cn()
     ],
     [
       Pre/post comparison showed statistically significant
@@ -4926,15 +4921,13 @@
       honest result.#cn()
     ],
     [
-      The honest limit the authors also name carries into the
-      case. The TEAMS instrument and the pre/post comparison
+      The honest limit carries into the case. The authors name the response bias and the self-report; the design shows the rest. The TEAMS instrument and the pre/post comparison
       measure self-reported perceived competency, not downstream
       collaboration outcome. The design did not track participants
       longitudinally into their next collaborative projects, did
       not measure integration metrics on the projects they ran
       after the training, and did not compare to a non-trained
-      control. The evidence is the strongest available current
-      evidence for a structured team-science training program; it
+      control. The evidence is one of the few published pre/post evaluations of a structured team-science training program; it
       is not closed proof of downstream collaboration impact, and
       the case carries the qualification rather than collapsing it.#cn()
     ],
@@ -4963,7 +4956,7 @@
     during: (
       [Resolve collaboration capability into measurable components — Team Planning, Managing a Team, Interpersonal Relations — and structure the training so each component has tools, exercises, and an assessment instrument.],
       [Validate the measurement instrument before relying on it for evaluation; the TEAMS instrument's three-component structure is the load-bearing methodological contribution.],
-      [Acknowledge in the program design that the interpersonal component is the hardest to train and the slowest to move; design the exercises and the mentor pairings around that asymmetry rather than against it.],
+      [Acknowledge in the program design that the interpersonal component moved least and did not reach the intended level of use; the authors' own recommendation is more role-play and real-situation practice, not more lecture.],
     ),
     after: (
       [Report the pattern of gains, not just the aggregate; the smaller-gain-on-interpersonal finding is the honest signal about what the structured training can and cannot do.],
@@ -4972,9 +4965,9 @@
     ),
   ),
   references: (
-    [Colorado CTSA, "Team science training for clinical and translational scientists: An assessment of effectiveness," _Journal of Clinical and Translational Science_, PMC12392353.],
-    [Falk-Krzesinski et al. (2010), "Mapping a research agenda for the science of team science," _Research Evaluation_ — broader team-science literature backdrop.],
-    [National Research Council (2015), _Enhancing the Effectiveness of Team Science_ — the IOM/National Academies team-science synthesis.],
+    [Mook, A., Knerich, V., Komaie, G., Cicutto, L., & Cross, J. (2025), "Team science training for clinical and translational scientists: An assessment of effectiveness," _Journal of Clinical and Translational Science_ 9(1):e158, doi:10.1017/cts.2025.10088.],
+    [Falk-Krzesinski et al. (2011), "Mapping a research agenda for the science of team science," _Research Evaluation_ 20(2):143–156 — broader team-science literature backdrop.],
+    [National Research Council (2015), _Enhancing the Effectiveness of Team Science_ (National Academies Press) — the National Academies team-science synthesis.],
     [v2 paired cases: IPE evidence gap (122), Implementation Science Training (123) — the frontier/measurement companions.],
   ),
   quote: [The largest gains were in the structured half. The hardest half — interpersonal relations — moved least, and the paper states it plainly.],
@@ -5004,7 +4997,7 @@
   literature-items: (
     [Colorado CTSA team-science training evaluation, _JCTS_],
     [National Research Council (2015), _Enhancing the Effectiveness of Team Science_],
-    [Falk-Krzesinski et al. (2010), _Research Evaluation_],
+    [Falk-Krzesinski et al. (2011), _Research Evaluation_],
   ),
   reflection-list: (
     [Identify a collaboration-dependent capability in your domain. What three or four components would you resolve it into for measurement purposes, and what instrument would you validate to test the resolution?],
@@ -5018,11 +5011,11 @@
 #case(
   number: 41,
   slug: "implementation-science-training-stated",
-  title: "Implementation-Science Training — Stated Goals Outrunning Operational Practice",
+  title: "Translational-Workforce Training — Stated Goals Outrunning Named Practice",
   year: "2020s",
   domains-list: ("implementation science", "translational workforce", "education"),
   modes-code: "KN",
-  impact: "Survey of CTSA-funded TL1 training programs (N=50): most name collaboration, team science, and multi/inter/cross-disciplinary training as goals, but far fewer name the specific competency practices as distinguishing features — experiential learning in 24% of programs, a competency-based curriculum in just 6%",
+  impact: "Survey of CTSA-funded TL1 training programs (N=50, fielded 2019): 80% name collaboration and/or team science among their stated goals and 46% name multi/inter/cross-disciplinary training, but goals that name a specific practice are far rarer — program evaluation 38%, experiential learning 24%, and competency-based training named by just 6% of the 48 programs describing what distinguishes them",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -5033,16 +5026,9 @@
     Implementation science — the discipline of moving validated
     evidence into operational practice — is one of the most
     consequential cross-domain-transfer competencies in
-    contemporary medicine and adjacent fields, and the CTSA T32 /
-    TL1 program survey (N=50 programs) examined whether it is
-    being taught systematically. The headline finding is the same
+    contemporary medicine and adjacent fields, and the CTSA T32 / TL1 program survey (N=50 programs) is the closest national picture of what that training arm says it is for. The headline finding is the same
     structural pattern as the IPE case (122) at smaller scale:
-    most programs name the right goals — collaboration, team
-    science, multi/inter/cross-disciplinary training — but far
-    fewer name the specific competency practices — a competency-
-    based curriculum in just 6% of programs, experiential learning
-    in 24%, program evaluation in 38% — that those stated goals
-    imply. The picture is of a field that
+    80% of programs name collaboration and/or team science among their goals and 46% name multi/inter/cross-disciplinary training, but the goals that name a specific practice are rarer — program evaluation 38%, experiential learning 24%, and competency-based training in 6% of the programs saying what sets them apart. The picture is of a field that
     has converged on what interdisciplinary translation training
     should aim for, but where the operational practices lag the
     stated goals — the same enthusiasm-ahead-of-evidence pattern
@@ -5066,26 +5052,10 @@
       programs are its training arm.#cn()
     ],
     [
-      The case's evidence base is a 2021 survey of CTSA-funded TL1
-      training programs (N=50) examining what those programs
-      actually do at the operational level. The survey covers the
-      stated goals — what the programs say they aim to develop —
-      and the operational practices — what the programs do, in
-      practice, to develop it. The stated-goals side is where the
-      programs converge: most name collaboration, team science,
-      and multi/inter/cross-disciplinary training as central
-      objectives. The operational-practices side is where the
-      pattern surfaces: far fewer programs name the specific
-      competency practices as distinguishing features — a
-      competency-based curriculum in just 6%, experiential learning
-      in 24%, program evaluation in 38% — at the level the
-      stated goals would imply.#cn()
+      The case's evidence base is a survey of CTSA-funded TL1 training programs fielded in 2019 and published in 2021 (N=50 of 51 invited hubs, a 98% response; 48 answered the distinguishing-goals question). The survey asked two open questions: what the program's stated goals are, and which goals distinguish it from other NIH-funded training. General aims are where the programs converge: 80% name collaboration and/or team science, 46% name multi/inter/cross-disciplinary training. Goals that name a specific practice are rarer — program evaluation 38%, experiential learning 24%, competency-based training 6% — and the survey does not reach past the goal statement: curriculum content and evaluation methods were reported separately.#cn()
     ],
     [
-      The structural form is the same pattern IPE shows at field
-      scale (Case 28): the field has converged on what
-      interdisciplinary translation training should aim for, but
-      the operational practices lag the stated goals. At the
+      The structural form is the same pattern IPE shows at field scale (Case 28): the field has converged on what interdisciplinary translation training should aim for, and the practice-specific goals trail the general ones. At the
       implementation-science training scale, the lag has specific
       consequences: programs that intend to produce graduates
       capable of moving evidence into practice often do not
@@ -5145,7 +5115,7 @@
     ),
   ),
   references: (
-    [CTSA T32/TL1 program-goals study (2021), _Journal of Clinical and Translational Science_, PMC8826009.],
+    [Sancheznieto, F., Sorkness, C. A., Attia, J., et al. (2021), "Clinical and translational science award T32/TL1 training programs: program goals and mentorship practices," _Journal of Clinical and Translational Science_ 6(1):e13, doi:10.1017/cts.2021.884.],
     [Morris, Wooding, & Grant (2011), "The answer is 17 years, what is the question: understanding time lags in translational research," _Journal of the Royal Society of Medicine_ — the original 17-year-gap source for Case 13.],
     [Brownson, Colditz, & Proctor (2018), _Dissemination and Implementation Research in Health_ (2nd ed.) — the broader implementation-science synthesis.],
     [v2 paired cases: Team-science training (121), IPE evidence gap (122).],
@@ -5153,12 +5123,7 @@
   quote: [Stated goals converge on the right targets. Operational practices lag. The gap is designable, not a curricular failure.],
   quote-source: "Editors' synthesis of the CTSA TL1 program-goals study (2021).",
   le-insight: [
-    The CTSA TL1 program survey is the workforce-training
-    instance of the enthusiasm-evidence gap pattern: most
-    programs name competency-based training, assessment, and
-    program evaluation as goals; the specific competency practices that would deliver on those
-    goals are named by far fewer — a competency-based curriculum
-    in just 6% of programs, experiential learning in 24%. The implementation-science workforce is the
+    The CTSA TL1 program survey is the workforce-training instance of the enthusiasm-evidence gap pattern: 80% of programs name collaboration and team science among their goals, while the goals that name a practice are named by far fewer — competency-based training by 6% of programs, experiential learning by 24%, program evaluation by 38%. The implementation-science workforce is the
     recovery mechanism for the 17-year research-to-practice gap;
     the case names the gap inside the recovery mechanism
     itself.
@@ -5197,7 +5162,7 @@
   year: "2016",
   domains-list: ("hospital pharmacy", "healthcare workforce", "role redesign"),
   modes-code: "DNH",
-  impact: "Expanded pharmacy-technician scope (final accuracy checking, drugs-of-addiction management, clinical support) reportedly cut average prescription turnaround from 18.5 to 12.3 minutes, increased throughput from 220 to 295 prescriptions per shift, and decreased dispensing errors from 2.1% to 1.2% — throughput and the safety metric moving in the same direction",
+  impact: "The 2016 SHPA Redesign Project — a six-month national scoping study — found pharmacy technicians employed in 95% of Australian hospital pharmacies but held to technical rather than clinical work, with no national training or regulatory framework for expanded scope; a 2018 single-hospital staff survey (61 of 122 responding) then found 82% supported technician final accuracy checking and 81% supported technician drugs-of-addiction register entries, while technician-taken medication histories split pharmacists (38% supportive) from technicians (92%)",
   kind: "intervention",
   scale: "small",
   evidence-source: "program-report",
@@ -5210,17 +5175,7 @@
     healthcare workforces meet at some point: the pharmacist's
     capacity was being absorbed by dispensing-accuracy checking, which
     crowded out the clinical work that requires pharmacist judgment.
-    The 2016 Pharmacy Technician and Assistant Role Redesign project
-    expanded pharmacy-technician scope to include final accuracy
-    checking, drugs-of-addiction management, and clinical-support
-    duties, with the design intent of freeing pharmacist capacity
-    without degrading dispensing safety. The reported operational
-    outcomes moved throughput and the safety metric in the same
-    direction: average prescription turnaround fell from 18.5 to
-    12.3 minutes, prescriptions per shift rose from 220 to 295, and
-    dispensing errors declined from 2.1% to 1.2%. A 2021 _Journal of
-    Pharmacy Practice and Research_ cross-sectional survey extended
-    the evidence base into workforce-acceptance attitudes. The
+    The 2016 Pharmacy Technician and Assistant Role Redesign project did not expand scope; it mapped the ground for expanding it — a six-month study of the national workforce built from a literature review, a survey, focus groups, interviews and case studies. It found technicians in 95% of hospital pharmacies, roles varying widely between states, no national regulation of the workforce, and board guidance confining technicians to work not requiring professional judgement. A 2021 _Journal of Pharmacy Practice and Research_ cross-sectional survey at one Victorian teaching hospital then measured what staff would accept: 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction register entries, and technician-taken medication histories split pharmacists (38%) from technicians (92%). The
     evidence-tier flag renders under the title: the operational
     figures come from a program-report rather than an independent
     multi-site audit. Future validation will continue on long-term
@@ -5241,10 +5196,7 @@
       pharmacist as primary accuracy-checker.#cn()
     ],
     [
-      The redesign expanded pharmacy-technician scope to include
-      final accuracy checking, drugs-of-addiction management, and
-      clinical-support duties. The design move is not the
-      addition of a checker but the redistribution of authority:
+      The three roles the project put on the table were final accuracy checking, drugs-of-addiction management, and clinical support. The design move is not the addition of a checker but the redistribution of authority:
       the technician is given the role that the pharmacist was
       doing, with the training, certification, and supervisory
       structure to back it. The pharmacist is freed to do the
@@ -5253,25 +5205,10 @@
       induced framework calls for at the small tier.#cn()
     ],
     [
-      The reported operational outcomes moved throughput and the
-      safety metric in the same direction — an unusual combination
-      in healthcare workforce changes. Average prescription
-      turnaround fell from 18.5 to 12.3 minutes; prescriptions
-      per shift rose from 220 to 295; dispensing errors fell from
-      2.1% to 1.2%. The redesign did not simply trade safety for
-      throughput. The 2021 _Journal of Pharmacy Practice and
-      Research_ cross-sectional survey extended the evidence into
-      the workforce-attitudes layer — what hospital pharmacists
-      and technicians thought about the expanded scope and where
-      acceptance was strongest.#cn()
+      What the project produced was a map, not an outcome series: technicians in 95% of hospital pharmacies, roles differing state by state, no national regulation of the workforce, and board guidance holding technicians to work that does not require professional judgement. The 2021 _Journal of Pharmacy Practice and Research_ cross-sectional survey carried it into the workforce-attitudes layer — of 122 staff invited at one Victorian teaching hospital, 61 responded; 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction entries, and fewer than 10% thought technicians were adequately used as things stood.#cn()
     ],
     [
-      The evidence-tier flag is load-bearing. The headline
-      operational figures come from a program-report and rest on
-      the project's internal measurement; the redesign was not
-      subjected to an independent multi-site audit, and the
-      magnitudes have not been replicated by a peer-reviewed
-      controlled evaluation. The cross-sectional survey is
+      The evidence-tier flag is load-bearing. The project report is a scoping document and reports no throughput, turnaround or error outcomes; the acceptance survey is peer-reviewed but covers one hospital and 61 respondents. No multi-site outcome evaluation of the expanded role exists in the Australian record. The cross-sectional survey is
       peer-reviewed but measures attitudes rather than outcomes.
       The case is included because the pattern is teachable and
       the practitioner literature is consistent; the magnitudes
@@ -5295,8 +5232,8 @@
   ),
   beats: (
     "Pharmacist capacity absorbed by dispensing-accuracy checking — clinical-support work crowded out",
-    "Project expands pharmacy-technician scope: final accuracy checking, drugs-of-addiction management, clinical support",
-    "Reported outcomes: turnaround 18.5→12.3 min; throughput 220→295 per shift; errors 2.1%→1.2%",
+    "2016 project maps the ground for three expanded roles: final accuracy checking, drugs-of-addiction management, clinical support",
+    "Findings: technicians in 95% of hospital pharmacies; roles vary by state; workforce not nationally regulated",
     "2021 JPPR cross-sectional survey extends evidence into workforce-acceptance attitudes",
     "Evidence tier: program-report magnitudes; no independent multi-site audit; future validation ongoing",
   ),
@@ -5308,27 +5245,20 @@
     ),
     after: (
       [Treat the program-report figures as practice-synthesis evidence; carry the tier flag into any generalization to other sites or other workforce roles.],
-      [Track durability of the safety metric over years, not weeks; the dispensing-error reduction is the load-bearing result and must hold under personnel rotation and volume changes.],
+      [Track the safety metric from the first day of the expanded role, not after it; without a pre-change baseline the redesign cannot answer the only question that matters, which is whether checking accuracy held.],
       [Use the workforce-acceptance evidence (2021 survey) to identify where the redesign meets resistance, and stage the rollout against that resistance rather than ignoring it.],
     ),
   ),
   references: (
-    [SHPA / Australian hospital-pharmacy network (2016), "Pharmacy Technician and Assistant Role Redesign within Australian Hospitals Project," outcomes report.],
+    [Society of Hospital Pharmacists of Australia (November 2016), "Exploring the role of hospital pharmacy technicians and assistants to enhance the delivery of patient centred care: A White Paper on the findings and outcomes of the Pharmacy Technician and Assistant Role Redesign within Australian Hospitals (Redesign) Project."],
     [Anderson et al. (2021), "Perceptions of hospital pharmacists and pharmacy technicians towards expanding roles for hospital pharmacy technicians: a cross-sectional survey," _Journal of Pharmacy Practice and Research_, doi:10.1002/jppr.1697.],
     [Boughen, Sutton, Fenn, & Wright (2017), "Defining the Role of the Pharmacy Technician and Identifying Their Future Role in Medicines Optimisation," _Pharmacy_ 5(3):40 — UK companion analysis.],
-    [Royal Pharmaceutical Society and SHPA practice statements on technician scope expansion — practitioner-tier framing the project sits inside.],
+    [Pharmacy Board of Australia and SHPA practice statements limiting technician work to activities not requiring professional judgement — the regulatory framing the project sits inside.],
   ),
   quote: [The pharmacist-as-checker pattern was a property of the role architecture, not the pharmacist. The redesign treated the architecture as the design variable.],
   quote-source: "Editors' synthesis of the 2016 project report and Anderson et al. (2021).",
   le-insight: [
-    The Australian pharmacy-technician redesign is a small-tier
-    C3 role-redesign intervention with both throughput and
-    safety moving in the same direction (turnaround, throughput,
-    error rate). Evidence base is program-report plus a
-    peer-reviewed attitudes survey; the operational magnitudes
-    rest on the project's internal measurement and have not been
-    independently audited at multi-site scale. Future validation
-    ongoing.
+    The Australian pharmacy-technician redesign is a small-tier C3 role-redesign case at the stage before the outcome data: a national scoping study that named the role architecture, and a single-hospital survey showing 82% acceptance of technician final accuracy checking. The evidence base is a program report plus a peer-reviewed attitudes survey; no throughput or safety outcomes have been published. Future validation ongoing.
   ],
   lens-approach: [
     Australian pharmacy-technician redesign is the C3 small-tier
@@ -5341,14 +5271,14 @@
     the small-tier C3 thread; Gap-5 echo as a non-US case.
   ],
   literature-items: (
-    [SHPA project report (2016) — operational outcomes],
+    [SHPA White Paper (2016) — national workforce scoping study],
     [Anderson et al. (2021), _JPPR_ — workforce-acceptance survey],
     [Boughen et al. (2017), _Pharmacy_ — UK companion role-scope analysis],
   ),
   reflection-list: (
     [Identify a healthcare role in your setting where checking or monitoring work is absorbing the capacity the system needs for clinical judgment. What is the technician- or assistant-equivalent role redesign that would redistribute the authority, and what training and supervisory structure would it require?],
-    [Specify the throughput and safety metrics you would commit to before the redesign ships, so the joint movement of both is what the report has to defend. The Australian project teaches because both metrics moved in the same direction — what would the equivalent be in your context?],
-    [The operational figures are program-report tier. What independent or multi-site evidence would you require before treating the magnitudes as generalizable to other workforce roles (nursing, radiology, lab) or other countries?],
+    [Specify the throughput and safety metrics you would commit to before the redesign ships, so the joint movement of both is what the report has to defend. The Australian project teaches by omission — it mapped the workforce and measured acceptance, and left the outcome question open — so what would you measure that it did not?],
+    [The acceptance figures come from one hospital and 61 respondents. What independent or multi-site evidence would you require before treating them as generalizable to other workforce roles (nursing, radiology, lab) or other countries?],
   ),
   courses: ("LEN 4", "LEN 5", "LEN 8"),
 )
@@ -5361,7 +5291,7 @@
   year: "2013 – 2018",
   domains-list: ("global health", "mHealth", "maternal and newborn care"),
   modes-code: "HN",
-  impact: "A Rwanda mHealth monitoring system equipped community health workers with mobile decision support for maternal and newborn care; the published evaluations were mixed — uptake of maternal and newborn services rose only where the system was paired with added training, supervision, and equipment, while a controlled national-survey time-series found no significant change from the system alone — with the technology designed to extend the CHW's diagnostic-and-referral role rather than replacing it",
+  impact: "A Rwanda mHealth monitoring system equipped community health workers with mobile decision support for maternal and newborn care; the published evaluations were mixed — uptake of maternal and newborn services rose only where the system was paired with added training, supervision, and equipment, while an interrupted time series on national survey data found no significant change in uptake, coverage already sitting above 90% — with the technology designed to extend the CHW's diagnostic-and-referral role rather than replacing it",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -5373,19 +5303,13 @@
     Between 2013 and 2018 Rwanda's Ministry of Health, working with
     research partners, deployed an mHealth monitoring system that
     placed mobile-phone-mediated decision support into the hands of
-    community health workers (CHWs) responsible for maternal and
-    newborn care, including surgical-site infection screening after
-    Cesarean. Peer-reviewed evaluations were mixed: uptake rose only where
+    community health workers (CHWs) responsible for maternal and newborn care — pregnancy registration, follow-up across the continuum of care, and emergency alerts to the ambulance system. Peer-reviewed evaluations were mixed: uptake rose only where
     the system was paired with added support (Ruton et al., 2018),
-    while a controlled national-survey time-series found no
-    significant change attributable to the system alone (Hategeka
-    et al., 2019). The case sits at the small (program/study) tier
+    while an interrupted time series on national survey data found no significant change in uptake at all (Hategeka et al., 2019). The case sits at the small (program/study) tier
     and teaches a precise pattern: capability delivered at the
     periphery of the formal health system, with the technology
     designed to extend the CHW's diagnostic-and-referral role
-    rather than replace it. The evidence-tier flag is honest — one
-    peer-reviewed evaluation, with broader impact claims still
-    resting partly on practitioner reporting. As a non-US
+    rather than replace it. The evidence-tier flag is honest — two peer-reviewed evaluations pointing different ways, with broader impact claims still resting partly on practitioner reporting. As a non-US
     small-tier case it pairs naturally with the PEPFAR
     Sub-Saharan training-modality comparison as the African
     workforce-capability evidence the corpus has been thin on, and
@@ -5404,11 +5328,7 @@
       that the prior paper-based workflow had not.#cn()
     ],
     [
-      The system delivered structured prompts, reminders, and a
-      referral pathway through the CHW's mobile phone, with an
-      added screening flow for surgical-site infection after
-      Cesarean delivery — a recognized post-discharge failure mode
-      where signs first appear in the village, not the clinic. The
+      The system delivered structured prompts, reminders, and a referral pathway through the CHW's mobile phone: CHWs registered pregnancies, followed mother-infant pairs, and raised real-time alerts to the ambulance system, the health facility, the district hospital and the centre. The
       design move worth naming is that the technology was scoped
       to extend the CHW's existing diagnostic-and-referral role,
       not to substitute for clinical judgment further up the
@@ -5419,15 +5339,11 @@
       Ruton et al. (2018) report increased uptake of maternal
       and newborn health services only where the mHealth system was
       paired with additional training, supervision, and equipment;
-      RapidSMS alone was ineffective. A controlled time-series on
-      national survey data (Hategeka et al., 2019) found no
-      significant change attributable to the system, largely for
-      ceiling-effect reasons. The published evaluation is the
+      RapidSMS alone was ineffective. An interrupted time series on national survey data (Hategeka et al., 2019) found no significant change on any indicator studied, largely because coverage already sat above 90%. The published evaluation is the
       anchor finding; downstream reporting (MIT News 2022 and
       subsequent AI-augmented maternal-care work) describes the
       program's continuation and adjacent developments but is
-      journalism-tier, not investigation-grade. The case carries its evidence-tier flag honestly: one peer-reviewed evaluation does not close the question of long-term outcome
-      durability or generalization to other low-resource settings.#cn()
+      journalism-tier, not investigation-grade. The case carries its evidence-tier flag honestly: two peer-reviewed process evaluations do not close the question of long-term outcome durability or generalization to other low-resource settings.#cn()
     ],
     [
       The teaching point is the location of capability. The mHealth
@@ -5465,7 +5381,7 @@
   approaches: (
     during: (
       [Scope the tool to extend an existing frontline role rather than substitute for it; the CHW's village standing is the load-bearing capability the technology can support but cannot create.],
-      [Instrument the post-discharge failure modes that the formal health system cannot see — surgical-site infection after Cesarean is the named example — so the tool turns village-level observation into health-system-visible signal.],
+      [Instrument the failure modes that the formal health system cannot see — a pregnancy never registered, a danger sign at home, an ambulance never called — so the tool turns village-level observation into health-system-visible signal.],
       [Carry the evidence-tier flag through the deployment documentation: one peer-reviewed evaluation is the anchor finding, not the closure of the question.],
     ),
     after: (
@@ -5475,7 +5391,7 @@
     ),
   ),
   references: (
-    [Hategeka, C., Ruton, H., Law, M. R., et al. (2019), "Effect of a community health worker mHealth monitoring system on uptake of maternal and newborn health services in Rwanda," _Global Health Research and Policy_, PMC6429813.],
+    [Hategeka, C., Ruton, H., & Law, M. R. (2019), "Effect of a community health worker mHealth monitoring system on uptake of maternal and newborn health services in Rwanda," _Global Health Research and Policy_ 4:8, doi:10.1186/s41256-019-0098-y.],
     [Rwanda Ministry of Health, community health program documentation and CHW scope-of-practice guidance, 2013–2018.],
     [MIT News (2022), reporting on subsequent AI-augmented maternal-care work in Rwanda — journalism-tier companion to the peer-reviewed evaluation.],
     [Cross-reference: Case 18 (PEPFAR HIV training-modality comparison) for the paired Sub-Saharan workforce-capability evidence.],
@@ -5486,11 +5402,7 @@
     Rwanda mHealth is a small-tier capability-extension case at
     the frontline: technology designed around an existing CHW
     role, with peer-reviewed evaluation showing uptake gains only when
-    the system was paired with added support, and a controlled
-    national-survey series showing no significant change from the
-    system alone. The evidence-tier flag is load-bearing — one study does not close the
-    durability or generalization question, and the broader
-    impact claims rest partly on practitioner reporting. Future
+    the system was paired with added support, and an interrupted national-survey time series showing no significant change at all. The evidence-tier flag is load-bearing — two process studies do not close the durability or generalization question, and the broader impact claims rest partly on practitioner reporting. Future
     validation ongoing.
   ],
   lens-approach: [
@@ -5512,7 +5424,7 @@
   ),
   reflection-list: (
     [Identify a frontline capability role in your context (CHW, field technician, ward nurse, line supervisor). What would it mean to scope a mobile decision-support tool to extend that role rather than relocate judgment to the center? Which failure modes only the frontline can see should the tool surface upward?],
-    [The case rests on one peer-reviewed evaluation with broader claims supported by practitioner reporting. What is the minimum additional evidence — durability follow-up, replication in a second setting, linkage to maternal/newborn outcomes — you would require before treating the uptake finding as settled for a transfer decision?],
+    [The case rests on two peer-reviewed evaluations that disagree, with broader claims supported by practitioner reporting. What is the minimum additional evidence — durability follow-up, replication in a second setting, linkage to maternal/newborn outcomes — you would require before treating the uptake finding as settled for a transfer decision?],
     [Specify the village-level and health-system-level instrumentation you would put in place for a comparable deployment so that the frontline-extension pattern can be evaluated against an alternative deployment that relocates judgment to the clinic level.],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 8"),
@@ -5526,7 +5438,7 @@
   year: "2014 – present",
   domains-list: ("medical-device regulation", "AI/SaMD", "Japan"),
   modes-code: "GN",
-  impact: "Japan's 2019 PMD Act amendment (enforced September 2020) introduced IDATEN (Improvement Design within Approval for Timely Evaluation and Notice): a pre-agreed device-improvement plan approved at initial approval, streamlined review for in-scope changes. The 2025 scoping review of PMDA-approved AI radiology software documents transparency variability — hedge preserved",
+  impact: "Japan's 2019 PMD Act amendment (enforced September 2020) introduced IDATEN (Improvement Design within Approval for Timely Evaluation and Notice): a pre-agreed device-improvement plan approved at initial approval, streamlined review for in-scope changes. The 2025 scoping review of PMDA-approved AI radiology software found 20 AI radiology products among 151 approved SaMD, and no product whose package insert reported complete case demographics — hedge preserved",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -5597,11 +5509,7 @@
       to track it.#cn()
     ],
     [
-      The 2025 medRxiv scoping review on PMDA-approved AI
-      radiology software documents transparency variability
-      across approvals — what is published about each device's
-      training data, intended use, and post-approval modification
-      history is not uniform. The hedge is load-bearing: IDATEN is
+      The 2025 medRxiv scoping review on PMDA-approved AI radiology software read the package inserts of the 20 AI radiology products among 151 approved SaMD: reported sensitivity ran from 67.7 to 100 percent, and no product reported complete case demographics for the studies behind it. The hedge is load-bearing: IDATEN is
       a structural improvement in regulatory architecture, but
       the per-approval transparency the framework enables varies
       and has been documented as a research finding rather than
@@ -5637,14 +5545,14 @@
       [Carry the preprint-tier evidence flag through any policy decision the scoping review supports; the regulatory framework is documented, but the per-approval transparency analyses are recent.],
     ),
     after: (
-      [Audit transparency across approvals — what is published per device about training data, intended use, modification history — as a separate program-evaluation question; the 2025 scoping review documents this variability as a research finding.],
+      [Audit transparency across approvals — what each package insert publishes about study design, case demographics, and measured performance — as a separate program-evaluation question; the 2025 scoping review found no product reporting complete case demographics.],
       [Use IDATEN as the structural contrast with Epic-Sepsis-class deployments: the regulator-designed change-control deliverable is the inverse of the static-approval-plus-watch pattern.],
       [When importing the IDATEN pattern into another jurisdiction, name what the Japanese regulatory institution supplies (centralized agency capacity, established conditional-approval precedent) before asserting transfer.],
     ),
   ),
   references: (
     [Kikuchi, et al. (2025), "Scoping Review of Regulatory Transparency in AI-based Radiology Software: Analysis of PMDA-approved SaMD Products," medRxiv 2025.10.02.25336333.],
-    [Aoki, T., et al. (2021 → published), "Regulatory-approved Deep Learning/Machine Learning-Based Medical Devices in Japan as of 2020: A Systematic Review," PMC9931274.],
+    [Aisu, N., Miyake, M., Takeshita, K., et al. (2022), "Regulatory-approved deep learning/machine learning-based medical devices in Japan as of 2020: A systematic review," _PLOS Digital Health_ 1(1):e0000001 (medRxiv preprint 2021).],
     [Pharmaceuticals and Medical Devices Agency of Japan, PMD Act amendment (2019) and DASH for SaMD program documentation.],
     [Cross-reference: "A decade of review in global regulation and research of artificial intelligence medical devices (2015–2025)," PMC12310608 — comparative regulatory context.],
   ),
@@ -5672,7 +5580,7 @@
   ],
   literature-items: (
     [Kikuchi et al. (2025), medRxiv — PMDA AI radiology software scoping review],
-    [Aoki et al. (2021/PMC9931274) — PMDA AI/ML medical devices systematic review],
+    [Aisu et al. (2022), _PLOS Digital Health_ — PMDA AI/ML medical devices systematic review],
     [PMDA, PMD Act amendment (2019) and DASH for SaMD documentation],
   ),
   reflection-list: (
