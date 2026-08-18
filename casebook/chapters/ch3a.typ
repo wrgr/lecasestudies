@@ -691,7 +691,7 @@
   year: "2010",
   domains-list: ("general aviation", "avionics", "pilot training"),
   modes-code: "HNK",
-  impact: "An NTSB safety study of ~8,000 piston aircraft manufactured 2002–2006, with accidents analyzed for 2002–2008, found that glass-cockpit aircraft had no better overall safety record — and a higher fatal accident rate — than comparable conventional-instrument aircraft over the period studied; the Board attributed this to inadequate equipment-specific training and issued recommendations A-10-36 through A-10-41",
+  impact: "An NTSB safety study of ~8,000 piston aircraft manufactured 2002–2006, with accidents analyzed for 2002–2008, found that glass-cockpit aircraft had lower total accident rates but higher fatal accident rates than comparable conventional-instrument aircraft, and no significant overall improvement in safety; the Board did not resolve why the fatal rate diverged, but found no FAA equipment-specific training requirement for glass-cockpit pilots and issued recommendations A-10-36 through A-10-41",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -703,20 +703,10 @@
     multifunction displays replacing the inherited six-pack of
     analog instruments — were introduced into light piston aircraft
     over the 2000s as a fleet-wide modernization. The NTSB safety
-    study NTSB/SS-10/01 examined approximately 8,000 small piston
-    aircraft manufactured 2002–2006 and reached a finding the technology's
-    own advocates did not expect: glass-cockpit aircraft had no
-    better overall safety record than comparable
-    conventional-instrument aircraft over the period studied, and
-    in fact had a higher fatal accident rate. The NTSB attributed
-    this not to the technology but to inadequate
-    equipment-specific training. The Board issued recommendations
+    study NTSB/SS-10/01 examined approximately 8,000 small piston aircraft manufactured 2002–2006 and reached a finding the technology's own advocates did not expect: glass-cockpit aircraft had lower total accident rates than comparable conventional-instrument aircraft over the period studied but higher fatal accident rates, and no significant overall improvement in safety. The NTSB did not resolve why the fatal rate diverged — it recorded that additional research is warranted — and identified the absence of equipment-specific training requirements as the safety issue in reach. The Board issued recommendations
     A-10-36 through A-10-41 on knowledge-testing standards,
     simulator availability, and training requirements. The study
-    is explicit that advanced avionics "can increase the safety
-    potential" of light aircraft but that the potential "was not
-    yet realized in the period studied" — an open, not closed,
-    verdict. The case is the canonical 7.1 failure of an inherited
+    is explicit that advanced avionics "can increase the safety potential" of light aircraft but that, "for the aircraft and time period studied," the transition "has not yet resulted in the anticipated improvement in safety" — an open, not closed, verdict. The case is the canonical 7.1 failure of an inherited
     capability regime (pilot proficiency) not being re-verified
     against the new envelope the technology transition introduced.
     Pair with the aging-system transition cases (Cases 114–116, 154, 156, 174, and 194, drafted in parallel).
@@ -744,17 +734,12 @@
       airplanes registered in the United States over the period
       2002–2006, comparing accident rates between
       conventional-instrument and glass-cockpit fleets matched on
-      model and operational class. The headline finding ran
-      against expectation. Glass-cockpit aircraft had no better
-      overall safety record than comparable conventional-instrument
-      aircraft over the period, and the fatal accident rate was
-      higher for the glass fleet. The expected fleet-wide safety
+      model and operational class. The headline finding ran against expectation. Glass-cockpit aircraft had lower total accident rates than comparable conventional-instrument aircraft over the period, but a higher fatal accident rate, and no significant improvement in safety overall. The expected fleet-wide safety
       gain from the displays had not yet materialized in the
       accident record.#cn()
     ],
     [
-      The NTSB's attribution is precise. The technology was not
-      the cause; inadequate equipment-specific training was. The
+      The NTSB's attribution is careful. It did not name a cause for the fatal-rate gap, and said further research is needed. The
       transitioning pilot population was certificated and current
       under the inherited training regime that assumed analog
       instruments, and the glass displays — for all their
@@ -769,10 +754,7 @@
       operating glass-cockpit aircraft.#cn()
     ],
     [
-      The study's language is open rather than closed. Advanced
-      avionics "can increase the safety potential" of light
-      aircraft, but that potential "was not yet realized in the
-      period studied." The verdict is not that glass is unsafe; it
+      The study's language is open rather than closed. Advanced avionics "can increase the safety potential" of light aircraft, but "for the aircraft and time period studied" the transition "has not yet resulted in the anticipated improvement in safety." The verdict is not that glass is unsafe; it
       is that the inherited certification of pilot proficiency,
       built around analog instruments, did not transfer to the
       new envelope without re-engineered training. The case is
@@ -802,9 +784,9 @@
   beats: (
     "Glass-cockpit avionics introduced into light piston aircraft over the 2000s as fleet-wide modernization; assumed positive safety move",
     "NTSB safety study NTSB/SS-10/01 examined ~8,000 small piston aircraft manufactured 2002–2006; matched comparison glass vs. conventional fleets",
-    "Headline against expectation: no better overall safety record, higher fatal accident rate for glass-cockpit fleet over the period studied",
-    "NTSB attribution: inadequate equipment-specific training, not the technology; recommendations A-10-36 through A-10-41 to the FAA",
-    "Open verdict preserved: advanced avionics 'can increase the safety potential' but 'was not yet realized in the period studied'",
+    "Headline against expectation: lower total accident rates but a higher fatal accident rate for the glass-cockpit fleet, and no significant overall safety improvement",
+    "NTSB named no cause for the fatal-rate gap and called for further research; the safety issue in reach was the absent equipment-specific training requirement; recommendations A-10-36 through A-10-41 to the FAA",
+    "Open verdict preserved: advanced avionics 'can increase the safety potential' but 'has not yet resulted in the anticipated improvement in safety'",
   ),
   approaches: (
     during: (
@@ -813,7 +795,7 @@
       [Name the new failure modes the transition introduces (mode confusion, automation surprises, attention capture) at the design stage of the equipment-specific training, rather than waiting for the accident record to surface them.],
     ),
     after: (
-      [Preserve the NTSB's open-verdict language ("can increase the safety potential ... not yet realized in the period studied") in any report on the transition's outcome; the study did not say glass is unsafe, and the precise language is what makes the recommendation set actionable.],
+      [Preserve the NTSB's open-verdict language ("can increase the safety potential ... has not yet resulted in the anticipated improvement in safety") in any report on the transition's outcome; the study did not say glass is unsafe, and the precise language is what makes the recommendation set actionable.],
       [Track implementation of the NTSB recommendation set (A-10-36 through A-10-41) as the engineering response to the open verdict; the verdict closes when the recommendations are implemented and the next round of evidence is collected.],
       [Carry the structural lesson into adjacent transitions — the aging-system transition cases (Cases 114–116, 154, 156, 174, 194) — as evidence that the inherited certification of operator proficiency has to be re-verified against the new envelope across consumer, commercial, and defense scales.],
     ),
@@ -824,15 +806,14 @@
     [Wiener, E. L., \& Curry, R. E. (1980). Flight-deck automation: Promises and problems. _Ergonomics_, 23(10):995–1011 — the foundational literature on automation-induced failure modes that the glass-cockpit transition re-introduced at the GA scale.],
     [Sarter, N. B., Woods, D. D., \& Billings, C. E. (1997). Automation surprises. In _Handbook of Human Factors and Ergonomics_ (2nd ed.) — the mode-confusion / automation-surprise literature the NTSB findings cross-reference.],
   ),
-  quote: [Advanced avionics and electronic displays can increase the safety potential of general aviation aircraft operations, but more effort is needed to ensure that pilots are prepared to realize that potential.],
+  quote: [Advanced avionics and electronic displays can increase the safety potential of general aviation aircraft operations by providing pilots with more operational and safety-related information and functionality, but more effort is needed to ensure that pilots are prepared to realize that potential.],
   quote-source: "NTSB Safety Study NTSB/SS-10/01 (2010).",
   le-insight: [
     The NTSB's glass-cockpit GA study is the canonical
     capability-under-system-change failure at the
     consumer-aviation scale: a positive technology transition
     that nevertheless outran the inherited certification of
-    operator proficiency. The Board's attribution is to
-    inadequate equipment-specific training, and the verdict
+    operator proficiency. The Board named no cause for the fatal-rate gap and asked for more research, and the verdict
     is open — the safety potential is there, and the
     transition has not yet realized it.
   ],
@@ -855,7 +836,7 @@
   ),
   reflection-list: (
     [Identify a technology transition in your domain that is positive on its capability claim and that nevertheless puts the inherited certification of operator proficiency under question. What re-verification of operator proficiency would the transition require — and is it currently part of the deliverable, or assumed away?],
-    [The NTSB attribution is to inadequate equipment-specific training, not to the technology. What is the analog distinction in your context — between the engineered artifact and the operator-proficiency regime that has to track it?],
+    [The NTSB declined to name a cause for the fatal-rate gap and pointed instead at the absent equipment-specific training requirement. What is the analog distinction in your context — between the engineered artifact and the operator-proficiency regime that has to track it?],
   ),
   courses: ("LEN 5", "LEN 7", "LEN 9"),
 )
@@ -868,17 +849,15 @@
   year: "1996",
   domains-list: ("space",),
   modes-code: "DKH",
-  impact: "Maiden flight destroyed itself 37 seconds after launch; ~$500M payloads lost; reused Ariane 4 code never re-verified for Ariane 5",
+  impact: "Maiden flight destroyed itself 39 seconds after launch; four Cluster science satellites lost, replaced at 214 MECU; reused Ariane 4 code never re-verified for Ariane 5",
   diagram: dgm.dgm-stat(
-    "37s",
-    "after launch · 16-bit integer overflow",
+    "39s", "after launch · 16-bit integer overflow",
     micro: "code path disabled by the previous vehicle's profile; re-enabled by the new one",
     caption: "Ariane 5 — the fallacy of risk-free code reuse",
   ),
   kind: "failure",
   summary: [
-    On its 1996 maiden flight, the Ariane 5 rocket destroyed itself 37
-    seconds after launch, losing around half a billion dollars in payloads.
+    On its 1996 maiden flight, the Ariane 5 rocket destroyed itself 39 seconds after launch, losing the four Cluster science satellites aboard.
     The cause was reused software: the inertial reference system inherited
     code from Ariane 4, where a horizontal-velocity value never exceeded a
     16-bit integer's range. Ariane 5's steeper, faster trajectory pushed it
@@ -906,13 +885,8 @@
     // -- What Happened --
     [
       On 4 June 1996, Ariane 5 Flight 501 — its maiden flight — veered off
-      course and broke up under aerodynamic stress 37 seconds after launch;
-      the range-safety system destroyed it, and roughly half a billion
-      dollars of payloads were lost.#cn() The vehicle was destroyed in well
-      under a minute of flight, before it had done anything but climb — the
-      whole half-billion-dollar loss flowing from a fault that triggered
-      almost immediately at liftoff, when the new trajectory first pushed the
-      inherited code outside the range it had been built to handle.
+      course and broke up under aerodynamic stress 39 seconds after launch;
+      the on-board self-destruct fired as designed, and the four Cluster science satellites were lost.#cn() The vehicle was destroyed in well under a minute of flight, before it had done anything but climb — the whole loss flowing from a fault that triggered almost immediately at liftoff, when the new trajectory first pushed the inherited code outside the range it had been built to handle.
     ],
     // -- The Investigation --
     [
@@ -923,7 +897,7 @@
       almost simultaneously, and the vehicle lost guidance.#cn() Redundancy
       gave no protection here because both units ran the identical inherited
       code and met the identical out-of-range value at the same instant, so
-      the backup failed in lockstep with the primary — duplicating a system
+      the backup failed a data cycle ahead of the primary, leaving nothing to switch to — duplicating a system
       defends against a part breaking, not against a shared assumption being
       wrong. The offending code path had become irrelevant to Ariane 5's
       flight after liftoff, yet had neither been removed nor re-verified
@@ -959,14 +933,15 @@
   ),
   beats: (
     "Ariane 5 reused inertial reference software flown reliably on Ariane 4 to reduce risk",
-    "The 1996 maiden flight veered off course and broke up 37 seconds after launch",
-    "A horizontal-velocity overflow shut down both redundant reference systems simultaneously through identical inherited code",
+    "The 1996 maiden flight veered off course at 37 seconds and broke up at 39 seconds after launch",
+    "A horizontal-velocity overflow shut down the back-up reference system and then the active one 0.05 seconds later, through identical inherited code",
     "Code is fit only for the envelope it was verified against; reuse demands re-verification",
     "Safety-critical reuse became a verification event with every inherited assumption explicitly re-checked",
   ),
   references: (
     [J. L. Lions (chair), _Ariane 5 Flight 501 Failure Inquiry Board Report_ (1996) — the data-conversion overflow (quoted).],
-    [Lions Report (1996) — the 37-second breakup and the lost payloads.],
+    [Lions Report (1996) — the 39-second disintegration and the automatic self-destruct.],
+    [ESA Science & Technology, "Cluster — Summary" — the loss of the four Cluster spacecraft and the 214 MECU recovery mission approved by the SPC.],
     [Lions Report (1996) — the 64-bit-to-16-bit conversion overflow and the simultaneous shutdown of both inertial reference systems.],
     [Lions Report (1996) — the reused code path neither removed nor re-verified for Ariane 5's envelope.],
     [N. Leveson, _Safeware_ (1995) — software-reuse hazards; G. Le Lann, "An Analysis of the Ariane 5 Flight 501 Failure" (1997).],
@@ -1226,12 +1201,7 @@
     737-400, crashed on the M1 motorway embankment near Kegworth, killing 47
     and seriously injuring 74. After a fan blade fractured in the left
     engine, the crew shut down the right engine — the one still working.
-    Reasoning from older 737s, on which the right engine fed the cabin air,
-    they misattributed the smoke; new, harder-to-read electronic engine
-    displays did not correct them, and the cabin crew who saw flames never
-    told the flight deck. The pilots' mental model was right for the airplane
-    they had flown the week before, but the brief conversion course never
-    overwrote it. The AAIB issued 31 recommendations; Kegworth became the
+    They acted before reading the engine displays: the first officer named the right engine and could not afterwards say what he had seen, and the commander accepted it. The new, harder-to-read electronic displays did not correct them, and the cabin crew who saw flames never told the flight deck. The commander later explained his suspicion of the right engine by an air-conditioning layout that did not hold on the -400; the AAIB thought it unlikely that reasoning had time to matter. The AAIB issued 31 recommendations; Kegworth became the
     textbook case of capability degrading under system change.
   ],
   sections: (
@@ -1241,20 +1211,13 @@
       737-400 (G-OBME), left Heathrow for Belfast with 126 aboard. The -400
       was a recent variant — bigger engines, a partly redesigned cockpit
       with new electronic engine instruments. The crew were experienced 737
-      pilots, but their conversion onto the variant had been brief and
-      largely self-directed, the differences communicated as reading rather
-      than drilled retraining — so the experience that made them confident
-      on the type also seeded the prior model that would mislead them.#cn()
+      pilots, but their conversion onto the variant was a one-day ground course on the differences, taken with no EIS-equipped simulator available anywhere in the airline — so the display they would have to read under pressure had never been flown, only shown.#cn()
     ],
     // -- What Happened --
     [
       Climbing through 28,300 feet, a fan blade fractured in the left engine,
-      filling the cabin with vibration and smoke. Reasoning from older 737s —
-      on which the air-conditioning bleed drew from the right engine — the
-      crew concluded the right engine was the source and throttled it back.
-      The symptoms eased (partly because the autothrottle had also cut power
-      on the failing left engine), seeming to confirm it, and they shut the
-      right engine down. On final approach the damaged left engine failed
+      filling the cabin with vibration and smoke. Without waiting to read the engine displays, the first officer named the right engine and the commander throttled it back eleven seconds after the autopilot came out.
+      The symptoms eased (because disconnecting the autothrottle let the left engine stop surging), seeming to confirm it, and they shut the right engine down. On final approach the damaged left engine failed
       completely; with the good engine off, the aircraft struck the M1
       embankment short of the runway — 47 killed, 74 seriously injured. The
       brief calm after the shutdown was the trap: it appeared to confirm a
@@ -1263,12 +1226,7 @@
     ],
     // -- The Investigation --
     [
-      The Air Accidents Investigation Branch traced the disaster to the
-      shutdown of the serviceable engine, and to a mental model carried from
-      earlier 737s and applied to a -400 whose bleed-air configuration
-      Boeing had changed — a difference the conversion training never
-      disturbed, so the crew reasoned correctly from a configuration that no
-      longer applied to the airframe they were flying.#cn() The new
+      The Air Accidents Investigation Branch traced the disaster to the shutdown of the serviceable engine, and among its contributory factors to the crew reacting prematurely and contrary to their training, and not assimilating the engine instrument display before throttling back the No 2 engine. The commander's later account — that an air-conditioning layout pointed him at the right engine — the Board recorded and set aside, judging it unlikely to have had time to shape the decision.#cn() The new
       electronic displays did not help: the vibration indicator that would
       have pointed at the failing engine was harder to read at a glance than
       the dials it replaced, so the one instrument that could have corrected
@@ -1306,9 +1264,9 @@
     ],
   ),
   beats: (
-    "New 737-400 variant with redesigned cockpit; conversion was brief and largely self-directed, communicated as reading",
-    "Fan blade fractured left engine; crew shut down the right reasoning from older 737 model",
-    "AAIB cited misapplied mental model, an unreadable vibration indicator, and the silent cabin-to-flight-deck channel",
+    "New 737-400 variant with redesigned cockpit; conversion was a one-day differences course with no EIS-equipped simulator available",
+    "Fan blade fractured left engine; crew shut down the right without assimilating the engine instrument display",
+    "AAIB cited premature action contrary to training, unread engine instruments, and the silent cabin-to-flight-deck channel",
     "Variant treated as incremental change; manual notes never overwrote the prior reflex under emergency pressure",
     "AAIB issued 31 recommendations spanning conversion training, instrument design, CRM, and crashworthiness",
   ),
@@ -1321,16 +1279,10 @@
     [AAIB Report 4/90 (1990) — the 31 safety recommendations on difference training, instrument design, CRM, and crashworthiness.],
     [J. Reason, _Human Error_ (Cambridge Univ. Press, 1990) — Kegworth as a case in the misapplication of a correct mental model to a changed system.],
   ),
-  quote: [The crew's mental model of the older 737 was inappropriately applied to the 737-400 on which they were operating.],
-  quote-source: "Paraphrasing AAIB Aircraft Accident Report 4/90 on British Midland 92, 1990",
+  quote: [They did not assimilate the indications on the engine instrument display before they throttled back the No. 2 engine.],
+  quote-source: "AAIB Aircraft Accident Report 4/1990, cause and contributory factors, 1990",
   le-insight: [
-    Kegworth is the textbook example of Capability Degradation Under
-    System Change. The pilots were excellent. Their mental model was
-    excellent — for the airframe they had flown the previous week. The
-    difference training had not been engineered to disturb the prior
-    model with enough force to keep it from being misapplied. The new
-    airframe was treated as an incremental change. The crew's response
-    revealed it was a categorical one.
+    Kegworth is the textbook example of Capability Degradation Under System Change. The pilots were competent and current. What the AAIB found was that they acted before reading the instruments that would have told them which engine was failing, on a variant whose engine display they had met in one day of ground school and never in a simulator. The new airframe was treated as an incremental change. The crew's response revealed it was a categorical one.
   ],
   lens-approach: [
     LENS treats Kegworth in LEN 5 as the canonical *system-change*
@@ -1385,7 +1337,7 @@
     "actual",
     "103 kt",
     framing: "the autothrottle was not maintaining the speed the crew believed it was",
-    caption: "Asiana 214 — approach airspeed at the seawall",
+    caption: "Asiana 214 — lowest approach airspeed, seconds from the seawall",
   ),
   kind: "failure",
   summary: [
@@ -1429,10 +1381,7 @@
     ],
     // -- The Investigation --
     [
-      The NTSB found the probable cause to be the crew's mismanagement
-      of the approach and inadequate monitoring of airspeed, complicated
-      by the complexity of the autothrottle and autopilot flight-director
-      systems and by the crew's faulty mental model of the automation.
+      The NTSB found the probable cause to be the crew's mismanagement of the descent, the pilot flying's unintended deactivation of automatic airspeed control, inadequate monitoring of airspeed, and a delayed go-around — the deactivation traced, in the Board's analysis, to the pilot flying's faulty mental model of the automation, and the automation's complexity inadequately described in Boeing's documentation and Asiana's training.
       The captain told investigators he had assumed the autothrottle
       would maintain speed; in that configuration, it does not — a gap
       between the system's documented behavior and the mental model the
@@ -1453,8 +1402,7 @@
     ],
     // -- Aftermath & Reform --
     [
-      The NTSB issued recommendations on autoflight training, energy-state
-      monitoring, and the design of mode annunciation, and emphasized
+      The NTSB issued recommendations on autoflight training, low-energy alerting, and the intuitiveness of flight-crew/autoflight interfaces, and emphasized
       training that preserves manual-flying proficiency to counter
       automation dependence. The accident became a standard reference in
       airline automation-policy reviews and in the push toward
@@ -1467,19 +1415,19 @@
   beats: (
     "Captain new to the 777 hand flew a visual approach with the glideslope out of service",
     "Autothrottle sat in HOLD; airspeed decayed silently to 103 knots and the 777 struck the seawall",
-    "NTSB cited mismanaged approach, weak airspeed monitoring, and a faulty mental model of the automation",
+    "NTSB cited mismanaged descent, unintended deactivation of airspeed control, weak airspeed monitoring, and a delayed go-around",
     "The mode the autothrottle was in and the mode the crew believed diverged silently without annunciation",
-    "Recommendations targeted autoflight training, energy state monitoring, and mode annunciation design",
+    "Recommendations targeted autoflight training, context-dependent low-energy alerting, and the intuitiveness of autoflight interfaces",
   ),
   references: (
     [NTSB, _Aircraft Accident Report: Asiana Airlines Flight 214_, NTSB/AAR-14/01 (2014) — probable cause and contributing factors (quoted).],
     [NTSB/AAR-14/01 (2014) — the autothrottle HOLD reversion and airspeed decay to ~103 kt.],
     [NTSB/AAR-14/01 (2014) — the captain's mental model of the autothrottle.],
     [Sarter, N. & Woods, D. (1995), "How in the world did we ever get into that mode?," _Human Factors_ — automation surprise.],
-    [NTSB/AAR-14/01 (2014), safety recommendations on autoflight training and mode annunciation.],
+    [NTSB/AAR-14/01 (2014), safety recommendations A-14-37 to A-14-43 and A-14-55 on autoflight training, low-energy alerting, interface intuitiveness, and manual flight.],
   ),
-  quote: [Complexities of the autothrottle and autopilot flight director systems contributed to the accident.],
-  quote-source: "NTSB Aircraft Accident Report AAR-14/01, contributing factors, 2014",
+  quote: [The complexities of the autothrottle and autopilot flight director systems that were inadequately described in Boeing's documentation and Asiana's pilot training, which increased the likelihood of mode error.],
+  quote-source: "NTSB Aircraft Accident Report NTSB/AAR-14/01, probable cause, 2014",
   le-insight: [
     Asiana 214 is the aviation case for the LENS Human-System Collaboration
     proposition that automation transparency is a capability
