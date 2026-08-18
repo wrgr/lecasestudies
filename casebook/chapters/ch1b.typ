@@ -286,8 +286,7 @@
   le-insight: [
     The clearest healthcare case in the dataset of a single-variable
     intervention into a multi-variable capability system. Pairs with
-    Case 127 (fratricide) and Case 134 (V-22). The success cases —
-    Keystone (14), CRM (12), Korean Air (23) — engineered
+    Case 127 (fratricide) and Case 134 (V-22). The success cases — Keystone (19), CRM (117), Korean Air (118) — engineered
     supervisory, hand-off, and measurement architecture *together
     with* the behavioral change.
   ],
