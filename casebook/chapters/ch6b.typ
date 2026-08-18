@@ -825,8 +825,8 @@
     (Navigating Sociotechnical Constraints) for the
     credible-commitment design — independence written into
     operating structure — and in Domain 4 (Test and
-    Evaluation) for the LEO *Judgment under inadequate
-    evidence* on the operating self-report tier. Pair with
+    Evaluation) for the subobjective *Judgment under inadequate
+    evidence* (4.4) on the operating self-report tier. Pair with
     ASRS (Case 119) and CRM/CAST (Case 117) as the
     cross-industry C4 set, and with the WHO Surgical
     Checklist (Case 23) at the mandatory-mechanism layer.

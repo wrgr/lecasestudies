@@ -519,8 +519,8 @@
     posture that schools serving predominantly Black student
     populations more often adopted. The mechanism, in other words,
     is the infrastructure, not the students. The case is one of
-    the motivating cases in the v2 sweep for the LEO *Gap
-    attribution* — the discipline
+    the motivating cases in the v2 sweep for the subobjective *Gap
+    attribution* (4.2) — the discipline
     of asking, when a disparity in outcomes is observed, what
     share of the disparity is attributable to the institutional
     or technical infrastructure rather than to the population the
@@ -602,7 +602,7 @@
     ],
     [
       The case is one of the motivating cases in the v2 sweep for
-      the LEO *Gap attribution* — the discipline of asking, when a
+      the subobjective *Gap attribution* (4.2) — the discipline of asking, when a
       disparity in outcomes is observed, what share of the
       disparity is attributable to the institutional or
       technical infrastructure rather than to the population the
@@ -2425,8 +2425,7 @@
     USC × 2U Luna is the disclosure-as-deliverable case at
     OPM-delegation scale (induced 5.4; LENS D5/PT6). LENS uses it
     in Domain 5 (Navigating Sociotechnical Constraints) for the
-    promised-vs-delivered disclosure gap and in Domain 3 (Machine
-    Teaming and Adaptation) for the delegation-with-revocation
+    promised-vs-delivered disclosure gap and in Domain 3 (Human-System Collaboration) for the delegation-with-revocation
     pattern — the partnership wind-down was announced in November 2023, but the
     consequences for students who enrolled under the prior
     arrangement persist. Pair with Case 57 (GAO regulator-side

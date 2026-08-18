@@ -408,7 +408,7 @@
     [
       Amazon disbanded the project team by early 2017 and has
       said the model was never used by recruiters to evaluate
-      candidates. Reuters reported, however, that recruiters
+      candidates. Reuters reported that recruiters
       "looked at the recommendations" the tool generated without
       relying solely on them — so "never deployed at production
       scale" is the company's account rather than an independently
@@ -647,7 +647,7 @@
   quote: [Repeatedly, humans tend to tune out when tasked with monitoring automated systems that work well most of the time.],
   quote-source: "NTSB board members, Uber Tempe hearing, 2019",
   le-insight: [
-    Uber ATG is the defining case for the LENS Human-AI Teaming
+    Uber ATG is the defining case for the LENS Human-System Collaboration
     competency. A human was retained in the system not because the
     designers believed a human could meaningfully act, but because the
     regulatory architecture required a human be present. The role of
@@ -1026,8 +1026,7 @@
   lens-approach: [
     Air Canada chatbot is the human-in-the-loop-at-the-customer-
     interaction-agent-seam case (induced 5.2; LENS D3/PT6;
-    LEO-3 and LEO-5). LENS uses it in Domain 3 (Machine
-    Teaming and Adaptation) for the
+    LEO-3 and LEO-5). LENS uses it in Domain 3 (Human-System Collaboration) for the
     organization-is-liable-for-agent-representations principle.
     Pair with Case 5 (Epic Sepsis delegation-without-
     validation), Case 3 (Watson for Oncology), and Case 77
@@ -1180,8 +1179,8 @@
   lens-approach: [
     Bartlett is the headline equity-and-construct case in
     consumer credit (induced 8.2; LENS D4+D3/PT6). LENS uses it
-    in Domain 4 (Test and Evaluation) for the LEO *Fairness
-    beyond omission*, in Domain 3 (Human-System Collaboration) for delegation to underwriting models, and in
+    in Domain 4 (Test and Evaluation) for the subobjective *Fairness
+    beyond omission* (4.6), in Domain 3 (Human-System Collaboration) for delegation to underwriting models, and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
     fair-lending regulatory regime. Direct pair with Case 196
     (Coots fintech fairness audit). Adjacent to the race-construct
@@ -1856,7 +1855,7 @@
     ],
     [
       The LENS teaching point pairs directly with Waymo. The new
-      LEO *Delegation with revocation* requires that the
+      subobjective *Delegation with revocation* (3.3) requires that the
       deploying organization design the disclosure architecture
       *before* the failure event — what will be reported, on
       what cadence, to which oversight body, with what
@@ -1888,7 +1887,7 @@
       [Build the verification path the regulator will use into the architecture. The DMV learning the fuller sequence from another agency is the failure mode the architecture has to preclude.],
     ),
     after: (
-      [Use the LEO *Delegation with revocation*: revocation pathways must be designed and exercisable, and the deploying organization should expect the regulator to exercise them when the disclosure architecture fails.],
+      [Use the subobjective *Delegation with revocation* (3.3): revocation pathways must be designed and exercisable, and the deploying organization should expect the regulator to exercise them when the disclosure architecture fails.],
       [Pair the case with Case 199 (Waymo) in any LENS Domain 4 module — the contrast between an engineered legitimacy artifact and partial crisis disclosure is the teaching point, not either case alone.],
       [Carry the journalism-tier flag honestly: the DMV Order is the investigation-grade primary; the internal-timeline reconstructions are journalistic; future validation will improve as Cruise's own post-mortem and any subsequent litigation discovery enter the public record.],
     ),
@@ -1916,8 +1915,8 @@
   lens-approach: [
     Cruise is the AV partial-disclosure failure (induced 5.4;
     LENS D5/PT6). LENS uses it in Domain 5 (Navigating
-    Sociotechnical Constraints) for the LEO *Delegation
-    with revocation* — the case shows what revocation looks
+    Sociotechnical Constraints) for the subobjective *Delegation
+    with revocation* (3.3) — the case shows what revocation looks
     like when the disclosure architecture fails — and in
     Domain 3 (Emerging Systems and Human-System Collaboration) for the
     oversight obligations that follow when a system acts

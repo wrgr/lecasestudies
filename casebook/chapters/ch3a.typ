@@ -1488,7 +1488,7 @@
   quote: [Complexities of the autothrottle and autopilot flight director systems contributed to the accident.],
   quote-source: "NTSB Aircraft Accident Report AAR-14/01, contributing factors, 2014",
   le-insight: [
-    Asiana 214 is the aviation case for the LENS Human-AI Teaming
+    Asiana 214 is the aviation case for the LENS Human-System Collaboration
     proposition that automation transparency is a capability
     deliverable. The mode the autothrottle was actually in and the mode
     the crew believed it was in diverged silently — a textbook

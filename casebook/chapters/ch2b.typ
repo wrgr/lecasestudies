@@ -106,8 +106,8 @@
       measurement inconsistency. The practitioner must decide on
       what to build — training design, supervisor support,
       practice opportunity — knowing the evidence is the strongest
-      available but not closed. The LEO *Judgment under
-      inadequate evidence* is exactly the capability this
+      available but not closed. The subobjective *Judgment under
+      inadequate evidence* (4.4) is exactly the capability this
       meta-analysis pattern asks practitioners to bring.
     ],
   ),
@@ -154,7 +154,7 @@
     Development) for the design-iteration
     sub-competency (the work environment is the design
     variable) and in Domain 4 (Test and Evaluation) for the
-    LEO *Judgment under inadequate evidence* — the
+    subobjective *Judgment under inadequate evidence* (4.4) — the
     meta-analysis is the strongest synthesis the field has,
     and it explicitly names what it cannot settle. Direct
     pair with Case 79 (Kirkpatrick); together they close
@@ -981,8 +981,8 @@
       practice-synthesis — the model and the deployment
       pattern are durable in practitioner literature, the
       per-firm effect magnitudes are self-reported, future
-      validation will continue. The LEO *Judgment under
-      inadequate evidence* is exactly the capability HILS
+      validation will continue. The subobjective *Judgment under
+      inadequate evidence* (4.4) is exactly the capability HILS
       asks the practitioner to bring: act on the strongest
       synthesis the field has produced while naming what is
       and is not independently audited.#cn()
@@ -1004,7 +1004,7 @@
     after: (
       [Pair with Case 83 (SCM) to measure whether the deployed program worked at the tails — HILS designs the environment, SCM samples the outcomes; together they structure the chain-of-evidence cross (Case 79).],
       [Carry the practice-synthesis flag honestly: the model is documented and durable, the per-firm effect sizes are self-reported, and any specific magnitude cited from vendor whitepapers should be flagged as such in program documentation.],
-      [Use the LEO *Judgment under inadequate evidence*: the synthesis is the strongest the field has, and the practitioner has to decide whether to deploy HILS at organizational scale on practitioner-tier evidence while naming the validation that remains open.],
+      [Use the subobjective *Judgment under inadequate evidence* (4.4): the synthesis is the strongest the field has, and the practitioner has to decide whether to deploy HILS at organizational scale on practitioner-tier evidence while naming the validation that remains open.],
     ),
   ),
   references: (
@@ -1022,7 +1022,7 @@
     the design-side counterpart of SCM (Case 83). Evidence
     is practice-synthesis: the model is durable in
     practitioner literature, per-firm effect sizes are
-    self-reported, future validation continues. The LEO *Judgment under inadequate evidence* is the capability
+    self-reported, future validation continues. The subobjective *Judgment under inadequate evidence* (4.4) is the capability
     the case asks for.
   ],
   lens-approach: [
@@ -1031,8 +1031,8 @@
     (Iterative Development / Learning Engineering Design)
     for the amended sub-competency that narrates the design
     iteration explicitly across pre / event / post phases,
-    and exercises the LEO *Judgment under inadequate
-    evidence* because the practitioner must decide on
+    and exercises the subobjective *Judgment under inadequate
+    evidence* (4.4) because the practitioner must decide on
     practice-synthesis-tier evidence. Pairs with Case 83
     (SCM) and Cases 79 / 112 as the corporate-L&D cluster.
   ],
@@ -1188,7 +1188,7 @@
     the evaluation-pathway case for first-person practice
     accounts (induced 2.3; LENS D2/PT4). LENS uses it in
     Domain 2 (Iterative Development) for the amended LEO-2
-    and in Domain 4 (Test and Evaluation) for the LEO *Judgment under inadequate evidence* — the preprint
+    and in Domain 4 (Test and Evaluation) for the subobjective *Judgment under inadequate evidence* (4.4) — the preprint
     supplies the construct distinction (development vs.
     presence) without supplying peer-reviewed magnitudes.
   ],
@@ -2571,8 +2571,8 @@
       satisfied at the Level the training organization can
       control. Until that crossing happens, most corporate L&D
       decisions are made on structurally sub-decision-grade
-      evidence, and the LEO *Judgment under inadequate
-      evidence* is exactly the capability the practitioner needs.#cn()
+      evidence, and the subobjective *Judgment under inadequate
+      evidence* (4.4) is exactly the capability the practitioner needs.#cn()
     ],
   ),
   beats: (
@@ -2589,7 +2589,7 @@
       [Treat the practice-synthesis evidence base honestly: name the pattern, flag the tier, and do not present a stop-at-L2 outcome as if it were a Level-3 or Level-4 finding.],
     ),
     after: (
-      [When Level 3 and Level 4 data are not available, say so plainly in the evaluation report rather than substituting Level 2 metrics; the LEO *Judgment under inadequate evidence* is what the practitioner needs to do well here.],
+      [When Level 3 and Level 4 data are not available, say so plainly in the evaluation report rather than substituting Level 2 metrics; the subobjective *Judgment under inadequate evidence* (4.4) is what the practitioner needs to do well here.],
       [Track the work environment as a separate variable — Blume's meta-analysis (Case 65) names it as decisive — and report the training outcome conditional on environment, not as a property of the training alone.],
       [Use the structural pattern to argue for the evaluation architecture investment, not to abandon evaluation. The gap is a capability gap, not an argument against measurement.],
     ),
@@ -2616,8 +2616,8 @@
   lens-approach: [
     Kirkpatrick is the corporate-L&D evaluation case
     (induced 2.1; LENS D4/PT5). LENS uses it in Domain 4
-    (Test and Evaluation) for the LEO *Judgment under
-    inadequate evidence* — the practitioner must decide well
+    (Test and Evaluation) for the subobjective *Judgment under
+    inadequate evidence* (4.4) — the practitioner must decide well
     on structurally sub-decision-grade evidence — and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
     Level-2/Level-3 seam that the training organization
@@ -3127,7 +3127,7 @@
     and Evaluation) for the structured self-assessment
     instrument and the two-layer validation discipline; in
     Domain 5 (Navigating Sociotechnical Constraints) for the
-    governance-as-instrument framing; and on the LEO *Judgment under inadequate evidence* for the
+    governance-as-instrument framing; and on the subobjective *Judgment under inadequate evidence* (4.4) for the
     instrument-validation-vs-outcome-validation tier
     distinction. Pair with Cases 81, 91, 89, 92 as the
     non-US LA governance pentad; MMALA is the
@@ -3245,7 +3245,7 @@
       problem from Case 79 and the meta-analytic transfer finding
       from Case 65. SCM is the operational instrument that
       crosses the Level-2 / Level-3 seam by sampling where the
-      evidence is most informative — and it exercises the LEO *Judgment under inadequate evidence* directly, because the
+      evidence is most informative — and it exercises the subobjective *Judgment under inadequate evidence* (4.4) directly, because the
       method asks practitioners to act on detailed case
       reconstructions rather than wait for population-scale
       causal estimates that corporate L&D often cannot produce.
@@ -3268,7 +3268,7 @@
     ),
     after: (
       [Translate the tail evidence into a redesign of the surrounding system — supervisor briefings, peer-support structures, on-job practice opportunity — rather than into a redesign of the training event alone. Pair with Case 70 (HILS).],
-      [Use the LEO *Judgment under inadequate evidence*: act on the case-reconstruction evidence the method produces while being explicit that it is not a population causal estimate; document the uncertainty.],
+      [Use the subobjective *Judgment under inadequate evidence* (4.4): act on the case-reconstruction evidence the method produces while being explicit that it is not a population causal estimate; document the uncertainty.],
       [Carry the practice-synthesis flag honestly in any program documentation citing SCM corporate deployments — the method is peer-reviewed, but the per-firm effect sizes are not.],
     ),
   ),
@@ -3293,8 +3293,8 @@
   lens-approach: [
     SCM is the corporate-L&D tail-sampling case (induced 2.1;
     LENS D4/PT5). LENS uses it in Domain 4 (Test and
-    Evaluation) for the LEO *Judgment under inadequate
-    evidence* — the method asks practitioners to act on
+    Evaluation) for the subobjective *Judgment under inadequate
+    evidence* (4.4) — the method asks practitioners to act on
     case-reconstruction evidence rather than population
     estimates — and in Domain 2 (Iterative Development) by
     way of the evaluation-feedback loop SCM enables. Pairs
@@ -4561,8 +4561,7 @@
     Pyle & Andalibi is the governance-rather-than-technique case
     at the consent boundary (induced 8.4; LENS D5/PT6). LENS uses
     it in Domain 5 (Navigating Sociotechnical Constraints) for
-    the affected-voice inclusion lesson and in Domain 3 (Machine
-    Teaming and Adaptation) for the disclosure-architecture
+    the affected-voice inclusion lesson and in Domain 3 (Human-System Collaboration) for the disclosure-architecture
     design at the applicant interface. Pair with Cases 55
     (Engler deployment), 57 (GAO oversight), 186 (Bartlett),
     and 86 (Gándara). coi-light render under the title is
@@ -4910,8 +4909,8 @@
     (induced 5.4; LENS D5/PT4). LENS uses it in Domain 5
     (Navigating Sociotechnical Constraints) for the change-
     control-and-disclosure-as-artifact discipline and in
-    Domain 4 (Test and Evaluation) for the LEO *Judgment
-    under inadequate evidence* on the process-vs-outcome tier.
+    Domain 4 (Test and Evaluation) for the subobjective *Judgment
+    under inadequate evidence* (4.4) on the process-vs-outcome tier.
     Pair with Case 81 (OU, institutional), Case 189 (SyRI,
     judicial), Case 91 (LALA, multi-country participatory),
     and Case 89 (African data privacy, frontier) — the non-US
@@ -5255,7 +5254,7 @@
     frontier-evidence case (induced 8.4; LENS D5/PT4). LENS
     uses it in Domain 5 (Navigating Sociotechnical
     Constraints) for the construct-travel problem and in
-    Domain 4 (Test and Evaluation) for the LEO *Judgment under inadequate evidence* — the deployer must
+    Domain 4 (Test and Evaluation) for the subobjective *Judgment under inadequate evidence* (4.4) — the deployer must
     decide on what to import and what to validate locally
     when the validation literature is thin. Pairs with the
     African data-privacy governance case for the

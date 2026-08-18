@@ -439,8 +439,8 @@
       evaluated against, audit on outputs rather than reasoning about
       inputs, and decide on judgment that the trade-offs across
       competing definitions are acceptable for the deployment context.
-      This is the case-grounded basis for the LEO *Fairness beyond
-      omission* and the LEO *Judgment under inadequate evidence*
+      This is the case-grounded basis for the subobjective *Fairness beyond
+      omission* (4.6) and the subobjective *Judgment under inadequate evidence* (4.4)
       — the audit is itself a worked
       example of deciding under irreducible disagreement.#cn()
     ],
@@ -484,7 +484,7 @@
   ],
   lens-approach: [
     Coots is the small-tier frontier counter-case to Bartlett. LENS
-    uses the pair in Domain 4 (Test and Evaluation) for the LEO *Fairness beyond omission*; in Domain 4 again for the LEO *Judgment under inadequate evidence* (the pair is itself a
+    uses the pair in Domain 4 (Test and Evaluation) for the subobjective *Fairness beyond omission* (4.6); in Domain 4 again for the subobjective *Judgment under inadequate evidence* (4.4) (the pair is itself a
     decision under irreducible disagreement); and in Domain 3 (Human-System Collaboration) for delegation of
     consequential consumer-finance decisions to a model. The
     preprint-tier flag is binding until peer review completes.
@@ -933,7 +933,7 @@
       The teaching point for LENS is that delegation of
       consequential decisions to an automated system creates a
       governance debt that the deploying organization owes the
-      public. The LEO *Delegation with revocation* is the
+      public. The subobjective *Delegation with revocation* (3.3) is the
       capability the case exercises: the safety case framework
       is the artifact that makes revocation possible —
       regulators or auditors can identify which sub-claim has
@@ -961,7 +961,7 @@
     ),
     after: (
       [Treat the safety case framework as a living document — update the claims and evidence as post-deployment failure data accumulates, and publish the updates so the legitimacy artifact does not calcify.],
-      [Use the LEO *Delegation with revocation*: design the framework so a regulator or auditor can identify which sub-claim has failed and trigger a revocation pathway, not only a "trust us, we will fix it" assurance.],
+      [Use the subobjective *Delegation with revocation* (3.3): design the framework so a regulator or auditor can identify which sub-claim has failed and trigger a revocation pathway, not only a "trust us, we will fix it" assurance.],
       [Carry the practice-synthesis evidence-tier flag honestly in any program documentation citing the framework — the artifact pattern is teachable, but the magnitude of its public-trust effect is still being measured.],
     ),
   ),
@@ -988,8 +988,8 @@
   lens-approach: [
     Waymo is the AV-safety governance case (induced 5.1; LENS
     D5/PT6). LENS uses it in Domain 5 (Navigating
-    Sociotechnical Constraints) for the LEO *Delegation
-    with revocation* — the safety case is what makes
+    Sociotechnical Constraints) for the subobjective *Delegation
+    with revocation* (3.3) — the safety case is what makes
     revocation possible — and in Domain 3 (Emerging Systems
     and Human-System Collaboration) for the deployer-side artifact that
     permits oversight of a system whose internals are trade
@@ -1003,7 +1003,7 @@
   ),
   reflection-list: (
     [Identify an automated system in your context that faces a public-trust objection it cannot answer by full disclosure. What falsifiable argument structure could you publish that would make the system's reasoning auditable without requiring disclosure of the contested data?],
-    [Specify how a regulator or independent auditor would *revoke* the delegation in your system if a sub-claim of the safety case failed. The LEO *Delegation with revocation* requires this pathway to exist before deployment, not only after a public-facing failure.],
+    [Specify how a regulator or independent auditor would *revoke* the delegation in your system if a sub-claim of the safety case failed. The subobjective *Delegation with revocation* (3.3) requires this pathway to exist before deployment, not only after a public-facing failure.],
   ),
   courses: ("LEN 4", "LEN 8", "LEN 9"),
 )
@@ -1430,7 +1430,7 @@
     structure: not "this system should not deploy" but "this
     governance regime must be replaced for any deployment to be
     legitimate." The case sits alongside CARE-adjacent equity
-    threads in the v2 corpus and supports the LEO *Fairness beyond omission* — CARE specifies positive
+    threads in the v2 corpus and supports the subobjective *Fairness beyond omission* (4.6) — CARE specifies positive
     sovereignty, not merely the avoidance of harm. Practice-
     synthesis-tier flag preserved: principles are peer-reviewed;
     implementation literature is still emerging. Future
@@ -1485,7 +1485,7 @@
     ],
     [
       For the v2 framework revision, CARE is the case-grounded
-      basis for the LEO *Fairness beyond omission*. Removing
+      basis for the subobjective *Fairness beyond omission* (4.6). Removing
       a biased feature, omitting a demographic variable, or
       de-identifying a dataset is fairness-by-subtraction; CARE
       specifies fairness-by-replacement of the governance regime.
@@ -1501,7 +1501,7 @@
     "Developed by Indigenous Data Sovereignty networks in Aotearoa NZ, Australia, US — explicit non-US-centered leadership",
     "Governance-replacement structure, not governance-supplementation — existing privacy regimes named as inadequate",
     "Lowitja Journal 2025 documents Ngangk Yira Institute implementation — first detailed case study at institutional scale",
-    "Supports LEO *Fairness beyond omission* — fairness as positive sovereignty, not subtraction of biased features",
+    "Supports subobjective *Fairness beyond omission* (4.6) — fairness as positive sovereignty, not subtraction of biased features",
   ),
   approaches: (
     during: (
@@ -1511,7 +1511,7 @@
     ),
     after: (
       [Track implementation outcomes against the four CARE conditions separately; the Lowitja Journal paper is the genre exemplar for what such a tracking report can look like.],
-      [Use CARE as the case-grounded basis for the LEO *Fairness beyond omission* — fairness as governance-regime replacement, not as feature-level subtraction.],
+      [Use CARE as the case-grounded basis for the subobjective *Fairness beyond omission* (4.6) — fairness as governance-regime replacement, not as feature-level subtraction.],
       [When asked whether CARE travels, name what the AU/NZ/US Indigenous Data Sovereignty networks supply (sustained institutional leadership, recognized peoplehood frameworks) before asserting transfer to other collective-rights contexts.],
     ),
   ),
@@ -1538,7 +1538,7 @@
     Sociotechnical Constraints) for the governance-regime
     replacement structure — existing privacy regimes named as
     inadequate to collective rights — and as the case-grounded
-    basis for the LEO *Fairness beyond omission*: fairness
+    basis for the subobjective *Fairness beyond omission* (4.6): fairness
     as positive sovereignty, not the subtraction of biased
     features. Companion to the equity-thread cases in the v2
     corpus.

@@ -727,7 +727,7 @@
       embedded in hundreds of hospitals as a default feature of the
       dominant inpatient EHR. The tool was presented as a help to
       clinicians trying to catch sepsis earlier in a workflow already
-      saturated with alerts. The model's design and validation, however,
+      saturated with alerts. The model's design and validation
       were proprietary and not externally evaluated.#cn()
     ],
     [
@@ -948,7 +948,7 @@
       layers of the system: the construct definition (eGFR), the
       validation architecture (pulse oximetry), and the
       human-development mechanism (Hoffman). The trio is the
-      case-grounded basis for the LEO *Gap attribution*: distinguishing
+      case-grounded basis for the subobjective *Gap attribution* (4.2): distinguishing
       capability gaps attributable to human development, system
       design, and organizational performance, and selecting
       measurement that isolates the intended cause.
@@ -995,7 +995,7 @@
   lens-approach: [
     Hoffman is the human-development case in the race-construct
     trio (Cases 25, 26 and 6). LENS uses it in Domain 4 (Test and
-    Evaluation) for the LEO *Gap attribution* — the gap is in
+    Evaluation) for the subobjective *Gap attribution* (4.2) — the gap is in
     the clinician's training, not the construct or the device —
     and in Domain 2 (Learning Engineering Design) for the
     curriculum-design implication. The trio together is the

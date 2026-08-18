@@ -130,7 +130,7 @@
       of why "decision-grade evidence" has to be reframed at
       the portfolio scale — the decision-maker is not the
       program manager but the budget authority — and is one
-      of the corpus's strongest grounds for the LEO *Judgment under inadequate evidence*. The portfolio
+      of the corpus's strongest grounds for the subobjective *Judgment under inadequate evidence* (4.4). The portfolio
       decision-maker does not get to wait for the evidence
       architecture to be fixed before deciding; the case is
       about how to make the decision with the evidence
@@ -169,14 +169,14 @@
     portfolio scale: the O&S data that dominate weapon-system
     lifecycle decisions are not reported in a form the
     decisions require, and the gap is structural across the
-    enterprise. The case is the worked example of the LEO *Judgment under inadequate evidence* at the budget-
+    enterprise. The case is the worked example of the subobjective *Judgment under inadequate evidence* (4.4) at the budget-
     authority scale.
   ],
   lens-approach: [
     GAO weapon-system sustainment is the portfolio-evidence-
     architecture frontier case (induced 1.4; LENS D1/PT4) — used
-    in Domain 4 for the LEO *Judgment under inadequate
-    evidence* at portfolio scale. Pair with Case 138 and
+    in Domain 4 for the subobjective *Judgment under inadequate
+    evidence* (4.4) at portfolio scale. Pair with Case 138 and
     Case 173.
   ],
   literature-items: (

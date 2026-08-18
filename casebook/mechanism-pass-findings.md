@@ -84,16 +84,24 @@ turn on emphasis. Every confirmed finding below is of the first kind.
    (BRAIN vs HBP: *"the governance model… was the variable that explained why one program
    survived"*). Counter-models where the book gets it right: 027, 062, 080, 093, 123.
 
-5. **Mechanical, scriptable, low-judgement:**
-   - **35** instances of `the LEO *<named subobjective>*` mis-tiering a v2 subobjective as a
-     top-level LEO (vs 387 correct `LEO-N` refs).
-   - **10** retired v2.1 domain labels in prose — "Machine Teaming and Adaptation" ×3,
-     "Human-AI Teaming" ×7. *(Line-wrapped; a line-based grep returns zero. Search
-     whitespace-normalised.)*
-   - **3** instances of the house-banned `however`.
-   - **1** dangling reference to a quarantined case: 144 (Kodak) says *"BlackBerry (the next
-     case)"*; Case 145 is quarantined and emits nothing. Second live mention in ch5a's intro.
-     The other 13 quarantined cases are clean.
+5. **Mechanical, scriptable, low-judgement — APPLIED, see below.**
+   Every count in this section was wrong on first pass and was corrected at execution:
+   - **57** instances (not 35) of `LEO *<named subobjective>*` mis-tiering a v2 subobjective
+     as a top-level LEO, vs 387 correct `LEO-N` refs. The 35 came from a line-based grep;
+     22 more were split across a line break. **The same trap that hid finding-5's second
+     item hid part of its first item, and I fell into it twice.**
+   - **5** retired v2.1 domain labels (not 10) — `Domain 3 (Machine Teaming and Adaptation)`
+     ×3, and ×2 naming the LENS competency itself "Human-AI Teaming". The other 5
+     "Human-AI Teaming" uses are **legitimate**: `lens_program/2_*.md` sanctions human-AI
+     teaming as a *sub-pattern within* LEO-3, and LEN 2 is titled *Human-Machine Teaming*.
+     Changing those would have been over-reach.
+   - **2** instances (not 3) of the house-banned `however`. The third is *"the per-voxel
+     error rate, however low, compounds"* — "no matter how low", not the contrastive
+     conjunction the house voice bans.
+   - **1** dangling pointer to a quarantined case: 144 (Kodak) said *"Pair directly with
+     BlackBerry (the next case)"*; Case 145 is quarantined and emits nothing. The second
+     ch5a mention is a general illustration ("an external launch (BlackBerry meeting the
+     iPhone)"), not a pointer — left alone. The other 13 quarantined cases are clean.
 
 6. **`competencies.md` has drifted from the corpus.** It still describes itself as induced
    from 100 cases, reports n=72 failures / 16 interventions / 12 frontier, and says two
@@ -105,7 +113,10 @@ turn on emphasis. Every confirmed finding below is of the first kind.
 
 ## Recommended order of work
 
-1. **Scripted, no judgement** — finding 5. Four sweeps, mechanically verifiable.
+1. ~~**Scripted, no judgement** — finding 5.~~ **DONE** (August 2026). 57 LEO-tier fixes to
+   `subobjective *X* (N.N)` with numbers verified against `lens_program/2_*.md`; 3 domain
+   renames to v2.1; 2 LENS-competency names corrected; 2 `however`; 1 dangling pointer
+   removed. `check-cases.sh`: **191 converted, 0 failures.**
 2. **Six confirmed defects** — the table above. Each needs primary-source confirmation
    before the rewrite; each is a small edit.
 3. **Compression-layer audit** — finding 1, eight named cases. Rule: *a summary may

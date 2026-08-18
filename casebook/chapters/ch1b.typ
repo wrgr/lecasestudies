@@ -155,8 +155,8 @@
     (induced 1.1; LENS D1/PT3). LENS uses it in Domain 1
     (Systems Analysis) for the conversion of stated
     requirement to engineered specification by law, and in
-    Domain 4 (Test and Evaluation) for the LEO *Judgment
-    under inadequate evidence* — the evaluation evidence is
+    Domain 4 (Test and Evaluation) for the subobjective *Judgment
+    under inadequate evidence* (4.4) — the evaluation evidence is
     observational cross-sectional, the strongest available
     and not closed proof. Pair with Case 173 SUBSAFE at the
     requirements-as-deliverable layer.
@@ -1256,8 +1256,8 @@
       printed case. The LENS teaching point is the
       cross-listed pair with the corporate / workforce L&D
       cluster (Cases 79, 65, 83, 70) and the non-US/UK/EU
-      cluster (Cases 93). The LEO *Judgment under
-      inadequate evidence* is exercised: the study is the
+      cluster (Cases 93). The subobjective *Judgment under
+      inadequate evidence* (4.4) is exercised: the study is the
       strongest evidence the field has for modality
       equivalence in this context, and it does not establish
       L3 / L4 outcomes. Future validation is ongoing.
@@ -1278,7 +1278,7 @@
     ),
     after: (
       [Pair with Case 93 (SkillsFuture) as the workforce-capability counterparts at national- and multi-country scale; together they teach what L&D measurement looks like in non-US/UK/EU settings with the evidence-tier honesty intact.],
-      [Use the LEO *Judgment under inadequate evidence*: the study is the strongest evidence the field has for modality equivalence in this context, and the practitioner has to decide modality policy on L1–L2 evidence while L3/L4 evidence develops.],
+      [Use the subobjective *Judgment under inadequate evidence* (4.4): the study is the strongest evidence the field has for modality equivalence in this context, and the practitioner has to decide modality policy on L1–L2 evidence while L3/L4 evidence develops.],
       [Carry the preprint-tier flag honestly: the medRxiv preprint and the PMC published article are both citable; future validation requires confirmatory replication and L3/L4 outcome measurement.],
     ),
   ),
@@ -1305,8 +1305,8 @@
     (Iterative Development) for the modality-design
     iteration COVID forced and in Domain 5 (Navigating
     Sociotechnical Constraints) for the multi-country
-    program scope. The LEO *Judgment under inadequate
-    evidence* is exercised because the study is the
+    program scope. The subobjective *Judgment under inadequate
+    evidence* (4.4) is exercised because the study is the
     strongest available at L1–L2 and does not settle L3 /
     L4. Pairs with Case 93 (SkillsFuture) as the workforce
     L&D cross-listing.
@@ -2419,10 +2419,10 @@
       architecture rather than the equation; and with pain assessment
       (Case 6), where the failure was in clinician-held false beliefs
       rather than the instrument. The trio together is the case-grounded
-      basis for the LEO *Gap attribution* — distinguishing capability
+      basis for the subobjective *Gap attribution* (4.2) — distinguishing capability
       gaps attributable to human development, system design, and
-      organizational performance — and for the LEO *Fairness beyond
-      omission*, of which eGFR is the construct-removal instance.
+      organizational performance — and for the subobjective *Fairness beyond
+      omission* (4.6), of which eGFR is the construct-removal instance.
     ],
   ),
   beats: (
@@ -2465,7 +2465,7 @@
   lens-approach: [
     eGFR is the construct-definition equity intervention in the
     race-construct trio (Cases 25, 26 and 6). LENS uses it in Domain 4
-    (Test and Evaluation) for the LEO *Gap attribution* —
+    (Test and Evaluation) for the subobjective *Gap attribution* (4.2) —
     attributing the gap to construct definition, not to clinicians
     or patients — and in Domain 5 (Navigating Sociotechnical
     Constraints) for the governance process that revised the
@@ -2622,8 +2622,8 @@
   lens-approach: [
     Pulse oximetry is the validation-architecture intervention in
     the race-construct trio (Cases 25, 26 and 6). LENS uses it in
-    Domain 4 (Test and Evaluation) for the LEO *Gap
-    attribution* — the gap is in the validation architecture, not
+    Domain 4 (Test and Evaluation) for the subobjective *Gap
+    attribution* (4.2) — the gap is in the validation architecture, not
     the device or the clinician — and in Domain 5 (Navigating
     Sociotechnical Constraints) for the FDA clearance / device
     oversight regime. Adjacent to Case 35 (radiology AI
@@ -2914,8 +2914,8 @@
       instrumented outcomes. The case is the case-grounded basis
       for the Domain 3 sub-competency proposed in
       — naming the enthusiasm-evidence gap as a
-      canonical anti-pattern — and for the LEO *Judgment
-      under inadequate evidence*: practitioners and program
+      canonical anti-pattern — and for the subobjective *Judgment
+      under inadequate evidence* (4.4): practitioners and program
       designers in IPE have had to decide for decades on what to
       build, on evidence that does not establish the causal claim
       the field's premise rests on.#cn()
@@ -2976,7 +2976,7 @@
     (induced 2.1; LENS D4/PT5). LENS uses it in Domain 4
     (Test and Evaluation) as the case-grounded basis for the
     enthusiasm-evidence-gap sub-competency and for the
-    LEO *Judgment under inadequate evidence* — IPE is the
+    subobjective *Judgment under inadequate evidence* (4.4) — IPE is the
     pattern's largest instance. Pair with Case 40 (team-
     science training, where measurement is possible at program
     scale) and Case 41 (implementation-science training,
@@ -4729,7 +4729,7 @@
       that the form alone does not deliver capability when the
       capability depends on a behavior the program does not
       instrument. The case is the case-grounded basis for the new
-      LEO *Judgment under inadequate evidence* — the practitioner
+      subobjective *Judgment under inadequate evidence* (4.4) — the practitioner
       designing a REMS-class program has to decide on the available
       evidence what additional adherence-support architecture the
       mechanism needs in order to deliver, and the iPLEDGE evidence
@@ -4775,10 +4775,10 @@
   ],
   lens-approach: [
     iPLEDGE is the analytically useful "mixed" pre-authorization
-    case (induced 4.4; LENS D3/PT5). LENS uses it in Domain 3 (Human-System Collaboration) for the LEO *Delegation with revocation* — what the authorization
+    case (induced 4.4; LENS D3/PT5). LENS uses it in Domain 3 (Human-System Collaboration) for the subobjective *Delegation with revocation* (3.3) — what the authorization
     mechanism delegates and what it does not — and in Domain 4
-    (Test and Evaluation) for the LEO *Judgment under
-    inadequate evidence* on whether the form will deliver in a
+    (Test and Evaluation) for the subobjective *Judgment under
+    inadequate evidence* (4.4) on whether the form will deliver in a
     specific context. Direct pair with SUBSAFE (Case 173) at
     the form-vs-context layer; pair with WHO Surgical Checklist
     (Case 23) at the mandatory-mechanism layer.
@@ -5219,7 +5219,7 @@
       sub-competency from three angles — the program-scale
       success, the field-scale gap, and the operational-practice
       gap inside training programs themselves — and it teaches
-      the LEO *Judgment under inadequate evidence* by
+      the subobjective *Judgment under inadequate evidence* (4.4) by
       example: practitioners designing implementation-science
       training programs have to decide what to build on incomplete
       evidence of what works, while the field is still building
@@ -5272,8 +5272,8 @@
     for the cross-disciplinary translation discipline; in
     Domain 4 (Test and Evaluation) for the enthusiasm-
     evidence-gap sub-competency; and in Domain 2 (Iterative
-    Development) for the LEO *Judgment under inadequate
-    evidence* as practitioners design training programs while
+    Development) for the subobjective *Judgment under inadequate
+    evidence* (4.4) as practitioners design training programs while
     the field-scale evidence is still being built. Pair with
     Cases 40, 28 as the multidisciplinary-translation trio;
     workforce-training counterpart to Case 13.
@@ -5769,7 +5769,7 @@
     PMDA is the non-US regulator-designed change-control case
     (induced 5.4; LENS D5/PT6). LENS uses it in Domain 5
     (Navigating Sociotechnical Constraints) for the
-    delegation-with-revocation structure and in Domain 3 (Human-System Collaboration) for the LEO *Delegation with revocation* — the regulator delegates
+    delegation-with-revocation structure and in Domain 3 (Human-System Collaboration) for the subobjective *Delegation with revocation* (3.3) — the regulator delegates
     in-scope modification authority and retains revocation,
     rather than defaulting to static approval. Pairs with the
     Epic-Sepsis governance gap as the structural contrast

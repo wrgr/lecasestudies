@@ -401,10 +401,9 @@
     organizational-iteration claim concrete: 2.2 (run the cycle), 2.3
     (transfer the cycle to the high-stakes business decision), and 2.4
     (sustain adoption against the gravitational pull of the legacy
-    P&L) all sat un-owned for a generation. Pair directly with
-    BlackBerry (the next case) for the contemporary
-    consumer-electronics analog, and with Fujifilm as the in-category
-    counter-iteration that ran the same signal differently.
+    P&L) all sat un-owned for a generation. Pair with Fujifilm as the
+    in-category counter-iteration that ran the same signal
+    differently.
   ],
   literature-items: (
     [Lucas & Goh (2009), _Journal of Strategic Information Systems_],
