@@ -699,7 +699,7 @@
 )
 
 #let dgm-andon = diagram-frame(
-  caption: "Lowest-ranking worker authorized to stop the line",
+  caption: "Signal, guaranteed response, and a stop only at the fixed position",
   cetz.canvas({
     import cetz.draw: *
     // Inverted hierarchy
@@ -714,7 +714,7 @@
       let x = 3.0 + i * 1.6
       rect((x - 0.35, 1.7), (x + 0.35, 2.3), fill: rgb("#132240"), stroke: 0.4pt + rgb("#5A6A85"))
     }
-    content((6, 1.0), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "85% resolved in 60 seconds"), anchor: "north")
+    content((6, 1.0), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "most calls resolved within the work cycle"), anchor: "north")
   })
 )
 

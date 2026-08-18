@@ -269,7 +269,7 @@
     ],
     // -- What Transferred --
     [
-      The cleanest test of the model is internal. The same Navy that
+      The internal comparison is the instructive one. The same Navy that
       engineered the nuclear program to this standard let surface-warfare
       training decay to CD-ROM self-study and paid the price at Fitzgerald
       and McCain (Cases 124 and 140). Same institution, same era, opposite
@@ -292,7 +292,7 @@
     [Polmar, N. & Allen, T. (2007), _Rickover: Father of the Nuclear Navy_ — the program and Rickover's philosophy (paraphrased).],
     [Naval Nuclear Propulsion Program documentation (NRC/DOE) — qualification standards and the accident record.],
     [Admiral Hyman G. Rickover, "Doing a Job" (Columbia University commencement address, 1982) — "people, not organizations… get things done" (quoted).],
-    [GAO-21-168, comparison of nuclear and surface Navy training — the internal contrast.],
+    [GAO-21-168 (2021), _Navy Readiness: Actions Needed to Evaluate and Improve Surface Warfare Officer Career Path_ — the surface community's career path set against the submarine, aviation and EOD communities.],
     [Duncan, F. (1990), _Rickover and the Nuclear Navy_ — the qualification culture.],
   ),
   quote: [Human experience shows that people, not organizations or management systems, get things done.],
@@ -302,9 +302,8 @@
     engineering program in any high-consequence domain. The choice to
     treat training as a system parameter rather than as a cost center
     has produced sixty-plus years of zero reactor accidents. The
-    contrast with the Surface Navy is the cleanest available test of
-    what happens when capability is engineered versus when it is
-    deferred — and the price of that engineering (the qualification ladder,
+    contrast with the Surface Navy shows what happens when capability is
+    engineered versus when it is deferred — and the price of that engineering (the qualification ladder,
     the zero-defect oral boards, the continuous re-qualification) is visible
     on the budget line.
   ],
@@ -834,7 +833,7 @@
   impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, US Navy IT graduates with no prior IT experience outscored fleet Information Systems Technicians with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
   kind: "intervention",
   scale: "small",
-  evidence-source: "peer-reviewed",
+  evidence-source: "program-report",
   induced-anchor: "1.2",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2, LEO-4",
@@ -843,7 +842,7 @@
     intelligent tutoring system, modelled on expert human tutoring,
     could compress years of operational IT expertise into a 16-week
     pipeline. The independent evaluation by the Institute for Defense
-    Analyses (Fletcher and Morrison, IDA Document D-4686) compared
+    Analyses (Morrison and Fletcher, IDA Document D-4686, 2012) compared
     Digital Tutor graduates — US Navy enlistees with no prior IT
     experience — against fleet Information Systems Technicians
     with an average 9.1 years of experience. The Digital Tutor
@@ -891,8 +890,8 @@
       pipeline.#cn()
     ],
     [
-      The Institute for Defense Analyses (Fletcher and Morrison, IDA
-      Document D-4686 / DTIC AD1002362) ran the independent
+      The Institute for Defense Analyses (Morrison and Fletcher, IDA
+      Document D-4686, 2012) ran the sponsor-commissioned
       evaluation that the case rests on. Digital Tutor graduates —
       Navy enlistees with no prior IT background, 16 weeks in — were
       compared against a sample of fleet Information Systems
@@ -935,8 +934,8 @@
   ),
   beats: (
     "DARPA Digital Tutor — intelligent tutoring system modelled on expert one-on-one human tutoring; 16-week pipeline for US Navy IT rating",
-    "IDA independent evaluation (Fletcher & Morrison, IDA D-4686): Digital Tutor graduates vs. fleet ITs with 9.1 years' average experience",
-    "Knowledge test effect size 4.30 in favor of Digital Tutor; Digital Tutor cohort outperforms fleet on most troubleshooting/design tasks (Security the exception)",
+    "IDA evaluation for the sponsor (Morrison & Fletcher, IDA D-4686, 2012), 12 per arm, unrandomised: Digital Tutor graduates vs. fleet ITs with 9.1 years' average experience",
+    "Knowledge-test effect size 4.30; troubleshooting effect a fifth of that at 0.85; the security exercise favoured the fleet, not significantly",
     "Report concludes the effort 'appears to have achieved its goals'",
     "Hedges preserved: knowledge accounts for ~40% of practical-exercise variance, 'an enabler of performance rather than a direct measure'; architecture detail too scant to reproduce",
   ),
@@ -953,15 +952,15 @@
     ),
   ),
   references: (
-    [Fletcher, J. D., \& Morrison, J. E. (2014). _DARPA Digital Tutor: Assessment Data_. IDA Document D-4686. https://apps.dtic.mil/sti/tr/pdf/AD1002362.pdf — independent evaluation that the case rests on.],
+    [Morrison, J. E., \& Fletcher, J. D. (September 2012). _DARPA Digital Tutor: Assessment Data_. IDA Document D-4686 (prepared for DARPA under contract DASW01-04-C-0003) — the sponsor-commissioned evaluation the case rests on.],
     [Defense Advanced Research Projects Agency, Digital Tutor program documentation — program description and design rationale.],
     [Fletcher, J. D. (2009). _From behaviorism to constructivism: a philosophical journey from drill and practice to situated learning_. — methodological grounding for the Digital Tutor's tutorial discipline.],
     [Anderson, J. R., Corbett, A. T., Koedinger, K. R., \& Pelletier, R. (1995). Cognitive tutors: Lessons learned. _Journal of the Learning Sciences_, 4(2):167–207. doi:10.1207/s15327809jls0402\_2 — the broader intelligent-tutoring evidence base the Digital Tutor program sits within.],
   ),
   quote: [The Digital Tutor cohort outscored fleet ITs with 9.1 years' experience on the knowledge test at an effect size of 4.30; the hedge is that knowledge accounts for about 40 percent of practical-exercise variance.],
-  quote-source: "Editors' synthesis of Fletcher & Morrison (2014), IDA Document D-4686.",
+  quote-source: "Editors' synthesis of Morrison & Fletcher (2012), IDA Document D-4686.",
   le-insight: [
-    DARPA's Digital Tutor is the cleanest available evidence
+    DARPA's Digital Tutor is the strongest available evidence
     that the capability envelope of a training pipeline can be
     re-specified — from years of seat time to 16 weeks of
     tutorial-discipline instruction — against an operational
@@ -983,7 +982,7 @@
     through tutorial discipline.
   ],
   literature-items: (
-    [Fletcher \& Morrison (2014), IDA Document D-4686],
+    [Morrison \& Fletcher (2012), IDA Document D-4686],
     [Anderson et al. (1995), _Journal of the Learning Sciences_],
     [DARPA Digital Tutor program documentation],
   ),

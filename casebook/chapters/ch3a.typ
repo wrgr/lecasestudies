@@ -25,8 +25,8 @@
   modes-code: "HT",
   impact: "70 killed; Boeing 757 crashed into the Pacific after maintenance tape was left over static ports",
   diagram: dgm.dgm-cascade(
-    ("altimeter", "airspeed indicator", "GPWS / altitude alert", "Mach warning"),
-    outcome: "every instrument fed by the same blocked sensor",
+    ("altimeter", "airspeed indicator", "altitude alert", "Mach warning"),
+    outcome: "every air-data instrument fed by the same blocked sensor; the radio-altimeter terrain warning stayed true and was discounted",
     caption: "AeroPerú 603 — redundancy that was not redundancy",
   ),
   kind: "failure",
@@ -40,9 +40,11 @@
     and could not determine their true altitude or speed. Believing they
     were higher than they were, they flew into the Pacific, killing all 70
     aboard. The investigation named the maintenance error as the primary
-    cause but stressed that every cockpit instrument depended on the same
-    blocked sensor: the apparent redundancy was an illusion, and the
-    crew's training had no procedure for "everything you see is wrong."
+    cause but stressed that every air-data instrument depended on the same
+    blocked sensor: the apparent redundancy was an illusion. One channel
+    stayed correct — the radio altimeters, independent of the air data
+    computers, drove the terrain warnings — and the crew's training had no
+    procedure for "everything you see is wrong."
   ],
   sections: (
     // -- Background --
@@ -66,16 +68,22 @@
       alerts they could not reconcile. Believing they were higher than
       they were, they descended and struck the Pacific, killing all 70
       aboard — the contradictory warnings offering no way to tell which, if
-      any, instrument to trust, because every one of them drew on the same
-      blocked source and so failed in concert rather than disagreeing usefully.#cn()
+      any, instrument to trust, because every air-data instrument drew on the
+      same blocked source and so failed in concert rather than disagreeing
+      usefully. The true reading arrived as one more alarm in a cockpit where
+      every alarm had already proved false: "too low — terrain" sounded
+      twenty-two times in the last forty-five seconds.#cn()
     ],
     // -- The Investigation --
     [
       The Peruvian accident investigation identified the failure to remove
-      the static-port tape as the primary cause, but emphasized that the
-      cockpit had no independent reference by which to detect the
-      inconsistency. Every instrument that should have flagged the failure
-      drew on the same blocked source. The crew's training had no
+      the static-port tape as the primary cause. One channel stayed correct.
+      The radio altimeters read height above the sea independently of the air
+      data computers, and it was the radio altimeter that fired the
+      ground-proximity warnings the crew heard for the rest of the flight. The
+      board named the crew's failure to observe the radio altimeter and to fly
+      the GPWS escape procedure as a contributing cause, and called the radio
+      altimeter the only reliable element remaining to them. The crew's training had no
       procedure for the case in which all primary instruments are
       simultaneously wrong — that failure had been assumed away rather than
       planned for, leaving the crew to improvise against a problem the system
@@ -85,8 +93,9 @@
     [
       AeroPerú 603 is the case for redundancy that is not redundancy. The
       cockpit's apparent instrument redundancy was an illusion at the
-      source — a common-cause failure that defeated every downstream
-      display at once. The missing capability was both a maintenance
+      source — a common-cause failure that defeated every air-data display at
+      once, while the one channel it did not reach went unheeded. The missing
+      capability was both a maintenance
       control that made the blocked port impossible to miss and a
       procedure for flying when the instruments themselves cannot be
       trusted — the first preventing the common-cause failure at its source,
@@ -109,14 +118,14 @@
   beats: (
     "Ground crew taped over the static ports during cleaning and the tape was never removed",
     "All air data instruments fed false contradictory readings; believing they were higher the crew struck the Pacific",
-    "Peruvian investigators found no independent reference since every instrument fed off the blocked source",
+    "Peruvian investigators found the radio altimeter stayed true and drove the terrain warnings the crew discounted",
     "Apparent cockpit redundancy was illusory at the source and the training had assumed the case away",
     "Industry tightened conspicuous covering and removal verification for static ports and pitot tubes",
   ),
   references: (
     [Peru Dirección General de Aeronáutica Civil, accident investigation board, final report on AeroPerú 603 (October 1997; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
     [Peru CIAA report (1997) — the static-port tape and the contradictory warnings.],
-    [Peru CIAA report (1997) — the absence of an independent cockpit reference.],
+    [Peru CIAA report (1997) — the radio altimeter as the only reliable remaining reference, and the unheeded GPWS terrain warnings.],
     [Leveson, N. (2011), _Engineering a Safer World_ (STAMP) — common-cause failure.],
     [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_ — crew performance under instrument failure.],
   ),
@@ -124,10 +133,12 @@
   quote-source: "Paraphrasing the Peruvian DGAC / Comisión Investigadora de Accidentes de Aviación report on AeroPerú 603, 1996",
   le-insight: [
     AeroPerú 603 is the case for redundancy that is not redundancy.
-    Every cockpit indicator depended on the same physical sensor. The
-    apparent redundancy in the cockpit was an illusion at the source.
-    The training did not include the failure case because the failure
-    case had been assumed not to occur.
+    Every air-data indicator depended on the same physical sensor, and
+    the apparent redundancy was an illusion at the source. One independent
+    channel — the radio altimeter driving the terrain warnings — stayed
+    correct and was disbelieved inside a flood of false alarms. The training
+    did not include the failure case because the failure case had been
+    assumed not to occur.
   ],
   lens-approach: [
     LENS uses AeroPerú in LEN 5 to teach the difference between
@@ -188,9 +199,11 @@
     behavior, so Boeing added software (MCAS) to mask the difference, then
     kept it out of the manuals and training and let it fire repeatedly on a
     single angle-of-attack sensor. When that sensor failed on Lion Air 610
-    (October 2018) and Ethiopian 302 (March 2019), MCAS forced the nose
-    down and crews who had never heard of it could not recover; 346 people
-    died and the fleet was grounded for twenty months. Five major
+    (October 2018), MCAS forced the nose down against a crew never told it
+    existed; five months later, on Ethiopian 302, a crew warned of the
+    symptom but not the system ran Boeing's cutout procedure and still could
+    not recover; 346 people died and the fleet was grounded for twenty
+    months. Five major
     investigations — the NTSB-supported KNKT (Lion Air) and EAIB (Ethiopian)
     reports, the US House Transportation Committee final report, the DOT
     Inspector General review, and the multinational Joint Authorities
@@ -239,9 +252,11 @@
       repeatedly forced the nose down; the crew, never told the system
       existed, fought it cycle after cycle until the jet dove into the
       Java Sea, killing all 189. Five months later Ethiopian Airlines
-      Flight 302 repeated almost exactly the same sequence — sensor
-      failure, repeated trim commands, unrecoverable nose-down attitude —
-      killing 157, for 346 dead across the two crashes, and the entire MAX
+      Flight 302 met the same sequence — sensor failure, repeated trim
+      commands, unrecoverable nose-down attitude — with the difference that
+      this crew had Boeing's post-Lion-Air bulletin and the FAA emergency
+      directive, ran the runaway-stabiliser cutout they prescribed, and still
+      lost the aircraft, killing 157, for 346 dead across the two crashes, and the entire MAX
       fleet grounded worldwide for what would become twenty months.#cn()
     ],
     // -- The Investigation --
@@ -286,7 +301,8 @@
       training failure that befell a good airplane but exactly what the
       commercial and engineering decisions specified: a flight-control
       system that depended on pilots reacting correctly, in seconds, to a
-      failure they had been guaranteed never to learn about, with no
+      failure whose cause was withheld from them — unnamed in the manuals
+      before Lion Air, and unnamed in the emergency directive after it — with no
       sensor cross-check that could keep the failure from arriving in the
       first place.#cn()
     ],
@@ -2186,8 +2202,10 @@
     in Clarence Center, killing all 49 aboard and one person on the ground.
     The NTSB found the captain had a documented history of training failures,
     and the first officer was ill, fatigued, and paid about \$16,000 a year.
-    The airline and the hiring pipeline knew the training history; the
-    regulator did not. Victims' families mounted one of the most effective
+    The regulator held the record; the airline never retrieved it — PRIA
+    obliged Colgan to collect prior-employer files, not the FAA's notices of
+    disapproval, so the hiring decision ran on the captain's own account,
+    which disclosed one failure of three. Victims' families mounted one of the most effective
     aviation-safety campaigns in a generation, producing the 2010 law that
     raised first-officer experience requirements to 1,500 hours and created
     the Pilot Records Database. The capability gap was visible to everyone
@@ -2199,10 +2217,12 @@
       Colgan Air 3407, a Bombardier Q400 flying a regional route to Buffalo,
       was crewed by a captain with a documented history of training failures
       and a first officer who was ill, fatigued, and paid roughly \$16,000 a
-      year. The airline and the hiring pipeline knew the captain's record;
-      the regulator did not — the information that should have shaped who sat
-      in that seat lived inside the carrier's files and never crossed into
-      the licensing system that was supposed to vouch for the crew.#cn()
+      year. The FAA held the captain's record of checkride disapprovals; Colgan did
+      not obtain it. PRIA required a hiring carrier to gather five years of
+      prior-employer records, not the regulator's own certification file, and
+      the FAA route was optional and consent-gated — so the facts that should
+      have shaped who sat in that seat stayed with the licensing authority and
+      never crossed into the hiring decision.#cn()
     ],
     // -- What Happened --
     [
@@ -2251,16 +2271,16 @@
     ],
   ),
   beats: (
-    "Captain's documented training failures known to the carrier but not to the regulator",
+    "Captain's three FAA checkride disapprovals held by the regulator, never retrieved by the hiring carrier",
     "On approach to Buffalo the captain pulled back at the stick shaker and stalled",
     "NTSB cited fatigue, weak training, and a hiring system blind to the captain's history",
-    "Pilot training history existed in files but never reached the hiring or licensing decision",
+    "Pilot training history existed in the regulator's file but never reached the hiring decision",
     "Families drove the 2010 law raising hours to 1,500 and creating the Pilot Records Database",
   ),
   references: (
     [NTSB, _Aircraft Accident Report: Colgan Air Flight 3407_, NTSB/AAR-10/01 (2010) — probable cause (quoted).],
     [NTSB/AAR-10/01 (2010) — the captain's training history, and the first officer's fatigue and pay.],
-    [NTSB/AAR-10/01 (2010) — the information-flow gap between known pilot history and the hiring decision.],
+    [NTSB/AAR-10/01 (2010), §2.7.3 — PRIA and FAA guidance did not require operators to obtain notices of disapproval; recommendation A-05-1 reiterated as "Open—Unacceptable Response".],
     [Airline Safety and Federal Aviation Administration Extension Act of 2010, Pub. L. 111-216 — the 1,500-hour rule and the Pilot Records Database.],
     [GAO-12-203, _Pilot Records Database Implementation_ (2012); the Families of Continental Flight 3407 campaign.],
   ),
