@@ -3859,7 +3859,7 @@
   year: "2025",
   domains-list: ("AI in education", "intelligent tutoring", "algorithmic fairness"),
   modes-code: "TKN",
-  impact: "Repeated probing of LiveHint AI (an LLM-based tutor under development at Carnegie Learning) with identity-marked student queries surfaced response differences in tone and level of detail across identities; choice of foundation model materially affected the level of differentiation",
+  impact: "Repeated probing of LiveHint AI (an LLM-based tutor in development at Carnegie Learning, released to a small number of US school districts) found no evidence of harmful bias and no dialect effect, but response differences in tone and level of detail tied to stated nationality/ethnicity and to prompt formality; choice of foundation model materially affected the level of differentiation",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3876,10 +3876,7 @@
     and the tutor's responses are assessed for tone and level
     of detail. The choice of foundation model
     materially affects the level of differentiation in responses.
-    The authors are explicit that this is not a deployment-bias
-    audit (LiveHint is in development); it is a methods-
-    development paper proposing how foundation-model-level
-    fairness evaluation should be done before deployment. The
+    The authors describe the work as a collaborative audit run with Carnegie Learning's cooperation, offered as a template for future audits of LLM-based tutors; LiveHint is in research and development and released to a small number of US school districts. The
     case extends the race-construct trio (Cases 25, 26, 6,
     48) into the LLM-tutoring layer where the structurally new
     variable is the foundation model. Open questions: whether
@@ -3926,9 +3923,7 @@
       responses. Different foundation models — the underlying
       LLMs the tutoring layer wraps — produce different patterns
       of identity-conditioned response variation. The variation
-      is not uniform across foundation models, not uniform
-      across the three response dimensions, and not uniform
-      across identity-marker types. The vendor-selection
+      is not uniform across foundation models, not uniform across the nine lexical metrics, and not uniform across identity-marker types. The vendor-selection
       decision — which foundation model the tutoring product
       is built on — is itself a fairness-relevant design
       choice, and the case names it as such. The structurally
@@ -3939,11 +3934,7 @@
       studied.#cn()
     ],
     [
-      The authors' framing is explicit and binding on the case.
-      LiveHint AI is in development, not deployment; this is a
-      methods-development paper proposing how foundation-model-
-      level fairness evaluation should be done before
-      deployment. The case is not the deployment-bias-audit
+      The authors' framing is explicit and binding on the case. LiveHint AI is in research and development and released to a small number of US school districts; the paper is a collaborative audit offered as a template for auditing LLM-based tutors. The case is not the deployment-bias-audit
       case the corpus carries at Cases 6 (Hoffman pain
       assessment), 26 (pulse oximetry), 25 (eGFR), and 48
       (Johnson school surveillance). It is the structurally
@@ -3978,7 +3969,7 @@
   beats: (
     "LiveHint AI (Carnegie Learning) probed with identity-marked student queries across tone and level of detail",
     "Choice of foundation model materially affects differentiation level; vendor-selection decision is itself fairness-relevant",
-    "Methods-development paper (LiveHint in development), not deployment-bias audit; grounds demographic-stratification at foundation-model layer",
+    "Collaborative audit offered as a template for auditing LLM tutors; LiveHint in R&D and released to a few US districts; grounds demographic-stratification at foundation-model layer",
     "Structurally new variable beyond race-construct trio (Cases 6/25/26/48): the foundation-model layer above the deployed system",
     "Open: lab probing vs. deployed-conversation match; vendor selection as routine fairness deliverable; pair with Case 77",
   ),
@@ -3995,7 +3986,7 @@
     ),
   ),
   references: (
-    [AIED 2025, "Evaluating an AI Tutor for Bias Across Different Foundation Models," Springer/ACM proceedings, doi:10.1007/978-3-031-98465-5_43; preprint at renzheyu.com/papers/AIED2025_Tutor.pdf.],
+    [Vinodh, A., Harvey, E., Almoubayyed, H., Yu, R., Brooks, C., Koenecke, A., & Kizilcec, R. F. (2025), "Evaluating an AI Tutor for Bias Across Different Foundation Models," _AIED 2025_, LNAI 15882, pp. 341–348, doi:10.1007/978-3-031-98465-5_43; author copy at renzheyu.com/papers/AIED2025_Tutor.pdf.],
     [Bommasani, R. et al. (2021), "On the Opportunities and Risks of Foundation Models," Stanford CRFM — the foundation-model framing the case builds on.],
     [Race-construct trio reference set: Hoffman et al. (2016), Sjoding et al. (2020) pulse oximetry, Inker et al. (2021) eGFR-without-race — paired with Cases 25, 26, 6.],
     [Carnegie Learning LiveHint product documentation — the subject system; case framing is binding on LiveHint being in development, not deployment.],
@@ -4050,12 +4041,7 @@
   lens-anchor: "D5/PT6",
   leo-anchor: "LEO-5, LEO-3",
   summary: [
-    Prinsloo and Kaliisa (_British Journal of Educational
-    Technology_, 2022) mapped the legal and regulatory privacy
-    landscape across African jurisdictions and found a growing trend
-    toward comprehensive data-protection legislation, though few
-    frameworks are yet enacted and cross-border data-transfer
-    policies differ sharply between countries. The core governance
+    Prinsloo and Kaliisa (_British Journal of Educational Technology_, 2022) mapped the legal and regulatory privacy landscape across African jurisdictions — a scoping review of privacy regulations in 32 countries, complemented by 15 scholarly papers — and found numerous national and regional instruments already giving clear pointers on student data privacy. The core governance
     seam the paper surfaces — and what makes the case a frontier
     rather than a settled instance — is what the v2 sweep names
     *extraterritorial platform governance*: African higher education
@@ -4092,12 +4078,7 @@
       Prinsloo and Kaliisa's 2022 paper in the _British
       Journal of Educational Technology_ maps the legal and
       regulatory privacy landscape across African jurisdictions.
-      The picture is one of a continent in motion: a growing trend
-      toward comprehensive data-protection legislation following
-      the model the EU established with GDPR, but with few
-      frameworks yet enacted and substantial variation across
-      countries in scope, enforcement capacity, and cross-border
-      data-transfer policy. Some countries have comprehensive
+      The picture is one of a continent already legislated: a scoping review of privacy regulations in 32 countries, complemented by 15 scholarly papers, found numerous national and regional instruments giving clear pointers on student data privacy, with substantial variation across countries in scope, enforcement capacity, and cross-border data-transfer policy. Some countries have comprehensive
       frameworks; some have sectoral protections; some have
       constitutional privacy provisions without operational
       data-protection legislation; and the patchwork makes the
@@ -4110,8 +4091,7 @@
       because the platform is hosted abroad, and the institution's
       governance authority does not reach the operating regime, the
       governance question becomes architectural rather than
-      institutional. The authors recommend common cross-border
-      data-sharing frameworks as the architectural response — the
+      institutional. The authors put the cross-border data-sharing frameworks to African governments and the platform question to the institutions, which should weigh student data privacy when entering service level agreements with educational-technology and platform providers — the
       kind of inter-regime instrument that GDPR's adequacy decisions
       and successor cross-border-transfer mechanisms began to
       construct between the EU and other regimes, but that no
@@ -4150,7 +4130,7 @@
   ),
   beats: (
     "African higher education frequently uses LA platforms hosted by external providers — cross-regime seam between operating, regulating, and hosting jurisdictions",
-    "Prinsloo & Kaliisa 2022 (BJET) map the African privacy landscape: growing trend, few frameworks enacted, cross-border policy uneven",
+    "Prinsloo & Kaliisa 2022 (BJET) map the African privacy landscape: 32-country scoping review, numerous instruments already in force, cross-border policy uneven",
     "Recommendation: common cross-border data-sharing frameworks — the architectural response to the inter-regime seam",
     "Frontier — outcome open; the architecture is not yet built and no continent-scale resolution exists",
     "Names the extraterritorial-platform-governance pattern: increasingly universal as everyone builds on services they do not control",
@@ -4169,7 +4149,7 @@
   ),
   references: (
     [Prinsloo, P., & Kaliisa, R. (2022), "Data privacy on the African continent: Opportunities, challenges and implications for learning analytics," _British Journal of Educational Technology_ 53(4):894–913, doi:10.1111/bjet.13226.],
-    [African Union Convention on Cyber Security and Personal Data Protection (Malabo Convention, 2014) — continental policy backdrop, partial ratification.],
+    [African Union Convention on Cyber Security and Personal Data Protection (Malabo Convention, adopted 2014; in force 8 June 2023) — continental policy backdrop, ratified by a minority of AU member states.],
     [Slade & Prinsloo (2013), _American Behavioral Scientist_ — earlier framing on which the 2022 paper builds.],
     [Open University Ethical Use of Student Data policy (2014) — single-regime governance-by-design companion.],
   ),
@@ -4214,7 +4194,7 @@
   year: "2025",
   domains-list: ("higher education", "algorithmic decision-making", "human-computer interaction"),
   modes-code: "TKN",
-  impact: "Eighteen semi-structured interviews with recent U.S. university applicants, using speculative-design probes, surfaced systematic distances between vendor marketing claims (efficiency, fairness, enhanced fit) and applicants' own perceptions (opacity, distrust, anticipated discrimination)",
+  impact: "A content analysis of 52 admissions-technology vendor websites paired with eighteen semi-structured interviews using speculative verbal probes surfaced systematic distances between vendors' claims (efficiency and ease, transparency, bias mitigation and DEI, accuracy) and applicants' perceptions (increased applicant labour, opacity and privacy violation, algorithmic bias and conformity, new inaccuracy and gaming)",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -4227,19 +4207,10 @@
     18 recent U.S. university applicants, using speculative-design
     probes to surface how applicants perceive algorithmic systems
     operating in college admissions and enrollment. The study's
-    central contribution is naming the systematic distance between
-    vendor marketing claims — efficiency, fairness, enhanced fit —
-    and applicants' own perceptions of how the systems would
-    treat them: opacity about the algorithm's existence, distrust
-    of its objectives, and anticipated discrimination across
-    protected characteristics. The case is the peer-reviewed
+    central contribution is naming the systematic distance across four axes between vendors' claims — efficiency and ease, transparency, bias mitigation and DEI, accuracy — and what applicants named against each: increased applicant labour, opacity and privacy violation, algorithmic bias and conformity, and new forms of inaccuracy and gaming. The case is the peer-reviewed
     consent-side companion to Case 55 (Engler / enrollment
     algorithms) and Case 57 (GAO OPM oversight gap). The
-    authors' own hedge is explicit: 18 interviews is the right
-    sample for the speculative-design method but not for
-    prevalence claims, and "future validation ongoing" applies
-    to whether the perception patterns generalize across
-    applicant demographics and institution types.
+    authors' own hedge is explicit: recruitment stopped at thematic saturation after 18 interviews, and the study attempted to capture varying experiences and perceptions, not representative or generalizable findings; "future validation ongoing" applies to whether the patterns hold across applicant demographics and institution types.
   ],
   sections: (
     [
@@ -4251,10 +4222,7 @@
       affects have been the structurally absent voice in the
       deployment record. Pyle and Andalibi's CSCW 2025 paper is
       the systematic peer-reviewed correction at the consent-side
-      seam: an interview study with 18 recent U.S. university
-      applicants, using speculative-design probes calibrated to
-      surface applicants' perceptions of algorithmic systems
-      operating on their applications.#cn()
+      seam: a content analysis of 52 admissions-technology vendor websites paired with interviews of 18 recent U.S. university applicants, using speculative verbal probes built from public documentation of deployed systems.#cn()
     ],
     [
       The speculative-design method is the right instrument for
@@ -4272,20 +4240,8 @@
       about that calibration as a methodological choice.#cn()
     ],
     [
-      The findings name systematic distance between vendor
-      marketing and applicant perception across three axes.
-      Vendor marketing pitches efficiency — the system processes
-      more applications faster — while applicants name opacity:
-      they do not know which decisions are being made
-      algorithmically and they cannot interrogate the system's
-      logic. Vendor marketing pitches fairness — the system
-      treats applicants consistently — while applicants name
-      distrust of the objective the system is consistent with.
-      Vendor marketing pitches enhanced fit — the system matches
-      applicants to programs likely to serve them well — while
-      applicants name anticipated discrimination across protected
-      characteristics, drawing on the broader public record of
-      algorithmic disparate-impact findings.#cn()
+      The findings name systematic distance between vendor marketing and applicant perception across four axes.
+      Vendors pitch efficiency and ease for admissions officers — the system processes more applications faster — while applicants name the labour the system moves onto them. Vendors pitch transparency for admissions officers, while applicants name opacity and privacy violation: they do not know which decisions are made algorithmically and cannot interrogate the logic. Vendors pitch bias mitigation and DEI, while applicants name algorithmic bias and pressure to conform. Vendors pitch accuracy, while applicants name new forms of inaccuracy and openings to game the system.#cn()
     ],
     [
       The case sits as the consent-side counterpart to Case 55
@@ -4305,10 +4261,7 @@
     ],
     [
       The authors' hedges are binding on the case's framing.
-      Eighteen semi-structured interviews is the right N for the
-      speculative-design method, surfacing the dimensions of
-      perception that matter, but it is not the right N for
-      claims about prevalence — what fraction of applicants hold
+      Eighteen semi-structured interviews reached thematic saturation and surfaced the dimensions of perception that matter, but the authors state the study did not aim at representative or generalizable findings, so it carries no claim about prevalence — what fraction of applicants hold
       each perception, how the perceptions distribute across
       demographic groups, how they correlate with admissions
       outcomes. The case is the strongest peer-reviewed evidence
@@ -4321,16 +4274,16 @@
   ),
   beats: (
     "Pyle & Andalibi CSCW 2025: 18 semi-structured interviews with U.S. university applicants, speculative-design probes",
-    "Systematic distance: vendor marketing (efficiency, fairness, fit) vs. applicant perceptions (opacity, distrust, anticipated discrimination)",
+    "Systematic distance on four axes: vendor claims (efficiency, transparency, bias mitigation/DEI, accuracy) vs. applicant perceptions (labour, opacity/privacy, algorithmic bias, inaccuracy)",
     "Consent-side companion to Case 55 (Engler deployment) and Case 57 (GAO regulator-side); applicants as structurally absent voice",
-    "Authors' hedge: 18 interviews is right for speculative-design depth, not for prevalence claims; future validation ongoing",
+    "Authors' hedge: recruitment stopped at saturation; exploratory, not representative or generalizable; future validation ongoing",
     "Anchors the applicant-perception strand alongside Cases 186 (Bartlett) and 86 (Gándara) in the equity-in-prediction thread",
   ),
   approaches: (
     during: (
       [Include the affected-population voice in the deployment-decision record from the start; the systematic distance the study documents is partly the result of decision processes that did not include the affected voice.],
       [Use speculative-design probes when the affected population cannot be expected to know what is deployed; the method is the right instrument for the consent-side question and the institutional side can commission it.],
-      [Treat the three perceived gaps — opacity, distrust, anticipated discrimination — as designable targets, not as misperceptions to correct; the perceptions are responses to the actual disclosure architecture.],
+      [Treat the perceived harms — applicant labour, opacity and privacy violation, algorithmic bias, new inaccuracy — as designable targets, not as misperceptions to correct; the perceptions are responses to the actual disclosure architecture.],
     ),
     after: (
       [Commission the prevalence study the speculative-design study cannot perform; the perception patterns the 18-interview study surfaces are testable at survey scale, and the deployment-side institutions are best positioned to commission the survey.],
@@ -4344,13 +4297,12 @@
     [GAO-22-104463 (2022) — paired regulator-side audit (Case 57).],
     [Dunne, A., & Raby, F. (2013), _Speculative Everything_ — methodological backdrop for speculative-design probes.],
   ),
-  quote: [Vendors pitch efficiency, fairness, and fit. Applicants name opacity, distrust, and anticipated discrimination. The distance between the two is the case.],
+  quote: [Vendors pitch efficiency, transparency, bias mitigation, and accuracy. Applicants name labour, opacity, algorithmic bias, and new inaccuracy. The distance between the two is the case.],
   quote-source: "Editors' synthesis of Pyle & Andalibi (2025).",
   le-insight: [
     Pyle and Andalibi is the peer-reviewed consent-side case at
     the applicant end of the enrollment-management deployment.
-    Eighteen interviews surface systematic distance between
-    vendor marketing and applicant perception across three axes;
+    A 52-vendor website analysis and eighteen interviews surface systematic distance between vendor claims and applicant perception across four axes;
     the authors' methodological hedge is binding on prevalence
     claims. The case completes the partial-information triangle
     with Cases 55 (deployment-side) and 57 (regulator-side).
@@ -4372,7 +4324,7 @@
   ),
   reflection-list: (
     [Identify a deployed prediction system in your domain whose affected population was not consulted in the deployment-decision record. What would a speculative-design study look like for surfacing the affected voice — and who is positioned to commission it?],
-    [Specify the three perceived gaps — opacity, distrust, anticipated discrimination — for the system you identified. Which of the three is a disclosure-architecture target, which is an objective-choice target, and which is an audit-evidence target?],
+    [Specify the perceived harms — applicant labour, opacity and privacy violation, algorithmic bias, new inaccuracy — for the system you identified. Which is a disclosure-architecture target, which is an objective-choice target, and which is an audit-evidence target?],
   ),
   courses: ("LEN 3", "LEN 5", "LEN 8"),
 )
@@ -4385,7 +4337,7 @@
   year: "2017 – 2020",
   domains-list: ("higher education (Latin America)", "learning analytics", "cross-national governance"),
   modes-code: "KN",
-  impact: "An EU-funded multi-country project (Chile, Ecuador) that explicitly rejected lifting Global-North learning-analytics tools wholesale; structured interviews with administrators and focus groups with students and teachers produced the LALA CANVAS participatory adoption framework, with stakeholders demanding ethical responsibility as a precondition for data-driven feedback",
+  impact: "An EU-funded multi-country project (Chile, Ecuador) that adapted the European SHEILA protocols rather than importing Global-North tools unchanged; 37 manager interviews, 16 focus groups with 51 teaching staff and 45 students, and surveys of 1,884 students and 368 staff produced a stakeholder needs map, and the project published the four-dimension LALA Framework for institutional adoption",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -4395,19 +4347,10 @@
   summary: [
     The LALA (Building Capacity to Use Learning Analytics to Improve Higher Education in Latin America) project, funded
     under EU grant 586120-EPP-1-2017-1-ES, ran from 2017 to 2020
-    across Chilean and Ecuadorian universities. The project
-    began from a deliberate refusal: not to lift US and European
-    learning-analytics tools wholesale into Latin American
-    institutional contexts, on the grounds that adoption fails when
-    the tools do not integrate with local learning design and
-    institutional decision-making. Through structured interviews with
+    across Chilean and Ecuadorian universities. The project began by adapting rather than importing: the European SHEILA project's interview, focus-group and survey protocols were translated and reworked for four Latin American universities, on the grounds that regional adoption had lagged and the needs had never been measured locally. Through structured interviews with
     administrators and focus groups with students and teachers, the
     Hilliger et al. team (_Internet and Higher Education_, 2020)
-    surfaced what stakeholders actually needed for adoption to be
-    locally legitimate, and built the LALA CANVAS — a participatory
-    adoption framework that puts ethical responsibility on the
-    front-end of the adoption decision, not as a compliance
-    afterthought. The honest limit preserved verbatim: this is
+    surfaced what stakeholders actually needed for adoption to be locally legitimate, and the project published the LALA Framework — four dimension manuals, institutional, technological, ethical, and community, that an institution works through before it deploys. The honest limit preserved verbatim: this is
     adoption-readiness and capacity-building evidence, not yet
     long-run outcome evidence that the deployed systems improved
     student retention or learning. The contribution is the
@@ -4423,39 +4366,18 @@
       analytics for instructors, early-warning systems) were
       developed at US and European universities with US and European
       governance assumptions about data, consent, and institutional
-      decision-making. The LALA project began from the documented
-      observation that lifting those tools wholesale into Latin
-      American institutional contexts had failed before — adoption
-      stalled, instructors did not use the dashboards, students did
-      not trust the predictions — and that the failure was
-      structural, not technical: the tools had not been integrated
-      with the local learning design or the institutional
-      decision-making process they were meant to inform.#cn()
+      decision-making. The LALA project began from a thinner and more awkward observation: regional attempts at learning analytics remained small in scale, and the region lacked a community to exchange ideas, methods and tools because experienced researchers in the field were few. There was no local needs evidence to build on, so the project measured it before it built anything.#cn()
     ],
     [
       The project ran across Chilean and Ecuadorian
       universities under an EU Erasmus+ grant from 2017 to 2020.
-      The method's first commitment was participatory: structured
-      interviews with administrators surfacing what their decisions
-      actually needed evidence about; focus groups with teachers
-      and students surfacing what they would accept, what they
-      would resist, and what they wanted the analytics to do.
+      The method's first commitment was participatory: semi-structured interviews with 37 senior managers surfacing what their decisions actually needed evidence about; 16 focus groups with 51 teaching staff and 45 students; and surveys answered by 1,884 students and 368 teaching staff, triangulated against the qualitative coding.
       Hilliger et al. (_Internet and Higher Education_, 2020) is
       the peer-reviewed mixed-methods report that documents the
-      method and the findings. The headline result is that
-      stakeholders consistently named ethical responsibility as a
-      precondition for data-driven feedback rather than as a
-      compliance burden — they wanted the analytics, conditional on
-      the governance being right first.#cn()
+      method and the findings. The headline result is a needs map: students named quality feedback and timely support, teaching staff named timely alerts and meaningful evaluation of their own practice, and managers named quality information to evaluate support interventions. Ethical and privacy considerations the authors list as the next study, not as a finding of this one.#cn()
     ],
     [
-      The deliverable is the LALA CANVAS — a participatory adoption
-      framework that walks an institution through the decisions
-      that have to be made before a learning-analytics system is
-      deployed: which questions the system is for, which
-      stakeholders' consent is required, what disclosure is owed,
-      what the operating governance will look like once the system
-      runs. The framework's contribution is procedural: it converts
+      The deliverable is the LALA Framework — four dimension manuals, institutional, technological, ethical and community, that walk an institution through what it has to settle before a learning-analytics system is deployed. Its opening instrument is the LALA Canvas, a moderated group template whose six dimensions are adapted from the Overseas Development Institute's ROMA approach: desired behaviours, change strategy, internal capabilities, political context, influential actors, and a measurement and evaluation plan. The framework's contribution is procedural: it converts
       the governance question from a yes/no gate at deployment time
       into a structured set of decisions taken openly during the
       adoption process. The participatory method made the framework
@@ -4463,12 +4385,7 @@
       governance is differently mature.#cn()
     ],
     [
-      The honest limit survives into the case. The published
-      evidence is adoption-readiness and capacity-building
-      evidence: the CANVAS was developed and validated through the
-      participatory process, and the project produced trained local
-      teams with the capacity to lead adoption in their own
-      institutions. What the evidence does *not* yet establish is
+      The honest limit survives into the case. The published evidence is needs and capacity-building evidence: the framework was developed through the participatory process, and the project produced trained local teams with the capacity to lead adoption in their own institutions. The authors put adoption and evaluation of implemented tools in future work. What the evidence does *not* yet establish is
       that the deployed systems improved long-run student
       retention or learning outcomes. The case is teachable on the
       governance method — the participatory route to local
@@ -4493,10 +4410,10 @@
     ],
   ),
   beats: (
-    "LALA (EU Erasmus+, 2017–2020): explicit refusal to lift Global-North LA tools wholesale into Latin American institutions",
+    "LALA (EU Erasmus+, 2017–2020): adapted the European SHEILA protocols to four Chilean and Ecuadorian universities rather than importing tools unchanged",
     "Structured interviews with administrators and focus groups with students and teachers across Chile and Ecuador",
-    "Hilliger et al. 2020 (Internet and Higher Education): stakeholders demand ethical responsibility as precondition, not afterthought",
-    "Deliverable is the LALA CANVAS — participatory adoption framework converting governance from a deployment gate to a structured set of decisions",
+    "Hilliger et al. 2020 (Internet and Higher Education): five needs — student feedback and timely support, staff alerts and usable evaluation, manager information",
+    "Deliverable is the LALA Framework (institutional, technological, ethical, community manuals); its opening LALA Canvas adapts ODI's ROMA approach to institutional diagnosis",
     "Honest limit: adoption-readiness / capacity-building evidence, not yet long-run outcome evidence that deployed systems improved retention",
   ),
   approaches: (
@@ -4517,13 +4434,11 @@
     [Open University Ethical Use of Student Data policy (2014) and OU Analyse — UK companion governance-by-design case (Case 81).],
     [Slade & Prinsloo (2013), "Learning Analytics: Ethical Issues and Dilemmas," _American Behavioral Scientist_ 57(10):1510–1529 — the broader field-scale ethics framing.],
   ),
-  quote: [Stakeholders did not want the analytics if the governance was wrong. They wanted both, in that order, with ethical responsibility as the precondition rather than the afterthought.],
+  quote: [Ask the stakeholders what they need before you buy the tool. Students named feedback, staff named alerts they could use, managers named information they could act on — and the ethics manual came from the literature, not from the room.],
   quote-source: "Editors' synthesis of Hilliger et al. (2020).",
   le-insight: [
     LALA converted learning-analytics adoption from a Global-North
-    template-lift into a participatory process that built local
-    legitimacy across two Latin American regimes. The CANVAS is
-    the artifact; the participatory method is the deliverable.
+    template-lift into a participatory process that built local legitimacy across two Latin American regimes. The LALA Framework is the artifact; the participatory needs study is the deliverable.
     The honest limit — adoption-readiness evidence, not yet
     long-run outcome evidence — is what the case carries, and the
     outcome study is the next one.
@@ -4593,8 +4508,7 @@
     [
       Learning analytics at sector scale presents a national
       government with a structural choice. Let the technology diffuse
-      across schools and universities under existing patchwork
-      governance (Sweden's path through the 2010s), or block it on
+      across schools and universities under existing patchwork governance, or block it on
       precautionary grounds until questions are settled (a path some
       jurisdictions have pursued for specific applications), or
       construct the governance architecture first and let deployment
@@ -4625,13 +4539,7 @@
       Education and Research in June 2022 and a final report in
       2023 in the canonical NOU form. The reports name central
       dilemmas the field has to live with rather than resolve once:
-      the tension between predictive support and predictive
-      gatekeeping; the tension between transparency to the student
-      and the technical complexity of the models; the tension
-      between cross-institutional benchmarking and student-data
-      protection; the tension between national pedagogical
-      consistency and institutional autonomy in how analytics are
-      used. The reports' framing is that governance for
+      the need for information against data protection; learning as an individual process against learning as a social process; centralization against autonomy; and competence needs against competence reality. The reports' framing is that governance for
       learning analytics is the kind of artifact that has to be
       revisited as the technology and the evidence base change, not
       a one-time document.#cn()
@@ -4668,7 +4576,7 @@
   beats: (
     "Norway's Ministry of Education convenes national Expert Commission on Learning Analytics in 2021 — sector-scale governance-first response",
     "Mandate covers pedagogical, ethical, legal, and privacy dimensions across the whole education sector",
-    "Interim report June 2022, final report 2023 (NOU) names central dilemmas: predictive support vs gatekeeping, transparency vs model complexity, benchmarking vs data protection",
+    "Interim report June 2022 names four central dilemmas: information need vs data protection, individual vs social learning, centralization vs autonomy, competence needs vs competence reality; final report 2023 (NOU)",
     "Honest limit: process-level evidence (artifact exists, dilemmas named); downstream sector outcomes not yet documented — governance-process success, not yet deployment-outcome success",
     "Pair with OU (Case 81, institutional) and SyRI (Case 189, judicial); national-scale governance-architecture mode in the non-US LA triple",
   ),
@@ -4685,9 +4593,9 @@
     ),
   ),
   references: (
-    [Norwegian Expert Commission on Learning Analytics, interim report to the Minister of Education and Research (June 2022).],
-    [Norwegian Expert Commission on Learning Analytics, final NOU report (2023), _Norges offentlige utredninger_.],
-    [Misiejuk & Wasson (2023), "Learning analytics in Norway: A national perspective," _Journal of Learning Analytics_ — secondary academic synthesis of the commission and its dilemmas.],
+    [Ekspertgruppen for digital læringsanalyse (2022), _Læringsanalyse — noen sentrale dilemmaer_, interim report delivered to the Minister of Education and Research, June 2022.],
+    [NOU 2023: 19, _Læring, hvor ble det av deg i alt mylderet? Bruk av elev- og studentdata for å fremme læring_ (June 2023) — the commission's final report.],
+    [Wasson, Giannakos, Blikstad-Balas, Uppstad, Langford & Bøhn (2024), "Implementing Learning Analytics in Norway: Four Central Dilemmas," _Journal of Learning Analytics_ 11(2), 268–280 — written by commission members; the interim report and its four dilemmas.],
     [Hilliger et al. (2020), _Internet and Higher Education_ — the LALA companion at multi-country participatory scale (Case 91).],
   ),
   quote: [The commission did not resolve learning-analytics governance for Norway. It named the dilemmas the sector will live with and produced the artifact deployment can be governed under.],
@@ -4717,7 +4625,7 @@
   ],
   literature-items: (
     [Norwegian Expert Commission interim report (2022) and final NOU (2023)],
-    [Misiejuk & Wasson (2023), _JLA_ — secondary synthesis],
+    [Wasson et al. (2024), _JLA_ 11(2) — commission members' account],
     [Hilliger et al. (2020), _Internet and Higher Education_],
   ),
   reflection-list: (
@@ -4918,7 +4826,7 @@
   lens-anchor: "D5/PT4",
   leo-anchor: "LEO-4, LEO-5",
   summary: [
-    Prinsloo and colleagues (2022) published a scoping review of
+    Prinsloo and Kaliisa (2022) published a scoping review of
     learning-analytics research on the African continent for the
     _Journal of Learning Analytics_. The review found only 15
     studies meeting inclusion criteria, with publication output
@@ -4948,20 +4856,14 @@
       infrastructures. The capability question for the African
       higher-education community is whether the analytic
       constructs travel — and who is positioned to validate them
-      when they arrive. Prinsloo et al. set out to map what
-      learning-analytics research had actually been published
-      from African institutions at the time of writing.#cn()
+      when they arrive. Prinsloo and Kaliisa set out to map what learning-analytics research had actually been published from African institutions at the time of writing.#cn()
     ],
     [
       The headline finding is sparse. The scoping review located
       only 15 learning-analytics studies on the African continent,
       with publication output overwhelmingly from South
       Africa (10 of 15), the rest from Nigeria, Tanzania, Zambia,
-      and Kenya. Adjacent South African
-      higher-education studies — Lemmens and Henn (2015) and a
-      2020 paper on the development of a contextualised
-      learning-analytics framework — extend but do not change the
-      magnitude of the gap. The corpus exists; it is small,
+      and Kenya. Two of the fifteen are the South African higher-education studies most often cited as the local literature — Lemmens and Henn (2016) and Janse van Vuuren's 2020 contextualised data-analytics framework — so citing them does not enlarge the corpus. The corpus exists; it is small,
       geographically concentrated, and dwarfed by the parent
       field's publication output from US/UK/EU institutions.#cn()
     ],
@@ -5006,8 +4908,8 @@
     ],
   ),
   beats: (
-    "Prinsloo et al. (2022) scoping review of learning analytics on African continent — 15 studies total",
-    "Publication overwhelmingly from South Africa (10 of 15); Nigeria 2, Tanzania/Zambia/Kenya 1 each; adjacent SA studies extend but do not change magnitude",
+    "Prinsloo and Kaliisa (2022) scoping review of learning analytics on African continent — 15 studies total",
+    "Publication overwhelmingly from South Africa (10 of 15); Nigeria 2, Tanzania/Zambia/Kenya 1 each; the most-cited SA studies are inside the fifteen, not additional to them",
     "Structural barriers: limited LMS access, limited institutional resourcing, limited African-scholar visibility at SoLAR",
     "Construct-travel problem stated as research-base evidence; pairs with African data-privacy case for the governance side",
     "Frontier case; practice-synthesis-tier flag preserved; future validation ongoing as the literature matures",
@@ -5025,13 +4927,13 @@
     ),
   ),
   references: (
-    [Prinsloo, P., & Kaliisa, R. (2022), "Learning Analytics on the African Continent: An Emerging Research Focus and Practice," _Journal of Learning Analytics_; ResearchGate publication 361096718.],
-    [Lemmens, J.-C., & Henn, M. (2015), South African Association for Institutional Research (SAAIR) proceedings — adjacent SA higher-education learning-analytics work.],
-    [SciELO (2020), "Development of a contextualised learning-analytics framework for South African higher education."],
+    [Prinsloo, P., & Kaliisa, R. (2022), "Learning Analytics on the African Continent: An Emerging Research Focus and Practice," _Journal of Learning Analytics_ 9(2), 218–235.],
+    [Lemmens, J. C., & Henn, M. (2016), "Learning analytics: A South African higher education perspective," in Botha & Muller (eds.), _Institutional Research in South African Higher Education_, 231–253, SUN PReSS — one of the fifteen included studies.],
+    [Janse van Vuuren, E. C. (2020), "Development of a contextualised data analytics framework in South African higher education: evolvement of teacher (teaching) analytics as an indispensable component," _South African Journal of Higher Education_ 34(1) — one of the fifteen included studies.],
     [Cross-reference: the African data-privacy governance case earlier in the corpus, for the construct-travel problem stated in governance terms.],
   ),
   quote: [The absence of dense primary studies is itself the finding.],
-  quote-source: "Editors' synthesis of Prinsloo et al. (2022).",
+  quote-source: "Editors' synthesis of Prinsloo and Kaliisa (2022).",
   le-insight: [
     The scoping review is the present-state map of
     learning-analytics research on the African continent: 15
@@ -5054,9 +4956,9 @@
     construct-travel problem stated in governance terms.
   ],
   literature-items: (
-    [Prinsloo et al. (2022), _Journal of Learning Analytics_],
+    [Prinsloo & Kaliisa (2022), _Journal of Learning Analytics_ 9(2)],
     [Lemmens & Henn (2015), SAAIR proceedings],
-    [SciELO (2020), contextualised learning-analytics framework, SA],
+    [Janse van Vuuren (2020), _SAJHE_ 34(1), contextualised data-analytics framework, SA],
   ),
   reflection-list: (
     [Identify a learning-analytics construct your program imports from US/UK/EU literature. What does the validation literature for that construct assume about LMS coverage, data-engineering capacity, and ethics review? Audit those assumptions against your institution's actual conditions.],

@@ -71,13 +71,11 @@
       any, instrument to trust, because every air-data instrument drew on the
       same blocked source and so failed in concert rather than disagreeing
       usefully. The true reading arrived as one more alarm in a cockpit where
-      every alarm had already proved false: "too low — terrain" sounded
-      twenty-two times in the last forty-five seconds.#cn()
+      every alarm had already proved false: "too low — terrain" sounded twenty-two times in the last minute of flight.#cn()
     ],
     // -- The Investigation --
     [
-      The Peruvian accident investigation identified the failure to remove
-      the static-port tape as the primary cause. One channel stayed correct.
+      The Peruvian accident investigation named the principal cause error of the maintenance staff including the crew: the tape was left on, and neither the release inspections nor the pilot-in-command's walk-around caught it. One channel stayed correct.
       The radio altimeters read height above the sea independently of the air
       data computers, and it was the radio altimeter that fired the
       ground-proximity warnings the crew heard for the rest of the flight. The
@@ -123,14 +121,14 @@
     "Industry tightened conspicuous covering and removal verification for static ports and pitot tubes",
   ),
   references: (
-    [Peru Dirección General de Aeronáutica Civil, accident investigation board, final report on AeroPerú 603 (October 1997; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
-    [Peru CIAA report (1997) — the static-port tape and the contradictory warnings.],
-    [Peru CIAA report (1997) — the radio altimeter as the only reliable remaining reference, and the unheeded GPWS terrain warnings.],
+    [Peru Dirección General de Transporte Aéreo, Accident Investigation Board, final report on AeroPerú 603 (Lima, December 1996; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
+    [Peru DGTA Accident Investigation Board report (December 1996) — the static-port tape and the contradictory warnings.],
+    [Peru DGTA Accident Investigation Board report (December 1996) — the radio altimeter as "the only reliable element remaining to them," and the unheeded GPWS terrain warnings.],
     [Leveson, N. (2011), _Engineering a Safer World_ (STAMP) — common-cause failure.],
     [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_ — crew performance under instrument failure.],
   ),
   quote: [The crew received contradictory indications they could neither reconcile nor override.],
-  quote-source: "Paraphrasing the Peruvian DGAC / Comisión Investigadora de Accidentes de Aviación report on AeroPerú 603, 1996",
+  quote-source: "Paraphrasing the Peruvian Directorate General of Air Transport Accident Investigation Board report on AeroPerú 603, December 1996",
   le-insight: [
     AeroPerú 603 is the case for redundancy that is not redundancy.
     Every air-data indicator depended on the same physical sensor, and
@@ -147,7 +145,7 @@
     "trust nothing" procedure design.
   ],
   literature-items: (
-    [Peru DGAC / CIA report on AeroPerú 603 (1996)],
+    [Peru DGTA Accident Investigation Board report on AeroPerú 603 (1996)],
     [Leveson (2011), STAMP — common-cause failure],
     [Dismukes et al. (2007), _The Limits of Expertise_],
   ),
@@ -406,10 +404,10 @@
   year: "1999",
   domains-list: ("space",),
   modes-code: "DK",
-  impact: "~$125M spacecraft lost on approach to Mars; ground software produced thrust output in pound-force while navigation expected newtons",
+  impact: "Orbiter lost on arrival at Mars, one of the two Mars '98 spacecraft whose development cost $193.1M; ground software produced thrust output in pound-force while navigation expected newtons",
   diagram: dgm.dgm-flow(
-    ("Lockheed\nlbf·s", "interface", "NASA\nN·s", "trajectory error", "burnup"),
-    framing: "no owner of the interface specification",
+    ("Lockheed\nlbf·s", "interface", "NASA\nN·s", "trajectory error", "loss of signal"),
+    framing: "the interface specification went unverified",
     caption: "Mars Climate Orbiter — the unowned interface",
   ),
   kind: "failure",
@@ -420,11 +418,7 @@
     seconds; JPL's navigation expected newton-seconds. The conversion — a
     factor of about 4.45 — was never applied at the boundary between the two
     teams, so every trajectory correction was mis-modeled and the error
-    accumulated over the cruise. The orbiter arrived too low, into the
-    atmosphere, and burned up; the orbiter and its ~\$125 million were lost to
-    a unit mismatch. The investigation found no individual blunder — both
-    contractors did their own work correctly. What failed was the interface
-    between them, which had no owner, specification, or verification step. It
+    accumulated over the cruise. The orbiter arrived about 170 kilometres lower than planned and was either destroyed in the atmosphere or thrown back into heliocentric space; either way it was lost to a unit mismatch. The investigation did not stop at the coding error: the board's finding was that the project's processes never caught it. What failed was the interface between them: the specification existed and required newton-seconds, and nothing verified that the delivered software obeyed it. It
     is the canonical case of interface-as-requirement.
   ],
   sections: (
@@ -446,21 +440,14 @@
       factor of about 4.45 — was never applied at the boundary where the two
       systems met. Each firing was mis-modeled by that factor, and the error
       accumulated steadily over the long cruise until the predicted and actual
-      trajectories had quietly diverged. When the orbiter reached Mars on 23
-      September 1999 it arrived far too low, deep into the atmosphere it was
-      built to study from orbit, and was destroyed. The orbiter, and its
-      roughly \$125 million, were lost to a unit conversion no one made.#cn()
+      trajectories had quietly diverged. When the orbiter reached Mars on 23 September 1999 it arrived about 170 kilometres too low, into the atmosphere it was built to study from orbit, and was either destroyed there or thrown back into heliocentric space. The orbiter was lost to a unit conversion no one made.#cn()
     ],
     // -- The Investigation --
     [
       The Mishap Investigation Board put the proximate cause exactly there —
       the failed English-to-metric translation in ground software — but was
-      careful to name the deeper one rather than stop at the bug. No
-      individual blundered; both contractors did their own work correctly
-      within their own assumptions. What failed was the boundary between them:
-      there was no specified, verified interface fixing the units and checking
-      that both sides agreed, and no end-to-end validation of the data flowing
-      across the seam. Navigators had even noticed odd trajectory behavior in
+      careful to name the deeper one rather than stop at the bug. The ground software did not follow the interface specification, and the processes meant to catch that never did. What failed was the boundary between them:
+      the specification fixed the units at newton-seconds and nothing checked the delivered software against it, and there was no complete end-to-end verification of the navigation software and its models. Navigators had even noticed odd trajectory behavior in
       cruise, but the concern was never run fully to ground before arrival,
       and the chance to catch it passed.#cn()
     ],
@@ -490,7 +477,7 @@
   beats: (
     "Faster, better, cheaper mission split between Lockheed building and JPL navigating the orbiter.",
     "Ground software reported pound-force seconds while navigation expected newton-seconds; orbiter burned up at Mars.",
-    "Board found no individual blunder; the unverified boundary between two correct halves failed.",
+    "Board found the ground software ignored the interface specification and the project's processes never caught it.",
     "Missing capability was an owned, specified, verified interface between the two organizations.",
     "Loss tightened interface management and became the canonical software case of interface-as-requirement.",
   ),
@@ -499,15 +486,13 @@
     [NASA MCO MIB Report (1999) — the pound-force-second vs newton-second mismatch (factor ~4.45), the accumulated navigation error, and atmospheric destruction on 23 Sept. 1999 (root-cause statement quoted).],
     [NASA MCO MIB Report (1999) — the missing verified interface specification, the absent end-to-end validation, and the unresolved cruise-trajectory anomalies.],
     [N. G. Leveson, _Engineering a Safer World_ (MIT Press, 2011) — interfaces as engineering deliverables requiring an owner and a verification step.],
-    [B. Sauser et al. (2009), retrospective analysis of the Mars Climate Orbiter and the "faster, better, cheaper" trade space.],
+    [Sauser, B. J., Reilly, R. R., & Shenhar, A. J. (2009), "Why projects fail? How contingency theory can provide new insights — A comparative analysis of NASA's Mars Climate Orbiter loss," _International Journal of Project Management_ 27(7), 665–679.],
   ),
-  quote: [The root cause was the failed translation of English units to metric units in a segment of ground-based, navigation-related mission software.],
-  quote-source: "Paraphrasing the NASA Mars Climate Orbiter Mishap Investigation Board, 1999",
+  quote: [The "root cause" of the loss of the spacecraft was the failed translation of English units into metric units in a segment of ground-based, navigation-related mission software.],
+  quote-source: "Arthur Stephenson, chairman, Mars Climate Orbiter Mission Failure Investigation Board, NASA Release 99-134, 10 November 1999",
   le-insight: [
     Mars Climate Orbiter is the textbook case for interface boundaries
-    as engineering deliverables. The contractors did their work. The
-    boundary between them did not have an owner. The capability that
-    was missing was the interface-specification verification step.
+    as engineering deliverables. Each half flew as built. The specification at the boundary was not enforced. The capability that was missing was the interface-specification verification step.
   ],
   lens-approach: [
     LENS uses Mars Climate Orbiter in LEN 5 to teach interface-as-
