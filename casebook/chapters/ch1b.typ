@@ -23,7 +23,7 @@
   year: "2004 – 2010",
   domains-list: ("healthcare", "workforce policy", "patient safety"),
   modes-code: "GK",
-  impact: "California's mandated minimum nurse-to-patient ratios reduced nurse workload by 1–2 patients per nurse and were modeled to imply 10–14% fewer surgical patient deaths in comparison states if matched — observational, cross-sectional, no California baseline",
+  impact: "Under California's mandated minimum nurse-to-patient ratios its nurses cared for 1–2 fewer patients each than nurses in comparison states; modeling implied 10–14% fewer surgical patient deaths in those states if matched — observational, cross-sectional, no California baseline",
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -65,7 +65,7 @@
     [
       California in 2004 became the first US state to do it. The
       law specifies unit-by-unit minimum nurse-to-patient ratios —
-      1:5 in medical-surgical, 1:4 in step-down, 1:2 in ICU, and so
+      1:6 in medical-surgical at the 2004 start and 1:5 from 2005, 1:4 in
       on — enforceable through state inspection. The political
       process took five years from statutory enactment (1999) to
       regulatory implementation, with industry argument that the
@@ -93,11 +93,11 @@
       experiment. There was no California baseline measurement to
       provide a pre/post within-state comparison. The modeled
       mortality estimates rest on the workload-mortality
-      relationship from prior studies, and a contested stakeholder
+      relationship from prior studies, and the California HealthCare Foundation's own
       debate followed publication over whether the ratios themselves
       caused the observed improvement, or whether California
       hospitals differed in other ways the cross-section did not
-      capture. The authors do not claim closure; they say the
+      capture. The authors do not claim closure; their conclusion is that the
       evidence is the strongest available and consistent with the
       broader literature.#cn()
     ],
@@ -245,7 +245,7 @@
       driven policy for years.#cn() iCOMPARE (Silber et al., _NEJM_ 2019), in
       internal medicine, reached a parallel result in a second specialty,
       making the finding harder to dismiss as an artifact of surgery.#cn()
-      Neither found the safety gain the cap had promised, and in 2017 the
+      Neither found the safety gain the cap had promised. In 2017, with FIRST
       ACGME relaxed the 16-hour intern limit. The trials did not show fatigue
       is harmless — only that cutting one input, without rebuilding
       supervision and hand-offs, did not produce a safer system.#cn()
@@ -275,14 +275,14 @@
   references: (
     [B. H. Lerner, _The Libby Zion Case and the Reform of Medical Education_ (2006); and the 1989 New York State (Bell Commission) duty-hour regulations — the origin of the reform.],
     [Accreditation Council for Graduate Medical Education, _Common Program Requirements_ (2003 and 2011 revisions) — the 80-hour weekly cap and the 16-hour first-year shift limit.],
-    [D. A. Asch et al., "Resident Duty Hours and Medical Education Policy," _NEJM_ 370: 1671–1673 (2014); Institute of Medicine (Ulmer, Wolman & Johns, eds.), _Resident Duty Hours: Enhancing Sleep, Supervision, and Safety_ (2008) — hand-offs and continuity trade-offs.],
+    [D. A. Asch, K. Y. Bilimoria & S. V. Desai, "Resident Duty Hours and Medical Education Policy — Raising the Evidence Bar," _NEJM_ 376: 1704–1706 (2017); Institute of Medicine (Ulmer, Wolman & Johns, eds.), _Resident Duty Hours: Enhancing Sleep, Supervision, and Safety_ (2008) — hand-offs and continuity trade-offs.],
     [Bilimoria, Chung, Hedges et al., "National Cluster-Randomized Trial of Duty-Hour Flexibility in Surgical Training" (FIRST), _NEJM_ 374: 713–727 (2016). #link("https://doi.org/10.1056/NEJMoa1515724")[doi:10.1056/NEJMoa1515724].],
-    [Silber, Bellini, Shea et al., "Patient Safety Outcomes under Flexible and Standard Resident Duty-Hour Rules" (iCOMPARE), _NEJM_ 380: 905–914 (2019). #link("https://doi.org/10.1056/NEJMoa1810641")[doi:10.1056/NEJMoa1810641].],
+    [Silber, Bellini, Shea et al., "Patient Safety Outcomes under Flexible and Standard Resident Duty-Hour Rules" (iCOMPARE), _NEJM_ 380: 905–914 (2019). #link("https://doi.org/10.1056/NEJMoa1810642")[doi:10.1056/NEJMoa1810642].],
     [ACGME, _Common Program Requirements_ (2017 revision) — relaxation of the 16-hour first-year shift limit.],
     [P. Pronovost et al., Keystone ICU intervention, _NEJM_ 355: 2725–2732 (2006), #link("https://doi.org/10.1056/NEJMoa061115")[doi:10.1056/NEJMoa061115]; A. B. Haynes et al., surgical safety checklist, _NEJM_ 360: 491–499 (2009), #link("https://doi.org/10.1056/NEJMsa0810119")[doi:10.1056/NEJMsa0810119] — integrated interventions that engineered the surrounding architecture.],
   ),
-  quote: [Flexible, less-restrictive duty hour policies for first-year residents were associated with non-inferior patient outcomes and no significant difference in residents' satisfaction with overall well-being and education quality.],
-  quote-source: "Paraphrasing iCOMPARE Trial (Silber et al., NEJM 2019)",
+  quote: [As compared with standard duty-hour policies, flexible, less-restrictive duty-hour policies for surgical residents were associated with noninferior patient outcomes and no significant difference in residents' satisfaction with overall well-being and education quality.],
+  quote-source: "FIRST Trial conclusions (Bilimoria et al., NEJM 2016)",
   le-insight: [
     The clearest healthcare case in the dataset of a single-variable
     intervention into a multi-variable capability system. Pairs with
@@ -815,7 +815,7 @@
   year: "2014",
   domains-list: ("nursing education", "clinical simulation", "regulation"),
   modes-code: "GKD",
-  impact: "A longitudinal RCT randomized students across multiple US nursing programs to control, 25%, or 50% simulation substitution for traditional clinical hours; 660 took the NCLEX with no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates — the number of nursing regulatory boards permitting up to 50% simulation substitution increased more than 20-fold from 2014 to 2022",
+  impact: "A longitudinal RCT randomized students across multiple US nursing programs to control, 25%, or 50% simulation substitution for traditional clinical hours; 660 took the NCLEX with no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates — the number of nursing regulatory bodies permitting up to 50% simulation substitution in prelicensure RN programs rose from 1 in 2014 to 23 in 2022",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -839,8 +839,8 @@
     clinical competency, nursing knowledge, or NCLEX pass rates
     across the three groups; 660 participants took the NCLEX. The
     follow-up (2023) documents the institutional transfer: the
-    number of nursing regulatory boards permitting up to 50%
-    substitution increased more than 20-fold from 2014 to 2022 —
+    number of nursing regulatory bodies permitting up to 50%
+    substitution in RN programs rose from 1 in 2014 to 23 in 2022 —
     an unusually clean case of a single evidence base propagating
     across an entire regulatory field. The hedge survives: the
     result holds only "under conditions comparable to those
@@ -897,9 +897,9 @@
       the US is genuinely decentralized: each state board sets its
       own pre-licensure requirements, and there is no federal
       forcing mechanism. The 2023 follow-up study documents that
-      the number of nursing regulatory boards permitting up to 50%
-      simulation substitution increased more than 20-fold from
-      2014 to 2022. A single evidence base — one study, run by
+      the number of nursing regulatory bodies permitting up to 50%
+      simulation substitution in prelicensure RN programs rose
+      from 1 in 2014 to 23 in 2022. A single evidence base — one study, run by
       the regulators' own collaborative — propagated across an
       entire regulatory field, on the strength of the published
       design and the null result on the licensure examination the
@@ -1911,7 +1911,7 @@
   year: "2008 – present",
   domains-list: ("healthcare",),
   modes-code: "TN",
-  impact: "Death rate 1.5% → 0.8% in eight-site pilot; complications down >33%; adopted by the majority of surgical providers worldwide; Ontario population study (2014) found no significant mortality benefit after a mandated rollout",
+  impact: "Death rate 1.5% → 0.8% in eight-site pilot; complications down >33%; adopted, a decade on, by facilities in 70% of the world's countries; Ontario population study (2014) found no significant mortality benefit after a mandated rollout",
   diagram: dgm.dgm-who,
   kind: "intervention",
   scale: "big",
@@ -1991,11 +1991,13 @@
       1.5% to 0.8% and major complications dropping by more than a third
       across all eight sites — confirming Gawande's framing that "gaps in
       teamwork and safety practices in surgery are substantial in countries
-      both rich and poor." The checklist was subsequently adopted by the
-      majority of surgical providers worldwide. That the death rate roughly
-      halved across all eight sites, despite their differences in wealth and
-      practice, is what made the result so persuasive — the effect tracked
-      the intervention rather than the setting. The published mortality
+      both rich and poor." The checklist spread fast: a decade on,
+      facilities in 70% of the world's countries reported using it. That
+      the pooled death rate roughly halved, and that complication rates
+      fell at all eight sites — significantly at three — despite their
+      differences in wealth and practice, is what made the result so
+      persuasive: the effect tracked the intervention rather than the
+      setting. The published mortality
       reduction was contested almost from the moment of publication:
       observational, pre/post, no concurrent control, susceptible to
       secular trends and Hawthorne-style attention effects. The pilot was
@@ -2188,7 +2190,7 @@
   ),
   beats: (
     "No UK system routinely compared pediatric cardiac outcomes; dangerously poor units looked ordinary from inside",
-    "The Kennedy Inquiry recommended routine risk-adjusted specialty-level outcomes reporting starting with cardiac surgery",
+    "The Kennedy Inquiry recommended public access to comparative performance at trust, service and consultant-unit level",
     "Risk adjustment made cultural acceptance possible by ensuring hard cases would not penalize surgeons",
     "The UK became among few countries publishing surgeon-level results; clinicians themselves became data users",
     "The registry model extended across NHS specialties and pairs with bedside protocols like Keystone",
@@ -2200,8 +2202,8 @@
     [Sherlaw-Johnson et al. — risk-adjusted outcome methodology.],
     [NHS national clinical audit and registry documentation — extension across specialties.],
   ),
-  quote: [Outcomes data must cease to be the private property of clinicians and become a shared institutional resource.],
-  quote-source: "Paraphrasing the Kennedy Inquiry Final Report (Learning from Bristol), 2001",
+  quote: [Patients should be able to gain access to information about the relative performance of a hospital, or a particular service or consultant unit.],
+  quote-source: "Learning from Bristol, Final Report Summary, paragraph 18 (2001)",
   le-insight: [
     Bristol is the canonical UK case for outcomes-transparency as a
     paired intervention. The technical capability — registry design,
@@ -2275,7 +2277,7 @@
     2021 CKD-EPI creatinine equation (Inker et al., _NEJM_ 2021);
     clinical laboratories moved to adopt it. The case is a governance
     intervention — a change-control process that retired a construct
-    after three decades of operational use. The honest hedge,
+    after two decades of operational use. The honest hedge,
     preserved from the Task Force report and from follow-up
     commentaries, is that the new equation introduces a small bias
     for all groups, the disparities effect *remains unknown*, and the
@@ -2317,9 +2319,9 @@
       _Am J Kidney Dis_ 2021). The Task Force recommended immediate
       national adoption of the 2021 CKD-EPI creatinine equation, which
       eliminates the race coefficient. The replacement equation was
-      published in parallel (Inker et al., _NEJM_ 2021). Major
-      laboratories and health systems moved to adopt the new equation
-      within months.#cn() In December 2022 the governance response
+      published in parallel (Inker et al., _NEJM_ 2021). The large commercial
+      laboratories moved within months; a March 2022 survey of US
+      laboratories found 30.3% had adopted the new equation.#cn() In December 2022 the governance response
       reached past the equation itself: the OPTN mandated that
       kidney-transplant programs review their waiting lists and
       backdate the accrued waiting time of Black candidates who had been
@@ -2578,7 +2580,7 @@
   year: "1986 – present",
   domains-list: ("anesthesiology", "patient safety", "medical devices"),
   modes-code: "HKG",
-  impact: "Continuous pulse oximetry and capnography — encouraged in the 1986 Harvard/ASA minimum-monitoring standards and mandated in subsequent revisions (pulse oximetry ~1989–90; capnography ~1991) — converted silent hypoxemia and esophageal intubation from undetectable failures into monitored, recoverable ones; anesthesia-related mortality fell dramatically over subsequent decades — multifactorial decline",
+  impact: "Continuous pulse oximetry and capnography — encouraged in the 1986 Harvard/ASA minimum-monitoring standards and required by later ASA revisions (pulse oximetry from 1989; expired-CO2 confirmation of tube placement in the early 1990s; continual capnography in general anesthesia from 1999) — converted silent hypoxemia and esophageal intubation from undetectable failures into monitored, recoverable ones; anesthesia-related mortality fell dramatically over subsequent decades — multifactorial decline",
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -2598,12 +2600,12 @@
     disconnection alarm and *encouraged* the newer continuous pulse
     oximetry and capnography, the load-bearing additions designed to
     make hypoxemia and misplaced endotracheal tubes detectable early
-    enough to recover; both were mandated in subsequent revisions
+    enough to recover; both were required by later ASA revisions
     (pulse oximetry ~1989–90, capnography ~1991). The ASA adopted
     essentially the same standards in 1986. The Anesthesia Patient Safety Foundation, founded in
     1985, institutionalized the broader change-management effort.
     Anesthesia-related mortality fell dramatically over subsequent
-    decades — one widely cited Brazilian series reports a fall toward
+    decades — one widely cited Brazilian systematic review reports fewer
     zero — and malpractice premiums declined alongside. The field's
     own histories preserve the hedge: the decline has multiple
     co-varying causes (training, device design, pharmacology, team
@@ -2638,7 +2640,7 @@
       minimum set of continuous monitors for every anesthetized
       patient. Pulse oximetry and capnography — then just entering
       wide use — were *encouraged* rather than required in the 1986
-      text, and became the load-bearing additions when subsequent
+      text, and became the load-bearing additions when later
       revisions mandated them (pulse oximetry ~1989–90, capnography
       ~1991).#cn()
     ],
@@ -2657,7 +2659,7 @@
     ],
     [
       Anesthesia-related mortality fell dramatically over the
-      subsequent decades. A widely cited Brazilian series reported
+      subsequent decades. A widely cited Brazilian systematic review
       decline toward zero. Malpractice premiums for anesthesiology
       declined alongside — one of the few examples in American
       medicine of a specialty's malpractice cost falling as the
@@ -2689,7 +2691,7 @@
   beats: (
     "Early 1980s anesthesia crisis: silent hypoxemia and esophageal intubation structurally undetectable until catastrophic",
     "1982 ABC special + malpractice-insurance crisis + APSF founding (1985) force institutional change",
-    "Harvard standards (Eichhorn JAMA 1986): minimum monitoring; pulse oximetry and capnography encouraged in 1986, mandated in later revisions (~1989–91); ASA adopts 1986",
+    "Harvard standards (Eichhorn JAMA 1986): minimum monitoring; pulse oximetry and capnography encouraged in 1986, required by later ASA revisions (1989–1999); ASA adopts 1986",
     "Anesthesia mortality falls dramatically over subsequent decades; malpractice premiums decline alongside",
     "Hedge preserved: decline is multifactorial; device standards still fail in documented edge cases (cf. Case 26 pulse oximetry across skin tones)",
   ),
@@ -3285,10 +3287,11 @@
     skill-rating tracks for suturing, knot-tying, and needle-passing
     tasks. JIGSAWS became a standard benchmark in surgical
     skill-assessment and gesture-recognition research. Vedula et al.
-    (_PLOS One_, 2016) used the dataset to show that experts used
-    fewer gestures (26.29 vs. 31.30 on a knot-tying task) and made
-    fewer gesture errors than novices, with quantifiable
-    sub-task-level differences. The case establishes that surgical
+    (_PLOS One_, 2016) applied the same decomposition to a
+    purpose-collected set of 18 surgeons and showed that experts
+    used fewer gestures (26.29 vs. 31.30 on a suture throw and
+    surgeon's knot) and made fewer gesture errors than novices
+    (1.00 vs. 2.84), with quantifiable sub-task-level differences. The case establishes that surgical
     skill is decomposable and machine-measurable; the honest open
     question — preserved here verbatim — is whether automated
     motion-level feedback accelerates trainee skill acquisition or
@@ -3330,11 +3333,12 @@
       own private dataset.#cn()
     ],
     [
-      Vedula et al. (_PLOS One_, 2016) used the dataset to
-      analyze the structure of surgical activity for a suturing and
-      knot-tying task and reported that experts used fewer gestures
-      (26.29 on a knot-tying task) than novices (31.30), and that
-      novices made more gesture errors. The differences were not at
+      Vedula et al. (_PLOS One_, 2016) applied the decomposition to a
+      separately collected set — 18 surgeons, four expert
+      attendings and fourteen trainees, performing a single suture
+      throw and a 2–1 surgeon's knot — and reported that experts
+      used fewer gestures (26.29) than novices (31.30), and that
+      novices made more gesture errors (2.84 against 1.00). The differences were not at
       the gross-task-outcome level — both groups completed the task
       — but at the gesture-composition level the decomposition made
       visible. Subsequent work on JIGSAWS by other groups developed

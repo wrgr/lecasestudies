@@ -559,8 +559,10 @@
       reported performance and patient experience: every governance layer
       above the ward had received reports that the hospital was meeting its
       targets, and none had checked them against what was happening to
-      patients. "The system as a whole failed in its most essential duty — to
-      protect patients from unacceptable risks of harm."#cn() The phrase
+      patients. "Not just the Trust's Board but the system as a whole failed
+      in its most essential duty — to protect patients from unacceptable
+      risks of harm and from unacceptable, and in some cases inhumane,
+      treatment that should never be tolerated in any hospital."#cn() The phrase
       "the system as a whole" located the failure deliberately above any
       single ward or manager: no one layer was solely at fault, because each
       had trusted the layer below to be reporting reality rather than targets.
@@ -1199,7 +1201,7 @@
       coordination of care, the framing recast a ledger of isolated
       mistakes as a single population-scale failure mode the existing
       statistics were never built to count. The number itself was
-      computed by extrapolating from four prior studies — the IOM 1999
+      computed by extrapolating from four studies published since the IOM
       estimate, the 2010 OIG Medicare adverse-events study, the
       Landrigan 2010 _NEJM_ study, and the Classen 2011 Global Trigger
       Tool study — to the contemporary inpatient population, an
@@ -1278,8 +1280,8 @@
   ),
   references: (
     [Institute of Medicine, _To Err Is Human: Building a Safer Health System_ (1999); _Crossing the Quality Chasm_ (2001); _Improving Diagnosis in Health Care_ (2015) — the field-defining trilogy and the 44,000–98,000 estimate; the systems framing.],
-    [Makary, M. & Daniel, M. (2016), "Medical error — the third leading cause of death in the US," _BMJ_ 353:i2139 — the ~250,000 estimate, the quoted framing, the extrapolation from four prior studies (IOM 1999; OIG 2010; Landrigan 2010; Classen 2011).],
-    [Shojania, K. & Dixon-Woods, M. (2017), "Estimating deaths due to medical error: the ongoing controversy and why it matters," _BMJ Quality & Safety_ 26(5):423–428; with companion commentaries including Carr in _Health Affairs_ — methodological contestation of the Makary extrapolation and CDC-ranking comparison.],
+    [Makary, M. & Daniel, M. (2016), "Medical error — the third leading cause of death in the US," _BMJ_ 353:i2139 — the ~250,000 estimate, the quoted framing, the extrapolation from four studies published since the IOM report (HealthGrades 2004; OIG 2010; Landrigan 2010; Classen 2011).],
+    [Shojania, K. & Dixon-Woods, M. (2017), "Estimating deaths due to medical error: the ongoing controversy and why it matters," _BMJ Quality & Safety_ 26(5):423–428; with Bates, D. W. & Singh, H. (2018), _Health Affairs_ 37(11):1736–1743 — methodological contestation of the Makary extrapolation and CDC-ranking comparison.],
     [Makary & Daniel (2016), _BMJ_ — death certificates do not capture medical error as a cause; ICD billing taxonomy as the structural reason.],
     [Bates, D. W., Levine, D. M., Salmasian, H., et al. (2023), "The Safety of Inpatient Health Care," _NEJM_ 388(2):142–153 — eleven-hospital Massachusetts cohort; adverse events in ~25% of admissions, ~25% of those preventable; persistence of harm at scale.],
     [Agency for Healthcare Research and Quality, _National Healthcare Quality and Disparities Reports_ (annual); CDC WONDER ICD-coded mortality data — institutional context for the missing national active-surveillance instrument.],
@@ -1377,7 +1379,7 @@
     the risk had been visible well before withdrawal, and estimated
     88,000–139,000 excess cardiovascular events attributable to
     Vioxx; the 2005 Graham et al. _Lancet_ analysis put the figure
-    in similar range. Merck litigation discovery produced internal
+    in similar range. Merck litigation discovery produced internal Merck communications later
     Merck communications used in the Senate hearings to argue that
     publication-bias and authorship-by-Merck-employees patterns had
     suppressed the cardiovascular signal in the published record.
@@ -1407,7 +1409,7 @@
     ],
     // -- What Happened --
     [
-      The VIGOR trial (Bombardier et al., _NEJM_ 2000) reported about
+      The VIGOR trial (Bombardier et al., _NEJM_ 2000) randomized 8,076
       a five-fold higher rate of myocardial infarction in 8,076 patients
       taking Vioxx than in those taking naproxen. Merck and many readers
       interpreted the gap as naproxen being cardio-protective rather
@@ -1424,14 +1426,14 @@
     ],
     // -- The Investigation --
     [
-      Senate Finance Committee hearings in November 2004 and the
+      Senate Finance Committee hearings in November 2004 put on the record
       subsequent FDA Office of Inspector General review found that
       signals of cardiovascular harm had been present in the trial
       record for years before withdrawal. FDA Office of Drug Safety
       scientist David Graham testified under oath that the
       cardiovascular risk had been visible to him by 2000, that he had
       been pressured by FDA management not to publish his estimate,
-      and that he believed Vioxx had caused 88,000–139,000 excess
+      and that he believed Vioxx had caused 88,000–139,000 excess cases of
       heart attacks and strokes in the United States, of which 30–40%
       were probably fatal. The Graham et al. _Lancet_ 2005 analysis,
       using Kaiser Permanente data, produced a population-level
@@ -1439,7 +1441,7 @@
       public through New Jersey and federal court filings and reported
       in the _NEJM_ editorial trail, included internal Merck
       communications and ghost-authorship patterns in published Vioxx
-      papers; a 2008 _JAMA_ analysis by Ross et al. documented the
+      papers; a 2008 _JAMA_ analysis by Ross et al. documented the guest-authorship
       publication-bias and authorship patterns directly.#cn() The harm
       was not hidden in some unmeasured corner — it sat in the trial
       record the whole time, waiting for an architecture that would
@@ -1481,7 +1483,7 @@
       reports — a direct response to the Vioxx-era detection failure.
       The _NEJM_ tightened conflict-of-interest disclosure for trial
       reports and, in December 2005, took the unusual step of issuing an
-      Expression of Concern after discovering that three additional
+      Expression of Concern after learning that three myocardial infarctions,
       myocardial infarctions had been deleted from the VIGOR manuscript's
       data table two days before submission — evidence that hardens the
       story from "the signal aggregated too slowly" toward "the signal was
@@ -1507,7 +1509,7 @@
     [Bresalier, R. et al. (2005), "Cardiovascular events associated with rofecoxib in a colorectal adenoma chemoprevention trial," APPROVe, _NEJM_ 352(11):1092–1102 — placebo-controlled confirmation of cardiovascular risk; early trial termination.],
     [Graham, D. J. et al. (2005), "Risk of acute myocardial infarction and sudden cardiac death in patients treated with COX-2 selective and non-selective NSAIDs: nested case-control study," _Lancet_ 365(9458):475–481 — Kaiser Permanente population-level cardiovascular risk analysis.],
     [US Senate Committee on Finance, hearings on Vioxx and FDA's drug-safety system (November 18, 2004) — Graham testimony; "88,000 to 139,000 Americans" estimate of excess cardiovascular events; described FDA management pressure.],
-    [Ross, J. S., Hill, K. P., Egilman, D. S., Krumholz, H. M. (2008), "Guest authorship and ghostwriting in publications related to rofecoxib," _JAMA_ 299(15):1800–1812 — publication-bias and ghost-authorship documentation from Merck litigation discovery.],
+    [Ross, J. S., Hill, K. P., Egilman, D. S., Krumholz, H. M. (2008), "Guest authorship and ghostwriting in publications related to rofecoxib," _JAMA_ 299(15):1800–1812 — guest-authorship and ghostwriting documentation from Merck litigation discovery.],
     [FDA Amendments Act of 2007 (P.L. 110-85) and FDA Sentinel Initiative documentation (2008–present) — REMS authority, post-market study requirements, and active distributed-data post-market surveillance.],
   ),
   quote: [The cardiovascular risk was visible in Merck's internal data years before the drug was withdrawn.],
