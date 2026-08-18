@@ -360,11 +360,11 @@
 #case(
   number: 126,
   slug: "f-35-sustainment-and-maintainer-shortage",
-  title: "F-35 Sustainment & Maintainer Shortage",
+  title: "F-35 Sustainment & the Maintainer Capability Gap",
   year: "ongoing",
   domains-list: ("defense",),
   modes-code: "TKD",
-  impact: "Fleet mission-capable rate about 55% (March 2023), far short of program goals; lifecycle cost exceeds $1.7T, with ~$1.3T in operating and support; maintainer, technical-data, and depot shortfalls are the binding readiness constraint (GAO-23-105341)",
+  impact: "Fleet mission-capable rate 44% in FY2025, down from 67% in FY2021 (GAO-26-108113); sustainment cost estimate $1.58T, total acquisition and sustainment above $2T (GAO-24-106703); technical-data, training, and depot shortfalls are the binding readiness constraint (GAO-23-105341)",
   diagram: dgm.dgm-f35,
   kind: "failure",
   summary: [
@@ -375,18 +375,13 @@
     from the start. As of March 2023 the fleet's mission-capable rate was
     about 55%, far short of goal, with more than 10,000 components in
     the repair queue and depots behind schedule. GAO traced the shortfall to
-    maintainer shortages, the military's lack of access to technical data,
-    and contractor dependency, and urged a full reassessment of the
-    sustainment strategy. It is the book's cleanest case of a platform
+    gaps in maintainer training and support equipment, the military's lack of access to technical data, and contractor dependency, and urged a full reassessment of the sustainment strategy. It is the book's cleanest case of a platform
     fielded faster than the capability infrastructure to sustain it.
   ],
   sections: (
     // -- Background --
     [
-      The F-35 is the most expensive weapons program in history: the Pentagon
-      plans to buy nearly 2,500, at a lifecycle cost exceeding \$1.7 trillion
-      — roughly \$1.3 trillion of it not the aircraft but the decades of
-      operating and sustaining them.#cn() The flyaway jet is the finite part;
+      The F-35 is the most expensive weapons program in history: the Pentagon plans to buy nearly 2,500, at a total acquisition and sustainment cost above \$2 trillion — \$1.58 trillion of it not the aircraft but the decades of operating and sustaining them.#cn() The flyaway jet is the finite part;
       keeping a global fleet ready — maintainers, technical data, depots — is
       the open-ended part, and the part that lagged, because the cost that
       dominates the program is not buying the aircraft but the decades of
@@ -397,10 +392,7 @@
     [
       The failure is a standing condition. As of March 2023 the fleet's
       mission-capable rate was about 55%, far short of goal; more
-      than 10,000 components waited in the repair queue, and the depots
-      averaged about 72 days per repair while still behind schedule in
-      standing up the capacity to do the work at all — a backlog and a
-      turnaround time that compound, since parts stuck in the queue keep jets
+      than 10,000 components waited in the repair queue, average repair cycle time ran to 141 days against a 60-day goal, and the depots were still behind schedule in standing up the capacity to do the work at all — a backlog and a turnaround time that compound, since parts stuck in the queue keep jets
       grounded and the under-built depots cannot clear the queue fast enough
       to recover the mission-capable rate.#cn()
     ],
@@ -408,9 +400,7 @@
     [
       GAO's September 2023 review was bluntly titled: the Department and
       services *need to reassess the future sustainment strategy*. It traced
-      the shortfall to maintainer shortages, the military's lack of access to
-      the technical data needed to do its own repairs, and the resulting
-      dependence on the prime contractor.#cn() None of it was new — GAO has
+      the shortfall to gaps in maintainer training and support equipment, the military's lack of access to the technical data needed to do its own repairs, and the resulting dependence on the prime contractor.#cn() None of it was new — GAO has
       repeated the same diagnosis year after year, through a troubled
       logistics-software backbone and slow progress, even as procurement
       continued and readiness stayed flat, so the program kept buying more
@@ -438,10 +428,9 @@
       rather than more patching.#cn() Those recommendations remain a work in
       progress, and readiness has since deteriorated rather than recovered:
       GAO's June 2026 review found the fleet mission-capable rate had fallen
-      to 44 percent and the full-mission-capable rate to just 25 percent —
-      only about one in four F-35s able to fly all its missions — driven in
-      part by the program accepting new TR-3/Block-4 jets that could not yet
-      fly combat because of software delays, while the Joint Program Office's
+      from 67 percent in FY2021 to 44 percent, and the
+      full-mission-capable rate to just 25 percent —
+      the fleet able to fly all its missions only a quarter of the time — driven in part by the program accepting new aircraft that were non-mission capable because of software delays, while the Joint Program Office's
       remediation ("Global Support Solution Reset") was projected to cost an
       estimated \$13.7 billion more through FY2031, with readiness expected to
       worsen before it improves. The F-35 sits in this book as the live argument for
@@ -455,27 +444,27 @@
   beats: (
     "Most expensive program in history; most of its lifecycle cost is decades of sustainment work",
     "Fleet ran at half goal with over 10,000 components queued and depots still behind schedule",
-    "GAO traced shortfall to maintainer shortages, lack of access to technical data, and contractor dependency",
+    "GAO traced shortfall to maintainer training and support-equipment gaps, lack of access to technical data, and contractor dependency",
     "Aircraft fielded faster than maintainers and data; contractor controls knowledge needed to keep jets flying",
     "GAO urged full sustainment reassessment; costs still rising and fleet readiness still below program goals",
   ),
   references: (
     [U.S. Government Accountability Office, _F-35 Aircraft: DOD and the Military Services Need to Reassess the Future Sustainment Strategy_, #link("https://www.gao.gov/products/gao-23-105341")[GAO-23-105341] (Sept. 2023) — ~2,500 planned aircraft and a lifecycle cost exceeding \$1.7 trillion, ~\$1.3 trillion of it in operating and support.],
     [GAO-23-105341 (2023) — ~55% fleet mission-capable rate (March 2023); over 10,000 components awaiting repair; ~72-day average depot turnaround; depot stand-up behind schedule.],
-    [GAO-23-105341 (2023) — sustainment shortfall traced to maintainer shortages, lack of military access to technical data, and contractor dependency.],
+    [GAO-23-105341 (2023) — sustainment shortfall traced to insufficient technical data, training and support equipment for maintainers, depot stand-up delays, and contractor dependency.],
     [GAO, _F-35 Sustainment: DOD Faces Several Uncertainties…_, #link("https://www.gao.gov/assets/gao-22-105995.pdf")[GAO-22-105995] (2022), and the broader GAO F-35 series — the recurring, year-over-year diagnosis.],
     [GAO-23-105341 (2023) — recommendation that DOD reassess the future sustainment strategy.],
     [GAO, _F-35 Sustainment: Costs Continue to Rise While Planned Use and Availability Have Decreased_, #link("https://www.gao.gov/assets/d24106703.pdf")[GAO-24-106703] (2024) — costs rising while readiness stays below goal.],
   ),
   quote: [Organizational-level maintenance has been affected by a number of issues, including a lack of technical data and training.],
-  quote-source: "Paraphrasing GAO-23-105341, F-35 Aircraft, 2023",
+  quote-source: "GAO-23-105341, F-35 Aircraft, 2023 — What GAO Found",
   le-insight: [
     F-35 is the live, current example of fielding a platform faster than
     its capability infrastructure can be built. The aircraft is the easy
     part; the maintainers are the hard part. A decade of program
     schedules treated maintainer training as a follow-on cost, not a
     fielding gate. The fleet is now operating at half of its design
-    readiness, and the program of record now carries a life-cycle estimate above \$1.7 trillion, of which roughly \$1.3 trillion is operating and support.
+    readiness, and the program of record now carries a life-cycle estimate above \$2 trillion, of which about \$1.58 trillion is sustainment.
   ],
   lens-approach: [
     LENS treats the F-35 in LEN 5 as the canonical case of *Capability-

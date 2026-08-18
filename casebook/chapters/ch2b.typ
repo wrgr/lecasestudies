@@ -3203,18 +3203,7 @@
     [
       The authors press the honest reading without softening it.
       The timeline of the evaluation is itself a falsifiable
-      design choice, not a methodological default. The reasons
-      year one returned a null are recoverable from the trial
-      record — teacher fluency with the system grew across the
-      year, district-level scheduling and pacing adjusted across
-      the year, student familiarity with the adaptive workflow
-      stabilized across the year. None of these are noise; all
-      are part of the deployment substrate the intervention
-      depends on, and all required the second year to
-      stabilize. The two-year horizon was the right horizon
-      because the intervention's effect is conditioned on a
-      deployment-substrate stabilization that takes more than
-      one year.#cn()
+      design choice, not a methodological default. The reason the analysis was run separately by cohort is on the record: the researchers hypothesized that implementation would be better in the second year as teachers gained experience with the curriculum. What the implementation record does not show is a matching rise in fidelity — the year-two gain tracked teachers using fewer of the activities the guidelines prescribe for non-computer class time, not more. The two-year horizon was the right horizon because the effect appeared only in the second year; what changed between the two years is still contested in the trial's own implementation record.#cn()
     ],
     [
       The case is the deeper-evidence-of update on v1 Case 67.
@@ -3238,17 +3227,8 @@
       original evaluation-horizon reading did not anticipate: that
       single year-two effect has never been independently reproduced
       by a comparably rigorous trial, yet it now bears almost the
-      entire evidentiary weight the product carries. Every
-      "Strong"/"Positive" badge — the What Works Clearinghouse rating,
-      the ESSA Tier 1 classification — traces back to this trial and a
-      few pre-2015 studies; Evidence for ESSA's own pooled estimate
-      across the qualifying studies is a mere +0.04 SD, far below the
-      ~0.20 SD headline, which is itself a genuine outlier against the
-      roughly 0.10 SD median of large education RCTs. And the NBER
-      review's re-reading (Escueta et al., 2017) found the year-two
-      gain was associated not with higher fidelity but with teachers
-      _reducing_ their use of the vendor-specified activities — the
-      effect appearing where implementers departed from the model. The
+      entire evidentiary weight the product carries. Every "Strong"/"Positive" badge traces back to this trial and two pre-2015 studies, and only one registry issues one: Evidence for ESSA rates the program Strong, while the What Works Clearinghouse, reviewing the high-school arm in June 2016, adjusted the year-two difference for multiple comparisons, found it no longer statistically significant, and rated Cognitive Tutor Algebra I mixed effects on algebra; Evidence for ESSA's own pooled estimate
+      across the qualifying studies is a mere +0.04 SD, far below the ~0.20 SD headline. Kraft's benchmarks put the median of 747 education RCTs at 0.10 SD and call 0.20 SD large rather than exceptional; the sharper comparison is his median of 0.03 SD for trials enrolling more than 2,000 students. And the trial's own implementation record, as the NBER ed-tech review reports it (Escueta et al., 2017), ties the year-two gain not to higher fidelity but to teachers _reducing_ — though not eliminating — their use of the activities the CTAI guidelines prescribe for non-computer class time. The
       case's warning thus deepens: the danger is not only the one-year
       evaluation that would have published the wrong null, but the
       single positive replication-year result scaled into a durable
@@ -3276,12 +3256,13 @@
     ),
   ),
   references: (
+    [Evidence for ESSA, program record for Carnegie Learning High School Math Solution Algebra I — ESSA rating "Strong," weighted mean effect size +0.04 across three qualifying studies (Cabalo & Vu 2007; Campuzano et al. 2009; Pane et al. 2014).],
     [Pane, J. F., Griffin, B. A., McCaffrey, D. F., & Karam, R. (2014), "Effectiveness of Cognitive Tutor Algebra I at Scale," _Educational Evaluation and Policy Analysis_ 36(2):127–144, doi:10.3102/0162373713507480.],
     [RAND Working Paper WR-1050 — addendum to the Pane et al. evaluation.],
     [Koedinger, K. R., Anderson, J. R., Hadley, W. H., & Mark, M. A. (1997), "Intelligent tutoring goes to school in the big city," _IJAIED_ — the v1 Case 67 system description Cognitive Tutor builds from.],
-    [What Works Clearinghouse — Cognitive Tutor evidence-base summary applying federal-grade evidence standards to the Pane et al. trial.],
-    [Escueta, Quan, Nickow, & Oreopoulos (2017/2020), "Education Technology: An Evidence-Based Review," NBER WP 23744 / _Journal of Economic Literature_ — the re-reading that the Pane year-two gain tracked reduced fidelity, and the general heterogeneity of ed-tech effects.],
-    [Kraft, M. A. (2020), "Interpreting Effect Sizes of Education Interventions," _Educational Researcher_ 49(4):241–253 — the ~0.10 SD median across 747 RCTs against which 0.20 SD is an outlier; and Evidence for ESSA program record (pooled ~+0.04 SD).],
+    [What Works Clearinghouse (2016), _Cognitive Tutor®_ intervention report, Secondary Mathematics, June 2016 — rates Cognitive Tutor Algebra I "mixed effects" on algebra; records the Pane et al. year-two difference as no longer significant after adjustment for multiple comparisons.],
+    [Escueta, Quan, Nickow, & Oreopoulos (2017), "Education Technology: An Evidence-Based Review," NBER Working Paper 23744 — reports that the Pane year-two gain tracked reduced use of the prescribed non-computer activities, not higher fidelity; published as Escueta, Nickow, Oreopoulos, & Quan (2020), "Upgrading Education with Technology: Insights from Experimental Research," _Journal of Economic Literature_ 58(4):897–996.],
+    [Kraft, M. A. (2020), "Interpreting Effect Sizes of Education Interventions," _Educational Researcher_ 49(4):241–253 — 1,942 effect sizes from 747 RCTs, median 0.10 SD, 0.03 SD for samples above 2,000 students, and the benchmark that treats 0.20 SD as large.],
   ),
   quote: [A one-year evaluation would have published a null. The two-year evaluation surfaced a real effect. Both findings were in the same trial.],
   quote-source: "Editors' synthesis of Pane et al. (2014).",
@@ -3325,7 +3306,7 @@
   year: "2019 – 2023",
   domains-list: ("higher education", "learning analytics", "distance learning"),
   modes-code: "TKD",
-  impact: "Across 15 courses and 559 teachers (189 with OU Analyse access), teachers' engagement with predictive learning analytics was associated with measurable improvements in student performance for >14,000 students; three-year post-implementation follow-up extends the evidence into sustained adoption and perceptions",
+  impact: "Across 15 undergraduate courses, 559 teachers (189 with OU Analyse access) and more than 14,000 students, teachers who accessed the dashboard in 10-40 percent of course weeks and intervened with flagged students had students who significantly outperformed their own students of the previous year; a survey of 366 teachers three years post-implementation maps what drives adoption and what blocks it",
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -3340,19 +3321,12 @@
     whom had access to OU Analyse) with more than 14,000 students.
     Teachers' engagement with the predictive learning analytics
     was associated with measurable improvements in student
-    performance. The LAK 2023 three-year-post-implementation
-    follow-up extends the picture into questions of sustained
-    adoption — how teachers' use of the predictions stabilized,
-    what fraction continued to act on them, how perceptions
-    evolved. The case is distinct from the OU consent-and-ethical-
+    performance. The LAK 2023 study surveys 366 teachers across four faculties three years after the dashboard became business as usual, and models adoption with UTAUT: use rises with performance expectancy, self-efficacy, positive attitudes and low anxiety, and falls where facilitating conditions are absent. The case is distinct from the OU consent-and-ethical-
     use frame Case 81 covers; this case carries the post-
     deployment teacher-use evaluation at multi-cohort scale.
     The authors' hedges are binding: causal attribution to OU
     Analyse use specifically — versus teacher selection effects
-    — is bounded; the 2019 study uses propensity-style matching
-    rather than RCT randomization. Future validation ongoing on
-    multi-institution transfer as the system is licensed beyond
-    the Open University.
+    — is bounded; the 2019 study compares a teacher's students against that same teacher's students in the prior presentation, controlling for academic performance, rather than randomizing. Future validation ongoing on multi-institution transfer: the system runs inside the Open University, and no evaluation of it at another institution is in the peer-reviewed literature.
   ],
   sections: (
     [
@@ -3371,31 +3345,14 @@
     ],
     [
       The evaluation design covers 15 courses, 559 teachers, and
-      more than 14,000 students. 189 of the 559 teachers had
-      access to OU Analyse; the comparison structure is between
-      these teachers and the OU Analyse-naive teachers in the
-      same courses. The outcome is student performance on
-      course assessments. Teachers' engagement with the
-      predictive learning analytics — operationalized as
-      dashboard-usage and acted-upon-prediction proxies — was
-      associated with measurable improvements in student
-      performance for the cohorts those teachers taught. The
-      effect size is meaningful at the scale the institutional
-      deployment supports.#cn()
+      more than 14,000 students. 189 of the 559 teachers had access to OU Analyse; the comparison structure sets a teacher's students against the students that same teacher taught in the previous year's presentation of the course, when no predictions were available. The outcome is student performance on
+      course assessments. Engagement was operationalized as how many of a course's weeks the teacher accessed the dashboard, together with whether the teacher intervened with flagged students. The gain is not monotonic in usage: teachers who accessed OU Analyse in between 10 and 40 percent of the weeks a course ran, and intervened, benefited their students the most.#cn()
     ],
     [
       The 2023 LAK three-year-post-implementation follow-up
       extends the picture into a question the single-cohort
       pilots cannot address: what happens to teacher use of the
-      predictions across multiple cohorts and across years? The
-      follow-up paper documents how teachers' use stabilized,
-      what fraction continued to act on the predictions, and
-      how perceptions evolved as the institutional norm around
-      the dashboard solidified. Across the three years, the
-      pattern surfaces as one of sustained adoption with
-      stratification: a fraction of teachers used the
-      predictions actively, a fraction used them as background
-      reference, and a fraction did not engage. The
+      predictions across multiple cohorts and across years? The 2023 paper answers it with a survey of 366 teachers across four faculties, three years after the dashboard became business as usual, read through the Unified Theory of Acceptance and Use of Technology. Adoption rises with performance expectancy, self-efficacy, positive attitudes, low anxiety and less teaching experience, and falls where facilitating conditions are absent and the tool is felt to be effortful. The
       delegation-with-revocation structure is operative: each
       teacher chose, in each cohort, whether to act on the
       prediction, and the choice itself is the load-bearing
@@ -3421,14 +3378,9 @@
     [
       The authors' hedges are binding. The causal attribution to
       OU Analyse use specifically — as distinct from teacher
-      selection effects — is bounded. The 2019 study uses
-      propensity-style matching but does not randomize at the
-      teacher level; the 2023 follow-up extends the evidence
+      selection effects — is bounded. The 2019 study compares a teacher's students with that same teacher's students in the previous presentation, controlling for prior academic performance, and does not randomize at the teacher level; the 2023 follow-up extends the evidence
       base on adoption and perception but does not close the
-      teacher-selection question. Future validation ongoing on
-      multi-institution transfer — OU Analyse has been licensed
-      beyond the Open University, and the transfer outcomes are
-      not yet in the peer-reviewed literature. Pair with Case
+      teacher-selection question. Future validation ongoing on multi-institution transfer — the Open University's own project page describes OU Analyse as available to its staff, and no evaluation of the system at another institution is in the peer-reviewed literature. Pair with Case
       81 (OU consent governance), Case 84 (Cognitive Tutor
       at-scale evaluation), and the Purdue Course Signals
       cautionary case from v1 — the OU Analyse evaluation is
@@ -3439,9 +3391,9 @@
   beats: (
     "OU Analyse: predictive-learning-analytics dashboard deployed across the Open University UK's distance-learning operation",
     "Herodotou et al. 2019 BJET: 15 courses, 559 teachers (189 with OUA access), >14,000 students; teacher engagement → measurable improvement",
-    "Herodotou et al. 2023 LAK: three-year-post-implementation follow-up — stabilization, sustained adoption stratification, perception evolution",
+    "Herodotou et al. 2023 LAK: survey of 366 teachers three years post-implementation — a UTAUT model of what drives and what blocks adoption",
     "Distinct from Case 81 (OU consent governance); this case is post-deployment teacher-use at multi-cohort scale",
-    "Hedges binding: causal attribution bounded (propensity matching, not RCT randomization); multi-institution transfer evidence pending",
+    "Hedges binding: causal attribution bounded (same-teacher prior-presentation comparison, not RCT randomization); multi-institution transfer evidence pending",
   ),
   approaches: (
     during: (
@@ -3451,13 +3403,13 @@
     ),
     after: (
       [Commission the next-tier evaluation that addresses the teacher-selection-effect question; an RCT at the teacher level, or an instrumental-variable design exploiting institutional dashboard-rollout variation, would close the residual causal-attribution gap.],
-      [Publish the multi-institution-transfer evaluations as the system is licensed beyond the OU; the case's value as a generalizable instance depends on the transfer evidence the OU-internal evaluation cannot provide.],
+      [Publish multi-institution-transfer evaluations if the system moves beyond the OU; the case's value as a generalizable instance depends on the transfer evidence the OU-internal evaluation cannot provide.],
       [Pair the case in the curriculum with Case 81 (OU consent governance) so the deployment is taught across both governance and post-deployment-use frames; the two cases together teach the institutional anchor without collapsing one frame into the other.],
     ),
   ),
   references: (
     [Herodotou, C., Hlosta, M., Boroowa, A., Rienties, B., Zdrahal, Z., & Mangafa, C. (2019), "Empowering online teachers through predictive learning analytics," _British Journal of Educational Technology_ 50(6):3064–3079, doi:10.1111/bjet.12853.],
-    [Herodotou, C. et al. (2023), "Predictive Learning Analytics and University Teachers: Usage and perceptions three years post implementation," _LAK '23_, doi:10.1145/3576050.3576061.],
+    [Herodotou, C., Maguire, C., Hlosta, M., & Mulholland, P. (2023), "Predictive Learning Analytics and University Teachers: Usage and perceptions three years post implementation," _LAK '23_, pp. 68–78, doi:10.1145/3576050.3576061 — survey of 366 teachers, UTAUT model of adoption.],
     [Herodotou et al. (2019), "A large-scale implementation of predictive learning analytics in higher education: the teachers' role and perspective," _Educational Technology Research and Development_, ERIC EJ1227972 — complementary teacher-perspective paper.],
     [Arnold, K. E., & Pistilli, M. D. (2012), "Course Signals at Purdue," _LAK '12_ — the structural precursor v1 carries as a cautionary case.],
   ),
@@ -3468,8 +3420,7 @@
     intervention with both deployment scale and longitudinal
     teacher-use evidence at journal tier. The 2019 BJET paper
     establishes the effect on student performance at the
-    institutional deployment; the 2023 LAK follow-up extends
-    the picture into three-year sustained adoption. The
+    institutional deployment; the 2023 LAK survey of 366 teachers maps what drives adoption three years on. The
     delegation-with-revocation structure is operative and
     teachable. Hedges binding on causal attribution and on
     multi-institution transfer.
@@ -3506,7 +3457,7 @@
   year: "2024",
   domains-list: ("higher education", "algorithmic fairness", "policy analysis"),
   modes-code: "DKN",
-  impact: "Gándara, Anahideh, Ison, and Picchiarini (AERA Open, 2024) audited predictive models of college student success and showed that models which look acceptable on overall accuracy are systematically less accurate for Black and Hispanic students and overestimate success for white and Asian students — small-tier frontier evidence that the choice of construct and the stratification used in evaluation, not only model-bias mitigation, determine whether an equity-oriented prediction is fair to the groups the equity commitment is meant to protect",
+  impact: "Gándara, Anahideh, Ison, and Picchiarini (AERA Open, 2024) audited predictive models of college student success and showed that models which look acceptable on overall accuracy are systematically less accurate for Black and Hispanic students and overestimate success for white and Asian students — small-tier frontier evidence that overall accuracy hides the disparity, that leading bias-mitigation techniques reduce it without eliminating it under any fairness notion, and that the evaluation regime and end-user training, not the model alone, determine whether an equity-oriented prediction is fair to the groups the equity commitment is meant to protect",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3524,18 +3475,7 @@
     looks acceptable on overall accuracy is systematically less
     accurate for Black and Hispanic students — making more
     prediction errors for them — while overestimating success for
-    white and Asian students. The apparent fairness of the system
-    depends materially on upstream choices: the construct the model
-    is built to predict (predicted graduation vs. predicted benefit
-    vs. predicted need), the stratification used in evaluation
-    (overall accuracy vs. accuracy by income, race/ethnicity,
-    first-generation status), and the decision context the
-    prediction is consumed in (whether end users are trained to
-    contextualize a flagged prediction or treat it as a verdict).
-    The paper's contribution is the frontier-shaped finding that
-    fairness in equity-oriented prediction is a construct-definition
-    and stratified-evaluation problem before it is a model-bias
-    problem. The case pairs explicitly with the v2 race-construct
+    white and Asian students. The models run on the nationally representative Education Longitudinal Study of 2002 and predict bachelor's-degree attainment; the disparity surfaces only when the evaluation is stratified by racialized group, and the four bias-mitigation techniques the authors test reduce it without eliminating it under any of the four fairness notions. What the prediction then does to a student depends on the decision context it is read in — whether end users are trained to contextualize a flagged prediction or treat it as a verdict. The paper's contribution is the frontier-shaped finding that stratified evaluation, not aggregate accuracy, is what makes an equity-oriented prediction auditable at all. The case pairs explicitly with the v2 race-construct
     trio (Cases 25 eGFR, 26 pulse oximetry, 6 Hoffman) and with
     the broader equity-construct competency C8.2: demographic
     stratification of validation and outcomes as a design
@@ -3562,24 +3502,11 @@
       that models which look acceptable on overall accuracy are
       systematically less accurate for Black and Hispanic
       students — making more prediction errors for them — while
-      overestimating success for white and Asian students. The
-      methodological move is to show that the choice of construct
-      the model is built to predict, and the way the model is
-      evaluated, have substantial consequences for which students
-      the model treats accurately. A model optimized and validated
-      on aggregate accuracy is not interchangeable with one whose
-      validation is stratified by racialized group; the
-      institution's choice of construct and evaluation regime is a
-      normative decision the model architecture cannot make on its
-      own.#cn()
+      overestimating success for white and Asian students. The methodological move is to hold the prediction task fixed — bachelor's-degree attainment in the Education Longitudinal Study of 2002 — and vary the evaluation: four fairness notions across several model classes, scored by racialized group rather than in aggregate. Among students who did not complete a degree, the models predict success for 65 percent of White and 73 percent of Asian students against 28 percent of Hispanic and 33 percent of Black students. Which evaluation an institution runs is a normative decision the model architecture cannot make on its own.#cn()
     ],
     [
       The second methodological move concerns evaluation
-      stratification. Overall accuracy, the standard summary
-      metric, can mask substantial disparity by income, race/
-      ethnicity, and first-generation status — populations whose
-      base rates and observed outcomes differ from the modal
-      student the training data over-represents. The paper's
+      stratification. Overall accuracy, the standard summary metric — around 77 percent here — can mask substantial disparity by racialized group, populations whose base rates and observed outcomes differ from the modal student the training data over-represents. The paper's
       stratified evaluation shows the canonical equity-construct
       finding: a model that looks fair under overall accuracy can
       be substantially less accurate, or substantially biased in
@@ -3616,16 +3543,13 @@
       layer: in those cases the construct (race correction in
       eGFR, single-sensor calibration in pulse oximetry, the
       pain-perception assumption in Hoffman) was the design
-      decision that produced the disparate outcome; in this case
-      the construct (predicted enrollment vs. predicted need vs.
-      predicted benefit) is the design decision the algorithmic-
-      targeting system has to make explicitly.
+      decision that produced the disparate outcome; in this case the design decision is the evaluation itself — whether accuracy is scored in aggregate or by racialized group, and whether the advisor reading a flagged prediction has been told which way the model errs.
     ],
   ),
   beats: (
     "Predictive student-success modeling is routine: models score students on predicted graduation / retention / benefit / need; scores feed downstream support and outreach decisions",
     "Gándara et al. (AERA Open, 2024): models less accurate for Black and Hispanic students; overestimate success for white and Asian students — overall accuracy masks the disparity",
-    "Stratified evaluation by income, race/ethnicity, first-generation status reveals disparity that overall-accuracy summary metrics hide",
+    "Stratified evaluation by racialized group reveals disparity that overall-accuracy summary metrics hide",
     "Decision context and mitigation matter: train end users to contextualize a flagged prediction; bias-mitigation reduces but does not eliminate the cross-group gap",
     "Cross-references v2 race-construct trio (Cases 25 eGFR, 26 pulse oximetry, 6 Hoffman) — construct definition is the upstream design decision in each",
   ),
@@ -3647,23 +3571,15 @@
     [Friedler, Scheidegger, & Venkatasubramanian (2021), "The (im)possibility of fairness: different value systems require different mechanisms for fair decision making," _Communications of the ACM_ — the construct-definition argument at field level.],
     [v2 cross-referenced cases: 25 (eGFR race correction), 26 (pulse oximetry across skin tones), 6 (Hoffman pain bias) — the race-construct trio at the construct-definition layer.],
   ),
-  quote: [Fairness in equity-oriented prediction is a construct-definition problem before it is a model-bias problem. Which student outcome the model is maximizing is the upstream decision.],
+  quote: [A model that looks fair on overall accuracy can be substantially less accurate for the students the equity commitment is meant to protect. Stratified evaluation is what makes the difference visible.],
   quote-source: "Editors' synthesis of Gándara, Anahideh, Ison, & Picchiarini, _AERA Open_ (2024).",
   le-insight: [
-    Gándara's student-success-prediction audit is the small-tier
-    frontier instance of fairness-as-construct-definition. Which
-    construct the model maximizes (predicted graduation vs.
-    benefit vs. need), which stratification is used in
-    validation, and the decision context the prediction is
-    consumed in each determine the fairness properties of the
-    deployed system; the audit found models systematically less
+    Gándara's student-success-prediction audit is the small-tier frontier instance of fairness-as-stratified-evaluation. Which stratification is used in validation, which mitigation technique is applied, and whether the advisor reading the prediction knows how it errs each determine the fairness properties of the deployed system; the audit found models systematically less
     accurate for Black and Hispanic students. Cross-references
     the v2 race-construct trio at the construct-definition layer.
   ],
   lens-approach: [
-    Gándara student-success-prediction fairness is the
-    equity-construct-definition case (induced 8.2; LENS
-    D4/PT5) — Domain 4 for stratified evaluation; Domain 5 for
+    Gándara student-success-prediction fairness is the stratified-evaluation case (induced 8.2; LENS D4/PT5) — Domain 4 for stratified evaluation; Domain 5 for
     the decision-context and mitigation question. Cross-reference
     Cases 25, 26, 6 — case-grounded basis for the equity-
     construct LEOs.
@@ -3689,7 +3605,7 @@
   year: "2021 – 2024",
   domains-list: ("learning analytics", "algorithmic fairness", "ed-tech research"),
   modes-code: "DKN",
-  impact: "Yu, Lee, and Kizilcec, publishing in the LAK/EDM literature, examined whether and how protected attributes (race/ethnicity, gender, socioeconomic status) should be included in learning-analytics predictive models, and showed that whether including or excluding the attribute produces fairer outcomes depends on the construct, the model class, the downstream intervention, and the population — small-tier frontier evidence that the include-or-exclude question is the wrong framing",
+  impact: "Yu, Lee, and Kizilcec, publishing at ACM Learning @ Scale in 2021, tested whether four protected attributes (gender, underrepresented-minority status, first-generation status, high financial need) should be included as features in dropout prediction across 93,457 students at one U.S. research university, and found that including them left overall prediction performance unchanged and improved algorithmic fairness only marginally — small-tier frontier evidence that the include-or-exclude question is settled locally, by audit, rather than by principle",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3707,13 +3623,7 @@
     reconstructable from correlated features (zip code, course
     history, prior achievement), so excluding the attribute does
     not exclude its predictive footprint and can make discrimination
-    harder to detect and audit. Yu, Lee, and Kizilcec, publishing
-    in the LAK/EDM literature, examined the include-or-exclude
-    question empirically across multiple learning-analytics
-    prediction tasks. The headline finding is the frontier-shaped
-    one: whether inclusion or exclusion produces fairer outcomes
-    depends on the construct being predicted, the model class, the
-    intervention the prediction feeds, and the population. The
+    harder to detect and audit. Yu, Lee, and Kizilcec, publishing at ACM Learning \@ Scale, examined the include-or-exclude question empirically on one prediction task at one institution. The headline finding is the frontier-shaped one: including the four protected attributes left overall prediction performance unchanged and improved algorithmic fairness only marginally, which the authors read as reason to include them and to evaluate the effect in each local context. The
     case is the small-tier frontier instance of "surfacing bias
     through governance, not just technique" (C8.4 in the induced
     framework). It cross-references the v2 race-construct trio
@@ -3749,19 +3659,7 @@
       would let an evaluator stratify the model's output.#cn()
     ],
     [
-      Yu, Lee, and Kizilcec, publishing in the LAK/EDM (Learning
-      Analytics and Knowledge / Educational Data Mining)
-      literature, examined the include-or-exclude question
-      empirically across multiple learning-analytics prediction
-      tasks — course completion, performance prediction, dropout
-      risk — with multiple model classes (regression, tree-based,
-      neural) and multiple downstream intervention contexts. The
-      headline finding is the frontier-shaped one: whether
-      including or excluding a protected attribute produces
-      fairer outcomes depends on the construct being predicted,
-      the model class, the intervention the prediction feeds, and
-      the population. There is no general answer; the include-or-
-      exclude question is the wrong framing.#cn()
+      Yu, Lee, and Kizilcec, publishing at the ACM Conference on Learning \@ Scale, examined the include-or-exclude question empirically on institutional records for the whole student body of a large U.S. research university — 93,457 students, residential and fully online — predicting dropout after one academic year with logistic regression and gradient-boosted trees, with and without four protected attributes: gender, underrepresented-minority status, first-generation status, and high financial need. The headline finding is the frontier-shaped one: including the attributes left overall prediction performance unchanged and improved algorithmic fairness only marginally. The result favours inclusion, and it favours it weakly enough that the answer has to be re-established in each local context.#cn()
     ],
     [
       The right framing the paper develops is governance and
@@ -3797,7 +3695,7 @@
   beats: (
     "Long-running learning-analytics question: include or exclude protected attributes (race/ethnicity, gender, SES) as features?",
     "Fairness-through-unawareness intuitive but incomplete: omitted attributes reconstructable from correlated features (zip code, prior achievement)",
-    "Yu, Lee, Kizilcec (LAK/EDM): include-or-exclude effect depends on construct, model class, downstream intervention, population — no general answer",
+    "Yu, Lee, Kizilcec (L@S 2021, N=93,457): including four protected attributes left prediction performance unchanged and fairness marginally better — the authors favour inclusion",
     "Right framing is governance and audit: explicit decision recorded with reasoning, stratified evaluation, audit cadence that catches the consequences",
     "Cross-references Case 86 (Gándara), the v2 race-construct trio (25 eGFR, 26 pulse oximetry, 6 Hoffman) — five-case equity-construct frontier set",
   ),
@@ -3815,21 +3713,17 @@
   ),
   references: (
     [Yu, R., Lee, H., & Kizilcec, R. F. (2021), "Should College Dropout Prediction Models Include Protected Attributes?" in _Proceedings of the Eighth ACM Conference on Learning \@ Scale_ (L\@S '21), doi:10.1145/3430895.3460139 — primary paper on the include-or-exclude empirical analysis.],
-    [Kizilcec & Lee, "Algorithmic Fairness in Education," in Holmes & Porayska-Pomsta (eds.), _Ethics in Artificial Intelligence in Education_ — broader synthesis of the fairness-in-learning-analytics frontier.],
+    [Kizilcec, R. F., & Lee, H. (2022), "Algorithmic Fairness in Education," in Holmes & Porayska-Pomsta (eds.), _The Ethics of Artificial Intelligence in Education_, Routledge, doi:10.4324/9780429329067-10 — broader synthesis of the fairness-in-learning-analytics frontier.],
     [Dwork, Hardt, Pitassi, Reingold, & Zemel (2012), "Fairness through awareness," _Proceedings of ITCS_ — foundational paper on the inadequacy of fairness-through-unawareness.],
     [Barocas, Hardt, & Narayanan, _Fairness and Machine Learning_ (fairmlbook.org) — technical-fairness backdrop.],
     [v2 cross-referenced cases: 86 (Gándara), 25 (eGFR), 26 (pulse oximetry), 6 (Hoffman) — equity-construct five-case set.],
   ),
-  quote: [The include-or-exclude question is the wrong framing. The right framing is governance: a deliberate decision, recorded with reasoning, paired with stratified evaluation and audit cadence.],
-  quote-source: "Editors' synthesis of Yu, Lee, & Kizilcec (LAK/EDM).",
+  quote: [Including the protected attributes changed prediction performance not at all and fairness only marginally. What settles the question is not principle but a local audit, recorded with its reasoning.],
+  quote-source: "Editors' synthesis of Yu, Lee, & Kizilcec (L@S 2021).",
   le-insight: [
     Yu, Lee, and Kizilcec's protected-attributes work is the
     frontier instance of surfacing bias through governance, not
-    just technique. Whether including or excluding a protected
-    attribute produces fairer outcomes depends on the construct,
-    the model class, the intervention, and the population. The
-    governance architecture around the model is the carrier of
-    the answer in any specific deployment.
+    just technique. Including four protected attributes in a dropout model built on 93,457 student records left overall performance unchanged and improved fairness only marginally; the authors read that as reason to include them. The governance architecture around the model is the carrier of the answer in any specific deployment.
   ],
   lens-approach: [
     Yu/Lee/Kizilcec protected attributes is the model-fairness-
@@ -3840,7 +3734,7 @@
     6).
   ],
   literature-items: (
-    [Yu, Lee, & Kizilcec, LAK/EDM protected-attributes paper],
+    [Yu, Lee, & Kizilcec (2021), L\@S — protected attributes],
     [Kizilcec & Lee, "Algorithmic Fairness in Education"],
     [Dwork et al. (2012), "Fairness through awareness," _ITCS_],
   ),

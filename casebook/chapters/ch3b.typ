@@ -23,7 +23,7 @@
   year: "1988 – 2010s",
   domains-list: ("aviation safety", "structural engineering", "regulatory rulemaking"),
   modes-code: "GDK",
-  impact: "After Aloha Airlines 243 (1988) exposed widespread fatigue cracking in an aging Boeing 737-200, the FAA's Aging Aircraft Program and the Airworthiness Assurance Working Group produced two decades of structural inspection programs culminating in 14 CFR Part 26 (2010), which requires manufacturers to establish a Limit of Validity for each model and embed widespread fatigue damage protection into the maintenance program",
+  impact: "After Aloha Airlines 243 (1988) exposed widespread fatigue cracking in an aging Boeing 737-200, the FAA's Aging Aircraft Program and the Airworthiness Assurance Working Group produced two decades of structural inspection programs culminating in 14 CFR Part 26 subpart C, published November 15, 2010 and effective January 14, 2011, which requires design approval holders to establish a Limit of Validity for each affected model and embed widespread fatigue damage protection into the maintenance program",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -153,10 +153,10 @@
   ),
   references: (
     [NTSB (1989), Aircraft Accident Report AAR-89/03, _Aloha Airlines Flight 243, Boeing 737-200, N73711_.],
-    [FAA, 14 CFR Part 26, "Continued Airworthiness and Safety Improvements for Transport Category Airplanes," Final Rule (2007); WFD/LOV Final Rule published Nov 15, 2010, effective Jan 14, 2011.],
-    [Airworthiness Assurance Working Group reports (1990s–2000s) — per-model structural inspection program record.],
-    [FAA Aging Aircraft Program documentation (1988 – present) — institutional record of the sustained regulatory work.],
-    [Swift, "Widespread Fatigue Damage Monitoring — Issues and Concerns," _International Conference on Aging Aircraft_ — technical synthesis of the WFD inspection regime.],
+    [FAA, 14 CFR Part 26, "Continued Airworthiness and Safety Improvements for Transport Category Airplanes," Final Rule, 72 FR 63409 (November 8, 2007) — the rule that created Part 26.],
+    [FAA, "Aging Airplane Program: Widespread Fatigue Damage," Final Rule, 75 FR 69746 (November 15, 2010, effective January 14, 2011) — the subpart C limit-of-validity provisions.],
+    [Airworthiness Assurance Working Group (1999), _Recommendations for Regulatory Action to Prevent Widespread Fatigue Damage in the Commercial Airplane Fleet_, Final Report, March 11, 1999 (Rev. A, June 29, 1999) — the ARAC record behind the rule.],
+    [Swift, T. (1993), "Widespread Fatigue Damage Monitoring — Issues and Concerns," _International Conference on Structural Airworthiness of New and Aging Aircraft_, Hamburg, June 16–18, 1993 — technical synthesis of the WFD inspection regime.],
   ),
   quote: [The deliverable was not a single rule. It was the two-decade per-model technical record that made the rule a codification of established practice rather than top-down regulation.],
   quote-source: "Editors' synthesis of the FAA Aging Aircraft Program and the Part 26 rulemaking record.",
@@ -322,10 +322,10 @@
     ),
   ),
   references: (
-    [FAA, "Automatic Dependent Surveillance – Broadcast (ADS-B) Out Performance Requirements to Support Air Traffic Control (ATC) Service," Final Rule, 14 CFR Part 91 (2010).],
+    [FAA, "Automatic Dependent Surveillance-Broadcast (ADS-B) Out Performance Requirements To Support Air Traffic Control (ATC) Service," Final Rule, 75 FR 30160 (May 28, 2010) — 14 CFR §§91.225 and 91.227.],
     [Vision 100 — Century of Aviation Reauthorization Act, Public Law 108-176 (2003) — NextGen program statutory basis.],
     [Government Accountability Office, "NextGen Air Transportation System" report series (2010s) — sustained external audit record on schedule slippage and benefit-realization gaps.],
-    [Department of Transportation Office of Inspector General, NextGen audit report series — independent program review documenting cost growth and partial benefit realization.],
+    [Department of Transportation Office of Inspector General (2021), _NextGen Benefits Have Not Kept Pace With Initial Projections_, Report No. AV2021023, March 30, 2021 — FAA's 2017 benefits projection \$113 billion below the JPDO estimate; \$6 billion in benefits realized 2010–2018.],
     [FAA, NextGen Annual Reports (2010 – present) — program-self-report tier; read against the GAO and DOT IG reviews.],
   ),
   quote: [The transition happened. The transition was harder, slower, and more partial than the original plan implied. Both are part of the case.],
@@ -370,7 +370,7 @@
   year: "2005",
   domains-list: ("air traffic management", "legacy modernization", "software transformation"),
   modes-code: "GKH",
-  impact: "A 17,000-line pilot modernization of the Eurocat air-traffic-management system was scoped explicitly to generate safety evidence that an automated transformation was non-distortive of original functionality; that pilot-tier evidence was used to convince customers to accept a system-wide architecture-driven modernization with 100% automated code transformation",
+  impact: "A 17,000-line pilot modernization of the Eurocat air-traffic-management system, run in 2005 to assess transformation validity and settle the target language, opened a program whose safety evidence — that the automated transformation was non-distortive of original functionality — convinced Thales customers to accept a system-wide architecture-driven modernization with 100% automated code transformation",
   kind: "intervention",
   scale: "small",
   evidence-source: "program-report",
@@ -419,7 +419,7 @@
       is large enough that a working automated transformation
       pipeline can be exercised end-to-end and the
       safety-equivalence evidence can be generated against a
-      realistic subset. The pilot was not a feasibility check.
+      realistic subset. The chapter gives the pilot two jobs — assess the validity of the transformation, and settle the target language.
       It was a deliberately designed evidence artifact: prove,
       at small scale and on the actual legacy, that the
       transformation does not distort the function the customer
@@ -684,7 +684,7 @@
   year: "2000 – present",
   domains-list: ("aviation",),
   modes-code: "TN",
-  impact: "From industry pariah (16 aircraft written off, 700+ lives lost, 1970–1999) to spotless passenger safety record since 1999",
+  impact: "From industry pariah (a 1988–1998 loss rate of 4.79 per million departures against United's 0.27, and 228 dead at Guam in 1997) to spotless passenger safety record since 1999",
   diagram: dgm.dgm-korean-air,
   kind: "intervention",
   summary: [
@@ -765,17 +765,17 @@
     ],
   ),
   beats: (
-    "Korean Air's pre-2000 loss rate was seventeen times United's, rooted in cockpit authority gradients",
+    "Korean Air's 1988–1998 loss rate was 4.79 per million departures against United's 0.27; the NTSB named crew monitoring and training failures",
     "Korean Air hired David Greenberg from Delta to mandate English, adapt CRM, and modernize",
-    "Switching to English stripped out Korean honorifics that had silenced first officers and absorbed warnings",
+    "English fluency became the condition of remaining a pilot and Boeing's Alteon ran training in English; the honorific reading is Gladwell's",
     "No fatal passenger accident since the reforms; the 2006 Phoenix Award recognized the turnaround",
     "Cultural legacy is not destiny; locate the binding feature and engineer the medium that carries it",
   ),
   references: (
-    [NTSB, _Aircraft Accident Report: Korean Air Flight 801, Guam_ (2000) — authority gradients as a root cause.],
+    [NTSB (2000), AAR-00/01, _Controlled Flight Into Terrain, Korean Air Flight 801, Boeing 747-300, HL7468, Nimitz Hill, Guam, August 6, 1997_ — the captain's approach failure and the crew's failure to monitor and challenge; contributing, the captain's fatigue and Korean Air's inadequate flight crew training.],
     [Air Transport World Phoenix Award documentation (2006) — recognition of the turnaround.],
     [Gladwell, M. (2008), _Outliers_ — the Korean Air chapter on power distance and the English-language change.],
-    [Helmreich, Wilhelm, Klinect & Merritt (2001) — national culture and CRM adaptation.],
+    [Helmreich, Wilhelm, Klinect & Merritt (2001), "Culture, Error, and Crew Resource Management," in Salas, Bowers & Edens (eds.), _Improving Teamwork in Organizations_ (Erlbaum) — national culture and CRM adaptation.],
     [Korean Air corporate safety reports — the post-2000 accident-free record.],
   ),
   quote: [Korean Air's record before 2000 was changed by an external intervention into cockpit culture, not by criticism of it.],
@@ -1159,7 +1159,7 @@
   year: "1981 – 2008 (TCAS II Version 7.1)",
   domains-list: ("aviation", "automation", "human factors"),
   modes-code: "HKG",
-  impact: "TCAS II — the Traffic Alert and Collision Avoidance System — provides cockpit traffic display and coordinated Resolution Advisories (RAs) between aircraft on conflicting trajectories; mandated on US air-carrier and on most international turbine aircraft, TCAS converted mid-air collision in commercial aviation from a recurring fatality category to a rare event; the 2002 Überlingen mid-air (71 dead) exposed a specific coordination failure mode and drove the 2008 release of TCAS II Version 7.1 with the 'level off, level off' reversal logic",
+  impact: "TCAS II — the Traffic Alert and Collision Avoidance System — provides cockpit traffic display and coordinated Resolution Advisories (RAs) between aircraft on conflicting trajectories; mandated on US air-carrier and on most international turbine aircraft, TCAS converted mid-air collision in commercial aviation from a recurring fatality category to a rare event; the 2002 Überlingen mid-air (71 dead) exposed a specific coordination failure mode and drove the 2008 release of TCAS II Version 7.1, which added RA reversal logic and replaced the ambiguous 'adjust vertical speed' advisory with 'level off, level off'",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -1185,9 +1185,7 @@
     followed an ATC instruction in the opposite direction. The
     BFU investigation identified the human–TCAS–ATC
     coordination failure mode and drove the 2008 release of
-    TCAS II Version 7.1, which added the "level off, level off"
-    reversal logic and clarified the precedence of TCAS RAs over
-    ATC instructions. The hedge survives into the case: TCAS is
+    TCAS II Version 7.1, which added RA reversal logic for the aircraft that does not comply, and replaced the ambiguous "adjust vertical speed" advisory with "level off, level off", and clarified the precedence of TCAS RAs over ATC instructions. The hedge survives into the case: TCAS is
     among the strongest aviation automation interventions in the
     outcome record, and the Überlingen failure mode and its V7.1
     correction are part of the case rather than smoothed away.
@@ -1232,13 +1230,10 @@
       approached on conflicting trajectories at FL360 over
       southern Germany. Both aircraft received coordinated
       TCAS RAs — the 757 to descend, the Tu-154 to climb. The
-      Tu-154 crew received the climb RA and, almost
-      simultaneously, an ATC instruction to descend from a
-      Skyguide controller working alone on degraded console
-      configuration. The Tu-154 crew followed the ATC
+      Tu-154 crew was instructed to descend by a Skyguide controller working alone on a degraded console configuration, began the descent, and seven seconds later received the climb RA. The Tu-154 crew followed the ATC
       instruction; the 757 followed the TCAS RA; both
       aircraft descended into each other. 71 people died,
-      including 52 children on a school trip.#cn()
+      most of them Russian schoolchildren flying from Ufa to a holiday in Spain.#cn()
     ],
     [
       The BFU investigation identified a specific failure mode
@@ -1253,7 +1248,7 @@
       that TCAS RAs take precedence over conflicting ATC
       instructions; ATC procedures were tightened around
       coordination of conflict-resolution between controllers
-      and TCAS; and RTCA / Eurocontrol developed TCAS II Version 7.1 (released 2008), which made two separate changes: it added reversal logic for the case where an aircraft manoeuvres opposite to its resolution advisory, and it replaced the ambiguous "adjust vertical speed, adjust" advisory with the unambiguous "level off, level off", and
+      and TCAS; and RTCA SC-147 with EUROCAE WG-75 developed TCAS II Version 7.1 (released 2008), which made two separate changes: it added reversal logic for the case where an aircraft manoeuvres opposite to its resolution advisory, and it replaced the ambiguous "adjust vertical speed, adjust" advisory with the unambiguous "level off, level off", and
       clarified RA wording and behavior at the boundary.#cn()
     ],
     [
@@ -1275,9 +1270,9 @@
   beats: (
     "TCAS II mandated on US air-carrier (early 1990s) and on most international turbine aircraft (ICAO); RAs coordinated via Mode S data link",
     "Outcome: mid-air collision in TCAS-equipped fleets becomes rare through the 1990s and 2000s",
-    "Überlingen mid-air July 1 2002 (71 dead, including 52 children) — Tu-154 followed ATC, B757 followed TCAS RA; both descended",
+    "Überlingen mid-air July 1 2002 (71 dead, most of them Russian schoolchildren) — Tu-154 followed ATC, B757 followed TCAS RA; both descended",
     "BFU finding: RA precedence over ATC insufficiently clear; ATC single-controller / degraded-console context a systemic failure",
-    "TCAS II Version 7.1 (2008): 'level off, level off' reversal logic; clarified RA precedence over conflicting ATC instructions",
+    "TCAS II Version 7.1 (2008): RA reversal logic (CP112E) plus 'level off, level off' replacing 'adjust vertical speed' (CP115); clarified RA precedence over conflicting ATC instructions",
   ),
   approaches: (
     during: (
@@ -1294,9 +1289,9 @@
   references: (
     [RTCA (2008), DO-185B "Minimum Operational Performance Standards for Traffic Alert and Collision Avoidance System II (TCAS II)" — Version 7.1 with reversal logic.],
     [Bundesstelle für Flugunfalluntersuchung (BFU) (2004), AX001-1-2/02 — Investigation Report on the mid-air collision on 1 July 2002 near Überlingen.],
-    [Eurocontrol (2008 – 2011), ACAS II Bulletin and Programme for the Harmonised Implementation of Satellite Navigation — V7.1 mandate timing in Europe.],
+    [Commission Regulation (EU) No 1332/2011 — ACAS II version 7.1 required in EU airspace from 1 March 2012 for new aeroplanes and from 1 December 2015 for the existing fleet.],
     [Federal Aviation Administration, 14 CFR § 121.356 — TCAS II equipage requirement.],
-    [NTSB / FAA TCAS historical safety studies (1990 – 2010) — outcome record context.],
+    [MIT Lincoln Laboratory / FAA, "Safety analysis of upgrading to TCAS Version 7.1 using the 2008 U.S. Correlated Encounter Model" (2009) — the quantitative basis for the V7.1 change.],
   ),
   quote: [The intervention is not less effective for having a documented coordination edge case; it is more credible because the edge case is named and addressed.],
   quote-source: "Editors' synthesis of the BFU Überlingen report and the V7.1 development record.",
@@ -1351,10 +1346,7 @@
     young-fleet policy, and a strong reporting culture, sustained even
     through rapid growth. The 2000 crash of Flight SQ006, which attempted
     takeoff from a closed, partly-constructed runway at Taipei during a
-    typhoon and killed 83, prompted a sustained institutional
-    self-examination — operational changes, training updates, and public
-    transparency about what had happened — that became a model in the
-    literature on post-accident learning. The airline is the operational
+    typhoon and killed 83, prompted an institutional response — early public acknowledgement, compensation offered ahead of findings, and operational review — that the crisis-communication literature examines, while Singapore's own investigation team formally contested the Taiwan report's apportionment of cause. The airline is the operational
     successor to Korean Air (Case 118): an Asian carrier that engineered its
     safety capability deliberately and sustained the investment as a
     competitive differentiator, not only in response to crisis.
@@ -1401,11 +1393,7 @@
     [
       The 2000 crash of Flight SQ006 — an attempted takeoff from a closed,
       partly-constructed runway at Taipei during Typhoon Xangsane, killing
-      83 — tested the institution. Its response, documented in the Taiwan
-      investigation, became a reference case in post-accident institutional
-      learning: operational changes, training updates, and public
-      transparency about what had happened and why, rather than
-      defensiveness. The test of a safety culture is how it behaves after
+      83 — tested the institution. The Taiwan investigation put all eight probable causes on the weather and the flight crew, and Singapore's own investigation team filed a formal dissent arguing that airport deficiencies had been played down. The airline's own conduct — early acknowledgement, senior management on site, compensation offered ahead of findings — is what the crisis-management literature examines, and it is a narrower claim than a clean institutional-learning record. The test of a safety culture is how it behaves after
       its own accident, and choosing transparency over defensiveness is what
       turned SQ006 from a refutation of the airline's reputation into
       evidence the reporting culture extended to its own failures.#cn()
@@ -1428,15 +1416,14 @@
     "Thin aviation margins push capability investment downward; each budget cycle invites trimming the safety margin",
     "From the 1980s Singapore Airlines invested in CRM, simulators, young fleet, and reporting culture",
     "Framing safety as a competitive differentiator tied to brand gave the spend a commercial rationale",
-    "SQ006's response chose transparency over defensiveness, becoming a reference case in post-accident learning",
+    "SQ006's response is studied in the crisis-communication literature; Singapore's investigation team also formally contested the Taiwan report's causes",
     "Two routes to engineered safety emerge; voluntary investment is harder without crisis as justification",
   ),
   references: (
-    [Aviation Safety Council (Taiwan), _SQ006 Accident Investigation Final Report_ (2002) — the accident and the airline's response.],
-    [Singapore Airlines safety reports (multiple years) — training, fleet, and reporting-culture investment.],
-    [IATA Operational Safety Audit (IOSA) documentation — investment ahead of regulatory minimums (paraphrased).],
-    [Helmreich, Wilhelm, Klinect & Merritt (2001) — national culture and CRM adaptation.],
-    [Weick & Sutcliffe (2007), _Managing the Unexpected_ — sustained high-reliability investment.],
+    [Aviation Safety Council (Taiwan), _Crashed on a Partially Closed Runway during Takeoff, Singapore Airlines Flight 006, Boeing 747-400, 9V-SPK, CKS Airport, Taoyuan, October 31, 2000_ (2002) — the accident, the eight probable causes, and Singapore's dissenting comments at §7.],
+    [Henderson, J. C. (2003), "Communicating in a crisis: flight SQ 006," _Tourism Management_ 24(3):279–287 — the analysis of Singapore Airlines' early crisis response.],
+    [Singapore Airlines, "Singapore Airlines keeps fleet young" (SilverKris/company account) and SIA annual reports — the young-fleet policy in the airline's own words; in-service average fleet age about 8.3 years as of 2026.],
+    [Helmreich, Wilhelm, Klinect & Merritt (2001), "Culture, error, and crew resource management," in Salas, Bowers & Edens (eds.), _Improving Teamwork in Organizations_ — national culture and CRM adaptation.], [Weick & Sutcliffe (2007), _Managing the Unexpected_ — sustained high-reliability investment.],
   ),
   quote: [Singapore Airlines has consistently invested in safety capability ahead of regulatory minimums.],
   quote-source: "Editors' synthesis on Singapore Airlines' sustained safety investment",
@@ -1472,7 +1459,7 @@
     ),
     after: (
       [Hold the investment through periods of rapid growth — the moment the temptation to let capability lag the fleet is strongest — since maintaining it then is what makes the commitment sustained rather than fair-weather.],
-      [Respond to the institution's own accidents with transparency over defensiveness, demonstrating that the reporting culture extends to its own failures and converting a setback into evidence the culture is real.],
+      [Respond to the institution's own accidents by publishing what changed operationally, not only by contesting the apportionment of cause; a reporting culture is credible only when it extends to the institution's own failures.],
       [Anchor the investment to the brand and premium so it survives leadership and budget cycles, supplying the durable justification a voluntary commitment lacks without a crisis to point to.],
     ),
   ),
@@ -1508,7 +1495,7 @@
     response, produced the CFIT Checklist — a structured tool for
     operators to assess their own exposure. The Approach-and-Landing
     Accident Reduction (ALAR) Task Force followed in 1996, producing
-    the ALAR Tool Kit (released 1998) covering the approach phase
+    the ALAR Tool Kit (released 2000) covering the approach phase
     where roughly half of fatal accidents then occurred. The
     institutional momentum from those task forces sat behind the
     eventual Terrain Awareness and Warning System (TAWS) mandates
@@ -1552,7 +1539,7 @@
       The Approach-and-Landing Accident Reduction Task Force followed
       in 1996, scoped to the approach phase, which accounted for
       roughly half of fatal accidents in the analysis window. The
-      ALAR Tool Kit, released in 1998, was the most substantial
+      ALAR Tool Kit, released in 2000, was the most substantial
       deliverable of the entire industry-coordination effort: a
       multi-element package of briefing notes, training aids, video
       content, and risk-assessment instruments covering stabilized
@@ -1563,17 +1550,13 @@
     ],
     [
       The eventual regulatory action — the FAA's TAWS mandate
-      (2002, retrofitting earlier GPWS-equipped aircraft with the
+      (final rule 2000: new-build compliance 2002, retrofit of earlier GPWS-equipped aircraft with the
       newer terrain-database-driven warning system) and the ICAO
       TAWS requirement (effective 2007) — sat downstream of the
       task-force momentum, not upstream of it. CFIT accident rates
       fell sharply through the subsequent decade across both
       commercial transport and corporate aviation; approach-and-
-      landing accidents declined alongside. The before/after pattern
-      is robust across multiple independent operator and regulator
-      datasets, and the case is treated in the FSF's own retrospective
-      literature as one of the discipline's strongest examples of
-      coordinated industry-led intervention.#cn()
+      landing accidents declined alongside. The task forces set an explicit target — a 50 percent reduction in the approach-and- landing accident rate in five years — and the decline that followed ran well past it, though no published analysis isolates the task forces' share of it.#cn()
     ],
     [
       The load-bearing hedge survives into the case. The
@@ -1597,8 +1580,8 @@
   beats: (
     "CFIT was the leading cause of commercial-jet fatalities through the late 1980s — serviceable aircraft, controlled flight, terrain encountered too late to recover",
     "FSF CFIT Task Force (1992) produces the CFIT Checklist — cross-operator self-assessment, distributed without restriction",
-    "FSF ALAR Task Force (1996); ALAR Tool Kit released 1998 covers stabilized approach, runway excursion, monitored approach, crew procedure",
-    "FAA TAWS mandate 2002; ICAO TAWS effective 2007 — regulatory action sits downstream of task-force momentum, not upstream",
+    "FSF ALAR Task Force (1996); task-force report published 1998–99, ALAR Tool Kit released 2000 covering stabilized approach, runway excursion, monitored approach, crew procedure",
+    "FAA TAWS final rule 2000 (new-build 2002, retrofit by 2005); ICAO TAWS effective 2007 — regulatory action sits downstream of task-force momentum, not upstream",
     "CFIT and ALAR accident rates fall sharply over the subsequent decade; hedge preserved — decline is multifactorial (TAWS, training, procedure, fleet turnover)",
   ),
   approaches: (
@@ -1615,9 +1598,9 @@
   ),
   references: (
     [Flight Safety Foundation, "Killers in Aviation: FSF Task Force Presents Facts About Approach-and-landing and Controlled-flight-into-terrain Accidents," _Flight Safety Digest_ (1998–1999).],
-    [Flight Safety Foundation, ALAR Tool Kit (1998) — distributed multi-element package of briefing notes, training aids, and risk-assessment instruments.],
+    [Flight Safety Foundation, ALAR Tool Kit (2000; updated 2010) — distributed multi-element package built on the 34 ALAR Briefing Notes published in _Flight Safety Digest_, August–November 2000.],
     [Khatwa & Helmreich, "Analysis of critical factors during approach and landing in accidents and normal flight," _Flight Safety Digest_ (1998) — the analytical basis of the ALAR Task Force scope.],
-    [FAA, Terrain Awareness and Warning System (TAWS) Final Rule, 14 CFR Part 121 (2000, effective 2002).],
+    [FAA, Terrain Awareness and Warning System (TAWS) Final Rule, 65 FR 16736 (29 March 2000), 14 CFR §§ 91.223, 121.354, 135.154 — new-build compliance 29 March 2002, retrofit by 29 March 2005.],
     [ICAO Annex 6, TAWS requirement (effective 2007) — the international consolidation.],
   ),
   quote: [The deliverable is the cross-operator diagnostic, owned by no single competitor, released without restriction. The mandate consolidates what the field already does.],
@@ -1640,7 +1623,7 @@
   ],
   literature-items: (
     [FSF _Flight Safety Digest_ (1998–1999) — CFIT and ALAR task-force record],
-    [FSF ALAR Tool Kit (1998)],
+    [FSF ALAR Tool Kit (2000)],
     [FAA TAWS Final Rule (2000)],
   ),
   reflection-list: (
