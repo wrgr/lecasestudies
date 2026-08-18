@@ -117,10 +117,26 @@ turn on emphasis. Every confirmed finding below is of the first kind.
    `subobjective *X* (N.N)` with numbers verified against `lens_program/2_*.md`; 3 domain
    renames to v2.1; 2 LENS-competency names corrected; 2 `however`; 1 dangling pointer
    removed. `check-cases.sh`: **191 converted, 0 failures.**
-2. **Six confirmed defects** — the table above. Each needs primary-source confirmation
-   before the rewrite; each is a small edit.
+2. ~~**Six confirmed defects**~~ **DONE** (August 2026). All six verified against primary
+   sources first, then rewritten. Case 155 additionally received the `competing-readings`
+   and `scope-limit` fields (schema added in `lib/case.typ` / `lib/components.typ`).
 3. **Compression-layer audit** — finding 1, eight named cases. Rule: *a summary may
-   compress, it may not assert what the body retracts.*
+   compress, it may not assert what the body retracts.* **PARTIALLY DONE.**
+   - **072 ASSISTments — fixed.** `le-insight` claimed a "pre-specified" heterogeneity
+     finding that the same case's `beats` and pull-quote deny. Internal contradiction, no
+     external source needed.
+   - **175 INPO — fixed, and it was worse than flagged.** `impact:` claimed "No INES-level
+     event at U.S. commercial reactors post-INPO". Davis-Besse (2002) was **officially rated
+     INES Level 3 by the NRC** and transmitted to the IAEA — the NRC's own memo calls it "the
+     most significant rating NRC has made for a reactor since full participation in the INES
+     program began" (ML023570266). Not overstated: false. Corrected to the defensible
+     structural claim — no INES Level 4-or-above accident since Three Mile Island — with
+     Davis-Besse named, the fact that a regulator-mandated inspection rather than peer review
+     found it, and a note that no published evaluation isolates INPO's separate contribution.
+   - **032 and 093 — NOT changed.** Both were cleared by the adversarial gate. 093's `impact:`
+     assigns each figure its own named population and study; 032's caveats are already carried
+     across four fields. The script that flagged them is a heuristic; the gate is the authority.
+   - **Still open: 018, 030, 040, 075.** Each needs source verification before rewrite.
 4. **Editor decisions** — findings 2, 3, 6. These change the framework and the argument,
    not just the prose. Not scriptable, not delegable.
 5. **The remaining ~1,000 leads** — only worth mining after 1–4, and only with the

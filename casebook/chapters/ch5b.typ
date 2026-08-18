@@ -334,6 +334,13 @@
     ),
   ),
   courses: ("LEN 10", "LEN 2", "LEN 8"),
+  competing-readings: (
+    [The cord is the causal agent — set against the reading that the cord is an interface to a staffed response chain, with team leaders on the floor and resourced to answer within the cycle. On this reading the expensive half is the staffing, and imitation fails on a budget line rather than on values.],
+    [Protected authority is the variable — set against the reading that fixed-position stop is an engineering choice that lowers the cost of speaking up, so the design does the work the empowerment is credited with.],
+    [American imitation failed on culture — set against the reading that it failed on structure, because the copied plants lacked the team-leader ratio and the thin buffers that make a guaranteed response possible. Each reading predicts a different thing to check before a transfer.],
+    [A high pull count signals health — set against the reading that pull counts are an input measure Toyota controls and publishes, with no external audit distinguishing real defect signalling from routine minor calls.],
+  ),
+  scope-limit: [The andon is a local, operational control at the work station; it did not and could not surface the design- and organization-level failures of the 2009–10 recall crisis, which the NASA/NHTSA review traced to pedal and floor-mat defects and which Toyota's own president attributed to growth outrunning capability development.],
   scale: "big",
   evidence-source: "practitioner",
   induced-anchor: "4.1",

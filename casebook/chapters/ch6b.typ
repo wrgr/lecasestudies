@@ -383,7 +383,7 @@
   year: "1979 – present",
   domains-list: ("energy",),
   modes-code: "TKG",
-  impact: "No INES-level event at U.S. commercial reactors post-INPO; sustained improvement in INPO/WANO performance indicators across the industry",
+  impact: "No INES Level 4-or-above accident at a U.S. commercial reactor since Three Mile Island; sustained improvement in INPO/WANO performance indicators across the industry",
   diagram: dgm.dgm-inpo,
   kind: "intervention",
   summary: [
@@ -399,7 +399,7 @@
     peer evaluations in which operators from one utility scrutinized
     another's control rooms and records. The pre-TMI culture of complacency
     gave way to mandated vigilance. No U.S. commercial reactor has had a
-    significant INES-level event since.
+    INES Level 4-or-above accident since.
   ],
   sections: (
     // -- Background --
@@ -441,8 +441,13 @@
     // -- The Evidence --
     [
       The post-TMI culture shifted from smugness to mandated vigilance, and
-      U.S. commercial reactors have recorded no significant INES-level
-      event since INPO's founding. Industry performance indicators tracked
+      no U.S. commercial reactor has had an INES Level 4-or-above accident
+      since INPO's founding — though Davis-Besse's 2002 reactor-head
+      corrosion (Case 160) was rated a Level 3 serious incident, and it was a
+      regulator-mandated inspection rather than peer review that found it.
+      INPO operated alongside NRC regulation and the post-Three-Mile-Island
+      design and procedural changes, and no published evaluation isolates its
+      separate contribution. Industry performance indicators tracked
       by INPO and its international counterpart WANO improved steadily and
       broadly across the fleet. The broad, steady improvement across the
       whole fleet — not just the strongest plants — is the signature of a
@@ -466,7 +471,7 @@
     "Three Mile Island exposed an industry where lessons at one plant never reached others",
     "Utilities founded INPO within months on the premise one accident threatened everyone's license",
     "Honest peer review by working operators gave a non-statutory body its enforcement weight",
-    "No significant INES-level event since founding; fleet-wide performance indicators improved broadly across the industry",
+    "No INES Level 4-or-above accident since founding; fleet-wide performance indicators improved broadly across the industry",
     "Shared exposure, regulatory legitimacy, and peer review crossed borders to WANO after Chernobyl",
   ),
   references: (

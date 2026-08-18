@@ -1350,9 +1350,11 @@
   le-insight: [
     ASSISTments is the case in the corpus with the cleanest
     closed-loop evidence architecture for EdTech: cluster RCT,
-    longitudinal follow-through into the next grade, adaptation
-    arm under different deployment conditions, and a pre-specified
-    equity-relevant heterogeneity finding. The case grounds the
+    longitudinal follow-through into the next grade, and an
+    adaptation arm under different deployment conditions. The
+    equity-relevant heterogeneity finding is the exception and is
+    treated as one: it surfaced in a later moderator analysis, was
+    not pre-specified, and is fragile in a nearly all-white sample. The case grounds the
     closed-loop evaluation anchor in EdTech the same way Case 40
     grounds it in team-science training.
   ],

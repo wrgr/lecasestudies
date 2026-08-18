@@ -53,6 +53,13 @@
   leo-anchor: none,      // LEO anchor for course mapping, e.g. "LEO-3, LEO-5"
   coi: none,             // COI disclosure string — renders prominently under the case heading when set
   evidence-flag: none,   // short flag string for weaker-evidence cases (e.g. "journalism-tier", "preprint-tier"); future-validation language is implied
+  competing-readings: (), // 2–4 short items: rival causal readings the record supports and
+                          // no study adjudicates. Admitted only where the rival is citable,
+                          // unadjudicated, predicts transfer failure differently, and changes
+                          // what the reader would do. NOT a place to flag an error instead of
+                          // fixing it — an inaccuracy is corrected in the case, not annotated.
+  scope-limit: none,      // one sentence: what this case does not show — the failure boundary
+                          // of the mechanism it teaches.
 ) = {
   // Quarantine gate: a quarantined case emits nothing at all — no metadata,
   // no body — in any build, so it is absent from every edition and from the
@@ -64,7 +71,7 @@
   // Carries number, title, year, domains, mode codes, kind, and course tags
   // for every case on both the 4-page and legacy paths — so the matrix and
   // domain index can render dynamically across the full corpus.
-  [#metadata((n: number, slug: slug, title: title, year: year, domains: domains-list, modes: modes-code, kind: kind, courses: courses, scale: scale, evidence-source: evidence-source, lens-anchor: lens-anchor, induced-anchor: induced-anchor, leo-anchor: leo-anchor, coi: coi, evidence-flag: evidence-flag, references: references, edition: if main-slugs.contains(slug) { "main" } else { "supplement" })) <caseinfo>]
+  [#metadata((n: number, slug: slug, title: title, year: year, domains: domains-list, modes: modes-code, kind: kind, courses: courses, scale: scale, evidence-source: evidence-source, lens-anchor: lens-anchor, induced-anchor: induced-anchor, leo-anchor: leo-anchor, coi: coi, evidence-flag: evidence-flag, competing-readings: competing-readings, scope-limit: scope-limit, references: references, edition: if main-slugs.contains(slug) { "main" } else { "supplement" })) <caseinfo>]
 
   // Companion build (view "companion"): emit metadata only, no case body.
   // The metadata above is enough for the dynamic appendices (domain index,
@@ -232,6 +239,15 @@
         v(6pt)
         diagram
         v(5pt)
+      }
+      // Competing readings + scope limit sit at the end of the narrative,
+      // before the references — the side of the case where the corpus
+      // already carries its hedges, and off the Lens page, whose tail is
+      // where the page budget binds.
+      if competing-readings.len() > 0 or scope-limit != none {
+        v(5pt)
+        case-readings(competing-readings, limit: scope-limit)
+        v(2pt)
       }
       if quote-in-narrative {
         v(5pt)
