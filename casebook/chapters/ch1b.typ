@@ -419,12 +419,12 @@
   ),
   references: (
     [E. A. Balas & S. A. Boren (2000), _Yearbook of Medical Informatics_ — the ~17-year / ~14% translation figures.],
-    [Z. Morris, S. Wooding & J. Grant, "The answer is 17 years, what is the question," _J. Royal Society of Medicine_ (2011) (quoted).],
+    [Z. S. Morris, S. Wooding & J. Grant, "The answer is 17 years, what is the question: understanding time lags in translational research," _J. Royal Society of Medicine_ 104(12):510–520 (2011) (quoted).],
     [D. Fixsen et al., _Implementation Research: A Synthesis of the Literature_ (2005) — the Active Implementation Frameworks.],
     [G. Aarons et al. (2011), the EPIS framework; L. Damschroder et al. (2009), CFIR.],
     [Cf. medical error as systemic failure (Case 8); Goodell & Kolodner, _Learning Engineering Toolkit_ (2022).],
   ),
-  quote: [The answer is 17 years. What is the question?],
+  quote: [The answer is 17 years, what is the question],
   quote-source: "Morris, Wooding & Grant, J Royal Soc Med, 2011",
   le-insight: [
     The 17-year gap is the structural problem that LENS exists to
@@ -607,8 +607,8 @@
     [Barsuk, Cohen, Feinglass, McGaghie, & Wayne (2009), "Use of simulation-based education to reduce catheter-related bloodstream infections," _Archives of Internal Medicine_ 169(15):1420–1423, doi:10.1001/archinternmed.2009.215.],
     [Cohen, Feinglass, Barsuk, Barnard, O'Donnell, McGaghie, & Wayne (2010), "Cost savings from reduced catheter-related bloodstream infection after simulation-based education for residents in a medical intensive care unit," _Simulation in Healthcare_ 5(2):98–102, doi:10.1097/SIH.0b013e3181bc8304.],
     [Barsuk, McGaghie, Cohen, Balachandran, & Wayne (2009), "Use of simulation-based mastery learning to improve the quality of central venous catheter placement in a medical intensive care unit," _Journal of Hospital Medicine_ 4(7):397–403.],
-    [McGaghie, Issenberg, Cohen, Barsuk, & Wayne (2011), "Does simulation-based medical education with deliberate practice yield better results than traditional clinical education? A meta-analytic comparative review," _Academic Medicine_ 86(6):706–711.],
-    [Department of Veterans Affairs SimLEARN documentation — the operating-program record of the national dissemination effort.],
+    [McGaghie, Issenberg, Cohen, Barsuk, & Wayne (2011), "Does simulation-based medical education with deliberate practice yield better results than traditional clinical medical education? A meta-analytic comparative review of the evidence," _Academic Medicine_ 86(6):706–711.],
+    [Barsuk, Cohen, Nguyen, Mitra, O'Hara, Okuda, Feinglass, Cameron, McGaghie, & Wayne (2016), "Attending physician adherence to a 29-component central venous catheter bundle checklist during simulated procedures," _Critical Care Medicine_ 44(10):1871–1881 — the published record of the train-the-trainer dissemination across 58 Veterans Affairs Medical Centers.],
   ),
   quote: [The standard, not the calendar, governs progression. The trainee practices until they demonstrate competence; the simulator absorbs the cost of the practice.],
   quote-source: "Editors' synthesis of Barsuk et al. (2009).",
@@ -772,11 +772,11 @@
   ),
   references: (
     [Starmer, A. J., Spector, N. D., Srivastava, R., West, D. C., Rosenbluth, G., Allen, A. D., Noble, E. L., Tse, L. L., Dalal, A. K., Keohane, C. A., Lipsitz, S. R., Rothschild, J. M., Wien, M. F., Yoon, C. S., Zigmont, K. R., Wilson, K. M., O'Toole, J. K., Solan, L. G., Aylor, M., Bismilla, Z., Coffey, M., Mahant, S., Blankenburg, R. L., Destino, L. A., Everhart, J. L., Patel, S. J., Bale, J. F., Spackman, J. B., Stevenson, A. T., Calaman, S., Cole, F. S., Balmer, D. F., Hepps, J. H., Lopreiato, J. O., Yu, C. E., Sectish, T. C., \& Landrigan, C. P. (2014). Changes in medical errors after implementation of a handoff program. _New England Journal of Medicine_, 371(19):1803–1812. doi:10.1056/NEJMsa1405556 — the case's primary evaluation.],
-    [Starmer, A. J., et al. (2014). Implementation correspondence and follow-up. _New England Journal of Medicine_ — the published correspondence cautioning against implementing the mnemonic alone.],
-    [Sectish, T. C., et al. (2010). Establishing a multisite education and research project: The I-PASS Study Group. _Academic Medicine_ — the I-PASS Study Group methodology and design rationale.],
+    [Colligan, L., Brick, D., \& Patterson, E. S. (2015). Changes in medical errors with a handoff program. _New England Journal of Medicine_, 372(5):490 — the correspondence cautioning against implementing the mnemonic alone; authors' reply at 372(5):490–491.],
+    [Sectish, T. C., Starmer, A. J., Landrigan, C. P., \& Spector, N. D. (2010). Establishing a multisite education and research project requires leadership, expertise, collaboration, and an important aim. _Pediatrics_, 126(4):619–622 — the I-PASS Study Group methodology and design rationale.],
     [Cohen, M. D., \& Hilligoss, P. B. (2010). The published literature on handoffs in hospitals: deficiencies identified in an extensive review. _Quality and Safety in Health Care_ — the broader handoff-failure-mode literature.],
   ),
-  quote: [Our study design precludes definitively establishing a causal link.],
+  quote: [Our study design precludes definitively establishing a causal link between implementation of the I-PASS Handoff Bundle and improved patient safety.],
   quote-source: "Starmer et al., NEJM 2014.",
   le-insight: [
     I-PASS is the structured-handoff intervention the
@@ -797,7 +797,7 @@
   ],
   literature-items: (
     [Starmer et al. (2014), _NEJM_],
-    [Starmer et al. (2014), I-PASS implementation correspondence],
+    [Colligan, Brick \& Patterson (2015), _NEJM_ correspondence],
     [Sectish et al. (2010), _Academic Medicine_],
   ),
   reflection-list: (
@@ -815,7 +815,7 @@
   year: "2014",
   domains-list: ("nursing education", "clinical simulation", "regulation"),
   modes-code: "GKD",
-  impact: "A longitudinal RCT randomized students across multiple US nursing programs to control, 25%, or 50% simulation substitution for traditional clinical hours; 660+ took the NCLEX with no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates — the number of nursing regulatory boards permitting up to 50% simulation substitution increased more than 20-fold from 2014 to 2022",
+  impact: "A longitudinal RCT randomized students across multiple US nursing programs to control, 25%, or 50% simulation substitution for traditional clinical hours; 660 took the NCLEX with no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates — the number of nursing regulatory boards permitting up to 50% simulation substitution increased more than 20-fold from 2014 to 2022",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -837,7 +837,7 @@
     substitution. Hayden et al. (_Journal of Nursing Regulation_,
     2014) reported no statistically significant differences in
     clinical competency, nursing knowledge, or NCLEX pass rates
-    across the three groups; 660+ participants took the NCLEX. The
+    across the three groups; 660 participants took the NCLEX. The
     follow-up (2023) documents the institutional transfer: the
     number of nursing regulatory boards permitting up to 50%
     substitution increased more than 20-fold from 2014 to 2022 —
@@ -882,8 +882,7 @@
       The headline finding was a null result on the outcome the
       regulators most cared about: no statistically significant
       differences in clinical competency, nursing knowledge, or
-      NCLEX pass rates across the three groups. Six hundred and
-      sixty-plus participants took the NCLEX licensure
+      NCLEX pass rates across the three groups. Six hundred and sixty participants took the NCLEX licensure
       examination, providing the comparison the regulatory
       decision rested on. The longitudinal design followed cohorts
       through their first nursing positions, with comparable
@@ -924,9 +923,9 @@
   ),
   beats: (
     "NCSBN longitudinal RCT — students at multiple US nursing programs randomized to control, 25%, or 50% simulation substitution for traditional clinical hours",
-    "Hayden et al. 2014 (_J Nursing Regulation_): no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates across groups; 660+ took the NCLEX",
+    "Hayden et al. 2014 (_J Nursing Regulation_): no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates across groups; 660 took the NCLEX",
     "Result holds only 'under conditions comparable to those described in the study' (high-quality simulation, trained faculty, structured debriefing)",
-    "Institutional transfer: number of nursing regulatory boards permitting up to 50% substitution increased 20-fold from 2014 to 2022 — single evidence base propagating across the regulatory field",
+    "Institutional transfer: number of nursing regulatory bodies permitting up to 50% substitution in RN programs rose from 1 in 2014 to 23 in 2022 — single evidence base propagating across the regulatory field",
     "Pair with Case 40 (Colorado CTSA team-science) at the cross-domain workforce-intervention layer",
   ),
   approaches: (
@@ -938,7 +937,7 @@
     after: (
       [Carry the qualifying language ("under conditions comparable to those described in the study") into every downstream adoption; the study's null result is conditional on quality standards, not unconditional.],
       [Document the propagation as a transferable institutional pattern: a decentralized regulatory field can move on the strength of a single, well-designed, body-owned study when the outcome measure is the one the regulators already use.],
-      [Treat the 20-fold expansion of board adoption from 2014 to 2022 as evidence of the mechanism of regulatory transfer, not as evidence that 50\% substitution is safe outside the study's quality conditions.],
+      [Treat the rise from 1 nursing regulatory body to 23 between 2014 and 2022 as evidence of the mechanism of regulatory transfer, not as evidence that 50\% substitution is safe outside the study's quality conditions.],
     ),
   ),
   references: (
@@ -975,7 +974,7 @@
   reflection-list: (
     [Identify a decentralized regulatory field in your domain where a substitution or adoption decision rests on whether the new modality preserves capability. What would a NCSBN-class RCT, commissioned from inside the regulatory body, look like — and what would the licensure-aligned outcome measure be?],
     [The result is conditional on quality conditions (high-quality simulation, trained faculty, structured debriefing). What is the analog conditional in your context, and what mechanism would carry the qualifying language into the regulatory adoptions that follow?],
-    [The 20-fold expansion of board adoption is evidence of regulatory transfer, not of safety outside the study's quality conditions. What would you do operationally to ensure the adoptions in your field actually meet the conditions the propagation rests on?],
+    [The rise from 1 nursing regulatory body to 23 is evidence of regulatory transfer, not of safety outside the study's quality conditions. What would you do operationally to ensure the adoptions in your field actually meet the conditions the propagation rests on?],
   ),
   courses: ("LEN 2", "LEN 5", "LEN 7"),
 )
@@ -988,7 +987,7 @@
   year: "2007 – 2009",
   domains-list: ("medical education", "retention", "workforce L&D"),
   modes-code: "HKD",
-  impact: "A multi-institution RCT of urology residents across the US and Canada randomized participants to bolus versus spaced-pattern email delivery of validated study questions; spaced education improved acquisition and retention of medical knowledge, and a follow-up showed the learning benefit persisting for two years",
+  impact: "A multi-institution RCT of 537 urology residents across the US and Canada randomized participants to bolus versus spaced-pattern email delivery of validated study questions; spaced education improved acquisition and retention of medical knowledge but did not raise In-Service Examination scores, and a follow-up showed the learning benefit persisting for two years at a modest effect size",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1003,7 +1002,7 @@
     transfers into the workplace-L&D context of practicing
     medical trainees is a separate empirical question. Kerfoot et
     al. (_Journal of Urology_, 2007) ran the test that closed the
-    loop. A multi-institution RCT randomized urology residents
+    loop. A multi-institution RCT randomized 537 urology residents
     across US and Canadian programs to receive validated study
     questions in either a bolus pattern (concentrated delivery) or
     a spaced pattern (distributed delivery), both via email. The
@@ -1039,25 +1038,19 @@
       randomized controlled trial of urology residents at
       multiple US and Canadian residency programs. Participants
       were randomized to receive validated study questions
-      drawn from the urology in-service examination question pool,
+      drawn from the American Urological Association Self-Assessment Study Program,
       delivered by email, in either a bolus pattern (concentrated
       delivery over a short window) or a spaced pattern
       (distributed delivery across a longer window). Outcomes
-      were knowledge acquisition (immediate post-test) and
-      retention (delayed post-test), measured against the same
-      validated question pool the delivery drew from.#cn()
+      were a 32-item online test taken 1 to 14 weeks after the spaced program ended, and the November 2005 Urology In-Service Examination.#cn()
     ],
     [
       The result was direct. The spaced-education condition
       improved acquisition and retention of medical knowledge
       against the bolus comparison. The intervention and the
-      measurement formed a tight closed loop: the validated
-      questions delivered are the same content the post-test
-      drew from, the email delivery is the manipulation, and the
-      knowledge-outcome measure is the institution's own
-      in-service question pool. The 2009 follow-up (Kerfoot,
+      measurement formed a tight closed loop on the delivered questions: the spaced cohort scored higher on the staggered online tests, and its scores held steady while the bolus cohort's declined. The gain did not carry over to the In-Service Examination. The 2009 follow-up (Kerfoot,
       _Journal of Urology_, 181:2671) reported a separate
-      analysis with the same residents and documented that the
+      analysis of the 147 residents still in training who retested and documented that the
       learning benefit persisted for two years — a duration that
       is rare in the workplace-L&D RCT literature.#cn()
     ],
@@ -1117,7 +1110,7 @@
     [Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., \& Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. _Psychological Bulletin_, 132(3):354–380 — the basic-literature spacing-effect review the workplace-L&D RCT sits against.],
     [Settles, B., \& Meeder, B. (2016). A trainable spaced repetition model for language learning. _Proceedings of ACL 2016_, 1848–1858 — Duolingo half-life regression (Case 69), the operational deployment companion.],
   ),
-  quote: [The learning benefit persisted for two years.],
+  quote: [On-line spaced education can generate improvements in learning that are retained 2 years later.],
   quote-source: "Kerfoot, Journal of Urology 2009 follow-up.",
   le-insight: [
     Kerfoot et al. is the methodologically clean small-tier
@@ -1162,7 +1155,7 @@
   year: "2023",
   domains-list: ("global health", "HIV care", "training-modality comparison", "Sub-Saharan Africa"),
   modes-code: "KND",
-  impact: "Across 16 PEPFAR-supported Sub-Saharan African countries, pre/post knowledge and self-confidence assessments showed mean increases across all training modalities — in-person (pre-COVID), virtual, and blended — when pandemic disruption forced a delivery-mode switch; the L1–L2 limitation is explicit and the L3/L4 question remains open",
+  impact: "Across 16 PEPFAR-supported Sub-Saharan African countries, pre/post knowledge and self-confidence assessments showed mean increases across all training modalities — in-person (pre-COVID), virtual, and blended — when pandemic disruption forced a delivery-mode switch, with the in-person gains significantly larger and the online formats reaching more women; the L1–L2 limitation is explicit and the L3/L4 question remains open",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1202,9 +1195,7 @@
       capability — clinicians and frontline workers trained on
       current HIV diagnosis, treatment, and prevention
       protocols — is one of its load-bearing deliverables.
-      COVID disruption forced a delivery-mode switch in 2020
-      across countries, from in-person training to virtual and
-      blended modalities, before any of the evidence base on
+      COVID disruption halted in-person training in March 2020 and forced a switch to virtual and blended delivery by May 2021, before any of the evidence base on
       modality equivalence had been built for this
       workforce.#cn()
     ],
@@ -1228,8 +1219,7 @@
     [
       The honest framing the case must carry into print is the
       Kirkpatrick limitation. The study's outcomes are
-      knowledge and self-rated confidence — Level 1
-      (reaction and confidence) and Level 2 (learning) in the Kirkpatrick
+      knowledge and self-rated confidence — Level 1 (reaction) and Level 2 (learning, which covers confidence) in the Kirkpatrick
       framework (Case 79). It is not Level 3 (behavior change
       on the job — whether the clinicians actually changed
       practice) and it is not Level 4 (results — whether
@@ -1257,9 +1247,7 @@
       cluster (Cases 79, 65, 83, 70) and the non-US/UK/EU
       cluster (Cases 93). The subobjective *Judgment under
       inadequate evidence* (4.4) is exercised: the study is the
-      strongest evidence the field has for modality
-      equivalence in this context, and it does not establish
-      L3 / L4 outcomes. Future validation is ongoing.
+      strongest evidence the field has on modality choice in this context, it found the in-person gains larger, and it does not establish L3 / L4 outcomes. Future validation is ongoing.
     ],
   ),
   beats: (
@@ -1277,13 +1265,13 @@
     ),
     after: (
       [Pair with Case 93 (SkillsFuture) as the workforce-capability counterparts at national- and multi-country scale; together they teach what L&D measurement looks like in non-US/UK/EU settings with the evidence-tier honesty intact.],
-      [Use the subobjective *Judgment under inadequate evidence* (4.4): the study is the strongest evidence the field has for modality equivalence in this context, and the practitioner has to decide modality policy on L1–L2 evidence while L3/L4 evidence develops.],
+      [Use the subobjective *Judgment under inadequate evidence* (4.4): the study is the strongest evidence the field has on modality choice in this context, and the practitioner has to trade larger in-person gains against wider online reach on L1–L2 evidence while L3/L4 evidence develops.],
       [Carry the preprint-tier flag honestly: the medRxiv preprint and the PMC published article are both citable; future validation requires confirmatory replication and L3/L4 outcome measurement.],
     ),
   ),
   references: (
-    ["Comparing in-person, blended and virtual training interventions; a real-world evaluation of HIV capacity building programs in 16 countries in sub-Saharan Africa," medRxiv 2023.02.08.23285641 (preprint) → PMC10365303 (published).],
-    [PEPFAR program documentation — workforce-capability training as a load-bearing deliverable across Sub-Saharan African deployment countries.],
+    [Kiguli-Malwadde, E., Forster, M., Eliaz, A., et al. (2023). "Comparing in-person, blended and virtual training interventions; a real-world evaluation of HIV capacity building programs in 16 countries in sub-Saharan Africa," _PLOS Global Public Health_ 3(7):e0001654, doi:10.1371/journal.pgph.0001654 — the published version of medRxiv 2023.02.08.23285641.],
+    [The evaluated program is STRIPE HIV, led by the African Forum for Research and Education in Health (AFREhealth) and the University of California, San Francisco, and funded by HRSA through PEPFAR — named in the study's program description and funding statement.],
     [Kirkpatrick & Kirkpatrick (2006), _Evaluating Training Programs_ — the chain-of-evidence framework the L1–L2 limitation references (paired Case 79).],
     [Blume et al. (2010), _Journal of Management_ 36(4):1065–1105 — the meta-analytic transfer finding the L3 question references (paired Case 65).],
   ),
@@ -1318,7 +1306,7 @@
   reflection-list: (
     [Identify a training program in your context that was forced to switch modality under disruption (COVID, budget constraint, geographic dispersion). What evidence would you have needed at the time to make the modality decision well, and at which Kirkpatrick level was the available evidence?],
     [Specify the L3 / L4 measurement architecture you would build to extend the PEPFAR study into behavior-change and patient-outcome evidence — what data sources, what cadence, what linkage between training cohort and clinical outcomes.],
-    [The case is preprint-tier: both the medRxiv preprint and the PMC published version are citable. What additional confirmatory evidence — replication in different country sets, L3 / L4 follow-up studies, peer-reviewed meta-analysis — would you require before treating modality equivalence as a settled question for program-design decisions?],
+    [The case is preprint-tier: both the medRxiv preprint and the PMC published version are citable. What additional confirmatory evidence — replication in different country sets, L3 / L4 follow-up studies, peer-reviewed meta-analysis — would you require before treating the modality trade-off as settled for program-design decisions?],
   ),
   courses: ("LEN 2", "LEN 4", "LEN 7"),
 )
@@ -1615,7 +1603,7 @@
   year: "2024 – 2025",
   domains-list: ("healthcare", "patient safety", "human factors"),
   modes-code: "HKN",
-  impact: "A clinical adaptation of the aviation 'sterile cockpit' rule — no non-essential communication or interruptions during high-workload phases — applied to ward rounds and handoffs; the published evaluation reports reductions in interruption frequency and improvements in information-transfer measures during the protected window, on a single-unit single-study evidence base whose generalization the authors are explicit about",
+  impact: "A clinical adaptation of the aviation 'sterile cockpit' rule — no non-essential communication or interruptions during high-workload phases — applied to surgical ward rounds; across 71 control and 70 intervention rounds the published evaluation reports documentation accuracy rising from 63.6% to 77.9%, higher patient satisfaction, and fewer interruptions, at no additional time cost, on a single-ward single-study evidence base whose generalization the authors are explicit about",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1624,29 +1612,18 @@
   leo-anchor: "LEO-4, LEO-5",
   summary: [
     The "sterile cockpit" rule in commercial aviation (FAR
-    121.542, codified 1981) prohibits non-essential communication
-    among flight crew during taxi, takeoff, landing, and any
-    flight phase below 10,000 feet — the high-workload, high-
+    121.542, codified 1981) prohibits non-essential activity among flight crew during taxi, takeoff, landing, and any other flight operation below 10,000 feet except cruise — the high-workload, high-
     consequence windows when distraction is most likely to
     produce error. The principle has been adapted across other
     high-consequence domains; recent work in clinical care has
-    extended the principle to ward rounds and clinical handoff,
+    extended the principle to ward rounds,
     where interruption-driven information loss is a documented
     contributor to patient-safety events. Treloar et al. (2025),
     in _World Journal of Surgery_, describe a structured
-    intervention on a single surgical ward: a defined window
-    during the handoff
-    or round during which non-essential pages, conversations,
-    and interruptions are prohibited and information transfer
-    is the protected workflow. The evaluation reports
-    reductions in interruption frequency and improvements in
-    information-transfer measures during the protected window.
+    intervention on a single surgical ward: roles allocated before each patient (leader, assessor, scribe), no interruptions except medical emergencies, one speaker at a time, nursing and allied health invited in, and a checkback in which the scribe reads the documented plan back. Across 71 control and 70 intervention rounds, documentation accuracy rose from 63.6% to 77.9% and patient satisfaction rose, with interruptions and parallel conversations falling.
     The hedges that survive into the case verbatim: this is a
     single-unit single-study evidence base, the
-    interruption-reduction effect is direct while the patient-
-    outcome inference rests on the established link between
-    handoff quality and downstream events rather than on
-    direct outcome measurement in this study, and the
+    documentation and satisfaction effects are direct while any inference to adverse events rests on the established link between round quality and downstream harm rather than on direct measurement in this study, and the
     sustainability of the protected-window discipline beyond
     the study period is not yet established. The case is the
     cross-domain adaptation case: an aviation safety-culture
@@ -1664,7 +1641,7 @@
       to the error chain. The rule is operationally simple:
       below 10,000 feet, in taxi, takeoff, approach, and
       landing, only operationally necessary communication is
-      permitted in the cockpit. The principle has been
+      permitted in the cockpit, cruise flight excepted. The principle has been
       extended in safety-culture practice to other high-
       workload phases and operations.#cn()
     ],
@@ -1684,25 +1661,10 @@
     ],
     [
       Treloar et al. (2025) describe a
-      structured intervention on a surgical ward. A defined
-      window during the handoff or round is designated as
-      protected; non-essential pages are deferred, side
-      conversations are prohibited, and the staff conducting
-      the handoff are made unavailable for non-emergent
-      interruption during the window. The intervention
-      includes the workflow design (who is responsible for
-      triaging pages, how emergent interruptions are
-      preserved, how the window is signaled and ended) as
-      well as the cultural commitment to honor it. The
-      evaluation measured interruption frequency during the
-      protected window and information-transfer quality
-      against baseline.#cn()
+      structured intervention on a surgical ward. Rounds were audio-visually recorded, 71 conducted normally and 70 under the sterile-cockpit rules: roles allocated before each patient, no interruptions except medical emergencies, no parallel conversations, nursing and allied health invited to contribute, and a closing checkback in which the scribe repeats the documented plan verbatim. The primary outcomes were accuracy of documentation, scored by blinded senior surgeons against the recorded speech, and patient satisfaction.#cn()
     ],
     [
-      The published outcomes report reductions in
-      interruption frequency during the protected window and
-      improvements in information-transfer measures during
-      that window. The structural learning the case carries
+      The sterile-cockpit rounds documented case notes more accurately (77.9% vs. 63.6%), drew higher patient satisfaction, brought nurses to the bedside more often (68% vs. 45%), and cut interruptions and parallel conversations — with no additional time taken. The structural learning the case carries
       is the adaptation discipline: an aviation safety-
       culture rule, with its specific operational scoping
       (below 10,000 feet, defined permitted communication),
@@ -1718,17 +1680,8 @@
     ],
     [
       The hedges have to survive verbatim. This is a single-
-      unit single-study evidence base; replication across
-      units and settings is the natural next step the
-      authors identify, and the case should not be
-      generalized beyond a strong structural argument until
-      that replication is in the literature. The
-      interruption-reduction effect is direct; the inference
-      that fewer interruptions and better information
-      transfer reduce downstream patient-safety events
-      depends on the established link in the handoff-
-      quality literature rather than on direct patient-
-      outcome measurement in this study. The sustainability
+      unit single-study evidence base, and the authors name the Hawthorne effect and the impossibility of randomising ward rounds as limits on it; the case should not be generalized beyond a strong structural argument until multi-site replication is in the literature. The
+      documentation-accuracy and satisfaction effects are direct; the inference that better-documented rounds reduce downstream patient-safety events depends on the established link in the round- and handoff- quality literature rather than on adverse-event measurement in this study. The sustainability
       of the protected-window discipline beyond the study
       period is not yet established — the operational cost
       of maintaining the workflow design over the long term
@@ -1740,8 +1693,8 @@
   beats: (
     "Aviation sterile cockpit (FAR 121.542, 1981) — no non-essential communication below 10,000 ft; structural template for clinical adaptation",
     "Clinical handoff and ward rounds carry analogous interruption-driven information loss; workflow context as design variable",
-    "PMC12515027 intervention: defined protected window with operational scoping (triage responsibility, permitted interruption classes, signaling)",
-    "Reported outcomes: reduced interruption frequency and improved information-transfer measures during the protected window",
+    "Treloar et al. 2025: allocated roles, no interruptions except emergencies, one speaker at a time, nursing/allied health invited, checkback of the plan",
+    "Reported outcomes: documentation accuracy 63.6% to 77.9%, higher patient satisfaction, nurse presence 45% to 68%, fewer interruptions, no extra time",
     "Hedges: single-unit single-study evidence; patient-outcome inference via established handoff-quality link, not direct measurement; sustainability not yet established",
   ),
   approaches: (
@@ -1770,9 +1723,7 @@
     aviation safety-culture rule, carried into clinical care
     with its operational scoping translated and its cultural
     half preserved. The single-unit evidence is direct on
-    interruption frequency and information transfer; the
-    patient-outcome inference rests on the established
-    handoff-quality link, and the multi-site replication is the
+    documentation accuracy and patient satisfaction; the adverse-event inference rests on the established round-quality link, and the multi-site replication is the
     explicit next deliverable.
   ],
   lens-approach: [
@@ -1803,7 +1754,7 @@
   year: "2023 – present",
   domains-list: ("healthcare", "tech"),
   modes-code: "HD",
-  impact: "Documented cases of clinicians using LLMs that produce hallucinated citations, fabricated dosages, and fictitious clinical guidelines",
+  impact: "Evaluations of LLMs on medical tasks document fabricated citations — 47% of generated references invented — and drug-information answers judged safe and complete in 13 of 50 cases",
   diagram: dgm.dgm-compare(
     "tone",
     "identical",
@@ -1867,17 +1818,12 @@
     ],
     // -- Early Evidence --
     [
-      Early case reports suggest that clinicians who would carefully check
-      a colleague's recommendation accept LLM output less critically,
-      precisely because it reads so authoritatively. JAMA editorials and
-      reviews through 2023–2025 have repeatedly flagged the absence of an
-      established verification practice as the central risk of clinical LLM
-      use — the concern is not that the model errs but that the practice for
+      The WHO's 2024 guidance on large multi-modal models names the
+      mechanism directly: the models "can also encourage 'automation
+      bias' by health care professionals and patients, whereby errors
+      are overlooked that would otherwise have been identified." The gap is not in the documentation of errors but in practice: no established routine for verifying model output stands between the model and the clinician at the moment of use — the concern is not that the model errs but that the practice for
       catching its errors at the moment of use has not yet been defined or
-      taught. Through 2025 the pattern held: evaluations across successive
-      frontier models continued to find hallucination the most frequent
-      error type, even as clinical adoption ran well ahead of any settled
-      regulatory framework.#cn()
+      taught. Through 2025 the pattern held: pharmacists comparing ChatGPT against a drug information center measured an overall accuracy rate of 50%, even as clinical adoption ran well ahead of any settled regulatory framework.#cn()
     ],
     // -- Open Problems --
     [
@@ -1895,7 +1841,7 @@
     "Clinicians adopted ChatGPT immediately at point of care without guidelines or institutional gate",
     "Fabricated citations, hallucinated dosages, and fictitious guidelines recur across the documented literature",
     "Whether clinicians can develop verification routines the model's fluent confidence actively discourages",
-    "Early reports show LLM output accepted less critically than colleague recommendations would be",
+    "WHO 2024 guidance warns large multi-modal models encourage automation bias, with errors overlooked that would otherwise be caught",
     "Routine clinical verification practice analogous to bibliographic discipline remains to be defined",
   ),
   approaches: (
@@ -1911,11 +1857,11 @@
     ),
   ),
   references: (
-    [JAMA editorials on LLM integration into clinical practice (2023–2024) — the hallucination/verification problem (synthesized).],
-    [Sallam (2023), "ChatGPT Utility in Healthcare Education, Research, and Practice" — documented benefits and risks.],
-    [Case reports of LLM hallucinated citations and dosages in clinical and academic use (2023–2024).],
-    [WHO ethical guidance on AI for health (2024) — verification and oversight requirements.],
-    [Wachter & Brynjolfsson (2023), _JAMA_ — generative AI in health care.],
+    [Morath, B., Chiriac, U., Jaszkowski, E., et al. (2024). \"Performance and risks of ChatGPT used in drug information: an exploratory real-world analysis,\" _European Journal of Hospital Pharmacy_ 31(6):491–497 — only 13 of 50 answers correct and complete enough to act on without risk of harm.],
+    [Sallam, M. (2023). "ChatGPT Utility in Healthcare Education, Research, and Practice: Systematic Review on the Promising Perspectives and Valid Concerns," _Healthcare_ 11(6):887 — 60 records reviewed; benefits cited in 85%, with the accuracy and citation concerns alongside.],
+    [Bhattacharyya, M., Miller, V. M., Bhattacharyya, D., \& Miller, L. E. (2023). \"High Rates of Fabricated and Inaccurate References in ChatGPT-Generated Medical Content,\" _Cureus_ 15(5):e39238 — 47% of 115 generated references fabricated.],
+    [World Health Organization (2024). _Ethics and Governance of Artificial Intelligence for Health: Guidance on Large Multi-Modal Models_, 18 January 2024 — names automation bias by health care professionals and the risk of false or inaccurate output.],
+    [Wachter, R. M., & Brynjolfsson, E. (2024). \"Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?\" _JAMA_ 331(1):65–69, doi:10.1001/jama.2023.25054 — genAI adoption and the productivity paradox in health care.],
   ),
   quote: [LLMs produce hallucinations indistinguishable in tone from accurate information, and clinicians have not yet developed the practice of routine verification.],
   quote-source: "Editors' synthesis of JAMA editorials on LLM clinical use (2023–2024)",
@@ -1944,9 +1890,9 @@
     clinical workflow already in use.
   ],
   literature-items: (
-    [JAMA editorials on LLM clinical use],
+    [Morath et al. (2024), _Eur J Hosp Pharm_ — ChatGPT drug-information risk],
     [Sallam (2023)],
-    [Wachter & Brynjolfsson (2023), JAMA on generative AI in health care],
+    [Wachter & Brynjolfsson (2024), _JAMA_ 331(1):65–69],
   ),
   reflection-list: (
     [Identify a workflow in your domain currently being augmented by LLMs. What is the verification practice — and does it exist at the moment of use, or only after?],
@@ -4259,9 +4205,7 @@
   ),
   kind: "frontier",
   summary: [
-    DeepMind's AlphaFold (2020) and AlphaFold 2 (2021) substantially solved
-    the half-century-old protein-structure prediction problem in
-    computational biology. The publicly released AlphaFold Protein
+    DeepMind's AlphaFold 2 substantially solved the half-century-old protein-structure prediction problem in computational biology — demonstrated at CASP14 in November 2020, published in 2021. The publicly released AlphaFold Protein
     Structure Database now contains predicted structures for more than 200
     million proteins — essentially the entire known protein universe — and
     has been integrated into structural-biology and drug-discovery
@@ -4287,9 +4231,7 @@
     ],
     // -- What Is Emerging --
     [
-      DeepMind's AlphaFold (2020) and AlphaFold 2 (2021) substantially
-      solved the problem, predicting structures at accuracies rivaling
-      experiment. The publicly released AlphaFold Protein Structure
+      DeepMind's AlphaFold 2 substantially solved the problem at CASP14 in November 2020, predicting structures at accuracies rivaling experiment. The publicly released AlphaFold Protein Structure
       Database now holds predicted structures for more than 200 million
       proteins — close to the entire known protein universe — and has been
       folded into research workflows worldwide, so the benefit arrived not
@@ -4363,13 +4305,13 @@
   references: (
     [Jumper et al. (2021), "Highly accurate protein structure prediction with AlphaFold," _Nature_ — the method and accuracy.],
     [Varadi et al. (2024), "AlphaFold Protein Structure Database in 2024," _Nucleic Acids Research_ — the 200M+ structures and open release.],
-    [Moult, J. (CASP organizer) commentary on AlphaFold2 (2020) — the benchmark and the achievement (paraphrased).],
+    [CASP14 press release, Protein Structure Prediction Center, 30 November 2020 — the benchmark result and Moult's statement.],
     [CASP benchmark documentation — the decades-long agreed evaluation.],
-    [Hassabis (DeepMind) public commentary — the open-release governance decision.],
+    [AlphaFold 3 repository terms of use and prohibited-use policy (Google DeepMind, November 2024) — the open-release governance decision as actually written.],
     [Abramson et al. (2024), "Accurate structure prediction of biomolecular interactions with AlphaFold 3," _Nature_; and the 2024 Nobel Prize in Chemistry (Hassabis & Jumper) — the extension to complexes and the later code release.],
   ),
-  quote: [This will be one of the most important achievements in AI in the past decade.],
-  quote-source: "Paraphrasing John Moult (organizer of the CASP benchmark) on AlphaFold2, 2020",
+  quote: [We have been stuck on this one problem — how do proteins fold up — for nearly 50 years. To see DeepMind produce a solution for this is a very special moment.],
+  quote-source: "John Moult, Co-founder and Chair of CASP, on the CASP14 result, 30 November 2020",
   le-insight: [
     AlphaFold is the strongest positive AI case in the dataset. The
     technical achievement is real. The conditions that made the
@@ -4409,7 +4351,7 @@
   year: "2020",
   domains-list: ("healthcare", "medical imaging", "machine learning"),
   modes-code: "TKD",
-  impact: "McKinney et al. 2020 Nature paper reported a deep-learning mammography screening system outperforming radiologists on retrospective UK and U.S. screening datasets, with reductions in false-positives (5.7 percentage points in the U.S. set, 1.2 in the UK set) and false-negatives (9.4 and 2.7 percentage points respectively); Haibe-Kains et al. October 2020 Nature comment critiqued the paper for failing to release code and trained models, arguing that reproducibility could not be assessed and that screening-comparison claims required deployment-grade evidence",
+  impact: "McKinney et al. 2020 Nature paper reported a deep-learning mammography screening system outperforming radiologists on retrospective UK and U.S. screening datasets, with reductions in false-positives (5.7 percentage points in the U.S. set, 1.2 in the UK set) and false-negatives (9.4 and 2.7 percentage points respectively); Haibe-Kains et al. October 2020 Nature comment critiqued the paper for failing to release code and trained models, arguing that the missing methods and code undermine the study's scientific value and stop other groups from prospectively validating the system",
   kind: "frontier",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -4431,12 +4373,7 @@
     "Transparency and reproducibility in artificial intelligence"
     critiqued the McKinney paper for failing to release code,
     trained models, or sufficient methodological detail to
-    permit independent reproduction. The load-bearing hedge the
-    Haibe-Kains comment delivers is that a large fraction of the
-    methodology was not reproducible, and the screening-comparison
-    framing the original paper offered has been refined by
-    subsequent deployment evidence rather than confirmed at the
-    deployment scale the headline implied. The case pairs with
+    permit independent reproduction. The load-bearing hedge the Haibe-Kains comment delivers is that the lack of detailed methods and computer code undermines the study's scientific value. The screening-comparison framing the original paper offered has since been refined by deployment evidence rather than confirmed at the deployment scale the headline implied. The case pairs with
     Case 35 (Radiology AI Miscalibration), Case 5 (Epic
     Sepsis), and Case 26 (Pulse oximetry).
   ],
@@ -4446,9 +4383,7 @@
       in _Nature_ — a top-tier venue and an unusually high-
       profile publication for a deep-learning medical-imaging
       study. The work was a collaboration across Google Health,
-      DeepMind, and clinical partners at Cancer Research UK
-      Imperial Centre, Northwestern University, the Royal Surrey
-      County Hospital, and the National Cancer Institute. The
+      DeepMind, and clinical partners at Cancer Research UK Imperial Centre, Northwestern Medicine, the Royal Surrey County Hospital, and the University of Cambridge. The
       retrospective evaluation used UK and U.S. screening
       datasets and compared the AI system's outputs against
       single-reader and double-reader radiologist performance.
@@ -4489,10 +4424,7 @@
       the McKinney paper had not released code, had not released
       trained models, and had not provided sufficient
       methodological detail to permit independent reproduction.
-      The comment was specific: a large fraction of the
-      methodology was not reproducible from the published
-      paper, and the screening-comparison claim could not be
-      independently validated. The comment did not allege error
+      The comment was specific: the hyperparameters of the three networks, the augmentation pipeline and the training pipeline were not documented well enough for another group to rebuild the system. The comment did not allege error
       in the paper; it argued that reproducibility had not been
       established.#cn()
     ],
@@ -4522,13 +4454,10 @@
       subsequent five years of deployment evidence on AI-assisted
       breast cancer screening have refined the screening-
       comparison framing — most decisively the randomized MASAI
-      trial in Sweden (over 100,000 women; interim results in
-      _Lancet Oncology_ 2023, final results 2025), which found
+      trial in Sweden (105,934 women; interim safety results in _Lancet Oncology_ 2023, screening-performance results in _Lancet Digital Health_ 2025, final analysis 2026), which found
       AI-supported reading non-inferior to standard double reading
       while cutting radiologist workload by roughly 44 percent and
-      detecting more cancers. That is the deployment-grade evidence
-      the Haibe-Kains critique demanded — vindicating the demand
-      itself rather than the original retrospective paper — even as
+      detecting more cancers. That is the prospective validation the Haibe-Kains critique said the missing code and methods put out of reach — vindicating the demand rather than the original paper — even as
       prospective evaluations have shown benefits in some settings
       and not in others, and the
       operational variables the retrospective comparison did not
@@ -4544,7 +4473,7 @@
     "McKinney et al. Nature Jan 1 2020: deep-learning mammography reduces false-positives 5.7 pp (US) / 1.2 pp (UK), false-negatives 9.4 / 2.7 pp vs radiologists",
     "Press framing: \"AI outperforms radiologists\"; paper's careful claims do not carry the framing's deployment implications",
     "Haibe-Kains et al. Nature Oct 14 2020 comment: code not released, models not released, methodology not reproducible from publication",
-    "Comment does not allege error; argues reproducibility not established; large fraction of methodology not independently verifiable",
+    "Comment does not allege error; argues reproducibility not established; hyperparameters, augmentation and training pipelines undocumented",
     "Pair with Case 35 (Radiology AI miscalibration), Case 5 (Epic Sepsis), Case 26 (pulse oximetry population heterogeneity)",
   ),
   approaches: (
@@ -4565,7 +4494,7 @@
     [McKinney et al. (2020), reply to Haibe-Kains et al., _Nature_ 586:E17–E18 — the developers' response on the reproducibility-infrastructure question.],
     [Freeman, K., Geppert, J., Stinton, C., Todkill, D., Johnson, S., Clarke, A., & Taylor-Phillips, S. (2021), "Use of artificial intelligence for image analysis in breast cancer screening programmes: systematic review of test accuracy," _BMJ_ 374:n1872 — independent systematic review of subsequent AI-screening-deployment evidence.],
   ),
-  quote: [A large fraction of the methodology was not reproducible from the published paper, and the screening-comparison framing has been refined by subsequent deployment evidence rather than confirmed at the deployment scale the headline implied.],
+  quote: [The lack of detailed methods and computer code undermines the study's scientific value, and the screening-comparison framing has been refined by subsequent deployment evidence rather than confirmed at the deployment scale the headline implied.],
   quote-source: "Editors' synthesis of the McKinney et al. (2020) and Haibe-Kains et al. (2020) Nature exchange.",
   le-insight: [
     DeepMind Mammography is the verification-as-deployment-event
@@ -4621,9 +4550,7 @@
   summary: [
     Isotretinoin is a highly effective acne medication and a known
     teratogen: fetal exposure causes severe birth defects. The FDA
-    has required risk-management programs since the 1980s; in 2006
-    the agency replaced the prior SMART program with iPLEDGE — a
-    formal Risk Evaluation and Mitigation Strategy (REMS) requiring
+    has required risk-management programs since the 1980s; in 2006 the agency replaced the prior SMART program with iPLEDGE, later approved as a Risk Evaluation and Mitigation Strategy (REMS), requiring
     pregnancy testing, two contraception methods (or documented
     abstinence), and pharmacy lockout authorization before each
     dispense. The case is the productive counterpoint to SUBSAFE
@@ -4634,9 +4561,7 @@
     (_J Am Acad Dermatol_, 2011; n=8,344 patients across 9,912
     treatment courses) found 29 fetal exposures and concluded
     "no evidence that iPLEDGE significantly decreased the risk of
-    fetal exposure" compared with the prior program. The broader
-    literature reports approximately 150 isotretinoin-exposed
-    pregnancies continue annually in the US despite the program,
+    fetal exposure" compared with the prior program. Collins et al. (2014) put roughly 150 isotretinoin-exposed pregnancies a year in the US despite the program; FDA adverse-event reports give 218 to 310 a year after 2011,
     with non-adherence — missed pills, inconsistent condom use —
     the documented driver. The teaching point is that an
     authorization mechanism without adherence support does not
@@ -4651,10 +4576,7 @@
       required some form of risk-management program around its
       prescribing since the late 1980s, evolving through pregnancy
       testing requirements, contraception counseling, and structured
-      enrollment programs. iPLEDGE, introduced in 2006, was the
-      first to use the formal Risk Evaluation and Mitigation
-      Strategy (REMS) architecture and to require pharmacy
-      lockout: no authorization, no dispense.#cn()
+      enrollment programs. iPLEDGE, introduced in 2006, was the first to require pharmacy lockout — no authorization, no dispense — and was folded into the Risk Evaluation and Mitigation Strategy (REMS) architecture Congress created in 2007.#cn()
     ],
     [
       The mechanism is what the case turns on. iPLEDGE requires the
@@ -4672,15 +4594,10 @@
     [
       The measured outcome diverges sharply. Shin et al.
       (_Journal of the American Academy of Dermatology_, 2011)
-      studied 8,344 Kaiser Permanente patients across 9,912
-      isotretinoin treatment courses in the iPLEDGE era and
-      identified 29 fetal exposures. The paper's conclusion is the
+      studied 8,344 Kaiser Permanente patients across 9,912 isotretinoin treatment courses from March 2004 to February 2008, spanning both programs, and identified 29 fetal exposures — a rate that fell from 3.11 to 2.67 per 1000 courses after iPLEDGE (P = .69). The paper's conclusion is the
       load-bearing sentence: "no evidence that iPLEDGE
       significantly decreased the risk of fetal exposure" relative
-      to the prior SMART program. The broader literature
-      consistently reports that approximately 150
-      isotretinoin-exposed pregnancies continue annually in the
-      United States despite the program operating as designed. The
+      to the prior SMART program. Collins et al. (2014) report approximately 150 isotretinoin-exposed pregnancies a year in the United States despite the program operating as designed; FDA adverse-event reports analysed by Tkachenko et al. (2019) give 218 to 310 a year after 2011. The
       documented driver in both is non-adherence: missed pills,
       inconsistent condom use, the assumption that one cycle of
       missed contraception is unlikely to coincide with the
@@ -4719,7 +4636,7 @@
   beats: (
     "iPLEDGE 2006 — first REMS-class authorization for isotretinoin; mandatory pregnancy test, two-method contraception, pharmacy lockout per cycle",
     "Shin et al. 2011 Kaiser cohort (n=8,344; 9,912 courses) — 29 fetal exposures; 'no evidence iPLEDGE significantly decreased risk' vs. prior SMART",
-    "Approximately 150 isotretinoin-exposed pregnancies continue annually in the US despite the program; non-adherence is the documented driver",
+    "Collins et al. 2014: ~150 exposed pregnancies annually despite the program; FDA reports give 218-310 after 2011; non-adherence is the documented driver",
     "Structural form same as SUBSAFE and WHO checklist; the mechanism alone does not deliver capability without adherence support",
     "Most analytically useful 'mixed' case in v2 — the form has demonstrated successes; form-without-adherence-support is the gap",
   ),
@@ -4732,7 +4649,7 @@
     after: (
       [Treat a "no significant decrease" finding as program evidence about the mechanism's reach, not as an argument against authorization architectures in general; SUBSAFE and the WHO checklist demonstrate the form can deliver under the right conditions.],
       [Re-engineer the adherence-support layer based on the documented driver of failure — for iPLEDGE, missed pills and inconsistent condom use — rather than tightening the authorization layer that is already working as specified.],
-      [Carry the "approximately 150 exposures annually" figure honestly in any communication about the program; iPLEDGE is operating as designed, and the design's reach is what the evidence is about.],
+      [Carry the exposure figures with their sources attached — roughly 150 a year in Collins et al., 218 to 310 a year in the FDA reports — since iPLEDGE is operating as designed and the design's reach is what the evidence is about.],
     ),
   ),
   references: (
@@ -4783,7 +4700,7 @@
   year: "2006 – present",
   domains-list: ("healthcare",),
   modes-code: "TN",
-  impact: "Improved teamwork, communication, and patient-safety culture across diverse settings; OR on-time first start +21%; adopted by thousands of healthcare organizations",
+  impact: "Improved teamwork, communication, and patient-safety culture across diverse settings; on-time first surgical starts +21% in one urology service (Weld 2016); 1,500+ hospitals, 5,000+ master trainers, 300,000+ staff trained",
   diagram: dgm.dgm-teamstepps,
   kind: "intervention",
   summary: [
@@ -4798,16 +4715,14 @@
     practice — the cross-domain capability transfer LENS is built to teach.
     Because its implementation infrastructure was funded as part of the
     program, TeamSTEPPS moved from research to scaled deployment in years
-    rather than decades, and has been adopted by thousands of healthcare
-    organizations with measurable gains in teamwork and safety culture.
+    rather than decades. More than 1,500 hospitals have implemented it, 5,000 master trainers are certified, and over 300,000 health professionals have been trained.
   ],
   sections: (
     // -- Background --
     [
       Decades of research in aviation, the military, and nuclear power had
       shown that teamwork — not just individual expertise — drives safety
-      in high-consequence work, and the IOM's _To Err Is Human_ had
-      identified poor communication as a leading cause of medical harm.
+      in high-consequence work, and the Joint Commission's root-cause data had made communication failure the leading cause of sentinel events.
       What clinical settings lacked was a structured, evidence-based way to
       build those team skills. The evidence existed and the diagnosis was
       clear; what was missing was the translation — a route from the
@@ -4843,10 +4758,7 @@
     ],
     // -- The Evidence --
     [
-      Studies across diverse settings report improved teamwork,
-      communication, and patient-safety culture, with concrete operational
-      gains such as a 21% improvement in on-time first surgical starts.
-      Thousands of healthcare organizations have adopted the framework, and
+      Studies across diverse settings report improved teamwork, communication, and patient-safety culture; on one urology service, Weld et al. measured a 21% improvement in on-time first surgical starts. More than 1,500 hospitals have implemented the framework, and
       AHRQ has continued to develop it, releasing TeamSTEPPS 3.0 in 2023.
       The continued development into a third version is itself evidence the
       transfer took hold — a framework that is still being maintained and
@@ -4870,15 +4782,15 @@
     "High-reliability research showed teamwork drives safety, but clinical settings lacked a structured curriculum",
     "AHRQ and DoD jointly released TeamSTEPPS in 2006, training four core team competencies",
     "Funding master-trainer programs, toolkits, and a support center alongside the curriculum compressed the gap",
-    "Studies show improved teamwork and safety culture; on-time surgical first starts rose 21 percent",
+    "Studies show improved teamwork and safety culture; on-time surgical first starts rose 21 percent on one urology service",
     "Cross-domain capability transfer is engineerable when the funded path to sustained practice is included",
   ),
   references: (
     [AHRQ, _TeamSTEPPS 3.0 Curriculum_ (2023) — the framework and four competencies.],
     [DoD / AHRQ partnership documentation — the joint development and implementation infrastructure.],
-    [Salas, E., Rosen, M. et al. (2009) — cross-domain team-training evidence base.],
+    [Salas, E., DiazGranados, D., Klein, C., Burke, C. S., Stagl, K. C., Goodwin, G. F. & Halpin, S. M. (2008), "Does Team Training Improve Team Performance? A Meta-Analysis," _Human Factors_ 50(6):903–933 — the cross-domain team-training evidence base.],
     [Weaver, S., Dy, S. & Rosen, M. (2014) — patient-safety team-training implementation and outcomes.],
-    [American Hospital Association Team Training Center — adoption and on-time-start metrics.],
+    [Weld, L. R. et al. (2016), "TeamSTEPPS Improves Operating Room Efficiency and Patient Safety," _American Journal of Medical Quality_ 31(5):408–414 — the on-time first-start figure.],
   ),
   quote: [TeamSTEPPS represents the translation pathway from high-reliability research into clinical practice.],
   quote-source: "Editors' synthesis drawing on AHRQ TeamSTEPPS 3.0 (2023) and Salas et al.",
@@ -4900,7 +4812,7 @@
   ],
   literature-items: (
     [AHRQ TeamSTEPPS documentation],
-    [Salas, Rosen, Held & Weissmuller (2009) on cross-domain team training],
+    [Salas et al. (2008), _Human Factors_ — team-training meta-analysis],
     [Weaver, Dy & Rosen (2014), patient-safety implementation],
   ),
   reflection-list: (
