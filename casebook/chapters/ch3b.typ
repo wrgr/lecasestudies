@@ -534,7 +534,7 @@
   year: "1981 – present",
   domains-list: ("aviation",),
   modes-code: "THN",
-  impact: "83% reduction in U.S. commercial aviation fatality risk (1998–2008); 95% reduction in fatalities per 100M passengers over 20 years",
+  impact: "CAST set an 80% fatality-risk reduction target and reported 83% for 1998–2008 — a portfolio result across 72 safety enhancements, credited by CAST and the FAA to CAST's work \"along with new aircraft, regulations and other activities\"; CRM's separate contribution is not isolated in any published estimate, and CRM predates the measurement window by seventeen years",
   diagram: dgm.dgm-crm,
   kind: "intervention",
   summary: [
@@ -614,7 +614,7 @@
       human roles in AI-augmented systems. What transferred was not the
       specific protocols but the design logic itself — that coordination is
       an engineerable system property and that the cultural change needs a
-      measurement loop to keep it honest over time.#cn()
+      measurement loop to keep it honest over time.#cn() The 83% is a portfolio figure, and its CFIT share belongs to the safety enhancements treated in Case 120 (the TAWS mandate) and Case 123 (the FSF task forces); CRM's own share is not separately measured in that data.
     ],
   ),
   beats: (
@@ -1099,7 +1099,7 @@
       case teaches the cue/alert intervention at its most
       durable, with the qualification that the capability
       depends on the standard being honored in operation, not
-      on the equipment being installed.#cn()
+      on the equipment being installed.#cn() TAWS is CAST Safety Enhancement 1, so the CFIT decline reported here is a component of the 83% portfolio result quoted in Case 117, arrived at through the industry coordination described in Case 123.
     ],
   ),
   beats: (
@@ -1601,7 +1601,7 @@
       worked. The case is the canonical C6.1 instance of
       industry-level institution building after a catastrophe-class
       spike, paired with v1 ASRS (Case 119) and CAST (Case 117) at
-      the industry-coordination layer.#cn()
+      the industry-coordination layer.#cn() The task forces, the TAWS mandate (Case 120), and the CRM/CAST apparatus (Case 117) are three components of one decline; the multifactorial hedge governs all three, and no case's share of the 83% is separately measured.
     ],
   ),
   beats: (

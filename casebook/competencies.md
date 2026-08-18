@@ -2,11 +2,15 @@
 
 > **Numbering note (July 2026).** Case numbers in this document were re-keyed to the First Edition topical numbering (Cases 1–205, seven parts) during the July 2026 editorial pass; the parenthetical names are the stable identifiers. The pass also added six K-12 cases (60 Houston EVAAS, 61 Science of Reading / Sold a Story, 62 Gates Intensive Partnerships / MET, 63 LAUSD iPad / CCTP, 64 Newark / The Prize, 95 PBIS Implementation Fidelity) to the sub-competency lists they anchor; the induction itself (thresholds, clusters) is unchanged from the v1 read. The disaster prevention/relief expansion (July 2026) added five more: 167 Hurricane Katrina / FEMA, 170 West Africa Ebola response, 171 Hurricane Maria logistics (all 1.1 — engineered vs. stated requirements), 178 UN Cluster Approach (6.1), and 179 JHU COVID Dashboard (2.1). Two ambiguous numeric cross-references in the cluster-2 preamble were resolved to named cases.
 
-*Induced from 100 documented cases in the Capability Matters casebook. Each competency is supported by multiple cases; each sub-competency cites the cases that establish it. Failures (n=72) show what's missing; interventions (n=16) show what works; frontier cases (n=12) show what the discipline is being asked to specify next.*
+*The eight competencies below were **induced** from the first 100 cases of the Capability Matters casebook. That is the derivation, and it is historical. What the framework now rests on is broader and differently shaped: the corpus stands at **191 active cases**, and the framework is **supported by** and **validated against** that corpus rather than re-derived from it. Saying the framework is "induced from the casebook" overstates the relationship — the induction ran on the v1 hundred and has not been re-run. Failures (n=89) show what's missing; interventions (n=75) show what works; frontier cases (n=27) show what the discipline is being asked to specify next.*
 
-## What this framework is induced from — and isn't
+> **What the `Cases:` lines are.** Under each sub-competency they name the cases that best establish it — evidence offered, not coverage claimed. They are not an index. A case's `induced-anchor` in the casebook will frequently not appear in the list for that sub-competency: 66 of the 190 anchored active cases are listed under their own anchor, and the lists were never maintained as an exhaustive concordance. A case missing from a list is not a mis-anchored case, and the two should not be reconciled mechanically.
 
-The v1 casebook is shaped by what gets documented in public. It over-samples catastrophic, news-visible failures from defense, aviation, healthcare, finance, and high-stakes ed-tech, and under-samples the everyday, study- and program-scale work that fills most of a learning engineer's actual practice. That sampling bias propagates into the framework below.
+## What this framework rests on — and what it doesn't
+
+**The v1 sampling bias was real, was named here, and has since been substantially closed. This section is retained because the induction still carries the shape of its origin.**
+
+The v1 casebook was shaped by what gets documented in public. It over-sampled catastrophic, news-visible failures from defense, aviation, healthcare, finance, and high-stakes ed-tech, and under-sampled the everyday, study- and program-scale work that fills most of a learning engineer's actual practice. That sampling bias propagated into the clusters below, which were induced from those hundred cases and have not been re-induced since.
 
 Specifically, three competencies are read most narrowly because of it:
 
@@ -14,13 +18,21 @@ Specifically, three competencies are read most narrowly because of it:
 - **Competency 5 (Governance architecture)** is induced from catastrophic-scale governance failures. The routine forms — IRB-grade study protocols, change-control for instructional content, disclosure of instructor effects, vendor-data agreements — are barely represented.
 - **Competency 8 (Equity and construct definition)** plays out most often at study- and program-scale (a cohort effect in a single-district pilot, a construct-validity drift across raters). Those rarely make the news, so the competency is named mostly from its loudest instances.
 
-There is a second bias worth naming: the share of *intervention* cases is uneven across competencies. Three competencies — Evidence architecture (C2), Pairing+authorization (C4), and Knowledge transfer (C6) — already tell their positive story confidently. Five do not. Two of them, Interface and role design (C3) and Capability under system change (C7), currently have **zero** intervention cases. The framework should be read with that in mind: where positive examples are missing, the competency is described entirely by what its failure looks like, not by what its success looks like.
+The second bias v1 carried was the thinness of its *intervention* cases: 16 of 100, with two competencies — Interface and role design (C3) and Capability under system change (C7) — described entirely by what their failure looks like. The v2 sweep was commissioned to close exactly this, under binding floors in *each* scale tier (`big` for v1's catastrophic/news-visible shape; `small` for journal/conference/program-scale evidence): at least 15 cases and at least 30% intervention cases per tier.
 
-Read the framework accordingly: it is a high-stakes-failure induction, not a complete map of the discipline. A second-pass sweep is queued to close the gap, with binding floors per competency in *each* scale tier (`big` for v1's catastrophic/news-visible shape; `small` for journal/conference/program-scale evidence): at least 15 cases and at least 30% intervention cases in each tier. That requires lifting v1 itself with additional big-scale intervention cases — not only adding small-scale evidence (see `case-sweep-v2-plan.md`).
+**Measured against the live corpus (August 2026), both floors are met.**
+
+| Tier | Cases | Interventions | Failures | Frontier |
+|---|---:|---:|---:|---:|
+| `big` | 145 | 44 (30%) | 86 | 15 |
+| `small` | 46 | 31 (67%) | 3 | 12 |
+| **total** | **191** | **75 (39%)** | **89** | **27** |
+
+The `big` tier clears the 30% floor by a single case, so it is met, not comfortably met — a decision to quarantine or add one big-tier case moves it. What has changed since v1 is the balance, not the induction: the clusters and thresholds below are still the v1 read. Read the framework accordingly — it is a set of clusters induced from a high-stakes-failure sample and since supported by a corpus with a very different intervention balance. A re-induction against all 191 cases is a live question, and it could move the 8/32 structure; it has not been run.
 
 ## Method
 
-I read the LENS-approach and summary fields for all 100 cases, set aside the LEN 1–10 course tags and the T/D/N/H/G/K modes as seed categories, and instead listed the recurring capability demand that each case names. I then clustered those demands inductively: a candidate top-level competency was retained only if at least ten distinct cases demanded it, and a sub-competency only if at least three distinct cases established it. Where a candidate cluster slimmed below threshold, I either dropped it or merged it into an adjacent cluster (e.g., "construct definition" merged into the equity sub-cluster; "cross-domain transfer" merged into knowledge & adoption). The eight competencies below survived this pruning. The optional crosswalk at the end observes how the induced clusters relate to the modes T/D/N/H/G/K and to LEN 1–10 — purely as observation, not as anchor.
+The induction was run once, on the v1 hundred, and is reported here as it was performed. I read the LENS-approach and summary fields for all 100 cases, set aside the LEN 1–10 course tags and the T/D/N/H/G/K modes as seed categories, and instead listed the recurring capability demand that each case names. I then clustered those demands inductively: a candidate top-level competency was retained only if at least ten distinct cases demanded it, and a sub-competency only if at least three distinct cases established it. Where a candidate cluster slimmed below threshold, I either dropped it or merged it into an adjacent cluster (e.g., "construct definition" merged into the equity sub-cluster; "cross-domain transfer" merged into knowledge & adoption). The eight competencies below survived this pruning. The optional crosswalk at the end observes how the induced clusters relate to the modes T/D/N/H/G/K and to LEN 1–10 — purely as observation, not as anchor.
 
 ## Summary table
 
@@ -29,7 +41,7 @@ I read the LENS-approach and summary fields for all 100 cases, set aside the LEN
 | 1 | Capability requirements specification under operational reality | Engineered vs. stated requirements; Capability envelope at the edge of training; Cross-organization and joint-service requirements; Requirements as a sustainment deliverable | 26 |
 | 2 | Evidence architecture the institution cannot deceive itself with | Measuring the failure mode you care about; Protecting the measurement from gaming; Closed-loop evidence linked to intervention; Post-deployment surveillance and disconfirmation | 27 |
 | 3 | Interface and role design at the human–automation boundary | Cue and alert design as a capability deliverable; Monitoring as an unsupportable role; Mode and state transparency under stress; Recoverability from automation failure | 20 |
-| 4 | Pairing mechanism with authorization (the cultural half) | Frontline authority to halt or escalate; Non-punitive reporting with credible commitment; Authority gradient and team-coordination redesign; Pre-committed institutional response | 13 |
+| 4 | Pairing mechanism with authorization — and the response that makes it real | Frontline authority to signal, and a response obliged to arrive; Non-punitive reporting with credible commitment; Authority gradient and team-coordination redesign; Pre-committed institutional response | 13 |
 | 5 | Governance architecture for deployment: consent, oversight, accountability | Stakeholder trust and consent as preconditions; Human-in-the-loop for consequential decisions; Cross-regime and platform governance seams; Change-control and disclosure as governance artifacts | 24 |
 | 6 | Cross-organization and cross-time knowledge transfer | Industry-level institution building after catastrophe; Operator-to-institution feedback channels; Sustaining tacit capability across generations; Cross-domain adaptation of proven interventions | 20 |
 | 7 | Capability under system change, transition, and aging assumptions | Re-verifying inherited designs in new envelopes; Deployment and reuse as verification events; Legacy assets aging past their oversight regime; Multi-layer drift and cumulative inadequacy | 16 |
@@ -107,13 +119,19 @@ Cases: 124 (USS McCain helm), 130 (USS Vincennes), 129 (Patriot/Dhahran), 127 (M
 The human is the recoverability of automation failures the designers did not anticipate; specifying that role — its training, its authority, its information — is itself the deliverable. Failures here designed the human out (Air France 447, Case 102; Uber ATG, Case 183); the positive case (Case 131) shows what it looks like when the role is kept and supported.
 Cases: 97 (737 MAX), 102 (Air France 447), 191 (Robodebt), 146 (Northeast Blackout), 131 (Stanislav Petrov), 22 (ChatGPT in Healthcare).
 
-## 4. Pairing mechanism with authorization (the cultural half)
+## 4. Pairing mechanism with authorization — and the response that makes it real
 
-The dataset's strongest interventions all pair a mechanical artifact with the institutional authorization to use it: a checklist with a nurse who can stop the procedure (Case 129), a cord with a worker who can stop the line (Case 155), a reporting form with immunity from enforcement (Case 119), a recall decision with a pre-committed credo (Case 181). Cases that imported the artifact without the authorization (American adoption of the Andon cord; checklists in Ontario) under-delivered. The competency is to make the authorization itself a falsifiable design artifact rather than an aspiration.
+The dataset's strongest interventions all pair a cheap artifact with a response the institution has committed to in advance: a checklist with a nurse who can stop the procedure (Case 19), a cord that calls a team leader staffed to come (Case 155), a reporting form with a sanction waiver within specified limits (Case 119), a recall decision with a pre-committed credo (Case 176). The artifact is the cheap half. The committed response is the expensive half, and it is the half imitators leave out.
 
-### 4.1 Frontline authority to halt or escalate
+This cluster was originally named for "the cultural half," and that half is real and load-bearing: a channel people do not trust is a channel they do not use, and no amount of hardware substitutes for that. What the name does not do is transfer. An importer told that the missing ingredient is *culture* has nothing to build, fund, or refuse — which is why the artifact keeps being copied without the thing that makes it work.
 
-The lowest-ranking person who can see the problem must have the authority to act on it, and that authority must be visibly backed by the supervisor and the institution. The recurring intervention is to engineer that authority explicitly and treat its absence as a defect.
+So the cluster now names both halves, and insists the cultural commitment be stated in the form it actually takes. Toyota's andon is the clearest instance and the most misread: pulling the cord does not stop the line. Under the fixed-position stop system it lights the board and calls the team leader, and the line halts only if the problem outlives the work cycle — so the first rung of the escalation was engineered to cost the person who pulls it almost nothing. The no-blame norm is not asserted there; it is demonstrated, every time help arrives instead of blame. That is culture *and* engineering, and neither half works alone.
+
+Where the artifact was copied and under-delivered (American andon installations; checklists in Ontario), the conditions that were missing are nameable: a responder ratio with deliberate slack, buffers thin enough that a defect cannot be hidden downstream, employment security so that surfacing a problem is not self-harm, and standardized work to compare the anomaly against. Each of those is a line item someone can approve or refuse, and each is also how the cultural commitment becomes visible rather than declared. The competency is to specify both — the commitment and the conditions that evidence it — rather than to name one and hope for the other.
+
+### 4.1 Frontline authority to signal, and a response obliged to arrive
+
+The lowest-ranking person who can see the problem must be able to raise it at negligible cost to themselves, and something must be structurally obliged to answer. Authority to *halt* is one form of this and the rarest; the commoner and more transferable form is authority to *summon*, with the halt as the automatic consequence when the summons goes unanswered. The recurring intervention is to engineer both halves and to treat the absence of either as a defect: an artifact with no staffed responder behind it is a doorbell, and a staffed responder people do not trust enough to call is an idle desk.
 Cases: 19 (Keystone ICU), 155 (Toyota Andon Cord), 133 (Mark 14 Torpedo), 131 (Stanislav Petrov).
 
 ### 4.2 Non-punitive reporting with credible commitment
@@ -235,4 +253,4 @@ Against the LEN 1–10 curriculum, the induced competencies cover the same groun
 
 ## Sourcing
 
-All case numbers refer to the 100 cases in `chapters/*.typ`. Definitions and patterns are paraphrased from each case's `lens-approach` and `summary` fields as captured in /tmp/case-dossier.md.
+Case numbers refer to `chapters/*.typ` under the First Edition numbering (1–205; 191 active, 14 quarantined). Definitions and patterns are paraphrased from each case's `lens-approach` and `summary` fields. The clusters and the thresholds that produced them come from the v1 hundred; the `Cases:` lines have been extended since to name newer cases that establish a sub-competency, but they were never rebuilt as a complete index.
