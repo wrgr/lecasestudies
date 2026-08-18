@@ -181,7 +181,7 @@
   year: "2005 – present",
   domains-list: ("healthcare",),
   modes-code: "HDG",
-  impact: "~$30B federal investment under HITECH; documented increase in pediatric ICU mortality post-CPOE at one institution; ongoing usability harm at scale",
+  impact: "~$30B federal investment under HITECH; mortality among children transported to one hospital rose 2.80% to 6.57% after CPOE went live; ongoing usability harm at scale",
   diagram: dgm.dgm-ehr,
   kind: "failure",
   summary: [
@@ -191,11 +191,8 @@
     workflow. New categories of harm followed. A disputed but canonical 2005
     study found that deploying a commercial order-entry (CPOE) system at one
     pediatric ICU was associated with a more-than-doubling of mortality; later
-    deployments showed mixed or improved results, yet the warning stuck. A
-    2023 survey across 200-plus hospitals found EHR usability is clinicians'
-    top complaint, and that usability scores track patient-safety outcomes.
-    Specific harms recur — a missed abnormal result hidden behind a default,
-    a fatal overdose an unactivated alert would have caught. There is still
+    deployments showed mixed or improved results, yet the warning stuck. A 2018 JAMA study of 1.735 million safety reports found 557 whose language explicitly tied an EHR usability problem to possible patient harm.
+    Specific harms recur — a boy discharged on lab results the record showed as complete, a girl killed by a drug the disabled interaction alert would have caught. There is still
     no regulatory framework monitoring EHR safety. It is the book's live
     interface-mismatch case.
   ],
@@ -215,43 +212,27 @@
     ],
     // -- What Happened --
     [
-      New categories of harm appeared alongside the new tools. A 2005 study
-      reported that deploying a commercial computerized order-entry (CPOE)
-      system at one pediatric ICU was associated with a more-than-doubling of
-      mortality — a single-institution result that provoked debate and that
+      New categories of harm appeared alongside the new tools. A 2005 study reported that after a commercial computerized order-entry (CPOE) system went live hospital-wide at one children's hospital, mortality among children arriving by interfacility transport rose from 2.80% to 6.57% — a single-institution result that provoked debate and that
       later deployments elsewhere did not reproduce, but that became
       canonical as a warning that powerful tools without workflow integration
       can disrupt care at the moment of greatest acuity, when the seconds the
       interface adds to an order are the seconds a critical patient does not
       have.#cn() Specific harms
-      recur: a cancer treatment delayed for years because a default surfaced
-      an old normal result instead of a recent abnormal one; a baby killed by
-      an overdose an alert would have caught had it been switched on — each a
+      recur: a twelve-year-old sent home to die of sepsis on lab results the record presented as complete; a twelve-year-old with long QT syndrome killed by a drug whose interaction alert had been switched off — each a
       case where the interface's defaults and toggles, not the clinician's
       competence, determined whether the right information reached the
       decision.#cn()
     ],
     // -- The Investigation --
     [
-      A 2023 KLAS Arch Collaborative survey across more than two hundred
-      hospitals found EHR usability is consistently the top complaint of
-      physicians, nurses, and pharmacists, and that end-user experience
-      scores correlate with patient-safety outcomes — turning a stream of
-      anecdotes into longitudinal evidence that usability is now itself a
-      patient-safety variable. Spanning some two hundred hospitals, the survey
-      converts what could be dismissed as one site's grievance into a
-      reproducible signal, the kind of measurement that makes an interface
-      problem legible as a safety problem rather than a satisfaction one.#cn()
+      Howe, Adams, Hettinger, and Ratwani read 1.735 million patient-safety reports filed in Pennsylvania and one academic health system between 2013 and 2016. In 557 of them — 0.03 percent — the reporter's own words tied an EHR usability problem to possible patient harm: 468 reached the patient, 80 potentially caused temporary harm, seven potentially permanent harm, and two could have required intervention to sustain life.#cn() Reporting is voluntary and the details are sparse, so the count is a floor, not a measure. What it establishes is that interface failures reach patients at all — which is what turns usability from a satisfaction question into a safety one.
     ],
     // -- The Capability Gap --
     [
       EHR/CPOE is the canonical ongoing case of an interface designed for one
       set of requirements and deployed against another. The systems work for
       billing and administration because that was the design constraint; they
-      fail for clinical workflow because clinical workflow was not. Decades
-      and tens of billions of dollars later, usability remains among the
-      largest contributors to in-system harm in U.S. healthcare — a cost that
-      persists precisely because it was never a design requirement and so was
+      fail for clinical workflow because clinical workflow was not. Decades and tens of billions of dollars later, the harm usability failures do is still counted only in voluntary reports built to catch other things — a cost that persists precisely because it was never a design requirement and so was
       never engineered out, only worked around by clinicians absorbing the
       friction shift after shift.#cn()
     ],
@@ -272,37 +253,32 @@
   beats: (
     "HITECH poured thirty billion into EHRs built to billing specifications, not clinical workflow",
     "Disputed 2005 CPOE study tied pediatric ICU mortality to deployment; default and alert harms recurred",
-    "A 2023 KLAS survey across hundreds of hospitals tied usability scores to patient safety outcomes",
+    "A 2018 JAMA study found 557 safety reports whose own language tied EHR usability to patient harm",
     "Systems work for billing because that was the specification; clinical workflow was never engineered",
     "Usability guidance has matured but no regulatory regime monitors deployed EHR safety at scale",
   ),
   references: (
     [Health Information Technology for Economic and Clinical Health (HITECH) Act (2009) — the ~\$30B EHR incentive program.],
     [Y. Han et al., "Unexpected Increased Mortality After Implementation of a Commercially Sold CPOE System," _Pediatrics_ 116(6): 1506–1512 (2005) — the disputed pediatric-ICU mortality result.],
-    [KLAS Arch Collaborative, EHR usability and safety surveys (2023) — usability as the top clinician complaint, correlated with safety outcomes.],
-    [D. Sittig & H. Singh, "Defining health information technology-related errors," and related EHR-safety work (2011–2013).],
-    [AHRQ Patient Safety Network, EHR-related harm cases — the default-result delay and the unactivated-alert overdose.],
-    [AMA / Pew / MedStar, _EHR Usability and Patient Safety_ (2018); R. Wachter, _The Digital Doctor_ (2015).],
+    [J. Howe, K. Adams, A. Z. Hettinger & R. Ratwani, "Electronic Health Record Usability Issues and Potential Contribution to Patient Harm," _JAMA_ 319(12): 1276–1278 (2018) — 557 of 1.735M safety reports tied usability to possible harm.],
+    [D. Sittig & H. Singh, "Defining Health Information Technology-related Errors: New Developments Since To Err is Human," _Archives of Internal Medicine_ 171(14): 1281–1284 (2011).],
+    [M. Grissinger, "The Absence of a Drug–Disease Interaction Alert Leads to a Child's Death," _P&T_ 43(2): 71–72 (2018); F. Schulte & E. Fry, "Death by 1,000 Clicks," _Fortune_/KHN (2019).],
+    [Pew / MedStar / AMA, _Ways to Improve Electronic Health Record Safety_ (2018); R. Wachter, _The Digital Doctor_ (2015).],
   ),
-  quote: [Reports of new types of errors directly related to EHR implementation — errors that can compromise quality of care and patient safety — have emerged.],
-  quote-source: "Paraphrasing Sittig & Singh, EHR-related safety risks, 2013",
+  quote: [Despite HIT's promise in improving safety, recent literature has revealed potential safety hazards associated with its use.],
+  quote-source: "Sittig & Singh, Defining Health Information Technology-related Errors, Archives of Internal Medicine, 2011",
   le-insight: [
     EHR/CPOE is the canonical ongoing case of an interface designed for
     one set of requirements and deployed against another. The systems
     work for billing and administration. They fail for clinical workflow
-    because clinical workflow was not the design constraint. Thirty
-    billion dollars later, usability remains among the largest
-    contributors to in-system harm in U.S. healthcare.
+    because clinical workflow was not the design constraint. Thirty billion dollars later, the harm usability failures do is still counted only in voluntary reports never built to catch it.
   ],
   lens-approach: [
     LENS treats EHR/CPOE in LEN 7 as the live, ongoing example of
     Design-Out and Interface failure under governance opacity, in LEN 2
     as a human-AI teaming problem (alert fatigue, default surfacing), and
     in LEN 9 as a computational systems problem (the alerting
-    architecture itself is a learnable model). The Han 2005 pediatric
-    ICU finding is the durable warning; the KLAS 2023 surveys across
-    two hundred hospitals are the contemporary, longitudinal evidence
-    that usability is now itself a patient-safety variable.
+    architecture itself is a learnable model). The Han 2005 transported-children finding is the durable warning; the Howe 2018 review of 1.735 million safety reports is the contemporary evidence that usability failures reach patients.
   ],
   literature-items: (
     [Sittig & Singh (2013), Safety-related EHR risks],
@@ -312,7 +288,7 @@
   reflection-list: (
     [What is the equivalent system in your domain that was designed for one specification and deployed against another? How would you measure the harm?],
     [Design the regulatory architecture that would surface EHR safety harms at scale. Be specific about signal, threshold, and authority.],
-    [The Han 2005 mortality result was disputed; the 2023 KLAS surveys are consistent across two hundred hospitals. What ongoing measurement architecture would have to exist for the equivalent emerging clinical-AI deployment in your domain to be evaluated honestly while in use?],
+    [The Han 2005 mortality result was disputed; the Howe 2018 count rests on voluntary reports that catch only a fraction of the harm. What ongoing measurement architecture would have to exist for the equivalent emerging clinical-AI deployment in your domain to be evaluated honestly while in use?],
   ),
   approaches: (
     during: (
@@ -322,7 +298,7 @@
     ),
     after: (
       [Stand up a post-deployment safety-monitoring regime for fielded EHRs comparable to how drugs and devices are surveilled, with thresholds and authority to force changes.],
-      [Track end-user experience scores as a patient-safety variable, using the cross-institution evidence that usability correlates with outcomes.],
+      [Read safety reports for the words clinicians use about the interface, since it was reporters' own language that made usability-driven harm countable at all.],
       [Audit recurring interface-driven harms — surfaced defaults, disabled alerts — and feed them back into vendor design requirements rather than absorbing them as clinician burden.],
     ),
   ),
@@ -368,9 +344,7 @@
     raising concerns about the gap between marketed concordance
     claims and what the system actually delivered. Hospitals
     around the world had purchased Watson on the marketed
-    capability; adoption stalled, deployments were discontinued
-    (Manipal Hospitals in India ended its contract in 2018), and
-    IBM wound the product down and, in 2022, sold the Watson Health
+    capability; adoption stalled, deployments were discontinued (MD Anderson shelved its Watson project in 2016 after about \$62 million; Rigshospitalet in Copenhagen dropped it after agreeing with Watson in roughly a third of cases), and IBM wound the product down and, in 2022, sold the Watson Health
     data and analytics assets to Francisco Partners for roughly
     \$1 billion, relaunched as Merative — the clinical-recommendation
     business effectively shuttered before the divestiture. The case is the canonical instance in
@@ -430,9 +404,7 @@
       patient population. The capability the procurement was
       buying — accurate, real-world treatment recommendation at
       the marketed concordance rate — was not the capability the
-      system carried. Deployments were discontinued as the gap surfaced —
-      Manipal Hospitals in India ended its contract, and IBM
-      ultimately wound down and divested Watson Health.#cn()
+      system carried. Deployments were discontinued as the gap surfaced — MD Anderson shelved its project, Rigshospitalet in Copenhagen dropped Watson outright, and IBM ultimately wound down and divested Watson Health.#cn()
     ],
     [
       The evidence-tier flag rendered under the title is binding
@@ -451,8 +423,7 @@
       tier the case rests on.#cn()
     ],
     [
-      In the AI-delegation typology (Cases 20 TREWS, 102 Epic
-      Sepsis Model, 111 SyRI, and this case), Watson is the
+      In the AI-delegation typology (Cases 20 TREWS, 5 Epic Sepsis Model, 189 SyRI, and this case), Watson is the
       marketing-ahead-of-capability failure mode: the procurement
       decision rode on marketed concordance rates that were not
       validated at the operating institutions, and the
@@ -475,7 +446,7 @@
     "Watson for Oncology marketed as cancer-treatment recommendation engine with tumor-board concordance rates as high as 96%",
     "STAT News investigation (Ross & Swetlitz, 2017–2018) drawing on leaked IBM documents: trained on small synthetic-case set curated by MSK, not real patient outcomes",
     "Documented unsafe and incorrect recommendations; internal IBM engineers raised concerns about gap between marketed and operating capability",
-    "Hospitals worldwide purchased on marketed claim; deployments (Manipal and others) discontinued; IBM later wound down and sold Watson Health",
+    "Hospitals worldwide purchased on marketed claim; MD Anderson and Rigshospitalet discontinued; IBM later wound down and sold Watson Health",
     "Evidence tier: journalism-grade (STAT primary, academic secondary); no independent peer-reviewed evaluation of operating accuracy; future validation ongoing",
   ),
   approaches: (
@@ -491,7 +462,7 @@
     ),
   ),
   references: (
-    [Ross & Swetlitz (2017–2018), "IBM Watson recommended unsafe and incorrect cancer treatments" and adjacent investigations, _STAT News_ — the load-bearing primary source; investigative journalism drawing on leaked IBM internal documents.],
+    [Ross & Swetlitz, "IBM's Watson supercomputer recommended 'unsafe and incorrect' cancer treatments, internal documents show," _STAT_ (25 July 2018), and "IBM pitched its Watson supercomputer as a revolution in cancer care. It's nowhere close," _STAT_ (5 Sept 2017) — the load-bearing primary sources; investigative journalism drawing on leaked IBM internal documents.],
     [Strickland (2019), "How IBM Watson Overpromised and Underdelivered on AI Health Care," _IEEE Spectrum_ — independent retrospective synthesis of the public record.],
     [Topol (2019), _Deep Medicine_, Basic Books — secondary academic situating of Watson within the broader clinical-AI delegation discourse.],
     [v2 paired cases: TREWS (Case 20), Epic Sepsis Model (Case 5), SyRI (Case 189) — the AI-delegation typology.],
@@ -538,7 +509,7 @@
   year: "2005 – 2009",
   domains-list: ("healthcare",),
   modes-code: "GNK",
-  impact: "Excess deaths at Stafford Hospital documented across years; the Francis Inquiry produced 290 recommendations and restructured UK patient-safety governance",
+  impact: "Mortality ran above expected at Stafford Hospital for years, which Francis refused to convert into a death count; the Francis Inquiry produced 290 recommendations and restructured UK patient-safety governance",
   diagram: dgm.dgm-cascade(
     ("ward staff", "hospital management", "trust board", "regional oversight", "Department of Health"),
     outcome: "each layer was acting on the metric, not the patient",
@@ -550,8 +521,7 @@
     Staffordshire NHS Foundation Trust, subjected patients to appalling
     neglect — left without food, water, or basic care — while mortality ran
     above expected. The trust had been chasing financial targets that
-    depended on staffing cuts. Robert Francis QC's public inquiry produced a
-    2,000-page report and 290 recommendations, identifying the structural
+    depended on staffing cuts. Robert Francis QC's public inquiry produced a three-volume, 1,782-page report and 290 recommendations, identifying the structural
     problem as the gap between the trust's reported performance and patients'
     actual experience: every governance layer above the ward received reports
     that targets were being met, and none checked those reports against what
@@ -585,8 +555,7 @@
     // -- The Investigation --
     [
       The Healthcare Commission investigated; the layers above did not.
-      Robert Francis QC's public inquiry ran to some 2,000 pages and 290
-      recommendations.#cn() Its structural finding was the divergence between
+      Robert Francis QC's public inquiry ran to 1,782 pages across three volumes and 290 recommendations.#cn() Its structural finding was the divergence between
       reported performance and patient experience: every governance layer
       above the ward had received reports that the hospital was meeting its
       targets, and none had checked them against what was happening to
@@ -625,19 +594,19 @@
   beats: (
     "Pursuing Foundation Trust status, the board cut ward staffing while reported targets stayed met",
     "Patients neglected for years in appalling conditions; mortality ran substantially above expected",
-    "Francis Inquiry produced 2,000 pages and 290 recommendations; system as a whole failed",
+    "Francis Inquiry produced 1,782 pages and 290 recommendations; system as a whole failed",
     "Like the VA case, every governance layer acted on metrics; no one checked against patients",
     "Berwick review pressed for learning over targets; reporting can run clean while reality fails",
   ),
   references: (
     [R. Francis QC, _Report of the Mid Staffordshire NHS Foundation Trust Public Inquiry_ (2013) — the staffing cuts and Foundation Trust targets.],
     [Healthcare Commission, _Investigation into Mid Staffordshire NHS Foundation Trust_ (2009) — ward conditions and excess mortality.],
-    [Francis QC (2013) — the ~2,000-page report and 290 recommendations.],
-    [Francis QC (2013) — "the system as a whole failed in its most essential duty — to protect patients from unacceptable risks of harm" (quoted).],
+    [Francis QC (2013) — the three-volume, 1,782-page report and 290 recommendations.],
+    [Francis QC (2013) — "not just the Trust's Board but the system as a whole failed in its most essential duty — to protect patients from unacceptable risks of harm and from unacceptable, and in some cases inhumane, treatment" (quoted).],
     [D. Berwick, _A Promise to Learn — A Commitment to Act_ (National Advisory Group on the Safety of Patients in England, 2013).],
     [K. Walshe & J. Higgins (2002) on NHS safety governance; cf. the VA wait-time scandal (Case 7).],
   ),
-  quote: [The system as a whole failed in its most essential duty — to protect patients from unacceptable risks of harm.],
+  quote: [Not just the Trust's Board but the system as a whole failed in its most essential duty — to protect patients from unacceptable risks of harm and from unacceptable, and in some cases inhumane, treatment that should never be tolerated in any hospital.],
   quote-source: "Robert Francis QC, Report of the Mid Staffordshire NHS Foundation Trust Public Inquiry, 2013",
   le-insight: [
     Mid Staffordshire is the British analog of the VA wait-time scandal
@@ -1027,9 +996,7 @@
     access target, unrealistic given staffing, was met by hiding reality
     rather than surfacing it. The warning signs ran back fifteen years: GAO
     had flagged data-reliability problems since 2000, the IG since 2005, with
-    no systemic fix — and schedulers, the staff operating the measurement,
-    are among the VA's highest-turnover roles, so the institution kept losing
-    the knowledge even to see it was lying to itself. The VA case is the
+    no systemic fix — and turnover among schedulers, the staff operating the measurement, ran high enough that the institution kept losing the knowledge even to see it was lying to itself. The VA case is the
     book's canonical example of normalization of deviance applied to
     measurement itself.
   ],
@@ -1038,8 +1005,7 @@
     [
       The Veterans Health Administration measured access to care against a
       14-day appointment target — a target that, given staffing, was often
-      unrealistic to meet honestly. Schedulers, the staff who operate that
-      measurement, are among the VA's highest-turnover positions.#cn() The
+      unrealistic to meet honestly. Turnover among schedulers, the staff who operate that measurement, is high enough that GAO treats scheduler training as a standing risk.#cn() The
       target functioned as the headline number leadership watched, so the
       pressure to show 14-day compliance bore down hardest on the very
       front-line role least equipped, through constant churn, to record the
@@ -1062,13 +1028,7 @@
     // -- The Investigation --
     [
       The warning signs went back fifteen years: GAO had flagged
-      data-reliability concerns since 2000, and the VA IG had identified
-      problems in 2005, 2007, and 2008, with the incoming administration
-      warned in 2008 — none of which produced systemic change.#cn() GAO named
-      scheduler training as a root cause: with schedulers among the top-ten
-      highest-turnover roles, the institution perpetually lost the knowledge
-      required even to run the measurement honestly, and five years on still
-      reported data-reliability concerns.#cn() Each warning had named a real
+      data-reliability concerns since 2000, and the VA IG had identified problems in 2005 and 2007, with follow-up work in 2008 finding nine agreed recommendations still unimplemented — none of which produced systemic change.#cn() GAO found the reported wait times unreliable because VA never made schedulers' definitions of the measurement dates consistent, and called training and oversight vital against high scheduler turnover; five years on it was still concerned about the reliability of the wait times.#cn() Each warning had named a real
       defect in how access was recorded, yet because the schedulers who held
       the practical knowledge of the system kept turning over, every wave of
       findings landed on a workforce that had to relearn the instrument from
@@ -1102,7 +1062,7 @@
     ],
   ),
   beats: (
-    "A 14-day access target pressed hardest on schedulers, the highest-turnover front-line role",
+    "A 14-day access target pressed hardest on schedulers, a front-line role with high turnover",
     "Phoenix and nationwide staff hid waits on secret lists while official metrics reported success",
     "Fifteen years of GAO and IG warnings landed on a continually relearning scheduler workforce",
     "Measurement gaming hardened into routine practice once turnover erased memory of deviance",
@@ -1112,12 +1072,12 @@
     [VA Office of Inspector General, Report 14-02603-267 (2014) — secret waiting lists and falsified appointment data.],
     [GAO Veterans Health Administration reports (2000–2019) — fifteen years of data-reliability warnings.],
     [VA OIG reports (2005, 2007, 2008) — prior, unactioned findings.],
-    [D. Draper (GAO), House VA Committee testimony, GAO-19-687T (2019) — "schedulers are among the top ten highest-turnover positions in the VA" (quoted).],
+    [D. Draper (GAO), House VA Committee testimony, GAO-19-687T (2019) — "given the high turnover among schedulers, it is important that VA remain vigilant about scheduler training" (quoted).],
     [Veterans Access, Choice, and Accountability Act (2014) — the legislative response.],
-    [C. Argyris & D. Schön, _Organizational Learning_ (1978); measurement-gaming literature.],
+    [C. Argyris & D. Schön, _Organizational Learning: A Theory of Action Perspective_ (1978); G. Bevan & C. Hood, "What's Measured Is What Matters," _Public Administration_ 84(3): 517–538 (2006).],
   ),
-  quote: [Schedulers are among the top ten highest-turnover positions in the VA.],
-  quote-source: "Debra Draper (GAO Director of Health Care), House VA Committee testimony, GAO-19-687T, July 2019",
+  quote: [Given the high turnover among schedulers, it is important that VA remain vigilant about scheduler training, ensuring all who need it receive it.],
+  quote-source: "Debra A. Draper (GAO Director of Health Care), House VA Committee testimony, GAO-19-687T, 24 July 2019",
   le-insight: [
     The VA case is the canonical example of measurement failure as a
     capability failure. The system that should have surfaced the gap
@@ -1137,7 +1097,7 @@
   literature-items: (
     [VA OIG, full reports (2014–present)],
     [Argyris & Schön (1978), _Organizational Learning_],
-    [Tuckey & Pollack (2024), measurement-gaming literature],
+    [Bevan & Hood (2006), targets and gaming in public health care],
   ),
   reflection-list: (
     [Identify a measurement system in your domain that is also operated by a high-turnover role. What is the institutional risk that the system stops measuring reality?],

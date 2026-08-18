@@ -2757,7 +2757,7 @@
   year: "2013 – 2015",
   domains-list: ("health professions education", "interprofessional collaboration", "patient safety"),
   modes-code: "KN",
-  impact: "Decades-long well-funded movement to educate health professionals together for collaborative care; Cochrane 2013 found only 15 studies between 1999 and 2011 met inclusion criteria; IOM 2015 made the gap the central finding — 'paucity of high-quality research' linking IPE to measurable changes in practice and patient outcomes",
+  impact: "Decades-long well-funded movement to educate health professionals together for collaborative care; Cochrane 2013 found only 15 studies between 1999 and 2011 met inclusion criteria; IOM 2015 made the gap the central finding — the commissioned review in its Appendix A names a 'paucity of high-quality research' measuring the impact of IPE on practice processes and patient outcomes",
   kind: "frontier",
   scale: "big",
   evidence-source: "investigation",
@@ -2774,8 +2774,7 @@
     those studies showed some positive outcomes, the evidence base
     for linking IPE to measurable changes in practice and patient
     outcomes was thin. The IOM report (2015) made the gap the
-    central finding: there remains a "paucity of high-quality
-    research" connecting IPE interventions to patient outcomes,
+    central finding: the commissioned review it carries as Appendix
     and it proposed a conceptual model for doing the measurement
     properly. The case is the canonical instance in the corpus of
     a large, sincere, multidisciplinary translation effort whose
@@ -2806,7 +2805,7 @@
       criteria for evaluating IPE interventions against
       collaborative-practice or patient outcomes? The answer was
       15. Across that small set, the studies showed some positive
-      outcomes — on clinician self-reported behavior, patient
+      outcomes — on diabetes care, emergency-department culture and
       satisfaction, and a small number of clinical metrics — but
       the evidence base for linking IPE to measurable changes in
       practice and patient outcomes was thin. The reviewers' own
@@ -2817,8 +2816,7 @@
       The IOM's 2015 report, _Measuring the Impact of
       Interprofessional Education on Collaborative Practice and
       Patient Outcomes_, made the evidence gap the central
-      finding. There remains, the IOM concluded, a "paucity of
-      high-quality research" connecting IPE interventions to
+      finding. The commissioned review the report carries as Appendix A puts
       patient outcomes. The report proposed a conceptual model for
       doing the measurement properly — a chain from IPE
       intervention through learner outcome, collaborative
@@ -2863,7 +2861,7 @@
   beats: (
     "IPE — decades-long well-funded movement premised on training health professionals together for collaborative care",
     "Reeves et al. Cochrane 2013: only 15 studies from 1999–2011 met inclusion; evidence base thin for linking IPE to practice and patient outcomes",
-    "IOM 2015 makes the gap the central finding: 'paucity of high-quality research'; proposes a conceptual model for doing the measurement",
+    "IOM 2015 makes the gap the central finding; its Appendix A review names a 'paucity of high-quality research' on practice processes and patient outcomes; proposes a conceptual model for doing the measurement",
     "Canonical enthusiasm-evidence gap case — field instruments enthusiasm faster than outcomes; basis for Domain 3 sub-competency",
     "Pair with Case 40 (team-science training) and 123 (implementation-science training) — collaboration measurement is possible at program scale, absent at field scale",
   ),
@@ -2881,7 +2879,7 @@
   ),
   references: (
     [Reeves, Perrier, Goldman, Freeth, & Zwarenstein (2013), "Interprofessional education: effects on professional practice and healthcare outcomes (update)," _Cochrane Database of Systematic Reviews_, doi:10.1002/14651858.CD002213.pub3.],
-    [Institute of Medicine (2015), _Measuring the Impact of Interprofessional Education on Collaborative Practice and Patient Outcomes_, National Academies Press, NCBI NBK338352.],
+    [Institute of Medicine (2015), _Measuring the Impact of Interprofessional Education on Collaborative Practice and Patient Outcomes_, National Academies Press, doi:10.17226/21726, NCBI Bookshelf NBK338360.],
     [WHO (2010), _Framework for Action on Interprofessional Education and Collaborative Practice_ — the international policy backdrop.],
     [v2 paired cases: Team-science training (121), Implementation-science training (123).],
   ),
@@ -3056,7 +3054,7 @@
     [Poon, E. G., Keohane, C. A., Yoon, C. S., Ditmore, M., Bane, A., Levtzion-Korach, O., Moniz, T., Rothschild, J. M., Kachalia, A. B., Hayes, J., Churchill, W. W., Lipsitz, S., Whittemore, A. D., Bates, D. W., \& Gandhi, T. K. (2010). Effect of bar-code technology on the safety of medication administration. _New England Journal of Medicine_, 362(18):1698–1707. doi:10.1056/NEJMsa0907115 — the case's primary evaluation.],
     [Bonkowski, J., Carnes, C., Melucci, J., Mirtallo, J., Prier, B., Reichert, E., Moffatt-Bruce, S., \& Weber, R. J. (2013). Effect of barcode-assisted medication administration on emergency department medication errors. _Academic Emergency Medicine_, 20(8):801–806 — adjacent transfer evidence.],
     [Thompson, K. M., Swanson, K. M., Cox, D. L., Kirchner, R. B., Russell, J. J., Wermers, R. A., Storlie, C. B., Johnson, M. G., & Naessens, J. M. (2018), "Implementation of Bar-Code Medication Administration to Reduce Patient Harm," _Mayo Clinic Proceedings: Innovations, Quality & Outcomes_ 2(4):342–351, doi:10.1016/j.mayocpiqo.2018.09.001, PMID:30560236, PMCID:PMC6257885 — later single-site rollout reporting a 55.4% reduction in actual patient-harm events.],
-    [Institute for Safe Medication Practices, _Guidelines for Safe Electronic Communication of Medication Information_ — the institutional-commitment literature the workflow change rests on.],
+    [Institute for Safe Medication Practices (2019), _Guidelines for Safe Electronic Communication of Medication Information_ — the display and communication standards that bar-code scanning systems and eMARs are built against.],
   ),
   quote: [The cue is supplied in hardware at the point of administration; the workflow change is part of the deliverable, and the design is observational rather than randomized.],
   quote-source: "Editors' synthesis of Poon et al. (2010) and the BCMA implementation literature.",
@@ -3168,7 +3166,7 @@
     ],
     [
       The authors call the findings preliminary and name the
-      load-bearing confound explicitly: low-skill surgeons also
+      load-bearing qualification in the conclusion itself: "Although these findings are preliminary." The lowest skill quartile
       did fewer cases and operated more slowly. The
       skill-versus-volume confound is the central methodological
       hedge of the case. It is plausible — and consistent with the
@@ -3199,7 +3197,7 @@
     "Twenty bariatric surgeons each submit a representative laparoscopic gastric bypass video; rated blind by ≥10 peers on a structured scale",
     "Skill ratings range 2.6–4.8 with inter-rater reliability adequate for rank-ordering",
     "Linked to Michigan registry of 10,343 patients: bottom skill quartile complication rate 14.5%; greater skill → fewer reoperations, readmissions, ED visits",
-    "Authors call findings preliminary; skill-versus-volume confound named explicitly — low-skill surgeons did fewer cases and operated more slowly",
+    "Authors call findings preliminary; lowest skill quartile ran longer operations (137 vs 98 minutes); skill-versus-volume confound left open against the volume–outcome literature",
     "Multi-anchor: 2.1 primary, 1.1 and 6.2 alternates; editor may move",
   ),
   approaches: (
@@ -3217,10 +3215,10 @@
   references: (
     [Birkmeyer, J. D., Finks, J. F., O'Reilly, A., Oerline, M., Carlin, A. M., Nunn, A. R., Dimick, J., Banerjee, M., \& Birkmeyer, N. J. O., for the Michigan Bariatric Surgery Collaborative. (2013). Surgical skill and complication rates after bariatric surgery. _New England Journal of Medicine_, 369(15):1434–1442. doi:10.1056/NEJMsa1300625 — the case's primary evaluation.],
     [Birkmeyer, J. D., Stukel, T. A., Siewers, A. E., Goodney, P. P., Wennberg, D. E., \& Lucas, F. L. (2003). Surgeon volume and operative mortality in the United States. _New England Journal of Medicine_, 349(22):2117–2127 — the volume-outcome literature the confound rests against.],
-    [Vassiliou, M. C., et al. (2005). The MISTELS program — global objective assessment of laparoscopic skills. _Surgical Endoscopy_ — the surgical-skill assessment literature the rating scale derives from.],
+    [Vassiliou, M. C., Feldman, L. S., Andrew, C. G., et al. (2005). A global assessment tool for evaluation of intraoperative laparoscopic skills. _American Journal of Surgery_, 190(1):107–113 — the laparoscopic skill-rating literature this video assessment sits in.],
     [Jacobs, D. O. (2013). Cut well, sew well, do well? _New England Journal of Medicine_, 369(15):1466–1467. doi:10.1056/NEJMe1309785 — the accompanying editorial.],
   ),
-  quote: [Greater skill was associated with fewer reoperations, readmissions, and emergency department visits; the low-skill surgeons also did fewer cases and operated more slowly.],
+  quote: [Greater skill was associated with fewer reoperations, readmissions, and emergency department visits; the lowest skill quartile also ran longer operations — 137 minutes against 98.],
   quote-source: "Editors' synthesis of Birkmeyer et al. (2013) and the accompanying editorial comment.",
   le-insight: [
     The Birkmeyer skill–outcomes study is the first large-
@@ -3248,7 +3246,7 @@
   literature-items: (
     [Birkmeyer et al. (2013), _NEJM_],
     [Birkmeyer et al. (2003), _NEJM_ — surgeon volume and operative mortality],
-    [Vassiliou et al. (2005), _Surgical Endoscopy_ — MISTELS],
+    [Vassiliou et al. (2005), _American Journal of Surgery_ — GOALS],
   ),
   reflection-list: (
     [Identify a capability in your domain where the operator's actual technical capability is conventionally treated as too hard to measure at scale and therefore left as a hidden variable in the outcome equation. What would a Birkmeyer-style scalable, blind peer-rated measure look like?],
@@ -3263,10 +3261,10 @@
   number: 31,
   slug: "language-of-surgery-jigsaws-decomposing",
   title: "Language of Surgery / JIGSAWS — Decomposing Skill into Measurable Units",
-  year: "2009 – 2016",
+  year: "2006 – 2016",
   domains-list: ("surgery", "skill assessment", "human-motion analysis"),
   modes-code: "TKH",
-  impact: "JHU's Language of Surgery project treated surgical motion as language — decomposing tasks into gesture and sub-gesture motion primitives — and released JIGSAWS, a public da Vinci kinematic/video/gesture/skill-rating dataset that became a standard benchmark; experts used fewer gestures (26.29 vs 31.30) and fewer gesture errors than novices for a knot-tying task",
+  impact: "JHU's Language of Surgery project treated surgical motion as language — decomposing tasks into gesture and sub-gesture motion primitives — and released JIGSAWS, a public da Vinci kinematic/video/gesture/skill-rating dataset that became a standard benchmark; experts used fewer gestures (26.29 vs 31.30) and fewer gesture errors than novices on a suture-throw-and-surgeon's-knot task",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3378,7 +3376,7 @@
   beats: (
     "Language of Surgery (JHU, Hager et al.) treats surgical motion as language; decomposes task into surgemes and dexemes",
     "JIGSAWS released as a public da Vinci dataset with synchronized kinematic, video, gesture, and skill-rating tracks",
-    "Vedula et al. 2016: experts use fewer gestures (26.29 vs 31.30) and fewer gesture errors than novices on knot-tying",
+    "Vedula et al. 2016: on a suture throw and surgeon's knot, experts use fewer gestures (26.29 vs 31.30) and fewer gesture errors (1.00 vs 2.84) than novices",
     "Open question preserved: whether automated motion-level feedback accelerates skill acquisition or improves patient outcomes",
     "Pair with Case 30 (Birkmeyer) — Birkmeyer shows skill matters; this case shows skill is decomposable and machine-measurable",
   ),
@@ -3550,8 +3548,8 @@
     ),
   ),
   references: (
-    [Pierce RP, Eskridge BR, Rehard L, Ross B, Day MA, Belden JL (2020), "The Effect of Electronic Health Record Usability Redesign on Annual Screening Rates in an Ambulatory Setting," _Applied Clinical Informatics_ 11(4):580–588, doi:10.1055/s-0040-1715828. HIMSS (Greater Kansas City chapter) case study is the secondary write-up.],
-    [Co et al. (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141, doi:10.1093/jamia/ocz095 — adjacent systematic-review evidence on interaction-design redesign.],
+    [Pierce RP, Eskridge BR, Rehard L, Ross B, Day MA, Belden JL (2020), "The Effect of Electronic Health Record Usability Redesign on Annual Screening Rates in an Ambulatory Setting," _Applied Clinical Informatics_ 11(4):580–588, doi:10.1055/s-0040-1715828. A HIMSS case study of the project is the secondary write-up.],
+    [Hussain MI, Reynolds TL, Zheng K (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095 — adjacent systematic-review evidence on interaction-design redesign.],
     [Office of the National Coordinator for Health IT, SAFER Guides on CDS design — practitioner-tier guidance the redesign instantiates.],
     [Middleton et al. (2013), "Enhancing patient safety and quality of care by improving the usability of electronic health record systems," _JAMIA_ 20(e1):e2–e8 — the framing peer-reviewed paper on EHR-usability-as-safety.],
   ),
@@ -3579,8 +3577,8 @@
     CPOE/EHR adoption, Helios) the corpus already documents.
   ],
   literature-items: (
-    [HIMSS Greater KC chapter case study — University of Missouri Health Care],
-    [Co et al. (2019), _JAMIA_ — systematic review of alert-design optimization],
+    [HIMSS case study — University of Missouri Health Care],
+    [Hussain et al. (2019), _JAMIA_ — systematic review of alert-design optimization],
     [Middleton et al. (2013), _JAMIA_ — EHR usability as a patient-safety problem],
   ),
   reflection-list: (
@@ -3599,7 +3597,7 @@
   year: "2019 – 2024",
   domains-list: ("healthcare", "clinical decision support", "EHR design", "nursing workflow"),
   modes-code: "TDN",
-  impact: "Structured EHR alert redesign — fewer alerts, severity reclassification, interruptive-to-passive conversion, role-tailoring — reduced alert burden in published systematic-review and quality-improvement evidence; the 2024 case studies report alert-rate reduction with the underlying safety signal preserved",
+  impact: "Structured EHR alert redesign — fewer alerts, severity reclassification, interruptive-to-passive conversion, role-tailoring — reduced alert burden in published systematic-review and quality-improvement evidence; the 2024 case studies report alert-rate reduction, and the COVID-precautions project is the one that also reports the clinical outcome rising alongside it",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3646,7 +3644,7 @@
     [
       The 2019 _JAMIA_ systematic review by Hussain and colleagues
       aggregates the published evidence on EHR alert optimization.
-      The headline finding: interaction-design changes and
+      The headline finding: the interrupting modal — the most
       clinical-role tailoring reduce alert burden, and most
       evaluated optimization studies in the review reported
       alert-rate reduction post-intervention. The mechanism is not
@@ -3699,7 +3697,7 @@
   ),
   beats: (
     "Alert fatigue as the C3.2 failure mode at the EHR — high-firing low-action alerts train clinicians to dismiss",
-    "2019 JAMIA systematic review (Hussain et al.) — interaction design + role tailoring reduce alert burden across optimization studies",
+    "2019 JAMIA systematic review (Hussain et al.) — interrupting modals accepted least often; of the alternatives, only role tailoring raised acceptance",
     "2024 QI redesign of four high-firing nursing alerts: quantitative firing analysis + empathy mapping + iterative user feedback",
     "2024 interruptive-to-passive conversion of COVID-precautions alert with dual outcomes: burden + precautions-order timing",
     "Evidence tier: systematic review peer-reviewed, per-site QI publications practice-tier; durability across upgrades open",
@@ -3718,8 +3716,8 @@
   ),
   references: (
     [Hussain et al. (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095.],
-    [Patterson E. (2024), "Navigating Alert Fatigue: A Case Study in Electronic Health Record Alert Design Optimization," _Studies in Health Technology and Informatics_, PubMed 39049299 — nursing-workflow QI redesign of four high-firing alerts.],
-    [Authors (2024), "Addressing Alert Fatigue by Replacing a Burdensome Interruptive Alert with Passive Clinical Decision Support," _Applied Clinical Informatics_ — interruptive-to-passive conversion with dual outcomes.],
+    [Patterson E (2024), "Navigating Alert Fatigue: A Case Study in Electronic Health Record Alert Design Optimization," _Studies in Health Technology and Informatics_ 315:447–451, doi:10.3233/SHTI240188 — nursing-workflow QI redesign of four high-firing alerts; all four removed, 877 unactionable disruptive nursing hours released.],
+    [Fallon A, Haralambides K, Mazzillo J, Gleber C (2024), "Addressing Alert Fatigue by Replacing a Burdensome Interruptive Alert with Passive Clinical Decision Support," _Applied Clinical Informatics_ 15(1):101–110, doi:10.1055/a-2226-8144 — 80% cut in alert firings; COVID precautions ordered rose from 23% to 61%.],
     [Office of the National Coordinator for Health IT, SAFER Guides on CDS — practitioner-tier guidance the redesigns instantiate.],
     [Ancker et al. (2017), "Effects of workload, work complexity, and repeated alerts on alert fatigue in a clinical decision support system," _BMC Medical Informatics and Decision Making_ 17:36 — adjacent measurement evidence.],
   ),
@@ -3766,7 +3764,7 @@
   year: "2022 – 2024",
   domains-list: ("healthcare", "clinical decision support", "machine learning"),
   modes-code: "TKD",
-  impact: "Boussina et al. NPJ Digital Medicine 2024 prospective multi-site implementation of the COMPOSER (COnformal Multidimensional Prediction Of SEpsis Risk) deep-learning model at UC San Diego Health; reported a 1.9 percentage-point absolute decrease (17% relative) in in-hospital sepsis mortality and a 5.0 percentage-point absolute increase in sepsis bundle compliance during the deployment period, evaluated against the pre-deployment baseline period within the same two-emergency-department health system",
+  impact: "Boussina et al. NPJ Digital Medicine 2024 before-and-after quasi-experimental evaluation of the COMPOSER (COnformal Multidimensional Prediction Of SEpsis Risk) deep-learning model at UC San Diego Health; reported a 1.9 percentage-point absolute decrease (17% relative) in in-hospital sepsis mortality and a 5.0 percentage-point absolute increase in sepsis bundle compliance during the deployment period, evaluated against the pre-deployment baseline period within the same two-emergency-department health system",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3792,7 +3790,7 @@
     typology in sepsis at three deployments — Case 20 (TREWS at
     Johns Hopkins), Case 5 (Epic Sepsis Score across multiple
     health systems), and COMPOSER at UCSD. The honest hedges from
-    the source are binding: the deployment is prospective but
+    the source are binding: the study is
     not RCT-grade, the mortality reduction is multifactorial
     (the COMPOSER deployment ran alongside other process
     improvements at UCSD), and the author team is explicit
@@ -3813,7 +3811,7 @@
       and higher false-positive rates than the vendor's
       validation data implied. COMPOSER is the third deployment
       in the typology and the second prospective-positive case.
-      The deployment is at UC San Diego Health across two
+      The deployment is at two UC San Diego emergency
       hospital sites, integrated into the electronic health
       record and into emergency-department and inpatient
       workflows.#cn()
@@ -3850,7 +3848,7 @@
       against the same hospital sites' historical baseline
       rather than against a contemporaneous randomized control
       arm — and the authors are explicit about the limitation.
-      The deployment ran alongside other process improvements
+      The authors record no other quality-improvement
       at UCSD's sepsis-care pathway, and the authors are honest
       that the mortality reduction is multifactorial: COMPOSER's
       contribution cannot be cleanly separated from the
@@ -3881,7 +3879,7 @@
       in the prose. The deployment is prospective implementation,
       not an RCT; the mortality reduction and bundle-compliance gain are
       evaluated against the same health system's historical
-      baseline, and the comparison cannot rule out concurrent
+      baseline, and every emergency department in the system
       improvements in sepsis care that would have produced
       similar reductions in the absence of COMPOSER. The
       mortality reduction is multifactorial — COMPOSER was
@@ -3902,17 +3900,17 @@
     "Boussina et al. NPJ Digital Medicine 2024; COMPOSER deep-learning sepsis-risk model at UC San Diego Health, two-site prospective implementation",
     "Conformal-prediction framework: calibrated uncertainty intervals enable model abstention when input is out-of-distribution",
     "Deployment outcomes: 1.9 pp absolute decrease in in-hospital sepsis mortality; 5.0 pp absolute increase in sepsis bundle compliance vs pre-deployment baseline",
-    "Hedges binding: prospective not RCT; mortality reduction multifactorial — concurrent process improvements at UCSD cannot be cleanly separated from COMPOSER's contribution",
+    "Hedges binding: before-and-after, not randomized; no contemporaneous comparison arm because every UCSD ED ran the model; single academic centre, external validation pending",
     "Completes AI-delegation typology in sepsis: Case 20 (TREWS), Case 5 (Epic Sepsis Score), COMPOSER (Case 34)",
   ),
   approaches: (
     during: (
       [Build the abstention mechanism as part of the deployment, not as a post-hoc filter; the conformal-prediction framework's clinical value is that the model can refuse to alert when its calibrated confidence does not support an alert, and the abstention is a deployment capability rather than an analysis artifact.],
-      [Pre-specify the multifactorial-attribution question before evaluation; the case demonstrates that prospective implementation alongside concurrent process improvement requires the evaluation to acknowledge the attribution limit, and pre-specifying the acknowledgement is the discipline.],
+      [Pre-specify how the attribution question will be answered before evaluation; the case demonstrates that a deployment reaching every unit at once leaves no comparison arm, and that naming the substitute — a confounder-adjusted causal-impact analysis, and a record of what else changed — is the discipline.],
       [Integrate the model into specific workflow surfaces — ED admission, inpatient deterioration — rather than as a hospital-wide alerting layer; the deployment's specificity is part of what makes the conformal-prediction abstention structure operationally meaningful.],
     ),
     after: (
-      [Carry the multifactorial-mortality hedge into print without softening; the case's pedagogical value depends on the attribution question being explicit alongside the deployment-outcome reporting.],
+      [Carry the missing-comparison-arm hedge into print without softening; the case's pedagogical value depends on the attribution question being explicit alongside the deployment-outcome reporting.],
       [Pair in syllabi with Case 20 (TREWS) and Case 5 (Epic Sepsis) so the AI-delegation typology in sepsis is taught as a three-case set at the deployment-evidence level.],
       [Use the case to anchor the cue-and-alert design LEO; the curricular target is the discipline of building abstention into the alerting architecture as a capability deliverable, and of evaluating the abstention against the calibration-gap failure mode the prior cases named.],
     ),
@@ -3923,7 +3921,7 @@
     [Wong, A., Otles, E., Donnelly, J. P., Krumm, A., McCullough, J., DeTroyer-Cooley, O., et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070 — the load-bearing external-validation paper on Epic Sepsis (Case 5).],
     [Adams, R., Henry, K. E., Sridharan, A., Soleimani, H., Zhan, A., Rawat, N., Johnson, L., et al. (2022), "Prospective, multi-site study of patient outcomes after implementation of the TREWS machine learning-based early warning system for sepsis," _Nature Medicine_ 28:1455–1460 — the prospective-positive TREWS deployment paper (Case 20).],
   ),
-  quote: [The deployment is prospective implementation, not RCT; the mortality reduction is multifactorial — COMPOSER was deployed alongside other process improvements at UCSD, and the contribution cannot be cleanly separated; the conformal-prediction abstention is the methodological contribution the case anchors.],
+  quote: [The study is before-and-after, not randomized, and every emergency department in the system ran the model, so there is no contemporaneous comparison arm; the conformal-prediction abstention is the methodological contribution the case anchors.],
   quote-source: "Editors' synthesis of Boussina et al. (2024) NPJ Digital Medicine and the surrounding sepsis-prediction deployment literature.",
   le-insight: [
     COMPOSER is the third clinical-AI sepsis case in the
@@ -3969,7 +3967,7 @@
   year: "2018 – present",
   domains-list: ("healthcare", "tech"),
   modes-code: "HKD",
-  impact: "Recurring documented cases of FDA-cleared radiology AI tools performing worse in deployment than in validation, often along demographic lines; the canonical v1 anchor for clinical-AI deployment without surveillance, cross-referenced by the Epic Sepsis (Case 5) and pulse-oximetry (Case 26) deployment-evidence cases",
+  impact: "FDA-cleared radiology AI is cleared on evidence that cannot establish deployment performance — 126 of 130 devices reviewed by Wu et al. were evaluated only retrospectively, 93 reported no multi-site assessment, and 17 reported demographic subgroup performance; the canonical v1 anchor for clinical-AI deployment without surveillance, cross-referenced by the Epic Sepsis (Case 5) and pulse-oximetry (Case 26) deployment-evidence cases",
   diagram: dgm.dgm-compare(
     "validation",
     "AUC 0.9+",
@@ -3997,7 +3995,11 @@
     2019) showed that bias in the labels used to train clinical AI can
     under-allocate care to Black patients even when the model looks
     well-calibrated on its chosen proxy. Wachter and Brynjolfsson
-    (_JAMA_ 2023) raised the generative-AI extension. The FDA's 510(k)
+    (_JAMA_ 2024) raised the generative-AI extension. Wu et al.
+    (_Nature Medicine_ 2021) put numbers on the clearance evidence
+    itself: of 130 devices reviewed, 126 were evaluated only
+    retrospectively, 93 reported no multi-site assessment, and 17
+    reported performance by demographic subgroup. The FDA's 510(k)
     clearance pathway — the route most cleared radiology AI tools have
     taken — does not routinely require demographic stratification of
     validation metrics or post-market monitoring of how a tool performs
@@ -4034,7 +4036,7 @@
     ],
     // -- What Is Emerging --
     [
-      Multiple FDA-cleared radiology tools — chest-X-ray classifiers,
+      The research classifiers built on the same public chest-X-ray
       mammography aids, CT triage systems — have been documented in
       the peer-reviewed literature performing worse in deployment
       than in validation, with the degradation often concentrated in
@@ -4047,7 +4049,7 @@
       2021) extended the finding directly: across three large public
       chest-X-ray datasets, classifiers under-diagnosed Black,
       Hispanic, female, and lower-socioeconomic patients at higher
-      rates, with the disparity present across model architectures —
+      rates, with the underdiagnosis rate highest where those
       evidence that the shortfall is not a stray bug but a
       predictable consequence of which patients the training set did
       and did not contain.#cn()
@@ -4141,10 +4143,10 @@
     ),
   ),
   references: (
-    [Larrazabal, A. J., Nieto, N., Peterson, V., Milone, D. H., & Ferrante, E. (2020), "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis," _PNAS_ 117(23):12592–12594 — sensitivity drops for under-represented groups on NIH ChestX-ray14 and CheXpert.],
-    [Seyyed-Kalantari, L., Zhang, H., McDermott, M. B. A., Chen, I. Y., & Ghassemi, M. (2021), "Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations," _Nature Medicine_ 27:2176–2182 — disparities across Black, Hispanic, female, and lower-socioeconomic subgroups; persistence across model architectures.],
+    [Larrazabal, A. J., Nieto, N., Peterson, V., Milone, D. H., & Ferrante, E. (2020), "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis," _PNAS_ 117(23):12592–12594 — AUC drops for under-represented genders on NIH ChestX-ray14 and CheXpert, across three network architectures.],
+    [Seyyed-Kalantari, L., Zhang, H., McDermott, M. B. A., Chen, I. Y., & Ghassemi, M. (2021), "Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations," _Nature Medicine_ 27:2176–2182 — disparities across Black, Hispanic, female, and lower-socioeconomic subgroups; underdiagnosis highest for intersectional subpopulations such as Hispanic female patients.],
     [Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019), "Dissecting racial bias in an algorithm used to manage the health of populations," _Science_ 366(6464):447–453 — proxy-label bias in a care-management algorithm; ~200 million Americans/year are subject to tools of this class.],
-    [Wachter, R. M. & Brynjolfsson, E. (2023), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_ 331(1):65–69 — generative-AI extension of the proxy-and-population problem.],
+    [Wachter, R. M. & Brynjolfsson, E. (2024), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_ 331(1):65–69, doi:10.1001/jama.2023.25054 — generative-AI extension of the proxy-and-population problem.],
     [FDA, "Proposed Regulatory Framework for Modifications to AI/ML-Based Software as a Medical Device" (2019); FDA draft guidance on AI/ML-Based SaMD (2025), with Predetermined Change Control Plan and Good Machine Learning Practice principles — the regulatory trajectory; absence of mandatory demographic stratification at clearance and post-market monitoring of in-use performance.],
   ),
   quote: [Performance metrics on a clearance dataset are not the same as performance metrics in deployment populations.],
