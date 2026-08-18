@@ -2369,8 +2369,7 @@
     ],
     [
       The journalism-tier evidence flag is binding on the case's
-      framing. The complaint and the partnership-termination
-      record are investigation-grade artifacts. The
+      framing. The complaint is an unrebutted pleading and the partnership-termination record is contemporaneous reporting; neither is investigation-grade in the sense a GAO audit is, and the journalism-tier flag governs both. The
       predatory-targeting reconstruction relies on the
       complaint's allegations and on contemporaneous reporting
       — Higher Ed Dive, classaction.org summaries, the Project

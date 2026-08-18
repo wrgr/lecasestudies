@@ -359,10 +359,7 @@
     role suitability; engineers found that the model downgraded
     resumes containing the word "women's" (as in "women's chess
     club captain") and downgraded resumes from all-women's
-    colleges. Attempts to remove the offending features
-    surfaced additional features carrying the same signal — the
-    trained bias could not be debiased through feature engineering
-    inside the model. The case rests on Reuters single-source
+    colleges. Amazon edited the programs to be neutral to the offending terms, and Reuters reported there was no guarantee the models would not devise other ways of sorting that proved discriminatory — a prospective judgement about what feature engineering could assure, not a demonstration that the bias had been shown irreducible. The case rests on Reuters single-source
     reporting; Amazon never published the technical detail. The
     journalism-tier evidence-flag under the title carries the
     standing language. The load-bearing teaching point — that
@@ -1104,11 +1101,7 @@
       removes some of the channel through which bias entered.#cn()
     ],
     [
-      The pricing margin tells the harder story. Even when race was not
-      among the model inputs, minority borrowers were charged
-      systematically higher rates than equivalent White borrowers — by
-      about 8 basis points on purchase loans and 4 on refinances in the
-      paper's central estimate. The disparity did not vanish because the
+      The pricing margin tells the harder story. Even when race was not among the model inputs, minority borrowers were charged systematically higher rates than equivalent White borrowers — 7.9 basis points on purchase loans and 3.6 on refinances in the paper's central estimate. Those are market-wide figures across lenders, not the algorithmic channel's own share: the same paper finds fintech algorithms discriminate about 40 percent less than face-to-face lenders, so the finding is that automation narrowed the gap without closing it. The disparity did not vanish because the
       variable was omitted; the variable returned through features
       correlated with race in the present US population — geography,
       credit-history depth, and other proxies that the model is allowed
@@ -1809,10 +1802,7 @@
       driver. The robotaxi detected the collision and came to a
       stop. The vehicle then executed what Cruise later described
       as a pullover maneuver, traveling roughly 20 feet at about
-      7 mph with the pedestrian pinned beneath it. The collision
-      sequence itself involved a human driver, not Cruise's
-      software, but the post-impact behavior was Cruise's system
-      acting on its own.#cn()
+      7 mph with the pedestrian pinned beneath it. A hit-and-run driver struck the pedestrian first and threw her into the path of the Cruise vehicle, which then struck her, braked, and — with her pinned beneath it — executed a pullover manoeuvre that dragged her some twenty feet. The initiating collision was not Cruise's; everything after it was Cruise's system acting on its own.#cn()
     ],
     [
       In the immediate days after the incident, Cruise shared video

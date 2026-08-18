@@ -244,7 +244,7 @@
   year: "1975–2012",
   domains-list: ("industrial",),
   modes-code: "DKN",
-  impact: "Inventor of the digital camera (1975) and holder of foundational digital-imaging patents; filed for Chapter 11 bankruptcy in January 2012 with the digital transition essentially un-run",
+  impact: "Inventor of the digital camera (1975) and holder of foundational digital-imaging patents; shipped digital cameras from 1991 and led the consumer market at points in the 2000s, and still filed for Chapter 11 bankruptcy in January 2012, unable to rebuild the business around margins the film franchise had set",
   diagram: dgm.dgm-stat(
     "1975",
     "first digital camera prototype · 0.01 megapixel",

@@ -900,11 +900,7 @@
     The High-Impact Learning System (HILS), introduced by
     Brinkerhoff and Apking in 2001, reframes L&D as a system
     spanning pre-training, the event itself, and post-training.
-    The design principle is that the training event alone
-    explains a small fraction of transfer variance — Blume's
-    2010 meta-analysis (Case 65) identifies the work
-    environment as the decisive variable — and so the program
-    has to engineer the environment alongside the event. HILS
+    The design principle is that the training event alone explains a small fraction of transfer variance, so the program has to engineer the environment alongside the event. Blume's 2010 meta-analysis (Case 65) arrived nine years after HILS: it is the later evidence the model anticipated, not its source. HILS
     deployments include pre-training line-manager alignment
     and work-context preparation; the event itself; and
     post-training supervisor support and on-the-job practice
@@ -974,10 +970,7 @@
     [
       The LENS teaching point is the framework-level claim
       that capability lives at the operator-system interface,
-      not in the individual. HILS is a documented practice
-      pattern that names the environment-as-intervention
-      move; it makes Blume's meta-analytic finding (Case 65)
-      operational. The evidence-tier flag is
+      not in the individual. HILS is a documented practice pattern that names the environment-as-intervention move; Blume's later meta-analytic finding (Case 65) is the evidence that caught up with it. The evidence-tier flag is
       practice-synthesis — the model and the deployment
       pattern are durable in practitioner literature, the
       per-firm effect magnitudes are self-reported, future
@@ -1017,9 +1010,7 @@
   quote: [If the work environment is the decisive transfer variable, the work environment has to be a design variable. HILS makes it one.],
   quote-source: "Editors' synthesis of Brinkerhoff & Apking (2001) and the Blume meta-analytic finding.",
   le-insight: [
-    HILS is the deployed-program operationalization of
-    Blume's environment-as-decisive finding (Case 65) and
-    the design-side counterpart of SCM (Case 83). Evidence
+    HILS is the deployed-program form of the environment-as-decisive claim that Blume's 2010 meta-analysis (Case 65) later supported, and the design-side counterpart of SCM (Case 83). Evidence
     is practice-synthesis: the model is durable in
     practitioner literature, per-firm effect sizes are
     self-reported, future validation continues. The subobjective *Judgment under inadequate evidence* (4.4) is the capability
@@ -2138,9 +2129,7 @@
     Quasi-Experimental Investigation," reports three quasi-
     experimental studies of hybrid deployments where AI
     augmentation is added to human tutoring rather than used to
-    replace it. The headline finding is that learning outcomes
-    improved relative to comparison conditions in each of the
-    three studies. The contribution the case carries for the
+    replace it. The headline finding is that learning outcomes improved in each of the three studies, and in the two carrying a comparison condition the improvement was measured against it; Study 3 had no control group. The contribution the case carries for the
     LENS framework is the design positioning: the AI is
     augmentation, the human tutor retains the authorization to
     override and re-direct, and the measured outcome is student
@@ -2234,7 +2223,7 @@
   ),
   beats: (
     "Thomas et al. LAK 2024 best paper: three quasi-experimental studies of hybrid human-AI tutoring",
-    "Headline: learning outcomes improved relative to comparison conditions in each of the three studies",
+    "Headline: learning outcomes improved in all three studies; two had comparison conditions, Study 3 had no control group",
     "Design positioning: AI as augmentation, human tutor retains override authorization, measured outcome is student learning",
     "Educational analog of Case 20 (TREWS clinician-AI teaming); contrast with Case 5 (Epic Sepsis delegation collapse)",
     "Open: longitudinal persistence; transfer to lower-resource tutoring where human-tutor availability is the binding constraint",
@@ -3030,12 +3019,7 @@
       aspirational.#cn()
     ],
     [
-      The instrument is dimensional. Infrastructure asks whether
-      the technical capability — data pipelines, secure storage,
-      analytical platforms — is in place at the level the planned
-      adoption requires. Human resources asks whether the
-      institution has the analytical and pedagogical staffing the
-      tools will need. Ethics asks whether the governance and
+      The instrument is dimensional. Data management asks whether collection, storage and stewardship are in place at the level the planned adoption requires. Data analysis asks whether the institution has the analytical capability and staffing the tools will need. Pedagogy asks whether the analytics are tied to instructional decisions rather than reporting. Ethics and privacy ask, separately, whether the use is defensible and whether the data subject is protected. Ethics asks whether the governance and
       consent architecture has been built. Pedagogy asks whether
       the analytics integrate with the institution's learning
       design, or whether they would be bolted on as a separate
@@ -4346,10 +4330,7 @@
       service, a Latin American university on a US cloud, an
       African university on a European platform — all share the
       structural seam, and the African case surfaces it most
-      starkly because the regime asymmetry is largest there. The
-      case is the case-grounded basis for proposing
-      extraterritorial-platform-governance as a sub-competency the
-      existing curriculum does not yet name.
+      starkly because the regime asymmetry is largest there. The case is the case-grounded instance of a sub-competency both frameworks already name — LENS 5.6, cross-regime and platform-dependency governance, and induced 5.3, which is this case's own anchor.
     ],
   ),
   beats: (

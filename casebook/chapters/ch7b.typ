@@ -37,8 +37,7 @@
     lets services interoperate without forcing a central
     monolith. By December 2024 the country reported effectively
     100% digitalization of government services across X-Road,
-    with sub-five-minute tax filing for more than 95% of the
-    population. The case sits inside C7 not because of the
+    with more than 95% of tax declarations filed electronically, most in a few minutes. The case sits inside C7 not because of the
     headline outcomes but because of the load-bearing
     self-critique surfaced in the peer-reviewed analysis: by
     committing the country to X-Road as the data-exchange layer,
@@ -548,10 +547,7 @@
     ],
     // -- What Is Emerging --
     [
-      Researchers examining these systems found a structural flaw. Because
-      the training data records where police have made arrests rather than
-      where crime has actually occurred, the model learns enforcement
-      patterns, not crime patterns. Lum & Isaac (2016) showed the result is
+      Researchers examining these systems found a structural flaw. PredPol's place-based forecasts ran on reported crime incidents — type, location, date and time — not on arrest records. The feedback concern survives the correction and changes shape: reporting is itself uneven across neighbourhoods, and directing patrols to forecast cells generates more recorded incidents there, so the model can learn the distribution of police attention alongside the distribution of crime. Lum & Isaac (2016) showed the result is
       a feedback loop: patrols are sent where police already went,
       generating more recorded incidents that confirm the prediction — a
       loop that grows more confident the longer it runs, because its own
@@ -600,7 +596,7 @@
   ),
   beats: (
     "Police adopted statistical prediction tools lending discretionary judgment a veneer of objectivity",
-    "Training on arrest records, models learn enforcement patterns and create self-confirming feedback loops",
+    "Training on reported crime incidents, with reporting and patrol allocation both uneven, models learn enforcement patterns and create self-confirming feedback loops",
     "Whether a model trained on institutional behavior can predict the underlying phenomenon",
     "Dirty data documented; Santa Cruz, New Orleans, Los Angeles suspended deployments after equity reviews",
     "Pre-deployment construct-validity audit remains absent in most jurisdictions adopting these systems",

@@ -782,9 +782,9 @@
   le-insight: [
     I-PASS is the structured-handoff intervention the
     patient-safety literature anchors on — a 23% relative
-    reduction in preventable adverse events across nine
-    residency programs, with no negative effect on resident
-    workflow. The hedge that survives verbatim is the
+    reduction in medical errors and a 30% reduction in
+    preventable adverse events across nine residency
+    programs, with no negative effect on resident workflow. The hedge that survives verbatim is the
     authors' own: the study design "precludes definitively
     establishing a causal link," and the bundle, not the
     mnemonic alone, is what the evidence is about.
@@ -5467,7 +5467,7 @@
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
-  evidence-flag: "preprint-tier",
+  evidence-flag: "mixed-evidence-tier",
   induced-anchor: "6.4",
   lens-anchor: "D5/PT4",
   leo-anchor: "LEO-2, LEO-5",
@@ -5528,9 +5528,7 @@
       anchor finding; downstream reporting (MIT News 2022 and
       subsequent AI-augmented maternal-care work) describes the
       program's continuation and adjacent developments but is
-      journalism-tier, not investigation-grade. The case carries
-      the preprint-tier evidence flag honestly: one peer-reviewed
-      evaluation does not close the question of long-term outcome
+      journalism-tier, not investigation-grade. The case carries its evidence-tier flag honestly: one peer-reviewed evaluation does not close the question of long-term outcome
       durability or generalization to other low-resource settings.#cn()
     ],
     [
@@ -5563,7 +5561,7 @@
     "Rwanda Ministry of Health mHealth program (2013–2018) puts mobile decision support in CHW hands for maternal/newborn care",
     "Tool scoped to extend the CHW's diagnostic-and-referral role, not relocate judgment to the center",
     "Ruton et al. (2018) find uptake rose only where RapidSMS was paired with added support; Hategeka et al. (2019) find no significant change on national survey data",
-    "Preprint-tier evidence flag: one peer-reviewed evaluation; durability and generalization remain open",
+    "Mixed-evidence tier: peer-reviewed but conditional and null findings; durability and generalization remain open",
     "Pairs with PEPFAR (Sub-Saharan training-modality comparison) as the African workforce-capability evidence base",
   ),
   approaches: (
@@ -5582,7 +5580,7 @@
     [Hategeka, C., Ruton, H., Law, M. R., et al. (2019), "Effect of a community health worker mHealth monitoring system on uptake of maternal and newborn health services in Rwanda," _Global Health Research and Policy_, PMC6429813.],
     [Rwanda Ministry of Health, community health program documentation and CHW scope-of-practice guidance, 2013–2018.],
     [MIT News (2022), reporting on subsequent AI-augmented maternal-care work in Rwanda — journalism-tier companion to the peer-reviewed evaluation.],
-    [Cross-reference: Case 201 (PEPFAR HIV training-modality comparison) for the paired Sub-Saharan workforce-capability evidence.],
+    [Cross-reference: Case 18 (PEPFAR HIV training-modality comparison) for the paired Sub-Saharan workforce-capability evidence.],
   ),
   quote: [The mHealth tool did not centralize the work. It instrumented the periphery — and kept judgment where it already was.],
   quote-source: "Editors' synthesis of Hategeka et al. (2019), Ruton et al. (2018), and the Rwanda CHW program documentation.",
@@ -5592,8 +5590,7 @@
     role, with peer-reviewed evaluation showing uptake gains only when
     the system was paired with added support, and a controlled
     national-survey series showing no significant change from the
-    system alone. The preprint-tier
-    flag is load-bearing — one study does not close the
+    system alone. The evidence-tier flag is load-bearing — one study does not close the
     durability or generalization question, and the broader
     impact claims rest partly on practitioner reporting. Future
     validation ongoing.

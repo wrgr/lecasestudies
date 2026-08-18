@@ -21,6 +21,26 @@ adversarial reviewers instructed to kill them, defaulting to "unproven" when tor
 3. **"REFUTED" means defensible, not false.** The gate asks whether a competent editor
    could justify the current text. That is the right bar for changing a printed book.
 
+## Gate complete — corpus-wide result (August 2026)
+
+The adversarial gate has now run on **216 of 247** high-severity findings (87%); the
+balance sit inside cases already corrected. Verdicts:
+
+| | n | share |
+|---|---:|---:|
+| **CONFIRMED** | **25** | **11.6%** |
+| Downgraded (real, lower severity) | 63 | 29% |
+| Refuted (text defensible as written) | 103 | 48% |
+| Unproven (needs a source) | 25 | 11.6% |
+
+**The 25% confirmation rate from the 24-finding calibration sample did not hold.** At full
+coverage it is **11.6%** — the sample was random but too small, and it ran hot. So of 1,091
+raw findings, roughly **25 are genuine high-severity defects**, not the 247 logged.
+
+The predictor held perfectly: **every confirmed finding was settleable inside the case** —
+one field contradicting another, or a plain matter of record. Not one finding that required
+an unverifiable external fact survived.
+
 ## Headline numbers
 
 | | |

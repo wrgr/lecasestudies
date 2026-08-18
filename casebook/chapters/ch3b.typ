@@ -1260,10 +1260,7 @@
       that TCAS RAs take precedence over conflicting ATC
       instructions; ATC procedures were tightened around
       coordination of conflict-resolution between controllers
-      and TCAS; and RTCA / Eurocontrol developed TCAS II
-      Version 7.1 (released 2008), which added the
-      "level off, level off" reversal logic for the specific
-      scenario where one aircraft does not follow its RA, and
+      and TCAS; and RTCA / Eurocontrol developed TCAS II Version 7.1 (released 2008), which made two separate changes: it added reversal logic for the case where an aircraft manoeuvres opposite to its resolution advisory, and it replaced the ambiguous "adjust vertical speed, adjust" advisory with the unambiguous "level off, level off", and
       clarified RA wording and behavior at the boundary.#cn()
     ],
     [

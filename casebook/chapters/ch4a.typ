@@ -486,8 +486,7 @@
     part; the maintainers are the hard part. A decade of program
     schedules treated maintainer training as a follow-on cost, not a
     fielding gate. The fleet is now operating at half of its design
-    readiness, and the program of record is more than a trillion dollars
-    over its 2018 estimate.
+    readiness, and the program of record now carries a life-cycle estimate above \$1.7 trillion, of which roughly \$1.3 trillion is operating and support.
   ],
   lens-approach: [
     LENS treats the F-35 in LEN 5 as the canonical case of *Capability-
@@ -1589,8 +1588,7 @@
       torpedo ran about ten feet too deep, that the Mark 6 magnetic
       exploder failed routinely, and that the contact pin buckled on
       perpendicular impact — three independent defects that had been masking
-      one another at sea, which is why a fleet commander's controlled trial,
-      not another combat patrol, was finally able to separate and prove them.#cn()
+      one another at sea, which is why it took a fleet commander's controlled trials, not further combat patrols, to force each defect in turn onto the record.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -1619,7 +1617,7 @@
   beats: (
     "The Bureau of Ordnance had effectively forbidden live trials, so the Mark 14 went to war unproven",
     "Submarine crews reported deep runs, premature detonations, and crushed contact pins from early 1942",
-    "Lockwood ordered fleet tests; Tinosa's eleven duds on a stopped target finally separated the three defects",
+    "Lockwood ordered fleet tests; the three defects were conceded one at a time across some twenty-one months, Tinosa's eleven duds exposing the last of them",
     "The binding gap was a channel by which the bureau could be made to hear what the boats already knew",
     "By late 1943 the three defects were corrected; the episode became the canonical insulated bureau case",
   ),

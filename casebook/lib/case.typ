@@ -52,7 +52,10 @@
   induced-anchor: none,  // induced-framework anchor as a string, e.g. "2.4"
   leo-anchor: none,      // LEO anchor for course mapping, e.g. "LEO-3, LEO-5"
   coi: none,             // COI disclosure string — renders prominently under the case heading when set
-  evidence-flag: none,   // short flag string for weaker-evidence cases (e.g. "journalism-tier", "preprint-tier"); future-validation language is implied
+  evidence-flag: none,   // short flag string for weaker-evidence cases ("journalism-tier", "preprint-tier",
+                         // "practice-synthesis-tier", "thesis-pending", "internal-pm", "mixed-evidence-tier"
+                         // — the last for peer-reviewed work whose findings are conditional or null);
+                         // future-validation language is implied
   competing-readings: (), // 2–4 short items: rival causal readings the record supports and
                           // no study adjudicates. Admitted only where the rival is citable,
                           // unadjudicated, predicts transfer failure differently, and changes

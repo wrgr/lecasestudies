@@ -472,8 +472,7 @@
       The missing capability was ownership of the interface itself. Where a
       system is split across two organizations, the place they meet is not a
       documentation footnote but an engineering deliverable in its own right —
-      with an owner, a specification, and a verification step. Here it had
-      none of the three. Each team treated its own side as complete and the
+      with an owner, a specification, and a verification step. Here the specification existed and called for metric units; what was missing was any check that the delivered software complied with it, and any escalation path for the navigators who saw the trajectory drifting for months. Each team treated its own side as complete and the
       boundary as someone else's concern, so the one assumption that had to be
       shared and checked — what units are we speaking in? — was precisely the
       one no one verified. The spacecraft did not fail; it performed as built;
