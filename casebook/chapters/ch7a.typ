@@ -697,7 +697,7 @@
   year: "1999 – 2015",
   domains-list: ("tech", "gov"),
   modes-code: "GHK",
-  impact: "more than 900 sub-postmasters wrongfully convicted; 236 imprisoned; at least 13 linked suicides; described as the most widespread miscarriage of justice in UK history",
+  impact: "more than 900 sub-postmasters wrongfully convicted; 236 imprisoned on the figure given in Parliament; 13 suicides the inquiry could not rule out as Horizon-caused; described as the most widespread miscarriage of justice in UK history",
   diagram: dgm.dgm-stat(
     "900",
     "wrongful prosecutions across 20+ years",
@@ -749,10 +749,7 @@
       prosecuted people for the system's errors.#cn() The courts began
       quashing convictions from December 2020, and the public inquiry under Sir Wyn
       Williams found that senior employees "knew, or at the very least should
-      have known, that Legacy Horizon was capable of error" — establishing it
-      as the most widespread miscarriage of justice in UK history, sustained
-      precisely because that internal knowledge never reached the people on
-      trial.#cn()
+      have known, that Legacy Horizon was capable of error" — the finding at the centre of what is widely called the most widespread miscarriage of justice in UK history, sustained precisely because that internal knowledge never reached the people on trial.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -774,8 +771,7 @@
       to account before the continuing inquiry.#cn() What finally forced the
       political reckoning was not the courts but a television drama: the ITV
       series _Mr Bates vs The Post Office_ (January 2024) galvanized public
-      pressure that produced the mass-exoneration statute, and former chief
-      executive Paula Vennells returned her CBE the following month. When Sir
+      pressure that produced the mass-exoneration statute, and former chief executive Paula Vennells returned her CBE within days. When Sir
       Wyn Williams published the inquiry's first volume in July 2025, he found
       that the compensation schemes had still not delivered full, fair, and
       prompt redress, and that the true human toll — including suicides — was
@@ -874,9 +870,7 @@
     fare flight in reliance on the chatbot's representation, then
     submitted a retroactive bereavement-fare claim. Air Canada
     refused the claim on the ground that the actual policy
-    required pre-booking application. Moffatt sued in the BC
-    Civil Resolution Tribunal — Canada's online small-claims
-    forum — and the tribunal awarded \$650.88 in damages. Air
+    required pre-booking application. Moffatt sued in the BC Civil Resolution Tribunal — British Columbia's online small-claims forum — and the tribunal awarded \$650.88 in damages. Air
     Canada had argued that the chatbot was a "separate legal
     entity" responsible for its own outputs; the tribunal
     rejected the argument and held that Air Canada was liable
@@ -899,11 +893,7 @@
       supporting documentation. Moffatt booked a full-fare round
       trip to Toronto in reliance on the representation. After
       travel, he submitted a retroactive bereavement-fare claim
-      with the documentation the chatbot had described. Air
-      Canada's response was that the actual bereavement-fare
-      policy required pre-booking application — that is, the
-      reduced fare had to be applied for at the time of
-      booking, not claimed retroactively.#cn()
+      with the documentation the chatbot had described. Air Canada's response was that the actual bereavement-fare policy did not apply to requests made after travel was complete — that is, the reduced fare had to be arranged before the trip, not claimed retroactively.#cn()
     ],
     [
       The structural seam the case opens is that the airline's
@@ -928,9 +918,7 @@
       decision, written by Tribunal Member Christopher Rivers,
       found that Air Canada was responsible for "all the
       information on its website" and that the chatbot was part
-      of the website. The argument that the chatbot was a
-      separate legal entity was found to have no support in
-      law. The tribunal awarded Moffatt \$650.88 in damages —
+      of the website. The tribunal called the separate-entity submission remarkable and held that the chatbot is just a part of Air Canada's website. The tribunal awarded Moffatt \$650.88 in damages —
       the difference between the full fare he paid and the
       bereavement fare he had been led to believe he could
       claim. The dollar amount is small; the principle the

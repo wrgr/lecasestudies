@@ -772,11 +772,12 @@
     ],
     [
       The technical report's hedge is binding and load-bearing.
-      Ofqual's own document acknowledges that the standardisation
-      goal — preserving year-on-year comparability of the
-      national distribution — was incompatible with population-
-      level fairness given the variance in individual-student
-      circumstances and the cohort-size dependence of the model.
+      Ofqual's own document states that the statistical measures
+      behind the standardisation are meaningful only for groups
+      of students, that using them to predict an individual
+      result would over-interpret them, and that the leniency
+      granted to small centres imposes an absolute disadvantage
+      on students entering through larger ones.
       The case teaches the change-control-and-disclosure-as-
       governance-artifacts pattern: an algorithm that is
       internally documented as carrying a distributional seam
@@ -803,19 +804,19 @@
       [Pre-specify the individual-student fairness criterion against which a standardisation mechanism will be evaluated, and refuse deployment when the criterion is incompatible with the standardisation goal.],
     ),
     after: (
-      [Carry the technical report's hedge — "standardisation incompatible with population-level fairness given individual-student variance" — into print without softening; the case's pedagogical value depends on the internal documentation of the seam being visible alongside the public withdrawal.],
+      [Carry the technical report's hedge — the statistical measures "are only sufficiently meaningful to be informative for groups of students," and small-centre leniency "would lead to an absolute disadvantage to those students entering through larger centres" — into print without softening; the case's pedagogical value depends on the internal documentation of the seam being visible alongside the public withdrawal.],
       [Pair in syllabi with Case 86 (Gándara) so the population-level-versus-individual-level fairness tension is taught at both the secondary-to-higher-education transition scale and the community-college transition scale.],
       [Use the case as the rare example of an algorithmic deployment withdrawn at national scale within days; the four-day withdrawal arc is the curricular target for governance-response speed under public pressure.],
     ),
   ),
   references: (
     [Ofqual, _Awarding GCSE, AS, A level, advanced extension awards and extended project qualifications in summer 2020: interim report_, August 2020.],
-    [UK House of Commons Education Committee, _Getting the grades they've earned: COVID-19: the cancellation of exams and "calculated" grades_, HC 254, July 2021.],
+    [UK House of Commons Education Committee, _Getting the grades they've earned: Covid-19: the cancellation of exams and 'calculated' grades_, First Report of Session 2019–21, HC 617, 11 July 2020 — the pre-deployment warning; Office for Statistics Regulation, _Ensuring statistical models command public confidence_, 2 March 2021 — the post-withdrawal review.],
     [Royal Statistical Society, _Submission to the Office for Statistics Regulation on the summer 2020 grading process_, 2020 — independent statistical review of the standardisation methodology.],
     [Smith, H. (2020), "Algorithmic bias: should students pay the price?" _AI & Society_ 35(4):1077–1078 — early academic commentary on the equity dimensions of the withdrawal.],
   ),
   quote: [Approximately 39.1 percent of teacher-estimated grades were downgraded; the algorithm was withdrawn within four days under public protest; the technical report was internally honest about the cohort-size dependence and the failure was that the honesty did not travel out of the document.],
-  quote-source: "Editors' synthesis of the Ofqual technical report and the House of Commons Education Committee report.",
+  quote-source: "Editors' synthesis of the Ofqual technical report and the Office for Statistics Regulation review (2021).",
   le-insight: [
     The Ofqual A-level case is the rare national-scale algorithmic
     deployment withdrawn within days under public pressure. The
@@ -841,7 +842,7 @@
     load-bearing hedge.
   ],
   literature-items: (
-    [Ofqual technical report (August 2020); House of Commons Education Committee (2021)],
+    [Ofqual technical report (August 2020); Office for Statistics Regulation review (2021)],
     [Royal Statistical Society submission (2020)],
     [Smith, _AI & Society_ (2020) — early equity commentary],
   ),

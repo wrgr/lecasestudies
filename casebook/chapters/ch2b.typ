@@ -1197,7 +1197,7 @@
   year: "2014 – present",
   domains-list: ("K-12 mathematics", "homework support", "formative assessment"),
   modes-code: "TKD",
-  impact: "Cluster RCT across 43 schools and 2,850 students (Maine): 7th-graders assigned to ASSISTments outperformed controls on end-of-year math; largest gains for lower-performing students; a later moderator analysis (Murphy et al. 2020) reported larger minority-student gains, though fragile in the ~93%-white sample; effect persisted into 8th-grade outcomes in the 2020 follow-up",
+  impact: "Cluster RCT across 43 schools and 2,850 students (Maine): 7th-graders assigned to ASSISTments outperformed controls on end-of-year math; largest gains for lower-performing students; the North Carolina replication (Feng et al. 2023) found larger gains for students of color (g = 0.14) and Hispanic students (g = 0.13) in a sample chosen for national demographic representativeness; the North Carolina replication found a sustained effect at the end of 8th grade, one year after the intervention ended (Hedges' g = 0.10)",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1209,15 +1209,11 @@
     Open 2016), conducted across 43 schools and 2,850 students in Maine,
     found that 7th-graders assigned to ASSISTments outperformed
     controls on end-of-year mathematics, with the largest gains
-    for lower-performing students. A later moderator analysis
-    (Murphy et al. 2020) reported larger gains for minority
-    students — fragile in the nearly all-white (~93%) trial
-    sample — and found the 7th-grade effect persisted into
+    for lower-performing students. The North Carolina replication (Feng et al. 2023) reported larger gains for students of color and for Hispanic students — a finding the nearly all-white (~93%) Maine trial could not have produced — and found the 7th-grade effect persisted into
     8th-grade outcomes. A
     subsequent Arnold Ventures-funded extension tested a
     lower-cost virtual-training adaptation in predominantly
-    rural areas, with longitudinal follow-through extended
-    through end of 8th grade. The case is one of the few
+    rural areas, with an 8th-grade follow-through extension that Arnold Ventures and WestEd ended when the study design departed from the planned RCT. The case is one of the few
     EdTech tools in the corpus with replicated multi-state RCT
     evidence at meaningful effect sizes and with deliberate
     attention to the heterogeneity that matters most for
@@ -1237,10 +1233,7 @@
       peers require; and the research team behind it (Heffernan
       and collaborators) has deliberately designed the platform
       around an evidence-generation loop with classroom teachers.
-      The cluster RCT Roschelle et al. published in 2016 is the
-      first national-scale evaluation of the platform, and it
-      was designed to support claims a single-site trial could
-      not support.#cn()
+      The cluster RCT Roschelle et al. published in 2016 is the first statewide evaluation of the platform, and it was designed to support claims a single-site trial could not support.#cn()
     ],
     [
       The trial cluster-randomized 43 schools in Maine
@@ -1261,27 +1254,19 @@
     [
       The heterogeneity finding is what makes the case
       equity-relevant. Effect-size estimates were largest for
-      lower-performing students. A later moderator analysis
-      (Murphy et al. 2020) reported that minority students
-      benefited more than the average effect would suggest — a
-      finding that is fragile in the nearly all-white (~93%)
-      trial sample and was not an outcome the 2016 trial was
-      powered to estimate. The pattern is the one Case 55
+      lower-performing students. The North Carolina replication (Feng et al. 2023) reported that students of color benefited more than the average effect would suggest (Hedges' g = 0.14, and 0.13 for Hispanic students) — a finding the nearly all-white (~93%) Maine sample could not have produced, and not an outcome the 2016 trial was powered to estimate. The pattern is the one Case 55
       (Engler / enrollment algorithms) names as the inversion
       target: prediction and adaptive feedback used to trigger
       support rather than to gatekeep aid.#cn()
     ],
     [
-      Murphy et al. (2020) extended the evaluation into a
-      longitudinal follow-through. The 7th-grade effect persisted
-      into 8th-grade outcomes — a persistence finding that the
+      The North Carolina replication (Feng et al. 2023) extended the evaluation into a longitudinal follow-through, finding the effect sustained at the end of 8th grade, one year after the intervention ended — a persistence finding that the
       EdTech evidence base does not consistently report, and
       that converts the case from a single-year effect-size
       study into a multi-year follow-through case. A subsequent
       Arnold Ventures-funded extension tested a lower-cost
       virtual-training adaptation in predominantly rural areas
-      with longitudinal follow-through extended through end of
-      8th grade. The replication structure — trial,
+      with an 8th-grade follow-through extension that Arnold Ventures and WestEd ended when the study design departed from the planned RCT. The replication structure — trial,
       replication, longitudinal follow-through, adaptation
       tested under different deployment conditions — is the
       closed-loop evidence architecture the corpus's EdTech
@@ -1307,7 +1292,7 @@
   beats: (
     "Roschelle et al. 2016 cluster RCT: 43 schools, 2,850 students (Maine); ASSISTments-assigned 7th-graders outperformed controls",
     "Heterogeneity: largest gains for lower-performing students; a later moderator analysis (Murphy et al. 2020) reported larger minority gains — fragile in the ~93%-white sample, not pre-specified",
-    "Murphy et al. 2020: 7th-grade effect persisted into 8th-grade outcomes (longitudinal follow-through)",
+    "Feng et al. 2023 (North Carolina): effect sustained at end of 8th grade, one year post-intervention (g = 0.10)",
     "Arnold Ventures extension: lower-cost virtual-training adaptation in rural areas, longitudinal through end of 8th grade",
     "Pair with Case 84 (Cognitive Tutor horizon), Case 17 (spaced ed RCTs), Case 55 (Engler — equity-relevant inversion of gatekeeping)",
   ),
@@ -1325,20 +1310,19 @@
   ),
   references: (
     [Roschelle, J., Feng, M., Murphy, R. F., & Mason, C. A. (2016), "Online Mathematics Homework Increases Student Achievement," _AERA Open_ 2(4):1–12, doi:10.1177/2332858416673968.],
-    [Murphy, R. et al. (2020), follow-up evaluation extending the 7th-grade effect into 8th-grade outcomes.],
+    [Feng, M., Huang, C., & Collins, K. (2023), _Technology-Based Support Shows Promising Long-Term Impact on Math Learning_, WestEd — the North Carolina replication, the equity heterogeneity finding, and the 8th-grade persistence result.],
     [Heffernan, N. T., & Heffernan, C. L. (2014), "The ASSISTments ecosystem," _International Journal of AI in Education_ 24:470–497 — platform design and research-loop description.],
-    [Arnold Ventures RCT documentation of the virtual-training-adaptation arm — longitudinal follow-through through end of 8th grade.],
+    [Arnold Ventures grant documentation of the virtual-training-adaptation arm — including the 8th-grade extension that WestEd and Arnold Ventures ended when the design departed from the planned RCT.],
   ),
-  quote: [The largest gains are for lower-performing students. A later moderator analysis reports larger minority gains — but fragile in a nearly all-white sample, and not what the 2016 trial was powered to estimate.],
-  quote-source: "Editors' synthesis of Roschelle et al. (2016) and Murphy et al. (2020).",
+  quote: [The largest gains are for lower-performing students. The North Carolina replication reports larger gains for students of color — a result the nearly all-white Maine sample could not have produced, and not what the 2016 trial was powered to estimate.],
+  quote-source: "Editors' synthesis of Roschelle et al. (2016) and Feng, Huang & Collins (2023).",
   le-insight: [
     ASSISTments is the case in the corpus with the cleanest
     closed-loop evidence architecture for EdTech: cluster RCT,
     longitudinal follow-through into the next grade, and an
     adaptation arm under different deployment conditions. The
     equity-relevant heterogeneity finding is the exception and is
-    treated as one: it surfaced in a later moderator analysis, was
-    not pre-specified, and is fragile in a nearly all-white sample. The case grounds the
+    treated as one: it surfaced in the North Carolina replication, was not pre-specified, and had no chance of surfacing in the nearly all-white Maine trial. The case grounds the
     closed-loop evaluation anchor in EdTech the same way Case 40
     grounds it in team-science training.
   ],
@@ -1355,7 +1339,7 @@
   ],
   literature-items: (
     [Roschelle et al. (2016), _AERA Open_ — ASSISTments cluster RCT],
-    [Murphy et al. (2020) — longitudinal follow-through],
+    [Feng, Huang & Collins (2023), WestEd — North Carolina replication and 8th-grade follow-through],
     [Heffernan & Heffernan (2014), _IJAIED_ — platform and research loop],
   ),
   reflection-list: (
@@ -2117,12 +2101,12 @@
   lens-anchor: "D3/PT6",
   leo-anchor: "LEO-2, LEO-3",
   summary: [
-    Thomas et al.'s LAK 2024 best paper, "Improving Student
+    Thomas et al.'s LAK 2024 paper, "Improving Student
     Learning with Hybrid Human-AI Tutoring: A Three-Study
     Quasi-Experimental Investigation," reports three quasi-
     experimental studies of hybrid deployments where AI
     augmentation is added to human tutoring rather than used to
-    replace it. The headline finding is that learning outcomes improved in each of the three studies, and in the two carrying a comparison condition the improvement was measured against it; Study 3 had no control group. The contribution the case carries for the
+    replace it. The headline finding is that learning outcomes improved in each of the three studies, and in the two carrying a comparison condition one site carried a control condition; the other two compared students against their own pre-treatment baseline. The contribution the case carries for the
     LENS framework is the design positioning: the AI is
     augmentation, the human tutor retains the authorization to
     override and re-direct, and the measured outcome is student
@@ -2156,10 +2140,7 @@
       human tutor with information surfacing, problem
       recommendation, and student-progress visibility; the human
       tutor retains the conversational and pedagogical lead.
-      Outcome measures are student learning relative to
-      comparison conditions — students in human-AI tutoring
-      compared against a math-software-only baseline (Study 3
-      lacked a control group). Across the three studies, the
+      Only the first site carried a math-software-only control condition; the second and third compared students against their own pre-treatment usage, and the third compared two tutoring intensities against each other. Across the three studies, the
       hybrid condition produced measurable improvements in
       student learning. The replication structure across the
       three studies — same authorship team, varying institutional
@@ -2170,9 +2151,7 @@
       The design positioning the case carries for the LENS
       framework is the augmentation-not-delegation frame. The
       AI is positioned as augmentation, the human tutor retains
-      the authorization to override and re-direct, and the
-      measured outcome is student learning, not AI-system
-      fidelity. This is the design pattern that worked in
+      the authorization to override and re-direct, and the measured outcome is student progress inside the learning software, with impact on external assessments still untested. This is the design pattern that worked in
       clinical-decision-support at Case 20 (TREWS) and that
       did not work at Case 5 (Epic Sepsis) — where TREWS
       preserved clinician authorization and built the explanation
@@ -2215,8 +2194,8 @@
     ],
   ),
   beats: (
-    "Thomas et al. LAK 2024 best paper: three quasi-experimental studies of hybrid human-AI tutoring",
-    "Headline: learning outcomes improved in all three studies; two had comparison conditions, Study 3 had no control group",
+    "Thomas et al. LAK 2024: three quasi-experimental studies of hybrid human-AI tutoring of hybrid human-AI tutoring",
+    "Headline: outcomes improved at all three sites; only Site 1 carried a control group, Sites 2 and 3 compared against pre-treatment baselines",
     "Design positioning: AI as augmentation, human tutor retains override authorization, measured outcome is student learning",
     "Educational analog of Case 20 (TREWS clinician-AI teaming); contrast with Case 5 (Epic Sepsis delegation collapse)",
     "Open: longitudinal persistence; transfer to lower-resource tutoring where human-tutor availability is the binding constraint",
@@ -2714,9 +2693,7 @@
       design constraint and governance is what isolates the lesson: the same
       predictive capability that harmed in those cases helped here, so the
       framing and the human loop, not the model, are where intent lives.#cn()
-      GSU has since moved to export the model: in 2021 it founded the
-      National Institute for Student Success, which by 2024 had advised more
-      than 130 campuses serving some 1.5 million students, while GSU's own
+      GSU has since moved to export the model: in October 2020 it founded the National Institute for Student Success, which by the end of 2024 had engaged more than 130 campuses serving some 1.5 million students, while GSU's own
       six-year graduation rate held steady near 53 percent — the test now
       shifting from whether the bundle worked at one institution to whether
       the advising-and-governance recipe transfers to others.#cn()
@@ -2732,13 +2709,13 @@
   references: (
     [Renick, T. & Strom, A. (2020) on GSU's advising transformation — the system design and outcomes.],
     [Georgia State University institutional research and Strategic Plan reports — graduation-rate and equity data.],
-    [_New York Times_, "How Colleges Know You're Not Finishing" (2018) — the 800-factor advising model.],
+    [Fausset, R., "Georgia State, Leading U.S. in Black Graduates, Is Engine of Social Mobility," _New York Times_, 15 May 2018 — the 800-factor advising model.],
     [EDUCAUSE Review on GSU predictive advising — the human-loop architecture.],
     [Complete College America, Game Changers documentation — dissemination of the model.],
     [Georgia State University National Institute for Student Success (founded 2021) — reported engagement with 130-plus campuses and ~1.5 million students by 2024.],
   ),
   quote: [Predictions trigger support, not gatekeeping.],
-  quote-source: "Editors' synthesis of the GSU advising model, drawn from Renick & Strom (2020) and New York Times coverage (2018)",
+  quote-source: "Editors' synthesis of the GSU advising model, drawn from Renick & Strom (2020) and Fausset's New York Times feature (15 May 2018)",
   le-insight: [
     GSU is the positive counterpart to A-Level (49), Robodebt (191), and
     educational algorithmic bias (46). The same technical capability —
@@ -4913,7 +4890,7 @@
   year: "2015 – present",
   domains-list: ("workforce development", "national L&D policy", "Asia-Pacific"),
   modes-code: "GKD",
-  impact: "Singapore's SkillsFuture pairs individual training credits with employer subsidies, a cross-sector skills framework, and a two-wave outcome survey (TRAQOM, at end-of-course and at six months) — a 2018 MTI study found a 5.8% real wage premium for WSQ-trained workers, with 87% of Work-Study Programme graduates employed full-time within six months",
+  impact: "Singapore's SkillsFuture pairs individual training credits with employer subsidies, a cross-sector skills framework, and a two-wave outcome survey (TRAQOM, at end-of-course and at three months — six months for courses ending before June 2024) — an MTI study of 2011–2014 cohorts found a 5.8% real wage premium for WSQ full-qualification trainees and 0.8% for Statement-of-Attainment trainees, with 87% of Work-Study Programme graduates employed full-time within six months",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -4966,9 +4943,7 @@
       national L&D program. The Training Quality and Outcomes
       Measurement framework (TRAQOM) is a two-wave outcome
       survey administered at end-of-course and at six months
-      post-training. It is paired with labor-market data so
-      that self-reported outcomes can be cross-checked against
-      employment and wage outcomes at population scale. The
+      post-training. Employment and wage outcomes are measured separately — by the Work-Study Programme Outcomes Survey and by MTI's administrative-data studies — not inside TRAQOM itself. The
       design crosses the Kirkpatrick Level-2 / Level-3 seam
       (Case 79) at policy level, not only program level.#cn()
     ],
@@ -4979,10 +4954,7 @@
       Work-Study Programme Outcomes Survey found 87% of
       graduates employed full-time within six months (2019
       cohort; the 2024 review reports more than 9 in 10
-      employed). A 2018 study by the Ministry of Trade
-      and Industry found a 5.8% real wage premium for workers
-      with a Workforce Skills Qualifications (WSQ)
-      certification. The labor-market figures are the
+      employed). A Ministry of Trade and Industry study of the 2011–2014 cohorts found a 5.8% real wage premium for WSQ full-qualification holders and 0.8% for holders of a Statement of Attainment. The labor-market figures are the
       strongest available external corroboration of the
       self-report data.#cn() Since 2024 the program has broadened
       well beyond credits and surveys: the SkillsFuture Level-Up

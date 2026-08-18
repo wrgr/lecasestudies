@@ -296,7 +296,7 @@
     [Duncan, F. (1990), _Rickover and the Nuclear Navy_ — the qualification culture.],
   ),
   quote: [Human experience shows that people, not organizations or management systems, get things done.],
-  quote-source: "Admiral Hyman G. Rickover, \"Doing a Job,\" Columbia University, 1982",
+  quote-source: "Admiral Hyman G. Rickover, \"Doing a Job\" (Columbia University commencement address, 1982)",
   le-insight: [
     The Nuclear Navy is the longest-running continuous capability-
     engineering program in any high-consequence domain. The choice to

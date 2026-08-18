@@ -1530,9 +1530,7 @@
     The U.S. Navy entered World War II with the Mark 14 torpedo, so guarded and so costly to expend that the Bureau of Ordnance had not destructively tested it since 1926. Through 1942 submarine crews reported
     torpedoes running deep, failing to detonate, or exploding
     prematurely; the Bureau insisted the weapon was sound and blamed
-    the operators. It took about twenty months and the personal intervention
-    of Admiral Charles Lockwood — who ordered fleet-level live-fire
-    tests — to confirm three separate defects: the torpedo ran about
+    the operators. It took about twenty months and repeated fleet-level forcing — Lockwood's net tests, the fleet-ordered net firings of summer 1942, and Lockwood's Pearl Harbor trials of July 1943 — to confirm three separate defects: the torpedo ran about
     ten feet too deep, its magnetic exploder fired erratically, and its
     contact pin crushed on a square hit. The fixes were simple once the
     defects were acknowledged. The binding constraint was institutional:
@@ -1560,10 +1558,11 @@
     ],
     // -- The Investigation --
     [
-      It took about twenty months and the intervention of Admiral Charles
-      Lockwood, commander of the Pacific submarine force, who ordered
-      fleet-level testing. A live-fire trial — and the USS Tinosa's July 1943 attack on the Tonan Maru, in which nine torpedoes struck the stopped ship squarely and failed to detonate — forced the issue.
-      The tests confirmed the
+      It took about twenty months and three separate forcings:
+      Lockwood's net test off Australia in June 1942, the
+      fleet-ordered net firings that confirmed the depth error that
+      summer, and Lockwood's Pearl Harbor trials after the USS Tinosa's July 1943 attack on the Tonan Maru, in which nine torpedoes struck the stopped ship squarely and failed to detonate — forced the issue.
+      Each in turn confirmed that the
       torpedo ran about ten feet too deep, that the Mark 6 magnetic
       exploder failed routinely, and that the contact pin buckled on
       perpendicular impact — three independent defects that had been masking
@@ -1594,7 +1593,7 @@
     ],
   ),
   beats: (
-    "The Bureau of Ordnance had effectively forbidden live trials, so the Mark 14 went to war unproven",
+    "No destructive trial had been fired since 1926, so the Mark 14 went to war unproven",
     "Submarine crews reported deep runs, premature detonations, and crushed contact pins from early 1942",
     "Lockwood ordered fleet tests; the three defects were conceded one at a time across some twenty-one months, Tinosa's eleven duds exposing the last of them",
     "The binding gap was a channel by which the bureau could be made to hear what the boats already knew",
