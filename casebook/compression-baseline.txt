@@ -1,0 +1,28 @@
+# Compression-fidelity baseline — accepted leads as of this run.
+# A quantity in impact/le-insight with no counterpart in the body.
+# These are triaged leads, not accepted defects; the gate fails only
+# on cases that are NOT listed here, so new drift is caught.
+7	va-wait-time-scandal	impact 120000,90
+8	medical-errors-as-systemic-failure	le-insight 17
+9	vioxx-withdrawal	impact 4850000000
+11	california-nurse-staffing-ratios	impact 10,14
+12	acgme-80-hour-resident-duty-hour-reform	le-insight 117,118,19
+19	keystone-icu-pronovost-checklist	impact 175000000
+34	composer-sepsis-prediction	impact 17
+90	algorithmic-college-admissions-vendors	le-insight 57
+97	boeing-737-max-mcas	impact 20000000000
+98	mars-climate-orbiter-unit-mismatch	impact 125000000
+104	asiana-airlines-flight-214	impact 187
+117	crew-resource-management-and-cast	impact 17,72
+118	korean-air-safety-transformation	impact 16
+119	aviation-safety-reporting-system-asrs	impact 2000000
+146	northeast-blackout	impact 6000000000
+148	wells-fargo-fake-accounts	impact 3000000000
+149	volkswagen-dieselgate	impact 30000000000,4300000000
+151	gm-ignition-switch	impact 2600000,900000000
+163	deepwater-horizon	impact 65000000000
+169	fukushima-daiichi	impact 200000000000
+179	jhu-covid-dashboard-coronavirus	impact 3.6
+180	healthcare-gov-launch	impact 7000000
+184	uk-post-office-horizon-scandal	impact 13,236
+198	launching-the-brain-initiative	impact 1000000000

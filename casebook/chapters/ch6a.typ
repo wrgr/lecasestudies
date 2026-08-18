@@ -365,7 +365,7 @@
   year: "2002",
   domains-list: ("energy",),
   modes-code: "NKG",
-  impact: "Football-sized cavity discovered in the reactor pressure-vessel head; near-miss; ~$600M recovery and extended outage",
+  impact: "Football-sized cavity discovered in the reactor pressure-vessel head; near-miss; plant shut down for repair and fleet-wide head-inspection requirements tightened",
   diagram: dgm.dgm-stat(
     "1/4″",
     "of stainless cladding remained",

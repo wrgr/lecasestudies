@@ -58,6 +58,7 @@ companion: $(BUILD)
 # Per-case structural + citation-integrity check across the full corpus.
 check:
 	./scripts/check-cases.sh
+	python3 ./scripts/check-compression.py --gate
 
 fonts:
 	./scripts/fetch-fonts.sh

@@ -1659,9 +1659,7 @@
   le-insight: [
     Helios 522 is the textbook example of a single cue carrying two
     meanings without differentiation. The interface lied by ambiguity.
-    The training filled in only one meaning. The combination produced a
-    twenty-minute window in which the crew was solving the wrong
-    problem.
+    The training filled in only one meaning. The combination produced a window of a few minutes — the crew's last useful ones — in which they were solving the wrong problem.
   ],
   lens-approach: [
     LENS uses Helios in LEN 5 as a case in cue ambiguity and in LEN 2

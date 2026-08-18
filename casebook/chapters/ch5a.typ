@@ -773,7 +773,7 @@
   year: "2008 – 2023",
   domains-list: ("industrial",),
   modes-code: "DG",
-  impact: "More than 30 deaths and hundreds of injuries linked to inflator ruptures; largest automotive recall in history",
+  impact: "More than two dozen deaths and hundreds of injuries linked to inflator ruptures; largest automotive recall in history",
   diagram: dgm.dgm-stat(
     "100M+",
     "inflators recalled · 19 automakers",
