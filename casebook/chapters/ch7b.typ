@@ -1584,8 +1584,7 @@
     proposals. Independent academic critiques have surfaced two
     load-bearing limitations: bias audits without bias data —
     employers often lack the protected-attribute data the audit
-    metrics require — and wide variability in audit quality
-    across published audits. The case pairs with Case 85 (OU
+    metrics require — and null compliance — 18 of 391 employers posted an audit at all, and non-compliance cannot be established. The case pairs with Case 85 (OU
     Analyse — governance-objection dissolved by design), Case
     86 (Gándara community-college predictive equity), and Case
     182 (Amazon hiring AI). The intervention is the audit-as-
@@ -1596,8 +1595,7 @@
   sections: (
     [
       Local Law 144 was passed by the New York City Council on
-      10 November 2021 and became law without the Mayor's signature
-      on 13 December 2021 (returned unsigned), with
+      10 November 2021 and became law without the Mayor's signature on 11 December 2021, the Mayor returning it unsigned on 13 December, with
       the operational rules to be specified by the Department of
       Consumer and Worker Protection. The rulemaking process
       extended through 2022 and into 2023, with two rounds of
@@ -1630,20 +1628,7 @@
     ],
     [
       The independent academic critiques have surfaced two
-      load-bearing limitations. Andrus, Spitzer, Brown, and Xiang's 2021 work on the
-      challenge of procuring demographic data for fairness audits
-      names that many employers
-      do not collect the protected-attribute information the
-      audit metrics require, and the audits that proceed are
-      either limited to attributes the employer happens to have
-      or rely on imputation methods whose accuracy is itself
-      under-evidenced. Wright et al.'s 2024 audit-quality
-      study reviewed published audits across the first cohort
-      of compliant employers and found wide variability — audits
-      ranging from detailed methodological documents to single-
-      paragraph summaries with limited interpretability. The
-      audits are governance artifacts; their information content
-      is uneven across the first cohort.
+      load-bearing limitations. Andrus, Spitzer, Brown, and Xiang's 2021 interviews with 38 algorithmic-fairness practitioners found that they routinely lack access to the demographic data bias detection requires; an employer deploying an AEDT inherits that constraint, and the audits that proceed are either limited to attributes the employer happens to have or rely on imputation methods whose accuracy is itself under-evidenced. Wright et al.'s 2024 study put 155 investigators onto 391 employers and found 18 had posted an audit report and 13 a transparency notice; the posted audits were data tables with minimal explanation, none of them sufficient to inform a job seeker's decision to opt out. The paper names the deeper problem *null compliance* — employers hold enough discretion over whether the law applies that non-compliance cannot be established at all.
     ],
     [
       The case pairs with Case 85 (OU Analyse) for the
@@ -1683,11 +1668,7 @@
       on the audit. Whether the disclosure-and-audit structure
       reduces actual disparate impact at the hiring level is an
       empirical question the published evidence does not yet
-      resolve. The audit-quality variability across the first
-      compliant cohort is itself a finding the case carries —
-      governance artifacts whose quality is uneven across
-      producers are weaker governance instruments than the
-      regulatory theory assumes. The intervention is real and
+      resolve. The 5% posting rate and the unprovability of non-compliance are themselves findings the case carries — a governance artifact almost nobody publishes, and whose absence proves nothing, is a weaker instrument than the regulatory theory assumes. The intervention is real and
       its limits are real; the change-control-and-disclosure-as-
       governance-artifacts LEO is anchored by the case at the
       municipal-regulatory scale, and the evaluation arc the
@@ -1699,17 +1680,17 @@
     "NYC Local Law 144 of 2021; Department of Consumer and Worker Protection implementing rules effective July 5 2023; first US municipal AEDT regulation at this scope",
     "Three requirements: annual independent bias audit, publication of audit summary, candidate notice and alternative-selection request process",
     "Audit metrics: selection rate and impact ratio by sex, race/ethnicity, intersectional categories; computed by independent auditor not associated with the AEDT",
-    "Andrus et al. 2021 on auditing without demographic data: employers often lack protected-attribute data; Wright et al. 2024 audit-quality study finds wide variability",
+    "Andrus et al. 2021, 38 practitioner interviews: the demographic data bias detection requires is routinely unavailable; Wright et al. 2024: 18 of 391 employers posted an audit, and null compliance makes non-compliance unprovable",
     "Pair with Case 85 (OU Analyse), Case 86 (Gándara), Case 182 (Amazon hiring AI); whether audits reduce actual disparate impact remains under-evidenced",
   ),
   approaches: (
     during: (
       [Specify the protected-attribute data the audit metrics will require before the audit is commissioned; the Andrus et al. critique names data availability as the precondition the regulatory theory does not provide for, and the data infrastructure has to be built in advance of the audit.],
-      [Choose an independent auditor whose methodology will produce a documentation-detailed audit rather than a single-paragraph summary; the audit-quality variability the Wright et al. study found is itself a deployment choice, and the choice of auditor is where it surfaces.],
+      [Choose an independent auditor whose methodology will produce a documentation-detailed audit rather than a single-paragraph summary; the thinness of the posted audits the Wright et al. study found is itself a deployment choice, and the choice of auditor is where it surfaces.],
       [Build the candidate-notice and alternative-selection process as part of the deployment, not as a compliance afterthought; the candidate-side governance interaction is the seam at which the disclosure-and-audit structure becomes contestable for the affected person.],
     ),
     after: (
-      [Carry the load-bearing hedges — disclosure-and-audit regime not substantive-standards regime; reduction of actual disparate impact under-evidenced; audit-quality variability across first cohort — into print without softening; the case's pedagogical value depends on the intervention's limits being preserved.],
+      [Carry the load-bearing hedges — disclosure-and-audit regime not substantive-standards regime; reduction of actual disparate impact under-evidenced; a 5% audit-posting rate, and non-compliance that cannot be established — into print without softening; the case's pedagogical value depends on the intervention's limits being preserved.],
       [Pair in syllabi with Case 85 (OU Analyse) so the governance-objection-dissolved-by-design and governance-objection-surfaced-by-disclosure threads are taught together as complementary intervention forms.],
       [Use the case as the change-control-and-disclosure-as-governance-artifacts anchor at the municipal-regulatory scale; the curricular target is the discipline of building the data infrastructure and the audit-quality criteria the disclosure regime presupposes.],
     ),
@@ -1750,7 +1731,7 @@
   literature-items: (
     [NYC DCWP rules implementing Local Law 144 (effective July 5 2023)],
     [Andrus, Spitzer, Brown & Xiang (2021), FAccT — "What We Can't Measure, We Can't Understand": demographic-data procurement for fairness audits, doi:10.1145/3442188.3445888],
-    [Wright et al. (2024), FAccT — "Null Compliance," first-cohort audit-quality study, doi:10.1145/3630106.3658998],
+    [Wright et al. (2024), FAccT — "Null Compliance," 391-employer compliance study, doi:10.1145/3630106.3658998],
   ),
   reflection-list: (
     [Identify a regulated decision domain in your setting in which a disclosure-and-audit regime has been proposed or adopted. What is the protected-attribute data infrastructure the audit metrics will require, and is the infrastructure in place before the regime's effective date?],
