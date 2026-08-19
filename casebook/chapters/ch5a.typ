@@ -241,7 +241,7 @@
     "1975",
     "first digital camera prototype · 0.01 megapixel",
     micro: "37 years from prototype to Chapter 11",
-    caption: "Kodak — the longest unacted signal in consumer electronics",
+    caption: "Kodak — a signal acted on partly, never iterated through",
   ),
   kind: "failure",
   scale: "big",
@@ -611,8 +611,8 @@
   modes-code: "HK",
   impact: "50 million people without power across eight U.S. states and Ontario; $4–10B U.S. economic cost; FERC Order 693 followed",
   diagram: dgm.dgm-timeline(
-    (("tree contact", "3:05"), ("line trips", "—"), ("alarm fails", "2:14 — silent"), ("operator unaware", "51 min"), ("cascade", "4:11")),
-    emphasis: 2,
+    (("alarm fails", "2:14 — silent"), ("tree contact", "3:05"), ("line trips", "—"), ("operator unaware", "51 min"), ("cascade", "4:11")),
+    emphasis: 0,
     caption: "Northeast Blackout — silent alarm failure absorbed the operator's awareness",
   ),
   kind: "failure",
@@ -914,7 +914,7 @@
   impact: "~3.5 million potentially unauthorized accounts identified; ~$3B in penalties; CEO resigned; the Federal Reserve capped the bank's assets",
   diagram: dgm.dgm-stat(
     "3.5M",
-    "unauthorized accounts",
+    "potentially unauthorized accounts",
     micro: "the incentive architecture made misconduct rational for the front line",
     caption: "Wells Fargo — the measurement system produced the behavior the institution then prosecuted",
   ),

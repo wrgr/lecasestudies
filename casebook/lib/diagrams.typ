@@ -75,7 +75,7 @@
 )
 
 #let dgm-therac = diagram-frame(
-  caption: "Software race condition replaced hardware interlock",
+  caption: "Software state checks replaced the hardware interlock",
   cetz.canvas({
     import cetz.draw: *
     line((0.5, 2.4), (8.5, 2.4), stroke: 1pt + dgm-ink)
@@ -130,7 +130,7 @@
     circle((8.0, 2.0), radius: 0.14, fill: dgm-accent, stroke: none)
     content((4.9, 1.7), text(font: sans, size: 6pt, fill: dgm-ink, "FO"), anchor: "north")
     content((8.1, 1.7), text(font: sans, size: 6pt, fill: dgm-ink, "Capt"), anchor: "north")
-    content((6.5, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-accent-soft, "83% fatality reduction"))
+    content((6.5, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-accent-soft, "83% — CAST portfolio, 1998–2008"))
   })
 )
 
@@ -149,7 +149,7 @@
       content((x, 1.95), text(font: sans, size: 6.6pt, weight: "bold", fill: dgm-ink, tracking: 1pt, lab), anchor: "south")
       content((x, 1.1), text(font: sans, size: 6pt, fill: dgm-dim, sub), anchor: "north")
     }
-    content((4.7, 0.3), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "deaths 1.5% → 0.8%"))
+    content((4.7, 0.3), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "pilot deaths 1.5% → 0.8%"))
   })
 )
 
@@ -183,7 +183,7 @@
       circle((cx, cy), radius: 0.18, fill: dgm-ink, stroke: none)
       line((4.7, 2.0), (cx, cy), stroke: 0.4pt + dgm-rule)
     }
-    content((4.7, 0.2), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "zero significant releases since 1979"))
+    content((4.7, 0.2), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "no INES Level 4+ accident since 1979"))
   })
 )
 
@@ -206,7 +206,7 @@
 )
 
 #let dgm-af447 = diagram-frame(
-  caption: "54 seconds: stall warning sounded, response never came",
+  caption: "The stall warning cut out at the extreme angle of attack",
   cetz.canvas({
     import cetz.draw: *
     // timeline baseline
@@ -216,7 +216,7 @@
     }
     // stall warning bar — make it tall enough to hold its label
     rect((0.5, 1.7), (8.0, 2.4), fill: dgm-accent, stroke: none)
-    content((4.25, 2.05), text(font: sans, size: 7pt, weight: "bold", fill: dgm-onaccent, "STALL WARNING (54s continuous)"))
+    content((4.25, 2.05), text(font: sans, size: 7pt, weight: "bold", fill: dgm-onaccent, "STALL WARNING — cut out, then resumed"))
     // endpoints
     content((0.5, 1.1), text(font: sans, size: 6pt, fill: dgm-dim, "pitot ice"), anchor: "north-west")
     content((8.0, 1.1), text(font: sans, size: 6pt, fill: dgm-dim, "impact"), anchor: "north-east")
@@ -225,13 +225,13 @@
 )
 
 #let dgm-tmi = diagram-frame(
-  caption: "A minor cooling fault, an ambiguous indicator, a meltdown",
+  caption: "A minor cooling fault, a valve reported shut, a meltdown",
   cetz.canvas({
     import cetz.draw: *
     // Three nodes connected
     let nodes = (
       (1.6, "PORV stuck\nopen"),
-      (4.7, "Indicator\nambiguous"),
+      (4.7, "Indicator\nread closed"),
       (7.8, "Operators\nover-corrected"),
     )
     for i in range(nodes.len()) {
@@ -298,7 +298,7 @@
     // arrow to: shutdown choice
     line((4.2, 2.3), (5.5, 2.3), stroke: 0.8pt + dgm-rule)
     content((6.7, 2.3), text(font: sans, size: 7pt, fill: dgm-ink, "crew shut down R"))
-    content((4.5, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-accent-soft, "47 dead — model matched the wrong aircraft"), anchor: "north")
+    content((4.5, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-accent-soft, "47 dead — the instruments were never read"), anchor: "north")
   })
 )
 
@@ -388,7 +388,7 @@
 // ============================================================
 
 #let dgm-vincennes = diagram-frame(
-  caption: "Aegis radar data correctly displayed; five operators read it wrong",
+  caption: "Aegis radar had the climb; its display showed no altitude",
   cetz.canvas({
     import cetz.draw: *
     // ascending arrow vs descending arrow
@@ -477,7 +477,7 @@
 )
 
 #let dgm-bhopal = diagram-frame(
-  caption: "Safety systems off-line for four months before the release",
+  caption: "Safety systems off-line for months before the release",
   cetz.canvas({
     import cetz.draw: *
     // Five safety systems, all crossed out
@@ -488,7 +488,7 @@
       line((x - 0.45, 2.45), (x + 0.45, 1.75), stroke: 1pt + dgm-accent-soft)
       content((x, 1.55), text(font: sans, size: 5.5pt, fill: dgm-dim, systems.at(i)), anchor: "north")
     }
-    content((4.5, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "≈ 20,000 dead · ≈ 500,000 injured"), anchor: "north")
+    content((4.5, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "≈ 15,000–20,000 dead · ≈ 500,000 injured"), anchor: "north")
   })
 )
 
@@ -578,7 +578,7 @@
 )
 
 #let dgm-gift = diagram-frame(
-  caption: "Adaptive instruction worked; adoption did not cross the boundary",
+  caption: "Adaptive instruction worked; routine adoption stays limited",
   cetz.canvas({
     import cetz.draw: *
     // research bubble
@@ -594,7 +594,7 @@
     content((7.0, 2.0), text(font: sans, size: 6pt, fill: dgm-rule, "training\nsystems"))
     line((2.7, 2.0), (3.9, 2.0), stroke: 0.8pt + dgm-accent)
     line((4.0, 2.0), (6.3, 2.0), stroke: (paint: dgm-accent, thickness: 0.8pt, dash: "dashed"))
-    content((6.3, 2.3), text(font: sans, size: 6pt, fill: dgm-accent, "× discontinued"), anchor: "south")
+    content((6.3, 2.3), text(font: sans, size: 6pt, fill: dgm-accent, "× not adopted"), anchor: "south")
   })
 )
 
@@ -633,7 +633,7 @@
 // ============================================================
 
 #let dgm-makary = diagram-frame(
-  caption: "Third leading cause of death — and structurally invisible",
+  caption: "Contested as third-ranking — and structurally invisible",
   cetz.canvas({
     import cetz.draw: *
     // Three bars: heart disease, cancer, medical errors
@@ -660,7 +660,7 @@
 // ============================================================
 
 #let dgm-navy-reform = diagram-frame(
-  caption: "Post-Fitzgerald reform: tripled training; pass-or-fail gates",
+  caption: "Post-Fitzgerald reform: planned triple hours; pass-or-fail gates",
   cetz.canvas({
     import cetz.draw: *
     // staircase upward

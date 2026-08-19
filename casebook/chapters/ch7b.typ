@@ -505,10 +505,10 @@
   impact: "Predictive-policing tools deployed across scores of U.S. police jurisdictions; Santa Cruz banned them outright in 2020 and other cities have since dropped or restricted their programs",
   diagram: dgm.dgm-compare(
     "training data",
-    "past arrests",
+    "reported incidents",
     "ground truth",
     "past crime",
-    framing: "the system learns enforcement patterns, not crime patterns",
+    framing: "the system learns reporting patterns, not crime patterns",
     caption: "Predictive policing — construct gap at law-enforcement scale",
   ),
   kind: "frontier",
