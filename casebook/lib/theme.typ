@@ -152,6 +152,73 @@
 #let text-muted = if grayscale { _text-muted-g } else { _text-muted-c }
 #let rule-soft  = if grayscale { _rule-soft-g }  else { _rule-soft-c }
 
+// ---- Diagram palette ----
+//
+// Diagrams get their own tokens because they had none: every colour in
+// lib/diagrams.typ was a hard-coded rgb() literal, so the 93 diagram
+// placements bypassed the grayscale switch above entirely. In the printed
+// interior the old gold (#D4A843) and teal (#2CC4B3) flattened to grey 170
+// and 162 — eight levels apart out of 255 — so every colour distinction the
+// diagrams drew was invisible on paper.
+//
+// The palette is light-ground editorial: near-black ink for the primary
+// series, a single burnt-orange accent for the second, and no dark panel
+// fills. One accent, not two, so nothing depends on telling two hues apart.
+// The grayscale variants are *chosen for separation*, not inherited from the
+// colours' own luma — that inheritance is what failed before.
+
+// -- Colour --
+#let _dgm-ground-c      = rgb("#FFFFFF")
+#let _dgm-panel-c       = rgb("#F0EDE6")  // L* ~94
+#let _dgm-panel-alt-c   = rgb("#E4DFD4")  // L* ~89
+#let _dgm-rule-c        = rgb("#B9B3A4")  // L* ~73
+#let _dgm-ink-c         = rgb("#111111")  // L* ~7   — primary series, text
+#let _dgm-dim-c         = rgb("#8A8578")  // L* ~55  — muted labels, captions
+#let _dgm-accent-c      = rgb("#B8541F")  // L* ~44  — the single accent
+#let _dgm-accent-soft-c = rgb("#E0A377")  // L* ~72  — accent for large fills
+#let _dgm-onaccent-c    = rgb("#FFFFFF")  // text/knockouts drawn on ink or accent
+
+// -- Grayscale (separation-first: ink 17, accent 110, dim 165) --
+#let _dgm-ground-g      = rgb("#FFFFFF")
+#let _dgm-panel-g       = rgb("#F0F0F0")
+#let _dgm-panel-alt-g   = rgb("#E0E0E0")
+#let _dgm-rule-g        = rgb("#B4B4B4")
+#let _dgm-ink-g         = rgb("#111111")
+#let _dgm-dim-g         = rgb("#A5A5A5")
+#let _dgm-accent-g      = rgb("#6E6E6E")
+#let _dgm-accent-soft-g = rgb("#BDBDBD")
+#let _dgm-onaccent-g    = rgb("#FFFFFF")
+
+#let dgm-ground      = if grayscale { _dgm-ground-g }      else { _dgm-ground-c }
+#let dgm-panel       = if grayscale { _dgm-panel-g }       else { _dgm-panel-c }
+#let dgm-panel-alt   = if grayscale { _dgm-panel-alt-g }   else { _dgm-panel-alt-c }
+#let dgm-rule        = if grayscale { _dgm-rule-g }        else { _dgm-rule-c }
+#let dgm-ink         = if grayscale { _dgm-ink-g }         else { _dgm-ink-c }
+#let dgm-dim         = if grayscale { _dgm-dim-g }         else { _dgm-dim-c }
+#let dgm-accent      = if grayscale { _dgm-accent-g }      else { _dgm-accent-c }
+#let dgm-accent-soft = if grayscale { _dgm-accent-soft-g } else { _dgm-accent-soft-c }
+#let dgm-onaccent    = if grayscale { _dgm-onaccent-g }    else { _dgm-onaccent-c }
+
+// ---- Disclosure / evidence-tier flag tints ----
+//
+// Same defect the diagram palette fixes: these two blocks hard-coded their
+// tints, so in the grayscale interior they flattened to fills one level apart
+// (244 and 245) and were no longer telling the reader which block was which.
+// Separated deliberately in both palettes.
+#let _flag-coi-fill-c    = rgb("#FFF6E1")
+#let _flag-coi-rule-c    = rgb("#D4A843")
+#let _flag-tier-fill-c   = rgb("#F1F5FB")
+#let _flag-tier-rule-c   = rgb("#5C6E8E")
+#let _flag-coi-fill-g    = rgb("#F2F2F2")
+#let _flag-coi-rule-g    = rgb("#7A7A7A")
+#let _flag-tier-fill-g   = rgb("#E2E2E2")
+#let _flag-tier-rule-g   = rgb("#B4B4B4")
+
+#let flag-coi-fill  = if grayscale { _flag-coi-fill-g }  else { _flag-coi-fill-c }
+#let flag-coi-rule  = if grayscale { _flag-coi-rule-g }  else { _flag-coi-rule-c }
+#let flag-tier-fill = if grayscale { _flag-tier-fill-g } else { _flag-tier-fill-c }
+#let flag-tier-rule = if grayscale { _flag-tier-rule-g } else { _flag-tier-rule-c }
+
 // ---- Proof furniture: 8 × 10 trim outline + corner crop marks ----
 //
 // Painted in the page background when mode=proof so reviewers can see
