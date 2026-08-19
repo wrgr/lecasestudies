@@ -1258,7 +1258,7 @@
       field, which is part of what the case should teach.#cn()
     ],
     [
-      The hedges the case carries have to travel with it. Both Northpointe and ProPublica are correct by their respective
+      The hedges the case carries are load-bearing. Both Northpointe and ProPublica are correct by their respective
       definitions, and the impossibility result formalizes the
       tension rather than resolving it. The case does not teach
       that COMPAS is fair or that COMPAS is unfair; it teaches

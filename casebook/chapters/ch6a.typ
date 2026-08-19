@@ -1723,7 +1723,7 @@
   quote: [It remains difficult to understand how government could respond so ineffectively to a disaster that was anticipated for years, and for which specific dire warnings had been issued for days.],
   quote-source: "A Failure of Initiative, Select Bipartisan Committee, February 15, 2006.",
   le-insight: [
-    Katrina is the case of a capability gap that
+    Katrina is the load-bearing case for a capability gap that
     was specified, exercised, and documented before the event
     and converted into built capability by no one. The
     Hurricane Pam exercise stated the requirement thirteen

@@ -1,6 +1,7 @@
 # De-tic worklist — complete edition (queued)
 
-The printed volume is done: 60 `load-bearing` sites rewritten, plus 17 other tics.
+The printed volume is done: 49 of 60 `load-bearing` sites rewritten (11 kept, where the
+structural metaphor reads better than any replacement), plus 17 other tics.
 This is the remainder — **167 `load-bearing` sites across 67 cases** that ship only in the
 complete edition. Each needs a bespoke rewrite; the word does real semantic work
 ("this is the part the argument rests on"), so a find-and-replace would flatten meaning.

@@ -250,7 +250,7 @@
       in which operators are trained to challenge assumptions, including
       those of superiors. Rickover's premise — that people, not
       organizations or management systems, get things done — made the
-      qualification ladder, not paperwork, the thing safety rested on. The questioning posture is the cultural half of the pair: deep
+      qualification ladder, not paperwork, the load-bearing element of safety. The questioning posture is the cultural half of the pair: deep
       technical mastery alone could still defer to a mistaken superior, so
       the obligation to challenge assumptions is what keeps competence from
       being silenced by rank.#cn()

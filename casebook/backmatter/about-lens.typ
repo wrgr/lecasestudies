@@ -45,7 +45,7 @@
 #v(3pt)
 
 #text(font: sans, size: _body, fill: text-dark)[
-  LENS stands on five institutional pillars that hold together rather than singly. *Mission Literacy* — reading what an operational
+  LENS stands on five institutional pillars, load-bearing together rather than singly. *Mission Literacy* — reading what an operational
   setting actually requires and translating it into design and
   measurement decisions a serious reviewer would accept. *JHU
   Ecosystem* — the School of Education's centers, doctoral programs, and

@@ -918,7 +918,7 @@
       similar systems in rail and nuclear power. It is the canonical
       positive case for evidence architecture paired with an institutional
       commitment to non-punitive learning, the defining design pattern of a
-      "just culture." The breadth of emulation shows that the part that matters travels — wherever the most valuable safety data
+      "just culture." The breadth of emulation shows that the load-bearing element travels — wherever the most valuable safety data
       sits with operators who fear punishment, the same protected-reporting
       design recurs as the way to unlock it.#cn()
     ],

@@ -2519,7 +2519,7 @@
     ],
     // -- How It Worked --
     [
-      The design choice that decided everything was the human-loop architecture:
+      The load-bearing design choice was the human-loop architecture:
       alerts trigger proactive advising — a phone call, a meeting, a
       financial-aid check — rather than automated decisions. Predictions
       are used to deliver more support to at-risk students, not to gatekeep

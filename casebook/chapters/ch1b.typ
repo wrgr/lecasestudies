@@ -1382,7 +1382,7 @@
       covers. Packaging the approach as a
       reusable toolkit was itself part of what transferred — it turned a
       single project's success into something other institutions could adopt
-      without rediscovering for themselves how much the authority change was doing.#cn()
+      without rediscovering the load-bearing role of the authority change.#cn()
     ],
   ),
   beats: (
@@ -1437,7 +1437,7 @@
     after: (
       [Measure the outcome directly (the CLABSI rate) and publish it, so the cultural half can be confirmed as authorized in practice rather than merely declared.],
       [Track the effect over years, not months, to confirm the change is built into the system's structure rather than riding on a project's initial enthusiasm.],
-      [Package the paired design as a reusable toolkit so other institutions can adopt it without rediscovering for themselves how much the authority change was doing.],
+      [Package the paired design as a reusable toolkit so other institutions can adopt it without rediscovering the load-bearing role of the authority change.],
     ),
   ),
   courses: ("LEN 4", "LEN 10", "LEN 5"),

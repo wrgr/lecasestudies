@@ -1315,7 +1315,7 @@
     Parent-privacy groups organized opposition state by state, and the coalition of nine shrank to three in seven months. Analysts read inBloom as low public tolerance for risk meeting an initiative that never communicated its benefits — the assumption that technically sound infrastructure generates
     its own legitimacy. It is the purest governance failure in the dataset,
     and the book's clearest argument that in education at scale, stakeholder
-    trust and governance are not optional features but structure.
+    trust and governance are not optional features but load-bearing structure.
   ],
   sections: (
     // -- Background --
@@ -1360,7 +1360,7 @@
       later. Once opposition formed, no patch could retrofit the trust that
       should have been built in from the start, because trust withheld at
       launch cannot be engineered back in under fire. In education at scale,
-      those hold the thing up; they are not optional.#cn()
+      those are load-bearing elements, not optional ones.#cn()
     ],
     // -- Aftermath & Reform --
     [
