@@ -103,9 +103,13 @@ the sweep retired. It produces leads, not verdicts — "stop the line" is correc
 about stopping a line — but it turns this class of defect into something a reviewer can be handed
 a worklist for. Current corpus state: 7 of 191 cases flagged, all triaged as legitimate usage.
 
-**Open ruling:** the `ch5b.typ` chapter epigraph still reads *"The cord was there to be pulled,
-and pulling it was rewarded"* — the folk framing at chapter level, over a chapter whose lead case
-now retracts it.
+**Resolved.** The `ch5b.typ` chapter epigraph read *"The cord was there to be pulled, and pulling
+it was rewarded"* — the folk framing at chapter level, over a chapter whose lead case now retracts
+it. Replaced with *"The mechanism was easy to copy. What made it work sat on a different budget
+line."* — which is what the four cases in the chapter share once Andon is read correctly: the
+responder staffing behind the cord, the verification and retraining budgeted into the INL cutover,
+the multi-decade funding behind LWRS, and the measurement nobody has built for AI-augmented
+coding. Imitation fails on a budget line, not on values.
 
 ---
 

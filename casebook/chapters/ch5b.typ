@@ -11,7 +11,7 @@
   number: "10",
   title: "Industry, Energy & Enterprise Systems — What Works — and the Frontier",
   subtitle: "When operations make capability visible on the floor.",
-  epigraph: [The cord was there to be pulled, and pulling it was rewarded.],
+  epigraph: [The mechanism was easy to copy. What made it work sat on a different budget line.],
   epigraph-source: "An observation recurring across the chapter's cases.",
 )
 
