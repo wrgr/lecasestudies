@@ -682,7 +682,7 @@
 )
 
 #let dgm-korean-air = diagram-frame(
-  caption: "Cultural hierarchy removed from the cockpit",
+  caption: "The airline's own diagnosis: flatten the cockpit gradient",
   cetz.canvas({
     import cetz.draw: *
     content((2.0, 3.2), text(font: sans, size: 6.5pt, fill: dgm-dim, tracking: 1pt, upper("before")), anchor: "south")

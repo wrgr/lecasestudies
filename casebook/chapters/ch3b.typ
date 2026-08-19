@@ -688,13 +688,17 @@
   diagram: dgm.dgm-korean-air,
   kind: "intervention",
   summary: [
-    Between 1970 and 1999, Korean Air had one of the worst safety records
-    in commercial aviation — a loss rate roughly seventeen times United's,
-    more than 700 lives lost — and after the 1997 Guam crash of Flight 801
-    killed 228, the president of South Korea called it "an embarrassment to
-    the nation." The NTSB traced root causes to cockpit authority
-    gradients: junior officers were culturally unable to challenge a
-    captain's errors. In 2000, Korean Air brought in Delta's David
+    Between 1988 and 1998, Korean Air had one of the worst safety records
+    in commercial aviation — a loss rate of 4.79 hull losses per million
+    departures against United's 0.27 — and the 1997 Guam crash of Flight
+    801 killed 228. The NTSB's probable cause was the captain's failure to
+    execute the approach and the crew's failure to monitor it, with his
+    fatigue and Korean Air's inadequate training as contributing factors;
+    on why the first officer's challenges never came, the Board wrote that
+    it was unable to identify the reason. The cultural reading — that a
+    steep cockpit authority gradient silenced the right seat — came from
+    the industry and from the airline itself, and it is what Korean Air
+    then acted on. In 2000, Korean Air brought in Delta's David
     Greenberg to rebuild flight operations — mandating English as the
     cockpit language, adapting CRM for a high-power-distance culture, and
     bringing in outside consulting from Boeing and Delta. The airline has
@@ -704,15 +708,17 @@
   sections: (
     // -- Background --
     [
-      From 1970 to 1999, Korean Air suffered repeated fatal crashes — a
-      loss rate roughly seventeen times United Airlines', with over 700
-      lives lost. The NTSB's investigation of the 1997 Guam crash of Flight
-      801, which killed 228, identified steep cockpit authority gradients
-      as a root cause: junior officers were culturally unable to challenge
-      a captain's erroneous decisions in time. The pattern echoed Tenerife's
-      lesson but ran deeper, rooted in a national hierarchy the crew carried
-      into the cockpit, so the silence in the right seat was not a lapse of
-      training but an artifact of how rank was expressed in speech.#cn()
+      From 1988 to 1998, Korean Air suffered repeated fatal crashes, at a
+      loss rate of 4.79 per million departures against United Airlines'
+      0.27. The NTSB's report on the 1997 Guam crash of Flight 801, which
+      killed 228, found the captain had failed to execute the approach and
+      the crew had failed to monitor it, contributing his fatigue and the
+      airline's inadequate training. It did not reach for culture: the
+      words power distance, hierarchy and authority gradient appear nowhere
+      in it, and on why the challenges from the right seat never came the
+      Board said it was unable to identify the reason. That gap is where
+      the cultural reading entered — from the industry, from the press, and
+      from the airline, which acted on it.#cn()
     ],
     // -- The Intervention --
     [
