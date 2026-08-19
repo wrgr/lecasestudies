@@ -197,7 +197,7 @@
     import cetz.draw: *
     // Two horizontal bars showing training hours decreasing
     rect((0.5, 2.4), (8.5, 2.9), fill: rgb("#2CC4B3"), stroke: none)
-    content((0.5, 3.1), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "1990s — 16 weeks classroom + simulator"), anchor: "south-west")
+    content((0.5, 3.1), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "1990s — classroom + simulator course"), anchor: "south-west")
     rect((0.5, 1.2), (1.6, 1.7), fill: rgb("#D4A843"), stroke: none)
     content((0.5, 1.9), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), "2003 — CD-ROM self-study"), anchor: "south-west")
     line((4, 0.5), (4, 3.4), stroke: (paint: rgb("#5A6A85"), thickness: 0.4pt, dash: "dashed"))
@@ -273,13 +273,13 @@
     line((0.5, 0.6), (0.5, 3.4), stroke: 0.6pt + rgb("#5A6A85"))
     // target line
     line((0.5, 3.0), (9, 3.0), stroke: (paint: rgb("#2CC4B3"), thickness: 0.6pt, dash: "dashed"))
-    content((9, 3.1), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "target 90%"), anchor: "south-east")
+    content((9, 3.1), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "FY21 — 67%"), anchor: "south-east")
     // actual
     let curve = ((1, 1.9), (2.5, 1.7), (4, 1.6), (5.5, 1.8), (7, 1.7), (8.5, 1.6))
     line(..curve, stroke: 1.2pt + rgb("#D4A843"))
-    content((9, 1.6), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "actual ~51%"), anchor: "west")
+    content((9, 1.6), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "FY25 — 44%"), anchor: "west")
     content((0.3, 3.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("MC rate")), anchor: "south-east")
-    content((4.7, 0.3), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("FY18 → FY23")))
+    content((4.7, 0.3), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("FY21 → FY25")))
   })
 )
 
@@ -308,10 +308,10 @@
     import cetz.draw: *
     // historical bar
     rect((1.0, 1.4), (1.4, 1.6), fill: rgb("#2CC4B3"), stroke: none)
-    content((1.2, 1.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "historical 2%"), anchor: "north")
+    content((1.2, 1.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "historical 15–20%"), anchor: "north")
     // desert storm bar
     rect((4.0, 1.4), (5.7, 2.9), fill: rgb("#D4A843"), stroke: none)
-    content((4.85, 1.2), text(font: ("DM Sans",), size: 6.5pt, weight: "bold", fill: rgb("#D4A843"), "Desert Storm 17%"), anchor: "north")
+    content((4.85, 1.2), text(font: ("DM Sans",), size: 6.5pt, weight: "bold", fill: rgb("#D4A843"), "Desert Storm 24%"), anchor: "north")
     line((0.5, 1.4), (9, 1.4), stroke: 0.4pt + rgb("#5A6A85"))
     content((7.5, 2.3), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "system-level"), anchor: "south")
     content((7.5, 2.0), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "capability gap"), anchor: "south")
@@ -403,12 +403,12 @@
 )
 
 #let dgm-ehr = diagram-frame(
-  caption: "$40B invested; new error pathways emerged from interface design",
+  caption: "\$30B invested; new error pathways emerged from interface design",
   cetz.canvas({
     import cetz.draw: *
     // money flowing in vs harm flowing out
     rect((0.5, 1.2), (3.5, 2.8), fill: rgb("#132240"), stroke: 0.6pt + rgb("#2CC4B3"))
-    content((2.0, 2.0), text(font: ("Instrument Serif",), size: 14pt, fill: rgb("#2CC4B3"), "$40B"))
+    content((2.0, 2.0), text(font: ("Instrument Serif",), size: 14pt, fill: rgb("#2CC4B3"), "\$30B"))
     content((2.0, 1.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("HITECH 2009")))
     line((3.7, 2.0), (5.5, 2.0), stroke: 0.8pt + rgb("#5A6A85"))
     rect((5.7, 1.2), (8.7, 2.8), fill: rgb("#132240"), stroke: 0.6pt + rgb("#D4A843"))
@@ -442,7 +442,7 @@
 // ============================================================
 
 #let dgm-inbloom = diagram-frame(
-  caption: "$100M of working technology; nine states withdrew",
+  caption: "\$100M of working technology; a coalition of nine shrank to three",
   cetz.canvas({
     import cetz.draw: *
     // central hub
@@ -463,14 +463,14 @@
 )
 
 #let dgm-healthcaregov = diagram-frame(
-  caption: "29,000 enrollments vs. 7,000,000 target — first two months",
+  caption: "27,000 federal enrollments vs. a 7,000,000 first-year projection — first month",
   cetz.canvas({
     import cetz.draw: *
     // Two contrasting bars
     rect((1.5, 1.4), (1.7, 3.2), fill: rgb("#2CC4B3"), stroke: none)
     content((1.6, 3.4), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "7M target"), anchor: "south")
     rect((5.5, 1.4), (5.55, 1.45), fill: rgb("#D4A843"), stroke: none)
-    content((5.5, 1.55), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), "29K actual"), anchor: "south")
+    content((5.5, 1.55), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), "27K actual"), anchor: "south")
     line((0.5, 1.4), (9, 1.4), stroke: 0.4pt + rgb("#5A6A85"))
     content((4.5, 0.6), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "no lead integrator, no end-to-end test"), anchor: "north")
   })
@@ -500,7 +500,7 @@
     let layers = (
       ("manufacturer fraud",     2.8, rgb("#D4A843")),
       ("regulatory capture",     2.2, rgb("#D4A843")),
-      ("inspection (16 visits)", 1.6, rgb("#D4A843")),
+      ("building control", 1.6, rgb("#D4A843")),
       ("LFB unprepared",         1.0, rgb("#D4A843")),
     )
     for (lab, y, c) in layers {
@@ -779,7 +779,7 @@
       (1.0, "ACT-R"),
       (3.4, "Tutor"),
       (5.8, "RCT"),
-      (8.2, "3,000\nschools"),
+      (8.2, "2,600\ndistricts"),
     )
     for i in range(stages.len()) {
       let (x, lab) = stages.at(i)

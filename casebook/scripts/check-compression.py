@@ -92,6 +92,26 @@ def field(t, name, block=False):
 
 BASELINE = "compression-baseline.txt"
 
+def diagram_strings(root):
+    """Human-facing text of each named diagram, keyed by dgm-name.
+
+    A diagram is a compression of its case in exactly the sense impact and
+    le-insight are: a figure on the page that nothing reconciles against the
+    prose. Colour literals and font names are stripped so only claims remain.
+    """
+    p = os.path.join(root, "lib", "diagrams.typ")
+    if not os.path.exists(p): return {}
+    src = open(p).read()
+    names = [(m.start(), m.group(1)) for m in re.finditer(r'^#let (dgm-[a-z0-9-]+)', src, re.M)]
+    out = {}
+    for i, (s, n) in enumerate(names):
+        e = names[i + 1][0] if i + 1 < len(names) else len(src)
+        lits = [l for l in re.findall(r'"([^"]{1,90})"', src[s:e])
+                if not re.match(r'^#[0-9A-Fa-f]{3,8}$', l)
+                and l not in ("DM Sans", "Instrument Serif", "EB Garamond")]
+        out[n] = " ".join(lits)
+    return out
+
 def load_baseline(root):
     p = os.path.join(root, BASELINE)
     if not os.path.exists(p): return set()
@@ -102,6 +122,7 @@ def main(d="chapters", mode="report"):
     root = os.path.dirname(os.path.abspath(d)) or "."
     baseline = load_baseline(root) if mode != "write" else set()
     found = []
+    dgms = diagram_strings(root)
     quarantined = set(re.findall(r'"([a-z0-9-]+)"',
                                  open(os.path.join(os.path.dirname(d) or ".",
                                                    "lib", "quarantine.typ")).read()))
@@ -121,11 +142,14 @@ def main(d="chapters", mode="report"):
             bn = quantities(body)
             oi = sorted(quantities(field(blk, "impact")) - bn)
             ol = sorted(quantities(field(blk, "le-insight", True)) - bn)
-            if oi or ol:
+            dref = re.search(r'dgm\.(dgm-[a-z0-9-]+)', blk)
+            od = sorted(quantities(dgms.get(dref.group(1), "")) - bn) if dref else []
+            if oi or ol or od:
                 hits += 1
                 bits = []
                 if oi: bits.append("impact " + ",".join(oi))
                 if ol: bits.append("le-insight " + ",".join(ol))
+                if od: bits.append(dref.group(1) + " " + ",".join(od))
                 num = n.group(1)
                 found.append((num, slug.group(1), " | ".join(bits)))
                 if mode != "gate" or num not in baseline:

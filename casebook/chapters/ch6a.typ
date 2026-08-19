@@ -1158,7 +1158,7 @@
       [Preserve the containment principle the building relies on: gate any cladding choice on whether it keeps a compartment fire from climbing the exterior.],
     ),
     after: (
-      [Route every site inspection and near-miss into a shared record so sixteen visits cannot each miss the same banned material in isolation.],
+      [Route every site inspection and near-miss into a shared record so repeated visits cannot each miss the same banned material in isolation.],
       [Feed prior-incident knowledge into firefighting policy, training, and "stay put" doctrine, so lessons from earlier cladding fires actually change practice.],
       [Sustain a single line of accountability for the integrated hazard through the building's life, not only at refurbishment.],
     ),

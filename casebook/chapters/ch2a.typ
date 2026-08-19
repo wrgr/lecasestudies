@@ -1313,9 +1313,7 @@
     everything around the technology. It launched without consent
     frameworks, community engagement, transparency about data use, or a way
     for parents to participate in decisions about their children's data.
-    Parent-privacy groups organized opposition state by state, and nine
-    states withdrew. Analysts read inBloom as the failure of technocratic
-    reform — the assumption that technically sound infrastructure generates
+    Parent-privacy groups organized opposition state by state, and the coalition of nine shrank to three in seven months. Analysts read inBloom as low public tolerance for risk meeting an initiative that never communicated its benefits — the assumption that technically sound infrastructure generates
     its own legitimacy. It is the purest governance failure in the dataset,
     and the book's clearest argument that in education at scale, stakeholder
     trust and governance are not optional features but load-bearing
