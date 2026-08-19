@@ -720,7 +720,7 @@
       prosecuted people for the system's errors.#cn() The courts began
       quashing convictions from December 2020, and the public inquiry under Sir Wyn
       Williams found that senior employees "knew, or at the very least should
-      have known, that Legacy Horizon was capable of error" — the finding at the centre of what is widely called the most widespread miscarriage of justice in UK history, sustained precisely because that internal knowledge never reached the people on trial.#cn()
+      have known, that Legacy Horizon was capable of error" — the finding at the center of what is widely called the most widespread miscarriage of justice in UK history, sustained precisely because that internal knowledge never reached the people on trial.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -964,7 +964,7 @@
     [_Moffatt v. Air Canada_, 2024 BCCRT 149 (British Columbia Civil Resolution Tribunal, February 14, 2024), Tribunal Member Christopher Rivers presiding.],
     [Cecco, L. (2024), "Air Canada ordered to pay customer who was misled by airline's chatbot," _The Guardian_, February 16, 2024 — contemporaneous press coverage of the ruling.],
     [Air Canada bereavement-fare policy text (as in effect November 2022 and through the period covered by the ruling) — referenced in the tribunal decision as the divergence the chatbot's representation produced.],
-    [Sookman, B. (McCarthy Tétrault LLP, 2024), "Moffatt v. Air Canada: A Misrepresentation by an AI Chatbot," _McCarthy Tétrault TechLex Blog_, February 19, 2024 — practitioner-tier analysis of the tribunal's negligent-misrepresentation holding, the rejection of the "separate legal entity" defence, and the duty-of-care framing for AI-mediated consumer interactions. Available at: https://www.mccarthy.ca/en/insights/blogs/techlex/moffatt-v-air-canada-misrepresentation-ai-chatbot.],
+    [Sookman, B. (McCarthy Tétrault LLP, 2024), "Moffatt v. Air Canada: A Misrepresentation by an AI Chatbot," _McCarthy Tétrault TechLex Blog_, February 19, 2024 — practitioner-tier analysis of the tribunal's negligent-misrepresentation holding, the rejection of the "separate legal entity" defense, and the duty-of-care framing for AI-mediated consumer interactions. #link("https://www.mccarthy.ca/en/insights/blogs/techlex/moffatt-v-air-canada-misrepresentation-ai-chatbot")[mccarthy.ca].],
   ),
   quote: [The chatbot is part of the website; the airline is responsible for all the information on its website; there is no support in law for the argument that the chatbot is a separate legal entity responsible for its own outputs.],
   quote-source: "Tribunal Member Christopher Rivers, Moffatt v. Air Canada, 2024 BCCRT 149 (Feb 14, 2024), editors' paraphrase.",
@@ -1710,7 +1710,7 @@
   year: "2023 – 2024",
   domains-list: ("autonomous vehicles", "regulatory governance", "incident disclosure"),
   modes-code: "GKN",
-  impact: "On 24 October 2023 the California DMV suspended Cruise's driverless deployment and testing permits, citing the company's misrepresentation of safety-relevant information after a robotaxi dragged a pedestrian roughly 20 feet at ~7 mph following an initial stop ; the order rests on two grounds — that the vehicles are not safe for the public's operation, and that the manufacturer misrepresented safety information",
+  impact: "On 24 October 2023 the California DMV suspended Cruise's driverless deployment and testing permits, citing the company's misrepresentation of safety-relevant information after a robotaxi dragged a pedestrian roughly 20 feet at ~7 mph following an initial stop; the order rests on two grounds — that the vehicles are not safe for the public's operation, and that the manufacturer misrepresented safety information",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",

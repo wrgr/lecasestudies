@@ -202,7 +202,7 @@
     not recover; 346 people died and the fleet was grounded for twenty
     months. Five major
     investigations — the NTSB-supported KNKT (Lion Air) and EAIB (Ethiopian)
-    reports, the US House Transportation Committee final report, the DOT
+    reports, the U.S. House Transportation Committee final report, the DOT
     Inspector General review, and the multinational Joint Authorities
     Technical Review (JATR) — converged on the same mechanism: an MCAS
     that could fire the nose down on a single failing sensor, waved through an
@@ -251,7 +251,7 @@
       Java Sea, killing all 189. Four months later Ethiopian Airlines Flight 302 met the same sequence — sensor failure, repeated trim
       commands, unrecoverable nose-down attitude — with the difference that
       this crew had Boeing's post-Lion-Air bulletin and the FAA emergency
-      directive, ran the runaway-stabiliser cutout they prescribed, and still
+      directive, ran the runaway-stabilizer cutout they prescribed, and still
       lost the aircraft, killing 157, for 346 dead across the two crashes, and the entire MAX
       fleet grounded worldwide for what would become twenty months.#cn()
     ],
@@ -305,7 +305,7 @@
     // -- Aftermath & Reform --
     [
       The MAX was grounded for some twenty months — the longest grounding
-      of a US-certified airliner in the jet era. MCAS was redesigned to
+      of a U.S.-certified airliner in the jet era. MCAS was redesigned to
       use both AOA sensors, to fire once rather than repeatedly, and with
       limited authority bounded by airspeed — restoring the margins the
       original had stripped away. The FAA's 2020 return-to-service
@@ -795,7 +795,7 @@
       [Name the new failure modes the transition introduces (mode confusion, automation surprises, attention capture) at the design stage of the equipment-specific training, rather than waiting for the accident record to surface them.],
     ),
     after: (
-      [Preserve the NTSB's open-verdict language ("can increase the safety potential ... has not yet resulted in the anticipated improvement in safety") in any report on the transition's outcome; the study did not say glass is unsafe, and the precise language is what makes the recommendation set actionable.],
+      [Preserve the NTSB's open-verdict language ("can increase the safety potential … has not yet resulted in the anticipated improvement in safety") in any report on the transition's outcome; the study did not say glass is unsafe, and the precise language is what makes the recommendation set actionable.],
       [Track implementation of the NTSB recommendation set (A-10-36 through A-10-41) as the engineering response to the open verdict; the verdict closes when the recommendations are implemented and the next round of evidence is collected.],
       [Carry the structural lesson into adjacent transitions — the aging-system transition cases (Cases 114–116, 154, 156, 174, 194) — as evidence that the inherited certification of operator proficiency has to be re-verified against the new envelope across consumer, commercial, and defense scales.],
     ),

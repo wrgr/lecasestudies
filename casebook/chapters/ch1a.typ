@@ -128,7 +128,7 @@
       and confirmation it worked. She had none of them. The dose display
       reported the opposite of the truth; the exposure was irreversible in
       under a second; clearing the fault took one key and stopping took
-      judgement against a readout saying nothing was wrong. The question
+      judgment against a readout saying nothing was wrong. The question
       capability engineering would have forced — *what function now carries
       the interlock's load, and can whatever now holds it actually see?* —
       was never asked of the redesign.#cn()
@@ -719,7 +719,7 @@
   summary: [
     The Epic Sepsis Model was a proprietary machine-learning sepsis
     prediction tool embedded in the Epic EHR and deployed in hundreds of
-    US hospitals — the most widely operational clinical AI in American
+    U.S. hospitals — the most widely operational clinical AI in American
     medicine. Until Wong et al. (_JAMA Internal Medicine_ 2021) ran an
     external validation across 38,455 hospitalizations, no independent
     evaluation had been published. The reported AUROC was 0.63, well
@@ -799,7 +799,7 @@
     ],
   ),
   beats: (
-    "Most-deployed clinical AI in US medicine — embedded as a default Epic EHR feature; no independent validation",
+    "Most-deployed clinical AI in U.S. medicine — embedded as a default Epic EHR feature; no independent validation",
     "Wong et al. external validation: AUROC 0.63, missed ~67% of sepsis at threshold, 12% PPV, alert burden",
     "Governance seam: EHR-embedded proprietary models fell outside FDA device oversight by classification, not by design",
     "Disconfirmation came as a published external validation, not from a standing post-deployment surveillance regime",
@@ -964,7 +964,7 @@
     ],
   ),
   beats: (
-    "Documented pain-undertreatment disparity for Black patients in US clinical settings; mechanism less precisely named",
+    "Documented pain-undertreatment disparity for Black patients in U.S. clinical settings; mechanism less precisely named",
     "Hoffman et al. survey medical trainees on a battery of false biological-difference beliefs; ~half endorse at least one",
     "Experimental layer: respondents who endorse more false beliefs rate Black mock patients' pain as less severe and treat less accurately",
     "Mechanism is specific and nameable: a small set of false beliefs, not diffuse implicit bias — curriculum and instrumentation can target it",

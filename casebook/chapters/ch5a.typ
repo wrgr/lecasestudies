@@ -956,7 +956,7 @@
       savings, and credit-card accounts without customer consent,
       forging signatures, moving funds between accounts to manufacture
       activity, and enrolling customers in online banking they had not
-      requested. The behavior was widespread and longstanding, and
+      requested. The behavior was widespread and long-standing, and
       visible to internal risk and compliance functions for years
       before the 2013 _Los Angeles Times_ reporting made it public;
       the institutional response was to discipline individual employees
@@ -1603,7 +1603,7 @@
     ],
     // -- The Capability Gap --
     [
-      The signals existed — testing had slipped, three of the programme's own guiding principles had been abandoned, and attestations were still incomplete on the morning of the decision. But they reached the board as assurances rather than as objections, and the institutional architecture gave no one the standing to convert a slipped test into a halt. The missing capability was not testing knowledge but a
+      The signals existed — testing had slipped, three of the program's own guiding principles had been abandoned, and attestations were still incomplete on the morning of the decision. But they reached the board as assurances rather than as objections, and the institutional architecture gave no one the standing to convert a slipped test into a halt. The missing capability was not testing knowledge but a
       governance structure in which a "not ready" could stop a scheduled
       go-live. Knowing a system is unready is worthless if the knowledge
       cannot reach the decision with its force intact and the authority to

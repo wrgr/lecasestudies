@@ -4602,7 +4602,7 @@
       Jobseeker Support scheme (launched April 2025) added up to
       S\$6,000 over six months for the involuntarily unemployed —
       extending the model from upskilling into income-supported
-      labour-market transition.
+      labor-market transition.
     ],
     [
       The honest reading is the load-bearing teaching point.
@@ -4872,7 +4872,7 @@
   year: "1997–2024",
   domains-list: ("K-12 education", "school climate", "implementation fidelity"),
   modes-code: "TG",
-  impact: "A multi-tiered behavior-support framework implemented in more than 25,000 US schools; group-randomized effectiveness trials in 37 Maryland elementary schools found significant reductions in suspensions and office discipline referrals and improvements in child behavior problems when the model was implemented with fidelity; the PBIS Maryland state-university-district partnership (since 1999) trained staff at over 1,000 schools around a standing fidelity-measurement and coaching loop",
+  impact: "A multi-tiered behavior-support framework implemented in more than 25,000 U.S. schools; group-randomized effectiveness trials in 37 Maryland elementary schools found significant reductions in suspensions and office discipline referrals and improvements in child behavior problems when the model was implemented with fidelity; the PBIS Maryland state-university-district partnership (since 1999) trained staff at over 1,000 schools around a standing fidelity-measurement and coaching loop",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -4882,7 +4882,7 @@
   coi: "Institutional overlap: an editor shares an institution (Johns Hopkins School of Education) with leading PBIS researchers; no editor was personally involved. Framed as learning from that peer-reviewed literature.",
   summary: [
     Positive Behavioral Interventions and Supports (PBIS) is one
-    of the most widely scaled evidence-based frameworks in US
+    of the most widely scaled evidence-based frameworks in U.S.
     education — implemented, by the Center on PBIS's own count,
     in more than 25,000 schools. The evidence base is unusually
     strong for education at scale: Bradshaw, Mitchell, and Leaf's
@@ -4923,7 +4923,7 @@
       reinforcement at Tier 1, targeted group supports at Tier 2,
       individualized supports at Tier 3), was codified in the
       late 1990s under an OSEP technical-assistance center and
-      has since scaled to more than 25,000 US schools. The
+      has since scaled to more than 25,000 U.S. schools. The
       question the field then spent two decades answering is the
       one this casebook cares about: why does the same framework
       work in some schools and not others?#cn()
@@ -5001,7 +5001,7 @@
     ],
   ),
   beats: (
-    "Framework codified late 1990s under OSEP technical-assistance center; scaled to more than 25,000 US schools per the Center on PBIS",
+    "Framework codified late 1990s under OSEP technical-assistance center; scaled to more than 25,000 U.S. schools per the Center on PBIS",
     "Maryland group-randomized trials (37 elementary schools, 5 years): significant reductions in suspensions, office referrals, behavior problems, and bullying — when implemented with fidelity",
     "SET and TFI fidelity instruments turn implementation into a scored, repeatable observation; fidelity data drives the coaching loop that carries the effect",
     "PBIS Maryland (1999 – present): MSDE–Sheppard Pratt–Johns Hopkins partnership trained staff at over 1,000 schools by replicating the infrastructure, not distributing the document",

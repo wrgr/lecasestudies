@@ -29,7 +29,7 @@
 
 #set par(justify: true, leading: 0.62em, first-line-indent: 0pt)
 #text(font: sans, size: 10pt, fill: text-dark)[
-  Every reference cited in every case, organised by case in number
+  Every reference cited in every case, organized by case in number
   order. The intent is that any reader can locate every source the
   book draws on. Each entry preserves the in-case citation form
   (author, year, venue) and adds an explicit *Retrieved from:* line

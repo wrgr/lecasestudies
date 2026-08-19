@@ -225,7 +225,7 @@
       What sits behind the cord is a set of conditions a plant has to be
       funded to hold. Team leaders are staffed on the floor at a ratio
       that leaves them free to answer within a takt cycle; a
-      fully-utilised responder turns the cord into a doorbell. Buffers
+      fully utilized responder turns the cord into a doorbell. Buffers
       between stations are kept thin, so a defect cannot be parked
       downstream and the signal has to be acted on. Standardized work
       gives the anomaly something to be measured against. Toyota's
@@ -239,7 +239,7 @@
     [
       The evidence is thinner than the story. Toyota's Georgetown plant is
       widely reported to log andon activations in the thousands per day
-      against a handful per week at comparable US plants — figures that trace
+      against a handful per week at comparable U.S. plants — figures that trace
       to a 2007 BBC report and a since-removed plant-tour page, not to
       audited data. NUMMI is the usual proof: GM's Fremont plant closed in
       1982; the joint venture reopened it in 1984 with approximately 85 percent of the same laid-off UAW workforce and came within reach of Takaoka's quality.
@@ -310,7 +310,7 @@
   ),
   reflection-list: (
     [Identify a signalling channel in your domain — a hotline, a flag, a stop-work right. What does using it cost the person who uses it, in seconds and in social exposure? Cut that cost by an order of magnitude and name what you had to change to do it.],
-    [Name who is structurally free to answer that signal inside the window in which an answer still matters, and what their utilisation rate is. If nobody is, the channel is a doorbell; specify the staffing that would make it a channel.],
+    [Name who is structurally free to answer that signal inside the window in which an answer still matters, and what their utilization rate is. If nobody is, the channel is a doorbell; specify the staffing that would make it a channel.],
     [Toyota publishes its own pull counts and no external audit distinguishes real defect signals from routine minor calls. Design the falsification test for your channel: what observation would show it is being used ritually rather than substantively, and what would you do on seeing it?],
   ),
   approaches: (

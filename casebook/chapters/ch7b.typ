@@ -1622,7 +1622,7 @@
     ],
   ),
   beats: (
-    "NYC Local Law 144 of 2021; Department of Consumer and Worker Protection implementing rules effective July 5 2023; first US municipal AEDT regulation at this scope",
+    "NYC Local Law 144 of 2021; Department of Consumer and Worker Protection implementing rules effective July 5 2023; first U.S. municipal AEDT regulation at this scope",
     "Three requirements: annual independent bias audit, publication of audit summary, candidate notice and alternative-selection request process",
     "Audit metrics: selection rate and impact ratio by sex, race/ethnicity, intersectional categories; computed by independent auditor not associated with the AEDT",
     "Andrus et al. 2021, 38 practitioner interviews: the demographic data bias detection requires is routinely unavailable; Wright et al. 2024: 18 of 391 employers posted an audit, and null compliance makes non-compliance unprovable",

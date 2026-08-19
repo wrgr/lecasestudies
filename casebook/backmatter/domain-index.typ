@@ -35,7 +35,7 @@
 #set par(justify: true, leading: 0.62em, first-line-indent: 0pt)
 #text(font: sans, size: 10pt, fill: text-dark)[
   The matrix at the front lists every case in number order. This
-  index reorganises the cases by primary domain — a reader
+  index reorganizes the cases by primary domain — a reader
   following healthcare, defense, education, or any other thread can
   find the relevant cases together. Each case appears once, under
   its primary domain. Where a section opens with a callout, it names
@@ -169,7 +169,7 @@
   },
   industrial: {
     standout-line("Standout failure", 147, gold)[
-      *Bhopal (1984).* Training, knowledge, normalisation of deviance,
+      *Bhopal (1984).* Training, knowledge, normalization of deviance,
       and governance all collapsed in the same plant. Roughly 4,000
       immediate deaths; chronic harms continue. The cautionary case
       for outsourced operational responsibility.

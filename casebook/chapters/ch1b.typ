@@ -1374,7 +1374,7 @@
     // -- What Transferred --
     [
       What Keystone established was not which component worked but that
-      the bundle worked and travelled. The model was packaged as the AHRQ
+      the bundle worked and traveled. The model was packaged as the AHRQ
       CUSP toolkit, adopted in more than forty states, and replicated
       internationally — the checklist, the nurse-stop authorization, the
       line cart, the daily goals sheet, and the monthly infection
@@ -1388,7 +1388,7 @@
   beats: (
     "Central-line infections persisted because nurses lacked procedural path to intervene across the authority gradient",
     "Pronovost paired a five-item sterile checklist with a required nurse stop authority",
-    "An institutional warrant rather than a personal one, triggered by a missed item rather than a judgement",
+    "An institutional warrant rather than a personal one, triggered by a missed item rather than a judgment",
     "CLABSI rates fell near zero across 103 ICUs; effect sustained at ten years",
     "Packaged as the AHRQ CUSP toolkit and replicated in forty states and internationally as a whole bundle",
   ),
@@ -1399,7 +1399,7 @@
     [Agency for Healthcare Research and Quality, CUSP toolkit — dissemination across states.],
     [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — the critique: the Keystone result cannot be attributed cleanly to the checklist, and the bundle's active ingredient is not established.],
   ),
-  quote: [The checklist gave the nurse an impersonal reason to stop: a missed item rather than a judgement about the physician.],
+  quote: [The checklist gave the nurse an impersonal reason to stop: a missed item rather than a judgment about the physician.],
   quote-source: "Editors' synthesis of Pronovost & Vohr, Safe Patients, Smart Hospitals, 2010",
   le-insight: [
     Keystone is the strongest healthcare evidence that a protocol and the

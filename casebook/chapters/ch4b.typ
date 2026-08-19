@@ -825,7 +825,7 @@
   year: "2009 – 2014",
   domains-list: ("defense", "workforce L&D", "intelligent tutoring"),
   modes-code: "HKD",
-  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, US Navy IT graduates with no prior IT experience outscored fleet Information Systems Technicians with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
+  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, U.S. Navy IT graduates with no prior IT experience outscored fleet Information Systems Technicians with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
   kind: "intervention",
   scale: "small",
   evidence-source: "program-report",
@@ -838,7 +838,7 @@
     could compress years of operational IT expertise into a 16-week
     pipeline. The independent evaluation by the Institute for Defense
     Analyses (Morrison and Fletcher, IDA Document D-4686, 2012) compared
-    Digital Tutor graduates — US Navy enlistees with no prior IT
+    Digital Tutor graduates — U.S. Navy enlistees with no prior IT
     experience — against fleet Information Systems Technicians
     with an average 9.1 years of experience. The Digital Tutor
     cohort outscored fleet ITs on a knowledge test with an effect
@@ -857,7 +857,7 @@
   ],
   sections: (
     [
-      The US Navy's Information Systems Technician rating has a
+      The U.S. Navy's Information Systems Technician rating has a
       conventional pipeline: an A-school of several months, followed
       by years of fleet experience that turn the rated sailor into
       an operational troubleshooter. The capability that matters at
@@ -928,9 +928,9 @@
     ],
   ),
   beats: (
-    "DARPA Digital Tutor — intelligent tutoring system modelled on expert one-on-one human tutoring; 16-week pipeline for US Navy IT rating",
+    "DARPA Digital Tutor — intelligent tutoring system modelled on expert one-on-one human tutoring; 16-week pipeline for U.S. Navy IT rating",
     "IDA evaluation for the sponsor (Morrison & Fletcher, IDA D-4686, 2012), 12 per arm, unrandomised: Digital Tutor graduates vs. fleet ITs with 9.1 years' average experience",
-    "Knowledge-test effect size 4.30; troubleshooting effect a fifth of that at 0.85; the security exercise favoured the fleet, not significantly",
+    "Knowledge-test effect size 4.30; troubleshooting effect a fifth of that at 0.85; the security exercise favored the fleet, not significantly",
     "Report concludes the effort 'appears to have achieved its goals'",
     "Hedges preserved: knowledge accounts for ~40% of practical-exercise variance, 'an enabler of performance rather than a direct measure'; architecture detail too scant to reproduce",
   ),

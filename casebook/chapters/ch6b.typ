@@ -34,7 +34,7 @@
   year: "1963 – present",
   domains-list: ("naval engineering", "defense", "safety certification"),
   modes-code: "GKH",
-  impact: "From 1915 to 1963 the US Navy lost 16 submarines to non-combat causes; since 1963 it has lost one — USS Scorpion — which was not SUBSAFE-certified. The Columbia Accident Investigation Board cited SUBSAFE as a model NASA could emulate",
+  impact: "From 1915 to 1963 the U.S. Navy lost 16 submarines to non-combat causes; since 1963 it has lost one — USS Scorpion — which was not SUBSAFE-certified. The Columbia Accident Investigation Board cited SUBSAFE as a model NASA could emulate",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -43,7 +43,7 @@
   leo-anchor: "LEO-1, LEO-4",
   summary: [
     USS Thresher was lost with 129 aboard on April 10, 1963. Within
-    fifty-four days the US Navy created SUBSAFE — a program that
+    fifty-four days the U.S. Navy created SUBSAFE — a program that
     certifies design, material, fabrication, and testing for every
     component inside the submarine's watertight-integrity boundary and
     its safe-recovery systems. The requirements were issued by
@@ -67,7 +67,7 @@
   ],
   sections: (
     [
-      USS Thresher, the lead boat of a new class of US nuclear attack
+      USS Thresher, the lead boat of a new class of U.S. nuclear attack
       submarines, was lost on April 10, 1963 during post-overhaul
       sea trials off Cape Cod. All 129 aboard died. The investigation
       identified a likely sequence — silver-brazed piping joint
@@ -159,7 +159,7 @@
     [MIT Press, "SUBSAFE: An Example of a Successful Safety Program" — book chapter (open access).],
     [NASA SMA (2006), "USS Thresher Lessons Learned" briefing — safety-message archive.],
     [Columbia Accident Investigation Board (2003), final report — Volume I, endorsement of SUBSAFE as a model for NASA.],
-    [US Navy NAVSEA, SUBSAFE program documentation — operating program publications.],
+    [U.S. Navy NAVSEA, SUBSAFE program documentation — operating program publications.],
   ),
   quote: [Objective Quality Evidence — verifiable fact, not probabilistic assessment — is the cultural artifact the program is built on.],
   quote-source: "Editors' synthesis of the SUBSAFE program literature.",
@@ -1109,7 +1109,7 @@
       briefings, in inconsistent formats, on inconsistent cadences,
       with no single place a decision-maker could look to see the
       outbreak as it unfolded. On 22 January 2020, a day after the
-      first reported US case, Gardner and Dong at JHU CSSE launched
+      first reported U.S. case, Gardner and Dong at JHU CSSE launched
       what the team's own peer-reviewed retrospective calls the
       first global real-time coronavirus surveillance system: an
       interactive web dashboard, initially fed by hand from a
@@ -1149,7 +1149,7 @@
       schools of medicine and public health to add the data layers
       the raw case map could not carry: testing rates,
       hospitalization, vaccination, and — through its racial-data-
-      transparency work — a public accounting of which US states
+      transparency work — a public accounting of which U.S. states
       did and did not report race- and ethnicity-stratified data,
       turning the absence of equity data into a visible,
       trackable fact rather than a silent gap.#cn()
@@ -1183,7 +1183,7 @@
     ],
   ),
   beats: (
-    "Launched 22 January 2020 by Gardner and Dong at JHU CSSE, one day after the first reported US case; every displayed number published as open data",
+    "Launched 22 January 2020 by Gardner and Dong at JHU CSSE, one day after the first reported U.S. case; every displayed number published as open data",
     "Manual curation replaced by a semi-automated pipeline — scraping, validation, in-house anomaly detection with human review — built with APL engineering (a role the editors, conflict disclosed, record as larger than the public record conveys)",
     "Coronavirus Resource Center (March 2020) joined medicine, public health, and engineering; added testing, hospitalization, vaccine, and race/ethnicity-transparency data layers",
     "Peak single-day load above 4.6 billion requests; 226+ billion feature-layer requests by June 2022; 2022 Lasker-Bloomberg Public Service Award to Gardner",

@@ -991,7 +991,7 @@
   year: "1996 – 2002",
   domains-list: ("aviation", "safety engineering", "human factors"),
   modes-code: "HKG",
-  impact: "AlliedSignal's Enhanced Ground Proximity Warning System (EGPWS, 1996; now Honeywell's), mandated by the FAA as Terrain Awareness and Warning System (TAWS) for US-registered turbine aircraft beginning in 2000 and broadly worldwide by 2002, converted controlled flight into terrain (CFIT) — historically one of the largest categories of commercial-aviation fatalities — into a category whose rate in equipped fleets has fallen sharply; CFIT events on properly equipped and operating airliners are now rare",
+  impact: "AlliedSignal's Enhanced Ground Proximity Warning System (EGPWS, 1996; now Honeywell's), mandated by the FAA as Terrain Awareness and Warning System (TAWS) for U.S.-registered turbine aircraft beginning in 2000 and broadly worldwide by 2002, converted controlled flight into terrain (CFIT) — historically one of the largest categories of commercial-aviation fatalities — into a category whose rate in equipped fleets has fallen sharply; CFIT events on properly equipped and operating airliners are now rare",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -1015,7 +1015,7 @@
     terrain database and aircraft position to the input set,
     permitting forward-looking terrain-avoidance alerting. The
     FAA mandated EGPWS-class equipment (formally TAWS) on
-    US-registered turbine aircraft beginning March 2000, with
+    U.S.-registered turbine aircraft beginning March 2000, with
     full compliance required by 2005; ICAO and most national
     regulators followed. The published outcome record is that
     CFIT in EGPWS-equipped commercial fleets has become rare —
@@ -1062,7 +1062,7 @@
       and provide alerts well before terrain contact is
       imminent. The FAA codified the capability in the
       Terrain Awareness and Warning System (TAWS) regulation,
-      requiring TAWS-class equipment on US-registered turbine aircraft with six or more passenger seats under a rule published 29 March 2000 and effective 29 March 2001, binding new-build aircraft from March 2002 and the whole fleet by March 2005. ICAO and
+      requiring TAWS-class equipment on U.S.-registered turbine aircraft with six or more passenger seats under a rule published 29 March 2000 and effective 29 March 2001, binding new-build aircraft from March 2002 and the whole fleet by March 2005. ICAO and
       most national regulators followed with parallel
       mandates.#cn()
     ],

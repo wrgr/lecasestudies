@@ -973,7 +973,7 @@
     [Deepwater Horizon Study Group (UC Berkeley, 2011) final report; N. Leveson, systems-theoretic analysis of Deepwater Horizon — the multi-layer drift and the limits of single-cause framings.],
     [Spill-volume estimates (~4.9 million barrels) and BP cost disclosures (>\$65 billion); the reorganization of the Minerals Management Service into BSEE/BOEM (Secretarial Order 3299, 2010); A. Lustgarten, _Run to Failure: BP and the Making of the Deepwater Horizon Disaster_ (W.W. Norton, 2012) — long-arc account of accumulated procedural debt.],
   ),
-  quote: [The immediate causes of the Macondo well blowout can be traced to a series of identifiable mistakes ... that reveal such systematic failures in risk management that they place in doubt the safety culture of the entire industry.],
+  quote: [The immediate causes of the Macondo well blowout can be traced to a series of identifiable mistakes … that reveal such systematic failures in risk management that they place in doubt the safety culture of the entire industry.],
   quote-source: "National Commission, Deep Water (Report to the President), 2011",
   le-insight: [
     Deepwater Horizon is the canonical multi-layer failure: training,
@@ -1076,7 +1076,7 @@
       failure by central government and every body responsible. Cladding
       companies had engaged in "systematic dishonesty," marketing combustible
       products as safe and corrupting the very test data buyers relied on;
-      the council's building control surveyor visited far less often than the monthly schedule he intended, and never recognised that the panels and insulation in use were combustible.#cn() The London Fire Brigade was
+      the council's building control surveyor visited far less often than the monthly schedule he intended, and never recognized that the panels and insulation in use were combustible.#cn() The London Fire Brigade was
       unprepared: the risks of rapidly developing cladding fires were known
       from prior incidents — Knowsley Heights, Garnock Court, Shepherd's Court
       — but the commanders who attended "had received no training in the particular dangers associated with combustible cladding," so each near-miss taught no one.#cn()
@@ -1109,7 +1109,7 @@
   beats: (
     "1970s tower refurbished with combustible aluminium-composite cladding while the fire engineer never warned the team",
     "Kitchen fire climbed the exterior cladding; stay-put advice held residents inside; seventy-two died",
-    "Inquiry found systematic dishonesty by cladding firms; one overworked surveyor never recognised the combustible panels",
+    "Inquiry found systematic dishonesty by cladding firms; one overworked surveyor never recognized the combustible panels",
     "Distributed capability failure; fraud, capture, incompetence, lost memory converged with no integrated owner",
     "Phase 2 report and government response drove building-safety, cladding, and fire-service reforms",
   ),
