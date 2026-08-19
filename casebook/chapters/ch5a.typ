@@ -971,8 +971,7 @@
       locating the cause in the design, not the people executing it.#cn()
       Investigators tied the misconduct directly to the bank's
       incentive-compensation structure, which had made such sales practices a
-      foreseeable result rather than an aberration. The CEO resigned, and the
-      Federal Reserve imposed an unprecedented cap on the bank's assets,
+      foreseeable result rather than an aberration. The CEO resigned, and the Federal Reserve capped the bank's assets,
       reaching past individual penalties to constrain the institution
       itself.#cn()
     ],

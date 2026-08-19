@@ -18,7 +18,7 @@
 #text(font: sans, size: 9pt, fill: text-muted)[
   Numbered references are cited in the Introduction. Per-case sources
   appear on each spread. The broader reading list at the end of this
-  section collects foundational works the LENS curriculum draws on.
+  section collects the core works the LENS curriculum draws on.
 ]
 
 #v(12pt)

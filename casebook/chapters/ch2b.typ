@@ -1228,7 +1228,7 @@
     after: (
       [Publish the heterogeneity result with the aggregate result; the case's equity-relevant pedagogical value depends on the heterogeneity finding being on the same page as the average effect.],
       [Track the adaptation arm — the lower-cost virtual-training condition — as a separate replication; the closed-loop evidence architecture the case demonstrates includes adaptation-under-different-conditions as a distinct evidence layer.],
-      [Carry the case in syllabi alongside Case 84 so the evaluation-horizon discipline and the heterogeneity-pre-specification discipline are taught together; the two methodological lessons are independent and both load-bearing for EdTech-evaluation design.],
+      [Carry the case in syllabi alongside Case 84 so the evaluation-horizon discipline and the heterogeneity-pre-specification discipline are taught together; the two methodological lessons are independent and both matter for EdTech-evaluation design.],
     ),
   ),
   references: (
@@ -2076,7 +2076,7 @@
   ),
   approaches: (
     during: (
-      [Position the AI as augmentation explicitly in the design documentation, not implicitly in the deployment pattern; the augmentation-vs-delegation distinction is the load-bearing design choice and should be the named design choice.],
+      [Position the AI as augmentation explicitly in the design documentation, not implicitly in the deployment pattern; the augmentation-vs-delegation distinction is the design choice that decides the rest and should be named as such.],
       [Preserve human-tutor authorization to override and re-direct as a system-design requirement, not as a discretionary affordance; the comparison with Case 5 (Epic Sepsis) is that override authorization collapses when the system pattern does not actively preserve it.],
       [Measure the student-learning outcome, not the AI-system-fidelity outcome; the case's pedagogical framing depends on the outcome instrument being the educationally relevant one, not the AI-development-internal one.],
     ),
@@ -2483,8 +2483,7 @@
   summary: [
     Georgia State University built a predictive-analytics advising system
     that tracks some 800 risk factors per student and triggers proactive
-    outreach when early warning signs appear. Crucially, it was designed
-    with equity as a primary constraint — the explicit goal was to
+    outreach when early warning signs appear. It was designed with equity as a primary constraint — the explicit goal was to
     eliminate, not reproduce, graduation gaps — and the alerts prompt human
     advisors rather than making automated decisions. The six-year
     graduation rate rose from 32% to 54%; Black and Pell-eligible students
@@ -2520,7 +2519,7 @@
     ],
     // -- How It Worked --
     [
-      The load-bearing design choice was the human-loop architecture:
+      The design choice that decided everything was the human-loop architecture:
       alerts trigger proactive advising — a phone call, a meeting, a
       financial-aid check — rather than automated decisions. Predictions
       are used to deliver more support to at-risk students, not to gatekeep
@@ -2540,8 +2539,7 @@
       Eliminating the gap rather than narrowing it is the decisive result:
       the overall rate rose while the disparities by race and income closed,
       so the gain did not come at the expense of the students the system was
-      most at risk of leaving behind. The attribution carries a load-bearing
-      hedge: most of the 32%-to-54% rise accumulated across a decade in which
+      most at risk of leaving behind. The attribution carries a hedge that has to survive: most of the 32%-to-54% rise accumulated across a decade in which
       GPS Advising (launched 2012) was one component of a broader bundle of
       reforms — meta-majors, Panther Retention Grants, freshman learning
       communities, block scheduling — so the isolated causal contribution of
@@ -4605,7 +4603,7 @@
       labor-market transition.
     ],
     [
-      The honest reading is the load-bearing teaching point.
+      The honest reading is the teaching point.
       Self-report dominates the headline outcomes. The program
       has not been subjected to a rigorous quasi-experimental
       external evaluation that would isolate the program's
@@ -4940,8 +4938,7 @@
       reported significant improvements in teacher-rated child
       behavior problems across 12,344 children (Bradshaw,
       Waasdorp, & Leaf 2012) and reductions in bullying and peer
-      rejection (Waasdorp, Bradshaw, & Leaf 2012). The
-      load-bearing qualifier is in the trial design itself: the
+      rejection (Waasdorp, Bradshaw, & Leaf 2012). The qualifier that matters is in the trial design itself: the
       randomized schools did not merely receive the framework —
       they received structured training, on-site coaching, and
       annual fidelity assessment, and the published effects are

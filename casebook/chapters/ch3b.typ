@@ -641,8 +641,7 @@
     authorized. Either alone fails.
   ],
   lens-approach: [
-    LENS treats CRM/CAST as the foundational success case across the
-    curriculum. LEN 1 uses it as the problem-framing exemplar; LEN 4 uses
+    LENS treats CRM/CAST as the anchor success case across the curriculum. LEN 1 uses it as the problem-framing exemplar; LEN 4 uses
     CAST as the model closed-loop evidence system; LEN 2 uses CRM as the
     template for redesigning human roles in automated environments — the
     logic now being applied to AI-augmented systems.
@@ -841,10 +840,10 @@
   year: "1976 – present",
   domains-list: ("aviation",),
   modes-code: "TKN",
-  impact: "NASA-administered confidential reporting system; more than 2M reports received; foundational architecture for evidence-driven aviation safety",
+  impact: "NASA-administered confidential reporting system; more than 2M reports received; the architecture other evidence-driven safety systems copied",
   diagram: dgm.dgm-flow(
     ("operator", "confidential\nreport", "ASRS DB", "analyst", "FAA action"),
-    framing: "non-punitive use is the load-bearing institutional commitment",
+    framing: "non-punitive use is the commitment that makes it work",
     caption: "ASRS — paired technical artifact and protected reporter",
   ),
   kind: "intervention",
@@ -852,7 +851,7 @@
     The Aviation Safety Reporting System, run by NASA on behalf of the FAA
     since 1976, accepts confidential reports from pilots, controllers,
     mechanics, and cabin crew about incidents, near-misses, and safety
-    concerns. Its load-bearing feature is institutional, not technical:
+    concerns. Its decisive feature is institutional, not technical:
     reporting an event to ASRS confers immunity from FAA enforcement for
     the conduct reported, within specified limits, making honest reporting
     the rational choice. Over nearly fifty years and more than two million
@@ -919,8 +918,7 @@
       similar systems in rail and nuclear power. It is the canonical
       positive case for evidence architecture paired with an institutional
       commitment to non-punitive learning, the defining design pattern of a
-      "just culture." The breadth of emulation underscores that the
-      load-bearing element travels — wherever the most valuable safety data
+      "just culture." The breadth of emulation shows that the part that matters travels — wherever the most valuable safety data
       sits with operators who fear punishment, the same protected-reporting
       design recurs as the way to unlock it.#cn()
     ],
@@ -945,12 +943,10 @@
     ASRS is the canonical positive case for paired-intervention
     evidence architecture. The technical artifact (the reporting form
     and the database) is paired with the cultural commitment to
-    non-punitive use. Either alone fails. Together they have produced
-    the most comprehensive operational-safety dataset in any domain.
+    non-punitive use. Either alone fails. Together they have produced the operational-safety dataset other domains have tried to copy.
   ],
   lens-approach: [
-    LENS uses ASRS in LEN 4 as the foundational positive case for
-    evidence architecture and in LEN 8 for institutional commitment
+    LENS uses ASRS in LEN 4 as the primary positive case for evidence architecture and in LEN 8 for institutional commitment
     to non-punitive learning. Studio projects design ASRS-equivalents
     for new domains.
   ],

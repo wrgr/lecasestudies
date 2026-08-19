@@ -648,15 +648,13 @@
   quote: [AI assistance changes what developers can do; it may also change what they need to know.],
   quote-source: "Editors' synthesis",
   le-insight: [
-    AI-augmented coding is the live foundational case for human-AI
-    teaming in professional knowledge work. The short-term gains are
+    AI-augmented coding is the live test case for human-AI teaming in professional knowledge work. The short-term gains are
     real. The long-term capability question — does the tool make the
     operator more capable, or more dependent — is the question the
     discipline must learn to ask and answer.
   ],
   lens-approach: [
-    The teaching point is a measurement-design problem, and it is the
-    load-bearing one: productivity metrics count output and so cannot
+    The teaching point is a measurement-design problem, and it is the one that decides the rest: productivity metrics count output and so cannot
     distinguish a developer whose skill is growing from one whose skill
     is quietly eroding under augmentation. The learning engineer's task
     is to build the instrument that separates those two. The design is a

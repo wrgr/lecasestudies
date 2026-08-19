@@ -88,8 +88,7 @@
       Inside that scope it demands certification of design,
       material, fabrication, testing, and configuration control —
       with what the program calls "Objective Quality Evidence"
-      attached at every step. That phrase is the load-bearing
-      cultural artifact of the program: verifiable fact, not
+      attached at every step. That phrase is the cultural artifact the program rests on: verifiable fact, not
       probabilistic assessment, is what the certification rests on.#cn()
     ],
     [
@@ -522,7 +521,7 @@
   year: "1982",
   domains-list: ("healthcare", "industrial"),
   modes-code: "GN",
-  impact: "Foundational U.S. corporate crisis-management case; produced tamper-evident packaging regulation and modern recall practice",
+  impact: "The founding U.S. corporate crisis-management case; produced tamper-evident packaging regulation and modern recall practice",
   diagram: dgm.dgm-stat(
     "31M",
     "bottles recalled · ~$100M cost",
@@ -566,7 +565,7 @@
     ],
     // -- How It Worked --
     [
-      The load-bearing element was a commitment pre-committed in writing.
+      The decisive element was a commitment made in writing beforehand.
       Because the Credo had already decided, decades earlier, that the
       customer came first, the 1982 leadership did not have to improvise an
       ethical calculus under crisis — it executed a pre-made decision. CEO
@@ -579,7 +578,7 @@
     ],
     // -- The Evidence --
     [
-      The response, unprecedented in U.S. corporate practice, preserved public trust: Tylenol climbed from a 7 percent share back to 30 percent by mid-1983 and to its pre-crisis 35 percent by year's end, despite the enormous short-term cost. The case became the canonical
+      The response, without precedent in U.S. corporate practice, preserved public trust: Tylenol climbed from an 8 percent share back to 30 percent by mid-1983 and to its pre-crisis 35 percent by year's end, despite the enormous short-term cost. The case became the canonical
       positive example in business education of crisis response driven by
       capability commitment rather than legal minimization. The market
       recovery is what makes the case persuasive rather than merely
@@ -618,16 +617,14 @@
   quote-source: "James Burke (Johnson & Johnson CEO) — closing sentence quoted in Lasting Leadership (Wharton); opening lead is the editors' paraphrase",
   le-insight: [
     Tylenol is the canonical positive case for institutional response
-    to crisis. The capability that was load-bearing was the
-    pre-specified institutional commitment in the Credo. The crisis
+    to crisis. The capability that mattered was the pre-specified institutional commitment in the Credo. The crisis
     decision had been made decades earlier; in 1982 it was executed.
     The case is the strongest evidence in the business-ethics dataset
     that values must be pre-committed in writing to be operational
     under stress.
   ],
   lens-approach: [
-    LENS uses Tylenol in LEN 7 as the foundational positive case for
-    institutional governance under crisis and in LEN 10 (capstone) as a
+    LENS uses Tylenol in LEN 7 as the primary positive case for institutional governance under crisis and in LEN 10 (capstone) as a
     worked example of pre-committed capability that executed under
     operational pressure.
   ],
@@ -1091,8 +1088,7 @@
     anomaly-detection engineering; and the university stood up the
     Coronavirus Resource Center (CRC, March 2020), joining medicine,
     public health, and engineering to add testing, hospitalization,
-    vaccine, and equity data layers. The load-bearing hedge is
-    preserved throughout: the dashboard is simultaneously a success
+    vaccine, and equity data layers. The hedge is preserved throughout: the dashboard is simultaneously a success
     case and evidence of the system gap it filled — for much of
     2020 no government source operated at its speed or completeness,
     and its sustainment was never structural. Independent
@@ -1155,8 +1151,7 @@
       trackable fact rather than a silent gap.#cn()
     ],
     [
-      The capability gap the dashboard exposed is as load-bearing
-      as the artifact itself. For much of 2020, a professor, her
+      The capability gap the dashboard exposed matters as much as the artifact itself. For much of 2020, a professor, her
       graduate students, and a volunteer-plus-institutional
       support network were faster and more complete than any
       government source; the world's newsrooms and health agencies

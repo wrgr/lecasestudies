@@ -1324,7 +1324,7 @@
     femoral insertion site, and remove unnecessary catheters — and not one of them was unknown
     to the physicians it governed. The question was never what to do, but
     whether it would be done every time. The Keystone project, launched
-    across 103 Michigan ICUs in 2004, paired the checklist with a cultural change: nurses were empowered to stop the procedure, in non-emergency situations, whenever a step was skipped. That authorization is the element the case treats as load-bearing — though it
+    across 103 Michigan ICUs in 2004, paired the checklist with a cultural change: nurses were empowered to stop the procedure, in non-emergency situations, whenever a step was skipped. That authorization is the element the case treats as decisive — though it
     rode inside a multi-component bundle (clinician education, a dedicated line
     cart, daily catheter-review goals, and monthly infection-rate feedback) that
     the trial tested as a whole and could not decompose. Central-line-associated bloodstream infections
@@ -1382,7 +1382,7 @@
       covers. Packaging the approach as a
       reusable toolkit was itself part of what transferred — it turned a
       single project's success into something other institutions could adopt
-      without rediscovering the load-bearing role of the authority change.#cn()
+      without rediscovering for themselves how much the authority change was doing.#cn()
     ],
   ),
   beats: (
@@ -1437,7 +1437,7 @@
     after: (
       [Measure the outcome directly (the CLABSI rate) and publish it, so the cultural half can be confirmed as authorized in practice rather than merely declared.],
       [Track the effect over years, not months, to confirm the change is built into the system's structure rather than riding on a project's initial enthusiasm.],
-      [Package the paired design as a reusable toolkit so other institutions can adopt it without rediscovering the load-bearing role of the authority change.],
+      [Package the paired design as a reusable toolkit so other institutions can adopt it without rediscovering for themselves how much the authority change was doing.],
     ),
   ),
   courses: ("LEN 4", "LEN 10", "LEN 5"),

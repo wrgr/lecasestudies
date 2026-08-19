@@ -720,7 +720,7 @@
       Assessment Grade level. The withdrawal was structural — it
       affected the entire 2020 cohort — and it was rapid in a way
       that few national-scale algorithmic deployments have been.
-      The Office for Statistics Regulation's March 2021 review adjudicated the governance record and named the engagement failure as the load-bearing one: acceptability testing had examined the process of calculating grades rather than the impact on individuals. The technical report had been internally honest about the cohort-size dependence, and the failure was that the dependence had not been surfaced to affected schools and students in advance of deployment.#cn()
+      The Office for Statistics Regulation's March 2021 review adjudicated the governance record and named the engagement failure as the decisive one: acceptability testing had examined the process of calculating grades rather than the impact on individuals. The technical report had been internally honest about the cohort-size dependence, and the failure was that the dependence had not been surfaced to affected schools and students in advance of deployment.#cn()
     ],
     [
       The case pairs with Case 86 (Gándara / community-college
@@ -740,7 +740,7 @@
       withdrawal or that were never withdrawn.#cn()
     ],
     [
-      The technical report's hedge is binding and load-bearing.
+      The technical report's hedge is binding.
       Ofqual's own document states that the statistical measures
       behind the standardisation are meaningful only for groups
       of students, that using them to predict an individual
@@ -807,8 +807,7 @@
     Pair with Case 86 (Gándara community-college predictive
     equity), Case 88 (LiveHint AI bias across foundation
     models), and Case 48 (Johnson school surveillance). The
-    technical report's acknowledgement of incompatibility is the
-    load-bearing hedge.
+    technical report's acknowledgement of incompatibility is the hedge that matters.
   ],
   literature-items: (
     [Ofqual technical report (August 2020); Office for Statistics Regulation review (2021)],
@@ -1316,8 +1315,7 @@
     Parent-privacy groups organized opposition state by state, and the coalition of nine shrank to three in seven months. Analysts read inBloom as low public tolerance for risk meeting an initiative that never communicated its benefits — the assumption that technically sound infrastructure generates
     its own legitimacy. It is the purest governance failure in the dataset,
     and the book's clearest argument that in education at scale, stakeholder
-    trust and governance are not optional features but load-bearing
-    structure.
+    trust and governance are not optional features but structure.
   ],
   sections: (
     // -- Background --
@@ -1362,7 +1360,7 @@
       later. Once opposition formed, no patch could retrofit the trust that
       should have been built in from the start, because trust withheld at
       launch cannot be engineered back in under fire. In education at scale,
-      those are load-bearing elements, not optional ones.#cn()
+      those hold the thing up; they are not optional.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -1419,7 +1417,7 @@
   ),
   approaches: (
     during: (
-      [Treat consent, transparency, and a parent-facing voice as load-bearing requirements gathered before the data store is built, not features bolted on after launch.],
+      [Treat consent, transparency, and a parent-facing voice as requirements gathered before the data store is built, not features bolted on after launch.],
       [Engage the families and districts whose data is at stake as design stakeholders from the outset, so the governance questions surface in requirements rather than in opposition.],
       [Make legitimacy an explicit deliverable: document who must agree, on what terms, before any student record moves into shared infrastructure.],
     ),
@@ -2602,8 +2600,7 @@
     ],
     // -- Aftermath & Equity Record --
     [
-      The bias record is documented, not asserted, and its
-      hedges are load-bearing. Amrein-Beardsley and Geiger's
+      The bias record is documented, not asserted, and its hedges do real work. Amrein-Beardsley and Geiger's
       2020 analysis of more than 1,700 HISD teachers' EVAAS
       results found that teachers in schools serving larger
       populations of English-language learners,
@@ -2840,8 +2837,7 @@
       central account.#cn()
     ],
     [
-      The hedges the case carries are load-bearing. The
-      evidence-tier flag is binding: the NRP findings and the
+      The hedges the case carries are not decoration. The evidence-tier flag is binding: the NRP findings and the
       reading science are peer-reviewed, but the causal
       narrative of why practice diverged — the publishing
       economics, the teacher-preparation gaps, the role of
@@ -2894,7 +2890,7 @@
   quote: [The scientific question of how children learn to read words was, by the field's own account, settled while the divergent practice scaled; the evidence base failed to reach teacher preparation and daily curriculum for decades, and the causal narrative of why is journalistic synthesis — source confidence flagged, future validation ongoing.],
   quote-source: "Editors' synthesis of Hanford (APM Reports, 2018, 2022), the National Reading Panel report (2000), and Castles, Rastle & Nation (2018).",
   le-insight: [
-    Sold a Story is the load-bearing case for an evidence base
+    Sold a Story is the clearest case of an evidence base
     that never moved into deployment: decades of peer-reviewed
     reading science, federally consolidated in 2000, coexisted
     at national scale with classroom practice built on the

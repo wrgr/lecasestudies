@@ -937,7 +937,7 @@
   ),
   approaches: (
     during: (
-      [Make every load-bearing design assumption — here, that the system would be cycled off — an explicit, recorded requirement so a later change of use cannot silently violate it.],
+      [Make every design assumption the safety case rests on — here, that the system would be cycled off — an explicit, recorded requirement so a later change of use cannot silently violate it.],
       [Bound numerical error over the full intended operating envelope, including run times far beyond the original concept, rather than only the durations first imagined.],
       [Design the system to detect and bound its own accumulating drift, degrading or warning before the error reaches a magnitude that defeats the mission.],
     ),
@@ -1217,8 +1217,7 @@
       contextual judgment to weigh the alert against what a real attack would
       look like, and the institutional latitude to override the system rather
       than simply relay it. Petrov's "funny feeling" was a career's worth of
-      judgment doing the work the automation could not — and crucially, the
-      chain of command had left him room to act on it rather than forcing him
+      judgment doing the work the automation could not — and the chain of command had left him room to act on it rather than forcing him
       to pass the alert upward unfiltered, so the recoverability lived as much
       in the authority structure as in the man.#cn()
     ],

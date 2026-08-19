@@ -900,8 +900,7 @@
       separate legal persons. The delegation-without-revocation
       form — the organization delegates customer interaction to
       the AI agent but cannot revoke responsibility for what
-      the agent says — is the load-bearing structural
-      finding.#cn()
+      the agent says — is the structural finding.#cn()
     ],
     [
       The case pairs with Case 5 (Epic Sepsis) for the
@@ -909,8 +908,7 @@
       structural form is the same — the organization deploys an
       AI agent that produces representations or assertions
       consequential for the affected person, and the
-      organization's accountability for the agent's outputs is
-      the load-bearing governance question. Pair with Case 3
+      organization's accountability for the agent's outputs is the governance question. Pair with Case 3
       (Watson for Oncology) for the AI-agent-recommendations-in-
       practice thread. Pair with Case 77 (Hybrid Human-AI
       Tutoring) for the educational-AI-agent thread at adjacent
@@ -922,23 +920,20 @@
       AI agents.#cn()
     ],
     [
-      The hedges the case carries are load-bearing. The
-      tribunal's ruling has limited precedential weight outside
+      The hedges the case carries are binding. The tribunal's ruling has limited precedential weight outside
       BC and has not been litigated to a higher court; the
       principle has been cited but not adopted in binding form
       across Canadian or U.S. jurisdictions. The case teaches
       the form — organizations are liable for the
       representations of their AI agents — more than it
-      establishes settled law. The structural reading is the
-      load-bearing one: the case names a delegation structure
+      establishes settled law. The structural reading is the one to take: the case names a delegation structure
       and the legal question that the delegation surfaces, and
       it does so in a forum whose decision is operationally
       consequential for the parties and pedagogically clear for
       the field. The human-in-the-loop LEO at the customer-
       interaction-AI-agent seam is anchored by the case in the
       form the deployment architecture must support — the
-      organization's accountability for the agent's outputs is
-      the architecture's load-bearing constraint.
+      organization's accountability for the agent's outputs is the constraint the architecture is built around.
     ],
   ),
   beats: (
@@ -987,10 +982,7 @@
     Pair with Case 5 (Epic Sepsis delegation-without-
     validation), Case 3 (Watson for Oncology), and Case 77
     (Hybrid Human-AI Tutoring). The small-claims-tribunal
-    venue limits precedential weight; the structural reading is
-    the load-bearing one.
-  ],
-  literature-items: (
+    venue limits precedential weight; the structural reading is the one to take. ], literature-items: (
     [_Moffatt v. Air Canada_, 2024 BCCRT 149 (Feb 14 2024)],
     [Solaiman (2024), _CLSR_ — generative AI and law of agency synthesis],
     [Paired Case 5 (Epic Sepsis) delegation-without-validation form],
@@ -1180,8 +1172,7 @@
     degenerate cases. The case pairs with Case 186 (Bartlett
     mortgage — fairness through unawareness fails), Case 196
     (Coots — competing fairness definitions), and Case 189
-    (SyRI). The impossibility result is the load-bearing
-    teaching point.
+    (SyRI). The impossibility result is the teaching point.
   ],
   sections: (
     [
@@ -1267,8 +1258,7 @@
       field, which is part of what the case should teach.#cn()
     ],
     [
-      The hedges the case carries are load-bearing. Both
-      Northpointe and ProPublica are correct by their respective
+      The hedges the case carries have to travel with it. Both Northpointe and ProPublica are correct by their respective
       definitions, and the impossibility result formalizes the
       tension rather than resolving it. The case does not teach
       that COMPAS is fair or that COMPAS is unfair; it teaches
@@ -1297,7 +1287,7 @@
       [Treat the base-rate difference across groups as a governance fact, not a technical artifact; the difference is what makes the impossibility binding, and pretending it can be eliminated is the rhetorical move the case teaches to refuse.],
     ),
     after: (
-      [Carry the impossibility result into print as the load-bearing teaching point; the case does not teach that COMPAS is fair or that COMPAS is unfair, and the editorial framing must preserve the formal constraint that both audit findings instantiate.],
+      [Carry the impossibility result into print as the teaching point; the case does not teach that COMPAS is fair or that COMPAS is unfair, and the editorial framing must preserve the formal constraint that both audit findings instantiate.],
       [Pair in syllabi with Case 186 (Bartlett) so the fairness-through-unawareness-fails thread and the impossibility-of-multiple-criteria thread are taught together as complementary structural arguments about disparate impact.],
       [Use the case to anchor the fairness-beyond-omission LEO; the curricular target is the discipline of choosing and disclosing the fairness criterion when the impossibility result rules out satisfying all of them simultaneously.],
     ),
@@ -1988,16 +1978,14 @@
       affected person.#cn()
     ],
     [
-      The hedges the case carries are load-bearing. The Royal
-      Commission's attribution language on deaths is
+      The hedges the case carries are not optional. The Royal Commission's attribution language on deaths is
       circumstantial; the Commission did not, and could not on
       the evidence available, make individual legal findings of
       causation in those deaths. The case teaches the structural
       pattern — algorithmic public administration with the burden
       of proof reversed, deployed without the legal-advice seam
       being honored, operated for three years across multiple
-      ministers — and the structural pattern is what makes
-      Robodebt the load-bearing reference for an entire class of
+      ministers — and the structural pattern is what makes Robodebt the reference case for an entire class of
       contemporary algorithmic-administration failures. The
       Commission's careful attribution language and the case's
       careful editorial framing travel together; neither is
@@ -2018,7 +2006,7 @@
       [Build the cross-portfolio review surface that a multi-year algorithmic-administration scheme requires; Robodebt operated across multiple ministers and the cross-portfolio handoff was where the governance check kept being deferred.],
     ),
     after: (
-      [Carry the Commission's careful attribution language on deaths into print without softening; the case's load-bearing quality depends on the circumstantial nature of the attribution being preserved alongside the structural finding.],
+      [Carry the Commission's careful attribution language on deaths into print without softening; the case's value depends on the circumstantial nature of the attribution being preserved alongside the structural finding.],
       [Pair in syllabi with Case 189 (SyRI) so the governance-objection-correct precedent and the governance-objection-overridden harm record are taught together; the two cases together teach what advance objection can prevent and what its absence can produce.],
       [Use the case to anchor the human-in-the-loop LEO at population scale; the form Robodebt makes legible is what consequential-decision delegation looks like when the loop is removed and the asserting party operates on arithmetic that cannot establish its assertion.],
     ),
@@ -2032,8 +2020,7 @@
   quote: [The income-averaging method could not establish what it was being asked to establish, the burden of proof was reversed onto the recipient, and the Commission's attribution on associated deaths is circumstantial — and these three facts together are what Robodebt teaches.],
   quote-source: "Editors' synthesis of the Royal Commission final report (Holmes AC SC, July 2023).",
   le-insight: [
-    Robodebt is the load-bearing reference for algorithmic public
-    administration deployed at population scale without the
+    Robodebt is the reference case for algorithmic public administration deployed at population scale without the
     burden of proof being honored. The Royal Commission's final
     report adjudicated approximately 470,000 wrongful debts and
     circumstantially attributed multiple deaths to the scheme's
@@ -2051,8 +2038,7 @@
     189 (SyRI governance-objection-correct precedent), Case 48
     (Johnson school surveillance algorithmic-public-administration
     parallel), and Case 5 (Epic Sepsis delegation-without-
-    validation form). The Commission's circumstantial attribution
-    on deaths is the load-bearing hedge.
+    validation form). The Commission's circumstantial attribution on deaths is the hedge that must survive.
   ],
   literature-items: (
     [Royal Commission into the Robodebt Scheme, Final Report (Holmes AC SC, 2023)],

@@ -250,8 +250,7 @@
       in which operators are trained to challenge assumptions, including
       those of superiors. Rickover's premise — that people, not
       organizations or management systems, get things done — made the
-      qualification ladder, not paperwork, the load-bearing element of
-      safety. The questioning posture is the cultural half of the pair: deep
+      qualification ladder, not paperwork, the thing safety rested on. The questioning posture is the cultural half of the pair: deep
       technical mastery alone could still defer to a mistaken superior, so
       the obligation to challenge assumptions is what keeps competence from
       being silenced by rank.#cn()
@@ -308,8 +307,7 @@
     on the budget line.
   ],
   lens-approach: [
-    LENS treats the Rickover model in LEN 8 as the foundational
-    organizational-learning case and in LEN 5 as a worked example of
+    LENS treats the Rickover model in LEN 8 as the anchor organizational-learning case and in LEN 5 as a worked example of
     capability requirements traceable from operational analysis through
     qualification standards. The internal Navy comparison anchors the
     program's core argument about capability as a system parameter.
@@ -845,8 +843,7 @@
     size of 4.30 and outperformed them on most troubleshooting and
     design tasks; only the Security exercise produced a fleet
     advantage. The IDA report concludes the program "appears to have
-    achieved its goals." Two hedges are load-bearing and survive
-    into the case: knowledge "accounts for about 40 percent of
+    achieved its goals." Two hedges survive into the case: knowledge "accounts for about 40 percent of
     practical-exercise performance variance" and is "an enabler of
     performance rather than a direct measure of performance itself,"
     and the system-architecture detail in the available
@@ -901,8 +898,7 @@
     ],
     [
       The IDA report concludes the effort "appears to have achieved
-      its goals," and the language is deliberate. Two hedges are
-      load-bearing and survive into the case verbatim. First,
+      its goals," and the language is deliberate. Two hedges survive into the case verbatim. First,
       knowledge "accounts for about 40 percent of practical-exercise
       performance variance" and is "an enabler of performance rather
       than a direct measure of performance itself" — so the
@@ -937,7 +933,7 @@
   approaches: (
     during: (
       [Specify the operational capability the pipeline must produce in the language of the work — troubleshoot under time pressure, design a workable configuration — not in the language of the existing course's content coverage.],
-      [Treat the tutorial discipline (continuous dialogue around authentic problems, pulling toward the resolving conceptual move) as the load-bearing instructional artifact, rather than the content sequence the legacy course inherited.],
+      [Treat the tutorial discipline (continuous dialogue around authentic problems, pulling toward the resolving conceptual move) as the instructional artifact that did the work, rather than the content sequence the legacy course inherited.],
       [Design the evaluation against the operational comparison the program is built to compete with — for Digital Tutor, fleet ITs with 9.1 years of experience — so the result speaks to the capability envelope, not to a within-program improvement.],
     ),
     after: (

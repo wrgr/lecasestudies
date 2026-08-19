@@ -438,8 +438,7 @@
   The third — and the design constraint on all the others — is
   *human agency*. The capability discipline can be misread as
   optimization: produce operators whose behavior matches a
-  specification. That reading collapses the very property the cases
-  reveal as load-bearing. Every successful institution in the What Works chapters —
+  specification. That reading collapses the very property the cases reveal as decisive. Every successful institution in the What Works chapters —
   INPO operators trained to challenge their reactor team, Keystone
   ICU nurses authorized to halt a procedure (Case 19), the Nuclear
   Navy's questioning attitude (Case 137), the first-officer authority
@@ -733,8 +732,7 @@
   instead: before the event — the prevention regimes whose quiet
   thinning is the real story — and after it, the response, the
   recovery, and the institutions built (or not built) so the same
-  failure cannot recur. Cases whose load-bearing lesson belongs to a
-  domain stay in their domain parts; what qualifies a case for Part VI
+  failure cannot recur. Cases whose central lesson belongs to a domain stay in their domain parts; what qualifies a case for Part VI
   is that its lesson is the pre/post lifecycle itself.
 ]
 

@@ -589,8 +589,7 @@
     ],
     // -- The Capability Gap --
     [
-      Texas City is the foundational evidence that an organization can
-      measure the wrong thing and report excellent performance while its real
+      Texas City is the clearest evidence that an organization can measure the wrong thing and report excellent performance while its real
       capability gap widens. Personal-safety metrics — slips, trips,
       recordable injuries — carried no information about the integrity of the
       hazardous process, so the signal regime was blind in the very dimension
@@ -639,8 +638,7 @@
   ),
   quote: [Personal safety metrics are not a good indicator of process safety performance.], quote-source: "U.S. Chemical Safety Board, BP Texas City Final Investigation Report, 2007",
   le-insight: [
-    Texas City is the foundational evidence that organizations can be
-    measuring the wrong thing and reporting excellent performance while
+    Texas City is the clearest evidence that organizations can be measuring the wrong thing and reporting excellent performance while
     their actual capability gap widens. Personal-safety metrics had no
     information about process-safety state. The signal regime was
     blind in the dimension that killed people.
@@ -1673,8 +1671,7 @@
       built capability.#cn()
     ],
     [
-      The hedges the case carries are load-bearing. The death
-      toll is contested: revised counts place it near 1,400,
+      The hedges the case carries are not decoration. The death toll is contested: revised counts place it near 1,400,
       earlier official figures near 1,800, and the
       attribution of individual deaths — direct drowning
       versus indirect cardiovascular and displacement deaths —
@@ -1706,7 +1703,7 @@
   ),
   approaches: (
     during: (
-      [Treat an exercise finding as an open capability requirement with a named owner, a funding line, and a completion date; Hurricane Pam's draft plans and follow-on workshop schedule specified the requirement, and the case's load-bearing observation is that specification without a funded owner produced no capability in thirteen months.],
+      [Treat an exercise finding as an open capability requirement with a named owner, a funding line, and a completion date; Hurricane Pam's draft plans and follow-on workshop schedule specified the requirement, and the case's central observation is that specification without a funded owner produced no capability in thirteen months.],
       [Verify the catastrophic-response machinery by operating it before the catastrophe; the Incident of National Significance designation and the push-resources-without-request annex had never been exercised end-to-end in anger, and their first operational use came after landfall of the event they were designed for.],
       [Build the common operating picture as an engineered deliverable, not an aspiration; the test is concrete — the operations center should know what broadcast television knows, and a response organization that fails that test has a situational-awareness capability gap, not a communications inconvenience.],
     ),
@@ -1726,7 +1723,7 @@
   quote: [It remains difficult to understand how government could respond so ineffectively to a disaster that was anticipated for years, and for which specific dire warnings had been issued for days.],
   quote-source: "A Failure of Initiative, Select Bipartisan Committee, February 15, 2006.",
   le-insight: [
-    Katrina is the load-bearing case for a capability gap that
+    Katrina is the case of a capability gap that
     was specified, exercised, and documented before the event
     and converted into built capability by no one. The
     Hurricane Pam exercise stated the requirement thirteen

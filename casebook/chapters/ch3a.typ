@@ -2638,8 +2638,7 @@
     // -- The Investigation --
     [
       The case is canonical for the difference between documentation and
-      institutional capability. Apollo's documentation was unprecedented, but
-      it captured the *what*, not the tacit *how* — the judgment, the
+      institutional capability. Apollo's documentation was exhaustive, but it captured the *what*, not the tacit *how* — the judgment, the
       workarounds, the undocumented reasons — that lived in the people who
       did the work. When they left, that knowledge was in no archive to
       recover.#cn() A drawing records the decision but not the deliberation

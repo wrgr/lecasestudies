@@ -411,7 +411,7 @@
       definition* the deployment is being held to.#cn()
     ],
     [
-      The evidence-tier flag is load-bearing here and is rendered under
+      The evidence-tier flag matters here and is rendered under
       the case title. The Coots audit is a preprint; the metric choices,
       the mitigation specifics, the dataset window, and the reported
       magnitude may move in peer review. The structural pattern — that
@@ -831,8 +831,7 @@
     better design) transposed from education into physical-safety
     AV: the response to an opacity objection was a falsifiable
     argument structure auditable by third parties, not a defense
-    of opacity. The evidence-tier flag rendered under the title is
-    load-bearing — the analysis rests on the practitioner
+    of opacity. The evidence-tier flag rendered under the title is not a formality — the analysis rests on the practitioner
     whitepaper plus the 2025 audit summaries, not on a
     peer-reviewed safety-engineering evaluation. Future validation
     will continue as the audit cadence and post-deployment
@@ -885,8 +884,7 @@
       was built to invite rather than resist.#cn()
     ],
     [
-      The evidence-tier flag rendered under the case title is
-      load-bearing. The framework and audit summaries are
+      The evidence-tier flag rendered under the case title is doing real work. The framework and audit summaries are
       practitioner-authored or auditor-authored — not
       peer-reviewed safety-engineering analyses. Some
       audit-tier elements push toward investigation-grade, but
@@ -1526,8 +1524,7 @@
     The law was the first municipal regulation of algorithmic
     hiring tools at this scope in the United States and has
     been an influential reference for subsequent state-level
-    proposals. Independent academic critiques have surfaced two
-    load-bearing limitations: bias audits without bias data —
+    proposals. Independent academic critiques have surfaced two limitations that matter: bias audits without bias data —
     employers often lack the protected-attribute data the audit
     metrics require — and null compliance — 18 of 391 employers posted an audit at all, and non-compliance cannot be established. The case pairs with Case 85 (OU
     Analyse — governance-objection dissolved by design), Case
@@ -1572,8 +1569,7 @@
       rather than substantive standards.#cn()
     ],
     [
-      The independent academic critiques have surfaced two
-      load-bearing limitations. Andrus, Spitzer, Brown, and Xiang's 2021 interviews with 38 algorithmic-fairness practitioners found that they routinely lack access to the demographic data bias detection requires; an employer deploying an AEDT inherits that constraint, and the audits that proceed are either limited to attributes the employer happens to have or rely on imputation methods whose accuracy is itself under-evidenced. Wright et al.'s 2024 study put 155 investigators onto 391 employers and found 18 had posted an audit report and 13 a transparency notice; the posted audits were data tables with minimal explanation, none of them sufficient to inform a job seeker's decision to opt out. The paper names the deeper problem *null compliance* — employers hold enough discretion over whether the law applies that non-compliance cannot be established at all.
+      The independent academic critiques have surfaced two limitations that matter. Andrus, Spitzer, Brown, and Xiang's 2021 interviews with 38 algorithmic-fairness practitioners found that they routinely lack access to the demographic data bias detection requires; an employer deploying an AEDT inherits that constraint, and the audits that proceed are either limited to attributes the employer happens to have or rely on imputation methods whose accuracy is itself under-evidenced. Wright et al.'s 2024 study put 155 investigators onto 391 employers and found 18 had posted an audit report and 13 a transparency notice; the posted audits were data tables with minimal explanation, none of them sufficient to inform a job seeker's decision to opt out. The paper names the deeper problem *null compliance* — employers hold enough discretion over whether the law applies that non-compliance cannot be established at all.
     ],
     [
       The case pairs with Case 85 (OU Analyse) for the
@@ -1605,7 +1601,7 @@
       regime is being enforced at all.#cn()
     ],
     [
-      The load-bearing hedges are explicit. The bias-audit-as-
+      The hedges are explicit. The bias-audit-as-
       governance-artifact intervention is an audit-and-disclosure
       regime, not a substantive-standards regime; the law does
       not require employers to achieve any specific impact ratio
@@ -1635,7 +1631,7 @@
       [Build the candidate-notice and alternative-selection process as part of the deployment, not as a compliance afterthought; the candidate-side governance interaction is the seam at which the disclosure-and-audit structure becomes contestable for the affected person.],
     ),
     after: (
-      [Carry the load-bearing hedges — disclosure-and-audit regime not substantive-standards regime; reduction of actual disparate impact under-evidenced; a 5% audit-posting rate, and non-compliance that cannot be established — into print without softening; the case's pedagogical value depends on the intervention's limits being preserved.],
+      [Carry the hedges — disclosure-and-audit regime not substantive-standards regime; reduction of actual disparate impact under-evidenced; a 5% audit-posting rate, and non-compliance that cannot be established — into print without softening; the case's pedagogical value depends on the intervention's limits being preserved.],
       [Pair in syllabi with Case 85 (OU Analyse) so the governance-objection-dissolved-by-design and governance-objection-surfaced-by-disclosure threads are taught together as complementary intervention forms.],
       [Use the case as the change-control-and-disclosure-as-governance-artifacts anchor at the municipal-regulatory scale; the curricular target is the discipline of building the data infrastructure and the audit-quality criteria the disclosure regime presupposes.],
     ),
