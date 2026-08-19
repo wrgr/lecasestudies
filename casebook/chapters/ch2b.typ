@@ -1012,7 +1012,7 @@
     LEO-2's evaluation problem in miniature — if the program
     asks the learner to narrate and defend the design iteration
     in first person, the program also has to be able to
-    evidence that the capability to do so is developing. The work is peer-reviewed — the arXiv version was published at IEEE CSEE&T 2025 — so what remains open is not review but reach: one cohort at one university, unreplicated. The case carries the standing "future validation ongoing" language into print. It is the v2 corpus's reference instance of established reflection coding applied longitudinally to evidence *development* rather than presence at a single point — the prior art the editor-
+    evidence that the capability to do so is developing. The work is peer-reviewed — the arXiv version was published at IEEE CSEE&T 2025 — so what remains open is not review but reach: one cohort at one university, unreplicated. It is the v2 corpus's reference instance of established reflection coding applied longitudinally to evidence *development* rather than presence at a single point — the prior art the editor-
     commissioned first-person Practice Flywheel accounts will sit
     alongside.
   ],
@@ -2062,9 +2062,7 @@
       open generalization question. The quasi-experimental
       design is honest about its causal-inference limits —
       randomization is not at the level a cluster RCT would
-      provide — and the case carries the qualification. Future
-      validation ongoing on persistence, transfer, and the
-      tutor-scarce-context generalization.
+      provide — and the case carries the qualification. Persistence, transfer, and the tutor-scarce-context generalization stay open.
     ],
   ),
   beats: (

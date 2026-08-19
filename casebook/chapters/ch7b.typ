@@ -153,8 +153,7 @@
     system its founders set out to avoid. Evidence is mixed —
     peer-reviewed analytical chapters plus program-report and
     practitioner reflection; the generational-replacement
-    trajectory is the open empirical question. Future
-    validation ongoing. Non-US/UK case, Gap-5 cross-listed.
+    trajectory is the open empirical question. Non-US/UK case, Gap-5 cross-listed.
   ],
   lens-approach: [
     X-Road is the C7 big-tier transition case with a small-tier

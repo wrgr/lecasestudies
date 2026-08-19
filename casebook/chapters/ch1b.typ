@@ -3736,8 +3736,7 @@
     the failure thread (Uber ATG, Robodebt, UK Post Office,
     Tesla) is redressable by deliberate alert redesign. The
     systematic review is peer-reviewed; the per-site QI
-    publications are practice-tier; magnitudes and durability
-    open. Future validation ongoing.
+    publications are practice-tier; magnitudes and durability open.
   ],
   lens-approach: [
     Alert-fatigue redesign is the C3.2 small-tier intervention
