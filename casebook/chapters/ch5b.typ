@@ -19,11 +19,11 @@
 #case(
   number: 154,
   slug: "inl-turbine-control-upgrade-low-burden",
-  title: "INL Turbine-Control Upgrade — Low-Burden Cutover as a Human-Factors Finding",
+  title: "INL Turbine-Control Upgrade — Verification and Validation as the Cutover Deliverable",
   year: "2014",
   domains-list: ("nuclear power", "control-room modernization", "human factors"),
   modes-code: "GKH",
-  impact: "An INL-affiliated study reported that operators were able to use the new digital turbine-control system without extensive additional training or rewriting of operating procedures — i.e., the human-factors verification-and-validation evidence supported a low-burden cutover from the legacy analog control",
+  impact: "An INL paper set out the NUREG-0711 human-factors process for a paired plant-process-computer and turbine-control-system upgrade — iterative usability testing, integrated system validation in a full-scope training simulator, a stand-alone operator training program built with the training organization, and validation scenarios reviewed by trainers and procedure writers to confirm the operating procedures need no modification",
   kind: "intervention",
   scale: "small",
   evidence-source: "program-report",
@@ -39,19 +39,13 @@
     Laboratory's Light Water Reactor Sustainability (LWRS) program
     has produced a body of technical reports and conference papers
     documenting the verification-and-validation work behind specific
-    upgrades. The case here is a specific finding: in a study of
-    turbine-control-system upgrade work, operators were able to use
-    the new digital system without extensive additional training or
-    rewriting of operating procedures. The human-factors V\&V
-    evidence supported a low-burden cutover. That finding is the
+    upgrades. The case here is a specific method: for a paired plant-process-computer and turbine-control-system upgrade, the operators are trained on the new interfaces through a stand-alone program built with the training organization, and the validation scenarios are reviewed by trainers and procedure writers to confirm the operating procedures need no modification. The retraining is planned into the cutover, not avoided by it. That specification is the
     small-tier complement to the big-tier LWRS program case the
     corpus also tracks: the program produces specific design-V\&V
     case studies, not only program-level claims. The evidence base
     is INL technical reporting and OSTI-hosted conference papers,
     not independent academic evaluation; the tier flag is rendered
-    under the title. Future validation will continue on whether the
-    low-retraining finding generalizes beyond the studied subsystem
-    and holds at multi-plant scale.
+    under the title. The paper reports no outcome: it states the process was then being implemented at a US utility with four plants slated for modernization, with lessons learned to be published later. Future validation ongoing.
   ],
   sections: (
     [
@@ -68,15 +62,7 @@
       upgrade.#cn()
     ],
     [
-      The relevant finding the case rests on is that operators
-      were able to use the new digital turbine-control system
-      without extensive additional training or rewriting of
-      operating procedures. That is a substantive
-      human-factors-V\&V claim: the cutover did not impose a
-      retraining burden on the operator workforce that the
-      schedule and the operational logic could not absorb. The
-      study is a per-subsystem evaluation rather than a
-      whole-control-room finding, and the LWRS program treats
+      The relevant specification the case rests on is that operators are trained on the new digital interfaces through a stand-alone program developed with the training organization, and that the validation scenarios are reviewed by trainers and procedure writers to ensure the operating procedures do not require modification. That is the substantive human-factors-V\&V claim: retraining is a named deliverable of the cutover, and the procedure set is what the validation is asked to hold constant. The paper is a per-subsystem process account rather than a whole-control-room finding, and the LWRS program treats
       these small-tier evaluations as the building blocks of the
       larger fleet-modernization safety case.#cn()
     ],
@@ -96,9 +82,7 @@
     [
       The evidence-tier flag is load-bearing. The study sits in
       INL technical reporting and OSTI-hosted conference papers,
-      not in independent academic evaluation. The
-      low-burden-cutover finding is conditional on the specific
-      subsystem, plant, and operator population studied; whether
+      not in independent academic evaluation. The paper reports a process rather than an outcome, conditional on the specific subsystems, plant, and operator population; whether
       the finding generalizes to other subsystems in the same
       plant, to other plants in the fleet, or to other digital
       control products is the open question that the LWRS program
@@ -122,7 +106,7 @@
   beats: (
     "Nuclear control-room modernization — safety case must survive the analog-to-digital transition",
     "INL LWRS program produces per-subsystem human-factors V&V studies as small-tier deliverables",
-    "Turbine-control upgrade study reports low-burden cutover — no extensive retraining or procedure rewrite",
+    "PPC and turbine-control upgrade: stand-alone operator training program, scenarios reviewed to confirm procedures need no modification",
     "Small-tier per-subsystem evidence is the building block of the program-level fleet-modernization claim",
     "Evidence tier: INL technical reporting + OSTI conference papers; generalization to other subsystems open",
   ),
@@ -139,7 +123,7 @@
     ),
   ),
   references: (
-    [Ronald L. Boring (2014), "Human Factors Design, Verification, and Validation for Two Types of Control Room Upgrades at a Nuclear Power Plant," Proceedings of the Human Factors and Ergonomics Society Annual Meeting (HFES 2014), pp. 2295–2299 (ResearchGate publication 271728006).],
+    [Ronald L. Boring (2014), "Human Factors Design, Verification, and Validation for Two Types of Control Room Upgrades at a Nuclear Power Plant," Proceedings of the Human Factors and Ergonomics Society Annual Meeting 58(1), pp. 2295–2299, doi:10.1177/1541931214581478 — the NUREG-0711 process for the paired plant-process-computer and turbine-control-system upgrade.],
     [Idaho National Laboratory, Light Water Reactor Sustainability Program reports on control-room modernization — series available via OSTI.],
     [Nuclear Regulatory Commission (NUREG-0711), "Human Factors Engineering Program Review Model" — the regulatory framework the V&V deliverables are produced against.],
     [O'Hara et al. (2008), "Human Factors Considerations with Respect to Emerging Technology in Nuclear Power Plants," NUREG/CR-6947 — peer-adjacent framing.],
@@ -147,10 +131,7 @@
   quote: [The program-level claim cannot rest on un-rolled-up small-tier evidence. The per-subsystem V&V is the building block of the modernization safety case.],
   quote-source: "Editors' synthesis of INL LWRS reporting.",
   le-insight: [
-    The INL turbine-control finding is a small-tier C7
-    verification-as-deliverable case inside the LWRS
-    nuclear-modernization program: the human-factors V\&V
-    evidence supports a low-burden cutover. Evidence is INL
+    The INL turbine-control paper is a small-tier C7 verification-as-deliverable case inside the LWRS nuclear-modernization program: the human-factors V\&V process carries the cutover, training included. Evidence is INL
     technical reporting and OSTI conference papers, not
     independent academic evaluation; the generalization beyond
     the studied subsystem is the open question. Future

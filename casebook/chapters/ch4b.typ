@@ -400,7 +400,7 @@
     ],
     [
       The DoD response was MIL-STD-1472, first issued in 1968,
-      and revised through letter suffixes A (1969), B (1974),
+      and revised through letter suffixes A (1970), B (1974),
       C (1981), D (1989), E (1996), F (1999), G (2012), and H
       (September 2020). Each revision incorporates accumulated
       findings since the prior version, updated anthropometric
@@ -540,7 +540,7 @@
     The Generalized Intelligent Framework for Tutoring (GIFT) is an
     open-source framework, originated at the U.S. Army Research Laboratory,
     for authoring and delivering intelligent tutoring systems. Computer-based
-    tutoring has been shown to be about as effective as expert human tutors
+    tutoring has been shown to be nearly as effective as human tutoring
     in well-defined domains, and GIFT exists to lower the barrier to building
     it; the framework is actively developed, with regular releases and a
     peer-reviewed annual symposium. The puzzle is not that GIFT failed — it
@@ -554,8 +554,7 @@
     // -- The Shift --
     [
       Five decades of research established that computer-based tutoring can be
-      about as effective as an expert human tutor in well-defined domains,
-      and significantly better than traditional classroom instruction. The
+      nearly as effective as human tutoring in well-defined domains — d = 0.76 against 0.79 — and well above no tutoring at all. The
       open question shifted from "does adaptive tutoring work?" to "why isn't
       it everywhere?"#cn() That shift matters because it moves the problem out
       of the laboratory: once the efficacy question is answered, every
@@ -624,7 +623,7 @@
     [K. VanLehn, "The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems," _Educational Psychologist_ 46(4) (2011) — tutoring effectiveness.],
     [GIFT Project, gifttutoring.org — the framework, releases, and development under ARL / DEVCOM.],
     [Editors' synthesis of the GIFT adoption record — active development but limited ubiquitous fielding (quoted).],
-    [R. Sottilare, A. Graesser, X. Hu & H. Holden (eds.), _Design Recommendations for Intelligent Tutoring Systems_ (GIFTSym volumes); IJAIED Special Issue on GIFT (2017).],
+    [R. Sottilare, A. Graesser, X. Hu & H. Holden (eds.), _Design Recommendations for Intelligent Tutoring Systems_ (U.S. Army Research Laboratory, 2013– ); IJAIED Special Issue on GIFT (2017).],
     [J. Goodell & J. Kolodner, _Learning Engineering Toolkit_ (2022) — adoption as an engineering problem.],
   ),
   quote: [The technology works. The institutional pathway to ubiquitous fielded use does not yet.],

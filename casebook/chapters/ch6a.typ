@@ -224,7 +224,7 @@
     estimates of total deaths run to 15,000–20,000, with roughly half a
     million exposed or injured. Safety systems had been off-line for months,
     the plant was understaffed, and workers were inadequately trained to
-    recognize or handle the emergency. Investigators traced the catastrophe
+    recognize or handle the emergency. A seven-week New York Times inquiry traced the catastrophe
     to operating errors, design flaws, maintenance failures, training
     deficiencies, and cost-cutting that endangered safety. Bhopal catalyzed
     the creation of the U.S. Chemical Safety Board and reshaped
@@ -256,7 +256,7 @@
     ],
     // -- The Investigation --
     [
-      Investigations found the catastrophe "resulted from operating errors,
+      A seven-week New York Times inquiry found the catastrophe "resulted from operating errors,
       design flaws, maintenance failures, training deficiencies and economy
       measures that endangered safety" — a list with no single villain, which
       is precisely what made it hard to govern.#cn() Human-factors analysis
@@ -293,7 +293,7 @@
   beats: (
     "Union Carbide plant stored bulk MIC under cost pressure; understaffed, safety systems off-line, training thin",
     "Water entered an MIC tank; non-operational defenses let forty tons vent over the sleeping city",
-    "Investigators cited operating errors, design flaws, maintenance failures, training deficiencies, economy measures endangering safety",
+    "A seven-week New York Times inquiry cited operating errors, design flaws, maintenance failures, training deficiencies, economy measures endangering safety",
     "Capability hollowed across training, maintenance, design, staffing, oversight; no layer owned the integrated whole",
     "Reshaped industrial safety worldwide; catalyzed the U.S. Chemical Safety Board and process-safety regime",
   ),
@@ -365,9 +365,9 @@
   year: "2002",
   domains-list: ("energy",),
   modes-code: "NKG",
-  impact: "Football-sized cavity discovered in the reactor pressure-vessel head; near-miss; plant shut down for repair and fleet-wide head-inspection requirements tightened",
+  impact: "Pineapple-sized cavity — roughly 5 inches by 4 to 5 inches — eaten clean through the carbon steel of the reactor pressure-vessel head; near-miss; plant shut down for repair and fleet-wide head-inspection requirements tightened",
   diagram: dgm.dgm-stat(
-    "1/4″",
+    "3/8″",
     "of stainless cladding remained",
     micro: "between a 6-inch corrosion cavity and reactor coolant at 2,200 psi",
     caption: "Davis-Besse — the post-TMI near-miss",
@@ -375,7 +375,7 @@
   kind: "failure",
   summary: [
     During a 2002 refueling outage at the Davis-Besse nuclear plant in Ohio,
-    workers found a football-sized cavity eaten through six inches of the
+    workers found a pineapple-sized cavity eaten through six inches of the
     carbon-steel reactor-vessel head by leaking boric acid, leaving only a
     thin layer of stainless cladding between the cavity and reactor coolant
     at 2,200 psi — a serious near-miss for a loss-of-coolant accident. The
@@ -402,8 +402,7 @@
     ],
     // -- What Happened --
     [
-      During a refueling outage in early 2002, workers found a cavity about
-      the size of a football eaten clean through six inches of the
+      During a refueling outage in early 2002, workers found a cavity about 5 inches long and 4 to 5 inches wide eaten clean through six inches of the
       carbon-steel head, leaving only a thin layer of stainless-steel
       cladding between the corrosion and reactor coolant at 2,200 psi. Had
       the cladding given way, the result would have been a medium-break
@@ -417,12 +416,8 @@
     [
       The boric-acid leakage had been observable for years, and inspections
       had been deferred. FirstEnergy had requested — and the NRC had granted
-      — a deferral of a mandatory inspection (NRC Bulletin 2001-01) so it
-      would align with the plant's February 2002 outage.#cn() The NRC's
-      Office of Inspector General later found the agency had inappropriately
-      weighted the utility's economic arguments over safety — its oversight,
-      the OIG concluded, had not been adequate to ensure that safety would
-      not be compromised.#cn() The deferral was not a covert lapse but a
+      — a deferral of the inspection Bulletin 2001-01 called for by 31 December 2001. The utility asked to inspect in April, after a 31 March 2002 refuelling shutdown; NRC drafted an order to shut the plant in December, then shelved it and settled on mid-February.#cn() The NRC's
+      Office of Inspector General later found the decision had been driven in large part by a desire to lessen the financial impact on the utility, and that the agency had set itself an unreasonably high bar — absolute proof of a safety problem — before it would order a plant shut down.#cn() The deferral was not a covert lapse but a
       documented decision both parties signed off on, which is the unsettling
       part: the erosion happened through the regulator's normal process, in
       the open, agreed to be safe to wait.
@@ -455,7 +450,7 @@
   ),
   beats: (
     "Post-TMI U.S. nuclear regime knew the boric-acid corrosion hazard across the reactor fleet",
-    "Refueling outage revealed football-sized cavity through the head; only thin cladding held back coolant",
+    "Refueling outage revealed pineapple-sized cavity through the head; 3/8 inch of cladding held back coolant",
     "FirstEnergy won an NRC inspection deferral; OIG found economics weighted over safety",
     "Plant engineering was sound; independence of the oversight layer above operations had quietly eroded",
     "INPO and NRC tightened head-inspection requirements; institutional capability erodes if not re-engineered",
@@ -463,13 +458,13 @@
   references: (
     [U.S. NRC Office of Inspector General, _NRC's Regulation of Davis-Besse Regarding Damage to the Reactor Vessel Head_ (Case No. 02-03S, December 2002) — the post-TMI regulatory regime and oversight failures.],
     [NRC event records and OIG (2002) — the ~6-inch corrosion cavity, the remaining cladding, and the 2,200-psi coolant margin.],
-    [NRC Bulletin 2001-01 and the FirstEnergy inspection-deferral decision aligned to the February 2002 outage.],
-    [NRC OIG (2002) — economic arguments weighted over safety, and the finding that NRC oversight had not been adequate to ensure safety (paraphrased).],
+    [NRC Bulletin 2001-01, "Circumferential Cracking of Reactor Pressure Vessel Head Penetration Nozzles" (3 August 2001), and the compromise that let Davis-Besse run to a 16 February 2002 outage.],
+    [NRC OIG (2002), as quoted in U.S. GAO, GAO-04-415 (2004) — the finding that NRC's decision "was driven in large part by a desire to lessen the financial impact on FirstEnergy," and NRC's dispute of it.],
     [D. Lochbaum / Union of Concerned Scientists analysis (2002); U.S. GAO, GAO-04-415 (2004).],
     [J. V. Rees, _Hostages of Each Other_ (1994) — INPO and the fragility of institutional safety capability.],
   ),
-  quote: [The NRC's actions were not adequate to ensure that safety would not be compromised.],
-  quote-source: "Paraphrasing the NRC Office of Inspector General Davis-Besse report, 2002",
+  quote: [NRC's decision was driven in large part by a desire to lessen the financial impact on FirstEnergy that would result from an early shutdown.],
+  quote-source: "NRC Office of the Inspector General finding, quoted in GAO-04-415 (2004)",
   le-insight: [
     Davis-Besse is the case for how regulator-operator dynamics can
     erode the capability of an industry that had previously

@@ -1653,12 +1653,12 @@
   year: "1991 – present",
   domains-list: ("defense",),
   modes-code: "THN",
-  impact: "~65 killed across ~17 hull-loss accidents since 1991; serious-mishap rate above comparable fleets (GAO-26-108905, 2025); some fixes stretch to the 2030s",
+  impact: "62 killed across 16 hull-loss accidents since 1991; serious-mishap rate above comparable fleets (GAO-26-107285, 2025); some fixes stretch to the 2030s",
   diagram: dgm.dgm-osprey,
   kind: "failure",
   summary: [
     The V-22 Osprey — the tiltrotor flown by the Marines, Air Force, and
-    Navy — has had about 17 hull-loss accidents and roughly 65 fatalities
+    Navy — has had about 16 hull-loss accidents and 62 fatalities
     since 1991, including 19 Marines in a single 2000 test crash and 8
     airmen off Yakushima, Japan, in 2023. The Yakushima crash traced to
     cracks in a transmission gear (a flaw in the X-53 steel alloy) and a
@@ -1676,8 +1676,7 @@
       The V-22 Osprey tilts its rotors to take off like a helicopter and
       cruise like a turboprop — an ambitious capability shared awkwardly
       across three services and a joint program office. Since development
-      began in the 1980s it has suffered about 17 hull-loss accidents and
-      roughly 65 fatalities, including 19 Marines in a single crash during
+      began in the 1980s it has suffered 16 hull-loss accidents and 62 fatalities, including 19 Marines in a single crash during
       2000 testing.#cn() The same configuration that makes the tiltrotor
       uniquely useful makes it uniquely demanding to sustain, and the joint
       arrangement diffused ownership of that burden across three services that
@@ -1703,13 +1702,7 @@
       years to adequately assess and address mounting safety risks, even as
       service members died.#cn() Serious-mishap rates generally exceeded
       those of comparable Navy and Air Force fixed- and rotary-wing fleets
-      from FY2015 to FY2024 and spiked in 2023–2024; a gearbox flaw dating to
-      2006 was not evaluated until 2024, and full fixes for some issues are
-      not expected until the 2030s.#cn() An eighteen-year gap between a
-      gearbox flaw arising and its being evaluated is the timescale of
-      normalization made literal: the deviation persisted long enough to
-      become the airframe's accepted background condition rather than an open
-      defect demanding action.
+      from FY2015 to FY2024 and spiked in 2023–2024; the median age of the program's 28 unresolved system safety risk assessments was about nine years, and full gearbox fixes are not expected until 2034.#cn() Risks carried six to fourteen years are the timescale of normalization made literal: the deviation persisted long enough to become the airframe's accepted background condition rather than an open defect demanding action.
     ],
     // -- The Capability Gap --
     [
@@ -1740,17 +1733,17 @@
     ],
   ),
   beats: (
-    "Tiltrotor shared awkwardly across three services has logged seventeen hull losses since 1991",
+    "Tiltrotor shared awkwardly across three services has logged sixteen hull losses since 1991",
     "Yakushima crash killed eight after gear cracks and a pilot pressing through warnings",
-    "GAO and NAVAIR found years of unaddressed risk, elevated mishap rates, eighteen-year gearbox lag",
+    "GAO and NAVAIR found years of unaddressed risk, elevated mishap rates, nine-year median risk age",
     "Documented shortfall persists because parallel service adjustments never converge on resolution",
     "Groundings and redesigns continue while full gearbox fixes stretch toward 2034",
   ),
   references: (
-    [#link("https://en.wikipedia.org/wiki/Accidents_and_incidents_involving_the_V-22_Osprey")[Compiled V-22 accident record] — ~17 hull losses and ~65 fatalities since 1991, including the 2000 Marana test crash (19 Marines).],
+    [#link("https://en.wikipedia.org/wiki/Accidents_and_incidents_involving_the_V-22_Osprey")[Compiled V-22 accident record] — 16 hull losses and 62 fatalities since 1991, including the 2000 Marana test crash (19 Marines).],
     [U.S. Air Force Accident Investigation Board findings, via #link("https://news.usni.org/2024/08/02/investigation-into-2023-u-s-air-force-cv-22b-osprey-crash-off-japan")[USNI News] (Aug. 2024) — the 29 Nov. 2023 Yakushima CV-22B crash: transmission-gear cracks (X-53 inclusions) and continued flight despite warnings.],
-    [U.S. GAO, _Osprey Aircraft: Additional Oversight and Information Sharing Would Improve Safety Efforts_, #link("https://files.gao.gov/reports/GAO-26-108905/index.html")[GAO-26-108905] (Dec. 2025) — the joint program office's failure to assess and address risks.],
-    [GAO-26-108905 (2025) — serious-mishap rates exceeding comparable Navy/Air Force fleets (FY2015–FY2024); the 2006 gearbox flaw evaluated only in 2024; fixes into the 2030s.],
+    [U.S. GAO, _Osprey Aircraft: Additional Oversight and Information Sharing Would Improve Safety Efforts_, #link("https://www.gao.gov/products/gao-26-107285")[GAO-26-107285] (Dec. 2025) — the joint program office's failure to assess and address risks.],
+    [GAO-26-107285 (2025) — serious-mishap rates exceeding comparable Navy/Air Force fleets (FY2015–FY2024); 28 unresolved system safety risks with a median age of about nine years, over half carried six to fourteen years.],
     [NAVAIR independent review of the V-22 (Dec. 2025) — materiel and cross-service-coordination factors and unresolved catastrophic parts issues.],
     [#link("https://news.usni.org/2025/12/12/navy-and-gao-reports-v-22-osprey-program")[USNI News, V-22 program coverage] (2024–2025).],
   ),
@@ -1779,7 +1772,7 @@
   reflection-list: (
     [Identify a platform or process in your domain that has been operating in a documented shortfall for years. What measurement would have to change for the shortfall to become unacceptable?],
     [The V-22's three services do not converge on remediation. Design the governance structure that would force convergence.],
-    [A gearbox flaw went eighteen years between arising and being evaluated. What mechanism in your domain converts a long-tolerated defect back into an open item that demands action?],
+    [Osprey safety risks sat unresolved for a median of nine years, and some for fourteen. What mechanism in your domain converts a long-tolerated defect back into an open item that demands action?],
   ),
   approaches: (
     during: (
@@ -1820,9 +1813,7 @@
   summary: [
     The September 11, 2001 attacks, which killed 2,977 people, were
     enabled in part by intelligence the U.S. government already held but
-    never integrated. The CIA knew, from a January 2000 meeting in Kuala
-    Lumpur, that two future hijackers had entered the country; it did not
-    tell the FBI. The FBI separately flagged suspicious flight-training
+    never integrated. The CIA tracked two future hijackers to a January 2000 meeting in Kuala Lumpur and lost them in Bangkok; it did not watch-list them, and it did not tell the FBI about one man's U.S. visa or the other's travel to the United States. The FBI separately flagged suspicious flight-training
     activity in Phoenix and Minneapolis in 2001, but that information was
     never aggregated. Visa issuance, immigration tracking, and
     watch-listing were each run by a different agency, and the handoffs
@@ -1902,7 +1893,7 @@
   references: (
     [National Commission on Terrorist Attacks Upon the United States, _The 9/11 Commission Report_ (2004) — the quoted "failure of imagination" and the specific sharing failures.],
     [_9/11 Commission Report_ (2004) — the Kuala Lumpur tracking and the Phoenix/Minneapolis flagging.],
-    [_Joint Inquiry into Intelligence Community Activities Before and After September 11, 2001_ (2002) — cross-agency information-sharing failures.],
+    [_Joint Inquiry into Intelligence Community Activities Before and After the Terrorist Attacks of September 11, 2001_, S. Rept. 107-351 (2002) — cross-agency information-sharing failures.],
     [Zegart, A. (2007), _Spying Blind_ — structural-organizational analysis of the failures.],
     [Intelligence Reform and Terrorism Prevention Act of 2004 — creation of the ODNI and NCTC.],
   ),

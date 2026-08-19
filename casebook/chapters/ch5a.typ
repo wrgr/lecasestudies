@@ -770,24 +770,21 @@
   year: "2008 – 2023",
   domains-list: ("industrial",),
   modes-code: "DG",
-  impact: "More than two dozen deaths and hundreds of injuries linked to inflator ruptures; largest automotive recall in history",
+  impact: "28 U.S. deaths confirmed by NHTSA and at least 400 U.S. injuries alleged from inflator ruptures; largest automotive recall in history",
   diagram: dgm.dgm-stat(
-    "100M+",
-    "inflators recalled · 19 automakers",
-    micro: "the desiccant competitors used was the designed-out capability",
+    "67M", "inflators recalled in the U.S. · 19 automakers",
+    micro: "the desiccant Takata added only later was the designed-out capability",
     caption: "Takata — the largest automotive recall on record",
   ),
   summary: [
     Takata built its airbag inflators around ammonium nitrate — cheap and
-    energetic but unstable, and used by almost no one else without a
-    moisture-absorbing desiccant. Takata's inflators omitted the desiccant.
+    energetic but unstable, and used by no other major inflator maker — rivals built on guanidine nitrate. Takata's inflators carried no desiccant.
     Over years of heat and humidity the propellant degraded and could rupture
     the metal housing on deployment, spraying shrapnel at the driver; more
     than two dozen deaths and hundreds of injuries followed. Takata's own
     tests had shown the ruptures, but it reported them as isolated anomalies
     and, in places, falsified data; in 2017 it pleaded guilty to wire fraud,
-    paid roughly \$1 billion, and went bankrupt. The recall — over 100 million
-    inflators across 19 automakers — is the largest in automotive history.
+    paid roughly \$1 billion, and went bankrupt. The recall — some 67 million inflators across 19 automakers in the U.S. alone — is the largest in automotive history.
     Two capabilities were designed out: the desiccant, and the independent
     verification regulators never had.
   ],
@@ -800,9 +797,7 @@
       and climates a car will see. To cut cost, Takata built its inflators
       around ammonium nitrate — cheap and energetic but notoriously unstable,
       shifting crystalline structure and absorbing moisture as temperature
-      cycles day after day. The few competitors who used it at all added a
-      desiccant to keep it dry over the life of the car; Takata's inflators,
-      for years, shipped with none.#cn()
+      cycles day after day. Its competitors did not use ammonium nitrate at all, building on guanidine nitrate instead; Takata added a drying desiccant only to later inflator versions, and for years shipped with none.#cn()
     ],
     // -- What Happened --
     [
@@ -810,8 +805,7 @@
       charge can burn too fast, generating more pressure than the housing was
       built to contain. A firing inflator could then rupture its own metal
       housing and spray shrapnel into the cabin — turning the device meant to
-      save a life into a fragmentation hazard aimed at the driver. More than
-      two dozen deaths worldwide and hundreds of injuries followed. The recall
+      save a life into a fragmentation hazard aimed at the driver. NHTSA has confirmed 28 deaths in the United States, and at least 400 injuries are alleged. The recall
       grew to more than a hundred million inflators across some nineteen
       automakers — the largest in automotive history — and Takata went
       bankrupt; the toll keeps rising as unrepaired vehicles stay on the road
@@ -832,9 +826,7 @@
     // -- The Capability Gap --
     [
       Two capabilities were designed out, and the second matters as much as
-      the first. The product capability was the desiccant — a stabilizing
-      component competitors used, omitted to save cost, in plain view of
-      anyone comparing designs side by side. The system capability was
+      the first. The product capability was the desiccant — the stabilizing component Takata itself later added, omitted to save cost, in plain view of anyone comparing the two generations side by side. The system capability was
       independent verification: the recall regime treated the manufacturer's
       representations about its own safety data as authoritative, with no
       independent pipeline to test inflator behavior across the fleet as it
@@ -848,9 +840,7 @@
       the company that built the inflators ceased to exist — concrete proof
       that a designed-out capability can outlive the firm that removed it and
       become someone else's burden. A decade on, the burden persists: the
-      oldest, most dangerous "Alpha" inflators have been escalated to urgent
-      "Do Not Drive" warnings (Stellantis alone covering some 225,000
-      vehicles in 2024–2025), and roughly 4.8 million Takata recalls remained
+      oldest, most dangerous "Alpha" inflators have been escalated to urgent "Do Not Drive" warnings, and in February 2026 FCA extended one to all 225,000 of its unrepaired vehicles; roughly 4.8 million Takata recalls remained
       unrepaired as of mid-2026 even as completion of the Alpha inflators
       passed 99 percent. The episode pushed regulators toward more
       aggressive, coordinated recall management that does not leave pace to
@@ -862,7 +852,7 @@
     ],
   ),
   beats: (
-    "Inflators built around cheap, unstable ammonium nitrate without the desiccant competitors added.",
+    "Inflators built around cheap, unstable ammonium nitrate without the desiccant Takata later added.",
     "Heat and humidity degraded the propellant; ruptures sprayed shrapnel and killed drivers.",
     "Takata reported ruptures as isolated anomalies, manipulated test data, and pleaded guilty to fraud.",
     "Designed-out capabilities were the desiccant and the regulator's independent verification pipeline.",
@@ -913,7 +903,7 @@
   approaches: (
     during: (
       [Qualify a safety-critical material against the full service life and climate range it will see, not just its as-delivered state, so slow degradation cannot turn a safe part lethal years later.],
-      [When choosing a cheaper, less stable material, require the stabilizing measure competitors use — here a desiccant — rather than omitting it to save cost.],
+      [When choosing a cheaper, less stable material, require the stabilizing measure the material needs — here a desiccant — rather than omitting it to save cost.],
       [Design inflator testing to detect the rupture failure mode as a class across temperature and humidity cycling, so it cannot be dismissed as an isolated anomaly.],
     ),
     after: (
@@ -1122,10 +1112,7 @@
     Volkswagen engineered a "defeat device" into its diesel emissions
     software: code that detected when a car was on a regulatory test bench
     and switched on full emissions controls only then. On the road the
-    controls were largely disabled, producing nitrogen-oxide emissions up to
-    forty times the legal limit, across roughly 11 million vehicles for
-    years. The deception was uncovered not by regulators but by a small West
-    Virginia university team comparing real-world to lab measurements.
+    controls were largely disabled, producing nitrogen-oxide emissions up to forty times the U.S. limit on the cars EPA tested, across roughly 11 million vehicles worldwide for years. A small West Virginia university team measuring real-world emissions found the anomaly; fifteen months of CARB and EPA pressure turned it into VW's admission.
     Internal documents showed the defeat device was an institutional
     decision — a deliberate response to a standard VW's engineers did not
     believe they could meet within cost — not a rogue act. VW pleaded guilty to a USD 4.3 billion criminal and civil settlement with
@@ -1152,17 +1139,13 @@
       vehicle was on a regulatory test bench — by its steering, speed, and
       duration patterns, the telltale signature of a lab rather than a road —
       and switched on full emissions controls only during the test. On the
-      road the controls were largely disabled, producing emissions up to forty
-      times the legal limit, across roughly 11 million vehicles for years, so
+      road the controls were largely disabled, producing emissions up to forty times the U.S. limit on the vehicles EPA tested, across roughly 11 million vehicles worldwide for years, so
       the pollution the standard existed to prevent flowed freely everywhere
       except where it was measured.#cn()
     ],
     // -- The Investigation --
     [
-      The deception was uncovered not by the regulator but by a small
-      university research team in West Virginia comparing real-world
-      emissions to lab results — the gap between road and bench being exactly
-      what the regulator's own test could never reveal.#cn() Internal
+      A small university research team in West Virginia, testing for the ICCT, found road emissions far above lab results and reported the gap to CARB and EPA in May 2014; VW admitted the defeat device only in September 2015, after fifteen months of regulator pressure.#cn() Internal
       documents then showed the defeat device had been authorized inside VW's
       engineering hierarchy as a deliberate institutional response to a
       standard the team could not meet — not the work of a rogue engineer, but
@@ -1201,7 +1184,7 @@
   beats: (
     "VW promised clean diesel meeting nitrogen-oxide limits its engineers did not believe they could deliver",
     "Defeat-device software detected the test bench and enabled controls only there across about eleven million vehicles",
-    "A West Virginia team comparing road to lab emissions exposed the cheat; documents showed institutional authorization",
+    "A West Virginia team found the road-lab gap; fifteen months of CARB and EPA pressure extracted VW's admission",
     "The regulator's test ran in a regime the vehicle could detect, inviting the gaming it was meant to catch",
     "VW paid more than thirty billion in penalties; the EU introduced real-world driving emissions testing",
   ),
@@ -1437,8 +1420,8 @@
   summary: [
     A faulty ignition switch in several GM compact cars (the Chevrolet
     Cobalt, Saturn Ion) could slip from "run" to "accessory" while driving,
-    cutting power steering and brakes and — fatally — disarming the airbags.
-    GM engineers identified it in 2002. In 2006 an engineer approved a
+    cutting power steering and brake assist and — fatally — disarming the airbags.
+    GM approved the switch for production in 2002 below its own torque spec. In 2006 an engineer approved a
     redesigned switch but did not change its part number, so the fix
     propagated as neither a revision nor a recall, and defective cars kept
     selling. The recall came only in 2014 — about 2.6 million vehicles, with
@@ -1455,9 +1438,7 @@
       their position, so a jostle, a bump in the road, or a heavy keychain
       could rotate the switch out of "run" while driving. That cut power
       steering and braking and, fatally, disarmed the airbags so they would
-      not deploy in the very crash that loss of control often produced. GM
-      engineers identified the problem in 2002, during development, before the
-      cars ever reached customers.#cn()
+      not deploy in the very crash that loss of control often produced. GM approved the switch for production in 2002 below its own torque spec, and when an engineer stalled a pre-production Cobalt in 2004 the company classified the fault as a convenience issue, not a safety one.#cn()
     ],
     // -- What Happened --
     [
@@ -1482,8 +1463,7 @@
       and then no one acts, and the "GM salute," arms crossed and each person
       pointing elsewhere — and a fundamental failure to use the escalation
       processes the company already had on the books.#cn() In 2015 GM paid a
-      \$900 million federal forfeiture for concealing the defect; total
-      penalties and settlements ultimately exceeded \$2.6 billion.#cn()
+      \$900 million federal forfeiture for concealing the defect; the compensation fund alone offered \$594.5 million on 399 approved claims.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -1722,9 +1702,9 @@
   year: "2017",
   domains-list: ("tech", "gov"),
   modes-code: "GK",
-  impact: "147 million Americans' personal data exposed; CEO resigned; ~$700M settlement; foundational U.S. data-breach case",
+  impact: "147 million Americans' personal data exposed; CEO resigned; settlement of at least $575M, up to $700M; foundational U.S. data-breach case",
   diagram: dgm.dgm-cascade(
-    ("patch unapplied (2 months)", "asset inventory incomplete", "monitoring inadequate", "response delayed (75 days)"),
+    ("patch unapplied (2 months)", "asset inventory incomplete", "monitoring inadequate", "disclosure delayed (six weeks)"),
     outcome: "no single failure caused the breach; the combination did",
     caption: "Equifax — cumulative inadequacy in routine cybersecurity work",
   ),
@@ -1737,9 +1717,8 @@
     million Americans, and Equifax did not disclose the breach until
     September. A Senate investigation found systematically inadequate
     patching, an incomplete asset inventory (so the company did not know
-    which systems needed the fix), and an incident-response function treated
-    for years as a cost center. The CEO resigned and Equifax settled for
-    about \$700 million. No single failure caused the breach; cumulative
+    which systems needed the fix), and a 2015 internal audit whose warnings on all of it went unremediated for two years. The CEO resigned and Equifax settled for
+    at least \$575 million. No single failure caused the breach; cumulative
     inadequacy across routine cybersecurity work did.
   ],
   sections: (
@@ -1770,10 +1749,7 @@
       Equifax's patching practices systematically inadequate and the company
       lacking "a comprehensive IT asset inventory" — so it could not reliably
       know which systems needed the patch, leaving the security team's warning
-      with no map to act on.#cn() Monitoring was weak, response delayed, and the
-      incident-response architecture had been treated for years as a cost
-      center rather than a capability worth funding; the CEO resigned and
-      Equifax settled for roughly \$700 million.#cn()
+      with no map to act on.#cn() Monitoring was weak — an SSL certificate on the dispute portal had been expired since November 2016, so the traffic went uninspected — and a 2015 audit had named every one of these gaps; the CEO resigned and Equifax settled for at least \$575 million, rising to \$700 million if claims required it.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -1784,8 +1760,7 @@
       single open door. The capability gap was the management of unglamorous,
       universally-agreed-necessary maintenance — exactly the work easy to
       defer because deferring it usually costs nothing, until the one time it
-      costs everything, and a function starved as a cost center has no slack
-      left on that day.#cn()
+      costs everything, and a company that has already been told where the gaps are still has to close them.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -1803,14 +1778,14 @@
     "Equifax held identity data on most US adults; security flagged an Apache Struts patch to IT",
     "Unapplied patch let attackers exfiltrate 147M Americans' data over 2.5 months",
     "Senate subcommittee found systematically inadequate patching and no comprehensive IT asset inventory",
-    "Routine work — patching, inventory, monitoring, response — each below standard, starved as a cost center",
-    "$700M settlement funded compensation; patching, inventory, and disclosure timelines rose on the agenda",
+    "Routine work — patching, inventory, monitoring, response — each below standard and each named in a 2015 audit",
+    "Settlement of at least \$575M funded compensation; patching, inventory, and disclosure timelines rose on the agenda",
   ),
   references: (
     [U.S. Senate Permanent Subcommittee on Investigations, _How Equifax Neglected Cybersecurity and Suffered a Devastating Data Breach_ (2019) — the unpatched Apache Struts vulnerability.],
     [The breach record — 147 million affected, exploitation from May 2017, public disclosure in September 2017.],
     [Senate PSI (2019) — "Equifax lacked a comprehensive IT asset inventory" (quoted).],
-    [U.S. FTC / CFPB / state settlement (~\$700 million, 2019) and the CEO's resignation.],
+    [U.S. FTC / CFPB / state settlement (at least \$575 million, up to \$700 million, 2019) and the CEO's resignation.],
     [U.S. GAO, _Actions Taken by Equifax and Federal Agencies in Response to the 2017 Breach_, GAO-18-559 (2018).],
     [Apache Struts CVE-2017-5638 advisory.],
   ),
@@ -1831,8 +1806,7 @@
     systems" but the engineered escalation deliverable: a flagged,
     agreed-upon fix has to be wired to an owner who can map it to
     every affected asset and is funded to close it before the gap
-    costs everything. LEN 7 carries the institutional half — routine
-    defenses run as a cost center have no slack on the bad day.
+    costs everything. LEN 7 carries the institutional half — an audit that names the gap does nothing unless someone is made to close it.
   ],
   induced-anchor: "6.2",
   lens-anchor: "D5/PT3",
@@ -1849,7 +1823,7 @@
   ),
   approaches: (
     during: (
-      [Fund routine security maintenance — patching, monitoring, response — as a capability, not a cost center, so the unglamorous defenses have slack on the bad day.],
+      [Close audit findings on routine security maintenance — patching, monitoring, response — on a clock with a named owner, so a known gap cannot sit open for two years.],
       [Build and maintain a comprehensive asset inventory so a known vulnerability can be mapped to every system that runs it.],
       [Wire the security team's warnings to an owner with the authority and resources to apply a flagged patch promptly.],
     ),

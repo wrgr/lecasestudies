@@ -35,7 +35,7 @@ WORDNUM = {
     "thirty":"30","forty":"40","fifty":"50","sixty":"60","seventy":"70","eighty":"80",
     "ninety":"90","hundred":"100","thousand":"1000","million":"1000000","billion":"1000000000",
 }
-SCALE = {"k":1e3,"m":1e6,"mn":1e6,"million":1e6,"bn":1e9,"b":1e9,"billion":1e9}
+SCALE = {"k":1e3,"m":1e6,"mn":1e6,"million":1e6,"bn":1e9,"b":1e9,"billion":1e9,"t":1e12,"tn":1e12,"trillion":1e12}
 # identifiers that look like quantities but are not
 STRIP = [
     # case cross-references, including lists: "Cases 55 and 57", "68 / 78 (CIRCUIT)"
@@ -54,13 +54,17 @@ STRIP = [
 def quantities(s):
     for p in STRIP: s = re.sub(p, ' ', s)
     s = s.lower()
+    s = s.replace(",", "")
+    # scaled numerals -> absolute, BEFORE word forms become digits: otherwise
+    # "700 million" turns into "700 1000000" and never matches an impact's "$700M"
+    scale_re = r'\b(\d+(?:\.\d+)?)\s*(' + "|".join(SCALE) + r')\b'
+    s = re.sub(scale_re, lambda m: str(int(float(m.group(1)) * SCALE[m.group(2)])), s)
     # word forms -> digits, on word boundaries so "hundreds" does not become "100s"
     for w, d in sorted(WORDNUM.items(), key=lambda kv: -len(kv[0])):
         s = re.sub(r'\b' + re.escape(w) + r'\b', d, s)
-    s = s.replace(",", "")
-    # scaled numerals -> absolute, so "7M" matches a body that says "seven million"
-    s = re.sub(r'\b(\d+(?:\.\d+)?)\s*(' + "|".join(SCALE) + r')\b',
-               lambda m: str(int(float(m.group(1)) * SCALE[m.group(2)])), s)
+    # a word-scale that followed a spelled-out numeral: "seven million" -> "7 1000000"
+    s = re.sub(r'\b(\d+(?:\.\d+)?)\s+(1000|1000000|1000000000)\b',
+               lambda m: str(int(float(m.group(1)) * int(m.group(2)))), s)
     out = set()
     for m in re.finditer(r'\d+(?:\.\d+)?', s):
         v = m.group(0)
