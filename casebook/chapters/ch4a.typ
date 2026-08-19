@@ -450,7 +450,7 @@
   ),
   references: (
     [U.S. Government Accountability Office, _F-35 Aircraft: DOD and the Military Services Need to Reassess the Future Sustainment Strategy_, #link("https://www.gao.gov/products/gao-23-105341")[GAO-23-105341] (Sept. 2023) — ~2,500 planned aircraft and a lifecycle cost exceeding \$1.7 trillion, ~\$1.3 trillion of it in operating and support.],
-    [GAO-23-105341 (2023) — ~55% fleet mission-capable rate (March 2023); over 10,000 components awaiting repair; ~72-day average depot turnaround; depot stand-up behind schedule.],
+    [GAO-23-105341 (2023) — ~55% fleet mission-capable rate (March 2023); over 10,000 components awaiting repair; 141-day average depot repair cycle time against a 60-to-90-day goal; depot stand-up behind schedule.],
     [GAO-23-105341 (2023) — sustainment shortfall traced to insufficient technical data, training and support equipment for maintainers, depot stand-up delays, and contractor dependency.],
     [GAO, _F-35 Sustainment: DOD Faces Several Uncertainties…_, #link("https://www.gao.gov/assets/gao-22-105995.pdf")[GAO-22-105995] (2022), and the broader GAO F-35 series — the recurring, year-over-year diagnosis.],
     [GAO-23-105341 (2023) — recommendation that DOD reassess the future sustainment strategy.],

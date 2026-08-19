@@ -1986,7 +1986,7 @@
     Quasi-Experimental Investigation," reports three quasi-
     experimental studies of hybrid deployments where AI
     augmentation is added to human tutoring rather than used to
-    replace it. The headline finding is that learning outcomes improved in each of the three studies, and in the two carrying a comparison condition one site carried a control condition; the other two compared students against their own pre-treatment baseline. The contribution the case carries for the
+    replace it. The headline finding is that learning outcomes improved in each of the three studies, and only Site 1 carried a control condition, while Sites 2 and 3 compared students against their own pre-treatment baseline. The contribution the case carries for the
     LENS framework is the design positioning: the AI is
     augmentation, the human tutor retains the authorization to
     override and re-direct, and the measured outcome is student
@@ -2074,7 +2074,7 @@
     ],
   ),
   beats: (
-    "Thomas et al. LAK 2024: three quasi-experimental studies of hybrid human-AI tutoring of hybrid human-AI tutoring",
+    "Thomas et al. LAK 2024: three quasi-experimental studies of hybrid human-AI tutoring",
     "Headline: outcomes improved at all three sites; only Site 1 carried a control group, Sites 2 and 3 compared against pre-treatment baselines",
     "Design positioning: AI as augmentation, human tutor retains override authorization, measured outcome is student learning",
     "Educational analog of Case 20 (TREWS clinician-AI teaming); contrast with Case 5 (Epic Sepsis delegation collapse)",
@@ -2850,10 +2850,7 @@
       aspirational.#cn()
     ],
     [
-      The instrument is dimensional. Data management asks whether collection, storage and stewardship are in place at the level the planned adoption requires. Data analysis asks whether the institution has the analytical capability and staffing the tools will need. Pedagogical support asks whether the analytics are tied to instructional decisions rather than reporting. Administration and training asks whether leadership, funding, communication and staff training are in place. Legislation, privacy and ethics is a single category — the model merges them, because compliance with law does not resolve into separate levels — and asks whether the governance and consent architecture has been built. Pedagogy asks whether
-      the analytics integrate with the institution's learning
-      design, or whether they would be bolted on as a separate
-      track. Each dimension is resolved into maturity levels so
+      The instrument is dimensional. Data management asks whether collection, storage and stewardship are in place at the level the planned adoption requires. Data analysis asks whether the institution has the analytical capability and staffing the tools will need. Pedagogical support asks whether the analytics are tied to instructional decisions rather than reporting, and whether they integrate with the institution's learning design or would be bolted on as a separate track. Administration and training asks whether leadership, funding, communication and staff training are in place. Legislation, privacy and ethics is a single category — the model merges them, because compliance with law does not resolve into separate levels — and asks whether the governance and consent architecture has been built. Each dimension is resolved into maturity levels so
       the self-assessment yields a structured picture of which
       dimensions are ready and which are not, rather than a
       single overall readiness score.#cn()
@@ -4851,7 +4848,7 @@
   ],
   literature-items: (
     [Prinsloo & Kaliisa (2022), _Journal of Learning Analytics_ 9(2)],
-    [Lemmens & Henn (2015), SAAIR proceedings],
+    [Lemmens & Henn (2016), in Botha & Muller (eds.), _Institutional Research in South African Higher Education_],
     [Janse van Vuuren (2020), _SAJHE_ 34(1), contextualised data-analytics framework, SA],
   ),
   reflection-list: (

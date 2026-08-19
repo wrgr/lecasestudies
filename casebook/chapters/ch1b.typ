@@ -65,8 +65,9 @@
     [
       California in 2004 became the first US state to do it. The
       law specifies unit-by-unit minimum nurse-to-patient ratios —
-      1:6 in medical-surgical at the 2004 start and 1:5 from 2005, 1:4 in
-      on — enforceable through state inspection. The political
+      1:6 in medical-surgical at the 2004 start and 1:5 from 2005, with
+      tighter ratios in step-down and intensive care — enforceable
+      through state inspection. The political
       process took five years from statutory enactment (1999) to
       regulatory implementation, with industry argument that the
       ratios would close hospitals and worsen access. The 2004
@@ -93,9 +94,8 @@
       experiment. There was no California baseline measurement to
       provide a pre/post within-state comparison. The modeled
       mortality estimates rest on the workload-mortality
-      relationship from prior studies, and the California HealthCare Foundation's own
-      debate followed publication over whether the ratios themselves
-      caused the observed improvement, or whether California
+      relationship from prior studies, and debate followed publication
+      over whether the ratios themselves caused the observed improvement, or whether California
       hospitals differed in other ways the cross-section did not
       capture. The authors do not claim closure; their conclusion is that the
       evidence is the strongest available and consistent with the
@@ -245,8 +245,9 @@
       driven policy for years.#cn() iCOMPARE (Silber et al., _NEJM_ 2019), in
       internal medicine, reached a parallel result in a second specialty,
       making the finding harder to dismiss as an artifact of surgery.#cn()
-      Neither found the safety gain the cap had promised. In 2017, with FIRST
-      ACGME relaxed the 16-hour intern limit. The trials did not show fatigue
+      Neither found the safety gain the cap had promised. In 2017, with
+      FIRST reported and iCOMPARE under way, the ACGME relaxed the
+      16-hour intern limit. The trials did not show fatigue
       is harmless — only that cutting one input, without rebuilding
       supervision and hand-offs, did not produce a safer system.#cn()
     ],
@@ -2534,7 +2535,7 @@
   references: (
     [Sjoding, Dickson, Iwashyna, Gay, & Valley (2020), "Racial Bias in Pulse Oximetry Measurement," _New England Journal of Medicine_ 383(25):2477–2478, doi:10.1056/NEJMc2029240.],
     [Jubran & Tobin (1990), "Reliability of Pulse Oximetry in Titrating Supplemental Oxygen Therapy in Ventilator-Dependent Patients," _Chest_ 97(6):1420–1425 — original finding, published thirty years earlier.],
-    [FDA (2025), "Pulse Oximeters for Medical Purposes — Non-Clinical and Clinical Performance Testing, Labeling, and Premarket Submission Recommendations: Draft Guidance for Industry and Food and Drug Administration Staff," issued January 6 2025, Docket No. FDA-2023-N-4976; Federal Register notice 2024-31540, published January 7 2025 — the regulatory corrective-action artifact, language may evolve in final.],
+    [FDA (2025), "Pulse Oximeters for Medical Purposes — Non-Clinical and Clinical Performance Testing, Labeling, and Premarket Submission Recommendations: Draft Guidance for Industry and Food and Drug Administration Staff," issued January 7 2025, Docket No. FDA-2023-N-4976; Federal Register notice 2024-31540, published January 7 2025 — the regulatory corrective-action artifact, language may evolve in final.],
     [Fawzy et al. (2022), "Racial and Ethnic Discrepancy in Pulse Oximetry and Delayed Identification of Treatment Eligibility Among Patients With COVID-19," _JAMA Internal Medicine_ — downstream effect during the pandemic.],
   ),
   quote: [Aggregate accuracy is not group accuracy. A device can be acceptable on average and unsafe for one population.],
@@ -2605,8 +2606,9 @@
     essentially the same standards in 1986. The Anesthesia Patient Safety Foundation, founded in
     1985, institutionalized the broader change-management effort.
     Anesthesia-related mortality fell dramatically over subsequent
-    decades — one widely cited Brazilian systematic review reports fewer
-    zero — and malpractice premiums declined alongside. The field's
+    decades — one widely cited Brazilian series reports fewer than one
+    anaesthesia-related death per 10,000 anaesthetics — and malpractice
+    premiums declined alongside. The field's
     own histories preserve the hedge: the decline has multiple
     co-varying causes (training, device design, pharmacology, team
     composition), and the device standards themselves still fail in
@@ -2659,8 +2661,9 @@
     ],
     [
       Anesthesia-related mortality fell dramatically over the
-      subsequent decades. A widely cited Brazilian systematic review
-      decline toward zero. Malpractice premiums for anesthesiology
+      subsequent decades. A widely cited Brazilian series reports fewer
+      than one anaesthesia-related death per 10,000 anaesthetics.
+      Malpractice premiums for anesthesiology
       declined alongside — one of the few examples in American
       medicine of a specialty's malpractice cost falling as the
       specialty's safety record improved. The case is regularly
@@ -2776,9 +2779,10 @@
     those studies showed some positive outcomes, the evidence base
     for linking IPE to measurable changes in practice and patient
     outcomes was thin. The IOM report (2015) made the gap the
-    central finding: the commissioned review it carries as Appendix
-    and it proposed a conceptual model for doing the measurement
-    properly. The case is the canonical instance in the corpus of
+    central finding: the commissioned review it carries as Appendix A
+    names a paucity of high-quality research measuring IPE's impact on
+    practice processes and patient outcomes, and it proposed a
+    conceptual model for doing the measurement properly. The case is the canonical instance in the corpus of
     a large, sincere, multidisciplinary translation effort whose
     core problem is that the field cannot yet measure whether the
     intervention works. It is the case-grounded basis for the
@@ -2818,7 +2822,9 @@
       The IOM's 2015 report, _Measuring the Impact of
       Interprofessional Education on Collaborative Practice and
       Patient Outcomes_, made the evidence gap the central
-      finding. The commissioned review the report carries as Appendix A puts
+      finding. The commissioned review the report carries as Appendix A puts it
+      plainly: there is a paucity of high-quality research measuring the
+      impact of interprofessional education on practice processes and
       patient outcomes. The report proposed a conceptual model for
       doing the measurement properly — a chain from IPE
       intervention through learner outcome, collaborative
@@ -3648,10 +3654,11 @@
     [
       The 2019 _JAMIA_ systematic review by Hussain and colleagues
       aggregates the published evidence on EHR alert optimization.
-      The headline finding: the interrupting modal — the most
-      clinical-role tailoring reduce alert burden, and most
-      evaluated optimization studies in the review reported
-      alert-rate reduction post-intervention. The mechanism is not
+      The headline finding is narrower than it is often reported to be:
+      of the alternatives the review examined, only role tailoring
+      appeared to increase prescriber acceptance, and most evaluated
+      optimization studies reported alert-rate reduction
+      post-intervention. The mechanism is not
       a single intervention but a family of moves — severity
       reclassification, conversion of interruptive alerts to
       passive decision support, role-based tailoring so the alert
@@ -3852,11 +3859,11 @@
       against the same hospital sites' historical baseline
       rather than against a contemporaneous randomized control
       arm — and the authors are explicit about the limitation.
-      The authors record no other quality-improvement
-      at UCSD's sepsis-care pathway, and the authors are honest
-      that the mortality reduction is multifactorial: COMPOSER's
-      contribution cannot be cleanly separated from the
-      contribution of the surrounding process changes.#cn()
+      The authors record no other quality-improvement initiative running
+      at UCSD's sepsis-care pathway over the same period, so the
+      reduction is not confounded by concurrent process change; what
+      limits the inference is the absence of a contemporaneous control
+      arm, not a tangle of co-occurring reforms.#cn()
     ],
     [
       The case pairs with Case 20 (TREWS) for the prospective-
@@ -3883,9 +3890,9 @@
       in the prose. The deployment is prospective implementation,
       not an RCT; the mortality reduction and bundle-compliance gain are
       evaluated against the same health system's historical
-      baseline, and every emergency department in the system
-      improvements in sepsis care that would have produced
-      similar reductions in the absence of COMPOSER. The
+      baseline, and every emergency department in the system ran the
+      model, so no contemporaneous comparison arm exists against which
+      the reduction could be checked. The
       mortality reduction is multifactorial — COMPOSER was
       deployed alongside other process improvements at UCSD, and
       the authors are explicit that the deployment evaluation
@@ -4041,8 +4048,9 @@
     // -- What Is Emerging --
     [
       The research classifiers built on the same public chest-X-ray
-      mammography aids, CT triage systems — have been documented in
-      the peer-reviewed literature performing worse in deployment
+      datasets as the cleared tools — chest-radiograph triage,
+      mammography aids — have been documented in the peer-reviewed
+      literature performing worse in deployment
       than in validation, with the degradation often concentrated in
       under-represented patient groups. Larrazabal et al. (_PNAS_
       2020) demonstrated structural sensitivity drops for groups
@@ -4053,8 +4061,9 @@
       2021) extended the finding directly: across three large public
       chest-X-ray datasets, classifiers under-diagnosed Black,
       Hispanic, female, and lower-socioeconomic patients at higher
-      rates, with the underdiagnosis rate highest where those
-      evidence that the shortfall is not a stray bug but a
+      rates, with the underdiagnosis rate highest for patients at the
+      intersection of those groups — evidence that the shortfall is
+      not a stray bug but a
       predictable consequence of which patients the training set did
       and did not contain.#cn()
     ],

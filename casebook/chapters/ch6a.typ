@@ -1192,7 +1192,7 @@
     swept into the town of Paradise faster than people could evacuate.
     Eighty-five died — the deadliest U.S. wildfire in a century — and PG&E
     later pleaded guilty to 84 counts of involuntary manslaughter.
-    Investigators found PG&E had known for years that its transmission infrastructure across high-fire-risk areas was deteriorating, and had run it under a strategy its own documents called Run to Failure while consistently reducing the frequency and thoroughness of its inspections. Infrastructure built for one climate was
+    Investigators found PG&E had known for years that its transmission infrastructure across high-fire-risk areas was deteriorating, and had run it under a strategy its own documents called Run to Failure while cutting the time and cost budgeted for each inspection, so their thoroughness fell even as their nominal frequency held. Infrastructure built for one climate was
     operating in another. Camp Fire is the book's foundational climate-era
     case for utility capability under changed conditions, and it restructured
     how California regulates utility wildfire risk.
@@ -1220,7 +1220,7 @@
     // -- The Investigation --
     [
       CalFire's investigation and the Butte County District Attorney's report
-      found that PG&E had known for years about the deteriorating condition of its transmission infrastructure in high-fire-risk areas, and had consistently reduced the frequency and thoroughness of the inspections that would have found the wear — so the hazard was not unknown but a recognized risk left unlooked-at.#cn()
+      found that PG&E had known for years about the deteriorating condition of its transmission infrastructure in high-fire-risk areas, and had cut the time and cost budgeted for each inspection, so the thoroughness of the checks that would have found the wear fell even as their nominal frequency held — so the hazard was not unknown but a recognized risk left unlooked-at.#cn()
       The gap was simultaneously at the utility's asset-maintenance decisions
       and at the regulatory architecture that had allowed the deferrals to
       continue, neither side holding a line that would have forced the work.#cn()

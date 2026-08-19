@@ -710,7 +710,7 @@
       distinguish the few real alerts from the many spurious ones.#cn()
     ],
     [
-      The governance seam is the structural lesson. Because the Epic Sepsis Model reached the bedside under the clinical-decision-support carve-out in section 520(o) of the FD&C Act, it was never brought to the FDA for clearance. The machinery that would normally require
+      The governance seam is the structural lesson. Because the Epic Sepsis Model was distributed as a feature of an EHR rather than as a stand-alone clinical-decision-support device, it was never brought to the FDA for clearance — even though FDA's own 2022 guidance says a risk score for a specific condition does not qualify for the section 520(o)(1)(E) exclusion and is a device. The machinery that would normally require
       independent validation, post-market surveillance, and demographic
       stratification of performance was never engaged. The model's
       deployment was a regulatory non-event because the regulatory regime
@@ -1379,10 +1379,10 @@
     the risk had been visible well before withdrawal, and estimated
     88,000–139,000 excess cardiovascular events attributable to
     Vioxx; the 2005 Graham et al. _Lancet_ analysis put the figure
-    in similar range. Merck litigation discovery produced internal Merck communications later
-    Merck communications used in the Senate hearings to argue that
-    publication-bias and authorship-by-Merck-employees patterns had
-    suppressed the cardiovascular signal in the published record.
+    in similar range. Merck litigation discovery produced internal
+    communications later used to argue that guest authorship and
+    Merck-employee authorship patterns had shaped how the
+    cardiovascular signal appeared in the published record.
     The reforms that followed — Risk Evaluation and Mitigation
     Strategies (REMS), the FDA Amendments Act of 2007, and the
     Sentinel Initiative (2008) — built the active post-market
@@ -1410,8 +1410,8 @@
     // -- What Happened --
     [
       The VIGOR trial (Bombardier et al., _NEJM_ 2000) randomized 8,076
-      a five-fold higher rate of myocardial infarction in 8,076 patients
-      taking Vioxx than in those taking naproxen. Merck and many readers
+      patients in all, and reported a five-fold higher rate of myocardial
+      infarction among those taking Vioxx than among those taking naproxen. Merck and many readers
       interpreted the gap as naproxen being cardio-protective rather
       than Vioxx being harmful. That reading was not absurd — it was the
       more comfortable of two explanations for the same numbers — but it
@@ -1426,23 +1426,22 @@
     ],
     // -- The Investigation --
     [
-      Senate Finance Committee hearings in November 2004 put on the record
-      subsequent FDA Office of Inspector General review found that
-      signals of cardiovascular harm had been present in the trial
-      record for years before withdrawal. FDA Office of Drug Safety
+      Senate Finance Committee hearings in November 2004 put on the
+      record that signals of cardiovascular harm had been present in the
+      trial record for years before withdrawal. FDA Office of Drug Safety
       scientist David Graham testified under oath that the
       cardiovascular risk had been visible to him by 2000, that he had
       been pressured by FDA management not to publish his estimate,
-      and that he believed Vioxx had caused 88,000–139,000 excess cases of
-      heart attacks and strokes in the United States, of which 30–40%
-      were probably fatal. The Graham et al. _Lancet_ 2005 analysis,
+      and that he believed Vioxx had caused 88,000–139,000 excess cases
+      of heart attack or sudden cardiac death in the United States, of
+      which 30–40% were probably fatal. The Graham et al. _Lancet_ 2005 analysis,
       using Kaiser Permanente data, produced a population-level
       estimate in similar range. Merck litigation discovery, made
       public through New Jersey and federal court filings and reported
       in the _NEJM_ editorial trail, included internal Merck
       communications and ghost-authorship patterns in published Vioxx
       papers; a 2008 _JAMA_ analysis by Ross et al. documented the guest-authorship
-      publication-bias and authorship patterns directly.#cn() The harm
+      and ghostwriting patterns directly.#cn() The harm
       was not hidden in some unmeasured corner — it sat in the trial
       record the whole time, waiting for an architecture that would
       carry it to a decision rather than leave it to interpretation.#cn()
@@ -1483,13 +1482,12 @@
       reports — a direct response to the Vioxx-era detection failure.
       The _NEJM_ tightened conflict-of-interest disclosure for trial
       reports and, in December 2005, took the unusual step of issuing an
-      Expression of Concern after learning that three myocardial infarctions,
-      myocardial infarctions had been deleted from the VIGOR manuscript's
-      data table two days before submission — evidence that hardens the
+      Expression of Concern: three myocardial infarctions had been omitted
+      from the data submitted, and other cardiovascular data had been
+      deleted from the manuscript's table two days before submission — evidence that hardens the
       story from "the signal aggregated too slowly" toward "the signal was
-      partly, and knowingly, kept out of the record." The _JAMA_ Ross et al.
-      (2008) analysis became the
-      reference point for publication-bias diagnosis in drug safety.
+      partly, and knowingly, kept out of the record." The _JAMA_ Ross et al. (2008) analysis became the reference point
+      for diagnosing guest authorship and ghostwriting in drug safety.
       By going out to the data instead of waiting for it to arrive,
       the reform inverted the logic that had let the signal sit
       unaggregated for years. The reform built the surveillance

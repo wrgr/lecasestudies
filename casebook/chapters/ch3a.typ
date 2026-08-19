@@ -1039,7 +1039,7 @@
       and the autopilot and autothrust disconnected into Alternate Law —
       a degraded control regime in which stall protection no longer
       held. The pilot flying responded with sustained nose-up input; the
-      jet climbed, stalled, and never recovered, falling some 38,000 feet into the ocean in under three minutes. The stall
+      jet climbed, stalled, and never recovered, falling some 38,000 feet into the ocean in about three and a half minutes. The stall
       warning sounded, then cut out at extreme angle of attack and
       resumed when the nose dropped — warning against the one input that
       would have begun a recovery, so that the cue meant to guide the

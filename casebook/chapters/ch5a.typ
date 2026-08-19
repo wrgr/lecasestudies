@@ -1633,7 +1633,7 @@
     [Slaughter and May, _Independent Review of the TSB Migration_ (2019) — the single-weekend cutover and the testing failures.],
     [Slaughter and May (2019) and FCA materials — ~1.9 million customers locked out, £330M+ in costs, and the CEO's resignation.],
     [Slaughter and May (2019) — inadequate load testing and an unchallenged readiness certification.],
-    [Financial Conduct Authority, Final Notice on TSB Bank plc (20 December 2022) â the £29.75m penalty (with the PRA's £18.9m) for planning, testing, risk-management and outsourcing failings.],
+    [Financial Conduct Authority, Final Notice on TSB Bank plc (20 December 2022) — the £29.75m penalty (with the PRA's £18.9m) for planning, testing, risk-management and outsourcing failings.],
     [House of Commons Treasury Committee, report on the TSB IT migration (2018).],
     [Cf. Healthcare.gov (Case 180) and the migration-safety literature.],
   ),

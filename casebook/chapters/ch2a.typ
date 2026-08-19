@@ -933,7 +933,7 @@
     ],
   ),
   beats: (
-    "Wisconsin DPI Dropout Early Warning System deployed since 2012; ~200,000 students per year in grades 6 – 9 receive risk scores",
+    "Wisconsin DPI Dropout Early Warning System deployed 2012–2023; over 225,000 students per year in grades 6 – 9 receive risk scores",
     "Perdomo, Britton, Hardt, Abebe FAccT 2025 RDD on 2013–2021 data: +5 points on on-time graduation, 95% interval −2% to 11.6%, cannot rule out zero",
     "Wisconsin DPI 2021 internal equity analysis (slide headed \"Is DEWS Fair?\"): false-alarm rates 42 points higher for Black, 18 for Hispanic students; agency told no one",
     "The Markup 2023 investigation (Feathers) documented disparate-impact finding and agency response",
@@ -1014,7 +1014,7 @@
     Journal-Constitution_ found that for several years educators across
     dozens of schools had systematically erased and corrected students'
     answers on state standardized tests. The cheating was organized —
-    principals pressured teachers, staff held weekend "changing parties" — and the incentive system rewarded the gaming with
+    principals pressured teachers, staff held weekend "erasure parties" — and the incentive system rewarded the gaming with
     bonuses and promotions. Around 180 educators were implicated, 35
     indicted, and 11 convicted under Georgia's racketeering statute. The
     capability gap lay in the measurement architecture: the institution
@@ -1035,7 +1035,7 @@
     // -- What Happened --
     [
       Over several years, educators at dozens of APS elementary and middle
-      schools systematically changed students' answers after testing. The cheating was organized rather than incidental: 38 of the 178 educators named were principals, who pressured teachers to hit targets, and staff held after-hours changing "parties" to correct answer sheets. Suspiciously high rates of
+      schools systematically changed students' answers after testing. The cheating was organized rather than incidental: 38 of the 178 educators named were principals, who pressured teachers to hit targets, and staff held weekend "erasure parties" to correct answer sheets. Suspiciously high rates of
       wrong-to-right erasures flagged the pattern — a statistical fingerprint
       the gaming left behind precisely because correcting a wrong answer to a
       right one is far rarer, by chance, than the reverse.#cn()
@@ -1075,7 +1075,7 @@
   ),
   beats: (
     "District administered and held custody of the high-stakes tests determining bonuses and recognition",
-    "Educators across dozens of schools organized changing parties to change students' answers",
+    "Educators across dozens of schools organized erasure parties to change students' answers",
     "Newspaper analysis and state investigators documented scheme; thirty-five indicted, eleven convicted under RICO",
     "Institution being measured operated the instrument measuring it, with no independent audit",
     "Convictions made APS the prominent U.S. high-stakes-testing fraud case fuelling reassessment",
