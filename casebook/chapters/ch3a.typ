@@ -71,7 +71,7 @@
       any, instrument to trust, because every air-data instrument drew on the
       same blocked source and so failed in concert rather than disagreeing
       usefully. The true reading arrived as one more alarm in a cockpit where
-      every alarm had already proved false: "too low — terrain" sounded twenty-two times in the last minute of flight.#cn()
+      every alarm had already proved false: "too low — terrain" sounded twenty-two times in forty-five seconds some eight minutes out, and again continuously through the last minute to impact.#cn()
     ],
     // -- The Investigation --
     [
@@ -121,14 +121,14 @@
     "Industry tightened conspicuous covering and removal verification for static ports and pitot tubes",
   ),
   references: (
-    [Peru Dirección General de Transporte Aéreo, Accident Investigation Board, final report on AeroPerú 603 (Lima, December 1996; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
-    [Peru DGTA Accident Investigation Board report (December 1996) — the static-port tape and the contradictory warnings.],
-    [Peru DGTA Accident Investigation Board report (December 1996) — the radio altimeter as "the only reliable element remaining to them," and the unheeded GPWS terrain warnings.],
+    [Peru Dirección General de Transporte Aéreo, Accident Investigation Board, final report on AeroPerú 603 (2 October 1997; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
+    [Peru DGTA Accident Investigation Board report (2 October 1997) — the static-port tape and the contradictory warnings.],
+    [Peru DGTA Accident Investigation Board report (2 October 1997) — the radio altimeter as "the only reliable element remaining to them," and the unheeded GPWS terrain warnings.],
     [Leveson, N. (2011), _Engineering a Safer World_ (STAMP) — common-cause failure.],
     [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_ — crew performance under instrument failure.],
   ),
   quote: [The crew received contradictory indications they could neither reconcile nor override.],
-  quote-source: "Paraphrasing the Peruvian Directorate General of Air Transport Accident Investigation Board report on AeroPerú 603, December 1996",
+  quote-source: "Paraphrasing the Peruvian Directorate General of Air Transport Accident Investigation Board report on AeroPerú 603, 2 October 1997",
   le-insight: [
     AeroPerú 603 is the case for redundancy that is not redundancy.
     Every air-data indicator depended on the same physical sensor, and
