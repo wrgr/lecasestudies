@@ -30,47 +30,64 @@
   summary: [
     The Therac-25, a radiation-therapy machine, massively overdosed at
     least six patients between 1985 and 1987, killing at least three. Its
-    predecessors used hardware interlocks to stop the high-energy beam from
-    firing without its target in place; judging the interlocks not worth
-    duplicating and trusting software over hardware, the Therac-25 removed
-    them and relied on software — adapted from the older machines and never
-    engineered for safety — to keep the beam modes separated. At least two
-    distinct software defects drove the overdoses — a data-entry race
-    condition behind the cryptic "Malfunction 54" deaths at Tyler, and a
-    counter overflow that silently skipped a collimator check in the fatal
-    Yakima accident — either of which could fire the full beam with no
-    target in place. Leveson
-    and Turner's 1993 investigation, the founding case of software-safety
-    engineering, found a systemic failure: a safeguard removed with nothing
-    put in its place. The lesson — a safeguard you delete does not remove
-    the hazard; it relocates it to whatever you failed to build.
+    predecessors carried independent hardware circuits that monitored the
+    electron beam and stopped it; building the Therac-25, AECL decided not
+    to duplicate all of the earlier machines' hardware safety mechanisms
+    and interlocks, leaving software — adapted from those machines and
+    never engineered for safety — to hold the two beam modes apart. Two
+    defects were established: a data-entry race condition behind the
+    cryptic "Malfunction 54" deaths at Tyler, and a counter overflow that
+    skipped a position check in the fatal January 1987 Yakima accident.
+    Three of the six accidents were never definitively explained. What
+    made a defect lethal rather than annoying is the second half of the
+    chain: the ion chambers saturated and reported an underdose, the fault
+    code was undocumented, and the operator could clear it and fire again.
+    Leveson and Turner's 1993 investigation, the founding case of
+    software-safety engineering, found a systemic failure. The lesson — a
+    safeguard you delete does not remove the hazard; it relocates it to
+    whatever you failed to build.
   ],
   sections: (
     // -- Background --
     [
       The Therac-25 was a radiation-therapy linear accelerator. Its
-      predecessors used hardware interlocks that physically blocked the
-      high-energy beam unless the spreading target was confirmed in place — a
-      mechanical backstop that could not be talked out of stopping the beam.
-      To save cost and simplify the machine, the Therac-25 removed them and
-      trusted software — adapted from the older machines and never engineered from the ground up for safety-critical use — to keep its two beam modes, the photon setting drawing a hundred times the electron beam current, safely separated. The safety case
-      migrated silently from steel to code.#cn()
+      predecessors, the Therac-6 and Therac-20, carried independent
+      protective circuits monitoring the electron-beam scanning alongside
+      mechanical interlocks — a backstop that could not be talked out of
+      stopping the beam. Building the Therac-25, AECL took advantage of
+      the computer's ability to control and monitor the hardware and, in
+      Leveson and Turner's words, "decided not to duplicate all the
+      existing hardware safety mechanisms and interlocks," leaving
+      software — adapted from the older machines and never engineered from the ground up for safety-critical use — to keep its two beam modes, the photon setting drawing a hundred times the electron beam current, safely separated. The machine was not interlock-free; what it
+      lacked was an independent circuit covering the failure that killed
+      people. The safety case migrated quietly from steel to code.#cn()
     ],
     // -- What Happened --
     [
       Between 1985 and 1987 the machine massively overdosed at least six
-      patients. A race condition the engineers never knew about meant that
-      if an operator entered a prescription, caught a mistake, and corrected
+      patients. At Tyler, a race condition the engineers never knew about
+      meant that if an operator entered a prescription, caught a mistake, and corrected
       it within about eight seconds — the speed an experienced operator
       naturally reaches — the full-power beam could fire with no target in
-      place, delivering up to a hundred times the intended dose. The console
-      showed only "MALFUNCTION 54," a code with no documented meaning, and
-      offered to proceed; operators, assured the machine was safe and long
-      accustomed to its cryptic faults, did. That fast-edit race condition was
-      only one of two independent defects: the fatal 1987 Yakima overdose came
-      from an unrelated bug — a status counter that overflowed to zero on every 256th pass through the setup test, hundreds of which run in a single setup, and silently skipped the upper-collimator check — evidence the
-      failure was systemic, not a single stray line of code. At least three
-      patients died of the radiation burns.#cn()
+      place, delivering up to a hundred times the intended dose. Then every
+      channel the operator had failed in the same direction. The ion
+      chambers, hit with that dose, saturated and read low: the console
+      showed six monitor units delivered against the 202 requested — an
+      underdose. The fault read "MALFUNCTION 54," a code the manual did not
+      explain, and which a technician later testified meant a dose either
+      too high or too low. It was classed as a treatment *pause*, clearable
+      with a single keystroke and repeatable up to five times, rather than
+      a suspend requiring the parameters to be re-entered. The video
+      display was unplugged and the audio monitor broken, so the patient —
+      the one sensor in the room still reporting correctly — could not be
+      seen or heard. The operator pressed the key and fired again. The
+      fatal January 1987 Yakima overdose came from an unrelated defect: a
+      one-byte counter in the setup test wrapped to zero on every 256th
+      pass, and on that pass the routine skipped setting the flag that
+      verifies collimator position. At least three patients died of the
+      radiation burns. Three of the six accidents were never definitively
+      explained: AECL could not reproduce them, and its testing of a
+      suspected microswitch was inconclusive.#cn()
     ],
     // -- The Investigation --
     [
@@ -79,24 +96,42 @@
       complaint rather than a signal. Nancy Leveson and Clark Turner's 1993
       investigation — the founding case study of software-safety engineering
       — found the fault was systemic rather than a single bug: overconfidence
-      in software, removal of the hardware safeguards without replacement,
-      meaningless error messages, reused code never audited for safety, no
-      independent review of the safety-critical logic, and an
+      in software, hardware safeguards not carried forward, meaningless
+      error messages, reused code never audited for safety, and an
       incident-reporting posture that dismissed the early warnings instead of
-      compounding them into evidence.#cn()
+      compounding them into evidence. AECL had run a safety analysis in
+      March 1983 — a fault tree that apparently excluded software, on the
+      stated assumption that residual software errors were not included,
+      and that where it did reach the computer assigned a probability of
+      ten to the minus eleven to "computer selects wrong energy" and four
+      times ten to the minus nine to "computer selects wrong mode," with
+      no justification given for either. The pathology was not a missing
+      analysis but one whose scope had a hole exactly where the safety
+      case had moved. The sharpest evidence came from outside the
+      manufacturer: after the second Tyler accident a physicist at the
+      University of Chicago Joint Center for Radiation Therapy checked
+      whether the same thing could happen on a Therac-20 and found that
+      whenever a new class of students began using it, fuses and breakers
+      tripped. The same defect was there. On that machine it was a
+      nuisance, because the independent hardware circuits were still
+      watching the beam.#cn()
     ],
     // -- The Capability Gap --
     [
-      The hardware interlock had not been redundant; it *was* the safety
+      The independent circuit had not been redundant; it *was* the safety
       case, the one thing standing between a typing error and a lethal dose.
-      Removing it put nothing in its place — no verified software check, no
-      informed operator action, no independent monitor watching the beam. The
-      operator stayed nominally in the loop but lost any means to detect what
-      the machine was doing wrong, since the only feedback was a code that
-      told them nothing, which made the human presence a formality rather than
-      a safeguard. The question capability engineering would have forced —
-      *what function now carries the interlock's load?* — was never asked of
-      the redesign.#cn()
+      Nothing took its place — no verified software check, no independent
+      monitor watching the beam. The operator stayed nominally in the loop,
+      and a safety function assigned to a person needs four things to be
+      real: a true reading of the hazardous variable, time to act inside
+      the hazard's own timescale, an action cheaper to take than to skip,
+      and confirmation it worked. She had none of them. The dose display
+      reported the opposite of the truth; the exposure was irreversible in
+      under a second; clearing the fault took one key and stopping took
+      judgement against a readout saying nothing was wrong. The question
+      capability engineering would have forced — *what function now carries
+      the interlock's load, and can whatever now holds it actually see?* —
+      was never asked of the redesign.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -106,16 +141,19 @@
       so the operator can act, and treating field reports as evidence to be
       aggregated rather than complaints to be closed. It remains the canonical
       teaching case across software, medical-device, and systems-safety
-      curricula.#cn() Its lesson is exact and portable: a safeguard you remove
+      curricula.#cn() No rule then required a site to report such an
+      incident, so each accident was unknown to the others and Tyler's
+      physicist had to reproduce the fault himself; the Safe Medical
+      Devices Act of 1990 changed that. Its lesson is exact and portable: a safeguard you remove
       does not remove the hazard it guarded — it relocates the hazard to
       whatever you failed to put in its place, and waits there.
     ],
   ),
   beats: (
-    "Hardware interlocks dropped — judged not worth duplicating, software trusted instead; safety case migrated silently into software",
-    "Two software defects — a race condition and a counter overflow — fired the full beam with no target",
-    "Manufacturer denied harm; Leveson and Turner found systemic, not single-bug, failure",
-    "Interlock was the safety case; nothing took its load when removed",
+    "Independent hardware protective circuits not carried forward; safety case migrated quietly into software",
+    "Two defects established — a race condition and a counter overflow; three of six accidents never definitively explained",
+    "Every operator channel failed the same way: dosimeter read six units against 202 requested, fault code undocumented, one key to fire again",
+    "Same defect on the Therac-20 only blew fuses, because the independent circuits were still watching the beam",
     "The canonical case of software-safety engineering; deleted safeguards relocate hazard to whatever replaces them",
   ),
   references: (
@@ -125,16 +163,17 @@
     [N. G. Leveson, _Engineering a Safer World: Systems Thinking Applied to Safety_ (MIT Press, 2011) — why removing a safeguard requires explicitly reassigning its safety function.],
     [The case's role in medical-device software regulation and software-safety practice (FDA software guidance; IEC 62304 lineage); see also #link("https://ethicsunwrapped.utexas.edu/case-study/therac-25")[Ethics Unwrapped, UT Austin].],
   ),
-  quote: [Therac-25 illustrates the dangers of relying on software safety controls without rigorous engineering practices.],
-  quote-source: "Paraphrasing Leveson & Turner, IEEE Computer, 1993",
+  quote: [The software error is just a nuisance on the Therac-20 because this machine has independent hardware protective circuits for monitoring the electron-beam scanning.],
+  quote-source: "Leveson & Turner, IEEE Computer, 1993",
   le-insight: [
-    Therac-25 is the moment when removing the human safety margin became
-    visible as a design choice. The hardware interlock was not redundant —
-    it was the safety case. When it was removed, no equivalent capability
-    was put in its place. The operator was retained in the system but
-    stripped of the ability to detect what it was doing wrong. Capability
-    engineering would have asked, before removing the interlock, *what
-    function takes its load?*
+    Therac-25 is the case in which a safety function was reassigned and
+    nothing was built to receive it. The record does not show anyone
+    weighing the removal; it shows a redesign in which no artifact and no
+    role existed to ask the question, and a 1983 fault tree that left
+    software outside its scope. The operator was kept in the system and
+    stripped of any means of seeing what it was doing wrong. Capability
+    engineering would have asked, before the circuit came out, *what
+    function takes its load, and can whatever now holds it see?*
   ],
   lens-approach: [
     LENS frames Therac-25 as a *Design-Out* failure made visible through
@@ -167,9 +206,17 @@
     ),
   ),
   courses: ("LEN 5", "LEN 7", "LEN 2"),
+  competing-readings: (
+    [The removed circuit is the load-bearing absence — set against the reading that the decisive deficit was *feedback*, not shutdown. At Tyler the second dose was delivered because the display said underdose and the fault class permitted a one-key retry; a truthful dosimeter and a suspend-class fault stop the site after the first exposure without any interlock being restored. The corrective action plan deployed hardware and interface changes together, so the record cannot decompose them.],
+    [Engineering was the missing capability — set against the reading that *reporting* was. Each site's accident was unknown to the others, and the Tyler and January 1987 Yakima accidents were serially preventable: a mandatory reporting regime, with no design change at all, plausibly prevents those deaths. This reading predicts transfer to any system whose hazard is rare per site and repeating across sites.],
+    [The removal was a design choice — set against the reading that it was a diffuse non-decision. AECL's stated rationale is thin and largely reconstructed after the fact, and the evidence is at least as consistent with a redesign driven by compactness and cost in which no artifact and no role existed to ask the question. The two readings point at different places to intervene: at the decision, or at the absence of a decision point.],
+    [Better information would have saved the patients — set against the reading that at a sub-second, irreversible timescale no achievable human capability would have helped, and the correct design was to take the human out of the detection loop entirely. On this reading the human-shaped capabilities in the case sit at other timescales: noticing a pattern across sessions, believing the patient, escalating against a manufacturer's assurance, and learning across sites.],
+  ),
+  scope-limit: [The denominator is unknown. The failure was undetectable from inside the system, so a sub-fatal overdose would have presented as an unexplained treatment reaction and never been attributed to the machine; "six known" is a lower bound and no exposure-adjusted risk figure drawn from this case can be trusted in either direction. The account itself is a documentary reconstruction from FDA records, correspondence, depositions and lawsuits, with limited manufacturer cooperation and design documentation that in places did not exist — the best available record, and not an audited engineering root-cause report.],
   scale: "big",
+  evidence-source: "investigation",
   induced-anchor: "3.1",
-  lens-anchor: "D3/PT3",
+  lens-anchor: "D3+D4/PT3",
   leo-anchor: "LEO-3",
 )
 

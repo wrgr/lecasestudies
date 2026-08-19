@@ -75,12 +75,12 @@
 )
 
 #let dgm-therac = diagram-frame(
-  caption: "Software state checks replaced the hardware interlock",
+  caption: "Software state took over from an independent circuit, and nothing downstream could see the fault",
   cetz.canvas({
     import cetz.draw: *
     line((0.5, 2.4), (8.5, 2.4), stroke: 1pt + dgm-ink)
     content((0.5, 2.7), text(font: sans, size: 6.5pt, fill: dgm-ink, "Therac-6/20"), anchor: "south-west")
-    content((4.5, 2.7), text(font: sans, size: 6.5pt, fill: dgm-ink, "command → hardware interlock → beam"), anchor: "south")
+    content((4.5, 2.7), text(font: sans, size: 6.5pt, fill: dgm-ink, "command → independent circuit → beam"), anchor: "south")
     rect((6.8, 2.2), (7.6, 2.6), fill: dgm-accent, stroke: none)
     content((7.2, 2.4), text(font: sans, size: 5.5pt, fill: dgm-onaccent, weight: "bold", "LOCK"))
     line((0.5, 0.9), (8.5, 0.9), stroke: 1pt + dgm-accent)

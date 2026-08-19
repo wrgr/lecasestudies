@@ -135,6 +135,15 @@ def phrases_mode(d):
     root = os.path.dirname(os.path.abspath(d)) or "."
     quarantined = set(re.findall(r'"([a-z0-9-]+)"',
                                  open(os.path.join(root, "lib", "quarantine.typ")).read()))
+    # Front matter states the book's claims at book level and is a compression
+    # surface like any other: the "pair is irreducible" line outlived the case
+    # corrections that retracted it.
+    for fm in sorted(glob.glob(os.path.join(root, "frontmatter", "*.typ"))):
+        txt = open(fm).read()
+        for pat, note in RETRACTED:
+            if re.search(pat, txt, re.I):
+                print(f"  ~ {os.path.relpath(fm, root):<52s}")
+                print(f"        {pat.replace(chr(92)+'b',''):<38s} {note}")
     hits = 0; total = 0
     for f in sorted(glob.glob(os.path.join(d, "*.typ"))):
         for blk in cases(open(f).read()):

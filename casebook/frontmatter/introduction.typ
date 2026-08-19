@@ -696,10 +696,33 @@
   case in the dataset shares it: a technical artifact paired with a
   cultural authority; a measurement instrument paired with a governance
   body that listens to it; a curriculum paired with the institutional
-  architecture to sustain it. Neither half alone moves the curve. The
-  pair is irreducible. This is the strongest empirical pattern in the
-  book and it directly informs the LENS pedagogical commitment to
-  co-optimization across technical and human design.
+  architecture to sustain it. The pattern is that the cases that moved
+  the curve shipped both halves together. What the record does not
+  establish is which half carried the result: these interventions were
+  installed as bundles, and the trials that measured them could not
+  decompose them. That is the strongest empirical pattern in the book,
+  stated at the strength the evidence supports, and it informs the LENS
+  commitment to co-optimization across technical and human design.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  *Cases have more than one cause, and the book says so.* Each case
+  names a primary reading — the one its LENS anchor is drawn from, and
+  the one the Lens page teaches. It is rarely the only reading the
+  record supports. Where rival explanations survive the evidence and
+  imply different things to check before the pattern is carried
+  somewhere else, they are set out in a *Competing readings* block at
+  the end of the narrative; where a case demonstrably fails to show
+  something it is often made to show, that boundary is stated as *What
+  this case does not show*. Neither block is a caveat attached to a
+  claim we did not want to defend — an error is corrected in the case,
+  not annotated. They are there because a reader who takes one cause
+  away from a failure with four interlocking ones has learned the wrong
+  lesson, and because a student who meets the alternatives here will
+  not be ambushed by them later. Therac-25, the opening case, carries
+  both blocks as the worked example.
 ]
 
 #v(6pt)
@@ -718,8 +741,11 @@
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  Each case occupies a two-page spread. The left page tells what
-  happened — narrative, evidence, attribution. The right page is the
+  Most cases run to three pages. The narrative comes first — what
+  happened, the evidence, the attribution — and closes with a diagram
+  or a pull quote; where the record supports rival explanations, the
+  *Competing readings* and *What this case does not show* blocks sit at
+  its end. The last page is the
   *Learning Engineering Lens:* a synthesis of what the case teaches,
   how the LENS curriculum addresses the pattern, and reflection
   questions designed for studio discussion. The casebook is built to be
