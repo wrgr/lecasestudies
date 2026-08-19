@@ -534,7 +534,7 @@
   year: "1981 – present",
   domains-list: ("aviation",),
   modes-code: "THN",
-  impact: "CAST adopted the White House Commission's 80% fatality-risk reduction target and reported 83% for 1998–2008 and reported 83% for 1998–2008 — a portfolio result across 70 selected safety enhancements, credited by CAST and the FAA to CAST's work \"along with new aircraft, regulations and other activities\"; CRM's separate contribution is not isolated in any published estimate, and CRM predates the measurement window by seventeen years",
+  impact: "CAST adopted the White House Commission's 80% fatality-risk reduction target and reported 83% for 1998–2008 — a portfolio result across 70 selected safety enhancements, credited by CAST and the FAA to CAST's work \"along with new aircraft, regulations and other activities\"; CRM's separate contribution is not isolated in any published estimate, and CRM predates the measurement window by seventeen years",
   diagram: dgm.dgm-crm,
   kind: "intervention",
   summary: [
