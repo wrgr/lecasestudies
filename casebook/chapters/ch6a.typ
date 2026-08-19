@@ -1936,9 +1936,7 @@
   kind: "failure",
   summary: [
     On 11 March 2011 the Tōhoku earthquake and the tsunami it spawned
-    overwhelmed TEPCO's Fukushima Daiichi plant: the wave topped the
-    seawall, flooded the emergency diesel generators, and cut cooling to the
-    reactors. Three of the six cores melted down and hydrogen explosions
+    overwhelmed TEPCO's Fukushima Daiichi plant: the quake severed the off-site transmission lines, the wave rose above the site's ground level and flooded the emergency diesel generators, and cooling failed. Three of the six cores melted down and hydrogen explosions
     spread radioactive material, displacing some 160,000 people; cleanup is
     projected above \$200 billion. The independent Diet commission (NAIIC),
     chaired by Kiyoshi Kurokawa, called it a disaster "made in Japan" — the
@@ -1953,27 +1951,18 @@
     // -- Background --
     [
       Fukushima Daiichi sat on Japan's northeast coast, its reactors and
-      their backup diesel generators protected by a seawall sized to a
-      design-basis tsunami. Evidence of much larger historical waves — back
+      their backup diesel generators protected by the site's ground elevation and a design basis set by the Japan Society of Civil Engineers method. Evidence of much larger historical waves — back
       to the ninth-century Jōgan event — had been discussed in TEPCO's own
-      internal assessments, but no institutional path turned that evidence
-      into a higher seawall.#cn() The gap was not in the data but in the
-      conversion: the larger-wave evidence lived inside the utility's own
-      assessments, where it could be discussed indefinitely without ever
-      becoming a binding requirement to raise the wall it implicated.
+      internal assessments and shared with the regulator from 2006, without ever becoming a required change.#cn() The gap was not in the data but in the conversion: NAIIC found TEPCO and NISA both knew a wave above site level meant total loss of power, and that NISA gave no compulsory instruction and TEPCO took no action.
     ],
     // -- What Happened --
     [
       On 11 March 2011 the Tōhoku earthquake struck and the tsunami that
-      followed topped the seawall. The plant lost off-site power; the diesel
-      generators meant to keep cooling running were inundated. Cooling
+      followed rose above the site's ground level. The earthquake had already severed the off-site transmission lines; the diesel generators meant to keep cooling running were inundated. Cooling
       failed, three of the six reactor cores melted down, and hydrogen
       explosions spread radioactive material across the region. Some 160,000
       people were displaced, and cleanup is projected above \$200 billion.#cn()
-      Siting the backup generators where a wave that overtopped the seawall
-      would reach them tied the entire cooling chain to that single design
-      assumption, so once the wall was topped the loss of cooling followed
-      almost mechanically from the layout itself.
+      Siting the backup generators where a wave above the site's ground level would reach them tied the entire cooling chain to that single design assumption, so once the water was on the site the loss of cooling followed almost mechanically from the layout itself.
     ],
     // -- The Investigation --
     [
@@ -1985,10 +1974,7 @@
       General's report (2015) — emphasized the under-estimation of external
       hazards and defense-in-depth assumptions over the cultural critique;
       the Kurokawa framing is the most-cited but not the only consensus
-      reading.#cn() That serious independent reviews diverged on emphasis —
-      cultural capture versus under-estimated external hazards — is itself
-      part of the record, and the book treats Kurokawa's as the most-cited
-      reading rather than the settled one.
+      reading.#cn() NAIIC also refused to accept the tsunami as the sole direct cause, holding that the earthquake may have damaged safety equipment at Unit 1; the IAEA report found the on-site destruction tsunami-driven. The book treats Kurokawa's as the most-cited reading, not the settled one.
     ],
     // -- The Capability Gap --
     [
@@ -1999,9 +1985,7 @@
       assumptions. The internal tsunami evidence existed; the institutional
       capability to act on it did not.#cn() Evidence without an independent
       body empowered to act on it is inert: the larger-wave assessments could
-      be acknowledged and shelved indefinitely because no institution stood
-      outside the utility with the standing to convert them into a mandated
-      change.
+      be acknowledged and shelved indefinitely because the regulator that did stand outside the utility, NISA, knew the risk and issued no compulsory instruction to act on it.
     ],
     // -- Aftermath & Reform --
     [
@@ -2019,7 +2003,7 @@
     ],
   ),
   beats: (
-    "Internal TEPCO assessments discussed larger historical waves; evidence never forced a higher seawall",
+    "TEPCO and NISA shared the larger-wave evidence from 2006; NISA gave no compulsory instruction and TEPCO took no action",
     "Tōhoku tsunami topped the seawall; inundated generators; three cores melted down, displacing thousands",
     "Kurokawa's NAIIC called it made in Japan; Hatamura and IAEA emphasized under-estimated external hazards",
     "Internal hazard evidence existed; Japan lacked an INPO-equivalent with independence to act on it",
@@ -2086,7 +2070,7 @@
   year: "2014 – 2016",
   domains-list: ("global health", "outbreak response", "international governance"),
   modes-code: "GN",
-  impact: "The 2014–2016 West Africa Ebola epidemic reached approximately 28,600 reported cases and 11,300 reported deaths (WHO situation-report figures, undercount acknowledged) across Guinea, Liberia, and Sierra Leone; first cases December 2013, outbreak confirmed March 2014, MSF called it \"out of control\" in June 2014 while WHO leadership disputed that framing, and WHO declared the Public Health Emergency of International Concern only on 8 August 2014 — months into exponential growth",
+  impact: "The 2014–2016 West Africa Ebola epidemic reached approximately 28,600 reported cases and 11,300 reported deaths (WHO situation-report figures, undercount acknowledged) across Guinea, Liberia, and Sierra Leone; first cases December 2013, outbreak confirmed March 2014, MSF called it \"out of control\" on 21 June 2014 while WHO staff in Guinea and Sierra Leone accused it of causing unnecessary panic, and WHO declared the Public Health Emergency of International Concern only on 8 August 2014 — months into exponential growth",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -2100,7 +2084,7 @@
     cases appeared in Guinea in December 2013; the outbreak was
     confirmed as Ebola in March 2014. Médecins Sans Frontières
     declared the epidemic "out of control" in June 2014, while
-    WHO leadership publicly disputed that framing as alarmist.
+    WHO staff in Guinea and Sierra Leone called that alarmist.
     WHO declared the Public Health Emergency of International
     Concern only on 8 August 2014 — months into exponential
     growth, and by the third PHEIC ever issued. The response
@@ -2115,8 +2099,7 @@
     Panel (Moon et al., _The Lancet_, November 2015), and the UN
     High-Level Panel (2016) — found the same structural failures:
     WHO's outbreak-response capacity had been cut after the 2011
-    budget reductions; the IHR (2005) core capacities existed on
-    paper in member states but not in practice; and early-warning
+    budget reductions; most member states had simply not built the IHR (2005) core capacities, and failing to do so cost nothing; and early-warning
     signals were discounted for political and economic reasons.
     The reform — the WHO Health Emergencies Programme (2016) —
     carries the panels' own caveat that post-crisis reform
@@ -2133,7 +2116,7 @@
       Leone was climbing, and Médecins Sans Frontières stated
       publicly that the epidemic was "out of control" and beyond
       the capacity of the responding organizations — a framing
-      that WHO leadership disputed at the time as alarmist. WHO
+      that WHO staff in the affected countries called alarmist. WHO
       convened its Emergency Committee on 6–7 August 2014 and
       declared a Public Health Emergency of International Concern
       on 8 August 2014, by which point roughly 1,700 cases and
@@ -2146,19 +2129,10 @@
       engineered capability. Under the International Health
       Regulations (2005), member states were required to build
       and certify a set of core capacities for detecting,
-      assessing, and responding to public-health events. On the
-      certification record, those capacities existed. In the
-      three most-affected states, the deployable capability did
-      not: surveillance, laboratory, and response infrastructure
-      that had been declared present could not in fact absorb the
-      epidemic. The IHR core-capacity regime had produced paper
-      compliance without real capability — the readiness the
-      system declared was not the readiness the system could
-      produce. The Stocking Report named the IHR implementation
+      assessing, and responding to public-health events. On the certification record, most had not built them. As at November 2014, 64 States Parties told the Secretariat they had achieved the core capacities, 81 requested extensions, and 48 did not communicate their status at all. The Stocking Panel called that untenable: a legally binding obligation, measured only by voluntary self-assessment, whose breach carried no consequence at all. The Stocking Report named the IHR implementation
       gap directly as one of its three review areas, alongside
       WHO's own emergency-response capacity and its role within
-      the wider humanitarian system. The gap itself — declared
-      readiness minus deployable readiness — is the artifact the
+      the wider humanitarian system. The gap itself — obligated readiness minus built readiness — is the artifact the
       case asks the reader to own.#cn()
     ],
     [
@@ -2173,8 +2147,7 @@
       signal was reframed as manageable lowered the threshold for
       reframing it again the next week. The Harvard-LSHTM
       Independent Panel (Moon et al., _The Lancet_, November 2015)
-      located the most serious failure in the delay in raising
-      the alarm, and its ten reform proposals targeted the
+      found the Director-General had ample reason to declare the emergency earlier, and its ten reform proposals targeted the
       governance of outbreak escalation — the machinery by which
       a discounted signal is supposed to become a declared
       emergency — rather than the science of detection. WHO's
@@ -2224,15 +2197,15 @@
   ),
   beats: (
     "First cases Guinea December 2013; confirmed as Ebola March 2014; WHO/Guinea reporting characterized outbreak as slowing by April 2014",
-    "MSF declared the epidemic \"out of control\" June 2014; WHO leadership publicly disputed the framing as alarmist",
+    "MSF declared the epidemic \"out of control\" 21 June 2014; WHO staff in Guinea and Sierra Leone accused MSF of causing unnecessary panic",
     "WHO declared the PHEIC on 8 August 2014 (Emergency Committee 6–7 August) — months into exponential growth; third PHEIC ever",
     "Response scaled: UNMEER (first UN emergency health mission), US/UK military logistics; community-led safe burials and care-centre networks bent the curve",
-    "Reported toll ~28,600 cases / ~11,300 deaths (undercount acknowledged); Stocking Report (July 2015), Moon et al. Lancet (Nov 2015), UN High-Level Panel (2016) converge on IHR paper-compliance, post-2011 WHO capacity cuts, discounted early signals",
+    "Reported toll ~28,600 cases / ~11,300 deaths (undercount acknowledged); Stocking Report (July 2015), Moon et al. Lancet (Nov 2015), UN High-Level Panel (2016) converge on unbuilt IHR core capacities with no consequence, post-2011 WHO capacity cuts, discounted early signals",
     "Reform: WHO Health Emergencies Programme (2016); panels' own caveat that post-crisis reform pledges historically decay — COVID-19 later tested it",
   ),
   approaches: (
     during: (
-      [Treat the gap between certified and deployable capability as the primary operational artifact: IHR core capacities existed on the certification record but not in the field, and the analyst's job during escalation is to measure the readiness the system can produce, not the readiness it has declared.],
+      [Treat the gap between obligated and built capability as the primary operational artifact: most states had not built the IHR core capacities and reported as much, and the analyst's job during escalation is to measure the readiness the system can produce, not the readiness it is obliged to hold.],
       [Build the escalation loop to resist discounting an exponential signal for political or economic reasons; the recurring failure was that each week's reframing of the signal as manageable lowered the threshold for reframing it again, and the declaration lagged the growth it existed to trigger.],
       [Do not hollow the institution charged with escalation ahead of the emergency; WHO's outbreak-response capacity had been reduced after the 2011 budget cuts, so the body responsible for sounding the alarm had been degraded at the point of need — a sustainment failure in the readiness deliverable itself.],
     ),
@@ -2249,13 +2222,12 @@
     [World Health Organization (2016), _Ebola Situation Reports_ — West Africa: approximately 28,600 cases and 11,300 deaths reported to 10 June 2016 (reported figures; undercount acknowledged).],
     [Médecins Sans Frontières (2015), _Ebola: Pushed to the Limit and Beyond_ — MSF account of the international outbreak response, March 2015.],
   ),
-  quote: [The most egregious failure was by WHO in the delay in sounding the alarm.],
+  quote: [The Director-General had ample reason to raise international attention by convening the Emergency Committee or declaring a public health emergency of international concern earlier.],
   quote-source: "Harvard-LSHTM Independent Panel on the Global Response to Ebola (Moon et al., The Lancet, 28 November 2015).",
   le-insight: [
     West Africa Ebola is the load-bearing case for declared
     international readiness that was certified but not deployable.
-    The IHR (2005) core capacities existed on paper in member
-    states but not in practice; WHO's own outbreak-response
+    Most member states had not built the IHR (2005) core capacities and said so; WHO's own outbreak-response
     capacity had been cut after 2011; and the escalation loop
     discounted an exponential signal for months before the PHEIC
     of 8 August 2014. The reported toll carries an acknowledged
@@ -2266,8 +2238,7 @@
     West Africa Ebola is the declared-versus-engineered-
     capability case at the scale of the international system
     (induced 1.1; LENS D5/PT6; LEO-5). LENS uses it in Domain 5
-    (Navigating Sociotechnical Constraints) for the IHR paper-
-    compliance-versus-real-capability seam and for the governance
+    (Navigating Sociotechnical Constraints) for the IHR obligation- versus-built-capability seam and for the governance
     failure in the escalation machinery — the discounting of the
     escalating signal as normalization of deviance in the
     declaration loop. The three converging panels (Stocking,
@@ -2297,7 +2268,7 @@
   year: "2017 – 2018",
   domains-list: ("emergency management", "disaster logistics", "public health"),
   modes-code: "GN",
-  impact: "Hurricane Maria struck Puerto Rico September 20, 2017, as the third major hurricane of the season after Harvey and Irma; FEMA's own 2017 Hurricane Season After-Action Report (July 12, 2018) found the agency entered Maria with force strength below target, its Caribbean Distribution Center inventory largely depleted by the Irma response, and commodity-tracking visibility it could not sustain to the ports; GAO-18-472 found 54% of deployed staff serving outside their qualified positions at the October 2017 peak; the grid collapse became the longest blackout in U.S. history (~11 months to full restoration); the commissioned GWU Milken Institute study estimated ~2,975 excess deaths (Sept 2017 – Feb 2018), adopted as the official toll in place of the initial 64",
+  impact: "Hurricane Maria struck Puerto Rico September 20, 2017, the third major hurricane to strike U.S. territory in under a month after Harvey and Irma; FEMA's own 2017 Hurricane Season After-Action Report (July 12, 2018) found the agency entered Maria with force strength below target, its Caribbean Distribution Center inventory largely depleted by the Irma response, and commodity-tracking visibility it could not sustain to the ports; GAO-18-472 found 54% of FEMA staff serving in a capacity in which they did not hold the \"Qualified\" title at the October 2017 peak; the grid collapse became the longest blackout in U.S. history (~11 months to full restoration); the commissioned GWU Milken Institute study estimated ~2,975 excess deaths (Sept 2017 – Feb 2018), adopted as the official toll in place of the initial 64",
   kind: "failure",
   scale: "big",
   evidence-source: "program-report",
@@ -2478,7 +2449,7 @@
   ),
   references: (
     [Federal Emergency Management Agency (2018), _2017 Hurricane Season FEMA After-Action Report_, July 12, 2018 — the agency's own self-assessment: force strength below target, Caribbean Distribution Center depletion, commodity-tracking shortfalls.],
-    [U.S. Government Accountability Office (2018), _2017 Hurricanes and Wildfires: Initial Observations on the Federal Response and Key Recovery Challenges_, GAO-18-472, September 2018 — 54% of deployed staff serving outside qualified positions at the October 2017 peak.],
+    [U.S. Government Accountability Office (2018), _2017 Hurricanes and Wildfires: Initial Observations on the Federal Response and Key Recovery Challenges_, GAO-18-472, September 4, 2018 — 54% of FEMA staff serving in a capacity in which they did not hold the "Qualified" title at the October 2017 peak.],
     [Milken Institute School of Public Health, George Washington University (2018), _Ascertainment of the Estimated Excess Mortality from Hurricane María in Puerto Rico_, August 2018 — commissioned by the Government of Puerto Rico; ~2,975 excess deaths, September 2017 – February 2018; basis for the official toll revision from 64.],
     [Kishore, N., Marqués, D., Mahmud, A., et al. (2018), "Mortality in Puerto Rico after Hurricane Maria," _New England Journal of Medicine_ 379(2):162 – 170, doi:10.1056/NEJMsa1803972 — household-survey estimate of 4,645 excess deaths (95% CI 793 – 8,498), September 20 – December 31, 2017.],
     [Houser, T., & Marsters, P. (2018), "The World's Second Largest Blackout," _Rhodium Group_, April 12, 2018 — approximately 3.4 billion lost customer-hours; the largest blackout in U.S. history by that metric.],
@@ -2638,14 +2609,14 @@
     "Staged rollouts, kernel-access review, and scrutiny of vendor concentration risk followed the outage",
   ),
   references: (
-    [CrowdStrike, _Falcon Content Update: Preliminary Post-Incident Review_ (July 2024) — the content-vs-code testing and staged-rollout gap (paraphrased).],
+    [CrowdStrike, _Falcon Content Update Preliminary Post Incident Report_ (24 July 2024) — the Rapid-Response-Content-versus-Sensor-Content testing and staged-rollout gap.],
     [CrowdStrike PIR (2024) — the configuration-file fault and the kernel crash; the ~8.5 million affected Windows machines figure is Microsoft's (D. Weston, 20 July 2024).],
     [Microsoft resilient-engineering analyses and Windows kernel-access review (2024).],
-    [U.S. GAO post-incident analysis and Senate Homeland Security hearings (2024) — concentration risk in endpoint security.],
+    [U.S. Government Accountability Office, _Cyber Resiliency: CrowdStrike Outage Highlights Challenges_, GAO-24-107733 (23 September 2024); House Committee on Homeland Security, Subcommittee on Cybersecurity and Infrastructure Protection hearing, 24 September 2024 — supply-chain and concentration risk in endpoint security.],
     [B. Beyer et al. (eds.), _Site Reliability Engineering_ (2016) — staged rollout and canarying; cf. Knight Capital (Case 143).],
   ),
-  quote: [Our content configuration update process did not include the same depth of testing and staged rollout as our code releases.],
-  quote-source: "Paraphrasing CrowdStrike Preliminary Post-Incident Review, July 2024",
+  quote: [Implement a staggered deployment strategy for Rapid Response Content in which updates are gradually deployed to larger portions of the sensor base, starting with a canary deployment.],
+  quote-source: "CrowdStrike, Falcon Content Update Preliminary Post Incident Report, 24 July 2024",
   le-insight: [
     The CrowdStrike outage is the live case for what happens when a
     deployment safety architecture treats categories of artifact

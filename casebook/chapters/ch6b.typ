@@ -205,7 +205,7 @@
   year: "1996 – 2000",
   domains-list: ("software sustainment", "critical infrastructure", "federal program management"),
   modes-code: "GDK",
-  impact: "The US federal government and the broader public and private sectors invested an estimated 100 billion dollars (US) over four years remediating two-digit-year date handling in legacy systems; the January 1, 2000 rollover passed with minimal disruption to critical infrastructure — the success contributed to the durable counterfactual debate about whether the threat justified the spending",
+  impact: "The US federal government and the broader public and private sectors invested an estimated 100 billion dollars (US) between 1995 and 2001 remediating two-digit-year date handling in legacy systems; the January 1, 2000 rollover passed with minimal disruption to critical infrastructure — the success contributed to the durable counterfactual debate about whether the threat justified the spending",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -223,8 +223,7 @@
     government, under sustained Office of Management and Budget
     reporting and GAO audit, drove an inventory-and-remediation
     program across mission-critical federal systems, while the
-    private sector executed a parallel multi-year effort. Estimates
-    of the total US investment range around \$100 billion. The
+    private sector executed a parallel multi-year effort. The Commerce Department put total US Y2K spending, covering repairs started in 1995 through 2001, at about \$100 billion. The
     January 1, 2000 rollover passed with minimal disruption to
     critical infrastructure. The case is the canonical instance of
     a believed-and-treated aging-system transition in the recent
@@ -257,10 +256,7 @@
       1996 and accelerated through 1997–1998 with the creation of the
       President's Council on Year 2000 Conversion (established February 1998) and the OMB
       quarterly reporting cycle. Federal mission-critical systems
-      were inventoried at line-item granularity — the GAO report
-      series tracked the proportion of federal mission-critical
-      systems Y2K-compliant on a quarterly cadence, agency by
-      agency. The discipline of the program rested on three
+      were inventoried at line-item granularity — OMB required the major departments and agencies to report quarterly, from May 1997, the proportion of their mission-critical systems Y2K-compliant, agency by agency. The discipline of the program rested on three
       institutional features: line-item inventory at the level of
       the actual systems, OMB-enforced quarterly status reporting,
       and GAO-sustained external audit that named agencies whose
@@ -332,11 +328,11 @@
     ),
   ),
   references: (
-    [Government Accountability Office, _Year 2000 Computing Challenge_ report series (1996–2000), particularly GAO/AIMD-99-225, GAO/T-AIMD-00-30, and GAO/AIMD-00-1 — line-item federal-program-management record.],
+    [General Accounting Office, _Year 2000 Computing Challenge_ report series (1997–2000), particularly GAO/AIMD-00-290, _Lessons Learned Can Be Applied to Other Management Challenges_ (September 2000) — the federal-program-management record and GAO's own retrospective.],
     [Office of Management and Budget, quarterly reports on federal Y2K remediation status (1997–1999) — program-self-report tier.],
     [President's Council on Year 2000 Conversion, _The Journey to Y2K_ final report (2000) — institutional retrospective of the federal coordination effort.],
-    [Anson, "The Y2K Bug: A Historical and Retrospective Analysis," _Computer_ (IEEE), retrospective literature on the counterfactual debate.],
-    [National Research Council, _Continued Review of the Tax Systems Modernization of the Internal Revenue Service_ — Y2K-related sustainment-engineering record.],
+    [Manion & Evan (2000), "The Y2K Problem and Professional Responsibility: A Retrospective Analysis," _Technology in Society_ 22(3), 361–387 — retrospective literature on the counterfactual debate.],
+    [U.S. Department of Commerce, Economics and Statistics Administration, _The Economics of Y2K and the Impact on the United States_ (November 1999) — total US Y2K spending of about \$100 billion covering repairs started 1995 through 2001, of which the federal share was about \$8 billion.],
   ),
   quote: [The C7 transition succeeded because it was believed and treated. The counterfactual — whether the threat was as large as the response implies — the program structurally cannot answer.],
   quote-source: "Editors' synthesis of the GAO Y2K report series and the post-2000 retrospective literature.",
@@ -384,9 +380,7 @@
   kind: "intervention",
   summary: [
     Three Mile Island did not produce a reactor accident at the next plant
-    over — it produced an institution. Within months of the 1979 Kemeny
-    Commission report, the U.S. commercial nuclear industry founded the
-    Institute of Nuclear Power Operations on a stark premise: an accident
+    over — it produced an institution. In the autumn of 1979, before the Kemeny Commission had reported, the U.S. commercial nuclear industry founded the Institute of Nuclear Power Operations on a stark premise: an accident
     at any single plant would threaten every operator's license, and no
     utility could engineer its safety capability alone. Funded by the
     utilities it evaluated and operating without statutory authority, INPO
@@ -402,9 +396,7 @@
     [
       The 1979 partial meltdown at Three Mile Island exposed not just a
       plant-level failure but an industry with no shared mechanism for
-      learning. The Kemeny Commission traced the accident in part to a
-      pervasive "mindset" of complacency, in which each utility operated
-      alone and no institution carried lessons from one plant to the rest.
+      learning. The Kemeny Commission found that warnings had been disregarded: a September 1977 event at Davis-Besse foreshadowed TMI, was investigated by Babcock & Wilcox and the NRC, and produced no notice to utilities before the accident.
       The structural problem sat above any single control room: a lesson
       learned at one plant had no path to the others, so the same latent
       failure could surface repeatedly across an industry that never
@@ -412,8 +404,7 @@
     ],
     // -- The Intervention --
     [
-      Within months of the Kemeny report, the utilities founded the
-      Institute of Nuclear Power Operations. Its premise was that an
+      The utilities founded the Institute of Nuclear Power Operations in the autumn of 1979, and the Kemeny report named the "recently created" Institute as an appropriate vehicle for the industry to set and police its own standards. Its premise was that an
       accident anywhere threatened everyone's license to operate. INPO set
       training and certification standards for operators and supervisors,
       and in 1985 the National Academy for Nuclear Training began
@@ -475,7 +466,7 @@
     [_Report of the President's Commission on the Accident at Three Mile Island_ (Kemeny Commission, 1979) — the pre-TMI culture.],
     [Nuclear Energy Institute, "Lessons from the 1979 Accident at Three Mile Island"; National Academy for Nuclear Training — accreditation and peer evaluation.],
     [World Nuclear Association — Three Mile Island Accident; INPO/WANO performance indicators.],
-    [Marsh (2019), "INPO and the Transformation of Nuclear Safety Culture."],
+    [Willard, R. F. (2019), _The Role of the Institute of Nuclear Power Operations in Supporting the United States Commercial Nuclear Power Industry's Focus on Nuclear Safety_, testimony for the record, U.S. Senate Committee on Environment and Public Works — INPO's design, funding, peer evaluations, and the National Academy.],
   ),
   quote: [Every utility recognized that an accident at any single plant would affect every operator's license to operate.],
   quote-source: "Paraphrasing the institutional analysis in Rees, Hostages of Each Other, 1994",
@@ -492,7 +483,7 @@
     learning: students identify the structural conditions in their own
     domain that would permit (or block) an INPO-equivalent and design the
     peer-review architecture required. LEN 1 uses the founding moment —
-    nine months after TMI — to discuss the *speed* a credible response to
+    eight months after TMI — to discuss the *speed* a credible response to
     catastrophe demands.
   ],
   literature-items: (
@@ -501,7 +492,7 @@
   ),
   reflection-list: (
     [What is the equivalent of "an accident at any single plant affects every operator" in your domain? If the answer is "nothing," what does that tell you?],
-    [INPO was stood up in nine months. Pick a current cross-organizational capability problem and write the nine-month deliverable that would constitute a credible response.],
+    [INPO was stood up in eight months. Pick a current cross-organizational capability problem and write the eight-month deliverable that would constitute a credible response.],
     [INPO held no statutory authority yet made its findings stick through shared catastrophic exposure and peer review. Design the non-statutory mechanism that could enforce a standard in your domain, and name the shared stake that would give it teeth.],
   ),
   approaches: (
@@ -798,10 +789,10 @@
     ),
   ),
   references: (
-    [Davies, Wright, Courtney, & Reid, "Confidential Incident Reporting on the UK Railways: The CIRAS System," _Cognition, Technology & Work_, doi:10.1007/PL00011494.],
+    [Davies, Wright, Courtney, & Reid (2000), "Confidential Incident Reporting on the UK Railways: The 'CIRAS' System," _Cognition, Technology & Work_ 2, 117–125, doi:10.1007/PL00011494.],
     [Rail Safety and Standards Board (RSSB), CIRAS program documentation 2008 – present — operating-program publications.],
     [University of Strathclyde, CIRAS impact case study — the operating-program-self-report on outcomes between 2008 and 2012.],
-    [Ladbroke Grove Rail Inquiry (Cullen, 2001), final report — the regulatory forcing event for national mandate.],
+    [Ladbroke Grove Rail Inquiry (Cullen, 2001), final report — the public inquiry into the crash that preceded the national mandate.],
   ),
   quote: [The 45%-led-to-improvement figure is the operating program's self-report. The institutional design is the audited finding.],
   quote-source: "Editors' synthesis of Davies et al. and the Strathclyde impact case study.",
@@ -847,7 +838,7 @@
   year: "2005 – 2020",
   domains-list: ("humanitarian relief", "international coordination", "disaster response"),
   modes-code: "G",
-  impact: "IASC cluster approach adopted after the 2005 Humanitarian Response Review diagnosed unowned sectors in the Indian Ocean tsunami and Darfur responses; first applied in the October 2005 Pakistan earthquake response; eleven global clusters, each with a designated lead agency accountable for coverage and carrying provider-of-last-resort responsibility; two formal system-wide evaluations (Stoddard et al. 2007; Steets et al. 2010) found improved gap identification and coverage at real transaction cost, with national and local actors often marginalized; revised under the 2011 IASC Transformative Agenda after the Haiti earthquake exposed scale limits",
+  impact: "IASC cluster approach adopted after the 2005 Humanitarian Response Review found weak sectoral capacity and no locus of accountability across the international system, conceived amid the Darfur response and the failures of the collaborative approach for IDPs; first applied in the October 2005 Pakistan earthquake response; eleven global clusters, each with a designated lead agency accountable for coverage and carrying provider-of-last-resort responsibility; two formal system-wide evaluations (Stoddard et al. 2007; Steets et al. 2010) found improved gap identification and coverage at real transaction cost, with national and local actors often marginalized; revised under the 2011 IASC Transformative Agenda after the Haiti earthquake exposed scale limits",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -948,15 +939,13 @@
       The formal evaluations are the reason the case can be
       told with discipline. The Phase 1 evaluation (Stoddard,
       Harmer, Haver, Salomons, and Wheeler, 2007) found early
-      gains — better identification of gaps, fewer duplications,
-      clearer sectoral leadership — purchased at real
+      gains — better identification of gaps and stronger, more predictable sectoral leadership, with no observable increase in ultimate accountability — purchased at real
       transaction cost in meetings, reporting, and staff time,
       with benefits uneven across clusters and countries. The
       Phase 2 evaluation (Steets, Grünewald, Binder, and
       colleagues, GPPi/Groupe URD, 2010), commissioned by the
       IASC across six country studies, found mostly positive
-      effects on coverage and gap identification and endorsed
-      the approach as the right one, while documenting
+      effects on coverage and gap identification and judged the benefits to already slightly outweigh the costs, while documenting
       persistent weaknesses that the evaluators declined to
       smooth: national and local actors were often marginalized
       or excluded by an architecture built around international
