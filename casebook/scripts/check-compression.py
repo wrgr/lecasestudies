@@ -20,6 +20,7 @@ Usage:
     python3 scripts/check-compression.py --write-baseline  record today's leads as accepted
     python3 scripts/check-compression.py --gate          fail only on leads NOT in the baseline
     python3 scripts/check-compression.py --phrases       flag retracted claims left in compression fields
+    python3 scripts/check-compression.py --dangling      prose citing a block or flag the case does not set
 
 `--phrases` is the second detector, added after the August 2026 spot check found the
 inverse defect: the fact-check sweep corrected the narrative bodies of Cases 19 and 155
@@ -114,6 +115,9 @@ RETRACTED = [
     (r'\bwithin a minute\b',          "response-time figure with no source"),
     (r'\bburned up\b',                "MCO: destroyed in the atmosphere or thrown to heliocentric orbit"),
     (r'not independent academic evaluation', "check the source: peer review removes the tier claim"),
+    (r'\bneither half\b',              "paired-authority: the record does not decompose the bundle"),
+    (r'\beither (?:half )?alone fails\b', "paired-authority: untested counterfactual"),
+    (r'because it was \*?paired\*?',   "paired-authority: asserts the pairing carried the result"),
 ]
 
 def compression_regions(blk):
@@ -130,6 +134,45 @@ def compression_regions(blk):
         "reflection":     blk_re(r'reflection-list:\s*\((.*?)\n  \),'),
         "approaches":     blk_re(r'approaches:\s*\((.*?)\n  \),'),
     }
+
+def dangling_mode(d):
+    """Prose that references a block or flag the case does not actually set.
+
+    Removing an `evidence-flag` leaves any sentence promising its standing
+    "future validation ongoing" render asserting something that no longer
+    happens. A phrase grep cannot see that; this check pairs each reference
+    with the presence of the field it names.
+    """
+    root = os.path.dirname(os.path.abspath(d)) or "."
+    quarantined = set(re.findall(r'"([a-z0-9-]+)"',
+                                 open(os.path.join(root, "lib", "quarantine.typ")).read()))
+    REFS = [
+        (re.compile(r'(evidence-tier flag|tier flag|flag (?:is )?rendered|rendered under the (?:case )?title|future validation ongoing)', re.I), "evidence-flag"),
+        (re.compile(r'(disclosure (?:block|is rendered)|COI (?:is )?render)', re.I), "coi"),
+        (re.compile(r'competing[- ]readings', re.I), "competing-readings"),
+        (re.compile(r'what this case does not show', re.I), "scope-limit"),
+    ]
+    hits = 0; total = 0
+    for f in sorted(glob.glob(os.path.join(d, "*.typ"))):
+        for blk in cases(open(f).read()):
+            n = re.search(r'number:\s*(\d+)', blk)
+            slug = re.search(r'slug:\s*"([^"]+)"', blk)
+            if not n or (slug and slug.group(1) in quarantined): continue
+            total += 1
+            # strip the metadata lines so only prose references remain
+            prose = re.sub(r'^\s*(evidence-flag|coi|competing-readings|scope-limit|evidence-source):[^\n]*',
+                           '', blk, flags=re.M)
+            prose = re.sub(r'\s+', ' ', prose)
+            for rx, field in REFS:
+                m = rx.search(prose)
+                if not m: continue
+                if re.search(r'^\s*' + field + r':', blk, re.M): continue
+                hits += 1
+                print(f"  ✗ Case {n.group(1):>3} {slug.group(1)[:34]:36s} prose cites {field}, field absent")
+                print(f"        {m.group(0)!r} — …{prose[max(0,m.start()-70):m.end()+70].strip()}…")
+    print(f"\n{hits} dangling reference(s) across {total} active cases.")
+    print("A reference to another case's flag is a false positive; check before editing.")
+    return 0
 
 def phrases_mode(d):
     root = os.path.dirname(os.path.abspath(d)) or "."
@@ -259,7 +302,10 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     mode = ("write" if "--write-baseline" in args
             else "gate" if "--gate" in args
-            else "phrases" if "--phrases" in args else "report")
+            else "phrases" if "--phrases" in args
+            else "dangling" if "--dangling" in args else "report")
     pos = [a for a in args if not a.startswith("--")]
     d = pos[0] if pos else "chapters"
-    sys.exit(phrases_mode(d) if mode == "phrases" else main(d, mode))
+    sys.exit(phrases_mode(d) if mode == "phrases"
+             else dangling_mode(d) if mode == "dangling"
+             else main(d, mode))

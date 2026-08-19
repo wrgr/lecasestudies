@@ -606,8 +606,12 @@
     // -- What Transferred --
     [
       CRM and CAST together define what a mature capability-engineering
-      apparatus looks like: a cultural redesign paired with a
-      continuous-evidence loop, where neither half works alone. The model
+      apparatus looks like: a cultural redesign, and sixteen years later a
+      continuous-evidence loop to steer it. What the record does not show
+      is what either contributed on its own. CRM ran without CAST from
+      1981; the 83 percent figure covers 1998–2008; and CAST and the FAA
+      credit it to a portfolio of seventy selected enhancements alongside
+      new aircraft and regulation. The model
       has been exported to surgery, firefighting, and other
       high-consequence domains, and is now the template for redesigning
       human roles in AI-augmented systems. What transferred was not the
@@ -636,9 +640,11 @@
     CRM is the canonical evidence that capability is engineerable at the
     system level, not just the individual. Tenerife was not solvable by
     hiring better pilots — only by changing the authority structure
-    inside the cockpit. The intervention worked because it was *paired*:
-    a procedural change plus a cultural change in how the procedure was
-    authorized. Either alone fails.
+    inside the cockpit. CRM paired a procedural change with a cultural
+    change in how the procedure was authorized, and CAST added the
+    evidence loop sixteen years later. The pairing is the design lesson;
+    which part carried the fatality-rate fall is not something a
+    portfolio result can separate.
   ],
   lens-approach: [
     LENS treats CRM/CAST as the anchor success case across the curriculum. LEN 1 uses it as the problem-framing exemplar; LEN 4 uses
@@ -892,9 +898,12 @@
       searchable database) with a cultural commitment (protected,
       non-punitive use). The immunity provision makes reporting the
       rational choice for the operator, and NASA's role as a neutral third
-      party makes the protection credible. Either half alone fails;
-      together they make the data flow to the institution that can act on
-      it. The credibility of the protection is what does the work — a
+      party makes the protection credible. The two were designed together and
+      have never been separated: the FAA established the program itself in
+      April 1975 and within four months signed the agreement handing
+      collection to NASA, having judged that its own enforcement role
+      would suppress the reporting the program depended on. That is design
+      reasoning on the record rather than a test of either half alone. The credibility of the protection is what does the work — a
       promise of non-punishment from the regulator itself would be doubted,
       so routing it through NASA is what makes operators trust it enough to
       report.#cn()
@@ -932,6 +941,7 @@
   ),
   references: (
     [NASA ASRS Program documentation and annual reports — system design, immunity provision, and report volume.],
+    [FAA Advisory Circular 00-46F, "Aviation Safety Reporting Program" — the program's establishment in April 1975, the FAA–NASA Memorandum of Agreement of 15 August 1975, and the immunity provisions.],
     [Reason, J. (1997), _Managing the Risks of Organizational Accidents_ — non-punitive reporting as a model (paraphrased).],
     [NASA ASRS technical reports (Connell et al.) — patterns first surfaced via ASRS data.],
     [Dekker, S. (2012), _Just Culture_ — the cultural commitment to non-punitive use.],
@@ -942,8 +952,11 @@
   le-insight: [
     ASRS is the canonical positive case for paired-intervention
     evidence architecture. The technical artifact (the reporting form
-    and the database) is paired with the cultural commitment to
-    non-punitive use. Either alone fails. Together they have produced the operational-safety dataset other domains have tried to copy.
+    and the database) shipped together with the institutional commitment
+    to non-punitive use and a neutral holder, and has never run without
+    it — so the case teaches how the pair was designed, not what either
+    half would do alone. Together they have produced the
+    operational-safety dataset other domains have tried to copy.
   ],
   lens-approach: [
     LENS uses ASRS in LEN 4 as the primary positive case for evidence architecture and in LEN 8 for institutional commitment

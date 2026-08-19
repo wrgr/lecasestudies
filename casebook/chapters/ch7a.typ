@@ -982,7 +982,9 @@
     Pair with Case 5 (Epic Sepsis delegation-without-
     validation), Case 3 (Watson for Oncology), and Case 77
     (Hybrid Human-AI Tutoring). The small-claims-tribunal
-    venue limits precedential weight; the structural reading is the one to take. ], literature-items: (
+    venue limits precedential weight; the structural reading is the one to take.
+  ],
+  literature-items: (
     [_Moffatt v. Air Canada_, 2024 BCCRT 149 (Feb 14 2024)],
     [Solaiman (2024), _CLSR_ — generative AI and law of agency synthesis],
     [Paired Case 5 (Epic Sepsis) delegation-without-validation form],

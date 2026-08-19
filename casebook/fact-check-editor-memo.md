@@ -185,3 +185,53 @@ the page counts above come from them.
   hard-coded colour values bypass the theme's grayscale switch, so gold and teal flatten to
   gray 170 and 162 and every colour distinction in all 93 diagram placements is invisible in the
   printed book.
+
+
+---
+
+## 2c. The two remaining decomposition claims — fixed, August 2026
+
+The corpus-wide lesson audit found the retracted decomposition claim surviving in exactly two
+more cases, both in the printed volume. Both are now fixed, on different grounds.
+
+**Case 117 (CRM & CAST) — a fact error.** The case said "a cultural redesign paired with a
+continuous-evidence loop, where *neither half works alone*", and its `le-insight` said "The
+intervention worked *because it was paired*." Its own body says "Sixteen years later the
+Commercial Aviation Safety Team (CAST) added…", and its `year:` field is "1981 – present". CRM
+began at United in 1981 (from the NTSB recommendation on United 173); CAST was founded in 1997.
+CRM ran sixteen years without CAST, so "neither half works alone" is refuted by the case's own
+timeline. Rewritten to state the sequence and the limit: the 83 percent figure covers 1998–2008
+and CAST and the FAA credit it to a portfolio of seventy enhancements alongside new aircraft and
+regulation, which no source decomposes.
+
+**Case 119 (ASRS) — an untested counterfactual.** The case said "Either half alone fails." ASRS
+began operating in April 1976 with the immunity provision already in place, so there has never
+been an ASRS-without-immunity period against which to test either half. Replaced with the
+documented design history, which is stronger than the claim it displaces: the FAA established the
+program itself on 30 April 1975 and signed the Memorandum of Agreement handing collection to NASA
+on 15 August 1975, having judged that its own enforcement role would suppress the reporting the
+program depended on. FAA AC 00-46F added to the reference list to carry the new dates.
+
+**Checked and sound, recorded so it is not reopened.** Case 169 (Fukushima) says the record
+"establishes that the INPO pattern is not self-executing." That is a negative claim, and one
+counterexample is sufficient to support it. No change.
+
+`competencies.md` §2 and §2.3 describe these interventions as pairing a measurement with an
+authorized action; that survives both edits unchanged, because it asserts what the successful
+cases had rather than what either half does alone.
+
+### Corpus-wide lesson audit — result
+
+| Check across all 191 active cases | Result |
+|---|---|
+| Lesson apparatus complete on every case | 191 / 191, no gaps |
+| `le-insight` with no affirmative claim | 0 |
+| Decomposition / isolation claims | 0 after these two fixes |
+| Hard causal verbs | 1 (Case 169, sound) |
+| "The clearest / canonical case for X" claims | 60, with **zero** subject collisions |
+| `le-insight` ungrounded in its own body | 0 substantive |
+
+`check-compression.py` gained two permanent modes from this work: `--phrases` (retracted
+phrasings anywhere in the compression set) and `--dangling` (prose citing an evidence flag, COI
+block, competing-readings or scope-limit the case does not actually set — the defect that let two
+cases keep promising a render after their flag was removed).
