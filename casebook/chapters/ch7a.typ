@@ -265,7 +265,7 @@
     "Community contestation surfaces quickly: feasibility, leadership breadth, no scope-revision process",
     "EU commissions mediation and restructuring; scope re-shaped around infrastructure platforms, not simulation",
     "Project runs to 2023 conclusion; founding framing is not what was delivered",
-    "Pair with BRAIN (Case 198): same era and ambition, opposite governance models, opposite trajectories — governance is the variable",
+    "Pair with BRAIN (Case 198): same era and ambition, opposite governance models, opposite trajectories — a contrast of two, not a controlled one",
   ),
   approaches: (
     during: (

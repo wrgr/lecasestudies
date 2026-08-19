@@ -49,6 +49,64 @@ grounds the corrected prose now contradicts.
 is still open. For 154 the flag stays and the rationale is rewritten. For 181, 190 and 194 the
 tier is arguably too weak for the evidence now in hand.
 
+### Editor ruling, August 2026 — resolved
+
+**Peer review removes the weak-evidence flag.** Where the underlying source turned out to be
+peer-reviewed, the `evidence-flag` comes off and the caveat that actually mattered is restated
+in the prose in its own right, rather than riding on a tier flag that no longer describes the
+sourcing. Applied to:
+
+| Case | Flag retired | Hedge now stated in its own terms |
+|---|---|---|
+| 18 | `preprint-tier` | Journal-published (medRxiv item is its preprint); the study stops at L1–L2 and does not reach L3 behaviour or L4 outcomes. |
+| 44 | `preprint-tier` | Framework and transparency analyses are peer-reviewed but recent, and none follows the approved devices far enough to report outcome durability. |
+| 71 | `preprint-tier` | Peer-reviewed at IEEE CSEE&T 2025; one cohort at one university, unreplicated. |
+| 76 | `preprint-tier` | Synthesis peer-reviewed in *TOCHI* 31(1) Art. 8 (arXiv item is its author preprint); open question is whether the genre takes hold across the LE community. |
+| 154 | `practice-synthesis-tier` | Peer-reviewed HFES proceedings paper; it reports a **process and no outcome**, and generalization beyond the studied subsystem stays open. |
+| 194 | `practice-synthesis-tier` | The load-bearing self-critique is peer-reviewed text in Kattel & Mergel; open question is whether the generational-replacement plans carry through. |
+| 202 | `practice-synthesis-tier` | Principles are peer-reviewed; the implementation literature behind them is still thin. |
+
+**18 and 202 were not on the list above** — both were found during this pass carrying
+`evidence-source: "peer-reviewed"` and a weak-evidence flag simultaneously, which is the same
+defect stated on the case's own face. They are fixed on the same ruling.
+
+The standing *"future validation ongoing"* sentence is the flag's language, so it was removed
+wherever the flag was removed and replaced with the specific outstanding item.
+
+**Still open — not covered by this ruling.** Cases **181** (HBP) and **190** (Cruise) keep
+`journalism-tier`. Their sourcing is documented primary record rather than peer review, so the
+ruling does not reach them; whether the tier is too weak for the evidence in hand remains the
+editor's call.
+
+**Related fix.** Case 181's `beats[5]` read *"opposite governance models, opposite trajectories —
+governance is the variable"* — an N-of-2 isolation claim on a case that carries a binding
+evidence-tier flag. Rewritten to "a contrast of two, not a controlled one."
+
+---
+
+## 2b. Compression fields left asserting claims the bodies retract
+
+The August 2026 spot check read Cases 19, 98, 154 and 155 in their corrected state and found the
+sweep had landed **unevenly inside each case**: the narrative body was corrected and the fields
+around it were not, so a case argued against itself. Case 155's Evidence section said *"No study
+isolates the cord's marginal contribution"* while its `beats` still said *"Toyota's protected
+authority is the variable"*; Case 19 admitted the trial *"could not decompose"* the bundle while
+its `le-insight` and pull quote still said *"Neither worked without the other."*
+
+Fixed in this pass across `summary`, `beats`, `le-insight`, `lens-approach`, `quote`,
+`reflection-list` and `approaches` for Cases 19, 98 and 155, plus Case 155's `references` (Adler
+1993 and the NASA/NHTSA 2011 review, both load-bearing for the corrected Evidence section and the
+`scope-limit`, were absent) and its `lens-anchor` (`D3/PT3` → `D3+D4/PT3`).
+
+`scripts/check-compression.py --phrases` now greps the whole compression set for the phrasings
+the sweep retired. It produces leads, not verdicts — "stop the line" is correct prose in a case
+about stopping a line — but it turns this class of defect into something a reviewer can be handed
+a worklist for. Current corpus state: 7 of 191 cases flagged, all triaged as legitimate usage.
+
+**Open ruling:** the `ch5b.typ` chapter epigraph still reads *"The cord was there to be pulled,
+and pulling it was rewarded"* — the folk framing at chapter level, over a chapter whose lead case
+now retracts it.
+
 ---
 
 ## 3. The "cultural half" framing

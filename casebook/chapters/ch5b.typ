@@ -27,7 +27,6 @@
   kind: "intervention",
   scale: "small",
   evidence-source: "program-report",
-  evidence-flag: "practice-synthesis-tier",
   induced-anchor: "7.1",
   lens-anchor: "D1/PT1",
   leo-anchor: "LEO-1, LEO-4",
@@ -42,10 +41,13 @@
     upgrades. The case here is a specific method: for a paired plant-process-computer and turbine-control-system upgrade, the operators are trained on the new interfaces through a stand-alone program built with the training organization, and the validation scenarios are reviewed by trainers and procedure writers to confirm the operating procedures need no modification. The retraining is planned into the cutover, not avoided by it. That specification is the
     small-tier complement to the big-tier LWRS program case the
     corpus also tracks: the program produces specific design-V\&V
-    case studies, not only program-level claims. The evidence base
-    is INL technical reporting and OSTI-hosted conference papers,
-    not independent academic evaluation; the tier flag is rendered
-    under the title. The paper reports no outcome: it states the process was then being implemented at a US utility with four plants slated for modernization, with lessons learned to be published later. Future validation ongoing.
+    case studies, not only program-level claims. The load-bearing
+    hedge is not the sourcing — the paper is peer-reviewed, published
+    in the Human Factors and Ergonomics Society's annual-meeting
+    proceedings — but what it reports. It reports a process and no
+    outcome: it states the process was then being implemented at a US
+    utility with four plants slated for modernization, with lessons
+    learned to be published later.
   ],
   sections: (
     [
@@ -80,15 +82,15 @@
       coordination the small-tier evidence does not roll up.#cn()
     ],
     [
-      The evidence-tier flag is load-bearing. The study sits in
-      INL technical reporting and OSTI-hosted conference papers,
-      not in independent academic evaluation. The paper reports a process rather than an outcome, conditional on the specific subsystems, plant, and operator population; whether
+      What has to stay visible is what the paper does not contain.
+      The sourcing is sound — a peer-reviewed HFES proceedings paper,
+      alongside the program's own technical reporting — but it reports
+      a process rather than an outcome, conditional on the specific subsystems, plant, and operator population; whether
       the finding generalizes to other subsystems in the same
       plant, to other plants in the fleet, or to other digital
       control products is the open question that the LWRS program
-      itself acknowledges and continues to study. Future
-      validation will continue as the program publishes follow-on
-      reports.#cn()
+      itself acknowledges and continues to study, and it stays open
+      until the program publishes the follow-on results.#cn()
     ],
     [
       What the case adds at the LENS layer is the small-tier
@@ -96,7 +98,7 @@
       transition. The Domain-1 frame applies: the human-factors
       analysis of the operator's task under the digital cutover
       is a systems-analysis artifact that the regulatory regime
-      consumes as part of its acceptance decision. The Domain-3
+      consumes as part of its acceptance decision. The Domain-4
       frame applies because the V\&V evidence is itself the
       measurement instrument the program rests on. The case is a
       paired small-tier companion to Case 116 (Eurocat ATM) and
@@ -108,7 +110,7 @@
     "INL LWRS program produces per-subsystem human-factors V&V studies as small-tier deliverables",
     "PPC and turbine-control upgrade: stand-alone operator training program, scenarios reviewed to confirm procedures need no modification",
     "Small-tier per-subsystem evidence is the building block of the program-level fleet-modernization claim",
-    "Evidence tier: INL technical reporting + OSTI conference papers; generalization to other subsystems open",
+    "The paper reports a process, not an outcome; generalization to other subsystems, plants, and products stays open",
   ),
   approaches: (
     during: (
@@ -118,7 +120,7 @@
     ),
     after: (
       [Roll the per-subsystem V&V studies into the program-level fleet-modernization safety case deliberately; the program-level claim cannot rest on un-rolled-up small-tier evidence.],
-      [Carry the practitioner-tier flag into any downstream citation; the small-tier finding is conditional on the studied subsystem and population.],
+      [Carry the process-not-outcome limit into any downstream citation; what the paper specifies is a method, conditional on the studied subsystem and population.],
       [Track durability of the low-retraining finding under personnel rotation, procedure updates, and subsequent upgrades; the cutover is not finished when the digital system is in service.],
     ),
   ),
@@ -131,15 +133,14 @@
   quote: [The program-level claim cannot rest on un-rolled-up small-tier evidence. The per-subsystem V&V is the building block of the modernization safety case.],
   quote-source: "Editors' synthesis of INL LWRS reporting.",
   le-insight: [
-    The INL turbine-control paper is a small-tier C7 verification-as-deliverable case inside the LWRS nuclear-modernization program: the human-factors V\&V process carries the cutover, training included. Evidence is INL
-    technical reporting and OSTI conference papers, not
-    independent academic evaluation; the generalization beyond
-    the studied subsystem is the open question. Future
-    validation ongoing.
+    The INL turbine-control paper is a small-tier C7 verification-as-deliverable case inside the LWRS nuclear-modernization program: the human-factors V\&V process carries the cutover, training included. The paper reports
+    the process and not its outcome, and the generalization beyond the
+    studied subsystem is the open question the program itself keeps
+    open.
   ],
   lens-approach: [
     INL turbine-control upgrade is the C7 small-tier
-    transition case (induced 7.1 and 3.1; LENS D1/PT1).
+    transition case (induced 7.1; LENS D1/PT1).
     LENS uses it in Domain 1 (Systems Analysis) for LEO-1 —
     the operator-task analysis under the digital cutover is
     the systems-analysis artifact the regulator consumes —
@@ -157,7 +158,7 @@
   reflection-list: (
     [Identify a control-system upgrade in your context whose cutover burden on the operator is the decisive constraint. What is the per-subsystem V&V deliverable that would settle the burden question, and what is its scope?],
     [Specify the rollup logic from per-subsystem V&V evidence to a program-level modernization claim. The INL pattern teaches because the small-tier studies are the building blocks of a fleet-level claim — what would the equivalent be in your context?],
-    [The case is INL technical reporting, not independent academic evaluation. What additional evidence (independent audit, multi-plant replication, durability tracking under personnel rotation) would you require before treating the low-retraining finding as generalizable?],
+    [The paper specifies a process and reports no outcome from it. What evidence (measured retraining burden, multi-plant replication, durability tracking under personnel rotation) would you require before treating the low-retraining expectation as a finding at all?],
   ),
   courses: ("LEN 1", "LEN 3", "LEN 6"),
 )
@@ -179,15 +180,17 @@
     station's andon and calls the team leader, and only a problem still
     unresolved when the vehicle reaches the end of the work position stops
     the line. Most activations stop nothing. The cord is trivially cheap;
-    the guaranteed response behind it is the design. The case is decisive for capability engineering because when
-    American automakers copied the cord in the 1980s and 1990s, workers
-    were too afraid to pull it: the tool was present, the empowerment was
-    not. Toyota's system works because it pairs the mechanism with a
-    culture of psychological safety, fast supervisor response, no-blame
-    problem-solving, and the codified "Five Whys" method. When the line
-    stops at Toyota, the team treats it as a learning opportunity. The
-    Andon Cord is the manufacturing twin of the Keystone nurse-authority
-    intervention (Case 19).
+    the guaranteed response behind it is the design. What American
+    automakers imported in the 1980s and 1990s was the cord. What they
+    did not import was the response behind it: team leaders staffed on
+    the floor at a ratio that leaves them free to answer inside a cycle,
+    buffers thin enough that a defect cannot be parked downstream, and
+    standardized work to judge the anomaly against. Toyota's own accounts
+    add a cultural layer — no-blame root-cause analysis and the codified
+    "Five Whys" — and the two are entangled in every plant where the
+    system works. No study separates them. The Andon Cord is the
+    manufacturing counterpart of the Keystone nurse-authority
+    intervention (Case 19), and carries the same evidentiary limit.
   ],
   sections: (
     // -- Background --
@@ -219,16 +222,18 @@
     ],
     // -- How It Worked --
     [
-      The cord works because Toyota pairs the mechanism with a cultural
-      system: psychological safety, a rapid supervisor-response protocol
-      when the cord is pulled, no-blame root-cause analysis, and the
-      codified "Five Whys" method. A stop is treated as a learning
-      opportunity rather than a failure, so workers actually use it — the
-      technical artifact and the protected authority are inseparable. The
-      rapid supervisor response is what makes the protection credible in
-      practice: a worker who pulls the cord sees help arrive rather than
-      blame, so the no-blame norm is demonstrated each time, not just
-      asserted.#cn()
+      What sits behind the cord is a set of conditions a plant has to be
+      funded to hold. Team leaders are staffed on the floor at a ratio
+      that leaves them free to answer within a takt cycle; a
+      fully-utilised responder turns the cord into a doorbell. Buffers
+      between stations are kept thin, so a defect cannot be parked
+      downstream and the signal has to be acted on. Standardized work
+      gives the anomaly something to be measured against. Toyota's
+      accounts add a cultural layer on top of these — no-blame
+      root-cause analysis and the codified "Five Whys" — and
+      practitioners generally credit it. In every plant where the system
+      works the structural conditions and the cultural ones are present
+      together, and the record does not separate them.#cn()
     ],
     // -- The Evidence --
     [
@@ -248,24 +253,24 @@
     ],
     // -- What Transferred --
     [
-      The Andon Cord is the foundational evidence that authority
-      interventions and technical artifacts are inseparable — the cord
-      means nothing without the protected authority to pull it, and vice
-      versa. It is the manufacturing counterpart of the Keystone nurse-stop
-      authority (Case 19): same logic, different industry, same
-      load-bearing element, and the same failure mode when only the
-      artifact is copied. That the identical pattern recurs across
-      manufacturing and medicine is what elevates it from a Toyota practice
-      to a design principle: wherever the person who sees the problem lacks
-      the standing to stop, copying the tool alone reproduces the failure.#cn()
+      What travels is not the cord. It is a short list of things a plant
+      can be funded to hold or refused: a responder ratio with deliberate
+      slack, buffers thin enough that a signal cannot be absorbed,
+      standardized work to compare against, and employment terms under
+      which surfacing a problem is not self-harm. Each is a line item
+      somebody approves or cuts, which is what makes the transfer
+      question answerable before a cord is hung. Keystone (Case 19) is
+      the medical case with the same shape and the same limit — a
+      reporting channel paired with a guaranteed response, and no trial
+      able to say which half carried the result.#cn()
     ],
   ),
   beats: (
     "The cheapest moment to fix a defect is when the seer has least standing to halt",
-    "Toyota installed a pull-cord letting any worker signal a problem and stop the line",
-    "Mechanism paired with psychological safety, rapid supervisor response, no-blame analysis, and Five Whys",
-    "American copies failed because workers feared pulling it; Toyota's protected authority is the variable",
-    "Authority interventions and technical artifacts are inseparable; the manufacturing twin of Keystone nurse-stop",
+    "Fixed-position stop lets any worker summon the team leader; the line halts only if the problem outlives the cycle",
+    "Behind the signal: team-leader staffing with slack, thin buffers, standardized work, and no-blame root-cause analysis",
+    "American copies imported the cord without the response behind it; no study isolates which half carried the result",
+    "A signalling channel is worth what is funded to answer it; Keystone (Case 19) is the medical case with the same limits",
   ),
   references: (
     [Liker, J. (2020), _The Toyota Way_ (2nd ed.) — the andon cord, the cultural pairing, and the American imitation (paraphrased).],
@@ -273,23 +278,30 @@
     [Shingo, S. (1989), _A Study of the Toyota Production System_ — the technical mechanism.],
     [Rother, M. (2009), _Toyota Kata_ — the routines that sustain the practice.],
     [Womack & Jones (1996), _Lean Thinking_ — diffusion and the limits of surface imitation.],
+    [Adler, P. (1993), "Time-and-Motion Regained," _HBR_ 71(1) — NUMMI observed from the floor; the rehired workforce, the team structure, and the standardized-work practice that changed alongside the signalling system.],
+    [NASA Engineering and Safety Center / NHTSA (2011), _Technical Assessment of Toyota Electronic Throttle Control Systems_ — the unintended-acceleration review underlying the scope limit.],
   ),
-  quote: [When American manufacturers copied the andon cord, workers were too afraid to pull it.],
-  quote-source: "Paraphrasing Liker, The Toyota Way (2nd ed., 2020)",
+  quote: [The cord costs almost nothing. Everything that makes it work — a responder with time to answer, a buffer thin enough that the signal cannot be absorbed — is the part that costs.],
+  quote-source: "Editors' synthesis",
   le-insight: [
-    The Andon Cord is the foundational evidence that authority
-    interventions and technical artifacts are inseparable. The cord
-    means nothing without the protected authority to pull it. The
-    protected authority means nothing without the cord to act through.
-    The pair is irreducible — and that irreducibility is the LENS
-    co-optimization commitment in physical form.
+    The andon is a ladder, not a switch: a signal engineered to cost
+    almost nothing to send, a responder staffed to answer inside the
+    cycle, and a bounded consequence if the problem outlives it. Each
+    rung is funded or cut separately, and a channel whose response is
+    unfunded is a doorbell. That the signal and the response have to be
+    designed together is the conclusion the record supports. Which of
+    them carried Toyota's outcome is not something any study here
+    settles.
   ],
   lens-approach: [
-    LENS uses the Andon Cord in LEN 2 as the foundational example of
-    paired technical-cultural intervention, in LEN 8 to discuss
-    cross-domain transfer (and why imitation without the cultural half
-    fails), and in LEN 10 as a studio exemplar of minimal-artifact
-    design.
+    LENS uses the Andon Cord in LEN 2 as the worked example of a
+    signalling channel designed together with its response, in LEN 8 for
+    cross-domain transfer — where the student's task is to price the
+    responder staffing, the buffer policy, and the employment terms
+    before judging whether the mechanism can move — and in LEN 10 as a
+    studio brief in which the artifact is the easy half: the design work
+    is the response and its cost curve, with the falsification test
+    specified before anything is built.
   ],
   literature-items: (
     [Liker (2020), _The Toyota Way_],
@@ -297,20 +309,20 @@
     [Rother, _Toyota Kata_ (2009)],
   ),
   reflection-list: (
-    [Identify a technical artifact in your domain whose effectiveness depends entirely on a protected authority. Is the authority protected, or only declared?],
-    [American manufacturers copied the cord without the authority. What is the equivalent surface-level imitation you have observed in your domain, and what was missing?],
-    [Toyota's no-blame norm is demonstrated each time help arrives within a minute of a pull rather than blame. Design the visible, repeated response that would prove a protected authority is real in your domain rather than merely written into policy.],
+    [Identify a signalling channel in your domain — a hotline, a flag, a stop-work right. What does using it cost the person who uses it, in seconds and in social exposure? Cut that cost by an order of magnitude and name what you had to change to do it.],
+    [Name who is structurally free to answer that signal inside the window in which an answer still matters, and what their utilisation rate is. If nobody is, the channel is a doorbell; specify the staffing that would make it a channel.],
+    [Toyota publishes its own pull counts and no external audit distinguishes real defect signals from routine minor calls. Design the falsification test for your channel: what observation would show it is being used ritually rather than substantively, and what would you do on seeing it?],
   ),
   approaches: (
     during: (
-      [Place the authority to stop exactly where the problem is first visible — with the front-line worker — resolving the contradiction that the cheapest moment to fix a defect is when the seer has the least standing.],
-      [Pair the cheap artifact with the protected authority deliberately, recognizing the cord costs almost nothing while the authority it confers is the actual design.],
-      [Stand up a rapid supervisor-response protocol so that pulling the cord brings help, not blame, making the no-blame norm credible from the first activation.],
+      [Put the signal where the problem is first visible and engineer its cost down to near zero — under fixed-position stop the first rung summons help rather than halting production, which is what makes it usable by the person with the least standing.],
+      [Budget the response before installing the signal. The responder ratio with deliberate slack is the expensive half and the one that decides whether the channel works.],
+      [Keep buffers thin enough that a defect cannot be parked downstream, so the signal has to be acted on rather than absorbed.],
     ),
     after: (
       [Sustain the pairing with no-blame root-cause analysis and a codified method (the Five Whys) so each stop becomes embedded learning rather than a one-off interruption.],
-      [Demonstrate the protected authority repeatedly — help arriving within a minute — so the norm is shown each time rather than merely asserted in policy.],
-      [When transferring the model, export the protected authority and response culture, not just the artifact, since copying the tool alone reproduces the failure mode.],
+      [Treat the activation rate as a health indicator in which low is bad, and watch it under schedule pressure — a rate that falls when the quarter tightens is the channel closing.],
+      [Before transferring the model, price the responder staffing, the buffer policy, and the employment terms. Those are the line items a copy drops silently.],
     ),
   ),
   courses: ("LEN 10", "LEN 2", "LEN 8"),
@@ -324,7 +336,7 @@
   scale: "big",
   evidence-source: "practitioner",
   induced-anchor: "4.1",
-  lens-anchor: "D3/PT3",
+  lens-anchor: "D3+D4/PT3",
   leo-anchor: "LEO-3",
 )
 

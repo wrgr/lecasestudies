@@ -19,6 +19,14 @@ Usage:
     python3 scripts/check-compression.py                 report all leads
     python3 scripts/check-compression.py --write-baseline  record today's leads as accepted
     python3 scripts/check-compression.py --gate          fail only on leads NOT in the baseline
+    python3 scripts/check-compression.py --phrases       flag retracted claims left in compression fields
+
+`--phrases` is the second detector, added after the August 2026 spot check found the
+inverse defect: the fact-check sweep corrected the narrative bodies of Cases 19 and 155
+and left the retracted claim standing in the fields around them, so the case argued
+against itself. It greps the whole compression set for phrasings the sweep retired. Like
+the quantity check it produces leads, not verdicts — "stop the line" is correct prose in
+a case about stopping a line.
 
 `--gate` is the build mode. The existing leads are recorded in compression-baseline.txt
 and do not block; a case that starts drifting after that does. That way the check
@@ -91,6 +99,62 @@ def field(t, name, block=False):
     return m.group(1) if m else ""
 
 BASELINE = "compression-baseline.txt"
+
+# Claims the August 2026 fact-check sweep retracted in the body. Each was found still
+# asserted in a compression field after the body had been corrected.
+RETRACTED = [
+    (r'\bstop the line\b',            "andon: the pull summons; the stop is the escalation"),
+    (r'\binseparable\b',              "paired-authority: the trials do not decompose the bundle"),
+    (r'\birreducible\b',              "paired-authority: ditto"),
+    (r'\bneither worked without\b',   "paired-authority: ditto"),
+    (r'\btoo afraid\b',               "andon: the copies lacked the funded response, not the nerve"),
+    (r'\bthe empowerment was not\b',  "andon: ditto"),
+    (r'\bcultural half\b',            "unfalsifiable; name the fundable conditions instead"),
+    (r'\bis the variable\b',          "no study isolates a single variable in these bundles"),
+    (r'\bwithin a minute\b',          "response-time figure with no source"),
+    (r'\bburned up\b',                "MCO: destroyed in the atmosphere or thrown to heliocentric orbit"),
+    (r'not independent academic evaluation', "check the source: peer review removes the tier claim"),
+]
+
+def compression_regions(blk):
+    """The fields that restate the body without being derived from it."""
+    def blk_re(p):
+        m = re.search(p, blk, re.S); return m.group(1) if m else ""
+    return {
+        "impact":         field(blk, "impact"),
+        "summary":        field(blk, "summary", True),
+        "le-insight":     field(blk, "le-insight", True),
+        "lens-approach":  field(blk, "lens-approach", True),
+        "beats":          blk_re(r'beats:\s*\((.*?)\n  \),'),
+        "quote":          blk_re(r'quote:\s*\[(.*?)\],\n\s*quote-source'),
+        "reflection":     blk_re(r'reflection-list:\s*\((.*?)\n  \),'),
+        "approaches":     blk_re(r'approaches:\s*\((.*?)\n  \),'),
+    }
+
+def phrases_mode(d):
+    root = os.path.dirname(os.path.abspath(d)) or "."
+    quarantined = set(re.findall(r'"([a-z0-9-]+)"',
+                                 open(os.path.join(root, "lib", "quarantine.typ")).read()))
+    hits = 0; total = 0
+    for f in sorted(glob.glob(os.path.join(d, "*.typ"))):
+        for blk in cases(open(f).read()):
+            n = re.search(r'number:\s*(\d+)', blk)
+            slug = re.search(r'slug:\s*"([^"]+)"', blk)
+            if not n or (slug and slug.group(1) in quarantined): continue
+            total += 1
+            found = []
+            for fname, txt in compression_regions(blk).items():
+                for pat, note in RETRACTED:
+                    if re.search(pat, txt, re.I):
+                        found.append((fname, pat.replace(chr(92)+"b", ""), note))
+            if found:
+                hits += 1
+                print(f"  ~ Case {n.group(1):>3} {slug.group(1)[:38]:40s}")
+                for fname, pat, note in found:
+                    print(f"        {fname:<14s} {pat:<38s} {note}")
+    print(f"\n{hits} of {total} cases carry a retracted phrasing in a compression field.")
+    print("Leads for triage, not defects: the same words can be correct prose elsewhere.")
+    return 0
 
 def diagram_strings(root):
     """Human-facing text of each named diagram, keyed by dgm-name.
@@ -185,6 +249,8 @@ def main(d="chapters", mode="report"):
 if __name__ == "__main__":
     args = sys.argv[1:]
     mode = ("write" if "--write-baseline" in args
-            else "gate" if "--gate" in args else "report")
+            else "gate" if "--gate" in args
+            else "phrases" if "--phrases" in args else "report")
     pos = [a for a in args if not a.startswith("--")]
-    sys.exit(main(pos[0] if pos else "chapters", mode))
+    d = pos[0] if pos else "chapters"
+    sys.exit(phrases_mode(d) if mode == "phrases" else main(d, mode))

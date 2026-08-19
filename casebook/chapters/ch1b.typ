@@ -1160,7 +1160,6 @@
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
-  evidence-flag: "preprint-tier",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2, LEO-4, LEO-5",
@@ -1181,12 +1180,10 @@
     cross-listed with the corporate / workforce L&D cluster
     (Cases 79, 65, 83, 70) and with the non-US/UK/EU
     geographic-coverage gap (Cases 93, and the cases in the
-    later supplemental batches). Evidence-tier flag is
-    preprint-tier: the medRxiv version is preprint and the PMC
-    version is journal-published — the editor's citation choice
-    should be carried explicitly. Future validation on whether
-    L1–L2 knowledge gains translate to L3 behavior change or
-    L4 patient outcomes remains ongoing.
+    later supplemental batches). The study is journal-published
+    (the medRxiv item is its preprint), so the open question is
+    not review but reach: whether L1–L2 knowledge gains translate
+    to L3 behavior change or L4 patient outcomes is untested.
   ],
   sections: (
     [
@@ -1239,11 +1236,11 @@
       across the deployment region.#cn()
     ],
     [
-      The evidence-tier flag is preprint-tier: the medRxiv
-      version is the preprint; the PMC version is the
-      journal-published article. The editor's citation choice
-      between the two should be carried explicitly in the
-      printed case. The LENS teaching point is the
+      The sourcing is settled: the medRxiv version is the
+      preprint and the PMC version is the journal-published
+      article, and the case cites the published one. What is not
+      settled is whether the measured gains reach behaviour or
+      outcomes. The LENS teaching point is the
       cross-listed pair with the corporate / workforce L&D
       cluster (Cases 79, 65, 83, 70) and the non-US/UK/EU
       cluster (Cases 93). The subobjective *Judgment under
@@ -1256,7 +1253,7 @@
     "2023 study: pre/post assessments across knowledge and self-confidence domains showed mean increases regardless of modality (in-person, virtual, blended)",
     "Kirkpatrick L1–L2 limitation explicit: outcomes are knowledge and self-rated confidence, not L3 behavior change or L4 patient outcomes (Case 79)",
     "Rare real-world cross-country modality comparison at meaningful scale; multi-country scope limits single-country confounding",
-    "Preprint-tier flag: medRxiv preprint and PMC published; editor citation choice carried explicitly; future validation on L3/L4 ongoing",
+    "Journal-published (medRxiv item is its preprint); L3 behaviour and L4 outcome measurement remain untested",
   ),
   approaches: (
     during: (
@@ -1267,7 +1264,7 @@
     after: (
       [Pair with Case 93 (SkillsFuture) as the workforce-capability counterparts at national- and multi-country scale; together they teach what L&D measurement looks like in non-US/UK/EU settings with the evidence-tier honesty intact.],
       [Use the subobjective *Judgment under inadequate evidence* (4.4): the study is the strongest evidence the field has on modality choice in this context, and the practitioner has to trade larger in-person gains against wider online reach on L1–L2 evidence while L3/L4 evidence develops.],
-      [Carry the preprint-tier flag honestly: the medRxiv preprint and the PMC published article are both citable; future validation requires confirmatory replication and L3/L4 outcome measurement.],
+      [Carry the measurement limit honestly: the study is journal-published, and what it does not establish is L3 behaviour change or L4 patient outcomes; confirmatory replication is the outstanding step.],
     ),
   ),
   references: (
@@ -1282,10 +1279,8 @@
     PEPFAR's 16-country modality comparison is the L&D
     evaluation pattern in global health: mean L1–L2 gains
     across all modalities, with the Kirkpatrick limitation
-    (Case 79) explicit. Evidence-tier flag is preprint-tier
-    — both the medRxiv preprint and the PMC published
-    version are citable — and the L3 / L4 questions remain
-    open. Future validation is ongoing.
+    (Case 79) explicit. The study is journal-published; the
+    L3 and L4 questions are what remain open.
   ],
   lens-approach: [
     PEPFAR is the global-health workforce-capability case
@@ -1307,7 +1302,7 @@
   reflection-list: (
     [Identify a training program in your context that was forced to switch modality under disruption (COVID, budget constraint, geographic dispersion). What evidence would you have needed at the time to make the modality decision well, and at which Kirkpatrick level was the available evidence?],
     [Specify the L3 / L4 measurement architecture you would build to extend the PEPFAR study into behavior-change and patient-outcome evidence — what data sources, what cadence, what linkage between training cohort and clinical outcomes.],
-    [The case is preprint-tier: both the medRxiv preprint and the PMC published version are citable. What additional confirmatory evidence — replication in different country sets, L3 / L4 follow-up studies, peer-reviewed meta-analysis — would you require before treating the modality trade-off as settled for program-design decisions?],
+    [The case is journal-published and stops at L1–L2. What additional confirmatory evidence — replication in different country sets, L3 / L4 follow-up studies, peer-reviewed meta-analysis — would you require before treating the modality trade-off as settled for program-design decisions?],
   ),
   courses: ("LEN 2", "LEN 4", "LEN 7"),
 )
@@ -1378,12 +1373,13 @@
     ],
     // -- What Transferred --
     [
-      Keystone became the clearest evidence in healthcare that a technical
-      intervention without an authority change produces no durable
-      improvement — and vice versa. The model was packaged as the AHRQ CUSP
-      toolkit, adopted in more than forty states, and replicated
-      internationally, establishing the design principle of intervening in
-      matched technical-and-cultural pairs. Packaging the approach as a
+      What Keystone established was not which component worked but that
+      the bundle worked and travelled. The model was packaged as the AHRQ
+      CUSP toolkit, adopted in more than forty states, and replicated
+      internationally — the checklist, the nurse-stop authorization, the
+      line cart, the daily goals sheet, and the monthly infection
+      feedback moving together, because that is the unit the evidence
+      covers. Packaging the approach as a
       reusable toolkit was itself part of what transferred — it turned a
       single project's success into something other institutions could adopt
       without rediscovering the load-bearing role of the authority change.#cn()
@@ -1392,27 +1388,27 @@
   beats: (
     "Central-line infections persisted because nurses lacked procedural path to intervene across the authority gradient",
     "Pronovost paired a five-item sterile checklist with a required nurse stop authority",
-    "Requirement, not permission, plus an impersonal trigger made the stop usable against senior physicians",
+    "An institutional warrant rather than a personal one, triggered by a missed item rather than a judgement",
     "CLABSI rates fell near zero across 103 ICUs; effect sustained at ten years",
-    "Packaged as the AHRQ CUSP toolkit, replicated in forty states and internationally as paired design",
+    "Packaged as the AHRQ CUSP toolkit and replicated in forty states and internationally as a whole bundle",
   ),
   references: (
     [Pronovost, P. et al. (2006), "An Intervention to Decrease Catheter-Related Bloodstream Infections in the ICU," _NEJM_ 355 — the trial and the near-zero result.],
     [Pronovost & Vohr (2010), _Safe Patients, Smart Hospitals_ — the checklist-plus-nurse-authority pairing (paraphrased).],
     [Pronovost, P. et al. (2016), \"Sustaining Reductions in CLABSI in Michigan ICUs: A 10-Year Analysis,\" _Am J Med Qual_ 31(3):197–202 — the effect sustained through 2013.],
     [Agency for Healthcare Research and Quality, CUSP toolkit — dissemination across states.],
-    [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — the authorization, not the list, as the active ingredient.],
+    [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — the critique: the Keystone result cannot be attributed cleanly to the checklist, and the bundle's active ingredient is not established.],
   ),
-  quote: [The checklist was the technical intervention. The nurses' authority to enforce it was the cultural intervention. Neither worked without the other.],
-  quote-source: "Paraphrasing Pronovost & Vohr, Safe Patients, Smart Hospitals, 2010",
+  quote: [The checklist gave the nurse an impersonal reason to stop: a missed item rather than a judgement about the physician.],
+  quote-source: "Editors' synthesis of Pronovost & Vohr, Safe Patients, Smart Hospitals, 2010",
   le-insight: [
-    Keystone is the clearest evidence in healthcare that a technical
-    intervention without authority intervention produces no durable change,
-    and authority intervention without a technical artifact produces no
-    measurable change. Both are necessary. The empirical record of
-    Keystone is the strongest available argument for designing interventions
-    as *pairs* — and treating the cultural half as engineering, not
-    aspiration.
+    Keystone is the strongest healthcare evidence that a protocol and the
+    authority to enforce it should be designed and shipped together — and
+    the clearest demonstration of what a bundled trial cannot tell you
+    afterwards. The result is large, durable, and widely replicated; it
+    does not decompose. Treating the cultural half as engineering rather
+    than aspiration is the commitment the case supports. Naming which
+    half carried the effect is not.
   ],
   lens-approach: [
     LENS uses Keystone in LEN 4 and LEN 10 as the canonical worked example
@@ -5451,7 +5447,6 @@
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
-  evidence-flag: "preprint-tier",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT6",
   leo-anchor: "LEO-5, LEO-3",
@@ -5474,10 +5469,10 @@
     is structural: the regulator designed change-control as a
     deliverable rather than defaulting to "approve once, then
     watch," which is the governance failure pattern that
-    Epic-Sepsis-class deployments surface. Evidence-tier flag is
-    preprint-tier for the most recent systematic analyses; future
-    validation ongoing on outcome durability across approved
-    devices.
+    Epic-Sepsis-class deployments surface. What stays open is not
+    the sourcing — the systematic analyses are peer-reviewed — but
+    outcome durability across the approved devices, which no source
+    yet reports.
   ],
   sections: (
     [
@@ -5533,11 +5528,12 @@
       change-control as a deliverable looks like at the regulator
       layer; Epic-Sepsis shows what happens when neither the
       vendor nor the deploying health system holds the change-
-      control deliverable explicitly. The preprint-tier flag is
-      honest: the regulatory framework is documented in
-      program-report sources; the per-approval transparency
-      analyses are preprint or recent. Future validation ongoing
-      on outcome durability across approved devices.
+      control deliverable explicitly. The limit worth stating is not
+      the tier of the sources but their reach: the regulatory
+      framework is documented in program-report sources and the
+      per-approval transparency analyses are peer-reviewed and
+      recent, and none of them follows the approved devices far
+      enough to report outcome durability.
     ],
   ),
   beats: (
@@ -5551,7 +5547,7 @@
     during: (
       [Treat post-approval change control as a deliverable at the initial-approval submission, not a downstream addendum: the modification scope, test plan, and revocation conditions should be on the approval package from the start.],
       [Specify the delegation boundary explicitly — what the manufacturer can modify without re-approval and what triggers a full review — so the delegation-with-revocation structure is operationally clear to both parties.],
-      [Carry the preprint-tier evidence flag through any policy decision the scoping review supports; the regulatory framework is documented, but the per-approval transparency analyses are recent.],
+      [Carry the reach of the evidence through any policy decision the scoping review supports: the regulatory framework is documented and the transparency analyses are peer-reviewed, but both are recent and neither follows outcomes.],
     ),
     after: (
       [Audit transparency across approvals — what each package insert publishes about study design, case demographics, and measured performance — as a separate program-evaluation question; the 2025 scoping review found no product reporting complete case demographics.],
@@ -5574,8 +5570,8 @@
     get streamlined review, and the delegation-with-revocation
     structure is explicit. The 2025 scoping review documents
     transparency variability across approvals — load-bearing
-    hedge preserved. Preprint-tier flag for the recent
-    systematic analyses; future validation ongoing.
+    hedge preserved. What no source yet reports is outcome
+    durability across the approved devices.
   ],
   lens-approach: [
     PMDA is the non-US regulator-designed change-control case
@@ -5594,7 +5590,7 @@
   ),
   reflection-list: (
     [Identify an AI/SaMD-adjacent product in your context whose post-deployment modification is anticipated. What would a IDATEN-style submission look like — the pre-agreed modification scope, the per-modification test plan, the revocation conditions — and which party currently holds each element?],
-    [The case rests on program-report sources for the framework and preprint analyses for the per-approval transparency findings. What is the minimum additional evidence you would require — outcome durability across approved devices, independent transparency audits — before treating IDATEN as a settled best-practice template?],
+    [The case rests on program-report sources for the framework and recent peer-reviewed analyses for the per-approval transparency findings. What is the minimum additional evidence you would require — outcome durability across approved devices, independent transparency audits — before treating IDATEN as a settled best-practice template?],
     [Specify the delegation-with-revocation boundary you would write for a deploying organization adopting a SaMD product: which modifications can ship under the pre-agreed scope, which trigger re-review, and what evidence the deployer must publish at each modification event.],
   ),
   courses: ("LEN 5", "LEN 7", "LEN 8"),

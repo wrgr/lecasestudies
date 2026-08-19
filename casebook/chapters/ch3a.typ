@@ -476,7 +476,7 @@
   ),
   beats: (
     "Faster, better, cheaper mission split between Lockheed building and JPL navigating the orbiter.",
-    "Ground software reported pound-force seconds while navigation expected newton-seconds; orbiter burned up at Mars.",
+    "Ground software reported pound-force seconds while navigation expected newton-seconds; the orbiter arrived ~170 km low and was lost.",
     "Board found the ground software ignored the interface specification and the project's processes never caught it.",
     "Missing capability was an owned, specified, verified interface between the two organizations.",
     "Loss tightened interface management and became the canonical software case of interface-as-requirement.",

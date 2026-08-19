@@ -27,7 +27,6 @@
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
-  evidence-flag: "practice-synthesis-tier",
   induced-anchor: "7.1",
   lens-anchor: "D1/PT1",
   leo-anchor: "LEO-1, LEO-5",
@@ -47,12 +46,11 @@
     other case: success-as-aging is the failure mode, and the
     modernization regime must contemplate its own future
     obsolescence as part of its current design discipline. The
-    evidence-tier flag is rendered under the title: the program
-    is well-documented in peer-reviewed and program-report
-    sources; the self-critical framing rests partly on
-    practitioner reflection that the corpus must carry honestly.
-    Future validation will continue on whether the deliberate
-    generational-replacement plans materialize. Cross-listed with
+    load-bearing self-critique — the no-legacy paradox — is
+    peer-reviewed text in Kattel and Mergel, not practitioner
+    reflection, and the program is well-documented in peer-reviewed
+    and program-report sources alike. What remains open is whether
+    the deliberate generational-replacement plans carry through. Cross-listed with
     Gap 5 (non-US/UK/EU coverage, Estonia).
   ],
   sections: (
@@ -91,11 +89,12 @@
       designed out. Success-as-aging is the failure mode.#cn()
     ],
     [
-      The evidence-tier flag matters. The peer-reviewed sources
-      cover the program's design and trajectory and the
-      self-critical framing; the program-report and practitioner
-      reflections supply the day-to-day operational picture and
-      the no-legacy paradox in its sharpest form. The country's
+      The sourcing is worth stating precisely, because the
+      self-critique is the load-bearing part. The peer-reviewed
+      sources cover the program's design, its trajectory, and the
+      self-critical framing including the no-legacy paradox; the
+      program-report and practitioner material supplies the
+      day-to-day operational picture around it. The country's
       generational-replacement plans for X-Road exist and have begun
       to materialize: X-Road version 7 ("Unicorn") is in production
       and version 8 ("Spaceship") is planned for 2026, re-scoping the
@@ -125,7 +124,7 @@
     "By Dec 2024: effectively 100% digitalization; sub-five-minute tax filing; >95% of declarations filed electronically",
     "Load-bearing self-critique — the no-legacy paradox — surfaces in the peer-reviewed analysis",
     "Success-as-aging is the failure mode; generational replacement of the platform itself is the new modernization problem",
-    "Evidence tier: peer-reviewed analysis + program-report + practitioner reflection; future replacement is open",
+    "Sources are peer-reviewed analysis plus program-report and practitioner material; whether the replacement plans carry through is open",
   ),
   approaches: (
     during: (
@@ -1355,7 +1354,6 @@
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
-  evidence-flag: "practice-synthesis-tier",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT4",
   leo-anchor: "LEO-5, LEO-4",
@@ -1433,11 +1431,10 @@
       a biased feature, omitting a demographic variable, or
       de-identifying a dataset is fairness-by-subtraction; CARE
       specifies fairness-by-replacement of the governance regime.
-      The practice-synthesis-tier flag is honest — the principles
-      are peer-reviewed, the implementation literature is still
-      thin — and the case is included with the standing
-      "future validation ongoing" language as multi-institution
-      adoption matures.
+      The principles are peer-reviewed; the implementation
+      literature behind them is still thin, and that is the limit
+      the case carries. It stands until multi-institution adoption
+      produces an evidence base to read.
     ],
   ),
   beats: (
@@ -1451,7 +1448,7 @@
     during: (
       [When data about a collective rights-holder is in scope, audit whether the governance regime treats the collective as a rights-holder or only the individuals within it; CARE is the explicit test.],
       [Specify the four CARE conditions — collective benefit, authority, responsibility, ethics — as design constraints on the data architecture from the start, not as consultation overlays added late.],
-      [Carry the practice-synthesis-tier flag through any policy decision CARE informs; the principles are peer-reviewed but the implementation evidence base is still emerging.],
+      [Carry the implementation limit through any policy decision CARE informs; the principles are peer-reviewed but the evidence base behind their implementation is still emerging.],
     ),
     after: (
       [Track implementation outcomes against the four CARE conditions separately; the Lowitja Journal paper is the genre exemplar for what such a tracking report can look like.],

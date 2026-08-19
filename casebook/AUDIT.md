@@ -968,3 +968,17 @@ The **fact check** confronted every claim with the primary document. 48 batches 
 **Production consequence.** Main volume 265 → **275 pp** (spine 16.46 → **17.08 mm**); complete edition 849 → **883 pp**. `check-cases.sh` reports 191 converted / 0 failures; the compression gate reports 15 known leads, 0 new.
 
 **Editorial decisions deferred to the program owner** are collected in `fact-check-editor-memo.md`: two COI disclosures whose institutional basis moved (Cases 48, 68), seven evidence-tier flags whose stated rationale no longer holds, the twelve remaining "cultural half" passages across five cases, and the standing recommendation to bind `#cn()` markers to specific reference entries rather than counting them.
+
+### Addendum (August 2026): compression-field consistency, and the evidence-tier ruling
+
+A spot check of the corrected corpus — Cases 19, 98, 154, 155 and `dgm-andon`, read in their post-sweep state — found the fact check had landed **unevenly inside each case**. The narrative bodies were corrected; the compression fields around them were not. The result was a case that argued against itself: Case 155's Evidence section said *"No study isolates the cord's marginal contribution"* over `beats` that still read *"Toyota's protected authority is the variable"*, and Case 19 admitted the trial *"could not decompose"* the bundle under a pull quote that still read *"Neither worked without the other."*
+
+This is the original Andon defect inverted. It began as a folk claim in `impact:` wrapped around a better body; the sweep corrected the body and left the folk claim in the fields. The compression layer is a separate surface and needs its own pass.
+
+**Fixed.** Cases 19, 98 and 155 across `summary`, `beats`, `le-insight`, `lens-approach`, `quote`, `reflection-list` and `approaches`. Case 155 also gained the two references its corrected Evidence section and `scope-limit` rest on and had been asserting without — Adler (1993) for NUMMI and the NASA/NHTSA (2011) throttle-control review — and moved to the dual anchor `D3+D4/PT3`, the instrumentation half the single anchor was dropping. Case 181's `beats[5]` lost an N-of-2 isolation claim (*"governance is the variable"*).
+
+**Evidence-tier ruling (editor, this session): peer review removes the weak-evidence flag.** Retired on Cases 18, 44, 71, 76, 154, 194 and 202, with the caveat that actually mattered restated in prose in its own right rather than riding on a tier flag that no longer described the sourcing — and with the flag's standing *"future validation ongoing"* sentence removed alongside it. Cases 18 and 202 were found during this pass carrying `evidence-source: "peer-reviewed"` and a weak-evidence flag simultaneously. Cases 181 and 190 keep `journalism-tier`: their sourcing is documented primary record rather than peer review, so the ruling does not reach them; the memo carries that as an open question.
+
+**New detector.** `scripts/check-compression.py --phrases` greps the whole compression set — `impact`, `summary`, `beats`, `le-insight`, `lens-approach`, `quote`, `reflection-list`, `approaches` — for the phrasings the sweep retired. Like the quantity check it produces leads, not verdicts: *"stop the line"* is correct prose in a case about stopping a line. It exists so that the next time a body is corrected, the fields that restate it are a worklist rather than a discovery. Corpus state after this pass: 7 of 191 cases flagged, every one triaged as legitimate usage.
+
+`check-cases.sh` reports 191 converted / 0 failures.

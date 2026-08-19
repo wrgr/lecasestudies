@@ -1000,7 +1000,6 @@
   kind: "frontier",
   scale: "small",
   evidence-source: "dissertation",
-  evidence-flag: "preprint-tier",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2, LEO-4",
@@ -1013,7 +1012,7 @@
     LEO-2's evaluation problem in miniature — if the program
     asks the learner to narrate and defend the design iteration
     in first person, the program also has to be able to
-    evidence that the capability to do so is developing. The evidence-tier flag is load-bearing for a different reason than peer review: the arXiv version was published at IEEE CSEE&T 2025, and what remains open is replication beyond this single cohort at one university. The case carries the standing "future validation ongoing" language into print. It is the v2 corpus's reference instance of established reflection coding applied longitudinally to evidence *development* rather than presence at a single point — the prior art the editor-
+    evidence that the capability to do so is developing. The work is peer-reviewed — the arXiv version was published at IEEE CSEE&T 2025 — so what remains open is not review but reach: one cohort at one university, unreplicated. The case carries the standing "future validation ongoing" language into print. It is the v2 corpus's reference instance of established reflection coding applied longitudinally to evidence *development* rather than presence at a single point — the prior art the editor-
     commissioned first-person Practice Flywheel accounts will sit
     alongside.
   ],
@@ -1043,7 +1042,7 @@
     ],
     [
       Why the case sits in the v2 supplemental tier rather than
-      in the verified primary list: the evidence is thin, not unreviewed. The arXiv version was published at IEEE CSEE&T 2025, and the case is included with the evidence-tier flag rendered under the title and the standing "future validation ongoing" language preserved — one cohort, one university, no replication.
+      in the verified primary list: the evidence is thin, not unreviewed. The arXiv version was published at IEEE CSEE&T 2025, and the case is included on the strength of that review, with the limit stated plainly in the prose rather than as a tier flag — one cohort, one university, no replication.
       The signal the corpus extracts is structural — the
       instrument-design move and the construct distinction —
       rather than the specific magnitudes the preprint reports.#cn()
@@ -1054,28 +1053,27 @@
       evaluation pathway: evidence that reflective-practice
       capability can be measured as it develops, not only observed
       once. That is the prior art a Flywheel account's evaluation
-      design can build on. Future validation ongoing — both
-      peer-review pipeline and replication across other work-based
-      engineering programs.
+      design can build on. What is still outstanding is
+      replication across other work-based engineering programs.
     ],
   ),
   beats: (
     "Barr, Nabi & Andrei (CSEE&T 2025): four-year longitudinal study of reflective-practice development on a work-based SE degree",
     "Two established coding schemes — Boud et al.'s model and Bain et al.'s 5R — applied across four years of one cohort's reflective reports",
     "Construct boundary: intra-learner depth-change measurement vs. cross-learner presence measurement",
-    "Evidence-tier flag load-bearing — peer-reviewed at CSEE&T 2025 but one cohort at one university, unreplicated; structural signal extracted, not specific magnitudes",
+    "Peer-reviewed at CSEE&T 2025, but one cohort at one university and unreplicated; structural signal extracted, not specific magnitudes",
     "Prior art for the editor-commissioned first-person Practice Flywheel accounts: shows the evaluation pathway, not only the genre",
   ),
   approaches: (
     during: (
       [When designing a program-level evaluation of reflective-practice capability, distinguish the development construct from the presence construct at the instrument-design stage; the preprint is the worked example of why the distinction matters.],
       [Specify the temporal cadence of the instrument — when in the program reflections are collected, against what successive iterations of design work — so the development trajectory can be evidenced rather than inferred.],
-      [Carry the preprint-tier flag through any pedagogical decision the case informs; the structural contribution is the construct distinction, and the specific magnitudes await peer review.],
+      [Carry the single-cohort limit through any pedagogical decision the case informs; the portable contribution is the construct distinction, and the specific magnitudes await replication.],
     ),
     after: (
       [Track intra-learner depth change in reflective output across the program as the primary measurement target; cross-learner presence comparisons are a secondary construct and should be reported as such.],
       [Use the preprint as the prior-art reference for any first-person Flywheel evaluation pathway you propose for CIRCUIT, an ERKS-class effort, or a LENS-graduate program; the construct distinction is portable even where the specific instrument is not.],
-      [When the preprint's peer-reviewed version appears, update the tier flag and re-evaluate the magnitudes; the case is included on the structural contribution, not on the preprint's specific figures.],
+      [When a replication on another work-based program appears, re-evaluate the magnitudes; the case is included on the structural contribution, not on this cohort's specific figures.],
     ),
   ),
   references: (
@@ -1087,10 +1085,10 @@
   quote: [The focus is the development of reflective practice over time. The study is not experimental, and the authors make no claims about causation.],
   quote-source: "Editors' synthesis of Barr, Nabi & Andrei (2025).",
   le-insight: [
-    Barr, Nabi & Andrei apply two established reflection coding schemes across four years of one cohort on a work-based program, so the reported result is a trajectory rather than a snapshot. Evidence-tier flag load-bearing — peer-reviewed at CSEE&T 2025, but one cohort at one university and unreplicated; the case is
+    Barr, Nabi & Andrei apply two established reflection coding schemes across four years of one cohort on a work-based program, so the reported result is a trajectory rather than a snapshot. Peer-reviewed at CSEE&T 2025, but one cohort at one university and unreplicated; the case is
     included on the structural contribution (construct
     distinction, instrument-design move) rather than specific
-    magnitudes. Future validation ongoing.
+    magnitudes. Replication is the outstanding step.
   ],
   lens-approach: [
     The longitudinal SE-program reflective-practice study is
@@ -1108,7 +1106,7 @@
   ),
   reflection-list: (
     [Identify a multi-year program in your context where reflective-practice capability is supposed to develop. What instrument would you build to measure development (intra-learner depth change over time) rather than presence (snapshot)? At what temporal cadence?],
-    [The case is a preprint not yet peer-reviewed. What is the minimum additional evidence — peer-review pipeline outcome, replication across other work-based programs, comparison with snapshot-based instruments — you would require before treating any specific magnitude from this work as settled in your program design?],
+    [The case is peer-reviewed but rests on one cohort at one university. What is the minimum additional evidence — replication across other work-based programs, comparison with snapshot-based instruments — you would require before treating any specific magnitude from this work as settled in your program design?],
     [Specify the prior art you would assemble around a first-person Flywheel evaluation pathway for an engineering-practice account; which construct distinctions (development vs. presence) would you carry forward, and which would you supplement with locally produced evidence?],
   ),
   courses: ("LEN 2", "LEN 7", "LEN 8"),
@@ -1821,7 +1819,6 @@
   kind: "frontier",
   scale: "small",
   evidence-source: "practitioner",
-  evidence-flag: "preprint-tier",
   induced-anchor: "2.2",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2, LEO-4",
@@ -1835,8 +1832,8 @@
     "unpacking is the method" reframing calls for. The case
     pairs structurally with the reflective-practice cases
     elsewhere in the v2 supplemental tier and grounds the
-    practitioner-reflection-as-evidence-tier discipline at the
-    LE-specific layer. The consolidated lessons-learnt synthesis is peer-reviewed — _TOCHI_ 31(1), Article 8 — and arXiv:2303.09099 is that article's author preprint. What remains open, and what the standing "future validation ongoing" language now attaches to, is the broader question of whether the genre takes hold across the LE community at the scale the Practice Flywheel exemplar requires.
+    practitioner-reflection-as-evidence discipline at the
+    LE-specific layer. The consolidated lessons-learnt synthesis is peer-reviewed — _TOCHI_ 31(1), Article 8 — and arXiv:2303.09099 is that article's author preprint. What remains open is the broader question of whether the genre takes hold across the LE community at the scale the Practice Flywheel exemplar requires.
   ],
   sections: (
     [
@@ -1897,12 +1894,11 @@
       design-iteration layer.#cn()
     ],
     [
-      The evidence-tier framing needs stating precisely. The consolidated lessons-learnt synthesis the case carries is peer-reviewed — it is _TOCHI_ 31(1), Article 8 — and arXiv:2303.09099 is that article's author preprint, not a separate unreviewed document. The standing "future validation ongoing" language therefore attaches to one dimension, not two. The broader question — whether the
+      The sourcing needs stating precisely. The consolidated lessons-learnt synthesis the case carries is peer-reviewed — it is _TOCHI_ 31(1), Article 8 — and arXiv:2303.09099 is that article's author preprint, not a separate unreviewed document. The open question is therefore one and not two: whether the
       first-person practitioner-reflection genre takes hold in
       the LE community at sufficient scale to function as the
-      Practice Flywheel exemplar the framework names — is the
-      other dimension. The case is included not despite the
-      preprint-tier framing but with it; the framing is part of
+      Practice Flywheel exemplar the framework names. The case is included not despite the
+      single-account limit but with it; that limit is part of
       what the case teaches.
     ],
   ),
@@ -1911,7 +1907,7 @@
     "Content: what worked, what failed, what the team would have done differently — operational knowledge not in results papers",
     "Offered as published-first-person Practice Flywheel exemplar, not as deployment-results case; pair with front-matter 'unpacking is the method'",
     "Grounds sustaining-tacit-capability anchor — practitioner knowledge walks out the door if not narrated",
-    "Synthesis is peer-reviewed in TOCHI; arXiv:2303.09099 is its author preprint. Future validation ongoing on genre adoption across LE",
+    "Synthesis is peer-reviewed in TOCHI; arXiv:2303.09099 is its author preprint. What is open is genre adoption across LE",
   ),
   approaches: (
     during: (
@@ -1938,19 +1934,17 @@
     first-person Practice Flywheel exemplar at MMLA in-the-wild
     deployment scale. The case is offered not as a deployment-
     results case but as a genre exemplar — the reflective-
-    practice account, peer-reviewed in _TOCHI_ 31(1) Article 8. Future validation ongoing on whether the genre takes hold across the LE community at the scale the Practice Flywheel exemplar requires.
+    practice account, peer-reviewed in _TOCHI_ 31(1) Article 8. What is still open is whether the genre takes hold across the LE community at the scale the Practice Flywheel exemplar requires.
   ],
   lens-approach: [
     MMLA in-the-wild is the sustaining-tacit-capability case in
     the LE-conferences tier (induced 6.3; LENS D2/PT4). LENS
     uses it in Domain 2 (Iterative Development) for the
     reflective-narration-of-design-iteration discipline and in
-    Domain 4 (Test and Evaluation) for the evidence-tier
-    discipline binding the preprint-tier framing to the genre's
-    pedagogical role. Pair with Cases 78 and 68 (CIRCUIT
+    Domain 4 (Test and Evaluation) for the discipline that binds
+    the single-account limit to the genre's pedagogical role. Pair with Cases 78 and 68 (CIRCUIT
     workforce-and-capability layer) and Case 77 (hybrid human-
-    AI tutoring design-iteration layer). Preprint-tier flag
-    binding under the title.
+    AI tutoring design-iteration layer).
   ],
   literature-items: (
     [Martinez-Maldonado et al. (2023), arXiv:2303.09099 — MMLA lessons-learned],
