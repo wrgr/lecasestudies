@@ -7,8 +7,11 @@
 //     scripts/blank-leaves.typ build/_blanks.pdf
 
 #let n = int(sys.inputs.at("n", default: "0"))
-#let w = float(sys.inputs.at("w-mm", default: "145.7")) * 1mm
-#let h = float(sys.inputs.at("h-mm", default: "221.9")) * 1mm
+// Defaults are the 8x10 print interior at trim + 3 mm bleed. build.sh reads
+// the real size off the compiled interior and passes it explicitly, so these
+// only apply to a hand-run invocation.
+#let w = float(sys.inputs.at("w-mm", default: "209.20")) * 1mm
+#let h = float(sys.inputs.at("h-mm", default: "260.00")) * 1mm
 
 #set page(width: w, height: h, margin: 0pt, fill: white, header: none, footer: none)
 

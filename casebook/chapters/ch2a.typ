@@ -259,7 +259,7 @@
   ],
   lens-approach: [
     LENS treats this case as the positive counterpart to Georgia State
-    (Case 80). LEN 4 examines construct definition as the load-bearing
+    (Case 80). LEN 4 examines construct definition as the decisive
     measurement choice. LEN 7 examines the governance architecture that
     determines whose construct gets adopted. LEN 9 covers the
     technical bias-mitigation methods.
@@ -340,8 +340,8 @@
       off-camera, multiple faces in the frame, the face leaving
       the frame — for instructor review. The COVID-era pivot to
       remote instruction expanded the deployment of this software
-      across US higher education at speed. The systems' face
-      detection and face tracking are the load-bearing computer-
+      across U.S. higher education at speed. The systems' face
+      detection and face tracking are the computer-
       vision components: a failure in face detection translates
       directly into a false flag for instructor review, and
       systematic failures in face detection across demographic
@@ -485,7 +485,7 @@
     Justice_ in 2022, analyzed the relationship between
     school-surveillance infrastructure — cameras, metal detectors,
     school resource officers, ID-check protocols — and outcomes
-    for Black students across US schools. The study's
+    for Black students across U.S. schools. The study's
     learning-engineering content is in where it locates the
     mechanism. The analysis holds school social disorder and student misbehavior constant and still finds that the most heavily surveilled schools suspend more students, and that surveillance depresses math scores and college enrollment for suspended and non-suspended students alike; because Black students are far more likely to attend those schools, they carry the largest share of the cost the authors call a safety tax. The mechanism, in other words,
     is the infrastructure, not the students. The case is one of
@@ -505,7 +505,7 @@
   ],
   sections: (
     [
-      US public schools have, over the past two decades, deployed a
+      U.S. public schools have, over the past two decades, deployed a
       progressively more elaborate surveillance infrastructure:
       cameras throughout common areas; metal detectors at entry
       points; school resource officers (sworn law enforcement
@@ -525,7 +525,7 @@
       Johnson and colleagues (_Journal of Criminal Justice_, 2022)
       analyzed the relationship between school-surveillance
       infrastructure and outcomes for Black students across the
-      US public-school sector. The study's design uses counterfactual and multi-level modeling on national longitudinal data, comparing students in the highest-surveillance schools with comparable students in the lowest. The headline analytic result the case rests on: with school social disorder and student misbehavior controlled, students in heavily surveilled schools are suspended more, score lower in mathematics, and enroll in college at lower rates — the non-suspended along with the suspended. The infrastructure is
+      U.S. public-school sector. The study's design uses counterfactual and multi-level modeling on national longitudinal data, comparing students in the highest-surveillance schools with comparable students in the lowest. The headline analytic result the case rests on: with school social disorder and student misbehavior controlled, students in heavily surveilled schools are suspended more, score lower in mathematics, and enroll in college at lower rates — the non-suspended along with the suspended. The infrastructure is
       acting as a driver of the outcome gap, not only as a
       response to it.#cn()
     ],
@@ -580,7 +580,7 @@
     ],
   ),
   beats: (
-    "US school-surveillance infrastructure (cameras, metal detectors, SROs, ID checks) distributed unevenly — schools with predominantly Black students carry more",
+    "U.S. school-surveillance infrastructure (cameras, metal detectors, SROs, ID checks) distributed unevenly — schools with predominantly Black students carry more",
     "Johnson & Jabbari 2022 (Journal of Criminal Justice): counterfactual multi-level analysis; surveillance lowers math scores and college enrollment with disorder and misbehavior controlled",
     "Mechanism is the infrastructure, not the students — attributing the gap to the population mis-locates the mechanism in a measurable sense",
     "Extends race-construct trio (Cases 25 eGFR, 26 pulse oximetry, 6 Hoffman) into K-12 education at the institutional-infrastructure layer",
@@ -599,7 +599,7 @@
     ),
   ),
   references: (
-    [O. Johnson & J. Jabbari (2022), "Infrastructure of social control: A multi-level counterfactual analysis of surveillance and Black education," _Journal of Criminal Justice_ 83:101983 — the load-bearing peer-reviewed source for the case.],
+    [O. Johnson & J. Jabbari (2022), "Infrastructure of social control: A multi-level counterfactual analysis of surveillance and Black education," _Journal of Criminal Justice_ 83:101983 — the peer-reviewed source for the case.],
     [Hoffman, Trawalter, Axt, & Oliver (2016), "Racial bias in pain assessment and treatment recommendations, and false beliefs about biological differences between blacks and whites," _PNAS_ 113(16):4296–4301 — race-construct trio at the cognitive-baseline layer (Case 6).],
     [Inker, Eneanya, Coresh, et al. (2021), "New Creatinine- and Cystatin C–Based Equations to Estimate GFR without Race," _NEJM_ — race-construct trio at the formula layer (Case 25).],
     [Sjoding, Dickson, Iwashyna, Gay, & Valley (2020), "Racial Bias in Pulse Oximetry Measurement," _NEJM_ 383:2477–2478 — race-construct trio at the device layer (Case 26).],
@@ -846,7 +846,7 @@
     Perdomo, Britton, Hardt, and Abebe's 2025 FAccT paper used a regression-discontinuity design on 2013–2021 DEWS-and-graduation data and estimated that moving a student from the moderate to the high-risk category raises on-time graduation by about 5 percentage points, on a 95 percent confidence interval of −2 to 11.6 percent that cannot rule out zero effect. The Wisconsin DPI's own 2021 internal equity analysis — the slide The Markup obtained is headed "Is DEWS Fair?" — found false-alarm rates 42 percentage points higher for Black students and 18 points higher for Hispanic students than for White students, and the agency neither told districts nor changed the model. The Markup's
     2023 investigation by Todd Feathers documented the
     disparate-impact finding and the agency's response. Both
-    findings are load-bearing. The case pairs with Case 48
+    findings are binding. The case pairs with Case 48
     (Johnson school surveillance), Case 86 (Gándara
     community-college predictive equity), and Case 52 (Purdue
     Course Signals — reverse causality). This case carries both
@@ -869,7 +869,7 @@
     ],
     [
       Perdomo, Britton, Hardt, and Abebe's 2025 paper at FAccT
-      (also available as arXiv 2304.06205) is the load-bearing
+      (also available as arXiv 2304.06205) is the decisive
       causal-inference evidence on the deployment. The
       researchers used a regression-discontinuity design,
       exploiting the DEWS risk-threshold cutoff to compare
@@ -884,7 +884,7 @@
     ],
     [
       The Wisconsin DPI's own 2021 internal equity audit,
-      titled "Is DEWS Fair?", is the load-bearing disparate-
+      titled "Is DEWS Fair?", is the decisive disparate-
       impact evidence on the deployment. The analysis found that DEWS raised false alarms about Black and Hispanic students at far higher rates than about their White classmates — 42 percentage points higher for Black students, 18 for Hispanic students. The agency's own response to its own analysis was to tell no one and change nothing. The Markup's 2023
       investigation by Todd Feathers documented both the
       finding and the agency's response, and the journalism-
@@ -917,7 +917,7 @@
       the deployment.#cn()
     ],
     [
-      The hedges the case carries are load-bearing and both
+      The hedges the case carries are binding and both
       streams are preserved. The Perdomo et al. RDD analysis cannot rule out zero treatment effect on graduation across 2013–2021 data — eight years of statewide records still cannot settle whether the prediction triggers the intervention the deployment theory requires. The DPI's own equity analysis found DEWS raised false alarms about Black and Hispanic students at far higher rates than about White students, and the agency continued operating the system unchanged for two years afterward. Both findings are binding and travel together.
       The LEO on designing predictions to trigger support
       rather than gatekeeping is anchored by the case at the
@@ -936,16 +936,16 @@
     "Perdomo, Britton, Hardt, Abebe FAccT 2025 RDD on 2013–2021 data: +5 points on on-time graduation, 95% interval −2% to 11.6%, cannot rule out zero",
     "Wisconsin DPI 2021 internal equity analysis (slide headed \"Is DEWS Fair?\"): false-alarm rates 42 points higher for Black, 18 for Hispanic students; agency told no one",
     "The Markup 2023 investigation (Feathers) documented disparate-impact finding and agency response",
-    "Both streams load-bearing; pair with Case 48 (Johnson), Case 86 (Gándara), Case 52 (Purdue Course Signals reverse causality)",
+    "both streams binding; pair with Case 48 (Johnson), Case 86 (Gándara), Case 52 (Purdue Course Signals reverse causality)",
   ),
   approaches: (
     during: (
       [Pre-specify the causal-inference design that will evaluate whether the prediction triggers outcome-changing intervention; the Perdomo et al. RDD is the deployment-evidence form that the prediction-triggers-support theory requires for verification at multi-year horizons.],
-      [Treat the agency's own equity audit as a binding governance input, not as an internal document; the DPI's "Is DEWS Fair?" audit was internally honest about the disparate-accuracy finding, and the case's load-bearing observation is the agency's continued operation of the system unchanged.],
+      [Treat the agency's own equity audit as a binding governance input, not as an internal document; the DPI's "Is DEWS Fair?" audit was internally honest about the disparate-accuracy finding, and the case's central observation is the agency's continued operation of the system unchanged.],
       [Design predictions to trigger support, not gatekeeping; the case's central LEO anchor is the discipline of building the intervention surface that the prediction is meant to trigger, and of verifying — not assuming — that the prediction's operational role produces the outcome change the deployment theory requires.],
     ),
     after: (
-      [Carry both evidence streams into print as load-bearing and complementary; the case's pedagogical value depends on the peer-reviewed null and the agency-audit disparate-impact finding traveling together rather than being separated into parallel entries.],
+      [Carry both evidence streams into print as decisive and complementary; the case's pedagogical value depends on the peer-reviewed null and the agency-audit disparate-impact finding traveling together rather than being separated into parallel entries.],
       [Pair in syllabi with Case 48 (Johnson) and Case 52 (Purdue) so the algorithmic-public-administration-in-education and reverse-causality threads are taught alongside the multi-year-deployment-with-null-causal-effect finding.],
       [Use the case as the anchor for the designing-predictions-to-trigger-support LEO; the curricular target is the multi-year deployment record that demonstrates the gap between the prediction's operational theory and the evidence the deployment produces.],
     ),
@@ -959,7 +959,7 @@
   quote: [The RDD estimate is about 5 points on graduation, on an interval that cannot rule out zero; the agency's own equity analysis found DEWS raised false alarms about Black students 42 points more often than about White students; the agency told no one.],
   quote-source: "Editors' synthesis of Perdomo et al. (2025, FAccT), the Wisconsin DPI internal equity audit (2021), and The Markup investigation (Feathers, 2023).",
   le-insight: [
-    Wisconsin DEWS is the load-bearing case for a prediction system operating at population scale for more than a decade without conclusive evidence that the prediction triggers outcome-changing intervention and with evidence that the prediction's error rates vary across protected-attribute subgroups. Both the peer-reviewed null and the agency-audit
+    Wisconsin DEWS is the reference case for a prediction system operating at population scale for more than a decade without conclusive evidence that the prediction triggers outcome-changing intervention and with evidence that the prediction's error rates vary across protected-attribute subgroups. Both the peer-reviewed null and the agency-audit
     disparate-impact finding travel together; the case carries
     both evidence streams in one entry rather than parallel
     ones.
@@ -976,7 +976,7 @@
     predictive equity), and Case 52 (Purdue Course Signals
     reverse causality). Both the peer-reviewed null and the
     journalism-and-agency-audit disparate-impact finding are
-    load-bearing.
+    decisive.
   ],
   literature-items: (
     [Perdomo et al. (2025), FAccT — RDD analysis on a decade of DEWS data],
@@ -1698,7 +1698,7 @@
   ),
   approaches: (
     during: (
-      [Name the optimization construct explicitly. "Willingness to pay" is not "need" and is not "merit"; the choice of construct is the load-bearing fairness decision, and the institution that does not name it has nonetheless made it.],
+      [Name the optimization construct explicitly. "Willingness to pay" is not "need" and is not "merit"; the choice of construct is the decisive fairness decision, and the institution that does not name it has nonetheless made it.],
       [Require vendor disclosure of the model's inputs, training data, and objective function as a condition of contracting; the case's evidence-tier limit is partly the result of contractual non-disclosure that institutions could refuse to sign.],
       [Tie the deployed algorithm's outputs back to downstream completion data; the literature linking aid to graduation odds is the evidence base the optimization should be tested against, not abstracted from.],
     ),
@@ -1714,7 +1714,7 @@
     [Goldrick-Rab, S. (2016), _Paying the Price_ — broader synthesis on net-price, unsubsidized loans, and low-income completion.],
     [Vendor case studies cited in Engler (Othot, EAB, Ruffalo Noel Levitz, University of Washington) — vendor-reported and not externally audited; flagged at evidence-tier under the title.],
   ),
-  quote: [The algorithms excel at identifying a student's exact willingness to pay. The construct is the load-bearing fairness decision, and the institution that does not name it has nonetheless made it.],
+  quote: [The algorithms excel at identifying a student's exact willingness to pay. The construct is the decisive fairness decision, and the institution that does not name it has nonetheless made it.],
   quote-source: "Editors' synthesis of Engler (2021), Brookings Institution.",
   le-insight: [
     Enrollment-algorithm yield optimization is the construct-choice
@@ -1783,7 +1783,7 @@
     edited, _Lifting the Veil on Enrollment Management_, extends
     the documentation across multiple authors — researchers,
     journalists, industry insiders. The construct substitution at
-    the center: the load-bearing institutional metric quietly
+    the center: the decisive institutional metric quietly
     shifted from "students served" to "net tuition revenue per
     matriculant," and the disclosure required to surface that
     shift never happened. The evidence-tier flag is binding —
@@ -2050,7 +2050,7 @@
       [Treat the delegation as reversible from the start: contract terms should preserve termination rights and operational-knowledge transfer; the lock-in the universities experienced was partly contractual and partly operational, and both halves are designable.],
     ),
     after: (
-      [Carry the investigation-grade audit into the curriculum without softening: the GAO's central finding is that the oversight architecture was not built, and that is the load-bearing teaching point.],
+      [Carry the investigation-grade audit into the curriculum without softening: the GAO's central finding is that the oversight architecture was not built, and that is the teaching point.],
       [Pair the case with Case 58 (USC × 2U) so the regulator-side audit and the consumer-side litigation are taught together; one half names what the regulator missed, the other names what the delegated marketing actually did.],
       [Track post-review and post-2U-bankruptcy successor structures as a continuation of the case; the underlying delegation problem persists, and the case's frame is the regime-level oversight gap, not the specific 2U arrangement.],
     ),
@@ -2328,7 +2328,7 @@
       university enrollment outcomes onto the company's quarterly
       results. When enrollment trends weakened, the disclosure
       question that securities law imposes on a public company
-      became the load-bearing one. The consolidated complaint
+      became the decisive one. The consolidated complaint
       alleges that executive statements to investors did not
       track the operating signal the company's own enrollment
       projections were generating across the class period.#cn()
@@ -2388,7 +2388,7 @@
       management context this litigation operates inside of.#cn()
     ],
     [
-      The honest hedges the case carries are load-bearing. The
+      The honest hedges the case carries are not decoration. The
       settlement is not an admission of liability, and the case
       teaches the disclosure-architecture pattern, not
       adjudicated wrongdoing. The class period and the
@@ -3013,7 +3013,7 @@
       student achievement under reassignment. The reported
       answer was broadly yes — the composite of value-added,
       observations, and student surveys carried predictive
-      signal — with a load-bearing caveat the project itself
+      signal — with a decisive caveat the project itself
       documented: substantial noncompliance with the random
       assignment weakened the experimental protocol, and critics
       noted the validation spoke to prediction within the studied
@@ -3030,7 +3030,7 @@
       RAND and AIR's six-year evaluation — Stecher et al.,
       _Improving Teaching Effectiveness: Final Report: The
       Intensive Partnerships for Effective Teaching Through
-      2015 – 2016_ (2018, RR-2242) — is the load-bearing evidence
+      2015 – 2016_ (2018, RR-2242) — is the evidence
       on the deployment. The evaluation found that the sites did
       implement the measurement architecture: new multi-measure
       evaluation systems were built and operated, and the
@@ -3070,7 +3070,7 @@
       support collapsed together.#cn()
     ],
     [
-      The hedges the case carries are load-bearing. The RAND
+      The hedges the case carries are not decoration. The RAND
       evaluation is comparison-based, not randomized at the site
       level: it cannot rule out small effects, and implementation
       varied enough across sites that no single component is
@@ -3124,7 +3124,7 @@
   quote: [The sites implemented new multi-measure teacher-evaluation systems, but the initiative did not achieve its goals for student achievement or graduation, and low-income minority students' outcomes and access to effective teaching showed no evidence of improvement relative to comparison sites; Hillsborough drew down reserves and dismantled its system in 2015.],
   quote-source: "Editors' synthesis of the RAND/AIR final evaluation (Stecher et al., 2018, RR-2242) and Tampa Bay Times reporting on the Hillsborough implementation (Sokol, 2015).",
   le-insight: [
-    The Intensive Partnerships are the load-bearing case for a
+    The Intensive Partnerships are the reference case for a
     reform that engineered its measurement and did not engineer
     its coupling. A validated multi-measure effectiveness rating
     was built and deployed at scale, and the levers it was meant
@@ -3273,7 +3273,7 @@
     ],
     [
       The evidence-tier flag rendered under the case title is
-      load-bearing. The public record on the CCTP is
+      decisive. The public record on the CCTP is
       substantially journalism — KPCC's email investigation,
       sustained _Los Angeles Times_ coverage, and _Education
       Week_'s multi-year reporting and retrospectives — joined
@@ -3331,7 +3331,7 @@
     ),
     after: (
       [When the evidence base is journalism plus the institution's own commissioned evaluation, flag it under the title and carry the standing "future validation ongoing" language into print; the structural pattern survives the flag, the dollar magnitudes do not.],
-      [Preserve the district's own evaluation as the load-bearing internal-evidence stream: the AIR finding that the purchased curriculum was in use in one of 245 observed classrooms is the deployment's own instrument reporting the gap between the theory and the classroom.],
+      [Preserve the district's own evaluation as the decisive internal-evidence stream: the AIR finding that the purchased curriculum was in use in one of 245 observed classrooms is the deployment's own instrument reporting the gap between the theory and the classroom.],
       [Teach the two failure tracks — the unbuilt operator layer and the unbuilt governance layer — as one failure with one root: the substitution of founding vision for evidence architecture, at the human layer and at the procurement layer simultaneously.],
     ),
   ),
@@ -3504,7 +3504,7 @@
       mechanism — before rebounding; by the fifth year the
       analysis found statistically significant gains in English
       language arts growth and no significant change in math.
-      The hedge is load-bearing: 62% of the eventual English
+      The hedge is binding: 62% of the eventual English
       improvement was attributable to shifting enrollment
       between schools — students moving to higher-growth
       schools, including charters — rather than to improvement
@@ -3565,7 +3565,7 @@
   quote: [Everybody's getting paid, but Raheem still can't read.],
   quote-source: "Vivian Cox Fraser, president of the Urban League of Essex County, quoted in Russakoff, The Prize (2015).",
   le-insight: [
-    Newark is the load-bearing case for reform velocity funded
+    Newark is the reference case for reform velocity funded
     from outside outrunning the capability and trust of the
     system meant to carry it. The \$100 million and its match
     bought consultants, a contract, and a reorganization — but

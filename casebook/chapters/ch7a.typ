@@ -234,7 +234,7 @@
     ],
     [
       The evidence-tier flag rendered under the case title is
-      load-bearing here. The detailed account of the early
+      decisive here. The detailed account of the early
       contestation, the open letters, the mediation, and the
       restructuring lives largely in MIT Technology Review's
       retrospective, in the _In Silico_ documentary, and in
@@ -348,10 +348,10 @@
     role suitability; engineers found that the model downgraded
     resumes containing the word "women's" (as in "women's chess
     club captain") and downgraded resumes from all-women's
-    colleges. Amazon edited the programs to be neutral to the offending terms, and Reuters reported there was no guarantee the models would not devise other ways of sorting that proved discriminatory — a prospective judgement about what feature engineering could assure, not a demonstration that the bias had been shown irreducible. The case rests on Reuters single-source
+    colleges. Amazon edited the programs to be neutral to the offending terms, and Reuters reported there was no guarantee the models would not devise other ways of sorting that proved discriminatory — a prospective judgment about what feature engineering could assure, not a demonstration that the bias had been shown irreducible. The case rests on Reuters single-source
     reporting; Amazon never published the technical detail. The
     journalism-tier evidence-flag under the title carries the
-    standing language. The load-bearing teaching point — that
+    standing language. the teaching point — that
     trained bias cannot in general be debiased through
     downstream feature manipulation — is the case's curricular
     value even as the specific case details remain limited to
@@ -383,7 +383,7 @@
       investigation reports that engineers found the model
       downgrading resumes that contained the word "women's" (in
       contexts like "women's chess club captain") and downgrading
-      graduates of two all-women's colleges. Amazon edited the programs to make them neutral to those terms; Reuters reports that this was no guarantee the machines would not devise other ways of sorting candidates that could prove discriminatory. What the record carries is a prospective judgement about what feature engineering could assure, not a demonstration that the bias had been shown irreducible.#cn()
+      graduates of two all-women's colleges. Amazon edited the programs to make them neutral to those terms; Reuters reports that this was no guarantee the machines would not devise other ways of sorting candidates that could prove discriminatory. What the record carries is a prospective judgment about what feature engineering could assure, not a demonstration that the bias had been shown irreducible.#cn()
     ],
     [
       Amazon disbanded the project team by early 2017 and has
@@ -392,7 +392,7 @@
       "looked at the recommendations" the tool generated without
       relying solely on them — so "never deployed at production
       scale" is the company's account rather than an independently
-      verified fact. The withdrawal is the load-bearing decision in the case: Reuters reports that executives lost hope for the project and the organization disbanded the team rather than deploying the tool. The case's evidentiary structure
+      verified fact. The withdrawal is the decision in the case: Reuters reports that executives lost hope for the project and the organization disbanded the team rather than deploying the tool. The case's evidentiary structure
       rests on Reuters' single-source reporting — the company
       never published the technical detail, and the specific
       mechanism by which engineers verified the irreducibility
@@ -422,7 +422,7 @@
       irreducibility led to the decision not to deploy.#cn()
     ],
     [
-      The load-bearing teaching point is that trained bias
+      the teaching point is that trained bias
       cannot in general be debiased through downstream feature
       manipulation. When the training-data composition encodes a
       historical disparity in the outcome the model is being
@@ -447,7 +447,7 @@
     "Amazon internal recruiting-algorithm project 2014 – 2018; goal: automate resume screening for technical roles; trained on 10 years of historical resume data",
     "Training-data composition encoded gender imbalance; model downgraded resumes containing \"women's\" and resumes from all-women's colleges",
     "Amazon edited the programs neutral to the offending terms; Reuters reports that was no guarantee the models would not devise other discriminatory sorts",
-    "Amazon disbanded the project team by early 2017; company says the tool was never used by recruiters, though Reuters reported recruiters looked at its recommendations; the withdrawal is the load-bearing decision",
+    "Amazon disbanded the project team by early 2017; company says the tool was never used by recruiters, though Reuters reported recruiters looked at its recommendations; the withdrawal is the decision",
     "Evidence is Reuters single-source reporting (Oct 10 2018); Amazon never published technical detail; journalism-tier flag binding",
   ),
   approaches: (
@@ -1014,7 +1014,7 @@
   leo-anchor: "LEO-4, LEO-5, LEO-3",
   summary: [
     Bartlett, Morse, Stanton, and Wallace (_Journal of Financial Economics_,
-    2022) analyzed several million US mortgage applications across the
+    2022) analyzed several million U.S. mortgage applications across the
     fintech transition and documented two patterns that together unsettle a
     common intuition. Algorithmic underwriting was, on average, less
     discriminatory than face-to-face underwriting along the *acceptance*
@@ -1031,7 +1031,7 @@
   ],
   sections: (
     [
-      The US mortgage market is the most consequential consumer-credit
+      The U.S. mortgage market is the most consequential consumer-credit
       market in which algorithmic underwriting now competes with
       face-to-face underwriting at large scale. Fintech entrants over the
       2010s automated significant parts of the application-to-approval
@@ -1357,7 +1357,7 @@
     "87M",
     "profiles · 270K quiz-takers",
     micro: "the Graph API contract assumed benevolent developer intent",
-    caption: "Cambridge Analytica — design assumption as load-bearing capability",
+    caption: "Cambridge Analytica — design assumption as decisive capability",
   ),
   kind: "failure",
   summary: [
@@ -1417,7 +1417,7 @@
     [
       The gap was not technical — the architecture worked exactly as
       designed, which is what makes it a governance case rather than a bug.
-      It was a governance gap: a load-bearing design assumption ("developers
+      It was a governance gap: a decisive design assumption ("developers
       are benevolent") that no one had stress-tested against a determined
       abuser, an assumption holding up the whole permission model without ever
       being named as one. On a platform at societal scale, an unexamined
@@ -1426,7 +1426,7 @@
       first actor willing to exploit it.#cn() Crucially, the governance
       failure does not depend on whether the targeting worked. After a
       three-year investigation the UK Information Commissioner concluded in
-      2020 that Cambridge Analytica's methods were "well recognised
+      2020 that Cambridge Analytica's methods were "well recognized
       processes using commonly available technology," that its psychographic
       claims were oversold to the point of "hyperbole," and that the
       Facebook-derived data — being about U.S. voters — could not have been
@@ -1508,7 +1508,7 @@
   ),
   approaches: (
     during: (
-      [Make every load-bearing design assumption explicit and red-team it against a determined abuser before launch, treating "developers are benevolent" as a hypothesis to test.],
+      [Make every decisive design assumption explicit and red-team it against a determined abuser before launch, treating "developers are benevolent" as a hypothesis to test.],
       [Scope data access to what an app genuinely needs, so one user's consent cannot silently reach hundreds of non-consenting others.],
       [Design permission architectures against the worst plausible developer, since at societal scale that developer will eventually arrive.],
     ),
@@ -1595,7 +1595,7 @@
     ],
     [
       What the court explicitly left open is also pedagogically
-      load-bearing. The ruling did not say no welfare-analytics
+      decisive. The ruling did not say no welfare-analytics
       system could pass Article 8; it said *this* system, in its
       specific opacity and disproportionality, could not. A more
       transparent system, with auditability and a credibly
@@ -1723,7 +1723,7 @@
     safety-relevant information. The case is the explicit contrast to
     Case 199 (Waymo): the same regulatory regime, the same
     delegation problem, the opposite governance choice. Partial
-    disclosure was the load-bearing failure mode, not the
+    disclosure was the failure mode, not the
     underlying collision sequence. The evidence-tier flag is
     journalism: the DMV's published Order of Suspension is
     investigation-grade, but the partial-disclosure mechanism and
@@ -1771,7 +1771,7 @@
       answered an incident-disclosure obligation by sharing
       partial video. The same DMV that permitted Waymo to
       continue suspended Cruise's permits. The journalism-tier
-      flag is load-bearing: the DMV's published order is
+      flag is binding: the DMV's published order is
       investigation-grade, but the precise sequence of internal
       decision-making rests on TechCrunch, NBC News, SF
       Standard, and Mission Local reporting that has not been
@@ -1805,7 +1805,7 @@
   approaches: (
     during: (
       [Design the incident-disclosure architecture before deployment, not under crisis — what will be reported, on what cadence, to which oversight body, with what verification by which agency.],
-      [Treat the disclosure obligation as load-bearing on its own — partial disclosure of a safety-relevant event is not "less bad" than non-disclosure; under the regulator's framing it can be the failure mode that triggers revocation.],
+      [Treat the disclosure obligation as decisive on its own — partial disclosure of a safety-relevant event is not "less bad" than non-disclosure; under the regulator's framing it can be the failure mode that triggers revocation.],
       [Build the verification path the regulator will use into the architecture. The DMV learning the fuller sequence from another agency is the failure mode the architecture has to preclude.],
     ),
     after: (
@@ -1829,7 +1829,7 @@
     delegation problem, opposite governance choice. The DMV's
     Order of Suspension is investigation-grade; the
     partial-disclosure mechanism is reconstructed from
-    journalism. The evidence-tier flag is load-bearing — the
+    journalism. The evidence-tier flag is binding — the
     internal timeline is journalism-tier and future validation
     continues as more of the company's own post-mortem
     becomes public.
@@ -2086,7 +2086,7 @@
     structural problem: the Bank explained its decisions to DFS for every complainant, and to the complainants themselves it did not.
     The Bank and Apple had by then taken steps to remedy the deficiencies. The case pairs with Case 186 (Bartlett mortgage),
     Case 196 (Coots), and Case 86 (Gándara). The DFS finding of
-    "no violation but lack of transparency" is the load-bearing
+    "no violation but lack of transparency" is the decisive
     nuance.
   ],
   sections: (
@@ -2151,7 +2151,7 @@
       itself.#cn()
     ],
     [
-      The load-bearing hedge is the precise DFS finding. The case
+      the hedge that matters is the precise DFS finding. The case
       does not teach that Apple Card was unfair, and it does not
       teach that DFS found Apple Card was fair. It teaches that
       under the specific statutory standard the agency applied,
@@ -2182,7 +2182,7 @@
       [Treat the customer-service escalation path as a deployment surface, not a support function; the case's escalation went from customer service to social media to regulation in days, and the deployment surface that mattered was the first one.],
     ),
     after: (
-      [Carry the precise DFS finding into print without softening; "no violation under the applicable statutory standard, but lack of transparency as the structural problem" is the load-bearing nuance and the case's pedagogical value depends on the nuance being preserved.],
+      [Carry the precise DFS finding into print without softening; "no violation under the applicable statutory standard, but lack of transparency as the structural problem" is the nuance that matters and the case's pedagogical value depends on the nuance being preserved.],
       [Pair in syllabi with Case 186 (Bartlett) so the consumer-credit-fairness regulatory architecture is taught at both the mortgage and credit-card scales.],
       [Use the case as the anchor for the explainability-as-governance frame at consumer-credit scale; the curricular target is the appeal-and-explanation infrastructure that converts an algorithmic decision into a contestable one.],
     ),
@@ -2200,7 +2200,7 @@
     deployment scale. DFS found no violation of New York anti-
     discrimination law under the applicable statutory standard,
     and DFS also found lack of transparency as the structural
-    problem; the Bank dropped the six-month wait to appeal credit terms and, with Apple, launched Path to Apple Card for declined applicants. The load-bearing hedge is the precision
+    problem; the Bank dropped the six-month wait to appeal credit terms and, with Apple, launched Path to Apple Card for declined applicants. the hedge that matters is the precision
     of the DFS finding — neither "fair" nor "unfair," but "no
     violation under this standard, transparency gap as the
     structural problem."
@@ -2216,7 +2216,7 @@
     Case 196 (Coots competing fairness definitions), and Case
     86 (Gándara explainability of individual predictions). The
     precise DFS finding — "no violation but lack of transparency"
-    — is the load-bearing hedge.
+    — is the hedge that matters.
   ],
   literature-items: (
     [NY DFS, _Report on Apple Card Investigation_ (March 2021)],

@@ -981,7 +981,7 @@
     in the Combat Information Center, primed by a simultaneous surface
     fight to expect a hostile inbound, tagged the contact as a military
     F-14 — from an IFF Mode II squawk operators reported on their consoles but the ship's own system never held, the airliner squawking only civilian Mode III — and, on reports of a descent its own tapes contradicted, fired. The Fogarty Report (DoD, 1988) found the Aegis system functioned as designed and judged that stress, task fixation, and unconscious distortion of data — "scenario fulfillment" — may have played a major role. The 1992 Newsweek "Sea of Lies"
-    investigation and a 2018 US Naval Institute _Proceedings_
+    investigation and a 2018 U.S. Naval Institute _Proceedings_
     retrospective reopened both the operational record and the
     interface-design lessons. Vincennes is the book's foundational
     human-AI-teaming case: the most advanced surface combatant afloat
@@ -992,7 +992,7 @@
   sections: (
     // -- Background --
     [
-      In the closing weeks of the Iran-Iraq War, US warships patrolled a
+      In the closing weeks of the Iran-Iraq War, U.S. warships patrolled a
       tense Persian Gulf where civilian airliners and hostile military
       aircraft shared the same crowded sky. The USS Vincennes, a
       Ticonderoga-class cruiser with the Navy's most advanced Aegis
@@ -1081,7 +1081,7 @@
     "Naval retrospective reframed loss as predictable teaming failure of unguarded decision aids",
   ),
   references: (
-    [Rear Adm. W. Fogarty, _Formal Investigation into the Circumstances Surrounding the Downing of Iran Air Flight 655_ (US Navy, August 1988) — the engagement, the IFF mode-confusion findings, and the 290 deaths.],
+    [Rear Adm. W. Fogarty, _Formal Investigation into the Circumstances Surrounding the Downing of Iran Air Flight 655_ (U.S. Navy, August 1988) — the engagement, the IFF mode-confusion findings, and the 290 deaths.],
     [Fogarty report (1988) — the Aegis SPY-1A radar functioned; the aircraft was ascending while the crew perceived a descent; "scenario fulfillment" as the psychological mechanism.],
     [Fogarty report (1988) — "human error under extreme stress," confirmation bias, and "unconscious distortion of data" (quoted); shared-error finding across CIC operators.],
     [J. Barry & R. Charles, "Sea of Lies," _Newsweek_ (July 13, 1992) — contemporaneous reinvestigation of the operational record, including the disputed account of Vincennes' position relative to Iranian territorial waters.],
@@ -1322,7 +1322,7 @@
     response after a bleed-air shutoff. In May 2011 the USAF stood
     the fleet down for several months. The USAF Scientific Advisory
     Board's investigation, with NASA contribution, reported it had *not
-    determined the root cause* — the load-bearing finding of the case —
+    determined the root cause* — the finding of the case —
     while clearing OBOGS itself: system performance exceeded pilot
     physiological needs. What it found was a lack of robustness in the
     life-support configuration, the Breathing Regulator Anti-G valve and
@@ -1361,7 +1361,7 @@
     [
       The USAF Scientific Advisory Board investigation, with
       participation from NASA's review of the hypoxia incidents,
-      reported the load-bearing finding the case turns on: it had *not determined the root cause*, and a Note in Proof recorded that the Life Support Systems Task Force believed it had. The findings ran the other way on OBOGS — system performance exceeded pilot physiological needs — and settled on a lack of robustness in the life-support configuration, the Breathing Regulator Anti-G valve and upper-pressure-garment vest that under some conditions restricted normal breathing, aircrew flight-equipment fit issues, and the absence of in-cockpit physiological monitoring. The
+      reported the finding the case turns on: it had *not determined the root cause*, and a Note in Proof recorded that the Life Support Systems Task Force believed it had. The findings ran the other way on OBOGS — system performance exceeded pilot physiological needs — and settled on a lack of robustness in the life-support configuration, the Breathing Regulator Anti-G valve and upper-pressure-garment vest that under some conditions restricted normal breathing, aircrew flight-equipment fit issues, and the absence of in-cockpit physiological monitoring. The
       investigation made several corrective recommendations —
       including modifications to the upper-pressure garment,
       changes to OBOGS components, and the addition of
@@ -1405,7 +1405,7 @@
     "F-22 physiological-event cluster 2008–2012; symptoms consistent with hypoxia, often with persistent post-flight effects",
     "Capt. Haney fatal accident Nov 2010 — bleed-air shutoff cut oxygen flow; AIB ruled out hypoxia and blamed the pilot; DoD IG found that unsupported",
     "USAF fleet stood down May 2011; USAF SAB and NASA review",
-    "Load-bearing finding: root cause not determined; OBOGS performance cleared; factors include the BRAG valve and pressure vest, equipment fit, absence of in-cockpit physiological monitoring",
+    "decisive finding: root cause not determined; OBOGS performance cleared; factors include the BRAG valve and pressure vest, equipment fit, absence of in-cockpit physiological monitoring",
     "Symptom reports decreased after bundle of corrections; attribution to any single component not possible from available evidence",
   ),
   approaches: (

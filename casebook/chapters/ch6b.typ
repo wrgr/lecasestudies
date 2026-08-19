@@ -204,7 +204,7 @@
   year: "1996 – 2000",
   domains-list: ("software sustainment", "critical infrastructure", "federal program management"),
   modes-code: "GDK",
-  impact: "The US federal government and the broader public and private sectors invested an estimated 100 billion dollars (US) between 1995 and 2001 remediating two-digit-year date handling in legacy systems; the January 1, 2000 rollover passed with minimal disruption to critical infrastructure — the success contributed to the durable counterfactual debate about whether the threat justified the spending",
+  impact: "The U.S. federal government and the broader public and private sectors invested an estimated 100 billion dollars (U.S.) between 1995 and 2001 remediating two-digit-year date handling in legacy systems; the January 1, 2000 rollover passed with minimal disruption to critical infrastructure — the success contributed to the durable counterfactual debate about whether the threat justified the spending",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -218,11 +218,11 @@
     affected code ran banking systems, embedded controllers in
     industrial infrastructure, federal benefit-payment systems, air
     traffic and rail systems, and the broader public and private
-    software base. From 1996 through December 1999 the US federal
+    software base. From 1996 through December 1999 the U.S. federal
     government, under sustained Office of Management and Budget
     reporting and GAO audit, drove an inventory-and-remediation
     program across mission-critical federal systems, while the
-    private sector executed a parallel multi-year effort. The Commerce Department put total US Y2K spending, covering repairs started in 1995 through 2001, at about \$100 billion. The
+    private sector executed a parallel multi-year effort. The Commerce Department put total U.S. Y2K spending, covering repairs started in 1995 through 2001, at about \$100 billion. The
     January 1, 2000 rollover passed with minimal disruption to
     critical infrastructure. The case is the canonical instance of
     a believed-and-treated aging-system transition in the recent
@@ -263,7 +263,7 @@
     ],
     [
       The parallel private-sector effort was as large and is
-      harder to characterize precisely. Total US investment
+      harder to characterize precisely. Total U.S. investment
       estimates cluster around the \$100 billion figure; global
       estimates are larger. Major financial institutions, utilities,
       telecommunications providers, and industrial operators ran
@@ -310,7 +310,7 @@
   beats: (
     "Y2K problem: decades of two-digit year fields in legacy code, ambiguous at the 1999/2000 rollover, with a hard immovable deadline",
     "Federal-program-management response from 1996 onward: line-item inventory, OMB quarterly reporting, GAO sustained external audit",
-    "Parallel private-sector effort across financial, utility, telecom, industrial operators; total US investment estimates around \\$100 billion",
+    "Parallel private-sector effort across financial, utility, telecom, industrial operators; total U.S. investment estimates around \\$100 billion",
     "January 1, 2000 rollover passed with minimal disruption to critical infrastructure; widely characterized as a major program-management success",
     "Counterfactual debate preserved: would the rollover have passed similarly with less spending? — structurally unobservable; the case is teachable on the institutional discipline",
   ),
@@ -331,7 +331,7 @@
     [Office of Management and Budget, quarterly reports on federal Y2K remediation status (1997–1999) — program-self-report tier.],
     [President's Council on Year 2000 Conversion, _The Journey to Y2K_ final report (2000) — institutional retrospective of the federal coordination effort.],
     [Manion & Evan (2000), "The Y2K Problem and Professional Responsibility: A Retrospective Analysis," _Technology in Society_ 22(3), 361–387 — retrospective literature on the counterfactual debate.],
-    [U.S. Department of Commerce, Economics and Statistics Administration, _The Economics of Y2K and the Impact on the United States_ (November 1999) — total US Y2K spending of about \$100 billion covering repairs started 1995 through 2001, of which the federal share was about \$8 billion.],
+    [U.S. Department of Commerce, Economics and Statistics Administration, _The Economics of Y2K and the Impact on the United States_ (November 1999) — total U.S. Y2K spending of about \$100 billion covering repairs started 1995 through 2001, of which the federal share was about \$8 billion.],
   ),
   quote: [The C7 transition succeeded because it was believed and treated. The counterfactual — whether the threat was as large as the response implies — the program structurally cannot answer.],
   quote-source: "Editors' synthesis of the GAO Y2K report series and the post-2000 retrospective literature.",
@@ -414,7 +414,7 @@
     ],
     // -- How It Worked --
     [
-      INPO's load-bearing mechanism was honest peer review: teams of
+      INPO's decisive mechanism was honest peer review: teams of
       operators from one utility examined another's procedures, control
       rooms, and incident records, reporting candidly because every utility
       was, in the title of one history, a hostage of the others. Funded by
@@ -665,7 +665,7 @@
   year: "1996 – present",
   domains-list: ("rail transport", "safety reporting", "safety culture"),
   modes-code: "GKN",
-  impact: "Between 2008 and 2012 the UK rail Confidential Incident Reporting and Analysis System received 2,228 reports — 45% led to tangible safety improvements and about 33% contained important safety information (program self-report); directly influenced a confidential reporting system in the US",
+  impact: "Between 2008 and 2012 the UK rail Confidential Incident Reporting and Analysis System received 2,228 reports — 45% led to tangible safety improvements and about 33% contained important safety information (program self-report); directly influenced a confidential reporting system in the U.S.",
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -868,7 +868,7 @@
     inclusion and inter-cluster coordination. The 2010 Haiti
     earthquake exposed the mechanism's scale limits, and the
     IASC's 2011 Transformative Agenda revised it. The
-    evaluations' own hedges are load-bearing: benefits were
+    evaluations' own hedges are binding: benefits were
     uneven across clusters and countries, the costs were real,
     and national and local actors were often marginalized.
   ],

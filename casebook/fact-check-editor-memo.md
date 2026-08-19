@@ -235,3 +235,64 @@ cases had rather than what either half does alone.
 phrasings anywhere in the compression set) and `--dangling` (prose citing an evidence flag, COI
 block, competing-readings or scope-limit the case does not actually set — the defect that let two
 cases keep promising a render after their flag was removed).
+
+
+---
+
+## 7. Print check and the complete-edition pass — August 2026
+
+### Print / pagination
+
+Compiled both editions with `--font-path fonts` (earlier manual compiles omitted it, so their
+page counts were meaningless; `check-cases.sh` always passed it and was always right).
+
+- Main volume print interior: **275 pp**, trim + bleed **209.20 × 260.00 mm**, confirming 8×10
+  with 3 mm all round. Complete edition: **881 pp**.
+- 14 inter-case gaps = the 14 chapter dividers. LE-Lens spans: 9 cases at 1, 36 at 2, 3 at 3 —
+  all inside the envelope. First case opens p.30, last Lens page p.231.
+
+**Defect found and fixed: the interior was shipping at an odd page count.** `scripts/blank-leaves.typ`
+exists and its own header says "Lulu binds in 4-page signatures", but `build.sh` never called it.
+At 275 pp the printer would have padded with leaves we did not choose, and the spine was being
+derived from the unpadded count. `build.sh` now pads to the next multiple of four **before**
+computing the spine, and reads the blank page size off the compiled interior rather than trusting
+a constant. `blank-leaves.typ`'s defaults were also stale — 145.7 × 221.9 mm, a trim size the book
+no longer uses — now 209.20 × 260.00.
+
+**Consequence for the cover: 275 → 276 pp, spine 17.08 → 17.14 mm.** Externally prepared cover art
+needs the new width.
+
+### The remaining 143 cases
+
+The printed volume's treatment applied outward, with one honest difference in method: the 48
+printed cases were rewritten by hand, one site at a time. At 167 sites the complete edition got a
+rule-based pass using the same replacement vocabulary and an explicit keep list, then two
+corrective passes and a spot-check. It is a lower grade of attention, and it is the right one for
+the edition that does not go to press.
+
+- **`load-bearing`**: 159 sites rewritten, 5 kept. The first pass over-applied *decisive* and made
+  a new tic (7 "decisive hedges"); two corrective passes removed 33 redundant uses and fixed
+  self-contradicting pairings like "the decisive nuance". Density is now ~0.7 per case, against
+  2.7 per affected case before.
+- **Copy edit**: 100 bare `US` → `U.S.`; 16 UK spellings corrected in body prose, with 7 left
+  alone inside references, titles and quotations (the checker now excludes those spans).
+- **Decomposition claims**: swept corpus-wide including `sections`, not just `le-insight`. Five
+  hits, all false positives — pedagogy prompts ("what does the comparison reveal that neither
+  division could see alone?") and validation-layer requirements. **Zero real claims remain.**
+
+### Weakness scan — no demotion candidates, but one hole to watch
+
+Scored all 191 on few references, short body, weak or unset evidence source, and a rendered tier
+flag. Distribution: **128 cases at 0, 52 at 1, 11 at 2, none at 3 or above.** Only one case has
+three or fewer references; none has a body under 60% of the median.
+
+The eleven at 2 score there by pairing a journalism or practitioner source with a rendered
+evidence-tier flag — which is the flag system working, not weakness. **Nothing is weak enough to
+demote.**
+
+**The hole to watch if that changes.** Induced cluster 4 (frontline authority, non-punitive
+reporting, team-coordination redesign) holds **exactly ten cases** — 19, 38, 40, 117, 118, 119,
+152, 155, 176, 177 — and `competencies.md` retains a top-level cluster only at ten or more.
+Demoting any one of them drops the cluster below the framework's own induction rule. Six of the
+ten are in the printed volume, so the exposure is real. Every other cluster has headroom: 2 has
+43, 5 has 32, 3 has 29, 1 has 22, 8 has 21, 7 has 18, 6 has 15.

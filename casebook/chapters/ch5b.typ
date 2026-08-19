@@ -41,11 +41,11 @@
     upgrades. The case here is a specific method: for a paired plant-process-computer and turbine-control-system upgrade, the operators are trained on the new interfaces through a stand-alone program built with the training organization, and the validation scenarios are reviewed by trainers and procedure writers to confirm the operating procedures need no modification. The retraining is planned into the cutover, not avoided by it. That specification is the
     small-tier complement to the big-tier LWRS program case the
     corpus also tracks: the program produces specific design-V\&V
-    case studies, not only program-level claims. The load-bearing
+    case studies, not only program-level claims. The decisive
     hedge is not the sourcing — the paper is peer-reviewed, published
     in the Human Factors and Ergonomics Society's annual-meeting
     proceedings — but what it reports. It reports a process and no
-    outcome: it states the process was then being implemented at a US
+    outcome: it states the process was then being implemented at a U.S.
     utility with four plants slated for modernization, with lessons
     learned to be published later.
   ],
@@ -58,7 +58,7 @@
       under the operating envelopes the safety case covers, and
       that the operator does not lose capability in the cutover.
       The LWRS program at INL exists to produce that evidence
-      across the US fleet's modernization needs. The specific
+      across the U.S. fleet's modernization needs. The specific
       study here is one of the program's small-tier deliverables:
       a human-factors verification of a turbine-control-system
       upgrade.#cn()
@@ -348,7 +348,7 @@
   year: "2010 – present",
   domains-list: ("nuclear engineering", "control-room human factors", "research and development"),
   modes-code: "DHK",
-  impact: "The US Department of Energy's Light Water Reactor Sustainability (LWRS) program, executed at Idaho National Laboratory in partnership with utilities, has produced a structured research-and-pilot record for modernizing analog control-room instrumentation in the existing US nuclear fleet — pilot-scale evidence covering hybrid digital/analog operator interfaces, human-factors validation, and qualification pathways for digital instrumentation",
+  impact: "The U.S. Department of Energy's Light Water Reactor Sustainability (LWRS) program, executed at Idaho National Laboratory in partnership with utilities, has produced a structured research-and-pilot record for modernizing analog control-room instrumentation in the existing U.S. nuclear fleet — pilot-scale evidence covering hybrid digital/analog operator interfaces, human-factors validation, and qualification pathways for digital instrumentation",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -356,7 +356,7 @@
   lens-anchor: "D3/PT4",
   leo-anchor: "LEO-1, LEO-3",
   summary: [
-    The US commercial nuclear fleet is dominated by reactors
+    The U.S. commercial nuclear fleet is dominated by reactors
     originally licensed in the 1970s and 1980s with analog
     instrumentation and control-room layouts of that vintage.
     Aging analog components, vendor obsolescence, and the
@@ -365,9 +365,9 @@
     regulatory environment (Nuclear Regulatory Commission
     Regulatory Guide 1.180, Branch Technical Position 7-19, and
     related guidance) makes the qualification path for digital
-    instrumentation deliberately stringent. The US Department of
+    instrumentation deliberately stringent. The U.S. Department of
     Energy's Light Water Reactor Sustainability (LWRS) program,
-    executed at Idaho National Laboratory in partnership with US
+    executed at Idaho National Laboratory in partnership with U.S.
     utilities, runs the federally-funded research-and-pilot work
     that supports the fleet's modernization decisions. The program
     has produced a structured record covering hybrid digital/
@@ -386,7 +386,7 @@
   ],
   sections: (
     [
-      The US commercial nuclear fleet operates roughly 90 reactors
+      The U.S. commercial nuclear fleet operates roughly 90 reactors
       originally licensed in the 1970s and 1980s. The control
       rooms of that era were built around analog instrumentation
       — strip-chart recorders, hardwired indicators, control-panel
@@ -413,11 +413,11 @@
       bounded as plants modernize.#cn()
     ],
     [
-      The US Department of Energy's Light Water Reactor
+      The U.S. Department of Energy's Light Water Reactor
       Sustainability (LWRS) program is the federally-funded
       research-and-pilot work that supports the fleet's
       modernization decisions. Executed at Idaho National
-      Laboratory in partnership with US utilities and EPRI, LWRS
+      Laboratory in partnership with U.S. utilities and EPRI, LWRS
       operates across a multi-decade horizon with annual research-
       report deliverables. The control-room modernization research
       line — including the Human Systems Simulation Laboratory at
@@ -431,7 +431,7 @@
       pilot-scale: full-scope simulator studies, single-plant
       pilot implementations, and structured human-factors
       experiments with operator participants from utility partners.
-      The sample of US plants that have implemented major
+      The sample of U.S. plants that have implemented major
       control-room modernizations is small relative to the fleet,
       and the operational-fleet evidence at scale — fleet-wide
       reliability, fleet-wide human-error rate, fleet-wide
@@ -459,7 +459,7 @@
     ],
   ),
   beats: (
-    "US commercial nuclear fleet dominated by reactors originally licensed 1970s–80s with analog control-room instrumentation",
+    "U.S. commercial nuclear fleet dominated by reactors originally licensed 1970s–80s with analog control-room instrumentation",
     "NRC regulatory environment (RG 1.180, BTP 7-19, SRP Ch. 7) makes the qualification path for safety-related digital I&C deliberately stringent",
     "DOE LWRS program executed at INL in partnership with utilities — federally-funded research-and-pilot work across multi-decade horizon",
     "Research line covers hybrid digital/analog operator interfaces, human-factors validation in full-scope simulators, qualification-pathway research",

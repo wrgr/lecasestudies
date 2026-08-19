@@ -87,7 +87,26 @@ $TYPST --input mode=print --input edition=main book.typ build/_print-color.pdf
 gray_flatten build/_print-color.pdf build/capability-matters-print.pdf
 rm build/_print-color.pdf
 
-# ---- Cover wrap (spine width computed from the print interior page count) ----
+# ---- Pad the interior to a 4-page binding signature ----
+# Lulu binds in 4-page signatures, so an interior that is not a multiple of
+# four gets padded by the printer with leaves we did not choose. Pad here
+# instead, before the spine is derived, so the cover width matches the book
+# that actually gets bound. Blank size is trim + bleed, read off the interior
+# rather than hard-coded, so a trim change cannot silently desynchronise it.
+raw_pages=$(pdfinfo build/capability-matters-print.pdf | awk '/^Pages:/ {print $2}')
+need=$(( (4 - raw_pages % 4) % 4 ))
+if [ "$need" -gt 0 ]; then
+  read -r bw bh < <(pdfinfo build/capability-matters-print.pdf \
+                    | awk '/^Page size:/ {printf "%.2f %.2f", $3*25.4/72, $5*25.4/72}')
+  echo "→ Padding print interior $raw_pages → $((raw_pages + need)) pp (4-page signature), blanks at ${bw}×${bh} mm"
+  $TYPST --input n="$need" --input w-mm="$bw" --input h-mm="$bh" \
+    scripts/blank-leaves.typ build/_blanks.pdf
+  pdfunite build/capability-matters-print.pdf build/_blanks.pdf build/_padded.pdf
+  mv build/_padded.pdf build/capability-matters-print.pdf
+  rm -f build/_blanks.pdf
+fi
+
+# ---- Cover wrap (spine width computed from the padded interior page count) ----
 pages=$(pdfinfo build/capability-matters-print.pdf | awk '/^Pages:/ {print $2}')
 spine=$(awk -v p="$pages" 'BEGIN {printf "%.2f", p * 0.0621}')
 total_w=$(awk -v s="$spine" 'BEGIN {printf "%.2f", 2*203.2 + s + 2*3.175}')

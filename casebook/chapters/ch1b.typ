@@ -31,7 +31,7 @@
   lens-anchor: "D1/PT3",
   leo-anchor: "LEO-1, LEO-4",
   summary: [
-    California in 2004 became the first US state to mandate minimum
+    California in 2004 became the first U.S. state to mandate minimum
     nurse-to-patient ratios in acute-care hospitals — unit-level
     minimums written into law and enforced through inspection. The
     Aiken et al. (_Health Services Research_, 2010) study surveyed
@@ -52,7 +52,7 @@
   ],
   sections: (
     [
-      Nurse staffing is the load-bearing variable in the
+      Nurse staffing is the variable in the
       capability-of-care literature: a substantial body of evidence
       links nurse workload to medical errors, mortality, and rescue
       from complications. The professional consensus on the
@@ -63,7 +63,7 @@
       (a specific ratio actually present at the bedside).#cn()
     ],
     [
-      California in 2004 became the first US state to do it. The
+      California in 2004 became the first U.S. state to do it. The
       law specifies unit-by-unit minimum nurse-to-patient ratios —
       1:6 in medical-surgical at the 2004 start and 1:5 from 2005, with
       tighter ratios in step-down and intensive care — enforceable
@@ -116,7 +116,7 @@
     ],
   ),
   beats: (
-    "California (2004) — first US state to mandate minimum unit-level nurse-to-patient ratios; written into law and enforced",
+    "California (2004) — first U.S. state to mandate minimum unit-level nurse-to-patient ratios; written into law and enforced",
     "Aiken et al. 2010 surveyed 22,336 nurses across CA / PA / NJ; California nurses cared for 1–2 fewer patients each",
     "Modeled implication: PA and NJ would have 10.6% and 13.9% fewer surgical deaths at California's medical-surgical ratios",
     "Hedge preserved: observational cross-sectional; no California baseline; contested stakeholder debate on causation",
@@ -723,7 +723,7 @@
       that displaced other clinical work.#cn()
     ],
     [
-      The hedge is load-bearing and survives into the case
+      The hedge is binding and survives into the case
       verbatim. The authors state in the published paper that
       "our study design precludes definitively establishing a
       causal link" — pre/post evaluation across multiple sites is
@@ -816,7 +816,7 @@
   year: "2014",
   domains-list: ("nursing education", "clinical simulation", "regulation"),
   modes-code: "GKD",
-  impact: "A longitudinal RCT randomized students across multiple US nursing programs to control, 25%, or 50% simulation substitution for traditional clinical hours; 660 took the NCLEX with no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates — the number of nursing regulatory bodies permitting up to 50% simulation substitution in prelicensure RN programs rose from 1 in 2014 to 23 in 2022",
+  impact: "A longitudinal RCT randomized students across multiple U.S. nursing programs to control, 25%, or 50% simulation substitution for traditional clinical hours; 660 took the NCLEX with no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates — the number of nursing regulatory bodies permitting up to 50% simulation substitution in prelicensure RN programs rose from 1 in 2014 to 23 in 2022",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -833,7 +833,7 @@
     fraction of those hours without degrading the clinical
     capability of new nurses. The National Council of State Boards
     of Nursing (NCSBN) ran the study that the field then built on:
-    a longitudinal RCT randomized students across multiple US
+    a longitudinal RCT randomized students across multiple U.S.
     nursing programs to control, 25%, or 50% simulation
     substitution. Hayden et al. (_Journal of Nursing Regulation_,
     2014) reported no statistically significant differences in
@@ -871,7 +871,7 @@
       definitive study. Hayden et al. (_Journal of Nursing
       Regulation_, 2014) reported the NCSBN National Simulation
       Study: a longitudinal randomized controlled trial that
-      assigned pre-licensure nursing students at multiple US
+      assigned pre-licensure nursing students at multiple U.S.
       nursing programs to a control group, a 25%-substitution
       group, or a 50%-substitution group. The substitution
       condition replaced an equivalent fraction of traditional
@@ -895,7 +895,7 @@
     ],
     [
       What followed is the unusual part. Nursing regulation in
-      the US is genuinely decentralized: each state board sets its
+      the U.S. is genuinely decentralized: each state board sets its
       own pre-licensure requirements, and there is no federal
       forcing mechanism. The 2023 follow-up study documents that
       the number of nursing regulatory bodies permitting up to 50%
@@ -923,7 +923,7 @@
     ],
   ),
   beats: (
-    "NCSBN longitudinal RCT — students at multiple US nursing programs randomized to control, 25%, or 50% simulation substitution for traditional clinical hours",
+    "NCSBN longitudinal RCT — students at multiple U.S. nursing programs randomized to control, 25%, or 50% simulation substitution for traditional clinical hours",
     "Hayden et al. 2014 (_J Nursing Regulation_): no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates across groups; 660 took the NCLEX",
     "Result holds only 'under conditions comparable to those described in the study' (high-quality simulation, trained faculty, structured debriefing)",
     "Institutional transfer: number of nursing regulatory bodies permitting up to 50% substitution in RN programs rose from 1 in 2014 to 23 in 2022 — single evidence base propagating across the regulatory field",
@@ -988,7 +988,7 @@
   year: "2007 – 2009",
   domains-list: ("medical education", "retention", "workforce L&D"),
   modes-code: "HKD",
-  impact: "A multi-institution RCT of 537 urology residents across the US and Canada randomized participants to bolus versus spaced-pattern email delivery of validated study questions; spaced education improved acquisition and retention of medical knowledge but did not raise In-Service Examination scores, and a follow-up showed the learning benefit persisting for two years at a modest effect size",
+  impact: "A multi-institution RCT of 537 urology residents across the U.S. and Canada randomized participants to bolus versus spaced-pattern email delivery of validated study questions; spaced education improved acquisition and retention of medical knowledge but did not raise In-Service Examination scores, and a follow-up showed the learning benefit persisting for two years at a modest effect size",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1004,7 +1004,7 @@
     medical trainees is a separate empirical question. Kerfoot et
     al. (_Journal of Urology_, 2007) ran the test that closed the
     loop. A multi-institution RCT randomized 537 urology residents
-    across US and Canadian programs to receive validated study
+    across U.S. and Canadian programs to receive validated study
     questions in either a bolus pattern (concentrated delivery) or
     a spaced pattern (distributed delivery), both via email. The
     spaced-education condition improved acquisition and retention
@@ -1037,7 +1037,7 @@
       Kerfoot et al. (_Journal of Urology_, 2007) ran the test
       that closed the loop. The study was a multi-institution
       randomized controlled trial of urology residents at
-      multiple US and Canadian residency programs. Participants
+      multiple U.S. and Canadian residency programs. Participants
       were randomized to receive validated study questions
       drawn from the American Urological Association Self-Assessment Study Program,
       delivered by email, in either a bolus pattern (concentrated
@@ -1088,7 +1088,7 @@
   ),
   beats: (
     "Spacing — one of the most robust findings in basic learning-science research; transfer to workplace-L&D in medical trainees is the empirical question",
-    "Kerfoot et al. _J Urology_ 2007 — multi-institution RCT, urology residents across US/Canada; validated study questions delivered by email in bolus vs. spaced pattern",
+    "Kerfoot et al. _J Urology_ 2007 — multi-institution RCT, urology residents across U.S./Canada; validated study questions delivered by email in bolus vs. spaced pattern",
     "Spaced-education condition improved acquisition and retention of medical knowledge against bolus comparison",
     "Kerfoot 2009 follow-up (_J Urology_ 181:2671) — learning benefit persisted for 2 years",
     "Scope discipline: speaks to email-delivered validated-question delivery pattern, not spacing in general; strongest randomized strength in the small-tier batch",
@@ -1187,12 +1187,12 @@
   ],
   sections: (
     [
-      PEPFAR (the US President's Emergency Plan for AIDS
+      PEPFAR (the U.S. President's Emergency Plan for AIDS
       Relief) has been one of the largest sustained global
       health programs of the past two decades. Workforce
       capability — clinicians and frontline workers trained on
       current HIV diagnosis, treatment, and prevention
-      protocols — is one of its load-bearing deliverables.
+      protocols — is one of its core deliverables.
       COVID disruption halted in-person training in March 2020 and forced a switch to virtual and blended delivery by May 2021, before any of the evidence base on
       modality equivalence had been built for this
       workforce.#cn()
@@ -1239,7 +1239,7 @@
       The sourcing is settled: the medRxiv version is the
       preprint and the PMC version is the journal-published
       article, and the case cites the published one. What is not
-      settled is whether the measured gains reach behaviour or
+      settled is whether the measured gains reach behavior or
       outcomes. The LENS teaching point is the
       cross-listed pair with the corporate / workforce L&D
       cluster (Cases 79, 65, 83, 70) and the non-US/UK/EU
@@ -1264,7 +1264,7 @@
     after: (
       [Pair with Case 93 (SkillsFuture) as the workforce-capability counterparts at national- and multi-country scale; together they teach what L&D measurement looks like in non-US/UK/EU settings with the evidence-tier honesty intact.],
       [Use the subobjective *Judgment under inadequate evidence* (4.4): the study is the strongest evidence the field has on modality choice in this context, and the practitioner has to trade larger in-person gains against wider online reach on L1–L2 evidence while L3/L4 evidence develops.],
-      [Carry the measurement limit honestly: the study is journal-published, and what it does not establish is L3 behaviour change or L4 patient outcomes; confirmatory replication is the outstanding step.],
+      [Carry the measurement limit honestly: the study is journal-published, and what it does not establish is L3 behavior change or L4 patient outcomes; confirmatory replication is the outstanding step.],
     ),
   ),
   references: (
@@ -2317,7 +2317,7 @@
       national adoption of the 2021 CKD-EPI creatinine equation, which
       eliminates the race coefficient. The replacement equation was
       published in parallel (Inker et al., _NEJM_ 2021). The large commercial
-      laboratories moved within months; a March 2022 survey of US
+      laboratories moved within months; a March 2022 survey of U.S.
       laboratories found 30.3% had adopted the new equation.#cn() In December 2022 the governance response
       reached past the equation itself: the OPTN mandated that
       kidney-transplant programs review their waiting lists and
@@ -2329,7 +2329,7 @@
     ],
     [
       The hedge in both the Task Force report and the follow-up
-      commentary is load-bearing and is preserved in the case. The new
+      commentary is binding and is preserved in the case. The new
       equation introduces a small bias for all groups relative to
       measured GFR; the *net effect on documented disparities in
       nephrology care and transplant access* is not yet measured at
@@ -2595,7 +2595,7 @@
     (_JAMA_, 1986) published the Harvard Medical School minimum
     monitoring standards — which mandated an oxygen analyzer and
     disconnection alarm and *encouraged* the newer continuous pulse
-    oximetry and capnography, the load-bearing additions designed to
+    oximetry and capnography, the additions designed to
     make hypoxemia and misplaced endotracheal tubes detectable early
     enough to recover; both were required by later ASA revisions
     (pulse oximetry ~1989–90, capnography ~1991). The ASA adopted
@@ -2638,7 +2638,7 @@
       minimum set of continuous monitors for every anesthetized
       patient. Pulse oximetry and capnography — then just entering
       wide use — were *encouraged* rather than required in the 1986
-      text, and became the load-bearing additions when later
+      text, and became the additions when later
       revisions mandated them (pulse oximetry ~1989–90, capnography
       ~1991).#cn()
     ],
@@ -2671,7 +2671,7 @@
     ],
     [
       The hedges the field's own histories preserve are
-      load-bearing. The mortality decline has multiple co-varying
+      decisive. The mortality decline has multiple co-varying
       causes — anesthetist training, device design improvements,
       pharmacological change (newer agents are inherently safer),
       team composition with broader monitoring presence, and the
@@ -2827,7 +2827,7 @@
       behavior, organizational practice, and patient outcome —
       and named the methodological work the field had to do to
       get from the current evidence state to a defensible causal
-      claim. The report is itself the load-bearing artifact: a
+      claim. The report is itself the artifact: a
       national-academy synthesis that the central problem of the
       field is the evidence architecture, not the intervention.#cn()
     ],
@@ -3170,7 +3170,7 @@
     ],
     [
       The authors call the findings preliminary and name the
-      load-bearing qualification in the conclusion itself: "Although these findings are preliminary." The lowest skill quartile
+      decisive qualification in the conclusion itself: "Although these findings are preliminary." The lowest skill quartile
       did fewer cases and operated more slowly. The
       skill-versus-volume confound is the central methodological
       hedge of the case. It is plausible — and consistent with the
@@ -3255,7 +3255,7 @@
   reflection-list: (
     [Identify a capability in your domain where the operator's actual technical capability is conventionally treated as too hard to measure at scale and therefore left as a hidden variable in the outcome equation. What would a Birkmeyer-style scalable, blind peer-rated measure look like?],
     [The skill-versus-volume confound is the case. Design the follow-up analysis that would separate skill from volume in your context. What matching, what instrumentation of the volume time-course, what controlled-task companion would be required?],
-    [Birkmeyer is anchored at 2.1 with C3 and C1 alternates. Which anchor would you choose for your own use, and what does that choice say about which conversation in your domain the case is the load-bearing evidence for?],
+    [Birkmeyer is anchored at 2.1 with C3 and C1 alternates. Which anchor would you choose for your own use, and what does that choice say about which conversation in your domain the case is the evidence for?],
   ),
   courses: ("LEN 2", "LEN 5", "LEN 7"),
 )
@@ -3834,7 +3834,7 @@
       alerting when the input is sufficiently out-of-distribution
       — when the model's calibrated confidence does not support
       a clinically actionable alert. The abstention structure is
-      what handles one of the load-bearing failure modes of
+      what handles one of the failure modes of
       Case 5 (Epic Sepsis), where the model alerted at high
       rates against patient populations it had not been
       adequately calibrated against. COMPOSER's abstention
@@ -3843,7 +3843,7 @@
     ],
     [
       The deployment outcomes Boussina and colleagues report are
-      the load-bearing intervention-evidence. Across the
+      the intervention-evidence. Across the
       deployment period at the two UC San Diego hospital sites,
       in-hospital sepsis mortality decreased by 1.9 percentage
       points in absolute terms, and sepsis bundle compliance
@@ -3881,7 +3881,7 @@
       abstention (COMPOSER).#cn()
     ],
     [
-      The hedges the case carries are load-bearing and preserved
+      The hedges the case carries are binding and preserved
       in the prose. The deployment is prospective implementation,
       not an RCT; the mortality reduction and bundle-compliance gain are
       evaluated against the same health system's historical
@@ -3899,7 +3899,7 @@
       abstention is a clinical-workflow capability: the model
       that can refuse to alert when its calibrated confidence
       does not support an alert is the deployment artifact the
-      case names as the load-bearing one.
+      case names as the decisive one.
     ],
   ),
   beats: (
@@ -3924,7 +3924,7 @@
   references: (
     [Boussina, A., Shashikumar, S. P., Malhotra, A., Owens, R. L., El-Kareh, R., Longhurst, C. A., Quintero, K., et al. (2024), "Impact of a deep learning sepsis prediction model on quality of care and survival," _NPJ Digital Medicine_ 7:14, doi:10.1038/s41746-023-00986-6.],
     [Shashikumar, S. P., Wardi, G., Malhotra, A., & Nemati, S. (2021), "Artificial intelligence sepsis prediction algorithm learns to say 'I don't know,'" _NPJ Digital Medicine_ 4:134 — the methodological-foundation paper for the conformal-prediction abstention structure.],
-    [Wong, A., Otles, E., Donnelly, J. P., Krumm, A., McCullough, J., DeTroyer-Cooley, O., et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070 — the load-bearing external-validation paper on Epic Sepsis (Case 5).],
+    [Wong, A., Otles, E., Donnelly, J. P., Krumm, A., McCullough, J., DeTroyer-Cooley, O., et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070 — the external-validation paper on Epic Sepsis (Case 5).],
     [Adams, R., Henry, K. E., Sridharan, A., Soleimani, H., Zhan, A., Rawat, N., Johnson, L., et al. (2022), "Prospective, multi-site study of patient outcomes after implementation of the TREWS machine learning-based early warning system for sepsis," _Nature Medicine_ 28:1455–1460 — the prospective-positive TREWS deployment paper (Case 20).],
   ),
   quote: [The study is before-and-after, not randomized, and every emergency department in the system ran the model, so there is no contemporaneous comparison arm; the conformal-prediction abstention is the methodological contribution the case anchors.],
@@ -3934,7 +3934,7 @@
     delegation typology — prospective-positive with conformal-
     prediction abstention. The deployment reduced in-hospital
     sepsis mortality by 1.9 percentage points and raised sepsis
-    bundle compliance by 5.0 percentage points; the load-bearing
+    bundle compliance by 5.0 percentage points; the decisive
     hedges are that the evaluation is prospective not RCT and
     that the mortality reduction is multifactorial. The
     abstention structure is the methodological contribution the
@@ -4383,7 +4383,7 @@
     "Transparency and reproducibility in artificial intelligence"
     critiqued the McKinney paper for failing to release code,
     trained models, or sufficient methodological detail to
-    permit independent reproduction. The load-bearing hedge the Haibe-Kains comment delivers is that the lack of detailed methods and computer code undermines the study's scientific value. The screening-comparison framing the original paper offered has since been refined by deployment evidence rather than confirmed at the deployment scale the headline implied. The case pairs with
+    permit independent reproduction. the hedge that matters the Haibe-Kains comment delivers is that the lack of detailed methods and computer code undermines the study's scientific value. The screening-comparison framing the original paper offered has since been refined by deployment evidence rather than confirmed at the deployment scale the headline implied. The case pairs with
     Case 35 (Radiology AI Miscalibration), Case 5 (Epic
     Sepsis), and Case 26 (Pulse oximetry).
   ],
@@ -4445,7 +4445,7 @@
       prospective deployment produces another, and the two are
       not interchangeable. Pair with Case 5 (Epic Sepsis) for
       the high-profile-result-versus-deployment-evidence thread
-      in healthcare AI; Epic Sepsis is the load-bearing case in
+      in healthcare AI; Epic Sepsis is the reference case in
       the corpus for the gap between vendor or developer claims
       and external evaluation, and DeepMind Mammography sits in
       the same conceptual family at a different domain. Pair
@@ -4457,7 +4457,7 @@
       variation has implications for deployment.#cn()
     ],
     [
-      The honest hedges the case carries are load-bearing. The
+      The honest hedges the case carries are not decoration. The
       Haibe-Kains comment is not a finding that the McKinney
       paper was wrong; it is a finding that the paper as
       published did not establish reproducibility. The
@@ -4480,7 +4480,7 @@
     ],
   ),
   beats: (
-    "McKinney et al. Nature Jan 1 2020: deep-learning mammography reduces false-positives 5.7 pp (US) / 1.2 pp (UK), false-negatives 9.4 / 2.7 pp vs radiologists",
+    "McKinney et al. Nature Jan 1 2020: deep-learning mammography reduces false-positives 5.7 pp (U.S.) / 1.2 pp (UK), false-negatives 9.4 / 2.7 pp vs radiologists",
     "Press framing: \"AI outperforms radiologists\"; paper's careful claims do not carry the framing's deployment implications",
     "Haibe-Kains et al. Nature Oct 14 2020 comment: code not released, models not released, methodology not reproducible from publication",
     "Comment does not allege error; argues reproducibility not established; hyperparameters, augmentation and training pipelines undocumented",
@@ -4527,7 +4527,7 @@
     (Epic Sepsis), and Case 26 (pulse oximetry population
     heterogeneity). The Haibe-Kains comment is a reproducibility
     finding, not a finding of error; the distinction is the
-    load-bearing hedge.
+    decisive hedge.
   ],
   literature-items: (
     [McKinney et al. (2020), _Nature_ — international evaluation of AI mammography screening],
@@ -4571,7 +4571,7 @@
     (_J Am Acad Dermatol_, 2011; n=8,344 patients across 9,912
     treatment courses) found 29 fetal exposures and concluded
     "no evidence that iPLEDGE significantly decreased the risk of
-    fetal exposure" compared with the prior program. Collins et al. (2014) put roughly 150 isotretinoin-exposed pregnancies a year in the US despite the program; FDA adverse-event reports give 218 to 310 a year after 2011,
+    fetal exposure" compared with the prior program. Collins et al. (2014) put roughly 150 isotretinoin-exposed pregnancies a year in the U.S. despite the program; FDA adverse-event reports give 218 to 310 a year after 2011,
     with non-adherence — missed pills, inconsistent condom use —
     the documented driver. The teaching point is that an
     authorization mechanism without adherence support does not
@@ -4605,9 +4605,9 @@
       The measured outcome diverges sharply. Shin et al.
       (_Journal of the American Academy of Dermatology_, 2011)
       studied 8,344 Kaiser Permanente patients across 9,912 isotretinoin treatment courses from March 2004 to February 2008, spanning both programs, and identified 29 fetal exposures — a rate that fell from 3.11 to 2.67 per 1000 courses after iPLEDGE (P = .69). The paper's conclusion is the
-      load-bearing sentence: "no evidence that iPLEDGE
+      decisive sentence: "no evidence that iPLEDGE
       significantly decreased the risk of fetal exposure" relative
-      to the prior SMART program. Collins et al. (2014) report approximately 150 isotretinoin-exposed pregnancies a year in the United States despite the program operating as designed; FDA adverse-event reports analysed by Tkachenko et al. (2019) give 218 to 310 a year after 2011. The
+      to the prior SMART program. Collins et al. (2014) report approximately 150 isotretinoin-exposed pregnancies a year in the United States despite the program operating as designed; FDA adverse-event reports analyzed by Tkachenko et al. (2019) give 218 to 310 a year after 2011. The
       documented driver in both is non-adherence: missed pills,
       inconsistent condom use, the assumption that one cycle of
       missed contraception is unlikely to coincide with the
@@ -4677,7 +4677,7 @@
     same; the measured outcome is very different because the
     capability the program exists to enforce depends on
     patient adherence the program does not instrument. The
-    "no significant decrease" finding is load-bearing and
+    "no significant decrease" finding is binding and
     survives into the case verbatim.
   ],
   lens-approach: [
@@ -4921,7 +4921,7 @@
       Team Planning and Managing a Team — and the smallest gain
       was in Interpersonal Relations. The authors do not soften
       this; the paper states it plainly, and the
-      smaller-gain-on-the-hardest-half finding is the load-bearing
+      smaller-gain-on-the-hardest-half finding is the decisive
       honest result.#cn()
     ],
     [
@@ -4959,7 +4959,7 @@
   approaches: (
     during: (
       [Resolve collaboration capability into measurable components — Team Planning, Managing a Team, Interpersonal Relations — and structure the training so each component has tools, exercises, and an assessment instrument.],
-      [Validate the measurement instrument before relying on it for evaluation; the TEAMS instrument's three-component structure is the load-bearing methodological contribution.],
+      [Validate the measurement instrument before relying on it for evaluation; the TEAMS instrument's three-component structure is the methodological contribution.],
       [Acknowledge in the program design that the interpersonal component moved least and did not reach the intended level of use; the authors' own recommendation is more role-play and real-situation practice, not more lecture.],
     ),
     after: (
@@ -5051,7 +5051,7 @@
       capability question. Moving validated evidence into clinical
       practice reliably is itself a competency that has to be
       designed, trained, and evaluated. The CTSA (Clinical and
-      Translational Science Awards) program is the primary US
+      Translational Science Awards) program is the primary U.S.
       mechanism for building that workforce, and the TL1 / T32
       programs are its training arm.#cn()
     ],
@@ -5100,7 +5100,7 @@
     ],
   ),
   beats: (
-    "Implementation science = moving validated evidence into operational practice; CTSA TL1/T32 is the US training mechanism",
+    "Implementation science = moving validated evidence into operational practice; CTSA TL1/T32 is the U.S. training mechanism",
     "Survey N=50 CTSA-funded TL1 programs: most name collaboration / team science / multi-disc training as goals",
     "Far fewer name the specific competency practices — competency-based curriculum 6%, experiential learning 24%, program evaluation 38%",
     "Same enthusiasm-ahead-of-evidence pattern as IPE (Case 28) at smaller scale — operational practices lag stated goals",
@@ -5179,7 +5179,7 @@
     healthcare workforces meet at some point: the pharmacist's
     capacity was being absorbed by dispensing-accuracy checking, which
     crowded out the clinical work that requires pharmacist judgment.
-    The 2016 Pharmacy Technician and Assistant Role Redesign project did not expand scope; it mapped the ground for expanding it — a six-month study of the national workforce built from a literature review, a survey, focus groups, interviews and case studies. It found technicians in 95% of hospital pharmacies, roles varying widely between states, no national regulation of the workforce, and board guidance confining technicians to work not requiring professional judgement. A 2021 _Journal of Pharmacy Practice and Research_ cross-sectional survey at one Victorian teaching hospital then measured what staff would accept: 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction register entries, and technician-taken medication histories split pharmacists (38%) from technicians (92%). The
+    The 2016 Pharmacy Technician and Assistant Role Redesign project did not expand scope; it mapped the ground for expanding it — a six-month study of the national workforce built from a literature review, a survey, focus groups, interviews and case studies. It found technicians in 95% of hospital pharmacies, roles varying widely between states, no national regulation of the workforce, and board guidance confining technicians to work not requiring professional judgment. A 2021 _Journal of Pharmacy Practice and Research_ cross-sectional survey at one Victorian teaching hospital then measured what staff would accept: 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction register entries, and technician-taken medication histories split pharmacists (38%) from technicians (92%). The
     evidence-tier flag renders under the title: the operational
     figures come from a program-report rather than an independent
     multi-site audit. Future validation will continue on long-term
@@ -5209,10 +5209,10 @@
       induced framework calls for at the small tier.#cn()
     ],
     [
-      What the project produced was a map, not an outcome series: technicians in 95% of hospital pharmacies, roles differing state by state, no national regulation of the workforce, and board guidance holding technicians to work that does not require professional judgement. The 2021 _Journal of Pharmacy Practice and Research_ cross-sectional survey carried it into the workforce-attitudes layer — of 122 staff invited at one Victorian teaching hospital, 61 responded; 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction entries, and fewer than 10% thought technicians were adequately used as things stood.#cn()
+      What the project produced was a map, not an outcome series: technicians in 95% of hospital pharmacies, roles differing state by state, no national regulation of the workforce, and board guidance holding technicians to work that does not require professional judgment. The 2021 _Journal of Pharmacy Practice and Research_ cross-sectional survey carried it into the workforce-attitudes layer — of 122 staff invited at one Victorian teaching hospital, 61 responded; 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction entries, and fewer than 10% thought technicians were adequately used as things stood.#cn()
     ],
     [
-      The evidence-tier flag is load-bearing. The project report is a scoping document and reports no throughput, turnaround or error outcomes; the acceptance survey is peer-reviewed but covers one hospital and 61 respondents. No multi-site outcome evaluation of the expanded role exists in the Australian record. The cross-sectional survey is
+      The evidence-tier flag is binding. The project report is a scoping document and reports no throughput, turnaround or error outcomes; the acceptance survey is peer-reviewed but covers one hospital and 61 respondents. No multi-site outcome evaluation of the expanded role exists in the Australian record. The cross-sectional survey is
       peer-reviewed but measures attitudes rather than outcomes.
       The case is included because the pattern is teachable and
       the practitioner literature is consistent; the magnitudes
@@ -5332,7 +5332,7 @@
       that the prior paper-based workflow had not.#cn()
     ],
     [
-      The system delivered structured prompts, reminders, and a referral pathway through the CHW's mobile phone: CHWs registered pregnancies, followed mother-infant pairs, and raised real-time alerts to the ambulance system, the health facility, the district hospital and the centre. The
+      The system delivered structured prompts, reminders, and a referral pathway through the CHW's mobile phone: CHWs registered pregnancies, followed mother-infant pairs, and raised real-time alerts to the ambulance system, the health facility, the district hospital and the center. The
       design move worth naming is that the technology was scoped
       to extend the CHW's existing diagnostic-and-referral role,
       not to substitute for clinical judgment further up the
@@ -5384,7 +5384,7 @@
   ),
   approaches: (
     during: (
-      [Scope the tool to extend an existing frontline role rather than substitute for it; the CHW's village standing is the load-bearing capability the technology can support but cannot create.],
+      [Scope the tool to extend an existing frontline role rather than substitute for it; the CHW's village standing is the capability the technology can support but cannot create.],
       [Instrument the failure modes that the formal health system cannot see — a pregnancy never registered, a danger sign at home, an ambulance never called — so the tool turns village-level observation into health-system-visible signal.],
       [Carry the evidence-tier flag through the deployment documentation: one peer-reviewed evaluation is the anchor finding, not the closure of the question.],
     ),
@@ -5406,7 +5406,7 @@
     Rwanda mHealth is a small-tier capability-extension case at
     the frontline: technology designed around an existing CHW
     role, with peer-reviewed evaluation showing uptake gains only when
-    the system was paired with added support, and an interrupted national-survey time series showing no significant change at all. The evidence-tier flag is load-bearing — two process studies do not close the durability or generalization question, and the broader impact claims rest partly on practitioner reporting. Future
+    the system was paired with added support, and an interrupted national-survey time series showing no significant change at all. The evidence-tier flag is binding — two process studies do not close the durability or generalization question, and the broader impact claims rest partly on practitioner reporting. Future
     validation ongoing.
   ],
   lens-approach: [
@@ -5464,7 +5464,7 @@
     initiative supports faster reviews and earlier application.
     A 2025 scoping review on PMDA-approved AI radiology software
     documents transparency variability across approvals — a
-    load-bearing hedge the case preserves. The teaching point
+    decisive hedge the case preserves. The teaching point
     is structural: the regulator designed change-control as a
     deliverable rather than defaulting to "approve once, then
     watch," which is the governance failure pattern that
@@ -5512,7 +5512,7 @@
       to track it.#cn()
     ],
     [
-      The 2025 medRxiv scoping review on PMDA-approved AI radiology software read the package inserts of the 20 AI radiology products among 151 approved SaMD: reported sensitivity ran from 67.7 to 100 percent, and no product reported complete case demographics for the studies behind it. The hedge is load-bearing: IDATEN is
+      The 2025 medRxiv scoping review on PMDA-approved AI radiology software read the package inserts of the 20 AI radiology products among 151 approved SaMD: reported sensitivity ran from 67.7 to 100 percent, and no product reported complete case demographics for the studies behind it. The hedge is binding: IDATEN is
       a structural improvement in regulatory architecture, but
       the per-approval transparency the framework enables varies
       and has been documented as a research finding rather than
@@ -5568,7 +5568,7 @@
     scope is pre-agreed at initial approval, in-scope changes
     get streamlined review, and the delegation-with-revocation
     structure is explicit. The 2025 scoping review documents
-    transparency variability across approvals — load-bearing
+    transparency variability across approvals — decisive
     hedge preserved. What no source yet reports is outcome
     durability across the approved devices.
   ],

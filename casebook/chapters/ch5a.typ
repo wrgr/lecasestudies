@@ -861,7 +861,7 @@
     at the manufacturer's bench.
   ],
   lens-approach: [
-    The load-bearing lesson is post-deployment surveillance. Field
+    the lesson is post-deployment surveillance. Field
     rupture reports arrived over years but were never aggregated and
     interpreted as a single class-level safety signal, so an obvious
     failure mode stayed hidden inside a process that kept receiving the
@@ -880,7 +880,7 @@
     [Birsch & Fielder, engineering-ethics casebooks],
   ),
   reflection-list: (
-    [Where in your domain does a regulator receive manufacturer test data without an independent verification pipeline? What is the load-bearing trust assumption?],
+    [Where in your domain does a regulator receive manufacturer test data without an independent verification pipeline? What is the decisive trust assumption?],
     [Design the verification regime that should have surrounded ammonium-nitrate inflator testing. Who funds it, who runs it, and what does it produce?],
     [Takata's propellant degraded slowly with heat and humidity, so a part safe at delivery became lethal years later. Identify a component in your domain whose qualification testing does not cover its full service life, and specify the aging test that would close the gap.],
   ),
@@ -1498,7 +1498,7 @@
     recall did not.
   ],
   lens-approach: [
-    The load-bearing lesson is change control. Engineers changed the
+    the lesson is change control. Engineers changed the
     ignition switch but kept the same part number, defeating
     configuration traceability so the field failures could never be tied
     back to a design change and the records insisted the part had "never
@@ -1758,7 +1758,7 @@
     ],
   ),
   beats: (
-    "Equifax held identity data on most US adults; security flagged an Apache Struts patch to IT",
+    "Equifax held identity data on most U.S. adults; security flagged an Apache Struts patch to IT",
     "Unapplied patch let attackers exfiltrate 147M Americans' data over 2.5 months",
     "Senate subcommittee found systematically inadequate patching and no comprehensive IT asset inventory",
     "Routine work — patching, inventory, monitoring, response — each below standard and each named in a 2015 audit",

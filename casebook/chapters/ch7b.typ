@@ -23,7 +23,7 @@
   year: "2001 – present",
   domains-list: ("e-government", "distributed data exchange", "national IT infrastructure"),
   modes-code: "GKN",
-  impact: "By December 2024 Estonia reported effectively 100% digitalization of government services across the X-Road data-exchange layer, with sub-five-minute tax filing and >95% of tax declarations filed electronically; the load-bearing self-critique is that the country has now created its own legacy system — the very thing the program set out to avoid",
+  impact: "By December 2024 Estonia reported effectively 100% digitalization of government services across the X-Road data-exchange layer, with sub-five-minute tax filing and >95% of tax declarations filed electronically; the self-critique is that the country has now created its own legacy system — the very thing the program set out to avoid",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -37,7 +37,7 @@
     monolith. By December 2024 the country reported effectively
     100% digitalization of government services across X-Road,
     with more than 95% of tax declarations filed electronically, most in a few minutes. The case sits inside C7 not because of the
-    headline outcomes but because of the load-bearing
+    headline outcomes but because of the decisive
     self-critique surfaced in the peer-reviewed analysis: by
     committing the country to X-Road as the data-exchange layer,
     Estonia has effectively created its own legacy system — the
@@ -46,7 +46,7 @@
     other case: success-as-aging is the failure mode, and the
     modernization regime must contemplate its own future
     obsolescence as part of its current design discipline. The
-    load-bearing self-critique — the no-legacy paradox — is
+    decisive self-critique — the no-legacy paradox — is
     peer-reviewed text in Kattel and Mergel, not practitioner
     reflection, and the program is well-documented in peer-reviewed
     and program-report sources alike. What remains open is whether
@@ -79,7 +79,7 @@
       protocol elsewhere.#cn()
     ],
     [
-      The load-bearing self-critique is what makes this a C7
+      the self-critique is what makes this a C7
       case and not just a digital-government success story. The
       analysis says it outright. Kattel and Mergel write that with the decision to focus its digital development on X-Road only, Estonia has effectively created its own legacy system — a move that the initial thinkers wanted to avoid. The paradox is named against Estonia's own design rule: no legacy, meaning public digital infrastructure should not run on solutions older than thirteen years. The protocol is
       now twenty-plus years old; the agency systems that hang
@@ -90,7 +90,7 @@
     ],
     [
       The sourcing is worth stating precisely, because the
-      self-critique is the load-bearing part. The peer-reviewed
+      self-critique is the decisive part. The peer-reviewed
       sources cover the program's design, its trajectory, and the
       self-critical framing including the no-legacy paradox; the
       program-report and practitioner material supplies the
@@ -122,7 +122,7 @@
   beats: (
     "X-Road launched 2001 as distributed data-exchange answer to fragmented government databases",
     "By Dec 2024: effectively 100% digitalization; sub-five-minute tax filing; >95% of declarations filed electronically",
-    "Load-bearing self-critique — the no-legacy paradox — surfaces in the peer-reviewed analysis",
+    "decisive self-critique — the no-legacy paradox — surfaces in the peer-reviewed analysis",
     "Success-as-aging is the failure mode; generational replacement of the platform itself is the new modernization problem",
     "Sources are peer-reviewed analysis plus program-report and practitioner material; whether the replacement plans carry through is open",
   ),
@@ -134,7 +134,7 @@
     ),
     after: (
       [Track the platform's aging trajectory as a system variable — accreted agency logic, protocol drift, dependency depth — not only its operational uptime.],
-      [Carry the self-critical framing honestly; the load-bearing teaching is that success creates its own aging problem, not that the program failed.],
+      [Carry the self-critical framing honestly; the teaching is that success creates its own aging problem, not that the program failed.],
       [Pair with other C7 cases (Patriot/Dhahran, Ariane 5, Knight Capital, CrowdStrike, TSB) for the failure-and-modernization contrast, and with Cases 116–26 for the small-tier transition thread.],
     ),
   ),
@@ -227,7 +227,7 @@
     // -- What Is Emerging --
     [
       Since the first fatal Autopilot crash — Joshua Brown, Florida, 2016 —
-      NHTSA has documented 13 fatal crashes among the 467 Autopilot crashes it analysed through August 2023. The pattern is consistent: long periods
+      NHTSA has documented 13 fatal crashes among the 467 Autopilot crashes it analyzed through August 2023. The pattern is consistent: long periods
       of capable operation, attenuating driver attention, and then an edge
       case — a stationary fire truck, a faded lane marking, a perpendicular
       crossing — that the disengaged driver fails to catch in time. The very
@@ -1156,7 +1156,7 @@
   summary: [
     Aadhaar — India's biometric digital-identity system, with more than 1.2 billion enrolled — was designed to streamline
     welfare delivery and reduce identity fraud. Across more than a
-    decade of deployment the load-bearing failure mode became
+    decade of deployment the failure mode became
     operational exclusion: when biometric authentication failed
     for an individual (worn fingerprints, missing iris match,
     connectivity loss at the point of service), the welfare to
@@ -1165,7 +1165,7 @@
     Aadhaar judgment: the 4–1 majority upheld Section 7 of the
     Aadhaar Act, which conditions subsidies and benefits on
     authentication, while Justice D. Y. Chandrachud's lone dissent
-    named the load-bearing principle — that "exclusion based on
+    named the decisive principle — that "exclusion based on
     technological errors, with no fault of the individual, is a
     violation of dignity." The empirical predicate is the
     documented exclusion record: the 2017 Jharkhand starvation deaths (Santoshi Kumari, 28 September 2017, one of 57 starvation deaths the Right to Food Campaign investigated across nine states from 2015, of which at least nineteen were directly linked to Aadhaar) and the Drèze–Khalid–Khera–Somanchi field study finding over forty percent of non-transacting households citing Aadhaar-authentication problems. The correction that followed was
@@ -1197,7 +1197,7 @@
       verification to the biometric.#cn()
     ],
     [
-      The load-bearing failure mode emerged across deployment:
+      the failure mode emerged across deployment:
       operational exclusion. When biometric authentication
       failed at the ration-shop card-reader or the pension
       window — worn fingerprints from manual labor, missing
@@ -1230,7 +1230,7 @@
       e-KYC context for persons with disabilities.#cn()
     ],
     [
-      The evidence-tier flag is split and load-bearing. The
+      The evidence-tier flag is split and decisive. The
       court judgments themselves are investigation-grade — the
       published opinions are the record. The empirical body
       rests on two tiers: the lived-exclusion account is
@@ -1264,7 +1264,7 @@
   ),
   beats: (
     "Aadhaar at 1.2 billion-plus enrolled, ~800 million on NFSA rations — biometric authentication delegated for welfare access at the point of service",
-    "Operational exclusion as load-bearing failure mode — worn fingerprints, missing iris, connectivity loss at the operator interface",
+    "Operational exclusion as decisive failure mode — worn fingerprints, missing iris, connectivity loss at the operator interface",
     "Puttaswamy II (2018) — 4–1 majority upholds Section 7; Chandrachud's dissent: exclusion from technological error, no fault of the individual, violates dignity",
     "Empirical predicate — Santoshi Kumari, Jharkhand, September 2017; 19 of 57 Right to Food Campaign starvation deaths across nine states since 2015 linked to Aadhaar; Drèze–Khera field data — over 40% of non-transacting households cite ABBA",
     "Correction is executive and doctrinal, not a majority holding — circulars barring ration denial; the distinct 2025 Pragya Prasun ruling reads a right to accessible digital access into Article 21",
@@ -1345,9 +1345,9 @@
   slug: "care-principles-indigenous-data",
   title: "CARE Principles — Indigenous Data Governance as a Replaced Regime",
   year: "2019 – 2020 (principles); ongoing",
-  domains-list: ("data governance", "Indigenous data sovereignty", "Australia / NZ / US"),
+  domains-list: ("data governance", "Indigenous data sovereignty", "Australia / NZ / U.S."),
   modes-code: "GN",
-  impact: "The CARE Principles (Collective Benefit, Authority to Control, Responsibility, Ethics) were developed by Indigenous Data Sovereignty networks in Aotearoa NZ, Australia, and the US to shift the framing from consultation under existing data regimes to Indigenous Peoples as the data owners and beneficiaries; the Lowitja Journal 2025 documents one of the first detailed implementation case studies",
+  impact: "The CARE Principles (Collective Benefit, Authority to Control, Responsibility, Ethics) were developed by Indigenous Data Sovereignty networks in Aotearoa NZ, Australia, and the U.S. to shift the framing from consultation under existing data regimes to Indigenous Peoples as the data owners and beneficiaries; the Lowitja Journal 2025 documents one of the first detailed implementation case studies",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1419,7 +1419,7 @@
       evidence the principles paper does not contain. The
       implementation literature is emerging, and the Lowitja
       paper is the anchor; adjacent work from the Australian,
-      New Zealand, and US Indigenous Data Sovereignty networks
+      New Zealand, and U.S. Indigenous Data Sovereignty networks
       will continue to consolidate the evidence base.#cn()
     ],
     [
@@ -1436,7 +1436,7 @@
   ),
   beats: (
     "CARE Principles (Carroll et al. 2020): Collective Benefit, Authority to Control, Responsibility, Ethics",
-    "Developed by Indigenous Data Sovereignty networks in Aotearoa NZ, Australia, US — explicit non-US-centered leadership",
+    "Developed by Indigenous Data Sovereignty networks in Aotearoa NZ, Australia, U.S. — explicit non-US-centered leadership",
     "Governance-replacement structure, not governance-supplementation — existing privacy regimes named as inadequate",
     "Lowitja Journal 2025 documents Ngangk Yira Institute implementation — first detailed case study at institutional scale",
     "Supports subobjective *Fairness beyond omission* (4.6) — fairness as positive sovereignty, not subtraction of biased features",

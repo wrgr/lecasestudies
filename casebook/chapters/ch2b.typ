@@ -37,7 +37,7 @@
     change in on-the-job performance. The headline finding is that
     transfer is positively related to four categories of variable:
     cognitive ability, conscientiousness, motivation, and the work
-    environment. The authors report no clear superiority of individual over situational predictors; the work environment is the one category an organization can actively manage, which is what makes it the *system* layer's lever. The authors are explicit, and the load-bearing
+    environment. The authors report no clear superiority of individual over situational predictors; the work environment is the one category an organization can actively manage, which is what makes it the *system* layer's lever. The authors are explicit, and the decisive
     hedge survives into the case: the literature is characterized
     by "inconsistent measurement of transfer and significant
     variability in findings," and downstream practitioner summaries
@@ -66,7 +66,7 @@
       All four categories were positively related to transfer. Cognitive ability carried the largest corrected correlation and the work environment a moderate one; the authors find no clear superiority of individual over situational variables. The work environment is the only *system* variable in the set — and the only one an organization can actively manage.#cn()
     ],
     [
-      The load-bearing hedge survives. The authors are explicit
+      the hedge that matters survives. The authors are explicit
       that the literature is "characterized by inconsistent
       measurement of transfer and significant variability in
       findings." Downstream practitioner summaries note that
@@ -106,7 +106,7 @@
     "Blume et al. meta-analysis of 89 studies on training transfer — extent to which training produces on-job behavior change",
     "Transfer positively related to cognitive ability, conscientiousness, motivation, and work environment",
     "Work environment (transfer climate, supervisor support) a moderate predictor — and the only system-layer variable an organization can manage",
-    "Load-bearing hedge: 'inconsistent measurement of transfer and significant variability in findings' — preserved in case",
+    "decisive hedge: 'inconsistent measurement of transfer and significant variability in findings' — preserved in case",
     "Pair with Kirkpatrick (Case 79) — together they close the corporate-L&D gap and motivate the return-to-work interface",
   ),
   approaches: (
@@ -133,7 +133,7 @@
     Blume et al. is the strongest current peer-reviewed
     synthesis on training transfer: cognitive ability,
     conscientiousness, motivation, and a supportive work environment all predict whether training produces on-job behavior change, with no one category dominant. The literature carries explicit
-    load-bearing hedges about inconsistent measurement and
+    decisive hedges about inconsistent measurement and
     significant variability; the case is included with the
     hedges intact.
   ],
@@ -155,7 +155,7 @@
     [Burke & Hutchins (2007), _Human Resource Development Review_],
   ),
   reflection-list: (
-    [Identify a training program in your organization that produced strong Level 2 evidence (learning) but unclear Level 3 evidence (behavior change). What does the meta-analysis predict the decisive variable was, and how would you re-design the program with the work environment as a first-class design variable?],
+    [Identify a training program in your organization that produced strong Level 2 evidence (learning) but unclear Level 3 evidence (behavior change). What does the meta-analysis predict the variable was, and how would you re-design the program with the work environment as a first-class design variable?],
     [Specify the work-environment instrumentation you would put in place for a new training deployment — supervisor briefing artifacts, peer-support structures, on-job practice opportunity — so transfer can be measured conditional on environment, not just on training fidelity.],
     [The meta-analysis is the strongest current synthesis and carries explicit hedges about measurement inconsistency. What is the minimum additional evidence you would require before treating any specific magnitude from this literature as settled in your decision-making?],
   ),
@@ -170,7 +170,7 @@
   year: "2019",
   domains-list: ("K-12 education", "scalable interventions", "equity"),
   modes-code: "DNK",
-  impact: "A nationally representative RCT of US 9th-graders found a less-than-1-hour online growth-mindset intervention improved grades among lower-achieving students and increased advanced-math enrollment, but the effect was conditional on school context — the intervention changed grades when peer norms aligned with the messages of the intervention",
+  impact: "A nationally representative RCT of U.S. 9th-graders found a less-than-1-hour online growth-mindset intervention improved grades among lower-achieving students and increased advanced-math enrollment, but the effect was conditional on school context — the intervention changed grades when peer norms aligned with the messages of the intervention",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -187,7 +187,7 @@
     population scale and what the structural moderators were.
     Yeager et al. (_Nature_, 2019) ran the test that became the
     field's reference point. A nationally representative RCT of
-    US 9th-graders received a less-than-1-hour online growth-
+    U.S. 9th-graders received a less-than-1-hour online growth-
     mindset intervention; the trial documented improved grades
     among lower-achieving students and increased advanced-math
     enrollment relative to control. The headline finding for the
@@ -219,8 +219,8 @@
     [
       Yeager et al. (_Nature_, 2019) ran the trial that became
       the field's reference point. The design was a nationally
-      representative RCT of US 9th-graders — drawn from a sample
-      stratified to reflect the US ninth-grade population — with
+      representative RCT of U.S. 9th-graders — drawn from a sample
+      stratified to reflect the U.S. ninth-grade population — with
       the intervention delivered as a less-than-1-hour online
       module. Outcomes included grades, course-taking, and
       contextual measures of the classroom and peer environment.
@@ -251,7 +251,7 @@
       be averaged away. The trial's structural answer is that the
       intervention is not universally effective, and naming where
       it does and does not work is the scientific contribution.
-      The trial's conditional — grades changed when peer norms aligned with the intervention's messages — survives verbatim into the case because it is the load-bearing hedge: a
+      The trial's conditional — grades changed when peer norms aligned with the intervention's messages — survives verbatim into the case because it is the hedge that matters: a
       headline-only reading ("growth mindset works at population
       scale") misses the substance, and an opposite-headline
       reading ("growth mindset doesn't work") misses it equally.
@@ -295,7 +295,7 @@
   ),
   beats: (
     "Growth-mindset interventions — short scalable psychological interventions; substantial laboratory and small-school evidence base by the late 2010s",
-    "Yeager et al. _Nature_ 2019 — nationally representative RCT of US 9th-graders; less-than-1-hour online module; pre-registered moderator analysis",
+    "Yeager et al. _Nature_ 2019 — nationally representative RCT of U.S. 9th-graders; less-than-1-hour online module; pre-registered moderator analysis",
     "Headline outcome: improved grades among lower-achieving students; increased advanced-math enrollment relative to active control",
     "Conditional preserved verbatim: 'the intervention changed grades when peer norms aligned with the messages of the intervention'",
     "Methodological importance: treatment-effect heterogeneity as the finding, not as a nuisance; pair with Case 86 (Gándara) at the scalable-equity-intervention layer",
@@ -303,7 +303,7 @@
   approaches: (
     during: (
       [Pre-register the moderator analysis at the design stage; the heterogeneity-as-finding stance depends on the moderator being a planned analysis rather than a post-hoc inspection.],
-      [Sample so that the moderator can be estimated — a nationally representative sample of US 9th-graders, in this case — so the heterogeneity is observed across the population the headline claim would otherwise speak to.],
+      [Sample so that the moderator can be estimated — a nationally representative sample of U.S. 9th-graders, in this case — so the heterogeneity is observed across the population the headline claim would otherwise speak to.],
       [Treat the intervention as scalable on the headline finding and conditional on the moderator at the same time; designing predictions to trigger support means targeting the support to those who benefit, in the environments where the support can land.],
     ),
     after: (
@@ -329,7 +329,7 @@
     intervention improved grades among lower-achieving
     students and increased advanced-math enrollment — and the
     effect was conditional on peer norms. The qualifying
-    language is the load-bearing hedge; headline-only
+    language is the hedge that matters; headline-only
     readings in either direction miss the substance.
   ],
   lens-approach: [
@@ -941,7 +941,7 @@
     during: (
       [Plan the pre-training phase as a first-class design deliverable: line-manager briefings, work-context preparation, learner readiness assessment, instrumented before the event runs.],
       [Design the post-training phase before delivery: supervisor support artifacts, peer-support structures, scheduled on-job practice opportunities on the specific tasks the training targets.],
-      [Treat the training event as one component of a three-phase architecture, not as the whole program — Blume's finding (Case 65) is the load-bearing reason the architecture has to span the boundary.],
+      [Treat the training event as one component of a three-phase architecture, not as the whole program — Blume's finding (Case 65) is the decisive reason the architecture has to span the boundary.],
     ),
     after: (
       [Pair with Case 83 (SCM) to measure whether the deployed program worked at the tails — HILS designs the environment, SCM samples the outcomes; together they structure the chain-of-evidence cross (Case 79).],
@@ -1032,7 +1032,7 @@
     [
       The 2025 preprint reports a longitudinal study of
       reflective-practice development across such a program.
-      The methodological move worth naming is the focus on development rather than snapshot: two established coding schemes are applied to four successive years of assignments from one cohort — between 36 and 38 reports a year — and the study reports the trajectory. The authors are careful about what that buys — the study is not experimental, the reports were never standardised across years, and they make no claims about causation.#cn()
+      The methodological move worth naming is the focus on development rather than snapshot: two established coding schemes are applied to four successive years of assignments from one cohort — between 36 and 38 reports a year — and the study reports the trajectory. The authors are careful about what that buys — the study is not experimental, the reports were never standardized across years, and they make no claims about causation.#cn()
     ],
     [
       The teaching point is the construct boundary. Measuring
@@ -1280,7 +1280,7 @@
   year: "2016 – 2025",
   domains-list: ("learning analytics", "online learning", "mobile/distance learning"),
   modes-code: "TKD",
-  impact: "Van Campenhout et al. (LAK 2023) replicated the doer-effect causal claim across seven courses with 15.2 million data points; L@S 2025 replication held with AI-generated practice questions; LAK 2025 non-WEIRD radio/phone extension found weaker effect for learners with higher prior educational attainment — the load-bearing heterogeneity finding",
+  impact: "Van Campenhout et al. (LAK 2023) replicated the doer-effect causal claim across seven courses with 15.2 million data points; L@S 2025 replication held with AI-generated practice questions; LAK 2025 non-WEIRD radio/phone extension found weaker effect for learners with higher prior educational attainment — the heterogeneity finding",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1301,7 +1301,7 @@
     receiving lecture content via community radio and practice
     via basic mobile phones, and reported that the doer-effect
     relationship was weaker for learners with higher prior
-    educational attainment — the load-bearing heterogeneity
+    educational attainment — the decisive heterogeneity
     finding the corpus most needs. The case sits with Case 69
     (Duolingo half-life) and Case 17 (spaced education RCTs)
     as the replication-arc thread. The closed loop is closed
@@ -1343,7 +1343,7 @@
     ],
     [
       The 2025 LAK non-WEIRD extension by Butler and
-      collaborators is the case's load-bearing methodological
+      collaborators is the case's decisive methodological
       contribution. The extension tested the effect for learners
       receiving lecture content via community radio and practice
       via basic mobile phones — a delivery substrate
@@ -1401,7 +1401,7 @@
       [Test design-principle generalization at the modality boundary before claiming generalization across modalities; the LAK 2025 non-WEIRD extension is the methodological model for that boundary test.],
     ),
     after: (
-      [Publish the heterogeneity as the result, not the adjusted-away noise; the non-WEIRD prior-attainment finding is what extends the principle's actionable scope and is the load-bearing pedagogical content of the case.],
+      [Publish the heterogeneity as the result, not the adjusted-away noise; the non-WEIRD prior-attainment finding is what extends the principle's actionable scope and is the decisive pedagogical content of the case.],
       [Build the long-term-retention and cross-content-transfer studies the replication arc names as the next open questions; the closed loop the case completes is honest about what it does and does not close.],
       [Carry the case in syllabi alongside Cases 69 and 17 so the replication-arc thread is taught as a thread, not as three independent examples; the closed-loop discipline at field scale is more visible across the three cases than within any one.],
     ),
@@ -1526,7 +1526,7 @@
     ],
     [
       The hedges that travel with the case from the source are
-      binding and load-bearing. The study covers a single
+      binding and decisive. The study covers a single
       teacher, a single school, and a single curriculum domain;
       the design-based research method does not produce a
       causal estimate in the trial sense, and the authors are
@@ -1646,7 +1646,7 @@
     classes gained 10.96% on mathematics and 9.55% on history.
     The rural gain exceeded the urban gain across both subjects.
     The honest hedges that travel with the case from the source
-    are load-bearing and preserved in the prose: the horizon is
+    are decisive and preserved in the prose: the horizon is
     three months; the study covers 12 schools; assignment is
     non-randomized, with classes matched only on baseline attainment; and the authors name the small sample and the survey's unvalidated self-report basis. All four
     authors are at Chinese institutions — Hangzhou City
@@ -1669,7 +1669,7 @@
       supported instructional devices across rural and urban
       Chinese schools, evaluated quantitatively, reported by a
       four-author team based at Chinese institutions, and
-      published in a peer-reviewed journal with the load-bearing
+      published in a peer-reviewed journal with the decisive
       methodological hedges named.#cn()
     ],
     [
@@ -1688,7 +1688,7 @@
       lower-resourced settings rather than narrowing it.#cn()
     ],
     [
-      The honest hedges the case carries are load-bearing and
+      The honest hedges the case carries are binding and
       explicit in the source. The horizon is three months — a
       September to November 2024 window — and the case's pattern
       is conditioned on that horizon, not on a school-year or
@@ -1696,7 +1696,7 @@
       is right for the within-subject within-school comparison
       structure the study runs but is not right for prevalence
       claims about Chinese rural schooling at population scale.
-      Assignment to experimental and control classes is non- randomized: classes of comparable baseline attainment were selected, with pre-experiment scores differing by less than 5% within each school, and teacher- or school-level selection effects are not ruled out. The authors' own limitations name the small sample and the survey's self-report basis — teachers' stated intentions were never correlated with usage logs or observed teaching behaviour.
+      Assignment to experimental and control classes is non- randomized: classes of comparable baseline attainment were selected, with pre-experiment scores differing by less than 5% within each school, and teacher- or school-level selection effects are not ruled out. The authors' own limitations name the small sample and the survey's self-report basis — teachers' stated intentions were never correlated with usage logs or observed teaching behavior.
       All four hedges travel into the prose without softening;
       the case is published in a peer-reviewed mid-tier journal,
       and the evidence-tier flag rendering is intentionally not
@@ -1727,7 +1727,7 @@
       between higher- and lower-resourced settings — is not what
       Chen and colleagues report on the three-month horizon they
       studied. The rural gain exceeded the urban gain across
-      both subjects, and the result is the load-bearing teaching
+      both subjects, and the result is the teaching
       point the case anchors. The case does not claim that the
       pattern generalizes past three months; it does not claim
       that the pattern holds outside the 12 schools the study
@@ -1740,20 +1740,20 @@
       deployment in education narrowed rather than widened a
       between-setting gap on its evaluation horizon, and the
       methodological structure of the study supports treating
-      the result as the case's load-bearing observation rather
+      the result as the case's central observation rather
       than as a discounted outlier.
     ],
   ),
   beats: (
     "Chen, Wu, Chen, Zhou (2025) Frontiers in Psychology; 12 schools (4 urban, 8 rural), classroom experiment Sep–Nov 2024, 268-teacher survey Jan–Feb 2024",
     "Rural experimental classes +17.93% math, +13.46% history; urban experimental classes +10.96% math, +9.55% history",
-    "Equity-direction finding: rural gain exceeds urban gain across both subjects — the load-bearing teaching point",
-    "Load-bearing hedges in prose: 3-month horizon, 12 schools, non-randomized assignment matched only on baseline attainment, small sample and unvalidated self-report acknowledged by the authors",
+    "Equity-direction finding: rural gain exceeds urban gain across both subjects — the teaching point",
+    "decisive hedges in prose: 3-month horizon, 12 schools, non-randomized assignment matched only on baseline attainment, small sample and unvalidated self-report acknowledged by the authors",
     "First-author-from-deployment-country structure; pair with Cases 86 (Gándara), 88 (LiveHint bias), 73 (Doer Effect non-WEIRD)",
   ),
   approaches: (
     during: (
-      [Pre-specify the equity-direction outcome as the load-bearing reading; the case demonstrates that a deployment study can credibly report a rural-over-urban gain on a defined horizon when the methodological hedges are named.],
+      [Pre-specify the equity-direction outcome as the decisive reading; the case demonstrates that a deployment study can credibly report a rural-over-urban gain on a defined horizon when the methodological hedges are named.],
       [Carry the four binding hedges — horizon, sample, assignment structure, measurement bias — in the deployment write-up itself; the case's value to the corpus depends on the hedges being internal to the argument rather than buried in a limitations footnote.],
       [Treat first-author-from-deployment-country authorship as a methodological feature; the non-WEIRD evidence base is structurally improved by deployments written up by teams with access to the deployment context.],
     ),
@@ -1769,14 +1769,14 @@
     [Paired Case 88 (LiveHint AI bias across foundation models, AIED 2025) — bias-surfacing in AI-supported instruction.],
     [Paired Case 73 (Doer Effect non-WEIRD LAK 2025 radio-and-phone extension) — non-WEIRD methodological discipline at the heterogeneity-finding axis.],
   ),
-  quote: [Rural experimental classes gained 17.93 percent on mathematics and 13.46 percent on history; urban experimental classes gained 10.96 percent on mathematics and 9.55 percent on history. The rural gain exceeded the urban gain across both subjects — and the load-bearing hedges are three-month horizon, twelve schools, non-randomized assignment matched only on baseline attainment, and a small sample with an unvalidated self-report survey acknowledged by the authors.],
+  quote: [Rural experimental classes gained 17.93 percent on mathematics and 13.46 percent on history; urban experimental classes gained 10.96 percent on mathematics and 9.55 percent on history. The rural gain exceeded the urban gain across both subjects — and the hedges that matter are three-month horizon, twelve schools, non-randomized assignment matched only on baseline attainment, and a small sample with an unvalidated self-report survey acknowledged by the authors.],
   quote-source: "Editors' synthesis of Chen, Wu, Chen, & Zhou (2025).",
   le-insight: [
     Chen and colleagues' 12-school three-month deployment of AI-
     supported instructional devices across rural and urban
     Chinese classrooms reported an equity-direction finding —
     rural gain exceeded urban gain across both mathematics and
-    history. The load-bearing hedges are explicit and carried in
+    history. the hedges that matter are explicit and carried in
     the prose: three-month horizon, twelve schools, non-randomized assignment matched only on baseline attainment, and a small sample with an unvalidated self-report survey acknowledged by the authors. The case anchors the LEO on fairness beyond
     omission with a rare published equity-narrowing result.
   ],
@@ -1801,7 +1801,7 @@
   ),
   reflection-list: (
     [Identify a deployment in your domain whose equity-direction finding — narrowing or widening a between-setting gap — has not been pre-specified as a primary outcome. What would the pre-specification require, and what data infrastructure would support it?],
-    [Specify the four load-bearing hedges you would carry in the prose of a non-WEIRD deployment write-up — horizon, sample, assignment structure, measurement bias. Which of the four is hardest to name credibly in your domain, and what would naming it cost?],
+    [Specify the four decisive hedges you would carry in the prose of a non-WEIRD deployment write-up — horizon, sample, assignment structure, measurement bias. Which of the four is hardest to name credibly in your domain, and what would naming it cost?],
     [The case's structural feature is first-author-from-deployment-country authorship. Pick a deployment in your domain that has been written up primarily by external authors, and ask: what would change in the methodological reading if the write-up were led by authors with access to the deployment context?],
   ),
   courses: ("LEN 3", "LEN 7", "LEN 8"),
@@ -2307,7 +2307,7 @@
   year: "1959 – present",
   domains-list: ("corporate L&D", "training evaluation", "workforce development"),
   modes-code: "KN",
-  impact: "Across a US corporate-training market sized in the >\$125B/year range, the dominant evaluation framework structurally collapses: most teams stop at Levels 1–2 (reaction + learning) and never measure Level 3 (behavior change) or Level 4 (business results) — measuring the variable that flatters the program",
+  impact: "Across a U.S. corporate-training market sized in the >\$125B/year range, the dominant evaluation framework structurally collapses: most teams stop at Levels 1–2 (reaction + learning) and never measure Level 3 (behavior change) or Level 4 (business results) — measuring the variable that flatters the program",
   kind: "frontier",
   scale: "big",
   evidence-source: "practitioner",
@@ -2361,7 +2361,7 @@
     ],
     [
       The consequence is a field that spends heavily on training —
-      US organizations reported >\$125B/year on workplace training,
+      U.S. organizations reported >\$125B/year on workplace training,
       per the ASTD figure cited in Blume et al. (Case 65) — while
       measuring mostly the variable that flatters the program.
       Satisfaction scores do not predict on-job performance;
@@ -2374,7 +2374,7 @@
     ],
     [
       The evidence-tier flag rendered under the case title is
-      load-bearing. The case is documented through
+      decisive. The case is documented through
       evaluation-practice guides synthesizing the stop-at-L2
       pattern across many organizations rather than through a
       single peer-reviewed study of the phenomenon. The pattern is
@@ -2407,7 +2407,7 @@
   beats: (
     "Kirkpatrick four levels (Reaction / Learning / Behavior / Results) — dominant framework for sixty years; framed as 'chain of evidence'",
     "Practice-literature synthesis: most organizations stop at Levels 1–2; Levels 3 and 4 require data the training org typically can't access",
-    "US corporate-training market sized >\$125B/year per ASTD; measurement concentrated on variable that flatters the program",
+    "U.S. corporate-training market sized >\$125B/year per ASTD; measurement concentrated on variable that flatters the program",
     "Evidence-tier flag: practice-synthesis, not single peer-reviewed study; pattern is consistent, magnitudes still consolidating",
     "Capability deliverable is an evaluation architecture that crosses the Level-2/Level-3 seam; pair with Blume (Case 65) for transfer",
   ),
@@ -3065,7 +3065,7 @@
     [Brinkerhoff, R. O. (2005), "The Success Case Method: A Strategic Evaluation Approach to Increasing the Value and Effect of Training," _Advances in Developing Human Resources_ 7(1):86–101, doi:10.1177/1523422304272172.],
     [Brinkerhoff Evaluation Institute deployment list — International Red Cross and Red Crescent, World Bank, Cargill, Merck, Ford Motor — practitioner channel.],
     [Kirkpatrick & Kirkpatrick (2006), _Evaluating Training Programs_ — the chain-of-evidence framework SCM operationalizes (paired Case 79).],
-    [Blume, Ford, Baldwin, & Huang (2010), _Journal of Management_ 36(4):1065–1105 — the meta-analytic environment-as-decisive finding SCM samples around (paired Case 65).],
+    [Blume, Ford, Baldwin, & Huang (2010), _Journal of Management_ 36(4):1065–1105 — the meta-analytic environment-as-finding SCM samples around (paired Case 65).],
   ),
   quote: [The tails carry the decision-grade information. The average flatters the program.],
   quote-source: "Editors' synthesis of Brinkerhoff (2005) and the corporate SCM deployments.",
@@ -3342,7 +3342,7 @@
       predictions across multiple cohorts and across years? The 2023 paper answers it with a survey of 366 teachers across four faculties, three years after the dashboard became business as usual, read through the Unified Theory of Acceptance and Use of Technology. Adoption rises with performance expectancy, self-efficacy, positive attitudes, low anxiety and less teaching experience, and falls where facilitating conditions are absent and the tool is felt to be effortful. The
       delegation-with-revocation structure is operative: each
       teacher chose, in each cohort, whether to act on the
-      prediction, and the choice itself is the load-bearing
+      prediction, and the choice itself is the decisive
       capability the dashboard supports.#cn()
     ],
     [
@@ -3384,7 +3384,7 @@
   ),
   approaches: (
     during: (
-      [Treat teacher use of the prediction as the load-bearing capability the dashboard supports; the delegation-with-revocation structure — each teacher chooses, in each cohort, whether to act — is the design point, not an emergent behavior.],
+      [Treat teacher use of the prediction as the capability the dashboard supports; the delegation-with-revocation structure — each teacher chooses, in each cohort, whether to act — is the design point, not an emergent behavior.],
       [Build the deployment at multi-cohort and multi-course scale from the start; the case's evidence-tier strength depends on the deployment having been institutional, not pilot, and the institutional deployment supports the longitudinal-follow-through evidence the case provides.],
       [Design the dashboard's prediction surface around the action the teacher would take — a flagged-student list with an intervention prompt, not a probability score the teacher has to interpret unaided.],
     ),
@@ -3400,7 +3400,7 @@
     [Herodotou et al. (2019), "A large-scale implementation of predictive learning analytics in higher education: the teachers' role and perspective," _Educational Technology Research and Development_, ERIC EJ1227972 — complementary teacher-perspective paper.],
     [Arnold, K. E., & Pistilli, M. D. (2012), "Course Signals at Purdue," _LAK '12_ — the structural precursor v1 carries as a cautionary case.],
   ),
-  quote: [The delegation-with-revocation structure is operative: each teacher chose, in each cohort, whether to act on the prediction. The choice itself is the load-bearing capability the dashboard supports.],
+  quote: [The delegation-with-revocation structure is operative: each teacher chose, in each cohort, whether to act on the prediction. The choice itself is the capability the dashboard supports.],
   quote-source: "Editors' synthesis of Herodotou et al. (2019, 2023).",
   le-insight: [
     OU Analyse is the rare successful learning-engineering
@@ -3646,7 +3646,7 @@
       would let an evaluator stratify the model's output.#cn()
     ],
     [
-      Yu, Lee, and Kizilcec, publishing at the ACM Conference on Learning \@ Scale, examined the include-or-exclude question empirically on institutional records for the whole student body of a large U.S. research university — 93,457 students, residential and fully online — predicting dropout after one academic year with logistic regression and gradient-boosted trees, with and without four protected attributes: gender, underrepresented-minority status, first-generation status, and high financial need. The headline finding is the frontier-shaped one: including the attributes left overall prediction performance unchanged and improved algorithmic fairness only marginally. The result favours inclusion, and it favours it weakly enough that the answer has to be re-established in each local context.#cn()
+      Yu, Lee, and Kizilcec, publishing at the ACM Conference on Learning \@ Scale, examined the include-or-exclude question empirically on institutional records for the whole student body of a large U.S. research university — 93,457 students, residential and fully online — predicting dropout after one academic year with logistic regression and gradient-boosted trees, with and without four protected attributes: gender, underrepresented-minority status, first-generation status, and high financial need. The headline finding is the frontier-shaped one: including the attributes left overall prediction performance unchanged and improved algorithmic fairness only marginally. The result favors inclusion, and it favors it weakly enough that the answer has to be re-established in each local context.#cn()
     ],
     [
       The right framing the paper develops is governance and
@@ -3740,7 +3740,7 @@
   year: "2025",
   domains-list: ("AI in education", "intelligent tutoring", "algorithmic fairness"),
   modes-code: "TKN",
-  impact: "Repeated probing of LiveHint AI (an LLM-based tutor in development at Carnegie Learning, released to a small number of US school districts) found no evidence of harmful bias and no dialect effect, but response differences in tone and level of detail tied to stated nationality/ethnicity and to prompt formality; choice of foundation model materially affected the level of differentiation",
+  impact: "Repeated probing of LiveHint AI (an LLM-based tutor in development at Carnegie Learning, released to a small number of U.S. school districts) found no evidence of harmful bias and no dialect effect, but response differences in tone and level of detail tied to stated nationality/ethnicity and to prompt formality; choice of foundation model materially affected the level of differentiation",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3757,7 +3757,7 @@
     and the tutor's responses are assessed for tone and level
     of detail. The choice of foundation model
     materially affects the level of differentiation in responses.
-    The authors describe the work as a collaborative audit run with Carnegie Learning's cooperation, offered as a template for future audits of LLM-based tutors; LiveHint is in research and development and released to a small number of US school districts. The
+    The authors describe the work as a collaborative audit run with Carnegie Learning's cooperation, offered as a template for future audits of LLM-based tutors; LiveHint is in research and development and released to a small number of U.S. school districts. The
     case extends the race-construct trio (Cases 25, 26, 6,
     48) into the LLM-tutoring layer where the structurally new
     variable is the foundation model. Open questions: whether
@@ -3815,7 +3815,7 @@
       studied.#cn()
     ],
     [
-      The authors' framing is explicit and binding on the case. LiveHint AI is in research and development and released to a small number of US school districts; the paper is a collaborative audit offered as a template for auditing LLM-based tutors. The case is not the deployment-bias-audit
+      The authors' framing is explicit and binding on the case. LiveHint AI is in research and development and released to a small number of U.S. school districts; the paper is a collaborative audit offered as a template for auditing LLM-based tutors. The case is not the deployment-bias-audit
       case the corpus carries at Cases 6 (Hoffman pain
       assessment), 26 (pulse oximetry), 25 (eGFR), and 48
       (Johnson school surveillance). It is the structurally
@@ -3826,7 +3826,7 @@
     ],
     [
       The open questions the authors preserve are the case's
-      load-bearing hedges. The authors also report that they found
+      decisive hedges. The authors also report that they found
       no evidence of harmful biases — the differentiation they
       measured may reflect sound pedagogy or undesirable behavior,
       an interpretive question they leave open. Whether the
@@ -3850,7 +3850,7 @@
   beats: (
     "LiveHint AI (Carnegie Learning) probed with identity-marked student queries across tone and level of detail",
     "Choice of foundation model materially affects differentiation level; vendor-selection decision is itself fairness-relevant",
-    "Collaborative audit offered as a template for auditing LLM tutors; LiveHint in R&D and released to a few US districts; grounds demographic-stratification at foundation-model layer",
+    "Collaborative audit offered as a template for auditing LLM tutors; LiveHint in R&D and released to a few U.S. districts; grounds demographic-stratification at foundation-model layer",
     "Structurally new variable beyond race-construct trio (Cases 6/25/26/48): the foundation-model layer above the deployed system",
     "Open: lab probing vs. deployed-conversation match; vendor selection as routine fairness deliverable; pair with Case 77",
   ),
@@ -3936,7 +3936,7 @@
     response. The case is included as a frontier — it documents the
     governance architecture needed for responsible adoption rather
     than a completed success — and it is valuable because it
-    surfaces a seam (extraterritorial hosting) the US-centric canon
+    surfaces a seam (extraterritorial hosting) the U.S.-centric canon
     rarely confronts, and that is increasingly universal as
     institutions everywhere build on cloud and AI services they do
     not control.
@@ -3945,8 +3945,8 @@
     [
       The standard framing of learning-analytics governance assumes
       that the operating institution, the regulatory regime, and the
-      hosting infrastructure are co-located — a US university under
-      US law on US-hosted infrastructure, a UK university under UK
+      hosting infrastructure are co-located — a U.S. university under
+      U.S. law on U.S.-hosted infrastructure, a UK university under UK
       law on UK or EU infrastructure. African higher education sits
       structurally outside this assumption. Most universities across
       the continent rely on learning-management systems, predictive
@@ -4000,10 +4000,10 @@
       deployed on platforms governed by a different regime than the
       one operating them. The pattern is not African-specific. It is
       increasingly universal as institutions everywhere build on
-      cloud, AI, and platform services they do not control: a US
-      university on a US cloud is the historical case; a US
+      cloud, AI, and platform services they do not control: a U.S.
+      university on a U.S. cloud is the historical case; a U.S.
       university running analytics through a model-hosted-elsewhere
-      service, a Latin American university on a US cloud, an
+      service, a Latin American university on a U.S. cloud, an
       African university on a European platform — all share the
       structural seam, and the African case surfaces it most
       starkly because the regime asymmetry is largest there. The case is the case-grounded instance of a sub-competency both frameworks already name — LENS 5.6, cross-regime and platform-dependency governance, and induced 5.3, which is this case's own anchor.
@@ -4245,7 +4245,7 @@
       Learning analytics as a field is heavily Global-North-shaped.
       The reference tools (predictive at-risk classifiers, dashboard
       analytics for instructors, early-warning systems) were
-      developed at US and European universities with US and European
+      developed at U.S. and European universities with U.S. and European
       governance assumptions about data, consent, and institutional
       decision-making. The LALA project began from a thinner and more awkward observation: regional attempts at learning analytics remained small in scale, and the region lacked a community to exchange ideas, methods and tools because experienced researchers in the field were few. There was no local needs evidence to build on, so the project measured it before it built anything.#cn()
     ],
@@ -4718,7 +4718,7 @@
     resourcing for learning-analytics infrastructure, and limited
     African-scholar visibility at the Society for Learning
     Analytics Research (SoLAR) conferences — are the present-state
-    map the field needs before importing US/UK/EU
+    map the field needs before importing U.S./UK/EU
     learning-analytics constructs into African contexts. The case
     is included as a frontier scoping case at the practice-
     synthesis tier: a review of an early-stage research base
@@ -4733,7 +4733,7 @@
     [
       Learning analytics as a field consolidated around 2011 with
       the formation of SoLAR and a research agenda anchored
-      heavily in US, Australian, UK, and EU higher-education data
+      heavily in U.S., Australian, UK, and EU higher-education data
       infrastructures. The capability question for the African
       higher-education community is whether the analytic
       constructs travel — and who is positioned to validate them
@@ -4746,11 +4746,11 @@
       Africa (10 of 15), the rest from Nigeria, Tanzania, Zambia,
       and Kenya. Two of the fifteen are the South African higher-education studies most often cited as the local literature — Lemmens and Henn (2016) and Janse van Vuuren's 2020 contextualised data-analytics framework — so citing them does not enlarge the corpus. The corpus exists; it is small,
       geographically concentrated, and dwarfed by the parent
-      field's publication output from US/UK/EU institutions.#cn()
+      field's publication output from U.S./UK/EU institutions.#cn()
     ],
     [
       The structural findings underneath the count are the
-      load-bearing teaching. African higher-education
+      decisive teaching. African higher-education
       institutions face limited LMS access at scale (many
       institutions still rely on heterogenous and intermittent
       digital infrastructure); limited institutional resourcing
@@ -4776,7 +4776,7 @@
       constructs with the validation gap acknowledged.#cn()
     ],
     [
-      The practice-synthesis-tier flag is load-bearing. A scoping
+      The practice-synthesis-tier flag is binding. A scoping
       review is the field's snapshot at a moment in time; the
       individual primary studies it draws on vary in rigor, and
       the review is the strongest single map of the present state
@@ -4842,7 +4842,7 @@
     [Janse van Vuuren (2020), _SAJHE_ 34(1), contextualised data-analytics framework, SA],
   ),
   reflection-list: (
-    [Identify a learning-analytics construct your program imports from US/UK/EU literature. What does the validation literature for that construct assume about LMS coverage, data-engineering capacity, and ethics review? Audit those assumptions against your institution's actual conditions.],
+    [Identify a learning-analytics construct your program imports from U.S./UK/EU literature. What does the validation literature for that construct assume about LMS coverage, data-engineering capacity, and ethics review? Audit those assumptions against your institution's actual conditions.],
     [The case rests on a scoping review of an early-stage literature. What would the minimum additional evidence — replication primary studies, multi-institution validation, longitudinal outcome data — look like before you would treat any specific African learning-analytics finding as settled?],
     [Specify the institutional preconditions you would identify and the validation work you would commit to before deploying an analytic framework in a low-resource higher-education setting; treat your deployment as a contribution to the literature, not only as a service intervention.],
   ),

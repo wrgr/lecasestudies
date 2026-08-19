@@ -87,7 +87,7 @@
     from the start. Missouri revoked the responsible engineers' licenses, and
     the case became the foundational engineering-ethics example. The
     capability gap was institutional: nothing required a change to a
-    load-bearing connection to be re-analyzed by the engineer of record.
+    decisive connection to be re-analyzed by the engineer of record.
   ],
   sections: (
     // -- Background --
@@ -126,7 +126,7 @@
     // -- The Capability Gap --
     [
       The capability gap was at the institutional review of construction
-      changes. Nothing required a change to a load-bearing connection detail
+      changes. Nothing required a change to a connection that matters detail
       to be re-analyzed by the engineer of record before it was built — so a
       modification that doubled a critical load passed through the system
       without anyone computing what it did, the absence of a required check
@@ -151,7 +151,7 @@
     "The Kansas City Hyatt's atrium walkways were originally designed to hang from single continuous steel rods",
     "A two-rod construction change doubled the upper connection's load; on 17 July 1981 the walkways fell, killing 114",
     "The National Bureau of Standards found the as-built connection had carried roughly twice its intended load",
-    "Nothing required the engineer of record to re-analyze a load-bearing change before it was built",
+    "Nothing required the engineer of record to re-analyze a decisive change before it was built",
     "Missouri revoked engineers' licenses; shop-drawing review and engineer-of-record responsibility hardened into rule",
   ),
   references: (
@@ -189,7 +189,7 @@
   ),
   approaches: (
     during: (
-      [Require that any change to a load-bearing detail be re-analyzed by the engineer of record before it is built, with the calculation in the loop.],
+      [Require that any change to a decisive detail be re-analyzed by the engineer of record before it is built, with the calculation in the loop.],
       [Treat an assembly-convenience change as a structural decision, not a routine one, so ease of construction never substitutes for analysis.],
       [Set the original design margin so a connection is not already marginal under code before any field change touches it.],
     ),
@@ -865,7 +865,7 @@
     Guard / BOEMRE inquiry, the Chemical Safety Board's process-safety
     review, and the Deepwater Horizon Study Group at Berkeley — each
     surfaced a distinct facet of the same drift; the disagreements among
-    them are themselves load-bearing for the case.
+    them are themselves decisive for the case.
   ],
   sections: (
     // -- Background --
@@ -901,7 +901,7 @@
       Guard / BOEMRE inquiry traced the blowout-preventer failure to a
       buckled drill pipe and a maintenance backlog that the leasing-and-safety
       regulator had not caught. The Chemical Safety Board's separately
-      published process-safety review made the load-bearing distinction
+      published process-safety review made the decisive distinction
       explicit: BP and Transocean both reported improving personal-injury rates in the year before the blowout, yet personal-safety metrics had no purchase on the catastrophic process-safety risks that produced it — the same inversion
       the CSB had already documented at Texas City. Government and academic
       reviews found training that had not covered the well-control situation
@@ -949,7 +949,7 @@
       conceded that the negative-pressure test had been a real barrier all
       along — one the system had been quietly permitted to misread. The
       hedges survive into the case: the process-safety / personal-safety
-      distinction the CSB names is load-bearing and easy to lose; the
+      distinction the CSB names is decisive and easy to lose; the
       OSHA-vs-EPA enforcement gap on offshore facilities was structural,
       not incidental; and the four investigations did not converge on a
       single cause precisely because the catastrophe had several, all of
@@ -981,7 +981,7 @@
     had been operating with accumulated procedural debt for years. The
     capability to recognize an unsafe well-state simply was not present
     at the moment it was needed. The CSB's process-safety / personal-safety
-    distinction is load-bearing: the improving personal-injury rates BP and Transocean reported were a measurement of the wrong construct, and reading them as safety was itself a normalization.
+    distinction is decisive: the improving personal-injury rates BP and Transocean reported were a measurement of the wrong construct, and reading them as safety was itself a normalization.
   ],
   lens-approach: [
     Deepwater Horizon anchors the cue-and-alert-design competency
@@ -1468,7 +1468,7 @@
     The reform — INPO, plant-referenced simulators, resident
     inspectors, RG 1.97 instrumentation, NUREG-0700 human-factors
     standards — built the missing infrastructure together rather than
-    one piece at a time, which is the case's load-bearing teaching.
+    one piece at a time, which is the case's decisive teaching.
   ],
   lens-approach: [
     TMI is the worked example of induced sub-competency 6.1
@@ -2086,8 +2086,8 @@
     Concern only on 8 August 2014 — months into exponential
     growth, and by the third PHEIC ever issued. The response
     then scaled: UNMEER, the first UN emergency health mission,
-    and US and UK military logistics; and community-led change —
-    safe burials and community care-centre networks — bent the
+    and U.S. and UK military logistics; and community-led change —
+    safe burials and community care-center networks — bent the
     curve. The reported toll reached approximately 28,600 cases
     and 11,300 deaths; the undercount is acknowledged and the
     figures are reported figures, not a census. Three converging
@@ -2161,7 +2161,7 @@
       logistics alone. Community-led change carried decisive
       weight: safe and dignified burial practices that
       interrupted a major transmission route, and community care-
-      centre networks that moved isolation and care closer to
+      center networks that moved isolation and care closer to
       where transmission was occurring. The reported toll settled
       at approximately 28,600 cases and 11,300 deaths across the
       three countries to mid-2016. The figures are reported
@@ -2196,7 +2196,7 @@
     "First cases Guinea December 2013; confirmed as Ebola March 2014; WHO/Guinea reporting characterized outbreak as slowing by April 2014",
     "MSF declared the epidemic \"out of control\" 21 June 2014; WHO staff in Guinea and Sierra Leone accused MSF of causing unnecessary panic",
     "WHO declared the PHEIC on 8 August 2014 (Emergency Committee 6–7 August) — months into exponential growth; third PHEIC ever",
-    "Response scaled: UNMEER (first UN emergency health mission), US/UK military logistics; community-led safe burials and care-centre networks bent the curve",
+    "Response scaled: UNMEER (first UN emergency health mission), U.S./UK military logistics; community-led safe burials and care-centre networks bent the curve",
     "Reported toll ~28,600 cases / ~11,300 deaths (undercount acknowledged); Stocking Report (July 2015), Moon et al. Lancet (Nov 2015), UN High-Level Panel (2016) converge on unbuilt IHR core capacities with no consequence, post-2011 WHO capacity cuts, discounted early signals",
     "Reform: WHO Health Emergencies Programme (2016); panels' own caveat that post-crisis reform pledges historically decay — COVID-19 later tested it",
   ),
@@ -2222,7 +2222,7 @@
   quote: [The Director-General had ample reason to raise international attention by convening the Emergency Committee or declaring a public health emergency of international concern earlier.],
   quote-source: "Harvard-LSHTM Independent Panel on the Global Response to Ebola (Moon et al., The Lancet, 28 November 2015).",
   le-insight: [
-    West Africa Ebola is the load-bearing case for declared
+    West Africa Ebola is the reference case for declared
     international readiness that was certified but not deployable.
     Most member states had not built the IHR (2005) core capacities and said so; WHO's own outbreak-response
     capacity had been cut after 2011; and the escalation loop
@@ -2241,7 +2241,7 @@
     declaration loop. The three converging panels (Stocking,
     Moon et al., UN High-Level) are carried as the investigation
     evidence base; the acknowledged undercount and the reform-
-    decay caveat are load-bearing hedges that travel with the
+    decay caveat are decisive hedges that travel with the
     case.
   ],
   literature-items: (
@@ -2276,7 +2276,7 @@
     Hurricane Maria made landfall on Puerto Rico on September
     20, 2017, as a high-end Category 4 storm, the third major
     hurricane to strike U.S. territory in under a month. The
-    load-bearing evidence on the federal response is the
+    decisive evidence on the federal response is the
     responding institution's own self-assessment: FEMA's 2017
     Hurricane Season After-Action Report, released July 12,
     2018, found that the agency entered Maria with its
@@ -2328,7 +2328,7 @@
     ],
     [
       FEMA's own 2017 Hurricane Season After-Action Report,
-      released July 12, 2018, is the load-bearing
+      released July 12, 2018, is the decisive
       self-assessment and the reason the case carries the
       program-report evidence tag. The report found that the
       agency entered the season with force strength below its
@@ -2400,7 +2400,7 @@
       number.#cn()
     ],
     [
-      The hedges the case carries are load-bearing. The
+      The hedges the case carries are not decoration. The
       excess-mortality figures are model-dependent estimates,
       not counts; the GWU and NEJM designs are not directly
       comparable and neither supports an attribution chain
@@ -2440,7 +2440,7 @@
     ),
     after: (
       [Write the after-action report the way FEMA wrote this one — the institution's own name on the capability-gap findings, in public; the report's honesty is what makes the case teachable and is the standard the casebook holds after-action self-assessment to.],
-      [Carry the excess-mortality estimates with their methods and their divergence; the GWU registry-based ~2,975 and the NEJM survey-based 4,645 (95% CI 793 – 8,498) answer differently designed questions, and revising the official toll from 64 to 2,975 is the load-bearing correction, not the reconciliation of the two studies.],
+      [Carry the excess-mortality estimates with their methods and their divergence; the GWU registry-based ~2,975 and the NEJM survey-based 4,645 (95% CI 793 – 8,498) answer differently designed questions, and revising the official toll from 64 to 2,975 is the decisive correction, not the reconciliation of the two studies.],
       [Convert the envelope finding into verification events: re-verify inherited response designs against the island scenario explicitly — pre-positioned stock floors that survive a sequential season, workforce qualification targets audited against deployment reality, and port-condition logistics exercised rather than assumed.],
     ),
   ),
@@ -2454,7 +2454,7 @@
   quote: [FEMA entered Maria with force strength below target and its Caribbean Distribution Center largely emptied by the Irma response; it could not comprehensively track commodities to the ports; the grid collapse became the longest blackout in U.S. history; the official toll was revised from 64 to 2,975 on the strength of the commissioned GWU excess-mortality study.],
   quote-source: "Editors' synthesis of the FEMA 2017 Hurricane Season After-Action Report (2018), GAO-18-472 (2018), the GWU Milken Institute study (2018), and Kishore et al. (2018, NEJM).",
   le-insight: [
-    Hurricane Maria is the load-bearing case for a capability
+    Hurricane Maria is the reference case for a capability
     specified and verified against one operational envelope —
     the mainland hurricane, with adjacent states, intact
     ports, and a partially failing grid — and deployed into
@@ -2481,7 +2481,7 @@
     a sustainment deliverable. The excess-mortality estimates
     are carried as estimates with their methods; the
     divergence between the GWU and NEJM figures is
-    load-bearing and is not smoothed.
+    decisive and is not smoothed.
   ],
   literature-items: (
     [FEMA (2018), _2017 Hurricane Season FEMA After-Action Report_ — the agency's own capability-gap findings],
@@ -2571,7 +2571,7 @@
       content *is* code: anything that can crash the kernel must clear the
       same testing and staged-rollout gates. CrowdStrike's customers had
       trusted the vendor's deployment safety, and that trust turned out to be
-      load-bearing for the operation of a large slice of the global economy
+      decisive for the operation of a large slice of the global economy
       on a single morning. Each customer had implicitly outsourced a safety
       gate to the vendor's pipeline, so the one missing gate inside that
       pipeline was multiplied across every institution that ran the sensor,
@@ -2626,7 +2626,7 @@
     LENS uses CrowdStrike in LEN 5 as a categories-and-boundaries
     capability case and in LEN 2 for the vendor-customer trust
     architecture: customers trusted CrowdStrike's deployment safety;
-    that trust was load-bearing for the operation of the global
+    that trust was decisive for the operation of the global
     economy on a single day.
   ],
   literature-items: (

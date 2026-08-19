@@ -358,7 +358,7 @@
   lens-anchor: "D1/PT3",
   leo-anchor: "LEO-1, LEO-5",
   summary: [
-    MIL-STD-1472 is the US Department of Defense's design-criteria
+    MIL-STD-1472 is the U.S. Department of Defense's design-criteria
     standard for human engineering — the discipline of making
     equipment usable, safe, and effective for the human operator.
     The series originated in 1968 and has been revised through

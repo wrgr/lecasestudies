@@ -467,7 +467,7 @@
       NASA tightened interface management and end-to-end verification and
       treated the loss as a cautionary tale about how far "faster, better,
       cheaper" could be pushed before the corners being cut turned out to be
-      load-bearing. The orbiter became the canonical systems-engineering
+      decisive. The orbiter became the canonical systems-engineering
       example of interface-as-requirement — the civilian, software parallel to
       the Patriot's untraveled assumption (Case 129): two competent halves of a
       system, a boundary nobody owned or verified, and a small unspecified
@@ -519,7 +519,7 @@
     after: (
       [Treat in-cruise anomalies, like the noticed trajectory behavior, as signals to run to ground before a point of no return rather than concerns to revisit after arrival.],
       [Monitor predicted-versus-actual trajectory continuously so an accumulating boundary error surfaces while there is still time to correct it.],
-      [Audit cross-contractor seams for unowned assumptions whenever a program trims margins under "faster, better, cheaper," confirming the corners cut are not load-bearing.],
+      [Audit cross-contractor seams for unowned assumptions whenever a program trims margins under "faster, better, cheaper," confirming the corners cut are not decisive.],
     ),
   ),
   courses: ("LEN 5", "LEN 8"),
@@ -2001,7 +2001,7 @@
       layer the suit's water-separator and ventilation-loop
       hygiene were re-engineered, and a Helmet Absorption Pad
       and a snorkel were added so a future water event would not
-      immediately threaten the airway. At the operations layer water-quality specifications and monitoring were tightened, but no free-water sensor was added to the ventilation loop: a smaller helmet water event recurred on EVA-80 in March 2022 and NASA paused US spacewalks again.
+      immediately threaten the airway. At the operations layer water-quality specifications and monitoring were tightened, but no free-water sensor was added to the ventilation loop: a smaller helmet water event recurred on EVA-80 in March 2022 and NASA paused U.S. spacewalks again.
       At the safety-culture layer the MIB pressed the
       documented-and-investigated discipline: an unexplained EVA event
       requires investigation rather than the most convenient
@@ -2213,7 +2213,7 @@
   reflection-list: (
     [What information about operators in your domain exists somewhere in the system but does not flow to the decisions that depend on it?],
     [Design the data-flow architecture that would make a Colgan-equivalent visible *before* the accident rather than after.],
-    [The 2010 reform was driven by victims' families, not the industry that had resisted it. What load-bearing constituency in your domain could force a stalled data-flow fix into existence, and what evidence would mobilize them?],
+    [The 2010 reform was driven by victims' families, not the industry that had resisted it. What decisive constituency in your domain could force a stalled data-flow fix into existence, and what evidence would mobilize them?],
   ),
   approaches: (
     during: (
@@ -2481,7 +2481,7 @@
       lives in a report while the production pressure and the suppressed
       warnings live in the daily flow of work, where they kept doing what
       they had always done. The institutional-learning gap is itself the
-      load-bearing finding: between 1986 and 2003 NASA had reorganized
+      decisive finding: between 1986 and 2003 NASA had reorganized
       twice, lost an administrator, and adopted multiple safety initiatives,
       and the structural pathway from a dissenting engineer to a launch
       decision was substantially unchanged.
@@ -2501,7 +2501,7 @@
       missed in 1986: the upward path for a dissenting engineer is itself a
       piece of safety hardware, and one that has to be rebuilt and defended
       rather than assumed. The hedge that survives into the case: Vaughan's
-      "normalization of deviance" is the load-bearing analytic claim across
+      "normalization of deviance" is the analytic claim across
       both accidents and is never to be smoothed; the seventeen-year
       institutional-learning gap is the empirical claim, and the CAIB's
       cross-referencing of Rogers Commission language ("the same
@@ -2532,7 +2532,7 @@
     pathology, twice, seventeen years apart, in the same institution,
     with the same human cost — and with the diagnosis already on the
     record. Vaughan's "normalization of deviance" names the mechanism
-    and is the load-bearing analytic claim across both accidents.
+    and is the analytic claim across both accidents.
     Capability engineering treats culture as a deliverable.
   ],
   lens-approach: [
@@ -2554,7 +2554,7 @@
   literature-items: (
     [Rogers Commission (1986) — primary record of the Thiokol teleconference],
     [Vaughan (1996), _The Challenger Launch Decision_],
-    [CAIB (2003), _Report Vol. I_ — the load-bearing cultural finding],
+    [CAIB (2003), _Report Vol. I_ — the cultural finding],
     [Starbuck & Farjoun (eds.) _Organization at the Limit: Lessons from the Columbia Disaster_ (2005)],
     [Weick & Sutcliffe, _Managing the Unexpected_ (2007)],
   ),

@@ -102,7 +102,7 @@
     [
       14 CFR Part 26 — Continued Airworthiness and Safety
       Improvements — was finalized in 2007 with the WFD provisions
-      published November 15, 2010 and effective January 14, 2011. Two structural elements are load-bearing.
+      published November 15, 2010 and effective January 14, 2011. Two structural elements are decisive.
       First, every transport-category type must have a Limit of
       Validity established by the manufacturer: the operational
       service goal, in flight cycles or flight hours, below which
@@ -197,7 +197,7 @@
   year: "2003 – 2020",
   domains-list: ("aviation infrastructure", "air traffic management", "regulatory transition"),
   modes-code: "GDK",
-  impact: "The FAA's Next Generation Air Transportation System (NextGen) shifted US air-traffic management from radar-based surveillance to a satellite-based architecture; the ADS-B Out mandate effective January 1, 2020 required equipage across the controlled-airspace fleet, achieving substantial compliance — with documented schedule slippage and benefit-realization gaps preserved as load-bearing hedges",
+  impact: "The FAA's Next Generation Air Transportation System (NextGen) shifted U.S. air-traffic management from radar-based surveillance to a satellite-based architecture; the ADS-B Out mandate effective January 1, 2020 required equipage across the controlled-airspace fleet, achieving substantial compliance — with documented schedule slippage and benefit-realization gaps preserved as decisive hedges",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -206,7 +206,7 @@
   leo-anchor: "LEO-1, LEO-5",
   summary: [
     The FAA's Next Generation Air Transportation System (NextGen)
-    is the multi-decade transition of US air-traffic management
+    is the multi-decade transition of U.S. air-traffic management
     from a radar-based surveillance architecture to a satellite-
     based architecture built on Automatic Dependent Surveillance –
     Broadcast (ADS-B). The ADS-B Out final rule, published in
@@ -216,11 +216,11 @@
     secondary-surveillance model that defined the era prior. The
     mandate was substantially met at the deadline; equipage
     compliance across the affected fleet was high, and ADS-B-based
-    surveillance is now the operational backbone in much of US
+    surveillance is now the operational backbone in much of U.S.
     airspace. The case is one of the largest planned aging-
     infrastructure transitions in the recent regulatory record —
     closing a long-standing C7 zero-state in the induced framework
-    — and it carries the load-bearing hedges that GAO and DOT
+    — and it carries the hedges that matter that GAO and DOT
     Inspector General reviews have repeatedly documented:
     significant schedule slippage across the program, benefit-
     realization gaps relative to original projections, and
@@ -230,7 +230,7 @@
   ],
   sections: (
     [
-      The pre-NextGen US air-traffic management architecture rested
+      The pre-NextGen U.S. air-traffic management architecture rested
       on ground-based primary and secondary radar surveillance, with
       voice communication, paper or quasi-paper flight progress
       strips at many facilities, and traffic-flow management built
@@ -252,7 +252,7 @@
       expensive to operate at scale than secondary radar. The
       broader NextGen program included additional elements
       (Data Communications, NAS Voice System, System-Wide
-      Information Management) but ADS-B Out was the load-bearing
+      Information Management) but ADS-B Out was the decisive
       equipage-mandate piece.#cn()
     ],
     [
@@ -303,10 +303,10 @@
     ],
   ),
   beats: (
-    "Pre-NextGen US air-traffic management rested on radar and voice; incremental modernization inside the radar-paradigm approached its limits by early 2000s",
-    "NextGen launched 2003 (Vision 100 Act); ADS-B Out is the load-bearing equipage-mandate piece of the broader program",
+    "Pre-NextGen U.S. air-traffic management rested on radar and voice; incremental modernization inside the radar-paradigm approached its limits by early 2000s",
+    "NextGen launched 2003 (Vision 100 Act); ADS-B Out is the decisive equipage-mandate piece of the broader program",
     "ADS-B Out final rule published 2010; January 1, 2020 compliance deadline; substantial compliance reported at the deadline",
-    "Load-bearing hedge: GAO / DOT IG documented significant schedule slippage and benefit-realization gaps across the broader NextGen program",
+    "decisive hedge: GAO / DOT IG documented significant schedule slippage and benefit-realization gaps across the broader NextGen program",
     "Closes C7 (aging-infrastructure transition) zero-state alongside Cases 114, 174, 156 — the instance where the hedges are largest",
   ),
   approaches: (
@@ -316,7 +316,7 @@
       [Plan for sustained external audit (GAO, DOT IG) as part of the program's operating environment — the schedule slippage and benefit-realization gap reporting is institutional discipline, not a sign the program is unworkable.],
     ),
     after: (
-      [Report the equipage transition as the deliverable that executed and the benefit realization as the deliverable that is ongoing and mixed; both are real, and the load-bearing hedge is that the original NextGen plan understated the difficulty of the latter.],
+      [Report the equipage transition as the deliverable that executed and the benefit realization as the deliverable that is ongoing and mixed; both are real, and the hedge that matters is that the original NextGen plan understated the difficulty of the latter.],
       [Sustain the audit-and-rebaseline cadence after the headline equipage mandate; the benefit-realization picture continues to develop, and the institutional record of slippage and partial realization is part of how transitions at this scale are documented honestly.],
       [Treat the NextGen case as the instance where the C7 transition delivered with the largest acknowledged hedge — useful precisely because the transition is real and the hedges are also real, and conflating either with the other misreads the lesson.],
     ),
@@ -741,7 +741,7 @@
     ],
     // -- How It Worked --
     [
-      The load-bearing move operated on language. Making English the
+      the decisive move operated on language. Making English the
       cockpit language stripped out the Korean honorific hierarchy that had
       silenced first officers, because English has no honorifics to enforce
       rank. The CRM adaptation then gave crews an explicit, culturally
@@ -1174,7 +1174,7 @@
   year: "1981 – 2008 (TCAS II Version 7.1)",
   domains-list: ("aviation", "automation", "human factors"),
   modes-code: "HKG",
-  impact: "TCAS II — the Traffic Alert and Collision Avoidance System — provides cockpit traffic display and coordinated Resolution Advisories (RAs) between aircraft on conflicting trajectories; mandated on US air-carrier and on most international turbine aircraft, TCAS converted mid-air collision in commercial aviation from a recurring fatality category to a rare event; the 2002 Überlingen mid-air (71 dead) exposed a specific coordination failure mode and drove the 2008 release of TCAS II Version 7.1, which added RA reversal logic and replaced the ambiguous 'adjust vertical speed' advisory with 'level off, level off'",
+  impact: "TCAS II — the Traffic Alert and Collision Avoidance System — provides cockpit traffic display and coordinated Resolution Advisories (RAs) between aircraft on conflicting trajectories; mandated on U.S. air-carrier and on most international turbine aircraft, TCAS converted mid-air collision in commercial aviation from a recurring fatality category to a rare event; the 2002 Überlingen mid-air (71 dead) exposed a specific coordination failure mode and drove the 2008 release of TCAS II Version 7.1, which added RA reversal logic and replaced the ambiguous 'adjust vertical speed' advisory with 'level off, level off'",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -1187,14 +1187,14 @@
     cockpit automation that monitors transponder returns from
     nearby aircraft, computes potential conflicts, and issues
     Traffic Advisories and Resolution Advisories (RAs) to the
-    crew. Operational TCAS II was mandated on US air-carrier
+    crew. Operational TCAS II was mandated on U.S. air-carrier
     aircraft by FAA rule in the early 1990s and on most
     international turbine aircraft by ICAO. RAs are coordinated:
     when two TCAS-equipped aircraft are in conflict, one is
     instructed to climb and the other to descend by negotiated
     inversion of the data-link. The intervention converted
     mid-air collision in commercial aviation from a recurring
-    fatality category to a rare event. The case's load-bearing
+    fatality category to a rare event. The case's decisive
     edge case is the 2002 Überlingen mid-air collision (71 dead),
     in which one crew followed the TCAS RA and the other
     followed an ATC instruction in the opposite direction. The
@@ -1210,14 +1210,14 @@
       Mid-air collision in commercial aviation has been a
       recurring fatality category since the 1950s. The 1956
       Grand Canyon mid-air (128 dead) prompted the modern
-      US air-traffic-control system, but ATC alone cannot
+      U.S. air-traffic-control system, but ATC alone cannot
       always prevent collision when traffic densities or
       coordination errors exceed the controller's reach. The
       FAA and RTCA developed the Traffic Alert and Collision
       Avoidance System (TCAS) through the 1980s as a cockpit
       collision-avoidance automation independent of ATC. TCAS
       II — the operational version with Resolution Advisories
-      — was mandated on US air-carrier aircraft beginning in
+      — was mandated on U.S. air-carrier aircraft beginning in
       the early 1990s, and on most international turbine
       aircraft by ICAO over the following decade.#cn()
     ],
@@ -1283,7 +1283,7 @@
     ],
   ),
   beats: (
-    "TCAS II mandated on US air-carrier (early 1990s) and on most international turbine aircraft (ICAO); RAs coordinated via Mode S data link",
+    "TCAS II mandated on U.S. air-carrier (early 1990s) and on most international turbine aircraft (ICAO); RAs coordinated via Mode S data link",
     "Outcome: mid-air collision in TCAS-equipped fleets becomes rare through the 1990s and 2000s",
     "Überlingen mid-air July 1 2002 (71 dead, most of them Russian schoolchildren) — Tu-154 followed ATC, B757 followed TCAS RA; both descended",
     "BFU finding: RA precedence over ATC insufficiently clear; ATC single-controller / degraded-console context a systemic failure",
@@ -1514,7 +1514,7 @@
     where roughly half of fatal accidents then occurred. The
     institutional momentum from those task forces sat behind the
     eventual Terrain Awareness and Warning System (TAWS) mandates
-    in the US (2002) and ICAO (2007). CFIT and approach-and-landing
+    in the U.S. (2002) and ICAO (2007). CFIT and approach-and-landing
     accident rates fell sharply through the subsequent decade. The
     case teaches industry-level institution building after a
     catastrophe-class spike: the deliverable is the cross-operator
@@ -1574,7 +1574,7 @@
       landing accidents declined alongside. The task forces set an explicit target — a 50 percent reduction in the approach-and- landing accident rate in five years — and the decline that followed ran well past it, though no published analysis isolates the task forces' share of it.#cn()
     ],
     [
-      The load-bearing hedge survives into the case. The
+      the hedge that matters survives into the case. The
       accident-rate decline is multifactorial: TAWS hardware in the
       cockpit, training changes the task forces catalyzed,
       stabilized-approach criteria adopted at the operator level,

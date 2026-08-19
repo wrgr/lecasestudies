@@ -503,13 +503,13 @@
       [Anchor the procurement evidence to outcome-anchored training, not to expert-curated synthetic cases; expert opinion at one institution is not outcome data the procurement can rely on.],
     ),
     after: (
-      [Render the evidence tier honestly when the primary public source is journalism; the STAT investigation is the load-bearing source, and the academic record's secondary citation is the accurate description, not "peer-reviewed evidence."],
+      [Render the evidence tier honestly when the primary public source is journalism; the STAT investigation is the source, and the academic record's secondary citation is the accurate description, not "peer-reviewed evidence."],
       [Carry the AI-delegation typology — TREWS, Epic Sepsis, SyRI, Watson — as a unit in any curricular discussion of when delegation is legitimate; the four-case set teaches the typology more clearly than any single case.],
       [Treat the discontinuation of Watson for Oncology deployments as the case's own correction signal; the institutional decisions to discontinue are themselves evidence about what the procurement should have required up front.],
     ),
   ),
   references: (
-    [Ross & Swetlitz, "IBM's Watson supercomputer recommended 'unsafe and incorrect' cancer treatments, internal documents show," _STAT_ (25 July 2018), and "IBM pitched its Watson supercomputer as a revolution in cancer care. It's nowhere close," _STAT_ (5 Sept 2017) — the load-bearing primary sources; investigative journalism drawing on leaked IBM internal documents.],
+    [Ross & Swetlitz, "IBM's Watson supercomputer recommended 'unsafe and incorrect' cancer treatments, internal documents show," _STAT_ (25 July 2018), and "IBM pitched its Watson supercomputer as a revolution in cancer care. It's nowhere close," _STAT_ (5 Sept 2017) — the primary sources; investigative journalism drawing on leaked IBM internal documents.],
     [Strickland (2019), "How IBM Watson Overpromised and Underdelivered on AI Health Care," _IEEE Spectrum_ — independent retrospective synthesis of the public record.],
     [Topol (2019), _Deep Medicine_, Basic Books — secondary academic situating of Watson within the broader clinical-AI delegation discourse.],
     [v2 paired cases: TREWS (Case 20), Epic Sepsis Model (Case 5), SyRI (Case 189) — the AI-delegation typology.],
@@ -524,7 +524,7 @@
     evaluated the marketing rather than the validation; the
     deployments were wound down as the gap surfaced. The
     evidence-tier flag is binding: journalism-grade reporting is
-    the load-bearing source, and future validation ongoing
+    the source, and future validation ongoing
     remains the honest qualifier.
   ],
   lens-approach: [
@@ -1181,7 +1181,7 @@
   year: "1999 – present",
   domains-list: ("healthcare",),
   modes-code: "THNKG",
-  impact: "IOM 1999 estimate of 44,000–98,000 US deaths/year from medical error; Makary & Daniel (2016) estimate of ~250,000 deaths/year — substantively contested on methodological grounds; 2023 NEJM inpatient-harm study confirms persistence; 25-year reform arc with bounded successes and an unmoved population count",
+  impact: "IOM 1999 estimate of 44,000–98,000 U.S. deaths/year from medical error; Makary & Daniel (2016) estimate of ~250,000 deaths/year — substantively contested on methodological grounds; 2023 NEJM inpatient-harm study confirms persistence; 25-year reform arc with bounded successes and an unmoved population count",
   diagram: dgm.dgm-makary,
   kind: "failure",
   scale: "big",
@@ -1218,7 +1218,7 @@
     [
       The Institute of Medicine's _To Err Is Human_ (1999) was the
       field-defining moment: it estimated 44,000–98,000 deaths annually
-      from medical error in US hospitals — at the lower bound, more
+      from medical error in U.S. hospitals — at the lower bound, more
       Americans than die in motor-vehicle accidents — and made the
       explicit case that the problem was a systems problem, not an
       individual-clinician problem. The 2001 sequel _Crossing the
@@ -1327,7 +1327,7 @@
   ),
   references: (
     [Institute of Medicine, _To Err Is Human: Building a Safer Health System_ (1999); _Crossing the Quality Chasm_ (2001); _Improving Diagnosis in Health Care_ (2015) — the field-defining trilogy and the 44,000–98,000 estimate; the systems framing.],
-    [Makary, M. & Daniel, M. (2016), "Medical error — the third leading cause of death in the US," _BMJ_ 353:i2139 — the ~250,000 estimate, the quoted framing, the extrapolation from four studies published since the IOM report (HealthGrades 2004; OIG 2010; Landrigan 2010; Classen 2011).],
+    [Makary, M. & Daniel, M. (2016), "Medical error — the third leading cause of death in the U.S.," _BMJ_ 353:i2139 — the ~250,000 estimate, the quoted framing, the extrapolation from four studies published since the IOM report (HealthGrades 2004; OIG 2010; Landrigan 2010; Classen 2011).],
     [Shojania, K. & Dixon-Woods, M. (2017), "Estimating deaths due to medical error: the ongoing controversy and why it matters," _BMJ Quality & Safety_ 26(5):423–428; with Bates, D. W. & Singh, H. (2018), _Health Affairs_ 37(11):1736–1743 — methodological contestation of the Makary extrapolation and CDC-ranking comparison.],
     [Makary & Daniel (2016), _BMJ_ — death certificates do not capture medical error as a cause; ICD billing taxonomy as the structural reason.],
     [Bates, D. W., Levine, D. M., Salmasian, H., et al. (2023), "The Safety of Inpatient Health Care," _NEJM_ 388(2):142–153 — eleven-hospital Massachusetts cohort; adverse events in ~25% of admissions, ~25% of those preventable; persistence of harm at scale.],
@@ -1517,7 +1517,7 @@
     ],
     // -- Aftermath & Reform --
     [
-      Merck eventually settled US litigation for about \$4.85 billion
+      Merck eventually settled U.S. litigation for about \$4.85 billion
       across approximately 27,000 plaintiffs. The case drove a
       coordinated regulatory response. The FDA Amendments Act of 2007
       gave the FDA explicit authority to require Risk Evaluation and
@@ -1553,7 +1553,7 @@
     [Bombardier, C. et al. (2000), "Comparison of upper gastrointestinal toxicity of rofecoxib and naproxen in patients with rheumatoid arthritis," VIGOR trial, _NEJM_ 343(21):1520–1528 — the five-fold myocardial-infarction signal and the naproxen-protective hypothesis.],
     [Bresalier, R. et al. (2005), "Cardiovascular events associated with rofecoxib in a colorectal adenoma chemoprevention trial," APPROVe, _NEJM_ 352(11):1092–1102 — placebo-controlled confirmation of cardiovascular risk; early trial termination.],
     [Graham, D. J. et al. (2005), "Risk of acute myocardial infarction and sudden cardiac death in patients treated with COX-2 selective and non-selective NSAIDs: nested case-control study," _Lancet_ 365(9458):475–481 — Kaiser Permanente population-level cardiovascular risk analysis.],
-    [US Senate Committee on Finance, hearings on Vioxx and FDA's drug-safety system (November 18, 2004) — Graham testimony; "88,000 to 139,000 Americans" estimate of excess cardiovascular events; described FDA management pressure.],
+    [U.S. Senate Committee on Finance, hearings on Vioxx and FDA's drug-safety system (November 18, 2004) — Graham testimony; "88,000 to 139,000 Americans" estimate of excess cardiovascular events; described FDA management pressure.],
     [Ross, J. S., Hill, K. P., Egilman, D. S., Krumholz, H. M. (2008), "Guest authorship and ghostwriting in publications related to rofecoxib," _JAMA_ 299(15):1800–1812 — guest-authorship and ghostwriting documentation from Merck litigation discovery.],
     [FDA Amendments Act of 2007 (P.L. 110-85) and FDA Sentinel Initiative documentation (2008–present) — REMS authority, post-market study requirements, and active distributed-data post-market surveillance.],
   ),
