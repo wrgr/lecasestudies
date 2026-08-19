@@ -107,34 +107,26 @@
       A technician deployed the new code to seven of the eight routing
       servers and missed the eighth, leaving one node running stale software.
       The new code reused a configuration flag that, on the old software still
-      on that eighth server, had once activated long-dormant "Power Peg" test
-      code — retired years earlier but never removed from the repository. At
+      on that eighth server, had once activated the long-dormant "Power Peg" routing function — discontinued in 2003 but left present and callable. At
       the open the dead code woke and began firing millions of unintended
       orders into the market. In about forty-five minutes Knight amassed a
-      vast unwanted position; losses passed \$170 million almost at once and
-      reached about \$440 million — more than the firm itself was worth. It
+      vast unwanted position — long about \$3.5 billion in 80 stocks and short about \$3.15 billion in 74 — and realized a pre-tax loss of about \$440 million, more than the firm itself was worth. It
       survived only on emergency capital and was effectively acquired within
       months.#cn()
     ],
     // -- The Investigation --
     [
-      The Securities and Exchange Commission's September 2013 enforcement
+      The Securities and Exchange Commission's October 2013 enforcement
       order — In re Knight Capital Americas LLC — found Knight had no
       written procedure requiring a second technician to verify the
-      deployment across all hosts, and no automated check that all eight
-      servers were running the same code — nor controls able to recognize
-      and halt the flood of erroneous orders once it began. The order
+      deployment across all hosts, no written code-development and deployment procedures for the router, and no written protocol governing access to unused code — nor controls able to recognize and halt the flood of erroneous orders once it began. The order
       catalogued specific violations of the SEC's Market Access Rule
       (Rule 15c3-5), and Knight settled for a \$12 million
       penalty.#cn() The dead Power Peg code was the proximate trigger
       and the reused flag the match that lit it; but the underlying
       cause was the absence of the verification and risk controls that
       should surround any change to a system wired directly into the
-      live market. The order is unusually explicit that the institutional
-      gap was financial-engineering practice catching up to
-      software-engineering practice — release management, configuration
-      control, and pre-trade risk limits were not yet treated as
-      first-class deliverables on the trading desk.#cn()
+      live market. The order finds that Knight "did not have technology governance controls and supervisory procedures sufficient to ensure the orderly deployment of new code or to prevent the activation of code no longer intended for use," and that its firm-wide capital thresholds were never linked to controls that could stop the orders being entered.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -180,7 +172,7 @@
   ),
   references: (
     [U.S. Securities and Exchange Commission, _Order Instituting Administrative and Cease-and-Desist Proceedings_, In re Knight Capital Americas LLC (2013) — the firm, the Retail Liquidity Program launch, and the deployment.],
-    [SEC Order (2013) and Knight Capital 8-K filing (2012) — the missed eighth server, the reactivation of the dormant "Power Peg" code, the ~\$440 million loss in ~45 minutes, and the near-collapse.],
+    [SEC Order (2013) and Knight Capital 8-K filing (2012) — the missed eighth server, the reactivation of the dormant "Power Peg" code, and the ~45-minute event; the SEC puts the loss on the positions at over \$460 million, Knight's own filing at a realized pre-tax loss of ~\$440 million.],
     [SEC Order (2013) — the absence of a second-technician deployment verification, the lack of an automated code-consistency check, inadequate order controls, and the \$12 million penalty (quoted).],
     [B. Beyer, C. Jones, J. Petoff & N. R. Murphy (eds.), _Site Reliability Engineering_ (O'Reilly, 2016) — deployment verification, dead-code removal, and automated safeguards as engineering deliverables.],
     [SEC Market Access Rule (Rule 15c3-5) and subsequent automated-controls guidance — the regulatory response on pre-trade risk and market-access controls.],
@@ -617,9 +609,9 @@
   year: "2003",
   domains-list: ("energy",),
   modes-code: "HK",
-  impact: "50 million people without power across eight U.S. states and Ontario; $6B+ economic loss; FERC Order 693 followed",
+  impact: "50 million people without power across eight U.S. states and Ontario; $4–10B U.S. economic cost; FERC Order 693 followed",
   diagram: dgm.dgm-timeline(
-    (("tree contact", "3:05"), ("line trips", "—"), ("alarm fails", "silent"), ("operator unaware", "1 hour"), ("cascade", "4:11")),
+    (("tree contact", "3:05"), ("line trips", "—"), ("alarm fails", "2:14 — silent"), ("operator unaware", "51 min"), ("cascade", "4:11")),
     emphasis: 2,
     caption: "Northeast Blackout — silent alarm failure absorbed the operator's awareness",
   ),
@@ -627,14 +619,12 @@
   summary: [
     On 14 August 2003 a high-voltage transmission line in Ohio sagged into a
     tree and tripped — an event the grid should have absorbed. But
-    FirstEnergy's control-room alarm system had been silently failing for
-    over an hour, so operators did not know the line was gone. Further lines
+    FirstEnergy's control-room alarm system had failed silently just after 14:14, so operators did not know the line was gone. Further lines
     tripped, and a cascade swept across the Eastern Interconnection; within
     minutes 50 million people across eight U.S. states and Ontario lost
-    power, at a cost above \$6 billion. The U.S.-Canada task force found
+    power, at a U.S. cost the task force put at \$4 to \$10 billion. It found
     FirstEnergy lacked situational awareness, its alarm system had failed
-    without notice, vegetation management was poor, and the regional
-    coordinator could not intervene. The reforms made reliability standards
+    without notice, vegetation management was poor, and the reliability organizations gave no effective real-time diagnostics. The reforms made reliability standards
     mandatory and enforceable (FERC Order 693). The gap sat at the
     automation-operator boundary: a silent failure left operators blind.
   ],
@@ -644,8 +634,7 @@
       The Eastern Interconnection is built to ride through the loss of a
       single transmission line, and control rooms watch the grid through
       software and alarms. FirstEnergy, the Ohio utility at the center of the
-      story, ran a control room whose alarm system had — unknown to anyone —
-      been silently failing for over an hour.#cn() The interconnection's
+      story, ran a control room whose alarm system had — unknown to anyone — failed just after 14:14 and was never restored.#cn() The interconnection's
       single-line resilience assumes the operators can see which line is gone;
       a silent alarm broke that assumption at its root, leaving a grid
       designed to tolerate one fault blind to the fault it was tolerating.
@@ -657,20 +646,15 @@
       did not take the corrective steps that would have contained it. Further
       lines tripped and a cascade swept across the interconnection; within
       minutes 50 million people across eight states and Ontario lost power,
-      at a cost above \$6 billion.#cn() The first trip was the routine
+      at a U.S. cost estimated at \$4 to \$10 billion.#cn() The first trip was the routine
       single-line loss the grid was built to absorb; what turned it into a
       cascade was not the tree but the hour in which the operators acted on a
       picture of the grid that no longer matched the grid.
     ],
     // -- The Investigation --
     [
-      The U.S.-Canada Power System Outage Task Force found FirstEnergy
-      operators "did not have adequate situational awareness," that the alarm
-      system had failed without notice, that vegetation management was
-      inadequate, and that the regional reliability coordinator lacked the
-      authority and information to intervene.#cn() The reforms produced FERC
-      Order 693, which for the first time made compliance with reliability
-      standards mandatory and enforceable rather than voluntary.#cn() Making
+      The U.S.-Canada Power System Outage Task Force named "inadequate situational awareness at FirstEnergy" as a cause — "FE did not recognize or understand the deteriorating condition of its system" — along with FE's failure to manage tree growth and the reliability organizations' failure to provide effective real-time diagnostic support.#cn() The reforms produced FERC
+      Order 693, which approved 83 NERC standards as mandatory and enforceable under the authority Congress created in the Energy Policy Act of 2005.#cn() Making
       the standards mandatory addressed the deeper finding that a voluntary
       regime had let vegetation management and operator awareness drift: when
       compliance is optional, the practices that prevent a cascade are exactly
@@ -705,19 +689,19 @@
   beats: (
     "Eastern Interconnection rides through single-line loss; FirstEnergy's alarm system was silently failing for an hour",
     "An Ohio line sagged into a tree; silent alarms left operators blind; cascade blacked out fifty million",
-    "Task Force found inadequate situational awareness, vegetation lapses, weak coordinator authority; FERC Order 693 followed",
+    "Task Force found inadequate situational awareness, vegetation lapses, no effective real-time diagnostic support; FERC Order 693 followed",
     "Missing capability was the meta-monitor; silence is indistinguishable from a healthy, quiet grid",
     "New mandatory reliability regime backed by audits and penalties; reliability is a deliverable, not best practice",
   ),
   references: (
     [U.S.-Canada Power System Outage Task Force, _Final Report on the August 14, 2003 Blackout in the United States and Canada_ (2004) — the tree contact, the silent alarm, and the cascade.],
     [Task Force (2004) — 50 million people affected across eight states and Ontario; the minute-by-minute sequence.],
-    [Task Force (2004) — FirstEnergy "did not have adequate situational awareness," plus the vegetation-management and reliability-coordinator findings (quoted).],
+    [Task Force (2004), Causes Groups 1–4 — "inadequate situational awareness at FirstEnergy," FE's failure to manage tree growth, and the reliability organizations' failure to provide effective real-time diagnostic support (quoted).],
     [FERC Order No. 693, _Mandatory Reliability Standards for the Bulk-Power System_ (2007) — enforceable standards.],
     [North American Electric Reliability Council reports (2004) and the creation of the Electric Reliability Organization.],
     [M. R. Endsley (1995), situation-awareness theory — the human-factors frame for silent-automation failure.],
   ),
-  quote: [FirstEnergy ... did not have adequate situational awareness of conditions on its system.],
+  quote: [Inadequate situational awareness at FirstEnergy. FE did not recognize or understand the deteriorating condition of its system.],
   quote-source: "U.S.-Canada Power System Outage Task Force, Final Report on the August 14 2003 Blackout, April 2004",
   le-insight: [
     The 2003 blackout is the canonical case for silent automation

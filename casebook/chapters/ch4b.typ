@@ -679,7 +679,7 @@
   year: "2018 – present",
   domains-list: ("defense",),
   modes-code: "TKN",
-  impact: "Tripled ship-driving training hours; 10 pass-or-fail career assessments; Ready-for-Sea Assessments — 3 of 18 forward-deployed ships immediately sidelined",
+  impact: "Threefold increase in initial ship-driving training hours planned by 2021; 10 pass-or-fail career assessments, 3 of them go/no-go; Ready-for-Sea Assessments — 3 of 18 forward-deployed ships immediately sidelined",
   diagram: dgm.dgm-navy-reform,
   kind: "intervention",
   summary: [
@@ -693,8 +693,7 @@
     evaluated forward-deployed ships against a deliverable standard; three
     of the first eighteen were immediately sidelined. The structural change
     is real and the investment substantial. What is missing is the third
-    half: the GAO has noted the Navy still lacks systematic evaluation of
-    whether the reforms work — a live success in structure, with evidence
+    half: GAO found in 2019 that the Navy had not put key processes and assessments in place to evaluate the effectiveness of its changes to ship-driving training — a live success in structure, with evidence
     of effect still outstanding.
   ],
   sections: (
@@ -714,8 +713,7 @@
     [
       Beginning in 2018, the Navy restored the Surface Warfare Officers
       School from self-study to classroom-plus-simulator instruction,
-      established Mariner Skills Training Centers on both coasts, roughly
-      tripled ship-driving training hours, and created ten pass-or-fail
+      established Mariner Skills Training Centers on both coasts, set out a threefold increase in initial ship-driving training hours by 2021, and created ten pass-or-fail
       assessments across an officer's career path — three of them no-go
       gates that can halt advancement. The no-go gates were the structural
       teeth: by tying advancement to demonstrated competence rather than
@@ -736,9 +734,7 @@
     ],
     // -- The Evidence --
     [
-      Here the case turns instructive. The Government Accountability Office
-      has noted that the Navy still lacks systematic evaluation of whether
-      the reforms actually improve readiness. The structural intervention
+      Here the case turns instructive. The Government Accountability Office found in November 2019 that "the Navy has not put key processes and assessments in place to evaluate comprehensively the effectiveness of its changes to ship-driving training." The structural intervention
       happened and the investment was large, but decision-grade evidence on
       outcomes is incomplete — the measurement to confirm the effect has
       lagged the change itself. Without an outcome time-series, the Navy
@@ -763,18 +759,18 @@
     "Two fatal 2017 collisions exposed seamanship training degraded to CD-ROM self-study",
     "Navy restored SWOS classroom instruction, tripled training hours, and created ten career assessments",
     "Reform paired simulators and restored curricula with aviation-style debriefing and explicit gate ownership",
-    "GAO noted the Navy still lacks systematic evaluation of whether reforms improve readiness",
+    "GAO found the Navy had not put processes in place to evaluate the effectiveness of its ship-driving training changes",
     "Live in-progress reform shows mature capability engineering must build measurement infrastructure from the start",
   ),
   references: (
-    [GAO-21-168 (and GAO-20-154), Navy readiness reform — the lack of systematic outcome evaluation (paraphrased).],
+    [GAO-20-154, _Navy Readiness: Actions Needed to Evaluate the Effectiveness of Changes to Surface Warfare Officer Training_ (November 2019) — the absent evaluation processes and the planned threefold increase in ship-driving training hours.],
     [Readiness Reform Oversight Council, _One-Year Report_ (2019) — restored training, assessments, and gates.],
     [Navy and NTSB reports on the Fitzgerald and McCain collisions (2017–2019) — the training-degradation antecedent.],
     [SWOS Norfolk and San Diego Mariner Skills Training Center documentation — simulators and curriculum.],
     [USNI News reform coverage (2020, 2022) — Ready-for-Sea Assessments and sidelined ships.],
   ),
-  quote: [The Navy still lacks systematic evaluation of whether the reforms work.],
-  quote-source: "Paraphrasing GAO-21-168 on Navy readiness reform, 2021",
+  quote: [The Navy has not put key processes and assessments in place to evaluate comprehensively the effectiveness of its changes to ship-driving training.],
+  quote-source: "GAO-20-154, Navy Readiness: Actions Needed to Evaluate the Effectiveness of Changes to Surface Warfare Officer Training, November 2019",
   le-insight: [
     The Navy reform is a paired intervention in progress: technical
     (training restored, simulators procured, assessments created) plus
@@ -1058,10 +1054,7 @@
     ],
     // -- Early Evidence --
     [
-      The technical pieces work: the data model is sound and reference
-      implementations exist. What has lagged is the governance — who owns the
-      data, what consent frameworks apply, and how data quality is assured
-      across organizations.#cn() With the data model proven and reference
+      The data model is sound and reference implementations exist. What has lagged is semantic conformance — ADL's own acquisition guidance warns that xAPI data not following published Profiles "will have interoperability issues outside of the implementing organization" — and governance: who owns the data, what consent frameworks apply, and how data quality is assured across organizations.#cn() With the data model proven and reference
       implementations in hand, the remaining obstacles are not engineering
       questions an organization can solve alone but agreements between
       organizations — ownership, consent, and assured quality — that no
@@ -1090,8 +1083,8 @@
   ),
   references: (
     [Advanced Distributed Learning Initiative, Total Learning Architecture documentation — the cross-boundary vision.],
-    [xAPI specification (#link("https://xapi.com/")[xapi.com]) — the technical standard and reference implementations.],
-    [IEEE ICICLE proceedings on TLA adoption challenges — the persistence of siloed implementations.],
+    [IEEE Std 9274.1.1-2023, _Standard for Learning Technology — JSON Data Model Format and RESTful Web Service for Learner Experience Data Tracking and Access_ (xAPI 2.0, published October 2023) — the technical standard of record, transferred from ADL to the IEEE LTSC in 2019.],
+    [ADL Initiative, _Total Learning Architecture Standards: Digital Learning Acquisition Techniques_ (December 2023) — xAPI data that does not follow xAPI Profiles "will have interoperability issues outside of the implementing organization."],
     [B. Saxberg, learning-engineering infrastructure essays; IEEE ICICLE LEBoK chapters on data and analytics.],
     [Cf. inBloom (Case 53) — technology in advance of governance.],
   ),

@@ -693,7 +693,7 @@
   year: "2010",
   domains-list: ("energy", "industrial"),
   modes-code: "NGK",
-  impact: "29 killed in West Virginia coal mine; MSHA found systematic falsification of safety records; first U.S. mining-industry CEO convicted of a federal mine-safety charge (misdemeanor)",
+  impact: "29 killed in West Virginia coal mine; MSHA found two sets of books and required examinations not performed; first U.S. mining-industry CEO convicted of a federal mine-safety charge (misdemeanor)",
   diagram: dgm.dgm-compare(
     "inspector\nlog",
     "compliant",
@@ -708,10 +708,7 @@
     Big Branch mine in West Virginia, killing 29 miners — the worst U.S.
     mine disaster in forty years. Investigators found Massey had kept two
     sets of records: an internal log of actual conditions and a separate,
-    clean log for federal inspectors. Foremen were directed to suppress
-    methane readings, disable monitors, and falsify pre-shift examinations —
-    not as an aberration but as a stable routine across years and management
-    layers. CEO Don Blankenship was convicted of a misdemeanor conspiracy to
+    clean log for federal inspectors. Required pre-shift, on-shift, and weekly examinations went unperformed, no methane examinations were made on the longwall tailgate in the weeks before the blast, and the mine's superintendent later admitted ordering a methane monitor disabled. CEO Don Blankenship was convicted of a misdemeanor conspiracy to
     violate mine-safety standards — the first U.S. mining CEO criminally
     convicted on such a charge. Upper Big Branch is the dataset's clearest
     case of a measurement system engineered deliberately to defeat the
@@ -743,17 +740,11 @@
     ],
     // -- The Investigation --
     [
-      MSHA's investigation and a parallel U.S. Department of Justice probe
-      found foremen instructed to suppress methane readings, disable
-      monitors, and falsify pre-shift examinations.#cn() Massey CEO Don
+      MSHA found required pre-shift, on-shift, and weekly examinations unperformed and no methane examinations at all on the longwall tailgate in the weeks before the blast; a parallel U.S. Department of Justice probe established that a methane monitor had been ordered disabled.#cn() Massey CEO Don
       Blankenship was eventually convicted of a misdemeanor count of
       conspiring to willfully violate mine-safety standards — the first U.S.
       mining-industry CEO criminally convicted on a mine-safety charge —
-      though acquitted on the felony counts.#cn() That the instructions ran
-      down to foremen and the conviction reached up to the CEO marks the
-      practice as vertical, not local: the deception was operated at the
-      working level and conceived above it, spanning the management layers in
-      between.
+      though acquitted on the felony counts.#cn() The conviction did not reach the deception: the jury convicted Blankenship of conspiring to violate mine-safety standards and acquitted him of conspiring to defraud the regulator, so the records architecture is proved at the mine and never proved above it.
     ],
     // -- The Capability Gap --
     [
@@ -785,7 +776,7 @@
   beats: (
     "Massey ran two sets of records; the clean log disabled the regulator's mechanism of sight",
     "Coal dust and methane ignited, killing twenty-nine; the sanitized records hid the conditions",
-    "MSHA and DOJ found suppressed readings and disabled monitors; CEO Blankenship convicted of misdemeanor conspiracy",
+    "MSHA found unperformed examinations and two sets of books; DOJ established a disabled monitor; Blankenship convicted of misdemeanor conspiracy",
     "Dual records were stable institutional practice spanning years; measurement engineered as deception",
     "Conviction set accountability marker; unanswered is what independent signal could expose divergence live",
   ),
@@ -883,8 +874,7 @@
     [
       The Deepwater Horizon was drilling BP's Macondo exploratory well in the
       Gulf of Mexico when, on 20 April 2010, the well blew out. Eleven
-      workers were killed, the rig burned and sank, and roughly 4.9 million
-      barrels of oil flowed into the Gulf over 87 days — the largest marine
+      workers were killed, the rig burned and sank, and roughly 4.9 million barrels of oil escaped the well over 87 days, about 830,000 of them captured at the wellhead — the largest marine
       oil spill in U.S. history, eventually costing BP more than \$65
       billion.#cn() The well sat at the end of a long chain of contractors and
       schedules, each operating to its own tolerance, so that the 87 days of
@@ -907,18 +897,14 @@
     // -- The Investigation --
     [
       Four major investigations reached the wreck and pulled on different
-      threads. The National Commission concluded that a cascade of mistakes across BP,
-      Halliburton, and Transocean, not mechanical failure alone, was the root
-      cause, and that the mistakes revealed
+      threads. The National Commission called a series of identifiable mistakes across BP, Halliburton, and Transocean the blowout's immediate causes and a systemic failure of industry management its root cause, and found that the mistakes revealed
       "such systematic failures in risk management that they place in doubt
       the safety culture of the entire industry."#cn() The joint Coast
       Guard / BOEMRE inquiry traced the blowout-preventer failure to a
       buckled drill pipe and a maintenance backlog that the leasing-and-safety
       regulator had not caught. The Chemical Safety Board's separately
       published process-safety review made the load-bearing distinction
-      explicit: BP's lost-time-injury rate had been industry-leading on the
-      rig, yet personal-safety metrics had no purchase on the catastrophic
-      process-safety risks that produced the blowout — the same inversion
+      explicit: BP and Transocean both reported improving personal-injury rates in the year before the blowout, yet personal-safety metrics had no purchase on the catastrophic process-safety risks that produced it — the same inversion
       the CSB had already documented at Texas City. Government and academic
       reviews found training that had not covered the well-control situation
       the crew faced, an unclear chain of command, and a cascade of failed
@@ -982,7 +968,7 @@
   references: (
     [National Commission on the BP Deepwater Horizon Oil Spill, _Deep Water: The Gulf Oil Disaster and the Future of Offshore Drilling_ (Report to the President, 2011) — systematic management failures as root cause; the misread negative-pressure test.],
     [National Commission (2011) — the well-control sequence and mud-displacement decision.],
-    [National Commission (2011) — "systematic failures in risk management… place in doubt the safety culture of the entire industry" (quoted); U.S. Chemical Safety Board, _Drilling Rig Explosion and Fire at the Macondo Well_ (final volumes, 2014–2016) — process-safety vs. personal-safety distinction and BP's industry-leading lost-time-injury rate as a misleading indicator.],
+    [National Commission (2011) — "systematic failures in risk management… place in doubt the safety culture of the entire industry" (quoted); U.S. Chemical Safety Board, _Drilling Rig Explosion and Fire at the Macondo Well_ (final volumes, 2014–2016) — process-safety vs. personal-safety distinction and the improving personal-injury rates BP and Transocean reported as misleading indicators.],
     [BOEMRE / U.S. Coast Guard Joint Investigation (2011) — blowout-preventer maintenance backlog and chain-of-command findings; National Academies, _Macondo Well Deepwater Horizon Blowout: Lessons for Improving Offshore Drilling Safety_ (2012) — training gaps and the interlinked cascade of failed defenses.],
     [Deepwater Horizon Study Group (UC Berkeley, 2011) final report; N. Leveson, systems-theoretic analysis of Deepwater Horizon — the multi-layer drift and the limits of single-cause framings.],
     [Spill-volume estimates (~4.9 million barrels) and BP cost disclosures (>\$65 billion); the reorganization of the Minerals Management Service into BSEE/BOEM (Secretarial Order 3299, 2010); A. Lustgarten, _Run to Failure: BP and the Making of the Deepwater Horizon Disaster_ (W.W. Norton, 2012) — long-arc account of accumulated procedural debt.],
@@ -997,9 +983,7 @@
     had been operating with accumulated procedural debt for years. The
     capability to recognize an unsafe well-state simply was not present
     at the moment it was needed. The CSB's process-safety / personal-safety
-    distinction is load-bearing: BP's industry-leading lost-time-injury
-    record was a measurement of the wrong construct, and reading it as
-    safety was itself a normalization.
+    distinction is load-bearing: the improving personal-injury rates BP and Transocean reported were a measurement of the wrong construct, and reading them as safety was itself a normalization.
   ],
   lens-approach: [
     Deepwater Horizon anchors the cue-and-alert-design competency
@@ -1027,7 +1011,7 @@
     [Identify a multi-defense process in your domain. For each layer, what is the procedural debt that has accumulated since it was designed?],
     [The negative-pressure test was the proximate trigger. Design a capability check that would have caught the misinterpretation in real time — and specify what makes the cue unambiguous enough that an anomalous reading stops work rather than inviting a rationalizing explanation.],
     [The Commission judged the drift industry-wide, not rig-specific. What measure in your domain would reveal whether a single failure is a local lapse or a sample from a systemic distribution?],
-    [BP's lost-time-injury rate had been industry-leading on the rig. Name the measurement in your domain that is most at risk of being the wrong construct — a personal-safety analog where the catastrophic process-safety risk lives elsewhere — and design the second instrument that would surface the harm the first one cannot see.],
+    [The Deepwater Horizon had gone seven years without a single lost-time incident. Name the measurement in your domain that is most at risk of being the wrong construct — a personal-safety analog where the catastrophic process-safety risk lives elsewhere — and design the second instrument that would surface the harm the first one cannot see.],
   ),
   approaches: (
     during: (
@@ -1194,7 +1178,7 @@
   year: "2018",
   domains-list: ("energy",),
   modes-code: "GNK",
-  impact: "85 killed in Paradise, California; deadliest U.S. wildfire in a century; PG&E pleaded guilty to 84 counts of involuntary manslaughter",
+  impact: "85 killed in Butte County, California; deadliest U.S. wildfire in a century; PG&E pleaded guilty to 84 counts of involuntary manslaughter",
   diagram: dgm.dgm-stat(
     "85",
     "killed in Paradise · single transmission hook",
@@ -1208,10 +1192,7 @@
     swept into the town of Paradise faster than people could evacuate.
     Eighty-five died — the deadliest U.S. wildfire in a century — and PG&E
     later pleaded guilty to 84 counts of involuntary manslaughter.
-    Investigators found PG&E had known for years that its transmission
-    infrastructure across high-fire-risk areas was deteriorating, and had
-    deferred maintenance to fund other priorities, under a regulatory regime
-    that let the deferrals continue. Infrastructure built for one climate was
+    Investigators found PG&E had known for years that its transmission infrastructure across high-fire-risk areas was deteriorating, and had run it under a strategy its own documents called Run to Failure while consistently reducing the frequency and thoroughness of its inspections. Infrastructure built for one climate was
     operating in another. Camp Fire is the book's foundational climate-era
     case for utility capability under changed conditions, and it restructured
     how California regulates utility wildfire risk.
@@ -1239,10 +1220,7 @@
     // -- The Investigation --
     [
       CalFire's investigation and the Butte County District Attorney's report
-      found that PG&E had known for years about the deteriorating condition
-      of its transmission infrastructure in high-fire-risk areas, and had
-      deferred the maintenance to fund other corporate priorities — so the
-      hazard was not unknown but a recognized risk repeatedly postponed.#cn()
+      found that PG&E had known for years about the deteriorating condition of its transmission infrastructure in high-fire-risk areas, and had consistently reduced the frequency and thoroughness of the inspections that would have found the wear — so the hazard was not unknown but a recognized risk left unlooked-at.#cn()
       The gap was simultaneously at the utility's asset-maintenance decisions
       and at the regulatory architecture that had allowed the deferrals to
       continue, neither side holding a line that would have forced the work.#cn()
@@ -1288,8 +1266,8 @@
     [PG&E bankruptcy and California wildfire-mitigation reforms (2019– ).],
     [Cf. the Northeast Blackout (Case 146); climate-and-infrastructure literature.],
   ),
-  quote: [PG&E knew its equipment was failing in high-fire-risk areas and continued operating without remediation.],
-  quote-source: "Paraphrasing the Butte County District Attorney's Camp Fire Report, 2020",
+  quote: [Catastrophic failure of the Caribou-Palermo line was not an "if" question; it was a "when" question.],
+  quote-source: "Butte County District Attorney, The Camp Fire Public Report, 16 June 2020",
   le-insight: [
     The Camp Fire is the canonical climate-era case for utility-
     capability failure under changing risk conditions. The
@@ -1447,8 +1425,7 @@
       Operations (INPO, December 1979) to set standards, run plant
       evaluations, and force the sharing of operating experience the
       Davis-Besse failure had lacked.#cn() The NRC overhauled licensing
-      and inspection: it required plant-referenced simulators, placed
-      resident inspectors at every commercial reactor, tied operator
+      and inspection: it required plant-referenced simulators, expanded the resident inspector program to every commercial reactor, tied operator
       training and re-qualification to a national standard, and in
       Regulatory Guide 1.97 specified the post-accident instrumentation
       needed to give crews state — not command — information across the
@@ -1473,12 +1450,12 @@
   references: (
     [Kemeny Commission, _Report of the President's Commission on the Accident at Three Mile Island_ (Oct. 1979) — operator training oriented to large design-basis accidents.],
     [M. Rogovin & G. T. Frampton, _Three Mile Island: A Report to the Commissioners and to the Public_, NUREG/CR-1250 (U.S. NRC, 1980) — the September 1977 Davis-Besse stuck-PORV precursor and the failure to disseminate its lessons.],
-    [U.S. Nuclear Regulatory Commission, #link("https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/3mile-isle.html")[Backgrounder on the Three Mile Island Accident] — accident sequence, misleading PORV indication, throttled high-pressure injection, ~50% core damage, minimal off-site dose.],
+    [U.S. Nuclear Regulatory Commission, #link("https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/3mile-isle.html")[Backgrounder on the Three Mile Island Accident] — accident sequence, misleading PORV indication, throttled high-pressure injection, and the off-site dose — about 1 millirem average, under 100 millirem at the site boundary.],
     [Kemeny Commission (1979) — central conclusion that the fundamental problems were people-related, not equipment-related (quoted).],
     [C. Perrow, _Normal Accidents_ (1984); J. Reason, _Human Error_ (1990) — why ambiguous cascades defeat design-basis training and command-not-state interfaces.],
     [#link("https://www.inpo.info/history")[Institute of Nuclear Power Operations, "Our History"] — INPO established December 1979 to set standards and force sharing of operating experience; see also NEI, "Lessons from the 1979 Accident at Three Mile Island."],
     [J. V. Rees, _Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island_ (Univ. of Chicago Press, 1994) — TMI as the origin of systematic capability reform.],
-    [U.S. Nuclear Regulatory Commission, _Regulatory Guide 1.97_, _Criteria for Accident Monitoring Instrumentation for Nuclear Power Plants_ (revised post-TMI), and NUREG-0700, _Human-System Interface Design Review Guidelines_ — the control-room and post-accident-instrumentation standards that grew out of TMI; see also J. C. Walker, _Three Mile Island: A Nuclear Crisis in Historical Perspective_ (Univ. of California Press, 2004) on the operator-training-and-licensing overhaul.],
+    [U.S. Nuclear Regulatory Commission, _Regulatory Guide 1.97_, Rev. 2, _Instrumentation for Light-Water-Cooled Nuclear Power Plants to Assess Plant and Environs Conditions During and Following an Accident_ (Dec. 1980), and NUREG-0700, _Human-System Interface Design Review Guidelines_ — the control-room and post-accident-instrumentation standards that grew out of TMI; see also J. S. Walker, _Three Mile Island: A Nuclear Crisis in Historical Perspective_ (Univ. of California Press, 2004) on the operator-training-and-licensing overhaul.],
   ),
   quote: [The fundamental problems are people-related problems and not equipment problems.],
   quote-source: "Kemeny Commission Report on Three Mile Island, 1979",
