@@ -1349,9 +1349,7 @@
     ],
     // -- The Investigation --
     [
-      Analysts at Data & Society read the collapse as two forces meeting: a public with low tolerance for risk and uncertainty, and an initiative that never communicated its benefits or won buy-in from the stakeholders it needed. Legitimacy, on that reading, is earned from the people a system acts upon, not conferred by the quality of its engineering. Legitimacy,
-      on this reading, is earned from the stakeholders a system acts upon, not
-      conferred by the quality of its engineering. The technology was never
+      Analysts at Data & Society read the collapse as two forces meeting: a public with low tolerance for risk and uncertainty, and an initiative that never communicated its benefits or won buy-in from the stakeholders it needed. Legitimacy, on that reading, is earned from the people a system acts upon, not conferred by the quality of its engineering. The technology was never
       the problem; the governance was — the consent, transparency, and trust
       that had been treated as add-ons rather than as the foundation the whole
       effort needed before a single record moved.#cn()
