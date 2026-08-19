@@ -37,8 +37,7 @@
     lets services interoperate without forcing a central
     monolith. By December 2024 the country reported effectively
     100% digitalization of government services across X-Road,
-    with sub-five-minute tax filing for more than 95% of the
-    population. The case sits inside C7 not because of the
+    with more than 95% of tax declarations filed electronically, most in a few minutes. The case sits inside C7 not because of the
     headline outcomes but because of the load-bearing
     self-critique surfaced in the peer-reviewed analysis: by
     committing the country to X-Road as the data-exchange layer,
@@ -84,10 +83,7 @@
     [
       The load-bearing self-critique is what makes this a C7
       case and not just a digital-government success story. The
-      analysis surfaces what practitioners and researchers have
-      begun to call the no-legacy paradox: by committing the
-      country to X-Road as the data-exchange layer, Estonia has
-      effectively created its own legacy system. The protocol is
+      analysis says it outright. Kattel and Mergel write that with the decision to focus its digital development on X-Road only, Estonia has effectively created its own legacy system — a move that the initial thinkers wanted to avoid. The paradox is named against Estonia's own design rule: no legacy, meaning public digital infrastructure should not run on solutions older than thirteen years. The protocol is
       now twenty-plus years old; the agency systems that hang
       off it have accreted their own logic; the generational
       replacement of the platform itself is now the
@@ -104,7 +100,7 @@
       to materialize: X-Road version 7 ("Unicorn") is in production
       and version 8 ("Spaceship") is planned for 2026, re-scoping the
       platform toward a federated "dataspace" model and aligning its
-      trust framework with the EU's Gaia-X — the modernization regime
+      trust framework with the Gaia-X trust framework — the modernization regime
       acting on its own paradox rather than leaving it as theory.
       Future validation will continue as the next-generation
       data-exchange architecture is deployed.#cn()
@@ -194,7 +190,7 @@
   year: "2016 – present",
   domains-list: ("autonomous",),
   modes-code: "TNGH",
-  impact: "Dozens of fatalities documented in NHTSA's Standing General Order data; first U.S. cases of Level-2 automation contributing to fatal injury",
+  impact: "14 deaths across the 467 Autopilot crashes NHTSA analysed in EA22-002; first U.S. cases of Level-2 automation contributing to fatal injury",
   diagram: dgm.dgm-stat(
     "L2",
     "driver retained · attention not engineered",
@@ -205,9 +201,9 @@
   summary: [
     Tesla's Autopilot and Full Self-Driving Beta are Level-2
     driver-assistance systems: the human driver remains legally and
-    operationally responsible at all times. NHTSA's Standing General Order
-    data has documented dozens of fatal crashes involving Autopilot since
-    the 2016 death of Joshua Brown in Florida, and the pattern is
+    operationally responsible at all times. NHTSA's engineering analysis of Autopilot found 13 fatal
+    crashes, and 14 deaths, among the 467 it examined, and the record runs
+    back to the 2016 death of Joshua Brown in Florida. The pattern is
     consistent — the system performs capably for long stretches, the
     driver's monitoring attention attenuates, and an edge case (a
     stationary object, a faded lane line, a crossing vehicle) produces a
@@ -233,8 +229,7 @@
     // -- What Is Emerging --
     [
       Since the first fatal Autopilot crash — Joshua Brown, Florida, 2016 —
-      NHTSA's Standing General Order data has documented dozens of fatal
-      crashes involving the system. The pattern is consistent: long periods
+      NHTSA has documented 13 fatal crashes among the 467 Autopilot crashes it analysed through August 2023. The pattern is consistent: long periods
       of capable operation, attenuating driver attention, and then an edge
       case — a stationary fire truck, a faded lane marking, a perpendicular
       crossing — that the disengaged driver fails to catch in time. The very
@@ -279,12 +274,9 @@
       redesigned out of the human's hands.#cn() The question did not stay
       settled at the recall: in April 2024 NHTSA opened a new investigation
       into whether the December 2023 remedy was even adequate, and in
-      October 2024 opened a separate probe of Full Self-Driving after
-      low-visibility fatal crashes. Then in June 2025 Tesla launched a
+      October 2024 opened a separate probe of Full Self-Driving after four reduced-visibility crashes, one of them a pedestrian fatality. Then in June 2025 Tesla launched a
       limited driverless robotaxi service in Austin — moving the company
-      past Level-2 monitoring into a Level-4 product that drew immediate
-      regulator scrutiny, and extending this case's question from the human
-      monitor to the removal of the human altogether.#cn()
+      past Level-2 monitoring into a service it calls autonomous, which drew regulator contact within days — though a Tesla safety monitor rode in the front passenger seat, so the human was relocated, not removed.#cn()
     ],
   ),
   beats: (
@@ -314,7 +306,7 @@
     [NHTSA recall-query RQ24009 (April 2024) into the adequacy of the December 2023 Autopilot remedy, and investigation PE24031 (October 2024) into Full Self-Driving; Tesla's June 2025 Austin robotaxi launch and the ensuing regulator scrutiny.],
     [Parasuraman, R. & Manzey, D. (2010) — automation complacency and monitoring.],
   ),
-  quote: [The operational design ... permitted his prolonged disengagement from the driving task.],
+  quote: [Contributing to the car driver's overreliance on the vehicle automation was its operational design, which permitted his prolonged disengagement from the driving task and his use of the automation in ways inconsistent with guidance and warnings from the manufacturer.],
   quote-source: "NTSB Highway Accident Report HAR-17/02 (Williston, Florida crash), 2017",
   le-insight: [
     Tesla Autopilot at consumer scale is the largest live test of
@@ -439,8 +431,8 @@
       evaluated against, audit on outputs rather than reasoning about
       inputs, and decide on judgment that the trade-offs across
       competing definitions are acceptable for the deployment context.
-      This is the case-grounded basis for the LEO *Fairness beyond
-      omission* and the LEO *Judgment under inadequate evidence*
+      This is the case-grounded basis for the subobjective *Fairness beyond
+      omission* (4.6) and the subobjective *Judgment under inadequate evidence* (4.4)
       — the audit is itself a worked
       example of deciding under irreducible disagreement.#cn()
     ],
@@ -484,7 +476,7 @@
   ],
   lens-approach: [
     Coots is the small-tier frontier counter-case to Bartlett. LENS
-    uses the pair in Domain 4 (Test and Evaluation) for the LEO *Fairness beyond omission*; in Domain 4 again for the LEO *Judgment under inadequate evidence* (the pair is itself a
+    uses the pair in Domain 4 (Test and Evaluation) for the subobjective *Fairness beyond omission* (4.6); in Domain 4 again for the subobjective *Judgment under inadequate evidence* (4.4) (the pair is itself a
     decision under irreducible disagreement); and in Domain 3 (Human-System Collaboration) for delegation of
     consequential consumer-finance decisions to a model. The
     preprint-tier flag is binding until peer review completes.
@@ -510,7 +502,7 @@
   year: "2011 – present",
   domains-list: ("gov", "tech"),
   modes-code: "GHD",
-  impact: "Predictive-policing tools deployed across scores of U.S. police jurisdictions; several cities have abandoned them after equity analyses",
+  impact: "Predictive-policing tools deployed across scores of U.S. police jurisdictions; Santa Cruz banned them outright in 2020 and other cities have since dropped or restricted their programs",
   diagram: dgm.dgm-compare(
     "training data",
     "past arrests",
@@ -528,9 +520,7 @@
     police have enforced, not where crime has occurred, the algorithm tends
     to reinforce existing enforcement patterns rather than predict
     underlying crime — a feedback loop that concentrates policing on
-    already-over-policed neighborhoods. Cities including Santa Cruz, New
-    Orleans, and Los Angeles have since suspended or abandoned
-    predictive-policing deployments after equity reviews. The capability
+    already-over-policed neighborhoods. Cities including Santa Cruz, New Orleans, and Los Angeles have since suspended or abandoned predictive-policing deployments — Santa Cruz on the bias case, Los Angeles on pandemic budget cuts, New Orleans after the secrecy of its Palantir contract became public. The capability
     gap is at the construct definition: "where crime occurs" and "where
     crime is recorded" are different variables, and the tools treated them
     as one. It is the canonical algorithmic-governance case in U.S. policing.
@@ -548,10 +538,7 @@
     ],
     // -- What Is Emerging --
     [
-      Researchers examining these systems found a structural flaw. Because
-      the training data records where police have made arrests rather than
-      where crime has actually occurred, the model learns enforcement
-      patterns, not crime patterns. Lum & Isaac (2016) showed the result is
+      Researchers examining these systems found a structural flaw. PredPol's place-based forecasts ran on reported crime incidents — type, location, date and time — not on arrest records. The feedback concern survives the correction and changes shape: reporting is itself uneven across neighbourhoods, and directing patrols to forecast cells generates more recorded incidents there, so the model can learn the distribution of police attention alongside the distribution of crime. Lum & Isaac (2016) showed the result is
       a feedback loop: patrols are sent where police already went,
       generating more recorded incidents that confirm the prediction — a
       loop that grows more confident the longer it runs, because its own
@@ -572,18 +559,11 @@
     [
       Richardson, Schultz & Crawford (2019) documented "dirty data" —
       records produced during periods of biased or unlawful policing —
-      feeding directly into predictive systems. After equity reviews,
-      cities including Santa Cruz, New Orleans, and Los Angeles suspended
-      or abandoned their predictive-policing deployments — abandonment that
-      came only after the tools were already in service, the construct
-      problem surfaced by external review rather than caught before the
-      systems shaped where officers were sent.#cn() The product itself
+      feeding directly into predictive systems. Santa Cruz banned predictive policing outright in June 2020, the first U.S. city to do so; Los Angeles had dropped PredPol that April citing pandemic budget cuts, a year after its Inspector General warned against drawing strong conclusions from the available statistics; New Orleans let a Palantir contract lapse in 2018 once the arrangement became public. Abandonment came only after the tools were already in service, the construct problem surfaced by external review rather than caught before the systems shaped where officers were sent.#cn() The product itself
       did not outlast the critique: PredPol rebranded as Geolitica in
       2021, and after a 2023 investigation by _The Markup_ found its
       predictions for one New Jersey department accurate less than 0.5%
-      of the time, the company's assets were absorbed by SoundThinking
-      (formerly ShotSpotter) and Geolitica ceased operations at the end
-      of 2023 — the construct-validity failure ending in commercial
+      of the time, SoundThinking (formerly ShotSpotter) hired its engineering team and moved to acquire some of its intellectual property, and Geolitica ceased operations at the end of 2023 — the construct-validity failure ending in commercial
       wind-down rather than correction.#cn()
     ],
     // -- Open Problems --
@@ -600,9 +580,9 @@
   ),
   beats: (
     "Police adopted statistical prediction tools lending discretionary judgment a veneer of objectivity",
-    "Training on arrest records, models learn enforcement patterns and create self-confirming feedback loops",
+    "Training on reported crime incidents, with reporting and patrol allocation both uneven, models learn enforcement patterns and create self-confirming feedback loops",
     "Whether a model trained on institutional behavior can predict the underlying phenomenon",
-    "Dirty data documented; Santa Cruz, New Orleans, Los Angeles suspended deployments after equity reviews",
+    "Dirty data documented; Santa Cruz banned the tools in 2020, Los Angeles and New Orleans dropped theirs on cost and secrecy",
     "Pre-deployment construct-validity audit remains absent in most jurisdictions adopting these systems",
   ),
   approaches: (
@@ -623,10 +603,10 @@
     [Brantingham et al. (2018) — predictive-policing field experiments.],
     [Brayne, S. (2017), "Big Data Surveillance: The Case of Policing."],
     [Municipal records on suspension and abandonment of predictive policing (Santa Cruz, New Orleans, Los Angeles).],
-    [Sankin, A. & Mehrotra, D. (2023), "Predictive Policing Software Terrible at Predicting Crimes," _The Markup_ — the Plainfield, NJ accuracy analysis; and reporting on PredPol/Geolitica's 2021 rebrand and 2023 wind-down into SoundThinking.],
+    [Sankin, A. & Mattu, S. (2023), "Predictive Policing Software Terrible at Predicting Crimes," _The Markup_, 2 October 2023 (copublished with _Wired_) — the Plainfield, NJ accuracy analysis; and reporting on PredPol/Geolitica's 2021 rebrand and 2023 wind-down into SoundThinking.],
   ),
-  quote: [Predictive policing systems learn from a record of past policing, not from a record of past crime.],
-  quote-source: "Paraphrasing Lum & Isaac, Significance, 2016",
+  quote: [It is predicting future policing, not future crime.],
+  quote-source: "Lum, K. & Isaac, W., \"To predict and serve?\", Significance 13(5), 2016, p. 17",
   le-insight: [
     Predictive policing is the canonical case for the difference
     between training data and ground truth at law-enforcement scale.
@@ -680,15 +660,11 @@
     (Alivisatos et al., 2012); the proposal was shepherded to the White
     House OSTP, became a Presidential initiative in 2013, and was
     operationalized by an NIH working group whose _BRAIN 2025: A
-    Scientific Vision_ report (2014; the group's plan later published
-    as Jorgenson et al., 2015) set milestones and cost estimates. What
+    Scientific Vision_ report (2014; reviewed in peer-reviewed form by the group as Jorgenson et al., 2015) set milestones and cost estimates. What
     makes it teachable rather than triumphalist is the governance
     contestation visible in the same record. Yuste worried the advisory
     panel was "packing the committee with users, rather than tool
-    builders" — diluting the original focus; Bargmann, who later
-    co-chaired the working group, had earlier expressed skepticism that
-    the proposal "sounds like a big central planning project that will
-    take resources away from creative work." A 2021 MIT Technology
+    builders" — diluting the original focus; Bargmann, who later co-chaired the working group, had written in February 2013 that "there is great concern in the neuroscience community that this sounds like a big central planning project that will take resources away from creative work." A 2021 MIT Technology
     Review retrospective assessed that the big-science brain projects,
     BRAIN included, did not deliver the unified understanding their
     framing promised. The case pairs with the EU Human Brain Project
@@ -716,8 +692,7 @@
       by Cori Bargmann and Bill Newsome, charged with translating the
       vision into a milestone-and-cost-bearing plan. The group
       released the _BRAIN 2025: A Scientific Vision_ report in June
-      2014, later published in peer-reviewed form (Jorgenson et al.,
-      _Phil. Trans. R. Soc. B_, 2015); it named seven priority areas,
+      2014, reviewed the following year in peer-reviewed form by members of the group (Jorgenson et al., _Phil. Trans. R. Soc. B_, 2015); it named seven priority areas,
       set timelines, and laid out funding ranges. Among the few large
       research-program launches in the corpus, this is one whose
       position-paper-to-policy-to-implementation sequence is openly
@@ -730,9 +705,7 @@
       panel was being expanded with users of the tools the program
       was meant to build, rather than the tool-builders the original
       proposal had centered — a documented dilution of scope.
-      Bargmann, before her appointment, had publicly expressed
-      skepticism that a big central planning project would draw
-      resources away from creative independent research. The
+      Bargmann, before her appointment, had relayed in a February 2013 email the neuroscience community's concern that a big central planning project would draw resources away from creative work. The
       governance choices — who leads, tool-builders versus users,
       central plan versus distributed creativity — were not made in
       private and then defended; they were litigated in the public
@@ -758,11 +731,7 @@
       sequence, the working-group composition decision, and the
       public airing of scope drift are the artifacts a future
       capability-development program can study. Paired with the EU
-      Human Brain Project (Case 181), the case shows that the
-      governance model — distributed working-group versus top-down
-      single-PI — was the variable that explained why one program
-      survived and adapted while the other unraveled. The framing,
-      ambition, and era were comparable; the governance was not.#cn()
+      Human Brain Project (Case 181), the case sets a distributed working-group model against a top-down single-PI one. No published assessment attributes the two trajectories to that difference; the record shows the HBP board replacing Markram's three-member executive committee with a 22-member governing board in 2015, after an open letter from hundreds of European scientists, while BRAIN ran on with funding through 2026. The framing, ambition, and era were comparable; the governance was not.#cn()
     ],
   ),
   beats: (
@@ -770,7 +739,7 @@
     "Position-paper-to-policy iteration is auditable: every step has a published artifact",
     "Governance contestation on the public record: tool-builders vs. users; central planning vs. distributed creativity",
     "2021 retrospective: unified-understanding framing exceeded delivered science; enthusiasm-evidence gap at field scale",
-    "Governance model is the deliverable — distributed working-group vs. top-down single-PI explains BRAIN survives, HBP unravels",
+    "Governance model is the deliverable — distributed working-group vs. top-down single-PI; HBP restructured under an open letter in 2015, BRAIN funded through 2026",
   ),
   approaches: (
     during: (
@@ -789,7 +758,7 @@
     [Jorgenson et al. (2015), "The BRAIN Initiative: developing technology to catalyse neuroscience discovery," _Phil. Trans. R. Soc. B_ 370(1668):20140164, doi:10.1098/rstb.2014.0164 — the BRAIN 2025 plan.],
     [Yuste & Bargmann (2017), "Toward a Global BRAIN Initiative," _Cell_ 168(6):956–959, doi:10.1016/j.cell.2017.02.023.],
     [Underwood (2013), "As White House Embraces BRAIN Initiative, Questions Linger," _Science_ / ScienceInsider (April 3, 2013) — source of the Yuste and Bargmann public-record contestation quotes.],
-    [MIT Technology Review (2021), retrospective on big-science brain projects — the critical ten-year assessment.],
+    [Mullin, E. (2021), "How big science failed to unlock the mysteries of the human brain," _MIT Technology Review_ (25 August 2021) — the critical ten-year assessment.],
   ),
   quote: [Governance contestation in the public record is not program failure. It is what makes the case teachable.],
   quote-source: "Editors' synthesis of the BRAIN Initiative record (2012 – 2021).",
@@ -933,7 +902,7 @@
       The teaching point for LENS is that delegation of
       consequential decisions to an automated system creates a
       governance debt that the deploying organization owes the
-      public. The LEO *Delegation with revocation* is the
+      public. The subobjective *Delegation with revocation* (3.3) is the
       capability the case exercises: the safety case framework
       is the artifact that makes revocation possible —
       regulators or auditors can identify which sub-claim has
@@ -961,7 +930,7 @@
     ),
     after: (
       [Treat the safety case framework as a living document — update the claims and evidence as post-deployment failure data accumulates, and publish the updates so the legitimacy artifact does not calcify.],
-      [Use the LEO *Delegation with revocation*: design the framework so a regulator or auditor can identify which sub-claim has failed and trigger a revocation pathway, not only a "trust us, we will fix it" assurance.],
+      [Use the subobjective *Delegation with revocation* (3.3): design the framework so a regulator or auditor can identify which sub-claim has failed and trigger a revocation pathway, not only a "trust us, we will fix it" assurance.],
       [Carry the practice-synthesis evidence-tier flag honestly in any program documentation citing the framework — the artifact pattern is teachable, but the magnitude of its public-trust effect is still being measured.],
     ),
   ),
@@ -988,8 +957,8 @@
   lens-approach: [
     Waymo is the AV-safety governance case (induced 5.1; LENS
     D5/PT6). LENS uses it in Domain 5 (Navigating
-    Sociotechnical Constraints) for the LEO *Delegation
-    with revocation* — the safety case is what makes
+    Sociotechnical Constraints) for the subobjective *Delegation
+    with revocation* (3.3) — the safety case is what makes
     revocation possible — and in Domain 3 (Emerging Systems
     and Human-System Collaboration) for the deployer-side artifact that
     permits oversight of a system whose internals are trade
@@ -1003,7 +972,7 @@
   ),
   reflection-list: (
     [Identify an automated system in your context that faces a public-trust objection it cannot answer by full disclosure. What falsifiable argument structure could you publish that would make the system's reasoning auditable without requiring disclosure of the contested data?],
-    [Specify how a regulator or independent auditor would *revoke* the delegation in your system if a sub-claim of the safety case failed. The LEO *Delegation with revocation* requires this pathway to exist before deployment, not only after a public-facing failure.],
+    [Specify how a regulator or independent auditor would *revoke* the delegation in your system if a sub-claim of the safety case failed. The subobjective *Delegation with revocation* (3.3) requires this pathway to exist before deployment, not only after a public-facing failure.],
   ),
   courses: ("LEN 4", "LEN 8", "LEN 9"),
 )
@@ -1016,7 +985,7 @@
   year: "2020 – 2026",
   domains-list: ("autonomous vehicles", "public-utility governance", "accessibility"),
   modes-code: "GKD",
-  impact: "California's Public Utilities Commission built an AV passenger-service permit framework whose conditions — time-of-day limits, weather restrictions, fleet caps, geographic carve-outs, mandatory Passenger Safety Plan for riders with disabilities — are explicitly designed to operationalize the governance objections that would otherwise block deployment outright",
+  impact: "California's Public Utilities Commission built an AV passenger-service permit framework whose one Commission-authored condition — a mandatory Passenger Safety Plan for riders with disabilities — operationalizes the accessibility objection, while the operating limits on hours, geography, speed and weather ride on the DMV-approved operational design domain and the Commission declined San Francisco's request to cap fleet, hours and service area",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -1030,13 +999,7 @@
     explicitly designed to address common governance objections —
     safety, equity, fleet scale — by writing them into the permit
     rather than treating them as binary deploy / don't-deploy
-    questions. The framework includes time-of-day limits, weather
-    restrictions, fleet caps, geographic carve-outs, and a required
-    Passenger Safety Plan documenting how the driverless service
-    handles riders with limited mobility, vision impairments, and
-    other disabilities. A 2024 update strengthened the DMV's
-    authority to impose targeted operational restrictions for
-    safety, and the case shows the regime in operation: the
+    questions. The Commission's own condition is a required Passenger Safety Plan documenting how the driverless service handles riders with limited mobility, vision impairments, and other disabilities; the limits on hours, geography, speed and weather arrive with the DMV-approved operational design domain. Draft DMV rules circulated for comment in 2024 and adopted in April 2026 gave the DMV authority to impose targeted operational restrictions for safety, and the case shows the regime in operation: the
     Cruise suspension (Case 190) shows the regime can revoke; the
     Waymo continuation (Case 199) shows it can permit
     conditionally. The structural complement to the Waymo
@@ -1065,15 +1028,7 @@
       brought to the proceedings.#cn()
     ],
     [
-      The CPUC's structural answer was to build the objections
-      into the permit conditions. The AV passenger-service
-      permits specify time-of-day limits, weather restrictions
-      (fog, heavy rain), fleet caps, geographic carve-outs
-      (initially excluding certain neighborhoods), and a
-      mandatory Passenger Safety Plan documenting how the
-      driverless service will accommodate riders with limited
-      mobility, vision impairments, hearing impairments, and
-      other disabilities. The conditions are not policy aspirations
+      The CPUC's structural answer was to attach one condition of its own to a permit that otherwise carries the DMV-approved operational design domain. The AV passenger-service permits inherit the DMV's limits on hours, geography, speed and weather, and add a mandatory Passenger Safety Plan documenting how the driverless service will accommodate riders with limited mobility, vision impairments, hearing impairments, and other disabilities. When San Francisco asked the Commission to cap fleet size and restrict hours and service area, Resolution TL-19144 declined: the Commission would "neither modify the DMV-approved ODD … nor set limits on fleet size." The conditions are not policy aspirations
       — they are permit terms whose violation triggers
       enforcement.#cn()
     ],
@@ -1128,7 +1083,7 @@
   ),
   beats: (
     "CPUC and California DMV regulate AV passenger service in a split-jurisdiction regime; binary deploy/don't-deploy risked either blocking deployment or losing governance handle",
-    "Permit conditions: time-of-day limits, weather restrictions, fleet caps, geographic carve-outs, mandatory Passenger Safety Plan for riders with disabilities",
+    "Permit conditions: DMV-set operational design domain (hours, geography, speed, weather) plus the CPUC's own mandatory Passenger Safety Plan for riders with disabilities; TL-19144 refused fleet, hour and geography caps",
     "August 2024 draft regulations (public comment): proposed DMV authority to impose targeted operational restrictions for safety during the deployment lifecycle",
     "Structural complement to Case 199 (Waymo deployer-side safety case) and inverse-outcome companion of Case 190 (Cruise revocation)",
     "Practice-synthesis tier: program guidance and permit decisions documented; no peer-reviewed evaluation of equity-of-service outcomes yet — future validation ongoing",
@@ -1146,10 +1101,10 @@
     ),
   ),
   references: (
-    [California Public Utilities Commission, "Autonomous Vehicle Passenger Service Programs," CPUC program page and August 2024 application guidance.],
+    [California Public Utilities Commission, "Autonomous Vehicle Passenger Service Programs" — program page for the Drivered and Driverless pilot and deployment programs, including the Passenger Safety Plan requirement.],
     [CPUC permit decisions for Cruise and Waymo, 2020–2024.],
-    [California Department of Motor Vehicles, AV regulatory program — strengthened safety-restriction authority, 2024.],
-    [Paired Cases 199 (Waymo deployer-side artifact) and 190 (Cruise revocation under regime).],
+    [California Department of Motor Vehicles, "New Autonomous Vehicle Regulations Strengthen Oversight and Enforcement, Authorize Trucks and Transit" (28 April 2026) — adopted authority to impose targeted operational restrictions on fleet size, location, speed and weather; draft language circulated for comment 30 August 2024.],
+    [California Public Utilities Commission, Resolution TL-19144 (Waymo), issued 11 August 2023 — approves driverless deployment in all of San Francisco 24 hours a day per the DMV-approved ODD, and declines to set limits on operating hours, geography or fleet size.],
   ),
   quote: [The governance objection was not refused. It was made a permit condition.],
   quote-source: "Editors' synthesis of the CPUC AV passenger-service permit framework.",
@@ -1194,7 +1149,7 @@
   year: "2018 – 2025",
   domains-list: ("digital identity", "welfare", "biometric authentication", "India"),
   modes-code: "GNH",
-  impact: "India's Aadhaar biometric-identity system, gating welfare for roughly one billion people, produced operational exclusion when authentication failed at the ration shop or pension window; the 2018 Puttaswamy II majority upheld the Section 7 welfare-linkage while Justice Chandrachud's dissent held that exclusion from technological error — through no fault of the individual — violates constitutional dignity, the reasoning behind executive fallback mandates issued after documented starvation deaths",
+  impact: "India's Aadhaar biometric-identity system, with more than 1.2 billion numbers issued and some 800 million people drawing subsidised food under it, produced operational exclusion when authentication failed at the ration shop or pension window; the 2018 Puttaswamy II majority upheld the Section 7 welfare-linkage while Justice Chandrachud's dissent held that exclusion from technological error — through no fault of the individual — violates constitutional dignity, naming a principle the executive had already reached for in its October 2017 instruction that no one be denied rations for want of Aadhaar",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -1203,8 +1158,7 @@
   lens-anchor: "D5/PT5",
   leo-anchor: "LEO-1, LEO-5",
   summary: [
-    Aadhaar — India's biometric digital-identity system, with
-    roughly one billion enrolled — was designed to streamline
+    Aadhaar — India's biometric digital-identity system, with more than 1.2 billion enrolled — was designed to streamline
     welfare delivery and reduce identity fraud. Across more than a
     decade of deployment the load-bearing failure mode became
     operational exclusion: when biometric authentication failed
@@ -1218,12 +1172,7 @@
     named the load-bearing principle — that "exclusion based on
     technological errors, with no fault of the individual, is a
     violation of dignity." The empirical predicate is the
-    documented exclusion record: the 2017 Jharkhand starvation
-    deaths (Santoshi Kumari among at least nineteen hunger deaths
-    the Right to Food Campaign tied to ration-card cancellation or
-    Aadhaar-authentication failure) and the Drèze–Khera–Somanchi
-    field study finding roughly a fifth of cardholders unable to
-    transact in an average month. The correction that followed was
+    documented exclusion record: the 2017 Jharkhand starvation deaths (Santoshi Kumari, 28 September 2017, one of 57 starvation deaths the Right to Food Campaign investigated across nine states from 2015, of which at least nineteen were directly linked to Aadhaar) and the Drèze–Khalid–Khera–Somanchi field study finding over forty percent of non-transacting households citing Aadhaar-authentication problems. The correction that followed was
     executive and doctrinal rather than a majority holding —
     circulars barring denial of rations for want of Aadhaar, and,
     in the distinct 2025 _Pragya Prasun_ ruling, a right to
@@ -1246,7 +1195,7 @@
       design choice was biometric authentication at the point
       of service — fingerprints and iris — keyed to a unique
       twelve-digit identifier issued by the UIDAI. Enrollment
-      reached approximately one billion. The capability the
+      passed 1.2 billion. The capability the
       system promised was streamlined welfare access; the
       authority it required was delegation of identity
       verification to the biometric.#cn()
@@ -1292,12 +1241,7 @@
       journalism and advocacy reporting (the Right to Food
       Campaign's compilation of the Jharkhand starvation deaths;
       the Indian press), while the exclusion-rate evidence is
-      peer-reviewed field work — Drèze, Khalid, Khera and
-      Somanchi's Jharkhand survey ("Pain without Gain?", EPW
-      2017) found roughly twenty percent of cardholders unable to
-      transact in an average month, with over forty percent of
-      non-transacting households citing Aadhaar-authentication
-      problems. The journalism-tier flag travels with the
+      peer-reviewed field work — Drèze, Khalid, Khera and Somanchi's Jharkhand survey ("Pain without Gain?", EPW 2017) found over forty percent of non-transacting households citing Aadhaar-authentication problems, and Ranchi district's own point-of-sale records put about twenty percent of cardholders unable to transact in an average month. The journalism-tier flag travels with the
       lived-exclusion material; the field data and the judgments
       carry their own, higher, tiers. Whether the fallback
       requirement is honored at the operator interface is the
@@ -1323,10 +1267,10 @@
     ],
   ),
   beats: (
-    "Aadhaar at ~1 billion enrolled — biometric authentication delegated for welfare access at the point of service",
+    "Aadhaar at 1.2 billion-plus enrolled, ~800 million on NFSA rations — biometric authentication delegated for welfare access at the point of service",
     "Operational exclusion as load-bearing failure mode — worn fingerprints, missing iris, connectivity loss at the operator interface",
     "Puttaswamy II (2018) — 4–1 majority upholds Section 7; Chandrachud's dissent: exclusion from technological error, no fault of the individual, violates dignity",
-    "Empirical predicate — 2017 Jharkhand starvation deaths (Santoshi Kumari; ~19 of ~57 hunger deaths tied to card cancellation/Aadhaar) and Drèze–Khera field data (~20% monthly exclusion)",
+    "Empirical predicate — Santoshi Kumari, Jharkhand, September 2017; 19 of 57 Right to Food Campaign starvation deaths across nine states since 2015 linked to Aadhaar; Drèze–Khera field data — over 40% of non-transacting households cite ABBA",
     "Correction is executive and doctrinal, not a majority holding — circulars barring ration denial; the distinct 2025 Pragya Prasun ruling reads a right to accessible digital access into Article 21",
   ),
   approaches: (
@@ -1346,7 +1290,7 @@
     [Drèze, J., Khalid, N., Khera, R., & Somanchi, A. (2017), "Aadhaar and Food Security in Jharkhand: Pain without Gain?," _Economic & Political Weekly_ 52(50) — field study of biometric-authentication exclusion in the PDS.],
     [Right to Food Campaign compilation and Indian journalism (The Hindu, The Wire, Scroll.in, 2017–2019) on the Jharkhand starvation deaths (Santoshi Kumari, September 2017) — lived-exclusion sourcing with journalism-tier flag.],
     [Supreme Court of India (2025), _Pragya Prasun & Ors. v. Union of India_, 2025 INSC 599 — the distinct, later ruling reading a right to accessible digital access into Article 21 in the e-KYC context for persons with disabilities.],
-    ["A Failure to Do No Harm," PMC5741784 — peer-reviewed comparative analysis of biometric-ID exclusion in welfare delivery.],
+    [Dixon, P. (2017), "A Failure to 'Do No Harm' — India's Aadhaar biometric ID program and its inability to protect privacy in relation to measures in Europe and the U.S.," _Health and Technology_ 7(4):539–567 — comparative privacy and data-protection analysis, reporting biometric-authentication failure rates alongside it.],
   ),
   quote: [Exclusion based on technological errors, with no fault of the individual, is a violation of dignity.],
   quote-source: "Justice D. Y. Chandrachud, dissenting, Puttaswamy II (2018)",
@@ -1430,7 +1374,7 @@
     structure: not "this system should not deploy" but "this
     governance regime must be replaced for any deployment to be
     legitimate." The case sits alongside CARE-adjacent equity
-    threads in the v2 corpus and supports the LEO *Fairness beyond omission* — CARE specifies positive
+    threads in the v2 corpus and supports the subobjective *Fairness beyond omission* (4.6) — CARE specifies positive
     sovereignty, not merely the avoidance of harm. Practice-
     synthesis-tier flag preserved: principles are peer-reviewed;
     implementation literature is still emerging. Future
@@ -1485,7 +1429,7 @@
     ],
     [
       For the v2 framework revision, CARE is the case-grounded
-      basis for the LEO *Fairness beyond omission*. Removing
+      basis for the subobjective *Fairness beyond omission* (4.6). Removing
       a biased feature, omitting a demographic variable, or
       de-identifying a dataset is fairness-by-subtraction; CARE
       specifies fairness-by-replacement of the governance regime.
@@ -1501,7 +1445,7 @@
     "Developed by Indigenous Data Sovereignty networks in Aotearoa NZ, Australia, US — explicit non-US-centered leadership",
     "Governance-replacement structure, not governance-supplementation — existing privacy regimes named as inadequate",
     "Lowitja Journal 2025 documents Ngangk Yira Institute implementation — first detailed case study at institutional scale",
-    "Supports LEO *Fairness beyond omission* — fairness as positive sovereignty, not subtraction of biased features",
+    "Supports subobjective *Fairness beyond omission* (4.6) — fairness as positive sovereignty, not subtraction of biased features",
   ),
   approaches: (
     during: (
@@ -1511,7 +1455,7 @@
     ),
     after: (
       [Track implementation outcomes against the four CARE conditions separately; the Lowitja Journal paper is the genre exemplar for what such a tracking report can look like.],
-      [Use CARE as the case-grounded basis for the LEO *Fairness beyond omission* — fairness as governance-regime replacement, not as feature-level subtraction.],
+      [Use CARE as the case-grounded basis for the subobjective *Fairness beyond omission* (4.6) — fairness as governance-regime replacement, not as feature-level subtraction.],
       [When asked whether CARE travels, name what the AU/NZ/US Indigenous Data Sovereignty networks supply (sustained institutional leadership, recognized peoplehood frameworks) before asserting transfer to other collective-rights contexts.],
     ),
   ),
@@ -1538,7 +1482,7 @@
     Sociotechnical Constraints) for the governance-regime
     replacement structure — existing privacy regimes named as
     inadequate to collective rights — and as the case-grounded
-    basis for the LEO *Fairness beyond omission*: fairness
+    basis for the subobjective *Fairness beyond omission* (4.6): fairness
     as positive sovereignty, not the subtraction of biased
     features. Companion to the equity-thread cases in the v2
     corpus.
@@ -1588,8 +1532,7 @@
     proposals. Independent academic critiques have surfaced two
     load-bearing limitations: bias audits without bias data —
     employers often lack the protected-attribute data the audit
-    metrics require — and wide variability in audit quality
-    across published audits. The case pairs with Case 85 (OU
+    metrics require — and null compliance — 18 of 391 employers posted an audit at all, and non-compliance cannot be established. The case pairs with Case 85 (OU
     Analyse — governance-objection dissolved by design), Case
     86 (Gándara community-college predictive equity), and Case
     182 (Amazon hiring AI). The intervention is the audit-as-
@@ -1600,8 +1543,7 @@
   sections: (
     [
       Local Law 144 was passed by the New York City Council on
-      10 November 2021 and became law without the Mayor's signature
-      on 13 December 2021 (returned unsigned), with
+      10 November 2021 and became law without the Mayor's signature on 11 December 2021, the Mayor returning it unsigned on 13 December, with
       the operational rules to be specified by the Department of
       Consumer and Worker Protection. The rulemaking process
       extended through 2022 and into 2023, with two rounds of
@@ -1634,20 +1576,7 @@
     ],
     [
       The independent academic critiques have surfaced two
-      load-bearing limitations. Andrus, Spitzer, Brown, and Xiang's 2021 work on the
-      challenge of procuring demographic data for fairness audits
-      names that many employers
-      do not collect the protected-attribute information the
-      audit metrics require, and the audits that proceed are
-      either limited to attributes the employer happens to have
-      or rely on imputation methods whose accuracy is itself
-      under-evidenced. Wright et al.'s 2024 audit-quality
-      study reviewed published audits across the first cohort
-      of compliant employers and found wide variability — audits
-      ranging from detailed methodological documents to single-
-      paragraph summaries with limited interpretability. The
-      audits are governance artifacts; their information content
-      is uneven across the first cohort.
+      load-bearing limitations. Andrus, Spitzer, Brown, and Xiang's 2021 interviews with 38 algorithmic-fairness practitioners found that they routinely lack access to the demographic data bias detection requires; an employer deploying an AEDT inherits that constraint, and the audits that proceed are either limited to attributes the employer happens to have or rely on imputation methods whose accuracy is itself under-evidenced. Wright et al.'s 2024 study put 155 investigators onto 391 employers and found 18 had posted an audit report and 13 a transparency notice; the posted audits were data tables with minimal explanation, none of them sufficient to inform a job seeker's decision to opt out. The paper names the deeper problem *null compliance* — employers hold enough discretion over whether the law applies that non-compliance cannot be established at all.
     ],
     [
       The case pairs with Case 85 (OU Analyse) for the
@@ -1687,11 +1616,7 @@
       on the audit. Whether the disclosure-and-audit structure
       reduces actual disparate impact at the hiring level is an
       empirical question the published evidence does not yet
-      resolve. The audit-quality variability across the first
-      compliant cohort is itself a finding the case carries —
-      governance artifacts whose quality is uneven across
-      producers are weaker governance instruments than the
-      regulatory theory assumes. The intervention is real and
+      resolve. The 5% posting rate and the unprovability of non-compliance are themselves findings the case carries — a governance artifact almost nobody publishes, and whose absence proves nothing, is a weaker instrument than the regulatory theory assumes. The intervention is real and
       its limits are real; the change-control-and-disclosure-as-
       governance-artifacts LEO is anchored by the case at the
       municipal-regulatory scale, and the evaluation arc the
@@ -1703,17 +1628,17 @@
     "NYC Local Law 144 of 2021; Department of Consumer and Worker Protection implementing rules effective July 5 2023; first US municipal AEDT regulation at this scope",
     "Three requirements: annual independent bias audit, publication of audit summary, candidate notice and alternative-selection request process",
     "Audit metrics: selection rate and impact ratio by sex, race/ethnicity, intersectional categories; computed by independent auditor not associated with the AEDT",
-    "Andrus et al. 2021 on auditing without demographic data: employers often lack protected-attribute data; Wright et al. 2024 audit-quality study finds wide variability",
+    "Andrus et al. 2021, 38 practitioner interviews: the demographic data bias detection requires is routinely unavailable; Wright et al. 2024: 18 of 391 employers posted an audit, and null compliance makes non-compliance unprovable",
     "Pair with Case 85 (OU Analyse), Case 86 (Gándara), Case 182 (Amazon hiring AI); whether audits reduce actual disparate impact remains under-evidenced",
   ),
   approaches: (
     during: (
       [Specify the protected-attribute data the audit metrics will require before the audit is commissioned; the Andrus et al. critique names data availability as the precondition the regulatory theory does not provide for, and the data infrastructure has to be built in advance of the audit.],
-      [Choose an independent auditor whose methodology will produce a documentation-detailed audit rather than a single-paragraph summary; the audit-quality variability the Wright et al. study found is itself a deployment choice, and the choice of auditor is where it surfaces.],
+      [Choose an independent auditor whose methodology will produce a documentation-detailed audit rather than a single-paragraph summary; the thinness of the posted audits the Wright et al. study found is itself a deployment choice, and the choice of auditor is where it surfaces.],
       [Build the candidate-notice and alternative-selection process as part of the deployment, not as a compliance afterthought; the candidate-side governance interaction is the seam at which the disclosure-and-audit structure becomes contestable for the affected person.],
     ),
     after: (
-      [Carry the load-bearing hedges — disclosure-and-audit regime not substantive-standards regime; reduction of actual disparate impact under-evidenced; audit-quality variability across first cohort — into print without softening; the case's pedagogical value depends on the intervention's limits being preserved.],
+      [Carry the load-bearing hedges — disclosure-and-audit regime not substantive-standards regime; reduction of actual disparate impact under-evidenced; a 5% audit-posting rate, and non-compliance that cannot be established — into print without softening; the case's pedagogical value depends on the intervention's limits being preserved.],
       [Pair in syllabi with Case 85 (OU Analyse) so the governance-objection-dissolved-by-design and governance-objection-surfaced-by-disclosure threads are taught together as complementary intervention forms.],
       [Use the case as the change-control-and-disclosure-as-governance-artifacts anchor at the municipal-regulatory scale; the curricular target is the discipline of building the data infrastructure and the audit-quality criteria the disclosure regime presupposes.],
     ),
@@ -1754,7 +1679,7 @@
   literature-items: (
     [NYC DCWP rules implementing Local Law 144 (effective July 5 2023)],
     [Andrus, Spitzer, Brown & Xiang (2021), FAccT — "What We Can't Measure, We Can't Understand": demographic-data procurement for fairness audits, doi:10.1145/3442188.3445888],
-    [Wright et al. (2024), FAccT — "Null Compliance," first-cohort audit-quality study, doi:10.1145/3630106.3658998],
+    [Wright et al. (2024), FAccT — "Null Compliance," 391-employer compliance study, doi:10.1145/3630106.3658998],
   ),
   reflection-list: (
     [Identify a regulated decision domain in your setting in which a disclosure-and-audit regime has been proposed or adopted. What is the protected-attribute data infrastructure the audit metrics will require, and is the infrastructure in place before the regime's effective date?],

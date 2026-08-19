@@ -428,6 +428,47 @@
   },
 )
 
+// ---- Competing readings ----
+// Genuinely contested causation: rival explanations the record supports and
+// no available study adjudicates. Admission is deliberately strict — this is
+// not a place to note an error we chose not to fix. `limit` carries the
+// case's scope limit: what the case does not show.
+// Uses theme tokens (not raw rgb) so the block keeps its distinction in the
+// grayscale print interior.
+#let case-readings(items, limit: none) = {
+  if items.len() == 0 and limit == none { return }
+  block(
+    width: 100%,
+    fill: if grayscale { rgb("#F1F1F1") } else { rgb("#EEF6F4") },
+    inset: (x: 11pt, y: 9pt),
+    stroke: (left: 2.5pt + teal),
+    radius: 1pt,
+    breakable: true,
+    {
+      text(font: sans, size: 7pt, weight: "medium", tracking: 1.6pt, fill: teal, upper("Competing readings"))
+      v(3pt)
+      set par(leading: 0.5em, justify: true, first-line-indent: 0pt)
+      for it in items {
+        grid(
+          columns: (7pt, 1fr),
+          column-gutter: 5pt,
+          text(font: sans, size: 8.5pt, fill: teal, sym.diamond.filled),
+          text(font: sans, size: 8.5pt, fill: text-dark, it),
+        )
+        v(2.5pt)
+      }
+      if limit != none {
+        v(1pt)
+        line(length: 100%, stroke: 0.4pt + gold)
+        v(3pt)
+        text(font: sans, size: 8.5pt, style: "italic", fill: text-dark)[
+          #text(weight: "medium")[What this case does not show — ] #limit
+        ]
+      }
+    },
+  )
+}
+
 // ---- Case section heading ----
 // A consistent beat marker for the case narrative. Labels come from
 // theme.section-sets, selected by the case's `kind`.

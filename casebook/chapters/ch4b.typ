@@ -130,7 +130,7 @@
       of why "decision-grade evidence" has to be reframed at
       the portfolio scale — the decision-maker is not the
       program manager but the budget authority — and is one
-      of the corpus's strongest grounds for the LEO *Judgment under inadequate evidence*. The portfolio
+      of the corpus's strongest grounds for the subobjective *Judgment under inadequate evidence* (4.4). The portfolio
       decision-maker does not get to wait for the evidence
       architecture to be fixed before deciding; the case is
       about how to make the decision with the evidence
@@ -169,14 +169,14 @@
     portfolio scale: the O&S data that dominate weapon-system
     lifecycle decisions are not reported in a form the
     decisions require, and the gap is structural across the
-    enterprise. The case is the worked example of the LEO *Judgment under inadequate evidence* at the budget-
+    enterprise. The case is the worked example of the subobjective *Judgment under inadequate evidence* (4.4) at the budget-
     authority scale.
   ],
   lens-approach: [
     GAO weapon-system sustainment is the portfolio-evidence-
     architecture frontier case (induced 1.4; LENS D1/PT4) — used
-    in Domain 4 for the LEO *Judgment under inadequate
-    evidence* at portfolio scale. Pair with Case 138 and
+    in Domain 4 for the subobjective *Judgment under inadequate
+    evidence* (4.4) at portfolio scale. Pair with Case 138 and
     Case 173.
   ],
   literature-items: (
@@ -269,7 +269,7 @@
     ],
     // -- What Transferred --
     [
-      The cleanest test of the model is internal. The same Navy that
+      The internal comparison is the instructive one. The same Navy that
       engineered the nuclear program to this standard let surface-warfare
       training decay to CD-ROM self-study and paid the price at Fitzgerald
       and McCain (Cases 124 and 140). Same institution, same era, opposite
@@ -291,20 +291,19 @@
   references: (
     [Polmar, N. & Allen, T. (2007), _Rickover: Father of the Nuclear Navy_ — the program and Rickover's philosophy (paraphrased).],
     [Naval Nuclear Propulsion Program documentation (NRC/DOE) — qualification standards and the accident record.],
-    [Admiral Hyman G. Rickover, "Doing a Job" (Columbia University commencement address, 1982) — "people, not organizations… get things done" (quoted).],
-    [GAO-21-168, comparison of nuclear and surface Navy training — the internal contrast.],
+    [Admiral Hyman G. Rickover, "Doing a Job" (Columbia University, Egleston Medal address, 5 November 1982) — "people, not organizations… get things done" (quoted).],
+    [GAO-21-168 (2021), _Navy Readiness: Actions Needed to Evaluate and Improve Surface Warfare Officer Career Path_ — the surface community's career path set against the submarine, aviation and EOD communities.],
     [Duncan, F. (1990), _Rickover and the Nuclear Navy_ — the qualification culture.],
   ),
   quote: [Human experience shows that people, not organizations or management systems, get things done.],
-  quote-source: "Admiral Hyman G. Rickover, \"Doing a Job,\" Columbia University, 1982",
+  quote-source: "Admiral Hyman G. Rickover, \"Doing a Job\" (Columbia University commencement address, 1982)",
   le-insight: [
     The Nuclear Navy is the longest-running continuous capability-
     engineering program in any high-consequence domain. The choice to
     treat training as a system parameter rather than as a cost center
     has produced sixty-plus years of zero reactor accidents. The
-    contrast with the Surface Navy is the cleanest available test of
-    what happens when capability is engineered versus when it is
-    deferred — and the price of that engineering (the qualification ladder,
+    contrast with the Surface Navy shows what happens when capability is
+    engineered versus when it is deferred — and the price of that engineering (the qualification ladder,
     the zero-defect oral boards, the continuous re-qualification) is visible
     on the budget line.
   ],
@@ -401,7 +400,7 @@
     ],
     [
       The DoD response was MIL-STD-1472, first issued in 1968,
-      and revised through letter suffixes A (1969), B (1974),
+      and revised through letter suffixes A (1970), B (1974),
       C (1981), D (1989), E (1996), F (1999), G (2012), and H
       (September 2020). Each revision incorporates accumulated
       findings since the prior version, updated anthropometric
@@ -541,7 +540,7 @@
     The Generalized Intelligent Framework for Tutoring (GIFT) is an
     open-source framework, originated at the U.S. Army Research Laboratory,
     for authoring and delivering intelligent tutoring systems. Computer-based
-    tutoring has been shown to be about as effective as expert human tutors
+    tutoring has been shown to be nearly as effective as human tutoring
     in well-defined domains, and GIFT exists to lower the barrier to building
     it; the framework is actively developed, with regular releases and a
     peer-reviewed annual symposium. The puzzle is not that GIFT failed — it
@@ -555,8 +554,7 @@
     // -- The Shift --
     [
       Five decades of research established that computer-based tutoring can be
-      about as effective as an expert human tutor in well-defined domains,
-      and significantly better than traditional classroom instruction. The
+      nearly as effective as human tutoring in well-defined domains — d = 0.76 against 0.79 — and well above no tutoring at all. The
       open question shifted from "does adaptive tutoring work?" to "why isn't
       it everywhere?"#cn() That shift matters because it moves the problem out
       of the laboratory: once the efficacy question is answered, every
@@ -625,7 +623,7 @@
     [K. VanLehn, "The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems," _Educational Psychologist_ 46(4) (2011) — tutoring effectiveness.],
     [GIFT Project, gifttutoring.org — the framework, releases, and development under ARL / DEVCOM.],
     [Editors' synthesis of the GIFT adoption record — active development but limited ubiquitous fielding (quoted).],
-    [R. Sottilare, A. Graesser, X. Hu & H. Holden (eds.), _Design Recommendations for Intelligent Tutoring Systems_ (GIFTSym volumes); IJAIED Special Issue on GIFT (2017).],
+    [R. Sottilare, A. Graesser, X. Hu & H. Holden (eds.), _Design Recommendations for Intelligent Tutoring Systems_ (U.S. Army Research Laboratory, 2013– ); IJAIED Special Issue on GIFT (2017).],
     [J. Goodell & J. Kolodner, _Learning Engineering Toolkit_ (2022) — adoption as an engineering problem.],
   ),
   quote: [The technology works. The institutional pathway to ubiquitous fielded use does not yet.],
@@ -681,7 +679,7 @@
   year: "2018 – present",
   domains-list: ("defense",),
   modes-code: "TKN",
-  impact: "Tripled ship-driving training hours; 10 pass-or-fail career assessments; Ready-for-Sea Assessments — 3 of 18 forward-deployed ships immediately sidelined",
+  impact: "Threefold increase in initial ship-driving training hours planned by 2021; 10 pass-or-fail career assessments, 3 of them go/no-go; Ready-for-Sea Assessments — 3 of 18 forward-deployed ships immediately sidelined",
   diagram: dgm.dgm-navy-reform,
   kind: "intervention",
   summary: [
@@ -695,8 +693,7 @@
     evaluated forward-deployed ships against a deliverable standard; three
     of the first eighteen were immediately sidelined. The structural change
     is real and the investment substantial. What is missing is the third
-    half: the GAO has noted the Navy still lacks systematic evaluation of
-    whether the reforms work — a live success in structure, with evidence
+    half: GAO found in 2019 that the Navy had not put key processes and assessments in place to evaluate the effectiveness of its changes to ship-driving training — a live success in structure, with evidence
     of effect still outstanding.
   ],
   sections: (
@@ -716,8 +713,7 @@
     [
       Beginning in 2018, the Navy restored the Surface Warfare Officers
       School from self-study to classroom-plus-simulator instruction,
-      established Mariner Skills Training Centers on both coasts, roughly
-      tripled ship-driving training hours, and created ten pass-or-fail
+      established Mariner Skills Training Centers on both coasts, set out a threefold increase in initial ship-driving training hours by 2021, and created ten pass-or-fail
       assessments across an officer's career path — three of them no-go
       gates that can halt advancement. The no-go gates were the structural
       teeth: by tying advancement to demonstrated competence rather than
@@ -738,9 +734,7 @@
     ],
     // -- The Evidence --
     [
-      Here the case turns instructive. The Government Accountability Office
-      has noted that the Navy still lacks systematic evaluation of whether
-      the reforms actually improve readiness. The structural intervention
+      Here the case turns instructive. The Government Accountability Office found in November 2019 that "the Navy has not put key processes and assessments in place to evaluate comprehensively the effectiveness of its changes to ship-driving training." The structural intervention
       happened and the investment was large, but decision-grade evidence on
       outcomes is incomplete — the measurement to confirm the effect has
       lagged the change itself. Without an outcome time-series, the Navy
@@ -765,18 +759,18 @@
     "Two fatal 2017 collisions exposed seamanship training degraded to CD-ROM self-study",
     "Navy restored SWOS classroom instruction, tripled training hours, and created ten career assessments",
     "Reform paired simulators and restored curricula with aviation-style debriefing and explicit gate ownership",
-    "GAO noted the Navy still lacks systematic evaluation of whether reforms improve readiness",
+    "GAO found the Navy had not put processes in place to evaluate the effectiveness of its ship-driving training changes",
     "Live in-progress reform shows mature capability engineering must build measurement infrastructure from the start",
   ),
   references: (
-    [GAO-21-168 (and GAO-20-154), Navy readiness reform — the lack of systematic outcome evaluation (paraphrased).],
+    [GAO-20-154, _Navy Readiness: Actions Needed to Evaluate the Effectiveness of Changes to Surface Warfare Officer Training_ (November 2019) — the absent evaluation processes and the planned threefold increase in ship-driving training hours.],
     [Readiness Reform Oversight Council, _One-Year Report_ (2019) — restored training, assessments, and gates.],
     [Navy and NTSB reports on the Fitzgerald and McCain collisions (2017–2019) — the training-degradation antecedent.],
     [SWOS Norfolk and San Diego Mariner Skills Training Center documentation — simulators and curriculum.],
     [USNI News reform coverage (2020, 2022) — Ready-for-Sea Assessments and sidelined ships.],
   ),
-  quote: [The Navy still lacks systematic evaluation of whether the reforms work.],
-  quote-source: "Paraphrasing GAO-21-168 on Navy readiness reform, 2021",
+  quote: [The Navy has not put key processes and assessments in place to evaluate comprehensively the effectiveness of its changes to ship-driving training.],
+  quote-source: "GAO-20-154, Navy Readiness: Actions Needed to Evaluate the Effectiveness of Changes to Surface Warfare Officer Training, November 2019",
   le-insight: [
     The Navy reform is a paired intervention in progress: technical
     (training restored, simulators procured, assessments created) plus
@@ -834,7 +828,7 @@
   impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, US Navy IT graduates with no prior IT experience outscored fleet Information Systems Technicians with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
   kind: "intervention",
   scale: "small",
-  evidence-source: "peer-reviewed",
+  evidence-source: "program-report",
   induced-anchor: "1.2",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2, LEO-4",
@@ -843,7 +837,7 @@
     intelligent tutoring system, modelled on expert human tutoring,
     could compress years of operational IT expertise into a 16-week
     pipeline. The independent evaluation by the Institute for Defense
-    Analyses (Fletcher and Morrison, IDA Document D-4686) compared
+    Analyses (Morrison and Fletcher, IDA Document D-4686, 2012) compared
     Digital Tutor graduates — US Navy enlistees with no prior IT
     experience — against fleet Information Systems Technicians
     with an average 9.1 years of experience. The Digital Tutor
@@ -891,8 +885,8 @@
       pipeline.#cn()
     ],
     [
-      The Institute for Defense Analyses (Fletcher and Morrison, IDA
-      Document D-4686 / DTIC AD1002362) ran the independent
+      The Institute for Defense Analyses (Morrison and Fletcher, IDA
+      Document D-4686, 2012) ran the sponsor-commissioned
       evaluation that the case rests on. Digital Tutor graduates —
       Navy enlistees with no prior IT background, 16 weeks in — were
       compared against a sample of fleet Information Systems
@@ -935,8 +929,8 @@
   ),
   beats: (
     "DARPA Digital Tutor — intelligent tutoring system modelled on expert one-on-one human tutoring; 16-week pipeline for US Navy IT rating",
-    "IDA independent evaluation (Fletcher & Morrison, IDA D-4686): Digital Tutor graduates vs. fleet ITs with 9.1 years' average experience",
-    "Knowledge test effect size 4.30 in favor of Digital Tutor; Digital Tutor cohort outperforms fleet on most troubleshooting/design tasks (Security the exception)",
+    "IDA evaluation for the sponsor (Morrison & Fletcher, IDA D-4686, 2012), 12 per arm, unrandomised: Digital Tutor graduates vs. fleet ITs with 9.1 years' average experience",
+    "Knowledge-test effect size 4.30; troubleshooting effect a fifth of that at 0.85; the security exercise favoured the fleet, not significantly",
     "Report concludes the effort 'appears to have achieved its goals'",
     "Hedges preserved: knowledge accounts for ~40% of practical-exercise variance, 'an enabler of performance rather than a direct measure'; architecture detail too scant to reproduce",
   ),
@@ -953,15 +947,15 @@
     ),
   ),
   references: (
-    [Fletcher, J. D., \& Morrison, J. E. (2014). _DARPA Digital Tutor: Assessment Data_. IDA Document D-4686. https://apps.dtic.mil/sti/tr/pdf/AD1002362.pdf — independent evaluation that the case rests on.],
+    [Morrison, J. E., \& Fletcher, J. D. (September 2012). _DARPA Digital Tutor: Assessment Data_. IDA Document D-4686 (prepared for DARPA under contract DASW01-04-C-0003) — the sponsor-commissioned evaluation the case rests on.],
     [Defense Advanced Research Projects Agency, Digital Tutor program documentation — program description and design rationale.],
     [Fletcher, J. D. (2009). _From behaviorism to constructivism: a philosophical journey from drill and practice to situated learning_. — methodological grounding for the Digital Tutor's tutorial discipline.],
     [Anderson, J. R., Corbett, A. T., Koedinger, K. R., \& Pelletier, R. (1995). Cognitive tutors: Lessons learned. _Journal of the Learning Sciences_, 4(2):167–207. doi:10.1207/s15327809jls0402\_2 — the broader intelligent-tutoring evidence base the Digital Tutor program sits within.],
   ),
   quote: [The Digital Tutor cohort outscored fleet ITs with 9.1 years' experience on the knowledge test at an effect size of 4.30; the hedge is that knowledge accounts for about 40 percent of practical-exercise variance.],
-  quote-source: "Editors' synthesis of Fletcher & Morrison (2014), IDA Document D-4686.",
+  quote-source: "Editors' synthesis of Morrison & Fletcher (2012), IDA Document D-4686.",
   le-insight: [
-    DARPA's Digital Tutor is the cleanest available evidence
+    DARPA's Digital Tutor is the strongest available evidence
     that the capability envelope of a training pipeline can be
     re-specified — from years of seat time to 16 weeks of
     tutorial-discipline instruction — against an operational
@@ -983,7 +977,7 @@
     through tutorial discipline.
   ],
   literature-items: (
-    [Fletcher \& Morrison (2014), IDA Document D-4686],
+    [Morrison \& Fletcher (2012), IDA Document D-4686],
     [Anderson et al. (1995), _Journal of the Learning Sciences_],
     [DARPA Digital Tutor program documentation],
   ),
@@ -1060,10 +1054,7 @@
     ],
     // -- Early Evidence --
     [
-      The technical pieces work: the data model is sound and reference
-      implementations exist. What has lagged is the governance — who owns the
-      data, what consent frameworks apply, and how data quality is assured
-      across organizations.#cn() With the data model proven and reference
+      The data model is sound and reference implementations exist. What has lagged is semantic conformance — ADL's own acquisition guidance warns that xAPI data not following published Profiles "will have interoperability issues outside of the implementing organization" — and governance: who owns the data, what consent frameworks apply, and how data quality is assured across organizations.#cn() With the data model proven and reference
       implementations in hand, the remaining obstacles are not engineering
       questions an organization can solve alone but agreements between
       organizations — ownership, consent, and assured quality — that no
@@ -1092,8 +1083,8 @@
   ),
   references: (
     [Advanced Distributed Learning Initiative, Total Learning Architecture documentation — the cross-boundary vision.],
-    [xAPI specification (#link("https://xapi.com/")[xapi.com]) — the technical standard and reference implementations.],
-    [IEEE ICICLE proceedings on TLA adoption challenges — the persistence of siloed implementations.],
+    [IEEE Std 9274.1.1-2023, _Standard for Learning Technology — JSON Data Model Format and RESTful Web Service for Learner Experience Data Tracking and Access_ (xAPI 2.0, published October 2023) — the technical standard of record, transferred from ADL to the IEEE LTSC in 2019.],
+    [ADL Initiative, _Total Learning Architecture Standards: Digital Learning Acquisition Techniques_ (December 2023) — xAPI data that does not follow xAPI Profiles "will have interoperability issues outside of the implementing organization."],
     [B. Saxberg, learning-engineering infrastructure essays; IEEE ICICLE LEBoK chapters on data and analytics.],
     [Cf. inBloom (Case 53) — technology in advance of governance.],
   ),

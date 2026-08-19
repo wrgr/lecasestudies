@@ -1,0 +1,24 @@
+# Compression-fidelity baseline — accepted leads as of this run.
+# A quantity in impact/le-insight with no counterpart in the body.
+# These are triaged leads, not accepted defects; the gate fails only
+# on cases that are NOT listed here, so new drift is caught.
+1	therac-25	dgm-therac 20
+7	va-wait-time-scandal	impact 120000,90
+8	medical-errors-as-systemic-failure	le-insight 17
+11	california-nurse-staffing-ratios	impact 10,14
+12	acgme-80-hour-resident-duty-hour-reform	le-insight 117,118,19
+34	composer-sepsis-prediction	impact 17
+46	algorithmic-bias-in-educational	dgm-edbias 19,21
+90	algorithmic-college-admissions-vendors	le-insight 57
+97	boeing-737-max-mcas	impact 20000000000
+98	mars-climate-orbiter-unit-mismatch	impact 193100000,98
+102	air-france-flight-447	dgm-af447 54
+104	asiana-airlines-flight-214	impact 187
+117	crew-resource-management-and-cast	impact 17,70
+119	aviation-safety-reporting-system-asrs	impact 2000000
+126	f-35-sustainment-and-maintainer-shortage	dgm-f35 21
+137	u-s-nuclear-navy-rickover-training-model	dgm-rickover 0,17
+179	jhu-covid-dashboard-coronavirus	impact 3600000000
+180	healthcare-gov-launch	impact 106185,7000000,840000000 | dgm-healthcaregov 7000000
+184	uk-post-office-horizon-scandal	impact 13,236
+198	launching-the-brain-initiative	impact 1000000000

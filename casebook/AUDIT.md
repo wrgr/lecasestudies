@@ -946,3 +946,25 @@ Following the corpus critical-accuracy pass, a **LENS-alignment audit** (seven p
 6. **Second coal-mine / cumulative-inadequacy exemplar (was 168 Sago).** UBB (162) holds the coal-mine domain (measurement integrity) and Deepwater/Grenfell/Bhopal hold multi-layer drift; the specific "marginal-everywhere is itself the hazard" framing is now carried only implicitly. Low priority.
 
 Domains **not** weakened (verified): healthcare patient-safety, aviation human-factors, the nuclear cluster, education tutoring/analytics, algorithmic fairness (Bartlett/Coots/COMPAS/Aadhaar all retained), and every LENS competency floor — the 14 removals moved no competency×tier bucket by more than ~2, and 11 of the 14 were failures (the corpus's known surplus), so the fail/success/frontier balance improved.
+
+### Addendum (August 2026): source-confrontation fact check — all 191 active cases
+
+A student found a factual error in Case 155 (Andon Cord) by asking a tutor about it. Two passes followed. A **mechanism pass** (internal reasoning against the case's own text) confirmed 25 defects from 216 high-severity findings — an 11.6% survival rate under an adversarial gate. It could not have found more, because reasoning only catches a claim that contradicts something else in the case. Case 203 is the proof: fixed in July, passed the adversarial gate, passed the compression check, and its central finding was still factually wrong.
+
+The **fact check** confronted every claim with the primary document. 48 batches of ~4 cases, each reviewer required to read the source rather than a snippet, and to end every unsourced claim as sourced, replaced, attributed, or removed — never left standing with a note. Roughly **700 corrections across 191 cases; two cases came back clean.**
+
+**The characteristic defect is not a wrong number.** In order of frequency:
+
+1. **A finding credited to a body that did not make it.** Case 118's entire cultural-hierarchy framing is attributed to the NTSB; NTSB/AAR-00/01 does not contain the word *culture* anywhere in 597K characters, and on why the first officer's challenges never came says it "was unable to identify" the reason.
+2. **An absence of finding converted into a finding.** Case 100 asserts an attribution the NTSB explicitly declined; Case 103's thesis is a hypothesis the AAIB raised and set aside as unlikely.
+3. **Inverted causation.** Case 98 says Mars Climate Orbiter had no interface specification; the MIB writes "The SIS, which was not followed" — the spec existed and verification did not. Cases 152, 50, 69, 81, 34, 162, 146, 189, 192, 200, 175 and 170 all state their source backwards.
+4. **Invented hedges.** Case 34 says nine times that its mortality result is confounded by concurrent quality improvement; the authors state they had no other initiatives running.
+5. **Fabricated sources and quotations.** "Tuckey & Pollack (2024)", "Carr in *Health Affairs*", GAO product numbers that 404, and a literal `[Authors (2024), …]` placeholder still in the printed reference list.
+
+**Why nothing caught it.** `check-cases.sh` counts references and pages. `check-compression.py` tests internal consistency. The `verification-log.md` "refs real" column was auto-prefilled and never read. Every one of those passes a case whose central claim is invented, provided it is invented *consistently* and carries the right *number* of references. Worse, a count-based reference rule rewards attaching plausible citations and applies no pressure to make any given citation support any given sentence — which is exactly how Murphy et al. (2020) sat under a finding belonging to Feng et al. (2023): real paper, real authors, right topic, right count, wrong finding.
+
+**Also fixed in this pass.** A bug in `check-compression.py` itself: it substituted number-words to digits before applying scale suffixes, so a body saying "700 million" never matched an `impact` saying "$700M" — the exact case its own code comment claimed to handle. Scaling now runs first and `trillion` is a recognised scale; 8 false positives left the drift baseline, rewritten at 15. A prose-integrity scan for replacement-seam damage (repeated five-word runs, doubled words across summary/sections/le-insight/lens-approach) found 37 candidates, 36 of them deliberate anaphora and one real: Case 53 carried both a corrected sentence and the original it replaced.
+
+**Production consequence.** Main volume 265 → **275 pp** (spine 16.46 → **17.08 mm**); complete edition 849 → **883 pp**. `check-cases.sh` reports 191 converted / 0 failures; the compression gate reports 15 known leads, 0 new.
+
+**Editorial decisions deferred to the program owner** are collected in `fact-check-editor-memo.md`: two COI disclosures whose institutional basis moved (Cases 48, 68), seven evidence-tier flags whose stated rationale no longer holds, the twelve remaining "cultural half" passages across five cases, and the standing recommendation to bind `#cn()` markers to specific reference entries rather than counting them.

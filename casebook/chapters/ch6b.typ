@@ -114,11 +114,7 @@
       has lost one — USS Scorpion in 1968, the only post-1963 loss
       that was not SUBSAFE-certified. In 2003 the Columbia Accident
       Investigation Board, examining the loss of the Space Shuttle
-      Columbia, cited SUBSAFE in its final report as the
-      capability-certification model NASA should adopt for human
-      spaceflight. The endorsement is from an investigation body
-      with no Navy institutional stake, examining a different
-      catastrophic-system domain.#cn()
+      Columbia, cited SUBSAFE in its final report as one of three independent safety programs whose practices yielded lessons NASA should weigh in redesigning its own organization. The endorsement comes from a board examining a different catastrophic-system domain — and one chaired by a Navy admiral, with the commander of the Naval Safety Center among its members.#cn()
     ],
     [
       The hedge has to survive into the case. The zero-loss record
@@ -209,7 +205,7 @@
   year: "1996 – 2000",
   domains-list: ("software sustainment", "critical infrastructure", "federal program management"),
   modes-code: "GDK",
-  impact: "The US federal government and the broader public and private sectors invested an estimated 100 billion dollars (US) over four years remediating two-digit-year date handling in legacy systems; the January 1, 2000 rollover passed with minimal disruption to critical infrastructure — the success contributed to the durable counterfactual debate about whether the threat justified the spending",
+  impact: "The US federal government and the broader public and private sectors invested an estimated 100 billion dollars (US) between 1995 and 2001 remediating two-digit-year date handling in legacy systems; the January 1, 2000 rollover passed with minimal disruption to critical infrastructure — the success contributed to the durable counterfactual debate about whether the threat justified the spending",
   kind: "intervention",
   scale: "big",
   evidence-source: "investigation",
@@ -227,8 +223,7 @@
     government, under sustained Office of Management and Budget
     reporting and GAO audit, drove an inventory-and-remediation
     program across mission-critical federal systems, while the
-    private sector executed a parallel multi-year effort. Estimates
-    of the total US investment range around \$100 billion. The
+    private sector executed a parallel multi-year effort. The Commerce Department put total US Y2K spending, covering repairs started in 1995 through 2001, at about \$100 billion. The
     January 1, 2000 rollover passed with minimal disruption to
     critical infrastructure. The case is the canonical instance of
     a believed-and-treated aging-system transition in the recent
@@ -261,10 +256,7 @@
       1996 and accelerated through 1997–1998 with the creation of the
       President's Council on Year 2000 Conversion (established February 1998) and the OMB
       quarterly reporting cycle. Federal mission-critical systems
-      were inventoried at line-item granularity — the GAO report
-      series tracked the proportion of federal mission-critical
-      systems Y2K-compliant on a quarterly cadence, agency by
-      agency. The discipline of the program rested on three
+      were inventoried at line-item granularity — OMB required the major departments and agencies to report quarterly, from May 1997, the proportion of their mission-critical systems Y2K-compliant, agency by agency. The discipline of the program rested on three
       institutional features: line-item inventory at the level of
       the actual systems, OMB-enforced quarterly status reporting,
       and GAO-sustained external audit that named agencies whose
@@ -336,11 +328,11 @@
     ),
   ),
   references: (
-    [Government Accountability Office, _Year 2000 Computing Challenge_ report series (1996–2000), particularly GAO/AIMD-99-225, GAO/T-AIMD-00-30, and GAO/AIMD-00-1 — line-item federal-program-management record.],
+    [General Accounting Office, _Year 2000 Computing Challenge_ report series (1997–2000), particularly GAO/AIMD-00-290, _Lessons Learned Can Be Applied to Other Management Challenges_ (September 2000) — the federal-program-management record and GAO's own retrospective.],
     [Office of Management and Budget, quarterly reports on federal Y2K remediation status (1997–1999) — program-self-report tier.],
     [President's Council on Year 2000 Conversion, _The Journey to Y2K_ final report (2000) — institutional retrospective of the federal coordination effort.],
-    [Anson, "The Y2K Bug: A Historical and Retrospective Analysis," _Computer_ (IEEE), retrospective literature on the counterfactual debate.],
-    [National Research Council, _Continued Review of the Tax Systems Modernization of the Internal Revenue Service_ — Y2K-related sustainment-engineering record.],
+    [Manion & Evan (2000), "The Y2K Problem and Professional Responsibility: A Retrospective Analysis," _Technology in Society_ 22(3), 361–387 — retrospective literature on the counterfactual debate.],
+    [U.S. Department of Commerce, Economics and Statistics Administration, _The Economics of Y2K and the Impact on the United States_ (November 1999) — total US Y2K spending of about \$100 billion covering repairs started 1995 through 2001, of which the federal share was about \$8 billion.],
   ),
   quote: [The C7 transition succeeded because it was believed and treated. The counterfactual — whether the threat was as large as the response implies — the program structurally cannot answer.],
   quote-source: "Editors' synthesis of the GAO Y2K report series and the post-2000 retrospective literature.",
@@ -383,14 +375,12 @@
   year: "1979 – present",
   domains-list: ("energy",),
   modes-code: "TKG",
-  impact: "No INES-level event at U.S. commercial reactors post-INPO; sustained improvement in INPO/WANO performance indicators across the industry",
+  impact: "No INES Level 4-or-above accident at a U.S. commercial reactor since Three Mile Island; sustained improvement in INPO/WANO performance indicators across the industry",
   diagram: dgm.dgm-inpo,
   kind: "intervention",
   summary: [
     Three Mile Island did not produce a reactor accident at the next plant
-    over — it produced an institution. Within months of the 1979 Kemeny
-    Commission report, the U.S. commercial nuclear industry founded the
-    Institute of Nuclear Power Operations on a stark premise: an accident
+    over — it produced an institution. In the autumn of 1979, before the Kemeny Commission had reported, the U.S. commercial nuclear industry founded the Institute of Nuclear Power Operations on a stark premise: an accident
     at any single plant would threaten every operator's license, and no
     utility could engineer its safety capability alone. Funded by the
     utilities it evaluated and operating without statutory authority, INPO
@@ -399,16 +389,14 @@
     peer evaluations in which operators from one utility scrutinized
     another's control rooms and records. The pre-TMI culture of complacency
     gave way to mandated vigilance. No U.S. commercial reactor has had a
-    significant INES-level event since.
+    INES Level 4-or-above accident since.
   ],
   sections: (
     // -- Background --
     [
       The 1979 partial meltdown at Three Mile Island exposed not just a
       plant-level failure but an industry with no shared mechanism for
-      learning. The Kemeny Commission traced the accident in part to a
-      pervasive "mindset" of complacency, in which each utility operated
-      alone and no institution carried lessons from one plant to the rest.
+      learning. The Kemeny Commission found that warnings had been disregarded: a September 1977 event at Davis-Besse foreshadowed TMI, was investigated by Babcock & Wilcox and the NRC, and produced no notice to utilities before the accident.
       The structural problem sat above any single control room: a lesson
       learned at one plant had no path to the others, so the same latent
       failure could surface repeatedly across an industry that never
@@ -416,8 +404,7 @@
     ],
     // -- The Intervention --
     [
-      Within months of the Kemeny report, the utilities founded the
-      Institute of Nuclear Power Operations. Its premise was that an
+      The utilities founded the Institute of Nuclear Power Operations in the autumn of 1979, and the Kemeny report named the "recently created" Institute as an appropriate vehicle for the industry to set and police its own standards. Its premise was that an
       accident anywhere threatened everyone's license to operate. INPO set
       training and certification standards for operators and supervisors,
       and in 1985 the National Academy for Nuclear Training began
@@ -441,8 +428,13 @@
     // -- The Evidence --
     [
       The post-TMI culture shifted from smugness to mandated vigilance, and
-      U.S. commercial reactors have recorded no significant INES-level
-      event since INPO's founding. Industry performance indicators tracked
+      no U.S. commercial reactor has had an INES Level 4-or-above accident
+      since INPO's founding — though Davis-Besse's 2002 reactor-head
+      corrosion (Case 160) was rated a Level 3 serious incident, and it was a
+      regulator-mandated inspection rather than peer review that found it.
+      INPO operated alongside NRC regulation and the post-Three-Mile-Island
+      design and procedural changes, and no published evaluation isolates its
+      separate contribution. Industry performance indicators tracked
       by INPO and its international counterpart WANO improved steadily and
       broadly across the fleet. The broad, steady improvement across the
       whole fleet — not just the strongest plants — is the signature of a
@@ -466,7 +458,7 @@
     "Three Mile Island exposed an industry where lessons at one plant never reached others",
     "Utilities founded INPO within months on the premise one accident threatened everyone's license",
     "Honest peer review by working operators gave a non-statutory body its enforcement weight",
-    "No significant INES-level event since founding; fleet-wide performance indicators improved broadly across the industry",
+    "No INES Level 4-or-above accident since founding; fleet-wide performance indicators improved broadly across the industry",
     "Shared exposure, regulatory legitimacy, and peer review crossed borders to WANO after Chernobyl",
   ),
   references: (
@@ -474,7 +466,7 @@
     [_Report of the President's Commission on the Accident at Three Mile Island_ (Kemeny Commission, 1979) — the pre-TMI culture.],
     [Nuclear Energy Institute, "Lessons from the 1979 Accident at Three Mile Island"; National Academy for Nuclear Training — accreditation and peer evaluation.],
     [World Nuclear Association — Three Mile Island Accident; INPO/WANO performance indicators.],
-    [Marsh (2019), "INPO and the Transformation of Nuclear Safety Culture."],
+    [Willard, R. F. (2019), _The Role of the Institute of Nuclear Power Operations in Supporting the United States Commercial Nuclear Power Industry's Focus on Nuclear Safety_, testimony for the record, U.S. Senate Committee on Environment and Public Works — INPO's design, funding, peer evaluations, and the National Academy.],
   ),
   quote: [Every utility recognized that an accident at any single plant would affect every operator's license to operate.],
   quote-source: "Paraphrasing the institutional analysis in Rees, Hostages of Each Other, 1994",
@@ -491,7 +483,7 @@
     learning: students identify the structural conditions in their own
     domain that would permit (or block) an INPO-equivalent and design the
     peer-review architecture required. LEN 1 uses the founding moment —
-    nine months after TMI — to discuss the *speed* a credible response to
+    eight months after TMI — to discuss the *speed* a credible response to
     catastrophe demands.
   ],
   literature-items: (
@@ -500,7 +492,7 @@
   ),
   reflection-list: (
     [What is the equivalent of "an accident at any single plant affects every operator" in your domain? If the answer is "nothing," what does that tell you?],
-    [INPO was stood up in nine months. Pick a current cross-organizational capability problem and write the nine-month deliverable that would constitute a credible response.],
+    [INPO was stood up in eight months. Pick a current cross-organizational capability problem and write the eight-month deliverable that would constitute a credible response.],
     [INPO held no statutory authority yet made its findings stick through shared catastrophic exposure and peer review. Design the non-statutory mechanism that could enforce a standard in your domain, and name the shared stake that would give it teeth.],
   ),
   approaches: (
@@ -541,16 +533,13 @@
   summary: [
     In 1982, seven people in the Chicago area died after taking Tylenol
     capsules laced with potassium cyanide. Not knowing who was responsible
-    or how widespread the tampering was, Johnson & Johnson recalled every
-    Tylenol product nationwide — 31 million bottles, at a cost of roughly
-    \$100 million — suspended advertising, and engaged openly with the FBI
+    or how widespread the tampering was, Johnson & Johnson recalled every bottle of Tylenol capsules nationwide — 31 million bottles, at a cost of roughly \$100 million — suspended advertising, and engaged openly with the FBI
     and FDA. The response was unprecedented in U.S. corporate practice, and
     it was a direct application of the J&J Credo, written in 1943, which
     had pre-specified that the company's first responsibility was to its
     customers. The reform that followed reshaped consumer packaging
     worldwide — tamper-evident seals and blister packs — and the FDA issued
-    tamper-resistant-packaging rules within months. Tylenol recovered its
-    market share within a year.
+    tamper-resistant-packaging rules within months. Tylenol climbed back to a 30 percent share by mid-1983 and to its pre-crisis 35 percent by year's end.
   ],
   sections: (
     // -- Background --
@@ -568,8 +557,7 @@
     [
       After seven people in the Chicago area died from Tylenol capsules
       laced with potassium cyanide, and with the source and scope of the
-      tampering unknown, Johnson & Johnson recalled every Tylenol product
-      nationwide — about 31 million bottles, at a cost near \$100 million —
+      tampering unknown, Johnson & Johnson recalled every bottle of Tylenol capsules nationwide — about 31 million bottles, at a cost near \$100 million —
       suspended all advertising, and engaged publicly with the FBI and FDA
       rather than minimizing exposure. Recalling nationwide despite the
       tampering being known only in Chicago was the decisive choice — it
@@ -591,9 +579,7 @@
     ],
     // -- The Evidence --
     [
-      The response, unprecedented in U.S. corporate practice, preserved
-      public trust: Tylenol recovered its market share within a year
-      despite the enormous short-term cost. The case became the canonical
+      The response, unprecedented in U.S. corporate practice, preserved public trust: Tylenol climbed from a 7 percent share back to 30 percent by mid-1983 and to its pre-crisis 35 percent by year's end, despite the enormous short-term cost. The case became the canonical
       positive example in business education of crisis response driven by
       capability commitment rather than legal minimization. The market
       recovery is what makes the case persuasive rather than merely
@@ -618,7 +604,7 @@
     "The 1943 Credo pre-specified customers ahead of shareholders, ranking the trade-off crisis pressure inverts",
     "J&J recalled 31 million bottles nationwide and engaged openly with regulators despite localized tampering",
     "Pre-committed values moved the hardest decision out of the moment of maximum pressure",
-    "Market share recovered within a year; trust repaid the hundred million spent protecting customers",
+    "Market share back to 30 percent by mid-1983 and to 35 percent by year's end; trust repaid the hundred million spent protecting customers",
     "Tamper-evident packaging became standard and pre-committed values emerged as the deeper institutional principle",
   ),
   references: (
@@ -628,7 +614,7 @@
     [FDA Final Rule on Tamper-Resistant Packaging (1982) — the packaging reform.],
     [Edmondson, A. (2018), _The Fearless Organization_ — pre-committed values under stress.],
   ),
-  quote: [The Credo is all about the consumer. When those seven deaths occurred, the Credo made it very clear at that point exactly what we were all about.],
+  quote: [The credo made it very clear at that point exactly what we were all about. It gave me the ammunition I needed to persuade shareholders and others to spend the \$100 million on the recall.],
   quote-source: "James Burke (Johnson & Johnson CEO) — closing sentence quoted in Lasting Leadership (Wharton); opening lead is the editors' paraphrase",
   le-insight: [
     Tylenol is the canonical positive case for institutional response
@@ -803,10 +789,10 @@
     ),
   ),
   references: (
-    [Davies, Wright, Courtney, & Reid, "Confidential Incident Reporting on the UK Railways: The CIRAS System," _Cognition, Technology & Work_, doi:10.1007/PL00011494.],
+    [Davies, Wright, Courtney, & Reid (2000), "Confidential Incident Reporting on the UK Railways: The 'CIRAS' System," _Cognition, Technology & Work_ 2, 117–125, doi:10.1007/PL00011494.],
     [Rail Safety and Standards Board (RSSB), CIRAS program documentation 2008 – present — operating-program publications.],
     [University of Strathclyde, CIRAS impact case study — the operating-program-self-report on outcomes between 2008 and 2012.],
-    [Ladbroke Grove Rail Inquiry (Cullen, 2001), final report — the regulatory forcing event for national mandate.],
+    [Ladbroke Grove Rail Inquiry (Cullen, 2001), final report — the public inquiry into the crash that preceded the national mandate.],
   ),
   quote: [The 45%-led-to-improvement figure is the operating program's self-report. The institutional design is the audited finding.],
   quote-source: "Editors' synthesis of Davies et al. and the Strathclyde impact case study.",
@@ -825,8 +811,8 @@
     (Navigating Sociotechnical Constraints) for the
     credible-commitment design — independence written into
     operating structure — and in Domain 4 (Test and
-    Evaluation) for the LEO *Judgment under inadequate
-    evidence* on the operating self-report tier. Pair with
+    Evaluation) for the subobjective *Judgment under inadequate
+    evidence* (4.4) on the operating self-report tier. Pair with
     ASRS (Case 119) and CRM/CAST (Case 117) as the
     cross-industry C4 set, and with the WHO Surgical
     Checklist (Case 23) at the mandatory-mechanism layer.
@@ -852,7 +838,7 @@
   year: "2005 – 2020",
   domains-list: ("humanitarian relief", "international coordination", "disaster response"),
   modes-code: "G",
-  impact: "IASC cluster approach adopted after the 2005 Humanitarian Response Review diagnosed unowned sectors in the Indian Ocean tsunami and Darfur responses; first applied in the October 2005 Pakistan earthquake response; eleven global clusters, each with a designated lead agency accountable for coverage and carrying provider-of-last-resort responsibility; two formal system-wide evaluations (Stoddard et al. 2007; Steets et al. 2010) found improved gap identification and coverage at real transaction cost, with national and local actors often marginalized; revised under the 2011 IASC Transformative Agenda after the Haiti earthquake exposed scale limits",
+  impact: "IASC cluster approach adopted after the 2005 Humanitarian Response Review found weak sectoral capacity and no locus of accountability across the international system, conceived amid the Darfur response and the failures of the collaborative approach for IDPs; first applied in the October 2005 Pakistan earthquake response; eleven global clusters, each with a designated lead agency accountable for coverage and carrying provider-of-last-resort responsibility; two formal system-wide evaluations (Stoddard et al. 2007; Steets et al. 2010) found improved gap identification and coverage at real transaction cost, with national and local actors often marginalized; revised under the 2011 IASC Transformative Agenda after the Haiti earthquake exposed scale limits",
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
@@ -953,15 +939,13 @@
       The formal evaluations are the reason the case can be
       told with discipline. The Phase 1 evaluation (Stoddard,
       Harmer, Haver, Salomons, and Wheeler, 2007) found early
-      gains — better identification of gaps, fewer duplications,
-      clearer sectoral leadership — purchased at real
+      gains — better identification of gaps and stronger, more predictable sectoral leadership, with no observable increase in ultimate accountability — purchased at real
       transaction cost in meetings, reporting, and staff time,
       with benefits uneven across clusters and countries. The
       Phase 2 evaluation (Steets, Grünewald, Binder, and
       colleagues, GPPi/Groupe URD, 2010), commissioned by the
       IASC across six country studies, found mostly positive
-      effects on coverage and gap identification and endorsed
-      the approach as the right one, while documenting
+      effects on coverage and gap identification and judged the benefits to already slightly outweigh the costs, while documenting
       persistent weaknesses that the evaluators declined to
       smooth: national and local actors were often marginalized
       or excluded by an architecture built around international

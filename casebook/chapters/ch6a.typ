@@ -224,7 +224,7 @@
     estimates of total deaths run to 15,000–20,000, with roughly half a
     million exposed or injured. Safety systems had been off-line for months,
     the plant was understaffed, and workers were inadequately trained to
-    recognize or handle the emergency. Investigators traced the catastrophe
+    recognize or handle the emergency. A seven-week New York Times inquiry traced the catastrophe
     to operating errors, design flaws, maintenance failures, training
     deficiencies, and cost-cutting that endangered safety. Bhopal catalyzed
     the creation of the U.S. Chemical Safety Board and reshaped
@@ -256,7 +256,7 @@
     ],
     // -- The Investigation --
     [
-      Investigations found the catastrophe "resulted from operating errors,
+      A seven-week New York Times inquiry found the catastrophe "resulted from operating errors,
       design flaws, maintenance failures, training deficiencies and economy
       measures that endangered safety" — a list with no single villain, which
       is precisely what made it hard to govern.#cn() Human-factors analysis
@@ -293,7 +293,7 @@
   beats: (
     "Union Carbide plant stored bulk MIC under cost pressure; understaffed, safety systems off-line, training thin",
     "Water entered an MIC tank; non-operational defenses let forty tons vent over the sleeping city",
-    "Investigators cited operating errors, design flaws, maintenance failures, training deficiencies, economy measures endangering safety",
+    "A seven-week New York Times inquiry cited operating errors, design flaws, maintenance failures, training deficiencies, economy measures endangering safety",
     "Capability hollowed across training, maintenance, design, staffing, oversight; no layer owned the integrated whole",
     "Reshaped industrial safety worldwide; catalyzed the U.S. Chemical Safety Board and process-safety regime",
   ),
@@ -365,9 +365,9 @@
   year: "2002",
   domains-list: ("energy",),
   modes-code: "NKG",
-  impact: "Football-sized cavity discovered in the reactor pressure-vessel head; near-miss; ~$600M recovery and extended outage",
+  impact: "Pineapple-sized cavity — roughly 5 inches by 4 to 5 inches — eaten clean through the carbon steel of the reactor pressure-vessel head; near-miss; plant shut down for repair and fleet-wide head-inspection requirements tightened",
   diagram: dgm.dgm-stat(
-    "1/4″",
+    "3/8″",
     "of stainless cladding remained",
     micro: "between a 6-inch corrosion cavity and reactor coolant at 2,200 psi",
     caption: "Davis-Besse — the post-TMI near-miss",
@@ -375,7 +375,7 @@
   kind: "failure",
   summary: [
     During a 2002 refueling outage at the Davis-Besse nuclear plant in Ohio,
-    workers found a football-sized cavity eaten through six inches of the
+    workers found a pineapple-sized cavity eaten through six inches of the
     carbon-steel reactor-vessel head by leaking boric acid, leaving only a
     thin layer of stainless cladding between the cavity and reactor coolant
     at 2,200 psi — a serious near-miss for a loss-of-coolant accident. The
@@ -402,8 +402,7 @@
     ],
     // -- What Happened --
     [
-      During a refueling outage in early 2002, workers found a cavity about
-      the size of a football eaten clean through six inches of the
+      During a refueling outage in early 2002, workers found a cavity about 5 inches long and 4 to 5 inches wide eaten clean through six inches of the
       carbon-steel head, leaving only a thin layer of stainless-steel
       cladding between the corrosion and reactor coolant at 2,200 psi. Had
       the cladding given way, the result would have been a medium-break
@@ -417,12 +416,8 @@
     [
       The boric-acid leakage had been observable for years, and inspections
       had been deferred. FirstEnergy had requested — and the NRC had granted
-      — a deferral of a mandatory inspection (NRC Bulletin 2001-01) so it
-      would align with the plant's February 2002 outage.#cn() The NRC's
-      Office of Inspector General later found the agency had inappropriately
-      weighted the utility's economic arguments over safety — its oversight,
-      the OIG concluded, had not been adequate to ensure that safety would
-      not be compromised.#cn() The deferral was not a covert lapse but a
+      — a deferral of the inspection Bulletin 2001-01 called for by 31 December 2001. The utility asked to inspect in April, after a 31 March 2002 refuelling shutdown; NRC drafted an order to shut the plant in December, then shelved it and settled on mid-February.#cn() The NRC's
+      Office of Inspector General later found the decision had been driven in large part by a desire to lessen the financial impact on the utility, and that the agency had set itself an unreasonably high bar — absolute proof of a safety problem — before it would order a plant shut down.#cn() The deferral was not a covert lapse but a
       documented decision both parties signed off on, which is the unsettling
       part: the erosion happened through the regulator's normal process, in
       the open, agreed to be safe to wait.
@@ -455,7 +450,7 @@
   ),
   beats: (
     "Post-TMI U.S. nuclear regime knew the boric-acid corrosion hazard across the reactor fleet",
-    "Refueling outage revealed football-sized cavity through the head; only thin cladding held back coolant",
+    "Refueling outage revealed pineapple-sized cavity through the head; 3/8 inch of cladding held back coolant",
     "FirstEnergy won an NRC inspection deferral; OIG found economics weighted over safety",
     "Plant engineering was sound; independence of the oversight layer above operations had quietly eroded",
     "INPO and NRC tightened head-inspection requirements; institutional capability erodes if not re-engineered",
@@ -463,13 +458,13 @@
   references: (
     [U.S. NRC Office of Inspector General, _NRC's Regulation of Davis-Besse Regarding Damage to the Reactor Vessel Head_ (Case No. 02-03S, December 2002) — the post-TMI regulatory regime and oversight failures.],
     [NRC event records and OIG (2002) — the ~6-inch corrosion cavity, the remaining cladding, and the 2,200-psi coolant margin.],
-    [NRC Bulletin 2001-01 and the FirstEnergy inspection-deferral decision aligned to the February 2002 outage.],
-    [NRC OIG (2002) — economic arguments weighted over safety, and the finding that NRC oversight had not been adequate to ensure safety (paraphrased).],
+    [NRC Bulletin 2001-01, "Circumferential Cracking of Reactor Pressure Vessel Head Penetration Nozzles" (3 August 2001), and the compromise that let Davis-Besse run to a 16 February 2002 outage.],
+    [NRC OIG (2002), as quoted in U.S. GAO, GAO-04-415 (2004) — the finding that NRC's decision "was driven in large part by a desire to lessen the financial impact on FirstEnergy," and NRC's dispute of it.],
     [D. Lochbaum / Union of Concerned Scientists analysis (2002); U.S. GAO, GAO-04-415 (2004).],
     [J. V. Rees, _Hostages of Each Other_ (1994) — INPO and the fragility of institutional safety capability.],
   ),
-  quote: [The NRC's actions were not adequate to ensure that safety would not be compromised.],
-  quote-source: "Paraphrasing the NRC Office of Inspector General Davis-Besse report, 2002",
+  quote: [NRC's decision was driven in large part by a desire to lessen the financial impact on FirstEnergy that would result from an early shutdown.],
+  quote-source: "NRC Office of the Inspector General finding, quoted in GAO-04-415 (2004)",
   le-insight: [
     Davis-Besse is the case for how regulator-operator dynamics can
     erode the capability of an industry that had previously
@@ -583,9 +578,7 @@
       1999 Amoco merger and again for 2005, and a 2003 site "1,000 Day
       Goals" program the CSB faulted for measuring personal safety and cost
       over process safety — celebrated as a success while it consumed the
-      process-safety margin. The CSB drew the distinction that would
-      reshape the field: "indicators of personal safety are not
-      indicators of process safety."#cn() The Board's force came from
+      process-safety margin. The CSB drew the distinction that would reshape the field: personal safety metrics "are not a good indicator of process safety performance."#cn() The Board's force came from
       naming the deeper error as one of measurement: the company had not
       failed to measure but had measured the wrong dimension and then
       trusted the reassuring number it produced. BP's recordable
@@ -644,8 +637,7 @@
     [A. Hopkins, _Failure to Learn: The BP Texas City Refinery Disaster_ (CCH, 2008).],
     [OSHA Process Safety Management standard (29 CFR 1910.119, 1992) and the CCPS process-safety literature — the personal-vs-process-safety distinction.],
   ),
-  quote: [Indicators of personal safety are not indicators of process safety.],
-  quote-source: "U.S. Chemical Safety Board, BP Texas City Final Investigation Report, 2007",
+  quote: [Personal safety metrics are not a good indicator of process safety performance.], quote-source: "U.S. Chemical Safety Board, BP Texas City Final Investigation Report, 2007",
   le-insight: [
     Texas City is the foundational evidence that organizations can be
     measuring the wrong thing and reporting excellent performance while
@@ -701,7 +693,7 @@
   year: "2010",
   domains-list: ("energy", "industrial"),
   modes-code: "NGK",
-  impact: "29 killed in West Virginia coal mine; MSHA found systematic falsification of safety records; first U.S. mining-industry CEO convicted of a federal mine-safety charge (misdemeanor)",
+  impact: "29 killed in West Virginia coal mine; MSHA found two sets of books and required examinations not performed; first U.S. mining-industry CEO convicted of a federal mine-safety charge (misdemeanor)",
   diagram: dgm.dgm-compare(
     "inspector\nlog",
     "compliant",
@@ -716,10 +708,7 @@
     Big Branch mine in West Virginia, killing 29 miners — the worst U.S.
     mine disaster in forty years. Investigators found Massey had kept two
     sets of records: an internal log of actual conditions and a separate,
-    clean log for federal inspectors. Foremen were directed to suppress
-    methane readings, disable monitors, and falsify pre-shift examinations —
-    not as an aberration but as a stable routine across years and management
-    layers. CEO Don Blankenship was convicted of a misdemeanor conspiracy to
+    clean log for federal inspectors. Required pre-shift, on-shift, and weekly examinations went unperformed, no methane examinations were made on the longwall tailgate in the weeks before the blast, and the mine's superintendent later admitted ordering a methane monitor disabled. CEO Don Blankenship was convicted of a misdemeanor conspiracy to
     violate mine-safety standards — the first U.S. mining CEO criminally
     convicted on such a charge. Upper Big Branch is the dataset's clearest
     case of a measurement system engineered deliberately to defeat the
@@ -751,17 +740,11 @@
     ],
     // -- The Investigation --
     [
-      MSHA's investigation and a parallel U.S. Department of Justice probe
-      found foremen instructed to suppress methane readings, disable
-      monitors, and falsify pre-shift examinations.#cn() Massey CEO Don
+      MSHA found required pre-shift, on-shift, and weekly examinations unperformed and no methane examinations at all on the longwall tailgate in the weeks before the blast; a parallel U.S. Department of Justice probe established that a methane monitor had been ordered disabled.#cn() Massey CEO Don
       Blankenship was eventually convicted of a misdemeanor count of
       conspiring to willfully violate mine-safety standards — the first U.S.
       mining-industry CEO criminally convicted on a mine-safety charge —
-      though acquitted on the felony counts.#cn() That the instructions ran
-      down to foremen and the conviction reached up to the CEO marks the
-      practice as vertical, not local: the deception was operated at the
-      working level and conceived above it, spanning the management layers in
-      between.
+      though acquitted on the felony counts.#cn() The conviction did not reach the deception: the jury convicted Blankenship of conspiring to violate mine-safety standards and acquitted him of conspiring to defraud the regulator, so the records architecture is proved at the mine and never proved above it.
     ],
     // -- The Capability Gap --
     [
@@ -793,7 +776,7 @@
   beats: (
     "Massey ran two sets of records; the clean log disabled the regulator's mechanism of sight",
     "Coal dust and methane ignited, killing twenty-nine; the sanitized records hid the conditions",
-    "MSHA and DOJ found suppressed readings and disabled monitors; CEO Blankenship convicted of misdemeanor conspiracy",
+    "MSHA found unperformed examinations and two sets of books; DOJ established a disabled monitor; Blankenship convicted of misdemeanor conspiracy",
     "Dual records were stable institutional practice spanning years; measurement engineered as deception",
     "Conviction set accountability marker; unanswered is what independent signal could expose divergence live",
   ),
@@ -891,8 +874,7 @@
     [
       The Deepwater Horizon was drilling BP's Macondo exploratory well in the
       Gulf of Mexico when, on 20 April 2010, the well blew out. Eleven
-      workers were killed, the rig burned and sank, and roughly 4.9 million
-      barrels of oil flowed into the Gulf over 87 days — the largest marine
+      workers were killed, the rig burned and sank, and roughly 4.9 million barrels of oil escaped the well over 87 days, about 830,000 of them captured at the wellhead — the largest marine
       oil spill in U.S. history, eventually costing BP more than \$65
       billion.#cn() The well sat at the end of a long chain of contractors and
       schedules, each operating to its own tolerance, so that the 87 days of
@@ -915,18 +897,14 @@
     // -- The Investigation --
     [
       Four major investigations reached the wreck and pulled on different
-      threads. The National Commission concluded that a cascade of mistakes across BP,
-      Halliburton, and Transocean, not mechanical failure alone, was the root
-      cause, and that the mistakes revealed
+      threads. The National Commission called a series of identifiable mistakes across BP, Halliburton, and Transocean the blowout's immediate causes and a systemic failure of industry management its root cause, and found that the mistakes revealed
       "such systematic failures in risk management that they place in doubt
       the safety culture of the entire industry."#cn() The joint Coast
       Guard / BOEMRE inquiry traced the blowout-preventer failure to a
       buckled drill pipe and a maintenance backlog that the leasing-and-safety
       regulator had not caught. The Chemical Safety Board's separately
       published process-safety review made the load-bearing distinction
-      explicit: BP's lost-time-injury rate had been industry-leading on the
-      rig, yet personal-safety metrics had no purchase on the catastrophic
-      process-safety risks that produced the blowout — the same inversion
+      explicit: BP and Transocean both reported improving personal-injury rates in the year before the blowout, yet personal-safety metrics had no purchase on the catastrophic process-safety risks that produced it — the same inversion
       the CSB had already documented at Texas City. Government and academic
       reviews found training that had not covered the well-control situation
       the crew faced, an unclear chain of command, and a cascade of failed
@@ -990,7 +968,7 @@
   references: (
     [National Commission on the BP Deepwater Horizon Oil Spill, _Deep Water: The Gulf Oil Disaster and the Future of Offshore Drilling_ (Report to the President, 2011) — systematic management failures as root cause; the misread negative-pressure test.],
     [National Commission (2011) — the well-control sequence and mud-displacement decision.],
-    [National Commission (2011) — "systematic failures in risk management… place in doubt the safety culture of the entire industry" (quoted); U.S. Chemical Safety Board, _Drilling Rig Explosion and Fire at the Macondo Well_ (final volumes, 2014–2016) — process-safety vs. personal-safety distinction and BP's industry-leading lost-time-injury rate as a misleading indicator.],
+    [National Commission (2011) — "systematic failures in risk management… place in doubt the safety culture of the entire industry" (quoted); U.S. Chemical Safety Board, _Drilling Rig Explosion and Fire at the Macondo Well_ (final volumes, 2014–2016) — process-safety vs. personal-safety distinction and the improving personal-injury rates BP and Transocean reported as misleading indicators.],
     [BOEMRE / U.S. Coast Guard Joint Investigation (2011) — blowout-preventer maintenance backlog and chain-of-command findings; National Academies, _Macondo Well Deepwater Horizon Blowout: Lessons for Improving Offshore Drilling Safety_ (2012) — training gaps and the interlinked cascade of failed defenses.],
     [Deepwater Horizon Study Group (UC Berkeley, 2011) final report; N. Leveson, systems-theoretic analysis of Deepwater Horizon — the multi-layer drift and the limits of single-cause framings.],
     [Spill-volume estimates (~4.9 million barrels) and BP cost disclosures (>\$65 billion); the reorganization of the Minerals Management Service into BSEE/BOEM (Secretarial Order 3299, 2010); A. Lustgarten, _Run to Failure: BP and the Making of the Deepwater Horizon Disaster_ (W.W. Norton, 2012) — long-arc account of accumulated procedural debt.],
@@ -1005,9 +983,7 @@
     had been operating with accumulated procedural debt for years. The
     capability to recognize an unsafe well-state simply was not present
     at the moment it was needed. The CSB's process-safety / personal-safety
-    distinction is load-bearing: BP's industry-leading lost-time-injury
-    record was a measurement of the wrong construct, and reading it as
-    safety was itself a normalization.
+    distinction is load-bearing: the improving personal-injury rates BP and Transocean reported were a measurement of the wrong construct, and reading them as safety was itself a normalization.
   ],
   lens-approach: [
     Deepwater Horizon anchors the cue-and-alert-design competency
@@ -1035,7 +1011,7 @@
     [Identify a multi-defense process in your domain. For each layer, what is the procedural debt that has accumulated since it was designed?],
     [The negative-pressure test was the proximate trigger. Design a capability check that would have caught the misinterpretation in real time — and specify what makes the cue unambiguous enough that an anomalous reading stops work rather than inviting a rationalizing explanation.],
     [The Commission judged the drift industry-wide, not rig-specific. What measure in your domain would reveal whether a single failure is a local lapse or a sample from a systemic distribution?],
-    [BP's lost-time-injury rate had been industry-leading on the rig. Name the measurement in your domain that is most at risk of being the wrong construct — a personal-safety analog where the catastrophic process-safety risk lives elsewhere — and design the second instrument that would surface the harm the first one cannot see.],
+    [The Deepwater Horizon had gone seven years without a single lost-time incident. Name the measurement in your domain that is most at risk of being the wrong construct — a personal-safety analog where the catastrophic process-safety risk lives elsewhere — and design the second instrument that would surface the harm the first one cannot see.],
   ),
   approaches: (
     during: (
@@ -1069,8 +1045,7 @@
     been wrapped in combustible aluminium-composite cladding during a
     refurbishment. The public inquiry found the disaster the culmination of
     decades of failure: cladding firms engaged in "systematic dishonesty,"
-    marketing combustible materials as safe; regulators and inspectors missed
-    effectively banned products across sixteen site visits; and the London
+    marketing combustible materials as safe; the council's building control surveyor was overworked, untrained in cladding, and visited less than he meant to; and the London
     Fire Brigade, whose "stay put" advice proved fatal, was unprepared for a
     cladding fire whose risks earlier incidents had already shown. The
     failure spanned manufacturers, regulators, inspectors, and responders —
@@ -1081,12 +1056,9 @@
     // -- Background --
     [
       Grenfell Tower was a 1970s public-housing block in West London,
-      refurbished in 2015–16 with new exterior cladding intended to improve
+      refurbished between 2012 and 2016 with new exterior cladding intended to improve
       the building's appearance and efficiency. The cladding chosen used a
-      combustible aluminium-composite material — installed despite safety
-      experts' cautions that it was unsuitable for a high-rise, a warning that
-      sat between the people who issued it and the people who specified the
-      panels without ever stopping the decision.#cn()
+      combustible aluminium-composite material — installed while the project's fire engineer never finished the fire safety strategy and never warned the design team, and while published guidance against combustible high-rise cladding sat unread by the people specifying the panels.#cn()
     ],
     // -- What Happened --
     [
@@ -1104,14 +1076,10 @@
       failure by central government and every body responsible. Cladding
       companies had engaged in "systematic dishonesty," marketing combustible
       products as safe and corrupting the very test data buyers relied on;
-      inspectors visited the site sixteen times and none noticed that
-      effectively banned materials were in use, so sixteen chances to catch
-      the hazard each passed it by.#cn() The London Fire Brigade was
+      the council's building control surveyor visited far less often than the monthly schedule he intended, and never recognised that the panels and insulation in use were combustible.#cn() The London Fire Brigade was
       unprepared: the risks of rapidly developing cladding fires were known
       from prior incidents — Knowsley Heights, Garnock Court, Shepherd's Court
-      — but "this knowledge had not informed firefighting policies, practices
-      or training," so each near-miss taught no one whose job was to act on
-      it.#cn()
+      — but the commanders who attended "had received no training in the particular dangers associated with combustible cladding," so each near-miss taught no one.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -1139,22 +1107,21 @@
     ],
   ),
   beats: (
-    "1970s tower refurbished with combustible aluminium-composite cladding despite expert cautions against high-rise use",
+    "1970s tower refurbished with combustible aluminium-composite cladding while the fire engineer never warned the team",
     "Kitchen fire climbed the exterior cladding; stay-put advice held residents inside; seventy-two died",
-    "Inquiry found systematic dishonesty by cladding firms; sixteen inspections missed effectively banned products",
+    "Inquiry found systematic dishonesty by cladding firms; one overworked surveyor never recognised the combustible panels",
     "Distributed capability failure; fraud, capture, incompetence, lost memory converged with no integrated owner",
     "Phase 2 report and government response drove building-safety, cladding, and fire-service reforms",
   ),
   references: (
     [Grenfell Tower Inquiry, _Phase 1 Report_ (2019) — the fire's spread up the cladding and the failure of "stay put."],
     [Grenfell Tower Inquiry, _Phase 2 Report_ (2024) — decades of failure and the combustible-cladding decision.],
-    [Phase 2 Report (2024) — cladding firms' "systematic dishonesty" and the inspection failures across sixteen visits.],
-    [Phase 1 Report (2019) — London Fire Brigade unpreparedness; "this knowledge had not informed firefighting policies, practices or training" (quoted).],
+    [Phase 2 Report (2024) — cladding firms' "systematic dishonesty" and the RBKC building control failures (ch. 62).],
+    [Phase 1 Report (2019) — London Fire Brigade unpreparedness; preparation and planning "was gravely inadequate" (quoted).],
     [UK Government response to the Grenfell Phase 2 report (2025) — building-safety and fire-service reform.],
     [B. Hutter & M. Power (eds.), _Organizational Encounters with Risk_ (2005) — distributed risk ownership.],
   ),
-  quote: [This knowledge had not informed firefighting policies, practices or training.],
-  quote-source: "Grenfell Tower Inquiry, Phase 1, 2019",
+  quote: [The LFB's preparation and planning for a fire such as that at Grenfell Tower was gravely inadequate.], quote-source: "Grenfell Tower Inquiry, Phase 1, 2019",
   le-insight: [
     Grenfell is the strongest evidence in the dataset that capability
     failure can be distributed across many actors, each of whom contributes
@@ -1182,7 +1149,7 @@
   reflection-list: (
     [What is the "grey elephant" — the well-known risk that nobody owns — in your domain?],
     [Design the deliverable that forces a single actor to own the integration risk that Grenfell distributed across dozens.],
-    [Sixteen inspections, prior fires, and expert cautions each touched a fragment of the Grenfell hazard, yet none assembled it. What mechanism in your domain could gather scattered partial warnings into one picture in front of someone empowered to stop the work?],
+    [Site inspections, prior cladding fires, and published guidance each touched a fragment of the Grenfell hazard, yet none assembled it. What mechanism in your domain could gather scattered partial warnings into one picture in front of someone empowered to stop the work?],
   ),
   approaches: (
     during: (
@@ -1191,7 +1158,7 @@
       [Preserve the containment principle the building relies on: gate any cladding choice on whether it keeps a compartment fire from climbing the exterior.],
     ),
     after: (
-      [Route every site inspection and near-miss into a shared record so sixteen visits cannot each miss the same banned material in isolation.],
+      [Route every site inspection and near-miss into a shared record so repeated visits cannot each miss the same banned material in isolation.],
       [Feed prior-incident knowledge into firefighting policy, training, and "stay put" doctrine, so lessons from earlier cladding fires actually change practice.],
       [Sustain a single line of accountability for the integrated hazard through the building's life, not only at refurbishment.],
     ),
@@ -1211,7 +1178,7 @@
   year: "2018",
   domains-list: ("energy",),
   modes-code: "GNK",
-  impact: "85 killed in Paradise, California; deadliest U.S. wildfire in a century; PG&E pleaded guilty to 84 counts of involuntary manslaughter",
+  impact: "85 killed in Butte County, California; deadliest U.S. wildfire in a century; PG&E pleaded guilty to 84 counts of involuntary manslaughter",
   diagram: dgm.dgm-stat(
     "85",
     "killed in Paradise · single transmission hook",
@@ -1225,10 +1192,7 @@
     swept into the town of Paradise faster than people could evacuate.
     Eighty-five died — the deadliest U.S. wildfire in a century — and PG&E
     later pleaded guilty to 84 counts of involuntary manslaughter.
-    Investigators found PG&E had known for years that its transmission
-    infrastructure across high-fire-risk areas was deteriorating, and had
-    deferred maintenance to fund other priorities, under a regulatory regime
-    that let the deferrals continue. Infrastructure built for one climate was
+    Investigators found PG&E had known for years that its transmission infrastructure across high-fire-risk areas was deteriorating, and had run it under a strategy its own documents called Run to Failure while consistently reducing the frequency and thoroughness of its inspections. Infrastructure built for one climate was
     operating in another. Camp Fire is the book's foundational climate-era
     case for utility capability under changed conditions, and it restructured
     how California regulates utility wildfire risk.
@@ -1256,10 +1220,7 @@
     // -- The Investigation --
     [
       CalFire's investigation and the Butte County District Attorney's report
-      found that PG&E had known for years about the deteriorating condition
-      of its transmission infrastructure in high-fire-risk areas, and had
-      deferred the maintenance to fund other corporate priorities — so the
-      hazard was not unknown but a recognized risk repeatedly postponed.#cn()
+      found that PG&E had known for years about the deteriorating condition of its transmission infrastructure in high-fire-risk areas, and had consistently reduced the frequency and thoroughness of the inspections that would have found the wear — so the hazard was not unknown but a recognized risk left unlooked-at.#cn()
       The gap was simultaneously at the utility's asset-maintenance decisions
       and at the regulatory architecture that had allowed the deferrals to
       continue, neither side holding a line that would have forced the work.#cn()
@@ -1305,8 +1266,8 @@
     [PG&E bankruptcy and California wildfire-mitigation reforms (2019– ).],
     [Cf. the Northeast Blackout (Case 146); climate-and-infrastructure literature.],
   ),
-  quote: [PG&E knew its equipment was failing in high-fire-risk areas and continued operating without remediation.],
-  quote-source: "Paraphrasing the Butte County District Attorney's Camp Fire Report, 2020",
+  quote: [Catastrophic failure of the Caribou-Palermo line was not an "if" question; it was a "when" question.],
+  quote-source: "Butte County District Attorney, The Camp Fire Public Report, 16 June 2020",
   le-insight: [
     The Camp Fire is the canonical climate-era case for utility-
     capability failure under changing risk conditions. The
@@ -1464,8 +1425,7 @@
       Operations (INPO, December 1979) to set standards, run plant
       evaluations, and force the sharing of operating experience the
       Davis-Besse failure had lacked.#cn() The NRC overhauled licensing
-      and inspection: it required plant-referenced simulators, placed
-      resident inspectors at every commercial reactor, tied operator
+      and inspection: it required plant-referenced simulators, expanded the resident inspector program to every commercial reactor, tied operator
       training and re-qualification to a national standard, and in
       Regulatory Guide 1.97 specified the post-accident instrumentation
       needed to give crews state — not command — information across the
@@ -1490,12 +1450,12 @@
   references: (
     [Kemeny Commission, _Report of the President's Commission on the Accident at Three Mile Island_ (Oct. 1979) — operator training oriented to large design-basis accidents.],
     [M. Rogovin & G. T. Frampton, _Three Mile Island: A Report to the Commissioners and to the Public_, NUREG/CR-1250 (U.S. NRC, 1980) — the September 1977 Davis-Besse stuck-PORV precursor and the failure to disseminate its lessons.],
-    [U.S. Nuclear Regulatory Commission, #link("https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/3mile-isle.html")[Backgrounder on the Three Mile Island Accident] — accident sequence, misleading PORV indication, throttled high-pressure injection, ~50% core damage, minimal off-site dose.],
+    [U.S. Nuclear Regulatory Commission, #link("https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/3mile-isle.html")[Backgrounder on the Three Mile Island Accident] — accident sequence, misleading PORV indication, throttled high-pressure injection, and the off-site dose — about 1 millirem average, under 100 millirem at the site boundary.],
     [Kemeny Commission (1979) — central conclusion that the fundamental problems were people-related, not equipment-related (quoted).],
     [C. Perrow, _Normal Accidents_ (1984); J. Reason, _Human Error_ (1990) — why ambiguous cascades defeat design-basis training and command-not-state interfaces.],
     [#link("https://www.inpo.info/history")[Institute of Nuclear Power Operations, "Our History"] — INPO established December 1979 to set standards and force sharing of operating experience; see also NEI, "Lessons from the 1979 Accident at Three Mile Island."],
     [J. V. Rees, _Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island_ (Univ. of Chicago Press, 1994) — TMI as the origin of systematic capability reform.],
-    [U.S. Nuclear Regulatory Commission, _Regulatory Guide 1.97_, _Criteria for Accident Monitoring Instrumentation for Nuclear Power Plants_ (revised post-TMI), and NUREG-0700, _Human-System Interface Design Review Guidelines_ — the control-room and post-accident-instrumentation standards that grew out of TMI; see also J. C. Walker, _Three Mile Island: A Nuclear Crisis in Historical Perspective_ (Univ. of California Press, 2004) on the operator-training-and-licensing overhaul.],
+    [U.S. Nuclear Regulatory Commission, _Regulatory Guide 1.97_, Rev. 2, _Instrumentation for Light-Water-Cooled Nuclear Power Plants to Assess Plant and Environs Conditions During and Following an Accident_ (Dec. 1980), and NUREG-0700, _Human-System Interface Design Review Guidelines_ — the control-room and post-accident-instrumentation standards that grew out of TMI; see also J. S. Walker, _Three Mile Island: A Nuclear Crisis in Historical Perspective_ (Univ. of California Press, 2004) on the operator-training-and-licensing overhaul.],
   ),
   quote: [The fundamental problems are people-related problems and not equipment problems.],
   quote-source: "Kemeny Commission Report on Three Mile Island, 1979",
@@ -1622,9 +1582,7 @@
       Orleans area. The scenario projected ten to twenty feet
       of flooding across most of the city and surrounding
       parishes, the destruction of hundreds of thousands of
-      buildings, more than a hundred thousand residents unable
-      to self-evacuate, and fatalities in the tens of
-      thousands. Pam produced draft functional plans —
+      buildings, 300,000 residents who would not evacuate in advance, and fatalities in the tens of thousands. Pam produced draft functional plans —
       search-and-rescue, sheltering, temporary medical care,
       debris — and a schedule of follow-on workshops to turn
       the drafts into executable, resourced capability. When
@@ -1687,10 +1645,7 @@
       recommended dissolving FEMA and rebuilding its function
       inside DHS. The White House's _The Federal Response to
       Hurricane Katrina: Lessons Learned_ (the Townsend
-      report, 23 February 2006) issued 125 recommendations
-      and 17 lessons, including the failure to maintain a
-      common operating picture — the finding that formalized
-      the television-before-operations problem.#cn()
+      report, 23 February 2006) issued 125 recommendations and 17 lessons, and found that officials from national leaders to responders on the ground lacked the situational awareness a prompt response required — the finding that formalized the television-before-operations problem.#cn()
     ],
     [
       Reform arrived through statute. The Post-Katrina
@@ -1726,9 +1681,7 @@
       varies by study and jurisdiction; the casebook reports
       the range, not a number. The analytical spine is the
       Hurricane Pam seam: an exercised, documented capability
-      requirement — levee overtopping, a flooded city, more
-      than a hundred thousand residents who could not
-      self-evacuate — that no institution converted into
+      requirement — levee overtopping, a flooded city, 300,000 residents who would not evacuate in advance — that no institution converted into
       funded, staffed, rehearsed capability in the thirteen
       months before the event. This is the
       disaster-preparedness form of stated versus engineered
@@ -1745,7 +1698,7 @@
     ],
   ),
   beats: (
-    "July 16 – 23, 2004: FEMA-funded Hurricane Pam exercise, ~300 local/state/federal officials — simulated Category 3 storm overtops New Orleans levees, floods the city, strands 100,000+; action items unfunded and unfinished at landfall thirteen months later",
+    "July 16 – 23, 2004: FEMA-funded Hurricane Pam exercise, ~300 local/state/federal officials — simulated Category 3 storm overtops New Orleans levees, floods the city, strands the 300,000 who do not evacuate; action items unfunded and unfinished at landfall thirteen months later",
     "August 29, 2005: Katrina landfall; levee breaches flood ~80% of New Orleans; FEMA logistics cannot track or deliver commodities; Incident of National Significance machinery invoked only after landfall in its first operational use",
     "Unified local/state/federal command never forms; communications interoperability collapses; Superdome and Convention Center conditions known to television audiences before the federal operations picture",
     "Three investigations converge: House \"A Failure of Initiative\" (Feb 2006), Senate \"A Nation Still Unprepared\" (May 2006, recommends dissolving FEMA), White House Townsend report (Feb 2006, 125 recommendations)",
@@ -1766,7 +1719,7 @@
   references: (
     [Select Bipartisan Committee to Investigate the Preparation for and Response to Hurricane Katrina (2006), _A Failure of Initiative_, H. Rept. 109-377, U.S. House of Representatives, February 15, 2006 — including the dedicated Hurricane Pam findings chapter.],
     [U.S. Senate Committee on Homeland Security and Governmental Affairs (2006), _Hurricane Katrina: A Nation Still Unprepared_, S. Rept. 109-322, May 2006 — 325+ interviews, 838,000+ pages of documents reviewed.],
-    [The White House (2006), _The Federal Response to Hurricane Katrina: Lessons Learned_ (the Townsend report), February 23, 2006 — 17 lessons, 125 recommendations, including the common-operating-picture finding.],
+    [The White House (2006), _The Federal Response to Hurricane Katrina: Lessons Learned_ (the Townsend report), February 23, 2006 — 17 lessons, 125 recommendations, including the situational-awareness finding.],
     [U.S. Senate Committee on Homeland Security and Governmental Affairs (2006), _Preparing for a Catastrophe: The Hurricane Pam Exercise_, hearing, S. Hrg. 109-403, January 24, 2006 — testimony on the July 2004 exercise scope and unfinished follow-on work.],
     [Post-Katrina Emergency Management Reform Act of 2006, Title VI of Public Law 109-295, signed October 4, 2006 — rebuilt FEMA authorities, accelerated pre-request federal assistance, national preparedness goal and system.],
   ),
@@ -1804,7 +1757,7 @@
   literature-items: (
     [Select Bipartisan Committee (2006), _A Failure of Initiative_ — House investigation, Hurricane Pam chapter],
     [Senate HSGAC (2006), _Hurricane Katrina: A Nation Still Unprepared_ — eight categories of FEMA failure],
-    [The White House (2006), _Lessons Learned_ (Townsend report) — common-operating-picture finding],
+    [The White House (2006), _Lessons Learned_ (Townsend report) — situational-awareness finding],
   ),
   reflection-list: (
     [Identify an exercise, red-team, or audit finding in your organization that specified a missing capability and was closed as "documented" rather than "built." What would a funded owner, a completion date, and a re-verification event have looked like, and what converts a finding into an obligation in your setting?],
@@ -1983,9 +1936,7 @@
   kind: "failure",
   summary: [
     On 11 March 2011 the Tōhoku earthquake and the tsunami it spawned
-    overwhelmed TEPCO's Fukushima Daiichi plant: the wave topped the
-    seawall, flooded the emergency diesel generators, and cut cooling to the
-    reactors. Three of the six cores melted down and hydrogen explosions
+    overwhelmed TEPCO's Fukushima Daiichi plant: the quake severed the off-site transmission lines, the wave rose above the site's ground level and flooded the emergency diesel generators, and cooling failed. Three of the six cores melted down and hydrogen explosions
     spread radioactive material, displacing some 160,000 people; cleanup is
     projected above \$200 billion. The independent Diet commission (NAIIC),
     chaired by Kiyoshi Kurokawa, called it a disaster "made in Japan" — the
@@ -2000,27 +1951,18 @@
     // -- Background --
     [
       Fukushima Daiichi sat on Japan's northeast coast, its reactors and
-      their backup diesel generators protected by a seawall sized to a
-      design-basis tsunami. Evidence of much larger historical waves — back
+      their backup diesel generators protected by the site's ground elevation and a design basis set by the Japan Society of Civil Engineers method. Evidence of much larger historical waves — back
       to the ninth-century Jōgan event — had been discussed in TEPCO's own
-      internal assessments, but no institutional path turned that evidence
-      into a higher seawall.#cn() The gap was not in the data but in the
-      conversion: the larger-wave evidence lived inside the utility's own
-      assessments, where it could be discussed indefinitely without ever
-      becoming a binding requirement to raise the wall it implicated.
+      internal assessments and shared with the regulator from 2006, without ever becoming a required change.#cn() The gap was not in the data but in the conversion: NAIIC found TEPCO and NISA both knew a wave above site level meant total loss of power, and that NISA gave no compulsory instruction and TEPCO took no action.
     ],
     // -- What Happened --
     [
       On 11 March 2011 the Tōhoku earthquake struck and the tsunami that
-      followed topped the seawall. The plant lost off-site power; the diesel
-      generators meant to keep cooling running were inundated. Cooling
+      followed rose above the site's ground level. The earthquake had already severed the off-site transmission lines; the diesel generators meant to keep cooling running were inundated. Cooling
       failed, three of the six reactor cores melted down, and hydrogen
       explosions spread radioactive material across the region. Some 160,000
       people were displaced, and cleanup is projected above \$200 billion.#cn()
-      Siting the backup generators where a wave that overtopped the seawall
-      would reach them tied the entire cooling chain to that single design
-      assumption, so once the wall was topped the loss of cooling followed
-      almost mechanically from the layout itself.
+      Siting the backup generators where a wave above the site's ground level would reach them tied the entire cooling chain to that single design assumption, so once the water was on the site the loss of cooling followed almost mechanically from the layout itself.
     ],
     // -- The Investigation --
     [
@@ -2032,10 +1974,7 @@
       General's report (2015) — emphasized the under-estimation of external
       hazards and defense-in-depth assumptions over the cultural critique;
       the Kurokawa framing is the most-cited but not the only consensus
-      reading.#cn() That serious independent reviews diverged on emphasis —
-      cultural capture versus under-estimated external hazards — is itself
-      part of the record, and the book treats Kurokawa's as the most-cited
-      reading rather than the settled one.
+      reading.#cn() NAIIC also refused to accept the tsunami as the sole direct cause, holding that the earthquake may have damaged safety equipment at Unit 1; the IAEA report found the on-site destruction tsunami-driven. The book treats Kurokawa's as the most-cited reading, not the settled one.
     ],
     // -- The Capability Gap --
     [
@@ -2046,9 +1985,7 @@
       assumptions. The internal tsunami evidence existed; the institutional
       capability to act on it did not.#cn() Evidence without an independent
       body empowered to act on it is inert: the larger-wave assessments could
-      be acknowledged and shelved indefinitely because no institution stood
-      outside the utility with the standing to convert them into a mandated
-      change.
+      be acknowledged and shelved indefinitely because the regulator that did stand outside the utility, NISA, knew the risk and issued no compulsory instruction to act on it.
     ],
     // -- Aftermath & Reform --
     [
@@ -2066,7 +2003,7 @@
     ],
   ),
   beats: (
-    "Internal TEPCO assessments discussed larger historical waves; evidence never forced a higher seawall",
+    "TEPCO and NISA shared the larger-wave evidence from 2006; NISA gave no compulsory instruction and TEPCO took no action",
     "Tōhoku tsunami topped the seawall; inundated generators; three cores melted down, displacing thousands",
     "Kurokawa's NAIIC called it made in Japan; Hatamura and IAEA emphasized under-estimated external hazards",
     "Internal hazard evidence existed; Japan lacked an INPO-equivalent with independence to act on it",
@@ -2133,7 +2070,7 @@
   year: "2014 – 2016",
   domains-list: ("global health", "outbreak response", "international governance"),
   modes-code: "GN",
-  impact: "The 2014–2016 West Africa Ebola epidemic reached approximately 28,600 reported cases and 11,300 reported deaths (WHO situation-report figures, undercount acknowledged) across Guinea, Liberia, and Sierra Leone; first cases December 2013, outbreak confirmed March 2014, MSF called it \"out of control\" in June 2014 while WHO leadership disputed that framing, and WHO declared the Public Health Emergency of International Concern only on 8 August 2014 — months into exponential growth",
+  impact: "The 2014–2016 West Africa Ebola epidemic reached approximately 28,600 reported cases and 11,300 reported deaths (WHO situation-report figures, undercount acknowledged) across Guinea, Liberia, and Sierra Leone; first cases December 2013, outbreak confirmed March 2014, MSF called it \"out of control\" on 21 June 2014 while WHO staff in Guinea and Sierra Leone accused it of causing unnecessary panic, and WHO declared the Public Health Emergency of International Concern only on 8 August 2014 — months into exponential growth",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -2147,7 +2084,7 @@
     cases appeared in Guinea in December 2013; the outbreak was
     confirmed as Ebola in March 2014. Médecins Sans Frontières
     declared the epidemic "out of control" in June 2014, while
-    WHO leadership publicly disputed that framing as alarmist.
+    WHO staff in Guinea and Sierra Leone called that alarmist.
     WHO declared the Public Health Emergency of International
     Concern only on 8 August 2014 — months into exponential
     growth, and by the third PHEIC ever issued. The response
@@ -2162,8 +2099,7 @@
     Panel (Moon et al., _The Lancet_, November 2015), and the UN
     High-Level Panel (2016) — found the same structural failures:
     WHO's outbreak-response capacity had been cut after the 2011
-    budget reductions; the IHR (2005) core capacities existed on
-    paper in member states but not in practice; and early-warning
+    budget reductions; most member states had simply not built the IHR (2005) core capacities, and failing to do so cost nothing; and early-warning
     signals were discounted for political and economic reasons.
     The reform — the WHO Health Emergencies Programme (2016) —
     carries the panels' own caveat that post-crisis reform
@@ -2180,7 +2116,7 @@
       Leone was climbing, and Médecins Sans Frontières stated
       publicly that the epidemic was "out of control" and beyond
       the capacity of the responding organizations — a framing
-      that WHO leadership disputed at the time as alarmist. WHO
+      that WHO staff in the affected countries called alarmist. WHO
       convened its Emergency Committee on 6–7 August 2014 and
       declared a Public Health Emergency of International Concern
       on 8 August 2014, by which point roughly 1,700 cases and
@@ -2193,19 +2129,10 @@
       engineered capability. Under the International Health
       Regulations (2005), member states were required to build
       and certify a set of core capacities for detecting,
-      assessing, and responding to public-health events. On the
-      certification record, those capacities existed. In the
-      three most-affected states, the deployable capability did
-      not: surveillance, laboratory, and response infrastructure
-      that had been declared present could not in fact absorb the
-      epidemic. The IHR core-capacity regime had produced paper
-      compliance without real capability — the readiness the
-      system declared was not the readiness the system could
-      produce. The Stocking Report named the IHR implementation
+      assessing, and responding to public-health events. On the certification record, most had not built them. As at November 2014, 64 States Parties told the Secretariat they had achieved the core capacities, 81 requested extensions, and 48 did not communicate their status at all. The Stocking Panel called that untenable: a legally binding obligation, measured only by voluntary self-assessment, whose breach carried no consequence at all. The Stocking Report named the IHR implementation
       gap directly as one of its three review areas, alongside
       WHO's own emergency-response capacity and its role within
-      the wider humanitarian system. The gap itself — declared
-      readiness minus deployable readiness — is the artifact the
+      the wider humanitarian system. The gap itself — obligated readiness minus built readiness — is the artifact the
       case asks the reader to own.#cn()
     ],
     [
@@ -2220,8 +2147,7 @@
       signal was reframed as manageable lowered the threshold for
       reframing it again the next week. The Harvard-LSHTM
       Independent Panel (Moon et al., _The Lancet_, November 2015)
-      located the most serious failure in the delay in raising
-      the alarm, and its ten reform proposals targeted the
+      found the Director-General had ample reason to declare the emergency earlier, and its ten reform proposals targeted the
       governance of outbreak escalation — the machinery by which
       a discounted signal is supposed to become a declared
       emergency — rather than the science of detection. WHO's
@@ -2271,15 +2197,15 @@
   ),
   beats: (
     "First cases Guinea December 2013; confirmed as Ebola March 2014; WHO/Guinea reporting characterized outbreak as slowing by April 2014",
-    "MSF declared the epidemic \"out of control\" June 2014; WHO leadership publicly disputed the framing as alarmist",
+    "MSF declared the epidemic \"out of control\" 21 June 2014; WHO staff in Guinea and Sierra Leone accused MSF of causing unnecessary panic",
     "WHO declared the PHEIC on 8 August 2014 (Emergency Committee 6–7 August) — months into exponential growth; third PHEIC ever",
     "Response scaled: UNMEER (first UN emergency health mission), US/UK military logistics; community-led safe burials and care-centre networks bent the curve",
-    "Reported toll ~28,600 cases / ~11,300 deaths (undercount acknowledged); Stocking Report (July 2015), Moon et al. Lancet (Nov 2015), UN High-Level Panel (2016) converge on IHR paper-compliance, post-2011 WHO capacity cuts, discounted early signals",
+    "Reported toll ~28,600 cases / ~11,300 deaths (undercount acknowledged); Stocking Report (July 2015), Moon et al. Lancet (Nov 2015), UN High-Level Panel (2016) converge on unbuilt IHR core capacities with no consequence, post-2011 WHO capacity cuts, discounted early signals",
     "Reform: WHO Health Emergencies Programme (2016); panels' own caveat that post-crisis reform pledges historically decay — COVID-19 later tested it",
   ),
   approaches: (
     during: (
-      [Treat the gap between certified and deployable capability as the primary operational artifact: IHR core capacities existed on the certification record but not in the field, and the analyst's job during escalation is to measure the readiness the system can produce, not the readiness it has declared.],
+      [Treat the gap between obligated and built capability as the primary operational artifact: most states had not built the IHR core capacities and reported as much, and the analyst's job during escalation is to measure the readiness the system can produce, not the readiness it is obliged to hold.],
       [Build the escalation loop to resist discounting an exponential signal for political or economic reasons; the recurring failure was that each week's reframing of the signal as manageable lowered the threshold for reframing it again, and the declaration lagged the growth it existed to trigger.],
       [Do not hollow the institution charged with escalation ahead of the emergency; WHO's outbreak-response capacity had been reduced after the 2011 budget cuts, so the body responsible for sounding the alarm had been degraded at the point of need — a sustainment failure in the readiness deliverable itself.],
     ),
@@ -2296,13 +2222,12 @@
     [World Health Organization (2016), _Ebola Situation Reports_ — West Africa: approximately 28,600 cases and 11,300 deaths reported to 10 June 2016 (reported figures; undercount acknowledged).],
     [Médecins Sans Frontières (2015), _Ebola: Pushed to the Limit and Beyond_ — MSF account of the international outbreak response, March 2015.],
   ),
-  quote: [The most egregious failure was by WHO in the delay in sounding the alarm.],
+  quote: [The Director-General had ample reason to raise international attention by convening the Emergency Committee or declaring a public health emergency of international concern earlier.],
   quote-source: "Harvard-LSHTM Independent Panel on the Global Response to Ebola (Moon et al., The Lancet, 28 November 2015).",
   le-insight: [
     West Africa Ebola is the load-bearing case for declared
     international readiness that was certified but not deployable.
-    The IHR (2005) core capacities existed on paper in member
-    states but not in practice; WHO's own outbreak-response
+    Most member states had not built the IHR (2005) core capacities and said so; WHO's own outbreak-response
     capacity had been cut after 2011; and the escalation loop
     discounted an exponential signal for months before the PHEIC
     of 8 August 2014. The reported toll carries an acknowledged
@@ -2313,8 +2238,7 @@
     West Africa Ebola is the declared-versus-engineered-
     capability case at the scale of the international system
     (induced 1.1; LENS D5/PT6; LEO-5). LENS uses it in Domain 5
-    (Navigating Sociotechnical Constraints) for the IHR paper-
-    compliance-versus-real-capability seam and for the governance
+    (Navigating Sociotechnical Constraints) for the IHR obligation- versus-built-capability seam and for the governance
     failure in the escalation machinery — the discounting of the
     escalating signal as normalization of deviance in the
     declaration loop. The three converging panels (Stocking,
@@ -2344,7 +2268,7 @@
   year: "2017 – 2018",
   domains-list: ("emergency management", "disaster logistics", "public health"),
   modes-code: "GN",
-  impact: "Hurricane Maria struck Puerto Rico September 20, 2017, as the third major hurricane of the season after Harvey and Irma; FEMA's own 2017 Hurricane Season After-Action Report (July 12, 2018) found the agency entered Maria with force strength below target, its Caribbean Distribution Center inventory largely depleted by the Irma response, and commodity-tracking visibility it could not sustain to the ports; GAO-18-472 found 54% of deployed staff serving outside their qualified positions at the October 2017 peak; the grid collapse became the longest blackout in U.S. history (~11 months to full restoration); the commissioned GWU Milken Institute study estimated ~2,975 excess deaths (Sept 2017 – Feb 2018), adopted as the official toll in place of the initial 64",
+  impact: "Hurricane Maria struck Puerto Rico September 20, 2017, the third major hurricane to strike U.S. territory in under a month after Harvey and Irma; FEMA's own 2017 Hurricane Season After-Action Report (July 12, 2018) found the agency entered Maria with force strength below target, its Caribbean Distribution Center inventory largely depleted by the Irma response, and commodity-tracking visibility it could not sustain to the ports; GAO-18-472 found 54% of FEMA staff serving in a capacity in which they did not hold the \"Qualified\" title at the October 2017 peak; the grid collapse became the longest blackout in U.S. history (~11 months to full restoration); the commissioned GWU Milken Institute study estimated ~2,975 excess deaths (Sept 2017 – Feb 2018), adopted as the official toll in place of the initial 64",
   kind: "failure",
   scale: "big",
   evidence-source: "program-report",
@@ -2525,7 +2449,7 @@
   ),
   references: (
     [Federal Emergency Management Agency (2018), _2017 Hurricane Season FEMA After-Action Report_, July 12, 2018 — the agency's own self-assessment: force strength below target, Caribbean Distribution Center depletion, commodity-tracking shortfalls.],
-    [U.S. Government Accountability Office (2018), _2017 Hurricanes and Wildfires: Initial Observations on the Federal Response and Key Recovery Challenges_, GAO-18-472, September 2018 — 54% of deployed staff serving outside qualified positions at the October 2017 peak.],
+    [U.S. Government Accountability Office (2018), _2017 Hurricanes and Wildfires: Initial Observations on the Federal Response and Key Recovery Challenges_, GAO-18-472, September 4, 2018 — 54% of FEMA staff serving in a capacity in which they did not hold the "Qualified" title at the October 2017 peak.],
     [Milken Institute School of Public Health, George Washington University (2018), _Ascertainment of the Estimated Excess Mortality from Hurricane María in Puerto Rico_, August 2018 — commissioned by the Government of Puerto Rico; ~2,975 excess deaths, September 2017 – February 2018; basis for the official toll revision from 64.],
     [Kishore, N., Marqués, D., Mahmud, A., et al. (2018), "Mortality in Puerto Rico after Hurricane Maria," _New England Journal of Medicine_ 379(2):162 – 170, doi:10.1056/NEJMsa1803972 — household-survey estimate of 4,645 excess deaths (95% CI 793 – 8,498), September 20 – December 31, 2017.],
     [Houser, T., & Marsters, P. (2018), "The World's Second Largest Blackout," _Rhodium Group_, April 12, 2018 — approximately 3.4 billion lost customer-hours; the largest blackout in U.S. history by that metric.],
@@ -2685,14 +2609,14 @@
     "Staged rollouts, kernel-access review, and scrutiny of vendor concentration risk followed the outage",
   ),
   references: (
-    [CrowdStrike, _Falcon Content Update: Preliminary Post-Incident Review_ (July 2024) — the content-vs-code testing and staged-rollout gap (paraphrased).],
+    [CrowdStrike, _Falcon Content Update Preliminary Post Incident Report_ (24 July 2024) — the Rapid-Response-Content-versus-Sensor-Content testing and staged-rollout gap.],
     [CrowdStrike PIR (2024) — the configuration-file fault and the kernel crash; the ~8.5 million affected Windows machines figure is Microsoft's (D. Weston, 20 July 2024).],
     [Microsoft resilient-engineering analyses and Windows kernel-access review (2024).],
-    [U.S. GAO post-incident analysis and Senate Homeland Security hearings (2024) — concentration risk in endpoint security.],
+    [U.S. Government Accountability Office, _Cyber Resiliency: CrowdStrike Outage Highlights Challenges_, GAO-24-107733 (23 September 2024); House Committee on Homeland Security, Subcommittee on Cybersecurity and Infrastructure Protection hearing, 24 September 2024 — supply-chain and concentration risk in endpoint security.],
     [B. Beyer et al. (eds.), _Site Reliability Engineering_ (2016) — staged rollout and canarying; cf. Knight Capital (Case 143).],
   ),
-  quote: [Our content configuration update process did not include the same depth of testing and staged rollout as our code releases.],
-  quote-source: "Paraphrasing CrowdStrike Preliminary Post-Incident Review, July 2024",
+  quote: [Implement a staggered deployment strategy for Rapid Response Content in which updates are gradually deployed to larger portions of the sensor base, starting with a canary deployment.],
+  quote-source: "CrowdStrike, Falcon Content Update Preliminary Post Incident Report, 24 July 2024",
   le-insight: [
     The CrowdStrike outage is the live case for what happens when a
     deployment safety architecture treats categories of artifact

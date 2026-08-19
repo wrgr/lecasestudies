@@ -107,34 +107,26 @@
       A technician deployed the new code to seven of the eight routing
       servers and missed the eighth, leaving one node running stale software.
       The new code reused a configuration flag that, on the old software still
-      on that eighth server, had once activated long-dormant "Power Peg" test
-      code — retired years earlier but never removed from the repository. At
+      on that eighth server, had once activated the long-dormant "Power Peg" routing function — discontinued in 2003 but left present and callable. At
       the open the dead code woke and began firing millions of unintended
       orders into the market. In about forty-five minutes Knight amassed a
-      vast unwanted position; losses passed \$170 million almost at once and
-      reached about \$440 million — more than the firm itself was worth. It
+      vast unwanted position — long about \$3.5 billion in 80 stocks and short about \$3.15 billion in 74 — and realized a pre-tax loss of about \$440 million, more than the firm itself was worth. It
       survived only on emergency capital and was effectively acquired within
       months.#cn()
     ],
     // -- The Investigation --
     [
-      The Securities and Exchange Commission's September 2013 enforcement
+      The Securities and Exchange Commission's October 2013 enforcement
       order — In re Knight Capital Americas LLC — found Knight had no
       written procedure requiring a second technician to verify the
-      deployment across all hosts, and no automated check that all eight
-      servers were running the same code — nor controls able to recognize
-      and halt the flood of erroneous orders once it began. The order
+      deployment across all hosts, no written code-development and deployment procedures for the router, and no written protocol governing access to unused code — nor controls able to recognize and halt the flood of erroneous orders once it began. The order
       catalogued specific violations of the SEC's Market Access Rule
       (Rule 15c3-5), and Knight settled for a \$12 million
       penalty.#cn() The dead Power Peg code was the proximate trigger
       and the reused flag the match that lit it; but the underlying
       cause was the absence of the verification and risk controls that
       should surround any change to a system wired directly into the
-      live market. The order is unusually explicit that the institutional
-      gap was financial-engineering practice catching up to
-      software-engineering practice — release management, configuration
-      control, and pre-trade risk limits were not yet treated as
-      first-class deliverables on the trading desk.#cn()
+      live market. The order finds that Knight "did not have technology governance controls and supervisory procedures sufficient to ensure the orderly deployment of new code or to prevent the activation of code no longer intended for use," and that its firm-wide capital thresholds were never linked to controls that could stop the orders being entered.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -180,7 +172,7 @@
   ),
   references: (
     [U.S. Securities and Exchange Commission, _Order Instituting Administrative and Cease-and-Desist Proceedings_, In re Knight Capital Americas LLC (2013) — the firm, the Retail Liquidity Program launch, and the deployment.],
-    [SEC Order (2013) and Knight Capital 8-K filing (2012) — the missed eighth server, the reactivation of the dormant "Power Peg" code, the ~\$440 million loss in ~45 minutes, and the near-collapse.],
+    [SEC Order (2013) and Knight Capital 8-K filing (2012) — the missed eighth server, the reactivation of the dormant "Power Peg" code, and the ~45-minute event; the SEC puts the loss on the positions at over \$460 million, Knight's own filing at a realized pre-tax loss of ~\$440 million.],
     [SEC Order (2013) — the absence of a second-technician deployment verification, the lack of an automated code-consistency check, inadequate order controls, and the \$12 million penalty (quoted).],
     [B. Beyer, C. Jones, J. Petoff & N. R. Murphy (eds.), _Site Reliability Engineering_ (O'Reilly, 2016) — deployment verification, dead-code removal, and automated safeguards as engineering deliverables.],
     [SEC Market Access Rule (Rule 15c3-5) and subsequent automated-controls guidance — the regulatory response on pre-trade risk and market-access controls.],
@@ -244,7 +236,7 @@
   year: "1975–2012",
   domains-list: ("industrial",),
   modes-code: "DKN",
-  impact: "Inventor of the digital camera (1975) and holder of foundational digital-imaging patents; filed for Chapter 11 bankruptcy in January 2012 with the digital transition essentially un-run",
+  impact: "Inventor of the digital camera (1975) and holder of foundational digital-imaging patents; shipped digital cameras from 1991 and led the consumer market at points in the 2000s, and still filed for Chapter 11 bankruptcy in January 2012, unable to rebuild the business around margins the film franchise had set",
   diagram: dgm.dgm-stat(
     "1975",
     "first digital camera prototype · 0.01 megapixel",
@@ -268,7 +260,7 @@
     consumables it sold remained the protected core, and digital was
     treated as a threat to be managed rather than a product to be
     developed against itself. By 2003 digital camera sales overtook film
-    in the United States; by 2007 Kodak had begun mass layoffs; in
+    in the United States; in January 2004 Kodak announced the elimination of 12,000 to 15,000 positions; in
     January 2012 the company filed for Chapter 11. The capability gap
     was not invention. It was the organization's failure to iterate the
     business around the technology it already owned.
@@ -291,7 +283,7 @@
     ],
     // -- The Signal --
     [
-      Sasson's later published recollection (IEEE Spectrum, 2007) is
+      Sasson's later published recollection on Kodak's own corporate blog (2007) is
       that internal reception was polite but unmoved: the demonstration
       raised the question of when the company would have to compete
       against its own film business, and the answer settled into a long
@@ -327,10 +319,7 @@
       United States; by the mid-2000s smartphone cameras began
       collapsing the standalone-camera category Kodak had partially
       entered. Kodak's revenues fell from roughly USD 16 billion in
-      1996 to under USD 6 billion by 2011. The company sold its
-      Health Imaging division in 2007, began mass layoffs the same
-      year, and on 19 January 2012 filed for Chapter 11 bankruptcy
-      protection in the Southern District of New York. In the
+      1996 to under USD 6 billion by 2011. The company announced the elimination of 12,000 to 15,000 positions in January 2004, sold its Health Imaging division in 2007, and on 19 January 2012 filed for Chapter 11 bankruptcy protection in the Southern District of New York. In the
       bankruptcy proceedings Kodak monetized roughly 1,100 of its
       digital-imaging patents — many traceable to the engineering
       lineage Sasson's 1975 prototype had started — for approximately
@@ -376,7 +365,7 @@
     ),
   ),
   references: (
-    [S. Sasson, "We Had No Idea," _IEEE Spectrum_ (16 October 2007) — first-hand account of the 1975 prototype, the demonstration, and the internal reception.],
+    [S. Sasson, "We Had No Idea," Kodak corporate blog, _Kodak: Plugged In_ (2007) — first-hand account of the 1975 prototype, the demonstration, and the internal reception.],
     [H. C. Lucas Jr. & J. M. Goh, "Disruptive technology: How Kodak missed the digital photography revolution," _Journal of Strategic Information Systems_ 18(1):46–55 (March 2009).],
     [Eastman Kodak Company, Voluntary Petition for Chapter 11 Reorganization, U.S. Bankruptcy Court, Southern District of New York, Case No. 12-10202 (19 January 2012).],
     [A. R. Sorkin & M. J. de la Merced, "Eastman Kodak Files for Bankruptcy," _The New York Times_ DealBook (19 January 2012).],
@@ -401,10 +390,9 @@
     organizational-iteration claim concrete: 2.2 (run the cycle), 2.3
     (transfer the cycle to the high-stakes business decision), and 2.4
     (sustain adoption against the gravitational pull of the legacy
-    P&L) all sat un-owned for a generation. Pair directly with
-    BlackBerry (the next case) for the contemporary
-    consumer-electronics analog, and with Fujifilm as the in-category
-    counter-iteration that ran the same signal differently.
+    P&L) all sat un-owned for a generation. Pair with Fujifilm as the
+    in-category counter-iteration that ran the same signal
+    differently.
   ],
   literature-items: (
     [Lucas & Goh (2009), _Journal of Strategic Information Systems_],
@@ -621,9 +609,9 @@
   year: "2003",
   domains-list: ("energy",),
   modes-code: "HK",
-  impact: "50 million people without power across eight U.S. states and Ontario; $6B+ economic loss; FERC Order 693 followed",
+  impact: "50 million people without power across eight U.S. states and Ontario; $4–10B U.S. economic cost; FERC Order 693 followed",
   diagram: dgm.dgm-timeline(
-    (("tree contact", "3:05"), ("line trips", "—"), ("alarm fails", "silent"), ("operator unaware", "1 hour"), ("cascade", "4:11")),
+    (("tree contact", "3:05"), ("line trips", "—"), ("alarm fails", "2:14 — silent"), ("operator unaware", "51 min"), ("cascade", "4:11")),
     emphasis: 2,
     caption: "Northeast Blackout — silent alarm failure absorbed the operator's awareness",
   ),
@@ -631,14 +619,12 @@
   summary: [
     On 14 August 2003 a high-voltage transmission line in Ohio sagged into a
     tree and tripped — an event the grid should have absorbed. But
-    FirstEnergy's control-room alarm system had been silently failing for
-    over an hour, so operators did not know the line was gone. Further lines
+    FirstEnergy's control-room alarm system had failed silently just after 14:14, so operators did not know the line was gone. Further lines
     tripped, and a cascade swept across the Eastern Interconnection; within
     minutes 50 million people across eight U.S. states and Ontario lost
-    power, at a cost above \$6 billion. The U.S.-Canada task force found
+    power, at a U.S. cost the task force put at \$4 to \$10 billion. It found
     FirstEnergy lacked situational awareness, its alarm system had failed
-    without notice, vegetation management was poor, and the regional
-    coordinator could not intervene. The reforms made reliability standards
+    without notice, vegetation management was poor, and the reliability organizations gave no effective real-time diagnostics. The reforms made reliability standards
     mandatory and enforceable (FERC Order 693). The gap sat at the
     automation-operator boundary: a silent failure left operators blind.
   ],
@@ -648,8 +634,7 @@
       The Eastern Interconnection is built to ride through the loss of a
       single transmission line, and control rooms watch the grid through
       software and alarms. FirstEnergy, the Ohio utility at the center of the
-      story, ran a control room whose alarm system had — unknown to anyone —
-      been silently failing for over an hour.#cn() The interconnection's
+      story, ran a control room whose alarm system had — unknown to anyone — failed just after 14:14 and was never restored.#cn() The interconnection's
       single-line resilience assumes the operators can see which line is gone;
       a silent alarm broke that assumption at its root, leaving a grid
       designed to tolerate one fault blind to the fault it was tolerating.
@@ -661,20 +646,15 @@
       did not take the corrective steps that would have contained it. Further
       lines tripped and a cascade swept across the interconnection; within
       minutes 50 million people across eight states and Ontario lost power,
-      at a cost above \$6 billion.#cn() The first trip was the routine
+      at a U.S. cost estimated at \$4 to \$10 billion.#cn() The first trip was the routine
       single-line loss the grid was built to absorb; what turned it into a
       cascade was not the tree but the hour in which the operators acted on a
       picture of the grid that no longer matched the grid.
     ],
     // -- The Investigation --
     [
-      The U.S.-Canada Power System Outage Task Force found FirstEnergy
-      operators "did not have adequate situational awareness," that the alarm
-      system had failed without notice, that vegetation management was
-      inadequate, and that the regional reliability coordinator lacked the
-      authority and information to intervene.#cn() The reforms produced FERC
-      Order 693, which for the first time made compliance with reliability
-      standards mandatory and enforceable rather than voluntary.#cn() Making
+      The U.S.-Canada Power System Outage Task Force named "inadequate situational awareness at FirstEnergy" as a cause — "FE did not recognize or understand the deteriorating condition of its system" — along with FE's failure to manage tree growth and the reliability organizations' failure to provide effective real-time diagnostic support.#cn() The reforms produced FERC
+      Order 693, which approved 83 NERC standards as mandatory and enforceable under the authority Congress created in the Energy Policy Act of 2005.#cn() Making
       the standards mandatory addressed the deeper finding that a voluntary
       regime had let vegetation management and operator awareness drift: when
       compliance is optional, the practices that prevent a cascade are exactly
@@ -709,19 +689,19 @@
   beats: (
     "Eastern Interconnection rides through single-line loss; FirstEnergy's alarm system was silently failing for an hour",
     "An Ohio line sagged into a tree; silent alarms left operators blind; cascade blacked out fifty million",
-    "Task Force found inadequate situational awareness, vegetation lapses, weak coordinator authority; FERC Order 693 followed",
+    "Task Force found inadequate situational awareness, vegetation lapses, no effective real-time diagnostic support; FERC Order 693 followed",
     "Missing capability was the meta-monitor; silence is indistinguishable from a healthy, quiet grid",
     "New mandatory reliability regime backed by audits and penalties; reliability is a deliverable, not best practice",
   ),
   references: (
     [U.S.-Canada Power System Outage Task Force, _Final Report on the August 14, 2003 Blackout in the United States and Canada_ (2004) — the tree contact, the silent alarm, and the cascade.],
     [Task Force (2004) — 50 million people affected across eight states and Ontario; the minute-by-minute sequence.],
-    [Task Force (2004) — FirstEnergy "did not have adequate situational awareness," plus the vegetation-management and reliability-coordinator findings (quoted).],
+    [Task Force (2004), Causes Groups 1–4 — "inadequate situational awareness at FirstEnergy," FE's failure to manage tree growth, and the reliability organizations' failure to provide effective real-time diagnostic support (quoted).],
     [FERC Order No. 693, _Mandatory Reliability Standards for the Bulk-Power System_ (2007) — enforceable standards.],
     [North American Electric Reliability Council reports (2004) and the creation of the Electric Reliability Organization.],
     [M. R. Endsley (1995), situation-awareness theory — the human-factors frame for silent-automation failure.],
   ),
-  quote: [FirstEnergy ... did not have adequate situational awareness of conditions on its system.],
+  quote: [Inadequate situational awareness at FirstEnergy. FE did not recognize or understand the deteriorating condition of its system.],
   quote-source: "U.S.-Canada Power System Outage Task Force, Final Report on the August 14 2003 Blackout, April 2004",
   le-insight: [
     The 2003 blackout is the canonical case for silent automation
@@ -774,24 +754,21 @@
   year: "2008 – 2023",
   domains-list: ("industrial",),
   modes-code: "DG",
-  impact: "More than 30 deaths and hundreds of injuries linked to inflator ruptures; largest automotive recall in history",
+  impact: "28 U.S. deaths confirmed by NHTSA and at least 400 U.S. injuries alleged from inflator ruptures; largest automotive recall in history",
   diagram: dgm.dgm-stat(
-    "100M+",
-    "inflators recalled · 19 automakers",
-    micro: "the desiccant competitors used was the designed-out capability",
+    "67M", "inflators recalled in the U.S. · 19 automakers",
+    micro: "the desiccant Takata added only later was the designed-out capability",
     caption: "Takata — the largest automotive recall on record",
   ),
   summary: [
     Takata built its airbag inflators around ammonium nitrate — cheap and
-    energetic but unstable, and used by almost no one else without a
-    moisture-absorbing desiccant. Takata's inflators omitted the desiccant.
+    energetic but unstable, and used by no other major inflator maker — rivals built on guanidine nitrate. Takata's inflators carried no desiccant.
     Over years of heat and humidity the propellant degraded and could rupture
     the metal housing on deployment, spraying shrapnel at the driver; more
     than two dozen deaths and hundreds of injuries followed. Takata's own
     tests had shown the ruptures, but it reported them as isolated anomalies
     and, in places, falsified data; in 2017 it pleaded guilty to wire fraud,
-    paid roughly \$1 billion, and went bankrupt. The recall — over 100 million
-    inflators across 19 automakers — is the largest in automotive history.
+    paid roughly \$1 billion, and went bankrupt. The recall — some 67 million inflators across 19 automakers in the U.S. alone — is the largest in automotive history.
     Two capabilities were designed out: the desiccant, and the independent
     verification regulators never had.
   ],
@@ -804,9 +781,7 @@
       and climates a car will see. To cut cost, Takata built its inflators
       around ammonium nitrate — cheap and energetic but notoriously unstable,
       shifting crystalline structure and absorbing moisture as temperature
-      cycles day after day. The few competitors who used it at all added a
-      desiccant to keep it dry over the life of the car; Takata's inflators,
-      for years, shipped with none.#cn()
+      cycles day after day. Its competitors did not use ammonium nitrate at all, building on guanidine nitrate instead; Takata added a drying desiccant only to later inflator versions, and for years shipped with none.#cn()
     ],
     // -- What Happened --
     [
@@ -814,8 +789,7 @@
       charge can burn too fast, generating more pressure than the housing was
       built to contain. A firing inflator could then rupture its own metal
       housing and spray shrapnel into the cabin — turning the device meant to
-      save a life into a fragmentation hazard aimed at the driver. More than
-      two dozen deaths worldwide and hundreds of injuries followed. The recall
+      save a life into a fragmentation hazard aimed at the driver. NHTSA has confirmed 28 deaths in the United States, and at least 400 injuries are alleged. The recall
       grew to more than a hundred million inflators across some nineteen
       automakers — the largest in automotive history — and Takata went
       bankrupt; the toll keeps rising as unrepaired vehicles stay on the road
@@ -836,9 +810,7 @@
     // -- The Capability Gap --
     [
       Two capabilities were designed out, and the second matters as much as
-      the first. The product capability was the desiccant — a stabilizing
-      component competitors used, omitted to save cost, in plain view of
-      anyone comparing designs side by side. The system capability was
+      the first. The product capability was the desiccant — the stabilizing component Takata itself later added, omitted to save cost, in plain view of anyone comparing the two generations side by side. The system capability was
       independent verification: the recall regime treated the manufacturer's
       representations about its own safety data as authoritative, with no
       independent pipeline to test inflator behavior across the fleet as it
@@ -852,9 +824,7 @@
       the company that built the inflators ceased to exist — concrete proof
       that a designed-out capability can outlive the firm that removed it and
       become someone else's burden. A decade on, the burden persists: the
-      oldest, most dangerous "Alpha" inflators have been escalated to urgent
-      "Do Not Drive" warnings (Stellantis alone covering some 225,000
-      vehicles in 2024–2025), and roughly 4.8 million Takata recalls remained
+      oldest, most dangerous "Alpha" inflators have been escalated to urgent "Do Not Drive" warnings, and in February 2026 FCA extended one to all 225,000 of its unrepaired vehicles; roughly 4.8 million Takata recalls remained
       unrepaired as of mid-2026 even as completion of the Alpha inflators
       passed 99 percent. The episode pushed regulators toward more
       aggressive, coordinated recall management that does not leave pace to
@@ -866,7 +836,7 @@
     ],
   ),
   beats: (
-    "Inflators built around cheap, unstable ammonium nitrate without the desiccant competitors added.",
+    "Inflators built around cheap, unstable ammonium nitrate without the desiccant Takata later added.",
     "Heat and humidity degraded the propellant; ruptures sprayed shrapnel and killed drivers.",
     "Takata reported ruptures as isolated anomalies, manipulated test data, and pleaded guilty to fraud.",
     "Designed-out capabilities were the desiccant and the regulator's independent verification pipeline.",
@@ -917,7 +887,7 @@
   approaches: (
     during: (
       [Qualify a safety-critical material against the full service life and climate range it will see, not just its as-delivered state, so slow degradation cannot turn a safe part lethal years later.],
-      [When choosing a cheaper, less stable material, require the stabilizing measure competitors use — here a desiccant — rather than omitting it to save cost.],
+      [When choosing a cheaper, less stable material, require the stabilizing measure the material needs — here a desiccant — rather than omitting it to save cost.],
       [Design inflator testing to detect the rupture failure mode as a class across temperature and humidity cycling, so it cannot be dismissed as an isolated anomaly.],
     ),
     after: (
@@ -941,7 +911,7 @@
   year: "2011 – 2016",
   domains-list: ("tech", "gov"),
   modes-code: "GN",
-  impact: "~3.5 million unauthorized accounts opened; ~$3B in penalties; CEO resigned; the Federal Reserve capped the bank's assets",
+  impact: "~3.5 million potentially unauthorized accounts identified; ~$3B in penalties; CEO resigned; the Federal Reserve capped the bank's assets",
   diagram: dgm.dgm-stat(
     "3.5M",
     "unauthorized accounts",
@@ -950,8 +920,7 @@
   ),
   kind: "failure",
   summary: [
-    To meet aggressive sales quotas, Wells Fargo employees opened roughly
-    3.5 million unauthorized customer accounts over years. The behavior was
+    To meet aggressive sales quotas, Wells Fargo employees opened accounts customers had not asked for; a third-party review put the total at roughly 3.5 million potentially unauthorized accounts from January 2009 to September 2016. The behavior was
     widespread and visible to internal risk and compliance functions, but the
     bank's response was to fire individual "bad apples" while leaving the
     incentive structure intact — and that structure was the actual cause:
@@ -981,8 +950,7 @@
     ],
     // -- What Happened --
     [
-      Unable to meet the quotas honestly, employees opened roughly 3.5
-      million unauthorized accounts in customers' names — the rational
+      Unable to meet the quotas honestly, employees opened roughly 3.5 million potentially unauthorized accounts in customers' names — the rational
       response to a target most could not reach by legitimate means.
       Practices documented by investigators included opening checking,
       savings, and credit-card accounts without customer consent,
@@ -992,8 +960,7 @@
       visible to internal risk and compliance functions for years
       before the 2013 _Los Angeles Times_ reporting made it public;
       the institutional response was to discipline individual employees
-      as bad apples — Wells Fargo terminated more than 5,300 employees
-      between 2011 and 2016 — while leaving the incentive structure
+      as bad apples — Wells Fargo terminated roughly 5,300 employees between 2011 and 2016 — while leaving the incentive structure
       intact, fixing the symptom and preserving the cause.#cn()
     ],
     // -- The Investigation --
@@ -1129,10 +1096,7 @@
     Volkswagen engineered a "defeat device" into its diesel emissions
     software: code that detected when a car was on a regulatory test bench
     and switched on full emissions controls only then. On the road the
-    controls were largely disabled, producing nitrogen-oxide emissions up to
-    forty times the legal limit, across roughly 11 million vehicles for
-    years. The deception was uncovered not by regulators but by a small West
-    Virginia university team comparing real-world to lab measurements.
+    controls were largely disabled, producing nitrogen-oxide emissions up to forty times the U.S. limit on the cars EPA tested, across roughly 11 million vehicles worldwide for years. A small West Virginia university team measuring real-world emissions found the anomaly; fifteen months of CARB and EPA pressure turned it into VW's admission.
     Internal documents showed the defeat device was an institutional
     decision — a deliberate response to a standard VW's engineers did not
     believe they could meet within cost — not a rogue act. VW pleaded guilty to a USD 4.3 billion criminal and civil settlement with
@@ -1159,17 +1123,13 @@
       vehicle was on a regulatory test bench — by its steering, speed, and
       duration patterns, the telltale signature of a lab rather than a road —
       and switched on full emissions controls only during the test. On the
-      road the controls were largely disabled, producing emissions up to forty
-      times the legal limit, across roughly 11 million vehicles for years, so
+      road the controls were largely disabled, producing emissions up to forty times the U.S. limit on the vehicles EPA tested, across roughly 11 million vehicles worldwide for years, so
       the pollution the standard existed to prevent flowed freely everywhere
       except where it was measured.#cn()
     ],
     // -- The Investigation --
     [
-      The deception was uncovered not by the regulator but by a small
-      university research team in West Virginia comparing real-world
-      emissions to lab results — the gap between road and bench being exactly
-      what the regulator's own test could never reveal.#cn() Internal
+      A small university research team in West Virginia, testing for the ICCT, found road emissions far above lab results and reported the gap to CARB and EPA in May 2014; VW admitted the defeat device only in September 2015, after fifteen months of regulator pressure.#cn() Internal
       documents then showed the defeat device had been authorized inside VW's
       engineering hierarchy as a deliberate institutional response to a
       standard the team could not meet — not the work of a rogue engineer, but
@@ -1208,7 +1168,7 @@
   beats: (
     "VW promised clean diesel meeting nitrogen-oxide limits its engineers did not believe they could deliver",
     "Defeat-device software detected the test bench and enabled controls only there across about eleven million vehicles",
-    "A West Virginia team comparing road to lab emissions exposed the cheat; documents showed institutional authorization",
+    "A West Virginia team found the road-lab gap; fifteen months of CARB and EPA pressure extracted VW's admission",
     "The regulator's test ran in a regime the vehicle could detect, inviting the gaming it was meant to catch",
     "VW paid more than thirty billion in penalties; the EU introduced real-world driving emissions testing",
   ),
@@ -1444,8 +1404,8 @@
   summary: [
     A faulty ignition switch in several GM compact cars (the Chevrolet
     Cobalt, Saturn Ion) could slip from "run" to "accessory" while driving,
-    cutting power steering and brakes and — fatally — disarming the airbags.
-    GM engineers identified it in 2002. In 2006 an engineer approved a
+    cutting power steering and brake assist and — fatally — disarming the airbags.
+    GM approved the switch for production in 2002 below its own torque spec. In 2006 an engineer approved a
     redesigned switch but did not change its part number, so the fix
     propagated as neither a revision nor a recall, and defective cars kept
     selling. The recall came only in 2014 — about 2.6 million vehicles, with
@@ -1462,9 +1422,7 @@
       their position, so a jostle, a bump in the road, or a heavy keychain
       could rotate the switch out of "run" while driving. That cut power
       steering and braking and, fatally, disarmed the airbags so they would
-      not deploy in the very crash that loss of control often produced. GM
-      engineers identified the problem in 2002, during development, before the
-      cars ever reached customers.#cn()
+      not deploy in the very crash that loss of control often produced. GM approved the switch for production in 2002 below its own torque spec, and when an engineer stalled a pre-production Cobalt in 2004 the company classified the fault as a convenience issue, not a safety one.#cn()
     ],
     // -- What Happened --
     [
@@ -1489,8 +1447,7 @@
       and then no one acts, and the "GM salute," arms crossed and each person
       pointing elsewhere — and a fundamental failure to use the escalation
       processes the company already had on the books.#cn() In 2015 GM paid a
-      \$900 million federal forfeiture for concealing the defect; total
-      penalties and settlements ultimately exceeded \$2.6 billion.#cn()
+      \$900 million federal forfeiture for concealing the defect; the compensation fund alone offered \$594.5 million on 399 approved claims.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -1603,15 +1560,12 @@
     accounts off its former parent Lloyds' systems onto a new platform from
     its current owner, Sabadell, over a single weekend. When services came
     back online, nearly every component failed: 1.9 million customers were
-    locked out, some saw strangers' accounts, mortgages vanished, payments
+    locked out, 440 saw a linked relative's accounts, mortgages vanished, payments
     bounced. Recovery took months and cost over £330 million; the CEO
     resigned and the regulator fined the bank. The independent review found
     the platform had been tested under conditions that did not approximate
     real load, certified ready by a process that did not challenge the
-    certification, and pushed live against technical recommendations that it
-    was not ready. TSB is the financial-sector analog of Healthcare.gov: a
-    migration shipped without adequate testing because schedule pressure
-    overrode the technical signal.
+    certification, and pushed live on readiness assurances that were statements of expectation rather than of proven fact. TSB is the financial-sector analog of Healthcare.gov: a migration shipped without adequate testing because the assurance process confirmed readiness instead of testing it.
   ],
   sections: (
     // -- Background --
@@ -1629,8 +1583,7 @@
     [
       When customer-facing services came back online that Sunday evening in
       April 2018, nearly every component of the new platform had problems.
-      About 1.9 million customers were locked out; some saw other people's
-      accounts, mortgages disappeared, and card payments failed. The recovery
+      About 1.9 million customers were locked out; 440 saw the accounts of a closely linked relative, mortgages disappeared, and card payments failed. The recovery
       took months, cost more than £330 million in compensation and
       remediation, and the chief executive resigned.#cn() That nearly every
       component failed at once points away from a single defect and toward a
@@ -1646,19 +1599,11 @@
       not adequately challenge the certification — a certification that
       confirmed readiness rather than interrogating it, which is how a system
       that would fail under real conditions could be signed off as fit.#cn()
-      Decisively, the
-      executive decision to proceed had been taken against technical
-      recommendations that the platform was not ready; the Financial Conduct
-      Authority later fined TSB, treating the override of a known technical
-      objection as a failure of governance and not merely of engineering.#cn()
+      Decisively, the assurances the board acted on were forward-looking statements of intention rather than statements of completed fact, and no independent adviser was asked to test them; the Financial Conduct Authority and the Prudential Regulation Authority later fined TSB £48.65 million, treating the unchallenged assurance as a failure of governance and not merely of engineering.#cn()
     ],
     // -- The Capability Gap --
     [
-      The technical signal existed — the platform was not ready, and people
-      knew it. But the decision authority sat at the executive layer, where
-      the signal arrived weakened by passage through intermediate layers, and
-      the institutional architecture gave the technical layer no way to halt
-      the migration. The missing capability was not testing knowledge but a
+      The signals existed — testing had slipped, three of the programme's own guiding principles had been abandoned, and attestations were still incomplete on the morning of the decision. But they reached the board as assurances rather than as objections, and the institutional architecture gave no one the standing to convert a slipped test into a halt. The missing capability was not testing knowledge but a
       governance structure in which a "not ready" could stop a scheduled
       go-live. Knowing a system is unready is worthless if the knowledge
       cannot reach the decision with its force intact and the authority to
@@ -1680,26 +1625,23 @@
   beats: (
     "TSB needed to migrate five million accounts off Lloyds onto Sabadell platform in one weekend",
     "Nearly every component failed at relaunch; 1.9 million customers locked out, £330M cost, CEO resigned",
-    "Slaughter and May found unrealistic load testing, unchallenged readiness certification, override of technical advice",
-    "Technical signal existed but had no authority; governance let executive schedule overrule a known not-ready",
-    "TSB rebuilt testing and migration governance; FCA penalized the override of technical objection",
+    "Slaughter and May found reduced-scope load testing, unchallenged readiness certification, and no independent advice to the board",
+    "Slipped testing reached the board as attestations of readiness; governance had no mechanism to convert an incomplete test into a halt",
+    "TSB rebuilt testing and migration governance; FCA and PRA fined TSB £48.65m for governance and outsourcing failings",
   ),
   references: (
     [Slaughter and May, _Independent Review of the TSB Migration_ (2019) — the single-weekend cutover and the testing failures.],
     [Slaughter and May (2019) and FCA materials — ~1.9 million customers locked out, £330M+ in costs, and the CEO's resignation.],
     [Slaughter and May (2019) — inadequate load testing and an unchallenged readiness certification.],
-    [Financial Conduct Authority, Final Notice on TSB Bank (2022) — the regulatory penalty and proceeding against technical advice.],
+    [Financial Conduct Authority, Final Notice on TSB Bank plc (20 December 2022) â the £29.75m penalty (with the PRA's £18.9m) for planning, testing, risk-management and outsourcing failings.],
     [House of Commons Treasury Committee, report on the TSB IT migration (2018).],
     [Cf. Healthcare.gov (Case 180) and the migration-safety literature.],
   ),
-  quote: [The migration proceeded notwithstanding clear signals that the platform was not ready.],
-  quote-source: "Paraphrasing the Slaughter and May Independent Review of the TSB migration, 2019",
+  quote: [Inadequacies in the safeguards meant TSB went live with the platform before it was ready to do so.],
+  quote-source: "Paraphrasing the FCA Final Notice to TSB Bank plc, 20 December 2022, paragraph 4.154",
   le-insight: [
     TSB is the canonical case for schedule pressure overriding
-    technical signal in a regulated industry. The technical signal
-    existed. The decision authority was at the executive layer where
-    the signal arrived weakened by passage through multiple intermediate
-    layers. The institutional architecture did not allow the technical
+    technical signal in a regulated industry. The technical shortfalls existed. They reached the decision layer converted into attestations of readiness, and nothing in the governance made the conversion visible. The institutional architecture did not allow the technical
     layer to halt the migration.
   ],
   lens-approach: [
@@ -1744,9 +1686,9 @@
   year: "2017",
   domains-list: ("tech", "gov"),
   modes-code: "GK",
-  impact: "147 million Americans' personal data exposed; CEO resigned; ~$700M settlement; foundational U.S. data-breach case",
+  impact: "147 million Americans' personal data exposed; CEO resigned; settlement of at least $575M, up to $700M; foundational U.S. data-breach case",
   diagram: dgm.dgm-cascade(
-    ("patch unapplied (2 months)", "asset inventory incomplete", "monitoring inadequate", "response delayed (75 days)"),
+    ("patch unapplied (2 months)", "asset inventory incomplete", "monitoring inadequate", "disclosure delayed (six weeks)"),
     outcome: "no single failure caused the breach; the combination did",
     caption: "Equifax — cumulative inadequacy in routine cybersecurity work",
   ),
@@ -1759,9 +1701,8 @@
     million Americans, and Equifax did not disclose the breach until
     September. A Senate investigation found systematically inadequate
     patching, an incomplete asset inventory (so the company did not know
-    which systems needed the fix), and an incident-response function treated
-    for years as a cost center. The CEO resigned and Equifax settled for
-    about \$700 million. No single failure caused the breach; cumulative
+    which systems needed the fix), and a 2015 internal audit whose warnings on all of it went unremediated for two years. The CEO resigned and Equifax settled for
+    at least \$575 million. No single failure caused the breach; cumulative
     inadequacy across routine cybersecurity work did.
   ],
   sections: (
@@ -1792,10 +1733,7 @@
       Equifax's patching practices systematically inadequate and the company
       lacking "a comprehensive IT asset inventory" — so it could not reliably
       know which systems needed the patch, leaving the security team's warning
-      with no map to act on.#cn() Monitoring was weak, response delayed, and the
-      incident-response architecture had been treated for years as a cost
-      center rather than a capability worth funding; the CEO resigned and
-      Equifax settled for roughly \$700 million.#cn()
+      with no map to act on.#cn() Monitoring was weak — an SSL certificate on the dispute portal had been expired since November 2016, so the traffic went uninspected — and a 2015 audit had named every one of these gaps; the CEO resigned and Equifax settled for at least \$575 million, rising to \$700 million if claims required it.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -1806,8 +1744,7 @@
       single open door. The capability gap was the management of unglamorous,
       universally-agreed-necessary maintenance — exactly the work easy to
       defer because deferring it usually costs nothing, until the one time it
-      costs everything, and a function starved as a cost center has no slack
-      left on that day.#cn()
+      costs everything, and a company that has already been told where the gaps are still has to close them.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -1825,14 +1762,14 @@
     "Equifax held identity data on most US adults; security flagged an Apache Struts patch to IT",
     "Unapplied patch let attackers exfiltrate 147M Americans' data over 2.5 months",
     "Senate subcommittee found systematically inadequate patching and no comprehensive IT asset inventory",
-    "Routine work — patching, inventory, monitoring, response — each below standard, starved as a cost center",
-    "$700M settlement funded compensation; patching, inventory, and disclosure timelines rose on the agenda",
+    "Routine work — patching, inventory, monitoring, response — each below standard and each named in a 2015 audit",
+    "Settlement of at least \$575M funded compensation; patching, inventory, and disclosure timelines rose on the agenda",
   ),
   references: (
     [U.S. Senate Permanent Subcommittee on Investigations, _How Equifax Neglected Cybersecurity and Suffered a Devastating Data Breach_ (2019) — the unpatched Apache Struts vulnerability.],
     [The breach record — 147 million affected, exploitation from May 2017, public disclosure in September 2017.],
     [Senate PSI (2019) — "Equifax lacked a comprehensive IT asset inventory" (quoted).],
-    [U.S. FTC / CFPB / state settlement (~\$700 million, 2019) and the CEO's resignation.],
+    [U.S. FTC / CFPB / state settlement (at least \$575 million, up to \$700 million, 2019) and the CEO's resignation.],
     [U.S. GAO, _Actions Taken by Equifax and Federal Agencies in Response to the 2017 Breach_, GAO-18-559 (2018).],
     [Apache Struts CVE-2017-5638 advisory.],
   ),
@@ -1853,8 +1790,7 @@
     systems" but the engineered escalation deliverable: a flagged,
     agreed-upon fix has to be wired to an owner who can map it to
     every affected asset and is funded to close it before the gap
-    costs everything. LEN 7 carries the institutional half — routine
-    defenses run as a cost center have no slack on the bad day.
+    costs everything. LEN 7 carries the institutional half — an audit that names the gap does nothing unless someone is made to close it.
   ],
   induced-anchor: "6.2",
   lens-anchor: "D5/PT3",
@@ -1871,7 +1807,7 @@
   ),
   approaches: (
     during: (
-      [Fund routine security maintenance — patching, monitoring, response — as a capability, not a cost center, so the unglamorous defenses have slack on the bad day.],
+      [Close audit findings on routine security maintenance — patching, monitoring, response — on a clock with a named owner, so a known gap cannot sit open for two years.],
       [Build and maintain a comprehensive asset inventory so a known vulnerability can be mapped to every system that runs it.],
       [Wire the security team's warnings to an owner with the authority and resources to apply a flagged patch promptly.],
     ),

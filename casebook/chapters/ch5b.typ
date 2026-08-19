@@ -19,11 +19,11 @@
 #case(
   number: 154,
   slug: "inl-turbine-control-upgrade-low-burden",
-  title: "INL Turbine-Control Upgrade — Low-Burden Cutover as a Human-Factors Finding",
+  title: "INL Turbine-Control Upgrade — Verification and Validation as the Cutover Deliverable",
   year: "2014",
   domains-list: ("nuclear power", "control-room modernization", "human factors"),
   modes-code: "GKH",
-  impact: "An INL-affiliated study reported that operators were able to use the new digital turbine-control system without extensive additional training or rewriting of operating procedures — i.e., the human-factors verification-and-validation evidence supported a low-burden cutover from the legacy analog control",
+  impact: "An INL paper set out the NUREG-0711 human-factors process for a paired plant-process-computer and turbine-control-system upgrade — iterative usability testing, integrated system validation in a full-scope training simulator, a stand-alone operator training program built with the training organization, and validation scenarios reviewed by trainers and procedure writers to confirm the operating procedures need no modification",
   kind: "intervention",
   scale: "small",
   evidence-source: "program-report",
@@ -39,19 +39,13 @@
     Laboratory's Light Water Reactor Sustainability (LWRS) program
     has produced a body of technical reports and conference papers
     documenting the verification-and-validation work behind specific
-    upgrades. The case here is a specific finding: in a study of
-    turbine-control-system upgrade work, operators were able to use
-    the new digital system without extensive additional training or
-    rewriting of operating procedures. The human-factors V\&V
-    evidence supported a low-burden cutover. That finding is the
+    upgrades. The case here is a specific method: for a paired plant-process-computer and turbine-control-system upgrade, the operators are trained on the new interfaces through a stand-alone program built with the training organization, and the validation scenarios are reviewed by trainers and procedure writers to confirm the operating procedures need no modification. The retraining is planned into the cutover, not avoided by it. That specification is the
     small-tier complement to the big-tier LWRS program case the
     corpus also tracks: the program produces specific design-V\&V
     case studies, not only program-level claims. The evidence base
     is INL technical reporting and OSTI-hosted conference papers,
     not independent academic evaluation; the tier flag is rendered
-    under the title. Future validation will continue on whether the
-    low-retraining finding generalizes beyond the studied subsystem
-    and holds at multi-plant scale.
+    under the title. The paper reports no outcome: it states the process was then being implemented at a US utility with four plants slated for modernization, with lessons learned to be published later. Future validation ongoing.
   ],
   sections: (
     [
@@ -68,15 +62,7 @@
       upgrade.#cn()
     ],
     [
-      The relevant finding the case rests on is that operators
-      were able to use the new digital turbine-control system
-      without extensive additional training or rewriting of
-      operating procedures. That is a substantive
-      human-factors-V\&V claim: the cutover did not impose a
-      retraining burden on the operator workforce that the
-      schedule and the operational logic could not absorb. The
-      study is a per-subsystem evaluation rather than a
-      whole-control-room finding, and the LWRS program treats
+      The relevant specification the case rests on is that operators are trained on the new digital interfaces through a stand-alone program developed with the training organization, and that the validation scenarios are reviewed by trainers and procedure writers to ensure the operating procedures do not require modification. That is the substantive human-factors-V\&V claim: retraining is a named deliverable of the cutover, and the procedure set is what the validation is asked to hold constant. The paper is a per-subsystem process account rather than a whole-control-room finding, and the LWRS program treats
       these small-tier evaluations as the building blocks of the
       larger fleet-modernization safety case.#cn()
     ],
@@ -96,9 +82,7 @@
     [
       The evidence-tier flag is load-bearing. The study sits in
       INL technical reporting and OSTI-hosted conference papers,
-      not in independent academic evaluation. The
-      low-burden-cutover finding is conditional on the specific
-      subsystem, plant, and operator population studied; whether
+      not in independent academic evaluation. The paper reports a process rather than an outcome, conditional on the specific subsystems, plant, and operator population; whether
       the finding generalizes to other subsystems in the same
       plant, to other plants in the fleet, or to other digital
       control products is the open question that the LWRS program
@@ -122,7 +106,7 @@
   beats: (
     "Nuclear control-room modernization — safety case must survive the analog-to-digital transition",
     "INL LWRS program produces per-subsystem human-factors V&V studies as small-tier deliverables",
-    "Turbine-control upgrade study reports low-burden cutover — no extensive retraining or procedure rewrite",
+    "PPC and turbine-control upgrade: stand-alone operator training program, scenarios reviewed to confirm procedures need no modification",
     "Small-tier per-subsystem evidence is the building block of the program-level fleet-modernization claim",
     "Evidence tier: INL technical reporting + OSTI conference papers; generalization to other subsystems open",
   ),
@@ -139,7 +123,7 @@
     ),
   ),
   references: (
-    [Ronald L. Boring (2014), "Human Factors Design, Verification, and Validation for Two Types of Control Room Upgrades at a Nuclear Power Plant," Proceedings of the Human Factors and Ergonomics Society Annual Meeting (HFES 2014), pp. 2295–2299 (ResearchGate publication 271728006).],
+    [Ronald L. Boring (2014), "Human Factors Design, Verification, and Validation for Two Types of Control Room Upgrades at a Nuclear Power Plant," Proceedings of the Human Factors and Ergonomics Society Annual Meeting 58(1), pp. 2295–2299, doi:10.1177/1541931214581478 — the NUREG-0711 process for the paired plant-process-computer and turbine-control-system upgrade.],
     [Idaho National Laboratory, Light Water Reactor Sustainability Program reports on control-room modernization — series available via OSTI.],
     [Nuclear Regulatory Commission (NUREG-0711), "Human Factors Engineering Program Review Model" — the regulatory framework the V&V deliverables are produced against.],
     [O'Hara et al. (2008), "Human Factors Considerations with Respect to Emerging Technology in Nuclear Power Plants," NUREG/CR-6947 — peer-adjacent framing.],
@@ -147,10 +131,7 @@
   quote: [The program-level claim cannot rest on un-rolled-up small-tier evidence. The per-subsystem V&V is the building block of the modernization safety case.],
   quote-source: "Editors' synthesis of INL LWRS reporting.",
   le-insight: [
-    The INL turbine-control finding is a small-tier C7
-    verification-as-deliverable case inside the LWRS
-    nuclear-modernization program: the human-factors V\&V
-    evidence supports a low-burden cutover. Evidence is INL
+    The INL turbine-control paper is a small-tier C7 verification-as-deliverable case inside the LWRS nuclear-modernization program: the human-factors V\&V process carries the cutover, training included. Evidence is INL
     technical reporting and OSTI conference papers, not
     independent academic evaluation; the generalization beyond
     the studied subsystem is the open question. Future
@@ -189,15 +170,16 @@
   year: "1950s – present",
   domains-list: ("industrial",),
   modes-code: "NG",
-  impact: "Front-line authority to stop the line resolves most defects quickly at the source; defect-propagation cost minimized; the system adopted globally",
+  impact: "Front-line signalling authority surfaces defects at the source within the work cycle; most activations never stop the line; the system exported globally with mixed fidelity",
   diagram: dgm.dgm-andon,
   kind: "intervention",
   summary: [
-    The andon cord lets any assembly-line worker signal a defect and — if it
-    can't be resolved within the work cycle — stop Toyota's entire production
-    line, handing the lowest-ranking person on the floor the power to halt
-    operations worth millions per hour. The cord is trivially cheap; the authority it confers is the
-    design. The case is decisive for capability engineering because when
+    The andon cord lets any assembly-line worker signal a defect. Under the
+    fixed-position stop system the line keeps moving: the pull lights the
+    station's andon and calls the team leader, and only a problem still
+    unresolved when the vehicle reaches the end of the work position stops
+    the line. Most activations stop nothing. The cord is trivially cheap;
+    the guaranteed response behind it is the design. The case is decisive for capability engineering because when
     American automakers copied the cord in the 1980s and 1990s, workers
     were too afraid to pull it: the tool was present, the empowerment was
     not. Toyota's system works because it pairs the mechanism with a
@@ -222,15 +204,18 @@
     ],
     // -- The Intervention --
     [
-      As part of the Toyota Production System, Toyota installed the andon
-      cord: a physical pull-cord that lets any worker signal a problem and,
-      if unresolved, stop the entire line. The inversion of authority is
-      the entire point — the cord itself costs almost nothing, while the
-      protected authority it confers on a front-line worker is the actual
-      design. Handing the lowest-ranking person the power to halt operations
-      worth millions per hour deliberately resolves the contradiction the
-      background poses: it puts the authority to stop exactly where the
-      defect is first visible.#cn()
+      Toyota's andon is not a switch that halts a factory. Under the
+      fixed-position stop system, pulling the cord or pressing the button
+      lights the station's andon and calls the team leader; the line keeps
+      moving. If the leader resolves the problem before the vehicle reaches
+      the end of the work position — one takt cycle, on the order of a
+      minute — the signal resets and nothing stops. Only an unresolved
+      problem stops the line, and it stops at the fixed position, so no task
+      is interrupted mid-cycle. The design is deliberate: it removes the two
+      things that suppress reporting — the dread of halting production over a
+      small problem, and the confusion of restarting a half-finished job.
+      What the front-line worker holds is the authority to *summon*, backed
+      by a guaranteed response. The stop is the escalation, not the act.#cn()
     ],
     // -- How It Worked --
     [
@@ -247,15 +232,19 @@
     ],
     // -- The Evidence --
     [
-      The proof of the pairing is negative as well as positive. When
-      American manufacturers copied the andon cord in the 1980s and 1990s,
-      workers were too afraid to pull it; the artifact without the
-      authority produced nothing. At Toyota, where the authority is
-      protected, the great majority of activations are resolved within a
-      minute and the system has been sustained and exported for decades. The
-      natural experiment is unusually clean — the same physical cord
-      produced opposite results across two settings, isolating the protected
-      authority, not the hardware, as the variable that mattered.#cn()
+      The evidence is thinner than the story. Toyota's Georgetown plant is
+      widely reported to log andon activations in the thousands per day
+      against a handful per week at comparable US plants — figures that trace
+      to a 2007 BBC report and a since-removed plant-tour page, not to
+      audited data. NUMMI is the usual proof: GM's Fremont plant closed in
+      1982; the joint venture reopened it in 1984 with approximately 85 percent of the same laid-off UAW workforce and came within reach of Takaoka's quality.
+      But NUMMI changed everything at once — Toyota management, team
+      structure, worker-authored standardized work, a no-layoff commitment,
+      and training trips to Takaoka. No study isolates the cord's marginal
+      contribution, and much of the mechanism narrative traces to Toyota's
+      own account of itself. The claim the record supports is narrow: a
+      reporting channel with a guaranteed, non-punitive response gets used,
+      and one without such a response does not.#cn()
     ],
     // -- What Transferred --
     [
@@ -325,7 +314,15 @@
     ),
   ),
   courses: ("LEN 10", "LEN 2", "LEN 8"),
+  competing-readings: (
+    [The cord is the causal agent — set against the reading that the cord is an interface to a staffed response chain, with team leaders on the floor and resourced to answer within the cycle. On this reading the expensive half is the staffing, and imitation fails on a budget line rather than on values.],
+    [Protected authority is the variable — set against the reading that fixed-position stop is an engineering choice that lowers the cost of speaking up, so the design does the work the empowerment is credited with.],
+    [American imitation failed on culture — set against the reading that it failed on structure, because the copied plants lacked the team-leader ratio and the thin buffers that make a guaranteed response possible. Each reading predicts a different thing to check before a transfer.],
+    [A high pull count signals health — set against the reading that pull counts are an input measure Toyota controls and publishes, with no external audit distinguishing real defect signalling from routine minor calls.],
+  ),
+  scope-limit: [The andon is a local, operational control at the work station; it did not and could not surface the design- and organization-level failures of the 2009–10 recall crisis, which the NASA/NHTSA review traced to pedal and floor-mat defects and which Toyota's own president attributed to growth outrunning capability development.],
   scale: "big",
+  evidence-source: "practitioner",
   induced-anchor: "4.1",
   lens-anchor: "D3/PT3",
   leo-anchor: "LEO-3",
@@ -515,7 +512,7 @@
   year: "2021 – present",
   domains-list: ("tech",),
   modes-code: "TH",
-  impact: "Tens of millions of developers using GitHub Copilot, Cursor, and peers; productivity gains documented; security and correctness implications still being characterized",
+  impact: "Twenty million GitHub Copilot users by mid-2025, plus Cursor and peers; productivity gains documented; security and correctness implications still being characterized",
   diagram: dgm.dgm-compare(
     "short term",
     "more output",
@@ -531,7 +528,7 @@
   summary: [
     AI-augmented coding tools — GitHub Copilot, Cursor, Codeium, and peers
     — represent the largest real-time experiment in human-AI collaboration
-    in this book, with tens of millions of developers using them daily.
+    in this book, with twenty million Copilot users alone by mid-2025.
     Published studies (Peng et al. 2023) document real short-term
     productivity gains; other work (Pearce et al. 2022) finds a substantial
     share of AI-generated completions in security-sensitive settings contain
@@ -549,8 +546,7 @@
     [
       AI coding assistants moved from novelty to infrastructure in a few
       years. GitHub Copilot, Cursor, Codeium, and similar tools now
-      suggest, complete, and generate code for tens of millions of
-      developers daily — the largest real-time experiment in human-AI
+      suggest, complete, and generate code for twenty million Copilot users alone — the largest real-time experiment in human-AI
       collaboration in professional knowledge work to date, conducted not
       in a study design but in the live practice of an entire profession,
       with no control group and no agreed measure of what it is doing to

@@ -23,7 +23,7 @@
   year: "2013",
   domains-list: ("gov",),
   modes-code: "KTG",
-  impact: "~27,000 federal-marketplace enrollments in the first month vs. a 7M first-year target; hundreds of millions in remediation",
+  impact: "~27,000 federal-marketplace enrollments in the first month — 106,185 across all marketplaces — against a 7M first-year exchange projection; $840M obligated by CMS for development through March 2014",
   diagram: dgm.dgm-healthcaregov,
   kind: "failure",
   summary: [
@@ -33,7 +33,7 @@
     target. The people assembled to build it knew insurance
     markets and government programs but not technology product launches; key
     technical roles went unfilled, no office clearly owned the integration
-    (CMS acted as its own systems integrator but lacked the capacity for the role, while CGI reported that no party was performing true integration),
+    (CMS chose to serve as its own systems integrator but never delineated or executed the role, and CGI Federal testified that CMS was the party responsible for end-to-end performance),
     and no end-to-end test was run before launch. The fix-it team that
     rescued the site became the U.S. Digital Service. At root it was a
     capability mismatch at scale: the organization lacked the human
@@ -56,10 +56,7 @@
     // -- What Happened --
     [
       There was no clear division of responsibility among the many government
-      offices involved; CMS believed it was itself serving as the systems
-      integrator — a role it lacked the capacity to perform — while CGI
-      reported that no party was performing true systems integration, so the
-      single most important role on the program was one no party actually held.
+      offices involved; CMS chose to serve as its own systems integrator but, the HHS Inspector General found, did not sufficiently delineate or execute the role — while CGI Federal testified that CMS was the quarterback and the ultimate responsible party for the end-to-end performance of the overall Federal Exchange, a role CMS had never staffed to hold.
       No end-to-end test was run before launch, meaning the assembled pieces
       were never exercised together as a user would exercise them. The site
       went live on 1 October 2013 and immediately collapsed under load it had
@@ -69,8 +66,7 @@
     ],
     // -- The Investigation --
     [
-      Reviews by the GAO and the HHS Inspector General found that no single
-      person had a clear understanding of the project's status, and that the
+      The HHS Inspector General found that HealthCare.gov lacked clear project leadership to give direction and unity of purpose, responsiveness in execution, and a comprehensive view of progress, and that the
       governance chain had no signal that would surface the readiness gap
       before launch. With ownership diffused across offices and no integration
       test to fail, the chain could report progress at every level while the
@@ -103,19 +99,19 @@
   beats: (
     "Federal ACA marketplace built under fixed political deadline by teams lacking consumer-launch expertise",
     "No clear integrator; no end-to-end test; site collapsed serving 27,000 against seven-million target",
-    "GAO and HHS-IG found no one understood project status; governance chain surfaced no readiness signal",
+    "HHS-IG found no clear project leadership and no comprehensive view of progress; GAO found end-to-end testing never occurred before launch",
     "Capability failure wearing a technology costume; missing match of human capability to system requirement",
     "Rescue team became U.S. Digital Service; rare case producing durable institutional reform",
   ),
   references: (
-    [U.S. GAO, Healthcare.gov reports (2014–2016) — the launch, the capability gaps, and the absent end-to-end testing.],
+    [U.S. GAO, _Healthcare.gov: CMS Has Taken Steps to Address Problems, but Needs to Further Implement Systems Development Best Practices_, GAO-15-238 (2015) — "end-to-end testing of Healthcare.gov and its supporting systems did not occur prior to system launch as required."],
     [HHS Office of Inspector General, _Case Study of CMS Management of the Federal Marketplace_, OEI-06-14-00350 (2016) — unclear ownership and the CMS/CGI integration confusion.],
-    [HHS OIG (2016) — "no single person had a clear understanding of the project's status" (paraphrased).],
+    [HHS OIG, OEI-06-14-00350 (2016), p. iii — "HealthCare.gov lacked clear project leadership to give direction and unity of purpose, responsiveness in execution, and a comprehensive view of progress."],
     [J. Pahlka, _Recoding America_ (2023) — the founding of the U.S. Digital Service out of the rescue.],
-    [Eaves & Goldenfein, "The Healthcare.gov Failure" (Harvard, 2014); Mergel et al. (2018), digital-government literature.],
+    [L. A. Schlesinger & P. D. Bhayani, "HealthCare.gov: The Crash and the Fix (A)," Harvard Business School case 315129 (2015); Mergel et al. (2018), digital-government literature.],
   ),
-  quote: [No single person had a clear understanding of the project's status.],
-  quote-source: "Paraphrasing the HHS Office of Inspector General review of Healthcare.gov, 2016",
+  quote: [HealthCare.gov lacked clear project leadership to give direction and unity of purpose, responsiveness in execution, and a comprehensive view of progress.],
+  quote-source: "HHS Office of Inspector General, HealthCare.gov: Case Study of CMS Management of the Federal Marketplace, OEI-06-14-00350, 2016",
   le-insight: [
     Healthcare.gov is a capability case wearing a technology costume. The
     technology was salvageable in weeks once the right people arrived.
@@ -170,7 +166,7 @@
   year: "2013 – 2023",
   domains-list: ("neuroscience", "science policy (EU)"),
   modes-code: "GN",
-  impact: "A €1B EU-flagship initiative to simulate a living brain governed top-down under a single PI; the project unraveled as the field disputed both feasibility and approach, restructured under protest, and concluded in 2023 with the founding framing abandoned",
+  impact: "An EU-flagship initiative to simulate a living brain — a €1B headline ambition that drew €607M over ten years — governed top-down by a three-member board of directors; the project unraveled as the field disputed both feasibility and approach, restructured under protest, and concluded in 2023 with the founding framing abandoned",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -181,10 +177,7 @@
   summary: [
     The EU Human Brain Project, launched in 2013 as one of the EU's
     Future and Emerging Technologies Flagship programs, set out to
-    build a computer simulation of a living brain under a single
-    principal investigator (Henry Markram). The governance model was
-    top-down: a central vision, a small leadership group, a
-    decade-long funding commitment of about €1 billion, and a
+    build a computer simulation of a living brain under a three-member board of directors led by Henry Markram. The governance model was top-down: a central vision, a small leadership group, €607 million drawn over a decade against a €1 billion flagship headline, and a
     research community asked to align around the simulation goal. The
     case is drafted as the paired contrast to the BRAIN Initiative
     (Case 198), not as a standalone study: the same era, the same
@@ -202,8 +195,7 @@
     [
       In 2013 the European Commission selected the Human Brain Project
       as one of two Future and Emerging Technologies Flagship
-      programs, with a ten-year horizon and approximately €1 billion
-      in committed funding. The founding vision, articulated and
+      programs, with a ten-year horizon and a headline flagship budget of about €1 billion; the project drew €607 million across four funding periods. The founding vision, articulated and
       championed by Henry Markram, was a computer simulation of a
       living human brain. The governance was top-down: a small
       leadership group, a unified research framing, and a community
@@ -234,7 +226,7 @@
       neuroscience. The governance models were not comparable: BRAIN
       organized a working group that visibly contested its own
       composition and re-baselined its scope on the public record;
-      HBP organized around a single PI and a unified framing, and the
+      HBP organized around a three-member board of directors and a unified framing, and the
       community had to mediate the project away from that framing.
       The trajectory difference is not a verdict on either field; it
       is evidence about the governance variable at the launch
@@ -269,7 +261,7 @@
     ],
   ),
   beats: (
-    "EU FET Flagship 2013 with ~€1B over a decade and a single-PI top-down vision: simulate a living brain",
+    "EU FET Flagship 2013, €607M drawn against a ~€1B headline, governed top-down by a three-member board: simulate a living brain",
     "Community contestation surfaces quickly: feasibility, leadership breadth, no scope-revision process",
     "EU commissions mediation and restructuring; scope re-shaped around infrastructure platforms, not simulation",
     "Project runs to 2023 conclusion; founding framing is not what was delivered",
@@ -288,7 +280,7 @@
     ),
   ),
   references: (
-    [MIT Technology Review (2021), retrospective on big-science brain projects — the principal critical assessment of HBP alongside BRAIN.],
+    ["How big science failed to unlock the mysteries of the human brain," _MIT Technology Review_, 25 August 2021 — the principal critical assessment of HBP alongside BRAIN.],
     [_In Silico_ (2020), documentary by Noah Hutton — long-form follow of Markram and the HBP through the contestation period.],
     [_Science_ and _Nature_ contemporaneous coverage of the open letters and the mediation/restructuring (2014–2016).],
     [Human Brain Project final reports (2023) — the project's own restructuring and concluding documentation.],
@@ -299,9 +291,7 @@
   le-insight: [
     The EU Human Brain Project is the paired contrast to the BRAIN
     Initiative (Case 198): same era, same field-scale ambition,
-    opposite governance models, opposite trajectories. Top-down
-    single-PI governance with a unified framing did not survive
-    community contestation; the program was mediated away from its
+    opposite governance models, opposite trajectories. Top-down board-of-three governance with a unified framing did not survive community contestation; the program was mediated away from its
     founding goal and ran to its scheduled conclusion in 2023.
     Evidence base is journalism-tier and the flag is rendered
     under the title; future validation will continue.
@@ -338,7 +328,7 @@
   year: "2014 – 2018",
   domains-list: ("technology", "hiring algorithms", "machine learning"),
   modes-code: "DKN",
-  impact: "Amazon internal recruiting-algorithm project initiated 2014, team disbanded by early 2017 (Reuters reported Oct 2018) after engineers determined the model could not be debiased; trained on ten years of historical resume data in which men predominated in technical roles; the model downgraded resumes containing the word \"women's\" and resumes from all-women's colleges; Reuters single-source investigation Oct 10 2018",
+  impact: "Amazon internal recruiting-algorithm project initiated 2014, team disbanded by early 2017 (Reuters reported Oct 2018) after engineers determined the model could not be debiased; trained on ten years of historical resume data in which men predominated in technical roles; the model downgraded resumes containing the word \"women's\" and graduates of two all-women's colleges; Reuters single-outlet investigation Oct 10 2018",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -351,18 +341,14 @@
     2018, reported that Amazon had initiated an internal
     recruiting-algorithm project in 2014 with the goal of
     automating resume screening for technical roles, and had
-    deprecated the project in 2017 – 2018 after engineers
-    determined the model could not be debiased. The model was
+    disbanded the team by the start of 2017 because executives lost hope for the project. The model was
     trained on ten years of historical resume data in which men
     predominated in technical roles. The training-data composition
     encoded an association between gender-correlated features and
     role suitability; engineers found that the model downgraded
     resumes containing the word "women's" (as in "women's chess
     club captain") and downgraded resumes from all-women's
-    colleges. Attempts to remove the offending features
-    surfaced additional features carrying the same signal — the
-    trained bias could not be debiased through feature engineering
-    inside the model. The case rests on Reuters single-source
+    colleges. Amazon edited the programs to be neutral to the offending terms, and Reuters reported there was no guarantee the models would not devise other ways of sorting that proved discriminatory — a prospective judgement about what feature engineering could assure, not a demonstration that the bias had been shown irreducible. The case rests on Reuters single-source
     reporting; Amazon never published the technical detail. The
     journalism-tier evidence-flag under the title carries the
     standing language. The load-bearing teaching point — that
@@ -397,25 +383,16 @@
       investigation reports that engineers found the model
       downgrading resumes that contained the word "women's" (in
       contexts like "women's chess club captain") and downgrading
-      resumes from all-women's colleges. Attempts to remove the
-      offending features did not eliminate the pattern; the
-      remaining features carried correlated signal that
-      reproduced the same downgrade. The trained bias was
-      structural to the training-data composition and could not
-      be debiased through downstream feature engineering inside
-      the model architecture.#cn()
+      graduates of two all-women's colleges. Amazon edited the programs to make them neutral to those terms; Reuters reports that this was no guarantee the machines would not devise other ways of sorting candidates that could prove discriminatory. What the record carries is a prospective judgement about what feature engineering could assure, not a demonstration that the bias had been shown irreducible.#cn()
     ],
     [
       Amazon disbanded the project team by early 2017 and has
       said the model was never used by recruiters to evaluate
-      candidates. Reuters reported, however, that recruiters
+      candidates. Reuters reported that recruiters
       "looked at the recommendations" the tool generated without
       relying solely on them — so "never deployed at production
       scale" is the company's account rather than an independently
-      verified fact. The withdrawal is the load-bearing decision in the case:
-      the engineering team determined that the model could not
-      be made fair, and the organization withdrew the project
-      rather than deploying it. The case's evidentiary structure
+      verified fact. The withdrawal is the load-bearing decision in the case: Reuters reports that executives lost hope for the project and the organization disbanded the team rather than deploying the tool. The case's evidentiary structure
       rests on Reuters' single-source reporting — the company
       never published the technical detail, and the specific
       mechanism by which engineers verified the irreducibility
@@ -469,14 +446,14 @@
   beats: (
     "Amazon internal recruiting-algorithm project 2014 – 2018; goal: automate resume screening for technical roles; trained on 10 years of historical resume data",
     "Training-data composition encoded gender imbalance; model downgraded resumes containing \"women's\" and resumes from all-women's colleges",
-    "Feature-engineering attempts to debias failed: remaining features carried correlated signal reproducing the same downgrade pattern",
+    "Amazon edited the programs neutral to the offending terms; Reuters reports that was no guarantee the models would not devise other discriminatory sorts",
     "Amazon disbanded the project team by early 2017; company says the tool was never used by recruiters, though Reuters reported recruiters looked at its recommendations; the withdrawal is the load-bearing decision",
     "Evidence is Reuters single-source reporting (Oct 10 2018); Amazon never published technical detail; journalism-tier flag binding",
   ),
   approaches: (
     during: (
-      [Choose the construct the model is being asked to predict with construct validity in mind before training begins; the Amazon case demonstrates that when the historical record encodes a disparity in the outcome, the disparity will be learned regardless of feature engineering at the input layer.],
-      [Verify the irreducibility of bias as a deployment gate; the engineering team's determination that the model could not be debiased is what enabled the deprecation decision, and the verification discipline is the curricular target.],
+      [Choose the construct the model is being asked to predict with construct validity in mind before training begins; the Amazon case shows a team that edited the offending terms out of the input layer and still could not assure the model would not sort discriminatorily some other way.],
+      [Verify the irreducibility of bias as a deployment gate; no such determination was ever produced at Amazon — the project was abandoned without one — and producing it is the curricular target.],
       [Treat the deprecation decision as the operational artifact that the verification supports; an organization able to deprecate a project at the verification finding is operating with a different decision architecture than one that defaults to deployment.],
     ),
     after: (
@@ -495,10 +472,7 @@
   quote-source: "Editors' synthesis of the Reuters investigation (Dastin, 2018) and the surrounding algorithmic-hiring literature.",
   le-insight: [
     Amazon Hiring AI is the trained-bias-cannot-be-debiased case
-    at major-technology-company scale. The engineering team
-    determined that the model could not be made fair through
-    feature engineering and the organization deprecated the
-    project rather than deploying it. The journalism-tier
+    at major-technology-company scale. Amazon edited the offending terms out and, on the record Reuters carries, could not assure the model would not sort discriminatorily some other way; executives lost hope and the team was disbanded. The journalism-tier
     evidence-flag is binding for the specific technical detail;
     the structural teaching point — choose the construct, then
     ask whether the historical record supports learning to
@@ -549,8 +523,7 @@
     her phone, but placed heavy blame on Uber: it had not recognized the
     risk of automation complacency, trained for it, or enforced its own
     no-phone policy. The system itself was programmed not to brake when a
-    crash was deemed unavoidable, and could not classify a pedestrian who was
-    not near a crosswalk. The human was kept in the loop as a passive
+    crash was deemed unavoidable, and had no functionality to anticipate a pedestrian crossing midblock. The human was kept in the loop as a passive
     monitor — a role the NTSB noted is chronically unperformable — with no
     infrastructure to make it work. Uber ATG is the book's defining
     human-AI-teaming case.
@@ -592,10 +565,7 @@
       had no mechanism behind it to make compliance the default. The system
       compounded the human gap. It was programmed
       not to apply emergency braking when a crash was judged unavoidable —
-      removing the automated backstop — and it could not classify an object
-      as a pedestrian unless it was near a crosswalk, so the very situation on
-      the road that night fell into a blind spot the software was not built
-      to see.#cn()
+      removing the automated backstop — and it lacked the functionality to anticipate a pedestrian crossing midblock: it detected Herzberg 5.6 seconds out but never assigned her the goal of jaywalking, cycling her classification between vehicle, bicycle, and other and discarding her tracking history at each change, so it never predicted her path.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -604,16 +574,14 @@
       posture required one present. The role of "monitor" was assigned
       without the interface, training, or authority to make it performable —
       a placeholder for safety rather than an instrument of it.
-      As NTSB board members observed, humans tend to tune out when tasked with
-      monitoring automated systems that work well most of the time. The
+      As the NTSB put it, on the human capacity to monitor an automation system for its failures the research findings are consistent — humans are very poor at this task. The
       design was safe only on the assumption that the failure case would not
       arrive — until it did, and the assumption that had quietly held the
       whole arrangement together was paid for with a life.#cn()
     ],
     // -- Aftermath & Reform --
     [
-      Uber suspended testing and exited self-driving outright, selling its
-      Advanced Technologies Group to Aurora in December 2020; the case
+      Uber suspended testing and then exited self-driving, agreeing in December 2020 to sell its Advanced Technologies Group to Aurora and closing the sale in January 2021; the case
       reshaped how the industry and regulators treat safety drivers — toward
       two-operator teams, driver-monitoring systems, and honest accounting of
       what a monitor can and cannot do.#cn() The individual-accountability
@@ -640,14 +608,14 @@
     [NTSB, _Collision Between Vehicle Controlled by Developmental Automated Driving System and Pedestrian_, Highway Accident Report HAR-19/03 (2019) — the Tempe collision and probable cause.],
     [NTSB HAR-19/03 (2019) — the safety operator's distraction (watching a video) before impact.],
     [NTSB HAR-19/03 (2019) — Uber "did not adequately recognize the risk of automation complacency"; training and policy failures (quoted in part).],
-    [NTSB HAR-19/03 (2019) — the suppressed emergency braking and the inability to classify a pedestrian away from a crosswalk.],
-    [NTSB board members, Tempe hearing (2019) — "humans tend to tune out…" (paraphrase reported by Consumer Reports).],
+    [NTSB HAR-19/03 (2019) — the suppressed emergency braking and the absent functionality to anticipate a pedestrian crossing midblock.],
+    [NTSB HAR-19/03 (2019), Board Member Statement, p. 62 — Vice Chairman Bruce Landsberg: "Automation performs remarkably well most of the time and therein lies the problem."],
     [R. Parasuraman & D. Manzey (2010), complacency in automation; L. Bainbridge (1983), "Ironies of Automation."],
   ),
-  quote: [Repeatedly, humans tend to tune out when tasked with monitoring automated systems that work well most of the time.],
-  quote-source: "NTSB board members, Uber Tempe hearing, 2019",
+  quote: [Automation performs remarkably well most of the time and therein lies the problem. Human attention span is limited, and we are notoriously poor monitors.],
+  quote-source: "NTSB Vice Chairman Bruce Landsberg, concurring statement, Highway Accident Report HAR-19/03, 2019",
   le-insight: [
-    Uber ATG is the defining case for the LENS Human-AI Teaming
+    Uber ATG is the defining case for the LENS Human-System Collaboration
     competency. A human was retained in the system not because the
     designers believed a human could meaningfully act, but because the
     regulatory architecture required a human be present. The role of
@@ -700,7 +668,7 @@
   year: "1999 – 2015",
   domains-list: ("tech", "gov"),
   modes-code: "GHK",
-  impact: "more than 900 sub-postmasters wrongfully convicted; 236 imprisoned; at least 13 linked suicides; described as the most widespread miscarriage of justice in UK history",
+  impact: "more than 900 sub-postmasters wrongfully convicted; 236 imprisoned on the figure given in Parliament; 13 suicides the inquiry could not rule out as Horizon-caused; described as the most widespread miscarriage of justice in UK history",
   diagram: dgm.dgm-stat(
     "900",
     "wrongful prosecutions across 20+ years",
@@ -752,10 +720,7 @@
       prosecuted people for the system's errors.#cn() The courts began
       quashing convictions from December 2020, and the public inquiry under Sir Wyn
       Williams found that senior employees "knew, or at the very least should
-      have known, that Legacy Horizon was capable of error" — establishing it
-      as the most widespread miscarriage of justice in UK history, sustained
-      precisely because that internal knowledge never reached the people on
-      trial.#cn()
+      have known, that Legacy Horizon was capable of error" — the finding at the centre of what is widely called the most widespread miscarriage of justice in UK history, sustained precisely because that internal knowledge never reached the people on trial.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -777,8 +742,7 @@
       to account before the continuing inquiry.#cn() What finally forced the
       political reckoning was not the courts but a television drama: the ITV
       series _Mr Bates vs The Post Office_ (January 2024) galvanized public
-      pressure that produced the mass-exoneration statute, and former chief
-      executive Paula Vennells returned her CBE the following month. When Sir
+      pressure that produced the mass-exoneration statute, and former chief executive Paula Vennells returned her CBE within days. When Sir
       Wyn Williams published the inquiry's first volume in July 2025, he found
       that the compensation schemes had still not delivered full, fair, and
       prompt redress, and that the true human toll — including suicides — was
@@ -877,9 +841,7 @@
     fare flight in reliance on the chatbot's representation, then
     submitted a retroactive bereavement-fare claim. Air Canada
     refused the claim on the ground that the actual policy
-    required pre-booking application. Moffatt sued in the BC
-    Civil Resolution Tribunal — Canada's online small-claims
-    forum — and the tribunal awarded \$650.88 in damages. Air
+    required pre-booking application. Moffatt sued in the BC Civil Resolution Tribunal — British Columbia's online small-claims forum — and the tribunal awarded \$650.88 in damages. Air
     Canada had argued that the chatbot was a "separate legal
     entity" responsible for its own outputs; the tribunal
     rejected the argument and held that Air Canada was liable
@@ -902,11 +864,7 @@
       supporting documentation. Moffatt booked a full-fare round
       trip to Toronto in reliance on the representation. After
       travel, he submitted a retroactive bereavement-fare claim
-      with the documentation the chatbot had described. Air
-      Canada's response was that the actual bereavement-fare
-      policy required pre-booking application — that is, the
-      reduced fare had to be applied for at the time of
-      booking, not claimed retroactively.#cn()
+      with the documentation the chatbot had described. Air Canada's response was that the actual bereavement-fare policy did not apply to requests made after travel was complete — that is, the reduced fare had to be arranged before the trip, not claimed retroactively.#cn()
     ],
     [
       The structural seam the case opens is that the airline's
@@ -931,9 +889,7 @@
       decision, written by Tribunal Member Christopher Rivers,
       found that Air Canada was responsible for "all the
       information on its website" and that the chatbot was part
-      of the website. The argument that the chatbot was a
-      separate legal entity was found to have no support in
-      law. The tribunal awarded Moffatt \$650.88 in damages —
+      of the website. The tribunal called the separate-entity submission remarkable and held that the chatbot is just a part of Air Canada's website. The tribunal awarded Moffatt \$650.88 in damages —
       the difference between the full fare he paid and the
       bereavement fare he had been led to believe he could
       claim. The dollar amount is small; the principle the
@@ -1026,8 +982,7 @@
   lens-approach: [
     Air Canada chatbot is the human-in-the-loop-at-the-customer-
     interaction-agent-seam case (induced 5.2; LENS D3/PT6;
-    LEO-3 and LEO-5). LENS uses it in Domain 3 (Machine
-    Teaming and Adaptation) for the
+    LEO-3 and LEO-5). LENS uses it in Domain 3 (Human-System Collaboration) for the
     organization-is-liable-for-agent-representations principle.
     Pair with Case 5 (Epic Sepsis delegation-without-
     validation), Case 3 (Watson for Oncology), and Case 77
@@ -1053,10 +1008,10 @@
   number: 186,
   slug: "algorithmic-mortgage-lending-omitting",
   title: "Algorithmic Mortgage Lending — Omitting the Variable Did Not Fix the Disparity",
-  year: "2018 – 2022",
+  year: "2009 – 2022",
   domains-list: ("finance", "algorithmic fairness"),
   modes-code: "DGN",
-  impact: "Algorithmic mortgage underwriting reduced face-to-face discrimination but preserved a measured pricing disparity even when race was excluded from the inputs — the variable's omission did not fix the harm",
+  impact: "Lenders charged Latinx and African-American borrowers 7.9 basis points more on purchase mortgages and 3.6 more on refinances, $765M a year in extra interest; fintech algorithms priced 40 percent less discriminatorily than face-to-face lenders and did not close the gap",
   kind: "failure",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -1073,9 +1028,7 @@
     more equitably than traditional lenders. But the *pricing* margin
     persisted: minority borrowers were charged systematically higher rates
     for equivalent loans even when race was not in the model inputs. The
-    excluded variable did not stay excluded; it re-entered through
-    geography, credit-score history, and other features that correlate
-    with race in the present US population. The case is the canonical
+    paper does not trace the gap to proxies for race. Bartlett et al. attribute it to rents extracted from borrowers and geographies less prone to shopping, and leave the mechanism to further research. The case is the canonical
     instance of why "fairness through unawareness" is not, by itself,
     fairness. It pairs directly with the Coots et al. fintech fairness
     audit (Case 196, preprint-tier): the next teaching step is that
@@ -1098,23 +1051,13 @@
       discrimination along two distinct margins: the *acceptance* decision
       (do you get a loan) and the *pricing* decision (what interest rate
       you pay if you do). On acceptance, algorithmic lenders did better:
-      Black and Latino applicants with equivalent observable
-      characteristics were accepted at rates closer to those of comparable
-      White applicants than face-to-face lending produced. The result is
+      face-to-face lenders rejected Latinx and African-American applications about 6 percent more often than similarly situated non-minority applications, while fintech lenders did not discriminate at all in accept/reject — a result the authors call preliminary. The result is
       consistent with the intuition that removing the loan officer
       removes some of the channel through which bias entered.#cn()
     ],
     [
-      The pricing margin tells the harder story. Even when race was not
-      among the model inputs, minority borrowers were charged
-      systematically higher rates than equivalent White borrowers — by
-      about 8 basis points on purchase loans and 4 on refinances in the
-      paper's central estimate. The disparity did not vanish because the
-      variable was omitted; the variable returned through features
-      correlated with race in the present US population — geography,
-      credit-history depth, and other proxies that the model is allowed
-      to use and that carry the historical signal of where lending has
-      and has not flowed.#cn()
+      The pricing margin tells the harder story. Even when race was not among the model inputs, minority borrowers were charged systematically higher rates than equivalent White borrowers — 7.9 basis points on purchase loans and 3.6 on refinances in the paper's central estimate, which the authors put at \$765 million a year in extra interest. Those are market-wide figures across lenders, not the algorithmic channel's own share: the same paper finds fintech algorithms discriminate about 40 percent less than face-to-face lenders, so the finding is that automation narrowed the gap without closing it. The disparity did not vanish because the
+      variable was omitted. The paper's estimates hold the GSE credit-risk grid fixed, so credit history is not the channel it measures. What Bartlett et al. propose instead is rent extraction: an algorithm "would naturally discover that higher prices could be quoted to profiles of borrowers or geographies associated with low-shopping tendencies."#cn()
     ],
     [
       What the case teaches is the structural form of "fairness through
@@ -1145,7 +1088,7 @@
     "Algorithmic underwriting reaches the mortgage market at scale; the question is whether automation reduces or preserves discrimination",
     "Bartlett et al. decompose discrimination along acceptance and pricing margins across millions of applications",
     "Algorithmic acceptance is more equitable than face-to-face; algorithmic pricing preserves a measured disparity even with race excluded",
-    "Excluded variable returns through correlated features (geography, credit history); omission shifts but does not close the channel",
+    "Pricing gap traced to rents from low-shopping borrowers and geographies, not to race proxies inside the risk model",
     "Fairness through unawareness is not fairness; the deliverable is output-level disparate-impact measurement, not input-level assurance",
   ),
   approaches: (
@@ -1173,15 +1116,15 @@
     "fairness through unawareness" is not fairness. Algorithmic
     underwriting reduced the acceptance-margin disparity but the
     pricing-margin disparity persisted even with race excluded —
-    because correlated admissible features carry the same signal.
+    because pricing latitude, not the input set, carries the disparity.
     The capability deliverable is output-level disparate-impact
     measurement, not input-level assurance.
   ],
   lens-approach: [
     Bartlett is the headline equity-and-construct case in
     consumer credit (induced 8.2; LENS D4+D3/PT6). LENS uses it
-    in Domain 4 (Test and Evaluation) for the LEO *Fairness
-    beyond omission*, in Domain 3 (Human-System Collaboration) for delegation to underwriting models, and in
+    in Domain 4 (Test and Evaluation) for the subobjective *Fairness
+    beyond omission* (4.6), in Domain 3 (Human-System Collaboration) for delegation to underwriting models, and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
     fair-lending regulatory regime. Direct pair with Case 196
     (Coots fintech fairness audit). Adjacent to the race-construct
@@ -1598,7 +1541,7 @@
   year: "2014 – 2020",
   domains-list: ("government/welfare (Netherlands)", "algorithmic decision-making", "public-sector AI"),
   modes-code: "DGN",
-  impact: "An opaque risk-scoring system that combined up to 17 categories of previously siloed government data on citizens — disproportionately deployed in low-income and minority neighborhoods — halted by the District Court of The Hague in 2020 as a violation of Article 8 ECHR; also reported as operationally ineffective",
+  impact: "An opaque risk-scoring system that combined up to 17 categories of previously siloed government data on citizens — applied only in so-labelled \"problem districts\", with the court finding a risk of links drawn on lower socio-economic status or an immigration background — halted by the District Court of The Hague in 2020 as a violation of Article 8 ECHR; also reported as operationally ineffective",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -1609,8 +1552,7 @@
     The Dutch System Risk Indication (SyRI) combined up to 17 categories
     of previously siloed government data — tax, benefits, housing,
     education — to produce risk scores intended to flag potential
-    welfare fraud. Deployed from 2014, it was targeted at low-income
-    and minority neighborhoods. On February 5, 2020 the District Court
+    welfare fraud. Deployed from 2014, it was applied only in so-labelled "problem districts". On February 5, 2020 the District Court
     of The Hague halted the program as a violation of Article 8 ECHR
     (right to private life) — one of the first times a court anywhere
     stopped a welfare-AI system on human-rights grounds. Investigative
@@ -1634,7 +1576,7 @@
       employment. Deployed from 2014, it operated as a closed system:
       citizens were not informed they were being scored; the model
       and its inputs were not disclosed; the program was targeted at
-      specific low-income and minority neighborhoods.#cn()
+      only so-labelled "problem districts", the State confirmed at the hearing.#cn()
     ],
     [
       The governance objection was raised by a coalition of civil
@@ -1643,8 +1585,7 @@
       European Convention on Human Rights — the right to private
       life. The case was heard by the District Court of The Hague.
       On February 5, 2020, the court halted the program: the system
-      was found insufficiently transparent and disproportionate to
-      its stated aim. The ruling is one of the first instances
+      was found insufficiently transparent and verifiable to strike the fair balance Article 8(2) requires. The court held that fraud gives a pressing social need and that SyRI is not an a priori disproportionate instrument; transparency is what it failed. The ruling is one of the first instances
       anywhere of a court stopping a welfare-AI system on
       human-rights grounds.#cn()
     ],
@@ -1653,8 +1594,7 @@
       second finding: on its own operational terms, SyRI was
       ineffective. Reporting documented that none of the algorithmic
       investigations the program had launched had detected new fraud
-      — the system had been deployed for six years and the headline
-      capability claim had not been demonstrated. The case is
+      — across its first five years, five municipalities asked for a neighbourhood analysis and only two projects were actually run. The case is
       structurally important because it is both rights-violating
       *and* ineffective; the rights argument did not depend on the
       effectiveness gap, and the effectiveness gap did not depend on
@@ -1690,7 +1630,7 @@
       the governance problem. The halt did not end Dutch
       welfare-fraud analytics: a broader successor statute — the WGS
       (Data Processing by Collaborative Networks Act), dubbed
-      "Super-SyRI" by critics — advanced to authorize even wider
+      "Super-SyRI" by critics — passed the Senate in June 2024 and took effect in 2025, authorizing wider
       public-private data-sharing, and SyRI's era overlapped the
       _toeslagenaffaire_ childcare-benefits scandal, in which roughly
       26,000 families were wrongly profiled — a failure grave enough
@@ -1700,9 +1640,9 @@
     ],
   ),
   beats: (
-    "SyRI combines up to 17 categories of siloed government data; deployed 2014; targeted at low-income and minority neighborhoods",
+    "SyRI combines up to 17 categories of siloed government data; deployed 2014; applied only in so-labelled \"problem districts\"",
     "Civil-society and citizen coalition sue; District Court of The Hague halts program 5 Feb 2020 as Article 8 ECHR violation",
-    "Investigative reporting: on its own terms, SyRI did not work — no new fraud detected in six years of algorithmic investigations",
+    "Investigative reporting (de Volkskrant, 2019): no new fraud detected; of five neighbourhood projects requested in five years, two ran",
     "Court leaves open that a more transparent and narrower system could pass; the ruling is system-specific, not categorical",
     "Pair with OU (Case 81): governance-objection diagnostic — when design dissolves the objection vs. when the objection is correct",
   ),
@@ -1720,7 +1660,7 @@
   ),
   references: (
     [District Court of The Hague (2020), judgment of 5 February 2020 (NJCM et al. v. State of the Netherlands), ECLI:NL:RBDHA:2020:865.],
-    [Rachovitsa & Johann (2022), "The Human Rights Implications of the Use of AI in the Digital Welfare State," _Human Rights Law Review_ 22(2), doi:10.1093/hrlr/ngac010.],
+    [Rachovitsa & Johann (2022), "The Human Rights Implications of the Use of AI in the Digital Welfare State: Lessons Learned from the Dutch SyRI Case," _Human Rights Law Review_ 22(2), doi:10.1093/hrlr/ngac010.],
     [Library of Congress Global Legal Monitor (2020), report on the SyRI ruling.],
     [Algorithm Watch (2020), case study of the SyRI ruling and its implications for public-sector AI in Europe.],
   ),
@@ -1770,7 +1710,7 @@
   year: "2023 – 2024",
   domains-list: ("autonomous vehicles", "regulatory governance", "incident disclosure"),
   modes-code: "GKN",
-  impact: "On 24 October 2023 the California DMV suspended Cruise's driverless deployment and testing permits, citing the company's misrepresentation of safety-relevant information after a robotaxi dragged a pedestrian roughly 20 feet at ~7 mph following an initial stop — disclosure posture, not the underlying collision sequence, was the load-bearing failure",
+  impact: "On 24 October 2023 the California DMV suspended Cruise's driverless deployment and testing permits, citing the company's misrepresentation of safety-relevant information after a robotaxi dragged a pedestrian roughly 20 feet at ~7 mph following an initial stop ; the order rests on two grounds — that the vehicles are not safe for the public's operation, and that the manufacturer misrepresented safety information",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -1786,8 +1726,7 @@
     7 mph before stopping again. Cruise initially shared video of the
     initial stop with regulators and reporters but did not disclose
     the subsequent movement; the California DMV learned of the
-    pullover from another agency and obtained the fuller video weeks
-    later. On 24 October the DMV suspended Cruise's driverless
+    pullover from another agency and received the full video on 13 October. On 24 October the DMV suspended Cruise's driverless
     deployment and testing permits, citing misrepresentation of
     safety-relevant information. The case is the explicit contrast to
     Case 199 (Waymo): the same regulatory regime, the same
@@ -1799,7 +1738,7 @@
     internal timeline are reconstructed from contemporaneous
     reporting at TechCrunch, NBC News, SF Standard, and Mission
     Local. The underlying Cruise internal post-mortem is
-    referenced in public statements but not fully public. Future
+    public since 25 January 2024 as the Quinn Emanuel report. Future
     validation will continue on long-run regulatory consequences.
   ],
   sections: (
@@ -1810,30 +1749,23 @@
       driver. The robotaxi detected the collision and came to a
       stop. The vehicle then executed what Cruise later described
       as a pullover maneuver, traveling roughly 20 feet at about
-      7 mph with the pedestrian pinned beneath it. The collision
-      sequence itself involved a human driver, not Cruise's
-      software, but the post-impact behavior was Cruise's system
-      acting on its own.#cn()
+      7 mph with the pedestrian pinned beneath it. A hit-and-run driver struck the pedestrian first and threw her into the path of the Cruise vehicle, which then struck her, braked, and — with her pinned beneath it — executed a pullover manoeuvre that dragged her some twenty feet. The initiating collision was not Cruise's; everything after it was Cruise's system acting on its own.#cn()
     ],
     [
-      In the immediate days after the incident, Cruise shared video
-      of the initial stop with reporters and regulators. The
-      pullover maneuver and the dragging of the pedestrian were
-      not included in those initial disclosures. The California
+      In the immediate days after the incident, Cruise never told the media about the dragging or showed them the full video. With regulators there are two readings: the DMV says the pullover was not shown to it on 3 October; Cruise employees say they played the full video and that connectivity problems hampered all but one of those meetings. The California
       DMV did not learn of the full sequence from Cruise; it
       learned of the pullover from another agency and obtained
-      the fuller video weeks after the incident. The mechanism of
+      the full video on 13 October, eleven days after. The mechanism of
       failure shifted in the regulator's view from the collision
       to the company's disclosure posture.#cn()
     ],
     [
       On 24 October 2023 the DMV issued an Order of Suspension
-      revoking Cruise's driverless deployment permit and its
+      suspending Cruise's driverless deployment permit and its
       driverless testing permit. The order cited misrepresentation
       of safety-relevant information — that the company had
-      "misrepresented information related to the safety of its
-      autonomous technology" — as a load-bearing reason for the
-      revocation. The Order of Suspension is the
+      "misrepresented any information related to safety of the autonomous technology of its vehicles" — as one of two grounds for the
+      suspension. The Order of Suspension is the
       investigation-grade artifact in this case; the reconstruction
       of the partial-disclosure mechanism and the internal
       timeline rests on contemporaneous journalism.#cn()
@@ -1846,26 +1778,23 @@
       framework and commissioning third-party audits, Cruise
       answered an incident-disclosure obligation by sharing
       partial video. The same DMV that permitted Waymo to
-      continue revoked Cruise's permits. The journalism-tier
+      continue suspended Cruise's permits. The journalism-tier
       flag is load-bearing: the DMV's published order is
       investigation-grade, but the precise sequence of internal
       decision-making rests on TechCrunch, NBC News, SF
       Standard, and Mission Local reporting that has not been
-      independently corroborated by the company's full
-      post-mortem.#cn()
+      superseded in part by the Quinn Emanuel report, which Cruise's board commissioned and published.#cn()
     ],
     [
       The LENS teaching point pairs directly with Waymo. The new
-      LEO *Delegation with revocation* requires that the
+      subobjective *Delegation with revocation* (3.3) requires that the
       deploying organization design the disclosure architecture
       *before* the failure event — what will be reported, on
       what cadence, to which oversight body, with what
       verification. Partial disclosure under crisis is not a
       strategy; it is what happens when no architecture was
-      designed. The permit revocation proved terminal rather than a
-      pause: in September 2024 Cruise settled with NHTSA (a \$1.5
-      million consent order) and the DOJ (admitting it had submitted a
-      false report, a \$500,000 penalty), and in December 2024 General
+      designed. The permit suspension proved terminal rather than a
+      pause: on 30 September 2024 Cruise took a \$1.5 million NHTSA consent order, and in November 2024 entered a deferred prosecution agreement with the DOJ, admitting a false report and paying \$500,000, and in December 2024 General
       Motors announced it would stop funding Cruise's robotaxi
       development and fold the unit into GM, cutting roughly half the
       remaining staff in early 2025. Future validation will continue
@@ -1877,8 +1806,8 @@
   beats: (
     "2 October 2023: pedestrian struck by human-driven vehicle, propelled into path of Cruise robotaxi; Cruise vehicle stopped, then pullover maneuver dragged pedestrian ~20 ft at ~7 mph",
     "Cruise initial disclosure to regulators and reporters showed only the initial stop; full pullover sequence not disclosed",
-    "DMV learned of pullover from another agency; obtained fuller video weeks after incident",
-    "24 October 2023: DMV Order of Suspension revokes driverless deployment and testing permits, citing misrepresentation of safety-relevant information",
+    "DMV learned of pullover from another agency; received full video 13 October, eleven days after the incident",
+    "24 October 2023: DMV Order of Suspension suspends driverless deployment and testing permits, citing unsafe vehicle performance and misrepresentation of safety information",
     "Journalism-tier flag: Order is investigation-grade; partial-disclosure mechanism reconstructed from TechCrunch, NBC News, SF Standard, Mission Local — future validation ongoing",
   ),
   approaches: (
@@ -1888,7 +1817,7 @@
       [Build the verification path the regulator will use into the architecture. The DMV learning the fuller sequence from another agency is the failure mode the architecture has to preclude.],
     ),
     after: (
-      [Use the LEO *Delegation with revocation*: revocation pathways must be designed and exercisable, and the deploying organization should expect the regulator to exercise them when the disclosure architecture fails.],
+      [Use the subobjective *Delegation with revocation* (3.3): revocation pathways must be designed and exercisable, and the deploying organization should expect the regulator to exercise them when the disclosure architecture fails.],
       [Pair the case with Case 199 (Waymo) in any LENS Domain 4 module — the contrast between an engineered legitimacy artifact and partial crisis disclosure is the teaching point, not either case alone.],
       [Carry the journalism-tier flag honestly: the DMV Order is the investigation-grade primary; the internal-timeline reconstructions are journalistic; future validation will improve as Cruise's own post-mortem and any subsequent litigation discovery enter the public record.],
     ),
@@ -1899,7 +1828,7 @@
     [TechCrunch (October 2023), incident-disclosure reconstruction.],
     [SF Standard (October 2023), San Francisco AV regulatory reporting.],
     [Mission Local (October 2023), San Francisco-specific incident reporting.],
-    [Cruise public statements and partial post-mortem references, October–November 2023.],
+    [Cruise public statements, October–November 2023, and the company's blog post accepting the Quinn Emanuel findings (January 2024).],
   ),
   quote: [The collision involved a human driver. The suspension was about what the company chose not to show.],
   quote-source: "Editors' synthesis of the California DMV Order of Suspension and the contemporaneous reporting.",
@@ -1916,8 +1845,8 @@
   lens-approach: [
     Cruise is the AV partial-disclosure failure (induced 5.4;
     LENS D5/PT6). LENS uses it in Domain 5 (Navigating
-    Sociotechnical Constraints) for the LEO *Delegation
-    with revocation* — the case shows what revocation looks
+    Sociotechnical Constraints) for the subobjective *Delegation
+    with revocation* (3.3) — the case shows what revocation looks
     like when the disclosure architecture fails — and in
     Domain 3 (Emerging Systems and Human-System Collaboration) for the
     oversight obligations that follow when a system acts
@@ -2146,7 +2075,7 @@
   year: "2019 – 2021",
   domains-list: ("financial services", "consumer credit", "algorithmic decision-making"),
   modes-code: "DKN",
-  impact: "New York State Department of Financial Services investigation March 2021 found no violation of New York anti-discrimination law in Apple Card credit-limit decisions following David Heinemeier Hansson's November 2019 viral allegation that his wife received a credit limit approximately 20 times lower despite shared assets; DFS documented \"lack of transparency\" as the structural problem and required Goldman Sachs to overhaul its customer-service process",
+  impact: "New York State Department of Financial Services investigation March 2021 found no violation of New York anti-discrimination law in Apple Card credit-limit decisions following David Heinemeier Hansson's November 2019 viral allegation that his wife received a credit limit approximately 20 times lower despite shared assets; DFS documented \"lack of transparency\" as the structural problem, and the Bank and Apple had since taken steps to remedy the customer-service and transparency deficiencies",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -2157,8 +2086,7 @@
     On November 7, 2019, software developer David Heinemeier
     Hansson posted on Twitter that his Apple Card credit limit
     had been set approximately 20 times higher than his wife
-    Jamie Heinemeier Hansson's, despite the couple filing taxes
-    jointly and Jamie having a higher credit score. The thread
+    Jamie Heinemeier Hansson's, though the couple file jointly and, he said, she had the higher credit score. The thread
     went viral, with Apple co-founder Steve Wozniak reporting a
     similar disparity with his wife. The New York State
     Department of Financial Services opened an investigation. Its
@@ -2167,10 +2095,8 @@
     Apple Card) did not violate New York anti-discrimination law,
     finding no statutory finding of intent or disparate-impact
     violation. DFS documented "lack of transparency" as the
-    structural problem: Goldman Sachs could not adequately explain
-    individual credit decisions to applicants who challenged them.
-    DFS required Goldman Sachs to overhaul its customer-service
-    process. The case pairs with Case 186 (Bartlett mortgage),
+    structural problem: the Bank explained its decisions to DFS for every complainant, and to the complainants themselves it did not.
+    The Bank and Apple had by then taken steps to remedy the deficiencies. The case pairs with Case 186 (Bartlett mortgage),
     Case 196 (Coots), and Case 86 (Gándara). The DFS finding of
     "no violation but lack of transparency" is the load-bearing
     nuance.
@@ -2186,23 +2112,20 @@
       contemporary algorithmic-underwriting practice. On
       November 7, 2019, David Heinemeier Hansson posted that his
       Apple Card credit limit was approximately 20 times his
-      wife's, despite jointly filed taxes and Jamie's higher
-      credit score. The thread surfaced similar reports — Steve
+      wife's, though the couple file jointly and, he said, Jamie had the higher credit score. The thread surfaced similar reports — Steve
       Wozniak named the same pattern with his wife — and rapidly
       moved from social media to regulatory attention.#cn()
     ],
     [
       The structural seam the case opens is that Goldman Sachs
-      could not adequately explain individual credit decisions to
-      the applicants who challenged them. When Jamie Heinemeier
+      did not explain individual credit decisions to the applicants who challenged them. When Jamie Heinemeier
       Hansson asked Goldman to explain why her credit limit was
       lower, the customer-service response was that the algorithm
       had set the limit and that the decision could not be
       explained at the individual level. The escalation moved
       through standard customer-service channels, then to social-
       media-amplified public pressure, then to regulatory
-      investigation, and at no point along the path did Goldman
-      surface an account of why the decision had been made. The
+      investigation. Asked by DFS, the Bank identified the factors behind each complainant's decision — credit score, indebtedness, income, credit utilization, missed payments — and DFS found each consistent with the Bank's credit policy. The
       explainability gap was operational rather than algorithmic
       in the narrow sense: even if the underlying model was
       defensible at the population level, the bank had not built
@@ -2211,21 +2134,17 @@
     ],
     [
       The New York State Department of Financial Services opened
-      its investigation in late November 2019 and released its
+      its investigation on 9 November 2019 and released its
       findings in March 2021. The headline finding was that DFS
       did not find a violation of New York anti-discrimination
       law — neither intentional discrimination nor an actionable
       disparate-impact violation under the applicable standards.
-      The investigation reviewed approximately 400,000 New York
-      State credit-line decisions. The hedge is binding: DFS's
+      The investigation ran a regression analysis over underwriting data for nearly 400,000 New York applicants. The hedge is binding: DFS's
       "no violation" finding is specific to the statutory standard
       the agency applied, not a general finding that the
       decisioning was fair or non-discriminatory across all
       criteria. What DFS did find was "lack of transparency" as
-      the structural problem and required Goldman Sachs to
-      overhaul its customer-service process, build appeal
-      mechanisms, and document its credit-decisioning explanations
-      at the individual-applicant level.#cn()
+      the structural problem. DFS imposed no requirements. The Bank had already dropped the six-month wait to appeal credit terms, and with Apple launched Path to Apple Card in June 2020 to help declined applicants build toward approval.#cn()
     ],
     [
       The case pairs with Case 186 (Bartlett mortgage) for the
@@ -2238,7 +2157,7 @@
       explainability-of-individual-predictions thread at a
       different population and scale. The case is unusual in the
       casebook for the speed of regulatory response — DFS opened
-      the investigation within weeks of the viral thread — and
+      the investigation two days after the viral thread — and
       for the structural conclusion that the failure was
       explainability rather than the decisioning algorithm
       itself.#cn()
@@ -2264,9 +2183,9 @@
   beats: (
     "Nov 7 2019: Heinemeier Hansson Twitter thread on ~20× Apple Card credit-limit disparity; Wozniak names similar pattern; viral within days",
     "Goldman Sachs (issuing bank) cannot explain individual credit decisions to challenging applicants; explainability gap is operational, not narrowly algorithmic",
-    "NY DFS investigation opened late Nov 2019, findings released March 2021; reviewed ~400,000 New York credit-line decisions",
+    "NY DFS investigation opened 9 Nov 2019, findings released March 2021; regression over underwriting data for nearly 400,000 New York applicants",
     "DFS: no violation of NY anti-discrimination law under applicable statutory standard; structural finding is \"lack of transparency\"",
-    "Goldman required to overhaul customer-service process, build appeal mechanisms, document individual-applicant credit-decisioning explanations",
+    "No requirements imposed; Goldman had already dropped the six-month appeal wait and launched Path to Apple Card with Apple in June 2020",
   ),
   approaches: (
     during: (
@@ -2286,16 +2205,14 @@
     [Vigdor, N. (2019), "Apple Card Investigated After Gender Discrimination Complaints," _The New York Times_, November 10, 2019.],
     [Goldman Sachs Bank USA, public response and credit-line-review process documentation submitted to DFS during the investigation (2019 – 2021).],
   ),
-  quote: [DFS did not find a violation of New York anti-discrimination law; DFS did find lack of transparency as the structural problem, and required Goldman Sachs to overhaul its customer-service process — the case teaches that "no violation under a statutory standard" is not "fair."],
+  quote: [DFS did not find a violation of New York anti-discrimination law; DFS did find lack of transparency as the structural problem, and the Bank and Apple took steps to remedy it without being ordered to — the case teaches that "no violation under a statutory standard" is not "fair."],
   quote-source: "Editors' synthesis of the NY Department of Financial Services report on the Apple Card investigation (March 2021).",
   le-insight: [
     Apple Card is the consumer-credit explainability case at
     deployment scale. DFS found no violation of New York anti-
     discrimination law under the applicable statutory standard,
     and DFS also found lack of transparency as the structural
-    problem; Goldman Sachs was required to overhaul its
-    customer-service process and build individual-applicant
-    appeal mechanisms. The load-bearing hedge is the precision
+    problem; the Bank dropped the six-month wait to appeal credit terms and, with Apple, launched Path to Apple Card for declined applicants. The load-bearing hedge is the precision
     of the DFS finding — neither "fair" nor "unfair," but "no
     violation under this standard, transparency gap as the
     structural problem."
@@ -2350,9 +2267,7 @@
     were mathematically impossible. The SEC opened an investigation and
     concluded no action was warranted. Madoff operated until his sons
     turned him in during the 2008 crisis, when redemptions became
-    impossible to honor. The SEC Inspector General later found the staff
-    assigned lacked the expertise to evaluate Markopolos's arguments and
-    had deferred to Madoff's industry stature. The capability gap was at
+    impossible to honor. The SEC Inspector General later found the staff assigned relatively inexperienced, unable to appreciate the analysis in Markopolos's complaint, and skeptical of it almost at once. The capability gap was at
     the regulator's technical-evaluation pipeline, not at the evidence —
     which was specific and checkable.
   ],
@@ -2384,14 +2299,9 @@
     // -- The Investigation --
     [
       The SEC Office of Inspector General's 2009 report found the agency
-      had received credible, specific complaints across more than a decade
-      and "missed numerous opportunities" to uncover the fraud. The staff
+      had received credible, specific complaints across more than a decade and, "despite numerous credible and detailed complaints," never took "the necessary, but basic, steps to determine if Madoff was operating a Ponzi scheme." The staff
       assigned to Madoff lacked the expertise to evaluate Markopolos's
-      technical arguments, and the institutional culture had defaulted to
-      treating Madoff as a respected industry figure rather than following
-      the evidence. Stature stood in for analysis: the reviewers weighed who
-      Madoff was instead of whether the math could be true, and the
-      reputational halo did the work that scrutiny should have.#cn()
+      technical arguments, and Madoff worked on that inexperience directly — emphasizing his standing in the industry, dropping the names of senior SEC officials, growing angry when examiners pressed for documents. The report's own account of the failure is plainer than deference: the staff took Madoff's verbal answers where an independent check was available and never made it. A letter to the NASD that would have shown the trades did not exist was drafted and never sent.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -2416,11 +2326,7 @@
       capability to challenge the evidence in front of it.#cn() The
       aftermath complicates the "total loss" image the \$65-billion
       figure conjures: the fabricated account value was never real
-      money, and trustee Irving Picard clawed back roughly \$14.6
-      billion of actual invested principal — largely through the \$7.2
-      billion Picower settlement — so that, with the Department of
-      Justice's Madoff Victim Fund, some 94 percent of net-principal
-      losses had been returned by 2024, a recovery without precedent
+      money, and trustee Irving Picard recovered more than \$14.5 billion for the customer fund — \$5 billion of it from the Picower estate, whose \$7.2 billion settlement sent a further \$2.2 billion to the government and seeded the Department of Justice's Madoff Victim Fund, whose claimants had recovered 93.71 percent of their losses when it closed at the end of 2024, a recovery without precedent
       for a Ponzi of this scale. Madoff himself died in federal prison
       in April 2021.
     ],
@@ -2428,19 +2334,19 @@
   beats: (
     "Former NASDAQ chairman reported steady returns that were entirely fictitious Ponzi fabrications",
     "Markopolos delivered SEC a detailed quantitative memo in 2005; investigation closed without action",
-    "SEC Inspector General found numerous missed opportunities and staff deference to Madoff's stature",
+    "SEC Inspector General found inexperienced staff who accepted Madoff's answers where independent checks sat unused",
     "Regulator's technical-evaluation pipeline lacked people able to check the checkable math",
     "Collapse prompted SEC reforms including Office of Market Intelligence for technical triage",
   ),
   references: (
-    [SEC Office of Inspector General, _Investigation of Failure of the SEC to Uncover Madoff's Ponzi Scheme_, Report OIG-509 (2009) — the quoted finding.],
+    [SEC Office of Inspector General, _Investigation of Failure of the SEC to Uncover Bernard Madoff's Ponzi Scheme_, Report of Investigation Case No. OIG-509 (31 August 2009) — the quoted finding.],
     [Markopolos, H. (2010), _No One Would Listen_ — the 2005 memo and its dismissal.],
     [_United States v. Madoff_ (2009) — guilty plea and the ~\$65B figure.],
     [SEC OIG (2009) — staff expertise gap and deference to Madoff's stature.],
     [SEC post-Madoff reforms (2009–2010), including the Office of Market Intelligence for tip and referral triage.],
   ),
-  quote: [The agency missed numerous opportunities to discover the fraud.],
-  quote-source: "Paraphrasing SEC Office of Inspector General Report OIG-509 (2009)",
+  quote: [Despite numerous credible and detailed complaints, the SEC never properly examined or investigated Madoff's trading.],
+  quote-source: "SEC Office of Inspector General, Report of Investigation, Case No. OIG-509 (31 August 2009)",
   le-insight: [
     The Madoff case is the canonical example of a regulator without
     the technical capability to evaluate the evidence it received.

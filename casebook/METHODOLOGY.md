@@ -212,6 +212,33 @@ units pack without inserting blank pages. `scripts/check-cases.sh`
 every case: citation parity (marker count == reference-list length),
 the 3–5 page envelope, and that the reference list begins on page 2.
 
+### Compression fields are derived, not authored
+
+`impact`, `le-insight`, `quote`, `title` and `beats` are **compressions of the case body**
+(`summary` + `sections`). They are written **last, from the finished body**, and they may
+not assert anything the body does not carry.
+
+This is a rule with a history. The August 2026 mechanism pass found that almost every
+confirmed defect in the corpus was a compression field outrunning its body — and that the
+drift lands on `impact` and `le-insight`, never on `beats` or `quote`, because those two
+are visibly derived: they reuse the body's own sentences. `impact` was not derived from
+anything in the file, and nothing downstream reconciled them, so a header could contradict
+its own prose and only a reader diffing the two would see it. Three July 2026 editor
+rulings landed in narrative sections and never reached the summaries for the same reason.
+
+Two consequences worth stating plainly:
+
+- **A summary may compress. It may not assert what the body retracts.** Shorter, blunter
+  and less detailed is the job; stronger is a defect. A load-bearing hedge must survive
+  into the compression field, not only into the prose.
+- **The compression fields are the student-facing surface.** The study prompt is built
+  from `impact`, `le-insight` and `lens-approach`, so an error there reaches a reader
+  through a tutor without ever being read in the book.
+
+`scripts/check-compression.py` enforces the mechanical half — every quantity in `impact`
+or `le-insight` must have a counterpart in the body. `make check` runs it in `--gate` mode
+against `compression-baseline.txt`, so known leads do not block but new drift fails.
+
 ### Conservative voice for additions
 
 When expanding cases editorially, stay strictly within facts implied

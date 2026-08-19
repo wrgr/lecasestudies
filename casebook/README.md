@@ -159,6 +159,8 @@ Cases are defined by `#case(...)` in `lib/case.typ`. A v2 case carries:
 - **LE Lens** (page 4): `le-insight`, `lens-approach`, `approaches.during` + `approaches.after`, `reflection-list`, `team-block`, `sources-list`, `literature-items`.
 - **v2 metadata**: `scale` (`big` | `small`), `evidence-source` (`investigation` | `peer-reviewed` | `program-report` | `practitioner` | `dissertation` | `journalism`), the three anchors (`lens-anchor` like `"D3/PT5"`; `induced-anchor` like `"3.1"`; `leo-anchor` like `"LEO-3"`), `courses` (LEN-course tags surface in the back-matter course index), `coi` (optional — renders a gold "Disclosure" block under the title), `evidence-flag` (optional — renders a blue "Evidence tier" block with the standing "future validation ongoing" language).
 
+**Compression fields are derived.** `impact`, `le-insight`, `quote`, `title` and `beats` are compressions of `summary` + `sections`; write them last, from the finished body, and never let them assert what the body does not carry. `make check` runs `scripts/check-compression.py --gate`, which fails when a quantity appears in `impact` or `le-insight` with no counterpart in the body. See METHODOLOGY.md for why this rule exists.
+
 Inline citations use `#cn()`, which auto-numbers within the case (reset per case) and renders a superscript marker; the matching text goes in `references`, in the same order. `scripts/check-cases.sh` enforces marker == reference count and the 3–5 page envelope.
 
 Diagrams: write `#let dgm-foo = diagram-frame(...)` in `lib/diagrams.typ` and reference as `dgm.dgm-foo`. Diagrams may use `cetz` for vector drawing.

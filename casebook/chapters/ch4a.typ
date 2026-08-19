@@ -67,24 +67,19 @@
       Crystal off the coast of Japan; the sea poured into a berthing
       compartment where the crew slept, and seven sailors drowned before they
       could escape.#cn() The NTSB later described a bridge team that had
-      lost track of converging traffic on a clear night, and an officer of
-      the deck whose qualifications and recency on the very procedures the
-      situation demanded had lapsed under the waiver regime. Nine weeks
+      lost track of converging traffic on a clear night, and an officer of the deck who made poor navigational decisions and never called the combat information center for the support the situation demanded. Nine weeks
       later the John S. McCain collided with the tanker Alnic MC near
       Singapore, killing ten: while shifting throttle control between
       consoles, a watchstander unknowingly handed off steering to another
       station, the ship turned across the strait's traffic, and no one on
       the bridge understood the touch-screen helm well enough to recognize
-      what had happened.#cn() For more than a minute the bridge team
-      believed the ship had lost steering it had never lost — a
+      what had happened.#cn() For about three minutes the bridge team believed the ship had lost steering it had never lost — a
       misdiagnosis the interface invited and the training had not equipped
       anyone to overturn.
     ],
     // -- The Investigation --
     [
-      The Navy's Comprehensive Review (2017) judged both collisions
-      avoidable, citing failures in basic seamanship, navigation, and
-      operating the ships' own equipment.#cn() The NTSB found the McCain's
+      The Navy's command investigation reports (November 2017) judged both collisions avoidable — Fitzgerald from an accumulation of smaller errors and lapsed navigational practice, McCain from complacency, over-confidence, and lack of procedural compliance.#cn() The NTSB found the McCain's
       probable cause to be a lack of Navy oversight that produced
       insufficient training and inadequate bridge procedures,#cn() and
       faulted the design of the touch-screen helm, installed to modernize
@@ -97,14 +92,11 @@
       eroded the manning, certification, and maintenance margins the
       surface force was built on, and the readiness reports senior leaders
       relied on had stopped reflecting the conditions on the ships.#cn()
-      Watchbills and crew-day logs gathered after the collisions showed
-      watchstanders routinely averaging fewer than five hours of sleep on
-      patrol — a finding the NTSB folded into its causal chain.
+      Navy rest records showed the McCain's fourteen bridge watchstanders averaging just over 4.9 hours in the 24 hours before the collision — a finding the NTSB folded into its causal chain.
     ],
     // -- The Capability Gap --
     [
-      The gap was invisible from inside. The Strategic Readiness Review
-      described risks that "accumulated over time and did so insidiously,"
+      The gap was invisible from inside. The Comprehensive Review described risks that "accumulated over time and did so insidiously,"
       the system no longer able to see that the processes meant to surface
       shortfalls had themselves failed.#cn() Each individual waiver was
       locally defensible — a deadline met, a deployment kept — but in
@@ -121,10 +113,7 @@
     ],
     // -- Aftermath & Reform --
     [
-      The reforms were the deepest in a generation: the in-person officer
-      pipeline was rebuilt as a multi-phase Basic Division Officer Course,
-      reinstating classroom and simulator instruction the 2003 CD-ROM model
-      had displaced; a Ready-for-Sea Assessment and a Naval Surface Group
+      The reforms were the deepest in a generation: the in-person officer pipeline was rebuilt around a 2018 training continuum that extended the Basic Division Officer Course and added officer-of-the-deck phases, restoring classroom and simulator instruction the 2003 CD-ROM model had displaced; a Ready-for-Sea Assessment and a Naval Surface Group
       Western Pacific stood up to give forward-deployed units the
       independent certification cycle home-ported ships already had;
       circadian watchbills were adopted fleet-wide to fight fatigue; and
@@ -152,7 +141,7 @@
     [R. Rotella et al., #link("https://features.propublica.org/navy-uss-mccain-crash/navy-installed-touch-screen-steering-ten-sailors-paid-with-their-lives/")["The Navy Installed Touch-Screen Steering Systems to Save Money,"] _ProPublica_ (2019).],
     [U.S. Navy, _Strategic Readiness Review_ (Dec. 2017) — risks that "accumulated over time and did so insidiously."],
     [U.S. Navy corrective actions (2017); NTSB/MAR-19/01 recommendations; #link("https://news.usni.org/2020/09/03/ntsb-unexplained-course-change-was-a-critical-error-in-fatal-uss-fitzgerald-collision")[USNI News] (2017–2020).],
-    [Surface Warfare Officers School Command, Basic Division Officer Course curriculum and the post-2017 return to in-person instruction; Naval Surface Group Western Pacific stand-up (2019) as the forward-readiness certification authority.],
+    [Surface Warfare Officers School Command, Basic Division Officer Course curriculum and the post-2017 return to in-person instruction; Naval Surface Group Western Pacific stand-up (2018) as the forward-readiness certification authority.],
     [NTSB/MAR-19/01 (2019) — watchstander fatigue findings, including average sleep hours and the touch-screen helm misdiagnosis sequence.],
   ),
   quote: [The risks that were taken in the Western Pacific accumulated over time and did so insidiously.],
@@ -371,11 +360,11 @@
 #case(
   number: 126,
   slug: "f-35-sustainment-and-maintainer-shortage",
-  title: "F-35 Sustainment & Maintainer Shortage",
+  title: "F-35 Sustainment & the Maintainer Capability Gap",
   year: "ongoing",
   domains-list: ("defense",),
   modes-code: "TKD",
-  impact: "Fleet mission-capable rate about 55% (March 2023), far short of program goals; lifecycle cost exceeds $1.7T, with ~$1.3T in operating and support; maintainer, technical-data, and depot shortfalls are the binding readiness constraint (GAO-23-105341)",
+  impact: "Fleet mission-capable rate 44% in FY2025, down from 67% in FY2021 (GAO-26-108113); sustainment cost estimate $1.58T, total acquisition and sustainment above $2T (GAO-24-106703); technical-data, training, and depot shortfalls are the binding readiness constraint (GAO-23-105341)",
   diagram: dgm.dgm-f35,
   kind: "failure",
   summary: [
@@ -386,18 +375,13 @@
     from the start. As of March 2023 the fleet's mission-capable rate was
     about 55%, far short of goal, with more than 10,000 components in
     the repair queue and depots behind schedule. GAO traced the shortfall to
-    maintainer shortages, the military's lack of access to technical data,
-    and contractor dependency, and urged a full reassessment of the
-    sustainment strategy. It is the book's cleanest case of a platform
+    gaps in maintainer training and support equipment, the military's lack of access to technical data, and contractor dependency, and urged a full reassessment of the sustainment strategy. It is the book's cleanest case of a platform
     fielded faster than the capability infrastructure to sustain it.
   ],
   sections: (
     // -- Background --
     [
-      The F-35 is the most expensive weapons program in history: the Pentagon
-      plans to buy nearly 2,500, at a lifecycle cost exceeding \$1.7 trillion
-      — roughly \$1.3 trillion of it not the aircraft but the decades of
-      operating and sustaining them.#cn() The flyaway jet is the finite part;
+      The F-35 is the most expensive weapons program in history: the Pentagon plans to buy nearly 2,500, at a total acquisition and sustainment cost above \$2 trillion — \$1.58 trillion of it not the aircraft but the decades of operating and sustaining them.#cn() The flyaway jet is the finite part;
       keeping a global fleet ready — maintainers, technical data, depots — is
       the open-ended part, and the part that lagged, because the cost that
       dominates the program is not buying the aircraft but the decades of
@@ -408,10 +392,7 @@
     [
       The failure is a standing condition. As of March 2023 the fleet's
       mission-capable rate was about 55%, far short of goal; more
-      than 10,000 components waited in the repair queue, and the depots
-      averaged about 72 days per repair while still behind schedule in
-      standing up the capacity to do the work at all — a backlog and a
-      turnaround time that compound, since parts stuck in the queue keep jets
+      than 10,000 components waited in the repair queue, average repair cycle time ran to 141 days against a 60-day goal, and the depots were still behind schedule in standing up the capacity to do the work at all — a backlog and a turnaround time that compound, since parts stuck in the queue keep jets
       grounded and the under-built depots cannot clear the queue fast enough
       to recover the mission-capable rate.#cn()
     ],
@@ -419,9 +400,7 @@
     [
       GAO's September 2023 review was bluntly titled: the Department and
       services *need to reassess the future sustainment strategy*. It traced
-      the shortfall to maintainer shortages, the military's lack of access to
-      the technical data needed to do its own repairs, and the resulting
-      dependence on the prime contractor.#cn() None of it was new — GAO has
+      the shortfall to gaps in maintainer training and support equipment, the military's lack of access to the technical data needed to do its own repairs, and the resulting dependence on the prime contractor.#cn() None of it was new — GAO has
       repeated the same diagnosis year after year, through a troubled
       logistics-software backbone and slow progress, even as procurement
       continued and readiness stayed flat, so the program kept buying more
@@ -449,10 +428,9 @@
       rather than more patching.#cn() Those recommendations remain a work in
       progress, and readiness has since deteriorated rather than recovered:
       GAO's June 2026 review found the fleet mission-capable rate had fallen
-      to 44 percent and the full-mission-capable rate to just 25 percent —
-      only about one in four F-35s able to fly all its missions — driven in
-      part by the program accepting new TR-3/Block-4 jets that could not yet
-      fly combat because of software delays, while the Joint Program Office's
+      from 67 percent in FY2021 to 44 percent, and the
+      full-mission-capable rate to just 25 percent —
+      the fleet able to fly all its missions only a quarter of the time — driven in part by the program accepting new aircraft that were non-mission capable because of software delays, while the Joint Program Office's
       remediation ("Global Support Solution Reset") was projected to cost an
       estimated \$13.7 billion more through FY2031, with readiness expected to
       worsen before it improves. The F-35 sits in this book as the live argument for
@@ -466,28 +444,27 @@
   beats: (
     "Most expensive program in history; most of its lifecycle cost is decades of sustainment work",
     "Fleet ran at half goal with over 10,000 components queued and depots still behind schedule",
-    "GAO traced shortfall to maintainer shortages, lack of access to technical data, and contractor dependency",
+    "GAO traced shortfall to maintainer training and support-equipment gaps, lack of access to technical data, and contractor dependency",
     "Aircraft fielded faster than maintainers and data; contractor controls knowledge needed to keep jets flying",
     "GAO urged full sustainment reassessment; costs still rising and fleet readiness still below program goals",
   ),
   references: (
     [U.S. Government Accountability Office, _F-35 Aircraft: DOD and the Military Services Need to Reassess the Future Sustainment Strategy_, #link("https://www.gao.gov/products/gao-23-105341")[GAO-23-105341] (Sept. 2023) — ~2,500 planned aircraft and a lifecycle cost exceeding \$1.7 trillion, ~\$1.3 trillion of it in operating and support.],
     [GAO-23-105341 (2023) — ~55% fleet mission-capable rate (March 2023); over 10,000 components awaiting repair; ~72-day average depot turnaround; depot stand-up behind schedule.],
-    [GAO-23-105341 (2023) — sustainment shortfall traced to maintainer shortages, lack of military access to technical data, and contractor dependency.],
+    [GAO-23-105341 (2023) — sustainment shortfall traced to insufficient technical data, training and support equipment for maintainers, depot stand-up delays, and contractor dependency.],
     [GAO, _F-35 Sustainment: DOD Faces Several Uncertainties…_, #link("https://www.gao.gov/assets/gao-22-105995.pdf")[GAO-22-105995] (2022), and the broader GAO F-35 series — the recurring, year-over-year diagnosis.],
     [GAO-23-105341 (2023) — recommendation that DOD reassess the future sustainment strategy.],
     [GAO, _F-35 Sustainment: Costs Continue to Rise While Planned Use and Availability Have Decreased_, #link("https://www.gao.gov/assets/d24106703.pdf")[GAO-24-106703] (2024) — costs rising while readiness stays below goal.],
   ),
   quote: [Organizational-level maintenance has been affected by a number of issues, including a lack of technical data and training.],
-  quote-source: "Paraphrasing GAO-23-105341, F-35 Aircraft, 2023",
+  quote-source: "GAO-23-105341, F-35 Aircraft, 2023 — What GAO Found",
   le-insight: [
     F-35 is the live, current example of fielding a platform faster than
     its capability infrastructure can be built. The aircraft is the easy
     part; the maintainers are the hard part. A decade of program
     schedules treated maintainer training as a follow-on cost, not a
     fielding gate. The fleet is now operating at half of its design
-    readiness, and the program of record is more than a trillion dollars
-    over its 2018 estimate.
+    readiness, and the program of record now carries a life-cycle estimate above \$2 trillion, of which about \$1.58 trillion is sustainment.
   ],
   lens-approach: [
     LENS treats the F-35 in LEN 5 as the canonical case of *Capability-
@@ -535,15 +512,14 @@
   year: "1991 – 2014",
   domains-list: ("defense",),
   modes-code: "THK",
-  impact: "24% of U.S. KIA in Desert Storm from friendly fire (35 of 146) — well above the historical baseline",
+  impact: "24% of U.S. KIA in Desert Storm from friendly fire (35 of 146) — a rate later reviews found consistent with past wars, not exceptional",
   diagram: dgm.dgm-fratricide,
   kind: "failure",
   summary: [
     Friendly fire killed an unusual share of coalition forces in the 1991
     Gulf War: 35 of 146 U.S. combat deaths (24%) and 72 of 467
     wounded (15%). (The often-cited "2% historical baseline"
-    from Shrader's 1982 study is contested — later estimates run nearer
-    10–15%, and Shrader stepped back from it.) Post-war reviews
+    from Shrader's 1982 study is contested — later estimates run nearer 15–20%, and Hawkins, who had endorsed the 2% figure in 1991, retracted it in print.) Post-war reviews
     blamed the chaos of combat, weak situational awareness and fire-control
     discipline, and combat-identification failures — and noted the military
     lacked a shared record to even study its own pattern. Fratricide is the
@@ -558,8 +534,7 @@
       Friendly fire is as old as war, but its true rate is hard to pin down.
       The most-cited estimate, from Charles Shrader's 1982 study _Amicicide_,
       put it under 2% of battle casualties — a figure later analysts
-      challenged as far too low (nearer 10–15%), and one Shrader
-      himself stepped back from. The disputed baseline mattered because it
+      challenged as far too low (15 to 20% may be the norm), and one Charles Hawkins, who had endorsed it in 1991, retracted in print three years later. The disputed baseline mattered because it
       became the yardstick against which a modern war would be measured — and
       a yardstick set too low makes any later rate look like a catastrophe.#cn()
     ],
@@ -625,7 +600,7 @@
     "Better IFF and blue-force tracking followed, yet rates never settled at a confidently low level",
   ),
   references: (
-    [C. R. Shrader, _Amicicide: The Problem of Friendly Fire in Modern War_ (U.S. Army Combat Studies Institute, 1982) — the under-2% estimate from 269 incidents, a baseline later challenged as too low (with estimates nearer 10–15%).],
+    [C. R. Shrader, _Amicicide: The Problem of Friendly Fire in Modern War_ (U.S. Army Combat Studies Institute, 1982) — the under-2% estimate from 269 incidents, a baseline later challenged as too low (OTA 1993: 15 to 20% may be the norm).],
     [#link("https://www.usni.org/magazines/proceedings/1994/june/friendly-fire-facts-myths-and-misperceptions")["Friendly Fire: Facts, Myths and Misperceptions," _U.S. Naval Institute Proceedings_ (June 1994)] — Desert Storm: 35 of 146 KIA (24%) and 72 of 467 wounded (15%) by friendly fire; critique of the 2% "historical norm."],
     [Khafji and Warrior fratricide incidents (Feb. 1991) — see USNI _Proceedings_ (1994) and #link("https://time.com/archive/6718429/gulf-war-they-didnt-have-to-die/")[Time, "They Didn't Have to Die"]. _(Per-incident casualty figures vary across sources; see AUDIT.)_],
     [U.S. GAO, _Operation Desert Storm_ fratricide investigations — Apache incident (OSI-93-4) and Army fratricide investigation (OSI-95-10) — causes and the Army's reviews.],
@@ -739,12 +714,9 @@
     ],
     // -- The Investigation --
     [
-      The Holloway Special Operations Review Group identified the
-      operation's "ad hoc-ery" as central: each service contributed its
+      The Holloway Special Operations Review Group named "the ad hoc nature of the organization and planning" as one of two fundamental concerns: each service contributed its
       own units, equipment, command relationships, and communications;
-      the aircrews had not trained together as a unit; the RH-53D had
-      been selected partly for a minesweeping cover story rather than for
-      fitness for a desert rescue. There was no standing organization to
+      the aircrews had not trained together as a unit; the flight crews came from a minesweeping squadron picked as the most expedient solution, not from a unit built for the mission. There was no standing organization to
       own the mission end to end — no single authority responsible for the
       force's training, equipment fit, and command architecture as a whole,
       so each gap was someone's problem in part and no one's in full.#cn()
@@ -776,7 +748,7 @@
   beats: (
     "No standing joint command existed; the rescue force was drawn ad hoc from four services",
     "Three RH-53s failed at Desert One; on withdrawal a helicopter struck a C-130 killing eight",
-    "Holloway named ad hoc assembly, untrained aircrews, and a cover story driven aircraft choice",
+    "Holloway named ad hoc organization and planning, crews outside their trained mission areas, and an expedient squadron pick",
     "Each service was competent in its lane; cross-service integration as a deliverable did not exist",
     "Reform built JSOC, Goldwater Nichols in 1986, and USSOCOM in 1987 as standing joint capability",
   ),
@@ -787,8 +759,8 @@
     [Nunn-Cohen Amendment (1986), establishing U.S. Special Operations Command (1987).],
     [Locher, J. (2002), _Victory on the Potomac_ — the reform arc from Desert One to Goldwater-Nichols.],
   ),
-  quote: [The mission was ad hoc — assembled from units, equipment, and command relationships that had never operated together.],
-  quote-source: "Paraphrasing the Holloway Special Operations Review Group, 1980",
+  quote: [By not utilizing an existing JTF organization, the Joint Chiefs of Staff had to start literally from the beginning to establish a JTF, create an organization, provide a staff, develop a plan, select the units and train the force.],
+  quote-source: "Holloway Special Operations Review Group, Rescue Mission Report, 1980",
   le-insight: [
     Eagle Claw is the canonical case in U.S. defense for the absence of
     institutionalized cross-service capability. Each service was
@@ -812,13 +784,13 @@
   reflection-list: (
     [Where in your domain does a cross-organizational capability exist on paper but not in practice? What would force its institutionalization?],
     [Eagle Claw produced USSOCOM and Goldwater-Nichols six years later. Sketch the institutional design that an equivalent failure in your domain would force into existence.],
-    [The Holloway Commission named the mission's ad-hoc-ery as the diagnosis. What standing capability — institution, command, training pipeline — does your domain currently lack that an Eagle-Claw-class failure would force into existence?],
+    [The Holloway Commission named the ad hoc nature of the organization and planning as the diagnosis. What standing capability — institution, command, training pipeline — does your domain currently lack that an Eagle-Claw-class failure would force into existence?],
   ),
   approaches: (
     during: (
       [Stand up a single command that owns the cross-organizational mission end to end — its force, equipment fit, communications, and training — rather than assembling it per mission.],
       [Require the contributing units to train together as one force on a common communications architecture before they are committed.],
-      [Select equipment for fitness to the actual mission, not for a convenient cover story or parent-service availability.],
+      [Select the unit and the equipment for fitness to the actual mission, not for whichever squadron is most expedient to task.],
     ),
     after: (
       [Audit whether a cross-organizational capability that exists on paper has ever actually operated as one force, and treat the absence of joint reps as an unfilled gap.],
@@ -881,17 +853,14 @@
       gate to look in the wrong place and reject the real track as noise. On
       25 February 1991 an incoming Scud arrived where the Patriot was no
       longer searching, passed unengaged, and struck a barracks in Dhahran,
-      killing twenty-eight soldiers of the 14th Quartermaster Detachment and
-      wounding about a hundred.#cn()
+      killing twenty-eight soldiers — thirteen of them from the 14th Quartermaster Detachment — and wounding ninety-nine.#cn()
     ],
     // -- The Investigation --
     [
       The drift was not unknown: Israeli operators had flagged it two weeks
       earlier from their own sustained use, and engineers had a patch already
       in hand — which reached Dhahran the day after the strike, too late to
-      matter.#cn() The only field mitigation was an advisory to reboot after
-      "very long" run times, never defining "very long," so a crew could obey
-      the instruction to the letter and still drift into the danger band. The
+      matter.#cn() The only field warning said "very long" run times could shift the range gate, never defining "very long" and never naming a reboot interval, so a crew could heed it to the letter and still drift into the danger band. The
       General Accounting Office found the Army had simply presumed no one would
       run a battery continuously for so long, and so never treated the
       accumulating error as a hazard worth specifying or warning against.#cn()
@@ -1011,12 +980,7 @@
     ascending on the published civilian-traffic corridor. Yet operators
     in the Combat Information Center, primed by a simultaneous surface
     fight to expect a hostile inbound, tagged the contact as a military
-    F-14 — from an IFF Mode II squawk mis-correlated from an aircraft at Bandar
-    Abbas, not the airliner, which squawked only civilian Mode III — and,
-    misreading its closing range as a descent, fired. The Fogarty Report (DoD, 1988) attributed the
-    tragedy to human error under extreme stress — confirmation bias,
-    "scenario fulfillment," and the unconscious distortion of data — not
-    equipment failure. The 1992 Newsweek "Sea of Lies"
+    F-14 — from an IFF Mode II squawk operators reported on their consoles but the ship's own system never held, the airliner squawking only civilian Mode III — and, on reports of a descent its own tapes contradicted, fired. The Fogarty Report (DoD, 1988) found the Aegis system functioned as designed and judged that stress, task fixation, and unconscious distortion of data — "scenario fulfillment" — may have played a major role. The 1992 Newsweek "Sea of Lies"
     investigation and a 2018 US Naval Institute _Proceedings_
     retrospective reopened both the operational record and the
     interface-design lessons. Vincennes is the book's foundational
@@ -1064,18 +1028,11 @@
     [
       The Aegis SPY-1A radar had not malfunctioned: it correctly showed
       the aircraft ascending. The IFF interrogation system added a
-      structural confusion of its own: the Vincennes' IFF returns
-      reflected both the airliner's Mode III civilian transponder and,
-      apparently, a Mode II military code from another aircraft on the
-      ground at Bandar Abbas — a mode-confusion failure that left the
-      crew with ambiguous identification at the worst possible
-      moment.#cn() The Fogarty Report (Rear Adm. William Fogarty, DoD,
+      structural confusion of its own: the Vincennes' recorded data held only the airliner's Mode III civilian transponder, while operators reported a momentary Mode II-1100 on their consoles that the ship's system never held — a source the investigation never established.#cn() The Fogarty Report (Rear Adm. William Fogarty, DoD,
       August 1988) attributed the tragedy to human error under extreme
-      stress — confirmation bias and the "stress and unconscious
-      distortion of data" — naming "scenario fulfillment" as the
+      stress — confirmation bias and the "stress, task fixation, and unconscious distortion of data" — naming "scenario fulfillment" as the
       psychological mechanism by which operators read every indication
-      through the lens of a presumed hostile attack. An inexperienced operator misread the range as a descent and others
-      in the CIC accepted it rather than checking,#cn()
+      through the lens of a presumed hostile attack. Reports of "descending altitude" reached the CO while the ship's own command-and-decision system showed a continuous ascent, and no one in the CIC reconciled the two,#cn()
       a shared error that is more damning than a single misread because
       it shows the interface offered no cross-check strong enough to
       break a wrong reading once the team had settled into it. The
@@ -1089,8 +1046,7 @@
       a particular misreading not merely possible but likely. Correct
       performance was possible in principle and unsustainable in
       practice — and the gap between those two is the engineering
-      problem. An Aegis CIC display that surfaced altitude as a numeric
-      readout but not as a trend, that gave equal weight to civilian and
+      problem. An Aegis large screen display that could not show altitude at all, that gave equal weight to civilian and
       military IFF returns under mode confusion, and that offered no
       mandatory disconfirmation step before weapons release, had not
       been designed for the stress it would actually meet. The burden of
@@ -1101,11 +1057,7 @@
     // -- Aftermath & Reform --
     [
       The Navy's post-incident response included revised tactical
-      doctrine for civilian-traffic deconfliction in the Gulf, updated
-      Aegis training scenarios that explicitly rehearsed the
-      scenario-fulfillment failure mode, and changes to the CIC display
-      sequence and crew procedures around IFF interpretation under mode
-      confusion. The case has remained a standing reference in the
+      doctrine for civilian-traffic deconfliction in the Gulf, a fleet-wide identification matrix for dense air-traffic environments, a review of Aegis IFF operator training on the selectable RCI modes, and a redesign of the large screen display so it could show altitude directly. The case has remained a standing reference in the
       human-AI-teaming literature: a 2018 _US Naval Proceedings_
       retrospective placed it at the heart of how operators should be
       teamed with automated decision aids under stress, and the
@@ -1123,8 +1075,8 @@
   ),
   beats: (
     "Aegis cruiser fought Iranian gunboats near a dual-use airfield in the crowded Persian Gulf",
-    "Crew tagged an ascending Airbus as a diving F-14 — a mis-correlated IFF squawk plus a range-read-as-altitude error — and fired; all 290 died",
-    "Aegis radar was correct; an operator misread the closing range as a descent and others in the CIC accepted it under presumed-hostile framing",
+    "Crew tagged an ascending Airbus as a diving F-14 — a Mode II squawk the ship's system never held, plus descent reports its tapes contradicted — and fired; all 290 died",
+    "Aegis radar was correct; the CO got descent reports the C&D tapes contradict, which Fogarty laid to stress, task fixation, and unconscious distortion",
     "Interface left burden of overriding expectation to operators stripped of time by combat",
     "Naval retrospective reframed loss as predictable teaming failure of unguarded decision aids",
   ),
@@ -1133,12 +1085,12 @@
     [Fogarty report (1988) — the Aegis SPY-1A radar functioned; the aircraft was ascending while the crew perceived a descent; "scenario fulfillment" as the psychological mechanism.],
     [Fogarty report (1988) — "human error under extreme stress," confirmation bias, and "unconscious distortion of data" (quoted); shared-error finding across CIC operators.],
     [J. Barry & R. Charles, "Sea of Lies," _Newsweek_ (July 13, 1992) — contemporaneous reinvestigation of the operational record, including the disputed account of Vincennes' position relative to Iranian territorial waters.],
-    [#link("https://www.usni.org/magazines/proceedings/")[US Naval Institute _Proceedings_] retrospective on the Vincennes incident (2018) — the human-AI-teaming reframing and the standing case-study role.],
+    [LTC A. Tingle, USA, #link("https://www.usni.org/magazines/proceedings/2018/july/human-machine-team-failed-vincennes")["The Human-Machine Team Failed Vincennes"], _U.S. Naval Institute Proceedings_ 144/7 (July 2018) — the human-AI-teaming reframing and the standing case-study role.],
     [M. L. Cummings, "Human Supervisory Control of Weapon Systems" (MIT) — interface design and automation under time pressure as the engineering frame for the case.],
     [G. Klein, _Sources of Power_ (1998); M. Endsley, "Toward a Theory of Situation Awareness" (1995) — the naturalistic-decision-making and situation-awareness literatures that treat Vincennes as the canonical worked example.],
   ),
-  quote: [The shootdown of Flight 655 ... reveals lessons for technology adoption and its use in stressful situations.],
-  quote-source: "Paraphrasing U.S. Naval Proceedings retrospective on the Vincennes incident, 2018",
+  quote: [In combat, technology should create time for the decision maker, not simply provide information.],
+  quote-source: "Anthony Tingle, \"The Human-Machine Team Failed Vincennes,\" U.S. Naval Institute Proceedings, July 2018",
   le-insight: [
     Vincennes is the canonical case for human-AI teaming under stress.
     The system did not lie. The operators did not act in bad faith. The
@@ -1355,7 +1307,7 @@
   year: "2008 – 2012",
   domains-list: ("aviation", "defense", "human factors"),
   modes-code: "HKN",
-  impact: "Between 2008 and 2012 USAF F-22 Raptor pilots reported a cluster of physiological events consistent with hypoxia; one fatal accident (Capt. Jeffrey Haney, Nov 2010) was attributed in part to operator response to a bleed-air shutoff; the fleet was stood down in 2011, and the USAF Scientific Advisory Board found no single root cause but a contributing oxygen-delivery issue rooted in the On-Board Oxygen Generation System (OBOGS) and associated equipment",
+  impact: "Between 2008 and 2012 USAF F-22 Raptor pilots reported a cluster of physiological events consistent with hypoxia; one fatal accident (Capt. Jeffrey Haney, Nov 2010) was attributed in part to operator response to a bleed-air shutoff; the fleet was stood down in 2011, and the USAF Scientific Advisory Board had not determined a root cause and found OBOGS performance exceeded pilot physiological needs; the Air Force later traced the events to a valve inflating the pilots' pressure vests and restricting breathing",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -1370,12 +1322,13 @@
     2010 (Capt. Jeffrey Haney) was attributed in part to operator
     response after a bleed-air shutoff. In May 2011 the USAF stood
     the fleet down for several months. The USAF Scientific Advisory
-    Board's investigation, with NASA contribution, found *no single
-    root cause* — the load-bearing finding of the case. The set of
-    contributing factors included the On-Board Oxygen Generation
-    System (OBOGS) and its associated equipment (regulators, hoses,
-    upper-pressure-garment vest), aircrew flight equipment fit,
-    and the absence of in-cockpit physiological monitoring that
+    Board's investigation, with NASA contribution, reported it had *not
+    determined the root cause* — the load-bearing finding of the case —
+    while clearing OBOGS itself: system performance exceeded pilot
+    physiological needs. What it found was a lack of robustness in the
+    life-support configuration, the Breathing Regulator Anti-G valve and
+    pressure-garment vest, aircrew flight equipment fit, and the absence
+    of in-cockpit physiological monitoring that
     would have permitted earlier detection. The case is the
     canonical recent instance of a sustainment-era failure whose
     diagnosis was protracted because the system as fielded had no
@@ -1399,14 +1352,7 @@
       could resolve them.#cn()
     ],
     [
-      The forcing event was the loss of Capt. Jeffrey Haney and
-      his aircraft in November 2010 over Alaska. The Air Force
-      Accident Investigation Board found that a bleed-air leak
-      had triggered an automatic bleed-air shutoff, which in
-      turn cut OBOGS supply, and that the accident sequence
-      involved pilot response under conditions consistent with
-      hypoxia. The board's findings were contested by the
-      pilot's family and reviewers; what the accident
+      The public forcing event was the loss of Capt. Jeffrey Haney and his aircraft in November 2010 over Alaska, though the Scientific Advisory Board later set it aside. The Air Force Accident Investigation Board found that a bleed-air leak had triggered an automatic shutoff that cut oxygen flow to the pilot, but ruled that hypoxia did not contribute and laid the cause to the pilot's failure to initiate a timely dive recovery. The DoD Inspector General later found the board's conclusions unsupported by the facts; what the accident
       crystallized was that the platform's response to an OBOGS
       cutoff placed an unreasonable burden on pilot recognition
       and reaction in a window the platform did not instrument.
@@ -1416,13 +1362,7 @@
     [
       The USAF Scientific Advisory Board investigation, with
       participation from NASA's review of the hypoxia incidents,
-      reported the load-bearing finding the case turns on: there
-      was *no single root cause*. The contributing factors
-      included the OBOGS system and its associated equipment
-      (regulators, hose configurations, the upper-pressure
-      garment vest that under some conditions inhibited normal
-      breathing), aircrew flight-equipment fit issues, and the
-      absence of in-cockpit physiological monitoring. The
+      reported the load-bearing finding the case turns on: it had *not determined the root cause*, and a Note in Proof recorded that the Life Support Systems Task Force believed it had. The findings ran the other way on OBOGS — system performance exceeded pilot physiological needs — and settled on a lack of robustness in the life-support configuration, the Breathing Regulator Anti-G valve and upper-pressure-garment vest that under some conditions restricted normal breathing, aircrew flight-equipment fit issues, and the absence of in-cockpit physiological monitoring. The
       investigation made several corrective recommendations —
       including modifications to the upper-pressure garment,
       changes to OBOGS components, and the addition of
@@ -1446,8 +1386,7 @@
       population.#cn()
     ],
     [
-      The hedge survives into the case verbatim. The USAF SAB
-      explicitly declined to identify a single root cause, and
+      The hedge survives into the case verbatim. The USAF SAB reported it had not yet determined the root cause, and
       the corrective actions were a bundle: garment modification,
       OBOGS component changes, training emphasis on hypoxia
       recognition, and the long-overdue addition of
@@ -1465,9 +1404,9 @@
   ),
   beats: (
     "F-22 physiological-event cluster 2008–2012; symptoms consistent with hypoxia, often with persistent post-flight effects",
-    "Capt. Haney fatal accident Nov 2010 — bleed-air shutoff cut OBOGS supply; AIB findings contested but the burden on pilot recognition is clear",
+    "Capt. Haney fatal accident Nov 2010 — bleed-air shutoff cut oxygen flow; AIB ruled out hypoxia and blamed the pilot; DoD IG found that unsupported",
     "USAF fleet stood down May 2011; USAF SAB and NASA review",
-    "Load-bearing finding: no single root cause; contributing factors include OBOGS, upper-pressure-garment vest, aircrew equipment fit, absence of in-cockpit physiological monitoring",
+    "Load-bearing finding: root cause not determined; OBOGS performance cleared; factors include the BRAG valve and pressure vest, equipment fit, absence of in-cockpit physiological monitoring",
     "Symptom reports decreased after bundle of corrections; attribution to any single component not possible from available evidence",
   ),
   approaches: (
@@ -1478,17 +1417,17 @@
     ),
     after: (
       [Implement the corrective actions as a bundle — garment modification, OBOGS components, training, physiological monitoring — and report the population-level outcome decline as bundle evidence, not as evidence about any single component.],
-      [Carry the "no single root cause" hedge into program communication; the multi-cause structure is the case's teaching point and the basis for the sustainment-instrumentation argument.],
+      [Carry the "root cause not determined" hedge into program communication; the multi-cause structure is the case's teaching point and the basis for the sustainment-instrumentation argument.],
       [Treat the F-22 OBOGS experience as a fielded-platform sustainment lesson for subsequent platforms (e.g., F-35) — the analogous instrumentation question should be answered before the cluster appears, not after.],
     ),
   ),
   references: (
-    [USAF Scientific Advisory Board (2012), "Aircraft Oxygen Generation Study" — final report on F-22 physiological-event investigation.],
+    [USAF Scientific Advisory Board, _Report on Aircraft Oxygen Generation_, SAB-TR-11-04 (1 February 2012) — the 2011 Quicklook Study on the F-22 hypoxia-like incidents.],
     [NASA Engineering and Safety Center (2012), report contributing to the F-22 hypoxia review.],
     [USAF Accident Investigation Board (2011), Capt. Jeffrey Haney F-22 accident report (Nov 2010).],
-    [GAO-12-789 (2012), "Actions Needed to Establish Effective Oversight of F-22 Pilot Physiological Issues" — congressional record.],
+    [U.S. House Armed Services Subcommittee on Tactical Air and Land Forces, _F-22 Pilot Physiological Issues_, H.A.S.C. No. 112-154 (13 September 2012) — congressional record.],
   ),
-  quote: [The variable that mattered most — was the pilot getting enough oxygen? — was the variable the platform did not measure.],
+  quote: [The variable that mattered most — was the pilot breathing freely? — was the variable the platform did not measure.],
   quote-source: "Editors' synthesis of the USAF SAB and NASA reviews.",
   le-insight: [
     F-22 OBOGS is the canonical recent sustainment-instrumentation-
@@ -1496,7 +1435,7 @@
     in-cockpit measurement of pilot oxygenation, the diagnostic
     process took years against a noisy self-report channel, and
     the corrective action was an irreducibly multi-cause bundle.
-    The "no single root cause" finding is the case.
+    The "root cause not determined" finding is the case.
   ],
   lens-approach: [
     F-22 OBOGS is the aerospace instrumentation-gap case
@@ -1513,7 +1452,7 @@
   literature-items: (
     [USAF SAB (2012), Aircraft Oxygen Generation Study],
     [NASA ESC (2012), F-22 hypoxia review contribution],
-    [GAO-12-789 (2012), F-22 pilot physiological issues],
+    [H.A.S.C. No. 112-154 (2012), F-22 Pilot Physiological Issues hearing],
   ),
   reflection-list: (
     [Identify a fielded high-performance platform in your domain where the variable that determines mission completion is not directly measured. What is the analog of in-cockpit physiological monitoring, and what would it cost to add at sustainment vs. having designed it in?],
@@ -1542,14 +1481,10 @@
   ),
   kind: "failure",
   summary: [
-    The U.S. Navy entered World War II with the Mark 14 torpedo, so
-    expensive that the Bureau of Ordnance had effectively forbidden
-    live testing in peacetime. Through 1942 submarine crews reported
+    The U.S. Navy entered World War II with the Mark 14 torpedo, so guarded and so costly to expend that the Bureau of Ordnance had not destructively tested it since 1926. Through 1942 submarine crews reported
     torpedoes running deep, failing to detonate, or exploding
     prematurely; the Bureau insisted the weapon was sound and blamed
-    the operators. It took about twenty months and the personal intervention
-    of Admiral Charles Lockwood — who ordered fleet-level live-fire
-    tests — to confirm three separate defects: the torpedo ran about
+    the operators. It took about twenty months and repeated fleet-level forcing — Lockwood's net tests, the fleet-ordered net firings of summer 1942, and Lockwood's Pearl Harbor trials of July 1943 — to confirm three separate defects: the torpedo ran about
     ten feet too deep, its magnetic exploder fired erratically, and its
     contact pin crushed on a square hit. The fixes were simple once the
     defects were acknowledged. The binding constraint was institutional:
@@ -1559,10 +1494,7 @@
     // -- Background --
     [
       The Mark 14 was the U.S. Navy's standard submarine torpedo at the
-      start of the Pacific War. It had been so expensive to test that
-      the Bureau of Ordnance had effectively forbidden live trials in
-      the 1930s; the weapon went to war essentially unproven against
-      realistic conditions, so the very decision meant to conserve a scarce
+      start of the Pacific War. No destructive test had been fired with its magnetic exploder since 1926 — economy and secrecy together closing off realistic trials; the weapon went to war essentially unproven against realistic conditions, so the very decision meant to conserve a scarce
       and costly weapon guaranteed that its defects would first be discovered
       in combat, by the crews who could least afford them to surface there.#cn()
     ],
@@ -1580,17 +1512,15 @@
     ],
     // -- The Investigation --
     [
-      It took about twenty months and the intervention of Admiral Charles
-      Lockwood, commander of the Pacific submarine force, who ordered
-      fleet-level testing. A live-fire trial — and the USS Tinosa's
-      July 1943 attack on the Tonan Maru, in which eleven torpedoes struck
-      the stopped ship squarely and failed to detonate — forced the issue.
-      The tests confirmed the
+      It took about twenty months and three separate forcings:
+      Lockwood's net test off Australia in June 1942, the
+      fleet-ordered net firings that confirmed the depth error that
+      summer, and Lockwood's Pearl Harbor trials after the USS Tinosa's July 1943 attack on the Tonan Maru, in which nine torpedoes struck the stopped ship squarely and failed to detonate — forced the issue.
+      Each in turn confirmed that the
       torpedo ran about ten feet too deep, that the Mark 6 magnetic
       exploder failed routinely, and that the contact pin buckled on
       perpendicular impact — three independent defects that had been masking
-      one another at sea, which is why a fleet commander's controlled trial,
-      not another combat patrol, was finally able to separate and prove them.#cn()
+      one another at sea, which is why it took a fleet commander's controlled trials, not further combat patrols, to force each defect in turn onto the record.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -1617,9 +1547,9 @@
     ],
   ),
   beats: (
-    "The Bureau of Ordnance had effectively forbidden live trials, so the Mark 14 went to war unproven",
+    "No destructive trial had been fired since 1926, so the Mark 14 went to war unproven",
     "Submarine crews reported deep runs, premature detonations, and crushed contact pins from early 1942",
-    "Lockwood ordered fleet tests; Tinosa's eleven duds on a stopped target finally separated the three defects",
+    "Lockwood ordered fleet tests; the three defects were conceded one at a time across some twenty-one months, Tinosa's eleven duds exposing the last of them",
     "The binding gap was a channel by which the bureau could be made to hear what the boats already knew",
     "By late 1943 the three defects were corrected; the episode became the canonical insulated bureau case",
   ),
@@ -1688,12 +1618,12 @@
   year: "1991 – present",
   domains-list: ("defense",),
   modes-code: "THN",
-  impact: "~65 killed across ~17 hull-loss accidents since 1991; serious-mishap rate above comparable fleets (GAO-26-108905, 2025); some fixes stretch to the 2030s",
+  impact: "62 killed across 16 hull-loss accidents since 1991; serious-mishap rate above comparable fleets (GAO-26-107285, 2025); some fixes stretch to the 2030s",
   diagram: dgm.dgm-osprey,
   kind: "failure",
   summary: [
     The V-22 Osprey — the tiltrotor flown by the Marines, Air Force, and
-    Navy — has had about 17 hull-loss accidents and roughly 65 fatalities
+    Navy — has had about 16 hull-loss accidents and 62 fatalities
     since 1991, including 19 Marines in a single 2000 test crash and 8
     airmen off Yakushima, Japan, in 2023. The Yakushima crash traced to
     cracks in a transmission gear (a flaw in the X-53 steel alloy) and a
@@ -1711,8 +1641,7 @@
       The V-22 Osprey tilts its rotors to take off like a helicopter and
       cruise like a turboprop — an ambitious capability shared awkwardly
       across three services and a joint program office. Since development
-      began in the 1980s it has suffered about 17 hull-loss accidents and
-      roughly 65 fatalities, including 19 Marines in a single crash during
+      began in the 1980s it has suffered 16 hull-loss accidents and 62 fatalities, including 19 Marines in a single crash during
       2000 testing.#cn() The same configuration that makes the tiltrotor
       uniquely useful makes it uniquely demanding to sustain, and the joint
       arrangement diffused ownership of that burden across three services that
@@ -1738,13 +1667,7 @@
       years to adequately assess and address mounting safety risks, even as
       service members died.#cn() Serious-mishap rates generally exceeded
       those of comparable Navy and Air Force fixed- and rotary-wing fleets
-      from FY2015 to FY2024 and spiked in 2023–2024; a gearbox flaw dating to
-      2006 was not evaluated until 2024, and full fixes for some issues are
-      not expected until the 2030s.#cn() An eighteen-year gap between a
-      gearbox flaw arising and its being evaluated is the timescale of
-      normalization made literal: the deviation persisted long enough to
-      become the airframe's accepted background condition rather than an open
-      defect demanding action.
+      from FY2015 to FY2024 and spiked in 2023–2024; the median age of the program's 28 unresolved system safety risk assessments was about nine years, and full gearbox fixes are not expected until 2034.#cn() Risks carried six to fourteen years are the timescale of normalization made literal: the deviation persisted long enough to become the airframe's accepted background condition rather than an open defect demanding action.
     ],
     // -- The Capability Gap --
     [
@@ -1775,17 +1698,17 @@
     ],
   ),
   beats: (
-    "Tiltrotor shared awkwardly across three services has logged seventeen hull losses since 1991",
+    "Tiltrotor shared awkwardly across three services has logged sixteen hull losses since 1991",
     "Yakushima crash killed eight after gear cracks and a pilot pressing through warnings",
-    "GAO and NAVAIR found years of unaddressed risk, elevated mishap rates, eighteen-year gearbox lag",
+    "GAO and NAVAIR found years of unaddressed risk, elevated mishap rates, nine-year median risk age",
     "Documented shortfall persists because parallel service adjustments never converge on resolution",
     "Groundings and redesigns continue while full gearbox fixes stretch toward 2034",
   ),
   references: (
-    [#link("https://en.wikipedia.org/wiki/Accidents_and_incidents_involving_the_V-22_Osprey")[Compiled V-22 accident record] — ~17 hull losses and ~65 fatalities since 1991, including the 2000 Marana test crash (19 Marines).],
+    [#link("https://en.wikipedia.org/wiki/Accidents_and_incidents_involving_the_V-22_Osprey")[Compiled V-22 accident record] — 16 hull losses and 62 fatalities since 1991, including the 2000 Marana test crash (19 Marines).],
     [U.S. Air Force Accident Investigation Board findings, via #link("https://news.usni.org/2024/08/02/investigation-into-2023-u-s-air-force-cv-22b-osprey-crash-off-japan")[USNI News] (Aug. 2024) — the 29 Nov. 2023 Yakushima CV-22B crash: transmission-gear cracks (X-53 inclusions) and continued flight despite warnings.],
-    [U.S. GAO, _Osprey Aircraft: Additional Oversight and Information Sharing Would Improve Safety Efforts_, #link("https://files.gao.gov/reports/GAO-26-108905/index.html")[GAO-26-108905] (Dec. 2025) — the joint program office's failure to assess and address risks.],
-    [GAO-26-108905 (2025) — serious-mishap rates exceeding comparable Navy/Air Force fleets (FY2015–FY2024); the 2006 gearbox flaw evaluated only in 2024; fixes into the 2030s.],
+    [U.S. GAO, _Osprey Aircraft: Additional Oversight and Information Sharing Would Improve Safety Efforts_, #link("https://www.gao.gov/products/gao-26-107285")[GAO-26-107285] (Dec. 2025) — the joint program office's failure to assess and address risks.],
+    [GAO-26-107285 (2025) — serious-mishap rates exceeding comparable Navy/Air Force fleets (FY2015–FY2024); 28 unresolved system safety risks with a median age of about nine years, over half carried six to fourteen years.],
     [NAVAIR independent review of the V-22 (Dec. 2025) — materiel and cross-service-coordination factors and unresolved catastrophic parts issues.],
     [#link("https://news.usni.org/2025/12/12/navy-and-gao-reports-v-22-osprey-program")[USNI News, V-22 program coverage] (2024–2025).],
   ),
@@ -1814,7 +1737,7 @@
   reflection-list: (
     [Identify a platform or process in your domain that has been operating in a documented shortfall for years. What measurement would have to change for the shortfall to become unacceptable?],
     [The V-22's three services do not converge on remediation. Design the governance structure that would force convergence.],
-    [A gearbox flaw went eighteen years between arising and being evaluated. What mechanism in your domain converts a long-tolerated defect back into an open item that demands action?],
+    [Osprey safety risks sat unresolved for a median of nine years, and some for fourteen. What mechanism in your domain converts a long-tolerated defect back into an open item that demands action?],
   ),
   approaches: (
     during: (
@@ -1855,9 +1778,7 @@
   summary: [
     The September 11, 2001 attacks, which killed 2,977 people, were
     enabled in part by intelligence the U.S. government already held but
-    never integrated. The CIA knew, from a January 2000 meeting in Kuala
-    Lumpur, that two future hijackers had entered the country; it did not
-    tell the FBI. The FBI separately flagged suspicious flight-training
+    never integrated. The CIA tracked two future hijackers to a January 2000 meeting in Kuala Lumpur and lost them in Bangkok; it did not watch-list them, and it did not tell the FBI about one man's U.S. visa or the other's travel to the United States. The FBI separately flagged suspicious flight-training
     activity in Phoenix and Minneapolis in 2001, but that information was
     never aggregated. Visa issuance, immigration tracking, and
     watch-listing were each run by a different agency, and the handoffs
@@ -1937,7 +1858,7 @@
   references: (
     [National Commission on Terrorist Attacks Upon the United States, _The 9/11 Commission Report_ (2004) — the quoted "failure of imagination" and the specific sharing failures.],
     [_9/11 Commission Report_ (2004) — the Kuala Lumpur tracking and the Phoenix/Minneapolis flagging.],
-    [_Joint Inquiry into Intelligence Community Activities Before and After September 11, 2001_ (2002) — cross-agency information-sharing failures.],
+    [_Joint Inquiry into Intelligence Community Activities Before and After the Terrorist Attacks of September 11, 2001_, S. Rept. 107-351 (2002) — cross-agency information-sharing failures.],
     [Zegart, A. (2007), _Spying Blind_ — structural-organizational analysis of the failures.],
     [Intelligence Reform and Terrorism Prevention Act of 2004 — creation of the ODNI and NCTC.],
   ),
