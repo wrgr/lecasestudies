@@ -11,7 +11,7 @@
   number: "6",
   title: "Aviation & Aerospace — What Works — and the Frontier",
   subtitle: "When an industry engineers its own error rate down and keeps the books open.",
-  epigraph: [Flying got safer when reporting became cheaper than concealment.],
+  epigraph: [When reporting became cheaper than concealment, aviation could finally see what it was fixing.],
   epigraph-source: "An observation recurring across the chapter's cases.",
 )
 
