@@ -210,7 +210,7 @@
         upper("capabilitymatters.org · LENS at Johns Hopkins"))
       #v(4pt)
       #text(font: sans, size: 6.5pt, tracking: 1.4pt, fill: rgb("#B7C9E0"),
-        upper("Edition · 15 June 2026"))
+        upper("Edition · August 2026"))
     ]
   ]
 }

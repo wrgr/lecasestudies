@@ -80,9 +80,11 @@ Two standing judgement calls for the editor:
 - `dgm-teamstepps` is left **unmarked**. The worklist classed it favourable, but structurally it is
   the same object as `dgm-17year` — a pathway with a destination and no outcome claim beyond the
   category label. Marking it would have meant colouring all three chain circles.
-- `dgm-makary` is marked **adverse** beside the 251K bar that its own caption calls *contested* as
-  third-ranking. The triangle asserts direction, not truth, and deaths are adverse at any count — but
-  a reader could take it as endorsing the number.
+- `dgm-makary` — **RESOLVED (editor, August 2026): glyph removed, figure drawn neutral.** The
+  triangle sat beside the 251K bar that the figure's own caption calls *contested* as third-ranking.
+  Valence and magnitude are separable in principle, but the focal value here *is* the disputed
+  estimate, so the glyph read as endorsement. The bar reverts from `dgm-adverse` to `dgm-accent`,
+  joining `dgm-therac` and `dgm-17year` as a neutral figure. Outcome figures marked: **34 of 35**.
 
 Still open: the eight generic constructors (`dgm-stat`, `dgm-compare`, `dgm-cascade`, `dgm-timeline`,
 `dgm-flow`, `dgm-ring`, `dgm-curve`, `dgm-pair-bars`) have no valence parameter, so the ~56 call

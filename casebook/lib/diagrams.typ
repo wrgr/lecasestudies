@@ -690,7 +690,7 @@
     let bars = (
       ("Heart disease", 600, dgm-rule),
       ("Cancer",        595, dgm-rule),
-      ("Medical error", 251, dgm-adverse),
+      ("Medical error", 251, dgm-accent),
     )
     let max-h = 2.6
     for i in range(bars.len()) {
@@ -701,7 +701,11 @@
       content((x, 0.6 + h + 0.2), text(font: sans, size: 6.5pt, fill: c, str(v) + "K"), anchor: "south")
       content((x, 0.4), text(font: sans, size: 6pt, fill: dgm-dim, lab), anchor: "north")
     }
-    outcome-mark("adverse", 7.65, 1.15)
+    // No valence glyph, per editor ruling (August 2026): this figure's focal
+    // value is the contested estimate itself, not a settled outcome, so it is
+    // drawn neutral like dgm-therac and dgm-17year. A triangle here asserts
+    // direction beside a number the caption calls contested, and a reader
+    // could take it as endorsing the number.
     content((4.5, 3.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "deaths per year, U.S."), anchor: "south")
   })
 )
