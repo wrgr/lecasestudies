@@ -8,8 +8,8 @@ Do not hand-edit. Re-run `scripts/build.sh` to refresh.
 | cover-print.pdf | 8×10 Lulu cover wrap | spine **17.39 mm** |
 | capability-matters-local-print.pdf | grayscale interior + colour covers, US Letter | 279 |
 | capability-matters-digital.pdf | 8×10 main volume, colour on cream | 277 |
-| capability-matters-complete.pdf | 8×10 full standalone, every case | 884 |
+| capability-matters-complete.pdf | 8×10 full standalone, every case | 887 |
 | capability-matters-lens-companion.pdf | 8×10 program docs + crosswalks, white | 50 |
-| capability-matters-validation-audit.pdf | 8×10 audit / tracking / references, white | 97 |
+| capability-matters-validation-audit.pdf | 8×10 audit / tracking / references, white | 98 |
 
 Interior padded to a 4-page binding signature; spine = pages × 0.0621 mm.

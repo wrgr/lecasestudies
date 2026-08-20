@@ -18,9 +18,9 @@ Six deliverables, all mirrored into `../products/` (`products/print/` for the pr
 | `cover-print.pdf` | print | 8 × 10 wrap | — | Lulu cover, spine **17.39 mm** |
 | `capability-matters-local-print.pdf` | print | US Letter, grayscale interior + colour covers | 279 | print at home / office (black on white; covers in colour) |
 | `capability-matters-digital.pdf` | digital | 8 × 10, colour, cream | 277 | main volume — screen / PDF distribution |
-| `capability-matters-complete.pdf` | digital | 8 × 10, colour, cream | 884 | complete standalone — every case |
+| `capability-matters-complete.pdf` | digital | 8 × 10, colour, cream | 887 | complete standalone — every case |
 | `capability-matters-lens-companion.pdf` | digital | 8 × 10, white | 50 | concentration docs + crosswalks + canonical `lens_program/` docs |
-| `capability-matters-validation-audit.pdf` | digital | 8 × 10, white | 97 | audit tracker — indexes + per-case references |
+| `capability-matters-validation-audit.pdf` | digital | 8 × 10, white | 98 | audit tracker — indexes + per-case references |
 
 These figures are hand-copied from `build/product-metrics.md`, which `scripts/build.sh`
 regenerates on every build. If they disagree, the generated file is right — it is read off

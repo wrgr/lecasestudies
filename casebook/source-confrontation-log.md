@@ -25,6 +25,13 @@ cross-references, internal consistency between body and compression fields — a
 whether or not a marker points at it. Fix in source; never annotate an error. Unverifiable claims
 are removed or replaced, per the standing rule.
 
+**Session 3 (August 2026): batch 3 — 15 of 15 confronted, 15 corrected.** The first batch run under
+the widened fact-and-source brief, and the first with a 100% correction rate. Two clusters account
+for it: stale draft-era cross-references surviving in the ch1b v2-pilot cases (40, 41, 42, 43 — each
+pointing "Case NN" at an unrelated case), and body or compression text asserting more than the source
+supports (44, 47, 50, 55). Case 48's COI named the wrong school; the disclosure was tightened, not
+widened.
+
 **Base rate.** Batches 1–2 corrected **13 of 26 cases**, all of which had already been through the
 July critical-accuracy pass. Expect a similar yield across the remaining 117.
 
@@ -73,21 +80,21 @@ sentences printing broken mid-clause where a cross-reference had been stripped a
 | 28 | 35 | `radiology-ai-miscalibration` | 5 | 5 | peer-reviewed | — | 2 | — | |
 | 29 | 36 | `alphafold-protein-structure-prediction` | 6 | 6 | — | — | 2 | — | |
 | 30 | 37 | `deepmind-mammography-2020` | 4 | 4 | peer-reviewed | — | 2 | — | |
-| 31 | 38 | `ipledge-isotretinoin-rems-when-the` | 4 | 4 | peer-reviewed | — | 3 | — | |
-| 32 | 39 | `teamstepps` | 5 | 5 | — | — | 3 | — | |
-| 33 | 40 | `team-science-training-for-clinical-and` | 4 | 4 | peer-reviewed | — | 3 | — | |
-| 34 | 41 | `implementation-science-training-stated` | 4 | 4 | peer-reviewed | — | 3 | — | |
-| 35 | 42 | `australian-hospital-pharmacy-technician` | 4 | 4 | program-report | practice-synthesis-tier | 3 | — | |
-| 36 | 43 | `rwanda-mhealth-maternal-care-community` | 4 | 4 | peer-reviewed | mixed-evidence-tier | 3 | — | |
-| 37 | 44 | `japan-pmda-pre-approved-change` | 4 | 4 | program-report | — | 3 | — | |
-| 38 | 46 | `algorithmic-bias-in-educational` | 6 | 6 | — | — | 3 | — | |
-| 39 | 47 | `algorithmic-bias-in-automated-exam` | 4 | 4 | peer-reviewed | — | 3 | — | |
-| 40 | 48 | `school-surveillance-and-black-student` | 4 | 4 | peer-reviewed | — | 3 | — | |
-| 41 | 50 | `wisconsin-dews-merged` | 4 | 4 | peer-reviewed | — | 3 | — | |
-| 42 | 51 | `atlanta-public-schools-cheating-scandal` | 5 | 5 | — | — | 3 | — | |
-| 43 | 52 | `purdue-course-signals-the-reverse` | 4 | 4 | peer-reviewed | — | 3 | — | |
-| 44 | 54 | `summit-learning-personalized-learning` | 5 | 5 | — | — | 3 | — | |
-| 45 | 55 | `enrollment-algorithm-yield-optimization` | 4 | 4 | program-report | practice-synthesis-tier | 3 | — | |
+| 31 | 38 | `ipledge-isotretinoin-rems-when-the` | 5 | 4 | peer-reviewed | — | 3 | ✓ | Shin/Collins exact. **218–310 FDA figure carried by no reference** — Tkachenko, *JAMA Dermatol* 155(10):1175–1179 added. "Non-adherence the documented driver in both" reattributed to Collins alone; Tkachenko's alternative explanations (reporting fatigue, falling teenage pregnancy) restored. |
+| 32 | 39 | `teamstepps` | 5 | 5 | — | — | 3 | ✓ | Weld/Salas/Weaver exact. **1,500 / 5,000 / 300,000 carried by no reference** — AHRQ Views (2023) added; they are *first-eight-years cumulative* totals printed as present tense, corrected in 3 fields. Weaver citation completed to *BMJ Qual Saf* 23(5):359–372. |
+| 33 | 40 | `team-science-training-for-clinical-and` | 4 | 4 | peer-reviewed | — | 3 | ✓ | Mook 2025 exact throughout (221 registrants, 117 pre / 46 of 81 post). Stale draft cross-refs 122 / 123 and "Cases 117 (IPE) and 123" — 117 is Crew Resource Management — corrected to 28 and 41. |
+| 34 | 41 | `implementation-science-training-stated` | 4 | 4 | peer-reviewed | — | 3 | ✓ | All five Sancheznieto percentages exact. **The 6% has a different denominator (N=48) than the 38% / 24% (N=50)** — conflated in body, beats, le-insight and a reflection prompt; fixed. Stale 121 / 122 and "Cases 40 + 30 + 31" (30 = surgical video rating, 31 = JIGSAWS) corrected. |
+| 35 | 42 | `australian-hospital-pharmacy-technician` | 4 | 4 | program-report | practice-synthesis-tier | 3 | ✓ | Anderson exact (61/122, 82%, 81%, 38%→92% p<0.01). §5 claimed "documented operational outcomes" that §4 explicitly denies — contradiction removed. Survey dated 2018 and 2021 in different fields, harmonised (fielded Sept 2018, published 2021). "Cases 32–132" (132 = F-22 OBOGS) → Case 32. |
+| 36 | 43 | `rwanda-mhealth-maternal-care-community` | 5 | 4 | peer-reviewed | mixed-evidence-tier | 3 | ✓ | Hategeka and Ruton exact. **Ruton cited four times and absent from the reference list** — added. Ceiling-effect claim restored with the authors' own caveat that first-trimester ANC (50.3%) and 4+ visits (40.6%) had room to move and did not. "Case 201 (PEPFAR)" — 201 is Aadhaar — → Case 18. |
+| 37 | 44 | `japan-pmda-pre-approved-change` | 5 | 4 | program-report | — | 3 | ✓ | Kikuchi/Aisu exact. **"The systematic analyses are peer-reviewed" is wrong — the 2025 transparency review is a medRxiv preprint**; corrected in 3 compression fields and the reference. Added the PMDA Science Board's own 2023 finding that IDATEN "has yet to be fully used" — a case celebrating the architecture carried no note that it is largely unexercised. |
+| 38 | 46 | `algorithmic-bias-in-educational` | 6 | 6 | — | — | 3 | ✓ | Chronicle, Bird and Gándara all exact. (Editor memo's "Gándara JPAM" flag is itself wrong: Gándara is *AERA Open*, Bird is *JPAM*; this case had it right.) Added Gándara's finding that leading bias-mitigation techniques are "generally ineffective" — omitted, and it undercuts the case's own after-approaches. Baker & Hawn 2021/2022 harmonised. lens-approach called this failure case "the positive counterpart to Georgia State" — inverted. |
+| 39 | 47 | `algorithmic-bias-in-automated-exam` | 4 | 4 | peer-reviewed | — | 3 | ✓ | Yoder-Himes quote verbatim. **Intersectional figure is 4.36, not 4.4** (3 fields); race and sex are self-reported, not from university records. **§3 asserted the flag "produces real downstream consequence" where the authors state they collected no data on whether students were reported** — rewritten to keep the exposure claim within the study's stated limit. |
+| 40 | 48 | `school-surveillance-and-black-student` | 4 | 4 | peer-reviewed | — | 3 | ✓ | Johnson & Jabbari confirmed; pull quote verbatim. **COI named the wrong school — "Johns Hopkins School of Engineering"**, a bad expansion of "SOE". An editor is appointed in the School of *Education*, as is the lead author, so the overlap is school-level; disclosure tightened rather than widened to "the university". Surveillance construct listed school resource officers and tracking software that the study does not index — replaced with its actual twelve measures. |
+| 41 | 50 | `wisconsin-dews-merged` | 5 | 4 | peer-reviewed | — | 3 | ✓ | Perdomo, DPI and Markup figures exact. **"Over 225,000 students a year" unsourced and inconsistent with both sources** — replaced across 4 fields with the sourced 32,000 (15% of the 6th–9th cohort). DPI withdrawal reference added. Added the paper's central argument — school-and-district-only targeting would work about as well — which the case omitted. |
+| 42 | 51 | `atlanta-public-schools-cheating-scandal` | 5 | 5 | — | — | 3 | ✓ | All counts confirmed (178 / 38 / 44 of 56 / 35 / 11). **Pull quote over-quoted**: only "emphasized test results and public praise to the exclusion of integrity and ethics" is the report's span; trimmed and the reference annotated so a later reviewer does not re-quote it. Body's "roughly 180" → 178. AJC series redated 2008–2011. |
+| 43 | 52 | `purdue-course-signals-the-reverse` | 4 | 4 | peer-reviewed | — | 3 | ✓ | 21% figure, Arnold & Pistilli and the Caulfield critique chain confirmed. **Essa blog title unverifiable anywhere** — replaced with Straumsheim, "Mixed Signals," *Inside Higher Ed*, 6 Nov 2013. Added Caulfield's decisive datum (one Signals course correlated with *lower* retention than the non-Signals population) and Purdue's removal of the study from its site. |
+| 44 | 54 | `summit-learning-personalized-learning` | 7 | 5 | — | — | 3 | ✓ | Counts and dates confirmed. **380 schools / 72,000 students and the walkout rested on no cited reference** — EdWeek (Genota, 13 Nov 2018) added. Barnum/Chalkbeat redated 18 → 17 Jan 2019. Added the attrition finding: Summit told reporters 10% of schools quit annually, its own records put it at 18%. |
+| 45 | 55 | `enrollment-algorithm-yield-optimization` | 4 | 4 | program-report | practice-synthesis-tier | 3 | ✓ | Every Engler figure exact. **Impact overstated the deployment**: Engler says the optimisation stage is emerging and "it is not clear that this approach is widely in use" — the 700 institutions run the prediction step. Hedge restored. Added Othot's optimiser shipping defaulted to *minimise scholarship aid while maintaining enrollment*. **Flagged, not altered:** Engler's own arithmetic — 12.1 → 14.8 is 22.3%, not the 23.3% printed; the case reproduces the source faithfully. |
 | 46 | 57 | `gao-online-program-manager-oversight` | 4 | 4 | investigation | — | 4 | — | |
 | 47 | 58 | `usc-2u-online-msw-when-the-delegation` | 4 | 4 | journalism | journalism-tier | 4 | — | |
 | 48 | 62 | `gates-intensive-partnerships-met` | 5 | 4 | program-report | — | 4 | — | |

@@ -199,10 +199,15 @@
     ],
     // -- The Investigation --
     [
-      Researchers studying equity in completion-prediction models have
-      documented these calibration gaps and traced them to training data
-      that encodes historical patterns of discrimination — so the model
-      learns the past's inequities and projects them forward as predictions.#cn()
+      Gándara and colleagues, working with nationally representative
+      Education Longitudinal Study data, find the false-negative rate —
+      predicting failure for a student who in fact earns the degree — is
+      systematically higher for Black and Hispanic students, and that the
+      leading bias-mitigation techniques are "generally ineffective at
+      eliminating disparities in prediction outcomes and accuracy between
+      racialized groups." The bias is not a residual a fairness constraint
+      cleans up after the fact; it is in what the model was built from,
+      training data that encodes historical patterns of discrimination.#cn()
       Baker and Hawn's review catalogs which groups algorithmic bias in education is known to harm and which stages and agents in the development and deployment of educational algorithms are implicated — and the harm compounds when
       an instructor with deficit assumptions reads an "at-risk" flag as
       confirmation rather than a cue to help, letting the prediction become a
@@ -241,14 +246,14 @@
   ),
   references: (
     [_The Evolving State of Predictive Analytics_, The Chronicle of Higher Education (2020), survey conducted by Maguire Associates, 589 institutions — 63 percent use predictive analytics for retention and graduation; only 20 percent institution-wide.],
-    [K. Bird et al., "Are Algorithms Biased in Education? Exploring Racial Bias in Predicting Community College Student Success," _Journal of Policy Analysis and Management_ 44 (2025), 379–402 — racial calibration bias, ~5× higher at the bottom decile depending on the "at-risk" construct.],
-    [D. Gándara, H. Anahideh, M. Ison & L. Picchiarini, "Inside the Black Box: Detecting and Mitigating Algorithmic Bias across Racialized Groups in College Student-Success Prediction," _AERA Open_ (2024) — bias traced to training data encoding historical discrimination.],
+    [K. Bird, B. Castleman & Y. Song, "Are Algorithms Biased in Education? Exploring Racial Bias in Predicting Community College Student Success," _Journal of Policy Analysis and Management_ 44(2) (2025), 379–402 — two Virginia Community College System models; bias over 5× higher when "at-risk" is the bottom decile than the bottom half for degree completion, and the reverse for course completion.],
+    [D. Gándara, H. Anahideh, M. Ison & L. Picchiarini, "Inside the Black Box: Detecting and Mitigating Algorithmic Bias across Racialized Groups in College Student-Success Prediction," _AERA Open_ 10 (2024), doi:10.1177/23328584241258741 — higher false-negative rates for Black and Hispanic students in nationally representative ELS:2002 data; leading bias-mitigation techniques generally ineffective at eliminating the disparities.],
     [R. Baker & A. Hawn, "Algorithmic Bias in Education," _International Journal of Artificial Intelligence in Education_ 32 (2022), 1052–1092 — foundational review of algorithmic bias in education.],
     [M. Ekowo & I. Palmer, _Predictive Analytics in Higher Education: Five Guiding Practices for Ethical Use_, New America (2017) — the deficit-versus-asset mindset and the handling of "at-risk," "low-risk," and "high-risk" labels from early-alert systems.],
     [Cf. UK A-Level / Ofqual (Case 49); V. Eubanks, _Automating Inequality_ (2018).],
   ),
   quote: [Algorithmic bias in educational systems poses significant threats to educational equity, potentially amplifying existing social and economic disparities.],
-  quote-source: "Editors' paraphrase of Baker & Hawn (2021)",
+  quote-source: "Editors' paraphrase of Baker & Hawn (2022)",
   le-insight: [
     Educational predictive analytics is the ongoing live case for
     algorithmic bias at the construct level. The bias is not in the
@@ -258,15 +263,15 @@
     capability-engineering decision with measurable equity consequences.
   ],
   lens-approach: [
-    LENS treats this case as the positive counterpart to Georgia State
-    (Case 80). LEN 4 examines construct definition as the decisive
+    LENS treats Georgia State (Case 80) as the positive counterpart to
+    this case. LEN 4 examines construct definition as the decisive
     measurement choice. LEN 7 examines the governance architecture that
     determines whose construct gets adopted. LEN 9 covers the
     technical bias-mitigation methods.
   ],
   literature-items: (
     [Bird et al. (2025), _JPAM_; Gándara et al. (2024), _AERA Open_],
-    [Baker & Hawn (2021) on algorithmic bias in education],
+    [Baker & Hawn (2022), _IJAIED_ — algorithmic bias in education],
     [Friedman & Nissenbaum (1996), "Bias in Computer Systems"],
   ),
   reflection-list: (
@@ -301,7 +306,7 @@
   year: "2022",
   domains-list: ("ed-tech", "algorithmic fairness", "assessment"),
   modes-code: "DNK",
-  impact: "The first quantitative study of facial-detection bias in automated exam proctoring software found that students with darker skin tones and Black students were significantly more likely to be flagged for instructor review for potential cheating; at the race–sex intersection, women with the darkest skin tones were 4.4 times more likely to be flagged than medium-skin-tone women and 5.6 times more likely than lighter-skinned women",
+  impact: "The first quantitative study of facial-detection bias in automated exam proctoring software found that students with darker skin tones and Black students were significantly more likely to be flagged for instructor review for potential cheating; at the race–sex intersection, women with the darkest skin tones were 4.36 times more likely to be flagged than medium-skin-tone women and 5.6 times more likely than lighter-skinned women",
   kind: "failure",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -350,7 +355,7 @@
     [
       Yoder-Himes et al. (_Frontiers in Education_, 2022) ran the
       first published quantitative study of facial-detection bias
-      in this class of software. The study examined the instructor outputs for about 357 students in four large STEM courses at a single university, with skin tone classified on an expanded Fitzpatrick scale and race and sex taken from university records. The headline finding
+      in this class of software. The study examined the instructor outputs for about 357 students in four large STEM courses at a single university during Fall 2020, using the proctoring product the institution had adopted — one the paper notes is used by at least 1,500 universities nationally. Skin tone was classified against an expanded Fitzpatrick scale by two trained raters; race and sex were the students' own self-reports (sex assigned at birth; gender was not available from the institution). The headline finding
       ran in the direction the broader face-recognition-bias
       literature had documented (Buolamwini and Gebru, Raji, and
       others) and extended that finding into the assessment
@@ -361,15 +366,21 @@
     ],
     [
       The intersectional analysis sharpened the finding.
-      Women with the darkest skin tones were 4.4 times more likely to be flagged than medium-skin-tone women and 5.6 times more likely than lighter-skinned women — the race-by-sex intersection produced the largest disparity, consistent
+      Women with the darkest skin tones were 4.36 times more likely to be flagged than medium-skin-tone women and 5.6 times more likely than lighter-skinned women — the race-by-sex intersection produced the largest disparity, consistent
       with the broader face-recognition literature's intersectional
-      findings. The harm class is not abstract: a flag for
-      instructor review under an academic-integrity process
-      produces real downstream consequence — the student has to
-      defend themself against a suspicion the software generated,
-      and the institutional resolution mechanism is not designed
-      for the case where the suspicion was generated by a
-      software bias rather than by a student behavior.#cn()
+      findings, and it appears only intersectionally: in aggregate
+      the study found no significant male-female difference. What
+      the study measures is the software's output, not the harm
+      downstream of it. The authors are explicit that they collected
+      no information on whether these students were reported or
+      faced bias from instructors, and that at this institution the
+      software was never the primary means by which reported
+      cheating was identified. The exposure is real — a flag routes
+      a student into an academic-integrity review that no
+      institutional resolution mechanism is designed to handle when
+      the suspicion was generated by a software bias — but the
+      study documents the disparity in the flags, not the
+      consequences that followed them.#cn()
     ],
     [
       The study's claim is calibrated and direct: the product
@@ -458,7 +469,7 @@
   ),
   reflection-list: (
     [Identify a deployed system in your domain whose validation rests on an aggregate accuracy figure rather than a demographically stratified one. What would the stratified validation actually require, and who would have to commission it before deployment rather than after?],
-    [The Yoder-Himes finding is intersectional: women with the darkest skin tones were 4.4 times more likely to be flagged than medium-skin-tone women. What is the analog intersectional structure of the harm in your domain, and is it visible in the engineering record before the harm record?],
+    [The Yoder-Himes finding is intersectional: women with the darkest skin tones were 4.36 times more likely to be flagged than medium-skin-tone women. What is the analog intersectional structure of the harm in your domain, and is it visible in the engineering record before the harm record?],
     [The case documents the disparity in one product; the remediation is not yet documented. What would a remediation look like — vendor disclosure, regulatory disclosure requirement, institutional resolution-mechanism redesign — and which of those is in your scope?],
   ),
   courses: ("LEN 5", "LEN 8", "LEN 9"),
@@ -479,12 +490,15 @@
   induced-anchor: "8.1",
   lens-anchor: "D4/PT5",
   leo-anchor: "LEO-4",
-  coi: "Institutional overlap: an editor shares an institution (Johns Hopkins School of Engineering) with an author of this work; no editor was personally involved. Included on the published peer-reviewed evidence (Journal of Criminal Justice, 2022); editorial framing keeps critical distance.",
+  coi: "Institutional overlap: an editor of this volume is appointed in the same school as the study's lead author — the Johns Hopkins University School of Education, where the author holds a Bloomberg Distinguished Professorship jointly with the Bloomberg School of Public Health. No editor was personally involved in the work. Included on the published peer-reviewed evidence (Journal of Criminal Justice, 2022); editorial framing keeps critical distance.",
   summary: [
     Johnson and colleagues, writing in the _Journal of Criminal
     Justice_ in 2022, analyzed the relationship between
-    school-surveillance infrastructure — cameras, metal detectors,
-    school resource officers, ID-check protocols — and outcomes
+    school-surveillance infrastructure — security cameras, metal
+    detectors and random metal-detector checks, dog sniffs and
+    contraband sweeps, drug testing, uniform and dress-code
+    requirements, clear book bags, student and faculty ID badges,
+    closed campuses — and outcomes
     for Black students across U.S. schools. The study's
     learning-engineering content is in where it locates the
     mechanism. The analysis holds school social disorder and student misbehavior constant and still finds that the most heavily surveilled schools suspend more students, and that surveillance depresses math scores and college enrollment for suspended and non-suspended students alike; because Black students are far more likely to attend those schools, they carry the largest share of the cost the authors call a safety tax. The mechanism, in other words,
@@ -506,11 +520,13 @@
   sections: (
     [
       U.S. public schools have, over the past two decades, deployed a
-      progressively more elaborate surveillance infrastructure:
-      cameras throughout common areas; metal detectors at entry
-      points; school resource officers (sworn law enforcement
-      stationed in schools); ID-check protocols and visitor
-      management systems; behavioral-tracking software. The
+      progressively more elaborate surveillance infrastructure. The
+      measures Johnson and Jabbari index are the ordinary furniture
+      of a fortified school: security cameras; metal detectors and
+      random metal-detector checks; random dog sniffs and contraband
+      sweeps; drug testing; uniform requirements and strict dress
+      codes; clear book bags; student and faculty identification
+      badges; closed campuses at lunch. The
       distribution of that infrastructure across schools has not
       been uniform. Schools serving predominantly Black student
       populations have, on average, carried more of it. The
@@ -551,7 +567,12 @@
     ],
     [
       The standing COI rendered under the title is binding. An
-      editor of this volume shares an institution (Johns Hopkins University) with the study's lead author, who is appointed in the School of Education and the Bloomberg School of Public Health. The case
+      editor of this volume is appointed in the same school as the
+      study's lead author — the Johns Hopkins University School of
+      Education, where the author holds a Bloomberg Distinguished
+      Professorship jointly with the Bloomberg School of Public
+      Health. The overlap is at school level, not merely the
+      university. The case
       is anchored to the published peer-reviewed evidence in the
       _Journal of Criminal Justice_, not to institutional press
       or to commentary by the editor or the authors outside the
@@ -830,7 +851,7 @@
   year: "2012 – 2023",
   domains-list: ("education at scale", "predictive analytics", "algorithmic equity"),
   modes-code: "DKN",
-  impact: "Wisconsin Department of Public Instruction's Dropout Early Warning System (DEWS) ran from 2012 until DPI withdrew the dashboards in October 2023, scoring over 225,000 sixth- through ninth-grade students a year; Perdomo, Britton, Hardt, & Abebe FAccT 2025 regression-discontinuity analysis on 2013–2021 data put the effect of a higher risk label on on-time graduation at about 5 percentage points, on a 95% interval of −2% to 11.6% that cannot rule out zero; DPI's own 2021 internal equity analysis found false-alarm rates 42 points higher for Black and 18 points higher for Hispanic students, and DPI told no one and changed nothing",
+  impact: "Wisconsin Department of Public Instruction's Dropout Early Warning System (DEWS) ran from 2012 until DPI withdrew the dashboards on 12 October 2023, scoring every sixth- through ninth-grader in the state — in 2020–21 more than 32,000 of them, 15 percent of the cohort, carried a \"high risk\" label; Perdomo, Britton, Hardt, & Abebe FAccT 2025 regression-discontinuity analysis on 2013–2021 data put the effect of a higher risk label on on-time graduation at about 5 percentage points, on a 95% interval of −2% to 11.6% that cannot rule out zero; DPI's own 2021 internal equity analysis found false-alarm rates 42 points higher for Black and 18 points higher for Hispanic students, and DPI told no one and changed nothing",
   kind: "failure",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -839,10 +860,12 @@
   leo-anchor: "LEO-4, LEO-5",
   summary: [
     The Wisconsin Department of Public Instruction has operated
-    the Dropout Early Warning System (DEWS) since 2012,
-    producing dropout-risk scores for approximately 200,000
-    sixth- through ninth-grade students across the state each
-    year. Two evidence streams converge on the deployment.
+    the Dropout Early Warning System (DEWS) from 2012 until it
+    withdrew the dashboards on 12 October 2023, producing
+    dropout-risk scores twice a year for every sixth- through
+    ninth-grader in the state; in 2020–21 more than 32,000 of
+    them — 15 percent of the cohort — carried a "high risk"
+    label. Two evidence streams converge on the deployment.
     Perdomo, Britton, Hardt, and Abebe's 2025 FAccT paper used a regression-discontinuity design on 2013–2021 DEWS-and-graduation data and estimated that moving a student from the moderate to the high-risk category raises on-time graduation by about 5 percentage points, on a 95 percent confidence interval of −2 to 11.6 percent that cannot rule out zero effect. The Wisconsin DPI's own 2021 internal equity analysis — the slide The Markup obtained is headed "Is DEWS Fair?" — found false-alarm rates 42 percentage points higher for Black students and 18 points higher for Hispanic students than for White students, and the agency neither told districts nor changed the model. The Markup's
     2023 investigation by Todd Feathers documented the
     disparate-impact finding and the agency's response. Both
@@ -865,7 +888,7 @@
       warning enables school-level interventions — additional
       counseling, tutoring, mentoring, or family contact — that
       improve the student's graduation trajectory. The system
-      has operated at scale for more than a decade and produces risk scores for over 225,000 sixth- through ninth-grade students each year.#cn()
+      operated at scale for more than a decade, scoring every sixth- through ninth-grader in the state twice a year; in 2020–21 more than 32,000 of them, 15 percent of the cohort, carried a "high risk" label.#cn()
     ],
     [
       Perdomo, Britton, Hardt, and Abebe's 2025 paper at FAccT
@@ -877,10 +900,10 @@
       risk and surfaced to the school's intervention surface)
       against students just below it (not so surfaced),
       controlling for the continuous risk score itself. The
-      analysis covered approximately ten years of DEWS data
-      and the corresponding graduation outcomes. The headline finding is a point estimate of about 5 percentage points on on-time graduation for a student moved from moderate to high risk, on a 95 percent confidence interval of −2 to 11.6 percent. The interval contains zero, so the analysis cannot rule out that the risk category changes nothing; the estimate is directionally correct and not rigorously conclusive. The hedge the paper preserves is binding: the
+      analysis covered the DEWS scores from 2013 to 2021 —
+      nearly a decade — and the corresponding graduation outcomes. The headline finding is a point estimate of about 5 percentage points on on-time graduation for a student moved from moderate to high risk, on a 95 percent confidence interval of −2 to 11.6 percent. The interval contains zero, so the analysis cannot rule out that the risk category changes nothing; the estimate is directionally correct and not rigorously conclusive. The hedge the paper preserves is binding: the
       RDD analysis cannot establish a negative finding either
-      (the interval includes small positive effects), but it can and does establish that eight years of statewide data leave the prediction-triggers-intervention-that-changes- outcome theory unsettled.#cn()
+      (the interval includes small positive effects), but it can and does establish that nearly a decade of statewide data leaves the prediction-triggers-intervention-that-changes-outcome theory unsettled. The paper's own conclusion goes further than the null: the authors show that a targeting rule using only a student's school and district — no individual risk score at all — would direct interventions about as efficiently as DEWS does, and argue this holds "even if individual predictions are highly accurate and effective interventions exist," because dropout is structurally determined. The question the paper leaves on the table is not whether the model is accurate — it sorts students by risk accurately — but whether the individual prediction was ever the thing carrying the value.#cn()
     ],
     [
       The Wisconsin DPI's own 2021 internal equity audit,
@@ -932,7 +955,7 @@
     ],
   ),
   beats: (
-    "Wisconsin DPI Dropout Early Warning System deployed 2012–2023; over 225,000 students per year in grades 6 – 9 receive risk scores",
+    "Wisconsin DPI Dropout Early Warning System deployed 2012 until the dashboards were withdrawn 12 October 2023; every 6th – 9th grader scored twice a year, 32,000+ labeled high risk in 2020–21",
     "Perdomo, Britton, Hardt, Abebe FAccT 2025 RDD on 2013–2021 data: +5 points on on-time graduation, 95% interval −2% to 11.6%, cannot rule out zero",
     "Wisconsin DPI 2021 internal equity analysis (slide headed \"Is DEWS Fair?\"): false-alarm rates 42 points higher for Black, 18 for Hispanic students; agency told no one",
     "The Markup 2023 investigation (Feathers) documented disparate-impact finding and agency response",
@@ -954,6 +977,7 @@
     [Perdomo, J. C., Britton, T., Hardt, M., & Abebe, R. (2025), "Difficult Lessons on Social Prediction from Wisconsin Public Schools," _Proceedings of FAccT 2025_, doi:10.1145/3715275.3732175 (also arXiv:2304.06205).],
     [Wisconsin Department of Public Instruction (2021), internal equity analysis of the Dropout Early Warning System — unpublished; the presentation summarizing it, whose slide is headed "Is DEWS Fair?", was obtained by _The Markup_ under public records.],
     [Feathers, T. (2023), "False Alarm: How Wisconsin Uses Race and Income to Label Students 'High Risk,'" _The Markup_, April 27, 2023 — investigation documenting the disparate-impact finding and the agency response.],
+    [Wisconsin Department of Public Instruction, "WISEdash for Districts — Dropout Early Warning System (DEWS) Dashboards" — notice that early-warning dashboard data (DEWS/CCREWS) is no longer available as of 12 October 2023 and that DPI is evaluating the future of the systems.],
     [Knowles, J. E. (2015), "Of Needles and Haystacks: Building an Accurate Statewide Dropout Early Warning System in Wisconsin," _Journal of Educational Data Mining_ 7(3):18–67 — the original DEWS technical-methodology paper.],
   ),
   quote: [The RDD estimate is about 5 points on graduation, on an interval that cannot rule out zero; the agency's own equity analysis found DEWS raised false alarms about Black students 42 points more often than about White students; the agency told no one.],
@@ -1042,10 +1066,12 @@
     // -- The Investigation --
     [
       A 2008 _Atlanta Journal-Constitution_ analysis of improbable score gains, then a February 2010 erasure analysis by the Governor's Office of Student Achievement, then a Governor-ordered special investigation supported by the Georgia Bureau of Investigation, documented the scheme in a 2011 report.
-      Roughly 180 educators were implicated; 35 were indicted and 11
-      convicted under Georgia's RICO statute, the report finding the
-      administration had emphasized results and praise "to the exclusion
-      of integrity and ethics." That an investigation came from outside the
+      Investigators found cheating in 44 of the 56 schools they examined
+      on the 2009 CRCT and traced organized misconduct as far back as
+      2001. The report named 178 educators, 38 of them principals; 35 were
+      indicted and 11 convicted under Georgia's RICO statute, the report
+      finding the administration had emphasized results and praise "to the
+      exclusion of integrity and ethics." That an investigation came from outside the
       district — a newspaper and state investigators, not the schools — is
       itself the mark of the missing independent check.#cn()
     ],
@@ -1080,13 +1106,13 @@
     "Convictions made APS the prominent U.S. high-stakes-testing fraud case fuelling reassessment",
   ),
   references: (
-    [Office of the Governor, Special Investigators (Bowers, Wilson, Hyde), _Special Investigation into Test Tampering in Atlanta's School System_, Vol. 1 (June 30, 2011) — the organized cheating and the quoted finding.],
-    [_Atlanta Journal-Constitution_ investigative series (2009–2011) — the erasure-rate analysis.],
+    [Office of the Governor, Special Investigators (Bowers, Wilson, Hyde), _Special Investigation into Test Tampering in Atlanta's School System_, Vol. 1 (June 30, 2011; released July 2011) — cheating in 44 of 56 schools examined, 178 educators named including 38 principals. The verified quoted span is "emphasized test results and public praise to the exclusion of integrity and ethics"; the subject clause is the reporting's, not the report's — do not re-quote it as the report's own sentence.],
+    [_Atlanta Journal-Constitution_ investigative series (2008–2011) — the December 2008 analysis of statistically improbable CRCT scores and the subsequent erasure-rate reporting.],
     [_State of Georgia v. Hall et al._ (2013–2015) — indictments and RICO convictions.],
     [Koretz, D. (2017), _The Testing Charade_ — high-stakes-testing distortion.],
     [Campbell, D. (1976), "Assessing the Impact of Planned Social Change" — Campbell's Law.],
   ),
-  quote: [Dr. Hall and her administration emphasized test results and public praise to the exclusion of integrity and ethics.],
+  quote: [The superintendent and her administration emphasized test results and public praise to the exclusion of integrity and ethics.],
   quote-source: "Georgia Special Investigators' Report on Atlanta Public Schools, 2011",
   le-insight: [
     The APS cheating scandal is the strongest available case for
@@ -1186,7 +1212,7 @@
       The figure circulated. It appeared in conference keynotes,
       vendor materials, accreditor presentations, and in widely
       shared accounts of what early-warning analytics could deliver.
-      The claim's status in the literature outran its evidentiary base: the LAK 2012 paper was peer-reviewed but four pages long, and the institutional dataset behind the headline number was not made available for independent reanalysis. The field cited the result anyway,
+      The claim's status in the literature outran its evidentiary base: the LAK 2012 paper was peer-reviewed but four pages long, and the institutional dataset behind the headline number was not made available for independent reanalysis — Purdue moved the underlying study off its own site during the dispute. The field cited the result anyway,
       because it was the kind of result the field wanted to be
       true.#cn()
     ],
@@ -1199,7 +1225,11 @@
       courses; students who depart cannot. The "took two or more
       Signals courses" group was therefore an inadvertent selection
       on persistence — not a sample exposed to a different
-      treatment intensity. Alfred Essa then built a simulation that
+      treatment intensity. The tell was in the paper's own numbers:
+      taking *one* Signals course correlated with a *lower*
+      retention rate than the non-Signals population, which no
+      dose–response account of a beneficial treatment explains, and
+      which a coin-flip account of course-load explains exactly. Alfred Essa then built a simulation that
       substituted "received a piece of chocolate" for "took a
       Signals class," with chocolate having no causal effect on
       anything, and reproduced the apparent retention gain. The
@@ -1257,8 +1287,8 @@
   references: (
     [Arnold, K. E., \& Pistilli, M. D. (2012). Course Signals at Purdue: Using learning analytics to increase student success. _Proceedings of LAK 2012_, 267–270. doi:10.1145/2330601.2330666 — the original study at the center of the critique.],
     [Caulfield, M. (2013). "Why the Course Signals Math Does Not Add Up," _Hapgood_, September 26, 2013, and "Purdue Course Signals Data Issue Explainer," _e-Literate_, November 12, 2013 — the reverse-causality critique.],
-    [Essa, A. (2013). "Can We Improve Retention Rates by Giving Students Chocolates?" alfredessa.com — the placebo simulation reproducing the Course Signals retention curve.],
-    [Feldstein, M. (2013). "Purdue's Non-Answer on Course Signals," _e-Literate_, November 6, 2013 — the field-level critique of promoting research and then declining scrutiny.],
+    [Straumsheim, C. (2013). "Mixed Signals," _Inside Higher Ed_, November 6, 2013 — documents Alfred Essa's placebo simulation, which substituted a randomly distributed piece of chocolate for a Signals class and reproduced the retention curve.],
+    [Feldstein, M. (2013). "Purdue's Non-Answer on Course Signals," _e-Literate_, November 2013 — the field-level critique of promoting research and then declining scrutiny.],
   ),
   quote: [Substituting "received a piece of chocolate" for "took a Signals class" in a simulation reproduces the apparent retention gain.],
   quote-source: "Editors' synthesis of Essa's 2013 simulation demonstration.",
@@ -1285,7 +1315,7 @@
   literature-items: (
     [Arnold \& Pistilli (2012), _LAK 2012_],
     [Caulfield (2013), _Hapgood_ / _e-Literate_],
-    [Essa (2013), simulation demonstration],
+    [Straumsheim (2013), _Inside Higher Ed_ — Essa's placebo simulation],
   ),
   reflection-list: (
     [Identify a predictive or early-warning analytics deployment in your domain whose published outcome claim circulates more widely than the peer-reviewed evidence supports. What threats to validity — selection, reverse causality, censoring — would a Caulfield-style external critic name first?],
@@ -1503,7 +1533,13 @@
       Several districts withdrew or rebranded their use, CZI and Summit
       revised their outreach, and the episode became a standard caution in
       ed-tech adoption — a reputational cost paid for governance work that
-      would have been cheaper to do first.#cn() Its lesson for the field is
+      would have been cheaper to do first. The churn was larger than
+      Summit said: pushing back on the Brooklyn coverage, the organization
+      told reporters that only 10 percent of schools quit the platform each
+      year, but records Chalkbeat obtained from Summit itself put the real
+      figure at 18 percent of schools quitting a year after using it — the
+      10 percent came from averaging the first three years, when the
+      denominator was 19 schools, then 338.#cn() Its lesson for the field is
       concrete: an adoption decision should have to produce a public evidence
       summary at parent reading level, a data-handling agreement at the same
       resolution, and a documented exit path — governance artifacts that make
@@ -1523,7 +1559,9 @@
     [#link("https://www.nytimes.com/2019/04/21/technology/silicon-valley-kansas-schools.html")[N. Bowles, "Silicon Valley Came to Kansas Schools. That Started a Rebellion," _New York Times_ (2019)] — the parent revolt.],
     [N. Singer, "The Silicon Valley Billionaires Remaking America's Schools," _New York Times_ (2017) — the CZI/Summit rollout.],
     [S. Schwartz, "Two Districts Roll Back Summit Personalized Learning Program," _Education Week_ (December 22, 2017) — the Cheshire suspension and the Indiana Area rollback.],
-    [M. Barnum, "Summit Learning declined to be studied, then cited collaboration with Harvard researchers anyway," _Chalkbeat_ (January 18, 2019) — the missing evaluation framework.],
+    [M. Barnum, "Summit Learning declined to be studied, then cited collaboration with Harvard researchers anyway," _Chalkbeat_ (January 17, 2019) — the missing evaluation framework.],
+    [L. Genota, "Brooklyn Students Protest Use of Online Learning Platform Designed by Summit Learning," _Education Week_ (November 13, 2018) — the ~380 schools and 72,000 students figures and the walkout of nearly 100 students at the Secondary School for Journalism.],
+    [M. Barnum, "Summit Learning, the Zuckerberg-backed platform, says 10% of schools quit using it each year. The real figure is higher," _Chalkbeat_ (May 23, 2019) — the 18 percent annual attrition figure from Summit's own records.],
     [Chan Zuckerberg Initiative & Summit Learning public program documentation (2015–2019); cf. inBloom (Case 53).],
   ),
   quote: [The tools were free. The accountability architecture had not been built.],
@@ -1585,7 +1623,7 @@
   year: "2010s – present (Brookings synthesis 2021)",
   domains-list: ("higher education", "predictive analytics", "access pricing"),
   modes-code: "TKN",
-  impact: "An academic study reports a 23.3% out-of-state yield gain (12.1% to 14.8%) at an unnamed large public university; vendor case studies report 33% net tuition increases with a 6-point cut to discount rate (EAB) and 173 additional freshmen without aid-budget increases (Othot); algorithms across at least six named vendors price aid offers against each accepted applicant's modeled willingness to pay",
+  impact: "An academic study reports a 23.3% out-of-state yield gain (12.1% to 14.8%) at an unnamed large public university; vendor case studies report 33% net tuition increases with a 6-point cut to discount rate (EAB) and 173 additional freshmen without aid-budget increases (Othot); algorithms from at least six named vendors reach some 700 institutions, predicting each accepted applicant's likelihood to enroll, with the second stage — pricing the aid offer against modeled willingness to pay — emerging rather than established, and Othot's optimizer shipping set by default to minimize scholarship aid while maintaining enrollment",
   kind: "failure",
   scale: "big",
   evidence-source: "program-report",
@@ -1636,13 +1674,19 @@
       Ruffalo Noel Levitz works with roughly 300 institutions; EAB
       with 150; Rapid Insight with 150; Capture Higher Ed with
       100; Othot with around 30; Whiteboard Higher Education
-      rounds out the named tier, with Civitas Learning named separately as a student-success-only firm. The reported effect sizes: a 23.3 percent out-of-state yield gain — 12.1 percent to 14.8 percent — at an unnamed large public university in a University of Washington study; EAB's 33 percent
-      net-tuition gain paired with a 6-point cut to the discount
-      rate; Othot's 173 additional freshmen recruited without an
-      increase to the aid budget. The vendor effect sizes are
-      vendor-reported and are not auditable from outside the
-      institution — a hedge Engler is explicit about, and one the
-      evidence-tier flag preserves into the case.#cn()
+      rounds out the named tier, with Civitas Learning named separately as a firm exclusively focused on student success. A 2015 Educause survey put analytics for enrollment management at over 75 percent of colleges, up from just over 60 percent in 2012. The reported effect sizes: a 23.3 percent out-of-state yield gain — 12.1 percent to 14.8 percent — at an unnamed large public university in a University of Washington study; EAB's 33 percent
+      net-tuition gain at "Aster University," paired with a
+      six-point cut to the tuition discount rate from around 22 to
+      around 16 percent; Othot's 173 additional freshmen at the New
+      Jersey Institute of Technology, recruited without a
+      corresponding rise in scholarship aid. Two hedges travel with
+      these numbers. The vendor effect sizes are vendor-reported and
+      are not auditable from outside the institution. And the second
+      stage is the emerging one: scholarship optimization has
+      historically been done manually, and Engler writes that it is
+      "not clear that this approach is widely in use" — the 700
+      institutions are running the prediction step, not necessarily
+      the optimizer.#cn()
     ],
     [
       The structural critique runs through what the algorithm
@@ -1650,7 +1694,11 @@
       — is the operational target the prediction system was built
       around, and Engler's argument is that this construct turns
       the financial-aid award into a pricing instrument rather
-      than a need-or-merit one. The downstream evidence he marshals
+      than a need-or-merit one. The clearest evidence that the
+      construct is the operational target and not an inference about
+      it is Othot's default: Engler reports that the vendor's
+      optimizer ships set to minimize scholarship aid while
+      maintaining enrollment. The downstream evidence he marshals
       is the literature linking institutional aid to graduation
       outcomes: roughly a 0.9 percent gain in graduation odds per additional \$1,000 in merit aid, with larger effects for need-based aid; a more than 5 percent cut in low-income graduation likelihood per additional \$1,000 in unsubsidized loans. If the algorithm reduces aid per student to find
       the minimum that still yields enrollment, the downstream
@@ -1709,7 +1757,7 @@
     ),
   ),
   references: (
-    [Engler, A. (2021), "Enrollment algorithms are contributing to the crises of higher education," Brookings Institution, 14 Sept 2021.],
+    [Engler, A. (2021), "Enrollment algorithms are contributing to the crises of higher education," Brookings Institution, 14 September 2021 — the two-stage architecture, the vendor tally to at least 700 institutions, and the effect sizes. The phrase "algorithms excel at identifying a student's exact willingness to pay" is Engler's own, from the executive summary.],
     [Franke, R. (2012), _Towards the Education Nation: Revisiting the Impact of Financial Aid, College Experience, and Institutional Context on Baccalaureate Degree Attainment_, UCLA doctoral dissertation — the aid-and-graduation effect sizes Engler cites.],
     [Goldrick-Rab, S. (2016), _Paying the Price_ — broader synthesis on net-price, unsubsidized loans, and low-income completion.],
     [Vendor case studies cited in Engler (Othot, EAB, Ruffalo Noel Levitz, University of Washington) — vendor-reported and not externally audited; flagged at evidence-tier under the title.],

@@ -11,7 +11,7 @@ The shipping artefacts sit under `products/`, split by carrier: `products/digita
 | File | What it is | Read it if you want… |
 |---|---|---|
 | **[`products/digital/capability-matters-digital.pdf`](products/digital/capability-matters-digital.pdf)** | The casebook **main volume**, digital — 48 selected cases, 277 pp, 8 × 10, colour on cream | the readable book: the seven-part argument with a curated cut spanning domains, modes, and evidence tiers |
-| **[`products/digital/capability-matters-complete.pdf`](products/digital/capability-matters-complete.pdf)** | The **complete standalone edition** — all 205 cases, 884 pp, 8 × 10, colour on cream, global numbering | the entire corpus at full depth in one file; every gap in the printed sequence is here |
+| **[`products/digital/capability-matters-complete.pdf`](products/digital/capability-matters-complete.pdf)** | The **complete standalone edition** — all 205 cases, 887 pp, 8 × 10, colour on cream, global numbering | the entire corpus at full depth in one file; every gap in the printed sequence is here |
 | **[`products/digital/capability-matters-lens-companion.pdf`](products/digital/capability-matters-lens-companion.pdf)** | LENS Companion — 43 pp, 8 × 10, white digital | the framework, end-to-end: the five v2.1 LENS competencies, the LEOs and course mapping, the induced ↔ canonical crosswalk, and the literal text of the `lens_program/` canonical docs (Docs 1–6). Travels with advisory boards, recruiting, prospective students. |
 | **[`products/digital/capability-matters-validation-audit.pdf`](products/digital/capability-matters-validation-audit.pdf)** | Validation & Audit tracker — 75 pp, 8 × 10, white digital | the audit surface: every case by primary domain, every case by LENS course, and the full per-case references appendix with a *Retrieved from:* line per source. The verification-track companion to `casebook/verification-log.md`. |
 | **[`products/print/capability-matters-print.pdf`](products/print/capability-matters-print.pdf)** + **[`products/print/cover-print.pdf`](products/print/cover-print.pdf)** | The **main volume**, Lulu print interior + cover wrap — 280 pp, 8 × 10, grayscale (black on white), 3 mm bleed; cover spine 17.39 mm | to send to Lulu for the bound first edition |
@@ -107,9 +107,9 @@ The first edition is structurally complete and reproduces from source.
 | `cover-print.pdf` | print | 8 × 10 wrap | — | main-volume Lulu cover, spine 17.39 mm |
 | `capability-matters-local-print.pdf` | print | US Letter, grayscale interior + colour covers | 279 | main volume — print at home / office |
 | `capability-matters-digital.pdf` | digital | 8 × 10, colour, cream | 277 | main volume — screen / PDF |
-| `capability-matters-complete.pdf` | digital | 8 × 10, colour, cream | 884 | complete standalone — all 205 cases |
+| `capability-matters-complete.pdf` | digital | 8 × 10, colour, cream | 887 | complete standalone — all 205 cases |
 | `capability-matters-lens-companion.pdf` | digital | 8 × 10, white | 50 | concept companion — concentration docs + crosswalks + canonical lens_program/ docs |
-| `capability-matters-validation-audit.pdf` | digital | 8 × 10, white | 97 | audit tracker — indexes + per-case references |
+| `capability-matters-validation-audit.pdf` | digital | 8 × 10, white | 98 | audit tracker — indexes + per-case references |
 
 **v2.1 framework adoption (June 2026)** — Per program-owner sign-off:
 - D3 reorder + rename: what was D5 *Machine Teaming and Adaptation* is broadened to **Human-System Collaboration** and moved to position 3. T&E moves to D4; Sociotechnical Constraints to D5. The order reads as the flywheel: see → build → integrate humans → measure → deploy.
