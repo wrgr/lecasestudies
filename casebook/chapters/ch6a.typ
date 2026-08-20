@@ -1928,7 +1928,7 @@
   year: "2011",
   domains-list: ("energy",),
   modes-code: "NGK",
-  impact: "Three reactor meltdowns following the Tōhoku earthquake and tsunami; ~160,000 people displaced; cleanup projected at $200B+",
+  impact: "Three reactor meltdowns following the Tōhoku earthquake and tsunami; approximately 150,000 people evacuated (NAIIC); cleanup and compensation put at ¥21.5 trillion (about $190B) by the Japanese government in 2016, with independent estimates running higher",
   diagram: dgm.dgm-stat(
     "3 of 6",
     "reactors melted down",
@@ -1939,8 +1939,11 @@
   summary: [
     On 11 March 2011 the Tōhoku earthquake and the tsunami it spawned
     overwhelmed TEPCO's Fukushima Daiichi plant: the quake severed the off-site transmission lines, the wave rose above the site's ground level and flooded the emergency diesel generators, and cooling failed. Three of the six cores melted down and hydrogen explosions
-    spread radioactive material, displacing some 160,000 people; cleanup is
-    projected above \$200 billion. The independent Diet commission (NAIIC),
+    spread radioactive material. NAIIC records that approximately 150,000
+    people were evacuated in response to the accident; the Japanese
+    government put cleanup and compensation at ¥21.5 trillion — about
+    \$190 billion — in 2016, and independent estimates run higher. The
+    independent Diet commission (NAIIC),
     chaired by Kiyoshi Kurokawa, called it a disaster "made in Japan" — the
     product of regulatory capture and a culture reluctant to challenge
     utility assumptions; evidence of large historical tsunamis had been
@@ -1962,8 +1965,10 @@
       On 11 March 2011 the Tōhoku earthquake struck and the tsunami that
       followed rose above the site's ground level. The earthquake had already severed the off-site transmission lines; the diesel generators meant to keep cooling running were inundated. Cooling
       failed, three of the six reactor cores melted down, and hydrogen
-      explosions spread radioactive material across the region. Some 160,000
-      people were displaced, and cleanup is projected above \$200 billion.#cn()
+      explosions spread radioactive material across the region. Approximately
+      150,000 people were evacuated in response to the accident; the Japanese
+      government's 2016 estimate put cleanup and compensation at ¥21.5 trillion,
+      about \$190 billion, and independent estimates run higher.#cn()
       Siting the backup generators where a wave above the site's ground level would reach them tied the entire cooling chain to that single design assumption, so once the water was on the site the loss of cooling followed almost mechanically from the layout itself.
     ],
     // -- The Investigation --
@@ -2013,7 +2018,7 @@
   ),
   references: (
     [National Diet of Japan Fukushima Nuclear Accident Independent Investigation Commission (NAIIC; K. Kurokawa, chair), _Report_ (2012) — the internal tsunami evidence and the regulatory-capture finding.],
-    [NAIIC (2012) — the accident sequence: seawall overtopping, generator inundation, and three core meltdowns.],
+    [NAIIC (2012) — the accident sequence: seawall overtopping, generator inundation, three core meltdowns, and "approximately 150,000 people were evacuated in response to the accident." The widely quoted 160,000 is the 2012 peak evacuee count in prefectural records, not NAIIC's figure; do not "correct" the text against it. Cleanup and compensation costs are from the Japanese government's December 2016 estimate of ¥21.5 trillion, not from NAIIC.],
     [NAIIC (2012) — the "made in Japan" cultural and regulatory-capture conclusion (quoted).],
     [Investigation Committee on the Accident (Hatamura government commission, 2012); IAEA Director General, _The Fukushima Daiichi Accident_ (2015) — external-hazard under-estimation.],
     [D. Lochbaum, E. Lyman & S. Stranahan, _Fukushima: The Story of a Nuclear Disaster_ (2014).],
@@ -2101,7 +2106,7 @@
     Panel (Moon et al., _The Lancet_, November 2015), and the UN
     High-Level Panel (2016) — found the same structural failures:
     WHO's outbreak-response capacity had been cut after the 2011
-    budget reductions; most member states had simply not built the IHR (2005) core capacities, and failing to do so cost nothing; and early-warning
+    budget reductions; most member states had simply not built the IHR (2005) core capacities, and the Panel called those results "not acceptable" and the reliance on voluntary self-assessment to measure them "unacceptable"; and early-warning
     signals were discounted for political and economic reasons.
     The reform — the WHO Health Emergencies Programme (2016) —
     carries the panels' own caveat that post-crisis reform
@@ -2131,7 +2136,7 @@
       engineered capability. Under the International Health
       Regulations (2005), member states were required to build
       and certify a set of core capacities for detecting,
-      assessing, and responding to public-health events. On the certification record, most had not built them. As at November 2014, 64 States Parties told the Secretariat they had achieved the core capacities, 81 requested extensions, and 48 did not communicate their status at all. The Stocking Panel called that untenable: a legally binding obligation, measured only by voluntary self-assessment, whose breach carried no consequence at all. The Stocking Report named the IHR implementation
+      assessing, and responding to public-health events. On the certification record, most had not built them. As at November 2014, 64 States Parties told the Secretariat they had achieved the core capacities, 81 requested extensions, and 48 did not communicate their status or intentions. The Stocking Panel called those results "not acceptable," and said it considered "it unacceptable that only voluntary self-assessment is required for measurement of core capacities" — information that, "when the health of all is at stake," must be validated by peer review or other external assessment. A legally binding obligation was being measured by the obligated party's own unverified account of itself. The Stocking Report named the IHR implementation
       gap directly as one of its three review areas, alongside
       WHO's own emergency-response capacity and its role within
       the wider humanitarian system. The gap itself — obligated readiness minus built readiness — is the artifact the
@@ -2218,18 +2223,18 @@
     ),
   ),
   references: (
-    [Ebola Interim Assessment Panel (2015), _Report of the Ebola Interim Assessment Panel_ (the "Stocking Report," chair Dame Barbara Stocking), World Health Organization, 7 July 2015.],
-    [Moon, S., Sridhar, D., Pate, M. A., Jha, A. K., Clinton, C., et al. (2015), "Will Ebola change the game? Ten essential reforms before the next pandemic. The report of the Harvard-LSHTM Independent Panel on the Global Response to Ebola," _The Lancet_ 386(10009):2204–2221, 28 November 2015, doi:10.1016/S0140-6736(15)00946-0.],
-    [High-level Panel on the Global Response to Health Crises (2016), _Protecting Humanity from Future Health Crises_ (chair Jakaya M. Kikwete), UN doc. A/70/723, 9 February 2016.],
+    [Médecins Sans Frontières (2015), _Ebola: Pushed to the Limit and Beyond_ — MSF account of the international outbreak response, March 2015: the "out of control" declaration of 21 June 2014 and the reaction of WHO staff in Guinea and Sierra Leone. WHO declared the PHEIC on 8 August 2014, the Emergency Committee having met 6–7 August; as of 4 August, 1,711 cases and 932 deaths had been reported.],
+    [Ebola Interim Assessment Panel (2015), _Report of the Ebola Interim Assessment Panel_ (the "Stocking Report," chair Dame Barbara Stocking), World Health Organization, 7 July 2015 — the November 2014 IHR core-capacity figures (64 / 81 / 48), the "not acceptable" and "unacceptable" findings (quoted), and the Panel's three review headings.],
+    [Moon, S., Sridhar, D., Pate, M. A., Jha, A. K., Clinton, C., et al. (2015), "Will Ebola change the game? Ten essential reforms before the next pandemic. The report of the Harvard-LSHTM Independent Panel on the Global Response to Ebola," _The Lancet_ 386(10009):2204–2221, 28 November 2015, doi:10.1016/S0140-6736(15)00946-0 — the "ample reason" finding (quoted) and the ten reform proposals.],
     [World Health Organization (2016), _Ebola Situation Reports_ — West Africa: approximately 28,600 cases and 11,300 deaths reported to 10 June 2016 (reported figures; undercount acknowledged).],
-    [Médecins Sans Frontières (2015), _Ebola: Pushed to the Limit and Beyond_ — MSF account of the international outbreak response, March 2015.],
+    [High-level Panel on the Global Response to Health Crises (2016), _Protecting Humanity from Future Health Crises_ (chair Jakaya M. Kikwete), UN doc. A/70/723, 9 February 2016 — twenty-seven recommendations, including political-leadership structures above the technical agencies.],
   ),
   quote: [The Director-General had ample reason to raise international attention by convening the Emergency Committee or declaring a public health emergency of international concern earlier.],
   quote-source: "Harvard-LSHTM Independent Panel on the Global Response to Ebola (Moon et al., The Lancet, 28 November 2015).",
   le-insight: [
     West Africa Ebola is the reference case for declared
     international readiness that was certified but not deployable.
-    Most member states had not built the IHR (2005) core capacities and said so; WHO's own outbreak-response
+    Most member states had not built the IHR (2005) core capacities and said so, and the only measurement of that obligation was voluntary self-assessment, which the Stocking Panel called unacceptable; WHO's own outbreak-response
     capacity had been cut after 2011; and the escalation loop
     discounted an exponential signal for months before the PHEIC
     of 8 August 2014. The reported toll carries an acknowledged
@@ -2389,7 +2394,7 @@
       percent confidence interval of 793 to 8,498 — a 62
       percent increase in the mortality rate over the same
       period in 2016, and an interval whose width is itself a
-      finding about what a survey design can resolve. The
+      finding about what a survey design can resolve.#cn() The
       commissioned George Washington University Milken
       Institute study, released in August 2018, used
       death-registry data and demographic modeling that
@@ -2450,11 +2455,11 @@
     ),
   ),
   references: (
+    [Houser, T., & Marsters, P. (2018), "The World's Second Largest Blackout," _Rhodium Group_, April 12, 2018 — approximately 3.4 billion lost customer-hours, "three times larger than the next biggest blackout in US history"; the largest blackout in U.S. history by that metric.],
     [Federal Emergency Management Agency (2018), _2017 Hurricane Season FEMA After-Action Report_, July 12, 2018 — the agency's own self-assessment: force strength below target, Caribbean Distribution Center depletion, commodity-tracking shortfalls.],
-    [U.S. Government Accountability Office (2018), _2017 Hurricanes and Wildfires: Initial Observations on the Federal Response and Key Recovery Challenges_, GAO-18-472, September 4, 2018 — 54% of FEMA staff serving in a capacity in which they did not hold the "Qualified" title at the October 2017 peak.],
-    [Milken Institute School of Public Health, George Washington University (2018), _Ascertainment of the Estimated Excess Mortality from Hurricane María in Puerto Rico_, August 2018 — commissioned by the Government of Puerto Rico; ~2,975 excess deaths, September 2017 – February 2018; basis for the official toll revision from 64.],
+    [U.S. Government Accountability Office (2018), _2017 Hurricanes and Wildfires: Initial Observations on the Federal Response and Key Recovery Challenges_, GAO-18-472, September 4, 2018 — "at the height of FEMA workforce deployments in October 2017, 54 percent of staff were serving in a capacity in which they did not hold the title of 'Qualified'"; close to 14,000 federal employees deployed.],
     [Kishore, N., Marqués, D., Mahmud, A., et al. (2018), "Mortality in Puerto Rico after Hurricane Maria," _New England Journal of Medicine_ 379(2):162 – 170, doi:10.1056/NEJMsa1803972 — household-survey estimate of 4,645 excess deaths (95% CI 793 – 8,498), September 20 – December 31, 2017.],
-    [Houser, T., & Marsters, P. (2018), "The World's Second Largest Blackout," _Rhodium Group_, April 12, 2018 — approximately 3.4 billion lost customer-hours; the largest blackout in U.S. history by that metric.],
+    [Milken Institute School of Public Health, George Washington University (2018), _Ascertainment of the Estimated Excess Mortality from Hurricane María in Puerto Rico_, August 2018 — commissioned by the Government of Puerto Rico; ~2,975 excess deaths, September 2017 – February 2018; basis for the official toll revision from 64.],
   ),
   quote: [FEMA entered Maria with force strength below target and its Caribbean Distribution Center largely emptied by the Irma response; it could not comprehensively track commodities to the ports; the grid collapse became the longest blackout in U.S. history; the official toll was revised from 64 to 2,975 on the strength of the commissioned GWU excess-mortality study.],
   quote-source: "Editors' synthesis of the FEMA 2017 Hurricane Season After-Action Report (2018), GAO-18-472 (2018), the GWU Milken Institute study (2018), and Kishore et al. (2018, NEJM).",
@@ -2589,10 +2594,14 @@
       vendors, and the episode prompted scrutiny of concentration risk in
       endpoint security.#cn() The fallout also moved into court: Delta Air
       Lines, which put its losses near \$500 million, and CrowdStrike filed
-      competing suits, and in May 2025 a Georgia judge allowed Delta's
-      negligence claims against CrowdStrike to proceed while dismissing its
-      fraud claims; a separate passenger class action against Delta over the
-      cancellations was also allowed to advance. Each engineering response
+      competing suits on the same day in October 2024, and on 16 May 2025
+      Judge Kelly Lee Ellerbe of the Fulton County Superior Court let Delta's
+      gross-negligence and computer-trespass claims proceed while dismissing
+      the fraud claims resting on statements made before June 2022 — a
+      narrower fraud claim, that CrowdStrike had promised not to install an
+      unauthorised back door, survived. A separate passenger class action
+      against Delta over the cancellations was allowed to advance in part the
+      same month.#cn() Each engineering response
       targets a different layer of the
       same failure: staged rollout limits the blast radius of any one push,
       reconsidering kernel access limits how much a vendor fault can break,
@@ -2611,10 +2620,12 @@
     "Staged rollouts, kernel-access review, and scrutiny of vendor concentration risk followed the outage",
   ),
   references: (
-    [CrowdStrike, _Falcon Content Update Preliminary Post Incident Report_ (24 July 2024) — the Rapid-Response-Content-versus-Sensor-Content testing and staged-rollout gap.],
-    [CrowdStrike PIR (2024) — the configuration-file fault and the kernel crash; the ~8.5 million affected Windows machines figure is Microsoft's (D. Weston, 20 July 2024).],
-    [Microsoft resilient-engineering analyses and Windows kernel-access review (2024).],
+    [CrowdStrike, _Falcon Content Update Preliminary Post Incident Report_ (24 July 2024) — Rapid Response Content deploys as configuration data through Channel Files without the automated testing, manual validation and staged rollout that Sensor Content clears.],
+    [D. Weston, "Helping our customers through the CrowdStrike outage," _The Official Microsoft Blog_ (20 July 2024) — the ~8.5 million affected Windows devices, "less than one percent of all Windows machines"; cf. the CrowdStrike PIR for the Channel File 291 out-of-bounds read and the kernel crash.],
+    [CrowdStrike PIR (24 July 2024) — the finding that the update did not clear the testing depth or staged rollout applied to sensor code; the staggered-deployment and canary commitment is quoted from this report.],
     [U.S. Government Accountability Office, _Cyber Resiliency: CrowdStrike Outage Highlights Challenges_, GAO-24-107733 (23 September 2024); House Committee on Homeland Security, Subcommittee on Cybersecurity and Infrastructure Protection hearing, 24 September 2024 — supply-chain and concentration risk in endpoint security.],
+    [CrowdStrike PIR remediation commitments (2024); Microsoft, "Taking steps that drive resiliency and security for Windows customers," _Windows Experience Blog_ (12 September 2024), following the Windows Endpoint Security Ecosystem Summit of 10 September 2024 — new platform capabilities for security vendors rather than the elimination of kernel access.],
+    [_Delta Air Lines v. CrowdStrike_, Fulton County Superior Court, order on the motion to dismiss, 16 May 2025 (Judge Kelly Lee Ellerbe); the passenger class action against Delta, N.D. Ga., May 2025 (Judge Mark Cohen), allowed to proceed in part.],
     [B. Beyer et al. (eds.), _Site Reliability Engineering_ (2016) — staged rollout and canarying; cf. Knight Capital (Case 143).],
   ),
   quote: [Implement a staggered deployment strategy for Rapid Response Content in which updates are gradually deployed to larger portions of the sensor base, starting with a canary deployment.],

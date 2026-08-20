@@ -23,7 +23,7 @@
   year: "2013",
   domains-list: ("gov",),
   modes-code: "KTG",
-  impact: "~27,000 federal-marketplace enrollments in the first month — 106,185 across all marketplaces — against a 7M first-year exchange projection; $840M obligated by CMS for development through March 2014",
+  impact: "~27,000 federal-marketplace enrollments in the first month — 106,185 across all marketplaces — against a 7M first-year exchange projection; $840M obligated by CMS for the federal marketplace through March 2014 (GAO-14-694)",
   diagram: dgm.dgm-healthcaregov,
   kind: "failure",
   summary: [
@@ -104,11 +104,11 @@
     "Rescue team became U.S. Digital Service; rare case producing durable institutional reform",
   ),
   references: (
-    [U.S. GAO, _Healthcare.gov: CMS Has Taken Steps to Address Problems, but Needs to Further Implement Systems Development Best Practices_, GAO-15-238 (2015) — "end-to-end testing of Healthcare.gov and its supporting systems did not occur prior to system launch as required."],
-    [HHS Office of Inspector General, _Case Study of CMS Management of the Federal Marketplace_, OEI-06-14-00350 (2016) — unclear ownership and the CMS/CGI integration confusion.],
+    [HHS Office of Inspector General, _HealthCare.gov: Case Study of CMS Management of the Federal Marketplace_, OEI-06-14-00350 (February 2016) — the assembled team's expertise, the unfilled technical positions, and the finding that CMS leadership "did not recognize the need to clearly outline responsibilities and delineate this role."],
+    [U.S. GAO, _Healthcare.gov: CMS Has Taken Steps to Address Problems, but Needs to Further Implement Systems Development Best Practices_, GAO-15-238 (2015) — end-to-end testing did not occur prior to launch; CGI Federal, written testimony of Cheryl Campbell, House Committee on Energy and Commerce, 24 October 2013 — "CMS serves the important role of systems integrator or 'quarterback' on this project and is the ultimate responsible party for the end-to-end performance of the overall Federal Exchange." The testimony names CMS, not HHS; do not "correct" it.],
     [HHS OIG, OEI-06-14-00350 (2016), p. iii — "HealthCare.gov lacked clear project leadership to give direction and unity of purpose, responsiveness in execution, and a comprehensive view of progress."],
+    [L. A. Schlesinger & P. D. Bhayani, "HealthCare.gov: The Crash and the Fix (A)," Harvard Business School case 315129 (2015); Mergel et al. (2018), digital-government literature — the rescue and what the code was not.],
     [J. Pahlka, _Recoding America_ (2023) — the founding of the U.S. Digital Service out of the rescue.],
-    [L. A. Schlesinger & P. D. Bhayani, "HealthCare.gov: The Crash and the Fix (A)," Harvard Business School case 315129 (2015); Mergel et al. (2018), digital-government literature.],
   ),
   quote: [HealthCare.gov lacked clear project leadership to give direction and unity of purpose, responsiveness in execution, and a comprehensive view of progress.],
   quote-source: "HHS Office of Inspector General, HealthCare.gov: Case Study of CMS Management of the Federal Marketplace, OEI-06-14-00350, 2016",
@@ -280,11 +280,11 @@
     ),
   ),
   references: (
-    ["How big science failed to unlock the mysteries of the human brain," _MIT Technology Review_, 25 August 2021 — the principal critical assessment of HBP alongside BRAIN.],
-    [_In Silico_ (2020), documentary by Noah Hutton — long-form follow of Markram and the HBP through the contestation period.],
-    [_Science_ and _Nature_ contemporaneous coverage of the open letters and the mediation/restructuring (2014–2016).],
-    [Human Brain Project final reports (2023) — the project's own restructuring and concluding documentation.],
+    ["How big science failed to unlock the mysteries of the human brain," _MIT Technology Review_, 25 August 2021 — the principal critical assessment of HBP alongside BRAIN: the FET Flagship selection, the top-down governance under Markram, and the €1 billion headline.],
+    [Human Brain Project final reports (2023) — the project's own restructuring and concluding documentation: €607 million drawn across four funding periods, the re-scoping around EBRAINS, which entered the ESFRI Roadmap for Research Infrastructures in 2021, and the flagship's conclusion on 30 September 2023.],
     [Alivisatos et al. (2012), _Neuron_ — the BRAIN position paper that is the paired contrast (Case 198).],
+    [_Science_ and _Nature_ contemporaneous coverage of the July 2014 open letter (more than 800 signatories) and the mediation and restructuring (2014–2016); _In Silico_ (2020), documentary by Noah Hutton — long-form follow of Markram and the HBP through the contestation period. This is the journalism-tier material the evidence flag is about.],
+    [_MIT Technology Review_ (2021) — the governance-variable comparison across the two programmes.],
   ),
   quote: [A program that cannot re-scope without external mediation is a program designed to fail open.],
   quote-source: "Editors' synthesis of the Human Brain Project record.",
@@ -328,7 +328,7 @@
   year: "2014 – 2018",
   domains-list: ("technology", "hiring algorithms", "machine learning"),
   modes-code: "DKN",
-  impact: "Amazon internal recruiting-algorithm project initiated 2014, team disbanded by early 2017 (Reuters reported Oct 2018) after engineers determined the model could not be debiased; trained on ten years of historical resume data in which men predominated in technical roles; the model downgraded resumes containing the word \"women's\" and graduates of two all-women's colleges; Reuters single-outlet investigation Oct 10 2018",
+  impact: "Amazon internal recruiting-algorithm project initiated 2014, team disbanded by the start of 2017 (Reuters reported Oct 2018) because, Reuters reports, executives lost hope for it; trained on ten years of historical resume data in which men predominated in technical roles; the model downgraded resumes containing the word \"women's\" and graduates of two all-women's colleges; Amazon edited the programs neutral to those terms with, Reuters reports, no guarantee the models would not sort discriminatorily some other way; Reuters single-outlet investigation Oct 10 2018",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -416,8 +416,11 @@
       the project was deprecated rather than deployed; most
       cases in the corpus document deployments that ran for
       years before withdrawal, and the case's curricular value
-      is partly that the engineering team's verification of
-      irreducibility led to the decision not to deploy.#cn()
+      is partly that the organization stopped short of
+      deployment — though on the record Reuters carries it
+      stopped because executives lost hope, not because anyone
+      produced the irreducibility finding the curriculum asks
+      for.#cn()
     ], [ The teaching point is that trained bias cannot in general be debiased through downstream feature
       manipulation. When the training-data composition encodes a
       historical disparity in the outcome the model is being
@@ -458,10 +461,10 @@
     ),
   ),
   references: (
-    [Dastin, J. (2018), "Amazon scraps secret AI recruiting tool that showed bias against women," _Reuters_, October 10, 2018 — the primary investigation.],
-    [Subsequent commentary: Kim, P. T. (2017), "Data-Driven Discrimination at Work," _William & Mary Law Review_ 58(3):857–936 — academic frame for the structural pattern the Amazon case instantiates.],
-    [Raghavan, M., Barocas, S., Kleinberg, J., & Levy, K. (2020), "Mitigating Bias in Algorithmic Hiring: Evaluating Claims and Practices," _Proceedings of FAT\* 2020_, pp. 469–481 — survey of the algorithmic-hiring landscape into which the Amazon case is positioned.],
-    [Bogen, M., & Rieke, A. (2018), _Help Wanted: An Examination of Hiring Algorithms, Equity, and Bias_, Upturn report — contemporary practice survey of algorithmic hiring at the time of the Amazon deprecation.],
+    [Dastin, J. (2018), "Amazon scraps secret AI recruiting tool that showed bias against women," _Reuters_, October 10, 2018 — the primary investigation: the project initiated in 2014 to automate resume screening for technical roles.],
+    [Dastin (2018), _Reuters_ — the model penalising resumes containing the word "women's" and downgrading graduates of two all-women's colleges; Amazon "edited the programs to make them neutral to these particular terms," but "that was no guarantee that the machines would not devise other ways of sorting candidates that could prove discriminatory."],
+    [Dastin (2018), _Reuters_ — Amazon "disbanded the team by the start of last year because executives lost hope for the project," and recruiters "looked at the recommendations generated by the tool when searching for new hires, but never relied solely on those rankings."],
+    [Kim, P. T. (2017), "Data-Driven Discrimination at Work," _William & Mary Law Review_ 58(3):857–936; Raghavan, M., Barocas, S., Kleinberg, J., & Levy, K. (2020), "Mitigating Bias in Algorithmic Hiring: Evaluating Claims and Practices," _Proceedings of FAT\* 2020_, pp. 469–481; Bogen, M., & Rieke, A. (2018), _Help Wanted: An Examination of Hiring Algorithms, Equity, and Bias_, Upturn report — the academic frame and the algorithmic-hiring landscape into which the case is positioned.],
   ),
   quote: [Trained bias cannot in general be debiased through downstream feature manipulation; when the training-data composition encodes a historical disparity in the outcome the model is being trained to predict, the disparity will be reproduced through whatever features remain in the input space.],
   quote-source: "Editors' synthesis of the Reuters investigation (Dastin, 2018) and the surrounding algorithmic-hiring literature.",
@@ -517,8 +520,11 @@
     vehicle. The NTSB found the safety operator had been watching a video on
     her phone, but placed heavy blame on Uber: it had not recognized the
     risk of automation complacency, trained for it, or enforced its own
-    no-phone policy. The system itself was programmed not to brake when a
-    crash was deemed unavoidable, and had no functionality to anticipate a pedestrian crossing midblock. The human was kept in the loop as a passive
+    no-phone policy. The system itself had no functionality to anticipate a
+    pedestrian crossing midblock, suppressed braking for a full second once
+    it recognised the emergency, and then — because avoiding the collision
+    would have required braking beyond its own design limit — alerted and
+    slowed gradually rather than braking hard. The human was kept in the loop as a passive
     monitor — a role the NTSB noted is chronically unperformable — with no
     infrastructure to make it work. Uber ATG is the book's defining
     human-AI-teaming case.
@@ -558,9 +564,7 @@
       board's way of locating the fault in the design of the role rather than
       the lapse of the person filling it — the policy existed on paper but
       had no mechanism behind it to make compliance the default. The system
-      compounded the human gap. It was programmed
-      not to apply emergency braking when a crash was judged unavoidable —
-      removing the automated backstop — and it lacked the functionality to anticipate a pedestrian crossing midblock: it detected Herzberg 5.6 seconds out but never assigned her the goal of jaywalking, cycling her classification between vehicle, bicycle, and other and discarding her tracking history at each change, so it never predicted her path.#cn()
+      compounded the human gap. It lacked the functionality to anticipate a pedestrian crossing midblock: it detected Herzberg 5.6 seconds out but never assigned her the goal of jaywalking, cycling her classification between vehicle, bicycle, and other and discarding her tracking history at each change, so it never predicted her path. It recognised an emergency only 1.2 seconds before impact, and its design then withheld braking twice over. First came what Uber ATG called action suppression: a one-second pause, with no alert to the operator, while the system verified the hazard or the operator took control. Then, because avoiding the collision would have required braking beyond the deceleration the ADS was allowed to command, the system did not engage emergency braking at all — it sounded an auditory alert and began to slow the vehicle gradually. The limit was the design's, not the vehicle's: the ADS capped automated braking at 0.71 g where the NTSB found the SUV capable of about 0.92 g on that surface.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -587,7 +591,7 @@
       concession that the single passive observer had been an unsupported
       role all along: a second operator shares the vigilance burden, and
       driver-monitoring closes the attention vacuum the original design left
-      open. Its lasting contribution is the
+      open.#cn() Its lasting contribution is the
       reframing of passive monitoring as a role that must be engineered to be
       performable — or not assigned at all.
     ],
@@ -595,7 +599,7 @@
   beats: (
     "Uber ATG tested self-driving cars using safety operators as passive surveillance of rare failures",
     "A Volvo killed Elaine Herzberg in Tempe; the operator was watching a phone video",
-    "NTSB faulted Uber for ignoring automation complacency; emergency braking was suppressed and pedestrian classification limited",
+    "NTSB faulted Uber for ignoring automation complacency; braking suppressed for one second, then withheld because avoidance exceeded the ADS design limit; pedestrian classification limited",
     "The monitor role lacked interface, training, and authority; design assumed failure would never arrive",
     "Uber exited self-driving; industry shifted toward two-operator teams and driver-monitoring systems",
   ),
@@ -603,9 +607,10 @@
     [NTSB, _Collision Between Vehicle Controlled by Developmental Automated Driving System and Pedestrian_, Highway Accident Report HAR-19/03 (2019) — the Tempe collision and probable cause.],
     [NTSB HAR-19/03 (2019) — the safety operator's distraction (watching a video) before impact.],
     [NTSB HAR-19/03 (2019) — Uber "did not adequately recognize the risk of automation complacency"; training and policy failures (quoted in part).],
-    [NTSB HAR-19/03 (2019) — the suppressed emergency braking and the absent functionality to anticipate a pedestrian crossing midblock.],
-    [NTSB HAR-19/03 (2019), Board Member Statement, p. 62 — Vice Chairman Bruce Landsberg: "Automation performs remarkably well most of the time and therein lies the problem."],
-    [R. Parasuraman & D. Manzey (2010), complacency in automation; L. Bainbridge (1983), "Ironies of Automation."],
+    [NTSB HAR-19/03 (2019) — the absent functionality to anticipate a pedestrian crossing midblock; the one-second action-suppression period with no operator alert; and the design under which, where a collision could not be avoided within the allowed braking and jerk limits, the ADS sounded an auditory alert and slowed gradually rather than applying maximum braking.],
+    [NTSB HAR-19/03 (2019), Board Member Statement, p. 62 — Vice Chairman Bruce Landsberg: "Automation performs remarkably well most of the time and therein lies the problem." The report's own finding, at §2.2.2, is that "when it comes to the human capacity to monitor an automation system for its failures, research findings are consistent—humans are very poor at this task."],
+    [Uber's sale of its Advanced Technologies Group to Aurora, announced 7 December 2020 and closed in January 2021; _State of Arizona v. Vasquez_, Maricopa County Superior Court (2023) — guilty plea to endangerment, three years' supervised probation.],
+    [R. Parasuraman & D. Manzey (2010), complacency in automation — cited by the NTSB at §2.2.2; L. Bainbridge (1983), "Ironies of Automation."],
   ),
   quote: [Automation performs remarkably well most of the time and therein lies the problem. Human attention span is limited, and we are notoriously poor monitors.],
   quote-source: "NTSB Vice Chairman Bruce Landsberg, concurring statement, Highway Accident Report HAR-19/03, 2019",
@@ -632,7 +637,7 @@
   ),
   reflection-list: (
     [Identify a passive-monitor role in your domain. What evidence would tell you the role is or is not performable as designed?],
-    [The Tempe vehicle was programmed not to brake when a crash was unavoidable. Reconstruct the design rationale and propose the deliverable that should have prevented that decision.],
+    [The Tempe vehicle suppressed braking for a second and then withheld it because avoidance exceeded a limit the designers had set. Reconstruct the design rationale and propose the deliverable that should have prevented that decision.],
     [Uber had a no-phone policy with nothing to enforce it. What is a rule in your domain that exists on paper but lacks the mechanism to make compliance the default — and how would you engineer that mechanism?],
   ),
   approaches: (
@@ -1065,7 +1070,7 @@
       The case is the headline mortgage-finance instance of a pattern that
       now surfaces in clinical algorithms (eGFR, Cases 25, 26 and 6), in
       hiring and proctoring tools (Case 47 small-tier proctoring bias),
-      and in welfare administration (SyRI). It pairs with the Coots et
+      and in welfare administration (SyRI, Case 189). It pairs with the Coots et
       al. fintech fairness audit (Case 196) which shows the next layer:
       once the practitioner accepts that omission is not the answer,
       competing fairness definitions disagree about which adjustment is
@@ -1093,8 +1098,9 @@
     ),
   ),
   references: (
-    [Bartlett, Morse, Stanton, & Wallace (2022), "Consumer-lending discrimination in the FinTech era," _Journal of Financial Economics_ 143(1):30–56, doi:10.1016/j.jfineco.2021.05.047.],
-    [Consumer Financial Protection Bureau, _Mortgage Market Activity and Trends_ (annual HMDA reports), supporting the population-level disparities backdrop.],
+    [Consumer Financial Protection Bureau, _Mortgage Market Activity and Trends_ (annual HMDA reports), supporting the population-level disparities backdrop of the fintech transition.],
+    [Bartlett, Morse, Stanton, & Wallace (2022), "Consumer-lending discrimination in the FinTech era," _Journal of Financial Economics_ 143(1):30–56, doi:10.1016/j.jfineco.2021.05.047 — the acceptance margin: "Face-to-face lenders reject Latinx and African-American applications approximately 6% more often than they reject similarly situated non-minority applicants," while FinTech lenders "do not discriminate at all in the decision to reject or accept"; the authors "note that these results are preliminary." The 6% is the face-to-face figure specifically; the abstract's shorter phrasing says "lenders," and the case follows the body text.],
+    [Bartlett et al. (2022) — the pricing margin: 7.9 and 3.6 basis points on purchase and refinance mortgages, \$765M a year in aggregate extra interest, algorithms discriminating "40% less than face-to-face lenders," and the rent-extraction reading (quoted).],
     [Dwork et al. (2012), "Fairness Through Awareness," ITCS 2012 — the foundational technical statement of the limits of unawareness.],
     [Mitchell, Potash, Barocas, D'Amour, & Lum (2021), "Algorithmic Fairness: Choices, Assumptions, and Definitions," _Annual Review of Statistics and Its Application_ 8:141–163 — the competing-definitions framing.],
   ),
@@ -1572,7 +1578,7 @@
       European Convention on Human Rights — the right to private
       life. The case was heard by the District Court of The Hague.
       On February 5, 2020, the court halted the program: the system
-      was found insufficiently transparent and verifiable to strike the fair balance Article 8(2) requires. The court held that fraud gives a pressing social need and that SyRI is not an a priori disproportionate instrument; transparency is what it failed. The ruling is one of the first instances
+      was found insufficiently transparent and verifiable to strike the fair balance Article 8(2) requires. The court accepted the State's case that combating fraud answers a pressing social need; what it held was that the SyRI legislation is "insufficiently transparent and verifiable to conclude that the interference with the right to respect for private life which the use of SyRI may entail is necessary, proportional and proportionate in relation to the aims the legislation pursues." The ruling is one of the first instances
       anywhere of a court stopping a welfare-AI system on
       human-rights grounds.#cn()
     ],
@@ -1646,10 +1652,10 @@
     ),
   ),
   references: (
-    [District Court of The Hague (2020), judgment of 5 February 2020 (NJCM et al. v. State of the Netherlands), ECLI:NL:RBDHA:2020:865.],
-    [Rachovitsa & Johann (2022), "The Human Rights Implications of the Use of AI in the Digital Welfare State: Lessons Learned from the Dutch SyRI Case," _Human Rights Law Review_ 22(2), doi:10.1093/hrlr/ngac010.],
-    [Library of Congress Global Legal Monitor (2020), report on the SyRI ruling.],
-    [Algorithm Watch (2020), case study of the SyRI ruling and its implications for public-sector AI in Europe.],
+    [District Court of The Hague (2020), judgment of 5 February 2020 (NJCM et al. v. State of the Netherlands), ECLI:NL:RBDHA:2020:865; the official English translation is ECLI:NL:RBDHA:2020:1878, from which the paragraph numbers below are taken. ¶6.93 records that SyRI had to date been applied only in so-called "problem districts" and that "there is in fact a risk that SyRI inadvertently creates links based on bias, such as a lower socio-economic status or an immigration background."],
+    [Rachovitsa & Johann (2022), "The Human Rights Implications of the Use of AI in the Digital Welfare State: Lessons Learned from the Dutch SyRI Case," _Human Rights Law Review_ 22(2), doi:10.1093/hrlr/ngac010; the transparency holding is at ¶6.86 of the judgment.],
+    [AlgorithmWatch (2020), "How Dutch activists got an invasive fraud detection algorithm banned," _Automating Society Report 2020_ — carrying the _de Volkskrant_ reporting of late June 2019 that no SyRI investigation had detected new fraud, and that of five neighbourhood analyses requested by municipalities in five years only two were run.],
+    [Library of Congress Global Legal Monitor (2020), report on the SyRI ruling — the ruling's system-specific scope.],
   ),
   quote: [Some governance objections are correct. Design does not dissolve them — it is what the objection is to.],
   quote-source: "Editors' synthesis of the SyRI ruling and Rachovitsa & Johann (2022).",
@@ -1679,7 +1685,7 @@
   literature-items: (
     [District Court of The Hague judgment (2020), ECLI:NL:RBDHA:2020:865],
     [Rachovitsa & Johann (2022), _Human Rights Law Review_],
-    [Algorithm Watch (2020), SyRI case study],
+    [AlgorithmWatch (2020), _Automating Society Report_ — SyRI case study],
   ),
   reflection-list: (
     [Identify a public-sector analytics system in your jurisdiction. Are the data subjects informed they are being scored? Is the model and its inputs disclosed? What is the proportionality argument the deploying agency would make if challenged?],
@@ -1697,7 +1703,7 @@
   year: "2023 – 2024",
   domains-list: ("autonomous vehicles", "regulatory governance", "incident disclosure"),
   modes-code: "GKN",
-  impact: "On 24 October 2023 the California DMV suspended Cruise's driverless deployment and testing permits, citing the company's misrepresentation of safety-relevant information after a robotaxi dragged a pedestrian roughly 20 feet at ~7 mph following an initial stop; the order rests on two grounds — that the vehicles are not safe for the public's operation, and that the manufacturer misrepresented safety information",
+  impact: "On 24 October 2023 the California DMV suspended Cruise's driverless deployment and testing permits, citing the company's misrepresentation of safety-relevant information after a robotaxi dragged a pedestrian about 20 feet, reaching ~7 mph, following an initial stop; the order cites four regulatory provisions carrying two substantive findings — that the vehicles are not safe for the public's operation, and that the manufacturer misrepresented safety information",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -1709,8 +1715,8 @@
     On 2 October 2023 a pedestrian was struck by a human-driven
     vehicle in San Francisco and propelled into the path of a Cruise
     robotaxi. The robotaxi came to a stop, then performed a pullover
-    maneuver that dragged the pedestrian roughly 20 feet at about
-    7 mph before stopping again. Cruise initially shared video of the
+    maneuver that dragged the pedestrian about 20 feet, reaching
+    about 7 mph, before stopping again. Cruise initially shared video of the
     initial stop with regulators and reporters but did not disclose
     the subsequent movement; the California DMV learned of the
     pullover from another agency and received the full video on 13 October. On 24 October the DMV suspended Cruise's driverless
@@ -1735,8 +1741,12 @@
       into the path of a Cruise robotaxi operating without a safety
       driver. The robotaxi detected the collision and came to a
       stop. The vehicle then executed what Cruise later described
-      as a pullover maneuver, traveling roughly 20 feet at about
-      7 mph with the pedestrian pinned beneath it. A hit-and-run driver struck the pedestrian first and threw her into the path of the Cruise vehicle, which then struck her, braked, and — with her pinned beneath it — executed a pullover manoeuvre that dragged her some twenty feet. The initiating collision was not Cruise's; everything after it was Cruise's system acting on its own.#cn()
+      as a pullover maneuver, traveling about 20 feet and reaching
+      a speed of 7 miles per hour before coming to a complete and
+      final stop, with the pedestrian pinned beneath it. The
+      initiating collision was a hit-and-run driver's, not
+      Cruise's; everything after it was Cruise's system acting on
+      its own.#cn()
     ],
     [
       In the immediate days after the incident, Cruise never told the media about the dragging or showed them the full video. With regulators there are two readings: the DMV says the pullover was not shown to it on 3 October; Cruise employees say they played the full video and that connectivity problems hampered all but one of those meetings. The California
@@ -1749,10 +1759,18 @@
     [
       On 24 October 2023 the DMV issued an Order of Suspension
       suspending Cruise's driverless deployment permit and its
-      driverless testing permit. The order cited misrepresentation
-      of safety-relevant information — that the company had
-      "misrepresented any information related to safety of the autonomous technology of its vehicles" — as one of two grounds for the
-      suspension. The Order of Suspension is the
+      driverless testing permit. The order cites four regulatory
+      provisions: that the vehicles "are not safe for the public's
+      operation" (13 CCR §228.20(b)(6)); that the manufacturer "has
+      misrepresented any information related to safety of the
+      autonomous technology" (§228.20(b)(3)); an act or omission
+      making testing on public roads an unreasonable risk to the
+      public (§227.42(b)(5)); and the authority to suspend
+      immediately where required for the safety of persons
+      (§227.42(c)). Two substantive findings sit under them —
+      unsafe performance and misrepresentation — and it is the
+      second that makes this a disclosure case. The Order of
+      Suspension is the
       investigation-grade artifact in this case; the reconstruction
       of the partial-disclosure mechanism and the internal
       timeline rests on contemporaneous journalism.#cn()
@@ -1769,8 +1787,9 @@
       flag is binding: the DMV's published order is
       investigation-grade, but the precise sequence of internal
       decision-making rests on TechCrunch, NBC News, SF
-      Standard, and Mission Local reporting that has not been
-      superseded in part by the Quinn Emanuel report, which Cruise's board commissioned and published.#cn()
+      Standard, and Mission Local reporting, superseded in part by
+      the Quinn Emanuel report, which Cruise's board commissioned
+      and published on 25 January 2024.#cn()
     ],
     [
       The LENS teaching point pairs directly with Waymo. The new
@@ -1791,10 +1810,10 @@
     ],
   ),
   beats: (
-    "2 October 2023: pedestrian struck by human-driven vehicle, propelled into path of Cruise robotaxi; Cruise vehicle stopped, then pullover maneuver dragged pedestrian ~20 ft at ~7 mph",
+    "2 October 2023: pedestrian struck by human-driven vehicle, propelled into path of Cruise robotaxi; Cruise vehicle stopped, then pullover maneuver dragged pedestrian about 20 ft, reaching ~7 mph",
     "Cruise initial disclosure to regulators and reporters showed only the initial stop; full pullover sequence not disclosed",
     "DMV learned of pullover from another agency; received full video 13 October, eleven days after the incident",
-    "24 October 2023: DMV Order of Suspension suspends driverless deployment and testing permits, citing unsafe vehicle performance and misrepresentation of safety information",
+    "24 October 2023: DMV Order of Suspension suspends driverless deployment and testing permits under four regulatory provisions, carrying two substantive findings — unsafe vehicle performance and misrepresentation of safety information",
     "Journalism-tier flag: Order is investigation-grade; partial-disclosure mechanism reconstructed from TechCrunch, NBC News, SF Standard, Mission Local — future validation ongoing",
   ),
   approaches: (
@@ -1810,11 +1829,11 @@
     ),
   ),
   references: (
-    [California DMV (24 October 2023), Order of Suspension, Cruise LLC — driverless deployment and testing permits.],
-    [NBC News (October 2023), reporting on the Cruise pedestrian incident and DMV suspension.],
-    [TechCrunch (October 2023), incident-disclosure reconstruction.],
-    [SF Standard (October 2023), San Francisco AV regulatory reporting.],
-    [Mission Local (October 2023), San Francisco-specific incident reporting.],
+    [California DMV (24 October 2023), Order of Suspension, Cruise LLC — driverless deployment and testing permits: "The AV traveled about 20 feet and reached a speed of 7 miles per hour before coming to a complete and final stop."],
+    [California DMV, Order of Suspension (24 October 2023) — the 3 October meeting at which the footage shown "ended with the AV's initial stop"; "the department only learned of the AV's subsequent movement via discussion with another government agency"; the full video provided on 13 October. Reconstruction of the internal decision-making rests on TechCrunch (October 2023).],
+    [California DMV, "DMV Statement on Cruise LLC Suspension" (24 October 2023) — the four regulatory provisions cited: 13 CCR §§228.20(b)(6), 228.20(b)(3), 227.42(b)(5) and 227.42(c).],
+    [Quinn Emanuel Urquhart & Sullivan, report to the Cruise board on the 2 October 2023 incident and the company's regulatory disclosures, published 25 January 2024; NBC News, SF Standard and Mission Local reporting (October 2023) — the contemporaneous journalism-tier reconstruction.],
+    [NHTSA consent order with Cruise, 30 September 2024 (\$1.5 million civil penalty); U.S. Department of Justice deferred prosecution agreement with Cruise, November 2024 (admission of a false report; \$500,000); General Motors announcement of 10 December 2024 ending funding of Cruise robotaxi development.],
     [Cruise public statements, October–November 2023, and the company's blog post accepting the Quinn Emanuel findings (January 2024).],
   ),
   quote: [The collision involved a human driver. The suspension was about what the company chose not to show.],
@@ -1835,7 +1854,7 @@
     Sociotechnical Constraints) for the subobjective *Delegation
     with revocation* (3.3) — the case shows what revocation looks
     like when the disclosure architecture fails — and in
-    Domain 3 (Emerging Systems and Human-System Collaboration) for the
+    Domain 3 (Human-System Collaboration) for the
     oversight obligations that follow when a system acts
     autonomously after a triggering event. Direct foil to
     Case 199 (Waymo); pairs with Case 200 (CPUC) on the

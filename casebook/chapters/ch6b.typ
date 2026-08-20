@@ -255,7 +255,7 @@
       1996 and accelerated through 1997–1998 with the creation of the
       President's Council on Year 2000 Conversion (established February 1998) and the OMB
       quarterly reporting cycle. Federal mission-critical systems
-      were inventoried at line-item granularity — OMB required the major departments and agencies to report quarterly, from May 1997, the proportion of their mission-critical systems Y2K-compliant, agency by agency. The discipline of the program rested on three
+      were inventoried at line-item granularity — OMB directed the major departments and agencies to submit quarterly reports beginning 15 May 1997, agency by agency, on the proportion of their mission-critical systems that were Y2K-compliant. In that first report the figure across the 24 major departments and agencies was 21 percent; by December 1999 OMB reported 99.9 percent. The discipline of the program rested on three
       institutional features: line-item inventory at the level of
       the actual systems, OMB-enforced quarterly status reporting,
       and GAO-sustained external audit that named agencies whose
@@ -327,11 +327,11 @@
     ),
   ),
   references: (
-    [General Accounting Office, _Year 2000 Computing Challenge_ report series (1997–2000), particularly GAO/AIMD-00-290, _Lessons Learned Can Be Applied to Other Management Challenges_ (September 2000) — the federal-program-management record and GAO's own retrospective.],
-    [Office of Management and Budget, quarterly reports on federal Y2K remediation status (1997–1999) — program-self-report tier.],
-    [President's Council on Year 2000 Conversion, _The Journey to Y2K_ final report (2000) — institutional retrospective of the federal coordination effort.],
-    [Manion & Evan (2000), "The Y2K Problem and Professional Responsibility: A Retrospective Analysis," _Technology in Society_ 22(3), 361–387 — retrospective literature on the counterfactual debate.],
+    [General Accounting Office, _Year 2000 Computing Challenge_ report series (1997–2000), particularly GAO/AIMD-00-290, _Lessons Learned Can Be Applied to Other Management Challenges_ (September 2000) — the federal-program-management record and GAO's own retrospective; GAO designated Y2K a high-risk area in February 1997.],
+    [Office of Management and Budget, quarterly reports on federal Y2K remediation status (1997–1999) — program-self-report tier; OMB "directed the major departments and agencies to submit quarterly reports beginning May 15, 1997," and reported 21 percent of their mission-critical systems compliant in May 1997 against 99.9 percent in December 1999 (figures as given in GAO/AIMD-00-290).],
     [U.S. Department of Commerce, Economics and Statistics Administration, _The Economics of Y2K and the Impact on the United States_ (November 1999) — total U.S. Y2K spending of about \$100 billion covering repairs started 1995 through 2001, of which the federal share was about \$8 billion.],
+    [President's Council on Year 2000 Conversion, _The Journey to Y2K_ final report (2000) — institutional retrospective of the federal coordination effort; the Council was established by Executive Order 13073 in February 1998.],
+    [Manion & Evan (2000), "The Y2K Problem and Professional Responsibility: A Retrospective Analysis," _Technology in Society_ 22(3), 361–387, doi:10.1016/S0160-791X(00)00015-4 — retrospective literature on the counterfactual debate.],
   ),
   quote: [The C7 transition succeeded because it was believed and treated. The counterfactual — whether the threat was as large as the response implies — the program structurally cannot answer.],
   quote-source: "Editors' synthesis of the GAO Y2K report series and the post-2000 retrospective literature.",
@@ -379,7 +379,7 @@
   kind: "intervention",
   summary: [
     Three Mile Island did not produce a reactor accident at the next plant
-    over — it produced an institution. In the autumn of 1979, before the Kemeny Commission had reported, the U.S. commercial nuclear industry founded the Institute of Nuclear Power Operations on a stark premise: an accident
+    over — it produced an institution. The Kemeny Commission reported on 30 October 1979 that the industry should "set and police its own standards of excellence"; in December 1979, eight months after the accident, the U.S. commercial nuclear industry established the Institute of Nuclear Power Operations on a stark premise: an accident
     at any single plant would threaten every operator's license, and no
     utility could engineer its safety capability alone. Funded by the
     utilities it evaluated and operating without statutory authority, INPO
@@ -403,7 +403,7 @@
     ],
     // -- The Intervention --
     [
-      The utilities founded the Institute of Nuclear Power Operations in the autumn of 1979, and the Kemeny report named the "recently created" Institute as an appropriate vehicle for the industry to set and police its own standards. Its premise was that an
+      The Kemeny Commission's recommendation to the industry was that it "set and police its own standards of excellence to ensure the effective management and safe operation of nuclear power plants," and the utilities established the Institute of Nuclear Power Operations in December 1979 in response — eight months after the accident and two months after the report. Its premise was that an
       accident anywhere threatened everyone's license to operate. INPO set
       training and certification standards for operators and supervisors,
       and in 1985 the National Academy for Nuclear Training began
@@ -455,17 +455,17 @@
   ),
   beats: (
     "Three Mile Island exposed an industry where lessons at one plant never reached others",
-    "Utilities founded INPO within months on the premise one accident threatened everyone's license",
+    "Kemeny Commission (30 October 1979) told the industry to set and police its own standards; utilities established INPO that December on the premise one accident threatened everyone's license",
     "Honest peer review by working operators gave a non-statutory body its enforcement weight",
     "No INES Level 4-or-above accident since founding; fleet-wide performance indicators improved broadly across the industry",
     "Shared exposure, regulatory legitimacy, and peer review crossed borders to WANO after Chernobyl",
   ),
   references: (
-    [Rees, J. (1994), _Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island_ — INPO's design and the "hostages" premise (paraphrased).],
-    [_Report of the President's Commission on the Accident at Three Mile Island_ (Kemeny Commission, 1979) — the pre-TMI culture.],
-    [Nuclear Energy Institute, "Lessons from the 1979 Accident at Three Mile Island"; National Academy for Nuclear Training — accreditation and peer evaluation.],
+    [_Report of the President's Commission on the Accident at Three Mile Island_ (Kemeny Commission, 30 October 1979) — the pre-TMI culture, the disregarded September 1977 Davis-Besse precursor, and the recommendation that the industry "set and police its own standards of excellence."],
+    [Willard, R. F. (2019), _The Role of the Institute of Nuclear Power Operations in Supporting the United States Commercial Nuclear Power Industry's Focus on Nuclear Safety_, testimony for the record, U.S. Senate Committee on Environment and Public Works, 13 November 2019 — INPO's design, funding, peer evaluations, and the formation of the National Academy for Nuclear Training in 1985. INPO's own history dates its formal establishment to December 1979, in response to the Commission's recommendations; the Kemeny report does not name INPO.],
+    [Rees, J. (1994), _Hostages of Each Other: The Transformation of Nuclear Safety since Three Mile Island_ — INPO's design, the peer-evaluation mechanism, and the "hostages" premise (paraphrased).],
     [World Nuclear Association — Three Mile Island Accident; INPO/WANO performance indicators.],
-    [Willard, R. F. (2019), _The Role of the Institute of Nuclear Power Operations in Supporting the United States Commercial Nuclear Power Industry's Focus on Nuclear Safety_, testimony for the record, U.S. Senate Committee on Environment and Public Works — INPO's design, funding, peer evaluations, and the National Academy.],
+    [Nuclear Energy Institute, "Lessons from the 1979 Accident at Three Mile Island"; National Academy for Nuclear Training — accreditation, and the founding of WANO after Chernobyl.],
   ),
   quote: [Every utility recognized that an accident at any single plant would affect every operator's license to operate.],
   quote-source: "Paraphrasing the institutional analysis in Rees, Hostages of Each Other, 1994",
@@ -682,9 +682,10 @@
     within the Rail Safety and Standards Board. The published record
     states that between 2008 and 2012 CIRAS received 2,228 reports,
     of which the operating program reports 45% led to tangible safety
-    improvements and about 33% contained important safety
-    information. The program directly influenced the design of a
-    confidential reporting system in the United States. The
+    improvements and about 33% contained important information about
+    safety that was new to the company concerned. The program directly
+    influenced the design of the Federal Railroad Administration's
+    Confidential Close Call Reporting System (C3RS) in the United States. The
     interview-based method surfaces motive and intent — the *why*
     behind a near-miss — that company databases miss precisely
     because those databases are tied to discipline. The honest hedge
@@ -731,10 +732,13 @@
       method and its yield. The operating program reports that
       between 2008 and 2012, CIRAS received 2,228 reports, of which
       45% led to tangible safety improvements and approximately 33%
-      contained important safety information that fed back into
-      operating practice. The program's design has directly
+      contained important information about safety that was new to
+      the company concerned. The program's design has directly
       influenced the construction of a confidential reporting
-      system in the United States. The interview-based method
+      system in the United States — the Federal Railroad
+      Administration's Confidential Close Call Reporting System
+      (C3RS), which the operating record says used lessons learned
+      from CIRAS. The interview-based method
       surfaces motive and intent in a way that incident-database
       schemas tied to discipline cannot.#cn()
     ],
@@ -770,7 +774,7 @@
     "ScotRail pilot 1995–1997 — interview-based confidential reporting; insulated from employer disciplinary process",
     "Ladbroke Grove crash 1999 (31 deaths); CIRAS mandated across UK mainline rail in 2000",
     "Independent unit within RSSB from 2008; the independence is the credible commitment, written into operating structure",
-    "Operating program reports 2,228 reports 2008–2012, 45% led to tangible safety improvements (program self-report)",
+    "Operating program reports 2,228 reports 2008–2012, 45% led to tangible safety improvements, ~33% carried safety information new to the company concerned (program self-report); design influenced the FRA's C3RS",
     "Non-aviation depth for the C4 competency; same structural form as ASRS/CRM (Cases 119, 117)",
   ),
   approaches: (
@@ -786,9 +790,10 @@
     ),
   ),
   references: (
-    [Davies, Wright, Courtney, & Reid (2000), "Confidential Incident Reporting on the UK Railways: The 'CIRAS' System," _Cognition, Technology & Work_ 2, 117–125, doi:10.1007/PL00011494.],
-    [Rail Safety and Standards Board (RSSB), CIRAS program documentation 2008 – present — operating-program publications.],
-    [University of Strathclyde, CIRAS impact case study — the operating-program-self-report on outcomes between 2008 and 2012.],
+    [Davies, Wright, Courtney, & Reid (2000), "Confidential Incident Reporting on the UK Railways: The 'CIRAS' System," _Cognition, Technology & Work_ 2, 117–125, doi:10.1007/PL00011494 — the interview-based method and the structural argument for a channel independent of the employer.],
+    [University of Strathclyde, CIRAS impact case study (REF) — the institutional history: the ScotRail pilot of 1995–97, the national mandate of 2000 after Ladbroke Grove, and "in 2008, CIRAS became an independently operated unit within the Rail Safety and Standards Board." Secondary accounts date the transfer to 2009, when the CIRAS Charitable Trust wound up its funding role; do not "correct" the 2008 date against them.],
+    [University of Strathclyde, CIRAS impact case study (REF) — the operating-program self-report: "between 2008 and 2012 CIRAS received 2228 reports; 45% of these resulted in tangible safety improvements and approximately 33% contained important information about safety that was new to the company concerned"; and the influence on the FRA's Confidential Close Call Reporting System (C3RS).],
+    [Rail Safety and Standards Board (RSSB), CIRAS program documentation 2008 – present — operating-program publications; the peer-reviewed literature describes the method and reports the program-supplied figures rather than independently validating them.],
     [Ladbroke Grove Rail Inquiry (Cullen, 2001), final report — the public inquiry into the crash that preceded the national mandate.],
   ),
   quote: [The 45%-led-to-improvement figure is the operating program's self-report. The institutional design is the audited finding.],
@@ -938,7 +943,7 @@
       Harmer, Haver, Salomons, and Wheeler, 2007) found early
       gains — better identification of gaps and stronger, more predictable sectoral leadership, with no observable increase in ultimate accountability — purchased at real
       transaction cost in meetings, reporting, and staff time,
-      with benefits uneven across clusters and countries. The
+      with benefits uneven across clusters and countries.#cn() The
       Phase 2 evaluation (Steets, Grünewald, Binder, and
       colleagues, GPPi/Groupe URD, 2010), commissioned by the
       IASC across six country studies, found mostly positive
@@ -962,7 +967,7 @@
       Transformative Agenda revised the approach in response,
       restating the clusters' original purpose around strategic
       gap analysis and adding system-wide activation protocols
-      for the largest emergencies. That arc is why the case
+      for the largest emergencies.#cn() That arc is why the case
       sits on the works side of this book: an institution
       diagnosed its own coordination failure after catastrophe,
       redesigned accountability as a property of the
@@ -995,11 +1000,12 @@
     ),
   ),
   references: (
-    [Adinolfi, Bassiouni, Lauritzsen, & Williams (2005), _Humanitarian Response Review_, commissioned by the UN Emergency Relief Coordinator, New York/Geneva: OCHA.],
-    [Stoddard, Harmer, Haver, Salomons, & Wheeler (2007), _Cluster Approach Evaluation, Final Report_, OCHA Evaluation and Studies Section, with NYU Center on International Cooperation, ODI Humanitarian Policy Group, and the Praxis Group.],
-    [Steets, Grünewald, Binder, de Geoffroy, Kauffmann, Krüger, Meier, & Sokpoh (2010), _Cluster Approach Evaluation 2: Synthesis Report_, GPPi / Groupe URD, commissioned by the IASC, Geneva: OCHA.],
-    [Inter-Agency Standing Committee (2011 – 2012), _IASC Transformative Agenda_ — Principals' decisions of December 2011 and associated protocols.],
-    [Grünewald & Binder (2010), _Inter-agency Real-Time Evaluation in Haiti: 3 Months After the Earthquake_, Groupe URD / GPPi.],
+    [Adinolfi, Bassiouni, Lauritzsen, & Williams (2005), _Humanitarian Response Review_, commissioned by the UN Emergency Relief Coordinator, New York/Geneva: OCHA, August 2005 — the diagnosis of uneven sectoral capacity and absent accountability across the international system.],
+    [Adinolfi et al. (2005), _Humanitarian Response Review_; Inter-Agency Standing Committee Principals' decision of 12 September 2005 — the cluster approach as one pillar of humanitarian reform: designated lead agencies, globally and per activated country response, accountable to the Humanitarian Coordinator and carrying provider-of-last-resort responsibility. Nine clusters were designated initially; the set later grew to eleven.],
+    [Street, A., & Parihar, G. (2007), "The UN cluster approach in the Pakistan earthquake response: an NGO perspective," _Humanitarian Exchange_ 37, ODI Humanitarian Practice Network — the first field application: information-sharing and named sectoral accountability set against "cluster creep," meeting burdens and English-only coordination.],
+    [Stoddard, Harmer, Haver, Salomons, & Wheeler (2007), _Cluster Approach Evaluation, Final Report_, OCHA Evaluation and Studies Section, with NYU Center on International Cooperation, ODI Humanitarian Policy Group, and the Praxis Group — Phase 1: "stronger and more predictable leadership over sectors. However, there has been no observable increase in ultimate accountability."],
+    [Steets, Grünewald, Binder, de Geoffroy, Kauffmann, Krüger, Meier, & Sokpoh (2010), _Cluster Approach Evaluation 2: Synthesis Report_, GPPi / Groupe URD, commissioned by the IASC, Geneva: OCHA — Phase 2, six country studies: the benefits "already slightly outweigh its costs and shortcomings," against persistent marginalisation of national and local actors and weak inter-cluster coordination.],
+    [Inter-Agency Standing Committee (2011 – 2012), _IASC Transformative Agenda_ — Principals' decisions of December 2011 and associated protocols; Grünewald & Binder (2010), _Inter-agency Real-Time Evaluation in Haiti: 3 Months After the Earthquake_, Groupe URD / GPPi.],
   ),
   quote: [Coordination redesigned as a role architecture with named ownership rather than as goodwill — and evaluated, in public, at system scale.],
   quote-source: "Editors' synthesis of the Humanitarian Response Review (2005) and the two cluster evaluations (2007, 2010).",

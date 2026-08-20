@@ -3455,11 +3455,11 @@
 #case(
   number: 32,
   slug: "annual-screening-ui-redesign-cds-at",
-  title: "Annual-Screening UI Redesign + CDS at University of Missouri Health Care",
+  title: "Annual-Screening UI Redesign at University of Missouri Health Care",
   year: "2020",
-  domains-list: ("healthcare", "EHR usability", "clinical decision support"),
-  modes-code: "TDN",
-  impact: "A multidisciplinary EHR redesign of ambulatory annual-screening prompts (advance directives, depression, falls risk, alcohol/drug misuse), paired with embedded CDS, reported improvements in task time, error rates, System Usability Scale scores, and the downstream screening-rate outcomes the project was scoped to move",
+  domains-list: ("healthcare", "EHR usability", "nursing workflow"),
+  modes-code: "HN",
+  impact: "A site-level redesign of the EHR interface for four ambulatory annual screens (advance directives, depression, fall risk, alcohol/drug misuse) cut task time 8.3 to 6.0 seconds and errors 0.83 to 0.10 per task, raised the System Usability Scale from 80.8 to 96.9, and turned four flat screening-rate trends upward — fall risk 53.5 to 83.2 percent over nine months",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3468,138 +3468,209 @@
   leo-anchor: "LEO-4, LEO-1",
   summary: [
     A multidisciplinary team at University of Missouri Health Care
-    redesigned the EHR interface clinicians use to prompt and perform
-    annual screening — advance directives, depression, falls risk,
-    alcohol and drug misuse — and embedded clinical decision support
-    inside the redesigned workflow. The team reported gains on the
-    usability metrics (task time, error rate, System Usability Scale)
-    and on the downstream process outcome the project was scoped to
-    move: the actual rate at which guideline-recommended screening was
-    completed. It is a small-tier intervention case for cue-and-alert
-    design as a capability deliverable, with both human-factors and
-    clinical-process outcomes in the same report. The corpus has
-    long needed a small-tier C3 positive example to set against the
-    interface failures already documented at the big tier (Therac-25,
-    CPOE/EHR adoption, the Helios pattern). The evidence base is a
-    single-institution QI study published peer-reviewed in Applied
-    Clinical Informatics (2020), with a HIMSS chapter case-study
-    write-up. Future validation will continue as the downstream
+    redesigned the EHR interface nurses and medical assistants use to
+    prompt and perform annual screening — advance directives,
+    depression, fall risk, alcohol and drug misuse. The interface was
+    not the vendor's product but the health system's own configuration
+    of it, and the redesign was a site-level quality-improvement
+    project the vendor had no direct role in. Summative usability
+    testing with twelve staff showed the redesigned interface cut task
+    time for identifying overdue screens from 8.3 to 6.0 seconds and
+    errors from 0.83 to 0.10 per task, and raised the System Usability
+    Scale from 80.8 to 96.9. In an interrupted time series across eight
+    months before and nine months after go-live, all four screening
+    rates — flat or drifting down beforehand — turned upward. It is a
+    small-tier intervention case for cue design as a capability
+    deliverable, with both human-factors and clinical-process outcomes
+    in the same report. The corpus has long needed a small-tier C3
+    positive example to set against the interface failures already
+    documented at the big tier (Therac-25, CPOE/EHR adoption, the
+    Helios pattern). The evidence base is a single-institution QI study
+    published peer-reviewed in Applied Clinical Informatics (2020).
+    Future validation will continue as the downstream
     clinical-outcome literature on screening-rate gains matures.
   ],
   sections: (
     [
       Ambulatory annual screening — advance directives, depression,
-      falls risk, alcohol and drug misuse — is the kind of
+      fall risk, alcohol and drug misuse — is the kind of
       guideline-recommended care that is easy to declare and hard to
-      land. The cue lives in the EHR; the action lives in a
-      time-pressured encounter; and the gap between prompt and
+      land. Three of the four are Merit-based Incentive Payment System
+      quality measures and the fourth is defined by the state Medicaid
+      Primary Care Health Home program, so the yardstick was written
+      outside the project. The cue lives in the EHR; the action lives
+      in a time-pressured encounter; and the gap between prompt and
       completion is where most screening programs lose their numbers.
-      The University of Missouri Health Care project framed the
-      problem squarely as cue-and-alert design: if the prompt cannot
-      be acted on inside the workflow without friction, the screening
-      will not happen.#cn()
+      What started this project was not a metric but a complaint: two
+      of the authors kept meeting nurses and medical assistants who
+      called the annual-assessment screen "not user friendly" and said
+      it took "too many clicks." A heuristic analysis against Nielsen's
+      usability principles found why. The interface required the same
+      date to be entered twice, did not validate dates, made the nurse
+      calculate in her head whether a screen was due, ignored
+      patient-specific factors such as age and problem list that decide
+      whether it is due at all, and gave no way to record that a screen
+      was due but could not be done. The screen had been in place for
+      several years.#cn()
     ],
     [
-      The redesign was multidisciplinary by construction —
-      clinicians, informaticists, and usability specialists working
-      against the existing screening interface. The team rebuilt the
-      prompt presentation, added embedded clinical decision support
-      that surfaced the next action at the point of decision, and
-      tightened the path between recognizing a positive screen and
-      placing the appropriate order. The design move is the one the
-      induced framework flags as the C3 deliverable: change the
-      interface so that the desired action is the path of least
-      resistance, not a separate sub-task layered on top of the
-      visit.#cn()
+      The redesign was multidisciplinary by construction. Health-system
+      physicians and nurse informaticists led it, with input from
+      nurses, medical assistants, administrators and clinical
+      quality-improvement specialists, and with vendor-employed system
+      architects on the team for the site-specific build; the vendor
+      itself had no direct role. Over eight months of iterative,
+      user-centered work the team removed one of the duplicate date
+      fields and autopopulated the other, showed the prior screening
+      date read-only, and — the load-bearing move — resolved the
+      conditional logic the vendor platform could not express by
+      computing it in a separate program at runtime and passing a
+      hidden binary variable back in. Patient age, current problems and
+      date of last screen now produced an unambiguous color-coded
+      indication that a screen was due, and four new controls let staff
+      record why one was being deferred. The design move is the one the
+      induced framework flags as the C3 deliverable: put the judgment
+      the interface was asking a nurse to make in her head into the
+      interface itself. Note what the redesign did *not* add — the
+      HIMSS write-up of this project describes clinical decision
+      support, but the peer-reviewed report describes no decision-support
+      module, no ordering integration, and no change to the screening
+      instruments themselves beyond defaulting their date field.#cn()
     ],
     [
-      The reported outcomes cross two layers. At the usability layer
-      the team reported reductions in task time and error rate and a
-      gain on the System Usability Scale. At the process layer they
-      reported an increase in the screening-rate metric the project
-      was scoped to move — the clinical process the cue exists to
-      drive. That second layer is what makes the case a C3 small-tier
-      intervention rather than a usability study: the interface gain
-      translated into the downstream behavior, at least over the
-      reported observation window.#cn()
+      The reported outcomes cross two layers. At the usability layer,
+      summative testing with twelve nurses and medical assistants
+      found that identifying which screens were overdue took 6.0
+      seconds on the redesigned interface against 8.3 on the original
+      (p = 0.001), with 0.10 errors per task against 0.83 (p < 0.0001),
+      and the System Usability Scale rose from 80.8 to 96.9
+      (p = 0.021). One measure moved the wrong way: the redesigned
+      interface took *more* clicks, 1.17 against 0.10 (p = 0.007),
+      because the added deferral controls pushed the bottom of the form
+      below the fold and most users had to scroll. The authors report
+      it as an unexpected negative finding and an opening for the next
+      iteration. At the process layer, an interrupted time series over
+      eight months before and nine months after the June 2019 go-live
+      found all four screening rates flat or drifting slightly downward
+      beforehand and rising afterward: the monthly slope changed by
+      +0.44 points for advance directives (p = 0.017), +2.97 for
+      depression, +3.52 for fall risk and +3.07 for alcohol and drug
+      misuse (all p < 0.0001). Between the last month before go-live
+      and the last month observed, the twelve-month rolling rates ran
+      75.1 to 80.1 percent for advance directives, 38.0 to 61.5 for
+      depression, 53.5 to 83.2 for fall risk and 49.3 to 74.6 for
+      alcohol and drug misuse. The denominators are not the same
+      population: advance-directive and fall-risk screening are
+      measured on roughly 13,000 eligible patients aged 65 and over,
+      depression on about 63,000 aged 12 and over, alcohol and drug
+      misuse on about 65,000 adults — and the count of eligible
+      patients stayed roughly constant throughout. That second layer is
+      what makes the case a C3 small-tier intervention rather than a
+      usability study: the interface gain translated into the
+      downstream behavior, at least over the reported observation
+      window.#cn()
     ],
     [
-      The case is a single-institution quality-improvement study,
-      published peer-reviewed in Applied Clinical Informatics (2020),
-      with a HIMSS chapter case-study write-up. The
-      magnitudes reported sit inside a single-institution
-      quality-improvement project with its own outcome metric;
-      replication at other institutions and durability across EHR
-      upgrades and personnel rotation have not been independently
-      audited. Future validation will continue as the institution and
-      others publish follow-on screening-rate data and as the
-      relationship between screening completion and downstream
+      Three things bound what the case can claim. The usability test
+      was sized to industry practice for finding defects, not to detect
+      differences: twelve participants, and the authors say plainly
+      that it "was not powered." Go-live carried an education
+      component — an email to staff and a live demonstration to nursing
+      representatives who then briefed their colleagues — so some of
+      the screening-rate movement may be education rather than
+      interface; the authors argue that a one-off, unrepeated briefing
+      is unlikely to explain a rise sustained over nine months, which is
+      an argument, not a control. And an interrupted time series is
+      quasi-experimental: there is no randomized comparison, the rates
+      are twelve-month rolling averages that lag and damp the underlying
+      change, no seasonal adjustment was made, and the series has fewer
+      points than some authors recommend. What the regulatory frame
+      supplies is the reason this kind of project is rare rather than
+      routine: the Office of the National Coordinator's certification
+      criteria require user-centered design and summative usability
+      testing of *vendors*, and nothing equivalent applies to the
+      site-specific configuration layer where this interface actually
+      lived — the gap Ratwani and colleagues had in view when they
+      called for evaluation across the whole lifecycle, "from initial
+      product design to local implementation followed by periodic
+      reassessment." Replication at other institutions and durability
+      across EHR upgrades and personnel rotation have not been
+      independently audited. Future validation will continue as the
+      institution and others publish follow-on screening-rate data and
+      as the relationship between screening completion and downstream
       patient outcomes is tracked.#cn()
     ],
     [
       What the case teaches at the LENS layer is that the C3
       interface-failure pattern documented at the big tier is not a
       cosmic constraint — it is redressable by deliberate design at
-      the small tier, when usability specialists, clinicians, and CDS
-      authors are seated together. The capability deliverable is the
-      redesigned cue plus the embedded decision support plus the
-      measurement of the downstream process the cue exists to drive.
+      the small tier, by the site rather than the vendor, on a platform
+      whose own limits had to be worked around. The capability
+      deliverable is the redesigned cue plus the measurement of the
+      downstream process the cue exists to drive.
       The case is the missing positive example for induced 3.1 at
       the small tier and a paired teaching companion for the
       failures already in the corpus.
     ],
   ),
   beats: (
-    "Ambulatory annual-screening rates for guideline-recommended care; the cue-action gap is the C3 failure mode",
-    "Multidisciplinary EHR redesign of screening prompts + embedded CDS at the point of decision",
-    "Reported gains: task time, error rate, SUS score, and the downstream screening-rate metric",
-    "Peer-reviewed single-institution QI (Appl Clin Inform 2020); magnitudes await independent replication",
-    "The missing small-tier C3 positive example to set against Therac-25, CPOE, Helios at the big tier",
+    "Four ambulatory annual screens, externally defined as quality measures; a site-configured EHR screen that made nurses compute in their heads whether one was due",
+    "Site-led multidisciplinary redesign: conditional logic moved out of the interface and back into it as a color-coded \"due\" cue, plus deferral controls",
+    "Usability: 8.3 to 6.0 s, 0.83 to 0.10 errors per task, SUS 80.8 to 96.9 — and one measure worse, 0.10 to 1.17 clicks",
+    "Process: four flat pre-trends turn upward; slope change +0.44 to +3.52 points a month across the four measures",
+    "Bounds: n = 12 and not powered, an education co-intervention, a quasi-experimental time series on rolling averages",
   ),
   approaches: (
     during: (
       [Frame the screening problem as cue-and-alert design from the start; do not separate usability from the clinical-process outcome the cue exists to drive.],
-      [Seat usability specialists, clinicians, and CDS authors together on the redesign team; the C3 deliverable is the integrated artifact, not a hand-off.],
-      [Specify the downstream process metric (screening-rate completion) before the redesign ships, so the usability-layer and process-layer outcomes are measured against the same scope.],
+      [Seat the people who will use the screen — here nurses and medical assistants, not physicians — on the redesign team alongside the informaticists, and treat the vendor's platform limits as something to engineer around rather than accept.],
+      [Specify the downstream process metric (screening-rate completion) before the redesign ships, so the usability-layer and process-layer outcomes are measured against the same scope — and prefer a metric someone else defined, as three of these four were.],
     ),
     after: (
-      [Treat the QI report honestly: a single-institution peer-reviewed study is a small-tier intervention, not a settled magnitude. Carry the single-institution caveat into any downstream citation.],
+      [Treat the QI report honestly: a single-institution peer-reviewed study is a small-tier intervention, not a settled magnitude. Report the measure that moved the wrong way — here the extra click — and name the co-interventions you could not control, as this team named its go-live briefing.],
       [Track durability — across EHR upgrades, personnel rotation, and downstream clinical outcomes — as a separate post-deployment commitment, not a footnote to the implementation report.],
       [Pair with the big-tier C3 failures already in the corpus when teaching; the failure-and-intervention pair is the teaching artifact, not either alone.],
     ),
   ),
   references: (
-    [Pierce RP, Eskridge BR, Rehard L, Ross B, Day MA, Belden JL (2020), "The Effect of Electronic Health Record Usability Redesign on Annual Screening Rates in an Ambulatory Setting," _Applied Clinical Informatics_ 11(4):580–588, doi:10.1055/s-0040-1715828. A HIMSS case study of the project is the secondary write-up.],
-    [Hussain MI, Reynolds TL, Zheng K (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095 — adjacent systematic-review evidence on interaction-design redesign.],
-    [Office of the National Coordinator for Health IT, SAFER Guides on CDS design — practitioner-tier guidance the redesign instantiates.],
+    [Pierce RP, Eskridge BR, Rehard L, Ross B, Day MA, Belden JL (2020), "The Effect of Electronic Health Record Usability Redesign on Annual Screening Rates in an Ambulatory Setting," _Applied Clinical Informatics_ 11(4):580–588, doi:10.1055/s-0040-1715828 — the source of record for every figure in this case. HIMSS carries a secondary write-up of the project; it describes the redesign as adding clinical decision support, which the peer-reviewed report does not, and this case follows the report.],
+    [Hussain MI, Reynolds TL, Zheng K (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095 — adjacent evidence that interaction-design changes move alert behavior. Note its outcome is prescriber acceptance of medication safety alerts, not screening completion; it is background, and no figure in this case rests on it.],
+    [Ratwani RM, Reider J, Singh H (2019), "A decade of health information technology usability challenges and the path forward," _JAMA_ 321(8):743–744, doi:10.1001/jama.2019.0161 — the call for lifecycle evaluation "from initial product design to local implementation followed by periodic reassessment," and the framing for the site-configuration gap in federal certification requirements.],
     [Middleton et al. (2013), "Enhancing patient safety and quality of care by improving the usability of electronic health record systems," _JAMIA_ 20(e1):e2–e8 — the framing peer-reviewed paper on EHR-usability-as-safety.],
   ),
-  quote: [The C3 interface failure mode is not a cosmic constraint. It is redressable by deliberate design — when usability, clinicians, and CDS authors sit on the same redesign.],
-  quote-source: "Editors' synthesis of the UMHC HIMSS case study.",
+  quote: [The C3 interface failure mode is not a cosmic constraint. It is redressable by deliberate design — and the design authority that mattered sat at the site, not at the vendor.],
+  quote-source: "Editors' synthesis.",
   le-insight: [
     The UMHC redesign is the small-tier C3 positive example the
-    corpus needed: cue-and-alert design as a capability
-    deliverable, with both usability and downstream
-    screening-rate gains in the same project. The evidence is a single-institution QI study, peer-reviewed
-    in Applied Clinical Informatics (2020), with a HIMSS case-study
-    write-up; magnitudes await independent
-    replication and durability tracking. Future validation
-    ongoing.
+    corpus needed: cue design as a capability deliverable, with both
+    usability and downstream screening-rate gains in the same project.
+    The evidence is a single-institution quality-improvement study,
+    peer-reviewed in Applied Clinical Informatics (2020): a
+    twelve-participant usability test the authors say was not powered,
+    and a quasi-experimental interrupted time series carrying an
+    education co-intervention the authors argue against but did not
+    control. Magnitudes await independent replication and durability
+    tracking. Future validation ongoing.
   ],
   lens-approach: [
     UMHC is the C3 small-tier intervention case
-    (induced 3.1; LENS D4/PT5). LENS uses it in Domain 4
-    (Test and Evaluation) for the LEO-4 deliverable that cue
-    redesign must show its downstream process effect, and in
-    Domain 1 (Systems Analysis) for LEO-1 — the multidisciplinary
-    team did the analysis of the screening workflow as the
-    precondition for the redesign. The case is the paired
-    positive example for the big-tier C3 failures (Therac-25,
-    CPOE/EHR adoption, Helios) the corpus already documents.
+    (induced 3.1; LENS D4/PT5 — the anchor is deliberately the
+    evaluation domain rather than the design domain, because what
+    the case contributes is the outcome evidence for a cue
+    intervention; induced 3.1 carries the design linkage). LENS uses
+    it in Domain 4 (Test and Evaluation) for the LEO-4 deliverable
+    that cue redesign must show its downstream process effect — and
+    show it with its bounds attached, including the measure that
+    moved the wrong way — and in Domain 1 (Systems Analysis) for
+    LEO-1: the heuristic analysis of what the interface was asking
+    the nurse to do was the precondition for the redesign. The case
+    is the paired positive example for the big-tier C3 failures
+    (Therac-25, CPOE/EHR adoption, Helios) the corpus already
+    documents.
   ],
   literature-items: (
-    [HIMSS case study — University of Missouri Health Care],
-    [Hussain et al. (2019), _JAMIA_ — systematic review of alert-design optimization],
+    [Pierce et al. (2020), _Appl Clin Inform_ — the UMHC redesign and its interrupted time series],
+    [Ratwani et al. (2019), _JAMA_ — usability evaluation across the health-IT lifecycle],
     [Middleton et al. (2013), _JAMIA_ — EHR usability as a patient-safety problem],
   ),
   reflection-list: (
@@ -4008,7 +4079,7 @@
   year: "2018 – present",
   domains-list: ("healthcare", "tech"),
   modes-code: "HKD",
-  impact: "FDA-cleared radiology AI is cleared on evidence that cannot establish deployment performance — 126 of 130 devices reviewed by Wu et al. were evaluated only retrospectively, 93 reported no multi-site assessment, and 17 reported demographic subgroup performance; the canonical v1 anchor for clinical-AI deployment without surveillance, cross-referenced by the Epic Sepsis (Case 5) and pulse-oximetry (Case 26) deployment-evidence cases",
+  impact: "FDA-cleared radiology AI is cleared on evidence that cannot establish deployment performance — of the 130 devices Wu et al. audited, 126 were evaluated only retrospectively and none of the 54 high-risk devices prospectively, 93 carried no publicly reported multi-site assessment, and 17 reported demographic subgroup performance; the canonical v1 anchor for clinical-AI deployment without surveillance, cross-referenced by the Epic Sepsis (Case 5) and pulse-oximetry (Case 26) deployment-evidence cases",
   diagram: dgm.dgm-compare(
     "validation",
     "AUC 0.9+",
@@ -4020,36 +4091,44 @@
   kind: "frontier",
   scale: "big",
   evidence-source: "peer-reviewed",
-  induced-anchor: "7.2",
+  induced-anchor: "2.4",
   lens-anchor: "D4+D3/PT5",
   leo-anchor: "LEO-4, LEO-3",
   summary: [
     FDA-cleared radiology AI tools — for chest X-ray classification,
-    mammography, CT triage — have been repeatedly documented performing
-    worse in deployment than in their validation studies, often with the
-    degradation concentrated in patient groups under-represented in the
-    training data. Larrazabal et al. (_PNAS_ 2020) showed this
+    mammography, CT triage — are cleared on evidence that cannot
+    establish how they will perform in the populations that will meet
+    them. The peer-reviewed record of degradation is built on research
+    classifiers trained on the same public datasets as the cleared
+    tools, not on the cleared tools themselves, which are largely
+    unmeasured after clearance; the degradation in those classifiers
+    concentrates in patient groups under-represented in the training
+    data. Larrazabal et al. (_PNAS_ 2020) showed this
     structurally for chest-X-ray classifiers across gender imbalance;
     Seyyed-Kalantari et al. (_Nature Medicine_ 2021) extended the
     finding to under-served racial and socioeconomic subgroups across
-    three large public chest-X-ray datasets. Obermeyer et al. (_Science_
+    three large public chest-X-ray datasets and a multi-source
+    combination of them — a result three published critiques then
+    contested and the authors defended. Obermeyer et al. (_Science_
     2019) showed that bias in the labels used to train clinical AI can
     under-allocate care to Black patients even when the model looks
-    well-calibrated on its chosen proxy. Wachter and Brynjolfsson
-    (_JAMA_ 2024) raised the generative-AI extension. Wu et al.
+    well-calibrated on its chosen proxy. Wu et al.
     (_Nature Medicine_ 2021) put numbers on the clearance evidence
-    itself: of 130 devices reviewed, 126 were evaluated only
-    retrospectively, 93 reported no multi-site assessment, and 17
+    itself: of 130 devices cleared between January 2015 and December
+    2020, 126 were evaluated only retrospectively — none of the 54
+    high-risk devices prospectively — 93 reported no publicly
+    available multi-site assessment, and 17
     reported performance by demographic subgroup. The FDA's 510(k)
     clearance pathway — the route most cleared radiology AI tools have
     taken — does not routinely require demographic stratification of
     validation metrics or post-market monitoring of how a tool performs
     in the population using it; the De Novo pathway used for a small
     number of novel tools imposes more, but is rarely the chosen route.
-    The 2025 FDA draft guidance on AI/ML-based Software as a Medical
-    Device (SaMD), with its Predetermined Change Control Plan and
-    Good Machine Learning Practice provisions, begins to address this
-    gap; the institutional architecture for demographic post-market
+    The FDA's final Predetermined Change Control Plan guidance
+    (December 2024) and its January 2025 draft guidance on the
+    lifecycle management of AI-enabled device software, together with
+    the Good Machine Learning Practice principles, begin to address
+    this gap; the institutional architecture for demographic post-market
     surveillance is still being built. The capability gap is in the
     regulatory architecture, not the model: clearance is not the same
     thing as clinically performable deployment. The case is the v1
@@ -4061,15 +4140,29 @@
     [
       Machine-learning tools are moving rapidly into radiology and
       other diagnostic medicine, cleared for market and integrated
-      into clinical workflows that affect real patients. The FDA has
-      now authorized more than 1,000 AI/ML-enabled medical devices,
-      the majority through the 510(k) clearance pathway as devices
-      substantially equivalent to a predicate. Unlike a drug, a model
-      can pass its validation study and still behave very differently
-      once it meets a population that differs from its training data —
-      the same model file that scored well on the clearance set can
-      quietly carry a different error profile into every hospital
-      whose patients do not resemble it. The 510(k)
+      into clinical workflows that affect real patients. The FDA's
+      public list of AI-enabled device authorizations passed a
+      thousand entries during 2024 and has kept growing since; the
+      great majority came through the 510(k) clearance pathway as
+      devices substantially equivalent to a predicate. Unlike a drug, a
+      model can pass its validation study and still behave very
+      differently once it meets a population that differs from its
+      training data — the same model file that scored well on the
+      clearance set can quietly carry a different error profile into
+      every hospital whose patients do not resemble it. Wu and
+      colleagues measured how thin the clearance evidence is: across
+      the 130 AI devices the FDA authorized between January 2015 and
+      December 2020, 126 were evaluated only against data collected
+      before deployment, and not one of the 54 high-risk devices was
+      evaluated prospectively; 93 carried no publicly reported
+      multi-site assessment; 59 did not report the size of the
+      evaluation sample at all, and among the 71 that did, the median
+      was 300 patients; 17 reported any performance breakdown by
+      demographic subgroup. Their own cross-site experiment shows what
+      that costs. A pneumothorax classifier trained at Stanford scored
+      an AUC of 0.903 on Stanford patients, 0.870 at Beth Israel
+      Deaconess and 0.852 on the NIH set; the NIH-trained model scored
+      0.883 at home and 0.759 at Beth Israel. The 510(k)
       substantial-equivalence framing was built for an era of
       physical devices whose behavior was largely determined by their
       design; it was not built for a class of systems whose behavior
@@ -4077,25 +4170,36 @@
     ],
     // -- What Is Emerging --
     [
-      The research classifiers built on the same public chest-X-ray
-      datasets as the cleared tools — chest-radiograph triage,
-      mammography aids — have been documented in the peer-reviewed
-      literature performing worse in deployment
-      than in validation, with the degradation often concentrated in
-      under-represented patient groups. Larrazabal et al. (_PNAS_
-      2020) demonstrated structural sensitivity drops for groups
-      under-represented in chest-X-ray training data, using the NIH
-      ChestX-ray14 and CheXpert datasets to show that classifier
-      sensitivity for a given group tracks that group's prevalence in
-      the training set. Seyyed-Kalantari et al. (_Nature Medicine_
+      The peer-reviewed evidence for the divergence comes from
+      research classifiers built on the same public chest-X-ray
+      datasets as the cleared tools, and it is worth being exact about
+      what those studies measure: not deployment, but performance
+      broken out by patient group, and performance carried across from
+      the population a model was trained on to a different one. On
+      both measures the shortfall concentrates in the same place. Larrazabal et al. (_PNAS_
+      2020) demonstrated structural performance drops for the
+      under-represented gender in chest-X-ray training data, using the
+      NIH ChestX-ray14 and CheXpert datasets across three network
+      architectures to show that a classifier's AUC for a given group
+      tracks that group's share of the training set — and that even a
+      25/75 split degrades the minority class relative to a balanced
+      one. Seyyed-Kalantari et al. (_Nature Medicine_
       2021) extended the finding directly: across three large public
-      chest-X-ray datasets, classifiers under-diagnosed Black,
+      chest-X-ray datasets and a multi-source combination of them,
+      classifiers under-diagnosed Black,
       Hispanic, female, and lower-socioeconomic patients at higher
       rates, with the underdiagnosis rate highest for patients at the
       intersection of those groups — evidence that the shortfall is
       not a stray bug but a
       predictable consequence of which patients the training set did
-      and did not contain.#cn()
+      and did not contain. That second result is contested in the
+      literature and the case does not rest on it alone: three
+      Matters Arising in _Nature Medicine_ in 2022 argued that
+      training and test splits drawn from the same biased dataset make
+      the reported disparities hard to interpret, and that confounders
+      were not accounted for; the authors replied and maintained the
+      finding. The dispute is about how much of the gap is model and
+      how much is dataset — not about whether the gap is there.#cn()
     ],
     // -- The Capability Question --
     [
@@ -4107,29 +4211,48 @@
       because it was trained on healthcare cost as a proxy label for
       need: equally sick Black patients had lower historical costs
       because they had received less care, so the model rated them as
-      lower-need. The question is how a regulator can certify a model
+      lower-need. Correcting the label — predicting illness rather
+      than cost — would have raised the share of Black patients
+      referred for extra help from 17.7 to 46.5 percent. The question
+      is how a regulator can certify a model
       as safe without checking how it behaves across the populations
       and labels it will actually meet — since a model can look
       well-calibrated on its chosen proxy while the proxy itself
-      encodes the inequity it then propagates. Wachter and
-      Brynjolfsson (_JAMA_ 2023) raised the generative-AI extension
-      of the same question: the proxy-and-population problem deepens
-      under LLM-class tools whose outputs are harder to validate
-      against any well-defined label at all.#cn()
+      encodes the inequity it then propagates. Note what the other
+      side of the argument looks like. Wachter and Brynjolfsson
+      (_JAMA_ 2024) argue that health care is now readier for
+      generative AI than it was for its predecessors, and that the
+      usual lag between deploying a general-purpose technology and
+      seeing benefit from it may be shorter this time. That is a claim
+      about the speed of adoption, not about the adequacy of
+      evaluation — and it is precisely why the evaluation gap matters:
+      the faster a class of tools reaches patients, the more the
+      absence of standing surveillance costs.#cn()
     ],
     // -- Early Evidence --
     [
-      Similar deployment-performance degradation has been reported
-      in mammography AI (validation sets often under-represent
-      dense-breast tissue and Black women), sepsis-prediction tools
-      (the Epic Sepsis Model — Case 5 — is the canonical example of
-      an AI tool deployed at scale whose external validation found
-      it substantially worse than its developer-reported numbers),
-      pulse-oximetry behavior (the structural racial miscalibration
-      documented in Sjoding et al. — Case 26 — sits under several
-      downstream AI sepsis and triage tools), and skin-lesion
-      classifiers (training-set under-representation of darker skin
-      tones produces accuracy gaps in deployment). Yet the FDA's
+      Similar population-dependence has been reported across
+      modalities. In mammography, the most-publicized system of all —
+      the DeepMind evaluation of Case 37 — cut false positives by 5.7
+      percentage points on its U.S. set and 1.2 on its UK set. Read
+      that gap carefully: the UK set was assembled to be
+      representative and the U.S. set was cancer-enriched, so the
+      difference is partly a property of how the two datasets were
+      built and not only of the two populations. That is the point,
+      not an aside — an effect size read off a curated evaluation set
+      is not a prediction about a screening program. In sepsis prediction, the
+      Epic Sepsis Model (Case 5) is the corpus's canonical example of
+      a tool deployed at scale whose external validation found it
+      substantially worse than its developer-reported numbers.
+      Pulse-oximetry miscalibration (Sjoding et al., Case 26) sits
+      structurally underneath several downstream AI sepsis and triage
+      tools. And in dermatology, Daneshjou and colleagues built the
+      first pathologically confirmed, expertly curated image set with
+      diverse skin tones and found that state-of-the-art models
+      degrade substantially on dark skin — along with a finding that
+      closes the loop back to Obermeyer: the dermatologists who label
+      these training sets also perform worse on dark skin, so the
+      label carries the gap before the model ever sees it. Yet the FDA's
       510(k) clearance pathway does not routinely require
       demographic stratification of validation metrics, nor
       post-market monitoring of in-use performance — so the
@@ -4168,7 +4291,7 @@
   ),
   beats: (
     "Machine-learning diagnostics enter clinical workflow with validation that may not survive deployment",
-    "Cleared radiology tools repeatedly perform worse in deployment, concentrated in under-represented patient groups",
+    "Research classifiers on the same public datasets degrade for under-represented groups; the cleared tools themselves go unmeasured after clearance",
     "How a regulator certifies safety without checking behavior across populations and labels it meets",
     "Degradation reported across imaging, sepsis, dermatology; 510(k) requires no demographic stratification",
     "Capability gap sits in regulatory architecture; demographic post-market surveillance machinery unbuilt",
@@ -4189,8 +4312,11 @@
     [Larrazabal, A. J., Nieto, N., Peterson, V., Milone, D. H., & Ferrante, E. (2020), "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis," _PNAS_ 117(23):12592–12594 — AUC drops for under-represented genders on NIH ChestX-ray14 and CheXpert, across three network architectures.],
     [Seyyed-Kalantari, L., Zhang, H., McDermott, M. B. A., Chen, I. Y., & Ghassemi, M. (2021), "Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations," _Nature Medicine_ 27:2176–2182 — disparities across Black, Hispanic, female, and lower-socioeconomic subgroups; underdiagnosis highest for intersectional subpopulations such as Hispanic female patients.],
     [Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019), "Dissecting racial bias in an algorithm used to manage the health of populations," _Science_ 366(6464):447–453 — proxy-label bias in a care-management algorithm; ~200 million Americans/year are subject to tools of this class.],
-    [Wachter, R. M. & Brynjolfsson, E. (2024), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_ 331(1):65–69, doi:10.1001/jama.2023.25054 — generative-AI extension of the proxy-and-population problem.],
-    [FDA, "Proposed Regulatory Framework for Modifications to AI/ML-Based Software as a Medical Device" (2019); FDA draft guidance on AI/ML-Based SaMD (2025), with Predetermined Change Control Plan and Good Machine Learning Practice principles — the regulatory trajectory; absence of mandatory demographic stratification at clearance and post-market monitoring of in-use performance.],
+    [Wu, E., Wu, K., Daneshjou, R., Ouyang, D., Ho, D. E., & Zou, J. (2021), "How medical AI devices are evaluated: limitations and recommendations from an analysis of FDA approvals," _Nature Medicine_ 27(4):582–584, doi:10.1038/s41591-021-01312-x — the 130-device audit (126 retrospective-only, none of the 54 high-risk devices prospective, 93 without publicly reported multi-site assessment, 17 reporting demographic subgroup performance) and the cross-site pneumothorax experiment behind this case's diagram.],
+    [Bernhardt, M., Jones, C., & Glocker, B. (2022), "Potential sources of dataset bias complicate investigation of underdiagnosis by machine learning algorithms," _Nature Medicine_ 28(6):1157–1158 — one of three Matters Arising contesting Seyyed-Kalantari et al.; the authors' reply is at 28(6):1161–1162, doi:10.1038/s41591-022-01854-8. Cited here so the contested status travels with the finding.],
+    [Daneshjou, R., Vodrahalli, K., Novoa, R. A., et al. (2022), "Disparities in dermatology AI performance on a diverse, curated clinical image set," _Science Advances_ 8(32):eabq6147, doi:10.1126/sciadv.abq6147 — the Diverse Dermatology Images set; models and labeling dermatologists both degrade on dark skin tones.],
+    [Wachter, R. M. & Brynjolfsson, E. (2024), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_ 331(1):65–69, doi:10.1001/jama.2023.25054 — the counterweight argument that health care is readier for generative AI than for its predecessors and the lag to benefit may be shorter. It is not a bias or evaluation paper; do not cite it for the proxy-and-population problem.],
+    [FDA, "Proposed Regulatory Framework for Modifications to AI/ML-Based Software as a Medical Device" (2019); FDA's public "Artificial Intelligence-Enabled Medical Devices" authorization list; final Predetermined Change Control Plan guidance (December 2024) and the draft "Artificial Intelligence-Enabled Device Software Functions: Lifecycle Management and Marketing Submission Recommendations" (January 2025), with Good Machine Learning Practice principles — the regulatory trajectory; absence of mandatory demographic stratification at clearance and post-market monitoring of in-use performance.],
   ),
   quote: [Performance metrics on a clearance dataset are not the same as performance metrics in deployment populations.],
   quote-source: "Editors' synthesis of the FDA AI/ML-Based SaMD discussion paper (2019)",
@@ -4204,7 +4330,9 @@
   ],
   lens-approach: [
     Radiology AI is the canonical contemporary clinical-AI
-    deployment-and-surveillance case (induced 7.2; LENS D4+D3/PT5).
+    deployment-and-surveillance case (induced 2.4 — post-deployment
+    surveillance and disconfirmation, where `competencies.md` places
+    it; LENS D4+D3/PT5).
     LENS uses it in Domain 4 (Test and Evaluation; LEO-4) for the
     clearance-vs-deployment measurement architecture and for
     demographic stratification of validation as a deliverable. LENS
@@ -4223,7 +4351,7 @@
   literature-items: (
     [Obermeyer et al. (2019), _Science_],
     [Larrazabal et al. (2020), _PNAS_],
-    [Wachter & Brynjolfsson (2023), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_],
+    [Wu et al. (2021), _Nature Medicine_ — how the FDA's 130 cleared AI devices were evaluated],
   ),
   reflection-list: (
     [Identify a model in your domain whose deployment population diverges from its training population. What is the institutional architecture to surface the divergence?],
@@ -4240,19 +4368,19 @@
   title: "AlphaFold — Protein Structure Prediction",
   year: "2020 – present",
   domains-list: ("healthcare", "tech"),
-  modes-code: "T",
-  impact: "Substantially solved a 50-year protein-structure prediction problem; 200M+ structures publicly released; foundational positive AI case",
+  modes-code: "KG",
+  impact: "Substantially solved a 50-year protein-structure prediction problem — median GDT 92.4 across all CASP14 targets — and released predictions for over 214 million protein sequences; the book's foundational positive AI case, and, after the AlphaFold 3 access reversal, its clearest evidence that open release is a decision that can be taken back",
   diagram: dgm.dgm-stat(
-    "200M",
+    "214M",
     "predicted structures · publicly released",
     micro: "agreed benchmark, training data, verifiable output, open release",
     caption: "AlphaFold — the conditions for beneficial AI deployment",
   ),
   kind: "frontier",
   summary: [
-    DeepMind's AlphaFold 2 substantially solved the half-century-old protein-structure prediction problem in computational biology — demonstrated at CASP14 in November 2020, published in 2021. The publicly released AlphaFold Protein
-    Structure Database now contains predicted structures for more than 200
-    million proteins — essentially the entire known protein universe — and
+    DeepMind's AlphaFold 2 substantially solved the half-century-old protein-structure prediction problem in computational biology — demonstrated at CASP14 in November 2020 with a median GDT of 92.4 across all targets, published in _Nature_ in July 2021. The publicly released AlphaFold Protein
+    Structure Database now contains predicted structures for more than 214
+    million protein sequences — essentially the entire known protein universe — and
     has been integrated into structural-biology and drug-discovery
     workflows worldwide. AlphaFold is the strongest positive AI case in
     this book, and its lesson is in the conditions that made the benefit
@@ -4260,7 +4388,16 @@
     high-quality training data, an output biologists could verify against
     experimental structures, and an open release that let the global
     community adopt it fast. Each was a precondition for the success — and
-    none of them was the model itself.
+    none of them was the model itself. Two of the four are less settled
+    than the headline suggests. Verification reaches the few dozen blind
+    CASP targets far more securely than it reaches the database: 58
+    percent of human residues carry a confident prediction and 36 percent
+    a very high-confidence one, which is why the per-residue confidence
+    score is part of the release rather than an annotation on it. And
+    AlphaFold 3 shipped in May 2024 with neither code nor weights,
+    reopening the code only in November after more than a thousand
+    researchers objected — and the weights only on application. Open
+    release is a decision that gets made again at every version.
   ],
   sections: (
     // -- The Shift --
@@ -4276,10 +4413,17 @@
     ],
     // -- What Is Emerging --
     [
-      DeepMind's AlphaFold 2 substantially solved the problem at CASP14 in November 2020, predicting structures at accuracies rivaling experiment. The publicly released AlphaFold Protein Structure
-      Database now holds predicted structures for more than 200 million
-      proteins — close to the entire known protein universe — and has been
-      folded into research workflows worldwide, so the benefit arrived not
+      DeepMind's AlphaFold 2 substantially solved the problem at CASP14 in
+      November 2020, predicting structures at accuracies rivaling
+      experiment: a median GDT of 92.4 across all targets, with scores
+      above 90 out of 100 on roughly two-thirds of them. The publicly
+      released AlphaFold Protein Structure
+      Database now holds predicted structures for more than 214 million
+      protein sequences — close to the entire known protein universe, up
+      from the 300,000 structures of the first 2021 release — and has been
+      folded into research workflows worldwide and into the primary data
+      resources of the field (PDB, UniProt, Ensembl, InterPro), so the
+      benefit arrived not
       as a single laboratory's advantage but as a shared resource the wider
       community could build on immediately.#cn()
     ],
@@ -4305,21 +4449,44 @@
       does not — and the same architecture dropped into a domain missing any
       one of those four would not have produced a comparable, trusted,
       widely adopted result.#cn() The work was extended by AlphaFold 3
-      (May 2024), which predicts proteins in complex with DNA, RNA, and
-      small molecules, and in October 2024 Demis Hassabis and John Jumper
-      shared the Nobel Prize in Chemistry for AlphaFold. AlphaFold 3 also
-      complicated the open-release story this case credits: it was
-      initially released without code or model weights, drawing a
-      scientific backlash, before DeepMind released the code for
-      non-commercial use in November 2024 — a reminder that open release
-      is a repeated governance decision that can be reversed under
-      commercial pressure, not a settled property of the work.#cn()
+      (published in _Nature_ on 8 May 2024), which predicts proteins in
+      complex with DNA, RNA, small molecules, ions and modified residues,
+      and in October 2024 Demis Hassabis and John Jumper shared half the
+      Nobel Prize in Chemistry, "for protein structure prediction"; the
+      other half went to David Baker for computational protein design.
+      AlphaFold 3 also complicated the open-release story this case
+      credits, and the sequence is worth following exactly. The paper
+      appeared with neither code nor model weights — only a rate-limited
+      web server — and _Nature_ published it that way, prompting its own
+      editorial asking why. More than a thousand scientists signed an open
+      letter arguing the release breached the norms of reproducibility.
+      Six months later, on 11 November 2024, Google DeepMind put the code
+      on GitHub under a non-commercial license — but the weights remain
+      available only to academics who apply for them. So the release was
+      not reversed and then restored; it was reversed, contested, and
+      partially restored, on terms the authors set. Open release is a
+      repeated governance decision that can be taken back under commercial
+      pressure, not a settled property of the work — and the demand that
+      forced the partial retreat is the same demand the Haibe-Kains
+      comment made of DeepMind's mammography paper in Case 37.#cn()
     ],
     // -- Open Problems --
     [
       AlphaFold is the strongest positive AI case in the dataset for what
-      supports beneficial deployment in a well-defined scientific domain.
-      The open problem is generalization: most consequential problems lack
+      supports beneficial deployment in a well-defined scientific domain —
+      which makes it worth being exact about how far the verification
+      actually reaches. CASP verified the model on a few dozen blind
+      targets; the database holds 214 million predictions, and almost none
+      of them will ever meet an experimental structure. Before AlphaFold,
+      experimental structures covered 17 percent of the residues in human
+      protein sequences; the AlphaFold human proteome covers 98.5 percent
+      of human proteins but returns a confident prediction for 58 percent
+      of residues, of which 36 percent of all residues are very high
+      confidence. The verifiable-output precondition holds at the
+      benchmark and thins out across the database, which is why the
+      per-residue confidence score travels with every structure and is the
+      part of the release a user is obliged to read. The open problem is
+      generalization: most consequential problems lack
       an agreed benchmark, clean training data, or verifiable output. The
       frontier question is how much of the AlphaFold pattern can be
       reconstructed where those preconditions are not given for free — that
@@ -4330,10 +4497,10 @@
   ),
   beats: (
     "Deep learning offered computational solution to a fifty-year experimental bottleneck in biology",
-    "AlphaFold released 200 million predicted structures folded into research workflows worldwide",
+    "AlphaFold: median GDT 92.4 at CASP14; 214 million predicted structures released and folded into PDB, UniProt and research workflows worldwide",
     "Which conditions allow an AI capability to be safely and widely useful",
-    "Success rested on agreed benchmark, clean data, verifiable output, and open release",
-    "Whether fields lacking those preconditions can deliberately build them remains the frontier question",
+    "Success rested on agreed benchmark, clean data, verifiable output, and open release — and AlphaFold 3 showed the last of the four can be taken back",
+    "Verification reaches the benchmark, not the database: 58% of human residues confidently predicted, and whether fields lacking the preconditions can build them remains the frontier question",
   ),
   approaches: (
     during: (
@@ -4342,39 +4509,51 @@
       [Decide the release and access terms deliberately as a governance choice, since open release is what distributed AlphaFold's benefit globally.],
     ),
     after: (
-      [Monitor downstream use to confirm the verifiable-output property holds in practice, and that users are in fact checking predictions where stakes are high.],
+      [Monitor downstream use to confirm the verifiable-output property holds in practice, and that users are in fact reading the per-residue confidence score where stakes are high; a database entry is a prediction with a stated confidence, not a structure.],
       [Track whether the four preconditions still hold as the tool is applied to new protein families or adjacent problems beyond its validated domain.],
-      [Sustain the open resource and benchmark over time, so the community-wide benefit does not erode as the field and the data move on.],
+      [Sustain the open resource and benchmark over time, so the community-wide benefit does not erode as the field and the data move on — and treat the release terms as re-decided at every version, because AlphaFold 3 shipped without code or weights and only partially reopened after a thousand researchers objected.],
     ),
   ),
   references: (
-    [Jumper et al. (2021), "Highly accurate protein structure prediction with AlphaFold," _Nature_ — the method and accuracy.],
-    [Varadi et al. (2024), "AlphaFold Protein Structure Database in 2024," _Nucleic Acids Research_ — the 200M+ structures and open release.],
-    [CASP14 press release, Protein Structure Prediction Center, 30 November 2020 — the benchmark result and Moult's statement.],
-    [CASP benchmark documentation — the decades-long agreed evaluation.],
-    [AlphaFold 3 repository terms of use and prohibited-use policy (Google DeepMind, November 2024) — the open-release governance decision as actually written.],
-    [Abramson et al. (2024), "Accurate structure prediction of biomolecular interactions with AlphaFold 3," _Nature_; and the 2024 Nobel Prize in Chemistry (Hassabis & Jumper) — the extension to complexes and the later code release.],
+    [Jumper, J., Evans, R., Pritzel, A., et al. (2021), "Highly accurate protein structure prediction with AlphaFold," _Nature_ 596(7873):583–589, doi:10.1038/s41586-021-03819-2 — the method, and the CASP14 validation.],
+    [Varadi, M., Bertoni, D., Magana, P., et al. (2024), "AlphaFold Protein Structure Database in 2024: providing structure coverage for over 214 million protein sequences," _Nucleic Acids Research_ 52(D1):D368–D375, doi:10.1093/nar/gkad1011 — the database at 214M, up from 300k in 2021, and its integration into PDB, UniProt, Ensembl and InterPro.],
+    [CASP14 press release, Protein Structure Prediction Center, 30 November 2020 — GDT above 90 on roughly two-thirds of targets. Note the Moult quotation this case carries is *not* in the press release: it is from Google DeepMind's post of the same date, "AlphaFold: a solution to a 50-year-old grand challenge in biology," which also reports the 92.4 median GDT.],
+    [Tunyasuvunakool, K., Adler, J., Wu, Z., et al. (2021), "Highly accurate protein structure prediction for the human proteome," _Nature_ 596(7873):590–596, doi:10.1038/s41586-021-03828-1 — 98.5% of human proteins covered; 58% of residues confidently predicted, 36% of all residues at very high confidence, against 17% of residues covered by experimental structure beforehand.],
+    [AlphaFold 3 access chronology: publication with neither code nor weights (May 2024), the open letter signed by more than a thousand researchers, the _Nature_ editorial "AlphaFold3 — why did Nature publish it without its code?" (2024, doi:10.1038/d41586-024-01463-0), and the 11 November 2024 GitHub release of the code under a non-commercial license with weights by application — the open-release governance decision as actually written.],
+    [Abramson, J., Adler, J., Dunger, J., et al. (2024), "Accurate structure prediction of biomolecular interactions with AlphaFold 3," _Nature_ 630(8016):493–500, doi:10.1038/s41586-024-07487-w; and the 2024 Nobel Prize in Chemistry, one half to David Baker for computational protein design and one half jointly to Demis Hassabis and John M. Jumper for protein structure prediction.],
   ),
-  quote: [We have been stuck on this one problem — how do proteins fold up — for nearly 50 years. To see DeepMind produce a solution for this is a very special moment.],
-  quote-source: "John Moult, Co-founder and Chair of CASP, on the CASP14 result, 30 November 2020",
+  quote: [We have been stuck on this one problem — how do proteins fold up — for nearly 50 years. To see DeepMind produce a solution for this, having worked personally on this problem for so long and after so many stops and starts, wondering if we'd ever get there, is a very special moment.],
+  quote-source: "John Moult, Co-founder and Chair of CASP, quoted in Google DeepMind's 30 November 2020 announcement of the CASP14 result",
   le-insight: [
     AlphaFold is the strongest positive AI case in the dataset. The
     technical achievement is real. The conditions that made the
     benefit possible — agreed benchmark, training data, verifiable
     output, open release — are the capability infrastructure around
-    the model, not the model itself. The case is the strongest
-    available evidence for what supports beneficial AI deployment.
+    the model, not the model itself. Two of the four are less settled
+    than the headline suggests: verification reaches the CASP targets
+    far more securely than it reaches the 214 million database
+    entries, and AlphaFold 3 showed that open release is a decision
+    that can be taken back.
   ],
   lens-approach: [
-    LENS uses AlphaFold in LEN 1 as a problem-framing case for what
-    productive AI deployment looks like, in LEN 9 as a technical
-    achievement, and in LEN 7 for the open-release governance
-    decision that distributed the benefit globally.
+    AlphaFold is the preconditions-for-beneficial-deployment case
+    (induced 2.1; LENS D4+D5/PT2; LEO-4 and LEO-5). LENS uses it in
+    Domain 4 (Test and Evaluation) for the benchmark-and-verification
+    half — CASP as an instrument the field agreed on and an
+    independent body ran, and the per-residue confidence score as the
+    honest limit on what the database can be trusted for — and in
+    Domain 5 (Navigating Sociotechnical Constraints) for the
+    open-release decision and its partial reversal at AlphaFold 3.
+    In the course sequence: LEN 1 as a problem-framing case for what
+    productive AI deployment looks like, LEN 9 as a technical
+    achievement, LEN 7 for the release governance. Pair with Case 37,
+    where the same demand for released code and methods was made of
+    the same laboratory.
   ],
   literature-items: (
-    [Jumper et al. (2021), _Nature_],
-    [Varadi et al. (2022)],
-    [Hassabis (DeepMind) public commentary on AlphaFold and capability],
+    [Jumper et al. (2021), _Nature_ — the method and the CASP14 result],
+    [Tunyasuvunakool et al. (2021), _Nature_ — the human proteome, and its confidence bands],
+    [Varadi et al. (2024), _Nucleic Acids Research_ — the database at 214 million sequences],
   ),
   reflection-list: (
     [Identify a domain in your work where the conditions that supported AlphaFold's success (benchmark, training data, verifiable output) are present. What is the analogous opportunity?],
@@ -4383,9 +4562,10 @@
   ),
   courses: ("LEN 1", "LEN 7", "LEN 9"),
   scale: "big",
+  evidence-source: "peer-reviewed",
   induced-anchor: "2.1",
   lens-anchor: "D4+D5/PT2",
-  leo-anchor: "LEO-4",
+  leo-anchor: "LEO-4, LEO-5",
 )
 
 // ---- Case 37 — deepmind-mammography-2020 ----
@@ -4395,8 +4575,8 @@
   title: "DeepMind Mammography — High-Profile Nature Paper, Replicability Pushback",
   year: "2020",
   domains-list: ("healthcare", "medical imaging", "machine learning"),
-  modes-code: "TKD",
-  impact: "McKinney et al. 2020 Nature paper reported a deep-learning mammography screening system outperforming radiologists on retrospective UK and U.S. screening datasets, with reductions in false-positives (5.7 percentage points in the U.S. set, 1.2 in the UK set) and false-negatives (9.4 and 2.7 percentage points respectively); Haibe-Kains et al. October 2020 Nature comment critiqued the paper for failing to release code and trained models, arguing that the missing methods and code undermine the study's scientific value and stop other groups from prospectively validating the system",
+  modes-code: "KG",
+  impact: "McKinney et al. 2020 Nature paper reported a deep-learning mammography screening system outperforming radiologists on a representative retrospective UK dataset and a cancer-enriched U.S. one, with reductions in false-positives (5.7 percentage points in the U.S. set, 1.2 in the UK set) and false-negatives (9.4 and 2.7 percentage points respectively); Haibe-Kains et al.'s October 2020 Nature comment held that \"the lack of detailed methods and computer code undermines its scientific value,\" and the authors' addendum in the same issue supplied hyperparameters and the augmentation strategy but not the code or the trained models",
   kind: "frontier",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -4408,8 +4588,9 @@
     DeepMind published "International evaluation of an AI system
     for breast cancer screening" in _Nature_ on January 1, 2020.
     The paper reported that a deep-learning system outperformed
-    radiologists on retrospective UK and U.S. screening datasets,
-    with reductions in false-positives of 5.7 percentage points
+    radiologists on two retrospective datasets — a large
+    representative UK screening set and a large cancer-enriched U.S.
+    one — with reductions in false-positives of 5.7 percentage points
     (U.S.) and 1.2 percentage points (UK) and reductions in
     false-negatives of 9.4 and 2.7 percentage points respectively.
     The paper drew unusual press attention and rapidly entered
@@ -4418,7 +4599,7 @@
     "Transparency and reproducibility in artificial intelligence"
     critiqued the McKinney paper for failing to release code,
     trained models, or sufficient methodological detail to
-    permit independent reproduction. The load-bearing hedge the Haibe-Kains comment delivers is that the lack of detailed methods and computer code undermines the study's scientific value. The screening-comparison framing the original paper offered has since been refined by deployment evidence rather than confirmed at the deployment scale the headline implied. The case pairs with
+    permit independent reproduction. The load-bearing hedge the Haibe-Kains comment delivers is exact: "the lack of detailed methods and computer code undermines its scientific value." In the same issue the authors published an addendum expanding the supplementary methods with optimization hyperparameters and a fuller account of the augmentation strategy — a partial answer that left the code and the trained models unreleased. The screening-comparison framing the original paper offered has since been refined by deployment evidence rather than confirmed at the deployment scale the headline implied — and the randomized evidence that eventually arrived came from a different, commercial system, not this one. The case pairs with
     Case 35 (Radiology AI Miscalibration), Case 5 (Epic
     Sepsis), and Case 26 (Pulse oximetry).
   ],
@@ -4429,13 +4610,23 @@
       profile publication for a deep-learning medical-imaging
       study. The work was a collaboration across Google Health,
       DeepMind, and clinical partners at Cancer Research UK Imperial Centre, Northwestern Medicine, the Royal Surrey County Hospital, and the University of Cambridge. The
-      retrospective evaluation used UK and U.S. screening
-      datasets and compared the AI system's outputs against
+      retrospective evaluation used two screening datasets that were
+      not built alike — the UK set assembled to be large and
+      representative, the U.S. set large and *enriched* for cancer —
+      and compared the AI system's outputs against
       single-reader and double-reader radiologist performance.
       The headline framing was that the AI system reduced both
       false-positives and false-negatives relative to
       radiologists, with the U.S. dataset showing larger
-      absolute reductions than the UK dataset.#cn()
+      absolute reductions than the UK dataset. Two further results
+      shaped how the paper was read. In a separate study of six
+      radiologists the system beat every one of them, with an AUC
+      11.5 percentage points above the average reader. And in a
+      simulation of the UK double-reading protocol, the system held
+      non-inferior performance while removing 88 percent of the
+      second reader's workload — a simulated number that set the
+      expectation the randomized trials would later be measured
+      against.#cn()
     ],
     [
       The press response was substantial. Mainstream coverage
@@ -4471,7 +4662,20 @@
       methodological detail to permit independent reproduction.
       The comment was specific: the hyperparameters of the three networks, the augmentation pipeline and the training pipeline were not documented well enough for another group to rebuild the system. The comment did not allege error
       in the paper; it argued that reproducibility had not been
-      established.#cn()
+      established. What happened next is the part usually left out.
+      In the same 14 October 2020 issue, the McKinney authors
+      published both a formal reply and an addendum. The addendum is
+      the substantive half: it expanded the supplementary methods
+      with the optimization hyperparameters and a fuller description
+      of the augmentation strategy, explicitly to help others
+      replicate the result. The two specific documentation gaps the
+      comment named were therefore closed within one issue. The code
+      and the trained models were not released, and have not been.
+      So the exchange settled at a partial remedy — enough to
+      document the method, not enough to rebuild the system — which
+      is the honest shape of most reproducibility disputes and the
+      reason the demand has to be made before publication rather
+      than after.#cn()
     ],
     [
       The case pairs with Case 35 (Radiology AI Miscalibration)
@@ -4485,29 +4689,53 @@
       and external evaluation, and DeepMind Mammography sits in
       the same conceptual family at a different domain. Pair
       with Case 26 (Pulse oximetry) for the population-
-      heterogeneity-in-medical-AI thread; the McKinney paper's
+      heterogeneity-in-medical-AI thread — with one caution this
+      case has to carry rather than exploit. The McKinney paper's
       UK-versus-U.S. effect-size difference (5.7 vs 1.2 pp on
-      false-positives) is itself evidence that the system's
-      performance varies across screening populations, and the
-      variation has implications for deployment.#cn()
+      false-positives) is often read as evidence that the system's
+      performance varies across screening populations. It may;
+      but the U.S. set was enriched for cancer and the UK set was
+      not, so dataset construction and population difference are
+      confounded in that comparison and the paper does not separate
+      them. The teachable point is the confound itself: two numbers
+      from one paper are not comparable unless the sets behind them
+      were built the same way.#cn()
     ],
     [
       The honest hedges the case carries are not decoration. The
       Haibe-Kains comment is not a finding that the McKinney
       paper was wrong; it is a finding that the paper as
       published did not establish reproducibility. The
-      subsequent five years of deployment evidence on AI-assisted
-      breast cancer screening have refined the screening-
-      comparison framing — most decisively the randomized MASAI
-      trial in Sweden (105,934 women; interim safety results in _Lancet Oncology_ 2023, screening-performance results in _Lancet Digital Health_ 2025, final analysis 2026), which found
-      AI-supported reading non-inferior to standard double reading
-      while cutting radiologist workload by roughly 44 percent and
-      detecting more cancers. That is the prospective validation the Haibe-Kains critique said the missing code and methods put out of reach — vindicating the demand rather than the original paper — even as
-      prospective evaluations have shown benefits in some settings
-      and not in others, and the
-      operational variables the retrospective comparison did not
-      measure have proved load-bearing in deployment. The case
-      teaches the verification-as-deployment-event pattern: a
+      arc that followed did not run straight from the paper to
+      vindication. In 2021 Freeman and colleagues reviewed the whole
+      retrospective evidence base for AI in breast screening for the
+      _BMJ_ — twelve studies, 131,822 women, McKinney among them —
+      and found no prospective studies at all, poor methodological
+      quality throughout, and, in the three studies that compared AI
+      against the original radiologists' clinical decisions, 34 of 36
+      AI systems less accurate than a single radiologist and all 36
+      less accurate than two radiologists in consensus. Their summary
+      of the pattern is the one this book keeps meeting: "promising
+      results in smaller studies are not replicated in larger
+      studies." The randomized evidence arrived later, from the MASAI
+      trial in Sweden — 105,934 women randomized between April 2021
+      and December 2022, interim safety analysis in _Lancet Oncology_
+      2023, screening performance in _Lancet Digital Health_ 2025,
+      and the primary interval-cancer endpoint in _The Lancet_ in
+      January 2026. It found AI-supported reading non-inferior on
+      interval cancer, higher in sensitivity (80.5 against 73.8
+      percent), identical in specificity, detecting more cancers (6.4
+      against 5.0 per 1,000) and cutting screen-reading workload by
+      about 44 percent. Note carefully whose system that was: MASAI
+      ran on Transpara, a commercial product from ScreenPoint
+      Medical, not on the DeepMind system this case is about. The
+      DeepMind system was never taken to a randomized trial. So the
+      arc vindicates the *demand* the Haibe-Kains comment made —
+      prospective, independently runnable evaluation — while leaving
+      the original result exactly where the comment left it, and it
+      was a different developer, working in the open with a
+      regulated commercial product, who supplied the evidence. The
+      case teaches the verification-as-deployment-event pattern: a
       high-profile retrospective result is the starting point of
       a verification arc, not its endpoint, and the
       reproducibility infrastructure the Haibe-Kains comment
@@ -4515,11 +4743,11 @@
     ],
   ),
   beats: (
-    "McKinney et al. Nature Jan 1 2020: deep-learning mammography reduces false-positives 5.7 pp (U.S.) / 1.2 pp (UK), false-negatives 9.4 / 2.7 pp vs radiologists",
+    "McKinney et al. Nature Jan 1 2020: false-positives down 5.7 pp on a cancer-enriched U.S. set and 1.2 pp on a representative UK set; false-negatives 9.4 / 2.7 pp",
     "Press framing: \"AI outperforms radiologists\"; paper's careful claims do not carry the framing's deployment implications",
     "Haibe-Kains et al. Nature Oct 14 2020 comment: code not released, models not released, methodology not reproducible from publication",
-    "Comment does not allege error; argues reproducibility not established; hyperparameters, augmentation and training pipelines undocumented",
-    "Pair with Case 35 (Radiology AI miscalibration), Case 5 (Epic Sepsis), Case 26 (pulse oximetry population heterogeneity)",
+    "Comment alleges no error, only that reproducibility is unestablished; an addendum in the same issue supplies hyperparameters and augmentation — never the code or the weights",
+    "Freeman 2021 BMJ: 34 of 36 AI systems worse than one radiologist; MASAI's randomized vindication came on a different vendor's system",
   ),
   approaches: (
     during: (
@@ -4529,26 +4757,30 @@
     ),
     after: (
       [Carry the Haibe-Kains comment's specific framing into print without softening; the comment is a finding on reproducibility, not a finding of error, and the case's pedagogical value depends on the distinction being preserved.],
-      [Pair in syllabi with Case 35 and Case 5 so the high-profile-result-versus-deployment-evidence pattern is taught across the medical-imaging-AI deployment seam at multiple instances.],
+      [Pair in syllabi with Case 35 and Case 5 so the high-profile-result-versus-deployment-evidence pattern is taught across the medical-imaging-AI deployment seam at multiple instances — and check, every time, that the validating trial ran on the system under discussion. MASAI validated Transpara, not the DeepMind system.],
       [Use the case to anchor the verification-as-deployment-event frame; the curricular target is the discipline of treating a high-profile retrospective result as the starting point of a multi-year verification arc rather than as a deployment-ready endpoint.],
     ),
   ),
   references: (
     [McKinney, S. M., Sieniek, M., Godbole, V., Godwin, J., Antropova, N., Ashrafian, H., Back, T., et al. (2020), "International evaluation of an AI system for breast cancer screening," _Nature_ 577:89–94, doi:10.1038/s41586-019-1799-6.],
     [Haibe-Kains, B., Adam, G. A., Hosny, A., Khodakarami, F., MAQC Society Board of Directors, Waldron, L., Wang, B., et al. (2020), "Transparency and reproducibility in artificial intelligence," _Nature_ 586:E14–E16, doi:10.1038/s41586-020-2766-y.],
-    [McKinney et al. (2020), reply to Haibe-Kains et al., _Nature_ 586:E17–E18 — the developers' response on the reproducibility-infrastructure question.],
-    [Freeman, K., Geppert, J., Stinton, C., Todkill, D., Johnson, S., Clarke, A., & Taylor-Phillips, S. (2021), "Use of artificial intelligence for image analysis in breast cancer screening programmes: systematic review of test accuracy," _BMJ_ 374:n1872 — independent systematic review of subsequent AI-screening-deployment evidence.],
+    [McKinney, S. M., Karthikesalingam, A., Tse, D., Kelly, C. J., Liu, Y., Corrado, G. S., & Shetty, S. (2020), "Reply to: Transparency and reproducibility in artificial intelligence," _Nature_ 586:E17–E18, doi:10.1038/s41586-020-2767-x — the developers' response, published alongside the addendum below.],
+    [McKinney et al. (2020), "Addendum: International evaluation of an AI system for breast cancer screening," _Nature_ 586:E19, doi:10.1038/s41586-020-2679-9 — published in the same issue as the Haibe-Kains comment; expands the supplementary methods with optimization hyperparameters and the augmentation strategy to assist replication. Code and trained models were not released.],
+    [Freeman, K., Geppert, J., Stinton, C., Todkill, D., Johnson, S., Clarke, A., & Taylor-Phillips, S. (2021), "Use of artificial intelligence for image analysis in breast cancer screening programmes: systematic review of test accuracy," _BMJ_ 374:n1872, doi:10.1136/bmj.n1872 — twelve studies, 131,822 women, McKinney included; no prospective studies found, studies of poor methodological quality, 34 of 36 AI systems less accurate than a single radiologist and all less accurate than two in consensus.],
+    [MASAI trial (Lång et al.): clinical safety analysis, _Lancet Oncology_ 2023;24(8):936–944, doi:10.1016/S1470-2045(23)00298-X; Hernström et al., screening performance, _Lancet Digital Health_ 2025;7(3):e175–e183, doi:10.1016/S2589-7500(24)00267-X; Gommers et al., interval cancer, sensitivity and specificity, _The Lancet_ 2026;407(10527):505–514, doi:10.1016/S0140-6736(25)02464-X. 105,934 women randomized; the AI system is Transpara v1.7.0 (ScreenPoint Medical), not the system evaluated by McKinney et al.],
   ),
-  quote: [The lack of detailed methods and computer code undermines the study's scientific value, and the screening-comparison framing has been refined by subsequent deployment evidence rather than confirmed at the deployment scale the headline implied.],
-  quote-source: "Editors' synthesis of the McKinney et al. (2020) and Haibe-Kains et al. (2020) Nature exchange.",
+  quote: [In their study, McKinney et al. showed the high potential of artificial intelligence for breast cancer screening. However, the lack of detailed methods and computer code undermines its scientific value.],
+  quote-source: "Haibe-Kains et al., \"Transparency and reproducibility in artificial intelligence,\" Nature 586:E14–E16 (14 October 2020)",
   le-insight: [
     DeepMind Mammography is the verification-as-deployment-event
     case at the high-profile-publication scale. The McKinney
     paper's retrospective result was the starting point of a
     verification arc, not its endpoint; the Haibe-Kains comment
     named the reproducibility infrastructure as the condition
-    for the arc, and subsequent deployment evidence has refined
-    the screening-comparison framing the original paper offered.
+    for the arc, and the authors' addendum met part of the demand
+    without releasing code or models. The randomized evidence that
+    eventually settled the screening question came six years later,
+    from a different vendor's system.
   ],
   lens-approach: [
     DeepMind Mammography is the deployment-and-reuse-as-
@@ -4557,7 +4789,10 @@
     uses it in Domain 4 (Test and Evaluation) for the
     reproducibility-infrastructure-as-verification-condition
     discipline and in Domain 3 (Human-System Collaboration)
-    for the retrospective-versus-prospective-evidence distinction.
+    for the retrospective-versus-prospective-evidence distinction —
+    including the discipline of noticing that a later randomized
+    result does not validate an earlier system unless it is the
+    same system.
     Pair with Case 35 (Radiology AI Miscalibration), Case 5
     (Epic Sepsis), and Case 26 (pulse oximetry population
     heterogeneity). The Haibe-Kains comment is a reproducibility
@@ -4567,7 +4802,8 @@
   literature-items: (
     [McKinney et al. (2020), _Nature_ — international evaluation of AI mammography screening],
     [Haibe-Kains et al. (2020), _Nature_ — transparency and reproducibility critique],
-    [Freeman et al. (2021), _BMJ_ — systematic review of subsequent AI-screening-deployment evidence],
+    [Freeman et al. (2021), _BMJ_ — systematic review finding the retrospective evidence base poor and most AI systems less accurate than one radiologist],
+    [Lång et al. / Hernström et al. / Gommers et al. — the MASAI randomized trial, on a different vendor's system],
   ),
   reflection-list: (
     [Identify a high-profile retrospective result in your domain whose reproducibility infrastructure — code, trained models, methodological detail — has not been released. What would the verification arc the result opens require to proceed, and what currently blocks it?],
