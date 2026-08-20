@@ -40,9 +40,10 @@
     environment. The authors report no clear superiority of individual over situational predictors; the work environment is the one category an organization can actively manage, which is what makes it the *system* layer's lever. The authors are explicit, and the decisive
     hedge survives into the case: the literature is characterized
     by "inconsistent measurement of transfer and significant
-    variability in findings," and downstream practitioner summaries
-    note that organizations frequently see limited return because
-    learning fails to transfer to the workplace. The case is the
+    variability in findings" — same-source, same-context
+    measurement consistently inflated the relationships, and the
+    pooled effect of transfer interventions themselves was only
+    small to moderate. The case is the
     paired peer-reviewed half of the corporate-L&D pair with
     Kirkpatrick (Case 79): together they close the gap the v1
     corpus had open at the workforce-L&D layer, and they motivate
@@ -63,15 +64,21 @@
       decomposed transfer predictors into four categories:
       cognitive ability, conscientiousness, motivation, and the
       work environment (particularly supervisor and peer support).
-      All four categories were positively related to transfer. Cognitive ability carried the largest corrected correlation and the work environment a moderate one; the authors find no clear superiority of individual over situational variables. The work environment is the only *system* variable in the set — and the only one an organization can actively manage.#cn()
+      All four categories were positively related to transfer. Cognitive ability carried the largest corrected correlation (.37) and the general work-environment construct a smaller one (.22, rising to .27 for transfer climate and .31 for supervisor support, the last on small samples). The size ordering is not the whole story: all but two of the studies estimating the cognitive-ability relationship were laboratory studies, most with no interval at all between the end of training and the transfer measure, and in the two field studies of open-skill transfer the relationship ran small and negative. The authors' own summary judgement is that there is "no clear superiority of individual variables over situational variables, or the reverse." What distinguishes the work environment is not its size but its tractability: preselecting trainees on individual characteristics runs into logistic and political constraints, whereas situational variables can potentially be actively managed. It is the *system* variable in the set.#cn()
     ], [ The hedge that matters survives. The authors are explicit
       that the literature is "characterized by inconsistent
       measurement of transfer and significant variability in
-      findings." Downstream practitioner summaries note that
-      organizations frequently see limited training return because
-      learning fails to transfer to the workplace — not because
-      the training did not work in the classroom but because the
-      return-to-work environment did not support application. The
+      findings," and they make the measurement problem concrete:
+      where transfer outcomes were obtained from the same source in
+      the same measurement context as the predictor, the reported
+      relationships were consistently inflated, so the meta-analysis
+      reports only the estimates that exclude that bias. The second
+      hedge is about the lever itself. Pooled across the studies
+      that tried them, the effect of transfer interventions —
+      goal setting, relapse prevention, optimistic program framing —
+      was only small to moderate, which the authors say leads them
+      to "a less optimistic conclusion" than Burke and Hutchins's
+      2007 review had drawn. The
       meta-analysis is the strongest current synthesis, and it
       also names what the field has not yet measured well.#cn()
     ],
@@ -103,7 +110,7 @@
   beats: (
     "Blume et al. meta-analysis of 89 studies on training transfer — extent to which training produces on-job behavior change",
     "Transfer positively related to cognitive ability, conscientiousness, motivation, and work environment",
-    "Work environment (transfer climate, supervisor support) a moderate predictor — and the only system-layer variable an organization can manage",
+    "Work environment (.22 general; transfer climate .27, supervisor support .31) a smaller predictor than cognitive ability (.37) — but the system-layer variable an organization can actually manage",
     "decisive hedge: 'inconsistent measurement of transfer and significant variability in findings' — preserved in case",
     "Pair with Kirkpatrick (Case 79) — together they close the corporate-L&D gap and motivate the return-to-work interface",
   ),
@@ -130,10 +137,12 @@
   le-insight: [
     Blume et al. is the strongest current peer-reviewed
     synthesis on training transfer: cognitive ability,
-    conscientiousness, motivation, and a supportive work environment all predict whether training produces on-job behavior change, with no one category dominant. The literature carries explicit
+    conscientiousness, motivation, and a supportive work environment all predict whether training produces on-job behavior change, with no clear superiority of individual over situational predictors. The literature carries explicit
     decisive hedges about inconsistent measurement and
-    significant variability; the case is included with the
-    hedges intact.
+    significant variability — including same-source measurement
+    inflating the relationships, and transfer interventions
+    themselves returning only small-to-moderate effects; the case
+    is included with the hedges intact.
   ],
   lens-approach: [
     Blume is the corporate-L&D transfer case (induced 2.3;
@@ -168,7 +177,7 @@
   year: "2019",
   domains-list: ("K-12 education", "scalable interventions", "equity"),
   modes-code: "DNK",
-  impact: "A nationally representative RCT of U.S. 9th-graders found a less-than-1-hour online growth-mindset intervention improved grades among lower-achieving students and increased advanced-math enrollment, but the effect was conditional on school context — the intervention changed grades when peer norms aligned with the messages of the intervention",
+  impact: "A nationally representative RCT of U.S. 9th-graders (65 schools, n = 12,490) found a less-than-1-hour online growth-mindset intervention raised core-course GPA among lower-achieving students by 0.10 grade points (d = 0.11) and, in an exploratory analysis, increased advanced-math enrollment; both pre-registered moderators bit — effects were smaller in higher-achieving schools, and the intervention changed grades when peer norms aligned with the messages of the intervention",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -187,14 +196,19 @@
     field's reference point. A nationally representative RCT of
     U.S. 9th-graders received a less-than-1-hour online growth-
     mindset intervention; the trial documented improved grades
-    among lower-achieving students and increased advanced-math
-    enrollment relative to control. The headline finding for the
-    case is the conditional: the intervention changed grades when peer
-      norms aligned with its messages — where the peers, and the study is
+    among lower-achieving students — 0.10 core-course grade
+    points, a standardized effect of 0.11 — and, in an analysis
+    the authors label exploratory because it was not
+    pre-registered, increased advanced-math enrollment relative
+    to an active control. The headline finding for the
+    case is the conditional: both pre-registered moderators bit.
+    Effects were smaller in higher-achieving schools, and the
+    intervention changed grades where the peer norm surrounding
+    the student supported challenge-seeking. The study is
     notable for treating treatment-effect heterogeneity as the
     finding rather than as a nuisance. The intervention is not
     universally effective; naming where it does and does not work
-    is the contribution. The trial's own conditional — the intervention changed grades when peer norms aligned with its messages — survives verbatim into the case. Pair with Case 86 (Gándara)
+    is the contribution. The trial's own conditional — "the intervention changed grades when peer norms aligned with the messages of the intervention" — survives verbatim into the case. Pair with Case 86 (Gándara)
     at the scalable-equity-intervention layer.
   ],
   sections: (
@@ -219,28 +233,37 @@
       the field's reference point. The design was a nationally
       representative RCT of U.S. 9th-graders — drawn from a sample
       stratified to reflect the U.S. ninth-grade population — with
-      the intervention delivered as a less-than-1-hour online
-      module. Outcomes included grades, course-taking, and
+      the intervention delivered as two self-administered online
+      sessions of roughly 25 minutes, about 20 days apart, against
+      an active control that covered brain function without
+      addressing beliefs about intelligence. Sixty-five schools and
+      12,490 students entered the analysis. Outcomes included
+      grades, course-taking, and
       contextual measures of the classroom and peer environment.
-      The trial pre-registered the moderator analysis the case
-      now anchors on: the effect of the intervention was
-      hypothesized in advance to depend on the peer-norm
-      environment the student returned to after the module.#cn()
+      The trial pre-registered two moderators: the school's own
+      achievement level, and the peer-norm
+      environment the student returned to after the sessions.#cn()
     ],
     [
       The headline outcome was a positive finding with structure.
-      The growth-mindset intervention improved grades among
-      lower-achieving students and increased advanced-math
-      enrollment, relative to the active-control condition. The
-      structural finding — the one the case is built around — is
-      the conditional: the effect was conditional on peer norms.
-      The intervention changed grades only where peer norms
-      aligned with the intervention's message — where the peers
+      The growth-mindset intervention raised core-course GPA
+      among lower-achieving students by 0.10 grade points relative
+      to the active control — a standardized effect of 0.11 — and
+      increased enrollment in advanced mathematics, though that
+      second analysis was not pre-registered and the authors
+      report it as exploratory. Both pre-registered moderators
+      bit. Effects were smaller in higher-achieving schools, which
+      the authors read as those schools already having the
+      resources to prevent failure. And the effect ran with peer
+      norms: the intervention produced a greater GPA difference
+      where the behavioural norm surrounding students supported
+      challenge-seeking — where the peers
       treated the malleable view as legitimate and the
       help-seeking behavior the intervention encouraged as
-      socially acceptable. In peer environments where the fixed
-      view was the local norm, the intervention's effect on
-      grades was substantially smaller or absent.#cn()
+      socially acceptable. Putting the two moderators together,
+      the conditional treatment effect in low- and
+      medium-achieving schools was 0.14 grade points in the third
+      quartile of behavioural norms and 0.18 in the highest.#cn()
     ],
     [
       What makes the case methodologically important is the
@@ -264,7 +287,8 @@
       meta-analysis found growth-mindset effects near zero among the
       best-designed, least-biased studies, and large independent trials
       — the UK Education Endowment Foundation's 101-school RCT (2019)
-      among them — returned nulls. The critics' sharpest charge lands
+      among them — returned no statistically significant effect on
+      attainment. The critics' sharpest charge lands
       exactly on this case's method: that "the effect is conditional on
       X" can be a genuine finding or an unfalsifiable escape hatch, and
       that moderator-hunting after a null average is how a
@@ -293,8 +317,8 @@
   ),
   beats: (
     "Growth-mindset interventions — short scalable psychological interventions; substantial laboratory and small-school evidence base by the late 2010s",
-    "Yeager et al. _Nature_ 2019 — nationally representative RCT of U.S. 9th-graders; less-than-1-hour online module; pre-registered moderator analysis",
-    "Headline outcome: improved grades among lower-achieving students; increased advanced-math enrollment relative to active control",
+    "Yeager et al. _Nature_ 2019 — nationally representative RCT of U.S. 9th-graders, 65 schools / 12,490 students; two ~25-minute online sessions against an active control; two pre-registered moderators (school achievement level, peer norms)",
+    "Headline outcome: +0.10 core GPA points (d = 0.11) among lower-achieving students, pre-registered; increased advanced-math enrollment in a non-pre-registered, exploratory analysis",
     "Conditional preserved verbatim: 'the intervention changed grades when peer norms aligned with the messages of the intervention'",
     "Methodological importance: treatment-effect heterogeneity as the finding, not as a nuisance; pair with Case 86 (Gándara) at the scalable-equity-intervention layer",
   ),
@@ -316,7 +340,7 @@
     [Dweck, C. S. (2006). _Mindset: The New Psychology of Success_. Random House — the broader theoretical framework the intervention rests on.],
     [Sisk, V. F., Burgoyne, A. P., Sun, J., Butler, J. L., \& Macnamara, B. N. (2018). To what extent and under which circumstances are growth mindsets important to academic achievement? Two meta-analyses. _Psychological Science_, 29(4):549–571 — the prior moderator-analysis literature the Yeager trial extends.],
     [Macnamara, B. N., \& Burgoyne, A. P. (2023). Do growth mindset interventions impact students' academic achievement? A systematic review and meta-analysis. _Psychological Bulletin_ 149(3–4):133–173 — near-null effects among the best-designed studies.],
-    [Education Endowment Foundation (Foliano et al., 2019), "Changing Mindsets" evaluation — a 101-school RCT finding no significant effect on attainment.],
+    [Education Endowment Foundation (Foliano, F., Rolfe, H., Buzzeo, J., Runge, J., & Wilkinson, D., 2019), _Changing Mindsets: Effectiveness Trial — Evaluation Report_ — a 101-school, 5,018-pupil RCT with Year 6 pupils; point estimates of about two additional months' progress in English and maths, neither statistically significant.],
   ),
   quote: [The intervention changed grades when peer norms aligned with the messages of the intervention.],
   quote-source: "Yeager et al., Nature 2019.",
@@ -325,8 +349,9 @@
     methodologically clean model of how a population-scale
     RCT can earn the heterogeneity-as-finding stance. The
     intervention improved grades among lower-achieving
-    students and increased advanced-math enrollment — and the
-    effect was conditional on peer norms. The qualifying
+    students by 0.10 grade points, and increased advanced-math
+    enrollment in an exploratory analysis — and the
+    effect was conditional on school achievement level and on peer norms. The qualifying
     language is the hedge that matters; headline-only
     readings in either direction miss the substance.
   ],
@@ -357,7 +382,7 @@
   year: "1990s – present",
   domains-list: ("education",),
   modes-code: "T",
-  impact: "Randomized controlled trials showed learning gains; RAND RCT found a significant Algebra I gain in year two (~0.2 SD, high school; no year-one effect); used by more than 500,000 students in about 2,600 school districts as of August 2008",
+  impact: "Randomized controlled trials showed learning gains; RAND RCT found a significant Algebra I gain in year two (~0.2 SD, high school; no year-one effect); the Cognitive Tutor curricula, Algebra I among five, were used by more than 500,000 students in approximately 2,600 school districts as of August 2008 — the Algebra-I-only count is not available",
   diagram: dgm.dgm-cogtutor,
   kind: "intervention",
   summary: [
@@ -371,7 +396,7 @@
     reach significance.
     The system is a learning-engineering success in the discipline's own
     terms — learning science to engineered software to randomized-trial
-    evidence to deployment reaching more than 500,000 students in about 2,600 school districts. Its limitations are
+    evidence to deployment: as of August 2008 the Cognitive Tutor curricula — Algebra I among five — reached more than 500,000 students in approximately 2,600 school districts, though the What Works Clearinghouse notes the Algebra-I-only count is not available. Its limitations are
     instructive: it works best in well-defined domains like algebra and
     less well in ill-structured ones, making it the canonical evidence that
     the pipeline delivers for problems that fit it — leaving open whether
@@ -415,7 +440,7 @@
     ],
     // -- The Evidence --
     [
-      The RAND Corporation's multi-site evaluation found a statistically significant Algebra I effect for high schools in the second implementation year — none in the first, and none reaching significance in middle schools — and the program reached about 2,600 school districts. The case demonstrates the
+      The RAND Corporation's multi-site evaluation matched middle and high schools in seven states into similar pairs and randomly assigned each pair to keep its existing algebra curriculum for two years or adopt Cognitive Tutor Algebra I. It found a statistically significant effect for high schools in the second implementation year — 0.21 standard deviations, enough to move the median student about eight percentile points — with none in the first year and none reaching significance in middle schools. The case demonstrates the
       learning-engineering process working end to end: learning science, to
       engineered software, to randomized-controlled-trial evidence, to
       scaled implementation. A multi-site randomized evaluation is the
@@ -452,7 +477,7 @@
     "Earlier tutoring systems rested on intuition about learning rather than validated theory or controlled trials",
     "Carnegie Learning built Cognitive Tutor from Anderson's ACT-R architecture with Bayesian knowledge tracing",
     "A decomposable skill model, mastery measurement, and an adaptive interface concentrate practice where weakness sits",
-    "RAND's multi-site RCT found a significant Algebra I gain in year two for high schoolers (~0.2 SD), with no first-year effect; reached about 2,600 school districts",
+    "RAND's multi-site RCT (seven states, matched school pairs) found a 0.21 SD Algebra I gain in year two for high schoolers — about eight percentile points — with no first-year effect and none significant in middle schools",
     "Pipeline works for tractable, decomposable problems; ill-structured operational domains remain the open frontier",
   ),
   references: (
@@ -461,7 +486,7 @@
     [Pane, J. F., Griffin, B. A., McCaffrey, D. F. & Karam, R. (2014), "Effectiveness of Cognitive Tutor Algebra I at Scale," _Educational Evaluation and Policy Analysis_ 36(2):127–144, doi:10.3102/0162373713507480 — no effect in year one; a statistically significant year-two effect for high schools, not for middle schools.],
     [What Works Clearinghouse (2009), _Cognitive Tutor® Algebra I_ intervention report, U.S. Department of Education, July 2009 — "more than 500,000 students in approximately 2,600 urban, rural, and suburban school districts" as of August 2008.],
     [Lynch, C., Ashley, K., Pinkwart, N. & Aleven, V. (2009), "Concepts, Structures, and Goals: Redefining Ill-Definedness," _International Journal of Artificial Intelligence in Education_ 19(3):253–266 — what makes a domain ill-defined and why the tutor pipeline has less to attach to there.],
-    [Ritter, S. & Fancsali, S. (2016), "MATHia X: The Next Generation Cognitive Tutor," _EDM 2016_ — the web re-platforming of the Cognitive Tutor software into MATHia; and Carnegie Learning's 2023 announcement of LiveHint AI (cf. Case 88).],
+    [Ritter, S. & Fancsali, S. (2016), "MATHia X: The Next Generation Cognitive Tutor," _Proceedings of the 9th International Conference on Educational Data Mining (EDM 2016)_, 624–625 — the web re-platforming of the Cognitive Tutor software into MATHia; and Carnegie Learning's 2023 announcement of LiveHint AI (cf. Case 88).],
   ),
   quote: [Cognitive Tutors demonstrate the LE process working: theory → engineering → evidence → scale.],
   quote-source: "Editors' synthesis of Anderson et al. (1995) and Koedinger & Corbett (2006)",
@@ -699,7 +724,7 @@
     half-life from observed practice history and item features.
     The model was deployed in Duolingo's production review-
     scheduling system; the published evaluation compares HLR
-    against heuristic schedulers (Leitner spacing, Pimsleur intervals) on Duolingo's predictive recall metric and on a daily (next-day) learner-retention metric. HLR cut prediction error against Leitner by at least 45%; on retention it did not beat Leitner. The case is one of the few published
+    against heuristic schedulers (Leitner spacing, Pimsleur intervals) on Duolingo's predictive recall metric and on a daily (next-day) learner-retention metric. HLR cut prediction error against Leitner by at least 45%; on retention it did not beat Leitner. The variant that survived in production was not the headline model: after student complaints traced to overfitted lexeme-tag features, Duolingo shipped HLR without them. The case is one of the few published
     instances of a spaced-repetition algorithm being deployed and
     evaluated against meaningful behavioral outcomes at consumer
     scale (more than 150 million students had enrolled in a Duolingo course by the time of the study). The hedges that survive into the case
@@ -730,7 +755,7 @@
       whose half-life is a regression on item features (language,
       part of speech, difficulty proxies) and per-learner
       practice history. The model is fit on aggregated Duolingo practice data — 12.9 million learning traces — and
-      produces per-item half-life estimates that drive the scheduling: the estimated recall probability sets the skill-tree strength meters and ranks which words a practice session serves.#cn()
+      produces per-item half-life estimates that drive the scheduling: the estimated recall probability sets the skill-tree strength meters and ranks which words a practice session serves. The item features and the practice-history interaction features are separable, and which of the two the production model kept turns out to matter — see below.#cn()
     ],
     [
       The published evaluation compares HLR against several
@@ -739,10 +764,10 @@
       recall matches observed recall on held-out practice data.
       The second is a downstream behavioral outcome: daily
       (next-day) learner retention, which Duolingo treats as a proxy for
-      engagement-driven learning continuation. HLR cuts mean absolute error by at least 45% against Leitner, which itself kept the highest AUC of any algorithm tried; the six-week retention trial against Leitner returned no significant gain in activity or lessons and a 7.3% drop in practice sessions, which the authors read as a sign of better scheduling and deployed on. The paper deploys HLR into the live
-      review-scheduling system; the evaluation includes the
+      engagement-driven learning continuation. HLR cuts mean absolute error by at least 45% against Leitner, which itself kept the highest AUC of any algorithm tried; the six-week retention trial against Leitner returned no significant gain in activity or lessons and a 7.3% drop in practice sessions, which the authors read as a sign of better scheduling — students had been practising "just to keep the tree gold" — and deployed on. That deployment did not hold. Within months students reported that particular words and skills decayed rapidly no matter how often they practised, and the complaints traced to lexeme-tag features carrying strongly negative weights: feature-based overfitting the model's regularization had not prevented. A second two-week experiment on 3.3 million students pitted HLR stripped of lexeme features (HLR\-lex) against full HLR and found all three retention metrics significantly higher for the stripped variant — any activity +12.0%, lessons +1.7%, practice +9.5%. HLR\-lex is what Duolingo shipped to all students. The evaluation includes the
       production-deployment outcomes, not just offline
-      validation.#cn()
+      validation — including the outcome that sent the first
+      deployed model back.#cn()
     ],
     [
       The case sits in the corpus because it is one of the few
@@ -782,8 +807,8 @@
   beats: (
     "Spaced-repetition theory from Ebbinghaus (1885); operational heuristics from Leitner (1972), Pimsleur (1967), SuperMemo SM-2 (1987)",
     "Settles & Meeder (ACL 2016) — Half-Life Regression learns per-item half-life from practice data using item features and history",
-    "Deployed in Duolingo's production review scheduler; trained on roughly 13 million learning traces",
-    "At least 45% lower prediction error (MAE) than Leitner; the six-week live trial against Leitner showed no significant daily-retention gain and a 7.3% drop in practice",
+    "Fit on 12.9 million student-word traces from two weeks of logs (90/10 train/test) and deployed in Duolingo's production review scheduler",
+    "At least 45% lower prediction error (MAE) than Leitner; the six-week live trial against Leitner showed no significant daily-retention gain and a 7.3% drop in practice; a second trial (3.3M students) then beat that deployed model with a lexeme-feature-free variant, which is what shipped",
     "Hedges preserved: single-vendor study; next-day retention is engagement proxy not proficiency assessment; cross-domain generalization is structural argument not replication",
   ),
   approaches: (
@@ -861,7 +886,7 @@
     The High-Impact Learning System (HILS), introduced by
     Brinkerhoff and Apking in 2001, reframes L&D as a system
     spanning pre-training, the event itself, and post-training.
-    The design principle, in Brinkerhoff's own words, is that evaluation and design should focus on the entire training and performance improvement process, not solely on training events. Blume's 2010 meta-analysis (Case 65) arrived nine years after HILS: it is the later evidence the model anticipated, not its source. HILS
+    The design principle, in Brinkerhoff's own words, is that "evaluation should focus on the entire training and performance improvement process, not solely on training events" — and that the improvement leverage sits in "the performance management system factors in the larger organization outside the boundaries of the training department or function." Blume's 2010 meta-analysis (Case 65) arrived nine years after HILS: it is the later evidence the model anticipated, not its source. HILS
     deployments include pre-training line-manager alignment
     and work-context preparation; the event itself; and
     post-training supervisor support and on-the-job practice
@@ -948,10 +973,10 @@
     ),
   ),
   references: (
-    [Brinkerhoff, R. O., & Apking, A. M. (2001), _High Impact Learning: Strategies for Leveraging Performance and Business Results from Training Investments_, Basic Books.],
-    [Brinkerhoff, R. O. (2006), "Increasing impact of training investments: an evaluation strategy for building organizational learning capability," _Industrial and Commercial Training_ 38(6):302–307 — the author's own statement that evaluation should address the whole performance-improvement process, not the training event.],
+    [Brinkerhoff, R. O., & Apking, A. M. (2001), _High Impact Learning: Strategies for Leveraging Performance and Business Results from Training Investments_, Perseus Publishing.],
+    [Brinkerhoff, R. O. (2006), "Increasing impact of training investments: an evaluation strategy for building organizational learning capability," _Industrial and Commercial Training_ 38(6):302–307, doi:10.1108/00197850610685824 — the author's own statement that evaluation should address the whole performance-improvement process, not the training event.],
     [Blume et al. (2010), _Journal of Management_ 36(4):1065–1105 — the meta-analytic finding HILS operationalizes (paired Case 65).],
-    [Brinkerhoff (2005), _Advances in Developing Human Resources_ 7(1):86–101 — SCM as the paired evaluation instrument (Case 83).],
+    [Brinkerhoff, R. O. (2005), "The Success Case Method: A Strategic Evaluation Approach to Increasing the Value and Effect of Training," _Advances in Developing Human Resources_ 7(1):86–101 — SCM as the paired evaluation instrument (Case 83).],
   ),
   quote: [The work environment is the transfer variable an organization can actually manage. That is the argument for making it a design variable, and HILS makes it one.],
   quote-source: "Editors' synthesis of Brinkerhoff & Apking (2001) and the Blume meta-analytic finding.",
@@ -971,7 +996,7 @@
     and exercises the subobjective *Judgment under inadequate
     evidence* (4.4) because the practitioner must decide on
     practice-synthesis-tier evidence. Pairs with Case 83
-    (SCM) and Cases 79 / 112 as the corporate-L&D cluster.
+    (SCM) and Cases 65 and 79 as the corporate-L&D cluster.
   ],
   literature-items: (
     [Brinkerhoff & Apking (2001), _High Impact Learning_],
@@ -991,20 +1016,20 @@
   number: 71,
   slug: "reflective-practice-on-a-work-based",
   title: "Reflective Practice on a Work-Based Software Engineering Program — Longitudinal Capability Development",
-  year: "2025 (preprint)",
+  year: "2025",
   domains-list: ("software engineering education", "work-based learning", "reflective practice"),
   modes-code: "KN",
   impact: "A four-year longitudinal study of reflective-practice development on a work-based software-engineering degree, published at IEEE CSEE&T 2025 — one cohort's reflective reports (n = 36–38 per year) coded against two established models, Boud et al.'s and Bain et al.'s 5R; sophisticated forms of reflection rise markedly in the later years",
   kind: "frontier",
   scale: "small",
-  evidence-source: "dissertation",
+  evidence-source: "peer-reviewed",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2, LEO-4",
   summary: [
-    A 2025 arXiv preprint ("The Development of Reflective Practice
+    Barr, Nabi and Andrei's "The Development of Reflective Practice
     on a Work-Based Software Engineering Program: A Longitudinal
-    Study," arXiv:2504.20956) reports a longitudinal study of how
+    Study" (IEEE CSEE&T 2025; preprint arXiv:2504.20956) reports a longitudinal study of how
     reflective-practice capability itself develops across a
     multi-year work-based software-engineering program. The signal the v2 corpus needs from this case is precise: it applies two established coding schemes to four successive years of one cohort's reflective reports, so the unit of analysis is the trajectory rather than a single point. That is the LENS-revised
     LEO-2's evaluation problem in miniature — if the program
@@ -1028,7 +1053,7 @@
       reflect on.#cn()
     ],
     [
-      The 2025 preprint reports a longitudinal study of
+      Barr, Nabi and Andrei report a longitudinal study of
       reflective-practice development across such a program.
       The methodological move worth naming is the focus on development rather than snapshot: two established coding schemes are applied to four successive years of assignments from one cohort — between 36 and 38 reports a year — and the study reports the trajectory. The authors are careful about what that buys — the study is not experimental, the reports were never standardized across years, and they make no claims about causation.#cn()
     ],
@@ -1078,12 +1103,12 @@
     [Barr, M., Nabi, S. W., & Andrei, O. (2025), "The Development of Reflective Practice on a Work-Based Software Engineering Program: A Longitudinal Study," _Proc. 37th IEEE Conference on Software Engineering Education and Training (CSEE&T)_, pp. 53–61, doi:10.1109/CSEET66350.2025.00012 (preprint: arXiv:2504.20956).],
     [D. Schön, _The Reflective Practitioner_ (1983) — the foundational account of reflection-in-action the genre rests on.],
     [Boud, Keogh & Walker (eds.), _Reflection: Turning Experience into Learning_ (1985) — reflection as a learning process, and the measurement problem it raises.],
-    [the proposed revisions — the amended LEO-2 (first-person narration of design iteration) the case evaluates.],
+    [`v2_research/01_LENS_revised_competencies_and_CLOs.md` — the proposed LENS revisions, including the amended LEO-2 (first-person narration of design iteration) whose evaluation problem this case addresses.],
   ),
   quote: [The focus is the development of reflective practice over time. The study is not experimental, and the authors make no claims about causation.],
   quote-source: "Editors' synthesis of Barr, Nabi & Andrei (2025).",
   le-insight: [
-    Barr, Nabi & Andrei apply two established reflection coding schemes across four years of one cohort on a work-based program, so the reported result is a trajectory rather than a snapshot. Peer-reviewed at CSEE&T 2025, but one cohort at one university and unreplicated; the case is
+    Barr, Nabi & Andrei apply two established reflection coding schemes — Boud et al.'s and Bain et al.'s 5R, each stage scored present, minimal, or absent — across four years of one cohort (n = 36, 38, 38, 37) on a work-based program, so the reported result is a trajectory rather than a snapshot. Peer-reviewed at CSEE&T 2025, but one cohort at one university and unreplicated; the case is
     included on the structural contribution (construct
     distinction, instrument-design move) rather than specific
     magnitudes. Replication is the outstanding step.
@@ -1093,14 +1118,15 @@
     the evaluation-pathway case for first-person practice
     accounts (induced 2.3; LENS D2/PT4). LENS uses it in
     Domain 2 (Iterative Development) for the amended LEO-2
-    and in Domain 4 (Test and Evaluation) for the subobjective *Judgment under inadequate evidence* (4.4) — the preprint
+    and in Domain 4 (Test and Evaluation) for the subobjective *Judgment under inadequate evidence* (4.4) — the study
     supplies the construct distinction (development vs.
-    presence) without supplying peer-reviewed magnitudes.
+    presence) from a single unreplicated cohort, so the
+    distinction travels and the magnitudes do not.
   ],
   literature-items: (
-    [arXiv:2504.20956 (2025) — longitudinal SE-program study],
+    [Barr, Nabi & Andrei (2025), CSEE&T — longitudinal SE-program study],
     [Schön (1983); Boud, Keogh & Walker (1985) — reflective-practice canon],
-    [— amended LEO-2 framing],
+    [`v2_research/01_*` — the amended LEO-2 framing],
   ),
   reflection-list: (
     [Identify a multi-year program in your context where reflective-practice capability is supposed to develop. What instrument would you build to measure development (intra-learner depth change over time) rather than presence (snapshot)? At what temporal cadence?],
@@ -1278,7 +1304,7 @@
   year: "2016 – 2025",
   domains-list: ("learning analytics", "online learning", "mobile/distance learning"),
   modes-code: "TKD",
-  impact: "Van Campenhout et al. (LAK 2023) replicated the doer-effect causal claim across seven courses with 15.2 million data points; L@S 2025 replication held with AI-generated practice questions; LAK 2025 non-WEIRD radio/phone extension found weaker effect for learners with higher prior educational attainment — the heterogeneity finding",
+  impact: "Van Campenhout et al. (LAK 2023) replicated the doer-effect causal claim across seven courses with 15.2 million data points; L@S 2025 replication held with AI-generated practice questions (correlational, two sections of one course); LAK 2025 non-WEIRD radio/phone extension found weaker effect for learners with higher prior educational attainment — the heterogeneity finding",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1294,7 +1320,8 @@
     Campenhout et al.'s LAK 2023 paper replicated the claim
     across seven courses with 15.2 million data points; the
     L\@S 2025 follow-up reported the effect held with AI-
-    generated practice questions; the Butler et al. LAK 2025
+    generated practice questions, though on two sections of one
+    course and as a correlational rather than causal analysis; the Butler et al. LAK 2025
     non-WEIRD extension tested the effect for learners
     receiving lecture content via community radio and practice
     via basic mobile phones, and reported that the doer-effect
@@ -1337,7 +1364,11 @@
       The L\@S 2025 replication reported the effect held with
       auto-generated content — a meaningful generalization given
       the rising deployment of LLM-generated practice across
-      educational platforms.#cn()
+      educational platforms, and a narrow one. It ran on two
+      sections of a single Cognitive Psychology course and
+      followed the established *correlational* doer-effect
+      analysis; it does not repeat the causal test the seven-course
+      LAK 2023 paper carries.#cn()
     ],
     [
       The 2025 LAK non-WEIRD extension by Butler and
@@ -1358,7 +1389,8 @@
       by replication: the original claim, the seven-course
       large-N replication, the AI-generated-content replication,
       and the non-WEIRD-modality extension are four converging
-      pieces of evidence. The closed loop is also honest about
+      pieces of evidence — though only the first two carry a causal
+      test, and only the first is large-N. The closed loop is also honest about
       what it closes and what it does not. Long-term retention
       across multi-year intervals is not yet in the replication
       record; transfer beyond the included content domains is
@@ -1388,7 +1420,7 @@
   beats: (
     "Original doer-effect claim (Koedinger et al. LAK 2016): doing improves learning more than reading; appears causal",
     "Van Campenhout et al. LAK 2023: seven-course replication with 15.2M data points — effect holds in direction and magnitude",
-    "L@S 2025 replication: AI-generated practice questions — effect still holds; meaningful given LLM-generated content rising",
+    "L@S 2025 replication: AI-generated practice questions — correlational analysis in two sections of one course; effect still holds, causal test not repeated",
     "Butler et al. LAK 2025 non-WEIRD: radio-lecture + mobile-phone practice — effect weaker for higher-prior-attainment learners (heterogeneity is the result)",
     "Closed loop via replication, not single trial; pair with Case 69 (Duolingo half-life) and Case 17 (spaced ed RCTs)",
   ),
@@ -1405,8 +1437,8 @@
     ),
   ),
   references: (
-    [Van Campenhout, R., Jerome, B., Dittel, J. S., & Johnson, B. G. (2023), "The Doer Effect at Scale: Investigating Correlation and Causation Across Seven Courses," _LAK23_, doi:10.1145/3576050.3576103.],
-    [Van Campenhout, R., Autry, K. S., Clark, M. W., & Johnson, B. G. (2025), "Scaling the Doer Effect: A Replication Analysis Using AI-Generated Questions," _L\@S '25_, pp. 24–34, doi:10.1145/3698205.3729545.],
+    [Van Campenhout, R., Jerome, B., Dittel, J. S., & Johnson, B. G. (2023), "The Doer Effect at Scale: Investigating Correlation and Causation Across Seven Courses," _LAK23_, pp. 357–365, doi:10.1145/3576050.3576103.],
+    [Van Campenhout, R., Autry, K. S., Clark, M. W., & Johnson, B. G. (2025), "Scaling the Doer Effect: A Replication Analysis Using AI-Generated Questions," _L\@S '25_, pp. 24–34, doi:10.1145/3698205.3729545 — two sections of a Cognitive Psychology course, following the established correlational doer-effect analysis.],
     [Butler, D. et al. (2025), "Does the Doer Effect Generalize To Non-WEIRD Populations? Toward Analytics in Radio and Phone-Based Learning," _LAK '25_, doi:10.1145/3706468.3706505 (also arXiv 2412.20923).],
     [Koedinger, K. R., McLaughlin, E. A., Jia, J. Z., & Bier, N. L. (2016), "Is the doer effect a causal relationship? How can we tell and why it's important," _LAK '16_, pp. 388–397, doi:10.1145/2883851.2883957 — the replication target the present case builds on.],
   ),
@@ -1514,7 +1546,10 @@
       opportunistic structure: students convened around emerging
       questions as those questions surfaced from the community's
       shared work in Knowledge Forum, and dispersed when the
-      questions had been addressed. The depth of scientific
+      questions had been addressed. Zhang and colleagues read
+      those organizations off social network analysis of the
+      Knowledge Forum record together with qualitative analysis of
+      the notes themselves. The depth of scientific
       explanations in the community's shared notes improved in
       step with the structural change, and the distribution of
       explanatory contribution across students became less
@@ -1550,7 +1585,7 @@
       and Case 85 (OU Analyse) for the distance-higher-education
       governance frame at a different population. The LE Lens
       uses the case as the JLS-anchored small-tier complement to
-      v1 Case 67 (Cognitive Tutor's single-site arc); the two
+      v1 Case 67 (Cognitive Tutor's multi-site at-scale arc); the two
       cases together teach that the longitudinal classroom
       record is the substrate that learning-engineering
       iterations operate on, and that the iteration unit is the
@@ -1573,7 +1608,7 @@
     after: (
       [Carry the binding hedges into print without softening; the case's value to the corpus rests on its specificity, and the transferability questions are open and disclosable as open.],
       [Pair with Case 40 (collaboration measurement at team-science scale) so the collaboration-as-design-target thread is taught at both the classroom and team scales.],
-      [Use the case as the JLS-anchored small-tier complement to v1 Case 67 (Cognitive Tutor's single-site arc); the cohort-as-iteration-unit lesson is the bridge between the classroom-design literature and the at-scale evaluation literature.],
+      [Use the case as the JLS-anchored small-tier complement to v1 Case 67 (Cognitive Tutor's multi-site at-scale arc); the cohort-as-iteration-unit lesson is the bridge between the classroom-design literature and the at-scale evaluation literature.],
     ),
   ),
   references: (
@@ -1605,7 +1640,7 @@
     Tutoring small-tier deployment), and Cases 81 and 85 (OU
     Analyse — distance higher-education governance at a different
     scale). The LE Lens uses it as the small-tier complement to
-    v1 Case 67 (Cognitive Tutor single-site arc).
+    v1 Case 67 (Cognitive Tutor's multi-site at-scale arc).
   ],
   literature-items: (
     [Zhang et al. (2009), _JLS_ — Knowledge Building three-cohort design study],
@@ -1638,7 +1673,7 @@
   summary: [
     Chen, Wu, Chen, and Zhou's 2025 paper in _Frontiers in
     Psychology_ reports a three-month quasi-experimental study of
-    AI-supported instructional devices across 12 schools — 4 urban and 8 rural — in China, run from September to November 2024 alongside a 268-teacher acceptance survey fielded that January. The headline result is the equity-direction
+    AI-integrated Mixed Reality devices across 12 schools — 4 urban and 8 rural — in China, run from September to November 2024 alongside a 268-teacher acceptance survey fielded that January. The headline result is the equity-direction
     finding: rural experimental classes gained 17.93% on
     mathematics and 13.46% on history, while urban experimental
     classes gained 10.96% on mathematics and 9.55% on history.
@@ -1671,11 +1706,13 @@
       methodological hedges named.#cn()
     ],
     [
-      The deployment covers 12 schools — 4 urban and 8 rural — over the September to November 2024 window; a separate acceptance survey of 268 teachers was fielded the previous January. The intervention is AI-supported instructional
-      devices integrated into mathematics and history classroom
+      The deployment covers 12 schools — 4 urban and 8 rural — over the September to November 2024 window; a separate acceptance survey of 268 teachers was fielded the previous January. The intervention is AI-integrated Mixed
+      Reality devices used in mathematics and history classroom
       instruction. The comparison structure is between
-      experimental and control classes within each school setting
-      across both subjects. The headline outcome the paper reports
+      experimental and standard classes within each school setting
+      across both subjects; post-experiment scripts were
+      anonymized and graded by independent evaluators blind to
+      group assignment. The headline outcome the paper reports
       is the equity-direction finding: rural experimental classes
       gained 17.93% on mathematics and 13.46% on history, while
       urban experimental classes gained 10.96% on mathematics and
@@ -1694,8 +1731,8 @@
       is right for the within-subject within-school comparison
       structure the study runs but is not right for prevalence
       claims about Chinese rural schooling at population scale.
-      Assignment to experimental and control classes is non- randomized: classes of comparable baseline attainment were selected, with pre-experiment scores differing by less than 5% within each school, and teacher- or school-level selection effects are not ruled out. The authors' own limitations name the small sample and the survey's self-report basis — teachers' stated intentions were never correlated with usage logs or observed teaching behavior.
-      All four hedges travel into the prose without softening;
+      Assignment to experimental and control classes is non- randomized: classes of comparable baseline attainment were selected, with pre-experiment scores differing by less than 5% within each school, and teacher- or school-level selection effects are not ruled out. The authors' own limitations name the small sample and the survey's self-report basis — teachers' stated intentions were never correlated with usage logs or observed teaching behavior — along with two the case has to carry because they bear directly on its equity reading: there is no long-term follow-up, and the analysis does not segment students by characteristic, so the rural-over-urban pattern is a setting-level result and not a claim about which students within a setting gained.
+      Those hedges travel into the prose without softening;
       the case is published in a peer-reviewed mid-tier journal,
       and the evidence-tier flag rendering is intentionally not
       set — the hedges are carried in the case's own argument
@@ -1816,7 +1853,7 @@
   kind: "frontier",
   scale: "small",
   evidence-source: "practitioner",
-  induced-anchor: "2.2",
+  induced-anchor: "6.3",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2, LEO-4",
   summary: [
@@ -1856,7 +1893,14 @@
       hypothesis-testing — the team narrates the deployments,
       identifies the recurring patterns, and surfaces the
       operational knowledge that does not fit into a methods
-      section of a results paper. The honest framing the paper
+      section of a results paper. The lessons are synthesised under
+      five headings — the technological and physical aspects of the
+      deployment; the multimodal data and the interfaces built on
+      it; the design process; participation, ethics and privacy;
+      and the sustainability of the deployment — and the
+      sensing stack behind them was a positioning locator worn in a
+      belly bag, a wireless headset microphone, an Empatica E4
+      physiological wristband, and video. The honest framing the paper
       preserves is that the reflective genre is the right
       vehicle for the kind of operational knowledge the case
       contains, and that the peer-review structures of the LE
@@ -1919,10 +1963,10 @@
     ),
   ),
   references: (
-    [Martinez-Maldonado, R., Echeverria, V., Fernandez-Nieto, G., et al. (2023), "Lessons Learnt from a Multimodal Learning Analytics Deployment In-the-wild," _ACM Transactions on Computer-Human Interaction_ 31(1), Article 8, doi:10.1145/3622784; author preprint at arXiv:2303.09099.],
+    [Martinez-Maldonado, R., Echeverria, V., Fernandez-Nieto, G., et al. (2023), "Lessons Learnt from a Multimodal Learning Analytics Deployment In-the-wild," _ACM Transactions on Computer-Human Interaction_ 31(1), Article 8, pp. 1–41 (November 2023), doi:10.1145/3622784; author preprint at arXiv:2303.09099.],
     [Blikstein, P., & Worsley, M. (2016), "Multimodal Learning Analytics and Education Data Mining: Using computational technologies to measure complex learning tasks," _Journal of Learning Analytics_ 3(2):220–238 — broader MMLA literature backdrop.],
-    [Schon, D. (1983), _The Reflective Practitioner_ — the genre's theoretical underpinning, referenced across the reflective-practice case tier.],
-    [Editors' memo (B1) — Practice Flywheel commissioning structure that the case is offered as a published-first-person exemplar within.],
+    [Schön, D. (1983), _The Reflective Practitioner_ — the genre's theoretical underpinning, referenced across the reflective-practice case tier.],
+    [`v2_research/03_editor_request_memo.md`, item B1 — the Practice Flywheel commissioning structure this case is offered as a published-first-person exemplar within.],
   ),
   quote: [Practitioner knowledge walks out the door if it is not narrated. The first-person reflective genre is the narration vehicle, and the field has not consistently supported it.],
   quote-source: "Editors' synthesis of Martinez-Maldonado et al. (2023).",
@@ -1944,9 +1988,9 @@
     AI tutoring design-iteration layer).
   ],
   literature-items: (
-    [Martinez-Maldonado et al. (2023), arXiv:2303.09099 — MMLA lessons-learned],
+    [Martinez-Maldonado et al. (2023), _TOCHI_ 31(1) Art. 8 — MMLA lessons-learnt],
     [Blikstein & Worsley (2016), _JLA_ — MMLA framework],
-    [Schon (1983), _The Reflective Practitioner_],
+    [Schön (1983), _The Reflective Practitioner_],
   ),
   reflection-list: (
     [Identify a deployment in your domain whose operational knowledge — what worked, what failed, what the team would have done differently — has not been narrated outside the team. What would the first-person reflective account look like, and what publication venue would carry it?],

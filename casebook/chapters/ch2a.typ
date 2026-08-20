@@ -2167,7 +2167,7 @@
   induced-anchor: "5.4",
   lens-anchor: "D5/PT6",
   leo-anchor: "LEO-5, LEO-3",
-  coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Katzman founded 2U but had departed before the USC MSW expansion documented here.",
+  coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Katzman founded 2U and left the company in 2012, before the USC MSW expansion and the 2019-onward conduct documented here.",
   summary: [
     USC's Master of Social Work program grew from about 300 students per cohort before 2010 to more than 3,000 students enrolled, almost entirely through online growth under the 2U partnership. The
     May 2023 _Luna v. USC_ class-action complaint alleges that USC
@@ -2179,7 +2179,11 @@
     that the online program's tuition (over \$100,000) reflected
     on-campus pricing while the delivered student experience did
     not. USC and 2U announced the partnership's termination on the
-    MSW and other programs in November 2023. The case is in litigation, and
+    MSW and other programs in November 2023. The case is still in litigation
+    with no ruling on the merits — USC's demurrers were overruled in
+    substantial part in April 2024 and again in September 2024, and a
+    class-certification motion filed in November 2025 was set for argument in
+    2026 — and
     the predatory-targeting reconstruction rests on the complaint
     and on contemporaneous reporting rather than on a fact-finder's
     ruling — the evidence-tier flag is binding, and the case
@@ -2258,7 +2262,17 @@
     ],
     [
       The journalism-tier evidence flag is binding on the case's
-      framing. The complaint is a contested pleading that has survived two demurrers with no ruling on the merits, and the partnership-termination record is contemporaneous reporting; neither is investigation-grade in the sense a GAO audit is, and the journalism-tier flag governs both. The
+      framing. The complaint is a contested pleading. It has survived two
+      rounds of demurrer — the Los Angeles Superior Court overruled USC's
+      demurrer to the First Amended Complaint on April 2, 2024 in substantial
+      part, sustaining it only as to an Unruh Act claim with leave to amend,
+      and denied the demurrer to the Second Amended Complaint on September 17,
+      2024 — but surviving a demurrer decides only that the allegations, taken
+      as true, state a claim; it is not a finding that any of them happened.
+      Plaintiffs filed a Third Amended Complaint on July 30, 2025 and moved for
+      class certification that November. The partnership-termination record is
+      contemporaneous reporting; neither is investigation-grade in the sense a
+      GAO audit is, and the journalism-tier flag governs both. The
       predatory-targeting reconstruction relies on the
       complaint's allegations and on contemporaneous reporting
       — Higher Ed Dive, classaction.org summaries, the Project
@@ -2291,7 +2305,7 @@
     ),
   ),
   references: (
-    [_Stephanie Luna v. University of Southern California_, class action complaint, Los Angeles County Superior Court, May 2023.],
+    [_Stephanie Luna v. University of Southern California_, class action complaint, Los Angeles County Superior Court, filed May 4, 2023 (First Amended Complaint Sept. 2023; Second Amended May 2, 2024; Third Amended July 30, 2025).],
     [Higher Ed Dive reporting on the Luna complaint, May 2023; classaction.org and topclassactions.com summaries.],
     [Project on Predatory Student Lending statement on USC-2U partnership termination, November 2023.],
     [2U Inc. and USC public statements on partnership termination, November 2023; broader 2U commercial-collapse reporting referenced through Case 57.],
@@ -2299,7 +2313,7 @@
   quote: [The tuition tracked residential pricing. The delivered student experience tracked the OPM-operated structure. The gap between what was promised and what was delivered is the case.],
   quote-source: "Editors' synthesis of the Luna v. USC complaint and contemporaneous reporting.",
   le-insight: [
-    Luna v. USC is the consumer-side journalism-tier counterpart
+    _Luna v. USC_ is the consumer-side journalism-tier counterpart
     to GAO-22-104463 (Case 57). The complaint alleges USC
     marketed the online MSW as the "same" as the residential
     program while outsourcing the student-facing operations to 2U;
@@ -3050,7 +3064,7 @@
       particularly for low-income minority students. Total
       spending across the sites reached approximately
       \$575 million, of which the foundation contributed roughly
-      \$212 million; the remainder was primarily site funds.#cn()
+      \$212 million; the remainder came from site and federal funds — site funds were the largest non-foundation source at four sites, federal funds at the other three.#cn()
     ],
     [
       The measurement layer was built with unusual rigor. The
@@ -3070,7 +3084,13 @@
       assignment weakened the experimental protocol, and critics
       noted the validation spoke to prediction within the studied
       settings, not to what a district's personnel system would
-      do with the score. The Intensive Partnerships proceeded on
+      do with the score. A second limit ran directly into the
+      initiative's own theory of change: students and teachers
+      could not be randomly assigned across school sites, so the
+      validation says nothing about comparing teachers' measured
+      effectiveness between schools — which is precisely the
+      comparison the plan to move effective teachers into
+      high-need schools depended on. The Intensive Partnerships proceeded on
       the measurement evidence. What the MET project did not and
       could not establish was the second half of the theory of
       change: that a district could operate the rating at scale,
@@ -3088,15 +3108,26 @@
       evaluation systems were built and operated, and the
       effectiveness ratings were generally regarded as an
       improvement over the prior binary evaluations. But by 2014 – 2015, student achievement, dropout rates, and low-income minority students' access to effective teaching were not dramatically better than at similar sites that did not participate. The evaluation's site-level
-      implementation record explains the decoupling: the
+      implementation record is where the decoupling shows: the
       personnel levers the ratings were meant to drive moved
-      weakly or not at all — dismissal and non-renewal touched
-      few teachers, placement incentives did not shift effective
-      teachers toward high-need schools at meaningful scale,
-      individualized professional development linked to the
-      ratings was the least-implemented component, and political
-      and labor resistance narrowed the coupling further over
-      time. The evaluation itself — pre-specified outcomes,
+      weakly or not at all. About 1 percent of teachers were
+      dismissed for poor performance in 2015 – 2016, in part
+      because the new evaluation systems identified very few poor
+      performers. No site consistently took the steps that would
+      have moved low-income minority students into effective
+      teachers' classrooms. Sites struggled to individualize
+      professional development against the weaknesses an
+      evaluation identified, and generally did not require
+      participation, monitor it, or examine whether participants'
+      effectiveness improved. Retention of effective teachers did
+      not rise, though retention of ineffective teachers fell in
+      most sites. RAND is explicit that the evaluation cannot
+      identify the reasons the initiative missed its
+      student-outcome goals — insufficient time for effects to
+      appear, comparison sites adopting similar reforms, and a
+      flawed theory of action all stay live — so the coupling
+      account is the reading the implementation record best
+      supports, not a causal finding the evaluation makes. The evaluation itself — pre-specified outcomes,
       comparison-site design, six years of implementation
       tracking, published in full at 500-plus pages — is the
       model of decision-grade evidence the initiative's own
@@ -3109,8 +3140,9 @@
       foundation pledge of \$100 million, built a corps of more
       than 260 peer evaluators and mentors and a
       performance-linked pay system. Tampa Bay Times reporting
-      (Sokol, 2015) documented the fiscal arc: the district ultimately spent more than \$180 million, of the pledged \$100 million the foundation paid about \$80 million, and the district's main reserve fell from \$298 million in 2012 to \$152 million in 2015, the years spanning the new pay system. In
-      October 2015 superintendent Jeff Eakins announced the
+      (Sokol, 2015) documented the fiscal arc: more than \$180 million went into the program over six years; the foundation paid about \$80 million against a pledge its agreement worded as "up to" \$100 million, leaving the district to absorb the difference; and the district's main reserve fell from \$298 million in 2012 to \$152 million in 2015, the years spanning the new pay system. In
+      the fall of 2015 superintendent Jeff Eakins announced, in an
+      email to the peer evaluators themselves, the
       dismantling of the Gates-funded system, and the district
       wound down the peer-evaluator corps and the evaluation
       machinery it could no longer afford. The sustainment
@@ -3150,7 +3182,7 @@
     "Gates Foundation Intensive Partnerships for Effective Teaching, 2009 – 2016: ~$575M total (~$212M foundation, 37% of spending; remainder site and federal funds) across Hillsborough County FL, Memphis/Shelby County TN, Pittsburgh PA, and four California CMOs",
     "Theory of change: multi-measure effectiveness ratings (VAM + observations + student surveys, informed by MET project 2009 – 2013) drive personnel levers — retention, placement, development, compensation — that improve achievement and graduation",
     "RAND/AIR six-year evaluation (Stecher et al. 2018, RR-2242): sites built the evaluation systems, but the initiative did not achieve its goals for student achievement or graduation; no evidence of improvement for low-income minority students relative to comparison",
-    "Hillsborough flagship: >$180M spent, ~$80M of $100M pledge paid, main reserve $298M (2012) to $152M (2015); system dismantled in 2015 — sustainment never engineered as a requirement",
+    "Hillsborough flagship: >$180M into the program, ~$80M paid against an 'up to $100M' pledge, main reserve $298M (2012) to $152M (2015); system dismantled in 2015 — sustainment never engineered as a requirement",
     "Measurement layer strong, coupling absent; the intervention is the failure, the RAND evaluation is the decision-grade-evidence exemplar; pair with Case 51 (Atlanta) and Case 50 (Wisconsin DEWS)",
   ),
   approaches: (
@@ -3168,9 +3200,8 @@
   references: (
     [Stecher, B. M., Holtzman, D. J., Garet, M. S., Hamilton, L. S., et al. (2018), _Improving Teaching Effectiveness: Final Report: The Intensive Partnerships for Effective Teaching Through 2015–2016_, RAND Corporation, RR-2242-BMGF.],
     [Kane, T. J., McCaffrey, D. F., Miller, T., & Staiger, D. O. (2013), _Have We Identified Effective Teachers? Validating Measures of Effective Teaching Using Random Assignment_, MET Project research paper, Bill & Melinda Gates Foundation, January 2013.],
-    [Sokol, M. (2015), "Sticker shock: How Hillsborough County's Gates grant became a budget buster," _Tampa Bay Times_, October 2015 — with companion reporting, "Hillsborough schools to dismantle Gates-funded system that cost millions to develop."],
-    // VERIFY: interim-report year (2016) and author list
-    [Stecher, B. M., et al. (2016), _Improving Teaching Effectiveness: Implementation: The Intensive Partnerships for Effective Teaching Through 2013–2014_, RAND Corporation, RR-1295.],
+    [Sokol, M. (2015), "Sticker shock: How Hillsborough County's Gates grant became a budget buster," _Tampa Bay Times_, September 21, 2015 — with companion reporting, "Hillsborough schools to dismantle Gates-funded system that cost millions to develop" (fall 2015).],
+    [Stecher, B. M., Garet, M. S., Hamilton, L. S., Steiner, E. D., Robyn, A., Poirier, J., Holtzman, D. J., Fulbeck, E. S., Chambers, J., & Brodziak de los Reyes, I. (2016), _Improving Teaching Effectiveness: Implementation: The Intensive Partnerships for Effective Teaching Through 2013–2014_, RAND Corporation, RR-1295.],
     [Will, M. (2018), "'An Expensive Experiment': Gates Teacher-Effectiveness Program Shows No Gains for Students," _Education Week_, June 21, 2018.],
   ),
   quote: [The sites implemented new multi-measure teacher-evaluation systems, but the initiative did not achieve its goals for student achievement or graduation, and low-income minority students' outcomes and access to effective teaching showed no evidence of improvement relative to comparison sites; Hillsborough drew down reserves and dismantled its system in 2015.],
@@ -3222,7 +3253,7 @@
   year: "2013–2015",
   domains-list: ("K-12 education", "ed-tech procurement", "device rollout"),
   modes-code: "DHG",
-  impact: "Los Angeles Unified's plan to put an iPad loaded with Pearson Common Core curriculum in every student's hands — publicly discussed at roughly $1.3 billion (approximately $500 million for devices and curriculum plus approximately $800 million for network infrastructure, drawn from school-construction bonds) — collapsed within two years: students bypassed device security within about a week at initial schools, the district's own evaluator observed the Pearson curriculum in use in one of 245 classrooms, the Apple contract was halted in August 2014, Superintendent John Deasy resigned in October 2014, the FBI seized twenty boxes of documents in December 2014, the SEC examined the bond-funding disclosures, and the district recovered a settlement of approximately $6.4 million in 2015",
+  impact: "Los Angeles Unified's plan to put an iPad loaded with Pearson Common Core curriculum in every student's hands — publicly discussed at roughly $1.3 billion (approximately $500 million for devices and curriculum plus approximately $800 million for network infrastructure, drawn from school-construction bonds) — collapsed within two years: students bypassed device security within about a week at initial schools, the district's own evaluator observed the Pearson curriculum in use in one of 245 classrooms, the Apple contract was halted in August 2014, Superintendent John Deasy resigned in October 2014, the FBI seized twenty boxes of documents in December 2014, the SEC examined the bond-funding disclosures, and the district recovered a settlement of $6.45 million, paid by Pearson, in October 2015",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -3255,8 +3286,7 @@
     documents in December 2014 at a federal grand jury's
     behest; and the SEC examined whether the bond funding was
     properly disclosed to investors. The district recovered a
-    settlement of approximately \$6.4 million in 2015,
-    ultimately borne by Pearson. The evidence base is largely
+    settlement of \$6.45 million in October 2015, paid by Pearson. The evidence base is largely
     journalism — KPCC, the _Los Angeles Times_, _Education
     Week_ — plus the district's own commissioned evaluation by
     the American Institutes for Research, so the evidence-tier
@@ -3317,10 +3347,9 @@
       district offices; the SEC separately examined whether the
       district's use of construction-bond proceeds for tablets
       was properly disclosed to bondholders. The district
-      sought a refund from Apple and Pearson and in 2015
-      reached a settlement of approximately \$6.4 million,
-      ultimately borne by Pearson as the curriculum
-      subcontractor. The federal investigation was later
+      sought a refund from Apple and Pearson and in October 2015
+      reached a settlement of \$6.45 million, paid by Pearson as
+      the curriculum subcontractor. The federal investigation was later
       reported closed without charges.#cn()
     ],
     [
@@ -3373,7 +3402,7 @@
     "Fall 2013: rollout at 47 initial schools; devices of 185 students compromised at three high schools within about a week; home use suspended; keyboards unbudgeted; home-use liability unresolved",
     "District's own evaluator (AIR) observes 245 classrooms in spring 2014: Pearson curriculum in use in one; staff report promised content incomplete or unavailable",
     "August 2014: KPCC publishes pre-bid emails between Deasy, his deputy, and Apple/Pearson executives; district halts the Apple contract three days later; Deasy resigns October 2014",
-    "December 2014: FBI seizes 20 boxes of documents for a federal grand jury; SEC examines bond-funding disclosures; district recovers ~$6.4M settlement in 2015, borne by Pearson; federal probe later reported closed without charges",
+    "December 2014: FBI seizes 20 boxes of documents for a federal grand jury; SEC examines bond-funding disclosures; district recovers $6.45M settlement from Pearson in October 2015; federal probe later reported closed without charges",
   ),
   approaches: (
     during: (
@@ -3389,15 +3418,14 @@
   ),
   references: (
     [Gilbertson, A. (2014), "LA schools cancel iPad contracts after KPCC publishes internal emails," KPCC 89.3 (Southern California Public Radio), August 25, 2014 — the public-records email investigation and the contract halt; see also KPCC's "LAUSD iPads: Timeline of a troubled program."],
-    // VERIFY: exact report title and issue date of the AIR interim (2014) and final (2015) CCTP evaluation reports before publication.
-    [American Institutes for Research (2014), interim evaluation of the LAUSD Common Core Technology Project, Phase 1 — 245 classroom observations across CCTP schools; Pearson curriculum observed in use in one.],
-    [Herold, B. (2014), "Hard Lessons Learned in Ambitious L.A. iPad Initiative," _Education Week_, September 2014 — retrospective on the implementation failures; see also Herold (2014), "FBI Investigation Leaves L.A. iPad Initiative in Further Disarray," _Education Week_, December 2014.],
-    // VERIFY: select and confirm exact article titles and dates for the specific pieces cited.
+    [Margolin, J., Haynes, E., Heppen, J., Ruedel, K., Meakin, J., Hauser, A., Blum, J., Chavez, S., & Hubbard, A. (2014), _Evaluation of the Common Core Technology Project: Interim Report_, American Institutes for Research, September 2014 — 245 classroom observations across 19 schools (15 Phase 1 CCTP, four non-CCTP) visited in May 2014; the Pearson curriculum app observed in use in one, at a single elementary school. Followed by AIR's _Evaluation of LAUSD's Instructional Technology Initiative: Year 2 Report_ (August 2015).],
+    [Herold, B. (2014), "Hard Lessons Learned in Ambitious L.A. iPad Initiative," _Education Week_, September 10, 2014 — retrospective on the implementation failures; see also Herold (2014), "FBI Investigation Leaves L.A. iPad Initiative in Further Disarray," _Education Week_, December 2014, and Herold (2015), "Pearson Settles With L.A. Over Curriculum Foul-Up," _Education Week_, October 20, 2015 — the \$6.45 million settlement, paid by Pearson.],
+    // VERIFY: select and confirm exact article titles and dates for the specific Los Angeles Times pieces cited below.
     [Blume, H., _Los Angeles Times_ coverage of the CCTP (2013–2015) — the rollout, the security bypass, the contract suspension, the Deasy resignation, and the FBI document seizure.],
     [_Education Week_ Market Brief (2017), "Feds Drop Investigation Into Los Angeles District Over \$1 Billion iPad Purchase," February 2017 — the reported closure of the federal inquiry without charges.],
   ),
   quote: [The Pearson curriculum, touted as central to the effort to prepare students for the new Common Core standards, was in use in just one of the 245 classrooms the district's own evaluators observed.],
-  quote-source: "Editors' synthesis of the American Institutes for Research Phase 1 evaluation finding, as reported by Education Week (September 2014).",
+  quote-source: "Editors' synthesis of the American Institutes for Research finding, Evaluation of the Common Core Technology Project: Interim Report (September 2014), section 3.D, p. 36.",
   le-insight: [
     The LAUSD Common Core Technology Project is the
     \$1-billion-scale case for technology deployed without
@@ -3423,10 +3451,11 @@
     forfeits the deployment's legitimacy regardless of the
     technology's merits — and as a Design-mode teaching case
     for the device-provision-equals-capability fallacy at the
-    human-interface layer. The evidence-tier flag is binding
-    until the AIR reports and the LA Times citations are
-    re-confirmed against primary sources; the structural
-    pattern survives the flag, the dollar magnitudes do not.
+    human-interface layer. The evidence-tier flag is binding: the
+    AIR interim report has been confirmed against the primary
+    document, but the Los Angeles Times pin-cites have not; the
+    structural pattern survives the flag, the dollar magnitudes
+    do not.
   ],
   literature-items: (
     [Gilbertson (2014), KPCC — the pre-bid email investigation],
