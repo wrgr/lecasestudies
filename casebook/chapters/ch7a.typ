@@ -2058,7 +2058,7 @@
   year: "2019 – 2021",
   domains-list: ("financial services", "consumer credit", "algorithmic decision-making"),
   modes-code: "DKN",
-  impact: "New York State Department of Financial Services investigation March 2021 found no violation of New York anti-discrimination law in Apple Card credit-limit decisions following David Heinemeier Hansson's November 2019 viral allegation that his wife received a credit limit approximately 20 times lower despite shared assets; DFS documented \"lack of transparency\" as the structural problem, and the Bank and Apple had since taken steps to remedy the customer-service and transparency deficiencies",
+  impact: "New York State Department of Financial Services investigation March 2021 did not produce evidence of deliberate or disparate-impact discrimination under New York and federal fair lending law in Apple Card credit-limit decisions following David Heinemeier Hansson's November 2019 viral allegation that his wife received a credit limit approximately 20 times lower despite shared assets; DFS documented \"lack of transparency\" as the structural problem, and the Bank and Apple had since taken steps to remedy the customer-service and transparency deficiencies",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -2073,11 +2073,11 @@
     went viral, with Apple co-founder Steve Wozniak reporting a
     similar disparity with his wife. The New York State
     Department of Financial Services opened an investigation. Its
-    March 2021 report concluded that the credit-decisioning
+    March 2021 report found no evidence that the credit-decisioning
     algorithm operated by Goldman Sachs (the issuing bank for
-    Apple Card) did not violate New York anti-discrimination law,
-    finding no statutory finding of intent or disparate-impact
-    violation. DFS documented "lack of transparency" as the
+    Apple Card) discriminated — neither intentional disparate
+    treatment nor a disparate-impact violation of New York and
+    federal fair lending law. DFS documented "lack of transparency" as the
     structural problem: the Bank explained its decisions to DFS for every complainant, and to the complainants themselves it did not.
     The Bank and Apple had by then taken steps to remedy the deficiencies. The case pairs with Case 186 (Bartlett mortgage),
     Case 196 (Coots), and Case 86 (Gándara). The DFS finding of
@@ -2119,15 +2119,17 @@
       The New York State Department of Financial Services opened
       its investigation on 9 November 2019 and released its
       findings in March 2021. The headline finding was that DFS
-      did not find a violation of New York anti-discrimination
-      law — neither intentional discrimination nor an actionable
-      disparate-impact violation under the applicable standards.
+      did not find evidence of a violation of New York and federal
+      fair lending law — neither intentional disparate treatment nor
+      a disparate-impact violation under the applicable standards;
+      women and men with equivalent credit characteristics, the
+      report states, had similar Apple Card application outcomes.
       The investigation ran a regression analysis over underwriting data for nearly 400,000 New York applicants. The hedge is binding: DFS's
       "no violation" finding is specific to the statutory standard
       the agency applied, not a general finding that the
       decisioning was fair or non-discriminatory across all
       criteria. What DFS did find was "lack of transparency" as
-      the structural problem. DFS imposed no requirements. The Bank had already dropped the six-month wait to appeal credit terms, and with Apple launched Path to Apple Card in June 2020 to help declined applicants build toward approval.#cn()
+      the structural problem. The report imposed no penalty and ordered no corrective action, closing instead with the judgment that credit scoring and the laws barring discrimination in lending "are in need of strengthening and modernization." The Bank had already dropped the six-month wait to appeal credit terms, and with Apple launched Path to Apple Card in June 2020 to help declined applicants build toward approval.#cn()
     ],
     [
       The case pairs with Case 186 (Bartlett mortgage) for the
@@ -2165,8 +2167,8 @@
     "Nov 7 2019: Heinemeier Hansson Twitter thread on ~20× Apple Card credit-limit disparity; Wozniak names similar pattern; viral within days",
     "Goldman Sachs (issuing bank) cannot explain individual credit decisions to challenging applicants; explainability gap is operational, not narrowly algorithmic",
     "NY DFS investigation opened 9 Nov 2019, findings released March 2021; regression over underwriting data for nearly 400,000 New York applicants",
-    "DFS: no violation of NY anti-discrimination law under applicable statutory standard; structural finding is \"lack of transparency\"",
-    "No requirements imposed; Goldman had already dropped the six-month appeal wait and launched Path to Apple Card with Apple in June 2020",
+    "DFS: no evidence of disparate treatment or disparate impact under NY and federal fair lending law; structural finding is \"lack of transparency\"",
+    "No penalty or corrective order; Goldman had already dropped the six-month appeal wait and launched Path to Apple Card with Apple in June 2020",
   ),
   approaches: (
     during: (
@@ -2186,13 +2188,13 @@
     [Vigdor, N. (2019), "Apple Card Investigated After Gender Discrimination Complaints," _The New York Times_, November 10, 2019.],
     [Goldman Sachs Bank USA, public response and credit-line-review process documentation submitted to DFS during the investigation (2019 – 2021).],
   ),
-  quote: [DFS did not find a violation of New York anti-discrimination law; DFS did find lack of transparency as the structural problem, and the Bank and Apple took steps to remedy it without being ordered to — the case teaches that "no violation under a statutory standard" is not "fair."],
+  quote: [DFS did not find evidence of a violation of New York and federal fair lending law; DFS did find lack of transparency as the structural problem, and the Bank and Apple took steps to remedy it without being ordered to — the case teaches that "no violation under a statutory standard" is not "fair."],
   quote-source: "Editors' synthesis of the NY Department of Financial Services report on the Apple Card investigation (March 2021).",
   le-insight: [
     Apple Card is the consumer-credit explainability case at
-    deployment scale. DFS found no violation of New York anti-
-    discrimination law under the applicable statutory standard,
-    and DFS also found lack of transparency as the structural
+    deployment scale. DFS found no evidence of a violation of
+    New York and federal fair lending law under the applicable
+    standards, and DFS also found lack of transparency as the structural
     problem; the Bank dropped the six-month wait to appeal credit terms and, with Apple, launched Path to Apple Card for declined applicants. The hedge that matters is the precision of the DFS finding — neither "fair" nor "unfair," but "no
     violation under this standard, transparency gap as the
     structural problem."
@@ -2233,7 +2235,7 @@
   modes-code: "GKN",
   impact: "~$65B Ponzi scheme — the largest in history; SEC repeatedly investigated and cleared Madoff; foundational regulator-capability case",
   diagram: dgm.dgm-timeline(
-    (("Markopolos memo", "2000"), ("re-submitted", "2005"), ("SEC clears", "2006"), ("collapse", "2008")),
+    (("Markopolos memo", "2000"), ("re-submitted", "2005"), ("SEC closes probe", "2007"), ("collapse", "2008")),
     emphasis: 1,
     caption: "Madoff — the regulator received the evidence; the regulator lacked the staff to evaluate it",
   ),
@@ -2269,8 +2271,12 @@
       Financial analyst Harry Markopolos concluded by analysis that
       Madoff's returns were mathematically impossible and delivered the
       SEC a detailed memorandum in 2005 titled "The World's Largest Hedge
-      Fund is a Fraud." The SEC opened an investigation and concluded that
-      no enforcement action was warranted. The warning was not a vague
+      Fund is a Fraud." The SEC's New York office opened a formal
+      investigation in January 2006 and closed it in November 2007,
+      the closing recommendation concluding that the violations it had
+      found were "not so serious as to warrant an enforcement action"
+      and never returning to the Ponzi allegation the case-opening
+      report had raised. The warning was not a vague
       suspicion but a quantitative case any competent reviewer could in
       principle retrace, which is what makes the dismissal so telling. Madoff
       continued operating until December 2008, when the financial crisis made
@@ -2306,14 +2312,14 @@
       capability to challenge the evidence in front of it.#cn() The
       aftermath complicates the "total loss" image the \$65-billion
       figure conjures: the fabricated account value was never real
-      money, and trustee Irving Picard recovered more than \$14.5 billion for the customer fund — \$5 billion of it from the Picower estate, whose \$7.2 billion settlement sent a further \$2.2 billion to the government and seeded the Department of Justice's Madoff Victim Fund, whose claimants had recovered 93.71 percent of their losses when it closed at the end of 2024, a recovery without precedent
+      money, and trustee Irving Picard has recovered or agreed to recover more than \$15.3 billion for the customer fund — \$5 billion of it from the Picower estate, whose \$7.2 billion settlement sent a further \$2.2 billion to the government and seeded the Department of Justice's Madoff Victim Fund, whose claimants had recovered 93.71 percent of their losses when it closed at the end of 2024, a recovery without precedent
       for a Ponzi of this scale. Madoff himself died in federal prison
       in April 2021.
     ],
   ),
   beats: (
     "Former NASDAQ chairman reported steady returns that were entirely fictitious Ponzi fabrications",
-    "Markopolos delivered SEC a detailed quantitative memo in 2005; investigation closed without action",
+    "Markopolos delivered SEC a detailed quantitative memo in 2005; the 2006 investigation closed in November 2007 without action",
     "SEC Inspector General found inexperienced staff who accepted Madoff's answers where independent checks sat unused",
     "Regulator's technical-evaluation pipeline lacked people able to check the checkable math",
     "Collapse prompted SEC reforms including Office of Market Intelligence for technical triage",
@@ -2322,8 +2328,8 @@
     [SEC Office of Inspector General, _Investigation of Failure of the SEC to Uncover Bernard Madoff's Ponzi Scheme_, Report of Investigation Case No. OIG-509 (31 August 2009) — the quoted finding.],
     [Markopolos, H. (2010), _No One Would Listen_ — the 2005 memo and its dismissal.],
     [_United States v. Madoff_ (2009) — guilty plea and the ~\$65B figure.],
-    [SEC OIG (2009) — staff expertise gap and deference to Madoff's stature.],
-    [SEC post-Madoff reforms (2009–2010), including the Office of Market Intelligence for tip and referral triage.],
+    [U.S. Senate Committee on Banking, Housing, and Urban Affairs, _The Madoff Investment Securities Fraud: Regulatory and Oversight Concerns and the Need for Reform_, hearing, 10 September 2009 — SEC and OIG testimony on the examination and expertise failures.],
+    [U.S. Securities and Exchange Commission, _The Securities and Exchange Commission Post-Madoff Reforms_ (2009–2010) — revamped tip and referral handling, the Office of Market Intelligence, and specialized enforcement units.],
   ),
   quote: [Despite numerous credible and detailed complaints, the SEC never properly examined or investigated Madoff's trading.],
   quote-source: "SEC Office of Inspector General, Report of Investigation, Case No. OIG-509 (31 August 2009)",
@@ -2353,7 +2359,7 @@
   literature-items: (
     [SEC OIG Report (2009)],
     [Markopolos (2010), _No One Would Listen_],
-    [Cohen & Goldsmith (1999), regulatory-capacity literature],
+    [Kotz, H. D., testimony to the U.S. Senate Banking Committee (10 September 2009) — the OIG's examination-and-expertise findings],
   ),
   reflection-list: (
     [Identify a regulator in your domain whose technical evaluation capability has not kept pace with the entities it regulates. What is the resulting blind spot?],
@@ -2372,7 +2378,7 @@
       [Sustain the regulator's technical depth against the regulated industry's growing sophistication, since a depth gap quietly reopens the same blind spot over time.],
     ),
   ),
-  courses: ("LEN 4", "LEN 7"),
+  courses: ("LEN 4", "LEN 6", "LEN 7"),
   scale: "big",
   evidence-source: "investigation",
 )

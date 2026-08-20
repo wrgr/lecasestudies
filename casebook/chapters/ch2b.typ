@@ -1741,7 +1741,7 @@
     [
       The case's structural placement in the corpus is the
       equity-direction-finding case at the non-WEIRD deployment
-      seam. Pair with Case 86 (Gándara / community-college
+      seam. Pair with Case 86 (Gándara / student-success
       predictive equity in _AERA Open_) for the equity-direction
       thread at the higher-education scale; with Case 88
       (LiveHint AI bias across foundation models) for the bias-
@@ -1794,13 +1794,13 @@
     ),
     after: (
       [Commission the longer-horizon and larger-sample replication the three-month 12-school study cannot perform; the equity-direction finding's persistence past three months and across more schools is the validation question the case names.],
-      [Pair the case in syllabi with Case 86 (Gándara community-college equity) and Case 73 (Doer Effect non-WEIRD extension) so the equity-direction reading is taught across deployment scales and population settings.],
+      [Pair the case in syllabi with Case 86 (Gándara on bias in student-success prediction) and Case 73 (Doer Effect non-WEIRD extension) so the equity-direction reading is taught across deployment scales and population settings.],
       [Use the case to anchor the LEO on fairness beyond omission with a rare published equity-direction finding; the corpus needs equity-narrowing results as visible as equity-widening ones, and the methodological discipline that lets the result be reported credibly is the curricular target.],
     ),
   ),
   references: (
     [Chen, R., Wu, Y., Chen, Z., & Zhou, P. (2025), "Advancing educational equity in rural China: the impact of AI devices on teaching quality and learning outcomes for sustainable development," _Frontiers in Psychology_ 16:1588047, doi:10.3389/fpsyg.2025.1588047.],
-    [Paired Case 86 (Gándara et al., _AERA Open_) — community-college predictive equity at the higher-education scale.],
+    [Paired Case 86 (Gándara et al., _AERA Open_) — bias in student-success prediction at the higher-education scale.],
     [Paired Case 88 (LiveHint AI bias across foundation models, AIED 2025) — bias-surfacing in AI-supported instruction.],
     [Paired Case 73 (Doer Effect non-WEIRD LAK 2025 radio-and-phone extension) — non-WEIRD methodological discipline at the heterogeneity-finding axis.],
   ),
@@ -1822,7 +1822,7 @@
     horizon discipline and in Domain 5 (Navigating Sociotechnical
     Constraints) for the equity-direction reading that anchors
     the fairness-beyond-omission LEO. Pair with Case 86
-    (Gándara community-college predictive equity), Case 88
+    (Gándara on bias in student-success prediction), Case 88
     (LiveHint AI bias across foundation models), and Case 73
     (Doer Effect non-WEIRD radio-and-phone extension). The
     case's pedagogical value depends on the four binding
@@ -3014,7 +3014,7 @@
   number: 83,
   slug: "brinkerhoff-success-case-method-tails",
   title: "Brinkerhoff Success Case Method — Tails as the Evaluation Instrument",
-  year: "2005 – present",
+  year: "2003 – present",
   domains-list: ("corporate L&D", "training evaluation", "workforce development"),
   modes-code: "KN",
   impact: "When ROI-style evaluation of corporate training is intractable, Brinkerhoff's Success Case Method samples the tails of the outcome distribution — the highest- and lowest-impact participants — and reconstructs the system conditions that made the program work for some and fail for others; deployed at Cargill, Ford, Merck, the World Bank, and the Red Cross and Red Crescent",
@@ -3057,12 +3057,15 @@
       Level 3 (behavior change on the job) and Level 4 (business
       results) require longitudinal data the training organization
       typically cannot access. Average-effect statistics across
-      whole programs flatter most programs, because the
-      distribution of training outcomes is heavily skewed — a
-      minority of participants produce most of the
-      work-performance change, and the average buries that
-      signal under the participants for whom the program
-      produced nothing.#cn()
+      whole programs flatter most programs, on Brinkerhoff's
+      premise that the distribution of training outcomes is
+      heavily skewed — a minority of participants produce most
+      of the work-performance change, and the average buries
+      that signal under the participants for whom the program
+      produced nothing. The premise is the method's starting
+      argument rather than an independently established
+      distributional fact; SCM is built to test it program by
+      program.#cn()
     ],
     [
       Robert Brinkerhoff's 2005 *Advances in Developing Human
@@ -3120,7 +3123,7 @@
     "SCM: sample the highest- and lowest-impact participants; study in detail; reconstruct the system conditions around each",
     "Tails carry decision-grade information — success cases prove the program *can* work; failure cases name what the surrounding system has to provide for transfer",
     "Deployed at Cargill, Ford, Merck, World Bank, Red Cross and Red Crescent; method peer-reviewed; per-firm impact data live in practitioner channels",
-    "Operational complement to Blume's environment-as-decisive-variable finding (Case 65); exercises NEW LEO Judgment under inadequate evidence",
+    "Operational complement to Blume's environment-as-decisive-variable finding (Case 65); exercises the subobjective Judgment under inadequate evidence (4.4)",
   ),
   approaches: (
     during: (
@@ -3135,7 +3138,7 @@
     ),
   ),
   references: (
-    [Brinkerhoff, R. O. (2005), "The Success Case Method: A Strategic Evaluation Approach to Increasing the Value and Effect of Training," _Advances in Developing Human Resources_ 7(1):86–101, doi:10.1177/1523422304272172.],
+    [Brinkerhoff, R. O. (2005), "The Success Case Method: A Strategic Evaluation Approach to Increasing the Value and Effect of Training," _Advances in Developing Human Resources_ 7(1):86–101, doi:10.1177/1523422304272172 — the peer-reviewed statement of the method; the book-length treatment is Brinkerhoff (2003), _The Success Case Method: Find Out Quickly What's Working and What's Not_ (Berrett-Koehler).],
     [Brinkerhoff Evaluation Institute deployment list — International Red Cross and Red Crescent, World Bank, Cargill, Merck, Ford Motor — practitioner channel.],
     [Kirkpatrick & Kirkpatrick (2006), _Evaluating Training Programs_ — the chain-of-evidence framework SCM operationalizes (paired Case 79).],
     [Blume, Ford, Baldwin, & Huang (2010), _Journal of Management_ 36(4):1065–1105 — the meta-analytic environment-as-finding SCM samples around (paired Case 65).],
@@ -3206,11 +3209,11 @@
     would have published a null result and the two-year
     evaluation surfaced a real effect — and both findings were
     in the same trial. The case is the deeper-evidence-of
-    update on v1 Case 67 (Cognitive Tutor), translating that
+    update on Case 67 (Cognitive Tutor), translating that
     case from a system-description case into a methodological-
     discipline case about evaluation horizons. The timeline of
     the evaluation is itself a falsifiable design choice; the
-    case grounds the LEO on judgment under inadequate evidence
+    case grounds the subobjective *Judgment under inadequate evidence* (4.4)
     where the inadequacy is the evaluation horizon, not the
     sample size.
   ],
@@ -3231,17 +3234,20 @@
     ],
     [
       The RAND team built the evaluation to support that
-      question. 147 middle and high schools across seven
-      states were cluster-randomized to either continue their current
-      Algebra I curriculum or to adopt CTAI for two years. The
+      question. 147 schools — 73 high schools and 74 middle
+      schools, in 51 districts across seven states — were
+      cluster-randomized in matched pairs to either continue their
+      current Algebra I curriculum or to adopt CTAI for two years. The
       sample was deliberately wide — multiple states, multiple
       district contexts, classroom adoption with the support
       structures the publisher could realistically supply. The
       outcome instrument was an Algebra I posttest applied at
-      end of school year. The design supports an effect-size
-      estimate at end of year one and a separate estimate at
-      end of year two, with the same students in the same
-      treatment condition for both years.#cn()
+      end of school year. Each school held its assigned
+      condition for two years and taught two successive cohorts
+      of students under it, so the design supports an
+      effect-size estimate for the year-one cohort and a
+      separate estimate for the year-two cohort in the same
+      schools — not a two-year follow-up of the same students.#cn()
     ],
     [
       The year-one result was a null. Posttest scores in CTAI
@@ -3249,11 +3255,12 @@
       in control schools, across the cluster-randomized sample.
       The year-two result was different. Posttest scores in
       CTAI high schools were significantly higher than in control
-      schools (the middle-school effect was not significant), with
-      an effect size that an Algebra I curriculum
-      evaluation would treat as meaningful. The two findings
-      were generated by the same trial, run in the same
-      schools, with the same instrument. The methodological
+      schools (the middle-school estimate was of similar size
+      but not statistically significant) — about 0.20 SD, or
+      roughly eight percentile points for the median student.
+      The two findings were generated by the same trial, run in
+      the same schools, with the same instrument, on two
+      successive cohorts of students. The methodological
       discipline the case teaches turns on what the field would
       have learned if the evaluation had been designed to a
       one-year horizon: it would have published a null result
@@ -3266,11 +3273,11 @@
       design choice, not a methodological default. The reason the analysis was run separately by cohort is on the record: the researchers hypothesized that implementation would be better in the second year as teachers gained experience with the curriculum. What the implementation record does not show is a matching rise in fidelity — the year-two gain tracked teachers using fewer of the activities the guidelines prescribe for non-computer class time, not more. The two-year horizon was the right horizon because the effect appeared only in the second year; what changed between the two years is still contested in the trial's own implementation record.#cn()
     ],
     [
-      The case is the deeper-evidence-of update on v1 Case 67.
-      v1 Case 67 carries Cognitive Tutor as the system
+      The case is the deeper-evidence-of update on Case 67.
+      Case 67 carries Cognitive Tutor as the system
       description; this case carries the at-scale evaluation
-      and the timeline-of-evidence lesson. The LEO on judgment
-      under inadequate evidence is directly motivated: the
+      and the timeline-of-evidence lesson. The subobjective *Judgment
+      under inadequate evidence* (4.4) is directly motivated: the
       one-year evaluation would have been inadequate evidence,
       and a field that publishes the one-year null without
       noting the planned second-year horizon publishes a wrong
@@ -3301,7 +3308,7 @@
     "Year-one posttest: no significant difference; year-two posttest: CTAI high schools significantly outperform control (middle schools n.s.)",
     "A one-year evaluation would have published a null on the same intervention; both findings in the same trial",
     "Timeline of evaluation is itself a falsifiable design choice; year-two horizon required for deployment-substrate stabilization",
-    "Deeper-evidence-of v1 Case 67; pair with Case 72 (ASSISTments) and Case 5 (Epic Sepsis horizon discipline)",
+    "Deeper-evidence-of Case 67; pair with Case 72 (ASSISTments) and Case 5 (Epic Sepsis horizon discipline)",
   ),
   approaches: (
     during: (
@@ -3311,15 +3318,15 @@
     ),
     after: (
       [Publish the year-by-year result pattern, not the aggregate effect; the case's teaching power depends on the year-one null being on the same page as the year-two positive.],
-      [Carry the timeline-of-evidence lesson into the curriculum's evaluation-design teaching; the case grounds the LEO on judgment under inadequate evidence with a rare worked example where the inadequacy is the horizon, not the sample size.],
+      [Carry the timeline-of-evidence lesson into the curriculum's evaluation-design teaching; the case grounds the subobjective *Judgment under inadequate evidence* (4.4) with a rare worked example where the inadequacy is the horizon, not the sample size.],
       [Pair the case with Case 72 (ASSISTments multi-year follow-through) so the field-level discipline is taught with two converging examples; the methodological lesson is more useful as a pattern than as a single instance.],
     ),
   ),
   references: (
     [Evidence for ESSA, program record for Carnegie Learning High School Math Solution Algebra I — ESSA rating "Strong," weighted mean effect size +0.04 across three qualifying studies (Cabalo & Vu 2007; Campuzano et al. 2009; Pane et al. 2014).],
     [Pane, J. F., Griffin, B. A., McCaffrey, D. F., & Karam, R. (2014), "Effectiveness of Cognitive Tutor Algebra I at Scale," _Educational Evaluation and Policy Analysis_ 36(2):127–144, doi:10.3102/0162373713507480.],
-    [RAND Working Paper WR-1050 — addendum to the Pane et al. evaluation.],
-    [Koedinger, K. R., Anderson, J. R., Hadley, W. H., & Mark, M. A. (1997), "Intelligent tutoring goes to school in the big city," _IJAIED_ — the v1 Case 67 system description Cognitive Tutor builds from.],
+    [Pane, Griffin, McCaffrey, & Karam (2014), _Addendum to Effectiveness of Cognitive Tutor Algebra I at Scale_, RAND Working Paper WR-1050-DEIES — the addendum the WWC reviewed alongside the published paper.],
+    [Koedinger, K. R., Anderson, J. R., Hadley, W. H., & Mark, M. A. (1997), "Intelligent tutoring goes to school in the big city," _IJAIED_ — the Case 67 system description Cognitive Tutor builds from.],
     [What Works Clearinghouse (2016), _Cognitive Tutor®_ intervention report, Secondary Mathematics, June 2016 — rates Cognitive Tutor Algebra I "mixed effects" on algebra; records the Pane et al. year-two difference as no longer significant after adjustment for multiple comparisons.],
     [Escueta, Quan, Nickow, & Oreopoulos (2017), "Education Technology: An Evidence-Based Review," NBER Working Paper 23744 — reports that the Pane year-two gain tracked reduced use of the prescribed non-computer activities, not higher fidelity; published as Escueta, Nickow, Oreopoulos, & Quan (2020), "Upgrading Education with Technology: Insights from Experimental Research," _Journal of Economic Literature_ 58(4):897–996.],
     [Kraft, M. A. (2020), "Interpreting Effect Sizes of Education Interventions," _Educational Researcher_ 49(4):241–253 — 1,942 effect sizes from 747 RCTs, median 0.10 SD, 0.03 SD for samples above 2,000 students, and the benchmark that treats 0.20 SD as large.],
@@ -3331,8 +3338,8 @@
     Tutor and the worked example of evaluation horizon as a
     falsifiable design choice. Year one: null. Year two:
     significantly positive. The case is the deeper-evidence-of
-    update on v1 Case 67 and the curriculum's primary anchor for
-    the LEO on judgment under inadequate evidence where the
+    update on Case 67 and the curriculum's primary anchor for
+    the subobjective *Judgment under inadequate evidence* (4.4) where the
     inadequacy is the horizon, not the sample size.
   ],
   lens-approach: [
@@ -3343,12 +3350,12 @@
     deployment-substrate-stabilization frame — teacher fluency,
     scheduling, workflow familiarity are designable parts of
     the intervention substrate, not noise. Pair with Case 72
-    (ASSISTments follow-through), v1 Case 67 (Cognitive Tutor
+    (ASSISTments follow-through), Case 67 (Cognitive Tutor
     system), and Case 5 (Epic Sepsis horizon discipline).
   ],
   literature-items: (
     [Pane et al. (2014), _EEPA_ — Cognitive Tutor at scale],
-    [Koedinger et al. (1997), _IJAIED_ — v1 Case 67 system base],
+    [Koedinger et al. (1997), _IJAIED_ — Case 67 system base],
     [What Works Clearinghouse evidence summary],
   ),
   reflection-list: (
@@ -3366,7 +3373,7 @@
   year: "2019 – 2023",
   domains-list: ("higher education", "learning analytics", "distance learning"),
   modes-code: "TKD",
-  impact: "Across 15 undergraduate courses, 559 teachers (189 with OU Analyse access) and more than 14,000 students, teachers who accessed the dashboard in 10-40 percent of course weeks and intervened with flagged students had students who significantly outperformed their own students of the previous year; a survey of 366 teachers three years post-implementation maps what drives adoption and what blocks it",
+  impact: "Across 15 undergraduate courses, 559 teachers (189 with OU Analyse access) and more than 14,000 students, teachers who accessed the dashboard in 10-40 percent of course weeks and intervened with flagged students had students who significantly outperformed their own students of the previous year; a survey of 366 teachers three years post-implementation finds only 42 percent still active users, and maps what drives adoption and what blocks it",
   kind: "intervention",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -3394,8 +3401,8 @@
       deployed across higher-education institutions for more
       than a decade. The deployment record is largely a
       collection of pilots and single-cohort studies, with
-      Course Signals (the discontinued Purdue deployment) as
-      the structural cautionary case. OU Analyse is structurally
+      Course Signals (Case 52, the discontinued Purdue
+      deployment) as the structural cautionary case. OU Analyse is structurally
       different: deployed across an entire distance-learning
       institution, used by hundreds of tutors across multiple
       cohorts and multiple courses, and evaluated at the scale
@@ -3412,7 +3419,7 @@
       The 2023 LAK three-year-post-implementation follow-up
       extends the picture into a question the single-cohort
       pilots cannot address: what happens to teacher use of the
-      predictions across multiple cohorts and across years? The 2023 paper answers it with a survey of 366 teachers across four faculties, three years after the dashboard became business as usual, read through the Unified Theory of Acceptance and Use of Technology. Adoption rises with performance expectancy, self-efficacy, positive attitudes, low anxiety and less teaching experience, and falls where facilitating conditions are absent and the tool is felt to be effortful. The
+      predictions across multiple cohorts and across years? The 2023 paper answers it with a survey of 366 teachers across four faculties, three years after the dashboard became business as usual, read through the Unified Theory of Acceptance and Use of Technology. Adoption rises with performance expectancy, self-efficacy, positive attitudes, low anxiety and less teaching experience, and falls where facilitating conditions are absent and the tool is felt to be effortful. The usage split is the sharper finding, and it is not a success story: three years into business as usual, 42 percent of the surveyed teachers were active users, 20 percent had tried the dashboards and stopped, 18 percent had heard of them and never used them, and 19 percent had not heard of them at all. The
       delegation-with-revocation structure is operative: each
       teacher chose, in each cohort, whether to act on the
       prediction, and the choice itself is the decisive
@@ -3442,8 +3449,8 @@
       base on adoption and perception but does not close the
       teacher-selection question. Future validation ongoing on multi-institution transfer — the Open University's own project page describes OU Analyse as available to its staff, and no evaluation of the system at another institution is in the peer-reviewed literature. Pair with Case
       81 (OU consent governance), Case 84 (Cognitive Tutor
-      at-scale evaluation), and the Purdue Course Signals
-      cautionary case from v1 — the OU Analyse evaluation is
+      at-scale evaluation), and Case 52 (Purdue Course
+      Signals) — the OU Analyse evaluation is
       the methodologically more careful descendant of the
       Course Signals lineage.
     ],
@@ -3451,7 +3458,7 @@
   beats: (
     "OU Analyse: predictive-learning-analytics dashboard deployed across the Open University UK's distance-learning operation",
     "Herodotou et al. 2019 BJET: 15 courses, 559 teachers (189 with OUA access), >14,000 students; teacher engagement → measurable improvement",
-    "Herodotou et al. 2023 LAK: survey of 366 teachers three years post-implementation — a UTAUT model of what drives and what blocks adoption",
+    "Herodotou et al. 2023 LAK: survey of 366 teachers three years post-implementation — 42% active users, 20% tried and stopped, 18% aware but unused, 19% unaware; a UTAUT model of what drives and what blocks adoption",
     "Distinct from Case 81 (OU consent governance); this case is post-deployment teacher-use at multi-cohort scale",
     "Hedges binding: causal attribution bounded (same-teacher prior-presentation comparison, not RCT randomization); multi-institution transfer evidence pending",
   ),
@@ -3469,9 +3476,9 @@
   ),
   references: (
     [Herodotou, C., Hlosta, M., Boroowa, A., Rienties, B., Zdrahal, Z., & Mangafa, C. (2019), "Empowering online teachers through predictive learning analytics," _British Journal of Educational Technology_ 50(6):3064–3079, doi:10.1111/bjet.12853.],
-    [Herodotou, C., Maguire, C., Hlosta, M., & Mulholland, P. (2023), "Predictive Learning Analytics and University Teachers: Usage and perceptions three years post implementation," _LAK '23_, pp. 68–78, doi:10.1145/3576050.3576061 — survey of 366 teachers, UTAUT model of adoption.],
-    [Herodotou et al. (2019), "A large-scale implementation of predictive learning analytics in higher education: the teachers' role and perspective," _Educational Technology Research and Development_, ERIC EJ1227972 — complementary teacher-perspective paper.],
-    [Arnold, K. E., & Pistilli, M. D. (2012), "Course Signals at Purdue," _LAK '12_ — the structural precursor v1 carries as a cautionary case.],
+    [Herodotou, C., Maguire, C., Hlosta, M., & Mulholland, P. (2023), "Predictive Learning Analytics and University Teachers: Usage and perceptions three years post implementation," _LAK '23_, pp. 68–78, doi:10.1145/3576050.3576061 — survey of 366 teachers across four faculties; 42% active users, 20% tried and stopped, 18% aware but unused, 19% unaware; UTAUT model of adoption.],
+    [Herodotou, Rienties, Boroowa, Zdrahal, & Hlosta (2019), "A large-scale implementation of predictive learning analytics in higher education: the teachers' role and perspective," _Educational Technology Research and Development_ 67(5):1273–1306, doi:10.1007/s11423-019-09685-0 — the complementary teacher-perspective study (59 teachers, nine courses, 1,325 students).],
+    [Arnold, K. E., & Pistilli, M. D. (2012), "Course Signals at Purdue: Using Learning Analytics to Increase Student Success," _LAK '12_ — the structural precursor the corpus carries as a cautionary case at Case 52.],
   ),
   quote: [The delegation-with-revocation structure is operative: each teacher chose, in each cohort, whether to act on the prediction. The choice itself is the capability the dashboard supports.],
   quote-source: "Editors' synthesis of Herodotou et al. (2019, 2023).",
@@ -3480,7 +3487,9 @@
     intervention with both deployment scale and longitudinal
     teacher-use evidence at journal tier. The 2019 BJET paper
     establishes the effect on student performance at the
-    institutional deployment; the 2023 LAK survey of 366 teachers maps what drives adoption three years on. The
+    institutional deployment; the 2023 LAK survey of 366 teachers
+    finds 42 percent still active users three years on, with a
+    fifth having tried the dashboards and stopped. The
     delegation-with-revocation structure is operative and
     teachable. Hedges binding on causal attribution and on
     multi-institution transfer.
@@ -3517,7 +3526,7 @@
   year: "2024",
   domains-list: ("higher education", "algorithmic fairness", "policy analysis"),
   modes-code: "DKN",
-  impact: "Gándara, Anahideh, Ison, and Picchiarini (AERA Open, 2024) audited predictive models of college student success and showed that models which look acceptable on overall accuracy are systematically less accurate for Black and Hispanic students and overestimate success for white and Asian students — small-tier frontier evidence that overall accuracy hides the disparity, that leading bias-mitigation techniques reduce it without eliminating it under any fairness notion, and that the evaluation regime and end-user training, not the model alone, determine whether an equity-oriented prediction is fair to the groups the equity commitment is meant to protect",
+  impact: "Gándara, Anahideh, Ison, and Picchiarini (AERA Open, 2024) audited predictive models of college student success and showed that models which look acceptable on overall accuracy are systematically less accurate for Black and Hispanic students and overestimate success for white and Asian students — small-tier frontier evidence that overall accuracy hides the disparity, that the four leading bias-mitigation techniques tested are generally ineffective at eliminating it, and that the evaluation regime and end-user training, not the model alone, determine whether an equity-oriented prediction is fair to the groups the equity commitment is meant to protect",
   kind: "frontier",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3535,7 +3544,7 @@
     looks acceptable on overall accuracy is systematically less
     accurate for Black and Hispanic students — making more
     prediction errors for them — while overestimating success for
-    white and Asian students. The models run on the nationally representative Education Longitudinal Study of 2002 and predict bachelor's-degree attainment; the disparity surfaces only when the evaluation is stratified by racialized group, and the four bias-mitigation techniques the authors test reduce it without eliminating it under any of the four fairness notions. What the prediction then does to a student depends on the decision context it is read in — whether end users are trained to contextualize a flagged prediction or treat it as a verdict. The paper's contribution is the frontier-shaped finding that stratified evaluation, not aggregate accuracy, is what makes an equity-oriented prediction auditable at all. The case pairs explicitly with the v2 race-construct
+    white and Asian students. The models run on the nationally representative Education Longitudinal Study of 2002 and predict bachelor's-degree attainment; the disparity surfaces only when the evaluation is stratified by racialized group, and the four bias-mitigation techniques the authors test are, in their own words, "generally ineffective at eliminating disparities in prediction outcomes" — in-processing techniques do better than preprocessing ones, and reweighting the successful students from under-represented groups barely moves the disparity at all. What the prediction then does to a student depends on the decision context it is read in — whether end users are trained to contextualize a flagged prediction or treat it as a verdict. The paper's contribution is the frontier-shaped finding that stratified evaluation, not aggregate accuracy, is what makes an equity-oriented prediction auditable at all. The case pairs explicitly with the v2 race-construct
     trio (Cases 25 eGFR, 26 pulse oximetry, 6 Hoffman) and with
     the broader equity-construct competency C8.2: demographic
     stratification of validation and outcomes as a design
@@ -3584,8 +3593,12 @@
       student. Gándara and colleagues stress training end users on
       the potential for algorithmic bias — so a prediction is
       contextualized for the individual student rather than treated
-      as a verdict — and evaluate bias-mitigation techniques that
-      reduce, but do not eliminate, the cross-group accuracy gap.
+      as a verdict — and evaluate four bias-mitigation techniques,
+      which they find generally ineffective at eliminating the
+      disparity: in-processing methods outperform preprocessing
+      ones, and reweighting under-represented successful students
+      is close to no help — evidence that their under-representation
+      in the training data is not the principal source of the bias.
       The system's apparent fairness therefore depends not only on
       the model but on the evaluation regime and the decision
       practice the institution actually deploys.#cn()
@@ -3595,8 +3608,9 @@
       frontier-shaped finding: fairness in equity-oriented
       prediction is a construct-definition problem before it is a
       model-bias problem. The induced framework's C8.2 sub-
-      competency and the equity-construct LEOs proposed
-      find their case-grounded basis here.
+      competency and the equity-construct subobjective proposed
+      in the v2 research backbone — fairness beyond omission
+      (4.6) — find their case-grounded basis here.
       The case explicitly cross-references the v2 race-construct
       trio — eGFR (Case 25), pulse oximetry (Case 26), and
       Hoffman pain bias (Case 6) — at the construct-definition
@@ -3610,7 +3624,7 @@
     "Predictive student-success modeling is routine: models score students on predicted graduation / retention / benefit / need; scores feed downstream support and outreach decisions",
     "Gándara et al. (AERA Open, 2024): models less accurate for Black and Hispanic students; overestimate success for white and Asian students — overall accuracy masks the disparity",
     "Stratified evaluation by racialized group reveals disparity that overall-accuracy summary metrics hide",
-    "Decision context and mitigation matter: train end users to contextualize a flagged prediction; bias-mitigation reduces but does not eliminate the cross-group gap",
+    "Decision context and mitigation matter: train end users to contextualize a flagged prediction; the four bias-mitigation techniques tested are 'generally ineffective at eliminating disparities'",
     "Cross-references v2 race-construct trio (Cases 25 eGFR, 26 pulse oximetry, 6 Hoffman) — construct definition is the upstream design decision in each",
   ),
   approaches: (
@@ -3622,7 +3636,7 @@
     after: (
       [Report which construct the model maximizes, on which stratifications it was evaluated, and which intervention it is paired with — three pieces of information any deployed targeting system should publish together.],
       [Treat the fairness conversation as a construct-definition conversation first, and as a model-bias conversation second; the latter is operationally important, the former determines what the model is fair *about*.],
-      [Carry the race-construct trio (Cases 25, 26, 6) as the cross-domain pair in the curriculum: in each, the construct definition is the upstream design decision; the framework's C8.2 sub-competency and the equity-construct LEOs are anchored here.],
+      [Carry the race-construct trio (Cases 25, 26, 6) as the cross-domain pair in the curriculum: in each, the construct definition is the upstream design decision; the framework's C8.2 sub-competency and the equity-construct subobjective (4.6) are anchored here.],
     ),
   ),
   references: (
@@ -3642,7 +3656,7 @@
     Gándara student-success-prediction fairness is the stratified-evaluation case (induced 8.2; LENS D4/PT5) — Domain 4 for stratified evaluation; Domain 5 for
     the decision-context and mitigation question. Cross-reference
     Cases 25, 26, 6 — case-grounded basis for the equity-
-    construct LEOs.
+    construct subobjective, fairness beyond omission (4.6).
   ],
   literature-items: (
     [Gándara, Anahideh, Ison, & Picchiarini (2024), _AERA Open_],
@@ -3662,7 +3676,7 @@
   number: 87,
   slug: "yu-lee-kizilcec-protected-attributes-in",
   title: "Yu / Lee / Kizilcec — Protected Attributes in Learning-Analytics Models",
-  year: "2021 – 2024",
+  year: "2021 – 2022",
   domains-list: ("learning analytics", "algorithmic fairness", "ed-tech research"),
   modes-code: "DKN",
   impact: "Yu, Lee, and Kizilcec, publishing at ACM Learning @ Scale in 2021, tested whether four protected attributes (gender, underrepresented-minority status, first-generation status, high financial need) should be included as features in dropout prediction across 93,457 students at one U.S. research university, and found that including them left overall prediction performance unchanged and improved algorithmic fairness only marginally — small-tier frontier evidence that the include-or-exclude question is settled locally, by audit, rather than by principle",
@@ -3737,8 +3751,8 @@
       specific deployment.#cn()
     ],
     [
-      In pair with Case 86 (Gándara on community-college
-      targeting) and with the v2 race-construct trio (Cases 25
+      In pair with Case 86 (Gándara on student-success
+      prediction) and with the v2 race-construct trio (Cases 25
       eGFR, 26 pulse oximetry, 6 Hoffman), the case completes
       the v2 equity-construct frontier picture. Case 86 names
       the construct-definition layer; this case names the
@@ -3874,10 +3888,19 @@
     [
       The headline finding is that the choice of foundation
       model materially affects the level of differentiation in
-      responses. Different foundation models — the underlying
-      LLMs the tutoring layer wraps — produce different patterns
-      of identity-conditioned response variation. The variation
-      is not uniform across foundation models, not uniform across the nine lexical metrics, and not uniform across identity-marker types. The vendor-selection
+      responses. Three versions of the tutor were probed — one
+      each on GPT-4, GPT-4o and Claude 3.5 Sonnet — and they
+      produce different patterns of identity-conditioned
+      variation: Claude 3.5 differentiated most, GPT-4 next,
+      GPT-4o least. The variation is not uniform across the nine
+      lexical metrics, nor across identity-marker types; and the
+      comparison that carries the case is that responses to the
+      unmodified baseline prompts differ more across the three
+      foundation models than any version's responses differ
+      across identity markers. The concrete instances are
+      specific: all three versions sometimes answer an
+      English-language prompt from a self-identified Spanish or
+      Italian student entirely in Spanish or Italian. The vendor-selection
       decision — which foundation model the tutoring product
       is built on — is itself a fairness-relevant design
       choice, and the case names it as such. The structurally
@@ -3922,7 +3945,7 @@
   ),
   beats: (
     "LiveHint AI (Carnegie Learning) probed with identity-marked student queries across tone and level of detail",
-    "Choice of foundation model materially affects differentiation level; vendor-selection decision is itself fairness-relevant",
+    "Three versions probed (GPT-4, GPT-4o, Claude 3.5 Sonnet): Claude most differentiation, GPT-4o least — and baseline responses differ more across models than any model's responses differ across identity markers",
     "Collaborative audit offered as a template for auditing LLM tutors; LiveHint in R&D and released to a few U.S. districts; grounds demographic-stratification at foundation-model layer",
     "Structurally new variable beyond race-construct trio (Cases 6/25/26/48): the foundation-model layer above the deployed system",
     "Open: lab probing vs. deployed-conversation match; vendor selection as routine fairness deliverable; pair with Case 77",
@@ -3993,7 +4016,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "5.3",
   lens-anchor: "D5/PT6",
-  leo-anchor: "LEO-5, LEO-3",
+  leo-anchor: "LEO-5, LEO-4",
   summary: [
     Prinsloo and Kaliisa (_British Journal of Educational Technology_, 2022) mapped the legal and regulatory privacy landscape across African jurisdictions — a scoping review of privacy regulations in 32 countries, complemented by 15 scholarly papers — and found numerous national and regional instruments already giving clear pointers on student data privacy. The core governance
     seam the paper surfaces — and what makes the case a frontier
@@ -4122,8 +4145,9 @@
   lens-approach: [
     African data privacy is the extraterritorial-platform
     governance case (induced 5.3; LENS D5/PT6) — Domain 5 for
-    the cross-regime seam; Domain 3 for *Judgment under
-    inadequate evidence* on a frontier where the architectural
+    the cross-regime seam, on subobjective 5.6 (cross-regime /
+    platform-dependency governance); Domain 4 for *Judgment under
+    inadequate evidence* (4.4) on a frontier where the architectural
     response is recommended but not built. Pair with Case 81
     and Case 91.
   ],
@@ -4209,7 +4233,7 @@
       institutional side, the regulator, and the affected
       population each hold partial and non-overlapping
       information. The case also pairs with Cases 186 (Bartlett
-      lending fairness) and 86 (Gándara community-college equity)
+      lending fairness) and 86 (Gándara on bias in student-success prediction)
       as the applicant-perception strand of the equity-in-
       deployed-prediction thread.#cn()
     ],
@@ -4297,7 +4321,7 @@
   evidence-source: "peer-reviewed",
   induced-anchor: "5.1",
   lens-anchor: "D5/PT4",
-  leo-anchor: "LEO-5, LEO-3",
+  leo-anchor: "LEO-5, LEO-4",
   summary: [
     The LALA (Building Capacity to Use Learning Analytics to Improve Higher Education in Latin America) project, funded
     under EU grant 586120-EPP-1-2017-1-ES, ran from 2017 to 2020
@@ -4400,9 +4424,9 @@
   lens-approach: [
     LALA is the non-US participatory-governance case
     (induced 5.1; LENS D5/PT4) — Domain 5 for the cross-regime
-    participatory method; Domain 3 on *Judgment under
-    inadequate evidence* (adoption-readiness, not closed
-    outcome proof). Pair with Case 81 (OU) and Case 189
+    participatory method; Domain 4 on *Judgment under
+    inadequate evidence* (4.4) — adoption-readiness evidence,
+    not closed outcome proof. Pair with Case 81 (OU) and Case 189
     (SyRI).
   ],
   literature-items: (
@@ -4431,10 +4455,10 @@
   evidence-source: "program-report",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT4",
-  leo-anchor: "LEO-5, LEO-3",
+  leo-anchor: "LEO-5, LEO-4",
   summary: [
     Norway's Ministry of Education convened a national Expert
-    Commission on Learning Analytics in 2021 — a national-government
+    Commission on Learning Analytics in September 2021 — a national-government
     response to a capability deployment question at sector scale.
     Rather than let learning analytics diffuse unregulated across
     Norwegian education, or block it on precautionary grounds, the
@@ -4471,7 +4495,8 @@
       on Learning Analytics to investigate the pedagogical, ethical,
       legal, and privacy issues across the whole education sector
       and to establish a regulatory foundation for what
-      sector-scale deployment should look like.#cn()
+      sector-scale deployment should look like. The commission was
+      appointed in September 2021 and worked for two years.#cn()
     ],
     [
       The commission's mandate covered the full chain. Pedagogically,
@@ -4528,7 +4553,7 @@
     ],
   ),
   beats: (
-    "Norway's Ministry of Education convenes national Expert Commission on Learning Analytics in 2021 — sector-scale governance-first response",
+    "Norway's Ministry of Education and Research appoints a national Expert Commission on Learning Analytics in September 2021 — sector-scale governance-first response",
     "Mandate covers pedagogical, ethical, legal, and privacy dimensions across the whole education sector",
     "Interim report June 2022 names four central dilemmas: information need vs data protection, individual vs social learning, centralization vs autonomy, competence needs vs competence reality; final report 2023 (NOU)",
     "Honest limit: process-level evidence (artifact exists, dilemmas named); downstream sector outcomes not yet documented — governance-process success, not yet deployment-outcome success",
@@ -4549,7 +4574,7 @@
   references: (
     [Ekspertgruppen for digital læringsanalyse (2022), _Læringsanalyse — noen sentrale dilemmaer_, interim report delivered to the Minister of Education and Research, June 2022.],
     [NOU 2023: 19, _Læring, hvor ble det av deg i alt mylderet? Bruk av elev- og studentdata for å fremme læring_ (June 2023) — the commission's final report.],
-    [Wasson, Giannakos, Blikstad-Balas, Uppstad, Langford & Bøhn (2024), "Implementing Learning Analytics in Norway: Four Central Dilemmas," _Journal of Learning Analytics_ 11(2), 268–280 — written by commission members; the interim report and its four dilemmas.],
+    [Wasson, Giannakos, Blikstad-Balas, Uppstad, Langford & Bøhn (2024), "Implementing Learning Analytics in Norway: Four Central Dilemmas," _Journal of Learning Analytics_ 11(2):268–280, doi:10.18608/jla.2024.8241 — written by commission members; the interim report and its four dilemmas (data, learning, governance, competence).],
     [Hilliger et al. (2020), _Internet and Higher Education_ — the LALA companion at multi-country participatory scale (Case 91).],
   ),
   quote: [The commission did not resolve learning-analytics governance for Norway. It named the dilemmas the sector will live with and produced the artifact deployment can be governed under.],
@@ -4796,9 +4821,9 @@
     is included as a frontier scoping case at the practice-
     synthesis tier: a review of an early-stage research base
     where the absence of dense primary studies is itself the
-    finding. It pairs with the African data-privacy governance
-    case earlier in the corpus to articulate the construct-travel
-    problem in both research-base and governance terms. Future
+    finding. It pairs with Case 89, the African data-privacy governance
+    case, to articulate the construct-travel problem in both
+    research-base and governance terms. Future
     validation ongoing as the African learning-analytics
     literature matures.
   ],
@@ -4829,7 +4854,10 @@
       digital infrastructure); limited institutional resourcing
       for the data-engineering, ethics-review, and analyst
       capacity that learning analytics presupposes; and limited
-      African-scholar visibility at SoLAR and related venues. The
+      African-scholar visibility at SoLAR and related venues —
+      of the fifteen studies, one appeared at LAK and none in the
+      _Journal of Learning Analytics_, and ten are empirical
+      against five conceptual. The
       construct-travel problem is not abstract — it is the
       mismatch between what the analytic frameworks assume about
       data availability and what the institutions can actually
@@ -4865,7 +4893,7 @@
     "Prinsloo and Kaliisa (2022) scoping review of learning analytics on African continent — 15 studies total",
     "Publication overwhelmingly from South Africa (10 of 15); Nigeria 2, Tanzania/Zambia/Kenya 1 each; the most-cited SA studies are inside the fifteen, not additional to them",
     "Structural barriers: limited LMS access, limited institutional resourcing, limited African-scholar visibility at SoLAR",
-    "Construct-travel problem stated as research-base evidence; pairs with African data-privacy case for the governance side",
+    "Construct-travel problem stated as research-base evidence; pairs with Case 89 (African data privacy) for the governance side",
     "Frontier case; practice-synthesis-tier flag preserved; future validation ongoing as the literature matures",
   ),
   approaches: (
@@ -4881,10 +4909,10 @@
     ),
   ),
   references: (
-    [Prinsloo, P., & Kaliisa, R. (2022), "Learning Analytics on the African Continent: An Emerging Research Focus and Practice," _Journal of Learning Analytics_ 9(2), 218–235.],
+    [Prinsloo, P., & Kaliisa, R. (2022), "Learning Analytics on the African Continent: An Emerging Research Focus and Practice," _Journal of Learning Analytics_ 9(2):218–235, doi:10.18608/jla.2022.7539 — 15 studies (10 empirical, 5 conceptual); ten involve South Africa, two Nigeria, one each Kenya, Tanzania, Zambia.],
     [Lemmens, J. C., & Henn, M. (2016), "Learning analytics: A South African higher education perspective," in Botha & Muller (eds.), _Institutional Research in South African Higher Education_, 231–253, SUN PReSS — one of the fifteen included studies.],
     [Janse van Vuuren, E. C. (2020), "Development of a contextualised data analytics framework in South African higher education: evolvement of teacher (teaching) analytics as an indispensable component," _South African Journal of Higher Education_ 34(1) — one of the fifteen included studies.],
-    [Cross-reference: the African data-privacy governance case earlier in the corpus, for the construct-travel problem stated in governance terms.],
+    [Cross-reference: Case 89 (Prinsloo & Kaliisa's companion African data-privacy paper, _BJET_ 2022), for the construct-travel problem stated in governance terms.],
   ),
   quote: [The absence of dense primary studies is itself the finding.],
   quote-source: "Editors' synthesis of Prinsloo and Kaliisa (2022).",
@@ -4905,9 +4933,9 @@
     Constraints) for the construct-travel problem and in
     Domain 4 (Test and Evaluation) for the subobjective *Judgment under inadequate evidence* (4.4) — the deployer must
     decide on what to import and what to validate locally
-    when the validation literature is thin. Pairs with the
-    African data-privacy governance case for the
-    construct-travel problem stated in governance terms.
+    when the validation literature is thin. Pairs with
+    Case 89 (African data privacy) for the construct-travel
+    problem stated in governance terms.
   ],
   literature-items: (
     [Prinsloo & Kaliisa (2022), _Journal of Learning Analytics_ 9(2)],
