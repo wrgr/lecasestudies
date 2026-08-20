@@ -440,9 +440,10 @@
       research findings as binding criteria rather than as
       advice the program might or might not adopt. The 2020
       H revision is notable for the cadence — the eight-year
-      gap from G to H — and for the integration of human-
-      systems-integration practices reflecting the rise of
-      complex software-intensive systems.#cn()
+      gap from G to H — and for the coverage it added:
+      habitability, cybersecurity, information presentation, and
+      handheld devices, reflecting the rise of complex
+      software-intensive systems.#cn()
     ],
     [
       The honest framing the case requires is that the standard
@@ -664,7 +665,7 @@
   ),
   courses: ("LEN 1", "LEN 10", "LEN 8", "LEN 6",),
   scale: "big",
-  induced-anchor: "1.4",
+  induced-anchor: "1.1",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2",
 )
@@ -677,7 +678,7 @@
   year: "2018 – present",
   domains-list: ("defense",),
   modes-code: "TKN",
-  impact: "Threefold increase in initial ship-driving training hours planned by 2021; 10 pass-or-fail career assessments, 3 of them go/no-go; Ready-for-Sea Assessments — 3 of 18 forward-deployed ships immediately sidelined",
+  impact: "Threefold increase in initial ship-driving training hours planned by 2021; 10 pass-or-fail career assessments, 4 of them go/no-go; Ready-for-Sea Assessments — 3 of 18 forward-deployed ships immediately sidelined",
   diagram: dgm.dgm-navy-reform,
   kind: "intervention",
   summary: [
@@ -686,7 +687,7 @@
     surface-warfare competence. It restored the Surface Warfare Officers
     School from CD-ROM self-study to classroom and simulator instruction,
     stood up Mariner Skills Training Centers on both coasts, created ten
-    pass-or-fail career assessments — three of them no-go gates — and
+    pass-or-fail career assessments — four of them no-go gates — and
     adopted aviation-style debriefing. New Ready-for-Sea Assessments
     evaluated forward-deployed ships against a deliverable standard; three
     of the first eighteen were immediately sidelined. The structural change
@@ -712,8 +713,9 @@
       Beginning in 2018, the Navy restored the Surface Warfare Officers
       School from self-study to classroom-plus-simulator instruction,
       established Mariner Skills Training Centers on both coasts, set out a threefold increase in initial ship-driving training hours by 2021, and created ten pass-or-fail
-      assessments across an officer's career path — three of them no-go
-      gates that can halt advancement. The no-go gates were the structural
+      assessments across an officer's career path — four of them no-go
+      gates, at the division-officer, department-head, command and
+      major-command milestones, that can halt advancement. The no-go gates were the structural
       teeth: by tying advancement to demonstrated competence rather than
       time served, they made the qualification something the system would
       stop on, not merely something it recorded.#cn()
@@ -765,7 +767,7 @@
     [Readiness Reform Oversight Council, _One-Year Report_ (2019) — restored training, assessments, and gates.],
     [Navy and NTSB reports on the Fitzgerald and McCain collisions (2017–2019) — the training-degradation antecedent.],
     [SWOS Norfolk and San Diego Mariner Skills Training Center documentation — simulators and curriculum.],
-    [USNI News reform coverage (2020, 2022) — Ready-for-Sea Assessments and sidelined ships.],
+    [USNI News reform coverage (2020, 2022) — Ready-for-Sea Assessments (15 of 18 FDNF-Japan ships assessed ready for sea, the remaining three sidelined) and the surface community's accounting of ten milestone assessments with four go/no-go gates.],
   ),
   quote: [The Navy has not put key processes and assessments in place to evaluate comprehensively the effectiveness of its changes to ship-driving training.],
   quote-source: "GAO-20-154, Navy Readiness: Actions Needed to Evaluate the Effectiveness of Changes to Surface Warfare Officer Training, November 2019",

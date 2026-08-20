@@ -369,8 +369,10 @@
   kind: "failure",
   summary: [
     The F-35 is the most expensive weapons program in history — roughly
-    2,500 jets planned and a lifecycle cost above \$1.7 trillion, about
-    \$1.3 trillion of it in operating and support. The hard part was never
+    2,500 jets planned and, on GAO's 2023 figures, a lifecycle cost above
+    \$1.7 trillion, about \$1.3 trillion of it in operating and support;
+    GAO's 2024 review put the sustainment estimate alone at \$1.58 trillion
+    and the acquisition-plus-sustainment total above \$2 trillion. The hard part was never
     the airplane but keeping a global fleet ready, and that half has lagged
     from the start. As of March 2023 the fleet's mission-capable rate was
     about 55%, far short of goal, with more than 10,000 components in
@@ -381,7 +383,7 @@
   sections: (
     // -- Background --
     [
-      The F-35 is the most expensive weapons program in history: the Pentagon plans to buy nearly 2,500, at a total acquisition and sustainment cost above \$2 trillion — \$1.58 trillion of it not the aircraft but the decades of operating and sustaining them.#cn() The flyaway jet is the finite part;
+      The F-35 is the most expensive weapons program in history: the Pentagon plans to buy nearly 2,500, at a total acquisition and sustainment cost GAO put above \$2 trillion in 2024 — \$1.58 trillion of it not the aircraft but the decades of operating and sustaining them.#cn() The flyaway jet is the finite part;
       keeping a global fleet ready — maintainers, technical data, depots — is
       the open-ended part, and the part that lagged, because the cost that
       dominates the program is not buying the aircraft but the decades of
@@ -428,9 +430,9 @@
       rather than more patching.#cn() Those recommendations remain a work in
       progress, and readiness has since deteriorated rather than recovered:
       GAO's June 2026 review found the fleet mission-capable rate had fallen
-      from 67 percent in FY2021 to 44 percent, and the
-      full-mission-capable rate to just 25 percent —
-      the fleet able to fly all its missions only a quarter of the time — driven in part by the program accepting new aircraft that were non-mission capable because of software delays, while the Joint Program Office's
+      from 67 percent in FY2021 to 44 percent in FY2025, and the
+      full-mission-capable rate from 38 to just 25 percent —
+      the fleet able to fly all its missions only a quarter of the time. Air Force officials attributed that year's full-mission-capable decline to the program accepting new aircraft that were non-mission capable because of software delays, alongside scarce parts and corrosion inspections, while the Joint Program Office's
       remediation ("Global Support Solution Reset") was projected to cost an
       estimated \$13.7 billion more through FY2031, with readiness expected to
       worsen before it improves. The F-35 sits in this book as the live argument for
@@ -454,7 +456,8 @@
     [GAO-23-105341 (2023) — sustainment shortfall traced to insufficient technical data, training and support equipment for maintainers, depot stand-up delays, and contractor dependency.],
     [GAO, _F-35 Sustainment: DOD Faces Several Uncertainties…_, #link("https://www.gao.gov/assets/gao-22-105995.pdf")[GAO-22-105995] (2022), and the broader GAO F-35 series — the recurring, year-over-year diagnosis.],
     [GAO-23-105341 (2023) — recommendation that DOD reassess the future sustainment strategy.],
-    [GAO, _F-35 Sustainment: Costs Continue to Rise While Planned Use and Availability Have Decreased_, #link("https://www.gao.gov/assets/d24106703.pdf")[GAO-24-106703] (2024) — costs rising while readiness stays below goal.],
+    [GAO, _F-35 Sustainment: Costs Continue to Rise While Planned Use and Availability Have Decreased_, #link("https://www.gao.gov/assets/d24106703.pdf")[GAO-24-106703] (2024) — costs rising while readiness stays below goal; \$1.58 trillion sustainment estimate and the above-\$2 trillion total.],
+    [GAO, _F-35 Sustainment: Actions Needed to Ensure Updated Strategy Improves Persistent Readiness Challenges_, #link("https://www.gao.gov/products/gao-26-108113")[GAO-26-108113] (11 June 2026) — mission-capable rate 67% (FY2021) to 44% (FY2025), full-mission-capable 38% to 25%, and the Global Support Solution Reset's \$13.7 billion of additional funding through FY2031.],
   ),
   quote: [Organizational-level maintenance has been affected by a number of issues, including a lack of technical data and training.],
   quote-source: "GAO-23-105341, F-35 Aircraft, 2023 — What GAO Found",
@@ -512,14 +515,14 @@
   year: "1991 – 2014",
   domains-list: ("defense",),
   modes-code: "THK",
-  impact: "24% of U.S. KIA in Desert Storm from friendly fire (35 of 146) — a rate later reviews found consistent with past wars, not exceptional",
+  impact: "24% of U.S. battle deaths in Desert Storm from friendly fire (35 of the 146 killed in action; 35 of 148 fatalities in the OTA's tally — 24% either way) — a rate later reviews found consistent with past wars, not exceptional",
   diagram: dgm.dgm-fratricide,
   kind: "failure",
   summary: [
     Friendly fire killed an unusual share of coalition forces in the 1991
     Gulf War: 35 of 146 U.S. combat deaths (24%) and 72 of 467
     wounded (15%). (The often-cited "2% historical baseline"
-    from Shrader's 1982 study is contested — later estimates run nearer 15–20%, and Hawkins, who had endorsed the 2% figure in 1991, retracted it in print.) Post-war reviews
+    from Shrader's 1982 study is contested — Shrader himself cautioned that the evidence was inadequate for quantitative conclusions, the Office of Technology Assessment's 1993 review of World War II and Vietnam casualty surveys concluded that "15 to 20 percent may be the norm, not the exception," and a 1994 Naval Institute analysis treated the 2% norm as a myth the press had seized on.) Post-war reviews
     blamed the chaos of combat, weak situational awareness and fire-control
     discipline, and combat-identification failures — and noted the military
     lacked a shared record to even study its own pattern. Fratricide is the
@@ -533,8 +536,7 @@
     [
       Friendly fire is as old as war, but its true rate is hard to pin down.
       The most-cited estimate, from Charles Shrader's 1982 study _Amicicide_,
-      put it under 2% of battle casualties — a figure later analysts
-      challenged as far too low (15 to 20% may be the norm), and one Charles Hawkins, who had endorsed it in 1991, retracted in print three years later. The disputed baseline mattered because it
+      put it under 2% of battle casualties — a figure Shrader himself hedged, warning that the available evidence was inadequate to support quantitative conclusions, and one later analysts challenged as far too low. The Office of Technology Assessment's 1993 review of long-extant World War II and Vietnam casualty surveys concluded that estimates of 2 percent are unrealistic and that "15 to 20 percent may be the norm, not the exception"; a 1994 U.S. Naval Institute _Proceedings_ analysis by Charles Hawkins treated the 2 percent "historical norm" as a misperception the press had seized on. The disputed baseline mattered because it
       became the yardstick against which a modern war would be measured — and
       a yardstick set too low makes any later rate look like a catastrophe.#cn()
     ],
@@ -543,7 +545,9 @@
       The 1991 Gulf War made the question grim and concrete: of 146 U.S.
       service members killed in action, 35 — about 24% — died by
       friendly fire, and 72 of 467 wounded (15%) were hit by their own
-      side.#cn() An A-10 strike on U.S. LAV-25s near Khafji killed seven
+      side. (The OTA counted 615 U.S. battle casualties and 148 fatalities
+      rather than 146; the fratricide share is 24 percent on either
+      denominator.)#cn() An A-10 strike on U.S. LAV-25s near Khafji killed seven
       Marines; an A-10 attack on British Warrior vehicles killed nine —
       each an aircraft firing on friendly vehicles it had failed to identify,
       the recurring shape of the problem. Whatever the true baseline, a
@@ -555,10 +559,12 @@
       Post-war reviews converged on familiar causes: the chaos of combat,
       inadequate situational awareness, weak adherence to fire-control
       measures, and combat-identification failures.#cn() One finding cut
-      deeper — the military lacked a comprehensive, shared record of
-      fratricide incidents, so it could not study its own pattern, separate
+      deeper — broad-based data on fratricide rates did not exist. The
+      military had no comprehensive, shared record of fratricide incidents,
+      so it could not study its own pattern, separate
       training failures from doctrine or equipment, or tell whether a fix was
-      working. Without a common database, every incident was investigated in
+      working; the Army began requiring Fratricide Incident Reports at its
+      training centers only after the Gulf War. Without a common database, every incident was investigated in
       isolation and the aggregate signal that might have driven reform never
       formed. The capability to *learn* was itself missing, a second-order
       gap beneath the first.#cn()
@@ -593,7 +599,7 @@
     ],
   ),
   beats: (
-    "Shrader's contested under-2% baseline became the yardstick that made any later rate look catastrophic",
+    "Shrader's contested under-2% baseline — hedged by Shrader, put at 15-20% by OTA in 1993 — became the yardstick that made any later rate look catastrophic",
     "A quarter of U.S. KIA died to friendly fire; A-10s struck Marines and British Warriors",
     "Reviews cited combat chaos, weak awareness, fire-control lapses, and the absence of a shared incident database",
     "Fratricide is integration across many systems; no single office owns what keeps the rate down",
@@ -604,12 +610,12 @@
     [#link("https://www.usni.org/magazines/proceedings/1994/june/friendly-fire-facts-myths-and-misperceptions")["Friendly Fire: Facts, Myths and Misperceptions," _U.S. Naval Institute Proceedings_ (June 1994)] — Desert Storm: 35 of 146 KIA (24%) and 72 of 467 wounded (15%) by friendly fire; critique of the 2% "historical norm."],
     [Khafji and Warrior fratricide incidents (Feb. 1991) — see USNI _Proceedings_ (1994) and #link("https://time.com/archive/6718429/gulf-war-they-didnt-have-to-die/")[Time, "They Didn't Have to Die"]. _(Per-incident casualty figures vary across sources; see AUDIT.)_],
     [U.S. GAO, _Operation Desert Storm_ fratricide investigations — Apache incident (OSI-93-4) and Army fratricide investigation (OSI-95-10) — causes and the Army's reviews.],
-    [Post-war combat-identification reviews — leading causes (situational awareness, fire-control measures, combat ID) and the absence of a comprehensive incident database. _(Synthesized from secondary analyses; see AUDIT.)_],
+    [U.S. Congress, Office of Technology Assessment, _Who Goes There: Friend or Foe?_, OTA-ISC-537 (June 1993) — the Desert Storm counts (615 battle casualties, 148 fatalities, 35 by friendly fire), the "15 to 20 percent may be the norm" reassessment, the absence of broad-based fratricide data, and the NTC observer distribution of causes (identification failure, command and control, planning, communication and navigation).],
     [Later-conflict recurrences (2001 coordinate-reset strike; 2014 B-1 infrared-strobe strike) and S. Snook, _Friendly Fire_ (Princeton Univ. Press, 2000) on the 1994 Black Hawk shootdown — the systems-integration archetype.],
     ["IFF Update: Stalled Again," _U.S. Naval Institute Proceedings_ (June 1994) — the combat-identification and identification-friend-or-foe programs pursued after Desert Storm, and how slowly they matured.],
   ),
-  quote: [The lack of a comprehensive and accessible automated database prevented thorough examination of the problem.],
-  quote-source: "Paraphrasing post–Desert Storm fratricide reviews, c. 1993",
+  quote: [Broad-based data on fratricide rates are not available.],
+  quote-source: "U.S. Congress, Office of Technology Assessment, Who Goes There: Friend or Foe? OTA-ISC-537, June 1993",
   le-insight: [
     Fratricide is a multi-decade capability problem that resists single-
     intervention solutions. Each of the contributing causes — situational
@@ -650,7 +656,7 @@
   ),
   courses: ("LEN 5", "LEN 2", "LEN 8"),
   scale: "big",
-  induced-anchor: "1.3",
+  induced-anchor: "3.3",
   lens-anchor: "D1/PT1",
   leo-anchor: "LEO-1",
   evidence-source: "investigation",
@@ -716,7 +722,7 @@
     [
       The Holloway Special Operations Review Group named "the ad hoc nature of the organization and planning" as one of two fundamental concerns: each service contributed its
       own units, equipment, command relationships, and communications;
-      the aircrews had not trained together as a unit; the flight crews came from a minesweeping squadron picked as the most expedient solution, not from a unit built for the mission. There was no standing organization to
+      the aircrews had not trained together as a unit; the helicopters were RH-53Ds drawn from the Navy's mine-countermeasures force, their first crews Navy minesweeping pilots, later replaced by Marine crews who flew the mission in an airframe and a profile — long-range night penetration — neither unit had been built for. There was no standing organization to
       own the mission end to end — no single authority responsible for the
       force's training, equipment fit, and command architecture as a whole,
       so each gap was someone's problem in part and no one's in full.#cn()
@@ -748,12 +754,12 @@
   beats: (
     "No standing joint command existed; the rescue force was drawn ad hoc from four services",
     "Three RH-53s failed at Desert One; on withdrawal a helicopter struck a C-130 killing eight",
-    "Holloway named ad hoc organization and planning, crews outside their trained mission areas, and an expedient squadron pick",
+    "Holloway named ad hoc organization and planning and crews operating outside their trained mission areas — mine-countermeasures helicopters, Navy then Marine crews, no unit built for long-range night penetration",
     "Each service was competent in its lane; cross-service integration as a deliverable did not exist",
     "Reform built JSOC, Goldwater Nichols in 1986, and USSOCOM in 1987 as standing joint capability",
   ),
   references: (
-    [Holloway Special Operations Review Group, _Rescue Mission Report_ (1980) — the ad-hoc assembly and equipment choices (paraphrased).],
+    [Holloway Special Operations Review Group, _Rescue Mission Report_ (1980) — 23 issues affecting the mission, of which command and control and the ad hoc nature of the organization and planning are the two the Review Group treated as fundamental; the helicopter and aircrew selection is among them.],
     [Holloway Commission (1980) — the Desert One sequence and the helicopter–C-130 collision.],
     [Goldwater-Nichols Department of Defense Reorganization Act of 1986, Pub. L. 99-433.],
     [Nunn-Cohen Amendment (1986), establishing U.S. Special Operations Command (1987).],
@@ -1086,7 +1092,7 @@
     [Fogarty report (1988) — "human error under extreme stress," confirmation bias, and "unconscious distortion of data" (quoted); shared-error finding across CIC operators.],
     [J. Barry & R. Charles, "Sea of Lies," _Newsweek_ (July 13, 1992) — contemporaneous reinvestigation of the operational record, including the disputed account of Vincennes' position relative to Iranian territorial waters.],
     [LTC A. Tingle, USA, #link("https://www.usni.org/magazines/proceedings/2018/july/human-machine-team-failed-vincennes")["The Human-Machine Team Failed Vincennes"], _U.S. Naval Institute Proceedings_ 144/7 (July 2018) — the human-AI-teaming reframing and the standing case-study role.],
-    [M. L. Cummings, "Human Supervisory Control of Weapon Systems" (MIT) — interface design and automation under time pressure as the engineering frame for the case.],
+    [M. L. Cummings, "Automation Bias in Intelligent Time Critical Decision Support Systems," AIAA 1st Intelligent Systems Technical Conference (2004), doi:10.2514/6.2004-6313 — interface design and automation under time pressure as the engineering frame for the case.],
     [G. Klein, _Sources of Power_ (1998); M. Endsley, "Toward a Theory of Situation Awareness" (1995) — the naturalistic-decision-making and situation-awareness literatures that treat Vincennes as the canonical worked example.],
   ),
   quote: [In combat, technology should create time for the decision maker, not simply provide information.],
@@ -1101,13 +1107,13 @@
   ],
   lens-approach: [
     Vincennes is the foundational mode-and-state-transparency case
-    under combat stress (induced 3.3; LENS D2/PT6 human-AI teaming).
+    under combat stress (induced 3.3; LENS D3/PT6 human-AI teaming).
     LENS uses it in Domain 2 (Iterative Development; LEO-2) for
     interface-as-deliverable: a CIC display tested against the worst
     case it would actually meet — confirmation bias during a
     simultaneous surface engagement — not against the calm of
-    acceptance testing. LENS uses it in Domain 3 (Human-System Collaboration
-    Adaptation; LEO-3) for the human-AI teaming problem itself: a
+    acceptance testing. LENS uses it in Domain 3 (Human-System
+    Collaboration; LEO-3) for the human-AI teaming problem itself: a
     decision aid that displays truth without defending it predictably
     fails wherever automation is fast and the human is the last check.
     The case sits at the heart of the program's argument that
@@ -1306,7 +1312,7 @@
   year: "2008 – 2012",
   domains-list: ("aviation", "defense", "human factors"),
   modes-code: "HKN",
-  impact: "Between 2008 and 2012 USAF F-22 Raptor pilots reported a cluster of physiological events consistent with hypoxia; one fatal accident (Capt. Jeffrey Haney, Nov 2010) was attributed in part to operator response to a bleed-air shutoff; the fleet was stood down in 2011, and the USAF Scientific Advisory Board had not determined a root cause and found OBOGS performance exceeded pilot physiological needs; the Air Force later traced the events to a valve inflating the pilots' pressure vests and restricting breathing",
+  impact: "Between 2008 and 2012 USAF F-22 Raptor pilots reported a cluster of physiological events consistent with hypoxia; one fatal accident (Capt. Jeffrey Haney, Nov 2010) was attributed by the Air Force accident board in part to operator response to a bleed-air shutoff, a conclusion the DoD Inspector General later found unsupported by the facts in the board's own report; the fleet was stood down in 2011, and the USAF Scientific Advisory Board had not determined a root cause and found OBOGS performance exceeded pilot physiological needs; the Air Force later traced the events to a valve inflating the pilots' pressure vests and restricting breathing",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -1422,7 +1428,7 @@
   ),
   references: (
     [USAF Scientific Advisory Board, _Report on Aircraft Oxygen Generation_, SAB-TR-11-04 (1 February 2012) — the 2011 Quicklook Study on the F-22 hypoxia-like incidents.],
-    [NASA Engineering and Safety Center (2012), report contributing to the F-22 hypoxia review.],
+    [NASA Engineering and Safety Center, F-22 Life Support System Independent Analysis Team (2012) — NESC support to the Air Force life-support investigation.],
     [USAF Accident Investigation Board (2011), Capt. Jeffrey Haney F-22 accident report (Nov 2010).],
     [U.S. House Armed Services Subcommittee on Tactical Air and Land Forces, _F-22 Pilot Physiological Issues_, H.A.S.C. No. 112-154 (13 September 2012) — congressional record.],
   ),
@@ -1617,7 +1623,7 @@
   year: "1991 – present",
   domains-list: ("defense",),
   modes-code: "THN",
-  impact: "62 killed across 16 hull-loss accidents since 1991; serious-mishap rate above comparable fleets (GAO-26-107285, 2025); some fixes stretch to the 2030s",
+  impact: "20 service members killed in four crashes since 2022 alone, against a compiled record of 62 deaths across 16 hull losses since 1991; serious-mishap rate above comparable fleets (GAO-26-107285, 2025); some fixes stretch to the 2030s",
   diagram: dgm.dgm-osprey,
   kind: "failure",
   summary: [
@@ -1666,7 +1672,7 @@
       years to adequately assess and address mounting safety risks, even as
       service members died.#cn() Serious-mishap rates generally exceeded
       those of comparable Navy and Air Force fixed- and rotary-wing fleets
-      from FY2015 to FY2024 and spiked in 2023–2024; the median age of the program's 28 unresolved system safety risk assessments was about nine years, and full gearbox fixes are not expected until 2034.#cn() Risks carried six to fourteen years are the timescale of normalization made literal: the deviation persisted long enough to become the airframe's accepted background condition rather than an open defect demanding action.
+      from FY2015 to FY2024 and spiked in 2023–2024, across a stretch in which four crashes killed twenty service members; the median age of the program's 28 unresolved system safety risk assessments was about nine years, with 17 of the 28 carried between six and fourteen years, and full proprotor-gearbox fixes are not expected until 2034. The NAVAIR review found that material risks the program office had itself identified were not sufficiently mitigated or resolved in time, "which resulted in catastrophic outcomes in 5 of the 12 mishaps."#cn() Risks carried six to fourteen years are the timescale of normalization made literal: the deviation persisted long enough to become the airframe's accepted background condition rather than an open defect demanding action.
     ],
     // -- The Capability Gap --
     [
@@ -1704,15 +1710,15 @@
     "Groundings and redesigns continue while full gearbox fixes stretch toward 2034",
   ),
   references: (
-    [#link("https://en.wikipedia.org/wiki/Accidents_and_incidents_involving_the_V-22_Osprey")[Compiled V-22 accident record] — 16 hull losses and 62 fatalities since 1991, including the 2000 Marana test crash (19 Marines).],
+    [#link("https://en.wikipedia.org/wiki/Accidents_and_incidents_involving_the_V-22_Osprey")[Compiled V-22 accident record] — 16 hull losses and 62 fatalities since 1991, including the 2000 Marana test crash (19 Marines). _(A compiled tally, not an official count; the four-crash, twenty-death figure for 2022–2025 is GAO's.)_],
     [U.S. Air Force Accident Investigation Board findings, via #link("https://news.usni.org/2024/08/02/investigation-into-2023-u-s-air-force-cv-22b-osprey-crash-off-japan")[USNI News] (Aug. 2024) — the 29 Nov. 2023 Yakushima CV-22B crash: transmission-gear cracks (X-53 inclusions) and continued flight despite warnings.],
     [U.S. GAO, _Osprey Aircraft: Additional Oversight and Information Sharing Would Improve Safety Efforts_, #link("https://www.gao.gov/products/gao-26-107285")[GAO-26-107285] (Dec. 2025) — the joint program office's failure to assess and address risks.],
     [GAO-26-107285 (2025) — serious-mishap rates exceeding comparable Navy/Air Force fleets (FY2015–FY2024); 28 unresolved system safety risks with a median age of about nine years, over half carried six to fourteen years.],
-    [NAVAIR independent review of the V-22 (Dec. 2025) — materiel and cross-service-coordination factors and unresolved catastrophic parts issues.],
+    [NAVAIR independent review of the V-22 (Dec. 2025), reported in Defense One, "New GAO, Navy reports warn of serious V-22 Osprey safety risks" (Dec. 2025) — material and cross-service-coordination factors, unresolved catastrophic parts issues, the 5-of-12 mishap finding, and proprotor-gearbox fixes running to 2034.],
     [#link("https://news.usni.org/2025/12/12/navy-and-gao-reports-v-22-osprey-program")[USNI News, V-22 program coverage] (2024–2025).],
   ),
-  quote: [Materiel failure and human-error factors were the most frequently cited causal factors in serious Osprey accidents.],
-  quote-source: "Paraphrasing the NAVAIR Independent Review of the V-22, 2025",
+  quote: [Material risks were identified by the Program Office, but were not sufficiently mitigated or resolved in a timely manner, which resulted in catastrophic outcomes in 5 of the 12 mishaps.],
+  quote-source: "NAVAIR independent review of the V-22, December 2025, as quoted in Defense One",
   le-insight: [
     V-22 demonstrates the steady-state version of normalization of
     deviance: a platform whose shortfall has been documented, reviewed,
@@ -1903,7 +1909,7 @@
   ),
   courses: ("LEN 7", "LEN 8", "LEN 3",),
   scale: "big",
-  induced-anchor: "5.3",
+  induced-anchor: "1.3",
   lens-anchor: "D5/PT1",
   leo-anchor: "LEO-5",
 )
