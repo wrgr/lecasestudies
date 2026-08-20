@@ -33,6 +33,28 @@
 // SHARED PRIMITIVES used inside cetz canvases
 // ============================================================
 
+// Outcome markers. `kind` is "good" or "adverse"; anything else is a no-op, so
+// a figure cannot silently acquire a valence it was not given. The star is drawn
+// larger than the triangle at the same nominal r because a five-point star of
+// equal radius carries far less ink — this equalises optical weight. Inner
+// radius 0.48 keeps the points from thinning at the small end of figure scale.
+#let outcome-mark(kind, x, y, r: 0.17) = {
+  import cetz.draw: *
+  if kind == "good" {
+    let rr = r * 1.28
+    let pts = ()
+    for i in range(10) {
+      let a = -90deg + i * 36deg
+      let k = if calc.rem(i, 2) == 0 { rr } else { rr * 0.48 }
+      pts.push((x + k * calc.cos(a), y + k * calc.sin(a)))
+    }
+    line(..pts, close: true, fill: dgm-good, stroke: none)
+  } else if kind == "adverse" {
+    line((x - r, y - r * 0.85), (x + r, y - r * 0.85), (x, y + r * 1.05),
+         close: true, fill: dgm-adverse, stroke: none)
+  }
+}
+
 #let gold-dot(x, y, r: 0.14) = {
   import cetz.draw: *
   circle((x, y), radius: r, fill: dgm-accent, stroke: none)
@@ -70,7 +92,8 @@
       content((x, 2.0), text(font: sans, size: 6.5pt, fill: dgm-ink, lab), anchor: "south")
       content((x, 0.4), text(font: serif, size: 7pt, fill: dgm-ink, "↓"), anchor: "north")
     }
-    content((4.8, -0.4), text(font: sans, size: 7pt, fill: dgm-accent-soft, tracking: 1.5pt, upper("346 lives")), anchor: "north")
+    outcome-mark("adverse", 3.58, -0.62)
+    content((4.8, -0.4), text(font: sans, size: 7pt, fill: dgm-adverse, tracking: 1.5pt, upper("346 lives")), anchor: "north")
   })
 )
 
@@ -160,12 +183,13 @@
     line((0.5, 0.6), (9, 0.6), stroke: 0.6pt + dgm-rule)
     line((0.5, 0.6), (0.5, 3.4), stroke: 0.6pt + dgm-rule)
     let drop = ((0.7, 3.0), (1.5, 2.85), (2.4, 2.3), (3.5, 1.6), (5, 1.0), (7, 0.78), (9, 0.7))
-    line(..drop, stroke: 1.2pt + dgm-accent)
+    line(..drop, stroke: 1.2pt + dgm-good)
     line((2.4, 0.6), (2.4, 3.3), stroke: (paint: dgm-ink, thickness: 0.5pt, dash: "dashed"))
     content((2.4, 3.4), text(font: sans, size: 6pt, fill: dgm-ink, "checklist + nurse authority"), anchor: "south")
     content((9, 0.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("18 months")), anchor: "north-east")
     content((0.3, 3.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("rate")), anchor: "south-east")
-    content((6.5, 1.7), text(font: serif, size: 9pt, style: "italic", fill: dgm-accent-soft, "≈ zero"))
+    outcome-mark("good", 5.55, 1.7)
+    content((6.5, 1.7), text(font: serif, size: 9pt, style: "italic", fill: dgm-good, "≈ zero"))
   })
 )
 

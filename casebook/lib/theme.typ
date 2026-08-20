@@ -224,6 +224,23 @@
 #let dgm-accent-soft = if grayscale { _dgm-accent-soft-g } else { _dgm-accent-soft-c }
 #let dgm-onaccent    = if grayscale { _dgm-onaccent-g }    else { _dgm-onaccent-c }
 
+// ---- Outcome valence -----------------------------------------------------
+// Where a figure marks an OUTCOME, valence is carried twice: by hue in the
+// colour edition and by glyph everywhere. Star = favourable, triangle = adverse
+// (the triangle is the conventional hazard silhouette; the star is taught by the
+// key in the front matter). Only figures that mark an actual outcome use these.
+// A mechanism ("andon"), a subject ("Therac-25") or a destination ("practice")
+// has no valence and keeps the neutral accent.
+//
+// In grayscale BOTH resolve to the accent gray. Two dark grays are not reliably
+// told apart on press, so the glyph — not the tone — carries valence there.
+// The hue pair is dichromacy-safe: simulated linear-RGB separation is 0.41
+// under deuteranopia, 0.34 protanopia, 0.46 tritanopia.
+#let _dgm-good-c    = rgb("#1E6F5C")   // deep teal-green
+#let _dgm-adverse-c = rgb("#B8541F")   // the established burnt orange
+#let dgm-good    = if grayscale { _dgm-accent-g } else { _dgm-good-c }
+#let dgm-adverse = if grayscale { _dgm-accent-g } else { _dgm-adverse-c }
+
 // ---- Disclosure / evidence-tier flag tints ----
 //
 // Same defect the diagram palette fixes: these two blocks hard-coded their

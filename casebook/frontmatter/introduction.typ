@@ -759,6 +759,26 @@
   inset: (left: 10pt, top: 4pt, bottom: 4pt),
   stroke: (left: 1.5pt + gold),
   text(font: sans, size: 9pt, fill: navy)[
+    *Reading the figures.* Each figure marks one focal value — the quantity
+    the case turns on. Where that value is an outcome, its direction is
+    marked twice, so it survives both the colour and the black-and-white
+    printing: a *star* for a favourable outcome, a *triangle* for an adverse
+    one, in green and in rust respectively where colour is available. Many
+    figures mark something that is neither — a mechanism, a subject, a
+    destination — and those carry the focal value in a single neutral accent
+    with no glyph. The absence of a star or a triangle is therefore itself
+    information: the figure is pointing at something, but not claiming it
+    went well or badly.
+  ],
+)
+
+#v(6pt)
+
+#block(
+  width: 100%,
+  inset: (left: 10pt, top: 4pt, bottom: 4pt),
+  stroke: (left: 1.5pt + gold),
+  text(font: sans, size: 9pt, fill: navy)[
     *How these cases were chosen.* The collection is purposive, not
     systematic. The cases are exemplars — drawn from the documented
     public record and from the editors' own practice — selected because
