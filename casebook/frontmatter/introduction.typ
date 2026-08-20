@@ -269,10 +269,11 @@
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
   The same pattern shows up in every domain where the cost of failure
-  has been high enough to fund the discipline. After Three Mile Island
-  the U.S. nuclear industry stood up the Institute of Nuclear Power
-  Operations within nine months — before the Kemeny Commission's report
-  was even finalized — because every utility had recognized that an
+  has been high enough to fund the discipline. The Kemeny Commission
+  reported in October 1979 that the industry should set and police its
+  own standards of excellence; by December — eight months after Three
+  Mile Island — the U.S. nuclear industry had stood up the Institute of
+  Nuclear Power Operations, because every utility had recognized that an
   accident at any single plant would affect every operator's license to
   operate #cite-num(11). INPO and the National Academy for Nuclear
   Training, founded in 1985, have presided over more than four decades
