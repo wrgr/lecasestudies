@@ -1986,7 +1986,7 @@
   year: "2022",
   domains-list: ("higher education", "regulatory oversight", "online education"),
   modes-code: "DKN",
-  impact: "GAO found at least 550 colleges contracted with OPMs to support at least 2,900 academic programs as of July 2021; in a survey GAO cites, 16 of 25 colleges paid the OPM between 41% and 60% of program tuition revenue and four paid 61% or more; instructions to auditors and colleges lacked key details on OPM arrangements, leaving a risk that ED would not have the information it needs to detect incentive-compensation violations",
+  impact: "GAO found at least 550 colleges contracted with OPMs to support at least 2,900 academic programs as of July 2021; in a survey GAO cites, of the 25 respondent colleges paying their OPM a share of tuition revenue, 16 paid between 41% and 60% and four paid 61% or more; instructions to auditors and colleges lacked key details on OPM arrangements, leaving a risk that ED would not have the information it needs to detect incentive-compensation violations",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -1999,7 +1999,7 @@
     (GAO-22-104463) names a structural oversight gap in the
     federal regime governing online program managers. As of
     July 2021, at least 550 colleges contracted with OPMs to
-    support at least 2,900 academic programs; in survey data GAO cites, 16 of 25 colleges paid the OPM between 41 and 60 percent of program tuition revenue and four paid 61 percent or more. The 1992 Higher Education Act amendments
+    support at least 2,900 academic programs; in survey data GAO cites, of the 25 respondent colleges paying their OPM with a share of tuition revenue, 16 paid between 41 and 60 percent and four paid 61 percent or more. The 1992 Higher Education Act amendments
     prohibited incentive compensation for student recruiters
     as a fraud-prevention measure; the Department of Education's
     2011 "bundled-services" guidance exempted OPMs from the ban
@@ -2023,15 +2023,19 @@
       guidance the Department of Education issued exempted
       online program managers from the ban when student
       recruiting was bundled with other services such as program
-      design, platform delivery, and student support — a
-      construct that allowed the revenue-share contracting model
-      to grow rapidly across the next decade.#cn()
+      design, platform delivery, and student support, and further
+      safeguards were met. The exemption it created runs to the
+      payment the college makes to the vendor: the statutory ban
+      still prohibits the OPM's own recruiters from being paid on
+      their success in enrolling students. That is the boundary the
+      construct allowed the revenue-share contracting model to grow
+      across the next decade without anyone auditing.#cn()
     ],
     [
       The GAO's audit documents the scale the regime grew to.
       By July 2021, at least 550 colleges had contracted with
       OPMs to support at least 2,900 academic programs.
-      In the Eduventures survey GAO cites, 16 of 25 colleges transferred between 41 and 60 percent of program tuition revenue to the OPM and four transferred 61 percent or more. The OPM operated under the
+      In the Eduventures Research survey of 145 college leaders that GAO cites, 49 respondents' colleges contracted with an OPM, 32 of those contracted for student recruiting, and 25 of the 32 paid the OPM with a share of tuition revenue; of those 25, 16 paid between 41 and 60 percent of tuition and four paid 61 percent or more. The OPM operated under the
       university brand — recruiting, marketing, and program
       operations conducted by OPM employees identifying as the
       university — while receiving compensation tied directly to
@@ -2042,7 +2046,7 @@
     ],
     [
       The oversight gap the GAO documents is operational. Auditor instructions did not reference OPMs or the 2011 guidance, so compliance audits might not assess relevant arrangements; instructions to colleges lacked the detail that would have made them report those arrangements, and GAO found a risk that the Department would not have the information it needs to detect violations.
-      The audit's central finding is not that the OPM regime was
+      Education's own data made the gap measurable: 16 completed compliance audits and five completed program reviews had reported incentive-compensation findings since 2012, and not one involved a college's arrangement with an OPM. The audit's central finding is not that the OPM regime was
       designed to fail; it is that the oversight architecture
       required to police the exemption's boundaries was never
       built, and the contracting structure that the exemption
@@ -2086,7 +2090,7 @@
   ),
   beats: (
     "1992 HEA banned incentive compensation for recruiters; 2011 ED guidance exempted OPMs under bundled-services construct",
-    "GAO 2022: at least 550 colleges, 2,900 programs, surveyed revenue shares of 41–60% of program tuition for 16 of 25 colleges, 61%+ for four",
+    "GAO 2022: at least 550 colleges, 2,900 programs; of 25 surveyed colleges paying a tuition-revenue share, 16 paid 41–60% and four paid 61%+",
     "Oversight gap: auditor and college instructions lacked key OPM detail, leaving a risk ED would not have the information needed to detect violations",
     "2U July 2024 Chapter 11 closed the commercial boundary; ED opened a review but reaffirmed the 2011 guidance (Jan. 2025 DCL), federal boundary unclosed; successor OPMs and underlying delegation problem persist",
     "Investigation-grade delegation-with-revocation case at population scale; pair with Case 58 (USC × 2U Luna) and Case 55 (Engler)",
@@ -2109,7 +2113,7 @@
     [Higher Education Amendments of 1992, Pub. L. No. 102-325, incentive-compensation prohibition, 20 U.S.C. § 1094(a)(20) — the statutory basis the 2011 guidance interpreted.],
     [2U Inc. (2024), Chapter 11 bankruptcy filing (July 25, 2024); U.S. Department of Education, "Dear Colleague" Letter (Jan. 14, 2025) reaffirming the 2011 bundled-services guidance (GEN-11-05) — the commercial-boundary closure alongside the federal guidance's continued validity.],
   ),
-  quote: [Without clearer instructions to auditors and colleges about the information on OPM arrangements that must be assessed during compliance audits and agency reviews, there is a risk that Education will not have the information it needs to detect incentive compensation violations.],
+  quote: [Without clearer instructions to auditors and colleges about the information on OPM arrangements that must be assessed during compliance audits and program reviews, there is a risk that Education will not have the information it needs to detect incentive compensation violations.],
   quote-source: "U.S. Government Accountability Office, GAO-22-104463 (2022).",
   le-insight: [
     GAO-22-104463 is the investigation-grade delegation-with-
