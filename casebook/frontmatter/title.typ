@@ -129,8 +129,8 @@
       treats AI as the dual entity the curriculum names it: a
       creative partner that accelerated drafting, cross-referencing,
       layout, and citation lookup, and an epistemic risk that had
-      to be hand-checked against the record. Every case has been
-      reviewed by the editors and hand-checked against a seven-column
+      to be checked against the record. Every case has been
+      reviewed by the editors and checked against a seven-column
       rubric: that the sources cited exist and are findable, that the
       quoted attributions are fairly represented, and that the case is
       an accurate account of the incident and the investigation it
