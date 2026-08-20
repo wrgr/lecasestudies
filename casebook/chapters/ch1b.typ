@@ -337,13 +337,11 @@
   year: "ongoing",
   domains-list: ("healthcare",),
   modes-code: "KGN",
-  impact: "Average time from research finding to clinical practice: 17 years; only ~14% of research findings ever reach practice",
+  impact: "The canonical implementation-gap pair — about seventeen years from evidence to practice, about 14 percent of original research arriving — both estimates: Balas and Boren timed nine mostly primary-care services to 50 percent adoption and derived the 14 percent from a chain of assumed attrition points",
   diagram: dgm.dgm-17year,
   kind: "frontier",
   summary: [
-    Implementation science has a canonical finding: it takes an average of
-    about seventeen years for research evidence to reach clinical practice,
-    and only roughly 14% of research findings ever make it at all.
+    Implementation science has a canonical pair of figures: about seventeen years for research evidence to reach clinical practice, and only about 14% of original research arriving at all. Both come from Balas and Boren (2000), and both are estimates rather than measurements — the seventeen years is a lag across nine mostly primary-care services, and the 14% is derived from assumed attrition at each stage of the publication-to-guideline pipeline.
     This is not a single incident but a systemic condition — effective
     interventions exist; the system to adopt, sustain, adapt, and measure
     them at scale does not. Frameworks like the Active Implementation
@@ -367,10 +365,7 @@
     ],
     // -- What Is Emerging --
     [
-      The canonical figures are stark: it takes an average of about seventeen
-      years for research evidence to be integrated into clinical practice,
-      and only roughly 14% of research findings ever make it at
-      all.#cn() Read together, the two figures describe a pipeline that is
+      The canonical figures are stark, and their provenance matters. Balas and Boren identified nine mostly primary-care services supported by randomized trials and timed each from trial publication to 50 percent adoption: 15.6 years, which becomes the familiar seventeen once publication lag is added. The 14 percent is not a count of anything; it is what remains after applying assumed attrition rates at each stage from submission through systematic review to guideline. Later scrutiny found the utilization baselines wrong in places — the analysis assumed 20 percent of diabetic patients received foot exams in 1998 when the rate was nearer 60, and dated 50 percent mammography adoption to 1993 when it had been reached by 1990 — and the denominators include patients without regular checkups, so the lag partly measures patient behaviour rather than clinician uptake.#cn() Read together, the two figures describe a pipeline that is
       both slow and leaky: most of what is learned never reaches the bedside
       at all, and the fraction that does arrives long after the patients who
       first needed it, so the delay is compounded by sheer attrition.
@@ -419,7 +414,7 @@
     "Building, funding, and owning the adoption-and-measurement pathway is the general unsolved problem",
   ),
   references: (
-    [E. A. Balas & S. A. Boren (2000), _Yearbook of Medical Informatics_ — the ~17-year / ~14% translation figures.],
+    [E. A. Balas & S. A. Boren (2000), "Managing clinical knowledge for health care improvement," _Yearbook of Medical Informatics_ — the nine-service adoption analysis behind the seventeen-year figure, and the pipeline-attrition derivation behind the 14 percent.],
     [Z. S. Morris, S. Wooding & J. Grant, "The answer is 17 years, what is the question: understanding time lags in translational research," _J. Royal Society of Medicine_ 104(12):510–520 (2011) (quoted).],
     [D. Fixsen et al., _Implementation Research: A Synthesis of the Literature_ (2005) — the Active Implementation Frameworks.],
     [G. Aarons et al. (2011), the EPIS framework; L. Damschroder et al. (2009), CFIR.],

@@ -615,7 +615,7 @@
 )
 
 #let dgm-17year = diagram-frame(
-  caption: "Research to practice — the canonical implementation gap",
+  caption: "Research to practice — Balas and Boren's canonical estimates, not measurements",
   cetz.canvas({
     import cetz.draw: *
     line((0.5, 1.6), (9, 1.6), stroke: 0.6pt + dgm-rule)
@@ -624,7 +624,7 @@
     circle((8.5, 1.6), radius: 0.22, fill: dgm-accent, stroke: none)
     content((8.5, 2.0), text(font: sans, size: 6.5pt, fill: dgm-accent, "practice"), anchor: "south")
     content((4.7, 2.6), text(font: serif, size: 16pt, fill: dgm-ink, "17 years"))
-    content((4.7, 0.9), text(font: sans, size: 6.5pt, fill: dgm-dim, tracking: 1pt, upper("only 14% ever arrive")), anchor: "north")
+    content((4.7, 0.9), text(font: sans, size: 6.5pt, fill: dgm-dim, tracking: 1pt, upper("≈14% estimated to arrive")), anchor: "north")
   })
 )
 
