@@ -144,11 +144,11 @@
     ),
   ),
   references: (
-    [Kattel, R., & Mergel, I. (2019), "Estonia's Digital Transformation: Mission Mystique and the Hiding Hand," in Compton, M., & 't Hart, P. (eds.), _Great Policy Successes_ (Oxford University Press, 2019) — the analytical chapter; an edited-volume chapter, not a peer-reviewed journal article.],
-    [Kattel, R., & Mergel, I. (2018), "Estonia's digital transformation: Mission mystique and the hiding hand," UCL Institute for Innovation and Public Purpose Working Paper 2018-09 — the open-access version carrying the no-legacy-paradox sentence verbatim and the thirteen-year no-legacy design principle.],
     [Jackson, Dreyling, & Pappel (2021), "A Historical Analysis on Interoperability in Estonian Data Exchange Architecture," _ICEGOV 2021_ proceedings, doi:10.1145/3494193.3494209.],
-    [X-Road Global / Nordic Institute for Interoperability Solutions (NIIS) — program documentation and deployment-partner case studies.],
     [Republic of Estonia, e-Estonia briefing materials and Year-in-Review documentation (2024) — program-report sourcing, including the e-Tax figures (around 99% of declarations filed electronically; three minutes to file) and the December 2024 100%-digital milestone.],
+    [Kattel, R., & Mergel, I. (2018), "Estonia's digital transformation: Mission mystique and the hiding hand," UCL Institute for Innovation and Public Purpose Working Paper 2018-09 — the open-access version carrying the no-legacy-paradox sentence verbatim and the thirteen-year no-legacy design principle.],
+    [X-Road Global / Nordic Institute for Interoperability Solutions (NIIS) — program documentation and deployment-partner case studies.],
+    [Kattel, R., & Mergel, I. (2019), "Estonia's Digital Transformation: Mission Mystique and the Hiding Hand," in Compton, M., & 't Hart, P. (eds.), _Great Policy Successes_ (Oxford University Press, 2019) — the analytical chapter; an edited-volume chapter, not a peer-reviewed journal article.],
   ),
   quote: [Success creates its own aging problem. The modernization regime must contemplate its own future obsolescence as part of its current design.],
   quote-source: "Editors' synthesis of the no-legacy paradox in the Estonia X-Road analysis.",
@@ -309,12 +309,12 @@
   ),
   references: (
     [NTSB, Highway Accident Report HAR-17/02 (Williston, FL, 2016) — the quoted disengagement finding.],
-    [NTSB, Highway Accident Report HAR-20/01 (Mountain View, CA, 2018) — Autopilot crash analysis.],
     [NHTSA Standing General Order 2021-01 reports — documented Autopilot fatal crashes.],
+    [NTSB, Highway Accident Report HAR-20/01 (Mountain View, CA, 2018) — Autopilot crash analysis.],
     [NHTSA Office of Defects Investigation EA22-002 (opened 2022; closed April 2024, superseded by recall 23V-838) — driver-engagement adequacy.],
-    [NHTSA recall-query RQ24009 (April 2024) into the adequacy of the December 2023 Autopilot remedy, and investigation PE24031 (October 2024) into Full Self-Driving; Tesla's June 2025 Austin robotaxi launch and the ensuing regulator scrutiny.],
     [Parasuraman, R. & Manzey, D. (2010) — automation complacency and monitoring.],
     [_Benavides v. Tesla_ (S.D. Fla.) — August 2025 federal jury verdict apportioning Tesla 33% of responsibility for the April 2019 Key Largo Autopilot crash, \$243 million; post-trial motions denied February 2026.],
+    [NHTSA recall-query RQ24009 (April 2024) into the adequacy of the December 2023 Autopilot remedy, and investigation PE24031 (October 2024) into Full Self-Driving; Tesla's June 2025 Austin robotaxi launch and the ensuing regulator scrutiny.],
   ),
   quote: [Contributing to the car driver's overreliance on the vehicle automation was its operational design, which permitted his prolonged disengagement from the driving task and his use of the automation in ways inconsistent with guidance and warnings from the manufacturer.],
   quote-source: "NTSB Highway Accident Report HAR-17/02 (Williston, Florida crash), 2017",
@@ -621,11 +621,11 @@
   ),
   references: (
     [Lum, K. & Isaac, W. (2016), "To Predict and Serve?," _Significance_ — the enforcement-vs-crime feedback loop (paraphrased).],
-    [Richardson, Schultz & Crawford (2019), "Dirty Data, Bad Predictions" — biased records feeding predictive systems.],
     [Brantingham, P. J., Valasik, M., & Mohler, G. O. (2018), "Does Predictive Policing Lead to Biased Arrests? Results From a Randomized Controlled Trial," _Statistics and Public Policy_ 5(1):1–6 — no statistically significant difference in arrests by racial-ethnic group between treatment and control; the lead author co-founded PredPol.],
-    [Brayne, S. (2017), "Big Data Surveillance: The Case of Policing," _American Sociological Review_ 82(5):977–1008 — ethnographic account of the LAPD's adoption of predictive and dragnet analytics.],
+    [Richardson, Schultz & Crawford (2019), "Dirty Data, Bad Predictions" — biased records feeding predictive systems.],
     [Municipal records on suspension and abandonment of predictive policing (Santa Cruz, New Orleans, Los Angeles).],
     [Sankin, A. & Mattu, S. (2023), "Predictive Policing Software Terrible at Predicting Crimes," _The Markup_, 2 October 2023 (copublished with _Wired_) — the Plainfield, NJ accuracy analysis; and reporting on PredPol/Geolitica's 2021 rebrand and 2023 wind-down into SoundThinking.],
+    [Brayne, S. (2017), "Big Data Surveillance: The Case of Policing," _American Sociological Review_ 82(5):977–1008 — ethnographic account of the LAPD's adoption of predictive and dragnet analytics.],
   ),
   quote: [It is predicting future policing, not future crime.],
   quote-source: "Lum, K. & Isaac, W., \"To predict and serve?\", Significance 13(5), 2016, p. 17",
@@ -954,13 +954,19 @@
       [Carry the practice-synthesis evidence-tier flag honestly in any program documentation citing the framework — the artifact pattern is teachable, but the magnitude of its public-trust effect is still being measured.],
     ),
   ),
+  // NAKED CLAIM (cite-order pass, Aug 2026): marker 1 asserts the 2022 California
+  // court ruling permitting Waymo to withhold trade-secret safety detail from the DMV
+  // public-records process. No reference in this tuple sources it; the reference list
+  // was rotated by one and position 1 is filled by the Cruise/DMV foil only so that
+  // markers 2-6 bind correctly. Editor: supply the 2022 court/DMV record, or cut the
+  // claim. Do not resolve by re-rotating the tuple.
   references: (
+    [Cruise / California DMV Order of Suspension (October 2023) — paired Case 190 as the foil.],
     [Waymo (2023), "A Blueprint for AV Safety: Waymo's Toolkit For Building a Credible Safety Case," whitepaper.],
     [Waymo (November 2025), "Independent Audits of Waymo's Safety Case and Remote Assistance Programs," summary release.],
     [NHTSA recall and investigation record (December 2025 school-bus recall; January 2026 NHTSA/NTSB investigation of a Santa Monica child-strike; June 2026 recall of ~3,900 vehicles over freeway construction zones) — the post-deployment failure record under regulator action.],
     [Montreal AI Ethics Institute (2023), summary and analysis of the Waymo safety case framework.],
     [California Public Utilities Commission, AV passenger-service permit framework documents — paired Case 200 for the regulator-side artifact.],
-    [Cruise / California DMV Order of Suspension (October 2023) — paired Case 190 as the foil.],
   ),
   quote: [Where opacity could not be defended, a structured falsifiable argument plus audited assurance took its place.],
   quote-source: "Editors' synthesis of the Waymo safety case framework and the November 2025 third-party audits.",
@@ -1122,9 +1128,9 @@
   ),
   references: (
     [California Public Utilities Commission, "Autonomous Vehicle Passenger Service Programs" — program page for the Drivered and Driverless pilot and deployment programs, including the Passenger Safety Plan requirement.],
-    [CPUC permit decisions for Cruise and Waymo, 2020–2024.],
-    [California Department of Motor Vehicles, "New Autonomous Vehicle Regulations Strengthen Oversight and Enforcement, Authorize Trucks and Transit" (28 April 2026) — adopted authority to impose targeted operational restrictions on fleet size, location, speed and weather; draft language circulated for comment 30 August 2024.],
     [California Public Utilities Commission, Resolution TL-19144 (Waymo), issued 11 August 2023 (Commission vote 10 August) — approves driverless deployment in all of San Francisco 24 hours a day per the DMV-approved ODD, and declines to set limits on operating hours, geography or fleet size; the span quoted in the text is verbatim ("the Commission will neither modify the DMV-approved ODD submitted by Waymo … nor set limits on fleet size").],
+    [California Department of Motor Vehicles, "New Autonomous Vehicle Regulations Strengthen Oversight and Enforcement, Authorize Trucks and Transit" (28 April 2026) — adopted authority to impose targeted operational restrictions on fleet size, location, speed and weather; draft language circulated for comment 30 August 2024.],
+    [CPUC permit decisions for Cruise and Waymo, 2020–2024.],
   ),
   quote: [The governance objection was not refused. It was made a permit condition.],
   quote-source: "Editors' synthesis of the CPUC AV passenger-service permit framework.",
@@ -1663,8 +1669,9 @@
   ),
   references: (
     [New York City Department of Consumer and Worker Protection, _Rules Implementing Local Law 144 of 2021 (Automated Employment Decision Tools)_, effective July 5, 2023.],
-    [Wright, L., Muenster, R. M., Vecchione, B., Qu, T., Cai, S., Smith, A., Metcalf, J., & Matias, J. N. (2024), "Null Compliance: NYC Local Law 144 and the Challenges of Algorithm Accountability," in _Proceedings of FAccT 2024_, doi:10.1145/3630106.3658998.],    [Engler, A. (2023), "The EU and U.S. diverge on AI regulation: A transatlantic comparison and steps to alignment," _Brookings Institution_ commentary — regulatory-comparative frame for the municipal intervention.],
+    [Wright, L., Muenster, R. M., Vecchione, B., Qu, T., Cai, S., Smith, A., Metcalf, J., & Matias, J. N. (2024), "Null Compliance: NYC Local Law 144 and the Challenges of Algorithm Accountability," in _Proceedings of FAccT 2024_, doi:10.1145/3630106.3658998.],
     [Office of the New York State Comptroller (2025), audit of the Department of Consumer and Worker Protection's enforcement of Local Law 144 — finding enforcement "ineffective" (December 2025).],
+    [Engler, A. (2023), "The EU and U.S. diverge on AI regulation: A transatlantic comparison and steps to alignment," _Brookings Institution_ commentary — regulatory-comparative frame for the municipal intervention.],
   ),
   quote: [The audit-and-notice regime is a disclosure-and-audit instrument, not a substantive-standards instrument; whether it reduces actual disparate impact at the hiring level is an empirical question the published evidence does not yet resolve.],
   quote-source: "Editors' synthesis of the Local Law 144 rule text and the Andrus et al. and Wright et al. academic critiques.",
