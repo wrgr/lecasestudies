@@ -80,15 +80,25 @@ They are close but not identical. v2 cases record all three. In the printed case
 
 ## Editor decisions — resolution log
 
-- **A1 — Case 74 numbering baseline.** OPEN. Case 74 is in Typst source; missing from latest PDF build. Resolve at build layer before v2 numbering.
+- **A1 — Case 74 numbering baseline.** MOOT (August 2026). The case is now **158** (`hyatt-regency-walkway-collapse`), the file named here no longer exists, and the case was **quarantined** in the July LENS-alignment audit — it emits nothing in any build by design. See Next-phase task 8.
 - **A2 — v2 target count.** RESOLVED. Will + Jim aligned: draft all verified candidates plus the accepted supplemental tier.
 - **A3 — Watson + Coots evidence-tier handling.** RESOLVED. Include with explicit `evidence-flag` rendered under the title; standing "future validation ongoing" language is part of the render. Coots is drafted (Case 104).
 - **A4 — COI disclosure language.** RESOLVED. Standing COI text adopted for CIRCUIT (editor is senior author), BRAIN (research adjacency — drafted in Case 108), Johnson (shared institution). Each renders as a gold-bordered "Disclosure" block under the title.
 - **A5 — Framework revisions ship with v2 or precede.** RESOLVED. Ship with v2; program-owner alignment achieved.
 - **A6 — Anchor convention in printed header.** RESOLVED, with extension. LENS primary, induced secondary, **LEO carried as a third anchor** for course mapping. All three live in the `case(...)` metadata.
+- **A7 — Fact check is not source check.** RESOLVED (editor, August 2026). The confrontation pass runs **both**: does the cited document carry the claim, *and* is the claim true independent of citation. They catch different defects — stale cross-references, wrong dates and body-vs-compression contradictions are invisible to a source check. Method and base rate in `casebook/source-confrontation-log.md`.
+- **A8 — Evidence tier: peer review retires the weak-evidence flag.** RESOLVED. Applied to Cases 18, 44, 71, 76, 154, 194, 202. Cases 181 and 190 keep `journalism-tier` — their sourcing is documented primary record, not peer review, so the ruling does not reach them.
+- **A9 — Colophon verification claim.** RESOLVED. Wording of record: **every case reviewed by the editors, refinement iterative and ongoing**, stated against the seven-column rubric. (Two prior drafts are recorded in `AUDIT.md`; the first understated the completed editor review.)
+- **A10 — Figure valence.** RESOLVED. Star = favourable, triangle = adverse, encoded in shape *and* colour so it survives the grayscale interior. 34 of 35 outcome figures marked. `dgm-makary` ruled **neutral**: its focal value is a contested estimate, and a triangle beside a number the caption calls contested reads as endorsement.
+- **A11 — ch3b epigraph.** RESOLVED. Now claims discovery rather than outcome: *"When reporting became cheaper than concealment, aviation could finally see what it was fixing."* The prior line attributed aviation's safety record to reporting economics — the decomposition claim Case 117 was corrected to withdraw.
+- **A12 — Edition date.** RESOLVED. **August 2026** on both the cover and the title page.
+- **A13 — Citation alignment scope.** RESOLVED. Exhaustive on the 48 printed cases; detector-guided on the 143. The printed set had never been checked and proved *worse* than the complete edition (58% of anchored markers off-position against 47%). Justified after the fact: six printed cases were defective at sub-threshold detector scores, four scoring exactly zero.
 - **B1 — First-person Practice Flywheel accounts.** TODO. To be authored by Will + Jim (not researched). 2–3 accounts targeted for v2; CIRCUIT and ERKS-class efforts are natural sources. Paired with the front-matter "unpacking is the method" reframing.
 
 ## Next-phase tasks
+
+> **Open editor decisions and queued work are consolidated in `casebook/fact-check-editor-memo.md` § 9** — anchor decisions that change a printed figure, the repeat-slot addition recommended in five cases, claims carrying no reference at all, and the verification items surfaced but not resolved. That section is the current list; the tasks below are the older backlog.
+
 
 0. **TODO — K-12 case source re-confirmation.** Resolve the `// VERIFY:` comments in the six new K-12 case blocks (exact AIR CCTP report titles, LA Times article titles, SET author list, PBIS school count, NYT Newark byline, Hard Words date, opinion pin-cites) and fill their `refs real` / `refs support` columns in `verification-log.md`.
 

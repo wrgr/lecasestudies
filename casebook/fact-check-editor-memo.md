@@ -361,3 +361,101 @@ evaluations, separate dates for separate reports. None is an internal contradict
 `load-bearing` sits at 11 sites in the printed volume and 11 in the complete-edition cases —
 kept, in both, only where the structural metaphor is doing real work. `decisive` runs at roughly
 0.66 uses per complete-edition case, which is ordinary usage rather than a tic.
+
+---
+
+# 9. Consolidated open items — August 2026
+
+Everything below is awaiting an editor decision or is queued work. Nothing here is a defect left
+unfixed; each is either a judgement that is not mine to make or an addition outside the scope of the
+pass that found it. Grouped by what kind of decision it needs.
+
+## 9.1 Anchor decisions — four of these change a printed connection figure
+
+| Case | Question | Recommendation |
+|---|---|---|
+| **166 TMI** | Metadata read `3.1 / D3/PT4 / LEO-3` against a `lens-approach` stating 6.1, D5/PT4 *Navigating Sociotechnical Constraints*, LEO-5. `competencies.md` lists 166 under 6.1 and not 3.1, and its pairing partner 175 (INPO) carries 6.1 / D5/PT4 / LEO-5. **Reconciled to 6.1 / D5/PT4 / LEO-5, LEO-1.** | Keep — unless the D3 was a deliberate re-anchor rather than v2.1 remap collateral, in which case **this is the one change to reverse.** It alters the printed figure. |
+| **74 Zhang/Scardamalia** | `induced-anchor: 2.2` is *protecting the measurement from gaming* — wrong subject for a knowledge-building case. But metadata and prose agree, so nothing contradicts. **Not changed.** | 2.3 |
+| **127 Military fratricide** | `induced-anchor` moved 1.3 → 3.3 (recorded in `competencies.md`). `lens-anchor` stays D1/PT1. | If 3.3 stands, D3/LEO-3 may be the matching LENS pair, as for Case 130. Editor's call. |
+| **122 Singapore Airlines** | Case carries `induced 1.4`; `competencies.md` lists it under 4.3 (authority gradient). 4.3 fits the narrative *worse* than the current anchor. **Not changed** — recorded rather than making the printed anchor contradict the case. | Leave, or fix `competencies.md`. |
+| **92 Norway** | `induced 5.4` (change-control and disclosure). Case 82 was moved 5.4 → 5.1 on the same reasoning, but 92's own `lens-approach` explicitly defends the change-control reading. **Not changed.** | Editor's call whether the national-commission case belongs at 5.1. |
+| **153 Equifax** | `leo-anchor: LEO-2` against `lens-anchor: D5/PT3`; nothing in the prose justifies LEO-2. **35 corpus cases carry LEO codes that differ from their D-number**, so this is convention territory, not a defect. | Decide the convention once, corpus-wide. |
+| **198 BRAIN** | `lens-approach` claims a Domain 4 use that neither `lens-anchor` (D5+D1/PT4) nor `leo-anchor` carries. | Anchoring decision, not a factual error. |
+
+**`competencies.md` bookkeeping:** Case 36 is filed under 8.4 while the case carries `induced 2.1`,
+and it appears under no 2.x listing. **Case 37 is not filed anywhere.** Neither was changed — a
+unilateral framework edit is not something a citation pass should make.
+
+## 9.2 The one editorial addition I would recommend
+
+**Repeat-slot additions, five cases.** A marker whose claim needs a second slot of a source the tuple
+already carries once. The house convention solves this exactly — the same source in several slots,
+each with a claim-specific annotation, as Case 1 does with Leveson & Turner across refs 1–3. It is an
+*addition*, not a reorder, so no agent made one under the no-add rule.
+
+- **48 Johnson** (standing COI) — one Johnson & Jabbari entry plus three cross-reference pointers.
+  Marker 1 correctly holds Johnson, so marker 2 — the study's *headline findings* — necessarily lands
+  on a pointer. No permutation fixes this.
+- **20 TREWS** — the RCT-pending hedge names "the Adams et al. paper" in prose with no Adams slot left.
+- **5 Epic Sepsis** — markers 1 and 2 both want Wong; marker 1 now carries Habib for the framing claim.
+- **147 Takata** — marker 5's capability-gap claim has no positional source.
+- **138 MIL-STD-1472H** — markers 2, 3 and 4 legitimately need the same standard.
+
+## 9.3 Claims with no supporting reference anywhere
+
+These have no positional signature and no automated gate can see them. Each needs a source added or
+the claim scoped back — neither is an ordering fix.
+
+- **199 Waymo, marker 1** — the 2022 California ruling permitting Waymo to withhold trade-secret
+  safety detail from the DMV public-records process. No source in the tuple, none verifiable. Because
+  markers and refs are both six, correcting markers 2–6 forces an unrelated Cruise entry into
+  position 1. **A `// NAKED CLAIM` comment marks it in `chapters/ch7b.typ`** — do not "fix" it by
+  re-rotating.
+- **179 JHU dashboard, marker 3** — the CRC's racial-data-transparency accounting, positionally citing
+  the Hub's *closure announcement*. Structural cause: **the case's closing section carries no `#cn()`
+  marker at all**, so both closure sources have nowhere to attach and one drifted onto marker 3.
+- **95 PBIS** — the "more than 25,000 schools" count and "Sugai and Horner's 2020 synthesis" are
+  asserted in prose with nothing in the tuple.
+- **144 Kodak, marker 5** — the Fujifilm diversification contrast.
+- **77, marker 4** — the CIRCUIT-pair claim has no CIRCUIT reference in the tuple.
+- **161, marker 3** — "the most influential investigation in the agency's history" is an editorial
+  judgement with no dedicated source.
+
+## 9.4 Structural, and would renumber a case
+
+- **124 USS Fitzgerald / McCain** — the McCain fatigue finding ("fourteen bridge watchstanders
+  averaging just over 4.9 hours") **carries no marker**, while reference 11 — an unbound NTSB entry on
+  exactly those sleep hours — sits past the last marker. Adding a marker renumbers the case.
+- **102 AF447** — 78 FR 67800 is unbound and is the co-target of marker 7's FAA clause; the positional
+  reference covers the EASA/ICAO two-thirds of the same sentence. No reordering improves it.
+
+## 9.5 Verification items surfaced but not resolved
+
+- **95** — prose names *McIntosh, Mercer, Nese & Ghemraoui (2016)*; the reference reads *McIntosh,
+  Mercer, Nese, Strickland-Cohen & Hoselton (2016)*. Author-list mismatch.
+- **55** — Engler's own arithmetic is off: 12.1 → 14.8 is 22.3%, not the 23.3% printed. The case
+  reproduces the source faithfully, so it was **not** altered. A note may be warranted.
+- **143** — the case uses Knight's realized pre-tax $440M over the SEC's $460M; the divergence is
+  disclosed in the reference.
+- **84** — Evidence for ESSA rates Cognitive Tutor "Strong" on a +0.04 weighted mean. The registry's
+  inconsistency, faithfully reproduced.
+- **146** — the timeline diagram's cascade timestamp and "operator unaware 51 min" label are both
+  defensible readings of the Task Force chronology; left, flagged.
+- **157 and 175** carry no `evidence-source`. Consistent with the 57 v1 cases left unflagged for
+  editor judgement (CLAUDE.md task 1), so absence is defensible, not a defect.
+
+## 9.6 Standing COI and framing decisions, still open
+
+- COI wording for **Cases 48 and 68**, whose institutional basis moved.
+- The **"cultural half" framing** across Cases 19, 24, 137, 177 — twelve passages, five cases.
+- **`dgm-teamstepps`** left unmarked in the valence pass: structurally a pathway figure like
+  `dgm-17year` (neutral), though the worklist classed it favourable.
+
+## 9.7 Queued work, not decisions
+
+| Item | Size |
+|---|---|
+| `verification-log.md` human content-read column | 205 rows still `auto-prefill` |
+| `// VERIFY:` bibliographic re-confirmations | 19, in `ch2a` ×8, `ch2b` ×4, `ch6a` ×3, `ch6b` ×4 |
+| Binding `#cn()` markers by **name** rather than position | Would make the citation contract unbreakable rather than merely checked — the alignment pass and its gate both exist because position is fragile |
+| Residual `check-cite-order.py` flags | 33 of 191 at score ≥3, each accounted for case by case in the batch reports: repeat-convention artifacts, single-copy conflicts, and proper-noun bleed |
