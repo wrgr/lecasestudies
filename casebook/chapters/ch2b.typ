@@ -382,7 +382,7 @@
   year: "1990s – present",
   domains-list: ("education",),
   modes-code: "T",
-  impact: "Randomized controlled trials showed learning gains; RAND RCT found a significant Algebra I gain in year two (~0.2 SD, high school; no year-one effect); the Cognitive Tutor curricula, Algebra I among five, were used by more than 500,000 students in approximately 2,600 school districts as of August 2008 — the Algebra-I-only count is not available",
+  impact: "Randomized controlled trials showed learning gains; RAND RCT found a significant Algebra I gain in year two (0.21 SD, high school; no year-one effect, none significant in middle schools); the Cognitive Tutor curricula, Algebra I among five, were used by more than 500,000 students in approximately 2,600 school districts as of August 2008 — the Algebra-I-only count is not available",
   diagram: dgm.dgm-cogtutor,
   kind: "intervention",
   summary: [
@@ -755,7 +755,7 @@
       whose half-life is a regression on item features (language,
       part of speech, difficulty proxies) and per-learner
       practice history. The model is fit on aggregated Duolingo practice data — 12.9 million learning traces — and
-      produces per-item half-life estimates that drive the scheduling: the estimated recall probability sets the skill-tree strength meters and ranks which words a practice session serves. The item features and the practice-history interaction features are separable, and which of the two the production model kept turns out to matter — see below.#cn()
+      produces per-item half-life estimates that drive the scheduling: the estimated recall probability sets the skill-tree strength meters and ranks which words a practice session serves. The item features and the practice-history interaction features are separable, and which of the two the production model kept turned out to matter.#cn()
     ],
     [
       The published evaluation compares HLR against several
@@ -764,7 +764,7 @@
       recall matches observed recall on held-out practice data.
       The second is a downstream behavioral outcome: daily
       (next-day) learner retention, which Duolingo treats as a proxy for
-      engagement-driven learning continuation. HLR cuts mean absolute error by at least 45% against Leitner, which itself kept the highest AUC of any algorithm tried; the six-week retention trial against Leitner returned no significant gain in activity or lessons and a 7.3% drop in practice sessions, which the authors read as a sign of better scheduling — students had been practising "just to keep the tree gold" — and deployed on. That deployment did not hold. Within months students reported that particular words and skills decayed rapidly no matter how often they practised, and the complaints traced to lexeme-tag features carrying strongly negative weights: feature-based overfitting the model's regularization had not prevented. A second two-week experiment on 3.3 million students pitted HLR stripped of lexeme features (HLR\-lex) against full HLR and found all three retention metrics significantly higher for the stripped variant — any activity +12.0%, lessons +1.7%, practice +9.5%. HLR\-lex is what Duolingo shipped to all students. The evaluation includes the
+      engagement-driven learning continuation. HLR cuts mean absolute error by at least 45% against Leitner, which itself kept the highest AUC of any algorithm tried; the six-week retention trial against Leitner returned no significant gain in activity or lessons and a 7.3% drop in practice sessions, which the authors read as a sign of better scheduling — students had been practicing "just to keep the tree gold" — and deployed on. That deployment did not hold. Within months students reported that particular words and skills decayed rapidly no matter how often they practiced, and the complaints traced to lexeme-tag features carrying strongly negative weights: feature-based overfitting the model's regularization had not prevented. A second two-week experiment on 3.3 million students pitted HLR stripped of lexeme features (HLR-lex) against full HLR and found all three retention metrics significantly higher for the stripped variant — any activity +12.0%, lessons +1.7%, practice +9.5%. HLR-lex is what Duolingo shipped to all students. The evaluation includes the
       production-deployment outcomes, not just offline
       validation — including the outcome that sent the first
       deployed model back.#cn()
@@ -1035,7 +1035,7 @@
     LEO-2's evaluation problem in miniature — if the program
     asks the learner to narrate and defend the design iteration
     in first person, the program also has to be able to
-    evidence that the capability to do so is developing. The work is peer-reviewed — the arXiv version was published at IEEE CSEE&T 2025 — so what remains open is not review but reach: one cohort at one university, unreplicated. It is the v2 corpus's reference instance of established reflection coding applied longitudinally to evidence *development* rather than presence at a single point — the prior art the editor-
+    evidence that the capability to do so is developing. The work cleared peer review, so what remains open is not review but reach: one cohort at one university, unreplicated. It is the v2 corpus's reference instance of established reflection coding applied longitudinally to evidence *development* rather than presence at a single point — the prior art the editor-
     commissioned first-person Practice Flywheel accounts will sit
     alongside.
   ],
@@ -1547,7 +1547,7 @@
       questions as those questions surfaced from the community's
       shared work in Knowledge Forum, and dispersed when the
       questions had been addressed. Zhang and colleagues read
-      those organizations off social network analysis of the
+      those organizations off a social network analysis of the
       Knowledge Forum record together with qualitative analysis of
       the notes themselves. The depth of scientific
       explanations in the community's shared notes improved in
@@ -1893,7 +1893,7 @@
       hypothesis-testing — the team narrates the deployments,
       identifies the recurring patterns, and surfaces the
       operational knowledge that does not fit into a methods
-      section of a results paper. The lessons are synthesised under
+      section of a results paper. The lessons are synthesized under
       five headings — the technological and physical aspects of the
       deployment; the multimodal data and the interfaces built on
       it; the design process; participation, ethics and privacy;
@@ -2218,7 +2218,7 @@
       as the early radiology-AI cases (Case 35): automation produces
       a primary output at scale that no human team could produce
       manually, and the output is too important and too error-prone
-      to be deployed without verification. The MICrONS program, funded by IARPA, set out to close the performance gap between human analysts and automated pattern recognition by reverse-engineering the algorithms of the brain — a cubic millimetre of cortex, roughly 100,000 neurons, reconstructed at multi-petabyte scale.#cn()
+      to be deployed without verification. The MICrONS program, funded by IARPA, set out to close the performance gap between human analysts and automated pattern recognition by reverse-engineering the algorithms of the brain. The reconstructed volume is about a cubic millimetre of mouse visual cortex — some 200,000 cells, roughly 120,000 of them neurons, and over 500 million detected synapses — imaged at petabyte scale.#cn()
     ],
     [
       The automation produces petabytes of data. Automated
@@ -2275,7 +2275,12 @@
       staff, train, and govern a human correction layer for the
       gap between what models produce and what is operationally
       usable — recurs and is not well-named in the existing
-      curriculum. The frontier flag on this case is the case-grounded
+      curriculum. It is also the shape Wachter and Brynjolfsson
+      give the productivity paradox in medicine: a general-purpose
+      technology pays off only after the complementary
+      organizational work — the workflow redesign, the roles, the
+      training — has been done, and that complementary work is
+      exactly what a correction layer is. The frontier flag on this case is the case-grounded
       basis for proposing a sub-competency in this area, pairing
       with the broader v2 AI-delegation typology and the Domain 3
       *Delegation with revocation* LEO.#cn()
@@ -2304,7 +2309,7 @@
     [MICrONS program literature (IARPA) — connectomics method and automated segmentation evidence base.],
     [APL BossDB documentation — petabyte-scale connectomics data infrastructure.],
     [CIRCUIT program documentation (JHU Hub, 2017 – present) — institutional/program description; the training-outcome evidence is at this tier and the evidence-tier flag is binding.],
-    [Cervantes et al. (2023), ASEE Annual Conference — the paired peer-reviewed CIRCUIT case (Case 68).],
+    [Cervantes, Floryanzia, Sharp, Gray-Roncal, & Johnson (2023), "Empowering Trailblazers toward Scalable, Systematized, Research-Based Workforce Development," _ASEE Annual Conference_, doi:10.18260/1-2--43271 — the paired peer-reviewed CIRCUIT case (Case 68).],
     [Wachter, R. M., & Brynjolfsson, E. (2024), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_ 331(1):65–69 — the productivity-paradox framing: general purpose technologies pay off only after the complementary organizational work is done.],
   ),
   quote: [The recovery mechanism for automation failure is a designed human capability, not an emergent workforce.],
