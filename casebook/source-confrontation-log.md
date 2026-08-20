@@ -1,15 +1,32 @@
-# Source-confrontation log — complete-edition cases
+# Fact-and-source confrontation log — complete-edition cases
 
-Serial re-confrontation of the 143 complete-edition-only cases: every claim read against the
-document its `#cn()` marker points at. These cases had one full confrontation in the July 2026
-sweep; this is the second pass, prompted by the printed volume's re-check turning up survivors
-(Case 176's mixed Tylenol figure sets, Case 117's chronology contradiction, Case 119's untested
-counterfactual, Case 38's wrong domain anchor).
+Serial re-confrontation of the 143 complete-edition-only cases. These cases had one full
+confrontation in the July 2026 sweep; this is the second pass, prompted by the printed volume's
+re-check turning up survivors (Case 176's mixed Tylenol figure sets, Case 117's chronology
+contradiction, Case 119's untested counterfactual, Case 38's wrong domain anchor).
+
+**Two checks, not one** (editor, August 2026). They catch different defects and a claim can pass
+one while failing the other:
+
+1. **Source.** Does the document the `#cn()` marker points at actually carry this claim — say it,
+   say something adjacent, or not support it at all? Catches misattribution (Case 33 credited
+   Hussain 2019 with a finding that review never made) and figures that are *correct but carried
+   by no cited reference* (Cases 22, 23, 25).
+2. **Fact.** Is the claim true, independent of what is cited? Catches errors a source check would
+   pass over: wrong dates (Case 27's body said ASA capnography ~1991; it was 1999), wrong
+   cross-references (Case 25 pointed at Case 113, which is Boeing Starliner), mischaracterised
+   findings (Case 23 called Ontario a "mandated rollout"; what was mandated was compliance
+   reporting), and compression fields asserting the opposite of the body or the source (Case 34).
 
 **Method per case.** Read the case. For each `#cn()` marker, identify the claim it carries and the
-reference it should rest on. Fetch that source. Record: does the source say it, does it say
-something adjacent, or does it not support the claim at all. Fix in source; never annotate an
-error. Unverifiable claims are removed or replaced, per the standing rule.
+reference it should rest on; fetch that source and record which of the three source verdicts
+applies. Separately, check every checkable assertion in the case — dates, counts, names, venues,
+cross-references, internal consistency between body and compression fields — against the record,
+whether or not a marker points at it. Fix in source; never annotate an error. Unverifiable claims
+are removed or replaced, per the standing rule.
+
+**Base rate.** Batches 1–2 corrected **13 of 26 cases**, all of which had already been through the
+July critical-accuracy pass. Expect a similar yield across the remaining 117.
 
 **Session 1 (August 2026): batch 1 — 12 of 15 confronted, 3 corrections made.**
 
