@@ -130,21 +130,14 @@
       creative partner that accelerated drafting, cross-referencing,
       layout, and citation lookup, and an epistemic risk that had
       to be hand-checked against the record. Every case has been
-      read by the editors and hand-checked against a seven-column
+      reviewed by the editors and hand-checked against a seven-column
       rubric: that the sources cited exist and are findable, that the
       quoted attributions are fairly represented, and that the case is
       an accurate account of the incident and the investigation it
-      draws on. Editors and student reviewers have ruled case by case
-      through successive passes — reattributing findings to the study
-      that actually made them, restoring hedges the drafting had
-      smoothed away, and withdrawing fourteen cases outright where the
-      lesson did not survive scrutiny. That review is iterative by
-      design, and it continues: a student asking a tutor about the
-      andon cord found an error in a case that had already passed
-      several rounds, which is how this kind of work is supposed to go.
-      Items where the source could not be confirmed are marked
-      "Paraphrasing…" so the attribution is honest about what is the
-      author's reconstruction and what is verbatim from the record.
+      draws on. Refinement is iterative and ongoing. Items where the
+      source could not be confirmed are marked "Paraphrasing…" so the
+      attribution is honest about what is the author's reconstruction
+      and what is verbatim from the record.
     ]
 
     v(6pt)
