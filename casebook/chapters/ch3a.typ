@@ -1545,9 +1545,18 @@
     ],
     // -- The Investigation --
     [
-      The Hellenic Air Accident Investigation Board found the crew's
-      misidentification of the cabin-altitude warning as a
-      takeoff-configuration warning a direct cause of the accident.
+      The Hellenic Air Accident Investigation Board listed among its direct
+      causes the non-identification of the warnings and of the reasons for
+      their activation — not only the cabin-altitude warning horn but the
+      passenger oxygen-mask deployment indication and the Master Caution
+      that followed it — alongside the failure to recognize the manual
+      pressurization setting and the crew's incapacitation by hypoxia. Its
+      latent causes reached past the cockpit: deficiencies in the operator's
+      organization, quality management and safety culture; the regulator's
+      long-standing inadequate oversight; inadequate application of crew
+      resource management; and the ineffectiveness of the measures the
+      manufacturer had taken after earlier pressurization incidents on the
+      type.
       The single horn carried two meanings with no differentiation between
       them, and a pilot's career exposure to it was the ground
       meaning; the in-flight case was an edge condition the crew had not
@@ -1596,7 +1605,7 @@
     [Reason, J. (1990), _Human Error_ — the cue-ambiguity / human-error framing the case draws on.],
   ),
   quote: [The Board concluded that the flight crew confused the two meanings of the warning horn. Similar occurrences had been reported by flight crews worldwide in the past.],
-  quote-source: "Hellenic AAIASB Aircraft Accident Report 11/2006 on Helios 522, §2.6.1",
+  quote-source: "Hellenic AAIASB Aircraft Accident Report 11/2006 on Helios 522, §2.2.3",
   le-insight: [
     Helios 522 is the textbook example of a single cue carrying two
     meanings without differentiation. The interface lied by ambiguity.
@@ -1671,15 +1680,19 @@
     // -- Background --
     [
       TransAsia 235 was an ATR 72-600 twin-turboprop departing Taipei
-      Songshan. The captain had failed his command-upgrade simulator check in
-      May 2014, passed a re-check, and had been noted for weak handling
-      of abnormal procedures. The published response to an engine failure was a memory-item drill, and the drill carried mandatory cross-check callouts before any lever moved — so a captain already flagged for weak abnormal-procedure handling was exactly the operator most likely to skip the confirming callout precisely when it mattered, a known weakness meeting a known failure mode.#cn()
+      Songshan. The captain had failed his command-upgrade simulator check on 31
+      May 2014 — the unsatisfactory items included insufficient knowledge of
+      the engine-flame-out-at-takeoff drill — passed a re-check a month later,
+      and had been noted in line training for weak handling of abnormal
+      procedures. The published response to an engine failure was a memory-item drill, and the drill carried mandatory cross-check callouts before any lever moved — so a captain already flagged for weak abnormal-procedure handling was exactly the operator most likely to skip the confirming callout precisely when it mattered, a known weakness meeting a known failure mode.#cn()
     ],
     // -- What Happened --
     [
       On 4 February 2015, about thirty-seven seconds after takeoff, the right
-      engine's autofeather system activated following a faulty sensor
-      signal — the engine itself was capable of producing power. The crew,
+      engine's autofeather system activated after an intermittent break in the
+      signal between the number 2 auto-feather unit and its torque sensor,
+      traced afterwards to compromised solder joints inside the unit — the
+      engine itself was capable of producing power. The crew,
       identifying an engine problem, shut down the left engine, which was
       operating normally. With neither engine now producing useful thrust
       and the aircraft low and slow, it stalled, clipped a viaduct and a
@@ -1692,7 +1705,7 @@
     // -- The Investigation --
     [
       The Taiwan Aviation Safety Council found the crew failed to identify
-      which engine had actually failed and shut down the wrong one. They did not perform the documented failure-identification procedure and skipped required items of the flameout drill; the pilot flying called to pull the wrong lever back five seconds after the master warning, and that engine was shut off 46 seconds after it. The captain's documented proficiency
+      which engine had actually failed and shut down the wrong one. They did not perform the documented failure-identification procedure before acting and skipped required items of the flameout drill; the pilot flying retarded the wrong power lever about four seconds after the master warning, before the pilot monitoring had finished identifying the failure, and that engine was shut off 46 seconds after it. The Board also found that the crew had not rejected the takeoff when the automatic take-off power control system failed to arm on the roll, and that TransAsia had no clear documented policy telling them to. The captain's documented proficiency
       deficiencies and the airline's training and crew-resource-management
       shortfalls were contributing factors — the individual lapse sitting
       atop an organizational one, the carrier having left the very weaknesses
@@ -1998,24 +2011,31 @@
     ],
     [
       The MIB's deeper finding was about EVA-22, the prior
-      spacewalk one week earlier. Parmitano had reported a
-      smaller volume of water in his helmet during EVA-22 as
-      well. At the time, the event was attributed to a drink-bag
-      leak — a plausible but unverified hypothesis. No suit
-      teardown or anomaly investigation was completed before
-      EVA-23 was approved. The MIB characterized this as a
-      missed opportunity: the EVA-22 event was the weak signal
-      of the same failure mode that nearly killed Parmitano a
-      week later, and the institutional response treated an
-      unverified benign explanation as adequate clearance to
-      proceed.#cn()
+      spacewalk one week earlier. Half a litre to a litre of water
+      was found in the same helmet when it was removed after that
+      EVA, in the same suit later worn on EVA-23. The crew reasoned
+      the water must have entered during repressurization, when
+      Parmitano was leaning forward and could have pinched the
+      drink-bag bite valve open with his chin; the ground team
+      accepted that assessment and the water was not investigated
+      further. No suit teardown or anomaly investigation was
+      completed before EVA-23 was approved. Among the MIB's five
+      root causes, all organizational, were the EVA community's
+      unexamined belief that drink bags leak — a determination no
+      one in operations, engineering, safety or the crew office
+      challenged — and the flight control team's perception that
+      invoking the anomaly-report process was so resource-intensive
+      it would not be worth what it turned up. The EVA-22 water was
+      the weak signal of the same failure mode that nearly killed
+      Parmitano a week later, and an unverified benign explanation
+      was treated as adequate clearance to proceed.#cn()
     ],
     [
       The corrective actions span three layers. At the hardware
       layer the suit's water-separator and ventilation-loop
       hygiene were re-engineered, and a Helmet Absorption Pad
       and a snorkel were added so a future water event would not
-      immediately threaten the airway. At the operations layer water-quality specifications and monitoring were tightened, but no free-water sensor was added to the ventilation loop: a smaller helmet water event recurred on EVA-80 in March 2022 and NASA paused U.S. spacewalks again.
+      immediately threaten the airway. At the operations layer water-quality specifications and monitoring were tightened, but no in-suit free-water sensor was added to the ventilation loop: after a March 2022 spacewalk a crewmember again found water pooled on his visor — noticed by the astronaut, not by instrumentation — and NASA paused routine U.S. spacewalks for seven months, concluding afterwards that the cause was condensation from integrated system performance rather than a separator failure.
       At the safety-culture layer the MIB pressed the
       documented-and-investigated discipline: an unexplained EVA event
       requires investigation rather than the most convenient
@@ -2272,11 +2292,15 @@
     nose down sharply and dove the Boeing 767 freighter into Trinity Bay,
     killing all three aboard. The NTSB found the first officer had a long,
     undisclosed history of training failures across multiple carriers —
-    and that Atlas could not see it, because the Pilot Records Database
-    mandated by Congress after Colgan Air 3407 (Case 109) was not yet
-    operational. Atlas relied on the older PRIA system, which surfaced
-    only five years of history. The case is the live recurrence of Colgan:
-    the information existed; the data-flow system was not yet complete.
+    and that Atlas could not see it. The Pilot Records Database mandated
+    by Congress after Colgan Air 3407 (Case 109) was not yet operational,
+    so Atlas was working under PRIA, which retrieves records only from the
+    employers an applicant names — and he named neither of the two airlines
+    he had left without completing initial training, one of them inside
+    PRIA's five-year window. Atlas also did not fully evaluate the adverse
+    training records it did receive. The case is the live recurrence of
+    Colgan: the information existed; the data-flow system was not yet
+    complete.
   ],
   sections: (
     // -- Background --
@@ -2286,11 +2310,14 @@
       training events at several previous employers and had not disclosed
       them on his Atlas application. At the time of hiring, the Pilot
       Records Database directed by Congress after Colgan Air 3407 was not
-      yet operational; Atlas used the older PRIA system, which required
-      only five years of records — a window too short to surface a pattern
-      of training failures spread across several prior employers, so the
-      record Atlas could legally obtain was structurally incapable of showing
-      what it most needed to see.#cn()
+      yet operational; Atlas used the older PRIA system, under which a
+      hiring operator requests records from each former employer the
+      applicant discloses. The first officer disclosed neither CommutAir
+      (2011) nor Air Wisconsin (2012), the two airlines he had left after
+      failing to complete initial training — the Air Wisconsin employment
+      falling inside PRIA's five-year window, the CommutAir employment
+      outside it. A retrieval process keyed to the applicant's own list is
+      structurally incapable of showing what the applicant leaves off.#cn()
     ],
     // -- What Happened --
     [
@@ -2314,7 +2341,11 @@
       records that would have informed the hiring decision existed but
       did not reach it — the same information-flow failure named after
       Colgan a decade earlier, recurring here because the remedy built to
-      fix it was authorized but not yet carrying the full history.#cn()
+      fix it was authorized but not yet carrying the full history. The Board
+      also found that Atlas did not fully evaluate the training-performance
+      information it did receive from a previous employer, so the gap was
+      not only in what the system delivered but in what the carrier did with
+      what arrived.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -2421,8 +2452,10 @@
     seventeen years apart: Challenger in 1986, when O-ring seals failed in
     cold weather, and Columbia in 2003, when foam debris breached the wing's
     thermal protection — fourteen astronauts in all. Both flaws had been
-    seen repeatedly and accepted as routine; foam shedding had been
-    documented on at least sixteen prior missions before Columbia, and
+    seen repeatedly and accepted as routine; the Board found foam loss on
+    more than 80 percent of the 79 missions for which launch imagery
+    existed — including seven left-bipod-ramp sheddings among 72 imaged
+    missions, some of which NASA had not known about — and
     O-ring erosion in the field joints had been on the engineering record
     since the early flights. Sociologist Diane Vaughan named the mechanism
     "normalization of deviance" from the Challenger investigation; the
@@ -2473,7 +2506,7 @@
       counted as acceptable risk. Seventeen years later the Columbia
       Accident Investigation Board found the same patterns intact — flying
       with flaws defined as routine, foam strikes filed under "in-family"
-      across at least sixteen prior missions, and a structure that
+      across the great majority of imaged missions, and a structure that
       suppressed the upward flow of safety concerns — and concluded that
       "the NASA organizational culture had as much to do with this accident
       as the foam."#cn() That the same board found the same structure
@@ -2532,7 +2565,7 @@
   references: (
     [Rogers Commission, _Report of the Presidential Commission on the Space Shuttle Challenger Accident_ (1986) — the O-ring failure, the Thiokol teleconference, and the cold-weather launch decision.],
     [D. Vaughan, _The Challenger Launch Decision: Risky Technology, Culture, and Deviance at NASA_ (Univ. of Chicago Press, 1996) — normalization of deviance; the working group's drift of decision rules.],
-    [Columbia Accident Investigation Board, _Report Vol. I_ (2003) — the foam strike, findings F3.2-5 and F3.2-7 on foam loss across the imaged missions and its filing as "in-family," the recurrence of the cultural pattern, and the call for an independent technical authority.],
+    [Columbia Accident Investigation Board, _Report Vol. I_ (2003) — the foam strike; finding F3.2-5 (left bipod ramp shedding on 7 of the 72 missions for which launch or ET-separation imagery exists, including instances NASA was unaware of) and finding F3.2-7 (foam loss on more than 80 percent of the 79 missions with confirming imagery); the filing of strikes as "in-family," the recurrence of the cultural pattern, and the call for an independent technical authority.],
     [CAIB (2003) — "the NASA organizational culture had as much to do with this accident as the foam" (quoted); Rogers Commission (1986) and CAIB (2003) jointly on the suppressed upward flow of safety information across both accidents.],
     [W. Starbuck & M. Farjoun (eds.), _Organization at the Limit: Lessons from the Columbia Disaster_ (2005) — independent academic re-analyses of the institutional-learning gap.],
     [NASA Engineering and Safety Center founding documents (2003 – present) — institutional response to the CAIB's call for independent technical authority; Shuttle retirement (STS-135, July 2011).],
@@ -2551,7 +2584,7 @@
   ],
   lens-approach: [
     Challenger/Columbia anchors the multi-layer-drift-and-cumulative-
-    inadequacy competency (induced 7.4; LENS D1/PT4): a cascade of
+    inadequacy competency (induced 7.4; LENS D5/PT4): a cascade of
     marginal-but-tolerable conditions across decision rules, schedule
     pressure, and communication structure aligned twice, seventeen
     years apart. LENS uses the pair in Domain 1 (Systems Analysis)
@@ -2814,7 +2847,13 @@
       generational, as Apollo- and Shuttle-era engineers retired, and partly
       institutional: cost pressure, schedule-driven decisions, and the loss
       of NASA's own in-house engineering depth to challenge the
-      contractor.#cn() The two causes compound: as the contractor's senior
+      contractor. NASA's inspector general later named the drivers directly:
+      overconfidence in Boeing's use of heritage systems — which is why
+      integrated testing was never required under the contract — an
+      unachievable schedule, and limited flight-simulation data, compounded
+      by NASA's underuse of the data rights its own contract gave it, which
+      narrowed what the agency could analyse when the flight failures
+      came.#cn() The two causes compound: as the contractor's senior
       depth thinned through retirement, the buyer's own engineering depth had
       also eroded, so the very expertise NASA would have needed to catch the
       slipping contractor was the expertise it had let go of.
@@ -2839,12 +2878,13 @@
       sustain — and verify — capability at sole-source and legacy
       suppliers.#cn() Starliner returned uncrewed in September 2024, and its
       two astronauts finally came home aboard a SpaceX Crew Dragon in March
-      2025 after roughly nine months aboard the station. By late 2025 NASA
-      had downgraded Boeing's next flight to cargo-only, no earlier than
-      April 2026, and by mid-2026 — with propulsion problems still
-      unresolved — the agency's own inspector general judged crew
-      certification unlikely before 2027, NASA openly uncertain the vehicle
-      would ever be certified at all. It pairs with Saturn V (Case 112): where that case lost
+      2025 after roughly nine months aboard the station. NASA then downgraded
+      Boeing's next flight, Starliner-1, to an uncrewed cargo run to
+      prioritise crew safety; by mid-2026 no launch date was scheduled, the
+      helium leaks and propulsion failures were still unresolved, and the
+      agency's own inspector general judged human-rating certification likely
+      to slip to 2027 — with NASA unable to say when the remaining testing
+      would be finished or certification obtained. It pairs with Saturn V (Case 112): where that case lost
       a capability to retirement, Starliner shows the same erosion in slow
       motion at a living institution still carrying the brand of the
       capability it had let thin. Having a second supplier to fall back on is
@@ -2856,7 +2896,7 @@
   beats: (
     "Boeing won Commercial Crew on a human-spaceflight heritage once definitive in American aerospace",
     "Software errors in 2019, valve corrosion in 2021, and 2024 propulsion trouble stranded astronauts",
-    "NASA's inspector general found overconfidence in heritage systems, an unmeetable schedule, and underused data rights",
+    "NASA's inspector general found overconfidence in heritage systems, an unachievable schedule, and limited flight-simulation data",
     "Reputation outran reality because no instrument measured the legacy contractor's current capability",
     "NASA leaned on independent reviews and SpaceX as the verified alternative absorbing the failure",
   ),
