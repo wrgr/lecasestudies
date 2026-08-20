@@ -825,7 +825,7 @@
   year: "2009 – 2014",
   domains-list: ("defense", "workforce L&D", "intelligent tutoring"),
   modes-code: "HKD",
-  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, U.S. Navy IT graduates with no prior IT experience outscored fleet Information Systems Technicians with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
+  impact: "An IDA assessment for the sponsor found that, after 16 weeks of Digital Tutor instruction, U.S. Navy IT graduates with no prior IT experience outscored fleet Information Systems Technicians with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
   kind: "intervention",
   scale: "small",
   evidence-source: "program-report",
@@ -836,7 +836,7 @@
     DARPA's Digital Tutor program asked whether a one-on-one
     intelligent tutoring system, modelled on expert human tutoring,
     could compress years of operational IT expertise into a 16-week
-    pipeline. The independent evaluation by the Institute for Defense
+    pipeline. The evaluation by the Institute for Defense
     Analyses (Morrison and Fletcher, IDA Document D-4686, 2012) compared
     Digital Tutor graduates — U.S. Navy enlistees with no prior IT
     experience — against fleet Information Systems Technicians
