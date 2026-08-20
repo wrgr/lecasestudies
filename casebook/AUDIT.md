@@ -1170,3 +1170,78 @@ marker's surrounding claim against its positional reference would at least surfa
 unchanged at 280 pp (spine 17.39 mm) — every case in this sweep is complete-edition-only.
 
 `check-cases.sh` 191/0; compression gate 0 new; palette clean at 50 diagrams.
+
+### Addendum (August 2026): marker-to-reference alignment — the contract the gate could not see
+
+`lib/components.typ:369` states it plainly: reference text is supplied to `case-references()` **in the
+same order** as the `#cn()` markers, so reference *k* is the source for marker *k*. `check-cases.sh`
+enforces only `markers ≤ refs`. It is structurally blind to order — which is how the corpus reached
+a state where **51% of markers carrying an unambiguous anchor** (a report ID, a figure, a named
+author matching exactly one reference) **pointed at the wrong reference**, while every build reported
+191 converted / 0 failures.
+
+**The printed volume was not better than the complete edition. It was marginally worse** — 58% of
+anchored markers off-position against 47% — and it had never been checked, because the 143-case
+fact sweep covered complete-edition cases only.
+
+**The failure is stereotyped**, which is why a pass was worth running rather than a rewrite: tuples
+ordered by **authority tier** (primary study → supporting data → theory → paired case) or **rotated
+by one**. Both are recognisable in minutes once markers and references are printed side by side,
+which is what `scripts/view-case-cites.py` exists to do.
+
+**Result.** All 48 printed cases read exhaustively; complete-edition cases read where the detector
+flagged them. **~100 tuples reordered, 22 confirmed correctly ordered.** Verified mechanically at
+every commit: reference *text* is byte-identical throughout — only positions moved. A reorder and a
+silent reword look the same in a diff summary, so this was checked rather than trusted.
+
+Worst instances: **199 Waymo** (whole tuple rotated one; a reader following any superscript landed a
+document early), **197 PredPol** (four markers each on a different document), **114 aging-aircraft**
+(four of five), **173 SUBSAFE** (four of five), **176 Tylenol** (uniform rotation), **120 EGPWS** and
+**121 Überlingen** (aviation cases where a superscript led to a developer history instead of an
+accident report), **192 Apple Card** (marker 3 cites a March-2021 report and pointed at a
+November-2019 newspaper piece — chronologically impossible).
+
+**The measured blind spot, which is the finding worth keeping.** A detector-threshold sweep would
+have shipped most of this. Of the printed cases read exhaustively, **six were defective at
+sub-threshold detector scores, and four of those scored exactly zero** — including Case 173, with
+four of five positions wrong, and Case 191, where a Royal Commission attribution pointed at a
+settlement. Three of six low-scoring cases sampled independently were also defective. **A clean
+detector score is not evidence of a clean case**, and the decision to read all 48 rather than work
+the queue is what caught them.
+
+The detector's other edge case runs the same way: its **highest-scoring case corpus-wide (124, USS
+Fitzgerald / McCain) is correctly ordered.** `NTSB/MAR-19/01` legitimately occupies three slots under
+the house repeat convention, and every matching marker inflated the score. Score rank is not
+confidence rank.
+
+**Two tools, deliberately different.** `scripts/check-cite-order.py` is the sweep instrument — broad,
+fuzzy, ~90% precise at the top of its ranking but only 50–65% recall. `scripts/check-cite-anchors.py`
+is the **commit-time gate**, now wired into CI: it checks only the subset where the answer is not a
+judgement call, and it is narrow so that it can fail a build. Case-generic anchors are excluded (an
+aircraft's flight number appears wherever the subject is named), identical reference text is treated
+as one equivalence class (a swap inside the repeat convention reaches the right document — a
+copy-edit defect, not a citation defect), and the claim window is the sentence the marker attaches to
+rather than a fixed character span. Each of those three rules exists because its absence produced a
+false positive during construction.
+
+Validated against known-bad input rather than assumed: run over the pre-pass baseline it catches
+**seven cases**, including Waymo, Deepwater and CPUC. Over the corpus as it stands: **zero**. It also
+caught one defect the detector threshold and the agent pass both missed — **Case 81**, whose marker 3
+states figures verbatim from Herodotou 2019 while pointing at a different paper. Case 81 is not
+printed and never scored ≥3, so no one read it.
+
+**What a pass does not prove, stated in the script's own docstring.** The gate sees only anchored
+markers; roughly a third carry no hard anchor. And it cannot see the failure with no positional
+signature at all — **a claim with no supporting reference anywhere**. Case 199's 2022 trade-secret
+ruling is one: no source exists in its tuple and none could be verified, and because markers and
+references are both six, correcting the rest forces an unrelated entry into position 1. A
+`// NAKED CLAIM` comment marks it so a later reviewer does not "fix" it by re-rotating. Cases 144,
+147, 179 and 95 carry the same defect in milder form.
+
+**Standing editorial item.** Five cases have a marker needing a second slot of a source the tuple
+carries once (48 Johnson, 20 Adams, 5 Wong, 147, 138). The house convention solves this with a repeat
+entry carrying a claim-specific annotation. That is an addition, not a reorder, so no agent made it —
+and it is the one editorial add worth making.
+
+Page counts unchanged: reordering references does not reflow the page. `check-cases.sh` 191/0;
+compression gate 0 new; citation anchors clean; palette clean.
