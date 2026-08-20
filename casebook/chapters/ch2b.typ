@@ -657,9 +657,9 @@
     ),
   ),
   references: (
+    [National Academies / NSF research on undergraduate research experience effects on STEM persistence (broader literature against which the case sits).],
     [Cervantes, Floryanzia, Sharp, Gray-Roncal, & Johnson (2023), "Empowering Trailblazers toward Scalable, Systematized, Research-Based Workforce Development," _ASEE Annual Conference_, doi:10.18260/1-2--43271.],
     [CIRCUIT program documentation (JHU Hub, 2017 – present) — institutional program description.],
-    [National Academies / NSF research on undergraduate research experience effects on STEM persistence (broader literature against which the case sits).],
     [Paired case (78) — CIRCUIT proofreading + MICrONS — the deployed-capability companion.],
   ),
   quote: [The deliverable is the replicable model, not the program brand. The pillars are operationalized for independent evaluation.],

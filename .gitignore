@@ -5,3 +5,5 @@ build/
 node_modules/
 audit/
 .claude/
+__pycache__/
+*.pyc

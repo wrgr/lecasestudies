@@ -307,9 +307,9 @@
   references: (
     [Health Information Technology for Economic and Clinical Health (HITECH) Act (2009) — the ~\$30B EHR incentive program.],
     [Y. Han et al., "Unexpected Increased Mortality After Implementation of a Commercially Sold CPOE System," _Pediatrics_ 116(6): 1506–1512 (2005) — the disputed pediatric-ICU mortality result.],
+    [M. Grissinger, "The Absence of a Drug–Disease Interaction Alert Leads to a Child's Death," _P&T_ 43(2): 71–72 (2018); F. Schulte & E. Fry, "Death by 1,000 Clicks," _Fortune_/KHN (2019).],
     [J. Howe, K. Adams, A. Z. Hettinger & R. Ratwani, "Electronic Health Record Usability Issues and Potential Contribution to Patient Harm," _JAMA_ 319(12): 1276–1278 (2018) — 557 of 1.735M safety reports tied usability to possible harm.],
     [D. Sittig & H. Singh, "Defining Health Information Technology-related Errors: New Developments Since To Err is Human," _Archives of Internal Medicine_ 171(14): 1281–1284 (2011).],
-    [M. Grissinger, "The Absence of a Drug–Disease Interaction Alert Leads to a Child's Death," _P&T_ 43(2): 71–72 (2018); F. Schulte & E. Fry, "Death by 1,000 Clicks," _Fortune_/KHN (2019).],
     [Pew / MedStar / AMA, _Ways to Improve Electronic Health Record Safety_ (2018); R. Wachter, _The Digital Doctor_ (2015).],
   ),
   quote: [Despite HIT's promise in improving safety, recent literature has revealed potential safety hazards associated with its use.],
@@ -819,8 +819,8 @@
     ),
   ),
   references: (
-    [Wong et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070, doi:10.1001/jamainternmed.2021.2626.],
     [Habib et al. (2021), commentary on Wong et al., _JAMA Internal Medicine_ — on the implications for proprietary clinical AI.],
+    [Wong et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070, doi:10.1001/jamainternmed.2021.2626.],
     [FDA, _Clinical Decision Support Software: Final Guidance_ (2022) — the post-Wong reframing of the EHR-embedded oversight question.],
     [Ross, C. (2022), "Epic overhauls its sepsis algorithm," _STAT News_ (Oct 2022) — the ESM v2 redesign and the shift to locally-trained models.],
     [Adams et al. (2022), _Nature Medicine_ — the paired positive case (20).],
@@ -984,8 +984,8 @@
     ),
   ),
   references: (
-    [Hoffman, Trawalter, Axt, & Oliver (2016), "Racial bias in pain assessment and treatment recommendations, and false beliefs about biological differences between blacks and whites," _PNAS_ 113(16):4296–4301, doi:10.1073/pnas.1516047113.],
     [Anderson, Green, & Payne (2009), "Racial and ethnic disparities in pain: causes and consequences of unequal care," _Journal of Pain_ 10(12):1187–1204 — the population-level disparity.],
+    [Hoffman, Trawalter, Axt, & Oliver (2016), "Racial bias in pain assessment and treatment recommendations, and false beliefs about biological differences between blacks and whites," _PNAS_ 113(16):4296–4301, doi:10.1073/pnas.1516047113.],
     [Sabin & Greenwald (2012), "The influence of implicit bias on treatment recommendations for 4 common pediatric conditions," _American Journal of Public Health_ — the diffuse-mechanism backdrop the Hoffman precision improves on.],
     [Vyas, Eisenstein, & Jones (2020), _NEJM_ — connecting race-in-clinical-algorithms to race-in-clinical-judgment.],
     [Omiye, Lester, Spichak, Rotemberg, & Daneshjou (2023), "Large language models propagate race-based medicine," _npj Digital Medicine_ 6:195 — commercial LLMs reproduce the Hoffman false beliefs.],
