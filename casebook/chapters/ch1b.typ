@@ -31,7 +31,7 @@
   lens-anchor: "D1/PT3",
   leo-anchor: "LEO-1, LEO-4",
   summary: [
-    California in 2004 became the first US state to mandate minimum
+    California in 2004 became the first U.S. state to mandate minimum
     nurse-to-patient ratios in acute-care hospitals — unit-level
     minimums written into law and enforced through inspection. The
     Aiken et al. (_Health Services Research_, 2010) study surveyed
@@ -52,7 +52,7 @@
   ],
   sections: (
     [
-      Nurse staffing is the load-bearing variable in the
+      Nurse staffing is the variable in the
       capability-of-care literature: a substantial body of evidence
       links nurse workload to medical errors, mortality, and rescue
       from complications. The professional consensus on the
@@ -63,10 +63,11 @@
       (a specific ratio actually present at the bedside).#cn()
     ],
     [
-      California in 2004 became the first US state to do it. The
+      California in 2004 became the first U.S. state to do it. The
       law specifies unit-by-unit minimum nurse-to-patient ratios —
-      1:6 in medical-surgical at the 2004 start and 1:5 from 2005, 1:4 in
-      on — enforceable through state inspection. The political
+      1:6 in medical-surgical at the 2004 start and 1:5 from 2005, with
+      tighter ratios in step-down and intensive care — enforceable
+      through state inspection. The political
       process took five years from statutory enactment (1999) to
       regulatory implementation, with industry argument that the
       ratios would close hospitals and worsen access. The 2004
@@ -93,9 +94,8 @@
       experiment. There was no California baseline measurement to
       provide a pre/post within-state comparison. The modeled
       mortality estimates rest on the workload-mortality
-      relationship from prior studies, and the California HealthCare Foundation's own
-      debate followed publication over whether the ratios themselves
-      caused the observed improvement, or whether California
+      relationship from prior studies, and debate followed publication
+      over whether the ratios themselves caused the observed improvement, or whether California
       hospitals differed in other ways the cross-section did not
       capture. The authors do not claim closure; their conclusion is that the
       evidence is the strongest available and consistent with the
@@ -116,7 +116,7 @@
     ],
   ),
   beats: (
-    "California (2004) — first US state to mandate minimum unit-level nurse-to-patient ratios; written into law and enforced",
+    "California (2004) — first U.S. state to mandate minimum unit-level nurse-to-patient ratios; written into law and enforced",
     "Aiken et al. 2010 surveyed 22,336 nurses across CA / PA / NJ; California nurses cared for 1–2 fewer patients each",
     "Modeled implication: PA and NJ would have 10.6% and 13.9% fewer surgical deaths at California's medical-surgical ratios",
     "Hedge preserved: observational cross-sectional; no California baseline; contested stakeholder debate on causation",
@@ -135,9 +135,9 @@
     ),
   ),
   references: (
-    [Aiken, Sloane, Cimiotti, Clarke, Flynn, Seago, Spetz, & Smith (2010), "Implications of the California Nurse Staffing Mandate for Other States," _Health Services Research_ 45(4):904–921, doi:10.1111/j.1475-6773.2010.01114.x.],
     [Aiken, Clarke, Sloane, Sochalski, & Silber (2002), "Hospital nurse staffing and patient mortality, nurse burnout, and job dissatisfaction," _JAMA_ 288(16):1987–1993 — the workload-mortality relationship the 2010 modeling rests on.],
     [California Department of Health Services (1999–2004), AB 394 regulatory implementation documentation.],
+    [Aiken, Sloane, Cimiotti, Clarke, Flynn, Seago, Spetz, & Smith (2010), "Implications of the California Nurse Staffing Mandate for Other States," _Health Services Research_ 45(4):904–921, doi:10.1111/j.1475-6773.2010.01114.x.],
     [Spetz, Chapman, Herrera, Kaiser, Seago, & Dower (2009), "Assessing the impact of California's nurse staffing ratios on hospitals and patient care," California HealthCare Foundation — implementation-period analysis.],
   ),
   quote: [The headline finding is direct; the modeled mortality estimate is the strongest available evidence and not closed proof.],
@@ -245,8 +245,9 @@
       driven policy for years.#cn() iCOMPARE (Silber et al., _NEJM_ 2019), in
       internal medicine, reached a parallel result in a second specialty,
       making the finding harder to dismiss as an artifact of surgery.#cn()
-      Neither found the safety gain the cap had promised. In 2017, with FIRST
-      ACGME relaxed the 16-hour intern limit. The trials did not show fatigue
+      Neither found the safety gain the cap had promised. In 2017, with
+      FIRST reported and iCOMPARE under way, the ACGME relaxed the
+      16-hour intern limit. The trials did not show fatigue
       is harmless — only that cutting one input, without rebuilding
       supervision and hand-offs, did not produce a safer system.#cn()
     ],
@@ -336,13 +337,11 @@
   year: "ongoing",
   domains-list: ("healthcare",),
   modes-code: "KGN",
-  impact: "Average time from research finding to clinical practice: 17 years; only ~14% of research findings ever reach practice",
+  impact: "The canonical implementation-gap pair — about seventeen years from evidence to practice, about 14 percent of original research arriving — both estimates: Balas and Boren timed nine mostly primary-care services to 50 percent adoption and derived the 14 percent from a chain of assumed attrition points",
   diagram: dgm.dgm-17year,
   kind: "frontier",
   summary: [
-    Implementation science has a canonical finding: it takes an average of
-    about seventeen years for research evidence to reach clinical practice,
-    and only roughly 14% of research findings ever make it at all.
+    Implementation science has a canonical pair of figures: about seventeen years for research evidence to reach clinical practice, and only about 14% of original research arriving at all. Both come from Balas and Boren (2000), and both are estimates rather than measurements — the seventeen years is a lag across nine mostly primary-care services, and the 14% is derived from assumed attrition at each stage of the publication-to-guideline pipeline.
     This is not a single incident but a systemic condition — effective
     interventions exist; the system to adopt, sustain, adapt, and measure
     them at scale does not. Frameworks like the Active Implementation
@@ -366,10 +365,7 @@
     ],
     // -- What Is Emerging --
     [
-      The canonical figures are stark: it takes an average of about seventeen
-      years for research evidence to be integrated into clinical practice,
-      and only roughly 14% of research findings ever make it at
-      all.#cn() Read together, the two figures describe a pipeline that is
+      The canonical figures are stark, and their provenance matters. Balas and Boren identified nine mostly primary-care services supported by randomized trials and timed each from trial publication to 50 percent adoption: 15.6 years, which becomes the familiar seventeen once publication lag is added. The 14 percent is not a count of anything; it is what remains after applying assumed attrition rates at each stage from submission through systematic review to guideline. Later scrutiny found the utilization baselines wrong in places — the analysis assumed 20 percent of diabetic patients received foot exams in 1998 when the rate was nearer 60, and dated 50 percent mammography adoption to 1993 when it had been reached by 1990 — and the denominators include patients without regular checkups, so the lag partly measures patient behaviour rather than clinician uptake.#cn() Read together, the two figures describe a pipeline that is
       both slow and leaky: most of what is learned never reaches the bedside
       at all, and the fraction that does arrives long after the patients who
       first needed it, so the delay is compounded by sheer attrition.
@@ -418,7 +414,7 @@
     "Building, funding, and owning the adoption-and-measurement pathway is the general unsolved problem",
   ),
   references: (
-    [E. A. Balas & S. A. Boren (2000), _Yearbook of Medical Informatics_ — the ~17-year / ~14% translation figures.],
+    [E. A. Balas & S. A. Boren (2000), "Managing clinical knowledge for health care improvement," _Yearbook of Medical Informatics_ — the nine-service adoption analysis behind the seventeen-year figure, and the pipeline-attrition derivation behind the 14 percent.],
     [Z. S. Morris, S. Wooding & J. Grant, "The answer is 17 years, what is the question: understanding time lags in translational research," _J. Royal Society of Medicine_ 104(12):510–520 (2011) (quoted).],
     [D. Fixsen et al., _Implementation Research: A Synthesis of the Literature_ (2005) — the Active Implementation Frameworks.],
     [G. Aarons et al. (2011), the EPIS framework; L. Damschroder et al. (2009), CFIR.],
@@ -503,7 +499,7 @@
     intervention. The case is the canonical small-tier instance of
     cross-domain adaptation of a proven intervention (C6.4), and
     pairs with the multidisciplinary-translation trio (Cases 40
-    team science, 122 IPE, 123 implementation-science training) as
+    team science, 28 IPE, 41 implementation-science training) as
     cross-domain workforce evidence. The honest hedge: the
     dissemination outcome literature is thinner than the original
     single-center evidence; the case is teachable on the SBML
@@ -569,15 +565,15 @@
     ],
     [
       In pair with the multidisciplinary-translation trio (Cases
-      178 team science, 122 IPE, 123 implementation-science
+      40 team science, 28 IPE, 41 implementation-science
       training), the Barsuk SBML case completes the workforce-
       evidence picture: an intervention with strong single-center
       controlled-comparison evidence (this case) sits alongside a
       structured team-science training program with validated
-      measurement (121), the field-scale enthusiasm-evidence gap in
-      interprofessional education (122), and the operational-
+      measurement (40), the field-scale enthusiasm-evidence gap in
+      interprofessional education (28), and the operational-
       practice gap inside implementation-science training programs
-      (123). The four cases together stage the cross-domain
+      (41). The four cases together stage the cross-domain
       workforce-evidence pattern: the mechanism that works at
       single-program scale is the demonstrator; the field-scale
       measurement and the multi-site dissemination evidence are
@@ -589,7 +585,7 @@
     "Barsuk et al. (Northwestern/Feinberg, 2009 onward) — simulation-based mastery learning: practice to a defined standard, not a clock",
     "Single-center evidence: fewer needle passes, fewer arterial punctures, lower CRBSI rates; cost-saving at the hospital level (Cohen et al. 2010)",
     "Disseminated nationally to VA medical centers — cross-institutional transfer is the C6.4 structural feature",
-    "Hedge preserved: multi-site dissemination outcome literature thinner than single-center evidence; pair with cases 121, 122, 123 as cross-domain workforce evidence",
+    "Hedge preserved: multi-site dissemination outcome literature thinner than single-center evidence; pair with cases 40, 28, 41 as cross-domain workforce evidence",
   ),
   approaches: (
     during: (
@@ -604,11 +600,11 @@
     ),
   ),
   references: (
+    [Barsuk, McGaghie, Cohen, Balachandran, & Wayne (2009), "Use of simulation-based mastery learning to improve the quality of central venous catheter placement in a medical intensive care unit," _Journal of Hospital Medicine_ 4(7):397–403.],
     [Barsuk, Cohen, Feinglass, McGaghie, & Wayne (2009), "Use of simulation-based education to reduce catheter-related bloodstream infections," _Archives of Internal Medicine_ 169(15):1420–1423, doi:10.1001/archinternmed.2009.215.],
     [Cohen, Feinglass, Barsuk, Barnard, O'Donnell, McGaghie, & Wayne (2010), "Cost savings from reduced catheter-related bloodstream infection after simulation-based education for residents in a medical intensive care unit," _Simulation in Healthcare_ 5(2):98–102, doi:10.1097/SIH.0b013e3181bc8304.],
-    [Barsuk, McGaghie, Cohen, Balachandran, & Wayne (2009), "Use of simulation-based mastery learning to improve the quality of central venous catheter placement in a medical intensive care unit," _Journal of Hospital Medicine_ 4(7):397–403.],
-    [McGaghie, Issenberg, Cohen, Barsuk, & Wayne (2011), "Does simulation-based medical education with deliberate practice yield better results than traditional clinical medical education? A meta-analytic comparative review of the evidence," _Academic Medicine_ 86(6):706–711.],
     [Barsuk, Cohen, Nguyen, Mitra, O'Hara, Okuda, Feinglass, Cameron, McGaghie, & Wayne (2016), "Attending physician adherence to a 29-component central venous catheter bundle checklist during simulated procedures," _Critical Care Medicine_ 44(10):1871–1881 — the published record of the train-the-trainer dissemination across 58 Veterans Affairs Medical Centers.],
+    [McGaghie, Issenberg, Cohen, Barsuk, & Wayne (2011), "Does simulation-based medical education with deliberate practice yield better results than traditional clinical medical education? A meta-analytic comparative review of the evidence," _Academic Medicine_ 86(6):706–711.],
   ),
   quote: [The standard, not the calendar, governs progression. The trainee practices until they demonstrate competence; the simulator absorbs the cost of the practice.],
   quote-source: "Editors' synthesis of Barsuk et al. (2009).",
@@ -722,7 +718,7 @@
       that displaced other clinical work.#cn()
     ],
     [
-      The hedge is load-bearing and survives into the case
+      The hedge is binding and survives into the case
       verbatim. The authors state in the published paper that
       "our study design precludes definitively establishing a
       causal link" — pre/post evaluation across multiple sites is
@@ -815,7 +811,7 @@
   year: "2014",
   domains-list: ("nursing education", "clinical simulation", "regulation"),
   modes-code: "GKD",
-  impact: "A longitudinal RCT randomized students across multiple US nursing programs to control, 25%, or 50% simulation substitution for traditional clinical hours; 660 took the NCLEX with no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates — the number of nursing regulatory bodies permitting up to 50% simulation substitution in prelicensure RN programs rose from 1 in 2014 to 23 in 2022",
+  impact: "A longitudinal RCT randomized students across multiple U.S. nursing programs to control, 25%, or 50% simulation substitution for traditional clinical hours; 660 took the NCLEX with no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates — the number of nursing regulatory bodies permitting up to 50% simulation substitution in prelicensure RN programs rose from 1 in 2014 to 23 in 2022",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -832,7 +828,7 @@
     fraction of those hours without degrading the clinical
     capability of new nurses. The National Council of State Boards
     of Nursing (NCSBN) ran the study that the field then built on:
-    a longitudinal RCT randomized students across multiple US
+    a longitudinal RCT randomized students across multiple U.S.
     nursing programs to control, 25%, or 50% simulation
     substitution. Hayden et al. (_Journal of Nursing Regulation_,
     2014) reported no statistically significant differences in
@@ -870,7 +866,7 @@
       definitive study. Hayden et al. (_Journal of Nursing
       Regulation_, 2014) reported the NCSBN National Simulation
       Study: a longitudinal randomized controlled trial that
-      assigned pre-licensure nursing students at multiple US
+      assigned pre-licensure nursing students at multiple U.S.
       nursing programs to a control group, a 25%-substitution
       group, or a 50%-substitution group. The substitution
       condition replaced an equivalent fraction of traditional
@@ -894,7 +890,7 @@
     ],
     [
       What followed is the unusual part. Nursing regulation in
-      the US is genuinely decentralized: each state board sets its
+      the U.S. is genuinely decentralized: each state board sets its
       own pre-licensure requirements, and there is no federal
       forcing mechanism. The 2023 follow-up study documents that
       the number of nursing regulatory bodies permitting up to 50%
@@ -922,7 +918,7 @@
     ],
   ),
   beats: (
-    "NCSBN longitudinal RCT — students at multiple US nursing programs randomized to control, 25%, or 50% simulation substitution for traditional clinical hours",
+    "NCSBN longitudinal RCT — students at multiple U.S. nursing programs randomized to control, 25%, or 50% simulation substitution for traditional clinical hours",
     "Hayden et al. 2014 (_J Nursing Regulation_): no statistically significant differences in clinical competency, nursing knowledge, or NCLEX pass rates across groups; 660 took the NCLEX",
     "Result holds only 'under conditions comparable to those described in the study' (high-quality simulation, trained faculty, structured debriefing)",
     "Institutional transfer: number of nursing regulatory bodies permitting up to 50% substitution in RN programs rose from 1 in 2014 to 23 in 2022 — single evidence base propagating across the regulatory field",
@@ -941,10 +937,10 @@
     ),
   ),
   references: (
-    [Hayden, J. K., Smiley, R. A., Alexander, M., Kardong-Edgren, S., \& Jeffries, P. R. (2014). The NCSBN National Simulation Study: A longitudinal, randomized, controlled study replacing clinical hours with simulation in prelicensure nursing education. _Journal of Nursing Regulation_, 5(2 Suppl):S1–S64. https://www.journalofnursingregulation.com/article/s2155-8256(15)30062-4/fulltext — the case's primary study.],
-    [Smiley, R. A., \& Martin, B. (2023). Simulation in Nursing Education: Advancements in Regulation, 2014–2022. _Journal of Nursing Regulation_. doi:10.1016/S2155-8256(23)00086-8 — the 2023 follow-up documenting the regulatory propagation.],
     [Jeffries, P. R. (2012). _Simulation in Nursing Education: From Conceptualization to Evaluation_ (2nd ed.). National League for Nursing — the simulation-quality framework the NCSBN study's quality conditions rest on.],
     [INACSL Standards Committee (2016). _INACSL Standards of Best Practice: Simulation_. _Clinical Simulation in Nursing_, 12(S) — the simulation-practice standards downstream programs adopt as the analog of the NCSBN quality conditions.],
+    [Hayden, J. K., Smiley, R. A., Alexander, M., Kardong-Edgren, S., \& Jeffries, P. R. (2014). The NCSBN National Simulation Study: A longitudinal, randomized, controlled study replacing clinical hours with simulation in prelicensure nursing education. _Journal of Nursing Regulation_, 5(2 Suppl):S1–S64. https://www.journalofnursingregulation.com/article/s2155-8256(15)30062-4/fulltext — the case's primary study.],
+    [Smiley, R. A., \& Martin, B. (2023). Simulation in Nursing Education: Advancements in Regulation, 2014–2022. _Journal of Nursing Regulation_. doi:10.1016/S2155-8256(23)00086-8 — the 2023 follow-up documenting the regulatory propagation.],
   ),
   quote: [The result holds under conditions comparable to those described in the study — high-quality simulation, trained faculty, structured debriefing.],
   quote-source: "Editors' synthesis of Hayden et al. (2014).",
@@ -987,7 +983,7 @@
   year: "2007 – 2009",
   domains-list: ("medical education", "retention", "workforce L&D"),
   modes-code: "HKD",
-  impact: "A multi-institution RCT of 537 urology residents across the US and Canada randomized participants to bolus versus spaced-pattern email delivery of validated study questions; spaced education improved acquisition and retention of medical knowledge but did not raise In-Service Examination scores, and a follow-up showed the learning benefit persisting for two years at a modest effect size",
+  impact: "A multi-institution RCT of 537 urology residents across the U.S. and Canada randomized participants to bolus versus spaced-pattern email delivery of validated study questions; spaced education improved acquisition and retention of medical knowledge but did not raise In-Service Examination scores, and a follow-up showed the learning benefit persisting for two years at a modest effect size",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -1003,7 +999,7 @@
     medical trainees is a separate empirical question. Kerfoot et
     al. (_Journal of Urology_, 2007) ran the test that closed the
     loop. A multi-institution RCT randomized 537 urology residents
-    across US and Canadian programs to receive validated study
+    across U.S. and Canadian programs to receive validated study
     questions in either a bolus pattern (concentrated delivery) or
     a spaced pattern (distributed delivery), both via email. The
     spaced-education condition improved acquisition and retention
@@ -1036,7 +1032,7 @@
       Kerfoot et al. (_Journal of Urology_, 2007) ran the test
       that closed the loop. The study was a multi-institution
       randomized controlled trial of urology residents at
-      multiple US and Canadian residency programs. Participants
+      multiple U.S. and Canadian residency programs. Participants
       were randomized to receive validated study questions
       drawn from the American Urological Association Self-Assessment Study Program,
       delivered by email, in either a bolus pattern (concentrated
@@ -1087,7 +1083,7 @@
   ),
   beats: (
     "Spacing — one of the most robust findings in basic learning-science research; transfer to workplace-L&D in medical trainees is the empirical question",
-    "Kerfoot et al. _J Urology_ 2007 — multi-institution RCT, urology residents across US/Canada; validated study questions delivered by email in bolus vs. spaced pattern",
+    "Kerfoot et al. _J Urology_ 2007 — multi-institution RCT, urology residents across U.S./Canada; validated study questions delivered by email in bolus vs. spaced pattern",
     "Spaced-education condition improved acquisition and retention of medical knowledge against bolus comparison",
     "Kerfoot 2009 follow-up (_J Urology_ 181:2671) — learning benefit persisted for 2 years",
     "Scope discipline: speaks to email-delivered validated-question delivery pattern, not spacing in general; strongest randomized strength in the small-tier batch",
@@ -1105,9 +1101,9 @@
     ),
   ),
   references: (
+    [Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., \& Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. _Psychological Bulletin_, 132(3):354–380 — the basic-literature spacing-effect review the workplace-L&D RCT sits against.],
     [Kerfoot, B. P., Baker, H. E., Koch, M. O., Connelly, D., Joseph, D. B., \& Ritchey, M. L. (2007). Randomized, controlled trial of spaced education to urology residents in the United States and Canada. _Journal of Urology_, 177(4):1481–1487. doi:10.1016/j.juro.2006.11.074 — the case's primary RCT.],
     [Kerfoot, B. P. (2009). Learning benefits of on-line spaced education persist for 2 years. _Journal of Urology_, 181(6):2671 — the two-year persistence follow-up.],
-    [Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., \& Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. _Psychological Bulletin_, 132(3):354–380 — the basic-literature spacing-effect review the workplace-L&D RCT sits against.],
     [Settles, B., \& Meeder, B. (2016). A trainable spaced repetition model for language learning. _Proceedings of ACL 2016_, 1848–1858 — Duolingo half-life regression (Case 69), the operational deployment companion.],
   ),
   quote: [On-line spaced education can generate improvements in learning that are retained 2 years later.],
@@ -1159,7 +1155,6 @@
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
-  evidence-flag: "preprint-tier",
   induced-anchor: "2.3",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2, LEO-4, LEO-5",
@@ -1180,21 +1175,19 @@
     cross-listed with the corporate / workforce L&D cluster
     (Cases 79, 65, 83, 70) and with the non-US/UK/EU
     geographic-coverage gap (Cases 93, and the cases in the
-    later supplemental batches). Evidence-tier flag is
-    preprint-tier: the medRxiv version is preprint and the PMC
-    version is journal-published — the editor's citation choice
-    should be carried explicitly. Future validation on whether
-    L1–L2 knowledge gains translate to L3 behavior change or
-    L4 patient outcomes remains ongoing.
+    later supplemental batches). The study is journal-published
+    (the medRxiv item is its preprint), so the open question is
+    not review but reach: whether L1–L2 knowledge gains translate
+    to L3 behavior change or L4 patient outcomes is untested.
   ],
   sections: (
     [
-      PEPFAR (the US President's Emergency Plan for AIDS
+      PEPFAR (the U.S. President's Emergency Plan for AIDS
       Relief) has been one of the largest sustained global
       health programs of the past two decades. Workforce
       capability — clinicians and frontline workers trained on
       current HIV diagnosis, treatment, and prevention
-      protocols — is one of its load-bearing deliverables.
+      protocols — is one of its core deliverables.
       COVID disruption halted in-person training in March 2020 and forced a switch to virtual and blended delivery by May 2021, before any of the evidence base on
       modality equivalence had been built for this
       workforce.#cn()
@@ -1238,11 +1231,11 @@
       across the deployment region.#cn()
     ],
     [
-      The evidence-tier flag is preprint-tier: the medRxiv
-      version is the preprint; the PMC version is the
-      journal-published article. The editor's citation choice
-      between the two should be carried explicitly in the
-      printed case. The LENS teaching point is the
+      The sourcing is settled: the medRxiv version is the
+      preprint and the PMC version is the journal-published
+      article, and the case cites the published one. What is not
+      settled is whether the measured gains reach behavior or
+      outcomes. The LENS teaching point is the
       cross-listed pair with the corporate / workforce L&D
       cluster (Cases 79, 65, 83, 70) and the non-US/UK/EU
       cluster (Cases 93). The subobjective *Judgment under
@@ -1255,7 +1248,7 @@
     "2023 study: pre/post assessments across knowledge and self-confidence domains showed mean increases regardless of modality (in-person, virtual, blended)",
     "Kirkpatrick L1–L2 limitation explicit: outcomes are knowledge and self-rated confidence, not L3 behavior change or L4 patient outcomes (Case 79)",
     "Rare real-world cross-country modality comparison at meaningful scale; multi-country scope limits single-country confounding",
-    "Preprint-tier flag: medRxiv preprint and PMC published; editor citation choice carried explicitly; future validation on L3/L4 ongoing",
+    "Journal-published (medRxiv item is its preprint); L3 behavior and L4 outcome measurement remain untested",
   ),
   approaches: (
     during: (
@@ -1266,7 +1259,7 @@
     after: (
       [Pair with Case 93 (SkillsFuture) as the workforce-capability counterparts at national- and multi-country scale; together they teach what L&D measurement looks like in non-US/UK/EU settings with the evidence-tier honesty intact.],
       [Use the subobjective *Judgment under inadequate evidence* (4.4): the study is the strongest evidence the field has on modality choice in this context, and the practitioner has to trade larger in-person gains against wider online reach on L1–L2 evidence while L3/L4 evidence develops.],
-      [Carry the preprint-tier flag honestly: the medRxiv preprint and the PMC published article are both citable; future validation requires confirmatory replication and L3/L4 outcome measurement.],
+      [Carry the measurement limit honestly: the study is journal-published, and what it does not establish is L3 behavior change or L4 patient outcomes; confirmatory replication is the outstanding step.],
     ),
   ),
   references: (
@@ -1281,10 +1274,8 @@
     PEPFAR's 16-country modality comparison is the L&D
     evaluation pattern in global health: mean L1–L2 gains
     across all modalities, with the Kirkpatrick limitation
-    (Case 79) explicit. Evidence-tier flag is preprint-tier
-    — both the medRxiv preprint and the PMC published
-    version are citable — and the L3 / L4 questions remain
-    open. Future validation is ongoing.
+    (Case 79) explicit. The study is journal-published; the
+    L3 and L4 questions are what remain open.
   ],
   lens-approach: [
     PEPFAR is the global-health workforce-capability case
@@ -1306,7 +1297,7 @@
   reflection-list: (
     [Identify a training program in your context that was forced to switch modality under disruption (COVID, budget constraint, geographic dispersion). What evidence would you have needed at the time to make the modality decision well, and at which Kirkpatrick level was the available evidence?],
     [Specify the L3 / L4 measurement architecture you would build to extend the PEPFAR study into behavior-change and patient-outcome evidence — what data sources, what cadence, what linkage between training cohort and clinical outcomes.],
-    [The case is preprint-tier: both the medRxiv preprint and the PMC published version are citable. What additional confirmatory evidence — replication in different country sets, L3 / L4 follow-up studies, peer-reviewed meta-analysis — would you require before treating the modality trade-off as settled for program-design decisions?],
+    [The case is journal-published and stops at L1–L2. What additional confirmatory evidence — replication in different country sets, L3 / L4 follow-up studies, peer-reviewed meta-analysis — would you require before treating the modality trade-off as settled for program-design decisions?],
   ),
   courses: ("LEN 2", "LEN 4", "LEN 7"),
 )
@@ -1328,7 +1319,7 @@
     femoral insertion site, and remove unnecessary catheters — and not one of them was unknown
     to the physicians it governed. The question was never what to do, but
     whether it would be done every time. The Keystone project, launched
-    across 103 Michigan ICUs in 2004, paired the checklist with a cultural change: nurses were empowered to stop the procedure, in non-emergency situations, whenever a step was skipped. That authorization is the element the case treats as load-bearing — though it
+    across 103 Michigan ICUs in 2004, paired the checklist with a cultural change: nurses were empowered to stop the procedure, in non-emergency situations, whenever a step was skipped. That authorization is the element the case treats as decisive — though it
     rode inside a multi-component bundle (clinician education, a dedicated line
     cart, daily catheter-review goals, and monthly infection-rate feedback) that
     the trial tested as a whole and could not decompose. Central-line-associated bloodstream infections
@@ -1377,12 +1368,13 @@
     ],
     // -- What Transferred --
     [
-      Keystone became the clearest evidence in healthcare that a technical
-      intervention without an authority change produces no durable
-      improvement — and vice versa. The model was packaged as the AHRQ CUSP
-      toolkit, adopted in more than forty states, and replicated
-      internationally, establishing the design principle of intervening in
-      matched technical-and-cultural pairs. Packaging the approach as a
+      What Keystone established was not which component worked but that
+      the bundle worked and traveled. The model was packaged as the AHRQ
+      CUSP toolkit, adopted in more than forty states, and replicated
+      internationally — the checklist, the nurse-stop authorization, the
+      line cart, the daily goals sheet, and the monthly infection
+      feedback moving together, because that is the unit the evidence
+      covers. Packaging the approach as a
       reusable toolkit was itself part of what transferred — it turned a
       single project's success into something other institutions could adopt
       without rediscovering the load-bearing role of the authority change.#cn()
@@ -1391,27 +1383,27 @@
   beats: (
     "Central-line infections persisted because nurses lacked procedural path to intervene across the authority gradient",
     "Pronovost paired a five-item sterile checklist with a required nurse stop authority",
-    "Requirement, not permission, plus an impersonal trigger made the stop usable against senior physicians",
+    "An institutional warrant rather than a personal one, triggered by a missed item rather than a judgment",
     "CLABSI rates fell near zero across 103 ICUs; effect sustained at ten years",
-    "Packaged as the AHRQ CUSP toolkit, replicated in forty states and internationally as paired design",
+    "Packaged as the AHRQ CUSP toolkit and replicated in forty states and internationally as a whole bundle",
   ),
   references: (
-    [Pronovost, P. et al. (2006), "An Intervention to Decrease Catheter-Related Bloodstream Infections in the ICU," _NEJM_ 355 — the trial and the near-zero result.],
     [Pronovost & Vohr (2010), _Safe Patients, Smart Hospitals_ — the checklist-plus-nurse-authority pairing (paraphrased).],
+    [Pronovost, P. et al. (2006), "An Intervention to Decrease Catheter-Related Bloodstream Infections in the ICU," _NEJM_ 355 — the trial and the near-zero result.],
+    [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — the critique: the Keystone result cannot be attributed cleanly to the checklist, and the bundle's active ingredient is not established.],
     [Pronovost, P. et al. (2016), \"Sustaining Reductions in CLABSI in Michigan ICUs: A 10-Year Analysis,\" _Am J Med Qual_ 31(3):197–202 — the effect sustained through 2013.],
     [Agency for Healthcare Research and Quality, CUSP toolkit — dissemination across states.],
-    [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — the authorization, not the list, as the active ingredient.],
   ),
-  quote: [The checklist was the technical intervention. The nurses' authority to enforce it was the cultural intervention. Neither worked without the other.],
-  quote-source: "Paraphrasing Pronovost & Vohr, Safe Patients, Smart Hospitals, 2010",
+  quote: [The checklist gave the nurse an impersonal reason to stop: a missed item rather than a judgment about the physician.],
+  quote-source: "Editors' synthesis of Pronovost & Vohr, Safe Patients, Smart Hospitals, 2010",
   le-insight: [
-    Keystone is the clearest evidence in healthcare that a technical
-    intervention without authority intervention produces no durable change,
-    and authority intervention without a technical artifact produces no
-    measurable change. Both are necessary. The empirical record of
-    Keystone is the strongest available argument for designing interventions
-    as *pairs* — and treating the cultural half as engineering, not
-    aspiration.
+    Keystone is the strongest healthcare evidence that a protocol and the
+    authority to enforce it should be designed and shipped together — and
+    the clearest demonstration of what a bundled trial cannot tell you
+    afterwards. The result is large, durable, and widely replicated; it
+    does not decompose. Treating the cultural half as engineering rather
+    than aspiration is the commitment the case supports. Naming which
+    half carried the effect is not.
   ],
   lens-approach: [
     LENS uses Keystone in LEN 4 and LEN 10 as the canonical worked example
@@ -1554,9 +1546,9 @@
     ),
   ),
   references: (
+    [Sendak et al. (2020), "Real-world integration of a sepsis deep learning technology into routine clinical care: implementation study," _JMIR Medical Informatics_ 8(7):e15182 (Sepsis Watch implementation).],
     [Adams et al. (2022), "Prospective, multi-site study of patient outcomes after implementation of the TREWS machine learning-based early warning system for sepsis," _Nature Medicine_ 28(7):1455–1460, doi:10.1038/s41591-022-01894-0.],
     [Henry et al. (2022), "Factors driving provider adoption of the TREWS machine learning-based early warning system and its effects on sepsis treatment timing," _Nature Medicine_ 28(7):1447–1454, doi:10.1038/s41591-022-01895-z.],
-    [Sendak et al. (2020), "Real-world integration of a sepsis deep learning technology into routine clinical care: implementation study," _JMIR Medical Informatics_ 8(7):e15182 (Sepsis Watch implementation).],
     [Wong et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model," _JAMA Internal Medicine_ 181(8):1065–1070 — the foil case (102).],
   ),
   quote: [The benefit is not the model. It is the model used as part of a system clinicians can act on.],
@@ -1710,9 +1702,9 @@
     ),
   ),
   references: (
-    [Treloar, E., Herath, M., Altree, M., Potter, S., Penhall, M., Walsh, D., Kennedy, L., Bruening, M., Edwards, S., Ey, J. D., Bradshaw, E. L., & Maddern, G. J. (2025), "A Simple Solution for a Complex Problem: The 'Sterile Cockpit' to Improve Ward Rounds," _World Journal of Surgery_ 49(10):2769–2776, doi:10.1002/wjs.70074, PMID:40930848, PMCID:PMC12515027 — the cited adaptation study.],
     [Federal Aviation Administration, 14 CFR § 121.542 (codified 1981) — origin of the aviation sterile-cockpit rule.],
     [Starmer, A. J. et al. (2014), "Changes in medical errors after implementation of a handoff program," _New England Journal of Medicine_ 371(19):1803–1812 — I-PASS handoff intervention; structural cousin in the structured-information half of handoff capability.],
+    [Treloar, E., Herath, M., Altree, M., Potter, S., Penhall, M., Walsh, D., Kennedy, L., Bruening, M., Edwards, S., Ey, J. D., Bradshaw, E. L., & Maddern, G. J. (2025), "A Simple Solution for a Complex Problem: The 'Sterile Cockpit' to Improve Ward Rounds," _World Journal of Surgery_ 49(10):2769–2776, doi:10.1002/wjs.70074, PMID:40930848, PMCID:PMC12515027 — the cited adaptation study.],
     [Broom, M. A., Capek, A. L., Carachi, P., Akeroyd, M. A., & Hilditch, G. (2011), "Critical phase distractions in anaesthesia and the sterile cockpit concept," _Anaesthesia_ 66(3):175–179 — prior anesthesia-domain sterile-cockpit adaptation establishing the cross-domain transfer pattern.],
   ),
   quote: [The scoping is the adaptation. Sterile cockpit is "below 10,000 feet"; the clinical analog is a defined window with defined permitted interruption classes.],
@@ -1857,11 +1849,12 @@
     ),
   ),
   references: (
-    [Morath, B., Chiriac, U., Jaszkowski, E., et al. (2024). \"Performance and risks of ChatGPT used in drug information: an exploratory real-world analysis,\" _European Journal of Hospital Pharmacy_ 31(6):491–497 — only 13 of 50 answers correct and complete enough to act on without risk of harm.],
-    [Sallam, M. (2023). "ChatGPT Utility in Healthcare Education, Research, and Practice: Systematic Review on the Promising Perspectives and Valid Concerns," _Healthcare_ 11(6):887 — 60 records reviewed; benefits cited in 85%, with the accuracy and citation concerns alongside.],
-    [Bhattacharyya, M., Miller, V. M., Bhattacharyya, D., \& Miller, L. E. (2023). \"High Rates of Fabricated and Inaccurate References in ChatGPT-Generated Medical Content,\" _Cureus_ 15(5):e39238 — 47% of 115 generated references fabricated.],
-    [World Health Organization (2024). _Ethics and Governance of Artificial Intelligence for Health: Guidance on Large Multi-Modal Models_, 18 January 2024 — names automation bias by health care professionals and the risk of false or inaccurate output.],
     [Wachter, R. M., & Brynjolfsson, E. (2024). \"Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?\" _JAMA_ 331(1):65–69, doi:10.1001/jama.2023.25054 — genAI adoption and the productivity paradox in health care.],
+    [Morath, B., Chiriac, U., Jaszkowski, E., et al. (2024). \"Performance and risks of ChatGPT used in drug information: an exploratory real-world analysis,\" _European Journal of Hospital Pharmacy_ 31(6):491–497 — only 13 of 50 answers correct and complete enough to act on without risk of harm.],
+    [Bhattacharyya, M., Miller, V. M., Bhattacharyya, D., \& Miller, L. E. (2023). \"High Rates of Fabricated and Inaccurate References in ChatGPT-Generated Medical Content,\" _Cureus_ 15(5):e39238 — 47% of 115 generated references fabricated.],
+    [Triplett, S., Ness-Engle, G. L., & Behnen, E. M. (2025). \"A comparison of drug information question responses by a drug information center and by ChatGPT,\" _American Journal of Health-System Pharmacy_ 82(8):448–460, doi:10.1093/ajhp/zxae316 — pharmacist-rated overall accuracy of 50% across the ChatGPT responses.],
+    [World Health Organization (2024). _Ethics and Governance of Artificial Intelligence for Health: Guidance on Large Multi-Modal Models_, 18 January 2024 — names automation bias by health care professionals and the risk of false or inaccurate output.],
+    [Sallam, M. (2023). "ChatGPT Utility in Healthcare Education, Research, and Practice: Systematic Review on the Promising Perspectives and Valid Concerns," _Healthcare_ 11(6):887 — 60 records reviewed; benefits cited in 85%, with the accuracy and citation concerns alongside.],
   ),
   quote: [LLMs produce hallucinations indistinguishable in tone from accurate information, and clinicians have not yet developed the practice of routine verification.],
   quote-source: "Editors' synthesis of JAMA editorials on LLM clinical use (2023–2024)",
@@ -1911,7 +1904,7 @@
   year: "2008 – present",
   domains-list: ("healthcare",),
   modes-code: "TN",
-  impact: "Death rate 1.5% → 0.8% in eight-site pilot; complications down >33%; adopted, a decade on, by facilities in 70% of the world's countries; Ontario population study (2014) found no significant mortality benefit after a mandated rollout",
+  impact: "Death rate 1.5% → 0.8% in eight-site pilot; complications down >33%; adopted, a decade on, by facilities in 70% of the world's countries; Ontario population study (2014) found no significant mortality benefit after a province-wide rollout",
   diagram: dgm.dgm-who,
   kind: "intervention",
   scale: "big",
@@ -1991,8 +1984,9 @@
       1.5% to 0.8% and major complications dropping by more than a third
       across all eight sites — confirming Gawande's framing that "gaps in
       teamwork and safety practices in surgery are substantial in countries
-      both rich and poor." The checklist spread fast: a decade on,
-      facilities in 70% of the world's countries reported using it. That
+      both rich and poor." The checklist spread fast: a decade on, the
+      Ariadne Labs / Lifebox review found facilities in 70% of the
+      world's countries attesting to its use. That
       the pooled death rate roughly halved, and that complication rates
       fell at all eight sites — significantly at three — despite their
       differences in wealth and practice, is what made the result so
@@ -2009,9 +2003,12 @@
     [
       Urbach and colleagues, writing in _NEJM_ in 2014, examined more
       than 200,000 procedures across 101 Ontario hospitals before and
-      after a province-wide mandated rollout and found no statistically
-      significant reduction in operative mortality, in-hospital
-      complications, length of stay, or readmission. The null result
+      after a province-wide rollout — Ontario's health ministry had
+      required hospitals to publicly report their checklist compliance
+      rate from July 2010, which is to say it mandated the reporting
+      rather than the pause — and found no statistically significant
+      reduction in operative mortality, in-hospital complications,
+      length of stay, or readmission. The null result
       did not refute the checklist so much as illustrate its dependence
       on implementation fidelity: where a mandate replaced genuine
       authorization of the pause, the measured effect attenuated, making
@@ -2040,6 +2037,7 @@
     [Gawande, A. (2009), _The Checklist Manifesto_ — the pause as the active mechanism.],
     [Urbach, D. et al. (2014), "Introduction of Surgical Safety Checklists in Ontario, Canada," _NEJM_ — null mortality result after mandate.],
     [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — implementation fidelity.],
+    [Buissonniere, M. (2020), _Checking In on the Checklist_, Ariadne Labs and Lifebox — the decade review: facilities in 70% of the world's countries attest to using the checklist, with adoption far lower in low-income settings.],
   ),
   quote: [Gaps in teamwork and safety practices in surgery are substantial in countries both rich and poor.],
   quote-source: "Atul Gawande, Harvard Gazette, January 2009",
@@ -2196,10 +2194,10 @@
     "The registry model extended across NHS specialties and pairs with bedside protocols like Keystone",
   ),
   references: (
-    [Kennedy, I. (2001), _Learning from Bristol: The Report of the Public Inquiry into Children's Heart Surgery at the Bristol Royal Infirmary 1984–1995_ — the inquiry and recommendations (paraphrased).],
+    [Kennedy, I. (2001), _Learning from Bristol: The Report of the Public Inquiry into Children's Heart Surgery at the Bristol Royal Infirmary 1984–1995_ — the inquiry and its recommendations, paraphrased; the pull quote is verbatim from paragraph 18 of the Final Report Summary, and differs in wording from Recommendation 155, which carries the same requirement.],
     [Society for Cardiothoracic Surgery in GB & Ireland, national outcomes reports — the registry and surgeon-level publication.],
     [Berwick, D. (2013), _A Promise to Learn — A Commitment to Act_ — the broader NHS-safety reform.],
-    [Sherlaw-Johnson et al. — risk-adjusted outcome methodology.],
+    [Sherlaw-Johnson, C., Gallivan, S., Treasure, T. & Nashef, S. A. M. (2004), "Computer tools to assist the monitoring of outcomes in surgery," _European Journal of Cardio-Thoracic Surgery_ 26(5):1032–1036 — risk-adjusted outcome monitoring (variable life-adjusted display) as it developed in UK cardiac surgery.],
     [NHS national clinical audit and registry documentation — extension across specialties.],
   ),
   quote: [Patients should be able to gain access to information about the relative performance of a hospital, or a particular service or consultant unit.],
@@ -2320,7 +2318,7 @@
       national adoption of the 2021 CKD-EPI creatinine equation, which
       eliminates the race coefficient. The replacement equation was
       published in parallel (Inker et al., _NEJM_ 2021). The large commercial
-      laboratories moved within months; a March 2022 survey of US
+      laboratories moved within months; a March 2022 survey of U.S.
       laboratories found 30.3% had adopted the new equation.#cn() In December 2022 the governance response
       reached past the equation itself: the OPTN mandated that
       kidney-transplant programs review their waiting lists and
@@ -2332,7 +2330,7 @@
     ],
     [
       The hedge in both the Task Force report and the follow-up
-      commentary is load-bearing and is preserved in the case. The new
+      commentary is binding and is preserved in the case. The new
       equation introduces a small bias for all groups relative to
       measured GFR; the *net effect on documented disparities in
       nephrology care and transplant access* is not yet measured at
@@ -2377,11 +2375,12 @@
     ),
   ),
   references: (
+    [Vyas, Eisenstein, & Jones (2020), "Hidden in Plain Sight — Reconsidering the Use of Race Correction in Clinical Algorithms," _NEJM_ 383(9):874–882 — broader race-in-algorithms survey.],
+    [Eneanya, Yang, & Reese (2019), "Reconsidering the Consequences of Using Race to Estimate Kidney Function," _JAMA_ 322(2):113–114 — the equity argument that motivated the revision.],
+    [Genzen, J. R., Souers, R. J., Pearson, L. N., et al. (2022), "Reported Awareness and Adoption of 2021 Estimated Glomerular Filtration Rate Equations Among US Clinical Laboratories, March 2022," _JAMA_ 328(20):2060–2062, doi:10.1001/jama.2022.15404 — the College of American Pathologists survey: 1,124 of 3,708 responding U.S. laboratories (30.3%) had adopted the 2021 CKD-EPI creatinine equation.],
     [Delgado et al. (2021), "A Unifying Approach for GFR Estimation: Recommendations of the NKF-ASN Task Force on Reassessing the Inclusion of Race in Diagnosing Kidney Disease," _American Journal of Kidney Diseases_ 79(2):268–288 (published online 2021; in print vol. 79, 2022), doi:10.1053/j.ajkd.2021.08.003. Cited by online-first year, the year of the Task Force recommendation.],
     [Inker et al. (2021), "New Creatinine- and Cystatin C-Based Equations to Estimate GFR without Race," _New England Journal of Medicine_ 385(19):1737–1749, doi:10.1056/NEJMoa2102953.],
     [OPTN/UNOS (2022–2023), "Kidney waiting-time modifications for candidates affected by race-inclusive eGFR calculations" — the mandated backdating of Black candidates' accrued waiting time (effective January 2023).],
-    [Eneanya, Yang, & Reese (2019), "Reconsidering the Consequences of Using Race to Estimate Kidney Function," _JAMA_ 322(2):113–114 — the equity argument that motivated the revision.],
-    [Vyas, Eisenstein, & Jones (2020), "Hidden in Plain Sight — Reconsidering the Use of Race Correction in Clinical Algorithms," _NEJM_ 383(9):874–882 — broader race-in-algorithms survey.],
   ),
   quote: [What counts as the same patient across race is a construct-definition decision, not a downstream remediation.],
   quote-source: "Editors' synthesis of Delgado et al. (2021) and Vyas et al. (2020).",
@@ -2404,7 +2403,7 @@
     standard. Direct trio with Case 26 (pulse oximetry — the
     validation-architecture mechanism) and Case 6 (pain
     assessment — the human-development mechanism). Adjacent to the
-    lending pair (Cases 186–113) at a different layer.
+    lending pair (Cases 186 and 196) at a different layer.
   ],
   literature-items: (
     [Delgado et al. (2021), _American Journal of Kidney Diseases_],
@@ -2532,10 +2531,10 @@
     ),
   ),
   references: (
-    [Sjoding, Dickson, Iwashyna, Gay, & Valley (2020), "Racial Bias in Pulse Oximetry Measurement," _New England Journal of Medicine_ 383(25):2477–2478, doi:10.1056/NEJMc2029240.],
     [Jubran & Tobin (1990), "Reliability of Pulse Oximetry in Titrating Supplemental Oxygen Therapy in Ventilator-Dependent Patients," _Chest_ 97(6):1420–1425 — original finding, published thirty years earlier.],
-    [FDA (2025), "Pulse Oximeters for Medical Purposes — Non-Clinical and Clinical Performance Testing, Labeling, and Premarket Submission Recommendations: Draft Guidance for Industry and Food and Drug Administration Staff," issued January 6 2025, Docket No. FDA-2023-N-4976; Federal Register notice 2024-31540, published January 7 2025 — the regulatory corrective-action artifact, language may evolve in final.],
     [Fawzy et al. (2022), "Racial and Ethnic Discrepancy in Pulse Oximetry and Delayed Identification of Treatment Eligibility Among Patients With COVID-19," _JAMA Internal Medicine_ — downstream effect during the pandemic.],
+    [Sjoding, Dickson, Iwashyna, Gay, & Valley (2020), "Racial Bias in Pulse Oximetry Measurement," _New England Journal of Medicine_ 383(25):2477–2478, doi:10.1056/NEJMc2029240.],
+    [FDA (2025), "Pulse Oximeters for Medical Purposes — Non-Clinical and Clinical Performance Testing, Labeling, and Premarket Submission Recommendations: Draft Guidance for Industry and Food and Drug Administration Staff," issued January 7 2025, Docket No. FDA-2023-N-4976; Federal Register notice 2024-31540, published January 7 2025 — the regulatory corrective-action artifact, language may evolve in final.],
   ),
   quote: [Aggregate accuracy is not group accuracy. A device can be acceptable on average and unsafe for one population.],
   quote-source: "Editors' synthesis of Sjoding et al. (2020) and the FDA 2025 draft guidance.",
@@ -2598,15 +2597,20 @@
     (_JAMA_, 1986) published the Harvard Medical School minimum
     monitoring standards — which mandated an oxygen analyzer and
     disconnection alarm and *encouraged* the newer continuous pulse
-    oximetry and capnography, the load-bearing additions designed to
+    oximetry and capnography, the additions designed to
     make hypoxemia and misplaced endotracheal tubes detectable early
     enough to recover; both were required by later ASA revisions
-    (pulse oximetry ~1989–90, capnography ~1991). The ASA adopted
+    (pulse oximetry from the 1989 amendment; expired-CO2 confirmation
+    of tube placement in the early 1990s; continual capnography in
+    general anesthesia from the amendment effective July 1999). The ASA adopted
     essentially the same standards in 1986. The Anesthesia Patient Safety Foundation, founded in
     1985, institutionalized the broader change-management effort.
     Anesthesia-related mortality fell dramatically over subsequent
-    decades — one widely cited Brazilian systematic review reports fewer
-    zero — and malpractice premiums declined alongside. The field's
+    decades — Braz et al.'s systematic review of 33 studies published
+    between 1954 and 2007 puts Brazilian and worldwide
+    anaesthesia-related mortality at fewer than one death per 10,000
+    anaesthetics over its final two decades — and malpractice
+    premiums declined alongside. The field's
     own histories preserve the hedge: the decline has multiple
     co-varying causes (training, device design, pharmacology, team
     composition), and the device standards themselves still fail in
@@ -2640,9 +2644,11 @@
       minimum set of continuous monitors for every anesthetized
       patient. Pulse oximetry and capnography — then just entering
       wide use — were *encouraged* rather than required in the 1986
-      text, and became the load-bearing additions when later
-      revisions mandated them (pulse oximetry ~1989–90, capnography
-      ~1991).#cn()
+      text, and became the additions when later revisions mandated
+      them: pulse oximetry in the 1989 amendment, identification of
+      expired carbon dioxide to verify tube placement in the early
+      1990s, and continual capnography through a general anesthetic
+      in the amendment effective July 1999.#cn()
     ],
     [
       Pulse oximetry made oxygenation continuously visible to the
@@ -2659,8 +2665,11 @@
     ],
     [
       Anesthesia-related mortality fell dramatically over the
-      subsequent decades. A widely cited Brazilian systematic review
-      decline toward zero. Malpractice premiums for anesthesiology
+      subsequent decades. Braz and colleagues, reviewing 33 studies
+      published between 1954 and 2007, put both Brazilian and
+      worldwide anaesthesia-related mortality at fewer than one death
+      per 10,000 anaesthetics over the final two decades of that
+      window. Malpractice premiums for anesthesiology
       declined alongside — one of the few examples in American
       medicine of a specialty's malpractice cost falling as the
       specialty's safety record improved. The case is regularly
@@ -2672,7 +2681,7 @@
     ],
     [
       The hedges the field's own histories preserve are
-      load-bearing. The mortality decline has multiple co-varying
+      decisive. The mortality decline has multiple co-varying
       causes — anesthetist training, device design improvements,
       pharmacological change (newer agents are inherently safer),
       team composition with broader monitoring presence, and the
@@ -2709,10 +2718,11 @@
   ),
   references: (
     [Eichhorn, Cooper, Cullen, Maier, Philip, & Seeman (1986), "Standards for Patient Monitoring During Anesthesia at Harvard Medical School," _JAMA_ 256(8):1017–1020.],
+    [American Society of Anesthesiologists, "Standards for Basic Anesthetic Monitoring," approved 21 October 1986 and amended since — the original standard and the amendment sequence that made pulse oximetry required (1989), expired-CO2 verification of tube placement required (early 1990s), and continual capnography through a general anesthetic required (effective July 1999).],
     [Eichhorn (1989), "Prevention of intraoperative anesthesia accidents and related severe injury through safety monitoring," _Anesthesiology_ 70(4):572–577.],
+    [Braz, L. G., Módolo, N. S. P., do Nascimento, P. Jr., et al. (2009), "Mortality in anesthesia: a systematic review," _Clinics_ (São Paulo) 64(10):999–1006 — 33 studies, 1954–2007; anaesthesia-related mortality below one death per 10,000 anaesthetics in the final two decades.],
     [Anesthesia Patient Safety Foundation (1985 – present), founding documents and the _APSF Newsletter_ — institutional-history record of the broader change effort.],
-    [American Society of Anesthesiologists (1986), "Standards for Basic Anesthetic Monitoring" — original ASA standard.],
-    [Sjoding et al. (2020), _NEJM_ — the racial-bias edge case the standard still carries (cross-reference Case 26).],
+    [Sjoding et al. (2020), "Racial Bias in Pulse Oximetry Measurement," _NEJM_ 383(25):2477–2478 — the racial-bias edge case the standard still carries (cross-reference Case 26).],
   ),
   quote: [The deliverable is not the device. It is the standard that makes the device's signal non-waiverable across the specialty.],
   quote-source: "Editors' synthesis of Eichhorn et al. (1986) and APSF founding documents.",
@@ -2776,14 +2786,15 @@
     those studies showed some positive outcomes, the evidence base
     for linking IPE to measurable changes in practice and patient
     outcomes was thin. The IOM report (2015) made the gap the
-    central finding: the commissioned review it carries as Appendix
-    and it proposed a conceptual model for doing the measurement
-    properly. The case is the canonical instance in the corpus of
+    central finding: the commissioned review it carries as Appendix A
+    names a paucity of high-quality research measuring IPE's impact on
+    practice processes and patient outcomes, and it proposed a
+    conceptual model for doing the measurement properly. The case is the canonical instance in the corpus of
     a large, sincere, multidisciplinary translation effort whose
     core problem is that the field cannot yet measure whether the
     intervention works. It is the case-grounded basis for the
     enthusiasm-evidence gap as a curricular concept and motivates
-    the Domain 3 sub-competency proposed in
+    the Domain 3 subobjective *Collaboration measurement* (3.4)
     — the recurring pattern that a field
     instruments its enthusiasm faster than its outcomes.
   ],
@@ -2818,14 +2829,16 @@
       The IOM's 2015 report, _Measuring the Impact of
       Interprofessional Education on Collaborative Practice and
       Patient Outcomes_, made the evidence gap the central
-      finding. The commissioned review the report carries as Appendix A puts
+      finding. The commissioned review the report carries as Appendix A puts it
+      plainly: there is a paucity of high-quality research measuring the
+      impact of interprofessional education on practice processes and
       patient outcomes. The report proposed a conceptual model for
       doing the measurement properly — a chain from IPE
       intervention through learner outcome, collaborative
       behavior, organizational practice, and patient outcome —
       and named the methodological work the field had to do to
       get from the current evidence state to a defensible causal
-      claim. The report is itself the load-bearing artifact: a
+      claim. The report is itself the artifact: a
       national-academy synthesis that the central problem of the
       field is the evidence architecture, not the intervention.#cn()
     ],
@@ -2838,8 +2851,8 @@
       strongest synthesis of the outcome literature concludes that
       the field instrumented its enthusiasm faster than it
       instrumented outcomes. The case is the case-grounded basis
-      for the Domain 3 sub-competency proposed in
-      — naming the enthusiasm-evidence gap as a
+      for the Domain 3 subobjective *Collaboration measurement*
+      (3.4) — naming the enthusiasm-evidence gap as a
       canonical anti-pattern — and for the subobjective *Judgment
       under inadequate evidence* (4.4): practitioners and program
       designers in IPE have had to decide for decades on what to
@@ -2848,13 +2861,13 @@
     ],
     [
       In pair with the Colorado CTSA team-science training case
-      (121) and implementation-science training (123), IPE is
+      (40) and implementation-science training (41), IPE is
       the frontier endpoint of the multidisciplinary-translation
       thread. Team science showed the measurement can be done at
       single-program scale with a validated instrument; IPE
       shows what happens when the field-scale evidence
       architecture has not been built. The pair-plus-trio
-      teaches the Domain 3 sub-competency in both
+      teaches the Domain 3 collaboration-measurement subobjective in both
       directions: collaboration as a unit of measurement is
       possible (Case 40), and the field-scale evidence is
       structurally absent (this case).
@@ -2865,7 +2878,7 @@
     "Reeves et al. Cochrane 2013: only 15 studies from 1999–2011 met inclusion; evidence base thin for linking IPE to practice and patient outcomes",
     "IOM 2015 makes the gap the central finding; its Appendix A review names a 'paucity of high-quality research' on practice processes and patient outcomes; proposes a conceptual model for doing the measurement",
     "Canonical enthusiasm-evidence gap case — field instruments enthusiasm faster than outcomes; basis for Domain 3 sub-competency",
-    "Pair with Case 40 (team-science training) and 123 (implementation-science training) — collaboration measurement is possible at program scale, absent at field scale",
+    "Pair with Case 40 (team-science training) and 41 (implementation-science training) — collaboration measurement is possible at program scale, absent at field scale",
   ),
   approaches: (
     during: (
@@ -2883,7 +2896,7 @@
     [Reeves, Perrier, Goldman, Freeth, & Zwarenstein (2013), "Interprofessional education: effects on professional practice and healthcare outcomes (update)," _Cochrane Database of Systematic Reviews_, doi:10.1002/14651858.CD002213.pub3.],
     [Institute of Medicine (2015), _Measuring the Impact of Interprofessional Education on Collaborative Practice and Patient Outcomes_, National Academies Press, doi:10.17226/21726, NCBI Bookshelf NBK338360.],
     [WHO (2010), _Framework for Action on Interprofessional Education and Collaborative Practice_ — the international policy backdrop.],
-    [v2 paired cases: Team-science training (121), Implementation-science training (123).],
+    [v2 paired cases: Team-science training (Case 40), Implementation-science training (Case 41).],
   ),
   quote: [The field instrumented its enthusiasm faster than its outcomes. The strongest synthesis names the gap as the central finding, not the intervention as the failure.],
   quote-source: "Editors' synthesis of Reeves et al. (2013) and IOM (2015).",
@@ -2901,7 +2914,7 @@
     IPE is the field-scale enthusiasm-evidence-gap case
     (induced 2.1; LENS D4/PT5). LENS uses it in Domain 4
     (Test and Evaluation) as the case-grounded basis for the
-    enthusiasm-evidence-gap sub-competency and for the
+    enthusiasm-evidence-gap reading of subobjective 3.4 and for the
     subobjective *Judgment under inadequate evidence* (4.4) — IPE is the
     pattern's largest instance. Pair with Case 40 (team-
     science training, where measurement is possible at program
@@ -2928,7 +2941,7 @@
   year: "2010",
   domains-list: ("clinical care", "patient safety", "health IT"),
   modes-code: "HKD",
-  impact: "A before-and-after study at an academic medical center associated bar-code electronic medication administration (bar-code eMAR) with a 41.4% reduction in nontiming administration errors and a 50.8% reduction in potential adverse drug events; transcription errors on order transcription were eliminated (6.1% to zero); a later single-site rollout reported a 55.4% reduction in actual patient-harm events",
+  impact: "A before-and-after study at an academic medical center associated bar-code electronic medication administration (bar-code eMAR) with a 41.4% reduction in nontiming administration errors and a 50.8% reduction in potential adverse drug events; transcription errors on order transcription were eliminated (6.1% to zero); a later staged single-site rollout reported a 55.4% reduction in harmful medication errors, 0.65 to 0.29 per 100,000 medications",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -2950,9 +2963,10 @@
     before-and-after observational design and reported a 41.4%
     reduction in nontiming administration errors, a 50.8% reduction
     in potential adverse drug events, and the elimination of
-    transcription errors on order transcription (6.1% to zero). A later single-site
-    rollout (PMC6257885) reported a 55.4% reduction in actual
-    patient-harm events. The study is explicit that the design is
+    transcription errors on order transcription (6.1% to zero). A later staged
+    single-site rollout (Thompson et al., 2018) reported a 55.4%
+    reduction in harmful medication errors, from 0.65 to 0.29 per
+    100,000 medications. The study is explicit that the design is
     quasi-experimental — before-and-after / observational — not a
     randomized trial, and that significant workflow changes were
     required for the cue to land. The case is the canonical
@@ -2999,9 +3013,11 @@
       50.8% reduction in potential adverse drug events (the harm the
       errors would have produced), and the elimination of
       transcription errors on order transcription (6.1% to zero) upstream of
-      administration. A subsequent single-site rollout reported in
-      PMC6257885 documented a 55.4% reduction in actual
-      patient-harm events, supporting the transfer of the result
+      administration. Thompson and colleagues, tracking a staged
+      single-site rollout across fifty inpatient units in an
+      interrupted-time-series analysis, documented a 55.4% reduction
+      in harmful medication errors — 0.65 to 0.29 per 100,000
+      medications — supporting the transfer of the result
       across institutional contexts.#cn()
     ],
     [
@@ -3037,7 +3053,7 @@
     "Wrong-drug / wrong-patient administration: the cue the bedside nurse needs to catch the mismatch is structurally absent in the unaided workflow",
     "Bar-code eMAR supplies the cue in hardware: medication scan + wristband scan gated by the electronic record at the moment of administration",
     "Poon et al. NEJM 2010 — 41.4% reduction in nontiming administration errors, 50.8% in potential adverse drug events, transcription errors eliminated (6.1% to zero)",
-    "Later single-site rollout (PMC6257885) — 55.4% reduction in actual patient-harm events",
+    "Later staged single-site rollout (Thompson et al. 2018) — 55.4% reduction in harmful medication errors, 0.65 to 0.29 per 100,000 medications",
     "Hedge preserved: before-and-after / observational design, not a randomized trial; significant workflow changes were required",
   ),
   approaches: (
@@ -3055,7 +3071,7 @@
   references: (
     [Poon, E. G., Keohane, C. A., Yoon, C. S., Ditmore, M., Bane, A., Levtzion-Korach, O., Moniz, T., Rothschild, J. M., Kachalia, A. B., Hayes, J., Churchill, W. W., Lipsitz, S., Whittemore, A. D., Bates, D. W., \& Gandhi, T. K. (2010). Effect of bar-code technology on the safety of medication administration. _New England Journal of Medicine_, 362(18):1698–1707. doi:10.1056/NEJMsa0907115 — the case's primary evaluation.],
     [Bonkowski, J., Carnes, C., Melucci, J., Mirtallo, J., Prier, B., Reichert, E., Moffatt-Bruce, S., \& Weber, R. J. (2013). Effect of barcode-assisted medication administration on emergency department medication errors. _Academic Emergency Medicine_, 20(8):801–806 — adjacent transfer evidence.],
-    [Thompson, K. M., Swanson, K. M., Cox, D. L., Kirchner, R. B., Russell, J. J., Wermers, R. A., Storlie, C. B., Johnson, M. G., & Naessens, J. M. (2018), "Implementation of Bar-Code Medication Administration to Reduce Patient Harm," _Mayo Clinic Proceedings: Innovations, Quality & Outcomes_ 2(4):342–351, doi:10.1016/j.mayocpiqo.2018.09.001, PMID:30560236, PMCID:PMC6257885 — later single-site rollout reporting a 55.4% reduction in actual patient-harm events.],
+    [Thompson, K. M., Swanson, K. M., Cox, D. L., Kirchner, R. B., Russell, J. J., Wermers, R. A., Storlie, C. B., Johnson, M. G., & Naessens, J. M. (2018), "Implementation of Bar-Code Medication Administration to Reduce Patient Harm," _Mayo Clinic Proceedings: Innovations, Quality & Outcomes_ 2(4):342–351, doi:10.1016/j.mayocpiqo.2018.09.001, PMID:30560236, PMCID:PMC6257885 — later single-site rollout reporting a 55.4% reduction in harmful medication errors (0.65 to 0.29 per 100,000 medications), by interrupted time series across fifty inpatient units.],
     [Institute for Safe Medication Practices (2019), _Guidelines for Safe Electronic Communication of Medication Information_ — the display and communication standards that bar-code scanning systems and eMARs are built against.],
   ),
   quote: [The cue is supplied in hardware at the point of administration; the workflow change is part of the deliverable, and the design is observational rather than randomized.],
@@ -3096,7 +3112,7 @@
   year: "2013",
   domains-list: ("surgery", "clinical outcomes", "assessment"),
   modes-code: "HDK",
-  impact: "Twenty bariatric surgeons each submitted a representative gastric-bypass video, rated blind by at least 10 peers; skill ratings ranged 2.6–4.8; the bottom skill quartile had a higher complication rate (14.5%) than the top quartile across a registry of 10,343 patients, and greater skill was associated with fewer reoperations, readmissions, and emergency department visits",
+  impact: "Twenty bariatric surgeons each submitted a representative gastric-bypass video, rated blind by at least 10 peers; skill ratings ranged 2.6–4.8; the bottom skill quartile had a higher complication rate than the top (14.5% against 5.2%) across a registry of 10,343 patients, and greater skill was associated with fewer reoperations, readmissions, and emergency department visits",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3113,8 +3129,8 @@
     videos were rated blind by at least 10 peers on a structured
     skill scale. Skill ratings ranged from 2.6 to 4.8. Linked to a
     Michigan registry of 10,343 patients, the bottom skill quartile
-    had a higher complication rate (14.5%) than the top quartile,
-    and greater skill was associated with fewer reoperations,
+    had a higher complication rate than the top — 14.5% against
+    5.2% — and greater skill was associated with fewer reoperations,
     readmissions, and emergency department visits. The authors
     call the findings preliminary and name the skill-versus-volume
     confound explicitly: low-skill surgeons also did fewer cases
@@ -3155,8 +3171,8 @@
       The outcomes evidence linked the peer-rated skill scores to
       a Michigan registry of 10,343 patients treated by the same
       twenty surgeons. The headline finding: the bottom skill
-      quartile had a higher complication rate (14.5%) than the top
-      quartile, and greater skill was associated with fewer
+      quartile had a higher complication rate than the top — 14.5%
+      against 5.2% — and greater skill was associated with fewer
       reoperations, fewer readmissions, and fewer emergency
       department visits in the months after surgery. The skill
       score predicted the complication signal at the cohort scale.
@@ -3168,8 +3184,9 @@
     ],
     [
       The authors call the findings preliminary and name the
-      load-bearing qualification in the conclusion itself: "Although these findings are preliminary." The lowest skill quartile
-      did fewer cases and operated more slowly. The
+      decisive qualification in the conclusion itself: "Although these findings are preliminary." The lowest skill quartile
+      did fewer cases — 105 bariatric procedures a year against the
+      top quartile's 240 — and operated more slowly. The
       skill-versus-volume confound is the central methodological
       hedge of the case. It is plausible — and consistent with the
       broader volume-outcome literature — that what the skill
@@ -3198,8 +3215,8 @@
   beats: (
     "Twenty bariatric surgeons each submit a representative laparoscopic gastric bypass video; rated blind by ≥10 peers on a structured scale",
     "Skill ratings range 2.6–4.8 with inter-rater reliability adequate for rank-ordering",
-    "Linked to Michigan registry of 10,343 patients: bottom skill quartile complication rate 14.5%; greater skill → fewer reoperations, readmissions, ED visits",
-    "Authors call findings preliminary; lowest skill quartile ran longer operations (137 vs 98 minutes); skill-versus-volume confound left open against the volume–outcome literature",
+    "Linked to Michigan registry of 10,343 patients: bottom skill quartile complication rate 14.5% against the top quartile's 5.2%; greater skill → fewer reoperations, readmissions, ED visits",
+    "Authors call findings preliminary; lowest skill quartile ran longer operations (137 vs 98 minutes) and fewer cases a year (105 vs 240); skill-versus-volume confound left open against the volume–outcome literature",
     "Multi-anchor: 2.1 primary, 1.1 and 6.2 alternates; editor may move",
   ),
   approaches: (
@@ -3253,7 +3270,7 @@
   reflection-list: (
     [Identify a capability in your domain where the operator's actual technical capability is conventionally treated as too hard to measure at scale and therefore left as a hidden variable in the outcome equation. What would a Birkmeyer-style scalable, blind peer-rated measure look like?],
     [The skill-versus-volume confound is the case. Design the follow-up analysis that would separate skill from volume in your context. What matching, what instrumentation of the volume time-course, what controlled-task companion would be required?],
-    [Birkmeyer is anchored at 2.1 with C3 and C1 alternates. Which anchor would you choose for your own use, and what does that choice say about which conversation in your domain the case is the load-bearing evidence for?],
+    [Birkmeyer is anchored at 2.1 with C3 and C1 alternates. Which anchor would you choose for your own use, and what does that choice say about which conversation in your domain the case is the evidence for?],
   ),
   courses: ("LEN 2", "LEN 5", "LEN 7"),
 )
@@ -3276,8 +3293,8 @@
   coi: "Institutional overlap: this case originates at an editor's institution (Johns Hopkins); no editor was personally involved. Anchored to the peer-reviewed PLOS One paper and the public JIGSAWS dataset, not institutional press.",
   summary: [
     The Language of Surgery project at Johns Hopkins, led by Gregory
-    Hager and a cross-departmental team of roughly twenty
-    investigators across engineering, computer science, and surgery,
+    Hager and a cross-departmental team spanning engineering,
+    computer science, and surgery,
     treated surgical motion as language — decomposing tasks into
     gestures (the "surgemes") and sub-gesture motion primitives (the
     "dexemes") fine enough to distinguish expert from novice. The
@@ -3438,11 +3455,11 @@
 #case(
   number: 32,
   slug: "annual-screening-ui-redesign-cds-at",
-  title: "Annual-Screening UI Redesign + CDS at University of Missouri Health Care",
+  title: "Annual-Screening UI Redesign at University of Missouri Health Care",
   year: "2020",
-  domains-list: ("healthcare", "EHR usability", "clinical decision support"),
-  modes-code: "TDN",
-  impact: "A multidisciplinary EHR redesign of ambulatory annual-screening prompts (advance directives, depression, falls risk, alcohol/drug misuse), paired with embedded CDS, reported improvements in task time, error rates, System Usability Scale scores, and the downstream screening-rate outcomes the project was scoped to move",
+  domains-list: ("healthcare", "EHR usability", "nursing workflow"),
+  modes-code: "HN",
+  impact: "A site-level redesign of the EHR interface for four ambulatory annual screens (advance directives, depression, fall risk, alcohol/drug misuse) cut task time 8.3 to 6.0 seconds and errors 0.83 to 0.10 per task, raised the System Usability Scale from 80.8 to 96.9, and turned four flat screening-rate trends upward — fall risk 53.5 to 83.2 percent over nine months",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3451,138 +3468,209 @@
   leo-anchor: "LEO-4, LEO-1",
   summary: [
     A multidisciplinary team at University of Missouri Health Care
-    redesigned the EHR interface clinicians use to prompt and perform
-    annual screening — advance directives, depression, falls risk,
-    alcohol and drug misuse — and embedded clinical decision support
-    inside the redesigned workflow. The team reported gains on the
-    usability metrics (task time, error rate, System Usability Scale)
-    and on the downstream process outcome the project was scoped to
-    move: the actual rate at which guideline-recommended screening was
-    completed. It is a small-tier intervention case for cue-and-alert
-    design as a capability deliverable, with both human-factors and
-    clinical-process outcomes in the same report. The corpus has
-    long needed a small-tier C3 positive example to set against the
-    interface failures already documented at the big tier (Therac-25,
-    CPOE/EHR adoption, the Helios pattern). The evidence base is a
-    single-institution QI study published peer-reviewed in Applied
-    Clinical Informatics (2020), with a HIMSS chapter case-study
-    write-up. Future validation will continue as the downstream
+    redesigned the EHR interface nurses and medical assistants use to
+    prompt and perform annual screening — advance directives,
+    depression, fall risk, alcohol and drug misuse. The interface was
+    not the vendor's product but the health system's own configuration
+    of it, and the redesign was a site-level quality-improvement
+    project the vendor had no direct role in. Summative usability
+    testing with twelve staff showed the redesigned interface cut task
+    time for identifying overdue screens from 8.3 to 6.0 seconds and
+    errors from 0.83 to 0.10 per task, and raised the System Usability
+    Scale from 80.8 to 96.9. In an interrupted time series across eight
+    months before and nine months after go-live, all four screening
+    rates — flat or drifting down beforehand — turned upward. It is a
+    small-tier intervention case for cue design as a capability
+    deliverable, with both human-factors and clinical-process outcomes
+    in the same report. The corpus has long needed a small-tier C3
+    positive example to set against the interface failures already
+    documented at the big tier (Therac-25, CPOE/EHR adoption, the
+    Helios pattern). The evidence base is a single-institution QI study
+    published peer-reviewed in Applied Clinical Informatics (2020).
+    Future validation will continue as the downstream
     clinical-outcome literature on screening-rate gains matures.
   ],
   sections: (
     [
       Ambulatory annual screening — advance directives, depression,
-      falls risk, alcohol and drug misuse — is the kind of
+      fall risk, alcohol and drug misuse — is the kind of
       guideline-recommended care that is easy to declare and hard to
-      land. The cue lives in the EHR; the action lives in a
-      time-pressured encounter; and the gap between prompt and
+      land. Three of the four are Merit-based Incentive Payment System
+      quality measures and the fourth is defined by the state Medicaid
+      Primary Care Health Home program, so the yardstick was written
+      outside the project. The cue lives in the EHR; the action lives
+      in a time-pressured encounter; and the gap between prompt and
       completion is where most screening programs lose their numbers.
-      The University of Missouri Health Care project framed the
-      problem squarely as cue-and-alert design: if the prompt cannot
-      be acted on inside the workflow without friction, the screening
-      will not happen.#cn()
+      What started this project was not a metric but a complaint: two
+      of the authors kept meeting nurses and medical assistants who
+      called the annual-assessment screen "not user friendly" and said
+      it took "too many clicks." A heuristic analysis against Nielsen's
+      usability principles found why. The interface required the same
+      date to be entered twice, did not validate dates, made the nurse
+      calculate in her head whether a screen was due, ignored
+      patient-specific factors such as age and problem list that decide
+      whether it is due at all, and gave no way to record that a screen
+      was due but could not be done. The screen had been in place for
+      several years.#cn()
     ],
     [
-      The redesign was multidisciplinary by construction —
-      clinicians, informaticists, and usability specialists working
-      against the existing screening interface. The team rebuilt the
-      prompt presentation, added embedded clinical decision support
-      that surfaced the next action at the point of decision, and
-      tightened the path between recognizing a positive screen and
-      placing the appropriate order. The design move is the one the
-      induced framework flags as the C3 deliverable: change the
-      interface so that the desired action is the path of least
-      resistance, not a separate sub-task layered on top of the
-      visit.#cn()
+      The redesign was multidisciplinary by construction. Health-system
+      physicians and nurse informaticists led it, with input from
+      nurses, medical assistants, administrators and clinical
+      quality-improvement specialists, and with vendor-employed system
+      architects on the team for the site-specific build; the vendor
+      itself had no direct role. Over eight months of iterative,
+      user-centered work the team removed one of the duplicate date
+      fields and autopopulated the other, showed the prior screening
+      date read-only, and — the load-bearing move — resolved the
+      conditional logic the vendor platform could not express by
+      computing it in a separate program at runtime and passing a
+      hidden binary variable back in. Patient age, current problems and
+      date of last screen now produced an unambiguous color-coded
+      indication that a screen was due, and four new controls let staff
+      record why one was being deferred. The design move is the one the
+      induced framework flags as the C3 deliverable: put the judgment
+      the interface was asking a nurse to make in her head into the
+      interface itself. Note what the redesign did *not* add — the
+      HIMSS write-up of this project describes clinical decision
+      support, but the peer-reviewed report describes no decision-support
+      module, no ordering integration, and no change to the screening
+      instruments themselves beyond defaulting their date field.#cn()
     ],
     [
-      The reported outcomes cross two layers. At the usability layer
-      the team reported reductions in task time and error rate and a
-      gain on the System Usability Scale. At the process layer they
-      reported an increase in the screening-rate metric the project
-      was scoped to move — the clinical process the cue exists to
-      drive. That second layer is what makes the case a C3 small-tier
-      intervention rather than a usability study: the interface gain
-      translated into the downstream behavior, at least over the
-      reported observation window.#cn()
+      The reported outcomes cross two layers. At the usability layer,
+      summative testing with twelve nurses and medical assistants
+      found that identifying which screens were overdue took 6.0
+      seconds on the redesigned interface against 8.3 on the original
+      (p = 0.001), with 0.10 errors per task against 0.83 (p < 0.0001),
+      and the System Usability Scale rose from 80.8 to 96.9
+      (p = 0.021). One measure moved the wrong way: the redesigned
+      interface took *more* clicks, 1.17 against 0.10 (p = 0.007),
+      because the added deferral controls pushed the bottom of the form
+      below the fold and most users had to scroll. The authors report
+      it as an unexpected negative finding and an opening for the next
+      iteration. At the process layer, an interrupted time series over
+      eight months before and nine months after the June 2019 go-live
+      found all four screening rates flat or drifting slightly downward
+      beforehand and rising afterward: the monthly slope changed by
+      +0.44 points for advance directives (p = 0.017), +2.97 for
+      depression, +3.52 for fall risk and +3.07 for alcohol and drug
+      misuse (all p < 0.0001). Between the last month before go-live
+      and the last month observed, the twelve-month rolling rates ran
+      75.1 to 80.1 percent for advance directives, 38.0 to 61.5 for
+      depression, 53.5 to 83.2 for fall risk and 49.3 to 74.6 for
+      alcohol and drug misuse. The denominators are not the same
+      population: advance-directive and fall-risk screening are
+      measured on roughly 13,000 eligible patients aged 65 and over,
+      depression on about 63,000 aged 12 and over, alcohol and drug
+      misuse on about 65,000 adults — and the count of eligible
+      patients stayed roughly constant throughout. That second layer is
+      what makes the case a C3 small-tier intervention rather than a
+      usability study: the interface gain translated into the
+      downstream behavior, at least over the reported observation
+      window.#cn()
     ],
     [
-      The case is a single-institution quality-improvement study,
-      published peer-reviewed in Applied Clinical Informatics (2020),
-      with a HIMSS chapter case-study write-up. The
-      magnitudes reported sit inside a single-institution
-      quality-improvement project with its own outcome metric;
-      replication at other institutions and durability across EHR
-      upgrades and personnel rotation have not been independently
-      audited. Future validation will continue as the institution and
-      others publish follow-on screening-rate data and as the
-      relationship between screening completion and downstream
+      Three things bound what the case can claim. The usability test
+      was sized to industry practice for finding defects, not to detect
+      differences: twelve participants, and the authors say plainly
+      that it "was not powered." Go-live carried an education
+      component — an email to staff and a live demonstration to nursing
+      representatives who then briefed their colleagues — so some of
+      the screening-rate movement may be education rather than
+      interface; the authors argue that a one-off, unrepeated briefing
+      is unlikely to explain a rise sustained over nine months, which is
+      an argument, not a control. And an interrupted time series is
+      quasi-experimental: there is no randomized comparison, the rates
+      are twelve-month rolling averages that lag and damp the underlying
+      change, no seasonal adjustment was made, and the series has fewer
+      points than some authors recommend. What the regulatory frame
+      supplies is the reason this kind of project is rare rather than
+      routine: the Office of the National Coordinator's certification
+      criteria require user-centered design and summative usability
+      testing of *vendors*, and nothing equivalent applies to the
+      site-specific configuration layer where this interface actually
+      lived — the gap Ratwani and colleagues had in view when they
+      called for evaluation across the whole lifecycle, "from initial
+      product design to local implementation followed by periodic
+      reassessment." Replication at other institutions and durability
+      across EHR upgrades and personnel rotation have not been
+      independently audited. Future validation will continue as the
+      institution and others publish follow-on screening-rate data and
+      as the relationship between screening completion and downstream
       patient outcomes is tracked.#cn()
     ],
     [
       What the case teaches at the LENS layer is that the C3
       interface-failure pattern documented at the big tier is not a
       cosmic constraint — it is redressable by deliberate design at
-      the small tier, when usability specialists, clinicians, and CDS
-      authors are seated together. The capability deliverable is the
-      redesigned cue plus the embedded decision support plus the
-      measurement of the downstream process the cue exists to drive.
+      the small tier, by the site rather than the vendor, on a platform
+      whose own limits had to be worked around. The capability
+      deliverable is the redesigned cue plus the measurement of the
+      downstream process the cue exists to drive.
       The case is the missing positive example for induced 3.1 at
       the small tier and a paired teaching companion for the
       failures already in the corpus.
     ],
   ),
   beats: (
-    "Ambulatory annual-screening rates for guideline-recommended care; the cue-action gap is the C3 failure mode",
-    "Multidisciplinary EHR redesign of screening prompts + embedded CDS at the point of decision",
-    "Reported gains: task time, error rate, SUS score, and the downstream screening-rate metric",
-    "Peer-reviewed single-institution QI (Appl Clin Inform 2020); magnitudes await independent replication",
-    "The missing small-tier C3 positive example to set against Therac-25, CPOE, Helios at the big tier",
+    "Four ambulatory annual screens, externally defined as quality measures; a site-configured EHR screen that made nurses compute in their heads whether one was due",
+    "Site-led multidisciplinary redesign: conditional logic moved out of the interface and back into it as a color-coded \"due\" cue, plus deferral controls",
+    "Usability: 8.3 to 6.0 s, 0.83 to 0.10 errors per task, SUS 80.8 to 96.9 — and one measure worse, 0.10 to 1.17 clicks",
+    "Process: four flat pre-trends turn upward; slope change +0.44 to +3.52 points a month across the four measures",
+    "Bounds: n = 12 and not powered, an education co-intervention, a quasi-experimental time series on rolling averages",
   ),
   approaches: (
     during: (
       [Frame the screening problem as cue-and-alert design from the start; do not separate usability from the clinical-process outcome the cue exists to drive.],
-      [Seat usability specialists, clinicians, and CDS authors together on the redesign team; the C3 deliverable is the integrated artifact, not a hand-off.],
-      [Specify the downstream process metric (screening-rate completion) before the redesign ships, so the usability-layer and process-layer outcomes are measured against the same scope.],
+      [Seat the people who will use the screen — here nurses and medical assistants, not physicians — on the redesign team alongside the informaticists, and treat the vendor's platform limits as something to engineer around rather than accept.],
+      [Specify the downstream process metric (screening-rate completion) before the redesign ships, so the usability-layer and process-layer outcomes are measured against the same scope — and prefer a metric someone else defined, as three of these four were.],
     ),
     after: (
-      [Treat the QI report honestly: a single-institution peer-reviewed study is a small-tier intervention, not a settled magnitude. Carry the single-institution caveat into any downstream citation.],
+      [Treat the QI report honestly: a single-institution peer-reviewed study is a small-tier intervention, not a settled magnitude. Report the measure that moved the wrong way — here the extra click — and name the co-interventions you could not control, as this team named its go-live briefing.],
       [Track durability — across EHR upgrades, personnel rotation, and downstream clinical outcomes — as a separate post-deployment commitment, not a footnote to the implementation report.],
       [Pair with the big-tier C3 failures already in the corpus when teaching; the failure-and-intervention pair is the teaching artifact, not either alone.],
     ),
   ),
   references: (
-    [Pierce RP, Eskridge BR, Rehard L, Ross B, Day MA, Belden JL (2020), "The Effect of Electronic Health Record Usability Redesign on Annual Screening Rates in an Ambulatory Setting," _Applied Clinical Informatics_ 11(4):580–588, doi:10.1055/s-0040-1715828. A HIMSS case study of the project is the secondary write-up.],
-    [Hussain MI, Reynolds TL, Zheng K (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095 — adjacent systematic-review evidence on interaction-design redesign.],
-    [Office of the National Coordinator for Health IT, SAFER Guides on CDS design — practitioner-tier guidance the redesign instantiates.],
+    [Pierce RP, Eskridge BR, Rehard L, Ross B, Day MA, Belden JL (2020), "The Effect of Electronic Health Record Usability Redesign on Annual Screening Rates in an Ambulatory Setting," _Applied Clinical Informatics_ 11(4):580–588, doi:10.1055/s-0040-1715828 — the source of record for every figure in this case. HIMSS carries a secondary write-up of the project; it describes the redesign as adding clinical decision support, which the peer-reviewed report does not, and this case follows the report.],
+    [Hussain MI, Reynolds TL, Zheng K (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095 — adjacent evidence that interaction-design changes move alert behavior. Note its outcome is prescriber acceptance of medication safety alerts, not screening completion; it is background, and no figure in this case rests on it.],
+    [Ratwani RM, Reider J, Singh H (2019), "A decade of health information technology usability challenges and the path forward," _JAMA_ 321(8):743–744, doi:10.1001/jama.2019.0161 — the call for lifecycle evaluation "from initial product design to local implementation followed by periodic reassessment," and the framing for the site-configuration gap in federal certification requirements.],
     [Middleton et al. (2013), "Enhancing patient safety and quality of care by improving the usability of electronic health record systems," _JAMIA_ 20(e1):e2–e8 — the framing peer-reviewed paper on EHR-usability-as-safety.],
   ),
-  quote: [The C3 interface failure mode is not a cosmic constraint. It is redressable by deliberate design — when usability, clinicians, and CDS authors sit on the same redesign.],
-  quote-source: "Editors' synthesis of the UMHC HIMSS case study.",
+  quote: [The C3 interface failure mode is not a cosmic constraint. It is redressable by deliberate design — and the design authority that mattered sat at the site, not at the vendor.],
+  quote-source: "Editors' synthesis.",
   le-insight: [
     The UMHC redesign is the small-tier C3 positive example the
-    corpus needed: cue-and-alert design as a capability
-    deliverable, with both usability and downstream
-    screening-rate gains in the same project. The evidence is a single-institution QI study, peer-reviewed
-    in Applied Clinical Informatics (2020), with a HIMSS case-study
-    write-up; magnitudes await independent
-    replication and durability tracking. Future validation
-    ongoing.
+    corpus needed: cue design as a capability deliverable, with both
+    usability and downstream screening-rate gains in the same project.
+    The evidence is a single-institution quality-improvement study,
+    peer-reviewed in Applied Clinical Informatics (2020): a
+    twelve-participant usability test the authors say was not powered,
+    and a quasi-experimental interrupted time series carrying an
+    education co-intervention the authors argue against but did not
+    control. Magnitudes await independent replication and durability
+    tracking. Future validation ongoing.
   ],
   lens-approach: [
     UMHC is the C3 small-tier intervention case
-    (induced 3.1; LENS D4/PT5). LENS uses it in Domain 4
-    (Test and Evaluation) for the LEO-4 deliverable that cue
-    redesign must show its downstream process effect, and in
-    Domain 1 (Systems Analysis) for LEO-1 — the multidisciplinary
-    team did the analysis of the screening workflow as the
-    precondition for the redesign. The case is the paired
-    positive example for the big-tier C3 failures (Therac-25,
-    CPOE/EHR adoption, Helios) the corpus already documents.
+    (induced 3.1; LENS D4/PT5 — the anchor is deliberately the
+    evaluation domain rather than the design domain, because what
+    the case contributes is the outcome evidence for a cue
+    intervention; induced 3.1 carries the design linkage). LENS uses
+    it in Domain 4 (Test and Evaluation) for the LEO-4 deliverable
+    that cue redesign must show its downstream process effect — and
+    show it with its bounds attached, including the measure that
+    moved the wrong way — and in Domain 1 (Systems Analysis) for
+    LEO-1: the heuristic analysis of what the interface was asking
+    the nurse to do was the precondition for the redesign. The case
+    is the paired positive example for the big-tier C3 failures
+    (Therac-25, CPOE/EHR adoption, Helios) the corpus already
+    documents.
   ],
   literature-items: (
-    [HIMSS case study — University of Missouri Health Care],
-    [Hussain et al. (2019), _JAMIA_ — systematic review of alert-design optimization],
+    [Pierce et al. (2020), _Appl Clin Inform_ — the UMHC redesign and its interrupted time series],
+    [Ratwani et al. (2019), _JAMA_ — usability evaluation across the health-IT lifecycle],
     [Middleton et al. (2013), _JAMIA_ — EHR usability as a patient-safety problem],
   ),
   reflection-list: (
@@ -3615,9 +3703,11 @@
     actionable ones are lost in the noise. The 2019 _JAMIA_
     systematic review by Hussain and colleagues aggregates the evidence
     that structured redesign — interaction design changes and
-    clinical-role tailoring — can reduce alert burden; most
-    optimization studies in the review reported alert-rate reduction
-    after intervention. Two 2024 quality-improvement publications
+    clinical-role tailoring — can raise the rate at which prescribers
+    accept an alert's advice; a second _JAMIA_ review, Van Dort and
+    colleagues in 2021, found that five of the six hospital
+    optimization programs that evaluated their own changes reported a
+    reduction in alert rate. Two 2024 quality-improvement publications
     extend the pattern with named maneuvers: a nursing-workflow
     redesign of four high-firing, low-action alerts using
     quantitative alert-firing analysis, empathy mapping, and
@@ -3648,10 +3738,15 @@
     [
       The 2019 _JAMIA_ systematic review by Hussain and colleagues
       aggregates the published evidence on EHR alert optimization.
-      The headline finding: the interrupting modal — the most
-      clinical-role tailoring reduce alert burden, and most
-      evaluated optimization studies in the review reported
-      alert-rate reduction post-intervention. The mechanism is not
+      The headline finding is narrower than it is often reported to be:
+      across the thirty-nine studies the review included, interruptive
+      modal dialogs were accepted least often, and of the alternatives
+      examined only role tailoring appeared to increase prescriber
+      acceptance. The burden side of the ledger comes from a companion
+      _JAMIA_ review — Van Dort and colleagues, 2021 — which found that
+      of the eight published hospital optimization programs, six
+      evaluated their own changes and five of those reported a
+      reduction in alert rate. The mechanism is not
       a single intervention but a family of moves — severity
       reclassification, conversion of interruptive alerts to
       passive decision support, role-based tailoring so the alert
@@ -3701,7 +3796,7 @@
   ),
   beats: (
     "Alert fatigue as the C3.2 failure mode at the EHR — high-firing low-action alerts train clinicians to dismiss",
-    "2019 JAMIA systematic review (Hussain et al.) — interrupting modals accepted least often; of the alternatives, only role tailoring raised acceptance",
+    "2019 JAMIA systematic review (Hussain et al.) — interruptive modals accepted least often; of the alternatives, only role tailoring raised acceptance; Van Dort et al. 2021 carries the alert-rate side",
     "2024 QI redesign of four high-firing nursing alerts: quantitative firing analysis + empathy mapping + iterative user feedback",
     "2024 interruptive-to-passive conversion of COVID-precautions alert with dual outcomes: burden + precautions-order timing",
     "Evidence tier: systematic review peer-reviewed, per-site QI publications practice-tier; durability across upgrades open",
@@ -3719,11 +3814,12 @@
     ),
   ),
   references: (
-    [Hussain et al. (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095.],
-    [Patterson E (2024), "Navigating Alert Fatigue: A Case Study in Electronic Health Record Alert Design Optimization," _Studies in Health Technology and Informatics_ 315:447–451, doi:10.3233/SHTI240188 — nursing-workflow QI redesign of four high-firing alerts; all four removed, 877 unactionable disruptive nursing hours released.],
-    [Fallon A, Haralambides K, Mazzillo J, Gleber C (2024), "Addressing Alert Fatigue by Replacing a Burdensome Interruptive Alert with Passive Clinical Decision Support," _Applied Clinical Informatics_ 15(1):101–110, doi:10.1055/a-2226-8144 — 80% cut in alert firings; COVID precautions ordered rose from 23% to 61%.],
-    [Office of the National Coordinator for Health IT, SAFER Guides on CDS — practitioner-tier guidance the redesigns instantiate.],
     [Ancker et al. (2017), "Effects of workload, work complexity, and repeated alerts on alert fatigue in a clinical decision support system," _BMC Medical Informatics and Decision Making_ 17:36 — adjacent measurement evidence.],
+    [Hussain, M. I., Reynolds, T. L., & Zheng, K. (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095 — thirty-nine studies; interruptive modals accepted least often; role tailoring the only alternative that appeared to increase prescriber acceptance.],
+    [Fallon A, Haralambides K, Mazzillo J, Gleber C (2024), "Addressing Alert Fatigue by Replacing a Burdensome Interruptive Alert with Passive Clinical Decision Support," _Applied Clinical Informatics_ 15(1):101–110, doi:10.1055/a-2226-8144 — 80% cut in alert firings; COVID precautions ordered rose from 23% to 61%.],
+    [Van Dort, B. A., Zheng, W. Y., Sundar, V., & Baysari, M. T. (2021), "Optimizing clinical decision support alerts in electronic medical records: a systematic review of reported strategies adopted by hospitals," _JAMIA_ 28(1):177–183, doi:10.1093/jamia/ocaa279 — eight published optimization programs; six evaluated their changes and five of those reported a reduction in alert rate.],
+    [Office of the National Coordinator for Health IT, SAFER Guides on CDS — practitioner-tier guidance the redesigns instantiate.],
+    [Patterson E (2024), "Navigating Alert Fatigue: A Case Study in Electronic Health Record Alert Design Optimization," _Studies in Health Technology and Informatics_ 315:447–451, doi:10.3233/SHTI240188 — nursing-workflow QI redesign of four high-firing alerts; all four removed, 877 unactionable disruptive nursing hours released.],
   ),
   quote: [Alert fatigue is the failure mode the alert architecture trains. The redesign discipline is part of the delegation.],
   quote-source: "Editors' synthesis of Hussain et al. (2019) and the 2024 QI literature.",
@@ -3733,8 +3829,7 @@
     the failure thread (Uber ATG, Robodebt, UK Post Office,
     Tesla) is redressable by deliberate alert redesign. The
     systematic review is peer-reviewed; the per-site QI
-    publications are practice-tier; magnitudes and durability
-    open. Future validation ongoing.
+    publications are practice-tier; magnitudes and durability open.
   ],
   lens-approach: [
     Alert-fatigue redesign is the C3.2 small-tier intervention
@@ -3794,11 +3889,13 @@
     typology in sepsis at three deployments — Case 20 (TREWS at
     Johns Hopkins), Case 5 (Epic Sepsis Score across multiple
     health systems), and COMPOSER at UCSD. The honest hedges from
-    the source are binding: the study is
-    not RCT-grade, the mortality reduction is multifactorial
-    (the COMPOSER deployment ran alongside other process
-    improvements at UCSD), and the author team is explicit
-    about the structural attribution question. Pair with Case
+    the source are binding: the study is not RCT-grade; every
+    emergency department in the system ran the model, so no
+    contemporaneous comparison arm exists; the site is a single
+    academic center with a standing interest in sepsis and clinical
+    informatics; and the authors did not evaluate what the alert did
+    to patients who turned out not to have sepsis — antibiotic
+    overuse and its costs are unmeasured. Pair with Case
     20, Case 5, and Case 35 (Radiology AI Miscalibration).
   ],
   sections: (
@@ -3816,9 +3913,9 @@
       validation data implied. COMPOSER is the third deployment
       in the typology and the second prospective-positive case.
       The deployment is at two UC San Diego emergency
-      hospital sites, integrated into the electronic health
-      record and into emergency-department and inpatient
-      workflows.#cn()
+      departments, integrated into the electronic health
+      record as a nurse-facing Best Practice Advisory in the
+      emergency-department workflow.#cn()
     ],
     [
       The methodological feature that distinguishes COMPOSER is
@@ -3832,7 +3929,7 @@
       alerting when the input is sufficiently out-of-distribution
       — when the model's calibrated confidence does not support
       a clinically actionable alert. The abstention structure is
-      what handles one of the load-bearing failure modes of
+      what handles one of the failure modes of
       Case 5 (Epic Sepsis), where the model alerted at high
       rates against patient populations it had not been
       adequately calibrated against. COMPOSER's abstention
@@ -3841,8 +3938,11 @@
     ],
     [
       The deployment outcomes Boussina and colleagues report are
-      the load-bearing intervention-evidence. Across the
-      deployment period at the two UC San Diego hospital sites,
+      the intervention-evidence. Across the
+      deployment period at the two UC San Diego emergency
+      departments — 6,217 adult septic patients between January
+      2021 and April 2023, 705 pre-intervention days against 145
+      post-intervention days —
       in-hospital sepsis mortality decreased by 1.9 percentage
       points in absolute terms, and sepsis bundle compliance
       increased by 5.0 percentage points, both
@@ -3852,11 +3952,11 @@
       against the same hospital sites' historical baseline
       rather than against a contemporaneous randomized control
       arm — and the authors are explicit about the limitation.
-      The authors record no other quality-improvement
-      at UCSD's sepsis-care pathway, and the authors are honest
-      that the mortality reduction is multifactorial: COMPOSER's
-      contribution cannot be cleanly separated from the
-      contribution of the surrounding process changes.#cn()
+      The authors record no other quality-improvement initiative running
+      at UCSD's sepsis-care pathway over the same period, so the
+      reduction is not confounded by concurrent process change; what
+      limits the inference is the absence of a contemporaneous control
+      arm, not a tangle of co-occurring reforms.#cn()
     ],
     [
       The case pairs with Case 20 (TREWS) for the prospective-
@@ -3879,32 +3979,38 @@
       abstention (COMPOSER).#cn()
     ],
     [
-      The hedges the case carries are load-bearing and preserved
+      The hedges the case carries are binding and preserved
       in the prose. The deployment is prospective implementation,
       not an RCT; the mortality reduction and bundle-compliance gain are
       evaluated against the same health system's historical
-      baseline, and every emergency department in the system
-      improvements in sepsis care that would have produced
-      similar reductions in the absence of COMPOSER. The
-      mortality reduction is multifactorial — COMPOSER was
-      deployed alongside other process improvements at UCSD, and
-      the authors are explicit that the deployment evaluation
-      cannot cleanly separate COMPOSER's contribution from the
-      contribution of the surrounding process. The conformal-
+      baseline, and every emergency department in the system ran the
+      model, so no contemporaneous comparison arm exists against which
+      the reduction could be checked. What the authors do not claim
+      is a tangle of co-occurring reforms: they record no other
+      quality-improvement initiative in the same period, which is
+      what leaves the missing control arm, rather than confounding
+      by concurrent process change, as the binding limitation. Two
+      further hedges survive verbatim — the site is a single
+      academic center with a major interest in sepsis and clinical
+      informatics, so external validation in community hospitals and
+      less IT-rich settings is outstanding; and the study did not
+      evaluate the alert's effect on patients who turned out not to
+      have sepsis, leaving inappropriate antibiotic use and its costs
+      unmeasured. The conformal-
       prediction abstention structure is the methodological
       contribution the case anchors, and the cue-and-alert
       design LEO is anchored at the deployment seam where
       abstention is a clinical-workflow capability: the model
       that can refuse to alert when its calibrated confidence
       does not support an alert is the deployment artifact the
-      case names as the load-bearing one.
+      case names as the decisive one.
     ],
   ),
   beats: (
     "Boussina et al. NPJ Digital Medicine 2024; COMPOSER deep-learning sepsis-risk model at UC San Diego Health, two-site prospective implementation",
     "Conformal-prediction framework: calibrated uncertainty intervals enable model abstention when input is out-of-distribution",
     "Deployment outcomes: 1.9 pp absolute decrease in in-hospital sepsis mortality; 5.0 pp absolute increase in sepsis bundle compliance vs pre-deployment baseline",
-    "Hedges binding: before-and-after, not randomized; no contemporaneous comparison arm because every UCSD ED ran the model; single academic centre, external validation pending",
+    "Hedges binding: before-and-after, not randomized; no contemporaneous comparison arm because every UCSD ED ran the model; single academic center, external validation pending; harms to non-sepsis patients unmeasured",
     "Completes AI-delegation typology in sepsis: Case 20 (TREWS), Case 5 (Epic Sepsis Score), COMPOSER (Case 34)",
   ),
   approaches: (
@@ -3922,7 +4028,7 @@
   references: (
     [Boussina, A., Shashikumar, S. P., Malhotra, A., Owens, R. L., El-Kareh, R., Longhurst, C. A., Quintero, K., et al. (2024), "Impact of a deep learning sepsis prediction model on quality of care and survival," _NPJ Digital Medicine_ 7:14, doi:10.1038/s41746-023-00986-6.],
     [Shashikumar, S. P., Wardi, G., Malhotra, A., & Nemati, S. (2021), "Artificial intelligence sepsis prediction algorithm learns to say 'I don't know,'" _NPJ Digital Medicine_ 4:134 — the methodological-foundation paper for the conformal-prediction abstention structure.],
-    [Wong, A., Otles, E., Donnelly, J. P., Krumm, A., McCullough, J., DeTroyer-Cooley, O., et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070 — the load-bearing external-validation paper on Epic Sepsis (Case 5).],
+    [Wong, A., Otles, E., Donnelly, J. P., Krumm, A., McCullough, J., DeTroyer-Cooley, O., et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070 — the external-validation paper on Epic Sepsis (Case 5).],
     [Adams, R., Henry, K. E., Sridharan, A., Soleimani, H., Zhan, A., Rawat, N., Johnson, L., et al. (2022), "Prospective, multi-site study of patient outcomes after implementation of the TREWS machine learning-based early warning system for sepsis," _Nature Medicine_ 28:1455–1460 — the prospective-positive TREWS deployment paper (Case 20).],
   ),
   quote: [The study is before-and-after, not randomized, and every emergency department in the system ran the model, so there is no contemporaneous comparison arm; the conformal-prediction abstention is the methodological contribution the case anchors.],
@@ -3930,11 +4036,13 @@
   le-insight: [
     COMPOSER is the third clinical-AI sepsis case in the
     delegation typology — prospective-positive with conformal-
-    prediction abstention. The deployment reduced in-hospital
-    sepsis mortality by 1.9 percentage points and raised sepsis
-    bundle compliance by 5.0 percentage points; the load-bearing
-    hedges are that the evaluation is prospective not RCT and
-    that the mortality reduction is multifactorial. The
+    prediction abstention. The deployment was associated with a
+    1.9 percentage-point fall in in-hospital sepsis mortality and a
+    5.0 percentage-point rise in sepsis bundle compliance; the
+    decisive hedges are that the evaluation is before-and-after
+    rather than randomized, that every ED in the system ran the
+    model so no comparison arm exists, and that the harms to
+    non-sepsis patients went unmeasured. The
     abstention structure is the methodological contribution the
     case anchors.
   ],
@@ -3971,7 +4079,7 @@
   year: "2018 – present",
   domains-list: ("healthcare", "tech"),
   modes-code: "HKD",
-  impact: "FDA-cleared radiology AI is cleared on evidence that cannot establish deployment performance — 126 of 130 devices reviewed by Wu et al. were evaluated only retrospectively, 93 reported no multi-site assessment, and 17 reported demographic subgroup performance; the canonical v1 anchor for clinical-AI deployment without surveillance, cross-referenced by the Epic Sepsis (Case 5) and pulse-oximetry (Case 26) deployment-evidence cases",
+  impact: "FDA-cleared radiology AI is cleared on evidence that cannot establish deployment performance — of the 130 devices Wu et al. audited, 126 were evaluated only retrospectively and none of the 54 high-risk devices prospectively, 93 carried no publicly reported multi-site assessment, and 17 reported demographic subgroup performance; the canonical v1 anchor for clinical-AI deployment without surveillance, cross-referenced by the Epic Sepsis (Case 5) and pulse-oximetry (Case 26) deployment-evidence cases",
   diagram: dgm.dgm-compare(
     "validation",
     "AUC 0.9+",
@@ -3983,36 +4091,44 @@
   kind: "frontier",
   scale: "big",
   evidence-source: "peer-reviewed",
-  induced-anchor: "7.2",
+  induced-anchor: "2.4",
   lens-anchor: "D4+D3/PT5",
   leo-anchor: "LEO-4, LEO-3",
   summary: [
     FDA-cleared radiology AI tools — for chest X-ray classification,
-    mammography, CT triage — have been repeatedly documented performing
-    worse in deployment than in their validation studies, often with the
-    degradation concentrated in patient groups under-represented in the
-    training data. Larrazabal et al. (_PNAS_ 2020) showed this
+    mammography, CT triage — are cleared on evidence that cannot
+    establish how they will perform in the populations that will meet
+    them. The peer-reviewed record of degradation is built on research
+    classifiers trained on the same public datasets as the cleared
+    tools, not on the cleared tools themselves, which are largely
+    unmeasured after clearance; the degradation in those classifiers
+    concentrates in patient groups under-represented in the training
+    data. Larrazabal et al. (_PNAS_ 2020) showed this
     structurally for chest-X-ray classifiers across gender imbalance;
     Seyyed-Kalantari et al. (_Nature Medicine_ 2021) extended the
     finding to under-served racial and socioeconomic subgroups across
-    three large public chest-X-ray datasets. Obermeyer et al. (_Science_
+    three large public chest-X-ray datasets and a multi-source
+    combination of them — a result three published critiques then
+    contested and the authors defended. Obermeyer et al. (_Science_
     2019) showed that bias in the labels used to train clinical AI can
     under-allocate care to Black patients even when the model looks
-    well-calibrated on its chosen proxy. Wachter and Brynjolfsson
-    (_JAMA_ 2024) raised the generative-AI extension. Wu et al.
+    well-calibrated on its chosen proxy. Wu et al.
     (_Nature Medicine_ 2021) put numbers on the clearance evidence
-    itself: of 130 devices reviewed, 126 were evaluated only
-    retrospectively, 93 reported no multi-site assessment, and 17
+    itself: of 130 devices cleared between January 2015 and December
+    2020, 126 were evaluated only retrospectively — none of the 54
+    high-risk devices prospectively — 93 reported no publicly
+    available multi-site assessment, and 17
     reported performance by demographic subgroup. The FDA's 510(k)
     clearance pathway — the route most cleared radiology AI tools have
     taken — does not routinely require demographic stratification of
     validation metrics or post-market monitoring of how a tool performs
     in the population using it; the De Novo pathway used for a small
     number of novel tools imposes more, but is rarely the chosen route.
-    The 2025 FDA draft guidance on AI/ML-based Software as a Medical
-    Device (SaMD), with its Predetermined Change Control Plan and
-    Good Machine Learning Practice provisions, begins to address this
-    gap; the institutional architecture for demographic post-market
+    The FDA's final Predetermined Change Control Plan guidance
+    (December 2024) and its January 2025 draft guidance on the
+    lifecycle management of AI-enabled device software, together with
+    the Good Machine Learning Practice principles, begin to address
+    this gap; the institutional architecture for demographic post-market
     surveillance is still being built. The capability gap is in the
     regulatory architecture, not the model: clearance is not the same
     thing as clinically performable deployment. The case is the v1
@@ -4024,15 +4140,29 @@
     [
       Machine-learning tools are moving rapidly into radiology and
       other diagnostic medicine, cleared for market and integrated
-      into clinical workflows that affect real patients. The FDA has
-      now authorized more than 1,000 AI/ML-enabled medical devices,
-      the majority through the 510(k) clearance pathway as devices
-      substantially equivalent to a predicate. Unlike a drug, a model
-      can pass its validation study and still behave very differently
-      once it meets a population that differs from its training data —
-      the same model file that scored well on the clearance set can
-      quietly carry a different error profile into every hospital
-      whose patients do not resemble it. The 510(k)
+      into clinical workflows that affect real patients. The FDA's
+      public list of AI-enabled device authorizations passed a
+      thousand entries during 2024 and has kept growing since; the
+      great majority came through the 510(k) clearance pathway as
+      devices substantially equivalent to a predicate. Unlike a drug, a
+      model can pass its validation study and still behave very
+      differently once it meets a population that differs from its
+      training data — the same model file that scored well on the
+      clearance set can quietly carry a different error profile into
+      every hospital whose patients do not resemble it. Wu and
+      colleagues measured how thin the clearance evidence is: across
+      the 130 AI devices the FDA authorized between January 2015 and
+      December 2020, 126 were evaluated only against data collected
+      before deployment, and not one of the 54 high-risk devices was
+      evaluated prospectively; 93 carried no publicly reported
+      multi-site assessment; 59 did not report the size of the
+      evaluation sample at all, and among the 71 that did, the median
+      was 300 patients; 17 reported any performance breakdown by
+      demographic subgroup. Their own cross-site experiment shows what
+      that costs. A pneumothorax classifier trained at Stanford scored
+      an AUC of 0.903 on Stanford patients, 0.870 at Beth Israel
+      Deaconess and 0.852 on the NIH set; the NIH-trained model scored
+      0.883 at home and 0.759 at Beth Israel. The 510(k)
       substantial-equivalence framing was built for an era of
       physical devices whose behavior was largely determined by their
       design; it was not built for a class of systems whose behavior
@@ -4040,23 +4170,36 @@
     ],
     // -- What Is Emerging --
     [
-      The research classifiers built on the same public chest-X-ray
-      mammography aids, CT triage systems — have been documented in
-      the peer-reviewed literature performing worse in deployment
-      than in validation, with the degradation often concentrated in
-      under-represented patient groups. Larrazabal et al. (_PNAS_
-      2020) demonstrated structural sensitivity drops for groups
-      under-represented in chest-X-ray training data, using the NIH
-      ChestX-ray14 and CheXpert datasets to show that classifier
-      sensitivity for a given group tracks that group's prevalence in
-      the training set. Seyyed-Kalantari et al. (_Nature Medicine_
+      The peer-reviewed evidence for the divergence comes from
+      research classifiers built on the same public chest-X-ray
+      datasets as the cleared tools, and it is worth being exact about
+      what those studies measure: not deployment, but performance
+      broken out by patient group, and performance carried across from
+      the population a model was trained on to a different one. On
+      both measures the shortfall concentrates in the same place. Larrazabal et al. (_PNAS_
+      2020) demonstrated structural performance drops for the
+      under-represented gender in chest-X-ray training data, using the
+      NIH ChestX-ray14 and CheXpert datasets across three network
+      architectures to show that a classifier's AUC for a given group
+      tracks that group's share of the training set — and that even a
+      25/75 split degrades the minority class relative to a balanced
+      one. Seyyed-Kalantari et al. (_Nature Medicine_
       2021) extended the finding directly: across three large public
-      chest-X-ray datasets, classifiers under-diagnosed Black,
+      chest-X-ray datasets and a multi-source combination of them,
+      classifiers under-diagnosed Black,
       Hispanic, female, and lower-socioeconomic patients at higher
-      rates, with the underdiagnosis rate highest where those
-      evidence that the shortfall is not a stray bug but a
+      rates, with the underdiagnosis rate highest for patients at the
+      intersection of those groups — evidence that the shortfall is
+      not a stray bug but a
       predictable consequence of which patients the training set did
-      and did not contain.#cn()
+      and did not contain. That second result is contested in the
+      literature and the case does not rest on it alone: three
+      Matters Arising in _Nature Medicine_ in 2022 argued that
+      training and test splits drawn from the same biased dataset make
+      the reported disparities hard to interpret, and that confounders
+      were not accounted for; the authors replied and maintained the
+      finding. The dispute is about how much of the gap is model and
+      how much is dataset — not about whether the gap is there.#cn()
     ],
     // -- The Capability Question --
     [
@@ -4068,29 +4211,48 @@
       because it was trained on healthcare cost as a proxy label for
       need: equally sick Black patients had lower historical costs
       because they had received less care, so the model rated them as
-      lower-need. The question is how a regulator can certify a model
+      lower-need. Correcting the label — predicting illness rather
+      than cost — would have raised the share of Black patients
+      referred for extra help from 17.7 to 46.5 percent. The question
+      is how a regulator can certify a model
       as safe without checking how it behaves across the populations
       and labels it will actually meet — since a model can look
       well-calibrated on its chosen proxy while the proxy itself
-      encodes the inequity it then propagates. Wachter and
-      Brynjolfsson (_JAMA_ 2023) raised the generative-AI extension
-      of the same question: the proxy-and-population problem deepens
-      under LLM-class tools whose outputs are harder to validate
-      against any well-defined label at all.#cn()
+      encodes the inequity it then propagates. Note what the other
+      side of the argument looks like. Wachter and Brynjolfsson
+      (_JAMA_ 2024) argue that health care is now readier for
+      generative AI than it was for its predecessors, and that the
+      usual lag between deploying a general-purpose technology and
+      seeing benefit from it may be shorter this time. That is a claim
+      about the speed of adoption, not about the adequacy of
+      evaluation — and it is precisely why the evaluation gap matters:
+      the faster a class of tools reaches patients, the more the
+      absence of standing surveillance costs.#cn()
     ],
     // -- Early Evidence --
     [
-      Similar deployment-performance degradation has been reported
-      in mammography AI (validation sets often under-represent
-      dense-breast tissue and Black women), sepsis-prediction tools
-      (the Epic Sepsis Model — Case 5 — is the canonical example of
-      an AI tool deployed at scale whose external validation found
-      it substantially worse than its developer-reported numbers),
-      pulse-oximetry behavior (the structural racial miscalibration
-      documented in Sjoding et al. — Case 26 — sits under several
-      downstream AI sepsis and triage tools), and skin-lesion
-      classifiers (training-set under-representation of darker skin
-      tones produces accuracy gaps in deployment). Yet the FDA's
+      Similar population-dependence has been reported across
+      modalities. In mammography, the most-publicized system of all —
+      the DeepMind evaluation of Case 37 — cut false positives by 5.7
+      percentage points on its U.S. set and 1.2 on its UK set. Read
+      that gap carefully: the UK set was assembled to be
+      representative and the U.S. set was cancer-enriched, so the
+      difference is partly a property of how the two datasets were
+      built and not only of the two populations. That is the point,
+      not an aside — an effect size read off a curated evaluation set
+      is not a prediction about a screening program. In sepsis prediction, the
+      Epic Sepsis Model (Case 5) is the corpus's canonical example of
+      a tool deployed at scale whose external validation found it
+      substantially worse than its developer-reported numbers.
+      Pulse-oximetry miscalibration (Sjoding et al., Case 26) sits
+      structurally underneath several downstream AI sepsis and triage
+      tools. And in dermatology, Daneshjou and colleagues built the
+      first pathologically confirmed, expertly curated image set with
+      diverse skin tones and found that state-of-the-art models
+      degrade substantially on dark skin — along with a finding that
+      closes the loop back to Obermeyer: the dermatologists who label
+      these training sets also perform worse on dark skin, so the
+      label carries the gap before the model ever sees it. Yet the FDA's
       510(k) clearance pathway does not routinely require
       demographic stratification of validation metrics, nor
       post-market monitoring of in-use performance — so the
@@ -4129,7 +4291,7 @@
   ),
   beats: (
     "Machine-learning diagnostics enter clinical workflow with validation that may not survive deployment",
-    "Cleared radiology tools repeatedly perform worse in deployment, concentrated in under-represented patient groups",
+    "Research classifiers on the same public datasets degrade for under-represented groups; the cleared tools themselves go unmeasured after clearance",
     "How a regulator certifies safety without checking behavior across populations and labels it meets",
     "Degradation reported across imaging, sepsis, dermatology; 510(k) requires no demographic stratification",
     "Capability gap sits in regulatory architecture; demographic post-market surveillance machinery unbuilt",
@@ -4147,11 +4309,14 @@
     ),
   ),
   references: (
-    [Larrazabal, A. J., Nieto, N., Peterson, V., Milone, D. H., & Ferrante, E. (2020), "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis," _PNAS_ 117(23):12592–12594 — AUC drops for under-represented genders on NIH ChestX-ray14 and CheXpert, across three network architectures.],
+    [Wu, E., Wu, K., Daneshjou, R., Ouyang, D., Ho, D. E., & Zou, J. (2021), "How medical AI devices are evaluated: limitations and recommendations from an analysis of FDA approvals," _Nature Medicine_ 27(4):582–584, doi:10.1038/s41591-021-01312-x — the 130-device audit (126 retrospective-only, none of the 54 high-risk devices prospective, 93 without publicly reported multi-site assessment, 17 reporting demographic subgroup performance) and the cross-site pneumothorax experiment behind this case's diagram.],
     [Seyyed-Kalantari, L., Zhang, H., McDermott, M. B. A., Chen, I. Y., & Ghassemi, M. (2021), "Underdiagnosis bias of artificial intelligence algorithms applied to chest radiographs in under-served patient populations," _Nature Medicine_ 27:2176–2182 — disparities across Black, Hispanic, female, and lower-socioeconomic subgroups; underdiagnosis highest for intersectional subpopulations such as Hispanic female patients.],
     [Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019), "Dissecting racial bias in an algorithm used to manage the health of populations," _Science_ 366(6464):447–453 — proxy-label bias in a care-management algorithm; ~200 million Americans/year are subject to tools of this class.],
-    [Wachter, R. M. & Brynjolfsson, E. (2024), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_ 331(1):65–69, doi:10.1001/jama.2023.25054 — generative-AI extension of the proxy-and-population problem.],
-    [FDA, "Proposed Regulatory Framework for Modifications to AI/ML-Based Software as a Medical Device" (2019); FDA draft guidance on AI/ML-Based SaMD (2025), with Predetermined Change Control Plan and Good Machine Learning Practice principles — the regulatory trajectory; absence of mandatory demographic stratification at clearance and post-market monitoring of in-use performance.],
+    [Daneshjou, R., Vodrahalli, K., Novoa, R. A., et al. (2022), "Disparities in dermatology AI performance on a diverse, curated clinical image set," _Science Advances_ 8(32):eabq6147, doi:10.1126/sciadv.abq6147 — the Diverse Dermatology Images set; models and labeling dermatologists both degrade on dark skin tones.],
+    [FDA, "Proposed Regulatory Framework for Modifications to AI/ML-Based Software as a Medical Device" (2019); FDA's public "Artificial Intelligence-Enabled Medical Devices" authorization list; final Predetermined Change Control Plan guidance (December 2024) and the draft "Artificial Intelligence-Enabled Device Software Functions: Lifecycle Management and Marketing Submission Recommendations" (January 2025), with Good Machine Learning Practice principles — the regulatory trajectory; absence of mandatory demographic stratification at clearance and post-market monitoring of in-use performance.],
+    [Larrazabal, A. J., Nieto, N., Peterson, V., Milone, D. H., & Ferrante, E. (2020), "Gender imbalance in medical imaging datasets produces biased classifiers for computer-aided diagnosis," _PNAS_ 117(23):12592–12594 — AUC drops for under-represented genders on NIH ChestX-ray14 and CheXpert, across three network architectures.],
+    [Bernhardt, M., Jones, C., & Glocker, B. (2022), "Potential sources of dataset bias complicate investigation of underdiagnosis by machine learning algorithms," _Nature Medicine_ 28(6):1157–1158 — one of three Matters Arising contesting Seyyed-Kalantari et al.; the authors' reply is at 28(6):1161–1162, doi:10.1038/s41591-022-01854-8. Cited here so the contested status travels with the finding.],
+    [Wachter, R. M. & Brynjolfsson, E. (2024), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_ 331(1):65–69, doi:10.1001/jama.2023.25054 — the counterweight argument that health care is readier for generative AI than for its predecessors and the lag to benefit may be shorter. It is not a bias or evaluation paper; do not cite it for the proxy-and-population problem.],
   ),
   quote: [Performance metrics on a clearance dataset are not the same as performance metrics in deployment populations.],
   quote-source: "Editors' synthesis of the FDA AI/ML-Based SaMD discussion paper (2019)",
@@ -4165,7 +4330,9 @@
   ],
   lens-approach: [
     Radiology AI is the canonical contemporary clinical-AI
-    deployment-and-surveillance case (induced 7.2; LENS D4+D3/PT5).
+    deployment-and-surveillance case (induced 2.4 — post-deployment
+    surveillance and disconfirmation, where `competencies.md` places
+    it; LENS D4+D3/PT5).
     LENS uses it in Domain 4 (Test and Evaluation; LEO-4) for the
     clearance-vs-deployment measurement architecture and for
     demographic stratification of validation as a deliverable. LENS
@@ -4184,7 +4351,7 @@
   literature-items: (
     [Obermeyer et al. (2019), _Science_],
     [Larrazabal et al. (2020), _PNAS_],
-    [Wachter & Brynjolfsson (2023), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_],
+    [Wu et al. (2021), _Nature Medicine_ — how the FDA's 130 cleared AI devices were evaluated],
   ),
   reflection-list: (
     [Identify a model in your domain whose deployment population diverges from its training population. What is the institutional architecture to surface the divergence?],
@@ -4201,19 +4368,19 @@
   title: "AlphaFold — Protein Structure Prediction",
   year: "2020 – present",
   domains-list: ("healthcare", "tech"),
-  modes-code: "T",
-  impact: "Substantially solved a 50-year protein-structure prediction problem; 200M+ structures publicly released; foundational positive AI case",
+  modes-code: "KG",
+  impact: "Substantially solved a 50-year protein-structure prediction problem — median GDT 92.4 across all CASP14 targets — and released predictions for over 214 million protein sequences; the book's foundational positive AI case, and, after the AlphaFold 3 access reversal, its clearest evidence that open release is a decision that can be taken back",
   diagram: dgm.dgm-stat(
-    "200M",
+    "214M",
     "predicted structures · publicly released",
     micro: "agreed benchmark, training data, verifiable output, open release",
     caption: "AlphaFold — the conditions for beneficial AI deployment",
   ),
   kind: "frontier",
   summary: [
-    DeepMind's AlphaFold 2 substantially solved the half-century-old protein-structure prediction problem in computational biology — demonstrated at CASP14 in November 2020, published in 2021. The publicly released AlphaFold Protein
-    Structure Database now contains predicted structures for more than 200
-    million proteins — essentially the entire known protein universe — and
+    DeepMind's AlphaFold 2 substantially solved the half-century-old protein-structure prediction problem in computational biology — demonstrated at CASP14 in November 2020 with a median GDT of 92.4 across all targets, published in _Nature_ in July 2021. The publicly released AlphaFold Protein
+    Structure Database now contains predicted structures for more than 214
+    million protein sequences — essentially the entire known protein universe — and
     has been integrated into structural-biology and drug-discovery
     workflows worldwide. AlphaFold is the strongest positive AI case in
     this book, and its lesson is in the conditions that made the benefit
@@ -4221,7 +4388,16 @@
     high-quality training data, an output biologists could verify against
     experimental structures, and an open release that let the global
     community adopt it fast. Each was a precondition for the success — and
-    none of them was the model itself.
+    none of them was the model itself. Two of the four are less settled
+    than the headline suggests. Verification reaches the few dozen blind
+    CASP targets far more securely than it reaches the database: 58
+    percent of human residues carry a confident prediction and 36 percent
+    a very high-confidence one, which is why the per-residue confidence
+    score is part of the release rather than an annotation on it. And
+    AlphaFold 3 shipped in May 2024 with neither code nor weights,
+    reopening the code only in November after more than a thousand
+    researchers objected — and the weights only on application. Open
+    release is a decision that gets made again at every version.
   ],
   sections: (
     // -- The Shift --
@@ -4237,10 +4413,17 @@
     ],
     // -- What Is Emerging --
     [
-      DeepMind's AlphaFold 2 substantially solved the problem at CASP14 in November 2020, predicting structures at accuracies rivaling experiment. The publicly released AlphaFold Protein Structure
-      Database now holds predicted structures for more than 200 million
-      proteins — close to the entire known protein universe — and has been
-      folded into research workflows worldwide, so the benefit arrived not
+      DeepMind's AlphaFold 2 substantially solved the problem at CASP14 in
+      November 2020, predicting structures at accuracies rivaling
+      experiment: a median GDT of 92.4 across all targets, with scores
+      above 90 out of 100 on roughly two-thirds of them. The publicly
+      released AlphaFold Protein Structure
+      Database now holds predicted structures for more than 214 million
+      protein sequences — close to the entire known protein universe, up
+      from the 300,000 structures of the first 2021 release — and has been
+      folded into research workflows worldwide and into the primary data
+      resources of the field (PDB, UniProt, Ensembl, InterPro), so the
+      benefit arrived not
       as a single laboratory's advantage but as a shared resource the wider
       community could build on immediately.#cn()
     ],
@@ -4266,21 +4449,44 @@
       does not — and the same architecture dropped into a domain missing any
       one of those four would not have produced a comparable, trusted,
       widely adopted result.#cn() The work was extended by AlphaFold 3
-      (May 2024), which predicts proteins in complex with DNA, RNA, and
-      small molecules, and in October 2024 Demis Hassabis and John Jumper
-      shared the Nobel Prize in Chemistry for AlphaFold. AlphaFold 3 also
-      complicated the open-release story this case credits: it was
-      initially released without code or model weights, drawing a
-      scientific backlash, before DeepMind released the code for
-      non-commercial use in November 2024 — a reminder that open release
-      is a repeated governance decision that can be reversed under
-      commercial pressure, not a settled property of the work.#cn()
+      (published in _Nature_ on 8 May 2024), which predicts proteins in
+      complex with DNA, RNA, small molecules, ions and modified residues,
+      and in October 2024 Demis Hassabis and John Jumper shared half the
+      Nobel Prize in Chemistry, "for protein structure prediction"; the
+      other half went to David Baker for computational protein design.
+      AlphaFold 3 also complicated the open-release story this case
+      credits, and the sequence is worth following exactly. The paper
+      appeared with neither code nor model weights — only a rate-limited
+      web server — and _Nature_ published it that way, prompting its own
+      editorial asking why. More than a thousand scientists signed an open
+      letter arguing the release breached the norms of reproducibility.
+      Six months later, on 11 November 2024, Google DeepMind put the code
+      on GitHub under a non-commercial license — but the weights remain
+      available only to academics who apply for them. So the release was
+      not reversed and then restored; it was reversed, contested, and
+      partially restored, on terms the authors set. Open release is a
+      repeated governance decision that can be taken back under commercial
+      pressure, not a settled property of the work — and the demand that
+      forced the partial retreat is the same demand the Haibe-Kains
+      comment made of DeepMind's mammography paper in Case 37.#cn()
     ],
     // -- Open Problems --
     [
       AlphaFold is the strongest positive AI case in the dataset for what
-      supports beneficial deployment in a well-defined scientific domain.
-      The open problem is generalization: most consequential problems lack
+      supports beneficial deployment in a well-defined scientific domain —
+      which makes it worth being exact about how far the verification
+      actually reaches. CASP verified the model on a few dozen blind
+      targets; the database holds 214 million predictions, and almost none
+      of them will ever meet an experimental structure. Before AlphaFold,
+      experimental structures covered 17 percent of the residues in human
+      protein sequences; the AlphaFold human proteome covers 98.5 percent
+      of human proteins but returns a confident prediction for 58 percent
+      of residues, of which 36 percent of all residues are very high
+      confidence. The verifiable-output precondition holds at the
+      benchmark and thins out across the database, which is why the
+      per-residue confidence score travels with every structure and is the
+      part of the release a user is obliged to read. The open problem is
+      generalization: most consequential problems lack
       an agreed benchmark, clean training data, or verifiable output. The
       frontier question is how much of the AlphaFold pattern can be
       reconstructed where those preconditions are not given for free — that
@@ -4291,10 +4497,10 @@
   ),
   beats: (
     "Deep learning offered computational solution to a fifty-year experimental bottleneck in biology",
-    "AlphaFold released 200 million predicted structures folded into research workflows worldwide",
+    "AlphaFold: median GDT 92.4 at CASP14; 214 million predicted structures released and folded into PDB, UniProt and research workflows worldwide",
     "Which conditions allow an AI capability to be safely and widely useful",
-    "Success rested on agreed benchmark, clean data, verifiable output, and open release",
-    "Whether fields lacking those preconditions can deliberately build them remains the frontier question",
+    "Success rested on agreed benchmark, clean data, verifiable output, and open release — and AlphaFold 3 showed the last of the four can be taken back",
+    "Verification reaches the benchmark, not the database: 58% of human residues confidently predicted, and whether fields lacking the preconditions can build them remains the frontier question",
   ),
   approaches: (
     during: (
@@ -4303,39 +4509,51 @@
       [Decide the release and access terms deliberately as a governance choice, since open release is what distributed AlphaFold's benefit globally.],
     ),
     after: (
-      [Monitor downstream use to confirm the verifiable-output property holds in practice, and that users are in fact checking predictions where stakes are high.],
+      [Monitor downstream use to confirm the verifiable-output property holds in practice, and that users are in fact reading the per-residue confidence score where stakes are high; a database entry is a prediction with a stated confidence, not a structure.],
       [Track whether the four preconditions still hold as the tool is applied to new protein families or adjacent problems beyond its validated domain.],
-      [Sustain the open resource and benchmark over time, so the community-wide benefit does not erode as the field and the data move on.],
+      [Sustain the open resource and benchmark over time, so the community-wide benefit does not erode as the field and the data move on — and treat the release terms as re-decided at every version, because AlphaFold 3 shipped without code or weights and only partially reopened after a thousand researchers objected.],
     ),
   ),
   references: (
-    [Jumper et al. (2021), "Highly accurate protein structure prediction with AlphaFold," _Nature_ — the method and accuracy.],
-    [Varadi et al. (2024), "AlphaFold Protein Structure Database in 2024," _Nucleic Acids Research_ — the 200M+ structures and open release.],
-    [CASP14 press release, Protein Structure Prediction Center, 30 November 2020 — the benchmark result and Moult's statement.],
-    [CASP benchmark documentation — the decades-long agreed evaluation.],
-    [AlphaFold 3 repository terms of use and prohibited-use policy (Google DeepMind, November 2024) — the open-release governance decision as actually written.],
-    [Abramson et al. (2024), "Accurate structure prediction of biomolecular interactions with AlphaFold 3," _Nature_; and the 2024 Nobel Prize in Chemistry (Hassabis & Jumper) — the extension to complexes and the later code release.],
+    [Jumper, J., Evans, R., Pritzel, A., et al. (2021), "Highly accurate protein structure prediction with AlphaFold," _Nature_ 596(7873):583–589, doi:10.1038/s41586-021-03819-2 — the method, and the CASP14 validation.],
+    [Varadi, M., Bertoni, D., Magana, P., et al. (2024), "AlphaFold Protein Structure Database in 2024: providing structure coverage for over 214 million protein sequences," _Nucleic Acids Research_ 52(D1):D368–D375, doi:10.1093/nar/gkad1011 — the database at 214M, up from 300k in 2021, and its integration into PDB, UniProt, Ensembl and InterPro.],
+    [CASP14 press release, Protein Structure Prediction Center, 30 November 2020 — GDT above 90 on roughly two-thirds of targets. Note the Moult quotation this case carries is *not* in the press release: it is from Google DeepMind's post of the same date, "AlphaFold: a solution to a 50-year-old grand challenge in biology," which also reports the 92.4 median GDT.],
+    [Tunyasuvunakool, K., Adler, J., Wu, Z., et al. (2021), "Highly accurate protein structure prediction for the human proteome," _Nature_ 596(7873):590–596, doi:10.1038/s41586-021-03828-1 — 98.5% of human proteins covered; 58% of residues confidently predicted, 36% of all residues at very high confidence, against 17% of residues covered by experimental structure beforehand.],
+    [AlphaFold 3 access chronology: publication with neither code nor weights (May 2024), the open letter signed by more than a thousand researchers, the _Nature_ editorial "AlphaFold3 — why did Nature publish it without its code?" (2024, doi:10.1038/d41586-024-01463-0), and the 11 November 2024 GitHub release of the code under a non-commercial license with weights by application — the open-release governance decision as actually written.],
+    [Abramson, J., Adler, J., Dunger, J., et al. (2024), "Accurate structure prediction of biomolecular interactions with AlphaFold 3," _Nature_ 630(8016):493–500, doi:10.1038/s41586-024-07487-w; and the 2024 Nobel Prize in Chemistry, one half to David Baker for computational protein design and one half jointly to Demis Hassabis and John M. Jumper for protein structure prediction.],
   ),
-  quote: [We have been stuck on this one problem — how do proteins fold up — for nearly 50 years. To see DeepMind produce a solution for this is a very special moment.],
-  quote-source: "John Moult, Co-founder and Chair of CASP, on the CASP14 result, 30 November 2020",
+  quote: [We have been stuck on this one problem — how do proteins fold up — for nearly 50 years. To see DeepMind produce a solution for this, having worked personally on this problem for so long and after so many stops and starts, wondering if we'd ever get there, is a very special moment.],
+  quote-source: "John Moult, Co-founder and Chair of CASP, quoted in Google DeepMind's 30 November 2020 announcement of the CASP14 result",
   le-insight: [
     AlphaFold is the strongest positive AI case in the dataset. The
     technical achievement is real. The conditions that made the
     benefit possible — agreed benchmark, training data, verifiable
     output, open release — are the capability infrastructure around
-    the model, not the model itself. The case is the strongest
-    available evidence for what supports beneficial AI deployment.
+    the model, not the model itself. Two of the four are less settled
+    than the headline suggests: verification reaches the CASP targets
+    far more securely than it reaches the 214 million database
+    entries, and AlphaFold 3 showed that open release is a decision
+    that can be taken back.
   ],
   lens-approach: [
-    LENS uses AlphaFold in LEN 1 as a problem-framing case for what
-    productive AI deployment looks like, in LEN 9 as a technical
-    achievement, and in LEN 7 for the open-release governance
-    decision that distributed the benefit globally.
+    AlphaFold is the preconditions-for-beneficial-deployment case
+    (induced 2.1; LENS D4+D5/PT2; LEO-4 and LEO-5). LENS uses it in
+    Domain 4 (Test and Evaluation) for the benchmark-and-verification
+    half — CASP as an instrument the field agreed on and an
+    independent body ran, and the per-residue confidence score as the
+    honest limit on what the database can be trusted for — and in
+    Domain 5 (Navigating Sociotechnical Constraints) for the
+    open-release decision and its partial reversal at AlphaFold 3.
+    In the course sequence: LEN 1 as a problem-framing case for what
+    productive AI deployment looks like, LEN 9 as a technical
+    achievement, LEN 7 for the release governance. Pair with Case 37,
+    where the same demand for released code and methods was made of
+    the same laboratory.
   ],
   literature-items: (
-    [Jumper et al. (2021), _Nature_],
-    [Varadi et al. (2022)],
-    [Hassabis (DeepMind) public commentary on AlphaFold and capability],
+    [Jumper et al. (2021), _Nature_ — the method and the CASP14 result],
+    [Tunyasuvunakool et al. (2021), _Nature_ — the human proteome, and its confidence bands],
+    [Varadi et al. (2024), _Nucleic Acids Research_ — the database at 214 million sequences],
   ),
   reflection-list: (
     [Identify a domain in your work where the conditions that supported AlphaFold's success (benchmark, training data, verifiable output) are present. What is the analogous opportunity?],
@@ -4344,9 +4562,10 @@
   ),
   courses: ("LEN 1", "LEN 7", "LEN 9"),
   scale: "big",
+  evidence-source: "peer-reviewed",
   induced-anchor: "2.1",
   lens-anchor: "D4+D5/PT2",
-  leo-anchor: "LEO-4",
+  leo-anchor: "LEO-4, LEO-5",
 )
 
 // ---- Case 37 — deepmind-mammography-2020 ----
@@ -4356,8 +4575,8 @@
   title: "DeepMind Mammography — High-Profile Nature Paper, Replicability Pushback",
   year: "2020",
   domains-list: ("healthcare", "medical imaging", "machine learning"),
-  modes-code: "TKD",
-  impact: "McKinney et al. 2020 Nature paper reported a deep-learning mammography screening system outperforming radiologists on retrospective UK and U.S. screening datasets, with reductions in false-positives (5.7 percentage points in the U.S. set, 1.2 in the UK set) and false-negatives (9.4 and 2.7 percentage points respectively); Haibe-Kains et al. October 2020 Nature comment critiqued the paper for failing to release code and trained models, arguing that the missing methods and code undermine the study's scientific value and stop other groups from prospectively validating the system",
+  modes-code: "KG",
+  impact: "McKinney et al. 2020 Nature paper reported a deep-learning mammography screening system outperforming radiologists on a representative retrospective UK dataset and a cancer-enriched U.S. one, with reductions in false-positives (5.7 percentage points in the U.S. set, 1.2 in the UK set) and false-negatives (9.4 and 2.7 percentage points respectively); Haibe-Kains et al.'s October 2020 Nature comment held that \"the lack of detailed methods and computer code undermines its scientific value,\" and the authors' addendum in the same issue supplied hyperparameters and the augmentation strategy but not the code or the trained models",
   kind: "frontier",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -4369,8 +4588,9 @@
     DeepMind published "International evaluation of an AI system
     for breast cancer screening" in _Nature_ on January 1, 2020.
     The paper reported that a deep-learning system outperformed
-    radiologists on retrospective UK and U.S. screening datasets,
-    with reductions in false-positives of 5.7 percentage points
+    radiologists on two retrospective datasets — a large
+    representative UK screening set and a large cancer-enriched U.S.
+    one — with reductions in false-positives of 5.7 percentage points
     (U.S.) and 1.2 percentage points (UK) and reductions in
     false-negatives of 9.4 and 2.7 percentage points respectively.
     The paper drew unusual press attention and rapidly entered
@@ -4379,7 +4599,7 @@
     "Transparency and reproducibility in artificial intelligence"
     critiqued the McKinney paper for failing to release code,
     trained models, or sufficient methodological detail to
-    permit independent reproduction. The load-bearing hedge the Haibe-Kains comment delivers is that the lack of detailed methods and computer code undermines the study's scientific value. The screening-comparison framing the original paper offered has since been refined by deployment evidence rather than confirmed at the deployment scale the headline implied. The case pairs with
+    permit independent reproduction. The load-bearing hedge the Haibe-Kains comment delivers is exact: "the lack of detailed methods and computer code undermines its scientific value." In the same issue the authors published an addendum expanding the supplementary methods with optimization hyperparameters and a fuller account of the augmentation strategy — a partial answer that left the code and the trained models unreleased. The screening-comparison framing the original paper offered has since been refined by deployment evidence rather than confirmed at the deployment scale the headline implied — and the randomized evidence that eventually arrived came from a different, commercial system, not this one. The case pairs with
     Case 35 (Radiology AI Miscalibration), Case 5 (Epic
     Sepsis), and Case 26 (Pulse oximetry).
   ],
@@ -4390,13 +4610,23 @@
       profile publication for a deep-learning medical-imaging
       study. The work was a collaboration across Google Health,
       DeepMind, and clinical partners at Cancer Research UK Imperial Centre, Northwestern Medicine, the Royal Surrey County Hospital, and the University of Cambridge. The
-      retrospective evaluation used UK and U.S. screening
-      datasets and compared the AI system's outputs against
+      retrospective evaluation used two screening datasets that were
+      not built alike — the UK set assembled to be large and
+      representative, the U.S. set large and *enriched* for cancer —
+      and compared the AI system's outputs against
       single-reader and double-reader radiologist performance.
       The headline framing was that the AI system reduced both
       false-positives and false-negatives relative to
       radiologists, with the U.S. dataset showing larger
-      absolute reductions than the UK dataset.#cn()
+      absolute reductions than the UK dataset. Two further results
+      shaped how the paper was read. In a separate study of six
+      radiologists the system beat every one of them, with an AUC
+      11.5 percentage points above the average reader. And in a
+      simulation of the UK double-reading protocol, the system held
+      non-inferior performance while removing 88 percent of the
+      second reader's workload — a simulated number that set the
+      expectation the randomized trials would later be measured
+      against.#cn()
     ],
     [
       The press response was substantial. Mainstream coverage
@@ -4432,7 +4662,20 @@
       methodological detail to permit independent reproduction.
       The comment was specific: the hyperparameters of the three networks, the augmentation pipeline and the training pipeline were not documented well enough for another group to rebuild the system. The comment did not allege error
       in the paper; it argued that reproducibility had not been
-      established.#cn()
+      established. What happened next is the part usually left out.
+      In the same 14 October 2020 issue, the McKinney authors
+      published both a formal reply and an addendum. The addendum is
+      the substantive half: it expanded the supplementary methods
+      with the optimization hyperparameters and a fuller description
+      of the augmentation strategy, explicitly to help others
+      replicate the result. The two specific documentation gaps the
+      comment named were therefore closed within one issue. The code
+      and the trained models were not released, and have not been.
+      So the exchange settled at a partial remedy — enough to
+      document the method, not enough to rebuild the system — which
+      is the honest shape of most reproducibility disputes and the
+      reason the demand has to be made before publication rather
+      than after.#cn()
     ],
     [
       The case pairs with Case 35 (Radiology AI Miscalibration)
@@ -4441,34 +4684,58 @@
       prospective deployment produces another, and the two are
       not interchangeable. Pair with Case 5 (Epic Sepsis) for
       the high-profile-result-versus-deployment-evidence thread
-      in healthcare AI; Epic Sepsis is the load-bearing case in
+      in healthcare AI; Epic Sepsis is the reference case in
       the corpus for the gap between vendor or developer claims
       and external evaluation, and DeepMind Mammography sits in
       the same conceptual family at a different domain. Pair
       with Case 26 (Pulse oximetry) for the population-
-      heterogeneity-in-medical-AI thread; the McKinney paper's
+      heterogeneity-in-medical-AI thread — with one caution this
+      case has to carry rather than exploit. The McKinney paper's
       UK-versus-U.S. effect-size difference (5.7 vs 1.2 pp on
-      false-positives) is itself evidence that the system's
-      performance varies across screening populations, and the
-      variation has implications for deployment.#cn()
+      false-positives) is often read as evidence that the system's
+      performance varies across screening populations. It may;
+      but the U.S. set was enriched for cancer and the UK set was
+      not, so dataset construction and population difference are
+      confounded in that comparison and the paper does not separate
+      them. The teachable point is the confound itself: two numbers
+      from one paper are not comparable unless the sets behind them
+      were built the same way.#cn()
     ],
     [
-      The honest hedges the case carries are load-bearing. The
+      The honest hedges the case carries are not decoration. The
       Haibe-Kains comment is not a finding that the McKinney
       paper was wrong; it is a finding that the paper as
       published did not establish reproducibility. The
-      subsequent five years of deployment evidence on AI-assisted
-      breast cancer screening have refined the screening-
-      comparison framing — most decisively the randomized MASAI
-      trial in Sweden (105,934 women; interim safety results in _Lancet Oncology_ 2023, screening-performance results in _Lancet Digital Health_ 2025, final analysis 2026), which found
-      AI-supported reading non-inferior to standard double reading
-      while cutting radiologist workload by roughly 44 percent and
-      detecting more cancers. That is the prospective validation the Haibe-Kains critique said the missing code and methods put out of reach — vindicating the demand rather than the original paper — even as
-      prospective evaluations have shown benefits in some settings
-      and not in others, and the
-      operational variables the retrospective comparison did not
-      measure have proved load-bearing in deployment. The case
-      teaches the verification-as-deployment-event pattern: a
+      arc that followed did not run straight from the paper to
+      vindication. In 2021 Freeman and colleagues reviewed the whole
+      retrospective evidence base for AI in breast screening for the
+      _BMJ_ — twelve studies, 131,822 women, McKinney among them —
+      and found no prospective studies at all, poor methodological
+      quality throughout, and, in the three studies that compared AI
+      against the original radiologists' clinical decisions, 34 of 36
+      AI systems less accurate than a single radiologist and all 36
+      less accurate than two radiologists in consensus. Their summary
+      of the pattern is the one this book keeps meeting: "promising
+      results in smaller studies are not replicated in larger
+      studies." The randomized evidence arrived later, from the MASAI
+      trial in Sweden — 105,934 women randomized between April 2021
+      and December 2022, interim safety analysis in _Lancet Oncology_
+      2023, screening performance in _Lancet Digital Health_ 2025,
+      and the primary interval-cancer endpoint in _The Lancet_ in
+      January 2026. It found AI-supported reading non-inferior on
+      interval cancer, higher in sensitivity (80.5 against 73.8
+      percent), identical in specificity, detecting more cancers (6.4
+      against 5.0 per 1,000) and cutting screen-reading workload by
+      about 44 percent. Note carefully whose system that was: MASAI
+      ran on Transpara, a commercial product from ScreenPoint
+      Medical, not on the DeepMind system this case is about. The
+      DeepMind system was never taken to a randomized trial. So the
+      arc vindicates the *demand* the Haibe-Kains comment made —
+      prospective, independently runnable evaluation — while leaving
+      the original result exactly where the comment left it, and it
+      was a different developer, working in the open with a
+      regulated commercial product, who supplied the evidence. The
+      case teaches the verification-as-deployment-event pattern: a
       high-profile retrospective result is the starting point of
       a verification arc, not its endpoint, and the
       reproducibility infrastructure the Haibe-Kains comment
@@ -4476,11 +4743,11 @@
     ],
   ),
   beats: (
-    "McKinney et al. Nature Jan 1 2020: deep-learning mammography reduces false-positives 5.7 pp (US) / 1.2 pp (UK), false-negatives 9.4 / 2.7 pp vs radiologists",
+    "McKinney et al. Nature Jan 1 2020: false-positives down 5.7 pp on a cancer-enriched U.S. set and 1.2 pp on a representative UK set; false-negatives 9.4 / 2.7 pp",
     "Press framing: \"AI outperforms radiologists\"; paper's careful claims do not carry the framing's deployment implications",
     "Haibe-Kains et al. Nature Oct 14 2020 comment: code not released, models not released, methodology not reproducible from publication",
-    "Comment does not allege error; argues reproducibility not established; hyperparameters, augmentation and training pipelines undocumented",
-    "Pair with Case 35 (Radiology AI miscalibration), Case 5 (Epic Sepsis), Case 26 (pulse oximetry population heterogeneity)",
+    "Comment alleges no error, only that reproducibility is unestablished; an addendum in the same issue supplies hyperparameters and augmentation — never the code or the weights",
+    "Freeman 2021 BMJ: 34 of 36 AI systems worse than one radiologist; MASAI's randomized vindication came on a different vendor's system",
   ),
   approaches: (
     during: (
@@ -4490,26 +4757,30 @@
     ),
     after: (
       [Carry the Haibe-Kains comment's specific framing into print without softening; the comment is a finding on reproducibility, not a finding of error, and the case's pedagogical value depends on the distinction being preserved.],
-      [Pair in syllabi with Case 35 and Case 5 so the high-profile-result-versus-deployment-evidence pattern is taught across the medical-imaging-AI deployment seam at multiple instances.],
+      [Pair in syllabi with Case 35 and Case 5 so the high-profile-result-versus-deployment-evidence pattern is taught across the medical-imaging-AI deployment seam at multiple instances — and check, every time, that the validating trial ran on the system under discussion. MASAI validated Transpara, not the DeepMind system.],
       [Use the case to anchor the verification-as-deployment-event frame; the curricular target is the discipline of treating a high-profile retrospective result as the starting point of a multi-year verification arc rather than as a deployment-ready endpoint.],
     ),
   ),
   references: (
     [McKinney, S. M., Sieniek, M., Godbole, V., Godwin, J., Antropova, N., Ashrafian, H., Back, T., et al. (2020), "International evaluation of an AI system for breast cancer screening," _Nature_ 577:89–94, doi:10.1038/s41586-019-1799-6.],
     [Haibe-Kains, B., Adam, G. A., Hosny, A., Khodakarami, F., MAQC Society Board of Directors, Waldron, L., Wang, B., et al. (2020), "Transparency and reproducibility in artificial intelligence," _Nature_ 586:E14–E16, doi:10.1038/s41586-020-2766-y.],
-    [McKinney et al. (2020), reply to Haibe-Kains et al., _Nature_ 586:E17–E18 — the developers' response on the reproducibility-infrastructure question.],
-    [Freeman, K., Geppert, J., Stinton, C., Todkill, D., Johnson, S., Clarke, A., & Taylor-Phillips, S. (2021), "Use of artificial intelligence for image analysis in breast cancer screening programmes: systematic review of test accuracy," _BMJ_ 374:n1872 — independent systematic review of subsequent AI-screening-deployment evidence.],
+    [McKinney, S. M., Karthikesalingam, A., Tse, D., Kelly, C. J., Liu, Y., Corrado, G. S., & Shetty, S. (2020), "Reply to: Transparency and reproducibility in artificial intelligence," _Nature_ 586:E17–E18, doi:10.1038/s41586-020-2767-x — the developers' response, published alongside the addendum below.],
+    [McKinney et al. (2020), "Addendum: International evaluation of an AI system for breast cancer screening," _Nature_ 586:E19, doi:10.1038/s41586-020-2679-9 — published in the same issue as the Haibe-Kains comment; expands the supplementary methods with optimization hyperparameters and the augmentation strategy to assist replication. Code and trained models were not released.],
+    [Freeman, K., Geppert, J., Stinton, C., Todkill, D., Johnson, S., Clarke, A., & Taylor-Phillips, S. (2021), "Use of artificial intelligence for image analysis in breast cancer screening programmes: systematic review of test accuracy," _BMJ_ 374:n1872, doi:10.1136/bmj.n1872 — twelve studies, 131,822 women, McKinney included; no prospective studies found, studies of poor methodological quality, 34 of 36 AI systems less accurate than a single radiologist and all less accurate than two in consensus.],
+    [MASAI trial (Lång et al.): clinical safety analysis, _Lancet Oncology_ 2023;24(8):936–944, doi:10.1016/S1470-2045(23)00298-X; Hernström et al., screening performance, _Lancet Digital Health_ 2025;7(3):e175–e183, doi:10.1016/S2589-7500(24)00267-X; Gommers et al., interval cancer, sensitivity and specificity, _The Lancet_ 2026;407(10527):505–514, doi:10.1016/S0140-6736(25)02464-X. 105,934 women randomized; the AI system is Transpara v1.7.0 (ScreenPoint Medical), not the system evaluated by McKinney et al.],
   ),
-  quote: [The lack of detailed methods and computer code undermines the study's scientific value, and the screening-comparison framing has been refined by subsequent deployment evidence rather than confirmed at the deployment scale the headline implied.],
-  quote-source: "Editors' synthesis of the McKinney et al. (2020) and Haibe-Kains et al. (2020) Nature exchange.",
+  quote: [In their study, McKinney et al. showed the high potential of artificial intelligence for breast cancer screening. However, the lack of detailed methods and computer code undermines its scientific value.],
+  quote-source: "Haibe-Kains et al., \"Transparency and reproducibility in artificial intelligence,\" Nature 586:E14–E16 (14 October 2020)",
   le-insight: [
     DeepMind Mammography is the verification-as-deployment-event
     case at the high-profile-publication scale. The McKinney
     paper's retrospective result was the starting point of a
     verification arc, not its endpoint; the Haibe-Kains comment
     named the reproducibility infrastructure as the condition
-    for the arc, and subsequent deployment evidence has refined
-    the screening-comparison framing the original paper offered.
+    for the arc, and the authors' addendum met part of the demand
+    without releasing code or models. The randomized evidence that
+    eventually settled the screening question came six years later,
+    from a different vendor's system.
   ],
   lens-approach: [
     DeepMind Mammography is the deployment-and-reuse-as-
@@ -4518,17 +4789,21 @@
     uses it in Domain 4 (Test and Evaluation) for the
     reproducibility-infrastructure-as-verification-condition
     discipline and in Domain 3 (Human-System Collaboration)
-    for the retrospective-versus-prospective-evidence distinction.
+    for the retrospective-versus-prospective-evidence distinction —
+    including the discipline of noticing that a later randomized
+    result does not validate an earlier system unless it is the
+    same system.
     Pair with Case 35 (Radiology AI Miscalibration), Case 5
     (Epic Sepsis), and Case 26 (pulse oximetry population
     heterogeneity). The Haibe-Kains comment is a reproducibility
     finding, not a finding of error; the distinction is the
-    load-bearing hedge.
+    decisive hedge.
   ],
   literature-items: (
     [McKinney et al. (2020), _Nature_ — international evaluation of AI mammography screening],
     [Haibe-Kains et al. (2020), _Nature_ — transparency and reproducibility critique],
-    [Freeman et al. (2021), _BMJ_ — systematic review of subsequent AI-screening-deployment evidence],
+    [Freeman et al. (2021), _BMJ_ — systematic review finding the retrospective evidence base poor and most AI systems less accurate than one radiologist],
+    [Lång et al. / Hernström et al. / Gommers et al. — the MASAI randomized trial, on a different vendor's system],
   ),
   reflection-list: (
     [Identify a high-profile retrospective result in your domain whose reproducibility infrastructure — code, trained models, methodological detail — has not been released. What would the verification arc the result opens require to proceed, and what currently blocks it?],
@@ -4551,7 +4826,7 @@
   scale: "big",
   evidence-source: "peer-reviewed",
   induced-anchor: "4.4",
-  lens-anchor: "D5/PT5",
+  lens-anchor: "D3/PT5",
   leo-anchor: "LEO-4, LEO-3",
   summary: [
     Isotretinoin is a highly effective acne medication and a known
@@ -4567,9 +4842,9 @@
     (_J Am Acad Dermatol_, 2011; n=8,344 patients across 9,912
     treatment courses) found 29 fetal exposures and concluded
     "no evidence that iPLEDGE significantly decreased the risk of
-    fetal exposure" compared with the prior program. Collins et al. (2014) put roughly 150 isotretinoin-exposed pregnancies a year in the US despite the program; FDA adverse-event reports give 218 to 310 a year after 2011,
+    fetal exposure" compared with the prior program. Collins et al. (2014) put roughly 150 isotretinoin-exposed pregnancies a year in the U.S. despite the program; FDA adverse-event reports give 218 to 310 a year after 2011,
     with non-adherence — missed pills, inconsistent condom use —
-    the documented driver. The teaching point is that an
+    the driver Collins documents. The teaching point is that an
     authorization mechanism without adherence support does not
     reliably deliver the capability it is built to enforce.
   ],
@@ -4601,13 +4876,15 @@
       The measured outcome diverges sharply. Shin et al.
       (_Journal of the American Academy of Dermatology_, 2011)
       studied 8,344 Kaiser Permanente patients across 9,912 isotretinoin treatment courses from March 2004 to February 2008, spanning both programs, and identified 29 fetal exposures — a rate that fell from 3.11 to 2.67 per 1000 courses after iPLEDGE (P = .69). The paper's conclusion is the
-      load-bearing sentence: "no evidence that iPLEDGE
+      decisive sentence: "no evidence that iPLEDGE
       significantly decreased the risk of fetal exposure" relative
-      to the prior SMART program. Collins et al. (2014) report approximately 150 isotretinoin-exposed pregnancies a year in the United States despite the program operating as designed; FDA adverse-event reports analysed by Tkachenko et al. (2019) give 218 to 310 a year after 2011. The
-      documented driver in both is non-adherence: missed pills,
+      to the prior SMART program. Collins et al. (2014) report approximately 150 isotretinoin-exposed pregnancies a year in the United States despite the program operating as designed; FDA adverse-event reports analyzed by Tkachenko et al. (2019) settle into 218 to 310 annual pregnancy reports after 2011 — down from a 2006 peak of 768, but persistent enough that the authors call for "investigation into the efficacy of iPLEDGE." The
+      driver Collins et al. document is non-adherence: missed pills,
       inconsistent condom use, the assumption that one cycle of
       missed contraception is unlikely to coincide with the
-      teratogenic window.#cn()
+      teratogenic window. Tkachenko et al. do not adjudicate the
+      cause, listing reporting fatigue and a national decline in
+      teenage pregnancy alongside the program itself.#cn()
     ],
     [
       The teaching point is precise and load-bearing. iPLEDGE is
@@ -4642,7 +4919,7 @@
   beats: (
     "iPLEDGE 2006 — first REMS-class authorization for isotretinoin; mandatory pregnancy test, two-method contraception, pharmacy lockout per cycle",
     "Shin et al. 2011 Kaiser cohort (n=8,344; 9,912 courses) — 29 fetal exposures; 'no evidence iPLEDGE significantly decreased risk' vs. prior SMART",
-    "Collins et al. 2014: ~150 exposed pregnancies annually despite the program; FDA reports give 218-310 after 2011; non-adherence is the documented driver",
+    "Collins et al. 2014: ~150 exposed pregnancies annually despite the program; FDA reports give 218-310 after 2011; non-adherence is the driver Collins documents",
     "Structural form same as SUBSAFE and WHO checklist; the mechanism alone does not deliver capability without adherence support",
     "Most analytically useful 'mixed' case in v2 — the form has demonstrated successes; form-without-adherence-support is the gap",
   ),
@@ -4659,10 +4936,11 @@
     ),
   ),
   references: (
-    [Shin, J., Cheetham, T. C., Wong, L., Niu, F., Kass, E., Yoshinaga, M. A., Sorel, M., McCombs, J. S., & Sidney, S. (2011), "The impact of the iPLEDGE program on isotretinoin fetal exposure in an integrated health care system," _Journal of the American Academy of Dermatology_, PMID:21565419.],
     [FDA, iPLEDGE program documentation (2006 – present) — REMS architecture and enrollment requirements.],
-    [Collins, M. K., Moreau, J. F., Opel, D., Swan, J., Prevost, N., Hastings, M., Schwarz, E. B., & Ferris, L. K. (2014), "Compliance with pregnancy prevention measures during isotretinoin therapy," _Journal of the American Academy of Dermatology_, 70(1):55–59, PMID:24157382 — source of the ~150 annual exposures figure.],
     [Sullivan et al. (2003), House Science Committee statement on SUBSAFE — the structural counterpoint (Case 173).],
+    [Tkachenko, E., Singer, S., Sharma, P., Barbieri, J., & Mostaghimi, A. (2019), "US Food and Drug Administration reports of pregnancy and pregnancy-related adverse events associated with isotretinoin," _JAMA Dermatology_, 155(10):1175–1179 — source of the 218 to 310 annual reports after 2011.],
+    [Shin, J., Cheetham, T. C., Wong, L., Niu, F., Kass, E., Yoshinaga, M. A., Sorel, M., McCombs, J. S., & Sidney, S. (2011), "The impact of the iPLEDGE program on isotretinoin fetal exposure in an integrated health care system," _Journal of the American Academy of Dermatology_, PMID:21565419.],
+    [Collins, M. K., Moreau, J. F., Opel, D., Swan, J., Prevost, N., Hastings, M., Schwarz, E. B., & Ferris, L. K. (2014), "Compliance with pregnancy prevention measures during isotretinoin therapy," _Journal of the American Academy of Dermatology_, 70(1):55–59, PMID:24157382 — source of the ~150 annual exposures figure.],
   ),
   quote: [The authorization mechanism is operating as designed. The capability sits downstream of the authorization, and the program does not reach that far.],
   quote-source: "Editors' synthesis of Shin et al. (2011).",
@@ -4673,7 +4951,7 @@
     same; the measured outcome is very different because the
     capability the program exists to enforce depends on
     patient adherence the program does not instrument. The
-    "no significant decrease" finding is load-bearing and
+    "no significant decrease" finding is binding and
     survives into the case verbatim.
   ],
   lens-approach: [
@@ -4706,7 +4984,7 @@
   year: "2006 – present",
   domains-list: ("healthcare",),
   modes-code: "TN",
-  impact: "Improved teamwork, communication, and patient-safety culture across diverse settings; on-time first surgical starts +21% in one urology service (Weld 2016); 1,500+ hospitals, 5,000+ master trainers, 300,000+ staff trained",
+  impact: "Improved teamwork, communication, and patient-safety culture across diverse settings; on-time first surgical starts +21% in one urology service (Weld 2016); 1,500+ hospitals, 5,000+ master trainers, 300,000+ staff trained in the first eight years",
   diagram: dgm.dgm-teamstepps,
   kind: "intervention",
   summary: [
@@ -4721,7 +4999,7 @@
     practice — the cross-domain capability transfer LENS is built to teach.
     Because its implementation infrastructure was funded as part of the
     program, TeamSTEPPS moved from research to scaled deployment in years
-    rather than decades. More than 1,500 hospitals have implemented it, 5,000 master trainers are certified, and over 300,000 health professionals have been trained.
+    rather than decades. In its first eight years more than 1,500 hospitals implemented it, over 5,000 master trainers were certified, and more than 300,000 health professionals were trained.
   ],
   sections: (
     // -- Background --
@@ -4764,8 +5042,11 @@
     ],
     // -- The Evidence --
     [
-      Studies across diverse settings report improved teamwork, communication, and patient-safety culture; on one urology service, Weld et al. measured a 21% improvement in on-time first surgical starts. More than 1,500 hospitals have implemented the framework, and
-      AHRQ has continued to develop it, releasing TeamSTEPPS 3.0 in 2023.
+      Studies across diverse settings report improved teamwork, communication, and patient-safety culture; on one urology service, Weld et al. measured a 21% improvement in on-time first surgical starts (P < .001), alongside a 12.7-minute reduction in mean case time and a fall in patient-safety issues from 16% to 6%. In its first eight years the framework
+      reached more than 1,500 hospitals, certifying over 5,000 master
+      trainers who trained more than 300,000 health professionals; AHRQ
+      has continued to develop it, releasing TeamSTEPPS 2.0 in 2014 and
+      3.0 in 2023.
       The continued development into a third version is itself evidence the
       transfer took hold — a framework that is still being maintained and
       revised nearly two decades on is one institutions kept using, not one
@@ -4792,11 +5073,11 @@
     "Cross-domain capability transfer is engineerable when the funded path to sustained practice is included",
   ),
   references: (
-    [AHRQ, _TeamSTEPPS 3.0 Curriculum_ (2023) — the framework and four competencies.],
-    [DoD / AHRQ partnership documentation — the joint development and implementation infrastructure.],
     [Salas, E., DiazGranados, D., Klein, C., Burke, C. S., Stagl, K. C., Goodwin, G. F. & Halpin, S. M. (2008), "Does Team Training Improve Team Performance? A Meta-Analysis," _Human Factors_ 50(6):903–933 — the cross-domain team-training evidence base.],
-    [Weaver, S., Dy, S. & Rosen, M. (2014) — patient-safety team-training implementation and outcomes.],
+    [Umscheid, C. & Haugstetter, M. (2023), "With TeamSTEPPS 3.0, AHRQ Refreshes a Landmark Patient Safety Training Curriculum," _AHRQ Views_ (12 September) — the DoD partnership and the first-eight-years adoption figures (1,500 hospitals, 5,000 master trainers, 300,000 professionals).],
+    [Weaver, S. J., Dy, S. M. & Rosen, M. A. (2014), "Team-training in healthcare: a narrative synthesis of the literature," _BMJ Quality & Safety_ 23(5):359–372 — bundled team-training interventions, with tools and organisational change to support transfer, show the largest effects.],
     [Weld, L. R. et al. (2016), "TeamSTEPPS Improves Operating Room Efficiency and Patient Safety," _American Journal of Medical Quality_ 31(5):408–414 — the on-time first-start figure.],
+    [AHRQ, _TeamSTEPPS 3.0 Curriculum_ (2023) — the framework and four competencies.],
   ),
   quote: [TeamSTEPPS represents the translation pathway from high-reliability research into clinical practice.],
   quote-source: "Editors' synthesis drawing on AHRQ TeamSTEPPS 3.0 (2023) and Salas et al.",
@@ -4917,7 +5198,7 @@
       Team Planning and Managing a Team — and the smallest gain
       was in Interpersonal Relations. The authors do not soften
       this; the paper states it plainly, and the
-      smaller-gain-on-the-hardest-half finding is the load-bearing
+      smaller-gain-on-the-hardest-half finding is the decisive
       honest result.#cn()
     ],
     [
@@ -4955,7 +5236,7 @@
   approaches: (
     during: (
       [Resolve collaboration capability into measurable components — Team Planning, Managing a Team, Interpersonal Relations — and structure the training so each component has tools, exercises, and an assessment instrument.],
-      [Validate the measurement instrument before relying on it for evaluation; the TEAMS instrument's three-component structure is the load-bearing methodological contribution.],
+      [Validate the measurement instrument before relying on it for evaluation; the TEAMS instrument's three-component structure is the methodological contribution.],
       [Acknowledge in the program design that the interpersonal component moved least and did not reach the intended level of use; the authors' own recommendation is more role-play and real-situation practice, not more lecture.],
     ),
     after: (
@@ -4968,7 +5249,7 @@
     [Mook, A., Knerich, V., Komaie, G., Cicutto, L., & Cross, J. (2025), "Team science training for clinical and translational scientists: An assessment of effectiveness," _Journal of Clinical and Translational Science_ 9(1):e158, doi:10.1017/cts.2025.10088.],
     [Falk-Krzesinski et al. (2011), "Mapping a research agenda for the science of team science," _Research Evaluation_ 20(2):143–156 — broader team-science literature backdrop.],
     [National Research Council (2015), _Enhancing the Effectiveness of Team Science_ (National Academies Press) — the National Academies team-science synthesis.],
-    [v2 paired cases: IPE evidence gap (122), Implementation Science Training (123) — the frontier/measurement companions.],
+    [Paired cases in this volume: IPE evidence gap (Case 28), Implementation Science Training (Case 41) — the frontier/measurement companions.],
   ),
   quote: [The largest gains were in the structured half. The hardest half — interpersonal relations — moved least, and the paper states it plainly.],
   quote-source: "Editors' synthesis of Colorado CTSA team-science training evaluation.",
@@ -4990,7 +5271,7 @@
     redesign and in Domain 4 (Test and Evaluation) for the
     TEAMS instrument validation and the perceived-competency
     vs. downstream-impact discipline. Direct pair with Cases
-    117 (IPE) and 123 (implementation science training) — the
+    28 (IPE) and 41 (implementation science training) — the
     intervention with measurement against two frontier cases
     where the measurement is the gap.
   ],
@@ -5027,7 +5308,7 @@
     evidence into operational practice — is one of the most
     consequential cross-domain-transfer competencies in
     contemporary medicine and adjacent fields, and the CTSA T32 / TL1 program survey (N=50 programs) is the closest national picture of what that training arm says it is for. The headline finding is the same
-    structural pattern as the IPE case (122) at smaller scale:
+    structural pattern as the IPE case (Case 28) at smaller scale:
     80% of programs name collaboration and/or team science among their goals and 46% name multi/inter/cross-disciplinary training, but the goals that name a specific practice are rarer — program evaluation 38%, experiential learning 24%, and competency-based training in 6% of the programs saying what sets them apart. The picture is of a field that
     has converged on what interdisciplinary translation training
     should aim for, but where the operational practices lag the
@@ -5042,17 +5323,17 @@
     [
       Implementation science exists because the gap between
       research evidence and operational practice in medicine — the
-      so-called "17-year gap" the v1 corpus documents at v1
+      so-called "17-year gap" the corpus documents at
       Case 13 — is large enough to constitute a discipline-level
       capability question. Moving validated evidence into clinical
       practice reliably is itself a competency that has to be
       designed, trained, and evaluated. The CTSA (Clinical and
-      Translational Science Awards) program is the primary US
+      Translational Science Awards) program is the primary U.S.
       mechanism for building that workforce, and the TL1 / T32
       programs are its training arm.#cn()
     ],
     [
-      The case's evidence base is a survey of CTSA-funded TL1 training programs fielded in 2019 and published in 2021 (N=50 of 51 invited hubs, a 98% response; 48 answered the distinguishing-goals question). The survey asked two open questions: what the program's stated goals are, and which goals distinguish it from other NIH-funded training. General aims are where the programs converge: 80% name collaboration and/or team science, 46% name multi/inter/cross-disciplinary training. Goals that name a specific practice are rarer — program evaluation 38%, experiential learning 24%, competency-based training 6% — and the survey does not reach past the goal statement: curriculum content and evaluation methods were reported separately.#cn()
+      The case's evidence base is a survey of CTSA-funded TL1 training programs fielded in 2019 and published in 2021 (N=50 of 51 invited hubs, a 98% response; 48 answered the distinguishing-goals question). The survey asked two open questions: what the program's stated goals are, and which goals distinguish it from other NIH-funded training. General aims are where the programs converge: of the 50 answering the stated-goals question, 80% name collaboration and/or team science and 46% name multi/inter/cross-disciplinary training. Goals that name a specific practice are rarer — program evaluation 38% and experiential learning 24% on the same question, and, on the distinguishing-goals question, competency-based training and/or assessment named by 3 of the 48 respondents (6%), the joint-lowest theme in the table. The survey does not reach past the goal statement: curriculum content and evaluation methods were reported separately.#cn()
     ],
     [
       The structural form is the same pattern IPE shows at field scale (Case 28): the field has converged on what interdisciplinary translation training should aim for, and the practice-specific goals trail the general ones. At the
@@ -5080,7 +5361,7 @@
     ],
     [
       In the multidisciplinary-translation trio (Cases 40 +
-      30 + 31), implementation-science training sits between
+      28 + 41), implementation-science training sits between
       team science (where the measurement is possible at program
       scale) and IPE (where the measurement is the field-scale
       gap). The trio teaches the enthusiasm-evidence-gap
@@ -5096,9 +5377,9 @@
     ],
   ),
   beats: (
-    "Implementation science = moving validated evidence into operational practice; CTSA TL1/T32 is the US training mechanism",
+    "Implementation science = moving validated evidence into operational practice; CTSA TL1/T32 is the U.S. training mechanism",
     "Survey N=50 CTSA-funded TL1 programs: most name collaboration / team science / multi-disc training as goals",
-    "Far fewer name the specific competency practices — competency-based curriculum 6%, experiential learning 24%, program evaluation 38%",
+    "Far fewer name the specific competency practices — competency-based curriculum 6% of the 48 distinguishing-goals responses, experiential learning 24%, program evaluation 38%",
     "Same enthusiasm-ahead-of-evidence pattern as IPE (Case 28) at smaller scale — operational practices lag stated goals",
     "Workforce-training counterpart to Case 13 ('17-year gap'); pair with Cases 40, 28 in the multidisciplinary-translation trio",
   ),
@@ -5115,15 +5396,15 @@
     ),
   ),
   references: (
-    [Sancheznieto, F., Sorkness, C. A., Attia, J., et al. (2021), "Clinical and translational science award T32/TL1 training programs: program goals and mentorship practices," _Journal of Clinical and Translational Science_ 6(1):e13, doi:10.1017/cts.2021.884.],
     [Morris, Wooding, & Grant (2011), "The answer is 17 years, what is the question: understanding time lags in translational research," _Journal of the Royal Society of Medicine_ — the original 17-year-gap source for Case 13.],
+    [Sancheznieto, F., Sorkness, C. A., Attia, J., et al. (2021), "Clinical and translational science award T32/TL1 training programs: program goals and mentorship practices," _Journal of Clinical and Translational Science_ 6(1):e13, doi:10.1017/cts.2021.884.],
     [Brownson, Colditz, & Proctor (2018), _Dissemination and Implementation Research in Health_ (2nd ed.) — the broader implementation-science synthesis.],
-    [v2 paired cases: Team-science training (121), IPE evidence gap (122).],
+    [Paired cases in this volume: Team-science training (Case 40), IPE evidence gap (Case 28).],
   ),
   quote: [Stated goals converge on the right targets. Operational practices lag. The gap is designable, not a curricular failure.],
   quote-source: "Editors' synthesis of the CTSA TL1 program-goals study (2021).",
   le-insight: [
-    The CTSA TL1 program survey is the workforce-training instance of the enthusiasm-evidence gap pattern: 80% of programs name collaboration and team science among their goals, while the goals that name a practice are named by far fewer — competency-based training by 6% of programs, experiential learning by 24%, program evaluation by 38%. The implementation-science workforce is the
+    The CTSA TL1 program survey is the workforce-training instance of the enthusiasm-evidence gap pattern: 80% of programs name collaboration and team science among their goals, while the goals that name a practice are named by far fewer — competency-based training and/or assessment by 3 of the 48 programs answering the distinguishing-goals question (6%), experiential learning by 24%, program evaluation by 38%. The implementation-science workforce is the
     recovery mechanism for the 17-year research-to-practice gap;
     the case names the gap inside the recovery mechanism
     itself.
@@ -5148,7 +5429,7 @@
   ),
   reflection-list: (
     [Identify a training program in your domain whose stated goals include competency-based assessment, program evaluation, or experiential learning. What proportion of those stated goals are operationalized into specific instruments, cadences, and reporting structures — and which are at the goal-statement layer only?],
-    [Specify the competency-based assessment instrument you would build into the next iteration of an implementation-science training program. The survey found a competency-based curriculum named by just 6% of programs — the instrument is what is missing more than the intent; what is the instrument?],
+    [Specify the competency-based assessment instrument you would build into the next iteration of an implementation-science training program. The survey found a competency-based curriculum named by just 3 of the 48 programs answering the distinguishing-goals question — the instrument is what is missing more than the intent; what is the instrument?],
     [The implementation-science workforce is the recovery mechanism for the 17-year research-to-practice gap (Case 13). What is the analog in your domain — the workforce whose operational capacity is the recovery for a documented systemic gap — and what is the case for investing in that workforce's training architecture?],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 8"),
@@ -5162,7 +5443,7 @@
   year: "2016",
   domains-list: ("hospital pharmacy", "healthcare workforce", "role redesign"),
   modes-code: "DNH",
-  impact: "The 2016 SHPA Redesign Project — a six-month national scoping study — found pharmacy technicians employed in 95% of Australian hospital pharmacies but held to technical rather than clinical work, with no national training or regulatory framework for expanded scope; a 2018 single-hospital staff survey (61 of 122 responding) then found 82% supported technician final accuracy checking and 81% supported technician drugs-of-addiction register entries, while technician-taken medication histories split pharmacists (38% supportive) from technicians (92%)",
+  impact: "The 2016 SHPA Redesign Project — a six-month national scoping study — found pharmacy technicians employed in 95% of Australian hospital pharmacies but held to technical rather than clinical work, with no national training or regulatory framework for expanded scope; a September 2018 single-hospital staff survey (61 of 122 responding), published in 2021, then found 82% supported technician final accuracy checking and 81% supported technician drugs-of-addiction register entries, while technician-taken medication histories split pharmacists (38% supportive) from technicians (92%)",
   kind: "intervention",
   scale: "small",
   evidence-source: "program-report",
@@ -5175,7 +5456,7 @@
     healthcare workforces meet at some point: the pharmacist's
     capacity was being absorbed by dispensing-accuracy checking, which
     crowded out the clinical work that requires pharmacist judgment.
-    The 2016 Pharmacy Technician and Assistant Role Redesign project did not expand scope; it mapped the ground for expanding it — a six-month study of the national workforce built from a literature review, a survey, focus groups, interviews and case studies. It found technicians in 95% of hospital pharmacies, roles varying widely between states, no national regulation of the workforce, and board guidance confining technicians to work not requiring professional judgement. A 2021 _Journal of Pharmacy Practice and Research_ cross-sectional survey at one Victorian teaching hospital then measured what staff would accept: 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction register entries, and technician-taken medication histories split pharmacists (38%) from technicians (92%). The
+    The 2016 Pharmacy Technician and Assistant Role Redesign project did not expand scope; it mapped the ground for expanding it — a six-month study of the national workforce built from a literature review, a survey, focus groups, interviews and case studies. It found technicians in 95% of hospital pharmacies, roles varying widely between states, no national regulation of the workforce, and board guidance confining technicians to work not requiring professional judgment. A cross-sectional survey fielded in September 2018 at one Victorian metropolitan teaching hospital and published in the _Journal of Pharmacy Practice and Research_ in 2021 then measured what staff would accept: 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction register entries, and technician-taken medication histories split pharmacists (38%) from technicians (92%). The
     evidence-tier flag renders under the title: the operational
     figures come from a program-report rather than an independent
     multi-site audit. Future validation will continue on long-term
@@ -5205,10 +5486,10 @@
       induced framework calls for at the small tier.#cn()
     ],
     [
-      What the project produced was a map, not an outcome series: technicians in 95% of hospital pharmacies, roles differing state by state, no national regulation of the workforce, and board guidance holding technicians to work that does not require professional judgement. The 2021 _Journal of Pharmacy Practice and Research_ cross-sectional survey carried it into the workforce-attitudes layer — of 122 staff invited at one Victorian teaching hospital, 61 responded; 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction entries, and fewer than 10% thought technicians were adequately used as things stood.#cn()
+      What the project produced was a map, not an outcome series: technicians in 95% of hospital pharmacies, roles differing state by state, no national regulation of the workforce, and board guidance holding technicians to work that does not require professional judgment. The Anderson et al. cross-sectional survey, fielded over four weeks in September 2018, carried it into the workforce-attitudes layer — of 122 staff invited at one Victorian teaching hospital, 61 responded; 82% supported technician final accuracy checking, 81% supported technician drugs-of-addiction entries, and fewer than 10% thought technicians were adequately used as things stood.#cn()
     ],
     [
-      The evidence-tier flag is load-bearing. The project report is a scoping document and reports no throughput, turnaround or error outcomes; the acceptance survey is peer-reviewed but covers one hospital and 61 respondents. No multi-site outcome evaluation of the expanded role exists in the Australian record. The cross-sectional survey is
+      The evidence-tier flag is binding. The project report is a scoping document and reports no throughput, turnaround or error outcomes; the acceptance survey is peer-reviewed but covers one hospital and 61 respondents. No multi-site outcome evaluation of the expanded role exists in the Australian record. The cross-sectional survey is
       peer-reviewed but measures attitudes rather than outcomes.
       The case is included because the pattern is teachable and
       the practitioner literature is consistent; the magnitudes
@@ -5227,14 +5508,15 @@
       pharmacist clinical judgment — emerged from the team rather
       than depending on the pharmacist's individual heroism. The
       case is also a Gap-5 echo: a non-US small-tier role-redesign
-      success with documented operational outcomes.
+      programme — mapped and accepted, but not yet measured in
+      throughput or safety outcomes.
     ],
   ),
   beats: (
     "Pharmacist capacity absorbed by dispensing-accuracy checking — clinical-support work crowded out",
     "2016 project maps the ground for three expanded roles: final accuracy checking, drugs-of-addiction management, clinical support",
     "Findings: technicians in 95% of hospital pharmacies; roles vary by state; workforce not nationally regulated",
-    "2021 JPPR cross-sectional survey extends evidence into workforce-acceptance attitudes",
+    "Anderson et al. survey (fielded 2018, published 2021) extends the evidence into workforce-acceptance attitudes",
     "Evidence tier: program-report magnitudes; no independent multi-site audit; future validation ongoing",
   ),
   approaches: (
@@ -5250,10 +5532,10 @@
     ),
   ),
   references: (
-    [Society of Hospital Pharmacists of Australia (November 2016), "Exploring the role of hospital pharmacy technicians and assistants to enhance the delivery of patient centred care: A White Paper on the findings and outcomes of the Pharmacy Technician and Assistant Role Redesign within Australian Hospitals (Redesign) Project."],
-    [Anderson et al. (2021), "Perceptions of hospital pharmacists and pharmacy technicians towards expanding roles for hospital pharmacy technicians: a cross-sectional survey," _Journal of Pharmacy Practice and Research_, doi:10.1002/jppr.1697.],
-    [Boughen, Sutton, Fenn, & Wright (2017), "Defining the Role of the Pharmacy Technician and Identifying Their Future Role in Medicines Optimisation," _Pharmacy_ 5(3):40 — UK companion analysis.],
     [Pharmacy Board of Australia and SHPA practice statements limiting technician work to activities not requiring professional judgement — the regulatory framing the project sits inside.],
+    [Society of Hospital Pharmacists of Australia (November 2016), "Exploring the role of hospital pharmacy technicians and assistants to enhance the delivery of patient centred care: A White Paper on the findings and outcomes of the Pharmacy Technician and Assistant Role Redesign within Australian Hospitals (Redesign) Project."],
+    [Anderson et al. (2021), "Perceptions of hospital pharmacists and pharmacy technicians towards expanding roles for hospital pharmacy technicians: a cross-sectional survey," _Journal of Pharmacy Practice and Research_ 51(3):216–224, doi:10.1002/jppr.1697 — fielded September 2018; 61 of 122 staff (50%) responded.],
+    [Boughen, Sutton, Fenn, & Wright (2017), "Defining the Role of the Pharmacy Technician and Identifying Their Future Role in Medicines Optimisation," _Pharmacy_ 5(3):40 — UK companion analysis.],
   ),
   quote: [The pharmacist-as-checker pattern was a property of the role architecture, not the pharmacist. The redesign treated the architecture as the design variable.],
   quote-source: "Editors' synthesis of the 2016 project report and Anderson et al. (2021).",
@@ -5267,8 +5549,9 @@
     Constraints) for LEO-5 — the work was to redraw the
     authority gradient — and in Domain 1 (Systems Analysis)
     for LEO-1, since the role-architecture diagnosis was the
-    precondition for the redesign. Pair with Cases 32–132 for
-    the small-tier C3 thread; Gap-5 echo as a non-US case.
+    precondition for the redesign. Pair with Case 32
+    (annual-screening UI redesign) for the small-tier C3
+    thread; Gap-5 echo as a non-US case.
   ],
   literature-items: (
     [SHPA White Paper (2016) — national workforce scoping study],
@@ -5328,7 +5611,7 @@
       that the prior paper-based workflow had not.#cn()
     ],
     [
-      The system delivered structured prompts, reminders, and a referral pathway through the CHW's mobile phone: CHWs registered pregnancies, followed mother-infant pairs, and raised real-time alerts to the ambulance system, the health facility, the district hospital and the centre. The
+      The system delivered structured prompts, reminders, and a referral pathway through the CHW's mobile phone: CHWs registered pregnancies, followed mother-infant pairs, and raised real-time alerts to the ambulance system, the health facility, the district hospital and the center. The
       design move worth naming is that the technology was scoped
       to extend the CHW's existing diagnostic-and-referral role,
       not to substitute for clinical judgment further up the
@@ -5339,7 +5622,7 @@
       Ruton et al. (2018) report increased uptake of maternal
       and newborn health services only where the mHealth system was
       paired with additional training, supervision, and equipment;
-      RapidSMS alone was ineffective. An interrupted time series on national survey data (Hategeka et al., 2019) found no significant change on any indicator studied, largely because coverage already sat above 90%. The published evaluation is the
+      RapidSMS alone was ineffective. An interrupted time series on national survey data (Hategeka et al., 2019) found no significant change on any indicator studied. Coverage of antenatal care, facility delivery and vaccination already sat above 90%, leaving a ceiling effect — but the authors are explicit that this does not explain the whole null: first-trimester ANC (50.3%) and four-or-more ANC visits (40.6%) had room to move and did not, and "further research is required to understand why RapidSMS had no impact on indicators where there was enough room for improvement." The published evaluation is the
       anchor finding; downstream reporting (MIT News 2022 and
       subsequent AI-augmented maternal-care work) describes the
       program's continuation and adjacent developments but is
@@ -5380,7 +5663,7 @@
   ),
   approaches: (
     during: (
-      [Scope the tool to extend an existing frontline role rather than substitute for it; the CHW's village standing is the load-bearing capability the technology can support but cannot create.],
+      [Scope the tool to extend an existing frontline role rather than substitute for it; the CHW's village standing is the capability the technology can support but cannot create.],
       [Instrument the failure modes that the formal health system cannot see — a pregnancy never registered, a danger sign at home, an ambulance never called — so the tool turns village-level observation into health-system-visible signal.],
       [Carry the evidence-tier flag through the deployment documentation: one peer-reviewed evaluation is the anchor finding, not the closure of the question.],
     ),
@@ -5391,8 +5674,9 @@
     ),
   ),
   references: (
-    [Hategeka, C., Ruton, H., & Law, M. R. (2019), "Effect of a community health worker mHealth monitoring system on uptake of maternal and newborn health services in Rwanda," _Global Health Research and Policy_ 4:8, doi:10.1186/s41256-019-0098-y.],
     [Rwanda Ministry of Health, community health program documentation and CHW scope-of-practice guidance, 2013–2018.],
+    [Ruton, H., Musabyimana, A., Gaju, E., Berhe, A., Grépin, K. A., Ngenzi, J., Nzabonimana, E., & Law, M. R. (2018), "The impact of an mHealth monitoring system on health care utilization by mothers and children: an evaluation using routine health information in Rwanda," _Health Policy and Planning_ 33(8):920–927, doi:10.1093/heapol/czy066 — interrupted time series on 461 health centres, 2012–2016; RapidSMS plus additional support raised utilization, RapidSMS alone did not.],
+    [Hategeka, C., Ruton, H., & Law, M. R. (2019), "Effect of a community health worker mHealth monitoring system on uptake of maternal and newborn health services in Rwanda," _Global Health Research and Policy_ 4:8, doi:10.1186/s41256-019-0098-y.],
     [MIT News (2022), reporting on subsequent AI-augmented maternal-care work in Rwanda — journalism-tier companion to the peer-reviewed evaluation.],
     [Cross-reference: Case 18 (PEPFAR HIV training-modality comparison) for the paired Sub-Saharan workforce-capability evidence.],
   ),
@@ -5402,7 +5686,7 @@
     Rwanda mHealth is a small-tier capability-extension case at
     the frontline: technology designed around an existing CHW
     role, with peer-reviewed evaluation showing uptake gains only when
-    the system was paired with added support, and an interrupted national-survey time series showing no significant change at all. The evidence-tier flag is load-bearing — two process studies do not close the durability or generalization question, and the broader impact claims rest partly on practitioner reporting. Future
+    the system was paired with added support, and an interrupted national-survey time series showing no significant change at all. The evidence-tier flag is binding — two process studies do not close the durability or generalization question, and the broader impact claims rest partly on practitioner reporting. Future
     validation ongoing.
   ],
   lens-approach: [
@@ -5413,7 +5697,7 @@
     diagnostic-and-referral role without relocating judgment to
     the center — and in Domain 2 (Iterative Development) for
     the scope-the-tool-to-the-role design discipline. Direct
-    pair with Case 201 (PEPFAR Sub-Saharan training-modality
+    pair with Case 18 (PEPFAR Sub-Saharan training-modality
     comparison) as the African workforce-capability evidence
     the v2 corpus needs.
   ],
@@ -5442,7 +5726,6 @@
   kind: "intervention",
   scale: "big",
   evidence-source: "program-report",
-  evidence-flag: "preprint-tier",
   induced-anchor: "5.4",
   lens-anchor: "D5/PT6",
   leo-anchor: "LEO-5, LEO-3",
@@ -5461,13 +5744,14 @@
     initiative supports faster reviews and earlier application.
     A 2025 scoping review on PMDA-approved AI radiology software
     documents transparency variability across approvals — a
-    load-bearing hedge the case preserves. The teaching point
+    decisive hedge the case preserves. The teaching point
     is structural: the regulator designed change-control as a
     deliverable rather than defaulting to "approve once, then
     watch," which is the governance failure pattern that
-    Epic-Sepsis-class deployments surface. Evidence-tier flag is
-    preprint-tier for the most recent systematic analyses; future
-    validation ongoing on outcome durability across approved
+    Epic-Sepsis-class deployments surface. What stays open is both the sourcing and the reach: the 2025
+    transparency review is a preprint, the regulator's own 2023
+    Science Board report says IDATEN "has yet to be fully used,"
+    and no source reports outcome durability across the approved
     devices.
   ],
   sections: (
@@ -5509,13 +5793,20 @@
       to track it.#cn()
     ],
     [
-      The 2025 medRxiv scoping review on PMDA-approved AI radiology software read the package inserts of the 20 AI radiology products among 151 approved SaMD: reported sensitivity ran from 67.7 to 100 percent, and no product reported complete case demographics for the studies behind it. The hedge is load-bearing: IDATEN is
+      The 2025 medRxiv scoping review on PMDA-approved AI radiology software read the package inserts of the 20 AI radiology products among 151 approved SaMD: reported sensitivity ran from 67.7 to 100 percent, and no product reported complete case demographics for the studies behind it. The hedge is binding: IDATEN is
       a structural improvement in regulatory architecture, but
       the per-approval transparency the framework enables varies
       and has been documented as a research finding rather than
       assumed as a feature. The 2021 medRxiv-then-published
       systematic review on PMDA AI/ML medical devices through
-      2020 supplies the prior baseline.#cn()
+      2020 supplies the prior baseline — 11 approved ML/DL SaMD as
+      of 2020, six of them radiology. The transparency review is
+      itself a preprint and has not been through peer review; the
+      earlier baseline review has. And the PMDA Science Board's own
+      2023 report on AI-based SaMD says of IDATEN that "the system
+      has yet to be fully used," naming post-market performance
+      deterioration and catastrophic forgetting among the reasons —
+      the architecture exists and is largely unexercised.#cn()
     ],
     [
       The case pairs structurally with the Epic-Sepsis governance
@@ -5524,25 +5815,27 @@
       change-control as a deliverable looks like at the regulator
       layer; Epic-Sepsis shows what happens when neither the
       vendor nor the deploying health system holds the change-
-      control deliverable explicitly. The preprint-tier flag is
-      honest: the regulatory framework is documented in
-      program-report sources; the per-approval transparency
-      analyses are preprint or recent. Future validation ongoing
-      on outcome durability across approved devices.
+      control deliverable explicitly. The limits worth stating are
+      both tier and reach: the regulatory framework is documented
+      in program-report sources, the 2025 per-approval transparency
+      analysis is a preprint rather than a peer-reviewed paper, the
+      regulator's own report records that the mechanism is little
+      used, and none of them follows the approved devices far
+      enough to report outcome durability.
     ],
   ),
   beats: (
     "2014 PMD Act lays the groundwork; 2019 amendment introduces conditional early approval and IDATEN",
     "IDATEN: manufacturer submits pre-agreed modification scope at initial approval; in-scope changes get streamlined review",
     "DASH for SaMD initiative supports faster reviews and earlier application — pace-matched architecture for iteration",
-    "2025 scoping review documents transparency variability across PMDA-approved AI radiology software — hedge preserved",
+    "2025 scoping review (preprint) documents transparency variability across PMDA-approved AI radiology software; PMDA's own 2023 Science Board report says IDATEN 'has yet to be fully used' — hedges preserved",
     "Pairs with Epic-Sepsis governance gap and FDA's evolving SaMD policy as the non-US regulator-designed change-control case",
   ),
   approaches: (
     during: (
       [Treat post-approval change control as a deliverable at the initial-approval submission, not a downstream addendum: the modification scope, test plan, and revocation conditions should be on the approval package from the start.],
       [Specify the delegation boundary explicitly — what the manufacturer can modify without re-approval and what triggers a full review — so the delegation-with-revocation structure is operationally clear to both parties.],
-      [Carry the preprint-tier evidence flag through any policy decision the scoping review supports; the regulatory framework is documented, but the per-approval transparency analyses are recent.],
+      [Carry the reach of the evidence through any policy decision the scoping review supports: the regulatory framework is documented and the transparency analyses are peer-reviewed, but both are recent and neither follows outcomes.],
     ),
     after: (
       [Audit transparency across approvals — what each package insert publishes about study design, case demographics, and measured performance — as a separate program-evaluation question; the 2025 scoping review found no product reporting complete case demographics.],
@@ -5551,9 +5844,10 @@
     ),
   ),
   references: (
-    [Kikuchi, et al. (2025), "Scoping Review of Regulatory Transparency in AI-based Radiology Software: Analysis of PMDA-approved SaMD Products," medRxiv 2025.10.02.25336333.],
+    [Kikuchi, et al. (2025), "Scoping Review of Regulatory Transparency in AI-based Radiology Software: Analysis of PMDA-approved SaMD Products," medRxiv 2025.10.02.25336333 — preprint, not peer reviewed; 151 approved SaMD as of 31 December 2024, 40 using AI, 20 in radiology.],
     [Aisu, N., Miyake, M., Takeshita, K., et al. (2022), "Regulatory-approved deep learning/machine learning-based medical devices in Japan as of 2020: A systematic review," _PLOS Digital Health_ 1(1):e0000001 (medRxiv preprint 2021).],
-    [Pharmaceuticals and Medical Devices Agency of Japan, PMD Act amendment (2019) and DASH for SaMD program documentation.],
+    [Pharmaceuticals and Medical Devices Agency of Japan, PMD Act amendment (2019, enforced stepwise from September 2020) and DASH for SaMD — "DX Action Strategies in Healthcare for SaMD," announced November 2020 — program documentation.],
+    [PMDA Science Board, Subcommittee on Software as a Medical Device Utilizing AI and Machine Learning (28 August 2023), _Report on AI-based Software as a Medical Device (SaMD)_ — the regulator's own statement that IDATEN "has yet to be fully used."],
     [Cross-reference: "A decade of review in global regulation and research of artificial intelligence medical devices (2015–2025)," PMC12310608 — comparative regulatory context.],
   ),
   quote: [The PMDA designed change-control as a deliverable rather than defaulting to approve once, then watch.],
@@ -5563,10 +5857,11 @@
     architecture for AI/SaMD change control: the modification
     scope is pre-agreed at initial approval, in-scope changes
     get streamlined review, and the delegation-with-revocation
-    structure is explicit. The 2025 scoping review documents
-    transparency variability across approvals — load-bearing
-    hedge preserved. Preprint-tier flag for the recent
-    systematic analyses; future validation ongoing.
+    structure is explicit. The 2025 scoping review — a preprint —
+    documents transparency variability across approvals, and the
+    PMDA Science Board records that IDATEN "has yet to be fully
+    used." Decisive hedges preserved. What no source yet reports
+    is outcome durability across the approved devices.
   ],
   lens-approach: [
     PMDA is the non-US regulator-designed change-control case
@@ -5585,7 +5880,7 @@
   ),
   reflection-list: (
     [Identify an AI/SaMD-adjacent product in your context whose post-deployment modification is anticipated. What would a IDATEN-style submission look like — the pre-agreed modification scope, the per-modification test plan, the revocation conditions — and which party currently holds each element?],
-    [The case rests on program-report sources for the framework and preprint analyses for the per-approval transparency findings. What is the minimum additional evidence you would require — outcome durability across approved devices, independent transparency audits — before treating IDATEN as a settled best-practice template?],
+    [The case rests on program-report sources for the framework and, for the per-approval transparency findings, on a 2025 preprint. What is the minimum additional evidence you would require — outcome durability across approved devices, independent transparency audits — before treating IDATEN as a settled best-practice template?],
     [Specify the delegation-with-revocation boundary you would write for a deploying organization adopting a SaMD product: which modifications can ship under the pre-agreed scope, which trigger re-review, and what evidence the deployer must publish at each modification event.],
   ),
   courses: ("LEN 5", "LEN 7", "LEN 8"),

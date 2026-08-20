@@ -58,7 +58,7 @@
       v(3pt)
       text(font: sans, size: 7.5pt, tracking: 1.4pt, fill: text-muted, upper("Learning Design and Technology"))
       v(10pt)
-      text(font: sans, size: 7pt, tracking: 1.2pt, fill: teal, upper("Edition · 15 June 2026"))
+      text(font: sans, size: 7pt, tracking: 1.2pt, fill: teal, upper("Edition · August 2026"))
       v(2pt)
       text(font: sans, size: 7pt, style: "italic", fill: text-muted,
         "An ongoing artifact of the LENS Practice Flywheel — Identify, Activate, Prototype, Analyze, Transition.")
@@ -129,15 +129,15 @@
       treats AI as the dual entity the curriculum names it: a
       creative partner that accelerated drafting, cross-referencing,
       layout, and citation lookup, and an epistemic risk that had
-      to be hand-checked against the record. Every case in the book
-      was reviewed by the editors and hand-checked by students for
-      accuracy: confirming that the sources cited exist and are
-      findable, that the quoted attributions are fairly represented,
-      and that the case studies are accurate accounts of the
-      incidents and the investigations they draw on. Items where the
-      source could not be confirmed are marked "Paraphrasing…" so
-      the attribution is honest about what is the author's
-      reconstruction and what is verbatim from the record.
+      to be checked against the record. Every case has been
+      reviewed by the editors and checked against a seven-column
+      rubric: that the sources cited exist and are findable, that the
+      quoted attributions are fairly represented, and that the case is
+      an accurate account of the incident and the investigation it
+      draws on. Refinement is iterative and ongoing. Items where the
+      source could not be confirmed are marked "Paraphrasing…" so the
+      attribution is honest about what is the author's reconstruction
+      and what is verbatim from the record.
     ]
 
     v(6pt)

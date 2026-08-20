@@ -155,7 +155,7 @@ The casebook was assembled using AI tools as part of the same
 Practice Flywheel its case studies argue for. AI was the dual entity
 the curriculum names: a creative partner that accelerated drafting,
 cross-referencing, layout, citation lookup, and editorial pass — and
-an epistemic risk that had to be hand-checked against the record.
+an epistemic risk that had to be checked against the record.
 
 Every case in the book is reviewed by the editors. The per-case
 manual review is scaffolded as a two-pass rubric (quality scan +

@@ -175,6 +175,10 @@
 #include "chapters/ch4b.typ"
 #include "chapters/ch5a.typ"
 #include "chapters/ch5b.typ"
+#include "chapters/ch6a.typ"
+#include "chapters/ch6b.typ"
+#include "chapters/ch7a.typ"
+#include "chapters/ch7b.typ"
 #include "chapters/closing-case.typ"
 
 // ============================================================

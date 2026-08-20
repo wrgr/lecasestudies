@@ -35,18 +35,21 @@
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  Each case occupies a two-page spread. The left-hand page tells the story:
-  what happened, what investigators found, and the documentary record. The
-  right-hand page is the *Learning Engineering Lens* — what the case teaches
-  about capability as a system parameter, how the LENS curriculum addresses
-  the pattern, and a short set of reflection questions designed for
-  studio discussion.
+  Most cases run to four pages, beginning on a fresh page rather than a
+  fixed side of the spread. An *In brief* summary opens; the narrative
+  follows in five sourced beats — what happened, what investigators
+  found, and the documentary record — closing with a figure, any
+  *Competing readings* or *What this case does not show* the record
+  requires, a pull quote, and the numbered sources. The case ends in the
+  *Learning Engineering Lens* — what the case teaches about capability as
+  a system parameter, how the LENS curriculum addresses the pattern, and a
+  short set of reflection questions designed for studio discussion.
 ]
 
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  The Lens page also carries a *Who Builds This* note: the mix of
+  The Lens also carries a *Who Builds This* note: the mix of
   expertise and tools a team would bring to engineer the fix, read off
   the case's failure modes. A Training-Gap case pulls in learning
   scientists and instructional designers; an Interface case, human-
@@ -85,7 +88,9 @@
     #eyebrow("LENS course codes", color: gold)
     #v(4pt)
     #text(font: sans, size: 8.5pt, fill: text-dark)[
-      Each case maps to one or more courses in the LENS concentration:
+      Each case is tagged in its metadata to the courses it serves as a
+      worked example for. The tags are not printed on the cases; the
+      mapping is inverted in the course index at the back.
     ]
     #v(8pt)
     #text(font: sans, size: 7pt, tracking: 1.4pt, fill: teal, upper("Shared LDT foundations · additional context"))
@@ -109,18 +114,18 @@
       ],
     ))
     #v(6pt)
-    #text(font: sans, size: 7pt, tracking: 1.4pt, fill: teal, upper("LENS-designed courses"))
+    #text(font: sans, size: 7pt, tracking: 1.4pt, fill: teal, upper("LENS courses · \u{2020} elective"))
     #v(4pt)
     #let courses-list = (
-      ("LEN 1",  "Principles of LE for Complex Systems"),
-      ("LEN 2",  "Human-AI Teaming and Adaptive Systems"),
+      ("LEN 1",  "Principles of Learning Engineering for Complex Systems"),
+      ("LEN 2",  "Human-Machine Teaming and Adaptive Learning Systems"),
       ("LEN 3",  "Learning Engineering Systems"),
-      ("LEN 4",  "Evidence, Analytics, and Measurement"),
-      ("LEN 5",  "Human Capability Analysis and Requirements"),
-      ("LEN 6",  "Applied Problem Solving in LE"),
-      ("LEN 7",  "Bias, Risk, and Governance"),
-      ("LEN 8",  "Knowledge Transfer and Organizational Learning"),
-      ("LEN 9",  "Computational and AI Methods"),
+      ("LEN 4",  "Evidence, Analytics, and Measurement for High-Consequence Domains"),
+      ("LEN 5",  "Human Capability Analysis and Requirements †"),
+      ("LEN 6",  "Applied Problem Solving in Learning Engineering"),
+      ("LEN 7",  "Bias, Risk, and Governance in Learning System Design †"),
+      ("LEN 8",  "Knowledge Transfer and Organizational Learning †"),
+      ("LEN 9",  "Computational and AI Methods for Learning Engineers †"),
       ("LEN 10", "Learning Engineering Project (capstone)"),
     )
     #for (code, name) in courses-list [

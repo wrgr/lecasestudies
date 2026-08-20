@@ -112,13 +112,13 @@
       v(2pt)
       block(
         width: 100%,
-        fill: rgb("#FFF6E1"),
-        stroke: (left: 1.5pt + gold),
+        fill: flag-coi-fill,
+        stroke: (left: 1.5pt + flag-coi-rule),
         inset: (x: 6pt, y: 3pt),
         grid(
           columns: (auto, 1fr),
           column-gutter: 6pt,
-          eyebrow("Disclosure", color: gold),
+          eyebrow("Disclosure", color: flag-coi-rule),
           text(font: sans, size: 8pt, weight: "regular", fill: navy, coi),
         ),
       )
@@ -127,13 +127,13 @@
       v(2pt)
       block(
         width: 100%,
-        fill: rgb("#F1F5FB"),
-        stroke: (left: 1.5pt + rgb("#8A9AB5")),
+        fill: flag-tier-fill,
+        stroke: (left: 1.5pt + flag-tier-rule),
         inset: (x: 6pt, y: 3pt),
         grid(
           columns: (auto, 1fr),
           column-gutter: 6pt,
-          eyebrow("Evidence tier", color: rgb("#5C6E8E")),
+          eyebrow("Evidence tier", color: flag-tier-rule),
           text(font: sans, size: 8pt, weight: "regular", fill: navy,
                evidence-flag + " — source confidence flagged; future validation ongoing."),
         ),

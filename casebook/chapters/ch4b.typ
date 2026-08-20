@@ -250,8 +250,7 @@
       in which operators are trained to challenge assumptions, including
       those of superiors. Rickover's premise — that people, not
       organizations or management systems, get things done — made the
-      qualification ladder, not paperwork, the load-bearing element of
-      safety. The questioning posture is the cultural half of the pair: deep
+      qualification ladder, not paperwork, the load-bearing element of safety. The questioning posture is the cultural half of the pair: deep
       technical mastery alone could still defer to a mistaken superior, so
       the obligation to challenge assumptions is what keeps competence from
       being silenced by rank.#cn()
@@ -292,11 +291,11 @@
     [Polmar, N. & Allen, T. (2007), _Rickover: Father of the Nuclear Navy_ — the program and Rickover's philosophy (paraphrased).],
     [Naval Nuclear Propulsion Program documentation (NRC/DOE) — qualification standards and the accident record.],
     [Admiral Hyman G. Rickover, "Doing a Job" (Columbia University, Egleston Medal address, 5 November 1982) — "people, not organizations… get things done" (quoted).],
-    [GAO-21-168 (2021), _Navy Readiness: Actions Needed to Evaluate and Improve Surface Warfare Officer Career Path_ — the surface community's career path set against the submarine, aviation and EOD communities.],
     [Duncan, F. (1990), _Rickover and the Nuclear Navy_ — the qualification culture.],
+    [GAO-21-168 (2021), _Navy Readiness: Actions Needed to Evaluate and Improve Surface Warfare Officer Career Path_ — the surface community's career path set against the submarine, aviation and EOD communities.],
   ),
   quote: [Human experience shows that people, not organizations or management systems, get things done.],
-  quote-source: "Admiral Hyman G. Rickover, \"Doing a Job\" (Columbia University commencement address, 1982)",
+  quote-source: "Admiral Hyman G. Rickover, \"Doing a Job,\" Columbia University Egleston Medal address, 5 November 1982",
   le-insight: [
     The Nuclear Navy is the longest-running continuous capability-
     engineering program in any high-consequence domain. The choice to
@@ -308,8 +307,7 @@
     on the budget line.
   ],
   lens-approach: [
-    LENS treats the Rickover model in LEN 8 as the foundational
-    organizational-learning case and in LEN 5 as a worked example of
+    LENS treats the Rickover model in LEN 8 as the anchor organizational-learning case and in LEN 5 as a worked example of
     capability requirements traceable from operational analysis through
     qualification standards. The internal Navy comparison anchors the
     program's core argument about capability as a system parameter.
@@ -360,7 +358,7 @@
   lens-anchor: "D1/PT3",
   leo-anchor: "LEO-1, LEO-5",
   summary: [
-    MIL-STD-1472 is the US Department of Defense's design-criteria
+    MIL-STD-1472 is the U.S. Department of Defense's design-criteria
     standard for human engineering — the discipline of making
     equipment usable, safe, and effective for the human operator.
     The series originated in 1968 and has been revised through
@@ -442,9 +440,10 @@
       research findings as binding criteria rather than as
       advice the program might or might not adopt. The 2020
       H revision is notable for the cadence — the eight-year
-      gap from G to H — and for the integration of human-
-      systems-integration practices reflecting the rise of
-      complex software-intensive systems.#cn()
+      gap from G to H — and for the coverage it added:
+      habitability, cybersecurity, information presentation, and
+      handheld devices, reflecting the rise of complex
+      software-intensive systems.#cn()
     ],
     [
       The honest framing the case requires is that the standard
@@ -485,10 +484,10 @@
     ),
   ),
   references: (
-    [Department of Defense (2020), MIL-STD-1472H "Department of Defense Design Criteria Standard: Human Engineering," 15 September 2020 — replaces MIL-STD-1472G (2012).],
+    [Fitts, P. M., & Jones, R. E. (1947), "Analysis of factors contributing to 460 'pilot error' experiences in operating aircraft controls" — origin of designed-error analysis.],
     [Department of Defense (2012), MIL-STD-1472G — the prior revision; revision history documents the 1968 origin and intermediate letters.],
     [Chapanis, A. (1965), "Man-Machine Engineering" — foundational text for the discipline the standard codifies.],
-    [Fitts, P. M., & Jones, R. E. (1947), "Analysis of factors contributing to 460 'pilot error' experiences in operating aircraft controls" — origin of designed-error analysis.],
+    [Department of Defense (2020), MIL-STD-1472H "Department of Defense Design Criteria Standard: Human Engineering," 15 September 2020 — replaces MIL-STD-1472G (2012).],
   ),
   quote: [The criterion that survives into a binding standard is the criterion the program is held to.],
   quote-source: "Editors' synthesis of MIL-STD-1472 revision history.",
@@ -666,7 +665,7 @@
   ),
   courses: ("LEN 1", "LEN 10", "LEN 8", "LEN 6",),
   scale: "big",
-  induced-anchor: "1.4",
+  induced-anchor: "1.1",
   lens-anchor: "D2/PT4",
   leo-anchor: "LEO-2",
 )
@@ -679,7 +678,7 @@
   year: "2018 – present",
   domains-list: ("defense",),
   modes-code: "TKN",
-  impact: "Threefold increase in initial ship-driving training hours planned by 2021; 10 pass-or-fail career assessments, 3 of them go/no-go; Ready-for-Sea Assessments — 3 of 18 forward-deployed ships immediately sidelined",
+  impact: "Threefold increase in initial ship-driving training hours planned by 2021; 10 pass-or-fail career assessments, 4 of them go/no-go; Ready-for-Sea Assessments — 3 of 18 forward-deployed ships immediately sidelined",
   diagram: dgm.dgm-navy-reform,
   kind: "intervention",
   summary: [
@@ -688,7 +687,7 @@
     surface-warfare competence. It restored the Surface Warfare Officers
     School from CD-ROM self-study to classroom and simulator instruction,
     stood up Mariner Skills Training Centers on both coasts, created ten
-    pass-or-fail career assessments — three of them no-go gates — and
+    pass-or-fail career assessments — four of them no-go gates — and
     adopted aviation-style debriefing. New Ready-for-Sea Assessments
     evaluated forward-deployed ships against a deliverable standard; three
     of the first eighteen were immediately sidelined. The structural change
@@ -714,8 +713,9 @@
       Beginning in 2018, the Navy restored the Surface Warfare Officers
       School from self-study to classroom-plus-simulator instruction,
       established Mariner Skills Training Centers on both coasts, set out a threefold increase in initial ship-driving training hours by 2021, and created ten pass-or-fail
-      assessments across an officer's career path — three of them no-go
-      gates that can halt advancement. The no-go gates were the structural
+      assessments across an officer's career path — four of them no-go
+      gates, at the division-officer, department-head, command and
+      major-command milestones, that can halt advancement. The no-go gates were the structural
       teeth: by tying advancement to demonstrated competence rather than
       time served, they made the qualification something the system would
       stop on, not merely something it recorded.#cn()
@@ -763,11 +763,11 @@
     "Live in-progress reform shows mature capability engineering must build measurement infrastructure from the start",
   ),
   references: (
-    [GAO-20-154, _Navy Readiness: Actions Needed to Evaluate the Effectiveness of Changes to Surface Warfare Officer Training_ (November 2019) — the absent evaluation processes and the planned threefold increase in ship-driving training hours.],
-    [Readiness Reform Oversight Council, _One-Year Report_ (2019) — restored training, assessments, and gates.],
     [Navy and NTSB reports on the Fitzgerald and McCain collisions (2017–2019) — the training-degradation antecedent.],
+    [Readiness Reform Oversight Council, _One-Year Report_ (2019) — restored training, assessments, and gates.],
+    [USNI News reform coverage (2020, 2022) — Ready-for-Sea Assessments (15 of 18 FDNF-Japan ships assessed ready for sea, the remaining three sidelined) and the surface community's accounting of ten milestone assessments with four go/no-go gates.],
+    [GAO-20-154, _Navy Readiness: Actions Needed to Evaluate the Effectiveness of Changes to Surface Warfare Officer Training_ (November 2019) — the absent evaluation processes and the planned threefold increase in ship-driving training hours.],
     [SWOS Norfolk and San Diego Mariner Skills Training Center documentation — simulators and curriculum.],
-    [USNI News reform coverage (2020, 2022) — Ready-for-Sea Assessments and sidelined ships.],
   ),
   quote: [The Navy has not put key processes and assessments in place to evaluate comprehensively the effectiveness of its changes to ship-driving training.],
   quote-source: "GAO-20-154, Navy Readiness: Actions Needed to Evaluate the Effectiveness of Changes to Surface Warfare Officer Training, November 2019",
@@ -825,7 +825,7 @@
   year: "2009 – 2014",
   domains-list: ("defense", "workforce L&D", "intelligent tutoring"),
   modes-code: "HKD",
-  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, US Navy IT graduates with no prior IT experience outscored fleet Information Systems Technicians with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
+  impact: "An IDA independent assessment found that, after 16 weeks of Digital Tutor instruction, U.S. Navy IT graduates with no prior IT experience outscored fleet Information Systems Technicians with an average 9.1 years of experience on a knowledge test, with an effect size of 4.30, and outperformed them on most troubleshooting and design tasks",
   kind: "intervention",
   scale: "small",
   evidence-source: "program-report",
@@ -838,15 +838,14 @@
     could compress years of operational IT expertise into a 16-week
     pipeline. The independent evaluation by the Institute for Defense
     Analyses (Morrison and Fletcher, IDA Document D-4686, 2012) compared
-    Digital Tutor graduates — US Navy enlistees with no prior IT
+    Digital Tutor graduates — U.S. Navy enlistees with no prior IT
     experience — against fleet Information Systems Technicians
     with an average 9.1 years of experience. The Digital Tutor
     cohort outscored fleet ITs on a knowledge test with an effect
     size of 4.30 and outperformed them on most troubleshooting and
     design tasks; only the Security exercise produced a fleet
     advantage. The IDA report concludes the program "appears to have
-    achieved its goals." Two hedges are load-bearing and survive
-    into the case: knowledge "accounts for about 40 percent of
+    achieved its goals." Two hedges survive into the case: knowledge "accounts for about 40 percent of
     practical-exercise performance variance" and is "an enabler of
     performance rather than a direct measure of performance itself,"
     and the system-architecture detail in the available
@@ -857,7 +856,7 @@
   ],
   sections: (
     [
-      The US Navy's Information Systems Technician rating has a
+      The U.S. Navy's Information Systems Technician rating has a
       conventional pipeline: an A-school of several months, followed
       by years of fleet experience that turn the rated sailor into
       an operational troubleshooter. The capability that matters at
@@ -901,8 +900,7 @@
     ],
     [
       The IDA report concludes the effort "appears to have achieved
-      its goals," and the language is deliberate. Two hedges are
-      load-bearing and survive into the case verbatim. First,
+      its goals," and the language is deliberate. Two hedges survive into the case verbatim. First,
       knowledge "accounts for about 40 percent of practical-exercise
       performance variance" and is "an enabler of performance rather
       than a direct measure of performance itself" — so the
@@ -928,16 +926,16 @@
     ],
   ),
   beats: (
-    "DARPA Digital Tutor — intelligent tutoring system modelled on expert one-on-one human tutoring; 16-week pipeline for US Navy IT rating",
+    "DARPA Digital Tutor — intelligent tutoring system modelled on expert one-on-one human tutoring; 16-week pipeline for U.S. Navy IT rating",
     "IDA evaluation for the sponsor (Morrison & Fletcher, IDA D-4686, 2012), 12 per arm, unrandomised: Digital Tutor graduates vs. fleet ITs with 9.1 years' average experience",
-    "Knowledge-test effect size 4.30; troubleshooting effect a fifth of that at 0.85; the security exercise favoured the fleet, not significantly",
+    "Knowledge-test effect size 4.30; troubleshooting effect a fifth of that at 0.85; the security exercise favored the fleet, not significantly",
     "Report concludes the effort 'appears to have achieved its goals'",
     "Hedges preserved: knowledge accounts for ~40% of practical-exercise variance, 'an enabler of performance rather than a direct measure'; architecture detail too scant to reproduce",
   ),
   approaches: (
     during: (
       [Specify the operational capability the pipeline must produce in the language of the work — troubleshoot under time pressure, design a workable configuration — not in the language of the existing course's content coverage.],
-      [Treat the tutorial discipline (continuous dialogue around authentic problems, pulling toward the resolving conceptual move) as the load-bearing instructional artifact, rather than the content sequence the legacy course inherited.],
+      [Treat the tutorial discipline (continuous dialogue around authentic problems, pulling toward the resolving conceptual move) as the instructional artifact that did the work, rather than the content sequence the legacy course inherited.],
       [Design the evaluation against the operational comparison the program is built to compete with — for Digital Tutor, fleet ITs with 9.1 years of experience — so the result speaks to the capability envelope, not to a within-program improvement.],
     ),
     after: (
@@ -947,9 +945,9 @@
     ),
   ),
   references: (
-    [Morrison, J. E., \& Fletcher, J. D. (September 2012). _DARPA Digital Tutor: Assessment Data_. IDA Document D-4686 (prepared for DARPA under contract DASW01-04-C-0003) — the sponsor-commissioned evaluation the case rests on.],
     [Defense Advanced Research Projects Agency, Digital Tutor program documentation — program description and design rationale.],
     [Fletcher, J. D. (2009). _From behaviorism to constructivism: a philosophical journey from drill and practice to situated learning_. — methodological grounding for the Digital Tutor's tutorial discipline.],
+    [Morrison, J. E., \& Fletcher, J. D. (September 2012). _DARPA Digital Tutor: Assessment Data_. IDA Document D-4686 (prepared for DARPA under contract DASW01-04-C-0003) — the sponsor-commissioned evaluation the case rests on.],
     [Anderson, J. R., Corbett, A. T., Koedinger, K. R., \& Pelletier, R. (1995). Cognitive tutors: Lessons learned. _Journal of the Learning Sciences_, 4(2):167–207. doi:10.1207/s15327809jls0402\_2 — the broader intelligent-tutoring evidence base the Digital Tutor program sits within.],
   ),
   quote: [The Digital Tutor cohort outscored fleet ITs with 9.1 years' experience on the knowledge test at an effect size of 4.30; the hedge is that knowledge accounts for about 40 percent of practical-exercise variance.],
@@ -1083,9 +1081,9 @@
   ),
   references: (
     [Advanced Distributed Learning Initiative, Total Learning Architecture documentation — the cross-boundary vision.],
-    [IEEE Std 9274.1.1-2023, _Standard for Learning Technology — JSON Data Model Format and RESTful Web Service for Learner Experience Data Tracking and Access_ (xAPI 2.0, published October 2023) — the technical standard of record, transferred from ADL to the IEEE LTSC in 2019.],
+    [IEEE Std 9274.1.1-2023, _Standard for Learning Technology — JSON Data Model Format and RESTful Web Service for Learner Experience Data Tracking and Access_ (xAPI 2.0) — the technical standard of record; the IEEE LTSC project was authorized in May 2018, board-approved 30 March 2023, and published 6 October 2023.],
+    [B. Smith and L. Milham, _Total Learning Architecture (TLA) Data Pillars and Their Applicability to Adaptive Instructional Systems_ (ADL Initiative, 2021; ERIC ED628093) — ADL's own observation that while most LRS solutions offer dashboards, "they are commonly used to view xAPI statements that have been generated within a single learning activity," against a design intent of data shared "vertically within an organization, horizontally across other organizations, or longitudinally throughout a career."],
     [ADL Initiative, _Total Learning Architecture Standards: Digital Learning Acquisition Techniques_ (December 2023) — xAPI data that does not follow xAPI Profiles "will have interoperability issues outside of the implementing organization."],
-    [B. Saxberg, learning-engineering infrastructure essays; IEEE ICICLE LEBoK chapters on data and analytics.],
     [Cf. inBloom (Case 53) — technology in advance of governance.],
   ),
   quote: [The standard exists. The governance does not.],

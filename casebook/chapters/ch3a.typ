@@ -71,17 +71,19 @@
       any, instrument to trust, because every air-data instrument drew on the
       same blocked source and so failed in concert rather than disagreeing
       usefully. The true reading arrived as one more alarm in a cockpit where
-      every alarm had already proved false: "too low — terrain" sounded twenty-two times in the last minute of flight.#cn()
+      every alarm had already proved false: "too low — terrain" sounded twenty-two times in forty-five seconds about eight minutes before impact, and again through the final minutes to the water.#cn()
     ],
     // -- The Investigation --
     [
-      The Peruvian accident investigation named the principal cause error of the maintenance staff including the crew: the tape was left on, and neither the release inspections nor the pilot-in-command's walk-around caught it. One channel stayed correct.
+      The Peruvian accident investigation named as the principal cause the error of
+      the maintenance staff, including the crew: the tape was left on, and neither the
+      release inspections nor the pilot-in-command's walk-around caught it. One channel stayed correct.
       The radio altimeters read height above the sea independently of the air
       data computers, and it was the radio altimeter that fired the
       ground-proximity warnings the crew heard for the rest of the flight. The
       board named the crew's failure to observe the radio altimeter and to fly
-      the GPWS escape procedure as a contributing cause, and called the radio
-      altimeter the only reliable element remaining to them. The crew's training had no
+      the GPWS escape procedure as a contributing cause: the radio altimeter was the
+      one altitude source the blockage never reached. The crew's training had no
       procedure for the case in which all primary instruments are
       simultaneously wrong — that failure had been assumed away rather than
       planned for, leaving the crew to improvise against a problem the system
@@ -121,14 +123,14 @@
     "Industry tightened conspicuous covering and removal verification for static ports and pitot tubes",
   ),
   references: (
-    [Peru Dirección General de Transporte Aéreo, Accident Investigation Board, final report on AeroPerú 603 (Lima, December 1996; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
-    [Peru DGTA Accident Investigation Board report (December 1996) — the static-port tape and the contradictory warnings.],
-    [Peru DGTA Accident Investigation Board report (December 1996) — the radio altimeter as "the only reliable element remaining to them," and the unheeded GPWS terrain warnings.],
+    [Peru Dirección General de Transporte Aéreo, Comisión de Investigación de Accidentes, final report on AeroPerú 603 (2 October 1997; with NTSB/FAA/Boeing participation) — principal cause given as error of the maintenance staff including the crew, and the instrument cascade (paraphrased).],
+    [Peru DGTA Comisión de Investigación de Accidentes report (2 October 1997) — the masking tape over the three left-side static ports and the contradictory warnings; the tape was not caught at release, at transfer to the apron, or in the pilot-in-command's walk-around.],
+    [Peru DGTA Comisión de Investigación de Accidentes report (2 October 1997) — the radio altimeter, independent of the air data computers, working normally and driving the GPWS terrain warnings; crew failure to follow the GPWS procedure and to read the radio altimeter named as contributing. CVR: "too low — terrain" 22 times in 45 seconds beginning about eight minutes before impact.],
     [Leveson, N. (2011), _Engineering a Safer World_ (STAMP) — common-cause failure.],
     [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_ — crew performance under instrument failure.],
   ),
   quote: [The crew received contradictory indications they could neither reconcile nor override.],
-  quote-source: "Paraphrasing the Peruvian Directorate General of Air Transport Accident Investigation Board report on AeroPerú 603, December 1996",
+  quote-source: "Paraphrasing the Peruvian Directorate General of Air Transport Accident Investigation Board report on AeroPerú 603, 2 October 1997",
   le-insight: [
     AeroPerú 603 is the case for redundancy that is not redundancy.
     Every air-data indicator depended on the same physical sensor, and
@@ -202,7 +204,7 @@
     not recover; 346 people died and the fleet was grounded for twenty
     months. Five major
     investigations — the NTSB-supported KNKT (Lion Air) and EAIB (Ethiopian)
-    reports, the US House Transportation Committee final report, the DOT
+    reports, the U.S. House Transportation Committee final report, the DOT
     Inspector General review, and the multinational Joint Authorities
     Technical Review (JATR) — converged on the same mechanism: an MCAS
     that could fire the nose down on a single failing sensor, waved through an
@@ -251,7 +253,7 @@
       Java Sea, killing all 189. Four months later Ethiopian Airlines Flight 302 met the same sequence — sensor failure, repeated trim
       commands, unrecoverable nose-down attitude — with the difference that
       this crew had Boeing's post-Lion-Air bulletin and the FAA emergency
-      directive, ran the runaway-stabiliser cutout they prescribed, and still
+      directive, ran the runaway-stabilizer cutout they prescribed, and still
       lost the aircraft, killing 157, for 346 dead across the two crashes, and the entire MAX
       fleet grounded worldwide for what would become twenty months.#cn()
     ],
@@ -305,7 +307,7 @@
     // -- Aftermath & Reform --
     [
       The MAX was grounded for some twenty months — the longest grounding
-      of a US-certified airliner in the jet era. MCAS was redesigned to
+      of a U.S.-certified airliner in the jet era. MCAS was redesigned to
       use both AOA sensors, to fire once rather than repeatedly, and with
       limited authority bounded by airspeed — restoring the margins the
       original had stripped away. The FAA's 2020 return-to-service
@@ -440,7 +442,7 @@
       factor of about 4.45 — was never applied at the boundary where the two
       systems met. Each firing was mis-modeled by that factor, and the error
       accumulated steadily over the long cruise until the predicted and actual
-      trajectories had quietly diverged. When the orbiter reached Mars on 23 September 1999 it arrived about 170 kilometres too low, into the atmosphere it was built to study from orbit, and was either destroyed there or thrown back into heliocentric space. The orbiter was lost to a unit conversion no one made.#cn()
+      trajectories had quietly diverged. When the orbiter reached Mars on 23 September 1999 it arrived about 170 kilometres too low — a closest approach of roughly 57 kilometres against the planned 226, and well below the 80 kilometres the spacecraft could have survived — into the atmosphere it was built to study from orbit, and was either destroyed there or thrown back into heliocentric space. The orbiter was lost to a unit conversion no one made.#cn()
     ],
     // -- The Investigation --
     [
@@ -467,7 +469,7 @@
       NASA tightened interface management and end-to-end verification and
       treated the loss as a cautionary tale about how far "faster, better,
       cheaper" could be pushed before the corners being cut turned out to be
-      load-bearing. The orbiter became the canonical systems-engineering
+      decisive. The orbiter became the canonical systems-engineering
       example of interface-as-requirement — the civilian, software parallel to
       the Patriot's untraveled assumption (Case 129): two competent halves of a
       system, a boundary nobody owned or verified, and a small unspecified
@@ -476,14 +478,14 @@
   ),
   beats: (
     "Faster, better, cheaper mission split between Lockheed building and JPL navigating the orbiter.",
-    "Ground software reported pound-force seconds while navigation expected newton-seconds; orbiter burned up at Mars.",
+    "Ground software reported pound-force seconds while navigation expected newton-seconds; the orbiter arrived ~170 km low and was lost.",
     "Board found the ground software ignored the interface specification and the project's processes never caught it.",
     "Missing capability was an owned, specified, verified interface between the two organizations.",
     "Loss tightened interface management and became the canonical software case of interface-as-requirement.",
   ),
   references: (
     [NASA, _Mars Climate Orbiter Mishap Investigation Board: Phase I Report_ (Nov. 1999) — mission, the Lockheed/JPL split, and the program context.],
-    [NASA MCO MIB Report (1999) — the pound-force-second vs newton-second mismatch (factor ~4.45), the accumulated navigation error, and atmospheric destruction on 23 Sept. 1999 (root-cause statement quoted).],
+    [NASA MCO MIB Report (1999) — the pound-force-second vs newton-second mismatch (factor ~4.45) in the "Small Forces" ground-software file, the accumulated navigation error, the ~57 km closest approach against a planned 226 km periapsis and an 80 km survival limit, and the loss on 23 Sept. 1999 (root-cause statement quoted).],
     [NASA MCO MIB Report (1999) — the missing verified interface specification, the absent end-to-end validation, and the unresolved cruise-trajectory anomalies.],
     [N. G. Leveson, _Engineering a Safer World_ (MIT Press, 2011) — interfaces as engineering deliverables requiring an owner and a verification step.],
     [Sauser, B. J., Reilly, R. R., & Shenhar, A. J. (2009), "Why projects fail? How contingency theory can provide new insights — A comparative analysis of NASA's Mars Climate Orbiter loss," _International Journal of Project Management_ 27(7), 665–679.],
@@ -519,7 +521,7 @@
     after: (
       [Treat in-cruise anomalies, like the noticed trajectory behavior, as signals to run to ground before a point of no return rather than concerns to revisit after arrival.],
       [Monitor predicted-versus-actual trajectory continuously so an accumulating boundary error surfaces while there is still time to correct it.],
-      [Audit cross-contractor seams for unowned assumptions whenever a program trims margins under "faster, better, cheaper," confirming the corners cut are not load-bearing.],
+      [Audit cross-contractor seams for unowned assumptions whenever a program trims margins under "faster, better, cheaper," confirming the corners cut are not decisive.],
     ),
   ),
   courses: ("LEN 5", "LEN 8"),
@@ -731,15 +733,23 @@
     [
       The NTSB safety study NTSB/SS-10/01 examined that assumption
       directly. The Board studied approximately 8,000 small piston
-      airplanes registered in the United States over the period
-      2002–2006, comparing accident rates between
-      conventional-instrument and glass-cockpit fleets matched on
-      model and operational class. The headline finding ran against expectation. Glass-cockpit aircraft had lower total accident rates than comparable conventional-instrument aircraft over the period, but a higher fatal accident rate, and no significant improvement in safety overall. The expected fleet-wide safety
+      airplanes manufactured in the United States between 2002 and
+      2006 — 2,848 in the conventional-display cohort and 5,516 in
+      the glass-cockpit cohort — and compared their accident records
+      over 2002 through 2008. The headline finding ran against expectation. Glass-cockpit aircraft had lower total accident rates than comparable conventional-instrument aircraft over the period, but a higher fatal accident rate, and no significant improvement in safety overall. The expected fleet-wide safety
       gain from the displays had not yet materialized in the
       accident record.#cn()
     ],
     [
-      The NTSB's attribution is careful. It did not name a cause for the fatal-rate gap, and said further research is needed. The
+      The NTSB's attribution is careful. It did not name a cause for the
+      fatal-rate gap, and said further research is warranted. What it did
+      establish was that the two cohorts were not flying the same
+      missions: the glass-cockpit accident flights differed significantly
+      in purpose, planned length, and instrument-meteorological exposure,
+      and their pilots differed in age, certification, and total
+      experience — leaving open whether owners bought glass for the
+      flying they already intended or the new capability encouraged
+      longer flights in worse weather. The
       transitioning pilot population was certificated and current
       under the inherited training regime that assumed analog
       instruments, and the glass displays — for all their
@@ -766,7 +776,7 @@
     ],
     [
       Drafted alongside the aging-system transitions in Cases
-      22–76, the glass-cockpit GA study carries the
+      114–116, 154, 156, 174, and 194, the glass-cockpit GA study carries the
       capability-under-system-change pattern at the
       consumer-aviation scale where the analog cases run at the
       defense and commercial-aviation scale. The structural
@@ -795,15 +805,15 @@
       [Name the new failure modes the transition introduces (mode confusion, automation surprises, attention capture) at the design stage of the equipment-specific training, rather than waiting for the accident record to surface them.],
     ),
     after: (
-      [Preserve the NTSB's open-verdict language ("can increase the safety potential ... has not yet resulted in the anticipated improvement in safety") in any report on the transition's outcome; the study did not say glass is unsafe, and the precise language is what makes the recommendation set actionable.],
+      [Preserve the NTSB's open-verdict language ("can increase the safety potential … has not yet resulted in the anticipated improvement in safety") in any report on the transition's outcome; the study did not say glass is unsafe, and the precise language is what makes the recommendation set actionable.],
       [Track implementation of the NTSB recommendation set (A-10-36 through A-10-41) as the engineering response to the open verdict; the verdict closes when the recommendations are implemented and the next round of evidence is collected.],
       [Carry the structural lesson into adjacent transitions — the aging-system transition cases (Cases 114–116, 154, 156, 174, 194) — as evidence that the inherited certification of operator proficiency has to be re-verified against the new envelope across consumer, commercial, and defense scales.],
     ),
   ),
   references: (
+    [Wiener, E. L., \& Curry, R. E. (1980). Flight-deck automation: Promises and problems. _Ergonomics_, 23(10):995–1011 — the foundational literature on automation-induced failure modes that the glass-cockpit transition re-introduced at the GA scale.],
     [National Transportation Safety Board (2010). _Introduction of Glass Cockpit Avionics into Light Aircraft_, Safety Study NTSB/SS-10/01. https://www.ntsb.gov/safety/safety-studies/Documents/SS1001.pdf — the case's primary investigation document.],
     [NTSB Safety Recommendations A-10-36 through A-10-41 (2010), issued to the FAA — the engineering response the open verdict points to.],
-    [Wiener, E. L., \& Curry, R. E. (1980). Flight-deck automation: Promises and problems. _Ergonomics_, 23(10):995–1011 — the foundational literature on automation-induced failure modes that the glass-cockpit transition re-introduced at the GA scale.],
     [Sarter, N. B., Woods, D. D., \& Billings, C. E. (1997). Automation surprises. In _Handbook of Human Factors and Ergonomics_ (2nd ed.) — the mode-confusion / automation-surprise literature the NTSB findings cross-reference.],
   ),
   quote: [Advanced avionics and electronic displays can increase the safety potential of general aviation aircraft operations by providing pilots with more operational and safety-related information and functionality, but more effort is needed to ensure that pilots are prepared to realize that potential.],
@@ -819,7 +829,7 @@
   ],
   lens-approach: [
     Glass-cockpit GA is the small-fleet capability-under-
-    transition failure (induced 7.1; LENS D3/PT1). LENS uses
+    transition failure (induced 7.1; LENS D1+D3/PT1). LENS uses
     it in Domain 1 (Systems Analysis) for the inherited
     certification of operator proficiency that has to be
     re-verified against the new envelope, and in Domain 3 (Human-System Collaboration) for the new
@@ -849,15 +859,17 @@
   year: "1996",
   domains-list: ("space",),
   modes-code: "DKH",
-  impact: "Maiden flight destroyed itself 39 seconds after launch; four Cluster science satellites lost, replaced at 214 MECU; reused Ariane 4 code never re-verified for Ariane 5",
+  impact: "Maiden flight destroyed itself 39 seconds after main-engine ignition — about 32 seconds after lift-off; four Cluster science satellites lost, replaced at 214 MECU; reused Ariane 4 code never re-verified for Ariane 5",
   diagram: dgm.dgm-stat(
-    "39s", "after launch · 16-bit integer overflow",
+    "39s", "after ignition · 16-bit integer overflow",
     micro: "code path disabled by the previous vehicle's profile; re-enabled by the new one",
     caption: "Ariane 5 — the fallacy of risk-free code reuse",
   ),
   kind: "failure",
   summary: [
-    On its 1996 maiden flight, the Ariane 5 rocket destroyed itself 39 seconds after launch, losing the four Cluster science satellites aboard.
+    On its 1996 maiden flight, the Ariane 5 rocket destroyed itself 39 seconds
+    after main-engine ignition — about 32 seconds after lift-off — losing the
+    four Cluster science satellites aboard.
     The cause was reused software: the inertial reference system inherited
     code from Ariane 4, where a horizontal-velocity value never exceeded a
     16-bit integer's range. Ariane 5's steeper, faster trajectory pushed it
@@ -885,8 +897,10 @@
     // -- What Happened --
     [
       On 4 June 1996, Ariane 5 Flight 501 — its maiden flight — veered off
-      course and broke up under aerodynamic stress 39 seconds after launch;
-      the on-board self-destruct fired as designed, and the four Cluster science satellites were lost.#cn() The vehicle was destroyed in well under a minute of flight, before it had done anything but climb — the whole loss flowing from a fault that triggered almost immediately at liftoff, when the new trajectory first pushed the inherited code outside the range it had been built to handle.
+      course and began to disintegrate under aerodynamic loads about 39 seconds
+      after the main-engine ignition command, roughly 32 seconds into the
+      flight; the on-board destruct system fired as designed, and the four
+      Cluster science satellites were lost.#cn() The vehicle was destroyed in well under a minute of flight, before it had done anything but climb — the whole loss flowing from a fault that triggered about thirty seconds after liftoff, when the new trajectory first pushed the inherited code outside the range it had been built to handle.
     ],
     // -- The Investigation --
     [
@@ -933,19 +947,19 @@
   ),
   beats: (
     "Ariane 5 reused inertial reference software flown reliably on Ariane 4 to reduce risk",
-    "The 1996 maiden flight veered off course at 37 seconds and broke up at 39 seconds after launch",
+    "Both inertial reference systems failed 36.7 seconds after ignition — about 30 seconds into the flight — and the launcher broke up some two seconds later",
     "A horizontal-velocity overflow shut down the back-up reference system and then the active one 0.05 seconds later, through identical inherited code",
     "Code is fit only for the envelope it was verified against; reuse demands re-verification",
     "Safety-critical reuse became a verification event with every inherited assumption explicitly re-checked",
   ),
   references: (
     [J. L. Lions (chair), _Ariane 5 Flight 501 Failure Inquiry Board Report_ (1996) — the data-conversion overflow (quoted).],
-    [Lions Report (1996) — the 39-second disintegration and the automatic self-destruct.],
-    [ESA Science & Technology, "Cluster — Summary" — the loss of the four Cluster spacecraft and the 214 MECU recovery mission approved by the SPC.],
+    [Lions Report (1996) — SRI failure at H0+36.7 s (about 30 s after lift-off), disintegration under aerodynamic loads at about H0+39 s, and the automatic destruct.],
     [Lions Report (1996) — the 64-bit-to-16-bit conversion overflow and the simultaneous shutdown of both inertial reference systems.],
     [Lions Report (1996) — the reused code path neither removed nor re-verified for Ariane 5's envelope.],
-    [N. Leveson, _Safeware_ (1995) — software-reuse hazards; G. Le Lann, "An Analysis of the Ariane 5 Flight 501 Failure" (1997).],
     [Cf. Patriot (Case 129) and Mars Climate Orbiter (Case 98).],
+    [N. Leveson, _Safeware_ (1995) — software-reuse hazards; G. Le Lann, "An Analysis of the Ariane 5 Flight 501 Failure" (1997).],
+    [ESA Science & Technology, "Cluster — Summary" — the loss of the four Cluster spacecraft and the 214 MECU recovery mission approved by the SPC.],
   ),
   quote: [The internal SRI software exception was caused during execution of a data conversion from 64-bit floating point to 16-bit signed integer value.],
   quote-source: "Ariane 5 Flight 501 Failure Inquiry Board, 1996",
@@ -1039,7 +1053,7 @@
       and the autopilot and autothrust disconnected into Alternate Law —
       a degraded control regime in which stall protection no longer
       held. The pilot flying responded with sustained nose-up input; the
-      jet climbed, stalled, and never recovered, falling some 38,000 feet into the ocean in under three minutes. The stall
+      jet climbed, stalled, and never recovered, falling some 38,000 feet into the ocean in about three and a half minutes. The stall
       warning sounded, then cut out at extreme angle of attack and
       resumed when the nose dropped — warning against the one input that
       would have begun a recovery, so that the cue meant to guide the
@@ -1201,7 +1215,7 @@
     737-400, crashed on the M1 motorway embankment near Kegworth, killing 47
     and seriously injuring 74. After a fan blade fractured in the left
     engine, the crew shut down the right engine — the one still working.
-    They acted before reading the engine displays: the first officer named the right engine and could not afterwards say what he had seen, and the commander accepted it. The new, harder-to-read electronic displays did not correct them, and the cabin crew who saw flames never told the flight deck. The commander later explained his suspicion of the right engine by an air-conditioning layout that did not hold on the -400; the AAIB thought it unlikely that reasoning had time to matter. The AAIB issued 31 recommendations; Kegworth became the
+    They acted before reading the engine displays: the first officer named the right engine and could not afterwards say what he had seen, and the commander accepted it. The new, harder-to-read electronic displays did not correct them, and the cabin crew who saw flames never told the flight deck. The commander later explained his suspicion of the right engine by an air-conditioning layout that held on the earlier 737s he had flown but not on the -400. The AAIB issued 31 recommendations; Kegworth became the
     textbook case of capability degrading under system change.
   ],
   sections: (
@@ -1211,22 +1225,22 @@
       737-400 (G-OBME), left Heathrow for Belfast with 126 aboard. The -400
       was a recent variant — bigger engines, a partly redesigned cockpit
       with new electronic engine instruments. The crew were experienced 737
-      pilots, but their conversion onto the variant was a one-day ground course on the differences, taken with no EIS-equipped simulator available anywhere in the airline — so the display they would have to read under pressure had never been flown, only shown.#cn()
+      pilots, but their conversion onto the variant was a one-day ground course on the differences, taken with no 737-400 simulator in existence anywhere in the United Kingdom — so the display they would have to read under pressure had never been flown, only shown.#cn()
     ],
     // -- What Happened --
     [
       Climbing through 28,300 feet, a fan blade fractured in the left engine,
-      filling the cabin with vibration and smoke. Without waiting to read the engine displays, the first officer named the right engine and the commander throttled it back eleven seconds after the autopilot came out.
+      filling the cabin with vibration and smoke. Without waiting to read the engine displays, the first officer named the right engine and the commander throttled it back some nineteen seconds after the fan blade fractured; the order to shut it down came about forty-three seconds after the vibration began.
       The symptoms eased (because disconnecting the autothrottle let the left engine stop surging), seeming to confirm it, and they shut the right engine down. On final approach the damaged left engine failed
       completely; with the good engine off, the aircraft struck the M1
       embankment short of the runway — 47 killed, 74 seriously injured. The
-      brief calm after the shutdown was the trap: it appeared to confirm a
+      brief calm after the throttle-back was the trap: it appeared to confirm a
       diagnosis that was wrong, removing the doubt that might have prompted a
       reassessment.#cn()
     ],
     // -- The Investigation --
     [
-      The Air Accidents Investigation Branch traced the disaster to the shutdown of the serviceable engine, and among its contributory factors to the crew reacting prematurely and contrary to their training, and not assimilating the engine instrument display before throttling back the No 2 engine. The commander's later account — that an air-conditioning layout pointed him at the right engine — the Board recorded and set aside, judging it unlikely to have had time to shape the decision.#cn() The new
+      The Air Accidents Investigation Branch traced the disaster to the shutdown of the serviceable engine, and among its contributory factors to the crew reacting prematurely and contrary to their training, and not assimilating the engine instrument display before throttling back the No 2 engine. The commander's later account — that his reading of the air-conditioning layout pointed him at the right engine — the Board recorded as reasoning that would have held on the earlier 737 variants he had flown but not on the -400, whose flight deck is supplied from the left engine.#cn() The new
       electronic displays did not help: the vibration indicator that would
       have pointed at the failing engine was harder to read at a glance than
       the dials it replaced, so the one instrument that could have corrected
@@ -1264,7 +1278,7 @@
     ],
   ),
   beats: (
-    "New 737-400 variant with redesigned cockpit; conversion was a one-day differences course with no EIS-equipped simulator available",
+    "New 737-400 variant with redesigned cockpit; conversion was a one-day differences course, with no 737-400 simulator anywhere in the UK",
     "Fan blade fractured left engine; crew shut down the right without assimilating the engine instrument display",
     "AAIB cited premature action contrary to training, unread engine instruments, and the silent cabin-to-flight-deck channel",
     "Variant treated as incremental change; manual notes never overwrote the prior reflex under emergency pressure",
@@ -1427,7 +1441,7 @@
     [NTSB/AAR-14/01 (2014), safety recommendations A-14-37 to A-14-43 and A-14-55 on autoflight training, low-energy alerting, interface intuitiveness, and manual flight.],
   ),
   quote: [The complexities of the autothrottle and autopilot flight director systems that were inadequately described in Boeing's documentation and Asiana's pilot training, which increased the likelihood of mode error.],
-  quote-source: "NTSB Aircraft Accident Report NTSB/AAR-14/01, probable cause, 2014",
+  quote-source: "NTSB Aircraft Accident Report NTSB/AAR-14/01, probable cause statement, contributing factors, 2014",
   le-insight: [
     Asiana 214 is the aviation case for the LENS Human-System Collaboration
     proposition that automation transparency is a capability
@@ -1531,9 +1545,18 @@
     ],
     // -- The Investigation --
     [
-      The Hellenic Air Accident Investigation Board found the crew's
-      misidentification of the cabin-altitude warning as a
-      takeoff-configuration warning a direct cause of the accident.
+      The Hellenic Air Accident Investigation Board listed among its direct
+      causes the non-identification of the warnings and of the reasons for
+      their activation — not only the cabin-altitude warning horn but the
+      passenger oxygen-mask deployment indication and the Master Caution
+      that followed it — alongside the failure to recognize the manual
+      pressurization setting and the crew's incapacitation by hypoxia. Its
+      latent causes reached past the cockpit: deficiencies in the operator's
+      organization, quality management and safety culture; the regulator's
+      long-standing inadequate oversight; inadequate application of crew
+      resource management; and the ineffectiveness of the measures the
+      manufacturer had taken after earlier pressurization incidents on the
+      type.
       The single horn carried two meanings with no differentiation between
       them, and a pilot's career exposure to it was the ground
       meaning; the in-flight case was an edge condition the crew had not
@@ -1582,7 +1605,7 @@
     [Reason, J. (1990), _Human Error_ — the cue-ambiguity / human-error framing the case draws on.],
   ),
   quote: [The Board concluded that the flight crew confused the two meanings of the warning horn. Similar occurrences had been reported by flight crews worldwide in the past.],
-  quote-source: "Hellenic AAIASB Aircraft Accident Report 11/2006 on Helios 522, §2.6.1",
+  quote-source: "Hellenic AAIASB Aircraft Accident Report 11/2006 on Helios 522, §2.2.3",
   le-insight: [
     Helios 522 is the textbook example of a single cue carrying two
     meanings without differentiation. The interface lied by ambiguity.
@@ -1645,7 +1668,7 @@
   summary: [
     About thirty-seven seconds after takeoff from Taipei Songshan in February
     2015, the right engine of a TransAsia ATR 72 auto-feathered following
-    a sensor fault. Working from memory under acute time pressure, the
+    an intermittent fault in its auto-feather unit. Working from memory under acute time pressure, the
     crew shut down the left engine — the one still producing thrust —
     leaving the aircraft with no power and too little altitude to recover.
     It clipped a viaduct, struck a taxi, and crashed into the Keelung
@@ -1657,15 +1680,19 @@
     // -- Background --
     [
       TransAsia 235 was an ATR 72-600 twin-turboprop departing Taipei
-      Songshan. The captain had failed his command-upgrade simulator check in
-      May 2014, passed a re-check, and had been noted for weak handling
-      of abnormal procedures. The published response to an engine failure was a memory-item drill, and the drill carried mandatory cross-check callouts before any lever moved — so a captain already flagged for weak abnormal-procedure handling was exactly the operator most likely to skip the confirming callout precisely when it mattered, a known weakness meeting a known failure mode.#cn()
+      Songshan. The captain had failed his command-upgrade simulator check on 31
+      May 2014 — the unsatisfactory items included insufficient knowledge of
+      the engine-flame-out-at-takeoff drill — passed a re-check a month later,
+      and had been noted in line training for weak handling of abnormal
+      procedures. The published response to an engine failure was a memory-item drill, and the drill carried mandatory cross-check callouts before any lever moved — so a captain already flagged for weak abnormal-procedure handling was exactly the operator most likely to skip the confirming callout precisely when it mattered, a known weakness meeting a known failure mode.#cn()
     ],
     // -- What Happened --
     [
       On 4 February 2015, about thirty-seven seconds after takeoff, the right
-      engine's autofeather system activated following a faulty sensor
-      signal — the engine itself was capable of producing power. The crew,
+      engine's autofeather system activated after an intermittent break in the
+      signal between the number 2 auto-feather unit and its torque sensor,
+      traced afterwards to compromised solder joints inside the unit — the
+      engine itself was capable of producing power. The crew,
       identifying an engine problem, shut down the left engine, which was
       operating normally. With neither engine now producing useful thrust
       and the aircraft low and slow, it stalled, clipped a viaduct and a
@@ -1678,7 +1705,7 @@
     // -- The Investigation --
     [
       The Taiwan Aviation Safety Council found the crew failed to identify
-      which engine had actually failed and shut down the wrong one. They did not perform the documented failure-identification procedure and skipped required items of the flameout drill; the pilot flying called to pull the wrong lever back five seconds after the master warning, and that engine was shut off 46 seconds after it. The captain's documented proficiency
+      which engine had actually failed and shut down the wrong one. They did not perform the documented failure-identification procedure before acting and skipped required items of the flameout drill; the pilot flying retarded the wrong power lever about four seconds after the master warning, before the pilot monitoring had finished identifying the failure, and that engine was shut off 46 seconds after it. The Board also found that the crew had not rejected the takeoff when the automatic take-off power control system failed to arm on the roll, and that TransAsia had no clear documented policy telling them to. The captain's documented proficiency
       deficiencies and the airline's training and crew-resource-management
       shortfalls were contributing factors — the individual lapse sitting
       atop an organizational one, the carrier having left the very weaknesses
@@ -1984,24 +2011,31 @@
     ],
     [
       The MIB's deeper finding was about EVA-22, the prior
-      spacewalk one week earlier. Parmitano had reported a
-      smaller volume of water in his helmet during EVA-22 as
-      well. At the time, the event was attributed to a drink-bag
-      leak — a plausible but unverified hypothesis. No suit
-      teardown or anomaly investigation was completed before
-      EVA-23 was approved. The MIB characterized this as a
-      missed opportunity: the EVA-22 event was the weak signal
-      of the same failure mode that nearly killed Parmitano a
-      week later, and the institutional response treated an
-      unverified benign explanation as adequate clearance to
-      proceed.#cn()
+      spacewalk one week earlier. Half a litre to a litre of water
+      was found in the same helmet when it was removed after that
+      EVA, in the same suit later worn on EVA-23. The crew reasoned
+      the water must have entered during repressurization, when
+      Parmitano was leaning forward and could have pinched the
+      drink-bag bite valve open with his chin; the ground team
+      accepted that assessment and the water was not investigated
+      further. No suit teardown or anomaly investigation was
+      completed before EVA-23 was approved. Among the MIB's five
+      root causes, all organizational, were the EVA community's
+      unexamined belief that drink bags leak — a determination no
+      one in operations, engineering, safety or the crew office
+      challenged — and the flight control team's perception that
+      invoking the anomaly-report process was so resource-intensive
+      it would not be worth what it turned up. The EVA-22 water was
+      the weak signal of the same failure mode that nearly killed
+      Parmitano a week later, and an unverified benign explanation
+      was treated as adequate clearance to proceed.#cn()
     ],
     [
       The corrective actions span three layers. At the hardware
       layer the suit's water-separator and ventilation-loop
       hygiene were re-engineered, and a Helmet Absorption Pad
       and a snorkel were added so a future water event would not
-      immediately threaten the airway. At the operations layer water-quality specifications and monitoring were tightened, but no free-water sensor was added to the ventilation loop: a smaller helmet water event recurred on EVA-80 in March 2022 and NASA paused US spacewalks again.
+      immediately threaten the airway. At the operations layer water-quality specifications and monitoring were tightened, but no in-suit free-water sensor was added to the ventilation loop: after a March 2022 spacewalk a crewmember again found water pooled on his visor — noticed by the astronaut, not by instrumentation — and NASA paused routine U.S. spacewalks for seven months, concluding afterwards that the cause was condensation from integrated system performance rather than a separator failure.
       At the safety-culture layer the MIB pressed the
       documented-and-investigated discipline: an unexplained EVA event
       requires investigation rather than the most convenient
@@ -2182,11 +2216,11 @@
     "Families drove the 2010 law raising hours to 1,500 and creating the Pilot Records Database",
   ),
   references: (
-    [NTSB, _Aircraft Accident Report: Colgan Air Flight 3407_, NTSB/AAR-10/01 (2010) — probable cause (quoted).],
     [NTSB/AAR-10/01 (2010) — the captain's training history, and the first officer's fatigue and pay.],
+    [NTSB, _Aircraft Accident Report: Colgan Air Flight 3407_, NTSB/AAR-10/01 (2010) — probable cause (quoted).],
     [NTSB/AAR-10/01 (2010), §2.7.3 — PRIA and FAA guidance did not require operators to obtain notices of disapproval; recommendation A-05-1 reiterated as "Open—Unacceptable Response".],
-    [Airline Safety and Federal Aviation Administration Extension Act of 2010, Pub. L. 111-216 — the 1,500-hour rule and the Pilot Records Database.],
     [DOT Office of Inspector General, _FAA Delays in Establishing a Pilot Records Database Limit Air Carriers' Access to Background Information_, AV-2015-079 (2015); the Families of Continental Flight 3407 campaign.],
+    [Airline Safety and Federal Aviation Administration Extension Act of 2010, Pub. L. 111-216 — the 1,500-hour rule and the Pilot Records Database.],
   ),
   quote: [The captain's inappropriate response to the activation of the stick shaker, which led to an aerodynamic stall from which the airplane did not recover.],
   quote-source: "NTSB Aircraft Accident Report AAR-10/01, Probable Cause, 2010",
@@ -2213,7 +2247,7 @@
   reflection-list: (
     [What information about operators in your domain exists somewhere in the system but does not flow to the decisions that depend on it?],
     [Design the data-flow architecture that would make a Colgan-equivalent visible *before* the accident rather than after.],
-    [The 2010 reform was driven by victims' families, not the industry that had resisted it. What load-bearing constituency in your domain could force a stalled data-flow fix into existence, and what evidence would mobilize them?],
+    [The 2010 reform was driven by victims' families, not the industry that had resisted it. What decisive constituency in your domain could force a stalled data-flow fix into existence, and what evidence would mobilize them?],
   ),
   approaches: (
     during: (
@@ -2258,11 +2292,15 @@
     nose down sharply and dove the Boeing 767 freighter into Trinity Bay,
     killing all three aboard. The NTSB found the first officer had a long,
     undisclosed history of training failures across multiple carriers —
-    and that Atlas could not see it, because the Pilot Records Database
-    mandated by Congress after Colgan Air 3407 (Case 109) was not yet
-    operational. Atlas relied on the older PRIA system, which surfaced
-    only five years of history. The case is the live recurrence of Colgan:
-    the information existed; the data-flow system was not yet complete.
+    and that Atlas could not see it. The Pilot Records Database mandated
+    by Congress after Colgan Air 3407 (Case 109) was not yet operational,
+    so Atlas was working under PRIA, which retrieves records only from the
+    employers an applicant names — and he named neither of the two airlines
+    he had left without completing initial training, one of them inside
+    PRIA's five-year window. Atlas also did not fully evaluate the adverse
+    training records it did receive. The case is the live recurrence of
+    Colgan: the information existed; the data-flow system was not yet
+    complete.
   ],
   sections: (
     // -- Background --
@@ -2272,11 +2310,14 @@
       training events at several previous employers and had not disclosed
       them on his Atlas application. At the time of hiring, the Pilot
       Records Database directed by Congress after Colgan Air 3407 was not
-      yet operational; Atlas used the older PRIA system, which required
-      only five years of records — a window too short to surface a pattern
-      of training failures spread across several prior employers, so the
-      record Atlas could legally obtain was structurally incapable of showing
-      what it most needed to see.#cn()
+      yet operational; Atlas used the older PRIA system, under which a
+      hiring operator requests records from each former employer the
+      applicant discloses. The first officer disclosed neither CommutAir
+      (2011) nor Air Wisconsin (2012), the two airlines he had left after
+      failing to complete initial training — the Air Wisconsin employment
+      falling inside PRIA's five-year window, the CommutAir employment
+      outside it. A retrieval process keyed to the applicant's own list is
+      structurally incapable of showing what the applicant leaves off.#cn()
     ],
     // -- What Happened --
     [
@@ -2300,7 +2341,11 @@
       records that would have informed the hiring decision existed but
       did not reach it — the same information-flow failure named after
       Colgan a decade earlier, recurring here because the remedy built to
-      fix it was authorized but not yet carrying the full history.#cn()
+      fix it was authorized but not yet carrying the full history. The Board
+      also found that Atlas did not fully evaluate the training-performance
+      information it did receive from a previous employer, so the gap was
+      not only in what the system delivered but in what the carrier did with
+      what arrived.#cn()
     ],
     // -- The Capability Gap --
     [
@@ -2334,11 +2379,11 @@
     "The PRD final rule took effect for Part 121 in 2022 with full historical coverage phasing in through 2024",
   ),
   references: (
-    [NTSB, _Aircraft Accident Report: Atlas Air Flight 3591_, NTSB/AAR-20/02 (2020) — probable cause and contributing factors (paraphrased).],
-    [NTSB/AAR-20/02 (2020) — the inadvertent go-around activation and the dive into Trinity Bay.],
     [NTSB/AAR-20/02 (2020) — the first officer's training history and Atlas's record-access limits.],
-    [FAA Pilot Records Database final rule (_Federal Register_, 10 June 2021; subpart B/C compliance from June 2022, full historical coverage by September 2024); Pilot Records Improvement Act of 1996.],
+    [NTSB/AAR-20/02 (2020) — the inadvertent go-around activation and the dive into Trinity Bay.],
+    [NTSB, _Aircraft Accident Report: Atlas Air Flight 3591_, NTSB/AAR-20/02 (2020) — probable cause and contributing factors (paraphrased).],
     [DOT Office of Inspector General, _FAA Delays in Establishing a Pilot Records Database Limit Air Carriers' Access to Background Information_, AV-2015-079 (2015) — the decade of implementation delay.],
+    [FAA Pilot Records Database final rule (_Federal Register_, 10 June 2021; subpart B/C compliance from June 2022, full historical coverage by September 2024); Pilot Records Improvement Act of 1996.],
   ),
   quote: [Thus, if a pilot intentionally omits a previous employer, as the FO did, the hiring operator may never know the pilot's complete background.],
   quote-source: "NTSB Aircraft Accident Report AAR-20/02, section 2.5.1, 2020",
@@ -2407,8 +2452,10 @@
     seventeen years apart: Challenger in 1986, when O-ring seals failed in
     cold weather, and Columbia in 2003, when foam debris breached the wing's
     thermal protection — fourteen astronauts in all. Both flaws had been
-    seen repeatedly and accepted as routine; foam shedding had been
-    documented on at least sixteen prior missions before Columbia, and
+    seen repeatedly and accepted as routine; the Board found foam loss on
+    more than 80 percent of the 79 missions for which launch imagery
+    existed — including seven left-bipod-ramp sheddings among 72 imaged
+    missions, some of which NASA had not known about — and
     O-ring erosion in the field joints had been on the engineering record
     since the early flights. Sociologist Diane Vaughan named the mechanism
     "normalization of deviance" from the Challenger investigation; the
@@ -2459,7 +2506,7 @@
       counted as acceptable risk. Seventeen years later the Columbia
       Accident Investigation Board found the same patterns intact — flying
       with flaws defined as routine, foam strikes filed under "in-family"
-      across at least sixteen prior missions, and a structure that
+      across the great majority of imaged missions, and a structure that
       suppressed the upward flow of safety concerns — and concluded that
       "the NASA organizational culture had as much to do with this accident
       as the foam."#cn() That the same board found the same structure
@@ -2481,7 +2528,7 @@
       lives in a report while the production pressure and the suppressed
       warnings live in the daily flow of work, where they kept doing what
       they had always done. The institutional-learning gap is itself the
-      load-bearing finding: between 1986 and 2003 NASA had reorganized
+      decisive finding: between 1986 and 2003 NASA had reorganized
       twice, lost an administrator, and adopted multiple safety initiatives,
       and the structural pathway from a dissenting engineer to a launch
       decision was substantially unchanged.
@@ -2501,7 +2548,7 @@
       missed in 1986: the upward path for a dissenting engineer is itself a
       piece of safety hardware, and one that has to be rebuilt and defended
       rather than assumed. The hedge that survives into the case: Vaughan's
-      "normalization of deviance" is the load-bearing analytic claim across
+      "normalization of deviance" is the analytic claim across
       both accidents and is never to be smoothed; the seventeen-year
       institutional-learning gap is the empirical claim, and the CAIB's
       cross-referencing of Rogers Commission language ("the same
@@ -2516,11 +2563,11 @@
     "Reforms followed each loss, yet the cultural mechanism stayed unrepaired until the Shuttle retired",
   ),
   references: (
-    [Rogers Commission, _Report of the Presidential Commission on the Space Shuttle Challenger Accident_ (1986) — the O-ring failure, the Thiokol teleconference, and the cold-weather launch decision.],
-    [D. Vaughan, _The Challenger Launch Decision: Risky Technology, Culture, and Deviance at NASA_ (Univ. of Chicago Press, 1996) — normalization of deviance; the working group's drift of decision rules.],
-    [Columbia Accident Investigation Board, _Report Vol. I_ (2003) — the foam strike, findings F3.2-5 and F3.2-7 on foam loss across the imaged missions and its filing as "in-family," the recurrence of the cultural pattern, and the call for an independent technical authority.],
-    [CAIB (2003) — "the NASA organizational culture had as much to do with this accident as the foam" (quoted); Rogers Commission (1986) and CAIB (2003) jointly on the suppressed upward flow of safety information across both accidents.],
     [W. Starbuck & M. Farjoun (eds.), _Organization at the Limit: Lessons from the Columbia Disaster_ (2005) — independent academic re-analyses of the institutional-learning gap.],
+    [Columbia Accident Investigation Board, _Report Vol. I_ (2003) — the foam strike; finding F3.2-5 (left bipod ramp shedding on 7 of the 72 missions for which launch or ET-separation imagery exists, including instances NASA was unaware of) and finding F3.2-7 (foam loss on more than 80 percent of the 79 missions with confirming imagery); the filing of strikes as "in-family," the recurrence of the cultural pattern, and the call for an independent technical authority.],
+    [Rogers Commission, _Report of the Presidential Commission on the Space Shuttle Challenger Accident_ (1986) — the O-ring failure, the Thiokol teleconference, and the cold-weather launch decision.],
+    [CAIB (2003) — "the NASA organizational culture had as much to do with this accident as the foam" (quoted); Rogers Commission (1986) and CAIB (2003) jointly on the suppressed upward flow of safety information across both accidents.],
+    [D. Vaughan, _The Challenger Launch Decision: Risky Technology, Culture, and Deviance at NASA_ (Univ. of Chicago Press, 1996) — normalization of deviance; the working group's drift of decision rules.],
     [NASA Engineering and Safety Center founding documents (2003 – present) — institutional response to the CAIB's call for independent technical authority; Shuttle retirement (STS-135, July 2011).],
   ),
   quote: [These repeating patterns mean that flawed practices embedded in NASA's organizational system continued for 20 years and made substantial contributions to both accidents.],
@@ -2532,12 +2579,12 @@
     pathology, twice, seventeen years apart, in the same institution,
     with the same human cost — and with the diagnosis already on the
     record. Vaughan's "normalization of deviance" names the mechanism
-    and is the load-bearing analytic claim across both accidents.
+    and is the analytic claim across both accidents.
     Capability engineering treats culture as a deliverable.
   ],
   lens-approach: [
     Challenger/Columbia anchors the multi-layer-drift-and-cumulative-
-    inadequacy competency (induced 7.4; LENS D1/PT4): a cascade of
+    inadequacy competency (induced 7.4; LENS D5/PT4): a cascade of
     marginal-but-tolerable conditions across decision rules, schedule
     pressure, and communication structure aligned twice, seventeen
     years apart. LENS uses the pair in Domain 1 (Systems Analysis)
@@ -2554,7 +2601,7 @@
   literature-items: (
     [Rogers Commission (1986) — primary record of the Thiokol teleconference],
     [Vaughan (1996), _The Challenger Launch Decision_],
-    [CAIB (2003), _Report Vol. I_ — the load-bearing cultural finding],
+    [CAIB (2003), _Report Vol. I_ — the cultural finding],
     [Starbuck & Farjoun (eds.) _Organization at the Limit: Lessons from the Columbia Disaster_ (2005)],
     [Weick & Sutcliffe, _Managing the Unexpected_ (2007)],
   ),
@@ -2638,8 +2685,7 @@
     // -- The Investigation --
     [
       The case is canonical for the difference between documentation and
-      institutional capability. Apollo's documentation was unprecedented, but
-      it captured the *what*, not the tacit *how* — the judgment, the
+      institutional capability. Apollo's documentation was exhaustive, but it captured the *what*, not the tacit *how* — the judgment, the
       workarounds, the undocumented reasons — that lived in the people who
       did the work. When they left, that knowledge was in no archive to
       recover.#cn() A drawing records the decision but not the deliberation
@@ -2682,8 +2728,8 @@
     "Serious programs now use apprenticeship and team continuity to keep tacit capability alive",
   ),
   references: (
-    [NASA Constellation Program documentation and reviews (2005–2010) — the difficulty of reproducing Saturn V capability.],
     [R. E. Bilstein, _Stages to Saturn: A Technological History of the Apollo/Saturn Launch Vehicles_ (NASA SP-4206, 1980) — the program and its workforce.],
+    [NASA Constellation Program documentation and reviews (2005–2010) — the difficulty of reproducing Saturn V capability.],
     [The documentation-vs-capability distinction (editors' synthesis of the Saturn V record).],
     [M. Polanyi, _The Tacit Dimension_ (1966); I. Nonaka & H. Takeuchi, _The Knowledge-Creating Company_ (1995).],
     [J. S. Brown & P. Duguid, _The Social Life of Information_ (2000) — tacit and institutional knowledge.],
@@ -2801,7 +2847,13 @@
       generational, as Apollo- and Shuttle-era engineers retired, and partly
       institutional: cost pressure, schedule-driven decisions, and the loss
       of NASA's own in-house engineering depth to challenge the
-      contractor.#cn() The two causes compound: as the contractor's senior
+      contractor. NASA's inspector general later named the drivers directly:
+      overconfidence in Boeing's use of heritage systems — which is why
+      integrated testing was never required under the contract — an
+      unachievable schedule, and limited flight-simulation data, compounded
+      by NASA's underuse of the data rights its own contract gave it, which
+      narrowed what the agency could analyse when the flight failures
+      came.#cn() The two causes compound: as the contractor's senior
       depth thinned through retirement, the buyer's own engineering depth had
       also eroded, so the very expertise NASA would have needed to catch the
       slipping contractor was the expertise it had let go of.
@@ -2826,12 +2878,13 @@
       sustain — and verify — capability at sole-source and legacy
       suppliers.#cn() Starliner returned uncrewed in September 2024, and its
       two astronauts finally came home aboard a SpaceX Crew Dragon in March
-      2025 after roughly nine months aboard the station. By late 2025 NASA
-      had downgraded Boeing's next flight to cargo-only, no earlier than
-      April 2026, and by mid-2026 — with propulsion problems still
-      unresolved — the agency's own inspector general judged crew
-      certification unlikely before 2027, NASA openly uncertain the vehicle
-      would ever be certified at all. It pairs with Saturn V (Case 112): where that case lost
+      2025 after roughly nine months aboard the station. NASA then downgraded
+      Boeing's next flight, Starliner-1, to an uncrewed cargo run to
+      prioritise crew safety; by mid-2026 no launch date was scheduled, the
+      helium leaks and propulsion failures were still unresolved, and the
+      agency's own inspector general judged human-rating certification likely
+      to slip to 2027 — with NASA unable to say when the remaining testing
+      would be finished or certification obtained. It pairs with Saturn V (Case 112): where that case lost
       a capability to retirement, Starliner shows the same erosion in slow
       motion at a living institution still carrying the brand of the
       capability it had let thin. Having a second supplier to fall back on is
@@ -2843,7 +2896,7 @@
   beats: (
     "Boeing won Commercial Crew on a human-spaceflight heritage once definitive in American aerospace",
     "Software errors in 2019, valve corrosion in 2021, and 2024 propulsion trouble stranded astronauts",
-    "NASA's inspector general found overconfidence in heritage systems, an unmeetable schedule, and underused data rights",
+    "NASA's inspector general found overconfidence in heritage systems, an unachievable schedule, and limited flight-simulation data",
     "Reputation outran reality because no instrument measured the legacy contractor's current capability",
     "NASA leaned on independent reviews and SpaceX as the verified alternative absorbing the failure",
   ),

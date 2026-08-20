@@ -1,8 +1,8 @@
 // ============================================================
-// Case matrix — a continuous spread of every case in the volume.
+// Case matrix — a continuous spread of every active case in the corpus.
 // Built dynamically by querying the <caseinfo> metadata that
 // lib/case.typ emits for every case, so it stays in sync as cases
-// are added (v1 1–100, v2 101–202, and beyond). Single continuous
+// are added (v1 1–100, v2 101–205, and beyond). Single continuous
 // list, 2 columns per page, in case-number order — one TOC, not
 // split halves.
 // ============================================================
@@ -50,11 +50,13 @@
 #text(font: serif, size: 20pt, fill: navy, "The cases at a glance")
 #v(3pt)
 #text(font: sans, size: 8pt, fill: text-muted)[
-  Gold numbers indicate failures and systemic conditions; teal
-  numbers indicate paired-intervention successes and the open closing
-  case. Numbers marked #sym.degree appear in the complete digital
+  Gold numbers indicate failures, frontier cases, and systemic
+  conditions; teal numbers indicate paired-intervention successes.
+  Numbering is global and a few numbers are absent: cases withdrawn in
+  review keep their numbers rather than have the sequence re-flowed
+  around them. Numbers marked #sym.degree appear in the complete digital
   edition but not the printed main volume; unmarked cases appear in
-  both. Numbering is global across the whole corpus.
+  both.
 ]
 #v(8pt)
 

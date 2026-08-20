@@ -152,6 +152,115 @@
 #let text-muted = if grayscale { _text-muted-g } else { _text-muted-c }
 #let rule-soft  = if grayscale { _rule-soft-g }  else { _rule-soft-c }
 
+// ---- Diagram palette ----
+//
+// Diagrams get their own tokens because they had none: every colour in
+// lib/diagrams.typ was a hard-coded rgb() literal, so the 93 diagram
+// placements bypassed the grayscale switch above entirely. In the printed
+// interior the old gold (#D4A843) and teal (#2CC4B3) flattened to grey 170
+// and 162 — eight levels apart out of 255 — so every colour distinction the
+// diagrams drew was invisible on paper.
+//
+// The palette is light-ground editorial: near-black ink for the primary
+// series, a single burnt-orange accent for the second, and no dark panel
+// fills. One accent, not two, so nothing depends on telling two hues apart.
+// The grayscale variants are *chosen for separation*, not inherited from the
+// colours' own luma — that inheritance is what failed before.
+
+// ---- Figure palette ------------------------------------------------------
+// Nine tokens, one accent. Semantics, so a new figure does not invent its own:
+//   ground       page under the figure
+//   panel        a container or band behind content
+//   panel-alt    a second band, where two must be told apart
+//   rule         axes, connectors, hairlines
+//   ink          primary series, structure, body text in a figure
+//   dim          muted labels, captions, secondary annotation
+//   accent       THE FOCAL VALUE — the one quantity or element the case turns
+//                on. It carries emphasis, not valence: it marks the number
+//                that matters, whether that number is 346 dead or infections
+//                at zero. One accented *idea* per figure — the accent may fall
+//                on a marker and its label together, but it should point at one
+//                thing. Most figures use it once or twice; six use it four or
+//                more times and are the ones to look at first if a figure reads
+//                as busy.
+//   accent-soft  the accent as a large fill, where full accent would dominate
+//   onaccent     knockout text on ink or accent
+// -- Colour --
+#let _dgm-ground-c      = rgb("#FFFFFF")
+#let _dgm-panel-c       = rgb("#F0EDE6")  // L* ~94
+#let _dgm-panel-alt-c   = rgb("#E4DFD4")  // L* ~89
+#let _dgm-rule-c        = rgb("#B9B3A4")  // L* ~73
+#let _dgm-ink-c         = rgb("#111111")  // L* ~7   — primary series, text
+#let _dgm-dim-c         = rgb("#8A8578")  // L* ~55  — muted labels, captions
+#let _dgm-accent-c      = rgb("#B8541F")  // L* ~44  — the single accent
+#let _dgm-accent-soft-c = rgb("#E0A377")  // L* ~72  — accent for large fills
+#let _dgm-onaccent-c    = rgb("#FFFFFF")  // text/knockouts drawn on ink or accent
+
+// -- Grayscale (separation-first: ink 17, accent 110, dim 165) --
+// Grayscale ramp for the print interior. Every pair of tokens that appears in
+// the same figure must separate by at least 22 gray levels, or the edge between
+// a fill and a rule disappears on a B&W press. The previous ramp crowded rule,
+// dim and accent-soft into 165–189: accent-soft and rule sat 9 levels apart in
+// 15 figures, dim and rule 15 apart in 19. Respaced August 2026; the ordering is
+// unchanged, only the spacing. scripts/check-diagram-palette.py enforces it.
+//                                             gray   gap
+#let _dgm-ground-g      = rgb("#FFFFFF")    // 255
+#let _dgm-panel-g       = rgb("#E8E8E8")    // 232    23
+#let _dgm-panel-alt-g   = rgb("#CECECE")    // 206    26
+#let _dgm-accent-soft-g = rgb("#B2B2B2")    // 178    28
+#let _dgm-rule-g        = rgb("#969696")    // 150    28
+#let _dgm-dim-g         = rgb("#7A7A7A")    // 122    28
+#let _dgm-accent-g      = rgb("#4E4E4E")    //  78    44
+#let _dgm-ink-g         = rgb("#111111")    //  17    61
+#let _dgm-onaccent-g    = rgb("#FFFFFF")    // 255  — knockout on ink or accent
+
+#let dgm-ground      = if grayscale { _dgm-ground-g }      else { _dgm-ground-c }
+#let dgm-panel       = if grayscale { _dgm-panel-g }       else { _dgm-panel-c }
+#let dgm-panel-alt   = if grayscale { _dgm-panel-alt-g }   else { _dgm-panel-alt-c }
+#let dgm-rule        = if grayscale { _dgm-rule-g }        else { _dgm-rule-c }
+#let dgm-ink         = if grayscale { _dgm-ink-g }         else { _dgm-ink-c }
+#let dgm-dim         = if grayscale { _dgm-dim-g }         else { _dgm-dim-c }
+#let dgm-accent      = if grayscale { _dgm-accent-g }      else { _dgm-accent-c }
+#let dgm-accent-soft = if grayscale { _dgm-accent-soft-g } else { _dgm-accent-soft-c }
+#let dgm-onaccent    = if grayscale { _dgm-onaccent-g }    else { _dgm-onaccent-c }
+
+// ---- Outcome valence -----------------------------------------------------
+// Where a figure marks an OUTCOME, valence is carried twice: by hue in the
+// colour edition and by glyph everywhere. Star = favourable, triangle = adverse
+// (the triangle is the conventional hazard silhouette; the star is taught by the
+// key in the front matter). Only figures that mark an actual outcome use these.
+// A mechanism ("andon"), a subject ("Therac-25") or a destination ("practice")
+// has no valence and keeps the neutral accent.
+//
+// In grayscale BOTH resolve to the accent gray. Two dark grays are not reliably
+// told apart on press, so the glyph — not the tone — carries valence there.
+// The hue pair is dichromacy-safe: simulated linear-RGB separation is 0.41
+// under deuteranopia, 0.34 protanopia, 0.46 tritanopia.
+#let _dgm-good-c    = rgb("#1E6F5C")   // deep teal-green
+#let _dgm-adverse-c = rgb("#B8541F")   // the established burnt orange
+#let dgm-good    = if grayscale { _dgm-accent-g } else { _dgm-good-c }
+#let dgm-adverse = if grayscale { _dgm-accent-g } else { _dgm-adverse-c }
+
+// ---- Disclosure / evidence-tier flag tints ----
+//
+// Same defect the diagram palette fixes: these two blocks hard-coded their
+// tints, so in the grayscale interior they flattened to fills one level apart
+// (244 and 245) and were no longer telling the reader which block was which.
+// Separated deliberately in both palettes.
+#let _flag-coi-fill-c    = rgb("#FFF6E1")
+#let _flag-coi-rule-c    = rgb("#D4A843")
+#let _flag-tier-fill-c   = rgb("#F1F5FB")
+#let _flag-tier-rule-c   = rgb("#5C6E8E")
+#let _flag-coi-fill-g    = rgb("#F2F2F2")
+#let _flag-coi-rule-g    = rgb("#7A7A7A")
+#let _flag-tier-fill-g   = rgb("#E2E2E2")
+#let _flag-tier-rule-g   = rgb("#B4B4B4")
+
+#let flag-coi-fill  = if grayscale { _flag-coi-fill-g }  else { _flag-coi-fill-c }
+#let flag-coi-rule  = if grayscale { _flag-coi-rule-g }  else { _flag-coi-rule-c }
+#let flag-tier-fill = if grayscale { _flag-tier-fill-g } else { _flag-tier-fill-c }
+#let flag-tier-rule = if grayscale { _flag-tier-rule-g } else { _flag-tier-rule-c }
+
 // ---- Proof furniture: 8 × 10 trim outline + corner crop marks ----
 //
 // Painted in the page background when mode=proof so reviewers can see

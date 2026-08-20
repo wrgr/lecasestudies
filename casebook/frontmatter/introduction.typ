@@ -179,10 +179,13 @@
   interventions are documented in this book's What Works chapters as
   successes.
   And yet in 2016 Makary and Daniel returned to the question from the
-  same institution that produces this casebook and concluded that
-  medical error remains the third leading cause of death in the United
-  States, killing more than two hundred fifty thousand people a year
-  #cite-num(1).
+  same institution that produces this casebook and estimated that
+  medical error kills more than two hundred fifty thousand people a
+  year in the United States, which would rank it third among causes of
+  death #cite-num(1). That estimate is substantively contested on
+  methodological grounds, and Case 8 sets out the dispute; what is not
+  contested is that the count has not moved the way the reform arc
+  promised.
 ]
 
 #v(6pt)
@@ -190,9 +193,14 @@
 #text(font: sans, size: 9.5pt, fill: text-dark)[
   The interval between the IOM report and the Makary update is
   approximately the canonical gap implementation science has identified
-  between research evidence and clinical practice: seventeen years
-  #cite-num(2). The average. The median. Only about fourteen percent of
-  research findings ever reach practice at all #cite-num(3). The system
+  between research evidence and clinical practice: about seventeen
+  years #cite-num(2), with only about fourteen percent of research
+  findings reaching practice at all #cite-num(3). Both are estimates
+  rather than measurements — the first a lag timed across nine mostly
+  primary-care services, the second derived from assumed attrition
+  along the publication-to-guideline pipeline — and Case 13 shows the
+  derivation. They are the right order of magnitude and the wrong kind
+  of number to quote precisely. The system
   to surface them, vet them, deploy them, sustain them, and measure
   their effect at the scale at which they would matter has never been
   built as an institution. It has been built as a series of grants. The
@@ -203,19 +211,19 @@
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
   This is not only a healthcare problem. The U.S. Navy lost seventeen
-  sailors in two avoidable destroyer collisions in 2017 because in 2003
-  it had cut a sixteen-week classroom-and-simulator course down to a
-  set of CD-ROMs #cite-num(4). The world's most expensive aircraft
-  program is operating at half of its design readiness in 2026 because
-  the platform was fielded faster than the maintainer pipeline could be
-  built #cite-num(5). One hundred million dollars of educational
+  sailors in two avoidable destroyer collisions in 2017 after cutting
+  its Surface Warfare Officers School course down to self-study
+  CD-ROMs in 2003 #cite-num(4). The world's most expensive aircraft
+  program flew at a 44% mission-capable rate in FY2025, down from 67%
+  in FY2021, because the platform was fielded faster than the
+  maintainer pipeline could be built #cite-num(5). One hundred million dollars of educational
   infrastructure dissolved in fourteen months because the institution
   building it did not engineer the governance and trust that the
-  technology presupposed #cite-num(6). A predictive grading algorithm
-  downgraded a third of an entire nation's high-school students in a
-  single afternoon, and was withdrawn within a week, because nobody
-  inside the agency could be specifically held to account for what the
-  measurement instrument was measuring #cite-num(7).
+  technology presupposed #cite-num(6). A standardisation algorithm
+  downgraded some 39% of England's teacher-estimated A-level grades in
+  a single afternoon and was withdrawn four days later, because the
+  agency had tested whether the calculation worked and not what it
+  would do to the individuals it was calculating #cite-num(7).
 ]
 
 #v(6pt)
@@ -242,10 +250,14 @@
   the first CRM curriculum #cite-num(8); within twenty years the
   Commercial Aviation Safety Team had built the closed-loop
   hazard-identification system that lets the FAA know whether CRM is
-  still working #cite-num(9). The result over the next two decades was
-  an eighty-three percent reduction in U.S. commercial aviation
-  fatality risk and a ninety-five percent reduction in fatalities per
-  hundred million passengers #cite-num(10). CRM works not because it
+  still working #cite-num(9). U.S. commercial aviation fatality risk
+  fell 83% over 1998–2008 and fatalities per hundred million
+  passengers fell 95% across the longer arc #cite-num(10) — a
+  portfolio result across some seventy safety enhancements, of which
+  CRM is one and from which its separate contribution has never been
+  isolated. Case 117 is careful about this, and so should the reader
+  be: the arc is evidence that the discipline paid, not a measurement
+  of what any one part of it bought. CRM works not because it
   taught individual airmanship — pilots were already excellent — but
   because it redesigned the *system of interaction* in the cockpit:
   the authority gradient, the communication protocol, the standard
@@ -257,14 +269,16 @@
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
   The same pattern shows up in every domain where the cost of failure
-  has been high enough to fund the discipline. After Three Mile Island
-  the U.S. nuclear industry stood up the Institute of Nuclear Power
-  Operations within nine months — before the Kemeny Commission's report
-  was even finalized — because every utility had recognized that an
+  has been high enough to fund the discipline. The Kemeny Commission
+  reported in October 1979 that the industry should set and police its
+  own standards of excellence; by December — eight months after Three
+  Mile Island — the U.S. nuclear industry had stood up the Institute of
+  Nuclear Power Operations, because every utility had recognized that an
   accident at any single plant would affect every operator's license to
   operate #cite-num(11). INPO and the National Academy for Nuclear
   Training, founded in 1985, have presided over more than four decades
-  of zero significant releases at U.S. commercial reactors. The
+  without an INES Level 4-or-above accident at a U.S. commercial
+  reactor. The
   comparison with the surface Navy, which cut its training during the
   same era, is the cleanest available test of what happens when
   capability is engineered versus when it is deferred.
@@ -279,10 +293,13 @@
   across 103 Michigan ICUs and saved an estimated fifteen hundred lives
   in eighteen months #cite-num(12). Atul Gawande's nineteen-item
   surgical safety checklist, paired with three required pauses in the
-  operative timeline, halved the surgical mortality rate across eight
-  hospitals in eight countries #cite-num(13). TeamSTEPPS, jointly
-  developed by AHRQ and DoD, translated five decades of high-reliability
-  research from aviation and the military into clinical practice in
+  operative timeline, cut the death rate from 1.5% to 0.8% across
+  eight hospitals in eight countries #cite-num(13) — though a later
+  province-wide Ontario rollout found no significant mortality
+  benefit, which is the transfer problem this book keeps returning to.
+  TeamSTEPPS, jointly developed by AHRQ and DoD, translated decades of
+  high-reliability research from aviation and the military into
+  clinical practice in
   years rather than decades — because the implementation infrastructure
   was funded as part of the intervention rather than as an afterthought
   #cite-num(14).
@@ -351,10 +368,10 @@
   LENS — Learning Engineering for Next-Generation Systems — is a
   concentration within the Johns Hopkins School of Education's
   Learning Design & Technology program that operationalizes this
-  premise for high-consequence operational domains. Its core
-  competencies — capability analysis and requirements, evidence and
-  analytics, human-AI teaming, knowledge transfer, bias and governance,
-  computational and AI methods — are organized to produce graduates who
+  premise for high-consequence operational domains. Its five
+  competencies — systems analysis; iterative development;
+  human-system collaboration; test and evaluation; and navigating
+  sociotechnical constraints — are organized to produce graduates who
   can do the work the cases in this book required, and who can build
   the institutions that the book's success cases had to invent.
   The curriculum threading commitments — implementation science as a
@@ -396,8 +413,9 @@
   pilot mental models from prior models, and a certification chain
   that did not knit the pieces together (Case 97). The successful
   cases — AlphaFold (Case 36), MICrONS, CRM (Case 117 paired with
-  Case 118), Keystone (Case 19), the paired-intervention examples in
-  Chapter 8 — are, equivalently, cases of disciplined translation
+  Case 118), Keystone (Case 19), and the paired-intervention
+  examples that close every part — are, equivalently, cases of
+  disciplined translation
   and integration: biology into computation, science into
   operational practice, technical reform into cultural reform,
   multiple subsystems into a working whole. Engineering capability
@@ -438,8 +456,7 @@
   The third — and the design constraint on all the others — is
   *human agency*. The capability discipline can be misread as
   optimization: produce operators whose behavior matches a
-  specification. That reading collapses the very property the cases
-  reveal as load-bearing. Every successful institution in the What Works chapters —
+  specification. That reading collapses the very property the cases reveal as decisive. Every successful institution in the What Works chapters —
   INPO operators trained to challenge their reactor team, Keystone
   ICU nurses authorized to halt a procedure (Case 19), the Nuclear
   Navy's questioning attitude (Case 137), the first-officer authority
@@ -531,7 +548,8 @@
   that follow are tagged to them: where capability was absent, one or
   more of these five was the capability that was missing; where it was
   engineered, one or more of these five was the capability that was
-  built. Named as concentration learning outcomes, they are also what
+  built. Named as the five LENS Educational Objectives — the
+  concentration tier of the program's objectives — they are also what
   the discipline sets out to teach.
 ]
 
@@ -696,10 +714,33 @@
   case in the dataset shares it: a technical artifact paired with a
   cultural authority; a measurement instrument paired with a governance
   body that listens to it; a curriculum paired with the institutional
-  architecture to sustain it. Neither half alone moves the curve. The
-  pair is irreducible. This is the strongest empirical pattern in the
-  book and it directly informs the LENS pedagogical commitment to
-  co-optimization across technical and human design.
+  architecture to sustain it. The pattern is that the cases that moved
+  the curve shipped both halves together. What the record does not
+  establish is which half carried the result: these interventions were
+  installed as bundles, and the trials that measured them could not
+  decompose them. That is the strongest empirical pattern in the book,
+  stated at the strength the evidence supports, and it informs the LENS
+  commitment to co-optimization across technical and human design.
+]
+
+#v(6pt)
+
+#text(font: sans, size: 9.5pt, fill: text-dark)[
+  *Cases have more than one cause, and the book says so.* Each case
+  names a primary reading — the one its LENS anchor is drawn from, and
+  the one the Lens page teaches. It is rarely the only reading the
+  record supports. Where rival explanations survive the evidence and
+  imply different things to check before the pattern is carried
+  somewhere else, they are set out in a *Competing readings* block at
+  the end of the narrative; where a case demonstrably fails to show
+  something it is often made to show, that boundary is stated as *What
+  this case does not show*. Neither block is a caveat attached to a
+  claim we did not want to defend — an error is corrected in the case,
+  not annotated. They are there because a reader who takes one cause
+  away from a failure with four interlocking ones has learned the wrong
+  lesson, and because a student who meets the alternatives here will
+  not be ambushed by them later. Therac-25, the opening case, carries
+  both blocks as the worked example.
 ]
 
 #v(6pt)
@@ -710,23 +751,46 @@
   instead: before the event — the prevention regimes whose quiet
   thinning is the real story — and after it, the response, the
   recovery, and the institutions built (or not built) so the same
-  failure cannot recur. Cases whose load-bearing lesson belongs to a
-  domain stay in their domain parts; what qualifies a case for Part VI
+  failure cannot recur. Cases whose central lesson belongs to a domain stay in their domain parts; what qualifies a case for Part VI
   is that its lesson is the pre/post lifecycle itself.
 ]
 
 #v(6pt)
 
 #text(font: sans, size: 9.5pt, fill: text-dark)[
-  Each case occupies a two-page spread. The left page tells what
-  happened — narrative, evidence, attribution. The right page is the
+  Most cases run to four pages; the shortest run to three and the
+  densest to five. The narrative comes first — what happened, the
+  evidence, the attribution — and closes with a diagram; where the
+  record supports rival explanations, the *Competing readings* and
+  *What this case does not show* blocks follow it, then a pull quote
+  and the numbered sources. The case ends in the
   *Learning Engineering Lens:* a synthesis of what the case teaches,
   how the LENS curriculum addresses the pattern, and reflection
-  questions designed for studio discussion. The casebook is built to be
-  taught from, read straight through, or consulted as a reference. The
+  questions designed for studio discussion. The Lens begins wherever
+  the narrative ends rather than on a page of its own. The casebook is
+  built to be taught from, read straight through, or consulted as a reference. The
   curriculum crosswalk in the closing matter maps each case to the
   specific courses in the program that use it as a worked example.
 ]
+
+#v(6pt)
+
+#block(
+  width: 100%,
+  inset: (left: 10pt, top: 4pt, bottom: 4pt),
+  stroke: (left: 1.5pt + gold),
+  text(font: sans, size: 9pt, fill: navy)[
+    *Reading the figures.* Each figure marks one focal value — the quantity
+    the case turns on. Where a figure carries a glyph on that value, the
+    glyph states the direction of the outcome, and states it twice so that
+    it survives both the colour and the black-and-white printing: a *star*
+    for a favourable outcome, a *triangle* for an adverse one, in deep
+    teal-green and in burnt orange respectively where colour is available.
+    Figures whose focal value is not an outcome — a mechanism, a subject, a
+    destination — carry it in a single neutral accent instead. Read the
+    glyph where it appears; where none appears, read the caption.
+  ],
+)
 
 #v(6pt)
 

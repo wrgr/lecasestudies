@@ -83,8 +83,11 @@
     eighth. The new code reused a flag that, on the eighth server's old
     software, reactivated long-dead "Power Peg" code never removed from
     the repository. At the opening bell it fired millions of unintended
-    orders; in about 45 minutes Knight lost roughly \$440 million — more than
-    the firm was worth — and was effectively acquired within months. The SEC
+    orders; in about 45 minutes Knight lost roughly \$440 million — the SEC
+    order puts the loss on the positions at over \$460 million — and the firm,
+    left with what the order calls "significant net capital problems," survived
+    only on a \$400 million rescue financing and was effectively acquired
+    within months. The SEC
     found Knight had no procedure to verify the deployment across all servers
     and no controls to halt the runaway orders. The capability designed out
     was deployment verification; the dead code was technical debt that
@@ -110,9 +113,11 @@
       on that eighth server, had once activated the long-dormant "Power Peg" routing function — discontinued in 2003 but left present and callable. At
       the open the dead code woke and began firing millions of unintended
       orders into the market. In about forty-five minutes Knight amassed a
-      vast unwanted position — long about \$3.5 billion in 80 stocks and short about \$3.15 billion in 74 — and realized a pre-tax loss of about \$440 million, more than the firm itself was worth. It
-      survived only on emergency capital and was effectively acquired within
-      months.#cn()
+      vast unwanted position — long about \$3.5 billion in 80 stocks and short about \$3.15 billion in 74 — and realized a pre-tax loss of about \$440 million. Its shares
+      fell from \$10.33 to \$2.58 in two sessions; it survived only on a
+      \$400 million rescue financing convertible at \$1.50 a share, which left
+      the existing shareholders a minority, and it was effectively acquired
+      within months.#cn()
     ],
     // -- The Investigation --
     [
@@ -149,12 +154,15 @@
       disciplined removal of dead code from the repository, pre-trade risk
       limits, and kill switches that can stop a runaway process in seconds.
       Regulators sharpened their attention to automated market-access
-      controls in response. The SEC's 2014 Regulation Systems Compliance and
-      Integrity (Regulation SCI) extended formal system-development,
-      testing, change-management, and incident-reporting obligations to
-      registered exchanges, clearing agencies, and large alternative trading
-      systems — the institutional response that pulled the deployment
-      discipline Knight had lacked into the regulatory perimeter. The lesson
+      controls in response. Regulation Systems Compliance and Integrity
+      (Regulation SCI), adopted 19 November 2014, extended formal
+      system-development, testing, change-management, and incident-reporting
+      obligations to registered exchanges, clearing agencies, FINRA, plan
+      processors, and the larger alternative trading systems — the
+      institutional response that wrote the deployment discipline Knight had
+      lacked into a rule. It did not, however, reach Knight's own class: a
+      broker-dealer market maker is not an SCI entity, and remains governed on
+      this point by the Market Access Rule Knight was charged under. The lesson
       rhymes with the orbiter's across a forty-year, civilian-to-financial
       gap: a small, unowned boundary inside a large automated system is
       precisely where the institution is most exposed, and least watching —
@@ -166,14 +174,14 @@
   beats: (
     "Major market maker prepared routine update for the NYSE Retail Liquidity Program launch.",
     "Eighth server missed the update; a reused flag woke dormant Power Peg code.",
-    "SEC found no deployment verification, no consistency check, and no controls to halt orders.",
+    "SEC found no second-technician deployment review, no written deployment or unused-code procedures, and no controls to halt orders.",
     "Designed-out capability was deployment verification; dead code was a standing option on failure.",
     "Case became canonical for deployment as engineering deliverable and sharpened market-access controls.",
   ),
   references: (
     [U.S. Securities and Exchange Commission, _Order Instituting Administrative and Cease-and-Desist Proceedings_, In re Knight Capital Americas LLC (2013) — the firm, the Retail Liquidity Program launch, and the deployment.],
-    [SEC Order (2013) and Knight Capital 8-K filing (2012) — the missed eighth server, the reactivation of the dormant "Power Peg" code, and the ~45-minute event; the SEC puts the loss on the positions at over \$460 million, Knight's own filing at a realized pre-tax loss of ~\$440 million.],
-    [SEC Order (2013) — the absence of a second-technician deployment verification, the lack of an automated code-consistency check, inadequate order controls, and the \$12 million penalty (quoted).],
+    [SEC Order (2013) and Knight Capital Group 8-K filings of 2 and 6 August 2012 — the missed eighth server, the reactivation of the dormant "Power Peg" code, the ~45-minute event, and the \$400 million rescue financing (preferred convertible at \$1.50 a share); the SEC puts the loss on the positions at over \$460 million, Knight's own filing at a realized pre-tax loss of ~\$440 million.],
+    [SEC Order (2013), Rel. 34-70694, 16 October 2013 — the absence of a second-technician deployment review, the missing written code-development, deployment and unused-code procedures (¶26), the capital thresholds unlinked to automated controls, and the \$12 million penalty (quoted).],
     [B. Beyer, C. Jones, J. Petoff & N. R. Murphy (eds.), _Site Reliability Engineering_ (O'Reilly, 2016) — deployment verification, dead-code removal, and automated safeguards as engineering deliverables.],
     [SEC Market Access Rule (Rule 15c3-5) and subsequent automated-controls guidance — the regulatory response on pre-trade risk and market-access controls.],
     [D. Seven, "Knightmare: A DevOps Cautionary Tale" — a widely cited engineering post-mortem on the deployment process, the orphaned eighth server, and the reused feature flag.],
@@ -188,8 +196,10 @@
     proximate trigger; the absent procedure was the cause.
   ],
   lens-approach: [
-    Knight Capital is the canonical change-control-and-disclosure
-    governance case (induced 5.4; LENS D1/PT3). LENS uses it in
+    Knight Capital is the canonical inherited-dead-code case
+    (induced 7.1, re-verifying inherited designs in new envelopes, with
+    change control and disclosure — 5.4 — as the post-incident Regulation SCI
+    lens; LENS D1/PT3). LENS uses it in
     LEN 5 to teach deployment-as-capability — students design the
     deployment deliverable that would have caught the eighth
     server — and in LEN 9 for the technical-debt argument: every
@@ -241,7 +251,7 @@
     "1975",
     "first digital camera prototype · 0.01 megapixel",
     micro: "37 years from prototype to Chapter 11",
-    caption: "Kodak — the longest unacted signal in consumer electronics",
+    caption: "Kodak — a signal acted on partly, never iterated through",
   ),
   kind: "failure",
   scale: "big",
@@ -366,10 +376,10 @@
   ),
   references: (
     [S. Sasson, "We Had No Idea," Kodak corporate blog, _Kodak: Plugged In_ (2007) — first-hand account of the 1975 prototype, the demonstration, and the internal reception.],
+    [M. Spector & D. Mattioli, "Kodak Teeters on the Brink," _The Wall Street Journal_ (5 January 2012); follow-up coverage of the patent-sale process in WSJ and Reuters (December 2012).],
     [H. C. Lucas Jr. & J. M. Goh, "Disruptive technology: How Kodak missed the digital photography revolution," _Journal of Strategic Information Systems_ 18(1):46–55 (March 2009).],
     [Eastman Kodak Company, Voluntary Petition for Chapter 11 Reorganization, U.S. Bankruptcy Court, Southern District of New York, Case No. 12-10202 (19 January 2012).],
     [A. R. Sorkin & M. J. de la Merced, "Eastman Kodak Files for Bankruptcy," _The New York Times_ DealBook (19 January 2012).],
-    [M. Spector & D. Mattioli, "Kodak Teeters on the Brink," _The Wall Street Journal_ (5 January 2012); follow-up coverage of the patent-sale process in WSJ and Reuters (December 2012).],
   ),
   quote: [You don't get to keep the future just because you invented it.],
   quote-source: "Editors' synthesis of the Sasson (IEEE Spectrum 2007) and Lucas & Goh (JSIS 2009) record",
@@ -611,8 +621,8 @@
   modes-code: "HK",
   impact: "50 million people without power across eight U.S. states and Ontario; $4–10B U.S. economic cost; FERC Order 693 followed",
   diagram: dgm.dgm-timeline(
-    (("tree contact", "3:05"), ("line trips", "—"), ("alarm fails", "2:14 — silent"), ("operator unaware", "51 min"), ("cascade", "4:11")),
-    emphasis: 2,
+    (("alarm fails", "2:14 — silent"), ("tree contact", "3:05"), ("line trips", "—"), ("operator unaware", "51 min"), ("cascade", "4:11")),
+    emphasis: 0,
     caption: "Northeast Blackout — silent alarm failure absorbed the operator's awareness",
   ),
   kind: "failure",
@@ -654,7 +664,7 @@
     // -- The Investigation --
     [
       The U.S.-Canada Power System Outage Task Force named "inadequate situational awareness at FirstEnergy" as a cause — "FE did not recognize or understand the deteriorating condition of its system" — along with FE's failure to manage tree growth and the reliability organizations' failure to provide effective real-time diagnostic support.#cn() The reforms produced FERC
-      Order 693, which approved 83 NERC standards as mandatory and enforceable under the authority Congress created in the Energy Policy Act of 2005.#cn() Making
+      Order 693, issued 16 March 2007, which approved 83 of the 107 reliability standards NERC had proposed as mandatory and enforceable under the authority Congress created in section 215 of the Energy Policy Act of 2005.#cn() Making
       the standards mandatory addressed the deeper finding that a voluntary
       regime had let vegetation management and operator awareness drift: when
       compliance is optional, the practices that prevent a cascade are exactly
@@ -697,9 +707,9 @@
     [U.S.-Canada Power System Outage Task Force, _Final Report on the August 14, 2003 Blackout in the United States and Canada_ (2004) — the tree contact, the silent alarm, and the cascade.],
     [Task Force (2004) — 50 million people affected across eight states and Ontario; the minute-by-minute sequence.],
     [Task Force (2004), Causes Groups 1–4 — "inadequate situational awareness at FirstEnergy," FE's failure to manage tree growth, and the reliability organizations' failure to provide effective real-time diagnostic support (quoted).],
-    [FERC Order No. 693, _Mandatory Reliability Standards for the Bulk-Power System_ (2007) — enforceable standards.],
-    [North American Electric Reliability Council reports (2004) and the creation of the Electric Reliability Organization.],
+    [FERC Order No. 693, _Mandatory Reliability Standards for the Bulk-Power System_, 118 FERC ¶ 61,218 (16 March 2007) — 83 of 107 proposed standards approved as mandatory and enforceable, effective 18 June 2007.],
     [M. R. Endsley (1995), situation-awareness theory — the human-factors frame for silent-automation failure.],
+    [North American Electric Reliability Council reports (2004) and the creation of the Electric Reliability Organization.],
   ),
   quote: [Inadequate situational awareness at FirstEnergy. FE did not recognize or understand the deteriorating condition of its system.],
   quote-source: "U.S.-Canada Power System Outage Task Force, Final Report on the August 14 2003 Blackout, April 2004",
@@ -751,7 +761,7 @@
   number: 147,
   slug: "takata-airbag-inflators",
   title: "Takata Airbag Inflators",
-  year: "2008 – 2023",
+  year: "2008 – 2026",
   domains-list: ("industrial",),
   modes-code: "DG",
   impact: "28 U.S. deaths confirmed by NHTSA and at least 400 U.S. injuries alleged from inflator ruptures; largest automotive recall in history",
@@ -790,8 +800,9 @@
       built to contain. A firing inflator could then rupture its own metal
       housing and spray shrapnel into the cabin — turning the device meant to
       save a life into a fragmentation hazard aimed at the driver. NHTSA has confirmed 28 deaths in the United States, and at least 400 injuries are alleged. The recall
-      grew to more than a hundred million inflators across some nineteen
-      automakers — the largest in automotive history — and Takata went
+      grew to roughly 67 million inflators in the United States across some
+      nineteen automakers, and more than 100 million worldwide — the largest
+      in automotive history — and Takata went
       bankrupt; the toll keeps rising as unrepaired vehicles stay on the road
       and their inflators keep aging.#cn()
     ],
@@ -824,9 +835,10 @@
       the company that built the inflators ceased to exist — concrete proof
       that a designed-out capability can outlive the firm that removed it and
       become someone else's burden. A decade on, the burden persists: the
-      oldest, most dangerous "Alpha" inflators have been escalated to urgent "Do Not Drive" warnings, and in February 2026 FCA extended one to all 225,000 of its unrepaired vehicles; roughly 4.8 million Takata recalls remained
-      unrepaired as of mid-2026 even as completion of the Alpha inflators
-      passed 99 percent. The episode pushed regulators toward more
+      oldest, most dangerous "Alpha" inflators have been escalated to urgent "Do Not Drive" warnings, and in February 2026 FCA extended one to all 225,000 of its unrepaired vehicles. The unrepaired remainder in mid-2026 is put at about
+      4.8 million by CARFAX and at around 6 million by NHTSA's own completion
+      reporting — the estimates differ, the order of magnitude does not — even
+      as completion of the original "Alpha" inflators passed 99 percent. The episode pushed regulators toward more
       aggressive, coordinated recall management that does not leave pace to
       each manufacturer. Its central lesson is the pairing: Takata is the
       modern Pinto in its product failure, and more in its system failure —
@@ -844,10 +856,10 @@
   ),
   references: (
     [U.S. National Highway Traffic Safety Administration, Takata air-bag inflator recall coordination materials — the ammonium-nitrate-without-desiccant design and the propellant-degradation rupture mechanism.],
-    [NHTSA recall record and investigative reporting (Reuters, _New York Times_) — 100M+ inflators across ~19 automakers; the largest automotive recall in history; deaths and injuries from ruptures.],
-    [U.S. Department of Justice, settlement and guilty plea with Takata Corporation (2017) — wire fraud, ~\$1B in fine and restitution, and Takata's subsequent bankruptcy.],
+    [NHTSA recall record and investigative reporting (Reuters, _New York Times_) — roughly 67 million inflators recalled in the United States across ~19 automakers (over 100 million worldwide); the largest automotive recall in history; 28 U.S. deaths confirmed by NHTSA and at least 400 U.S. injuries alleged.],
     [U.S. DOJ (2017) and Takata internal documents released in litigation — the sustained misrepresentation of inflator test data to automakers and regulators.],
-    [NHTSA Takata recall status reporting — the years-long completion of replacements and the continuing risk in unrepaired vehicles.],
+    [U.S. Department of Justice, settlement and guilty plea with Takata Corporation (2017) — wire fraud, ~\$1B in fine and restitution, and Takata's subsequent bankruptcy.],
+    [NHTSA consumer alert on FCA's "Do Not Drive" warning for all vehicles with unrepaired Takata recalls (February 2026, ~225,000 vehicles); CARFAX estimate of 4.8 million unrepaired Takata recalls as of July 2026; Honda's report that over 99% of the original "Alpha" inflators have been replaced or accounted for — the years-long completion of replacements and the continuing risk in unrepaired vehicles.],
     [NHTSA Coordinated Remedy Program for the Takata recalls — the regulator's move to actively prioritize and manage replacement across nineteen automakers rather than leave pace to each manufacturer.],
   ),
   quote: [Takata engaged in a sustained pattern of misrepresenting inflator safety data to its automaker customers and to regulators.],
@@ -860,8 +872,7 @@
     capability gap was at the regulator's evidence pipeline as much as
     at the manufacturer's bench.
   ],
-  lens-approach: [
-    The load-bearing lesson is post-deployment surveillance. Field
+  lens-approach: [ The lesson is post-deployment surveillance. Field
     rupture reports arrived over years but were never aggregated and
     interpreted as a single class-level safety signal, so an obvious
     failure mode stayed hidden inside a process that kept receiving the
@@ -880,7 +891,7 @@
     [Birsch & Fielder, engineering-ethics casebooks],
   ),
   reflection-list: (
-    [Where in your domain does a regulator receive manufacturer test data without an independent verification pipeline? What is the load-bearing trust assumption?],
+    [Where in your domain does a regulator receive manufacturer test data without an independent verification pipeline? What is the decisive trust assumption?],
     [Design the verification regime that should have surrounded ammonium-nitrate inflator testing. Who funds it, who runs it, and what does it produce?],
     [Takata's propellant degraded slowly with heat and humidity, so a part safe at delivery became lethal years later. Identify a component in your domain whose qualification testing does not cover its full service life, and specify the aging test that would close the gap.],
   ),
@@ -914,7 +925,7 @@
   impact: "~3.5 million potentially unauthorized accounts identified; ~$3B in penalties; CEO resigned; the Federal Reserve capped the bank's assets",
   diagram: dgm.dgm-stat(
     "3.5M",
-    "unauthorized accounts",
+    "potentially unauthorized accounts",
     micro: "the incentive architecture made misconduct rational for the front line",
     caption: "Wells Fargo — the measurement system produced the behavior the institution then prosecuted",
   ),
@@ -956,7 +967,7 @@
       savings, and credit-card accounts without customer consent,
       forging signatures, moving funds between accounts to manufacture
       activity, and enrolling customers in online banking they had not
-      requested. The behavior was widespread and longstanding, and
+      requested. The behavior was widespread and long-standing, and
       visible to internal risk and compliance functions for years
       before the 2013 _Los Angeles Times_ reporting made it public;
       the institutional response was to discipline individual employees
@@ -971,8 +982,7 @@
       locating the cause in the design, not the people executing it.#cn()
       Investigators tied the misconduct directly to the bank's
       incentive-compensation structure, which had made such sales practices a
-      foreseeable result rather than an aberration. The CEO resigned, and the
-      Federal Reserve imposed an unprecedented cap on the bank's assets,
+      foreseeable result rather than an aberration. The CEO resigned, and the Federal Reserve capped the bank's assets,
       reaching past individual penalties to constrain the institution
       itself.#cn()
     ],
@@ -1019,8 +1029,8 @@
     [Office of the Comptroller of the Currency, Consent Order AA-EC-2016-66 (2016) — unsafe or unsound sales practices tied to the incentive-compensation structure (paraphrased).],
     [Independent Directors of Wells Fargo, _Sales Practices Investigation Report_ (2017) — how the sales-target architecture drove the conduct.],
     [Enforcement record: ~3.5 million accounts, ~\$3 billion in penalties, and the CEO's resignation.],
-    [Federal Reserve asset cap on Wells Fargo (imposed February 2018; lifted 3 June 2025) — the structural growth constraint and its termination after remediation.],
     [A. C. Edmondson, _The Fearless Organization_ (2018); incentive-design and corporate-governance literature.],
+    [Federal Reserve asset cap on Wells Fargo (imposed February 2018; lifted 3 June 2025) — the structural growth constraint and its termination after remediation.],
   ),
   quote: [Wells Fargo's sales practices were a foreseeable consequence of its incentive compensation structure.],
   quote-source: "Paraphrasing the 2016 regulatory and independent-directors findings on Wells Fargo",
@@ -1158,11 +1168,15 @@
       trusted the manufacturer's test conditions, and a fix that had to
       upgrade the measurement itself, not just punish the cheat, because
       punishing the cheat leaves the exploitable instrument in place for the
-      next one. Criminal accountability in Germany ran on for years: in
-      May 2025 a Braunschweig court convicted four former VW managers of
-      fraud (sentences up to four and a half years), while the separate
-      trial of former CEO Martin Winterkorn, opened in September 2024, was
-      suspended indefinitely in July 2025 on health grounds.
+      next one. Criminal accountability in Germany ran on for years: on
+      26 May 2025 the Braunschweig regional court convicted four former VW
+      managers of fraud — four and a half years in prison for the former
+      diesel engine development chief, two years and seven months for a
+      former engine-electronics manager, suspended sentences for the other
+      two — while the separate trial of former CEO Martin Winterkorn, opened
+      in September 2024, was provisionally terminated in July 2025: the court
+      cited a health impediment it described as temporary and reviewable, so
+      the charges stand undecided rather than dismissed.#cn()
     ],
   ),
   beats: (
@@ -1173,12 +1187,13 @@
     "VW paid more than thirty billion in penalties; the EU introduced real-world driving emissions testing",
   ),
   references: (
+    [Volkswagen internal documents released through litigation — authorization of the defeat device within the engineering hierarchy.],
     [U.S. EPA, Notice of Violation to Volkswagen (2015) — the defeat device and emissions exceedances.],
     [West Virginia University / ICCT real-world diesel-emissions study (2014) — the discovery comparing road to lab.],
     [U.S. Department of Justice Plea Agreement with Volkswagen AG (January 2017) — the institutional decision, USD 4.3 billion criminal-and-civil settlement, and convictions (quoted).],
-    [Volkswagen internal documents released through litigation — authorization of the defeat device within the engineering hierarchy.],
-    [EU Real Driving Emissions (RDE) testing regulation — the post-Dieselgate measurement reform.],
     [J. Ewing, _Faster, Higher, Farther: The Volkswagen Scandal_ (2017); cf. Takata (Case 147).],
+    [EU Real Driving Emissions (RDE) testing regulation — the post-Dieselgate measurement reform.],
+    [Associated Press reporting on the German criminal proceedings — the Braunschweig regional court's conviction of four former VW managers on 26 May 2025 and its provisional termination of the Winterkorn trial in July 2025 on health grounds.],
   ),
   quote: [The defeat device was the product of a long-standing institutional decision to evade emissions standards.],
   quote-source: "Paraphrasing the U.S. Department of Justice Plea Agreement with Volkswagen AG, 2017",
@@ -1396,7 +1411,7 @@
   modes-code: "DG",
   impact: "124 deaths attributed; ~2.6M vehicles recalled for the defective switch; $900M federal forfeiture (DOJ, 2015); the fix existed for eight years before the recall",
   diagram: dgm.dgm-timeline(
-    (("defect identified", "2002"), ("\"fix\" approved", "2006"), ("same part number", "2006"), ("recall begins", "2014"), ("Valukas report", "2014")),
+    (("switch approved below spec", "2002"), ("\"fix\" approved", "2006"), ("same part number", "2006"), ("recall begins", "2014"), ("Valukas report", "2014")),
     emphasis: 2,
     caption: "GM ignition switch — eight years between the fix and the recall",
   ),
@@ -1498,8 +1513,7 @@
     before the recall. The institutional path between the fix and the
     recall did not.
   ],
-  lens-approach: [
-    The load-bearing lesson is change control. Engineers changed the
+  lens-approach: [ The lesson is change control. Engineers changed the
     ignition switch but kept the same part number, defeating
     configuration traceability so the field failures could never be tied
     back to a design change and the records insisted the part had "never
@@ -1603,7 +1617,7 @@
     ],
     // -- The Capability Gap --
     [
-      The signals existed — testing had slipped, three of the programme's own guiding principles had been abandoned, and attestations were still incomplete on the morning of the decision. But they reached the board as assurances rather than as objections, and the institutional architecture gave no one the standing to convert a slipped test into a halt. The missing capability was not testing knowledge but a
+      The signals existed — testing had slipped, three of the program's own guiding principles had been abandoned, and attestations were still incomplete on the morning of the decision. But they reached the board as assurances rather than as objections, and the institutional architecture gave no one the standing to convert a slipped test into a halt. The missing capability was not testing knowledge but a
       governance structure in which a "not ready" could stop a scheduled
       go-live. Knowing a system is unready is worthless if the knowledge
       cannot reach the decision with its force intact and the authority to
@@ -1633,7 +1647,7 @@
     [Slaughter and May, _Independent Review of the TSB Migration_ (2019) — the single-weekend cutover and the testing failures.],
     [Slaughter and May (2019) and FCA materials — ~1.9 million customers locked out, £330M+ in costs, and the CEO's resignation.],
     [Slaughter and May (2019) — inadequate load testing and an unchallenged readiness certification.],
-    [Financial Conduct Authority, Final Notice on TSB Bank plc (20 December 2022) â the £29.75m penalty (with the PRA's £18.9m) for planning, testing, risk-management and outsourcing failings.],
+    [Financial Conduct Authority, Final Notice on TSB Bank plc (20 December 2022) — the £29.75m penalty (with the PRA's £18.9m) for planning, testing, risk-management and outsourcing failings.],
     [House of Commons Treasury Committee, report on the TSB IT migration (2018).],
     [Cf. Healthcare.gov (Case 180) and the migration-safety literature.],
   ),
@@ -1759,7 +1773,7 @@
     ],
   ),
   beats: (
-    "Equifax held identity data on most US adults; security flagged an Apache Struts patch to IT",
+    "Equifax held identity data on most U.S. adults; security flagged an Apache Struts patch to IT",
     "Unapplied patch let attackers exfiltrate 147M Americans' data over 2.5 months",
     "Senate subcommittee found systematically inadequate patching and no comprehensive IT asset inventory",
     "Routine work — patching, inventory, monitoring, response — each below standard and each named in a 2015 audit",

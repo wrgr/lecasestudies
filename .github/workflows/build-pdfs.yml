@@ -57,9 +57,25 @@ jobs:
         working-directory: casebook
         run: bash scripts/check-cases.sh
 
+      - name: Figure-palette guard
+        working-directory: casebook
+        run: python3 scripts/check-diagram-palette.py
+
       - name: Verify compression fidelity
         working-directory: casebook
         run: python3 ./scripts/check-compression.py --gate
+
+      # Positional citation contract (lib/components.typ:369): reference k must
+      # be the source for marker k. check-cases.sh enforces only markers <= refs
+      # and is blind to order, which is how a corpus-wide misalignment reached
+      # 51% of anchored markers while the build reported 191/0. This gate checks
+      # only the unambiguous subset — a report ID or a >=4-digit figure appearing
+      # in exactly one reference — so it can fail a build without false alarms.
+      # The broad, noisy search lives in scripts/check-cite-order.py and is for
+      # sweeps, not CI.
+      - name: Verify citation anchors
+        working-directory: casebook
+        run: python3 ./scripts/check-cite-anchors.py --set active
 
       - name: Upload full build output
         uses: actions/upload-artifact@v4
