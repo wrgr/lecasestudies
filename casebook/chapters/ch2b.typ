@@ -2308,8 +2308,8 @@
   references: (
     [MICrONS program literature (IARPA) — connectomics method and automated segmentation evidence base.],
     [APL BossDB documentation — petabyte-scale connectomics data infrastructure.],
-    [CIRCUIT program documentation (JHU Hub, 2017 – present) — institutional/program description; the training-outcome evidence is at this tier and the evidence-tier flag is binding.],
     [Cervantes, Floryanzia, Sharp, Gray-Roncal, & Johnson (2023), "Empowering Trailblazers toward Scalable, Systematized, Research-Based Workforce Development," _ASEE Annual Conference_, doi:10.18260/1-2--43271 — the paired peer-reviewed CIRCUIT case (Case 68).],
+    [CIRCUIT program documentation (JHU Hub, 2017 – present) — institutional/program description; the training-outcome evidence is at this tier and the evidence-tier flag is binding.],
     [Wachter, R. M., & Brynjolfsson, E. (2024), "Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?" _JAMA_ 331(1):65–69 — the productivity-paradox framing: general purpose technologies pay off only after the complementary organizational work is done.],
   ),
   quote: [The recovery mechanism for automation failure is a designed human capability, not an emergent workforce.],

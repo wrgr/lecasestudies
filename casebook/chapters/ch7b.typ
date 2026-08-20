@@ -1486,10 +1486,10 @@
     ),
   ),
   references: (
-    [Carroll, S. R., Garba, I., Figueroa-Rodríguez, O. L., et al. (2020), "The CARE Principles for Indigenous Data Governance," _Data Science Journal_ 19(1):43, doi:10.5334/dsj-2020-043.],
-    [Ngangk Yira Institute for Change (2025), "Recognising Indigenous data sovereignty and implementing Indigenous data governance at the Ngangk Yira Institute for Change," _The Lowitja Journal_, doi:10.1016/j.lowitj.2025.100030.],
     [Global Indigenous Data Alliance (GIDA), CARE Principles documentation and implementation guidance.],
+    [Carroll, S. R., Garba, I., Figueroa-Rodríguez, O. L., et al. (2020), "The CARE Principles for Indigenous Data Governance," _Data Science Journal_ 19(1):43, doi:10.5334/dsj-2020-043.],
     [Cross-reference: equity-thread cases in the v2 corpus for the comparative framing.],
+    [Ngangk Yira Institute for Change (2025), "Recognising Indigenous data sovereignty and implementing Indigenous data governance at the Ngangk Yira Institute for Change," _The Lowitja Journal_, doi:10.1016/j.lowitj.2025.100030.],
   ),
   quote: [The deployment legitimacy question is not 'did you consult.' It is 'is the governance regime the right one.'],
   quote-source: "Editors' synthesis of the CARE Principles and the Ngangk Yira implementation paper.",
@@ -1825,9 +1825,9 @@
   ),
   references: (
     [California Public Utilities Commission decision suspending Cruise permits (2023) — the omitted-facts finding (paraphrased).],
+    [NHTSA Office of Defects Investigation reports (2023–2024) — the federal investigation.],
     [California DMV order of suspension (2023) — the partial video disclosure.],
     [Quinn Emanuel report on Cruise incident response (2024) — the disclosure failures.],
-    [NHTSA Office of Defects Investigation reports (2023–2024) — the federal investigation.],
     [Stilgoe, J. (2021) — governance of autonomous vehicles.],
   ),
   quote: [Cruise's representation of the incident to regulators omitted material facts.],

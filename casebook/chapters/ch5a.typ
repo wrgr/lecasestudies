@@ -376,8 +376,8 @@
   ),
   references: (
     [S. Sasson, "We Had No Idea," Kodak corporate blog, _Kodak: Plugged In_ (2007) — first-hand account of the 1975 prototype, the demonstration, and the internal reception.],
-    [H. C. Lucas Jr. & J. M. Goh, "Disruptive technology: How Kodak missed the digital photography revolution," _Journal of Strategic Information Systems_ 18(1):46–55 (March 2009).],
     [M. Spector & D. Mattioli, "Kodak Teeters on the Brink," _The Wall Street Journal_ (5 January 2012); follow-up coverage of the patent-sale process in WSJ and Reuters (December 2012).],
+    [H. C. Lucas Jr. & J. M. Goh, "Disruptive technology: How Kodak missed the digital photography revolution," _Journal of Strategic Information Systems_ 18(1):46–55 (March 2009).],
     [Eastman Kodak Company, Voluntary Petition for Chapter 11 Reorganization, U.S. Bankruptcy Court, Southern District of New York, Case No. 12-10202 (19 January 2012).],
     [A. R. Sorkin & M. J. de la Merced, "Eastman Kodak Files for Bankruptcy," _The New York Times_ DealBook (19 January 2012).],
   ),

@@ -482,10 +482,10 @@
     ),
   ),
   references: (
-    [Idaho National Laboratory, Light Water Reactor Sustainability (LWRS) program annual reports (2010 – present) — primary research-and-pilot record.],
-    [Nuclear Regulatory Commission, Regulatory Guide 1.180, "Guidelines for Evaluating Electromagnetic and Radio-Frequency Interference in Safety-Related Instrumentation and Control Systems."],
-    [Nuclear Regulatory Commission, Branch Technical Position 7-19, "Guidance for Evaluation of Diversity and Defense-in-Depth in Digital Computer-Based Instrumentation and Control Systems."],
     [O'Hara, Higgins, Brown, Fink, Persensky, Lewis, Kramer, & Szabo (2008), "Human Factors Considerations with Respect to Emerging Technology in Nuclear Power Plants," NUREG/CR-6947 — foundational human-factors backdrop.],
+    [Nuclear Regulatory Commission, Branch Technical Position 7-19, "Guidance for Evaluation of Diversity and Defense-in-Depth in Digital Computer-Based Instrumentation and Control Systems."],
+    [Nuclear Regulatory Commission, Regulatory Guide 1.180, "Guidelines for Evaluating Electromagnetic and Radio-Frequency Interference in Safety-Related Instrumentation and Control Systems."],
+    [Idaho National Laboratory, Light Water Reactor Sustainability (LWRS) program annual reports (2010 – present) — primary research-and-pilot record.],
     [Electric Power Research Institute, control-room modernization technical reports — industry-side sustainment record.],
   ),
   quote: [The institutional form is what transfers: federal research program plus industry partnership plus regulator engagement, operating across decades to produce a technical record aging-fleet decisions can rest on.],
