@@ -153,7 +153,7 @@
   ),
   references: (
     [NTSB (1989), Aircraft Accident Report AAR-89/03, _Aloha Airlines Flight 243, Boeing 737-200, N73711_.],
-    [FAA, 14 CFR Part 26, "Continued Airworthiness and Safety Improvements for Transport Category Airplanes," Final Rule, 72 FR 63409 (November 8, 2007) — the rule that created Part 26.],
+    [FAA, "Enhanced Airworthiness Program for Airplane Systems/Fuel Tank Safety (EAPAS/FTS)," Final Rule, 72 FR 63409 (November 8, 2007), Docket FAA-2004-18379 — the rule that created 14 CFR Part 26, "Continued Airworthiness and Safety Improvements for Transport Category Airplanes."],
     [FAA, "Aging Airplane Program: Widespread Fatigue Damage," Final Rule, 75 FR 69746 (November 15, 2010, effective January 14, 2011) — the subpart C limit-of-validity provisions.],
     [Airworthiness Assurance Working Group (1999), _Recommendations for Regulatory Action to Prevent Widespread Fatigue Damage in the Commercial Airplane Fleet_, Final Report, March 11, 1999 (Rev. A, June 29, 1999) — the ARAC record behind the rule.],
     [Swift, T. (1993), "Widespread Fatigue Damage Monitoring — Issues and Concerns," _International Conference on Structural Airworthiness of New and Aging Aircraft_, Hamburg, June 16–18, 1993 — technical synthesis of the WFD inspection regime.],

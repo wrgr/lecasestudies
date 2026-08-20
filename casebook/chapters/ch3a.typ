@@ -1278,7 +1278,7 @@
     ],
   ),
   beats: (
-    "New 737-400 variant with redesigned cockpit; conversion was a one-day differences course with no EIS-equipped simulator available",
+    "New 737-400 variant with redesigned cockpit; conversion was a one-day differences course, with no 737-400 simulator anywhere in the UK",
     "Fan blade fractured left engine; crew shut down the right without assimilating the engine instrument display",
     "AAIB cited premature action contrary to training, unread engine instruments, and the silent cabin-to-flight-deck channel",
     "Variant treated as incremental change; manual notes never overwrote the prior reflex under emergency pressure",
@@ -1668,7 +1668,7 @@
   summary: [
     About thirty-seven seconds after takeoff from Taipei Songshan in February
     2015, the right engine of a TransAsia ATR 72 auto-feathered following
-    a sensor fault. Working from memory under acute time pressure, the
+    an intermittent fault in its auto-feather unit. Working from memory under acute time pressure, the
     crew shut down the left engine — the one still producing thrust —
     leaving the aircraft with no power and too little altitude to recover.
     It clipped a viaduct, struck a taxi, and crashed into the Keelung
