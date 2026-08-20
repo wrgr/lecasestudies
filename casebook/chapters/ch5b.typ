@@ -42,12 +42,14 @@
     small-tier complement to the big-tier LWRS program case the
     corpus also tracks: the program produces specific design-V\&V
     case studies, not only program-level claims. The decisive
-    hedge is not the sourcing — the paper is peer-reviewed, published
-    in the Human Factors and Ergonomics Society's annual-meeting
-    proceedings — but what it reports. It reports a process and no
-    outcome: it states the process was then being implemented at a U.S.
-    utility with four plants slated for modernization, with lessons
-    learned to be published later.
+    hedge is not the sourcing — a reviewed conference paper in the
+    Human Factors and Ergonomics Society's annual-meeting proceedings,
+    alongside the program's own technical reporting — but what it reports.
+    It reports a process, prospectively and in the future tense, and no
+    outcome: the process was, at publication, "currently being implemented
+    at a U.S. nuclear utility with four plants slated for control room
+    modernization," with details and lessons learned to be published in
+    later papers.
   ],
   sections: (
     [
@@ -83,9 +85,9 @@
     ],
     [
       What has to stay visible is what the paper does not contain.
-      The sourcing is sound — a peer-reviewed HFES proceedings paper,
+      The sourcing is sound — a reviewed HFES conference paper,
       alongside the program's own technical reporting — but it reports
-      a process rather than an outcome, conditional on the specific subsystems, plant, and operator population; whether
+      a planned process rather than an outcome, conditional on the specific subsystems, plant, and operator population; whether
       the finding generalizes to other subsystems in the same
       plant, to other plants in the fleet, or to other digital
       control products is the open question that the LWRS program
@@ -125,7 +127,7 @@
     ),
   ),
   references: (
-    [Ronald L. Boring (2014), "Human Factors Design, Verification, and Validation for Two Types of Control Room Upgrades at a Nuclear Power Plant," Proceedings of the Human Factors and Ergonomics Society Annual Meeting 58(1), pp. 2295–2299, doi:10.1177/1541931214581478 — the NUREG-0711 process for the paired plant-process-computer and turbine-control-system upgrade.],
+    [Ronald L. Boring (2014), "Human Factors Design, Verification, and Validation for Two Types of Control Room Upgrades at a Nuclear Power Plant," Proceedings of the Human Factors and Ergonomics Society Annual Meeting 58(1), pp. 2295–2299, doi:10.1177/1541931214581478 — the NUREG-0711 process for the paired plant-process-computer and turbine-control-system upgrade. Step 4 of the paper's implementation sequence is the source of the training claim verbatim: "A stand-alone training program will be developed in cooperation with the training organization. In addition, the scenarios will be reviewed by trainers and procedure writers to ensure that the operating procedures do not require modifications." The future tense is the paper's own.],
     [Idaho National Laboratory, Light Water Reactor Sustainability Program reports on control-room modernization — series available via OSTI.],
     [Nuclear Regulatory Commission (NUREG-0711), "Human Factors Engineering Program Review Model" — the regulatory framework the V&V deliverables are produced against.],
     [O'Hara et al. (2008), "Human Factors Considerations with Respect to Emerging Technology in Nuclear Power Plants," NUREG/CR-6947 — peer-adjacent framing.],
@@ -386,9 +388,11 @@
   ],
   sections: (
     [
-      The U.S. commercial nuclear fleet operates roughly 90 reactors
-      originally licensed in the 1970s and 1980s. The control
-      rooms of that era were built around analog instrumentation
+      The U.S. commercial nuclear fleet operates roughly 90 reactors,
+      most of them originally licensed in the 1970s and 1980s — the
+      handful of later units (Watts Bar 2, the Vogtle AP1000s) are the
+      exception that the fleet's sustainment problem is not about. The
+      control rooms of that era were built around analog instrumentation
       — strip-chart recorders, hardwired indicators, control-panel
       meters — designed for the operational envelope and the
       human-factors assumptions of the period. Aging analog

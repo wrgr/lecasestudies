@@ -1168,11 +1168,15 @@
       trusted the manufacturer's test conditions, and a fix that had to
       upgrade the measurement itself, not just punish the cheat, because
       punishing the cheat leaves the exploitable instrument in place for the
-      next one. Criminal accountability in Germany ran on for years: in
-      May 2025 a Braunschweig court convicted four former VW managers of
-      fraud (sentences up to four and a half years), while the separate
-      trial of former CEO Martin Winterkorn, opened in September 2024, was
-      suspended indefinitely in July 2025 on health grounds.
+      next one. Criminal accountability in Germany ran on for years: on
+      26 May 2025 the Braunschweig regional court convicted four former VW
+      managers of fraud — four and a half years in prison for the former
+      diesel engine development chief, two years and seven months for a
+      former engine-electronics manager, suspended sentences for the other
+      two — while the separate trial of former CEO Martin Winterkorn, opened
+      in September 2024, was provisionally terminated in July 2025: the court
+      cited a health impediment it described as temporary and reviewable, so
+      the charges stand undecided rather than dismissed.#cn()
     ],
   ),
   beats: (
@@ -1189,6 +1193,7 @@
     [Volkswagen internal documents released through litigation — authorization of the defeat device within the engineering hierarchy.],
     [EU Real Driving Emissions (RDE) testing regulation — the post-Dieselgate measurement reform.],
     [J. Ewing, _Faster, Higher, Farther: The Volkswagen Scandal_ (2017); cf. Takata (Case 147).],
+    [Associated Press reporting on the German criminal proceedings — the Braunschweig regional court's conviction of four former VW managers on 26 May 2025 and its provisional termination of the Winterkorn trial in July 2025 on health grounds.],
   ),
   quote: [The defeat device was the product of a long-standing institutional decision to evade emissions standards.],
   quote-source: "Paraphrasing the U.S. Department of Justice Plea Agreement with Volkswagen AG, 2017",
@@ -1406,7 +1411,7 @@
   modes-code: "DG",
   impact: "124 deaths attributed; ~2.6M vehicles recalled for the defective switch; $900M federal forfeiture (DOJ, 2015); the fix existed for eight years before the recall",
   diagram: dgm.dgm-timeline(
-    (("defect identified", "2002"), ("\"fix\" approved", "2006"), ("same part number", "2006"), ("recall begins", "2014"), ("Valukas report", "2014")),
+    (("switch approved below spec", "2002"), ("\"fix\" approved", "2006"), ("same part number", "2006"), ("recall begins", "2014"), ("Valukas report", "2014")),
     emphasis: 2,
     caption: "GM ignition switch — eight years between the fix and the recall",
   ),

@@ -282,8 +282,9 @@
     [
       The disaster reshaped industrial safety worldwide and, in the United
       States, catalyzed the creation of the Chemical Safety Board — an
-      INPO-equivalent for industrial chemistry — and the process-safety
-      regime that followed, an oversight layer built to own exactly the whole
+      INPO-equivalent for industrial chemistry, authorized by the Clean Air
+      Act Amendments of 1990 and not operating until January 1998, fourteen
+      years after the release — and the process-safety regime that followed, an oversight layer built to own exactly the whole
       that no one had owned at Bhopal.#cn() The book's recurring arc runs
       through Bhopal in its starkest form: a catastrophe forces into being the
       institution the industry should have built before it, at a price no
@@ -301,9 +302,9 @@
     [Union Carbide and government investigation reports (1985) — MIC storage, the disabled safety systems, and plant understaffing.],
     [Accounts of the 2–3 Dec. 1984 release — the contested toll (thousands of immediate deaths; 15,000–20,000 total estimates; ~500,000 exposed). _(Figures vary widely across sources; see AUDIT.)_],
     [New York Times investigation (1985) — "operating errors, design flaws, maintenance failures, training deficiencies and economy measures that endangered safety" (quoted).],
-    [N. Meshkati, "Human Factors in Large-Scale Technological Systems' Accidents," _Industrial Crisis Quarterly_ (1991); U.S. CSB training-cause pattern.],
+    [N. Meshkati, "Human Factors in Large-Scale Technological Systems' Accidents," _Industrial Crisis Quarterly_ (1991) — Bhopal alongside Three Mile Island on neglect of the human element. G. Joseph, M. Kaszniak & L. Long, "Lessons after Bhopal: CSB a catalyst for change," _Journal of Loss Prevention in the Process Industries_ 18(4–6):537–548 (2005) — ineffective employee training an underlying cause in nine of the CSB's first twenty-three completed investigations.],
     [P. Shrivastava, _Bhopal: Anatomy of a Crisis_ (1992); C. Perrow, _Normal Accidents_ (1984).],
-    [The creation of the U.S. Chemical Safety Board and the post-Bhopal process-safety regime.],
+    [The U.S. Chemical Safety and Hazard Investigation Board — authorized by the Clean Air Act Amendments of 1990, operational from January 1998 — and the post-Bhopal process-safety regime (EPCRA 1986; OSHA Process Safety Management, 1992).],
   ),
   quote: [Operating errors, design flaws, maintenance failures, training deficiencies and economy measures that endangered safety.],
   quote-source: "New York Times investigation, 1985",
@@ -417,7 +418,7 @@
       The boric-acid leakage had been observable for years, and inspections
       had been deferred. FirstEnergy had requested — and the NRC had granted
       — a deferral of the inspection Bulletin 2001-01 called for by 31 December 2001. The utility asked to inspect in April, after a 31 March 2002 refuelling shutdown; NRC drafted an order to shut the plant in December, then shelved it and settled on mid-February.#cn() The NRC's
-      Office of Inspector General later found the decision had been driven in large part by a desire to lessen the financial impact on the utility, and that the agency had set itself an unreasonably high bar — absolute proof of a safety problem — before it would order a plant shut down.#cn() The deferral was not a covert lapse but a
+      Office of Inspector General later found the decision had been driven in large part by a desire to lessen the financial impact on the utility — a finding the NRC disputed, and which GAO, reviewing the agency's records in 2004, could neither support nor refute because the key meetings went undocumented — and that the agency had set itself an unreasonably high bar — absolute proof of a safety problem — before it would order a plant shut down.#cn() The deferral was not a covert lapse but a
       documented decision both parties signed off on, which is the unsettling
       part: the erosion happened through the regulator's normal process, in
       the open, agreed to be safe to wait.
@@ -851,7 +852,8 @@
   summary: [
     On 20 April 2010 the Macondo well blew out beneath the Deepwater Horizon
     rig in the Gulf of Mexico, killing 11 workers and releasing roughly 4.9
-    million barrels of oil — the largest marine spill in U.S. history, and
+    million barrels of oil on the federal estimate — the trial court later
+    found 4.0 million — the largest marine spill in U.S. history, and
     more than \$65 billion in eventual costs to BP. The crew had misread the
     negative-pressure test, the primary check of well integrity, and kept
     working a well that was no longer sealed. The National Commission traced the blowout
@@ -872,7 +874,7 @@
     [
       The Deepwater Horizon was drilling BP's Macondo exploratory well in the
       Gulf of Mexico when, on 20 April 2010, the well blew out. Eleven
-      workers were killed, the rig burned and sank, and roughly 4.9 million barrels of oil escaped the well over 87 days, about 830,000 of them captured at the wellhead — the largest marine
+      workers were killed, the rig burned and sank, and roughly 4.9 million barrels of oil escaped the well over 87 days on the federal Flow Rate Technical Group's estimate — the trial court, weighing the same evidence in 2015, put the release at 4.0 million — of which about 810,000 barrels were captured at the wellhead — the largest marine
       oil spill in U.S. history, eventually costing BP more than \$65
       billion.#cn() The well sat at the end of a long chain of contractors and
       schedules, each operating to its own tolerance, so that the 87 days of
@@ -967,9 +969,9 @@
     [National Commission on the BP Deepwater Horizon Oil Spill, _Deep Water: The Gulf Oil Disaster and the Future of Offshore Drilling_ (Report to the President, 2011) — systematic management failures as root cause; the misread negative-pressure test.],
     [National Commission (2011) — the well-control sequence and mud-displacement decision.],
     [National Commission (2011) — "systematic failures in risk management… place in doubt the safety culture of the entire industry" (quoted); U.S. Chemical Safety Board, _Drilling Rig Explosion and Fire at the Macondo Well_ (final volumes, 2014–2016) — process-safety vs. personal-safety distinction and the improving personal-injury rates BP and Transocean reported as misleading indicators.],
-    [BOEMRE / U.S. Coast Guard Joint Investigation (2011) — blowout-preventer maintenance backlog and chain-of-command findings; National Academies, _Macondo Well Deepwater Horizon Blowout: Lessons for Improving Offshore Drilling Safety_ (2012) — training gaps and the interlinked cascade of failed defenses.],
+    [BOEMRE / U.S. Coast Guard Joint Investigation (2011) — blowout-preventer maintenance backlog and chain-of-command findings; National Academies, _Macondo Well Deepwater Horizon Blowout: Lessons for Improving Offshore Drilling Safety_ (2012) — training gaps and the interlinked cascade of failed defenses; BP, _Deepwater Horizon Accident Investigation Report_ (the Bly report, 8 September 2010) — BP's own summation, "a complex and interlinked series of mechanical failures, human judgments, engineering design, operational implementation and team interfaces" (quoted).],
     [Deepwater Horizon Study Group (UC Berkeley, 2011) final report; N. Leveson, systems-theoretic analysis of Deepwater Horizon — the multi-layer drift and the limits of single-cause framings.],
-    [Spill-volume estimates (~4.9 million barrels) and BP cost disclosures (>\$65 billion); the reorganization of the Minerals Management Service into BSEE/BOEM (Secretarial Order 3299, 2010); A. Lustgarten, _Run to Failure: BP and the Making of the Deepwater Horizon Disaster_ (W.W. Norton, 2012) — long-arc account of accumulated procedural debt.],
+    [Spill-volume estimates — the Flow Rate Technical Group's ~4.9 million barrels against the 4.0 million barrels found by the district court in _In re Oil Spill by the Oil Rig "Deepwater Horizon"_ (E.D. La., January 2015), less ~810,000 barrels collected — and BP cost disclosures (>\$65 billion); the reorganization of the Minerals Management Service into BSEE/BOEM (Secretarial Order 3299, 2010); A. Lustgarten, _Run to Failure: BP and the Making of the Deepwater Horizon Disaster_ (W.W. Norton, 2012) — long-arc account of accumulated procedural debt.],
   ),
   quote: [The immediate causes of the Macondo well blowout can be traced to a series of identifiable mistakes … that reveal such systematic failures in risk management that they place in doubt the safety culture of the entire industry.],
   quote-source: "National Commission, Deep Water (Report to the President), 2011",
@@ -1179,7 +1181,7 @@
   impact: "85 killed in Butte County, California; deadliest U.S. wildfire in a century; PG&E pleaded guilty to 84 counts of involuntary manslaughter",
   diagram: dgm.dgm-stat(
     "85",
-    "killed in Paradise · single transmission hook",
+    "killed in the Camp Fire · single transmission hook",
     micro: "infrastructure designed for one climate, operating in another",
     caption: "Camp Fire — capability mismatch under changed conditions",
   ),
@@ -1218,7 +1220,7 @@
     // -- The Investigation --
     [
       CalFire's investigation and the Butte County District Attorney's report
-      found that PG&E had known for years about the deteriorating condition of its transmission infrastructure in high-fire-risk areas, and had cut the time and cost budgeted for each inspection, so the thoroughness of the checks that would have found the wear fell even as their nominal frequency held — so the hazard was not unknown but a recognized risk left unlooked-at.#cn()
+      found that PG&E had known for years about the deteriorating condition of its transmission infrastructure in high-fire-risk areas, and had run the line under a maintenance strategy its own asset-management documents named "Run to Failure" — the District Attorney found that PG&E personnel tried to distance the company from the phrase and that "the evidence clearly establishes quite the opposite." Between the 2005 and 2018 procedure manuals the _frequency_ of inspections and patrols did not change; what PG&E cut was the unit cost — the time allotted to each structure — and with it, the District Attorney found, the thoroughness of the inspection. Nobody in PG&E was inspecting the C hooks at all, so the hazard was not unknown but a recognized risk left unlooked-at.#cn()
       The gap was simultaneously at the utility's asset-maintenance decisions
       and at the regulatory architecture that had allowed the deferrals to
       continue, neither side holding a line that would have forced the work.#cn()
@@ -1514,9 +1516,12 @@
   courses: ("LEN 1", "LEN 5"),
   scale: "big",
   evidence-source: "investigation",
-  induced-anchor: "3.1",
-  lens-anchor: "D3/PT4",
-  leo-anchor: "LEO-3, LEO-1",
+  // Anchors reconciled to the case's own lens-approach and to competencies.md,
+  // which lists 166 under 6.1 (industry-level institution building after
+  // catastrophe) and not under 3.1; matches the INPO pairing (Case 175).
+  induced-anchor: "6.1",
+  lens-anchor: "D5/PT4",
+  leo-anchor: "LEO-5, LEO-1",
 )
 
 // ---- Case 167 — hurricane-katrina-fema-response ----
