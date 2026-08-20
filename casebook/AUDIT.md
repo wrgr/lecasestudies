@@ -1106,3 +1106,67 @@ parsed.
 
 `check-cases.sh` reports 191 converted / 0 failures; `--gate` 0 new; `--phrases` 7 triaged;
 `check-diagram-palette.py` clean at 50 diagrams.
+
+### Addendum (August 2026): the fact-and-source confrontation — 143 cases, 10 batches
+
+The 143 complete-edition-only cases were re-confronted claim by claim. These cases had already been
+through the July critical-accuracy pass; **the second pass corrected 134 of them**, which is the
+finding that matters most about method: a completed pass is not evidence a case is clean.
+
+**The brief widened mid-sweep, on editor direction.** Batches 1–2 ran as *source* confrontation —
+does the document the `#cn()` marker points at carry this claim. That misses a whole class. A claim
+can be sourced correctly and still be false, and it can be true and cited to nothing. From batch 3
+the pass ran both checks, and the fact half immediately produced the largest single defect cluster:
+**stale cross-references**, where a case number still resolved to a real but unrelated case. Nothing
+sources a cross-reference, so only resolving each one against its target's title finds them. Case 40
+cited Crew Resource Management for interprofessional education; Case 43 cited Aadhaar for PEPFAR;
+Case 25 cited Boeing Starliner as a lending-fairness pair.
+
+**Six fabricated or unlocatable sources.** This is the class with no automated defence at all.
+Case 203 carried a fabricated co-author and a fabricated source (found in July). Case 193 cited
+"Cohen & Goldsmith (1999)" — no such work is locatable. Case 130 cited a Cummings paper that does
+not exist, apparently conflating an MIT course number. Cases 127 and 134 carried pseudo-quotes,
+labelled as paraphrases, traceable to nothing. Case 36's pull quote was credited to the CASP14 press
+release, where it does not appear, **and silently truncated mid-sentence with no ellipsis**.
+
+**Attribution to the wrong body, or at the wrong scope**, ran through the whole sweep. Case 37 read
+the MASAI trial as the validation the Haibe-Kains critique demanded of DeepMind — MASAI ran on a
+different vendor's product, and the DeepMind system has never been randomised. Case 36 said two
+researchers shared the Nobel for AlphaFold; they shared one half. Case 192 turned a regulator's
+"did not produce evidence of discrimination" into "did not violate the law". Case 143 credited an
+SEC order with a finding not in it. Case 105 gave one warning where the Board found three, and
+omitted its four latent causes entirely.
+
+**Case 175 inverted a causal order in the argument the nuclear thread rests on.** It said INPO was
+founded "in the autumn of 1979, before the Kemeny Commission had reported". Kemeny reported 30
+October 1979; INPO followed in December, in response to its recommendations. The case's own
+lens-approach already said "eight months after TMI", which is December — the correction restored its
+internal consistency. The introduction carried the same error and was corrected with it.
+
+**The full taxonomy — twelve shapes, with the cases exhibiting each — is in the header of
+`source-confrontation-log.md`.** That taxonomy is the durable output. It is what to look for when
+the corpus next changes, and several shapes (a compression field asserting against its own body; a
+case stopping one experiment short of its own source; a clock read off the wrong zero) were not
+being looked for at all before this sweep.
+
+**Nine cases needed no correction** — 88, 107, 109, 115, 135, 138, 153, 162 and, on facts, 171. Six
+more needed only source-alignment work. That the pass returns clean results at all is what
+distinguishes it from a process that finds something wherever it looks.
+
+**Open, and not closed by this sweep: marker-to-reference alignment.** `lib/components.typ:369`
+states the contract — reference text is supplied to `case-references()` **in the same order** as the
+`#cn()` markers. `scripts/check-cases.sh` enforces only `markers ≤ refs`; it cannot see order. Batch
+9 checked alignment systematically across its fifteen cases and found **eleven misaligned** — lists
+ordered by importance rather than by marker sequence, so a reader following superscript 3 arrives at
+a source that cannot carry the claim. Case 171's marker 1 carried a blackout figure and pointed at
+FEMA's after-action report; Case 186's pricing paragraph pointed at Dwork's *Fairness Through
+Awareness*. Those eleven were realigned. **The other 128 cases were not systematically checked on
+this dimension**, and the batch-9 rate suggests most of them are misaligned. This is a discrete,
+bounded pass — and unlike the fact check, it could be made checkable: a script comparing each
+marker's surrounding claim against its positional reference would at least surface candidates.
+
+**Production consequence.** Complete edition 884 → **908 pp** and the Validation & Audit tracker
+97 → **102 pp**, from references added where real claims had none. The printed main volume is
+unchanged at 280 pp (spine 17.39 mm) — every case in this sweep is complete-edition-only.
+
+`check-cases.sh` 191/0; compression gate 0 new; palette clean at 50 diagrams.
