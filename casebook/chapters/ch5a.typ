@@ -83,8 +83,11 @@
     eighth. The new code reused a flag that, on the eighth server's old
     software, reactivated long-dead "Power Peg" code never removed from
     the repository. At the opening bell it fired millions of unintended
-    orders; in about 45 minutes Knight lost roughly \$440 million — more than
-    the firm was worth — and was effectively acquired within months. The SEC
+    orders; in about 45 minutes Knight lost roughly \$440 million — the SEC
+    order puts the loss on the positions at over \$460 million — and the firm,
+    left with what the order calls "significant net capital problems," survived
+    only on a \$400 million rescue financing and was effectively acquired
+    within months. The SEC
     found Knight had no procedure to verify the deployment across all servers
     and no controls to halt the runaway orders. The capability designed out
     was deployment verification; the dead code was technical debt that
@@ -110,9 +113,11 @@
       on that eighth server, had once activated the long-dormant "Power Peg" routing function — discontinued in 2003 but left present and callable. At
       the open the dead code woke and began firing millions of unintended
       orders into the market. In about forty-five minutes Knight amassed a
-      vast unwanted position — long about \$3.5 billion in 80 stocks and short about \$3.15 billion in 74 — and realized a pre-tax loss of about \$440 million, more than the firm itself was worth. It
-      survived only on emergency capital and was effectively acquired within
-      months.#cn()
+      vast unwanted position — long about \$3.5 billion in 80 stocks and short about \$3.15 billion in 74 — and realized a pre-tax loss of about \$440 million. Its shares
+      fell from \$10.33 to \$2.58 in two sessions; it survived only on a
+      \$400 million rescue financing convertible at \$1.50 a share, which left
+      the existing shareholders a minority, and it was effectively acquired
+      within months.#cn()
     ],
     // -- The Investigation --
     [
@@ -149,12 +154,15 @@
       disciplined removal of dead code from the repository, pre-trade risk
       limits, and kill switches that can stop a runaway process in seconds.
       Regulators sharpened their attention to automated market-access
-      controls in response. The SEC's 2014 Regulation Systems Compliance and
-      Integrity (Regulation SCI) extended formal system-development,
-      testing, change-management, and incident-reporting obligations to
-      registered exchanges, clearing agencies, and large alternative trading
-      systems — the institutional response that pulled the deployment
-      discipline Knight had lacked into the regulatory perimeter. The lesson
+      controls in response. Regulation Systems Compliance and Integrity
+      (Regulation SCI), adopted 19 November 2014, extended formal
+      system-development, testing, change-management, and incident-reporting
+      obligations to registered exchanges, clearing agencies, FINRA, plan
+      processors, and the larger alternative trading systems — the
+      institutional response that wrote the deployment discipline Knight had
+      lacked into a rule. It did not, however, reach Knight's own class: a
+      broker-dealer market maker is not an SCI entity, and remains governed on
+      this point by the Market Access Rule Knight was charged under. The lesson
       rhymes with the orbiter's across a forty-year, civilian-to-financial
       gap: a small, unowned boundary inside a large automated system is
       precisely where the institution is most exposed, and least watching —
@@ -166,14 +174,14 @@
   beats: (
     "Major market maker prepared routine update for the NYSE Retail Liquidity Program launch.",
     "Eighth server missed the update; a reused flag woke dormant Power Peg code.",
-    "SEC found no deployment verification, no consistency check, and no controls to halt orders.",
+    "SEC found no second-technician deployment review, no written deployment or unused-code procedures, and no controls to halt orders.",
     "Designed-out capability was deployment verification; dead code was a standing option on failure.",
     "Case became canonical for deployment as engineering deliverable and sharpened market-access controls.",
   ),
   references: (
     [U.S. Securities and Exchange Commission, _Order Instituting Administrative and Cease-and-Desist Proceedings_, In re Knight Capital Americas LLC (2013) — the firm, the Retail Liquidity Program launch, and the deployment.],
-    [SEC Order (2013) and Knight Capital 8-K filing (2012) — the missed eighth server, the reactivation of the dormant "Power Peg" code, and the ~45-minute event; the SEC puts the loss on the positions at over \$460 million, Knight's own filing at a realized pre-tax loss of ~\$440 million.],
-    [SEC Order (2013) — the absence of a second-technician deployment verification, the lack of an automated code-consistency check, inadequate order controls, and the \$12 million penalty (quoted).],
+    [SEC Order (2013) and Knight Capital Group 8-K filings of 2 and 6 August 2012 — the missed eighth server, the reactivation of the dormant "Power Peg" code, the ~45-minute event, and the \$400 million rescue financing (preferred convertible at \$1.50 a share); the SEC puts the loss on the positions at over \$460 million, Knight's own filing at a realized pre-tax loss of ~\$440 million.],
+    [SEC Order (2013), Rel. 34-70694, 16 October 2013 — the absence of a second-technician deployment review, the missing written code-development, deployment and unused-code procedures (¶26), the capital thresholds unlinked to automated controls, and the \$12 million penalty (quoted).],
     [B. Beyer, C. Jones, J. Petoff & N. R. Murphy (eds.), _Site Reliability Engineering_ (O'Reilly, 2016) — deployment verification, dead-code removal, and automated safeguards as engineering deliverables.],
     [SEC Market Access Rule (Rule 15c3-5) and subsequent automated-controls guidance — the regulatory response on pre-trade risk and market-access controls.],
     [D. Seven, "Knightmare: A DevOps Cautionary Tale" — a widely cited engineering post-mortem on the deployment process, the orphaned eighth server, and the reused feature flag.],
@@ -188,8 +196,10 @@
     proximate trigger; the absent procedure was the cause.
   ],
   lens-approach: [
-    Knight Capital is the canonical change-control-and-disclosure
-    governance case (induced 5.4; LENS D1/PT3). LENS uses it in
+    Knight Capital is the canonical inherited-dead-code case
+    (induced 7.1, re-verifying inherited designs in new envelopes, with
+    change control and disclosure — 5.4 — as the post-incident Regulation SCI
+    lens; LENS D1/PT3). LENS uses it in
     LEN 5 to teach deployment-as-capability — students design the
     deployment deliverable that would have caught the eighth
     server — and in LEN 9 for the technical-debt argument: every
@@ -654,7 +664,7 @@
     // -- The Investigation --
     [
       The U.S.-Canada Power System Outage Task Force named "inadequate situational awareness at FirstEnergy" as a cause — "FE did not recognize or understand the deteriorating condition of its system" — along with FE's failure to manage tree growth and the reliability organizations' failure to provide effective real-time diagnostic support.#cn() The reforms produced FERC
-      Order 693, which approved 83 NERC standards as mandatory and enforceable under the authority Congress created in the Energy Policy Act of 2005.#cn() Making
+      Order 693, issued 16 March 2007, which approved 83 of the 107 reliability standards NERC had proposed as mandatory and enforceable under the authority Congress created in section 215 of the Energy Policy Act of 2005.#cn() Making
       the standards mandatory addressed the deeper finding that a voluntary
       regime had let vegetation management and operator awareness drift: when
       compliance is optional, the practices that prevent a cascade are exactly
@@ -697,7 +707,7 @@
     [U.S.-Canada Power System Outage Task Force, _Final Report on the August 14, 2003 Blackout in the United States and Canada_ (2004) — the tree contact, the silent alarm, and the cascade.],
     [Task Force (2004) — 50 million people affected across eight states and Ontario; the minute-by-minute sequence.],
     [Task Force (2004), Causes Groups 1–4 — "inadequate situational awareness at FirstEnergy," FE's failure to manage tree growth, and the reliability organizations' failure to provide effective real-time diagnostic support (quoted).],
-    [FERC Order No. 693, _Mandatory Reliability Standards for the Bulk-Power System_ (2007) — enforceable standards.],
+    [FERC Order No. 693, _Mandatory Reliability Standards for the Bulk-Power System_, 118 FERC ¶ 61,218 (16 March 2007) — 83 of 107 proposed standards approved as mandatory and enforceable, effective 18 June 2007.],
     [North American Electric Reliability Council reports (2004) and the creation of the Electric Reliability Organization.],
     [M. R. Endsley (1995), situation-awareness theory — the human-factors frame for silent-automation failure.],
   ),
@@ -751,7 +761,7 @@
   number: 147,
   slug: "takata-airbag-inflators",
   title: "Takata Airbag Inflators",
-  year: "2008 – 2023",
+  year: "2008 – 2026",
   domains-list: ("industrial",),
   modes-code: "DG",
   impact: "28 U.S. deaths confirmed by NHTSA and at least 400 U.S. injuries alleged from inflator ruptures; largest automotive recall in history",
@@ -790,8 +800,9 @@
       built to contain. A firing inflator could then rupture its own metal
       housing and spray shrapnel into the cabin — turning the device meant to
       save a life into a fragmentation hazard aimed at the driver. NHTSA has confirmed 28 deaths in the United States, and at least 400 injuries are alleged. The recall
-      grew to more than a hundred million inflators across some nineteen
-      automakers — the largest in automotive history — and Takata went
+      grew to roughly 67 million inflators in the United States across some
+      nineteen automakers, and more than 100 million worldwide — the largest
+      in automotive history — and Takata went
       bankrupt; the toll keeps rising as unrepaired vehicles stay on the road
       and their inflators keep aging.#cn()
     ],
@@ -824,9 +835,10 @@
       the company that built the inflators ceased to exist — concrete proof
       that a designed-out capability can outlive the firm that removed it and
       become someone else's burden. A decade on, the burden persists: the
-      oldest, most dangerous "Alpha" inflators have been escalated to urgent "Do Not Drive" warnings, and in February 2026 FCA extended one to all 225,000 of its unrepaired vehicles; roughly 4.8 million Takata recalls remained
-      unrepaired as of mid-2026 even as completion of the Alpha inflators
-      passed 99 percent. The episode pushed regulators toward more
+      oldest, most dangerous "Alpha" inflators have been escalated to urgent "Do Not Drive" warnings, and in February 2026 FCA extended one to all 225,000 of its unrepaired vehicles. The unrepaired remainder in mid-2026 is put at about
+      4.8 million by CARFAX and at around 6 million by NHTSA's own completion
+      reporting — the estimates differ, the order of magnitude does not — even
+      as completion of the original "Alpha" inflators passed 99 percent. The episode pushed regulators toward more
       aggressive, coordinated recall management that does not leave pace to
       each manufacturer. Its central lesson is the pairing: Takata is the
       modern Pinto in its product failure, and more in its system failure —
@@ -844,10 +856,10 @@
   ),
   references: (
     [U.S. National Highway Traffic Safety Administration, Takata air-bag inflator recall coordination materials — the ammonium-nitrate-without-desiccant design and the propellant-degradation rupture mechanism.],
-    [NHTSA recall record and investigative reporting (Reuters, _New York Times_) — 100M+ inflators across ~19 automakers; the largest automotive recall in history; deaths and injuries from ruptures.],
+    [NHTSA recall record and investigative reporting (Reuters, _New York Times_) — roughly 67 million inflators recalled in the United States across ~19 automakers (over 100 million worldwide); the largest automotive recall in history; 28 U.S. deaths confirmed by NHTSA and at least 400 U.S. injuries alleged.],
     [U.S. Department of Justice, settlement and guilty plea with Takata Corporation (2017) — wire fraud, ~\$1B in fine and restitution, and Takata's subsequent bankruptcy.],
     [U.S. DOJ (2017) and Takata internal documents released in litigation — the sustained misrepresentation of inflator test data to automakers and regulators.],
-    [NHTSA Takata recall status reporting — the years-long completion of replacements and the continuing risk in unrepaired vehicles.],
+    [NHTSA consumer alert on FCA's "Do Not Drive" warning for all vehicles with unrepaired Takata recalls (February 2026, ~225,000 vehicles); CARFAX estimate of 4.8 million unrepaired Takata recalls as of July 2026; Honda's report that over 99% of the original "Alpha" inflators have been replaced or accounted for — the years-long completion of replacements and the continuing risk in unrepaired vehicles.],
     [NHTSA Coordinated Remedy Program for the Takata recalls — the regulator's move to actively prioritize and manage replacement across nineteen automakers rather than leave pace to each manufacturer.],
   ),
   quote: [Takata engaged in a sustained pattern of misrepresenting inflator safety data to its automaker customers and to regulators.],

@@ -2353,7 +2353,7 @@
   year: "1959 – present",
   domains-list: ("corporate L&D", "training evaluation", "workforce development"),
   modes-code: "KN",
-  impact: "Across a U.S. corporate-training market sized in the >\$125B/year range, the dominant evaluation framework structurally collapses: most teams stop at Levels 1–2 (reaction + learning) and never measure Level 3 (behavior change) or Level 4 (business results) — measuring the variable that flatters the program",
+  impact: "Across a U.S. corporate-training market sized at more than \$125B/year in the ASTD figure Blume et al. cite (Paradise 2007), the dominant evaluation framework thins as it climbs and rarely reaches the top: in ATD's 2016 survey of 199 talent-development professionals, 83 percent evaluated Level 2 (learning), 60 percent reported some Level 3 (behavior), 35 percent evaluated Level 4 (business results) to any extent, and 15 percent measured return on investment — the levels that flatter the program are the ones that get measured",
   kind: "frontier",
   scale: "big",
   evidence-source: "practitioner",
@@ -2367,7 +2367,9 @@
     evaluation framework for sixty years, increasingly described as a
     "chain of evidence" from satisfaction through workplace behavior
     change to business outcomes. The documented systemic pattern is
-    that most organizations stop at Levels 1 and 2. Level 3 (behavior
+    that the chain thins as it climbs: reported evaluation falls from
+    near-universal at Levels 1 and 2 to 60 percent at Level 3, 35
+    percent at Level 4 and 15 percent for ROI. Level 3 (behavior
     change on the job) and Level 4 (business results) require data
     that the training organization typically cannot access:
     longitudinal performance traces, business-unit outcome metrics,
@@ -2379,7 +2381,8 @@
     the v2 research backbone: the evidence most L&D decisions ride on is
     structurally sub-decision-grade. The evidence base is
     practice-synthesis: Devlin Peck, D2L, Valamis, and related
-    evaluation-practice guides documenting the stop-at-L2 pattern,
+    evaluation-practice guides documenting where evaluation stops,
+    ATD's 2016 association survey for the level-by-level figures,
     plus the Blume meta-analysis (Case 65) for the transfer half of
     the chain. The evidence-tier flag is rendered under the title;
     future validation will continue as the corporate-L&D evaluation
@@ -2398,32 +2401,45 @@
     ],
     [
       The documented systemic pattern in corporate L&D evaluation
-      practice is that most organizations stop at Levels 1 and 2.
-      Practice-literature synthesis across major evaluation-guidance
-      sources (Devlin Peck, D2L, Valamis, and corporate L&D benchmarking studies) reports that Levels 3 and 4 are attempted by a minority of programs. ATD's 2016 survey of 199 organizations found 35 percent evaluating business results at all, and 15 percent measuring return on investment. The structural reason is that Level 3 (behavior change)
+      practice is that the chain thins as it climbs and the top of it
+      is rarely reached. Practice-literature synthesis across major
+      evaluation-guidance sources (Devlin Peck, D2L, Valamis, and
+      corporate L&D benchmarking studies) describes programs stopping
+      at Levels 1 and 2; the best single survey figure puts the sharp
+      break a level higher. ATD's 2016 survey of 199
+      talent-development professionals found roughly 90 percent
+      evaluating Level 1 and 83 percent Level 2, 60 percent reporting
+      some Level 3 evaluation, 35 percent evaluating business results
+      to any extent, and 15 percent measuring return on investment —
+      and those upper figures count any program evaluated at that
+      level to any extent, not routine completion of the chain. The
+      structural reason is that Level 3 (behavior change)
       requires longitudinal observation that the training
       organization cannot conduct, and Level 4 (results) requires
       business outcome data that often sits outside L&D's reach.#cn()
     ],
     [
       The consequence is a field that spends heavily on training —
-      U.S. organizations reported >\$125B/year on workplace training,
-      per the ASTD figure cited in Blume et al. (Case 65) — while
+      U.S. organizations reported more than \$125B/year on workplace
+      training in the ASTD figure Blume et al. (Case 65) cite, drawn
+      from ASTD's 2007 State of the Industry review — while
       measuring mostly the variable that flatters the program.
       Satisfaction scores do not predict on-job performance;
       knowledge retention measured immediately after training does
       not guarantee workplace application. The chain of evidence is
-      cited as the framework; in practice the chain is broken at
-      the link between Level 2 and Level 3, and the decisions made
+      cited as the framework; in practice it thins above Level 2 and
+      breaks decisively at the link into Level 4, and the decisions made
       on the available data are not decisions about whether
       training is producing capability change.#cn()
     ],
     [
       The evidence-tier flag rendered under the case title is
       decisive. The case is documented through
-      evaluation-practice guides synthesizing the stop-at-L2
-      pattern across many organizations rather than through a
-      single peer-reviewed study of the phenomenon. The pattern is
+      evaluation-practice guides synthesizing where evaluation stops
+      across many organizations rather than through a single
+      peer-reviewed study of the phenomenon; the strongest single
+      datum in it is an association survey (ATD 2016), not
+      peer-reviewed research. The pattern is
       consistent across the sources and is the practitioner
       consensus, but the magnitudes vary by sector and the
       sectoral breakdown is in flux as the field consolidates its
@@ -2452,14 +2468,14 @@
   ),
   beats: (
     "Kirkpatrick four levels (Reaction / Learning / Behavior / Results) — dominant framework for sixty years; framed as 'chain of evidence'",
-    "Practice-literature synthesis: most organizations stop at Levels 1–2; Levels 3 and 4 require data the training org typically can't access",
-    "U.S. corporate-training market sized >\$125B/year per ASTD; measurement concentrated on variable that flatters the program",
+    "ATD 2016 (n=199 talent-development professionals): ~90% Level 1, 83% Level 2, 60% Level 3, 35% Level 4, 15% ROI — evaluation falls away as the chain climbs",
+    "U.S. workplace-training spend >\$125B/year in the 2007 ASTD figure Blume cites; measurement concentrated on the levels that flatter the program",
     "Evidence-tier flag: practice-synthesis, not single peer-reviewed study; pattern is consistent, magnitudes still consolidating",
-    "Capability deliverable is an evaluation architecture that crosses the Level-2/Level-3 seam; pair with Blume (Case 65) for transfer",
+    "Capability deliverable is an evaluation architecture that crosses the seam above Level 2 — on-job behavior and business results; pair with Blume (Case 65) for transfer",
   ),
   approaches: (
     during: (
-      [Design the evaluation across the Level-2/Level-3 seam before the training is delivered: partner with line management for behavior observation, identify the workplace tasks the training targets, and instrument them.],
+      [Design the evaluation across the seam above Level 2 before the training is delivered: partner with line management for behavior observation, identify the workplace tasks the training targets, and instrument them.],
       [Specify in advance the on-job behavior and business outcome that would count as evidence the training worked, with a reporting cadence long enough for transfer effects to surface.],
       [Treat the practice-synthesis evidence base honestly: name the pattern, flag the tier, and do not present a stop-at-L2 outcome as if it were a Level-3 or Level-4 finding.],
     ),
@@ -2474,12 +2490,15 @@
     [Devlin Peck, "The Kirkpatrick Model: 4 Levels, Examples, and Free Template" — synthesis of the stop-at-L2 pattern in corporate practice.],
     [D2L, "Evaluating Training Programs: Models, Metrics and Business Impact," practitioner guide documenting the same pattern.],
     [Valamis, "Kirkpatrick model: how to evaluate whether training worked" — practitioner guide on evaluation-practice gaps.],
-    [Blume, Ford, Baldwin, & Huang (2010), "Transfer of Training: A Meta-Analytic Review," _Journal of Management_ 36(4):1065–1105 — the paired peer-reviewed case (65).],
+    [Association for Talent Development (2016), _Evaluating Learning: Getting to Measurements That Matter_ — survey of 199 talent-development professionals; source of the level-by-level figures (~90% L1, 83% L2, 60% L3, 35% L4, 15% ROI). Association research, not peer-reviewed.],
+    [Blume, Ford, Baldwin, & Huang (2010), "Transfer of Training: A Meta-Analytic Review," _Journal of Management_ 36(4):1065–1105 — the paired peer-reviewed case (65); its opening \$125B figure is ASTD's, via Paradise (2007).],
   ),
-  quote: [The chain of evidence is cited as a framework. In practice it breaks at the link between Level 2 and Level 3, and the decisions made on the available data are not decisions about capability.],
+  quote: [The chain of evidence is cited as a framework. In practice it thins above Level 2 and breaks at the link into Results, and the decisions made on the available data are not decisions about capability.],
   quote-source: "Editors' synthesis of the Kirkpatrick model and corporate L&D evaluation practice.",
   le-insight: [
-    The Kirkpatrick stop-at-L2 pattern is the corporate-scale
+    The Kirkpatrick chain's fall-off above Level 2 — about a
+    third of surveyed organizations reaching business results and
+    a seventh reaching ROI — is the corporate-scale
     instance of the enthusiasm-evidence gap and the direct
     illustration of the revised "decision-grade evidence"
     point: the evidence most L&D decisions ride on is
@@ -2495,19 +2514,19 @@
     inadequate evidence* (4.4) — the practitioner must decide well
     on structurally sub-decision-grade evidence — and in
     Domain 5 (Navigating Sociotechnical Constraints) for the
-    Level-2/Level-3 seam that the training organization
-    cannot cross alone. Direct pair with Case 65 (Blume
+    seam above Level 2 — on-job behavior and business results —
+    that the training organization cannot cross alone. Direct pair with Case 65 (Blume
     transfer meta-analysis) for the workplace-environment
     half of the chain.
   ],
   literature-items: (
     [Kirkpatrick & Kirkpatrick (2006), _Evaluating Training Programs_],
-    [Devlin Peck, D2L, Valamis practitioner guides — stop-at-L2 synthesis],
+    [Devlin Peck, D2L, Valamis practitioner guides; ATD (2016) evaluation survey],
     [Blume et al. (2010), _Journal of Management_ — the paired peer-reviewed case],
   ),
   reflection-list: (
     [Identify a recent corporate training program in your organization. At which Kirkpatrick level did evaluation stop? What would the Level 3 and Level 4 measurement have required, and who would have had to provide the data?],
-    [Specify the evaluation architecture you would build to cross the Level-2/Level-3 seam: which on-job behavior, which business outcome, on what cadence, in partnership with which line-management role.],
+    [Specify the evaluation architecture you would build to cross the seam above Level 2: which on-job behavior, which business outcome, on what cadence, in partnership with which line-management role.],
     [The case is practice-synthesis tier. What is the minimum peer-reviewed or program-evaluation evidence you would require before relying on the stop-at-L2 pattern to justify an evaluation-architecture investment in your context?],
   ),
   courses: ("LEN 4", "LEN 7", "LEN 8"),
@@ -2702,8 +2721,9 @@
     prediction system — operated on top of that architecture, and the
     Analytics4Action framework (Rienties et al., _JIME_ 2016) paired
     predictions with tutor judgment and documented interventions across 18 large-scale modules carrying 42,848 registered students. A 2019 evaluation (Herodotou et al.,
-    _BJET_) across 559 teachers and 14,000+ students examined how
-    degree of system usage related to outcomes. The honest open question, raised by the OU's own
+    _BJET_) of 559 teachers — 189 of them given access to OU
+    Analyse — covering more than 14,000 students in 15 undergraduate
+    courses examined how degree of system usage related to outcomes. The honest open question, raised by the OU's own
     researchers, is whether predictive analytics genuinely serves
     students versus surveils them — a tension that remains contested,
     and the policy has since been superseded twice — by a broader Data Ethics Policy, and that in turn by a Responsible AI Policy. Governance as a living artifact, not a solved problem.
@@ -2741,9 +2761,10 @@
       decision: tutors reviewed flagged students, made the
       intervention call, and documented what action they took. The
       framework was tested across 18 introductory modules carrying 42,848 registered students in 2014/15, illustrated by a health and social care module of 3,000-plus.
-      A 2019 evaluation (Herodotou et al., _BJET_) across 559 teachers
-      and 14,000+ students examined how degree of teacher engagement
-      with the system
+      A 2019 evaluation (Herodotou et al., _BJET_) of 559 teachers,
+      189 of whom were given access to OU Analyse, covering more than
+      14,000 students in 15 undergraduate courses, examined how degree
+      of teacher engagement with the system
       related to outcomes; the benefit concentrated in teachers who made average use — the dashboard opened in 10 to 40 percent of a course's weeks — and who intervened with flagged students.#cn()
     ],
     [
@@ -2776,7 +2797,7 @@
     "Predictive learning analytics at distance-scale; the governance objection is credible, not abstract",
     "OU authors first higher-education 'Ethical Use of Student Data' policy in 2014 — eight principles, co-designed with students",
     "OU Analyse operates on top of the consent architecture; Analytics4Action pairs predictions with tutor judgment",
-    "2019 evaluation (Herodotou et al., BJET): 559 teachers, 14,000+ students; average-use teachers who intervened benefited students most — not the heaviest users",
+    "2019 evaluation (Herodotou et al., BJET): 559 teachers, 189 of them with OU Analyse access, 14,000+ students in 15 courses; average-use teachers who intervened benefited students most — not the heaviest users",
     "Governance objection was about trust — dissolvable by design; pair with SyRI where the objection was correct",
   ),
   approaches: (
@@ -2843,11 +2864,11 @@
   year: "2024",
   domains-list: ("higher education (Brazil)", "learning analytics", "institutional governance"),
   modes-code: "KN",
-  impact: "MMALA is a maturity model spanning five categories — data management, administration and training, pedagogical support, data analysis, and legislation/privacy/ethics (16 process areas, maturity levels 0–4); 90 percent of 13 expert evaluators judged it comprehensive, consistent, and adequate; a pilot at three Brazilian universities self-assessed their maturity across all 16 areas — instrument for responsible adoption, downstream learning outcome open",
+  impact: "MMALA is a maturity model spanning five categories — data management, administration and training, pedagogical support, data analysis, and legislation/privacy/ethics (16 process areas, four maturity levels — ad hoc, initial, structured, systematic); 90 percent of 13 expert evaluators judged it comprehensive, consistent, and adequate; a pilot at three Brazilian universities self-assessed their maturity across all 16 areas on a 0-to-4 scale, where 0 means the activity is not performed at all — instrument for responsible adoption, downstream learning outcome open",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
-  induced-anchor: "5.4",
+  induced-anchor: "5.1",
   lens-anchor: "D4/PT4",
   leo-anchor: "LEO-4, LEO-5",
   summary: [
@@ -2855,15 +2876,16 @@
     and Mello (_Journal of Learning Analytics_, 2024) developed and validated MMALA — a
     Maturity Model for Adopting Learning Analytics — designed to
     let an institution self-assess its readiness across the five
-    categories responsible adoption actually depends on: data management, administration and training, pedagogical support, data analysis, and legislation, privacy and ethics — resolved into 16 process areas with maturity levels 0 to 4. Thirteen learning-analytics experts evaluated the model, and about 90 percent judged it comprehensive, consistent, and adequate to support adoption; a pilot at three Brazilian universities then used MMALA to self-assess their maturity across all 16 process areas. The case is one of the corpus's clearest worked
+    categories responsible adoption actually depends on: data management, administration and training, pedagogical support, data analysis, and legislation, privacy and ethics — resolved into 16 process areas and four maturity levels: ad hoc, initial, structured, systematic. Thirteen learning-analytics experts evaluated the model, and about 90 percent judged it comprehensive, consistent, and adequate to support adoption; a pilot at three Brazilian universities then used MMALA to self-assess their maturity across all 16 process areas. The case is one of the corpus's clearest worked
     examples of governance-as-instrument: a structured artifact an
     institution can use to convert the abstract goal "we should
     adopt learning analytics responsibly" into specific
     assessments of where its current capability sits and what it
     has to build next. The honest limit preserved verbatim: the
     instrument is validated by expert opinion and a
-    three-institution exercise, not by longitudinal outcomes of
-    institutions that used it to adopt LA — it is an instrument
+    three-institution exercise — one senior respondent per
+    institution, self-reporting — not by longitudinal outcomes of
+    institutions that used it to adopt LA; it is an instrument
     for responsible adoption, with the downstream effect on
     student learning still to be measured. The case pairs with the
     OU policy (Case 81) and the LALA CANVAS (Case 91) as the
@@ -2886,20 +2908,25 @@
       aspirational.#cn()
     ],
     [
-      The instrument is dimensional. Data management asks whether collection, storage and stewardship are in place at the level the planned adoption requires. Data analysis asks whether the institution has the analytical capability and staffing the tools will need. Pedagogical support asks whether the analytics are tied to instructional decisions rather than reporting, and whether they integrate with the institution's learning design or would be bolted on as a separate track. Administration and training asks whether leadership, funding, communication and staff training are in place. Legislation, privacy and ethics is a single category — the model merges them, because compliance with law does not resolve into separate levels — and asks whether the governance and consent architecture has been built. Each dimension is resolved into maturity levels so
+      The instrument is dimensional. Data management asks whether collection, storage and stewardship are in place at the level the planned adoption requires. Data analysis asks whether the institution has the analytical capability and staffing the tools will need. Pedagogical support asks whether the analytics are tied to instructional decisions rather than reporting, and whether they integrate with the institution's learning design or would be bolted on as a separate track. Administration and training asks whether leadership, funding, communication and staff training are in place. Legislation, privacy and ethics is a single category — the model merges them, because compliance with law does not resolve into separate levels — and asks whether the governance and consent architecture has been built. Each process area is resolved into four maturity
+      levels — ad hoc, initial, structured, systematic — so
       the self-assessment yields a structured picture of which
       dimensions are ready and which are not, rather than a
       single overall readiness score.#cn()
     ],
     [
       The Freitas et al. validation has two halves. The first is
-      expert evaluation: thirteen learning-analytics experts rated the model's process areas, and about 90 percent judged it comprehensive, consistent, and adequate to support adoption. The second is a pilot at three Brazilian universities in Pernambuco, whose leadership used MMALA to self-assess maturity across all 16 process areas and returned three sharply different profiles. The instrument was usable in practice and produced actionable structure for the institutions that piloted it.#cn()
+      expert evaluation: thirteen learning-analytics experts rated the model's process areas, and about 90 percent judged it comprehensive, consistent, and adequate to support adoption. The second is a pilot at three universities in the Brazilian state of Pernambuco, where one senior respondent at each used MMALA to self-assess maturity across all 16 process areas — scored 0 (activity not performed) to 4 — and returned three sharply different profiles. The instrument was usable in practice and produced actionable structure for the institutions that piloted it.#cn()
     ],
     [
       The honest limit survives verbatim. MMALA is validated by
       expert opinion and a three-institution exercise, not by
       longitudinal outcomes of institutions that used it to adopt
-      LA. The instrument's claim is to be a suitable structure
+      LA. The authors hold the pilot to its size themselves: three
+      institutions cannot characterize Brazilian higher education,
+      and a single respondent per institution may not have known of
+      every local LA initiative — they instructed respondents to
+      consult colleagues in other units to reduce that risk. The instrument's claim is to be a suitable structure
       for responsible adoption — what the published evidence
       supports — and the downstream effect on student learning is
       the next study, not this one. The case is teachable on the
@@ -2925,16 +2952,16 @@
     ],
   ),
   beats: (
-    "MMALA (Freitas et al. 2024, JLA): maturity model for adopting LA across five categories — data management, administration and training, pedagogical support, data analysis, legislation/privacy/ethics (16 process areas, levels 0–4)",
-    "Each dimension resolved into maturity levels — structured self-assessment, not a single overall readiness score",
+    "MMALA (Freitas et al. 2024, JLA): maturity model for adopting LA across five categories — data management, administration and training, pedagogical support, data analysis, legislation/privacy/ethics (16 process areas; four maturity levels — ad hoc, initial, structured, systematic)",
+    "Each process area resolved into the four maturity levels — structured self-assessment, not a single overall readiness score",
     "Validation: 13 experts, ~90% judging it comprehensive, consistent, adequate + three-institution self-assessment pilot in Pernambuco (usable, actionable)",
-    "Honest limit: expert opinion + three-institution validation; not yet longitudinal outcomes of institutions that used MMALA to adopt LA",
+    "Honest limit: expert opinion + a three-institution, one-respondent-each self-assessment; not yet longitudinal outcomes of institutions that used MMALA to adopt LA",
     "Institutional-instrument layer of the non-US LA governance set — pair with OU, LALA, Norway, African data privacy",
   ),
   approaches: (
     during: (
       [Resolve readiness into the categories adoption actually depends on — data management, administration and training, pedagogical support, data analysis, and legislation, privacy and ethics — rather than a single overall score; the per-category structure is what makes the instrument actionable.],
-      [Build maturity levels within each dimension so the self-assessment yields a structured next-step picture rather than a binary ready / not-ready.],
+      [Build maturity levels within each process area — MMALA uses four, ad hoc through systematic — so the self-assessment yields a structured next-step picture rather than a binary ready / not-ready.],
       [Validate the instrument in two layers: expert evaluation for comprehensiveness and suitability, and institutional pilot for usability — both are necessary, and the case carries both.],
     ),
     after: (
@@ -2944,7 +2971,7 @@
     ),
   ),
   references: (
-    [Freitas, Fonseca, Garcia, Pontual Falcão, Marques, Gasevic, & Mello (2024), "MMALA: Developing and Evaluating a Maturity Model for Adopting Learning Analytics," _Journal of Learning Analytics_ 11(1):67–86.],
+    [Freitas, Fonseca, Garcia, Pontual Falcão, Marques, Gašević, & Ferreira Mello (2024), "MMALA: Developing and Evaluating a Maturity Model for Adopting Learning Analytics," _Journal of Learning Analytics_ 11(1):67–86, doi:10.18608/jla.2024.8099. The first version had 18 process areas across the same five categories; consolidation plus one added area ("result-based intervention") produced the 16 of record.],
     [Open University Ethical Use of Student Data policy (2014) — institutional-policy companion (Case 81).],
     [Hilliger et al. (2020), _Internet and Higher Education_ — LALA participatory adoption companion (Case 91).],
     [Norwegian Expert Commission on Learning Analytics, final NOU (2023) — national-scale companion (Case 92).],
@@ -2960,7 +2987,7 @@
   ],
   lens-approach: [
     MMALA is the institutional-maturity-model case
-    (induced 5.4; LENS D4/PT4). LENS uses it in Domain 4 (Test
+    (induced 5.1; LENS D4/PT4). LENS uses it in Domain 4 (Test
     and Evaluation) for the structured self-assessment
     instrument and the two-layer validation discipline; in
     Domain 5 (Navigating Sociotechnical Constraints) for the

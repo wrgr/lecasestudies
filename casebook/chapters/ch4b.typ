@@ -1079,9 +1079,9 @@
   ),
   references: (
     [Advanced Distributed Learning Initiative, Total Learning Architecture documentation — the cross-boundary vision.],
-    [IEEE Std 9274.1.1-2023, _Standard for Learning Technology — JSON Data Model Format and RESTful Web Service for Learner Experience Data Tracking and Access_ (xAPI 2.0, published October 2023) — the technical standard of record, transferred from ADL to the IEEE LTSC in 2019.],
+    [IEEE Std 9274.1.1-2023, _Standard for Learning Technology — JSON Data Model Format and RESTful Web Service for Learner Experience Data Tracking and Access_ (xAPI 2.0) — the technical standard of record; the IEEE LTSC project was authorized in May 2018, board-approved 30 March 2023, and published 6 October 2023.],
     [ADL Initiative, _Total Learning Architecture Standards: Digital Learning Acquisition Techniques_ (December 2023) — xAPI data that does not follow xAPI Profiles "will have interoperability issues outside of the implementing organization."],
-    [B. Saxberg, learning-engineering infrastructure essays; IEEE ICICLE LEBoK chapters on data and analytics.],
+    [B. Smith and L. Milham, _Total Learning Architecture (TLA) Data Pillars and Their Applicability to Adaptive Instructional Systems_ (ADL Initiative, 2021; ERIC ED628093) — ADL's own observation that while most LRS solutions offer dashboards, "they are commonly used to view xAPI statements that have been generated within a single learning activity," against a design intent of data shared "vertically within an organization, horizontally across other organizations, or longitudinally throughout a career."],
     [Cf. inBloom (Case 53) — technology in advance of governance.],
   ),
   quote: [The standard exists. The governance does not.],
