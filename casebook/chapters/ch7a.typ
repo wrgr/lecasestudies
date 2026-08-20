@@ -350,9 +350,7 @@
     club captain") and downgraded resumes from all-women's
     colleges. Amazon edited the programs to be neutral to the offending terms, and Reuters reported there was no guarantee the models would not devise other ways of sorting that proved discriminatory — a prospective judgment about what feature engineering could assure, not a demonstration that the bias had been shown irreducible. The case rests on Reuters single-source
     reporting; Amazon never published the technical detail. The
-    journalism-tier evidence-flag under the title carries the
-    standing language. the teaching point — that
-    trained bias cannot in general be debiased through
+    journalism-tier evidence-flag under the title carries the standing language. The teaching point — that trained bias cannot in general be debiased through
     downstream feature manipulation — is the case's curricular
     value even as the specific case details remain limited to
     journalism-tier sourcing.
@@ -420,10 +418,7 @@
       years before withdrawal, and the case's curricular value
       is partly that the engineering team's verification of
       irreducibility led to the decision not to deploy.#cn()
-    ],
-    [
-      the teaching point is that trained bias
-      cannot in general be debiased through downstream feature
+    ], [ The teaching point is that trained bias cannot in general be debiased through downstream feature
       manipulation. When the training-data composition encodes a
       historical disparity in the outcome the model is being
       trained to predict, the model will learn to reproduce the
@@ -2149,9 +2144,7 @@
       for the structural conclusion that the failure was
       explainability rather than the decisioning algorithm
       itself.#cn()
-    ],
-    [
-      the hedge that matters is the precise DFS finding. The case
+    ], [ The load-bearing hedge is the precise DFS finding. The case
       does not teach that Apple Card was unfair, and it does not
       teach that DFS found Apple Card was fair. It teaches that
       under the specific statutory standard the agency applied,
@@ -2200,8 +2193,7 @@
     deployment scale. DFS found no violation of New York anti-
     discrimination law under the applicable statutory standard,
     and DFS also found lack of transparency as the structural
-    problem; the Bank dropped the six-month wait to appeal credit terms and, with Apple, launched Path to Apple Card for declined applicants. the hedge that matters is the precision
-    of the DFS finding — neither "fair" nor "unfair," but "no
+    problem; the Bank dropped the six-month wait to appeal credit terms and, with Apple, launched Path to Apple Card for declined applicants. The hedge that matters is the precision of the DFS finding — neither "fair" nor "unfair," but "no
     violation under this standard, transparency gap as the
     structural problem."
   ],

@@ -296,3 +296,68 @@ reporting, team-coordination redesign) holds **exactly ten cases** — 19, 38, 4
 Demoting any one of them drops the cluster below the framework's own induction rule. Six of the
 ten are in the printed volume, so the exposure is real. Every other cluster has headroom: 2 has
 43, 5 has 32, 3 has 29, 1 has 22, 8 has 21, 7 has 18, 6 has 15.
+
+
+---
+
+## 8. Deeper scrub of the 143 — August 2026
+
+The rule-based pass over the complete-edition cases was run at a lower grade of attention than
+the printed volume's hand-authored one. This pass went back over it properly, and the first thing
+it found was damage the rule-based pass had caused.
+
+### Damage from the rule-based de-tic — 12 sites, repaired
+
+The substitution rules were applied with `re.IGNORECASE` against fixed-case replacements, and
+several rewrote a phrase that a relative clause depended on. Two failure modes:
+
+- **Lowercased sentence and block openings** (9 sites): Case 75 read "…across both mathematics and
+  history. the hedges that matter are explicit"; Cases 65, 118, 123, 147, 151, 182 ×2 and 192
+  opened a content block with a lowercase word.
+- **Broken grammar** (3 sites): Case 37 read "the hedge that matters the Haibe-Kains comment
+  delivers is that…", and Case 115 read "it carries the hedges that matter **that** GAO and DOT
+  Inspector General reviews have repeatedly documented."
+
+Repaired by restoring `load-bearing` where it is the grammatical fit (Cases 37, 115, 192) and
+capitalising the rest. The printed volume was unaffected — it was rewritten by hand.
+
+### Consistency battery, run on the 143 for the first time
+
+Previously only the 48 printed cases had been through it.
+
+| Check | Result |
+|---|---|
+| `lens-anchor` domains vs the domains named in `lens-approach` | **1 mismatch — Case 38** |
+| LEN courses cited in prose but missing from `courses` | 0 |
+| `leo-anchor` vs LEOs cited in prose | 0 |
+| Mode-code and anchor-format validity | 0 |
+| Within-case numeric conflicts | 38 flagged, **all false positives** |
+
+**Case 38 (iPLEDGE) carried `lens-anchor: "D5/PT5"` while its own `lens-approach` says "LENS
+D3/PT5" and teaches Domain 3 and Domain 4, with `leo-anchor: "LEO-4, LEO-3"` agreeing.** The
+field was wrong against both the prose and the LEO anchor; corrected to `D3/PT5` to match what
+the case says about itself. A dual `D3+D4/PT5` would also be defensible, since the prose teaches
+both domains — editor's call.
+
+The 38 numeric flags are all distinct entities sharing a noun: the IOM's 44,000–98,000 against
+Makary's 250,000, the 80-hour week against the 16-hour first-year shift, Phase 1 against Phase 2
+evaluations, separate dates for separate reports. None is an internal contradiction.
+
+### Copy edit and fact check
+
+- 12 UK spellings corrected in body prose (Cases 18, 34, 87, 170, 195 among them). Left alone
+  after checking: Case 42's "professional judgement" sits inside a reference annotation
+  paraphrasing Australian board guidance; Case 91's "behaviours" are the ODI ROMA framework's own
+  terms; Case 78's "however low" is "no matter how low", not the banned discourse marker.
+- **Case 51 (Atlanta Public Schools) — verified against the record and tightened.** The `impact`
+  line is exactly right: 178 educators named, 38 of them principals, 35 indicted, 11 convicted,
+  cheating found in 44 schools. The body rounded the same figure to "Around 180 educators were
+  implicated"; now states the documented 178.
+- Junction scan across every changed file: 0 doubled words, 0 severed sentences, 0 doubled
+  adjectives.
+
+### Where the two editions now stand
+
+`load-bearing` sits at 11 sites in the printed volume and 11 in the complete-edition cases —
+kept, in both, only where the structural metaphor is doing real work. `decisive` runs at roughly
+0.66 uses per complete-edition case, which is ordinary usage rather than a tic.

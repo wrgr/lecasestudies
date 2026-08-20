@@ -2196,7 +2196,7 @@
     "First cases Guinea December 2013; confirmed as Ebola March 2014; WHO/Guinea reporting characterized outbreak as slowing by April 2014",
     "MSF declared the epidemic \"out of control\" 21 June 2014; WHO staff in Guinea and Sierra Leone accused MSF of causing unnecessary panic",
     "WHO declared the PHEIC on 8 August 2014 (Emergency Committee 6–7 August) — months into exponential growth; third PHEIC ever",
-    "Response scaled: UNMEER (first UN emergency health mission), U.S./UK military logistics; community-led safe burials and care-centre networks bent the curve",
+    "Response scaled: UNMEER (first UN emergency health mission), U.S./UK military logistics; community-led safe burials and care-center networks bent the curve",
     "Reported toll ~28,600 cases / ~11,300 deaths (undercount acknowledged); Stocking Report (July 2015), Moon et al. Lancet (Nov 2015), UN High-Level Panel (2016) converge on unbuilt IHR core capacities with no consequence, post-2011 WHO capacity cuts, discounted early signals",
     "Reform: WHO Health Emergencies Programme (2016); panels' own caveat that post-crisis reform pledges historically decay — COVID-19 later tested it",
   ),

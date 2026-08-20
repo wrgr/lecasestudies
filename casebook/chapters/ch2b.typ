@@ -64,9 +64,7 @@
       cognitive ability, conscientiousness, motivation, and the
       work environment (particularly supervisor and peer support).
       All four categories were positively related to transfer. Cognitive ability carried the largest corrected correlation and the work environment a moderate one; the authors find no clear superiority of individual over situational variables. The work environment is the only *system* variable in the set — and the only one an organization can actively manage.#cn()
-    ],
-    [
-      the hedge that matters survives. The authors are explicit
+    ], [ The hedge that matters survives. The authors are explicit
       that the literature is "characterized by inconsistent
       measurement of transfer and significant variability in
       findings." Downstream practitioner summaries note that
@@ -1775,8 +1773,7 @@
     Chen and colleagues' 12-school three-month deployment of AI-
     supported instructional devices across rural and urban
     Chinese classrooms reported an equity-direction finding —
-    rural gain exceeded urban gain across both mathematics and
-    history. the hedges that matter are explicit and carried in
+    rural gain exceeded urban gain across both mathematics and history. The hedges that matter are explicit and carried in
     the prose: three-month horizon, twelve schools, non-randomized assignment matched only on baseline attainment, and a small sample with an unvalidated self-report survey acknowledged by the authors. The case anchors the LEO on fairness beyond
     omission with a rare published equity-narrowing result.
   ],
@@ -3682,7 +3679,7 @@
   beats: (
     "Long-running learning-analytics question: include or exclude protected attributes (race/ethnicity, gender, SES) as features?",
     "Fairness-through-unawareness intuitive but incomplete: omitted attributes reconstructable from correlated features (zip code, prior achievement)",
-    "Yu, Lee, Kizilcec (L@S 2021, N=93,457): including four protected attributes left prediction performance unchanged and fairness marginally better — the authors favour inclusion",
+    "Yu, Lee, Kizilcec (L@S 2021, N=93,457): including four protected attributes left prediction performance unchanged and fairness marginally better — the authors favor inclusion",
     "Right framing is governance and audit: explicit decision recorded with reasoning, stratified evaluation, audit cadence that catches the consequences",
     "Cross-references Case 86 (Gándara), the v2 race-construct trio (25 eGFR, 26 pulse oximetry, 6 Hoffman) — five-case equity-construct frontier set",
   ),

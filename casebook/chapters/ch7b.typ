@@ -188,7 +188,7 @@
   year: "2016 – present",
   domains-list: ("autonomous",),
   modes-code: "TNGH",
-  impact: "14 deaths across the 467 Autopilot crashes NHTSA analysed in EA22-002; first U.S. cases of Level-2 automation contributing to fatal injury",
+  impact: "14 deaths across the 467 Autopilot crashes NHTSA analyzed in EA22-002; first U.S. cases of Level-2 automation contributing to fatal injury",
   diagram: dgm.dgm-stat(
     "L2",
     "driver retained · attention not engineered",

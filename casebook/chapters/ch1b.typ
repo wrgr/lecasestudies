@@ -1253,7 +1253,7 @@
     "2023 study: pre/post assessments across knowledge and self-confidence domains showed mean increases regardless of modality (in-person, virtual, blended)",
     "Kirkpatrick L1–L2 limitation explicit: outcomes are knowledge and self-rated confidence, not L3 behavior change or L4 patient outcomes (Case 79)",
     "Rare real-world cross-country modality comparison at meaningful scale; multi-country scope limits single-country confounding",
-    "Journal-published (medRxiv item is its preprint); L3 behaviour and L4 outcome measurement remain untested",
+    "Journal-published (medRxiv item is its preprint); L3 behavior and L4 outcome measurement remain untested",
   ),
   approaches: (
     during: (
@@ -3906,7 +3906,7 @@
     "Boussina et al. NPJ Digital Medicine 2024; COMPOSER deep-learning sepsis-risk model at UC San Diego Health, two-site prospective implementation",
     "Conformal-prediction framework: calibrated uncertainty intervals enable model abstention when input is out-of-distribution",
     "Deployment outcomes: 1.9 pp absolute decrease in in-hospital sepsis mortality; 5.0 pp absolute increase in sepsis bundle compliance vs pre-deployment baseline",
-    "Hedges binding: before-and-after, not randomized; no contemporaneous comparison arm because every UCSD ED ran the model; single academic centre, external validation pending",
+    "Hedges binding: before-and-after, not randomized; no contemporaneous comparison arm because every UCSD ED ran the model; single academic center, external validation pending",
     "Completes AI-delegation typology in sepsis: Case 20 (TREWS), Case 5 (Epic Sepsis Score), COMPOSER (Case 34)",
   ),
   approaches: (
@@ -4383,7 +4383,7 @@
     "Transparency and reproducibility in artificial intelligence"
     critiqued the McKinney paper for failing to release code,
     trained models, or sufficient methodological detail to
-    permit independent reproduction. the hedge that matters the Haibe-Kains comment delivers is that the lack of detailed methods and computer code undermines the study's scientific value. The screening-comparison framing the original paper offered has since been refined by deployment evidence rather than confirmed at the deployment scale the headline implied. The case pairs with
+    permit independent reproduction. The load-bearing hedge the Haibe-Kains comment delivers is that the lack of detailed methods and computer code undermines the study's scientific value. The screening-comparison framing the original paper offered has since been refined by deployment evidence rather than confirmed at the deployment scale the headline implied. The case pairs with
     Case 35 (Radiology AI Miscalibration), Case 5 (Epic
     Sepsis), and Case 26 (Pulse oximetry).
   ],
@@ -4555,7 +4555,7 @@
   scale: "big",
   evidence-source: "peer-reviewed",
   induced-anchor: "4.4",
-  lens-anchor: "D5/PT5",
+  lens-anchor: "D3/PT5",
   leo-anchor: "LEO-4, LEO-3",
   summary: [
     Isotretinoin is a highly effective acne medication and a known

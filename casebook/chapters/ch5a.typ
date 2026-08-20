@@ -860,8 +860,7 @@
     capability gap was at the regulator's evidence pipeline as much as
     at the manufacturer's bench.
   ],
-  lens-approach: [
-    the lesson is post-deployment surveillance. Field
+  lens-approach: [ The lesson is post-deployment surveillance. Field
     rupture reports arrived over years but were never aggregated and
     interpreted as a single class-level safety signal, so an obvious
     failure mode stayed hidden inside a process that kept receiving the
@@ -1497,8 +1496,7 @@
     before the recall. The institutional path between the fix and the
     recall did not.
   ],
-  lens-approach: [
-    the lesson is change control. Engineers changed the
+  lens-approach: [ The lesson is change control. Engineers changed the
     ignition switch but kept the same part number, defeating
     configuration traceability so the field failures could never be tied
     back to a design change and the records insisted the part had "never

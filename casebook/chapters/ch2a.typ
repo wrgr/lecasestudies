@@ -1014,7 +1014,7 @@
     dozens of schools had systematically erased and corrected students'
     answers on state standardized tests. The cheating was organized —
     principals pressured teachers, staff held weekend "erasure parties" — and the incentive system rewarded the gaming with
-    bonuses and promotions. Around 180 educators were implicated, 35
+    bonuses and promotions. The state investigation named 178 educators, 35
     indicted, and 11 convicted under Georgia's racketeering statute. The
     capability gap lay in the measurement architecture: the institution
     being measured operated the instrument that measured it, with no

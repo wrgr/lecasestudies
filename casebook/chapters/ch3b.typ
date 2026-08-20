@@ -220,8 +220,7 @@
     airspace. The case is one of the largest planned aging-
     infrastructure transitions in the recent regulatory record —
     closing a long-standing C7 zero-state in the induced framework
-    — and it carries the hedges that matter that GAO and DOT
-    Inspector General reviews have repeatedly documented:
+    — and it carries the load-bearing hedges that GAO and DOT Inspector General reviews have repeatedly documented:
     significant schedule slippage across the program, benefit-
     realization gaps relative to original projections, and
     contested cost-benefit accounting. The transition happened; the
@@ -740,8 +739,7 @@
       ignore.#cn()
     ],
     // -- How It Worked --
-    [
-      the decisive move operated on language. Making English the
+    [ The decisive move operated on language. Making English the
       cockpit language stripped out the Korean honorific hierarchy that had
       silenced first officers, because English has no honorifics to enforce
       rank. The CRM adaptation then gave crews an explicit, culturally
@@ -1572,9 +1570,7 @@
       fell sharply through the subsequent decade across both
       commercial transport and corporate aviation; approach-and-
       landing accidents declined alongside. The task forces set an explicit target — a 50 percent reduction in the approach-and- landing accident rate in five years — and the decline that followed ran well past it, though no published analysis isolates the task forces' share of it.#cn()
-    ],
-    [
-      the hedge that matters survives into the case. The
+    ], [ The hedge that matters survives into the case. The
       accident-rate decline is multifactorial: TAWS hardware in the
       cockpit, training changes the task forces catalyzed,
       stabilized-approach criteria adopted at the operator level,
