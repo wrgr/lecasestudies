@@ -29,16 +29,17 @@
 
 #set par(justify: true, leading: 0.62em, first-line-indent: 0pt)
 #text(font: sans, size: 10pt, fill: text-dark)[
-  Every reference cited in every case, organised by case in number
+  Every reference cited in every case, organized by case in number
   order. The intent is that any reader can locate every source the
   book draws on. Each entry preserves the in-case citation form
-  (author, year, venue) and adds an explicit *Retrieved from:* line
-  pointing to the canonical access path — a publisher URL, a DOI,
-  an agency landing page, or a stable archival locator. Where that
-  line is left blank, the source is under verification; the running
-  status of that work is in `casebook/verification-log.md`. Future
-  editions will fill in remaining locators as the per-case review
-  closes them out.
+  (author, year, venue) and adds a *Retrieved from:* rule beneath it —
+  a worksheet line for the reviewer to enter the canonical access path
+  they used: a publisher URL, a DOI, an agency landing page, or a
+  stable archival locator. The rules print blank by design, because the
+  per-case verification is being carried out against this appendix
+  rather than reported by it; the running status of that work is in
+  `casebook/verification-log.md`. Future editions will print the
+  locators as the review closes them out.
 ]
 
 #v(8pt)

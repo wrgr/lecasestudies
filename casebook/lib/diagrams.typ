@@ -8,7 +8,7 @@
 
 #let diagram-frame(content, height: 38mm, caption: none) = block(
   width: 100%,
-  fill: navy,
+  fill: dgm-ground,
   inset: 0pt,
   {
     block(
@@ -21,9 +21,9 @@
     if caption != none {
       block(
         width: 100%,
-        fill: navy-mid,
+        fill: dgm-panel,
         inset: (x: 10pt, y: 6pt),
-        text(font: sans, size: 7pt, tracking: 1pt, fill: rgb("#8A9AB5"), upper(caption)),
+        text(font: sans, size: 7pt, tracking: 1pt, fill: dgm-dim, upper(caption)),
       )
     }
   }
@@ -33,21 +33,43 @@
 // SHARED PRIMITIVES used inside cetz canvases
 // ============================================================
 
+// Outcome markers. `kind` is "good" or "adverse"; anything else is a no-op, so
+// a figure cannot silently acquire a valence it was not given. The star is drawn
+// larger than the triangle at the same nominal r because a five-point star of
+// equal radius carries far less ink — this equalises optical weight. Inner
+// radius 0.48 keeps the points from thinning at the small end of figure scale.
+#let outcome-mark(kind, x, y, r: 0.17) = {
+  import cetz.draw: *
+  if kind == "good" {
+    let rr = r * 1.28
+    let pts = ()
+    for i in range(10) {
+      let a = -90deg + i * 36deg
+      let k = if calc.rem(i, 2) == 0 { rr } else { rr * 0.48 }
+      pts.push((x + k * calc.cos(a), y + k * calc.sin(a)))
+    }
+    line(..pts, close: true, fill: dgm-good, stroke: none)
+  } else if kind == "adverse" {
+    line((x - r, y - r * 0.85), (x + r, y - r * 0.85), (x, y + r * 1.05),
+         close: true, fill: dgm-adverse, stroke: none)
+  }
+}
+
 #let gold-dot(x, y, r: 0.14) = {
   import cetz.draw: *
-  circle((x, y), radius: r, fill: rgb("#D4A843"), stroke: none)
+  circle((x, y), radius: r, fill: dgm-accent, stroke: none)
 }
 #let teal-dot(x, y, r: 0.14) = {
   import cetz.draw: *
-  circle((x, y), radius: r, fill: rgb("#2CC4B3"), stroke: none)
+  circle((x, y), radius: r, fill: dgm-ink, stroke: none)
 }
-#let label(x, y, s, color: rgb("#F5F0E8"), size: 6.5pt, anchor: "south") = {
+#let label(x, y, s, color: dgm-ink, size: 6.5pt, anchor: "south") = {
   import cetz.draw: *
-  content((x, y), text(font: ("DM Sans",), size: size, fill: color, s), anchor: anchor)
+  content((x, y), text(font: sans, size: size, fill: color, s), anchor: anchor)
 }
-#let tag-label(x, y, s, color: rgb("#2CC4B3")) = {
+#let tag-label(x, y, s, color: dgm-ink) = {
   import cetz.draw: *
-  content((x, y), text(font: ("DM Sans",), size: 6pt, tracking: 1pt, fill: color, upper(s)))
+  content((x, y), text(font: sans, size: 6pt, tracking: 1pt, fill: color, upper(s)))
 }
 
 // ============================================================
@@ -64,30 +86,31 @@
       (6, "No simulator\ntraining"),
       (8.5, "Single-AOA\nsensor logic"),
     )
-    line((0.4, 1), (9.2, 1), stroke: 0.6pt + rgb("#5A6A85"))
+    line((0.4, 1), (9.2, 1), stroke: 0.6pt + dgm-rule)
     for (x, lab) in nodes {
-      circle((x, 1), radius: 0.18, fill: rgb("#D4A843"), stroke: none)
-      content((x, 2.0), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#F5F0E8"), lab), anchor: "south")
-      content((x, 0.4), text(font: ("Instrument Serif",), size: 7pt, fill: rgb("#2CC4B3"), "↓"), anchor: "north")
+      circle((x, 1), radius: 0.18, fill: dgm-accent, stroke: none)
+      content((x, 2.0), text(font: sans, size: 6.5pt, fill: dgm-ink, lab), anchor: "south")
+      content((x, 0.4), text(font: serif, size: 7pt, fill: dgm-ink, "↓"), anchor: "north")
     }
-    content((4.8, -0.4), text(font: ("DM Sans",), size: 7pt, fill: rgb("#E8C96A"), tracking: 1.5pt, upper("346 lives")), anchor: "north")
+    outcome-mark("adverse", 3.58, -0.62)
+    content((4.8, -0.4), text(font: sans, size: 7pt, fill: dgm-adverse, tracking: 1.5pt, upper("346 lives")), anchor: "north")
   })
 )
 
 #let dgm-therac = diagram-frame(
-  caption: "Software race condition replaced hardware interlock",
+  caption: "Software state took over from an independent circuit, and nothing downstream could see the fault",
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 2.4), (8.5, 2.4), stroke: 1pt + rgb("#2CC4B3"))
-    content((0.5, 2.7), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "Therac-6/20"), anchor: "south-west")
-    content((4.5, 2.7), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#F5F0E8"), "command → hardware interlock → beam"), anchor: "south")
-    rect((6.8, 2.2), (7.6, 2.6), fill: rgb("#D4A843"), stroke: none)
-    content((7.2, 2.4), text(font: ("DM Sans",), size: 5.5pt, fill: rgb("#0A1628"), weight: "bold", "LOCK"))
-    line((0.5, 0.9), (8.5, 0.9), stroke: 1pt + rgb("#D4A843"))
-    content((0.5, 1.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), "Therac-25"), anchor: "south-west")
-    content((4.5, 1.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#F5F0E8"), "command → software state → beam"), anchor: "south")
-    content((6.4, 0.5), text(font: ("Instrument Serif",), size: 8pt, style: "italic", fill: rgb("#E8C96A"), "race"), anchor: "north")
-    line((6.0, 0.7), (6.8, 0.7), stroke: (paint: rgb("#E8C96A"), thickness: 0.6pt, dash: "dashed"))
+    line((0.5, 2.4), (8.5, 2.4), stroke: 1pt + dgm-ink)
+    content((0.5, 2.7), text(font: sans, size: 6.5pt, fill: dgm-ink, "Therac-6/20"), anchor: "south-west")
+    content((4.5, 2.7), text(font: sans, size: 6.5pt, fill: dgm-ink, "command → independent circuit → beam"), anchor: "south")
+    rect((6.8, 2.2), (7.6, 2.6), fill: dgm-accent, stroke: none)
+    content((7.2, 2.4), text(font: sans, size: 5.5pt, fill: dgm-onaccent, weight: "bold", "LOCK"))
+    line((0.5, 0.9), (8.5, 0.9), stroke: 1pt + dgm-accent)
+    content((0.5, 1.2), text(font: sans, size: 6.5pt, fill: dgm-accent, "Therac-25"), anchor: "south-west")
+    content((4.5, 1.2), text(font: sans, size: 6.5pt, fill: dgm-ink, "command → software state → beam"), anchor: "south")
+    content((6.4, 0.5), text(font: serif, size: 8pt, style: "italic", fill: dgm-accent-soft, "race"), anchor: "north")
+    line((6.0, 0.7), (6.8, 0.7), stroke: (paint: dgm-accent-soft, thickness: 0.6pt, dash: "dashed"))
   })
 )
 
@@ -95,16 +118,17 @@
   caption: "Tracking error grew with each hour of continuous operation",
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 0.6), (9, 0.6), stroke: 0.6pt + rgb("#5A6A85"))
-    line((0.5, 0.6), (0.5, 3.4), stroke: 0.6pt + rgb("#5A6A85"))
-    content((9, 0.3), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("hours running")), anchor: "north-east")
-    content((0.3, 3.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("error")), anchor: "south-east")
+    line((0.5, 0.6), (9, 0.6), stroke: 0.6pt + dgm-rule)
+    line((0.5, 0.6), (0.5, 3.4), stroke: 0.6pt + dgm-rule)
+    content((9, 0.3), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("hours running")), anchor: "north-east")
+    content((0.3, 3.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("error")), anchor: "south-east")
     let pts = ((0.5, 0.65), (1.5, 0.72), (3, 0.92), (4.5, 1.25), (6, 1.85), (7.2, 2.7), (8, 3.3))
-    line(..pts, stroke: 1.2pt + rgb("#D4A843"))
-    circle((4.5, 1.25), radius: 0.1, fill: rgb("#2CC4B3"), stroke: none)
-    content((4.5, 1.55), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "Israeli warning"), anchor: "south")
-    circle((7.6, 2.95), radius: 0.12, fill: rgb("#E8C96A"), stroke: none)
-    content((7.6, 3.25), text(font: ("DM Sans",), size: 6pt, fill: rgb("#E8C96A"), "Dhahran"), anchor: "south")
+    line(..pts, stroke: 1.2pt + dgm-adverse)
+    circle((4.5, 1.25), radius: 0.1, fill: dgm-ink, stroke: none)
+    content((4.5, 1.55), text(font: sans, size: 6pt, fill: dgm-ink, "Israeli warning"), anchor: "south")
+    circle((7.6, 2.95), radius: 0.12, fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 8.25, 2.9)
+    content((7.6, 3.25), text(font: sans, size: 6pt, fill: dgm-adverse, "Dhahran"), anchor: "south")
   })
 )
 
@@ -116,21 +140,22 @@
   caption: "Authority gradient flattened; communication closes the loop",
   cetz.canvas({
     import cetz.draw: *
-    content((1.5, 3.4), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("before")), anchor: "south")
-    line((0.4, 1.2), (2.8, 2.8), stroke: 1pt + rgb("#8A9AB5"))
-    circle((0.4, 1.2), radius: 0.14, fill: rgb("#5A6A85"), stroke: none)
-    circle((2.8, 2.8), radius: 0.14, fill: rgb("#D4A843"), stroke: none)
-    content((0.3, 0.9), text(font: ("DM Sans",), size: 6pt, fill: rgb("#F5F0E8"), "FO"), anchor: "north")
-    content((2.9, 3.0), text(font: ("DM Sans",), size: 6pt, fill: rgb("#F5F0E8"), "Capt"), anchor: "south")
-    content((6.5, 3.4), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("after CRM")), anchor: "south")
-    line((5.0, 2.0), (8.0, 2.0), stroke: 1pt + rgb("#2CC4B3"))
-    bezier((5.0, 2.15), (8.0, 2.15), (5.8, 2.7), (7.2, 2.7), stroke: 0.8pt + rgb("#D4A843"))
-    bezier((8.0, 1.85), (5.0, 1.85), (7.2, 1.3), (5.8, 1.3), stroke: 0.8pt + rgb("#D4A843"))
-    circle((5.0, 2.0), radius: 0.14, fill: rgb("#D4A843"), stroke: none)
-    circle((8.0, 2.0), radius: 0.14, fill: rgb("#D4A843"), stroke: none)
-    content((4.9, 1.7), text(font: ("DM Sans",), size: 6pt, fill: rgb("#F5F0E8"), "FO"), anchor: "north")
-    content((8.1, 1.7), text(font: ("DM Sans",), size: 6pt, fill: rgb("#F5F0E8"), "Capt"), anchor: "north")
-    content((6.5, 0.6), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#E8C96A"), "83% fatality reduction"))
+    content((1.5, 3.4), text(font: sans, size: 6.5pt, fill: dgm-dim, tracking: 1pt, upper("before")), anchor: "south")
+    line((0.4, 1.2), (2.8, 2.8), stroke: 1pt + dgm-dim)
+    circle((0.4, 1.2), radius: 0.14, fill: dgm-rule, stroke: none)
+    circle((2.8, 2.8), radius: 0.14, fill: dgm-accent, stroke: none)
+    content((0.3, 0.9), text(font: sans, size: 6pt, fill: dgm-ink, "FO"), anchor: "north")
+    content((2.9, 3.0), text(font: sans, size: 6pt, fill: dgm-ink, "Capt"), anchor: "south")
+    content((6.5, 3.4), text(font: sans, size: 6.5pt, fill: dgm-dim, tracking: 1pt, upper("after CRM")), anchor: "south")
+    line((5.0, 2.0), (8.0, 2.0), stroke: 1pt + dgm-ink)
+    bezier((5.0, 2.15), (8.0, 2.15), (5.8, 2.7), (7.2, 2.7), stroke: 0.8pt + dgm-accent)
+    bezier((8.0, 1.85), (5.0, 1.85), (7.2, 1.3), (5.8, 1.3), stroke: 0.8pt + dgm-accent)
+    circle((5.0, 2.0), radius: 0.14, fill: dgm-accent, stroke: none)
+    circle((8.0, 2.0), radius: 0.14, fill: dgm-accent, stroke: none)
+    content((4.9, 1.7), text(font: sans, size: 6pt, fill: dgm-ink, "FO"), anchor: "north")
+    content((8.1, 1.7), text(font: sans, size: 6pt, fill: dgm-ink, "Capt"), anchor: "north")
+    outcome-mark("good", 4.1, 0.62)
+    content((6.5, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-good, "83% — CAST portfolio, 1998–2008"))
   })
 )
 
@@ -138,18 +163,19 @@
   caption: "Three pause points across the surgical timeline",
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 1.4), (9, 1.4), stroke: 0.6pt + rgb("#5A6A85"))
+    line((0.5, 1.4), (9, 1.4), stroke: 0.6pt + dgm-rule)
     let stops = (
       (1.5, "SIGN IN", "Before anesthesia"),
       (4.7, "TIME OUT", "Before incision"),
       (7.9, "SIGN OUT", "Before leaving OR"),
     )
     for (x, lab, sub) in stops {
-      rect((x - 0.5, 1.2), (x + 0.5, 1.6), fill: rgb("#D4A843"), stroke: none)
-      content((x, 1.95), text(font: ("DM Sans",), size: 6.6pt, weight: "bold", fill: rgb("#F5F0E8"), tracking: 1pt, lab), anchor: "south")
-      content((x, 1.1), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), sub), anchor: "north")
+      rect((x - 0.5, 1.2), (x + 0.5, 1.6), fill: dgm-accent, stroke: none)
+      content((x, 1.95), text(font: sans, size: 6.6pt, weight: "bold", fill: dgm-ink, tracking: 1pt, lab), anchor: "south")
+      content((x, 1.1), text(font: sans, size: 6pt, fill: dgm-dim, sub), anchor: "north")
     }
-    content((4.7, 0.3), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#2CC4B3"), "deaths 1.5% → 0.8%"))
+    outcome-mark("good", 2.8, 0.3)
+    content((4.7, 0.3), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "pilot deaths 1.5% → 0.8%"))
   })
 )
 
@@ -157,15 +183,16 @@
   caption: "Bloodstream-infection rate across 103 Michigan ICUs",
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 0.6), (9, 0.6), stroke: 0.6pt + rgb("#5A6A85"))
-    line((0.5, 0.6), (0.5, 3.4), stroke: 0.6pt + rgb("#5A6A85"))
+    line((0.5, 0.6), (9, 0.6), stroke: 0.6pt + dgm-rule)
+    line((0.5, 0.6), (0.5, 3.4), stroke: 0.6pt + dgm-rule)
     let drop = ((0.7, 3.0), (1.5, 2.85), (2.4, 2.3), (3.5, 1.6), (5, 1.0), (7, 0.78), (9, 0.7))
-    line(..drop, stroke: 1.2pt + rgb("#D4A843"))
-    line((2.4, 0.6), (2.4, 3.3), stroke: (paint: rgb("#2CC4B3"), thickness: 0.5pt, dash: "dashed"))
-    content((2.4, 3.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "checklist + nurse authority"), anchor: "south")
-    content((9, 0.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("18 months")), anchor: "north-east")
-    content((0.3, 3.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("rate")), anchor: "south-east")
-    content((6.5, 1.7), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#E8C96A"), "≈ zero"))
+    line(..drop, stroke: 1.2pt + dgm-good)
+    line((2.4, 0.6), (2.4, 3.3), stroke: (paint: dgm-ink, thickness: 0.5pt, dash: "dashed"))
+    content((2.4, 3.4), text(font: sans, size: 6pt, fill: dgm-ink, "checklist + nurse authority"), anchor: "south")
+    content((9, 0.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("18 months")), anchor: "north-east")
+    content((0.3, 3.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("rate")), anchor: "south-east")
+    outcome-mark("good", 5.55, 1.7)
+    content((6.5, 1.7), text(font: serif, size: 9pt, style: "italic", fill: dgm-good, "≈ zero"))
   })
 )
 
@@ -173,17 +200,18 @@
   caption: "Industry-wide peer review: a learning ring after TMI",
   cetz.canvas({
     import cetz.draw: *
-    circle((4.7, 2.0), radius: 0.45, fill: rgb("#D4A843"), stroke: none)
-    content((4.7, 2.0), text(font: ("DM Sans",), size: 6pt, weight: "bold", fill: rgb("#0A1628"), "INPO"))
+    circle((4.7, 2.0), radius: 0.45, fill: dgm-accent, stroke: none)
+    content((4.7, 2.0), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, "INPO"))
     let n = 8
     for i in range(n) {
       let theta = i * 360deg / n
       let cx = 4.7 + 2.3 * calc.cos(theta)
-      let cy = 2.0 + 1.4 * calc.sin(theta)
-      circle((cx, cy), radius: 0.18, fill: rgb("#2CC4B3"), stroke: none)
-      line((4.7, 2.0), (cx, cy), stroke: 0.4pt + rgb("#5A6A85"))
+      let cy = 2.0 + 1.1 * calc.sin(theta)
+      circle((cx, cy), radius: 0.18, fill: dgm-ink, stroke: none)
+      line((4.7, 2.0), (cx, cy), stroke: 0.4pt + dgm-rule)
     }
-    content((4.7, 0.2), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "zero significant releases since 1979"))
+    outcome-mark("good", 2.05, 0.45)
+    content((4.7, 0.45), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "no INES Level 4+ accident since 1979"))
   })
 )
 
@@ -196,54 +224,57 @@
   cetz.canvas({
     import cetz.draw: *
     // Two horizontal bars showing training hours decreasing
-    rect((0.5, 2.4), (8.5, 2.9), fill: rgb("#2CC4B3"), stroke: none)
-    content((0.5, 3.1), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "1990s — classroom + simulator course"), anchor: "south-west")
-    rect((0.5, 1.2), (1.6, 1.7), fill: rgb("#D4A843"), stroke: none)
-    content((0.5, 1.9), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), "2003 — CD-ROM self-study"), anchor: "south-west")
-    line((4, 0.5), (4, 3.4), stroke: (paint: rgb("#5A6A85"), thickness: 0.4pt, dash: "dashed"))
-    content((6.2, 0.55), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "17 sailors dead"))
+    rect((0.5, 2.4), (8.5, 2.9), fill: dgm-ink, stroke: none)
+    content((0.5, 3.1), text(font: sans, size: 6.5pt, fill: dgm-ink, "1990s — classroom + simulator course"), anchor: "south-west")
+    rect((0.5, 1.2), (1.6, 1.7), fill: dgm-accent, stroke: none)
+    content((0.5, 1.9), text(font: sans, size: 6.5pt, fill: dgm-accent, "2003 — CD-ROM self-study"), anchor: "south-west")
+    line((4, 0.5), (4, 3.4), stroke: (paint: dgm-rule, thickness: 0.4pt, dash: "dashed"))
+    outcome-mark("adverse", 4.9, 0.55)
+    content((6.2, 0.55), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "17 sailors dead"))
   })
 )
 
 #let dgm-af447 = diagram-frame(
-  caption: "54 seconds: stall warning sounded, response never came",
+  caption: "The stall warning cut out at the extreme angle of attack",
   cetz.canvas({
     import cetz.draw: *
     // timeline baseline
-    line((0.5, 1.4), (9, 1.4), stroke: 0.6pt + rgb("#5A6A85"))
+    line((0.5, 1.4), (9, 1.4), stroke: 0.6pt + dgm-rule)
     for x in (0.5, 2.0, 3.5, 5.0, 6.5, 8.0, 9.0) {
-      line((x, 1.3), (x, 1.5), stroke: 0.4pt + rgb("#5A6A85"))
+      line((x, 1.3), (x, 1.5), stroke: 0.4pt + dgm-rule)
     }
     // stall warning bar — make it tall enough to hold its label
-    rect((0.5, 1.7), (8.0, 2.4), fill: rgb("#D4A843"), stroke: none)
-    content((4.25, 2.05), text(font: ("DM Sans",), size: 7pt, weight: "bold", fill: rgb("#0A1628"), "STALL WARNING (54s continuous)"))
+    rect((0.5, 1.7), (8.0, 2.4), fill: dgm-accent, stroke: none)
+    content((4.25, 2.05), text(font: sans, size: 7pt, weight: "bold", fill: dgm-onaccent, "STALL WARNING — cut out, then resumed"))
     // endpoints
-    content((0.5, 1.1), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), "pitot ice"), anchor: "north-west")
-    content((8.0, 1.1), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), "impact"), anchor: "north-east")
-    content((4.5, 0.6), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#2CC4B3"), "no recovery manoeuvre attempted"), anchor: "north")
+    content((0.5, 1.1), text(font: sans, size: 6pt, fill: dgm-dim, "pitot ice"), anchor: "north-west")
+    content((8.0, 1.1), text(font: sans, size: 6pt, fill: dgm-dim, "impact"), anchor: "north-east")
+    outcome-mark("adverse", 2.1, 0.45)
+    content((4.5, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "no recovery manoeuvre attempted"), anchor: "north")
   })
 )
 
 #let dgm-tmi = diagram-frame(
-  caption: "A minor cooling fault, an ambiguous indicator, a meltdown",
+  caption: "A minor cooling fault, a valve reported shut, a meltdown",
   cetz.canvas({
     import cetz.draw: *
     // Three nodes connected
     let nodes = (
-      (1.5, "PORV stuck\nopen"),
-      (4.5, "Indicator\nambiguous"),
-      (7.5, "Operators\nover-corrected"),
+      (1.6, "PORV stuck\nopen"),
+      (4.7, "Indicator\nread closed"),
+      (7.8, "Operators\nover-corrected"),
     )
     for i in range(nodes.len()) {
       let (x, lab) = nodes.at(i)
-      circle((x, 2.0), radius: 0.5, fill: rgb("#D4A843"), stroke: none)
-      content((x, 2.0), text(font: ("DM Sans",), size: 5.5pt, weight: "bold", fill: rgb("#0A1628"), lab))
+      circle((x, 2.0), radius: 0.85, fill: dgm-accent, stroke: none)
+      content((x, 2.0), text(font: sans, size: 5pt, weight: "bold", fill: dgm-onaccent, lab))
       if i < nodes.len() - 1 {
-        line((x + 0.55, 2.0), (nodes.at(i + 1).at(0) - 0.55, 2.0), stroke: 0.8pt + rgb("#2CC4B3"))
-        content((((x + nodes.at(i + 1).at(0)) / 2), 2.3), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "→"), anchor: "south")
+        line((x + 0.9, 2.0), (nodes.at(i + 1).at(0) - 0.9, 2.0), stroke: 0.8pt + dgm-ink)
+        content((((x + nodes.at(i + 1).at(0)) / 2), 2.3), text(font: sans, size: 6pt, fill: dgm-ink, "→"), anchor: "south")
       }
     }
-    content((4.5, 0.4), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "training matched worst case, not this case"), anchor: "north")
+    outcome-mark("adverse", 9.15, 2.0)
+    content((4.5, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "training matched worst case, not this case"), anchor: "north")
   })
 )
 
@@ -251,17 +282,18 @@
   caption: "Decade of unmet training in DoD's priority theater",
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 1.0), (9, 1.0), stroke: 0.6pt + rgb("#5A6A85"))
+    line((0.5, 1.0), (9, 1.0), stroke: 0.6pt + dgm-rule)
     let years = (2015, 2017, 2019, 2021, 2023)
     let xs = (1.0, 2.8, 4.6, 6.4, 8.2)
     for i in range(years.len()) {
       let x = xs.at(i)
       // gap shown as red X
-      content((x, 1.0), text(font: ("DM Sans",), size: 10pt, fill: rgb("#D4A843"), "×"))
-      content((x, 0.55), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), str(years.at(i))), anchor: "north")
+      content((x, 1.0), text(font: sans, size: 10pt, fill: dgm-accent, "×"))
+      content((x, 0.55), text(font: sans, size: 6pt, fill: dgm-dim, str(years.at(i))), anchor: "north")
     }
-    content((5, 2.6), text(font: ("Instrument Serif",), size: 11pt, style: "italic", fill: rgb("#F5F0E8"), "Indo-Pacific range capacity gap"))
-    content((5, 2.1), text(font: ("DM Sans",), size: 7pt, fill: rgb("#2CC4B3"), tracking: 1pt, upper("DoD top-priority theater")))
+    outcome-mark("adverse", 2.15, 2.6)
+    content((5, 2.6), text(font: serif, size: 11pt, style: "italic", fill: dgm-ink, "Indo-Pacific range capacity gap"))
+    content((5, 2.1), text(font: sans, size: 7pt, fill: dgm-ink, tracking: 1pt, upper("DoD top-priority theater")))
   })
 )
 
@@ -269,17 +301,18 @@
   caption: "Mission-capable rate vs. fleet target",
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 0.6), (9, 0.6), stroke: 0.6pt + rgb("#5A6A85"))
-    line((0.5, 0.6), (0.5, 3.4), stroke: 0.6pt + rgb("#5A6A85"))
+    line((0.5, 0.6), (9, 0.6), stroke: 0.6pt + dgm-rule)
+    line((0.5, 0.6), (0.5, 3.4), stroke: 0.6pt + dgm-rule)
     // target line
-    line((0.5, 3.0), (9, 3.0), stroke: (paint: rgb("#2CC4B3"), thickness: 0.6pt, dash: "dashed"))
-    content((9, 3.1), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "FY21 — 67%"), anchor: "south-east")
+    line((0.5, 3.0), (9, 3.0), stroke: (paint: dgm-ink, thickness: 0.6pt, dash: "dashed"))
+    content((8.9, 3.08), text(font: sans, size: 6pt, fill: dgm-ink, "FY21 — 67%"), anchor: "north-east")
     // actual
     let curve = ((1, 1.9), (2.5, 1.7), (4, 1.6), (5.5, 1.8), (7, 1.7), (8.5, 1.6))
-    line(..curve, stroke: 1.2pt + rgb("#D4A843"))
-    content((9, 1.6), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "FY25 — 44%"), anchor: "west")
-    content((0.3, 3.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("MC rate")), anchor: "south-east")
-    content((4.7, 0.3), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("FY21 → FY25")))
+    line(..curve, stroke: 1.2pt + dgm-adverse)
+    outcome-mark("adverse", 6.85, 1.2)
+    content((8.4, 1.35), text(font: sans, size: 6pt, fill: dgm-adverse, "FY25 — 44%"), anchor: "north-east")
+    content((0.3, 3.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("MC rate")), anchor: "south-east")
+    content((4.7, 0.3), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("FY21 → FY25")))
   })
 )
 
@@ -288,17 +321,18 @@
   cetz.canvas({
     import cetz.draw: *
     // two engines
-    content((2.5, 3.0), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("737-400 (1989)")), anchor: "south")
-    rect((1.2, 2.0), (2.0, 2.6), fill: rgb("#D4A843"), stroke: none)
-    content((1.6, 2.3), text(font: ("DM Sans",), size: 5.5pt, weight: "bold", fill: rgb("#0A1628"), "L"))
-    content((1.6, 1.8), text(font: ("DM Sans",), size: 5.5pt, fill: rgb("#D4A843"), "failing"), anchor: "north")
-    rect((3.0, 2.0), (3.8, 2.6), fill: rgb("#2CC4B3"), stroke: none)
-    content((3.4, 2.3), text(font: ("DM Sans",), size: 5.5pt, weight: "bold", fill: rgb("#0A1628"), "R"))
-    content((3.4, 1.8), text(font: ("DM Sans",), size: 5.5pt, fill: rgb("#2CC4B3"), "ok"), anchor: "north")
+    content((2.5, 3.0), text(font: sans, size: 6.5pt, fill: dgm-dim, tracking: 1pt, upper("737-400 (1989)")), anchor: "south")
+    rect((1.2, 2.0), (2.0, 2.6), fill: dgm-accent, stroke: none)
+    content((1.6, 2.3), text(font: sans, size: 5.5pt, weight: "bold", fill: dgm-onaccent, "L"))
+    content((1.6, 1.8), text(font: sans, size: 5.5pt, fill: dgm-accent, "failing"), anchor: "north")
+    rect((3.0, 2.0), (3.8, 2.6), fill: dgm-ink, stroke: none)
+    content((3.4, 2.3), text(font: sans, size: 5.5pt, weight: "bold", fill: dgm-onaccent, "R"))
+    content((3.4, 1.8), text(font: sans, size: 5.5pt, fill: dgm-ink, "ok"), anchor: "north")
     // arrow to: shutdown choice
-    line((4.2, 2.3), (5.5, 2.3), stroke: 0.8pt + rgb("#5A6A85"))
-    content((6.7, 2.3), text(font: ("DM Sans",), size: 7pt, fill: rgb("#F5F0E8"), "crew shut down R"))
-    content((4.5, 0.4), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#E8C96A"), "47 dead — model matched the wrong aircraft"), anchor: "north")
+    line((4.2, 2.3), (5.5, 2.3), stroke: 0.8pt + dgm-rule)
+    content((6.7, 2.3), text(font: sans, size: 7pt, fill: dgm-ink, "crew shut down R"))
+    outcome-mark("adverse", 1.5, 0.25)
+    content((4.5, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-adverse, "47 dead — the instruments were never read"), anchor: "north")
   })
 )
 
@@ -307,14 +341,15 @@
   cetz.canvas({
     import cetz.draw: *
     // historical bar
-    rect((1.0, 1.4), (1.4, 1.6), fill: rgb("#2CC4B3"), stroke: none)
-    content((1.2, 1.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "historical 15–20%"), anchor: "north")
+    rect((1.0, 1.4), (1.4, 1.6), fill: dgm-ink, stroke: none)
+    content((1.2, 1.2), text(font: sans, size: 6.5pt, fill: dgm-ink, "historical 15–20%"), anchor: "north")
     // desert storm bar
-    rect((4.0, 1.4), (5.7, 2.9), fill: rgb("#D4A843"), stroke: none)
-    content((4.85, 1.2), text(font: ("DM Sans",), size: 6.5pt, weight: "bold", fill: rgb("#D4A843"), "Desert Storm 24%"), anchor: "north")
-    line((0.5, 1.4), (9, 1.4), stroke: 0.4pt + rgb("#5A6A85"))
-    content((7.5, 2.3), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "system-level"), anchor: "south")
-    content((7.5, 2.0), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "capability gap"), anchor: "south")
+    rect((4.0, 1.4), (5.7, 2.9), fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 6.05, 2.15)
+    content((4.85, 1.2), text(font: sans, size: 6.5pt, weight: "bold", fill: dgm-adverse, "Desert Storm 24%"), anchor: "north")
+    line((0.5, 1.4), (9, 1.4), stroke: 0.4pt + dgm-rule)
+    content((7.5, 2.3), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "system-level"), anchor: "south")
+    content((7.5, 2.0), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "capability gap"), anchor: "south")
   })
 )
 
@@ -335,14 +370,15 @@
       (8.5, "ignition control"),
     )
     for (x, lab) in slabs {
-      rect((x - 0.45, 0.8), (x + 0.45, 3.0), fill: rgb("#132240"), stroke: 0.4pt + rgb("#5A6A85"))
+      rect((x - 0.45, 0.8), (x + 0.45, 3.0), fill: dgm-panel-alt, stroke: 0.4pt + dgm-rule)
       // hole
-      circle((x, 1.9), radius: 0.18, fill: rgb("#0A1628"), stroke: none)
-      content((x, 0.6), text(font: ("DM Sans",), size: 5.5pt, fill: rgb("#8A9AB5"), lab), anchor: "north")
+      circle((x, 1.9), radius: 0.18, fill: dgm-onaccent, stroke: none)
+      content((x, 0.6), text(font: sans, size: 5.5pt, fill: dgm-dim, lab), anchor: "north")
     }
     // arrow through the holes
-    line((0.2, 1.9), (8.9, 1.9), stroke: 1pt + rgb("#D4A843"))
-    content((9.1, 1.9), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "→"), anchor: "west")
+    line((0.2, 1.9), (8.9, 1.9), stroke: 1pt + dgm-adverse)
+    content((9.1, 1.9), text(font: sans, size: 6pt, fill: dgm-adverse, "→"), anchor: "west")
+    outcome-mark("adverse", 9.7, 1.9)
   })
 )
 
@@ -350,19 +386,20 @@
   caption: "17 years, same pattern — Challenger to Columbia",
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 1.6), (9, 1.6), stroke: 0.6pt + rgb("#5A6A85"))
+    line((0.5, 1.6), (9, 1.6), stroke: 0.6pt + dgm-rule)
     // Challenger
-    circle((1.5, 1.6), radius: 0.22, fill: rgb("#D4A843"), stroke: none)
-    content((1.5, 2.0), text(font: ("DM Sans",), size: 6.5pt, weight: "bold", fill: rgb("#F5F0E8"), "1986"), anchor: "south")
-    content((1.5, 1.2), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "Challenger"), anchor: "north")
+    circle((1.5, 1.6), radius: 0.22, fill: dgm-accent, stroke: none)
+    content((1.5, 2.0), text(font: sans, size: 6.5pt, weight: "bold", fill: dgm-ink, "1986"), anchor: "south")
+    content((1.5, 1.2), text(font: sans, size: 6pt, fill: dgm-accent, "Challenger"), anchor: "north")
     // Columbia
-    circle((7.5, 1.6), radius: 0.22, fill: rgb("#D4A843"), stroke: none)
-    content((7.5, 2.0), text(font: ("DM Sans",), size: 6.5pt, weight: "bold", fill: rgb("#F5F0E8"), "2003"), anchor: "south")
-    content((7.5, 1.2), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "Columbia"), anchor: "north")
+    circle((7.5, 1.6), radius: 0.22, fill: dgm-accent, stroke: none)
+    content((7.5, 2.0), text(font: sans, size: 6.5pt, weight: "bold", fill: dgm-ink, "2003"), anchor: "south")
+    content((7.5, 1.2), text(font: sans, size: 6pt, fill: dgm-accent, "Columbia"), anchor: "north")
     // arc between
-    bezier((1.5, 1.6), (7.5, 1.6), (3.5, 3.2), (5.5, 3.2), stroke: (paint: rgb("#2CC4B3"), thickness: 0.6pt, dash: "dashed"))
-    content((4.5, 3.0), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#2CC4B3"), "same culture, same failure"))
-    content((4.5, 0.4), text(font: ("Instrument Serif",), size: 8pt, style: "italic", fill: rgb("#E8C96A"), "14 astronauts dead"), anchor: "north")
+    bezier((1.5, 1.6), (7.5, 1.6), (3.5, 3.2), (5.5, 3.2), stroke: (paint: dgm-ink, thickness: 0.6pt, dash: "dashed"))
+    content((4.5, 3.0), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "same culture, same failure"))
+    outcome-mark("adverse", 3.1, 0.27)
+    content((4.5, 0.4), text(font: serif, size: 8pt, style: "italic", fill: dgm-adverse, "14 astronauts dead"), anchor: "north")
   })
 )
 
@@ -371,15 +408,16 @@
   cetz.canvas({
     import cetz.draw: *
     // three concentric arcs representing the three services + a problem in the center
-    content((4.7, 2.0), text(font: ("DM Sans",), size: 6.5pt, weight: "bold", fill: rgb("#D4A843"), "V-22"))
-    circle((4.7, 2.0), radius: 0.5, fill: rgb("#0A1628"), stroke: 0.6pt + rgb("#D4A843"))
+    content((4.7, 2.0), text(font: sans, size: 6.5pt, weight: "bold", fill: dgm-accent, "V-22"))
+    circle((4.7, 2.0), radius: 0.5, fill: dgm-onaccent, stroke: 0.6pt + dgm-accent)
     let svcs = (("USMC", 0.8, 2.4), ("USAF", 7.0, 3.0), ("USN", 7.4, 0.9))
     for (n, x, y) in svcs {
-      circle((x, y), radius: 0.35, fill: rgb("#2CC4B3"), stroke: none)
-      content((x, y), text(font: ("DM Sans",), size: 6pt, weight: "bold", fill: rgb("#0A1628"), n))
-      line((4.7, 2.0), (x, y), stroke: 0.4pt + rgb("#5A6A85"))
+      circle((x, y), radius: 0.35, fill: dgm-ink, stroke: none)
+      content((x, y), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, n))
+      line((4.7, 2.0), (x, y), stroke: 0.4pt + dgm-rule)
     }
-    content((4.7, 0.4), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "62 dead across 16 hull losses"), anchor: "north")
+    outcome-mark("adverse", 2.45, 0.25)
+    content((4.7, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "62 dead across 16 hull losses"), anchor: "north")
   })
 )
 
@@ -388,33 +426,35 @@
 // ============================================================
 
 #let dgm-vincennes = diagram-frame(
-  caption: "Aegis radar data correctly displayed; five operators read it wrong",
+  caption: "Aegis radar had the climb; its display showed no altitude",
   cetz.canvas({
     import cetz.draw: *
     // ascending arrow vs descending arrow
-    content((1.8, 3.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), tracking: 1pt, upper("actual")), anchor: "south")
-    line((0.7, 1.4), (3.0, 2.8), stroke: 1.2pt + rgb("#2CC4B3"))
-    content((3.2, 2.8), text(font: ("DM Sans",), size: 7pt, fill: rgb("#2CC4B3"), "↗ climbing"), anchor: "west")
-    content((6.0, 3.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), tracking: 1pt, upper("perceived")), anchor: "south")
-    line((5.0, 2.8), (7.3, 1.4), stroke: 1.2pt + rgb("#D4A843"))
-    content((7.5, 1.4), text(font: ("DM Sans",), size: 7pt, fill: rgb("#D4A843"), "↘ diving"), anchor: "west")
-    content((4.7, 0.4), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "290 civilians killed"), anchor: "north")
+    content((1.8, 3.2), text(font: sans, size: 6.5pt, fill: dgm-ink, tracking: 1pt, upper("actual")), anchor: "south")
+    line((0.7, 1.4), (3.0, 2.8), stroke: 1.2pt + dgm-ink)
+    content((3.2, 2.8), text(font: sans, size: 7pt, fill: dgm-ink, "↗ climbing"), anchor: "west")
+    content((6.0, 3.2), text(font: sans, size: 6.5pt, fill: dgm-accent, tracking: 1pt, upper("perceived")), anchor: "south")
+    line((5.0, 2.8), (7.3, 1.4), stroke: 1.2pt + dgm-accent)
+    content((7.5, 1.4), text(font: sans, size: 7pt, fill: dgm-accent, "↘ diving"), anchor: "west")
+    outcome-mark("adverse", 3.05, 0.25)
+    content((4.7, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "290 civilians killed"), anchor: "north")
   })
 )
 
 #let dgm-ehr = diagram-frame(
-  caption: "\$30B invested; new error pathways emerged from interface design",
+  caption: "$30B invested; new error pathways emerged from interface design",
   cetz.canvas({
     import cetz.draw: *
     // money flowing in vs harm flowing out
-    rect((0.5, 1.2), (3.5, 2.8), fill: rgb("#132240"), stroke: 0.6pt + rgb("#2CC4B3"))
-    content((2.0, 2.0), text(font: ("Instrument Serif",), size: 14pt, fill: rgb("#2CC4B3"), "\$30B"))
-    content((2.0, 1.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("HITECH 2009")))
-    line((3.7, 2.0), (5.5, 2.0), stroke: 0.8pt + rgb("#5A6A85"))
-    rect((5.7, 1.2), (8.7, 2.8), fill: rgb("#132240"), stroke: 0.6pt + rgb("#D4A843"))
-    content((7.2, 2.2), text(font: ("DM Sans",), size: 7pt, weight: "bold", fill: rgb("#D4A843"), "new error"))
-    content((7.2, 1.85), text(font: ("DM Sans",), size: 7pt, weight: "bold", fill: rgb("#D4A843"), "categories"))
-    content((7.2, 1.5), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("transcription · default · alerts")))
+    rect((0.5, 1.2), (3.5, 2.8), fill: dgm-panel-alt, stroke: 0.6pt + dgm-ink)
+    content((2.0, 2.0), text(font: serif, size: 14pt, fill: dgm-ink, "$30B"))
+    content((2.0, 1.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("HITECH 2009")))
+    line((3.7, 2.0), (5.5, 2.0), stroke: 0.8pt + dgm-rule)
+    rect((5.7, 1.2), (8.7, 2.8), fill: dgm-panel-alt, stroke: 0.6pt + dgm-adverse)
+    outcome-mark("adverse", 9.05, 2.0)
+    content((7.2, 2.2), text(font: sans, size: 7pt, weight: "bold", fill: dgm-adverse, "new error"))
+    content((7.2, 1.85), text(font: sans, size: 7pt, weight: "bold", fill: dgm-adverse, "categories"))
+    content((7.2, 1.5), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("transcription · default · alerts")))
   })
 )
 
@@ -423,17 +463,18 @@
   cetz.canvas({
     import cetz.draw: *
     // road horizon
-    line((0.5, 1.4), (9, 1.4), stroke: 0.6pt + rgb("#5A6A85"))
+    line((0.5, 1.4), (9, 1.4), stroke: 0.6pt + dgm-rule)
     // vehicle
-    rect((1.0, 1.5), (2.0, 2.0), fill: rgb("#D4A843"), stroke: none)
-    content((1.5, 2.2), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "Volvo (autonomous)"), anchor: "south")
+    rect((1.0, 1.5), (2.0, 2.0), fill: dgm-accent, stroke: none)
+    content((1.5, 2.2), text(font: sans, size: 6pt, fill: dgm-accent, "Volvo (autonomous)"), anchor: "south")
     // pedestrian
-    circle((6.5, 1.6), radius: 0.12, fill: rgb("#2CC4B3"), stroke: none)
-    content((6.5, 1.9), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "pedestrian"), anchor: "south")
+    circle((6.5, 1.6), radius: 0.12, fill: dgm-ink, stroke: none)
+    outcome-mark("adverse", 7.08, 1.72)
+    content((6.5, 1.9), text(font: sans, size: 6pt, fill: dgm-ink, "pedestrian"), anchor: "south")
     // operator looking away
-    content((4.5, 3.0), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "operator monitoring a system"))
-    content((4.5, 2.6), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "that worked well most of the time"))
-    content((4.5, 0.5), text(font: ("DM Sans",), size: 7pt, fill: rgb("#E8C96A"), tracking: 1.5pt, upper("emergency braking disabled")), anchor: "north")
+    content((4.5, 3.0), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "operator monitoring a system"))
+    content((4.5, 2.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "that worked well most of the time"))
+    content((4.5, 0.5), text(font: sans, size: 7pt, fill: dgm-accent-soft, tracking: 1.5pt, upper("emergency braking disabled")), anchor: "north")
   })
 )
 
@@ -442,12 +483,12 @@
 // ============================================================
 
 #let dgm-inbloom = diagram-frame(
-  caption: "\$100M of working technology; a coalition of nine shrank to three",
+  caption: "$100M of working technology; a coalition of nine shrank to three",
   cetz.canvas({
     import cetz.draw: *
     // central hub
-    circle((4.7, 2.0), radius: 0.6, fill: rgb("#D4A843"), stroke: none)
-    content((4.7, 2.0), text(font: ("DM Sans",), size: 7pt, weight: "bold", fill: rgb("#0A1628"), "inBloom"))
+    circle((4.7, 2.0), radius: 0.6, fill: dgm-accent, stroke: none)
+    content((4.7, 2.0), text(font: sans, size: 7pt, weight: "bold", fill: dgm-onaccent, "inBloom"))
     // satellites that withdrew
     let n = 9
     for i in range(n) {
@@ -455,10 +496,11 @@
       let cx = 4.7 + 2.6 * calc.cos(theta)
       let cy = 2.0 + 1.4 * calc.sin(theta)
       // crossed-out satellites
-      circle((cx, cy), radius: 0.15, fill: rgb("#5A6A85"), stroke: none)
-      line((cx - 0.18, cy + 0.18), (cx + 0.18, cy - 0.18), stroke: 1pt + rgb("#E8C96A"))
+      circle((cx, cy), radius: 0.15, fill: dgm-rule, stroke: none)
+      line((cx - 0.18, cy + 0.18), (cx + 0.18, cy - 0.18), stroke: 1pt + dgm-accent-soft)
     }
-    content((4.7, 0.3), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#2CC4B3"), "the tech worked; the governance did not"), anchor: "north")
+    outcome-mark("adverse", 1.9, 0.15)
+    content((4.7, 0.3), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "the tech worked; the governance did not"), anchor: "north")
   })
 )
 
@@ -467,28 +509,30 @@
   cetz.canvas({
     import cetz.draw: *
     // Two contrasting bars
-    rect((1.5, 1.4), (1.7, 3.2), fill: rgb("#2CC4B3"), stroke: none)
-    content((1.6, 3.4), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "7M target"), anchor: "south")
-    rect((5.5, 1.4), (5.55, 1.45), fill: rgb("#D4A843"), stroke: none)
-    content((5.5, 1.55), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), "27K actual"), anchor: "south")
-    line((0.5, 1.4), (9, 1.4), stroke: 0.4pt + rgb("#5A6A85"))
-    content((4.5, 0.6), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "no lead integrator, no end-to-end test"), anchor: "north")
+    rect((1.5, 1.4), (1.7, 3.2), fill: dgm-ink, stroke: none)
+    content((1.6, 3.4), text(font: sans, size: 6.5pt, fill: dgm-ink, "7M target"), anchor: "south")
+    rect((5.5, 1.4), (5.55, 1.45), fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 4.5, 1.68)
+    content((5.5, 1.55), text(font: sans, size: 6.5pt, fill: dgm-adverse, "27K actual"), anchor: "south")
+    line((0.5, 1.4), (9, 1.4), stroke: 0.4pt + dgm-rule)
+    content((4.5, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "no lead integrator, no end-to-end test"), anchor: "north")
   })
 )
 
 #let dgm-bhopal = diagram-frame(
-  caption: "Safety systems off-line for four months before the release",
+  caption: "Safety systems off-line for months before the release",
   cetz.canvas({
     import cetz.draw: *
     // Five safety systems, all crossed out
     let systems = ("refrigeration", "scrubber", "flare", "alarm", "training")
     for i in range(systems.len()) {
       let x = 1.0 + i * 1.6
-      rect((x - 0.5, 1.7), (x + 0.5, 2.5), fill: rgb("#132240"), stroke: 0.4pt + rgb("#5A6A85"))
-      line((x - 0.45, 2.45), (x + 0.45, 1.75), stroke: 1pt + rgb("#E8C96A"))
-      content((x, 1.55), text(font: ("DM Sans",), size: 5.5pt, fill: rgb("#8A9AB5"), systems.at(i)), anchor: "north")
+      rect((x - 0.5, 1.7), (x + 0.5, 2.5), fill: dgm-panel-alt, stroke: 0.4pt + dgm-rule)
+      line((x - 0.45, 2.45), (x + 0.45, 1.75), stroke: 1pt + dgm-accent-soft)
+      content((x, 1.55), text(font: sans, size: 5.5pt, fill: dgm-dim, systems.at(i)), anchor: "north")
     }
-    content((4.5, 0.5), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "≈ 20,000 dead · ≈ 500,000 injured"), anchor: "north")
+    outcome-mark("adverse", 1.5, 0.35)
+    content((4.5, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "≈ 15,000–20,000 dead · ≈ 500,000 injured"), anchor: "north")
   })
 )
 
@@ -498,16 +542,17 @@
     import cetz.draw: *
     // Four stacked layers
     let layers = (
-      ("manufacturer fraud",     2.8, rgb("#D4A843")),
-      ("regulatory capture",     2.2, rgb("#D4A843")),
-      ("building control", 1.6, rgb("#D4A843")),
-      ("LFB unprepared",         1.0, rgb("#D4A843")),
+      ("manufacturer fraud",     2.8, dgm-accent),
+      ("regulatory capture",     2.2, dgm-accent),
+      ("building control", 1.6, dgm-accent),
+      ("LFB unprepared",         1.0, dgm-accent),
     )
     for (lab, y, c) in layers {
-      rect((1.0, y - 0.22), (8.5, y + 0.22), fill: rgb("#132240"), stroke: 0.4pt + c)
-      content((1.3, y), text(font: ("DM Sans",), size: 6.5pt, fill: c, lab), anchor: "west")
+      rect((1.0, y - 0.22), (8.5, y + 0.22), fill: dgm-panel-alt, stroke: 0.4pt + c)
+      content((1.3, y), text(font: sans, size: 6.5pt, fill: c, lab), anchor: "west")
     }
-    content((4.7, 0.5), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "72 dead — \"a grey elephant, known but ignored\""), anchor: "north")
+    outcome-mark("adverse", 1.4, 0.35)
+    content((4.7, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "72 dead — \"a grey elephant, known but ignored\""), anchor: "north")
   })
 )
 
@@ -516,13 +561,14 @@
   cetz.canvas({
     import cetz.draw: *
     // Two columns: private vs state
-    content((2.5, 3.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), tracking: 1pt, upper("private school")), anchor: "south")
-    rect((1.5, 1.0), (3.5, 2.9), fill: rgb("#2CC4B3"), stroke: none)
-    content((2.5, 0.8), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "grades held"), anchor: "north")
-    content((7.0, 3.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), tracking: 1pt, upper("disadvantaged state")), anchor: "south")
-    rect((6.0, 1.0), (8.0, 2.2), fill: rgb("#D4A843"), stroke: none)
-    content((7.0, 0.8), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "downgraded 2× more"), anchor: "north")
-    content((4.7, 0.2), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "39% of students downgraded"), anchor: "north")
+    content((2.5, 3.2), text(font: sans, size: 6.5pt, fill: dgm-ink, tracking: 1pt, upper("private school")), anchor: "south")
+    rect((1.5, 1.0), (3.5, 2.9), fill: dgm-ink, stroke: none)
+    content((2.5, 0.8), text(font: sans, size: 6pt, fill: dgm-ink, "grades held"), anchor: "north")
+    content((7.0, 3.2), text(font: sans, size: 6.5pt, fill: dgm-adverse, tracking: 1pt, upper("disadvantaged state")), anchor: "south")
+    rect((6.0, 1.0), (8.0, 2.2), fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 5.65, 0.67)
+    content((7.0, 0.8), text(font: sans, size: 6pt, fill: dgm-adverse, "downgraded 2× more"), anchor: "north")
+    content((4.7, 0.2), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "39% of students downgraded"), anchor: "north")
   })
 )
 
@@ -531,12 +577,13 @@
   cetz.canvas({
     import cetz.draw: *
     // 7% pie
-    rect((0.5, 1.0), (8.9, 1.5), fill: rgb("#132240"), stroke: 0.4pt + rgb("#5A6A85"))
-    rect((0.5, 1.0), (1.1, 1.5), fill: rgb("#2CC4B3"), stroke: none)
-    content((0.8, 0.85), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "7%"), anchor: "north")
-    content((5, 0.85), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "93% — population the assumption did not fit"), anchor: "north")
-    content((4.7, 2.6), text(font: ("Instrument Serif",), size: 10pt, style: "italic", fill: rgb("#F5F0E8"), "470,000 wrongful debt notices"))
-    content((4.7, 2.1), text(font: ("DM Sans",), size: 7pt, fill: rgb("#E8C96A"), tracking: 1pt, upper("A$1.8B settlement")))
+    rect((0.5, 1.0), (8.9, 1.5), fill: dgm-panel-alt, stroke: 0.4pt + dgm-rule)
+    rect((0.5, 1.0), (1.1, 1.5), fill: dgm-ink, stroke: none)
+    content((0.8, 0.85), text(font: sans, size: 6pt, fill: dgm-ink, "7%"), anchor: "north")
+    content((5, 0.85), text(font: sans, size: 6pt, fill: dgm-accent, "93% — population the assumption did not fit"), anchor: "north")
+    outcome-mark("adverse", 2.2, 2.6)
+    content((4.7, 2.6), text(font: serif, size: 10pt, style: "italic", fill: dgm-ink, "470,000 wrongful debt notices"))
+    content((4.7, 2.1), text(font: sans, size: 7pt, fill: dgm-accent-soft, tracking: 1pt, upper("A$1.8B settlement")))
   })
 )
 
@@ -545,15 +592,16 @@
   cetz.canvas({
     import cetz.draw: *
     // false negative columns
-    line((0.5, 0.8), (9, 0.8), stroke: 0.4pt + rgb("#5A6A85"))
-    rect((1.5, 0.8), (2.3, 2.0), fill: rgb("#D4A843"), stroke: none)
-    content((1.9, 2.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), "19% Black"), anchor: "south")
-    rect((4.0, 0.8), (4.8, 2.1), fill: rgb("#D4A843"), stroke: none)
-    content((4.4, 2.3), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), "21% Latinx"), anchor: "south")
-    rect((6.5, 0.8), (7.3, 1.4), fill: rgb("#2CC4B3"), stroke: none)
-    content((6.9, 1.6), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "comparison"), anchor: "south")
-    content((4.5, 0.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("false-negative rate")), anchor: "north")
-    content((4.5, 3.2), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "construct definition determines who gets support"), anchor: "south")
+    line((0.5, 0.8), (9, 0.8), stroke: 0.4pt + dgm-rule)
+    rect((1.5, 0.8), (2.3, 2.0), fill: dgm-adverse, stroke: none)
+    content((1.9, 2.2), text(font: sans, size: 6.5pt, fill: dgm-adverse, "19% Black"), anchor: "south")
+    rect((4.0, 0.8), (4.8, 2.1), fill: dgm-adverse, stroke: none)
+    content((4.4, 2.3), text(font: sans, size: 6.5pt, fill: dgm-adverse, "21% Latinx"), anchor: "south")
+    outcome-mark("adverse", 3.15, 1.45)
+    rect((6.5, 0.8), (7.3, 1.4), fill: dgm-ink, stroke: none)
+    content((6.9, 1.6), text(font: sans, size: 6.5pt, fill: dgm-ink, "comparison"), anchor: "south")
+    content((4.5, 0.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("false-negative rate")), anchor: "north")
+    content((4.5, 3.2), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "construct definition determines who gets support"), anchor: "south")
   })
 )
 
@@ -565,36 +613,38 @@
   caption: "Schedulers falsified records; the measurement system hid the gap",
   cetz.canvas({
     import cetz.draw: *
-    content((2.5, 3.0), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), tracking: 1pt, upper("reported")), anchor: "south")
-    rect((1.5, 1.4), (3.5, 2.6), fill: rgb("#2CC4B3"), stroke: none)
-    content((2.5, 2.0), text(font: ("DM Sans",), size: 6pt, weight: "bold", fill: rgb("#0A1628"), "14 days"))
-    content((7.0, 3.0), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), tracking: 1pt, upper("actual")), anchor: "south")
-    rect((6.0, 1.4), (8.0, 2.6), fill: rgb("#D4A843"), stroke: none)
-    content((7.0, 2.0), text(font: ("DM Sans",), size: 6pt, weight: "bold", fill: rgb("#0A1628"), "6+ months"))
-    line((3.7, 2.0), (5.8, 2.0), stroke: 0.8pt + rgb("#5A6A85"))
-    content((4.75, 2.2), text(font: ("DM Sans",), size: 6pt, fill: rgb("#5A6A85"), "secret list"), anchor: "south")
-    content((4.7, 0.4), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "veterans died while measurement said all was well"), anchor: "north")
+    content((2.5, 3.0), text(font: sans, size: 6.5pt, fill: dgm-ink, tracking: 1pt, upper("reported")), anchor: "south")
+    rect((1.5, 1.4), (3.5, 2.6), fill: dgm-ink, stroke: none)
+    content((2.5, 2.0), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, "14 days"))
+    content((7.0, 3.0), text(font: sans, size: 6.5pt, fill: dgm-adverse, tracking: 1pt, upper("actual")), anchor: "south")
+    rect((6.0, 1.4), (8.0, 2.6), fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 8.35, 2.0)
+    content((7.0, 2.0), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, "6+ months"))
+    line((3.7, 2.0), (5.8, 2.0), stroke: 0.8pt + dgm-rule)
+    content((4.75, 2.2), text(font: sans, size: 6pt, fill: dgm-rule, "secret list"), anchor: "south")
+    content((4.7, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "veterans died while measurement said all was well"), anchor: "north")
   })
 )
 
 #let dgm-gift = diagram-frame(
-  caption: "Adaptive instruction worked; adoption did not cross the boundary",
+  caption: "Adaptive instruction worked; routine adoption stays limited",
   cetz.canvas({
     import cetz.draw: *
     // research bubble
-    circle((2.0, 2.0), radius: 0.7, fill: rgb("#2CC4B3"), stroke: none)
-    content((2.0, 2.0), text(font: ("DM Sans",), size: 6pt, weight: "bold", fill: rgb("#0A1628"), "GIFT"))
-    content((2.0, 0.85), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "ARL"), anchor: "north")
+    circle((2.0, 2.0), radius: 0.7, fill: dgm-ink, stroke: none)
+    content((2.0, 2.0), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, "GIFT"))
+    content((2.0, 0.85), text(font: sans, size: 6pt, fill: dgm-ink, "ARL"), anchor: "north")
     // adoption layer
-    line((4.0, 0.6), (4.0, 3.4), stroke: (paint: rgb("#E8C96A"), thickness: 0.8pt, dash: "dashed"))
-    content((4.0, 3.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#E8C96A"), "institutional"), anchor: "south")
-    content((4.0, 3.1), text(font: ("DM Sans",), size: 6pt, fill: rgb("#E8C96A"), "boundary"), anchor: "south")
+    line((4.0, 0.6), (4.0, 3.4), stroke: (paint: dgm-accent-soft, thickness: 0.8pt, dash: "dashed"))
+    content((4.0, 3.4), text(font: sans, size: 6pt, fill: dgm-accent-soft, "institutional"), anchor: "south")
+    content((4.0, 3.1), text(font: sans, size: 6pt, fill: dgm-accent-soft, "boundary"), anchor: "south")
     // operations side
-    circle((7.0, 2.0), radius: 0.7, fill: rgb("#132240"), stroke: 0.6pt + rgb("#5A6A85"))
-    content((7.0, 2.0), text(font: ("DM Sans",), size: 6pt, fill: rgb("#5A6A85"), "training\nsystems"))
-    line((2.7, 2.0), (3.9, 2.0), stroke: 0.8pt + rgb("#D4A843"))
-    line((4.0, 2.0), (6.3, 2.0), stroke: (paint: rgb("#D4A843"), thickness: 0.8pt, dash: "dashed"))
-    content((6.3, 2.3), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "× discontinued"), anchor: "south")
+    circle((7.0, 2.0), radius: 0.7, fill: dgm-panel-alt, stroke: 0.6pt + dgm-rule)
+    content((7.0, 2.0), text(font: sans, size: 6pt, fill: dgm-rule, "training\nsystems"))
+    line((2.7, 2.0), (3.9, 2.0), stroke: 0.8pt + dgm-accent)
+    line((4.0, 2.0), (6.3, 2.0), stroke: (paint: dgm-adverse, thickness: 0.8pt, dash: "dashed"))
+    outcome-mark("adverse", 5.15, 2.42)
+    content((6.3, 2.3), text(font: sans, size: 6pt, fill: dgm-adverse, "× not adopted"), anchor: "south")
   })
 )
 
@@ -605,26 +655,26 @@
     // five silos
     for i in range(5) {
       let x = 1.0 + i * 1.7
-      rect((x - 0.4, 1.0), (x + 0.4, 2.5), fill: rgb("#132240"), stroke: 0.4pt + rgb("#5A6A85"))
-      content((x, 1.75), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "xAPI"))
-      content((x, 0.85), text(font: ("DM Sans",), size: 5.5pt, fill: rgb("#8A9AB5"), "LMS " + str(i + 1)), anchor: "north")
+      rect((x - 0.4, 1.0), (x + 0.4, 2.5), fill: dgm-panel-alt, stroke: 0.4pt + dgm-rule)
+      content((x, 1.75), text(font: sans, size: 6pt, fill: dgm-ink, "xAPI"))
+      content((x, 0.85), text(font: sans, size: 5.5pt, fill: dgm-dim, "LMS " + str(i + 1)), anchor: "north")
     }
     // weak connections
-    content((4.7, 3.2), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "governance lags the standard"), anchor: "south")
+    content((4.7, 3.2), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "governance lags the standard"), anchor: "south")
   })
 )
 
 #let dgm-17year = diagram-frame(
-  caption: "Research to practice — the canonical implementation gap",
+  caption: "Research to practice — Balas and Boren's canonical estimates, not measurements",
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 1.6), (9, 1.6), stroke: 0.6pt + rgb("#5A6A85"))
-    circle((1.0, 1.6), radius: 0.22, fill: rgb("#2CC4B3"), stroke: none)
-    content((1.0, 2.0), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), "evidence"), anchor: "south")
-    circle((8.5, 1.6), radius: 0.22, fill: rgb("#D4A843"), stroke: none)
-    content((8.5, 2.0), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), "practice"), anchor: "south")
-    content((4.7, 2.6), text(font: ("Instrument Serif",), size: 16pt, fill: rgb("#F5F0E8"), "17 years"))
-    content((4.7, 0.9), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("only 14% ever arrive")), anchor: "north")
+    line((0.5, 1.6), (9, 1.6), stroke: 0.6pt + dgm-rule)
+    circle((1.0, 1.6), radius: 0.22, fill: dgm-ink, stroke: none)
+    content((1.0, 2.0), text(font: sans, size: 6.5pt, fill: dgm-ink, "evidence"), anchor: "south")
+    circle((8.5, 1.6), radius: 0.22, fill: dgm-accent, stroke: none)
+    content((8.5, 2.0), text(font: sans, size: 6.5pt, fill: dgm-accent, "practice"), anchor: "south")
+    content((4.7, 2.6), text(font: serif, size: 16pt, fill: dgm-ink, "17 years"))
+    content((4.7, 0.9), text(font: sans, size: 6.5pt, fill: dgm-dim, tracking: 1pt, upper("≈14% estimated to arrive")), anchor: "north")
   })
 )
 
@@ -633,14 +683,14 @@
 // ============================================================
 
 #let dgm-makary = diagram-frame(
-  caption: "Third leading cause of death — and structurally invisible",
+  caption: "Contested as third-ranking — and structurally invisible",
   cetz.canvas({
     import cetz.draw: *
     // Three bars: heart disease, cancer, medical errors
     let bars = (
-      ("Heart disease", 600, rgb("#5A6A85")),
-      ("Cancer",        595, rgb("#5A6A85")),
-      ("Medical error", 251, rgb("#D4A843")),
+      ("Heart disease", 600, dgm-rule),
+      ("Cancer",        595, dgm-rule),
+      ("Medical error", 251, dgm-accent),
     )
     let max-h = 2.6
     for i in range(bars.len()) {
@@ -648,10 +698,15 @@
       let h = (v / 600) * max-h
       let x = 1.6 + i * 2.6
       rect((x - 0.5, 0.6), (x + 0.5, 0.6 + h), fill: c, stroke: none)
-      content((x, 0.6 + h + 0.2), text(font: ("DM Sans",), size: 6.5pt, fill: c, str(v) + "K"), anchor: "south")
-      content((x, 0.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), lab), anchor: "north")
+      content((x, 0.6 + h + 0.2), text(font: sans, size: 6.5pt, fill: c, str(v) + "K"), anchor: "south")
+      content((x, 0.4), text(font: sans, size: 6pt, fill: dgm-dim, lab), anchor: "north")
     }
-    content((4.5, 3.4), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "deaths per year, U.S."), anchor: "south")
+    // No valence glyph, per editor ruling (August 2026): this figure's focal
+    // value is the contested estimate itself, not a settled outcome, so it is
+    // drawn neutral like dgm-therac and dgm-17year. A triangle here asserts
+    // direction beside a number the caption calls contested, and a reader
+    // could take it as endorsing the number.
+    content((4.5, 3.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "deaths per year, U.S."), anchor: "south")
   })
 )
 
@@ -660,7 +715,7 @@
 // ============================================================
 
 #let dgm-navy-reform = diagram-frame(
-  caption: "Post-Fitzgerald reform: tripled training; pass-or-fail gates",
+  caption: "Post-Fitzgerald reform: planned triple hours; pass-or-fail gates",
   cetz.canvas({
     import cetz.draw: *
     // staircase upward
@@ -668,33 +723,35 @@
     for i in range(steps.len() - 1) {
       let (x1, y1) = steps.at(i)
       let (x2, y2) = steps.at(i + 1)
-      line((x1, y1), (x2, y1), stroke: 1pt + rgb("#D4A843"))
-      line((x2, y1), (x2, y2), stroke: 1pt + rgb("#D4A843"))
+      line((x1, y1), (x2, y1), stroke: 1pt + dgm-good)
+      line((x2, y1), (x2, y2), stroke: 1pt + dgm-good)
     }
     // gate markers
     let gates = ((2.0, "Junior Officer"), (5.0, "Department Head"), (8.0, "Command"))
     for (x, lab) in gates {
-      circle((x, 1.0), radius: 0.12, fill: rgb("#2CC4B3"), stroke: none)
-      content((x, 0.85), text(font: ("DM Sans",), size: 5.5pt, fill: rgb("#2CC4B3"), lab), anchor: "north")
+      circle((x, 1.0), radius: 0.12, fill: dgm-ink, stroke: none)
+      content((x, 0.85), text(font: sans, size: 5.5pt, fill: dgm-ink, lab), anchor: "north")
     }
-    content((4.7, 3.4), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "10 pass-or-fail assessments; 3 are no-go gates"), anchor: "south")
+    outcome-mark("good", 8.4, 3.0)
+    content((4.7, 3.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "10 pass-or-fail assessments; 3 are no-go gates"), anchor: "south")
   })
 )
 
 #let dgm-korean-air = diagram-frame(
-  caption: "Cultural hierarchy removed from the cockpit",
+  caption: "The airline's own diagnosis: flatten the cockpit gradient",
   cetz.canvas({
     import cetz.draw: *
-    content((2.0, 3.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper("before")), anchor: "south")
+    content((2.0, 3.2), text(font: sans, size: 6.5pt, fill: dgm-dim, tracking: 1pt, upper("before")), anchor: "south")
     // steep hierarchy
-    line((0.5, 0.8), (3.5, 3.0), stroke: 1.2pt + rgb("#8A9AB5"))
-    content((0.5, 0.6), text(font: ("DM Sans",), size: 6pt, fill: rgb("#5A6A85"), "FO"), anchor: "north")
-    content((3.7, 3.1), text(font: ("DM Sans",), size: 6pt, fill: rgb("#5A6A85"), "Capt"), anchor: "south")
-    content((7.0, 3.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), tracking: 1pt, upper("after")), anchor: "south")
-    line((5.0, 2.0), (9.0, 2.0), stroke: 1pt + rgb("#2CC4B3"))
-    content((5.0, 1.8), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "FO"), anchor: "north")
-    content((9.0, 1.8), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), "Capt"), anchor: "north")
-    content((4.7, 0.4), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#E8C96A"), "industry pariah → spotless record"), anchor: "north")
+    line((0.5, 0.8), (3.5, 3.0), stroke: 1.2pt + dgm-dim)
+    content((0.5, 0.6), text(font: sans, size: 6pt, fill: dgm-rule, "FO"), anchor: "north")
+    content((3.7, 3.1), text(font: sans, size: 6pt, fill: dgm-rule, "Capt"), anchor: "south")
+    content((7.0, 3.2), text(font: sans, size: 6.5pt, fill: dgm-ink, tracking: 1pt, upper("after")), anchor: "south")
+    line((5.0, 2.0), (9.0, 2.0), stroke: 1pt + dgm-ink)
+    content((5.0, 1.8), text(font: sans, size: 6pt, fill: dgm-ink, "FO"), anchor: "north")
+    content((9.0, 1.8), text(font: sans, size: 6pt, fill: dgm-ink, "Capt"), anchor: "north")
+    outcome-mark("good", 2.2, 0.25)
+    content((4.7, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-good, "industry pariah → spotless record"), anchor: "north")
   })
 )
 
@@ -703,18 +760,18 @@
   cetz.canvas({
     import cetz.draw: *
     // Inverted hierarchy
-    line((0.5, 2.0), (9, 2.0), stroke: 0.6pt + rgb("#5A6A85"))
-    rect((0.7, 1.5), (1.7, 2.5), fill: rgb("#2CC4B3"), stroke: none)
-    content((1.2, 2.0), text(font: ("DM Sans",), size: 6pt, weight: "bold", fill: rgb("#0A1628"), "worker"))
+    line((0.5, 2.0), (9, 2.0), stroke: 0.6pt + dgm-rule)
+    rect((0.7, 1.5), (1.7, 2.5), fill: dgm-ink, stroke: none)
+    content((1.2, 2.0), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, "worker"))
     // pull cord
-    line((1.2, 2.5), (1.2, 3.1), stroke: 1.5pt + rgb("#D4A843"))
-    content((1.2, 3.3), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), "andon"), anchor: "south")
+    line((1.2, 2.5), (1.2, 3.1), stroke: 1.5pt + dgm-accent)
+    content((1.2, 3.3), text(font: sans, size: 6pt, fill: dgm-accent, "andon"), anchor: "south")
     // ripple: production line halts
     for i in range(4) {
       let x = 3.0 + i * 1.6
-      rect((x - 0.35, 1.7), (x + 0.35, 2.3), fill: rgb("#132240"), stroke: 0.4pt + rgb("#5A6A85"))
+      rect((x - 0.35, 1.7), (x + 0.35, 2.3), fill: dgm-panel-alt, stroke: 0.4pt + dgm-rule)
     }
-    content((6, 1.0), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "most calls resolved within the work cycle"), anchor: "north")
+    content((6, 1.0), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "most calls resolved within the work cycle"), anchor: "north")
   })
 )
 
@@ -725,18 +782,18 @@
     let nodes = (
       (1.2, "aviation\nCRM"),
       (4.7, "military\nteams"),
-      (8.2, "healthcare\nTeamSTEPPS"),
+      (8.0, "healthcare\nTeamSTEPPS"),
     )
     for i in range(nodes.len()) {
       let (x, lab) = nodes.at(i)
-      circle((x, 2.0), radius: 0.55, fill: rgb("#D4A843"), stroke: none)
-      content((x, 2.0), text(font: ("DM Sans",), size: 5.5pt, weight: "bold", fill: rgb("#0A1628"), lab))
+      circle((x, 2.0), radius: 0.72, fill: dgm-accent, stroke: none)
+      content((x, 2.0), text(font: sans, size: 5.2pt, weight: "bold", fill: dgm-onaccent, lab))
       if i < nodes.len() - 1 {
         let nx = nodes.at(i + 1).at(0)
-        line((x + 0.6, 2.0), (nx - 0.6, 2.0), stroke: 1pt + rgb("#2CC4B3"))
+        line((x + 0.6, 2.0), (nx - 0.6, 2.0), stroke: 1pt + dgm-ink)
       }
     }
-    content((4.7, 0.5), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "cross-domain capability transfer"), anchor: "north")
+    content((4.7, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "cross-domain capability transfer"), anchor: "north")
   })
 )
 
@@ -744,15 +801,16 @@
   caption: "Same Navy, opposite philosophies — radically different outcomes",
   cetz.canvas({
     import cetz.draw: *
-    line((4.7, 0.5), (4.7, 3.4), stroke: 0.4pt + rgb("#5A6A85"))
-    content((2.0, 3.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), tracking: 1pt, upper("nuclear")), anchor: "south")
-    content((2.0, 2.6), text(font: ("Instrument Serif",), size: 22pt, fill: rgb("#2CC4B3"), "0"))
-    content((2.0, 1.6), text(font: ("DM Sans",), size: 6pt, fill: rgb("#F5F0E8"), "reactor accidents"), anchor: "north")
-    content((2.0, 1.2), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), "60+ years"), anchor: "north")
-    content((7.4, 3.2), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), tracking: 1pt, upper("surface (pre-2017)")), anchor: "south")
-    content((7.4, 2.6), text(font: ("Instrument Serif",), size: 22pt, fill: rgb("#D4A843"), "17"))
-    content((7.4, 1.6), text(font: ("DM Sans",), size: 6pt, fill: rgb("#F5F0E8"), "sailors killed"), anchor: "north")
-    content((7.4, 1.2), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), "two collisions"), anchor: "north")
+    line((4.7, 0.5), (4.7, 3.4), stroke: 0.4pt + dgm-rule)
+    content((2.0, 3.2), text(font: sans, size: 6.5pt, fill: dgm-ink, tracking: 1pt, upper("nuclear")), anchor: "south")
+    content((2.0, 2.6), text(font: serif, size: 22pt, fill: dgm-ink, "0"))
+    content((2.0, 1.6), text(font: sans, size: 6pt, fill: dgm-ink, "reactor accidents"), anchor: "north")
+    content((2.0, 1.2), text(font: sans, size: 6pt, fill: dgm-dim, "60+ years"), anchor: "north")
+    content((7.4, 3.2), text(font: sans, size: 6.5pt, fill: dgm-adverse, tracking: 1pt, upper("surface (pre-2017)")), anchor: "south")
+    content((7.4, 2.6), text(font: serif, size: 22pt, fill: dgm-adverse, "17"))
+    outcome-mark("adverse", 8.3, 2.6)
+    content((7.4, 1.6), text(font: sans, size: 6pt, fill: dgm-ink, "sailors killed"), anchor: "north")
+    content((7.4, 1.2), text(font: sans, size: 6pt, fill: dgm-dim, "two collisions"), anchor: "north")
   })
 )
 
@@ -760,14 +818,15 @@
   caption: "Graduation rate, with equity as a primary constraint",
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 0.6), (9, 0.6), stroke: 0.4pt + rgb("#5A6A85"))
-    line((0.5, 0.6), (0.5, 3.4), stroke: 0.4pt + rgb("#5A6A85"))
+    line((0.5, 0.6), (9, 0.6), stroke: 0.4pt + dgm-rule)
+    line((0.5, 0.6), (0.5, 3.4), stroke: 0.4pt + dgm-rule)
     // 32 → 54
     let pts = ((1.0, 1.1), (2.5, 1.4), (4.0, 1.9), (5.5, 2.4), (7.0, 2.7), (8.5, 2.9))
-    line(..pts, stroke: 1.2pt + rgb("#D4A843"))
-    content((1.0, 1.1), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), " 32%"), anchor: "west")
-    content((8.5, 2.9), text(font: ("DM Sans",), size: 6pt, fill: rgb("#D4A843"), " 54%"), anchor: "west")
-    content((4.7, 3.2), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#2CC4B3"), "equity gap eliminated"))
+    line(..pts, stroke: 1.2pt + dgm-good)
+    content((1.0, 1.35), text(font: sans, size: 6pt, fill: dgm-good, "32%"), anchor: "south-west")
+    outcome-mark("good", 8.85, 2.78)
+    content((8.5, 2.9), text(font: sans, size: 6pt, fill: dgm-good, "54%"), anchor: "south-east")
+    content((4.7, 3.2), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "equity gap eliminated"))
   })
 )
 
@@ -783,13 +842,14 @@
     )
     for i in range(stages.len()) {
       let (x, lab) = stages.at(i)
-      circle((x, 2.0), radius: 0.45, fill: rgb("#2CC4B3"), stroke: none)
-      content((x, 2.0), text(font: ("DM Sans",), size: 5.5pt, weight: "bold", fill: rgb("#0A1628"), lab))
+      circle((x, 2.0), radius: 0.45, fill: dgm-ink, stroke: none)
+      content((x, 2.0), text(font: sans, size: 5.5pt, weight: "bold", fill: dgm-onaccent, lab))
       if i < stages.len() - 1 {
-        line((x + 0.5, 2.0), (stages.at(i + 1).at(0) - 0.5, 2.0), stroke: 0.8pt + rgb("#D4A843"))
+        line((x + 0.5, 2.0), (stages.at(i + 1).at(0) - 0.5, 2.0), stroke: 0.8pt + dgm-good)
       }
     }
-    content((4.7, 0.5), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), "the LE process working as intended"), anchor: "north")
+    outcome-mark("good", 9.1, 2.0)
+    content((4.7, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "the LE process working as intended"), anchor: "north")
   })
 )
 
@@ -804,10 +864,10 @@
   caption: caption,
   cetz.canvas({
     import cetz.draw: *
-    content((4.7, 2.5), text(font: ("Instrument Serif",), size: 32pt, fill: rgb("#D4A843"), big))
-    content((4.7, 1.6), text(font: ("DM Sans",), size: 8pt, tracking: 1.4pt, fill: rgb("#F5F0E8"), upper(sub)))
+    content((4.7, 2.5), text(font: serif, size: 32pt, fill: dgm-accent, big))
+    content((4.7, 1.6), text(font: sans, size: 8pt, tracking: 1.4pt, fill: dgm-ink, upper(sub)))
     if micro != none {
-      content((4.7, 0.6), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#8A9AB5"), micro))
+      content((4.7, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-dim, micro))
     }
   })
 )
@@ -818,7 +878,7 @@
   caption: caption,
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 1.4), (9, 1.4), stroke: 0.6pt + rgb("#5A6A85"))
+    line((0.5, 1.4), (9, 1.4), stroke: 0.6pt + dgm-rule)
     let n = events.len()
     let x0 = 0.9
     let x1 = 8.6
@@ -829,11 +889,11 @@
       let sub = if events.at(i).len() > 1 { events.at(i).at(1) } else { none }
       let is-emph = emphasis != none and emphasis == i
       let r = if is-emph { 0.20 } else { 0.14 }
-      let c = if is-emph { rgb("#E8C96A") } else { rgb("#D4A843") }
+      let c = if is-emph { dgm-accent-soft } else { dgm-accent }
       circle((x, 1.4), radius: r, fill: c, stroke: none)
-      content((x, 2.0), text(font: ("DM Sans",), size: 6.4pt, weight: if is-emph { "bold" } else { "regular" }, fill: rgb("#F5F0E8"), lab), anchor: "south")
+      content((x, 2.0), text(font: sans, size: 6.4pt, weight: if is-emph { "bold" } else { "regular" }, fill: dgm-ink, lab), anchor: "south")
       if sub != none {
-        content((x, 1.0), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), sub), anchor: "north")
+        content((x, 1.0), text(font: sans, size: 6pt, fill: dgm-dim, sub), anchor: "north")
       }
     }
   })
@@ -856,15 +916,15 @@
     let hole-x = 7.6
     for i in range(n) {
       let y = y-top - i * step
-      rect((0.6, y - 0.18), (8.6, y + 0.18), fill: rgb("#1F2A44"), stroke: 0.4pt + rgb("#5A6A85"))
-      circle((hole-x, y), radius: 0.11, fill: rgb("#0A1628"), stroke: none)
-      content((0.8, y), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#D4A843"), layers.at(i)), anchor: "west")
+      rect((0.6, y - 0.18), (8.6, y + 0.18), fill: dgm-panel, stroke: 0.4pt + dgm-rule)
+      circle((hole-x, y), radius: 0.11, fill: dgm-onaccent, stroke: none)
+      content((0.8, y), text(font: sans, size: 6.5pt, fill: dgm-accent, layers.at(i)), anchor: "west")
     }
     // dashed line piercing the column of holes
     line((hole-x, y-top + 0.4), (hole-x, y-bot - 0.4),
-      stroke: (paint: rgb("#E8C96A"), thickness: 0.9pt, dash: "dashed"))
+      stroke: (paint: dgm-accent-soft, thickness: 0.9pt, dash: "dashed"))
     if outcome != none {
-      content((4.6, 0.5), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), outcome), anchor: "north")
+      content((4.6, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, outcome), anchor: "north")
     }
   })
 )
@@ -883,15 +943,15 @@
     cetz.canvas({
       import cetz.draw: *
       // dividing line
-      line((4.7, 0.6), (4.7, 3.4), stroke: 0.4pt + rgb("#5A6A85"))
+      line((4.7, 0.6), (4.7, 3.4), stroke: 0.4pt + dgm-rule)
       // left column
-      content((2.2, 3.2), text(font: ("DM Sans",), size: 6.5pt, tracking: 1pt, fill: rgb("#2CC4B3"), upper(left-label)), anchor: "south")
-      content((2.2, 2.3), text(font: ("Instrument Serif",), size: val-size, fill: rgb("#2CC4B3"), left-value))
+      content((2.2, 3.2), text(font: sans, size: 6.5pt, tracking: 1pt, fill: dgm-ink, upper(left-label)), anchor: "south")
+      content((2.2, 2.3), text(font: serif, size: val-size, fill: dgm-ink, left-value))
       // right column
-      content((7.2, 3.2), text(font: ("DM Sans",), size: 6.5pt, tracking: 1pt, fill: rgb("#D4A843"), upper(right-label)), anchor: "south")
-      content((7.2, 2.3), text(font: ("Instrument Serif",), size: val-size, fill: rgb("#D4A843"), right-value))
+      content((7.2, 3.2), text(font: sans, size: 6.5pt, tracking: 1pt, fill: dgm-accent, upper(right-label)), anchor: "south")
+      content((7.2, 2.3), text(font: serif, size: val-size, fill: dgm-accent, right-value))
       if framing != none {
-        content((4.7, 0.4), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), framing), anchor: "north")
+        content((4.7, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, framing), anchor: "north")
       }
     })
   )
@@ -902,16 +962,16 @@
   caption: caption,
   cetz.canvas({
     import cetz.draw: *
-    line((0.5, 0.8), (9, 0.8), stroke: 0.4pt + rgb("#5A6A85"))
+    line((0.5, 0.8), (9, 0.8), stroke: 0.4pt + dgm-rule)
     let max-h = 2.4
     let s = small-h * max-h
     let b = big-h * max-h
-    rect((1.5, 0.8), (2.5, 0.8 + s), fill: rgb("#2CC4B3"), stroke: none)
-    content((2.0, 0.6), text(font: ("DM Sans",), size: 6.5pt, fill: rgb("#2CC4B3"), small-label), anchor: "north")
-    rect((6.0, 0.8), (7.0, 0.8 + b), fill: rgb("#D4A843"), stroke: none)
-    content((6.5, 0.6), text(font: ("DM Sans",), size: 6.5pt, weight: "bold", fill: rgb("#D4A843"), big-label), anchor: "north")
+    rect((1.5, 0.8), (2.5, 0.8 + s), fill: dgm-ink, stroke: none)
+    content((2.0, 0.6), text(font: sans, size: 6.5pt, fill: dgm-ink, small-label), anchor: "north")
+    rect((6.0, 0.8), (7.0, 0.8 + b), fill: dgm-accent, stroke: none)
+    content((6.5, 0.6), text(font: sans, size: 6.5pt, weight: "bold", fill: dgm-accent, big-label), anchor: "north")
     if framing != none {
-      content((4.7, 3.3), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), framing))
+      content((4.7, 3.3), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, framing))
     }
   })
 )
@@ -924,21 +984,21 @@
     import cetz.draw: *
     let cx0 = 4.7
     let cy0 = 2.7
-    circle((cx0, cy0), radius: 0.55, fill: rgb("#D4A843"), stroke: none)
-    content((cx0, cy0), text(font: ("DM Sans",), size: 6pt, weight: "bold", fill: rgb("#0A1628"), center-label))
+    circle((cx0, cy0), radius: 0.55, fill: dgm-accent, stroke: none)
+    content((cx0, cy0), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, center-label))
     let n = satellites.len()
     // Place satellites symmetrically left/right with first one at top.
     for i in range(n) {
       let theta = -90deg + i * 360deg / n
       let cx = cx0 + 1.9 * calc.cos(theta)
       let cy = cy0 + 1.0 * calc.sin(theta)
-      circle((cx, cy), radius: 0.16, fill: rgb("#2CC4B3"), stroke: none)
-      line((cx0, cy0), (cx, cy), stroke: 0.4pt + rgb("#5A6A85"))
+      circle((cx, cy), radius: 0.16, fill: dgm-ink, stroke: none)
+      line((cx0, cy0), (cx, cy), stroke: 0.4pt + dgm-rule)
       content((cx + 0.40 * calc.cos(theta), cy + 0.40 * calc.sin(theta)),
-        text(font: ("DM Sans",), size: 5.5pt, fill: rgb("#F5F0E8"), satellites.at(i)))
+        text(font: sans, size: 5.5pt, fill: dgm-ink, satellites.at(i)))
     }
     if framing != none {
-      content((cx0, 0.5), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), framing), anchor: "north")
+      content((cx0, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, framing), anchor: "north")
     }
   })
 )
@@ -954,14 +1014,14 @@
     let step = if n > 1 { (x1 - x0) / (n - 1) } else { 0 }
     for i in range(n) {
       let x = x0 + i * step
-      circle((x, 2.0), radius: 0.45, fill: rgb("#2CC4B3"), stroke: none)
-      content((x, 2.0), text(font: ("DM Sans",), size: 5.5pt, weight: "bold", fill: rgb("#0A1628"), stages.at(i)))
+      circle((x, 2.0), radius: 0.45, fill: dgm-ink, stroke: none)
+      content((x, 2.0), text(font: sans, size: 5.5pt, weight: "bold", fill: dgm-onaccent, stages.at(i)))
       if i < n - 1 {
-        line((x + 0.5, 2.0), (x0 + (i + 1) * step - 0.5, 2.0), stroke: 0.8pt + rgb("#D4A843"))
+        line((x + 0.5, 2.0), (x0 + (i + 1) * step - 0.5, 2.0), stroke: 0.8pt + dgm-accent)
       }
     }
     if framing != none {
-      content((4.7, 0.5), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#F5F0E8"), framing), anchor: "north")
+      content((4.7, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, framing), anchor: "north")
     }
   })
 )
@@ -976,23 +1036,23 @@
   cetz.canvas({
     import cetz.draw: *
     // axes (left + bottom)
-    line((0.5, 0.6), (9, 0.6), stroke: 0.4pt + rgb("#5A6A85"))
-    line((0.5, 0.6), (0.5, 3.0), stroke: 0.4pt + rgb("#5A6A85"))
+    line((0.5, 0.6), (9, 0.6), stroke: 0.4pt + dgm-rule)
+    line((0.5, 0.6), (0.5, 3.0), stroke: 0.4pt + dgm-rule)
     if y-label != none {
-      content((0.3, 3.0), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper(y-label)), anchor: "south-east")
+      content((0.3, 3.0), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper(y-label)), anchor: "south-east")
     }
     if x-label != none {
-      content((9, 0.4), text(font: ("DM Sans",), size: 6pt, fill: rgb("#8A9AB5"), tracking: 1pt, upper(x-label)), anchor: "north-east")
+      content((9, 0.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper(x-label)), anchor: "north-east")
     }
-    line(..points, stroke: 1.2pt + rgb("#D4A843"))
+    line(..points, stroke: 1.2pt + dgm-accent)
     if milestone != none {
-      line((milestone, 0.6), (milestone, 2.9), stroke: (paint: rgb("#2CC4B3"), thickness: 0.5pt, dash: "dashed"))
+      line((milestone, 0.6), (milestone, 2.9), stroke: (paint: dgm-ink, thickness: 0.5pt, dash: "dashed"))
       if milestone-label != none {
-        content((milestone, 3.0), text(font: ("DM Sans",), size: 6pt, fill: rgb("#2CC4B3"), milestone-label), anchor: "south")
+        content((milestone, 3.0), text(font: sans, size: 6pt, fill: dgm-ink, milestone-label), anchor: "south")
       }
     }
     if framing != none {
-      content((4.7, 3.5), text(font: ("Instrument Serif",), size: 9pt, style: "italic", fill: rgb("#E8C96A"), framing), anchor: "south")
+      content((4.7, 3.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-accent-soft, framing), anchor: "south")
     }
   })
 )
@@ -1034,7 +1094,7 @@
       line(
         (x1 + (node-r + 0.05) * ux, y1 + (node-r + 0.05) * uy),
         (x2 - (node-r + 0.18) * ux, y2 - (node-r + 0.18) * uy),
-        stroke: 0.9pt + rgb("#D4A843"),
+        stroke: 0.9pt + dgm-accent,
         mark: (end: ">", size: 0.18),
       )
     }
@@ -1044,15 +1104,15 @@
       // radial unit vector from center to node, used to push the label outward
       let rx = (x - cx) / r
       let ry = (y - cy) / r
-      circle((x, y), radius: node-r, fill: rgb("#2CC4B3"), stroke: none)
+      circle((x, y), radius: node-r, fill: dgm-ink, stroke: none)
       content(
         (x + 0.55 * rx, y + 0.55 * ry),
-        text(font: ("DM Sans",), size: 7.4pt, weight: "bold", fill: rgb("#0A1628"), nodes.at(i)),
+        text(font: sans, size: 7.4pt, weight: "bold", fill: dgm-ink, nodes.at(i)),
       )
     }
     // center label
-    content((cx, cy + 0.2), text(font: ("Instrument Serif",), size: 10pt, style: "italic", fill: rgb("#F5F0E8"), "the LENS"))
-    content((cx, cy - 0.2), text(font: ("Instrument Serif",), size: 10pt, style: "italic", fill: rgb("#F5F0E8"), "Practice Flywheel"))
+    content((cx, cy + 0.2), text(font: serif, size: 10pt, style: "italic", fill: dgm-ink, "the LENS"))
+    content((cx, cy - 0.2), text(font: serif, size: 10pt, style: "italic", fill: dgm-ink, "Practice Flywheel"))
   })
 )
 
@@ -1066,18 +1126,18 @@
     import cetz.draw: *
     let cy = 3.2
     let node-r = 0.55
-    let icon-stroke = 1.4pt + rgb("#F5F0E8")
+    let icon-stroke = 1.4pt + dgm-onaccent
     // five evenly spaced node centers along the canvas
     let xs = (1.1, 3.0, 4.9, 6.8, 8.7)
     // connecting line behind the nodes
-    line((xs.at(0), cy), (xs.at(-1), cy), stroke: 0.8pt + rgb("#2CC4B3").lighten(40%))
+    line((xs.at(0), cy), (xs.at(-1), cy), stroke: 0.8pt + dgm-ink.lighten(40%))
     // node colors — intersectional expertise (index 2) is highlighted
     let ring-colors = (
-      rgb("#2CC4B3"),
-      rgb("#2CC4B3"),
-      rgb("#D26B43"),
-      rgb("#2CC4B3"),
-      rgb("#2CC4B3"),
+      dgm-ink,
+      dgm-ink,
+      dgm-accent,
+      dgm-ink,
+      dgm-ink,
     )
     let labels-top = ("Mission", "JHU", "Intersectional", "Capability", "Flywheel")
     let labels-bot = ("Literacy", "Ecosystem", "Expertise", "Focus", "Iteration")
@@ -1085,15 +1145,15 @@
     // 1) draw the rings (no icons yet) + the labels under each
     for i in range(xs.len()) {
       let x = xs.at(i)
-      circle((x, cy), radius: node-r, fill: navy, stroke: 2.2pt + ring-colors.at(i))
+      circle((x, cy), radius: node-r, fill: dgm-ink, stroke: 2.2pt + ring-colors.at(i))
       content(
         (x, cy - node-r - 0.45),
-        text(font: ("DM Sans",), size: 7.5pt, weight: "bold", fill: rgb("#F5F0E8"), labels-top.at(i)),
+        text(font: sans, size: 7.5pt, weight: "bold", fill: dgm-ink, labels-top.at(i)),
         anchor: "north",
       )
       content(
         (x, cy - node-r - 0.85),
-        text(font: ("DM Sans",), size: 7.5pt, weight: "bold", fill: rgb("#F5F0E8"), labels-bot.at(i)),
+        text(font: sans, size: 7.5pt, weight: "bold", fill: dgm-ink, labels-bot.at(i)),
         anchor: "north",
       )
     }
@@ -1101,7 +1161,7 @@
     // 2) icon 1 — target reticle (Mission Literacy)
     let x1 = xs.at(0)
     circle((x1, cy), radius: 0.18, stroke: icon-stroke)
-    circle((x1, cy), radius: 0.045, stroke: none, fill: rgb("#F5F0E8"))
+    circle((x1, cy), radius: 0.045, stroke: none, fill: dgm-ink)
     line((x1 - 0.30, cy), (x1 - 0.10, cy), stroke: icon-stroke)
     line((x1 + 0.10, cy), (x1 + 0.30, cy), stroke: icon-stroke)
     line((x1, cy - 0.30), (x1, cy - 0.10), stroke: icon-stroke)
@@ -1132,16 +1192,16 @@
     line((rx, cy), (bx, cy), stroke: icon-stroke)
     line((rx, cy), (bx, cy - 0.22), stroke: icon-stroke)
     // nodes drawn over lines
-    circle((rx, cy), radius: 0.07, fill: rgb("#F5F0E8"), stroke: none)
-    circle((bx, cy + 0.22), radius: 0.07, fill: rgb("#F5F0E8"), stroke: none)
-    circle((bx, cy), radius: 0.07, fill: rgb("#F5F0E8"), stroke: none)
-    circle((bx, cy - 0.22), radius: 0.07, fill: rgb("#F5F0E8"), stroke: none)
+    circle((rx, cy), radius: 0.07, fill: dgm-ink, stroke: none)
+    circle((bx, cy + 0.22), radius: 0.07, fill: dgm-ink, stroke: none)
+    circle((bx, cy), radius: 0.07, fill: dgm-ink, stroke: none)
+    circle((bx, cy - 0.22), radius: 0.07, fill: dgm-ink, stroke: none)
 
     // 5) icon 4 — bullseye (Capability Focus)
     let x4 = xs.at(3)
     circle((x4, cy), radius: 0.28, stroke: icon-stroke)
     circle((x4, cy), radius: 0.18, stroke: icon-stroke)
-    circle((x4, cy), radius: 0.08, fill: rgb("#F5F0E8"), stroke: none)
+    circle((x4, cy), radius: 0.08, fill: dgm-ink, stroke: none)
 
     // 6) icon 5 — two-arrow refresh / cycle (Flywheel Iteration)
     // Matches the updated icon on the official LENS slide: two
@@ -1161,7 +1221,7 @@
         let p1 = (x5 + arc-r * calc.cos(a1), cy + arc-r * calc.sin(a1))
         let p2 = (x5 + arc-r * calc.cos(a2), cy + arc-r * calc.sin(a2))
         if j == n-segs - 1 {
-          line(p1, p2, stroke: icon-stroke, mark: (end: ">", size: 0.11, fill: rgb("#F5F0E8")))
+          line(p1, p2, stroke: icon-stroke, mark: (end: ">", size: 0.11, fill: dgm-ink))
         } else {
           line(p1, p2, stroke: icon-stroke)
         }
@@ -1172,9 +1232,9 @@
     content(
       (4.9, 5.7),
       text(
-        font: ("Instrument Serif",),
+        font: serif,
         size: 18pt,
-        fill: rgb("#F5F0E8"),
+        fill: dgm-ink,
         "Why LENS?",
       ),
     )
@@ -1191,9 +1251,9 @@
     import cetz.draw: *
     let cy = 3.2
     let node-r = 0.55
-    let icon-stroke = 1.4pt + rgb("#F5F0E8")
+    let icon-stroke = 1.4pt + dgm-onaccent
     let xs = (1.1, 3.0, 4.9, 6.8, 8.7)
-    line((xs.at(0), cy), (xs.at(-1), cy), stroke: 0.8pt + rgb("#2CC4B3").lighten(40%))
+    line((xs.at(0), cy), (xs.at(-1), cy), stroke: 0.8pt + dgm-ink.lighten(40%))
 
     // Two-line labels under each node — canonical competency names
     let labels-top = ("Systems", "Iterative", "Human-System", "Test and", "Sociotech.")
@@ -1202,15 +1262,15 @@
     // Rings and labels first
     for i in range(xs.len()) {
       let x = xs.at(i)
-      circle((x, cy), radius: node-r, fill: navy, stroke: 2.2pt + rgb("#2CC4B3"))
+      circle((x, cy), radius: node-r, fill: dgm-ink, stroke: 2.2pt + dgm-accent)
       content(
         (x, cy - node-r - 0.45),
-        text(font: ("DM Sans",), size: 7.5pt, weight: "bold", fill: rgb("#F5F0E8"), labels-top.at(i)),
+        text(font: sans, size: 7.5pt, weight: "bold", fill: dgm-ink, labels-top.at(i)),
         anchor: "north",
       )
       content(
         (x, cy - node-r - 0.85),
-        text(font: ("DM Sans",), size: 7.5pt, weight: "bold", fill: rgb("#F5F0E8"), labels-bot.at(i)),
+        text(font: sans, size: 7.5pt, weight: "bold", fill: dgm-ink, labels-bot.at(i)),
         anchor: "north",
       )
     }
@@ -1222,12 +1282,12 @@
     let r1c = 0.08
     rect((x1 - r1, cy - r1), (x1 + r1, cy + r1), stroke: icon-stroke)
     rect((x1 - r1b, cy - r1b), (x1 + r1b, cy + r1b), stroke: icon-stroke)
-    rect((x1 - r1c, cy - r1c), (x1 + r1c, cy + r1c), fill: rgb("#F5F0E8"), stroke: none)
+    rect((x1 - r1c, cy - r1c), (x1 + r1c, cy + r1c), fill: dgm-ink, stroke: none)
 
     // Icon 2 — LE Design and Implementation: stylized gear
     let x2 = xs.at(1)
     circle((x2, cy), radius: 0.16, stroke: icon-stroke)
-    circle((x2, cy), radius: 0.05, fill: rgb("#F5F0E8"), stroke: none)
+    circle((x2, cy), radius: 0.05, fill: dgm-ink, stroke: none)
     // 8 radial teeth
     for k in range(8) {
       let theta = k * 45deg
@@ -1251,7 +1311,7 @@
     for k in range(4) {
       let bx = x3 - 0.27 + k * (bar-w + bar-pad)
       let bh = bars.at(k)
-      rect((bx, cy - 0.18), (bx + bar-w, cy - 0.18 + bh), fill: rgb("#F5F0E8"), stroke: none)
+      rect((bx, cy - 0.18), (bx + bar-w, cy - 0.18 + bh), fill: dgm-ink, stroke: none)
     }
 
     // Icon 4 — Context and Domain Fluency: three stacked horizontal bands
@@ -1265,7 +1325,7 @@
       rect(
         (x4 - band-w / 2, by),
         (x4 + band-w / 2, by + band-h),
-        fill: rgb("#F5F0E8"),
+        fill: dgm-ink,
         stroke: none,
       )
     }
@@ -1277,15 +1337,15 @@
     circle((x5 - off, cy), radius: r5, stroke: icon-stroke)
     circle((x5 + off, cy), radius: r5, stroke: icon-stroke)
     // Intersection dot to suggest overlap
-    circle((x5, cy), radius: 0.05, fill: rgb("#F5F0E8"), stroke: none)
+    circle((x5, cy), radius: 0.05, fill: dgm-ink, stroke: none)
 
     // title across the top
     content(
       (4.9, 5.7),
       text(
-        font: ("Instrument Serif",),
+        font: serif,
         size: 18pt,
-        fill: rgb("#F5F0E8"),
+        fill: dgm-ink,
         "What LENS graduates can do.",
       ),
     )

@@ -2,8 +2,9 @@
 // Appendix — LEOs & Course Coverage.
 // The competency -> concentration-learning-outcome crosswalk, the
 // LEN course list with live per-course case counts across the full
-// 202-case corpus, and the course-coverage narrative (condensed from
-// the introduction's former section IX, updated to 202 cases).
+// 191-case active corpus, and the course-coverage narrative (condensed from
+// the introduction's former section IX; case count re-derived from the live
+// corpus rather than carried forward by hand.
 // ============================================================
 
 #import "../lib/theme.typ": *
@@ -71,7 +72,7 @@
 #text(font: sans, size: _body, fill: text-dark)[
   Each case names the LEN courses it serves as a worked example for, and
   most cases serve several. The counts below are therefore not a
-  partition of the 202 cases — they sum to well more than 202, because a
+  partition of the 191 active cases — they sum to well more than 191, because a
   single case typically appears under three or four courses.
 ]
 
@@ -87,32 +88,51 @@
   text(font: sans, size: _body, fill: text-dark, count),
 )
 
-#block(
-  width: 100%,
-  stroke: (left: 2pt + gold),
-  inset: (left: 10pt, y: 4pt),
-  {
-    len-row("LEN 1", "Principles of learning engineering", "36")
-    line(length: 100%, stroke: 0.25pt + rule-soft)
-    len-row("LEN 2", "Human-AI teaming", "54")
-    line(length: 100%, stroke: 0.25pt + rule-soft)
-    len-row("LEN 3", "Systems integration", "49")
-    line(length: 100%, stroke: 0.25pt + rule-soft)
-    len-row("LEN 4", "Evidence and measurement", "67")
-    line(length: 100%, stroke: 0.25pt + rule-soft)
-    len-row("LEN 5", "Capability analysis", "86")
-    line(length: 100%, stroke: 0.25pt + rule-soft)
-    len-row("LEN 6", "Applied problem-solving", "18")
-    line(length: 100%, stroke: 0.25pt + rule-soft)
-    len-row("LEN 7", "Bias and governance", "114")
-    line(length: 100%, stroke: 0.25pt + rule-soft)
-    len-row("LEN 8", "Knowledge transfer", "98")
-    line(length: 100%, stroke: 0.25pt + rule-soft)
-    len-row("LEN 9", "Computational methods", "30")
-    line(length: 100%, stroke: 0.25pt + rule-soft)
-    len-row("LEN 10", "Capstone studio", "19")
-  },
+// Course topics are authored here; the CASE COUNTS ARE QUERIED LIVE from
+// the <caseinfo> metadata, so this table can never drift from the course
+// index a few leaves later (it did: the hand-maintained figures were wrong
+// for eight of the ten courses). Sort key pulls the digits out of "LEN 10".
+#let len-topics = (
+  "LEN 1":  "Principles of learning engineering",
+  "LEN 2":  "Human-AI teaming",
+  "LEN 3":  "Systems integration",
+  "LEN 4":  "Evidence and measurement",
+  "LEN 5":  "Capability analysis",
+  "LEN 6":  "Applied problem-solving",
+  "LEN 7":  "Bias and governance",
+  "LEN 8":  "Knowledge transfer",
+  "LEN 9":  "Computational methods",
+  "LEN 10": "Capstone studio",
 )
+
+#let len-num(k) = {
+  let d = k.replace(regex("[^0-9]"), "")
+  if d == "" { 9999 } else { int(d) }
+}
+
+#context {
+  let tally = (:)
+  for e in query(<caseinfo>).map(m => m.value) {
+    for c in e.courses {
+      let key = str(c).trim()
+      if key != "" { tally.insert(key, tally.at(key, default: 0) + 1) }
+    }
+  }
+  let keys = tally.keys().sorted(key: len-num)
+  block(
+    width: 100%,
+    stroke: (left: 2pt + gold),
+    inset: (left: 10pt, y: 4pt),
+    {
+      let first = true
+      for k in keys {
+        if not first { line(length: 100%, stroke: 0.25pt + rule-soft) }
+        first = false
+        len-row(k, len-topics.at(k, default: ""), str(tally.at(k)))
+      }
+    },
+  )
+}
 
 #v(if condensed { 8pt } else { 12pt })
 
@@ -125,7 +145,7 @@
   the ones the existing case literature most readily supports: bias and
   governance (LEN 7) and knowledge transfer (LEN 8) lead, with capability
   analysis (LEN 5) and evidence and measurement (LEN 4) close behind.
-  Across 202 cases the corpus is saturated with examples of #emph[what
+  Across the 191 active cases the corpus is saturated with examples of #emph[what
   goes wrong when ethics, governance, evidence, and institutional
   learning are not engineered] — and, in the success cases, what it takes
   to engineer them.

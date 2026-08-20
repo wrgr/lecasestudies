@@ -968,3 +968,280 @@ The **fact check** confronted every claim with the primary document. 48 batches 
 **Production consequence.** Main volume 265 → **275 pp** (spine 16.46 → **17.08 mm**); complete edition 849 → **883 pp**. `check-cases.sh` reports 191 converted / 0 failures; the compression gate reports 15 known leads, 0 new.
 
 **Editorial decisions deferred to the program owner** are collected in `fact-check-editor-memo.md`: two COI disclosures whose institutional basis moved (Cases 48, 68), seven evidence-tier flags whose stated rationale no longer holds, the twelve remaining "cultural half" passages across five cases, and the standing recommendation to bind `#cn()` markers to specific reference entries rather than counting them.
+
+### Addendum (August 2026): compression-field consistency, and the evidence-tier ruling
+
+A spot check of the corrected corpus — Cases 19, 98, 154, 155 and `dgm-andon`, read in their post-sweep state — found the fact check had landed **unevenly inside each case**. The narrative bodies were corrected; the compression fields around them were not. The result was a case that argued against itself: Case 155's Evidence section said *"No study isolates the cord's marginal contribution"* over `beats` that still read *"Toyota's protected authority is the variable"*, and Case 19 admitted the trial *"could not decompose"* the bundle under a pull quote that still read *"Neither worked without the other."*
+
+This is the original Andon defect inverted. It began as a folk claim in `impact:` wrapped around a better body; the sweep corrected the body and left the folk claim in the fields. The compression layer is a separate surface and needs its own pass.
+
+**Fixed.** Cases 19, 98 and 155 across `summary`, `beats`, `le-insight`, `lens-approach`, `quote`, `reflection-list` and `approaches`. Case 155 also gained the two references its corrected Evidence section and `scope-limit` rest on and had been asserting without — Adler (1993) for NUMMI and the NASA/NHTSA (2011) throttle-control review — and moved to the dual anchor `D3+D4/PT3`, the instrumentation half the single anchor was dropping. Case 181's `beats[5]` lost an N-of-2 isolation claim (*"governance is the variable"*).
+
+**Evidence-tier ruling (editor, this session): peer review removes the weak-evidence flag.** Retired on Cases 18, 44, 71, 76, 154, 194 and 202, with the caveat that actually mattered restated in prose in its own right rather than riding on a tier flag that no longer described the sourcing — and with the flag's standing *"future validation ongoing"* sentence removed alongside it. Cases 18 and 202 were found during this pass carrying `evidence-source: "peer-reviewed"` and a weak-evidence flag simultaneously. Cases 181 and 190 keep `journalism-tier`: their sourcing is documented primary record rather than peer review, so the ruling does not reach them; the memo carries that as an open question.
+
+**New detector.** `scripts/check-compression.py --phrases` greps the whole compression set — `impact`, `summary`, `beats`, `le-insight`, `lens-approach`, `quote`, `reflection-list`, `approaches` — for the phrasings the sweep retired. Like the quantity check it produces leads, not verdicts: *"stop the line"* is correct prose in a case about stopping a line. It exists so that the next time a body is corrected, the fields that restate it are a worklist rather than a discovery. Corpus state after this pass: 7 of 191 cases flagged, every one triaged as legitimate usage.
+
+`check-cases.sh` reports 191 converted / 0 failures.
+
+### Addendum (August 2026): non-case matter, figure valence, print signature, and source confrontation
+
+Six passes since the entry above, recorded together because they share a finding: **the book's
+apparatus had drifted away from the book.** Every defect below is a statement made *about* the
+corpus by something outside it — front matter, back matter, cover, build documentation — that the
+corpus no longer supported.
+
+**The domain index was keyed to the retired numbering.** All nineteen hand-written standout
+callouts in `backmatter/domain-index.typ` still carried v1 1–100 numbers. Each resolved to a real
+but unrelated live case, so the error was silent: the "Standout success" beside Toyota's andon cord
+printed *Case 73*, which is The Doer Effect at Scale. Three callouts contradicted their own body
+text, naming one case in the number and a different one in the prose. All nineteen re-keyed.
+
+Seven of those callouts also asserted things the cases had been corrected to retract — the andon
+cord as "any operator can stop the line" (Case 155 now says most pulls never stop it), INPO as "no
+INES-level event" (the case says Level 4-or-above, and carries Davis-Besse's Level 3 explicitly),
+Horizon as "at least four suicides" (the case says 13, and 900+ convictions against "hundreds"),
+Challenger/Columbia crediting the Rogers Commission with Vaughan's "normalization of deviance",
+and CRM's "the safety record that followed" — the decomposition claim retired earlier this month.
+Robodebt's callout carried a Royal Commission quotation that appears nowhere in the case, its
+references, or this log; it is replaced with what Case 191 actually carries. Two callouts claimed
+"no paired-intervention success" for domains that have them (government: Case 203; autonomous
+vehicles: Cases 199 and 200) — an artifact of the callouts being keyed to one domain string while
+the interventions file under a neighbouring one.
+
+**The colour legend was wrong in both places it appears.** `matrix.typ` and `domain-index.typ` both
+told the reader teal marks "paired-intervention successes and the open closing case." The renderer
+colours on `kind == "intervention"`, so all 27 frontier cases — the closing case among them — print
+gold. Legend corrected in both. The matrix also now explains its fourteen missing numbers: withdrawn
+cases keep their numbers rather than have the sequence re-flowed around them.
+
+**The LEN course table had drifted on eight of ten counts** (LEN 7 was off by twelve, LEN 8 by
+eight) while `course-index.typ`, a few leaves later, computed the same quantities live. The table is
+now computed from the same `<caseinfo>` query, so the two pages cannot disagree again. Four "202
+cases" claims corrected to 191 active. This change required `lens-companion.typ` to include the
+chapters for metadata — under `view=companion` a case emits its metadata and renders no body, so the
+companion gains the data and no pages.
+
+**The Validation & Audit tracker was missing four chapter files.** `validation-audit.typ` included
+`ch1a`–`ch5b` and the closing case under a comment reading `// METADATA EMIT: include every case`.
+Parts VI and VII were absent, so the tracker's domain index, course index and references appendix
+silently omitted **42 live cases** — thirteen of them in the printed 48, for which `book.typ` names
+this tracker as the reader's only route to a consolidated reference list. Tracker 77 → 97 pp.
+
+**The introduction and colophon carried the retracted claims.** The compression-layer defect class,
+one level up: the case bodies were corrected and the front matter that summarises them was not.
+Fixed — Makary's estimate now reads as contested (Case 8); the 17-year and 14% figures as estimates
+rather than "the average, the median" (Case 13); the 83% aviation figure as a portfolio result CRM
+cannot be credited with alone (Case 117); INPO as Level 4-or-above (Case 175); the WHO checklist as
+1.5% → 0.8% with the null Ontario rollout beside it (Case 23); Ofqual as 39% of teacher-estimated
+*grades*, withdrawn after four days, with the cause the OSR review actually found; the Navy's
+CD-ROM substitution without the unsourced "sixteen-week"; and the F-35 at its stated 44% FY2025
+mission-capable rate rather than "half of its design readiness in 2026." The introduction also
+described the five competencies by listing six *course titles*, one of them the retired name for
+LEN 2 — corrected, along with "concentration learning outcomes" → LENS Educational Objectives, and
+a cross-reference to "Chapter 8" under a chapter numbering retired in July.
+
+**The colophon's verification claim.** The line said every case "was reviewed by the editors and
+hand-checked by students." Read against `verification-log.md` alone — every row of which carries
+*"auto-prefill: all mechanical checks pass; human content review still needed"* — that looks like an
+overstatement, and it was first rewritten as work merely "underway."
+
+**That rewrite was wrong.** The log's seventh column tracks one specific ongoing read; it is not the
+record of human review, and taking it for the whole understated a great deal of completed work — the
+editor rulings applied at the Part II and Part VI–VII checkpoints, the seven per-Part LENS-alignment
+scans that withdrew fourteen cases, the per-case adjudications (72 ASSISTments, 41, 201 Aadhaar,
+203 NYC LL144, 161 Texas City), the evidence-tier ruling, and the standing COI decisions.
+
+**Editor ruling, this session, and the wording of record:** every case reviewed by the editors,
+iterative refinement ongoing. The colophon now states exactly that against the seven-column rubric,
+without narrating the passes.
+
+**Page structure was described wrongly in three places.** `howto.typ` said "each case occupies a
+two-page spread"; the introduction said "most cases run to three pages"; both said the Lens is "the
+last page." Measured from the `<cmeta>` probes: **53 cases at three pages, 128 at four, 10 at five,
+none at two**, and the forced break before the Lens was removed earlier, so it begins wherever the
+narrative ends. All three corrected. `howto.typ` also carried LEN 2 under its pre-v2.4 title
+("Human-AI Teaming"), which the program document is explicit is a sub-pattern and not the whole;
+four other titles were truncated, and all ten courses were presented as required when four are
+electives.
+
+**Orphaned references.** `backmatter/references.typ` listed 27 entries under "Cited in the
+introduction"; the introduction cites 1–22. Entries 23–27 are the program-record sources that moved
+to `about-lens.typ` when that section was split out. They now sit under their own heading rather
+than under a claim of citation that was never true. `about-lens.typ` also described MERIT and
+COMPASS as "documented in the peer-reviewed engineering-education literature" — the references say
+JHU/APL whitepaper and program documentation; only CIRCUIT is peer-reviewed. Corrected. The
+references-by-case appendix promised populated "Retrieved from:" lines where the renderer emits an
+unconditional blank; the prose now describes it as the reviewer worksheet it is.
+
+**Figure valence encoding completed.** The star/triangle outcome encoding shipped with two figures
+marked. The introduction's figure key described it as a corpus-wide convention and told the reader
+that a figure without a glyph "is not claiming it went well or badly" — which, with 33 of 35 outcome
+figures unmarked, inverted the reading of a third of the book's diagrams. The remaining 32 figures
+are now marked (25 triangles, 7 stars) and the key is rewritten to state the encoding without
+resting meaning on absence. `dgm-inpo`'s outcome line had been clipped by its frame since it was
+drawn, and is now visible. Two judgement calls stand for the editor: `dgm-teamstepps` is left
+unmarked as a pathway figure, and `dgm-makary` is marked adverse beside a count the caption itself
+calls contested — the triangle asserts direction, not the number.
+
+**A live print defect and a latent build bug.** The interior is padded to a 4-page binding
+signature before the spine is derived; that padding step was reached for the first time in this
+build and failed under `set -e`, because its `awk printf` emitted no trailing newline and `read`
+therefore returned non-zero. Fixed. `build.sh` now also writes `build/product-metrics.md` and
+mirrors it to `products/`, because both READMEs had drifted on every page figure — including
+README.md:126, which instructed the operator to send Lulu a **16.46 mm** spine for a book that needs
+**17.39 mm**. The READMEs now name the generated file as the authority.
+
+**Production consequence.** Main volume 275 → **277 pp**, padded to **280** for the signature (spine
+17.08 → **17.39 mm**); complete edition 883 → **884 pp**; validation-audit 77 → **97 pp**; companion
+**50 pp**; local-print **279 pp**.
+
+**Source confrontation, session 2.** Batch 1 completed and batch 2 taken to 11 of 15 — 14 cases
+confronted, 10 corrected; see `source-confrontation-log.md`. Two classes recur: a figure that is
+*correct* but carried by no cited reference (Cases 22, 23, 25), and a case whose compression fields
+contradict its own body (Cases 27, 34 — Case 34 asserted the mortality reduction was "multifactorial"
+where the authors state the opposite in their limitations). Case 29 resolves the editor memo's open
+BCMA follow-up item. Case 28 had two sentences printing broken mid-clause where a cross-reference
+had been stripped and never replaced — a defect no gate would have caught and no reader could have
+parsed.
+
+`check-cases.sh` reports 191 converted / 0 failures; `--gate` 0 new; `--phrases` 7 triaged;
+`check-diagram-palette.py` clean at 50 diagrams.
+
+### Addendum (August 2026): the fact-and-source confrontation — 143 cases, 10 batches
+
+The 143 complete-edition-only cases were re-confronted claim by claim. These cases had already been
+through the July critical-accuracy pass; **the second pass corrected 134 of them**, which is the
+finding that matters most about method: a completed pass is not evidence a case is clean.
+
+**The brief widened mid-sweep, on editor direction.** Batches 1–2 ran as *source* confrontation —
+does the document the `#cn()` marker points at carry this claim. That misses a whole class. A claim
+can be sourced correctly and still be false, and it can be true and cited to nothing. From batch 3
+the pass ran both checks, and the fact half immediately produced the largest single defect cluster:
+**stale cross-references**, where a case number still resolved to a real but unrelated case. Nothing
+sources a cross-reference, so only resolving each one against its target's title finds them. Case 40
+cited Crew Resource Management for interprofessional education; Case 43 cited Aadhaar for PEPFAR;
+Case 25 cited Boeing Starliner as a lending-fairness pair.
+
+**Six fabricated or unlocatable sources.** This is the class with no automated defence at all.
+Case 203 carried a fabricated co-author and a fabricated source (found in July). Case 193 cited
+"Cohen & Goldsmith (1999)" — no such work is locatable. Case 130 cited a Cummings paper that does
+not exist, apparently conflating an MIT course number. Cases 127 and 134 carried pseudo-quotes,
+labelled as paraphrases, traceable to nothing. Case 36's pull quote was credited to the CASP14 press
+release, where it does not appear, **and silently truncated mid-sentence with no ellipsis**.
+
+**Attribution to the wrong body, or at the wrong scope**, ran through the whole sweep. Case 37 read
+the MASAI trial as the validation the Haibe-Kains critique demanded of DeepMind — MASAI ran on a
+different vendor's product, and the DeepMind system has never been randomised. Case 36 said two
+researchers shared the Nobel for AlphaFold; they shared one half. Case 192 turned a regulator's
+"did not produce evidence of discrimination" into "did not violate the law". Case 143 credited an
+SEC order with a finding not in it. Case 105 gave one warning where the Board found three, and
+omitted its four latent causes entirely.
+
+**Case 175 inverted a causal order in the argument the nuclear thread rests on.** It said INPO was
+founded "in the autumn of 1979, before the Kemeny Commission had reported". Kemeny reported 30
+October 1979; INPO followed in December, in response to its recommendations. The case's own
+lens-approach already said "eight months after TMI", which is December — the correction restored its
+internal consistency. The introduction carried the same error and was corrected with it.
+
+**The full taxonomy — twelve shapes, with the cases exhibiting each — is in the header of
+`source-confrontation-log.md`.** That taxonomy is the durable output. It is what to look for when
+the corpus next changes, and several shapes (a compression field asserting against its own body; a
+case stopping one experiment short of its own source; a clock read off the wrong zero) were not
+being looked for at all before this sweep.
+
+**Nine cases needed no correction** — 88, 107, 109, 115, 135, 138, 153, 162 and, on facts, 171. Six
+more needed only source-alignment work. That the pass returns clean results at all is what
+distinguishes it from a process that finds something wherever it looks.
+
+**Open, and not closed by this sweep: marker-to-reference alignment.** `lib/components.typ:369`
+states the contract — reference text is supplied to `case-references()` **in the same order** as the
+`#cn()` markers. `scripts/check-cases.sh` enforces only `markers ≤ refs`; it cannot see order. Batch
+9 checked alignment systematically across its fifteen cases and found **eleven misaligned** — lists
+ordered by importance rather than by marker sequence, so a reader following superscript 3 arrives at
+a source that cannot carry the claim. Case 171's marker 1 carried a blackout figure and pointed at
+FEMA's after-action report; Case 186's pricing paragraph pointed at Dwork's *Fairness Through
+Awareness*. Those eleven were realigned. **The other 128 cases were not systematically checked on
+this dimension**, and the batch-9 rate suggests most of them are misaligned. This is a discrete,
+bounded pass — and unlike the fact check, it could be made checkable: a script comparing each
+marker's surrounding claim against its positional reference would at least surface candidates.
+
+**Production consequence.** Complete edition 884 → **908 pp** and the Validation & Audit tracker
+97 → **102 pp**, from references added where real claims had none. The printed main volume is
+unchanged at 280 pp (spine 17.39 mm) — every case in this sweep is complete-edition-only.
+
+`check-cases.sh` 191/0; compression gate 0 new; palette clean at 50 diagrams.
+
+### Addendum (August 2026): marker-to-reference alignment — the contract the gate could not see
+
+`lib/components.typ:369` states it plainly: reference text is supplied to `case-references()` **in the
+same order** as the `#cn()` markers, so reference *k* is the source for marker *k*. `check-cases.sh`
+enforces only `markers ≤ refs`. It is structurally blind to order — which is how the corpus reached
+a state where **51% of markers carrying an unambiguous anchor** (a report ID, a figure, a named
+author matching exactly one reference) **pointed at the wrong reference**, while every build reported
+191 converted / 0 failures.
+
+**The printed volume was not better than the complete edition. It was marginally worse** — 58% of
+anchored markers off-position against 47% — and it had never been checked, because the 143-case
+fact sweep covered complete-edition cases only.
+
+**The failure is stereotyped**, which is why a pass was worth running rather than a rewrite: tuples
+ordered by **authority tier** (primary study → supporting data → theory → paired case) or **rotated
+by one**. Both are recognisable in minutes once markers and references are printed side by side,
+which is what `scripts/view-case-cites.py` exists to do.
+
+**Result.** All 48 printed cases read exhaustively; complete-edition cases read where the detector
+flagged them. **~100 tuples reordered, 22 confirmed correctly ordered.** Verified mechanically at
+every commit: reference *text* is byte-identical throughout — only positions moved. A reorder and a
+silent reword look the same in a diff summary, so this was checked rather than trusted.
+
+Worst instances: **199 Waymo** (whole tuple rotated one; a reader following any superscript landed a
+document early), **197 PredPol** (four markers each on a different document), **114 aging-aircraft**
+(four of five), **173 SUBSAFE** (four of five), **176 Tylenol** (uniform rotation), **120 EGPWS** and
+**121 Überlingen** (aviation cases where a superscript led to a developer history instead of an
+accident report), **192 Apple Card** (marker 3 cites a March-2021 report and pointed at a
+November-2019 newspaper piece — chronologically impossible).
+
+**The measured blind spot, which is the finding worth keeping.** A detector-threshold sweep would
+have shipped most of this. Of the printed cases read exhaustively, **six were defective at
+sub-threshold detector scores, and four of those scored exactly zero** — including Case 173, with
+four of five positions wrong, and Case 191, where a Royal Commission attribution pointed at a
+settlement. Three of six low-scoring cases sampled independently were also defective. **A clean
+detector score is not evidence of a clean case**, and the decision to read all 48 rather than work
+the queue is what caught them.
+
+The detector's other edge case runs the same way: its **highest-scoring case corpus-wide (124, USS
+Fitzgerald / McCain) is correctly ordered.** `NTSB/MAR-19/01` legitimately occupies three slots under
+the house repeat convention, and every matching marker inflated the score. Score rank is not
+confidence rank.
+
+**Two tools, deliberately different.** `scripts/check-cite-order.py` is the sweep instrument — broad,
+fuzzy, ~90% precise at the top of its ranking but only 50–65% recall. `scripts/check-cite-anchors.py`
+is the **commit-time gate**, now wired into CI: it checks only the subset where the answer is not a
+judgement call, and it is narrow so that it can fail a build. Case-generic anchors are excluded (an
+aircraft's flight number appears wherever the subject is named), identical reference text is treated
+as one equivalence class (a swap inside the repeat convention reaches the right document — a
+copy-edit defect, not a citation defect), and the claim window is the sentence the marker attaches to
+rather than a fixed character span. Each of those three rules exists because its absence produced a
+false positive during construction.
+
+Validated against known-bad input rather than assumed: run over the pre-pass baseline it catches
+**seven cases**, including Waymo, Deepwater and CPUC. Over the corpus as it stands: **zero**. It also
+caught one defect the detector threshold and the agent pass both missed — **Case 81**, whose marker 3
+states figures verbatim from Herodotou 2019 while pointing at a different paper. Case 81 is not
+printed and never scored ≥3, so no one read it.
+
+**What a pass does not prove, stated in the script's own docstring.** The gate sees only anchored
+markers; roughly a third carry no hard anchor. And it cannot see the failure with no positional
+signature at all — **a claim with no supporting reference anywhere**. Case 199's 2022 trade-secret
+ruling is one: no source exists in its tuple and none could be verified, and because markers and
+references are both six, correcting the rest forces an unrelated entry into position 1. A
+`// NAKED CLAIM` comment marks it so a later reviewer does not "fix" it by re-rotating. Cases 144,
+147, 179 and 95 carry the same defect in milder form.
+
+**Standing editorial item.** Five cases have a marker needing a second slot of a source the tuple
+carries once (48 Johnson, 20 Adams, 5 Wong, 147, 138). The house convention solves this with a repeat
+entry carrying a claim-specific annotation. That is an addition, not a reorder, so no agent made it —
+and it is the one editorial add worth making.
+
+Page counts unchanged: reordering references does not reflow the page. `check-cases.sh` 191/0;
+compression gate 0 new; citation anchors clean; palette clean.

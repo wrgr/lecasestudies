@@ -3,16 +3,16 @@
 //
 // Built dynamically by querying the <caseinfo> metadata that
 // lib/case.typ emits for every case, so it stays in sync as cases
-// are added (v1 1–100, v2 101–202, and beyond). Each case appears
+// are added (v1 1–100, v2 101–205, and beyond). Each case appears
 // exactly once, under its PRIMARY domain (the first domain in its
 // tag list), in case-number order. Core domains are ordered first;
 // the remaining domains follow alphabetically. Where a hand-written
 // callout exists for a domain, it opens that section (naming the
 // dataset's standout failure and, where one exists, standout
 // success); v2-introduced domains with no callout render as just a
-// case list. Gold numbers indicate failures and systemic conditions;
-// teal numbers indicate paired-intervention successes and the open
-// closing case — same color code as the case matrix at the front.
+// case list. Gold numbers indicate failures, frontier cases, and
+// systemic conditions; teal numbers indicate paired-intervention
+// successes — same color code as the case matrix at the front.
 // ============================================================
 
 #import "../lib/theme.typ": *
@@ -35,7 +35,7 @@
 #set par(justify: true, leading: 0.62em, first-line-indent: 0pt)
 #text(font: sans, size: 10pt, fill: text-dark)[
   The matrix at the front lists every case in number order. This
-  index reorganises the cases by primary domain — a reader
+  index reorganizes the cases by primary domain — a reader
   following healthcare, defense, education, or any other thread can
   find the relevant cases together. Each case appears once, under
   its primary domain. Where a section opens with a callout, it names
@@ -109,14 +109,14 @@
 
 #let callouts = (
   defense: {
-    standout-line("Standout failure", 5, gold)[
+    standout-line("Standout failure", 128, gold)[
       *Operation Eagle Claw (1980).* Cross-organizational capability
       that existed on no service's deliverable list; the mission was
       improvised across the Army, Navy, Marines, Air Force, and CIA.
       Produced the Holloway Commission, USSOCOM, and Goldwater-Nichols.
     ]
     v(6pt)
-    standout-line("Standout success", 18, teal)[
+    standout-line("Standout success", 137, teal)[
       *U.S. Nuclear Navy / Rickover Training Model (1954–).* The
       longest continuous capability-engineering program in any
       high-consequence domain. Sixty-plus years of zero reactor
@@ -124,29 +124,31 @@
     ]
   },
   aviation: {
-    standout-line("Standout failure", 7, gold)[
+    standout-line("Standout failure", 97, gold)[
       *Boeing 737 MAX / MCAS (2018–19).* A single-string angle-of-
       attack sensor, a flight-control law that assumed pilot mental
       models from prior models, and a certification chain that did not
       knit the pieces together. 346 lives.
     ]
     v(6pt)
-    standout-line("Standout success", 70, teal)[
-      *Crew Resource Management & CAST (1981–).* First-officer
-      authority engineered into the cockpit, a continuous learning
-      architecture across the industry, and the safety record that
-      followed.
+    standout-line("Standout success", 117, teal)[
+      *Crew Resource Management & CAST (1981–).* Authority gradients
+      named and engineered into the cockpit, then a closed-loop
+      industry data architecture sixteen years later. The 83%
+      fatality-risk reduction CAST reports is a portfolio result;
+      CRM's separate contribution is not isolated in any published
+      estimate.
     ]
   },
   healthcare: {
-    standout-line("Standout failure", 61, gold)[
+    standout-line("Standout failure", 2, gold)[
       *EHR / CPOE Implementation (2005–).* Roughly \$30B federal
       investment in systems designed for billing and administration,
       deployed against clinical workflow. Usability is now itself a
       patient-safety variable at scale.
     ]
     v(6pt)
-    standout-line("Standout success", 109, teal)[
+    standout-line("Standout success", 23, teal)[
       *WHO Surgical Safety Checklist (2008–).* One page, nineteen
       items, paired with a required pause. ~Halved surgical mortality
       in the multi-site pilot; the smallest effective capability
@@ -154,64 +156,71 @@
     ]
   },
   energy: {
-    standout-line("Standout failure", 69, gold)[
+    standout-line("Standout failure", 166, gold)[
       *Three Mile Island (1979).* Training matched the design-basis
       events the engineers had imagined; the accident was not one of
       them. The control-room interface confused command signal with
       valve state. Catalysed industry-wide reform.
     ]
     v(6pt)
-    standout-line("Standout success", 172, teal)[
+    standout-line("Standout success", 175, teal)[
       *INPO and the Nuclear Academy (1979–).* The industry built the
-      institution TMI revealed it needed. No INES-level event at U.S.
-      commercial reactors since.
+      institution TMI revealed it needed. No INES Level 4-or-above
+      accident at a U.S. commercial reactor since.
     ]
   },
   industrial: {
-    standout-line("Standout failure", 147, gold)[
-      *Bhopal (1984).* Training, knowledge, normalisation of deviance,
-      and governance all collapsed in the same plant. Roughly 4,000
-      immediate deaths; chronic harms continue. The cautionary case
-      for outsourced operational responsibility.
+    standout-line("Standout failure", 159, gold)[
+      *Bhopal (1984).* Training, knowledge, normalization of deviance,
+      and governance all collapsed in the same plant. Thousands died
+      within hours; total-death estimates run to 15,000–20,000, with
+      roughly half a million exposed. The cautionary case for
+      outsourced operational responsibility.
     ]
     v(6pt)
-    standout-line("Standout success", 73, teal)[
+    standout-line("Standout success", 155, teal)[
       *Toyota Production System / Andon Cord (1950s–).* Any operator
-      can stop the line. The smallest authority-architecture
-      intervention in the dataset, and the most durably copied.
+      can signal a defect at the source. Under the fixed-position stop
+      system most pulls never halt the line — the smallest
+      authority-architecture intervention in the dataset, and the most
+      durably copied.
     ]
   },
   space: {
-    standout-line("Standout failure", 140, gold)[
+    standout-line("Standout failure", 111, gold)[
       *Challenger & Columbia (1986 / 2003).* Normalisation of deviance
-      across two decades and two crews, captured in the Rogers and
-      CAIB reports as a culture that accepted flying with flaws when
-      problems were defined as normal and routine.
+      across seventeen years and two crews — the sociologist Diane
+      Vaughan's term for a culture that accepted flying with flaws
+      once problems were defined as normal and routine, and the
+      culture the CAIB found still intact in 2003.
     ]
     v(6pt)
-    standout-line("Note", 18, text-muted)[
-      No paired-intervention success in the aerospace dataset. See
-      Defense (Rickover, Case 137) for the safety-engineering
-      counterpart that aerospace did not build.
+    standout-line("Note", 137, text-muted)[
+      No paired-intervention success in the space dataset — Part III's
+      aviation half carries seven. See Defense (Rickover, Case 137)
+      for the safety-engineering counterpart human spaceflight did not
+      build.
     ]
   },
   gov: {
-    standout-line("Standout failure", 162, gold)[
-      *Australia Robodebt (2016–20).* An income-averaging algorithm
-      that reversed the burden of proof onto welfare recipients. The
-      Royal Commission found "venality, incompetence and cowardice";
-      the scheme was linked to deaths, including suicide.
+    standout-line("Standout failure", 191, gold)[
+      *Australia Robodebt (2016–2023).* An income-averaging algorithm
+      that reversed the burden of proof onto welfare recipients,
+      raising some 470,000 wrongful debts. The Royal Commission found
+      the scheme unlawful and attributed deaths to its operation —
+      circumstantially, not as a finding of individual causation.
     ]
     v(6pt)
-    standout-line("Note", 111, text-muted)[
-      No paired-intervention success in the government dataset. The
-      reforms that follow these cases — Royal Commissions, statutory
-      restructures — are documented in the narratives but did not
-      produce a LENS-style success case in time for this volume.
+    standout-line("Note", 203, text-muted)[
+      The reforms that follow these failures — Royal Commissions,
+      statutory restructures — are documented inside the narratives
+      rather than as separate cases. The government dataset's
+      paired-intervention success is NYC Local Law 144 (Case 203),
+      filed under its own primary domain.
     ]
   },
   education: {
-    standout-line("Standout failure", 149, gold)[
+    standout-line("Standout failure", 54, gold)[
       *Summit Learning / Personalized Learning Rollout (2014–19).*
       A defensible pedagogical platform, well funded, deployed across
       ~380 schools — and pulled by parent revolt because the
@@ -219,7 +228,7 @@
       engineered alongside it.
     ]
     v(6pt)
-    standout-line("Standout success", 110, teal)[
+    standout-line("Standout success", 80, teal)[
       *Georgia State University Predictive Analytics (2012–).*
       800 risk factors per student, advising triggered by early
       warning signs, equity as a primary constraint. Six-year
@@ -227,33 +236,35 @@
     ]
   },
   tech: {
-    standout-line("Standout failure", 66, gold)[
+    standout-line("Standout failure", 184, gold)[
       *UK Post Office Horizon Scandal (1999–2015).* Institutional
       refusal to believe sub-postmasters' reports of computer error,
-      sustained over fifteen years. Hundreds of wrongful convictions;
-      ruined lives and at least four suicides — the longest-running
+      sustained over fifteen years. More than 900 wrongful
+      convictions, 236 imprisoned, and 13 suicides the inquiry could
+      not rule out as Horizon-caused — the longest-running
       operator-feedback failure in the dataset.
     ]
     v(6pt)
-    standout-line("Note", 132, text-muted)[
+    standout-line("Note", 36, text-muted)[
       The technology dataset's success story is filed under Healthcare:
       AlphaFold (Case 36), the contemporary worked example of
       computational capability-engineering done as a discipline.
     ]
   },
   autonomous: {
-    standout-line("Standout failure", 62, gold)[
+    standout-line("Standout failure", 183, gold)[
       *Uber ATG / Tempe Fatality (2018).* The safety driver was
       nominally responsible for what the system was designed to do
       without her attention — the classic vigilance contradiction at
       the heart of partial-autonomy operator roles.
     ]
     v(6pt)
-    standout-line("Note", 194, text-muted)[
-      No paired-intervention success in the autonomous-systems dataset.
-      The capability engineering this category needs is still being
-      built — see Case 205 (*The Discipline We Build Next*) for the
-      open question this volume closes on.
+    standout-line("Note", 205, text-muted)[
+      This key's cases are all failures and frontiers; the
+      paired-intervention successes — Waymo's safety case (199) and the
+      CPUC permit regime (200) — are filed under autonomous vehicles.
+      See Case 205 (*The Discipline We Build Next*) for the open
+      question this volume closes on.
     ]
   },
 )

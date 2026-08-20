@@ -105,10 +105,10 @@
     "Episode became methodological touchstone in early-childhood research, argued over more than acted upon",
   ),
   references: (
-    [#link("https://doi.org/10.1016/j.ecresq.2018.03.005")[M. Lipsey, D. Farran & K. Durkin, "Effects of the Tennessee Pre-Kindergarten Program… Through Third Grade," _Early Childhood Research Quarterly_ 45: 155–176 (2018)] — the RCT and fade-out.],
+    [National Institute for Early Education Research, _State of Preschool_ yearbooks (2010–2022) — program scale and context.],
     [K. Durkin, M. Lipsey, D. Farran & S. Wiesen, "Effects of a Statewide Pre-Kindergarten Program… Through Sixth Grade," _Developmental Psychology_ 58(3): 470–484 (2022) — the sixth-grade reversal (quoted).],
     [Responses and counter-analyses to the TN-VPK findings (2018–2022) — the contested reception.],
-    [National Institute for Early Education Research, _State of Preschool_ yearbooks (2010–2022) — program scale and context.],
+    [#link("https://doi.org/10.1016/j.ecresq.2018.03.005")[M. Lipsey, D. Farran & K. Durkin, "Effects of the Tennessee Pre-Kindergarten Program… Through Third Grade," _Early Childhood Research Quarterly_ 45: 155–176 (2018)] — the RCT and fade-out.],
     [D. Phillips et al., _Puzzling It Out: The Current State of Scientific Knowledge on Pre-Kindergarten Effects_ (2017); J. Heckman on durable early-childhood programs.],
   ),
   quote: [By sixth grade, children who had attended TN-VPK were doing somewhat worse on academic achievement and discipline measures than children in the control group.],
@@ -199,10 +199,15 @@
     ],
     // -- The Investigation --
     [
-      Researchers studying equity in completion-prediction models have
-      documented these calibration gaps and traced them to training data
-      that encodes historical patterns of discrimination — so the model
-      learns the past's inequities and projects them forward as predictions.#cn()
+      Gándara and colleagues, working with nationally representative
+      Education Longitudinal Study data, find the false-negative rate —
+      predicting failure for a student who in fact earns the degree — is
+      systematically higher for Black and Hispanic students, and that the
+      leading bias-mitigation techniques are "generally ineffective at
+      eliminating disparities in prediction outcomes and accuracy between
+      racialized groups." The bias is not a residual a fairness constraint
+      cleans up after the fact; it is in what the model was built from,
+      training data that encodes historical patterns of discrimination.#cn()
       Baker and Hawn's review catalogs which groups algorithmic bias in education is known to harm and which stages and agents in the development and deployment of educational algorithms are implicated — and the harm compounds when
       an instructor with deficit assumptions reads an "at-risk" flag as
       confirmation rather than a cue to help, letting the prediction become a
@@ -241,14 +246,14 @@
   ),
   references: (
     [_The Evolving State of Predictive Analytics_, The Chronicle of Higher Education (2020), survey conducted by Maguire Associates, 589 institutions — 63 percent use predictive analytics for retention and graduation; only 20 percent institution-wide.],
-    [K. Bird et al., "Are Algorithms Biased in Education? Exploring Racial Bias in Predicting Community College Student Success," _Journal of Policy Analysis and Management_ 44 (2025), 379–402 — racial calibration bias, ~5× higher at the bottom decile depending on the "at-risk" construct.],
-    [D. Gándara, H. Anahideh, M. Ison & L. Picchiarini, "Inside the Black Box: Detecting and Mitigating Algorithmic Bias across Racialized Groups in College Student-Success Prediction," _AERA Open_ (2024) — bias traced to training data encoding historical discrimination.],
+    [K. Bird, B. Castleman & Y. Song, "Are Algorithms Biased in Education? Exploring Racial Bias in Predicting Community College Student Success," _Journal of Policy Analysis and Management_ 44(2) (2025), 379–402 — two Virginia Community College System models; bias over 5× higher when "at-risk" is the bottom decile than the bottom half for degree completion, and the reverse for course completion.],
+    [D. Gándara, H. Anahideh, M. Ison & L. Picchiarini, "Inside the Black Box: Detecting and Mitigating Algorithmic Bias across Racialized Groups in College Student-Success Prediction," _AERA Open_ 10 (2024), doi:10.1177/23328584241258741 — higher false-negative rates for Black and Hispanic students in nationally representative ELS:2002 data; leading bias-mitigation techniques generally ineffective at eliminating the disparities.],
     [R. Baker & A. Hawn, "Algorithmic Bias in Education," _International Journal of Artificial Intelligence in Education_ 32 (2022), 1052–1092 — foundational review of algorithmic bias in education.],
     [M. Ekowo & I. Palmer, _Predictive Analytics in Higher Education: Five Guiding Practices for Ethical Use_, New America (2017) — the deficit-versus-asset mindset and the handling of "at-risk," "low-risk," and "high-risk" labels from early-alert systems.],
     [Cf. UK A-Level / Ofqual (Case 49); V. Eubanks, _Automating Inequality_ (2018).],
   ),
   quote: [Algorithmic bias in educational systems poses significant threats to educational equity, potentially amplifying existing social and economic disparities.],
-  quote-source: "Editors' paraphrase of Baker & Hawn (2021)",
+  quote-source: "Editors' paraphrase of Baker & Hawn (2022)",
   le-insight: [
     Educational predictive analytics is the ongoing live case for
     algorithmic bias at the construct level. The bias is not in the
@@ -258,15 +263,15 @@
     capability-engineering decision with measurable equity consequences.
   ],
   lens-approach: [
-    LENS treats this case as the positive counterpart to Georgia State
-    (Case 80). LEN 4 examines construct definition as the load-bearing
+    LENS treats Georgia State (Case 80) as the positive counterpart to
+    this case. LEN 4 examines construct definition as the decisive
     measurement choice. LEN 7 examines the governance architecture that
     determines whose construct gets adopted. LEN 9 covers the
     technical bias-mitigation methods.
   ],
   literature-items: (
     [Bird et al. (2025), _JPAM_; Gándara et al. (2024), _AERA Open_],
-    [Baker & Hawn (2021) on algorithmic bias in education],
+    [Baker & Hawn (2022), _IJAIED_ — algorithmic bias in education],
     [Friedman & Nissenbaum (1996), "Bias in Computer Systems"],
   ),
   reflection-list: (
@@ -301,7 +306,7 @@
   year: "2022",
   domains-list: ("ed-tech", "algorithmic fairness", "assessment"),
   modes-code: "DNK",
-  impact: "The first quantitative study of facial-detection bias in automated exam proctoring software found that students with darker skin tones and Black students were significantly more likely to be flagged for instructor review for potential cheating; at the race–sex intersection, women with the darkest skin tones were 4.4 times more likely to be flagged than medium-skin-tone women and 5.6 times more likely than lighter-skinned women",
+  impact: "The first quantitative study of facial-detection bias in automated exam proctoring software found that students with darker skin tones and Black students were significantly more likely to be flagged for instructor review for potential cheating; at the race–sex intersection, women with the darkest skin tones were 4.36 times more likely to be flagged than medium-skin-tone women and 5.6 times more likely than lighter-skinned women",
   kind: "failure",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -340,8 +345,8 @@
       off-camera, multiple faces in the frame, the face leaving
       the frame — for instructor review. The COVID-era pivot to
       remote instruction expanded the deployment of this software
-      across US higher education at speed. The systems' face
-      detection and face tracking are the load-bearing computer-
+      across U.S. higher education at speed. The systems' face
+      detection and face tracking are the computer-
       vision components: a failure in face detection translates
       directly into a false flag for instructor review, and
       systematic failures in face detection across demographic
@@ -350,7 +355,7 @@
     [
       Yoder-Himes et al. (_Frontiers in Education_, 2022) ran the
       first published quantitative study of facial-detection bias
-      in this class of software. The study examined the instructor outputs for about 357 students in four large STEM courses at a single university, with skin tone classified on an expanded Fitzpatrick scale and race and sex taken from university records. The headline finding
+      in this class of software. The study examined the instructor outputs for about 357 students in four large STEM courses at a single university during Fall 2020, using the proctoring product the institution had adopted — one the paper notes is used by at least 1,500 universities nationally. Skin tone was classified against an expanded Fitzpatrick scale by two trained raters; race and sex were the students' own self-reports (sex assigned at birth; gender was not available from the institution). The headline finding
       ran in the direction the broader face-recognition-bias
       literature had documented (Buolamwini and Gebru, Raji, and
       others) and extended that finding into the assessment
@@ -361,15 +366,21 @@
     ],
     [
       The intersectional analysis sharpened the finding.
-      Women with the darkest skin tones were 4.4 times more likely to be flagged than medium-skin-tone women and 5.6 times more likely than lighter-skinned women — the race-by-sex intersection produced the largest disparity, consistent
+      Women with the darkest skin tones were 4.36 times more likely to be flagged than medium-skin-tone women and 5.6 times more likely than lighter-skinned women — the race-by-sex intersection produced the largest disparity, consistent
       with the broader face-recognition literature's intersectional
-      findings. The harm class is not abstract: a flag for
-      instructor review under an academic-integrity process
-      produces real downstream consequence — the student has to
-      defend themself against a suspicion the software generated,
-      and the institutional resolution mechanism is not designed
-      for the case where the suspicion was generated by a
-      software bias rather than by a student behavior.#cn()
+      findings, and it appears only intersectionally: in aggregate
+      the study found no significant male-female difference. What
+      the study measures is the software's output, not the harm
+      downstream of it. The authors are explicit that they collected
+      no information on whether these students were reported or
+      faced bias from instructors, and that at this institution the
+      software was never the primary means by which reported
+      cheating was identified. The exposure is real — a flag routes
+      a student into an academic-integrity review that no
+      institutional resolution mechanism is designed to handle when
+      the suspicion was generated by a software bias — but the
+      study documents the disparity in the flags, not the
+      consequences that followed them.#cn()
     ],
     [
       The study's claim is calibrated and direct: the product
@@ -458,7 +469,7 @@
   ),
   reflection-list: (
     [Identify a deployed system in your domain whose validation rests on an aggregate accuracy figure rather than a demographically stratified one. What would the stratified validation actually require, and who would have to commission it before deployment rather than after?],
-    [The Yoder-Himes finding is intersectional: women with the darkest skin tones were 4.4 times more likely to be flagged than medium-skin-tone women. What is the analog intersectional structure of the harm in your domain, and is it visible in the engineering record before the harm record?],
+    [The Yoder-Himes finding is intersectional: women with the darkest skin tones were 4.36 times more likely to be flagged than medium-skin-tone women. What is the analog intersectional structure of the harm in your domain, and is it visible in the engineering record before the harm record?],
     [The case documents the disparity in one product; the remediation is not yet documented. What would a remediation look like — vendor disclosure, regulatory disclosure requirement, institutional resolution-mechanism redesign — and which of those is in your scope?],
   ),
   courses: ("LEN 5", "LEN 8", "LEN 9"),
@@ -479,13 +490,16 @@
   induced-anchor: "8.1",
   lens-anchor: "D4/PT5",
   leo-anchor: "LEO-4",
-  coi: "Institutional overlap: an editor shares an institution (Johns Hopkins School of Engineering) with an author of this work; no editor was personally involved. Included on the published peer-reviewed evidence (Journal of Criminal Justice, 2022); editorial framing keeps critical distance.",
+  coi: "Institutional overlap: an editor of this volume is appointed in the same school as the study's lead author — the Johns Hopkins University School of Education, where the author holds a Bloomberg Distinguished Professorship jointly with the Bloomberg School of Public Health. No editor was personally involved in the work. Included on the published peer-reviewed evidence (Journal of Criminal Justice, 2022); editorial framing keeps critical distance.",
   summary: [
     Johnson and colleagues, writing in the _Journal of Criminal
     Justice_ in 2022, analyzed the relationship between
-    school-surveillance infrastructure — cameras, metal detectors,
-    school resource officers, ID-check protocols — and outcomes
-    for Black students across US schools. The study's
+    school-surveillance infrastructure — security cameras, metal
+    detectors and random metal-detector checks, dog sniffs and
+    contraband sweeps, drug testing, uniform and dress-code
+    requirements, clear book bags, student and faculty ID badges,
+    closed campuses — and outcomes
+    for Black students across U.S. schools. The study's
     learning-engineering content is in where it locates the
     mechanism. The analysis holds school social disorder and student misbehavior constant and still finds that the most heavily surveilled schools suspend more students, and that surveillance depresses math scores and college enrollment for suspended and non-suspended students alike; because Black students are far more likely to attend those schools, they carry the largest share of the cost the authors call a safety tax. The mechanism, in other words,
     is the infrastructure, not the students. The case is one of
@@ -505,12 +519,14 @@
   ],
   sections: (
     [
-      US public schools have, over the past two decades, deployed a
-      progressively more elaborate surveillance infrastructure:
-      cameras throughout common areas; metal detectors at entry
-      points; school resource officers (sworn law enforcement
-      stationed in schools); ID-check protocols and visitor
-      management systems; behavioral-tracking software. The
+      U.S. public schools have, over the past two decades, deployed a
+      progressively more elaborate surveillance infrastructure. The
+      measures Johnson and Jabbari index are the ordinary furniture
+      of a fortified school: security cameras; metal detectors and
+      random metal-detector checks; random dog sniffs and contraband
+      sweeps; drug testing; uniform requirements and strict dress
+      codes; clear book bags; student and faculty identification
+      badges; closed campuses at lunch. The
       distribution of that infrastructure across schools has not
       been uniform. Schools serving predominantly Black student
       populations have, on average, carried more of it. The
@@ -525,7 +541,7 @@
       Johnson and colleagues (_Journal of Criminal Justice_, 2022)
       analyzed the relationship between school-surveillance
       infrastructure and outcomes for Black students across the
-      US public-school sector. The study's design uses counterfactual and multi-level modeling on national longitudinal data, comparing students in the highest-surveillance schools with comparable students in the lowest. The headline analytic result the case rests on: with school social disorder and student misbehavior controlled, students in heavily surveilled schools are suspended more, score lower in mathematics, and enroll in college at lower rates — the non-suspended along with the suspended. The infrastructure is
+      U.S. public-school sector. The study's design uses counterfactual and multi-level modeling on national longitudinal data, comparing students in the highest-surveillance schools with comparable students in the lowest. The headline analytic result the case rests on: with school social disorder and student misbehavior controlled, students in heavily surveilled schools are suspended more, score lower in mathematics, and enroll in college at lower rates — the non-suspended along with the suspended. The infrastructure is
       acting as a driver of the outcome gap, not only as a
       response to it.#cn()
     ],
@@ -551,7 +567,12 @@
     ],
     [
       The standing COI rendered under the title is binding. An
-      editor of this volume shares an institution (Johns Hopkins University) with the study's lead author, who is appointed in the School of Education and the Bloomberg School of Public Health. The case
+      editor of this volume is appointed in the same school as the
+      study's lead author — the Johns Hopkins University School of
+      Education, where the author holds a Bloomberg Distinguished
+      Professorship jointly with the Bloomberg School of Public
+      Health. The overlap is at school level, not merely the
+      university. The case
       is anchored to the published peer-reviewed evidence in the
       _Journal of Criminal Justice_, not to institutional press
       or to commentary by the editor or the authors outside the
@@ -580,7 +601,7 @@
     ],
   ),
   beats: (
-    "US school-surveillance infrastructure (cameras, metal detectors, SROs, ID checks) distributed unevenly — schools with predominantly Black students carry more",
+    "U.S. school-surveillance infrastructure (cameras, metal detectors, SROs, ID checks) distributed unevenly — schools with predominantly Black students carry more",
     "Johnson & Jabbari 2022 (Journal of Criminal Justice): counterfactual multi-level analysis; surveillance lowers math scores and college enrollment with disorder and misbehavior controlled",
     "Mechanism is the infrastructure, not the students — attributing the gap to the population mis-locates the mechanism in a measurable sense",
     "Extends race-construct trio (Cases 25 eGFR, 26 pulse oximetry, 6 Hoffman) into K-12 education at the institutional-infrastructure layer",
@@ -599,7 +620,7 @@
     ),
   ),
   references: (
-    [O. Johnson & J. Jabbari (2022), "Infrastructure of social control: A multi-level counterfactual analysis of surveillance and Black education," _Journal of Criminal Justice_ 83:101983 — the load-bearing peer-reviewed source for the case.],
+    [O. Johnson & J. Jabbari (2022), "Infrastructure of social control: A multi-level counterfactual analysis of surveillance and Black education," _Journal of Criminal Justice_ 83:101983 — the peer-reviewed source for the case.],
     [Hoffman, Trawalter, Axt, & Oliver (2016), "Racial bias in pain assessment and treatment recommendations, and false beliefs about biological differences between blacks and whites," _PNAS_ 113(16):4296–4301 — race-construct trio at the cognitive-baseline layer (Case 6).],
     [Inker, Eneanya, Coresh, et al. (2021), "New Creatinine- and Cystatin C–Based Equations to Estimate GFR without Race," _NEJM_ — race-construct trio at the formula layer (Case 25).],
     [Sjoding, Dickson, Iwashyna, Gay, & Valley (2020), "Racial Bias in Pulse Oximetry Measurement," _NEJM_ 383:2477–2478 — race-construct trio at the device layer (Case 26).],
@@ -720,7 +741,7 @@
       Assessment Grade level. The withdrawal was structural — it
       affected the entire 2020 cohort — and it was rapid in a way
       that few national-scale algorithmic deployments have been.
-      The Office for Statistics Regulation's March 2021 review adjudicated the governance record and named the engagement failure as the load-bearing one: acceptability testing had examined the process of calculating grades rather than the impact on individuals. The technical report had been internally honest about the cohort-size dependence, and the failure was that the dependence had not been surfaced to affected schools and students in advance of deployment.#cn()
+      The Office for Statistics Regulation's March 2021 review adjudicated the governance record and named the engagement failure as the decisive one: acceptability testing had examined the process of calculating grades rather than the impact on individuals. The technical report had been internally honest about the cohort-size dependence, and the failure was that the dependence had not been surfaced to affected schools and students in advance of deployment.#cn()
     ],
     [
       The case pairs with Case 86 (Gándara / community-college
@@ -740,7 +761,7 @@
       withdrawal or that were never withdrawn.#cn()
     ],
     [
-      The technical report's hedge is binding and load-bearing.
+      The technical report's hedge is binding.
       Ofqual's own document states that the statistical measures
       behind the standardisation are meaningful only for groups
       of students, that using them to predict an individual
@@ -780,8 +801,8 @@
   ),
   references: (
     [Ofqual, _Awarding GCSE, AS, A level, advanced extension awards and extended project qualifications in summer 2020: interim report_, August 2020.],
-    [UK House of Commons Education Committee, _Getting the grades they've earned: Covid-19: the cancellation of exams and 'calculated' grades_, First Report of Session 2019–21, HC 617, 11 July 2020 — the pre-deployment warning; Office for Statistics Regulation, _Ensuring statistical models command public confidence_, 2 March 2021 — the post-withdrawal review.],
     [Royal Statistical Society, _Submission to the Office for Statistics Regulation on the summer 2020 grading process_, 2020 — independent statistical review of the standardisation methodology.],
+    [UK House of Commons Education Committee, _Getting the grades they've earned: Covid-19: the cancellation of exams and 'calculated' grades_, First Report of Session 2019–21, HC 617, 11 July 2020 — the pre-deployment warning; Office for Statistics Regulation, _Ensuring statistical models command public confidence_, 2 March 2021 — the post-withdrawal review.],
     [Smith, H. (2020), "Algorithmic bias: should students pay the price?" _AI & Society_ 35(4):1077–1078 — early academic commentary on the equity dimensions of the withdrawal.],
   ),
   quote: [Approximately 39.1 percent of teacher-estimated grades were downgraded; the algorithm was withdrawn within four days under public protest; the technical report was internally honest about the cohort-size dependence and the failure was that the honesty did not travel out of the document.],
@@ -807,8 +828,7 @@
     Pair with Case 86 (Gándara community-college predictive
     equity), Case 88 (LiveHint AI bias across foundation
     models), and Case 48 (Johnson school surveillance). The
-    technical report's acknowledgement of incompatibility is the
-    load-bearing hedge.
+    technical report's acknowledgement of incompatibility is the hedge that matters.
   ],
   literature-items: (
     [Ofqual technical report (August 2020); Office for Statistics Regulation review (2021)],
@@ -831,7 +851,7 @@
   year: "2012 – 2023",
   domains-list: ("education at scale", "predictive analytics", "algorithmic equity"),
   modes-code: "DKN",
-  impact: "Wisconsin Department of Public Instruction's Dropout Early Warning System (DEWS) ran from 2012 until DPI withdrew the dashboards in October 2023, scoring over 225,000 sixth- through ninth-grade students a year; Perdomo, Britton, Hardt, & Abebe FAccT 2025 regression-discontinuity analysis on 2013–2021 data put the effect of a higher risk label on on-time graduation at about 5 percentage points, on a 95% interval of −2% to 11.6% that cannot rule out zero; DPI's own 2021 internal equity analysis found false-alarm rates 42 points higher for Black and 18 points higher for Hispanic students, and DPI told no one and changed nothing",
+  impact: "Wisconsin Department of Public Instruction's Dropout Early Warning System (DEWS) ran from 2012 until DPI withdrew the dashboards on 12 October 2023, scoring every sixth- through ninth-grader in the state — in 2020–21 more than 32,000 of them, 15 percent of the cohort, carried a \"high risk\" label; Perdomo, Britton, Hardt, & Abebe FAccT 2025 regression-discontinuity analysis on 2013–2021 data put the effect of a higher risk label on on-time graduation at about 5 percentage points, on a 95% interval of −2% to 11.6% that cannot rule out zero; DPI's own 2021 internal equity analysis found false-alarm rates 42 points higher for Black and 18 points higher for Hispanic students, and DPI told no one and changed nothing",
   kind: "failure",
   scale: "big",
   evidence-source: "peer-reviewed",
@@ -840,14 +860,16 @@
   leo-anchor: "LEO-4, LEO-5",
   summary: [
     The Wisconsin Department of Public Instruction has operated
-    the Dropout Early Warning System (DEWS) since 2012,
-    producing dropout-risk scores for approximately 200,000
-    sixth- through ninth-grade students across the state each
-    year. Two evidence streams converge on the deployment.
+    the Dropout Early Warning System (DEWS) from 2012 until it
+    withdrew the dashboards on 12 October 2023, producing
+    dropout-risk scores twice a year for every sixth- through
+    ninth-grader in the state; in 2020–21 more than 32,000 of
+    them — 15 percent of the cohort — carried a "high risk"
+    label. Two evidence streams converge on the deployment.
     Perdomo, Britton, Hardt, and Abebe's 2025 FAccT paper used a regression-discontinuity design on 2013–2021 DEWS-and-graduation data and estimated that moving a student from the moderate to the high-risk category raises on-time graduation by about 5 percentage points, on a 95 percent confidence interval of −2 to 11.6 percent that cannot rule out zero effect. The Wisconsin DPI's own 2021 internal equity analysis — the slide The Markup obtained is headed "Is DEWS Fair?" — found false-alarm rates 42 percentage points higher for Black students and 18 points higher for Hispanic students than for White students, and the agency neither told districts nor changed the model. The Markup's
     2023 investigation by Todd Feathers documented the
     disparate-impact finding and the agency's response. Both
-    findings are load-bearing. The case pairs with Case 48
+    findings are binding. The case pairs with Case 48
     (Johnson school surveillance), Case 86 (Gándara
     community-college predictive equity), and Case 52 (Purdue
     Course Signals — reverse causality). This case carries both
@@ -866,11 +888,11 @@
       warning enables school-level interventions — additional
       counseling, tutoring, mentoring, or family contact — that
       improve the student's graduation trajectory. The system
-      has operated at scale for more than a decade and produces risk scores for over 225,000 sixth- through ninth-grade students each year.#cn()
+      operated at scale for more than a decade, scoring every sixth- through ninth-grader in the state twice a year; in 2020–21 more than 32,000 of them, 15 percent of the cohort, carried a "high risk" label.#cn()
     ],
     [
       Perdomo, Britton, Hardt, and Abebe's 2025 paper at FAccT
-      (also available as arXiv 2304.06205) is the load-bearing
+      (also available as arXiv 2304.06205) is the decisive
       causal-inference evidence on the deployment. The
       researchers used a regression-discontinuity design,
       exploiting the DEWS risk-threshold cutoff to compare
@@ -878,14 +900,14 @@
       risk and surfaced to the school's intervention surface)
       against students just below it (not so surfaced),
       controlling for the continuous risk score itself. The
-      analysis covered approximately ten years of DEWS data
-      and the corresponding graduation outcomes. The headline finding is a point estimate of about 5 percentage points on on-time graduation for a student moved from moderate to high risk, on a 95 percent confidence interval of −2 to 11.6 percent. The interval contains zero, so the analysis cannot rule out that the risk category changes nothing; the estimate is directionally correct and not rigorously conclusive. The hedge the paper preserves is binding: the
+      analysis covered the DEWS scores from 2013 to 2021 —
+      nearly a decade — and the corresponding graduation outcomes. The headline finding is a point estimate of about 5 percentage points on on-time graduation for a student moved from moderate to high risk, on a 95 percent confidence interval of −2 to 11.6 percent. The interval contains zero, so the analysis cannot rule out that the risk category changes nothing; the estimate is directionally correct and not rigorously conclusive. The hedge the paper preserves is binding: the
       RDD analysis cannot establish a negative finding either
-      (the interval includes small positive effects), but it can and does establish that eight years of statewide data leave the prediction-triggers-intervention-that-changes- outcome theory unsettled.#cn()
+      (the interval includes small positive effects), but it can and does establish that nearly a decade of statewide data leaves the prediction-triggers-intervention-that-changes-outcome theory unsettled. The paper's own conclusion goes further than the null: the authors show that a targeting rule using only a student's school and district — no individual risk score at all — would direct interventions about as efficiently as DEWS does, and argue this holds "even if individual predictions are highly accurate and effective interventions exist," because dropout is structurally determined. The question the paper leaves on the table is not whether the model is accurate — it sorts students by risk accurately — but whether the individual prediction was ever the thing carrying the value.#cn()
     ],
     [
       The Wisconsin DPI's own 2021 internal equity audit,
-      titled "Is DEWS Fair?", is the load-bearing disparate-
+      titled "Is DEWS Fair?", is the decisive disparate-
       impact evidence on the deployment. The analysis found that DEWS raised false alarms about Black and Hispanic students at far higher rates than about their White classmates — 42 percentage points higher for Black students, 18 for Hispanic students. The agency's own response to its own analysis was to tell no one and change nothing. The Markup's 2023
       investigation by Todd Feathers documented both the
       finding and the agency's response, and the journalism-
@@ -918,7 +940,7 @@
       the deployment.#cn()
     ],
     [
-      The hedges the case carries are load-bearing and both
+      The hedges the case carries are binding and both
       streams are preserved. The Perdomo et al. RDD analysis cannot rule out zero treatment effect on graduation across 2013–2021 data — eight years of statewide records still cannot settle whether the prediction triggers the intervention the deployment theory requires. The DPI's own equity analysis found DEWS raised false alarms about Black and Hispanic students at far higher rates than about White students, and the agency continued operating the system unchanged for two years afterward. Both findings are binding and travel together.
       The LEO on designing predictions to trigger support
       rather than gatekeeping is anchored by the case at the
@@ -933,20 +955,20 @@
     ],
   ),
   beats: (
-    "Wisconsin DPI Dropout Early Warning System deployed since 2012; ~200,000 students per year in grades 6 – 9 receive risk scores",
+    "Wisconsin DPI Dropout Early Warning System deployed 2012 until the dashboards were withdrawn 12 October 2023; every 6th – 9th grader scored twice a year, 32,000+ labeled high risk in 2020–21",
     "Perdomo, Britton, Hardt, Abebe FAccT 2025 RDD on 2013–2021 data: +5 points on on-time graduation, 95% interval −2% to 11.6%, cannot rule out zero",
     "Wisconsin DPI 2021 internal equity analysis (slide headed \"Is DEWS Fair?\"): false-alarm rates 42 points higher for Black, 18 for Hispanic students; agency told no one",
     "The Markup 2023 investigation (Feathers) documented disparate-impact finding and agency response",
-    "Both streams load-bearing; pair with Case 48 (Johnson), Case 86 (Gándara), Case 52 (Purdue Course Signals reverse causality)",
+    "both streams binding; pair with Case 48 (Johnson), Case 86 (Gándara), Case 52 (Purdue Course Signals reverse causality)",
   ),
   approaches: (
     during: (
       [Pre-specify the causal-inference design that will evaluate whether the prediction triggers outcome-changing intervention; the Perdomo et al. RDD is the deployment-evidence form that the prediction-triggers-support theory requires for verification at multi-year horizons.],
-      [Treat the agency's own equity audit as a binding governance input, not as an internal document; the DPI's "Is DEWS Fair?" audit was internally honest about the disparate-accuracy finding, and the case's load-bearing observation is the agency's continued operation of the system unchanged.],
+      [Treat the agency's own equity audit as a binding governance input, not as an internal document; the DPI's "Is DEWS Fair?" audit was internally honest about the disparate-accuracy finding, and the case's central observation is the agency's continued operation of the system unchanged.],
       [Design predictions to trigger support, not gatekeeping; the case's central LEO anchor is the discipline of building the intervention surface that the prediction is meant to trigger, and of verifying — not assuming — that the prediction's operational role produces the outcome change the deployment theory requires.],
     ),
     after: (
-      [Carry both evidence streams into print as load-bearing and complementary; the case's pedagogical value depends on the peer-reviewed null and the agency-audit disparate-impact finding traveling together rather than being separated into parallel entries.],
+      [Carry both evidence streams into print as decisive and complementary; the case's pedagogical value depends on the peer-reviewed null and the agency-audit disparate-impact finding traveling together rather than being separated into parallel entries.],
       [Pair in syllabi with Case 48 (Johnson) and Case 52 (Purdue) so the algorithmic-public-administration-in-education and reverse-causality threads are taught alongside the multi-year-deployment-with-null-causal-effect finding.],
       [Use the case as the anchor for the designing-predictions-to-trigger-support LEO; the curricular target is the multi-year deployment record that demonstrates the gap between the prediction's operational theory and the evidence the deployment produces.],
     ),
@@ -955,12 +977,13 @@
     [Perdomo, J. C., Britton, T., Hardt, M., & Abebe, R. (2025), "Difficult Lessons on Social Prediction from Wisconsin Public Schools," _Proceedings of FAccT 2025_, doi:10.1145/3715275.3732175 (also arXiv:2304.06205).],
     [Wisconsin Department of Public Instruction (2021), internal equity analysis of the Dropout Early Warning System — unpublished; the presentation summarizing it, whose slide is headed "Is DEWS Fair?", was obtained by _The Markup_ under public records.],
     [Feathers, T. (2023), "False Alarm: How Wisconsin Uses Race and Income to Label Students 'High Risk,'" _The Markup_, April 27, 2023 — investigation documenting the disparate-impact finding and the agency response.],
+    [Wisconsin Department of Public Instruction, "WISEdash for Districts — Dropout Early Warning System (DEWS) Dashboards" — notice that early-warning dashboard data (DEWS/CCREWS) is no longer available as of 12 October 2023 and that DPI is evaluating the future of the systems.],
     [Knowles, J. E. (2015), "Of Needles and Haystacks: Building an Accurate Statewide Dropout Early Warning System in Wisconsin," _Journal of Educational Data Mining_ 7(3):18–67 — the original DEWS technical-methodology paper.],
   ),
   quote: [The RDD estimate is about 5 points on graduation, on an interval that cannot rule out zero; the agency's own equity analysis found DEWS raised false alarms about Black students 42 points more often than about White students; the agency told no one.],
   quote-source: "Editors' synthesis of Perdomo et al. (2025, FAccT), the Wisconsin DPI internal equity audit (2021), and The Markup investigation (Feathers, 2023).",
   le-insight: [
-    Wisconsin DEWS is the load-bearing case for a prediction system operating at population scale for more than a decade without conclusive evidence that the prediction triggers outcome-changing intervention and with evidence that the prediction's error rates vary across protected-attribute subgroups. Both the peer-reviewed null and the agency-audit
+    Wisconsin DEWS is the reference case for a prediction system operating at population scale for more than a decade without conclusive evidence that the prediction triggers outcome-changing intervention and with evidence that the prediction's error rates vary across protected-attribute subgroups. Both the peer-reviewed null and the agency-audit
     disparate-impact finding travel together; the case carries
     both evidence streams in one entry rather than parallel
     ones.
@@ -977,7 +1000,7 @@
     predictive equity), and Case 52 (Purdue Course Signals
     reverse causality). Both the peer-reviewed null and the
     journalism-and-agency-audit disparate-impact finding are
-    load-bearing.
+    decisive.
   ],
   literature-items: (
     [Perdomo et al. (2025), FAccT — RDD analysis on a decade of DEWS data],
@@ -1014,8 +1037,8 @@
     Journal-Constitution_ found that for several years educators across
     dozens of schools had systematically erased and corrected students'
     answers on state standardized tests. The cheating was organized —
-    principals pressured teachers, staff held weekend "changing parties" — and the incentive system rewarded the gaming with
-    bonuses and promotions. Around 180 educators were implicated, 35
+    principals pressured teachers, staff held weekend "erasure parties" — and the incentive system rewarded the gaming with
+    bonuses and promotions. The state investigation named 178 educators, 35
     indicted, and 11 convicted under Georgia's racketeering statute. The
     capability gap lay in the measurement architecture: the institution
     being measured operated the instrument that measured it, with no
@@ -1035,7 +1058,7 @@
     // -- What Happened --
     [
       Over several years, educators at dozens of APS elementary and middle
-      schools systematically changed students' answers after testing. The cheating was organized rather than incidental: 38 of the 178 educators named were principals, who pressured teachers to hit targets, and staff held after-hours changing "parties" to correct answer sheets. Suspiciously high rates of
+      schools systematically changed students' answers after testing. The cheating was organized rather than incidental: 38 of the 178 educators named were principals, who pressured teachers to hit targets, and staff held weekend "erasure parties" to correct answer sheets. Suspiciously high rates of
       wrong-to-right erasures flagged the pattern — a statistical fingerprint
       the gaming left behind precisely because correcting a wrong answer to a
       right one is far rarer, by chance, than the reverse.#cn()
@@ -1043,10 +1066,12 @@
     // -- The Investigation --
     [
       A 2008 _Atlanta Journal-Constitution_ analysis of improbable score gains, then a February 2010 erasure analysis by the Governor's Office of Student Achievement, then a Governor-ordered special investigation supported by the Georgia Bureau of Investigation, documented the scheme in a 2011 report.
-      Roughly 180 educators were implicated; 35 were indicted and 11
-      convicted under Georgia's RICO statute, the report finding the
-      administration had emphasized results and praise "to the exclusion
-      of integrity and ethics." That an investigation came from outside the
+      Investigators found cheating in 44 of the 56 schools they examined
+      on the 2009 CRCT and traced organized misconduct as far back as
+      2001. The report named 178 educators, 38 of them principals; 35 were
+      indicted and 11 convicted under Georgia's RICO statute, the report
+      finding the administration had emphasized results and praise "to the
+      exclusion of integrity and ethics." That an investigation came from outside the
       district — a newspaper and state investigators, not the schools — is
       itself the mark of the missing independent check.#cn()
     ],
@@ -1075,19 +1100,19 @@
   ),
   beats: (
     "District administered and held custody of the high-stakes tests determining bonuses and recognition",
-    "Educators across dozens of schools organized changing parties to change students' answers",
+    "Educators across dozens of schools organized erasure parties to change students' answers",
     "Newspaper analysis and state investigators documented scheme; thirty-five indicted, eleven convicted under RICO",
     "Institution being measured operated the instrument measuring it, with no independent audit",
     "Convictions made APS the prominent U.S. high-stakes-testing fraud case fuelling reassessment",
   ),
   references: (
-    [Office of the Governor, Special Investigators (Bowers, Wilson, Hyde), _Special Investigation into Test Tampering in Atlanta's School System_, Vol. 1 (June 30, 2011) — the organized cheating and the quoted finding.],
-    [_Atlanta Journal-Constitution_ investigative series (2009–2011) — the erasure-rate analysis.],
+    [Office of the Governor, Special Investigators (Bowers, Wilson, Hyde), _Special Investigation into Test Tampering in Atlanta's School System_, Vol. 1 (June 30, 2011; released July 2011) — cheating in 44 of 56 schools examined, 178 educators named including 38 principals. The verified quoted span is "emphasized test results and public praise to the exclusion of integrity and ethics"; the subject clause is the reporting's, not the report's — do not re-quote it as the report's own sentence.],
+    [_Atlanta Journal-Constitution_ investigative series (2008–2011) — the December 2008 analysis of statistically improbable CRCT scores and the subsequent erasure-rate reporting.],
     [_State of Georgia v. Hall et al._ (2013–2015) — indictments and RICO convictions.],
-    [Koretz, D. (2017), _The Testing Charade_ — high-stakes-testing distortion.],
     [Campbell, D. (1976), "Assessing the Impact of Planned Social Change" — Campbell's Law.],
+    [Koretz, D. (2017), _The Testing Charade_ — high-stakes-testing distortion.],
   ),
-  quote: [Dr. Hall and her administration emphasized test results and public praise to the exclusion of integrity and ethics.],
+  quote: [The superintendent and her administration emphasized test results and public praise to the exclusion of integrity and ethics.],
   quote-source: "Georgia Special Investigators' Report on Atlanta Public Schools, 2011",
   le-insight: [
     The APS cheating scandal is the strongest available case for
@@ -1187,7 +1212,7 @@
       The figure circulated. It appeared in conference keynotes,
       vendor materials, accreditor presentations, and in widely
       shared accounts of what early-warning analytics could deliver.
-      The claim's status in the literature outran its evidentiary base: the LAK 2012 paper was peer-reviewed but four pages long, and the institutional dataset behind the headline number was not made available for independent reanalysis. The field cited the result anyway,
+      The claim's status in the literature outran its evidentiary base: the LAK 2012 paper was peer-reviewed but four pages long, and the institutional dataset behind the headline number was not made available for independent reanalysis — Purdue moved the underlying study off its own site during the dispute. The field cited the result anyway,
       because it was the kind of result the field wanted to be
       true.#cn()
     ],
@@ -1200,7 +1225,11 @@
       courses; students who depart cannot. The "took two or more
       Signals courses" group was therefore an inadvertent selection
       on persistence — not a sample exposed to a different
-      treatment intensity. Alfred Essa then built a simulation that
+      treatment intensity. The tell was in the paper's own numbers:
+      taking *one* Signals course correlated with a *lower*
+      retention rate than the non-Signals population, which no
+      dose–response account of a beneficial treatment explains, and
+      which a coin-flip account of course-load explains exactly. Alfred Essa then built a simulation that
       substituted "received a piece of chocolate" for "took a
       Signals class," with chocolate having no causal effect on
       anything, and reproduced the apparent retention gain. The
@@ -1258,8 +1287,8 @@
   references: (
     [Arnold, K. E., \& Pistilli, M. D. (2012). Course Signals at Purdue: Using learning analytics to increase student success. _Proceedings of LAK 2012_, 267–270. doi:10.1145/2330601.2330666 — the original study at the center of the critique.],
     [Caulfield, M. (2013). "Why the Course Signals Math Does Not Add Up," _Hapgood_, September 26, 2013, and "Purdue Course Signals Data Issue Explainer," _e-Literate_, November 12, 2013 — the reverse-causality critique.],
-    [Essa, A. (2013). "Can We Improve Retention Rates by Giving Students Chocolates?" alfredessa.com — the placebo simulation reproducing the Course Signals retention curve.],
-    [Feldstein, M. (2013). "Purdue's Non-Answer on Course Signals," _e-Literate_, November 6, 2013 — the field-level critique of promoting research and then declining scrutiny.],
+    [Straumsheim, C. (2013). "Mixed Signals," _Inside Higher Ed_, November 6, 2013 — documents Alfred Essa's placebo simulation, which substituted a randomly distributed piece of chocolate for a Signals class and reproduced the retention curve.],
+    [Feldstein, M. (2013). "Purdue's Non-Answer on Course Signals," _e-Literate_, November 2013 — the field-level critique of promoting research and then declining scrutiny.],
   ),
   quote: [Substituting "received a piece of chocolate" for "took a Signals class" in a simulation reproduces the apparent retention gain.],
   quote-source: "Editors' synthesis of Essa's 2013 simulation demonstration.",
@@ -1286,7 +1315,7 @@
   literature-items: (
     [Arnold \& Pistilli (2012), _LAK 2012_],
     [Caulfield (2013), _Hapgood_ / _e-Literate_],
-    [Essa (2013), simulation demonstration],
+    [Straumsheim (2013), _Inside Higher Ed_ — Essa's placebo simulation],
   ),
   reflection-list: (
     [Identify a predictive or early-warning analytics deployment in your domain whose published outcome claim circulates more widely than the peer-reviewed evidence supports. What threats to validity — selection, reverse causality, censoring — would a Caulfield-style external critic name first?],
@@ -1316,8 +1345,7 @@
     Parent-privacy groups organized opposition state by state, and the coalition of nine shrank to three in seven months. Analysts read inBloom as low public tolerance for risk meeting an initiative that never communicated its benefits — the assumption that technically sound infrastructure generates
     its own legitimacy. It is the purest governance failure in the dataset,
     and the book's clearest argument that in education at scale, stakeholder
-    trust and governance are not optional features but load-bearing
-    structure.
+    trust and governance are not optional features but load-bearing structure.
   ],
   sections: (
     // -- Background --
@@ -1419,7 +1447,7 @@
   ),
   approaches: (
     during: (
-      [Treat consent, transparency, and a parent-facing voice as load-bearing requirements gathered before the data store is built, not features bolted on after launch.],
+      [Treat consent, transparency, and a parent-facing voice as requirements gathered before the data store is built, not features bolted on after launch.],
       [Engage the families and districts whose data is at stake as design stakeholders from the outset, so the governance questions surface in requirements rather than in opposition.],
       [Make legitimacy an explicit deliverable: document who must agree, on what terms, before any student record moves into shared infrastructure.],
     ),
@@ -1505,7 +1533,13 @@
       Several districts withdrew or rebranded their use, CZI and Summit
       revised their outreach, and the episode became a standard caution in
       ed-tech adoption — a reputational cost paid for governance work that
-      would have been cheaper to do first.#cn() Its lesson for the field is
+      would have been cheaper to do first. The churn was larger than
+      Summit said: pushing back on the Brooklyn coverage, the organization
+      told reporters that only 10 percent of schools quit the platform each
+      year, but records Chalkbeat obtained from Summit itself put the real
+      figure at 18 percent of schools quitting a year after using it — the
+      10 percent came from averaging the first three years, when the
+      denominator was 19 schools, then 338.#cn() Its lesson for the field is
       concrete: an adoption decision should have to produce a public evidence
       summary at parent reading level, a data-handling agreement at the same
       resolution, and a documented exit path — governance artifacts that make
@@ -1522,11 +1556,13 @@
     "Districts withdrew, CZI revised outreach; episode became standard caution in ed-tech adoption",
   ),
   references: (
-    [#link("https://www.nytimes.com/2019/04/21/technology/silicon-valley-kansas-schools.html")[N. Bowles, "Silicon Valley Came to Kansas Schools. That Started a Rebellion," _New York Times_ (2019)] — the parent revolt.],
     [N. Singer, "The Silicon Valley Billionaires Remaking America's Schools," _New York Times_ (2017) — the CZI/Summit rollout.],
-    [S. Schwartz, "Two Districts Roll Back Summit Personalized Learning Program," _Education Week_ (December 22, 2017) — the Cheshire suspension and the Indiana Area rollback.],
-    [M. Barnum, "Summit Learning declined to be studied, then cited collaboration with Harvard researchers anyway," _Chalkbeat_ (January 18, 2019) — the missing evaluation framework.],
+    [L. Genota, "Brooklyn Students Protest Use of Online Learning Platform Designed by Summit Learning," _Education Week_ (November 13, 2018) — the ~380 schools and 72,000 students figures and the walkout of nearly 100 students at the Secondary School for Journalism.],
+    [M. Barnum, "Summit Learning declined to be studied, then cited collaboration with Harvard researchers anyway," _Chalkbeat_ (January 17, 2019) — the missing evaluation framework.],
     [Chan Zuckerberg Initiative & Summit Learning public program documentation (2015–2019); cf. inBloom (Case 53).],
+    [M. Barnum, "Summit Learning, the Zuckerberg-backed platform, says 10% of schools quit using it each year. The real figure is higher," _Chalkbeat_ (May 23, 2019) — the 18 percent annual attrition figure from Summit's own records.],
+    [#link("https://www.nytimes.com/2019/04/21/technology/silicon-valley-kansas-schools.html")[N. Bowles, "Silicon Valley Came to Kansas Schools. That Started a Rebellion," _New York Times_ (2019)] — the parent revolt.],
+    [S. Schwartz, "Two Districts Roll Back Summit Personalized Learning Program," _Education Week_ (December 22, 2017) — the Cheshire suspension and the Indiana Area rollback.],
   ),
   quote: [The tools were free. The accountability architecture had not been built.],
   quote-source: "Editors' synthesis of Summit Learning rollout coverage (New York Times, Wired, Education Week, 2018–2019)",
@@ -1587,7 +1623,7 @@
   year: "2010s – present (Brookings synthesis 2021)",
   domains-list: ("higher education", "predictive analytics", "access pricing"),
   modes-code: "TKN",
-  impact: "An academic study reports a 23.3% out-of-state yield gain (12.1% to 14.8%) at an unnamed large public university; vendor case studies report 33% net tuition increases with a 6-point cut to discount rate (EAB) and 173 additional freshmen without aid-budget increases (Othot); algorithms across at least six named vendors price aid offers against each accepted applicant's modeled willingness to pay",
+  impact: "An academic study reports a 23.3% out-of-state yield gain (12.1% to 14.8%) at an unnamed large public university; vendor case studies report 33% net tuition increases with a 6-point cut to discount rate (EAB) and 173 additional freshmen without aid-budget increases (Othot); algorithms from at least six named vendors reach some 700 institutions, predicting each accepted applicant's likelihood to enroll, with the second stage — pricing the aid offer against modeled willingness to pay — emerging rather than established, and Othot's optimizer shipping set by default to minimize scholarship aid while maintaining enrollment",
   kind: "failure",
   scale: "big",
   evidence-source: "program-report",
@@ -1638,13 +1674,19 @@
       Ruffalo Noel Levitz works with roughly 300 institutions; EAB
       with 150; Rapid Insight with 150; Capture Higher Ed with
       100; Othot with around 30; Whiteboard Higher Education
-      rounds out the named tier, with Civitas Learning named separately as a student-success-only firm. The reported effect sizes: a 23.3 percent out-of-state yield gain — 12.1 percent to 14.8 percent — at an unnamed large public university in a University of Washington study; EAB's 33 percent
-      net-tuition gain paired with a 6-point cut to the discount
-      rate; Othot's 173 additional freshmen recruited without an
-      increase to the aid budget. The vendor effect sizes are
-      vendor-reported and are not auditable from outside the
-      institution — a hedge Engler is explicit about, and one the
-      evidence-tier flag preserves into the case.#cn()
+      rounds out the named tier, with Civitas Learning named separately as a firm exclusively focused on student success. A 2015 Educause survey put analytics for enrollment management at over 75 percent of colleges, up from just over 60 percent in 2012. The reported effect sizes: a 23.3 percent out-of-state yield gain — 12.1 percent to 14.8 percent — at an unnamed large public university in a University of Washington study; EAB's 33 percent
+      net-tuition gain at "Aster University," paired with a
+      six-point cut to the tuition discount rate from around 22 to
+      around 16 percent; Othot's 173 additional freshmen at the New
+      Jersey Institute of Technology, recruited without a
+      corresponding rise in scholarship aid. Two hedges travel with
+      these numbers. The vendor effect sizes are vendor-reported and
+      are not auditable from outside the institution. And the second
+      stage is the emerging one: scholarship optimization has
+      historically been done manually, and Engler writes that it is
+      "not clear that this approach is widely in use" — the 700
+      institutions are running the prediction step, not necessarily
+      the optimizer.#cn()
     ],
     [
       The structural critique runs through what the algorithm
@@ -1652,7 +1694,11 @@
       — is the operational target the prediction system was built
       around, and Engler's argument is that this construct turns
       the financial-aid award into a pricing instrument rather
-      than a need-or-merit one. The downstream evidence he marshals
+      than a need-or-merit one. The clearest evidence that the
+      construct is the operational target and not an inference about
+      it is Othot's default: Engler reports that the vendor's
+      optimizer ships set to minimize scholarship aid while
+      maintaining enrollment. The downstream evidence he marshals
       is the literature linking institutional aid to graduation
       outcomes: roughly a 0.9 percent gain in graduation odds per additional \$1,000 in merit aid, with larger effects for need-based aid; a more than 5 percent cut in low-income graduation likelihood per additional \$1,000 in unsubsidized loans. If the algorithm reduces aid per student to find
       the minimum that still yields enrollment, the downstream
@@ -1700,7 +1746,7 @@
   ),
   approaches: (
     during: (
-      [Name the optimization construct explicitly. "Willingness to pay" is not "need" and is not "merit"; the choice of construct is the load-bearing fairness decision, and the institution that does not name it has nonetheless made it.],
+      [Name the optimization construct explicitly. "Willingness to pay" is not "need" and is not "merit"; the choice of construct is the decisive fairness decision, and the institution that does not name it has nonetheless made it.],
       [Require vendor disclosure of the model's inputs, training data, and objective function as a condition of contracting; the case's evidence-tier limit is partly the result of contractual non-disclosure that institutions could refuse to sign.],
       [Tie the deployed algorithm's outputs back to downstream completion data; the literature linking aid to graduation odds is the evidence base the optimization should be tested against, not abstracted from.],
     ),
@@ -1711,12 +1757,12 @@
     ),
   ),
   references: (
-    [Engler, A. (2021), "Enrollment algorithms are contributing to the crises of higher education," Brookings Institution, 14 Sept 2021.],
+    [Engler, A. (2021), "Enrollment algorithms are contributing to the crises of higher education," Brookings Institution, 14 September 2021 — the two-stage architecture, the vendor tally to at least 700 institutions, and the effect sizes. The phrase "algorithms excel at identifying a student's exact willingness to pay" is Engler's own, from the executive summary.],
     [Franke, R. (2012), _Towards the Education Nation: Revisiting the Impact of Financial Aid, College Experience, and Institutional Context on Baccalaureate Degree Attainment_, UCLA doctoral dissertation — the aid-and-graduation effect sizes Engler cites.],
     [Goldrick-Rab, S. (2016), _Paying the Price_ — broader synthesis on net-price, unsubsidized loans, and low-income completion.],
     [Vendor case studies cited in Engler (Othot, EAB, Ruffalo Noel Levitz, University of Washington) — vendor-reported and not externally audited; flagged at evidence-tier under the title.],
   ),
-  quote: [The algorithms excel at identifying a student's exact willingness to pay. The construct is the load-bearing fairness decision, and the institution that does not name it has nonetheless made it.],
+  quote: [The algorithms excel at identifying a student's exact willingness to pay. The construct is the decisive fairness decision, and the institution that does not name it has nonetheless made it.],
   quote-source: "Editors' synthesis of Engler (2021), Brookings Institution.",
   le-insight: [
     Enrollment-algorithm yield optimization is the construct-choice
@@ -1785,7 +1831,7 @@
     edited, _Lifting the Veil on Enrollment Management_, extends
     the documentation across multiple authors — researchers,
     journalists, industry insiders. The construct substitution at
-    the center: the load-bearing institutional metric quietly
+    the center: the decisive institutional metric quietly
     shifted from "students served" to "net tuition revenue per
     matriculant," and the disclosure required to surface that
     shift never happened. The evidence-tier flag is binding —
@@ -1940,7 +1986,7 @@
   year: "2022",
   domains-list: ("higher education", "regulatory oversight", "online education"),
   modes-code: "DKN",
-  impact: "GAO found at least 550 colleges contracted with OPMs to support at least 2,900 academic programs as of July 2021; in a survey GAO cites, 16 of 25 colleges paid the OPM between 41% and 60% of program tuition revenue and four paid 61% or more; instructions to auditors and colleges lacked key details on OPM arrangements, leaving a risk that ED would not have the information it needs to detect incentive-compensation violations",
+  impact: "GAO found at least 550 colleges contracted with OPMs to support at least 2,900 academic programs as of July 2021; in a survey GAO cites, of the 25 respondent colleges paying their OPM a share of tuition revenue, 16 paid between 41% and 60% and four paid 61% or more; instructions to auditors and colleges lacked key details on OPM arrangements, leaving a risk that ED would not have the information it needs to detect incentive-compensation violations",
   kind: "failure",
   scale: "big",
   evidence-source: "investigation",
@@ -1953,7 +1999,7 @@
     (GAO-22-104463) names a structural oversight gap in the
     federal regime governing online program managers. As of
     July 2021, at least 550 colleges contracted with OPMs to
-    support at least 2,900 academic programs; in survey data GAO cites, 16 of 25 colleges paid the OPM between 41 and 60 percent of program tuition revenue and four paid 61 percent or more. The 1992 Higher Education Act amendments
+    support at least 2,900 academic programs; in survey data GAO cites, of the 25 respondent colleges paying their OPM with a share of tuition revenue, 16 paid between 41 and 60 percent and four paid 61 percent or more. The 1992 Higher Education Act amendments
     prohibited incentive compensation for student recruiters
     as a fraud-prevention measure; the Department of Education's
     2011 "bundled-services" guidance exempted OPMs from the ban
@@ -1977,15 +2023,19 @@
       guidance the Department of Education issued exempted
       online program managers from the ban when student
       recruiting was bundled with other services such as program
-      design, platform delivery, and student support — a
-      construct that allowed the revenue-share contracting model
-      to grow rapidly across the next decade.#cn()
+      design, platform delivery, and student support, and further
+      safeguards were met. The exemption it created runs to the
+      payment the college makes to the vendor: the statutory ban
+      still prohibits the OPM's own recruiters from being paid on
+      their success in enrolling students. That is the boundary the
+      construct allowed the revenue-share contracting model to grow
+      across the next decade without anyone auditing.#cn()
     ],
     [
       The GAO's audit documents the scale the regime grew to.
       By July 2021, at least 550 colleges had contracted with
       OPMs to support at least 2,900 academic programs.
-      In the Eduventures survey GAO cites, 16 of 25 colleges transferred between 41 and 60 percent of program tuition revenue to the OPM and four transferred 61 percent or more. The OPM operated under the
+      In the Eduventures Research survey of 145 college leaders that GAO cites, 49 respondents' colleges contracted with an OPM, 32 of those contracted for student recruiting, and 25 of the 32 paid the OPM with a share of tuition revenue; of those 25, 16 paid between 41 and 60 percent of tuition and four paid 61 percent or more. The OPM operated under the
       university brand — recruiting, marketing, and program
       operations conducted by OPM employees identifying as the
       university — while receiving compensation tied directly to
@@ -1996,7 +2046,7 @@
     ],
     [
       The oversight gap the GAO documents is operational. Auditor instructions did not reference OPMs or the 2011 guidance, so compliance audits might not assess relevant arrangements; instructions to colleges lacked the detail that would have made them report those arrangements, and GAO found a risk that the Department would not have the information it needs to detect violations.
-      The audit's central finding is not that the OPM regime was
+      Education's own data made the gap measurable: 16 completed compliance audits and five completed program reviews had reported incentive-compensation findings since 2012, and not one involved a college's arrangement with an OPM. The audit's central finding is not that the OPM regime was
       designed to fail; it is that the oversight architecture
       required to police the exemption's boundaries was never
       built, and the contracting structure that the exemption
@@ -2040,7 +2090,7 @@
   ),
   beats: (
     "1992 HEA banned incentive compensation for recruiters; 2011 ED guidance exempted OPMs under bundled-services construct",
-    "GAO 2022: at least 550 colleges, 2,900 programs, surveyed revenue shares of 41–60% of program tuition for 16 of 25 colleges, 61%+ for four",
+    "GAO 2022: at least 550 colleges, 2,900 programs; of 25 surveyed colleges paying a tuition-revenue share, 16 paid 41–60% and four paid 61%+",
     "Oversight gap: auditor and college instructions lacked key OPM detail, leaving a risk ED would not have the information needed to detect violations",
     "2U July 2024 Chapter 11 closed the commercial boundary; ED opened a review but reaffirmed the 2011 guidance (Jan. 2025 DCL), federal boundary unclosed; successor OPMs and underlying delegation problem persist",
     "Investigation-grade delegation-with-revocation case at population scale; pair with Case 58 (USC × 2U Luna) and Case 55 (Engler)",
@@ -2052,7 +2102,7 @@
       [Treat the delegation as reversible from the start: contract terms should preserve termination rights and operational-knowledge transfer; the lock-in the universities experienced was partly contractual and partly operational, and both halves are designable.],
     ),
     after: (
-      [Carry the investigation-grade audit into the curriculum without softening: the GAO's central finding is that the oversight architecture was not built, and that is the load-bearing teaching point.],
+      [Carry the investigation-grade audit into the curriculum without softening: the GAO's central finding is that the oversight architecture was not built, and that is the teaching point.],
       [Pair the case with Case 58 (USC × 2U) so the regulator-side audit and the consumer-side litigation are taught together; one half names what the regulator missed, the other names what the delegated marketing actually did.],
       [Track post-review and post-2U-bankruptcy successor structures as a continuation of the case; the underlying delegation problem persists, and the case's frame is the regime-level oversight gap, not the specific 2U arrangement.],
     ),
@@ -2063,7 +2113,7 @@
     [Higher Education Amendments of 1992, Pub. L. No. 102-325, incentive-compensation prohibition, 20 U.S.C. § 1094(a)(20) — the statutory basis the 2011 guidance interpreted.],
     [2U Inc. (2024), Chapter 11 bankruptcy filing (July 25, 2024); U.S. Department of Education, "Dear Colleague" Letter (Jan. 14, 2025) reaffirming the 2011 bundled-services guidance (GEN-11-05) — the commercial-boundary closure alongside the federal guidance's continued validity.],
   ),
-  quote: [Without clearer instructions to auditors and colleges about the information on OPM arrangements that must be assessed during compliance audits and agency reviews, there is a risk that Education will not have the information it needs to detect incentive compensation violations.],
+  quote: [Without clearer instructions to auditors and colleges about the information on OPM arrangements that must be assessed during compliance audits and program reviews, there is a risk that Education will not have the information it needs to detect incentive compensation violations.],
   quote-source: "U.S. Government Accountability Office, GAO-22-104463 (2022).",
   le-insight: [
     GAO-22-104463 is the investigation-grade delegation-with-
@@ -2117,7 +2167,7 @@
   induced-anchor: "5.4",
   lens-anchor: "D5/PT6",
   leo-anchor: "LEO-5, LEO-3",
-  coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Katzman founded 2U but had departed before the USC MSW expansion documented here.",
+  coi: "Institutional overlap: John Katzman collaborates with an editor's institution (Johns Hopkins) but was not involved in this work. Katzman founded 2U and left the company in 2012, before the USC MSW expansion and the 2019-onward conduct documented here.",
   summary: [
     USC's Master of Social Work program grew from about 300 students per cohort before 2010 to more than 3,000 students enrolled, almost entirely through online growth under the 2U partnership. The
     May 2023 _Luna v. USC_ class-action complaint alleges that USC
@@ -2129,7 +2179,11 @@
     that the online program's tuition (over \$100,000) reflected
     on-campus pricing while the delivered student experience did
     not. USC and 2U announced the partnership's termination on the
-    MSW and other programs in November 2023. The case is in litigation, and
+    MSW and other programs in November 2023. The case is still in litigation
+    with no ruling on the merits — USC's demurrers were overruled in
+    substantial part in April 2024 and again in September 2024, and a
+    class-certification motion filed in November 2025 was set for argument in
+    2026 — and
     the predatory-targeting reconstruction rests on the complaint
     and on contemporaneous reporting rather than on a fact-finder's
     ruling — the evidence-tier flag is binding, and the case
@@ -2208,7 +2262,17 @@
     ],
     [
       The journalism-tier evidence flag is binding on the case's
-      framing. The complaint is a contested pleading that has survived two demurrers with no ruling on the merits, and the partnership-termination record is contemporaneous reporting; neither is investigation-grade in the sense a GAO audit is, and the journalism-tier flag governs both. The
+      framing. The complaint is a contested pleading. It has survived two
+      rounds of demurrer — the Los Angeles Superior Court overruled USC's
+      demurrer to the First Amended Complaint on April 2, 2024 in substantial
+      part, sustaining it only as to an Unruh Act claim with leave to amend,
+      and denied the demurrer to the Second Amended Complaint on September 17,
+      2024 — but surviving a demurrer decides only that the allegations, taken
+      as true, state a claim; it is not a finding that any of them happened.
+      Plaintiffs filed a Third Amended Complaint on July 30, 2025 and moved for
+      class certification that November. The partnership-termination record is
+      contemporaneous reporting; neither is investigation-grade in the sense a
+      GAO audit is, and the journalism-tier flag governs both. The
       predatory-targeting reconstruction relies on the
       complaint's allegations and on contemporaneous reporting
       — Higher Ed Dive, classaction.org summaries, the Project
@@ -2241,7 +2305,7 @@
     ),
   ),
   references: (
-    [_Stephanie Luna v. University of Southern California_, class action complaint, Los Angeles County Superior Court, May 2023.],
+    [_Stephanie Luna v. University of Southern California_, class action complaint, Los Angeles County Superior Court, filed May 4, 2023 (First Amended Complaint Sept. 2023; Second Amended May 2, 2024; Third Amended July 30, 2025).],
     [Higher Ed Dive reporting on the Luna complaint, May 2023; classaction.org and topclassactions.com summaries.],
     [Project on Predatory Student Lending statement on USC-2U partnership termination, November 2023.],
     [2U Inc. and USC public statements on partnership termination, November 2023; broader 2U commercial-collapse reporting referenced through Case 57.],
@@ -2249,7 +2313,7 @@
   quote: [The tuition tracked residential pricing. The delivered student experience tracked the OPM-operated structure. The gap between what was promised and what was delivered is the case.],
   quote-source: "Editors' synthesis of the Luna v. USC complaint and contemporaneous reporting.",
   le-insight: [
-    Luna v. USC is the consumer-side journalism-tier counterpart
+    _Luna v. USC_ is the consumer-side journalism-tier counterpart
     to GAO-22-104463 (Case 57). The complaint alleges USC
     marketed the online MSW as the "same" as the residential
     program while outsourcing the student-facing operations to 2U;
@@ -2330,7 +2394,7 @@
       university enrollment outcomes onto the company's quarterly
       results. When enrollment trends weakened, the disclosure
       question that securities law imposes on a public company
-      became the load-bearing one. The consolidated complaint
+      became the decisive one. The consolidated complaint
       alleges that executive statements to investors did not
       track the operating signal the company's own enrollment
       projections were generating across the class period.#cn()
@@ -2390,7 +2454,7 @@
       management context this litigation operates inside of.#cn()
     ],
     [
-      The honest hedges the case carries are load-bearing. The
+      The honest hedges the case carries are not decoration. The
       settlement is not an admission of liability, and the case
       teaches the disclosure-architecture pattern, not
       adjudicated wrongdoing. The class period and the
@@ -2602,8 +2666,7 @@
     ],
     // -- Aftermath & Equity Record --
     [
-      The bias record is documented, not asserted, and its
-      hedges are load-bearing. Amrein-Beardsley and Geiger's
+      The bias record is documented, not asserted, and its hedges do real work. Amrein-Beardsley and Geiger's
       2020 analysis of more than 1,700 HISD teachers' EVAAS
       results found that teachers in schools serving larger
       populations of English-language learners,
@@ -2653,12 +2716,12 @@
     ),
   ),
   references: (
-    [_Hous. Fed'n of Teachers v. Hous. Indep. Sch. Dist._, 251 F. Supp. 3d 1168 (S.D. Tex. 2017) — memorandum opinion denying summary judgment on the procedural due process claim.],
-    [Amrein-Beardsley, A., & Collins, C. (2012), "The SAS Education Value-Added Assessment System (SAS® EVAAS®) in the Houston Independent School District (HISD): Intended and Unintended Consequences," _Education Policy Analysis Archives_ 20(12), doi:10.14507/epaa.v20n12.2012.],
     [American Statistical Association (2014), _ASA Statement on Using Value-Added Models for Educational Assessment_, April 8, 2014.],
-    [American Educational Research Association Council (2015), "AERA Statement on Use of Value-Added Models (VAM) for the Evaluation of Educators and Educator Preparation Programs," _Educational Researcher_ 44(8):448–452, doi:10.3102/0013189X15618385.],
-    [Amrein-Beardsley, A., & Geiger, T. (2020), "Methodological Concerns About the Education Value-Added Assessment System (EVAAS): Validity, Reliability, and Bias," _SAGE Open_ 10(2), doi:10.1177/2158244020922224.],
+    [Amrein-Beardsley, A., & Collins, C. (2012), "The SAS Education Value-Added Assessment System (SAS® EVAAS®) in the Houston Independent School District (HISD): Intended and Unintended Consequences," _Education Policy Analysis Archives_ 20(12), doi:10.14507/epaa.v20n12.2012.],
     [_Education Week_ (October 2017), "Houston District Settles Lawsuit With Teachers' Union Over Value-Added Scores"; Houston Public Media (October 10, 2017), "Federal Lawsuit Settled Between Houston's Teacher Union and HISD" — settlement terms and the \$237,000 fee figure.],
+    [_Hous. Fed'n of Teachers v. Hous. Indep. Sch. Dist._, 251 F. Supp. 3d 1168 (S.D. Tex. 2017) — memorandum opinion denying summary judgment on the procedural due process claim.],
+    [Amrein-Beardsley, A., & Geiger, T. (2020), "Methodological Concerns About the Education Value-Added Assessment System (EVAAS): Validity, Reliability, and Bias," _SAGE Open_ 10(2), doi:10.1177/2158244020922224.],
+    [American Educational Research Association Council (2015), "AERA Statement on Use of Value-Added Models (VAM) for the Evaluation of Educators and Educator Preparation Programs," _Educational Researcher_ 44(8):448–452, doi:10.3102/0013189X15618385.],
   ),
   quote: [When a public agency adopts a policy of making high stakes employment decisions based on secret algorithms incompatible with minimum due process, the proper remedy is to overturn the policy.],
   quote-source: "Hous. Fed'n of Teachers v. Hous. Indep. Sch. Dist., 251 F. Supp. 3d 1168 (S.D. Tex. 2017)",
@@ -2840,8 +2903,7 @@
       central account.#cn()
     ],
     [
-      The hedges the case carries are load-bearing. The
-      evidence-tier flag is binding: the NRP findings and the
+      The hedges the case carries are not decoration. The evidence-tier flag is binding: the NRP findings and the
       reading science are peer-reviewed, but the causal
       narrative of why practice diverged — the publishing
       economics, the teacher-preparation gaps, the role of
@@ -2884,17 +2946,17 @@
     ),
   ),
   references: (
+    [National Reading Panel (2000), _Teaching Children to Read: An Evidence-Based Assessment of the Scientific Research Literature on Reading and Its Implications for Reading Instruction_, National Institute of Child Health and Human Development, NIH Pub. No. 00-4769.],
     [Hanford, E. (2022 – 2024), "Sold a Story: How Teaching Kids to Read Went So Wrong," _APM Reports_, podcast series launched October 20, 2022.],
     [Hanford, E. (2018), "Hard Words: Why Aren't Our Kids Being Taught to Read?" _APM Reports_, September 10, 2018.],
-    [National Reading Panel (2000), _Teaching Children to Read: An Evidence-Based Assessment of the Scientific Research Literature on Reading and Its Implications for Reading Instruction_, National Institute of Child Health and Human Development, NIH Pub. No. 00-4769.],
-    [Castles, A., Rastle, K., & Nation, K. (2018), "Ending the Reading Wars: Reading Acquisition From Novice to Expert," _Psychological Science in the Public Interest_ 19(1):5 – 51.],
     [Schwartz, S. (updated through 2024), "Which States Have Passed 'Science of Reading' Laws? What's in Them?" _Education Week_ — legislation tracker; ~40 states plus DC by late 2024.],
+    [Castles, A., Rastle, K., & Nation, K. (2018), "Ending the Reading Wars: Reading Acquisition From Novice to Expert," _Psychological Science in the Public Interest_ 19(1):5 – 51.],
     [Seidenberg, M. (2017), _Language at the Speed of Sight: How We Read, Why So Many Can't, and What Can Be Done About It_, Basic Books.],
   ),
   quote: [The scientific question of how children learn to read words was, by the field's own account, settled while the divergent practice scaled; the evidence base failed to reach teacher preparation and daily curriculum for decades, and the causal narrative of why is journalistic synthesis — source confidence flagged, future validation ongoing.],
   quote-source: "Editors' synthesis of Hanford (APM Reports, 2018, 2022), the National Reading Panel report (2000), and Castles, Rastle & Nation (2018).",
   le-insight: [
-    Sold a Story is the load-bearing case for an evidence base
+    Sold a Story is the clearest case of an evidence base
     that never moved into deployment: decades of peer-reviewed
     reading science, federally consolidated in 2000, coexisted
     at national scale with classroom practice built on the
@@ -3002,7 +3064,7 @@
       particularly for low-income minority students. Total
       spending across the sites reached approximately
       \$575 million, of which the foundation contributed roughly
-      \$212 million; the remainder was primarily site funds.#cn()
+      \$212 million; the remainder came from site and federal funds — site funds were the largest non-foundation source at four sites, federal funds at the other three.#cn()
     ],
     [
       The measurement layer was built with unusual rigor. The
@@ -3017,12 +3079,18 @@
       student achievement under reassignment. The reported
       answer was broadly yes — the composite of value-added,
       observations, and student surveys carried predictive
-      signal — with a load-bearing caveat the project itself
+      signal — with a decisive caveat the project itself
       documented: substantial noncompliance with the random
       assignment weakened the experimental protocol, and critics
       noted the validation spoke to prediction within the studied
       settings, not to what a district's personnel system would
-      do with the score. The Intensive Partnerships proceeded on
+      do with the score. A second limit ran directly into the
+      initiative's own theory of change: students and teachers
+      could not be randomly assigned across school sites, so the
+      validation says nothing about comparing teachers' measured
+      effectiveness between schools — which is precisely the
+      comparison the plan to move effective teachers into
+      high-need schools depended on. The Intensive Partnerships proceeded on
       the measurement evidence. What the MET project did not and
       could not establish was the second half of the theory of
       change: that a district could operate the rating at scale,
@@ -3034,21 +3102,32 @@
       RAND and AIR's six-year evaluation — Stecher et al.,
       _Improving Teaching Effectiveness: Final Report: The
       Intensive Partnerships for Effective Teaching Through
-      2015 – 2016_ (2018, RR-2242) — is the load-bearing evidence
+      2015 – 2016_ (2018, RR-2242) — is the evidence
       on the deployment. The evaluation found that the sites did
       implement the measurement architecture: new multi-measure
       evaluation systems were built and operated, and the
       effectiveness ratings were generally regarded as an
       improvement over the prior binary evaluations. But by 2014 – 2015, student achievement, dropout rates, and low-income minority students' access to effective teaching were not dramatically better than at similar sites that did not participate. The evaluation's site-level
-      implementation record explains the decoupling: the
+      implementation record is where the decoupling shows: the
       personnel levers the ratings were meant to drive moved
-      weakly or not at all — dismissal and non-renewal touched
-      few teachers, placement incentives did not shift effective
-      teachers toward high-need schools at meaningful scale,
-      individualized professional development linked to the
-      ratings was the least-implemented component, and political
-      and labor resistance narrowed the coupling further over
-      time. The evaluation itself — pre-specified outcomes,
+      weakly or not at all. About 1 percent of teachers were
+      dismissed for poor performance in 2015 – 2016, in part
+      because the new evaluation systems identified very few poor
+      performers. No site consistently took the steps that would
+      have moved low-income minority students into effective
+      teachers' classrooms. Sites struggled to individualize
+      professional development against the weaknesses an
+      evaluation identified, and generally did not require
+      participation, monitor it, or examine whether participants'
+      effectiveness improved. Retention of effective teachers did
+      not rise, though retention of ineffective teachers fell in
+      most sites. RAND is explicit that the evaluation cannot
+      identify the reasons the initiative missed its
+      student-outcome goals — insufficient time for effects to
+      appear, comparison sites adopting similar reforms, and a
+      flawed theory of action all stay live — so the coupling
+      account is the reading the implementation record best
+      supports, not a causal finding the evaluation makes. The evaluation itself — pre-specified outcomes,
       comparison-site design, six years of implementation
       tracking, published in full at 500-plus pages — is the
       model of decision-grade evidence the initiative's own
@@ -3061,8 +3140,9 @@
       foundation pledge of \$100 million, built a corps of more
       than 260 peer evaluators and mentors and a
       performance-linked pay system. Tampa Bay Times reporting
-      (Sokol, 2015) documented the fiscal arc: the district ultimately spent more than \$180 million, of the pledged \$100 million the foundation paid about \$80 million, and the district's main reserve fell from \$298 million in 2012 to \$152 million in 2015, the years spanning the new pay system. In
-      October 2015 superintendent Jeff Eakins announced the
+      (Sokol, 2015) documented the fiscal arc: more than \$180 million went into the program over six years; the foundation paid about \$80 million against a pledge its agreement worded as "up to" \$100 million, leaving the district to absorb the difference; and the district's main reserve fell from \$298 million in 2012 to \$152 million in 2015, the years spanning the new pay system. In
+      the fall of 2015 superintendent Jeff Eakins announced, in an
+      email to the peer evaluators themselves, the
       dismantling of the Gates-funded system, and the district
       wound down the peer-evaluator corps and the evaluation
       machinery it could no longer afford. The sustainment
@@ -3074,7 +3154,7 @@
       support collapsed together.#cn()
     ],
     [
-      The hedges the case carries are load-bearing. The RAND
+      The hedges the case carries are not decoration. The RAND
       evaluation is comparison-based, not randomized at the site
       level: it cannot rule out small effects, and implementation
       varied enough across sites that no single component is
@@ -3102,7 +3182,7 @@
     "Gates Foundation Intensive Partnerships for Effective Teaching, 2009 – 2016: ~$575M total (~$212M foundation, 37% of spending; remainder site and federal funds) across Hillsborough County FL, Memphis/Shelby County TN, Pittsburgh PA, and four California CMOs",
     "Theory of change: multi-measure effectiveness ratings (VAM + observations + student surveys, informed by MET project 2009 – 2013) drive personnel levers — retention, placement, development, compensation — that improve achievement and graduation",
     "RAND/AIR six-year evaluation (Stecher et al. 2018, RR-2242): sites built the evaluation systems, but the initiative did not achieve its goals for student achievement or graduation; no evidence of improvement for low-income minority students relative to comparison",
-    "Hillsborough flagship: >$180M spent, ~$80M of $100M pledge paid, main reserve $298M (2012) to $152M (2015); system dismantled in 2015 — sustainment never engineered as a requirement",
+    "Hillsborough flagship: >$180M into the program, ~$80M paid against an 'up to $100M' pledge, main reserve $298M (2012) to $152M (2015); system dismantled in 2015 — sustainment never engineered as a requirement",
     "Measurement layer strong, coupling absent; the intervention is the failure, the RAND evaluation is the decision-grade-evidence exemplar; pair with Case 51 (Atlanta) and Case 50 (Wisconsin DEWS)",
   ),
   approaches: (
@@ -3120,15 +3200,14 @@
   references: (
     [Stecher, B. M., Holtzman, D. J., Garet, M. S., Hamilton, L. S., et al. (2018), _Improving Teaching Effectiveness: Final Report: The Intensive Partnerships for Effective Teaching Through 2015–2016_, RAND Corporation, RR-2242-BMGF.],
     [Kane, T. J., McCaffrey, D. F., Miller, T., & Staiger, D. O. (2013), _Have We Identified Effective Teachers? Validating Measures of Effective Teaching Using Random Assignment_, MET Project research paper, Bill & Melinda Gates Foundation, January 2013.],
-    [Sokol, M. (2015), "Sticker shock: How Hillsborough County's Gates grant became a budget buster," _Tampa Bay Times_, October 2015 — with companion reporting, "Hillsborough schools to dismantle Gates-funded system that cost millions to develop."],
-    // VERIFY: interim-report year (2016) and author list
-    [Stecher, B. M., et al. (2016), _Improving Teaching Effectiveness: Implementation: The Intensive Partnerships for Effective Teaching Through 2013–2014_, RAND Corporation, RR-1295.],
+    [Sokol, M. (2015), "Sticker shock: How Hillsborough County's Gates grant became a budget buster," _Tampa Bay Times_, September 21, 2015 — with companion reporting, "Hillsborough schools to dismantle Gates-funded system that cost millions to develop" (fall 2015).],
+    [Stecher, B. M., Garet, M. S., Hamilton, L. S., Steiner, E. D., Robyn, A., Poirier, J., Holtzman, D. J., Fulbeck, E. S., Chambers, J., & Brodziak de los Reyes, I. (2016), _Improving Teaching Effectiveness: Implementation: The Intensive Partnerships for Effective Teaching Through 2013–2014_, RAND Corporation, RR-1295.],
     [Will, M. (2018), "'An Expensive Experiment': Gates Teacher-Effectiveness Program Shows No Gains for Students," _Education Week_, June 21, 2018.],
   ),
   quote: [The sites implemented new multi-measure teacher-evaluation systems, but the initiative did not achieve its goals for student achievement or graduation, and low-income minority students' outcomes and access to effective teaching showed no evidence of improvement relative to comparison sites; Hillsborough drew down reserves and dismantled its system in 2015.],
   quote-source: "Editors' synthesis of the RAND/AIR final evaluation (Stecher et al., 2018, RR-2242) and Tampa Bay Times reporting on the Hillsborough implementation (Sokol, 2015).",
   le-insight: [
-    The Intensive Partnerships are the load-bearing case for a
+    The Intensive Partnerships are the reference case for a
     reform that engineered its measurement and did not engineer
     its coupling. A validated multi-measure effectiveness rating
     was built and deployed at scale, and the levers it was meant
@@ -3174,7 +3253,7 @@
   year: "2013–2015",
   domains-list: ("K-12 education", "ed-tech procurement", "device rollout"),
   modes-code: "DHG",
-  impact: "Los Angeles Unified's plan to put an iPad loaded with Pearson Common Core curriculum in every student's hands — publicly discussed at roughly $1.3 billion (approximately $500 million for devices and curriculum plus approximately $800 million for network infrastructure, drawn from school-construction bonds) — collapsed within two years: students bypassed device security within about a week at initial schools, the district's own evaluator observed the Pearson curriculum in use in one of 245 classrooms, the Apple contract was halted in August 2014, Superintendent John Deasy resigned in October 2014, the FBI seized twenty boxes of documents in December 2014, the SEC examined the bond-funding disclosures, and the district recovered a settlement of approximately $6.4 million in 2015",
+  impact: "Los Angeles Unified's plan to put an iPad loaded with Pearson Common Core curriculum in every student's hands — publicly discussed at roughly $1.3 billion (approximately $500 million for devices and curriculum plus approximately $800 million for network infrastructure, drawn from school-construction bonds) — collapsed within two years: students bypassed device security within about a week at initial schools, the district's own evaluator observed the Pearson curriculum in use in one of 245 classrooms, the Apple contract was halted in August 2014, Superintendent John Deasy resigned in October 2014, the FBI seized twenty boxes of documents in December 2014, the SEC examined the bond-funding disclosures, and the district recovered a settlement of $6.45 million, paid by Pearson, in October 2015",
   kind: "failure",
   scale: "big",
   evidence-source: "journalism",
@@ -3207,8 +3286,7 @@
     documents in December 2014 at a federal grand jury's
     behest; and the SEC examined whether the bond funding was
     properly disclosed to investors. The district recovered a
-    settlement of approximately \$6.4 million in 2015,
-    ultimately borne by Pearson. The evidence base is largely
+    settlement of \$6.45 million in October 2015, paid by Pearson. The evidence base is largely
     journalism — KPCC, the _Los Angeles Times_, _Education
     Week_ — plus the district's own commissioned evaluation by
     the American Institutes for Research, so the evidence-tier
@@ -3269,15 +3347,14 @@
       district offices; the SEC separately examined whether the
       district's use of construction-bond proceeds for tablets
       was properly disclosed to bondholders. The district
-      sought a refund from Apple and Pearson and in 2015
-      reached a settlement of approximately \$6.4 million,
-      ultimately borne by Pearson as the curriculum
-      subcontractor. The federal investigation was later
+      sought a refund from Apple and Pearson and in October 2015
+      reached a settlement of \$6.45 million, paid by Pearson as
+      the curriculum subcontractor. The federal investigation was later
       reported closed without charges.#cn()
     ],
     [
       The evidence-tier flag rendered under the case title is
-      load-bearing. The public record on the CCTP is
+      decisive. The public record on the CCTP is
       substantially journalism — KPCC's email investigation,
       sustained _Los Angeles Times_ coverage, and _Education
       Week_'s multi-year reporting and retrospectives — joined
@@ -3325,7 +3402,7 @@
     "Fall 2013: rollout at 47 initial schools; devices of 185 students compromised at three high schools within about a week; home use suspended; keyboards unbudgeted; home-use liability unresolved",
     "District's own evaluator (AIR) observes 245 classrooms in spring 2014: Pearson curriculum in use in one; staff report promised content incomplete or unavailable",
     "August 2014: KPCC publishes pre-bid emails between Deasy, his deputy, and Apple/Pearson executives; district halts the Apple contract three days later; Deasy resigns October 2014",
-    "December 2014: FBI seizes 20 boxes of documents for a federal grand jury; SEC examines bond-funding disclosures; district recovers ~$6.4M settlement in 2015, borne by Pearson; federal probe later reported closed without charges",
+    "December 2014: FBI seizes 20 boxes of documents for a federal grand jury; SEC examines bond-funding disclosures; district recovers $6.45M settlement from Pearson in October 2015; federal probe later reported closed without charges",
   ),
   approaches: (
     during: (
@@ -3335,21 +3412,20 @@
     ),
     after: (
       [When the evidence base is journalism plus the institution's own commissioned evaluation, flag it under the title and carry the standing "future validation ongoing" language into print; the structural pattern survives the flag, the dollar magnitudes do not.],
-      [Preserve the district's own evaluation as the load-bearing internal-evidence stream: the AIR finding that the purchased curriculum was in use in one of 245 observed classrooms is the deployment's own instrument reporting the gap between the theory and the classroom.],
+      [Preserve the district's own evaluation as the decisive internal-evidence stream: the AIR finding that the purchased curriculum was in use in one of 245 observed classrooms is the deployment's own instrument reporting the gap between the theory and the classroom.],
       [Teach the two failure tracks — the unbuilt operator layer and the unbuilt governance layer — as one failure with one root: the substitution of founding vision for evidence architecture, at the human layer and at the procurement layer simultaneously.],
     ),
   ),
   references: (
     [Gilbertson, A. (2014), "LA schools cancel iPad contracts after KPCC publishes internal emails," KPCC 89.3 (Southern California Public Radio), August 25, 2014 — the public-records email investigation and the contract halt; see also KPCC's "LAUSD iPads: Timeline of a troubled program."],
-    // VERIFY: exact report title and issue date of the AIR interim (2014) and final (2015) CCTP evaluation reports before publication.
-    [American Institutes for Research (2014), interim evaluation of the LAUSD Common Core Technology Project, Phase 1 — 245 classroom observations across CCTP schools; Pearson curriculum observed in use in one.],
-    [Herold, B. (2014), "Hard Lessons Learned in Ambitious L.A. iPad Initiative," _Education Week_, September 2014 — retrospective on the implementation failures; see also Herold (2014), "FBI Investigation Leaves L.A. iPad Initiative in Further Disarray," _Education Week_, December 2014.],
-    // VERIFY: select and confirm exact article titles and dates for the specific pieces cited.
+    [Margolin, J., Haynes, E., Heppen, J., Ruedel, K., Meakin, J., Hauser, A., Blum, J., Chavez, S., & Hubbard, A. (2014), _Evaluation of the Common Core Technology Project: Interim Report_, American Institutes for Research, September 2014 — 245 classroom observations across 19 schools (15 Phase 1 CCTP, four non-CCTP) visited in May 2014; the Pearson curriculum app observed in use in one, at a single elementary school. Followed by AIR's _Evaluation of LAUSD's Instructional Technology Initiative: Year 2 Report_ (August 2015).],
+    [Herold, B. (2014), "Hard Lessons Learned in Ambitious L.A. iPad Initiative," _Education Week_, September 10, 2014 — retrospective on the implementation failures; see also Herold (2014), "FBI Investigation Leaves L.A. iPad Initiative in Further Disarray," _Education Week_, December 2014, and Herold (2015), "Pearson Settles With L.A. Over Curriculum Foul-Up," _Education Week_, October 20, 2015 — the \$6.45 million settlement, paid by Pearson.],
+    // VERIFY: select and confirm exact article titles and dates for the specific Los Angeles Times pieces cited below.
     [Blume, H., _Los Angeles Times_ coverage of the CCTP (2013–2015) — the rollout, the security bypass, the contract suspension, the Deasy resignation, and the FBI document seizure.],
     [_Education Week_ Market Brief (2017), "Feds Drop Investigation Into Los Angeles District Over \$1 Billion iPad Purchase," February 2017 — the reported closure of the federal inquiry without charges.],
   ),
   quote: [The Pearson curriculum, touted as central to the effort to prepare students for the new Common Core standards, was in use in just one of the 245 classrooms the district's own evaluators observed.],
-  quote-source: "Editors' synthesis of the American Institutes for Research Phase 1 evaluation finding, as reported by Education Week (September 2014).",
+  quote-source: "Editors' synthesis of the American Institutes for Research finding, Evaluation of the Common Core Technology Project: Interim Report (September 2014), section 3.D, p. 36.",
   le-insight: [
     The LAUSD Common Core Technology Project is the
     \$1-billion-scale case for technology deployed without
@@ -3375,10 +3451,11 @@
     forfeits the deployment's legitimacy regardless of the
     technology's merits — and as a Design-mode teaching case
     for the device-provision-equals-capability fallacy at the
-    human-interface layer. The evidence-tier flag is binding
-    until the AIR reports and the LA Times citations are
-    re-confirmed against primary sources; the structural
-    pattern survives the flag, the dollar magnitudes do not.
+    human-interface layer. The evidence-tier flag is binding: the
+    AIR interim report has been confirmed against the primary
+    document, but the Los Angeles Times pin-cites have not; the
+    structural pattern survives the flag, the dollar magnitudes
+    do not.
   ],
   literature-items: (
     [Gilbertson (2014), KPCC — the pre-bid email investigation],
@@ -3508,7 +3585,7 @@
       mechanism — before rebounding; by the fifth year the
       analysis found statistically significant gains in English
       language arts growth and no significant change in math.
-      The hedge is load-bearing: 62% of the eventual English
+      The hedge is binding: 62% of the eventual English
       improvement was attributable to shifting enrollment
       between schools — students moving to higher-growth
       schools, including charters — rather than to improvement
@@ -3561,15 +3638,15 @@
   references: (
     [Russakoff, D. (2015), _The Prize: Who's in Charge of America's Schools?_, Houghton Mifflin Harcourt — the book-length primary record of the gift and the reform.],
     [Russakoff, D. (2014), "Schooled: Cory Booker, Chris Christie, and Mark Zuckerberg had a plan to reform Newark's schools. They got an education," _The New Yorker_, May 19, 2014 — the excerpt carrying the consultant-spend reporting.],
-    [Chin, M., Kane, T. J., Kozakowski, W., Schueler, B. E., & Staiger, D. O. (2019), "School District Reform in Newark: Within- and Between-School Changes in Achievement Growth," _ILR Review_ 72(2), doi:10.1177/0019793918774318 (also NBER Working Paper 23922, 2017).],
-      [Pérez-Peña, R. (2010), "Facebook Founder to Donate \$100 Million to Help Remake Newark's Public Schools," _The New York Times_, September 22, 2010 — contemporaneous announcement coverage.],
     // VERIFY: NJ Spotlight byline for the local-control handback story
     [NJ Spotlight (2018), "After 22 Years, Newark Enters New Era of Local Governance," February 1, 2018 — the return-to-local-control record.],
+    [Chin, M., Kane, T. J., Kozakowski, W., Schueler, B. E., & Staiger, D. O. (2019), "School District Reform in Newark: Within- and Between-School Changes in Achievement Growth," _ILR Review_ 72(2), doi:10.1177/0019793918774318 (also NBER Working Paper 23922, 2017).],
+    [Pérez-Peña, R. (2010), "Facebook Founder to Donate \$100 Million to Help Remake Newark's Public Schools," _The New York Times_, September 22, 2010 — contemporaneous announcement coverage.],
   ),
   quote: [Everybody's getting paid, but Raheem still can't read.],
   quote-source: "Vivian Cox Fraser, president of the Urban League of Essex County, quoted in Russakoff, The Prize (2015).",
   le-insight: [
-    Newark is the load-bearing case for reform velocity funded
+    Newark is the reference case for reform velocity funded
     from outside outrunning the capability and trust of the
     system meant to carry it. The \$100 million and its match
     bought consultants, a contract, and a reorganization — but

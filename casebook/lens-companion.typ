@@ -720,6 +720,26 @@
 // because the counts read as concept (what the program covers) more
 // than audit (which cases land in which course).
 // ============================================================
+// METADATA EMIT: the appendix below counts cases per LEN course by
+// querying <caseinfo>, so the chapters must be present for the query to
+// find anything. Under view=companion lib/case.typ emits the metadata and
+// renders no case body, so these includes add data and no pages.
+#include "chapters/ch1a.typ"
+#include "chapters/ch1b.typ"
+#include "chapters/ch2a.typ"
+#include "chapters/ch2b.typ"
+#include "chapters/ch3a.typ"
+#include "chapters/ch3b.typ"
+#include "chapters/ch4a.typ"
+#include "chapters/ch4b.typ"
+#include "chapters/ch5a.typ"
+#include "chapters/ch5b.typ"
+#include "chapters/ch6a.typ"
+#include "chapters/ch6b.typ"
+#include "chapters/ch7a.typ"
+#include "chapters/ch7b.typ"
+#include "chapters/closing-case.typ"
+
 #include "backmatter/appendix-leo-courses.typ"
 
 // ============================================================

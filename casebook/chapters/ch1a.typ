@@ -30,47 +30,64 @@
   summary: [
     The Therac-25, a radiation-therapy machine, massively overdosed at
     least six patients between 1985 and 1987, killing at least three. Its
-    predecessors used hardware interlocks to stop the high-energy beam from
-    firing without its target in place; judging the interlocks not worth
-    duplicating and trusting software over hardware, the Therac-25 removed
-    them and relied on software — adapted from the older machines and never
-    engineered for safety — to keep the beam modes separated. At least two
-    distinct software defects drove the overdoses — a data-entry race
-    condition behind the cryptic "Malfunction 54" deaths at Tyler, and a
-    counter overflow that silently skipped a collimator check in the fatal
-    Yakima accident — either of which could fire the full beam with no
-    target in place. Leveson
-    and Turner's 1993 investigation, the founding case of software-safety
-    engineering, found a systemic failure: a safeguard removed with nothing
-    put in its place. The lesson — a safeguard you delete does not remove
-    the hazard; it relocates it to whatever you failed to build.
+    predecessors carried independent hardware circuits that monitored the
+    electron beam and stopped it; building the Therac-25, AECL decided not
+    to duplicate all of the earlier machines' hardware safety mechanisms
+    and interlocks, leaving software — adapted from those machines and
+    never engineered for safety — to hold the two beam modes apart. Two
+    defects were established: a data-entry race condition behind the
+    cryptic "Malfunction 54" deaths at Tyler, and a counter overflow that
+    skipped a position check in the fatal January 1987 Yakima accident.
+    Three of the six accidents were never definitively explained. What
+    made a defect lethal rather than annoying is the second half of the
+    chain: the ion chambers saturated and reported an underdose, the fault
+    code was undocumented, and the operator could clear it and fire again.
+    Leveson and Turner's 1993 investigation, the founding case of
+    software-safety engineering, found a systemic failure. The lesson — a
+    safeguard you delete does not remove the hazard; it relocates it to
+    whatever you failed to build.
   ],
   sections: (
     // -- Background --
     [
       The Therac-25 was a radiation-therapy linear accelerator. Its
-      predecessors used hardware interlocks that physically blocked the
-      high-energy beam unless the spreading target was confirmed in place — a
-      mechanical backstop that could not be talked out of stopping the beam.
-      To save cost and simplify the machine, the Therac-25 removed them and
-      trusted software — adapted from the older machines and never engineered from the ground up for safety-critical use — to keep its two beam modes, the photon setting drawing a hundred times the electron beam current, safely separated. The safety case
-      migrated silently from steel to code.#cn()
+      predecessors, the Therac-6 and Therac-20, carried independent
+      protective circuits monitoring the electron-beam scanning alongside
+      mechanical interlocks — a backstop that could not be talked out of
+      stopping the beam. Building the Therac-25, AECL took advantage of
+      the computer's ability to control and monitor the hardware and, in
+      Leveson and Turner's words, "decided not to duplicate all the
+      existing hardware safety mechanisms and interlocks," leaving
+      software — adapted from the older machines and never engineered from the ground up for safety-critical use — to keep its two beam modes, the photon setting drawing a hundred times the electron beam current, safely separated. The machine was not interlock-free; what it
+      lacked was an independent circuit covering the failure that killed
+      people. The safety case migrated quietly from steel to code.#cn()
     ],
     // -- What Happened --
     [
       Between 1985 and 1987 the machine massively overdosed at least six
-      patients. A race condition the engineers never knew about meant that
-      if an operator entered a prescription, caught a mistake, and corrected
+      patients. At Tyler, a race condition the engineers never knew about
+      meant that if an operator entered a prescription, caught a mistake, and corrected
       it within about eight seconds — the speed an experienced operator
       naturally reaches — the full-power beam could fire with no target in
-      place, delivering up to a hundred times the intended dose. The console
-      showed only "MALFUNCTION 54," a code with no documented meaning, and
-      offered to proceed; operators, assured the machine was safe and long
-      accustomed to its cryptic faults, did. That fast-edit race condition was
-      only one of two independent defects: the fatal 1987 Yakima overdose came
-      from an unrelated bug — a status counter that overflowed to zero on every 256th pass through the setup test, hundreds of which run in a single setup, and silently skipped the upper-collimator check — evidence the
-      failure was systemic, not a single stray line of code. At least three
-      patients died of the radiation burns.#cn()
+      place, delivering up to a hundred times the intended dose. Then every
+      channel the operator had failed in the same direction. The ion
+      chambers, hit with that dose, saturated and read low: the console
+      showed six monitor units delivered against the 202 requested — an
+      underdose. The fault read "MALFUNCTION 54," a code the manual did not
+      explain, and which a technician later testified meant a dose either
+      too high or too low. It was classed as a treatment *pause*, clearable
+      with a single keystroke and repeatable up to five times, rather than
+      a suspend requiring the parameters to be re-entered. The video
+      display was unplugged and the audio monitor broken, so the patient —
+      the one sensor in the room still reporting correctly — could not be
+      seen or heard. The operator pressed the key and fired again. The
+      fatal January 1987 Yakima overdose came from an unrelated defect: a
+      one-byte counter in the setup test wrapped to zero on every 256th
+      pass, and on that pass the routine skipped setting the flag that
+      verifies collimator position. At least three patients died of the
+      radiation burns. Three of the six accidents were never definitively
+      explained: AECL could not reproduce them, and its testing of a
+      suspected microswitch was inconclusive.#cn()
     ],
     // -- The Investigation --
     [
@@ -79,24 +96,42 @@
       complaint rather than a signal. Nancy Leveson and Clark Turner's 1993
       investigation — the founding case study of software-safety engineering
       — found the fault was systemic rather than a single bug: overconfidence
-      in software, removal of the hardware safeguards without replacement,
-      meaningless error messages, reused code never audited for safety, no
-      independent review of the safety-critical logic, and an
+      in software, hardware safeguards not carried forward, meaningless
+      error messages, reused code never audited for safety, and an
       incident-reporting posture that dismissed the early warnings instead of
-      compounding them into evidence.#cn()
+      compounding them into evidence. AECL had run a safety analysis in
+      March 1983 — a fault tree that apparently excluded software, on the
+      stated assumption that residual software errors were not included,
+      and that where it did reach the computer assigned a probability of
+      ten to the minus eleven to "computer selects wrong energy" and four
+      times ten to the minus nine to "computer selects wrong mode," with
+      no justification given for either. The pathology was not a missing
+      analysis but one whose scope had a hole exactly where the safety
+      case had moved. The sharpest evidence came from outside the
+      manufacturer: after the second Tyler accident a physicist at the
+      University of Chicago Joint Center for Radiation Therapy checked
+      whether the same thing could happen on a Therac-20 and found that
+      whenever a new class of students began using it, fuses and breakers
+      tripped. The same defect was there. On that machine it was a
+      nuisance, because the independent hardware circuits were still
+      watching the beam.#cn()
     ],
     // -- The Capability Gap --
     [
-      The hardware interlock had not been redundant; it *was* the safety
+      The independent circuit had not been redundant; it *was* the safety
       case, the one thing standing between a typing error and a lethal dose.
-      Removing it put nothing in its place — no verified software check, no
-      informed operator action, no independent monitor watching the beam. The
-      operator stayed nominally in the loop but lost any means to detect what
-      the machine was doing wrong, since the only feedback was a code that
-      told them nothing, which made the human presence a formality rather than
-      a safeguard. The question capability engineering would have forced —
-      *what function now carries the interlock's load?* — was never asked of
-      the redesign.#cn()
+      Nothing took its place — no verified software check, no independent
+      monitor watching the beam. The operator stayed nominally in the loop,
+      and a safety function assigned to a person needs four things to be
+      real: a true reading of the hazardous variable, time to act inside
+      the hazard's own timescale, an action cheaper to take than to skip,
+      and confirmation it worked. She had none of them. The dose display
+      reported the opposite of the truth; the exposure was irreversible in
+      under a second; clearing the fault took one key and stopping took
+      judgment against a readout saying nothing was wrong. The question
+      capability engineering would have forced — *what function now carries
+      the interlock's load, and can whatever now holds it actually see?* —
+      was never asked of the redesign.#cn()
     ],
     // -- Aftermath & Reform --
     [
@@ -106,16 +141,19 @@
       so the operator can act, and treating field reports as evidence to be
       aggregated rather than complaints to be closed. It remains the canonical
       teaching case across software, medical-device, and systems-safety
-      curricula.#cn() Its lesson is exact and portable: a safeguard you remove
+      curricula.#cn() No rule then required a site to report such an
+      incident, so each accident was unknown to the others and Tyler's
+      physicist had to reproduce the fault himself; the Safe Medical
+      Devices Act of 1990 changed that. Its lesson is exact and portable: a safeguard you remove
       does not remove the hazard it guarded — it relocates the hazard to
       whatever you failed to put in its place, and waits there.
     ],
   ),
   beats: (
-    "Hardware interlocks dropped — judged not worth duplicating, software trusted instead; safety case migrated silently into software",
-    "Two software defects — a race condition and a counter overflow — fired the full beam with no target",
-    "Manufacturer denied harm; Leveson and Turner found systemic, not single-bug, failure",
-    "Interlock was the safety case; nothing took its load when removed",
+    "Independent hardware protective circuits not carried forward; safety case migrated quietly into software",
+    "Two defects established — a race condition and a counter overflow; three of six accidents never definitively explained",
+    "Every operator channel failed the same way: dosimeter read six units against 202 requested, fault code undocumented, one key to fire again",
+    "Same defect on the Therac-20 only blew fuses, because the independent circuits were still watching the beam",
     "The canonical case of software-safety engineering; deleted safeguards relocate hazard to whatever replaces them",
   ),
   references: (
@@ -125,16 +163,17 @@
     [N. G. Leveson, _Engineering a Safer World: Systems Thinking Applied to Safety_ (MIT Press, 2011) — why removing a safeguard requires explicitly reassigning its safety function.],
     [The case's role in medical-device software regulation and software-safety practice (FDA software guidance; IEC 62304 lineage); see also #link("https://ethicsunwrapped.utexas.edu/case-study/therac-25")[Ethics Unwrapped, UT Austin].],
   ),
-  quote: [Therac-25 illustrates the dangers of relying on software safety controls without rigorous engineering practices.],
-  quote-source: "Paraphrasing Leveson & Turner, IEEE Computer, 1993",
+  quote: [The software error is just a nuisance on the Therac-20 because this machine has independent hardware protective circuits for monitoring the electron-beam scanning.],
+  quote-source: "Leveson & Turner, IEEE Computer, 1993",
   le-insight: [
-    Therac-25 is the moment when removing the human safety margin became
-    visible as a design choice. The hardware interlock was not redundant —
-    it was the safety case. When it was removed, no equivalent capability
-    was put in its place. The operator was retained in the system but
-    stripped of the ability to detect what it was doing wrong. Capability
-    engineering would have asked, before removing the interlock, *what
-    function takes its load?*
+    Therac-25 is the case in which a safety function was reassigned and
+    nothing was built to receive it. The record does not show anyone
+    weighing the removal; it shows a redesign in which no artifact and no
+    role existed to ask the question, and a 1983 fault tree that left
+    software outside its scope. The operator was kept in the system and
+    stripped of any means of seeing what it was doing wrong. Capability
+    engineering would have asked, before the circuit came out, *what
+    function takes its load, and can whatever now holds it see?*
   ],
   lens-approach: [
     LENS frames Therac-25 as a *Design-Out* failure made visible through
@@ -167,9 +206,17 @@
     ),
   ),
   courses: ("LEN 5", "LEN 7", "LEN 2"),
+  competing-readings: (
+    [The removed circuit is the load-bearing absence — set against the reading that the decisive deficit was *feedback*, not shutdown. At Tyler the second dose was delivered because the display said underdose and the fault class permitted a one-key retry; a truthful dosimeter and a suspend-class fault stop the site after the first exposure without any interlock being restored. The corrective action plan deployed hardware and interface changes together, so the record cannot decompose them.],
+    [Engineering was the missing capability — set against the reading that *reporting* was. Each site's accident was unknown to the others, and the Tyler and January 1987 Yakima accidents were serially preventable: a mandatory reporting regime, with no design change at all, plausibly prevents those deaths. This reading predicts transfer to any system whose hazard is rare per site and repeating across sites.],
+    [The removal was a design choice — set against the reading that it was a diffuse non-decision. AECL's stated rationale is thin and largely reconstructed after the fact, and the evidence is at least as consistent with a redesign driven by compactness and cost in which no artifact and no role existed to ask the question. The two readings point at different places to intervene: at the decision, or at the absence of a decision point.],
+    [Better information would have saved the patients — set against the reading that at a sub-second, irreversible timescale no achievable human capability would have helped, and the correct design was to take the human out of the detection loop entirely. On this reading the human-shaped capabilities in the case sit at other timescales: noticing a pattern across sessions, believing the patient, escalating against a manufacturer's assurance, and learning across sites.],
+  ),
+  scope-limit: [The denominator is unknown. The failure was undetectable from inside the system, so a sub-fatal overdose would have presented as an unexplained treatment reaction and never been attributed to the machine; "six known" is a lower bound and no exposure-adjusted risk figure drawn from this case can be trusted in either direction. The account itself is a documentary reconstruction from FDA records, correspondence, depositions and lawsuits, with limited manufacturer cooperation and design documentation that in places did not exist — the best available record, and not an audited engineering root-cause report.],
   scale: "big",
+  evidence-source: "investigation",
   induced-anchor: "3.1",
-  lens-anchor: "D3/PT3",
+  lens-anchor: "D3+D4/PT3",
   leo-anchor: "LEO-3",
 )
 
@@ -260,9 +307,9 @@
   references: (
     [Health Information Technology for Economic and Clinical Health (HITECH) Act (2009) — the ~\$30B EHR incentive program.],
     [Y. Han et al., "Unexpected Increased Mortality After Implementation of a Commercially Sold CPOE System," _Pediatrics_ 116(6): 1506–1512 (2005) — the disputed pediatric-ICU mortality result.],
+    [M. Grissinger, "The Absence of a Drug–Disease Interaction Alert Leads to a Child's Death," _P&T_ 43(2): 71–72 (2018); F. Schulte & E. Fry, "Death by 1,000 Clicks," _Fortune_/KHN (2019).],
     [J. Howe, K. Adams, A. Z. Hettinger & R. Ratwani, "Electronic Health Record Usability Issues and Potential Contribution to Patient Harm," _JAMA_ 319(12): 1276–1278 (2018) — 557 of 1.735M safety reports tied usability to possible harm.],
     [D. Sittig & H. Singh, "Defining Health Information Technology-related Errors: New Developments Since To Err is Human," _Archives of Internal Medicine_ 171(14): 1281–1284 (2011).],
-    [M. Grissinger, "The Absence of a Drug–Disease Interaction Alert Leads to a Child's Death," _P&T_ 43(2): 71–72 (2018); F. Schulte & E. Fry, "Death by 1,000 Clicks," _Fortune_/KHN (2019).],
     [Pew / MedStar / AMA, _Ways to Improve Electronic Health Record Safety_ (2018); R. Wachter, _The Digital Doctor_ (2015).],
   ),
   quote: [Despite HIT's promise in improving safety, recent literature has revealed potential safety hazards associated with its use.],
@@ -456,13 +503,14 @@
       [Anchor the procurement evidence to outcome-anchored training, not to expert-curated synthetic cases; expert opinion at one institution is not outcome data the procurement can rely on.],
     ),
     after: (
-      [Render the evidence tier honestly when the primary public source is journalism; the STAT investigation is the load-bearing source, and the academic record's secondary citation is the accurate description, not "peer-reviewed evidence."],
+      [Render the evidence tier honestly when the primary public source is journalism; the STAT investigation is the source, and the academic record's secondary citation is the accurate description, not "peer-reviewed evidence."],
       [Carry the AI-delegation typology — TREWS, Epic Sepsis, SyRI, Watson — as a unit in any curricular discussion of when delegation is legitimate; the four-case set teaches the typology more clearly than any single case.],
       [Treat the discontinuation of Watson for Oncology deployments as the case's own correction signal; the institutional decisions to discontinue are themselves evidence about what the procurement should have required up front.],
     ),
   ),
   references: (
-    [Ross & Swetlitz, "IBM's Watson supercomputer recommended 'unsafe and incorrect' cancer treatments, internal documents show," _STAT_ (25 July 2018), and "IBM pitched its Watson supercomputer as a revolution in cancer care. It's nowhere close," _STAT_ (5 Sept 2017) — the load-bearing primary sources; investigative journalism drawing on leaked IBM internal documents.],
+    [Somashekhar et al. and the WFO lung/colorectal early-experience abstracts, _J Clin Oncol_ 35 (2017), 15_suppl, presented at the ASCO Annual Meeting — the marketed concordance figures: 96% lung, 93% rectal, 81% colon.],
+    [Ross & Swetlitz, "IBM's Watson supercomputer recommended 'unsafe and incorrect' cancer treatments, internal documents show," _STAT_ (25 July 2018), and "IBM pitched its Watson supercomputer as a revolution in cancer care. It's nowhere close," _STAT_ (5 Sept 2017) — the primary sources; investigative journalism drawing on leaked IBM internal documents.],
     [Strickland (2019), "How IBM Watson Overpromised and Underdelivered on AI Health Care," _IEEE Spectrum_ — independent retrospective synthesis of the public record.],
     [Topol (2019), _Deep Medicine_, Basic Books — secondary academic situating of Watson within the broader clinical-AI delegation discourse.],
     [v2 paired cases: TREWS (Case 20), Epic Sepsis Model (Case 5), SyRI (Case 189) — the AI-delegation typology.],
@@ -477,7 +525,7 @@
     evaluated the marketing rather than the validation; the
     deployments were wound down as the gap surfaced. The
     evidence-tier flag is binding: journalism-grade reporting is
-    the load-bearing source, and future validation ongoing
+    the source, and future validation ongoing
     remains the honest qualifier.
   ],
   lens-approach: [
@@ -672,7 +720,7 @@
   summary: [
     The Epic Sepsis Model was a proprietary machine-learning sepsis
     prediction tool embedded in the Epic EHR and deployed in hundreds of
-    US hospitals — the most widely operational clinical AI in American
+    U.S. hospitals — the most widely operational clinical AI in American
     medicine. Until Wong et al. (_JAMA Internal Medicine_ 2021) ran an
     external validation across 38,455 hospitalizations, no independent
     evaluation had been published. The reported AUROC was 0.63, well
@@ -710,7 +758,7 @@
       distinguish the few real alerts from the many spurious ones.#cn()
     ],
     [
-      The governance seam is the structural lesson. Because the Epic Sepsis Model reached the bedside under the clinical-decision-support carve-out in section 520(o) of the FD&C Act, it was never brought to the FDA for clearance. The machinery that would normally require
+      The governance seam is the structural lesson. Because the Epic Sepsis Model was distributed as a feature of an EHR rather than as a stand-alone clinical-decision-support device, it was never brought to the FDA for clearance — even though FDA's own 2022 guidance says a risk score for a specific condition does not qualify for the section 520(o)(1)(E) exclusion and is a device. The machinery that would normally require
       independent validation, post-market surveillance, and demographic
       stratification of performance was never engaged. The model's
       deployment was a regulatory non-event because the regulatory regime
@@ -752,7 +800,7 @@
     ],
   ),
   beats: (
-    "Most-deployed clinical AI in US medicine — embedded as a default Epic EHR feature; no independent validation",
+    "Most-deployed clinical AI in U.S. medicine — embedded as a default Epic EHR feature; no independent validation",
     "Wong et al. external validation: AUROC 0.63, missed ~67% of sepsis at threshold, 12% PPV, alert burden",
     "Governance seam: EHR-embedded proprietary models fell outside FDA device oversight by classification, not by design",
     "Disconfirmation came as a published external validation, not from a standing post-deployment surveillance regime",
@@ -771,8 +819,8 @@
     ),
   ),
   references: (
-    [Wong et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070, doi:10.1001/jamainternmed.2021.2626.],
     [Habib et al. (2021), commentary on Wong et al., _JAMA Internal Medicine_ — on the implications for proprietary clinical AI.],
+    [Wong et al. (2021), "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients," _JAMA Internal Medicine_ 181(8):1065–1070, doi:10.1001/jamainternmed.2021.2626.],
     [FDA, _Clinical Decision Support Software: Final Guidance_ (2022) — the post-Wong reframing of the EHR-embedded oversight question.],
     [Ross, C. (2022), "Epic overhauls its sepsis algorithm," _STAT News_ (Oct 2022) — the ESM v2 redesign and the shift to locally-trained models.],
     [Adams et al. (2022), _Nature Medicine_ — the paired positive case (20).],
@@ -917,7 +965,7 @@
     ],
   ),
   beats: (
-    "Documented pain-undertreatment disparity for Black patients in US clinical settings; mechanism less precisely named",
+    "Documented pain-undertreatment disparity for Black patients in U.S. clinical settings; mechanism less precisely named",
     "Hoffman et al. survey medical trainees on a battery of false biological-difference beliefs; ~half endorse at least one",
     "Experimental layer: respondents who endorse more false beliefs rate Black mock patients' pain as less severe and treat less accurately",
     "Mechanism is specific and nameable: a small set of false beliefs, not diffuse implicit bias — curriculum and instrumentation can target it",
@@ -936,8 +984,8 @@
     ),
   ),
   references: (
-    [Hoffman, Trawalter, Axt, & Oliver (2016), "Racial bias in pain assessment and treatment recommendations, and false beliefs about biological differences between blacks and whites," _PNAS_ 113(16):4296–4301, doi:10.1073/pnas.1516047113.],
     [Anderson, Green, & Payne (2009), "Racial and ethnic disparities in pain: causes and consequences of unequal care," _Journal of Pain_ 10(12):1187–1204 — the population-level disparity.],
+    [Hoffman, Trawalter, Axt, & Oliver (2016), "Racial bias in pain assessment and treatment recommendations, and false beliefs about biological differences between blacks and whites," _PNAS_ 113(16):4296–4301, doi:10.1073/pnas.1516047113.],
     [Sabin & Greenwald (2012), "The influence of implicit bias on treatment recommendations for 4 common pediatric conditions," _American Journal of Public Health_ — the diffuse-mechanism backdrop the Hoffman precision improves on.],
     [Vyas, Eisenstein, & Jones (2020), _NEJM_ — connecting race-in-clinical-algorithms to race-in-clinical-judgment.],
     [Omiye, Lester, Spichak, Rotemberg, & Daneshjou (2023), "Large language models propagate race-based medicine," _npj Digital Medicine_ 6:195 — commercial LLMs reproduce the Hoffman false beliefs.],
@@ -1071,12 +1119,12 @@
     "Resignations and the 2014 Choice Act followed; trustworthy measurement proved harder to rebuild",
   ),
   references: (
-    [VA Office of Inspector General, Report 14-02603-267 (2014) — secret waiting lists and falsified appointment data.],
-    [GAO Veterans Health Administration reports (2000–2019) — fifteen years of data-reliability warnings.],
-    [VA OIG reports (2005, 2007, 2008) — prior, unactioned findings.],
     [D. Draper (GAO), House VA Committee testimony, GAO-19-687T (2019) — "given the high turnover among schedulers, it is important that VA remain vigilant about scheduler training" (quoted).],
-    [Veterans Access, Choice, and Accountability Act (2014) — the legislative response.],
+    [VA Office of Inspector General, Report 14-02603-267 (2014) — secret waiting lists and falsified appointment data.],
+    [VA OIG reports (2005, 2007, 2008) — prior, unactioned findings.],
+    [GAO Veterans Health Administration reports (2000–2019) — fifteen years of data-reliability warnings.],
     [C. Argyris & D. Schön, _Organizational Learning: A Theory of Action Perspective_ (1978); G. Bevan & C. Hood, "What's Measured Is What Matters," _Public Administration_ 84(3): 517–538 (2006).],
+    [Veterans Access, Choice, and Accountability Act (2014) — the legislative response.],
   ),
   quote: [Given the high turnover among schedulers, it is important that VA remain vigilant about scheduler training, ensuring all who need it receive it.],
   quote-source: "Debra A. Draper (GAO Director of Health Care), House VA Committee testimony, GAO-19-687T, 24 July 2019",
@@ -1134,7 +1182,7 @@
   year: "1999 – present",
   domains-list: ("healthcare",),
   modes-code: "THNKG",
-  impact: "IOM 1999 estimate of 44,000–98,000 US deaths/year from medical error; Makary & Daniel (2016) estimate of ~250,000 deaths/year — substantively contested on methodological grounds; 2023 NEJM inpatient-harm study confirms persistence; 25-year reform arc with bounded successes and an unmoved population count",
+  impact: "IOM 1999 estimate of 44,000–98,000 U.S. deaths/year from medical error; Makary & Daniel (2016) estimate of ~250,000 deaths/year — substantively contested on methodological grounds; 2023 NEJM inpatient-harm study confirms persistence; 25-year reform arc with bounded successes and an unmoved population count",
   diagram: dgm.dgm-makary,
   kind: "failure",
   scale: "big",
@@ -1171,7 +1219,7 @@
     [
       The Institute of Medicine's _To Err Is Human_ (1999) was the
       field-defining moment: it estimated 44,000–98,000 deaths annually
-      from medical error in US hospitals — at the lower bound, more
+      from medical error in U.S. hospitals — at the lower bound, more
       Americans than die in motor-vehicle accidents — and made the
       explicit case that the problem was a systems problem, not an
       individual-clinician problem. The 2001 sequel _Crossing the
@@ -1280,10 +1328,10 @@
   ),
   references: (
     [Institute of Medicine, _To Err Is Human: Building a Safer Health System_ (1999); _Crossing the Quality Chasm_ (2001); _Improving Diagnosis in Health Care_ (2015) — the field-defining trilogy and the 44,000–98,000 estimate; the systems framing.],
-    [Makary, M. & Daniel, M. (2016), "Medical error — the third leading cause of death in the US," _BMJ_ 353:i2139 — the ~250,000 estimate, the quoted framing, the extrapolation from four studies published since the IOM report (HealthGrades 2004; OIG 2010; Landrigan 2010; Classen 2011).],
+    [Makary, M. & Daniel, M. (2016), "Medical error — the third leading cause of death in the U.S.," _BMJ_ 353:i2139 — the ~250,000 estimate, the quoted framing, the extrapolation from four studies published since the IOM report (HealthGrades 2004; OIG 2010; Landrigan 2010; Classen 2011).],
     [Shojania, K. & Dixon-Woods, M. (2017), "Estimating deaths due to medical error: the ongoing controversy and why it matters," _BMJ Quality & Safety_ 26(5):423–428; with Bates, D. W. & Singh, H. (2018), _Health Affairs_ 37(11):1736–1743 — methodological contestation of the Makary extrapolation and CDC-ranking comparison.],
     [Makary & Daniel (2016), _BMJ_ — death certificates do not capture medical error as a cause; ICD billing taxonomy as the structural reason.],
-    [Bates, D. W., Levine, D. M., Salmasian, H., et al. (2023), "The Safety of Inpatient Health Care," _NEJM_ 388(2):142–153 — eleven-hospital Massachusetts cohort; adverse events in ~25% of admissions, ~25% of those preventable; persistence of harm at scale.],
+    [Bates, D. W., Levine, D. M., Salmasian, H., et al. (2023), "The Safety of Inpatient Health Care," _NEJM_ 388(2):142–153 — eleven-hospital Massachusetts cohort of 2,809 admissions; at least one adverse event in 23.6% of admissions, ~25% of those preventable; persistence of harm at scale.],
     [Agency for Healthcare Research and Quality, _National Healthcare Quality and Disparities Reports_ (annual); CDC WONDER ICD-coded mortality data — institutional context for the missing national active-surveillance instrument.],
   ),
   quote: [People don't just die from heart attacks and bacteria, they die from system-wide failings and poorly coordinated care.],
@@ -1379,10 +1427,10 @@
     the risk had been visible well before withdrawal, and estimated
     88,000–139,000 excess cardiovascular events attributable to
     Vioxx; the 2005 Graham et al. _Lancet_ analysis put the figure
-    in similar range. Merck litigation discovery produced internal Merck communications later
-    Merck communications used in the Senate hearings to argue that
-    publication-bias and authorship-by-Merck-employees patterns had
-    suppressed the cardiovascular signal in the published record.
+    in similar range. Merck litigation discovery produced internal
+    communications later used to argue that guest authorship and
+    Merck-employee authorship patterns had shaped how the
+    cardiovascular signal appeared in the published record.
     The reforms that followed — Risk Evaluation and Mitigation
     Strategies (REMS), the FDA Amendments Act of 2007, and the
     Sentinel Initiative (2008) — built the active post-market
@@ -1410,8 +1458,8 @@
     // -- What Happened --
     [
       The VIGOR trial (Bombardier et al., _NEJM_ 2000) randomized 8,076
-      a five-fold higher rate of myocardial infarction in 8,076 patients
-      taking Vioxx than in those taking naproxen. Merck and many readers
+      patients in all, and reported a five-fold higher rate of myocardial
+      infarction among those taking Vioxx than among those taking naproxen. Merck and many readers
       interpreted the gap as naproxen being cardio-protective rather
       than Vioxx being harmful. That reading was not absurd — it was the
       more comfortable of two explanations for the same numbers — but it
@@ -1426,23 +1474,22 @@
     ],
     // -- The Investigation --
     [
-      Senate Finance Committee hearings in November 2004 put on the record
-      subsequent FDA Office of Inspector General review found that
-      signals of cardiovascular harm had been present in the trial
-      record for years before withdrawal. FDA Office of Drug Safety
+      Senate Finance Committee hearings in November 2004 put on the
+      record that signals of cardiovascular harm had been present in the
+      trial record for years before withdrawal. FDA Office of Drug Safety
       scientist David Graham testified under oath that the
       cardiovascular risk had been visible to him by 2000, that he had
       been pressured by FDA management not to publish his estimate,
-      and that he believed Vioxx had caused 88,000–139,000 excess cases of
-      heart attacks and strokes in the United States, of which 30–40%
-      were probably fatal. The Graham et al. _Lancet_ 2005 analysis,
+      and that he believed Vioxx had caused 88,000–139,000 excess cases
+      of heart attack or sudden cardiac death in the United States, of
+      which 30–40% were probably fatal. The Graham et al. _Lancet_ 2005 analysis,
       using Kaiser Permanente data, produced a population-level
       estimate in similar range. Merck litigation discovery, made
       public through New Jersey and federal court filings and reported
       in the _NEJM_ editorial trail, included internal Merck
       communications and ghost-authorship patterns in published Vioxx
       papers; a 2008 _JAMA_ analysis by Ross et al. documented the guest-authorship
-      publication-bias and authorship patterns directly.#cn() The harm
+      and ghostwriting patterns directly.#cn() The harm
       was not hidden in some unmeasured corner — it sat in the trial
       record the whole time, waiting for an architecture that would
       carry it to a decision rather than leave it to interpretation.#cn()
@@ -1471,7 +1518,7 @@
     ],
     // -- Aftermath & Reform --
     [
-      Merck eventually settled US litigation for about \$4.85 billion
+      Merck eventually settled U.S. litigation for about \$4.85 billion
       across approximately 27,000 plaintiffs. The case drove a
       coordinated regulatory response. The FDA Amendments Act of 2007
       gave the FDA explicit authority to require Risk Evaluation and
@@ -1483,13 +1530,12 @@
       reports — a direct response to the Vioxx-era detection failure.
       The _NEJM_ tightened conflict-of-interest disclosure for trial
       reports and, in December 2005, took the unusual step of issuing an
-      Expression of Concern after learning that three myocardial infarctions,
-      myocardial infarctions had been deleted from the VIGOR manuscript's
-      data table two days before submission — evidence that hardens the
+      Expression of Concern: three myocardial infarctions had been omitted
+      from the data submitted, and other cardiovascular data had been
+      deleted from the manuscript's table two days before submission — evidence that hardens the
       story from "the signal aggregated too slowly" toward "the signal was
-      partly, and knowingly, kept out of the record." The _JAMA_ Ross et al.
-      (2008) analysis became the
-      reference point for publication-bias diagnosis in drug safety.
+      partly, and knowingly, kept out of the record." The _JAMA_ Ross et al. (2008) analysis became the reference point
+      for diagnosing guest authorship and ghostwriting in drug safety.
       By going out to the data instead of waiting for it to arrive,
       the reform inverted the logic that had let the signal sit
       unaggregated for years. The reform built the surveillance
@@ -1505,11 +1551,11 @@
     "Merck settled near five billion; REMS and Sentinel built active post-market surveillance",
   ),
   references: (
-    [Bombardier, C. et al. (2000), "Comparison of upper gastrointestinal toxicity of rofecoxib and naproxen in patients with rheumatoid arthritis," VIGOR trial, _NEJM_ 343(21):1520–1528 — the five-fold myocardial-infarction signal and the naproxen-protective hypothesis.],
-    [Bresalier, R. et al. (2005), "Cardiovascular events associated with rofecoxib in a colorectal adenoma chemoprevention trial," APPROVe, _NEJM_ 352(11):1092–1102 — placebo-controlled confirmation of cardiovascular risk; early trial termination.],
     [Graham, D. J. et al. (2005), "Risk of acute myocardial infarction and sudden cardiac death in patients treated with COX-2 selective and non-selective NSAIDs: nested case-control study," _Lancet_ 365(9458):475–481 — Kaiser Permanente population-level cardiovascular risk analysis.],
-    [US Senate Committee on Finance, hearings on Vioxx and FDA's drug-safety system (November 18, 2004) — Graham testimony; "88,000 to 139,000 Americans" estimate of excess cardiovascular events; described FDA management pressure.],
+    [Bresalier, R. et al. (2005), "Cardiovascular events associated with rofecoxib in a colorectal adenoma chemoprevention trial," APPROVe, _NEJM_ 352(11):1092–1102 — placebo-controlled confirmation of cardiovascular risk; early trial termination.],
     [Ross, J. S., Hill, K. P., Egilman, D. S., Krumholz, H. M. (2008), "Guest authorship and ghostwriting in publications related to rofecoxib," _JAMA_ 299(15):1800–1812 — guest-authorship and ghostwriting documentation from Merck litigation discovery.],
+    [U.S. Senate Committee on Finance, hearings on Vioxx and FDA's drug-safety system (November 18, 2004) — Graham testimony; "88,000 to 139,000 Americans" estimate of excess cardiovascular events; described FDA management pressure.],
+    [Bombardier, C. et al. (2000), "Comparison of upper gastrointestinal toxicity of rofecoxib and naproxen in patients with rheumatoid arthritis," VIGOR trial, _NEJM_ 343(21):1520–1528 — the five-fold myocardial-infarction signal and the naproxen-protective hypothesis.],
     [FDA Amendments Act of 2007 (P.L. 110-85) and FDA Sentinel Initiative documentation (2008–present) — REMS authority, post-market study requirements, and active distributed-data post-market surveillance.],
   ),
   quote: [The cardiovascular risk was visible in Merck's internal data years before the drug was withdrawn.],
@@ -1664,11 +1710,11 @@
     "CLIA certificate revoked, the company collapsed, and Holmes was convicted of multiple wire-fraud counts",
   ),
   references: (
-    [_United States v. Elizabeth Holmes_ (N.D. Cal., 2018–2022) — the indictment and conviction.],
+    [Holmes indictment (2018) — Theranos "misrepresented to investors, regulators, and ultimately patients the accuracy of its blood-testing technology" (quoted).],
     [J. Carreyrou, _Bad Blood_ (2018) — the device's failure and the commercial-analyzer substitution.],
     [CMS inspection reports and the revocation of Theranos's CLIA certificate (2015–2016).],
-    [Holmes indictment (2018) — Theranos "misrepresented to investors, regulators, and ultimately patients the accuracy of its blood-testing technology" (quoted).],
     [Medical-device regulation literature on the FDA–CLIA boundary.],
+    [_United States v. Elizabeth Holmes_ (N.D. Cal., 2018–2022) — the indictment and conviction.],
   ),
   quote: [The company misrepresented to investors, regulators, and ultimately patients the accuracy of its blood-testing technology.],
   quote-source: "U.S. v. Holmes, indictment, 2018",
