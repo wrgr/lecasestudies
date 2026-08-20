@@ -1040,12 +1040,20 @@ described the five competencies by listing six *course titles*, one of them the 
 LEN 2 — corrected, along with "concentration learning outcomes" → LENS Educational Objectives, and
 a cross-reference to "Chapter 8" under a chapter numbering retired in July.
 
-**The colophon overstated the verification work.** It said every case "was reviewed by the editors
-and hand-checked by students." Every row of `verification-log.md` reads *"auto-prefill: all
-mechanical checks pass; human content review still needed."* The claim now says what is true: six
-rubric columns are mechanically checked across the corpus, the seventh is the case-by-case content
-read, and that read is underway. A book arguing that institutions should measure what they claim
-should not overclaim its own measurement.
+**The colophon's verification claim, revised twice.** The line said every case "was reviewed by the
+editors and hand-checked by students." Read against `verification-log.md` alone — every row of which
+carries *"auto-prefill: all mechanical checks pass; human content review still needed"* — that looks
+like an overstatement, and it was first rewritten as work merely "underway."
+
+**That rewrite was wrong, and is corrected here.** The log's seventh column tracks one specific
+ongoing read; it is not the record of human review, and taking it for the whole understated a great
+deal of completed work. The record in this file is the fuller one: editor rulings applied at the
+Part II and Part VI–VII checkpoints, the seven per-Part LENS-alignment scans that withdrew fourteen
+cases, per-case adjudications (72 ASSISTments, 41 implementation-science training, 201 Aadhaar,
+203 NYC LL144, 161 Texas City), the evidence-tier ruling, and the standing COI decisions. The
+colophon now describes an iterative review with substantial completed human passes that continues by
+design — and cites the andon-cord finding as the illustration, since a student catching an error in
+a case that had already cleared several rounds is the process working, not failing.
 
 **Page structure was described wrongly in three places.** `howto.typ` said "each case occupies a
 two-page spread"; the introduction said "most cases run to three pages"; both said the Lens is "the
