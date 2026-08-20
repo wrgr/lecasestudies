@@ -92,9 +92,17 @@ def check(case):
 
     bad = []
     for k in range(min(nmark, len(refs))):
-        claim = detypst(segs[k])
-        # The claim a marker carries is the tail of the span preceding it.
-        claim = claim[-600:]
+        # The claim a marker carries is the sentence it attaches to — the one
+        # immediately preceding it. A wider window pulls in neighbouring claims
+        # whose own markers sit elsewhere, and those produced this gate's only
+        # false positives (Case 39's first-eight-years figures belong to an
+        # earlier sentence in the same span). One sentence, plus a short lead-in
+        # for sentences that open with a subordinate clause.
+        span = detypst(segs[k])
+        sents = re.split(r'(?<=[.!?])\s+', span)
+        claim = sents[-1] if sents else span
+        if len(claim) < 60 and len(sents) > 1:
+            claim = sents[-2] + " " + claim
         for a in anchors(claim):
             if a in generic:
                 continue
