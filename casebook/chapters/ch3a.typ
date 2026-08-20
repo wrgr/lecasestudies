@@ -71,17 +71,19 @@
       any, instrument to trust, because every air-data instrument drew on the
       same blocked source and so failed in concert rather than disagreeing
       usefully. The true reading arrived as one more alarm in a cockpit where
-      every alarm had already proved false: "too low — terrain" sounded twenty-two times in forty-five seconds some eight minutes out, and again continuously through the last minute to impact.#cn()
+      every alarm had already proved false: "too low — terrain" sounded twenty-two times in forty-five seconds about eight minutes before impact, and again through the final minutes to the water.#cn()
     ],
     // -- The Investigation --
     [
-      The Peruvian accident investigation named the principal cause error of the maintenance staff including the crew: the tape was left on, and neither the release inspections nor the pilot-in-command's walk-around caught it. One channel stayed correct.
+      The Peruvian accident investigation named as the principal cause the error of
+      the maintenance staff, including the crew: the tape was left on, and neither the
+      release inspections nor the pilot-in-command's walk-around caught it. One channel stayed correct.
       The radio altimeters read height above the sea independently of the air
       data computers, and it was the radio altimeter that fired the
       ground-proximity warnings the crew heard for the rest of the flight. The
       board named the crew's failure to observe the radio altimeter and to fly
-      the GPWS escape procedure as a contributing cause, and called the radio
-      altimeter the only reliable element remaining to them. The crew's training had no
+      the GPWS escape procedure as a contributing cause: the radio altimeter was the
+      one altitude source the blockage never reached. The crew's training had no
       procedure for the case in which all primary instruments are
       simultaneously wrong — that failure had been assumed away rather than
       planned for, leaving the crew to improvise against a problem the system
@@ -121,9 +123,9 @@
     "Industry tightened conspicuous covering and removal verification for static ports and pitot tubes",
   ),
   references: (
-    [Peru Dirección General de Transporte Aéreo, Accident Investigation Board, final report on AeroPerú 603 (2 October 1997; with NTSB/FAA/Boeing participation) — primary cause and the instrument cascade (paraphrased).],
-    [Peru DGTA Accident Investigation Board report (2 October 1997) — the static-port tape and the contradictory warnings.],
-    [Peru DGTA Accident Investigation Board report (2 October 1997) — the radio altimeter as "the only reliable element remaining to them," and the unheeded GPWS terrain warnings.],
+    [Peru Dirección General de Transporte Aéreo, Comisión de Investigación de Accidentes, final report on AeroPerú 603 (2 October 1997; with NTSB/FAA/Boeing participation) — principal cause given as error of the maintenance staff including the crew, and the instrument cascade (paraphrased).],
+    [Peru DGTA Comisión de Investigación de Accidentes report (2 October 1997) — the masking tape over the three left-side static ports and the contradictory warnings; the tape was not caught at release, at transfer to the apron, or in the pilot-in-command's walk-around.],
+    [Peru DGTA Comisión de Investigación de Accidentes report (2 October 1997) — the radio altimeter, independent of the air data computers, working normally and driving the GPWS terrain warnings; crew failure to follow the GPWS procedure and to read the radio altimeter named as contributing. CVR: "too low — terrain" 22 times in 45 seconds beginning about eight minutes before impact.],
     [Leveson, N. (2011), _Engineering a Safer World_ (STAMP) — common-cause failure.],
     [Dismukes, Berman & Loukopoulos (2007), _The Limits of Expertise_ — crew performance under instrument failure.],
   ),
@@ -440,7 +442,7 @@
       factor of about 4.45 — was never applied at the boundary where the two
       systems met. Each firing was mis-modeled by that factor, and the error
       accumulated steadily over the long cruise until the predicted and actual
-      trajectories had quietly diverged. When the orbiter reached Mars on 23 September 1999 it arrived about 170 kilometres too low, into the atmosphere it was built to study from orbit, and was either destroyed there or thrown back into heliocentric space. The orbiter was lost to a unit conversion no one made.#cn()
+      trajectories had quietly diverged. When the orbiter reached Mars on 23 September 1999 it arrived about 170 kilometres too low — a closest approach of roughly 57 kilometres against the planned 226, and well below the 80 kilometres the spacecraft could have survived — into the atmosphere it was built to study from orbit, and was either destroyed there or thrown back into heliocentric space. The orbiter was lost to a unit conversion no one made.#cn()
     ],
     // -- The Investigation --
     [
@@ -483,7 +485,7 @@
   ),
   references: (
     [NASA, _Mars Climate Orbiter Mishap Investigation Board: Phase I Report_ (Nov. 1999) — mission, the Lockheed/JPL split, and the program context.],
-    [NASA MCO MIB Report (1999) — the pound-force-second vs newton-second mismatch (factor ~4.45), the accumulated navigation error, and atmospheric destruction on 23 Sept. 1999 (root-cause statement quoted).],
+    [NASA MCO MIB Report (1999) — the pound-force-second vs newton-second mismatch (factor ~4.45) in the "Small Forces" ground-software file, the accumulated navigation error, the ~57 km closest approach against a planned 226 km periapsis and an 80 km survival limit, and the loss on 23 Sept. 1999 (root-cause statement quoted).],
     [NASA MCO MIB Report (1999) — the missing verified interface specification, the absent end-to-end validation, and the unresolved cruise-trajectory anomalies.],
     [N. G. Leveson, _Engineering a Safer World_ (MIT Press, 2011) — interfaces as engineering deliverables requiring an owner and a verification step.],
     [Sauser, B. J., Reilly, R. R., & Shenhar, A. J. (2009), "Why projects fail? How contingency theory can provide new insights — A comparative analysis of NASA's Mars Climate Orbiter loss," _International Journal of Project Management_ 27(7), 665–679.],
@@ -731,15 +733,23 @@
     [
       The NTSB safety study NTSB/SS-10/01 examined that assumption
       directly. The Board studied approximately 8,000 small piston
-      airplanes registered in the United States over the period
-      2002–2006, comparing accident rates between
-      conventional-instrument and glass-cockpit fleets matched on
-      model and operational class. The headline finding ran against expectation. Glass-cockpit aircraft had lower total accident rates than comparable conventional-instrument aircraft over the period, but a higher fatal accident rate, and no significant improvement in safety overall. The expected fleet-wide safety
+      airplanes manufactured in the United States between 2002 and
+      2006 — 2,848 in the conventional-display cohort and 5,516 in
+      the glass-cockpit cohort — and compared their accident records
+      over 2002 through 2008. The headline finding ran against expectation. Glass-cockpit aircraft had lower total accident rates than comparable conventional-instrument aircraft over the period, but a higher fatal accident rate, and no significant improvement in safety overall. The expected fleet-wide safety
       gain from the displays had not yet materialized in the
       accident record.#cn()
     ],
     [
-      The NTSB's attribution is careful. It did not name a cause for the fatal-rate gap, and said further research is needed. The
+      The NTSB's attribution is careful. It did not name a cause for the
+      fatal-rate gap, and said further research is warranted. What it did
+      establish was that the two cohorts were not flying the same
+      missions: the glass-cockpit accident flights differed significantly
+      in purpose, planned length, and instrument-meteorological exposure,
+      and their pilots differed in age, certification, and total
+      experience — leaving open whether owners bought glass for the
+      flying they already intended or the new capability encouraged
+      longer flights in worse weather. The
       transitioning pilot population was certificated and current
       under the inherited training regime that assumed analog
       instruments, and the glass displays — for all their
@@ -766,7 +776,7 @@
     ],
     [
       Drafted alongside the aging-system transitions in Cases
-      22–76, the glass-cockpit GA study carries the
+      114–116, 154, 156, 174, and 194, the glass-cockpit GA study carries the
       capability-under-system-change pattern at the
       consumer-aviation scale where the analog cases run at the
       defense and commercial-aviation scale. The structural
@@ -819,7 +829,7 @@
   ],
   lens-approach: [
     Glass-cockpit GA is the small-fleet capability-under-
-    transition failure (induced 7.1; LENS D3/PT1). LENS uses
+    transition failure (induced 7.1; LENS D1+D3/PT1). LENS uses
     it in Domain 1 (Systems Analysis) for the inherited
     certification of operator proficiency that has to be
     re-verified against the new envelope, and in Domain 3 (Human-System Collaboration) for the new
@@ -849,15 +859,17 @@
   year: "1996",
   domains-list: ("space",),
   modes-code: "DKH",
-  impact: "Maiden flight destroyed itself 39 seconds after launch; four Cluster science satellites lost, replaced at 214 MECU; reused Ariane 4 code never re-verified for Ariane 5",
+  impact: "Maiden flight destroyed itself 39 seconds after main-engine ignition — about 32 seconds after lift-off; four Cluster science satellites lost, replaced at 214 MECU; reused Ariane 4 code never re-verified for Ariane 5",
   diagram: dgm.dgm-stat(
-    "39s", "after launch · 16-bit integer overflow",
+    "39s", "after ignition · 16-bit integer overflow",
     micro: "code path disabled by the previous vehicle's profile; re-enabled by the new one",
     caption: "Ariane 5 — the fallacy of risk-free code reuse",
   ),
   kind: "failure",
   summary: [
-    On its 1996 maiden flight, the Ariane 5 rocket destroyed itself 39 seconds after launch, losing the four Cluster science satellites aboard.
+    On its 1996 maiden flight, the Ariane 5 rocket destroyed itself 39 seconds
+    after main-engine ignition — about 32 seconds after lift-off — losing the
+    four Cluster science satellites aboard.
     The cause was reused software: the inertial reference system inherited
     code from Ariane 4, where a horizontal-velocity value never exceeded a
     16-bit integer's range. Ariane 5's steeper, faster trajectory pushed it
@@ -885,8 +897,10 @@
     // -- What Happened --
     [
       On 4 June 1996, Ariane 5 Flight 501 — its maiden flight — veered off
-      course and broke up under aerodynamic stress 39 seconds after launch;
-      the on-board self-destruct fired as designed, and the four Cluster science satellites were lost.#cn() The vehicle was destroyed in well under a minute of flight, before it had done anything but climb — the whole loss flowing from a fault that triggered almost immediately at liftoff, when the new trajectory first pushed the inherited code outside the range it had been built to handle.
+      course and began to disintegrate under aerodynamic loads about 39 seconds
+      after the main-engine ignition command, roughly 32 seconds into the
+      flight; the on-board destruct system fired as designed, and the four
+      Cluster science satellites were lost.#cn() The vehicle was destroyed in well under a minute of flight, before it had done anything but climb — the whole loss flowing from a fault that triggered about thirty seconds after liftoff, when the new trajectory first pushed the inherited code outside the range it had been built to handle.
     ],
     // -- The Investigation --
     [
@@ -933,14 +947,14 @@
   ),
   beats: (
     "Ariane 5 reused inertial reference software flown reliably on Ariane 4 to reduce risk",
-    "The 1996 maiden flight veered off course at 37 seconds and broke up at 39 seconds after launch",
+    "Both inertial reference systems failed 36.7 seconds after ignition — about 30 seconds into the flight — and the launcher broke up some two seconds later",
     "A horizontal-velocity overflow shut down the back-up reference system and then the active one 0.05 seconds later, through identical inherited code",
     "Code is fit only for the envelope it was verified against; reuse demands re-verification",
     "Safety-critical reuse became a verification event with every inherited assumption explicitly re-checked",
   ),
   references: (
     [J. L. Lions (chair), _Ariane 5 Flight 501 Failure Inquiry Board Report_ (1996) — the data-conversion overflow (quoted).],
-    [Lions Report (1996) — the 39-second disintegration and the automatic self-destruct.],
+    [Lions Report (1996) — SRI failure at H0+36.7 s (about 30 s after lift-off), disintegration under aerodynamic loads at about H0+39 s, and the automatic destruct.],
     [ESA Science & Technology, "Cluster — Summary" — the loss of the four Cluster spacecraft and the 214 MECU recovery mission approved by the SPC.],
     [Lions Report (1996) — the 64-bit-to-16-bit conversion overflow and the simultaneous shutdown of both inertial reference systems.],
     [Lions Report (1996) — the reused code path neither removed nor re-verified for Ariane 5's envelope.],
@@ -1201,7 +1215,7 @@
     737-400, crashed on the M1 motorway embankment near Kegworth, killing 47
     and seriously injuring 74. After a fan blade fractured in the left
     engine, the crew shut down the right engine — the one still working.
-    They acted before reading the engine displays: the first officer named the right engine and could not afterwards say what he had seen, and the commander accepted it. The new, harder-to-read electronic displays did not correct them, and the cabin crew who saw flames never told the flight deck. The commander later explained his suspicion of the right engine by an air-conditioning layout that did not hold on the -400; the AAIB thought it unlikely that reasoning had time to matter. The AAIB issued 31 recommendations; Kegworth became the
+    They acted before reading the engine displays: the first officer named the right engine and could not afterwards say what he had seen, and the commander accepted it. The new, harder-to-read electronic displays did not correct them, and the cabin crew who saw flames never told the flight deck. The commander later explained his suspicion of the right engine by an air-conditioning layout that held on the earlier 737s he had flown but not on the -400. The AAIB issued 31 recommendations; Kegworth became the
     textbook case of capability degrading under system change.
   ],
   sections: (
@@ -1211,22 +1225,22 @@
       737-400 (G-OBME), left Heathrow for Belfast with 126 aboard. The -400
       was a recent variant — bigger engines, a partly redesigned cockpit
       with new electronic engine instruments. The crew were experienced 737
-      pilots, but their conversion onto the variant was a one-day ground course on the differences, taken with no EIS-equipped simulator available anywhere in the airline — so the display they would have to read under pressure had never been flown, only shown.#cn()
+      pilots, but their conversion onto the variant was a one-day ground course on the differences, taken with no 737-400 simulator in existence anywhere in the United Kingdom — so the display they would have to read under pressure had never been flown, only shown.#cn()
     ],
     // -- What Happened --
     [
       Climbing through 28,300 feet, a fan blade fractured in the left engine,
-      filling the cabin with vibration and smoke. Without waiting to read the engine displays, the first officer named the right engine and the commander throttled it back eleven seconds after the autopilot came out.
+      filling the cabin with vibration and smoke. Without waiting to read the engine displays, the first officer named the right engine and the commander throttled it back some nineteen seconds after the fan blade fractured; the order to shut it down came about forty-three seconds after the vibration began.
       The symptoms eased (because disconnecting the autothrottle let the left engine stop surging), seeming to confirm it, and they shut the right engine down. On final approach the damaged left engine failed
       completely; with the good engine off, the aircraft struck the M1
       embankment short of the runway — 47 killed, 74 seriously injured. The
-      brief calm after the shutdown was the trap: it appeared to confirm a
+      brief calm after the throttle-back was the trap: it appeared to confirm a
       diagnosis that was wrong, removing the doubt that might have prompted a
       reassessment.#cn()
     ],
     // -- The Investigation --
     [
-      The Air Accidents Investigation Branch traced the disaster to the shutdown of the serviceable engine, and among its contributory factors to the crew reacting prematurely and contrary to their training, and not assimilating the engine instrument display before throttling back the No 2 engine. The commander's later account — that an air-conditioning layout pointed him at the right engine — the Board recorded and set aside, judging it unlikely to have had time to shape the decision.#cn() The new
+      The Air Accidents Investigation Branch traced the disaster to the shutdown of the serviceable engine, and among its contributory factors to the crew reacting prematurely and contrary to their training, and not assimilating the engine instrument display before throttling back the No 2 engine. The commander's later account — that his reading of the air-conditioning layout pointed him at the right engine — the Board recorded as reasoning that would have held on the earlier 737 variants he had flown but not on the -400, whose flight deck is supplied from the left engine.#cn() The new
       electronic displays did not help: the vibration indicator that would
       have pointed at the failing engine was harder to read at a glance than
       the dials it replaced, so the one instrument that could have corrected
@@ -1427,7 +1441,7 @@
     [NTSB/AAR-14/01 (2014), safety recommendations A-14-37 to A-14-43 and A-14-55 on autoflight training, low-energy alerting, interface intuitiveness, and manual flight.],
   ),
   quote: [The complexities of the autothrottle and autopilot flight director systems that were inadequately described in Boeing's documentation and Asiana's pilot training, which increased the likelihood of mode error.],
-  quote-source: "NTSB Aircraft Accident Report NTSB/AAR-14/01, probable cause, 2014",
+  quote-source: "NTSB Aircraft Accident Report NTSB/AAR-14/01, probable cause statement, contributing factors, 2014",
   le-insight: [
     Asiana 214 is the aviation case for the LENS Human-System Collaboration
     proposition that automation transparency is a capability
