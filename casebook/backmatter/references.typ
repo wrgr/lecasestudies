@@ -16,23 +16,25 @@
 #text(font: serif, size: 26pt, fill: navy, "Works cited.")
 #v(4pt)
 #text(font: sans, size: 9pt, fill: text-muted)[
-  Numbered references are cited in the Introduction. Per-case sources
-  appear on each spread. The broader reading list at the end of this
-  section collects the core works the LENS curriculum draws on.
+  References 1–22 are cited by number in the Introduction; the program
+  record that follows them supports the *About LENS* account at the end
+  of this volume. Per-case sources are listed at the end of each case.
+  The broader reading list in the last part of this section collects the
+  core works the LENS curriculum draws on.
 ]
 
 #v(12pt)
 #text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("Cited in the introduction"))
 #v(6pt)
 
-#let ref-list(items) = {
+#let ref-list(items, start: 1) = {
   set par(leading: 0.55em, first-line-indent: 0pt, hanging-indent: 14pt)
   for (i, item) in items.enumerate() {
     block(spacing: 4pt, {
       grid(
         columns: (14pt, 1fr),
         column-gutter: 4pt,
-        text(font: sans, size: 7.5pt, weight: "bold", fill: teal, str(i + 1) + "."),
+        text(font: sans, size: 7.5pt, weight: "bold", fill: teal, str(i + start) + "."),
         text(font: sans, size: 7.8pt, fill: text-dark, item),
       )
     })
@@ -62,6 +64,20 @@
   [Weick, K. E. & Sutcliffe, K. M. (2015). _Managing the Unexpected: Sustained Performance in a Complex World_ (3rd ed.). Wiley. See also Roberts, K. H. (1990). Some characteristics of one type of high reliability organization. _Organization Science_ 1(2): 160–176.],
   [Saxberg, B. (2017). Learning engineering: the art of applying learning science at scale. In _Industry Connections Industry Consortium on Learning Engineering._ See also Goodell, J. & Kolodner, J. L. (eds.) (2022). _Learning Engineering Toolkit._ Routledge.],
   [IEEE ICICLE (2022). _Learning Engineering Body of Knowledge (LEBoK)._ #link("https://lebok.wiki")[lebok.wiki].],
+))
+
+#v(10pt)
+#text(font: sans, size: 8pt, tracking: 1.6pt, fill: gold, upper("The LENS program record"))
+#v(4pt)
+#text(font: sans, size: 7.5pt, fill: text-muted)[
+  Not cited by number in the Introduction. These are the sources behind
+  the program account in #emph[About LENS] at the end of this volume —
+  the connectomics workforce work, its generalizations, and the incubator
+  cohorts the Practice Flywheel was built from.
+]
+#v(6pt)
+
+#ref-list(start: 23, (
   [MICrONS Consortium (2025). Functional connectomics spanning multiple areas of mouse visual cortex. _Nature_ 640: 167–179. #link("https://doi.org/10.1038/s41586-025-08790-w")[doi:10.1038/s41586-025-08790-w]. See also Hider, R. _et al._ (2022), BossDB, _Frontiers in Neuroinformatics_; Xenes, D. _et al._ (2022), NeuVue, bioRxiv 2022.07.18.500521; Gray-Roncal, W. (in press, 2026), "Calibrate the Scientists, Not Just the Microscopes," _BRAIN CONNECTS_ commentary.],
   [Cervantes, M., Floryanzia, S., Sharp, J., Johnson, E. C. & Gray-Roncal, W. R. (2023). Empowering trailblazers toward scalable, systematized, research-based workforce development. _2023 ASEE Annual Conference & Exposition_, Baltimore, MD. #link("https://peer.asee.org/empowering-trailblazers-toward-scalable-systematized-research-based-workforce-development")[peer.asee.org]. Documents the CIRCUIT model; Gray-Roncal is the senior author. See also Gray-Roncal, W. _et al._ (2025), _MERIT: Mentoring Exceptional Researchers to Innovate and Thrive — A Structured, Scalable Research Training Framework for STEM Talent Development._ JHU/APL whitepaper (the generalization of CIRCUIT). _COMPASS_ — the layer of targeted mentor interventions that operates MERIT inside specific institutional settings, designed to help students uncover tacit and explicit knowledge gaps. _COMPASS-Core: Curriculum Overview and Workshop Summaries_ (JHU/APL program documentation) is one well-documented instance, a workshop set grounded in the CCR framework and explicitly addressing the "hidden curriculum" of research practice.],
   [TITAN — DARPA Artificial Intelligence Exploration program (JHU/APL pilot, c. 2020 – 2022). Program documentation on file with the LENS partner team at the JHU/APL AI Pathfinding Lab.],

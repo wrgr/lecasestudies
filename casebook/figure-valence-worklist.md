@@ -67,3 +67,23 @@ Rules applied when marking a figure:
 | `dgm-five-competencies` | brand/marque — no valence | — | What LENS graduates can do — five competencies |
 
 **Counts:** 26 adverse → triangle · 9 favourable → star · 8 generic — needs a valence parameter from the caller · 3 neutral — mechanism / subject / destination · 3 brand/marque — no valence · 1 — no accent
+
+
+---
+
+**COMPLETE (August 2026).** All 35 outcome figures are marked — 26 adverse (triangle), 9 favourable
+(star), counting the two shipped with the encoding. Three neutral figures (`dgm-therac`, `dgm-17year`,
+`dgm-andon`) and three brand marques carry no glyph by design.
+
+Two standing judgement calls for the editor:
+
+- `dgm-teamstepps` is left **unmarked**. The worklist classed it favourable, but structurally it is
+  the same object as `dgm-17year` — a pathway with a destination and no outcome claim beyond the
+  category label. Marking it would have meant colouring all three chain circles.
+- `dgm-makary` is marked **adverse** beside the 251K bar that its own caption calls *contested* as
+  third-ranking. The triangle asserts direction, not truth, and deaths are adverse at any count — but
+  a reader could take it as endorsing the number.
+
+Still open: the eight generic constructors (`dgm-stat`, `dgm-compare`, `dgm-cascade`, `dgm-timeline`,
+`dgm-flow`, `dgm-ring`, `dgm-curve`, `dgm-pair-bars`) have no valence parameter, so the ~56 call
+sites that use them cannot carry a glyph without threading one through from each caller.

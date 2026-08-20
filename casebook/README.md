@@ -14,13 +14,18 @@ Six deliverables, all mirrored into `../products/` (`products/print/` for the pr
 
 | Output | Carrier | Size | Pages | Notes |
 |---|---|---|---|---|
-| `capability-matters-print.pdf` | print | 8 × 10, grayscale, 3 mm bleed | 265 | Lulu production interior |
-| `cover-print.pdf` | print | 8 × 10 wrap | — | Lulu cover, spine **16.46 mm** |
-| `capability-matters-local-print.pdf` | print | US Letter, grayscale interior + colour covers | 267 | print at home / office (black on white; covers in colour) |
-| `capability-matters-digital.pdf` | digital | 8 × 10, colour, cream | 265 | main volume — screen / PDF distribution |
-| `capability-matters-complete.pdf` | digital | 8 × 10, colour, cream | 849 | complete standalone — every case |
-| `capability-matters-lens-companion.pdf` | digital | 8 × 10, white | 43 | concentration docs + crosswalks + canonical `lens_program/` docs |
-| `capability-matters-validation-audit.pdf` | digital | 8 × 10, white | 75 | audit tracker — indexes + per-case references |
+| `capability-matters-print.pdf` | print | 8 × 10, grayscale, 3 mm bleed | 280 | Lulu production interior |
+| `cover-print.pdf` | print | 8 × 10 wrap | — | Lulu cover, spine **17.39 mm** |
+| `capability-matters-local-print.pdf` | print | US Letter, grayscale interior + colour covers | 279 | print at home / office (black on white; covers in colour) |
+| `capability-matters-digital.pdf` | digital | 8 × 10, colour, cream | 277 | main volume — screen / PDF distribution |
+| `capability-matters-complete.pdf` | digital | 8 × 10, colour, cream | 884 | complete standalone — every case |
+| `capability-matters-lens-companion.pdf` | digital | 8 × 10, white | 50 | concentration docs + crosswalks + canonical `lens_program/` docs |
+| `capability-matters-validation-audit.pdf` | digital | 8 × 10, white | 97 | audit tracker — indexes + per-case references |
+
+These figures are hand-copied from `build/product-metrics.md`, which `scripts/build.sh`
+regenerates on every build. If they disagree, the generated file is right — it is read off
+the PDFs themselves. Re-run the build before quoting a spine width to a printer.
+
 
 The main volume shares one measure and type size across its three carriers, so the local-print grayscale interior paginates page-for-page with the Lulu interior — what you print at home is what Lulu prints. The companion and audit tracker use the same trim on a separate white-paper visual layer.
 
@@ -138,7 +143,7 @@ Production builds use two layers:
 
 ## Cover
 
-A single 8 × 10 Lulu wrap — front, spine, and back on one sheet — built from `cover/cover.typ`. The spine width is computed from the live `print` page count (~0.0621 mm/page on cream stock) and passed in by `scripts/build.sh`. The 265-page main-volume interior produces a **16.46 mm** spine; Lulu may quote-back ±1 mm. `build.sh` also emits a split cover (front · spine · back) as an internal intermediate — its colour front/back panels are attached to the local-print copy.
+A single 8 × 10 Lulu wrap — front, spine, and back on one sheet — built from `cover/cover.typ`. The spine width is computed from the live `print` page count (~0.0621 mm/page on cream stock) and passed in by `scripts/build.sh`. The 280-page main-volume interior (277 pages padded to a 4-page signature) produces a **17.39 mm** spine; Lulu may quote-back ±1 mm. `build.sh` also emits a split cover (front · spine · back) as an internal intermediate — its colour front/back panels are attached to the local-print copy.
 
 To override once Lulu reports the exact spine width:
 
@@ -228,7 +233,7 @@ The local-print copy (`mode=proof`, grayscale interior) is the review artifact: 
 ## Open items for production
 
 - The colophon currently reads `Copyright © 2026. All rights reserved.` pending a decision on the institutional rights-holder.
-- Lulu reports an exact spine width once the page count is locked. Build the cover with `--input spine-mm=…` to match if it differs from the computed 16.46 mm.
+- Lulu reports an exact spine width once the page count is locked. Build the cover with `--input spine-mm=…` to match if it differs from the computed 17.39 mm.
 - ISBN assignment + copyright registration sit outside the source.
 - The human-reviewer verification pass against the rubric in [verification-log.md](verification-log.md) is a quality gate, not a print blocker — it can run in parallel with the Lulu pre-press proof.
 

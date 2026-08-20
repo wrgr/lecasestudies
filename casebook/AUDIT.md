@@ -982,3 +982,119 @@ This is the original Andon defect inverted. It began as a folk claim in `impact:
 **New detector.** `scripts/check-compression.py --phrases` greps the whole compression set — `impact`, `summary`, `beats`, `le-insight`, `lens-approach`, `quote`, `reflection-list`, `approaches` — for the phrasings the sweep retired. Like the quantity check it produces leads, not verdicts: *"stop the line"* is correct prose in a case about stopping a line. It exists so that the next time a body is corrected, the fields that restate it are a worklist rather than a discovery. Corpus state after this pass: 7 of 191 cases flagged, every one triaged as legitimate usage.
 
 `check-cases.sh` reports 191 converted / 0 failures.
+
+### Addendum (August 2026): non-case matter, figure valence, print signature, and source confrontation
+
+Six passes since the entry above, recorded together because they share a finding: **the book's
+apparatus had drifted away from the book.** Every defect below is a statement made *about* the
+corpus by something outside it — front matter, back matter, cover, build documentation — that the
+corpus no longer supported.
+
+**The domain index was keyed to the retired numbering.** All nineteen hand-written standout
+callouts in `backmatter/domain-index.typ` still carried v1 1–100 numbers. Each resolved to a real
+but unrelated live case, so the error was silent: the "Standout success" beside Toyota's andon cord
+printed *Case 73*, which is The Doer Effect at Scale. Three callouts contradicted their own body
+text, naming one case in the number and a different one in the prose. All nineteen re-keyed.
+
+Seven of those callouts also asserted things the cases had been corrected to retract — the andon
+cord as "any operator can stop the line" (Case 155 now says most pulls never stop it), INPO as "no
+INES-level event" (the case says Level 4-or-above, and carries Davis-Besse's Level 3 explicitly),
+Horizon as "at least four suicides" (the case says 13, and 900+ convictions against "hundreds"),
+Challenger/Columbia crediting the Rogers Commission with Vaughan's "normalization of deviance",
+and CRM's "the safety record that followed" — the decomposition claim retired earlier this month.
+Robodebt's callout carried a Royal Commission quotation that appears nowhere in the case, its
+references, or this log; it is replaced with what Case 191 actually carries. Two callouts claimed
+"no paired-intervention success" for domains that have them (government: Case 203; autonomous
+vehicles: Cases 199 and 200) — an artifact of the callouts being keyed to one domain string while
+the interventions file under a neighbouring one.
+
+**The colour legend was wrong in both places it appears.** `matrix.typ` and `domain-index.typ` both
+told the reader teal marks "paired-intervention successes and the open closing case." The renderer
+colours on `kind == "intervention"`, so all 27 frontier cases — the closing case among them — print
+gold. Legend corrected in both. The matrix also now explains its fourteen missing numbers: withdrawn
+cases keep their numbers rather than have the sequence re-flowed around them.
+
+**The LEN course table had drifted on eight of ten counts** (LEN 7 was off by twelve, LEN 8 by
+eight) while `course-index.typ`, a few leaves later, computed the same quantities live. The table is
+now computed from the same `<caseinfo>` query, so the two pages cannot disagree again. Four "202
+cases" claims corrected to 191 active. This change required `lens-companion.typ` to include the
+chapters for metadata — under `view=companion` a case emits its metadata and renders no body, so the
+companion gains the data and no pages.
+
+**The Validation & Audit tracker was missing four chapter files.** `validation-audit.typ` included
+`ch1a`–`ch5b` and the closing case under a comment reading `// METADATA EMIT: include every case`.
+Parts VI and VII were absent, so the tracker's domain index, course index and references appendix
+silently omitted **42 live cases** — thirteen of them in the printed 48, for which `book.typ` names
+this tracker as the reader's only route to a consolidated reference list. Tracker 77 → 97 pp.
+
+**The introduction and colophon carried the retracted claims.** The compression-layer defect class,
+one level up: the case bodies were corrected and the front matter that summarises them was not.
+Fixed — Makary's estimate now reads as contested (Case 8); the 17-year and 14% figures as estimates
+rather than "the average, the median" (Case 13); the 83% aviation figure as a portfolio result CRM
+cannot be credited with alone (Case 117); INPO as Level 4-or-above (Case 175); the WHO checklist as
+1.5% → 0.8% with the null Ontario rollout beside it (Case 23); Ofqual as 39% of teacher-estimated
+*grades*, withdrawn after four days, with the cause the OSR review actually found; the Navy's
+CD-ROM substitution without the unsourced "sixteen-week"; and the F-35 at its stated 44% FY2025
+mission-capable rate rather than "half of its design readiness in 2026." The introduction also
+described the five competencies by listing six *course titles*, one of them the retired name for
+LEN 2 — corrected, along with "concentration learning outcomes" → LENS Educational Objectives, and
+a cross-reference to "Chapter 8" under a chapter numbering retired in July.
+
+**The colophon overstated the verification work.** It said every case "was reviewed by the editors
+and hand-checked by students." Every row of `verification-log.md` reads *"auto-prefill: all
+mechanical checks pass; human content review still needed."* The claim now says what is true: six
+rubric columns are mechanically checked across the corpus, the seventh is the case-by-case content
+read, and that read is underway. A book arguing that institutions should measure what they claim
+should not overclaim its own measurement.
+
+**Page structure was described wrongly in three places.** `howto.typ` said "each case occupies a
+two-page spread"; the introduction said "most cases run to three pages"; both said the Lens is "the
+last page." Measured from the `<cmeta>` probes: **53 cases at three pages, 128 at four, 10 at five,
+none at two**, and the forced break before the Lens was removed earlier, so it begins wherever the
+narrative ends. All three corrected. `howto.typ` also carried LEN 2 under its pre-v2.4 title
+("Human-AI Teaming"), which the program document is explicit is a sub-pattern and not the whole;
+four other titles were truncated, and all ten courses were presented as required when four are
+electives.
+
+**Orphaned references.** `backmatter/references.typ` listed 27 entries under "Cited in the
+introduction"; the introduction cites 1–22. Entries 23–27 are the program-record sources that moved
+to `about-lens.typ` when that section was split out. They now sit under their own heading rather
+than under a claim of citation that was never true. `about-lens.typ` also described MERIT and
+COMPASS as "documented in the peer-reviewed engineering-education literature" — the references say
+JHU/APL whitepaper and program documentation; only CIRCUIT is peer-reviewed. Corrected. The
+references-by-case appendix promised populated "Retrieved from:" lines where the renderer emits an
+unconditional blank; the prose now describes it as the reviewer worksheet it is.
+
+**Figure valence encoding completed.** The star/triangle outcome encoding shipped with two figures
+marked. The introduction's figure key described it as a corpus-wide convention and told the reader
+that a figure without a glyph "is not claiming it went well or badly" — which, with 33 of 35 outcome
+figures unmarked, inverted the reading of a third of the book's diagrams. The remaining 32 figures
+are now marked (25 triangles, 7 stars) and the key is rewritten to state the encoding without
+resting meaning on absence. `dgm-inpo`'s outcome line had been clipped by its frame since it was
+drawn, and is now visible. Two judgement calls stand for the editor: `dgm-teamstepps` is left
+unmarked as a pathway figure, and `dgm-makary` is marked adverse beside a count the caption itself
+calls contested — the triangle asserts direction, not the number.
+
+**A live print defect and a latent build bug.** The interior is padded to a 4-page binding
+signature before the spine is derived; that padding step was reached for the first time in this
+build and failed under `set -e`, because its `awk printf` emitted no trailing newline and `read`
+therefore returned non-zero. Fixed. `build.sh` now also writes `build/product-metrics.md` and
+mirrors it to `products/`, because both READMEs had drifted on every page figure — including
+README.md:126, which instructed the operator to send Lulu a **16.46 mm** spine for a book that needs
+**17.39 mm**. The READMEs now name the generated file as the authority.
+
+**Production consequence.** Main volume 275 → **277 pp**, padded to **280** for the signature (spine
+17.08 → **17.39 mm**); complete edition 883 → **884 pp**; validation-audit 77 → **97 pp**; companion
+**50 pp**; local-print **279 pp**.
+
+**Source confrontation, session 2.** Batch 1 completed and batch 2 taken to 11 of 15 — 14 cases
+confronted, 10 corrected; see `source-confrontation-log.md`. Two classes recur: a figure that is
+*correct* but carried by no cited reference (Cases 22, 23, 25), and a case whose compression fields
+contradict its own body (Cases 27, 34 — Case 34 asserted the mortality reduction was "multifactorial"
+where the authors state the opposite in their limitations). Case 29 resolves the editor memo's open
+BCMA follow-up item. Case 28 had two sentences printing broken mid-clause where a cross-reference
+had been stripped and never replaced — a defect no gate would have caught and no reader could have
+parsed.
+
+`check-cases.sh` reports 191 converted / 0 failures; `--gate` 0 new; `--phrases` 7 triaged;
+`check-diagram-palette.py` clean at 50 diagrams.

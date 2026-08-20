@@ -13,8 +13,10 @@
 //
 // Book trim is 8 × 10 in (203.2 × 254 mm). The build script computes
 // the exact spine from the print interior's page count and passes the
-// total wrap dimensions in; the defaults below are a sane standalone
-// estimate (≈ 28 mm spine) only.
+// total wrap dimensions in; the defaults below track the current
+// interior (276 pp → 17.14 mm spine) so a standalone compile is usable.
+// They are a convenience, not the source of truth: build.sh always
+// overrides them from the live page count.
 //   Book trim:       203.2 × 254 mm   (8 × 10 in)
 //   Bleed:           3.175 mm (0.125 in)
 //   Safety margin:   12.7 mm (0.5 in) from trim edge
@@ -34,9 +36,9 @@
 #import "../lib/components.typ": *
 
 // ---- Lulu cover spec (inputs override defaults) ----
-#let total-w = float(sys.inputs.at("cover-w-mm", default: "440.75"))  * 1mm
+#let total-w = float(sys.inputs.at("cover-w-mm", default: "429.89"))  * 1mm
 #let total-h = float(sys.inputs.at("cover-h-mm", default: "260.35"))  * 1mm
-#let spine   = float(sys.inputs.at("spine-mm",   default: "28.00"))   * 1mm
+#let spine   = float(sys.inputs.at("spine-mm",   default: "17.14"))   * 1mm
 #let layout  = sys.inputs.at("layout", default: "wrap")
 
 // Derived layout points (printer's view, single sheet wrap):

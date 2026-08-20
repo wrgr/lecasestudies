@@ -99,9 +99,10 @@
   program; the cohorts it trained contributed materially to the MICrONS
   reconstructions now published in #emph[Nature], with student
   development a deliberate byproduct of the mission result. The model
-  was generalized into the *MERIT* framework and the *COMPASS*
-  mentor-intervention layer, documented in the peer-reviewed
-  engineering-education literature. The *PISTA* incubator
+  is documented in the peer-reviewed engineering-education literature,
+  and was generalized into the *MERIT* framework and the *COMPASS*
+  mentor-intervention layer in JHU/APL program documentation. The
+  *PISTA* incubator
   (DTRA, Summer 2025) compressed the same cycle into ten weeks: nine
   student fellows shipped a working CBRNE decision-support prototype to
   agency leadership through three full redesigns. No single pilot

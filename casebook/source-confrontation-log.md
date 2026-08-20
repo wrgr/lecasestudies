@@ -13,6 +13,12 @@ error. Unverifiable claims are removed or replaced, per the standing rule.
 
 **Session 1 (August 2026): batch 1 — 12 of 15 confronted, 3 corrections made.**
 
+**Session 2 (August 2026): batch 1 completed (12, 14, 18) and batch 2 taken to 11 of 15 — 14 cases
+confronted, 10 with corrections. Batch 2 carries forward Cases 32, 35, 36, 37.** Two classes recur and are worth naming: a figure that is *correct* but carried by no
+cited reference (Cases 22, 23, 25), and a case whose compression fields contradict its own body
+(Cases 27, 34). Case 29 resolves the editor memo's open BCMA follow-up item; Case 28 had two
+sentences printing broken mid-clause where a cross-reference had been stripped and never replaced.
+
 **Status:** `—` not started · `▶` in progress · `✓` confronted, findings recorded · `✗` findings outstanding
 
 **Scope:** 143 cases · 701 reference entries · 690 claim markers
@@ -27,26 +33,26 @@ error. Unverifiable claims are removed or replaced, per the standing rule.
 | 5 | 8 | `medical-errors-as-systemic-failure` | 6 | 6 | investigation | — | 1 | ✓ | **Bates 2023 is 23.6% of admissions, not ~25%** — corrected, and the 2,809-admission denominator added. |
 | 6 | 9 | `vioxx-withdrawal` | 6 | 6 | investigation | — | 1 | ✓ | $4.85B settlement (2007) and Graham's 88,000–139,000 confirmed. No change. |
 | 7 | 11 | `california-nurse-staffing-ratios` | 4 | 4 | peer-reviewed | — | 1 | ✓ | Aiken 2010 confirmed: NJ 13.9%, PA 10.6% — the case's '10–14%' brackets it correctly. No change. |
-| 8 | 12 | `acgme-80-hour-resident-duty-hour-reform` | 7 | 7 | — | — | 1 | — | not yet confronted |
+| 8 | 12 | `acgme-80-hour-resident-duty-hour-reform` | 7 | 7 | — | — | 1 | ✓ | FIRST (NEJM 374:713–727) and iCOMPARE (380:905–914) confirmed; pull quote verbatim from FIRST's abstract conclusion; 2003 / 2011 / 2017 ACGME dates correct. No change. |
 | 9 | 13 | `implementation-science-in-healthcare` | 5 | 5 | — | — | 1 | ✓ | **Both canonical figures restated as the estimates they are.** Balas & Boren timed nine primary-care services to 50% adoption (15.6 yr); the 14% is derived from assumed pipeline attrition, not counted. Documented baseline errors (diabetic foot exams 20% assumed vs ~60% actual; mammography 50% dated 1993 vs 1990) now in the body. Diagram relabelled. |
-| 10 | 14 | `barsuk-sbml-simulation-based-mastery` | 5 | 5 | peer-reviewed | — | 1 | — | not yet confronted |
+| 10 | 14 | `barsuk-sbml-simulation-based-mastery` | 5 | 5 | peer-reviewed | — | 1 | ✓ | Barsuk 2009, Cohen 2010, and the 58-VAMC train-the-trainer dissemination (Crit Care Med 2016) confirmed. **Stale draft cross-refs corrected** — "Case 178 team science" (178 is the UN cluster approach); 121 / 122 / 123 → 40 / 28 / 41. |
 | 11 | 15 | `i-pass-handoff-bundle-structuring-the` | 4 | 4 | peer-reviewed | — | 1 | ✓ | Confirmed correct **against two sources that get it wrong**: NEJM gives 23% medical errors (24.5→18.8/100 admissions) and 30% preventable adverse events (4.7→3.3). AHRQ PSNet and the study press release both swap them. Do not 'correct' this case against PSNet. |
 | 12 | 16 | `ncsbn-national-simulation-study` | 4 | 4 | peer-reviewed | — | 1 | ✓ | Design confirmed (10 programs, control ≤10% / 25% / 50%, no significant differences). The '660 took the NCLEX' figure not independently confirmed. |
 | 13 | 17 | `spaced-education-rcts-in-medical` | 4 | 4 | peer-reviewed | — | 1 | ✓ | 537 participants confirmed; 515 (96%) completed the In-Service Examination; spaced cohort scored higher on online tests. No change. |
-| 14 | 18 | `pepfar-hiv-training-across-16-sub` | 4 | 4 | peer-reviewed | — | 1 | — | not yet confronted |
+| 14 | 18 | `pepfar-hiv-training-across-16-sub` | 4 | 4 | peer-reviewed | — | 1 | ✓ | Every figure exact against PLOS Glob Public Health 3(7):e0001654 — 13.6 / 6.0 / 7.6% gains, women 51.9 / 60.1 / 63.6%, STRIPE HIV via AFREhealth + UCSF. No change. |
 | 15 | 21 | `sterile-cockpit-ward-rounds-adapting-an` | 4 | 4 | peer-reviewed | — | 1 | ✓ | 63.6% → 77.9% documentation accuracy confirmed exactly (PMC12515027). **Resolves the editor memo's flagged sterile-cockpit verification.** No change. |
-| 16 | 22 | `chatgpt-in-healthcare-hallucination` | 5 | 5 | — | — | 2 | — | |
-| 17 | 23 | `who-surgical-safety-checklist` | 5 | 5 | peer-reviewed | — | 2 | — | |
-| 18 | 24 | `bristol-heart-babies-reform` | 5 | 5 | investigation | — | 2 | — | |
-| 19 | 25 | `removing-the-race-coefficient-from-egfr` | 5 | 4 | peer-reviewed | — | 2 | — | |
-| 20 | 27 | `anesthesia-monitoring-standards-and-the` | 5 | 5 | peer-reviewed | — | 2 | — | |
-| 21 | 28 | `interprofessional-education-and-the` | 4 | 4 | investigation | — | 2 | — | |
-| 22 | 29 | `bar-code-medication-administration-cue` | 4 | 4 | peer-reviewed | — | 2 | — | |
-| 23 | 30 | `surgical-skill-video-peer-rating` | 4 | 4 | peer-reviewed | — | 2 | — | |
-| 24 | 31 | `language-of-surgery-jigsaws-decomposing` | 4 | 4 | peer-reviewed | — | 2 | — | |
+| 16 | 22 | `chatgpt-in-healthcare-hallucination` | 6 | 5 | — | — | 2 | ✓ | 47% of 115, 13 of 50, 60 records / 85%, WHO automation-bias quote confirmed. **The 50% drug-information accuracy figure had no reference** — it is Triplett et al., AJHP 82(8):448–460 (2025); source added. |
+| 17 | 23 | `who-surgical-safety-checklist` | 6 | 5 | peer-reviewed | — | 2 | ✓ | Haynes figures and "all eight sites, significant at three" confirmed from the paper. **70% figure had no source** — Ariadne Labs / Lifebox (2020) added. **Ontario "mandated rollout" corrected**: what was mandated from July 2010 was public reporting of compliance, not the pause. |
+| 18 | 24 | `bristol-heart-babies-reform` | 5 | 5 | investigation | — | 2 | ✓ | Pull quote confirmed **verbatim** from ¶18 of the Final Report Summary — do not "correct" it against Recommendation 155, which words the same requirement differently; reference annotated to prevent that. Bare "Sherlaw-Johnson et al." completed (Eur J Cardiothorac Surg 26(5):1032–1036, 2004). |
+| 19 | 25 | `removing-the-race-coefficient-from-egfr` | 6 | 4 | peer-reviewed | — | 2 | ✓ | 26 candidate approaches, Inker / Delgado, OPTN Dec-2022 backdating confirmed. **30.3% lab-adoption figure had no reference** — Genzen et al., JAMA 328(20):2060–2062 added. **"Lending pair (Cases 186–113)" wrong** — 113 is Boeing Starliner; corrected to 186 and 196. |
+| 20 | 27 | `anesthesia-monitoring-standards-and-the` | 6 | 5 | peer-reviewed | — | 2 | ✓ | **Body contradicted its own impact field on the ASA sequence** — body said capnography ~1991, impact said 1999. Impact was right: 1991 was expired-CO2 tube verification; continual capnography effective July 1999. Body corrected. **Brazilian mortality figure reattributed** to Braz et al. (2009), Clinics 64(10):999–1006 — a 33-study review covering Brazil and worldwide, not a "Brazilian series". |
+| 21 | 28 | `interprofessional-education-and-the` | 4 | 4 | investigation | — | 2 | ✓ | Cochrane 15 studies / 1999–2011 and the Appendix A "paucity of high-quality research" quote confirmed verbatim. **Two sentences were printing broken mid-clause** ("the Domain 3 sub-competency proposed in — the recurring pattern…") — repaired to name subobjective 3.4. Stale 121 / 123 → 40 / 41. |
+| 22 | 29 | `bar-code-medication-administration-cue` | 4 | 4 | peer-reviewed | — | 2 | ✓ | Poon 2010 exact (11.5 → 6.8%, 3.1 → 1.6%, transcription 6.1% → zero) and Thompson 2018 exact (0.65 → 0.29 per 100,000 = 55.4%) — **resolves the editor memo's open "BCMA harm-reduction follow-up figure"**. Bare **"PMC6257885" was printing as prose**; replaced with author attribution and the underlying rates. |
+| 23 | 30 | `surgical-skill-video-peer-rating` | 4 | 4 | peer-reviewed | — | 2 | ✓ | Every figure exact against NEJM 369(15):1434–1442, including "Although these findings are preliminary" verbatim. Added the missing top-quartile comparator (5.2% against 14.5%) and the volume figures behind the skill-vs-volume hedge (105 vs 240 cases/year). |
+| 24 | 31 | `language-of-surgery-jigsaws-decomposing` | 4 | 4 | peer-reviewed | — | 2 | ✓ | Vedula 2016 exact: 18 surgeons (4 expert / 14 trainee), 26.29 vs 31.30 gestures, 1.00 vs 2.84 errors. Dropped "roughly twenty investigators" — true, but sourced only to institutional press, which this case's COI block explicitly disclaims relying on. |
 | 25 | 32 | `annual-screening-ui-redesign-cds-at` | 4 | 4 | peer-reviewed | — | 2 | — | |
-| 26 | 33 | `alert-fatigue-redesign-cutting-ehr` | 5 | 5 | peer-reviewed | practice-synthesis-tier | 2 | — | |
-| 27 | 34 | `composer-sepsis-prediction` | 4 | 4 | peer-reviewed | — | 2 | — | |
+| 26 | 33 | `alert-fatigue-redesign-cutting-ehr` | 6 | 5 | peer-reviewed | practice-synthesis-tier | 2 | ✓ | Patterson (877 nursing hours, all four alerts removed) and Fallon (80% cut, 23% → 61%) exact. **Misattribution corrected**: "most optimization studies reported alert-rate reduction" is not in Hussain 2019 (that review measures prescriber acceptance) — it is Van Dort et al., JAMIA 28(1):177–183 (2021); source added. |
+| 27 | 34 | `composer-sepsis-prediction` | 4 | 4 | peer-reviewed | — | 2 | ✓ | **Case contradicted itself and the source.** Summary / §5 / le-insight called the mortality reduction "multifactorial… deployed alongside other process improvements"; Boussina et al. state the opposite — "we did not have any other quality improvement initiatives during the same time period." Claim removed; the real hedges restored, including the one the case omitted entirely: harms to non-sepsis patients (antibiotic overuse, costs) were never evaluated. |
 | 28 | 35 | `radiology-ai-miscalibration` | 5 | 5 | peer-reviewed | — | 2 | — | |
 | 29 | 36 | `alphafold-protein-structure-prediction` | 6 | 6 | — | — | 2 | — | |
 | 30 | 37 | `deepmind-mammography-2020` | 4 | 4 | peer-reviewed | — | 2 | — | |

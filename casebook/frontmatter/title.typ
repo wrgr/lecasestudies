@@ -129,12 +129,15 @@
       treats AI as the dual entity the curriculum names it: a
       creative partner that accelerated drafting, cross-referencing,
       layout, and citation lookup, and an epistemic risk that had
-      to be hand-checked against the record. Every case in the book
-      was reviewed by the editors and hand-checked by students for
-      accuracy: confirming that the sources cited exist and are
-      findable, that the quoted attributions are fairly represented,
-      and that the case studies are accurate accounts of the
-      incidents and the investigations they draw on. Items where the
+      to be hand-checked against the record. Every case is reviewed
+      by the editors against a seven-column rubric — that the sources
+      cited exist and are findable, that the quoted attributions are
+      fairly represented, and that the case is an accurate account of
+      the incident and the investigation it draws on. Six of those
+      columns are mechanically checked across the whole corpus; the
+      seventh, the case-by-case content read by editors and student
+      reviewers, is underway and is the work this edition will keep
+      doing in public. Items where the
       source could not be confirmed are marked "Paraphrasing…" so
       the attribution is honest about what is the author's
       reconstruction and what is verbatim from the record.

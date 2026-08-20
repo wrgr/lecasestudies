@@ -123,11 +123,12 @@
     content((9, 0.3), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("hours running")), anchor: "north-east")
     content((0.3, 3.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("error")), anchor: "south-east")
     let pts = ((0.5, 0.65), (1.5, 0.72), (3, 0.92), (4.5, 1.25), (6, 1.85), (7.2, 2.7), (8, 3.3))
-    line(..pts, stroke: 1.2pt + dgm-accent)
+    line(..pts, stroke: 1.2pt + dgm-adverse)
     circle((4.5, 1.25), radius: 0.1, fill: dgm-ink, stroke: none)
     content((4.5, 1.55), text(font: sans, size: 6pt, fill: dgm-ink, "Israeli warning"), anchor: "south")
-    circle((7.6, 2.95), radius: 0.12, fill: dgm-accent-soft, stroke: none)
-    content((7.6, 3.25), text(font: sans, size: 6pt, fill: dgm-accent-soft, "Dhahran"), anchor: "south")
+    circle((7.6, 2.95), radius: 0.12, fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 8.25, 2.9)
+    content((7.6, 3.25), text(font: sans, size: 6pt, fill: dgm-adverse, "Dhahran"), anchor: "south")
   })
 )
 
@@ -153,7 +154,8 @@
     circle((8.0, 2.0), radius: 0.14, fill: dgm-accent, stroke: none)
     content((4.9, 1.7), text(font: sans, size: 6pt, fill: dgm-ink, "FO"), anchor: "north")
     content((8.1, 1.7), text(font: sans, size: 6pt, fill: dgm-ink, "Capt"), anchor: "north")
-    content((6.5, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-accent-soft, "83% — CAST portfolio, 1998–2008"))
+    outcome-mark("good", 4.1, 0.62)
+    content((6.5, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-good, "83% — CAST portfolio, 1998–2008"))
   })
 )
 
@@ -172,6 +174,7 @@
       content((x, 1.95), text(font: sans, size: 6.6pt, weight: "bold", fill: dgm-ink, tracking: 1pt, lab), anchor: "south")
       content((x, 1.1), text(font: sans, size: 6pt, fill: dgm-dim, sub), anchor: "north")
     }
+    outcome-mark("good", 2.8, 0.3)
     content((4.7, 0.3), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "pilot deaths 1.5% → 0.8%"))
   })
 )
@@ -203,11 +206,12 @@
     for i in range(n) {
       let theta = i * 360deg / n
       let cx = 4.7 + 2.3 * calc.cos(theta)
-      let cy = 2.0 + 1.4 * calc.sin(theta)
+      let cy = 2.0 + 1.1 * calc.sin(theta)
       circle((cx, cy), radius: 0.18, fill: dgm-ink, stroke: none)
       line((4.7, 2.0), (cx, cy), stroke: 0.4pt + dgm-rule)
     }
-    content((4.7, 0.2), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "no INES Level 4+ accident since 1979"))
+    outcome-mark("good", 2.05, 0.45)
+    content((4.7, 0.45), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "no INES Level 4+ accident since 1979"))
   })
 )
 
@@ -225,6 +229,7 @@
     rect((0.5, 1.2), (1.6, 1.7), fill: dgm-accent, stroke: none)
     content((0.5, 1.9), text(font: sans, size: 6.5pt, fill: dgm-accent, "2003 — CD-ROM self-study"), anchor: "south-west")
     line((4, 0.5), (4, 3.4), stroke: (paint: dgm-rule, thickness: 0.4pt, dash: "dashed"))
+    outcome-mark("adverse", 4.9, 0.55)
     content((6.2, 0.55), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "17 sailors dead"))
   })
 )
@@ -244,6 +249,7 @@
     // endpoints
     content((0.5, 1.1), text(font: sans, size: 6pt, fill: dgm-dim, "pitot ice"), anchor: "north-west")
     content((8.0, 1.1), text(font: sans, size: 6pt, fill: dgm-dim, "impact"), anchor: "north-east")
+    outcome-mark("adverse", 2.1, 0.45)
     content((4.5, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "no recovery manoeuvre attempted"), anchor: "north")
   })
 )
@@ -267,6 +273,7 @@
         content((((x + nodes.at(i + 1).at(0)) / 2), 2.3), text(font: sans, size: 6pt, fill: dgm-ink, "→"), anchor: "south")
       }
     }
+    outcome-mark("adverse", 9.15, 2.0)
     content((4.5, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "training matched worst case, not this case"), anchor: "north")
   })
 )
@@ -284,6 +291,7 @@
       content((x, 1.0), text(font: sans, size: 10pt, fill: dgm-accent, "×"))
       content((x, 0.55), text(font: sans, size: 6pt, fill: dgm-dim, str(years.at(i))), anchor: "north")
     }
+    outcome-mark("adverse", 2.15, 2.6)
     content((5, 2.6), text(font: serif, size: 11pt, style: "italic", fill: dgm-ink, "Indo-Pacific range capacity gap"))
     content((5, 2.1), text(font: sans, size: 7pt, fill: dgm-ink, tracking: 1pt, upper("DoD top-priority theater")))
   })
@@ -300,8 +308,9 @@
     content((8.9, 3.08), text(font: sans, size: 6pt, fill: dgm-ink, "FY21 — 67%"), anchor: "north-east")
     // actual
     let curve = ((1, 1.9), (2.5, 1.7), (4, 1.6), (5.5, 1.8), (7, 1.7), (8.5, 1.6))
-    line(..curve, stroke: 1.2pt + dgm-accent)
-    content((8.4, 1.35), text(font: sans, size: 6pt, fill: dgm-accent, "FY25 — 44%"), anchor: "north-east")
+    line(..curve, stroke: 1.2pt + dgm-adverse)
+    outcome-mark("adverse", 6.85, 1.2)
+    content((8.4, 1.35), text(font: sans, size: 6pt, fill: dgm-adverse, "FY25 — 44%"), anchor: "north-east")
     content((0.3, 3.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("MC rate")), anchor: "south-east")
     content((4.7, 0.3), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("FY21 → FY25")))
   })
@@ -322,7 +331,8 @@
     // arrow to: shutdown choice
     line((4.2, 2.3), (5.5, 2.3), stroke: 0.8pt + dgm-rule)
     content((6.7, 2.3), text(font: sans, size: 7pt, fill: dgm-ink, "crew shut down R"))
-    content((4.5, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-accent-soft, "47 dead — the instruments were never read"), anchor: "north")
+    outcome-mark("adverse", 1.5, 0.25)
+    content((4.5, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-adverse, "47 dead — the instruments were never read"), anchor: "north")
   })
 )
 
@@ -334,8 +344,9 @@
     rect((1.0, 1.4), (1.4, 1.6), fill: dgm-ink, stroke: none)
     content((1.2, 1.2), text(font: sans, size: 6.5pt, fill: dgm-ink, "historical 15–20%"), anchor: "north")
     // desert storm bar
-    rect((4.0, 1.4), (5.7, 2.9), fill: dgm-accent, stroke: none)
-    content((4.85, 1.2), text(font: sans, size: 6.5pt, weight: "bold", fill: dgm-accent, "Desert Storm 24%"), anchor: "north")
+    rect((4.0, 1.4), (5.7, 2.9), fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 6.05, 2.15)
+    content((4.85, 1.2), text(font: sans, size: 6.5pt, weight: "bold", fill: dgm-adverse, "Desert Storm 24%"), anchor: "north")
     line((0.5, 1.4), (9, 1.4), stroke: 0.4pt + dgm-rule)
     content((7.5, 2.3), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "system-level"), anchor: "south")
     content((7.5, 2.0), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "capability gap"), anchor: "south")
@@ -365,8 +376,9 @@
       content((x, 0.6), text(font: sans, size: 5.5pt, fill: dgm-dim, lab), anchor: "north")
     }
     // arrow through the holes
-    line((0.2, 1.9), (8.9, 1.9), stroke: 1pt + dgm-accent)
-    content((9.1, 1.9), text(font: sans, size: 6pt, fill: dgm-accent, "→"), anchor: "west")
+    line((0.2, 1.9), (8.9, 1.9), stroke: 1pt + dgm-adverse)
+    content((9.1, 1.9), text(font: sans, size: 6pt, fill: dgm-adverse, "→"), anchor: "west")
+    outcome-mark("adverse", 9.7, 1.9)
   })
 )
 
@@ -386,7 +398,8 @@
     // arc between
     bezier((1.5, 1.6), (7.5, 1.6), (3.5, 3.2), (5.5, 3.2), stroke: (paint: dgm-ink, thickness: 0.6pt, dash: "dashed"))
     content((4.5, 3.0), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "same culture, same failure"))
-    content((4.5, 0.4), text(font: serif, size: 8pt, style: "italic", fill: dgm-accent-soft, "14 astronauts dead"), anchor: "north")
+    outcome-mark("adverse", 3.1, 0.27)
+    content((4.5, 0.4), text(font: serif, size: 8pt, style: "italic", fill: dgm-adverse, "14 astronauts dead"), anchor: "north")
   })
 )
 
@@ -403,6 +416,7 @@
       content((x, y), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, n))
       line((4.7, 2.0), (x, y), stroke: 0.4pt + dgm-rule)
     }
+    outcome-mark("adverse", 2.45, 0.25)
     content((4.7, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "62 dead across 16 hull losses"), anchor: "north")
   })
 )
@@ -422,6 +436,7 @@
     content((6.0, 3.2), text(font: sans, size: 6.5pt, fill: dgm-accent, tracking: 1pt, upper("perceived")), anchor: "south")
     line((5.0, 2.8), (7.3, 1.4), stroke: 1.2pt + dgm-accent)
     content((7.5, 1.4), text(font: sans, size: 7pt, fill: dgm-accent, "↘ diving"), anchor: "west")
+    outcome-mark("adverse", 3.05, 0.25)
     content((4.7, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "290 civilians killed"), anchor: "north")
   })
 )
@@ -435,9 +450,10 @@
     content((2.0, 2.0), text(font: serif, size: 14pt, fill: dgm-ink, "$30B"))
     content((2.0, 1.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("HITECH 2009")))
     line((3.7, 2.0), (5.5, 2.0), stroke: 0.8pt + dgm-rule)
-    rect((5.7, 1.2), (8.7, 2.8), fill: dgm-panel-alt, stroke: 0.6pt + dgm-accent)
-    content((7.2, 2.2), text(font: sans, size: 7pt, weight: "bold", fill: dgm-accent, "new error"))
-    content((7.2, 1.85), text(font: sans, size: 7pt, weight: "bold", fill: dgm-accent, "categories"))
+    rect((5.7, 1.2), (8.7, 2.8), fill: dgm-panel-alt, stroke: 0.6pt + dgm-adverse)
+    outcome-mark("adverse", 9.05, 2.0)
+    content((7.2, 2.2), text(font: sans, size: 7pt, weight: "bold", fill: dgm-adverse, "new error"))
+    content((7.2, 1.85), text(font: sans, size: 7pt, weight: "bold", fill: dgm-adverse, "categories"))
     content((7.2, 1.5), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("transcription · default · alerts")))
   })
 )
@@ -453,6 +469,7 @@
     content((1.5, 2.2), text(font: sans, size: 6pt, fill: dgm-accent, "Volvo (autonomous)"), anchor: "south")
     // pedestrian
     circle((6.5, 1.6), radius: 0.12, fill: dgm-ink, stroke: none)
+    outcome-mark("adverse", 7.08, 1.72)
     content((6.5, 1.9), text(font: sans, size: 6pt, fill: dgm-ink, "pedestrian"), anchor: "south")
     // operator looking away
     content((4.5, 3.0), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "operator monitoring a system"))
@@ -482,6 +499,7 @@
       circle((cx, cy), radius: 0.15, fill: dgm-rule, stroke: none)
       line((cx - 0.18, cy + 0.18), (cx + 0.18, cy - 0.18), stroke: 1pt + dgm-accent-soft)
     }
+    outcome-mark("adverse", 1.9, 0.15)
     content((4.7, 0.3), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "the tech worked; the governance did not"), anchor: "north")
   })
 )
@@ -493,8 +511,9 @@
     // Two contrasting bars
     rect((1.5, 1.4), (1.7, 3.2), fill: dgm-ink, stroke: none)
     content((1.6, 3.4), text(font: sans, size: 6.5pt, fill: dgm-ink, "7M target"), anchor: "south")
-    rect((5.5, 1.4), (5.55, 1.45), fill: dgm-accent, stroke: none)
-    content((5.5, 1.55), text(font: sans, size: 6.5pt, fill: dgm-accent, "27K actual"), anchor: "south")
+    rect((5.5, 1.4), (5.55, 1.45), fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 4.5, 1.68)
+    content((5.5, 1.55), text(font: sans, size: 6.5pt, fill: dgm-adverse, "27K actual"), anchor: "south")
     line((0.5, 1.4), (9, 1.4), stroke: 0.4pt + dgm-rule)
     content((4.5, 0.6), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "no lead integrator, no end-to-end test"), anchor: "north")
   })
@@ -512,6 +531,7 @@
       line((x - 0.45, 2.45), (x + 0.45, 1.75), stroke: 1pt + dgm-accent-soft)
       content((x, 1.55), text(font: sans, size: 5.5pt, fill: dgm-dim, systems.at(i)), anchor: "north")
     }
+    outcome-mark("adverse", 1.5, 0.35)
     content((4.5, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "≈ 15,000–20,000 dead · ≈ 500,000 injured"), anchor: "north")
   })
 )
@@ -531,6 +551,7 @@
       rect((1.0, y - 0.22), (8.5, y + 0.22), fill: dgm-panel-alt, stroke: 0.4pt + c)
       content((1.3, y), text(font: sans, size: 6.5pt, fill: c, lab), anchor: "west")
     }
+    outcome-mark("adverse", 1.4, 0.35)
     content((4.7, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "72 dead — \"a grey elephant, known but ignored\""), anchor: "north")
   })
 )
@@ -543,9 +564,10 @@
     content((2.5, 3.2), text(font: sans, size: 6.5pt, fill: dgm-ink, tracking: 1pt, upper("private school")), anchor: "south")
     rect((1.5, 1.0), (3.5, 2.9), fill: dgm-ink, stroke: none)
     content((2.5, 0.8), text(font: sans, size: 6pt, fill: dgm-ink, "grades held"), anchor: "north")
-    content((7.0, 3.2), text(font: sans, size: 6.5pt, fill: dgm-accent, tracking: 1pt, upper("disadvantaged state")), anchor: "south")
-    rect((6.0, 1.0), (8.0, 2.2), fill: dgm-accent, stroke: none)
-    content((7.0, 0.8), text(font: sans, size: 6pt, fill: dgm-accent, "downgraded 2× more"), anchor: "north")
+    content((7.0, 3.2), text(font: sans, size: 6.5pt, fill: dgm-adverse, tracking: 1pt, upper("disadvantaged state")), anchor: "south")
+    rect((6.0, 1.0), (8.0, 2.2), fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 5.65, 0.67)
+    content((7.0, 0.8), text(font: sans, size: 6pt, fill: dgm-adverse, "downgraded 2× more"), anchor: "north")
     content((4.7, 0.2), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "39% of students downgraded"), anchor: "north")
   })
 )
@@ -559,6 +581,7 @@
     rect((0.5, 1.0), (1.1, 1.5), fill: dgm-ink, stroke: none)
     content((0.8, 0.85), text(font: sans, size: 6pt, fill: dgm-ink, "7%"), anchor: "north")
     content((5, 0.85), text(font: sans, size: 6pt, fill: dgm-accent, "93% — population the assumption did not fit"), anchor: "north")
+    outcome-mark("adverse", 2.2, 2.6)
     content((4.7, 2.6), text(font: serif, size: 10pt, style: "italic", fill: dgm-ink, "470,000 wrongful debt notices"))
     content((4.7, 2.1), text(font: sans, size: 7pt, fill: dgm-accent-soft, tracking: 1pt, upper("A$1.8B settlement")))
   })
@@ -570,10 +593,11 @@
     import cetz.draw: *
     // false negative columns
     line((0.5, 0.8), (9, 0.8), stroke: 0.4pt + dgm-rule)
-    rect((1.5, 0.8), (2.3, 2.0), fill: dgm-accent, stroke: none)
-    content((1.9, 2.2), text(font: sans, size: 6.5pt, fill: dgm-accent, "19% Black"), anchor: "south")
-    rect((4.0, 0.8), (4.8, 2.1), fill: dgm-accent, stroke: none)
-    content((4.4, 2.3), text(font: sans, size: 6.5pt, fill: dgm-accent, "21% Latinx"), anchor: "south")
+    rect((1.5, 0.8), (2.3, 2.0), fill: dgm-adverse, stroke: none)
+    content((1.9, 2.2), text(font: sans, size: 6.5pt, fill: dgm-adverse, "19% Black"), anchor: "south")
+    rect((4.0, 0.8), (4.8, 2.1), fill: dgm-adverse, stroke: none)
+    content((4.4, 2.3), text(font: sans, size: 6.5pt, fill: dgm-adverse, "21% Latinx"), anchor: "south")
+    outcome-mark("adverse", 3.15, 1.45)
     rect((6.5, 0.8), (7.3, 1.4), fill: dgm-ink, stroke: none)
     content((6.9, 1.6), text(font: sans, size: 6.5pt, fill: dgm-ink, "comparison"), anchor: "south")
     content((4.5, 0.4), text(font: sans, size: 6pt, fill: dgm-dim, tracking: 1pt, upper("false-negative rate")), anchor: "north")
@@ -592,8 +616,9 @@
     content((2.5, 3.0), text(font: sans, size: 6.5pt, fill: dgm-ink, tracking: 1pt, upper("reported")), anchor: "south")
     rect((1.5, 1.4), (3.5, 2.6), fill: dgm-ink, stroke: none)
     content((2.5, 2.0), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, "14 days"))
-    content((7.0, 3.0), text(font: sans, size: 6.5pt, fill: dgm-accent, tracking: 1pt, upper("actual")), anchor: "south")
-    rect((6.0, 1.4), (8.0, 2.6), fill: dgm-accent, stroke: none)
+    content((7.0, 3.0), text(font: sans, size: 6.5pt, fill: dgm-adverse, tracking: 1pt, upper("actual")), anchor: "south")
+    rect((6.0, 1.4), (8.0, 2.6), fill: dgm-adverse, stroke: none)
+    outcome-mark("adverse", 8.35, 2.0)
     content((7.0, 2.0), text(font: sans, size: 6pt, weight: "bold", fill: dgm-onaccent, "6+ months"))
     line((3.7, 2.0), (5.8, 2.0), stroke: 0.8pt + dgm-rule)
     content((4.75, 2.2), text(font: sans, size: 6pt, fill: dgm-rule, "secret list"), anchor: "south")
@@ -617,8 +642,9 @@
     circle((7.0, 2.0), radius: 0.7, fill: dgm-panel-alt, stroke: 0.6pt + dgm-rule)
     content((7.0, 2.0), text(font: sans, size: 6pt, fill: dgm-rule, "training\nsystems"))
     line((2.7, 2.0), (3.9, 2.0), stroke: 0.8pt + dgm-accent)
-    line((4.0, 2.0), (6.3, 2.0), stroke: (paint: dgm-accent, thickness: 0.8pt, dash: "dashed"))
-    content((6.3, 2.3), text(font: sans, size: 6pt, fill: dgm-accent, "× not adopted"), anchor: "south")
+    line((4.0, 2.0), (6.3, 2.0), stroke: (paint: dgm-adverse, thickness: 0.8pt, dash: "dashed"))
+    outcome-mark("adverse", 5.15, 2.42)
+    content((6.3, 2.3), text(font: sans, size: 6pt, fill: dgm-adverse, "× not adopted"), anchor: "south")
   })
 )
 
@@ -664,7 +690,7 @@
     let bars = (
       ("Heart disease", 600, dgm-rule),
       ("Cancer",        595, dgm-rule),
-      ("Medical error", 251, dgm-accent),
+      ("Medical error", 251, dgm-adverse),
     )
     let max-h = 2.6
     for i in range(bars.len()) {
@@ -675,6 +701,7 @@
       content((x, 0.6 + h + 0.2), text(font: sans, size: 6.5pt, fill: c, str(v) + "K"), anchor: "south")
       content((x, 0.4), text(font: sans, size: 6pt, fill: dgm-dim, lab), anchor: "north")
     }
+    outcome-mark("adverse", 7.65, 1.15)
     content((4.5, 3.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "deaths per year, U.S."), anchor: "south")
   })
 )
@@ -692,8 +719,8 @@
     for i in range(steps.len() - 1) {
       let (x1, y1) = steps.at(i)
       let (x2, y2) = steps.at(i + 1)
-      line((x1, y1), (x2, y1), stroke: 1pt + dgm-accent)
-      line((x2, y1), (x2, y2), stroke: 1pt + dgm-accent)
+      line((x1, y1), (x2, y1), stroke: 1pt + dgm-good)
+      line((x2, y1), (x2, y2), stroke: 1pt + dgm-good)
     }
     // gate markers
     let gates = ((2.0, "Junior Officer"), (5.0, "Department Head"), (8.0, "Command"))
@@ -701,6 +728,7 @@
       circle((x, 1.0), radius: 0.12, fill: dgm-ink, stroke: none)
       content((x, 0.85), text(font: sans, size: 5.5pt, fill: dgm-ink, lab), anchor: "north")
     }
+    outcome-mark("good", 8.4, 3.0)
     content((4.7, 3.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "10 pass-or-fail assessments; 3 are no-go gates"), anchor: "south")
   })
 )
@@ -718,7 +746,8 @@
     line((5.0, 2.0), (9.0, 2.0), stroke: 1pt + dgm-ink)
     content((5.0, 1.8), text(font: sans, size: 6pt, fill: dgm-ink, "FO"), anchor: "north")
     content((9.0, 1.8), text(font: sans, size: 6pt, fill: dgm-ink, "Capt"), anchor: "north")
-    content((4.7, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-accent-soft, "industry pariah → spotless record"), anchor: "north")
+    outcome-mark("good", 2.2, 0.25)
+    content((4.7, 0.4), text(font: serif, size: 9pt, style: "italic", fill: dgm-good, "industry pariah → spotless record"), anchor: "north")
   })
 )
 
@@ -773,8 +802,9 @@
     content((2.0, 2.6), text(font: serif, size: 22pt, fill: dgm-ink, "0"))
     content((2.0, 1.6), text(font: sans, size: 6pt, fill: dgm-ink, "reactor accidents"), anchor: "north")
     content((2.0, 1.2), text(font: sans, size: 6pt, fill: dgm-dim, "60+ years"), anchor: "north")
-    content((7.4, 3.2), text(font: sans, size: 6.5pt, fill: dgm-accent, tracking: 1pt, upper("surface (pre-2017)")), anchor: "south")
-    content((7.4, 2.6), text(font: serif, size: 22pt, fill: dgm-accent, "17"))
+    content((7.4, 3.2), text(font: sans, size: 6.5pt, fill: dgm-adverse, tracking: 1pt, upper("surface (pre-2017)")), anchor: "south")
+    content((7.4, 2.6), text(font: serif, size: 22pt, fill: dgm-adverse, "17"))
+    outcome-mark("adverse", 8.3, 2.6)
     content((7.4, 1.6), text(font: sans, size: 6pt, fill: dgm-ink, "sailors killed"), anchor: "north")
     content((7.4, 1.2), text(font: sans, size: 6pt, fill: dgm-dim, "two collisions"), anchor: "north")
   })
@@ -788,9 +818,10 @@
     line((0.5, 0.6), (0.5, 3.4), stroke: 0.4pt + dgm-rule)
     // 32 → 54
     let pts = ((1.0, 1.1), (2.5, 1.4), (4.0, 1.9), (5.5, 2.4), (7.0, 2.7), (8.5, 2.9))
-    line(..pts, stroke: 1.2pt + dgm-accent)
-    content((1.0, 1.35), text(font: sans, size: 6pt, fill: dgm-accent, "32%"), anchor: "south-west")
-    content((8.5, 2.9), text(font: sans, size: 6pt, fill: dgm-accent, "54%"), anchor: "south-east")
+    line(..pts, stroke: 1.2pt + dgm-good)
+    content((1.0, 1.35), text(font: sans, size: 6pt, fill: dgm-good, "32%"), anchor: "south-west")
+    outcome-mark("good", 8.85, 2.78)
+    content((8.5, 2.9), text(font: sans, size: 6pt, fill: dgm-good, "54%"), anchor: "south-east")
     content((4.7, 3.2), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "equity gap eliminated"))
   })
 )
@@ -810,9 +841,10 @@
       circle((x, 2.0), radius: 0.45, fill: dgm-ink, stroke: none)
       content((x, 2.0), text(font: sans, size: 5.5pt, weight: "bold", fill: dgm-onaccent, lab))
       if i < stages.len() - 1 {
-        line((x + 0.5, 2.0), (stages.at(i + 1).at(0) - 0.5, 2.0), stroke: 0.8pt + dgm-accent)
+        line((x + 0.5, 2.0), (stages.at(i + 1).at(0) - 0.5, 2.0), stroke: 0.8pt + dgm-good)
       }
     }
+    outcome-mark("good", 9.1, 2.0)
     content((4.7, 0.5), text(font: serif, size: 9pt, style: "italic", fill: dgm-ink, "the LE process working as intended"), anchor: "north")
   })
 )

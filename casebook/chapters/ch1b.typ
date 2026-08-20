@@ -499,7 +499,7 @@
     intervention. The case is the canonical small-tier instance of
     cross-domain adaptation of a proven intervention (C6.4), and
     pairs with the multidisciplinary-translation trio (Cases 40
-    team science, 122 IPE, 123 implementation-science training) as
+    team science, 28 IPE, 41 implementation-science training) as
     cross-domain workforce evidence. The honest hedge: the
     dissemination outcome literature is thinner than the original
     single-center evidence; the case is teachable on the SBML
@@ -565,15 +565,15 @@
     ],
     [
       In pair with the multidisciplinary-translation trio (Cases
-      178 team science, 122 IPE, 123 implementation-science
+      40 team science, 28 IPE, 41 implementation-science
       training), the Barsuk SBML case completes the workforce-
       evidence picture: an intervention with strong single-center
       controlled-comparison evidence (this case) sits alongside a
       structured team-science training program with validated
-      measurement (121), the field-scale enthusiasm-evidence gap in
-      interprofessional education (122), and the operational-
+      measurement (40), the field-scale enthusiasm-evidence gap in
+      interprofessional education (28), and the operational-
       practice gap inside implementation-science training programs
-      (123). The four cases together stage the cross-domain
+      (41). The four cases together stage the cross-domain
       workforce-evidence pattern: the mechanism that works at
       single-program scale is the demonstrator; the field-scale
       measurement and the multi-site dissemination evidence are
@@ -585,7 +585,7 @@
     "Barsuk et al. (Northwestern/Feinberg, 2009 onward) — simulation-based mastery learning: practice to a defined standard, not a clock",
     "Single-center evidence: fewer needle passes, fewer arterial punctures, lower CRBSI rates; cost-saving at the hospital level (Cohen et al. 2010)",
     "Disseminated nationally to VA medical centers — cross-institutional transfer is the C6.4 structural feature",
-    "Hedge preserved: multi-site dissemination outcome literature thinner than single-center evidence; pair with cases 121, 122, 123 as cross-domain workforce evidence",
+    "Hedge preserved: multi-site dissemination outcome literature thinner than single-center evidence; pair with cases 40, 28, 41 as cross-domain workforce evidence",
   ),
   approaches: (
     during: (
@@ -1853,6 +1853,7 @@
     [Sallam, M. (2023). "ChatGPT Utility in Healthcare Education, Research, and Practice: Systematic Review on the Promising Perspectives and Valid Concerns," _Healthcare_ 11(6):887 — 60 records reviewed; benefits cited in 85%, with the accuracy and citation concerns alongside.],
     [Bhattacharyya, M., Miller, V. M., Bhattacharyya, D., \& Miller, L. E. (2023). \"High Rates of Fabricated and Inaccurate References in ChatGPT-Generated Medical Content,\" _Cureus_ 15(5):e39238 — 47% of 115 generated references fabricated.],
     [World Health Organization (2024). _Ethics and Governance of Artificial Intelligence for Health: Guidance on Large Multi-Modal Models_, 18 January 2024 — names automation bias by health care professionals and the risk of false or inaccurate output.],
+    [Triplett, S., Ness-Engle, G. L., & Behnen, E. M. (2025). \"A comparison of drug information question responses by a drug information center and by ChatGPT,\" _American Journal of Health-System Pharmacy_ 82(8):448–460, doi:10.1093/ajhp/zxae316 — pharmacist-rated overall accuracy of 50% across the ChatGPT responses.],
     [Wachter, R. M., & Brynjolfsson, E. (2024). \"Will Generative Artificial Intelligence Deliver on Its Promise in Health Care?\" _JAMA_ 331(1):65–69, doi:10.1001/jama.2023.25054 — genAI adoption and the productivity paradox in health care.],
   ),
   quote: [LLMs produce hallucinations indistinguishable in tone from accurate information, and clinicians have not yet developed the practice of routine verification.],
@@ -1903,7 +1904,7 @@
   year: "2008 – present",
   domains-list: ("healthcare",),
   modes-code: "TN",
-  impact: "Death rate 1.5% → 0.8% in eight-site pilot; complications down >33%; adopted, a decade on, by facilities in 70% of the world's countries; Ontario population study (2014) found no significant mortality benefit after a mandated rollout",
+  impact: "Death rate 1.5% → 0.8% in eight-site pilot; complications down >33%; adopted, a decade on, by facilities in 70% of the world's countries; Ontario population study (2014) found no significant mortality benefit after a province-wide rollout",
   diagram: dgm.dgm-who,
   kind: "intervention",
   scale: "big",
@@ -1983,8 +1984,9 @@
       1.5% to 0.8% and major complications dropping by more than a third
       across all eight sites — confirming Gawande's framing that "gaps in
       teamwork and safety practices in surgery are substantial in countries
-      both rich and poor." The checklist spread fast: a decade on,
-      facilities in 70% of the world's countries reported using it. That
+      both rich and poor." The checklist spread fast: a decade on, the
+      Ariadne Labs / Lifebox review found facilities in 70% of the
+      world's countries attesting to its use. That
       the pooled death rate roughly halved, and that complication rates
       fell at all eight sites — significantly at three — despite their
       differences in wealth and practice, is what made the result so
@@ -2001,9 +2003,12 @@
     [
       Urbach and colleagues, writing in _NEJM_ in 2014, examined more
       than 200,000 procedures across 101 Ontario hospitals before and
-      after a province-wide mandated rollout and found no statistically
-      significant reduction in operative mortality, in-hospital
-      complications, length of stay, or readmission. The null result
+      after a province-wide rollout — Ontario's health ministry had
+      required hospitals to publicly report their checklist compliance
+      rate from July 2010, which is to say it mandated the reporting
+      rather than the pause — and found no statistically significant
+      reduction in operative mortality, in-hospital complications,
+      length of stay, or readmission. The null result
       did not refute the checklist so much as illustrate its dependence
       on implementation fidelity: where a mandate replaced genuine
       authorization of the pause, the measured effect attenuated, making
@@ -2032,6 +2037,7 @@
     [Gawande, A. (2009), _The Checklist Manifesto_ — the pause as the active mechanism.],
     [Urbach, D. et al. (2014), "Introduction of Surgical Safety Checklists in Ontario, Canada," _NEJM_ — null mortality result after mandate.],
     [Bosk, C. et al. (2009), "Reality check for checklists," _The Lancet_ — implementation fidelity.],
+    [Buissonniere, M. (2020), _Checking In on the Checklist_, Ariadne Labs and Lifebox — the decade review: facilities in 70% of the world's countries attest to using the checklist, with adoption far lower in low-income settings.],
   ),
   quote: [Gaps in teamwork and safety practices in surgery are substantial in countries both rich and poor.],
   quote-source: "Atul Gawande, Harvard Gazette, January 2009",
@@ -2188,10 +2194,10 @@
     "The registry model extended across NHS specialties and pairs with bedside protocols like Keystone",
   ),
   references: (
-    [Kennedy, I. (2001), _Learning from Bristol: The Report of the Public Inquiry into Children's Heart Surgery at the Bristol Royal Infirmary 1984–1995_ — the inquiry and recommendations (paraphrased).],
+    [Kennedy, I. (2001), _Learning from Bristol: The Report of the Public Inquiry into Children's Heart Surgery at the Bristol Royal Infirmary 1984–1995_ — the inquiry and its recommendations, paraphrased; the pull quote is verbatim from paragraph 18 of the Final Report Summary, and differs in wording from Recommendation 155, which carries the same requirement.],
     [Society for Cardiothoracic Surgery in GB & Ireland, national outcomes reports — the registry and surgeon-level publication.],
     [Berwick, D. (2013), _A Promise to Learn — A Commitment to Act_ — the broader NHS-safety reform.],
-    [Sherlaw-Johnson et al. — risk-adjusted outcome methodology.],
+    [Sherlaw-Johnson, C., Gallivan, S., Treasure, T. & Nashef, S. A. M. (2004), "Computer tools to assist the monitoring of outcomes in surgery," _European Journal of Cardio-Thoracic Surgery_ 26(5):1032–1036 — risk-adjusted outcome monitoring (variable life-adjusted display) as it developed in UK cardiac surgery.],
     [NHS national clinical audit and registry documentation — extension across specialties.],
   ),
   quote: [Patients should be able to gain access to information about the relative performance of a hospital, or a particular service or consultant unit.],
@@ -2372,6 +2378,7 @@
     [Delgado et al. (2021), "A Unifying Approach for GFR Estimation: Recommendations of the NKF-ASN Task Force on Reassessing the Inclusion of Race in Diagnosing Kidney Disease," _American Journal of Kidney Diseases_ 79(2):268–288 (published online 2021; in print vol. 79, 2022), doi:10.1053/j.ajkd.2021.08.003. Cited by online-first year, the year of the Task Force recommendation.],
     [Inker et al. (2021), "New Creatinine- and Cystatin C-Based Equations to Estimate GFR without Race," _New England Journal of Medicine_ 385(19):1737–1749, doi:10.1056/NEJMoa2102953.],
     [OPTN/UNOS (2022–2023), "Kidney waiting-time modifications for candidates affected by race-inclusive eGFR calculations" — the mandated backdating of Black candidates' accrued waiting time (effective January 2023).],
+    [Genzen, J. R., Souers, R. J., Pearson, L. N., et al. (2022), "Reported Awareness and Adoption of 2021 Estimated Glomerular Filtration Rate Equations Among US Clinical Laboratories, March 2022," _JAMA_ 328(20):2060–2062, doi:10.1001/jama.2022.15404 — the College of American Pathologists survey: 1,124 of 3,708 responding U.S. laboratories (30.3%) had adopted the 2021 CKD-EPI creatinine equation.],
     [Eneanya, Yang, & Reese (2019), "Reconsidering the Consequences of Using Race to Estimate Kidney Function," _JAMA_ 322(2):113–114 — the equity argument that motivated the revision.],
     [Vyas, Eisenstein, & Jones (2020), "Hidden in Plain Sight — Reconsidering the Use of Race Correction in Clinical Algorithms," _NEJM_ 383(9):874–882 — broader race-in-algorithms survey.],
   ),
@@ -2396,7 +2403,7 @@
     standard. Direct trio with Case 26 (pulse oximetry — the
     validation-architecture mechanism) and Case 6 (pain
     assessment — the human-development mechanism). Adjacent to the
-    lending pair (Cases 186–113) at a different layer.
+    lending pair (Cases 186 and 196) at a different layer.
   ],
   literature-items: (
     [Delgado et al. (2021), _American Journal of Kidney Diseases_],
@@ -2593,12 +2600,16 @@
     oximetry and capnography, the additions designed to
     make hypoxemia and misplaced endotracheal tubes detectable early
     enough to recover; both were required by later ASA revisions
-    (pulse oximetry ~1989–90, capnography ~1991). The ASA adopted
+    (pulse oximetry from the 1989 amendment; expired-CO2 confirmation
+    of tube placement in the early 1990s; continual capnography in
+    general anesthesia from the amendment effective July 1999). The ASA adopted
     essentially the same standards in 1986. The Anesthesia Patient Safety Foundation, founded in
     1985, institutionalized the broader change-management effort.
     Anesthesia-related mortality fell dramatically over subsequent
-    decades — one widely cited Brazilian series reports fewer than one
-    anaesthesia-related death per 10,000 anaesthetics — and malpractice
+    decades — Braz et al.'s systematic review of 33 studies published
+    between 1954 and 2007 puts Brazilian and worldwide
+    anaesthesia-related mortality at fewer than one death per 10,000
+    anaesthetics over its final two decades — and malpractice
     premiums declined alongside. The field's
     own histories preserve the hedge: the decline has multiple
     co-varying causes (training, device design, pharmacology, team
@@ -2633,9 +2644,11 @@
       minimum set of continuous monitors for every anesthetized
       patient. Pulse oximetry and capnography — then just entering
       wide use — were *encouraged* rather than required in the 1986
-      text, and became the additions when later
-      revisions mandated them (pulse oximetry ~1989–90, capnography
-      ~1991).#cn()
+      text, and became the additions when later revisions mandated
+      them: pulse oximetry in the 1989 amendment, identification of
+      expired carbon dioxide to verify tube placement in the early
+      1990s, and continual capnography through a general anesthetic
+      in the amendment effective July 1999.#cn()
     ],
     [
       Pulse oximetry made oxygenation continuously visible to the
@@ -2652,9 +2665,11 @@
     ],
     [
       Anesthesia-related mortality fell dramatically over the
-      subsequent decades. A widely cited Brazilian series reports fewer
-      than one anaesthesia-related death per 10,000 anaesthetics.
-      Malpractice premiums for anesthesiology
+      subsequent decades. Braz and colleagues, reviewing 33 studies
+      published between 1954 and 2007, put both Brazilian and
+      worldwide anaesthesia-related mortality at fewer than one death
+      per 10,000 anaesthetics over the final two decades of that
+      window. Malpractice premiums for anesthesiology
       declined alongside — one of the few examples in American
       medicine of a specialty's malpractice cost falling as the
       specialty's safety record improved. The case is regularly
@@ -2705,8 +2720,9 @@
     [Eichhorn, Cooper, Cullen, Maier, Philip, & Seeman (1986), "Standards for Patient Monitoring During Anesthesia at Harvard Medical School," _JAMA_ 256(8):1017–1020.],
     [Eichhorn (1989), "Prevention of intraoperative anesthesia accidents and related severe injury through safety monitoring," _Anesthesiology_ 70(4):572–577.],
     [Anesthesia Patient Safety Foundation (1985 – present), founding documents and the _APSF Newsletter_ — institutional-history record of the broader change effort.],
-    [American Society of Anesthesiologists (1986), "Standards for Basic Anesthetic Monitoring" — original ASA standard.],
-    [Sjoding et al. (2020), _NEJM_ — the racial-bias edge case the standard still carries (cross-reference Case 26).],
+    [American Society of Anesthesiologists, "Standards for Basic Anesthetic Monitoring," approved 21 October 1986 and amended since — the original standard and the amendment sequence that made pulse oximetry required (1989), expired-CO2 verification of tube placement required (early 1990s), and continual capnography through a general anesthetic required (effective July 1999).],
+    [Braz, L. G., Módolo, N. S. P., do Nascimento, P. Jr., et al. (2009), "Mortality in anesthesia: a systematic review," _Clinics_ (São Paulo) 64(10):999–1006 — 33 studies, 1954–2007; anaesthesia-related mortality below one death per 10,000 anaesthetics in the final two decades.],
+    [Sjoding et al. (2020), "Racial Bias in Pulse Oximetry Measurement," _NEJM_ 383(25):2477–2478 — the racial-bias edge case the standard still carries (cross-reference Case 26).],
   ),
   quote: [The deliverable is not the device. It is the standard that makes the device's signal non-waiverable across the specialty.],
   quote-source: "Editors' synthesis of Eichhorn et al. (1986) and APSF founding documents.",
@@ -2778,7 +2794,7 @@
     core problem is that the field cannot yet measure whether the
     intervention works. It is the case-grounded basis for the
     enthusiasm-evidence gap as a curricular concept and motivates
-    the Domain 3 sub-competency proposed in
+    the Domain 3 subobjective *Collaboration measurement* (3.4)
     — the recurring pattern that a field
     instruments its enthusiasm faster than its outcomes.
   ],
@@ -2835,8 +2851,8 @@
       strongest synthesis of the outcome literature concludes that
       the field instrumented its enthusiasm faster than it
       instrumented outcomes. The case is the case-grounded basis
-      for the Domain 3 sub-competency proposed in
-      — naming the enthusiasm-evidence gap as a
+      for the Domain 3 subobjective *Collaboration measurement*
+      (3.4) — naming the enthusiasm-evidence gap as a
       canonical anti-pattern — and for the subobjective *Judgment
       under inadequate evidence* (4.4): practitioners and program
       designers in IPE have had to decide for decades on what to
@@ -2845,13 +2861,13 @@
     ],
     [
       In pair with the Colorado CTSA team-science training case
-      (121) and implementation-science training (123), IPE is
+      (40) and implementation-science training (41), IPE is
       the frontier endpoint of the multidisciplinary-translation
       thread. Team science showed the measurement can be done at
       single-program scale with a validated instrument; IPE
       shows what happens when the field-scale evidence
       architecture has not been built. The pair-plus-trio
-      teaches the Domain 3 sub-competency in both
+      teaches the Domain 3 collaboration-measurement subobjective in both
       directions: collaboration as a unit of measurement is
       possible (Case 40), and the field-scale evidence is
       structurally absent (this case).
@@ -2862,7 +2878,7 @@
     "Reeves et al. Cochrane 2013: only 15 studies from 1999–2011 met inclusion; evidence base thin for linking IPE to practice and patient outcomes",
     "IOM 2015 makes the gap the central finding; its Appendix A review names a 'paucity of high-quality research' on practice processes and patient outcomes; proposes a conceptual model for doing the measurement",
     "Canonical enthusiasm-evidence gap case — field instruments enthusiasm faster than outcomes; basis for Domain 3 sub-competency",
-    "Pair with Case 40 (team-science training) and 123 (implementation-science training) — collaboration measurement is possible at program scale, absent at field scale",
+    "Pair with Case 40 (team-science training) and 41 (implementation-science training) — collaboration measurement is possible at program scale, absent at field scale",
   ),
   approaches: (
     during: (
@@ -2880,7 +2896,7 @@
     [Reeves, Perrier, Goldman, Freeth, & Zwarenstein (2013), "Interprofessional education: effects on professional practice and healthcare outcomes (update)," _Cochrane Database of Systematic Reviews_, doi:10.1002/14651858.CD002213.pub3.],
     [Institute of Medicine (2015), _Measuring the Impact of Interprofessional Education on Collaborative Practice and Patient Outcomes_, National Academies Press, doi:10.17226/21726, NCBI Bookshelf NBK338360.],
     [WHO (2010), _Framework for Action on Interprofessional Education and Collaborative Practice_ — the international policy backdrop.],
-    [v2 paired cases: Team-science training (121), Implementation-science training (123).],
+    [v2 paired cases: Team-science training (Case 40), Implementation-science training (Case 41).],
   ),
   quote: [The field instrumented its enthusiasm faster than its outcomes. The strongest synthesis names the gap as the central finding, not the intervention as the failure.],
   quote-source: "Editors' synthesis of Reeves et al. (2013) and IOM (2015).",
@@ -2898,7 +2914,7 @@
     IPE is the field-scale enthusiasm-evidence-gap case
     (induced 2.1; LENS D4/PT5). LENS uses it in Domain 4
     (Test and Evaluation) as the case-grounded basis for the
-    enthusiasm-evidence-gap sub-competency and for the
+    enthusiasm-evidence-gap reading of subobjective 3.4 and for the
     subobjective *Judgment under inadequate evidence* (4.4) — IPE is the
     pattern's largest instance. Pair with Case 40 (team-
     science training, where measurement is possible at program
@@ -2925,7 +2941,7 @@
   year: "2010",
   domains-list: ("clinical care", "patient safety", "health IT"),
   modes-code: "HKD",
-  impact: "A before-and-after study at an academic medical center associated bar-code electronic medication administration (bar-code eMAR) with a 41.4% reduction in nontiming administration errors and a 50.8% reduction in potential adverse drug events; transcription errors on order transcription were eliminated (6.1% to zero); a later single-site rollout reported a 55.4% reduction in actual patient-harm events",
+  impact: "A before-and-after study at an academic medical center associated bar-code electronic medication administration (bar-code eMAR) with a 41.4% reduction in nontiming administration errors and a 50.8% reduction in potential adverse drug events; transcription errors on order transcription were eliminated (6.1% to zero); a later staged single-site rollout reported a 55.4% reduction in harmful medication errors, 0.65 to 0.29 per 100,000 medications",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -2947,9 +2963,10 @@
     before-and-after observational design and reported a 41.4%
     reduction in nontiming administration errors, a 50.8% reduction
     in potential adverse drug events, and the elimination of
-    transcription errors on order transcription (6.1% to zero). A later single-site
-    rollout (PMC6257885) reported a 55.4% reduction in actual
-    patient-harm events. The study is explicit that the design is
+    transcription errors on order transcription (6.1% to zero). A later staged
+    single-site rollout (Thompson et al., 2018) reported a 55.4%
+    reduction in harmful medication errors, from 0.65 to 0.29 per
+    100,000 medications. The study is explicit that the design is
     quasi-experimental — before-and-after / observational — not a
     randomized trial, and that significant workflow changes were
     required for the cue to land. The case is the canonical
@@ -2996,9 +3013,11 @@
       50.8% reduction in potential adverse drug events (the harm the
       errors would have produced), and the elimination of
       transcription errors on order transcription (6.1% to zero) upstream of
-      administration. A subsequent single-site rollout reported in
-      PMC6257885 documented a 55.4% reduction in actual
-      patient-harm events, supporting the transfer of the result
+      administration. Thompson and colleagues, tracking a staged
+      single-site rollout across fifty inpatient units in an
+      interrupted-time-series analysis, documented a 55.4% reduction
+      in harmful medication errors — 0.65 to 0.29 per 100,000
+      medications — supporting the transfer of the result
       across institutional contexts.#cn()
     ],
     [
@@ -3034,7 +3053,7 @@
     "Wrong-drug / wrong-patient administration: the cue the bedside nurse needs to catch the mismatch is structurally absent in the unaided workflow",
     "Bar-code eMAR supplies the cue in hardware: medication scan + wristband scan gated by the electronic record at the moment of administration",
     "Poon et al. NEJM 2010 — 41.4% reduction in nontiming administration errors, 50.8% in potential adverse drug events, transcription errors eliminated (6.1% to zero)",
-    "Later single-site rollout (PMC6257885) — 55.4% reduction in actual patient-harm events",
+    "Later staged single-site rollout (Thompson et al. 2018) — 55.4% reduction in harmful medication errors, 0.65 to 0.29 per 100,000 medications",
     "Hedge preserved: before-and-after / observational design, not a randomized trial; significant workflow changes were required",
   ),
   approaches: (
@@ -3052,7 +3071,7 @@
   references: (
     [Poon, E. G., Keohane, C. A., Yoon, C. S., Ditmore, M., Bane, A., Levtzion-Korach, O., Moniz, T., Rothschild, J. M., Kachalia, A. B., Hayes, J., Churchill, W. W., Lipsitz, S., Whittemore, A. D., Bates, D. W., \& Gandhi, T. K. (2010). Effect of bar-code technology on the safety of medication administration. _New England Journal of Medicine_, 362(18):1698–1707. doi:10.1056/NEJMsa0907115 — the case's primary evaluation.],
     [Bonkowski, J., Carnes, C., Melucci, J., Mirtallo, J., Prier, B., Reichert, E., Moffatt-Bruce, S., \& Weber, R. J. (2013). Effect of barcode-assisted medication administration on emergency department medication errors. _Academic Emergency Medicine_, 20(8):801–806 — adjacent transfer evidence.],
-    [Thompson, K. M., Swanson, K. M., Cox, D. L., Kirchner, R. B., Russell, J. J., Wermers, R. A., Storlie, C. B., Johnson, M. G., & Naessens, J. M. (2018), "Implementation of Bar-Code Medication Administration to Reduce Patient Harm," _Mayo Clinic Proceedings: Innovations, Quality & Outcomes_ 2(4):342–351, doi:10.1016/j.mayocpiqo.2018.09.001, PMID:30560236, PMCID:PMC6257885 — later single-site rollout reporting a 55.4% reduction in actual patient-harm events.],
+    [Thompson, K. M., Swanson, K. M., Cox, D. L., Kirchner, R. B., Russell, J. J., Wermers, R. A., Storlie, C. B., Johnson, M. G., & Naessens, J. M. (2018), "Implementation of Bar-Code Medication Administration to Reduce Patient Harm," _Mayo Clinic Proceedings: Innovations, Quality & Outcomes_ 2(4):342–351, doi:10.1016/j.mayocpiqo.2018.09.001, PMID:30560236, PMCID:PMC6257885 — later single-site rollout reporting a 55.4% reduction in harmful medication errors (0.65 to 0.29 per 100,000 medications), by interrupted time series across fifty inpatient units.],
     [Institute for Safe Medication Practices (2019), _Guidelines for Safe Electronic Communication of Medication Information_ — the display and communication standards that bar-code scanning systems and eMARs are built against.],
   ),
   quote: [The cue is supplied in hardware at the point of administration; the workflow change is part of the deliverable, and the design is observational rather than randomized.],
@@ -3093,7 +3112,7 @@
   year: "2013",
   domains-list: ("surgery", "clinical outcomes", "assessment"),
   modes-code: "HDK",
-  impact: "Twenty bariatric surgeons each submitted a representative gastric-bypass video, rated blind by at least 10 peers; skill ratings ranged 2.6–4.8; the bottom skill quartile had a higher complication rate (14.5%) than the top quartile across a registry of 10,343 patients, and greater skill was associated with fewer reoperations, readmissions, and emergency department visits",
+  impact: "Twenty bariatric surgeons each submitted a representative gastric-bypass video, rated blind by at least 10 peers; skill ratings ranged 2.6–4.8; the bottom skill quartile had a higher complication rate than the top (14.5% against 5.2%) across a registry of 10,343 patients, and greater skill was associated with fewer reoperations, readmissions, and emergency department visits",
   kind: "intervention",
   scale: "small",
   evidence-source: "peer-reviewed",
@@ -3110,8 +3129,8 @@
     videos were rated blind by at least 10 peers on a structured
     skill scale. Skill ratings ranged from 2.6 to 4.8. Linked to a
     Michigan registry of 10,343 patients, the bottom skill quartile
-    had a higher complication rate (14.5%) than the top quartile,
-    and greater skill was associated with fewer reoperations,
+    had a higher complication rate than the top — 14.5% against
+    5.2% — and greater skill was associated with fewer reoperations,
     readmissions, and emergency department visits. The authors
     call the findings preliminary and name the skill-versus-volume
     confound explicitly: low-skill surgeons also did fewer cases
@@ -3152,8 +3171,8 @@
       The outcomes evidence linked the peer-rated skill scores to
       a Michigan registry of 10,343 patients treated by the same
       twenty surgeons. The headline finding: the bottom skill
-      quartile had a higher complication rate (14.5%) than the top
-      quartile, and greater skill was associated with fewer
+      quartile had a higher complication rate than the top — 14.5%
+      against 5.2% — and greater skill was associated with fewer
       reoperations, fewer readmissions, and fewer emergency
       department visits in the months after surgery. The skill
       score predicted the complication signal at the cohort scale.
@@ -3166,7 +3185,8 @@
     [
       The authors call the findings preliminary and name the
       decisive qualification in the conclusion itself: "Although these findings are preliminary." The lowest skill quartile
-      did fewer cases and operated more slowly. The
+      did fewer cases — 105 bariatric procedures a year against the
+      top quartile's 240 — and operated more slowly. The
       skill-versus-volume confound is the central methodological
       hedge of the case. It is plausible — and consistent with the
       broader volume-outcome literature — that what the skill
@@ -3195,8 +3215,8 @@
   beats: (
     "Twenty bariatric surgeons each submit a representative laparoscopic gastric bypass video; rated blind by ≥10 peers on a structured scale",
     "Skill ratings range 2.6–4.8 with inter-rater reliability adequate for rank-ordering",
-    "Linked to Michigan registry of 10,343 patients: bottom skill quartile complication rate 14.5%; greater skill → fewer reoperations, readmissions, ED visits",
-    "Authors call findings preliminary; lowest skill quartile ran longer operations (137 vs 98 minutes); skill-versus-volume confound left open against the volume–outcome literature",
+    "Linked to Michigan registry of 10,343 patients: bottom skill quartile complication rate 14.5% against the top quartile's 5.2%; greater skill → fewer reoperations, readmissions, ED visits",
+    "Authors call findings preliminary; lowest skill quartile ran longer operations (137 vs 98 minutes) and fewer cases a year (105 vs 240); skill-versus-volume confound left open against the volume–outcome literature",
     "Multi-anchor: 2.1 primary, 1.1 and 6.2 alternates; editor may move",
   ),
   approaches: (
@@ -3273,8 +3293,8 @@
   coi: "Institutional overlap: this case originates at an editor's institution (Johns Hopkins); no editor was personally involved. Anchored to the peer-reviewed PLOS One paper and the public JIGSAWS dataset, not institutional press.",
   summary: [
     The Language of Surgery project at Johns Hopkins, led by Gregory
-    Hager and a cross-departmental team of roughly twenty
-    investigators across engineering, computer science, and surgery,
+    Hager and a cross-departmental team spanning engineering,
+    computer science, and surgery,
     treated surgical motion as language — decomposing tasks into
     gestures (the "surgemes") and sub-gesture motion primitives (the
     "dexemes") fine enough to distinguish expert from novice. The
@@ -3612,9 +3632,11 @@
     actionable ones are lost in the noise. The 2019 _JAMIA_
     systematic review by Hussain and colleagues aggregates the evidence
     that structured redesign — interaction design changes and
-    clinical-role tailoring — can reduce alert burden; most
-    optimization studies in the review reported alert-rate reduction
-    after intervention. Two 2024 quality-improvement publications
+    clinical-role tailoring — can raise the rate at which prescribers
+    accept an alert's advice; a second _JAMIA_ review, Van Dort and
+    colleagues in 2021, found that five of the six hospital
+    optimization programs that evaluated their own changes reported a
+    reduction in alert rate. Two 2024 quality-improvement publications
     extend the pattern with named maneuvers: a nursing-workflow
     redesign of four high-firing, low-action alerts using
     quantitative alert-firing analysis, empathy mapping, and
@@ -3646,10 +3668,14 @@
       The 2019 _JAMIA_ systematic review by Hussain and colleagues
       aggregates the published evidence on EHR alert optimization.
       The headline finding is narrower than it is often reported to be:
-      of the alternatives the review examined, only role tailoring
-      appeared to increase prescriber acceptance, and most evaluated
-      optimization studies reported alert-rate reduction
-      post-intervention. The mechanism is not
+      across the thirty-nine studies the review included, interruptive
+      modal dialogs were accepted least often, and of the alternatives
+      examined only role tailoring appeared to increase prescriber
+      acceptance. The burden side of the ledger comes from a companion
+      _JAMIA_ review — Van Dort and colleagues, 2021 — which found that
+      of the eight published hospital optimization programs, six
+      evaluated their own changes and five of those reported a
+      reduction in alert rate. The mechanism is not
       a single intervention but a family of moves — severity
       reclassification, conversion of interruptive alerts to
       passive decision support, role-based tailoring so the alert
@@ -3699,7 +3725,7 @@
   ),
   beats: (
     "Alert fatigue as the C3.2 failure mode at the EHR — high-firing low-action alerts train clinicians to dismiss",
-    "2019 JAMIA systematic review (Hussain et al.) — interrupting modals accepted least often; of the alternatives, only role tailoring raised acceptance",
+    "2019 JAMIA systematic review (Hussain et al.) — interruptive modals accepted least often; of the alternatives, only role tailoring raised acceptance; Van Dort et al. 2021 carries the alert-rate side",
     "2024 QI redesign of four high-firing nursing alerts: quantitative firing analysis + empathy mapping + iterative user feedback",
     "2024 interruptive-to-passive conversion of COVID-precautions alert with dual outcomes: burden + precautions-order timing",
     "Evidence tier: systematic review peer-reviewed, per-site QI publications practice-tier; durability across upgrades open",
@@ -3717,7 +3743,8 @@
     ),
   ),
   references: (
-    [Hussain et al. (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095.],
+    [Hussain, M. I., Reynolds, T. L., & Zheng, K. (2019), "Medication safety alert fatigue may be reduced via interaction design and clinical role tailoring: a systematic review," _JAMIA_ 26(10):1141–1149, doi:10.1093/jamia/ocz095 — thirty-nine studies; interruptive modals accepted least often; role tailoring the only alternative that appeared to increase prescriber acceptance.],
+    [Van Dort, B. A., Zheng, W. Y., Sundar, V., & Baysari, M. T. (2021), "Optimizing clinical decision support alerts in electronic medical records: a systematic review of reported strategies adopted by hospitals," _JAMIA_ 28(1):177–183, doi:10.1093/jamia/ocaa279 — eight published optimization programs; six evaluated their changes and five of those reported a reduction in alert rate.],
     [Patterson E (2024), "Navigating Alert Fatigue: A Case Study in Electronic Health Record Alert Design Optimization," _Studies in Health Technology and Informatics_ 315:447–451, doi:10.3233/SHTI240188 — nursing-workflow QI redesign of four high-firing alerts; all four removed, 877 unactionable disruptive nursing hours released.],
     [Fallon A, Haralambides K, Mazzillo J, Gleber C (2024), "Addressing Alert Fatigue by Replacing a Burdensome Interruptive Alert with Passive Clinical Decision Support," _Applied Clinical Informatics_ 15(1):101–110, doi:10.1055/a-2226-8144 — 80% cut in alert firings; COVID precautions ordered rose from 23% to 61%.],
     [Office of the National Coordinator for Health IT, SAFER Guides on CDS — practitioner-tier guidance the redesigns instantiate.],
@@ -3791,11 +3818,13 @@
     typology in sepsis at three deployments — Case 20 (TREWS at
     Johns Hopkins), Case 5 (Epic Sepsis Score across multiple
     health systems), and COMPOSER at UCSD. The honest hedges from
-    the source are binding: the study is
-    not RCT-grade, the mortality reduction is multifactorial
-    (the COMPOSER deployment ran alongside other process
-    improvements at UCSD), and the author team is explicit
-    about the structural attribution question. Pair with Case
+    the source are binding: the study is not RCT-grade; every
+    emergency department in the system ran the model, so no
+    contemporaneous comparison arm exists; the site is a single
+    academic center with a standing interest in sepsis and clinical
+    informatics; and the authors did not evaluate what the alert did
+    to patients who turned out not to have sepsis — antibiotic
+    overuse and its costs are unmeasured. Pair with Case
     20, Case 5, and Case 35 (Radiology AI Miscalibration).
   ],
   sections: (
@@ -3813,9 +3842,9 @@
       validation data implied. COMPOSER is the third deployment
       in the typology and the second prospective-positive case.
       The deployment is at two UC San Diego emergency
-      hospital sites, integrated into the electronic health
-      record and into emergency-department and inpatient
-      workflows.#cn()
+      departments, integrated into the electronic health
+      record as a nurse-facing Best Practice Advisory in the
+      emergency-department workflow.#cn()
     ],
     [
       The methodological feature that distinguishes COMPOSER is
@@ -3839,7 +3868,10 @@
     [
       The deployment outcomes Boussina and colleagues report are
       the intervention-evidence. Across the
-      deployment period at the two UC San Diego hospital sites,
+      deployment period at the two UC San Diego emergency
+      departments — 6,217 adult septic patients between January
+      2021 and April 2023, 705 pre-intervention days against 145
+      post-intervention days —
       in-hospital sepsis mortality decreased by 1.9 percentage
       points in absolute terms, and sepsis bundle compliance
       increased by 5.0 percentage points, both
@@ -3882,12 +3914,18 @@
       evaluated against the same health system's historical
       baseline, and every emergency department in the system ran the
       model, so no contemporaneous comparison arm exists against which
-      the reduction could be checked. The
-      mortality reduction is multifactorial — COMPOSER was
-      deployed alongside other process improvements at UCSD, and
-      the authors are explicit that the deployment evaluation
-      cannot cleanly separate COMPOSER's contribution from the
-      contribution of the surrounding process. The conformal-
+      the reduction could be checked. What the authors do not claim
+      is a tangle of co-occurring reforms: they record no other
+      quality-improvement initiative in the same period, which is
+      what leaves the missing control arm, rather than confounding
+      by concurrent process change, as the binding limitation. Two
+      further hedges survive verbatim — the site is a single
+      academic center with a major interest in sepsis and clinical
+      informatics, so external validation in community hospitals and
+      less IT-rich settings is outstanding; and the study did not
+      evaluate the alert's effect on patients who turned out not to
+      have sepsis, leaving inappropriate antibiotic use and its costs
+      unmeasured. The conformal-
       prediction abstention structure is the methodological
       contribution the case anchors, and the cue-and-alert
       design LEO is anchored at the deployment seam where
@@ -3901,7 +3939,7 @@
     "Boussina et al. NPJ Digital Medicine 2024; COMPOSER deep-learning sepsis-risk model at UC San Diego Health, two-site prospective implementation",
     "Conformal-prediction framework: calibrated uncertainty intervals enable model abstention when input is out-of-distribution",
     "Deployment outcomes: 1.9 pp absolute decrease in in-hospital sepsis mortality; 5.0 pp absolute increase in sepsis bundle compliance vs pre-deployment baseline",
-    "Hedges binding: before-and-after, not randomized; no contemporaneous comparison arm because every UCSD ED ran the model; single academic center, external validation pending",
+    "Hedges binding: before-and-after, not randomized; no contemporaneous comparison arm because every UCSD ED ran the model; single academic center, external validation pending; harms to non-sepsis patients unmeasured",
     "Completes AI-delegation typology in sepsis: Case 20 (TREWS), Case 5 (Epic Sepsis Score), COMPOSER (Case 34)",
   ),
   approaches: (
@@ -3927,11 +3965,13 @@
   le-insight: [
     COMPOSER is the third clinical-AI sepsis case in the
     delegation typology — prospective-positive with conformal-
-    prediction abstention. The deployment reduced in-hospital
-    sepsis mortality by 1.9 percentage points and raised sepsis
-    bundle compliance by 5.0 percentage points; the decisive
-    hedges are that the evaluation is prospective not RCT and
-    that the mortality reduction is multifactorial. The
+    prediction abstention. The deployment was associated with a
+    1.9 percentage-point fall in in-hospital sepsis mortality and a
+    5.0 percentage-point rise in sepsis bundle compliance; the
+    decisive hedges are that the evaluation is before-and-after
+    rather than randomized, that every ED in the system ran the
+    model so no comparison arm exists, and that the harms to
+    non-sepsis patients went unmeasured. The
     abstention structure is the methodological contribution the
     case anchors.
   ],
