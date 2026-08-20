@@ -167,6 +167,24 @@
 // The grayscale variants are *chosen for separation*, not inherited from the
 // colours' own luma — that inheritance is what failed before.
 
+// ---- Figure palette ------------------------------------------------------
+// Nine tokens, one accent. Semantics, so a new figure does not invent its own:
+//   ground       page under the figure
+//   panel        a container or band behind content
+//   panel-alt    a second band, where two must be told apart
+//   rule         axes, connectors, hairlines
+//   ink          primary series, structure, body text in a figure
+//   dim          muted labels, captions, secondary annotation
+//   accent       THE FOCAL VALUE — the one quantity or element the case turns
+//                on. It carries emphasis, not valence: it marks the number
+//                that matters, whether that number is 346 dead or infections
+//                at zero. One accented *idea* per figure — the accent may fall
+//                on a marker and its label together, but it should point at one
+//                thing. Most figures use it once or twice; six use it four or
+//                more times and are the ones to look at first if a figure reads
+//                as busy.
+//   accent-soft  the accent as a large fill, where full accent would dominate
+//   onaccent     knockout text on ink or accent
 // -- Colour --
 #let _dgm-ground-c      = rgb("#FFFFFF")
 #let _dgm-panel-c       = rgb("#F0EDE6")  // L* ~94
@@ -179,15 +197,22 @@
 #let _dgm-onaccent-c    = rgb("#FFFFFF")  // text/knockouts drawn on ink or accent
 
 // -- Grayscale (separation-first: ink 17, accent 110, dim 165) --
-#let _dgm-ground-g      = rgb("#FFFFFF")
-#let _dgm-panel-g       = rgb("#F0F0F0")
-#let _dgm-panel-alt-g   = rgb("#E0E0E0")
-#let _dgm-rule-g        = rgb("#B4B4B4")
-#let _dgm-ink-g         = rgb("#111111")
-#let _dgm-dim-g         = rgb("#A5A5A5")
-#let _dgm-accent-g      = rgb("#6E6E6E")
-#let _dgm-accent-soft-g = rgb("#BDBDBD")
-#let _dgm-onaccent-g    = rgb("#FFFFFF")
+// Grayscale ramp for the print interior. Every pair of tokens that appears in
+// the same figure must separate by at least 22 gray levels, or the edge between
+// a fill and a rule disappears on a B&W press. The previous ramp crowded rule,
+// dim and accent-soft into 165–189: accent-soft and rule sat 9 levels apart in
+// 15 figures, dim and rule 15 apart in 19. Respaced August 2026; the ordering is
+// unchanged, only the spacing. scripts/check-diagram-palette.py enforces it.
+//                                             gray   gap
+#let _dgm-ground-g      = rgb("#FFFFFF")    // 255
+#let _dgm-panel-g       = rgb("#E8E8E8")    // 232    23
+#let _dgm-panel-alt-g   = rgb("#CECECE")    // 206    26
+#let _dgm-accent-soft-g = rgb("#B2B2B2")    // 178    28
+#let _dgm-rule-g        = rgb("#969696")    // 150    28
+#let _dgm-dim-g         = rgb("#7A7A7A")    // 122    28
+#let _dgm-accent-g      = rgb("#4E4E4E")    //  78    44
+#let _dgm-ink-g         = rgb("#111111")    //  17    61
+#let _dgm-onaccent-g    = rgb("#FFFFFF")    // 255  — knockout on ink or accent
 
 #let dgm-ground      = if grayscale { _dgm-ground-g }      else { _dgm-ground-c }
 #let dgm-panel       = if grayscale { _dgm-panel-g }       else { _dgm-panel-c }
